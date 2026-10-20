@@ -1,7 +1,8 @@
 # emergencyResponseManager(_:didUpdateVoiceCallStatus:)
 
 **Framework**: SafetyKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the voice call status to the delegate.
 
@@ -16,6 +17,10 @@ Provides the voice call status to the delegate.
 
 ```swift
 optional func emergencyResponseManager(_ emergencyResponseManager: SAEmergencyResponseManager, didUpdateVoiceCallStatus voiceCallStatus: SAEmergencyResponseManager.VoiceCallStatus)
+```
+
+```objc
+- (void) emergencyResponseManager:(SAEmergencyResponseManager *) emergencyResponseManager didUpdateVoiceCallStatus:(SAEmergencyResponseManagerVoiceCallStatus) voiceCallStatus;
 ```
 
 #### Discussion

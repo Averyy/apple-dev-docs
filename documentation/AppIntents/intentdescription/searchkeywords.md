@@ -1,7 +1,8 @@
 # searchKeywords
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of keywords which, when searched in the Shortcuts editor, will reveal this intent.
 
@@ -11,7 +12,7 @@ A set of keywords which, when searched in the Shortcuts editor, will reveal this
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

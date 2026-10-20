@@ -1,7 +1,8 @@
 # maximumRegionMonitoringDistance
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest boundary distance that can be assigned to a region.
 
@@ -17,15 +18,20 @@ The largest boundary distance that can be assigned to a region.
 var maximumRegionMonitoringDistance: CLLocationDistance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationDistance maximumRegionMonitoringDistance;
+```
+
 #### Discussion
 
-This property defines the largest boundary distance allowed from a region’s center point. Attempting to monitor a region with a distance larger than this value causes the location manager to send a [`CLError.Code.regionMonitoringFailure`](clerror-swift.struct/code/regionmonitoringfailure.md) error to the delegate.
+This property defines the largest boundary distance allowed from a region’s center point. Attempting to monitor a region with a distance larger than this value causes the location manager to send a [`CLError.Code.regionMonitoringFailure`](../clerror-swift.struct/code/regionmonitoringfailure.md) error to the delegate.
 
 If region monitoring is unavailable or not supported, the value in this property is `-1`.
 
 ## See Also
 
-- [var monitoredRegions: Set<CLRegion>](cllocationmanager/monitoredregions.md)
+### Running the region-monitoring service
+- [var monitoredRegions: Set<CLRegion>](./monitoredregions.md)
   The set of shared regions monitored by all location-manager objects.
 
 

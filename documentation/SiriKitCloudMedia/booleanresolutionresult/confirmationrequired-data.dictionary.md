@@ -1,7 +1,8 @@
 # BooleanResolutionResult.ConfirmationRequired
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A result that requires the user to confirm the Boolean value before proceeding.
 
@@ -10,7 +11,7 @@ A result that requires the user to confirm the Boolean value before proceeding.
 
 ## Declaration
 
-```swift
+```
 object BooleanResolutionResult.ConfirmationRequired
 ```
 
@@ -20,7 +21,8 @@ object BooleanResolutionResult.ConfirmationRequired
 
 ## See Also
 
-- [object BooleanResolutionResult.Success](booleanresolutionresult/success-data.dictionary.md)
+### Providing a Result
+- [object BooleanResolutionResult.Success](./success-data.dictionary.md)
   A Boolean value that successfully matches the intent.
 
 

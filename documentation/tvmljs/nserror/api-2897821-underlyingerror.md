@@ -1,7 +1,8 @@
 # underlyingError
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The error that was encountered in an underlying implementation and caused the error that the receiver represents to occur.
 
@@ -10,17 +11,18 @@ The error that was encountered in an underlying implementation and caused the er
 
 ## Declaration
 
-```swift
+```
 readonly attribute NSError underlyingError;
 ```
 
 ## See Also
 
-- [code](nserror/2897820-code.md)
+### Getting Error Properties
+- [code](./api-2897820-code.md)
   The error code.
-- [domain](nserror/2897831-domain.md)
+- [domain](./api-2897831-domain.md)
   A string containing the error domain.
-- [userInfo](nserror/2897822-userinfo.md)
+- [userInfo](./api-2897822-userinfo.md)
   The user info dictionary.
 
 

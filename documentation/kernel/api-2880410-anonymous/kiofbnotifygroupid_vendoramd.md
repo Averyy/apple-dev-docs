@@ -1,14 +1,15 @@
 # kIOFBNotifyGroupID_VendorAMD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNotifyGroupID_VendorAMD = 0x400
 ```
 

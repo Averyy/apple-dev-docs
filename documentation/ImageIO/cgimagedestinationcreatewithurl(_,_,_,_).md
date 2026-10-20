@@ -1,7 +1,8 @@
 # CGImageDestinationCreateWithURL(_:_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an image destination that writes image data to the specified URL.
 
@@ -20,22 +21,27 @@ Creates an image destination that writes image data to the specified URL.
 func CGImageDestinationCreateWithURL(_ url: CFURL, _ type: CFString, _ count: Int, _ options: CFDictionary?) -> CGImageDestination?
 ```
 
+```c
+extern CGImageDestinationRefCGImageDestinationCreateWithURL(CFURLRef url, CFStringRef type, size_t count, CFDictionaryRef options);
+```
+
 #### Return Value
 
-An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
+An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](../CoreFoundation/cfrelease.md).
 
 ## Parameters
 
 - `url`: The URL at which to write the image data. This object overwrites any data at the specified URL.
-- `type`: The uniform type identifier of the resulting image file. For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
+- `type`: The uniform type identifier of the resulting image file. For a list of system-declared and third-party identifiers, see [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 - `count`: The number of images (not including thumbnail images) you want to include in the image file.
 - `options`: Future options. Specify `NULL` for this parameter.
 
 ## See Also
 
-- [func CGImageDestinationCreateWithData(CFMutableData, CFString, Int, CFDictionary?) -> CGImageDestination?](cgimagedestinationcreatewithdata(_:_:_:_:).md)
+### Creating an Image Destination
+- [func CGImageDestinationCreateWithData(CFMutableData, CFString, Int, CFDictionary?) -> CGImageDestination?](./cgimagedestinationcreatewithdata%28_,_,_,_%29.md)
   Creates an image destination that writes to a Core Foundation mutable data object.
-- [func CGImageDestinationCreateWithDataConsumer(CGDataConsumer, CFString, Int, CFDictionary?) -> CGImageDestination?](cgimagedestinationcreatewithdataconsumer(_:_:_:_:).md)
+- [func CGImageDestinationCreateWithDataConsumer(CGDataConsumer, CFString, Int, CFDictionary?) -> CGImageDestination?](./cgimagedestinationcreatewithdataconsumer%28_,_,_,_%29.md)
   Creates an image destination that writes to the specified data consumer.
 
 

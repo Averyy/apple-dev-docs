@@ -1,7 +1,8 @@
 # layers
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The topologically sorted layers in the NeuralNetwork.
 
@@ -22,7 +23,8 @@ let layers: [MLModelStructure.NeuralNetwork.Layer]
 
 ## See Also
 
-- [MLModelStructure.NeuralNetwork.Layer](mlmodelstructure-swift.enum/neuralnetwork/layer.md)
+### Accessing the layers
+- [MLModelStructure.NeuralNetwork.Layer](./layer.md)
 
 
 ---

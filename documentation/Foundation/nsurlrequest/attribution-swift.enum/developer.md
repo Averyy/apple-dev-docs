@@ -1,7 +1,8 @@
 # NSURLRequest.Attribution.developer
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A developer-initiated network request.
 
@@ -20,15 +21,20 @@ A developer-initiated network request.
 case developer
 ```
 
+```c
+NSURLRequestAttributionDeveloper
+```
+
 #### Discussion
 
-Use this value for the [`attribution`](urlrequest/attribution-swift.property.md) parameter of a URL request that your app makes for any purpose other than when the user explicitly accesses a link. This includes requests that your app makes to get user data. This is the default value.
+Use this value for the [`attribution`](../../urlrequest/attribution-swift.property.md) parameter of a URL request that your app makes for any purpose other than when the user explicitly accesses a link. This includes requests that your app makes to get user data. This is the default value.
 
-For cases where the user enters a URL, like in the navigation bar of a web browser, or taps or clicks a URL to load the content it represents, use the [`NSURLRequest.Attribution.user`](nsurlrequest/attribution-swift.enum/user.md) value instead.
+For cases where the user enters a URL, like in the navigation bar of a web browser, or taps or clicks a URL to load the content it represents, use the [`NSURLRequest.Attribution.user`](./user.md) value instead.
 
 ## See Also
 
-- [NSURLRequest.Attribution.user](nsurlrequest/attribution-swift.enum/user.md)
+### Request sources
+- [NSURLRequest.Attribution.user](./user.md)
   The user explicitly directs the app to make a network request.
 
 

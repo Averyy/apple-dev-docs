@@ -1,15 +1,18 @@
 # UIPreviewAction.Style.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default style.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 17.1
+- iPadOS 9.0+ - Deprecated in 17.1
+- Mac Catalyst 13.1+ - Deprecated in 17.1
+- tvOS 9.0+ - Deprecated in 17.1
+
+> **Deprecated**: For more information, see [`UIPreviewAction`](../../uipreviewaction.md).
 
 ## Declaration
 
@@ -17,11 +20,16 @@ The default style.
 case `default`
 ```
 
+```c
+UIPreviewActionStyleDefault
+```
+
 ## See Also
 
-- [UIPreviewAction.Style.selected](uipreviewaction/style/selected.md)
+### Constants
+- [UIPreviewAction.Style.selected](./selected.md)
   The style for a selected peek quick action.
-- [UIPreviewAction.Style.destructive](uipreviewaction/style/destructive.md)
+- [UIPreviewAction.Style.destructive](./destructive.md)
   The style for a peek quick action that changes or deletes data.
 
 

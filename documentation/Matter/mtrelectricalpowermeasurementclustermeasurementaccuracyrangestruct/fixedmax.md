@@ -1,7 +1,8 @@
 # fixedMax
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var fixedMax: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * fixedMax;
 ```
 
 

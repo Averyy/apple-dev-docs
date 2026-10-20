@@ -1,7 +1,8 @@
 # appAccountToken
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A UUID that associates the transaction with a customer on your service.
 
@@ -10,19 +11,19 @@ A UUID that associates the transaction with a customer on your service.
 
 ## Declaration
 
-```swift
+```
 uuid appAccountToken
 ```
 
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
 #### Discussion
 
-When a customer initiates an in-app purchase, your app may create an [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)) and send it to the App Store. The App Store returns the same value in [`appAccountToken`](appaccounttoken.md) in the transaction information after the customer completes the purchase.
+When a customer initiates an in-app purchase, your app may create an [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md) and send it to the App Store. The App Store returns the same value in [`appAccountToken`](./appaccounttoken.md) in the transaction information after the customer completes the purchase.
 
-If you’re using the [`Original API for Apple In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase) and provide a UUID in the [`applicationUsername`](https://developer.apple.com/documentation/storekit/skmutablepayment/applicationusername) property, then the [`appAccountToken`](appaccounttoken.md) field contains that value.
+If you’re using the [Original API for Apple In-App Purchase](../StoreKit/original-api-for-in-app-purchase.md) and provide a UUID in the [`applicationUsername`](../StoreKit/skmutablepayment/applicationusername.md) property, then the [`appAccountToken`](./appaccounttoken.md) field contains that value.
 
 
 ---

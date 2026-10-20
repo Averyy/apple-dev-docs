@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The radius, in pixels, of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The radius, in pixels, of the effect.
 var radius: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float radius;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cibloom/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var intensity: Float](cibloom/intensity.md)
+- [var intensity: Float](./intensity.md)
   The intensity of the effect.
 
 

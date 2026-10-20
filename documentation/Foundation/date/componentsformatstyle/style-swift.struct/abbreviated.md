@@ -1,7 +1,8 @@
 # abbreviated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Shows the fields in the abbreviation. For example, “2 hr, 10 min”, “2小時10分鐘”
 

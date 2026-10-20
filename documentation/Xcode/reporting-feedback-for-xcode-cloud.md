@@ -1,6 +1,7 @@
 # Reporting feedback for Xcode Cloud
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Provide feedback on issues you encounter when building with Xcode Cloud.
 
@@ -12,7 +13,7 @@ The prepopulated information includes details describing the build as well as lo
 
 > ❗ **Important**: These artifacts and logs might contain personal data and intellectual property. You can opt out of providing any or all of these files before submitting feedback.
 
-##### Initiate Feedback
+##### Initiate feedback
 
 To report feedback that’s not related to a specific build, select Help > Provide Feedback in Xcode or launch the Feedback Assistant app. In cases where you need to report feedback that includes build-specific context:
 
@@ -24,7 +25,7 @@ Alternatively, to issue a report from an issue banner inside a build in Xcode, c
 
 By initiating feedback from a specific build, Xcode prepopulates the feedback form with relevant information, details describing the build (such as team name, product name, and build number) and the system-generated logs and artifacts relevant to triaging issues related to builds.
 
-##### Review the Attachments
+##### Review the attachments
 
 Text logs from commands initiated by Xcode Cloud, result bundles, and sysdiagnose logs are very useful when triaging a build-related issue. Provide these logs to help make bugs more actionable, but review the logs before you submit feedback.
 
@@ -35,10 +36,10 @@ At a high level, there are 5 different types of logs and build artifacts:
 - **Executable build artifacts**: These are the products of building an app or its tests to be run on a specific kind of device or simulator. Examples of these include: product archives and test products. Product archives, such as App Store archive exports, represent the app that you install on a device. Test products, on the other hand, represent executables that run during the testing process.
 - **Text logs from scripts you provide**: These are the logs for the custom scripts you provide. These logs can contain network requests, entries of subcommands that run, as well as credentials used to authenticate to other services.
 - **Text logs from commands initiated by Xcode Cloud**: Xcode Cloud relies on certain command-line tools when processing a build. An example of such a command-line tool is `xcodebuild` which Xcode Cloud uses to archive exports, build products, and run tests. These logs contain the output command-line tools and network requests generate. These logs can contain information from the product source code such as names of classes and methods.
-- **Result bundles**: These are special artifacts that `xcodebuild` subcommands such as `archive`, `build`, and `test` generate. Result bundles contain a summary of events that occur during an `xcodebuild` subcommand and can contain traces of intellectual property. To learn more about bundles, see [`Bundle`](https://developer.apple.com/documentation/foundation/bundle).
+- **Result bundles**: These are special artifacts that `xcodebuild` subcommands such as `archive`, `build`, and `test` generate. Result bundles contain a summary of events that occur during an `xcodebuild` subcommand and can contain traces of intellectual property. To learn more about bundles, see [`Bundle`](../Foundation/bundle.md).
 - **Sysdiagnose logs**: These are special artifacts Xcode Cloud generates in exceptional scenarios, such as a Simulator or virtual machine crash. Sysdiagnose logs contain a collection of logs from diagnostic tools available on different Apple platforms. These logs provide context about the state of the machine just before the crash such as the number of open file handles and the state of different processes.
 
-##### Remove Attachments and Submit Feedback
+##### Remove attachments and submit feedback
 
 Only include attachments you want to share. To remove an attachment you don’t want to share:
 
@@ -49,9 +50,10 @@ When the report reflects the feedback you would like to share, click the Submit 
 
 ## See Also
 
-- [Resolving common configuration and build issues](resolving-common-configuration-and-build-issues.md)
+### Troubleshooting
+- [Resolving common configuration and build issues](./resolving-common-configuration-and-build-issues.md)
   Review common configuration and build issues and learn how you can resolve them.
-- [Resolve GitHub Enterprise connection issues](resolve-github-enterprise-connection-issues.md)
+- [Resolve GitHub Enterprise connection issues](./resolve-github-enterprise-connection-issues.md)
   Verify that Xcode Cloud can access your GitHub Enterprise repository and fix configuration issues.
 
 

@@ -1,7 +1,8 @@
 # ARView.Environment.Reverb.Preset
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Available reverb preset values.
 
@@ -21,31 +22,32 @@ enum Preset
 ## Topics
 
 ### Reverb presets
-- [ARView.Environment.Reverb.Preset.cathedral](arview/environment-swift.struct/reverb-swift.enum/preset/cathedral.md)
+- [ARView.Environment.Reverb.Preset.cathedral](./preset/cathedral.md)
   Reverb that sounds like the inside of a cathedral.
-- [ARView.Environment.Reverb.Preset.largeHall](arview/environment-swift.struct/reverb-swift.enum/preset/largehall.md)
+- [ARView.Environment.Reverb.Preset.largeHall](./preset/largehall.md)
   Reverb that sounds like the inside of a large hall.
-- [ARView.Environment.Reverb.Preset.largeRoom](arview/environment-swift.struct/reverb-swift.enum/preset/largeroom.md)
+- [ARView.Environment.Reverb.Preset.largeRoom](./preset/largeroom.md)
   Reverb that sounds like the inside of a large room.
-- [ARView.Environment.Reverb.Preset.mediumHall](arview/environment-swift.struct/reverb-swift.enum/preset/mediumhall.md)
+- [ARView.Environment.Reverb.Preset.mediumHall](./preset/mediumhall.md)
   Reverb that sounds like the inside of a medium hall.
-- [ARView.Environment.Reverb.Preset.mediumRoom](arview/environment-swift.struct/reverb-swift.enum/preset/mediumroom.md)
+- [ARView.Environment.Reverb.Preset.mediumRoom](./preset/mediumroom.md)
   Reverb that sounds like the inside of a medium room.
-- [ARView.Environment.Reverb.Preset.smallRoom](arview/environment-swift.struct/reverb-swift.enum/preset/smallroom.md)
+- [ARView.Environment.Reverb.Preset.smallRoom](./preset/smallroom.md)
   Reverb that sounds like the inside of a small room.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../../../Swift/caseiterable.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Hashable](../../../../Swift/hashable.md)
 
 ## See Also
 
-- [static var automatic: ARView.Environment.Reverb](arview/environment-swift.struct/reverb-swift.enum/automatic.md)
+### Reverb presets
+- [static var automatic: ARView.Environment.Reverb](./automatic.md)
   The default reverb preset.
 
 

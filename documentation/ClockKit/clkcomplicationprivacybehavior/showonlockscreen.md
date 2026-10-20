@@ -1,12 +1,15 @@
 # CLKComplicationPrivacyBehavior.showOnLockScreen
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Show the complication data when the Apple Watch is locked.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,9 +17,14 @@ Show the complication data when the Apple Watch is locked.
 case showOnLockScreen
 ```
 
+```c
+CLKComplicationPrivacyBehaviorShowOnLockScreen
+```
+
 ## See Also
 
-- [CLKComplicationPrivacyBehavior.hideOnLockScreen](clkcomplicationprivacybehavior/hideonlockscreen.md)
+### Constants
+- [CLKComplicationPrivacyBehavior.hideOnLockScreen](./hideonlockscreen.md)
   Don’t show the complication data when the Apple Watch is locked.
 
 

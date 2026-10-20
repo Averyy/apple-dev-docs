@@ -1,7 +1,8 @@
 # codes
 
 **Framework**: CrashReportExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of exception-specific codes providing additional details.
 
@@ -9,9 +10,9 @@ An array of exception-specific codes providing additional details.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let codes: [UInt64]
 
 ## See Also
 
-- [let exception: Int32](crashreason/exception.md)
+### Inpecting crash reason properties
+- [let exception: Int32](./exception.md)
   The Mach exception type.
 
 

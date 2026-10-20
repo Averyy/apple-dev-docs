@@ -1,7 +1,8 @@
 # NSOrthography
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of the linguistic content of natural language text, typically used for spelling and grammar checking.
 
@@ -20,71 +21,76 @@ A description of the linguistic content of natural language text, typically used
 class NSOrthography
 ```
 
+```objc
+@interface NSOrthography : NSObject
+```
+
 #### Overview
 
-Use [`NSOrthography`](nsorthography.md) objects to describe the linguistic content of a piece of text, including which scripts the text contains, a dominant language (and possibly other languages) for each script, and a dominant script and language for the text as a whole.
+Use [`NSOrthography`](./nsorthography.md) objects to describe the linguistic content of a piece of text, including which scripts the text contains, a dominant language (and possibly other languages) for each script, and a dominant script and language for the text as a whole.
 
-Scripts are uniformly described by four-letter ISO 15924 script codes, such as `"Latn"`, `"Grek"`, and `"Cyrl"`. The supertags `"Jpan"` and `"Kore"` are typically used for Japanese and Korean text, and `"Hans"` and `"Hant"` are typically used for Chinese text. The tag `"Zyyy"` is used if a specific script cannot be identified. See [`Internationalization and Localization Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i) for more information.
+Scripts are uniformly described by four-letter ISO 15924 script codes, such as `"Latn"`, `"Grek"`, and `"Cyrl"`. The supertags `"Jpan"` and `"Kore"` are typically used for Japanese and Korean text, and `"Hans"` and `"Hant"` are typically used for Chinese text. The tag `"Zyyy"` is used if a specific script cannot be identified. See [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i) for more information.
 
 Languages are uniformly described by BCP-47 tags (preferably in canonical form). The tag `"und"` is used if a specific language cannot be determined.
 
-You typically work with orthography objects returned from methods and properties for classes like [`NSLinguisticTagger`](nslinguistictagger.md) and [`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker).
+You typically work with orthography objects returned from methods and properties for classes like [`NSLinguisticTagger`](./nslinguistictagger.md) and [`NSSpellChecker`](../AppKit/nsspellchecker.md).
 
 ##### Subclassing Notes
 
-Subclasses must override the [`dominantScript`](nsorthography/dominantscript.md) and [`languageMap`](nsorthography/languagemap.md) properties. These properties are set using [`init(dominantScript:languageMap:)`](nsorthography/init(dominantscript:languagemap:).md) or [`orthographyWithDominantScript:languageMap:`](nsorthography/orthographywithdominantscript:languagemap:.md) in Objective-C.
+Subclasses must override the [`dominantScript`](./nsorthography/dominantscript.md) and [`languageMap`](./nsorthography/languagemap.md) properties. These properties are set using [`init(dominantScript:languageMap:)`](./nsorthography/init%28dominantscript,languagemap%29.md) or [`orthographyWithDominantScript:languageMap:`](./nsorthography/orthographywithdominantscript_languagemap_.md) in Objective-C.
 
 ## Topics
 
 ### Creating Orthography Objects
-- [class func defaultOrthography(forLanguage: String) -> Self](nsorthography/defaultorthography(forlanguage:).md)
+- [class func defaultOrthography(forLanguage: String) -> Self](./nsorthography/defaultorthography%28forlanguage%29.md)
   Creates and returns an orthography object with the default language map for the specified language.
-- [init(dominantScript: String, languageMap: [String : [String]])](nsorthography/init(dominantscript:languagemap:).md)
+- [init(dominantScript: String, languageMap: [String : [String]])](./nsorthography/init%28dominantscript,languagemap%29.md)
   Creates an orthography object with the specified dominant script and language map.
 ### Determining Correspondences Between Languages and Scripts
-- [var languageMap: [String : [String]]](nsorthography/languagemap.md)
+- [var languageMap: [String : [String]]](./nsorthography/languagemap.md)
   A dictionary that maps script tags to arrays of language tags.
-- [var dominantLanguage: String](nsorthography/dominantlanguage.md)
+- [var dominantLanguage: String](./nsorthography/dominantlanguage.md)
   The first language in the list of languages for the dominant script.
-- [var dominantScript: String](nsorthography/dominantscript.md)
+- [var dominantScript: String](./nsorthography/dominantscript.md)
   The dominant script for the text.
-- [func dominantLanguage(forScript: String) -> String?](nsorthography/dominantlanguage(forscript:).md)
+- [func dominantLanguage(forScript: String) -> String?](./nsorthography/dominantlanguage%28forscript%29.md)
   Returns the dominant language for the specified script.
-- [func languages(forScript: String) -> [String]?](nsorthography/languages(forscript:).md)
+- [func languages(forScript: String) -> [String]?](./nsorthography/languages%28forscript%29.md)
   Returns the list of languages for the specified script.
-- [var allScripts: [String]](nsorthography/allscripts.md)
+- [var allScripts: [String]](./nsorthography/allscripts.md)
   The scripts appearing as keys in the language map.
-- [var allLanguages: [String]](nsorthography/alllanguages.md)
+- [var allLanguages: [String]](./nsorthography/alllanguages.md)
   The languages appearing in values of the language map.
 ### Initializers
-- [init?(coder: NSCoder)](nsorthography/init(coder:).md)
+- [init?(coder: NSCoder)](./nsorthography/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 ## See Also
 
-- [struct Locale](locale.md)
+### Localization
+- [struct Locale](./locale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
-- [func NSLocalizedString(String, tableName: String?, bundle: Bundle, value: String, comment: String) -> String](nslocalizedstring(_:tablename:bundle:value:comment:).md)
+- [func NSLocalizedString(String, tableName: String?, bundle: Bundle, value: String, comment: String) -> String](./nslocalizedstring%28_,tablename,bundle,value,comment%29.md)
   Returns a localized string from a table that Xcode generates for you when exporting localizations.
-- [struct LocalizedStringResource](localizedstringresource.md)
+- [struct LocalizedStringResource](./localizedstringresource.md)
   A reference to a localizable string, accessible from another process.
-- [protocol CustomLocalizedStringResourceConvertible](customlocalizedstringresourceconvertible.md)
+- [protocol CustomLocalizedStringResourceConvertible](./customlocalizedstringresourceconvertible.md)
   A type that provides an out-of-process localizable description.
-- [struct URLResource](urlresource.md)
+- [struct URLResource](./urlresource.md)
   A resource located at a particular file URL within a bundle.
 
 

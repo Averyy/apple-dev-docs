@@ -1,7 +1,8 @@
 # routeSharingPolicy
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active route-sharing policy.
 
@@ -19,13 +20,18 @@ The active route-sharing policy.
 var routeSharingPolicy: AVAudioSession.RouteSharingPolicy { get }
 ```
 
+```objc
+@property (readonly) AVAudioSessionRouteSharingPolicy routeSharingPolicy;
+```
+
 #### Discussion
 
 Use this value to indicate that the system should route this app’s audio somewhere other than the default system output when other suitable alternative routes exist.
 
 ## See Also
 
-- [AVAudioSession.RouteSharingPolicy](avaudiosession/routesharingpolicy-swift.enum.md)
+### Inspecting the route sharing policy
+- [AVAudioSession.RouteSharingPolicy](./routesharingpolicy-swift.enum.md)
   Cases that indicate the possible route-sharing policies for an audio session.
 
 

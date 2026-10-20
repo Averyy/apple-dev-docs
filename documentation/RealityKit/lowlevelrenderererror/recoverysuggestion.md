@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable suggestion for how to recover from the error.
 
@@ -19,11 +20,12 @@ var recoverySuggestion: String? { get }
 
 ## See Also
 
-- [var errorDescription: String?](lowlevelrenderererror/errordescription.md)
+### Describing the error
+- [var errorDescription: String?](./errordescription.md)
   A human-readable description of the error.
-- [var failureReason: String?](lowlevelrenderererror/failurereason.md)
+- [var failureReason: String?](./failurereason.md)
   A human-readable explanation of why the error occurred.
-- [var helpAnchor: String?](lowlevelrenderererror/helpanchor.md)
+- [var helpAnchor: String?](./helpanchor.md)
   A link to documentation for the error.
 
 

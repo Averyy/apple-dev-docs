@@ -1,7 +1,8 @@
 # biometryCurrentSet
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Constraint to access an item with Touch ID for currently enrolled fingers, or from Face ID with the currently enrolled user.
 
@@ -18,6 +19,10 @@ Constraint to access an item with Touch ID for currently enrolled fingers, or fr
 
 ```swift
 static var biometryCurrentSet: SecAccessControlCreateFlags { get }
+```
+
+```c
+kSecAccessControlBiometryCurrentSet
 ```
 
 #### Discussion

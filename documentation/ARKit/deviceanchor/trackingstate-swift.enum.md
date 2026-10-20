@@ -1,7 +1,8 @@
 # DeviceAnchor.TrackingState
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the tracking state of a device anchor.
 
@@ -18,36 +19,37 @@ enum TrackingState
 ## Topics
 
 ### Tracking states
-- [DeviceAnchor.TrackingState.orientationTracked](deviceanchor/trackingstate-swift.enum/orientationtracked.md)
+- [DeviceAnchor.TrackingState.orientationTracked](./trackingstate-swift.enum/orientationtracked.md)
   The framework is currently only tracking the anchor’s orientation.
-- [DeviceAnchor.TrackingState.tracked](deviceanchor/trackingstate-swift.enum/tracked.md)
+- [DeviceAnchor.TrackingState.tracked](./trackingstate-swift.enum/tracked.md)
   The framework is currently tracking both the anchor’s position and its orientation.
-- [DeviceAnchor.TrackingState.untracked](deviceanchor/trackingstate-swift.enum/untracked.md)
+- [DeviceAnchor.TrackingState.untracked](./trackingstate-swift.enum/untracked.md)
   The framework isn’t tracking this anchor.
 ### Instance Properties
-- [var description: String](deviceanchor/trackingstate-swift.enum/description.md)
+- [var description: String](./trackingstate-swift.enum/description.md)
   A textual representation of this tracking state.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var originFromAnchorTransform: simd_float4x4](deviceanchor/originfromanchortransform.md)
+### Inspecting a device anchor
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The transform from the device to the origin coordinate system.
-- [var trackingState: DeviceAnchor.TrackingState](deviceanchor/trackingstate-swift.property.md)
+- [var trackingState: DeviceAnchor.TrackingState](./trackingstate-swift.property.md)
   Tracking state of this anchor
-- [var isTracked: Bool](deviceanchor/istracked.md)
+- [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is tracking the device.
-- [var description: String](deviceanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
-- [var id: UUID](deviceanchor/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of this anchor.
 
 

@@ -1,7 +1,8 @@
 # UITextDropEditability
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The text-drop editability styles for noneditable text views.
 
@@ -17,39 +18,44 @@ The text-drop editability styles for noneditable text views.
 enum UITextDropEditability
 ```
 
+```c
+enum UITextDropEditability : NSUInteger;
+```
+
 ## Topics
 
 ### Editability styles
-- [UITextDropEditability.no](uitextdropeditability/no.md)
+- [UITextDropEditability.no](./uitextdropeditability/no.md)
   A text-drop editability specifier indicating that a noneditable text view does not accept drops.
-- [UITextDropEditability.temporary](uitextdropeditability/temporary.md)
+- [UITextDropEditability.temporary](./uitextdropeditability/temporary.md)
   A text-drop editability specifier indicating that a noneditable text view does accept drops but reverts to its noneditable status immediately afterward.
-- [UITextDropEditability.yes](uitextdropeditability/yes.md)
+- [UITextDropEditability.yes](./uitextdropeditability/yes.md)
   A text-drop editability specifier indicating that a noneditable text view does accept drops, and that the dropped text remains editable after the drop is finished.
 ### Initializers
-- [init?(rawValue: UInt)](uitextdropeditability/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./uitextdropeditability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol UITextDragDelegate](uitextdragdelegate.md)
+### Text view additions
+- [protocol UITextDragDelegate](./uitextdragdelegate.md)
   The interface for customizing the behavior of a drag activity for a text view.
-- [protocol UITextDropDelegate](uitextdropdelegate.md)
+- [protocol UITextDropDelegate](./uitextdropdelegate.md)
   The interface for configuring a text view’s drop behavior.
-- [protocol UITextDraggable](uitextdraggable.md)
+- [protocol UITextDraggable](./uitextdraggable.md)
   The interface that determines if a text view is a drag source.
-- [struct UITextDragOptions](uitextdragoptions.md)
+- [struct UITextDragOptions](./uitextdragoptions.md)
   A set of options that determine the behavior of a draggable text view.
-- [protocol UITextDroppable](uitextdroppable.md)
+- [protocol UITextDroppable](./uitextdroppable.md)
   The interface that determines if a text view is a drop destination.
 
 

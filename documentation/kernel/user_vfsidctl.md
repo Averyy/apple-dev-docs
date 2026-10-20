@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct user_vfsidctl {
     ...
 };
@@ -17,11 +17,11 @@ struct user_vfsidctl {
 ## Topics
 
 ### Instance Properties
-- [vc_fsid](user_vfsidctl/1523143-vc_fsid.md)
-- [vc_len](user_vfsidctl/1523362-vc_len.md)
-- [vc_ptr](user_vfsidctl/1523396-vc_ptr.md)
-- [vc_spare](user_vfsidctl/1523235-vc_spare.md)
-- [vc_vers](user_vfsidctl/1523335-vc_vers.md)
+- [vc_fsid](./user_vfsidctl/api-1523143-vc_fsid.md)
+- [vc_len](./user_vfsidctl/api-1523362-vc_len.md)
+- [vc_ptr](./user_vfsidctl/api-1523396-vc_ptr.md)
+- [vc_spare](./user_vfsidctl/api-1523235-vc_spare.md)
+- [vc_vers](./user_vfsidctl/api-1523335-vc_vers.md)
 
 
 ---

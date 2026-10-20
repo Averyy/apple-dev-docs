@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the reader to read media data from the asset.
 
@@ -21,13 +22,14 @@ func start() throws
 
 #### Discussion
 
-> **Note**: An error if reading fails to start.
+> **Throws**: An error if reading fails to start.
 
 ## See Also
 
-- [func startReading() -> Bool](avassetreader/startreading.md)
+### Controlling reading
+- [func startReading() -> Bool](./startreading%28%29.md)
   Prepares the asset reader to start reading sample buffers from the asset.
-- [func cancelReading()](avassetreader/cancelreading.md)
+- [func cancelReading()](./cancelreading%28%29.md)
   Cancels any background work and stops the reader’s outputs from reading more samples.
 
 

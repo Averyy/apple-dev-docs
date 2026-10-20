@@ -1,7 +1,8 @@
 # callAsFunction(_:parameters:)
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the current device supports device discovery.
 
@@ -16,8 +17,8 @@ func callAsFunction(_ browseDescriptor: NWBrowser.Descriptor, parameters: (() ->
 
 ## Parameters
 
-- `browseDescriptor`: A descriptor for your application service. To create an application service descriptor, call [`NWBrowser.Descriptor.applicationService(name:)`](https://developer.apple.com/documentation/network/nwbrowser/descriptor-swift.enum/applicationservice(name:)) and provide a name for the service.
-- `parameters`: Parameters for your network connection. Use [`applicationService`](https://developer.apple.com/documentation/network/nwparameters/applicationservice) to create a default set of parameters that create an encrypted connection with the other devices. You can also add `a` [`NWProtocolFramer`](https://developer.apple.com/documentation/network/nwprotocolframer) to provide an application-level messaging protocol.
+- `browseDescriptor`: A descriptor for your application service. To create an application service descriptor, call [`NWBrowser.Descriptor.applicationService(name:)`](../../Network/nwbrowser/descriptor-swift.enum/applicationservice%28name%29.md) and provide a name for the service.
+- `parameters`: Parameters for your network connection. Use [`applicationService`](../../Network/nwparameters/applicationservice.md) to create a default set of parameters that create an encrypted connection with the other devices. You can also add `a` [`NWProtocolFramer`](../../Network/nwprotocolframer.md) to provide an application-level messaging protocol.
 
 
 ---

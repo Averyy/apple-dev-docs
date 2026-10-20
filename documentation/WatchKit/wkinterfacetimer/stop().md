@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops updates to the timer’s display.
 
@@ -14,13 +15,18 @@ Stops updates to the timer’s display.
 func stop()
 ```
 
+```objc
+- (void) stop;
+```
+
 #### Discussion
 
 Use this method to stop updates to the timer object’s label. This method does not stop the timer from counting. The timer continues counting to or from its target value even when updates to the label are not occurring.
 
 ## See Also
 
-- [func start()](wkinterfacetimer/start.md)
+### Starting and Stopping the Timer
+- [func start()](./start%28%29.md)
   Begins updates to the timer’s display.
 
 

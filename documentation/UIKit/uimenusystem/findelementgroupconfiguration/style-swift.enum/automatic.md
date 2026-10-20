@@ -1,7 +1,8 @@
 # UIMenuSystem.FindElementGroupConfiguration.Style.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default preference. Find elements are automatically included based on the platform and other system behaviors.
 
@@ -16,6 +17,10 @@ The default preference. Find elements are automatically included based on the pl
 
 ```swift
 case automatic
+```
+
+```c
+UIMenuSystemFindElementGroupConfigurationStyleAutomatic
 ```
 
 

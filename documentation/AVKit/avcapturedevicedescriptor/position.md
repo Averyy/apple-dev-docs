@@ -1,7 +1,8 @@
 # position
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physical position of the camera on the device.
 
@@ -16,15 +17,20 @@ The physical position of the camera on the device.
 var position: AVCaptureDevice.Position { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureDevicePosition position;
+```
+
 #### Discussion
 
-This value matches the [`position`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/position-swift.property) of the camera it describes. Position describes the hardware, not the direction the camera faces in relation to your view.
+This value matches the [`position`](../../AVFoundation/avcapturedevice/position-swift.property.md) of the camera it describes. Position describes the hardware, not the direction the camera faces in relation to your view.
 
 ## See Also
 
-- [var deviceType: AVCaptureDevice.DeviceType](avcapturedevicedescriptor/devicetype.md)
+### Inspecting the device’s characteristics
+- [var deviceType: AVCaptureDevice.DeviceType](./devicetype.md)
   The kind of camera, such as a wide-angle or telephoto camera.
-- [var mediaTypes: Set<AVMediaType>](avcapturedevicedescriptor/mediatypes.md)
+- [var mediaTypes: Set<AVMediaType>](./mediatypes.md)
   The kinds of media the camera captures.
 
 

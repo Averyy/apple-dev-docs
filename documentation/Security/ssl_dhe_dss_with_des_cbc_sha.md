@@ -1,7 +1,8 @@
 # SSL_DHE_DSS_WITH_DES_CBC_SHA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var SSL_DHE_DSS_WITH_DES_CBC_SHA: SSLCipherSuite { get }
+```
+
+```c
+SSL_DHE_DSS_WITH_DES_CBC_SHA
 ```
 
 

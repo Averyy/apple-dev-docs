@@ -1,7 +1,8 @@
 # system
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for types you use for system functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for types you use for system functionality.
 ```swift
 static var system: some AssistantSchemas.SystemIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

@@ -1,7 +1,8 @@
 # decimal
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attribute that stores a decimal value.
 
@@ -11,7 +12,7 @@ An attribute that stores a decimal value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,39 +23,40 @@ static let decimal: NSAttributeDescription.AttributeType
 
 #### Discussion
 
-Use instances of [`NSDecimalNumber`](https://developer.apple.com/documentation/foundation/nsdecimalnumber) when reading and writing attributes of this type.
+Use instances of [`NSDecimalNumber`](../../../Foundation/nsdecimalnumber.md) when reading and writing attributes of this type.
 
 ## See Also
 
-- [static let binaryData: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/binarydata.md)
+### Attribute Types
+- [static let binaryData: NSAttributeDescription.AttributeType](./binarydata.md)
   An attribute that stores binary data.
-- [static let boolean: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/boolean.md)
+- [static let boolean: NSAttributeDescription.AttributeType](./boolean.md)
   An attribute that stores a Boolean value.
-- [static let composite: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/composite.md)
+- [static let composite: NSAttributeDescription.AttributeType](./composite.md)
   An attribute that derives its value by composing other attributes.
-- [static let date: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/date.md)
+- [static let date: NSAttributeDescription.AttributeType](./date.md)
   An attribute that stores a date.
-- [static let double: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/double.md)
+- [static let double: NSAttributeDescription.AttributeType](./double.md)
   An attribute that stores a double value.
-- [static let float: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/float.md)
+- [static let float: NSAttributeDescription.AttributeType](./float.md)
   An attribute that stores a float value.
-- [static let integer16: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/integer16.md)
+- [static let integer16: NSAttributeDescription.AttributeType](./integer16.md)
   An attribute that stores a 16-bit signed integer value.
-- [static let integer32: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/integer32.md)
+- [static let integer32: NSAttributeDescription.AttributeType](./integer32.md)
   An attribute that stores a 32-bit signed integer value.
-- [static let integer64: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/integer64.md)
+- [static let integer64: NSAttributeDescription.AttributeType](./integer64.md)
   An attribute that stores a 64-bit signed integer value.
-- [static let objectID: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/objectid.md)
+- [static let objectID: NSAttributeDescription.AttributeType](./objectid.md)
   An attribute that stores a managed object’s ID.
-- [static let string: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/string.md)
+- [static let string: NSAttributeDescription.AttributeType](./string.md)
   An attribute that stores a string.
-- [static let transformable: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/transformable.md)
+- [static let transformable: NSAttributeDescription.AttributeType](./transformable.md)
   An attribute that uses a value transformer to derive its value.
-- [static let undefined: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/undefined.md)
+- [static let undefined: NSAttributeDescription.AttributeType](./undefined.md)
   An attribute that doesn’t have an explicit type.
-- [static let uri: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/uri.md)
+- [static let uri: NSAttributeDescription.AttributeType](./uri.md)
   An attribute that stores a uniform resource identifier.
-- [static let uuid: NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct/uuid.md)
+- [static let uuid: NSAttributeDescription.AttributeType](./uuid.md)
   An attribute that stores a universally unique identifier.
 
 

@@ -1,7 +1,8 @@
 # EKCalendarChooserSelectionStyle.multiple
 
 **Framework**: EventKit UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that lets users select multiple calendars.
 
@@ -17,9 +18,14 @@ A style that lets users select multiple calendars.
 case multiple
 ```
 
+```c
+EKCalendarChooserSelectionStyleMultiple
+```
+
 ## See Also
 
-- [EKCalendarChooserSelectionStyle.single](ekcalendarchooserselectionstyle/single.md)
+### Constants
+- [EKCalendarChooserSelectionStyle.single](./single.md)
   A style that limits users to selecting a single calendar.
 
 

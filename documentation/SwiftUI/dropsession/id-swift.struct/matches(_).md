@@ -1,7 +1,8 @@
 # matches(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the session value describes the same drag session as the object provided by AppKit.
 
@@ -12,6 +13,12 @@ Checks if the session value describes the same drag session as the object provid
 
 ```swift
 func matches(_ dragInfo: any NSDraggingInfo) -> Bool
+```
+
+**Other overloads**:
+
+```swift
+func matches(_ dropSession: any UIDropSession) -> Bool
 ```
 
 

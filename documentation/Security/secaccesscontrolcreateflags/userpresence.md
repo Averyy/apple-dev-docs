@@ -1,7 +1,8 @@
 # userPresence
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Constraint to access an item with either biometry or passcode.
 
@@ -20,15 +21,19 @@ Constraint to access an item with either biometry or passcode.
 static var userPresence: SecAccessControlCreateFlags { get }
 ```
 
+```c
+kSecAccessControlUserPresence
+```
+
 ## Mentions
 
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
+- [Restricting keychain item accessibility](../restricting-keychain-item-accessibility.md)
 
 #### Discussion
 
 Biometry doesn’t have to be available or enrolled. The item is still accessible by Touch ID even if fingers are added or removed, or by Face ID if the user is re-enrolled.
 
-This option is equivalent to specifying [`biometryAny`](secaccesscontrolcreateflags/biometryany.md), [`or`](secaccesscontrolcreateflags/or.md), and [`devicePasscode`](secaccesscontrolcreateflags/devicepasscode.md).
+This option is equivalent to specifying [`biometryAny`](./biometryany.md), [`or`](./or.md), and [`devicePasscode`](./devicepasscode.md).
 
 
 ---

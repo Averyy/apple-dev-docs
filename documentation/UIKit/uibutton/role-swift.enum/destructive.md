@@ -1,7 +1,8 @@
 # UIButton.Role.destructive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button role with a red background color.
 
@@ -18,13 +19,18 @@ A button role with a red background color.
 case destructive
 ```
 
+```c
+UIButtonRoleDestructive
+```
+
 ## See Also
 
-- [UIButton.Role.normal](uibutton/role-swift.enum/normal.md)
+### Button Roles
+- [UIButton.Role.normal](./normal.md)
   A button role for a default button style.
-- [UIButton.Role.primary](uibutton/role-swift.enum/primary.md)
+- [UIButton.Role.primary](./primary.md)
   A button role that responds to a primary key press.
-- [UIButton.Role.cancel](uibutton/role-swift.enum/cancel.md)
+- [UIButton.Role.cancel](./cancel.md)
   A button role that responds to a cancel action.
 
 

@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app store version experiment treatment.
 
@@ -10,14 +11,14 @@ The request body you use to update an app store version experiment treatment.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperimentTreatmentLocalizations`
 
 
 ---

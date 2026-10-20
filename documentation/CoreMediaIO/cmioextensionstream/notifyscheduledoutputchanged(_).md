@@ -1,7 +1,8 @@
 # notifyScheduledOutputChanged(_:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies clients when a particular buffer is output.
 
@@ -15,13 +16,18 @@ Notifies clients when a particular buffer is output.
 func notifyScheduledOutputChanged(_ scheduledOutput: CMIOExtensionScheduledOutput)
 ```
 
+```objc
+- (void) notifyScheduledOutputChanged:(CMIOExtensionScheduledOutput *) scheduledOutput;
+```
+
 ## Parameters
 
 - `scheduledOutput`: The scheduled output.
 
 ## See Also
 
-- [class CMIOExtensionScheduledOutput](cmioextensionscheduledoutput.md)
+### Managing Scheduled Output
+- [class CMIOExtensionScheduledOutput](../cmioextensionscheduledoutput.md)
   An object that represents scheduled output.
 
 

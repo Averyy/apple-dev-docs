@@ -1,6 +1,7 @@
 # Defining launch environment and library constraints
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Restrict your app’s components to their expected contexts.
 
@@ -14,21 +15,21 @@ Your process can load a dynamic library if all of the facts and operations at th
 
 `launchd` tests constraints that you specify in `launchd` property list files when it needs to start your launch daemon or agent. If the executable specified in the `launchd` property list doesn’t satisfy the constraint in the property list, then `launchd` doesn’t start the process.
 
-##### Constrain the Executables Launch Environment
+##### Constrain the executable’s launch environment
 
 Construct the launch constraint by adding keys and values that represent constraint facts, and operators that combine facts using logical operations. Use facts from the list below in your launch constraint.
 
-- **`cdhash`**: A binary data sequence that’s the hash of the code directory content of an executable, or an `$in` operator whose parameter is a list of data sequences. An executable satisfies this constraint if its code directory hash is the same as the value in the constraint. For more information about code directory hashes, see [`TN3126: Inside Code Signing: Hashes`](https://developer.apple.com/documentation/technotes/tn3126-inside-code-signing-hashes).
+- **`cdhash`**: A binary data sequence that’s the hash of the code directory content of an executable, or an `$in` operator whose parameter is a list of data sequences. An executable satisfies this constraint if its code directory hash is the same as the value in the constraint. For more information about code directory hashes, see [TN3126: Inside Code Signing: Hashes](../Technotes/tn3126-inside-code-signing-hashes.md).
 
 A single executable file can contain multiple code directory hashes, for different CPU architectures and hash algorithms. Identify an executable’s code directory hash using a collection of valid hashes and the `$in` operation.
 
-- **`entitlements`**: An entitlement query that names an entitlement and gives its expected value. An executable satisfies this constraint if its code signature includes this entitlement with the specified value. For a list of entitlements, see [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements). For information on how to construct an entitlement query, see the `$query` operator below.
+- **`entitlements`**: An entitlement query that names an entitlement and gives its expected value. An executable satisfies this constraint if its code signature includes this entitlement with the specified value. For a list of entitlements, see [`Entitlements`](../BundleResources/entitlements.md). For information on how to construct an entitlement query, see the `$query` operator below.
 - **`is-init-proc`**: A Boolean value that indicates whether the executable must be the operating system’s initialization process (`launchd`).
 - **`is-sip-protected`**: A Boolean value that indicates whether the executable must be a file protected by System Integrity Protection (SIP).
 - **`launch-type`**: An integer value that describes the context in which the operating system is launching the executable. Launch type 0 is the default, meaning the operating system didn’t set a launch type. Starting in macOS 14.0, Launch Services sets launch type 3 when launching an executable to start an app; for example, when a person clicks an app icon in the Dock. Launch types 1 and 2 are reserved for use by the operating system.
 - **`on-authorized-authapfs-volume`**: A Boolean value that indicates whether the operating system loaded the executable from an authorized, authenticated APFS volume.
 - **`on-system-volume`**: A Boolean value that indicates whether the operating system loaded the executable from the currently-booted system volume.
-- **`signing-identifier`**: A string that’s a code signing identifier, or an `$in` operator whose parameter is a list of strings. An executable satisfies this constraint if its signing identifier is the same as the value in the constraint. The code signing identifier for an executable file is usually the [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) in the information property list of the bundle that contains the executable.
+- **`signing-identifier`**: A string that’s a code signing identifier, or an `$in` operator whose parameter is a list of strings. An executable satisfies this constraint if its signing identifier is the same as the value in the constraint. The code signing identifier for an executable file is usually the [`CFBundleIdentifier`](../BundleResources/information-property-list/cfbundleidentifier.md) in the information property list of the bundle that contains the executable.
 - **`team-identifier`**: A string that identifies a registered developer, or an `$in` operator whose parameter is a list of strings. An executable satisfies this constraint if the team that signed the executable matches the value in the constraint.
 
 Team identifiers are present in executables signed by code signing identities for development, TestFlight, App Store, or Developer ID.
@@ -61,7 +62,7 @@ This example of a launch constraint uses a `team-identifier` fact to require tha
 </plist>
 ```
 
-##### Build Complex Checks with Operators
+##### Build complex checks with operators
 
 Constraint dictionaries can include any of the following operators, to build complex checks. An operator can take the place of a value in a fact, in which case each of the values in the operator expression applies to the fact that contains the operator. An operator can also take the place of the fact key itself, in which case the values of the operator expression are themselves key-value pairs that name facts. As dictionaries only contain one instance of any particular key, use operators to compose multiple tests that use the same fact.
 
@@ -97,7 +98,7 @@ The launch constraint in the example below uses the `$or` operator to require th
 </plist>
 ```
 
-##### Construct an Entitlements Query
+##### Construct an entitlements query
 
 An entitlements query is an array of query operations. Each operation is an array with two entries: an integer operation code, and a parameter that can be an integer, a string, or a Boolean value. The operations either select specific information about the entitlements, or match the currently-selected information against a value specified in the parameter.
 
@@ -129,7 +130,7 @@ When you write an entitlements `$query` using the match type operation (Operatio
 | 4 | A string |
 | 5 | A Boolean value |
 
-The launch constraint in the example below uses an `entitlements` fact and the `$query` operator to require that an executable has the [`Camera entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.device.camera) (`com.apple.security.device.camera`) with the Boolean value `true`.
+The launch constraint in the example below uses an `entitlements` fact and the `$query` operator to require that an executable has the [`Camera entitlement`](../BundleResources/entitlements/com.apple.security.device.camera.md) (`com.apple.security.device.camera`) with the Boolean value `true`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

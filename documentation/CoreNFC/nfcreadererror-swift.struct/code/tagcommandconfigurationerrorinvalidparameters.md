@@ -1,7 +1,8 @@
 # NFCReaderError.Code.tagCommandConfigurationErrorInvalidParameters
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tag has been configured with invalid parameters.
 
@@ -14,6 +15,10 @@ The tag has been configured with invalid parameters.
 
 ```swift
 case tagCommandConfigurationErrorInvalidParameters
+```
+
+```c
+NFCTagCommandConfigurationErrorInvalidParameters
 ```
 
 

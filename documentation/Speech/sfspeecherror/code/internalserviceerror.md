@@ -1,7 +1,8 @@
 # SFSpeechError.Code.internalServiceError
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There was an internal error.
 
@@ -19,11 +20,16 @@ There was an internal error.
 case internalServiceError
 ```
 
+```c
+SFSpeechErrorCodeInternalServiceError
+```
+
 ## See Also
 
-- [static var insufficientResources: SFSpeechError.Code](sfspeecherror/code/insufficientresources.md)
+### Other errors
+- [static var insufficientResources: SFSpeechError.Code](./insufficientresources.md)
   There are not sufficient resources available on-device to process the incoming transcription request.
-- [static var moduleOutputFailed: SFSpeechError.Code](sfspeecherror/code/moduleoutputfailed.md)
+- [static var moduleOutputFailed: SFSpeechError.Code](./moduleoutputfailed.md)
   The module’s result task failed.
 
 

@@ -1,7 +1,8 @@
 # kSecPolicyKU_DecipherOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 If true, the certificate’s key usage must allow it to be used *only* for decryption.
 
@@ -12,6 +13,10 @@ If true, the certificate’s key usage must allow it to be used *only* for decry
 
 ```swift
 let kSecPolicyKU_DecipherOnly: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyKU_DecipherOnly;
 ```
 
 

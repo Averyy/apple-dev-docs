@@ -1,7 +1,8 @@
 # GCControllerElement.SystemGestureState.enabled
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that sends input to your app only after a gesture recognizer doesn’t identify a gesture.
 
@@ -19,15 +20,20 @@ A state that sends input to your app only after a gesture recognizer doesn’t i
 case enabled
 ```
 
+```c
+GCSystemGestureStateEnabled
+```
+
 #### Discussion
 
 If you enable system gestures, the system sends the input to the gesture recognizer and only sends it to your app if it doesn’t recognize a gesture. If it does recognize a gesture, it doesn’t send any input to your app.
 
 ## See Also
 
-- [GCControllerElement.SystemGestureState.alwaysReceive](gccontrollerelement/systemgesturestate/alwaysreceive.md)
+### States
+- [GCControllerElement.SystemGestureState.alwaysReceive](./alwaysreceive.md)
   A state that sends input to your app and a gesture recognizer simultaneously.
-- [GCControllerElement.SystemGestureState.disabled](gccontrollerelement/systemgesturestate/disabled.md)
+- [GCControllerElement.SystemGestureState.disabled](./disabled.md)
   A state that sends input to your app directly and not to a gesture recognizer.
 
 

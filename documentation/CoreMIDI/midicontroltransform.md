@@ -1,23 +1,28 @@
 # MIDIControlTransform
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the transformation of MIDI control change events.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct MIDIControlTransform
+```
+
+```c
+struct MIDIControlTransform;
 ```
 
 #### Overview
@@ -38,35 +43,36 @@ Based on the MIDI specification, the system interprets several controls speciall
 ## Topics
 
 ### Configuring a Control Transform
-- [var controlType: MIDITransformControlType](midicontroltransform/controltype.md)
+- [var controlType: MIDITransformControlType](./midicontroltransform/controltype.md)
   The type of control specified by the control number.
-- [var remappedControlType: MIDITransformControlType](midicontroltransform/remappedcontroltype.md)
+- [var remappedControlType: MIDITransformControlType](./midicontroltransform/remappedcontroltype.md)
   The remapped control type.
-- [var controlNumber: UInt16](midicontroltransform/controlnumber.md)
+- [var controlNumber: UInt16](./midicontroltransform/controlnumber.md)
   The control number to affect.
-- [var transform: MIDITransformType](midicontroltransform/transform.md)
+- [var transform: MIDITransformType](./midicontroltransform/transform.md)
   The type of transformation to apply to the event values.
-- [var param: Int16](midicontroltransform/param.md)
+- [var param: Int16](./midicontroltransform/param.md)
   An argument to the transformation method.
 ### Initializers
-- [init()](midicontroltransform/init.md)
-- [init(controlType: MIDITransformControlType, remappedControlType: MIDITransformControlType, controlNumber: UInt16, transform: MIDITransformType, param: Int16)](midicontroltransform/init(controltype:remappedcontroltype:controlnumber:transform:param:).md)
+- [init()](./midicontroltransform/init%28%29.md)
+- [init(controlType: MIDITransformControlType, remappedControlType: MIDITransformControlType, controlNumber: UInt16, transform: MIDITransformType, param: Int16)](./midicontroltransform/init%28controltype,remappedcontroltype,controlnumber,transform,param%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MIDIValueMap](midivaluemap.md)
+### Transforming Values
+- [struct MIDIValueMap](./midivaluemap.md)
   A custom lookup table to transform MIDI 7-bit values, as contained in note numbers, velocities, control values, and so on.
-- [struct MIDITransform](miditransform.md)
+- [struct MIDITransform](./miditransform.md)
   The transformation of a single type of MIDI event.
-- [enum MIDITransformType](miditransformtype.md)
+- [enum MIDITransformType](./miditransformtype.md)
   Values that specify the type of MIDI transformation.
-- [enum MIDITransformControlType](miditransformcontroltype.md)
+- [enum MIDITransformControlType](./miditransformcontroltype.md)
   A set of values that indicate how to interpret control numbers.
 
 

@@ -1,7 +1,8 @@
 # deregisterReportHandlers(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func deregisterReportHandlers(with queue: dispatch_queue_t, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func deregisterReportHandlers(with queue: dispatch_queue_t) async
+```
+
+```objc
+- (void) deregisterReportHandlersWithQueue:(dispatch_queue_t) queue completion:(dispatch_block_t) completion;
 ```
 
 

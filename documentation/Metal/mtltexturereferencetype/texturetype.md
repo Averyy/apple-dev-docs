@@ -1,7 +1,8 @@
 # textureType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture type of the texture.
 
@@ -19,13 +20,18 @@ The texture type of the texture.
 var textureType: MTLTextureType { get }
 ```
 
+```objc
+@property (readonly) MTLTextureType textureType;
+```
+
 ## See Also
 
-- [var textureDataType: MTLDataType](mtltexturereferencetype/texturedatatype.md)
+### Describing the texture
+- [var textureDataType: MTLDataType](./texturedatatype.md)
   The data type of the texture.
-- [var access: MTLBindingAccess](mtltexturereferencetype/access.md)
+- [var access: MTLBindingAccess](./access.md)
   The texture’s read/write access to the argument.
-- [var isDepthTexture: Bool](mtltexturereferencetype/isdepthtexture.md)
+- [var isDepthTexture: Bool](./isdepthtexture.md)
   A Boolean value that indicates whether the texture is a depth texture.
 
 

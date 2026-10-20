@@ -1,7 +1,8 @@
 # Sync the List of Devices
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get updates about the list of devices the server manages.
 
@@ -17,7 +18,7 @@ This service may return the same device more than once. You must resolve duplica
 ## Topics
 
 ### Request
-- [object SyncDeviceRequest](syncdevicerequest.md)
+- [object SyncDeviceRequest](./syncdevicerequest.md)
   The request to sync the list of devices.
 
 ## Endpoint
@@ -26,21 +27,37 @@ This service may return the same device more than once. You must resolve duplica
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `SyncDeviceRequest`
+
 The request to sync the list of devices.
+
+## Responses
+
+- `200` OK (`FetchDeviceResponse`, `application/json`)
+- `400` Bad Request:
+
+  - `CURSOR_REQUIRED`: `The cursor value was not provided in the request body.`
+  - `INVALID_CURSOR`: An invalid cursor value was provided.
+  - `EXHAUSTED_CURSOR`: The cursor had returned all devices in previous calls.
+  - `EXPIRED_CURSOR`: The provided cursor is older than 7 days.
+  - `USER_AGENT_INVALID:`  The `User-Agent` header is invalid.
+  - `USER_AGENT_MISSING:`  The `User-Agent` header is missing or has no assigned value.
 
 ## See Also
 
-- [Activation Lock a Device](activation-lock-devices.md)
+### Device management
+- [Activation Lock a Device](./activation-lock-devices.md)
   Enable activation lock on a remote device.
-- [Get Device Details](device-details.md)
+- [Get Device Details](./device-details.md)
   Get the details on a set of devices.
-- [Get a List of Devices](fetch-devices.md)
+- [Get a List of Devices](./fetch-devices.md)
   Get a list of devices that are managed by the server.
-- [Disown Devices](disown-devices.md)
+- [Disown Devices](./disown-devices.md)
   Notify Apple’s servers that your organization no longer owns the specified devices.
-- [Get Replacement Details](get-replacement-details.md)
+- [Get Replacement Details](./get-replacement-details.md)
   Get information about the device that a replacement device replaces.
-- [Get Beta Enrollment Tokens](get-beta-enrollment-tokens.md)
+- [Get Beta Enrollment Tokens](./get-beta-enrollment-tokens.md)
   Retrieves the beta enrollment tokens available for the organization.
 
 

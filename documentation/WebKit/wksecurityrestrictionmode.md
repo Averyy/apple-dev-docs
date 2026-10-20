@@ -1,7 +1,8 @@
 # WKSecurityRestrictionMode
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 enum WKSecurityRestrictionMode
 ```
 
+```c
+enum WKSecurityRestrictionMode : NSInteger;
+```
+
 #### Overview
 
 Security restriction modes for WebView content.
@@ -23,40 +28,41 @@ Security restriction modes for WebView content.
 ## Topics
 
 ### Enumeration Cases
-- [WKSecurityRestrictionMode.lockdown](wksecurityrestrictionmode/lockdown.md)
-- [WKSecurityRestrictionMode.maximizeCompatibility](wksecurityrestrictionmode/maximizecompatibility.md)
-- [WKSecurityRestrictionMode.none](wksecurityrestrictionmode/none.md)
+- [WKSecurityRestrictionMode.lockdown](./wksecurityrestrictionmode/lockdown.md)
+- [WKSecurityRestrictionMode.maximizeCompatibility](./wksecurityrestrictionmode/maximizecompatibility.md)
+- [WKSecurityRestrictionMode.none](./wksecurityrestrictionmode/none.md)
 ### Initializers
-- [init?(rawValue: Int)](wksecurityrestrictionmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wksecurityrestrictionmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class WKWebViewConfiguration](wkwebviewconfiguration.md)
+### Web view configuration
+- [class WKWebViewConfiguration](./wkwebviewconfiguration.md)
   A collection of properties that you use to initialize a web view.
-- [class WKWindowFeatures](wkwindowfeatures.md)
+- [class WKWindowFeatures](./wkwindowfeatures.md)
   Display-related attributes that a webpage requests for its window.
-- [class WKProcessPool](wkprocesspool.md)
+- [class WKProcessPool](./wkprocesspool.md)
   An opaque token that you use to run multiple web views in a single process.
-- [class WKPreferences](wkpreferences.md)
+- [class WKPreferences](./wkpreferences.md)
   An object that encapsulates the standard behaviors to apply to websites.
-- [class WKWebpagePreferences](wkwebpagepreferences.md)
+- [class WKWebpagePreferences](./wkwebpagepreferences.md)
   An object that specifies the behaviors to use when loading and rendering page content.
-- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+- [WKWebpagePreferences.ContentMode](./wkwebpagepreferences/contentmode.md)
   Constants that indicate how to render web view content.
-- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
-- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+- [WKWebpagePreferences.UpgradeToHTTPSPolicy](./wkwebpagepreferences/upgradetohttpspolicy.md)
+- [WKPreferences.InactiveSchedulingPolicy](./wkpreferences/inactiveschedulingpolicy-swift.enum.md)
   An enumeration that lists policies for how a web view that’s not in a window handles tasks.
-- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
+- [WKWebView.FullscreenState](./wkwebview/fullscreenstate-swift.enum.md)
 
 
 ---

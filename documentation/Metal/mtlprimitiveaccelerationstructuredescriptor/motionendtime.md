@@ -1,7 +1,8 @@
 # motionEndTime
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end time for the range of motion that the keyframe data describes.
 
@@ -19,21 +20,26 @@ The end time for the range of motion that the keyframe data describes.
 var motionEndTime: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float motionEndTime;
+```
+
 #### Discussion
 
 The default value is `1.0f`.
 
 ## See Also
 
-- [var motionKeyframeCount: Int](mtlprimitiveaccelerationstructuredescriptor/motionkeyframecount.md)
+### Specifying motion behavior
+- [var motionKeyframeCount: Int](./motionkeyframecount.md)
   The number of keyframes in the geometry data.
-- [var motionStartTime: Float](mtlprimitiveaccelerationstructuredescriptor/motionstarttime.md)
+- [var motionStartTime: Float](./motionstarttime.md)
   The start time for the range of motion that the keyframe data describes.
-- [var motionStartBorderMode: MTLMotionBorderMode](mtlprimitiveaccelerationstructuredescriptor/motionstartbordermode.md)
+- [var motionStartBorderMode: MTLMotionBorderMode](./motionstartbordermode.md)
   The mode to use when handling timestamps before the start time.
-- [var motionEndBorderMode: MTLMotionBorderMode](mtlprimitiveaccelerationstructuredescriptor/motionendbordermode.md)
+- [var motionEndBorderMode: MTLMotionBorderMode](./motionendbordermode.md)
   The mode to use when handling timestamps after the end time.
-- [enum MTLMotionBorderMode](mtlmotionbordermode.md)
+- [enum MTLMotionBorderMode](../mtlmotionbordermode.md)
   Options for specifying how the acceleration structure handles timestamps that are outside the specified range.
 
 

@@ -1,7 +1,8 @@
 # copy(with:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes a copy of this kernel object for a new device.
 
@@ -19,9 +20,13 @@ Makes a copy of this kernel object for a new device.
 func copy(with zone: NSZone? = nil, device: (any MTLDevice)?) -> Self
 ```
 
+```objc
+- (instancetype) copyWithZone:(NSZone *) zone device:(id<MTLDevice>) device;
+```
+
 ## Mentions
 
-- [The MPSKernel Class](the-mpskernel-class.md)
+- [The MPSKernel Class](../the-mpskernel-class.md)
 
 #### Return Value
 
@@ -29,9 +34,9 @@ A copy of this kernel object.
 
 #### Discussion
 
-The same kernel objects should not be used to encode separate kernel operations on multiple command buffers from multiple threads. Many kernels have mutable properties that might be changed by another thread while the kernel is being encoded. If you need to use a kernel from multiple threads, make a copy of it for each additional thread using [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/copy(with:)) or [`copy(with:device:)`](mpskernel/copy(with:device:).md). Note that the [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/copy(with:)) method makes a copy of the kernel object on the same device.
+The same kernel objects should not be used to encode separate kernel operations on multiple command buffers from multiple threads. Many kernels have mutable properties that might be changed by another thread while the kernel is being encoded. If you need to use a kernel from multiple threads, make a copy of it for each additional thread using [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) or [`copy(with:device:)`](./copy%28with,device%29.md). Note that the [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) method makes a copy of the kernel object on the same device.
 
-This method fails if the device is not supported. Query the [`MPSSupportsMTLDevice(_:)`](mpssupportsmtldevice(_:).md) function to determine whether the device is supported.
+This method fails if the device is not supported. Query the [`MPSSupportsMTLDevice(_:)`](../mpssupportsmtldevice%28_%29.md) function to determine whether the device is supported.
 
 ## Parameters
 
@@ -40,7 +45,8 @@ This method fails if the device is not supported. Query the [`MPSSupportsMTLDevi
 
 ## See Also
 
-- [init(device: any MTLDevice)](mpskernel/init(device:).md)
+### Methods
+- [init(device: any MTLDevice)](./init%28device%29.md)
   Initializes a new kernel object.
 
 

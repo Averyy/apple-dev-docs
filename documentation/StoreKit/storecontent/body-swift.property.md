@@ -2,6 +2,7 @@
 
 **Framework**: StoreKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -22,7 +23,8 @@
 
 ## See Also
 
-- [associatedtype Body : StoreContent](storecontent/body-swift.associatedtype.md)
+### Implementing store content
+- [associatedtype Body : StoreContent](./body-swift.associatedtype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes between the first byte of two consecutive vertices in a buffer.
 
@@ -10,7 +11,7 @@ The number of bytes between the first byte of two consecutive vertices in a buff
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ The number of bytes between the first byte of two consecutive vertices in a buff
 var stride: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger stride;
+```
+
 #### Discussion
 
-Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
+Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 
-- [var stepFunction: MTLVertexStepFunction](mtlvertexbufferlayoutdescriptor/stepfunction.md)
+### Organizing the vertex buffer layout
+- [var stepFunction: MTLVertexStepFunction](./stepfunction.md)
   The circumstances under which the vertex and its attributes are presented to the vertex function.
-- [var stepRate: Int](mtlvertexbufferlayoutdescriptor/steprate.md)
+- [var stepRate: Int](./steprate.md)
   The interval at which the vertex and its attributes are presented to the vertex function.
-- [enum MTLVertexStepFunction](mtlvertexstepfunction.md)
+- [enum MTLVertexStepFunction](../mtlvertexstepfunction.md)
   The frequency with which the vertex function or post-tessellation vertex function fetches attribute data.
 
 

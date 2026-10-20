@@ -1,7 +1,8 @@
 # intensityLevel
 
 **Framework**: Media Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of flashing lights in the input surface.
 
@@ -25,9 +26,10 @@ The result is a value between `0` and `100`, where `100` is the highest detectab
 
 ## See Also
 
-- [var surfaceProcessed: Bool](maflashinglightsprocessor/result/surfaceprocessed.md)
+### Interpreting results from video processing
+- [var surfaceProcessed: Bool](./surfaceprocessed.md)
   A Boolean value that indicates whether the flashing lights processor successfully processed the input surface.
-- [var mitigationLevel: Float](maflashinglightsprocessor/result/mitigationlevel.md)
+- [var mitigationLevel: Float](./mitigationlevel.md)
   The amount of mitigation in the output surface.
 
 

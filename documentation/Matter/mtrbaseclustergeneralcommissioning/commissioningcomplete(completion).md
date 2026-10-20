@@ -1,7 +1,8 @@
 # commissioningComplete(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func commissioningComplete(completion: @escaping @Sendable (MTRGeneralCommissioningClusterCommissioningCompleteResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func commissioningComplete() async throws -> MTRGeneralCommissioningClusterCommissioningCompleteResponseParams
+```
+
+```objc
+- (void) commissioningCompleteWithCompletion:(void (^)(MTRGeneralCommissioningClusterCommissioningCompleteResponseParams *data, NSError *error)) completion;
 ```
 
 

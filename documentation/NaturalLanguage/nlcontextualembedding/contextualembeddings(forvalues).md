@@ -1,7 +1,8 @@
 # contextualEmbeddings(forValues:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns contextual embedding models that match the specified language, script, or revision criteria.
 
@@ -18,6 +19,10 @@ Returns contextual embedding models that match the specified language, script, o
 
 ```swift
 class func contextualEmbeddings(forValues valuesDictionary: [NLContextualEmbeddingKey : Any]) -> [NLContextualEmbedding]
+```
+
+```objc
++ (NSArray<NLContextualEmbedding *> *) contextualEmbeddingsForValues:(NSDictionary<NSString *,id> *) valuesDictionary;
 ```
 
 

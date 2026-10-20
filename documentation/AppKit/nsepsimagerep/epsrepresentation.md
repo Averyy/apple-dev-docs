@@ -1,12 +1,15 @@
 # epsRepresentation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The EPS representation of the image representation.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 14.0
+
+> **Deprecated**: `NSEPSImageRep` instances cannot be created on macOS 14.0 and later
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The EPS representation of the image representation.
 var epsRepresentation: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * EPSRepresentation;
+```
+
 ## See Also
 
-- [var boundingBox: NSRect](nsepsimagerep/boundingbox.md)
+### Getting Data
+- [var boundingBox: NSRect](./boundingbox.md)
   The rectangle that bounds the image representation.
 
 

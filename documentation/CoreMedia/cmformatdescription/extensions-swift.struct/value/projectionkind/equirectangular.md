@@ -1,7 +1,8 @@
 # equirectangular
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates equirectangular projection of a 360 degree sphere to a rectangular plane, where longitude and latitude of the sphere are mapped linearly to the x,y axes of the plane.
 

@@ -1,7 +1,8 @@
 # MPSMatrixDecompositionStatus.singular
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status indicating the resulting decomposition is not suitable for use in a subsequent system solve.
 
@@ -19,13 +20,18 @@ A status indicating the resulting decomposition is not suitable for use in a sub
 case singular
 ```
 
+```c
+MPSMatrixDecompositionStatusSingular
+```
+
 ## See Also
 
-- [MPSMatrixDecompositionStatus.failure](mpsmatrixdecompositionstatus/failure.md)
+### Enumeration Cases
+- [MPSMatrixDecompositionStatus.failure](./failure.md)
   A status indicating the decomposition was not able to be completed.
-- [MPSMatrixDecompositionStatus.nonPositiveDefinite](mpsmatrixdecompositionstatus/nonpositivedefinite.md)
+- [MPSMatrixDecompositionStatus.nonPositiveDefinite](./nonpositivedefinite.md)
   A status indicating a non-positive-definite pivot value was calculated.
-- [MPSMatrixDecompositionStatus.success](mpsmatrixdecompositionstatus/success.md)
+- [MPSMatrixDecompositionStatus.success](./success.md)
   A status indicating the decomposition was performed successfully.
 
 

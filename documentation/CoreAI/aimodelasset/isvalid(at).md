@@ -1,7 +1,8 @@
 # isValid(at:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the URL contains a valid model asset.
 
@@ -36,7 +37,8 @@ This checks that:
 
 ## See Also
 
-- [init(contentsOf: URL) throws](aimodelasset/init(contentsof:).md)
+### Loading an asset
+- [init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates a model asset from the contents of the specified URL.
 
 

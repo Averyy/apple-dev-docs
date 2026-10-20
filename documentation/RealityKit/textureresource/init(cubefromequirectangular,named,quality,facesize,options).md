@@ -1,7 +1,8 @@
 # init(cubeFromEquirectangular:named:quality:faceSize:options:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously creates a cube texture resource from an equirectangular image.
 
@@ -20,6 +21,13 @@ Asynchronously creates a cube texture resource from an equirectangular image.
 @preconcurrency convenience init(cubeFromEquirectangular cgImage: CGImage, named resourceName: String? = nil, quality: TextureResource.SamplingQuality = .fast, faceSize: Int? = nil, options: TextureResource.CreateOptions) async throws
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(cubeFromEquirectangular cgImage: CGImage, named resourceName: String? = nil, quality: TextureResource.SamplingQuality = .fast, faceSize: Int? = nil, options: TextureResource.CreateOptions) throws
+```
+
 #### Discussion
 
 RealityKit samples the source equirectangular image at the specified quality level to generate the cube texture.
@@ -31,9 +39,9 @@ The equirectangular image, also known as a *latitude-longitude image*, contains 
 
 To preserve all details equirectangular images require a `2:1` aspect ratio.
 
-![Equirectangular image illustrating axis orientation mapping to a](/images/com.apple.RealityKit/textureresource-cube-equirectangular-orientation.jpg)
+![Equirectangular image illustrating axis orientation mapping to a](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-equirectangular-orientation.jpg)
 
-Use the resulting texture to create an [`EnvironmentResource`](environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
+Use the resulting texture to create an [`EnvironmentResource`](../environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
 
 ```swift
 if let source = CGImageSourceCreateWithURL(url as CFURL, nil),
@@ -58,7 +66,7 @@ if let source = CGImageSourceCreateWithURL(url as CFURL, nil),
 }
 ```
 
-> **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce a cube’s memory and disk usage.
+> **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](../environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](../environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](./compression/astc%28blocksize,quality%29.md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](../entity/write%28to%29.md). Compression options also significantly reduce a cube’s memory and disk usage.
 
 ## Parameters
 

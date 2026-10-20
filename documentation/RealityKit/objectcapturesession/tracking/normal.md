@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Tracking.normal
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tracking is available and the session detects no problems..
 

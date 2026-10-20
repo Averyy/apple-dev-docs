@@ -1,7 +1,8 @@
 # temperatures
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wrist temperatures and their accuracies.
 

@@ -2,6 +2,7 @@
 
 **Framework**: System Extensions  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate the manager failed to complete the request.
@@ -15,9 +16,13 @@ Tells the delegate the manager failed to complete the request.
 func request(_ request: OSSystemExtensionRequest, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) request:(OSSystemExtensionRequest *) request didFailWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Installing System Extensions and Drivers](installing-system-extensions-and-drivers.md)
+- [Installing System Extensions and Drivers](../installing-system-extensions-and-drivers.md)
 
 ## Parameters
 
@@ -26,9 +31,10 @@ func request(_ request: OSSystemExtensionRequest, didFailWithError error: any Er
 
 ## See Also
 
-- [func request(OSSystemExtensionRequest, didFinishWithResult: OSSystemExtensionRequest.Result)](ossystemextensionrequestdelegate/request(_:didfinishwithresult:).md)
+### Handling Success and Failure
+- [func request(OSSystemExtensionRequest, didFinishWithResult: OSSystemExtensionRequest.Result)](./request%28_,didfinishwithresult%29.md)
   Tells the delegate that the manager completed the request.
-- [OSSystemExtensionRequest.Result](ossystemextensionrequest/result.md)
+- [OSSystemExtensionRequest.Result](../ossystemextensionrequest/result.md)
   The result of a completed request, possibly including additional information about the extension’s state.
 
 

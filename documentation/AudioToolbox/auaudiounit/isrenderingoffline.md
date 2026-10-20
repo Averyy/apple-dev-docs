@@ -1,7 +1,8 @@
 # isRenderingOffline
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Communicates to an audio unit that it is rendering offline.
 
@@ -19,6 +20,18 @@ Communicates to an audio unit that it is rendering offline.
 var isRenderingOffline: Bool { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, getter=isRenderingOffline) BOOL renderingOffline;
+```
+
+*macOS*
+
+```objc
+@property (atomic, getter=isRenderingOffline) BOOL renderingOffline;
+```
+
 #### Discussion
 
 A host should use this property when using an audio unit in a context where there are no realtime deadlines. An audio unit may respond by using a more expensive signal processing algorithm, or allowing itself to block at render time if data being generated on secondary work threads is not ready in time.
@@ -27,15 +40,16 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_OfflineR
 
 ## See Also
 
-- [var latency: TimeInterval](auaudiounit/latency.md)
+### Optimizing Performance
+- [var latency: TimeInterval](./latency.md)
   The audio unit’s processing latency, in seconds.
-- [var tailTime: TimeInterval](auaudiounit/tailtime.md)
+- [var tailTime: TimeInterval](./tailtime.md)
   The audio unit’s tail time, in seconds.
-- [var renderQuality: Int](auaudiounit/renderquality.md)
+- [var renderQuality: Int](./renderquality.md)
   Provides a trade-off between rendering quality and CPU load.
-- [var shouldBypassEffect: Bool](auaudiounit/shouldbypasseffect.md)
+- [var shouldBypassEffect: Bool](./shouldbypasseffect.md)
   Determines whether an effect should route input directly to output, without any processing.
-- [var canProcessInPlace: Bool](auaudiounit/canprocessinplace.md)
+- [var canProcessInPlace: Bool](./canprocessinplace.md)
   Determines whether an audio unit can process in place.
 
 

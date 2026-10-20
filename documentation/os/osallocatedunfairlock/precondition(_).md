@@ -1,7 +1,8 @@
 # precondition(_:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asserts if the lock object fails to meet specified ownership requirements.
 
@@ -11,7 +12,7 @@ Asserts if the lock object fails to meet specified ownership requirements.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func precondition(_ condition: OSAllocatedUnfairLock<State>.Ownership)
 
 #### Discussion
 
-Call this function to ensure the ownership state of the lock is what your code requires. For example, if you call this function and pass [`OSAllocatedUnfairLock.Ownership.owner`](osallocatedunfairlock/ownership/owner.md), the app terminates if the object is locked, but the calling code doesn’t own the lock. Similarly, if you call it and pass [`OSAllocatedUnfairLock.Ownership.notOwner`](osallocatedunfairlock/ownership/notowner.md), the app terminates if the calling code doesn’t own the lock, or if the object isn’t locked.
+Call this function to ensure the ownership state of the lock is what your code requires. For example, if you call this function and pass [`OSAllocatedUnfairLock.Ownership.owner`](./ownership/owner.md), the app terminates if the object is locked, but the calling code doesn’t own the lock. Similarly, if you call it and pass [`OSAllocatedUnfairLock.Ownership.notOwner`](./ownership/notowner.md), the app terminates if the calling code doesn’t own the lock, or if the object isn’t locked.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Call this function to ensure the ownership state of the lock is what your code r
 
 ## See Also
 
-- [OSAllocatedUnfairLock.Ownership](osallocatedunfairlock/ownership.md)
+### Determining lock ownership
+- [OSAllocatedUnfairLock.Ownership](./ownership.md)
   An enumeration that represents the ownership status of an unfair lock.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Animates the item to an arbitrary location in your view hierarchy.
@@ -18,6 +19,10 @@ Animates the item to an arbitrary location in your view hierarchy.
 func drop(_ dragItem: UIDragItem, to target: UIDragPreviewTarget) -> any UIDragAnimating
 ```
 
+```objc
+- (id<UIDragAnimating>) dropItem:(UIDragItem *) dragItem toTarget:(UIDragPreviewTarget *) target;
+```
+
 #### Discussion
 
 Use this method to animate drops to any view in your app. For example, you might use this method to drop items onto a tab bar or toolbar that is part of your interface.
@@ -25,14 +30,15 @@ Use this method to animate drops to any view in your app. For example, you might
 ## Parameters
 
 - `dragItem`: The item that you want to drop.
-- `target`: The location at which to drop the item, specified as a point in a view. You can also use the [`UIDragPreviewTarget`](uidragpreviewtarget.md) object to specify a final transform to apply to the content.
+- `target`: The location at which to drop the item, specified as a point in a view. You can also use the [`UIDragPreviewTarget`](../uidragpreviewtarget.md) object to specify a final transform to apply to the content.
 
 ## See Also
 
-- [func drop(UIDragItem, toRowAt: IndexPath) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:torowat:).md)
+### Animating rows to their destination
+- [func drop(UIDragItem, toRowAt: IndexPath) -> any UIDragAnimating](./drop%28_,torowat%29.md)
   Animates the item to the specified index path in the table view.
-- [func drop(UIDragItem, intoRowAt: IndexPath, rect: CGRect) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:intorowat:rect:).md)
-- [func drop(UIDragItem, to: UITableViewDropPlaceholder) -> any UITableViewDropPlaceholderContext](uitableviewdropcoordinator/drop(_:to:)-3znax.md)
+- [func drop(UIDragItem, intoRowAt: IndexPath, rect: CGRect) -> any UIDragAnimating](./drop%28_,intorowat,rect%29.md)
+- [func drop(UIDragItem, to: UITableViewDropPlaceholder) -> any UITableViewDropPlaceholderContext](./drop%28_,to%29-3znax.md)
   Animates the item to the specified location and inserts a placeholder cell at that location.
 
 

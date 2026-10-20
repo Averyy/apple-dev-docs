@@ -1,14 +1,15 @@
 # proc_min_sdk
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t proc_min_sdk(proc_t);
 ```
 

@@ -1,7 +1,8 @@
 # GLKQuaternion
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of a quaternion.
 
@@ -15,6 +16,10 @@ A representation of a quaternion.
 
 ```swift
 typealias GLKQuaternion = _GLKQuaternion
+```
+
+```c
+typedef union _GLKQuaternion GLKQuaternion;
 ```
 
 ##### Fields

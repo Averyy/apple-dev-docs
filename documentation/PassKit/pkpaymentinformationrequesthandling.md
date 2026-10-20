@@ -1,20 +1,25 @@
 # PKPaymentInformationRequestHandling
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 protocol PKPaymentInformationRequestHandling
+```
+
+```objc
+@protocol PKPaymentInformationRequestHandling
 ```
 
 #### Overview
@@ -24,21 +29,22 @@ protocol PKPaymentInformationRequestHandling
 ## Topics
 
 ### Getting the transaction information
-- [func handle(PKBarcodeEventConfigurationRequest, completion: () -> Void)](pkpaymentinformationrequesthandling/handle(_:completion:)-3cth8.md)
-- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: (PKBarcodeEventMetadataResponse) -> Void)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
-- [class PKBarcodeEventConfigurationRequest](pkbarcodeeventconfigurationrequest.md)
-- [class PKBarcodeEventMetadataRequest](pkbarcodeeventmetadatarequest.md)
-- [class PKBarcodeEventMetadataResponse](pkbarcodeeventmetadataresponse.md)
-- [typealias PKInformationRequestCompletionBlock](pkinformationrequestcompletionblock.md)
+- [func handle(PKBarcodeEventConfigurationRequest, completion: () -> Void)](./pkpaymentinformationrequesthandling/handle%28_,completion%29-3cth8.md)
+- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: (PKBarcodeEventMetadataResponse) -> Void)](./pkpaymentinformationrequesthandling/handleinformationrequest%28_,completion%29.md)
+- [class PKBarcodeEventConfigurationRequest](./pkbarcodeeventconfigurationrequest.md)
+- [class PKBarcodeEventMetadataRequest](./pkbarcodeeventmetadatarequest.md)
+- [class PKBarcodeEventMetadataResponse](./pkbarcodeeventmetadataresponse.md)
+- [typealias PKInformationRequestCompletionBlock](./pkinformationrequestcompletionblock.md)
 ### Signing the transaction
-- [func handle(PKBarcodeEventSignatureRequest, completion: (PKBarcodeEventSignatureResponse) -> Void)](pkpaymentinformationrequesthandling/handle(_:completion:)-18x2y.md)
-- [class PKBarcodeEventSignatureRequest](pkbarcodeeventsignaturerequest.md)
-- [class PKBarcodeEventSignatureResponse](pkbarcodeeventsignatureresponse.md)
-- [typealias PKSignatureRequestCompletionBlock](pksignaturerequestcompletionblock.md)
+- [func handle(PKBarcodeEventSignatureRequest, completion: (PKBarcodeEventSignatureResponse) -> Void)](./pkpaymentinformationrequesthandling/handle%28_,completion%29-18x2y.md)
+- [class PKBarcodeEventSignatureRequest](./pkbarcodeeventsignaturerequest.md)
+- [class PKBarcodeEventSignatureResponse](./pkbarcodeeventsignatureresponse.md)
+- [typealias PKSignatureRequestCompletionBlock](./pksignaturerequestcompletionblock.md)
 
 ## See Also
 
-- [class PKPaymentInformationEventExtension](pkpaymentinformationeventextension.md)
+### QR transaction information
+- [class PKPaymentInformationEventExtension](./pkpaymentinformationeventextension.md)
   An abstract superclass for an extension to collect payment information and sign transaction data in a QR code purchase.
 
 

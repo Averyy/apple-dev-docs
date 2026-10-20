@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opacity of the shape.
 
@@ -24,11 +25,12 @@ Ranges from `0.0` (fully transparent) to `1.0` (fully opaque). Defaults to `1.0`
 
 ## See Also
 
-- [var fillColor: CGColor?](shapemarkup/fillcolor.md)
+### Configuring fill and stroke
+- [var fillColor: CGColor?](./fillcolor.md)
   The color used to fill the shape’s path.
-- [var strokeColor: CGColor?](shapemarkup/strokecolor.md)
+- [var strokeColor: CGColor?](./strokecolor.md)
   The color used to stroke the shape’s path.
-- [var lineWidth: CGFloat](shapemarkup/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The line width of the shape’s path.
 
 

@@ -1,7 +1,8 @@
 # Endpoint Security
 
 **Framework**: Endpoint Security  
-**Kind**: module
+**Kind**: module  
+**Role**: Library
 
 Develop system extensions that enhance user security.
 
@@ -13,145 +14,145 @@ Develop system extensions that enhance user security.
 
 Endpoint Security is a C API for monitoring system events for potentially malicious activity. You can write your client in any language that supports native calls. Your client registers with Endpoint Security to authorize pending events, or receive notifications of events that already occurred. These events include process executions, mounting file systems, forking processes, and raising signals.
 
-Develop your system extension with Endpoint Security and package it in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade the extension on the user’s Mac.
+Develop your system extension with Endpoint Security and package it in an app that uses the [System Extensions](../SystemExtensions/SystemExtensions.md) framework to install and upgrade the extension on the user’s Mac.
 
 ## Topics
 
 ### Event Monitoring
-- [Client](client.md)
+- [Client](./client.md)
   An opaque type that maintains Endpoint Security client state, and functions related to this type.
-- [Message](message.md)
+- [Message](./message.md)
   A type used by Endpoint Security to notify your client when a monitored action occurs.
-- [Event Types](event-types.md)
+- [Event Types](./event-types.md)
   Types used by messages to deliver details specific to different kinds of Endpoint Security events.
 ### Entitlements
-- [com.apple.developer.endpoint-security.client](../bundleresources/entitlements/com.apple.developer.endpoint-security.client.md)
+- [com.apple.developer.endpoint-security.client](../BundleResources/entitlements/com.apple.developer.endpoint-security.client.md)
   The entitlement required to monitor system events for potentially malicious activity.
 ### Reference
-- [EndpointSecurity Constants](endpointsecurity-constants.md)
-- [EndpointSecurity Data Types](endpointsecurity-data-types.md)
-- [EndpointSecurity Functions](endpointsecurity-functions.md)
-- [EndpointSecurity Structures](endpointsecurity-structures.md)
-- [EndpointSecurity Enumerations](endpointsecurity-enumerations.md)
+- [EndpointSecurity Constants](./endpointsecurity-constants.md)
+- [EndpointSecurity Data Types](./endpointsecurity-data-types.md)
+- [EndpointSecurity Functions](./endpointsecurity-functions.md)
+- [EndpointSecurity Structures](./endpointsecurity-structures.md)
+- [EndpointSecurity Enumerations](./endpointsecurity-enumerations.md)
 ### Structures
-- [struct es_bootstrap_target_type_t](es_bootstrap_target_type_t.md)
-- [struct es_cs_validation_category_t](es_cs_validation_category_t.md)
+- [struct es_bootstrap_target_type_t](./es_bootstrap_target_type_t.md)
+- [struct es_cs_validation_category_t](./es_cs_validation_category_t.md)
   es_cs_validation_category
-- [struct es_deadline_miss_mode_t](es_deadline_miss_mode_t.md)
+- [struct es_deadline_miss_mode_t](./es_deadline_miss_mode_t.md)
   Deadline miss mode for ES clients
-- [struct es_event_bootstrap_check_in_t](es_event_bootstrap_check_in_t.md)
-- [struct es_event_bootstrap_look_up_t](es_event_bootstrap_look_up_t.md)
-- [struct es_event_tcc_modify_t](es_event_tcc_modify_t.md)
-- [struct es_lightweight_code_requirement_t](es_lightweight_code_requirement_t.md)
-- [struct es_tcc_authorization_reason_t](es_tcc_authorization_reason_t.md)
+- [struct es_event_bootstrap_check_in_t](./es_event_bootstrap_check_in_t.md)
+- [struct es_event_bootstrap_look_up_t](./es_event_bootstrap_look_up_t.md)
+- [struct es_event_tcc_modify_t](./es_event_tcc_modify_t.md)
+- [struct es_lightweight_code_requirement_t](./es_lightweight_code_requirement_t.md)
+- [struct es_tcc_authorization_reason_t](./es_tcc_authorization_reason_t.md)
   ess_tcc_authorization_reason_t
-- [struct es_tcc_authorization_right_t](es_tcc_authorization_right_t.md)
+- [struct es_tcc_authorization_right_t](./es_tcc_authorization_right_t.md)
   ess_tcc_authorization_right_t
-- [struct es_tcc_event_type_t](es_tcc_event_type_t.md)
-- [struct es_tcc_identity_type_t](es_tcc_identity_type_t.md)
+- [struct es_tcc_event_type_t](./es_tcc_event_type_t.md)
+- [struct es_tcc_identity_type_t](./es_tcc_identity_type_t.md)
   es_tcc_identity_type_t
 ### Variables
-- [var ES_BOOTSTRAP_TARGET_TYPE_JOB: es_bootstrap_target_type_t](es_bootstrap_target_type_job.md)
-- [var ES_BOOTSTRAP_TARGET_TYPE_PROCESS: es_bootstrap_target_type_t](es_bootstrap_target_type_process.md)
-- [var ES_CS_VALIDATION_CATEGORY_APP_STORE: es_cs_validation_category_t](es_cs_validation_category_app_store.md)
-- [var ES_CS_VALIDATION_CATEGORY_DEVELOPER_ID: es_cs_validation_category_t](es_cs_validation_category_developer_id.md)
-- [var ES_CS_VALIDATION_CATEGORY_DEVELOPMENT: es_cs_validation_category_t](es_cs_validation_category_development.md)
-- [var ES_CS_VALIDATION_CATEGORY_ENTERPRISE: es_cs_validation_category_t](es_cs_validation_category_enterprise.md)
-- [var ES_CS_VALIDATION_CATEGORY_INVALID: es_cs_validation_category_t](es_cs_validation_category_invalid.md)
-- [var ES_CS_VALIDATION_CATEGORY_LOCAL_SIGNING: es_cs_validation_category_t](es_cs_validation_category_local_signing.md)
-- [var ES_CS_VALIDATION_CATEGORY_NONE: es_cs_validation_category_t](es_cs_validation_category_none.md)
-- [var ES_CS_VALIDATION_CATEGORY_OOPJIT: es_cs_validation_category_t](es_cs_validation_category_oopjit.md)
-- [var ES_CS_VALIDATION_CATEGORY_PLATFORM: es_cs_validation_category_t](es_cs_validation_category_platform.md)
-- [var ES_CS_VALIDATION_CATEGORY_ROSETTA: es_cs_validation_category_t](es_cs_validation_category_rosetta.md)
-- [var ES_CS_VALIDATION_CATEGORY_TESTFLIGHT: es_cs_validation_category_t](es_cs_validation_category_testflight.md)
-- [var ES_DEADLINE_MISS_MODE_FAIL_CLOSED: es_deadline_miss_mode_t](es_deadline_miss_mode_fail_closed.md)
+- [var ES_BOOTSTRAP_TARGET_TYPE_JOB: es_bootstrap_target_type_t](./es_bootstrap_target_type_job.md)
+- [var ES_BOOTSTRAP_TARGET_TYPE_PROCESS: es_bootstrap_target_type_t](./es_bootstrap_target_type_process.md)
+- [var ES_CS_VALIDATION_CATEGORY_APP_STORE: es_cs_validation_category_t](./es_cs_validation_category_app_store.md)
+- [var ES_CS_VALIDATION_CATEGORY_DEVELOPER_ID: es_cs_validation_category_t](./es_cs_validation_category_developer_id.md)
+- [var ES_CS_VALIDATION_CATEGORY_DEVELOPMENT: es_cs_validation_category_t](./es_cs_validation_category_development.md)
+- [var ES_CS_VALIDATION_CATEGORY_ENTERPRISE: es_cs_validation_category_t](./es_cs_validation_category_enterprise.md)
+- [var ES_CS_VALIDATION_CATEGORY_INVALID: es_cs_validation_category_t](./es_cs_validation_category_invalid.md)
+- [var ES_CS_VALIDATION_CATEGORY_LOCAL_SIGNING: es_cs_validation_category_t](./es_cs_validation_category_local_signing.md)
+- [var ES_CS_VALIDATION_CATEGORY_NONE: es_cs_validation_category_t](./es_cs_validation_category_none.md)
+- [var ES_CS_VALIDATION_CATEGORY_OOPJIT: es_cs_validation_category_t](./es_cs_validation_category_oopjit.md)
+- [var ES_CS_VALIDATION_CATEGORY_PLATFORM: es_cs_validation_category_t](./es_cs_validation_category_platform.md)
+- [var ES_CS_VALIDATION_CATEGORY_ROSETTA: es_cs_validation_category_t](./es_cs_validation_category_rosetta.md)
+- [var ES_CS_VALIDATION_CATEGORY_TESTFLIGHT: es_cs_validation_category_t](./es_cs_validation_category_testflight.md)
+- [var ES_DEADLINE_MISS_MODE_FAIL_CLOSED: es_deadline_miss_mode_t](./es_deadline_miss_mode_fail_closed.md)
   Deny the operation when client fails to respond, but don’t kill the client
-- [var ES_DEADLINE_MISS_MODE_FAIL_OPEN: es_deadline_miss_mode_t](es_deadline_miss_mode_fail_open.md)
+- [var ES_DEADLINE_MISS_MODE_FAIL_OPEN: es_deadline_miss_mode_t](./es_deadline_miss_mode_fail_open.md)
   Allow the operation when client fails to respond, but don’t kill the client
-- [var ES_DEADLINE_MISS_MODE_KILL: es_deadline_miss_mode_t](es_deadline_miss_mode_kill.md)
+- [var ES_DEADLINE_MISS_MODE_KILL: es_deadline_miss_mode_t](./es_deadline_miss_mode_kill.md)
   Kill the client when it fails to respond to an auth event (default behavior)
-- [var ES_EVENT_TYPE_AUTH_BOOTSTRAP_CHECK_IN: es_event_type_t](es_event_type_auth_bootstrap_check_in.md)
-- [var ES_EVENT_TYPE_AUTH_BOOTSTRAP_LOOK_UP: es_event_type_t](es_event_type_auth_bootstrap_look_up.md)
-- [var ES_EVENT_TYPE_AUTH_XPC_CONNECT: es_event_type_t](es_event_type_auth_xpc_connect.md)
-- [var ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_CHECK_IN: es_event_type_t](es_event_type_notify_bootstrap_check_in.md)
-- [var ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_LOOK_UP: es_event_type_t](es_event_type_notify_bootstrap_look_up.md)
-- [var ES_EVENT_TYPE_NOTIFY_TCC_MODIFY: es_event_type_t](es_event_type_notify_tcc_modify.md)
-- [var ES_EVENT_TYPE_RESERVED_0: es_event_type_t](es_event_type_reserved_0.md)
-- [var ES_EVENT_TYPE_RESERVED_1: es_event_type_t](es_event_type_reserved_1.md)
-- [var ES_EVENT_TYPE_RESERVED_10: es_event_type_t](es_event_type_reserved_10.md)
-- [var ES_EVENT_TYPE_RESERVED_11: es_event_type_t](es_event_type_reserved_11.md)
-- [var ES_EVENT_TYPE_RESERVED_12: es_event_type_t](es_event_type_reserved_12.md)
-- [var ES_EVENT_TYPE_RESERVED_13: es_event_type_t](es_event_type_reserved_13.md)
-- [var ES_EVENT_TYPE_RESERVED_14: es_event_type_t](es_event_type_reserved_14.md)
-- [var ES_EVENT_TYPE_RESERVED_15: es_event_type_t](es_event_type_reserved_15.md)
-- [var ES_EVENT_TYPE_RESERVED_16: es_event_type_t](es_event_type_reserved_16.md)
-- [var ES_EVENT_TYPE_RESERVED_17: es_event_type_t](es_event_type_reserved_17.md)
-- [var ES_EVENT_TYPE_RESERVED_18: es_event_type_t](es_event_type_reserved_18.md)
-- [var ES_EVENT_TYPE_RESERVED_2: es_event_type_t](es_event_type_reserved_2.md)
-- [var ES_EVENT_TYPE_RESERVED_3: es_event_type_t](es_event_type_reserved_3.md)
-- [var ES_EVENT_TYPE_RESERVED_4: es_event_type_t](es_event_type_reserved_4.md)
-- [var ES_EVENT_TYPE_RESERVED_5: es_event_type_t](es_event_type_reserved_5.md)
-- [var ES_EVENT_TYPE_RESERVED_6: es_event_type_t](es_event_type_reserved_6.md)
-- [var ES_EVENT_TYPE_RESERVED_7: es_event_type_t](es_event_type_reserved_7.md)
-- [var ES_EVENT_TYPE_RESERVED_8: es_event_type_t](es_event_type_reserved_8.md)
-- [var ES_EVENT_TYPE_RESERVED_9: es_event_type_t](es_event_type_reserved_9.md)
-- [var ES_TCC_AUTHORIZATION_REASON_APP_TYPE_POLICY: es_tcc_authorization_reason_t](es_tcc_authorization_reason_app_type_policy.md)
+- [var ES_EVENT_TYPE_AUTH_BOOTSTRAP_CHECK_IN: es_event_type_t](./es_event_type_auth_bootstrap_check_in.md)
+- [var ES_EVENT_TYPE_AUTH_BOOTSTRAP_LOOK_UP: es_event_type_t](./es_event_type_auth_bootstrap_look_up.md)
+- [var ES_EVENT_TYPE_AUTH_XPC_CONNECT: es_event_type_t](./es_event_type_auth_xpc_connect.md)
+- [var ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_CHECK_IN: es_event_type_t](./es_event_type_notify_bootstrap_check_in.md)
+- [var ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_LOOK_UP: es_event_type_t](./es_event_type_notify_bootstrap_look_up.md)
+- [var ES_EVENT_TYPE_NOTIFY_TCC_MODIFY: es_event_type_t](./es_event_type_notify_tcc_modify.md)
+- [var ES_EVENT_TYPE_RESERVED_0: es_event_type_t](./es_event_type_reserved_0.md)
+- [var ES_EVENT_TYPE_RESERVED_1: es_event_type_t](./es_event_type_reserved_1.md)
+- [var ES_EVENT_TYPE_RESERVED_10: es_event_type_t](./es_event_type_reserved_10.md)
+- [var ES_EVENT_TYPE_RESERVED_11: es_event_type_t](./es_event_type_reserved_11.md)
+- [var ES_EVENT_TYPE_RESERVED_12: es_event_type_t](./es_event_type_reserved_12.md)
+- [var ES_EVENT_TYPE_RESERVED_13: es_event_type_t](./es_event_type_reserved_13.md)
+- [var ES_EVENT_TYPE_RESERVED_14: es_event_type_t](./es_event_type_reserved_14.md)
+- [var ES_EVENT_TYPE_RESERVED_15: es_event_type_t](./es_event_type_reserved_15.md)
+- [var ES_EVENT_TYPE_RESERVED_16: es_event_type_t](./es_event_type_reserved_16.md)
+- [var ES_EVENT_TYPE_RESERVED_17: es_event_type_t](./es_event_type_reserved_17.md)
+- [var ES_EVENT_TYPE_RESERVED_18: es_event_type_t](./es_event_type_reserved_18.md)
+- [var ES_EVENT_TYPE_RESERVED_2: es_event_type_t](./es_event_type_reserved_2.md)
+- [var ES_EVENT_TYPE_RESERVED_3: es_event_type_t](./es_event_type_reserved_3.md)
+- [var ES_EVENT_TYPE_RESERVED_4: es_event_type_t](./es_event_type_reserved_4.md)
+- [var ES_EVENT_TYPE_RESERVED_5: es_event_type_t](./es_event_type_reserved_5.md)
+- [var ES_EVENT_TYPE_RESERVED_6: es_event_type_t](./es_event_type_reserved_6.md)
+- [var ES_EVENT_TYPE_RESERVED_7: es_event_type_t](./es_event_type_reserved_7.md)
+- [var ES_EVENT_TYPE_RESERVED_8: es_event_type_t](./es_event_type_reserved_8.md)
+- [var ES_EVENT_TYPE_RESERVED_9: es_event_type_t](./es_event_type_reserved_9.md)
+- [var ES_TCC_AUTHORIZATION_REASON_APP_TYPE_POLICY: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_app_type_policy.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_ENTITLED: es_tcc_authorization_reason_t](es_tcc_authorization_reason_entitled.md)
+- [var ES_TCC_AUTHORIZATION_REASON_ENTITLED: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_entitled.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_ERROR: es_tcc_authorization_reason_t](es_tcc_authorization_reason_error.md)
-- [var ES_TCC_AUTHORIZATION_REASON_MDM_POLICY: es_tcc_authorization_reason_t](es_tcc_authorization_reason_mdm_policy.md)
+- [var ES_TCC_AUTHORIZATION_REASON_ERROR: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_error.md)
+- [var ES_TCC_AUTHORIZATION_REASON_MDM_POLICY: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_mdm_policy.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_MISSING_USAGE_STRING: es_tcc_authorization_reason_t](es_tcc_authorization_reason_missing_usage_string.md)
+- [var ES_TCC_AUTHORIZATION_REASON_MISSING_USAGE_STRING: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_missing_usage_string.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_NONE: es_tcc_authorization_reason_t](es_tcc_authorization_reason_none.md)
-- [var ES_TCC_AUTHORIZATION_REASON_PREFLIGHT_UNKNOWN: es_tcc_authorization_reason_t](es_tcc_authorization_reason_preflight_unknown.md)
+- [var ES_TCC_AUTHORIZATION_REASON_NONE: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_none.md)
+- [var ES_TCC_AUTHORIZATION_REASON_PREFLIGHT_UNKNOWN: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_preflight_unknown.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_PROMPT_CANCEL: es_tcc_authorization_reason_t](es_tcc_authorization_reason_prompt_cancel.md)
+- [var ES_TCC_AUTHORIZATION_REASON_PROMPT_CANCEL: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_prompt_cancel.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_PROMPT_TIMEOUT: es_tcc_authorization_reason_t](es_tcc_authorization_reason_prompt_timeout.md)
+- [var ES_TCC_AUTHORIZATION_REASON_PROMPT_TIMEOUT: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_prompt_timeout.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_SERVICE_OVERRIDE_POLICY: es_tcc_authorization_reason_t](es_tcc_authorization_reason_service_override_policy.md)
+- [var ES_TCC_AUTHORIZATION_REASON_SERVICE_OVERRIDE_POLICY: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_service_override_policy.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_SERVICE_POLICY: es_tcc_authorization_reason_t](es_tcc_authorization_reason_service_policy.md)
+- [var ES_TCC_AUTHORIZATION_REASON_SERVICE_POLICY: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_service_policy.md)
   A system process changed the authorization right
-- [var ES_TCC_AUTHORIZATION_REASON_SYSTEM_SET: es_tcc_authorization_reason_t](es_tcc_authorization_reason_system_set.md)
+- [var ES_TCC_AUTHORIZATION_REASON_SYSTEM_SET: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_system_set.md)
   User changed the authorization right via Preferences
-- [var ES_TCC_AUTHORIZATION_REASON_USER_CONSENT: es_tcc_authorization_reason_t](es_tcc_authorization_reason_user_consent.md)
-- [var ES_TCC_AUTHORIZATION_REASON_USER_SET: es_tcc_authorization_reason_t](es_tcc_authorization_reason_user_set.md)
+- [var ES_TCC_AUTHORIZATION_REASON_USER_CONSENT: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_user_consent.md)
+- [var ES_TCC_AUTHORIZATION_REASON_USER_SET: es_tcc_authorization_reason_t](./es_tcc_authorization_reason_user_set.md)
   User answered a prompt
-- [var ES_TCC_AUTHORIZATION_RIGHT_ADD_MODIFY_ADDED: es_tcc_authorization_right_t](es_tcc_authorization_right_add_modify_added.md)
-- [var ES_TCC_AUTHORIZATION_RIGHT_ALLOWED: es_tcc_authorization_right_t](es_tcc_authorization_right_allowed.md)
-- [var ES_TCC_AUTHORIZATION_RIGHT_DENIED: es_tcc_authorization_right_t](es_tcc_authorization_right_denied.md)
-- [var ES_TCC_AUTHORIZATION_RIGHT_LEARN_MORE: es_tcc_authorization_right_t](es_tcc_authorization_right_learn_more.md)
-- [var ES_TCC_AUTHORIZATION_RIGHT_LIMITED: es_tcc_authorization_right_t](es_tcc_authorization_right_limited.md)
-- [var ES_TCC_AUTHORIZATION_RIGHT_SESSION_PID: es_tcc_authorization_right_t](es_tcc_authorization_right_session_pid.md)
-- [var ES_TCC_AUTHORIZATION_RIGHT_UNKNOWN: es_tcc_authorization_right_t](es_tcc_authorization_right_unknown.md)
-- [var ES_TCC_EVENT_TYPE_CREATE: es_tcc_event_type_t](es_tcc_event_type_create.md)
-- [var ES_TCC_EVENT_TYPE_DELETE: es_tcc_event_type_t](es_tcc_event_type_delete.md)
-- [var ES_TCC_EVENT_TYPE_MODIFY: es_tcc_event_type_t](es_tcc_event_type_modify.md)
-- [var ES_TCC_EVENT_TYPE_UNKNOWN: es_tcc_event_type_t](es_tcc_event_type_unknown.md)
-- [var ES_TCC_IDENTITY_TYPE_BUNDLE_ID: es_tcc_identity_type_t](es_tcc_identity_type_bundle_id.md)
-- [var ES_TCC_IDENTITY_TYPE_EXECUTABLE_PATH: es_tcc_identity_type_t](es_tcc_identity_type_executable_path.md)
-- [var ES_TCC_IDENTITY_TYPE_FILE_PROVIDER_DOMAIN_ID: es_tcc_identity_type_t](es_tcc_identity_type_file_provider_domain_id.md)
-- [var ES_TCC_IDENTITY_TYPE_POLICY_ID: es_tcc_identity_type_t](es_tcc_identity_type_policy_id.md)
+- [var ES_TCC_AUTHORIZATION_RIGHT_ADD_MODIFY_ADDED: es_tcc_authorization_right_t](./es_tcc_authorization_right_add_modify_added.md)
+- [var ES_TCC_AUTHORIZATION_RIGHT_ALLOWED: es_tcc_authorization_right_t](./es_tcc_authorization_right_allowed.md)
+- [var ES_TCC_AUTHORIZATION_RIGHT_DENIED: es_tcc_authorization_right_t](./es_tcc_authorization_right_denied.md)
+- [var ES_TCC_AUTHORIZATION_RIGHT_LEARN_MORE: es_tcc_authorization_right_t](./es_tcc_authorization_right_learn_more.md)
+- [var ES_TCC_AUTHORIZATION_RIGHT_LIMITED: es_tcc_authorization_right_t](./es_tcc_authorization_right_limited.md)
+- [var ES_TCC_AUTHORIZATION_RIGHT_SESSION_PID: es_tcc_authorization_right_t](./es_tcc_authorization_right_session_pid.md)
+- [var ES_TCC_AUTHORIZATION_RIGHT_UNKNOWN: es_tcc_authorization_right_t](./es_tcc_authorization_right_unknown.md)
+- [var ES_TCC_EVENT_TYPE_CREATE: es_tcc_event_type_t](./es_tcc_event_type_create.md)
+- [var ES_TCC_EVENT_TYPE_DELETE: es_tcc_event_type_t](./es_tcc_event_type_delete.md)
+- [var ES_TCC_EVENT_TYPE_MODIFY: es_tcc_event_type_t](./es_tcc_event_type_modify.md)
+- [var ES_TCC_EVENT_TYPE_UNKNOWN: es_tcc_event_type_t](./es_tcc_event_type_unknown.md)
+- [var ES_TCC_IDENTITY_TYPE_BUNDLE_ID: es_tcc_identity_type_t](./es_tcc_identity_type_bundle_id.md)
+- [var ES_TCC_IDENTITY_TYPE_EXECUTABLE_PATH: es_tcc_identity_type_t](./es_tcc_identity_type_executable_path.md)
+- [var ES_TCC_IDENTITY_TYPE_FILE_PROVIDER_DOMAIN_ID: es_tcc_identity_type_t](./es_tcc_identity_type_file_provider_domain_id.md)
+- [var ES_TCC_IDENTITY_TYPE_POLICY_ID: es_tcc_identity_type_t](./es_tcc_identity_type_policy_id.md)
 ### Functions
-- [func es_exec_entitlements(UnsafePointer<es_event_exec_t>) -> xpc_object_t?](es_exec_entitlements(_:).md)
-- [func es_get_deadline_max_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](es_get_deadline_max_milliseconds(_:_:_:).md)
+- [func es_exec_entitlements(UnsafePointer<es_event_exec_t>) -> xpc_object_t?](./es_exec_entitlements%28_%29.md)
+- [func es_get_deadline_max_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](./es_get_deadline_max_milliseconds%28_,_,_%29.md)
   Get the current maximum deadline in milliseconds for a specific event type
-- [func es_get_deadline_min_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](es_get_deadline_min_milliseconds(_:_:_:).md)
+- [func es_get_deadline_min_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](./es_get_deadline_min_milliseconds%28_,_,_%29.md)
   Get the current minimum deadline in milliseconds for a specific event type
-- [func es_get_deadline_miss_mode(OpaquePointer, UnsafeMutablePointer<es_deadline_miss_mode_t>) -> es_return_t](es_get_deadline_miss_mode(_:_:).md)
+- [func es_get_deadline_miss_mode(OpaquePointer, UnsafeMutablePointer<es_deadline_miss_mode_t>) -> es_return_t](./es_get_deadline_miss_mode%28_,_%29.md)
   Get the current deadline miss mode for the specified client
-- [func es_new_descendants_client(UnsafeMutablePointer<OpaquePointer?>, es_handler_block_t) -> es_new_client_result_t](es_new_descendants_client(_:_:).md)
+- [func es_new_descendants_client(UnsafeMutablePointer<OpaquePointer?>, es_handler_block_t) -> es_new_client_result_t](./es_new_descendants_client%28_,_%29.md)
   Create a new ES client scoped to descendant processes only.
-- [func es_set_deadline_max_milliseconds(OpaquePointer, UnsafePointer<es_event_type_t>, UInt32, UInt32) -> es_return_t](es_set_deadline_max_milliseconds(_:_:_:_:).md)
+- [func es_set_deadline_max_milliseconds(OpaquePointer, UnsafePointer<es_event_type_t>, UInt32, UInt32) -> es_return_t](./es_set_deadline_max_milliseconds%28_,_,_,_%29.md)
   Set the maximum deadline in milliseconds for specified auth event types for this client
-- [func es_set_deadline_min_milliseconds(OpaquePointer, UnsafePointer<es_event_type_t>, UInt32, UInt32) -> es_return_t](es_set_deadline_min_milliseconds(_:_:_:_:).md)
+- [func es_set_deadline_min_milliseconds(OpaquePointer, UnsafePointer<es_event_type_t>, UInt32, UInt32) -> es_return_t](./es_set_deadline_min_milliseconds%28_,_,_,_%29.md)
   Set the minimum deadline in milliseconds for specified auth event types for this client
-- [func es_set_deadline_miss_mode(OpaquePointer, es_deadline_miss_mode_t) -> es_return_t](es_set_deadline_miss_mode(_:_:).md)
+- [func es_set_deadline_miss_mode(OpaquePointer, es_deadline_miss_mode_t) -> es_return_t](./es_set_deadline_miss_mode%28_,_%29.md)
   Set the deadline miss mode for the specified client
-- [func es_sync_client(OpaquePointer, () -> Void) -> es_return_t](es_sync_client(_:_:).md)
+- [func es_sync_client(OpaquePointer, () -> Void) -> es_return_t](./es_sync_client%28_,_%29.md)
 
 
 ---

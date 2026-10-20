@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Indicates whether two colors are equal.
 
@@ -31,7 +32,8 @@ A Boolean that’s set to `true` if the two colors are equal.
 
 ## See Also
 
-- [func hash(into: inout Hasher)](color/hash(into:).md)
+### Comparing colors
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of the color by feeding them into the given hash function.
 
 

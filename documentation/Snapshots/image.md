@@ -1,7 +1,8 @@
 # Image
 
 **Framework**: Maps Web Snapshots  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A JSON object for a Snapshot URL that describes the characteristics of custom images to use for map annotations.
 
@@ -10,7 +11,7 @@ A JSON object for a Snapshot URL that describes the characteristics of custom im
 
 ## Declaration
 
-```swift
+```
 object Image
 ```
 
@@ -30,13 +31,14 @@ If an image fails to load in a reasonable amount of time, the snapshot rendering
 
 ## See Also
 
-- [Generating a URL and Signature to Create a Maps Web Snapshot](generating-a-url-and-signature-to-create-a-maps-web-snapshot.md)
+### Essentials
+- [Generating a URL and Signature to Create a Maps Web Snapshot](./generating-a-url-and-signature-to-create-a-maps-web-snapshot.md)
   Create a Snapshot URL and generate a signature to validate the request.
-- [object Annotation](annotation.md)
+- [object Annotation](./annotation.md)
   An object for a Snapshot URL that describes annotation characteristics.
-- [object Overlay](overlay.md)
+- [object Overlay](./overlay.md)
   A JSON object for a Snapshot URL that describes overlay shape characteristics, including points for the overlay and styles such as width, color, and dash pattern.
-- [object OverlayStyle](overlaystyle.md)
+- [object OverlayStyle](./overlaystyle.md)
   A  JSON object that describes reusable styles for an overlay.
 
 

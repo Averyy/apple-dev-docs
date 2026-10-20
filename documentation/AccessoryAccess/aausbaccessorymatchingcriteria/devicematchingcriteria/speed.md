@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: Accessory Access  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that represents the device speed.
 
@@ -16,15 +17,16 @@ var speed: Int?
 
 ## See Also
 
-- [var deviceClass: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/deviceclass.md)
+### Device characteristics
+- [var deviceClass: Int?](./deviceclass.md)
   The value that represents the device class.
-- [var deviceProtocol: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/deviceprotocol.md)
+- [var deviceProtocol: Int?](./deviceprotocol.md)
   The value that represents the device protocol.
-- [var deviceSubClass: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/devicesubclass.md)
+- [var deviceSubClass: Int?](./devicesubclass.md)
   The value that represents the device subclass.
-- [var productID: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/productid.md)
+- [var productID: Int?](./productid.md)
   The value that represents the product ID.
-- [var vendorID: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/vendorid.md)
+- [var vendorID: Int?](./vendorid.md)
   The value that represents the vendor ID.
 
 

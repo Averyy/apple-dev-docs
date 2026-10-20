@@ -1,7 +1,8 @@
 # BoostedTreeClassifier.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The transformer type created by this estimator.
 
@@ -22,9 +23,10 @@ typealias Transformer = TreeClassifierModel<Label>
 
 ## See Also
 
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> TreeClassifierModel<Label>](boostedtreeclassifier/fitted(to:validateon:eventhandler:).md)
+### Fitting the classifier
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> TreeClassifierModel<Label>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a boosted tree classifier model to a collection of examples.
-- [BoostedTreeClassifier.Annotation](boostedtreeclassifier/annotation.md)
+- [BoostedTreeClassifier.Annotation](./annotation.md)
   The annotation type.
 
 

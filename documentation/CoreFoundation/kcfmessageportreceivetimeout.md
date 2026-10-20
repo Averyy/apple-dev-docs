@@ -1,18 +1,19 @@
 # kCFMessagePortReceiveTimeout
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No reply was received before the receive timeout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ No reply was received before the receive timeout.
 var kCFMessagePortReceiveTimeout: Int32 { get }
 ```
 
+```c
+kCFMessagePortReceiveTimeout
+```
+
 ## See Also
 
-- [var kCFMessagePortSuccess: Int32](kcfmessageportsuccess.md)
+### Constants
+- [var kCFMessagePortSuccess: Int32](./kcfmessageportsuccess.md)
   The message was successfully sent and, if a reply was expected, a reply was received.
-- [var kCFMessagePortSendTimeout: Int32](kcfmessageportsendtimeout.md)
+- [var kCFMessagePortSendTimeout: Int32](./kcfmessageportsendtimeout.md)
   The message could not be sent before the send timeout.
-- [var kCFMessagePortIsInvalid: Int32](kcfmessageportisinvalid.md)
+- [var kCFMessagePortIsInvalid: Int32](./kcfmessageportisinvalid.md)
   The message could not be sent because the message port is invalid.
-- [var kCFMessagePortTransportError: Int32](kcfmessageporttransporterror.md)
+- [var kCFMessagePortTransportError: Int32](./kcfmessageporttransporterror.md)
   An error occurred trying to send the message.
-- [var kCFMessagePortBecameInvalidError: Int32](kcfmessageportbecameinvaliderror.md)
+- [var kCFMessagePortBecameInvalidError: Int32](./kcfmessageportbecameinvaliderror.md)
   The message port was invalidated.
 
 

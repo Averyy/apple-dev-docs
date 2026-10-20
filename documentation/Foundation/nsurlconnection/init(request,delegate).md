@@ -1,22 +1,29 @@
 # init(request:delegate:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized URL connection and begins to load the data for the URL request.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.3+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.3+ - Deprecated in 10.11
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use NSURLSession (see NSURLSession.h)
 
 ## Declaration
 
 ```swift
 init?(request: URLRequest, delegate: Any?)
+```
+
+```objc
+- (instancetype) initWithRequest:(NSURLRequest *) request delegate:(id) delegate;
 ```
 
 #### Return Value
@@ -25,7 +32,7 @@ The URL connection for the URL request. Returns `nil` if a connection can’t be
 
 #### Discussion
 
-This is equivalent to calling [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) and passing [`true`](https://developer.apple.com/documentation/swift/true) for `startImmediately`.
+This is equivalent to calling [`init(request:delegate:startImmediately:)`](./init%28request,delegate,startimmediately%29.md) and passing [`true`](../../Swift/true.md) for `startImmediately`.
 
 ##### Special Considerations
 
@@ -34,15 +41,16 @@ During the download the connection maintains a strong reference to the `delegate
 ## Parameters
 
 - `request`: The URL request to load. The `request` object is deep-copied as part of the initialization process. Changes made to `request` after this method returns do not affect the request that is used for the loading process.
-- `delegate`: The delegate object for the connection. The connection calls methods on this delegate as the load progresses. Delegate methods are called on the same thread that called this method. By default, for the connection to work correctly, the calling thread’s run loop must be operating in the default run loop mode. See [`schedule(in:forMode:)`](nsurlconnection/schedule(in:formode:).md) to change the run loop and mode.
+- `delegate`: The delegate object for the connection. The connection calls methods on this delegate as the load progresses. Delegate methods are called on the same thread that called this method. By default, for the connection to work correctly, the calling thread’s run loop must be operating in the default run loop mode. See [`schedule(in:forMode:)`](./schedule%28in,formode%29.md) to change the run loop and mode.
 
 ## See Also
 
-- [init?(request: URLRequest, delegate: Any?, startImmediately: Bool)](nsurlconnection/init(request:delegate:startimmediately:).md)
+### Loading Data Asynchronously
+- [init?(request: URLRequest, delegate: Any?, startImmediately: Bool)](./init%28request,delegate,startimmediately%29.md)
   Returns an initialized URL connection and begins to load the data for the URL request, if specified.
-- [class func sendAsynchronousRequest(URLRequest, queue: OperationQueue, completionHandler: (URLResponse?, Data?, (any Error)?) -> Void)](nsurlconnection/sendasynchronousrequest(_:queue:completionhandler:).md)
+- [class func sendAsynchronousRequest(URLRequest, queue: OperationQueue, completionHandler: (URLResponse?, Data?, (any Error)?) -> Void)](./sendasynchronousrequest%28_,queue,completionhandler%29.md)
   Loads the data for a URL request and executes a handler block on an operation queue when the request completes or fails.
-- [func start()](nsurlconnection/start.md)
+- [func start()](./start%28%29.md)
   Causes the connection to begin loading data, if it has not already.
 
 

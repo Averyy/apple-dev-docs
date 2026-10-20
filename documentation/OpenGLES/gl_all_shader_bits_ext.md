@@ -1,7 +1,8 @@
 # GL_ALL_SHADER_BITS_EXT
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_ALL_SHADER_BITS_EXT: UInt32 { get }
+```
+
+```c
+#define GL_ALL_SHADER_BITS_EXT
 ```
 
 

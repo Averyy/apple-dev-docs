@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new command buffer.
@@ -20,13 +21,17 @@ Creates a new command buffer.
 func makeCommandBuffer() -> (any MTL4CommandBuffer)?
 ```
 
+```objc
+- (id<MTL4CommandBuffer>) newCommandBuffer;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 #### Return Value
 
-A [`MTL4CommandBuffer`](mtl4commandbuffer.md) instance, or `nil` if the function failed.
+A [`MTL4CommandBuffer`](../mtl4commandbuffer.md) instance, or `nil` if the function failed.
 
 
 ---

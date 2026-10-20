@@ -1,14 +1,15 @@
 # rating
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relative impact of using electricity during this period of time.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,9 +23,10 @@ Values are normalized between zero and one. A lower value indicates cleaner ener
 
 ## See Also
 
-- [init(interval: DateInterval, rating: Double)](electricityguidance/value/init(interval:rating:).md)
+### Creating a date interval
+- [init(interval: DateInterval, rating: Double)](./init%28interval,rating%29.md)
   Creates an interval with the specified date and rating.
-- [let interval: DateInterval](electricityguidance/value/interval.md)
+- [let interval: DateInterval](./interval.md)
   The interval to which the electrical guidance applies.
 
 

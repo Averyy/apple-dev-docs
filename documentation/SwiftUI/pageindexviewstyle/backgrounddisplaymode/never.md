@@ -1,7 +1,8 @@
 # never
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Background is never displayed behind the page index view.
 
@@ -21,11 +22,12 @@ static let never: PageIndexViewStyle.BackgroundDisplayMode
 
 ## See Also
 
-- [static let automatic: PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode/automatic.md)
+### Getting the display modes
+- [static let automatic: PageIndexViewStyle.BackgroundDisplayMode](./automatic.md)
   Background will use the default for the platform.
-- [static let always: PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode/always.md)
+- [static let always: PageIndexViewStyle.BackgroundDisplayMode](./always.md)
   Background is always displayed behind the page index view.
-- [static let interactive: PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode/interactive.md)
+- [static let interactive: PageIndexViewStyle.BackgroundDisplayMode](./interactive.md)
   Background is only shown while the index view is interacted with.
 
 

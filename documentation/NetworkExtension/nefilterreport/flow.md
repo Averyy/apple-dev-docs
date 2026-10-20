@@ -1,7 +1,8 @@
 # flow
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The flow on which the associated action was taken.
 
@@ -18,19 +19,24 @@ The flow on which the associated action was taken.
 var flow: NEFilterFlow? { get }
 ```
 
+```objc
+@property (readonly, nullable) NEFilterFlow * flow;
+```
+
 ## See Also
 
-- [var action: NEFilterAction](nefilterreport/action.md)
+### Getting report properties
+- [var action: NEFilterAction](./action.md)
   The action taken on the reported flow.
-- [enum NEFilterAction](nefilteraction.md)
+- [enum NEFilterAction](../nefilteraction.md)
   The actions a data provider can take on a filter flow.
-- [var event: NEFilterReport.Event](nefilterreport/event-swift.property.md)
+- [var event: NEFilterReport.Event](./event-swift.property.md)
   The type of event indicated by this report.
-- [NEFilterReport.Event](nefilterreport/event-swift.enum.md)
+- [NEFilterReport.Event](./event-swift.enum.md)
   A type that represents the kind of event indicated by a report.
-- [var bytesInboundCount: Int](nefilterreport/bytesinboundcount.md)
+- [var bytesInboundCount: Int](./bytesinboundcount.md)
   The number of inbound bytes received from the flow.
-- [var bytesOutboundCount: Int](nefilterreport/bytesoutboundcount.md)
+- [var bytesOutboundCount: Int](./bytesoutboundcount.md)
   The number of outbound bytes sent on the flow.
 
 

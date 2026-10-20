@@ -1,7 +1,8 @@
 # storyboard
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The storyboard object that contains your scene’s initial view controller.
 
@@ -18,17 +19,22 @@ The storyboard object that contains your scene’s initial view controller.
 var storyboard: UIStoryboard? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIStoryboard * storyboard;
+```
+
 #### Discussion
 
 UIKit loads the initial view controller from the specified scene and displays it appropriately.
 
-UIKit sets this property’s initial value using the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile) key from the appropriate scene in your app’s `Info.plist` file.
+UIKit sets this property’s initial value using the [`UISceneStoryboardFile`](../../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile.md) key from the appropriate scene in your app’s `Info.plist` file.
 
 ## See Also
 
-- [var sceneClass: AnyClass?](uisceneconfiguration/sceneclass.md)
+### Specifying the scene creation details
+- [var sceneClass: AnyClass?](./sceneclass.md)
   The class of the scene object that you want UIKit to create.
-- [var delegateClass: AnyClass?](uisceneconfiguration/delegateclass.md)
+- [var delegateClass: AnyClass?](./delegateclass.md)
   The class of the custom delegate object that you want UIKit to create.
 
 

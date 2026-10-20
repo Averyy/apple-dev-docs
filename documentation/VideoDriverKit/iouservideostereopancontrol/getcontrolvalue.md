@@ -1,7 +1,8 @@
 # GetControlValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current value of the control.
 
@@ -10,7 +11,7 @@ Gets the current value of the control.
 
 ## Declaration
 
-```swift
+```c
 float GetControlValue();
 ```
 
@@ -20,11 +21,12 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetControlValue](iouservideostereopancontrol/setcontrolvalue.md)
+### Accessing the value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the current control value.
-- [SetPanningChannels](iouservideostereopancontrol/setpanningchannels.md)
+- [SetPanningChannels](./setpanningchannels.md)
   Sets the current stereo panning channels.
-- [GetPanningChannels](iouservideostereopancontrol/getpanningchannels.md)
+- [GetPanningChannels](./getpanningchannels.md)
   Gets the current stereo panning channels.
 
 

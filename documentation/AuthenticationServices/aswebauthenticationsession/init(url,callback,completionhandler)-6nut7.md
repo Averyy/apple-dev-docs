@@ -1,7 +1,8 @@
 # init(url:callback:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a web authentication session instance that uses a callback to evaluate a redirection URL.
 
@@ -20,9 +21,13 @@ Creates a web authentication session instance that uses a callback to evaluate a
 init(url URL: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: @escaping ASWebAuthenticationSession.CompletionHandler)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL callback:(ASWebAuthenticationSessionCallback *) callback completionHandler:(ASWebAuthenticationSessionCompletionHandler) completionHandler;
+```
+
 #### Discussion
 
-The following example creates a session that requires a callback with a custom URL scheme, using the [`customScheme(_:)`](aswebauthenticationsession/callback/customscheme(_:).md) type method to create the `callback` parameter:
+The following example creates a session that requires a callback with a custom URL scheme, using the [`customScheme(_:)`](./callback/customscheme%28_%29.md) type method to create the `callback` parameter:
 
 ```swift
 let session = ASWebAuthenticationSession(
@@ -41,9 +46,10 @@ let session = ASWebAuthenticationSession(
 
 ## See Also
 
-- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+### Creating a session
+- [ASWebAuthenticationSession.Callback](./callback.md)
   An object for evaluating navigation events in an authentication session.
-- [ASWebAuthenticationSession.CompletionHandler](aswebauthenticationsession/completionhandler.md)
+- [ASWebAuthenticationSession.CompletionHandler](./completionhandler.md)
   A completion handler for the web authentication session.
 
 

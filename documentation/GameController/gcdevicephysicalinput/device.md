@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device that the physical input represents.
@@ -18,6 +19,10 @@ The device that the physical input represents.
 
 ```swift
 weak var device: (any GCDevice)? { get }
+```
+
+```objc
+@property (weak, readonly) id<GCDevice> device;
 ```
 
 

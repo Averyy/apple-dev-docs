@@ -9,13 +9,14 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long UNMASKED_VENDOR_WEBGL;
 ```
 
 ## See Also
 
-- [UNMASKED_RENDERER_WEBGL](webgldebugrendererinfo/1633343-unmasked_renderer_webgl.md)
+### Miscellaneous
+- [UNMASKED_RENDERER_WEBGL](./api-1633343-unmasked_renderer_webgl.md)
 
 
 ---

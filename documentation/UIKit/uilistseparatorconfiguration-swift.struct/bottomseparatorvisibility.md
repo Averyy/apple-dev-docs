@@ -1,7 +1,8 @@
 # bottomSeparatorVisibility
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visibility of the bottom separator for the item the configuration applies to.
 
@@ -9,7 +10,7 @@ The visibility of the bottom separator for the item the configuration applies to
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var bottomSeparatorVisibility: UIListSeparatorConfiguration.Visibility { get set
 
 ## See Also
 
-- [var topSeparatorVisibility: UIListSeparatorConfiguration.Visibility](uilistseparatorconfiguration-swift.struct/topseparatorvisibility.md)
+### Controlling separator visibility
+- [var topSeparatorVisibility: UIListSeparatorConfiguration.Visibility](./topseparatorvisibility.md)
   The visibility of the top separator for the item the configuration applies to.
-- [UIListSeparatorConfiguration.Visibility](uilistseparatorconfiguration-swift.struct/visibility.md)
+- [UIListSeparatorConfiguration.Visibility](./visibility.md)
   Constants that define the visibility of list separators.
 
 

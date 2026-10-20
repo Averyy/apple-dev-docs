@@ -1,7 +1,8 @@
 # kSPCProcCmd_SEND_DIAGNOSTICS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSPCProcCmd_SEND_DIAGNOSTICS = 0x1D
 ```
 

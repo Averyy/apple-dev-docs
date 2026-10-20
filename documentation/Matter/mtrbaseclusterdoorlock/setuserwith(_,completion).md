@@ -1,7 +1,8 @@
 # setUserWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setUserWith(_ params: MTRDoorLockClusterSetUserParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setUserWith(_ params: MTRDoorLockClusterSetUserParams) async throws
+```
+
+```objc
+- (void) setUserWithParams:(MTRDoorLockClusterSetUserParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

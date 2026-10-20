@@ -1,14 +1,15 @@
 # vm_tag
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t vm_tag:8;
 ```
 

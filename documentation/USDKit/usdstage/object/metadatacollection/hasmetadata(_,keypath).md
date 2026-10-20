@@ -1,7 +1,8 @@
 # hasMetadata(_:keyPath:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the dictionary-valued metadata for the given key has a value at `keyPath`.
 

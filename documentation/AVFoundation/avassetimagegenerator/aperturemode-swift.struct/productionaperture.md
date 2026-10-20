@@ -1,7 +1,8 @@
 # productionAperture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that applies only pixel aspect ratio.
 
@@ -19,15 +20,20 @@ A mode that applies only pixel aspect ratio.
 static let productionAperture: AVAssetImageGenerator.ApertureMode
 ```
 
+```c
+extern AVAssetImageGeneratorApertureMode const AVAssetImageGeneratorApertureModeProductionAperture;
+```
+
 #### Discussion
 
 The image isn’t cropped to the clean aperture region, but it’s scaled according to the pixel aspect ratio. Use this option when you want to see all the pixels in your video, including the edges.
 
 ## See Also
 
-- [static let cleanAperture: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/cleanaperture.md)
+### Aperture modes
+- [static let cleanAperture: AVAssetImageGenerator.ApertureMode](./cleanaperture.md)
   A mode that applies both pixel aspect ratio and clean aperture.
-- [static let encodedPixels: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/encodedpixels.md)
+- [static let encodedPixels: AVAssetImageGenerator.ApertureMode](./encodedpixels.md)
   A mode that applies neither pixel aspect ratio nor clean aperture.
 
 

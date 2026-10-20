@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stackshot_suspension_info {
     ...
 };
@@ -17,10 +17,10 @@ struct stackshot_suspension_info {
 ## Topics
 
 ### Instance Properties
-- [tss_count](stackshot_suspension_info/4291369-tss_count.md)
-- [tss_duration](stackshot_suspension_info/4291370-tss_duration.md)
-- [tss_last_end](stackshot_suspension_info/4291371-tss_last_end.md)
-- [tss_last_start](stackshot_suspension_info/4291372-tss_last_start.md)
+- [tss_count](./stackshot_suspension_info/api-4291369-tss_count.md)
+- [tss_duration](./stackshot_suspension_info/api-4291370-tss_duration.md)
+- [tss_last_end](./stackshot_suspension_info/api-4291371-tss_last_end.md)
+- [tss_last_start](./stackshot_suspension_info/api-4291372-tss_last_start.md)
 
 
 ---

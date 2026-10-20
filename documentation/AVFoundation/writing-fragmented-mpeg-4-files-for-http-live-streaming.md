@@ -1,6 +1,8 @@
 # Writing fragmented MPEG-4 files for HTTP Live Streaming
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip](https://docs-assets.developer.apple.com/published/454a64e24941/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip)
 
 Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 
@@ -10,9 +12,9 @@ Create an HTTP Live Streaming presentation by turning a movie file into a sequen
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC20 session [`10011: Authoring Fragmented MPEG-4 with AVAssetWriter`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10011).
+> **Note**: This sample code project is associated with WWDC20 session [10011: Authoring Fragmented MPEG-4 with AVAssetWriter](https://developer.apple.com/videos/play/wwdc2020/10011).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
@@ -23,31 +25,32 @@ Before you run the sample code project in Xcode:
 
 ## See Also
 
-- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+### Media writing
+- [Converting projected video to Apple Projected Media Profile](./converting-projected-video-to-apple-projected-media-profile.md)
   Convert content with equirectangular or half-equirectangular projection to APMP.
-- [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
+- [Converting side-by-side 3D video to multiview HEVC and spatial video](./converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
-- [Adding a display mask rectangle metadata track to a movie file](adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
+- [Adding a display mask rectangle metadata track to a movie file](./adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
   Show a specific area of a video by using timed display mask rectangle metadata.
-- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../ImageIO/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
-- [Tagging media with video color information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](./tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.
-- [Evaluating an app’s video color](evaluating-an-app-s-video-color.md)
+- [Evaluating an app’s video color](./evaluating-an-app-s-video-color.md)
   Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
-- [class AVOutputSettingsAssistant](avoutputsettingsassistant.md)
+- [class AVOutputSettingsAssistant](./avoutputsettingsassistant.md)
   An object that builds audio and video output settings dictionaries.
-- [class AVAssetWriter](avassetwriter.md)
+- [class AVAssetWriter](./avassetwriter.md)
   An object that writes media data to a container file.
-- [class AVAssetWriterInput](avassetwriterinput.md)
+- [class AVAssetWriterInput](./avassetwriterinput.md)
   An object that appends media samples to a track in an asset writer’s output file.
-- [class AVAssetWriterInputPixelBufferAdaptor](avassetwriterinputpixelbufferadaptor.md)
+- [class AVAssetWriterInputPixelBufferAdaptor](./avassetwriterinputpixelbufferadaptor.md)
   An object that appends video samples to an asset writer input.
-- [class AVAssetWriterInputTaggedPixelBufferGroupAdaptor](avassetwriterinputtaggedpixelbuffergroupadaptor.md)
+- [class AVAssetWriterInputTaggedPixelBufferGroupAdaptor](./avassetwriterinputtaggedpixelbuffergroupadaptor.md)
   An object that appends tagged buffer groups to an asset writer input.
-- [class AVAssetWriterInputMetadataAdaptor](avassetwriterinputmetadataadaptor.md)
+- [class AVAssetWriterInputMetadataAdaptor](./avassetwriterinputmetadataadaptor.md)
   An object that appends timed metadata groups to an asset writer input.
-- [class AVAssetWriterInputGroup](avassetwriterinputgroup.md)
+- [class AVAssetWriterInputGroup](./avassetwriterinputgroup.md)
   A group of inputs with tracks that are mutually exclusive to each other for playback or processing.
 
 

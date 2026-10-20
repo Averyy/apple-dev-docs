@@ -1,7 +1,8 @@
 # updateComposition()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the input controller that the composition has changed.
 
@@ -14,13 +15,18 @@ Informs the input controller that the composition has changed.
 func updateComposition()
 ```
 
+```objc
+- (void) updateComposition;
+```
+
 #### Discussion
 
 This method calls the protocol method composedString: to obtain the current composition. The current composition is sent to the client by a call to the method `setMarkedText(_:selectionRange:replacementRange:)`.
 
 ## See Also
 
-- [func cancelComposition()](imkinputcontroller/cancelcomposition.md)
+### Managing Composition
+- [func cancelComposition()](./cancelcomposition%28%29.md)
   Stops the current composition and replaces marked text with the original text.
 
 

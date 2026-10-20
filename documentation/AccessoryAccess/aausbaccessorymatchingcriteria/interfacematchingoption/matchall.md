@@ -1,7 +1,8 @@
 # AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAll
 
 **Framework**: Accessory Access  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the match needs to be all inclusive of the provided interface criteria.
 
@@ -14,15 +15,19 @@ A value that indicates the match needs to be all inclusive of the provided inter
 case matchAll
 ```
 
+```c
+AAUSBAccessoryMatchingCriteriaInterfaceMatchingOptionMatchAll
+```
+
 #### Discussion
 
 Matching is successful for the USB accessory that has at least one USB interface matching every criteria in the provided dictionary.
 
 ## See Also
 
-- [init?(rawValue: Int)](aausbaccessorymatchingcriteria/interfacematchingoption/init(rawvalue:).md)
+- [init?(rawValue: Int)](./init%28rawvalue%29.md)
   Initializes a new interface matching option with the provided value.
-- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAny](aausbaccessorymatchingcriteria/interfacematchingoption/matchany.md)
+- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAny](./matchany.md)
   A value that indicates that the match needs to cover at least one of the provided interface criteria.
 
 

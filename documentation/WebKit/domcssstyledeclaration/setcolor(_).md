@@ -1,7 +1,8 @@
 # setColor(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setColor(_ color: String!)
+```
+
+```objc
+- (void) setColor:(NSString *) color;
 ```
 
 

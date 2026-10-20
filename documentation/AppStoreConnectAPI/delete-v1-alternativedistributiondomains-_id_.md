@@ -1,7 +1,8 @@
 # Delete an Alternative Distribution Domain
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete the alternative distribution search domain for an app.
 
@@ -14,7 +15,7 @@ Delete the alternative distribution search domain for an app.
 
 **Request**:
 
-```None
+```
 DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains/{id}
 ```
 
@@ -30,15 +31,27 @@ DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains/{
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the alternative distribution domain resource ID from the [`List Alternative Distribution Domains`](get-v1-alternativedistributiondomains.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the alternative distribution domain resource ID from the [`List Alternative Distribution Domains`](./get-v1-alternativedistributiondomains.md) response.
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Add an Alternative Distribution Domain](post-v1-alternativedistributiondomains.md)
+### Managing domains
+- [Add an Alternative Distribution Domain](./post-v1-alternativedistributiondomains.md)
   Add an alternative distribution domain to your account.
-- [Read Alternative Distribution Domain Information](get-v1-alternativedistributiondomains-_id_.md)
+- [Read Alternative Distribution Domain Information](./get-v1-alternativedistributiondomains-_id_.md)
   Read information for a specific alternative distribution domain.
-- [List Alternative Distribution Domains](get-v1-alternativedistributiondomains.md)
+- [List Alternative Distribution Domains](./get-v1-alternativedistributiondomains.md)
   List all the alternative distribution domains for your account.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The models to include in this version of the schema.

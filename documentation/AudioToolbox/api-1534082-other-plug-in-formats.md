@@ -1,22 +1,24 @@
 # Other Plug-In Formats
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kOtherPluginFormat_AU: UInt32](kotherpluginformat_au.md)
-- [var kOtherPluginFormat_Undefined: UInt32](kotherpluginformat_undefined.md)
-- [var kOtherPluginFormat_kMAS: UInt32](kotherpluginformat_kmas.md)
-- [var kOtherPluginFormat_kVST: UInt32](kotherpluginformat_kvst.md)
+- [var kOtherPluginFormat_AU: UInt32](./kotherpluginformat_au.md)
+- [var kOtherPluginFormat_Undefined: UInt32](./kotherpluginformat_undefined.md)
+- [var kOtherPluginFormat_kMAS: UInt32](./kotherpluginformat_kmas.md)
+- [var kOtherPluginFormat_kVST: UInt32](./kotherpluginformat_kvst.md)
 
 ## See Also
 
-- [RenderQuality](1534177-renderquality.md)
+### General
+- [RenderQuality](./api-1534177-renderquality.md)
   Render quality settings for audio units.
-- [General Audio Unit Properties](general-audio-unit-properties.md)
+- [General Audio Unit Properties](./general-audio-unit-properties.md)
   Properties that apply to any audio unit.
-- [struct HostCallbackInfo](hostcallbackinfo.md)
+- [struct HostCallbackInfo](./hostcallbackinfo.md)
   The time- and transport-related callback functions for an audio unit.
 
 

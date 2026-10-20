@@ -1,7 +1,8 @@
 # maxRows
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of rows to import form a CSV file; otherwise `nil` to import all rows.
 
@@ -21,7 +22,8 @@ var maxRows: Int?
 
 ## See Also
 
-- [var selectColumns: [String]?](mldatatable/parsingoptions/selectcolumns.md)
+### Limiting rows and columns
+- [var selectColumns: [String]?](./selectcolumns.md)
   The list of column names to import from a CSV file; otherwise `nil` to import all columns.
 
 

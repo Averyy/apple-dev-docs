@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to provide a file destination where the system should write the download data.
@@ -16,7 +17,15 @@ Asks the delegate to provide a file destination where the system should write th
 ## Declaration
 
 ```swift
+func download(_ download: WKDownload, decideDestinationUsing response: URLResponse, suggestedFilename: String, completionHandler: @escaping @MainActor @Sendable (URL?) -> Void)
+```
+
+```swift
 func download(_ download: WKDownload, decideDestinationUsing response: URLResponse, suggestedFilename: String) async -> URL?
+```
+
+```objc
+- (void) download:(WKDownload *) download decideDestinationUsingResponse:(NSURLResponse *) response suggestedFilename:(NSString *) suggestedFilename completionHandler:(void (^)(NSURL *)) completionHandler;
 ```
 
 #### Discussion
@@ -38,9 +47,10 @@ The destination file URL must meet the following requirements:
 
 ## See Also
 
-- [func downloadDidFinish(WKDownload)](wkdownloaddelegate/downloaddidfinish(_:).md)
+### Tracking Download Progress
+- [func downloadDidFinish(WKDownload)](./downloaddidfinish%28_%29.md)
   Tells the delegate that the download finished.
-- [func download(WKDownload, didFailWithError: any Error, resumeData: Data?)](wkdownloaddelegate/download(_:didfailwitherror:resumedata:).md)
+- [func download(WKDownload, didFailWithError: any Error, resumeData: Data?)](./download%28_,didfailwitherror,resumedata%29.md)
   Tells the delegate that the download failed, with error information and data you can use to restart the download.
 
 

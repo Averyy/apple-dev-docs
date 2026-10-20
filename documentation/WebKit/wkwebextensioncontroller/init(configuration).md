@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a web extension controller initialized with the specified configuration.
 
@@ -18,13 +19,17 @@ Returns a web extension controller initialized with the specified configuration.
 init(configuration: WKWebExtensionController.Configuration)
 ```
 
+```objc
+- (instancetype) initWithConfiguration:(WKWebExtensionControllerConfiguration *) configuration;
+```
+
 #### Return Value
 
 An initialized web extension controller, or nil if the object could not be initialized.
 
 #### Discussion
 
-This is a designated initializer. You can use [`init()`](wkwebextensioncontroller/init().md) to initialize an instance with the default configuration. The initializer copies the specified configuration, so mutating the configuration after invoking the initializer has no effect on the web extension controller.
+This is a designated initializer. You can use [`init()`](./init%28%29.md) to initialize an instance with the default configuration. The initializer copies the specified configuration, so mutating the configuration after invoking the initializer has no effect on the web extension controller.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ This is a designated initializer. You can use [`init()`](wkwebextensioncontrolle
 
 ## See Also
 
-- [init()](wkwebextensioncontroller/init.md)
+### Related Documentation
+- [init()](./init%28%29.md)
   Returns a web extension controller initialized with the default configuration.
 
 

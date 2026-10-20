@@ -1,7 +1,8 @@
 # MTLVertexStepFunction.perPatch
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The post-tessellation vertex function fetches data based on the patch index of the patch.
 
@@ -19,15 +20,20 @@ The post-tessellation vertex function fetches data based on the patch index of t
 case perPatch
 ```
 
+```c
+MTLVertexStepFunctionPerPatch
+```
+
 ## See Also
 
-- [MTLVertexStepFunction.constant](mtlvertexstepfunction/constant.md)
+### Step functions
+- [MTLVertexStepFunction.constant](./constant.md)
   The vertex function fetches attribute data once and uses that data for every vertex.
-- [MTLVertexStepFunction.perVertex](mtlvertexstepfunction/pervertex.md)
+- [MTLVertexStepFunction.perVertex](./pervertex.md)
   The vertex function fetches and uses new attribute data for every vertex.
-- [MTLVertexStepFunction.perInstance](mtlvertexstepfunction/perinstance.md)
+- [MTLVertexStepFunction.perInstance](./perinstance.md)
   The vertex function regularly fetches new attribute data for a number of instances that is determined by `stepRate`.
-- [MTLVertexStepFunction.perPatchControlPoint](mtlvertexstepfunction/perpatchcontrolpoint.md)
+- [MTLVertexStepFunction.perPatchControlPoint](./perpatchcontrolpoint.md)
   The post-tessellation vertex function fetches data based on the control-point indices associated with the patch.
 
 

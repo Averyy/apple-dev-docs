@@ -1,30 +1,32 @@
 # Global Variables
 
-**Framework**: Disk Arbitration
+**Framework**: Disk Arbitration  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kDADiskDescriptionMatchMediaUnformatted: Unmanaged<CFDictionary>](kdadiskdescriptionmatchmediaunformatted.md)
-- [var kDADiskDescriptionMatchMediaWhole: Unmanaged<CFDictionary>](kdadiskdescriptionmatchmediawhole.md)
-- [var kDADiskDescriptionMatchVolumeMountable: Unmanaged<CFDictionary>](kdadiskdescriptionmatchvolumemountable.md)
-- [var kDADiskDescriptionMatchVolumeUnrecognized: Unmanaged<CFDictionary>](kdadiskdescriptionmatchvolumeunrecognized.md)
-- [var kDADiskDescriptionWatchVolumeName: Unmanaged<CFArray>](kdadiskdescriptionwatchvolumename.md)
-- [var kDADiskDescriptionWatchVolumePath: Unmanaged<CFArray>](kdadiskdescriptionwatchvolumepath.md)
+- [var kDADiskDescriptionMatchMediaUnformatted: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchmediaunformatted.md)
+- [var kDADiskDescriptionMatchMediaWhole: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchmediawhole.md)
+- [var kDADiskDescriptionMatchVolumeMountable: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchvolumemountable.md)
+- [var kDADiskDescriptionMatchVolumeUnrecognized: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchvolumeunrecognized.md)
+- [var kDADiskDescriptionWatchVolumeName: Unmanaged<CFArray>](./kdadiskdescriptionwatchvolumename.md)
+- [var kDADiskDescriptionWatchVolumePath: Unmanaged<CFArray>](./kdadiskdescriptionwatchvolumepath.md)
 
 ## See Also
 
-- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+### Constants
+- [typealias DADiskClaimOptions](./dadiskclaimoptions.md)
   Options for DADiskClaim().
-- [typealias DADiskEjectOptions](dadiskejectoptions.md)
+- [typealias DADiskEjectOptions](./dadiskejectoptions.md)
   Options for DADiskEject().
-- [typealias DADiskMountOptions](dadiskmountoptions.md)
+- [typealias DADiskMountOptions](./dadiskmountoptions.md)
   Options for DADiskMount().
-- [typealias DADiskOptions](dadiskoptions.md)
+- [typealias DADiskOptions](./dadiskoptions.md)
   Options for DADiskGetOptions() and DADiskSetOptions().
-- [typealias DADiskRenameOptions](dadiskrenameoptions.md)
+- [typealias DADiskRenameOptions](./dadiskrenameoptions.md)
   Options for DADiskRename().
-- [typealias DADiskUnmountOptions](dadiskunmountoptions.md)
+- [typealias DADiskUnmountOptions](./dadiskunmountoptions.md)
   Options for DADiskUnmount().
 
 

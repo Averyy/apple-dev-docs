@@ -1,7 +1,8 @@
 # WKContentWorld.Configuration
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@
 class Configuration
 ```
 
+```objc
+@interface WKContentWorldConfiguration : NSObject
+```
+
 #### Overview
 
 A WKContentWorldConfiguration object allows you to specify custom behavior for a WKContentWorld instance.
@@ -30,48 +35,49 @@ For example:
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](wkcontentworld/configuration/init(coder:).md)
+- [init?(coder: NSCoder)](./configuration/init%28coder%29.md)
 ### Instance Properties
-- [var allowAccessingClosedShadowRoots: Bool](wkcontentworld/configuration/allowaccessingclosedshadowroots.md)
-- [var autofillScriptingEnabled: Bool](wkcontentworld/configuration/autofillscriptingenabled.md)
-- [var elementUserInfoEnabled: Bool](wkcontentworld/configuration/elementuserinfoenabled.md)
-- [var isInspectable: Bool](wkcontentworld/configuration/isinspectable.md)
-- [var jsHandleCreationEnabled: Bool](wkcontentworld/configuration/jshandlecreationenabled.md)
-- [var legacyBuiltinOverridesEnabled: Bool](wkcontentworld/configuration/legacybuiltinoverridesenabled.md)
-- [var nodeSnapshotCreationEnabled: Bool](wkcontentworld/configuration/nodesnapshotcreationenabled.md)
+- [var allowAccessingClosedShadowRoots: Bool](./configuration/allowaccessingclosedshadowroots.md)
+- [var autofillScriptingEnabled: Bool](./configuration/autofillscriptingenabled.md)
+- [var elementUserInfoEnabled: Bool](./configuration/elementuserinfoenabled.md)
+- [var isInspectable: Bool](./configuration/isinspectable.md)
+- [var jsHandleCreationEnabled: Bool](./configuration/jshandlecreationenabled.md)
+- [var legacyBuiltinOverridesEnabled: Bool](./configuration/legacybuiltinoverridesenabled.md)
+- [var nodeSnapshotCreationEnabled: Bool](./configuration/nodesnapshotcreationenabled.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class WKUserContentController](wkusercontentcontroller.md)
+### Page content
+- [class WKUserContentController](../wkusercontentcontroller.md)
   An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.
-- [class WKContentRuleListStore](wkcontentruleliststore.md)
+- [class WKContentRuleListStore](../wkcontentruleliststore.md)
   An object that contains the rules for how to load and filter content in the web view.
-- [class WKContentWorld](wkcontentworld.md)
+- [class WKContentWorld](../wkcontentworld.md)
   An object that defines a scope of execution for JavaScript code, and which you use to prevent conflicts between different scripts.
-- [class WKFrameInfo](wkframeinfo.md)
+- [class WKFrameInfo](../wkframeinfo.md)
   An object that contains information about a frame on a webpage.
-- [class WKSecurityOrigin](wksecurityorigin.md)
+- [class WKSecurityOrigin](../wksecurityorigin.md)
   An object that identifies the origin of a particular resource.
-- [class WKUserScript](wkuserscript.md)
+- [class WKUserScript](../wkuserscript.md)
   A script that the web view injects into a webpage.
-- [class WKJSHandle](wkjshandle.md)
+- [class WKJSHandle](../wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
 
 

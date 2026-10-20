@@ -1,7 +1,8 @@
 # ARGeoTrackingStatus.Accuracy.low
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Geo-tracking accuracy is low.
 
@@ -15,6 +16,10 @@ Geo-tracking accuracy is low.
 case low
 ```
 
+```c
+ARGeoTrackingAccuracyLow
+```
+
 #### Discussion
 
 This value indicates that visual localization is complete and geo-tracking accuracy is low.
@@ -23,11 +28,12 @@ One technique an app can use to deal with low accuracy is to render location anc
 
 ## See Also
 
-- [ARGeoTrackingStatus.Accuracy.high](argeotrackingstatus/accuracy-swift.enum/high.md)
+### Accuracies
+- [ARGeoTrackingStatus.Accuracy.high](./high.md)
   Geo-tracking accuracy is high.
-- [ARGeoTrackingStatus.Accuracy.undetermined](argeotrackingstatus/accuracy-swift.enum/undetermined.md)
+- [ARGeoTrackingStatus.Accuracy.undetermined](./undetermined.md)
   Geo-tracking accuracy is undetermined.
-- [ARGeoTrackingStatus.Accuracy.medium](argeotrackingstatus/accuracy-swift.enum/medium.md)
+- [ARGeoTrackingStatus.Accuracy.medium](./medium.md)
   Geo-tracking accuracy is average.
 
 

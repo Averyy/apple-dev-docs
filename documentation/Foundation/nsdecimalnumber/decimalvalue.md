@@ -1,9 +1,10 @@
 # decimalValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The decimal number’s value, expressed as an [`Decimal`](decimal.md) structure.
+The decimal number’s value, expressed as an [`Decimal`](../decimal.md) structure.
 
 **Availability**:
 - iOS 2.0+
@@ -20,13 +21,18 @@ The decimal number’s value, expressed as an [`Decimal`](decimal.md) structure.
 var decimalValue: Decimal { get }
 ```
 
+```objc
+@property (readonly) NSDecimal decimalValue;
+```
+
 ## See Also
 
-- [var doubleValue: Double](nsdecimalnumber/doublevalue.md)
+### Accessing the Value
+- [var doubleValue: Double](./doublevalue.md)
   The decimal number’s closest approximate `double` value.
-- [func description(withLocale: Any?) -> String](nsdecimalnumber/description(withlocale:).md)
+- [func description(withLocale: Any?) -> String](./description%28withlocale%29.md)
   Returns a string representation of the decimal number appropriate for the specified locale.
-- [var objCType: UnsafePointer<CChar>](nsdecimalnumber/objctype.md)
+- [var objCType: UnsafePointer<CChar>](./objctype.md)
   A C string containing the Objective-C type for the data contained in the decimal number object.
 
 

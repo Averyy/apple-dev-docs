@@ -1,17 +1,18 @@
 # SCNetworkConnectionContext
 
 **Framework**: System Configuration  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure containing user-specified data and callbacks for a network connection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,35 +20,40 @@ A structure containing user-specified data and callbacks for a network connectio
 struct SCNetworkConnectionContext
 ```
 
+```c
+typedef struct { ... } SCNetworkConnectionContext;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](scnetworkconnectioncontext/init.md)
+- [init()](./scnetworkconnectioncontext/init%28%29.md)
   Creates a network connection context.
-- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?, release: ((UnsafeRawPointer) -> Void)?, copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?)](scnetworkconnectioncontext/init(version:info:retain:release:copydescription:).md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?, release: ((UnsafeRawPointer) -> Void)?, copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?)](./scnetworkconnectioncontext/init%28version,info,retain,release,copydescription%29.md)
   Creates a network connection context with the specified values.
 ### Instance Properties
-- [var copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?](scnetworkconnectioncontext/copydescription.md)
+- [var copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?](./scnetworkconnectioncontext/copydescription.md)
   The callback used to provide a description of the `info` field.
-- [var info: UnsafeMutableRawPointer?](scnetworkconnectioncontext/info.md)
+- [var info: UnsafeMutableRawPointer?](./scnetworkconnectioncontext/info.md)
   A C pointer to a user-specified block of data.
-- [var release: ((UnsafeRawPointer) -> Void)?](scnetworkconnectioncontext/release.md)
+- [var release: ((UnsafeRawPointer) -> Void)?](./scnetworkconnectioncontext/release.md)
   The calllback used to remove a retain previously added for the info field. If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. The value may be `NULL`.
-- [var retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?](scnetworkconnectioncontext/retain.md)
+- [var retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?](./scnetworkconnectioncontext/retain.md)
   The callback used to add a retain for the info field. If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. The value may be `NULL`.
-- [var version: CFIndex](scnetworkconnectioncontext/version.md)
-  The version number of the structure type being passed in as a parameter to the [`SCNetworkConnectionCreateWithServiceID(_:_:_:_:)`](scnetworkconnectioncreatewithserviceid(_:_:_:_:).md) function. This structure is version `0`.
+- [var version: CFIndex](./scnetworkconnectioncontext/version.md)
+  The version number of the structure type being passed in as a parameter to the [`SCNetworkConnectionCreateWithServiceID(_:_:_:_:)`](./scnetworkconnectioncreatewithserviceid%28_,_,_,_%29.md) function. This structure is version `0`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [class SCNetworkConnection](scnetworkconnection.md)
+### Data Types
+- [class SCNetworkConnection](./scnetworkconnection.md)
   The handle to manage a connection-oriented service.
-- [typealias SCNetworkConnectionCallBack](scnetworkconnectioncallback.md)
+- [typealias SCNetworkConnectionCallBack](./scnetworkconnectioncallback.md)
   The type of callback function used when a status event is delivered.
 
 

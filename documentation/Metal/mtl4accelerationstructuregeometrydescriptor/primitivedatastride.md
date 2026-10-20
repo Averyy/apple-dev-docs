@@ -1,9 +1,10 @@
 # primitiveDataStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Defines the stride, in bytes, between each primitive’s data in the primitive data buffer [`primitiveDataBuffer`](mtl4accelerationstructuregeometrydescriptor/primitivedatabuffer.md) references.
+Defines the stride, in bytes, between each primitive’s data in the primitive data buffer [`primitiveDataBuffer`](./primitivedatabuffer.md) references.
 
 **Availability**:
 - iOS 26.0+
@@ -19,11 +20,15 @@ Defines the stride, in bytes, between each primitive’s data in the primitive d
 var primitiveDataStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger primitiveDataStride;
+```
+
 #### Discussion
 
-You are responsible for ensuring the stride is at least [`primitiveDataElementSize`](mtl4accelerationstructuregeometrydescriptor/primitivedataelementsize.md) in size and a multiple of 4 bytes.
+You are responsible for ensuring the stride is at least [`primitiveDataElementSize`](./primitivedataelementsize.md) in size and a multiple of 4 bytes.
 
-This property defaults to `0` bytes,  which indicates the stride is equal to [`primitiveDataElementSize`](mtl4accelerationstructuregeometrydescriptor/primitivedataelementsize.md).
+This property defaults to `0` bytes,  which indicates the stride is equal to [`primitiveDataElementSize`](./primitivedataelementsize.md).
 
 
 ---

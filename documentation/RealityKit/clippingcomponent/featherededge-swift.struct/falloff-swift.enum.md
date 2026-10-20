@@ -1,7 +1,8 @@
 # ClippingComponent.FeatheredEdge.Falloff
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -20,18 +21,19 @@ enum Falloff
 ## Topics
 
 ### Choosing the falloff curve
-- [ClippingComponent.FeatheredEdge.Falloff.linear](clippingcomponent/featherededge-swift.struct/falloff-swift.enum/linear.md)
-- [ClippingComponent.FeatheredEdge.Falloff.cubic](clippingcomponent/featherededge-swift.struct/falloff-swift.enum/cubic.md)
+- [ClippingComponent.FeatheredEdge.Falloff.linear](./falloff-swift.enum/linear.md)
+- [ClippingComponent.FeatheredEdge.Falloff.cubic](./falloff-swift.enum/cubic.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var falloff: ClippingComponent.FeatheredEdge.Falloff](clippingcomponent/featherededge-swift.struct/falloff-swift.property.md)
+### Controlling the falloff
+- [var falloff: ClippingComponent.FeatheredEdge.Falloff](./falloff-swift.property.md)
   The falloff function used for the feathered edge computation.
 
 

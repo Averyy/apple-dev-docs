@@ -1,7 +1,8 @@
 # ENOLCK
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No locks available.
 

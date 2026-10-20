@@ -1,7 +1,8 @@
 # startLocation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the drag gesture’s first event.
 
@@ -21,13 +22,14 @@ var startLocation: CGPoint
 
 ## See Also
 
-- [var location: CGPoint](draggesture/value/location.md)
+### Getting 2D position
+- [var location: CGPoint](./location.md)
   The location of the drag gesture’s current event.
-- [var predictedEndLocation: CGPoint](draggesture/value/predictedendlocation.md)
+- [var predictedEndLocation: CGPoint](./predictedendlocation.md)
   A prediction, based on the current drag velocity, of where the final location will be if dragging stopped now.
-- [var translation: CGSize](draggesture/value/translation.md)
+- [var translation: CGSize](./translation.md)
   The total translation from the start of the drag gesture to the current event of the drag gesture.
-- [var predictedEndTranslation: CGSize](draggesture/value/predictedendtranslation.md)
+- [var predictedEndTranslation: CGSize](./predictedendtranslation.md)
   A prediction, based on the current drag velocity, of what the final translation will be if dragging stopped now.
 
 

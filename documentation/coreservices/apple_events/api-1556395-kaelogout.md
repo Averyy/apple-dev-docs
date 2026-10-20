@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kAELogOut: OSType](kaelogout.md)
-- [var kAEReallyLogOut: OSType](kaereallylogout.md)
-- [var kAEShowRestartDialog: OSType](kaeshowrestartdialog.md)
-- [var kAEShowShutdownDialog: OSType](kaeshowshutdowndialog.md)
+- [var kAELogOut: OSType](../kaelogout.md)
+- [var kAEReallyLogOut: OSType](../kaereallylogout.md)
+- [var kAEShowRestartDialog: OSType](../kaeshowrestartdialog.md)
+- [var kAEShowShutdownDialog: OSType](../kaeshowshutdowndialog.md)
 
 
 ---

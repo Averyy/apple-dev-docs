@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Content type for media.
 
@@ -16,15 +17,16 @@ let contentType: RCSService.Business.MediaEntry.ContentType
 
 ## See Also
 
-- [let label: RCSService.Business.MediaEntry.Label](rcsservice/business/mediaentry/label-swift.property.md)
+### Accessing media properties
+- [let label: RCSService.Business.MediaEntry.Label](./label-swift.property.md)
   Label for media.
-- [RCSService.Business.MediaEntry.Label](rcsservice/business/mediaentry/label-swift.enum.md)
+- [RCSService.Business.MediaEntry.Label](./label-swift.enum.md)
   Enumeration representing the label for media.
-- [let media: RCSService.Business.Media](rcsservice/business/mediaentry/media.md)
+- [let media: RCSService.Business.Media](./media.md)
   The media contained in this entry.
-- [RCSService.Business.Media](rcsservice/business/media.md)
+- [RCSService.Business.Media](../media.md)
   Structure containing media information provided by a business.
-- [RCSService.Business.MediaEntry.ContentType](rcsservice/business/mediaentry/contenttype-swift.enum.md)
+- [RCSService.Business.MediaEntry.ContentType](./contenttype-swift.enum.md)
   Content type for media.
 
 

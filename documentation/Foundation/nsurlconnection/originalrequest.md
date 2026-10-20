@@ -1,7 +1,8 @@
 # originalRequest
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A deep copy of the original connection request.
 
@@ -20,13 +21,18 @@ A deep copy of the original connection request.
 var originalRequest: URLRequest { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLRequest * originalRequest;
+```
+
 #### Discussion
 
-As the connection performs the load, the request may change as a result of protocol canonicalization or due to following redirects. [`currentRequest`](nsurlconnection/currentrequest.md) can be used to retrieve this value.
+As the connection performs the load, the request may change as a result of protocol canonicalization or due to following redirects. [`currentRequest`](./currentrequest.md) can be used to retrieve this value.
 
 ## See Also
 
-- [var currentRequest: URLRequest](nsurlconnection/currentrequest.md)
+### Connection URL Information
+- [var currentRequest: URLRequest](./currentrequest.md)
   The current connection request.
 
 

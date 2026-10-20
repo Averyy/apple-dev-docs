@@ -1,14 +1,15 @@
 # kSCSIServicesNotification_Suspend
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCSIServicesNotification_Suspend = 0x69000080
 ```
 

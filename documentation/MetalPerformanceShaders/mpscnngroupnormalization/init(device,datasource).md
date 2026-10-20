@@ -1,7 +1,8 @@
 # init(device:dataSource:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, dataSource: any MPSCNNGroupNormalizationDataSource)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device dataSource:(id<MPSCNNGroupNormalizationDataSource>) dataSource;
 ```
 
 

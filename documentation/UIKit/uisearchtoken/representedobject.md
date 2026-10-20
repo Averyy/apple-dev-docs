@@ -1,7 +1,8 @@
 # representedObject
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object represented by the search token.
 
@@ -17,13 +18,18 @@ The object represented by the search token.
 var representedObject: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id representedObject;
+```
+
 #### Discussion
 
 Use this property to keep information required to restore a search from state restoration, paste a search token, or perform the user’s search.
 
 ## See Also
 
-- [init(icon: UIImage?, text: String)](uisearchtoken/init(icon:text:).md)
+### Creating a search token
+- [init(icon: UIImage?, text: String)](./init%28icon,text%29.md)
   Creates a search token with the specified text and icon (if any).
 
 

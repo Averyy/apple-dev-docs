@@ -1,7 +1,8 @@
 # Reference
 
 **Framework**: RegexBuilder  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference to a captured portion of a regular expression.
 
@@ -11,7 +12,7 @@ A reference to a captured portion of a regular expression.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -91,19 +92,20 @@ if let match = validTransaction.firstMatch(of: transactionIDRegex) {
 ## Topics
 
 ### Initializers
-- [init(Capture.Type)](reference/init(_:).md)
+- [init(Capture.Type)](./reference/init%28_%29.md)
   Creates a reference with the specified capture type.
 
 ## Relationships
 
 ### Conforms To
-- [RegexComponent](../swift/regexcomponent.md)
+- [RegexComponent](../Swift/regexcomponent.md)
 
 ## See Also
 
-- [struct Capture](capture.md)
+### Captures
+- [struct Capture](./capture.md)
   A regex component that saves the matched substring, or a transformed result, for access in a regex match.
-- [struct TryCapture](trycapture.md)
+- [struct TryCapture](./trycapture.md)
   A regex component that attempts to transform a matched substring, saving the result if successful and backtracking if the transformation fails.
 
 

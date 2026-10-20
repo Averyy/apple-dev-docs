@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting position of the directional text range within the text.
 
@@ -17,9 +18,14 @@ The starting position of the directional text range within the text.
 var offset: Int
 ```
 
+```c
+NSInteger offset;
+```
+
 ## See Also
 
-- [var length: Int](bedirectionaltextrange/length.md)
+### Measuring text range
+- [var length: Int](./length.md)
   The number of characters included in the directional text range.
 
 

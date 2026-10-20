@@ -1,7 +1,8 @@
 # makePart(for:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates data for the part with the given identifier.
 
@@ -9,7 +10,7 @@ Creates data for the part with the given identifier.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,7 @@ Part data for the `partID` provided, if possible. Otherwise, `nil`.
 
 #### Discussion
 
-In cases where this document is a partial one, i.e. it is missing some parts, you use this method to create data for the missing part. You then use [`merge(partData:into:)`](assignabledocument/merge(partdata:into:).md) to merge the newly created data into this document.
+In cases where this document is a partial one, i.e. it is missing some parts, you use this method to create data for the missing part. You then use [`merge(partData:into:)`](./merge%28partdata,into%29.md) to merge the newly created data into this document.
 
 ## Parameters
 

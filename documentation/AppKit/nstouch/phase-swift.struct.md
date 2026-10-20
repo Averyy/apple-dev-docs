@@ -1,7 +1,8 @@
 # NSTouch.Phase
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The possible phases of a touch.
 
@@ -14,52 +15,57 @@ The possible phases of a touch.
 struct Phase
 ```
 
+```c
+enum NSTouchPhase : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by [`phase`](nstouch/phase-swift.property.md).
+These constants are used by [`phase`](./phase-swift.property.md).
 
 ## Topics
 
 ### Creating a Touch Phase
-- [init(rawValue: UInt)](nstouch/phase-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./phase-swift.struct/init%28rawvalue%29.md)
   Creates a new touch phase from the given raw value.
 ### Constants
-- [static var began: NSTouch.Phase](nstouch/phase-swift.struct/began.md)
+- [static var began: NSTouch.Phase](./phase-swift.struct/began.md)
   A finger touched the device. Or, a resting touch transitioned to an active touch and resting touches are not wanted by the view hierarchy.
-- [static var moved: NSTouch.Phase](nstouch/phase-swift.struct/moved.md)
+- [static var moved: NSTouch.Phase](./phase-swift.struct/moved.md)
   A finger moved on the device.
-- [static var stationary: NSTouch.Phase](nstouch/phase-swift.struct/stationary.md)
+- [static var stationary: NSTouch.Phase](./phase-swift.struct/stationary.md)
   A finger is touching the device, but hasn’t moved since the previous event.
-- [static var ended: NSTouch.Phase](nstouch/phase-swift.struct/ended.md)
+- [static var ended: NSTouch.Phase](./phase-swift.struct/ended.md)
   A finger was lifted from the screen. Or, an active touch transitioned to a resting touch and resting touches are not wanted by the view hierarchy.
-- [static var cancelled: NSTouch.Phase](nstouch/phase-swift.struct/cancelled.md)
+- [static var cancelled: NSTouch.Phase](./phase-swift.struct/cancelled.md)
   The system cancelled tracking for the touch, as when (for example) the window associated with the touch resigns key or is deactivated.
-- [static var touching: NSTouch.Phase](nstouch/phase-swift.struct/touching.md)
-  Matches the [`began`](nstouch/phase-swift.struct/began.md), [`moved`](nstouch/phase-swift.struct/moved.md), or [`stationary`](nstouch/phase-swift.struct/stationary.md) phases of a touch.
-- [static var any: NSTouch.Phase](nstouch/phase-swift.struct/any.md)
+- [static var touching: NSTouch.Phase](./phase-swift.struct/touching.md)
+  Matches the [`began`](./phase-swift.struct/began.md), [`moved`](./phase-swift.struct/moved.md), or [`stationary`](./phase-swift.struct/stationary.md) phases of a touch.
+- [static var any: NSTouch.Phase](./phase-swift.struct/any.md)
   Matches any phase of a touch.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var identity: any NSCopying & NSObjectProtocol](nstouch/identity.md)
+### Using Touch Properties
+- [var identity: any NSCopying & NSObjectProtocol](./identity.md)
   The changes to a particular touch during its lifetime.
-- [var phase: NSTouch.Phase](nstouch/phase-swift.property.md)
+- [var phase: NSTouch.Phase](./phase-swift.property.md)
   The current phase of the touch.
-- [var normalizedPosition: NSPoint](nstouch/normalizedposition.md)
+- [var normalizedPosition: NSPoint](./normalizedposition.md)
   The normalized position of the touch.
-- [var isResting: Bool](nstouch/isresting.md)
+- [var isResting: Bool](./isresting.md)
   The indicator for a resting touch.
 
 

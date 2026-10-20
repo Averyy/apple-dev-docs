@@ -1,7 +1,8 @@
 # period
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of a human body action measured in frames.
 
@@ -21,7 +22,8 @@ var period: Float
 
 ## See Also
 
-- [var periodicity: Float](humanbodyactionperiodpredictor/prediction/periodicity.md)
+### Getting the properties
+- [var periodicity: Float](./periodicity.md)
   A score that indicates whether this frame contributes to a periodic human body action.
 
 

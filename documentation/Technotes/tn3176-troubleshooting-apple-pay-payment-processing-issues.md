@@ -1,14 +1,15 @@
 # TN3176: Troubleshooting Apple Pay payment processing issues
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
 
 #### Overview
 
-This technote covers debugging common Apple Pay payment processing issues. When an Apple Pay payment is requested by your app or website, Apple sends an encrypted payment token to you to verify its signature, decrypt its payment data, and validate the transaction. Often, these payment processing issues are caused by an invalid [`payment processing certificate`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-payment-processing-certificate), or by mishandling payment data by you or your payment service provider (PSP).
+This technote covers debugging common Apple Pay payment processing issues. When an Apple Pay payment is requested by your app or website, Apple sends an encrypted payment token to you to verify its signature, decrypt its payment data, and validate the transaction. Often, these payment processing issues are caused by an invalid [payment processing certificate](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-payment-processing-certificate), or by mishandling payment data by you or your payment service provider (PSP).
 
-#### Possible Reasons for Payment Service Provider Errors While Handling the Apple Pay Payment Token
+#### Possible reasons for payment service provider errors while handling the Apple Pay payment token
 
 Payment token validation that fail for your PSP are often due to an issue with your payment processing certificate or the format of your token. In either case, your PSP may be able to provide additional insight.
 
@@ -17,13 +18,13 @@ Please confirm the following with your PSP:
 - The merchant ID value used throughout Apple Pay must be identical to the one you created in your Apple Developer account. If it is different, Apple will not be able to to decrypt the payment data.
 - The merchant ID is associated with the correct payment processing certificate.
 - The payment processing certificate is in an active state in your Apple Developer account.
-- The [`merchantCapabilities`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/1916123-merchantcapabilities) array of the `ApplePayPaymentRequest`
-contains only `supports3DS`.
+- The [merchantCapabilities](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/1916123-merchantcapabilities) array of the `ApplePayPaymentRequest`
+  contains only `supports3DS`.
 - Your PSP is sending the authorization message in the format required by each payment network.
 
-For more information about configuring your merchant identifier (ID) and certificates required for Apple Pay, see [`Configuring Your Environment`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment).
+For more information about configuring your merchant identifier (ID) and certificates required for Apple Pay, see [Configuring Your Environment](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment).
 
-#### Possible Reasons for Payment Token Decryption Errors
+#### Possible reasons for payment token decryption errors
 
 You validate a transaction by verifying the signature, decrypting the payment data, and verifying additional transaction details. A payment token’s payment data is encrypted using either elliptic curve cryptography (ECC) or RSA encryption. The encryption algorith used is based on the merchant capabilities of the initial payment request. The payment token can be decrypted by the merchant with the certificate private key or by the PSP on behalf of the merchant. For China mainland, decrypt via RSA; otherwise decrypt via ECC.
 
@@ -36,9 +37,9 @@ If you experience payment token-related decryption issues, please confirm the fo
 - No payment with the same `transactionId` shows as processed, indicating a transaction you’ve already credited.
 - The merchant ID that you share with PSP is identical to the one you created in your Apple Developer account.
 
-For more information, see [`Payment token format reference`](https://developer.apple.comhttps://developer.apple.com/documentation/passkit_apple_pay_and_wallet/apple_pay/payment_token_format_reference).
+For more information, see [Payment token format reference](https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/apple_pay/payment_token_format_reference).
 
-#### Possible Reasons for Payment Token Processing Errors
+#### Possible reasons for payment token processing errors
 
 Once decrypted, the payment token is passed to the PSP for processing. If you experience payment token-related processing issues, please confirm the following:
 
@@ -53,13 +54,14 @@ Once decrypted, the payment token is passed to the PSP for processing. If you ex
 
 ## See Also
 
-- [TN3173: Troubleshooting issues with your Apple Pay merchant identifier configuration](tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration.md)
+### Related Documentation
+- [TN3173: Troubleshooting issues with your Apple Pay merchant identifier configuration](./tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration.md)
   Diagnose errors due to invalid Apple Pay merchant identifier configurations by identifying the underlying causes of common errors and explore their potential solutions.
-- [TN3174: Diagnosing issues with the Apple Pay payment sheet on your website](tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website.md)
+- [TN3174: Diagnosing issues with the Apple Pay payment sheet on your website](./tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website.md)
   Diagnose errors received while presenting the Apple Pay payment sheet on your website by identifying the underlying causes of common errors and explore their potential solutions.
-- [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
+- [TN3175: Diagnosing issues with displaying the Apple Pay button on your website](./tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md)
   Diagnose common errors received while displaying the Apple Pay button on your website by identifying the underlying causes, and explore potential solutions.
-- [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
+- [TN3206: Updating Apple Pay certificates](./tn3206-updating-apple-pay-certificates.md)
   Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 
 

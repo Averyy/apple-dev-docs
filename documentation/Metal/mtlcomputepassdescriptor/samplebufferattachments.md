@@ -1,7 +1,8 @@
 # sampleBufferAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sample buffers that the compute pass can access.
 
@@ -19,13 +20,17 @@ The sample buffers that the compute pass can access.
 var sampleBufferAttachments: MTLComputePassSampleBufferAttachmentDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLComputePassSampleBufferAttachmentDescriptorArray * sampleBufferAttachments;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-The GPU uses sample buffers to record performance information. See [`GPU counters and counter sample buffers`](gpu-counters-and-counter-sample-buffers.md), [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md), and [`MTLCounter`](mtlcounter.md) for more information.
+The GPU uses sample buffers to record performance information. See [GPU counters and counter sample buffers](../gpu-counters-and-counter-sample-buffers.md), [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md), and [`MTLCounter`](../mtlcounter.md) for more information.
 
 
 ---

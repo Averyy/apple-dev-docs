@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `String`.
 
@@ -20,6 +21,8 @@ Creates a new instance by decoding from the given decoder, when the type’s `Ra
 init(from decoder: any Decoder) throws
 ```
 
+Available when `Self` conforms to `Decodable` and `RawValue` is `String`.
+
 #### Discussion
 
 This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
@@ -30,31 +33,32 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-5ar5m.md)
+### Decoding a Value
+- [init(from: any Decoder) throws](./init%28from%29-5ar5m.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Bool`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-417i8.md)
+- [init(from: any Decoder) throws](./init%28from%29-417i8.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Double`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-9u9tp.md)
+- [init(from: any Decoder) throws](./init%28from%29-9u9tp.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Float`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-4ibll.md)
+- [init(from: any Decoder) throws](./init%28from%29-4ibll.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-3hvw1.md)
+- [init(from: any Decoder) throws](./init%28from%29-3hvw1.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-5ktev.md)
+- [init(from: any Decoder) throws](./init%28from%29-5ktev.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int8`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-2hvc0.md)
+- [init(from: any Decoder) throws](./init%28from%29-2hvc0.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int16`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-114vz.md)
+- [init(from: any Decoder) throws](./init%28from%29-114vz.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int32`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-29lhi.md)
+- [init(from: any Decoder) throws](./init%28from%29-29lhi.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int64`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-94955.md)
+- [init(from: any Decoder) throws](./init%28from%29-94955.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt8`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-6z4x4.md)
+- [init(from: any Decoder) throws](./init%28from%29-6z4x4.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt16`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-3arr3.md)
+- [init(from: any Decoder) throws](./init%28from%29-3arr3.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt32`.
-- [init(from: any Decoder) throws](rawrepresentable/init(from:)-812cy.md)
+- [init(from: any Decoder) throws](./init%28from%29-812cy.md)
   Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `UInt64`.
 
 

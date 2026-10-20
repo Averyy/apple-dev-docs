@@ -1,7 +1,8 @@
 # IKCameraDeviceViewDisplayMode.none
 
 **Framework**: Quartz  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 case none
+```
+
+```c
+IKCameraDeviceViewDisplayModeNone
 ```
 
 

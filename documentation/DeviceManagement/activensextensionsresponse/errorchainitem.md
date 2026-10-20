@@ -1,7 +1,8 @@
 # ActiveNSExtensionsResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -10,7 +11,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object ActiveNSExtensionsResponse.ErrorChainItem
 ```
 
@@ -23,7 +24,8 @@ object ActiveNSExtensionsResponse.ErrorChainItem
 
 ## See Also
 
-- [object ActiveNSExtensionsResponse.ExtensionsItem](activensextensionsresponse/extensionsitem.md)
+### Objects
+- [object ActiveNSExtensionsResponse.ExtensionsItem](./extensionsitem.md)
   A dictionary that contains information about an extension.
 
 

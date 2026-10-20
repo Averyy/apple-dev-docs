@@ -1,7 +1,8 @@
 # findSelected(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins a search for the selected content in your browser text view.
 
@@ -17,9 +18,13 @@ Begins a search for the selected content in your browser text view.
 optional func findSelected(_ sender: Any?)
 ```
 
+```objc
+- (void) findSelected:(id) sender;
+```
+
 #### Discussion
 
-UIKit calls this method when someone selects Use Selection for Find from an editing menu. Present the UI for finding text in your view, and use the selected text for the search. To present the standard system UI for finding text, and support standard keyboard shortcuts, add a [`UIFindInteraction`](https://developer.apple.com/documentation/uikit/uifindinteraction) to your browser text view.
+UIKit calls this method when someone selects Use Selection for Find from an editing menu. Present the UI for finding text in your view, and use the selected text for the search. To present the standard system UI for finding text, and support standard keyboard shortcuts, add a [`UIFindInteraction`](../../UIKit/uifindinteraction.md) to your browser text view.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ UIKit calls this method when someone selects Use Selection for Find from an edit
 
 ## See Also
 
-- [func promptForReplace(Any?)](berespondereditactions/promptforreplace(_:).md)
+### Finding and replacing text
+- [func promptForReplace(Any?)](./promptforreplace%28_%29.md)
   Shows potential replacements for the selected content.
-- [func replace(Any?)](berespondereditactions/replace(_:).md)
+- [func replace(Any?)](./replace%28_%29.md)
   Removes the selected text and inputs the chosen replacement text.
-- [func addShortcut(Any?)](berespondereditactions/addshortcut(_:).md)
+- [func addShortcut(Any?)](./addshortcut%28_%29.md)
   Adds a text-replacement shortcut to the edit dictionary.
 
 

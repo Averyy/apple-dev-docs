@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decodes a nested container keyed by the given type.
@@ -27,7 +28,7 @@ A keyed decoding container view into `self`.
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
+> **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
 
 ## Parameters
 

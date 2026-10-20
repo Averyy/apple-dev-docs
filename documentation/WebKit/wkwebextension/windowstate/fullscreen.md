@@ -1,7 +1,8 @@
 # WKWebExtension.WindowState.fullscreen
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a window is in full-screen mode.
 
@@ -16,6 +17,10 @@ Indicates a window is in full-screen mode.
 
 ```swift
 case fullscreen
+```
+
+```c
+WKWebExtensionWindowStateFullscreen
 ```
 
 

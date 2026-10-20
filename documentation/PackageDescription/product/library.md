@@ -1,7 +1,8 @@
 # Product.Library
 
 **Framework**: PackageDescription  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The library product of a Swift package.
 
@@ -14,24 +15,25 @@ final class Library
 ## Topics
 
 ### Describing a Library Product
-- [let targets: [String]](product/library/targets.md)
+- [let targets: [String]](./library/targets.md)
   The names of the targets in this product.
-- [let type: Product.Library.LibraryType?](product/library/type.md)
+- [let type: Product.Library.LibraryType?](./library/type.md)
   The type of the library.
-- [Product.Library.LibraryType](product/library/librarytype.md)
+- [Product.Library.LibraryType](./library/librarytype.md)
   The different types of a library product.
 
 ## Relationships
 
 ### Inherits From
-- [Product](product.md)
+- [Product](../product.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func library(name: String, type: Product.Library.LibraryType?, targets: [String]) -> Product](product/library(name:type:targets:).md)
+### Creating a Library Product
+- [static func library(name: String, type: Product.Library.LibraryType?, targets: [String]) -> Product](./library%28name,type,targets%29.md)
   Creates a library product to allow clients that declare a dependency on this package to use the package’s functionality.
 
 

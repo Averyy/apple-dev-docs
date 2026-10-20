@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The UNIX date, in milliseconds, that the customer authorized the transaction.
 
@@ -10,7 +11,7 @@ The UNIX date, in milliseconds, that the customer authorized the transaction.
 
 ## Declaration
 
-```swift
+```
 int64 creationDate
 ```
 
@@ -20,9 +21,10 @@ For refunds and other events, use the UNIX date, in milliseconds, of the transac
 
 ## See Also
 
-- [type eventType](eventtype.md)
+### Providing transaction info
+- [type eventType](./eventtype.md)
   The type of transaction the line item reports, whether it’s a buy or refund.
-- [type referenceLineItemId](referencelineitemid.md)
+- [type referenceLineItemId](./referencelineitemid.md)
   The line item identifier of another transaction, that the report  references.
 
 

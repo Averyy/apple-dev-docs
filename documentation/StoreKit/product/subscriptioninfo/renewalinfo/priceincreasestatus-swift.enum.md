@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Status values that indicate whether an auto-renewable subscription is subject to a price increase.
 
@@ -23,36 +24,37 @@ enum PriceIncreaseStatus
 
 #### Overview
 
-For more information, see [`Managing Price Increases for Auto-Renewable Subscriptions`](managing-price-increases-for-auto-renewable-subscriptions.md).
+For more information, see [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md).
 
 ## Topics
 
 ### Getting Price Increase Status
-- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.noIncreasePending](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum/noincreasepending.md)
+- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.noIncreasePending](./priceincreasestatus-swift.enum/noincreasepending.md)
   There’s no pending price increase for the auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.agreed](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum/agreed.md)
+- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.agreed](./priceincreasestatus-swift.enum/agreed.md)
   The auto-renewable subscription is subject to a price increase.
-- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.pending](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum/pending.md)
+- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.pending](./priceincreasestatus-swift.enum/pending.md)
   The customer hasn’t yet responded to an auto-renewable subscription price increase that requires customer consent.
 ### Getting a Localized Description
-- [var localizedDescription: String](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum/localizeddescription.md)
+- [var localizedDescription: String](./priceincreasestatus-swift.enum/localizeddescription.md)
   A string containing the localized description of the price increase status.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
+### Getting the price increase status
+- [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md)
   Identify the price increase status for auto-renewable subscriptions in your app and on your server.
-- [let priceIncreaseStatus: Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.property.md)
+- [let priceIncreaseStatus: Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus](./priceincreasestatus-swift.property.md)
   The status that indicates whether the auto-renewable subscription is subject to a price increase.
 
 

@@ -1,7 +1,8 @@
 # largeBlob
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Input for the WebAuthn large binary object extension in passkey assertion requests.
 
@@ -20,7 +21,8 @@ var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput? { get 
 
 ## See Also
 
-- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](aspasskeyassertioncredentialextensioninput-swift.struct/prf.md)
+### Using inputs
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](./prf.md)
   Input for the WebAuthn PRF extension in passkey assertion requests.
 
 

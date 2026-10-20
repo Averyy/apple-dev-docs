@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a view of this collection with the elements at the given indices.
 
@@ -26,7 +27,7 @@ A collection of the elements at the positions in `subranges`.
 
 #### Overview
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

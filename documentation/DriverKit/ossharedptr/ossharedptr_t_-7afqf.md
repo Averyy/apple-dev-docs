@@ -1,17 +1,18 @@
 # OSSharedPtr<T>
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 explicit OSSharedPtr<T>(pointer p, no_retain_t ) noexcept;
 ```
 

@@ -1,7 +1,8 @@
 # anchorUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sequence of updates to planes a provider detects.
 
@@ -20,13 +21,14 @@ The system adds, updates, or removes plane anchors when this sequence provides u
 
 ## See Also
 
-- [init(alignments: [PlaneAnchor.Alignment])](planedetectionprovider/init(alignments:).md)
+### Detecting planes
+- [init(alignments: [PlaneAnchor.Alignment])](./init%28alignments%29.md)
   Creates a plane detection provider for the types of planes you want to detect.
-- [var allAnchors: [PlaneAnchor]](planedetectionprovider/allanchors.md)
+- [var allAnchors: [PlaneAnchor]](./allanchors.md)
   An array that contains all the plane provider’s anchors.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](planedetectionprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for detecting planes.
-- [static var isSupported: Bool](planedetectionprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports plane detection providers.
 
 

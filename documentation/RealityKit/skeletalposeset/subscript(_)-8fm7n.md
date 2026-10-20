@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the pose at the specified index.
 
@@ -17,6 +18,12 @@ Accesses the pose at the specified index.
 
 ```swift
 subscript(index: SkeletalPoseSet.Index) -> SkeletalPoseSet.Element { get set }
+```
+
+**Other overloads**:
+
+```swift
+subscript(poseID: SkeletalPose.ID) -> SkeletalPoseSet.Element? { get set }
 ```
 
 

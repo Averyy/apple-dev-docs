@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional label for the virtual machine.
 
@@ -12,6 +13,10 @@ An optional label for the virtual machine.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * label;
 ```
 
 #### Discussion

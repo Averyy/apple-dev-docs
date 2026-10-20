@@ -1,7 +1,8 @@
 # UnitConverterLinear
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of how to convert between units using a linear equation.
 
@@ -20,6 +21,10 @@ A description of how to convert between units using a linear equation.
 class UnitConverterLinear
 ```
 
+```objc
+@interface NSUnitConverterLinear : NSUnitConverter
+```
+
 #### Overview
 
 A linear equation for unit conversion takes the form `y = mx + b`, such that the following is true:
@@ -31,7 +36,7 @@ A linear equation for unit conversion takes the form `y = mx + b`, such that the
 
 The `baseUnitValueFromValue:` method performs the conversion in the form of `y = mx + b`, where `x` represents the value passed in and `y` represents the value returned. The `valueFromBaseUnitValue:` method performs the inverse conversion in the form of `x = (y - b) / m`, where `y` represents the value passed in and `x` represents the value returned.
 
-For example, consider the [`fahrenheit`](unittemperature/fahrenheit.md) unit that [`UnitTemperature`](unittemperature.md) defines. The [`baseUnitValue(fromValue:)`](unitconverter/baseunitvalue(fromvalue:).md) method calculates the value in the base unit, [`kelvin`](unittemperature/kelvin.md), using the formula `K = (0.55555555555556) × °F + 255.37222222222427`. The [`value(fromBaseUnitValue:)`](unitconverter/value(frombaseunitvalue:).md) method calculates the value in [`fahrenheit`](unittemperature/fahrenheit.md) using the formula `°F = (K — 255.37222222222427) / (0.55555555555556)`, where the [`coefficient`](unitconverterlinear/coefficient.md) is `(0.55555555555556)` and the [`constant`](unitconverterlinear/constant.md) is `255.37222222222427`.
+For example, consider the [`fahrenheit`](./unittemperature/fahrenheit.md) unit that [`UnitTemperature`](./unittemperature.md) defines. The [`baseUnitValue(fromValue:)`](./unitconverter/baseunitvalue%28fromvalue%29.md) method calculates the value in the base unit, [`kelvin`](./unittemperature/kelvin.md), using the formula `K = (0.55555555555556) × °F + 255.37222222222427`. The [`value(fromBaseUnitValue:)`](./unitconverter/value%28frombaseunitvalue%29.md) method calculates the value in [`fahrenheit`](./unittemperature/fahrenheit.md) using the formula `°F = (K — 255.37222222222427) / (0.55555555555556)`, where the [`coefficient`](./unitconverterlinear/coefficient.md) is `(0.55555555555556)` and the [`constant`](./unitconverterlinear/constant.md) is `255.37222222222427`.
 
 **Swift**:
 
@@ -45,7 +50,7 @@ let kelvinToFahrenheit = UnitConverterLinear(coefficient: 0.55555555555556, cons
 NSUnitConverter *kelvinToFahrenheit = [[NSUnitConverterLinear alloc] initWithCoefficient:0.55555555555556 constant:255.37222222222427];
 ```
 
-Units that perform conversion using only a scale factor have a [`coefficient`](unitconverterlinear/coefficient.md) equal to the scale factor and a [`constant`](unitconverterlinear/constant.md) equal to `0`. For example, consider the [`kilometers`](unitlength/kilometers.md) unit [`UnitLength`](unitlength.md) defines. The [`baseUnitValue(fromValue:)`](unitconverter/baseunitvalue(fromvalue:).md) method calculates the value in meters using the formula `valueInMeters = 1000 * valueInKilometers + 0`. The [`value(fromBaseUnitValue:)`](unitconverter/value(frombaseunitvalue:).md) calculates the value in kilometers using the formula `valueInKilometers = (valueInMeters - 0) / 1000`, where the coefficient is `1000` and the constant is `0`.
+Units that perform conversion using only a scale factor have a [`coefficient`](./unitconverterlinear/coefficient.md) equal to the scale factor and a [`constant`](./unitconverterlinear/constant.md) equal to `0`. For example, consider the [`kilometers`](./unitlength/kilometers.md) unit [`UnitLength`](./unitlength.md) defines. The [`baseUnitValue(fromValue:)`](./unitconverter/baseunitvalue%28fromvalue%29.md) method calculates the value in meters using the formula `valueInMeters = 1000 * valueInKilometers + 0`. The [`value(fromBaseUnitValue:)`](./unitconverter/value%28frombaseunitvalue%29.md) calculates the value in kilometers using the formula `valueInKilometers = (valueInMeters - 0) / 1000`, where the coefficient is `1000` and the constant is `0`.
 
 **Swift**:
 
@@ -62,37 +67,38 @@ NSUnitConverterLinear *kilometersToMeters = [[NSUnitConverterLinear alloc] initW
 ## Topics
 
 ### Accessing Linear Parameters
-- [var coefficient: Double](unitconverterlinear/coefficient.md)
+- [var coefficient: Double](./unitconverterlinear/coefficient.md)
   The coefficient to use in the linear unit conversion calculation.
-- [var constant: Double](unitconverterlinear/constant.md)
+- [var constant: Double](./unitconverterlinear/constant.md)
   The constant to use in the linear unit conversion calculation.
 ### Creating Unit Converters
-- [convenience init(coefficient: Double)](unitconverterlinear/init(coefficient:).md)
+- [convenience init(coefficient: Double)](./unitconverterlinear/init%28coefficient%29.md)
   Initializes the unit converter with the coefficient you specify.
-- [init(coefficient: Double, constant: Double)](unitconverterlinear/init(coefficient:constant:).md)
+- [init(coefficient: Double, constant: Double)](./unitconverterlinear/init%28coefficient,constant%29.md)
   Creates a unit converter with the coefficient and constant you specify.
 ### Initializers
-- [init?(coder: NSCoder)](unitconverterlinear/init(coder:).md)
+- [init?(coder: NSCoder)](./unitconverterlinear/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UnitConverter](unitconverter.md)
+- [UnitConverter](./unitconverter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitConverter](unitconverter.md)
+### Conversion
+- [class UnitConverter](./unitconverter.md)
   An abstract class that provides a description of how to convert a unit to and from the base unit of its dimension.
 
 

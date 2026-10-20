@@ -1,7 +1,8 @@
 # textLayoutManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,13 +13,18 @@
 weak var textLayoutManager: NSTextLayoutManager? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) NSTextLayoutManager * textLayoutManager;
+```
+
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nstextcontainer/layoutmanager.md)
+### Managing text components
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   The text container’s layout manager.
-- [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
+- [func replaceLayoutManager(NSLayoutManager)](./replacelayoutmanager%28_%29.md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [var textView: NSTextView?](nstextcontainer/textview.md)
+- [var textView: NSTextView?](./textview.md)
   The text container’s text view.
 
 

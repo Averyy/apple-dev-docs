@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that renders the image for the image representation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The delegate object that renders the image for the image representation.
 weak var delegate: AnyObject? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) id delegate;
+```
+
 ## See Also
 
-- [var drawSelector: Selector?](nscustomimagerep/drawselector.md)
+### Getting Information About Images
+- [var drawSelector: Selector?](./drawselector.md)
   The selector for the delegate’s drawing method.
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the input.
 

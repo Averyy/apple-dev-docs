@@ -1,12 +1,13 @@
 # changeBackgroundCellMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Same as `NSChangeGrayCellMask`, but only background pixels are changed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,14 +15,19 @@ Same as `NSChangeGrayCellMask`, but only background pixels are changed.
 static var changeBackgroundCellMask: NSCell.StyleMask { get }
 ```
 
+```c
+NSChangeBackgroundCellMask
+```
+
 ## See Also
 
-- [static var pushInCellMask: NSCell.StyleMask](nscell/stylemask/pushincellmask.md)
+### Constants
+- [static var pushInCellMask: NSCell.StyleMask](./pushincellmask.md)
   The button cell “pushes in” if it has a border.
-- [static var contentsCellMask: NSCell.StyleMask](nscell/stylemask/contentscellmask.md)
+- [static var contentsCellMask: NSCell.StyleMask](./contentscellmask.md)
   The button cell displays its alternate icon and/or title.
-- [static var changeGrayCellMask: NSCell.StyleMask](nscell/stylemask/changegraycellmask.md)
-  The button cell swaps the “control color” (the [`controlColor`](nscolor/controlcolor.md) method of `NSColor`) and white pixels on its background and icon.
+- [static var changeGrayCellMask: NSCell.StyleMask](./changegraycellmask.md)
+  The button cell swaps the “control color” (the [`controlColor`](../../nscolor/controlcolor.md) method of `NSColor`) and white pixels on its background and icon.
 
 
 ---

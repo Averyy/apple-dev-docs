@@ -1,18 +1,19 @@
 # system
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides an interface to OS-specific properties and actions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,11 +22,16 @@ An object that provides an interface to OS-specific properties and actions.
 var system: XCUISystem { get }
 ```
 
+```objc
+@property (nonatomic, readonly) XCUISystem * system;
+```
+
 ## See Also
 
-- [var appearance: XCUIDevice.Appearance](xcuidevice/appearance-swift.property.md)
+### Interacting with the OS
+- [var appearance: XCUIDevice.Appearance](./appearance-swift.property.md)
   The interface style of the device.
-- [XCUIDevice.Appearance](xcuidevice/appearance-swift.enum.md)
+- [XCUIDevice.Appearance](./appearance-swift.enum.md)
   Constants that indicate an interface style.
 
 

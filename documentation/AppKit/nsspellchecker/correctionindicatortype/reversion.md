@@ -1,12 +1,13 @@
 # NSSpellChecker.CorrectionIndicatorType.reversion
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Provides the option to revert to the original form after a correction has been made.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Provides the option to revert to the original form after a correction has been m
 case reversion
 ```
 
+```c
+NSCorrectionIndicatorTypeReversion
+```
+
 ## See Also
 
-- [NSSpellChecker.CorrectionIndicatorType.default](nsspellchecker/correctionindicatortype/default.md)
+### Constants
+- [NSSpellChecker.CorrectionIndicatorType.default](./default.md)
   The default indicator that shows a proposed correction.
-- [NSSpellChecker.CorrectionIndicatorType.guesses](nsspellchecker/correctionindicatortype/guesses.md)
+- [NSSpellChecker.CorrectionIndicatorType.guesses](./guesses.md)
   Shows multiple alternatives from which the user may choose the appropriate spelling.
 
 

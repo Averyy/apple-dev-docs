@@ -1,7 +1,8 @@
 # zIndex(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls the display order of overlapping chart content.
 
@@ -27,8 +28,9 @@ func zIndex(_ value: Double) -> some ChartContent
 
 ## See Also
 
-- [func compositingLayer() -> some ChartContent](chartcontent/compositinglayer.md)
-- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](chartcontent/compositinglayer(style:).md)
+### Layering chart content
+- [func compositingLayer() -> some ChartContent](./compositinglayer%28%29.md)
+- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](./compositinglayer%28style%29.md)
 
 
 ---

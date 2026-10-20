@@ -1,7 +1,8 @@
 # ReviewSubmission.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a review submission resource.
 
@@ -10,19 +11,20 @@ Attributes that describe a review submission resource.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmission.Attributes
 ```
 
 ## Properties
 
 - `platform` (Platform)
-- `state` (string)
+- `state` (string): **Allowed Values**: `READY_FOR_REVIEW`, `WAITING_FOR_REVIEW`, `IN_REVIEW`, `UNRESOLVED_ISSUES`, `CANCELING`, `COMPLETING`, `COMPLETE`
 - `submittedDate` (date-time)
 
 ## See Also
 
-- [object ReviewSubmission.Relationships](reviewsubmission/relationships-data.dictionary.md)
+### Objects
+- [object ReviewSubmission.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # HKCategoryValueSleepAnalysis.awake
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is awake.
 
@@ -19,15 +20,20 @@ The user is awake.
 case awake
 ```
 
+```c
+HKCategoryValueSleepAnalysisAwake
+```
+
 ## See Also
 
-- [HKCategoryValueSleepAnalysis.asleepCore](hkcategoryvaluesleepanalysis/asleepcore.md)
+### Values for Tracking Sleep States
+- [HKCategoryValueSleepAnalysis.asleepCore](./asleepcore.md)
   The user is in light or intermediate sleep.
-- [HKCategoryValueSleepAnalysis.asleepDeep](hkcategoryvaluesleepanalysis/asleepdeep.md)
+- [HKCategoryValueSleepAnalysis.asleepDeep](./asleepdeep.md)
   The user is in deep sleep.
-- [HKCategoryValueSleepAnalysis.asleepREM](hkcategoryvaluesleepanalysis/asleeprem.md)
+- [HKCategoryValueSleepAnalysis.asleepREM](./asleeprem.md)
   The user is in REM sleep.
-- [HKCategoryValueSleepAnalysis.asleepUnspecified](hkcategoryvaluesleepanalysis/asleepunspecified.md)
+- [HKCategoryValueSleepAnalysis.asleepUnspecified](./asleepunspecified.md)
   The user is asleep, but the specific stage isn’t known.
 
 

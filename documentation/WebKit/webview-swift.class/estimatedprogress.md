@@ -1,17 +1,24 @@
 # estimatedProgress
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An estimate, as a percentage, of the amount of content that is currently loaded.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
 ```swift
 var estimatedProgress: Double { get }
+```
+
+```objc
+@property (nonatomic, readonly) double estimatedProgress;
 ```
 
 #### Discussion
@@ -22,13 +29,14 @@ The value is an estimate based on the total number of bytes expected to be recei
 
 ## See Also
 
-- [func stopLoading(Any?)](webview-swift.class/stoploading(_:).md)
+### Loading Content
+- [func stopLoading(Any?)](./stoploading%28_%29.md)
   An action method that stops the loading of any web frame content managed by the receiver.
-- [func takeStringURLFrom(Any?)](webview-swift.class/takestringurlfrom(_:).md)
+- [func takeStringURLFrom(Any?)](./takestringurlfrom%28_%29.md)
   Sets the receiver’s current location by obtaining a URL string from the sender.
-- [func reload(Any?)](webview-swift.class/reload(_:).md)
+- [func reload(Any?)](./reload%28_%29.md)
   An action method that reloads the current page.
-- [func reloadFromOrigin(Any?)](webview-swift.class/reloadfromorigin(_:).md)
+- [func reloadFromOrigin(Any?)](./reloadfromorigin%28_%29.md)
   Action method that performs an end-to-end revalidation using cache-validating conditionals if possible.
 
 

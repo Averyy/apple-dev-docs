@@ -1,14 +1,15 @@
 # task_self_region_info_flags_set
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t task_self_region_info_flags_set(int newval);
 ```
 

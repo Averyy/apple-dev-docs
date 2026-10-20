@@ -1,7 +1,8 @@
 # Publishers.AssertNoFailure.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -26,7 +27,8 @@ This publisher never produces errors.
 
 ## See Also
 
-- [Publishers.AssertNoFailure.Output](publishers/assertnofailure/output.md)
+### Declaring supporting types
+- [Publishers.AssertNoFailure.Output](./output.md)
   The kind of values published by this publisher.
 
 

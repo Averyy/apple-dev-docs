@@ -1,7 +1,8 @@
 # stopShowingCaptionPreview()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops showing the caption preview.
 
@@ -17,6 +18,10 @@ Stops showing the caption preview.
 
 ```swift
 func stopShowingCaptionPreview()
+```
+
+```objc
+- (void) stopShowingCaptionPreview;
 ```
 
 #### Discussion

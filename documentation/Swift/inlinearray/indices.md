@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indices that are valid for subscripting the array, in ascending order.
 
@@ -22,7 +23,7 @@ var indices: Range<InlineArray<count, Element>.Index> { get }
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

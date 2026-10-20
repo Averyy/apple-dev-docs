@@ -1,7 +1,8 @@
 # openSettings(for:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens the Settings app to a specific section of Accessibility settings.
 
@@ -47,7 +48,8 @@ ContentView()
 
 ## See Also
 
-- [AccessibilitySettings.Feature](accessibilitysettings/feature.md)
+### Opening the Settings app
+- [AccessibilitySettings.Feature](./feature.md)
   Constants that describe specific Accessibility settings in the Settings app.
 
 

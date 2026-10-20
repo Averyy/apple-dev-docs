@@ -1,17 +1,22 @@
 # loadAllPlugIns()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Scans directories for files that have the `.plugin` extension and then loads the image units.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
 
 ## Declaration
 
 ```swift
 class func loadAllPlugIns()
+```
+
+```objc
++ (void) loadAllPlugIns;
 ```
 
 #### Discussion
@@ -25,9 +30,11 @@ Call this method once. If you call this method more than once, Core Image loads 
 
 ## See Also
 
-- [Image Unit Tutorial](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageUnitTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004531)
-- [Core Image Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
-- [class func load(URL!, allowExecutableCode: Bool)](ciplugin/load(_:allowexecutablecode:).md)
+### Related Documentation
+- [Image Unit Tutorial](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageUnitTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004531)
+- [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
+### Deprecated
+- [class func load(URL!, allowExecutableCode: Bool)](./load%28_,allowexecutablecode%29.md)
   Loads filters from an image unit that have the appropriate executable status.
 
 

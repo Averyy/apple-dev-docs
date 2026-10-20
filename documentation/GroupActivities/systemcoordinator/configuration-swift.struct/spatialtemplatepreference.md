@@ -1,7 +1,8 @@
 # spatialTemplatePreference
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred arrangement of spatial Personas in your app’s immersive space.
 
@@ -16,11 +17,12 @@ var spatialTemplatePreference: SpatialTemplatePreference
 
 #### Discussion
 
-When the system displays spatial Personas, it uses the value of this property to determine how to arrange them around the content in your app’s immersive space. The default value of this property is [`none`](spatialtemplatepreference/none.md) , which lets the system determine placement based on the activity’s content. Specify other options if you prefer a specific arrangement around your app’s content.
+When the system displays spatial Personas, it uses the value of this property to determine how to arrange them around the content in your app’s immersive space. The default value of this property is [`none`](../../spatialtemplatepreference/none.md) , which lets the system determine placement based on the activity’s content. Specify other options if you prefer a specific arrangement around your app’s content.
 
 ## See Also
 
-- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+### Specifying spatial position preferences
+- [struct SpatialTemplatePreference](../../spatialtemplatepreference.md)
   A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 
 

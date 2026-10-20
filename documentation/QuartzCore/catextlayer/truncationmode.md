@@ -1,7 +1,8 @@
 # truncationMode
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines how the text is truncated to fit within the receiver’s bounds.
 
@@ -19,15 +20,20 @@ Determines how the text is truncated to fit within the receiver’s bounds.
 var truncationMode: CATextLayerTruncationMode { get set }
 ```
 
+```objc
+@property (copy) CATextLayerTruncationMode truncationMode;
+```
+
 #### Discussion
 
-The possible values are described in [`Truncation modes`](truncation-modes.md). Defaults to [`none`](catextlayertruncationmode/none.md).
+The possible values are described in [Truncation modes](../truncation-modes.md). Defaults to [`none`](../catextlayertruncationmode/none.md).
 
 ## See Also
 
-- [var isWrapped: Bool](catextlayer/iswrapped.md)
+### Text Alignment and Truncation
+- [var isWrapped: Bool](./iswrapped.md)
   Determines whether the text is wrapped to fit within the receiver’s bounds.
-- [var alignmentMode: CATextLayerAlignmentMode](catextlayer/alignmentmode.md)
+- [var alignmentMode: CATextLayerAlignmentMode](./alignmentmode.md)
   Determines how individual lines of text are horizontally aligned within the receiver’s bounds.
 
 

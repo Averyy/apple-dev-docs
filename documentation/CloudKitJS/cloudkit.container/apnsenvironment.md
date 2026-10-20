@@ -1,7 +1,8 @@
 # apnsEnvironment
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Apple Push Notification service (APNs) environment associated with this container.
 
@@ -10,19 +11,20 @@ The Apple Push Notification service (APNs) environment associated with this cont
 
 ## Declaration
 
-```swift
+```
 attribute String apnsEnvironment;
 ```
 
 #### Discussion
 
-Possible values are [`CloudKit`](cloudkit.md).[`DEVELOPMENT_ENVIRONMENT`](cloudkit/development_environment.md)and [`CloudKit`](cloudkit.md).[`PRODUCTION_ENVIRONMENT`](cloudkit/production_environment.md).
+Possible values are [`CloudKit`](../cloudkit.md).[`DEVELOPMENT_ENVIRONMENT`](../cloudkit/development_environment.md)and [`CloudKit`](../cloudkit.md).[`PRODUCTION_ENVIRONMENT`](../cloudkit/production_environment.md).
 
 ## See Also
 
-- [containerIdentifier](cloudkit.container/containeridentifier.md)
+### Getting the Identifier and Environment
+- [containerIdentifier](./containeridentifier.md)
   The string that identifies the app’s container.
-- [environment](cloudkit.container/environment.md)
+- [environment](./environment.md)
   The container environment, either development or production.
 
 

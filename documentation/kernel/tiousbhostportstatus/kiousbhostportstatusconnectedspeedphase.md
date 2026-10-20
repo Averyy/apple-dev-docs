@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusConnectedSpeedPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The connected speed phase.
 
@@ -10,7 +11,7 @@ The connected speed phase.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusConnectedSpeedPhase = IOUSBHostFamilyBitRangePhase(8, 10)
 ```
 

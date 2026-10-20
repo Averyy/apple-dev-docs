@@ -1,7 +1,8 @@
 # value
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The score that the player earns.
 
@@ -20,13 +21,18 @@ The score that the player earns.
 var value: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger value;
+```
+
 ## See Also
 
-- [var context: Int](gkleaderboardscore/context.md)
+### Accessing Properties
+- [var context: Int](./context.md)
   An integer value that your game uses.
-- [var leaderboardID: String](gkleaderboardscore/leaderboardid.md)
+- [var leaderboardID: String](./leaderboardid.md)
   The ID that Game Center uses for the leaderboard.
-- [var player: GKPlayer](gkleaderboardscore/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earns the score.
 
 

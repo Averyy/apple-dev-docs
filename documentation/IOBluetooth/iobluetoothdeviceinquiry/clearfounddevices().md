@@ -1,17 +1,22 @@
 # clearFoundDevices()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all found devices from the inquiry object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func clearFoundDevices()
+```
+
+```objc
+- (void) clearFoundDevices;
 ```
 
 

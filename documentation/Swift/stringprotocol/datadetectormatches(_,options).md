@@ -1,7 +1,8 @@
 # dataDetectorMatches(_:options:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for known data types in a string or a substring.
 
@@ -22,7 +23,7 @@ func dataDetectorMatches(_ types: DataDetector.MatchType = .all, options: DataDe
 
 #### Return Value
 
-An [`AsyncSequence`](asyncsequence.md) of `DataDetector/Match` objects that match the provided string.
+An [`AsyncSequence`](../asyncsequence.md) of `DataDetector/Match` objects that match the provided string.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the location.
 
@@ -19,11 +20,16 @@ The title of the location.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var geoLocation: CLLocation?](ekstructuredlocation/geolocation.md)
+### Accessing Structured Location Properties
+- [var geoLocation: CLLocation?](./geolocation.md)
   The core location.
-- [var radius: Double](ekstructuredlocation/radius.md)
+- [var radius: Double](./radius.md)
   A minimum distance from the core location that would trigger the alarm or reminder.
 
 

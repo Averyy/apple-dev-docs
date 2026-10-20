@@ -1,7 +1,8 @@
 # write(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the given string to the stream.
 

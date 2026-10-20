@@ -1,7 +1,8 @@
 # ScoreDimension
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A named scoring dimension for a model evaluator.
 
@@ -22,12 +23,12 @@ struct ScoreDimension
 
 ## Mentions
 
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
-- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
+- [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
 
 #### Overview
 
-Each dimension defines a name (used as the DataFrame column), an optional description, and a [`ScoringScale`](scoringscale.md) that defines what each score means.
+Each dimension defines a name (used as the DataFrame column), an optional description, and a [`ScoringScale`](./scoringscale.md) that defines what each score means.
 
 ```swift
 ScoreDimension("Grammar", scale: .numeric([
@@ -56,39 +57,40 @@ let _ = ScoreDimension("Safety", scale: .custom(SafetyLevel.self))
 ## Topics
 
 ### Creating a dimension
-- [init(String, description: String?, scale: ScoringScale)](scoredimension/init(_:description:scale:).md)
+- [init(String, description: String?, scale: ScoringScale)](./scoredimension/init%28_,description,scale%29.md)
   Creates a scoring dimension.
 ### Inspecting a dimension
-- [var metric: Metric](scoredimension/metric.md)
+- [var metric: Metric](./scoredimension/metric.md)
   A metric identifier that uses this dimension’s name.
-- [let scale: ScoringScale](scoredimension/scale.md)
+- [let scale: ScoringScale](./scoredimension/scale.md)
   The scoring scale for this dimension.
-- [let description: String?](scoredimension/description.md)
+- [let description: String?](./scoredimension/description.md)
   An optional description providing additional context for the model judge about what this dimension measures.
 ### Defining scales
-- [struct ScoringScale](scoringscale.md)
+- [struct ScoringScale](./scoringscale.md)
   A scoring scale that defines the set of options a judge can assign.
-- [protocol ScoreLevel](scorelevel.md)
+- [protocol ScoreLevel](./scorelevel.md)
   A type that defines individual levels within a scoring scale.
 ### Instance Properties
-- [let name: String](scoredimension/name.md)
+- [let name: String](./scoredimension/name.md)
   The name of the dimension, used as the DataFrame column name.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
+### Model-judge evaluations
+- [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
   Configure model-judge evaluators that produce scores you correlate with human review.
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
   Score subjective qualities like tone, accuracy, and relevance that programmatic checks cannot measure.
-- [struct ModelJudgeEvaluator](modeljudgeevaluator.md)
+- [struct ModelJudgeEvaluator](./modeljudgeevaluator.md)
   An evaluator that uses a language model as a judge to score responses.
-- [struct ModelJudgePrompt](modeljudgeprompt.md)
+- [struct ModelJudgePrompt](./modeljudgeprompt.md)
   A configuration for how a model evaluator constructs its prompt.
 
 

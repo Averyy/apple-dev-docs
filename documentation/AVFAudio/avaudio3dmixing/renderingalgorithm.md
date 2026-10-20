@@ -2,6 +2,7 @@
 
 **Framework**: AVFAudio  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The type of rendering algorithm the mixer uses.
@@ -11,7 +12,7 @@ The type of rendering algorithm the mixer uses.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The type of rendering algorithm the mixer uses.
 var renderingAlgorithm: AVAudio3DMixingRenderingAlgorithm { get set }
 ```
 
+```objc
+@property (nonatomic) AVAudio3DMixingRenderingAlgorithm renderingAlgorithm;
+```
+
 #### Discussion
 
-Depending on the current output format of the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) instance, the system may only support a subset of the rendering algorithms. You can retrieve an array of valid rendering algorithms by calling the [`applicableRenderingAlgorithms`](avaudioenvironmentnode/applicablerenderingalgorithms.md) function of the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) instance.
+Depending on the current output format of the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) instance, the system may only support a subset of the rendering algorithms. You can retrieve an array of valid rendering algorithms by calling the [`applicableRenderingAlgorithms`](../avaudioenvironmentnode/applicablerenderingalgorithms.md) function of the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) instance.
 
-The default rendering algorithm is [`AVAudio3DMixingRenderingAlgorithm.equalPowerPanning`](avaudio3dmixingrenderingalgorithm/equalpowerpanning.md). Only the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) class implements this property.
+The default rendering algorithm is [`AVAudio3DMixingRenderingAlgorithm.equalPowerPanning`](../avaudio3dmixingrenderingalgorithm/equalpowerpanning.md). Only the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) class implements this property.
 
 ## See Also
 
-- [enum AVAudio3DMixingRenderingAlgorithm](avaudio3dmixingrenderingalgorithm.md)
+### Choosing a rendering algorithm
+- [enum AVAudio3DMixingRenderingAlgorithm](../avaudio3dmixingrenderingalgorithm.md)
   The types of rendering algorithms available per input bus of the environment node.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The 3D transform applied to the item.
@@ -19,15 +20,20 @@ The 3D transform applied to the item.
 var transform3D: CATransform3D { get set }
 ```
 
+```objc
+@property (nonatomic) CATransform3D transform3D;
+```
+
 ## See Also
 
-- [var frame: CGRect](nscollectionlayoutvisibleitem/frame.md)
+### Configuring position
+- [var frame: CGRect](./frame.md)
   The frame rectangle, which describes the item’s location and size in its section’s coordinate system.
-- [var bounds: CGRect](nscollectionlayoutvisibleitem/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The bounds rectangle, which describes the item’s location and size in its own coordinate system.
-- [var center: CGPoint](nscollectionlayoutvisibleitem/center.md)
+- [var center: CGPoint](./center.md)
   The center point of the item’s frame rectangle.
-- [var transform: CGAffineTransform](nscollectionlayoutvisibleitem/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The transform applied to the item, relative to the center of its bounds.
 
 

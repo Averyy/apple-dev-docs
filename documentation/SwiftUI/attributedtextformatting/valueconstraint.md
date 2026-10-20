@@ -1,7 +1,8 @@
 # AttributedTextFormatting.ValueConstraint
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text formatting definition that constrains the value of a single attribute to the members of a set.
 
@@ -41,18 +42,18 @@ struct MyTextFormattingDefinition: AttributedTextFormattingDefinition {
 ## Topics
 
 ### Initializers
-- [init(for:values:default:)](attributedtextformatting/valueconstraint/init(for:values:default:).md)
+- [init(for:values:default:)](./valueconstraint/init%28for,values,default%29.md)
   Create a definition that constrains an attribute’s value to a defined set of allowed values.
 
 ## Relationships
 
 ### Conforms To
-- [AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
-- [AttributedTextValueConstraint](attributedtextvalueconstraint.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedTextFormattingDefinition](../attributedtextformattingdefinition.md)
+- [AttributedTextValueConstraint](../attributedtextvalueconstraint.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

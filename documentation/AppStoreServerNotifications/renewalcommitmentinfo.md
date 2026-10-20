@@ -1,20 +1,21 @@
 # RenewalCommitmentInfo
 
 **Framework**: App Store Server Notifications  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Server Notifications 2.21+
 
 ## Declaration
 
-```swift
+```
 object RenewalCommitmentInfo
 ```
 
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
 ## Properties
 
@@ -26,16 +27,17 @@ object RenewalCommitmentInfo
 
 ## See Also
 
-- [object TransactionCommitmentInfo](transactioncommitmentinfo.md)
-- [type billingPeriodNumber](billingperiodnumber.md)
-- [type commitmentExpiresDate](commitmentexpiresdate.md)
-- [type commitmentPrice](commitmentprice.md)
-- [type totalBillingPeriods](totalbillingperiods.md)
-- [type commitmentAutoRenewProductId](commitmentautorenewproductid.md)
-- [type commitmentAutoRenewStatus](commitmentautorenewstatus.md)
-- [type commitmentRenewalBillingPlanType](commitmentrenewalbillingplantype.md)
-- [type commitmentRenewalDate](commitmentrenewaldate.md)
-- [type commitmentRenewalPrice](commitmentrenewalprice.md)
+### Monthly subscriptions with 12-month commitments
+- [object TransactionCommitmentInfo](./transactioncommitmentinfo.md)
+- [type billingPeriodNumber](./billingperiodnumber.md)
+- [type commitmentExpiresDate](./commitmentexpiresdate.md)
+- [type commitmentPrice](./commitmentprice.md)
+- [type totalBillingPeriods](./totalbillingperiods.md)
+- [type commitmentAutoRenewProductId](./commitmentautorenewproductid.md)
+- [type commitmentAutoRenewStatus](./commitmentautorenewstatus.md)
+- [type commitmentRenewalBillingPlanType](./commitmentrenewalbillingplantype.md)
+- [type commitmentRenewalDate](./commitmentrenewaldate.md)
+- [type commitmentRenewalPrice](./commitmentrenewalprice.md)
 
 
 ---

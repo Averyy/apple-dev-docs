@@ -1,7 +1,8 @@
 # StripOrientation.frenet
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use strip’s frenet frame for orientation
 
@@ -12,7 +13,7 @@ Use strip’s frenet frame for orientation
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

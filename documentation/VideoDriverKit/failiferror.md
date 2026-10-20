@@ -1,14 +1,15 @@
 # FailIfError
 
 **Framework**: VideoDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 #define FailIfError(inError, inAction, inHandler, inMessage)
 ```
 

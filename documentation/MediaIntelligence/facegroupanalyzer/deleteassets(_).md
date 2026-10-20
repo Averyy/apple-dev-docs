@@ -1,7 +1,8 @@
 # deleteAssets(_:)
 
 **Framework**: Media Intelligence  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified assets and their associated face data.
 
@@ -25,14 +26,15 @@ final nonisolated(nonsending) func deleteAssets(_ assetIDs: [MediaIntelligenceIm
 
 ## See Also
 
-- [let workingDirectory: URL](facegroupanalyzer/workingdirectory.md)
+### Managing assets
+- [let workingDirectory: URL](./workingdirectory.md)
   A directory where the analyzer stores its face data and metadata.
 - [func insertOrUpdateAssets([MediaIntelligenceImageAsset]) async throws -> some AsyncSequence<(assetID: MediaIntelligenceImageAsset.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/insertorupdateassets(_:).md)
+](./insertorupdateassets%28_%29.md)
   Adds or replaces image assets in the analyzer.
-- [func deleteAllAssets() async throws](facegroupanalyzer/deleteallassets.md)
+- [func deleteAllAssets() async throws](./deleteallassets%28%29.md)
   Removes all assets and their associated face data from the analyzer.
-- [static func purge(workingDirectory: URL) async throws](facegroupanalyzer/purge(workingdirectory:).md)
+- [static func purge(workingDirectory: URL) async throws](./purge%28workingdirectory%29.md)
   Removes all analyzer data from the specified directory.
 
 

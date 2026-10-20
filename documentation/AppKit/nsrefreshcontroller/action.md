@@ -1,7 +1,8 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action method to call when refresh is triggered.
 
@@ -12,6 +13,10 @@ The action method to call when refresh is triggered.
 
 ```swift
 var action: Selector? { get set }
+```
+
+```objc
+@property (nullable) SEL action;
 ```
 
 

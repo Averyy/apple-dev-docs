@@ -1,6 +1,8 @@
 # Offering Apple Pay in Your App
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: PassKit (Apple Pay and Wallet)  
+**Role**: Sample Code  
+**Download**: [OfferingApplePayInYourApp.zip](https://docs-assets.developer.apple.com/published/5717c0e852a2/OfferingApplePayInYourApp.zip)
 
 Collect payments with iPhone and Apple Watch using Apple Pay.
 
@@ -22,7 +24,7 @@ The sample ticket booking app implements buying a ticket using Apple Pay in:
 
 A shared `PaymentHandler` class handles payment in each of the apps.
 
-> **Note**: This sample code project is associated with WWDC21 session [`10092: What’s New in Wallet and Apple Pay`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10092/).
+> **Note**: This sample code project is associated with WWDC21 session [10092: What’s New in Wallet and Apple Pay](https://developer.apple.com/wwdc21/10092/).
 
 ##### Configure the Sample Code Project
 
@@ -30,20 +32,20 @@ Test Apple Pay payments with this sample by configuring the bundle identifiers a
 
 1. Change the bundle ID for each target so that it’s unique for your developer account; change `example` in the bundle ID to something that represents you or your organization.
 2. In the build settings, update the value of the user-defined `OFFERING_APPLE_PAY_BUNDLE_PREFIX` setting to match the prefix of the bundle IDs you changed in step 1. For example, if you changed `example` in each bundle ID to your organization name, change `example` in `OFFERING_APPLE_PAY_BUNDLE_PREFIX` to the same organization name. Xcode configures the required merchant ID for Apple Pay in each target when you build the project.
-3. Set up the Apple Pay Merchant Identity and Apple Pay Payment Processing certificates. For more information on setting up a merchant identity and processing certificates, see [`Setting up Apple Pay`](setting-up-apple-pay.md).
+3. Set up the Apple Pay Merchant Identity and Apple Pay Payment Processing certificates. For more information on setting up a merchant identity and processing certificates, see [Setting Up Apple Pay](./setting-up-apple-pay.md).
 4. Set the signing option for the iOS app to “Automatically manage signing.”
 
 Running this app on an iPhone or Apple Watch requires an Apple Pay card. Running in Simulator doesn’t require a card.
 
 > **Note**: Not all Apple Pay features are supported in the iOS simulator. Testing Apple Pay is unsupported in the watchOS simulator.
 
-For more information about processing an Apple Pay payment using a payment platform or merchant bank, see [`An easier way to pay within apps and websites`](https://developer.apple.comhttps://developer.apple.com/apple-pay). To set up your sandbox environment for testing, see [`Sandbox Testing`](https://developer.apple.comhttps://developer.apple.com/apple-pay/sandbox-testing/).
+For more information about processing an Apple Pay payment using a payment platform or merchant bank, see [An easier way to pay within apps and websites](https://developer.apple.com/apple-pay). To set up your sandbox environment for testing, see [Sandbox Testing](https://developer.apple.com/apple-pay/sandbox-testing/).
 
 ##### Add the Apple Pay Button
 
 Apple Pay includes pre-built buttons to start a payment interaction, or to set up payment methods. The iOS app displays the payment button if the device can make payments, and it contains at least one payment card; otherwise it displays the button to add a payment.
 
-This sample checks for the ability to make payments using [`canMakePayments()`](pkpaymentauthorizationcontroller/canmakepayments().md), and checks for available payment cards using [`canMakePayments(usingNetworks:)`](pkpaymentauthorizationcontroller/canmakepayments(usingnetworks:).md). Both of these methods are part of [`PKPaymentAuthorizationController`](pkpaymentauthorizationcontroller.md).
+This sample checks for the ability to make payments using [`canMakePayments()`](./pkpaymentauthorizationcontroller/canmakepayments%28%29.md), and checks for available payment cards using [`canMakePayments(usingNetworks:)`](./pkpaymentauthorizationcontroller/canmakepayments%28usingnetworks%29.md). Both of these methods are part of [`PKPaymentAuthorizationController`](./pkpaymentauthorizationcontroller.md).
 
 ```swift
 static let supportedNetworks: [PKPaymentNetwork] = [
@@ -59,7 +61,7 @@ class func applePayStatus() -> (canMakePayments: Bool, canSetupCards: Bool) {
 }
 ```
 
-The iOS app displays the payment button by adding an instance of [`PKPaymentButton`](pkpaymentbutton.md).
+The iOS app displays the payment button by adding an instance of [`PKPaymentButton`](./pkpaymentbutton.md).
 
 > **Note**: The sample app doesn’t display the add button if a device can’t accept payments due to hardware limitations, parental controls, or any other reasons.
 
@@ -86,7 +88,7 @@ if let applePayButton = button {
 }
 ```
 
-The watchOS app adds the button to the storyboard as an instance of [`WKInterfacePaymentButton`](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton).
+The watchOS app adds the button to the storyboard as an instance of [`WKInterfacePaymentButton`](../WatchKit/wkinterfacepaymentbutton.md).
 
 ##### Define the Shipping Methods
 
@@ -120,7 +122,7 @@ func shippingMethodCalculator() -> [PKShippingMethod] {
 
 ##### Start the Payment Process
 
-Both iOS and watchOS implementations start the payment process by calling the `startPayment` method of the shared `PaymentHandler`. Updates to the payment sheet use the completion handlers implemented by both apps. The `startPayment` method stores the completion handlers because the Apple Pay functionality is asynchronous; and then the method creates an array of [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) to display the charges on the payment sheet.
+Both iOS and watchOS implementations start the payment process by calling the `startPayment` method of the shared `PaymentHandler`. Updates to the payment sheet use the completion handlers implemented by both apps. The `startPayment` method stores the completion handlers because the Apple Pay functionality is asynchronous; and then the method creates an array of [`PKPaymentSummaryItem`](./pkpaymentsummaryitem.md) to display the charges on the payment sheet.
 
 ```swift
 let ticket = PKPaymentSummaryItem(label: "Festival Entry", amount: NSDecimalNumber(string: "9.99"), type: .final)
@@ -129,7 +131,7 @@ let total = PKPaymentSummaryItem(label: "Total", amount: NSDecimalNumber(string:
 paymentSummaryItems = [ticket, tax, total]
 ```
 
-The app configures a [`PKPaymentRequest`](pkpaymentrequest.md) using the list of payment items and other details.
+The app configures a [`PKPaymentRequest`](./pkpaymentrequest.md) using the list of payment items and other details.
 
 ```swift
 let paymentRequest = PKPaymentRequest()
@@ -147,7 +149,7 @@ paymentRequest.supportsCouponCode = true
 #endif
 ```
 
-Next the app displays the payment sheet by calling [`PKPaymentAuthorizationController`](pkpaymentauthorizationcontroller.md) with the payment request. Both apps present the payment sheet using `present(completion:)`.
+Next the app displays the payment sheet by calling [`PKPaymentAuthorizationController`](./pkpaymentauthorizationcontroller.md) with the payment request. Both apps present the payment sheet using `present(completion:)`.
 
 The payment sheet handles all user interactions, including payment confirmation. It requests updates using the completion handlers stored by the `startPayment` method when a user updates the sheet.
 
@@ -166,7 +168,7 @@ paymentController?.present(completion: { (presented: Bool) in
 
 ##### Respond to Coupon Code Entry
 
-The `PaymentHandler` class handles coupons by implementing the [`PKPaymentAuthorizationControllerDelegate`](pkpaymentauthorizationcontrollerdelegate.md) protocol method [`paymentAuthorizationController(_:didSelectPaymentMethod:handler:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didselectpaymentmethod:handler:).md).
+The `PaymentHandler` class handles coupons by implementing the [`PKPaymentAuthorizationControllerDelegate`](./pkpaymentauthorizationcontrollerdelegate.md) protocol method [`paymentAuthorizationController(_:didSelectPaymentMethod:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didselectpaymentmethod,handler%29.md).
 
 After the user enters an accepted coupon code, the method adds a new `PKPaymentSummaryItem` displaying the discount, and adjusts the `PKPaymentSummaryItem` with the discounted total.
 
@@ -211,7 +213,7 @@ func paymentAuthorizationController(_ controller: PKPaymentAuthorizationControll
 
 ##### Handle Payment Success or Failure
 
-When the user authorizes the payment, the system calls the [`paymentAuthorizationController(_:didAuthorizePayment:handler:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didauthorizepayment:handler:).md) method of the [`PKPaymentAuthorizationControllerDelegate`](pkpaymentauthorizationcontrollerdelegate.md) protocol. Your handler confirms that the shipping address meets the criteria needed, and then calls the completion handler to report success or failure of the payment.
+When the user authorizes the payment, the system calls the [`paymentAuthorizationController(_:didAuthorizePayment:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didauthorizepayment,handler%29.md) method of the [`PKPaymentAuthorizationControllerDelegate`](./pkpaymentauthorizationcontrollerdelegate.md) protocol. Your handler confirms that the shipping address meets the criteria needed, and then calls the completion handler to report success or failure of the payment.
 
 The sample code contains a comment at the place you add code for processing the payment.
 
@@ -237,7 +239,7 @@ func paymentAuthorizationController(_ controller: PKPaymentAuthorizationControll
 }
 ```
 
-Once the sample app calls the completion handler in the [`paymentAuthorizationController(_:didAuthorizePayment:handler:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didauthorizepayment:handler:).md) method, Apple Pay tells the app it can dismiss the payment sheet by calling [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md). iOS and watchOS both handle dismissing the sheet as appropriate for each platform. In the iOS app, if payment succeeds the completion handler performs a segue to display a new view controller. If the payment fails, it remains on the payment sheet so the user can attempt payment with a different card or correct any issues.
+Once the sample app calls the completion handler in the [`paymentAuthorizationController(_:didAuthorizePayment:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didauthorizepayment,handler%29.md) method, Apple Pay tells the app it can dismiss the payment sheet by calling [`paymentAuthorizationControllerDidFinish(_:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish%28_%29.md). iOS and watchOS both handle dismissing the sheet as appropriate for each platform. In the iOS app, if payment succeeds the completion handler performs a segue to display a new view controller. If the payment fails, it remains on the payment sheet so the user can attempt payment with a different card or correct any issues.
 
 ```swift
 @objc func payPressed(sender: AnyObject) {
@@ -251,9 +253,10 @@ Once the sample app calls the completion handler in the [`paymentAuthorizationCo
 
 ## See Also
 
-- [Setting up Apple Pay](setting-up-apple-pay.md)
+### Apple Pay setup
+- [Setting up Apple Pay](./setting-up-apple-pay.md)
   Fulfill the requirements to provide Apple Pay as a payment option on your website or in your app.
-- [Complying with regional regulations](complying-with-regional-regulations.md)
+- [Complying with regional regulations](./complying-with-regional-regulations.md)
   Check regional regulations for possible requirements for your Apple Pay-based implementation.
 
 

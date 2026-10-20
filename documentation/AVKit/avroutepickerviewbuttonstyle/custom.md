@@ -1,7 +1,8 @@
 # AVRoutePickerViewButtonStyle.custom
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A custom button style.
 
@@ -14,15 +15,20 @@ A custom button style.
 case custom
 ```
 
+```c
+AVRoutePickerViewButtonStyleCustom
+```
+
 #### Discussion
 
 Use this button style to customize the background view and focus appearance for a route picker view.
 
 ## See Also
 
-- [AVRoutePickerViewButtonStyle.plain](avroutepickerviewbuttonstyle/plain.md)
+### Button styles
+- [AVRoutePickerViewButtonStyle.plain](./plain.md)
   A plain button style.
-- [AVRoutePickerViewButtonStyle.system](avroutepickerviewbuttonstyle/system.md)
+- [AVRoutePickerViewButtonStyle.system](./system.md)
   A system-defined button style.
 
 

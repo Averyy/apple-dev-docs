@@ -1,7 +1,8 @@
 # SecItemAttr.accountItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the account attribute.
 
@@ -13,6 +14,10 @@ Identifies the account attribute.
 
 ```swift
 case accountItemAttr
+```
+
+```c
+kSecAccountItemAttr
 ```
 
 #### Discussion

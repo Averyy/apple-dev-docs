@@ -1,12 +1,15 @@
 # characterShapeAttributeName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The character shape attribute.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
+
+> **Deprecated**: This attribute is bound to a specific implementation of ATS feature and not generically supported by wide range of fonts. The majority of characters accessed through this API are now encoded in the Unicode standard. Use the CTFont feature API for fine control over character shape choices.
 
 ## Declaration
 
@@ -24,13 +27,14 @@ The default value is 0 (disable). 1 is `kTraditionalCharactersSelector,` and so 
 
 ## See Also
 
-- [static let expansion: NSAttributedString.Key](nsattributedstring/key/expansion.md)
+### Deprecated Keys
+- [static let expansion: NSAttributedString.Key](./expansion.md)
   The expansion factor of the text.
-- [static let obliqueness: NSAttributedString.Key](nsattributedstring/key/obliqueness.md)
+- [static let obliqueness: NSAttributedString.Key](./obliqueness.md)
   The obliqueness of the text.
-- [static let verticalGlyphForm: NSAttributedString.Key](nsattributedstring/key/verticalglyphform.md)
+- [static let verticalGlyphForm: NSAttributedString.Key](./verticalglyphform.md)
   The vertical glyph form of the text.
-- [static let usesScreenFontsDocumentAttribute: NSAttributedString.Key](nsattributedstring/key/usesscreenfontsdocumentattribute.md)
+- [static let usesScreenFontsDocumentAttribute: NSAttributedString.Key](./usesscreenfontsdocumentattribute.md)
   The screen fonts attribute.
 
 

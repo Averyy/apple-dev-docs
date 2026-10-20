@@ -1,7 +1,8 @@
 # Delete a Webhook
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove a specific webhook configuration.
 
@@ -14,17 +15,29 @@ Remove a specific webhook configuration.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read Webhook Information for an App](get-v1-apps-_id_-webhooks.md)
+### Managing webhook notifications
+- [Read Webhook Information for an App](./get-v1-apps-_id_-webhooks.md)
   Read webhook configuration details for a specific app.
-- [Read Webhook Information](get-v1-webhooks-_id_.md)
+- [Read Webhook Information](./get-v1-webhooks-_id_.md)
   Read configuration details for a specific webhook.
-- [Create a Webhook Configuration](post-v1-webhooks.md)
+- [Create a Webhook Configuration](./post-v1-webhooks.md)
   Add a new webhook configuration.
-- [Modify a Webhook Configuration](patch-v1-webhooks-_id_.md)
+- [Modify a Webhook Configuration](./patch-v1-webhooks-_id_.md)
   Update details for a specific webhook.
 
 

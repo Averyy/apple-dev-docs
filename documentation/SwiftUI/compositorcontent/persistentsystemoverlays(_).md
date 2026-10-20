@@ -1,7 +1,8 @@
 # persistentSystemOverlays(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred visibility of the non-transient system views overlaying the app.
 
@@ -18,7 +19,7 @@ func persistentSystemOverlays(_ visibility: Visibility) -> some CompositorConten
 
 #### Discussion
 
-Use this modifier to influence the appearance of system overlays in your app. The behavior varies by platform. For an [`ImmersiveSpace`](immersivespace.md), it affects the Home indicator.
+Use this modifier to influence the appearance of system overlays in your app. The behavior varies by platform. For an [`ImmersiveSpace`](../immersivespace.md), it affects the Home indicator.
 
 > **Note**: You can indicate a preference with this modifier, but the system might or might not be able to honor that preference.
 

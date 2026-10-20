@@ -1,11 +1,12 @@
 # kAudioDevicePropertyStreams
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,23 +14,28 @@
 var kAudioDevicePropertyStreams: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioDevicePropertyStreams
+```
+
 ## See Also
 
-- [var kAudioDevicePropertyAvailableNominalSampleRates: AudioObjectPropertySelector](kaudiodevicepropertyavailablenominalsamplerates.md)
-- [var kAudioDevicePropertyClockDomain: AudioObjectPropertySelector](kaudiodevicepropertyclockdomain.md)
-- [var kAudioDevicePropertyConfigurationApplication: AudioObjectPropertySelector](kaudiodevicepropertyconfigurationapplication.md)
-- [var kAudioDevicePropertyDeviceCanBeDefaultDevice: AudioObjectPropertySelector](kaudiodevicepropertydevicecanbedefaultdevice.md)
-- [var kAudioDevicePropertyDeviceCanBeDefaultSystemDevice: AudioObjectPropertySelector](kaudiodevicepropertydevicecanbedefaultsystemdevice.md)
-- [var kAudioDevicePropertyDeviceIsAlive: AudioObjectPropertySelector](kaudiodevicepropertydeviceisalive.md)
-- [var kAudioDevicePropertyDeviceIsRunning: AudioObjectPropertySelector](kaudiodevicepropertydeviceisrunning.md)
-- [var kAudioDevicePropertyDeviceUID: AudioObjectPropertySelector](kaudiodevicepropertydeviceuid.md)
-- [var kAudioDevicePropertyIcon: AudioObjectPropertySelector](kaudiodevicepropertyicon.md)
-- [var kAudioDevicePropertyIsHidden: AudioObjectPropertySelector](kaudiodevicepropertyishidden.md)
-- [var kAudioDevicePropertyLatency: AudioObjectPropertySelector](kaudiodevicepropertylatency.md)
-- [var kAudioDevicePropertyModelUID: AudioObjectPropertySelector](kaudiodevicepropertymodeluid.md)
-- [var kAudioDevicePropertyNominalSampleRate: AudioObjectPropertySelector](kaudiodevicepropertynominalsamplerate.md)
-- [var kAudioDevicePropertyPreferredChannelLayout: AudioObjectPropertySelector](kaudiodevicepropertypreferredchannellayout.md)
-- [var kAudioDevicePropertyPreferredChannelsForStereo: AudioObjectPropertySelector](kaudiodevicepropertypreferredchannelsforstereo.md)
+### Constants
+- [var kAudioDevicePropertyAvailableNominalSampleRates: AudioObjectPropertySelector](./kaudiodevicepropertyavailablenominalsamplerates.md)
+- [var kAudioDevicePropertyClockDomain: AudioObjectPropertySelector](./kaudiodevicepropertyclockdomain.md)
+- [var kAudioDevicePropertyConfigurationApplication: AudioObjectPropertySelector](./kaudiodevicepropertyconfigurationapplication.md)
+- [var kAudioDevicePropertyDeviceCanBeDefaultDevice: AudioObjectPropertySelector](./kaudiodevicepropertydevicecanbedefaultdevice.md)
+- [var kAudioDevicePropertyDeviceCanBeDefaultSystemDevice: AudioObjectPropertySelector](./kaudiodevicepropertydevicecanbedefaultsystemdevice.md)
+- [var kAudioDevicePropertyDeviceIsAlive: AudioObjectPropertySelector](./kaudiodevicepropertydeviceisalive.md)
+- [var kAudioDevicePropertyDeviceIsRunning: AudioObjectPropertySelector](./kaudiodevicepropertydeviceisrunning.md)
+- [var kAudioDevicePropertyDeviceUID: AudioObjectPropertySelector](./kaudiodevicepropertydeviceuid.md)
+- [var kAudioDevicePropertyIcon: AudioObjectPropertySelector](./kaudiodevicepropertyicon.md)
+- [var kAudioDevicePropertyIsHidden: AudioObjectPropertySelector](./kaudiodevicepropertyishidden.md)
+- [var kAudioDevicePropertyLatency: AudioObjectPropertySelector](./kaudiodevicepropertylatency.md)
+- [var kAudioDevicePropertyModelUID: AudioObjectPropertySelector](./kaudiodevicepropertymodeluid.md)
+- [var kAudioDevicePropertyNominalSampleRate: AudioObjectPropertySelector](./kaudiodevicepropertynominalsamplerate.md)
+- [var kAudioDevicePropertyPreferredChannelLayout: AudioObjectPropertySelector](./kaudiodevicepropertypreferredchannellayout.md)
+- [var kAudioDevicePropertyPreferredChannelsForStereo: AudioObjectPropertySelector](./kaudiodevicepropertypreferredchannelsforstereo.md)
 
 
 ---

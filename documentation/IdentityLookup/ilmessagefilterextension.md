@@ -1,7 +1,8 @@
 # ILMessageFilterExtension
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class for the principal class of a Message Filter app extension.
 
@@ -17,25 +18,30 @@ The abstract base class for the principal class of a Message Filter app extensio
 class ILMessageFilterExtension
 ```
 
+```objc
+@interface ILMessageFilterExtension : NSObject
+```
+
 ## Mentions
 
-- [Creating a Message Filter App Extension](creating-a-message-filter-app-extension.md)
+- [Creating a Message Filter App Extension](./creating-a-message-filter-app-extension.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ILMessageFilterExtensionContext](ilmessagefilterextensioncontext.md)
+### App Extension
+- [class ILMessageFilterExtensionContext](./ilmessagefilterextensioncontext.md)
   The extension context for a Message Filter app extension.
 
 

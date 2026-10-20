@@ -1,7 +1,8 @@
 # name
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The assigned name for the route.
 
@@ -20,6 +21,10 @@ The assigned name for the route.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 #### Discussion
 
 The framework localizes the string in this property according to the user’s language preferences. You can display this string to the user from your app’s user interface so that the user can distinguish one route from another.
@@ -28,17 +33,18 @@ The string itself describes the route using one of the route’s significant fea
 
 ## See Also
 
-- [var hasHighways: Bool](mkroute/hashighways.md)
+### Getting additional route details
+- [var hasHighways: Bool](./hashighways.md)
   A Boolean value that indicates whether the route contains highways.
-- [var hasTolls: Bool](mkroute/hastolls.md)
+- [var hasTolls: Bool](./hastolls.md)
   A Boolean value that indicates whether the route has tolls.
-- [var advisoryNotices: [String]](mkroute/advisorynotices.md)
+- [var advisoryNotices: [String]](./advisorynotices.md)
   An array of advisory notice strings for the route.
-- [var distance: CLLocationDistance](mkroute/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The route distance, in meters.
-- [var expectedTravelTime: TimeInterval](mkroute/expectedtraveltime.md)
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var transportType: MKDirectionsTransportType](mkroute/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The overall route transport type.
 
 

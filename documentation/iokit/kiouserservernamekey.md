@@ -1,7 +1,8 @@
 # kIOUserServerNameKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kIOUserServerNameKey: String { get }
+```
+
+```c
+#define kIOUserServerNameKey
 ```
 
 

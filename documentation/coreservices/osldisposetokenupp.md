@@ -1,7 +1,8 @@
 # OSLDisposeTokenUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLDisposeTokenProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLDisposeToken
 typealias OSLDisposeTokenUPP = OSLDisposeTokenProcPtr
 ```
 
+```c
+typedef OSLDisposeTokenProcPtr OSLDisposeTokenUPP;
+```
+
 #### Discussion
 
-For a description of a dispose token callback function, see [`OSLDisposeTokenProcPtr`](osldisposetokenprocptr.md). 
+For a description of a dispose token callback function, see [`OSLDisposeTokenProcPtr`](./osldisposetokenprocptr.md). 
 
 
 ---

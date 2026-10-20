@@ -1,7 +1,8 @@
 # column(axis:extremum:)
 
 **Framework**: hvf  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Convenience for computing matrix column
 

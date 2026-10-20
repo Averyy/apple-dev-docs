@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time that the device records the wrist temperature.
 
@@ -16,11 +17,16 @@ The time that the device records the wrist temperature.
 var startDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDate * startDate;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](srwristtemperaturesession/duration.md)
+### Getting session information
+- [var duration: TimeInterval](./duration.md)
   The number of seconds that the device records the temperature.
-- [var version: String](srwristtemperaturesession/version.md)
+- [var version: String](./version.md)
   The version of the algorithm that analyzes the temperature.
 
 

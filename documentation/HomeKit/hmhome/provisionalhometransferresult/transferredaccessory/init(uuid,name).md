@@ -1,7 +1,8 @@
 # init(uuid:name:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that represents an accessory that was successfully transferred from a temporary home to a person’s home hub.
 
@@ -26,9 +27,10 @@ An accessory that was successfully transferred to the home hub.
 
 ## See Also
 
-- [var uuid: UUID](hmhome/provisionalhometransferresult/transferredaccessory/uuid.md)
+### Describing the transferred accessory
+- [var uuid: UUID](./uuid.md)
   A unique identifier for the accessory.
-- [var name: String](hmhome/provisionalhometransferresult/transferredaccessory/name.md)
+- [var name: String](./name.md)
   The name of the accessory.
 
 

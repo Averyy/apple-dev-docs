@@ -1,6 +1,7 @@
 # Error Dictionary Keys
 
-**Framework**: CFNetwork
+**Framework**: CFNetwork  
+**Role**: API Collection
 
 Networking-related keys that may be available in a `CFErrorRef` object’s `userInfo` dictionary.
 
@@ -26,22 +27,23 @@ if (CFEqual(CFErrorGetDomain(err), kCFErrorDomainCFNetwork) && CFErrorGetCode(er
 ## Topics
 
 ### Constants
-- [let kCFURLErrorFailingURLErrorKey: CFString](kcfurlerrorfailingurlerrorkey.md)
+- [let kCFURLErrorFailingURLErrorKey: CFString](./kcfurlerrorfailingurlerrorkey.md)
   The URL that caused the load to fail as a `CFURLRef` object.
-- [let kCFURLErrorFailingURLStringErrorKey: CFString](kcfurlerrorfailingurlstringerrorkey.md)
+- [let kCFURLErrorFailingURLStringErrorKey: CFString](./kcfurlerrorfailingurlstringerrorkey.md)
   The URL that caused the load to fail as a `CFStringRef` object.
-- [let kCFGetAddrInfoFailureKey: CFString](kcfgetaddrinfofailurekey.md)
-- [let kCFSOCKSStatusCodeKey: CFString](kcfsocksstatuscodekey.md)
-- [let kCFSOCKSVersionKey: CFString](kcfsocksversionkey.md)
-- [let kCFSOCKSNegotiationMethodKey: CFString](kcfsocksnegotiationmethodkey.md)
-- [let kCFDNSServiceFailureKey: CFString](kcfdnsservicefailurekey.md)
-- [let kCFFTPStatusCodeKey: CFString](kcfftpstatuscodekey.md)
+- [let kCFGetAddrInfoFailureKey: CFString](./kcfgetaddrinfofailurekey.md)
+- [let kCFSOCKSStatusCodeKey: CFString](./kcfsocksstatuscodekey.md)
+- [let kCFSOCKSVersionKey: CFString](./kcfsocksversionkey.md)
+- [let kCFSOCKSNegotiationMethodKey: CFString](./kcfsocksnegotiationmethodkey.md)
+- [let kCFDNSServiceFailureKey: CFString](./kcfdnsservicefailurekey.md)
+- [let kCFFTPStatusCodeKey: CFString](./kcfftpstatuscodekey.md)
 
 ## See Also
 
-- [enum CFNetworkErrors](cfnetworkerrors.md)
-  This enumeration contains error codes returned under the error domain [`kCFErrorDomainCFNetwork`](kcferrordomaincfnetwork.md).
-- [Error Domains](error-domains.md)
+### Errors
+- [enum CFNetworkErrors](./cfnetworkerrors.md)
+  This enumeration contains error codes returned under the error domain [`kCFErrorDomainCFNetwork`](./kcferrordomaincfnetwork.md).
+- [Error Domains](./error-domains.md)
   High-level error domains.
 
 

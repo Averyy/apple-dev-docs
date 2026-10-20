@@ -1,7 +1,8 @@
 # AXTextMarkerGetBytePtr(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXTextMarkerGetBytePtr(_ theTextMarker: AXTextMarker) -> UnsafePointer<UInt8>
+```
+
+```c
+const UInt8 * AXTextMarkerGetBytePtr(AXTextMarkerRef theTextMarker);
 ```
 
 

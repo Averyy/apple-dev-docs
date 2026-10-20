@@ -1,7 +1,8 @@
 # new
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -18,9 +19,14 @@
 static var new: TKSmartCardUserInteractionForSecurePINChange.Confirmation { get }
 ```
 
+```c
+TKSmartCardPINConfirmationNew
+```
+
 ## See Also
 
-- [static var current: TKSmartCardUserInteractionForSecurePINChange.Confirmation](tksmartcarduserinteractionforsecurepinchange/confirmation/current.md)
+### Type Properties
+- [static var current: TKSmartCardUserInteractionForSecurePINChange.Confirmation](./current.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # tab(forIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the `tab` matching the specified `identifier` in the tab bar controllerâ€™s tabs. Returns nil if no tab is found matching the `identifier`.
 
@@ -18,9 +19,14 @@ Returns the `tab` matching the specified `identifier` in the tab bar controllerâ
 func tab(forIdentifier identifier: String) -> UITab?
 ```
 
+```objc
+- (UITab *) tabForIdentifier:(NSString *) identifier;
+```
+
 ## See Also
 
-- [var tabBar: UITabBar](uitabbarcontroller/tabbar.md)
+### Accessing the tab bar controller properties
+- [var tabBar: UITabBar](./tabbar.md)
   The tab bar view associated with this controller.
 
 

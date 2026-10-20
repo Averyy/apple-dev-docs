@@ -1,7 +1,8 @@
 # IOUSBGetConfigurationMaxPowerMilliAmps
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts the maximum bus current a configuration descriptor requires.
 
@@ -10,7 +11,7 @@ Extracts the maximum bus current a configuration descriptor requires.
 
 ## Declaration
 
-```swift
+```c
 uint32_t IOUSBGetConfigurationMaxPowerMilliAmps(uint32_t usbDeviceSpeed, const IOUSBConfigurationDescriptor *descriptor);
 ```
 
@@ -29,13 +30,14 @@ This method parses a configuration descriptor and returns the number of milliamp
 
 ## See Also
 
-- [IOUSBGetNextDescriptor](iousbgetnextdescriptor.md)
+### Configuration Descriptors
+- [IOUSBGetNextDescriptor](./iousbgetnextdescriptor.md)
   Gets the next descriptor in a configuration descriptor.
-- [IOUSBGetNextDescriptorWithType](iousbgetnextdescriptorwithtype.md)
+- [IOUSBGetNextDescriptorWithType](./iousbgetnextdescriptorwithtype.md)
   Finds the next descriptor matching a given type within a configuration descriptor.
-- [IOUSBGetNextAssociatedDescriptor](iousbgetnextassociateddescriptor.md)
+- [IOUSBGetNextAssociatedDescriptor](./iousbgetnextassociateddescriptor.md)
   Gets the next descriptor in the specified configuration descriptor that belongs to another container descriptor.
-- [IOUSBGetNextAssociatedDescriptorWithType](iousbgetnextassociateddescriptorwithtype.md)
+- [IOUSBGetNextAssociatedDescriptorWithType](./iousbgetnextassociateddescriptorwithtype.md)
   Finds the next descriptor matching a specific type within a configuration descriptor that belongs to another container descriptor.
 
 

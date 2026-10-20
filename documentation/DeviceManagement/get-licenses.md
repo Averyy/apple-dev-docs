@@ -1,29 +1,32 @@
 # Get Licenses
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the set of licenses managed by your organization.
 
 **Availability**:
 - VPP License Management 1.0+
 
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
+
 ## Mentions
 
-- [Retrieving a large record set](retrieving-a-large-record-set.md)
-- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
+- [Retrieving a large record set](./retrieving-a-large-record-set.md)
+- [Upgrading to Apple School Manager and Apple Business](./upgrading-to-apple-school-manager-and-apple-business.md)
 
 #### Discussion
 
-This call returns an exhaustive list of individual licenses managed by your organization. For performance reasons, it’s recommended that you use a combination of [`Get Assets`](get-assets-44p83.md)  and [`Get Assignments`](get-assignments-158kc.md) as described in the initial import process in [`Managing apps and books through web services (Legacy)`](managing-apps-and-books-through-web-services-legacy.md) instead of this API.
+This call returns an exhaustive list of individual licenses managed by your organization. For performance reasons, it’s recommended that you use a combination of [`Get Assets`](./get-assets-44p83.md)  and [`Get Assignments`](./get-assignments-158kc.md) as described in the initial import process in [Managing apps and books through web services (Legacy)](./managing-apps-and-books-through-web-services-legacy.md) instead of this API.
 
-Additionally, it’s not recommended to use the Apple license IDs returned in the [`GetVppLicensesResponse`](getvpplicensesresponse.md) in MDM implementations because it creates an unnecessary dependence on internal data models, which can change.
+Additionally, it’s not recommended to use the Apple license IDs returned in the [`GetVppLicensesResponse`](./getvpplicensesresponse.md) in MDM implementations because it creates an unnecessary dependence on internal data models, which can change.
 
 ##### Example Request and Response
 
 **Request**:
 
-```None
+```
 {
   "batchToken": null,
   "sinceModifiedToken": null,
@@ -106,9 +109,9 @@ Additionally, it’s not recommended to use the Apple license IDs returned in th
 ## Topics
 
 ### Request and Response
-- [object GetVppLicensesRequest](getvpplicensesrequest.md)
+- [object GetVppLicensesRequest](./getvpplicensesrequest.md)
   The request for licenses.
-- [object GetVppLicensesResponse](getvpplicensesresponse.md)
+- [object GetVppLicensesResponse](./getvpplicensesresponse.md)
   The response with the licenses.
 
 ## Endpoint
@@ -117,15 +120,23 @@ Additionally, it’s not recommended to use the Apple license IDs returned in th
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `GetVppLicensesRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`GetVppLicensesResponse`, `application/json`)
 
 ## See Also
 
-- [Get Assets](get-assets-44p83.md)
+### Asset and license management
+- [Get Assets](./get-assets-44p83.md)
   Get the set of assets managed by your organization.
-- [Get Assignments](get-assignments-158kc.md)
+- [Get Assignments](./get-assignments-158kc.md)
   Get a list of assignments currently assigned to a user or device.
-- [Manage Licenses](manage-licenses.md)
+- [Manage Licenses](./manage-licenses.md)
   Associate and disassociate licenses with users and devices.
 
 

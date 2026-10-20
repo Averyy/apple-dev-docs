@@ -1,7 +1,8 @@
 # revokeMessage(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests revocation of an RCS message.
 
@@ -22,7 +23,7 @@ A Boolean value that indicates whether sending the request to the carrier networ
 
 The RCS specification requires that you revoke a message when delivery fails or times out, and fall back to sending the message with SMS or MMS.
 
-> **Note**:  If the session is no longer valid, this method throws [`TelephonyMessagingSession.Error.invalidSession`](telephonymessagingsession/error/invalidsession.md). If the method can’t resolve the handle in the request, it throws [`RCSService.Error.invalidArgument`](rcsservice/error/invalidargument.md). If the method can’t process the revoke request for other reasons it throws [`RCSService.Error.internalError`](rcsservice/error/internalerror.md).
+> **Throws**:  If the session is no longer valid, this method throws [`TelephonyMessagingSession.Error.invalidSession`](../telephonymessagingsession/error/invalidsession.md). If the method can’t resolve the handle in the request, it throws [`RCSService.Error.invalidArgument`](./error/invalidargument.md). If the method can’t process the revoke request for other reasons it throws [`RCSService.Error.internalError`](./error/internalerror.md).
 
 ## Parameters
 
@@ -30,7 +31,8 @@ The RCS specification requires that you revoke a message when delivery fails or 
 
 ## See Also
 
-- [RCSService.RevokeMessageRequest](rcsservice/revokemessagerequest.md)
+### Revoking messages
+- [RCSService.RevokeMessageRequest](./revokemessagerequest.md)
   A structure that respresents a request to revoke a previously sent message.
 
 

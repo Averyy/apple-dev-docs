@@ -1,7 +1,8 @@
 # SKIndexType
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the category of an index.
 
@@ -15,29 +16,35 @@ Specifies the category of an index.
 struct SKIndexType
 ```
 
+```c
+typedef enum SKIndexType : unsigned int {
+    ...
+} SKIndexType;
+```
+
 ## Topics
 
 ### Constants
-- [var kSKIndexUnknown: SKIndexType](kskindexunknown.md)
+- [var kSKIndexUnknown: SKIndexType](./kskindexunknown.md)
   Specifies an unknown index type.
-- [var kSKIndexInverted: SKIndexType](kskindexinverted.md)
+- [var kSKIndexInverted: SKIndexType](./kskindexinverted.md)
   Specifies an inverted index, mapping terms to documents.
-- [var kSKIndexVector: SKIndexType](kskindexvector.md)
+- [var kSKIndexVector: SKIndexType](./kskindexvector.md)
   Specifies a vector index, mapping documents to terms.
-- [var kSKIndexInvertedVector: SKIndexType](kskindexinvertedvector.md)
+- [var kSKIndexInvertedVector: SKIndexType](./kskindexinvertedvector.md)
   Specifies an index type with all the capabilities of an inverted and a vector index.
 ### Initializers
-- [init(UInt32)](skindextype/1443295-init.md)
-- [init(rawValue: UInt32)](skindextype/1442314-init.md)
+- [init(UInt32)](./skindextype/api-1443295-init.md)
+- [init(rawValue: UInt32)](./skindextype/api-1442314-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](skindextype/1450496-rawvalue.md)
+- [var rawValue: UInt32](./skindextype/api-1450496-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # dateTemplate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The template for formatting one date and time value.
 
@@ -20,25 +21,30 @@ The template for formatting one date and time value.
 var dateTemplate: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * dateTemplate;
+```
+
 #### Discussion
 
 Use this string to specify a custom fixed format for each of the date and time values. The string you specify is based on the Unicode Technical Standard #35, which uses characters to represent the day, time, year, hour, minute, and other pieces of date or time information.
 
-If you do not assign a value to this string, the formatter object automatically updates the string based on the values in the [`dateStyle`](dateintervalformatter/datestyle.md) and [`timeStyle`](dateintervalformatter/timestyle.md) properties.
+If you do not assign a value to this string, the formatter object automatically updates the string based on the values in the [`dateStyle`](./datestyle.md) and [`timeStyle`](./timestyle.md) properties.
 
-For information about how to define a custom formatting string, see [`Date Formatters`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/Articles/dfDateFormatting10_4.html#//apple_ref/doc/uid/TP40002369) in [`Data Formatting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i).
+For information about how to define a custom formatting string, see [Date Formatters](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/Articles/dfDateFormatting10_4.html#//apple_ref/doc/uid/TP40002369) in [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i).
 
 ## See Also
 
-- [var dateStyle: DateIntervalFormatter.Style](dateintervalformatter/datestyle.md)
+### Configuring the Formatter Options
+- [var dateStyle: DateIntervalFormatter.Style](./datestyle.md)
   The style to use when formatting day, month, and year information.
-- [var timeStyle: DateIntervalFormatter.Style](dateintervalformatter/timestyle.md)
+- [var timeStyle: DateIntervalFormatter.Style](./timestyle.md)
   The style to use when formatting hour, minute, and second information.
-- [var calendar: Calendar!](dateintervalformatter/calendar.md)
+- [var calendar: Calendar!](./calendar.md)
   The calendar to use for date values.
-- [var locale: Locale!](dateintervalformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting date and time values.
-- [var timeZone: TimeZone!](dateintervalformatter/timezone.md)
+- [var timeZone: TimeZone!](./timezone.md)
   The time zone with which to specify time values.
 
 

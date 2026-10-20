@@ -1,9 +1,10 @@
 # allowsParticipantsToInviteOthers
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Default value is NO. If set, the system sharing UI allows the user to choose whether added participants can invite others to the share. CloudKit returns shares with [`CKShare.ParticipantRole.administrator`](ckshare/participantrole/administrator.md) participants as read-only to devices running OS versions prior to this role being introduced. CloudKit returns administrator participants on such read-only shares as [`CKShare.ParticipantRole.privateUser`](ckshare/participantrole/privateuser.md).
+Default value is NO. If set, the system sharing UI allows the user to choose whether added participants can invite others to the share. CloudKit returns shares with [`CKShare.ParticipantRole.administrator`](../ckshare/participantrole/administrator.md) participants as read-only to devices running OS versions prior to this role being introduced. CloudKit returns administrator participants on such read-only shares as [`CKShare.ParticipantRole.privateUser`](../ckshare/participantrole/privateuser.md).
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@ Default value is NO. If set, the system sharing UI allows the user to choose whe
 
 ```swift
 var allowsParticipantsToInviteOthers: Bool { get set }
+```
+
+```objc
+@property (assign) BOOL allowsParticipantsToInviteOthers;
 ```
 
 

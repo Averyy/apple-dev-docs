@@ -1,7 +1,8 @@
 # CSSM_SERVICE_CSP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_SERVICE_CSP: Int { get }
+```
+
+```c
+CSSM_SERVICE_CSP
 ```
 
 

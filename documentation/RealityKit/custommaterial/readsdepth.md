@@ -1,7 +1,8 @@
 # readsDepth
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
 
@@ -28,7 +29,8 @@ The default value is true.
 
 ## See Also
 
-- [var writesDepth: Bool](custommaterial/writesdepth.md)
+### Setting depth testing properties
+- [var writesDepth: Bool](./writesdepth.md)
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 
 

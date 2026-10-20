@@ -1,9 +1,10 @@
 # kSpeechModeNormal
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-When the speech channel is in text-processing mode, indicates that the synthesizer should process characters as expected and assemble digits into numbers. Use this value with [`kSpeechCharacterModeProperty`](kspeechcharactermodeproperty.md) and [`kSpeechNumberModeProperty`](kspeechnumbermodeproperty.md).
+When the speech channel is in text-processing mode, indicates that the synthesizer should process characters as expected and assemble digits into numbers. Use this value with [`kSpeechCharacterModeProperty`](./kspeechcharactermodeproperty.md) and [`kSpeechNumberModeProperty`](./kspeechnumbermodeproperty.md).
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ When the speech channel is in text-processing mode, indicates that the synthesiz
 
 ```swift
 let kSpeechModeNormal: CFString
+```
+
+```c
+const CFStringRef kSpeechModeNormal;
 ```
 
 

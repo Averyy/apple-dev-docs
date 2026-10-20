@@ -1,7 +1,8 @@
 # MIDISendUMPSysex8(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asynchronously sends a single universal MIDI packet (UMP) system-exclusive (SysEx) event with an 8-bit message.
 
@@ -18,13 +19,17 @@ Asynchronously sends a single universal MIDI packet (UMP) system-exclusive (SysE
 func MIDISendUMPSysex8(_ umpRequest: UnsafeMutablePointer<MIDISysexSendRequestUMP>) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDISendUMPSysex8(MIDISysexSendRequestUMP *umpRequest);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
 
 #### Discussion
 
-The request’s [`data`](midisysexsendrequest/data.md) needs to point to a single MIDI SysEx 8-bit message, or portion thereof.
+The request’s [`data`](./midisysexsendrequest/data.md) needs to point to a single MIDI SysEx 8-bit message, or portion thereof.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ The request’s [`data`](midisysexsendrequest/data.md) needs to point to a singl
 
 ## See Also
 
-- [func MIDISendUMPSysex(UnsafeMutablePointer<MIDISysexSendRequestUMP>) -> OSStatus](midisendumpsysex(_:).md)
+### Sending a request
+- [func MIDISendUMPSysex(UnsafeMutablePointer<MIDISysexSendRequestUMP>) -> OSStatus](./midisendumpsysex%28_%29.md)
   Asynchronously sends a single universal MIDI packet (UMP) system-exclusive (SysEx) event.
 
 

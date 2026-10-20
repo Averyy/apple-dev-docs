@@ -1,7 +1,8 @@
 # showsDoneButton
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that determines whether to display a Done button.
 
@@ -17,13 +18,18 @@ A Boolean that determines whether to display a Done button.
 var showsDoneButton: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsDoneButton;
+```
+
 #### Discussion
 
-Use [`true`](https://developer.apple.com/documentation/swift/true) to show a Done button; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+Use [`true`](../../Swift/true.md) to show a Done button; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var showsCancelButton: Bool](ekcalendarchooser/showscancelbutton.md)
+### Changing the Appearance
+- [var showsCancelButton: Bool](./showscancelbutton.md)
   A Boolean that determines whether to display a Cancel button.
 
 

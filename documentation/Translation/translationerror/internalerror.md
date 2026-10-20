@@ -1,7 +1,8 @@
 # internalError
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error occurred internal to the translation engine.
 
@@ -19,13 +20,14 @@ static let internalError: TranslationError
 
 ## See Also
 
-- [static let nothingToTranslate: TranslationError](translationerror/nothingtotranslate.md)
+### Handling general errors
+- [static let nothingToTranslate: TranslationError](./nothingtotranslate.md)
   No content to translate.
-- [static let unableToIdentifyLanguage: TranslationError](translationerror/unabletoidentifylanguage.md)
+- [static let unableToIdentifyLanguage: TranslationError](./unabletoidentifylanguage.md)
   The framework can’t identify the source language automatically.
-- [static let alreadyCancelled: TranslationError](translationerror/alreadycancelled.md)
+- [static let alreadyCancelled: TranslationError](./alreadycancelled.md)
   An error describing a translation session that you’ve cancelled before, which prevents the session from producing additional results.
-- [static let notInstalled: TranslationError](translationerror/notinstalled.md)
+- [static let notInstalled: TranslationError](./notinstalled.md)
   The device doesn’t have the necessary languages downloaded to perform a translation and the session can’t request the person to download them.
 
 

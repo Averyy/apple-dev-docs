@@ -1,12 +1,13 @@
 # sessionDidResignActiveNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the workspace posts before a user session switches out.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,49 +15,54 @@ A notification that the workspace posts before a user session switches out.
 class let sessionDidResignActiveNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSWorkspaceSessionDidResignActiveNotification;
+```
+
 #### Discussion
 
 This notification allows an app to disable some processing, such as when its user session switches out, and re-enable when that session switches back in.
 
-The notification object is the shared [`NSWorkspace`](nsworkspace.md) instance. The notification doesn’t contain a `userInfo` dictionary.
+The notification object is the shared [`NSWorkspace`](../nsworkspace.md) instance. The notification doesn’t contain a `userInfo` dictionary.
 
-If an app launches in an inactive session, the workspace sends [`sessionDidResignActiveNotification`](nsworkspace/sessiondidresignactivenotification.md) after [`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md) and before sending [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md).
+If an app launches in an inactive session, the workspace sends [`sessionDidResignActiveNotification`](./sessiondidresignactivenotification.md) after [`willFinishLaunchingNotification`](../nsapplication/willfinishlaunchingnotification.md) and before sending [`didFinishLaunchingNotification`](../nsapplication/didfinishlaunchingnotification.md).
 
-> ❗ **Important**:  To receive this notification, use [`notificationCenter`](nsworkspace/notificationcenter.md) to register for it. If you use a different notification center to register, you won’t receive the notification.
+> ❗ **Important**:  To receive this notification, use [`notificationCenter`](./notificationcenter.md) to register for it. If you use a different notification center to register, you won’t receive the notification.
 
-To observe this notification using Swift concurrency, use [`NSWorkspace.SessionDidResignActiveMessage`](nsworkspace/sessiondidresignactivemessage.md).
+To observe this notification using Swift concurrency, use [`NSWorkspace.SessionDidResignActiveMessage`](./sessiondidresignactivemessage.md).
 
 ## See Also
 
-- [class let willLaunchApplicationNotification: NSNotification.Name](nsworkspace/willlaunchapplicationnotification.md)
+### Responding to Environment Notifications
+- [class let willLaunchApplicationNotification: NSNotification.Name](./willlaunchapplicationnotification.md)
   A notification that the workspace posts when the Finder is about to launch an app.
-- [class let didLaunchApplicationNotification: NSNotification.Name](nsworkspace/didlaunchapplicationnotification.md)
+- [class let didLaunchApplicationNotification: NSNotification.Name](./didlaunchapplicationnotification.md)
   A notification that the workspace posts when a new app starts up.
-- [class let didTerminateApplicationNotification: NSNotification.Name](nsworkspace/didterminateapplicationnotification.md)
+- [class let didTerminateApplicationNotification: NSNotification.Name](./didterminateapplicationnotification.md)
   A notification that the workspace posts when an app finishes executing.
-- [class let sessionDidBecomeActiveNotification: NSNotification.Name](nsworkspace/sessiondidbecomeactivenotification.md)
+- [class let sessionDidBecomeActiveNotification: NSNotification.Name](./sessiondidbecomeactivenotification.md)
   A notification that the workspace posts after a user session switches in.
-- [class let didHideApplicationNotification: NSNotification.Name](nsworkspace/didhideapplicationnotification.md)
+- [class let didHideApplicationNotification: NSNotification.Name](./didhideapplicationnotification.md)
   A notification that the workspace posts when the Finder hides an app.
-- [class let didUnhideApplicationNotification: NSNotification.Name](nsworkspace/didunhideapplicationnotification.md)
+- [class let didUnhideApplicationNotification: NSNotification.Name](./didunhideapplicationnotification.md)
   A notification that the workspace posts when the Finder unhides an app.
-- [class let didActivateApplicationNotification: NSNotification.Name](nsworkspace/didactivateapplicationnotification.md)
+- [class let didActivateApplicationNotification: NSNotification.Name](./didactivateapplicationnotification.md)
   A notification that the workspace posts when the Finder is about to activate an app.
-- [class let didDeactivateApplicationNotification: NSNotification.Name](nsworkspace/diddeactivateapplicationnotification.md)
+- [class let didDeactivateApplicationNotification: NSNotification.Name](./diddeactivateapplicationnotification.md)
   A notification that the workspace posts when the Finder deactivates an app.
-- [class let didRenameVolumeNotification: NSNotification.Name](nsworkspace/didrenamevolumenotification.md)
+- [class let didRenameVolumeNotification: NSNotification.Name](./didrenamevolumenotification.md)
   A notification that the workspace posts when a volume changes its name or mount path.
-- [class let didMountNotification: NSNotification.Name](nsworkspace/didmountnotification.md)
+- [class let didMountNotification: NSNotification.Name](./didmountnotification.md)
   A notification that the workspace posts when a new device mounts.
-- [class let willUnmountNotification: NSNotification.Name](nsworkspace/willunmountnotification.md)
+- [class let willUnmountNotification: NSNotification.Name](./willunmountnotification.md)
   A notification that the workspace posts when the Finder is about to unmount a device.
-- [class let didUnmountNotification: NSNotification.Name](nsworkspace/didunmountnotification.md)
+- [class let didUnmountNotification: NSNotification.Name](./didunmountnotification.md)
   A notification that the workspace posts when the Finder unmounts a device.
-- [class let didChangeFileLabelsNotification: NSNotification.Name](nsworkspace/didchangefilelabelsnotification.md)
+- [class let didChangeFileLabelsNotification: NSNotification.Name](./didchangefilelabelsnotification.md)
   A notification that the workspace posts when the Finder file labels or colors change.
-- [class let activeSpaceDidChangeNotification: NSNotification.Name](nsworkspace/activespacedidchangenotification.md)
+- [class let activeSpaceDidChangeNotification: NSNotification.Name](./activespacedidchangenotification.md)
   A notification that the workspace posts when a Spaces change occurs.
-- [class let didWakeNotification: NSNotification.Name](nsworkspace/didwakenotification.md)
+- [class let didWakeNotification: NSNotification.Name](./didwakenotification.md)
   A notification that the workspace posts when the device wakes from sleep.
 
 

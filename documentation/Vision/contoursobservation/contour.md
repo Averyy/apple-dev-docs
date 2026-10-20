@@ -1,7 +1,8 @@
 # ContoursObservation.Contour
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a detected contour in an image.
 
@@ -23,46 +24,47 @@ struct Contour
 ## Topics
 
 ### Inspecting a contour
-- [var aspectRatio: Float](contoursobservation/contour/aspectratio.md)
+- [var aspectRatio: Float](./contour/aspectratio.md)
   The aspect ratio of the contour, which is the image’s width divided by its height.
-- [var boundingBox: NormalizedRect](contoursobservation/contour/boundingbox.md)
+- [var boundingBox: NormalizedRect](./contour/boundingbox.md)
   The bounding box of the region.
-- [var boundingQuad: RectangleObservation](contoursobservation/contour/boundingquad.md)
+- [var boundingQuad: RectangleObservation](./contour/boundingquad.md)
   The bounding quadrilateral of the region.
-- [var childContours: [ContoursObservation.Contour]](contoursobservation/contour/childcontours.md)
+- [var childContours: [ContoursObservation.Contour]](./contour/childcontours.md)
   An array of contours that this contour encloses.
-- [var indexPath: IndexPath](contoursobservation/contour/indexpath.md)
+- [var indexPath: IndexPath](./contour/indexpath.md)
   The contour object’s index path.
-- [var normalizedPath: CGPath](contoursobservation/contour/normalizedpath.md)
+- [var normalizedPath: CGPath](./contour/normalizedpath.md)
   The contour object as a path in normalized coordinates.
-- [var normalizedPoints: [simd_float2]](contoursobservation/contour/normalizedpoints.md)
+- [var normalizedPoints: [simd_float2]](./contour/normalizedpoints.md)
   The contour’s array of points in normalized coordinates.
-- [var pointCount: Int](contoursobservation/contour/pointcount.md)
+- [var pointCount: Int](./contour/pointcount.md)
   The contour’s number of points.
-- [var points: [NormalizedPoint]](contoursobservation/contour/points.md)
+- [var points: [NormalizedPoint]](./contour/points.md)
   The points of the region as an array of `NormalizedPoint`.
 ### Calculating area and perimeter
-- [func calculateArea(useOrientedArea: Bool) -> Double](contoursobservation/contour/calculatearea(useorientedarea:).md)
-- [func calculatePerimeter() -> Double](contoursobservation/contour/calculateperimeter.md)
+- [func calculateArea(useOrientedArea: Bool) -> Double](./contour/calculatearea%28useorientedarea%29.md)
+- [func calculatePerimeter() -> Double](./contour/calculateperimeter%28%29.md)
 ### Getting the bounding circle
-- [func boundingCircle() -> NormalizedCircle](contoursobservation/contour/boundingcircle.md)
+- [func boundingCircle() -> NormalizedCircle](./contour/boundingcircle%28%29.md)
 ### Getting the approximation
-- [func polygonApproximation(epsilon: Float) throws -> ContoursObservation.Contour](contoursobservation/contour/polygonapproximation(epsilon:).md)
+- [func polygonApproximation(epsilon: Float) throws -> ContoursObservation.Contour](./contour/polygonapproximation%28epsilon%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func contourAtIndex(Int) -> ContoursObservation.Contour?](contoursobservation/contouratindex(_:).md)
+### Getting the contours
+- [func contourAtIndex(Int) -> ContoursObservation.Contour?](./contouratindex%28_%29.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
-- [func countourAtIndexPath(IndexPath) -> ContoursObservation.Contour?](contoursobservation/countouratindexpath(_:).md)
+- [func countourAtIndexPath(IndexPath) -> ContoursObservation.Contour?](./countouratindexpath%28_%29.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
 
 

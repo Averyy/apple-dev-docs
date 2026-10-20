@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum value for the physical extent of the input.
@@ -18,6 +19,10 @@ The maximum value for the physical extent of the input.
 
 ```swift
 var maximumValue: Double { get }
+```
+
+```objc
+@property (readonly) double maximumValue;
 ```
 
 

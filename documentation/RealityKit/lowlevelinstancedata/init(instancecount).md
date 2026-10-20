@@ -1,7 +1,8 @@
 # init(instanceCount:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a low-level instance data object with an instance count.
 
@@ -21,7 +22,7 @@ convenience init(instanceCount: Int) throws
 
 #### Discussion
 
-This initializer also applies the instance count to [`instanceCapacity`](lowlevelinstancedata/instancecapacity.md).
+This initializer also applies the instance count to [`instanceCapacity`](./instancecapacity.md).
 
 ## Parameters
 

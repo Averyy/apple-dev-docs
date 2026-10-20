@@ -1,7 +1,8 @@
 # pan
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio player’s stereo pan position.
 
@@ -20,21 +21,26 @@ The audio player’s stereo pan position.
 var pan: Float { get set }
 ```
 
+```objc
+@property float pan;
+```
+
 #### Discussion
 
 Set this property value to position the audio in the stereo field. Use a value of `-1.0` to indicate full left, `1.0` for full right, and `0.0` for center.
 
 ## See Also
 
-- [var volume: Float](avaudioplayer/volume.md)
+### Configuring playback settings
+- [var volume: Float](./volume.md)
   The audio player’s volume relative to other audio output.
-- [func setVolume(Float, fadeDuration: TimeInterval)](avaudioplayer/setvolume(_:fadeduration:).md)
+- [func setVolume(Float, fadeDuration: TimeInterval)](./setvolume%28_,fadeduration%29.md)
   Changes the audio player’s volume over a duration of time.
-- [var enableRate: Bool](avaudioplayer/enablerate.md)
+- [var enableRate: Bool](./enablerate.md)
   A Boolean value that indicates whether you can adjust the playback rate of the audio player.
-- [var rate: Float](avaudioplayer/rate.md)
+- [var rate: Float](./rate.md)
   The audio player’s playback rate.
-- [var numberOfLoops: Int](avaudioplayer/numberofloops.md)
+- [var numberOfLoops: Int](./numberofloops.md)
   The number of times the audio repeats playback.
 
 

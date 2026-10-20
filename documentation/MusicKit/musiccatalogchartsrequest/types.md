@@ -1,7 +1,8 @@
 # types
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of requested types for the catalog charts response.
 

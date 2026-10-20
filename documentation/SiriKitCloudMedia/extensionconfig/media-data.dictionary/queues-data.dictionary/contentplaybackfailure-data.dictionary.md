@@ -1,7 +1,8 @@
 # ExtensionConfig.Media.Queues.ContentPlaybackFailure
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Configuration details for your service’s content playback failure endpoint.
 
@@ -10,21 +11,24 @@ Configuration details for your service’s content playback failure endpoint.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media.Queues.ContentPlaybackFailure
 ```
 
 ## Properties
 
-- `url` (string) *(required)*: The relative path for the client to access the `contentPlaybackFailure` endpoint. For more information, see [`contentPlaybackFailure`](extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionarykey.md).
+- `url` (string) *(required)*: The relative path for the client to access the `contentPlaybackFailure` endpoint. For more information, see [`contentPlaybackFailure`](./contentplaybackfailure-data.dictionarykey.md).
+
+  **Default**: `/queues/contentPlaybackFailure`; **Minimum Length**: `1`; **Maximum Length**: `4000`
 
 ## See Also
 
-- [object ExtensionConfig.Media.Queues.PlayMedia](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md)
+### Requiring Headers and Specifying Paths for Specific Queue Endpoints
+- [object ExtensionConfig.Media.Queues.PlayMedia](./playmedia-data.dictionary.md)
   Configuration details for your service’s media playback queue.
-- [object ExtensionConfig.Media.Queues.UpdateActivity](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.UpdateActivity](./updateactivity-data.dictionary.md)
   Configuration details for your service’s update activity endpoint.
-- [object ExtensionConfig.Media.Queues.ContentProtectionKey](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentProtectionKey](./contentprotectionkey-data.dictionary.md)
   Configuration details for your service’s content protection key endpoint.
 
 

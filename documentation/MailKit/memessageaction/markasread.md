@@ -1,7 +1,8 @@
 # markAsRead
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object that marks the message as read.
 
@@ -14,9 +15,14 @@ An object that marks the message as read.
 class var markAsRead: MEMessageAction { get }
 ```
 
+```objc
+@property (class, readonly) MEMessageAction * markAsReadAction;
+```
+
 ## See Also
 
-- [class var markAsUnread: MEMessageAction](memessageaction/markasunread.md)
+### Changing the Read Status
+- [class var markAsUnread: MEMessageAction](./markasunread.md)
   An object that marks the message as unread.
 
 

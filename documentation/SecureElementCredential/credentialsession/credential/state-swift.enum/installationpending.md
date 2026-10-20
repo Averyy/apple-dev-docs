@@ -1,7 +1,8 @@
 # CredentialSession.Credential.State.installationPending
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The credential installation is pending but isn’t complete.
 
@@ -21,11 +22,12 @@ A credential is in this state after sending the provisioning request but before 
 
 ## See Also
 
-- [case installed(instances: [CredentialSession.Credential.InstanceInfo])](credentialsession/credential/state-swift.enum/installed(instances:).md)
+### Credential states
+- [case installed(instances: [CredentialSession.Credential.InstanceInfo])](./installed%28instances%29.md)
   The credential installation is complete for one or more instances.
-- [CredentialSession.Credential.InstanceInfo](credentialsession/credential/instanceinfo.md)
+- [CredentialSession.Credential.InstanceInfo](../instanceinfo.md)
   Information about an applet instance associated with a specific credential.
-- [CredentialSession.Credential.State.installationFailed](credentialsession/credential/state-swift.enum/installationfailed.md)
+- [CredentialSession.Credential.State.installationFailed](./installationfailed.md)
   The credential installation failed.
 
 

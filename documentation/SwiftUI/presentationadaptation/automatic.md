@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use the default presentation adaptation.
 
@@ -22,13 +23,14 @@ static var automatic: PresentationAdaptation { get }
 
 ## See Also
 
-- [static var none: PresentationAdaptation](presentationadaptation/none.md)
+### Getting adaptation strategies
+- [static var none: PresentationAdaptation](./none.md)
   Don’t adapt for the size class, if possible.
-- [static var fullScreenCover: PresentationAdaptation](presentationadaptation/fullscreencover.md)
+- [static var fullScreenCover: PresentationAdaptation](./fullscreencover.md)
   Prefer a full-screen-cover appearance when adapting for size classes.
-- [static var popover: PresentationAdaptation](presentationadaptation/popover.md)
+- [static var popover: PresentationAdaptation](./popover.md)
   Prefer a popover appearance when adapting for size classes.
-- [static var sheet: PresentationAdaptation](presentationadaptation/sheet.md)
+- [static var sheet: PresentationAdaptation](./sheet.md)
   Prefer a sheet appearance when adapting for size classes.
 
 

@@ -1,7 +1,8 @@
 # loadSegment(forTrackTime:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a segment with a target time range that contains, or is closest to, the specified track time.
 
@@ -17,7 +18,15 @@ Loads a segment with a target time range that contains, or is closest to, the sp
 ## Declaration
 
 ```swift
+func loadSegment(forTrackTime trackTime: CMTime, completionHandler: @escaping @Sendable (AVAssetTrackSegment?, (any Error)?) -> Void)
+```
+
+```swift
 func loadSegment(forTrackTime trackTime: CMTime) async throws -> AVAssetTrackSegment?
+```
+
+```objc
+- (void) loadSegmentForTrackTime:(CMTime) trackTime completionHandler:(void (^)(AVAssetTrackSegment *, NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -27,16 +36,19 @@ If the specified track time doesn’t map to a sample presentation time, the sys
 ## Parameters
 
 - `trackTime`: The track time of the segment to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **segment**: The loaded track segment, or `nil` if an error occurs.
-- **error**: An error object if the request fails; otherwise, `nil`.
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+
+  - **segment**: The loaded track segment, or `nil` if an error occurs.
+  - **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 
-- [static var segments: AVAsyncProperty<Root, [AVAssetTrackSegment]>](avpartialasyncproperty/segments.md)
+### Loading track segments
+- [static var segments: AVAsyncProperty<Root, [AVAssetTrackSegment]>](../avpartialasyncproperty/segments.md)
   The time mappings from the track’s media samples to its timeline.
-- [func loadSamplePresentationTime(forTrackTime: CMTime, completionHandler: (CMTime, (any Error)?) -> Void)](avassettrack/loadsamplepresentationtime(fortracktime:completionhandler:).md)
+- [func loadSamplePresentationTime(forTrackTime: CMTime, completionHandler: (CMTime, (any Error)?) -> Void)](./loadsamplepresentationtime%28fortracktime,completionhandler%29.md)
   Loads a sample presentation time that maps to the specified track time.
-- [class AVAssetTrackSegment](avassettracksegment.md)
+- [class AVAssetTrackSegment](../avassettracksegment.md)
   An object that represents a time range segment of an asset track.
 
 

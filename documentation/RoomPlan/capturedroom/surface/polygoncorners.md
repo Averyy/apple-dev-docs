@@ -1,7 +1,8 @@
 # polygonCorners
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 2D polygon that represents nonuniform wall heights and floor shapes.
 
@@ -22,13 +23,14 @@ This property’s triplet type describes the polygon in local plane coordinates.
 
 ## See Also
 
-- [var completedEdges: Set<CapturedRoom.Surface.Edge>](capturedroom/surface/completededges.md)
+### Shaping a surface
+- [var completedEdges: Set<CapturedRoom.Surface.Edge>](./completededges.md)
   An array of edges that outline the surface.
-- [CapturedRoom.Surface.Edge](capturedroom/surface/edge.md)
+- [CapturedRoom.Surface.Edge](./edge.md)
   An object that represents a single edge of a surface.
-- [var curve: CapturedRoom.Surface.Curve?](capturedroom/surface/curve-swift.property.md)
+- [var curve: CapturedRoom.Surface.Curve?](./curve-swift.property.md)
   An object that represents the curve of a surface.
-- [CapturedRoom.Surface.Curve](capturedroom/surface/curve-swift.struct.md)
+- [CapturedRoom.Surface.Curve](./curve-swift.struct.md)
   An object that represents a single curve of a surface.
 
 

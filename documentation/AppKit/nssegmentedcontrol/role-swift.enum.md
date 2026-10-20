@@ -1,7 +1,8 @@
 # NSSegmentedControl.Role
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 27.0+
@@ -12,36 +13,41 @@
 enum Role
 ```
 
+```c
+enum NSSegmentedControlRole : NSInteger;
+```
+
 ## Topics
 
 ### Getting role values
-- [NSSegmentedControl.Role.automatic](nssegmentedcontrol/role-swift.enum/automatic.md)
-- [NSSegmentedControl.Role.tabs](nssegmentedcontrol/role-swift.enum/tabs.md)
-- [NSSegmentedControl.Role.valueSelection](nssegmentedcontrol/role-swift.enum/valueselection.md)
+- [NSSegmentedControl.Role.automatic](./role-swift.enum/automatic.md)
+- [NSSegmentedControl.Role.tabs](./role-swift.enum/tabs.md)
+- [NSSegmentedControl.Role.valueSelection](./role-swift.enum/valueselection.md)
 ### Initializers
-- [init?(rawValue: Int)](nssegmentedcontrol/role-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./role-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
+### Specifying the segment behavior
+- [var trackingMode: NSSegmentedControl.SwitchTracking](./trackingmode.md)
   The type of tracking behavior the control exhibits.
-- [NSSegmentedControl.SwitchTracking](nssegmentedcontrol/switchtracking.md)
+- [NSSegmentedControl.SwitchTracking](./switchtracking.md)
   Constants that specify the type of tracking behavior a segmented control exhibits.
-- [var segmentStyle: NSSegmentedControl.Style](nssegmentedcontrol/segmentstyle.md)
+- [var segmentStyle: NSSegmentedControl.Style](./segmentstyle.md)
   The visual style used to display the control.
-- [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
-  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
-- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
+- [NSSegmentedControl.Style](./style.md)
+  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](./segmentstyle.md).
+- [var role: NSSegmentedControl.Role](./role-swift.property.md)
 
 
 ---

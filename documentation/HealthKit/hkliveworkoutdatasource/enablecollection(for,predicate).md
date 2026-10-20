@@ -1,7 +1,8 @@
 # enableCollection(for:predicate:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins automatically calculating statistics for samples that match the quantity type and predicate.
 
@@ -9,7 +10,7 @@ Begins automatically calculating statistics for samples that match the quantity 
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - watchOS 5.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Begins automatically calculating statistics for samples that match the quantity 
 func enableCollection(for quantityType: HKQuantityType, predicate: NSPredicate?)
 ```
 
+```objc
+- (void) enableCollectionForType:(HKQuantityType *) quantityType predicate:(NSPredicate *) predicate;
+```
+
 ## Mentions
 
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
 ## See Also
 
-- [func disableCollection(for: HKQuantityType)](hkliveworkoutdatasource/disablecollection(for:).md)
+### Calculating statistics
+- [func disableCollection(for: HKQuantityType)](./disablecollection%28for%29.md)
   Stops automatically calculating statistics for the quantity type.
 
 

@@ -1,7 +1,8 @@
 # HKWorkoutSessionType.mirrored
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mirrored session, running on the companion iOS device.
 
@@ -9,7 +10,7 @@ A mirrored session, running on the companion iOS device.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 10.0+
 
@@ -19,9 +20,14 @@ A mirrored session, running on the companion iOS device.
 case mirrored
 ```
 
+```c
+HKWorkoutSessionTypeMirrored
+```
+
 ## See Also
 
-- [HKWorkoutSessionType.primary](hkworkoutsessiontype/primary.md)
+### Types
+- [HKWorkoutSessionType.primary](./primary.md)
   A primary session running on watchOS.
 
 

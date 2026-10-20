@@ -1,7 +1,8 @@
 # vImageAffineWarpCG_Planar8(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a Core Graphics affine transformation to a Planar8 source image.
 
@@ -20,9 +21,13 @@ Applies a Core Graphics affine transformation to a Planar8 source image.
 func vImageAffineWarpCG_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ transform: UnsafePointer<vImage_CGAffineTransform>, _ backColor: Pixel_8, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageAffineWarpCG_Planar8(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, const vImage_CGAffineTransform *transform, Pixel_8 backColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
@@ -36,7 +41,7 @@ This function maps each pixel in the source image `[x, y]` to a new position `[x
 
 where `transform` is the 3x3 affine transformation matrix.
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -57,19 +62,30 @@ You can use the same workspace memory for a group of images that are different s
 - `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `transform`: The affine transformation matrix to apply to the source image.
 - `backColor`: A background color. Pass a pixel value only if you also set the `kvImageBackgroundColorFill` flag.
-- `flags`: The options to use when applying the rotation. To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. To specify how vImage handles pixel locations beyond the edge of the source image, you must set exactly one of the following flags: [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](kvimageedgeextend.md). If you want vImage to use a higher quality, but slower resampling filter, set the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). This function ignores the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
+- `flags`: The options to use when applying the rotation.
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
+
+  To specify how vImage handles pixel locations beyond the edge of the source image, you must set exactly one of the following flags: [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](./kvimageedgeextend.md).
+
+  If you want vImage to use a higher quality, but slower resampling filter, set the [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) flag.
+
+  If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  This function ignores the [`kvImageLeaveAlphaUnchanged`](./kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 
-- [func vImageAffineWarpCG_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, Pixel_F, vImage_Flags) -> vImage_Error](vimageaffinewarpcg_planarf(_:_:_:_:_:_:).md)
+### Core Graphics Affine Transformation
+- [func vImageAffineWarpCG_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, Pixel_F, vImage_Flags) -> vImage_Error](./vimageaffinewarpcg_planarf%28_,_,_,_,_,_%29.md)
   Applies a Core Graphics affine transformation to a PlanarF source image.
-- [func vImageAffineWarpCG_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](vimageaffinewarpcg_argb16u(_:_:_:_:_:_:).md)
+- [func vImageAffineWarpCG_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](./vimageaffinewarpcg_argb16u%28_,_,_,_,_,_%29.md)
   Applies a Core Graphics affine transformation to an ARGB16U source image.
-- [func vImageAffineWarpCG_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<Int16>!, vImage_Flags) -> vImage_Error](vimageaffinewarpcg_argb16s(_:_:_:_:_:_:).md)
+- [func vImageAffineWarpCG_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<Int16>!, vImage_Flags) -> vImage_Error](./vimageaffinewarpcg_argb16s%28_,_,_,_,_,_%29.md)
   Applies a Core Graphics affine transformation to an ARGB16S source image.
-- [func vImageAffineWarpCG_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageaffinewarpcg_argb8888(_:_:_:_:_:_:).md)
+- [func vImageAffineWarpCG_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageaffinewarpcg_argb8888%28_,_,_,_,_,_%29.md)
   Applies a Core Graphics affine transformation to an ARGB8888 source image.
-- [func vImageAffineWarpCG_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<Float>!, vImage_Flags) -> vImage_Error](vimageaffinewarpcg_argbffff(_:_:_:_:_:_:).md)
+- [func vImageAffineWarpCG_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UnsafePointer<vImage_CGAffineTransform>, UnsafePointer<Float>!, vImage_Flags) -> vImage_Error](./vimageaffinewarpcg_argbffff%28_,_,_,_,_,_%29.md)
   Applies a Core Graphics affine transformation to an ARGBFFFF source image.
 
 

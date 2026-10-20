@@ -1,7 +1,8 @@
 # addHoverEffect(_:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add an hover effect for this tracking area. No hover effect will be rendered if this isn’t called.
 

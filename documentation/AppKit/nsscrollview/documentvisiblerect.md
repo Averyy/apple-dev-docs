@@ -1,12 +1,13 @@
 # documentVisibleRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portion of the document view, in its own coordinate system, visible through the scroll view’s content view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The portion of the document view, in its own coordinate system, visible through 
 var documentVisibleRect: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect documentVisibleRect;
+```
+
 ## See Also
 
-- [var documentVisibleRect: NSRect](nsclipview/documentvisiblerect.md)
+### Related Documentation
+- [var documentVisibleRect: NSRect](../nsclipview/documentvisiblerect.md)
   The exposed rectangle of the clip view’s document view, in the document view’s own coordinate system.
-- [var visibleRect: NSRect](nsview/visiblerect.md)
+- [var visibleRect: NSRect](../nsview/visiblerect.md)
   The portion of the view that isn’t clipped by its superviews.
-- [var contentSize: NSSize](nsscrollview/contentsize.md)
+### Determining Component Sizes
+- [var contentSize: NSSize](./contentsize.md)
   The size of the scroll view’s content view.
 
 

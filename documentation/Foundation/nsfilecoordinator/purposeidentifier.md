@@ -1,7 +1,8 @@
 # purposeIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies the file access that was performed by this file coordinator.
 
@@ -20,9 +21,13 @@ A string that uniquely identifies the file access that was performed by this fil
 var purposeIdentifier: String { get set }
 ```
 
+```objc
+@property (copy) NSString * purposeIdentifier;
+```
+
 #### Discussion
 
-Coordinated reads and writes performed using the same purpose identifier never block each other, even if they occur in different processes. If you are coordinating file access on behalf of a file presenter, use [`init(filePresenter:)`](nsfilecoordinator/init(filepresenter:).md) and do not attempt to set a custom purpose identifier. Every file coordinator instance initialized with the same file presenter has the same purpose identifier.
+Coordinated reads and writes performed using the same purpose identifier never block each other, even if they occur in different processes. If you are coordinating file access on behalf of a file presenter, use [`init(filePresenter:)`](./init%28filepresenter%29.md) and do not attempt to set a custom purpose identifier. Every file coordinator instance initialized with the same file presenter has the same purpose identifier.
 
 You may need to set a custom purpose identifier for the following reasons:
 
@@ -31,15 +36,16 @@ You may need to set a custom purpose identifier for the following reasons:
 
 When creating custom purpose identifiers, you can use a reverse DNS style string, such as `com.example.MyApplication.MyPurpose`, or a UUID string. You cannot use `nil` or zero-length strings.
 
-> **Note**:  You can set a purpose identifier only once, either implicitly by calling [`init(filePresenter:)`](nsfilecoordinator/init(filepresenter:).md) or explicitly using this property. Attempting to set the purpose identifier a second time throws an exception.
+> **Note**:  You can set a purpose identifier only once, either implicitly by calling [`init(filePresenter:)`](./init%28filepresenter%29.md) or explicitly using this property. Attempting to set the purpose identifier a second time throws an exception.
 
 ## See Also
 
-- [class func addFilePresenter(any NSFilePresenter)](nsfilecoordinator/addfilepresenter(_:).md)
+### Managing File Presenters
+- [class func addFilePresenter(any NSFilePresenter)](./addfilepresenter%28_%29.md)
   Registers the specified file presenter object so that it can receive notifications.
-- [class func removeFilePresenter(any NSFilePresenter)](nsfilecoordinator/removefilepresenter(_:).md)
+- [class func removeFilePresenter(any NSFilePresenter)](./removefilepresenter%28_%29.md)
   Unregisters the specified file presenter object.
-- [class var filePresenters: [any NSFilePresenter]](nsfilecoordinator/filepresenters.md)
+- [class var filePresenters: [any NSFilePresenter]](./filepresenters.md)
   Returns an array containing the currently registered file presenter objects.
 
 

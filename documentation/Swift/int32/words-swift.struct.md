@@ -1,7 +1,8 @@
 # Int32.Words
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the words of this integer.
 
@@ -24,52 +25,52 @@ struct Words
 ## Topics
 
 ### Initializers
-- [init(Int32)](int32/words-swift.struct/init(_:).md)
+- [init(Int32)](./words-swift.struct/init%28_%29.md)
 ### Instance Properties
-- [var count: Int](int32/words-swift.struct/count.md)
+- [var count: Int](./words-swift.struct/count.md)
   The number of elements in the collection.
-- [var endIndex: Int](int32/words-swift.struct/endindex.md)
+- [var endIndex: Int](./words-swift.struct/endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: Int32.Words.Indices](int32/words-swift.struct/indices-swift.property.md)
+- [var indices: Int32.Words.Indices](./words-swift.struct/indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var startIndex: Int](int32/words-swift.struct/startindex.md)
+- [var startIndex: Int](./words-swift.struct/startindex.md)
   The position of the first element in a nonempty collection.
 ### Instance Methods
-- [func index(after: Int) -> Int](int32/words-swift.struct/index(after:).md)
+- [func index(after: Int) -> Int](./words-swift.struct/index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(before: Int) -> Int](int32/words-swift.struct/index(before:).md)
+- [func index(before: Int) -> Int](./words-swift.struct/index%28before%29.md)
   Returns the position immediately before the given index.
 ### Subscripts
-- [subscript(Int) -> UInt](int32/words-swift.struct/subscript(_:).md)
+- [subscript(Int) -> UInt](./words-swift.struct/subscript%28_%29.md)
   Accesses the element at the specified position.
 ### Type Aliases
-- [Int32.Words.Element](int32/words-swift.struct/element.md)
+- [Int32.Words.Element](./words-swift.struct/element.md)
   A type representing the sequence’s elements.
-- [Int32.Words.Index](int32/words-swift.struct/index.md)
+- [Int32.Words.Index](./words-swift.struct/index.md)
   A type that represents a position in the collection.
-- [Int32.Words.Indices](int32/words-swift.struct/indices-swift.typealias.md)
+- [Int32.Words.Indices](./words-swift.struct/indices-swift.typealias.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Int32.Words.Iterator](int32/words-swift.struct/iterator.md)
+- [Int32.Words.Iterator](./words-swift.struct/iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [Int32.Words.SubSequence](int32/words-swift.struct/subsequence.md)
+- [Int32.Words.SubSequence](./words-swift.struct/subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Default Implementations
-- [BidirectionalCollection Implementations](int32/words-swift.struct/bidirectionalcollection-implementations.md)
-- [Collection Implementations](int32/words-swift.struct/collection-implementations.md)
-- [RandomAccessCollection Implementations](int32/words-swift.struct/randomaccesscollection-implementations.md)
-- [Sequence Implementations](int32/words-swift.struct/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./words-swift.struct/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./words-swift.struct/collection-implementations.md)
+- [RandomAccessCollection Implementations](./words-swift.struct/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./words-swift.struct/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [RandomAccessCollection](../randomaccesscollection.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

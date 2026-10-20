@@ -1,7 +1,8 @@
 # database(with:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the database with the specified scope.
 
@@ -20,17 +21,22 @@ Returns the database with the specified scope.
 func database(with databaseScope: CKDatabase.Scope) -> CKDatabase
 ```
 
+```objc
+- (CKDatabase *) databaseWithDatabaseScope:(CKDatabaseScope) databaseScope;
+```
+
 ## Parameters
 
-- `databaseScope`: The database’s scope. See [`CKDatabase.Scope`](ckdatabase/scope.md) for the available options.
+- `databaseScope`: The database’s scope. See [`CKDatabase.Scope`](../ckdatabase/scope.md) for the available options.
 
 ## See Also
 
-- [var privateCloudDatabase: CKDatabase](ckcontainer/privateclouddatabase.md)
+### Getting the Public and Private Databases
+- [var privateCloudDatabase: CKDatabase](./privateclouddatabase.md)
   The user’s private database.
-- [var publicCloudDatabase: CKDatabase](ckcontainer/publicclouddatabase.md)
+- [var publicCloudDatabase: CKDatabase](./publicclouddatabase.md)
   The app’s public database.
-- [var sharedCloudDatabase: CKDatabase](ckcontainer/sharedclouddatabase.md)
+- [var sharedCloudDatabase: CKDatabase](./sharedclouddatabase.md)
   The database that contains shared data.
 
 

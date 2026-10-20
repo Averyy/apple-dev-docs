@@ -1,7 +1,8 @@
 # CSSMERR_DL_INVALID_OPEN_PARAMETERS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_DL_INVALID_OPEN_PARAMETERS: Int { get }
+```
+
+```c
+CSSMERR_DL_INVALID_OPEN_PARAMETERS
 ```
 
 

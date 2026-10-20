@@ -1,7 +1,8 @@
 # indexType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the indices that the index buffer stores.
 
@@ -21,11 +22,12 @@ var indexType: MTLIndexType
 
 ## See Also
 
-- [var vertexAttributes: [LowLevelMesh.Attribute]](lowlevelmesh/descriptor-swift.struct/vertexattributes.md)
+### Defining the descriptor’s contents
+- [var vertexAttributes: [LowLevelMesh.Attribute]](./vertexattributes.md)
   An array that describes the vertex input attributes to a vertex function.
-- [var vertexLayouts: [LowLevelMesh.Layout]](lowlevelmesh/descriptor-swift.struct/vertexlayouts.md)
+- [var vertexLayouts: [LowLevelMesh.Layout]](./vertexlayouts.md)
   The list of layouts.
-- [var vertexBufferCount: Int](lowlevelmesh/descriptor-swift.struct/vertexbuffercount.md)
+- [var vertexBufferCount: Int](./vertexbuffercount.md)
   The number of buffers this descriptor uses.
 
 

@@ -1,7 +1,8 @@
 # init(tileDefinition:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a simple tile group with a single tile definition.
 
@@ -20,9 +21,13 @@ Creates and initializes a simple tile group with a single tile definition.
 init(tileDefinition: SKTileDefinition)
 ```
 
+```objc
+- (instancetype) initWithTileDefinition:(SKTileDefinition *) tileDefinition;
+```
+
 ## Mentions
 
-- [Creating Tile Groups Programmatically](creating-tile-groups-programmatically.md)
+- [Creating Tile Groups Programmatically](../creating-tile-groups-programmatically.md)
 
 #### Return Value
 
@@ -34,9 +39,10 @@ A new tile group.
 
 ## See Also
 
-- [Creating Tile Groups Programmatically](creating-tile-groups-programmatically.md)
+### Creating Tile Groups
+- [Creating Tile Groups Programmatically](../creating-tile-groups-programmatically.md)
   Paint tiles on a map by putting tile definitions in a group that you create in code.
-- [init(rules: [SKTileGroupRule])](sktilegroup/init(rules:).md)
+- [init(rules: [SKTileGroupRule])](./init%28rules%29.md)
   Creates and initializes a tile group with the specified tile group rules.
 
 

@@ -1,7 +1,8 @@
 # stopLoading()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops loading all resources on the current page.
 
@@ -21,8 +22,9 @@ final func stopLoading()
 
 ## See Also
 
+### Managing the loading process
 - [func reload(fromOrigin: Bool) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/reload(fromorigin:).md)
+](./reload%28fromorigin%29.md)
   Reloads the current webpage.
 
 

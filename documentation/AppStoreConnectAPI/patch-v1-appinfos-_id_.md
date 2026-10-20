@@ -1,7 +1,8 @@
 # Modify an app info
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update the App Store categories and sub-categories for your app.
 
@@ -16,7 +17,7 @@ Use this endpoint to modify the primary and secondary categories and subcategori
 
 **Request**:
 
-```None
+```
 PATCH https://api.appstoreconnect.apple.com/v1/appInfos/61d77dc2-9313-4330-b169-d179277ccfc4
 
 {
@@ -128,11 +129,27 @@ PATCH https://api.appstoreconnect.apple.com/v1/appInfos/61d77dc2-9313-4330-b169-
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `appInfo` resource ID from the [`List all app infos for an app`](get-v1-apps-_id_-appinfos.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `appInfo` resource ID from the [`List all app infos for an app`](./get-v1-apps-_id_-appinfos.md) response.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `AppInfoUpdateRequest`
+
 The request body you use to update an App Info.
+
+## Responses
+
+- `200` OK (`AppInfoResponse`, `application/json`): Request succeeded.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

@@ -7,9 +7,9 @@ Specify a data type.
 ## Topics
 
 ### Constants
-- [var cmAsciiData: Int](cmasciidata.md)
+- [var cmAsciiData: Int](../cmasciidata.md)
   ASCII data.
-- [var cmBinaryData: Int](cmbinarydata.md)
+- [var cmBinaryData: Int](../cmbinarydata.md)
   Binary data.
 
 

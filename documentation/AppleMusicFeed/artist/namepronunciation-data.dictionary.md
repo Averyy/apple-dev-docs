@@ -1,7 +1,8 @@
 # Artist.NamePronunciation
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of locale to translations for the specific pronunciation-name translation type.
 
@@ -10,7 +11,7 @@ A mapping of locale to translations for the specific pronunciation-name translat
 
 ## Declaration
 
-```swift
+```
 object Artist.NamePronunciation
 ```
 
@@ -21,9 +22,10 @@ object Artist.NamePronunciation
 
 ## See Also
 
-- [object Artist.Name](artist/name-data.dictionary.md)
+### Related objects
+- [object Artist.Name](./name-data.dictionary.md)
   A mapping of locale to localized names for the artist.
-- [object Artist.RelevanceScore](artist/relevancescore-data.dictionary.md)
+- [object Artist.RelevanceScore](./relevancescore-data.dictionary.md)
   A score representing artist relevance, used to rank artists when surfacing content.
 
 

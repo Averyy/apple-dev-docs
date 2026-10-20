@@ -1,7 +1,8 @@
 # printInteractionController(_:chooseCutterBehavior:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the cutter behavior for the print job.
 
@@ -17,6 +18,10 @@ Asks the delegate for the cutter behavior for the print job.
 optional func printInteractionController(_ printInteractionController: UIPrintInteractionController, chooseCutterBehavior availableBehaviors: [Any]) -> UIPrinter.CutterBehavior
 ```
 
+```objc
+- (UIPrinterCutterBehavior) printInteractionController:(UIPrintInteractionController *) printInteractionController chooseCutterBehavior:(NSArray *) availableBehaviors;
+```
+
 #### Return Value
 
 The cutter behavior to use for the print job. The value must correspond to one of the constants in the `availableBehaviors` parameter.
@@ -27,14 +32,15 @@ Some roll-fed printers support different options for cutting the paper. If you i
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
-- `availableBehaviors`: An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects identifying the printer’s available cutter behaviors. Each number corresponds to one of the constants defined in [`UIPrinter.CutterBehavior`](uiprinter/cutterbehavior.md).
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) that is managing the print job.
+- `availableBehaviors`: An array of [`NSNumber`](../../Foundation/nsnumber.md) objects identifying the printer’s available cutter behaviors. Each number corresponds to one of the constants defined in [`UIPrinter.CutterBehavior`](../uiprinter/cutterbehavior.md).
 
 ## See Also
 
-- [func printInteractionController(UIPrintInteractionController, choosePaper: [UIPrintPaper]) -> UIPrintPaper](uiprintinteractioncontrollerdelegate/printinteractioncontroller(_:choosepaper:).md)
+### Choosing a Paper Size for the Print Job
+- [func printInteractionController(UIPrintInteractionController, choosePaper: [UIPrintPaper]) -> UIPrintPaper](./printinteractioncontroller%28_,choosepaper%29.md)
   Asks the delegate for an object that encapsulates the paper size and printing area for the print job.
-- [func printInteractionController(UIPrintInteractionController, cutLengthFor: UIPrintPaper) -> CGFloat](uiprintinteractioncontrollerdelegate/printinteractioncontroller(_:cutlengthfor:).md)
+- [func printInteractionController(UIPrintInteractionController, cutLengthFor: UIPrintPaper) -> CGFloat](./printinteractioncontroller%28_,cutlengthfor%29.md)
   Asks the delegate for a length to use when cutting the page.
 
 

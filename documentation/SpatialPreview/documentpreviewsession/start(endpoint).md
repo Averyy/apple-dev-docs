@@ -1,13 +1,14 @@
 # start(endpoint:)
 
 **Framework**: Spatial Preview  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connects to the specified endpoint and prepares the session to send document updates.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,9 @@ final nonisolated(nonsending) func start(endpoint: SpatialPreviewEndpoint) async
 
 #### Discussion
 
-Call this method once before sending document content via [`updateContents(data:)`](documentpreviewsession/updatecontents(data:).md) or [`updateContents(url:)`](documentpreviewsession/updatecontents(url:).md). The method establishes connection and transitions the session’s `state` to [`SpatialPreviewSessionState.connected`](spatialpreviewsessionstate/connected.md).
+Call this method once before sending document content via [`updateContents(data:)`](./updatecontents%28data%29.md) or [`updateContents(url:)`](./updatecontents%28url%29.md). The method establishes connection and transitions the session’s `state` to [`SpatialPreviewSessionState.connected`](../spatialpreviewsessionstate/connected.md).
 
-> **Note**: [`SpatialPreviewSessionError`](spatialpreviewsessionerror.md) if the connection cannot be established or the session has already been invalidated.
+> **Throws**: [`SpatialPreviewSessionError`](../spatialpreviewsessionerror.md) if the connection cannot be established or the session has already been invalidated.
 
 ## Parameters
 

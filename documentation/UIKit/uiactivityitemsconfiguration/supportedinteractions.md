@@ -1,7 +1,8 @@
 # supportedInteractions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of interactions that the configuration supports.
 
@@ -17,13 +18,18 @@ The types of interactions that the configuration supports.
 var supportedInteractions: [UIActivityItemsConfigurationInteraction] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * supportedInteractions;
+```
+
 #### Discussion
 
 The default value is all known interactions.
 
 ## See Also
 
-- [struct UIActivityItemsConfigurationInteraction](uiactivityitemsconfigurationinteraction.md)
+### Managing supported interactions
+- [struct UIActivityItemsConfigurationInteraction](../uiactivityitemsconfigurationinteraction.md)
   A structure that describes types of interactions.
 
 

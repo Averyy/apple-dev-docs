@@ -1,6 +1,7 @@
 # Interacting with your app in Device Hub
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use Device Hub to control interactions with your apps on simulated and physical devices.
 
@@ -12,11 +13,11 @@ When you launch your app on a simulated device, Device Hub opens to show the dev
 
 Device Hub surrounds the screen content with a bezel that resembles the target device. In visionOS, it displays a synthetic space to mimic the experience someone would have when they wear the device. Each device bezel and space has specific controls to support interactions. To show or hide bezels in the canvas, choose View > Show Bezels or View > Hide Bezels.
 
-![A screenshot of Device Hub showing an iOS simulator in compact view running a sample code app.](/images/com.apple.Xcode/running-app-in-ios-simulator@2x.png)
+![A screenshot of Device Hub showing an iOS simulator in compact view running a sample code app.](https://developer.apple.com/tutorials/images/com.apple.Xcode/running-app-in-ios-simulator@2x.png)
 
-To interact with a simulated Apple Vision Pro device in Device Hub, see [`Interacting with your visionOS app in Device Hub`](interacting-with-your-visionos-app-in-device-hub.md). To take screenshots and record videos, see [`Capturing screenshots and videos from devices`](capturing-screenshots-and-videos-from-devices.md).
+To interact with a simulated Apple Vision Pro device in Device Hub, see [Interacting with your visionOS app in Device Hub](./interacting-with-your-visionos-app-in-device-hub.md). To take screenshots and record videos, see [Capturing screenshots and videos from devices](./capturing-screenshots-and-videos-from-devices.md).
 
-#### Interact with Your Ios or Ipados App in the Canvas
+#### Interact with your iOS or iPadOS app in the canvas
 
 Use your Mac’s pointer, trackpad or Magic Mouse, keyboard, menu items, and buttons to make gestures on a simulated iOS or iPadOS device.
 
@@ -42,7 +43,7 @@ Activate device buttons by clicking on parts of the device bezel:
 | Click or hold Volume Down | Click or hold the Volume Down button on the device bezel or choose Device > Sound > Decrease Volume. |
 | Click the Action button | Click the Action button on the device bezel. |
 
-#### Interact with Your Ios App on an Iphone Duo Simulator
+#### Interact with your iOS app on an iPhone Duo simulator
 
 To ensure your iOS app adapts seamlessly to both iPhone Duo displays, simulate folding an iPhone Duo using the controls below the bezel in the canvas:
 
@@ -52,9 +53,9 @@ To ensure your iOS app adapts seamlessly to both iPhone Duo displays, simulate f
 
 To fold the device to any angle, hold the Option key while dragging the slider that appears below the bezel.
 
-![A screenshot of Device Hub that shows an iPhone Duo simulator running a sample code app in the partially open device pose. The device pose buttons appear below the bezel.](/images/com.apple.Xcode/running-app-in-iphone-duo-simulator@2x.png)
+![A screenshot of Device Hub that shows an iPhone Duo simulator running a sample code app in the partially open device pose. The device pose buttons appear below the bezel.](https://developer.apple.com/tutorials/images/com.apple.Xcode/running-app-in-iphone-duo-simulator@2x.png)
 
-#### Interact with Your Watchos App in the Canvas
+#### Interact with your watchOS app in the canvas
 
 Use the pointer, trackpad or Magic Mouse, keyboard, and menu items to make gestures on a simulated watchOS device.
 
@@ -74,7 +75,7 @@ Activate device buttons using menu items or by clicking on parts of the device b
 | Click the Side button | Click the Side button on the device bezel. |
 | Click the Action button | Click the Action button on the device bezel or choose Controls > Action Button. |
 
-#### Interact with Your Tvos App in the Canvas
+#### Interact with your tvOS app in the canvas
 
 Use the pointer, keyboard, and menu items to make gestures on a simulated tvOS device.
 
@@ -87,11 +88,11 @@ Use the pointer, keyboard, and menu items to make gestures on a simulated tvOS d
 | Trigger the action for the current focus | Press the Return key. |
 | Move up one level in the navigation hierarchy | Press the Escape key. |
 
-##### Slow Down Animations to Diagnose Problems
+##### Slow down animations to diagnose problems
 
 You can slow down the rate of animations to help identify any layout, logic, or performance issues that interfere with smooth animations. To turn on or off slow animations, choose Device > Slow Animations.
 
-#### Handle Camera and Microphone Access Conflicts on Physical Devices
+#### Handle camera and microphone access conflicts on physical devices
 
 You can’t access the camera or microphone while interacting with a physical device in Device Hub.
 
@@ -103,13 +104,14 @@ If you launch higher-priority apps on the device that access the camera or micro
 
 ## See Also
 
-- [Configuring the environment of a simulated device](configuring-the-environment-of-a-simulated-device.md)
+### Device interactions
+- [Configuring the environment of a simulated device](./configuring-the-environment-of-a-simulated-device.md)
   Modify the settings of a simulated device.
-- [Interacting with your visionOS app in Device Hub](interacting-with-your-visionos-app-in-device-hub.md)
+- [Interacting with your visionOS app in Device Hub](./interacting-with-your-visionos-app-in-device-hub.md)
   Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
-- [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
+- [Capturing screenshots and videos from devices](./capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
-- [Interacting with devices using the command line](interacting-with-devices-using-the-command-line.md)
+- [Interacting with devices using the command line](./interacting-with-devices-using-the-command-line.md)
   Manage simulated and physical devices from the command line.
 
 

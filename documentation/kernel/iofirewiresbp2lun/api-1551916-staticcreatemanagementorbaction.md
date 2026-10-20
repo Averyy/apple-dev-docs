@@ -1,14 +1,15 @@
 # staticCreateManagementORBAction
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn staticCreateManagementORBAction(OSObject *self, void *refCon, void *completion, void *orb, void *);
 ```
 

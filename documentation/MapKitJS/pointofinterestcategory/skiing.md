@@ -1,7 +1,8 @@
 # Skiing
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for skiing facilities.
 
@@ -10,7 +11,7 @@ The point-of-interest category for skiing facilities.
 
 ## Declaration
 
-```swift
+```
 readonly Skiing: "Skiing";
 ```
 

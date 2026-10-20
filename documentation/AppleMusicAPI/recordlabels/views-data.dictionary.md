@@ -1,7 +1,8 @@
 # RecordLabels.Views
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship views for a record label resource.
 
@@ -10,16 +11,16 @@ The relationship views for a record label resource.
 
 ## Declaration
 
-```swift
+```
 object RecordLabels.Views
 ```
 
 ## Topics
 
 ### Related Objects
-- [object RecordLabels.Views.RecordLabelsLatestReleasesView](recordlabels/views-data.dictionary/recordlabelslatestreleasesview.md)
+- [object RecordLabels.Views.RecordLabelsLatestReleasesView](./views-data.dictionary/recordlabelslatestreleasesview.md)
   A relationship view from this record label to a selection of its latest releases.
-- [object RecordLabels.Views.RecordLabelsTopReleasesView](recordlabels/views-data.dictionary/recordlabelstopreleasesview.md)
+- [object RecordLabels.Views.RecordLabelsTopReleasesView](./views-data.dictionary/recordlabelstopreleasesview.md)
   A relationship view from this record label to a selection of its top releases.
 
 ## Properties
@@ -29,7 +30,8 @@ object RecordLabels.Views
 
 ## See Also
 
-- [object RecordLabels.Attributes](recordlabels/attributes-data.dictionary.md)
+### Related Objects
+- [object RecordLabels.Attributes](./attributes-data.dictionary.md)
   The attributes for a record label resource.
 
 

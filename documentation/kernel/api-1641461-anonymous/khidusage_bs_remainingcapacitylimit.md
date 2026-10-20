@@ -1,14 +1,15 @@
 # kHIDUsage_BS_RemainingCapacityLimit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BS_RemainingCapacityLimit = 0x29
 ```
 

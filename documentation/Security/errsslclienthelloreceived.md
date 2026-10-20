@@ -1,7 +1,8 @@
 # errSSLClientHelloReceived
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A non-fatal result for providing a server name indication.
 
@@ -18,6 +19,10 @@ A non-fatal result for providing a server name indication.
 
 ```swift
 var errSSLClientHelloReceived: OSStatus { get }
+```
+
+```c
+errSSLClientHelloReceived
 ```
 
 

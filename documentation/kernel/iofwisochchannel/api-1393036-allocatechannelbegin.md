@@ -1,14 +1,15 @@
 # allocateChannelBegin
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn allocateChannelBegin(IOFWSpeed speed, UInt64 allowedChans, UInt32 *channel);
 ```
 

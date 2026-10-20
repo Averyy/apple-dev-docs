@@ -1,7 +1,8 @@
 # kMDItemAlbum
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The title for a collection of media. This is analagous to a record album, or photo album. A CFString.
 
@@ -12,6 +13,10 @@ The title for a collection of media. This is analagous to a record album, or pho
 
 ```swift
 let kMDItemAlbum: CFString!
+```
+
+```c
+const CFStringRef kMDItemAlbum;
 ```
 
 

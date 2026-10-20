@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance that wraps the specified base value.
@@ -23,7 +24,7 @@ init(baseValue: Self.BaseValue) throws
 
 #### Discussion
 
-> **Note**: An error if the wrapper cannot be initialized with the given base value.
+> **Throws**: An error if the wrapper cannot be initialized with the given base value.
 
 ## Parameters
 

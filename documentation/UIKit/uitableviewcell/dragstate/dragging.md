@@ -1,7 +1,8 @@
 # UITableViewCell.DragState.dragging
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cell is currently being dragged.
 
@@ -17,11 +18,16 @@ The cell is currently being dragged.
 case dragging
 ```
 
+```c
+UITableViewCellDragStateDragging
+```
+
 ## See Also
 
-- [UITableViewCell.DragState.none](uitableviewcell/dragstate/none.md)
+### Constants
+- [UITableViewCell.DragState.none](./none.md)
   The cell isn’t involved in a drag operation.
-- [UITableViewCell.DragState.lifting](uitableviewcell/dragstate/lifting.md)
+- [UITableViewCell.DragState.lifting](./lifting.md)
   The cell is being animated off of the table’s surface.
 
 

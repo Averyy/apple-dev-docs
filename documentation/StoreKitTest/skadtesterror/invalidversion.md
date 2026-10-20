@@ -1,7 +1,8 @@
 # invalidVersion
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A postback contains an incorrect version number.
 
@@ -18,15 +19,16 @@ static var invalidVersion: SKAdTestError.Code { get }
 
 ## See Also
 
-- [static var invalidImpressionId: SKAdTestError.Code](skadtesterror/invalidimpressionid.md)
+### Getting Other Errors
+- [static var invalidImpressionId: SKAdTestError.Code](./invalidimpressionid.md)
   The impression ID isn’t a valid UUID string.
-- [static var invalidSourceAppAdamId: SKAdTestError.Code](skadtesterror/invalidsourceappadamid.md)
+- [static var invalidSourceAppAdamId: SKAdTestError.Code](./invalidsourceappadamid.md)
   The app ID is less than zero.
-- [static var invalidSourceDomain: SKAdTestError.Code](skadtesterror/invalidsourcedomain.md)
+- [static var invalidSourceDomain: SKAdTestError.Code](./invalidsourcedomain.md)
   The source domain isn’t in the correct format.
-- [static var invalidSourceIdentifier: SKAdTestError.Code](skadtesterror/invalidsourceidentifier.md)
+- [static var invalidSourceIdentifier: SKAdTestError.Code](./invalidsourceidentifier.md)
   The postback’s identifier isn’t two, three, or four digits.
-- [static var unknownError: SKAdTestError.Code](skadtesterror/unknownerror.md)
+- [static var unknownError: SKAdTestError.Code](./unknownerror.md)
   An unknown error occurred in the testing environment.
 
 

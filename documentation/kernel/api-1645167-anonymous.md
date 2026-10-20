@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kRegMaximumPropertyNameLength](1645167-anonymous/kregmaximumpropertynamelength.md)
-- [kRegPropertyNameTerminator](1645167-anonymous/kregpropertynameterminator.md)
+- [kRegMaximumPropertyNameLength](./api-1645167-anonymous/kregmaximumpropertynamelength.md)
+- [kRegPropertyNameTerminator](./api-1645167-anonymous/kregpropertynameterminator.md)
 
 
 ---

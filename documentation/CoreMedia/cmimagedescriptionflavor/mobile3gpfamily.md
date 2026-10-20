@@ -1,7 +1,8 @@
 # mobile3GPFamily
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An image description that selects the 3GP family sample format.
 
@@ -20,10 +21,15 @@ An image description that selects the 3GP family sample format.
 static let mobile3GPFamily: CMImageDescriptionFlavor
 ```
 
+```c
+extern CMImageDescriptionFlavor const kCMImageDescriptionFlavor_3GPFamily;
+```
+
 ## See Also
 
-- [static let isoFamily: CMImageDescriptionFlavor](cmimagedescriptionflavor/isofamily.md)
-- [static let quickTimeMovie: CMImageDescriptionFlavor](cmimagedescriptionflavor/quicktimemovie.md)
+### Image Description Flavors
+- [static let isoFamily: CMImageDescriptionFlavor](./isofamily.md)
+- [static let quickTimeMovie: CMImageDescriptionFlavor](./quicktimemovie.md)
   An image description that selects the QuickTime format.
 
 

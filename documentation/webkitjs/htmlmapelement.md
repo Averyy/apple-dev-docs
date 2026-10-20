@@ -1,7 +1,8 @@
 # HTMLMapElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLMapElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [areas](htmlmapelement/1629132-areas.md)
-- [name](htmlmapelement/1634530-name.md)
+- [areas](./htmlmapelement/api-1629132-areas.md)
+- [name](./htmlmapelement/api-1634530-name.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

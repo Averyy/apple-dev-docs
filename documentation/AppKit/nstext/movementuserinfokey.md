@@ -1,9 +1,10 @@
 # movementUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The `userInfo` dictionary key for the [`didEndEditingNotification`](nstext/didendeditingnotification.md) notification.
+The `userInfo` dictionary key for the [`didEndEditingNotification`](./didendeditingnotification.md) notification.
 
 **Availability**:
 - macOS 10.13+
@@ -14,15 +15,20 @@ The `userInfo` dictionary key for the [`didEndEditingNotification`](nstext/diden
 class let movementUserInfoKey: String
 ```
 
+```c
+extern NSString * const NSTextMovementUserInfoKey;
+```
+
 ## See Also
 
-- [class let didBeginEditingNotification: NSNotification.Name](nstext/didbegineditingnotification.md)
+### Notifications
+- [class let didBeginEditingNotification: NSNotification.Name](./didbegineditingnotification.md)
   Posted when an `NSText` object begins any operation that changes characters or formatting attributes.
-- [class let didChangeNotification: NSNotification.Name](nstext/didchangenotification.md)
+- [class let didChangeNotification: NSNotification.Name](./didchangenotification.md)
   Posted after an `NSText` object performs any operation that changes characters or formatting attributes.
-- [class let didEndEditingNotification: NSNotification.Name](nstext/didendeditingnotification.md)
+- [class let didEndEditingNotification: NSNotification.Name](./didendeditingnotification.md)
   Posted when focus leaves an `NSText` object, whether or not any operation has changed characters or formatting attributes.
-- [enum NSTextMovement](nstextmovement.md)
+- [enum NSTextMovement](../nstextmovement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # indexBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets an optional index buffer containing references to vertices in the `vertexBuffer`.
 
@@ -17,6 +18,10 @@ Sets an optional index buffer containing references to vertices in the `vertexBu
 
 ```swift
 var indexBuffer: MTL4BufferRange { get set }
+```
+
+```objc
+@property (nonatomic) MTL4BufferRange indexBuffer;
 ```
 
 #### Discussion

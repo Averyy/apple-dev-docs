@@ -1,7 +1,8 @@
 # depthFormat
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format to use for the layer’s depth textures.
 
@@ -21,9 +22,10 @@ Use this value to determine the pixel format for depth textures in a frame. At c
 
 ## See Also
 
-- [var depthUsage: MTLTextureUsage](layerrenderer/configuration-swift.struct/depthusage.md)
+### Configuring the depth information
+- [var depthUsage: MTLTextureUsage](./depthusage.md)
   The texture usage value to apply to the layer’s depth textures.
-- [var defaultDepthRange: SIMD2<Float>](layerrenderer/configuration-swift.struct/defaultdepthrange.md)
+- [var defaultDepthRange: SIMD2<Float>](./defaultdepthrange.md)
   The distances to the far and near clipping planes that define the bounds of your content.
 
 

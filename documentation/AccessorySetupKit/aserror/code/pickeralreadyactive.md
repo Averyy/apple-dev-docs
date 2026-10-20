@@ -1,7 +1,8 @@
 # ASError.Code.pickerAlreadyActive
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The picker received a show request when it was already active.
 
@@ -15,9 +16,14 @@ The picker received a show request when it was already active.
 case pickerAlreadyActive
 ```
 
+```c
+ASErrorCodePickerAlreadyActive
+```
+
 ## See Also
 
-- [ASError.Code.pickerRestricted](aserror/code/pickerrestricted.md)
+### Picker errors
+- [ASError.Code.pickerRestricted](./pickerrestricted.md)
   The picker can’t be used because the app is in the background.
 
 

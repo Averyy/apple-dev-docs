@@ -1,7 +1,8 @@
 # expandItems(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Expands the specified items in the section snapshot.
 
@@ -18,11 +19,16 @@ Expands the specified items in the section snapshot.
 func expandItems(_ items: [Any])
 ```
 
+```objc
+- (void) expandItems:(NSArray<id> *) items;
+```
+
 ## See Also
 
-- [func isExpanded(Any) -> Bool](nsdiffabledatasourcesectionsnapshotreference/isexpanded(_:).md)
+### Expanding and collapsing items
+- [func isExpanded(Any) -> Bool](./isexpanded%28_%29.md)
   Indicates whether the item with the specified identifier is in an expanded state.
-- [func collapseItems([Any])](nsdiffabledatasourcesectionsnapshotreference/collapseitems(_:).md)
+- [func collapseItems([Any])](./collapseitems%28_%29.md)
   Collapses the specified items in the section snapshot.
 
 

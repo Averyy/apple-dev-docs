@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Core Graphics  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 26.0+

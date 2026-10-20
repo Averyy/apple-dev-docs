@@ -1,7 +1,8 @@
 # prepareToPlay()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the player to play the sequence by prerolling all events.
 
@@ -19,19 +20,24 @@ Prepares the player to play the sequence by prerolling all events.
 func prepareToPlay()
 ```
 
+```objc
+- (void) prepareToPlay;
+```
+
 #### Discussion
 
-The system automatically calls this method on playback, but calling it in advance minimizes the delay between calling [`play(_:)`](avmidiplayer/play(_:).md) and the start of sound output.
+The system automatically calls this method on playback, but calling it in advance minimizes the delay between calling [`play(_:)`](./play%28_%29.md) and the start of sound output.
 
 ## See Also
 
-- [func play((() -> Void)?)](avmidiplayer/play(_:).md)
+### Controlling playback
+- [func play((() -> Void)?)](./play%28_%29.md)
   Plays the MIDI sequence.
-- [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
+- [typealias AVMIDIPlayerCompletionHandler](../avmidiplayercompletionhandler.md)
   A callback the system invokes when MIDI playback completes.
-- [func stop()](avmidiplayer/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops playing the sequence.
-- [var isPlaying: Bool](avmidiplayer/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether the sequence is playing.
 
 

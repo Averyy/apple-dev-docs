@@ -1,7 +1,8 @@
 # help
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Placement for commands that present documentation and helpful information to people.
 

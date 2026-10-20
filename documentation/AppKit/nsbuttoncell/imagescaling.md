@@ -1,7 +1,8 @@
 # imageScaling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor for the button’s image.
 
@@ -14,11 +15,16 @@ The scale factor for the button’s image.
 var imageScaling: NSImageScaling { get set }
 ```
 
+```objc
+@property NSImageScaling imageScaling;
+```
+
 ## See Also
 
-- [var alternateImage: NSImage?](nsbuttoncell/alternateimage.md)
+### Managing Images
+- [var alternateImage: NSImage?](./alternateimage.md)
   The image the button displays in its alternate state.
-- [var imagePosition: NSControl.ImagePosition](nsbuttoncell/imageposition.md)
+- [var imagePosition: NSControl.ImagePosition](./imageposition.md)
   The position of the button’s image relative to its title.
 
 

@@ -1,7 +1,8 @@
 # thePhonemes
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An array of phoneme information structures. 
 
@@ -12,6 +13,10 @@ An array of phoneme information structures.
 
 ```swift
 var thePhonemes: PhonemeInfo
+```
+
+```c
+PhonemeInfo thePhonemes[1];
 ```
 
 

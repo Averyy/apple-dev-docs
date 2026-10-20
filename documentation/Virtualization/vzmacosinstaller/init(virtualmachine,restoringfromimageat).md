@@ -1,7 +1,8 @@
 # init(virtualMachine:restoringFromImageAt:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a macOS installer object.
 
@@ -12,6 +13,10 @@ Creates a macOS installer object.
 
 ```swift
 init(virtualMachine: VZVirtualMachine, restoringFromImageAt restoreImageFileURL: URL)
+```
+
+```objc
+- (instancetype) initWithVirtualMachine:(VZVirtualMachine *) virtualMachine restoreImageURL:(NSURL *) restoreImageFileURL;
 ```
 
 ## Parameters

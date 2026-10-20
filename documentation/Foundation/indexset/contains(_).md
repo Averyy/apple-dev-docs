@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if `self` contains `integer`.
 
@@ -22,11 +23,12 @@ func contains(_ integer: IndexSet.Element) -> Bool
 
 ## See Also
 
-- [func contains(integersIn: IndexSet) -> Bool](indexset/contains(integersin:)-9frtv.md)
+### Testing Set Membership
+- [func contains(integersIn: IndexSet) -> Bool](./contains%28integersin%29-9frtv.md)
   Returns `true` if `self` contains all of the integers in `indexSet`.
-- [func contains(integersIn: Range<IndexSet.Element>) -> Bool](indexset/contains(integersin:)-sma8.md)
+- [func contains(integersIn: Range<IndexSet.Element>) -> Bool](./contains%28integersin%29-sma8.md)
   Returns `true` if `self` contains all of the integers in `range`.
-- [func intersects(integersIn: Range<IndexSet.Element>) -> Bool](indexset/intersects(integersin:)-3sdmv.md)
+- [func intersects(integersIn: Range<IndexSet.Element>) -> Bool](./intersects%28integersin%29-3sdmv.md)
   Returns `true` if `self` intersects any of the integers in `range`.
 
 

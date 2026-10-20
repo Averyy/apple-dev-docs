@@ -1,7 +1,8 @@
 # CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework doesn’t support the attributes set in a model-URL query.
 
@@ -18,11 +19,12 @@ case attributeCombinationNotSupported
 
 #### Discussion
 
-This error occurs for the [`modelFileURL(for:)`](capturedroom/modelprovider/modelfileurl(for:)-58ykp.md) function when an unsupported combination of attributes resides in the argument array.
+This error occurs for the [`modelFileURL(for:)`](../modelfileurl%28for%29-58ykp.md) function when an unsupported combination of attributes resides in the argument array.
 
 ## See Also
 
-- [CapturedRoom.ModelProvider.Error.nonExistingFile(url:)](capturedroom/modelprovider/error/nonexistingfile(url:).md)
+### Interpreting the error
+- [CapturedRoom.ModelProvider.Error.nonExistingFile(url:)](./nonexistingfile%28url%29.md)
   An error that indicates a model-URL query failed to return a result.
 
 

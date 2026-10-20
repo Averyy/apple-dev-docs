@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.connectorPunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A connecting punctuation mark, like a tie.
 
@@ -22,7 +23,7 @@ case connectorPunctuation
 
 #### Discussion
 
-This value corresponds to the category `Connector_Punctuation` (abbreviated `Pc`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Connector_Punctuation` (abbreviated `Pc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

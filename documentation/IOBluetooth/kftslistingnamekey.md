@@ -1,12 +1,13 @@
 # kFTSListingNameKey
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 NSString value. This key is used with the array of NSDictionary’s returned through the delegate method fileTransferServicesGetListingComplete: after calling getFolderListing.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ NSString value. This key is used with the array of NSDictionary’s returned thr
 var kFTSListingNameKey: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kFTSListingNameKey;
+```
+
 #### Discussion
 
 ## See Also
 
-- [var kFTSListingSizeKey: Unmanaged<CFString>!](kftslistingsizekey.md)
+### Constants
+- [var kFTSListingSizeKey: Unmanaged<CFString>!](./kftslistingsizekey.md)
   Int value. This key is used with the array of NSDictionary’s returned through the delegate method fileTransferServicesGetListingComplete: after calling getFolderListing.
-- [var kFTSListingTypeKey: Unmanaged<CFString>!](kftslistingtypekey.md)
+- [var kFTSListingTypeKey: Unmanaged<CFString>!](./kftslistingtypekey.md)
   FTSFileType value. This key is used with the array of NSDictionary’s returned through the delegate method fileTransferServicesGetListingComplete: after calling getFolderListing.
-- [var kFTSProgressBytesTotalKey: Unmanaged<CFString>!](kftsprogressbytestotalkey.md)
+- [var kFTSProgressBytesTotalKey: Unmanaged<CFString>!](./kftsprogressbytestotalkey.md)
   NSNumber integer value. This key is used with the NSDictionary returned from the fileTransferServicesPutProgress: and fileTransferServicesGetProgress: delegate methods
-- [var kFTSProgressBytesTransferredKey: Unmanaged<CFString>!](kftsprogressbytestransferredkey.md)
+- [var kFTSProgressBytesTransferredKey: Unmanaged<CFString>!](./kftsprogressbytestransferredkey.md)
   NSNumber integer value. This key is used with the NSDictionary returned from the fileTransferServicesPutProgress: and fileTransferServicesGetProgress: delegate methods
-- [var kFTSProgressEstimatedTimeKey: Unmanaged<CFString>!](kftsprogressestimatedtimekey.md)
+- [var kFTSProgressEstimatedTimeKey: Unmanaged<CFString>!](./kftsprogressestimatedtimekey.md)
   NSNumber double value. This key is used with the NSDictionary returned from the fileTransferServicesPutProgress: and fileTransferServicesGetProgress: delegate methods
-- [var kFTSProgressPercentageKey: Unmanaged<CFString>!](kftsprogresspercentagekey.md)
+- [var kFTSProgressPercentageKey: Unmanaged<CFString>!](./kftsprogresspercentagekey.md)
   NSNumber float value. This key is used with the NSDictionary returned from the fileTransferServicesPutProgress: and fileTransferServicesGetProgress: delegate methods
-- [var kFTSProgressTimeElapsedKey: Unmanaged<CFString>!](kftsprogresstimeelapsedkey.md)
+- [var kFTSProgressTimeElapsedKey: Unmanaged<CFString>!](./kftsprogresstimeelapsedkey.md)
   NSNumber int value. This key is used with the NSDictionary returned from the fileTransferServicesPutProgress: and fileTransferServicesGetProgress: delegate methods
-- [var kFTSProgressTransferRateKey: Unmanaged<CFString>!](kftsprogresstransferratekey.md)
+- [var kFTSProgressTransferRateKey: Unmanaged<CFString>!](./kftsprogresstransferratekey.md)
   NSNumber float value. This key is used with the NSDictionary returned from the fileTransferServicesPutProgress: and fileTransferServicesGetProgress: delegate methods
 
 

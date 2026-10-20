@@ -1,7 +1,8 @@
 # SecKeychainEventMask
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Bit masks corresponding to the events that can trigger a keychain callback.
 
@@ -15,50 +16,54 @@ Bit masks corresponding to the events that can trigger a keychain callback.
 struct SecKeychainEventMask
 ```
 
+```c
+enum SecKeychainEventMask : UInt32;
+```
+
 #### Overview
 
-Bitwise `OR` one or more of these masks together to provide the `eventMask` input to the [`SecKeychainAddCallback(_:_:_:)`](seckeychainaddcallback(_:_:_:).md) function to indicate what event or events should trigger your callback.
+Bitwise `OR` one or more of these masks together to provide the `eventMask` input to the [`SecKeychainAddCallback(_:_:_:)`](./seckeychainaddcallback%28_,_,_%29.md) function to indicate what event or events should trigger your callback.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](seckeychaineventmask/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./seckeychaineventmask/init%28rawvalue%29.md)
   Initializes an event mask value.
 ### Constants
-- [static var lockEventMask: SecKeychainEventMask](seckeychaineventmask/lockeventmask.md)
+- [static var lockEventMask: SecKeychainEventMask](./seckeychaineventmask/lockeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when a keychain is locked.
-- [static var unlockEventMask: SecKeychainEventMask](seckeychaineventmask/unlockeventmask.md)
+- [static var unlockEventMask: SecKeychainEventMask](./seckeychaineventmask/unlockeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when a keychain is unlocked.
-- [static var addEventMask: SecKeychainEventMask](seckeychaineventmask/addeventmask.md)
+- [static var addEventMask: SecKeychainEventMask](./seckeychaineventmask/addeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when an item is added to a keychain.
-- [static var deleteEventMask: SecKeychainEventMask](seckeychaineventmask/deleteeventmask.md)
+- [static var deleteEventMask: SecKeychainEventMask](./seckeychaineventmask/deleteeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when an item is deleted from a keychain.
-- [static var updateEventMask: SecKeychainEventMask](seckeychaineventmask/updateeventmask.md)
+- [static var updateEventMask: SecKeychainEventMask](./seckeychaineventmask/updateeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when a keychain item is updated.
-- [static var passwordChangedEventMask: SecKeychainEventMask](seckeychaineventmask/passwordchangedeventmask.md)
+- [static var passwordChangedEventMask: SecKeychainEventMask](./seckeychaineventmask/passwordchangedeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when the keychain password is changed.
-- [static var defaultChangedEventMask: SecKeychainEventMask](seckeychaineventmask/defaultchangedeventmask.md)
+- [static var defaultChangedEventMask: SecKeychainEventMask](./seckeychaineventmask/defaultchangedeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when a different keychain is specified as the default.
-- [static var dataAccessEventMask: SecKeychainEventMask](seckeychaineventmask/dataaccesseventmask.md)
+- [static var dataAccessEventMask: SecKeychainEventMask](./seckeychaineventmask/dataaccesseventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when a process accesses a keychain item’s data.
-- [static var keychainListChangedMask: SecKeychainEventMask](seckeychaineventmask/keychainlistchangedmask.md)
+- [static var keychainListChangedMask: SecKeychainEventMask](./seckeychaineventmask/keychainlistchangedmask.md)
   If the bit specified by this mask is set, your callback function is invoked when a keychain list is changed.
-- [static var trustSettingsChangedEventMask: SecKeychainEventMask](seckeychaineventmask/trustsettingschangedeventmask.md)
+- [static var trustSettingsChangedEventMask: SecKeychainEventMask](./seckeychaineventmask/trustsettingschangedeventmask.md)
   If the bit specified by this mask is set, your callback function is invoked when there is a change in certificate trust settings.
-- [static var everyEventMask: SecKeychainEventMask](seckeychaineventmask/everyeventmask.md)
+- [static var everyEventMask: SecKeychainEventMask](./seckeychaineventmask/everyeventmask.md)
   If all the bits are set, your callback function is invoked whenever any event occurs.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

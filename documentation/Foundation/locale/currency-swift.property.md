@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency used by the locale.
 
@@ -24,21 +25,22 @@ var currency: Locale.Currency? { get }
 
 This property corresponds to the `cu` key of the Unicode BCP 47 extension.
 
-For locale instances created with the `cu` specifier (such as `en-US@cu=cad`), or with a custom [`Locale.Components`](locale/components.md), this property represents the custom currency. Otherwise, it represents the locale’s default currency.
+For locale instances created with the `cu` specifier (such as `en-US@cu=cad`), or with a custom [`Locale.Components`](./components.md), this property represents the custom currency. Otherwise, it represents the locale’s default currency.
 
 ## See Also
 
-- [Locale.Currency](locale/currency-swift.struct.md)
+### Getting measurement and counting components
+- [Locale.Currency](./currency-swift.struct.md)
   A type that represents the currency system used by a locale, like dollars or euros.
-- [var measurementSystem: Locale.MeasurementSystem](locale/measurementsystem-swift.property.md)
+- [var measurementSystem: Locale.MeasurementSystem](./measurementsystem-swift.property.md)
   The measurement system used by the locale, like metric or the US system.
-- [Locale.MeasurementSystem](locale/measurementsystem-swift.struct.md)
+- [Locale.MeasurementSystem](./measurementsystem-swift.struct.md)
   A type that represents the measurement system used by a locale, like metric or the US system.
-- [var numberingSystem: Locale.NumberingSystem](locale/numberingsystem-swift.property.md)
+- [var numberingSystem: Locale.NumberingSystem](./numberingsystem-swift.property.md)
   The numbering system used by the locale.
-- [var availableNumberingSystems: [Locale.NumberingSystem]](locale/availablenumberingsystems.md)
+- [var availableNumberingSystems: [Locale.NumberingSystem]](./availablenumberingsystems.md)
   An array containing all the valid numbering systems for the locale.
-- [Locale.NumberingSystem](locale/numberingsystem-swift.struct.md)
+- [Locale.NumberingSystem](./numberingsystem-swift.struct.md)
   A type that represents the numbering system used in a locale.
 
 

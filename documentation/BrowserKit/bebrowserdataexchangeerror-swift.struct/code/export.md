@@ -1,7 +1,8 @@
 # BEBrowserDataExchangeError.Code.export
 
 **Framework**: BrowserKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure during the export operation.
 
@@ -15,11 +16,16 @@ An error that indicates a failure during the export operation.
 case export
 ```
 
+```c
+BEBrowserDataDataExchangeErrorExport
+```
+
 ## See Also
 
-- [BEBrowserDataExchangeError.Code.import](bebrowserdataexchangeerror-swift.struct/code/import.md)
+### Identifying error types
+- [BEBrowserDataExchangeError.Code.import](./import.md)
   An error that indicates a failure during the import operation.
-- [BEBrowserDataExchangeError.Code.unknown](bebrowserdataexchangeerror-swift.struct/code/unknown.md)
+- [BEBrowserDataExchangeError.Code.unknown](./unknown.md)
   An error that indicates an unexpected failure.
 
 

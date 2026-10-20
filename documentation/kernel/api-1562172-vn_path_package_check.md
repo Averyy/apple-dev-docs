@@ -1,7 +1,8 @@
 # vn_path_package_check
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Figure out if a path corresponds to a macOS package.
 
@@ -10,11 +11,11 @@ Figure out if a path corresponds to a macOS package.
 
 ## Declaration
 
-```swift
+```c
 int vn_path_package_check(vnode_t vp, char *path, int pathlen, int *component);
 ```
 
-#### Return_value
+#### Return Value
 
 0 unless some parameter was invalid, in which case EINVAL is returned. Determine package-ness by checking what *component is set to.
 

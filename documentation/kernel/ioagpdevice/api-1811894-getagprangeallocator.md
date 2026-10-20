@@ -7,12 +7,12 @@ Accessor to obtain the AGP range allocator.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IORangeAllocator * getAGPRangeAllocator(
  void );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a pointer to the range allocator for the AGP space.
 
@@ -22,17 +22,18 @@ To allocate ranges in AGP space, obtain a range allocator for the space with thi
 
 ## See Also
 
-- [commitAGPMemory](ioagpdevice/1811820-commitagpmemory.md)
+### Miscellaneous
+- [commitAGPMemory](./api-1811820-commitagpmemory.md)
   Makes memory addressable by AGP transactions.
-- [createAGPSpace](ioagpdevice/1811842-createagpspace.md)
+- [createAGPSpace](./api-1811842-createagpspace.md)
   Allocates the AGP space, and enables AGP transactions on the primary and secondary.
-- [destroyAGPSpace](ioagpdevice/1811870-destroyagpspace.md)
+- [destroyAGPSpace](./api-1811870-destroyagpspace.md)
   Destroys the AGP space, and disables AGP transactions on the primary and secondary.
-- [getAGPSpace](ioagpdevice/1811914-getagpspace.md)
+- [getAGPSpace](./api-1811914-getagpspace.md)
   Returns the allocated AGP space.
-- [getAGPStatus](ioagpdevice/1811928-getagpstatus.md)
+- [getAGPStatus](./api-1811928-getagpstatus.md)
   Returns the current state of the AGP bus.
-- [releaseAGPMemory](ioagpdevice/1811943-releaseagpmemory.md)
+- [releaseAGPMemory](./api-1811943-releaseagpmemory.md)
   Releases memory addressable by AGP transactions.
 
 

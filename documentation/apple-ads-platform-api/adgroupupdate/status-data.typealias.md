@@ -1,7 +1,8 @@
 # AdGroupUpdate.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable serving status for an ad group.
 
@@ -10,9 +11,14 @@ Advertiser-configurable serving status for an ad group.
 
 ## Declaration
 
-```swift
+```
 string AdGroupUpdate.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: The ad group is active and eligible to serve ads.
+- `PAUSED`: The ad group is paused and will not serve ads.
 
 #### Discussion
 
@@ -26,7 +32,7 @@ Send `status: PAUSED` to stop an existing ad group from competing for delivery, 
 }
 ```
 
-See [`AdGroupStatus`](adgroupstatus.md) for additional context.
+See [`AdGroupStatus`](../adgroupstatus.md) for additional context.
 
 
 ---

@@ -1,7 +1,8 @@
 # GameCenterActivity.Relationships.LeaderboardsV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the leaderboards of the Game Center activity.
 
@@ -10,7 +11,7 @@ The data and links that describe the leaderboards of the Game Center activity.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivity.Relationships.LeaderboardsV2
 ```
 
@@ -23,7 +24,7 @@ object GameCenterActivity.Relationships.LeaderboardsV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivity.Relationships.LeaderboardsV2.Data](gamecenteractivity/relationships-data.dictionary/leaderboardsv2-data.dictionary/data-data.dictionary.md)
+- [object GameCenterActivity.Relationships.LeaderboardsV2.Data](./leaderboardsv2-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

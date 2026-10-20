@@ -1,7 +1,8 @@
 # MPSDataType.floatBit
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A common bit for all floating point data types.
 
@@ -19,9 +20,14 @@ A common bit for all floating point data types.
 case floatBit
 ```
 
+```c
+MPSDataTypeFloatBit
+```
+
 ## See Also
 
-- [MPSDataType.float32](mpsdatatype/float32.md)
+### Constants
+- [MPSDataType.float32](./float32.md)
   A 32-bit floating point type (single precision).
 
 

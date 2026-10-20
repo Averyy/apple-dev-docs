@@ -1,7 +1,8 @@
 # MTLTessellationFactorStepFunction
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for specifying the step function that determines the tessellation factors for a patch from the tessellation factor buffer.
 
@@ -19,51 +20,56 @@ Options for specifying the step function that determines the tessellation factor
 enum MTLTessellationFactorStepFunction
 ```
 
+```c
+enum MTLTessellationFactorStepFunction : NSUInteger;
+```
+
 ## Topics
 
 ### Factor step functions
-- [MTLTessellationFactorStepFunction.constant](mtltessellationfactorstepfunction/constant.md)
+- [MTLTessellationFactorStepFunction.constant](./mtltessellationfactorstepfunction/constant.md)
   A constant step function. For all instances, the tessellation factor for all patches in a patch draw call is at the `offset` location in the tessellation factor buffer.
-- [MTLTessellationFactorStepFunction.perPatch](mtltessellationfactorstepfunction/perpatch.md)
+- [MTLTessellationFactorStepFunction.perPatch](./mtltessellationfactorstepfunction/perpatch.md)
   A per-patch step function. For all instances, the tessellation factor for all patches in a patch draw call is at the `offset + (drawPatchIndex * tessellationFactorStride)` location in the tessellation factor buffer.
-- [MTLTessellationFactorStepFunction.perInstance](mtltessellationfactorstepfunction/perinstance.md)
+- [MTLTessellationFactorStepFunction.perInstance](./mtltessellationfactorstepfunction/perinstance.md)
   A per-instance step function. For a given instance ID, the tessellation factor for a patch in a patch draw call is at the `offset + (instanceID * instanceStride)` location in the tessellation factor buffer.
-- [MTLTessellationFactorStepFunction.perPatchAndPerInstance](mtltessellationfactorstepfunction/perpatchandperinstance.md)
+- [MTLTessellationFactorStepFunction.perPatchAndPerInstance](./mtltessellationfactorstepfunction/perpatchandperinstance.md)
   A per-patch and per-instance step function. For a given instance ID, the tessellation factor for a patch in a patch draw call is at the `offset + (drawPatchIndex * tessellationFactorStride + instanceID * instanceStride)` location in the tessellation factor buffer.
 ### Initializers
-- [init?(rawValue: UInt)](mtltessellationfactorstepfunction/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtltessellationfactorstepfunction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var maxTessellationFactor: Int](mtlrenderpipelinedescriptor/maxtessellationfactor.md)
+### Specifying tessellation state
+- [var maxTessellationFactor: Int](./mtlrenderpipelinedescriptor/maxtessellationfactor.md)
   The maximum tessellation factor that the tessellator uses when tessellating patches.
-- [var isTessellationFactorScaleEnabled: Bool](mtlrenderpipelinedescriptor/istessellationfactorscaleenabled.md)
+- [var isTessellationFactorScaleEnabled: Bool](./mtlrenderpipelinedescriptor/istessellationfactorscaleenabled.md)
   A Boolean value that determines whether the pipeline scales the tessellation factor.
-- [var tessellationFactorFormat: MTLTessellationFactorFormat](mtlrenderpipelinedescriptor/tessellationfactorformat.md)
+- [var tessellationFactorFormat: MTLTessellationFactorFormat](./mtlrenderpipelinedescriptor/tessellationfactorformat.md)
   The format of the tessellation factors in the tessellation factor buffer.
-- [var tessellationControlPointIndexType: MTLTessellationControlPointIndexType](mtlrenderpipelinedescriptor/tessellationcontrolpointindextype.md)
+- [var tessellationControlPointIndexType: MTLTessellationControlPointIndexType](./mtlrenderpipelinedescriptor/tessellationcontrolpointindextype.md)
   The size of the control point indices in a control point index buffer.
-- [var tessellationFactorStepFunction: MTLTessellationFactorStepFunction](mtlrenderpipelinedescriptor/tessellationfactorstepfunction.md)
+- [var tessellationFactorStepFunction: MTLTessellationFactorStepFunction](./mtlrenderpipelinedescriptor/tessellationfactorstepfunction.md)
   The step function for determining the tessellation factors for a patch from the tessellation factor buffer.
-- [var tessellationOutputWindingOrder: MTLWinding](mtlrenderpipelinedescriptor/tessellationoutputwindingorder.md)
+- [var tessellationOutputWindingOrder: MTLWinding](./mtlrenderpipelinedescriptor/tessellationoutputwindingorder.md)
   The winding order of triangles from the tessellator.
-- [var tessellationPartitionMode: MTLTessellationPartitionMode](mtlrenderpipelinedescriptor/tessellationpartitionmode.md)
+- [var tessellationPartitionMode: MTLTessellationPartitionMode](./mtlrenderpipelinedescriptor/tessellationpartitionmode.md)
   The partitioning mode that the tessellator uses to derive the number and spacing of segments for subdividing a corresponding edge.
-- [enum MTLTessellationFactorFormat](mtltessellationfactorformat.md)
+- [enum MTLTessellationFactorFormat](./mtltessellationfactorformat.md)
   Options for specifying the format of the tessellation factors in a tessellation factor buffer.
-- [enum MTLTessellationControlPointIndexType](mtltessellationcontrolpointindextype.md)
+- [enum MTLTessellationControlPointIndexType](./mtltessellationcontrolpointindextype.md)
   Options for specifying the size of the control point indices in a control point index buffer.
-- [enum MTLTessellationPartitionMode](mtltessellationpartitionmode.md)
+- [enum MTLTessellationPartitionMode](./mtltessellationpartitionmode.md)
   Options for choosing the partition mode that the tessellator applies when deriving the number and spacing of segments for subdividing a corresponding edge.
 
 

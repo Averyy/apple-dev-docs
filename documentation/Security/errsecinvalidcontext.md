@@ -1,7 +1,8 @@
 # errSecInvalidContext
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid context was detected.
 
@@ -18,6 +19,10 @@ An invalid context was detected.
 
 ```swift
 var errSecInvalidContext: OSStatus { get }
+```
+
+```c
+errSecInvalidContext
 ```
 
 

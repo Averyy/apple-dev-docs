@@ -1,12 +1,13 @@
 # currentTime
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback point, measured in seconds, from the beginning of the audio file.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The current playback point, measured in seconds, from the beginning of the audio
 var currentTime: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval currentTime;
+```
+
 #### Discussion
 
 This property refers to how much of the audio file has already been played. The value in this property is updated during playback to reflect the current position of the playhead.
 
-The value of this property is valid only when the player item’s status is [`WKAudioFilePlayerItemStatus.readyToPlay`](wkaudiofileplayeritemstatus/readytoplay.md).
+The value of this property is valid only when the player item’s status is [`WKAudioFilePlayerItemStatus.readyToPlay`](../wkaudiofileplayeritemstatus/readytoplay.md).
 
 ## See Also
 
-- [func setCurrentTime(TimeInterval)](wkaudiofileplayeritem/setcurrenttime(_:).md)
+### Managing the Playback Position
+- [func setCurrentTime(TimeInterval)](./setcurrenttime%28_%29.md)
   Sets the playback point, measured in seconds, from the beginning of the audio file.
 
 

@@ -1,7 +1,8 @@
 # CountVoices(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines how many voices are available.
 
@@ -14,9 +15,13 @@ Determines how many voices are available.
 func CountVoices(_ numVoices: UnsafeMutablePointer<Int16>) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr CountVoices(SInt16 *numVoices);
+```
 
-A resultcode. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
@@ -30,13 +35,14 @@ Each time `CountVoices` iscalled, the Speech Synthesis Manager searches for new 
 
 ## See Also
 
-- [func GetIndVoice(Int16, UnsafeMutablePointer<VoiceSpec>) -> OSErr](1464595-getindvoice.md)
+### Getting Information About Voices
+- [func GetIndVoice(Int16, UnsafeMutablePointer<VoiceSpec>) -> OSErr](./api-1464595-getindvoice.md)
   Gets a voice specification structure for a voice bypassing an index to the `GetIndVoice` function.
-- [func GetVoiceDescription(UnsafePointer<VoiceSpec>?, UnsafeMutablePointer<VoiceDescription>?, Int) -> OSErr](1463940-getvoicedescription.md)
+- [func GetVoiceDescription(UnsafePointer<VoiceSpec>?, UnsafeMutablePointer<VoiceDescription>?, Int) -> OSErr](./api-1463940-getvoicedescription.md)
   Gets a description of a voice by using the `GetVoiceDescription` function.
-- [func GetVoiceInfo(UnsafePointer<VoiceSpec>?, OSType, UnsafeMutableRawPointer) -> OSErr](1461410-getvoiceinfo.md)
+- [func GetVoiceInfo(UnsafePointer<VoiceSpec>?, OSType, UnsafeMutableRawPointer) -> OSErr](./api-1461410-getvoiceinfo.md)
   Gets the same information about a voice that the `GetVoiceDescription` function provides,or to determine in which file and resource a voice is stored. 
-- [func MakeVoiceSpec(OSType, OSType, UnsafeMutablePointer<VoiceSpec>) -> OSErr](1461446-makevoicespec.md)
+- [func MakeVoiceSpec(OSType, OSType, UnsafeMutablePointer<VoiceSpec>) -> OSErr](./api-1461446-makevoicespec.md)
   Sets the fields of a voice specification structure. 
 
 

@@ -1,7 +1,8 @@
 # preGain
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gain that the audio unit applies to the signal before distortion, in decibels.
 
@@ -19,13 +20,18 @@ The gain that the audio unit applies to the signal before distortion, in decibel
 var preGain: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float preGain;
+```
+
 #### Discussion
 
 The default value is `-6 dB`. The valid range of values is `-80 dB` to `20 dB`.
 
 ## See Also
 
-- [var wetDryMix: Float](avaudiounitdistortion/wetdrymix.md)
+### Adjusting gain and mix
+- [var wetDryMix: Float](./wetdrymix.md)
   The blend of the distorted and dry signals.
 
 

@@ -1,7 +1,8 @@
 # VTSuperResolutionScalerConfiguration.ModelStatus
 
 **Framework**: Video Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Available super-resolution processor model status types.
 
@@ -17,32 +18,37 @@ Available super-resolution processor model status types.
 enum ModelStatus
 ```
 
+```c
+enum VTSuperResolutionScalerConfigurationModelStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [VTSuperResolutionScalerConfiguration.ModelStatus.downloadRequired](vtsuperresolutionscalerconfiguration/modelstatus/downloadrequired.md)
-- [VTSuperResolutionScalerConfiguration.ModelStatus.downloading](vtsuperresolutionscalerconfiguration/modelstatus/downloading.md)
-- [VTSuperResolutionScalerConfiguration.ModelStatus.ready](vtsuperresolutionscalerconfiguration/modelstatus/ready.md)
+- [VTSuperResolutionScalerConfiguration.ModelStatus.downloadRequired](./modelstatus/downloadrequired.md)
+- [VTSuperResolutionScalerConfiguration.ModelStatus.downloading](./modelstatus/downloading.md)
+- [VTSuperResolutionScalerConfiguration.ModelStatus.ready](./modelstatus/ready.md)
 ### Initializers
-- [init?(rawValue: Int)](vtsuperresolutionscalerconfiguration/modelstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./modelstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var configurationModelStatus: VTSuperResolutionScalerConfiguration.ModelStatus](vtsuperresolutionscalerconfiguration/configurationmodelstatus.md)
+### Managing the configuration model
+- [var configurationModelStatus: VTSuperResolutionScalerConfiguration.ModelStatus](./configurationmodelstatus.md)
   Reports the download status of models that the system needs for the current configuration.
-- [var configurationModelPercentageAvailable: Float](vtsuperresolutionscalerconfiguration/configurationmodelpercentageavailable.md)
+- [var configurationModelPercentageAvailable: Float](./configurationmodelpercentageavailable.md)
   Returns a floating point value between 0.0 and 1.0 indicating the percentage of required model assets that have been downloaded.
-- [func downloadConfigurationModel(completionHandler: ((any Error)?) -> Void)](vtsuperresolutionscalerconfiguration/downloadconfigurationmodel(completionhandler:).md)
+- [func downloadConfigurationModel(completionHandler: ((any Error)?) -> Void)](./downloadconfigurationmodel%28completionhandler%29.md)
   Downloads models that the system needs for the current configuration.
 
 

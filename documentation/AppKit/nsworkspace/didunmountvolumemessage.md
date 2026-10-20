@@ -1,7 +1,8 @@
 # NSWorkspace.DidUnmountVolumeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,16 +16,16 @@ struct DidUnmountVolumeMessage
 ## Topics
 
 ### Initializers
-- [init(localizedVolumeName: String, volumeURL: URL)](nsworkspace/didunmountvolumemessage/init(localizedvolumename:volumeurl:).md)
+- [init(localizedVolumeName: String, volumeURL: URL)](./didunmountvolumemessage/init%28localizedvolumename,volumeurl%29.md)
 ### Instance Properties
-- [var localizedVolumeName: String](nsworkspace/didunmountvolumemessage/localizedvolumename.md)
-- [var volumeURL: URL](nsworkspace/didunmountvolumemessage/volumeurl.md)
+- [var localizedVolumeName: String](./didunmountvolumemessage/localizedvolumename.md)
+- [var volumeURL: URL](./didunmountvolumemessage/volumeurl.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

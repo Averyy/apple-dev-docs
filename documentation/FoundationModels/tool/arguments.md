@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The arguments that this tool should accept.
@@ -22,17 +23,18 @@ associatedtype Arguments : ConvertibleFromGeneratedContent
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 
 #### Discussion
 
-Typically arguments are either a [`Generable`](generable.md) type or [`GeneratedContent`](generatedcontent.md).
+Typically arguments are either a [`Generable`](../generable.md) type or [`GeneratedContent`](../generatedcontent.md).
 
 ## See Also
 
-- [func call(arguments: Self.Arguments) async throws -> Self.Output](tool/call(arguments:).md)
+### Calling a tool
+- [func call(arguments: Self.Arguments) async throws -> Self.Output](./call%28arguments%29.md)
   Performs the tool’s action when a language model wants to use this tool.
-- [associatedtype Output : PromptRepresentable](tool/output.md)
+- [associatedtype Output : PromptRepresentable](./output.md)
   The output that this tool produces for the language model to reason about in subsequent interactions.
 
 

@@ -1,7 +1,8 @@
 # accessPointConnections
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of access points to which the host connects for networks someone authorized to share to the device.
 
@@ -18,7 +19,7 @@ let accessPointConnections: [WINetworkSharingProvider.AccessPointConnection]
 
 #### Discussion
 
-The Wi-Fi Infrastructure framework filters this list to access points matching the predicate you provide when getting the [`accessPointConnectionEvents(matching:)`](winetworksharingprovider/accesspointconnectionevents(matching:).md) sequence.
+The Wi-Fi Infrastructure framework filters this list to access points matching the predicate you provide when getting the [`accessPointConnectionEvents(matching:)`](../accesspointconnectionevents%28matching%29.md) sequence.
 
 
 ---

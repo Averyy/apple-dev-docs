@@ -1,7 +1,8 @@
 # successfulEndpoint
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resolved endpoint that led to the established connection.
 
@@ -22,9 +23,10 @@ let successfulEndpoint: NWEndpoint
 
 ## See Also
 
-- [let preferredEndpoint: NWEndpoint](nwconnection/establishmentreport/resolution/preferredendpoint.md)
+### Examining Resolved Endpoints
+- [let preferredEndpoint: NWEndpoint](./preferredendpoint.md)
   The resolved endpoint that the connection used for its first connection attempt.
-- [let endpointCount: Int](nwconnection/establishmentreport/resolution/endpointcount.md)
+- [let endpointCount: Int](./endpointcount.md)
   The number of endpoints resolved in this step.
 
 

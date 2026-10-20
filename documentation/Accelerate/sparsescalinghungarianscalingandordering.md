@@ -1,7 +1,8 @@
 # SparseScalingHungarianScalingAndOrdering
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Scaling and ordering using the Hungarian algorithm.
 
@@ -20,6 +21,10 @@ Scaling and ordering using the Hungarian algorithm.
 var SparseScalingHungarianScalingAndOrdering: SparseScaling_t { get }
 ```
 
+```c
+SparseScalingHungarianScalingAndOrdering
+```
+
 #### Discussion
 
 The Sparse Solvers library uses the associated matching to place large entries on the diagonal. This option is only valid if you use a combined symbolic and numeric call to `SparseFactor`()`. The Sparse Solvers library only supports this option for LU factorizations.
@@ -28,13 +33,14 @@ This algorithm is similar to MC64.
 
 ## See Also
 
-- [var SparseScalingDefault: SparseScaling_t](sparsescalingdefault.md)
+### Constants
+- [var SparseScalingDefault: SparseScaling_t](./sparsescalingdefault.md)
   Default scaling.
-- [var SparseScalingUser: SparseScaling_t](sparsescalinguser.md)
+- [var SparseScalingUser: SparseScaling_t](./sparsescalinguser.md)
   User scaling.
-- [var SparseScalingEquilibriationInf: SparseScaling_t](sparsescalingequilibriationinf.md)
+- [var SparseScalingEquilibriationInf: SparseScaling_t](./sparsescalingequilibriationinf.md)
   The norm equilibration scaling using infinity norm.
-- [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
+- [var SparseScalingHungarianScalingOnly: SparseScaling_t](./sparsescalinghungarianscalingonly.md)
   Scaling using the Hungarian algorithm.
 
 

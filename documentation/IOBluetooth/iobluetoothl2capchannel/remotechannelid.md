@@ -1,17 +1,22 @@
 # remoteChannelID
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the remote L2CAP channel ID for the target L2CAP channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var remoteChannelID: BluetoothL2CAPChannelID { get }
+```
+
+```objc
+@property (assign, readonly) BluetoothL2CAPChannelID remoteChannelID;
 ```
 
 

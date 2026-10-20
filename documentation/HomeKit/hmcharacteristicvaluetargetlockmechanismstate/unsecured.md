@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetLockMechanismState.unsecured
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unsecured lock mechanism.
 
@@ -19,9 +20,14 @@ An unsecured lock mechanism.
 case unsecured
 ```
 
+```c
+HMCharacteristicValueTargetLockMechanismStateUnsecured
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetLockMechanismState.secured](hmcharacteristicvaluetargetlockmechanismstate/secured.md)
+### Lock Mechanism States
+- [HMCharacteristicValueTargetLockMechanismState.secured](./secured.md)
   A secured lock mechanism.
 
 

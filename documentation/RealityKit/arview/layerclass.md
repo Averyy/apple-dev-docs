@@ -1,7 +1,8 @@
 # layerClass
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The class used to create the layer for view instances.
 
@@ -20,22 +21,23 @@ The class used to create the layer for view instances.
 
 ## See Also
 
-- [var frame: NSRect](arview/frame.md)
+### Managing the view
+- [var frame: NSRect](./frame.md)
   The frame rectangle, which describes the view’s location and size in the coordinate system of the view’s superview.
-- [var contentScaleFactor: CGFloat](arview/contentscalefactor.md)
+- [var contentScaleFactor: CGFloat](./contentscalefactor.md)
   The scale factor of the content in the view.
-- [func didMoveToSuperview()](arview/didmovetosuperview.md)
+- [func didMoveToSuperview()](./didmovetosuperview%28%29.md)
   Tells the view that its superview changed.
-- [func didMoveToWindow()](arview/didmovetowindow.md)
+- [func didMoveToWindow()](./didmovetowindow%28%29.md)
   Tells the view that its window property is set to a new value.
-- [func layoutSubviews()](arview/layoutsubviews.md)
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Lays out subviews.
-- [func layout()](arview/layout.md)
-- [func makeBackingLayer() -> CALayer](arview/makebackinglayer.md)
+- [func layout()](./layout%28%29.md)
+- [func makeBackingLayer() -> CALayer](./makebackinglayer%28%29.md)
   Creates the view’s backing layer.
-- [func viewDidChangeBackingProperties()](arview/viewdidchangebackingproperties.md)
+- [func viewDidChangeBackingProperties()](./viewdidchangebackingproperties%28%29.md)
   Tells the view when its backing store properties change.
-- [func viewDidMoveToSuperview()](arview/viewdidmovetosuperview.md)
+- [func viewDidMoveToSuperview()](./viewdidmovetosuperview%28%29.md)
   Tells the view that it has a new superview or that the view’s superview has been removed.
 
 

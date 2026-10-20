@@ -1,7 +1,8 @@
 # MPSRNNBidirectionalCombineMode.none
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode in which two sequences are kept separate.
 
@@ -19,11 +20,16 @@ A mode in which two sequences are kept separate.
 case none
 ```
 
+```c
+MPSRNNBidirectionalCombineModeNone
+```
+
 ## See Also
 
-- [MPSRNNBidirectionalCombineMode.add](mpsrnnbidirectionalcombinemode/add.md)
+### Enumeration Cases
+- [MPSRNNBidirectionalCombineMode.add](./add.md)
   A mode in which two sequences are summed to form a single output.
-- [MPSRNNBidirectionalCombineMode.concatenate](mpsrnnbidirectionalcombinemode/concatenate.md)
+- [MPSRNNBidirectionalCombineMode.concatenate](./concatenate.md)
   A mode in which two sequences are concatenated along the feature channels to form a single output.
 
 

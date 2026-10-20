@@ -1,7 +1,8 @@
 # virtualMachineLimitExceeded
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an error code that indicates whether the system exceeded the limit on the number of running virtual machines.
 

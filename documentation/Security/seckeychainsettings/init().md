@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a keychain settings structure with default values.
 

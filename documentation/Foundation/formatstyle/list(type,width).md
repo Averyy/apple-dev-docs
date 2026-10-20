@@ -1,7 +1,8 @@
 # list(type:width:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a format style to format a list of strings.
 
@@ -26,9 +27,9 @@ A list format style that formats a string array as a textual list of items.
 
 #### Discussion
 
-Use the dot-notation form of this type method when the call point allows the use of [`ListFormatStyle`](listformatstyle.md), and the [`Sequence`](https://developer.apple.com/documentation/swift/sequence) element type is [`String`](https://developer.apple.com/documentation/swift/string). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) method of [`Sequence`](https://developer.apple.com/documentation/swift/sequence).
+Use the dot-notation form of this type method when the call point allows the use of [`ListFormatStyle`](../listformatstyle.md), and the [`Sequence`](../../Swift/sequence.md) element type is [`String`](../../Swift/string.md). You typically do this when calling the [`formatted(_:)`](../../Swift/sequence/formatted%28_%29.md) method of [`Sequence`](../../Swift/sequence.md).
 
-The following example creates an array of strings, then uses [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) and the list format style provided by this method to format the items. It modifies the list format style to use the `en_US` locale, so the resulting string uses US English conventions for commas and conjunctions (“and”).
+The following example creates an array of strings, then uses [`formatted(_:)`](../../Swift/sequence/formatted%28_%29.md) and the list format style provided by this method to format the items. It modifies the list format style to use the `en_US` locale, so the resulting string uses US English conventions for commas and conjunctions (“and”).
 
 ```swift
 let items = ["Atlantic", "Pacific", "Indian", "Arctic", "Southern"]
@@ -39,12 +40,13 @@ let formatted = items.formatted(
 
 ## Parameters
 
-- `type`: The list type to apply, such as cumulative ([`ListFormatStyle.ListType.and`](listformatstyle/listtype-swift.enum/and.md)) or alternative ([`ListFormatStyle.ListType.or`](listformatstyle/listtype-swift.enum/or.md)) elements.
-- `width`: The width to use when formatting, such as [`ListFormatStyle.Width.standard`](listformatstyle/width-swift.enum/standard.md) or [`ListFormatStyle.Width.narrow`](listformatstyle/width-swift.enum/narrow.md).
+- `type`: The list type to apply, such as cumulative ([`ListFormatStyle.ListType.and`](../listformatstyle/listtype-swift.enum/and.md)) or alternative ([`ListFormatStyle.ListType.or`](../listformatstyle/listtype-swift.enum/or.md)) elements.
+- `width`: The width to use when formatting, such as [`ListFormatStyle.Width.standard`](../listformatstyle/width-swift.enum/standard.md) or [`ListFormatStyle.Width.narrow`](../listformatstyle/width-swift.enum/narrow.md).
 
 ## See Also
 
-- [static func list<MemberStyle, Base>(memberStyle: MemberStyle, type: ListFormatStyle<MemberStyle, Base>.ListType, width: ListFormatStyle<MemberStyle, Base>.Width) -> Self](formatstyle/list(memberstyle:type:width:).md)
+### Applying list styles
+- [static func list<MemberStyle, Base>(memberStyle: MemberStyle, type: ListFormatStyle<MemberStyle, Base>.ListType, width: ListFormatStyle<MemberStyle, Base>.Width) -> Self](./list%28memberstyle,type,width%29.md)
   Returns a format style to format a list of items.
 
 

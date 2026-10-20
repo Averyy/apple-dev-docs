@@ -1,7 +1,8 @@
 # Read Information for Alternative Distribution Package Deltas
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get detail information about specific alternative distribution package deltas.
 
@@ -14,7 +15,7 @@ Get detail information about specific alternative distribution package deltas.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageDeltas/9d53ac02-f669-4bf7-baff-019a17f33ee9
 ```
 
@@ -46,11 +47,29 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageDeltas/9d
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the alternative distribution package delta resource ID from the [`List Deltas Information`](./get-v1-alternativedistributionpackageversions-_id_-deltas.md) response.
+
+### Query Parameters
+
 - `fields[alternativeDistributionPackageDeltas]` ([string]): Additional fields to include for each alternative distribution package deltas resource returned by the response.
+
+  **Allowed Values**: `url`, `urlExpirationDate`, `alternativeDistributionKeyBlob`, `fileChecksum`
+
+## Responses
+
+- `200` OK (`AlternativeDistributionPackageDeltaResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List Deltas Information](get-v1-alternativedistributionpackageversions-_id_-deltas.md)
+### Getting delta information
+- [List Deltas Information](./get-v1-alternativedistributionpackageversions-_id_-deltas.md)
   List deltas for a specific alternative distribution package version.
 
 

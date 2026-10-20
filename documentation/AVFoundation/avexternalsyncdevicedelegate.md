@@ -1,9 +1,10 @@
 # AVExternalSyncDeviceDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-Defines an interface for delegates of [`AVCaptureDeviceInput`](avcapturedeviceinput.md) to respond to events that occur when connecting, calibrating, and disconnecting external sync devices.
+Defines an interface for delegates of [`AVCaptureDeviceInput`](./avcapturedeviceinput.md) to respond to events that occur when connecting, calibrating, and disconnecting external sync devices.
 
 **Availability**:
 - iOS 26.0+
@@ -18,25 +19,30 @@ Defines an interface for delegates of [`AVCaptureDeviceInput`](avcapturedevicein
 protocol AVExternalSyncDeviceDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVExternalSyncDeviceDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to device events
-- [func externalSyncDevice(AVExternalSyncDevice, failedWithError: (any Error)?)](avexternalsyncdevicedelegate/externalsyncdevice(_:failedwitherror:).md)
-- [func externalSyncDeviceStatusDidChange(AVExternalSyncDevice)](avexternalsyncdevicedelegate/externalsyncdevicestatusdidchange(_:).md)
+- [func externalSyncDevice(AVExternalSyncDevice, failedWithError: (any Error)?)](./avexternalsyncdevicedelegate/externalsyncdevice%28_,failedwitherror%29.md)
+- [func externalSyncDeviceStatusDidChange(AVExternalSyncDevice)](./avexternalsyncdevicedelegate/externalsyncdevicestatusdidchange%28_%29.md)
   Informs your delegate when the external sync device status has changed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVExternalSyncDevice](avexternalsyncdevice.md)
+### External synchronization
+- [class AVExternalSyncDevice](./avexternalsyncdevice.md)
   An external sync device connected to a host device that can be used to drive the timing of an internal component, such as a camera sensor.
-- [enum AVExternalSyncDeviceStatus](avexternalsyncdevicestatus.md)
+- [enum AVExternalSyncDeviceStatus](./avexternalsyncdevicestatus.md)
   Connection state of an external sync device
-- [AVExternalSyncDevice.DiscoverySession](avexternalsyncdevice/discoverysession.md)
+- [AVExternalSyncDevice.DiscoverySession](./avexternalsyncdevice/discoverysession.md)
   A means of discovering and monitoring connection / disconnection of external sync devices to the host.
 
 

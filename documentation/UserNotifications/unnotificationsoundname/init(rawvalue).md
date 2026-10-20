@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a notification sound name using the string parameter.
 
@@ -26,7 +27,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](unnotificationsoundname/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates a notification sound name using the string parameter.
 
 

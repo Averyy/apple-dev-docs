@@ -1,7 +1,8 @@
 # nsPredicate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s predicate.
 
@@ -22,9 +23,9 @@ var nsPredicate: NSPredicate?
 
 #### Discussion
 
-Set this configuration value to cause a [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new predicate.
+Set this configuration value to cause a [`SectionedFetchRequest`](../../sectionedfetchrequest.md) to execute a fetch with a new predicate.
 
-Access this value for a given request by using the [`nsPredicate`](sectionedfetchresults/nspredicate.md) property on the associated [`SectionedFetchResults`](sectionedfetchresults.md) instance, either directly or with a [`Binding`](binding.md).
+Access this value for a given request by using the [`nsPredicate`](../../sectionedfetchresults/nspredicate.md) property on the associated [`SectionedFetchResults`](../../sectionedfetchresults.md) instance, either directly or with a [`Binding`](../../binding.md).
 
 
 ---

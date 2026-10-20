@@ -1,7 +1,8 @@
 # attenuationRadius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the light source where its intensity reaches zero.
 
@@ -23,13 +24,14 @@ var attenuationRadius: Float
 
 Any objects at or beyond this distance do not receive illumination. The default value is `10.0` meters.
 
-See [`PointLightComponent`](pointlightcomponent.md) for more information about how the [`intensity`](pointlightcomponent/intensity.md) and `attenuationRadius` properties affect this light.
+See [`PointLightComponent`](../pointlightcomponent.md) for more information about how the [`intensity`](./intensity.md) and `attenuationRadius` properties affect this light.
 
 ## See Also
 
-- [var intensity: Float](pointlightcomponent/intensity.md)
+### Configuring the light
+- [var intensity: Float](./intensity.md)
   The intensity of the point light, measured in lumen.
-- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent.md)
+- [var attenuationFalloffExponent: Float](./attenuationfalloffexponent.md)
   The exponent value for the light’s intensity falloff-transition curve.
 
 

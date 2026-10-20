@@ -1,7 +1,8 @@
 # RecognizeDocumentsRequest.TextRecognitionOptions
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration object for detected and recognized text within the document.
 
@@ -22,40 +23,41 @@ struct TextRecognitionOptions
 ## Topics
 
 ### Inspecting the recognized text
-- [var automaticallyDetectLanguage: Bool](recognizedocumentsrequest/textrecognitionoptions-swift.struct/automaticallydetectlanguage.md)
+- [var automaticallyDetectLanguage: Bool](./textrecognitionoptions-swift.struct/automaticallydetectlanguage.md)
   A Boolean value that indicates whether to attempt detecting the language to use the appropriate model for recognition and language correction.
-- [var customWords: [String]](recognizedocumentsrequest/textrecognitionoptions-swift.struct/customwords.md)
+- [var customWords: [String]](./textrecognitionoptions-swift.struct/customwords.md)
   An array of strings to supplement the recognized languages at the word-recognition stage.
-- [var maximumCandidateCount: Int](recognizedocumentsrequest/textrecognitionoptions-swift.struct/maximumcandidatecount.md)
+- [var maximumCandidateCount: Int](./textrecognitionoptions-swift.struct/maximumcandidatecount.md)
   The maximum number of text candidates to return.
-- [var minimumTextHeightFraction: Float](recognizedocumentsrequest/textrecognitionoptions-swift.struct/minimumtextheightfraction.md)
+- [var minimumTextHeightFraction: Float](./textrecognitionoptions-swift.struct/minimumtextheightfraction.md)
   The minimum height, relative to the image height, of the text to recognize.
-- [var recognitionLanguages: [Locale.Language]](recognizedocumentsrequest/textrecognitionoptions-swift.struct/recognitionlanguages.md)
+- [var recognitionLanguages: [Locale.Language]](./textrecognitionoptions-swift.struct/recognitionlanguages.md)
   An array of languages to detect, in priority order.
-- [var useLanguageCorrection: Bool](recognizedocumentsrequest/textrecognitionoptions-swift.struct/uselanguagecorrection.md)
+- [var useLanguageCorrection: Bool](./textrecognitionoptions-swift.struct/uselanguagecorrection.md)
   A Boolean value that indicates whether the request applies language correction during the recognition process.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RecognizeDocumentsRequest.BarcodeDetectionOptions](recognizedocumentsrequest/barcodedetectionoptions-swift.struct.md)
+### Configuring a request
+- [RecognizeDocumentsRequest.BarcodeDetectionOptions](./barcodedetectionoptions-swift.struct.md)
   A configuration object for detecting barcodes in a document.
-- [var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions](recognizedocumentsrequest/barcodedetectionoptions-swift.property.md)
+- [var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions](./barcodedetectionoptions-swift.property.md)
   Configuration for detecting machine-readable codes in the document.
-- [var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions](recognizedocumentsrequest/textrecognitionoptions-swift.property.md)
+- [var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions](./textrecognitionoptions-swift.property.md)
   Configuration for recognizing text in the document.
-- [var supportedBarcodeSymbologies: [BarcodeSymbology]](recognizedocumentsrequest/supportedbarcodesymbologies.md)
+- [var supportedBarcodeSymbologies: [BarcodeSymbology]](./supportedbarcodesymbologies.md)
   The collection of revisions the request supports.
-- [var supportedRecognitionLanguages: [Locale.Language]](recognizedocumentsrequest/supportedrecognitionlanguages.md)
+- [var supportedRecognitionLanguages: [Locale.Language]](./supportedrecognitionlanguages.md)
   The identifiers of the languages that the request supports.
 
 

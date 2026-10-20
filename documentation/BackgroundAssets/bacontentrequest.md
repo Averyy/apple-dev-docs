@@ -1,7 +1,8 @@
 # BAContentRequest
 
 **Framework**: Background Assets  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that indicates the purpose of a content download request.
 
@@ -19,34 +20,39 @@ A type that indicates the purpose of a content download request.
 enum BAContentRequest
 ```
 
+```c
+enum BAContentRequest : NSInteger;
+```
+
 ## Topics
 
 ### Content request types
-- [BAContentRequest.install](bacontentrequest/install.md)
+- [BAContentRequest.install](./bacontentrequest/install.md)
   A content request resulting from the installation of the app.
-- [BAContentRequest.periodic](bacontentrequest/periodic.md)
+- [BAContentRequest.periodic](./bacontentrequest/periodic.md)
   A content request resulting from a system request for updated content within the app.
-- [BAContentRequest.update](bacontentrequest/update.md)
+- [BAContentRequest.update](./bacontentrequest/update.md)
   A content request resulting from an update of the app.
-- [BAContentRequest.languageChange](bacontentrequest/languagechange.md)
+- [BAContentRequest.languageChange](./bacontentrequest/languagechange.md)
   A content request resulting from someone changing the app’s preferred language.
 ### Initializers
-- [init?(rawValue: Int)](bacontentrequest/init(rawvalue:).md)
+- [init?(rawValue: Int)](./bacontentrequest/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func downloads(for: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>](badownloaderextension-qwaw/downloads(for:manifesturl:extensioninfo:).md)
-- [class BAAppExtensionInfo](baappextensioninfo.md)
+### Checking for asset updates
+- [func downloads(for: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>](./badownloaderextension-qwaw/downloads%28for,manifesturl,extensioninfo%29.md)
+- [class BAAppExtensionInfo](./baappextensioninfo.md)
 
 
 ---

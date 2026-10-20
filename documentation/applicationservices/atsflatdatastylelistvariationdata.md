@@ -1,7 +1,8 @@
 # ATSFlatDataStyleListVariationData
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSFlatDataStyleListVariationData
 ```
 
+```c
+typedef struct ATSFlatDataStyleListVariationData {
+    ...
+} ATSFlatDataStyleListVariationData;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsflatdatastylelistvariationdata/1460818-init.md)
-- [init(theVariationAxis: ATSUFontVariationAxis, theVariationValue: ATSUFontVariationValue)](atsflatdatastylelistvariationdata/1462840-init.md)
+- [init()](./atsflatdatastylelistvariationdata/api-1460818-init.md)
+- [init(theVariationAxis: ATSUFontVariationAxis, theVariationValue: ATSUFontVariationValue)](./atsflatdatastylelistvariationdata/api-1462840-init.md)
 ### Instance Properties
-- [var theVariationAxis: ATSUFontVariationAxis](atsflatdatastylelistvariationdata/1459497-thevariationaxis.md)
-- [var theVariationValue: ATSUFontVariationValue](atsflatdatastylelistvariationdata/1458824-thevariationvalue.md)
+- [var theVariationAxis: ATSUFontVariationAxis](./atsflatdatastylelistvariationdata/api-1459497-thevariationaxis.md)
+- [var theVariationValue: ATSUFontVariationValue](./atsflatdatastylelistvariationdata/api-1458824-thevariationvalue.md)
 
 
 ---

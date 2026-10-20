@@ -1,7 +1,8 @@
 # testEnumsRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testEnumsRequest(with params: MTRUnitTestingClusterTestEnumsRequestParams, completion: @escaping @Sendable (MTRUnitTestingClusterTestEnumsResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testEnumsRequest(with params: MTRUnitTestingClusterTestEnumsRequestParams) async throws -> MTRUnitTestingClusterTestEnumsResponseParams
+```
+
+```objc
+- (void) testEnumsRequestWithParams:(MTRUnitTestingClusterTestEnumsRequestParams *) params completion:(void (^)(MTRUnitTestingClusterTestEnumsResponseParams *data, NSError *error)) completion;
 ```
 
 

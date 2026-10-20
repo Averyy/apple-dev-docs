@@ -1,7 +1,8 @@
 # VideoPlayerEvents.VideoComfortMitigationDidOccur
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The system detects a video comfort violation and triggers the event along with the comfort mitigation action
 
@@ -17,15 +18,15 @@ struct VideoComfortMitigationDidOccur
 ## Topics
 
 ### Instance Properties
-- [let comfortMitigation: VideoPlayerComponent.VideoComfortMitigation](videoplayerevents/videocomfortmitigationdidoccur/comfortmitigation.md)
+- [let comfortMitigation: VideoPlayerComponent.VideoComfortMitigation](./videocomfortmitigationdidoccur/comfortmitigation.md)
   Video comfort mitigation action occurred
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

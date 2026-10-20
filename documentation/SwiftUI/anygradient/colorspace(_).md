@@ -1,7 +1,8 @@
 # colorSpace(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a version of the gradient that will use a specified color space for interpolating between its colors.
 

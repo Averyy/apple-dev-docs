@@ -1,7 +1,8 @@
 # image
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display in the action button.
 
@@ -18,11 +19,16 @@ The image to display in the action button.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIImage * image;
+```
+
 ## See Also
 
-- [var title: String?](uicontextualaction/title.md)
+### Configuring the appearance
+- [var title: String?](./title.md)
   The title displayed on the action button.
-- [var backgroundColor: UIColor!](uicontextualaction/backgroundcolor.md)
+- [var backgroundColor: UIColor!](./backgroundcolor.md)
   The background color of the action button.
 
 

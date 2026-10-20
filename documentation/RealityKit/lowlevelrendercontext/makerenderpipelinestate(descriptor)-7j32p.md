@@ -2,9 +2,10 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-Synchronous variant of [`makeRenderPipelineState(descriptor:)`](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-7j32p.md). Blocks the current thread until compilation completes.
+Synchronous variant of [`makeRenderPipelineState(descriptor:)`](./makerenderpipelinestate%28descriptor%29-7j32p.md). Blocks the current thread until compilation completes.
 
 **Availability**:
 - iOS 27.0+
@@ -18,11 +19,19 @@ Synchronous variant of [`makeRenderPipelineState(descriptor:)`](lowlevelrenderco
 func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState
+```
+
 ## See Also
 
-- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-55ty6.md)
+### Creating pipeline state
+- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState](./makerenderpipelinestate%28descriptor%29-55ty6.md)
   Asynchronously compiles a Metal render pipeline state from the given descriptor.
-- [func makeArgumentTable(descriptor: LowLevelArgumentTable.Descriptor, buffers: [LowLevelBufferSlice], textures: [LowLevelTextureResource]) throws -> LowLevelArgumentTable](lowlevelrendercontext/makeargumenttable(descriptor:buffers:textures:).md)
+- [func makeArgumentTable(descriptor: LowLevelArgumentTable.Descriptor, buffers: [LowLevelBufferSlice], textures: [LowLevelTextureResource]) throws -> LowLevelArgumentTable](./makeargumenttable%28descriptor,buffers,textures%29.md)
   Creates an argument table that binds the provided buffer slices and textures.
 
 

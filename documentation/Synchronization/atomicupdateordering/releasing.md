@@ -1,7 +1,8 @@
 # releasing
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A releasing update synchronizes with acquiring operations that read the value it stores. It ensures that the releasing and acquiring threads agree that all preceding variable accesses on the releasing thread happen before the atomic operation itself.
 

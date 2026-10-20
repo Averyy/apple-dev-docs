@@ -1,7 +1,8 @@
 # session
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A capture session with visual output to preview.
 
@@ -18,15 +19,20 @@ A capture session with visual output to preview.
 var session: AVCaptureSession? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) AVCaptureSession * session;
+```
+
 ## Mentions
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+- [Setting up a capture session](../setting-up-a-capture-session.md)
 
 ## See Also
 
-- [var connection: AVCaptureConnection?](avcapturevideopreviewlayer/connection.md)
+### Session configuration
+- [var connection: AVCaptureConnection?](./connection.md)
   An object that describes the connection from the layer to a particular input port.
-- [func setSessionWithNoConnection(AVCaptureSession)](avcapturevideopreviewlayer/setsessionwithnoconnection(_:).md)
+- [func setSessionWithNoConnection(AVCaptureSession)](./setsessionwithnoconnection%28_%29.md)
   Associates a session with the layer without automatically forming a connection to an eligible input port.
 
 

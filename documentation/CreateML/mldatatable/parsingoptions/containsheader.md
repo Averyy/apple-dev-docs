@@ -1,7 +1,8 @@
 # containsHeader
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether an input CSV file contains a header.
 
@@ -25,9 +26,10 @@ Set `containsHeader` to `false` when the first row in a CSV contains usable data
 
 ## See Also
 
-- [var delimiter: String](mldatatable/parsingoptions/delimiter.md)
+### Specifying the CSV file format
+- [var delimiter: String](./delimiter.md)
   The character that separates the data fields in a CSV file.
-- [var lineTerminator: String](mldatatable/parsingoptions/lineterminator.md)
+- [var lineTerminator: String](./lineterminator.md)
   The character that represents the end of a line in a CSV file.
 
 

@@ -1,7 +1,8 @@
 # waitUntilCompleted
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The flag that blocks the execution call until the entire execution is complete.
 
@@ -17,6 +18,10 @@ The flag that blocks the execution call until the entire execution is complete.
 
 ```swift
 var waitUntilCompleted: Bool { get set }
+```
+
+```objc
+@property (atomic, readwrite) BOOL waitUntilCompleted;
 ```
 
 #### Discussion

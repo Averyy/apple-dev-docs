@@ -1,7 +1,8 @@
 # extrinsicOrientationQuaternion
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Camera’s orientation to a world or scene coordinate system. The orientation value is a unit quaternion (ix, iy, and iz) instead of the classical 3x3 matrix.
 

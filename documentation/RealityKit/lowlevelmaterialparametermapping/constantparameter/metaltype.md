@@ -1,7 +1,8 @@
 # metalType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal data type of this constant.
 

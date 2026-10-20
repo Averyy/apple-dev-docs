@@ -1,7 +1,8 @@
 # Link
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control for navigating to a URL.
 
@@ -30,7 +31,7 @@ Link("View Our Terms of Service",
       destination: URL(string: "https://www.example.com/TOS.html")!)
 ```
 
-When a user taps or clicks a `Link`, the default behavior depends on the contents of the URL. For example, SwiftUI opens a Universal Link in the associated app if possible, or in the user’s default web browser if not. Alternatively, you can override the default behavior by setting the [`openURL`](environmentvalues/openurl.md) environment value with a custom [`OpenURLAction`](openurlaction.md):
+When a user taps or clicks a `Link`, the default behavior depends on the contents of the URL. For example, SwiftUI opens a Universal Link in the associated app if possible, or in the user’s default web browser if not. Alternatively, you can override the default behavior by setting the [`openURL`](./environmentvalues/openurl.md) environment value with a custom [`OpenURLAction`](./openurlaction.md):
 
 ```swift
 Link("Visit Our Site", destination: URL(string: "https://www.example.com")!)
@@ -40,30 +41,31 @@ Link("Visit Our Site", destination: URL(string: "https://www.example.com")!)
     })
 ```
 
-As with other views, you can style links using standard view modifiers depending on the view type of the link’s label. For example, a [`Text`](text.md) label could be modified with a custom [`font(_:)`](view/font(_:).md) or [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) to customize the appearance of the link in your app’s UI.
+As with other views, you can style links using standard view modifiers depending on the view type of the link’s label. For example, a [`Text`](./text.md) label could be modified with a custom [`font(_:)`](./view/font%28_%29.md) or [`foregroundStyle(_:)`](./view/foregroundstyle%28_%29.md) to customize the appearance of the link in your app’s UI.
 
 ## Topics
 
 ### Creating a link
-- [init(_:destination:)](link/init(_:destination:).md)
+- [init(_:destination:)](./link/init%28_,destination%29.md)
   Creates a control, consisting of a URL and a title resource, used to navigate to a URL.
-- [init(destination: URL, label: () -> Label)](link/init(destination:label:).md)
+- [init(destination: URL, label: () -> Label)](./link/init%28destination,label%29.md)
   Creates a control, consisting of a URL and a label, used to navigate to the given URL.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct ShareLink](sharelink.md)
+### Linking to other content
+- [struct ShareLink](./sharelink.md)
   A view that controls a sharing presentation.
-- [struct SharePreview](sharepreview.md)
+- [struct SharePreview](./sharepreview.md)
   A representation of a type to display in a share preview.
-- [struct TextFieldLink](textfieldlink.md)
+- [struct TextFieldLink](./textfieldlink.md)
   A control that requests text input from the user when pressed.
-- [struct HelpLink](helplink.md)
+- [struct HelpLink](./helplink.md)
   A button with a standard appearance that opens app-specific help documentation.
 
 

@@ -1,9 +1,10 @@
 # WKWebExtension.MessagePort.Error
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+Constants that indicate errors in the [`WKWebExtension.MessagePort`](../messageport.md) domain.
 
 **Availability**:
 - iOS 18.4+
@@ -21,39 +22,40 @@ struct Error
 ## Topics
 
 ### Type Properties
-- [static var errorDomain: String](wkwebextension/messageport/error/errordomain.md)
+- [static var errorDomain: String](./error/errordomain.md)
   A string that identifies the error domain.
-- [static var messageInvalid: WKWebExtension.MessagePort.Error.Code](wkwebextension/messageport/error/messageinvalid.md)
+- [static var messageInvalid: WKWebExtension.MessagePort.Error.Code](./error/messageinvalid.md)
   Indicates that the message is invalid.
-- [static var notConnected: WKWebExtension.MessagePort.Error.Code](wkwebextension/messageport/error/notconnected.md)
+- [static var notConnected: WKWebExtension.MessagePort.Error.Code](./error/notconnected.md)
   Indicates that the message port is disconnected.
-- [static var unknown: WKWebExtension.MessagePort.Error.Code](wkwebextension/messageport/error/unknown.md)
+- [static var unknown: WKWebExtension.MessagePort.Error.Code](./error/unknown.md)
   Indicates that an unknown error occurred.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../../../Foundation/customnserror.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Error](../../../Swift/error.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WKWebExtension.Error.Code](wkwebextension/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension`](wkwebextension.md) domain.
-- [WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/code.md)
-  Constants that indicate errors in the [`WKWebExtensionContext`](wkwebextensioncontext.md) domain.
-- [WKWebExtension.DataRecord.Error.Code](wkwebextension/datarecord/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
-- [WKWebExtension.DataRecord.Error](wkwebextension/datarecord/error.md)
-  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
-- [WKWebExtension.MatchPattern.Error.Code](wkwebextension/matchpattern/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) domain.
-- [WKWebExtension.MessagePort.Error.Code](wkwebextension/messageport/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+### Web extension errors
+- [WKWebExtension.Error.Code](../error/code.md)
+  Constants that indicate errors in the [`WKWebExtension`](../../wkwebextension.md) domain.
+- [WKWebExtensionContext.Error.Code](../../wkwebextensioncontext/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionContext`](../../wkwebextensioncontext.md) domain.
+- [WKWebExtension.DataRecord.Error.Code](../datarecord/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](../datarecord.md) domain.
+- [WKWebExtension.DataRecord.Error](../datarecord/error.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](../datarecord.md) domain.
+- [WKWebExtension.MatchPattern.Error.Code](../matchpattern/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](../matchpattern.md) domain.
+- [WKWebExtension.MessagePort.Error.Code](./error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](../messageport.md) domain.
 
 
 ---

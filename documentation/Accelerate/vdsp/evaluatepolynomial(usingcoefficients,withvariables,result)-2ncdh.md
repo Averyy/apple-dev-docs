@@ -1,7 +1,8 @@
 # evaluatePolynomial(usingCoefficients:withVariables:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Evaluates a double-precision polynomial using specified coefficients and variables.
 
@@ -11,7 +12,7 @@ Evaluates a double-precision polynomial using specified coefficients and variabl
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -53,9 +54,11 @@ For example, the following code evaluates the polynomial with the coefficients `
 
 ## See Also
 
-- [vDSP_vpoly](vdsp_vpoly.md)
+### Related Documentation
+- [vDSP_vpoly](../vdsp_vpoly.md)
   Evaluates a single-precision polynomial using specified coefficients, variables, and strides.
-- [static func evaluatePolynomial<U>(usingCoefficients: [Double], withVariables: U) -> [Double]](vdsp/evaluatepolynomial(usingcoefficients:withvariables:)-31vi2.md)
+### Double-precision polynomial evaluation
+- [static func evaluatePolynomial<U>(usingCoefficients: [Double], withVariables: U) -> [Double]](./evaluatepolynomial%28usingcoefficients,withvariables%29-31vi2.md)
   Returns a double-precision evaluated polynomial using specified coefficients and variables.
 
 

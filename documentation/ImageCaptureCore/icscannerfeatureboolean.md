@@ -1,7 +1,8 @@
 # ICScannerFeatureBoolean
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A feature with a value of `YES` or `NO`.
 
@@ -14,34 +15,39 @@ A feature with a value of `YES` or `NO`.
 class ICScannerFeatureBoolean
 ```
 
+```objc
+@interface ICScannerFeatureBoolean : ICScannerFeature
+```
+
 ## Topics
 
 ### Instance Properties
-- [var value: Bool](icscannerfeatureboolean/value.md)
+- [var value: Bool](./icscannerfeatureboolean/value.md)
 
 ## Relationships
 
 ### Inherits From
-- [ICScannerFeature](icscannerfeature.md)
+- [ICScannerFeature](./icscannerfeature.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ICScannerFeature](icscannerfeature.md)
+### Features
+- [class ICScannerFeature](./icscannerfeature.md)
   An abstract class that describes a scanner feature.
-- [class ICScannerFeatureEnumeration](icscannerfeatureenumeration.md)
+- [class ICScannerFeatureEnumeration](./icscannerfeatureenumeration.md)
   A feature that can have one of several discrete values, strings or numbers.
-- [class ICScannerFeatureRange](icscannerfeaturerange.md)
+- [class ICScannerFeatureRange](./icscannerfeaturerange.md)
   A feature with a value that lies within a range.
-- [class ICScannerFeatureTemplate](icscannerfeaturetemplate.md)
+- [class ICScannerFeatureTemplate](./icscannerfeaturetemplate.md)
   A group of one or more rectangular scan areas that can be used with a scanner functional unit.
-- [enum ICScannerFeatureType](icscannerfeaturetype.md)
+- [enum ICScannerFeatureType](./icscannerfeaturetype.md)
   The types of scanner features.
 
 

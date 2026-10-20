@@ -1,7 +1,8 @@
 # AVAssetImageGenerator
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that generates images from a video asset.
 
@@ -19,9 +20,13 @@ An object that generates images from a video asset.
 class AVAssetImageGenerator
 ```
 
+```objc
+@interface AVAssetImageGenerator : NSObject
+```
+
 ## Mentions
 
-- [Creating images from a video asset](creating-images-from-a-video-asset.md)
+- [Creating images from a video asset](./creating-images-from-a-video-asset.md)
 
 #### Overview
 
@@ -30,66 +35,67 @@ Use an image generator to extract images from a video asset at particular times 
 ## Topics
 
 ### Creating an image generator
-- [init(asset: AVAsset)](avassetimagegenerator/init(asset:).md)
+- [init(asset: AVAsset)](./avassetimagegenerator/init%28asset%29.md)
   Creates an object that generates images for times within a video asset.
 ### Configuring image generation
-- [var maximumSize: CGSize](avassetimagegenerator/maximumsize.md)
+- [var maximumSize: CGSize](./avassetimagegenerator/maximumsize.md)
   The maximum size of images to generate.
-- [var requestedTimeToleranceBefore: CMTime](avassetimagegenerator/requestedtimetolerancebefore.md)
+- [var requestedTimeToleranceBefore: CMTime](./avassetimagegenerator/requestedtimetolerancebefore.md)
   A maximum length of time before the requested time to allow image generation to occur.
-- [var requestedTimeToleranceAfter: CMTime](avassetimagegenerator/requestedtimetoleranceafter.md)
+- [var requestedTimeToleranceAfter: CMTime](./avassetimagegenerator/requestedtimetoleranceafter.md)
   A maximum length of time after the requested time to allow image generation to occur.
-- [var dynamicRangePolicy: AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.property.md)
+- [var dynamicRangePolicy: AVAssetImageGenerator.DynamicRangePolicy](./avassetimagegenerator/dynamicrangepolicy-swift.property.md)
   The dynamic range policy to use when generating images.
-- [AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.struct.md)
+- [AVAssetImageGenerator.DynamicRangePolicy](./avassetimagegenerator/dynamicrangepolicy-swift.struct.md)
   A type that specifies the dynamic range policy to apply when generating images.
-- [var appliesPreferredTrackTransform: Bool](avassetimagegenerator/appliespreferredtracktransform.md)
+- [var appliesPreferredTrackTransform: Bool](./avassetimagegenerator/appliespreferredtracktransform.md)
   A Boolean value that specifies whether to apply the track matrix or matrices when generating an image from the asset.
-- [var apertureMode: AVAssetImageGenerator.ApertureMode?](avassetimagegenerator/aperturemode-swift.property.md)
+- [var apertureMode: AVAssetImageGenerator.ApertureMode?](./avassetimagegenerator/aperturemode-swift.property.md)
   Specifies the aperture mode for the generated image.
-- [AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct.md)
+- [AVAssetImageGenerator.ApertureMode](./avassetimagegenerator/aperturemode-swift.struct.md)
   Constants that define aperture modes to use when generating images.
 ### Configuring compositing
-- [var videoComposition: AVVideoComposition?](avassetimagegenerator/videocomposition.md)
+- [var videoComposition: AVVideoComposition?](./avassetimagegenerator/videocomposition.md)
   A video composition to use when extracting images from assets with multiple video tracks.
-- [var customVideoCompositor: (any AVVideoCompositing)?](avassetimagegenerator/customvideocompositor.md)
+- [var customVideoCompositor: (any AVVideoCompositing)?](./avassetimagegenerator/customvideocompositor.md)
   A custom video compositor to use when extracting images from assets with multiple video tracks.
 ### Generating images
-- [func image(at: CMTime) async throws -> (image: CGImage, actualTime: CMTime)](avassetimagegenerator/image(at:).md)
+- [func image(at: CMTime) async throws -> (image: CGImage, actualTime: CMTime)](./avassetimagegenerator/image%28at%29.md)
   Generates an image for a requested time.
-- [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](avassetimagegenerator/images(for:).md)
+- [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](./avassetimagegenerator/images%28for%29.md)
   Generates images for times within the video timeline.
-- [AVAssetImageGenerator.Images](avassetimagegenerator/images.md)
+- [AVAssetImageGenerator.Images](./avassetimagegenerator/images.md)
   An asynchronous sequence of images created by an image generator.
-- [func generateCGImageAsynchronously(for: CMTime, completionHandler: (CGImage?, CMTime, (any Error)?) -> Void)](avassetimagegenerator/generatecgimageasynchronously(for:completionhandler:).md)
+- [func generateCGImageAsynchronously(for: CMTime, completionHandler: (CGImage?, CMTime, (any Error)?) -> Void)](./avassetimagegenerator/generatecgimageasynchronously%28for,completionhandler%29.md)
   Generates an image asynchronously for a requested time, and returns the result in a callback.
-- [func generateCGImagesAsynchronously(forTimes: [NSValue], completionHandler: AVAssetImageGeneratorCompletionHandler)](avassetimagegenerator/generatecgimagesasynchronously(fortimes:completionhandler:).md)
+- [func generateCGImagesAsynchronously(forTimes: [NSValue], completionHandler: AVAssetImageGeneratorCompletionHandler)](./avassetimagegenerator/generatecgimagesasynchronously%28fortimes,completionhandler%29.md)
   Generates images asynchronously for an array of requested times, and returns the results in a callback.
-- [typealias AVAssetImageGeneratorCompletionHandler](avassetimagegeneratorcompletionhandler.md)
+- [typealias AVAssetImageGeneratorCompletionHandler](./avassetimagegeneratorcompletionhandler.md)
   A type alias for a closure that provides the result of an image generation request.
-- [func cancelAllCGImageGeneration()](avassetimagegenerator/cancelallcgimagegeneration.md)
+- [func cancelAllCGImageGeneration()](./avassetimagegenerator/cancelallcgimagegeneration%28%29.md)
   Cancels all pending image generation requests.
-- [func copyCGImage(at: CMTime, actualTime: UnsafeMutablePointer<CMTime>?) throws -> CGImage](avassetimagegenerator/copycgimage(at:actualtime:).md)
+- [func copyCGImage(at: CMTime, actualTime: UnsafeMutablePointer<CMTime>?) throws -> CGImage](./avassetimagegenerator/copycgimage%28at,actualtime%29.md)
   Returns an image for the asset at or near a specified time.
 ### Accessing the asset
-- [var asset: AVAsset](avassetimagegenerator/asset.md)
+- [var asset: AVAsset](./avassetimagegenerator/asset.md)
   The asset that initialized the image generator.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating images from a video asset](creating-images-from-a-video-asset.md)
+### Image generation
+- [Creating images from a video asset](./creating-images-from-a-video-asset.md)
   Display images for specific times within the media timeline by generating images from a video’s frames.
 
 

@@ -1,14 +1,17 @@
 # isVisible
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is displayed.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIAlertView`](../uialertview.md).
 
 ## Declaration
 
@@ -16,19 +19,24 @@ A Boolean value that indicates whether the receiver is displayed.
 var isVisible: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVisible) BOOL visible;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the receiver is displayed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), the receiver is displayed; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var delegate: AnyObject?](uialertview/delegate.md)
+### Setting properties
+- [var delegate: AnyObject?](./delegate.md)
   The receiver’s delegate or `nil` if it doesn’t have a delegate.
-- [var alertViewStyle: UIAlertViewStyle](uialertview/alertviewstyle.md)
+- [var alertViewStyle: UIAlertViewStyle](./alertviewstyle.md)
   The kind of alert displayed to the user.
-- [var title: String](uialertview/title.md)
+- [var title: String](./title.md)
   The string that appears in the receiver’s title bar.
-- [var message: String?](uialertview/message.md)
+- [var message: String?](./message.md)
   Descriptive text that provides more details than the title.
 
 

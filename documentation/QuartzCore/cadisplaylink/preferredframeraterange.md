@@ -1,7 +1,8 @@
 # preferredFrameRateRange
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range of frequencies your app allows for frame updates, affecting how often the system invokes your delegate’s callback.
 
@@ -19,9 +20,13 @@ A range of frequencies your app allows for frame updates, affecting how often th
 var preferredFrameRateRange: CAFrameRateRange { get set }
 ```
 
+```objc
+@property (nonatomic) CAFrameRateRange preferredFrameRateRange;
+```
+
 ## Mentions
 
-- [Optimizing iPhone and iPad apps to support ProMotion displays](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+- [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
 #### Discussion
 
@@ -33,23 +38,24 @@ The system can change the available range of frame rates because it factors in s
 
 The system typically provides a consistent frame rate by choosing one that’s a factor of the display’s maximum refresh rate. For example, a display link could invoke your callback 60 times per second for a display with a refresh rate of 60 hertz. However, the display link could invoke your callback less frequently, such as 30, 20, or 15 hertz, by setting a range with smaller values.
 
-> **Note**:  By default, this property’s values are equal to [`default`](caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/uikit/uiscreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/uikit/uiscreen/maximumframespersecond) property.
+> **Note**:  By default, this property’s values are equal to [`default`](../caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](../../UIKit/uiscreen.md) instance’s [`maximumFramesPerSecond`](../../UIKit/uiscreen/maximumframespersecond.md) property.
 
-For more information, see [`Optimizing iPhone and iPad apps to support ProMotion displays`](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md).
+For more information, see [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md).
 
 ## See Also
 
-- [var duration: CFTimeInterval](cadisplaylink/duration.md)
+### Configuring a Display Link
+- [var duration: CFTimeInterval](./duration.md)
   The time interval between screen refresh updates.
-- [var preferredFramesPerSecond: Int](cadisplaylink/preferredframespersecond.md)
+- [var preferredFramesPerSecond: Int](./preferredframespersecond.md)
   A frequency your app prefers for frame updates, affecting how often the system invokes your delegate’s callback.
-- [var isPaused: Bool](cadisplaylink/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the system suspends the display link’s notifications to the target.
-- [var timestamp: CFTimeInterval](cadisplaylink/timestamp.md)
+- [var timestamp: CFTimeInterval](./timestamp.md)
   The time interval that represents when the last frame displayed.
-- [var targetTimestamp: CFTimeInterval](cadisplaylink/targettimestamp.md)
+- [var targetTimestamp: CFTimeInterval](./targettimestamp.md)
   The time interval that represents when the next frame displays.
-- [var frameInterval: Int](cadisplaylink/frameinterval.md)
+- [var frameInterval: Int](./frameinterval.md)
   The number of frames that must pass before the display link notifies the target again.
 
 

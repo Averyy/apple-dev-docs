@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A summary of the failures encountered during the run.
 

@@ -1,7 +1,8 @@
 # primitiveDataElementSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,9 +18,13 @@
 var primitiveDataElementSize: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger primitiveDataElementSize;
+```
+
 ## Mentions
 
-- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](../improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 
 ---

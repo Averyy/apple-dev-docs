@@ -1,7 +1,8 @@
 # isDeferredStartSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A `BOOL` value that indicates whether the preview layer supports deferred start.
 
@@ -18,13 +19,18 @@ A `BOOL` value that indicates whether the preview layer supports deferred start.
 var isDeferredStartSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isDeferredStartSupported) BOOL deferredStartSupported;
+```
+
 #### Discussion
 
-You can only set the [`isDeferredStartEnabled`](avcapturevideopreviewlayer/isdeferredstartenabled.md) property to `true` if the preview layer supports deferred start.
+You can only set the [`isDeferredStartEnabled`](./isdeferredstartenabled.md) property to `true` if the preview layer supports deferred start.
 
 ## See Also
 
-- [var isDeferredStartEnabled: Bool](avcapturevideopreviewlayer/isdeferredstartenabled.md)
+### Configuring deferred start
+- [var isDeferredStartEnabled: Bool](./isdeferredstartenabled.md)
   A `BOOL` value that indicates whether to defer starting this preview layer.
 
 

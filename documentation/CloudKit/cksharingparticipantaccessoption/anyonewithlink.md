@@ -1,7 +1,8 @@
 # anyoneWithLink
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The permission option the system uses to control whether a user can share publicly.
 
@@ -18,11 +19,16 @@ The permission option the system uses to control whether a user can share public
 static var anyoneWithLink: CKSharingParticipantAccessOption { get }
 ```
 
+```c
+CKSharingParticipantAccessOptionAnyoneWithLink
+```
+
 ## See Also
 
-- [static var any: CKSharingParticipantAccessOption](cksharingparticipantaccessoption/any.md)
+### Configuring the options
+- [static var any: CKSharingParticipantAccessOption](./any.md)
   The permission option the system uses to control whether a user can share publicly or privately.
-- [static var specifiedRecipientsOnly: CKSharingParticipantAccessOption](cksharingparticipantaccessoption/specifiedrecipientsonly.md)
+- [static var specifiedRecipientsOnly: CKSharingParticipantAccessOption](./specifiedrecipientsonly.md)
   The permission option the system uses to control whether a user can share privately.
 
 

@@ -1,7 +1,8 @@
 # AppEnumDefinition
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An app enumeration definition for testing and dynamic enumeration creation.
 
@@ -22,11 +23,11 @@ struct AppEnumDefinition
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](./testing-your-app-intents-code.md)
 
 #### Overview
 
-To create an app enum for testing, load the enum definition using [`IntentDefinitions`](intentdefinitions.md) and its [`enums`](intentdefinitions/enums.md) property. Then, set its value as shown in the following example:
+To create an app enum for testing, load the enum definition using [`IntentDefinitions`](./intentdefinitions.md) and its [`enums`](./intentdefinitions/enums.md) property. Then, set its value as shown in the following example:
 
 ```swift
 let definitions = IntentDefinitions(
@@ -39,24 +40,25 @@ let redCase = colorEnum.makeCase("red") // Matches `Color.red`.
 ## Topics
 
 ### Creating an enumeration case
-- [func makeCase(String) -> AnyAppEnum](appenumdefinition/makecase(_:).md)
+- [func makeCase(String) -> AnyAppEnum](./appenumdefinition/makecase%28_%29.md)
   Creates an enumeration case with the specified raw value.
 ### Identifying the enum
-- [let typeIdentifier: String](appenumdefinition/typeidentifier.md)
+- [let typeIdentifier: String](./appenumdefinition/typeidentifier.md)
   The enum type’s unique identifier.
 ### Default Implementations
-- [AppIntentTypeDefinition Implementations](appenumdefinition/appintenttypedefinition-implementations.md)
+- [AppIntentTypeDefinition Implementations](./appenumdefinition/appintenttypedefinition-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AppIntentTypeDefinition](appintenttypedefinition.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AppIntentTypeDefinition](./appintenttypedefinition.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [var enums: IntentDefinitions.DefinitionCollection<AppEnumDefinition>](intentdefinitions/enums.md)
+### Accessing app enums
+- [var enums: IntentDefinitions.DefinitionCollection<AppEnumDefinition>](./intentdefinitions/enums.md)
   The definitions for the target app’s app enums.
 
 

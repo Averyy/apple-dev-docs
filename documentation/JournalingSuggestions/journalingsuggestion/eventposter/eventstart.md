@@ -1,7 +1,8 @@
 # eventStart
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start date of the event.
 
@@ -16,7 +17,8 @@ var eventStart: Date?
 
 ## See Also
 
-- [var eventEnd: Date?](journalingsuggestion/eventposter/eventend.md)
+### Reviewing event dates
+- [var eventEnd: Date?](./eventend.md)
   The end date of the event.
 
 

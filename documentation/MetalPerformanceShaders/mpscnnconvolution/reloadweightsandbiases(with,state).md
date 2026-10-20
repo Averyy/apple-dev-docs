@@ -1,7 +1,8 @@
 # reloadWeightsAndBiases(with:state:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func reloadWeightsAndBiases(with commandBuffer: any MTLCommandBuffer, state: MPSCNNConvolutionWeightsAndBiasesState)
+```
+
+```objc
+- (void) reloadWeightsAndBiasesWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer state:(MPSCNNConvolutionWeightsAndBiasesState *) state;
 ```
 
 

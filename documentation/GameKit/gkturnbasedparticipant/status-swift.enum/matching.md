@@ -1,7 +1,8 @@
 # GKTurnBasedParticipant.Status.matching
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant represents an unfilled position in the match that Game Center promises to fill when needed.
 
@@ -20,25 +21,30 @@ The participant represents an unfilled position in the match that Game Center pr
 case matching
 ```
 
+```c
+GKTurnBasedParticipantStatusMatching
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
-When you make this participant the next person to take a turn in the match, Game Center fills the position and updates the [`status`](gkturnbasedparticipant/status-swift.property.md) and [`playerID`](gkturnbasedparticipant/playerid.md) properties.
+When you make this participant the next person to take a turn in the match, Game Center fills the position and updates the [`status`](../status-swift.property.md) and [`playerID`](../playerid.md) properties.
 
 ## See Also
 
-- [GKTurnBasedParticipant.Status.unknown](gkturnbasedparticipant/status-swift.enum/unknown.md)
+### Constants
+- [GKTurnBasedParticipant.Status.unknown](./unknown.md)
   The participant is in an unexpected state.
-- [GKTurnBasedParticipant.Status.invited](gkturnbasedparticipant/status-swift.enum/invited.md)
+- [GKTurnBasedParticipant.Status.invited](./invited.md)
   The participant is invited to the match, but hasn’t responded to the invitation.
-- [GKTurnBasedParticipant.Status.declined](gkturnbasedparticipant/status-swift.enum/declined.md)
+- [GKTurnBasedParticipant.Status.declined](./declined.md)
   The participant declines the invitation to join the match, automatically terminating the match.
-- [GKTurnBasedParticipant.Status.active](gkturnbasedparticipant/status-swift.enum/active.md)
+- [GKTurnBasedParticipant.Status.active](./active.md)
   The participant joins the match and is an active player.
-- [GKTurnBasedParticipant.Status.done](gkturnbasedparticipant/status-swift.enum/done.md)
+- [GKTurnBasedParticipant.Status.done](./done.md)
   The participant leaves the match.
 
 

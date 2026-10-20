@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the feature provider based on a dictionary.
 
@@ -18,6 +19,10 @@ Creates the feature provider based on a dictionary.
 
 ```swift
 init(dictionary: [String : Any]) throws
+```
+
+```objc
+- (instancetype) initWithDictionary:(NSDictionary<NSString *,id> *) dictionary error:(NSError **) error;
 ```
 
 ## Parameters

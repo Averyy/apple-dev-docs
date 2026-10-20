@@ -1,7 +1,8 @@
 # isFraudulentWebsiteWarningEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the web view shows warnings for suspected fraudulent content, such as malware or phishing attemps.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether the web view shows warnings for suspected
 var isFraudulentWebsiteWarningEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isFraudulentWebsiteWarningEnabled) BOOL fraudulentWebsiteWarningEnabled;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 
 ---

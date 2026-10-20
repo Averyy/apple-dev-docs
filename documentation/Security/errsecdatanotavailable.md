@@ -1,7 +1,8 @@
 # errSecDataNotAvailable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data is not available.
 
@@ -18,6 +19,10 @@ The data is not available.
 
 ```swift
 var errSecDataNotAvailable: OSStatus { get }
+```
+
+```c
+errSecDataNotAvailable
 ```
 
 

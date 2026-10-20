@@ -1,7 +1,8 @@
 # temperatureUncertainty
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of uncertainty in the measurement of the water temperature.
 
@@ -18,11 +19,16 @@ The amount of uncertainty in the measurement of the water temperature.
 var temperatureUncertainty: Measurement<UnitTemperature> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSMeasurement<NSUnitTemperature *> * temperatureUncertainty;
+```
+
 ## See Also
 
-- [var date: Date](cmwatertemperature/date.md)
+### Accessing the data
+- [var date: Date](./date.md)
   The time and date when the system recorded the measurements.
-- [var temperature: Measurement<UnitTemperature>](cmwatertemperature/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./temperature.md)
   The water temperature.
 
 

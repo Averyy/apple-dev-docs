@@ -1,7 +1,8 @@
 # stateSerialization
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the sync engine.
 
@@ -11,7 +12,7 @@ The current state of the sync engine.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

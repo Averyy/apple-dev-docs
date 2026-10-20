@@ -1,12 +1,13 @@
 # compositingOperation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The graphics context’s global compositing operation setting.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The graphics context’s global compositing operation setting.
 var compositingOperation: NSCompositingOperation { get set }
 ```
 
+```objc
+@property NSCompositingOperation compositingOperation;
+```
+
 #### Discussion
 
-The compositing operation is a global attribute of the graphics context and affects drawing operations that do not take an explicit compositing operation parameter. For methods that do take an explicit compositing operation parameter, the value of that parameter supersedes the global value. The compositing operations are related to (but different from) the blend mode settings used in Quartz. Only the default compositing operation ([`NSCompositeCopy`](nscompositecopy.md)) is supported when rendering PDF or PostScript content. See [`NSCompositingOperation`](nscompositingoperation.md) for valid constants.
+The compositing operation is a global attribute of the graphics context and affects drawing operations that do not take an explicit compositing operation parameter. For methods that do take an explicit compositing operation parameter, the value of that parameter supersedes the global value. The compositing operations are related to (but different from) the blend mode settings used in Quartz. Only the default compositing operation ([`NSCompositeCopy`](../nscompositecopy.md)) is supported when rendering PDF or PostScript content. See [`NSCompositingOperation`](../nscompositingoperation.md) for valid constants.
 
 ## See Also
 
-- [enum NSCompositingOperation](nscompositingoperation.md)
+### Configuring Rendering Options
+- [enum NSCompositingOperation](../nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
-- [var imageInterpolation: NSImageInterpolation](nsgraphicscontext/imageinterpolation.md)
+- [var imageInterpolation: NSImageInterpolation](./imageinterpolation.md)
   A constant that specifies the graphics context’s interpolation, or image smoothing, behavior.
-- [enum NSImageInterpolation](nsimageinterpolation.md)
+- [enum NSImageInterpolation](../nsimageinterpolation.md)
   Constants that specify the interpolation, or image smoothing, behavior used by the image interpolation property.
-- [var shouldAntialias: Bool](nsgraphicscontext/shouldantialias.md)
+- [var shouldAntialias: Bool](./shouldantialias.md)
   A Boolean value that indicates whether the graphics context uses antialiasing.
-- [var patternPhase: NSPoint](nsgraphicscontext/patternphase.md)
+- [var patternPhase: NSPoint](./patternphase.md)
   The amount to offset the pattern color when filling the graphics context.
 
 

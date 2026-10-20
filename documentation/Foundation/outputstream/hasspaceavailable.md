@@ -1,7 +1,8 @@
 # hasSpaceAvailable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value that indicates whether the receiver can be written to.
 
@@ -20,13 +21,18 @@ A boolean value that indicates whether the receiver can be written to.
 var hasSpaceAvailable: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasSpaceAvailable;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver can be written to or if a write must be attempted in order to determine if space is available, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the receiver can be written to or if a write must be attempted in order to determine if space is available, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [func write(UnsafePointer<UInt8>, maxLength: Int) -> Int](outputstream/write(_:maxlength:).md)
+### Using Streams
+- [func write(UnsafePointer<UInt8>, maxLength: Int) -> Int](./write%28_,maxlength%29.md)
   Writes the contents of a provided data buffer to the receiver.
 
 

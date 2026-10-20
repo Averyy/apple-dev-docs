@@ -1,12 +1,13 @@
 # NSBorderType.lineBorder
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A black line border around the view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A black line border around the view.
 case lineBorder
 ```
 
+```c
+NSLineBorder
+```
+
 ## See Also
 
-- [NSBorderType.bezelBorder](nsbordertype/bezelborder.md)
+### Constants
+- [NSBorderType.bezelBorder](./bezelborder.md)
   A concave border that makes the view look sunken.
-- [NSBorderType.grooveBorder](nsbordertype/grooveborder.md)
+- [NSBorderType.grooveBorder](./grooveborder.md)
   A thin border that looks etched around the image.
-- [NSBorderType.noBorder](nsbordertype/noborder.md)
+- [NSBorderType.noBorder](./noborder.md)
   No border.
 
 

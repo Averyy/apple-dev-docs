@@ -1,7 +1,8 @@
 # currentPreviewItem
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently previewed item.
 
@@ -14,21 +15,26 @@ The currently previewed item.
 var currentPreviewItem: (any QLPreviewItem)! { get }
 ```
 
+```objc
+@property (readonly) id<QLPreviewItem> currentPreviewItem;
+```
+
 #### Discussion
 
 The value is `nil` if there’s no current preview item.
 
 ## See Also
 
-- [var dataSource: (any QLPreviewPanelDataSource)!](qlpreviewpanel/datasource.md)
+### Managing the Preview Items
+- [var dataSource: (any QLPreviewPanelDataSource)!](./datasource.md)
   The preview panel data source.
-- [func reloadData()](qlpreviewpanel/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Asks the preview panel to reload its data from its data source.
-- [func refreshCurrentPreviewItem()](qlpreviewpanel/refreshcurrentpreviewitem.md)
+- [func refreshCurrentPreviewItem()](./refreshcurrentpreviewitem%28%29.md)
   Asks the preview panel to recompute the preview of the current preview item.
-- [var currentPreviewItemIndex: Int](qlpreviewpanel/currentpreviewitemindex.md)
+- [var currentPreviewItemIndex: Int](./currentpreviewitemindex.md)
   The index of the current preview item.
-- [var displayState: Any!](qlpreviewpanel/displaystate.md)
+- [var displayState: Any!](./displaystate.md)
   The preview panel’s display state.
 
 

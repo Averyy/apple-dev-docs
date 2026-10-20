@@ -1,7 +1,8 @@
 # disconnect(from:)
 
 **Framework**: Playground Bluetooth  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Disconnects the central manager from the specified, connected peripheral.
 

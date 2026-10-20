@@ -1,11 +1,12 @@
 # kAudioSubDevicePropertyDriftCompensationQuality
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioSubDevicePropertyDriftCompensationQuality: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioSubDevicePropertyDriftCompensationQuality
+```
+
 ## See Also
 
-- [var kAudioSubDevicePropertyDriftCompensation: AudioObjectPropertySelector](kaudiosubdevicepropertydriftcompensation.md)
-- [var kAudioSubDevicePropertyExtraLatency: AudioObjectPropertySelector](kaudiosubdevicepropertyextralatency.md)
+### Constants
+- [var kAudioSubDevicePropertyDriftCompensation: AudioObjectPropertySelector](./kaudiosubdevicepropertydriftcompensation.md)
+- [var kAudioSubDevicePropertyExtraLatency: AudioObjectPropertySelector](./kaudiosubdevicepropertyextralatency.md)
 
 
 ---

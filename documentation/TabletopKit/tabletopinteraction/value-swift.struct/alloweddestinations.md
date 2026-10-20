@@ -1,12 +1,13 @@
 # allowedDestinations
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The allowed destinations that this interaction can target
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 2.2 (renamed: configuration.allowedDestinations)
 
 ## Declaration
 
@@ -16,9 +17,10 @@ var allowedDestinations: TabletopInteraction.AllowedDestinations { get }
 
 ## See Also
 
-- [var startingEquipmentID: EquipmentIdentifier](tabletopinteraction/value-swift.struct/startingequipmentid.md)
+### Getting information about the equipment and game
+- [var startingEquipmentID: EquipmentIdentifier](./startingequipmentid.md)
   The equipment the interaction was started with
-- [var controlledEquipmentID: EquipmentIdentifier](tabletopinteraction/value-swift.struct/controlledequipmentid.md)
+- [var controlledEquipmentID: EquipmentIdentifier](./controlledequipmentid.md)
   The equipment the interaction is currently controlling
 
 

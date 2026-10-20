@@ -1,7 +1,8 @@
 # CapturedRoom.Error.deviceNotSupported
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the framework doesn’t support the user’s device.
 
@@ -18,13 +19,14 @@ case deviceNotSupported
 
 ## See Also
 
-- [CapturedRoom.Error.urlInvalidFileExtension](capturedroom/error/urlinvalidfileextension.md)
+### Interpreting the error
+- [CapturedRoom.Error.urlInvalidFileExtension](./urlinvalidfileextension.md)
   An error that indicates that the URL contains an unsupported file extension.
-- [CapturedRoom.Error.urlInvalidFilePath](capturedroom/error/urlinvalidfilepath.md)
+- [CapturedRoom.Error.urlInvalidFilePath](./urlinvalidfilepath.md)
   An error that indicates that the URL references an invalid file path.
-- [CapturedRoom.Error.urlInvalidScheme](capturedroom/error/urlinvalidscheme.md)
+- [CapturedRoom.Error.urlInvalidScheme](./urlinvalidscheme.md)
   An error that indicates that the URL prefix represents an unsupported scheme.
-- [CapturedRoom.Error.urlMissingFileExtension](capturedroom/error/urlmissingfileextension.md)
+- [CapturedRoom.Error.urlMissingFileExtension](./urlmissingfileextension.md)
   An error that indicates that the URL lacks a necessary file extension.
 
 

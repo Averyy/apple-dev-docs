@@ -1,7 +1,8 @@
 # extractAll
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All motion is extracted and returned.
 
@@ -21,13 +22,14 @@ static let extractAll: SampledAnimation<JointTransforms>.SkeletalAnimationOperat
 
 ## See Also
 
-- [static let translationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationx.md)
+### Extracting translation
+- [static let translationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./translationx.md)
   Translation X is extracted.
-- [static let translationY: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationy.md)
+- [static let translationY: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./translationy.md)
   Translation Y is extracted.
-- [static let translationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationz.md)
+- [static let translationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./translationz.md)
   Translation Z is extracted.
-- [static let translationXZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationxz.md)
+- [static let translationXZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./translationxz.md)
   Translation XZ is extracted (common for ground-based locomotion).
 
 

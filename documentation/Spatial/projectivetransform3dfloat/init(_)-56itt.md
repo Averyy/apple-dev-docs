@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new transform from the specified 4 x 4 matrix.
 
@@ -18,6 +19,10 @@ Returns a new transform from the specified 4 x 4 matrix.
 
 ```swift
 init(_ matrix: simd_float4x4)
+```
+
+```c
+static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeWith4x4Matrix(simd_float4x4 matrix);
 ```
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description of the vehicle restriction.
 

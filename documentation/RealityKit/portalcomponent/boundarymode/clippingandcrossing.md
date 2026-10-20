@@ -1,9 +1,10 @@
 # PortalComponent.BoundaryMode.clippingAndCrossing
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The portal clips its content to the boundary, and entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the boundary.
+The portal clips its content to the boundary, and entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) cross the boundary.
 
 **Availability**:
 - iOS 27.0+

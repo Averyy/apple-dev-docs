@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of sizes, in elements, one for each dimension of this tensor.
@@ -18,6 +19,10 @@ An array of sizes, in elements, one for each dimension of this tensor.
 
 ```swift
 var dimensions: MTLTensorExtents { get }
+```
+
+```objc
+@property (readonly) MTLTensorExtents * dimensions;
 ```
 
 

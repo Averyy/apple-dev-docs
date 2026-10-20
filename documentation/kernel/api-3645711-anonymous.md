@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,9 +19,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIODMACommandPerformOperationOptionRead](3645711-anonymous/kiodmacommandperformoperationoptionread.md)
-- [kIODMACommandPerformOperationOptionWrite](3645711-anonymous/kiodmacommandperformoperationoptionwrite.md)
-- [kIODMACommandPerformOperationOptionZero](3645711-anonymous/kiodmacommandperformoperationoptionzero.md)
+- [kIODMACommandPerformOperationOptionRead](./api-3645711-anonymous/kiodmacommandperformoperationoptionread.md)
+- [kIODMACommandPerformOperationOptionWrite](./api-3645711-anonymous/kiodmacommandperformoperationoptionwrite.md)
+- [kIODMACommandPerformOperationOptionZero](./api-3645711-anonymous/kiodmacommandperformoperationoptionzero.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # zIndex(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls the display order of overlapping views.
 
@@ -43,7 +44,7 @@ VStack {
 }
 ```
 
-![A screenshot showing two overlapping rectangles. The frontmost view is](/images/com.apple.SwiftUI/SwiftUI-View-zIndex@2x.png)
+![A screenshot showing two overlapping rectangles. The frontmost view is](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-zIndex@2x.png)
 
 ## Parameters
 
@@ -51,33 +52,34 @@ VStack {
 
 ## See Also
 
-- [Adding a background to your view](adding-a-background-to-your-view.md)
+### Layering views
+- [Adding a background to your view](../adding-a-background-to-your-view.md)
   Compose a background behind your view and extend it beyond the safe area insets.
-- [struct ZStack](zstack.md)
+- [struct ZStack](../zstack.md)
   A view that overlays its subviews, aligning them in both axes.
-- [func background<V>(alignment: Alignment, content: () -> V) -> some View](view/background(alignment:content:).md)
+- [func background<V>(alignment: Alignment, content: () -> V) -> some View](./background%28alignment,content%29.md)
   Layers the views that you specify behind this view.
-- [func background<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](view/background(_:ignoressafeareaedges:).md)
+- [func background<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](./background%28_,ignoressafeareaedges%29.md)
   Sets the view’s background to a style.
-- [func background(ignoresSafeAreaEdges: Edge.Set) -> some View](view/background(ignoressafeareaedges:).md)
+- [func background(ignoresSafeAreaEdges: Edge.Set) -> some View](./background%28ignoressafeareaedges%29.md)
   Sets the view’s background to the default background style.
-- [func background(_:in:fillStyle:)](view/background(_:in:fillstyle:).md)
+- [func background(_:in:fillStyle:)](./background%28_,in,fillstyle%29.md)
   Sets the view’s background to an insettable shape filled with a style.
-- [func background(in:fillStyle:)](view/background(in:fillstyle:).md)
+- [func background(in:fillStyle:)](./background%28in,fillstyle%29.md)
   Sets the view’s background to an insettable shape filled with the default background style.
-- [func overlay<V>(alignment: Alignment, content: () -> V) -> some View](view/overlay(alignment:content:).md)
+- [func overlay<V>(alignment: Alignment, content: () -> V) -> some View](./overlay%28alignment,content%29.md)
   Layers the views that you specify in front of this view.
-- [func overlay<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](view/overlay(_:ignoressafeareaedges:).md)
+- [func overlay<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View](./overlay%28_,ignoressafeareaedges%29.md)
   Layers the specified style in front of this view.
-- [func overlay<S, T>(S, in: T, fillStyle: FillStyle) -> some View](view/overlay(_:in:fillstyle:).md)
+- [func overlay<S, T>(S, in: T, fillStyle: FillStyle) -> some View](./overlay%28_,in,fillstyle%29.md)
   Layers a shape that you specify in front of this view.
-- [var backgroundMaterial: Material?](environmentvalues/backgroundmaterial.md)
+- [var backgroundMaterial: Material?](../environmentvalues/backgroundmaterial.md)
   The material underneath the current view.
-- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](view/containerbackground(_:for:).md)
+- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](./containerbackground%28_,for%29.md)
   Sets the container background of the enclosing container using a view.
-- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](view/containerbackground(for:alignment:content:).md)
+- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](./containerbackground%28for,alignment,content%29.md)
   Sets the container background of the enclosing container using a view.
-- [struct ContainerBackgroundPlacement](containerbackgroundplacement.md)
+- [struct ContainerBackgroundPlacement](../containerbackgroundplacement.md)
   The placement of a container background.
 
 

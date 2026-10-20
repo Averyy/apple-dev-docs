@@ -1,7 +1,8 @@
 # kVTMultiPassStorageCreationOption_DoNotDelete
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the multipass storage object’s backing store should not be deleted when finalized.
 
@@ -19,9 +20,13 @@ Indicates that the multipass storage object’s backing store should not be dele
 let kVTMultiPassStorageCreationOption_DoNotDelete: CFString
 ```
 
+```c
+extern CFStringRef const kVTMultiPassStorageCreationOption_DoNotDelete;
+```
+
 #### Discussion
 
-If the backing store file did not exist when the storage was created, the file will be deleted when the multipass storage object is finalized, unless you set this option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) in the options dictionary.
+If the backing store file did not exist when the storage was created, the file will be deleted when the multipass storage object is finalized, unless you set this option to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) in the options dictionary.
 
 
 ---

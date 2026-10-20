@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate of the device browser.
 
@@ -18,9 +19,14 @@ The object that acts as the delegate of the device browser.
 unowned(unsafe) var delegate: (any ICDeviceBrowserDelegate)? { get set }
 ```
 
+```objc
+@property (assign, nullable) id<ICDeviceBrowserDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol ICDeviceBrowserDelegate](icdevicebrowserdelegate.md)
+### Managing Device Browsing
+- [protocol ICDeviceBrowserDelegate](../icdevicebrowserdelegate.md)
   Methods for managing the addition and removal of devices and responding to device changes.
 
 

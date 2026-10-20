@@ -1,7 +1,8 @@
 # load()
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Atomically loads and returns the current value of this reference.
 

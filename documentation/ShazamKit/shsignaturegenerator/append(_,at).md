@@ -1,7 +1,8 @@
 # append(_:at:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds audio to the generator.
 
@@ -20,9 +21,13 @@ Adds audio to the generator.
 func append(_ buffer: AVAudioPCMBuffer, at time: AVAudioTime?) throws
 ```
 
+```objc
+- (BOOL) appendBuffer:(AVAudioPCMBuffer *) buffer atTime:(AVAudioTime *) time error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Generating a signature from an audio buffer](generating-a-signature-from-an-audio-buffer.md)
+- [Generating a signature from an audio buffer](../generating-a-signature-from-an-audio-buffer.md)
 
 #### Discussion
 
@@ -42,9 +47,10 @@ The audio must be PCM at one of these rates:
 
 ## See Also
 
-- [func signature() -> SHSignature](shsignaturegenerator/signature.md)
+### Generating a signature from audio
+- [func signature() -> SHSignature](./signature%28%29.md)
   Converts the audio buffer into a signature.
-- [Generating a signature from an audio buffer](generating-a-signature-from-an-audio-buffer.md)
+- [Generating a signature from an audio buffer](../generating-a-signature-from-an-audio-buffer.md)
   Create a signature from an audio file or the microphone for a reference track in a custom catalog, or for matching tracks in a catalog.
 
 

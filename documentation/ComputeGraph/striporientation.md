@@ -1,7 +1,8 @@
 # StripOrientation
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that specifies how a strip should be oriented.
 
@@ -12,7 +13,7 @@ An enumeration that specifies how a strip should be oriented.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,42 +24,43 @@ enum StripOrientation
 ## Topics
 
 ### Enumeration Cases
-- [StripOrientation.auto](striporientation/auto.md)
+- [StripOrientation.auto](./striporientation/auto.md)
   Automatically derive the orientation of the strip via neighbors and any provided axisY or axisZ values.
-- [StripOrientation.deriveFromYAxis](striporientation/derivefromyaxis.md)
+- [StripOrientation.deriveFromYAxis](./striporientation/derivefromyaxis.md)
   Derive the strip’s orientation from neighboring points and `axisY` float3 parameter
-- [StripOrientation.deriveFromZAxis](striporientation/derivefromzaxis.md)
+- [StripOrientation.deriveFromZAxis](./striporientation/derivefromzaxis.md)
   Derive the strip’s orientation from neighboring points and `axisZ` float3 parameter
-- [StripOrientation.frenet](striporientation/frenet.md)
+- [StripOrientation.frenet](./striporientation/frenet.md)
   Use strip’s frenet frame for orientation
-- [StripOrientation.planar](striporientation/planar.md)
-- [StripOrientation.useZAxis](striporientation/usezaxis.md)
+- [StripOrientation.planar](./striporientation/planar.md)
+- [StripOrientation.useZAxis](./striporientation/usezaxis.md)
   Use the `axisZ` float3 parameter without re-orienting. Derive Y-axis from neighboring points and `axisZ`.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+### Geometry and simulation inputs
+- [ComputeNodeGraph.Topology](./computenodegraph/topology.md)
   The primitive topology used to assemble output geometry for an output stage.
-- [enum CoordinateSpace](coordinatespace.md)
+- [enum CoordinateSpace](./coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
-- [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
-- [struct Viewpoint](viewpoint-swift.struct.md)
+- [ComputeNodeGraph.StructureLayout](./computenodegraph/structurelayout.md)
+- [struct Viewpoint](./viewpoint-swift.struct.md)
   Camera viewpoint parameters in 3D space.
-- [struct MouseParams](mouseparams.md)
+- [struct MouseParams](./mouseparams.md)
   Parameters describing mouse interaction in 3D space.
 
 

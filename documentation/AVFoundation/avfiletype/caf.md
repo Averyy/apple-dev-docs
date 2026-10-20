@@ -1,7 +1,8 @@
 # caf
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The UTI for the Core Audio Format.
 
@@ -20,41 +21,46 @@ The UTI for the Core Audio Format.
 static let caf: AVFileType
 ```
 
+```c
+extern AVFileType const AVFileTypeCoreAudioFormat;
+```
+
 #### Discussion
 
 The value of this UTI is `com.apple.coreaudio-format`. Files of this type have a `.caf` extension.
 
 ## See Also
 
-- [static let AHAP: AVFileType](avfiletype/ahap.md)
+### File types
+- [static let AHAP: AVFileType](./ahap.md)
   The UTI for the Apple Haptics Audio Pattern file format.
-- [static let SCC: AVFileType](avfiletype/scc.md)
+- [static let SCC: AVFileType](./scc.md)
   The UTI for the Scenarist closed-caption file format.
-- [static let ac3: AVFileType](avfiletype/ac3.md)
+- [static let ac3: AVFileType](./ac3.md)
   The UTI for the AC3 audio file format.
-- [static let aifc: AVFileType](avfiletype/aifc.md)
+- [static let aifc: AVFileType](./aifc.md)
   The UTI for the AIFC audio file format.
-- [static let aiff: AVFileType](avfiletype/aiff.md)
+- [static let aiff: AVFileType](./aiff.md)
   The UTI for the AIFF audio file format.
-- [static let amr: AVFileType](avfiletype/amr.md)
+- [static let amr: AVFileType](./amr.md)
   The UTI for the adaptive multirate audio file format.
-- [static let appleiTT: AVFileType](avfiletype/appleitt.md)
+- [static let appleiTT: AVFileType](./appleitt.md)
   The UTI for the Apple iTT caption file format.
-- [static let au: AVFileType](avfiletype/au.md)
+- [static let au: AVFileType](./au.md)
   The UTI for the Sun/NeXT audio file format.
-- [static let avci: AVFileType](avfiletype/avci.md)
+- [static let avci: AVFileType](./avci.md)
   The UTI for the high-efficiency image file format that contains H.264 compressed images.
-- [static let dcm: AVFileType](avfiletype/dcm.md)
+- [static let dcm: AVFileType](./dcm.md)
   A UTI for the Digital Imaging and Communications in Medicine (DICOM) file format.
-- [static let dng: AVFileType](avfiletype/dng.md)
+- [static let dng: AVFileType](./dng.md)
   The UTI for the Adobe Digital Negative file format.
-- [static let eac3: AVFileType](avfiletype/eac3.md)
+- [static let eac3: AVFileType](./eac3.md)
   The UTI for the enhanced AC3 audio file format.
-- [static let heic: AVFileType](avfiletype/heic.md)
+- [static let heic: AVFileType](./heic.md)
   The UTI for the high-efficiency image file format that contains HEVC compressed images.
-- [static let heif: AVFileType](avfiletype/heif.md)
+- [static let heif: AVFileType](./heif.md)
   The UTI for the high-efficiency image file format that contains compressed images from any codec.
-- [static let jpg: AVFileType](avfiletype/jpg.md)
+- [static let jpg: AVFileType](./jpg.md)
   The UTI for the JPEG (JFIF) format.
 
 

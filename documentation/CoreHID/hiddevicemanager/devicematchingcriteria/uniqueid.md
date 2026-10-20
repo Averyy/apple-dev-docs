@@ -1,7 +1,8 @@
 # uniqueID
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique ID for the device.
 

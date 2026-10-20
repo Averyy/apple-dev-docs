@@ -1,7 +1,8 @@
 # VideoMaterial.TriangleFillMode
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -19,9 +20,10 @@ typealias TriangleFillMode = MaterialParameterTypes.TriangleFillMode
 
 ## See Also
 
-- [struct VideoMaterial](videomaterial.md)
+### Video materials
+- [struct VideoMaterial](../videomaterial.md)
   A material that supports animated textures.
-- [VideoMaterial.FaceCulling](videomaterial/faceculling-swift.typealias.md)
+- [VideoMaterial.FaceCulling](./faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 
 

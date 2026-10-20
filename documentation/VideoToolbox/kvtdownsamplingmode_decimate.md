@@ -1,7 +1,8 @@
 # kVTDownsamplingMode_Decimate
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Default, decimate extra samples.
 
@@ -19,9 +20,14 @@ Default, decimate extra samples.
 let kVTDownsamplingMode_Decimate: CFString
 ```
 
+```c
+extern CFStringRef const kVTDownsamplingMode_Decimate;
+```
+
 ## See Also
 
-- [let kVTDownsamplingMode_Average: CFString](kvtdownsamplingmode_average.md)
+### Downsampling Modes
+- [let kVTDownsamplingMode_Average: CFString](./kvtdownsamplingmode_average.md)
   Average missing samples (default center).
 
 

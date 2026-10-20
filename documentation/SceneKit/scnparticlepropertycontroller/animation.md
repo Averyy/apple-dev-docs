@@ -1,18 +1,19 @@
 # animation
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Animation object defining the behavior of the property animation.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,23 +21,28 @@ The Core Animation object defining the behavior of the property animation.
 var animation: CAAnimation { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CAAnimation * animation;
+```
+
 #### Discussion
 
-You can use different [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation) subclasses to animate effects in different ways. For example, a [`CABasicAnimation`](https://developer.apple.com/documentation/quartzcore/cabasicanimation) transitions a property from one value to another, and a [`CAKeyframeAnimation`](https://developer.apple.com/documentation/quartzcore/cakeyframeanimation) transitions a property through a series of values. You use properties of the animation object to define its timing curve, repeat mode, and other options.
+You can use different [`CAAnimation`](../../QuartzCore/caanimation.md) subclasses to animate effects in different ways. For example, a [`CABasicAnimation`](../../QuartzCore/cabasicanimation.md) transitions a property from one value to another, and a [`CAKeyframeAnimation`](../../QuartzCore/cakeyframeanimation.md) transitions a property through a series of values. You use properties of the animation object to define its timing curve, repeat mode, and other options.
 
-SceneKit ignores the [`keyPath`](https://developer.apple.com/documentation/quartzcore/capropertyanimation/keypath) property of this animation object. Instead, when you attach a property controller to a particle system’s [`propertyControllers`](scnparticlesystem/propertycontrollers.md) dictionary, use one of the keys listed in Particle Property Keys to specify which particle property it animates. SceneKit also ignores the animation’s [`duration`](https://developer.apple.com/documentation/quartzcore/camediatiming/duration) and [`repeatCount`](https://developer.apple.com/documentation/quartzcore/camediatiming/repeatcount) properties. Instead, the controller defines the behavior of the animation’s input value.
+SceneKit ignores the [`keyPath`](../../QuartzCore/capropertyanimation/keypath.md) property of this animation object. Instead, when you attach a property controller to a particle system’s [`propertyControllers`](../scnparticlesystem/propertycontrollers.md) dictionary, use one of the keys listed in Particle Property Keys to specify which particle property it animates. SceneKit also ignores the animation’s [`duration`](../../QuartzCore/camediatiming/duration.md) and [`repeatCount`](../../QuartzCore/camediatiming/repeatcount.md) properties. Instead, the controller defines the behavior of the animation’s input value.
 
 ## See Also
 
-- [var inputMode: SCNParticleInputMode](scnparticlepropertycontroller/inputmode.md)
+### Managing the Controller’s Animation
+- [var inputMode: SCNParticleInputMode](./inputmode.md)
   The mode that determines input values for the property controller’s animation.
-- [var inputBias: CGFloat](scnparticlepropertycontroller/inputbias.md)
+- [var inputBias: CGFloat](./inputbias.md)
   An offset to add to the input value of the controller’s animation.
-- [var inputScale: CGFloat](scnparticlepropertycontroller/inputscale.md)
+- [var inputScale: CGFloat](./inputscale.md)
   A factor for multiplying the input value of the controller’s animation.
-- [var inputOrigin: SCNNode?](scnparticlepropertycontroller/inputorigin.md)
+- [var inputOrigin: SCNNode?](./inputorigin.md)
   A node whose distance to each particle provides input values for the controller’s animation.
-- [var inputProperty: SCNParticleSystem.ParticleProperty?](scnparticlepropertycontroller/inputproperty.md)
+- [var inputProperty: SCNParticleSystem.ParticleProperty?](./inputproperty.md)
   A particle property that provides input values for this property controller’s animation.
 
 

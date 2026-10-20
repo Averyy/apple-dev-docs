@@ -1,7 +1,8 @@
 # playMusic
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the message that invites the user to play music by subscribing to Apple Music.
 

@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The item’s creation date.
 
@@ -18,11 +19,16 @@ The item’s creation date.
 static var creationDate: NSFileProviderItemFields { get }
 ```
 
+```c
+NSFileProviderItemCreationDate
+```
+
 ## See Also
 
-- [static var contentModificationDate: NSFileProviderItemFields](nsfileprovideritemfields/contentmodificationdate.md)
+### Tracking Usage
+- [static var contentModificationDate: NSFileProviderItemFields](./contentmodificationdate.md)
   The item’s modification date.
-- [static var lastUsedDate: NSFileProviderItemFields](nsfileprovideritemfields/lastuseddate.md)
+- [static var lastUsedDate: NSFileProviderItemFields](./lastuseddate.md)
   The date the item was last used.
 
 

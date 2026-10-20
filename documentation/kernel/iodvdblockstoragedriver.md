@@ -1,43 +1,45 @@
 # IODVDBlockStorageDriver
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IODVDBlockStorageDriver : IOCDBlockStorageDriver
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- acceptNewMedia](iodvdblockstoragedriver/1476007-acceptnewmedia.md)
-- [- getDeviceTypeName](iodvdblockstoragedriver/1476019-getdevicetypename.md)
-- [- getMetaClass](iodvdblockstoragedriver/1476012-getmetaclass.md)
-- [- getProvider](iodvdblockstoragedriver/1476029-getprovider.md)
-- [- instantiateDesiredMediaObject](iodvdblockstoragedriver/1476033-instantiatedesiredmediaobject.md)
-- [- instantiateMediaObject](iodvdblockstoragedriver/1476022-instantiatemediaobject.md)
-- [- readStructure](iodvdblockstoragedriver/1476024-readstructure.md)
-- [- reportKey](iodvdblockstoragedriver/4520034-reportkey.md)
-- [- reportKey](iodvdblockstoragedriver/4520035-reportkey.md)
-- [- sendKey](iodvdblockstoragedriver/1476015-sendkey.md)
+- [- acceptNewMedia](./iodvdblockstoragedriver/api-1476007-acceptnewmedia.md)
+- [- getDeviceTypeName](./iodvdblockstoragedriver/api-1476019-getdevicetypename.md)
+- [- getMetaClass](./iodvdblockstoragedriver/api-1476012-getmetaclass.md)
+- [- getProvider](./iodvdblockstoragedriver/api-1476029-getprovider.md)
+- [- instantiateDesiredMediaObject](./iodvdblockstoragedriver/api-1476033-instantiatedesiredmediaobject.md)
+- [- instantiateMediaObject](./iodvdblockstoragedriver/api-1476022-instantiatemediaobject.md)
+- [- readStructure](./iodvdblockstoragedriver/api-1476024-readstructure.md)
+- [- reportKey](./iodvdblockstoragedriver/api-4520034-reportkey.md)
+- [- reportKey](./iodvdblockstoragedriver/api-4520035-reportkey.md)
+- [- sendKey](./iodvdblockstoragedriver/api-1476015-sendkey.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOCDBlockStorageDriver](iocdblockstoragedriver.md)
+- [IOCDBlockStorageDriver](./iocdblockstoragedriver.md)
 
 ## See Also
 
-- [IOBDBlockStorageDriver](iobdblockstoragedriver.md)
-- [IOCDBlockStorageDriver](iocdblockstoragedriver.md)
-- [IOBlockStorageDriver](ioblockstoragedriver.md)
+### Drivers
+- [IOBDBlockStorageDriver](./iobdblockstoragedriver.md)
+- [IOCDBlockStorageDriver](./iocdblockstoragedriver.md)
+- [IOBlockStorageDriver](./ioblockstoragedriver.md)
   The common base class for generic block storage drivers.
-- [IOStorage](iostorage.md)
+- [IOStorage](./iostorage.md)
   The common base class for mass storage objects.
 
 

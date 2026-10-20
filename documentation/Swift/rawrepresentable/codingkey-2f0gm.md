@@ -1,7 +1,8 @@
 # codingKey
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -17,6 +18,8 @@
 ```swift
 var codingKey: any CodingKey { get }
 ```
+
+Available when `Self` conforms to `CodingKeyRepresentable` and `RawValue` is `String`.
 
 
 ---

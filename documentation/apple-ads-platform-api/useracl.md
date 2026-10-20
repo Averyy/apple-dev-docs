@@ -1,7 +1,8 @@
 # User ACL
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An access control entry for a single ad account that specifies the authenticated user’s assigned roles.
 
@@ -10,13 +11,13 @@ An access control entry for a single ad account that specifies the authenticated
 
 ## Declaration
 
-```swift
+```
 object UserAcl
 ```
 
 #### Discussion
 
-The `UserAcl` object represents a user’s access control entry for a single ad account. Each record returned by `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)) corresponds to one ad account the authenticated user can access.
+The `UserAcl` object represents a user’s access control entry for a single ad account. Each record returned by `GET /v1/acls` ([`Get User ACL`](./get-user-acls.md)) corresponds to one ad account the authenticated user can access.
 
 ##### Example
 
@@ -35,7 +36,7 @@ The `UserAcl` object represents a user’s access control entry for a single ad 
 
 #### Roles Reference
 
-An API Account Manager assigns roles through the Apple Ads UI, and you can’t set or change them via the API. Use the table below as a reference when interpreting the `roles` field returned by `GET /v1/acls` ([`Get User ACL`](get-user-acls.md)).
+An API Account Manager assigns roles through the Apple Ads UI, and you can’t set or change them via the API. Use the table below as a reference when interpreting the `roles` field returned by `GET /v1/acls` ([`Get User ACL`](./get-user-acls.md)).
 
 | Role | Access Level |
 | --- | --- |
@@ -47,38 +48,38 @@ An API Account Manager assigns roles through the Apple Ads UI, and you can’t s
 
 ## Properties
 
-- `adAccount` (AclAdAccount): The ad account this ACL entry belongs to. See [`AclAdAccount`](acladaccount.md).
+- `adAccount` (AclAdAccount): The ad account this ACL entry belongs to. See [`AclAdAccount`](./acladaccount.md).
 - `roles` ([string]): List of role names the user holds for this ad account.
 
 ## See Also
 
-- [object AdAccount](adaccount.md)
+- [object AdAccount](./adaccount.md)
   The account-level resource within an organization that contains campaigns and advertising settings.
-- [object AdAccountCreate](adaccountcreate.md)
+- [object AdAccountCreate](./adaccountcreate.md)
   Request body for creating a new ad account under an organization.
-- [object AdAccountUpdate](adaccountupdate.md)
+- [object AdAccountUpdate](./adaccountupdate.md)
   The request body you use to update an ad account.
-- [object AdAccountResponse](adaccountresponse.md)
+- [object AdAccountResponse](./adaccountresponse.md)
   The response envelope ad account operations return.
-- [object AclAdAccount](acladaccount.md)
+- [object AclAdAccount](./acladaccount.md)
   Ad account details as returned in ACL responses.
-- [object UserAclListResponse](useracllistresponse.md)
+- [object UserAclListResponse](./useracllistresponse.md)
   The response envelope for the Get User ACL endpoint, containing the list of user access control entries.
-- [object UserAccessResult](useraccessresult.md)
+- [object UserAccessResult](./useraccessresult.md)
   The result object returned when querying user ACL entries, containing the list of ad account access records.
-- [object Delegation](delegation.md)
+- [object Delegation](./delegation.md)
   Links an ad account to an external advertiser resource, such as a content provider or brand.
-- [object DelegationCreate](delegationcreate.md)
+- [object DelegationCreate](./delegationcreate.md)
   The request body for creating a delegation on an ad account.
-- [object DelegationUpdate](delegationupdate.md)
+- [object DelegationUpdate](./delegationupdate.md)
   The request body for updating a delegation on an ad account.
-- [object Me](me.md)
+- [object Me](./me.md)
   The authenticated user’s identity information.
-- [object MeResponse](meresponse.md)
+- [object MeResponse](./meresponse.md)
   The response envelope for the Get Me Details endpoint, containing the authenticated user’s identity.
-- [object Org](org.md)
+- [object Org](./org.md)
   Represents an organization in the Apple Ads system.
-- [object OrgResponse](orgresponse.md)
+- [object OrgResponse](./orgresponse.md)
   The response envelope for a single organization lookup.
 
 

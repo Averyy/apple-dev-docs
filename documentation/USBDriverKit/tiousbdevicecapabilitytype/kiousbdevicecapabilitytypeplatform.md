@@ -1,32 +1,34 @@
 # kIOUSBDeviceCapabilityTypePlatform
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceCapabilityTypePlatform
 ```
 
 ## See Also
 
-- [kIOUSBDeviceCapabilityTypeBatteryInfo](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebatteryinfo.md)
-- [kIOUSBDeviceCapabilityTypeBillboard](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebillboard.md)
-- [kIOUSBDeviceCapabilityTypeBillboardAltMode](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebillboardaltmode.md)
-- [kIOUSBDeviceCapabilityTypeContainerID](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypecontainerid.md)
-- [kIOUSBDeviceCapabilityTypePdConsumerPort](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepdconsumerport.md)
-- [kIOUSBDeviceCapabilityTypePdProviderPort](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepdproviderport.md)
-- [kIOUSBDeviceCapabilityTypePowerDelivery](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepowerdelivery.md)
-- [kIOUSBDeviceCapabilityTypePrecisionMeasurement](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeprecisionmeasurement.md)
-- [kIOUSBDeviceCapabilityTypeSuperSpeed](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypesuperspeed.md)
-- [kIOUSBDeviceCapabilityTypeSuperSpeedPlus](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypesuperspeedplus.md)
-- [kIOUSBDeviceCapabilityTypeUSB20Extension](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeusb20extension.md)
-- [kIOUSBDeviceCapabilityTypeWireless](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypewireless.md)
-- [kIOUSBDeviceCapabilityTypeWirelessExt](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypewirelessext.md)
+### Getting the Capability Types
+- [kIOUSBDeviceCapabilityTypeBatteryInfo](./kiousbdevicecapabilitytypebatteryinfo.md)
+- [kIOUSBDeviceCapabilityTypeBillboard](./kiousbdevicecapabilitytypebillboard.md)
+- [kIOUSBDeviceCapabilityTypeBillboardAltMode](./kiousbdevicecapabilitytypebillboardaltmode.md)
+- [kIOUSBDeviceCapabilityTypeContainerID](./kiousbdevicecapabilitytypecontainerid.md)
+- [kIOUSBDeviceCapabilityTypePdConsumerPort](./kiousbdevicecapabilitytypepdconsumerport.md)
+- [kIOUSBDeviceCapabilityTypePdProviderPort](./kiousbdevicecapabilitytypepdproviderport.md)
+- [kIOUSBDeviceCapabilityTypePowerDelivery](./kiousbdevicecapabilitytypepowerdelivery.md)
+- [kIOUSBDeviceCapabilityTypePrecisionMeasurement](./kiousbdevicecapabilitytypeprecisionmeasurement.md)
+- [kIOUSBDeviceCapabilityTypeSuperSpeed](./kiousbdevicecapabilitytypesuperspeed.md)
+- [kIOUSBDeviceCapabilityTypeSuperSpeedPlus](./kiousbdevicecapabilitytypesuperspeedplus.md)
+- [kIOUSBDeviceCapabilityTypeUSB20Extension](./kiousbdevicecapabilitytypeusb20extension.md)
+- [kIOUSBDeviceCapabilityTypeWireless](./kiousbdevicecapabilitytypewireless.md)
+- [kIOUSBDeviceCapabilityTypeWirelessExt](./kiousbdevicecapabilitytypewirelessext.md)
 
 
 ---

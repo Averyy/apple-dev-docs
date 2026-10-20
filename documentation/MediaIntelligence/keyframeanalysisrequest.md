@@ -1,7 +1,8 @@
 # KeyFrameAnalysisRequest
 
 **Framework**: Media Intelligence  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that identifies the best representative frame of a video.
 
@@ -21,39 +22,40 @@ final class KeyFrameAnalysisRequest
 
 ## Mentions
 
-- [Finding the best moments in a video](finding-the-best-moments-in-a-video.md)
+- [Finding the best moments in a video](./finding-the-best-moments-in-a-video.md)
 
 #### Overview
 
-Use this type to find the single frame that best represents the overall content of the video. Pass it to [`analyze(_:for:)`](videoanalyzer/analyze(_:for:).md) to receive a [`KeyFrameAnalysisRequest.Result`](keyframeanalysisrequest/result.md) value containing the frame’s timestamp.
+Use this type to find the single frame that best represents the overall content of the video. Pass it to [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md) to receive a [`KeyFrameAnalysisRequest.Result`](./keyframeanalysisrequest/result.md) value containing the frame’s timestamp.
 
 Use the timestamp to seek a player to that position or to extract a thumbnail image.
 
 ## Topics
 
 ### Creating a request
-- [init()](keyframeanalysisrequest/init.md)
+- [init()](./keyframeanalysisrequest/init%28%29.md)
   Creates a key frame analysis request.
 ### Inspecting the result
-- [KeyFrameAnalysisRequest.Result](keyframeanalysisrequest/result.md)
+- [KeyFrameAnalysisRequest.Result](./keyframeanalysisrequest/result.md)
   The output of a key frame analysis.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VideoAnalyzer.Request](videoanalyzer/request.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VideoAnalyzer.Request](./videoanalyzer/request.md)
 
 ## See Also
 
-- [Finding the best moments in a video](finding-the-best-moments-in-a-video.md)
+### Video analysis
+- [Finding the best moments in a video](./finding-the-best-moments-in-a-video.md)
   Identify keyframes and highlight segments using on-device analysis.
-- [class VideoAnalyzer](videoanalyzer.md)
+- [class VideoAnalyzer](./videoanalyzer.md)
   An object that analyzes video assets for highlights and key frames.
-- [struct MediaIntelligenceVideoAsset](mediaintelligencevideoasset.md)
+- [struct MediaIntelligenceVideoAsset](./mediaintelligencevideoasset.md)
   A video asset to analyze.
-- [class HighlightAnalysisRequest](highlightanalysisrequest.md)
+- [class HighlightAnalysisRequest](./highlightanalysisrequest.md)
   A request that identifies the most engaging segments of a video.
 
 

@@ -1,7 +1,8 @@
 # collectionView(_:dropPreviewParametersForItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns custom information about how to display the item at the specified location during the drop.
 
@@ -15,6 +16,10 @@ Returns custom information about how to display the item at the specified locati
 
 ```swift
 optional func collectionView(_ collectionView: UICollectionView, dropPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters?
+```
+
+```objc
+- (UIDragPreviewParameters *) collectionView:(UICollectionView *) collectionView dropPreviewParametersForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value

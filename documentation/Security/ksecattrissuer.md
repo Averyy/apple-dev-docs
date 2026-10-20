@@ -1,7 +1,8 @@
 # kSecAttrIssuer
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s issuer.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s issuer.
 let kSecAttrIssuer: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrIssuer;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains the X.500 issuer name of a certificate. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains the X.500 issuer name of a certificate. Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

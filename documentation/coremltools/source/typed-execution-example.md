@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/typed-execution-exam
 
 # Typed Execution Workflow Example
 
-**
-
-- [.md](../_sources/source/typed-execution-example.md)
-- **
-
-.pdf
-
-**
-
-# Typed Execution Workflow Example
-
- Table of contents 
-
-## Contents
-
-# Typed Execution Workflow Example
-
 The following example demonstrates the recommended workflow when using [ML programs](convert-to-ml-program.md) with [typed execution](typed-execution.md). The workflow consists of the following steps:
 
 1. Convert the model to a float 16 typed Core ML model, which is eligible to execute on a combination of the Neural Engine (NE), GPU and CPU.
@@ -34,16 +17,22 @@ The example converts a [TensorFlow 1](https://www.tensorflow.org/) pre-trained f
 ## Download the Model and Install TensorFlow 1
 
 1. [Use this download link](https://docs-assets.developer.apple.com/coremltools/models/fast_neural_style_wave.pb) to download the model file (`fast_neural_style_wave.pb`).
-2. This model requires TensorFlow 1, which is deprecated and difficult to install directly with pip. You can use the appropriate [Miniconda installer](https://docs.conda.io/en/latest/miniconda.md) for your operating system and create a conda environment specifically for Python 3.7, and then use conda to install TensorFlow 1:
-conda create -n tensorflow1-env python=3.7
-conda activate tensorflow1-env
-conda install tensorflow==1.15
+2. This model requires TensorFlow 1, which is deprecated and difficult to install directly with pip. You can use the appropriate [Miniconda installer](https://docs.conda.io/en/latest/miniconda.html) for your operating system and create a conda environment specifically for Python 3.7, and then use conda to install TensorFlow 1:
+
+   ```
+   conda create -n tensorflow1-env python=3.7
+   conda activate tensorflow1-env
+   conda install tensorflow==1.15
+   ```
 
 For alternatives, see [How to pip install old version of library(tensorflow)](https://stackoverflow.com/questions/41937915/how-to-pip-install-old-version-of-librarytensorflow) on StackOverflow.
 3. Install the following for this conda environment:
-pip install -U coremltools
-pip install pillow
-conda install matplotlib
+
+   ```
+   pip install -U coremltools
+   pip install pillow
+   conda install matplotlib
+   ```
 
 ## Convert the Model to an ML Program
 
@@ -69,21 +58,29 @@ To make a prediction with the newly converted Core ML model, follow these steps:
 
 1. Download and save the following sample image as `seats.jpg`.
 
+![Seats image](https://apple.github.io/coremltools/docs-guides/_images/seats.jpg)
+
 Right-click on this image and save it as `seats.jpg` before running the following code snippet.
 2. Add the following code to load the image using `PIL` (the Python image library, which you installed as `pillow` in the previous section):
-from PIL import Image
 
-img = Image.open("seats.jpg").resize((512, 512), Image.ANTIALIAS)
+   ```
+   from PIL import Image
+
+   img = Image.open("seats.jpg").resize((512, 512), Image.ANTIALIAS)
+   ```
 3. Run a prediction:
-# make a prediction
-spec = model.get_spec()
-model_input_name = spec.description.input[0].name
-model_output_name = spec.description.output[0].name
 
-coreml_out = model.predict({model_input_name : img})
-coreml_output_tensor = coreml_out[model_output_name]
+   ```
+   # make a prediction
+   spec = model.get_spec()
+   model_input_name = spec.description.input[0].name
+   model_output_name = spec.description.output[0].name
 
-print("shape of coreml output: ", coreml_output_tensor.shape)
+   coreml_out = model.predict({model_input_name : img})
+   coreml_output_tensor = coreml_out[model_output_name]
+
+   print("shape of coreml output: ", coreml_output_tensor.shape)
+   ```
 
 ```
 shape of coreml output:  (1, 512, 512, 3)
@@ -208,12 +205,10 @@ ax_array[3].set_title("Source model output", fontsize=15)
 plt.show()
 ```
 
-![Visual plot of model output](../_images/plot_style_transfer_outputs.png)
+![Visual plot of model output](https://apple.github.io/coremltools/docs-guides/_images/plot_style_transfer_outputs.png)
 
 Testing the match between the models visually.
 
 As expected it is hard to spot any difference! With an SNR of 70dB, the float 16 typed Core ML model is sufficient. Since the output is a new stylized image, it does not need to exactly match that of the original model, as long as it represents the style faithfully.
 
 While the float 16 version of the model performs well with this image, the best practice would be to check a set of validation images. If their SNRs are also high, you would deploy the float 16 version model, as it can execute on the NE as well as the GPU and CPU.
-
-** Contents

@@ -1,28 +1,29 @@
 # Receiving iOS notifications on an accessory
 
-**Framework**: Accessory Transport Extension
+**Framework**: Accessory Transport Extension  
+**Role**: Article
 
 Create custom app extensions that manage iOS system notifications for your accessory.
 
 #### Overview
 
-When someone opts into notification forwarding for your accessory from their iPhone, the system identifies your accessory with the reference your companion app receives from [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit). The system prompts the person for permission to forward notifications to the accessory from the apps that they choose in the prompt.
+When someone opts into notification forwarding for your accessory from their iPhone, the system identifies your accessory with the reference your companion app receives from [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md). The system prompts the person for permission to forward notifications to the accessory from the apps that they choose in the prompt.
 
-Implement three extensions using the [`Accessory Notifications`](https://developer.apple.com/documentation/accessorynotifications) framework to forward notifications securely:
+Implement three extensions using the [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md) framework to forward notifications securely:
 
-- **[`AccessoryDataProvider`](accessorydataprovider.md)**: Receives notification content and prepares it for transmission.
-- **[`AccessoryTransportSecurity`](accessorytransportsecurity.md)**: Manages cryptographic key exchange with your accessory.
-- **[`AccessoryTransportAppExtension`](accessorytransportappextension.md)**: Relays encrypted data to your accessory over Bluetooth.
+- **[`AccessoryDataProvider`](./accessorydataprovider.md)**: Receives notification content and prepares it for transmission.
+- **[`AccessoryTransportSecurity`](./accessorytransportsecurity.md)**: Manages cryptographic key exchange with your accessory.
+- **[`AccessoryTransportAppExtension`](./accessorytransportappextension.md)**: Relays encrypted data to your accessory over Bluetooth.
 
 The system coordinates these extensions, encrypting notification data before transmission so that only your accessory can decrypt it.
 
-Your accessory receives the notification data and decrypts it using [`HPKE (RFC9180)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/rfc9180/) before parsing the notification details. Extract the notification properties such as title, subtitle, body, and any rich content you include in the transmission.
+Your accessory receives the notification data and decrypts it using [HPKE (RFC9180)](https://datatracker.ietf.org/doc/rfc9180/) before parsing the notification details. Extract the notification properties such as title, subtitle, body, and any rich content you include in the transmission.
 
 Alert for the notification on your accessory by presenting it on screen, playing a sound, or triggering a haptic effect that uses touch to give users feedback. You can include a suggested alerting strategy in your transmission based on particular situations or hints the system provides.
 
-#### Register for Notification Forwarding
+#### Register for notification forwarding
 
-To register your accessory’s companion app for notification forwarding, call the [`AccessoryNotificationCenter`](https://developer.apple.com/documentation/accessorynotifications/accessorynotificationcenter) class’s [`requestForwarding(for:)`](https://developer.apple.com/documentation/accessorynotifications/accessorynotificationcenter/requestforwarding(for:)) method:
+To register your accessory’s companion app for notification forwarding, call the [`AccessoryNotificationCenter`](../AccessoryNotifications/accessorynotificationcenter.md) class’s [`requestForwarding(for:)`](../AccessoryNotifications/accessorynotificationcenter/requestforwarding%28for%29.md) method:
 
 ```swift
 import AccessoryNotifications
@@ -36,11 +37,11 @@ let center = AccessoryNotificationCenter()
 let result = try await center.requestForwarding(for: accessory)
 ```
 
-The system prompts the person for permission to forward notifications and allows them to select the apps on their device that can provide notifications. When the person finishes interacting with the UI and dismisses the prompt, the [`requestForwarding(for:)`](https://developer.apple.com/documentation/accessorynotifications/accessorynotificationcenter/requestforwarding(for:)) method returns the person’s choice in the [`ForwardingDecision`](https://developer.apple.com/documentation/accessorynotifications/forwardingdecision) result. The [`ForwardingDecision.allow`](https://developer.apple.com/documentation/accessorynotifications/forwardingdecision/allow) value indicates that the person allows your accessory to receive notifications from all applicable apps. If the result is [`ForwardingDecision.limited`](https://developer.apple.com/documentation/accessorynotifications/forwardingdecision/limited), your accessory can receive notifications from a subset of apps. The other decision types indicate the person doesn’t opt into notification forwarding.
+The system prompts the person for permission to forward notifications and allows them to select the apps on their device that can provide notifications. When the person finishes interacting with the UI and dismisses the prompt, the [`requestForwarding(for:)`](../AccessoryNotifications/accessorynotificationcenter/requestforwarding%28for%29.md) method returns the person’s choice in the [`ForwardingDecision`](../AccessoryNotifications/forwardingdecision.md) result. The [`ForwardingDecision.allow`](../AccessoryNotifications/forwardingdecision/allow.md) value indicates that the person allows your accessory to receive notifications from all applicable apps. If the result is [`ForwardingDecision.limited`](../AccessoryNotifications/forwardingdecision/limited.md), your accessory can receive notifications from a subset of apps. The other decision types indicate the person doesn’t opt into notification forwarding.
 
-#### Create an Extension to Receive Notifications
+#### Create an extension to receive notifications
 
-To receive notification content, create an [`AccessoryDataProvider`](accessorydataprovider.md) extension in your accessory’s companion app by adding a new target to your Xcode project with the app extension type. In the extension’s target properties, specify the extension point identifier `com.apple.accessory-data-provider` and declare a capability for `AccessoryNotifications.NotificationsForwarding`:
+To receive notification content, create an [`AccessoryDataProvider`](./accessorydataprovider.md) extension in your accessory’s companion app by adding a new target to your Xcode project with the app extension type. In the extension’s target properties, specify the extension point identifier `com.apple.accessory-data-provider` and declare a capability for `AccessoryNotifications.NotificationsForwarding`:
 
 ```xml
 <plist>
@@ -58,7 +59,7 @@ To receive notification content, create an [`AccessoryDataProvider`](accessoryda
 </plist>
 ```
 
-In your extension’s code, implement the [`AccessoryDataProvider`](accessorydataprovider.md) protocol and provide a handler that conforms to [`NotificationsForwarding.AccessoryNotificationsHandler`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler):
+In your extension’s code, implement the [`AccessoryDataProvider`](./accessorydataprovider.md) protocol and provide a handler that conforms to [`NotificationsForwarding.AccessoryNotificationsHandler`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler.md):
 
 ```swift
 import AccessoryNotifications
@@ -111,21 +112,21 @@ class NotificationHandler: AccessoryNotificationsHandler {
 }
 ```
 
-The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-data-provider) entitlement to use the [`AccessoryDataProvider`](accessorydataprovider.md) protocol.
+The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](../BundleResources/entitlements/com.apple.developer.accessory-data-provider.md) entitlement to use the [`AccessoryDataProvider`](./accessorydataprovider.md) protocol.
 
-#### Receive and Process Notifications
+#### Receive and process notifications
 
-When a notification occurs on the iPhone, the system invokes your extension by calling [`didActivate(for:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/didactivate(for:)), passing in a session object. Save a reference to the session for use across multiple notifications.
+When a notification occurs on the iPhone, the system invokes your extension by calling [`didActivate(for:)`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler/didactivate%28for%29.md), passing in a session object. Save a reference to the session for use across multiple notifications.
 
-The system then calls [`addNotification(_:alertingContext:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:)) on your extension, passing in the notification’s details. Parse the [`AccessoryNotification`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification) structure, selecting just the information your accessory needs. Notification details include:
+The system then calls [`addNotification(_:alertingContext:)`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler/addnotification%28_,alertingcontext%29.md) on your extension, passing in the notification’s details. Parse the [`AccessoryNotification`](../AccessoryNotifications/accessorynotification.md) structure, selecting just the information your accessory needs. Notification details include:
 
-- **Display content**: [`title`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/title), [`subtitle`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/subtitle), and [`summary`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/summary) (for Apple Intelligence summaries)
-- **Rich elements**: [`sourceIcon`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/sourceicon), [`contextIcon`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/contexticon), [`attachments`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/attachments), and [`body`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/body), which can contain a genmoji through the [`NSAdaptiveImageGlyph`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/nsadaptiveimageglyph) class
-- **Interactive components**: [`actions`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/actions) array
-- **Metadata**: [`identifier`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/identifier-swift.property), [`sourceName`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/sourcename), [`threadIdentifier`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/threadidentifier), [`deliveryDate`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/deliverydate), and [`displayDate`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/displaydate-swift.property)
-- **Priority attributes**: [`attributes`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/attributes-swift.property) for critical, time-sensitive, or priority notifications
+- **Display content**: [`title`](../AccessoryNotifications/accessorynotification/title.md), [`subtitle`](../AccessoryNotifications/accessorynotification/subtitle.md), and [`summary`](../AccessoryNotifications/accessorynotification/summary.md) (for Apple Intelligence summaries)
+- **Rich elements**: [`sourceIcon`](../AccessoryNotifications/accessorynotification/sourceicon.md), [`contextIcon`](../AccessoryNotifications/accessorynotification/contexticon.md), [`attachments`](../AccessoryNotifications/accessorynotification/attachments.md), and [`body`](../AccessoryNotifications/accessorynotification/body.md), which can contain a genmoji through the [NSAdaptiveImageGlyph](../UIKit/nsadaptiveimageglyph.md) class
+- **Interactive components**: [`actions`](../AccessoryNotifications/accessorynotification/actions.md) array
+- **Metadata**: [`identifier`](../AccessoryNotifications/accessorynotification/identifier-swift.property.md), [`sourceName`](../AccessoryNotifications/accessorynotification/sourcename.md), [`threadIdentifier`](../AccessoryNotifications/accessorynotification/threadidentifier.md), [`deliveryDate`](../AccessoryNotifications/accessorynotification/deliverydate.md), and [`displayDate`](../AccessoryNotifications/accessorynotification/displaydate-swift.property.md)
+- **Priority attributes**: [`attributes`](../AccessoryNotifications/accessorynotification/attributes-swift.property.md) for critical, time-sensitive, or priority notifications
 
-Serialize the notification details you select and create an [`AccessoryMessage`](accessorymessage.md) to send the curated data to your accessory:
+Serialize the notification details you select and create an [`AccessoryMessage`](./accessorymessage.md) to send the curated data to your accessory:
 
 ```swift
 func addNotification(_ notification: AccessoryNotification, 
@@ -162,9 +163,9 @@ You can send one message per notification, or you can partition the data for a s
 
 The method returns a Boolean value indicating whether your accessory alerted for the notification. Return `true` if the accessory successfully alerts the person, or `false` otherwise. This information helps the system coordinate alerting across multiple devices.
 
-#### Create an Extension to Send Notifications Securely
+#### Create an extension to send notifications securely
 
-Create an [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extension to manage the cryptographic key exchange process. Add a new extension target to your Xcode project. In the extension’s target properties, specify the extension point identifier `com.apple.accessory-transport-security`:
+Create an [`AccessoryTransportSecurity`](./accessorytransportsecurity.md) extension to manage the cryptographic key exchange process. Add a new extension target to your Xcode project. In the extension’s target properties, specify the extension point identifier `com.apple.accessory-transport-security`:
 
 ```xml
 <plist>
@@ -178,7 +179,7 @@ Create an [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extensio
 </plist>
 ```
 
-In your extension’s code, implement the [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol, in which you [`accept(_:)`](accessorysecuritysession/request/accept(_:).md) incoming security session requests for your accessory:
+In your extension’s code, implement the [`AccessoryTransportSecurity`](./accessorytransportsecurity.md) protocol, in which you [`accept(_:)`](./accessorysecuritysession/request/accept%28_%29.md) incoming security session requests for your accessory:
 
 ```swift
 import AccessoryTransportExtension
@@ -199,11 +200,11 @@ struct TransportSecurity: AccessoryTransportSecurity {
 }
 ```
 
-The system requires your app extension to have the [`com.apple.developer.accessory-transport-security`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-security) entitlement to use the [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol.
+The system requires your app extension to have the [`com.apple.developer.accessory-transport-security`](../BundleResources/entitlements/com.apple.developer.accessory-transport-security.md) entitlement to use the [`AccessoryTransportSecurity`](./accessorytransportsecurity.md) protocol.
 
-#### Provide a Security Event Handler
+#### Provide a security event handler
 
-The security extension assists with cryptography by handling key exchange messages between your accessory and the system. Provide an event handler that conforms to the [`AccessorySecuritySession`](accessorysecuritysession.md) class’s [`AccessorySecuritySession.EventHandler`](accessorysecuritysession/eventhandler.md) protocol. The system calls your handler’s [`messageReceived(_:completion:)`](accessorysecuritysession/eventhandler/messagereceived(_:completion:).md) method with security messages during the key exchange:
+The security extension assists with cryptography by handling key exchange messages between your accessory and the system. Provide an event handler that conforms to the [`AccessorySecuritySession`](./accessorysecuritysession.md) class’s [`AccessorySecuritySession.EventHandler`](./accessorysecuritysession/eventhandler.md) protocol. The system calls your handler’s [`messageReceived(_:completion:)`](./accessorysecuritysession/eventhandler/messagereceived%28_,completion%29.md) method with security messages during the key exchange:
 
 ```swift
 class SecurityEventHandler: AccessorySecuritySession.EventHandler {
@@ -235,9 +236,9 @@ class SecurityEventHandler: AccessorySecuritySession.EventHandler {
 }
 ```
 
-#### Initiate Key Exchange From Your Accessory
+#### Initiate key exchange from your accessory
 
-Your accessory initiates the key exchange process when it’s ready to establish encrypted communication. Generate a public-private key pair on your accessory and send the public key to the system. Choose [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) for post-quantum security, or [`SecurityMessage.CipherSuite.p256`](securitymessage/ciphersuite-swift.enum/p256.md) as a fallback if your accessory doesn’t support XWing:
+Your accessory initiates the key exchange process when it’s ready to establish encrypted communication. Generate a public-private key pair on your accessory and send the public key to the system. Choose [`SecurityMessage.CipherSuite.xWing`](./securitymessage/ciphersuite-swift.enum/xwing.md) for post-quantum security, or [`SecurityMessage.CipherSuite.p256`](./securitymessage/ciphersuite-swift.enum/p256.md) as a fallback if your accessory doesn’t support XWing:
 
 ```swift
 func handleKeyRequest(cipherSuite: SecurityMessage.CipherSuite) {
@@ -278,11 +279,11 @@ func handleKeyRequest(cipherSuite: SecurityMessage.CipherSuite) {
 }
 ```
 
-To use [`AccessoryTransport.internet`](accessorytransport/internet.md) or [`AccessoryTransport.localNetwork`](accessorytransport/localnetwork.md) transports, you must use XWing for enhanced security. Specify the supported transports in the `supportedTransports` parameter.
+To use [`AccessoryTransport.internet`](./accessorytransport/internet.md) or [`AccessoryTransport.localNetwork`](./accessorytransport/localnetwork.md) transports, you must use XWing for enhanced security. Specify the supported transports in the `supportedTransports` parameter.
 
-#### Complete the Key Exchange
+#### Complete the key exchange
 
-The system generates cryptographic key material and sends it to your extension by invoking your handler’s [`messageReceived(_:completion:)`](accessorysecuritysession/eventhandler/messagereceived(_:completion:).md) method with a [`SecurityMessage`](securitymessage.md) that has a [`SecurityMessage.KeyType.encapsulatedKey`](securitymessage/keytype-swift.enum/encapsulatedkey.md) key type. Forward this key material to your accessory via Bluetooth and call the completion handler:
+The system generates cryptographic key material and sends it to your extension by invoking your handler’s [`messageReceived(_:completion:)`](./accessorysecuritysession/eventhandler/messagereceived%28_,completion%29.md) method with a [`SecurityMessage`](./securitymessage.md) that has a [`SecurityMessage.KeyType.encapsulatedKey`](./securitymessage/keytype-swift.enum/encapsulatedkey.md) key type. Forward this key material to your accessory via Bluetooth and call the completion handler:
 
 ```swift
 func handleKeyExchange(message: SecurityMessage, 
@@ -310,9 +311,9 @@ func handleKeyExchange(message: SecurityMessage,
 
 The completion handler is required. Call it with `.success` if the key material successfully transmits to your accessory, or `.failure(.transportFailed)` if transmission fails but may recover. If you don’t call the completion handler, the system assumes successful delivery.
 
-#### Implement an Extension to Relay Encrypted Notifications
+#### Implement an extension to relay encrypted notifications
 
-To send the encrypted data to your accessory, use an [`AccessoryTransportAppExtension`](accessorytransportappextension.md). Implement the [`messageReceived(_:completion:)`](accessorytransportsession/eventhandler/messagereceived(_:completion:).md) method in your event processing code, and the system calls your handler to transmit encrypted data for each message payload:
+To send the encrypted data to your accessory, use an [`AccessoryTransportAppExtension`](./accessorytransportappextension.md). Implement the [`messageReceived(_:completion:)`](./accessorytransportsession/eventhandler/messagereceived%28_,completion%29.md) method in your event processing code, and the system calls your handler to transmit encrypted data for each message payload:
 
 ```swift
 class TransportEventHandler: AccessoryTransportSession.EventHandler {
@@ -335,17 +336,17 @@ class TransportEventHandler: AccessoryTransportSession.EventHandler {
 }
 ```
 
-The system encrypts notification data using keys exchanged through your [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extension before delivering it to your handler. Because the data is encrypted, your extension is unable to read or otherwise make sense of the data, and can only transmit it.
+The system encrypts notification data using keys exchanged through your [`AccessoryTransportSecurity`](./accessorytransportsecurity.md) extension before delivering it to your handler. Because the data is encrypted, your extension is unable to read or otherwise make sense of the data, and can only transmit it.
 
 Call the completion handler with `.success` if the message transmits successfully, `.failure(.transportFailed)` if the transport fails but may recover, or `.failure(.transportUnavailable)` if the transport is unavailable. The system retries failed messages or attempts delivery on a different transport.
 
-Add the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-extension) entitlement to your extension’s code signature to use the [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol.
+Add the [`com.apple.developer.accessory-transport-extension`](../BundleResources/entitlements/com.apple.developer.accessory-transport-extension.md) entitlement to your extension’s code signature to use the [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) protocol.
 
-To configure your extension to resume an interrupted Bluetooth session in the background, which allows your extension to skip accessory scanning on relaunch, see [`AccessoryTransportAppExtension`](accessorytransportappextension.md).
+To configure your extension to resume an interrupted Bluetooth session in the background, which allows your extension to skip accessory scanning on relaunch, see [`AccessoryTransportAppExtension`](./accessorytransportappextension.md).
 
-#### Decrypt Notification Data on Your Accessory
+#### Decrypt notification data on your accessory
 
-When your accessory receives the encrypted notification data, it decrypts the data using [`HPKE (RFC9180)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/rfc9180/) with keys exchanged through the transport security extension.
+When your accessory receives the encrypted notification data, it decrypts the data using [HPKE (RFC9180)](https://datatracker.ietf.org/doc/rfc9180/) with keys exchanged through the transport security extension.
 
 The accessory and extension share a secret, that is, a custom string phrase, for the HPKE decryption algorithm. Build the string using information about the protocol and key material:
 
@@ -358,7 +359,7 @@ let protocolInfo = Data("\(cipherSuite)-\(version)-\(identifier)".utf8)
 
 > ❗ **Important**: The version component is the fully spelled-out word `Version1`, not the abbreviated `v1`.
 
-Create an HPKE receiver from the accessory’s private key and protocol information. The following code uses the [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) cipher suite:
+Create an HPKE receiver from the accessory’s private key and protocol information. The following code uses the [`SecurityMessage.CipherSuite.xWing`](./securitymessage/ciphersuite-swift.enum/xwing.md) cipher suite:
 
 ```swift
 let publicKey = try XWingMLKEM768X25519.PublicKey(rawRepresentation: accessoryPublicKeyData)
@@ -375,7 +376,7 @@ let recipient = try HPKE.Recipient(
 )
 ```
 
-Alternatively, the following code creates an HPKE receiver using the fallback [`SecurityMessage.CipherSuite.p256`](securitymessage/ciphersuite-swift.enum/p256.md) cipher suite:
+Alternatively, the following code creates an HPKE receiver using the fallback [`SecurityMessage.CipherSuite.p256`](./securitymessage/ciphersuite-swift.enum/p256.md) cipher suite:
 
 ```swift
 let privateKey = try P256.KeyAgreement.PrivateKey(rawRepresentation: accessoryPrivateKeyData)
@@ -388,7 +389,7 @@ let recipient = try HPKE.Recipient(
 )
 ```
 
-Derive a notification forwarding-specific secret by appending the direction and feature ID to the protocol information. The feature ID is the session ID of the transport message that you receive from [`messageReceived(_:completion:)`](accessorytransportsession/eventhandler/messagereceived(_:completion:).md).
+Derive a notification forwarding-specific secret by appending the direction and feature ID to the protocol information. The feature ID is the session ID of the transport message that you receive from [`messageReceived(_:completion:)`](./accessorytransportsession/eventhandler/messagereceived%28_,completion%29.md).
 
 ```swift
 let featureID = // The transport message's session ID.   
@@ -400,7 +401,7 @@ The direction is `HostToAccessory` for data that flows from the iPhone to the ac
 
 The system encrypts notification data using AES-GCM as specified in NIST Special Publication 800-38D. The ciphertext on the wire encodes as:
 
-```None
+```
 IV (12 bytes) || ciphertext || MAC (16 bytes)
 ```
 
@@ -413,23 +414,23 @@ let plaintext = try AES.GCM.open(sealedBox, using: secret)
 
 If decryption fails, close the connection, reset the encryption state, and resynchronize the key exchange. If decryption succeeds, parse the notification information according to your accessory’s custom format.
 
-#### Alert Someone About a Notification
+#### Alert someone about a notification
 
 To alert for a notification, present it on screen, play a sound, or trigger a haptic effect that uses touch to give users feedback on your accessory device.
 
-Use the [`AlertingContext`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext) to determine whether a notification requires an alert. The system provides the [`shouldAlert`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/shouldalert) property, which represents the person’s preferred notification behavior using notification settings and the iOS device’s current Focus state.
+Use the [`AlertingContext`](../AccessoryNotifications/alertingcontext.md) to determine whether a notification requires an alert. The system provides the [`shouldAlert`](../AccessoryNotifications/alertingcontext/shouldalert.md) property, which represents the person’s preferred notification behavior using notification settings and the iOS device’s current Focus state.
 
-The [`notificationCanAlert`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/notificationcanalert) property indicates whether the notification has sound and alert permissions. The system might set [`notificationCanAlert`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/notificationcanalert) to `false` when the notification already alerts on another device or if device settings disable alerting for the notification.
+The [`notificationCanAlert`](../AccessoryNotifications/alertingcontext/notificationcanalert.md) property indicates whether the notification has sound and alert permissions. The system might set [`notificationCanAlert`](../AccessoryNotifications/alertingcontext/notificationcanalert.md) to `false` when the notification already alerts on another device or if device settings disable alerting for the notification.
 
-The [`isSuppressedByFocus`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/issuppressedbyfocus) property indicates whether the device’s Focus state suppresses notification alerts.
+The [`isSuppressedByFocus`](../AccessoryNotifications/alertingcontext/issuppressedbyfocus.md) property indicates whether the device’s Focus state suppresses notification alerts.
 
-For specialized notification types, check [`kind`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/kind-swift.property) to apply appropriate handling. For example, use the [`AlertingContext.Kind.incomingCall`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/kind-swift.enum/incomingcall) case for full-screen displays or priority alerts. Use [`sound`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/sound-swift.property) to determine sound characteristics, including whether the notification ignores silent mode with [`shouldIgnoreSilentMode`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/sound-swift.struct/shouldignoresilentmode).
+For specialized notification types, check [`kind`](../AccessoryNotifications/alertingcontext/kind-swift.property.md) to apply appropriate handling. For example, use the [`AlertingContext.Kind.incomingCall`](../AccessoryNotifications/alertingcontext/kind-swift.enum/incomingcall.md) case for full-screen displays or priority alerts. Use [`sound`](../AccessoryNotifications/alertingcontext/sound-swift.property.md) to determine sound characteristics, including whether the notification ignores silent mode with [`shouldIgnoreSilentMode`](../AccessoryNotifications/alertingcontext/sound-swift.struct/shouldignoresilentmode.md).
 
-#### Handle Notification Updates and Removals
+#### Handle notification updates and removals
 
 The forwarding life cycle includes requests to update a notification after your accessory receives it, or to remove one or more existing notifications.
 
-When a notification’s content changes, the system notifies your extension by calling [`updateNotification(_:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/updatenotification(_:)). Update the notification on your accessory without alerting again:
+When a notification’s content changes, the system notifies your extension by calling [`updateNotification(_:)`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler/updatenotification%28_%29.md). Update the notification on your accessory without alerting again:
 
 ```swift
 func updateNotification(_ notification: AccessoryNotification) {
@@ -443,7 +444,7 @@ func updateNotification(_ notification: AccessoryNotification) {
 }
 ```
 
-If someone dismisses a notification on another device after your accessory receives the notification, the system follows up with a removal request by calling [`removeNotification(identifier:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/removenotification(identifier:)):
+If someone dismisses a notification on another device after your accessory receives the notification, the system follows up with a removal request by calling [`removeNotification(identifier:)`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler/removenotification%28identifier%29.md):
 
 ```swift
 // Requests the removal of a notification from the accessory.
@@ -458,7 +459,7 @@ func removeNotification(identifier: AccessoryNotification.Identifier) {
 }
 ```
 
-The system calls [`removeAllNotifications()`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/removeallnotifications()) when your accessory needs to remove all notifications, such as when the person deletes the app that sent the notifications:
+The system calls [`removeAllNotifications()`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler/removeallnotifications%28%29.md) when your accessory needs to remove all notifications, such as when the person deletes the app that sent the notifications:
 
 ```swift
 // Requests the removal of all notifications from the accessory.
@@ -475,17 +476,18 @@ func removeAllNotifications() {
 
 ## See Also
 
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+### Notification forwarding
+- [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
   Send notification data to your accessory over the internet when Bluetooth connectivity is unavailable.
-- [protocol AccessoryDataProvider](accessorydataprovider.md)
+- [protocol AccessoryDataProvider](./accessorydataprovider.md)
   A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
-- [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)
+- [protocol AccessoryDataProviderConfiguration](./accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
-- [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)
+- [protocol AccessoryTransportSecurity](./accessorytransportsecurity.md)
   A protocol for an extension that handles cryptographic key exchange with your accessory.
-- [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
+- [protocol AccessoryTransportSecurityConfiguration](./accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
-- [Accessory Notifications](../accessorynotifications/accessorynotifications.md)
+- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 
 

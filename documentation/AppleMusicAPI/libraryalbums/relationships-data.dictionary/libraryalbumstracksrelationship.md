@@ -1,7 +1,8 @@
 # LibraryAlbums.Relationships.LibraryAlbumsTracksRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the library album to its tracks.
 
@@ -10,7 +11,7 @@ A relationship from the library album to its tracks.
 
 ## Declaration
 
-```swift
+```
 object LibraryAlbums.Relationships.LibraryAlbumsTracksRelationship
 ```
 
@@ -20,11 +21,14 @@ object LibraryAlbums.Relationships.LibraryAlbumsTracksRelationship
 - `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
 - `data` ([*]) *(required)*: The songs and music videos from the library album’s tracklist added to the user’s library.
 
+  **Allowed Types**: `LibraryMusicVideos`, `LibrarySongs`
+
 ## See Also
 
-- [object LibraryAlbums.Relationships.LibraryAlbumsArtistsRelationship](libraryalbums/relationships-data.dictionary/libraryalbumsartistsrelationship.md)
+### Related Objects
+- [object LibraryAlbums.Relationships.LibraryAlbumsArtistsRelationship](./libraryalbumsartistsrelationship.md)
   A relationship from the library album to its artist.
-- [object LibraryAlbums.Relationships.LibraryAlbumsCatalogRelationship](libraryalbums/relationships-data.dictionary/libraryalbumscatalogrelationship.md)
+- [object LibraryAlbums.Relationships.LibraryAlbumsCatalogRelationship](./libraryalbumscatalogrelationship.md)
   A relationship from the library album to its associated catalog content.
 
 

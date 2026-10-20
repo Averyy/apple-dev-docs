@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the total number of columns in the table.
@@ -19,13 +20,18 @@ Returns the total number of columns in the table.
 func accessibilityColumnCount() -> Int
 ```
 
+```objc
+- (NSUInteger) accessibilityColumnCount;
+```
+
 #### Return Value
 
 The number of columns.
 
 ## See Also
 
-- [func accessibilityRowCount() -> Int](uiaccessibilitycontainerdatatable/accessibilityrowcount.md)
+### Providing the table dimensions
+- [func accessibilityRowCount() -> Int](./accessibilityrowcount%28%29.md)
   Returns the total number of rows in the table.
 
 

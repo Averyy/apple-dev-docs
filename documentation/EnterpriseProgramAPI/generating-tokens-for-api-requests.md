@@ -1,12 +1,13 @@
 # Generating Tokens for API Requests
 
-**Framework**: Enterprise Program API
+**Framework**: Enterprise Program API  
+**Role**: Article
 
 Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
 
 #### Overview
 
-JSON Web Token (JWT) is an open standard ([`RFC 7519`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information. The the Enterprise Program API requires JWTs to authorize each API request. You create the token, and sign it with the private key you downloaded from the Enterprise Program API.
+JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information. The the Enterprise Program API requires JWTs to authorize each API request. You create the token, and sign it with the private key you downloaded from the Enterprise Program API.
 
 To generate a signed JWT:
 
@@ -16,17 +17,17 @@ To generate a signed JWT:
 
 Include the signed JWT in the authorization header of each the Enterprise Program API request.
 
-##### Create the Jwt Header
+##### Create the JWT Header
 
 To create a JWT to communicate with the the Enterprise Program API, use the following fields and values in the header:
 
 | Header Field | Value |
 | --- | --- |
-| `alg` - Encryption Algorithm | `ES256` ![None](/images/com.apple.devpubs.enterprise-api/spacer.png) All JWTs for the Enterprise Program API must be signed with ES256 encryption. |
+| `alg` - Encryption Algorithm | `ES256` ![](https://developer.apple.com/tutorials/images/com.apple.devpubs.enterprise-api/spacer.png) All JWTs for the Enterprise Program API must be signed with ES256 encryption. |
 | `kid` - Key Identifier | Your private key ID from the Enterprise Program API, for example, `2X9R4HXF34` |
 | `typ` - Token Type | `JWT` |
 
-To get your key ID for you API key for the Enterprise Program API, log in to the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com) and:
+To get your key ID for you API key for the Enterprise Program API, log in to the [Apple Developer website](https://developer.apple.com) and:
 
 1. Select Users and Access.
 2. Select the Integrations tab.
@@ -48,19 +49,19 @@ Here’s an example of a JWT header:
 }
 ```
 
-##### Create the Jwt Payload for Enterprise Program Api Keys
+##### Create the JWT Payload for Enterprise Program API Keys
 
 The JWT payload contains information specific to the the Enterprise Program APIs, such as issuer ID and expiration time. Use the following fields and values in the JWT payload:
 
 | **Payload Field** | **Value** |
 | --- | --- |
-| `iss` - Issuer ID | Your issuer ID from the Integrations page in the the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com), for example, `57246542-96fe-1a63-e053-0824d011072a` |
+| `iss` - Issuer ID | Your issuer ID from the Integrations page in the the [Apple Developer website](https://developer.apple.com), for example, `57246542-96fe-1a63-e053-0824d011072a` |
 | `iat` - Issued At Time | The token’s creation time, in UNIX epoch time, for example, `1528407600` |
-| `exp` - Expiration Time | The token’s expiration time in Unix epoch time. Tokens that expire more than 20 minutes into the future are not valid except for resources listed in [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md). |
+| `exp` - Expiration Time | The token’s expiration time in Unix epoch time. Tokens that expire more than 20 minutes into the future are not valid except for resources listed in [Determine the Appropriate Token Lifetime](./generating-tokens-for-api-requests.md#Determine-the-Appropriate-Token-Lifetime). |
 | `aud` - Audience | `apple-developer-enterprise-v1` |
 | `scope` - Token Scope | A list of operations you want the Enterprise Program API to allow for this token; for example, `GET /v1/users/123` (Optional) |
 
-To get your issuer ID, log in to the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com) and:
+To get your issuer ID, log in to the [Apple Developer website](https://developer.apple.com) and:
 
 1. Select Users and Access.
 2. Select the Integrations tab.
@@ -110,7 +111,7 @@ The following code listing shows an example of a JWT payload with a scope.
 }
 ```
 
-With this payload, the Enterprise Program API only allows you to fetch a list of bundle IDs for iOS using the [`List Bundle Ids`](list-bundle-ids.md) endpoint if you use the `filter[platform]=IOS` query parameter.
+With this payload, the Enterprise Program API only allows you to fetch a list of bundle IDs for iOS using the [`List Bundle Ids`](./list-bundle-ids.md) endpoint if you use the `filter[platform]=IOS` query parameter.
 
 You can use a JWT without a `scope` for any request as long as the role of the API key allows it.
 
@@ -120,15 +121,15 @@ For every request, the Enterprise Program API calculates the valid time for a to
 
 For most requests, the Enterprise Program API rejects a token with a lifetime greater than 20 minutes.
 
-##### Sign the Jwt
+##### Sign the JWT
 
 Use the private key associated with the key ID you specified in the header to sign the token.
 
-Regardless of the programming language you’re using with the the Enterprise Program API, there are a variety of open source libraries available online for creating and signing JWT tokens. See [`JWT.io`](https://developer.apple.comhttps://jwt.io/) for more information.
+Regardless of the programming language you’re using with the the Enterprise Program API, there are a variety of open source libraries available online for creating and signing JWT tokens. See [JWT.io](https://jwt.io/) for more information.
 
 > 💡 **Tip**:  You don’t need to generate a new token for every API request. To get better performance from the the Enterprise Program API, reuse the same signed token for multiple requests until it expires.
 
-##### Include the Jwt in the Requests Authorization Header
+##### Include the JWT in the Request’s Authorization Header
 
 Once you have a complete and signed token, provide the token in the request’s authorization header as a bearer token.
 
@@ -141,13 +142,14 @@ curl -v -H 'Authorization: Bearer [signed token]'
 
 ## See Also
 
-- [Creating API Keys for Enterprise Program API](creating-api-keys-for-enterprise-program-api.md)
+### Essentials
+- [Creating API Keys for Enterprise Program API](./creating-api-keys-for-enterprise-program-api.md)
   Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
-- [Revoking API Keys](revoking-api-keys.md)
+- [Revoking API Keys](./revoking-api-keys.md)
   Revoke unused, lost, or compromised private keys.
-- [Identifying Rate Limits](identifying-rate-limits.md)
+- [Identifying Rate Limits](./identifying-rate-limits.md)
   Recognize the rate limits that REST API responses provide and handle them in your code.
-- [Enterprise Program API Release Notes](enterprise-api-release-notes.md)
+- [Enterprise Program API Release Notes](./enterprise-api-release-notes.md)
   Learn about new features and updates in the Enterprise Program API.
 
 

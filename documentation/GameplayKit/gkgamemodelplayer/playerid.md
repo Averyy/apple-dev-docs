@@ -2,6 +2,7 @@
 
 **Framework**: GameplayKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A number uniquely identifying the player.
@@ -20,9 +21,13 @@ A number uniquely identifying the player.
 var playerId: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger playerId;
+```
+
 #### Discussion
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 
 ---

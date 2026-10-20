@@ -1,7 +1,8 @@
 # spellServer(_:suggestGuessesForWord:inLanguage:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gives the delegate the opportunity to suggest guesses to the sender for the correct spelling of the given misspelled word in the specified language.
 
@@ -13,6 +14,10 @@ Gives the delegate the opportunity to suggest guesses to the sender for the corr
 
 ```swift
 optional func spellServer(_ sender: NSSpellServer, suggestGuessesForWord word: String, inLanguage language: String) -> [String]?
+```
+
+```objc
+- (NSArray<NSString *> *) spellServer:(NSSpellServer *) sender suggestGuessesForWord:(NSString *) word inLanguage:(NSString *) language;
 ```
 
 #### Return Value
@@ -27,11 +32,12 @@ An array of `NSString` objects indicating possible correct spellings.
 
 ## See Also
 
-- [func spellServer(NSSpellServer, check: String, offset: Int, types: NSTextCheckingTypes, options: [String : Any]?, orthography: NSOrthography?, wordCount: UnsafeMutablePointer<Int>) -> [NSTextCheckingResult]?](nsspellserverdelegate/spellserver(_:check:offset:types:options:orthography:wordcount:).md)
+### Check Grammar and Spelling in Strings
+- [func spellServer(NSSpellServer, check: String, offset: Int, types: NSTextCheckingTypes, options: [String : Any]?, orthography: NSOrthography?, wordCount: UnsafeMutablePointer<Int>) -> [NSTextCheckingResult]?](./spellserver%28_,check,offset,types,options,orthography,wordcount%29.md)
   Gives the delegate the opportunity to analyze both the spelling and grammar simultaneously, which is more efficient.
-- [func spellServer(NSSpellServer, checkGrammarIn: String, language: String?, details: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> NSRange](nsspellserverdelegate/spellserver(_:checkgrammarin:language:details:).md)
+- [func spellServer(NSSpellServer, checkGrammarIn: String, language: String?, details: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> NSRange](./spellserver%28_,checkgrammarin,language,details%29.md)
   Gives the delegate the opportunity to customize the grammatical analysis of a given string.
-- [func spellServer(NSSpellServer, findMisspelledWordIn: String, language: String, wordCount: UnsafeMutablePointer<Int>, countOnly: Bool) -> NSRange](nsspellserverdelegate/spellserver(_:findmisspelledwordin:language:wordcount:countonly:).md)
+- [func spellServer(NSSpellServer, findMisspelledWordIn: String, language: String, wordCount: UnsafeMutablePointer<Int>, countOnly: Bool) -> NSRange](./spellserver%28_,findmisspelledwordin,language,wordcount,countonly%29.md)
   Asks the delegate to search for a misspelled word in a given string, using the specified language, and marking the first misspelled word found by returning its range within the string.
 
 

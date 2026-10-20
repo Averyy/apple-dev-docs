@@ -1,7 +1,8 @@
 # init(name:bundle:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an object with a reference to the named data asset thatâ€™s in an asset catalog in the specified bundle.
 
@@ -12,6 +13,10 @@ Initializes and returns an object with a reference to the named data asset thatâ
 
 ```swift
 init?(name: NSDataAsset.Name, bundle: Bundle)
+```
+
+```objc
+- (instancetype) initWithName:(NSDataAssetName) name bundle:(NSBundle *) bundle;
 ```
 
 #### Return Value
@@ -31,7 +36,8 @@ This method looks in the asset catalog, in the bundle specified by the `bundle` 
 
 ## See Also
 
-- [convenience init?(name: NSDataAsset.Name)](nsdataasset/init(name:).md)
+### Initializing the data asset
+- [convenience init?(name: NSDataAsset.Name)](./init%28name%29.md)
   Initializes and returns an object with a reference to the named data asset in an asset catalog.
 
 

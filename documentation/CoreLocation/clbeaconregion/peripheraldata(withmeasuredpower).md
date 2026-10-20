@@ -1,15 +1,16 @@
 # peripheralData(withMeasuredPower:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves data that you can use to advertise the current device as a beacon.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
+- iOS 7.0+ - Deprecated in 27.2
+- iPadOS 7.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -17,17 +18,21 @@ Retrieves data that you can use to advertise the current device as a beacon.
 func peripheralData(withMeasuredPower measuredPower: NSNumber?) -> NSMutableDictionary
 ```
 
+```objc
+- (NSMutableDictionary<NSString *,id> *) peripheralDataWithMeasuredPower:(NSNumber *) measuredPower;
+```
+
 ## Mentions
 
-- [Turning an iOS device into an iBeacon device](turning-an-ios-device-into-an-ibeacon-device.md)
+- [Turning an iOS device into an iBeacon device](../turning-an-ios-device-into-an-ibeacon-device.md)
 
 #### Return Value
 
-A dictionary of data that you can use in conjunction with a [`CBPeripheralManager`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager) to advertise the current device as a beacon.
+A dictionary of data that you can use in conjunction with a [`CBPeripheralManager`](../../CoreBluetooth/cbperipheralmanager.md) to advertise the current device as a beacon.
 
 #### Discussion
 
-The returned dictionary encodes the beacon’s identifying information, along with other information needed to advertise the beacon. You don’t need to access the dictionary contents directly. Pass the dictionary to the [`startAdvertising(_:)`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/startadvertising(_:)) method of a [`CBPeripheralManager`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager) to begin advertising the beacon.
+The returned dictionary encodes the beacon’s identifying information, along with other information needed to advertise the beacon. You don’t need to access the dictionary contents directly. Pass the dictionary to the [`startAdvertising(_:)`](../../CoreBluetooth/cbperipheralmanager/startadvertising%28_%29.md) method of a [`CBPeripheralManager`](../../CoreBluetooth/cbperipheralmanager.md) to begin advertising the beacon.
 
 ## Parameters
 

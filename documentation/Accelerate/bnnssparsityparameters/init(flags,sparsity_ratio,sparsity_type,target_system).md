@@ -1,7 +1,8 @@
 # init(flags:sparsity_ratio:sparsity_type:target_system:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

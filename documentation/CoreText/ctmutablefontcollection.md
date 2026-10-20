@@ -1,23 +1,28 @@
 # CTMutableFontCollection
 
 **Framework**: Core Text  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a mutable font collection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class CTMutableFontCollection
+```
+
+```c
+typedef struct __CTFontCollection * CTMutableFontCollectionRef;
 ```
 
 #### Discussion
@@ -27,10 +32,10 @@ An opaque reference to a mutable font collection.
 ## Relationships
 
 ### Inherits From
-- [CTFontCollection](ctfontcollection.md)
+- [CTFontCollection](./ctfontcollection.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

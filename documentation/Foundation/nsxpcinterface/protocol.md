@@ -1,7 +1,8 @@
 # protocol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Objective-C protocol that this interface is based on.
 
@@ -18,6 +19,10 @@ The Objective-C protocol that this interface is based on.
 
 ```swift
 unowned(unsafe) var `protocol`: Protocol { get set }
+```
+
+```objc
+@property (assign) Protocol * protocol;
 ```
 
 

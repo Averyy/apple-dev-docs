@@ -1,7 +1,8 @@
 # defaultBackgroundConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a background configuration with system default values.
 
@@ -10,7 +11,7 @@ Retrieves a background configuration with system default values.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ A default background configuration. The system determines default values for the
 
 ## See Also
 
-- [var backgroundConfiguration: UIBackgroundConfiguration?](uicollectionviewcell/backgroundconfiguration-rgj4.md)
+### Configuring the background
+- [var backgroundConfiguration: UIBackgroundConfiguration?](./backgroundconfiguration-rgj4.md)
   The current background configuration of the cell.
-- [var automaticallyUpdatesBackgroundConfiguration: Bool](uicollectionviewcell/automaticallyupdatesbackgroundconfiguration.md)
+- [var automaticallyUpdatesBackgroundConfiguration: Bool](./automaticallyupdatesbackgroundconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its background configuration when its state changes.
-- [var backgroundView: UIView?](uicollectionviewcell/backgroundview.md)
+- [var backgroundView: UIView?](./backgroundview.md)
   The view that displays behind the cell’s other content.
-- [var selectedBackgroundView: UIView?](uicollectionviewcell/selectedbackgroundview.md)
+- [var selectedBackgroundView: UIView?](./selectedbackgroundview.md)
   The view that displays just above the background view for a selected cell.
 
 

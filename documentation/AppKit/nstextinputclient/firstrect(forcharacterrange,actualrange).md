@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the first logical boundary rectangle for characters in the given range.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func firstRect(forCharacterRange range: NSRange, actualRange: NSRangePointer?) -> NSRect
+```
+
+```objc
+- (NSRect) firstRectForCharacterRange:(NSRange) range actualRange:(NSRangePointer) actualRange;
 ```
 
 #### Return Value
@@ -30,13 +35,14 @@ If `aRange` spans multiple lines of text in the text view, the rectangle returne
 
 ## See Also
 
-- [func characterIndex(for: NSPoint) -> Int](nstextinputclient/characterindex(for:).md)
+### Getting character coordinates
+- [func characterIndex(for: NSPoint) -> Int](./characterindex%28for%29.md)
   Returns the index of the character whose bounding rectangle includes the given point.
-- [func baselineDeltaForCharacter(at: Int) -> CGFloat](nstextinputclient/baselinedeltaforcharacter(at:).md)
-  Returns the baseline position of a given character relative to the origin of rectangle returned by [`firstRect(forCharacterRange:actualRange:)`](nstextinputclient/firstrect(forcharacterrange:actualrange:).md).
-- [func drawsVerticallyForCharacter(at: Int) -> Bool](nstextinputclient/drawsverticallyforcharacter(at:).md)
+- [func baselineDeltaForCharacter(at: Int) -> CGFloat](./baselinedeltaforcharacter%28at%29.md)
+  Returns the baseline position of a given character relative to the origin of rectangle returned by [`firstRect(forCharacterRange:actualRange:)`](./firstrect%28forcharacterrange,actualrange%29.md).
+- [func drawsVerticallyForCharacter(at: Int) -> Bool](./drawsverticallyforcharacter%28at%29.md)
   Informs the text input management system whether the protocol-conforming client renders the character at the given index vertically.
-- [func fractionOfDistanceThroughGlyph(for: NSPoint) -> CGFloat](nstextinputclient/fractionofdistancethroughglyph(for:).md)
+- [func fractionOfDistanceThroughGlyph(for: NSPoint) -> CGFloat](./fractionofdistancethroughglyph%28for%29.md)
   Returns the fraction of the distance from the left side of the character to the right side that a given point lies.
 
 

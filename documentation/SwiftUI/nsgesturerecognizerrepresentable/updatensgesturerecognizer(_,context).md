@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the `NSGestureRecognizer` (and coordinator) to the latest configuration.
@@ -20,6 +21,12 @@ Updates the `NSGestureRecognizer` (and coordinator) to the latest configuration.
 
 - `recognizer`: An instance of the represented gesture recognizer.
 - `context`: A context structure containing information about the current state of the system, such as the current coordinator instance.
+
+## Default Implementations
+
+### NSGestureRecognizerRepresentable Implementations
+- [func updateNSGestureRecognizer(Self.NSGestureRecognizerType, context: Self.Context)](./updatensgesturerecognizer%28_,context%29-1s5x4.md)
+  Updates the `NSGestureRecognizer` (and coordinator) to the latest configuration.
 
 
 ---

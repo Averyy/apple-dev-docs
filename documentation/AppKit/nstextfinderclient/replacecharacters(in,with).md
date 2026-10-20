@@ -1,12 +1,13 @@
 # replaceCharacters(in:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the text in the specified range with the new string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Replaces the text in the specified range with the new string.
 optional func replaceCharacters(in range: NSRange, with string: String)
 ```
 
+```objc
+- (void) replaceCharactersInRange:(NSRange) range withString:(NSString *) string;
+```
+
 #### Discussion
 
-See [`NSTextFinder`](nstextfinder.md) for a complete description.
+See [`NSTextFinder`](../nstextfinder.md) for a complete description.
 
 ## Parameters
 
@@ -25,9 +30,10 @@ See [`NSTextFinder`](nstextfinder.md) for a complete description.
 
 ## See Also
 
-- [func shouldReplaceCharacters(inRanges: [NSValue], with: [String]) -> Bool](nstextfinderclient/shouldreplacecharacters(inranges:with:).md)
+### Replacing Text
+- [func shouldReplaceCharacters(inRanges: [NSValue], with: [String]) -> Bool](./shouldreplacecharacters%28inranges,with%29.md)
   Returns whether the specified strings should be replaced.
-- [func didReplaceCharacters()](nstextfinderclient/didreplacecharacters.md)
+- [func didReplaceCharacters()](./didreplacecharacters%28%29.md)
   Specifies whether text characters were replaced.
 
 

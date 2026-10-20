@@ -1,59 +1,61 @@
 # Zoom
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 Configure device zooming behavior and inspect hardware capabilities.
 
 ## Topics
 
 ### Adjusting zoom
-- [var videoZoomFactor: CGFloat](avcapturedevice/videozoomfactor.md)
+- [var videoZoomFactor: CGFloat](./avcapturedevice/videozoomfactor.md)
   A value that controls the cropping and enlargement of images captured by the device.
-- [func ramp(toVideoZoomFactor: CGFloat, withRate: Float)](avcapturedevice/ramp(tovideozoomfactor:withrate:).md)
+- [func ramp(toVideoZoomFactor: CGFloat, withRate: Float)](./avcapturedevice/ramp%28tovideozoomfactor,withrate%29.md)
   Begins a smooth transition from the current zoom factor to another.
-- [func cancelVideoZoomRamp()](avcapturedevice/cancelvideozoomramp.md)
+- [func cancelVideoZoomRamp()](./avcapturedevice/cancelvideozoomramp%28%29.md)
   Smoothly ends a zoom transition in progress.
 ### Observing zoom
-- [var isRampingVideoZoom: Bool](avcapturedevice/isrampingvideozoom.md)
+- [var isRampingVideoZoom: Bool](./avcapturedevice/isrampingvideozoom.md)
   A Boolean value that indicates whether a zoom transition is in progress.
 ### Inspecting zoom factors
-- [var minAvailableVideoZoomFactor: CGFloat](avcapturedevice/minavailablevideozoomfactor.md)
+- [var minAvailableVideoZoomFactor: CGFloat](./avcapturedevice/minavailablevideozoomfactor.md)
   The minimum zoom factor allowed in the current capture configuration.
-- [var maxAvailableVideoZoomFactor: CGFloat](avcapturedevice/maxavailablevideozoomfactor.md)
+- [var maxAvailableVideoZoomFactor: CGFloat](./avcapturedevice/maxavailablevideozoomfactor.md)
   The maximum zoom factor allowed in the current capture configuration.
-- [var virtualDeviceSwitchOverVideoZoomFactors: [NSNumber]](avcapturedevice/virtualdeviceswitchovervideozoomfactors.md)
+- [var virtualDeviceSwitchOverVideoZoomFactors: [NSNumber]](./avcapturedevice/virtualdeviceswitchovervideozoomfactors.md)
   An array of video zoom factors at or above which a virtual device, such as the dual camera, may switch to its next constituent device.
-- [var dualCameraSwitchOverVideoZoomFactor: CGFloat](avcapturedevice/dualcameraswitchovervideozoomfactor.md)
+- [var dualCameraSwitchOverVideoZoomFactor: CGFloat](./avcapturedevice/dualcameraswitchovervideozoomfactor.md)
   The video zoom factor at which a dual camera device can automatically switch between cameras.
-- [var displayVideoZoomFactorMultiplier: CGFloat](avcapturedevice/displayvideozoomfactormultiplier.md)
+- [var displayVideoZoomFactorMultiplier: CGFloat](./avcapturedevice/displayvideozoomfactormultiplier.md)
   A video zoom factor multiplier to use when displaying zoom information in a user interface.
 ### Enabling geometric distortion correction
-- [var isGeometricDistortionCorrectionSupported: Bool](avcapturedevice/isgeometricdistortioncorrectionsupported.md)
+- [var isGeometricDistortionCorrectionSupported: Bool](./avcapturedevice/isgeometricdistortioncorrectionsupported.md)
   A Boolean value that indicates whether this device supports geometric distortion correction.
-- [var isGeometricDistortionCorrectionEnabled: Bool](avcapturedevice/isgeometricdistortioncorrectionenabled.md)
+- [var isGeometricDistortionCorrectionEnabled: Bool](./avcapturedevice/isgeometricdistortioncorrectionenabled.md)
   A Boolean value that indicates whether geometric distortion correction is enabled for this device.
 
 ## See Also
 
-- [func lockForConfiguration() throws](avcapturedevice/lockforconfiguration.md)
+### Configuring camera hardware
+- [func lockForConfiguration() throws](./avcapturedevice/lockforconfiguration%28%29.md)
   Requests exclusive access to configure device hardware properties.
-- [func unlockForConfiguration()](avcapturedevice/unlockforconfiguration.md)
+- [func unlockForConfiguration()](./avcapturedevice/unlockforconfiguration%28%29.md)
   Releases exclusive control over device hardware properties.
-- [var isSubjectAreaChangeMonitoringEnabled: Bool](avcapturedevice/issubjectareachangemonitoringenabled.md)
+- [var isSubjectAreaChangeMonitoringEnabled: Bool](./avcapturedevice/issubjectareachangemonitoringenabled.md)
   A Boolean value that indicates whether the device monitors the subject area for changes.
-- [class let subjectAreaDidChangeNotification: NSNotification.Name](avcapturedevice/subjectareadidchangenotification.md)
+- [class let subjectAreaDidChangeNotification: NSNotification.Name](./avcapturedevice/subjectareadidchangenotification.md)
   A notification the system posts when a capture device detects a substantial change to the video subject area.
-- [Formats](capture-device-formats.md)
+- [Formats](./capture-device-formats.md)
   Configure capture formats and camera frame rates.
-- [Focus](capture-device-focus.md)
+- [Focus](./capture-device-focus.md)
   Configure the automatic focus behavior of a camera, or manually set its lens position.
-- [Exposure](capture-device-exposure.md)
+- [Exposure](./capture-device-exposure.md)
   Configure the automatic exposure behavior of a camera, or manually control its exposure settings.
-- [White balance](capture-device-white-balance.md)
+- [White balance](./capture-device-white-balance.md)
   Configure the automatic white balance behavior of a camera, or manually control white balance settings.
-- [Lighting](capture-device-lighting.md)
+- [Lighting](./capture-device-lighting.md)
   Configure the device flash, torch, and low light settings.
-- [Color](capture-device-color.md)
+- [Color](./capture-device-color.md)
   Manage HDR and color space settings for a device.
 
 

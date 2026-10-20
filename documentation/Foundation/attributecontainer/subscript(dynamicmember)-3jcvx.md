@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the attribute container that corresponds to a specified key path.
 
@@ -22,21 +23,22 @@ subscript<S>(dynamicMember keyPath: KeyPath<AttributeScopes, S.Type>) -> ScopedA
 
 #### Discussion
 
-Use this subscript when you need to work with an explicit attribute scope. For example, the SwiftUI [`foregroundColor`](attributescopes/swiftuiattributes/foregroundcolor.md) attribute overrides the attribute in the AppKit and UIKit scopes with the same name. If you work with both the SwiftUI and UIKit scopes, you can use the syntax `myAttributeContainer.uiKit.foregroundColor` to disambiguate and explicitly use the UIKit attribute.
+Use this subscript when you need to work with an explicit attribute scope. For example, the SwiftUI [`foregroundColor`](../attributescopes/swiftuiattributes/foregroundcolor.md) attribute overrides the attribute in the AppKit and UIKit scopes with the same name. If you work with both the SwiftUI and UIKit scopes, you can use the syntax `myAttributeContainer.uiKit.foregroundColor` to disambiguate and explicitly use the UIKit attribute.
 
 ## See Also
 
-- [subscript<T>(T.Type) -> T.Value?](attributecontainer/subscript(_:).md)
+### Accessing Attributes
+- [subscript<T>(T.Type) -> T.Value?](./subscript%28_%29.md)
   Returns the attribute that corresponds to a specified key.
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](attributecontainer/subscript(dynamicmember:)-657oj.md)
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](./subscript%28dynamicmember%29-657oj.md)
   Returns the attribute that corresponds to a specified key path.
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](attributecontainer/subscript(dynamicmember:)-60ps5.md)
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](./subscript%28dynamicmember%29-60ps5.md)
   Returns a modified attribute container as part of building a chain of attributes.
-- [static subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](attributecontainer/subscript(dynamicmember:)-swift.type.subscript.md)
+- [static subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](./subscript%28dynamicmember%29-swift.type.subscript.md)
   Returns a modified attribute container as part of building a chain of attributes, for use as a static method.
-- [protocol AttributedStringKey](attributedstringkey.md)
+- [protocol AttributedStringKey](../attributedstringkey.md)
   A type that defines an attribute’s name and type.
-- [AttributeContainer.Builder](attributecontainer/builder.md)
+- [AttributeContainer.Builder](./builder.md)
   A type that iteratively builds attribute containers by setting attribute values.
 
 

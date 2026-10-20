@@ -1,7 +1,8 @@
 # lookupInfo
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information used to fetch a user.
 
@@ -10,7 +11,7 @@ Information used to fetch a user.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.UserLookupInfo lookupInfo;
 ```
 

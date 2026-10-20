@@ -1,7 +1,8 @@
 # RealityView
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that contains RealityKit content.
 
@@ -22,15 +23,15 @@ A view that contains RealityKit content.
 
 ## Mentions
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
+- [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](./realitykit-scene-understanding.md)
 
 #### Overview
 
-Use `RealityView` to display rich 3D RealityKit content in your app, including content you author in Reality Composer Pro. `RealityView` passes a structure that conforms to [`RealityViewContentProtocol`](realityviewcontentprotocol.md) to its `make` and `update` closures, which you can use to add and remove RealityKit entities to your view.
+Use `RealityView` to display rich 3D RealityKit content in your app, including content you author in Reality Composer Pro. `RealityView` passes a structure that conforms to [`RealityViewContentProtocol`](./realityviewcontentprotocol.md) to its `make` and `update` closures, which you can use to add and remove RealityKit entities to your view.
 
-Here is a simple example showing how you can display a custom [`ModelEntity`](modelentity.md) using `RealityView`:
+Here is a simple example showing how you can display a custom [`ModelEntity`](./modelentity.md) using `RealityView`:
 
 ```swift
 struct ModelExample: View {
@@ -52,9 +53,9 @@ Note that the closure in the example above is `async`, and can be used to load c
 
 > 💡 **Tip**: Load your content asynchronously to avoid introducing a hang in your app.
 
-You can also use the optional `update` closure on your `RealityView` to update your RealityKit content in response to changes in your view’s state. `RealityView` displays your RealityKit content inline in true 3D space, occupying the available space in your app’s 3D bounds. The [`RealityViewContent`](realityviewcontent.md) type on visionOS, and [`RealityViewCameraContent`](realityviewcameracontent.md) on other platforms represents the content of your `RealityView`.
+You can also use the optional `update` closure on your `RealityView` to update your RealityKit content in response to changes in your view’s state. `RealityView` displays your RealityKit content inline in true 3D space, occupying the available space in your app’s 3D bounds. The [`RealityViewContent`](./realityviewcontent.md) type on visionOS, and [`RealityViewCameraContent`](./realityviewcameracontent.md) on other platforms represents the content of your `RealityView`.
 
-If you want to run code every frame (to do animations or simulations), you can use a [`System`](system.md) or directly subscribe to the engine’s `SceneEvents.Update`:
+If you want to run code every frame (to do animations or simulations), you can use a [`System`](./system.md) or directly subscribe to the engine’s `SceneEvents.Update`:
 
 ```swift
 RealityView { content in
@@ -66,56 +67,57 @@ RealityView { content in
 }
 ```
 
-`RealityView` has a flexible size by default, and does not size itself based on the RealityKit content it displays. For more advanced uses of RealityKit, such as subscribing to RealityKit events, performing coordinate conversions, or working with AR capabilities, refer to the [`RealityViewContentProtocol`](realityviewcontentprotocol.md) types.
+`RealityView` has a flexible size by default, and does not size itself based on the RealityKit content it displays. For more advanced uses of RealityKit, such as subscribing to RealityKit events, performing coordinate conversions, or working with AR capabilities, refer to the [`RealityViewContentProtocol`](./realityviewcontentprotocol.md) types.
 
 ## Topics
 
 ### Creating a reality view for visionOS
-- [init(make: (inout RealityViewContent) async -> Void, update: ((inout RealityViewContent) -> Void)?)](realityview/init(make:update:)-666xr.md)
+- [init(make: (inout RealityViewContent) async -> Void, update: ((inout RealityViewContent) -> Void)?)](./realityview/init%28make,update%29-666xr.md)
   Creates a new reality view for visionOS with an optional update closure.
-- [init<P>(make: (inout RealityViewContent) async -> Void, update: ((inout RealityViewContent) -> Void)?, placeholder: () -> P)](realityview/init(make:update:placeholder:)-4c8yv.md)
+- [init<P>(make: (inout RealityViewContent) async -> Void, update: ((inout RealityViewContent) -> Void)?, placeholder: () -> P)](./realityview/init%28make,update,placeholder%29-4c8yv.md)
   Creates a new reality view for visionOS with an optional update closure and placeholder view.
-- [init<A>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, attachments: () -> A)](realityview/init(make:update:attachments:).md)
+- [init<A>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, attachments: () -> A)](./realityview/init%28make,update,attachments%29.md)
   Creates a reality view for visionOS, with attachments and an optional update closure.
-- [init<A, P>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, placeholder: () -> P, attachments: () -> A)](realityview/init(make:update:placeholder:attachments:).md)
+- [init<A, P>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, placeholder: () -> P, attachments: () -> A)](./realityview/init%28make,update,placeholder,attachments%29.md)
   Creates a reality view for visionOS, with attachments, an optional update closure, and placeholder view.
 ### Creating a reality view for iOS and macOS
-- [init(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?)](realityview/init(make:update:)-234sv.md)
+- [init(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?)](./realityview/init%28make,update%29-234sv.md)
   Creates a reality view for iOS and macOS, with an optional update closure.
-- [init<P>(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?, placeholder: () -> P)](realityview/init(make:update:placeholder:)-4x7ds.md)
+- [init<P>(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?, placeholder: () -> P)](./realityview/init%28make,update,placeholder%29-4x7ds.md)
   Creates a reality view for iOS and macOS, with an optional update closure and placeholder view.
 ### Inspecting the content within a reality view
-- [RealityView.DefaultPlaceholder](realityview/defaultplaceholder.md)
+- [RealityView.DefaultPlaceholder](./realityview/defaultplaceholder.md)
 ### Initializers
-- [init(make:update:)](realityview/init(make:update:).md)
+- [init(make:update:)](./realityview/init%28make,update%29.md)
   Creates a reality view for iOS and macOS, with an optional update closure.
-- [init(make:update:placeholder:)](realityview/init(make:update:placeholder:).md)
+- [init(make:update:placeholder:)](./realityview/init%28make,update,placeholder%29.md)
   Creates a reality view for iOS and macOS, with an optional update closure and placeholder view.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+### SwiftUI scene presentation
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
   Choose a strategy for sizing frames and centering 3D content.
-- [struct RealityViewContent](realityviewcontent.md)
+- [struct RealityViewContent](./realityviewcontent.md)
   The content of a visionOS reality view.
-- [struct RealityViewCameraContent](realityviewcameracontent.md)
+- [struct RealityViewCameraContent](./realityviewcameracontent.md)
   The content of a reality view that is displayed through a camera.
-- [protocol RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [protocol RealityViewContentProtocol](./realityviewcontentprotocol.md)
   A protocol representing the content of a reality view.
-- [struct RealityViewDefaultPlaceholder](realityviewdefaultplaceholder.md)
+- [struct RealityViewDefaultPlaceholder](./realityviewdefaultplaceholder.md)
   A view that represents the default placeholder for a RealityView.
-- [struct RealityViewEntityCollection](realityviewentitycollection.md)
+- [struct RealityViewEntityCollection](./realityviewentitycollection.md)
   A collection of entities in a RealityView.
-- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+- [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
-- [protocol EntityCollection](entitycollection.md)
+- [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 
 

@@ -1,7 +1,8 @@
 # VZMacGraphicsDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Configuration for a display attached to a Mac graphics device.
 
@@ -14,41 +15,46 @@ Configuration for a display attached to a Mac graphics device.
 class VZMacGraphicsDeviceConfiguration
 ```
 
+```objc
+@interface VZMacGraphicsDeviceConfiguration : VZGraphicsDeviceConfiguration
+```
+
 #### Overview
 
-Use this device to attach a display that’s shown in a [`VZVirtualMachineView`](vzvirtualmachineview.md).
+Use this device to attach a display that’s shown in a [`VZVirtualMachineView`](./vzvirtualmachineview.md).
 
 ## Topics
 
 ### Creating the graphics device configuration
-- [init()](vzmacgraphicsdeviceconfiguration/init.md)
+- [init()](./vzmacgraphicsdeviceconfiguration/init%28%29.md)
   Creates a new Mac graphics device configuration.
 ### Configuring displays
-- [var displays: [VZMacGraphicsDisplayConfiguration]](vzmacgraphicsdeviceconfiguration/displays.md)
+- [var displays: [VZMacGraphicsDisplayConfiguration]](./vzmacgraphicsdeviceconfiguration/displays.md)
   The displays associated with this graphics device.
 
 ## Relationships
 
 ### Inherits From
-- [VZGraphicsDeviceConfiguration](vzgraphicsdeviceconfiguration.md)
+- [VZGraphicsDeviceConfiguration](./vzgraphicsdeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZGraphicsDisplayConfiguration](vzgraphicsdisplayconfiguration.md)
+### Configurations
+- [class VZGraphicsDisplayConfiguration](./vzgraphicsdisplayconfiguration.md)
   The base class for a graphics display configuration.
-- [class VZMacGraphicsDisplayConfiguration](vzmacgraphicsdisplayconfiguration.md)
+- [class VZMacGraphicsDisplayConfiguration](./vzmacgraphicsdisplayconfiguration.md)
   The configuration for a Mac graphics device.
-- [class VZGraphicsDeviceConfiguration](vzgraphicsdeviceconfiguration.md)
+- [class VZGraphicsDeviceConfiguration](./vzgraphicsdeviceconfiguration.md)
   The base class for a graphics device configuration.
-- [class VZVirtioGraphicsDeviceConfiguration](vzvirtiographicsdeviceconfiguration.md)
+- [class VZVirtioGraphicsDeviceConfiguration](./vzvirtiographicsdeviceconfiguration.md)
   Configuration that represents the configuration of a Virtio graphics device for a Linux VM.
 
 

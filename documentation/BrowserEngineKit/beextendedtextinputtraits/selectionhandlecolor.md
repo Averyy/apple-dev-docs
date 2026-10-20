@@ -1,7 +1,8 @@
 # selectionHandleColor
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color that customizes the look of the handle.
 
@@ -17,11 +18,16 @@ A color that customizes the look of the handle.
 optional var selectionHandleColor: UIColor? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIColor * selectionHandleColor;
+```
+
 ## See Also
 
-- [var insertionPointColor: UIColor?](beextendedtextinputtraits/insertionpointcolor.md)
+### Customizing text input visuals
+- [var insertionPointColor: UIColor?](./insertionpointcolor.md)
   A color for the text cursor at the insertion point.
-- [var selectionHighlightColor: UIColor?](beextendedtextinputtraits/selectionhighlightcolor.md)
+- [var selectionHighlightColor: UIColor?](./selectionhighlightcolor.md)
   The highlight color of a rectangle.
 
 

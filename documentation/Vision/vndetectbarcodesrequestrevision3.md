@@ -1,7 +1,8 @@
 # VNDetectBarcodesRequestRevision3
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 3 of the barcode detection request.
 
@@ -19,11 +20,16 @@ A constant for specifying revision 3 of the barcode detection request.
 var VNDetectBarcodesRequestRevision3: Int { get }
 ```
 
+```c
+static const NSUInteger VNDetectBarcodesRequestRevision3;
+```
+
 ## See Also
 
-- [var VNDetectBarcodesRequestRevision2: Int](vndetectbarcodesrequestrevision2.md)
+### Identifying Request Revisions
+- [var VNDetectBarcodesRequestRevision2: Int](./vndetectbarcodesrequestrevision2.md)
   A constant for specifying revision 2 of the barcode detection request.
-- [var VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
+- [var VNDetectBarcodesRequestRevision1: Int](./vndetectbarcodesrequestrevision1.md)
   A constant for specifying revision 1 of the barcode detection request.
 
 

@@ -1,7 +1,8 @@
 # sec_trust_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 These are os_object compatible and ARC-able wrappers around existing CoreFoundation Security types, including: SecTrustRef, SecIdentityRef, and SecCertificateRef. They allow clients to use these types in os_object-type APIs and data structures. The underlying CoreFoundation types may be extracted and used by clients as needed.
 
@@ -18,6 +19,10 @@ These are os_object compatible and ARC-able wrappers around existing CoreFoundat
 
 ```swift
 typealias sec_trust_t = any OS_sec_trust
+```
+
+```c
+typedef NSObject<OS_sec_trust> * sec_trust_t;
 ```
 
 

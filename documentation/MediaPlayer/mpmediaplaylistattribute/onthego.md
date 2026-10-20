@@ -1,7 +1,8 @@
 # onTheGo
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A playlist created on a device rather than synced from the Music app.
 
@@ -17,11 +18,16 @@ A playlist created on a device rather than synced from the Music app.
 static var onTheGo: MPMediaPlaylistAttribute { get }
 ```
 
+```c
+MPMediaPlaylistAttributeOnTheGo
+```
+
 ## See Also
 
-- [static var smart: MPMediaPlaylistAttribute](mpmediaplaylistattribute/smart.md)
+### Constants
+- [static var smart: MPMediaPlaylistAttribute](./smart.md)
   A smart playlist includes items that match one or more user-specified rules.
-- [static var genius: MPMediaPlaylistAttribute](mpmediaplaylistattribute/genius.md)
+- [static var genius: MPMediaPlaylistAttribute](./genius.md)
   A Genius playlist includes items related to other items in your Music library.
 
 

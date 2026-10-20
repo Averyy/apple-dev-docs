@@ -1,16 +1,18 @@
 # Creating a 3D application with hydra rendering
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [CreatingA3DApplicationWithHydraRendering.zip](https://docs-assets.developer.apple.com/published/fc450e9ee3a6/CreatingA3DApplicationWithHydraRendering.zip)
 
 Build a 3D application that integrates with Hydra and USD.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session 10141: [`Explore USD tools and rendering`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10141/).
+> **Note**: This sample code project is associated with WWDC22 session 10141: [Explore USD tools and rendering](https://developer.apple.com/wwdc22/10141/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
-This sample requires Xcode 14 or later and macOS 13 or later. To build the project, you first need to [`get and build the USD source code`](https://developer.apple.comhttps://github.com/PixarAnimationStudios/OpenUSD/blob/release/README.md#getting-and-building-the-code) from the Pixar GitHub repository, and then use CMake to generate an Xcode project with references to both the compiled USD libraries and the header files in the USD source code. If you don’t already have CMake installed, [`download the latest version of CMake`](https://developer.apple.comhttps://cmake.org/download/) to your Applications folder.
+This sample requires Xcode 14 or later and macOS 13 or later. To build the project, you first need to [get and build the USD source code](https://github.com/PixarAnimationStudios/OpenUSD/blob/release/README.md#getting-and-building-the-code) from the Pixar GitHub repository, and then use CMake to generate an Xcode project with references to both the compiled USD libraries and the header files in the USD source code. If you don’t already have CMake installed, [download the latest version of CMake](https://cmake.org/download/) to your Applications folder.
 
 CMake is both a GUI and command-line app. To use the command-line tool, open a Terminal window and add the `/Contents/bin` folder from the `CMake.app` application bundle to your `PATH` environment variable, like this:
 
@@ -51,31 +53,32 @@ Finally, open the generated Xcode project, and change the scheme to `hydraplayer
 
 ## See Also
 
-- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
+### Render workflows
+- [Using Metal to draw a view’s contents](./using-metal-to-draw-a-views-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+- [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md)
   Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
-- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Selecting device objects for graphics rendering](./selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Customizing render pass setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](./customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Creating a custom Metal view](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](./creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](./calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](./encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](./implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
-- [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
+- [Loading textures and models using Metal fast resource loading](./loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
-- [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
+- [Adjusting the level of detail using Metal mesh shaders](./adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Culling occluded geometry using the visibility result buffer](culling-occluded-geometry-using-the-visibility-result-buffer.md)
+- [Culling occluded geometry using the visibility result buffer](./culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
-- [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
+- [Improving edge-rendering quality with multisample antialiasing (MSAA)](./improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
   Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
+- [Achieving smooth frame rates with a Metal display link](./achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

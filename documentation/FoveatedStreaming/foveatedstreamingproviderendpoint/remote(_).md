@@ -1,7 +1,8 @@
 # FoveatedStreamingProviderEndpoint.remote(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A remote (cloud) streaming endpoint.
 

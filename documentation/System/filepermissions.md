@@ -1,7 +1,8 @@
 # FilePermissions
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The access permissions for a file.
 
@@ -33,97 +34,98 @@ perms == [.ownerReadWrite, .groupRead, .otherRead] // true
 ## Topics
 
 ### Owner Permissions
-- [static var ownerRead: FilePermissions](filepermissions/ownerread.md)
+- [static var ownerRead: FilePermissions](./filepermissions/ownerread.md)
   Indicates that the owner has read-only permission.
-- [static var ownerWrite: FilePermissions](filepermissions/ownerwrite.md)
+- [static var ownerWrite: FilePermissions](./filepermissions/ownerwrite.md)
   Indicates that the owner has write-only permission.
-- [static var ownerExecute: FilePermissions](filepermissions/ownerexecute.md)
+- [static var ownerExecute: FilePermissions](./filepermissions/ownerexecute.md)
   Indicates that the owner has execute-only permission.
-- [static var ownerReadWrite: FilePermissions](filepermissions/ownerreadwrite.md)
+- [static var ownerReadWrite: FilePermissions](./filepermissions/ownerreadwrite.md)
   Indicates that the owner has read-write permission.
-- [static var ownerReadExecute: FilePermissions](filepermissions/ownerreadexecute.md)
+- [static var ownerReadExecute: FilePermissions](./filepermissions/ownerreadexecute.md)
   Indicates that the owner has read-execute permission.
-- [static var ownerWriteExecute: FilePermissions](filepermissions/ownerwriteexecute.md)
+- [static var ownerWriteExecute: FilePermissions](./filepermissions/ownerwriteexecute.md)
   Indicates that the owner has write-execute permission.
-- [static var ownerReadWriteExecute: FilePermissions](filepermissions/ownerreadwriteexecute.md)
+- [static var ownerReadWriteExecute: FilePermissions](./filepermissions/ownerreadwriteexecute.md)
   Indicates that the owner has read, write, and execute permission.
 ### Group Permissions
-- [static var groupRead: FilePermissions](filepermissions/groupread.md)
+- [static var groupRead: FilePermissions](./filepermissions/groupread.md)
   Indicates that the group has read-only permission.
-- [static var groupWrite: FilePermissions](filepermissions/groupwrite.md)
+- [static var groupWrite: FilePermissions](./filepermissions/groupwrite.md)
   Indicates that the group has write-only permission.
-- [static var groupExecute: FilePermissions](filepermissions/groupexecute.md)
+- [static var groupExecute: FilePermissions](./filepermissions/groupexecute.md)
   Indicates that the group has execute-only permission.
-- [static var groupReadWrite: FilePermissions](filepermissions/groupreadwrite.md)
+- [static var groupReadWrite: FilePermissions](./filepermissions/groupreadwrite.md)
   Indicates that the group has read-write permission.
-- [static var groupReadExecute: FilePermissions](filepermissions/groupreadexecute.md)
+- [static var groupReadExecute: FilePermissions](./filepermissions/groupreadexecute.md)
   Indicates that the group has read-execute permission.
-- [static var groupWriteExecute: FilePermissions](filepermissions/groupwriteexecute.md)
+- [static var groupWriteExecute: FilePermissions](./filepermissions/groupwriteexecute.md)
   Indicates that the group has write-execute permission.
-- [static var groupReadWriteExecute: FilePermissions](filepermissions/groupreadwriteexecute.md)
+- [static var groupReadWriteExecute: FilePermissions](./filepermissions/groupreadwriteexecute.md)
   Indicates that the group has read, write, and execute permission.
 ### Other Permissions
-- [static var otherRead: FilePermissions](filepermissions/otherread.md)
+- [static var otherRead: FilePermissions](./filepermissions/otherread.md)
   Indicates that other users have read-only permission.
-- [static var otherWrite: FilePermissions](filepermissions/otherwrite.md)
+- [static var otherWrite: FilePermissions](./filepermissions/otherwrite.md)
   Indicates that other users have write-only permission.
-- [static var otherExecute: FilePermissions](filepermissions/otherexecute.md)
+- [static var otherExecute: FilePermissions](./filepermissions/otherexecute.md)
   Indicates that other users have execute-only permission.
-- [static var otherReadWrite: FilePermissions](filepermissions/otherreadwrite.md)
+- [static var otherReadWrite: FilePermissions](./filepermissions/otherreadwrite.md)
   Indicates that other users have read-write permission.
-- [static var otherReadExecute: FilePermissions](filepermissions/otherreadexecute.md)
+- [static var otherReadExecute: FilePermissions](./filepermissions/otherreadexecute.md)
   Indicates that other users have read-execute permission.
-- [static var otherWriteExecute: FilePermissions](filepermissions/otherwriteexecute.md)
+- [static var otherWriteExecute: FilePermissions](./filepermissions/otherwriteexecute.md)
   Indicates that other users have write-execute permission.
-- [static var otherReadWriteExecute: FilePermissions](filepermissions/otherreadwriteexecute.md)
+- [static var otherReadWriteExecute: FilePermissions](./filepermissions/otherreadwriteexecute.md)
   Indicates that other users have read, write, and execute permission.
 ### Special Permissions
-- [static var setUserID: FilePermissions](filepermissions/setuserid.md)
+- [static var setUserID: FilePermissions](./filepermissions/setuserid.md)
   Indicates that the file is executed as the owner.
-- [static var setGroupID: FilePermissions](filepermissions/setgroupid.md)
+- [static var setGroupID: FilePermissions](./filepermissions/setgroupid.md)
   Indicates that the file is executed as the group.
-- [static var saveText: FilePermissions](filepermissions/savetext.md)
+- [static var saveText: FilePermissions](./filepermissions/savetext.md)
   Indicates that executable’s text segment should be kept in swap space even after it exits.
 ### Interacting with C APIs
-- [init(rawValue: CModeT)](filepermissions/init(rawvalue:).md)
+- [init(rawValue: CModeT)](./filepermissions/init%28rawvalue%29.md)
   Create a strongly-typed file permission from a raw C value.
-- [let rawValue: CModeT](filepermissions/rawvalue.md)
+- [let rawValue: CModeT](./filepermissions/rawvalue.md)
   The raw C file permissions.
-- [typealias CModeT](cmodet.md)
+- [typealias CModeT](./cmodet.md)
   The C `mode_t` type.
 ### Debugging
-- [var description: String](filepermissions/description.md)
+- [var description: String](./filepermissions/description.md)
   A textual representation of the file permissions.
-- [var debugDescription: String](filepermissions/debugdescription.md)
+- [var debugDescription: String](./filepermissions/debugdescription.md)
   A textual representation of the file permissions, suitable for debugging.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](filepermissions/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](filepermissions/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./filepermissions/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./filepermissions/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct FileDescriptor](filedescriptor.md)
+### Files
+- [struct FileDescriptor](./filedescriptor.md)
   An abstract handle to an input or output data resource, such as a file or a socket.
-- [struct FilePath](filepath.md)
+- [struct FilePath](./filepath.md)
   Represents a location in the file system.
 
 

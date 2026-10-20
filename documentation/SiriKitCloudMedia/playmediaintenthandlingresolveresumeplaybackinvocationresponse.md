@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to resolve whether a play media intent resumes the current playback queue.
 
@@ -10,14 +11,14 @@ Your service’s response to a request to resolve whether a play media intent re
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying a Result
-- [object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result](playmediaintenthandlingresolveresumeplaybackinvocationresponse/result-data.dictionary.md)
+- [object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result](./playmediaintenthandlingresolveresumeplaybackinvocationresponse/result-data.dictionary.md)
   The result of resolving whether a play media intent resumes the current playback queue.
 
 ## Properties
@@ -25,10 +26,12 @@ object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse
 - `result` (PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result) *(required)*: The result of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `PlayMediaIntentHandling.resolveResumePlayback`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 
 ---

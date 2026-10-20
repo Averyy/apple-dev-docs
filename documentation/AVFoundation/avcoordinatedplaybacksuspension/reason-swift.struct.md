@@ -1,7 +1,8 @@
 # AVCoordinatedPlaybackSuspension.Reason
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that identify playback suspension reasons.
 
@@ -19,41 +20,46 @@ Constants that identify playback suspension reasons.
 struct Reason
 ```
 
+```c
+typedef NSString * AVCoordinatedPlaybackSuspensionReason;
+```
+
 ## Topics
 
 ### Suspension reasons
-- [static let audioSessionInterrupted: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/audiosessioninterrupted.md)
+- [static let audioSessionInterrupted: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct/audiosessioninterrupted.md)
   The system interrupts a participant’s audio session.
-- [static let coordinatedPlaybackNotPossible: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/coordinatedplaybacknotpossible.md)
+- [static let coordinatedPlaybackNotPossible: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct/coordinatedplaybacknotpossible.md)
   It’s not possible for a participant to start or resume coordinated playback.
-- [static let playingInterstitial: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/playinginterstitial.md)
+- [static let playingInterstitial: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct/playinginterstitial.md)
   A participant is playing content other than the primary content.
-- [static let stallRecovery: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/stallrecovery.md)
+- [static let stallRecovery: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct/stallrecovery.md)
   The player object is buffering media data after a stall.
-- [static let userActionRequired: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/useractionrequired.md)
+- [static let userActionRequired: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct/useractionrequired.md)
   A playback object requires user intervention to resume playback.
-- [static let userIsChangingCurrentTime: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/userischangingcurrenttime.md)
+- [static let userIsChangingCurrentTime: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct/userischangingcurrenttime.md)
   A participant is actively changing the current time.
 ### Initializers
-- [init(String)](avcoordinatedplaybacksuspension/reason-swift.struct/init(_:).md)
+- [init(String)](./reason-swift.struct/init%28_%29.md)
   Creates a suspension with a string.
-- [init(rawValue: String)](avcoordinatedplaybacksuspension/reason-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./reason-swift.struct/init%28rawvalue%29.md)
   Creates a suspension with a raw string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var beginDate: Date](avcoordinatedplaybacksuspension/begindate.md)
+### Inspecting a suspension
+- [var beginDate: Date](./begindate.md)
   The time the suspension begins.
-- [var reason: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.property.md)
+- [var reason: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.property.md)
   The reason for the suspension.
 
 

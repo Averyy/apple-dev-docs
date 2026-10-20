@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data object from the data at the specified file URL, or returns `nil` if the system can’t create one.
 
@@ -18,6 +19,10 @@ Creates a data object from the data at the specified file URL, or returns `nil` 
 
 ```swift
 init?(contentsOf url: URL)
+```
+
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
 #### Discussion

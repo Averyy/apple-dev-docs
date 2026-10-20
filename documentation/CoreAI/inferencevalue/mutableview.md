@@ -1,7 +1,8 @@
 # InferenceValue.MutableView
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A borrowed, mutable view of an inference value.
 
@@ -20,9 +21,10 @@ struct MutableView
 
 ## See Also
 
-- [InferenceValue.View](inferencevalue/view.md)
+### Accessing views
+- [InferenceValue.View](./view.md)
   A borrowed, read-only view of an inference value.
-- [InferenceValue.NamedMutableViews](inferencevalue/namedmutableviews.md)
+- [InferenceValue.NamedMutableViews](./namedmutableviews.md)
   A collection of named mutable views into inference values.
 
 

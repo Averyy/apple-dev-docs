@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the identifier for the specified entity to the collection.
 
@@ -20,9 +21,13 @@ Adds the identifier for the specified entity to the collection.
 mutating func append(_ entity: Entity)
 ```
 
+Available when `Entity` conforms to `AppEntity`.
+
 #### Discussion
 
-- Parameter: - entity: The entity containing the identifier to add.
+- Parameter:
+
+  - entity: The entity containing the identifier to add.
 
 This method adds the entity’s identifier to the collection, but doesn’t keep a reference to the entity itself.
 

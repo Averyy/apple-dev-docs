@@ -1,7 +1,8 @@
 # popoverDidClose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the popover did close.
 
@@ -15,25 +16,30 @@ Invoked when the popover did close.
 optional func popoverDidClose(_ notification: Notification)
 ```
 
+```objc
+- (void) popoverDidClose:(NSNotification *) notification;
+```
+
 #### Discussion
 
-Invoked on the delegate when the [`didCloseNotification`](nspopover/didclosenotification.md) notification is sent.
+Invoked on the delegate when the [`didCloseNotification`](../nspopover/didclosenotification.md) notification is sent.
 
 This method will also be invoked on the delegate’s popover, if the method has been implemented.
 
 ## See Also
 
-- [func popoverShouldClose(NSPopover) -> Bool](nspopoverdelegate/popovershouldclose(_:).md)
+### Popover Visibility
+- [func popoverShouldClose(NSPopover) -> Bool](./popovershouldclose%28_%29.md)
   Allows a delegate to override a close request.
-- [func popoverWillShow(Notification)](nspopoverdelegate/popoverwillshow(_:).md)
+- [func popoverWillShow(Notification)](./popoverwillshow%28_%29.md)
   Invoked when the popover will show.
-- [func popoverDidShow(Notification)](nspopoverdelegate/popoverdidshow(_:).md)
+- [func popoverDidShow(Notification)](./popoverdidshow%28_%29.md)
   Invoked when the popover has been shown.
-- [func popoverWillClose(Notification)](nspopoverdelegate/popoverwillclose(_:).md)
+- [func popoverWillClose(Notification)](./popoverwillclose%28_%29.md)
   Invoked when the popover is about to close.
-- [func popoverDidDetach(NSPopover)](nspopoverdelegate/popoverdiddetach(_:).md)
+- [func popoverDidDetach(NSPopover)](./popoverdiddetach%28_%29.md)
   Indicates that a popover has been released while it’s in an implicitly detached state.
-- [func popoverShouldDetach(NSPopover) -> Bool](nspopoverdelegate/popovershoulddetach(_:).md)
+- [func popoverShouldDetach(NSPopover) -> Bool](./popovershoulddetach%28_%29.md)
   Returns a Boolean value that indicates whether a popover should detach from its positioning view and become a separate window.
 
 

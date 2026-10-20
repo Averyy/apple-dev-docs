@@ -1,7 +1,8 @@
 # kvImageGamma_UseGammaValue_half_precision
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user-defined gamma value with half-precision calculation.
 
@@ -10,7 +11,7 @@ A user-defined gamma value with half-precision calculation.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ A user-defined gamma value with half-precision calculation.
 var kvImageGamma_UseGammaValue_half_precision: Int { get }
 ```
 
+```c
+kvImageGamma_UseGammaValue_half_precision
+```
+
 ## See Also
 
-- [var kvImageGamma_UseGammaValue: Int](kvimagegamma_usegammavalue.md)
+### User-defined gamma values
+- [var kvImageGamma_UseGammaValue: Int](./kvimagegamma_usegammavalue.md)
   A user-defined gamma value with full-precision calculation.
 
 

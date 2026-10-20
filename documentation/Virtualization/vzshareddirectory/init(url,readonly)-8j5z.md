@@ -1,7 +1,8 @@
 # init(url:readOnly:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with a host directory.
 
@@ -12,6 +13,10 @@ Initialize with a host directory.
 
 ```swift
 init(url: URL, readOnly: Bool)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url readOnly:(BOOL) readOnly;
 ```
 
 #### Discussion

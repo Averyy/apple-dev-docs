@@ -1,7 +1,8 @@
 # factor
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements from the interleaved dimension stored contiguously per block. Adjacent elements within a block have stride 1 in memory.
 
@@ -20,7 +21,8 @@ var factor: Int { get }
 
 ## See Also
 
-- [var dimension: Int](ndarray/interleavelayout-swift.struct/dimension.md)
+### Inspecting the layout
+- [var dimension: Int](./dimension.md)
   The index of the interleaved dimension.
 
 

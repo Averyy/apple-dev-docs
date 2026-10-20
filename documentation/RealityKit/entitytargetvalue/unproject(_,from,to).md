@@ -1,7 +1,8 @@
 # unproject(_:from:to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unproject `point` from a 2D coordinate space into 3D world coordinates.
 

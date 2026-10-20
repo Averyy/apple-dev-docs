@@ -1,9 +1,10 @@
 # withTaskExecutorPreference(_:isolation:operation:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
-Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
+Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](./taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
 
 **Availability**:
 - iOS 18.0+
@@ -24,17 +25,17 @@ func withTaskExecutorPreference<T, Failure>(_ taskExecutor: (any TaskExecutor)?,
 
 The value returned from the `operation` closure
 
-##### Task Executor Preference Semantics
+##### Task executor preference semantics
 
 Task executors influence *where* nonisolated asynchronous functions, and default actor methods execute. The preferred executor will be used whenever possible, rather than hopping to the global concurrent pool.
 
-For an in depth discussion of this topic, see [`TaskExecutor`](taskexecutor.md).
+For an in depth discussion of this topic, see [`TaskExecutor`](./taskexecutor.md).
 
-##### Disabling Task Executor Preference
+##### Disabling task executor preference
 
 Passing `nil` as executor means disabling any preference (if it was set) and the task hierarchy will execute without any executor preference until a different preference is set.
 
-##### Asynchronous Function Execution Semantics in Presence of Task Executor Preferences
+##### Asynchronous function execution semantics in presence of task executor preferences
 
 The following diagram illustrates on which executor an `async` function will execute, in presence (or lack thereof) a task executor preference.
 
@@ -118,9 +119,9 @@ Task {
 }
 ```
 
-> **Note**: If the operation closure throws
+> **Throws**: If the operation closure throws
 
-> **Note**: [`TaskExecutor`](taskexecutor.md)
+> **See Also**: [`TaskExecutor`](./taskexecutor.md)
 
 ## Parameters
 
@@ -129,22 +130,23 @@ Task {
 
 ## See Also
 
-- [protocol Executor](executor.md)
+### Executors
+- [protocol Executor](./executor.md)
   A service that can execute jobs.
-- [struct ExecutorJob](executorjob.md)
+- [struct ExecutorJob](./executorjob.md)
   A unit of schedulable work.
-- [protocol SerialExecutor](serialexecutor.md)
+- [protocol SerialExecutor](./serialexecutor.md)
   A service that executes jobs.
-- [protocol TaskExecutor](taskexecutor.md)
+- [protocol TaskExecutor](./taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [struct UnownedJob](unownedjob.md)
+- [struct UnownedJob](./unownedjob.md)
   A unit of schedulable work.
-- [struct JobPriority](jobpriority.md)
+- [struct JobPriority](./jobpriority.md)
   The priority of this job.
-- [struct UnownedSerialExecutor](unownedserialexecutor.md)
+- [struct UnownedSerialExecutor](./unownedserialexecutor.md)
   An unowned reference to a serial executor (a `SerialExecutor` value).
-- [struct UnownedTaskExecutor](unownedtaskexecutor.md)
-- [var globalConcurrentExecutor: any TaskExecutor](globalconcurrentexecutor.md)
+- [struct UnownedTaskExecutor](./unownedtaskexecutor.md)
+- [var globalConcurrentExecutor: any TaskExecutor](./globalconcurrentexecutor.md)
   The global concurrent executor that is used by default for Swift Concurrency tasks.
 
 

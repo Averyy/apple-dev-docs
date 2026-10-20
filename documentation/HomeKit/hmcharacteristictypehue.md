@@ -1,7 +1,8 @@
 # HMCharacteristicTypeHue
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The hue of the color used by a light.
 
@@ -19,19 +20,24 @@ The hue of the color used by a light.
 let HMCharacteristicTypeHue: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeHue;
+```
+
 #### Discussion
 
 The corresponding value is a floating point number in units of arc degrees. Values range from 0 to 360, representing the color spectrum starting from red, through yellow, green, cyan, blue, and finally magenta, before wrapping back to red.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentLightLevel: String](hmcharacteristictypecurrentlightlevel.md)
+### Light
+- [let HMCharacteristicTypeCurrentLightLevel: String](./hmcharacteristictypecurrentlightlevel.md)
   The current light level.
-- [let HMCharacteristicTypeBrightness: String](hmcharacteristictypebrightness.md)
+- [let HMCharacteristicTypeBrightness: String](./hmcharacteristictypebrightness.md)
   The brightness of a light.
-- [let HMCharacteristicTypeSaturation: String](hmcharacteristictypesaturation.md)
+- [let HMCharacteristicTypeSaturation: String](./hmcharacteristictypesaturation.md)
   The saturation of the color used by a light.
-- [let HMCharacteristicTypeColorTemperature: String](hmcharacteristictypecolortemperature.md)
+- [let HMCharacteristicTypeColorTemperature: String](./hmcharacteristictypecolortemperature.md)
   The color temperature of a light.
 
 

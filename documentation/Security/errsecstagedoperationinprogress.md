@@ -1,7 +1,8 @@
 # errSecStagedOperationInProgress
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A staged operation is in progress.
 
@@ -18,6 +19,10 @@ A staged operation is in progress.
 
 ```swift
 var errSecStagedOperationInProgress: OSStatus { get }
+```
+
+```c
+errSecStagedOperationInProgress
 ```
 
 

@@ -1,7 +1,8 @@
 # setNeedsRebuild()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the menu system to rebuild all of its menus.
 
@@ -16,6 +17,10 @@ Tells the menu system to rebuild all of its menus.
 
 ```swift
 func setNeedsRebuild()
+```
+
+```objc
+- (void) setNeedsRebuild;
 ```
 
 

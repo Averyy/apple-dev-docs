@@ -1,7 +1,8 @@
 # supportsFastStatFS
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether the volume supports fast results when fetching file system statistics.
 
@@ -14,25 +15,30 @@ A Boolean property that indicates whether the volume supports fast results when 
 var supportsFastStatFS: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsFastStatFS;
+```
+
 #### Discussion
 
 A true value means this volume hints to upper layers to indicate that `statfs(2)` is fast enough that its results need not be cached by the caller.
 
 ## See Also
 
-- [var supportsSparseFiles: Bool](fsvolume/supportedcapabilities/supportssparsefiles.md)
+### Declaring file capabilities
+- [var supportsSparseFiles: Bool](./supportssparsefiles.md)
   A Boolean property that indicates whether the volume supports sparse files.
-- [var supportsZeroRuns: Bool](fsvolume/supportedcapabilities/supportszeroruns.md)
+- [var supportsZeroRuns: Bool](./supportszeroruns.md)
   A Boolean property that indicates whether the volume supports zero runs
-- [var supports2TBFiles: Bool](fsvolume/supportedcapabilities/supports2tbfiles.md)
+- [var supports2TBFiles: Bool](./supports2tbfiles.md)
   A Boolean property that indicates whether the volume supports file sizes larger than 4GB, and potentially up to 2TB.
-- [var supportsOpenDenyModes: Bool](fsvolume/supportedcapabilities/supportsopendenymodes.md)
+- [var supportsOpenDenyModes: Bool](./supportsopendenymodes.md)
   A Boolean property that indicates whether the volume supports open deny modes.
-- [var supportsHiddenFiles: Bool](fsvolume/supportedcapabilities/supportshiddenfiles.md)
+- [var supportsHiddenFiles: Bool](./supportshiddenfiles.md)
   A Boolean property that indicates whether the volume supports hidden files.
-- [var doesNotSupportImmutableFiles: Bool](fsvolume/supportedcapabilities/doesnotsupportimmutablefiles.md)
+- [var doesNotSupportImmutableFiles: Bool](./doesnotsupportimmutablefiles.md)
   A Boolean property that indicates the volume doesn’t support immutable files.
-- [var doesNotSupportSettingFilePermissions: Bool](fsvolume/supportedcapabilities/doesnotsupportsettingfilepermissions.md)
+- [var doesNotSupportSettingFilePermissions: Bool](./doesnotsupportsettingfilepermissions.md)
   A Boolean property that indicates the volume doesn’t set file permissions.
 
 

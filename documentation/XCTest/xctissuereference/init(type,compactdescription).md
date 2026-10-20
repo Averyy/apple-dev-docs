@@ -1,7 +1,8 @@
 # init(type:compactDescription:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an issue with a compact description for a test failure.
 
@@ -11,6 +12,10 @@ Creates an issue with a compact description for a test failure.
 convenience init(type: XCTIssueReference.IssueType, compactDescription: String)
 ```
 
+```objc
+- (instancetype) initWithType:(XCTIssueType) type compactDescription:(NSString *) compactDescription;
+```
+
 ## Parameters
 
 - `type`: A value for classifying an issue that occurs during testing.
@@ -18,7 +23,8 @@ convenience init(type: XCTIssueReference.IssueType, compactDescription: String)
 
 ## See Also
 
-- [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment])](xctissuereference/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:).md)
+### Initializers
+- [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment])](./init%28type,compactdescription,detaileddescription,sourcecodecontext,associatederror,attachments%29.md)
   Creates an issue for a test failure, with descriptions, source code location, error, and attachments.
 
 

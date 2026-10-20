@@ -1,7 +1,8 @@
 # CiWorkflowCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new Xcode Cloud workflow resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the new Xcode Cloud workflow resource.
 
 ## Declaration
 
-```swift
+```
 object CiWorkflowCreateRequest.Data.Attributes
 ```
 
@@ -33,7 +34,8 @@ object CiWorkflowCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object CiWorkflowCreateRequest.Data.Relationships](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object CiWorkflowCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

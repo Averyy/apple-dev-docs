@@ -1,7 +1,8 @@
 # NSExtensionJavaScriptPreprocessingFile
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of a JavaScript file supplied by a Share or Action extension.
 
@@ -11,23 +12,25 @@ The name of a JavaScript file supplied by a Share or Action extension.
 - macOS 10.10+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSExtensionJavaScriptPreprocessingFile`
+- **Type**: string
 
 ## See Also
 
-- [NSExtensionActionWantsFullScreenPresentation](information-property-list/nsextension/nsextensionactionwantsfullscreenpresentation.md)
+### Appearance and Presentation
+- [NSExtensionActionWantsFullScreenPresentation](../nsextensionactionwantsfullscreenpresentation.md)
   A Boolean value indicating whether the Action extension is presented in full screen.
-- [NSExtensionMainStoryboard](information-property-list/nsextension/nsextensionmainstoryboard.md)
+- [NSExtensionMainStoryboard](../nsextensionmainstoryboard.md)
   The name of the app extension’s main storyboard file.
-- [NSExtensionOverridesHostUIAppearance](information-property-list/nsextension/nsextensionoverrideshostuiappearance.md)
+- [NSExtensionOverridesHostUIAppearance](../nsextensionoverrideshostuiappearance.md)
   A Boolean value indicating whether the app extension ignores appearance changes made by the host app.
-- [NSExtensionPointIdentifier](information-property-list/nsextension/nsextensionpointidentifier.md)
+- [NSExtensionPointIdentifier](../nsextensionpointidentifier.md)
   The extension point that supports an app extension.
-- [NSExtensionPrincipalClass](information-property-list/nsextension/nsextensionprincipalclass.md)
+- [NSExtensionPrincipalClass](../nsextensionprincipalclass.md)
   The custom class that implements an app extension’s primary view or functionality.
-- [NSExtensionActivationRule](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule.md)
+- [NSExtensionActivationRule](./nsextensionactivationrule.md)
   The semantic data types that a Share or Action extension supports.
 
 

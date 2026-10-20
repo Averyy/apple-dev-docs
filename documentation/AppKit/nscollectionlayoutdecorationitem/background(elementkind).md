@@ -1,7 +1,8 @@
 # background(elementKind:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a section background with a string to identify the element kind.
 
@@ -12,6 +13,10 @@ Creates a section background with a string to identify the element kind.
 
 ```swift
 class func background(elementKind: String) -> Self
+```
+
+```objc
++ (instancetype) backgroundDecorationItemWithElementKind:(NSString *) elementKind;
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecNotInitialized
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A function was called without initializing the common security services manager.
 
@@ -18,6 +19,10 @@ A function was called without initializing the common security services manager.
 
 ```swift
 var errSecNotInitialized: OSStatus { get }
+```
+
+```c
+errSecNotInitialized
 ```
 
 

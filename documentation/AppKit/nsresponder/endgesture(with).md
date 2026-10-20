@@ -1,12 +1,15 @@
 # endGesture(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the receiver that the user has ended a touch gesture.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 27.0
+
+> **Deprecated**: Begin/end gesture events are no longer delivered. Use the phase property on NSEvent or NSGestureRecognizer instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Informs the receiver that the user has ended a touch gesture.
 func endGesture(with event: NSEvent)
 ```
 
+```objc
+- (void) endGestureWithEvent:(NSEvent *) event;
+```
+
 #### Discussion
 
-Note that this method is no longer called on apps that link against macOS 10.11 and later. If you need to access the phases of a specific gesture, you can implement the responder for that gesture and examine its [`phase`](nsevent/phase-swift.property.md) property instead.
+Note that this method is no longer called on apps that link against macOS 10.11 and later. If you need to access the phases of a specific gesture, you can implement the responder for that gesture and examine its [`phase`](../nsevent/phase-swift.property.md) property instead.
 
 ## Parameters
 
@@ -24,7 +31,8 @@ Note that this method is no longer called on apps that link against macOS 10.11 
 
 ## See Also
 
-- [func beginGesture(with: NSEvent)](nsresponder/begingesture(with:).md)
+### Deprecated methods
+- [func beginGesture(with: NSEvent)](./begingesture%28with%29.md)
   Informs the receiver that the user has begun a touch gesture.
 
 

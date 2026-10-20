@@ -1,7 +1,8 @@
 # auxiliaryPlanes
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The auxiliary plane configurations for this tensor.
 
@@ -19,11 +20,15 @@ The auxiliary plane configurations for this tensor.
 var auxiliaryPlanes: MTLTensorAuxiliaryPlaneDescriptorMap? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MTLTensorAuxiliaryPlaneDescriptorMap * auxiliaryPlanes;
+```
+
 #### Discussion
 
-Set this property with a populated [`MTLTensorAuxiliaryPlaneDescriptorMap`](mtltensorauxiliaryplanedescriptormap.md) to create a multi-plane tensor. When `nil`, the tensor has only a data plane.
+Set this property with a populated [`MTLTensorAuxiliaryPlaneDescriptorMap`](../mtltensorauxiliaryplanedescriptormap.md) to create a multi-plane tensor. When `nil`, the tensor has only a data plane.
 
-Multi-plane tensors do not support [`machineLearning`](mtltensorusage/machinelearning.md). Use [`compute`](mtltensorusage/compute.md) or [`render`](mtltensorusage/render.md).
+Multi-plane tensors do not support [`machineLearning`](../mtltensorusage/machinelearning.md). Use [`compute`](../mtltensorusage/compute.md) or [`render`](../mtltensorusage/render.md).
 
 Multi-plane tensors do not support data types larger than one byte as the data plane type.
 

@@ -1,7 +1,8 @@
 # init(configuration:delegate:queue:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new NFCTagReaderSession instance.
 

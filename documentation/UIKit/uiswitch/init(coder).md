@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a switch control from data in an unarchiver.
 
@@ -17,13 +18,18 @@ Creates a switch control from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: An object containing data used to initialize the switch control.
 
 ## See Also
 
-- [init(frame: CGRect)](uiswitch/init(frame:).md)
+### Creating a switch
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a switch control.
 
 

@@ -1,7 +1,8 @@
 # FileManager.URLRelationship
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the relationship between a directory and an item.
 
@@ -20,33 +21,38 @@ Constants indicating the relationship between a directory and an item.
 enum URLRelationship
 ```
 
+```c
+enum NSURLRelationship : NSInteger;
+```
+
 ## Topics
 
 ### URL Relationships
-- [FileManager.URLRelationship.contains](filemanager/urlrelationship/contains.md)
+- [FileManager.URLRelationship.contains](./urlrelationship/contains.md)
   The directory contains the specified item.
-- [FileManager.URLRelationship.same](filemanager/urlrelationship/same.md)
-  The directory and the item are the same. This relationship occurs when the value of the [`fileResourceIdentifierKey`](urlresourcekey/fileresourceidentifierkey.md) is the same for the directory and item.
-- [FileManager.URLRelationship.other](filemanager/urlrelationship/other.md)
+- [FileManager.URLRelationship.same](./urlrelationship/same.md)
+  The directory and the item are the same. This relationship occurs when the value of the [`fileResourceIdentifierKey`](../urlresourcekey/fileresourceidentifierkey.md) is the same for the directory and item.
+- [FileManager.URLRelationship.other](./urlrelationship/other.md)
   The directory does not contain the item and is not the same as the item.
 ### Initializers
-- [init?(rawValue: Int)](filemanager/urlrelationship/init(rawvalue:).md)
+- [init?(rawValue: Int)](./urlrelationship/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func getRelationship(UnsafeMutablePointer<FileManager.URLRelationship>, ofDirectoryAt: URL, toItemAt: URL) throws](filemanager/getrelationship(_:ofdirectoryat:toitemat:).md)
+### Getting the relationship between items
+- [func getRelationship(UnsafeMutablePointer<FileManager.URLRelationship>, ofDirectoryAt: URL, toItemAt: URL) throws](./getrelationship%28_,ofdirectoryat,toitemat%29.md)
   Determines the type of relationship that exists between a directory and an item.
-- [func getRelationship(UnsafeMutablePointer<FileManager.URLRelationship>, of: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask, toItemAt: URL) throws](filemanager/getrelationship(_:of:in:toitemat:).md)
+- [func getRelationship(UnsafeMutablePointer<FileManager.URLRelationship>, of: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask, toItemAt: URL) throws](./getrelationship%28_,of,in,toitemat%29.md)
   Determines the type of relationship that exists between a system directory and the specified item.
 
 

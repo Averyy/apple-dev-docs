@@ -1,7 +1,8 @@
 # yield(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the task awaiting the next iteration point by having it return normally or throw, based on a given result.
 
@@ -21,6 +22,8 @@ Resume the task awaiting the next iteration point by having it return normally o
 func yield(with result: sending Result<Element, Failure>) -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult where Failure == any Error
 ```
 
+Available when `Failure` conforms to `Error`.
+
 #### Return Value
 
 A `YieldResult` that indicates the success or failure of the yield operation.
@@ -37,11 +40,12 @@ If you call this method repeatedly, each call returns immediately, without block
 
 ## See Also
 
-- [func yield(sending Element) -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](asyncthrowingstream/continuation/yield(_:).md)
+### Producing Elements
+- [func yield(sending Element) -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](./yield%28_%29.md)
   Resume the task awaiting the next iteration point by having it return normally from its suspension point with a given element.
-- [func yield() -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](asyncthrowingstream/continuation/yield.md)
+- [func yield() -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](./yield%28%29.md)
   Resume the task awaiting the next iteration point by having it return normally from its suspension point.
-- [AsyncThrowingStream.Continuation.YieldResult](asyncthrowingstream/continuation/yieldresult.md)
+- [AsyncThrowingStream.Continuation.YieldResult](./yieldresult.md)
   A type that indicates the result of yielding a value to a client, by way of the continuation.
 
 

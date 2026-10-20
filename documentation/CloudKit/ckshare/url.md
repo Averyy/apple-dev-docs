@@ -1,7 +1,8 @@
 # url
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Uniform Resource Locator (URL) for inviting participants to the share.
 
@@ -20,17 +21,22 @@ The Uniform Resource Locator (URL) for inviting participants to the share.
 var url: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * URL;
+```
+
 #### Discussion
 
 This property is only available after saving a share record to the server. This URL is stable and persists across shares and reshares of the same root record.
 
 ## See Also
 
-- [var owner: CKShare.Participant](ckshare/owner.md)
+### Accessing the Share’s Attributes
+- [var owner: CKShare.Participant](./owner.md)
   The participant that represents the share’s owner.
-- [var currentUserParticipant: CKShare.Participant?](ckshare/currentuserparticipant.md)
+- [var currentUserParticipant: CKShare.Participant?](./currentuserparticipant.md)
   The participant that represents the current user.
-- [var participants: [CKShare.Participant]](ckshare/participants.md)
+- [var participants: [CKShare.Participant]](./participants.md)
   An array that contains the share’s participants.
 
 

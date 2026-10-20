@@ -1,7 +1,8 @@
 # MTLCompileSymbolVisibility
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.4+
@@ -17,39 +18,44 @@
 enum MTLCompileSymbolVisibility
 ```
 
+```c
+enum MTLCompileSymbolVisibility : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLCompileSymbolVisibility.default](mtlcompilesymbolvisibility/default.md)
-- [MTLCompileSymbolVisibility.hidden](mtlcompilesymbolvisibility/hidden.md)
+- [MTLCompileSymbolVisibility.default](./mtlcompilesymbolvisibility/default.md)
+- [MTLCompileSymbolVisibility.hidden](./mtlcompilesymbolvisibility/hidden.md)
 ### Initializers
-- [init?(rawValue: Int)](mtlcompilesymbolvisibility/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlcompilesymbolvisibility/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLLibrary](mtllibrary.md)
+### Shader library management
+- [protocol MTLLibrary](./mtllibrary.md)
   A collection of Metal shader functions.
-- [protocol MTLDynamicLibrary](mtldynamiclibrary.md)
+- [protocol MTLDynamicLibrary](./mtldynamiclibrary.md)
   A dynamically linkable representation of compiled shader code for a specific Metal device object.
-- [protocol MTLBinaryArchive](mtlbinaryarchive.md)
+- [protocol MTLBinaryArchive](./mtlbinaryarchive.md)
   A container for pipeline state descriptors and their associated compiled shader code.
-- [class MTLCompileOptions](mtlcompileoptions.md)
+- [class MTLCompileOptions](./mtlcompileoptions.md)
   Compilation settings for a Metal shader library.
-- [enum MTLLibraryType](mtllibrarytype.md)
+- [enum MTLLibraryType](./mtllibrarytype.md)
   A set of options for Metal library types.
-- [enum MTLLanguageVersion](mtllanguageversion.md)
+- [enum MTLLanguageVersion](./mtllanguageversion.md)
   Metal shading language versions.
-- [enum MTLLibraryOptimizationLevel](mtllibraryoptimizationlevel.md)
+- [enum MTLLibraryOptimizationLevel](./mtllibraryoptimizationlevel.md)
   The optimization options for the Metal compiler.
 
 

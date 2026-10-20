@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,8 +19,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOInterruptDispatchSourceTypeEdge](3645737-anonymous/kiointerruptdispatchsourcetypeedge.md)
-- [kIOInterruptDispatchSourceTypeLevel](3645737-anonymous/kiointerruptdispatchsourcetypelevel.md)
+- [kIOInterruptDispatchSourceTypeEdge](./api-3645737-anonymous/kiointerruptdispatchsourcetypeedge.md)
+- [kIOInterruptDispatchSourceTypeLevel](./api-3645737-anonymous/kiointerruptdispatchsourcetypelevel.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AccessibilityRotorContent
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Content within an accessibility rotor.
 
@@ -44,24 +45,25 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Supporting types
-- [var body: Self.Body](accessibilityrotorcontent/body-swift.property.md)
+- [var body: Self.Body](./accessibilityrotorcontent/body-swift.property.md)
   The internal content of this `AccessibilityRotorContent`.
-- [associatedtype Body : AccessibilityRotorContent](accessibilityrotorcontent/body-swift.associatedtype.md)
+- [associatedtype Body : AccessibilityRotorContent](./accessibilityrotorcontent/body-swift.associatedtype.md)
   The type for the internal content of this `AccessibilityRotorContent`.
 
 ## Relationships
 
 ### Conforming Types
-- [AccessibilityRotorEntry](accessibilityrotorentry.md)
-- [ForEach](foreach.md)
-- [Group](group.md)
-- [TupleContent](tuplecontent.md)
+- [AccessibilityRotorEntry](./accessibilityrotorentry.md)
+- [ForEach](./foreach.md)
+- [Group](./group.md)
+- [TupleContent](./tuplecontent.md)
 
 ## See Also
 
-- [struct AccessibilityRotorContentBuilder](accessibilityrotorcontentbuilder.md)
+### Creating rotors
+- [struct AccessibilityRotorContentBuilder](./accessibilityrotorcontentbuilder.md)
   Result builder you use to generate rotor entry content.
-- [struct AccessibilityRotorEntry](accessibilityrotorentry.md)
+- [struct AccessibilityRotorEntry](./accessibilityrotorentry.md)
   A struct representing an entry in an Accessibility Rotor.
 
 

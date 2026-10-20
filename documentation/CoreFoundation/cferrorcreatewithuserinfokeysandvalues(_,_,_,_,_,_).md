@@ -1,7 +1,8 @@
 # CFErrorCreateWithUserInfoKeysAndValues(_:_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new CFError object using given keys and values to create the user info dictionary.
 
@@ -20,13 +21,17 @@ Creates a new CFError object using given keys and values to create the user info
 func CFErrorCreateWithUserInfoKeysAndValues(_ allocator: CFAllocator!, _ domain: CFErrorDomain!, _ code: CFIndex, _ userInfoKeys: UnsafePointer<UnsafeRawPointer?>!, _ userInfoValues: UnsafePointer<UnsafeRawPointer?>!, _ numUserInfoValues: CFIndex) -> CFError!
 ```
 
+```c
+extern CFErrorRefCFErrorCreateWithUserInfoKeysAndValues(CFAllocatorRef allocator, CFErrorDomain domain, CFIndex code, const void * const*userInfoKeys, const void * const*userInfoValues, CFIndex numUserInfoValues);
+```
+
 #### Return Value
 
-A new CFError object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new CFError object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `domain`: A CFString that identifies the error domain. If this reference is `NULL` or is otherwise not a valid CFString, the behavior is undefined.
 - `code`: A CFIndex that identifies the error code. The code is interpreted within the context of the error domain.
 - `userInfoKeys`: An array of `numUserInfoValues` CFStrings used as keys in creating the userInfo dictionary. The value of this parameter can be `NULL` if `numUserInfoValues` is `0`.
@@ -35,7 +40,8 @@ A new CFError object. Ownership follows the [`The Create Rule`](https://develope
 
 ## See Also
 
-- [func CFErrorCreate(CFAllocator!, CFErrorDomain!, CFIndex, CFDictionary!) -> CFError!](cferrorcreate(_:_:_:_:).md)
+### Creating a CFError
+- [func CFErrorCreate(CFAllocator!, CFErrorDomain!, CFIndex, CFDictionary!) -> CFError!](./cferrorcreate%28_,_,_,_%29.md)
   Creates a new CFError object.
 
 

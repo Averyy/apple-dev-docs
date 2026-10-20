@@ -1,7 +1,8 @@
 # item
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A music item that corresponds to this entry of the playback queue, such as a song or a music video.
 

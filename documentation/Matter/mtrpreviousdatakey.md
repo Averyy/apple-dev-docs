@@ -1,7 +1,8 @@
 # MTRPreviousDataKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRPreviousDataKey: String
+```
+
+```c
+extern NSString * const MTRPreviousDataKey;
 ```
 
 

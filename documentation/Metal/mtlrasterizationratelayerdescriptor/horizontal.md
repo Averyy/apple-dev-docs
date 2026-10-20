@@ -1,7 +1,8 @@
 # horizontal
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal rasterization rates for the layer map’s rows.
 
@@ -19,15 +20,20 @@ The horizontal rasterization rates for the layer map’s rows.
 var horizontal: MTLRasterizationRateSampleArray { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLRasterizationRateSampleArray * horizontal;
+```
+
 ## See Also
 
-- [var sampleCount: MTLSize](mtlrasterizationratelayerdescriptor/samplecount.md)
+### Inspecting the layer rate function parameters
+- [var sampleCount: MTLSize](./samplecount.md)
   The number of rows and columns in the layer map.
-- [var maxSampleCount: MTLSize](mtlrasterizationratelayerdescriptor/maxsamplecount.md)
+- [var maxSampleCount: MTLSize](./maxsamplecount.md)
   The maximum number of rows and columns in the layer map.
-- [var vertical: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/vertical.md)
+- [var vertical: MTLRasterizationRateSampleArray](./vertical.md)
   The vertical rasterization rates for the layer map’s rows.
-- [class MTLRasterizationRateSampleArray](mtlrasterizationratesamplearray.md)
+- [class MTLRasterizationRateSampleArray](../mtlrasterizationratesamplearray.md)
   An array instance that contains rasterization rates.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,15 +18,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOTraceCommandGates](1644090-anonymous/kiotracecommandgates.md)
-- [kIOTraceCompatBootArgs](1644090-anonymous/kiotracecompatbootargs.md)
-- [kIOTraceEventSources](1644090-anonymous/kiotraceeventsources.md)
-- [kIOTraceIOService](1644090-anonymous/kiotraceioservice.md)
-- [kIOTraceIntEventSource](1644090-anonymous/kiotraceinteventsource.md)
-- [kIOTraceInterrupts](1644090-anonymous/kiotraceinterrupts.md)
-- [kIOTracePowerMgmt](1644090-anonymous/kiotracepowermgmt.md)
-- [kIOTraceTimers](1644090-anonymous/kiotracetimers.md)
-- [kIOTraceWorkLoops](1644090-anonymous/kiotraceworkloops.md)
+- [kIOTraceCommandGates](./api-1644090-anonymous/kiotracecommandgates.md)
+- [kIOTraceCompatBootArgs](./api-1644090-anonymous/kiotracecompatbootargs.md)
+- [kIOTraceEventSources](./api-1644090-anonymous/kiotraceeventsources.md)
+- [kIOTraceIOService](./api-1644090-anonymous/kiotraceioservice.md)
+- [kIOTraceIntEventSource](./api-1644090-anonymous/kiotraceinteventsource.md)
+- [kIOTraceInterrupts](./api-1644090-anonymous/kiotraceinterrupts.md)
+- [kIOTracePowerMgmt](./api-1644090-anonymous/kiotracepowermgmt.md)
+- [kIOTraceTimers](./api-1644090-anonymous/kiotracetimers.md)
+- [kIOTraceWorkLoops](./api-1644090-anonymous/kiotraceworkloops.md)
 
 
 ---

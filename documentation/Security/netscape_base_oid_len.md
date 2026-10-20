@@ -1,7 +1,8 @@
 # NETSCAPE_BASE_OID_LEN
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var NETSCAPE_BASE_OID_LEN: Int32 { get }
+```
+
+```c
+#define NETSCAPE_BASE_OID_LEN
 ```
 
 

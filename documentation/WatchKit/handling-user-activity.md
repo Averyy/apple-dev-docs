@@ -1,14 +1,15 @@
 # Handling User Activity
 
-**Framework**: WatchKit
+**Framework**: WatchKit  
+**Role**: Article
 
 Detect and respond to user activity information from Handoff or a complication.
 
 #### Overview
 
-SwiftUI provides the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)) modifier to handle incoming [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects. This replaces the WatchKit extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-5pyj1.md) method.
+SwiftUI provides the [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) modifier to handle incoming [`NSUserActivity`](../Foundation/nsuseractivity.md) objects. This replaces the WatchKit extension delegate’s [`handle(_:)`](./wkextensiondelegate/handle%28_%29-5pyj1.md) method.
 
-For example, if you create a complication descriptor using the [`init(identifier:displayName:supportedFamilies:userActivity:)`](https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:useractivity:)) initializer to pass in an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object, when the user taps the corresponding complication, the system activates your app and passes the activity object to your [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)) modifiers. You can use the activity object to navigate to the corresponding content in your app.
+For example, if you create a complication descriptor using the [`init(identifier:displayName:supportedFamilies:userActivity:)`](../ClockKit/clkcomplicationdescriptor/init%28identifier,displayname,supportedfamilies,useractivity%29.md) initializer to pass in an [`NSUserActivity`](../Foundation/nsuseractivity.md) object, when the user taps the corresponding complication, the system activates your app and passes the activity object to your [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) modifiers. You can use the activity object to navigate to the corresponding content in your app.
 
 ```swift
 // Create a list of the user's favorite cities.
@@ -67,11 +68,12 @@ func checkActive(city: City) -> Binding<Bool> {
 
 ## See Also
 
-- [Handling Common State Transitions](handling-common-state-transitions.md)
+### Responding to life cycle events
+- [Handling Common State Transitions](./handling-common-state-transitions.md)
   Detect and respond to common state transitions.
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Working with the watchOS app life cycle](./working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [Taking advantage of frontmost app state](taking-advantage-of-frontmost-app-state.md)
+- [Taking advantage of frontmost app state](./taking-advantage-of-frontmost-app-state.md)
   Understand the frontmost app state, and the features it provides to your app.
 
 

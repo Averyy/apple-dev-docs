@@ -1,7 +1,8 @@
 # isConfiguredForCarrierMessaging
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this app is configured to perform carrier messaging operations.
 
@@ -16,7 +17,7 @@ final var isConfiguredForCarrierMessaging: Bool { get }
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
 #### Discussion
 

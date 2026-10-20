@@ -1,7 +1,8 @@
 # HKBloodType.bNegative
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has an B– blood type.
 
@@ -19,23 +20,28 @@ The user has an B– blood type.
 case bNegative
 ```
 
+```c
+HKBloodTypeBNegative
+```
+
 ## See Also
 
-- [HKBloodType.notSet](hkbloodtype/notset.md)
+### Constants
+- [HKBloodType.notSet](./notset.md)
   Either the user’s blood type is not set, or the user has not granted your app permission to read the blood type.
-- [HKBloodType.aPositive](hkbloodtype/apositive.md)
+- [HKBloodType.aPositive](./apositive.md)
   The user has an A+ blood type.
-- [HKBloodType.aNegative](hkbloodtype/anegative.md)
+- [HKBloodType.aNegative](./anegative.md)
   The user has an A– blood type.
-- [HKBloodType.bPositive](hkbloodtype/bpositive.md)
+- [HKBloodType.bPositive](./bpositive.md)
   The user has an B+ blood type.
-- [HKBloodType.abPositive](hkbloodtype/abpositive.md)
+- [HKBloodType.abPositive](./abpositive.md)
   The user has an AB+ blood type.
-- [HKBloodType.abNegative](hkbloodtype/abnegative.md)
+- [HKBloodType.abNegative](./abnegative.md)
   The user has an AB– blood type.
-- [HKBloodType.oPositive](hkbloodtype/opositive.md)
+- [HKBloodType.oPositive](./opositive.md)
   The user has an O+ blood type.
-- [HKBloodType.oNegative](hkbloodtype/onegative.md)
+- [HKBloodType.oNegative](./onegative.md)
   The user has an O– blood type.
 
 

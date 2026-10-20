@@ -1,15 +1,16 @@
 # SetAudioUnitParameterDisplayType(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 func SetAudioUnitParameterDisplayType(_ flags: AudioUnitParameterOptions, _ displayType: AudioUnitParameterOptions) -> AudioUnitParameterOptions
 ```
 
+```c
+static AudioUnitParameterOptions SetAudioUnitParameterDisplayType(AudioUnitParameterOptions flags, AudioUnitParameterOptions displayType);
+```
+
 ## See Also
 
-- [struct AudioUnitCocoaViewInfo](audiounitcocoaviewinfo.md)
+### Configuring the Audio Unit UI
+- [struct AudioUnitCocoaViewInfo](./audiounitcocoaviewinfo.md)
   The name and number of custom Cocoa views for an audio unit.
-- [func GetAudioUnitParameterDisplayType(AudioUnitParameterOptions) -> AudioUnitParameterOptions](getaudiounitparameterdisplaytype(_:).md)
+- [func GetAudioUnitParameterDisplayType(AudioUnitParameterOptions) -> AudioUnitParameterOptions](./getaudiounitparameterdisplaytype%28_%29.md)
 
 
 ---

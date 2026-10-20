@@ -1,7 +1,8 @@
 # init(id:anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new scroll position to a view with a provided identity value.
 

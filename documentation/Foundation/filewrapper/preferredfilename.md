@@ -1,7 +1,8 @@
 # preferredFilename
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred filename for the file wrapper object.
 
@@ -20,6 +21,10 @@ The preferred filename for the file wrapper object.
 var preferredFilename: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * preferredFilename;
+```
+
 #### Discussion
 
 This name is normally used as the dictionary key when a child file wrapper is added to a directory file wrapper. However, if another file wrapper with the same preferred name already exists in the directory file wrapper when this object is added, the filename assigned as the dictionary key may differ from the preferred filename.
@@ -28,19 +33,21 @@ When you change the preferred filename, the default implementation of this prope
 
 ## See Also
 
-- [func addFileWrapper(FileWrapper) -> String](filewrapper/addfilewrapper(_:).md)
+### Related Documentation
+- [func addFileWrapper(FileWrapper) -> String](./addfilewrapper%28_%29.md)
   Adds a child file wrapper to the receiver, which must be a directory file wrapper.
-- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-70161.md)
+- [init(url: URL, options: FileWrapper.ReadingOptions) throws](./init%28url,options%29-70161.md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the URL.
-- [func write(to: URL, options: FileWrapper.WritingOptions, originalContentsURL: URL?) throws](filewrapper/write(to:options:originalcontentsurl:).md)
+- [func write(to: URL, options: FileWrapper.WritingOptions, originalContentsURL: URL?) throws](./write%28to,options,originalcontentsurl%29.md)
   Recursively writes the entire contents of a file wrapper to a given file-system URL.
-- [init(directoryWithFileWrappers: [String : FileWrapper])](filewrapper/init(directorywithfilewrappers:).md)
+- [init(directoryWithFileWrappers: [String : FileWrapper])](./init%28directorywithfilewrappers%29.md)
   Initializes the receiver as a directory file wrapper, with a given file-wrapper list.
-- [var filename: String?](filewrapper/filename.md)
+### Accessing Files
+- [var filename: String?](./filename.md)
   The filename of the file wrapper object
-- [var fileAttributes: [String : Any]](filewrapper/fileattributes.md)
+- [var fileAttributes: [String : Any]](./fileattributes.md)
   A dictionary of file attributes.
-- [var regularFileContents: Data?](filewrapper/regularfilecontents.md)
+- [var regularFileContents: Data?](./regularfilecontents.md)
   The contents of the file-system node associated with a regular-file file wrapper.
 
 

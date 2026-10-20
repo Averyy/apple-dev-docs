@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Completes the task and reports the specified error back to WebKit.
@@ -19,11 +20,15 @@ Completes the task and reports the specified error back to WebKit.
 func didFailWithError(_ error: any Error)
 ```
 
+```objc
+- (void) didFailWithError:(NSError *) error;
+```
+
 #### Discussion
 
 This method signals to WebKit that the task is complete, but failed with the specified error. Use this method to report any errors during the load process.
 
-After calling this method, it’s a programmer error to call other methods of the task object, and those methods raise an exception if you do. This method raises an exception if you call it after WebKit calls the [`webView(_:stop:)`](wkurlschemehandler/webview(_:stop:).md) method of the corresponding handler object.
+After calling this method, it’s a programmer error to call other methods of the task object, and those methods raise an exception if you do. This method raises an exception if you call it after WebKit calls the [`webView(_:stop:)`](../wkurlschemehandler/webview%28_,stop%29.md) method of the corresponding handler object.
 
 ## Parameters
 

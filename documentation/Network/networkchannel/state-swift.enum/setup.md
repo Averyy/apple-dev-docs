@@ -1,7 +1,8 @@
 # NetworkChannel.State.setup
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The initial state prior to start
 

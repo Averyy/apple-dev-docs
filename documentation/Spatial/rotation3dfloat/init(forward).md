@@ -1,7 +1,8 @@
 # init(forward:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a rotation with the specified forward vector.
 

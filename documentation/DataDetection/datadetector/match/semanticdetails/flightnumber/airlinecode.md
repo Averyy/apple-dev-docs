@@ -1,7 +1,8 @@
 # airlineCode
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the International Air Transport Association (IATA) code of an airline.
 
@@ -22,7 +23,8 @@ let airlineCode: String
 
 ## See Also
 
-- [let flightNumber: Int](datadetector/match/semanticdetails/flightnumber/flightnumber.md)
+### Characteristics of a flight number
+- [let flightNumber: Int](./flightnumber.md)
   A value that represent the flight number, excluding the airline code.
 
 

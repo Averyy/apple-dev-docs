@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video augmentation option set from a raw value.
 

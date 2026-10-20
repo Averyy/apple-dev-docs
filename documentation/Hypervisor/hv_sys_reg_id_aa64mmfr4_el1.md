@@ -1,7 +1,8 @@
 # HV_SYS_REG_ID_AA64MMFR4_EL1
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var HV_SYS_REG_ID_AA64MMFR4_EL1: hv_sys_reg_t { get }
+```
+
+```c
+HV_SYS_REG_ID_AA64MMFR4_EL1
 ```
 
 #### Discussion

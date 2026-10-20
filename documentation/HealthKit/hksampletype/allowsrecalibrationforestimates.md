@@ -1,7 +1,8 @@
 # allowsRecalibrationForEstimates
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether HealthKit supports recalibrating the prediction algorithm used to produce estimates for this sample type.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether HealthKit supports recalibrating the pred
 var allowsRecalibrationForEstimates: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL allowsRecalibrationForEstimates;
+```
+
 #### Discussion
 
-To recalibrate the data for this sample type, call the [`HKHealthStore`](hkhealthstore.md) class’s [`recalibrateEstimates(sampleType:date:completion:)`](hkhealthstore/recalibrateestimates(sampletype:date:completion:).md) method.
+To recalibrate the data for this sample type, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`recalibrateEstimates(sampleType:date:completion:)`](../hkhealthstore/recalibrateestimates%28sampletype,date,completion%29.md) method.
 
 
 ---

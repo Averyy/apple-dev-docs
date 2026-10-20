@@ -1,7 +1,8 @@
 # DeviceInformationResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -16,7 +17,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object DeviceInformationResponse.ErrorChainItem
 ```
 
@@ -29,7 +30,8 @@ object DeviceInformationResponse.ErrorChainItem
 
 ## See Also
 
-- [object DeviceInformationResponse.QueryResponses](deviceinformationresponse/queryresponses-data.dictionary.md)
+### Objects
+- [object DeviceInformationResponse.QueryResponses](./queryresponses-data.dictionary.md)
   The response dictionary that contains information about the device.
 
 

@@ -1,7 +1,8 @@
 # insertChild(_:at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts `child` into the children list at `index`.
 

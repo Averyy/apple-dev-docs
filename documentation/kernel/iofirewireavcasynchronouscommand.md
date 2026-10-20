@@ -1,48 +1,50 @@
 # IOFireWireAVCAsynchronousCommand
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```cpp
 class IOFireWireAVCAsynchronousCommand : IOCommand
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- cancel](iofirewireavcasynchronouscommand/1553119-cancel.md)
-- [- free](iofirewireavcasynchronouscommand/1553118-free.md)
-- [- getMetaClass](iofirewireavcasynchronouscommand/1553147-getmetaclass.md)
-- [- init](iofirewireavcasynchronouscommand/1553131-init.md)
-- [- isPending](iofirewireavcasynchronouscommand/1553137-ispending.md)
-- [- reinit](iofirewireavcasynchronouscommand/1553120-reinit.md)
-- [- submit](iofirewireavcasynchronouscommand/1553114-submit.md)
+- [- cancel](./iofirewireavcasynchronouscommand/api-1553119-cancel.md)
+- [- free](./iofirewireavcasynchronouscommand/api-1553118-free.md)
+- [- getMetaClass](./iofirewireavcasynchronouscommand/api-1553147-getmetaclass.md)
+- [- init](./iofirewireavcasynchronouscommand/api-1553131-init.md)
+- [- isPending](./iofirewireavcasynchronouscommand/api-1553137-ispending.md)
+- [- reinit](./iofirewireavcasynchronouscommand/api-1553120-reinit.md)
+- [- submit](./iofirewireavcasynchronouscommand/api-1553114-submit.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOCommand](iocommand.md)
+- [IOCommand](./iocommand.md)
 
 ## See Also
 
-- [IOFireWireAVCTargetSpace](iofirewireavctargetspace.md)
+### AVC Support
+- [IOFireWireAVCTargetSpace](./iofirewireavctargetspace.md)
   object to centralize the AVC Target mode support
-- [IOFireWireAVCCommand](iofirewireavccommand.md)
-- [AVCCommandHandlerInfo](avccommandhandlerinfo.md)
-- [AVCConnectionRecord](avcconnectionrecord.md)
-- [AVCSubunitInfo](avcsubunitinfo.md)
-- [AVCConnectTargetPlugsInParams](avcconnecttargetplugsinparams.md)
-- [AVCConnectTargetPlugsOutParams](avcconnecttargetplugsoutparams.md)
-- [AVCGetTargetPlugConnectionInParams](avcgettargetplugconnectioninparams.md)
-- [AVCGetTargetPlugConnectionOutParams](avcgettargetplugconnectionoutparams.md)
-- [AVCSubunitPlugRecord](avcsubunitplugrecord.md)
-- [AVCUnitPlugRecord](avcunitplugrecord.md)
-- [AVCUnitPlugs](avcunitplugs.md)
+- [IOFireWireAVCCommand](./iofirewireavccommand.md)
+- [AVCCommandHandlerInfo](./avccommandhandlerinfo.md)
+- [AVCConnectionRecord](./avcconnectionrecord.md)
+- [AVCSubunitInfo](./avcsubunitinfo.md)
+- [AVCConnectTargetPlugsInParams](./avcconnecttargetplugsinparams.md)
+- [AVCConnectTargetPlugsOutParams](./avcconnecttargetplugsoutparams.md)
+- [AVCGetTargetPlugConnectionInParams](./avcgettargetplugconnectioninparams.md)
+- [AVCGetTargetPlugConnectionOutParams](./avcgettargetplugconnectionoutparams.md)
+- [AVCSubunitPlugRecord](./avcsubunitplugrecord.md)
+- [AVCUnitPlugRecord](./avcunitplugrecord.md)
+- [AVCUnitPlugs](./avcunitplugs.md)
 
 
 ---

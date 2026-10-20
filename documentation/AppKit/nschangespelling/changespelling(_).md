@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces the selected word in the receiver with a corrected version from the Spelling panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func changeSpelling(_ sender: Any?)
+```
+
+```objc
+- (void) changeSpelling:(id) sender;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ This message is sent by the `NSSpellChecker` to the object whose text is being c
 
 ## See Also
 
-- [Spell Checking Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpellCheck/SpellCheck.html#//apple_ref/doc/uid/10000092i)
+### Related Documentation
+- [Spell Checking Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpellCheck/SpellCheck.html#//apple_ref/doc/uid/10000092i)
 
 
 ---

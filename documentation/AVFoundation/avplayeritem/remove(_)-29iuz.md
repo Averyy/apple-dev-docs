@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified media data collector from the player item’s collection of media collectors.
 
@@ -21,15 +22,20 @@ nonisolated
 func remove(_ collector: AVPlayerItemMediaDataCollector)
 ```
 
+```objc
+- (void) removeMediaDataCollector:(AVPlayerItemMediaDataCollector *) collector;
+```
+
 ## Parameters
 
-- `collector`: The instance of [`AVPlayerItemMediaDataCollector`](avplayeritemmediadatacollector.md) to remove.
+- `collector`: The instance of [`AVPlayerItemMediaDataCollector`](../avplayeritemmediadatacollector.md) to remove.
 
 ## See Also
 
-- [var mediaDataCollectors: [AVPlayerItemMediaDataCollector]](avplayeritem/mediadatacollectors.md)
+### Managing player item data collectors
+- [var mediaDataCollectors: [AVPlayerItemMediaDataCollector]](./mediadatacollectors.md)
   The collection of associated media data collectors.
-- [func add(AVPlayerItemMediaDataCollector)](avplayeritem/add(_:)-9l3to.md)
+- [func add(AVPlayerItemMediaDataCollector)](./add%28_%29-9l3to.md)
   Adds the specified media data collector to the player item’s collection of media collectors.
 
 

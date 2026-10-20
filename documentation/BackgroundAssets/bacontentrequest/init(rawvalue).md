@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Background Assets  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.1+

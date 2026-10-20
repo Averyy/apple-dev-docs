@@ -1,7 +1,8 @@
 # ImmersiveCameraCalibration
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents immersive media camera calibration data.
 
@@ -25,57 +26,58 @@ This data includes calibration type, calibration name, calibration file name, le
 ## Topics
 
 ### Calibration geometry
-- [ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin.md)
+- [ImmersiveCameraCalibration.CameraOrigin](./immersivecameracalibration/cameraorigin.md)
   A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
-- [ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/cameratexturemapping.md)
+- [ImmersiveCameraCalibration.CameraTextureMapping](./immersivecameracalibration/cameratexturemapping.md)
   A type that holds the matrices used for video frame texture mapping on the camera lens geometry.
-- [class ImmersiveCameraMeshCalibration](immersivecamerameshcalibration.md)
+- [class ImmersiveCameraMeshCalibration](./immersivecamerameshcalibration.md)
   Calibration mesh geometry based on USDZ data.
 ### Calibration configuration
-- [ImmersiveCameraCalibration.CalibrationType](immersivecameracalibration/calibrationtype.md)
+- [ImmersiveCameraCalibration.CalibrationType](./immersivecameracalibration/calibrationtype.md)
   A value that represents the calibration type used to generate camera calibration geometry.
-- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+- [struct ImmersiveCameraLensDefinition](./immersivecameralensdefinition.md)
   This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
 ### Initializers
-- [init(name: String, type: ImmersiveCameraCalibration.CalibrationType, mask: ImmersiveCameraMask?, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(name:type:mask:positionable:origin:texturemapping:environmentfilename:).md)
+- [init(name: String, type: ImmersiveCameraCalibration.CalibrationType, mask: ImmersiveCameraMask?, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](./immersivecameracalibration/init%28name,type,mask,positionable,origin,texturemapping,environmentfilename%29.md)
   Creates a mesh based calibration from USDZ data and a image-based mask.
 ### Instance Properties
-- [var environmentFilename: String?](immersivecameracalibration/environmentfilename.md)
+- [var environmentFilename: String?](./immersivecameracalibration/environmentfilename.md)
   The USDZ filename of a backdrop to use for this calibration.
-- [var mask: ImmersiveCameraMask?](immersivecameracalibration/mask.md)
+- [var mask: ImmersiveCameraMask?](./immersivecameracalibration/mask.md)
   Immersive camera mask that needs to be used for this calibration.
-- [var name: String](immersivecameracalibration/name.md)
+- [var name: String](./immersivecameracalibration/name.md)
   A string identifying this calibration.
-- [var origin: ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/origin.md)
+- [var origin: ImmersiveCameraCalibration.CameraOrigin](./immersivecameracalibration/origin.md)
   Position information, in meters, that represents the origin from which to render the calibration in 3D space relative to the person’s eye.
-- [var positionable: Bool](immersivecameracalibration/positionable.md)
+- [var positionable: Bool](./immersivecameracalibration/positionable.md)
   A Boolean value that indicates whether to anchor this calibration in mixed reality 3D space rather than centering it on the person’s eye position.
-- [var textureMapping: ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/texturemapping.md)
+- [var textureMapping: ImmersiveCameraCalibration.CameraTextureMapping](./immersivecameracalibration/texturemapping.md)
   Texture mapping that describes how each section of the video frame maps into the calibration.
-- [var type: ImmersiveCameraCalibration.CalibrationType](immersivecameracalibration/type.md)
+- [var type: ImmersiveCameraCalibration.CalibrationType](./immersivecameracalibration/type.md)
   The type of this calibration.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [actor VenueDescriptor](venuedescriptor.md)
+### Camera metadata
+- [actor VenueDescriptor](./venuedescriptor.md)
   The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
-- [struct ImmersiveCamera](immersivecamera.md)
+- [struct ImmersiveCamera](./immersivecamera.md)
   A structure that holds the required information for an immersive media camera to process and render video frames.
-- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+- [struct ImmersiveCameraLensDefinition](./immersivecameralensdefinition.md)
   This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
-- [enum ImmersiveCameraMask](immersivecameramask.md)
+- [enum ImmersiveCameraMask](./immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
-- [struct ImmersiveDynamicMask](immersivedynamicmask.md)
+- [struct ImmersiveDynamicMask](./immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
-- [class ImmersiveImageMask](immersiveimagemask.md)
+- [class ImmersiveImageMask](./immersiveimagemask.md)
   An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 

@@ -1,7 +1,8 @@
 # translation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A vector to apply to a transform to match system interaction hinting.
 
@@ -18,17 +19,22 @@ A vector to apply to a transform to match system interaction hinting.
 var translation: CGVector { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGVector translation;
+```
+
 #### Discussion
 
 This property represents an X,Y-axis translation expressed in points.
 
 ## See Also
 
-- [var interactionTransform: CATransform3D](uifocusmovementhint/interactiontransform.md)
+### Transforming a hint
+- [var interactionTransform: CATransform3D](./interactiontransform.md)
   A 3D transform that contains the combined transformations of perspective, rotation, and translation.
-- [var perspectiveTransform: CATransform3D](uifocusmovementhint/perspectivetransform.md)
+- [var perspectiveTransform: CATransform3D](./perspectivetransform.md)
   A 3D transform that represents a perspective matrix to be applied to match UIKit interaction hinting.
-- [var rotation: CGVector](uifocusmovementhint/rotation.md)
+- [var rotation: CGVector](./rotation.md)
   A vector to apply to a transform to match system interaction hinting.
 
 

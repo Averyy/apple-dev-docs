@@ -1,7 +1,8 @@
 # weights
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend shape’s weight values.
 

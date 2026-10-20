@@ -1,7 +1,8 @@
 # reportUnusedPasswordCredential(forDomain:userName:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receives a report from the system that a relying party indicatd that a password credential isn’t needed anymore for a given user name.
 
@@ -18,11 +19,17 @@ Receives a report from the system that a relying party indicatd that a password 
 func reportUnusedPasswordCredential(forDomain domain: String, userName: String)
 ```
 
+```objc
+- (void) reportUnusedPasswordCredentialForDomain:(NSString *) domain userName:(NSString *) userName;
+```
+
 #### Discussion
 
-> **Note**: > **Note**: This method will be called for handling password credential updates when a relying party indicates a password is no longer needed using the `ASCredentialUpdater` API. You may hide or remove the credential. This update should be handled in the background, so no blocking UI or error should ever be shown.
+> **Note**:
+>
+> > **Note**: This method will be called for handling password credential updates when a relying party indicates a password is no longer needed using the `ASCredentialUpdater` API. You may hide or remove the credential. This update should be handled in the background, so no blocking UI or error should ever be shown.
 
-The system calls this method when a relying party reports calls [`reportUnusedPasswordCredential(domain:userName:)`](ascredentialupdater/reportunusedpasswordcredential(domain:username:).md) to indicate a password isn’t needed anymore. It may call this because a person using the app has transitioned to using a passkey, or because they deleted their account. Your manager can hide or remove the credential after it receives this report.
+The system calls this method when a relying party reports calls [`reportUnusedPasswordCredential(domain:userName:)`](../ascredentialupdater/reportunusedpasswordcredential%28domain,username%29.md) to indicate a password isn’t needed anymore. It may call this because a person using the app has transitioned to using a passkey, or because they deleted their account. Your manager can hide or remove the credential after it receives this report.
 
 > ❗ **Important**: Perform any updates in the background and don’t show a blocking UI or any error.
 
@@ -43,11 +50,12 @@ Info.plist
 
 ## See Also
 
-- [func reportAllAcceptedPublicKeyCredentials(forRelyingParty: String, userHandle: Data, acceptedCredentialIDs: [Data])](ascredentialproviderviewcontroller/reportallacceptedpublickeycredentials(forrelyingparty:userhandle:acceptedcredentialids:).md)
+### Receiving credential updates
+- [func reportAllAcceptedPublicKeyCredentials(forRelyingParty: String, userHandle: Data, acceptedCredentialIDs: [Data])](./reportallacceptedpublickeycredentials%28forrelyingparty,userhandle,acceptedcredentialids%29.md)
   Receives a report from the system that a relying party sent a snapshot of all accepted credentials for an account.
-- [func reportPublicKeyCredentialUpdate(forRelyingParty: String, userHandle: Data, newName: String)](ascredentialproviderviewcontroller/reportpublickeycredentialupdate(forrelyingparty:userhandle:newname:).md)
+- [func reportPublicKeyCredentialUpdate(forRelyingParty: String, userHandle: Data, newName: String)](./reportpublickeycredentialupdate%28forrelyingparty,userhandle,newname%29.md)
   Receives a report from the system that a relying party indicated that a passkey’s user name updated.
-- [func reportUnknownPublicKeyCredential(forRelyingParty: String, credentialID: Data)](ascredentialproviderviewcontroller/reportunknownpublickeycredential(forrelyingparty:credentialid:).md)
+- [func reportUnknownPublicKeyCredential(forRelyingParty: String, credentialID: Data)](./reportunknownpublickeycredential%28forrelyingparty,credentialid%29.md)
   Receives a report from the system that a relying party indicated a passkey credential is invalid.
 
 

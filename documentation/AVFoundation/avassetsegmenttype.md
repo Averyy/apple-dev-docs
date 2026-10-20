@@ -1,7 +1,8 @@
 # AVAssetSegmentType
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the type of a segment.
 
@@ -19,33 +20,38 @@ Constants that define the type of a segment.
 enum AVAssetSegmentType
 ```
 
+```c
+enum AVAssetSegmentType : NSInteger;
+```
+
 ## Topics
 
 ### Segment types
-- [AVAssetSegmentType.initialization](avassetsegmenttype/initialization.md)
+- [AVAssetSegmentType.initialization](./avassetsegmenttype/initialization.md)
   An initialization segment type.
-- [AVAssetSegmentType.separable](avassetsegmenttype/separable.md)
+- [AVAssetSegmentType.separable](./avassetsegmenttype/separable.md)
   A separable segment type.
 ### Initializers
-- [init?(rawValue: Int)](avassetsegmenttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avassetsegmenttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var segmentType: AVAssetSegmentType](avassetsegmentreport/segmenttype.md)
+### Inspecting a report
+- [var segmentType: AVAssetSegmentType](./avassetsegmentreport/segmenttype.md)
   The type of segment data.
-- [var trackReports: [AVAssetSegmentTrackReport]](avassetsegmentreport/trackreports.md)
+- [var trackReports: [AVAssetSegmentTrackReport]](./avassetsegmentreport/trackreports.md)
   The reports for the segment’s track data.
-- [class AVAssetSegmentTrackReport](avassetsegmenttrackreport.md)
+- [class AVAssetSegmentTrackReport](./avassetsegmenttrackreport.md)
   An object that provides information on a track in segment data.
 
 

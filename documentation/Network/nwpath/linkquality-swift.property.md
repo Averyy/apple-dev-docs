@@ -1,7 +1,8 @@
 # linkQuality
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Represents the link quality measurement of the link layer network attachment
 

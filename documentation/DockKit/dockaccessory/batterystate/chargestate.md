@@ -1,7 +1,8 @@
 # chargeState
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enumeration representing the charge state of the battery
 

@@ -1,7 +1,8 @@
 # load(contentsOf:configuration:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct a model asynchronously from a compiled model asset.
 
@@ -31,16 +32,17 @@ The loaded model, if successful; otherwise, `nil`.
 
 ## See Also
 
-- [class func load(MLModelAsset, configuration: MLModelConfiguration, completionHandler: (MLModel?, (any Error)?) -> Void)](mlmodel/load(_:configuration:completionhandler:).md)
+### Loading a model
+- [class func load(MLModelAsset, configuration: MLModelConfiguration, completionHandler: (MLModel?, (any Error)?) -> Void)](./load%28_,configuration,completionhandler%29.md)
   Construct a model asynchronously from a compiled model asset.
-- [class func load(contentsOf: URL, configuration: MLModelConfiguration, completionHandler: (Result<MLModel, any Error>) -> Void)](mlmodel/load(contentsof:configuration:completionhandler:).md)
+- [class func load(contentsOf: URL, configuration: MLModelConfiguration, completionHandler: (Result<MLModel, any Error>) -> Void)](./load%28contentsof,configuration,completionhandler%29.md)
   Creates a Core ML model instance asynchronously from a compiled model file, a custom configuration, and a completion handler.
-- [convenience init(contentsOf: URL) throws](mlmodel/init(contentsof:).md)
+- [convenience init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates a Core ML model instance from a compiled model file.
-- [convenience init(contentsOf: URL, configuration: MLModelConfiguration) throws](mlmodel/init(contentsof:configuration:).md)
+- [convenience init(contentsOf: URL, configuration: MLModelConfiguration) throws](./init%28contentsof,configuration%29.md)
   Creates a Core ML model instance from a compiled model file and a custom configuration.
-- [convenience init(contentsOfURL: URL) throws](mlmodel/init(contentsofurl:).md)
-- [convenience init(contentsOfURL: URL, configuration: MLModelConfiguration) throws](mlmodel/init(contentsofurl:configuration:).md)
+- [convenience init(contentsOfURL: URL) throws](./init%28contentsofurl%29.md)
+- [convenience init(contentsOfURL: URL, configuration: MLModelConfiguration) throws](./init%28contentsofurl,configuration%29.md)
 
 
 ---

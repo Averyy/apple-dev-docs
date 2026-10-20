@@ -1,17 +1,22 @@
 # data(forType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data for the specified type from the first item in the receiver that contains the type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func data(forType dataType: NSPasteboard.PasteboardType) -> Data?
+```
+
+```objc
+- (NSData *) dataForType:(NSPasteboardType) dataType;
 ```
 
 #### Return Value
@@ -20,13 +25,13 @@ A data object containing the data for the specified type from the first item in 
 
 #### Discussion
 
-This method may also return `nil` if the pasteboard server cannot supply the data in time—for example, if the pasteboard’s owner is slow in responding to a [`pasteboard:provideDataForType:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/pasteboard:providedatafortype:) message and the interprocess communication times out.
+This method may also return `nil` if the pasteboard server cannot supply the data in time—for example, if the pasteboard’s owner is slow in responding to a [`pasteboard:provideDataForType:`](../../ObjectiveC/nsobject-swift.class/pasteboard_providedatafortype_.md) message and the interprocess communication times out.
 
 #### Discussion
 
 Errors other than a timeout raise an `NSPasteboardCommunicationException`.
 
-If `nil` is returned, the application should put up a panel informing the user that it was unable to carry out the paste operation. Note that sending [`types`](nspasteboard/types.md) or [`availableType(from:)`](nspasteboard/availabletype(from:).md) before invoking [`data(forType:)`](nspasteboard/data(fortype:).md) can help you determine whether a `nil` result from a reading method is due to something like a pasteboard timeout.
+If `nil` is returned, the application should put up a panel informing the user that it was unable to carry out the paste operation. Note that sending [`types`](./types.md) or [`availableType(from:)`](./availabletype%28from%29.md) before invoking [`data(forType:)`](./data%28fortype%29.md) can help you determine whether a `nil` result from a reading method is due to something like a pasteboard timeout.
 
 ##### Special Considerations
 
@@ -34,25 +39,27 @@ For standard text data types such as string, RTF, and RTFD, the text data from e
 
 ## Parameters
 
-- `dataType`: The type of data you want to read from the pasteboard. This value should be one of the types returned by [`types`](nspasteboard/types.md) or [`availableType(from:)`](nspasteboard/availabletype(from:).md).
+- `dataType`: The type of data you want to read from the pasteboard. This value should be one of the types returned by [`types`](./types.md) or [`availableType(from:)`](./availabletype%28from%29.md).
 
 ## See Also
 
-- [func setData(Data?, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboard/setdata(_:fortype:).md)
+### Related Documentation
+- [func setData(Data?, forType: NSPasteboard.PasteboardType) -> Bool](./setdata%28_,fortype%29.md)
   Sets the data as the representation for the specified type for the first item on the receiver.
-- [func readObjects(forClasses: [AnyClass], options: [NSPasteboard.ReadingOptionKey : Any]?) -> [Any]?](nspasteboard/readobjects(forclasses:options:).md)
+### Reading data
+- [func readObjects(forClasses: [AnyClass], options: [NSPasteboard.ReadingOptionKey : Any]?) -> [Any]?](./readobjects%28forclasses,options%29.md)
   Reads from the receiver objects that best match the specified array of classes.
-- [NSPasteboard.ReadingOptionKey](nspasteboard/readingoptionkey.md)
+- [NSPasteboard.ReadingOptionKey](./readingoptionkey.md)
   Options for reading pasteboard data.
-- [NSPasteboard.ReadingOptions](nspasteboard/readingoptions.md)
+- [NSPasteboard.ReadingOptions](./readingoptions.md)
   Options that specify how to interpret data on the pasteboard when initializing pasteboard data.
-- [var pasteboardItems: [NSPasteboardItem]?](nspasteboard/pasteboarditems.md)
+- [var pasteboardItems: [NSPasteboardItem]?](./pasteboarditems.md)
   An array that contains all the items held by the pasteboard.
-- [func index(of: NSPasteboardItem) -> Int](nspasteboard/index(of:).md)
+- [func index(of: NSPasteboardItem) -> Int](./index%28of%29.md)
   Returns the index of the specified pasteboard item.
-- [func propertyList(forType: NSPasteboard.PasteboardType) -> Any?](nspasteboard/propertylist(fortype:).md)
+- [func propertyList(forType: NSPasteboard.PasteboardType) -> Any?](./propertylist%28fortype%29.md)
   Returns the property list for the specified type from the first item in the receiver that contains the type.
-- [func string(forType: NSPasteboard.PasteboardType) -> String?](nspasteboard/string(fortype:).md)
+- [func string(forType: NSPasteboard.PasteboardType) -> String?](./string%28fortype%29.md)
   Returns a concatenation of the strings for the specified type from all the items in the receiver that contain the type.
 
 

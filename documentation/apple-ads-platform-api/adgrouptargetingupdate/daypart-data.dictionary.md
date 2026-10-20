@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.Daypart
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Hour-of-day targeting, restricting delivery to specific one-hour slots in a 7-day week grid.
 
@@ -10,13 +11,13 @@ Hour-of-day targeting, restricting delivery to specific one-hour slots in a 7-da
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.Daypart
 ```
 
 #### Discussion
 
-Used with App Store and Apple Maps campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Used with App Store and Apple Maps campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 | Day | Slot Range | Example |
 | --- | --- | --- |

@@ -1,7 +1,8 @@
 # newPlane(withDimensions:segments:geometryType:allocator:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a mesh in the shape of a rectangular plane.
 
@@ -19,6 +20,10 @@ Generates a mesh in the shape of a rectangular plane.
 class func newPlane(withDimensions dimensions: vector_float2, segments: vector_uint2, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?) -> Self
 ```
 
+```objc
++ (instancetype) newPlaneWithDimensions:(vector_float2) dimensions segments:(vector_uint2) segments geometryType:(MDLGeometryType) geometryType allocator:(id<MDLMeshBufferAllocator>) allocator;
+```
+
 #### Return Value
 
 A new mesh object.
@@ -27,7 +32,7 @@ A new mesh object.
 
 This method generates vertex data for a plane centered at the origin of its local coordinate system and extending in the x- and z-axis directions. All surface normal vectors on the plane point in the positive y-axis direction.
 
-The `allocator` parameter controls vertex data allocation for the mesh. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/metalkit/mtkmeshbufferallocator) object. By specifying an allocator, you can ensure that mesh data is copied a minimal number of times between being read from a file and being loaded into GPU memory for rendering.
+The `allocator` parameter controls vertex data allocation for the mesh. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](../../MetalKit/mtkmeshbufferallocator.md) object. By specifying an allocator, you can ensure that mesh data is copied a minimal number of times between being read from a file and being loaded into GPU memory for rendering.
 
 ## Parameters
 
@@ -38,26 +43,27 @@ The `allocator` parameter controls vertex data allocation for the mesh. For exam
 
 ## See Also
 
-- [class func newBox(withDimensions: vector_float3, segments: vector_uint3, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](mdlmesh/newbox(withdimensions:segments:geometrytype:inwardnormals:allocator:).md)
+### Creating Parametric Meshes
+- [class func newBox(withDimensions: vector_float3, segments: vector_uint3, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](./newbox%28withdimensions,segments,geometrytype,inwardnormals,allocator%29.md)
   Creates a mesh in the shape of a rectangular box or cube.
-- [class func newEllipsoid(withRadii: vector_float3, radialSegments: Int, verticalSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, hemisphere: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](mdlmesh/newellipsoid(withradii:radialsegments:verticalsegments:geometrytype:inwardnormals:hemisphere:allocator:).md)
+- [class func newEllipsoid(withRadii: vector_float3, radialSegments: Int, verticalSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, hemisphere: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](./newellipsoid%28withradii,radialsegments,verticalsegments,geometrytype,inwardnormals,hemisphere,allocator%29.md)
   Creates a mesh in the shape of an ellipsoid or sphere.
-- [class func newCylinder(withHeight: Float, radii: vector_float2, radialSegments: Int, verticalSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](mdlmesh/newcylinder(withheight:radii:radialsegments:verticalsegments:geometrytype:inwardnormals:allocator:).md)
+- [class func newCylinder(withHeight: Float, radii: vector_float2, radialSegments: Int, verticalSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](./newcylinder%28withheight,radii,radialsegments,verticalsegments,geometrytype,inwardnormals,allocator%29.md)
   Generates a mesh in the shape of a right circular or elliptical cylinder.
-- [class func newEllipticalCone(withHeight: Float, radii: vector_float2, radialSegments: Int, verticalSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](mdlmesh/newellipticalcone(withheight:radii:radialsegments:verticalsegments:geometrytype:inwardnormals:allocator:).md)
+- [class func newEllipticalCone(withHeight: Float, radii: vector_float2, radialSegments: Int, verticalSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](./newellipticalcone%28withheight,radii,radialsegments,verticalsegments,geometrytype,inwardnormals,allocator%29.md)
   Generates a mesh in the shape of an elliptical or circular cone.
-- [class func newCapsule(withHeight: Float, radii: vector_float2, radialSegments: Int, verticalSegments: Int, hemisphereSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](mdlmesh/newcapsule(withheight:radii:radialsegments:verticalsegments:hemispheresegments:geometrytype:inwardnormals:allocator:).md)
-- [class func newIcosahedron(withRadius: Float, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](mdlmesh/newicosahedron(withradius:inwardnormals:allocator:).md)
+- [class func newCapsule(withHeight: Float, radii: vector_float2, radialSegments: Int, verticalSegments: Int, hemisphereSegments: Int, geometryType: MDLGeometryType, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](./newcapsule%28withheight,radii,radialsegments,verticalsegments,hemispheresegments,geometrytype,inwardnormals,allocator%29.md)
+- [class func newIcosahedron(withRadius: Float, inwardNormals: Bool, allocator: (any MDLMeshBufferAllocator)?) -> Self](./newicosahedron%28withradius,inwardnormals,allocator%29.md)
   Generates a mesh in the shape of a regular 20-sided polyhedron with triangular faces.
-- [class func newIcosahedron(withRadius: Float, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?) -> Self](mdlmesh/newicosahedron(withradius:inwardnormals:geometrytype:allocator:).md)
-- [init(boxWithExtent: vector_float3, segments: vector_uint3, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(boxwithextent:segments:inwardnormals:geometrytype:allocator:).md)
-- [init(sphereWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(spherewithextent:segments:inwardnormals:geometrytype:allocator:).md)
-- [init(cylinderWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, topCap: Bool, bottomCap: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(cylinderwithextent:segments:inwardnormals:topcap:bottomcap:geometrytype:allocator:).md)
-- [init(coneWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, cap: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(conewithextent:segments:inwardnormals:cap:geometrytype:allocator:).md)
-- [init(planeWithExtent: vector_float3, segments: vector_uint2, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(planewithextent:segments:geometrytype:allocator:).md)
-- [init(icosahedronWithExtent: vector_float3, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(icosahedronwithextent:inwardnormals:geometrytype:allocator:).md)
-- [init(capsuleWithExtent: vector_float3, cylinderSegments: vector_uint2, hemisphereSegments: Int32, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(capsulewithextent:cylindersegments:hemispheresegments:inwardnormals:geometrytype:allocator:).md)
-- [init(hemisphereWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, cap: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(hemispherewithextent:segments:inwardnormals:cap:geometrytype:allocator:).md)
+- [class func newIcosahedron(withRadius: Float, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?) -> Self](./newicosahedron%28withradius,inwardnormals,geometrytype,allocator%29.md)
+- [init(boxWithExtent: vector_float3, segments: vector_uint3, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28boxwithextent,segments,inwardnormals,geometrytype,allocator%29.md)
+- [init(sphereWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28spherewithextent,segments,inwardnormals,geometrytype,allocator%29.md)
+- [init(cylinderWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, topCap: Bool, bottomCap: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28cylinderwithextent,segments,inwardnormals,topcap,bottomcap,geometrytype,allocator%29.md)
+- [init(coneWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, cap: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28conewithextent,segments,inwardnormals,cap,geometrytype,allocator%29.md)
+- [init(planeWithExtent: vector_float3, segments: vector_uint2, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28planewithextent,segments,geometrytype,allocator%29.md)
+- [init(icosahedronWithExtent: vector_float3, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28icosahedronwithextent,inwardnormals,geometrytype,allocator%29.md)
+- [init(capsuleWithExtent: vector_float3, cylinderSegments: vector_uint2, hemisphereSegments: Int32, inwardNormals: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28capsulewithextent,cylindersegments,hemispheresegments,inwardnormals,geometrytype,allocator%29.md)
+- [init(hemisphereWithExtent: vector_float3, segments: vector_uint2, inwardNormals: Bool, cap: Bool, geometryType: MDLGeometryType, allocator: (any MDLMeshBufferAllocator)?)](./init%28hemispherewithextent,segments,inwardnormals,cap,geometrytype,allocator%29.md)
 
 
 ---

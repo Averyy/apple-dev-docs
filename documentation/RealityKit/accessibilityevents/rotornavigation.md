@@ -1,7 +1,8 @@
 # AccessibilityEvents.RotorNavigation
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An accessibility event associated with a rotor navigation.
 
@@ -10,7 +11,7 @@ An accessibility event associated with a rotor navigation.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,25 +23,25 @@ An accessibility event associated with a rotor navigation.
 ## Topics
 
 ### Initializers
-- [init(rotorType: AccessibilityComponent.RotorType, hostEntity: Entity, currentItem: Any?, searchDirection: UIAccessibilityCustomRotor.Direction, resultHandler: (Any) -> Void)](accessibilityevents/rotornavigation/init(rotortype:hostentity:currentitem:searchdirection:resulthandler:).md)
+- [init(rotorType: AccessibilityComponent.RotorType, hostEntity: Entity, currentItem: Any?, searchDirection: UIAccessibilityCustomRotor.Direction, resultHandler: (Any) -> Void)](./rotornavigation/init%28rotortype,hostentity,currentitem,searchdirection,resulthandler%29.md)
 ### Instance Properties
-- [let currentItem: Any?](accessibilityevents/rotornavigation/currentitem.md)
+- [let currentItem: Any?](./rotornavigation/currentitem.md)
   The current element of the search.
-- [let hostEntity: Entity](accessibilityevents/rotornavigation/hostentity.md)
+- [let hostEntity: Entity](./rotornavigation/hostentity.md)
   The entity containing the component declaring support for this rotor type.
-- [let resultHandler: (Any) -> Void](accessibilityevents/rotornavigation/resulthandler.md)
+- [let resultHandler: (Any) -> Void](./rotornavigation/resulthandler.md)
   The handler for the result of the current search. When observing RotorNavigation events
-- [let rotorType: AccessibilityComponent.RotorType](accessibilityevents/rotornavigation/rotortype.md)
+- [let rotorType: AccessibilityComponent.RotorType](./rotornavigation/rotortype.md)
   The type of the rotor associated with the event.
-- [let searchDirection: UIAccessibilityCustomRotor.Direction](accessibilityevents/rotornavigation/searchdirection.md)
+- [let searchDirection: UIAccessibilityCustomRotor.Direction](./rotornavigation/searchdirection.md)
   The direction in which to search.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

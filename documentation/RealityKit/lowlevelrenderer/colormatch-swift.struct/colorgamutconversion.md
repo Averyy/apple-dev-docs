@@ -1,7 +1,8 @@
 # colorGamutConversion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 3×3 half-precision matrix that converts RGB values from the renderer’s working color space to the output display’s color space.
 
@@ -19,7 +20,8 @@ var colorGamutConversion: simd_half3x3 { get set }
 
 ## See Also
 
-- [var enableClampValues: Bool](lowlevelrenderer/colormatch-swift.struct/enableclampvalues.md)
+### Configuring color matching
+- [var enableClampValues: Bool](./enableclampvalues.md)
   A Boolean value that indicates whether output values are clamped to `[0, 1]` after gamut conversion.
 
 

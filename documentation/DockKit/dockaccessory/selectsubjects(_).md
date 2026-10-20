@@ -1,7 +1,8 @@
 # selectSubjects(_:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects subjects to track with specific identifiers
 
@@ -25,7 +26,7 @@ If you disable system tracking, this configuration change applies to any custom 
 
 Call this method when implementing your own custom tracking behavior.
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t docked, or other errors if no subject is found at the position.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device isn’t docked, or other errors if no subject is found at the position.
 
 ## Parameters
 

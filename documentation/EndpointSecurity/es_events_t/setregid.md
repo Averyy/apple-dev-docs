@@ -1,13 +1,14 @@
 # setregid
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates a change to a process’s real and effective group IDs.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ Properties of an event that indicates a change to a process’s real and effecti
 var setregid: es_event_setregid_t { get set }
 ```
 
+```c
+es_event_setregid_t setregid;
+```
+
 ## See Also
 
-- [var setuid: es_event_setuid_t](es_events_t/setuid.md)
+### User and Group ID Events
+- [var setuid: es_event_setuid_t](./setuid.md)
   Properties of an event that indicates a change to a process’s user ID.
-- [var setgid: es_event_setgid_t](es_events_t/setgid.md)
+- [var setgid: es_event_setgid_t](./setgid.md)
   Properties of an event that indicates a change to a process’s group ID.
-- [var seteuid: es_event_seteuid_t](es_events_t/seteuid.md)
+- [var seteuid: es_event_seteuid_t](./seteuid.md)
   Properties of an event that indicates a change to a process’s effective user ID.
-- [var setegid: es_event_setegid_t](es_events_t/setegid.md)
+- [var setegid: es_event_setegid_t](./setegid.md)
   Properties of an event that indicates a change to a process’s effective group ID.
-- [var setreuid: es_event_setreuid_t](es_events_t/setreuid.md)
+- [var setreuid: es_event_setreuid_t](./setreuid.md)
   Properties of an event that indicates a change to a process’s real and effective user IDs.
 
 

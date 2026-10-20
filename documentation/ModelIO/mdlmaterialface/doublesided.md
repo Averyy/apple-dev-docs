@@ -1,7 +1,8 @@
 # MDLMaterialFace.doubleSided
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -17,10 +18,15 @@
 case doubleSided
 ```
 
+```c
+MDLMaterialFaceDoubleSided
+```
+
 ## See Also
 
-- [MDLMaterialFace.back](mdlmaterialface/back.md)
-- [MDLMaterialFace.front](mdlmaterialface/front.md)
+### Constants
+- [MDLMaterialFace.back](./back.md)
+- [MDLMaterialFace.front](./front.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AudioSearch.Criteria.url(_:)
 
 **Framework**: Media Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 URLs that the system provides for matching audio content.
 
@@ -22,7 +23,7 @@ case url([URL])
 
 ## Mentions
 
-- [Responding to audio search and playback requests](responding-to-audio-search-and-playback-requests.md)
+- [Responding to audio search and playback requests](../../responding-to-audio-search-and-playback-requests.md)
 
 #### Discussion
 
@@ -32,13 +33,14 @@ The system provides URLs for matching content if:
 - Spotlight was able to find matching content with a URL you donated to the Spotlight index.
 - The system was able to provide URLs for matching audio content; for example, from onscreen context.
 
-Use the provided URL in your [`IntentValueQuery`](https://developer.apple.com/documentation/appintents/intentvaluequery) implementation to find content and return app entities.
+Use the provided URL in your [`IntentValueQuery`](../../../AppIntents/intentvaluequery.md) implementation to find content and return app entities.
 
 ## See Also
 
-- [AudioSearch.Criteria.searchQuery(_:)](audiosearch/criteria-swift.enum/searchquery(_:).md)
+### Audio search types
+- [AudioSearch.Criteria.searchQuery(_:)](./searchquery%28_%29.md)
   The person’s natural-language search query.
-- [AudioSearch.Criteria.unspecified](audiosearch/criteria-swift.enum/unspecified.md)
+- [AudioSearch.Criteria.unspecified](./unspecified.md)
   The request includes a vague search query or no specific search criteria.
 
 

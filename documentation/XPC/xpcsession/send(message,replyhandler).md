@@ -1,7 +1,8 @@
 # send(message:replyHandler:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a message asynchronously over the session to the destination service, calling a closure after receiving a reply.
 
@@ -11,7 +12,7 @@ Sends a message asynchronously over the session to the destination service, call
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ Sessions send messages serially in a first-in, first-out (FIFO) order. This meth
 
 If the session fails to send the message, this method throws an error that contains details about the failure.
 
-If the system tears down the session’s connection before receiving a reply, it invokes `replyHandler` with a result containing an [`XPCRichError`](xpcricherror.md) describing the failure. For example, the remote service exits prematurely before sending a reply.
+If the system tears down the session’s connection before receiving a reply, it invokes `replyHandler` with a result containing an [`XPCRichError`](../xpcricherror.md) describing the failure. For example, the remote service exits prematurely before sending a reply.
 
 > ❗ **Important**:  If you create an inactive session, you must activate it before sending messages. Calling this method with an inactive session crashes.
 
@@ -38,19 +39,20 @@ If the system tears down the session’s connection before receiving a reply, it
 
 ## See Also
 
-- [func send<Message>(Message) throws](xpcsession/send(_:).md)
+### Sending messages
+- [func send<Message>(Message) throws](./send%28_%29.md)
   Sends an encodable message over the session to the destination service.
-- [func send<Message>(Message, replyHandler: (Result<XPCReceivedMessage, XPCRichError>) -> Void) throws](xpcsession/send(_:replyhandler:)-3wjln.md)
+- [func send<Message>(Message, replyHandler: (Result<XPCReceivedMessage, XPCRichError>) -> Void) throws](./send%28_,replyhandler%29-3wjln.md)
   Sends an encodable message over the session to the destination service, using the closure you specify to handle a reply and rich error.
-- [func send<Message, Reply>(Message, replyHandler: (Result<Reply, any Error>) -> Void) throws](xpcsession/send(_:replyhandler:)-9an0u.md)
+- [func send<Message, Reply>(Message, replyHandler: (Result<Reply, any Error>) -> Void) throws](./send%28_,replyhandler%29-9an0u.md)
   Sends an encodable message over the session to the destination service, using the closure you specify to handle a reply.
-- [func send(message: XPCDictionary) throws](xpcsession/send(message:).md)
+- [func send(message: XPCDictionary) throws](./send%28message%29.md)
   Sends a dictionary message over the session to the destination service.
-- [func sendSync<Message>(Message) throws -> XPCReceivedMessage](xpcsession/sendsync(_:)-8a284.md)
+- [func sendSync<Message>(Message) throws -> XPCReceivedMessage](./sendsync%28_%29-8a284.md)
   Sends an encodable message over the session to the destination service, blocking the caller until receiving a reply message.
-- [func sendSync<Message, Reply>(Message) throws -> Reply](xpcsession/sendsync(_:)-88u0s.md)
+- [func sendSync<Message, Reply>(Message) throws -> Reply](./sendsync%28_%29-88u0s.md)
   Sends an encodable message over the session to the destination service, blocking the caller until receiving an encodable reply message.
-- [func sendSync(message: XPCDictionary) throws -> XPCDictionary](xpcsession/sendsync(message:).md)
+- [func sendSync(message: XPCDictionary) throws -> XPCDictionary](./sendsync%28message%29.md)
   Sends a dictionary message over the session to the destination service, blocking the caller until receiving a reply.
 
 

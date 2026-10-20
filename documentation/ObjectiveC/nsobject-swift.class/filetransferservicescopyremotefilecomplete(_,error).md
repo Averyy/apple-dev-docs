@@ -1,15 +1,20 @@
 # fileTransferServicesCopyRemoteFileComplete(_:error:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesCopyRemoteFileComplete(_ inServices: OBEXFileTransferServices!, error inError: OBEXError)
+```
+
+```objc
+- (void) fileTransferServicesCopyRemoteFileComplete:(OBEXFileTransferServices *) inServices error:(OBEXError) inError;
 ```
 
 

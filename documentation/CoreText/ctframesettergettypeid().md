@@ -1,7 +1,8 @@
 # CTFramesetterGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier of the framesetter object.
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier of the framesetter object.
 
 ```swift
 func CTFramesetterGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTFramesetterGetTypeID();
 ```
 
 

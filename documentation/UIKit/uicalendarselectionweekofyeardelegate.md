@@ -1,7 +1,8 @@
 # UICalendarSelectionWeekOfYearDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods you implement to provide selectable weeks and handle changes to the week selection in a calendar view.
 
@@ -18,22 +19,27 @@ A set of methods you implement to provide selectable weeks and handle changes to
 protocol UICalendarSelectionWeekOfYearDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UICalendarSelectionWeekOfYearDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling week-of-year selections
-- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, canSelectWeekOfYear: DateComponents?) -> Bool](uicalendarselectionweekofyeardelegate/week(ofyearselection:canselectweekofyear:).md)
+- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, canSelectWeekOfYear: DateComponents?) -> Bool](./uicalendarselectionweekofyeardelegate/week%28ofyearselection,canselectweekofyear%29.md)
   Determines if a week is available for selection.
-- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear: DateComponents?)](uicalendarselectionweekofyeardelegate/week(ofyearselection:didselectweekofyear:).md)
+- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear: DateComponents?)](./uicalendarselectionweekofyeardelegate/week%28ofyearselection,didselectweekofyear%29.md)
   Notifies the delegate after a person selects a week in the calendar view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any UICalendarSelectionWeekOfYearDelegate)?](uicalendarselectionweekofyear/delegate.md)
+### Setting the selection delegate
+- [var delegate: (any UICalendarSelectionWeekOfYearDelegate)?](./uicalendarselectionweekofyear/delegate.md)
   A delegate object that a calendar view asks about selectable weeks and informs of changes to the week selection.
 
 

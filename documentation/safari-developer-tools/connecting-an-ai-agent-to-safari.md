@@ -1,6 +1,7 @@
 # Connecting an AI agent to Safari
 
-**Framework**: Safari Developer Features
+**Framework**: Safari Developer Features  
+**Role**: Article
 
 Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
 
@@ -15,9 +16,9 @@ After you connect your AI agent to the Safari MCP server, you can ask the agent 
 - Confirming your page’s accessibility support
 - Testing your page’s interactions
 
-#### Enable Web Developer Features and Remote Automation
+#### Enable web developer features and remote automation
 
-Before you connect your AI agent, enable web developer features and remote automation in Safari. First, follow the steps in [`Enabling features for web developers`](enabling-developer-features.md) to enable the Develop menu and Developer settings tab.
+Before you connect your AI agent, enable web developer features and remote automation in Safari. First, follow the steps in [Enabling features for web developers](./enabling-developer-features.md) to enable the Develop menu and Developer settings tab.
 
 Then, enable remote automation so that your AI agent can connect to the MCP server:
 
@@ -25,7 +26,7 @@ Then, enable remote automation so that your AI agent can connect to the MCP serv
 2. Select the Developer tab.
 3. Check the “Allow remote automation and external agents” box.
 
-#### Configure an Ai Agent to Use the Safari Mcp Server
+#### Configure an AI agent to use the Safari MCP server
 
 After you enable remote automation and external agent access in Safari, you can configure your AI agent to connect to the Safari MCP server.
 
@@ -60,13 +61,13 @@ If your agent uses an `mcp.json` or `config.json` file, add the Safari MCP serve
     
 ```
 
-#### Navigate to a Webpage with a Prompt
+#### Navigate to a webpage with a prompt
 
 Start by writing a prompt that specifies a URL and the action you want to perform; for example, “Open my site at example.com in Safari and tell me if it loaded correctly.” The agent uses the Safari MCP server to open a new window in Safari and load the site you request in that window, and then uses the MCP server’s tools to see if the webpage loaded correctly. Safari displays a banner below the top toolbar that indicates your AI agent controls the window.
 
 After the webpage opens in the window and the agent verifies it loaded correctly, the agent responds with a message similar to this example:
 
-```None
+```
     
 I opened example.com in Safari. The page loaded successfully with a 200 response and the title "Example Domain." No console errors were reported.
 
@@ -74,7 +75,7 @@ I opened example.com in Safari. The page loaded successfully with a 200 response
 
 If you request actions in your first prompt before navigating to a webpage and opening the window that the agent controls, such as listing open tabs or opening a new tab, the Safari MCP server may return an error.
 
-#### Interact with Webpages in Safari Using the Mcp Server Tools
+#### Interact with webpages in Safari using the MCP server tools
 
 As you’re building and maintaining your webpages, you can ask your AI agent to interact with, test, and analyze your webpages in Safari. The MCP server provides tools that let your agent perform these types of actions:
 
@@ -110,15 +111,16 @@ The following table lists the tools that the Safari MCP server provides:
 
 ## See Also
 
-- [Develop menu](develop-menu.md)
+### Tools
+- [Develop menu](./develop-menu.md)
   Access tools for debugging webpages in Safari, as well as tools for debugging web content in other apps and on other devices.
-- [Web Inspector](web-inspector.md)
+- [Web Inspector](./web-inspector.md)
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
-- [Responsive Design Mode](responsive-design-mode.md)
+- [Responsive Design Mode](./responsive-design-mode.md)
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
-- [Inspect Apps and Devices](inspect-apps-and-devices.md)
+- [Inspect Apps and Devices](./inspect-apps-and-devices.md)
   Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
-- [WebDriver](webdriver.md)
+- [WebDriver](./webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
 
 

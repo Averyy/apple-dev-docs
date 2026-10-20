@@ -1,7 +1,8 @@
 # init(titleVariants:image:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a grid button with the specified title variants, image, and action handler.
 
@@ -14,6 +15,10 @@ Creates a grid button with the specified title variants, image, and action handl
 
 ```swift
 convenience init(titleVariants: [String], image: UIImage, handler: ((CPGridButton) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants image:(UIImage *) image handler:(void (^)(CPGridButton *gridButton)) handler;
 ```
 
 #### Return Value

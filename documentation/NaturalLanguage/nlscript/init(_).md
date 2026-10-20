@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a language script with the given string.
 
@@ -26,7 +27,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nlscript/init(rawvalue:).md)
+### Creating custom script tags
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a language script with the given string as its raw value.
 
 

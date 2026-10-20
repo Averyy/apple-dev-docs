@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.AccessPointConnectionEvent
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event that indicates an update to the available shared access points.
 
@@ -25,38 +26,39 @@ Use the sequence number and update counter to track changes and avoid processing
 ## Topics
 
 ### Instance Properties
-- [let accessPointConnections: [WINetworkSharingProvider.AccessPointConnection]](winetworksharingprovider/accesspointconnectionevent/accesspointconnections.md)
+- [let accessPointConnections: [WINetworkSharingProvider.AccessPointConnection]](./accesspointconnectionevent/accesspointconnections.md)
   A list of access points to which the host connects for networks someone authorized to share to the device.
-- [let accessPointConnectionsUpdateCounter: UInt64](winetworksharingprovider/accesspointconnectionevent/accesspointconnectionsupdatecounter.md)
+- [let accessPointConnectionsUpdateCounter: UInt64](./accesspointconnectionevent/accesspointconnectionsupdatecounter.md)
   A counter that increments whenever the access point data changes.
-- [var description: String](winetworksharingprovider/accesspointconnectionevent/description.md)
+- [var description: String](./accesspointconnectionevent/description.md)
   A string description of the event for debugging purposes.
-- [var id: WINetworkSharingProvider.AccessPointConnectionEvent.ID](winetworksharingprovider/accesspointconnectionevent/id-swift.property.md)
+- [var id: WINetworkSharingProvider.AccessPointConnectionEvent.ID](./accesspointconnectionevent/id-swift.property.md)
   A stable identifier that uniquely identifies this event.
-- [let timestamp: Date](winetworksharingprovider/accesspointconnectionevent/timestamp.md)
+- [let timestamp: Date](./accesspointconnectionevent/timestamp.md)
   The date when this event occurred.
 ### Type Aliases
-- [WINetworkSharingProvider.AccessPointConnectionEvent.ID](winetworksharingprovider/accesspointconnectionevent/id-swift.typealias.md)
+- [WINetworkSharingProvider.AccessPointConnectionEvent.ID](./accesspointconnectionevent/id-swift.typealias.md)
   The type of value that uniquely identifies this event.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WINetworkSharingProvider.AccessPointConnection](winetworksharingprovider/accesspointconnection.md)
+### Getting information about access point connections
+- [WINetworkSharingProvider.AccessPointConnection](./accesspointconnection.md)
   A Wi-Fi access point the host is currently connected to, which may be shared with a connected accessory.
 - [func accessPointConnectionEvents(matching: Predicate<WINetworkSharingProvider.AccessPointConnection>?) -> some Sendable & AsyncSequence<WINetworkSharingProvider.AccessPointConnectionEvent, any Error>
-](winetworksharingprovider/accesspointconnectionevents(matching:).md)
+](./accesspointconnectionevents%28matching%29.md)
   Returns an async sequence of access point events containing the currently connected access point(s) and future updates.
 
 

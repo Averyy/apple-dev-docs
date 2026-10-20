@@ -1,7 +1,8 @@
 # targetLanguage
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language that the framework translated the text into.
 
@@ -19,9 +20,10 @@ let targetLanguage: Locale.Language
 
 ## See Also
 
-- [let sourceLanguage: Locale.Language](translationsession/response/sourcelanguage.md)
+### Getting translation details
+- [let sourceLanguage: Locale.Language](./sourcelanguage.md)
   The language that the framework translated the text from.
-- [let clientIdentifier: String?](translationsession/response/clientidentifier.md)
+- [let clientIdentifier: String?](./clientidentifier.md)
   The unique identifier matching the client identifier set in the translation request.
 
 

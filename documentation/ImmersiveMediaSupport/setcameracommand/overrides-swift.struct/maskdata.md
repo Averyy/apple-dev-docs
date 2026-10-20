@@ -1,7 +1,8 @@
 # maskData
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Dynamic mask data to override camera mask
 

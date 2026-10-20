@@ -1,7 +1,8 @@
 # JournalingSuggestionsConfiguration.NotificationSchedule
 
 **Framework**: Journaling Suggestions  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the Journaling Suggestions notifications setting.
 
@@ -16,36 +17,37 @@ enum NotificationSchedule
 
 #### Overview
 
-When [`notificationSchedule`](journalingsuggestionsconfiguration/notificationschedule-swift.property.md) is [`JournalingSuggestionsConfiguration.NotificationSchedule.smart`](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md), the system personalizes the schedule according to the person’s unique routines. The value is [`JournalingSuggestionsConfiguration.NotificationSchedule.custom`](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md) if the person chooses a specific schedule in Settings.
+When [`notificationSchedule`](./notificationschedule-swift.property.md) is [`JournalingSuggestionsConfiguration.NotificationSchedule.smart`](./notificationschedule-swift.enum/smart.md), the system personalizes the schedule according to the person’s unique routines. The value is [`JournalingSuggestionsConfiguration.NotificationSchedule.custom`](./notificationschedule-swift.enum/custom.md) if the person chooses a specific schedule in Settings.
 
-An [`JournalingSuggestionsConfiguration.NotificationSchedule.off`](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md) value can mean:
+An [`JournalingSuggestionsConfiguration.NotificationSchedule.off`](./notificationschedule-swift.enum/off.md) value can mean:
 
 - Journaling Suggestions aren’t enabled in Settings.
 - Your app isn’t a preferred journal app in Settings.
 - Journaling Suggestions are on but notifications are off in Settings.
-- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/bundleresources/information-property-list/jsnotificationurlformat) target property).
+- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](../../BundleResources/information-property-list/jsnotificationurlformat.md) target property).
 
-For more information on notifications, see [`Receiving journaling suggestions system notifications`](receiving-journaling-suggestions-from-system-notifications.md).
+For more information on notifications, see [Receiving journaling suggestions system notifications](../receiving-journaling-suggestions-from-system-notifications.md).
 
 ## Topics
 
 ### Identifying a notification schedule
-- [JournalingSuggestionsConfiguration.NotificationSchedule.smart](journalingsuggestionsconfiguration/notificationschedule-swift.enum/smart.md)
+- [JournalingSuggestionsConfiguration.NotificationSchedule.smart](./notificationschedule-swift.enum/smart.md)
   An option that indicates the system personalizes the notification schedule for the person.
-- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
+- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](./notificationschedule-swift.enum/custom.md)
   An option that indicates the person chooses a specific notification schedule in Settings.
-- [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
+- [JournalingSuggestionsConfiguration.NotificationSchedule.off](./notificationschedule-swift.enum/off.md)
   An option that indicates the app doesn’t receive notifications.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedule?](journalingsuggestionsconfiguration/notificationschedule-swift.property.md)
+### Inspecting the notification schedule
+- [var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedule?](./notificationschedule-swift.property.md)
   The schedule for Journaling Suggestion notifications, as it resides in Settings.
 
 

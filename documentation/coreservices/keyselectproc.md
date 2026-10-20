@@ -1,9 +1,10 @@
 # keySelectProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-You pass this value in the `functionClass` parameter of the [`AEManagerInfo(_:_:)`](1449373-aemanagerinfo.md) function to disable the Object Support Library. Disabling the Object Support Library is not recommended.
+You pass this value in the `functionClass` parameter of the [`AEManagerInfo(_:_:)`](./api-1449373-aemanagerinfo.md) function to disable the Object Support Library. Disabling the Object Support Library is not recommended.
 
 **Availability**:
 - Mac Catalyst 13.0+

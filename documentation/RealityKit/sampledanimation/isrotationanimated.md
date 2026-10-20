@@ -1,7 +1,8 @@
 # isRotationAnimated
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the animation observes rotational changes in the entity’s transform.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the animation observes rotational changes
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,27 +20,30 @@ A Boolean value that indicates whether the animation observes rotational changes
 var isRotationAnimated: Bool { get set }
 ```
 
+Available when `Value` is `JointTransforms`.
+
 #### Discussion
 
 If you set this property to `true`, the animation accommodates rotational differences in the entity’s transform by interpolating to the target rotation across the animation timeline.
 
 ## See Also
 
-- [var name: String](sampledanimation/name.md)
+### Configuring the animation
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](sampledanimation/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the particular property that animates.
-- [var blendLayer: Int32](sampledanimation/blendlayer.md)
+- [var blendLayer: Int32](./blendlayer.md)
   The order in which the framework composites the animation.
-- [var jointNames: [String]](sampledanimation/jointnames.md)
+- [var jointNames: [String]](./jointnames.md)
   The names of the joints to animate.
-- [var isScaleAnimated: Bool](sampledanimation/isscaleanimated.md)
+- [var isScaleAnimated: Bool](./isscaleanimated.md)
   A Boolean value that indicates whether the animation observes changes in the entity’s size.
-- [var isTranslationAnimated: Bool](sampledanimation/istranslationanimated.md)
+- [var isTranslationAnimated: Bool](./istranslationanimated.md)
   A Boolean value that indicates whether the animation observes translational changes in the entity’s transform.
-- [var additive: Bool](sampledanimation/additive.md)
+- [var additive: Bool](./additive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
-- [var tweenMode: TweenMode](sampledanimation/tweenmode.md)
+- [var tweenMode: TweenMode](./tweenmode.md)
   An option that determines how animation frames transition.
 
 

@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name your app displays for the contact.
 
@@ -24,9 +25,10 @@ Use this property to specify the name of a person or business. For example, you 
 
 ## See Also
 
-- [var nameComponents: [PersonNameComponents]](resolvedcontact/namecomponents.md)
+### Specifying the person’s name
+- [var nameComponents: [PersonNameComponents]](./namecomponents.md)
   The contact’s names as a set of structured name components.
-- [var names: [String]](resolvedcontact/names.md)
+- [var names: [String]](./names.md)
   Alternate names you use to refer to the contact.
 
 

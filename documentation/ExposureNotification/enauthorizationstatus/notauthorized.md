@@ -1,14 +1,17 @@
 # ENAuthorizationStatus.notAuthorized
 
 **Framework**: Exposure Notification  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authorization is denied.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ Authorization is denied.
 case notAuthorized
 ```
 
+```c
+ENAuthorizationStatusNotAuthorized
+```
+
 ## See Also
 
-- [ENAuthorizationStatus.authorized](enauthorizationstatus/authorized.md)
+### Authorization States
+- [ENAuthorizationStatus.authorized](./authorized.md)
   Authorization is granted.
-- [ENAuthorizationStatus.restricted](enauthorizationstatus/restricted.md)
+- [ENAuthorizationStatus.restricted](./restricted.md)
   Authorization is restricted.
-- [ENAuthorizationStatus.unknown](enauthorizationstatus/unknown.md)
+- [ENAuthorizationStatus.unknown](./unknown.md)
   Authorization is not determined.
 
 

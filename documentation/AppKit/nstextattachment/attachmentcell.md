@@ -1,7 +1,8 @@
 # attachmentCell
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that draws the icon for the text attachment and handles mouse events.
 
@@ -12,6 +13,10 @@ The object that draws the icon for the text attachment and handles mouse events.
 
 ```swift
 var attachmentCell: (any NSTextAttachmentCellProtocol)? { get set }
+```
+
+```objc
+@property (strong, nullable) id<NSTextAttachmentCell> attachmentCell;
 ```
 
 

@@ -1,7 +1,8 @@
 # IOUSBHostErrorDomain
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for the framework.
 
@@ -13,6 +14,10 @@ The error domain for the framework.
 
 ```swift
 let IOUSBHostErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const IOUSBHostErrorDomain;
 ```
 
 

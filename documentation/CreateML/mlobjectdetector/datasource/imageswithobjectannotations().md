@@ -1,12 +1,15 @@
 # imagesWithObjectAnnotations()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data table where each row represents an image, and its columns are the image file URLs and its annotations.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
+
+> **Deprecated**: Use gatherAnnotatedFileNames()
 
 ## Declaration
 
@@ -16,7 +19,7 @@ func imagesWithObjectAnnotations() throws -> MLDataTable
 
 #### Return Value
 
-An [`MLDataTable`](mldatatable.md) containing the contents of the data source.
+An [`MLDataTable`](../../mldatatable.md) containing the contents of the data source.
 
 
 ---

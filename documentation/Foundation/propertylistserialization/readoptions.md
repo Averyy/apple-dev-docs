@@ -1,9 +1,10 @@
 # PropertyListSerialization.ReadOptions
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The only read options supported are described in [`PropertyListSerialization.MutabilityOptions`](propertylistserialization/mutabilityoptions.md).
+The only read options supported are described in [`PropertyListSerialization.MutabilityOptions`](./mutabilityoptions.md).
 
 **Availability**:
 - iOS 2.0+
@@ -20,11 +21,16 @@ The only read options supported are described in [`PropertyListSerialization.Mut
 typealias ReadOptions = PropertyListSerialization.MutabilityOptions
 ```
 
+```c
+typedef NSPropertyListMutabilityOptions NSPropertyListReadOptions;
+```
+
 ## See Also
 
-- [PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions.md)
+### Constants
+- [PropertyListSerialization.MutabilityOptions](./mutabilityoptions.md)
   These constants specify mutability options in property lists.
-- [PropertyListSerialization.PropertyListFormat](propertylistserialization/propertylistformat.md)
+- [PropertyListSerialization.PropertyListFormat](./propertylistformat.md)
   These constants are used to specify a property list serialization format.
 
 

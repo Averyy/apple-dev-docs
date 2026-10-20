@@ -1,7 +1,8 @@
 # HTMLParagraphElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLParagraphElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [align](htmlparagraphelement/1629314-align.md)
+- [align](./htmlparagraphelement/api-1629314-align.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

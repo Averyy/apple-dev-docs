@@ -1,7 +1,8 @@
 # PageIndexViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An index view style that places a page index view over its content.
 
@@ -21,20 +22,20 @@ struct PageIndexViewStyle
 
 #### Overview
 
-You can also use [`page`](indexviewstyle/page.md) to construct this style.
+You can also use [`page`](./indexviewstyle/page.md) to construct this style.
 
 ## Topics
 
 ### Creating the control group style
-- [init(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode)](pageindexviewstyle/init(backgrounddisplaymode:).md)
+- [init(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode)](./pageindexviewstyle/init%28backgrounddisplaymode%29.md)
   Creates a page index view style.
-- [PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode.md)
+- [PageIndexViewStyle.BackgroundDisplayMode](./pageindexviewstyle/backgrounddisplaymode.md)
   The background style for the page index view.
 
 ## Relationships
 
 ### Conforms To
-- [IndexViewStyle](indexviewstyle.md)
+- [IndexViewStyle](./indexviewstyle.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # EntityGeometricPins.Iterator
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object to iterate over all geometric pins in the collection.
 
@@ -22,13 +23,13 @@ struct Iterator
 ## Topics
 
 ### Type Aliases
-- [EntityGeometricPins.Iterator.Element](entitygeometricpins/iterator/element.md)
+- [EntityGeometricPins.Iterator.Element](./iterator/element.md)
   An individual pin in the collection.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
 
 
 ---

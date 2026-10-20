@@ -7,7 +7,7 @@ An object providing file-access methods.
 
 #### Overview
 
-See [`Files`](files.md) for the methods and properties of this object.
+See [Files](../files.md) for the methods and properties of this object.
 
 
 ---

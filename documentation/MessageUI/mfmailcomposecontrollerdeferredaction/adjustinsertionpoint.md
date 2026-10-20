@@ -1,7 +1,8 @@
 # MFMailComposeControllerDeferredAction.adjustInsertionPoint
 
 **Framework**: Message UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 3.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case adjustInsertionPoint
+```
+
+```c
+MFMailComposeControllerDeferredActionAdjustInsertionPoint
 ```
 
 

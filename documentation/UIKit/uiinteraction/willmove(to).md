@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the interaction that a view will add or remove it from the view’s interactions array.
@@ -19,13 +20,18 @@ Tells the interaction that a view will add or remove it from the view’s intera
 func willMove(to view: UIView?)
 ```
 
+```objc
+- (void) willMoveToView:(UIView *) view;
+```
+
 ## Parameters
 
 - `view`: The view that will contain, and own, the interaction in its interactions array. If the view is `nil`, the interaction’s owner will remove the interaction from its interactions array.
 
 ## See Also
 
-- [func didMove(to: UIView?)](uiinteraction/didmove(to:).md)
+### Tracking the Movements
+- [func didMove(to: UIView?)](./didmove%28to%29.md)
   Tells the interaction that a view added or removed it from the view’s interactions array.
 
 

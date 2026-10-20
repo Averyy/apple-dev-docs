@@ -1,7 +1,8 @@
 # readAttributeSetpointHoldExpiryTimestamp(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSetpointHoldExpiryTimestamp(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSetpointHoldExpiryTimestamp() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSetpointHoldExpiryTimestampWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

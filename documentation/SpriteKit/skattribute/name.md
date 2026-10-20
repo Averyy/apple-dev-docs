@@ -1,7 +1,8 @@
 # name
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s name
 
@@ -20,9 +21,14 @@ The receiver’s name
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var type: SKAttributeType](skattribute/type.md)
+### Instance Properties
+- [var type: SKAttributeType](./type.md)
   The data type of the attribute’s value.
 
 

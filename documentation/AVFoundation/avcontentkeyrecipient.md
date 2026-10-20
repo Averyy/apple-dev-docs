@@ -1,7 +1,8 @@
 # AVContentKeyRecipient
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for requiring decryption keys for media data.
 
@@ -20,27 +21,32 @@ A protocol for requiring decryption keys for media data.
 protocol AVContentKeyRecipient
 ```
 
+```objc
+@protocol AVContentKeyRecipient
+```
+
 ## Topics
 
 ### Verifying decryption key requirements
-- [var mayRequireContentKeysForMediaDataProcessing: Bool](avcontentkeyrecipient/mayrequirecontentkeysformediadataprocessing.md)
+- [var mayRequireContentKeysForMediaDataProcessing: Bool](./avcontentkeyrecipient/mayrequirecontentkeysformediadataprocessing.md)
   A Boolean value that indicates whether the recipient requires decryption keys for media data to enable processing.
-- [func contentKeySession(AVContentKeySession, didProvide: AVContentKey)](avcontentkeyrecipient/contentkeysession(_:didprovide:).md)
+- [func contentKeySession(AVContentKeySession, didProvide: AVContentKey)](./avcontentkeyrecipient/contentkeysession%28_,didprovide%29.md)
   Tells the recipient that a content key is available.
 
 ## Relationships
 
 ### Conforming Types
-- [AVFragmentedAsset](avfragmentedasset.md)
-- [AVURLAsset](avurlasset.md)
+- [AVFragmentedAsset](./avfragmentedasset.md)
+- [AVURLAsset](./avurlasset.md)
 
 ## See Also
 
-- [var contentKeyRecipients: [any AVContentKeyRecipient]](avcontentkeysession/contentkeyrecipients.md)
+### Managing content key recipients
+- [var contentKeyRecipients: [any AVContentKeyRecipient]](./avcontentkeysession/contentkeyrecipients.md)
   An array of content key recipients.
-- [func addContentKeyRecipient(any AVContentKeyRecipient)](avcontentkeysession/addcontentkeyrecipient(_:).md)
+- [func addContentKeyRecipient(any AVContentKeyRecipient)](./avcontentkeysession/addcontentkeyrecipient%28_%29.md)
   Tells the delegate that the specified recipient should have access to the decryption keys loaded with the session.
-- [func removeContentKeyRecipient(any AVContentKeyRecipient)](avcontentkeysession/removecontentkeyrecipient(_:).md)
+- [func removeContentKeyRecipient(any AVContentKeyRecipient)](./avcontentkeysession/removecontentkeyrecipient%28_%29.md)
   Tells the delegate to remove the specified recipient.
 
 

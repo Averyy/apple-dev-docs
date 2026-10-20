@@ -1,7 +1,8 @@
 # Read app store experiment information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information for a specific App Store version experiment.
 
@@ -10,7 +11,7 @@ Get information for a specific App Store version experiment.
 
 ## Mentions
 
-- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
+- [App Store Connect API 2.4 release notes](./app-store-connect-api-2-4-release-notes.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Get information for a specific App Store version experiment.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f574-4669-b1ca-1ba88f786c19
 ```
 
@@ -62,44 +63,70 @@ https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments/1a22d9a7-f57
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List all experiments for an app store version`](./get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md) response.
+
+### Query Parameters
+
 - `fields[appStoreVersionExperimentTreatments]` ([string]): Additional fields to include for each App Store version experiment treatment resource returned by the response.
+
+  **Allowed Values**: `name`, `appIcon`, `appIconName`, `promotedDate`, `appStoreVersionExperiment`, `appStoreVersionExperimentV2`, `appStoreVersionExperimentTreatmentLocalizations`
 - `fields[appStoreVersionExperiments]` ([string]): Additional fields to include for each App Store version experiment resource returned by the response.
+
+  **Allowed Values**: `name`, `platform`, `trafficProportion`, `state`, `reviewRequired`, `startDate`, `endDate`, `app`, `latestControlVersion`, `controlVersions`, `appStoreVersionExperimentTreatments`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `app`, `latestControlVersion`, `controlVersions`, `appStoreVersionExperimentTreatments`
 - `limit[appStoreVersionExperimentTreatments]` (integer): The maximum number of related App Store version experiment treatment resources to return.
+
+  **Maximum**: `50`
 - `limit[controlVersions]` (integer): The maximum number of related control version resources to return.
-- `fields[appStoreVersions]` ([string])
-- `fields[apps]` ([string])
+
+  **Maximum**: `50`
+- `fields[appStoreVersions]` ([string]): **Allowed Values**: `platform`, `versionString`, `appStoreState`, `appVersionState`, `copyright`, `reviewType`, `releaseType`, `earliestReleaseDate`, `usesIdfa`, `downloadable`, `createdDate`, `app`, `appStoreVersionLocalizations`, `build`, `appStoreVersionPhasedRelease`, `gameCenterAppVersion`, `routingAppCoverage`, `appStoreReviewDetail`, `appStoreVersionSubmission`, `appClipDefaultExperience`, `appStoreVersionExperiments`, `appStoreVersionExperimentsV2`, `customerReviews`, `alternativeDistributionPackage`
+- `fields[apps]` ([string]): **Allowed Values**: `accessibilityUrl`, `name`, `bundleId`, `sku`, `primaryLocale`, `isOrEverWasMadeForKids`, `subscriptionStatusUrl`, `subscriptionStatusUrlVersion`, `subscriptionStatusUrlForSandbox`, `subscriptionStatusUrlVersionForSandbox`, `contentRightsDeclaration`, `streamlinedPurchasingEnabled`, `accessibilityDeclarations`, `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaTesters`, `betaGroups`, `appStoreVersions`, `appTags`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `appPricePoints`, `endUserLicenseAgreement`, `appPriceSchedule`, `appAvailabilityV2`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `performanceOverviews`, `perfPowerMetrics`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `customerReviews`, `customerReviewSummarizations`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `alternativeDistributionKey`, `analyticsReportRequests`, `marketplaceSearchDetail`, `buildUploads`, `backgroundAssets`, `assetLibrary`, `betaFeedbackScreenshotSubmissions`, `betaFeedbackCrashSubmissions`, `searchKeywords`, `webhooks`, `androidToIosAppMappingDetails`
+
+## Responses
+
+- `200` OK (`AppStoreVersionExperimentV2Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all experiments for an app store version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
+### Managing App Store version experiments
+- [List all experiments for an app store version v1](./get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
-- [List all experiments ids for an app store version v1](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
+- [List all experiments ids for an app store version v1](./get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
   Get a list of all experiments IDs for an App Store version of an app across all platforms.
-- [List all experiments for an app store version](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
+- [List all experiments for an app store version](./get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
-- [List all experiment ids for an app store version](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
+- [List all experiment ids for an app store version](./get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
   Get a list of all experiments IDs for an App Store version across all platforms.
-- [List all treatments for an app store experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
+- [List all treatments for an app store experiment](./get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
   Get a list of all treatments for a specific App Store version experiment.
-- [List treatment IDs for an app store version experiment](get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
+- [List treatment IDs for an app store version experiment](./get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
   Get a list of experiment treatment IDs for a specific App Store version experiment.
-- [Create an app store experiment](post-v2-appstoreversionexperiments.md)
+- [Create an app store experiment](./post-v2-appstoreversionexperiments.md)
   Add a new experiment to an App Store version.
-- [Modify an app store experiment](patch-v2-appstoreversionexperiments-_id_.md)
+- [Modify an app store experiment](./patch-v2-appstoreversionexperiments-_id_.md)
   Update the name, the started state, and the proportion of traffic to send to an App Store experiment.
-- [Delete an app store experiment](delete-v2-appstoreversionexperiments-_id_.md)
+- [Delete an app store experiment](./delete-v2-appstoreversionexperiments-_id_.md)
   Delete a specific App Store version experiment before it starts.
-- [Read app store experiment information v1](get-v1-appstoreversionexperiments-_id_.md)
+- [Read app store experiment information v1](./get-v1-appstoreversionexperiments-_id_.md)
   Get information for a specific App Store version experiment.
-- [List all treatments for an app store experiment v1](get-v1-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
+- [List all treatments for an app store experiment v1](./get-v1-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
   Get a list of all treatments for a specific App Store version experiment.
-- [List treatment IDs for an App Store version experiment](get-v1-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
-- [Modify an app store experiment v1](patch-v1-appstoreversionexperiments-_id_.md)
+- [List treatment IDs for an App Store version experiment](./get-v1-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
+- [Modify an app store experiment v1](./patch-v1-appstoreversionexperiments-_id_.md)
   Update the name, the started state, and the proportion of traffic to send to an App Store experiment.
-- [Create an app store experiment v1](post-v1-appstoreversionexperiments.md)
+- [Create an app store experiment v1](./post-v1-appstoreversionexperiments.md)
   Add a new experiment to an App Store version.
-- [Delete an app store version experiment v1](delete-v1-appstoreversionexperiments-_id_.md)
+- [Delete an app store version experiment v1](./delete-v1-appstoreversionexperiments-_id_.md)
   Delete a specific App Store version experiment before it starts.
 
 

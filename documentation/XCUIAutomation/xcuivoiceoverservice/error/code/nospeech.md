@@ -1,24 +1,29 @@
 # XCUIVoiceOverService.Error.Code.noSpeech
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 VoiceOver did not produce any speech within the timeout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 case noSpeech
+```
+
+```c
+XCUIVoiceOverServiceErrorNoSpeech
 ```
 
 

@@ -1,7 +1,8 @@
 # MEByteSource
 
 **Framework**: MediaExtension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides read access to the data in a media asset file.
 
@@ -14,42 +15,46 @@ Provides read access to the data in a media asset file.
 class MEByteSource
 ```
 
+```objc
+@interface MEByteSource : NSObject
+```
+
 #### Overview
 
-Media Toolbox passes an `MEByteSource` instance for the media asset’s primary file when it initializes an [`MEFormatReader`](meformatreader.md) object. The format reader may call [`byteSourceForRelatedFileName(_:)`](mebytesource/bytesourceforrelatedfilename(_:).md) to request additional byte sources for related files in the same directory as the primary file.
+Media Toolbox passes an `MEByteSource` instance for the media asset’s primary file when it initializes an [`MEFormatReader`](./meformatreader.md) object. The format reader may call [`byteSourceForRelatedFileName(_:)`](./mebytesource/bytesourceforrelatedfilename%28_%29.md) to request additional byte sources for related files in the same directory as the primary file.
 
 ## Topics
 
 ### Inspecting a byte source
-- [var fileName: String](mebytesource/filename.md)
+- [var fileName: String](./mebytesource/filename.md)
   The name of the file for the byte source.
-- [var fileLength: Int64](mebytesource/filelength.md)
+- [var fileLength: Int64](./mebytesource/filelength.md)
   The length of the byte source file.
-- [var contentType: UTType?](mebytesource/contenttype.md)
+- [var contentType: UTType?](./mebytesource/contenttype.md)
   The format of the byte source file.
-- [var relatedFileNamesInSameDirectory: [String]](mebytesource/relatedfilenamesinsamedirectory.md)
+- [var relatedFileNamesInSameDirectory: [String]](./mebytesource/relatedfilenamesinsamedirectory.md)
   An array of related file names in the parent directory of the byte source file.
 ### Performing operations on a byte source
-- [func availableLength(at: Int64) -> Int64](mebytesource/availablelength(at:).md)
+- [func availableLength(at: Int64) -> Int64](./mebytesource/availablelength%28at%29.md)
   Gets the number of available bytes from the offset within the byte source.
-- [func byteSourceForRelatedFileName(String) throws -> MEByteSource](mebytesource/bytesourceforrelatedfilename(_:).md)
+- [func byteSourceForRelatedFileName(String) throws -> MEByteSource](./mebytesource/bytesourceforrelatedfilename%28_%29.md)
   Creates a new byte source for a related file.
-- [func read(length: Int, from: Int64, completionHandler: (Data?, (any Error)?) -> Void)](mebytesource/read(length:from:completionhandler:).md)
+- [func read(length: Int, from: Int64, completionHandler: (Data?, (any Error)?) -> Void)](./mebytesource/read%28length,from,completionhandler%29.md)
   Reads bytes from a byte source into a data object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # reinterpret_pointer_cast
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T_, typename U, typename Policy> bounded_ptr<T_, Policy> reinterpret_pointer_cast(const bounded_ptr<U, Policy> & ) noexcept;
 ```
 

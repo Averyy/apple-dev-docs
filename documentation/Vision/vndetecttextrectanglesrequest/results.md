@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the request to detect text rectangles.
 
@@ -17,6 +18,10 @@ The results of the request to detect text rectangles.
 
 ```swift
 var results: [VNTextObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNTextObservation *> * results;
 ```
 
 

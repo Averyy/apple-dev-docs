@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an option object from data in an unarchiver.
 
@@ -14,13 +15,18 @@ Creates an option object from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init()](nsuserinterfacecompressionoptions/init.md)
+### Creating a compression option
+- [init()](./init%28%29.md)
   Creates an option object containing no options.
-- [init(options: Set<NSUserInterfaceCompressionOptions>)](nsuserinterfacecompressionoptions/init(options:).md)
+- [init(options: Set<NSUserInterfaceCompressionOptions>)](./init%28options%29.md)
   Creates an option object that represents the union of the supplied options.
-- [init(identifier: String)](nsuserinterfacecompressionoptions/init(identifier:).md)
+- [init(identifier: String)](./init%28identifier%29.md)
   Creates an option object with the given identifier string.
 
 

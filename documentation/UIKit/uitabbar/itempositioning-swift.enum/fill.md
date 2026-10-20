@@ -1,7 +1,8 @@
 # UITabBar.ItemPositioning.fill
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Distribute items across the entire width of the tab bar.
 
@@ -9,7 +10,7 @@ Distribute items across the entire width of the tab bar.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Distribute items across the entire width of the tab bar.
 case fill
 ```
 
+```c
+UITabBarItemPositioningFill
+```
+
 #### Discussion
 
-When the [`UITabBar.ItemPositioning.automatic`](uitabbar/itempositioning-swift.enum/automatic.md) option is selected, the tab bar uses this behavior in horizontally compact environments.
+When the [`UITabBar.ItemPositioning.automatic`](./automatic.md) option is selected, the tab bar uses this behavior in horizontally compact environments.
 
 ## See Also
 
-- [UITabBar.ItemPositioning.automatic](uitabbar/itempositioning-swift.enum/automatic.md)
+### Constants
+- [UITabBar.ItemPositioning.automatic](./automatic.md)
   Specifies automatic tab bar item positioning according to the user interface idiom, as follows:
-- [UITabBar.ItemPositioning.centered](uitabbar/itempositioning-swift.enum/centered.md)
+- [UITabBar.ItemPositioning.centered](./centered.md)
   Center items in the available space.
 
 

@@ -1,7 +1,8 @@
 # isKeyExcluded(fromWebScript:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns whether a key should be hidden from the scripting environment.
 
@@ -14,13 +15,17 @@ Returns whether a key should be hidden from the scripting environment.
 class func isKeyExcluded(fromWebScript name: UnsafePointer<CChar>!) -> Bool
 ```
 
+```objc
++ (BOOL) isKeyExcludedFromWebScript:(const char *) name;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the attribute specified by `name` should be hidden from the scripting environment; otherwise, [`NO`](no.md).
+[`YES`](../yes.md) if the attribute specified by `name` should be hidden from the scripting environment; otherwise, [`NO`](../no.md).
 
 #### Discussion
 
-The default value is [`YES`](yes.md).
+The default value is [`YES`](../yes.md).
 
 ## Parameters
 
@@ -28,11 +33,12 @@ The default value is [`YES`](yes.md).
 
 ## See Also
 
-- [class func webScriptName(forKey: UnsafePointer<CChar>!) -> String!](nsobject-swift.class/webscriptname(forkey:).md)
+### Getting attributes
+- [class func webScriptName(forKey: UnsafePointer<CChar>!) -> String!](./webscriptname%28forkey%29.md)
   Returns the scripting environment name for an attribute specified by a key.
-- [class func webScriptName(for: Selector!) -> String!](nsobject-swift.class/webscriptname(for:).md)
+- [class func webScriptName(for: Selector!) -> String!](./webscriptname%28for%29.md)
   Returns the scripting environment name for a selector.
-- [class func isSelectorExcluded(fromWebScript: Selector!) -> Bool](nsobject-swift.class/isselectorexcluded(fromwebscript:).md)
+- [class func isSelectorExcluded(fromWebScript: Selector!) -> Bool](./isselectorexcluded%28fromwebscript%29.md)
   Returns whether a selector should be hidden from the scripting environment.
 
 

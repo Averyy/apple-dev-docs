@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The horizontal offset, in pixels, of the region within the color texture to use as input.
@@ -17,6 +18,10 @@ The horizontal offset, in pixels, of the region within the color texture to use 
 
 ```swift
 var colorContentOffsetX: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger colorContentOffsetX;
 ```
 
 

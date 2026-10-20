@@ -1,7 +1,8 @@
 # init(sourceMatrix:destinationMatrix:offsets:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(sourceMatrix: MPSMatrix, destinationMatrix: MPSMatrix, offsets: MPSMatrixCopyOffsets)
+```
+
+```objc
++ (instancetype) descriptorWithSourceMatrix:(MPSMatrix *) sourceMatrix destinationMatrix:(MPSMatrix *) destinationMatrix offsets:(MPSMatrixCopyOffsets) offsets;
 ```
 
 

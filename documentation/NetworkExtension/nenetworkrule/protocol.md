@@ -1,7 +1,8 @@
 # NENetworkRule.Protocol
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type to represent network protocols used by routing rules.
 
@@ -14,43 +15,48 @@ A type to represent network protocols used by routing rules.
 enum `Protocol`
 ```
 
+```c
+enum NENetworkRuleProtocol : NSInteger;
+```
+
 ## Topics
 
 ### Protocols
-- [NENetworkRule.Protocol.TCP](nenetworkrule/protocol/tcp.md)
+- [NENetworkRule.Protocol.TCP](./protocol/tcp.md)
   A rule protocol to match TCP traffic.
-- [NENetworkRule.Protocol.UDP](nenetworkrule/protocol/udp.md)
+- [NENetworkRule.Protocol.UDP](./protocol/udp.md)
   A rule protocol to match UDP traffic.
-- [NENetworkRule.Protocol.any](nenetworkrule/protocol/any.md)
+- [NENetworkRule.Protocol.any](./protocol/any.md)
   A rule protocol to match TCP and UDP traffic.
 ### Initializers
-- [init?(rawValue: Int)](nenetworkrule/protocol/init(rawvalue:).md)
+- [init?(rawValue: Int)](./protocol/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var matchRemoteEndpoint: NWHostEndpoint?](nenetworkrule/matchremoteendpoint.md)
+### Matching network traffic characteristics
+- [var matchRemoteEndpoint: NWHostEndpoint?](./matchremoteendpoint.md)
   The remote endpoint that the rule matches.
-- [var matchRemotePrefix: Int](nenetworkrule/matchremoteprefix.md)
+- [var matchRemotePrefix: Int](./matchremoteprefix.md)
   A number that specifies the remote sub-network that the rule matches.
-- [var matchLocalNetwork: NWHostEndpoint?](nenetworkrule/matchlocalnetwork.md)
+- [var matchLocalNetwork: NWHostEndpoint?](./matchlocalnetwork.md)
   The local network that the rule matches.
-- [var matchLocalPrefix: Int](nenetworkrule/matchlocalprefix.md)
+- [var matchLocalPrefix: Int](./matchlocalprefix.md)
   A number that specifies the local sub-network that the rule matches.
-- [var matchProtocol: NENetworkRule.Protocol](nenetworkrule/matchprotocol.md)
+- [var matchProtocol: NENetworkRule.Protocol](./matchprotocol.md)
   The protocol that the rule matches.
-- [var matchDirection: NETrafficDirection](nenetworkrule/matchdirection.md)
+- [var matchDirection: NETrafficDirection](./matchdirection.md)
   The direction of network traffic that the rule matches.
-- [enum NETrafficDirection](netrafficdirection.md)
+- [enum NETrafficDirection](../netrafficdirection.md)
   A type to represent the direction of network traffic.
 
 

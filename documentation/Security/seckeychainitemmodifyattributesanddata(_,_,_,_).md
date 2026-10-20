@@ -1,12 +1,15 @@
 # SecKeychainItemModifyAttributesAndData(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Updates an existing keychain item after changing its attributes or data.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,19 +17,23 @@ Updates an existing keychain item after changing its attributes or data.
 func SecKeychainItemModifyAttributesAndData(_ itemRef: SecKeychainItem, _ attrList: UnsafePointer<SecKeychainAttributeList>?, _ length: UInt32, _ data: UnsafeRawPointer?) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainItemModifyAttributesAndData(SecKeychainItemRef itemRef, const SecKeychainAttributeList *attrList, UInt32 length, const void *data);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
 The keychain item is written to the keychain’s permanent data store. If the keychain item has not previously been added to a keychain, a call to this function does nothing and returns `noErr`.
 
-> **Note**:  For new development, where possible, you should generally use [`SecItemUpdate(_:_:)`](secitemupdate(_:_:).md) to obtain attributes of keychain items instead, because that function is based on Core Foundation types.
+> **Note**:  For new development, where possible, you should generally use [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md) to obtain attributes of keychain items instead, because that function is based on Core Foundation types.
 
 Note that when you use this function to modify a keychain item, Keychain Services updates the modification date of the item. Therefore, you cannot use this function to modify the modification date, as the value you specify will be overwritten with the current time. If you want to change the modification date to something other than the current time, use a CSSM function to do so.
 
-You should pair the [`SecKeychainItemCopyAttributesAndData(_:_:_:_:_:_:)`](seckeychainitemcopyattributesanddata(_:_:_:_:_:_:).md) function with the `SecKeychainItemModifyAttributesAndData` function, as these functions handle more attributes than are support by the old Keychain Manager and passing them into older calls yields an invalid attribute error. Use the functions [`SecKeychainItemModifyContent(_:_:_:_:)`](seckeychainitemmodifycontent(_:_:_:_:).md) and [`SecKeychainItemCopyContent(_:_:_:_:_:)`](seckeychainitemcopycontent(_:_:_:_:_:).md) when dealing with older Keychain Manager functions.
+You should pair the [`SecKeychainItemCopyAttributesAndData(_:_:_:_:_:_:)`](./seckeychainitemcopyattributesanddata%28_,_,_,_,_,_%29.md) function with the `SecKeychainItemModifyAttributesAndData` function, as these functions handle more attributes than are support by the old Keychain Manager and passing them into older calls yields an invalid attribute error. Use the functions [`SecKeychainItemModifyContent(_:_:_:_:)`](./seckeychainitemmodifycontent%28_,_,_,_%29.md) and [`SecKeychainItemCopyContent(_:_:_:_:_:)`](./seckeychainitemcopycontent%28_,_,_,_,_%29.md) when dealing with older Keychain Manager functions.
 
 ## Parameters
 

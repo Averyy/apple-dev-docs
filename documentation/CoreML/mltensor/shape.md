@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the tensor.
 
@@ -26,13 +27,14 @@ For example, 2 x 3 matrix may be represented as a tensor with the shape of `[2, 
 
 ## See Also
 
-- [var isScalar: Bool](mltensor/isscalar.md)
+### Accessing tensor properties
+- [var isScalar: Bool](./isscalar.md)
   A Boolean value indicating whether the tensor is a scalar (when the `rank` is equal to `0`) or not.
-- [var rank: Int](mltensor/rank.md)
+- [var rank: Int](./rank.md)
   The number of dimensions of the tensor.
-- [var scalarCount: Int](mltensor/scalarcount.md)
+- [var scalarCount: Int](./scalarcount.md)
   The number of scalar elements in the tensor.
-- [var scalarType: any MLTensorScalar.Type](mltensor/scalartype.md)
+- [var scalarType: any MLTensorScalar.Type](./scalartype.md)
   The type of scalars in the tensor.
 
 

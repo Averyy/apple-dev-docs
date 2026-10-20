@@ -1,7 +1,8 @@
 # Build.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Builds resource.
 
@@ -10,18 +11,18 @@ Attributes that describe a Builds resource.
 
 ## Declaration
 
-```swift
+```
 object Build.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [App Store Connect API 4.1 release notes](../app-store-connect-api-4-1-release-notes.md)
 
 ## Topics
 
 ### Types
-- [type BuildAudienceType](buildaudiencetype.md)
+- [type BuildAudienceType](../buildaudiencetype.md)
   A string that represents the App Store Connect audience for a build.
 
 ## Properties
@@ -30,6 +31,8 @@ object Build.Attributes
 - `iconAssetToken` (ImageAsset): The icon of the uploaded build.
 - `minOsVersion` (string): The minimum operating system version needed to test a build.
 - `processingState` (string): The processing state of the build indicating that it is not yet available for testing.
+
+  **Allowed Values**: `PROCESSING`, `FAILED`, `INVALID`, `VALID`
 - `version` (string): The version number of the uploaded build.
 - `usesNonExemptEncryption` (boolean): A Boolean value that indicates whether the build uses non-exempt encryption.
 - `uploadedDate` (date-time): The date and time the build was uploaded to App Store Connect.
@@ -41,9 +44,11 @@ object Build.Attributes
 
 ## See Also
 
-- [Builds](builds.md)
+### Related Documentation
+- [Builds](../builds.md)
   Manage builds for testers and submit builds for review.
-- [object Build.Relationships](build/relationships-data.dictionary.md)
+### Attributes and Relationships
+- [object Build.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

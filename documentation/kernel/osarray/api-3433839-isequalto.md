@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares the array with an OSObject
 
@@ -11,11 +12,11 @@ Compares the array with an OSObject
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject);
 ```
 
-#### Return_value
+#### Return Value
 
 true iff the object is of class OSArray and isEqualTo(const OSArray * anArray) returns true.
 
@@ -29,7 +30,8 @@ If the object is of class OSArray, the result of isEqualTo(const OSArray * anArr
 
 ## See Also
 
-- [- isEqualTo](osarray/3180817-isequalto.md)
+### Comparing Arrays
+- [- isEqualTo](./api-3180817-isequalto.md)
   Compares all members of two arrays with isEqualTo().
 
 

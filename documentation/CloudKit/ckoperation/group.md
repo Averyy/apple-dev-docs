@@ -1,7 +1,8 @@
 # group
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operation’s group.
 
@@ -20,13 +21,18 @@ The operation’s group.
 var group: CKOperationGroup? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CKOperationGroup * group;
+```
+
 ## See Also
 
-- [var configuration: CKOperation.Configuration!](ckoperation/configuration-swift.property.md)
+### Managing the Operation’s Configuration
+- [var configuration: CKOperation.Configuration!](./configuration-swift.property.md)
   The operation’s configuration.
-- [CKOperation.Configuration](ckoperation/configuration-swift.class.md)
+- [CKOperation.Configuration](./configuration-swift.class.md)
   An object that describes how a CloudKit operation behaves.
-- [var longLivedOperationWasPersistedBlock: (() -> Void)?](ckoperation/longlivedoperationwaspersistedblock.md)
+- [var longLivedOperationWasPersistedBlock: (() -> Void)?](./longlivedoperationwaspersistedblock.md)
   The closure to execute when the server begins to store callbacks for the long-lived operation.
 
 

@@ -1,7 +1,8 @@
 # imageFromTexture(atLevel:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func imageFromTexture(atLevel level: Int) -> Unmanaged<CGImage>?
+```
+
+```objc
+- (CGImageRef) imageFromTextureAtLevel:(NSUInteger) level;
 ```
 
 

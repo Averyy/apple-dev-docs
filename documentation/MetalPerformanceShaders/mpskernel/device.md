@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device on which the kernel will be used.
 
@@ -19,13 +20,18 @@ The device on which the kernel will be used.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nonnull) id<MTLDevice> device;
+```
+
 ## See Also
 
-- [var options: MPSKernelOptions](mpskernel/options.md)
+### Properties
+- [var options: MPSKernelOptions](./options.md)
   The set of options used to run the kernel.
-- [struct MPSKernelOptions](mpskerneloptions.md)
+- [struct MPSKernelOptions](../mpskerneloptions.md)
   The options used when creating a kernel.
-- [var label: String?](mpskernel/label.md)
+- [var label: String?](./label.md)
   The string that identifies the kernel.
 
 

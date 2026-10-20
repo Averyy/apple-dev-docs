@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the base writing direction for a position in the text going in a certain direction.
@@ -19,13 +20,17 @@ Returns the base writing direction for a position in the text going in a certain
 func baseWritingDirection(for position: UITextPosition, in direction: UITextStorageDirection) -> NSWritingDirection
 ```
 
+```objc
+- (NSWritingDirection) baseWritingDirectionForPosition:(UITextPosition *) position inDirection:(UITextStorageDirection) direction;
+```
+
 #### Return Value
 
 A constant that represents a writing direction (for example, left-to-right or right-to-left).
 
 #### Discussion
 
-The base writing direction is set previously when the text input system sends a [`setBaseWritingDirection(_:for:)`](uitextinput/setbasewritingdirection(_:for:).md) message to the conforming document object.
+The base writing direction is set previously when the text input system sends a [`setBaseWritingDirection(_:for:)`](./setbasewritingdirection%28_,for%29.md) message to the conforming document object.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ The base writing direction is set previously when the text input system sends a 
 
 ## See Also
 
-- [func position(within: UITextRange, farthestIn: UITextLayoutDirection) -> UITextPosition?](uitextinput/position(within:farthestin:).md)
+### Determining layout and writing direction
+- [func position(within: UITextRange, farthestIn: UITextLayoutDirection) -> UITextPosition?](./position%28within,farthestin%29.md)
   Returns the text position that is at the farthest extent in a specified layout direction within a range of text.
-- [func characterRange(byExtending: UITextPosition, in: UITextLayoutDirection) -> UITextRange?](uitextinput/characterrange(byextending:in:).md)
+- [func characterRange(byExtending: UITextPosition, in: UITextLayoutDirection) -> UITextRange?](./characterrange%28byextending,in%29.md)
   Returns a text range from a specified text position to its farthest extent in a certain direction of layout.
-- [func setBaseWritingDirection(NSWritingDirection, for: UITextRange)](uitextinput/setbasewritingdirection(_:for:).md)
+- [func setBaseWritingDirection(NSWritingDirection, for: UITextRange)](./setbasewritingdirection%28_,for%29.md)
   Sets the base writing direction for a specified range of text in a document.
-- [typealias UITextWritingDirection](uitextwritingdirection.md)
+- [typealias UITextWritingDirection](../uitextwritingdirection.md)
   The writing direction of the text for the language.
 
 

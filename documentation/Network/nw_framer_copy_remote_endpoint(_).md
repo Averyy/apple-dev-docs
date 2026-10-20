@@ -1,7 +1,8 @@
 # nw_framer_copy_remote_endpoint(_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Accesses the remote endpoint of the connection in which your protocol is running.
 
@@ -20,11 +21,16 @@ Accesses the remote endpoint of the connection in which your protocol is running
 func nw_framer_copy_remote_endpoint(_ framer: nw_framer_t) -> nw_endpoint_t
 ```
 
+```c
+nw_endpoint_tnw_framer_copy_remote_endpoint(nw_framer_t framer);
+```
+
 ## See Also
 
-- [func nw_framer_copy_local_endpoint(nw_framer_t) -> nw_endpoint_t](nw_framer_copy_local_endpoint(_:).md)
+### Inspecting Instance Properties
+- [func nw_framer_copy_local_endpoint(nw_framer_t) -> nw_endpoint_t](./nw_framer_copy_local_endpoint%28_%29.md)
   Accesses the local endpoint of the connection in which your protocol is running.
-- [func nw_framer_copy_parameters(nw_framer_t) -> nw_parameters_t](nw_framer_copy_parameters(_:).md)
+- [func nw_framer_copy_parameters(nw_framer_t) -> nw_parameters_t](./nw_framer_copy_parameters%28_%29.md)
   Accesses the parameters of the connection in which your protocol is running.
 
 

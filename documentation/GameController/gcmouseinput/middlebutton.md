@@ -1,7 +1,8 @@
 # middleButton
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional middle button on the mouse.
 
@@ -19,17 +20,22 @@ The optional middle button on the mouse.
 var middleButton: GCControllerButtonInput? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) GCControllerButtonInput * middleButton;
+```
+
 #### Discussion
 
 If the mouse doesn’t have a middle button, this property is `nil`.
 
 ## See Also
 
-- [var leftButton: GCControllerButtonInput](gcmouseinput/leftbutton.md)
+### Accessing Buttons
+- [var leftButton: GCControllerButtonInput](./leftbutton.md)
   The left button on the mouse.
-- [var rightButton: GCControllerButtonInput?](gcmouseinput/rightbutton.md)
+- [var rightButton: GCControllerButtonInput?](./rightbutton.md)
   The optional right button on the mouse.
-- [var auxiliaryButtons: [GCControllerButtonInput]?](gcmouseinput/auxiliarybuttons.md)
+- [var auxiliaryButtons: [GCControllerButtonInput]?](./auxiliarybuttons.md)
   The optional additional buttons on the mouse.
 
 

@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: TVMLKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an instance of a new document view controller event based on a string value.
 
 **Availability**:
-- tvOS 13.0+
+- tvOS 13.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -16,7 +19,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](tvdocumentviewcontroller/event/init(_:).md)
+### Initializers for Document View Controller Events
+- [init(String)](./init%28_%29.md)
   Create a new document view controller event based on a string value.
 
 

@@ -1,7 +1,8 @@
 # expectedPhotoCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of photo capture results in the capture request.
 
@@ -18,20 +19,25 @@ The number of photo capture results in the capture request.
 var expectedPhotoCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger expectedPhotoCount;
+```
+
 ## Mentions
 
-- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
-- [Tracking photo capture progress](tracking-photo-capture-progress.md)
+- [Capturing a bracketed photo sequence](../capturing-a-bracketed-photo-sequence.md)
+- [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
 #### Discussion
 
-When you request a photo capture, the photo output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method many times based on the settings you choose. For example, if you request a bracket of three exposures with image delivery in both JPEG and RAW formats, the expected photo count is `6`.
+When you request a photo capture, the photo output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method many times based on the settings you choose. For example, if you request a bracket of three exposures with image delivery in both JPEG and RAW formats, the expected photo count is `6`.
 
-The [`photoCount`](avcapturephoto/photocount.md) property of each [`AVCapturePhoto`](avcapturephoto.md) object delivered to your delegate indicates where that capture result relates to this sequence. When your delegate receives a photo whose [`photoCount`](avcapturephoto/photocount.md) value matches the [`expectedPhotoCount`](avcaptureresolvedphotosettings/expectedphotocount.md), you know you’ve received the last one for the given capture request.
+The [`photoCount`](../avcapturephoto/photocount.md) property of each [`AVCapturePhoto`](../avcapturephoto.md) object delivered to your delegate indicates where that capture result relates to this sequence. When your delegate receives a photo whose [`photoCount`](../avcapturephoto/photocount.md) value matches the [`expectedPhotoCount`](./expectedphotocount.md), you know you’ve received the last one for the given capture request.
 
 ## See Also
 
-- [var uniqueID: Int64](avcaptureresolvedphotosettings/uniqueid.md)
+### Resolving photo capture requests
+- [var uniqueID: Int64](./uniqueid.md)
   The unique identifier for the photo capture this settings object corresponds to.
 
 

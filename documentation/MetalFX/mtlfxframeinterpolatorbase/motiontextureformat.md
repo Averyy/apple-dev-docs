@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the input motion texture for this frame interpolator.
@@ -17,6 +18,10 @@ The pixel format of the input motion texture for this frame interpolator.
 
 ```swift
 var motionTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat motionTextureFormat;
 ```
 
 

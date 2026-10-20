@@ -1,7 +1,8 @@
 # service
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service that contains this characteristic.
 
@@ -17,6 +18,10 @@ The service that contains this characteristic.
 
 ```swift
 weak var service: HMService? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) HMService * service;
 ```
 
 

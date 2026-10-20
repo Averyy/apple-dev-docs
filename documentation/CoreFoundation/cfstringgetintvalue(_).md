@@ -1,23 +1,28 @@
 # CFStringGetIntValue(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the integer value represented by a string.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFStringGetIntValue(_ str: CFString!) -> Int32
+```
+
+```c
+extern SInt32 CFStringGetIntValue(CFStringRef str);
 ```
 
 #### Return Value
@@ -40,7 +45,8 @@ The variable `val` in this example would contain the value `-123` after the func
 
 ## See Also
 
-- [func CFStringGetDoubleValue(CFString!) -> Double](cfstringgetdoublevalue(_:).md)
+### Getting Numeric Values
+- [func CFStringGetDoubleValue(CFString!) -> Double](./cfstringgetdoublevalue%28_%29.md)
   Returns the primary `double` value represented by a string.
 
 

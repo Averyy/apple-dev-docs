@@ -1,7 +1,8 @@
 # onLaunch
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A callback function that is automatically called when the app has been launched.
 
@@ -10,7 +11,7 @@ A callback function that is automatically called when the app has been launched.
 
 ## Declaration
 
-```swift
+```
 attribute function onLaunch;
 ```
 
@@ -21,17 +22,18 @@ Use the `onLaunch` attribute to start any required actions (for example, loading
 - `launchContext`—Determines how the app is launched. Set to `background` to launch the app in the background.
 - `location`—Contains the boot TVMLKit JS URL location.
 - `reloadData`—The object passed in to `App.reload()` when the app is relaunched.
-- User defined keys—Any custom keys that were passed to [`launchOptions`](https://developer.apple.com/documentation/tvmlkit/tvapplicationcontrollercontext/launchoptions).
+- User defined keys—Any custom keys that were passed to [`launchOptions`](../../TVMLKit/tvapplicationcontrollercontext/launchoptions.md).
 
 ## See Also
 
-- [onError](app/1627353-onerror.md)
+### Responding to App Life Cycle Events
+- [onError](./api-1627353-onerror.md)
   A callback function that is automatically called when an error is sent from the Apple TV.
-- [onExit](app/1627419-onexit.md)
+- [onExit](./api-1627419-onexit.md)
   A callback function that is automatically called when the app has been exited.
-- [onResume](app/1627415-onresume.md)
+- [onResume](./api-1627415-onresume.md)
   A callback function that is automatically called when the app moves to the foreground.
-- [onSuspend](app/1627431-onsuspend.md)
+- [onSuspend](./api-1627431-onsuspend.md)
   A callback function that is automatically called when the app is sent to the background.
 
 

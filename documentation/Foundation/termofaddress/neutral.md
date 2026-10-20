@@ -1,7 +1,8 @@
 # neutral
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The term of address for representing gender-neutral pronouns and grammatical gender.
 
@@ -22,9 +23,10 @@ static let neutral: TermOfAddress
 
 ## See Also
 
-- [static let feminine: TermOfAddress](termofaddress/feminine.md)
+### Using predefined terms of address
+- [static let feminine: TermOfAddress](./feminine.md)
   The term of address for representing feminine pronouns and grammatical gender.
-- [static let masculine: TermOfAddress](termofaddress/masculine.md)
+- [static let masculine: TermOfAddress](./masculine.md)
   The term of address for representing masculine pronouns and grammatical gender.
 
 

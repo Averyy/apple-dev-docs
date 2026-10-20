@@ -1,14 +1,15 @@
 # attribute_set_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct attribute_set {
     ...
 } attribute_set_t;
@@ -17,11 +18,11 @@ typedef struct attribute_set {
 ## Topics
 
 ### Instance Properties
-- [commonattr](attribute_set_t/1555287-commonattr.md)
-- [dirattr](attribute_set_t/1555217-dirattr.md)
-- [fileattr](attribute_set_t/1555277-fileattr.md)
-- [forkattr](attribute_set_t/1555173-forkattr.md)
-- [volattr](attribute_set_t/1555291-volattr.md)
+- [commonattr](./attribute_set_t/api-1555287-commonattr.md)
+- [dirattr](./attribute_set_t/api-1555217-dirattr.md)
+- [fileattr](./attribute_set_t/api-1555277-fileattr.md)
+- [forkattr](./attribute_set_t/api-1555173-forkattr.md)
+- [volattr](./attribute_set_t/api-1555291-volattr.md)
 
 
 ---

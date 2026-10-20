@@ -1,15 +1,20 @@
 # lmp_handle
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var lmp_handle: BluetoothLMPHandle
+```
+
+```c
+BluetoothLMPHandle lmp_handle;
 ```
 
 

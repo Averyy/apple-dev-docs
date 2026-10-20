@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether external sync devices are supported by this device.
 
@@ -18,13 +19,18 @@ Whether external sync devices are supported by this device.
 class var isSupported: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isSupported) BOOL supported;
+```
+
 #### Discussion
 
 A value of `true` indicates that external sync devices are supported while `false` indicates they are not.
 
 ## See Also
 
-- [class var shared: AVExternalSyncDevice.DiscoverySession?](avexternalsyncdevice/discoverysession/shared.md)
+### Accessing the shared instance
+- [class var shared: AVExternalSyncDevice.DiscoverySession?](./shared.md)
   The singleton instance of the external sync source device discovery session.
 
 

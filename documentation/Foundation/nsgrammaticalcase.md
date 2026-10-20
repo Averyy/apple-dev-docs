@@ -1,7 +1,8 @@
 # NSGrammaticalCase
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -18,48 +19,53 @@
 enum NSGrammaticalCase
 ```
 
+```c
+enum NSGrammaticalCase : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSGrammaticalCase.ablative](nsgrammaticalcase/ablative.md)
-- [NSGrammaticalCase.accusative](nsgrammaticalcase/accusative.md)
-- [NSGrammaticalCase.adessive](nsgrammaticalcase/adessive.md)
-- [NSGrammaticalCase.allative](nsgrammaticalcase/allative.md)
-- [NSGrammaticalCase.dative](nsgrammaticalcase/dative.md)
-- [NSGrammaticalCase.elative](nsgrammaticalcase/elative.md)
-- [NSGrammaticalCase.essive](nsgrammaticalcase/essive.md)
-- [NSGrammaticalCase.genitive](nsgrammaticalcase/genitive.md)
-- [NSGrammaticalCase.illative](nsgrammaticalcase/illative.md)
-- [NSGrammaticalCase.inessive](nsgrammaticalcase/inessive.md)
-- [NSGrammaticalCase.locative](nsgrammaticalcase/locative.md)
-- [NSGrammaticalCase.nominative](nsgrammaticalcase/nominative.md)
-- [NSGrammaticalCase.notSet](nsgrammaticalcase/notset.md)
-- [NSGrammaticalCase.prepositional](nsgrammaticalcase/prepositional.md)
-- [NSGrammaticalCase.translative](nsgrammaticalcase/translative.md)
+- [NSGrammaticalCase.ablative](./nsgrammaticalcase/ablative.md)
+- [NSGrammaticalCase.accusative](./nsgrammaticalcase/accusative.md)
+- [NSGrammaticalCase.adessive](./nsgrammaticalcase/adessive.md)
+- [NSGrammaticalCase.allative](./nsgrammaticalcase/allative.md)
+- [NSGrammaticalCase.dative](./nsgrammaticalcase/dative.md)
+- [NSGrammaticalCase.elative](./nsgrammaticalcase/elative.md)
+- [NSGrammaticalCase.essive](./nsgrammaticalcase/essive.md)
+- [NSGrammaticalCase.genitive](./nsgrammaticalcase/genitive.md)
+- [NSGrammaticalCase.illative](./nsgrammaticalcase/illative.md)
+- [NSGrammaticalCase.inessive](./nsgrammaticalcase/inessive.md)
+- [NSGrammaticalCase.locative](./nsgrammaticalcase/locative.md)
+- [NSGrammaticalCase.nominative](./nsgrammaticalcase/nominative.md)
+- [NSGrammaticalCase.notSet](./nsgrammaticalcase/notset.md)
+- [NSGrammaticalCase.prepositional](./nsgrammaticalcase/prepositional.md)
+- [NSGrammaticalCase.translative](./nsgrammaticalcase/translative.md)
 ### Initializers
-- [init?(rawValue: Int)](nsgrammaticalcase/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsgrammaticalcase/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NSGrammaticalDefiniteness](nsgrammaticaldefiniteness.md)
-- [enum NSGrammaticalDetermination](nsgrammaticaldetermination.md)
-- [enum NSGrammaticalPerson](nsgrammaticalperson.md)
-- [enum NSGrammaticalPronounType](nsgrammaticalpronountype.md)
-- [enum NSKeyValueChange](nskeyvaluechange.md)
+### Enumerations
+- [enum NSGrammaticalDefiniteness](./nsgrammaticaldefiniteness.md)
+- [enum NSGrammaticalDetermination](./nsgrammaticaldetermination.md)
+- [enum NSGrammaticalPerson](./nsgrammaticalperson.md)
+- [enum NSGrammaticalPronounType](./nsgrammaticalpronountype.md)
+- [enum NSKeyValueChange](./nskeyvaluechange.md)
   The kinds of changes that can be observed.
-- [struct NSKeyValueObservingOptions](nskeyvalueobservingoptions.md)
+- [struct NSKeyValueObservingOptions](./nskeyvalueobservingoptions.md)
   The values that can be returned in a change dictionary.
-- [enum NSKeyValueSetMutationKind](nskeyvaluesetmutationkind.md)
+- [enum NSKeyValueSetMutationKind](./nskeyvaluesetmutationkind.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CVOpenGLTextureCache
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,11 +14,15 @@
 class CVOpenGLTextureCache
 ```
 
+```c
+typedef struct __CVOpenGLTextureCache * CVOpenGLTextureCacheRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

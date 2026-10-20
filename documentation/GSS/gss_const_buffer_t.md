@@ -1,7 +1,8 @@
 # gss_const_buffer_t
 
 **Framework**: GSS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A pointer to an immutable buffer descriptor that you use to exchange octet streams with many GSS-API functions.
 
@@ -18,27 +19,32 @@ A pointer to an immutable buffer descriptor that you use to exchange octet strea
 typealias gss_const_buffer_t = UnsafePointer<gss_buffer_desc>
 ```
 
+```c
+typedef const gss_buffer_desc * gss_const_buffer_t;
+```
+
 ## See Also
 
-- [typealias gss_qop_t](gss_qop_t.md)
+### Buffer Data Structures
+- [typealias gss_qop_t](./gss_qop_t.md)
   A quality of protection setting.
-- [typealias gss_iov_buffer_t](gss_iov_buffer_t.md)
+- [typealias gss_iov_buffer_t](./gss_iov_buffer_t.md)
   The structure for a vectored I/O buffer and its defined type.
-- [typealias gss_iov_buffer_desc](gss_iov_buffer_desc.md)
+- [typealias gss_iov_buffer_desc](./gss_iov_buffer_desc.md)
   The structure for a vectored I/O buffer and its defined type.
-- [struct gss_iov_buffer_desc_struct](gss_iov_buffer_desc_struct.md)
+- [struct gss_iov_buffer_desc_struct](./gss_iov_buffer_desc_struct.md)
   The structure for a vectored I/O buffer and its defined type.
-- [typealias gss_buffer_t](gss_buffer_t.md)
+- [typealias gss_buffer_t](./gss_buffer_t.md)
   A pointer to a buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_buffer_set_t](gss_buffer_set_t.md)
+- [typealias gss_buffer_set_t](./gss_buffer_set_t.md)
   A pointer to the descriptor that you use to manage an array of buffer descriptors.
-- [typealias gss_buffer_desc](gss_buffer_desc.md)
+- [typealias gss_buffer_desc](./gss_buffer_desc.md)
   The buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [struct gss_buffer_desc_struct](gss_buffer_desc_struct.md)
+- [struct gss_buffer_desc_struct](./gss_buffer_desc_struct.md)
   The structure for a buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_buffer_set_desc](gss_buffer_set_desc.md)
+- [typealias gss_buffer_set_desc](./gss_buffer_set_desc.md)
   The descriptor that you use to manage an array of buffer descriptors.
-- [struct gss_buffer_set_desc_struct](gss_buffer_set_desc_struct.md)
+- [struct gss_buffer_set_desc_struct](./gss_buffer_set_desc_struct.md)
   The structure for a buffer set descriptor that you use to manage an array of buffer descriptors.
 
 

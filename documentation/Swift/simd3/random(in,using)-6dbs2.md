@@ -1,7 +1,8 @@
 # random(in:using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a vector with random values from within the specified range in all lanes, using the given generator as a source for randomness.
 
@@ -19,6 +20,8 @@ Returns a vector with random values from within the specified range in all lanes
 ```swift
 static func random<T>(in range: ClosedRange<Self.Scalar>, using generator: inout T) -> Self where T : RandomNumberGenerator
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger`.
 
 
 ---

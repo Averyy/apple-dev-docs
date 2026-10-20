@@ -1,7 +1,8 @@
 # AVAssetImageGenerator.Images.Element.success(requestedTime:image:actualTime:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates an image generation request succeeded.
 
@@ -27,7 +28,8 @@ case success(requestedTime: CMTime, image: CGImage, actualTime: CMTime)
 
 ## See Also
 
-- [AVAssetImageGenerator.Images.Element.failure(requestedTime:error:)](avassetimagegenerator/images/element/failure(requestedtime:error:).md)
+### Cases
+- [AVAssetImageGenerator.Images.Element.failure(requestedTime:error:)](./failure%28requestedtime,error%29.md)
   A result that indicates an image generation request failed.
 
 

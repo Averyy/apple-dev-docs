@@ -1,7 +1,8 @@
 # PKDisbursementErrorDomain
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain to use for errors with in-app disbursements.
 
@@ -18,25 +19,30 @@ The error domain to use for errors with in-app disbursements.
 let PKDisbursementErrorDomain: String
 ```
 
+```c
+extern NSString * const PKDisbursementErrorDomain;
+```
+
 #### Discussion
 
-Use the [`PKDisbursementErrorDomain`](pkdisbursementerrordomain.md) to create your own [`PKDisbursementError`](pkdisbursementerror.md) objects, and return them to indicate problems with a transfer.
+Use the [`PKDisbursementErrorDomain`](./pkdisbursementerrordomain.md) to create your own [`PKDisbursementError`](./pkdisbursementerror.md) objects, and return them to indicate problems with a transfer.
 
 ## See Also
 
-- [struct PKDisbursementError](pkdisbursementerror.md)
+### Errors
+- [struct PKDisbursementError](./pkdisbursementerror.md)
   A structure that describes errors that can occur while processing the disbursement.
-- [struct PKDisbursementErrorKey](pkdisbursementerrorkey.md)
+- [struct PKDisbursementErrorKey](./pkdisbursementerrorkey.md)
   Values that describe errors that can occur when processing disbursements.
-- [struct PKPaymentError](pkpaymenterror.md)
+- [struct PKPaymentError](./pkpaymenterror.md)
   An error type that you create to indicate problems with address or contact information on an Apple Pay sheet.
-- [PKPaymentError.Code](pkpaymenterror/code.md)
+- [PKPaymentError.Code](./pkpaymenterror/code.md)
   An error code that you provide to indicate problems with address or contact information on an Apple Pay sheet.
-- [struct PKPaymentErrorKey](pkpaymenterrorkey.md)
+- [struct PKPaymentErrorKey](./pkpaymenterrorkey.md)
   Additional details about an error on the Apple Pay sheet.
-- [PKDisbursementError.Code](pkdisbursementerror/code.md)
+- [PKDisbursementError.Code](./pkdisbursementerror/code.md)
   Values that describe errors that can occur while processing the disbursement.
-- [let PKPaymentErrorDomain: String](pkpaymenterrordomain.md)
+- [let PKPaymentErrorDomain: String](./pkpaymenterrordomain.md)
   The error domain for specific errors associated with Apple Pay in-app or web payments.
 
 

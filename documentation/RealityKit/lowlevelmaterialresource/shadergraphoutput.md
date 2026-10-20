@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.ShaderGraphOutput
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The compiled Metal shader functions derived from a ShaderGraph.
 
@@ -19,26 +20,26 @@ struct ShaderGraphOutput
 
 #### Overview
 
-Obtain a `ShaderGraphOutput` by calling [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:).md) on [`shaderGraph`](lowlevelrendercontext/shadergraph.md).
+Obtain a `ShaderGraphOutput` by calling [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](../lowlevelrendercontextshadergraph/makeshadergraphfunctions%28shadergraph,constantvalues%29.md) on [`shaderGraph`](../lowlevelrendercontext/shadergraph.md).
 
 ## Topics
 
 ### Specifying the shaders
-- [var surfaceShader: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/shadergraphoutput/surfaceshader.md)
+- [var surfaceShader: LowLevelMaterialResource.SurfaceShader](./shadergraphoutput/surfaceshader.md)
   The compiled surface shader.
-- [var geometryModifier: LowLevelMaterialResource.GeometryModifier?](lowlevelmaterialresource/shadergraphoutput/geometrymodifier.md)
+- [var geometryModifier: LowLevelMaterialResource.GeometryModifier?](./shadergraphoutput/geometrymodifier.md)
   The compiled geometry modifier, or `nil` if the ShaderGraph does not include one.
 ### Configuring blending
-- [var blending: LowLevelMaterialResource.ShaderGraphOutput.Blending](lowlevelmaterialresource/shadergraphoutput/blending-swift.property.md)
+- [var blending: LowLevelMaterialResource.ShaderGraphOutput.Blending](./shadergraphoutput/blending-swift.property.md)
   The blending mode derived from the ShaderGraph material.
-- [LowLevelMaterialResource.ShaderGraphOutput.Blending](lowlevelmaterialresource/shadergraphoutput/blending-swift.enum.md)
+- [LowLevelMaterialResource.ShaderGraphOutput.Blending](./shadergraphoutput/blending-swift.enum.md)
   Indicates the blending mode of the ShaderGraph material.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

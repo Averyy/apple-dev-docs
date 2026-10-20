@@ -1,12 +1,13 @@
 # NSImageAlignment
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Constants used by [`imageAlignment`](nsimagecell/imagealignment.md) that allow you to specify the location of the image in the frame.
+Constants used by [`imageAlignment`](./nsimagecell/imagealignment.md) that allow you to specify the location of the image in the frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,34 +15,39 @@ Constants used by [`imageAlignment`](nsimagecell/imagealignment.md) that allow y
 enum NSImageAlignment
 ```
 
+```c
+enum NSImageAlignment : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSImageAlignment.alignCenter](nsimagealignment/aligncenter.md)
-- [NSImageAlignment.alignTop](nsimagealignment/aligntop.md)
-- [NSImageAlignment.alignTopLeft](nsimagealignment/aligntopleft.md)
-- [NSImageAlignment.alignTopRight](nsimagealignment/aligntopright.md)
-- [NSImageAlignment.alignLeft](nsimagealignment/alignleft.md)
-- [NSImageAlignment.alignBottom](nsimagealignment/alignbottom.md)
-- [NSImageAlignment.alignBottomLeft](nsimagealignment/alignbottomleft.md)
-- [NSImageAlignment.alignBottomRight](nsimagealignment/alignbottomright.md)
-- [NSImageAlignment.alignRight](nsimagealignment/alignright.md)
+- [NSImageAlignment.alignCenter](./nsimagealignment/aligncenter.md)
+- [NSImageAlignment.alignTop](./nsimagealignment/aligntop.md)
+- [NSImageAlignment.alignTopLeft](./nsimagealignment/aligntopleft.md)
+- [NSImageAlignment.alignTopRight](./nsimagealignment/aligntopright.md)
+- [NSImageAlignment.alignLeft](./nsimagealignment/alignleft.md)
+- [NSImageAlignment.alignBottom](./nsimagealignment/alignbottom.md)
+- [NSImageAlignment.alignBottomLeft](./nsimagealignment/alignbottomleft.md)
+- [NSImageAlignment.alignBottomRight](./nsimagealignment/alignbottomright.md)
+- [NSImageAlignment.alignRight](./nsimagealignment/alignright.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsimagealignment/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsimagealignment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSImageView.FrameStyle](nsimageview/framestyle.md)
+### Constants
+- [NSImageView.FrameStyle](./nsimageview/framestyle.md)
   Constants that allow you to specify the kind of frame bordering the image.
 
 

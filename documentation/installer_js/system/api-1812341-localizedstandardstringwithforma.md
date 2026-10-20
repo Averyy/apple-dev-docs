@@ -7,17 +7,17 @@ Provides the formatted localized standard string in the installation package for
 
 ## Declaration
 
-```swift
+```
 localizedStandardStringWithFormat(stringKey, args...)
 ```
 
-#### Return_value
+#### Return Value
 
 The localized string, if found in the installation package; `null` otherwise.
 
 #### Overview
 
-This method is not supported. Use [`localizedStringWithFormat`](system/1812327-localizedstringwithformat.md) instead.
+This method is not supported. Use [localizedStringWithFormat](./api-1812327-localizedstringwithformat.md) instead.
 
 ## Parameters
 
@@ -26,9 +26,10 @@ This method is not supported. Use [`localizedStringWithFormat`](system/1812327-l
 
 ## See Also
 
-- [gestalt](system/1812304-gestalt.md)
+### Legacy Methods
+- [gestalt](./api-1812304-gestalt.md)
   Provides gestalt information that corresponds to the given selector.
-- [localizedStandardString](system/1812330-localizedstandardstring.md)
+- [localizedStandardString](./api-1812330-localizedstandardstring.md)
   Provides the localized standard string in the installation package for the current locale for a given key. 
 
 

@@ -1,7 +1,8 @@
 # audioIndependentSampleDecoderRefreshCount
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Only present if the audio sample is an independent frame or immediate playout frame.
 

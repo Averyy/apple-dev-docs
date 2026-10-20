@@ -1,11 +1,12 @@
 # OpenGL ES Enumerations
 
-**Framework**: OpenGL ES
+**Framework**: OpenGL ES  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [enum EAGLRenderingAPI](eaglrenderingapi.md)
+- [enum EAGLRenderingAPI](./eaglrenderingapi.md)
   Versions of OpenGL ES that a rendering context provides.
 
 

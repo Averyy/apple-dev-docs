@@ -1,7 +1,8 @@
 # categoryBitMask
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask that defines which categories this light belongs to.
 
@@ -20,19 +21,24 @@ A mask that defines which categories this light belongs to.
 var categoryBitMask: UInt32 { get set }
 ```
 
+```objc
+@property (nonatomic) uint32_t categoryBitMask;
+```
+
 ## Mentions
 
-- [Lighting a Sprite with Light Nodes](lighting-a-sprite-with-light-nodes.md)
+- [Lighting a Sprite with Light Nodes](../lighting-a-sprite-with-light-nodes.md)
 
 #### Discussion
 
-Every light in a scene can be assigned to up to 32 different categories, each corresponding to a bit in the bit mask. SpriteKit does not predefine any lighting categories, so it is up to you to define which values are used in your game. When a scene is rendered, a light’s [`categoryBitMask`](sklightnode/categorybitmask.md) property is compared to each sprite node’s [`lightingBitMask`](skspritenode/lightingbitmask.md), [`shadowCastBitMask`](skspritenode/shadowcastbitmask.md), and [`shadowedBitMask`](skspritenode/shadowedbitmask.md) properties to determine whether that sprite interacts with the light.
+Every light in a scene can be assigned to up to 32 different categories, each corresponding to a bit in the bit mask. SpriteKit does not predefine any lighting categories, so it is up to you to define which values are used in your game. When a scene is rendered, a light’s [`categoryBitMask`](./categorybitmask.md) property is compared to each sprite node’s [`lightingBitMask`](../skspritenode/lightingbitmask.md), [`shadowCastBitMask`](../skspritenode/shadowcastbitmask.md), and [`shadowedBitMask`](../skspritenode/shadowedbitmask.md) properties to determine whether that sprite interacts with the light.
 
 The default value is `0x00000001`.
 
 ## See Also
 
-- [var isEnabled: Bool](sklightnode/isenabled.md)
+### Determining Whether a Light Node Is Active
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the node is casting light.
 
 

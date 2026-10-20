@@ -1,7 +1,8 @@
 # kLSQuarantineOriginURLKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The URL of the resource originally hosting the quarantined item.
 
@@ -14,6 +15,10 @@ The URL of the resource originally hosting the quarantined item.
 let kLSQuarantineOriginURLKey: CFString
 ```
 
+```c
+const CFStringRef kLSQuarantineOriginURLKey;
+```
+
 #### Discussion
 
 For web downloads, this property is the URL of the web page on which the user initiated the download. For attachments, this property is the URL of the resource to which the quarantined item was attached (e.g. the email message, calendar event, etc.). The origin URL may be a file URL for local resources, or a custom URL to which the quarantining app will respond when asked to open it. The quarantining app should respond by displaying the resource to the user. 
@@ -22,15 +27,16 @@ For web downloads, this property is the URL of the web page on which the user in
 
 ## See Also
 
-- [let kLSQuarantineAgentBundleIdentifierKey: CFString](klsquarantineagentbundleidentifierkey.md)
+### Understanding the Quarantine Properties Dictionary
+- [let kLSQuarantineAgentBundleIdentifierKey: CFString](./klsquarantineagentbundleidentifierkey.md)
   The bundle identifier of the quarantining agent.
-- [let kLSQuarantineAgentNameKey: CFString](klsquarantineagentnamekey.md)
+- [let kLSQuarantineAgentNameKey: CFString](./klsquarantineagentnamekey.md)
   The app name of the quarantining agent.
-- [let kLSQuarantineTimeStampKey: CFString](klsquarantinetimestampkey.md)
+- [let kLSQuarantineTimeStampKey: CFString](./klsquarantinetimestampkey.md)
   The date and time of the item’s quarantine.
-- [let kLSQuarantineTypeKey: CFString](klsquarantinetypekey.md)
+- [let kLSQuarantineTypeKey: CFString](./klsquarantinetypekey.md)
   A symbolic string identifying the reason for the quarantine.
-- [let kLSQuarantineDataURLKey: CFString](klsquarantinedataurlkey.md)
+- [let kLSQuarantineDataURLKey: CFString](./klsquarantinedataurlkey.md)
   The actual URL of the quarantined item.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppMigrationKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The estimated size of all resources to export, in bytes.
@@ -22,9 +23,10 @@ AppMigrationKit uses this property when preflighting the app transfer to estimat
 
 ## See Also
 
-- [var resourcesVersion: String](resourcesexportingwithoptions/resourcesversion.md)
+### Declaring resource properties
+- [var resourcesVersion: String](./resourcesversion.md)
   A property that identifies the version of the format the export uses.
-- [var resourcesCompressible: Bool](resourcesexportingwithoptions/resourcescompressible.md)
+- [var resourcesCompressible: Bool](./resourcescompressible.md)
   A property that indicates whether the archiver attempts to compress the resources passed to it.
 
 

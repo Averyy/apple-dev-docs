@@ -1,7 +1,8 @@
 # BNNSDataLayoutMHA_DHK
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -18,9 +19,14 @@
 var BNNSDataLayoutMHA_DHK: BNNSDataLayout { get }
 ```
 
+```c
+BNNSDataLayoutMHA_DHK
+```
+
 ## See Also
 
-- [var BNNSDataLayoutFullyConnectedSparse: BNNSDataLayout](bnnsdatalayoutfullyconnectedsparse.md)
+### Other Data Layouts
+- [var BNNSDataLayoutFullyConnectedSparse: BNNSDataLayout](./bnnsdatalayoutfullyconnectedsparse.md)
 
 
 ---

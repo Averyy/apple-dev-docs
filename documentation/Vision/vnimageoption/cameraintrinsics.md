@@ -1,7 +1,8 @@
 # cameraIntrinsics
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to specify the camera intrinstics.
 
@@ -19,11 +20,15 @@ An option to specify the camera intrinstics.
 static let cameraIntrinsics: VNImageOption
 ```
 
+```c
+extern VNImageOption const VNImageOptionCameraIntrinsics;
+```
+
 #### Discussion
 
-The camera intrinsics matrix is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) instance containing a [`matrix_float3x3`](https://developer.apple.com/documentation/simd/matrix_float3x3), which is a column-major matrix:
+The camera intrinsics matrix is a [`CFData`](../../CoreFoundation/cfdata.md) instance containing a [`matrix_float3x3`](https://developer.apple.com/documentation/simd/matrix_float3x3), which is a column-major matrix:
 
-![The camera intrinsics matrix with focal length along the main diagonal](/images/Vision/media-2954520@2x.png)
+![The camera intrinsics matrix with focal length along the main diagonal](https://developer.apple.com/tutorials/images/Vision/media-2954520@2x.png)
 
 `fx` and `fy` are the focal length in pixels. For square pixels, they have the same value.
 
@@ -31,9 +36,10 @@ The camera intrinsics matrix is a [`CFData`](https://developer.apple.com/documen
 
 ## See Also
 
-- [static let properties: VNImageOption](vnimageoption/properties.md)
+### Options Dictionary Keys
+- [static let properties: VNImageOption](./properties.md)
   The dictionary from the image source that contains the metadata for algorithms like horizon detection.
-- [static let ciContext: VNImageOption](vnimageoption/cicontext.md)
+- [static let ciContext: VNImageOption](./cicontext.md)
   An option key to specify the context to use in the handler’s Core Image operations.
 
 

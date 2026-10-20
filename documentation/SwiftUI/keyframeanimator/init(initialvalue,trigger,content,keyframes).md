@@ -1,7 +1,8 @@
 # init(initialValue:trigger:content:keyframes:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
 
@@ -38,7 +39,8 @@ When a keyframe animation finishes, the animator will remain at the end value, w
 
 ## See Also
 
-- [init(initialValue: Value, repeating: Bool, content: (Value) -> Content, keyframes: (Value) -> KeyframePath)](keyframeanimator/init(initialvalue:repeating:content:keyframes:).md)
+### Creating a phase animator
+- [init(initialValue: Value, repeating: Bool, content: (Value) -> Content, keyframes: (Value) -> KeyframePath)](./init%28initialvalue,repeating,content,keyframes%29.md)
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 
 

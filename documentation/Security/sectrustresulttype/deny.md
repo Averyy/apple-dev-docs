@@ -1,7 +1,8 @@
 # SecTrustResultType.deny
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user specified that the certificate should not be trusted.
 
@@ -18,6 +19,10 @@ The user specified that the certificate should not be trusted.
 
 ```swift
 case deny
+```
+
+```c
+kSecTrustResultDeny
 ```
 
 #### Discussion

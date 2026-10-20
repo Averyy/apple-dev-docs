@@ -1,7 +1,8 @@
 # getActiveUniforms
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 Int32Array getActiveUniforms(
     WebGLProgram? program, 
     Uint32Array? uniformIndices, 

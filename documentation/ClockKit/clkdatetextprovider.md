@@ -1,12 +1,15 @@
 # CLKDateTextProvider
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatted string that conveys a date without any time information.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ A formatted string that conveys a date without any time information.
 class CLKDateTextProvider
 ```
 
+```objc
+@interface CLKDateTextProvider : CLKTextProvider
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
@@ -28,10 +35,10 @@ When creating the formatted string, the date text provider creates the longest s
 
 When creating a `CLKDateTextProvider` object, you must specify which calendar units you want included in the resulting date. Only the following calendar units are supported:
 
-- [`NSDayCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsdaycalendarunit)
-- [`NSMonthCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsmonthcalendarunit)
-- [`NSWeekdayCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsweekdaycalendarunit)
-- [`NSYearCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsyearcalendarunit)
+- [`NSDayCalendarUnit`](../Foundation/nscalendar/unit/nsdaycalendarunit.md)
+- [`NSMonthCalendarUnit`](../Foundation/nscalendar/unit/nsmonthcalendarunit.md)
+- [`NSWeekdayCalendarUnit`](../Foundation/nscalendar/unit/nsweekdaycalendarunit.md)
+- [`NSYearCalendarUnit`](../Foundation/nscalendar/unit/nsyearcalendarunit.md)
 
 All other calendar units are ignored.
 
@@ -47,44 +54,45 @@ When formatting the date, the date text provider drops units starting at the end
 ## Topics
 
 ### Creating a Text Provider
-- [convenience init(date: Date, units: NSCalendar.Unit)](clkdatetextprovider/init(date:units:).md)
+- [convenience init(date: Date, units: NSCalendar.Unit)](./clkdatetextprovider/init%28date,units%29.md)
   Creates and returns a text provider with the specified date and the default time zone.
-- [convenience init(date: Date, units: NSCalendar.Unit, timeZone: TimeZone?)](clkdatetextprovider/init(date:units:timezone:).md)
+- [convenience init(date: Date, units: NSCalendar.Unit, timeZone: TimeZone?)](./clkdatetextprovider/init%28date,units,timezone%29.md)
   Creates and returns a text provider with the specified date and time zone.
 ### Getting the Date Information
-- [var date: Date](clkdatetextprovider/date.md)
+- [var date: Date](./clkdatetextprovider/date.md)
   The date to display.
-- [var timeZone: TimeZone?](clkdatetextprovider/timezone.md)
+- [var timeZone: TimeZone?](./clkdatetextprovider/timezone.md)
   The time zone used in the formatted string.
-- [var calendarUnits: NSCalendar.Unit](clkdatetextprovider/calendarunits.md)
+- [var calendarUnits: NSCalendar.Unit](./clkdatetextprovider/calendarunits.md)
   The calendar units to include in the formatted string.
-- [var uppercase: Bool](clkdatetextprovider/uppercase.md)
+- [var uppercase: Bool](./clkdatetextprovider/uppercase.md)
   A Boolean value that determines whether the date string displays in uppercase.
 
 ## Relationships
 
 ### Inherits From
-- [CLKTextProvider](clktextprovider.md)
+- [CLKTextProvider](./clktextprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKSimpleTextProvider](clksimpletextprovider.md)
+### Text providers
+- [class CLKSimpleTextProvider](./clksimpletextprovider.md)
   A single line of text to display in your complication interface.
-- [class CLKRelativeDateTextProvider](clkrelativedatetextprovider.md)
+- [class CLKRelativeDateTextProvider](./clkrelativedatetextprovider.md)
   A formatted string that conveys the difference in time between the current date and a date that you specify.
-- [class CLKTimeIntervalTextProvider](clktimeintervaltextprovider.md)
+- [class CLKTimeIntervalTextProvider](./clktimeintervaltextprovider.md)
   A formatted time range.
-- [class CLKTimeTextProvider](clktimetextprovider.md)
+- [class CLKTimeTextProvider](./clktimetextprovider.md)
   A formatted time value.
-- [class CLKTextProvider](clktextprovider.md)
+- [class CLKTextProvider](./clktextprovider.md)
   The common behavior for displaying text-based data in a complication.
 
 

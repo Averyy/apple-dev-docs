@@ -1,7 +1,8 @@
 # kSecACLAuthorizationKeychainItemRead
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Read an item from a keychain.
 
@@ -12,6 +13,10 @@ Read an item from a keychain.
 
 ```swift
 let kSecACLAuthorizationKeychainItemRead: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationKeychainItemRead;
 ```
 
 

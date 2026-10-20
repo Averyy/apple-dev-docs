@@ -1,17 +1,24 @@
 # drawSheetBorder(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows applications that use the AppKit pagination facility to draw additional marks on each printed sheet.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: This is never invoked and the NSView implementation does nothing
 
 ## Declaration
 
 ```swift
 func drawSheetBorder(with borderSize: NSSize)
+```
+
+```objc
+- (void) drawSheetBorderWithSize:(NSSize) borderSize;
 ```
 
 #### Discussion
@@ -24,25 +31,26 @@ The marks can be such things as crop marks or fold lines of size `borderSize`. T
 
 ## See Also
 
-- [func printView(Any?)](nsview/printview(_:).md)
+### Printing the View’s Content
+- [func printView(Any?)](./printview%28_%29.md)
   This action method opens the Print panel, and if the user chooses an option other than canceling, prints the view and all its subviews to the device specified in the Print panel.
-- [func beginPage(in: NSRect, atPlacement: NSPoint)](nsview/beginpage(in:atplacement:).md)
+- [func beginPage(in: NSRect, atPlacement: NSPoint)](./beginpage%28in,atplacement%29.md)
   Called at the beginning of each page, this method sets up the coordinate system so that a region inside the view’s bounds is translated to a specified location.
-- [func dataWithEPS(inside: NSRect) -> Data](nsview/datawitheps(inside:).md)
+- [func dataWithEPS(inside: NSRect) -> Data](./datawitheps%28inside%29.md)
   Returns EPS data that draws the region of the view within a specified rectangle.
-- [func dataWithPDF(inside: NSRect) -> Data](nsview/datawithpdf(inside:).md)
+- [func dataWithPDF(inside: NSRect) -> Data](./datawithpdf%28inside%29.md)
   Returns PDF data that draws the region of the view within a specified rectangle.
-- [var printJobTitle: String](nsview/printjobtitle.md)
+- [var printJobTitle: String](./printjobtitle.md)
   The view’s print job title.
-- [var pageHeader: NSAttributedString](nsview/pageheader.md)
+- [var pageHeader: NSAttributedString](./pageheader.md)
   A default header string that includes the print job title and date.
-- [var pageFooter: NSAttributedString](nsview/pagefooter.md)
+- [var pageFooter: NSAttributedString](./pagefooter.md)
   A default footer string that includes the current page number and page count.
-- [func writeEPS(inside: NSRect, to: NSPasteboard)](nsview/writeeps(inside:to:).md)
+- [func writeEPS(inside: NSRect, to: NSPasteboard)](./writeeps%28inside,to%29.md)
   Writes EPS data that draws the region of the view within a specified rectangle onto a pasteboard.
-- [func writePDF(inside: NSRect, to: NSPasteboard)](nsview/writepdf(inside:to:).md)
+- [func writePDF(inside: NSRect, to: NSPasteboard)](./writepdf%28inside,to%29.md)
   Writes PDF data that draws the region of the view within a specified rectangle onto a pasteboard.
-- [func drawPageBorder(with: NSSize)](nsview/drawpageborder(with:).md)
+- [func drawPageBorder(with: NSSize)](./drawpageborder%28with%29.md)
   Allows applications that use the AppKit pagination facility to draw additional marks on each logical page.
 
 

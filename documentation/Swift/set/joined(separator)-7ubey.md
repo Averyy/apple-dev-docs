@@ -1,7 +1,8 @@
 # joined(separator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the concatenated elements of this sequence of sequences, inserting the given separator between each element.
 
@@ -19,6 +20,8 @@ Returns the concatenated elements of this sequence of sequences, inserting the g
 ```swift
 func joined<Separator>(separator: Separator) -> JoinedSequence<Self> where Separator : Sequence, Separator.Element == Self.Element.Element
 ```
+
+Available when `Element` conforms to `Sequence`.
 
 #### Return Value
 

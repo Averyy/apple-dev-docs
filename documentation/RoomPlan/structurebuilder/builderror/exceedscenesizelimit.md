@@ -1,7 +1,8 @@
 # StructureBuilder.BuildError.exceedSceneSizeLimit
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates when the scene size grows past the framework’s limitations.
 

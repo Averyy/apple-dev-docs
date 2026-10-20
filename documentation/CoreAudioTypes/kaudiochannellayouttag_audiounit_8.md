@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_AudioUnit_8
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An octagonal symmetrical layout, recommended for use by audio units.
 
@@ -20,13 +21,18 @@ An octagonal symmetrical layout, recommended for use by audio units.
 var kAudioChannelLayoutTag_AudioUnit_8: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_AudioUnit_8
+```
+
 ## See Also
 
-- [var kAudioChannelLayoutTag_AudioUnit_4: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_4.md)
+### Symmetrical Layouts
+- [var kAudioChannelLayoutTag_AudioUnit_4: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_4.md)
   A quadraphonic symmetrical layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_5: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_5.md)
+- [var kAudioChannelLayoutTag_AudioUnit_5: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_5.md)
   A pentagonal symmetrical layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_6: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_6.md)
+- [var kAudioChannelLayoutTag_AudioUnit_6: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_6.md)
   A hexagonal symmetrical layout, recommended for use by audio units.
 
 

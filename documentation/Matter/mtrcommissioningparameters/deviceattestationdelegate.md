@@ -1,7 +1,8 @@
 # deviceAttestationDelegate
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var deviceAttestationDelegate: (any MTRDeviceAttestationDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id<MTRDeviceAttestationDelegate> deviceAttestationDelegate;
 ```
 
 

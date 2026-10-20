@@ -1,7 +1,8 @@
 # ModelSortGroup.DepthPass.postPass
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that instructs the renderer to draw the depth of a model only after it draws the colors for all the models in the group first.
 

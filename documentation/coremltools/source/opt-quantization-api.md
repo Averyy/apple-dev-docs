@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-quantization-api
 
 # API Overview
 
-**
-
-- [.md](../_sources/source/opt-quantization-api.md)
-- **
-
-.pdf
-
-**
-
-# API Overview
-
- Table of contents 
-
-## Contents
-
-# API Overview
-
 ## Working with Core ML Models
 
 ### Quantizing weights
@@ -252,21 +235,21 @@ This allows the model weights to adjust and reduce the error introduced by quant
 is used for computing gradients of non-differentiable operations introduced by simulated quantization.
 
 The `LinearQuantizer` algorithm is implemented as an extension of
-[FX Graph Mode Quantization](https://pytorch.org/tutorials/prototype/fx_graph_mode_quant_guide.md) in PyTorch.
-It first traces the PyTorch model symbolically to obtain a [torch.fx](https://pytorch.org/docs/stable/fx.md)
+[FX Graph Mode Quantization](https://pytorch.org/tutorials/prototype/fx_graph_mode_quant_guide.html) in PyTorch.
+It first traces the PyTorch model symbolically to obtain a [torch.fx](https://pytorch.org/docs/stable/fx.html)
 graph capturing all the operations in the model. It then analyzes this graph,
-and inserts [FakeQuantize](https://pytorch.org/docs/stable/generated/torch.ao.quantization.fake_quantize.FakeQuantize.md) layers in the graph.
+and inserts [FakeQuantize](https://pytorch.org/docs/stable/generated/torch.ao.quantization.fake_quantize.FakeQuantize.html) layers in the graph.
 FakeQuantize layer insertion locations are chosen such that model inference on hardware is
 optimized and only weights and activations which benefit from quantization are quantized.
 
-Since the prepare method uses [prepare_qat_fx](https://pytorch.org/docs/stable/generated/torch.ao.quantization.quantize_fx.prepare_qat_fx.md)
+Since the prepare method uses [prepare_qat_fx](https://pytorch.org/docs/stable/generated/torch.ao.quantization.quantize_fx.prepare_qat_fx.html)
 to insert quantization layers, the model returned from the method is a
 [torch.fx.GraphModule](https://pytorch.org/docs/stable/fx.html#torch.fx.GraphModule),
 and as a result custom methods defined on the original model class
 may not be available on the returned model. Some models, like those with dynamic control
 flow, may not be traceable into a torch.fx.GraphModule. We recommend following the
 instructions in [Limitations of Symbolic Tracing](https://pytorch.org/docs/stable/fx.html#limitations-of-symbolic-tracing) and
-[FX Graph Mode Quantization User Guide](https://pytorch.org/tutorials/prototype/fx_graph_mode_quant_guide.md) to
+[FX Graph Mode Quantization User Guide](https://pytorch.org/tutorials/prototype/fx_graph_mode_quant_guide.html) to
 update your model first, before using the `LinearQuantizer` algorithm.
 
 ### Converting quantized PyTorch models to Core ML
@@ -286,5 +269,3 @@ coreml_model.save("~/quantized_model.mlpackage")
 ```
 
 Note that you need to use `minimum_deployment_target >= iOS17` when activations are also quantized.
-
-** Contents

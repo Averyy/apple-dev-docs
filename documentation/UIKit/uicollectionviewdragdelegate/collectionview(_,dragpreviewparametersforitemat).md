@@ -1,7 +1,8 @@
 # collectionView(_:dragPreviewParametersForItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns custom information about how to display the item at the specified location during the drag.
 
@@ -17,6 +18,10 @@ Returns custom information about how to display the item at the specified locati
 optional func collectionView(_ collectionView: UICollectionView, dragPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters?
 ```
 
+```objc
+- (UIDragPreviewParameters *) collectionView:(UICollectionView *) collectionView dragPreviewParametersForItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
 Drag parameters that indicate how to display the cell’s content during a drag.
@@ -25,7 +30,7 @@ Drag parameters that indicate how to display the cell’s content during a drag.
 
 Use this method to customize the appearance of the item during drags. If you don’t implement this method or if you implement it and return `nil`, the collection view uses the cell’s visible bounds to create the preview.
 
-In your implementation, create a [`UIDragPreviewParameters`](uidragpreviewparameters.md) object and update the preview information for the specified item. Use the parameters to specify the portion of the cell that you want to be included in the drag preview or to change the background color drawn beneath your cell.
+In your implementation, create a [`UIDragPreviewParameters`](../uidragpreviewparameters.md) object and update the preview information for the specified item. Use the parameters to specify the portion of the cell that you want to be included in the drag preview or to change the background color drawn beneath your cell.
 
 ## Parameters
 

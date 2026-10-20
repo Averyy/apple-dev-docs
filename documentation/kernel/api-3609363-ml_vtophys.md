@@ -1,14 +1,15 @@
 # ml_vtophys
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 vm_offset_t ml_vtophys(vm_offset_t vaddr);
 ```
 

@@ -1,7 +1,8 @@
 # MTRDeviceControllerParameters
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,32 +19,36 @@
 class MTRDeviceControllerParameters
 ```
 
+```objc
+@interface MTRDeviceControllerParameters : MTRDeviceControllerAbstractParameters
+```
+
 ## Topics
 
 ### Instance Properties
-- [var certificationDeclarationCertificates: [Data]?](mtrdevicecontrollerparameters/certificationdeclarationcertificates.md)
-- [var concurrentSubscriptionEstablishmentsAllowedOnThread: Int](mtrdevicecontrollerparameters/concurrentsubscriptionestablishmentsallowedonthread.md)
-- [var productAttestationAuthorityCertificates: [Data]?](mtrdevicecontrollerparameters/productattestationauthoritycertificates.md)
-- [var shouldAdvertiseOperational: Bool](mtrdevicecontrollerparameters/shouldadvertiseoperational.md)
-- [var storageBehaviorConfiguration: MTRDeviceStorageBehaviorConfiguration?](mtrdevicecontrollerparameters/storagebehaviorconfiguration.md)
+- [var certificationDeclarationCertificates: [Data]?](./mtrdevicecontrollerparameters/certificationdeclarationcertificates.md)
+- [var concurrentSubscriptionEstablishmentsAllowedOnThread: Int](./mtrdevicecontrollerparameters/concurrentsubscriptionestablishmentsallowedonthread.md)
+- [var productAttestationAuthorityCertificates: [Data]?](./mtrdevicecontrollerparameters/productattestationauthoritycertificates.md)
+- [var shouldAdvertiseOperational: Bool](./mtrdevicecontrollerparameters/shouldadvertiseoperational.md)
+- [var storageBehaviorConfiguration: MTRDeviceStorageBehaviorConfiguration?](./mtrdevicecontrollerparameters/storagebehaviorconfiguration.md)
   Sets the storage behavior configuration - see MTRDeviceStorageBehaviorConfiguration.h for details
 ### Instance Methods
-- [func setOTAProviderDelegate(any MTROTAProviderDelegate, queue: dispatch_queue_t)](mtrdevicecontrollerparameters/setotaproviderdelegate(_:queue:).md)
-- [func setOperationalCertificateIssuer(any MTROperationalCertificateIssuer, queue: dispatch_queue_t)](mtrdevicecontrollerparameters/setoperationalcertificateissuer(_:queue:).md)
+- [func setOTAProviderDelegate(any MTROTAProviderDelegate, queue: dispatch_queue_t)](./mtrdevicecontrollerparameters/setotaproviderdelegate%28_,queue%29.md)
+- [func setOperationalCertificateIssuer(any MTROperationalCertificateIssuer, queue: dispatch_queue_t)](./mtrdevicecontrollerparameters/setoperationalcertificateissuer%28_,queue%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRDeviceControllerAbstractParameters](mtrdevicecontrollerabstractparameters.md)
+- [MTRDeviceControllerAbstractParameters](./mtrdevicecontrollerabstractparameters.md)
 ### Inherited By
-- [MTRDeviceControllerExternalCertificateParameters](mtrdevicecontrollerexternalcertificateparameters.md)
+- [MTRDeviceControllerExternalCertificateParameters](./mtrdevicecontrollerexternalcertificateparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

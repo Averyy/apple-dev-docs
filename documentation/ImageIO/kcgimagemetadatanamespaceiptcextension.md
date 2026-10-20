@@ -1,7 +1,8 @@
 # kCGImageMetadataNamespaceIPTCExtension
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.3+
@@ -18,9 +19,14 @@
 let kCGImageMetadataNamespaceIPTCExtension: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageMetadataNamespaceIPTCExtension;
+```
+
 ## See Also
 
-- [let kCGImageMetadataPrefixIPTCExtension: CFString](kcgimagemetadataprefixiptcextension.md)
+### IPTC Extension
+- [let kCGImageMetadataPrefixIPTCExtension: CFString](./kcgimagemetadataprefixiptcextension.md)
 
 
 ---

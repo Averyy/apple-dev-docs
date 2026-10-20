@@ -7,7 +7,7 @@ The default size of any command pool.
 
 ## Declaration
 
-```swift
+```c
 static const UInt32 kIOCommandPoolDefaultSize = 2;
 ```
 

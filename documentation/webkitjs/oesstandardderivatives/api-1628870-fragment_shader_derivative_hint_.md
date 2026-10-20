@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long FRAGMENT_SHADER_DERIVATIVE_HINT_OES;
 ```
 

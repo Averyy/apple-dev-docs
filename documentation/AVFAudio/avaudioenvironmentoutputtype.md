@@ -1,7 +1,8 @@
 # AVAudioEnvironmentOutputType
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The output types for using with the automatic 3D mixing rendering algorithm.
 
@@ -19,39 +20,44 @@ The output types for using with the automatic 3D mixing rendering algorithm.
 enum AVAudioEnvironmentOutputType
 ```
 
+```c
+enum AVAudioEnvironmentOutputType : NSInteger;
+```
+
 #### Overview
 
-The output type determines the rendering method for any input bus using [`AVAudio3DMixingRenderingAlgorithm.auto`](avaudio3dmixingrenderingalgorithm/auto.md). To configure the output type, set [`outputType`](avaudioenvironmentnode/outputtype.md) on [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md).
+The output type determines the rendering method for any input bus using [`AVAudio3DMixingRenderingAlgorithm.auto`](./avaudio3dmixingrenderingalgorithm/auto.md). To configure the output type, set [`outputType`](./avaudioenvironmentnode/outputtype.md) on [`AVAudioEnvironmentNode`](./avaudioenvironmentnode.md).
 
 ## Topics
 
 ### Creating an output type
-- [init?(rawValue: Int)](avaudioenvironmentoutputtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudioenvironmentoutputtype/init%28rawvalue%29.md)
 ### Choosing an output type
-- [AVAudioEnvironmentOutputType.auto](avaudioenvironmentoutputtype/auto.md)
+- [AVAudioEnvironmentOutputType.auto](./avaudioenvironmentoutputtype/auto.md)
   Automatically detects the playback route and picks the correct output.
-- [AVAudioEnvironmentOutputType.headphones](avaudioenvironmentoutputtype/headphones.md)
+- [AVAudioEnvironmentOutputType.headphones](./avaudioenvironmentoutputtype/headphones.md)
   Renders the audio output for headphones.
-- [AVAudioEnvironmentOutputType.builtInSpeakers](avaudioenvironmentoutputtype/builtinspeakers.md)
+- [AVAudioEnvironmentOutputType.builtInSpeakers](./avaudioenvironmentoutputtype/builtinspeakers.md)
   Renders the audio output for built-in speakers on the current hardware.
-- [AVAudioEnvironmentOutputType.externalSpeakers](avaudioenvironmentoutputtype/externalspeakers.md)
+- [AVAudioEnvironmentOutputType.externalSpeakers](./avaudioenvironmentoutputtype/externalspeakers.md)
   Renders the audio output for external speakers according to the audio environment node’s output channel layout.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var outputVolume: Float](avaudioenvironmentnode/outputvolume.md)
+### Configuring the output
+- [var outputVolume: Float](./avaudioenvironmentnode/outputvolume.md)
   The mixer’s output volume.
-- [var outputType: AVAudioEnvironmentOutputType](avaudioenvironmentnode/outputtype.md)
+- [var outputType: AVAudioEnvironmentOutputType](./avaudioenvironmentnode/outputtype.md)
   The type of output hardware.
 
 

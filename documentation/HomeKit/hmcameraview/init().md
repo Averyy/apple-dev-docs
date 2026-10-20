@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

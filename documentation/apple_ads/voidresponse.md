@@ -1,23 +1,26 @@
 # VoidResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A default generic null response.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object VoidResponse
 ```
 
 ## Topics
 
 ### Objects
-- [object VoidResponse.Data](voidresponse/data-data.dictionary.md)
+- [object VoidResponse.Data](./voidresponse/data-data.dictionary.md)
   A default generic null response that triggers when no data returns.
 
 ## Properties
@@ -28,13 +31,14 @@ object VoidResponse
 
 ## See Also
 
-- [object ApiErrorResponse](apierrorresponse.md)
+### Error Responses
+- [object ApiErrorResponse](./apierrorresponse.md)
   A parent object of the error response body.
-- [object ErrorResponseBody](errorresponsebody.md)
+- [object ErrorResponseBody](./errorresponsebody.md)
   A parent object of the error response.
-- [object ErrorResponseItem](errorresponseitem.md)
+- [object ErrorResponseItem](./errorresponseitem.md)
   The error response details in the response body.
-- [object IntegerResponse](integerresponse.md)
+- [object IntegerResponse](./integerresponse.md)
   A common integer type response.
 
 

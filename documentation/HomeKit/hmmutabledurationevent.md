@@ -1,7 +1,8 @@
 # HMMutableDurationEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable event that fires after the specified time duration.
 
@@ -19,31 +20,36 @@ A mutable event that fires after the specified time duration.
 class HMMutableDurationEvent
 ```
 
+```objc
+@interface HMMutableDurationEvent : HMDurationEvent
+```
+
 ## Topics
 
 ### Configuring a duration event
-- [var duration: TimeInterval](hmmutabledurationevent/duration.md)
+- [var duration: TimeInterval](./hmmutabledurationevent/duration.md)
   The event’s duration, in seconds.
 
 ## Relationships
 
 ### Inherits From
-- [HMDurationEvent](hmdurationevent.md)
+- [HMDurationEvent](./hmdurationevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMDurationEvent](hmdurationevent.md)
+### Durations
+- [class HMDurationEvent](./hmdurationevent.md)
   An event that ends after the specified time duration.
 
 

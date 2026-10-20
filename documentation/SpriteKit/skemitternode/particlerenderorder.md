@@ -1,7 +1,8 @@
 # particleRenderOrder
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order in which the emitter’s particles are rendered.
 
@@ -20,13 +21,18 @@ The order in which the emitter’s particles are rendered.
 var particleRenderOrder: SKParticleRenderOrder { get set }
 ```
 
+```objc
+@property (nonatomic) SKParticleRenderOrder particleRenderOrder;
+```
+
 #### Discussion
 
-The default value is [`SKParticleRenderOrder.oldestLast`](skparticlerenderorder/oldestlast.md).
+The default value is [`SKParticleRenderOrder.oldestLast`](../skparticlerenderorder/oldestlast.md).
 
 ## See Also
 
-- [enum SKParticleRenderOrder](skparticlerenderorder.md)
+### Controlling the Rendering Order of an Emitter’s Particles
+- [enum SKParticleRenderOrder](../skparticlerenderorder.md)
   The order to use when the emitter’s particles are rendered.
 
 

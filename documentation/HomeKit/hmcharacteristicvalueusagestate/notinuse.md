@@ -1,7 +1,8 @@
 # HMCharacteristicValueUsageState.notInUse
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory is not in use.
 
@@ -19,9 +20,14 @@ The accessory is not in use.
 case notInUse
 ```
 
+```c
+HMCharacteristicValueUsageStateNotInUse
+```
+
 ## See Also
 
-- [HMCharacteristicValueUsageState.inUse](hmcharacteristicvalueusagestate/inuse.md)
+### Usage States
+- [HMCharacteristicValueUsageState.inUse](./inuse.md)
   The accessory is currently in use.
 
 

@@ -1,7 +1,8 @@
 # inverse
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pose’s inverse.
 
@@ -11,7 +12,7 @@ The pose’s inverse.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ var inverse: Pose3D { get }
 
 ## See Also
 
-- [var matrix: simd_double4x4](pose3d/matrix.md)
+### Inspecting a 3D pose’s properties
+- [var matrix: simd_double4x4](./matrix.md)
   The pose’s underlying matrix.
-- [var position: Point3D](pose3d/position.md)
+- [var position: Point3D](./position.md)
   The pose’s position.
-- [var rotation: Rotation3D](pose3d/rotation.md)
+- [var rotation: Rotation3D](./rotation.md)
   The pose’s rotation.
 
 

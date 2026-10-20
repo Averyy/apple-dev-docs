@@ -1,12 +1,13 @@
 # NSPopover.Appearance.hud
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The popover draws with a HUD appearance.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 10.10
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The popover draws with a HUD appearance.
 case hud
 ```
 
+```c
+NSPopoverAppearanceHUD
+```
+
 ## See Also
 
-- [NSPopover.Appearance.minimal](nspopover/appearance-swift.enum/minimal.md)
+### Constants
+- [NSPopover.Appearance.minimal](./minimal.md)
   The popover draws with a minimal appearance.
 
 

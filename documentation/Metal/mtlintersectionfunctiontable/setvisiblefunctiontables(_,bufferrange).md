@@ -1,7 +1,8 @@
 # setVisibleFunctionTables(_:bufferRange:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a range of visible function tables for the intersection functions.
 
@@ -11,7 +12,7 @@ Sets a range of visible function tables for the intersection functions.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,11 +27,12 @@ func setVisibleFunctionTables(_ functionTables: [(any MTLVisibleFunctionTable)?]
 
 ## See Also
 
-- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlintersectionfunctiontable/setbuffer(_:offset:index:).md)
+### Specifying arguments for intersection functions
+- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](./setbuffer%28_,offset,index%29.md)
   Sets a buffer for the intersection functions.
-- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlintersectionfunctiontable/setbuffers(_:offsets:range:).md)
+- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./setbuffers%28_,offsets,range%29.md)
   Sets a range of buffers for the intersection functions.
-- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](mtlintersectionfunctiontable/setvisiblefunctiontable(_:bufferindex:).md)
+- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./setvisiblefunctiontable%28_,bufferindex%29.md)
   Sets a visible function table for the intersection functions.
 
 

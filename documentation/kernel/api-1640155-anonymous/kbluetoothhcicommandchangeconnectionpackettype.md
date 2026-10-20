@@ -1,14 +1,15 @@
 # kBluetoothHCICommandChangeConnectionPacketType
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandChangeConnectionPacketType = 0x000F
 ```
 

@@ -1,7 +1,8 @@
 # customizedLanguageModel
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 ```swift
 @NSCopying
 var customizedLanguageModel: SFSpeechLanguageModel.Configuration? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) SFSpeechLanguageModelConfiguration * customizedLanguageModel;
 ```
 
 

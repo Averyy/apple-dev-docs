@@ -1,7 +1,8 @@
 # NSWindow.TitleVisibility.visible
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The window has the regular window title and title bar buttons.
 
@@ -14,9 +15,14 @@ The window has the regular window title and title bar buttons.
 case visible
 ```
 
+```c
+NSWindowTitleVisible
+```
+
 ## See Also
 
-- [NSWindow.TitleVisibility.hidden](nswindow/titlevisibility-swift.enum/hidden.md)
+### Constants
+- [NSWindow.TitleVisibility.hidden](./hidden.md)
 
 
 ---

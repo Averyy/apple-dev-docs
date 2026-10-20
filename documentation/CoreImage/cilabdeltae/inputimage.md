@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The first input image for comparison.
@@ -11,7 +12,7 @@ The first input image for comparison.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,14 @@ The first input image for comparison.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var image2: CIImage?](cilabdeltae/image2.md)
+### Instance Properties
+- [var image2: CIImage?](./image2.md)
   The second input image for comparison.
 
 

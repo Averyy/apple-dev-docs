@@ -1,7 +1,8 @@
 # count
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in this path.
 
@@ -22,11 +23,12 @@ var count: Int { get }
 
 ## See Also
 
-- [var isEmpty: Bool](navigationpath/isempty.md)
+### Managing path contents
+- [var isEmpty: Bool](./isempty.md)
   A Boolean that indicates whether this path is empty.
-- [func append(_:)](navigationpath/append(_:).md)
+- [func append(_:)](./append%28_%29.md)
   Appends a new codable value to the end of this path.
-- [func removeLast(Int)](navigationpath/removelast(_:).md)
+- [func removeLast(Int)](./removelast%28_%29.md)
   Removes values from the end of this path.
 
 

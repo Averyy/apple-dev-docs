@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an eraser tool object that removes objects wholly or partially from a canvas view.
 
@@ -24,11 +25,12 @@ This initializer creates a new eraser tool object.
 
 ## Parameters
 
-- `eraserType`: A constant that determines how the eraser affects drawn content. For a list of possible values, see [`PKEraserTool.EraserType`](pkerasertool-swift.struct/erasertype-swift.enum.md).
+- `eraserType`: A constant that determines how the eraser affects drawn content. For a list of possible values, see [`PKEraserTool.EraserType`](./erasertype-swift.enum.md).
 
 ## See Also
 
-- [init(PKEraserTool.EraserType, width: CGFloat)](pkerasertool-swift.struct/init(_:width:).md)
+### Creating an eraser tool
+- [init(PKEraserTool.EraserType, width: CGFloat)](./init%28_,width%29.md)
   Creates an eraser tool object with the specified width.
 
 

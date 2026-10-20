@@ -1,15 +1,20 @@
 # fileTransferServicesRetrieveFolderListingComplete(_:error:listing:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesRetrieveFolderListingComplete(_ inServices: OBEXFileTransferServices!, error inError: OBEXError, listing inListing: [Any]!)
+```
+
+```objc
+- (void) fileTransferServicesRetrieveFolderListingComplete:(OBEXFileTransferServices *) inServices error:(OBEXError) inError listing:(NSArray *) inListing;
 ```
 
 

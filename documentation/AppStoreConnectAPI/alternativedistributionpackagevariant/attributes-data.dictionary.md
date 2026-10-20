@@ -1,7 +1,8 @@
 # AlternativeDistributionPackageVariant.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an alternative distribution package variant resource.
 
@@ -10,13 +11,13 @@ Attributes that describe an alternative distribution package variant resource.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackageVariant.Attributes
 ```
 
 ## Properties
 
-- `alternativeDistributionKeyBlob` (string): For more infomation, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications).
+- `alternativeDistributionKeyBlob` (string): For more infomation, see [Processing alternative app marketplace notifications](../../MarketplaceKit/processing-alternative-marketplace-notifications.md).
 - `fileChecksum` (string): This checksum uses `sha256`.
 - `url` (uri)
 - `urlExpirationDate` (date-time)

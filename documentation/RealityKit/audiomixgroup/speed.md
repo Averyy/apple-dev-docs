@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate of playback for an audio mix group.
 
@@ -23,7 +24,7 @@ var speed: Double
 
 The system limits the rate of playback to the range of `[0.25, 4]`. The default speed is `1`, which is equivalent to a normal playback rate.
 
-> **Note**: [`AudioGeneratorController`](audiogeneratorcontroller.md) ignores this value.
+> **Note**: [`AudioGeneratorController`](../audiogeneratorcontroller.md) ignores this value.
 
 
 ---

@@ -1,7 +1,8 @@
 # endSearchInteraction()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends a search interaction by giving up the first responder and adjusting the size of the search field to the available width for the toolbar item if necessary.
 
@@ -14,13 +15,18 @@ Ends a search interaction by giving up the first responder and adjusting the siz
 func endSearchInteraction()
 ```
 
+```objc
+- (void) endSearchInteraction;
+```
+
 #### Discussion
 
-Use [`beginSearchInteraction()`](nssearchtoolbaritem/beginsearchinteraction().md) and [`endSearchInteraction()`](nssearchtoolbaritem/endsearchinteraction().md) to programmatically control a search.
+Use [`beginSearchInteraction()`](./beginsearchinteraction%28%29.md) and [`endSearchInteraction()`](./endsearchinteraction%28%29.md) to programmatically control a search.
 
 ## See Also
 
-- [func beginSearchInteraction()](nssearchtoolbaritem/beginsearchinteraction.md)
+### Controlling search interactions
+- [func beginSearchInteraction()](./beginsearchinteraction%28%29.md)
   Starts a search interaction and moves the keyboard focus to the search field.
 
 

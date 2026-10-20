@@ -1,15 +1,16 @@
 # AVAUDIOUNIT_HAVE_AUDIOUNIT
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,14 +18,19 @@
 var AVAUDIOUNIT_HAVE_AUDIOUNIT: Int32 { get }
 ```
 
+```c
+#define AVAUDIOUNIT_HAVE_AUDIOUNIT
+```
+
 ## See Also
 
-- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](avaudioengine_have_auaudiounit.md)
-- [var AVAUDIOENGINE_HAVE_MUSICPLAYER: Int32](avaudioengine_have_musicplayer.md)
-- [var AVAUDIOFORMAT_HAVE_CMFORMATDESCRIPTION: Int32](avaudioformat_have_cmformatdescription.md)
-- [var AVAUDIOIONODE_HAVE_AUDIOUNIT: Int32](avaudioionode_have_audiounit.md)
-- [var AVAUDIONODE_HAVE_AUAUDIOUNIT: Int32](avaudionode_have_auaudiounit.md)
-- [var AVAUDIOUNITCOMPONENT_HAVE_AUDIOCOMPONENT: Int32](avaudiounitcomponent_have_audiocomponent.md)
+### Preprocessor macros
+- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](./avaudioengine_have_auaudiounit.md)
+- [var AVAUDIOENGINE_HAVE_MUSICPLAYER: Int32](./avaudioengine_have_musicplayer.md)
+- [var AVAUDIOFORMAT_HAVE_CMFORMATDESCRIPTION: Int32](./avaudioformat_have_cmformatdescription.md)
+- [var AVAUDIOIONODE_HAVE_AUDIOUNIT: Int32](./avaudioionode_have_audiounit.md)
+- [var AVAUDIONODE_HAVE_AUAUDIOUNIT: Int32](./avaudionode_have_auaudiounit.md)
+- [var AVAUDIOUNITCOMPONENT_HAVE_AUDIOCOMPONENT: Int32](./avaudiounitcomponent_have_audiocomponent.md)
 
 
 ---

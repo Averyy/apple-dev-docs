@@ -1,7 +1,8 @@
 # severity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the severity of the alert.
 
@@ -18,13 +19,18 @@ Indicates the severity of the alert.
 var severity: UIAlertControllerSeverity { get set }
 ```
 
+```objc
+@property (nonatomic) UIAlertControllerSeverity severity;
+```
+
 #### Discussion
 
-See the [`UIAlertControllerSeverity`](uialertcontrollerseverity.md) enumeration for the list of alert severity constants.
+See the [`UIAlertControllerSeverity`](../uialertcontrollerseverity.md) enumeration for the list of alert severity constants.
 
 ## See Also
 
-- [enum UIAlertControllerSeverity](uialertcontrollerseverity.md)
+### Configuring alert severity
+- [enum UIAlertControllerSeverity](../uialertcontrollerseverity.md)
   Constants for specifying the severity of an alert in apps built with Mac Catalyst.
 
 

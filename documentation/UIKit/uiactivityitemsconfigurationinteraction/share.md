@@ -1,7 +1,8 @@
 # share
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The share interaction.
 
@@ -17,9 +18,14 @@ The share interaction.
 static let share: UIActivityItemsConfigurationInteraction
 ```
 
+```c
+extern UIActivityItemsConfigurationInteraction const UIActivityItemsConfigurationInteractionShare;
+```
+
 ## See Also
 
-- [static let copy: UIActivityItemsConfigurationInteraction](uiactivityitemsconfigurationinteraction/copy.md)
+### Selecting interactions
+- [static let copy: UIActivityItemsConfigurationInteraction](./copy.md)
   The copy interaction.
 
 

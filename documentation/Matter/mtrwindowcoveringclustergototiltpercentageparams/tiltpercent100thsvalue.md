@@ -1,7 +1,8 @@
 # tiltPercent100thsValue
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var tiltPercent100thsValue: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * tiltPercent100thsValue;
 ```
 
 

@@ -1,7 +1,8 @@
 # videoFrameRateRangeForStudioLight
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the minimum and maximum frame rates available when a user enables Studio Light.
 
@@ -18,13 +19,18 @@ A value that indicates the minimum and maximum frame rates available when a user
 var videoFrameRateRangeForStudioLight: AVFrameRateRange? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForStudioLight;
+```
+
 #### Discussion
 
 Devices may support a limited frame rate range when Studio Light is active. If the format doesn’t support Studio Light, this property is `nil`.
 
 ## See Also
 
-- [var isStudioLightSupported: Bool](avcapturedevice/format/isstudiolightsupported.md)
+### Determining Studio Light support
+- [var isStudioLightSupported: Bool](./isstudiolightsupported.md)
   A Boolean value that indicates whether the format supports Studio Light.
 
 

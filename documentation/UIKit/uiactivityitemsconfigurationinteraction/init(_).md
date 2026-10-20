@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activity items configuration interaction.
 
@@ -19,7 +20,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](uiactivityitemsconfigurationinteraction/init(rawvalue:).md)
+### Creating an interaction type
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates an activity items configuration interaction with the specified raw value.
 
 

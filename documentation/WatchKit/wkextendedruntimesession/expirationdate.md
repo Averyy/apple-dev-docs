@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time and date when the session expires.
 
@@ -14,9 +15,13 @@ The time and date when the session expires.
 var expirationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * expirationDate;
+```
+
 ## Mentions
 
-- [Using extended runtime sessions](using-extended-runtime-sessions.md)
+- [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
 #### Discussion
 
@@ -26,18 +31,19 @@ This property starts set to `nil`. The system assigns a date as soon as the sess
 
 ## See Also
 
-- [func start()](wkextendedruntimesession/start.md)
+### Managing the Session State
+- [func start()](./start%28%29.md)
   Starts running the session.
-- [func start(at: Date)](wkextendedruntimesession/start(at:).md)
+- [func start(at: Date)](./start%28at%29.md)
   Schedules a session to start running at a future date.
-- [func invalidate()](wkextendedruntimesession/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Stops the session.
-- [var state: WKExtendedRuntimeSessionState](wkextendedruntimesession/state.md)
+- [var state: WKExtendedRuntimeSessionState](./state.md)
   The session’s current state.
-- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md)
+- [enum WKExtendedRuntimeSessionState](../wkextendedruntimesessionstate.md)
   The activation states for an extended runtime session.
-- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:).md)
-- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](wkextendedruntimesessionautolaunchauthorizationstatus.md)
+- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](./requestautolaunchauthorizationstatus%28completion%29.md)
+- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](../wkextendedruntimesessionautolaunchauthorizationstatus.md)
 
 
 ---

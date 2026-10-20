@@ -1,7 +1,8 @@
 # CustomMaterial.Blending.transparent(opacity:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transparent or translucent surface.
 
@@ -20,7 +21,8 @@ case transparent(opacity: CustomMaterial.Opacity)
 
 ## See Also
 
-- [CustomMaterial.Blending.opaque](custommaterial/blending-swift.enum/opaque.md)
+### Specifying transparency
+- [CustomMaterial.Blending.opaque](./opaque.md)
   An opaque surface.
 
 

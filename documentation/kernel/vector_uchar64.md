@@ -1,14 +1,15 @@
 # vector_uchar64
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t __attribute__((ext_vector_type(64))) vector_uchar64;
 ```
 

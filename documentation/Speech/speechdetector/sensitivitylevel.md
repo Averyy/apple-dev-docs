@@ -1,7 +1,8 @@
 # SpeechDetector.SensitivityLevel
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Determines how “aggressive” the voice activity detection (VAD) model will be.
 
@@ -21,34 +22,35 @@ enum SensitivityLevel
 
 #### Overview
 
-[`SpeechDetector.SensitivityLevel.low`](speechdetector/sensitivitylevel/low.md) will allow for a more “forgiving” VAD model, whereas selecting [`SpeechDetector.SensitivityLevel.high`](speechdetector/sensitivitylevel/high.md) will make the model more aggressive. [`SpeechDetector.SensitivityLevel.medium`](speechdetector/sensitivitylevel/medium.md) is the recommended level for most use cases.
+[`SpeechDetector.SensitivityLevel.low`](./sensitivitylevel/low.md) will allow for a more “forgiving” VAD model, whereas selecting [`SpeechDetector.SensitivityLevel.high`](./sensitivitylevel/high.md) will make the model more aggressive. [`SpeechDetector.SensitivityLevel.medium`](./sensitivitylevel/medium.md) is the recommended level for most use cases.
 
 ## Topics
 
 ### Sensitivity levels
-- [SpeechDetector.SensitivityLevel.high](speechdetector/sensitivitylevel/high.md)
-- [SpeechDetector.SensitivityLevel.low](speechdetector/sensitivitylevel/low.md)
-- [SpeechDetector.SensitivityLevel.medium](speechdetector/sensitivitylevel/medium.md)
+- [SpeechDetector.SensitivityLevel.high](./sensitivitylevel/high.md)
+- [SpeechDetector.SensitivityLevel.low](./sensitivitylevel/low.md)
+- [SpeechDetector.SensitivityLevel.medium](./sensitivitylevel/medium.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init()](speechdetector/init.md)
+### Creating a detector
+- [convenience init()](./init%28%29.md)
   Creates a speech detector with default settings.
-- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](speechdetector/init(detectionoptions:reportresults:).md)
+- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](./init%28detectionoptions,reportresults%29.md)
   Creates a speech detector.
-- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
+- [SpeechDetector.DetectionOptions](./detectionoptions.md)
   Allows clients to customize an instance of a speech detector.
 
 

@@ -1,7 +1,8 @@
 # selectableItemsHighlighted
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the interaction highlights actionable text or data the analyzer detects in text.
 
@@ -20,17 +21,18 @@ final var selectableItemsHighlighted: Bool { get set }
 
 #### Discussion
 
-The interaction object manages this property value for you. It sets this property to `false` if you set the [`analysis`](imageanalysisinteraction/analysis.md) property or the [`activeInteractionTypes`](imageanalysisinteraction/activeinteractiontypes.md) property to an empty set. Otherwise, it sets this property depending on whether a person toggles the Live Text button in the interface.
+The interaction object manages this property value for you. It sets this property to `false` if you set the [`analysis`](./analysis.md) property or the [`activeInteractionTypes`](./activeinteractiontypes.md) property to an empty set. Otherwise, it sets this property depending on whether a person toggles the Live Text button in the interface.
 
 ## See Also
 
-- [var liveTextButtonVisible: Bool](imageanalysisinteraction/livetextbuttonvisible.md)
+### Querying the interface state
+- [var liveTextButtonVisible: Bool](./livetextbuttonvisible.md)
   A Boolean value that indicates whether the Live Text button appears.
-- [var isSupplementaryInterfaceHidden: Bool](imageanalysisinteraction/issupplementaryinterfacehidden.md)
+- [var isSupplementaryInterfaceHidden: Bool](./issupplementaryinterfacehidden.md)
   A Boolean value that indicates whether the view hides supplementary interface objects.
-- [func hasInteractiveItem(at: CGPoint) -> Bool](imageanalysisinteraction/hasinteractiveitem(at:).md)
+- [func hasInteractiveItem(at: CGPoint) -> Bool](./hasinteractiveitem%28at%29.md)
   Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.
-- [func hasSupplementaryInterface(at: CGPoint) -> Bool](imageanalysisinteraction/hassupplementaryinterface(at:).md)
+- [func hasSupplementaryInterface(at: CGPoint) -> Bool](./hassupplementaryinterface%28at%29.md)
   Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.
 
 

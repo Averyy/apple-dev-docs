@@ -1,7 +1,8 @@
 # serverSideProcessingTimeout
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls how much time, in seconds, we will allow for the server to process the command.
 
@@ -19,6 +20,10 @@ Controls how much time, in seconds, we will allow for the server to process the 
 ```swift
 @NSCopying
 var serverSideProcessingTimeout: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSNumber * serverSideProcessingTimeout;
 ```
 
 #### Discussion

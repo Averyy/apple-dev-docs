@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ntptimeval {
     ...
 };
@@ -17,11 +17,11 @@ struct ntptimeval {
 ## Topics
 
 ### Instance Properties
-- [esterror](ntptimeval/2876393-esterror.md)
-- [maxerror](ntptimeval/2876392-maxerror.md)
-- [tai](ntptimeval/2876425-tai.md)
-- [time](ntptimeval/2876383-time.md)
-- [time_state](ntptimeval/2876382-time_state.md)
+- [esterror](./ntptimeval/api-2876393-esterror.md)
+- [maxerror](./ntptimeval/api-2876392-maxerror.md)
+- [tai](./ntptimeval/api-2876425-tai.md)
+- [time](./ntptimeval/api-2876383-time.md)
+- [time_state](./ntptimeval/api-2876382-time_state.md)
 
 
 ---

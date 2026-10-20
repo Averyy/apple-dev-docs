@@ -1,9 +1,10 @@
 # makeSurfaceShader(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Synchronous variant of [`makeSurfaceShader(descriptor:)`](lowlevelrendercontextstandalone/makesurfaceshader(descriptor:).md). Blocks the current thread until compilation completes.
+Synchronous variant of [`makeSurfaceShader(descriptor:)`](./makesurfaceshader%28descriptor%29.md). Blocks the current thread until compilation completes.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,13 @@ Synchronous variant of [`makeSurfaceShader(descriptor:)`](lowlevelrendercontexts
 
 ```swift
 final func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) throws -> sending LowLevelMaterialResource.SurfaceShader
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) final func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
 

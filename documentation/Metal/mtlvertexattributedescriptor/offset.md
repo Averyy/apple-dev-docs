@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
 
@@ -10,7 +11,7 @@ The location of an attribute in vertex data, determined by the byte offset from 
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ The location of an attribute in vertex data, determined by the byte offset from 
 var offset: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger offset;
+```
+
 #### Discussion
 
-Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
+Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 
-- [var format: MTLVertexFormat](mtlvertexattributedescriptor/format.md)
+### Organizing the vertex attribute
+- [var format: MTLVertexFormat](./format.md)
   The format of the vertex attribute.
-- [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
+- [var bufferIndex: Int](./bufferindex.md)
   The index in the argument table for the associated vertex buffer.
-- [enum MTLVertexFormat](mtlvertexformat.md)
+- [enum MTLVertexFormat](../mtlvertexformat.md)
   The vertex data format options for render pipelines.
 
 

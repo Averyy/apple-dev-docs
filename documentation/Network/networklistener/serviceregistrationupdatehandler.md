@@ -1,7 +1,8 @@
 # NetworkListener.ServiceRegistrationUpdateHandler
 
 **Framework**: Network  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 26.0+

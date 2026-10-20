@@ -1,7 +1,8 @@
 # NSPersistentHistoryResultType.count
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The number of persistent history changes since the requested date, token, or transaction.
 
@@ -20,17 +21,22 @@ The number of persistent history changes since the requested date, token, or tra
 case count
 ```
 
+```c
+NSPersistentHistoryResultTypeCount
+```
+
 ## See Also
 
-- [NSPersistentHistoryResultType.statusOnly](nspersistenthistoryresulttype/statusonly.md)
+### Result Types
+- [NSPersistentHistoryResultType.statusOnly](./statusonly.md)
   The status of the persistent history change request.
-- [NSPersistentHistoryResultType.objectIDs](nspersistenthistoryresulttype/objectids.md)
+- [NSPersistentHistoryResultType.objectIDs](./objectids.md)
   The identifiers of managed objects changed since the requested date, token, or transaction.
-- [NSPersistentHistoryResultType.transactionsAndChanges](nspersistenthistoryresulttype/transactionsandchanges.md)
+- [NSPersistentHistoryResultType.transactionsAndChanges](./transactionsandchanges.md)
   The persistent history transactions and changes since the requested date, token, or transaction.
-- [NSPersistentHistoryResultType.transactionsOnly](nspersistenthistoryresulttype/transactionsonly.md)
+- [NSPersistentHistoryResultType.transactionsOnly](./transactionsonly.md)
   The persistent history transactions since the requested date, token, or transaction.
-- [NSPersistentHistoryResultType.changesOnly](nspersistenthistoryresulttype/changesonly.md)
+- [NSPersistentHistoryResultType.changesOnly](./changesonly.md)
   The persistent history changes since the requested date, token, or transaction.
 
 

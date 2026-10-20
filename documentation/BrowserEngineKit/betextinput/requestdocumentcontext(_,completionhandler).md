@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gathers context for the system about the current document.
@@ -15,14 +16,23 @@ Gathers context for the system about the current document.
 ## Declaration
 
 ```swift
+func requestDocumentContext(_ request: BETextDocumentRequest, completionHandler: @escaping @Sendable (BETextDocumentContext) -> Void)
+```
+
+```swift
 func requestDocumentContext(_ request: BETextDocumentRequest) async -> BETextDocumentContext
+```
+
+```objc
+- (void) requestDocumentContext:(BETextDocumentRequest *) request completionHandler:(void (^)(BETextDocumentContext *)) completionHandler;
 ```
 
 ## See Also
 
-- [func requestTextContextForAutocorrection(completionHandler: (BETextDocumentContext) -> Void)](betextinput/requesttextcontextforautocorrection(completionhandler:).md)
+### Requesting context
+- [func requestTextContextForAutocorrection(completionHandler: (BETextDocumentContext) -> Void)](./requesttextcontextforautocorrection%28completionhandler%29.md)
   A method the text system calls to get extra information for autocorrection suggestions.
-- [func requestTextRects(for: String, withCompletionHandler: ([UITextSelectionRect]) -> Void)](betextinput/requesttextrects(for:withcompletionhandler:).md)
+- [func requestTextRects(for: String, withCompletionHandler: ([UITextSelectionRect]) -> Void)](./requesttextrects%28for,withcompletionhandler%29.md)
   Gathers context for the presentation of a text-related user interface.
 
 

@@ -1,7 +1,8 @@
 # NSURLRequest.Attribution
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The entities that can make a network request.
 
@@ -20,33 +21,38 @@ The entities that can make a network request.
 enum Attribution
 ```
 
+```c
+enum NSURLRequestAttribution : NSUInteger;
+```
+
 #### Overview
 
-Use one of these values when setting the [`attribution`](urlrequest/attribution-swift.property.md) parameter of a [`URLRequest`](urlrequest.md). If you don’t set a value, the system assumes [`NSURLRequest.Attribution.developer`](nsurlrequest/attribution-swift.enum/developer.md).
+Use one of these values when setting the [`attribution`](../urlrequest/attribution-swift.property.md) parameter of a [`URLRequest`](../urlrequest.md). If you don’t set a value, the system assumes [`NSURLRequest.Attribution.developer`](./attribution-swift.enum/developer.md).
 
 ## Topics
 
 ### Request sources
-- [NSURLRequest.Attribution.developer](nsurlrequest/attribution-swift.enum/developer.md)
+- [NSURLRequest.Attribution.developer](./attribution-swift.enum/developer.md)
   A developer-initiated network request.
-- [NSURLRequest.Attribution.user](nsurlrequest/attribution-swift.enum/user.md)
+- [NSURLRequest.Attribution.user](./attribution-swift.enum/user.md)
   The user explicitly directs the app to make a network request.
 ### Initializers
-- [init?(rawValue: UInt)](nsurlrequest/attribution-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./attribution-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var attribution: NSURLRequest.Attribution](nsmutableurlrequest/attribution.md)
+### Indicating the source of the request
+- [var attribution: NSURLRequest.Attribution](../nsmutableurlrequest/attribution.md)
   The entity that initiates the network request.
 
 

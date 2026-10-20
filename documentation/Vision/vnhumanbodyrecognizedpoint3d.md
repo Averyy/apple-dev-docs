@@ -1,7 +1,8 @@
 # VNHumanBodyRecognizedPoint3D
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A recognized 3D point that includes a parent joint.
 
@@ -19,53 +20,58 @@ A recognized 3D point that includes a parent joint.
 class VNHumanBodyRecognizedPoint3D
 ```
 
+```objc
+@interface VNHumanBodyRecognizedPoint3D : VNRecognizedPoint3D
+```
+
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](./identifying-3d-human-body-poses-in-images.md)
 
 ## Topics
 
 ### Getting the Position
-- [var localPosition: simd_float4x4](vnhumanbodyrecognizedpoint3d/localposition.md)
+- [var localPosition: simd_float4x4](./vnhumanbodyrecognizedpoint3d/localposition.md)
   The three-dimensional position.
 ### Getting the Parent Joint
-- [var parentJoint: VNHumanBodyPose3DObservation.JointName](vnhumanbodyrecognizedpoint3d/parentjoint.md)
+- [var parentJoint: VNHumanBodyPose3DObservation.JointName](./vnhumanbodyrecognizedpoint3d/parentjoint.md)
   The parent joint in the observation.
 
 ## Relationships
 
 ### Inherits From
-- [VNRecognizedPoint3D](vnrecognizedpoint3d.md)
+- [VNRecognizedPoint3D](./vnrecognizedpoint3d.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+### 3D body pose detection
+- [Identifying 3D human body poses in images](./identifying-3d-human-body-poses-in-images.md)
   Detect three-dimensional human body poses using the Vision framework.
-- [Detecting human body poses in 3D with Vision](detecting-human-body-poses-in-3d-with-vision.md)
+- [Detecting human body poses in 3D with Vision](./detecting-human-body-poses-in-3d-with-vision.md)
   Render skeletons of 3D body pose points in a scene overlaying the input image.
-- [class VNDetectHumanBodyPose3DRequest](vndetecthumanbodypose3drequest.md)
+- [class VNDetectHumanBodyPose3DRequest](./vndetecthumanbodypose3drequest.md)
   A request that detects points on human bodies in 3D space, relative to the camera.
-- [class VNHumanBodyPose3DObservation](vnhumanbodypose3dobservation.md)
+- [class VNHumanBodyPose3DObservation](./vnhumanbodypose3dobservation.md)
   An observation that provides the 3D body points the request recognizes.
-- [class VNRecognizedPoints3DObservation](vnrecognizedpoints3dobservation.md)
+- [class VNRecognizedPoints3DObservation](./vnrecognizedpoints3dobservation.md)
   An observation that provides the 3D points for a request.
-- [class VNPoint3D](vnpoint3d.md)
+- [class VNPoint3D](./vnpoint3d.md)
   An object that represents a 3D point in an image.
-- [class VNRecognizedPoint3D](vnrecognizedpoint3d.md)
+- [class VNRecognizedPoint3D](./vnrecognizedpoint3d.md)
   A 3D point that includes an identifier to the point.
-- [VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname.md)
+- [VNHumanBodyPose3DObservation.JointName](./vnhumanbodypose3dobservation/jointname.md)
   The joint names for a 3D body pose.
-- [VNHumanBodyPose3DObservation.JointsGroupName](vnhumanbodypose3dobservation/jointsgroupname.md)
+- [VNHumanBodyPose3DObservation.JointsGroupName](./vnhumanbodypose3dobservation/jointsgroupname.md)
   The joint group names for a 3D body pose.
 
 

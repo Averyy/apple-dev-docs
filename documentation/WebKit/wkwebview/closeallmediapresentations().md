@@ -1,14 +1,17 @@
 # closeAllMediaPresentations()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- visionOS 1.0+
+- iOS 14.5+ - Deprecated in 15.0
+- iPadOS 14.5+ - Deprecated in 15.0
+- Mac Catalyst 14.5+ - Deprecated in 15.0
+- macOS 11.3+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`closeAllMediaPresentations(completionHandler:)`](./closeallmediapresentations%28completionhandler%29.md) instead.
 
 ## Declaration
 
@@ -16,12 +19,17 @@
 func closeAllMediaPresentations()
 ```
 
+```objc
+- (void) closeAllMediaPresentations;
+```
+
 ## See Also
 
-- [var certificateChain: [Any]](wkwebview/certificatechain.md)
+### Deprecated
+- [var certificateChain: [Any]](./certificatechain.md)
   An array of objects forming the certificate chain for the currently committed navigation.
-- [func loadSimulatedRequest(URLRequest, with: URLResponse, responseData: Data) -> WKNavigation](wkwebview/loadsimulatedrequest(_:with:responsedata:).md)
-- [func loadSimulatedRequest(URLRequest, withResponseHTML: String) -> WKNavigation](wkwebview/loadsimulatedrequest(_:withresponsehtml:).md)
+- [func loadSimulatedRequest(URLRequest, with: URLResponse, responseData: Data) -> WKNavigation](./loadsimulatedrequest%28_,with,responsedata%29.md)
+- [func loadSimulatedRequest(URLRequest, withResponseHTML: String) -> WKNavigation](./loadsimulatedrequest%28_,withresponsehtml%29.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # ICReturnPTPDeviceError.Code
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -16,28 +17,33 @@
 enum Code
 ```
 
+```c
+enum ICReturnPTPDeviceErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [ICReturnPTPDeviceError.Code.failedToSendCommand](icreturnptpdeviceerror/code/failedtosendcommand.md)
+- [ICReturnPTPDeviceError.Code.failedToSendCommand](./code/failedtosendcommand.md)
   Sending a PTP command failed.
-- [ICReturnPTPDeviceError.Code.notAuthorizedToSendCommand](icreturnptpdeviceerror/code/notauthorizedtosendcommand.md)
+- [ICReturnPTPDeviceError.Code.notAuthorizedToSendCommand](./code/notauthorizedtosendcommand.md)
 ### Initializers
-- [init?(rawValue: Int)](icreturnptpdeviceerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var failedToSendCommand: ICReturnPTPDeviceError.Code](icreturnptpdeviceerror/failedtosendcommand.md)
+### Error Codes
+- [static var failedToSendCommand: ICReturnPTPDeviceError.Code](./failedtosendcommand.md)
   Sending a PTP command failed.
 
 

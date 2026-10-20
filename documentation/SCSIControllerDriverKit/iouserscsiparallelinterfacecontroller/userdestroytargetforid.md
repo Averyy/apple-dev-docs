@@ -1,22 +1,23 @@
 # UserDestroyTargetForID
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Destroys the specified target.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserDestroyTargetForID(SCSITargetIdentifier targetID);
 ```
 
 #### Return Value
 
-A value that indicates the result of target removal. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of target removal. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
@@ -28,15 +29,16 @@ Your driver extension calls this method to remove the target with the specified 
 
 ## See Also
 
-- [UserInitializeTargetForID](iouserscsiparallelinterfacecontroller/userinitializetargetforid.md)
+### Managing targets
+- [UserInitializeTargetForID](./userinitializetargetforid.md)
   Initializes a target device in response to a call from the framework.
-- [UserCreateTargetForID](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md)
+- [UserCreateTargetForID](./usercreatetargetforid.md)
   Creates the specified target.
-- [UserTargetPresentForID](iouserscsiparallelinterfacecontroller/usertargetpresentforid.md)
+- [UserTargetPresentForID](./usertargetpresentforid.md)
   Checks if a specific target is present.
-- [UserSetTargetProperties](iouserscsiparallelinterfacecontroller/usersettargetproperties.md)
+- [UserSetTargetProperties](./usersettargetproperties.md)
   Sets properties on the target.
-- [UserRemoveTargetProperties](iouserscsiparallelinterfacecontroller/userremovetargetproperties.md)
+- [UserRemoveTargetProperties](./userremovetargetproperties.md)
   Removes properties from a target.
 
 

@@ -1,7 +1,8 @@
 # frameSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame size.
 
@@ -21,15 +22,16 @@ let frameSize: CGSize
 
 ## See Also
 
-- [var count: Int?](videoreader/asyncframes/count.md)
+### Getting the properties
+- [var count: Int?](./count.md)
   The number of frames. For this sequence count is always nil.
-- [let nominalFrameRate: Float](videoreader/asyncframes/nominalframerate.md)
+- [let nominalFrameRate: Float](./nominalframerate.md)
   The nominal frame rate.
-- [let timescale: CMTimeScale](videoreader/asyncframes/timescale.md)
+- [let timescale: CMTimeScale](./timescale.md)
   The timescale of the video track.
-- [let url: URL](videoreader/asyncframes/url.md)
+- [let url: URL](./url.md)
   The video file URL, used when throwing an error.
-- [let videoDuration: CMTime](videoreader/asyncframes/videoduration.md)
+- [let videoDuration: CMTime](./videoduration.md)
   The video duration.
 
 

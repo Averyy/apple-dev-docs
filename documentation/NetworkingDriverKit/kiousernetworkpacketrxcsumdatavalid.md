@@ -1,29 +1,31 @@
 # kIOUserNetworkPacketRxCsumDataValid
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkPacketRxCsumDataValid
 ```
 
 ## See Also
 
-- [kIOUserNetworkPacketRxCsumIPChecked](kiousernetworkpacketrxcsumipchecked.md)
-- [kIOUserNetworkPacketRxCsumIPValid](kiousernetworkpacketrxcsumipvalid.md)
-- [kIOUserNetworkPacketRxCsumPseudoHdr](kiousernetworkpacketrxcsumpseudohdr.md)
-- [kIOUserNetworkPacketTxCsumIPHdr](kiousernetworkpackettxcsumiphdr.md)
-- [kIOUserNetworkPacketTxCsumPartial](kiousernetworkpackettxcsumpartial.md)
-- [kIOUserNetworkPacketTxCsumTCPIPV4](kiousernetworkpackettxcsumtcpipv4.md)
-- [kIOUserNetworkPacketTxCsumTCPIPV6](kiousernetworkpackettxcsumtcpipv6.md)
-- [kIOUserNetworkPacketTxCsumUDPIPV4](kiousernetworkpackettxcsumudpipv4.md)
-- [kIOUserNetworkPacketTxCsumUDPIPV6](kiousernetworkpackettxcsumudpipv6.md)
-- [kIOUserNetworkPacketTxCsumZeroInvert](kiousernetworkpackettxcsumzeroinvert.md)
+### Packet checksums
+- [kIOUserNetworkPacketRxCsumIPChecked](./kiousernetworkpacketrxcsumipchecked.md)
+- [kIOUserNetworkPacketRxCsumIPValid](./kiousernetworkpacketrxcsumipvalid.md)
+- [kIOUserNetworkPacketRxCsumPseudoHdr](./kiousernetworkpacketrxcsumpseudohdr.md)
+- [kIOUserNetworkPacketTxCsumIPHdr](./kiousernetworkpackettxcsumiphdr.md)
+- [kIOUserNetworkPacketTxCsumPartial](./kiousernetworkpackettxcsumpartial.md)
+- [kIOUserNetworkPacketTxCsumTCPIPV4](./kiousernetworkpackettxcsumtcpipv4.md)
+- [kIOUserNetworkPacketTxCsumTCPIPV6](./kiousernetworkpackettxcsumtcpipv6.md)
+- [kIOUserNetworkPacketTxCsumUDPIPV4](./kiousernetworkpackettxcsumudpipv4.md)
+- [kIOUserNetworkPacketTxCsumUDPIPV6](./kiousernetworkpackettxcsumudpipv6.md)
+- [kIOUserNetworkPacketTxCsumZeroInvert](./kiousernetworkpackettxcsumzeroinvert.md)
 
 
 ---

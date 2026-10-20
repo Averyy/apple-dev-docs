@@ -1,7 +1,8 @@
 # inserted
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of model objects the framework inserted into the finance store.
 
@@ -17,11 +18,12 @@ let inserted: [Model]
 
 ## See Also
 
-- [let deleted: [Model.ID]](financestore/changes/deleted.md)
+### Instance Properties
+- [let deleted: [Model.ID]](./deleted.md)
   An array of model objects identifiers that the framework deleted from the finance store.
-- [let newToken: FinanceStore.HistoryToken](financestore/changes/newtoken.md)
+- [let newToken: FinanceStore.HistoryToken](./newtoken.md)
   An updated history token that you can use to query more historical data.
-- [let updated: [Model]](financestore/changes/updated.md)
+- [let updated: [Model]](./updated.md)
   An array of model objects that the framework updated in the finance store.
 
 

@@ -1,28 +1,31 @@
 # APFileDescriptionKey
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A short description of the file or folder that appears in the Info window.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `APFileDescriptionKey` (Install file description text)
+- **Type**: string
 
 ## See Also
 
-- [APDisplayedAsContainer](information-property-list/apfiles/apdisplayedascontainer.md)
+### Property List Keys
+- [APDisplayedAsContainer](./apdisplayedascontainer.md)
   A Boolean value indicating whether the file or a folder icon is displayed in the Info window.
-- [APFileDestinationPath](information-property-list/apfiles/apfiledestinationpath.md)
+- [APFileDestinationPath](./apfiledestinationpath.md)
   The path to use when installing the file or folder, relative to the app bundle.
-- [APFileName](information-property-list/apfiles/apfilename.md)
+- [APFileName](./apfilename.md)
   The name of the file or folder to install.
-- [APFileSourcePath](information-property-list/apfiles/apfilesourcepath.md)
+- [APFileSourcePath](./apfilesourcepath.md)
   The path to the file or folder in the app package, relative to the installer path.
-- [APInstallAction](information-property-list/apfiles/apinstallaction.md)
+- [APInstallAction](./apinstallaction.md)
   The action to take on the file or folder.
 
 

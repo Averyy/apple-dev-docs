@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_CRL_NOT_VALID_YET
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLETP_CRL_NOT_VALID_YET: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_CRL_NOT_VALID_YET
 ```
 
 

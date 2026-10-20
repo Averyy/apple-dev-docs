@@ -1,9 +1,10 @@
 # NSCollectionView.DropOperation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants specify if acceptance of a drop should be at the item it is dropped on or before the item. These constants are used by the  [`collectionView(_:acceptDrop:index:dropOperation:)`](nscollectionviewdelegate/collectionview(_:acceptdrop:index:dropoperation:).md) and [`collectionView(_:validateDrop:proposedIndex:dropOperation:)`](nscollectionviewdelegate/collectionview(_:validatedrop:proposedindex:dropoperation:).md) methods in [`NSCollectionViewDelegate`](nscollectionviewdelegate.md)
+These constants specify if acceptance of a drop should be at the item it is dropped on or before the item. These constants are used by the  [`collectionView(_:acceptDrop:index:dropOperation:)`](../nscollectionviewdelegate/collectionview%28_,acceptdrop,index,dropoperation%29.md) and [`collectionView(_:validateDrop:proposedIndex:dropOperation:)`](../nscollectionviewdelegate/collectionview%28_,validatedrop,proposedindex,dropoperation%29.md) methods in [`NSCollectionViewDelegate`](../nscollectionviewdelegate.md)
 
 **Availability**:
 - macOS 10.6+
@@ -14,29 +15,34 @@ These constants specify if acceptance of a drop should be at the item it is drop
 enum DropOperation
 ```
 
+```c
+enum NSCollectionViewDropOperation : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSCollectionView.DropOperation.on](nscollectionview/dropoperation/on.md)
+- [NSCollectionView.DropOperation.on](./dropoperation/on.md)
   The drop occurs at the collection view item to which the item was dragged.
-- [NSCollectionView.DropOperation.before](nscollectionview/dropoperation/before.md)
+- [NSCollectionView.DropOperation.before](./dropoperation/before.md)
   The drop occurs before the collection view item to which the item was dragged.
 ### Initializers
-- [init?(rawValue: Int)](nscollectionview/dropoperation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./dropoperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSCollectionView.ScrollPosition](nscollectionview/scrollposition.md)
+### Constants
+- [NSCollectionView.ScrollPosition](./scrollposition.md)
   Constants indicating the options for scrolling the collection view’s content.
 
 

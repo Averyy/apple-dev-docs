@@ -1,7 +1,8 @@
 # SystemPolicyManaged
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the Finder’s contextual menu to bypass the system policy.
 
@@ -10,7 +11,7 @@ The payload that configures the Finder’s contextual menu to bypass the system 
 
 ## Declaration
 
-```swift
+```
 object SystemPolicyManaged
 ```
 
@@ -18,7 +19,7 @@ object SystemPolicyManaged
 
 Specify `com.apple.systempolicy.managed` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.systempolicy.managed` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,13 +71,16 @@ Specify `com.apple.systempolicy.managed` as the payload type.
 
 - `DisableOverride` (boolean): If `true`, disables the Finder’s contextual menu item.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object SystemPolicyControl](systempolicycontrol.md)
+### System policy
+- [object SystemPolicyControl](./systempolicycontrol.md)
   The payload that configures the system policy for assessments.
-- [object SystemPolicyKernelExtensions](systempolicykernelextensions.md)
+- [object SystemPolicyKernelExtensions](./systempolicykernelextensions.md)
   The payload that configures the kernel extension policies.
-- [object SystemPolicyRule](systempolicyrule.md)
+- [object SystemPolicyRule](./systempolicyrule.md)
   The payload that configures the system policy.
 
 

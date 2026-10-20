@@ -1,7 +1,8 @@
 # viewDidAppear()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func viewDidAppear()
+```
+
+```objc
+- (void) viewDidAppear;
 ```
 
 

@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the popover.
 
@@ -12,6 +13,10 @@ Closes the popover.
 
 ```swift
 func close()
+```
+
+```objc
+- (void) close;
 ```
 
 

@@ -1,7 +1,8 @@
 # supportedLocales()
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 All locales supported by existing tables.
 
@@ -18,6 +19,10 @@ All locales supported by existing tables.
 
 ```swift
 class func supportedLocales() -> Set<Locale>
+```
+
+```objc
++ (NSSet<NSLocale *> *) supportedLocales;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(bigEndian:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer from its big-endian representation, changing the byte order if necessary.
 

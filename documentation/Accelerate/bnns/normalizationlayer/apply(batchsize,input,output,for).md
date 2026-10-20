@@ -1,7 +1,8 @@
 # apply(batchSize:input:output:for:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the layer to a set of input objects, writing the result to a set of output objects.
 
@@ -11,8 +12,10 @@ Applies the layer to a set of input objects, writing the result to a set of outp
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -29,7 +32,8 @@ func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDesc
 
 ## See Also
 
-- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor, generatingBetaGradient: BNNSNDArrayDescriptor?, generatingGammaGradient: BNNSNDArrayDescriptor?) throws](bnns/normalizationlayer/applybackward(batchsize:input:output:outputgradient:generatinginputgradient:generatingbetagradient:generatinggammagradient:).md)
+### Applying a Normalization Layer
+- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor, generatingBetaGradient: BNNSNDArrayDescriptor?, generatingGammaGradient: BNNSNDArrayDescriptor?) throws](./applybackward%28batchsize,input,output,outputgradient,generatinginputgradient,generatingbetagradient,generatinggammagradient%29.md)
   Applies the layer backward to generate input gradients.
 
 

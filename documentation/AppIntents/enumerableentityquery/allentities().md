@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns all available results.
@@ -12,7 +13,7 @@ Returns all available results.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -20,6 +21,11 @@ Returns all available results.
 ```swift
 func allEntities() async throws -> Self.Result
 ```
+
+## Default Implementations
+
+### EnumerableEntityQuery Implementations
+- [func allEntities() async throws -> [Self.Unique]](./allentities%28%29-9mekw.md)
 
 
 ---

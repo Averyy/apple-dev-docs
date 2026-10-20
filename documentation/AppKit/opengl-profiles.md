@@ -1,6 +1,7 @@
 # OpenGL Profiles
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Constants that specify the functionality provided by the renderer.
 
@@ -11,17 +12,18 @@ An OpenGL Profile is requested as part of the pixel format attributes string. Wh
 ## Topics
 
 ### Constants
-- [var NSOpenGLProfileVersionLegacy: Int](nsopenglprofileversionlegacy.md)
+- [var NSOpenGLProfileVersionLegacy: Int](./nsopenglprofileversionlegacy.md)
   The requested profile is a legacy (pre-OpenGL 3.0) profile.
-- [var NSOpenGLProfileVersion3_2Core: Int](nsopenglprofileversion3_2core.md)
+- [var NSOpenGLProfileVersion3_2Core: Int](./nsopenglprofileversion3_2core.md)
   The requested profile must implement the OpenGL 3.2 core functionality.
-- [var NSOpenGLProfileVersion4_1Core: Int](nsopenglprofileversion4_1core.md)
+- [var NSOpenGLProfileVersion4_1Core: Int](./nsopenglprofileversion4_1core.md)
 
 ## See Also
 
-- [typealias NSOpenGLPixelFormatAttribute](nsopenglpixelformatattribute.md)
+### Constants
+- [typealias NSOpenGLPixelFormatAttribute](./nsopenglpixelformatattribute.md)
   Pixel format attributes for OpenGL.
-- [OpenGL Pixel Format Attributes](opengl-pixel-format-attributes.md)
+- [OpenGL Pixel Format Attributes](./opengl-pixel-format-attributes.md)
   Pixel format attributes for OpenGL.
 
 

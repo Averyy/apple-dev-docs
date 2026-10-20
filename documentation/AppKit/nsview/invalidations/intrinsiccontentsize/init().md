@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the invalidation type.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [var intrinsicContentSize: NSSize](nsview/intrinsiccontentsize.md)
+### Creating the invalidation type
+- [var intrinsicContentSize: NSSize](../../intrinsiccontentsize.md)
   The natural size for the receiving view, considering only properties of the view itself.
 
 

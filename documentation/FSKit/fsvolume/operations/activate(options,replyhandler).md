@@ -2,37 +2,47 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Activates the volume using the specified options.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
+
+```swift
+func activate(options: FSTaskOptions, replyHandler reply: @escaping @Sendable (FSItem?, (any Error)?) -> Void)
+```
 
 ```swift
 func activate(options: FSTaskOptions) async throws -> FSItem
 ```
 
+```objc
+- (void) activateWithOptions:(FSTaskOptions *) options replyHandler:(void (^)(FSItem *rootItem, NSError *err)) reply;
+```
+
 #### Discussion
 
-When FSKit calls this method, allocate any in-memory state required to represent the file system. Also allocate an [`FSItem`](fsitem.md) for the root directory of the file system, and pass it to the reply block. FSKit caches this root item for the lifetime of the volume, and uses it as a starting point for all file look-ups.
+When FSKit calls this method, allocate any in-memory state required to represent the file system. Also allocate an [`FSItem`](../../fsitem.md) for the root directory of the file system, and pass it to the reply block. FSKit caches this root item for the lifetime of the volume, and uses it as a starting point for all file look-ups.
 
 Volume activation occurs prior to any call to mount the volume.
 
 ## Parameters
 
 - `options`: Options to apply to the activation. These can include security-scoped file paths. There are no defined options currently.
-- `reply`: A block or closure to indicate success or failure. If activation succeeds, pass the root [`FSItem`](fsitem.md) and a `nil` error. If activation fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem`](fsitem.md) in this case. In Swift, `reply` takes only the [`FSItem`](fsitem.md) as the parameter; you signal any error with a `throw`. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem`](fsitem.md) or throw an error.
+- `reply`: A block or closure to indicate success or failure. If activation succeeds, pass the root [`FSItem`](../../fsitem.md) and a `nil` error. If activation fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem`](../../fsitem.md) in this case. In Swift, `reply` takes only the [`FSItem`](../../fsitem.md) as the parameter; you signal any error with a `throw`. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem`](../../fsitem.md) or throw an error.
 
 ## See Also
 
-- [class FSItem](fsitem.md)
+### Handling activation and deactivation
+- [class FSItem](../../fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [func deactivate(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/deactivate(options:replyhandler:).md)
+- [func deactivate(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](./deactivate%28options,replyhandler%29.md)
   Tears down a previously initialized volume instance.
-- [struct FSDeactivateOptions](fsdeactivateoptions.md)
+- [struct FSDeactivateOptions](../../fsdeactivateoptions.md)
   Options that affect the behavior of deactivate methods.
 
 

@@ -1,7 +1,8 @@
 # ownerAudioUnit
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio unit that owns the bus.
 
@@ -19,25 +20,38 @@ The audio unit that owns the bus.
 unowned(unsafe) var ownerAudioUnit: AUAudioUnit { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, assign, readonly) AUAudioUnit * ownerAudioUnit;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) AUAudioUnit * ownerAudioUnit;
+```
+
 ## See Also
 
-- [func setFormat(AVAudioFormat) throws](auaudiounitbus/setformat(_:).md)
+### Bus Methods and Properties
+- [func setFormat(AVAudioFormat) throws](./setformat%28_%29.md)
   Sets the bus’s audio format.
-- [var format: AVAudioFormat](auaudiounitbus/format.md)
+- [var format: AVAudioFormat](./format.md)
   The audio format and channel layout of audio being transferred on the bus.
-- [var isEnabled: Bool](auaudiounitbus/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   Determines whether the bus is active.
-- [var name: String?](auaudiounitbus/name.md)
+- [var name: String?](./name.md)
   A name for the bus.
-- [var index: Int](auaudiounitbus/index.md)
+- [var index: Int](./index.md)
   The index of this bus in its containing array.
-- [var busType: AUAudioUnitBusType](auaudiounitbus/bustype.md)
+- [var busType: AUAudioUnitBusType](./bustype.md)
   The bus type.
-- [var supportedChannelLayoutTags: [NSNumber]?](auaudiounitbus/supportedchannellayouttags.md)
+- [var supportedChannelLayoutTags: [NSNumber]?](./supportedchannellayouttags.md)
   An array of audio channel layout tags.
-- [var contextPresentationLatency: TimeInterval](auaudiounitbus/contextpresentationlatency.md)
+- [var contextPresentationLatency: TimeInterval](./contextpresentationlatency.md)
   Information about latency in the audio unit’s processing context.
-- [var shouldAllocateBuffer: Bool](auaudiounitbus/shouldallocatebuffer.md)
+- [var shouldAllocateBuffer: Bool](./shouldallocatebuffer.md)
 
 
 ---

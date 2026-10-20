@@ -1,11 +1,12 @@
 # FormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func format(URL) -> String](url/formatstyle/format(_:).md)
+- [func format(URL) -> String](./format%28_%29.md)
   Formats a URL, using this style.
 
 

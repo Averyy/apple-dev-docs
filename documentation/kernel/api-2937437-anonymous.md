@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOBitsPerColorComponent10](2937437-anonymous/kiobitspercolorcomponent10.md)
-- [kIOBitsPerColorComponent12](2937437-anonymous/kiobitspercolorcomponent12.md)
-- [kIOBitsPerColorComponent16](2937437-anonymous/kiobitspercolorcomponent16.md)
-- [kIOBitsPerColorComponent6](2937437-anonymous/kiobitspercolorcomponent6.md)
-- [kIOBitsPerColorComponent8](2937437-anonymous/kiobitspercolorcomponent8.md)
-- [kIOBitsPerColorComponentNotSupported](2937437-anonymous/kiobitspercolorcomponentnotsupported.md)
+- [kIOBitsPerColorComponent10](./api-2937437-anonymous/kiobitspercolorcomponent10.md)
+- [kIOBitsPerColorComponent12](./api-2937437-anonymous/kiobitspercolorcomponent12.md)
+- [kIOBitsPerColorComponent16](./api-2937437-anonymous/kiobitspercolorcomponent16.md)
+- [kIOBitsPerColorComponent6](./api-2937437-anonymous/kiobitspercolorcomponent6.md)
+- [kIOBitsPerColorComponent8](./api-2937437-anonymous/kiobitspercolorcomponent8.md)
+- [kIOBitsPerColorComponentNotSupported](./api-2937437-anonymous/kiobitspercolorcomponentnotsupported.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # subscriptionStoreOptionGroupStyle(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -21,10 +22,11 @@
 
 ## See Also
 
+### Styling subscription option groups
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
-](../swiftui/view/subscriptionstoreoptiongroupstyle(_:).md)
+](../../SwiftUI/view/subscriptionstoreoptiongroupstyle%28_%29.md)
   Sets the style subscription store views within this view use to display groups of subscription options.
-- [protocol SubscriptionOptionGroupStyle](subscriptionoptiongroupstyle.md)
+- [protocol SubscriptionOptionGroupStyle](../subscriptionoptiongroupstyle.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # ml_io_read32
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_io_read32(uintptr_t iovaddr);
 ```
 

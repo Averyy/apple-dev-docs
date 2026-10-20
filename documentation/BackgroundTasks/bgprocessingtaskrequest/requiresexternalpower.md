@@ -1,7 +1,8 @@
 # requiresExternalPower
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean specifying if the processing task requires a device connected to power.
 
@@ -18,9 +19,14 @@ A Boolean specifying if the processing task requires a device connected to power
 var requiresExternalPower: Bool { get set }
 ```
 
+```objc
+@property (assign) BOOL requiresExternalPower;
+```
+
 ## See Also
 
-- [var requiresNetworkConnectivity: Bool](bgprocessingtaskrequest/requiresnetworkconnectivity.md)
+### Setting Task Request Options
+- [var requiresNetworkConnectivity: Bool](./requiresnetworkconnectivity.md)
   A Boolean specifying if the processing task requires network connectivity.
 
 

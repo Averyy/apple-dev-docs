@@ -1,11 +1,12 @@
 # kAudioDataSourceControlClassID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,13 +14,18 @@
 var kAudioDataSourceControlClassID: AudioClassID { get }
 ```
 
+```c
+kAudioDataSourceControlClassID
+```
+
 ## See Also
 
-- [var kAudioClockSourceControlClassID: AudioClassID](kaudioclocksourcecontrolclassid.md)
-- [var kAudioDataDestinationControlClassID: AudioClassID](kaudiodatadestinationcontrolclassid.md)
-- [var kAudioHighPassFilterControlClassID: AudioClassID](kaudiohighpassfiltercontrolclassid.md)
-- [var kAudioLineLevelControlClassID: AudioClassID](kaudiolinelevelcontrolclassid.md)
-- [var kAudioSelectorControlClassID: AudioClassID](kaudioselectorcontrolclassid.md)
+### Constants
+- [var kAudioClockSourceControlClassID: AudioClassID](./kaudioclocksourcecontrolclassid.md)
+- [var kAudioDataDestinationControlClassID: AudioClassID](./kaudiodatadestinationcontrolclassid.md)
+- [var kAudioHighPassFilterControlClassID: AudioClassID](./kaudiohighpassfiltercontrolclassid.md)
+- [var kAudioLineLevelControlClassID: AudioClassID](./kaudiolinelevelcontrolclassid.md)
+- [var kAudioSelectorControlClassID: AudioClassID](./kaudioselectorcontrolclassid.md)
 
 
 ---

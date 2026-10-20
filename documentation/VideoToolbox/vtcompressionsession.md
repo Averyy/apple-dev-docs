@@ -1,7 +1,8 @@
 # VTCompressionSession
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a VideoToolbox compression session.
 
@@ -19,6 +20,10 @@ A reference to a VideoToolbox compression session.
 class VTCompressionSession
 ```
 
+```c
+typedef struct OpaqueVTCompressionSession * VTCompressionSessionRef;
+```
+
 #### Overview
 
 A compression session supports the compression of a sequence of video frames. The session is a reference-counted CoreFoundation (CF) object.
@@ -26,12 +31,13 @@ A compression session supports the compression of a sequence of video frames. Th
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct VTEncodeInfoFlags](vtencodeinfoflags.md)
+### Data Types
+- [struct VTEncodeInfoFlags](./vtencodeinfoflags.md)
   Flags that indicate encoder state.
 
 

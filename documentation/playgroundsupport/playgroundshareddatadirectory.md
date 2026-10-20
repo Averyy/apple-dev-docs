@@ -1,7 +1,8 @@
 # playgroundSharedDataDirectory
 
 **Framework**: Playground Support  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The path to the directory containing data shared between all playgrounds in Xcode.
 
@@ -21,9 +22,10 @@ Use this directory to store data that must be persisted between playground runs 
 
 ## See Also
 
-- [class PlaygroundKeyValueStore](playgroundkeyvaluestore.md)
+### Data Persistence
+- [class PlaygroundKeyValueStore](./playgroundkeyvaluestore.md)
   A data storage container you use to persist information across different sessions.
-- [enum PlaygroundValue](playgroundvalue.md)
+- [enum PlaygroundValue](./playgroundvalue.md)
   The types you can save in the key-value store or send in messages to live views.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: XcodeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new source text position at the beginning of the source text.
 
@@ -16,7 +17,8 @@ init()
 
 ## See Also
 
-- [init(line: Int, column: Int)](xcsourcetextposition/init(line:column:).md)
+### Creating Source Text Positions
+- [init(line: Int, column: Int)](./init%28line,column%29.md)
   Creates a source text position at the specified line and column.
 
 

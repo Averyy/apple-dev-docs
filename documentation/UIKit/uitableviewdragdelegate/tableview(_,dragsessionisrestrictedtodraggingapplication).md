@@ -1,7 +1,8 @@
 # tableView(_:dragSessionIsRestrictedToDraggingApplication:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the dragged content must be dropped in the same app.
 
@@ -17,13 +18,17 @@ Returns a Boolean value indicating whether the dragged content must be dropped i
 optional func tableView(_ tableView: UITableView, dragSessionIsRestrictedToDraggingApplication session: any UIDragSession) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(UITableView *) tableView dragSessionIsRestrictedToDraggingApplication:(id<UIDragSession>) session;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the dragged content must be dropped in the same app that originated the drag, or [`false`](https://developer.apple.com/documentation/swift/false) if the content may be dragged to other apps.
+[`true`](../../Swift/true.md) if the dragged content must be dropped in the same app that originated the drag, or [`false`](../../Swift/false.md) if the content may be dragged to other apps.
 
 #### Discussion
 
-Implement this method when you want to allow the user to drag content within your app, but prevent them from dragging that same content to other apps. If you don’t implement this method, the table view behaves as if the method returned [`false`](https://developer.apple.com/documentation/swift/false).
+Implement this method when you want to allow the user to drag content within your app, but prevent them from dragging that same content to other apps. If you don’t implement this method, the table view behaves as if the method returned [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -32,11 +37,12 @@ Implement this method when you want to allow the user to drag content within you
 
 ## See Also
 
-- [func tableView(UITableView, dragSessionWillBegin: any UIDragSession)](uitableviewdragdelegate/tableview(_:dragsessionwillbegin:).md)
+### Tracking the drag session
+- [func tableView(UITableView, dragSessionWillBegin: any UIDragSession)](./tableview%28_,dragsessionwillbegin%29.md)
   Signals the start of a drag operation involving content from the specified table view.
-- [func tableView(UITableView, dragSessionDidEnd: any UIDragSession)](uitableviewdragdelegate/tableview(_:dragsessiondidend:).md)
+- [func tableView(UITableView, dragSessionDidEnd: any UIDragSession)](./tableview%28_,dragsessiondidend%29.md)
   Signals the end of a drag operation involving content from the specified table view.
-- [func tableView(UITableView, dragSessionAllowsMoveOperation: any UIDragSession) -> Bool](uitableviewdragdelegate/tableview(_:dragsessionallowsmoveoperation:).md)
+- [func tableView(UITableView, dragSessionAllowsMoveOperation: any UIDragSession) -> Bool](./tableview%28_,dragsessionallowsmoveoperation%29.md)
   Returns a Boolean value indicating whether your app supports a move operation for the dragged content.
 
 

@@ -1,7 +1,8 @@
 # DockAccessory.Observation.ObservationType
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available observation types.
 
@@ -20,20 +21,20 @@ enum ObservationType
 ## Topics
 
 ### Enumeration Cases
-- [DockAccessory.Observation.ObservationType.humanBody](dockaccessory/observation/observationtype/humanbody.md)
+- [DockAccessory.Observation.ObservationType.humanBody](./observationtype/humanbody.md)
   The frame contains a human body.
-- [DockAccessory.Observation.ObservationType.humanFace](dockaccessory/observation/observationtype/humanface.md)
+- [DockAccessory.Observation.ObservationType.humanFace](./observationtype/humanface.md)
   The frame contains a human face.
-- [DockAccessory.Observation.ObservationType.object](dockaccessory/observation/observationtype/object.md)
+- [DockAccessory.Observation.ObservationType.object](./observationtype/object.md)
   The frame contains an object other than a human face or body.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

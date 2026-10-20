@@ -1,7 +1,8 @@
 # serverUrl
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the API server.
 
@@ -10,7 +11,7 @@ The URL of the API server.
 
 ## Declaration
 
-```swift
+```
 attribute string serverUrl;
 ```
 

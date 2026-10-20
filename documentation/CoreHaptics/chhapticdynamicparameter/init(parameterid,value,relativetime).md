@@ -1,7 +1,8 @@
 # init(parameterID:value:relativeTime:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dynamic parameter from its ID, value, and start time.
 
@@ -19,6 +20,10 @@ Creates a dynamic parameter from its ID, value, and start time.
 init(parameterID: CHHapticDynamicParameter.ID, value: Float, relativeTime time: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithParameterID:(CHHapticDynamicParameterID) parameterID value:(float) value relativeTime:(NSTimeInterval) time;
+```
+
 ## Parameters
 
 - `parameterID`: The ID indicating the type of the dynamic parameter.
@@ -27,7 +32,8 @@ init(parameterID: CHHapticDynamicParameter.ID, value: Float, relativeTime time: 
 
 ## See Also
 
-- [CHHapticDynamicParameter.ID](chhapticdynamicparameter/id.md)
+### Creating a Dynamic Parameter
+- [CHHapticDynamicParameter.ID](./id.md)
   The identifier that reveals the type of property associated with a dynamic parameter.
 
 

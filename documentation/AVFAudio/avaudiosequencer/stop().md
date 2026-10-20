@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the sequencer’s player.
 
@@ -19,15 +20,20 @@ Stops the sequencer’s player.
 func stop()
 ```
 
+```objc
+- (void) stop;
+```
+
 #### Discussion
 
-Stopping the player leaves it in an unprerolled state, but stores the playback position so that a subsequent call to [`start()`](avaudiosequencer/start().md) resumes where it stops. This action doesn’t stop an audio engine you associate with it.
+Stopping the player leaves it in an unprerolled state, but stores the playback position so that a subsequent call to [`start()`](./start%28%29.md) resumes where it stops. This action doesn’t stop an audio engine you associate with it.
 
 ## See Also
 
-- [func prepareToPlay()](avaudiosequencer/preparetoplay.md)
+### Operating an audio sequencer
+- [func prepareToPlay()](./preparetoplay%28%29.md)
   Gets ready to play the sequence by prerolling all events.
-- [func start() throws](avaudiosequencer/start.md)
+- [func start() throws](./start%28%29.md)
   Starts the sequencer’s player.
 
 

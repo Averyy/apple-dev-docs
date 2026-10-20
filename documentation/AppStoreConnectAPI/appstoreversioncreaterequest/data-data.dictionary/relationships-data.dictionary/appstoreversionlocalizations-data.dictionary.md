@@ -1,21 +1,22 @@
 # AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.5+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](./appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
   The request body you use to create an App Store version.
 
 ## Properties
@@ -24,11 +25,12 @@ object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizati
 
 ## See Also
 
-- [object AppStoreVersionCreateRequest.Data.Relationships.App](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+### Objects
+- [object AppStoreVersionCreateRequest.Data.Relationships.App](./app-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppStoreVersionCreateRequest.Data.Relationships.Build](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.Build](./build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](./appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
   The request body you use to create an App Store version.
 
 

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string that identifies the error domain.
 
@@ -19,12 +20,17 @@ nonisolated
 class let errorDomain: String
 ```
 
+```c
+extern NSErrorDomain const WKWebExtensionMatchPatternErrorDomain;
+```
+
 ## See Also
 
-- [WKWebExtension.MatchPattern.Error](wkwebextension/matchpattern/error.md)
-  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) domain.
-- [WKWebExtension.MatchPattern.Error.Code](wkwebextension/matchpattern/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) domain.
+### Errors
+- [WKWebExtension.MatchPattern.Error](./error.md)
+  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](../matchpattern.md) domain.
+- [WKWebExtension.MatchPattern.Error.Code](./error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](../matchpattern.md) domain.
 
 
 ---

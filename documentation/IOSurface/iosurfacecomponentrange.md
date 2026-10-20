@@ -1,7 +1,8 @@
 # IOSurfaceComponentRange
 
 **Framework**: IOSurface  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 11.0+
@@ -17,33 +18,38 @@
 enum IOSurfaceComponentRange
 ```
 
+```c
+enum IOSurfaceComponentRange : int32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [IOSurfaceComponentRange.fullRange](iosurfacecomponentrange/fullrange.md)
-- [IOSurfaceComponentRange.unknown](iosurfacecomponentrange/unknown.md)
-- [IOSurfaceComponentRange.videoRange](iosurfacecomponentrange/videorange.md)
-- [IOSurfaceComponentRange.wideRange](iosurfacecomponentrange/widerange.md)
+- [IOSurfaceComponentRange.fullRange](./iosurfacecomponentrange/fullrange.md)
+- [IOSurfaceComponentRange.unknown](./iosurfacecomponentrange/unknown.md)
+- [IOSurfaceComponentRange.videoRange](./iosurfacecomponentrange/videorange.md)
+- [IOSurfaceComponentRange.wideRange](./iosurfacecomponentrange/widerange.md)
 ### Initializers
-- [init?(rawValue: Int32)](iosurfacecomponentrange/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./iosurfacecomponentrange/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum IOSurfaceComponentName](iosurfacecomponentname.md)
-- [enum IOSurfaceComponentType](iosurfacecomponenttype.md)
-- [struct IOSurfaceMemoryLedgerFlags](iosurfacememoryledgerflags.md)
-- [enum IOSurfaceMemoryLedgerTags](iosurfacememoryledgertags.md)
-- [enum IOSurfaceSubsampling](iosurfacesubsampling.md)
+### Enumerations
+- [enum IOSurfaceComponentName](./iosurfacecomponentname.md)
+- [enum IOSurfaceComponentType](./iosurfacecomponenttype.md)
+- [struct IOSurfaceMemoryLedgerFlags](./iosurfacememoryledgerflags.md)
+- [enum IOSurfaceMemoryLedgerTags](./iosurfacememoryledgertags.md)
+- [enum IOSurfaceSubsampling](./iosurfacesubsampling.md)
 
 
 ---

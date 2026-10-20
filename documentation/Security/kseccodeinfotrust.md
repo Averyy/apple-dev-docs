@@ -1,7 +1,8 @@
 # kSecCodeInfoTrust
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the trust object the system uses to evaluate the validity of the code’s signature.
 
@@ -15,11 +16,15 @@ A key whose value is the trust object the system uses to evaluate the validity o
 let kSecCodeInfoTrust: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoTrust;
+```
+
 #### Discussion
 
-The value is a retained [`SecTrust`](sectrust.md) object. You may use [`SecTrust`](sectrust.md) functions (see [`Certificate, Key, and Trust Services`](certificate-key-and-trust-services.md) to extract detailed information, for example the reasons why certificate validation may have failed. Because this object may continue to be used for further evaluations of the code signature, if you make any changes to it, the behavior of the [`SecTrust`](sectrust.md) functions is undefined.
+The value is a retained [`SecTrust`](./sectrust.md) object. You may use [`SecTrust`](./sectrust.md) functions (see [Certificate, Key, and Trust Services](./certificate-key-and-trust-services.md) to extract detailed information, for example the reasons why certificate validation may have failed. Because this object may continue to be used for further evaluations of the code signature, if you make any changes to it, the behavior of the [`SecTrust`](./sectrust.md) functions is undefined.
 
-Specify the [`kSecCSSigningInformation`](kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
+Specify the [`kSecCSSigningInformation`](./kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to get this information.
 
 
 ---

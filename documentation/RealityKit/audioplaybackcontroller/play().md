@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays the audio resource.
 
@@ -11,7 +12,7 @@ Plays the audio resource.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ Plays the audio resource.
 
 #### Discussion
 
-The controller plays from the beginning of the resource, or from the point at which it was paused if you previously called the [`pause()`](audioplaybackcontroller/pause().md) method during playback. The controller ignores calls to [`play()`](audioplaybackcontroller/play().md) when audio is already playing.
+The controller plays from the beginning of the resource, or from the point at which it was paused if you previously called the [`pause()`](./pause%28%29.md) method during playback. The controller ignores calls to [`play()`](./play%28%29.md) when audio is already playing.
 
 ## See Also
 
-- [func pause()](audioplaybackcontroller/pause.md)
+### Starting and stopping audio playback
+- [func pause()](./pause%28%29.md)
   Pauses playback of the audio resource while maintaining the position in the audio stream.
-- [func stop()](audioplaybackcontroller/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops playback of the audio resource and discards the location in the audio stream.
-- [var isPlaying: Bool](audioplaybackcontroller/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether playback is currently active.
 
 

@@ -1,7 +1,8 @@
 # MLHandActionClassifier.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of parameters that affect the training process of a hand action classifier task.
 
@@ -21,56 +22,57 @@ struct ModelParameters
 ## Topics
 
 ### Creating hand action model parameters
-- [init(validation: MLHandActionClassifier.ModelParameters.ValidationData, batchSize: Int, maximumIterations: Int, predictionWindowSize: Int, augmentationOptions: MLHandActionClassifier.VideoAugmentationOptions, algorithm: MLHandActionClassifier.ModelParameters.ModelAlgorithmType, targetFrameRate: Double)](mlhandactionclassifier/modelparameters-swift.struct/init(validation:batchsize:maximumiterations:predictionwindowsize:augmentationoptions:algorithm:targetframerate:).md)
+- [init(validation: MLHandActionClassifier.ModelParameters.ValidationData, batchSize: Int, maximumIterations: Int, predictionWindowSize: Int, augmentationOptions: MLHandActionClassifier.VideoAugmentationOptions, algorithm: MLHandActionClassifier.ModelParameters.ModelAlgorithmType, targetFrameRate: Double)](./modelparameters-swift.struct/init%28validation,batchsize,maximumiterations,predictionwindowsize,augmentationoptions,algorithm,targetframerate%29.md)
   Creates a set of training session parameters for a hand action classifier task.
 ### Accessing hand action training parameters
-- [var maximumIterations: Int](mlhandactionclassifier/modelparameters-swift.struct/maximumiterations.md)
+- [var maximumIterations: Int](./modelparameters-swift.struct/maximumiterations.md)
   The largest number of training iterations you allow the training session to use.
-- [var batchSize: Int](mlhandactionclassifier/modelparameters-swift.struct/batchsize.md)
+- [var batchSize: Int](./modelparameters-swift.struct/batchsize.md)
   The number of videos the model training session uses for each training iteration.
-- [var targetFrameRate: Double](mlhandactionclassifier/modelparameters-swift.struct/targetframerate.md)
+- [var targetFrameRate: Double](./modelparameters-swift.struct/targetframerate.md)
   The number of video frames per second the hand action classifier model expects as its input at runtime.
-- [var predictionWindowSize: Int](mlhandactionclassifier/modelparameters-swift.struct/predictionwindowsize.md)
+- [var predictionWindowSize: Int](./modelparameters-swift.struct/predictionwindowsize.md)
   The number of video frames the model training session uses to train a hand action classifier.
-- [var algorithm: MLHandActionClassifier.ModelParameters.ModelAlgorithmType](mlhandactionclassifier/modelparameters-swift.struct/algorithm.md)
+- [var algorithm: MLHandActionClassifier.ModelParameters.ModelAlgorithmType](./modelparameters-swift.struct/algorithm.md)
   The algorithm the training session uses to create the hand action classifier.
-- [var augmentationOptions: MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/modelparameters-swift.struct/augmentationoptions.md)
+- [var augmentationOptions: MLHandActionClassifier.VideoAugmentationOptions](./modelparameters-swift.struct/augmentationoptions.md)
   The variations the training session uses to add more variety to its training dataset.
-- [var validation: MLHandActionClassifier.ModelParameters.ValidationData](mlhandactionclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLHandActionClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validation.md)
   A dataset the hand action classifier task uses to evaluate the model that’s distinct from the training dataset.
 ### Describing hand action model parameters
-- [var description: String](mlhandactionclassifier/modelparameters-swift.struct/description.md)
+- [var description: String](./modelparameters-swift.struct/description.md)
   A text representation of the hand action parameters.
-- [var debugDescription: String](mlhandactionclassifier/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./modelparameters-swift.struct/debugdescription.md)
   A text representation of the hand action parameters suitable for debugging.
-- [var playgroundDescription: Any](mlhandactionclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters-swift.struct/playgrounddescription.md)
   A description of the hand action parameters that’s viewable in a playground.
 ### Parameter supporting types
-- [MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions.md)
+- [MLHandActionClassifier.VideoAugmentationOptions](./videoaugmentationoptions.md)
   Options a hand action classification training session can use to generate additional training data from the videos you provide.
-- [MLHandActionClassifier.ModelParameters.ValidationData](mlhandactionclassifier/modelparameters-swift.struct/validationdata.md)
+- [MLHandActionClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validationdata.md)
   A dataset a hand action classifier task uses to validate the model during a training session.
-- [MLHandActionClassifier.ModelParameters.ModelAlgorithmType](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
+- [MLHandActionClassifier.ModelParameters.ModelAlgorithmType](./modelparameters-swift.struct/modelalgorithmtype.md)
   The hand action classifier training algorithm options.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlhandactionclassifier/modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlhandactionclassifier/modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlhandactionclassifier/modelparameters-swift.struct/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [MLHandActionClassifier.DataSource](mlhandactionclassifier/datasource.md)
+### Supporting types
+- [MLHandActionClassifier.DataSource](./datasource.md)
   A hand action classifier dataset that contains annotated videos or hand joint location data.
-- [MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions.md)
+- [MLHandActionClassifier.VideoAugmentationOptions](./videoaugmentationoptions.md)
   Options a hand action classification training session can use to generate additional training data from the videos you provide.
 
 

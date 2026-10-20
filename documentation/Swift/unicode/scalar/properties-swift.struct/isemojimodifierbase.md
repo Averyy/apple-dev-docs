@@ -1,7 +1,8 @@
 # isEmojiModifierBase
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is one whose appearance can be changed by an emoji modifier that follows it.
 
@@ -22,7 +23,7 @@ var isEmojiModifierBase: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Emoji_Modifier_Base” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Emoji_Modifier_Base” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

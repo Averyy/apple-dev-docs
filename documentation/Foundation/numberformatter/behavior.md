@@ -1,9 +1,10 @@
 # NumberFormatter.Behavior
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants specify the behavior of a number formatter. These constants are returned by the [`defaultFormatterBehavior()`](numberformatter/defaultformatterbehavior().md) class method and the [`formatterBehavior`](numberformatter/formatterbehavior.md) property.
+These constants specify the behavior of a number formatter. These constants are returned by the [`defaultFormatterBehavior()`](./defaultformatterbehavior%28%29.md) class method and the [`formatterBehavior`](./formatterbehavior.md) property.
 
 **Availability**:
 - iOS 2.0+
@@ -20,36 +21,41 @@ These constants specify the behavior of a number formatter. These constants are 
 enum Behavior
 ```
 
+```c
+enum NSNumberFormatterBehavior : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NumberFormatter.Behavior.default](numberformatter/behavior/default.md)
-  The number-formatter behavior set as the default for new instances. You can set the default formatter behavior with the class method [`setDefaultFormatterBehavior(_:)`](numberformatter/setdefaultformatterbehavior(_:).md).
-- [NumberFormatter.Behavior.behavior10_0](numberformatter/behavior/behavior10_0.md)
+- [NumberFormatter.Behavior.default](./behavior/default.md)
+  The number-formatter behavior set as the default for new instances. You can set the default formatter behavior with the class method [`setDefaultFormatterBehavior(_:)`](./setdefaultformatterbehavior%28_%29.md).
+- [NumberFormatter.Behavior.behavior10_0](./behavior/behavior10_0.md)
   The number-formatter behavior as it existed prior to macOS 10.4.
-- [NumberFormatter.Behavior.behavior10_4](numberformatter/behavior/behavior10_4.md)
+- [NumberFormatter.Behavior.behavior10_4](./behavior/behavior10_4.md)
   The number-formatter behavior since macOS 10.4.
 ### Initializers
-- [init?(rawValue: UInt)](numberformatter/behavior/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./behavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NumberFormatter.Style](numberformatter/style.md)
-  The predefined number format styles used by the [`numberStyle`](numberformatter/numberstyle.md) property.
-- [NumberFormatter.PadPosition](numberformatter/padposition.md)
-  These constants are used to specify how numbers should be padded. These constants are used by the [`paddingPosition`](numberformatter/paddingposition.md) property.
-- [NumberFormatter.RoundingMode](numberformatter/roundingmode-swift.enum.md)
-  These constants are used to specify how numbers should be rounded. These constants are used by the [`roundingMode`](numberformatter/roundingmode-swift.property.md) property.
+### Constants
+- [NumberFormatter.Style](./style.md)
+  The predefined number format styles used by the [`numberStyle`](./numberstyle.md) property.
+- [NumberFormatter.PadPosition](./padposition.md)
+  These constants are used to specify how numbers should be padded. These constants are used by the [`paddingPosition`](./paddingposition.md) property.
+- [NumberFormatter.RoundingMode](./roundingmode-swift.enum.md)
+  These constants are used to specify how numbers should be rounded. These constants are used by the [`roundingMode`](./roundingmode-swift.property.md) property.
 
 
 ---

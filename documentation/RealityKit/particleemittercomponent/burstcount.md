@@ -1,7 +1,8 @@
 # burstCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of particles to emit in a single burst. Defaults to 100.
 

@@ -1,7 +1,8 @@
 # materialAssignment
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the material assignments for each part of an extruded shape.
 

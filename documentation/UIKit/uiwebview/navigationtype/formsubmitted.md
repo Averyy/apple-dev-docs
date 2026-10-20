@@ -1,13 +1,14 @@
 # UIWebView.NavigationType.formSubmitted
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User submitted a form.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ User submitted a form.
 case formSubmitted
 ```
 
+```c
+UIWebViewNavigationTypeFormSubmitted
+```
+
 ## See Also
 
-- [UIWebView.NavigationType.linkClicked](uiwebview/navigationtype/linkclicked.md)
+### Constants
+- [UIWebView.NavigationType.linkClicked](./linkclicked.md)
   User tapped a link.
-- [UIWebView.NavigationType.backForward](uiwebview/navigationtype/backforward.md)
+- [UIWebView.NavigationType.backForward](./backforward.md)
   User tapped the back or forward button.
-- [UIWebView.NavigationType.reload](uiwebview/navigationtype/reload.md)
+- [UIWebView.NavigationType.reload](./reload.md)
   User tapped the reload button.
-- [UIWebView.NavigationType.formResubmitted](uiwebview/navigationtype/formresubmitted.md)
+- [UIWebView.NavigationType.formResubmitted](./formresubmitted.md)
   User resubmitted a form.
-- [UIWebView.NavigationType.other](uiwebview/navigationtype/other.md)
+- [UIWebView.NavigationType.other](./other.md)
   Some other action occurred.
 
 

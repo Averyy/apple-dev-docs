@@ -1,7 +1,8 @@
 # clock
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that represents the capture device’s clock.
 
@@ -18,21 +19,26 @@ An object that represents the capture device’s clock.
 var clock: CMClock? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CMClockRef clock;
+```
+
 #### Discussion
 
 The value of this property is readonly and may not reflect the actual clock in the capture device.
 
 ## See Also
 
-- [var isEnabled: Bool](avcaptureinput/port/isenabled.md)
+### Inspecting an input port
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the port is in an enabled state.
-- [var mediaType: AVMediaType](avcaptureinput/port/mediatype.md)
+- [var mediaType: AVMediaType](./mediatype.md)
   The media type of the port.
-- [var formatDescription: CMFormatDescription?](avcaptureinput/port/formatdescription.md)
+- [var formatDescription: CMFormatDescription?](./formatdescription.md)
   A description of the port format.
-- [var sourceDeviceType: AVCaptureDevice.DeviceType?](avcaptureinput/port/sourcedevicetype.md)
+- [var sourceDeviceType: AVCaptureDevice.DeviceType?](./sourcedevicetype.md)
   The device type of the source camera that provides data to the port.
-- [var sourceDevicePosition: AVCaptureDevice.Position](avcaptureinput/port/sourcedeviceposition.md)
+- [var sourceDevicePosition: AVCaptureDevice.Position](./sourcedeviceposition.md)
   The position of the source device providing input through this port.
 
 

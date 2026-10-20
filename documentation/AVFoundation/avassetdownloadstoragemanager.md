@@ -1,7 +1,8 @@
 # AVAssetDownloadStorageManager
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages policies to automatically purge downloaded assets.
 
@@ -18,36 +19,41 @@ An object that manages policies to automatically purge downloaded assets.
 class AVAssetDownloadStorageManager
 ```
 
+```objc
+@interface AVAssetDownloadStorageManager : NSObject
+```
+
 ## Topics
 
 ### Accessing the shared manager
-- [class func shared() -> AVAssetDownloadStorageManager](avassetdownloadstoragemanager/shared.md)
+- [class func shared() -> AVAssetDownloadStorageManager](./avassetdownloadstoragemanager/shared%28%29.md)
   Returns the shared storage manager instance.
 ### Setting the storage policy
-- [func storageManagementPolicy(for: URL) -> AVAssetDownloadStorageManagementPolicy?](avassetdownloadstoragemanager/storagemanagementpolicy(for:).md)
+- [func storageManagementPolicy(for: URL) -> AVAssetDownloadStorageManagementPolicy?](./avassetdownloadstoragemanager/storagemanagementpolicy%28for%29.md)
   Returns the storage management policy for a downloaded asset.
-- [func setStorageManagementPolicy(AVAssetDownloadStorageManagementPolicy, for: URL)](avassetdownloadstoragemanager/setstoragemanagementpolicy(_:for:).md)
+- [func setStorageManagementPolicy(AVAssetDownloadStorageManagementPolicy, for: URL)](./avassetdownloadstoragemanager/setstoragemanagementpolicy%28_,for%29.md)
   Sets a storage policy for the downloaded asset.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAssetDownloadStorageManagementPolicy](avassetdownloadstoragemanagementpolicy.md)
+### Offline storage management
+- [class AVAssetDownloadStorageManagementPolicy](./avassetdownloadstoragemanagementpolicy.md)
   An object that defines a policy to automatically manage the storage of downloaded assets.
-- [class AVMutableAssetDownloadStorageManagementPolicy](avmutableassetdownloadstoragemanagementpolicy.md)
+- [class AVMutableAssetDownloadStorageManagementPolicy](./avmutableassetdownloadstoragemanagementpolicy.md)
   A mutable object that you use to create a new storage management policy.
 
 

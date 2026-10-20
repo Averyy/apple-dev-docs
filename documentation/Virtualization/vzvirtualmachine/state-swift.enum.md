@@ -1,7 +1,8 @@
 # VZVirtualMachine.State
 
 **Framework**: Virtualization  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The execution states of the VM.
 
@@ -14,79 +15,84 @@ The execution states of the VM.
 enum State
 ```
 
+```c
+enum VZVirtualMachineState : NSInteger;
+```
+
 ## Topics
 
 ### States
-- [VZVirtualMachine.State.stopped](vzvirtualmachine/state-swift.enum/stopped.md)
+- [VZVirtualMachine.State.stopped](./state-swift.enum/stopped.md)
   The VM isn’t running.
-- [VZVirtualMachine.State.running](vzvirtualmachine/state-swift.enum/running.md)
+- [VZVirtualMachine.State.running](./state-swift.enum/running.md)
   The VM is running.
-- [VZVirtualMachine.State.paused](vzvirtualmachine/state-swift.enum/paused.md)
+- [VZVirtualMachine.State.paused](./state-swift.enum/paused.md)
   The framework has paused a started VM.
-- [VZVirtualMachine.State.error](vzvirtualmachine/state-swift.enum/error.md)
+- [VZVirtualMachine.State.error](./state-swift.enum/error.md)
   The VM encountered an unrecoverable error.
-- [VZVirtualMachine.State.starting](vzvirtualmachine/state-swift.enum/starting.md)
+- [VZVirtualMachine.State.starting](./state-swift.enum/starting.md)
   The VM is configuring the hardware preparing to run.
-- [VZVirtualMachine.State.pausing](vzvirtualmachine/state-swift.enum/pausing.md)
+- [VZVirtualMachine.State.pausing](./state-swift.enum/pausing.md)
   The VM is pausing.
-- [VZVirtualMachine.State.stopping](vzvirtualmachine/state-swift.enum/stopping.md)
+- [VZVirtualMachine.State.stopping](./state-swift.enum/stopping.md)
   The VM is stopping.
-- [VZVirtualMachine.State.resuming](vzvirtualmachine/state-swift.enum/resuming.md)
+- [VZVirtualMachine.State.resuming](./state-swift.enum/resuming.md)
   The VM is resuming from a paused state.
-- [VZVirtualMachine.State.restoring](vzvirtualmachine/state-swift.enum/restoring.md)
+- [VZVirtualMachine.State.restoring](./state-swift.enum/restoring.md)
   The VM is restoring from a saved state.
-- [VZVirtualMachine.State.saving](vzvirtualmachine/state-swift.enum/saving.md)
+- [VZVirtualMachine.State.saving](./state-swift.enum/saving.md)
   The VM is saving its state.
-- [VZVirtualMachine.State.stopped](vzvirtualmachine/state-swift.enum/stopped.md)
+- [VZVirtualMachine.State.stopped](./state-swift.enum/stopped.md)
   The VM isn’t running.
-- [VZVirtualMachine.State.running](vzvirtualmachine/state-swift.enum/running.md)
+- [VZVirtualMachine.State.running](./state-swift.enum/running.md)
   The VM is running.
-- [VZVirtualMachine.State.paused](vzvirtualmachine/state-swift.enum/paused.md)
+- [VZVirtualMachine.State.paused](./state-swift.enum/paused.md)
   The framework has paused a started VM.
-- [VZVirtualMachine.State.error](vzvirtualmachine/state-swift.enum/error.md)
+- [VZVirtualMachine.State.error](./state-swift.enum/error.md)
   The VM encountered an unrecoverable error.
-- [VZVirtualMachine.State.starting](vzvirtualmachine/state-swift.enum/starting.md)
+- [VZVirtualMachine.State.starting](./state-swift.enum/starting.md)
   The VM is configuring the hardware preparing to run.
-- [VZVirtualMachine.State.pausing](vzvirtualmachine/state-swift.enum/pausing.md)
+- [VZVirtualMachine.State.pausing](./state-swift.enum/pausing.md)
   The VM is pausing.
-- [VZVirtualMachine.State.stopping](vzvirtualmachine/state-swift.enum/stopping.md)
+- [VZVirtualMachine.State.stopping](./state-swift.enum/stopping.md)
   The VM is stopping.
-- [VZVirtualMachine.State.resuming](vzvirtualmachine/state-swift.enum/resuming.md)
+- [VZVirtualMachine.State.resuming](./state-swift.enum/resuming.md)
   The VM is resuming from a paused state.
-- [VZVirtualMachine.State.restoring](vzvirtualmachine/state-swift.enum/restoring.md)
+- [VZVirtualMachine.State.restoring](./state-swift.enum/restoring.md)
   The VM is restoring from a saved state.
-- [VZVirtualMachine.State.saving](vzvirtualmachine/state-swift.enum/saving.md)
+- [VZVirtualMachine.State.saving](./state-swift.enum/saving.md)
   The VM is saving its state.
 ### Initializers
-- [init?(rawValue: Int)](vzvirtualmachine/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: VZVirtualMachine.State](vzvirtualmachine/state-swift.property.md)
+### Getting the state of the VM
+- [var state: VZVirtualMachine.State](./state-swift.property.md)
   The current execution state of the VM.
-- [var graphicsDevices: [VZGraphicsDevice]](vzvirtualmachine/graphicsdevices.md)
+- [var graphicsDevices: [VZGraphicsDevice]](./graphicsdevices.md)
   The list of configured graphics devices on the virtual machine.
-- [var canStart: Bool](vzvirtualmachine/canstart.md)
+- [var canStart: Bool](./canstart.md)
   A Boolean value that indicates whether you can start the VM.
-- [var canPause: Bool](vzvirtualmachine/canpause.md)
+- [var canPause: Bool](./canpause.md)
   A Boolean value that indicates whether you can pause the VM.
-- [var canResume: Bool](vzvirtualmachine/canresume.md)
+- [var canResume: Bool](./canresume.md)
   A Boolean value that indicates whether you can resume the VM.
-- [var canStop: Bool](vzvirtualmachine/canstop.md)
+- [var canStop: Bool](./canstop.md)
   A Boolean value that indicates whether you can stop the VM.
-- [var canRequestStop: Bool](vzvirtualmachine/canrequeststop.md)
+- [var canRequestStop: Bool](./canrequeststop.md)
   A Boolean value that indicates whether you can ask the guest operating system to stop running.
-- [var queue: dispatch_queue_t](vzvirtualmachine/queue.md)
+- [var queue: dispatch_queue_t](./queue.md)
   The queue associated with this virtual machine.
 
 

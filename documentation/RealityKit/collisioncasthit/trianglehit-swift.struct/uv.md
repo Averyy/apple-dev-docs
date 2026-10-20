@@ -1,7 +1,8 @@
 # uv
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The barycentric uv coordinate for where in the triangle the ray hit.
 

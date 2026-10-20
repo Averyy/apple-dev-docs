@@ -1,7 +1,8 @@
 # WidgetTexture
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that define the texture of the widget’s coating layer.
 
@@ -17,32 +18,33 @@ struct WidgetTexture
 ## Topics
 
 ### Textures
-- [static let glass: WidgetTexture](widgettexture/glass.md)
+- [static let glass: WidgetTexture](./widgettexture/glass.md)
   A reflective, clear glass-like texture for the widget’s coating layer.
-- [static let paper: WidgetTexture](widgettexture/paper.md)
+- [static let paper: WidgetTexture](./widgettexture/paper.md)
   A matte, paper-like texture for the widget’s coating layer.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+### visionOS widgets
+- [Updating your widgets for visionOS](./updating-your-widgets-for-visionos.md)
   Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
 - [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/widgettexture(_:).md)
+](../SwiftUI/widgetconfiguration/widgettexture%28_%29.md)
   Specifies the widget texture for this widget.
 - [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
-](../swiftui/widgetconfiguration/supportedmountingstyles(_:).md)
+](../SwiftUI/widgetconfiguration/supportedmountingstyles%28_%29.md)
   Specifies the mounting style for this widget.
-- [struct WidgetMountingStyle](widgetmountingstyle.md)
+- [struct WidgetMountingStyle](./widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.
-- [struct LevelOfDetail](levelofdetail.md)
+- [struct LevelOfDetail](./levelofdetail.md)
   The level of detail the view is recommended to have.
 
 

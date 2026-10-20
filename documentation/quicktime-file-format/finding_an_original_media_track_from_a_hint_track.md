@@ -1,6 +1,7 @@
 # Finding an original media track from a hint track
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Use track reference atoms from hint tracks to locate the original media track.
 
@@ -14,13 +15,14 @@ If you have only one media track listed in your hint track reference, you may si
 
 ## See Also
 
-- [Hint media](hint_media.md)
+### Hint media
+- [Hint media](./hint_media.md)
   Provide information about data units to stream in hint tracks.
-- [RTP hint tracks](rtp_hint_tracks.md)
+- [RTP hint tracks](./rtp_hint_tracks.md)
   Allow a streaming server to create RTP streams from a QuickTime movie.
-- [Hint track sample description](hint_track_sample_description.md)
+- [Hint track sample description](./hint_track_sample_description.md)
   An atom that specifies the data format and location of the hint track sample data.
-- [Packetization hint sample data](packetization_hint_sample_data.md)
+- [Packetization hint sample data](./packetization_hint_sample_data.md)
   An atom that describes the sample data for data using the Real-Time Transport Protocol (RTP).
 
 

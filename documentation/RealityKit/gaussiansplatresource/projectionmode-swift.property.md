@@ -1,7 +1,8 @@
 # projectionMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The projection technique the framework uses for splat footprints.
 

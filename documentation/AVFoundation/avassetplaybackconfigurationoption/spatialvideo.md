@@ -1,7 +1,8 @@
 # spatialVideo
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates whether the asset can render as spatial video.
 
@@ -20,19 +21,24 @@ An option that indicates whether the asset can render as spatial video.
 static let spatialVideo: AVAssetPlaybackConfigurationOption
 ```
 
+```c
+extern AVAssetPlaybackConfigurationOption const AVAssetPlaybackConfigurationOptionSpatialVideo;
+```
+
 #### Discussion
 
 Apps may use this property to determine whether to configure spatial video rendering.
 
 ## See Also
 
-- [static let stereoVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/stereovideo.md)
+### Configuration options
+- [static let stereoVideo: AVAssetPlaybackConfigurationOption](./stereovideo.md)
   An option that indicates whether the asset can render as stereo video.
-- [static let stereoMultiviewVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/stereomultiviewvideo.md)
+- [static let stereoMultiviewVideo: AVAssetPlaybackConfigurationOption](./stereomultiviewvideo.md)
   An option that indicates whether the asset is in a multiview compression format and can render as stereo video.
-- [static let appleImmersiveVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/appleimmersivevideo.md)
+- [static let appleImmersiveVideo: AVAssetPlaybackConfigurationOption](./appleimmersivevideo.md)
   Indicates whether the asset is Apple Immersive Video.
-- [static let nonRectilinearProjection: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/nonrectilinearprojection.md)
+- [static let nonRectilinearProjection: AVAssetPlaybackConfigurationOption](./nonrectilinearprojection.md)
   Indicates whether the asset calls for the use of a non-rectilinear projection for rendering video.
 
 

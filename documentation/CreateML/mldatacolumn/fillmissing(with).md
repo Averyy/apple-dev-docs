@@ -1,7 +1,8 @@
 # fillMissing(with:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a modified copy of the column such that every missing element is replaced with the given value.
 
@@ -18,6 +19,8 @@ Creates a modified copy of the column such that every missing element is replace
 ```swift
 func fillMissing(with value: Element) -> MLDataColumn<Element>
 ```
+
+Available when `Element` conforms to `MLDataValueConvertible`.
 
 #### Return Value
 

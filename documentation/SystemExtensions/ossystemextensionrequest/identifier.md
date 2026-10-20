@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the target extension.
 
@@ -12,6 +13,10 @@ The bundle identifier of the target extension.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * identifier;
 ```
 
 

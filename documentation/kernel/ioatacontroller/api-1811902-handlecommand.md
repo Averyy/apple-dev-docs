@@ -7,7 +7,7 @@ Called by executeCommand() to handle the client command from the workloop contex
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn handleCommand(
  void *command, 
  void *param1 = 0, 
@@ -15,7 +15,7 @@ virtual IOReturn handleCommand(
  void *param3 = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 kIOReturnSuccess on success, or an error code otherwise.
 
@@ -28,9 +28,10 @@ kIOReturnSuccess on success, or an error code otherwise.
 
 ## See Also
 
-- [busCanDispatch](ioatacontroller/1811873-buscandispatch.md)
+### Miscellaneous
+- [busCanDispatch](./api-1811873-buscandispatch.md)
   answers whether the bus is in state such that the next command can be dispatched.
-- [dispatchNext](ioatacontroller/1811887-dispatchnext.md)
+- [dispatchNext](./api-1811887-dispatchnext.md)
   Causes the command at the front of the queue to dequeue, made the current command and begin execution.
 
 

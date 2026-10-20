@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of transcription segments that represent the parts of the transcription, as identified by the speech recognizer.
 
@@ -16,6 +17,10 @@ An array of transcription segments that represent the parts of the transcription
 
 ```swift
 var segments: [SFTranscriptionSegment] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<SFTranscriptionSegment *> * segments;
 ```
 
 #### Discussion

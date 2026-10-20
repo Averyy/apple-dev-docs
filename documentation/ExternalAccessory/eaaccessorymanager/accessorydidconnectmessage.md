@@ -1,7 +1,8 @@
 # EAAccessoryManager.AccessoryDidConnectMessage
 
 **Framework**: External Accessory  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,16 +21,16 @@ struct AccessoryDidConnectMessage
 ## Topics
 
 ### Initializers
-- [init(accessory: EAAccessory, userSelected: Bool)](eaaccessorymanager/accessorydidconnectmessage/init(accessory:userselected:).md)
+- [init(accessory: EAAccessory, userSelected: Bool)](./accessorydidconnectmessage/init%28accessory,userselected%29.md)
 ### Instance Properties
-- [var accessory: EAAccessory](eaaccessorymanager/accessorydidconnectmessage/accessory.md)
-- [var userSelected: Bool](eaaccessorymanager/accessorydidconnectmessage/userselected.md)
+- [var accessory: EAAccessory](./accessorydidconnectmessage/accessory.md)
+- [var userSelected: Bool](./accessorydidconnectmessage/userselected.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

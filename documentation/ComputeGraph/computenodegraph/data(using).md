@@ -1,7 +1,8 @@
 # data(using:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the graph encoded in the specified format.
 
@@ -12,7 +13,7 @@ Returns the graph encoded in the specified format.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -26,9 +27,9 @@ The graph encoded using the specified format.
 
 #### Discussion
 
-To reconstruct the graph, pass the data to [`init(data:)`](computenodegraph/init(data:).md).
+To reconstruct the graph, pass the data to [`init(data:)`](./init%28data%29.md).
 
-> **Note**: An error if the graph can’t be encoded in the requested format.
+> **Throws**: An error if the graph can’t be encoded in the requested format.
 
 ## Parameters
 

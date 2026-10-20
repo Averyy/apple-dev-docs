@@ -1,7 +1,8 @@
 # loadedLibraries
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes the list of loaded libraries.
 
@@ -10,7 +11,7 @@ A string that describes the list of loaded libraries.
 
 ## Declaration
 
-```swift
+```
 get loadedLibraries(): string[] | undefined;
 ```
 
@@ -20,15 +21,16 @@ get loadedLibraries(): string[] | undefined;
 
 ## See Also
 
-- [Handling initialization events](handling-initialization-events.md)
+### Initialization
+- [Handling initialization events](../handling-initialization-events.md)
   Respond to events that trigger when MapKit JS initializes.
-- [init(options)](mapkit/init.md)
+- [init(options)](./init.md)
   Initializes MapKit JS by providing an authorization callback function and optional language.
-- [interface MapKitInitializationOptions](mapkitinitializationoptions.md)
+- [interface MapKitInitializationOptions](../mapkitinitializationoptions.md)
   Initialization options for MapKit JS.
-- [Libraries](mapkit/libraries.md)
+- [Libraries](./libraries.md)
   The list of available libraries.
-- [load(libraryNames)](mapkit/load.md)
+- [load(libraryNames)](./load.md)
   Tells MapKit JS which libraries to load.
 
 

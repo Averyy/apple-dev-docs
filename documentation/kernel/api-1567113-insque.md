@@ -1,7 +1,8 @@
 # insque
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 void insque(queue_entry_t entry, queue_entry_t pred);
 ```
 

@@ -1,6 +1,7 @@
 # Safari 17 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released September 18, 2023 — Version 17 (19616.1.27)
 
@@ -67,7 +68,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed `createImageBitmap` using `ImageData` to respect the premultiply flag. (89382358)
 - Fixed repaint issue when drawing VideoFrames to canvas. (109100283)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -139,7 +140,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Redesigned Responsive Design Mode. (100522676)
 - Added support for pairing with tvOS and visionOS on macOS Sonoma. (103498148)
 
-##### Dom
+##### DOM
 
 ###### Resolved Issues
 
@@ -186,7 +187,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed HTMLOptionElement text setter to not throw an exception. (109740566)
 - Fixed change event not firing when the user reverts the value of a color, date, or time input after JavaScript changed the value. (109843791)
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -200,7 +201,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed the HTMLPreloadScanner to not preload scripts with unsupported types. (110905029)
 - Fixed popover incorrectly auto-hiding when using shadow DOM. (112410375)
 
-##### Http
+##### HTTP
 
 ###### New Features
 
@@ -220,7 +221,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for HEIC/HEIF images. (99517108)
 - Added support for JPEG XL. (100641584)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -385,7 +386,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 
 - Fixed removing HTTP credentials when the data store is removed. (106728064)
 
-##### Svg
+##### SVG
 
 ###### Resolved Issues
 
@@ -424,14 +425,14 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed the `all` value for the `transition-property` to parse as a keyword, not a CSS property. (105556116)
 - Fixed exposing `CSSKeyFramesRule.length`. (105565920)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
 - Added support for 3D OffscreenCanvas WebGL support. (39882956)
 - Added `canvas.drawImage` support for SVGImageElement as an image source. (79555760)
 - Added support for `<link rel="modulepreload">`. (88670991)
-- Added support for the [`focus fixup rule`](https://developer.apple.comhttps://html.spec.whatwg.org/multipage/interaction.html#focus-fixup-rule). (89902824)
+- Added support for the [focus fixup rule](https://html.spec.whatwg.org/multipage/interaction.html#focus-fixup-rule). (89902824)
 - Added support for using relative URLs in the WebSocket constructor and HTTP(S) schemes. (101929623)
 - Added support for Ed25519 cryptography. (105264767)
 - Added support for `URL.canParse()`. (106934916)
@@ -496,7 +497,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Removed vestigal support for `<layer>` and `<nolayer>` from the HTML parser. (107554605)
 - Removed deprecated uppercase URL attribute alias on the WebSocket interface. (109151597)
 
-##### Web Apps
+##### Web apps
 
 ###### New Features
 
@@ -545,7 +546,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed the resource type shown in the Network tab to use XHR when the XHR request has the same URL as the main resource. (110016863)
 - Fixed color swatch to not show an incorrect tooltip when read-only. (110409252)
 
-##### Webgl
+##### WebGL
 
 ###### New Features
 
@@ -560,7 +561,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed firing the context lost event for OffscreenCanvas. (104198422)
 - Fixed OffscreenCanvas to work as a TexImageSource in WebGL. (106700463)
 
-##### Webrtc
+##### WebRTC
 
 ###### New Features
 
@@ -577,7 +578,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed camera selection to use the system preferred camera on iOS. (109220107)
 - Fixed camera and microphone to all have `groupIds`. (109355290)
 
-##### Wkwebview
+##### WKWebView
 
 ###### New Features
 
@@ -587,17 +588,18 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 
 ## See Also
 
-- [Safari 17.6 Release Notes](safari-17_6-release-notes.md)
+### Version 17
+- [Safari 17.6 Release Notes](./safari-17_6-release-notes.md)
   Released July 29, 2024 — 17.6 (19618.3.11)
-- [Safari 17.5 Release Notes](safari-17_5-release-notes.md)
+- [Safari 17.5 Release Notes](./safari-17_5-release-notes.md)
   Released May 13, 2024 — 17.5 (19618.2.12)
-- [Safari 17.4 Release Notes](safari-17_4-release-notes.md)
+- [Safari 17.4 Release Notes](./safari-17_4-release-notes.md)
   Released March 5, 2024 — 17.4  (19618.1.15)
-- [Safari 17.3 Release Notes](safari-17_3-release-notes.md)
+- [Safari 17.3 Release Notes](./safari-17_3-release-notes.md)
   Released January 22, 2024 — Version 17.3 (19617.2.4)
-- [Safari 17.2 Release Notes](safari-17_2-release-notes.md)
+- [Safari 17.2 Release Notes](./safari-17_2-release-notes.md)
   Released December 11, 2023 — Version 17.2 (19617.1.17)
-- [Safari 17.1 Release Notes](safari-17_1-release-notes.md)
+- [Safari 17.1 Release Notes](./safari-17_1-release-notes.md)
   Released October 25, 2023 — Version 17.1 (19616.2.9)
 
 

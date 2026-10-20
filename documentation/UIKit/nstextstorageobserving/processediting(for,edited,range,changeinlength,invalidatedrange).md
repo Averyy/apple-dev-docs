@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the observer that the text storage has been edited.
@@ -19,6 +20,10 @@ Notifies the observer that the text storage has been edited.
 func processEditing(for textStorage: NSTextStorage, edited editMask: NSTextStorage.EditActions, range newCharRange: NSRange, changeInLength delta: Int, invalidatedRange invalidatedCharRange: NSRange)
 ```
 
+```objc
+- (void) processEditingForTextStorage:(NSTextStorage *) textStorage edited:(NSTextStorageEditActions) editMask range:(NSRange) newCharRange changeInLength:(NSInteger) delta invalidatedRange:(NSRange) invalidatedCharRange;
+```
+
 #### Discussion
 
 The `newCharRange` is the range in the final string which was explicitly edited. The `invalidatedRange` includes portions that changed as a result of attribute fixing — it is either equal to `newCharRange` or larger. Controllers should not change the contents of the text storage during the execution of this message.
@@ -33,7 +38,8 @@ The `newCharRange` is the range in the final string which was explicitly edited.
 
 ## See Also
 
-- [func performEditingTransaction(for: NSTextStorage, using: () -> Void)](nstextstorageobserving/performeditingtransaction(for:using:).md)
+### Managing the editing process
+- [func performEditingTransaction(for: NSTextStorage, using: () -> Void)](./performeditingtransaction%28for,using%29.md)
   Performs an editing transaction on the text storage.
 
 

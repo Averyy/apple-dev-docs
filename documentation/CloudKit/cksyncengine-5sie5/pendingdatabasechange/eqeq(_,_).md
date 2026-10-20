@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: CloudKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two values are equal.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether two values are equal.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func == (lhs: CKSyncEngine.PendingDatabaseChange, rhs: CKSyncEngine.Pendi
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two values are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../../Swift/true.md) if the two values are equal; otherwise, [`false`](../../../Swift/false.md).
 
 ## Parameters
 

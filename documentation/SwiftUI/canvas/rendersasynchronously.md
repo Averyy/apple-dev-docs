@@ -1,7 +1,8 @@
 # rendersAsynchronously
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the canvas can present its contents to its parent view asynchronously.
 
@@ -23,7 +24,8 @@ var rendersAsynchronously: Bool { get set }
 
 ## See Also
 
-- [var renderer: (inout GraphicsContext, CGSize) -> Void](canvas/renderer.md)
+### Rendering
+- [var renderer: (inout GraphicsContext, CGSize) -> Void](./renderer.md)
   The drawing callback that you use to draw into the canvas.
 
 

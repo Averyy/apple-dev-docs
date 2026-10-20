@@ -1,7 +1,8 @@
 # activityItemsConfiguration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom object from an app built with Mac Catalyst that provides the items to share.
 
@@ -14,17 +15,22 @@ The custom object from an app built with Mac Catalyst that provides the items to
 var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id<UIActivityItemsConfigurationReading> activityItemsConfiguration;
+```
+
 #### Discussion
 
 Use this object to provide the set of items to share from your macOS window.
 
-If this property is `nil`, the item uses the activity items configuration the window scene provides. For more information, see [`activityItemsConfigurationSource`](https://developer.apple.com/documentation/uikit/uiwindowscene/activityitemsconfigurationsource).
+If this property is `nil`, the item uses the activity items configuration the window scene provides. For more information, see [`activityItemsConfigurationSource`](../../UIKit/uiwindowscene/activityitemsconfigurationsource.md).
 
 ## See Also
 
-- [var delegate: (any NSSharingServicePickerToolbarItemDelegate)?](nssharingservicepickertoolbaritem/delegate.md)
+### Getting the Toolbar Items
+- [var delegate: (any NSSharingServicePickerToolbarItemDelegate)?](./delegate.md)
   The custom object from your app that provides the items to share.
-- [protocol NSSharingServicePickerToolbarItemDelegate](nssharingservicepickertoolbaritemdelegate.md)
+- [protocol NSSharingServicePickerToolbarItemDelegate](../nssharingservicepickertoolbaritemdelegate.md)
   An interface that provides the content to share from the macOS share sheet.
 
 

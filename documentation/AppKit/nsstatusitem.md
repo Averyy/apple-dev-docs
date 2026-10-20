@@ -1,12 +1,13 @@
 # NSStatusItem
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An individual element displayed in the system menu bar.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,70 +15,75 @@ An individual element displayed in the system menu bar.
 class NSStatusItem
 ```
 
+```objc
+@interface NSStatusItem : NSObject
+```
+
 #### Overview
 
-The [`NSStatusBar`](nsstatusbar.md) method [`statusItem(withLength:)`](nsstatusbar/statusitem(withlength:).md) creates instances of this class and automatically adds them to the menu bar. Use the [`button`](nsstatusitem/button.md) property to customize the appearance and behavior of the status item.
+The [`NSStatusBar`](./nsstatusbar.md) method [`statusItem(withLength:)`](./nsstatusbar/statusitem%28withlength%29.md) creates instances of this class and automatically adds them to the menu bar. Use the [`button`](./nsstatusitem/button.md) property to customize the appearance and behavior of the status item.
 
 ## Topics
 
 ### Getting the item’s status bar
-- [var statusBar: NSStatusBar?](nsstatusitem/statusbar.md)
+- [var statusBar: NSStatusBar?](./nsstatusitem/statusbar.md)
   The status bar that displays the status item.
 ### Managing the status item’s behavior
-- [var behavior: NSStatusItem.Behavior](nsstatusitem/behavior-swift.property.md)
+- [var behavior: NSStatusItem.Behavior](./nsstatusitem/behavior-swift.property.md)
   The set of allowed behaviors for the status item.
-- [NSStatusItem.Behavior](nsstatusitem/behavior-swift.struct.md)
+- [NSStatusItem.Behavior](./nsstatusitem/behavior-swift.struct.md)
   A set of optional status item behaviors.
-- [var button: NSStatusBarButton?](nsstatusitem/button.md)
+- [var button: NSStatusBarButton?](./nsstatusitem/button.md)
   The button displayed in the status bar.
-- [var menu: NSMenu?](nsstatusitem/menu.md)
+- [var menu: NSMenu?](./nsstatusitem/menu.md)
   The pull-down menu displayed when the user clicks the status item.
 ### Configuring the status item’s appearance
-- [var isVisible: Bool](nsstatusitem/isvisible.md)
+- [var isVisible: Bool](./nsstatusitem/isvisible.md)
   A Boolean value indicating if the menu bar currently displays the status item.
-- [var length: CGFloat](nsstatusitem/length.md)
+- [var length: CGFloat](./nsstatusitem/length.md)
   The amount of space in the status bar that should be allocated to the status item.
-- [class let squareLength: CGFloat](nsstatusitem/squarelength.md)
+- [class let squareLength: CGFloat](./nsstatusitem/squarelength.md)
   A status item length that is equal to the status bar’s thickness.
-- [class let variableLength: CGFloat](nsstatusitem/variablelength.md)
+- [class let variableLength: CGFloat](./nsstatusitem/variablelength.md)
   A status item length that dynamically adjusts to the width of its contents.
-- [var view: NSView?](nsstatusitem/view.md)
+- [var view: NSView?](./nsstatusitem/view.md)
   The custom view the status item displays at its position in the status bar.
 ### Configuring target-action behavior
-- [var target: AnyObject?](nsstatusitem/target.md)
+- [var target: AnyObject?](./nsstatusitem/target.md)
   The object that receives the status item’s action message when someone clicks the status item.
-- [var action: Selector?](nsstatusitem/action.md)
+- [var action: Selector?](./nsstatusitem/action.md)
   The selector the status item sends to its target when someone clicks the status item.
 ### Managing the expanded interface
-- [var expandedInterfaceDelegate: (any NSStatusItemExpandedInterfaceDelegate)?](nsstatusitem/expandedinterfacedelegate.md)
+- [var expandedInterfaceDelegate: (any NSStatusItemExpandedInterfaceDelegate)?](./nsstatusitem/expandedinterfacedelegate.md)
   The delegate that manages the lifecycle of the status item’s expanded interface.
-- [var expandedInterfaceSession: NSStatusItemExpandedInterfaceSession?](nsstatusitem/expandedinterfacesession.md)
+- [var expandedInterfaceSession: NSStatusItemExpandedInterfaceSession?](./nsstatusitem/expandedinterfacesession.md)
   A session object that tracks the lifecycle of the status item’s active expanded interface.
 ### Setting the autosave name
-- [var autosaveName: NSStatusItem.AutosaveName!](nsstatusitem/autosavename-swift.property.md)
+- [var autosaveName: NSStatusItem.AutosaveName!](./nsstatusitem/autosavename-swift.property.md)
   A unique name for saving and restoring information about a status item.
-- [NSStatusItem.AutosaveName](nsstatusitem/autosavename-swift.typealias.md)
+- [NSStatusItem.AutosaveName](./nsstatusitem/autosavename-swift.typealias.md)
 ### Deprecated
-- [Deprecated symbols](nsstatusitem-deprecated-symbols.md)
+- [Deprecated symbols](./nsstatusitem-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSStatusBar](nsstatusbar.md)
+### Menu Bar Items
+- [class NSStatusBar](./nsstatusbar.md)
   An object that manages a collection of status items displayed within the system-wide menu bar.
-- [class NSStatusBarButton](nsstatusbarbutton.md)
+- [class NSStatusBarButton](./nsstatusbarbutton.md)
   The appearance and behavior of an item in the systemwide menu bar.
 
 

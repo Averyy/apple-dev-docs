@@ -1,18 +1,20 @@
 # UILaunchImageName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string containing the name of the image file.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- tvOS 9.0+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 13.0
 
+## Details
 
-
-**Type**: string
+- **Name**: `UILaunchImageName`
+- **Type**: string
 
 #### Discussion
 
@@ -22,11 +24,12 @@ On disk, your image filenames may still include the modifiers as appropriate, al
 
 ## See Also
 
-- [UILaunchImageMinimumOSVersion](information-property-list/uilaunchimages/uilaunchimageminimumosversion.md)
+### Launch Image Configuration
+- [UILaunchImageMinimumOSVersion](./uilaunchimageminimumosversion.md)
   A string representing the minimum iOS version number for which the image is intended.
-- [UILaunchImageOrientation](information-property-list/uilaunchimages/uilaunchimageorientation.md)
+- [UILaunchImageOrientation](./uilaunchimageorientation.md)
   A string containing the orientation of the image
-- [UILaunchImageSize](information-property-list/uilaunchimages/uilaunchimagesize.md)
+- [UILaunchImageSize](./uilaunchimagesize.md)
   A string containing the width and height of the image.
 
 

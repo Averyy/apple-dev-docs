@@ -1,7 +1,8 @@
 # EACCES
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Permission denied.
 

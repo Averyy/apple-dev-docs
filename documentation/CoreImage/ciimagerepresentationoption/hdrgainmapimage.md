@@ -1,7 +1,8 @@
 # hdrGainMapImage
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An optional key and value to save a gain map channel to a JPEG or HEIF.
 
@@ -19,13 +20,17 @@ An optional key and value to save a gain map channel to a JPEG or HEIF.
 static let hdrGainMapImage: CIImageRepresentationOption
 ```
 
+```c
+extern CIImageRepresentationOption const kCIImageRepresentationHDRGainMapImage;
+```
+
 #### Discussion
 
-The value for this key needs to be a monochrome [`CIImage`](ciimage.md) instance.
+The value for this key needs to be a monochrome [`CIImage`](../ciimage.md) instance.
 
-If the [`hdrGainMapAsRGB`](ciimagerepresentationoption/hdrgainmapasrgb.md) option it true, then it needs to be an RGB [`CIImage`](ciimage.md) instance.
+If the [`hdrGainMapAsRGB`](./hdrgainmapasrgb.md) option it true, then it needs to be an RGB [`CIImage`](../ciimage.md) instance.
 
-The `/CIImage/properties` should contain metadata information equivalent to what is returned when initializing an image using [`auxiliaryHDRGainMap`](ciimageoption/auxiliaryhdrgainmap.md).
+The `/CIImage/properties` should contain metadata information equivalent to what is returned when initializing an image using [`auxiliaryHDRGainMap`](../ciimageoption/auxiliaryhdrgainmap.md).
 
 
 ---

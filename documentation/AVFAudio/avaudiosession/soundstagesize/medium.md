@@ -1,12 +1,13 @@
 # AVAudioSession.SoundStageSize.medium
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A medium sound stage.
 
 **Availability**:
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A medium sound stage.
 case medium
 ```
 
+```c
+AVAudioSessionSoundStageSizeMedium
+```
+
 ## See Also
 
-- [AVAudioSession.SoundStageSize.automatic](avaudiosession/soundstagesize/automatic.md)
+### Choosing a sound stage size
+- [AVAudioSession.SoundStageSize.automatic](./automatic.md)
   The system sets the sound stage size.
-- [AVAudioSession.SoundStageSize.small](avaudiosession/soundstagesize/small.md)
+- [AVAudioSession.SoundStageSize.small](./small.md)
   A small sound stage.
-- [AVAudioSession.SoundStageSize.large](avaudiosession/soundstagesize/large.md)
+- [AVAudioSession.SoundStageSize.large](./large.md)
   A large sound stage.
 
 

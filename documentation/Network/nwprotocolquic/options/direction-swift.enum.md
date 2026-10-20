@@ -1,7 +1,8 @@
 # NWProtocolQUIC.Options.Direction
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A directionality of a QUIC stream.
 
@@ -23,24 +24,25 @@ enum Direction
 ## Topics
 
 ### Direction Values
-- [NWProtocolQUIC.Options.Direction.bidirectional](nwprotocolquic/options/direction-swift.enum/bidirectional.md)
+- [NWProtocolQUIC.Options.Direction.bidirectional](./direction-swift.enum/bidirectional.md)
   A bidirectional QUIC stream.
-- [NWProtocolQUIC.Options.Direction.unidirectional](nwprotocolquic/options/direction-swift.enum/unidirectional.md)
+- [NWProtocolQUIC.Options.Direction.unidirectional](./direction-swift.enum/unidirectional.md)
   A unidirectional QUIC stream.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var direction: NWProtocolQUIC.Options.Direction](nwprotocolquic/options/direction-swift.property.md)
+### Customizing Stream Options
+- [var direction: NWProtocolQUIC.Options.Direction](./direction-swift.property.md)
   The direction of the QUIC stream.
-- [var isDatagram: Bool](nwprotocolquic/options/isdatagram.md)
+- [var isDatagram: Bool](./isdatagram.md)
   A Boolean that indicates that this is a QUIC datagram flow, not a stream of bytes.
 
 

@@ -1,7 +1,8 @@
 # NSPositionalSpecifier.InsertionPosition.end
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a position at the end of a collection.
 
@@ -15,23 +16,28 @@ Specifies a position at the end of a collection.
 case end
 ```
 
+```c
+NSPositionEnd
+```
+
 ## See Also
 
-- [NSPositionalSpecifier.InsertionPosition.after](nspositionalspecifier/insertionposition/after.md)
+### Constants
+- [NSPositionalSpecifier.InsertionPosition.after](./after.md)
   Specifies a position after another object.
-- [NSPositionalSpecifier.InsertionPosition.before](nspositionalspecifier/insertionposition/before.md)
+- [NSPositionalSpecifier.InsertionPosition.before](./before.md)
   Specifies a position before another object.
-- [NSPositionalSpecifier.InsertionPosition.beginning](nspositionalspecifier/insertionposition/beginning.md)
+- [NSPositionalSpecifier.InsertionPosition.beginning](./beginning.md)
   Specifies a position at the beginning of a collection.
-- [NSPositionalSpecifier.InsertionPosition.replace](nspositionalspecifier/insertionposition/replace.md)
+- [NSPositionalSpecifier.InsertionPosition.replace](./replace.md)
   Specifies a position in the place of another object.
-- [NSPositionalSpecifier.InsertionPosition.after](nspositionalspecifier/insertionposition/after.md)
+- [NSPositionalSpecifier.InsertionPosition.after](./after.md)
   Specifies a position after another object.
-- [NSPositionalSpecifier.InsertionPosition.before](nspositionalspecifier/insertionposition/before.md)
+- [NSPositionalSpecifier.InsertionPosition.before](./before.md)
   Specifies a position before another object.
-- [NSPositionalSpecifier.InsertionPosition.beginning](nspositionalspecifier/insertionposition/beginning.md)
+- [NSPositionalSpecifier.InsertionPosition.beginning](./beginning.md)
   Specifies a position at the beginning of a collection.
-- [NSPositionalSpecifier.InsertionPosition.replace](nspositionalspecifier/insertionposition/replace.md)
+- [NSPositionalSpecifier.InsertionPosition.replace](./replace.md)
   Specifies a position in the place of another object.
 
 

@@ -1,13 +1,14 @@
 # CAConstraintAttribute.maxY
 
 **Framework**: Core Animation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The top edge of a layer’s frame.
 
 **Availability**:
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,21 +16,26 @@ The top edge of a layer’s frame.
 case maxY
 ```
 
+```c
+kCAConstraintMaxY
+```
+
 ## See Also
 
-- [CAConstraintAttribute.height](caconstraintattribute/height.md)
+### Enumeration Cases
+- [CAConstraintAttribute.height](./height.md)
   The height of a layer.
-- [CAConstraintAttribute.maxX](caconstraintattribute/maxx.md)
+- [CAConstraintAttribute.maxX](./maxx.md)
   The right edge of a layer’s frame.
-- [CAConstraintAttribute.midX](caconstraintattribute/midx.md)
+- [CAConstraintAttribute.midX](./midx.md)
   The horizontal location of the center of a layer’s frame.
-- [CAConstraintAttribute.midY](caconstraintattribute/midy.md)
+- [CAConstraintAttribute.midY](./midy.md)
   The vertical location of the center of a layer’s frame.
-- [CAConstraintAttribute.minX](caconstraintattribute/minx.md)
+- [CAConstraintAttribute.minX](./minx.md)
   The left edge of a layer’s frame.
-- [CAConstraintAttribute.minY](caconstraintattribute/miny.md)
+- [CAConstraintAttribute.minY](./miny.md)
   The bottom edge of a layer’s frame.
-- [CAConstraintAttribute.width](caconstraintattribute/width.md)
+- [CAConstraintAttribute.width](./width.md)
   The width of a layer.
 
 

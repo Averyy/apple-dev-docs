@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal buffer backing all vertex and index data.
 
@@ -19,15 +20,20 @@ The Metal buffer backing all vertex and index data.
 var buffer: any MTLBuffer { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) id<MTLBuffer> buffer;
+```
+
 #### Discussion
 
-Many [`MTKMeshBuffer`](mtkmeshbuffer.md) objects may reference the same [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object, in which case each [`MTKMeshBuffer`](mtkmeshbuffer.md) object will have its own unique [`offset`](mtkmeshbuffer/offset.md) value.
+Many [`MTKMeshBuffer`](../mtkmeshbuffer.md) objects may reference the same [`MTLBuffer`](../../Metal/mtlbuffer.md) object, in which case each [`MTKMeshBuffer`](../mtkmeshbuffer.md) object will have its own unique [`offset`](./offset.md) value.
 
 ## See Also
 
-- [var length: Int](mtkmeshbuffer/length.md)
+### Metal Buffer Properties
+- [var length: Int](./length.md)
   The logical size of the Metal buffer, in bytes.
-- [var offset: Int](mtkmeshbuffer/offset.md)
+- [var offset: Int](./offset.md)
   The byte offset of the data within the Metal buffer.
 
 

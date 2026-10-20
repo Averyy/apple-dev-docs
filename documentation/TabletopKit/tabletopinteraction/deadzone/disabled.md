@@ -1,7 +1,8 @@
 # TabletopInteraction.DeadZone.disabled
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use this value to disable the dead zone.
 
@@ -16,9 +17,10 @@ case disabled
 
 ## See Also
 
-- [TabletopInteraction.DeadZone.default](tabletopinteraction/deadzone/default.md)
+### Interaction zones
+- [TabletopInteraction.DeadZone.default](./default.md)
   The default dead zone values.
-- [TabletopInteraction.DeadZone.within(distance:angle:)](tabletopinteraction/deadzone/within(distance:angle:).md)
+- [TabletopInteraction.DeadZone.within(distance:angle:)](./within%28distance,angle%29.md)
   Allows to customize the dead zone values. The object will start moving when the first of these two thresholds is reached.
 
 

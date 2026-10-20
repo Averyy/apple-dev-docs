@@ -1,7 +1,8 @@
 # UIWindowScene.DismissalAnimation.decline
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Animations to use when declining changes.
 
@@ -18,15 +19,20 @@ Animations to use when declining changes.
 case decline
 ```
 
+```c
+UIWindowSceneDismissalAnimationDecline
+```
+
 #### Discussion
 
 Use this type of animation when the scene contains changes that you don’t want to save. For example, a mail app might use this animation when discarding a draft email message or saving it for later.
 
 ## See Also
 
-- [UIWindowScene.DismissalAnimation.standard](uiwindowscene/dismissalanimation/standard.md)
+### Animation styles
+- [UIWindowScene.DismissalAnimation.standard](./standard.md)
   The standard dismissal animations.
-- [UIWindowScene.DismissalAnimation.commit](uiwindowscene/dismissalanimation/commit.md)
+- [UIWindowScene.DismissalAnimation.commit](./commit.md)
   Animations to use when saving changes.
 
 

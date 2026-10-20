@@ -1,7 +1,8 @@
 # minimumCount(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces a minimum number of elements in the array.
 
@@ -38,7 +39,8 @@ struct Shop {
 
 ## See Also
 
-- [static minimum(_:)](generationguide/minimum(_:).md)
+### Getting the minimum value
+- [static minimum(_:)](./minimum%28_%29.md)
   Enforces a minimum value.
 
 

@@ -1,7 +1,8 @@
 # bounce
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies whether the orthogonal scrolling section bounces past the edge of content and back again.
 
@@ -18,13 +19,18 @@ A value that specifies whether the orthogonal scrolling section bounces past the
 var bounce: UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce { get set }
 ```
 
+```objc
+@property (nonatomic) UICollectionLayoutSectionOrthogonalScrollingBounce bounce;
+```
+
 #### Discussion
 
 Set this value to specify whether the section stops scrolling immediately upon encountering the content boundary, or if it continues scrolling past the boundary and then bounces back.
 
 ## See Also
 
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum.md)
+### Specifying the bounce behavior
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](./bounce-swift.enum.md)
   Constants that specify whether the orthogonal scrolling section bounces past the edge of content and back again.
 
 

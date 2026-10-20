@@ -1,7 +1,8 @@
 # coordinateTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate transform for the projective texture
 
@@ -21,7 +22,8 @@ var coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateT
 
 ## See Also
 
-- [SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](spotlightcomponent/projectivetexture/texturecoordinatetransform.md)
+### Transforming texture coordinates
+- [SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform](./texturecoordinatetransform.md)
 
 
 ---

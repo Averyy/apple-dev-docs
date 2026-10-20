@@ -1,12 +1,13 @@
 # imageScaling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaling mode used to fit the receiver’s image into the frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The scaling mode used to fit the receiver’s image into the frame.
 var imageScaling: NSImageScaling { get set }
 ```
 
+```objc
+@property NSImageScaling imageScaling;
+```
+
 #### Discussion
 
-For a list of possible values, see [`NSImageScaling`](nsimagescaling.md). The default value is [`NSImageScaling.scaleProportionallyDown`](nsimagescaling/scaleproportionallydown.md).
+For a list of possible values, see [`NSImageScaling`](../nsimagescaling.md). The default value is [`NSImageScaling.scaleProportionallyDown`](../nsimagescaling/scaleproportionallydown.md).
 
 ## See Also
 
-- [var imageAlignment: NSImageAlignment](nsimagecell/imagealignment.md)
+### Aligning and Scaling the Image
+- [var imageAlignment: NSImageAlignment](./imagealignment.md)
   The alignment of the receiver’s image relative to its frame.
 
 

@@ -1,7 +1,8 @@
 # init(mapItemIdentifier:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a request with a map item identifier.
 
@@ -20,15 +21,20 @@ Create a request with a map item identifier.
 init(mapItemIdentifier identifier: MKMapItem.Identifier)
 ```
 
+```objc
+- (instancetype) initWithMapItemIdentifier:(MKMapItemIdentifier *) identifier;
+```
+
 ## Parameters
 
 - `identifier`: The identifier to use for the request.
 
 ## See Also
 
-- [convenience init(feature: MapFeature)](mkmapitemrequest/init(feature:).md)
+### Creating a request
+- [convenience init(feature: MapFeature)](./init%28feature%29.md)
   Creates a new map item request with the specified map feature.
-- [init(mapFeatureAnnotation: MKMapFeatureAnnotation)](mkmapitemrequest/init(mapfeatureannotation:).md)
+- [init(mapFeatureAnnotation: MKMapFeatureAnnotation)](./init%28mapfeatureannotation%29.md)
   Creates a new map item request with the specified feature annotation.
 
 

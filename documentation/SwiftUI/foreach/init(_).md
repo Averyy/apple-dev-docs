@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that uniquely identifies and creates table rows across updates based on the identity of the underlying data.
 
@@ -19,9 +20,11 @@ Creates an instance that uniquely identifies and creates table rows across updat
 nonisolated init(_ data: Data) where ID == Data.Element.ID, Content == TableRow<Data.Element>, Data.Element : Identifiable
 ```
 
+Available when `Data` conforms to `RandomAccessCollection`, `ID` conforms to `Hashable`, and `Content` conforms to `TableRowContent`.
+
 #### Discussion
 
-The following example creates a `Person` type that conforms to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable), and an array of this type called `people`. A `ForEach` instance iterates over the array, producing new [`TableRow`](tablerow.md) instances implicitly.
+The following example creates a `Person` type that conforms to [`Identifiable`](../../Swift/identifiable.md), and an array of this type called `people`. A `ForEach` instance iterates over the array, producing new [`TableRow`](../tablerow.md) instances implicitly.
 
 ```swift
 private struct Person: Identifiable {
@@ -46,17 +49,18 @@ Table(of: Person.self) {
 
 ## Parameters
 
-- `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create table rows dynamically.
+- `data`: The identified data that the [`ForEach`](../foreach.md) instance uses to create table rows dynamically.
 
 ## See Also
 
-- [init(_:content:)](foreach/init(_:content:).md)
+### Creating a collection
+- [init(_:content:)](./init%28_,content%29.md)
   Creates an instance that uniquely identifies and creates map content across updates based on the identity of the underlying data.
-- [init(_:id:content:)](foreach/init(_:id:content:).md)
+- [init(_:id:content:)](./init%28_,id,content%29.md)
   Creates an instance that uniquely identifies and creates map content across updates based on the provided key path to the underlying data’s identifier.
-- [init<V>(sections: V, content: (SectionConfiguration) -> Content)](foreach/init(sections:content:).md)
+- [init<V>(sections: V, content: (SectionConfiguration) -> Content)](./init%28sections,content%29.md)
   Creates an instance that uniquely identifies and creates views across updates based on the sections of a given view.
-- [init<V>(subviews: V, content: (Subview) -> Content)](foreach/init(subviews:content:).md)
+- [init<V>(subviews: V, content: (Subview) -> Content)](./init%28subviews,content%29.md)
   Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
 
 

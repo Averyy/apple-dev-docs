@@ -1,7 +1,8 @@
 # BNNS.RandomGeneratorState
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque object that contains the state of a random number generator.
 
@@ -11,7 +12,7 @@ An opaque object that contains the state of a random number generator.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ class RandomGeneratorState
 
 ## See Also
 
-- [var state: BNNS.RandomGeneratorState](bnns/randomgenerator/state.md)
+### Saving and Restoring a Randon Generator’s State
+- [var state: BNNS.RandomGeneratorState](./randomgenerator/state.md)
   The state of the random number generator.
 
 

@@ -1,7 +1,8 @@
 # indexPIP
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The index finger’s proximal interphalangeal (PIP) joint.
 
@@ -19,13 +20,18 @@ The index finger’s proximal interphalangeal (PIP) joint.
 static let indexPIP: VNHumanHandPoseObservation.JointName
 ```
 
+```c
+extern VNHumanHandPoseObservationJointName const VNHumanHandPoseObservationJointNameIndexPIP;
+```
+
 ## See Also
 
-- [static let indexTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/indextip.md)
+### Index
+- [static let indexTip: VNHumanHandPoseObservation.JointName](./indextip.md)
   The tip of the index finger.
-- [static let indexDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/indexdip.md)
+- [static let indexDIP: VNHumanHandPoseObservation.JointName](./indexdip.md)
   The index finger’s distal interphalangeal (DIP) joint.
-- [static let indexMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/indexmcp.md)
+- [static let indexMCP: VNHumanHandPoseObservation.JointName](./indexmcp.md)
   The index finger’s metacarpophalangeal (MCP) joint.
 
 

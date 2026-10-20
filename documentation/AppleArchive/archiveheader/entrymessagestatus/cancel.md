@@ -1,7 +1,8 @@
 # cancel
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An entry message status that indicates the operation cancels processing as soon as possible.
 
@@ -11,7 +12,7 @@ An entry message status that indicates the operation cancels processing as soon 
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static let cancel: ArchiveHeader.EntryMessageStatus
 
 ## See Also
 
-- [static let ok: ArchiveHeader.EntryMessageStatus](archiveheader/entrymessagestatus/ok.md)
+### Entry Message Statuses
+- [static let ok: ArchiveHeader.EntryMessageStatus](./ok.md)
   An entry message status that indicates the operation keeps the entry.
-- [static let skip: ArchiveHeader.EntryMessageStatus](archiveheader/entrymessagestatus/skip.md)
+- [static let skip: ArchiveHeader.EntryMessageStatus](./skip.md)
   An entry message status that indicates the operation skips the entry.
 
 

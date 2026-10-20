@@ -1,7 +1,8 @@
 # SetClockAlgorithm
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the clock algorithm of the clock device.
 
@@ -10,13 +11,13 @@ Sets the clock algorithm of the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetClockAlgorithm(IOUserAudioClockAlgorithm in_clock_algorithm);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,13 +29,14 @@ Drivers can change the transport type of the clock device dynamically. If succes
 
 ## See Also
 
-- [GetClockAlgorithm](iouseraudioclockdevice/getclockalgorithm.md)
+### Working with Clock Device Behavior
+- [GetClockAlgorithm](./getclockalgorithm.md)
   Gets the clock algorithm of the clock device.
-- [IOUserAudioClockAlgorithm](audiodriverkit/iouseraudioclockalgorithm.md)
+- [IOUserAudioClockAlgorithm](../audiodriverkit-page/iouseraudioclockalgorithm.md)
   Values that describe clock-smoothing algorithms.
-- [SetClockIsStable](iouseraudioclockdevice/setclockisstable.md)
+- [SetClockIsStable](./setclockisstable.md)
   Sets a Boolean value to represent the clock’s stability.
-- [GetClockIsStable](iouseraudioclockdevice/getclockisstable.md)
+- [GetClockIsStable](./getclockisstable.md)
   Gets a Boolean value that represents the clock’s stability.
 
 

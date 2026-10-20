@@ -1,7 +1,8 @@
 # item
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the item element of the index path.
 
@@ -21,13 +22,14 @@ var item: Int { get set }
 
 ## See Also
 
-- [var endIndex: IndexPath.Index](indexpath/endindex.md)
+### Working with Special Node Names
+- [var endIndex: IndexPath.Index](./endindex.md)
   One past the index of the last node in the index path.
-- [var row: Int](indexpath/row.md)
+- [var row: Int](./row.md)
   The value of the row element of the index path.
-- [var section: Int](indexpath/section-8h7wo.md)
+- [var section: Int](./section-8h7wo.md)
   The value of the section element of the index path.
-- [var startIndex: IndexPath.Index](indexpath/startindex.md)
+- [var startIndex: IndexPath.Index](./startindex.md)
   The index of the first node in the index path.
 
 

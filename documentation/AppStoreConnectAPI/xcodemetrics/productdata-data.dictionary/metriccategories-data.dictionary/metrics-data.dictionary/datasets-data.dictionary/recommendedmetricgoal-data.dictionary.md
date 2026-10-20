@@ -1,7 +1,8 @@
 # xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.RecommendedMetricGoal
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A recommeded value of a goal for a specific app metric.
 
@@ -10,7 +11,7 @@ A recommeded value of a goal for a specific app metric.
 
 ## Declaration
 
-```swift
+```
 object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.RecommendedMetricGoal
 ```
 

@@ -1,7 +1,8 @@
 # acquirePresentmentAssertion()
 
 **Framework**: SecureElementCredential  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the app intends to present a credential to a contactless interface.
 
@@ -17,11 +18,11 @@ func acquirePresentmentAssertion() async throws -> CredentialSession.Presentment
 
 ## Mentions
 
-- [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
+- [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
 #### Return Value
 
-A [`CredentialSession.PresentmentIntentAssertion`](credentialsession/presentmentintentassertion.md) object, representing exclusive access to presentment intent for a short time.
+A [`CredentialSession.PresentmentIntentAssertion`](./presentmentintentassertion.md) object, representing exclusive access to presentment intent for a short time.
 
 #### Discussion
 
@@ -31,17 +32,20 @@ When you acquire this assertion, your app’s credential presentment can’t be 
 
 If another entity is already presenting a credential, calling this method throws an error. In this case, try calling the method again later.
 
-Hold on to this instance as long as you need it (up to 60 seconds) to complete your credential presentment activity. When you’re done, call [`relinquish()`](credentialsession/presentmentintentassertion/relinquish().md) to end the presentment assertion.
+Hold on to this instance as long as you need it (up to 60 seconds) to complete your credential presentment activity. When you’re done, call [`relinquish()`](./presentmentintentassertion/relinquish%28%29.md) to end the presentment assertion.
 
 Repetitive acquisition of the assertion mechanism may result in a cooldown before being able to acquire the next assertion.
 
-The exclusive use of the presentment intent expires after a predetermined timeout period. When this happens, the credential session’s event stream produces a [`CredentialSession.Event.presentmentIntentAssertionTimeout`](credentialsession/event/presentmentintentassertiontimeout.md) event.
+The exclusive use of the presentment intent expires after a predetermined timeout period. When this happens, the credential session’s event stream produces a [`CredentialSession.Event.presentmentIntentAssertionTimeout`](./event/presentmentintentassertiontimeout.md) event.
 
-- The most common errors are: - [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system service is unavailable, or another entity is currently presenting a credential.
+- The most common errors are:
+
+  - [`CredentialSession.ErrorCode.resourceUnavailable`](./errorcode/resourceunavailable.md): The system service is unavailable, or another entity is currently presenting a credential.
 
 ## See Also
 
-- [CredentialSession.PresentmentIntentAssertion](credentialsession/presentmentintentassertion.md)
+### Acquiring exclusive foreground privileges
+- [CredentialSession.PresentmentIntentAssertion](./presentmentintentassertion.md)
   An object that signals your app’s intention to make exclusive use of the device’s contactless features.
 
 

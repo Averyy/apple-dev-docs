@@ -2,6 +2,7 @@
 
 **Framework**: StoreKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The default placement for a subscription store control.

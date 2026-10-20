@@ -1,7 +1,8 @@
 # init(typeIdentifier:value:)
 
 **Framework**: App Intents Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an enumeration with a typed raw value.
 
@@ -27,11 +28,12 @@ init(typeIdentifier: String, value: any LosslessStringConvertible)
 
 ## See Also
 
-- [init(typeIdentifier: String, rawValue: String)](anyappenum/init(typeidentifier:rawvalue:).md)
+### Creating an enum
+- [init(typeIdentifier: String, rawValue: String)](./init%28typeidentifier,rawvalue%29.md)
   Creates a new instance with the specified enumeration identifier and raw value.
-- [var typeIdentifier: String](anyappenum/typeidentifier.md)
+- [var typeIdentifier: String](./typeidentifier.md)
   The enumeration’s type identifier.
-- [var rawValue: String](anyappenum/rawvalue.md)
+- [var rawValue: String](./rawvalue.md)
   The raw value of the selected enumeration option.
 
 

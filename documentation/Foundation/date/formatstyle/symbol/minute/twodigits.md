@@ -1,7 +1,8 @@
 # twoDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The custom format style that shows the two-digit numeric minute, zero-padded if necessary.
 
@@ -26,7 +27,8 @@ For example, this style represents one minute past the hour as `01`, and eightee
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute/defaultdigits.md)
+### Modifying a Minute
+- [static var defaultDigits: Date.FormatStyle.Symbol.Minute](./defaultdigits.md)
   The custom minute format style showing the minimum number of digits that represents the numeric minute.
 
 

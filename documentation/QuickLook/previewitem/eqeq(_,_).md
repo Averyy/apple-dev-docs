@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Quick Look  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two preview items are equal.
 

@@ -1,7 +1,8 @@
 # PKContentVersion.version4
 
 **Framework**: PencilKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The version that adds the Reed Pen ink.
 
@@ -18,15 +19,20 @@ The version that adds the Reed Pen ink.
 case version4
 ```
 
+```c
+PKContentVersion4
+```
+
 ## See Also
 
-- [PKContentVersion.version1](pkcontentversion/version1.md)
+### Specific versions
+- [PKContentVersion.version1](./version1.md)
   The PencilKit version that supports inks from iPadOS 14 and earlier, including marker, pen, and pencil.
-- [PKContentVersion.version2](pkcontentversion/version2.md)
+- [PKContentVersion.version2](./version2.md)
   The PencilKit version that supports inks from iPadOS 17 and earlier, including marker, pen, pencil, monoline, fountain pen, watercolor, and crayon.
-- [PKContentVersion.version3](pkcontentversion/version3.md)
+- [PKContentVersion.version3](./version3.md)
   The PencilKit version that supports barrel-roll angle data in inks.
-- [PKContentVersion.version5](pkcontentversion/version5.md)
+- [PKContentVersion.version5](./version5.md)
   The version that adds stroke render state support.
 
 

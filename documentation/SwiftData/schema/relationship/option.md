@@ -1,7 +1,8 @@
 # Schema.Relationship.Option
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -22,17 +23,17 @@ struct Option
 ## Topics
 
 ### Type Properties
-- [static var unique: Schema.Relationship.Option](schema/relationship/option/unique.md)
+- [static var unique: Schema.Relationship.Option](./option/unique.md)
   Ensures the property’s value is unique across all models of the same type.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

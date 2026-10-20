@@ -1,7 +1,8 @@
 # textView(_:willEndFormattingWith:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 optional func textView(_ textView: UITextView, willEndFormattingWith viewController: UITextFormattingViewController)
+```
+
+```objc
+- (void) textView:(UITextView *) textView willEndFormattingWithViewController:(UITextFormattingViewController *) viewController;
 ```
 
 #### Discussion

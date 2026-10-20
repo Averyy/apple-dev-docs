@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media type. Defaults to `.audio` for book content.
 

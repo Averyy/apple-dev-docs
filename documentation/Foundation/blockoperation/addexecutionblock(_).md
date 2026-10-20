@@ -1,7 +1,8 @@
 # addExecutionBlock(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified block to the receiver’s list of blocks to perform.
 
@@ -20,6 +21,10 @@ Adds the specified block to the receiver’s list of blocks to perform.
 func addExecutionBlock(_ block: @escaping @Sendable () -> Void)
 ```
 
+```objc
+- (void) addExecutionBlock:(void (^)()) block;
+```
+
 #### Discussion
 
 The specified block should not make any assumptions about its execution environment.
@@ -32,9 +37,10 @@ Calling this method while the receiver is executing or has already finished caus
 
 ## See Also
 
-- [convenience init(block: () -> Void)](blockoperation/init(block:).md)
+### Managing the Blocks in the Operation
+- [convenience init(block: () -> Void)](./init%28block%29.md)
   Creates and returns an `NSBlockOperation` object and adds the specified block to it.
-- [var executionBlocks: [() -> Void]](blockoperation/executionblocks.md)
+- [var executionBlocks: [() -> Void]](./executionblocks.md)
   The blocks associated with the receiver.
 
 

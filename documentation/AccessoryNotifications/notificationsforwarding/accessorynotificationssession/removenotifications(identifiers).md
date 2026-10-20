@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes the identified notifications.
@@ -25,7 +26,8 @@ This method has equivalent behavior to clearing notifications from Notification 
 
 ## See Also
 
-- [func removeNotifications(withIdentifiers: [String], sourceIdentifier: String) async throws](notificationsforwarding/accessorynotificationssession/removenotifications(withidentifiers:sourceidentifier:).md)
+### Removing notifications
+- [func removeNotifications(withIdentifiers: [String], sourceIdentifier: String) async throws](./removenotifications%28withidentifiers,sourceidentifier%29.md)
   Removes notifications using primitive identifier components.
 
 

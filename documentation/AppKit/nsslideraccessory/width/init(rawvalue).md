@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -17,7 +18,8 @@ init(rawValue: CGFloat)
 
 ## See Also
 
-- [init(CGFloat)](nsslideraccessory/width/init(_:).md)
+### Initializers
+- [init(CGFloat)](./init%28_%29.md)
 
 
 ---

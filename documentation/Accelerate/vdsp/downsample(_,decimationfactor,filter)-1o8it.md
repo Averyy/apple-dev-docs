@@ -1,7 +1,8 @@
 # downsample(_:decimationFactor:filter:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the downsampled double-precision vector.
 
@@ -11,7 +12,7 @@ Returns the downsampled double-precision vector.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,17 +23,18 @@ static func downsample<T, U>(_ source: U, decimationFactor: Int, filter: T) -> [
 
 ## Mentions
 
-- [Resampling a signal with decimation](resampling-a-signal-with-decimation.md)
+- [Resampling a signal with decimation](../resampling-a-signal-with-decimation.md)
 
 ## See Also
 
-- [Resampling a signal with decimation](resampling-a-signal-with-decimation.md)
+### Real Vectors
+- [Resampling a signal with decimation](../resampling-a-signal-with-decimation.md)
   Reduce the sample rate of a signal by specifying a decimation factor and applying a custom antialiasing filter.
-- [static func downsample<T, U>(U, decimationFactor: Int, filter: T) -> [Float]](vdsp/downsample(_:decimationfactor:filter:)-40d8o.md)
+- [static func downsample<T, U>(U, decimationFactor: Int, filter: T) -> [Float]](./downsample%28_,decimationfactor,filter%29-40d8o.md)
   Returns the downsampled single-precision vector.
-- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](vdsp/downsample(_:decimationfactor:filter:result:)-2y1iv.md)
+- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](./downsample%28_,decimationfactor,filter,result%29-2y1iv.md)
   Calculates the downsampled double-precision vector.
-- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](vdsp/downsample(_:decimationfactor:filter:result:)-1g4a.md)
+- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](./downsample%28_,decimationfactor,filter,result%29-1g4a.md)
   Calculates the downsampled single-precision vector.
 
 

@@ -1,7 +1,8 @@
 # Abort
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Aborts all of the pipe’s pending I/O requests.
 
@@ -10,13 +11,13 @@ Aborts all of the pipe’s pending I/O requests.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Abort(IOOptionBits options, kern_return_t withError, IOService *forClient);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,13 +25,14 @@ If the `options` argument includes `kAbortSynchronous`, this method blocks all n
 
 ## Parameters
 
-- `options`: Options for how to abort the requests. For a list of possible values, see [`IOUSBAbortOptions`](iousbabortoptions.md).
+- `options`: Options for how to abort the requests. For a list of possible values, see [`IOUSBAbortOptions`](../iousbabortoptions.md).
 - `withError`: The error value to report for each request. Specify `kIOReturnAborted` for this parameter.
 - `forClient`: The service that initiated the requests. Specify a non `NULL` value for this parameter only for pipes associated with a control endpoint; specify `NULL` for other endpoint types. For a control endpoint, you can also specify `NULL` to abort all requests.
 
 ## See Also
 
-- [IOUSBAbortOptions](iousbabortoptions.md)
+### Aborting I/O Requests
+- [IOUSBAbortOptions](../iousbabortoptions.md)
   Options to use when aborting an I/O request.
 
 

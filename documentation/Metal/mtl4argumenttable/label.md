@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Assigns an optional label with this argument table for debugging purposes.
@@ -20,9 +21,13 @@ Assigns an optional label with this argument table for debugging purposes.
 var label: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
-You set this label by setting property [`label`](mtl4argumenttabledescriptor/label.md) on the descriptor object, prior to creating this table instance.
+You set this label by setting property [`label`](../mtl4argumenttabledescriptor/label.md) on the descriptor object, prior to creating this table instance.
 
 
 ---

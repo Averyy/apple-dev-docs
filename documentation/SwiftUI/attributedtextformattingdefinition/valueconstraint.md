@@ -1,7 +1,8 @@
 # AttributedTextFormattingDefinition.ValueConstraint
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A text formatting definition that permits a single attribute to be used, optionally constrained to a set of values.
 

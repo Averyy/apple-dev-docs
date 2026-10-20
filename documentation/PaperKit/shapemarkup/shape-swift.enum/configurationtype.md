@@ -1,7 +1,8 @@
 # configurationType
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category of shape.
 

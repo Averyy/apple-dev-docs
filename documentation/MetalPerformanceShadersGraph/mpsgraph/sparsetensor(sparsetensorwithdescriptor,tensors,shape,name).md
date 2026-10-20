@@ -1,7 +1,8 @@
 # sparseTensor(sparseTensorWithDescriptor:tensors:shape:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a sparse tensor representation.
 
@@ -19,9 +20,13 @@ Creates a sparse tensor representation.
 func sparseTensor(sparseTensorWithDescriptor sparseDescriptor: MPSGraphCreateSparseOpDescriptor, tensors inputTensorArray: [MPSGraphTensor], shape: [NSNumber], name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) sparseTensorWithDescriptor:(MPSGraphCreateSparseOpDescriptor *) sparseDescriptor tensors:(NSArray<MPSGraphTensor *> *) inputTensorArray shape:(MPSShape *) shape name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 
 #### Discussion
 

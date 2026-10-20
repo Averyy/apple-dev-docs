@@ -1,7 +1,8 @@
 # clearTimeout
 
 **Framework**: TVMLKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Stops the function associated with the identifier from executing.
 
@@ -10,7 +11,7 @@ Stops the function associated with the identifier from executing.
 
 ## Declaration
 
-```swift
+```
 void clearTimeout(
     in String timeoutID
 );
@@ -18,7 +19,7 @@ void clearTimeout(
 
 #### Discussion
 
-This function stops the function associated with the identifier created by the [`setTimeout`](1627349-settimeout.md) function from executing.
+This function stops the function associated with the identifier created by the [`setTimeout`](./api-1627349-settimeout.md) function from executing.
 
 ## Parameters
 
@@ -26,11 +27,12 @@ This function stops the function associated with the identifier created by the [
 
 ## See Also
 
-- [setInterval](1627337-setinterval.md)
+### Automating Function Timing
+- [setInterval](./api-1627337-setinterval.md)
   Repeatedly executes a given function at the given time interval.
-- [clearInterval](1627411-clearinterval.md)
+- [clearInterval](./api-1627411-clearinterval.md)
   Stops the function associated with the identifier from repeating.
-- [setTimeout](1627349-settimeout.md)
+- [setTimeout](./api-1627349-settimeout.md)
   Executes a given function after a set amount of time.
 
 

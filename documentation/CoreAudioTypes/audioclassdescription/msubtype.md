@@ -1,7 +1,8 @@
 # mSubType
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A four character code that a manufacturer defines for a codec subtype.
 
@@ -20,11 +21,16 @@ A four character code that a manufacturer defines for a codec subtype.
 var mSubType: OSType
 ```
 
+```c
+OSType mSubType;
+```
+
 ## See Also
 
-- [var mType: OSType](audioclassdescription/mtype.md)
+### Accessing the Data
+- [var mType: OSType](./mtype.md)
   A four character code that a manufacturer defines for a codec type.
-- [var mManufacturer: OSType](audioclassdescription/mmanufacturer.md)
+- [var mManufacturer: OSType](./mmanufacturer.md)
   A four character code that identifies a codec manufacturer.
 
 

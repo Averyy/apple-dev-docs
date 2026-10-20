@@ -1,7 +1,8 @@
 # randomAccessDecryptionStream(readingFrom:encryptionContext:allocationLimit:flags:threadCount:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a decryption random access input stream.
 
@@ -11,7 +12,7 @@ Creates a decryption random access input stream.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,13 +29,14 @@ A new archive byte stream.
 
 - `encryptedStream`: An input stream that provides encrypted and compressed data.
 - `context`: Encryption context that provides options and credentials.
-- `allocationLimit`: The requested memory allocation size in bytes. Set to `0` for lowest memory footprint or [`max`](https://developer.apple.com/documentation/swift/int/max) for best performance.
+- `allocationLimit`: The requested memory allocation size in bytes. Set to `0` for lowest memory footprint or [`max`](../../Swift/int/max.md) for best performance.
 - `flags`: Flags that control the behavior of the operation.
 - `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 
 ## See Also
 
-- [static func decryptionStream(readingFrom: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](archivebytestream/decryptionstream(readingfrom:encryptioncontext:flags:threadcount:).md)
+### Decrypting Data
+- [static func decryptionStream(readingFrom: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](./decryptionstream%28readingfrom,encryptioncontext,flags,threadcount%29.md)
   Creates a decryption sequential input stream.
 
 

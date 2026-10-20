@@ -1,7 +1,8 @@
 # init(url:settings:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio recorder with settings.
 
@@ -20,9 +21,13 @@ Creates an audio recorder with settings.
 init(url: URL, settings: [String : Any]) throws
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) url settings:(NSDictionary<NSString *,id> *) settings error:(NSError **) outError;
+```
+
 #### Return Value
 
-A new audio recorder, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if an error occurred.
+A new audio recorder, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurred.
 
 #### Discussion
 
@@ -30,11 +35,11 @@ The system supports the following keys when defining the format settings:
 
 | Key | Supported Values |
 | --- | --- |
-| [`AVFormatIDKey`](avformatidkey.md) | [`kAudioFormatLinearPCM`](https://developer.apple.com/documentation/coreaudiotypes/kaudioformatlinearpcm) ![None](/images/com.apple.avfaudio/spacer.png) [`kAudioFormatMPEG4AAC`](https://developer.apple.com/documentation/coreaudiotypes/kaudioformatmpeg4aac) ![None](/images/com.apple.avfaudio/spacer.png) [`kAudioFormatAppleLossless`](https://developer.apple.com/documentation/coreaudiotypes/kaudioformatapplelossless) ![None](/images/com.apple.avfaudio/spacer.png) [`kAudioFormatAppleIMA4`](https://developer.apple.com/documentation/coreaudiotypes/kaudioformatappleima4) ![None](/images/com.apple.avfaudio/spacer.png) [`kAudioFormatiLBC`](https://developer.apple.com/documentation/coreaudiotypes/kaudioformatilbc) ![None](/images/com.apple.avfaudio/spacer.png) [`kAudioFormatULaw`](https://developer.apple.com/documentation/coreaudiotypes/kaudioformatulaw) |
-| [`AVSampleRateKey`](avsampleratekey.md) | 8 kHz to 192 kHz |
-| [`AVNumberOfChannelsKey`](avnumberofchannelskey.md) | 1 to 64 |
+| [`AVFormatIDKey`](../avformatidkey.md) | [`kAudioFormatLinearPCM`](../../CoreAudioTypes/kaudioformatlinearpcm.md) ![](https://developer.apple.com/tutorials/images/com.apple.avfaudio/spacer.png) [`kAudioFormatMPEG4AAC`](../../CoreAudioTypes/kaudioformatmpeg4aac.md) ![](https://developer.apple.com/tutorials/images/com.apple.avfaudio/spacer.png) [`kAudioFormatAppleLossless`](../../CoreAudioTypes/kaudioformatapplelossless.md) ![](https://developer.apple.com/tutorials/images/com.apple.avfaudio/spacer.png) [`kAudioFormatAppleIMA4`](../../CoreAudioTypes/kaudioformatappleima4.md) ![](https://developer.apple.com/tutorials/images/com.apple.avfaudio/spacer.png) [`kAudioFormatiLBC`](../../CoreAudioTypes/kaudioformatilbc.md) ![](https://developer.apple.com/tutorials/images/com.apple.avfaudio/spacer.png) [`kAudioFormatULaw`](../../CoreAudioTypes/kaudioformatulaw.md) |
+| [`AVSampleRateKey`](../avsampleratekey.md) | 8 kHz to 192 kHz |
+| [`AVNumberOfChannelsKey`](../avnumberofchannelskey.md) | 1 to 64 |
 
-The system supports additional configuration options based on your selected audio format. See [`Linear PCM format settings`](https://developer.apple.com/documentation/avfoundation/linear-pcm-format-settings) for information about customizing Linear PCM formats and [`Encoder settings`](https://developer.apple.com/documentation/avfoundation/encoder-settings) for compressed formats.
+The system supports additional configuration options based on your selected audio format. See [Linear PCM format settings](../../AVFoundation/linear-pcm-format-settings.md) for information about customizing Linear PCM formats and [Encoder settings](../../AVFoundation/encoder-settings.md) for compressed formats.
 
 ## Parameters
 
@@ -43,7 +48,8 @@ The system supports additional configuration options based on your selected audi
 
 ## See Also
 
-- [init(url: URL, format: AVAudioFormat) throws](avaudiorecorder/init(url:format:)-7herw.md)
+### Creating an audio recorder
+- [init(url: URL, format: AVAudioFormat) throws](./init%28url,format%29-7herw.md)
   Creates an audio recorder with an audio format.
 
 

@@ -1,7 +1,8 @@
 # AVCaptionRenderer.Scene
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that holds a time range and an associated state which indicates when the renderer draws output.
 
@@ -17,38 +18,43 @@ An object that holds a time range and an associated state which indicates when t
 class Scene
 ```
 
+```objc
+@interface AVCaptionRendererScene : NSObject
+```
+
 #### Overview
 
-To render a scene, the object considers state like the existence of captions and regions, their temporal overlaps, and whether captions use animation effects. Your app can request time ranges where visual differences exist and use these time ranges to optimize drawing performance, like drawing once per scene. Alternatively, it can ignore scenes, and instead call [`render(in:for:)`](avcaptionrenderer/render(in:for:).md) repeatedly, but this may have additional performance impact.
+To render a scene, the object considers state like the existence of captions and regions, their temporal overlaps, and whether captions use animation effects. Your app can request time ranges where visual differences exist and use these time ranges to optimize drawing performance, like drawing once per scene. Alternatively, it can ignore scenes, and instead call [`render(in:for:)`](./render%28in,for%29.md) repeatedly, but this may have additional performance impact.
 
 ## Topics
 
 ### Inspecting the scene
-- [var timeRange: CMTimeRange](avcaptionrenderer/scene/timerange.md)
+- [var timeRange: CMTimeRange](./scene/timerange.md)
   The time range during which the system doesn’t modify the scene.
-- [var hasActiveCaptions: Bool](avcaptionrenderer/scene/hasactivecaptions.md)
+- [var hasActiveCaptions: Bool](./scene/hasactivecaptions.md)
   A Boolean value that indicates whether the scene contains one or more active captions.
-- [var needsPeriodicRefresh: Bool](avcaptionrenderer/scene/needsperiodicrefresh.md)
+- [var needsPeriodicRefresh: Bool](./scene/needsperiodicrefresh.md)
   A Boolean value that indicates whether the scene requires redrawing while your app progresses through the content.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func captionSceneChanges(in: CMTimeRange) -> [AVCaptionRenderer.Scene]](avcaptionrenderer/captionscenechanges(in:).md)
+### Determining scene changes
+- [func captionSceneChanges(in: CMTimeRange) -> [AVCaptionRenderer.Scene]](./captionscenechanges%28in%29.md)
   Determine render time ranges within an enclosing time range to account for visual changes among captions.
 
 

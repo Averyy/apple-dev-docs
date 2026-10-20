@@ -1,19 +1,26 @@
 # setTargetRect(_:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the area in a view above or below which the editing menu is positioned.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
+- iOS 3.0+ - Deprecated in 13.0
+- iPadOS 3.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIMenuController`](../uimenucontroller.md).
 
 ## Declaration
 
 ```swift
 func setTargetRect(_ targetRect: CGRect, in targetView: UIView)
+```
+
+```objc
+- (void) setTargetRect:(CGRect) targetRect inView:(UIView *) targetView;
 ```
 
 #### Discussion
@@ -29,11 +36,12 @@ Once it is set, the target rectangle does not track the view; if the view moves 
 
 ## See Also
 
-- [var menuFrame: CGRect](uimenucontroller/menuframe.md)
+### Positioning the menu
+- [var menuFrame: CGRect](./menuframe.md)
   Returns the frame of the editing menu.
-- [var arrowDirection: UIMenuController.ArrowDirection](uimenucontroller/arrowdirection-swift.property.md)
+- [var arrowDirection: UIMenuController.ArrowDirection](./arrowdirection-swift.property.md)
   The direction the arrow of the editing menu is pointing.
-- [UIMenuController.ArrowDirection](uimenucontroller/arrowdirection-swift.enum.md)
+- [UIMenuController.ArrowDirection](./arrowdirection-swift.enum.md)
   The direction the arrow of the editing menu is pointing.
 
 

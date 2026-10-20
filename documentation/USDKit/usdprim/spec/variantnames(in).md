@@ -1,7 +1,8 @@
 # variantNames(in:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the variant names available in the given variant set.
 

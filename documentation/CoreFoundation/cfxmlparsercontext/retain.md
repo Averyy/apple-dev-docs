@@ -1,17 +1,22 @@
 # retain
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A retain callback for your program-defined context data. Optional.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var retain: CFXMLParserRetainCallBack!
+```
+
+```c
+CFXMLParserRetainCallBack retain;
 ```
 
 

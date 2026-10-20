@@ -1,7 +1,8 @@
 # MTRGroupKeyManagementClusterGroupKeySetStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 class MTRGroupKeyManagementClusterGroupKeySetStruct
 ```
 
+```objc
+@interface MTRGroupKeyManagementClusterGroupKeySetStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var epochKey0: Data?](mtrgroupkeymanagementclustergroupkeysetstruct/epochkey0.md)
-- [var epochKey1: Data?](mtrgroupkeymanagementclustergroupkeysetstruct/epochkey1.md)
-- [var epochKey2: Data?](mtrgroupkeymanagementclustergroupkeysetstruct/epochkey2.md)
-- [var epochStartTime0: NSNumber?](mtrgroupkeymanagementclustergroupkeysetstruct/epochstarttime0.md)
-- [var epochStartTime1: NSNumber?](mtrgroupkeymanagementclustergroupkeysetstruct/epochstarttime1.md)
-- [var epochStartTime2: NSNumber?](mtrgroupkeymanagementclustergroupkeysetstruct/epochstarttime2.md)
-- [var groupKeySecurityPolicy: NSNumber](mtrgroupkeymanagementclustergroupkeysetstruct/groupkeysecuritypolicy.md)
-- [var groupKeySetID: NSNumber](mtrgroupkeymanagementclustergroupkeysetstruct/groupkeysetid.md)
+- [var epochKey0: Data?](./mtrgroupkeymanagementclustergroupkeysetstruct/epochkey0.md)
+- [var epochKey1: Data?](./mtrgroupkeymanagementclustergroupkeysetstruct/epochkey1.md)
+- [var epochKey2: Data?](./mtrgroupkeymanagementclustergroupkeysetstruct/epochkey2.md)
+- [var epochStartTime0: NSNumber?](./mtrgroupkeymanagementclustergroupkeysetstruct/epochstarttime0.md)
+- [var epochStartTime1: NSNumber?](./mtrgroupkeymanagementclustergroupkeysetstruct/epochstarttime1.md)
+- [var epochStartTime2: NSNumber?](./mtrgroupkeymanagementclustergroupkeysetstruct/epochstarttime2.md)
+- [var groupKeySecurityPolicy: NSNumber](./mtrgroupkeymanagementclustergroupkeysetstruct/groupkeysecuritypolicy.md)
+- [var groupKeySetID: NSNumber](./mtrgroupkeymanagementclustergroupkeysetstruct/groupkeysetid.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

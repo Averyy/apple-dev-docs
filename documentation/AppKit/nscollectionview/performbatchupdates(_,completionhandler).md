@@ -1,7 +1,8 @@
 # performBatchUpdates(_:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encapsulates multiple insert, delete, reload, and move operations into a single animated operation.
 
@@ -11,7 +12,15 @@ Encapsulates multiple insert, delete, reload, and move operations into a single 
 ## Declaration
 
 ```swift
+func performBatchUpdates(_ updates: (() -> Void)?, completionHandler: ((Bool) -> Void)? = nil)
+```
+
+```swift
 func performBatchUpdates(_ updates: (() -> Void)?) async -> Bool
+```
+
+```objc
+- (void) performBatchUpdates:(void (^)()) updates completionHandler:(void (^)(BOOL finished)) completionHandler;
 ```
 
 #### Discussion
@@ -25,7 +34,9 @@ You may call this method from inside your `updates` or `completionHandler` block
 ## Parameters
 
 - `updates`: The block that performs the needed inset, delete, reload, or move operations. This parameter may be `nil`.
-- `completionHandler`: A completion handler block to execute when the changes made in the `updates` block have finished animating. This parameter may be `nil`. This block takes the following parameters: - **finished**: A Boolean value indicating whether the animations completed successfully. The value of this parameter is [`true`](https://developer.apple.com/documentation/swift/true) if the animations ran to completion or [`false`](https://developer.apple.com/documentation/swift/false) if they were interrupted.
+- `completionHandler`: A completion handler block to execute when the changes made in the `updates` block have finished animating. This parameter may be `nil`. This block takes the following parameters:
+
+  - **finished**: A Boolean value indicating whether the animations completed successfully. The value of this parameter is [`true`](../../Swift/true.md) if the animations ran to completion or [`false`](../../Swift/false.md) if they were interrupted.
 
 
 ---

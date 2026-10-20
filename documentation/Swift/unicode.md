@@ -1,7 +1,8 @@
 # Unicode
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A namespace for Unicode utilities.
 
@@ -24,45 +25,45 @@ enum Unicode
 ## Topics
 
 ### Individual Unicode Scalar Values
-- [Unicode.Scalar](unicode/scalar.md)
+- [Unicode.Scalar](./unicode/scalar.md)
   A Unicode scalar value.
 ### Unicode Scalar Classifications
-- [Unicode.GeneralCategory](unicode/generalcategory.md)
+- [Unicode.GeneralCategory](./unicode/generalcategory.md)
   The most general classification of a Unicode scalar.
-- [Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass.md)
+- [Unicode.CanonicalCombiningClass](./unicode/canonicalcombiningclass.md)
   The classification of a scalar used in the Canonical Ordering Algorithm defined by the Unicode Standard.
-- [Unicode.NumericType](unicode/numerictype.md)
+- [Unicode.NumericType](./unicode/numerictype.md)
   The numeric type of a scalar.
 ### Unicode Codecs
-- [protocol UnicodeCodec](unicodecodec.md)
+- [protocol UnicodeCodec](./unicodecodec.md)
   A Unicode encoding form that translates between Unicode scalar values and form-specific code units.
-- [Unicode.ASCII](unicode/ascii.md)
-- [Unicode.UTF8](unicode/utf8.md)
-- [Unicode.UTF16](unicode/utf16.md)
-- [Unicode.UTF32](unicode/utf32.md)
-- [enum UnicodeDecodingResult](unicodedecodingresult.md)
+- [Unicode.ASCII](./unicode/ascii.md)
+- [Unicode.UTF8](./unicode/utf8.md)
+- [Unicode.UTF16](./unicode/utf16.md)
+- [Unicode.UTF32](./unicode/utf32.md)
+- [enum UnicodeDecodingResult](./unicodedecodingresult.md)
   The result of one Unicode decoding step.
-- [Unicode.ParseResult](unicode/parseresult.md)
+- [Unicode.ParseResult](./unicode/parseresult.md)
   The result of attempting to parse a `T` from some input.
 ### Translation Between Unicode Encodings
-- [func transcode<Input, InputEncoding, OutputEncoding>(Input, from: InputEncoding.Type, to: OutputEncoding.Type, stoppingOnError: Bool, into: (OutputEncoding.CodeUnit) -> Void) -> Bool](transcode(_:from:to:stoppingonerror:into:).md)
+- [func transcode<Input, InputEncoding, OutputEncoding>(Input, from: InputEncoding.Type, to: OutputEncoding.Type, stoppingOnError: Bool, into: (OutputEncoding.CodeUnit) -> Void) -> Bool](./transcode%28_,from,to,stoppingonerror,into%29.md)
   Translates the given input from one Unicode encoding to another by calling the given closure.
 ### Deprecated
-- [typealias UnicodeScalar](unicodescalar.md)
-- [typealias UTF8](utf8.md)
-- [typealias UTF16](utf16.md)
-- [typealias UTF32](utf32.md)
+- [typealias UnicodeScalar](./unicodescalar.md)
+- [typealias UTF8](./utf8.md)
+- [typealias UTF16](./utf16.md)
+- [typealias UTF32](./utf32.md)
 ### Type Aliases
-- [typealias Encoding](unicode/encoding.md)
-- [typealias Parser](unicode/parser.md)
-- [typealias Version](unicode/version.md)
+- [typealias Encoding](./unicode/encoding.md)
+- [typealias Parser](./unicode/parser.md)
+- [typealias Version](./unicode/version.md)
   A version of the Unicode Standard represented by its major and minor components.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 
 ---

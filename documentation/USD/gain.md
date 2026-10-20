@@ -1,6 +1,7 @@
 # gain
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A value that controls the audio volume.
 
@@ -18,15 +19,16 @@ uniform double gain = 1.0
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [audio](audio.md)
+- [audio](./audio.md)
   The location of an audio file.
-- [type](type.md)
+- [type](./type.md)
   An option that controls the order in which the actions execute.
-- [auralMode](auralmode.md)
+- [auralMode](./auralmode.md)
   An option that controls the audio signal’s spacial dynamics.
 
 

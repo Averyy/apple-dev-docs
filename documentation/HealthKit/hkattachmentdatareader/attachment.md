@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attachment object that represents the file from which the reader is reading.
 
@@ -10,7 +11,7 @@ An attachment object that represents the file from which the reader is reading.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

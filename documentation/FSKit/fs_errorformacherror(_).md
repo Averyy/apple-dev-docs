@@ -1,7 +1,8 @@
 # fs_errorForMachError(_:)
 
 **Framework**: FSKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an error object for the given Mach error code.
 
@@ -14,19 +15,24 @@ Creates an error object for the given Mach error code.
 func fs_errorForMachError(_ errorCode: Int32) -> any Error
 ```
 
+```c
+extern NSError *fs_errorForMachError(int errorCode);
+```
+
 ## See Also
 
-- [func fs_errorForCocoaError(Int32) -> any Error](fs_errorforcocoaerror(_:).md)
+### Errors and logging
+- [func fs_errorForCocoaError(Int32) -> any Error](./fs_errorforcocoaerror%28_%29.md)
   Creates an error object for the given Cocoa error code.
-- [func fs_errorForPOSIXError(Int32) -> any Error](fs_errorforposixerror(_:).md)
+- [func fs_errorForPOSIXError(Int32) -> any Error](./fs_errorforposixerror%28_%29.md)
   Creates an error object for the given POSIX error code.
-- [struct FSError](fserror.md)
+- [struct FSError](./fserror.md)
   An error encountered when performing an FSKit operation.
-- [FSError.Code](fserror/code.md)
+- [FSError.Code](./fserror/code.md)
   A code that indicates a specific FSKit error.
-- [let FSKitErrorDomain: String](fskiterrordomain.md)
+- [let FSKitErrorDomain: String](./fskiterrordomain.md)
   An error domain for FSKit errors.
-- [struct FSDataCacheError](fsdatacacheerror.md)
+- [struct FSDataCacheError](./fsdatacacheerror.md)
   An error encountered when performing an FSKit data caching operation.
 
 

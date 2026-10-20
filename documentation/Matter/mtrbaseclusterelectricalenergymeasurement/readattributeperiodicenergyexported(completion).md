@@ -1,7 +1,8 @@
 # readAttributePeriodicEnergyExported(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePeriodicEnergyExported(completion: @escaping @Sendable (MTRElectricalEnergyMeasurementClusterEnergyMeasurementStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePeriodicEnergyExported() async throws -> MTRElectricalEnergyMeasurementClusterEnergyMeasurementStruct
+```
+
+```objc
+- (void) readAttributePeriodicEnergyExportedWithCompletion:(void (^)(MTRElectricalEnergyMeasurementClusterEnergyMeasurementStruct *value, NSError *error)) completion;
 ```
 
 

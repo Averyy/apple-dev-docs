@@ -1,7 +1,8 @@
 # Publishers.Filter.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s output type.
 
 ## See Also
 
-- [Publishers.Filter.Failure](publishers/filter/failure.md)
+### Declaring supporting types
+- [Publishers.Filter.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

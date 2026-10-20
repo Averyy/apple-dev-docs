@@ -1,7 +1,8 @@
 # MDQueryCopyValueListAttributes(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the list of attribute names for which values are being collected by the query.
 
@@ -14,7 +15,11 @@ Returns the list of attribute names for which values are being collected by the 
 func MDQueryCopyValueListAttributes(_ query: MDQuery!) -> CFArray!
 ```
 
-#### Return_value
+```c
+CFArrayRef MDQueryCopyValueListAttributes(MDQueryRef query);
+```
+
+#### Return Value
 
 A CFArrayRef containing the attribute names of the collected values.
 
@@ -24,15 +29,16 @@ A CFArrayRef containing the attribute names of the collected values.
 
 ## See Also
 
-- [func MDQuerySetMaxCount(MDQuery!, CFIndex)](1413085-mdquerysetmaxcount.md)
+### Getting and Setting Query Parameters
+- [func MDQuerySetMaxCount(MDQuery!, CFIndex)](./api-1413085-mdquerysetmaxcount.md)
   Sets the maximum number of results returned.
-- [func MDQueryGetBatchingParameters(MDQuery!) -> MDQueryBatchingParams](1413006-mdquerygetbatchingparameters.md)
+- [func MDQueryGetBatchingParameters(MDQuery!) -> MDQueryBatchingParams](./api-1413006-mdquerygetbatchingparameters.md)
   Returns the current parameters that control the batching of progress notifications.
-- [func MDQuerySetBatchingParameters(MDQuery!, MDQueryBatchingParams)](1413103-mdquerysetbatchingparameters.md)
+- [func MDQuerySetBatchingParameters(MDQuery!, MDQueryBatchingParams)](./api-1413103-mdquerysetbatchingparameters.md)
   Set the query batching parameters.
-- [func MDQueryCopySortingAttributes(MDQuery!) -> CFArray!](1413059-mdquerycopysortingattributes.md)
+- [func MDQueryCopySortingAttributes(MDQuery!) -> CFArray!](./api-1413059-mdquerycopysortingattributes.md)
   Returns the list of attribute names used to sort the results.
-- [func MDQueryCopyQueryString(MDQuery!) -> CFString!](1413004-mdquerycopyquerystring.md)
+- [func MDQueryCopyQueryString(MDQuery!) -> CFString!](./api-1413004-mdquerycopyquerystring.md)
   Returns the query string of the query.
 
 

@@ -1,7 +1,8 @@
 # kvImageCVImageFormat_AlphaIsOneHint
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A hint that indicates the alpha channel is opaque.
 
@@ -10,7 +11,7 @@ A hint that indicates the alpha channel is opaque.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ A hint that indicates the alpha channel is opaque.
 var kvImageCVImageFormat_AlphaIsOneHint: Int { get }
 ```
 
+```c
+kvImageCVImageFormat_AlphaIsOneHint
+```
+
 ## See Also
 
-- [var kvImageCVImageFormat_NoError: Int](kvimagecvimageformat_noerror.md)
+### Constants
+- [var kvImageCVImageFormat_NoError: Int](./kvimagecvimageformat_noerror.md)
   An error code that indicates the conversion completed without error.
-- [var kvImageCVImageFormat_ConversionMatrix: Int](kvimagecvimageformat_conversionmatrix.md)
+- [var kvImageCVImageFormat_ConversionMatrix: Int](./kvimagecvimageformat_conversionmatrix.md)
   An error code that indicates the required conversion matrix is absent.
-- [var kvImageCVImageFormat_ChromaSiting: Int](kvimagecvimageformat_chromasiting.md)
+- [var kvImageCVImageFormat_ChromaSiting: Int](./kvimagecvimageformat_chromasiting.md)
   An error code that indicates the chroma siting information is absent.
-- [var kvImageCVImageFormat_ColorSpace: Int](kvimagecvimageformat_colorspace.md)
+- [var kvImageCVImageFormat_ColorSpace: Int](./kvimagecvimageformat_colorspace.md)
   An error code that indicates the image’s color space is missing.
-- [var kvImageCVImageFormat_VideoChannelDescription: Int](kvimagecvimageformat_videochanneldescription.md)
+- [var kvImageCVImageFormat_VideoChannelDescription: Int](./kvimagecvimageformat_videochanneldescription.md)
   An error code that indicates the range and clipping information is missing.
 
 

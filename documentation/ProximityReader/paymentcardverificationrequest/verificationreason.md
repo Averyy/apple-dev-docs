@@ -1,7 +1,8 @@
 # verificationReason
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason you asked to verify someone’s card.
 
@@ -22,9 +23,10 @@ The system uses the supplied reason to display an appropriate message in the sys
 
 ## See Also
 
-- [let currencyCode: String](paymentcardverificationrequest/currencycode.md)
+### Getting the request details
+- [let currencyCode: String](./currencycode.md)
   The ISO 4217 code that indicates the currency type.
-- [PaymentCardVerificationRequest.Reason](paymentcardverificationrequest/reason.md)
+- [PaymentCardVerificationRequest.Reason](./reason.md)
   The reason for the verification request.
 
 

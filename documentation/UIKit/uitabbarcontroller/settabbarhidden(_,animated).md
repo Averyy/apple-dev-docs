@@ -1,7 +1,8 @@
 # setTabBarHidden(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the active tab bar’s visibility with an option to animate the change.
 
@@ -18,21 +19,26 @@ Changes the active tab bar’s visibility with an option to animate the change.
 func setTabBarHidden(_ hidden: Bool, animated: Bool)
 ```
 
+```objc
+- (void) setTabBarHidden:(BOOL) hidden animated:(BOOL) animated;
+```
+
 ## See Also
 
-- [var isTabBarHidden: Bool](uitabbarcontroller/istabbarhidden.md)
+### Customizing the tab bar appearance
+- [var isTabBarHidden: Bool](./istabbarhidden.md)
   Determines if the active tab bar is currently hidden.
-- [var bottomAccessory: UITabAccessory?](uitabbarcontroller/bottomaccessory.md)
+- [var bottomAccessory: UITabAccessory?](./bottomaccessory.md)
   An optional bottom accessory of the tab bar controller.
-- [func setBottomAccessory(UITabAccessory?, animated: Bool)](uitabbarcontroller/setbottomaccessory(_:animated:).md)
+- [func setBottomAccessory(UITabAccessory?, animated: Bool)](./setbottomaccessory%28_,animated%29.md)
   Sets a bottom accessory with an option to animate the change.
-- [var compactTabIdentifiers: [String]?](uitabbarcontroller/compacttabidentifiers.md)
+- [var compactTabIdentifiers: [String]?](./compacttabidentifiers.md)
   An optional filter to display only select root-level tabs when in a compact appearance.
-- [var customizationIdentifier: String?](uitabbarcontroller/customizationidentifier.md)
+- [var customizationIdentifier: String?](./customizationidentifier.md)
   The customization identifier for the tab bar and sidebar for persistence.
-- [var prominentTabIdentifier: String?](uitabbarcontroller/prominenttabidentifier.md)
+- [var prominentTabIdentifier: String?](./prominenttabidentifier.md)
   The identifier of the tab that should be displayed as prominent. Where supported, the specified tab receives enhanced visual emphasis in the tab bar. If this property is nil, and there is a `UISearchTab` that could become prominent (when `automaticallyActivatesSearch = true`), then the search tab will receive the prominent treatment by default.
-- [func setProminentTabIdentifier(String?, animated: Bool)](uitabbarcontroller/setprominenttabidentifier(_:animated:).md)
+- [func setProminentTabIdentifier(String?, animated: Bool)](./setprominenttabidentifier%28_,animated%29.md)
   Sets the prominent tab identifier with an option to animate the change.
 
 

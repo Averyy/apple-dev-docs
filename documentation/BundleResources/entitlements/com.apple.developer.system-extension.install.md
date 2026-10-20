@@ -1,16 +1,18 @@
 # System Extension Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your app has permission to activate or deactivate system extensions.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.system-extension.install` (System Extension)
+- **Type**: boolean
 
 #### Discussion
 
@@ -18,7 +20,8 @@ To add this entitlement to your app, enable the System Extension capability in X
 
 ## See Also
 
-- [System Extension Redistributable Entitlement](entitlements/com.apple.developer.system-extension.redistributable.md)
+### Essentials
+- [System Extension Redistributable Entitlement](./com.apple.developer.system-extension.redistributable.md)
   A Boolean value that indicates whether other development teams may distribute a system extension you create.
 
 

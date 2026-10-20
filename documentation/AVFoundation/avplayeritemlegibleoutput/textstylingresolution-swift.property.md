@@ -1,7 +1,8 @@
 # textStylingResolution
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string identifier indicating the degree of text styling to be applied to attributed strings vended by the  object.
 
@@ -19,17 +20,22 @@ A string identifier indicating the degree of text styling to be applied to attri
 var textStylingResolution: AVPlayerItemLegibleOutput.TextStylingResolution { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVPlayerItemLegibleOutputTextStylingResolution textStylingResolution;
+```
+
 #### Discussion
 
-Valid values are described in `Text Style Settings`.  An exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)) is raised if this property is set to any other value.
+Valid values are described in `Text Style Settings`.  An exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)) is raised if this property is set to any other value.
 
-The default value is [`default`](avplayeritemlegibleoutput/textstylingresolution-swift.struct/default.md), which indicates that attributed strings vended by the receiver includes the same level of styling information that would be used if the text was rendered by an instance of [`AVPlayerLayer`](avplayerlayer.md).
+The default value is [`default`](./textstylingresolution-swift.struct/default.md), which indicates that attributed strings vended by the receiver includes the same level of styling information that would be used if the text was rendered by an instance of [`AVPlayerLayer`](../avplayerlayer.md).
 
 > **Note**:  This is an advanced feature and you should rarely need to change it from the default value.
 
 ## See Also
 
-- [AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct.md)
+### Configuring text styling
+- [AVPlayerItemLegibleOutput.TextStylingResolution](./textstylingresolution-swift.struct.md)
   A text styling resolution.
 
 

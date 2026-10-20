@@ -1,7 +1,8 @@
 # ITLibInitOptions.none
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No initialization options apply.
 
@@ -15,9 +16,14 @@ No initialization options apply.
 case none
 ```
 
+```c
+ITLibInitOptionNone
+```
+
 ## See Also
 
-- [ITLibInitOptions.lazyLoadData](itlibinitoptions/lazyloaddata.md)
+### Init Options
+- [ITLibInitOptions.lazyLoadData](./lazyloaddata.md)
   iTunes library data loads upon request, rather than during initialization.
 
 

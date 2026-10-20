@@ -1,7 +1,8 @@
 # presentScene(_:transition:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transitions from the current scene to a new scene.
 
@@ -14,9 +15,13 @@ Transitions from the current scene to a new scene.
 func presentScene(_ scene: SKScene, transition: SKTransition)
 ```
 
+```objc
+- (void) presentScene:(SKScene *) scene transition:(SKTransition *) transition;
+```
+
 #### Discussion
 
-If the interface is not currently presenting a scene, the new scene is presented immediately, and the `transition` property is ignored. Otherwise, the interface’s [`scene`](wkinterfaceskscene/scene.md) property is updated immediately, and the transition is executed to animate the swap between scenes.
+If the interface is not currently presenting a scene, the new scene is presented immediately, and the `transition` property is ignored. Otherwise, the interface’s [`scene`](./scene.md) property is updated immediately, and the transition is executed to animate the swap between scenes.
 
 ## Parameters
 
@@ -25,9 +30,10 @@ If the interface is not currently presenting a scene, the new scene is presented
 
 ## See Also
 
-- [var scene: SKScene?](wkinterfaceskscene/scene.md)
+### Displaying a Scene
+- [var scene: SKScene?](./scene.md)
   The currently presented SpriteKit scene.
-- [func presentScene(SKScene?)](wkinterfaceskscene/presentscene(_:).md)
+- [func presentScene(SKScene?)](./presentscene%28_%29.md)
   Presents a scene.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionVersion.Relationships.Subscription
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionVersion.Relationships.Subscription
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionVersion.Relationships.Subscription.Data](subscriptionversion/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionVersion.Relationships.Subscription.Data](./subscription-data.dictionary/data-data.dictionary.md)
   The resource linkage data identifying the subscription associated with a SubscriptionVersion.
 
 ## Properties
@@ -26,11 +27,12 @@ object SubscriptionVersion.Relationships.Subscription
 
 ## See Also
 
-- [object SubscriptionVersion.Relationships.Image](subscriptionversion/relationships-data.dictionary/image-data.dictionary.md)
+### Objects
+- [object SubscriptionVersion.Relationships.Image](./image-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object SubscriptionVersion.Relationships.Images](subscriptionversion/relationships-data.dictionary/images-data.dictionary.md)
+- [object SubscriptionVersion.Relationships.Images](./images-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object SubscriptionVersion.Relationships.Localizations](subscriptionversion/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object SubscriptionVersion.Relationships.Localizations](./localizations-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

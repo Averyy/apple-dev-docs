@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the value function object identified by the name.
 
@@ -19,13 +20,17 @@ Returns the value function object identified by the name.
 convenience init?(name: CAValueFunctionName)
 ```
 
+```objc
++ (instancetype) functionWithName:(CAValueFunctionName) name;
+```
+
 #### Return Value
 
 A new `CAValueFunction` instance with the value function specified by the name.
 
 #### Discussion
 
-The possible values for `name` are specified in [`Rotate Value Functions`](rotate-value-functions.md), [`Scale Value Functions`](scale-value-functions.md), and [`Translate Functions`](translate-functions.md).
+The possible values for `name` are specified in [Rotate Value Functions](../rotate-value-functions.md), [Scale Value Functions](../scale-value-functions.md), and [Translate Functions](../translate-functions.md).
 
 ## Parameters
 

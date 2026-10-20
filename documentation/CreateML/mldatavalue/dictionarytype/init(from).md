@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data-value dictionary from another dictionary.
 
@@ -21,7 +22,7 @@ init?(from dataValue: MLDataValue)
 
 #### Discussion
 
-Use this initializer to create an [`MLDataValue.DictionaryType`](mldatavalue/dictionarytype.md) from another data-value dictionary instance. You can confirm the data value’s underlying type by retrieving a non-`nil` value from [`dictionaryValue`](mldatavalue/dictionaryvalue.md) or by inspecting the [`type`](mldatavalue/type.md) property.
+Use this initializer to create an [`MLDataValue.DictionaryType`](../dictionarytype.md) from another data-value dictionary instance. You can confirm the data value’s underlying type by retrieving a non-`nil` value from [`dictionaryValue`](../dictionaryvalue.md) or by inspecting the [`type`](../type.md) property.
 
 
 ---

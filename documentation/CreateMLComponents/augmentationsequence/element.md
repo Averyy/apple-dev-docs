@@ -1,7 +1,8 @@
 # AugmentationSequence.Element
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element produced by this asynchronous sequence.
 
@@ -22,7 +23,8 @@ typealias Element = Base.Element
 
 ## See Also
 
-- [func makeAsyncIterator() -> AugmentationSequence<Base, RandomTransformer, RandomNumberGenerator, Annotation>.AsyncIterator](augmentationsequence/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> AugmentationSequence<Base, RandomTransformer, RandomNumberGenerator, Annotation>.AsyncIterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 

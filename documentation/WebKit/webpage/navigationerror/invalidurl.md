@@ -1,7 +1,8 @@
 # WebPage.NavigationError.invalidURL
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The URL to navigate to is invalid.
 

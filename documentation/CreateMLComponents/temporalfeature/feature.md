@@ -1,7 +1,8 @@
 # feature
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature value.
 
@@ -22,7 +23,8 @@ var feature: Feature
 
 ## See Also
 
-- [var id: TemporalSegmentIdentifier](temporalfeature/id.md)
+### Getting the properties
+- [var id: TemporalSegmentIdentifier](./id.md)
   The temporal segment identifier for this feature.
 
 

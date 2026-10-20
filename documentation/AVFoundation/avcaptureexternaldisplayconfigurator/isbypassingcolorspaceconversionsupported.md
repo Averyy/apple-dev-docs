@@ -1,7 +1,8 @@
 # isBypassingColorSpaceConversionSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether the external display supports bypassing color space conversion.
 
@@ -18,15 +19,20 @@ Whether the external display supports bypassing color space conversion.
 class var isBypassingColorSpaceConversionSupported: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isBypassingColorSpaceConversionSupported) BOOL supportsBypassingColorSpaceConversion;
+```
+
 #### Discussion
 
-If `true`, you may instantiate a configurator with a configuration specifying [`bypassColorSpaceConversion`](avcaptureexternaldisplayconfiguration/bypasscolorspaceconversion.md) set to `true`.
+If `true`, you may instantiate a configurator with a configuration specifying [`bypassColorSpaceConversion`](../avcaptureexternaldisplayconfiguration/bypasscolorspaceconversion.md) set to `true`.
 
 ## See Also
 
-- [class var isMatchingFrameRateSupported: Bool](avcaptureexternaldisplayconfigurator/ismatchingframeratesupported.md)
+### Determining configuration support
+- [class var isMatchingFrameRateSupported: Bool](./ismatchingframeratesupported.md)
   Whether the external display supports matching frame rate to a capture device.
-- [class var isPreferredResolutionSupported: Bool](avcaptureexternaldisplayconfigurator/ispreferredresolutionsupported.md)
+- [class var isPreferredResolutionSupported: Bool](./ispreferredresolutionsupported.md)
   Whether the external display supports configuration to your preferred resolution.
 
 

@@ -1,7 +1,8 @@
 # init(searchController:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a search container view controller with the specified search controller object.
 
@@ -16,6 +17,10 @@ Initializes and returns a search container view controller with the specified se
 
 ```swift
 init(searchController: UISearchController)
+```
+
+```objc
+- (instancetype) initWithSearchController:(UISearchController *) searchController;
 ```
 
 #### Return Value

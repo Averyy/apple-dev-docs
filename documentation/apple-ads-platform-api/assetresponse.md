@@ -1,7 +1,8 @@
 # AssetResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The Get Asset and Upload Asset endpoints return this response object.
 
@@ -10,13 +11,13 @@ The Get Asset and Upload Asset endpoints return this response object.
 
 ## Declaration
 
-```swift
+```
 object AssetResponse
 ```
 
 #### Discussion
 
-The [`Get Asset`](get-asset-by-id.md) and [`Upload Asset`](upload-asset.md) return `AssetResponse` as the top-level envelope. On success, `result` contains the [`Asset`](asset.md) object. On failure, `result` is absent and `error` describes the problem.
+The [`Get Asset`](./get-asset-by-id.md) and [`Upload Asset`](./upload-asset.md) return `AssetResponse` as the top-level envelope. On success, `result` contains the [`Asset`](./asset.md) object. On failure, `result` is absent and `error` describes the problem.
 
 ##### Example
 
@@ -52,18 +53,18 @@ The [`Get Asset`](get-asset-by-id.md) and [`Upload Asset`](upload-asset.md) retu
 
 ## Properties
 
-- `result` (Asset): The retrieved asset. Absent if no asset was found. See [`Asset`](asset.md). Read-only.
-- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](error.md). Read-only.
+- `result` (Asset): The retrieved asset. Absent if no asset was found. See [`Asset`](./asset.md). Read-only.
+- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Asset](asset.md)
+- [object Asset](./asset.md)
   Unified asset entity containing product-agnostic asset metadata and references.
-- [object AssetQueryResponse](assetqueryresponse.md)
+- [object AssetQueryResponse](./assetqueryresponse.md)
   Paginated response object for asset queries.
-- [object AssetEligibility](asseteligibility.md)
+- [object AssetEligibility](./asseteligibility.md)
   Eligibility status and constraint details for an asset.
-- [object AssetConstraintGroup](assetconstraintgroup.md)
+- [object AssetConstraintGroup](./assetconstraintgroup.md)
   A constraint group defining the supply placements and countries or regions where an asset is blocked or allowed to serve.
 
 

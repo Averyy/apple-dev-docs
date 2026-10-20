@@ -1,7 +1,8 @@
 # requestSecurityScopedURL(completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func requestSecurityScopedURL(completion: @escaping @Sendable (URL?, (any Error)?) -> Void)
+```
+
+```swift
 func requestSecurityScopedURL() async throws -> URL
+```
+
+```objc
+- (void) requestSecurityScopedURLWithCompletion:(void (^)(NSURL *, NSError *)) completion;
 ```
 
 

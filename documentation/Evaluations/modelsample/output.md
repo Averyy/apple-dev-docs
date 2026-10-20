@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected output value and evaluation expectations.
 
@@ -22,7 +23,8 @@ var output: ModelSampleOutput<ExpectedValue, TrajectoryExpectation>
 
 ## See Also
 
-- [var expected: ExpectedValue?](modelsample/expected.md)
+### Specifying expected output
+- [var expected: ExpectedValue?](./expected.md)
   The expected output for comparison.
 
 

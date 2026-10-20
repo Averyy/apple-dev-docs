@@ -1,9 +1,10 @@
 # kUCKeyModifiersToTableNumFormat
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The format of a structure of type [`UCKeyModifiersToTableNum`](uckeymodifierstotablenum.md).
+The format of a structure of type [`UCKeyModifiersToTableNum`](./uckeymodifierstotablenum.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

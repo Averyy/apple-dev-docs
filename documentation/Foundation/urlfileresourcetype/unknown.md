@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The resource’s type is unknown.
 
@@ -20,21 +21,26 @@ The resource’s type is unknown.
 static let unknown: URLFileResourceType
 ```
 
+```c
+extern NSURLFileResourceType const NSURLFileResourceTypeUnknown;
+```
+
 ## See Also
 
-- [static let namedPipe: URLFileResourceType](urlfileresourcetype/namedpipe.md)
+### Constants
+- [static let namedPipe: URLFileResourceType](./namedpipe.md)
   The resource is a named pipe.
-- [static let characterSpecial: URLFileResourceType](urlfileresourcetype/characterspecial.md)
+- [static let characterSpecial: URLFileResourceType](./characterspecial.md)
   The resource is a character special file.
-- [static let directory: URLFileResourceType](urlfileresourcetype/directory.md)
+- [static let directory: URLFileResourceType](./directory.md)
   The resource is a directory.
-- [static let blockSpecial: URLFileResourceType](urlfileresourcetype/blockspecial.md)
+- [static let blockSpecial: URLFileResourceType](./blockspecial.md)
   The resource is a block special file.
-- [static let regular: URLFileResourceType](urlfileresourcetype/regular.md)
+- [static let regular: URLFileResourceType](./regular.md)
   The resource is a regular file.
-- [static let symbolicLink: URLFileResourceType](urlfileresourcetype/symboliclink.md)
+- [static let symbolicLink: URLFileResourceType](./symboliclink.md)
   The resource is a symbolic link.
-- [static let socket: URLFileResourceType](urlfileresourcetype/socket.md)
+- [static let socket: URLFileResourceType](./socket.md)
   The resource is a socket.
 
 

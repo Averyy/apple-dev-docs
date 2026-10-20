@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-tensorflow-2
 
 # Converting TensorFlow 2 BERT Transformer Models
 
-**
-
-- [.md](../_sources/source/convert-tensorflow-2-bert-transformer-models.md)
-- **
-
-.pdf
-
-**
-
-# Converting TensorFlow 2 BERT Transformer Models
-
- Table of contents 
-
-## Contents
-
-# Converting TensorFlow 2 BERT Transformer Models
-
 The following examples demonstrate converting TensorFlow 2 models to Core ML using Core ML Tools.
 
 ## Convert the DistilBERT Transformer Model
@@ -36,31 +19,49 @@ This example requires TensorFlow 2 and Transformers version 4.17.0.
 Follow these steps:
 
 1. Add the import statements:
-import numpy as np
-import coremltools as ct
-import tensorflow as tf
 
-from transformers import DistilBertTokenizer, TFDistilBertForMaskedLM
+   ```
+   import numpy as np
+   import coremltools as ct
+   import tensorflow as tf
+
+   from transformers import DistilBertTokenizer, TFDistilBertForMaskedLM
+   ```
 2. Load the DistilBERT model and tokenizer. This example uses the `TFDistilBertForMaskedLM` variant:
-tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
-distilbert_model = TFDistilBertForMaskedLM.from_pretrained('distilbert-base-cased')
+
+   ```
+   tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
+   distilbert_model = TFDistilBertForMaskedLM.from_pretrained('distilbert-base-cased')
+   ```
 3. Describe and set the input layer, and then build the TensorFlow model (`tf_model`):
-max_seq_length = 10
-input_shape = (1, max_seq_length) #(batch_size, maximum_sequence_length)
 
-input_layer = tf.keras.layers.Input(shape=input_shape[1:], dtype=tf.int32, name='input')
+   ```
+   max_seq_length = 10
+   input_shape = (1, max_seq_length) #(batch_size, maximum_sequence_length)
 
-prediction_model = distilbert_model(input_layer)
-tf_model = tf.keras.models.Model(inputs=input_layer, outputs=prediction_model)
+   input_layer = tf.keras.layers.Input(shape=input_shape[1:], dtype=tf.int32, name='input')
+
+   prediction_model = distilbert_model(input_layer)
+   tf_model = tf.keras.models.Model(inputs=input_layer, outputs=prediction_model)
+   ```
 4. Convert the `tf_model` to an ML program (`mlmodel`):
-mlmodel = ct.convert(tf_model)
+
+   ```
+   mlmodel = ct.convert(tf_model)
+   ```
 5. Create the input using `tokenizer`:
-# Fill the input with zeros to adhere to input_shape
-input_values = np.zeros(input_shape)
-# Store the tokens from our sample sentence into the input
-input_values[0,:8] = np.array(tokenizer.encode("Hello, my dog is cute")).astype(np.int32)
+
+   ```
+   # Fill the input with zeros to adhere to input_shape
+   input_values = np.zeros(input_shape)
+   # Store the tokens from our sample sentence into the input
+   input_values[0,:8] = np.array(tokenizer.encode("Hello, my dog is cute")).astype(np.int32)
+   ```
 6. Use `mlmodel` for prediction:
-mlmodel.predict({'input':input_values}) # 'input' is the name of our input layer from (3)
+
+   ```
+   mlmodel.predict({'input':input_values}) # 'input' is the name of our input layer from (3)
+   ```
 
 ## Convert the TF Hub BERT Transformer Model
 
@@ -73,35 +74,50 @@ This example requires TensorFlow 2, TensorFlow Hub, and Transformers version 4.1
 Follow these steps:
 
 1. Add the import statements:
-import numpy as np
-import tensorflow as tf
-import tensorflow_hub as tf_hub
 
-import coremltools as ct
+   ```
+   import numpy as np
+   import tensorflow as tf
+   import tensorflow_hub as tf_hub
+
+   import coremltools as ct
+   ```
 2. Describe and set the input layer:
-max_seq_length = 384
-input_shape = (1, max_seq_length)
 
-input_words = tf.keras.layers.Input(
-    shape=input_shape[1:], dtype=tf.int32, name='input_words')
-input_masks = tf.keras.layers.Input(
-    shape=input_shape[1:], dtype=tf.int32, name='input_masks')
-segment_ids = tf.keras.layers.Input(
-    shape=input_shape[1:], dtype=tf.int32, name='segment_ids')
+   ```
+   max_seq_length = 384
+   input_shape = (1, max_seq_length)
+
+   input_words = tf.keras.layers.Input(
+       shape=input_shape[1:], dtype=tf.int32, name='input_words')
+   input_masks = tf.keras.layers.Input(
+       shape=input_shape[1:], dtype=tf.int32, name='input_masks')
+   segment_ids = tf.keras.layers.Input(
+       shape=input_shape[1:], dtype=tf.int32, name='segment_ids')
+   ```
 3. Build the TensorFlow model (`tf_model`):
-bert_layer = tf_hub.KerasLayer("https://tfhub.dev/tensorflow/bert_en_uncased_L-12_H-768_A-12/1", trainable=False)
 
-pooled_output, sequence_output = bert_layer(
-    [input_words, input_masks, segment_ids])
+   ```
+   bert_layer = tf_hub.KerasLayer("https://tfhub.dev/tensorflow/bert_en_uncased_L-12_H-768_A-12/1", trainable=False)
 
-tf_model = tf.keras.models.Model(
-    inputs=[input_words, input_masks, segment_ids],
-    outputs=[pooled_output, sequence_output])
+   pooled_output, sequence_output = bert_layer(
+       [input_words, input_masks, segment_ids])
+
+   tf_model = tf.keras.models.Model(
+       inputs=[input_words, input_masks, segment_ids],
+       outputs=[pooled_output, sequence_output])
+   ```
 4. Convert the `tf_model` to an ML program:
-mlmodel = ct.convert(tf_model, source='TensorFlow')
+
+   ```
+   mlmodel = ct.convert(tf_model, source='TensorFlow')
+   ```
 5. Define the `model.preview.type` metadata as `"bertqa"` so that you can preview the model in Xcode, and then save the model in an `mlpackage` file:
-model.user_defined_metadata["com.apple.coreml.model.preview.type"] = "bertQA"
-model.save("BERT_with_preview_type.mlpackage")
+
+   ```
+   model.user_defined_metadata["com.apple.coreml.model.preview.type"] = "bertQA"
+   model.save("BERT_with_preview_type.mlpackage")
+   ```
 
 To test the model, double-click the `BERT_with_preview_type.mlpackage` file in the Mac Finder to launch Xcode and open the model information pane, and then follow these steps:
 
@@ -109,4 +125,4 @@ To test the model, double-click the `BERT_with_preview_type.mlpackage` file in t
 2. Copy and paste sample text, such as the BERT QA model description, into the Passage Context field.
 3. Enter a question in the Question field, such as **What is BERT?** The answer appears in the Answer Candidate field, and is also highlighted in the Passage Context field.
 
-** Contents
+![Preview in Xcode](https://apple.github.io/coremltools/docs-guides/_images/xcode_bert_model_preview3_preview.png)

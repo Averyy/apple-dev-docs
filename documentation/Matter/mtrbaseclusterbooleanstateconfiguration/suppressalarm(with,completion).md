@@ -1,7 +1,8 @@
 # suppressAlarm(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func suppressAlarm(with params: MTRBooleanStateConfigurationClusterSuppressAlarmParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func suppressAlarm(with params: MTRBooleanStateConfigurationClusterSuppressAlarmParams) async throws
+```
+
+```objc
+- (void) suppressAlarmWithParams:(MTRBooleanStateConfigurationClusterSuppressAlarmParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # ARView.DebugOptions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for drawing overlay content in a scene that can aid in debugging.
 
@@ -21,42 +22,43 @@ struct DebugOptions
 ## Topics
 
 ### Configuring debug options
-- [static let none: ARView.DebugOptions](arview/debugoptions-swift.struct/none.md)
+- [static let none: ARView.DebugOptions](./debugoptions-swift.struct/none.md)
   Disable all debugging overlays.
-- [static let showPhysics: ARView.DebugOptions](arview/debugoptions-swift.struct/showphysics.md)
+- [static let showPhysics: ARView.DebugOptions](./debugoptions-swift.struct/showphysics.md)
   Draw visualizations for collision objects and rigid bodies.
-- [static let showStatistics: ARView.DebugOptions](arview/debugoptions-swift.struct/showstatistics.md)
+- [static let showStatistics: ARView.DebugOptions](./debugoptions-swift.struct/showstatistics.md)
   Collect performance statistics and display them in the view.
-- [static let showAnchorOrigins: ARView.DebugOptions](arview/debugoptions-swift.struct/showanchororigins.md)
+- [static let showAnchorOrigins: ARView.DebugOptions](./debugoptions-swift.struct/showanchororigins.md)
   Display anchor origins.
-- [static let showAnchorGeometry: ARView.DebugOptions](arview/debugoptions-swift.struct/showanchorgeometry.md)
+- [static let showAnchorGeometry: ARView.DebugOptions](./debugoptions-swift.struct/showanchorgeometry.md)
   Display anchor geometry.
-- [static let showWorldOrigin: ARView.DebugOptions](arview/debugoptions-swift.struct/showworldorigin.md)
+- [static let showWorldOrigin: ARView.DebugOptions](./debugoptions-swift.struct/showworldorigin.md)
   Display a coordinate axis indicating the position and orientation of the AR world coordinate system.
-- [static let showFeaturePoints: ARView.DebugOptions](arview/debugoptions-swift.struct/showfeaturepoints.md)
+- [static let showFeaturePoints: ARView.DebugOptions](./debugoptions-swift.struct/showfeaturepoints.md)
   Display a point cloud showing intermediate results of the scene analysis used to track device position.
-- [static let showSceneUnderstanding: ARView.DebugOptions](arview/debugoptions-swift.struct/showsceneunderstanding.md)
+- [static let showSceneUnderstanding: ARView.DebugOptions](./debugoptions-swift.struct/showsceneunderstanding.md)
   Display the depth-colored wireframe for scene-understanding meshes.
 ### Creating a debug option set
-- [init(rawValue: Int)](arview/debugoptions-swift.struct/init(rawvalue:).md)
+- [init(rawValue: Int)](./debugoptions-swift.struct/init%28rawvalue%29.md)
   Create a debug options enumeration from a raw value.
-- [let rawValue: Int](arview/debugoptions-swift.struct/rawvalue.md)
+- [let rawValue: Int](./debugoptions-swift.struct/rawvalue.md)
   Options for drawing overlay content in a scene that aids in debugging the scene.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [class ARView](arview.md)
+### UIKit and AppKit presentation
+- [class ARView](../arview.md)
   A view that enables you to display an AR experience with RealityKit.
-- [typealias ARViewBase](arviewbase.md)
+- [typealias ARViewBase](../arviewbase.md)
   The platform-specific base class for the view into which RealityKit renders content.
 
 

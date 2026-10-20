@@ -1,7 +1,8 @@
 # kSecPropertyTypeArray
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a key whose value is an array.
 
@@ -12,6 +13,10 @@ Specifies a key whose value is an array.
 
 ```swift
 let kSecPropertyTypeArray: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeArray;
 ```
 
 

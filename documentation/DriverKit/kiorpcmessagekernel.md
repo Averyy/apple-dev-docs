@@ -1,29 +1,31 @@
 # kIORPCMessageKernel
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIORPCMessageKernel
 ```
 
 ## See Also
 
-- [kIORPCMessageError](kiorpcmessageerror.md)
-- [kIORPCMessageLocalHost](kiorpcmessagelocalhost.md)
-- [kIORPCMessageObjectRefs](kiorpcmessageobjectrefs.md)
-- [kIORPCMessageOneway](kiorpcmessageoneway.md)
-- [kIORPCMessageOnqueue](kiorpcmessageonqueue.md)
-- [kIORPCMessageRemote](kiorpcmessageremote.md)
-- [kIORPCMessageSimpleReply](kiorpcmessagesimplereply.md)
+### Getting the Message Type
+- [kIORPCMessageError](./kiorpcmessageerror.md)
+- [kIORPCMessageLocalHost](./kiorpcmessagelocalhost.md)
+- [kIORPCMessageObjectRefs](./kiorpcmessageobjectrefs.md)
+- [kIORPCMessageOneway](./kiorpcmessageoneway.md)
+- [kIORPCMessageOnqueue](./kiorpcmessageonqueue.md)
+- [kIORPCMessageRemote](./kiorpcmessageremote.md)
+- [kIORPCMessageSimpleReply](./kiorpcmessagesimplereply.md)
 
 
 ---

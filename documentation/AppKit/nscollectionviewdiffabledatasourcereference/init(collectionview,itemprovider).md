@@ -1,7 +1,8 @@
 # init(collectionView:itemProvider:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a diffable data source with the specified item provider, and connects it to the specified collection view.
 
@@ -14,6 +15,10 @@ Creates a diffable data source with the specified item provider, and connects it
 init(collectionView: NSCollectionView, itemProvider: @escaping NSCollectionViewDiffableDataSourceReferenceItemProvider)
 ```
 
+```objc
+- (instancetype) initWithCollectionView:(NSCollectionView *) collectionView itemProvider:(NSCollectionViewDiffableDataSourceItemProvider) itemProvider;
+```
+
 ## Parameters
 
 - `collectionView`: The initialized collection view object to connect to the diffable data source.
@@ -21,7 +26,8 @@ init(collectionView: NSCollectionView, itemProvider: @escaping NSCollectionViewD
 
 ## See Also
 
-- [typealias NSCollectionViewDiffableDataSourceReferenceItemProvider](nscollectionviewdiffabledatasourcereferenceitemprovider.md)
+### Creating a Diffable Data Source
+- [typealias NSCollectionViewDiffableDataSourceReferenceItemProvider](../nscollectionviewdiffabledatasourcereferenceitemprovider.md)
   A closure that configures and returns an item for a collection view from its diffable data source.
 
 

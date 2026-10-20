@@ -1,7 +1,8 @@
 # SVGFEImageElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEImageElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [preserveAspectRatio](svgfeimageelement/1631603-preserveaspectratio.md)
+- [preserveAspectRatio](./svgfeimageelement/api-1631603-preserveaspectratio.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

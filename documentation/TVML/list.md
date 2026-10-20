@@ -34,47 +34,48 @@ The `list` element is a generic element that contains nearly all other elements 
 </paradeTemplate>
 ```
 
-##### Subelements for List
+##### Subelements for list
 
-- [`header`](header.md)
-- [`relatedContent`](relatedcontent.md)
-- [`section`](section.md)
-- [`tumblerBar`](tumblerbar.md)
+- [header](./header.md)
+- [relatedContent](./relatedcontent.md)
+- [section](./section.md)
+- [tumblerBar](./tumblerbar.md)
 
-##### Elements That Use List
+##### Elements that Use list
 
-- [`catalogTemplate`](catalogtemplate.md)
-- [`compilationTemplate`](compilationtemplate.md)
-- [`listTemplate`](listtemplate.md)
-- [`paradeTemplate`](paradetemplate.md)
-- [`searchTemplate`](searchtemplate.md)
+- [catalogTemplate](./catalogtemplate.md)
+- [compilationTemplate](./compilationtemplate.md)
+- [listTemplate](./listtemplate.md)
+- [paradeTemplate](./paradetemplate.md)
+- [searchTemplate](./searchtemplate.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [tv-align](tv-align.md)
+- [tv-align](./tv-align.md)
   Aligns an element horizontally inside its parent.
-- [tv-interitem-spacing](tv-interitem-spacing.md)
+- [tv-interitem-spacing](./tv-interitem-spacing.md)
   Specifies the spacing between child elements.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [collectionList](collectionlist.md)
+### List Elements
+- [collectionList](./collectionlist.md)
   Contains other layout elements.
-- [infoList](infolist.md)
+- [infoList](./infolist.md)
   Displays `info` element information in a vertical format.
 
 

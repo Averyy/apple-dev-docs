@@ -1,7 +1,8 @@
 # maskAmount
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of masking to apply to the cell.
 
@@ -14,11 +15,16 @@ The amount of masking to apply to the cell.
 var maskAmount: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat maskAmount;
+```
+
 ## See Also
 
-- [var contentBleed: UIEdgeInsets](tvcollectionviewfullscreenlayoutattributes/contentbleed.md)
+### Modifying Cell Appearance
+- [var contentBleed: UIEdgeInsets](./contentbleed.md)
   The amount of content that bleeds into the masked portions of the cell.
-- [var cornerRadius: CGFloat](tvcollectionviewfullscreenlayoutattributes/cornerradius.md)
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The radius to use when drawing rounded corners for the cell.
 
 

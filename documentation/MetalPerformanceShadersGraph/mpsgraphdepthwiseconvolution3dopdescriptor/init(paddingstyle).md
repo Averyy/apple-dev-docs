@@ -1,7 +1,8 @@
 # init(paddingStyle:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D depthwise convolution descriptor with default values.
 
@@ -17,6 +18,10 @@ Creates a 3D depthwise convolution descriptor with default values.
 
 ```swift
 convenience init?(paddingStyle: MPSGraphPaddingStyle)
+```
+
+```objc
++ (instancetype) descriptorWithPaddingStyle:(MPSGraphPaddingStyle) paddingStyle;
 ```
 
 #### Return Value

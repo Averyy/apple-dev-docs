@@ -1,6 +1,7 @@
 # Requesting the OpenGL Renderer
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Switch to the legacy renderer temporarily for debugging purposes.
 

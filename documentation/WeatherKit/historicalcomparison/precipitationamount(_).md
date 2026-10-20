@@ -1,7 +1,8 @@
 # HistoricalComparison.precipitationAmount(_:)
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The comparison relates to the amount of precipitation at the location averaged over the past 30 days.
 

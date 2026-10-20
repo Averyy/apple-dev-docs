@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name that identifies the constraint.
 
@@ -12,6 +13,10 @@ The name that identifies the constraint.
 
 ```swift
 var identifier: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * identifier;
 ```
 
 #### Discussion

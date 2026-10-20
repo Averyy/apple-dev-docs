@@ -1,7 +1,8 @@
 # GameCenterChallengeLeaderboardV2LinkageRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a challenge resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a challenge resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeLeaderboardV2LinkageRequest.Data
 ```
 
@@ -22,7 +23,7 @@ object GameCenterChallengeLeaderboardV2LinkageRequest.Data
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboards`
 
 
 ---

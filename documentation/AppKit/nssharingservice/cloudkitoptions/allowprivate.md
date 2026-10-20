@@ -1,7 +1,8 @@
 # allowPrivate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that allows the participant to privately distribute the share to other iCloud users.
 
@@ -14,15 +15,20 @@ An option that allows the participant to privately distribute the share to other
 static var allowPrivate: NSSharingService.CloudKitOptions { get }
 ```
 
+```c
+NSCloudKitSharingServiceAllowPrivate
+```
+
 ## See Also
 
-- [static var allowPublic: NSSharingService.CloudKitOptions](nssharingservice/cloudkitoptions/allowpublic.md)
+### CloudKit Options
+- [static var allowPublic: NSSharingService.CloudKitOptions](./allowpublic.md)
   An option that allows the participant to publicly distribute the share to other iCloud users.
-- [static var allowReadOnly: NSSharingService.CloudKitOptions](nssharingservice/cloudkitoptions/allowreadonly.md)
+- [static var allowReadOnly: NSSharingService.CloudKitOptions](./allowreadonly.md)
   An option that allows the participant to grant other participants read-only permissions.
-- [static var allowReadWrite: NSSharingService.CloudKitOptions](nssharingservice/cloudkitoptions/allowreadwrite.md)
+- [static var allowReadWrite: NSSharingService.CloudKitOptions](./allowreadwrite.md)
   An option that allows the participant to grant other participants read-write permissions.
-- [static var standard: NSSharingService.CloudKitOptions](nssharingservice/cloudkitoptions/standard.md)
+- [static var standard: NSSharingService.CloudKitOptions](./standard.md)
   An option that allows the participant to configure the share with a standard set of options.
 
 

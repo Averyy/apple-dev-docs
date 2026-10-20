@@ -1,7 +1,8 @@
 # isRotationLocked
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tuple of Boolean values that you use to lock rotation of the physics body around any of the three axes.
 
@@ -11,7 +12,7 @@ A tuple of Boolean values that you use to lock rotation of the physics body arou
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ For any one of the three Booleans in the tuple that you set to `true`, rotation 
 
 ## See Also
 
-- [var isTranslationLocked: (x: Bool, y: Bool, z: Bool)](physicsbodycomponent/istranslationlocked.md)
+### Locking movement
+- [var isTranslationLocked: (x: Bool, y: Bool, z: Bool)](./istranslationlocked.md)
   A tuple of Boolean values that you use to lock the position of the physics body along any of the three axes.
 
 

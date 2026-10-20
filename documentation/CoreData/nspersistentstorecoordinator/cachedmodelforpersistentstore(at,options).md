@@ -1,7 +1,8 @@
 # cachedModelForPersistentStore(at:options:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 
 ```swift
 class func cachedModelForPersistentStore(at url: URL, options: [AnyHashable : Any]? = nil) throws -> NSManagedObjectModel
+```
+
+```objc
++ (NSManagedObjectModel *) cachedModelForPersistentStoreAtURL:(NSURL *) url options:(NSDictionary *) options error:(NSError **) error;
 ```
 
 

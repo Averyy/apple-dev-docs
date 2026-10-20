@@ -1,7 +1,8 @@
 # iotaSubscript
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Greek iota subscript only (U+0345 COMBINING GREEK YPOGEGRAMMENI).
 

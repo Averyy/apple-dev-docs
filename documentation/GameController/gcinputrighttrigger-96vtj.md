@@ -1,7 +1,8 @@
 # GCInputRightTrigger
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the right trigger.
 
@@ -11,7 +12,7 @@ The name of the right trigger.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,11 @@ var GCInputRightTrigger: String { get }
 
 ## See Also
 
-- [var rightTrigger: GCControllerButtonInput](gcextendedgamepad/righttrigger.md)
+### Related Documentation
+- [var rightTrigger: GCControllerButtonInput](./gcextendedgamepad/righttrigger.md)
   The controller’s right trigger element.
-- [var GCInputLeftTrigger: String](gcinputlefttrigger-80png.md)
+### Trigger names
+- [var GCInputLeftTrigger: String](./gcinputlefttrigger-80png.md)
   The name of the left trigger.
 
 

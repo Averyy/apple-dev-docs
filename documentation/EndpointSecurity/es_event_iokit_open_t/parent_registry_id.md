@@ -1,16 +1,21 @@
 # parent_registry_id
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var parent_registry_id: UInt64
+```
+
+```c
+uint64_t parent_registry_id;
 ```
 
 

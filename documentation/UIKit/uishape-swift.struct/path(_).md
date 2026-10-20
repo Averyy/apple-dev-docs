@@ -1,7 +1,8 @@
 # path(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a shape with a custom Bézier path.
 

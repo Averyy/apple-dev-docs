@@ -1,7 +1,8 @@
 # vImageVerticalShear_Planar16U(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs a single-precision vertical shear on a region of interest within an unsigned 16-bit planar image.
 
@@ -20,9 +21,13 @@ Performs a single-precision vertical shear on a region of interest within an uns
 func vImageVerticalShear_Planar16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ srcOffsetToROI_X: vImagePixelCount, _ srcOffsetToROI_Y: vImagePixelCount, _ yTranslate: Float, _ shearSlope: Float, _ filter: ResamplingFilter!, _ backColor: Pixel_16U, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageVerticalShear_Planar16U(const vImage_Buffer *src, const vImage_Buffer *dest, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, float yTranslate, float shearSlope, ResamplingFilter filter, Pixel_16U backColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
 #### Discussion
 
@@ -33,32 +38,44 @@ This function doesn’t work in place — that is, the source and destination bu
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains the source image.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks. This parameter also specifies the size of the region of interest within the source image. The region of interest has the same height and width as the destination image buffer.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+
+  This parameter also specifies the size of the region of interest within the source image. The region of interest has the same height and width as the destination image buffer.
 - `srcOffsetToROI_X`: The horizontal offset, in pixels, from the upper-left pixel of the region of interest within the source image.
 - `srcOffsetToROI_Y`: The vertical offset, in pixels, from the upper-left pixel of the region of interest within the source image.
 - `yTranslate`: A translation value for the vertical direction.
 - `shearSlope`: The slope of the front edge of the sheared image, measured in a clockwise direction.
-- `filter`: The resampling filter that the function uses. For more information, see [`Reducing artifacts with custom resampling filters`](reducing-artifacts-with-custom-resampling-filters.md).
+- `filter`: The resampling filter that the function uses. For more information, see [Reducing artifacts with custom resampling filters](./reducing-artifacts-with-custom-resampling-filters.md).
 - `backColor`: A background color. If you set the `kvImageBackgroundColorFill` flag, pass a pixel value.
-- `flags`: The options to use when applying the transform. To specify how vImage handles pixel locations beyond the edge of the source image, set one of the following flags: [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](kvimageedgeextend.md). If you want vImage to use a higher quality but a slower resampling filter, set the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). This function ignores the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
+- `flags`: The options to use when applying the transform.
+
+  To specify how vImage handles pixel locations beyond the edge of the source image, set one of the following flags: [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](./kvimageedgeextend.md).
+
+  If you want vImage to use a higher quality but a slower resampling filter, set the [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) flag.
+
+  If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  This function ignores the [`kvImageLeaveAlphaUnchanged`](./kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+### Related Documentation
+- [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [func vImageVerticalShear_Planar16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, Pixel_16S, vImage_Flags) -> vImage_Error](vimageverticalshear_planar16s(_:_:_:_:_:_:_:_:_:).md)
+### Shearing 16-bit-per-channel buffers
+- [func vImageVerticalShear_Planar16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, Pixel_16S, vImage_Flags) -> vImage_Error](./vimageverticalshear_planar16s%28_,_,_,_,_,_,_,_,_%29.md)
   Performs a single-precision vertical shear on a region of interest within a signed 16-bit planar image.
-- [func vImageVerticalShear_Planar16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, Pixel_16F, vImage_Flags) -> vImage_Error](vimageverticalshear_planar16f(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageVerticalShear_Planar16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, Pixel_16F, vImage_Flags) -> vImage_Error](./vimageverticalshear_planar16f%28_,_,_,_,_,_,_,_,_%29.md)
   Performs a single-precision vertical shear on a region of interest within a floating-point 16-bit planar image.
-- [func vImageVerticalShear_CbCr16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](vimageverticalshear_cbcr16u(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageVerticalShear_CbCr16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](./vimageverticalshear_cbcr16u%28_,_,_,_,_,_,_,_,_%29.md)
   Performs a single-precision vertical shear on a region of interest within an unsigned 16-bit-per-channel, 2-channel interleaved image.
-- [func vImageVerticalShear_CbCr16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](vimageverticalshear_cbcr16f(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageVerticalShear_CbCr16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](./vimageverticalshear_cbcr16f%28_,_,_,_,_,_,_,_,_%29.md)
   Performs a single-precision vertical shear on a region of interest within a floating-point 16-bit-per-channel, 2-channel interleaved image.
-- [func vImageVerticalShear_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](vimageverticalshear_argb16u(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageVerticalShear_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](./vimageverticalshear_argb16u%28_,_,_,_,_,_,_,_,_%29.md)
   Performs a single-precision vertical shear on a region of interest within an unsigned 16-bit-per-channel, 4-channel interleaved image.
-- [func vImageVerticalShear_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<Int16>!, vImage_Flags) -> vImage_Error](vimageverticalshear_argb16s(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageVerticalShear_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<Int16>!, vImage_Flags) -> vImage_Error](./vimageverticalshear_argb16s%28_,_,_,_,_,_,_,_,_%29.md)
   Performs a single-precision vertical shear on a region of interest within a signed 16-bit-per-channel, 4-channel interleaved image.
-- [func vImageVerticalShear_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](vimageverticalshear_argb16f(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageVerticalShear_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImagePixelCount, vImagePixelCount, Float, Float, ResamplingFilter!, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](./vimageverticalshear_argb16f%28_,_,_,_,_,_,_,_,_%29.md)
   Performs a single-precision vertical shear on a region of interest within a floating-point 16-bit-per-channel, 4-channel interleaved image.
 
 

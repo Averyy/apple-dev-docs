@@ -1,7 +1,8 @@
 # ManagedPreferences.PayloadContent.ANY.Settings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary of forced settings.
 
@@ -10,14 +11,14 @@ The dictionary of forced settings.
 
 ## Declaration
 
-```swift
+```
 object ManagedPreferences.PayloadContent.ANY.Settings
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedPreferences.PayloadContent.ANY.Settings.Mcx_preference_settings](managedpreferences/payloadcontent-data.dictionary/any-data.dictionary/settings/mcx_preference_settings-data.dictionary.md)
+- [object ManagedPreferences.PayloadContent.ANY.Settings.Mcx_preference_settings](./settings/mcx_preference_settings-data.dictionary.md)
   The dictionary of settings.
 
 ## Properties

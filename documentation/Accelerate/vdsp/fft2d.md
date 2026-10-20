@@ -1,7 +1,8 @@
 # vDSP.FFT2D
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A 2D single- and double-precision fast Fourier transform.
 
@@ -11,7 +12,7 @@ A 2D single- and double-precision fast Fourier transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,24 +24,25 @@ class FFT2D<T> where T : vDSP_FourierTransformable
 ## Topics
 
 ### Initializers
-- [init?(width: Int, height: Int, ofType: T.Type)](vdsp/fft2d/init(width:height:oftype:).md)
+- [init?(width: Int, height: Int, ofType: T.Type)](./fft2d/init%28width,height,oftype%29.md)
   Initializes a new fast Fourier transform instance for 2D FFT.
 ### Instance Methods
-- [func transform<T>(input: T, output: inout T, direction: vDSP.FourierTransformDirection)](vdsp/fft2d/transform(input:output:direction:).md)
+- [func transform<T>(input: T, output: inout T, direction: vDSP.FourierTransformDirection)](./fft2d/transform%28input,output,direction%29.md)
   Computes an out-of-place 2D fast Fourier transform.
 
 ## Relationships
 
 ### Inherits From
-- [vDSP.FFT](vdsp/fft.md)
+- [vDSP.FFT](./fft.md)
 
 ## See Also
 
-- [class FFT](vdsp/fft.md)
+### Objects that Simplify FFTs
+- [class FFT](./fft.md)
   A 1D single- and double-precision fast Fourier transform.
-- [vDSP.FourierTransformDirection](vdsp/fouriertransformdirection.md)
+- [vDSP.FourierTransformDirection](./fouriertransformdirection.md)
   Fast Fourier transform directions.
-- [vDSP.Radix](vdsp/radix.md)
+- [vDSP.Radix](./radix.md)
   Fast Fourier transform radices.
 
 

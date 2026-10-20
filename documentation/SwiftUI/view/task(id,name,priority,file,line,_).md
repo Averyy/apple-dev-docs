@@ -1,7 +1,8 @@
 # task(id:name:priority:file:line:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a task to perform before this view appears or when a specified value changes.
 
@@ -27,9 +28,9 @@ A view that runs the specified action asynchronously before the view appears, or
 
 #### Discussion
 
-This method behaves like `View/task(priority:_:)`, except that it also cancels and recreates the task when a specified value changes. To detect a change, the modifier tests whether a new value for the `id` parameter equals the previous value. For this to work, the value’s type must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
+This method behaves like `View/task(priority:_:)`, except that it also cancels and recreates the task when a specified value changes. To detect a change, the modifier tests whether a new value for the `id` parameter equals the previous value. For this to work, the value’s type must conform to the [`Equatable`](../../Swift/equatable.md) protocol.
 
-For example, if you define an equatable `Server` type that posts custom notifications whenever its state changes — for example, from *signed out* to *signed in* — you can use the task modifier to update the contents of a [`Text`](text.md) view to reflect the state of the currently selected server:
+For example, if you define an equatable `Server` type that posts custom notifications whenever its state changes — for example, from *signed out* to *signed in* — you can use the task modifier to update the contents of a [`Text`](../text.md) view to reflect the state of the currently selected server:
 
 ```swift
 Text(status ?? "Signed Out")
@@ -46,7 +47,7 @@ Text(status ?? "Signed Out")
     }
 ```
 
-This example uses the [`notifications(named:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/notifications(named:object:)) method to create an asynchronous sequence of notifications, given by an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) instance. The example then maps the notification sequence to a sequence of strings that correspond to values stored with each notification.
+This example uses the [`notifications(named:object:)`](../../Foundation/notificationcenter/notifications%28named,object%29.md) method to create an asynchronous sequence of notifications, given by an [`AsyncSequence`](../../Swift/asyncsequence.md) instance. The example then maps the notification sequence to a sequence of strings that correspond to values stored with each notification.
 
 Elsewhere, the server defines a custom `didUpdateStatus` notification:
 
@@ -68,26 +69,27 @@ let notification = Notification(
 NotificationCenter.default.post(notification)
 ```
 
-The task attached to the [`Text`](text.md) view gets and displays the status value from the notification’s user information dictionary. When the user chooses a different server, SwiftUI cancels the task and creates a new one, which then waits for notifications from the new server.
+The task attached to the [`Text`](../text.md) view gets and displays the status value from the notification’s user information dictionary. When the user chooses a different server, SwiftUI cancels the task and creates a new one, which then waits for notifications from the new server.
 
 The task is created by `Task.immediate`. Its action begins execution synchronously until it suspends at the first `await`.
 
 ## Parameters
 
-- `id`: The value to observe for changes. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
+- `id`: The value to observe for changes. The value must conform to the [`Equatable`](../../Swift/equatable.md) protocol.
 - `name`: Human readable name for the task. A name will be generated if this argument is `nil`. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
-- `priority`: The task priority to use when creating the asynchronous task. The default priority is [`userInitiated`](https://developer.apple.com/documentation/swift/taskpriority/userinitiated).
+- `priority`: The task priority to use when creating the asynchronous task. The default priority is [`userInitiated`](../../Swift/taskpriority/userinitiated.md).
 - `file`: File name used in default task name. SwiftUI uses the callsite of .task by default. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
 - `line`: Line number used in default task name. SwiftUI uses the callsite of .task by default. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
 - `action`: A closure that SwiftUI calls as an asynchronous task before the view appears. SwiftUI can automatically cancel the task after the view disappears before the action completes. If the `id` value changes, SwiftUI cancels and restarts the task.
 
 ## See Also
 
-- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:executorpreference:priority:file:line:_:).md)
+### Assigning tasks
+- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](./task%28id,name,executorpreference,priority,file,line,_%29.md)
   Adds a task to perform before this view appears or when a specified value changes.
-- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](view/task(name:executorpreference:priority:file:line:action:).md)
+- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](./task%28name,executorpreference,priority,file,line,action%29.md)
   Adds an asynchronous task to perform before this view appears.
-- [func task(name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(name:priority:file:line:_:).md)
+- [func task(name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](./task%28name,priority,file,line,_%29.md)
   Adds an asynchronous task to perform before this view appears.
 
 

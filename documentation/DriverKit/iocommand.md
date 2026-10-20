@@ -1,17 +1,18 @@
 # IOCommand
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOCommand;
 ```
 
@@ -24,35 +25,36 @@ This class is an abstract class which represents an I/O command passed from a de
 ## Topics
 
 ### Instance Methods
-- [CommandChain](iocommand/commandchain.md)
-- [free](iocommand/free.md)
-- [init](iocommand/init.md)
+- [CommandChain](./iocommand/commandchain.md)
+- [free](./iocommand/free.md)
+- [init](./iocommand/init.md)
 ### Type Methods
-- [FromChain](iocommand/fromchain.md)
+- [FromChain](./iocommand/fromchain.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOCallOnceBlock](iocallonceblock.md)
-- [IOCallOnceFlag](iocallonceflag.md)
-- [IOCommandPool](iocommandpool.md)
-- [IOCommandPoolPtr](iocommandpoolptr.md)
-- [IOCommandPtr](iocommandptr.md)
-- [IODMACommand](iodmacommand.md)
+### Data Types
+- [IOCallOnceBlock](./iocallonceblock.md)
+- [IOCallOnceFlag](./iocallonceflag.md)
+- [IOCommandPool](./iocommandpool.md)
+- [IOCommandPoolPtr](./iocommandpoolptr.md)
+- [IOCommandPtr](./iocommandptr.md)
+- [IODMACommand](./iodmacommand.md)
   An object that converts memory references to I/O bus addresses.
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IODispatchAction](iodispatchaction.md)
-- [IOHistogramReporter_IVars](iohistogramreporter_ivars.md)
-- [IOReportLegendEntry](ioreportlegendentry.md)
-- [IOReporter_IVars](ioreporter_ivars.md)
-- [IOSimpleReporter_IVars](iosimplereporter_ivars.md)
-- [IOStateReporter_IVars](iostatereporter_ivars.md)
-- [IOStateReporter_valueSelector](iostatereporter_valueselector.md)
-- [IVarsInvalidator](ivarsinvalidator.md)
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IODispatchAction](./iodispatchaction.md)
+- [IOHistogramReporter_IVars](./iohistogramreporter_ivars.md)
+- [IOReportLegendEntry](./ioreportlegendentry.md)
+- [IOReporter_IVars](./ioreporter_ivars.md)
+- [IOSimpleReporter_IVars](./iosimplereporter_ivars.md)
+- [IOStateReporter_IVars](./iostatereporter_ivars.md)
+- [IOStateReporter_valueSelector](./iostatereporter_valueselector.md)
+- [IVarsInvalidator](./ivarsinvalidator.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kAVCSignalModeMask_SDL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kAVCSignalModeMask_SDL = 0x04
 ```
 

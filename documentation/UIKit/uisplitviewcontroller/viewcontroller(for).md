@@ -1,7 +1,8 @@
 # viewController(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view controller associated with the specified column of the split view interface.
 
@@ -18,25 +19,30 @@ Returns the view controller associated with the specified column of the split vi
 func viewController(for column: UISplitViewController.Column) -> UIViewController?
 ```
 
+```objc
+- (UIViewController *) viewControllerForColumn:(UISplitViewControllerColumn) column;
+```
+
 #### Return Value
 
 The corresponding child view controller object.
 
 #### Discussion
 
-This method doesn’t apply to classic split view controllers with a [`style`](uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.unspecified`](uisplitviewcontroller/style-swift.enum/unspecified.md). For a classic split view controller, instead use the [`viewControllers`](uisplitviewcontroller/viewcontrollers.md) property to get the view controllers in the split view interface.
+This method doesn’t apply to classic split view controllers with a [`style`](./style-swift.property.md) of [`UISplitViewController.Style.unspecified`](./style-swift.enum/unspecified.md). For a classic split view controller, instead use the [`viewControllers`](./viewcontrollers.md) property to get the view controllers in the split view interface.
 
 ## Parameters
 
-- `column`: The corresponding column of the split view interface. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for values.
+- `column`: The corresponding column of the split view interface. See [`UISplitViewController.Column`](./column.md) for values.
 
 ## See Also
 
-- [UISplitViewController.Column](uisplitviewcontroller/column.md)
+### Managing the child view controllers
+- [UISplitViewController.Column](./column.md)
   Constants that describe the columns within the split view interface.
-- [func setViewController(UIViewController?, for: UISplitViewController.Column)](uisplitviewcontroller/setviewcontroller(_:for:).md)
+- [func setViewController(UIViewController?, for: UISplitViewController.Column)](./setviewcontroller%28_,for%29.md)
   Presents the provided view controller in the specified column of the split view interface.
-- [var viewControllers: [UIViewController]](uisplitviewcontroller/viewcontrollers.md)
+- [var viewControllers: [UIViewController]](./viewcontrollers.md)
   The array of view controllers the split view controller manages.
 
 

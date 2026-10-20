@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that customizes the look of the paste button.
 
@@ -17,9 +18,14 @@ An object that customizes the look of the paste button.
 var configuration: UIPasteControl.Configuration { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPasteControlConfiguration * configuration;
+```
+
 ## See Also
 
-- [UIPasteControl.Configuration](uipastecontrol/configuration-swift.class.md)
+### Determining the button’s look
+- [UIPasteControl.Configuration](./configuration-swift.class.md)
   An object that determines a paste button’s color, corner style, icon, and text.
 
 

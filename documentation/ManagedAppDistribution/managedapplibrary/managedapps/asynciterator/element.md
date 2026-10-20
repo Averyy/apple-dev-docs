@@ -1,7 +1,8 @@
 # ManagedAppLibrary.ManagedApps.AsyncIterator.Element
 
 **Framework**: ManagedAppDistribution  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element this asynchronous sequence produces.
 
@@ -20,7 +21,8 @@ typealias Element = Result<[ManagedApp], ManagedAppDistributionError>
 
 ## See Also
 
-- [func next() async throws -> ManagedAppLibrary.ManagedApps.AsyncIterator.Element?](managedapplibrary/managedapps/asynciterator/next.md)
+### Iterating
+- [func next() async throws -> ManagedAppLibrary.ManagedApps.AsyncIterator.Element?](./next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 
 

@@ -1,7 +1,8 @@
 # CertificateListCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of installed certificates on a device.
 
@@ -16,15 +17,23 @@ The command to get a list of installed certificates on a device.
 
 ## Declaration
 
-```swift
+```
 object CertificateListCommand.Command
 ```
 
 ## Properties
 
-- `ManagedOnly` (boolean): If `true`, only include certificates that MDM installed or that are in the same profile as the MDM payload. User-enrolled devices ignore this value and always only include managed certificates. Available: iOS 13+ | iPadOS 13+ | macOS 10.15+ | tvOS 13+ | visionOS 1.1+ | watchOS 10+
+- `ManagedOnly` (boolean): If `true`, only include certificates that MDM installed or that are in the same profile as the MDM payload. User-enrolled devices ignore this value and always only include managed certificates.
+
+  Available: iOS 13+ | iPadOS 13+ | macOS 10.15+ | tvOS 13+ | visionOS 1.1+ | watchOS 10+
+
+  **Default**: `false`
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `CertificateList`
 
 
 ---

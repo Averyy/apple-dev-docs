@@ -1,7 +1,8 @@
 # rightWrist
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with right wrist joint in a body pose.
 
@@ -21,9 +22,10 @@ static let rightWrist: JointKey
 
 ## See Also
 
-- [static let leftWrist: JointKey](jointkey/leftwrist.md)
+### Getting wrist properties
+- [static let leftWrist: JointKey](./leftwrist.md)
   A key associated with left wrist joint in a body pose.
-- [static let wrist: JointKey](jointkey/wrist.md)
+- [static let wrist: JointKey](./wrist.md)
   A key associated with hand wrist joint in a hand pose.
 
 

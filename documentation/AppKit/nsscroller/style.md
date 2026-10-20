@@ -1,7 +1,8 @@
 # NSScroller.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants to specify the scroller style.
 
@@ -14,33 +15,38 @@ Constants to specify the scroller style.
 enum Style
 ```
 
+```c
+enum NSScrollerStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSScroller.Style.legacy](nsscroller/style/legacy.md)
+- [NSScroller.Style.legacy](./style/legacy.md)
   Specifies legacy-style scrollers as prior to macOS 10.7.
-- [NSScroller.Style.overlay](nsscroller/style/overlay.md)
+- [NSScroller.Style.overlay](./style/overlay.md)
   Specifies overlay-style scrollers in macOS 10.7 and later.
 ### Initializers
-- [init?(rawValue: Int)](nsscroller/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSScroller.KnobStyle](nsscroller/knobstyle-swift.enum.md)
+### Constants
+- [NSScroller.KnobStyle](./knobstyle-swift.enum.md)
   Specify different knob styles.
-- [NSScroller.Part](nsscroller/part.md)
+- [NSScroller.Part](./part.md)
   These constants specify the different parts of the scroller:
-- [NSScroller.UsableParts](nsscroller/usableparts-swift.enum.md)
+- [NSScroller.UsableParts](./usableparts-swift.enum.md)
   These constants specify which parts of the scroller are visible.
 
 

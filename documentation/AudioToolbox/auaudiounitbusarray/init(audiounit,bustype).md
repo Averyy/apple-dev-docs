@@ -1,7 +1,8 @@
 # init(audioUnit:busType:)
 
 **Framework**: Audio Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an empty bus array.
 
@@ -19,6 +20,10 @@ Initializes an empty bus array.
 convenience init(audioUnit owner: AUAudioUnit, busType: AUAudioUnitBusType)
 ```
 
+```objc
+- (instancetype) initWithAudioUnit:(AUAudioUnit *) owner busType:(AUAudioUnitBusType) busType;
+```
+
 #### Return Value
 
 A newly-initialized bus array.
@@ -30,7 +35,8 @@ A newly-initialized bus array.
 
 ## See Also
 
-- [init(audioUnit: AUAudioUnit, busType: AUAudioUnitBusType, busses: [AUAudioUnitBus])](auaudiounitbusarray/init(audiounit:bustype:busses:).md)
+### Initialization
+- [init(audioUnit: AUAudioUnit, busType: AUAudioUnitBusType, busses: [AUAudioUnitBus])](./init%28audiounit,bustype,busses%29.md)
   Initializes a bus array by making a copy of the supplied busses.
 
 

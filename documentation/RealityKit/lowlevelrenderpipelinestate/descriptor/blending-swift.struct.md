@@ -1,7 +1,8 @@
 # LowLevelRenderPipelineState.Descriptor.Blending
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An alpha blending mode for transparent draw calls.
 
@@ -20,29 +21,30 @@ struct Blending
 ## Topics
 
 ### Creating a blending mode
-- [static var sourceOver: LowLevelRenderPipelineState.Descriptor.Blending](lowlevelrenderpipelinestate/descriptor/blending-swift.struct/sourceover.md)
+- [static var sourceOver: LowLevelRenderPipelineState.Descriptor.Blending](./blending-swift.struct/sourceover.md)
   Standard source-over alpha blending with pre-multiplied alpha.
-- [static var add: LowLevelRenderPipelineState.Descriptor.Blending](lowlevelrenderpipelinestate/descriptor/blending-swift.struct/add.md)
+- [static var add: LowLevelRenderPipelineState.Descriptor.Blending](./blending-swift.struct/add.md)
   Additive blending that combines source and destination colors.
 ### Type Methods
-- [static func custom(sourceRGBBlendFactor: MTLBlendFactor, destinationRGBBlendFactor: MTLBlendFactor, rgbBlendOperation: MTLBlendOperation, sourceAlphaBlendFactor: MTLBlendFactor, destinationAlphaBlendFactor: MTLBlendFactor, alphaBlendOperation: MTLBlendOperation) -> LowLevelRenderPipelineState.Descriptor.Blending](lowlevelrenderpipelinestate/descriptor/blending-swift.struct/custom(sourcergbblendfactor:destinationrgbblendfactor:rgbblendoperation:sourcealphablendfactor:destinationalphablendfactor:alphablendoperation:).md)
+- [static func custom(sourceRGBBlendFactor: MTLBlendFactor, destinationRGBBlendFactor: MTLBlendFactor, rgbBlendOperation: MTLBlendOperation, sourceAlphaBlendFactor: MTLBlendFactor, destinationAlphaBlendFactor: MTLBlendFactor, alphaBlendOperation: MTLBlendOperation) -> LowLevelRenderPipelineState.Descriptor.Blending](./blending-swift.struct/custom%28sourcergbblendfactor,destinationrgbblendfactor,rgbblendoperation,sourcealphablendfactor,destinationalphablendfactor,alphablendoperation%29.md)
   Creates a custom blending configuration with explicit Metal blend factors and operations.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mesh: LowLevelMeshResource.Descriptor?](lowlevelrenderpipelinestate/descriptor/mesh.md)
+### Configuring the pipeline
+- [var mesh: LowLevelMeshResource.Descriptor?](./mesh.md)
   The vertex format of the mesh this pipeline renders.
-- [var renderTargets: LowLevelRenderTarget.DescriptorSet](lowlevelrenderpipelinestate/descriptor/rendertargets.md)
+- [var renderTargets: LowLevelRenderTarget.DescriptorSet](./rendertargets.md)
   The set of render target descriptors this pipeline state is compatible with.
-- [var blending: LowLevelRenderPipelineState.Descriptor.Blending?](lowlevelrenderpipelinestate/descriptor/blending-swift.property.md)
+- [var blending: LowLevelRenderPipelineState.Descriptor.Blending?](./blending-swift.property.md)
   The blending configuration, or `nil` for opaque draws.
-- [var writeMask: MTLColorWriteMask](lowlevelrenderpipelinestate/descriptor/writemask.md)
+- [var writeMask: MTLColorWriteMask](./writemask.md)
   The color channels written to the output attachment.
 
 

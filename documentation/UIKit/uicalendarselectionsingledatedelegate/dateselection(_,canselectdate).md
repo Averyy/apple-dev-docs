@@ -1,7 +1,8 @@
 # dateSelection(_:canSelectDate:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether a user can select a date represented by date components in the calendar view.
 
@@ -15,6 +16,10 @@ Returns whether a user can select a date represented by date components in the c
 
 ```swift
 optional func dateSelection(_ selection: UICalendarSelectionSingleDate, canSelectDate dateComponents: DateComponents?) -> Bool
+```
+
+```objc
+- (BOOL) dateSelection:(UICalendarSelectionSingleDate *) selection canSelectDate:(NSDateComponents *) dateComponents;
 ```
 
 #### Return Value

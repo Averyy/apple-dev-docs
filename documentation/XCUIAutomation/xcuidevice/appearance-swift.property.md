@@ -1,7 +1,8 @@
 # appearance
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interface style of the device.
 
@@ -20,6 +21,10 @@ The interface style of the device.
 var appearance: XCUIDevice.Appearance { get set }
 ```
 
+```objc
+@property (nonatomic) XCUIDeviceAppearance appearance;
+```
+
 #### Discussion
 
 Use this property to get or set the interface appearance the system uses for applications running on the device. The example below captures the initial appearance value and sets the device to Dark Mode:
@@ -33,9 +38,10 @@ Set the property once in your test fixture’s setup or intialization code to se
 
 ## See Also
 
-- [var system: XCUISystem](xcuidevice/system.md)
+### Interacting with the OS
+- [var system: XCUISystem](./system.md)
   An object that provides an interface to OS-specific properties and actions.
-- [XCUIDevice.Appearance](xcuidevice/appearance-swift.enum.md)
+- [XCUIDevice.Appearance](./appearance-swift.enum.md)
   Constants that indicate an interface style.
 
 

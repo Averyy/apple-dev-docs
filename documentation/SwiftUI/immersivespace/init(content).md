@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immersive space.
 
@@ -13,6 +14,13 @@ Creates an immersive space.
 ```swift
 nonisolated
 init(@ImmersiveSpaceContentBuilder content: @escaping () -> Content) where Data == Never
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<V>(@ContentBuilder content: @escaping () -> V) where Content == ImmersiveSpaceViewContent<V>, Data == Never, V : View
 ```
 
 #### Discussion

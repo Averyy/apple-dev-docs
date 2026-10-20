@@ -1,7 +1,8 @@
 # decodeCString(_:as:repairingInvalidCodeUnits:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new string by copying the null-terminated data referenced by the given pointer using the specified encoding.
 
@@ -58,23 +59,24 @@ invalidUTF8.withUnsafeBufferPointer { ptr in
 
 ## See Also
 
-- [init?<S>(bytes: S, encoding: String.Encoding)](string/init(bytes:encoding:).md)
+### Converting a C String
+- [init?<S>(bytes: S, encoding: String.Encoding)](./init%28bytes,encoding%29.md)
   Creates a new string equivalent to the given bytes interpreted in the specified encoding. Note: This API does not interpret embedded nulls as termination of the string. Use `String?(validatingCString:)` instead for null-terminated C strings.
-- [init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: String.Encoding, freeWhenDone: Bool)](string/init(bytesnocopy:length:encoding:freewhendone:).md)
+- [init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: String.Encoding, freeWhenDone: Bool)](./init%28bytesnocopy,length,encoding,freewhendone%29.md)
   Creates a new string that contains the specified number of bytes from the given buffer, interpreted in the specified encoding, and optionally frees the buffer.
-- [init?(validatingCString: UnsafePointer<CChar>)](string/init(validatingcstring:)-992vo.md)
+- [init?(validatingCString: UnsafePointer<CChar>)](./init%28validatingcstring%29-992vo.md)
   Creates a new string by copying and validating the null-terminated UTF-8 data referenced by the given pointer.
-- [init?(validatingCString: [CChar])](string/init(validatingcstring:)-98wra.md)
+- [init?(validatingCString: [CChar])](./init%28validatingcstring%29-98wra.md)
   Creates a new string by copying and validating the null-terminated UTF-8 data referenced by the given array.
-- [init(cString: UnsafePointer<CChar>)](string/init(cstring:)-2p84k.md)
+- [init(cString: UnsafePointer<CChar>)](./init%28cstring%29-2p84k.md)
   Creates a new string by copying the null-terminated UTF-8 data referenced by the given pointer.
-- [init(cString: UnsafePointer<UInt8>)](string/init(cstring:)-6kr8s.md)
+- [init(cString: UnsafePointer<UInt8>)](./init%28cstring%29-6kr8s.md)
   Creates a new string by copying the null-terminated UTF-8 data referenced by the given pointer.
-- [init?(cString: [CChar], encoding: String.Encoding)](string/init(cstring:encoding:)-3h7bc.md)
+- [init?(cString: [CChar], encoding: String.Encoding)](./init%28cstring,encoding%29-3h7bc.md)
   Produces a string by copying the null-terminated bytes in a given array, interpreted according to a given encoding.
-- [init?(cString: UnsafePointer<CChar>, encoding: String.Encoding)](string/init(cstring:encoding:)-3qgzd.md)
+- [init?(cString: UnsafePointer<CChar>, encoding: String.Encoding)](./init%28cstring,encoding%29-3qgzd.md)
   Produces a string by copying the null-terminated bytes in a given C array, interpreted according to a given encoding.
-- [init<Encoding>(decodingCString: [Encoding.CodeUnit], as: Encoding.Type)](string/init(decodingcstring:as:)-8way7.md)
+- [init<Encoding>(decodingCString: [Encoding.CodeUnit], as: Encoding.Type)](./init%28decodingcstring,as%29-8way7.md)
   Creates a new string by copying the null-terminated sequence of code units referenced by the given array.
 
 

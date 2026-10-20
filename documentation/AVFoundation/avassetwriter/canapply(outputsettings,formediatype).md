@@ -1,7 +1,8 @@
 # canApply(outputSettings:forMediaType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the output file format supports the output settings for a specific media type.
 
@@ -19,9 +20,13 @@ Determines whether the output file format supports the output settings for a spe
 func canApply(outputSettings: [String : Any]?, forMediaType mediaType: AVMediaType) -> Bool
 ```
 
+```objc
+- (BOOL) canApplyOutputSettings:(NSDictionary<NSString *,id> *) outputSettings forMediaType:(AVMediaType) mediaType;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the format supports the output settings; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the format supports the output settings; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -34,13 +39,14 @@ Use this method to determine the compatibility of output settings for a particul
 
 ## See Also
 
-- [var inputs: [AVAssetWriterInput]](avassetwriter/inputs.md)
+### Configuring inputs
+- [var inputs: [AVAssetWriterInput]](./inputs.md)
   The inputs an asset writer contains.
-- [var availableMediaTypes: [AVMediaType]](avassetwriter/availablemediatypes.md)
+- [var availableMediaTypes: [AVMediaType]](./availablemediatypes.md)
   The media types the asset writer supports adding as inputs.
-- [func canAdd(AVAssetWriterInput) -> Bool](avassetwriter/canadd(_:)-6al7j.md)
+- [func canAdd(AVAssetWriterInput) -> Bool](./canadd%28_%29-6al7j.md)
   Determines whether the asset writer supports adding the input.
-- [func add(AVAssetWriterInput)](avassetwriter/add(_:)-4c4d0.md)
+- [func add(AVAssetWriterInput)](./add%28_%29-4c4d0.md)
   Adds an input to an asset writer.
 
 

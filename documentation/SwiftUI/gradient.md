@@ -1,7 +1,8 @@
 # Gradient
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A color gradient represented as an array of color stops, each having a parametric location value.
 
@@ -23,63 +24,64 @@ struct Gradient
 
 ## Mentions
 
-- [Adding a background to your view](adding-a-background-to-your-view.md)
+- [Adding a background to your view](./adding-a-background-to-your-view.md)
 
 ## Topics
 
 ### Creating a gradient from colors
-- [init(colors: [Color])](gradient/init(colors:).md)
+- [init(colors: [Color])](./gradient/init%28colors%29.md)
   Creates a gradient from an array of colors.
 ### Creating a gradient from stops
-- [init(stops: [Gradient.Stop])](gradient/init(stops:).md)
+- [init(stops: [Gradient.Stop])](./gradient/init%28stops%29.md)
   Creates a gradient from an array of color stops.
-- [var stops: [Gradient.Stop]](gradient/stops.md)
+- [var stops: [Gradient.Stop]](./gradient/stops.md)
   The array of color stops.
-- [Gradient.Stop](gradient/stop.md)
+- [Gradient.Stop](./gradient/stop.md)
   One color stop in the gradient.
 ### Working with color spaces
-- [func colorSpace(Gradient.ColorSpace) -> AnyGradient](gradient/colorspace(_:).md)
+- [func colorSpace(Gradient.ColorSpace) -> AnyGradient](./gradient/colorspace%28_%29.md)
   Returns a version of the gradient that will use a specified color space for interpolating between its colors.
-- [Gradient.ColorSpace](gradient/colorspace.md)
+- [Gradient.ColorSpace](./gradient/colorspace.md)
   A method of interpolating between the colors in a gradient.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ScaleRange](../charts/scalerange.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ScaleRange](../Charts/scalerange.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShapeStyle](./shapestyle.md)
 
 ## See Also
 
-- [func border<S>(S, width: CGFloat) -> some View](view/border(_:width:).md)
+### Styling content
+- [func border<S>(S, width: CGFloat) -> some View](./view/border%28_,width%29.md)
   Adds a border to this view with the specified style and width.
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some View](./view/foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](./view/foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](./view/foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
-- [func backgroundStyle<S>(S) -> some View](view/backgroundstyle(_:).md)
+- [func backgroundStyle<S>(S) -> some View](./view/backgroundstyle%28_%29.md)
   Sets the specified style to render backgrounds within the view.
-- [var backgroundStyle: AnyShapeStyle?](environmentvalues/backgroundstyle.md)
+- [var backgroundStyle: AnyShapeStyle?](./environmentvalues/backgroundstyle.md)
   An optional style that overrides the default system background style when set.
-- [protocol ShapeStyle](shapestyle.md)
+- [protocol ShapeStyle](./shapestyle.md)
   A color or pattern to use when rendering a shape.
-- [struct AnyShapeStyle](anyshapestyle.md)
+- [struct AnyShapeStyle](./anyshapestyle.md)
   A type-erased ShapeStyle value.
-- [struct MeshGradient](meshgradient.md)
+- [struct MeshGradient](./meshgradient.md)
   A two-dimensional gradient defined by a 2D grid of positioned colors.
-- [struct AnyGradient](anygradient.md)
+- [struct AnyGradient](./anygradient.md)
   A color gradient.
-- [struct ShadowStyle](shadowstyle.md)
+- [struct ShadowStyle](./shadowstyle.md)
   A style to use when rendering shadows.
-- [struct Glass](glass.md)
+- [struct Glass](./glass.md)
   A structure that defines the configuration of the Liquid Glass material.
 
 

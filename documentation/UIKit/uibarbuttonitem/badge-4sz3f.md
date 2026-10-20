@@ -1,7 +1,8 @@
 # badge
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,7 +18,8 @@
 
 ## See Also
 
-- [UIBarButtonItem.Badge](uibarbuttonitem/badge-swift.struct.md)
+### Adding a badge
+- [UIBarButtonItem.Badge](./badge-swift.struct.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSScriptCommandDescription
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A script command that a macOS app supports.
 
@@ -15,9 +16,13 @@ A script command that a macOS app supports.
 class NSScriptCommandDescription
 ```
 
+```objc
+@interface NSScriptCommandDescription : NSObject
+```
+
 #### Overview
 
-A scriptable application provides scriptability information that describes the commands and objects scripters can use in scripts that target the application. An application’s scripting information is collected automatically by an instance of [`NSScriptSuiteRegistry`](nsscriptsuiteregistry.md), which creates an `NSScriptCommandDescription` for each command it finds, caches these objects in memory, and installs a command handler for each command.
+A scriptable application provides scriptability information that describes the commands and objects scripters can use in scripts that target the application. An application’s scripting information is collected automatically by an instance of [`NSScriptSuiteRegistry`](./nsscriptsuiteregistry.md), which creates an `NSScriptCommandDescription` for each command it finds, caches these objects in memory, and installs a command handler for each command.
 
 A script command instance stores the name, class, argument types, and return type of a command. For example, commands in AppleScript’s Core suite include `clone`, `count`, `create`, `delete`, `exists`, and `move`.
 
@@ -26,61 +31,62 @@ The public methods of `NSScriptCommandDescription` are used primarily by Cocoa�
 ## Topics
 
 ### Initializing a Script Command Description
-- [init?(suiteName: String, commandName: String, dictionary: [AnyHashable : Any]?)](nsscriptcommanddescription/init(suitename:commandname:dictionary:).md)
+- [init?(suiteName: String, commandName: String, dictionary: [AnyHashable : Any]?)](./nsscriptcommanddescription/init%28suitename,commandname,dictionary%29.md)
   Initializes and returns a newly allocated instance of `NSScriptCommandDescription`.
 ### Getting Basic Information About the Command
-- [var appleEventClassCode: FourCharCode](nsscriptcommanddescription/appleeventclasscode.md)
+- [var appleEventClassCode: FourCharCode](./nsscriptcommanddescription/appleeventclasscode.md)
   Returns the four-character code for the Apple event class of the receiver’s command.
-- [var appleEventCode: FourCharCode](nsscriptcommanddescription/appleeventcode.md)
+- [var appleEventCode: FourCharCode](./nsscriptcommanddescription/appleeventcode.md)
   Returns the four-character code for the Apple event ID of the receiver’s command.
-- [var commandClassName: String](nsscriptcommanddescription/commandclassname.md)
+- [var commandClassName: String](./nsscriptcommanddescription/commandclassname.md)
   Returns the name of the class that will be instantiated to handle the command.
-- [var commandName: String](nsscriptcommanddescription/commandname.md)
+- [var commandName: String](./nsscriptcommanddescription/commandname.md)
   Returns the name of the command.
-- [var suiteName: String](nsscriptcommanddescription/suitename.md)
+- [var suiteName: String](./nsscriptcommanddescription/suitename.md)
   Returns the name of the suite that contains the command described by the receiver.
 ### Getting Command Argument Information
-- [func appleEventCodeForArgument(withName: String) -> FourCharCode](nsscriptcommanddescription/appleeventcodeforargument(withname:).md)
+- [func appleEventCodeForArgument(withName: String) -> FourCharCode](./nsscriptcommanddescription/appleeventcodeforargument%28withname%29.md)
   Returns the Apple event code for the specified command argument of the receiver.
-- [var argumentNames: [String]](nsscriptcommanddescription/argumentnames.md)
+- [var argumentNames: [String]](./nsscriptcommanddescription/argumentnames.md)
   Returns the names (or keys) for all arguments of the receiver’s command.
-- [func isOptionalArgument(withName: String) -> Bool](nsscriptcommanddescription/isoptionalargument(withname:).md)
+- [func isOptionalArgument(withName: String) -> Bool](./nsscriptcommanddescription/isoptionalargument%28withname%29.md)
   Returns a Boolean value that indicates whether the command argument identified by the specified argument key is an optional argument.
-- [func typeForArgument(withName: String) -> String?](nsscriptcommanddescription/typeforargument(withname:).md)
+- [func typeForArgument(withName: String) -> String?](./nsscriptcommanddescription/typeforargument%28withname%29.md)
   Returns the type of the command argument identified by the specified key.
 ### Getting Command Return-Type Information
-- [var appleEventCodeForReturnType: FourCharCode](nsscriptcommanddescription/appleeventcodeforreturntype.md)
+- [var appleEventCodeForReturnType: FourCharCode](./nsscriptcommanddescription/appleeventcodeforreturntype.md)
   Returns the Apple event code that identifies the command’s return type.
-- [var returnType: String?](nsscriptcommanddescription/returntype.md)
+- [var returnType: String?](./nsscriptcommanddescription/returntype.md)
   Returns the return type of the command.
 ### Creating Commands
-- [func createCommandInstance() -> NSScriptCommand](nsscriptcommanddescription/createcommandinstance.md)
+- [func createCommandInstance() -> NSScriptCommand](./nsscriptcommanddescription/createcommandinstance%28%29.md)
   Creates and returns an instance of the command object described by the receiver.
-- [func createCommandInstance(with: NSZone?) -> NSScriptCommand](nsscriptcommanddescription/createcommandinstance(with:).md)
+- [func createCommandInstance(with: NSZone?) -> NSScriptCommand](./nsscriptcommanddescription/createcommandinstance%28with%29.md)
   Creates and returns an instance of the command object described by the receiver in the specified memory zone.
 ### Initializers
-- [init?(coder: NSCoder)](nsscriptcommanddescription/init(coder:).md)
+- [init?(coder: NSCoder)](./nsscriptcommanddescription/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSScriptSuiteRegistry](nsscriptsuiteregistry.md)
+### Script Dictionary Description
+- [class NSScriptSuiteRegistry](./nsscriptsuiteregistry.md)
   The top-level repository of scriptability information for an app at runtime.
-- [class NSScriptClassDescription](nsscriptclassdescription.md)
+- [class NSScriptClassDescription](./nsscriptclassdescription.md)
   A scriptable class that a macOS app supports.
-- [class NSClassDescription](nsclassdescription.md)
+- [class NSClassDescription](./nsclassdescription.md)
   An abstract class that provides the interface for querying the relationships and properties of a class.
 
 

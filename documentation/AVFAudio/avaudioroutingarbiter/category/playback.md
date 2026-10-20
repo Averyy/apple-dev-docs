@@ -1,7 +1,8 @@
 # AVAudioRoutingArbiter.Category.playback
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app plays audio.
 
@@ -14,11 +15,16 @@ The app plays audio.
 case playback
 ```
 
+```c
+AVAudioRoutingArbitrationCategoryPlayback
+```
+
 ## See Also
 
-- [AVAudioRoutingArbiter.Category.playAndRecord](avaudioroutingarbiter/category/playandrecord.md)
+### Choosing an arbitration category
+- [AVAudioRoutingArbiter.Category.playAndRecord](./playandrecord.md)
   The app plays and records audio.
-- [AVAudioRoutingArbiter.Category.playAndRecordVoice](avaudioroutingarbiter/category/playandrecordvoice.md)
+- [AVAudioRoutingArbiter.Category.playAndRecordVoice](./playandrecordvoice.md)
   The app uses Voice over IP (VoIP).
 
 

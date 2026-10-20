@@ -1,7 +1,8 @@
 # sessionDidStartRunning(_:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the app when a session starts or resumes running.
 
@@ -15,6 +16,10 @@ Notifies the app when a session starts or resumes running.
 
 ```swift
 optional func sessionDidStartRunning(_ session: NISession)
+```
+
+```objc
+- (void) sessionDidStartRunning:(NISession *) session;
 ```
 
 ## Parameters

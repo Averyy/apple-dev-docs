@@ -1,14 +1,15 @@
 # rinttol
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.9
 
 ## Declaration
 
-```swift
+```c
 long rinttol(double);
 ```
 

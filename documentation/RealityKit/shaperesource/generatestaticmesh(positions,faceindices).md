@@ -1,7 +1,8 @@
 # generateStaticMesh(positions:faceIndices:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a static collision mesh from an array of vertex positions and face indices.
 

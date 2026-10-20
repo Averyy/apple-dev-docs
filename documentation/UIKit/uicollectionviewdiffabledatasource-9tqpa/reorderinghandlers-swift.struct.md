@@ -1,7 +1,8 @@
 # UICollectionViewDiffableDataSource.ReorderingHandlers
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Handlers for reordering items.
 
@@ -10,7 +11,7 @@ Handlers for reordering items.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,26 +19,29 @@ Handlers for reordering items.
 struct ReorderingHandlers
 ```
 
+Available when `SectionIdentifierType` conforms to `Hashable`, `SectionIdentifierType` conforms to `Sendable`, `ItemIdentifierType` conforms to `Hashable`, and `ItemIdentifierType` conforms to `Sendable`.
+
 ## Topics
 
 ### Reordering items
-- [var canReorderItem: ((ItemIdentifierType) -> Bool)?](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/canreorderitem.md)
+- [var canReorderItem: ((ItemIdentifierType) -> Bool)?](./reorderinghandlers-swift.struct/canreorderitem.md)
   The handler that determines whether you can reorder a particular item.
-- [var willReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/willreorder.md)
+- [var willReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](./reorderinghandlers-swift.struct/willreorder.md)
   The handler that prepares the diffable data source for reordering its items.
-- [var didReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/didreorder.md)
+- [var didReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](./reorderinghandlers-swift.struct/didreorder.md)
   The handler that processes a reordering transaction.
 ### Initializers
-- [init()](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/init.md)
+- [init()](./reorderinghandlers-swift.struct/init%28%29.md)
   Creates a reordering handlers structure.
 
 ## See Also
 
-- [var reorderingHandlers: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.ReorderingHandlers](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.property.md)
+### Supporting reordering
+- [var reorderingHandlers: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.ReorderingHandlers](./reorderinghandlers-swift.property.md)
   The diffable data source’s handlers for reordering items.
-- [struct NSDiffableDataSourceTransaction](nsdiffabledatasourcetransaction-swift.struct.md)
+- [struct NSDiffableDataSourceTransaction](../nsdiffabledatasourcetransaction-swift.struct.md)
   A transaction that describes the changes after reordering the items in the view.
-- [struct NSDiffableDataSourceSectionTransaction](nsdiffabledatasourcesectiontransaction-swift.struct.md)
+- [struct NSDiffableDataSourceSectionTransaction](../nsdiffabledatasourcesectiontransaction-swift.struct.md)
   A transaction that describes the changes after reordering the items in a section.
 
 

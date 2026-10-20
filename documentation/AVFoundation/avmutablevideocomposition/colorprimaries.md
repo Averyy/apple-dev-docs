@@ -1,7 +1,8 @@
 # colorPrimaries
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color primaries used for video composition.
 
@@ -19,19 +20,24 @@ The color primaries used for video composition.
 var colorPrimaries: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * colorPrimaries;
+```
+
 ## Mentions
 
-- [Tagging media with video color information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
 #### Discussion
 
-The default value is `nil`. When the value of this property is `nil`, the source’s color primaries are propagated and used. Valid values are those suitable for [`AVVideoColorPrimariesKey`](avvideocolorprimarieskey.md).
+The default value is `nil`. When the value of this property is `nil`, the source’s color primaries are propagated and used. Valid values are those suitable for [`AVVideoColorPrimariesKey`](../avvideocolorprimarieskey.md).
 
 ## See Also
 
-- [var colorTransferFunction: String?](avmutablevideocomposition/colortransferfunction.md)
+### Configuring color
+- [var colorTransferFunction: String?](./colortransferfunction.md)
   The transfer function used for video composition.
-- [var colorYCbCrMatrix: String?](avmutablevideocomposition/colorycbcrmatrix.md)
+- [var colorYCbCrMatrix: String?](./colorycbcrmatrix.md)
   The YCbCr matrix used for video composition.
 
 

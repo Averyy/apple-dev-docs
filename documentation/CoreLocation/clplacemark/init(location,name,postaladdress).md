@@ -1,7 +1,8 @@
 # init(location:name:postalAddress:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(location: CLLocation, name: String?, postalAddress: CNPostalAddress?)
+```
+
+```objc
++ (instancetype) placemarkWithLocation:(CLLocation *) location name:(NSString *) name postalAddress:(CNPostalAddress *) postalAddress;
 ```
 
 

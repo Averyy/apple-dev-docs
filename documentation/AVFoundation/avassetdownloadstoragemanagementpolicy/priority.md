@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The eviction priority for an asset.
 
@@ -18,9 +19,14 @@ The eviction priority for an asset.
 var priority: AVAssetDownloadedAssetEvictionPriority { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) AVAssetDownloadedAssetEvictionPriority priority;
+```
+
 ## See Also
 
-- [var expirationDate: Date](avassetdownloadstoragemanagementpolicy/expirationdate.md)
+### Inspecting a policy
+- [var expirationDate: Date](./expirationdate.md)
   The expiration date for an asset.
 
 

@@ -1,7 +1,8 @@
 # ArraySlice
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A slice of an `Array`, `ContiguousArray`, or `ArraySlice` instance.
 
@@ -27,7 +28,7 @@ The `ArraySlice` type makes it fast and efficient for you to perform operations 
 
 For more information about using arrays, see `Array` and `ContiguousArray`, with which `ArraySlice` shares most properties and methods.
 
-### Slices Are Views Onto Arrays
+### Slices Are Views onto Arrays
 
 For example, suppose you have an array holding the number of absences from each class during a session.
 
@@ -94,80 +95,81 @@ In particular, note that `j`, the index of the second day with absences, was fou
 ## Topics
 
 ### Initializers
-- [init<S>(S)](arrayslice/init(_:).md)
+- [init<S>(S)](./arrayslice/init%28_%29.md)
   Creates an array containing the elements of a sequence.
 ### Instance Properties
-- [var capacity: Int](arrayslice/capacity.md)
+- [var capacity: Int](./arrayslice/capacity.md)
   The total number of elements that the array can contain without allocating new storage.
-- [var mutableSpan: MutableSpan<Element>](arrayslice/mutablespan.md)
+- [var mutableSpan: MutableSpan<Element>](./arrayslice/mutablespan.md)
   A mutable span over the elements of this array slice.
-- [var span: Span<Element>](arrayslice/span.md)
+- [var span: Span<Element>](./arrayslice/span.md)
   A span over the elements of this array slice.
 ### Instance Methods
-- [func insert(Element, at: Int)](arrayslice/insert(_:at:).md)
+- [func insert(Element, at: Int)](./arrayslice/insert%28_,at%29.md)
   Inserts a new element at the specified position.
-- [func isTriviallyIdentical(to: ArraySlice<Element>) -> Bool](arrayslice/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: ArraySlice<Element>) -> Bool](./arrayslice/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this array is identical to `other`.
-- [func remove(at: Int) -> Element](arrayslice/remove(at:).md)
+- [func remove(at: Int) -> Element](./arrayslice/remove%28at%29.md)
   Removes and returns the element at the specified position.
-- [func reserveCapacity(Int)](arrayslice/reservecapacity(_:).md)
+- [func reserveCapacity(Int)](./arrayslice/reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of elements.
-- [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](arrayslice/withunsafebufferpointer(_:).md)
+- [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](./arrayslice/withunsafebufferpointer%28_%29.md)
   Calls a closure with a pointer to the array’s contiguous storage.
-- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](arrayslice/withunsafebytes(_:).md)
+- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](./arrayslice/withunsafebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the array’s contiguous storage.
-- [func withUnsafeMutableBufferPointer<R, E>((inout UnsafeMutableBufferPointer<Element>) throws(E) -> R) throws(E) -> R](arrayslice/withunsafemutablebufferpointer(_:).md)
+- [func withUnsafeMutableBufferPointer<R, E>((inout UnsafeMutableBufferPointer<Element>) throws(E) -> R) throws(E) -> R](./arrayslice/withunsafemutablebufferpointer%28_%29.md)
   Calls the given closure with a pointer to the array’s mutable contiguous storage.
-- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](arrayslice/withunsafemutablebytes(_:).md)
+- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](./arrayslice/withunsafemutablebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
 ### Default Implementations
-- [Attachable Implementations](arrayslice/attachable-implementations.md)
-- [BidirectionalCollection Implementations](arrayslice/bidirectionalcollection-implementations.md)
-- [Collection Implementations](arrayslice/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](arrayslice/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](arrayslice/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](arrayslice/customstringconvertible-implementations.md)
-- [Equatable Implementations](arrayslice/equatable-implementations.md)
-- [ExpressibleByArrayLiteral Implementations](arrayslice/expressiblebyarrayliteral-implementations.md)
-- [Hashable Implementations](arrayslice/hashable-implementations.md)
-- [MutableCollection Implementations](arrayslice/mutablecollection-implementations.md)
-- [OperationParameter Implementations](arrayslice/operationparameter-implementations.md)
-- [RandomAccessCollection Implementations](arrayslice/randomaccesscollection-implementations.md)
-- [RangeReplaceableCollection Implementations](arrayslice/rangereplaceablecollection-implementations.md)
-- [Sequence Implementations](arrayslice/sequence-implementations.md)
+- [Attachable Implementations](./arrayslice/attachable-implementations.md)
+- [BidirectionalCollection Implementations](./arrayslice/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./arrayslice/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./arrayslice/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./arrayslice/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./arrayslice/customstringconvertible-implementations.md)
+- [Equatable Implementations](./arrayslice/equatable-implementations.md)
+- [ExpressibleByArrayLiteral Implementations](./arrayslice/expressiblebyarrayliteral-implementations.md)
+- [Hashable Implementations](./arrayslice/hashable-implementations.md)
+- [MutableCollection Implementations](./arrayslice/mutablecollection-implementations.md)
+- [OperationParameter Implementations](./arrayslice/operationparameter-implementations.md)
+- [RandomAccessCollection Implementations](./arrayslice/randomaccesscollection-implementations.md)
+- [RangeReplaceableCollection Implementations](./arrayslice/rangereplaceablecollection-implementations.md)
+- [Sequence Implementations](./arrayslice/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AccelerateBuffer](../accelerate/acceleratebuffer.md)
-- [AccelerateMutableBuffer](../accelerate/acceleratemutablebuffer.md)
-- [Attachable](../testing/attachable.md)
-- [BNNSGraph.Builder.OperationParameter](../accelerate/bnnsgraph/builder/operationparameter.md)
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [DataProtocol](../foundation/dataprotocol.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
-- [Hashable](hashable.md)
-- [MutableCollection](mutablecollection.md)
-- [PositionScaleRange](../charts/positionscalerange.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [RangeReplaceableCollection](rangereplaceablecollection.md)
-- [ScaleDomain](../charts/scaledomain.md)
-- [ScaleRange](../charts/scalerange.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [AccelerateBuffer](../Accelerate/acceleratebuffer.md)
+- [AccelerateMutableBuffer](../Accelerate/acceleratemutablebuffer.md)
+- [Attachable](../Testing/attachable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/bnnsgraph/builder/operationparameter.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [DataProtocol](../Foundation/dataprotocol.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByArrayLiteral](./expressiblebyarrayliteral.md)
+- [Hashable](./hashable.md)
+- [MutableCollection](./mutablecollection.md)
+- [PositionScaleRange](../Charts/positionscalerange.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [RangeReplaceableCollection](./rangereplaceablecollection.md)
+- [ScaleDomain](../Charts/scaledomain.md)
+- [ScaleRange](../Charts/scalerange.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct ContiguousArray](contiguousarray.md)
+### Related Array Types
+- [struct ContiguousArray](./contiguousarray.md)
   A contiguously stored array.
 
 

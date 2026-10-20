@@ -1,7 +1,8 @@
 # prettyPrinted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The output formatting option that uses ample white space and indentation to make output easy to read.
 
@@ -22,9 +23,10 @@ static let prettyPrinted: JSONEncoder.OutputFormatting
 
 ## See Also
 
-- [static let sortedKeys: JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.struct/sortedkeys.md)
+### Formatting Output
+- [static let sortedKeys: JSONEncoder.OutputFormatting](./sortedkeys.md)
   The output formatting option that sorts keys in lexicographic order.
-- [static let withoutEscapingSlashes: JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.struct/withoutescapingslashes.md)
+- [static let withoutEscapingSlashes: JSONEncoder.OutputFormatting](./withoutescapingslashes.md)
   The output formatting option specifies that the output doesn’t prefix slash characters with escape characters.
 
 

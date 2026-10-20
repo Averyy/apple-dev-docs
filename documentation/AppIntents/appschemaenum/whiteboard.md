@@ -1,7 +1,8 @@
 # whiteboard
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the whiteboard domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the whiteboard domain.
 ```swift
 static var whiteboard: some AppSchema.WhiteboardEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

@@ -1,7 +1,8 @@
 # unsortedSampleBuffers
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ static let unsortedSampleBuffers: CMBufferQueue.Handlers
 
 ## See Also
 
-- [static let outputPTSSortedSampleBuffers: CMBufferQueue.Handlers](cmbufferqueue/handlers/outputptssortedsamplebuffers.md)
+### Type Properties
+- [static let outputPTSSortedSampleBuffers: CMBufferQueue.Handlers](./outputptssortedsamplebuffers.md)
 
 
 ---

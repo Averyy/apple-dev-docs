@@ -1,7 +1,8 @@
 # hasConnected
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the call has connected.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the call has connected.
 var hasConnected: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL hasConnected;
+```
+
 #### Discussion
 
 A call is considered connected when both caller and callee can start communicating.
 
 ## See Also
 
-- [var uuid: UUID](cxcall/uuid.md)
+### Accessing Call Attributes
+- [var uuid: UUID](./uuid.md)
   The unique identifier for the call.
-- [var isOutgoing: Bool](cxcall/isoutgoing.md)
+- [var isOutgoing: Bool](./isoutgoing.md)
   A Boolean value that indicates whether the call is outgoing.
-- [var hasEnded: Bool](cxcall/hasended.md)
+- [var hasEnded: Bool](./hasended.md)
   A Boolean value that indicates whether the call has ended.
-- [var isOnHold: Bool](cxcall/isonhold.md)
+- [var isOnHold: Bool](./isonhold.md)
   A Boolean value that indicates whether the call is on hold.
 
 

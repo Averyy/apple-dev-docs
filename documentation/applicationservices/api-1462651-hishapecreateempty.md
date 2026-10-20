@@ -1,7 +1,8 @@
 # HIShapeCreateEmpty()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateEmpty() -> Unmanaged<HIShape>!
+```
+
+```c
+HIShapeRef HIShapeCreateEmpty(void);
 ```
 
 

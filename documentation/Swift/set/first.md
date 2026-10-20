@@ -1,7 +1,8 @@
 # first
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first element of the collection.
 
@@ -34,9 +35,10 @@ if let firstNumber = numbers.first {
 
 ## See Also
 
-- [func randomElement() -> Self.Element?](set/randomelement.md)
+### Accessing Individual Elements
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](set/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 
 

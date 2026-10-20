@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specific algorithm or configuration revision you use to perform the request.
 
@@ -17,13 +18,18 @@ The specific algorithm or configuration revision you use to perform the request.
 var revision: VTSuperResolutionScalerConfiguration.Revision { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VTSuperResolutionScalerConfigurationRevision revision;
+```
+
 ## See Also
 
-- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/defaultrevision.md)
+### Inspecting revision information
+- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](./defaultrevision.md)
   Provides the default revision of a specific algorithm or configuration.
-- [class var supportedRevisions: IndexSet](vtsuperresolutionscalerconfiguration/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./supportedrevisions.md)
   Provides the collection of currently supported algorithms or configuration revisions for the class of configuration.
-- [VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/revision-swift.enum.md)
+- [VTSuperResolutionScalerConfiguration.Revision](./revision-swift.enum.md)
   Available algorithm revisions.
 
 

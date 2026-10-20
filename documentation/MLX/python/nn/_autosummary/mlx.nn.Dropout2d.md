@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.D
 
 # mlx.nn.Dropout2d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Dropout2d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Dropout2d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Dropout2d
-
 **class Dropout2d(*p: float = 0.5*)**
 : Apply 2D channel-wise dropout during training.
 Randomly zero out entire channels independently with probability \(p\).
@@ -54,5 +27,3 @@ Parameters:
 Default: `0.5`.
 
 Methods
-
-** Contents

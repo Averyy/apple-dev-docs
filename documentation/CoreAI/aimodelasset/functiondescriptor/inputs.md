@@ -1,7 +1,8 @@
 # inputs
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptions of the function’s inputs.
 
@@ -20,9 +21,10 @@ var inputs: [AIModelAsset.ValueDescriptor] { get }
 
 ## See Also
 
-- [var name: String](aimodelasset/functiondescriptor/name.md)
+### Inspecting function details
+- [var name: String](./name.md)
   The function’s symbol name.
-- [var outputs: [AIModelAsset.ValueDescriptor]](aimodelasset/functiondescriptor/outputs.md)
+- [var outputs: [AIModelAsset.ValueDescriptor]](./outputs.md)
   The descriptions of the function’s outputs.
 
 

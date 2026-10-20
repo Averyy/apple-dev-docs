@@ -1,7 +1,8 @@
 # NSItemProviderRepresentationVisibility
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifications that control which categories of processes can see an item.
 
@@ -20,49 +21,54 @@ Specifications that control which categories of processes can see an item.
 enum NSItemProviderRepresentationVisibility
 ```
 
+```c
+enum NSItemProviderRepresentationVisibility : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSItemProviderRepresentationVisibility.all](nsitemproviderrepresentationvisibility/all.md)
+- [NSItemProviderRepresentationVisibility.all](./nsitemproviderrepresentationvisibility/all.md)
   A representation visibility specification conferring item visibility to all processes.
-- [NSItemProviderRepresentationVisibility.group](nsitemproviderrepresentationvisibility/group.md)
+- [NSItemProviderRepresentationVisibility.group](./nsitemproviderrepresentationvisibility/group.md)
   A representation visibility specification confining item visibility to the app’s app group.
-- [NSItemProviderRepresentationVisibility.ownProcess](nsitemproviderrepresentationvisibility/ownprocess.md)
+- [NSItemProviderRepresentationVisibility.ownProcess](./nsitemproviderrepresentationvisibility/ownprocess.md)
   A representation visibility specification confining item visibility to the app that is the source of the item.
-- [NSItemProviderRepresentationVisibility.team](nsitemproviderrepresentationvisibility/team.md)
+- [NSItemProviderRepresentationVisibility.team](./nsitemproviderrepresentationvisibility/team.md)
   A representation visibility specification confining item visibility to processes created by the app’s development team.
 ### Initializers
-- [init?(rawValue: Int)](nsitemproviderrepresentationvisibility/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsitemproviderrepresentationvisibility/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSItemProvider.CompletionHandler](nsitemprovider/completionhandler.md)
+### Constants
+- [NSItemProvider.CompletionHandler](./nsitemprovider/completionhandler.md)
   A block that receives the item provider’s data.
-- [NSItemProvider.LoadHandler](nsitemprovider/loadhandler.md)
+- [NSItemProvider.LoadHandler](./nsitemprovider/loadhandler.md)
   A block that loads the item provider’s data and coerces it to the specified type.
-- [Options Dictionary Key](options-dictionary-key.md)
+- [Options Dictionary Key](./options-dictionary-key.md)
   Keys indicating options to use when generating the item provider’s data.
-- [Keys for Items Accessed in JavaScript Code](keys-for-items-accessed-in-javascript-code.md)
+- [Keys for Items Accessed in JavaScript Code](./keys-for-items-accessed-in-javascript-code.md)
   Keys in property list items that the system recieves from or sends to JavaScript code.
-- [class let errorDomain: String](nsitemprovider/errordomain.md)
+- [class let errorDomain: String](./nsitemprovider/errordomain.md)
   The error domain associated with the item provider.
-- [struct NSItemProviderFileOptions](nsitemproviderfileoptions.md)
+- [struct NSItemProviderFileOptions](./nsitemproviderfileoptions.md)
   Data-access specifications that declare how to handle items.
-- [protocol NSItemProviderReading](nsitemproviderreading.md)
+- [protocol NSItemProviderReading](./nsitemproviderreading.md)
   The protocol for implementing a class to allow an item provider to create an instance of the class.
-- [protocol NSItemProviderWriting](nsitemproviderwriting.md)
+- [protocol NSItemProviderWriting](./nsitemproviderwriting.md)
   The protocol for implementing a class to allow an item provider to retrieve data from an instance of the class.
-- [NSItemProvider.ErrorCode](nsitemprovider/errorcode.md)
+- [NSItemProvider.ErrorCode](./nsitemprovider/errorcode.md)
   The error codes that describe problems with consuming data from an item provider.
 
 

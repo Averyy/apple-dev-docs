@@ -1,7 +1,8 @@
 # degrees
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle in degrees.
 
@@ -20,9 +21,14 @@ The angle in degrees.
 var degrees: Double { get }
 ```
 
+```c
+static double SPAngleGetDegrees(SPAngle angle);
+```
+
 ## See Also
 
-- [var radians: Double](angle2d/radians.md)
+### Inspecting an angle’s properties
+- [var radians: Double](./radians.md)
   The angle in radians.
 
 

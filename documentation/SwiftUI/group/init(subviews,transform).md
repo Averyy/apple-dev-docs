@@ -1,7 +1,8 @@
 # init(subviews:transform:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a group from the subviews of the given view.
 
@@ -77,9 +78,10 @@ Subviews are proxies to the view they represent, which means that modifiers that
 
 ## See Also
 
-- [init(content:)](group/init(content:).md)
+### Creating a group
+- [init(content:)](./init%28content%29.md)
   Creates a group of content.
-- [init<Base, Result>(sections: Base, transform: (SectionCollection) -> Result)](group/init(sections:transform:).md)
+- [init<Base, Result>(sections: Base, transform: (SectionCollection) -> Result)](./init%28sections,transform%29.md)
   Constructs a group from the sections of the given view.
 
 

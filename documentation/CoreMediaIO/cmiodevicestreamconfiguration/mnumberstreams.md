@@ -1,7 +1,8 @@
 # mNumberStreams
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 var mNumberStreams: UInt32
+```
+
+```c
+UInt32 mNumberStreams;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(explicitItems:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an explicit-mode list operation with the given items.
 

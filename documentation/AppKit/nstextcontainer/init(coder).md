@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text container from data in an unarchiver.
 
@@ -14,13 +15,18 @@ Creates a text container from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
-- `coder`: A coder that implements [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
+- `coder`: A coder that implements [`NSCoder`](../../Foundation/nscoder.md).
 
 ## See Also
 
-- [init(size: CGSize)](nstextcontainer/init(size:).md)
+### Creating a text container
+- [init(size: CGSize)](./init%28size%29.md)
   Initializes a text container with a specified bounding rectangle.
 
 

@@ -1,7 +1,8 @@
 # devices
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The devices to include in a report.
 

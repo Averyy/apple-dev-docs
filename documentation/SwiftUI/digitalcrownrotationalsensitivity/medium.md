@@ -1,7 +1,8 @@
 # DigitalCrownRotationalSensitivity.medium
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Medium sensitivity.
 
@@ -16,9 +17,10 @@ case medium
 
 ## See Also
 
-- [DigitalCrownRotationalSensitivity.low](digitalcrownrotationalsensitivity/low.md)
+### Getting sensitivity options
+- [DigitalCrownRotationalSensitivity.low](./low.md)
   Low sensitivity.
-- [DigitalCrownRotationalSensitivity.high](digitalcrownrotationalsensitivity/high.md)
+- [DigitalCrownRotationalSensitivity.high](./high.md)
   High sensitivity.
 
 

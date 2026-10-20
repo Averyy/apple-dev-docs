@@ -1,7 +1,8 @@
 # OptimizationError.numericUnderflow
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Numerical underflow (not enough progress).
 
@@ -22,9 +23,10 @@ case numericUnderflow
 
 ## See Also
 
-- [OptimizationError.numericOverflow](optimizationerror/numericoverflow.md)
+### Analyzing the error
+- [OptimizationError.numericOverflow](./numericoverflow.md)
   Numerical overflow. Step size parameter may be too large.
-- [OptimizationError.unsupportedPlatform](optimizationerror/unsupportedplatform.md)
+- [OptimizationError.unsupportedPlatform](./unsupportedplatform.md)
   The optimization operation is not supported on this platform.
 
 

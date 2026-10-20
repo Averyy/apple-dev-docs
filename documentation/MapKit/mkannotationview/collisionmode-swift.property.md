@@ -1,7 +1,8 @@
 # collisionMode
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collision mode to use when interpreting the collision frame rectangle.
 
@@ -19,9 +20,14 @@ The collision mode to use when interpreting the collision frame rectangle.
 var collisionMode: MKAnnotationView.CollisionMode { get set }
 ```
 
+```objc
+@property (nonatomic) MKAnnotationViewCollisionMode collisionMode;
+```
+
 ## See Also
 
-- [MKAnnotationView.CollisionMode](mkannotationview/collisionmode-swift.enum.md)
+### Managing collisions between annotation views
+- [MKAnnotationView.CollisionMode](./collisionmode-swift.enum.md)
   Constants that indicates how to interpret the collision frame rectangle of an annotation view.
 
 

@@ -1,7 +1,8 @@
 # levelsOfDetailBias
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of magnified levels of detail for this layer.
 
@@ -19,13 +20,18 @@ The number of magnified levels of detail for this layer.
 var levelsOfDetailBias: Int { get set }
 ```
 
+```objc
+@property size_t levelsOfDetailBias;
+```
+
 #### Discussion
 
 Defaults to 0. Each previous level of detail is twice the resolution of the later. For example, specifying a value of 2 means that the layer has two extra levels of detail: 2x and 4x.
 
 ## See Also
 
-- [var levelsOfDetail: Int](catiledlayer/levelsofdetail.md)
+### Levels of detail
+- [var levelsOfDetail: Int](./levelsofdetail.md)
   The number of levels of detail maintained by this layer.
 
 

@@ -1,7 +1,8 @@
 # anyOf(requirement:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a constraint that requires a launching process’s executable to satisfy any of the provided constraints.
 
@@ -22,16 +23,17 @@ func anyOf(@LaunchConstraintBuilder requirement: () -> [any LaunchConstraint]) -
 
 ## See Also
 
-- [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
+### Checking code requirements for launching processes
+- [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](./seccodecheckvaliditywithprocessrequirement%28code,flags,requirement%29.md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement?](../foundation/process/launchrequirement.md)
-- [struct LaunchCodeRequirement](launchcoderequirement.md)
+- [var launchRequirement: LaunchCodeRequirement?](../Foundation/process/launchrequirement.md)
+- [struct LaunchCodeRequirement](./launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
-- [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)
+- [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](./allof%28requirement%29-4gf5f.md)
   Creates a constraint that requires a launching process’s executable to satisfy all of the provided constraints.
-- [protocol LaunchConstraint](launchconstraint.md)
+- [protocol LaunchConstraint](./launchconstraint.md)
   A protocol to which a lightweight code requirement constraint conforms if you can use it in launch code requirements.
-- [struct LaunchConstraintBuilder](launchconstraintbuilder.md)
+- [struct LaunchConstraintBuilder](./launchconstraintbuilder.md)
   A custom parameter attribute that constructs launch constraints from closures.
 
 

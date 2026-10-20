@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kAEHandleArray: Int](kaehandlearray.md)
+- [var kAEHandleArray: Int](../kaehandlearray.md)
   Array items consist of handles to data of the same type and possibly variable size.
 
 

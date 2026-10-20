@@ -1,7 +1,8 @@
 # isDefaultZone
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the zone is a default zone.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the zone is a default zone.
 
 ## Declaration
 
-```swift
+```
 attribute boolean isDefaultZone;
 ```
 

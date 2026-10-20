@@ -1,7 +1,8 @@
 # MPSLSTMDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a long short-term memory block or layer.
 
@@ -19,9 +20,13 @@ A description of a long short-term memory block or layer.
 class MPSLSTMDescriptor
 ```
 
+```objc
+@interface MPSLSTMDescriptor : MPSRNNDescriptor
+```
+
 #### Overview
 
-The recurrent neural network (RNN) layer initialized with [`MPSLSTMDescriptor`](mpslstmdescriptor.md) transforms the input data (image or matrix), the memory cell data, and previous output with a set of filters. Each produces one feature map in the output data and memory cell according to the long short-term memory (LSTM) formula detailed below.
+The recurrent neural network (RNN) layer initialized with [`MPSLSTMDescriptor`](./mpslstmdescriptor.md) transforms the input data (image or matrix), the memory cell data, and previous output with a set of filters. Each produces one feature map in the output data and memory cell according to the long short-term memory (LSTM) formula detailed below.
 
 You may provide the LSTM unit with a single input or a sequence of inputs.
 
@@ -56,66 +61,67 @@ O_i = go(  Wo_ij * x_j  +  Uo_ij * h0_j  +  Vo_ij * c1_j  + bo_i  )
 h1_i = O_i gh( c1_i )
 ```
 
-The `*` stands for convolution (see [`MPSRNNImageInferenceLayer`](mpsrnnimageinferencelayer.md)) or matrix-vector/matrix multiplication (see [`MPSRNNMatrixInferenceLayer`](mpsrnnmatrixinferencelayer.md)).
+The `*` stands for convolution (see [`MPSRNNImageInferenceLayer`](./mpsrnnimageinferencelayer.md)) or matrix-vector/matrix multiplication (see [`MPSRNNMatrixInferenceLayer`](./mpsrnnmatrixinferencelayer.md)).
 
 Summation is over index `j` (except for the batch index), but there’s no summation over repeated index `i` (the output index).
 
-Note that for validity, all intermediate images must be of same size, and all `U` and `V` matrices must be square (that is, [`outputFeatureChannels`](mpsrnndescriptor/outputfeaturechannels.md) == [`inputFeatureChannels`](mpsrnndescriptor/inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions.
+Note that for validity, all intermediate images must be of same size, and all `U` and `V` matrices must be square (that is, [`outputFeatureChannels`](./mpsrnndescriptor/outputfeaturechannels.md) == [`inputFeatureChannels`](./mpsrnndescriptor/inputfeaturechannels.md)). Also, the bias terms are scalars with regard to spatial dimensions.
 
 ## Topics
 
 ### Instance Properties
-- [var cellGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgateinputweights.md)
-- [var cellGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgatememoryweights.md)
-- [var cellGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/cellgaterecurrentweights.md)
-- [var cellToOutputNeuronParamA: Float](mpslstmdescriptor/celltooutputneuronparama.md)
-- [var cellToOutputNeuronParamB: Float](mpslstmdescriptor/celltooutputneuronparamb.md)
-- [var cellToOutputNeuronType: MPSCNNNeuronType](mpslstmdescriptor/celltooutputneurontype.md)
-- [enum MPSCNNNeuronType](mpscnnneurontype.md)
+- [var cellGateInputWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/cellgateinputweights.md)
+- [var cellGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/cellgatememoryweights.md)
+- [var cellGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/cellgaterecurrentweights.md)
+- [var cellToOutputNeuronParamA: Float](./mpslstmdescriptor/celltooutputneuronparama.md)
+- [var cellToOutputNeuronParamB: Float](./mpslstmdescriptor/celltooutputneuronparamb.md)
+- [var cellToOutputNeuronType: MPSCNNNeuronType](./mpslstmdescriptor/celltooutputneurontype.md)
+- [enum MPSCNNNeuronType](./mpscnnneurontype.md)
   The types of neuron filter to append to a convolution.
-- [var forgetGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgateinputweights.md)
-- [var forgetGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgatememoryweights.md)
-- [var forgetGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/forgetgaterecurrentweights.md)
-- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgateinputweights.md)
-- [var inputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgatememoryweights.md)
-- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/inputgaterecurrentweights.md)
-- [var memoryWeightsAreDiagonal: Bool](mpslstmdescriptor/memoryweightsarediagonal.md)
-- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgateinputweights.md)
-- [var outputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgatememoryweights.md)
-- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpslstmdescriptor/outputgaterecurrentweights.md)
-- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+- [var forgetGateInputWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/forgetgateinputweights.md)
+- [var forgetGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/forgetgatememoryweights.md)
+- [var forgetGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/forgetgaterecurrentweights.md)
+- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/inputgateinputweights.md)
+- [var inputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/inputgatememoryweights.md)
+- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/inputgaterecurrentweights.md)
+- [var memoryWeightsAreDiagonal: Bool](./mpslstmdescriptor/memoryweightsarediagonal.md)
+- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/outputgateinputweights.md)
+- [var outputGateMemoryWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/outputgatememoryweights.md)
+- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./mpslstmdescriptor/outputgaterecurrentweights.md)
+- [protocol MPSCNNConvolutionDataSource](./mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
-- [var cellToOutputNeuronParamC: Float](mpslstmdescriptor/celltooutputneuronparamc.md)
+- [var cellToOutputNeuronParamC: Float](./mpslstmdescriptor/celltooutputneuronparamc.md)
 ### Type Methods
-- [class func createLSTMDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](mpslstmdescriptor/createlstmdescriptor(withinputfeaturechannels:outputfeaturechannels:).md)
+- [class func createLSTMDescriptor(withInputFeatureChannels: Int, outputFeatureChannels: Int) -> Self](./mpslstmdescriptor/createlstmdescriptor%28withinputfeaturechannels,outputfeaturechannels%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSRNNDescriptor](mpsrnndescriptor.md)
+- [MPSRNNDescriptor](./mpsrnndescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSRNNImageInferenceLayer](mpsrnnimageinferencelayer.md)
+### Recurrent Neural Networks
+- [class MPSRNNImageInferenceLayer](./mpsrnnimageinferencelayer.md)
   A recurrent neural network layer for inference on Metal Performance Shaders images.
-- [class MPSRNNMatrixInferenceLayer](mpsrnnmatrixinferencelayer.md)
+- [class MPSRNNMatrixInferenceLayer](./mpsrnnmatrixinferencelayer.md)
   A recurrent neural network layer for inference on Metal Performance Shaders matrices.
-- [class MPSRNNSingleGateDescriptor](mpsrnnsinglegatedescriptor.md)
+- [class MPSRNNSingleGateDescriptor](./mpsrnnsinglegatedescriptor.md)
   A description of a simple recurrent block or layer.
-- [class MPSGRUDescriptor](mpsgrudescriptor.md)
+- [class MPSGRUDescriptor](./mpsgrudescriptor.md)
   A description of a gated recurrent unit block or layer.
-- [enum MPSRNNSequenceDirection](mpsrnnsequencedirection.md)
+- [enum MPSRNNSequenceDirection](./mpsrnnsequencedirection.md)
   Directions that a sequence of inputs can be processed by a recurrent neural network layer.
-- [class MPSRNNMatrixTrainingLayer](mpsrnnmatrixtraininglayer.md)
+- [class MPSRNNMatrixTrainingLayer](./mpsrnnmatrixtraininglayer.md)
   A layer for training recurrent neural networks on Metal Performance Shaders matrices.
-- [class MPSRNNMatrixTrainingState](mpsrnnmatrixtrainingstate.md)
+- [class MPSRNNMatrixTrainingState](./mpsrnnmatrixtrainingstate.md)
   A class that holds data from a forward pass to be used in a backward pass.
 
 

@@ -1,6 +1,7 @@
 # Sound sample description extensions
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: API Collection
 
 Extend sound sample descriptions by appending other atoms.
 
@@ -10,7 +11,7 @@ All extensions to the SoundDescription record are made using atoms. That means o
 
 To illustrate this, for sound sample description v1, the extensions are added by following the last field of the struct with QuickTime atoms. The struct implementation looks like this:
 
-```None
+```
 struct SoundDescriptionV1 {
     // original fields
     SoundDescription    desc;
@@ -29,28 +30,29 @@ Version 2 of the sound sample description maintains the same mechanism for the a
 ## Topics
 
 ### Extending sound sample descriptions
-- [siSlopeAndIntercept atom](sislopeandintercept_atom.md)
+- [siSlopeAndIntercept atom](./sislopeandintercept_atom.md)
   An atom that contains parameters relevant to a decompressor component.
-- [siDecompressionParam atom ('wave')](sidecompressionparam_atom.md)
+- [siDecompressionParam atom ('wave')](./sidecompressionparam_atom.md)
   An atom that stores data specific to a given audio decompressor.
-- [Format atom ('frma')](format_atom.md)
+- [Format atom ('frma')](./format_atom.md)
   An atom that shows the data format of the stored sound media.
-- [Terminator atom ('0x00000000')](terminator_atom.md)
+- [Terminator atom ('0x00000000')](./terminator_atom.md)
   An atom that indicates the end of the sound description.
-- [MPEG-4 elementary sound stream descriptor atom ('esds')](mpeg-4_elementary_sound_stream_descriptor_atom.md)
+- [MPEG-4 elementary sound stream descriptor atom ('esds')](./mpeg-4_elementary_sound_stream_descriptor_atom.md)
   A required extension to the audio sample description for MPEG-4 audio.
-- [Audio channel layout atom ('chan')](audio_channel_layout_atom.md)
+- [Audio channel layout atom ('chan')](./audio_channel_layout_atom.md)
   An optional extension to the sound sample description specifying audio channel layouts for sound media contained in QuickTime movies.
-- [Subtitle follows track reference atom ('folw')](subtitle_follows_track_reference_atom.md)
+- [Subtitle follows track reference atom ('folw')](./subtitle_follows_track_reference_atom.md)
   An atom that indicates a default subtitle track for a selected sound track.
 
 ## See Also
 
-- [Sound sample descriptions](sound_sample_descriptions.md)
+### Storing audio data
+- [Sound sample descriptions](./sound_sample_descriptions.md)
   A sound sample description contains information that defines how to interpret sound media data.
-- [Sound sample data](sound_sample_data.md)
+- [Sound sample data](./sound_sample_data.md)
   Sound sample formats that QuickTime supports.
-- [Audio priming-handling encoder delay in AAC](appendix_g_audio_priming_handling_encoder_delay_in_aac.md)
+- [Audio priming-handling encoder delay in AAC](./appendix_g_audio_priming_handling_encoder_delay_in_aac.md)
   Position a source audio signal in a sound track to handle encoder delay.
 
 

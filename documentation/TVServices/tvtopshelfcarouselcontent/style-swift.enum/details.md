@@ -1,7 +1,8 @@
 # TVTopShelfCarouselContent.Style.details
 
 **Framework**: TV Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interface that displays detailed information about the item.
 
@@ -14,13 +15,18 @@ An interface that displays detailed information about the item.
 case details
 ```
 
+```c
+TVTopShelfCarouselContentStyleDetails
+```
+
 #### Discussion
 
 Use this style to display a detailed interface that focuses on the item’s details. For example, this interface displays the item’s summary prominently. This interface also displays action buttons off to the side.
 
 ## See Also
 
-- [TVTopShelfCarouselContent.Style.actions](tvtopshelfcarouselcontent/style-swift.enum/actions.md)
+### Styles
+- [TVTopShelfCarouselContent.Style.actions](./actions.md)
   An interface that focuses on the actions you want the user to perform.
 
 

@@ -7,7 +7,7 @@ Overrideable method to control the open / close behaviour of an IOService.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleClose(
  IOService *forClient,
  IOOptionBitsoptions );
@@ -24,17 +24,18 @@ See IOService for discussion.
 
 ## See Also
 
-- [getFireWireUnit](iofirewiresbp2target/1812999-getfirewireunit.md)
+### Miscellaneous
+- [getFireWireUnit](./api-1812999-getfirewireunit.md)
   Returns an IOFireWireUnit object.
-- [handleIsOpen](iofirewiresbp2target/1813021-handleisopen.md)
+- [handleIsOpen](./api-1813021-handleisopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleOpen](iofirewiresbp2target/1813037-handleopen.md)
+- [handleOpen](./api-1813037-handleopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [matchPropertyTable](iofirewiresbp2target/1813051-matchpropertytable.md)
+- [matchPropertyTable](./api-1813051-matchpropertytable.md)
   Implements SBP2 specific matching.
-- [start](iofirewiresbp2target/1813074-start.md)
+- [start](./api-1813074-start.md)
   During an IOService instantiation, the start method is called when the IOService has been selected to run on the provider.
-- [stop](iofirewiresbp2target/1813099-stop.md)
+- [stop](./api-1813099-stop.md)
   During an IOService termination, the stop method is called in its clients before they are detached & it is destroyed.
 
 

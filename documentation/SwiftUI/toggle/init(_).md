@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle based on a toggle style configuration.
 
@@ -21,9 +22,11 @@ nonisolated
 init(_ configuration: ToggleStyleConfiguration)
 ```
 
+Available when `Label` is `ToggleStyleConfiguration.Label`.
+
 #### Discussion
 
-You can use this initializer within the [`makeBody(configuration:)`](togglestyle/makebody(configuration:).md) method of a [`ToggleStyle`](togglestyle.md) to create an instance of the styled toggle. This is useful for custom toggle styles that only modify the current toggle style, as opposed to implementing a brand new style.
+You can use this initializer within the [`makeBody(configuration:)`](../togglestyle/makebody%28configuration%29.md) method of a [`ToggleStyle`](../togglestyle.md) to create an instance of the styled toggle. This is useful for custom toggle styles that only modify the current toggle style, as opposed to implementing a brand new style.
 
 For example, the following style adds a red border around the toggle, but otherwise preserves the toggle’s current style:
 

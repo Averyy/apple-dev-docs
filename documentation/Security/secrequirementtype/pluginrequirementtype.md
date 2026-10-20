@@ -1,7 +1,8 @@
 # SecRequirementType.pluginRequirementType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 What plug-ins this code may load.
 
@@ -13,6 +14,10 @@ What plug-ins this code may load.
 
 ```swift
 case pluginRequirementType
+```
+
+```c
+kSecPluginRequirementType
 ```
 
 

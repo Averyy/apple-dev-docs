@@ -1,17 +1,18 @@
 # SCSI_Capacity_Data_Long
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct SCSI_Capacity_Data_Long { ... } SCSI_Capacity_Data_Long;
 ```
 
@@ -22,28 +23,29 @@ Capacity return structure for READ CAPACITY 16 command.
 ## Topics
 
 ### Instance Properties
-- [BLOCK_LENGTH_IN_BYTES](scsi_capacity_data_long/block_length_in_bytes.md)
-- [RETURNED_LOGICAL_BLOCK_ADDRESS](scsi_capacity_data_long/returned_logical_block_address.md)
-- [RTO_EN_PROT_EN](scsi_capacity_data_long/rto_en_prot_en.md)
-- [Reserved](scsi_capacity_data_long/reserved.md)
+- [BLOCK_LENGTH_IN_BYTES](./scsi_capacity_data_long/block_length_in_bytes.md)
+- [RETURNED_LOGICAL_BLOCK_ADDRESS](./scsi_capacity_data_long/returned_logical_block_address.md)
+- [RTO_EN_PROT_EN](./scsi_capacity_data_long/rto_en_prot_en.md)
+- [Reserved](./scsi_capacity_data_long/reserved.md)
 
 ## See Also
 
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IORPCMessageErrorReturnContent](iorpcmessageerrorreturncontent.md)
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Structures
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IORPCMessageErrorReturnContent](./iorpcmessageerrorreturncontent.md)
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

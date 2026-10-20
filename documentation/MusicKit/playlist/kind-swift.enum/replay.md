@@ -1,7 +1,8 @@
 # Playlist.Kind.replay
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the playlist is a personalized Replay playlist for an Apple Music user.
 

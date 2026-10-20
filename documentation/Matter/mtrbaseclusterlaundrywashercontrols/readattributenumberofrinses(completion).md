@@ -1,7 +1,8 @@
 # readAttributeNumberOfRinses(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNumberOfRinses(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNumberOfRinses() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNumberOfRinsesWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

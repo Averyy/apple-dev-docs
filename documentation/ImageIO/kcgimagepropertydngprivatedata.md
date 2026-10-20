@@ -1,7 +1,8 @@
 # kCGImagePropertyDNGPrivateData
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Private data that manufacturers may store with an image and use in their own converters.
 
@@ -20,19 +21,24 @@ Private data that manufacturers may store with an image and use in their own con
 let kCGImagePropertyDNGPrivateData: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyDNGPrivateData;
+```
+
 ## See Also
 
-- [let kCGImagePropertyDNGMakerNoteSafety: CFString](kcgimagepropertydngmakernotesafety.md)
+### Image File Data
+- [let kCGImagePropertyDNGMakerNoteSafety: CFString](./kcgimagepropertydngmakernotesafety.md)
   A Boolean value that tells the DNG reader whether the EXIF MakerNote tag is safe to preserve.
-- [let kCGImagePropertyDNGRawDataUniqueID: CFString](kcgimagepropertydngrawdatauniqueid.md)
+- [let kCGImagePropertyDNGRawDataUniqueID: CFString](./kcgimagepropertydngrawdatauniqueid.md)
   A 16-byte unique identifier for the raw image data.
-- [let kCGImagePropertyDNGSubTileBlockSize: CFString](kcgimagepropertydngsubtileblocksize.md)
+- [let kCGImagePropertyDNGSubTileBlockSize: CFString](./kcgimagepropertydngsubtileblocksize.md)
   The size of rectangular blocks that tiles use to group pixels.
-- [let kCGImagePropertyDNGRowInterleaveFactor: CFString](kcgimagepropertydngrowinterleavefactor.md)
+- [let kCGImagePropertyDNGRowInterleaveFactor: CFString](./kcgimagepropertydngrowinterleavefactor.md)
   The number of interleaved fields for the rows of the image.
-- [let kCGImagePropertyDNGBackwardVersion: CFString](kcgimagepropertydngbackwardversion.md)
+- [let kCGImagePropertyDNGBackwardVersion: CFString](./kcgimagepropertydngbackwardversion.md)
   The oldest version for which a file is compatible.
-- [let kCGImagePropertyDNGVersion: CFString](kcgimagepropertydngversion.md)
+- [let kCGImagePropertyDNGVersion: CFString](./kcgimagepropertydngversion.md)
   An encoding of the four-tier version number.
 
 

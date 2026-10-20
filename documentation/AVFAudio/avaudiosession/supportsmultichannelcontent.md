@@ -1,7 +1,8 @@
 # supportsMultichannelContent
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether your app supplies multichannel audio content.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether your app supplies multichannel audio cont
 var supportsMultichannelContent: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL supportsMultichannelContent;
+```
+
 #### Discussion
 
 The default value is `false`.
 
 ## See Also
 
-- [func setSupportsMultichannelContent(Bool) throws](avaudiosession/setsupportsmultichannelcontent(_:).md)
+### Configuring multichannel support
+- [func setSupportsMultichannelContent(Bool) throws](./setsupportsmultichannelcontent%28_%29.md)
   Sets whether your app supplies multichannel audio content.
 
 

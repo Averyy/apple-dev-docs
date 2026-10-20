@@ -1,18 +1,19 @@
 # AVSampleBufferRequest.Direction
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The modes that describe the buffer request direction.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,45 +21,50 @@ The modes that describe the buffer request direction.
 enum Direction
 ```
 
+```c
+enum AVSampleBufferRequestDirection : NSInteger;
+```
+
 ## Topics
 
 ### Buffer direction
-- [AVSampleBufferRequest.Direction.forward](avsamplebufferrequest/direction-swift.enum/forward.md)
+- [AVSampleBufferRequest.Direction.forward](./direction-swift.enum/forward.md)
   The number of following samples may be zero or greater.
-- [AVSampleBufferRequest.Direction.none](avsamplebufferrequest/direction-swift.enum/none.md)
+- [AVSampleBufferRequest.Direction.none](./direction-swift.enum/none.md)
   A single sample will be loaded.
-- [AVSampleBufferRequest.Direction.reverse](avsamplebufferrequest/direction-swift.enum/reverse.md)
+- [AVSampleBufferRequest.Direction.reverse](./direction-swift.enum/reverse.md)
   The number of previous samples may be zero or greater.
 ### Initializers
-- [init?(rawValue: Int)](avsamplebufferrequest/direction-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./direction-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var direction: AVSampleBufferRequest.Direction](avsamplebufferrequest/direction-swift.property.md)
+### Configuring sample buffer request parameters
+- [var direction: AVSampleBufferRequest.Direction](./direction-swift.property.md)
   The buffer sample direction.
-- [var limitCursor: AVSampleCursor?](avsamplebufferrequest/limitcursor.md)
+- [var limitCursor: AVSampleCursor?](./limitcursor.md)
   The limiting position for sample loading.
-- [var maxSampleCount: Int](avsamplebufferrequest/maxsamplecount.md)
+- [var maxSampleCount: Int](./maxsamplecount.md)
   The maximum number of samples to load.
-- [var mode: AVSampleBufferRequest.Mode](avsamplebufferrequest/mode-swift.property.md)
+- [var mode: AVSampleBufferRequest.Mode](./mode-swift.property.md)
   The sample buffer request mode.
-- [AVSampleBufferRequest.Mode](avsamplebufferrequest/mode-swift.enum.md)
+- [AVSampleBufferRequest.Mode](./mode-swift.enum.md)
   The modes in which a sample buffer generator processes a request.
-- [var overrideTime: CMTime](avsamplebufferrequest/overridetime.md)
+- [var overrideTime: CMTime](./overridetime.md)
   The deadline for sample data and output PTS for the sample buffer.
-- [var preferredMinSampleCount: Int](avsamplebufferrequest/preferredminsamplecount.md)
+- [var preferredMinSampleCount: Int](./preferredminsamplecount.md)
   The preferred minimum number of samples to load.
-- [var startCursor: AVSampleCursor](avsamplebufferrequest/startcursor.md)
+- [var startCursor: AVSampleCursor](./startcursor.md)
   The starting cursor position.
 
 

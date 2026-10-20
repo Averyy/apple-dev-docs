@@ -1,16 +1,17 @@
 # subscribe(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches the specified subscriber to this publisher.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.0+ - Deprecated in 18.0
+- macOS 10.15+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # Wi-Fi Infrastructure
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Share Wi-Fi network credentials securely between devices and connected accessories.
 
@@ -12,7 +13,7 @@ Share Wi-Fi network credentials securely between devices and connected accessori
 
 #### Overview
 
-Companion apps that have paired an accessory with [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit/) can use the Wi-Fi™️ Infrastructure framework to share networks with their paired accessory over a local Bluetooth 4.2 Secure connection.
+Companion apps that have paired an accessory with [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) can use the Wi-Fi™️ Infrastructure framework to share networks with their paired accessory over a local Bluetooth 4.2 Secure connection.
 
 The Wi-Fi™ Infrastructure framework enables your app to share Wi-Fi network credentials from an iOS device to paired accessories automatically and securely. Use this framework to avoid manually entering network passwords on accessories with limited input capabilities, such as smartwatches, Internet of Things (IoT) devices, or other connected hardware that travels with people across different networks.
 
@@ -32,26 +33,26 @@ With the Wi-Fi Infrastructure framework, you can:
 ## Topics
 
 ### Essentials
-- [com.apple.developer.wifi-infrastructure](../bundleresources/entitlements/com.apple.developer.wifi-infrastructure.md)
+- [com.apple.developer.wifi-infrastructure](../BundleResources/entitlements/com.apple.developer.wifi-infrastructure.md)
   The entitlement the system requires for an app to use the Wi-Fi Infrastructure framework.
-- [Sharing Wi-Fi network credentials](sharing-wi-fi-network-credentials.md)
+- [Sharing Wi-Fi network credentials](./sharing-wi-fi-network-credentials.md)
   Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after establishing a Bluetooth connection.
 ### Network sharing
-- [class WINetworkSharingController](winetworksharingcontroller.md)
+- [class WINetworkSharingController](./winetworksharingcontroller.md)
   A controller that enables your container app to control network-sharing functions with connected accessories.
-- [class WINetworkSharingProvider](winetworksharingprovider.md)
+- [class WINetworkSharingProvider](./winetworksharingprovider.md)
   A provider that delivers updated Wi-Fi network information to your app extension.
-- [enum WINetworkSharingAskToShareState](winetworksharingasktosharestate.md)
+- [enum WINetworkSharingAskToShareState](./winetworksharingasktosharestate.md)
   The authorization state for sharing the current Wi-Fi network with an accessory.
 ### Common data
-- [struct WISSID](wissid.md)
+- [struct WISSID](./wissid.md)
   The Service Set Identifier (SSID) for a Wi-Fi network, from which applications derive the human-readable network name.
-- [struct WIChannel](wichannel.md)
+- [struct WIChannel](./wichannel.md)
   A WiFi Channel.
-- [struct WIMACAddress](wimacaddress.md)
+- [struct WIMACAddress](./wimacaddress.md)
   A Wi-Fi MAC Address.
 ### Errors
-- [enum WINetworkSharingError](winetworksharingerror.md)
+- [enum WINetworkSharingError](./winetworksharingerror.md)
   Error codes for Wi-Fi network-sharing functionality.
 
 

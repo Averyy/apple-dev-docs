@@ -1,10 +1,11 @@
 # kAudioUnitSRCAlgorithm_MediumQuality
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kAudioUnitSRCAlgorithm_MediumQuality: UInt32 { get }
 ```
 
+```c
+kAudioUnitSRCAlgorithm_MediumQuality
+```
+
 ## See Also
 
-- [var kAudioUnitSRCAlgorithm_Polyphase: UInt32](kaudiounitsrcalgorithm_polyphase.md)
+### Constants
+- [var kAudioUnitSRCAlgorithm_Polyphase: UInt32](./kaudiounitsrcalgorithm_polyphase.md)
 
 
 ---

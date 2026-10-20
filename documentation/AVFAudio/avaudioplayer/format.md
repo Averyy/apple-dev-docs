@@ -1,7 +1,8 @@
 # format
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the player’s audio data.
 
@@ -20,13 +21,18 @@ The format of the player’s audio data.
 var format: AVAudioFormat { get }
 ```
 
+```objc
+@property (readonly) AVAudioFormat * format;
+```
+
 ## See Also
 
-- [var url: URL?](avaudioplayer/url.md)
+### Inspecting the audio data
+- [var url: URL?](./url.md)
   The URL of the audio file.
-- [var data: Data?](avaudioplayer/data.md)
+- [var data: Data?](./data.md)
   The audio data associated with the player.
-- [var settings: [String : Any]](avaudioplayer/settings.md)
+- [var settings: [String : Any]](./settings.md)
   A dictionary that provides information about the player’s audio data.
 
 

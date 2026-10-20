@@ -1,6 +1,7 @@
 # Routing audio to specific devices in multidevice sessions
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: Article
 
 Map audio channels to specific devices in multiroute sessions for recording and playback.
 
@@ -8,13 +9,13 @@ Map audio channels to specific devices in multiroute sessions for recording and 
 
 When working with multiple audio devices simultaneously, such as recording from multiple microphones or routing playback to different speakers, you need precise control over which audio reaches which device.
 
-[`Core Audio`](https://developer.apple.com/documentation/coreaudio) provides channel mapping to bind specific audio channels to targeted devices. Use the input and output nodes from [`AVAudioEngine`](avaudioengine.md) for position-based routing with global channel indices, [`Audio Queue Services`](https://developer.apple.com/documentation/audiotoolbox/audio-queue-services) for device-based routing using device identifiers, or [`AVAudioPlayer`](avaudioplayer.md) and [`AVAudioRecorder`](avaudiorecorder.md) for high-level routing with audio session channel descriptions.
+[Core Audio](../CoreAudio/CoreAudio.md) provides channel mapping to bind specific audio channels to targeted devices. Use the input and output nodes from [`AVAudioEngine`](./avaudioengine.md) for position-based routing with global channel indices, [Audio Queue Services](../AudioToolbox/audio-queue-services.md) for device-based routing using device identifiers, or [`AVAudioPlayer`](./avaudioplayer.md) and [`AVAudioRecorder`](./avaudiorecorder.md) for high-level routing with audio session channel descriptions.
 
-#### Route Audio Outputs Using Audio Engines Output Node
+#### Route audio outputs using audio engine’s output node
 
-Use [`Audio Unit`](https://developer.apple.com/documentation/audiounit) channel maps to route playback audio to specific devices by mapping to global channel positions. A channel map is an array where the index represents the destination channel and the value specifies which source channel to route to that destination. Use `-1` to specify silence for unused channels.
+Use [Audio Unit](../AudioUnit/AudioUnit.md) channel maps to route playback audio to specific devices by mapping to global channel positions. A channel map is an array where the index represents the destination channel and the value specifies which source channel to route to that destination. Use `-1` to specify silence for unused channels.
 
-In multidevice configurations, [`Core Audio`](https://developer.apple.com/documentation/coreaudio) flattens all device channels into a sequential global channel space. When multiple audio devices are active, Core Audio assigns channels sequentially based on port order. For example, with AirPods (2 channels) and built-in speaker (2 channels) connected:
+In multidevice configurations, [Core Audio](../CoreAudio/CoreAudio.md) flattens all device channels into a sequential global channel space. When multiple audio devices are active, Core Audio assigns channels sequentially based on port order. For example, with AirPods (2 channels) and built-in speaker (2 channels) connected:
 
 ```swift
 Device 1 (AirPods): 2 channels > Global positions [0, 1]
@@ -32,7 +33,7 @@ var channelMap: [Int32] = [-1, -1, 0, 1]
 // channelMap[3] = 1: Built-in right plays the file's right channel.
 ```
 
-Because port order can vary and channel counts differ between devices, first discover the actual port-to-channel mapping via [`currentRoute`](avaudiosession/currentroute.md). Calculate channel indices dynamically based on the current audio route configuration:
+Because port order can vary and channel counts differ between devices, first discover the actual port-to-channel mapping via [`currentRoute`](./avaudiosession/currentroute.md). Calculate channel indices dynamically based on the current audio route configuration:
 
 ```swift
 let audioSession = AVAudioSession.sharedInstance()
@@ -56,7 +57,7 @@ for (portIndex, outputPort) in currentRoute.outputs.enumerated() {
 
 This iterates through output ports, calculating their position in the global flattened channel array. Use these calculated indices to target specific devices in your channel mapping.
 
-After discovering channel positions, configure the [`Audio Unit`](https://developer.apple.com/documentation/audiounit) with a channel map. This example routes a stereo audio file to the built-in speaker, assuming it occupies channels 2 and 3 in the global channel space:
+After discovering channel positions, configure the [Audio Unit](../AudioUnit/AudioUnit.md) with a channel map. This example routes a stereo audio file to the built-in speaker, assuming it occupies channels 2 and 3 in the global channel space:
 
 ```swift
 let audioSession = AVAudioSession.sharedInstance()
@@ -114,7 +115,7 @@ player.play()
 
 > **Note**: The channel map array size must match the total number of output channels available. Each element specifies the source stream channel for that output position, or `-1` for silence.
 
-#### Route Audio Inputs Using Audio Engines Input Node
+#### Route audio inputs using audio engine’s input node
 
 When recording from multiple input devices, channel map semantics differ from playback. The channel map array size must match your desired recording channel count (not the total hardware channel count), and each array element specifies which hardware channel to pull from.
 
@@ -205,11 +206,11 @@ try engine.start()
 
 > **Note**: When using AVAudioEngine, set the client format by passing your desired format to `installTapOnBus`. The format’s channel count should match your channel map size, and the sample rate should match the hardware input format to avoid runtime errors.
 
-#### Route Audio with Audio Queue Channel Assignments
+#### Route audio with audio queue channel assignments
 
-Use [`Audio Queue Services`](https://developer.apple.com/documentation/audiotoolbox/audio-queue-services) channel assignments to route audio to specific device channels by device UID rather than global channel position. This approach provides direct device targeting without needing to calculate global channel indices.
+Use [Audio Queue Services](../AudioToolbox/audio-queue-services.md) channel assignments to route audio to specific device channels by device UID rather than global channel position. This approach provides direct device targeting without needing to calculate global channel indices.
 
-Set the [`kAudioQueueProperty_ChannelAssignments`](https://developer.apple.com/documentation/audiotoolbox/kaudioqueueproperty_channelassignments) property with an [`AudioQueueChannelAssignment`](https://developer.apple.com/documentation/audiotoolbox/audioqueuechannelassignment) structure specifying the target device UID and channel number:
+Set the [`kAudioQueueProperty_ChannelAssignments`](../AudioToolbox/kaudioqueueproperty_channelassignments.md) property with an [`AudioQueueChannelAssignment`](../AudioToolbox/audioqueuechannelassignment.md) structure specifying the target device UID and channel number:
 
 ```swift
 // Get the device UID from `AVAudioSession`.
@@ -234,13 +235,13 @@ AudioQueueSetProperty(
 )
 ```
 
-#### Route High Level Audio an Audio Player or Recorder
+#### Route high-level audio an audio player or recorder
 
-[`AVAudioPlayer`](avaudioplayer.md) and [`AVAudioRecorder`](avaudiorecorder.md) provide a high-level approach using the audio player’s [`channelAssignments`](avaudioplayer/channelassignments.md), or the audio recorder’s [`channelAssignments`](avaudiorecorder/channelassignments.md) property with [`AVAudioSessionChannelDescription`](avaudiosessionchanneldescription.md) objects directly from the audio session.
+[`AVAudioPlayer`](./avaudioplayer.md) and [`AVAudioRecorder`](./avaudiorecorder.md) provide a high-level approach using the audio player’s [`channelAssignments`](./avaudioplayer/channelassignments.md), or the audio recorder’s [`channelAssignments`](./avaudiorecorder/channelassignments.md) property with [`AVAudioSessionChannelDescription`](./avaudiosessionchanneldescription.md) objects directly from the audio session.
 
-> **Note**: For [`AVAudioPlayer`](avaudioplayer.md), the `channelAssignments` array count should match the audio format’s channel count.
+> **Note**: For [`AVAudioPlayer`](./avaudioplayer.md), the `channelAssignments` array count should match the audio format’s channel count.
 
-For output [`AVAudioPlayer`](avaudioplayer.md):
+For output [`AVAudioPlayer`](./avaudioplayer.md):
 
 ```swift
 let audioSession = AVAudioSession.sharedInstance()
@@ -255,7 +256,7 @@ player.channelAssignments = [channelDescription]
 player.play()
 ```
 
-For input with [`AVAudioRecorder`](avaudiorecorder.md):
+For input with [`AVAudioRecorder`](./avaudiorecorder.md):
 
 ```swift
 let audioSession = AVAudioSession.sharedInstance()
@@ -272,19 +273,20 @@ recorder.record()
 
 ## See Also
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+### System audio
+- [Handling audio interruptions](./handling-audio-interruptions.md)
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Responding to audio route changes](./responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
-- [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
+- [Adding synthesized speech to calls](./adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
-- [Capturing stereo audio from built-In microphones](capturing-stereo-audio-from-built-in-microphones.md)
+- [Capturing stereo audio from built-In microphones](./capturing-stereo-audio-from-built-in-microphones.md)
   Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
-- [class AVAudioSession](avaudiosession.md)
+- [class AVAudioSession](./avaudiosession.md)
   An object that communicates to the system how you intend to use audio in your app.
-- [class AVAudioApplication](avaudioapplication.md)
+- [class AVAudioApplication](./avaudioapplication.md)
   An object that manages one or more audio sessions that belong to an app.
-- [class AVAudioRoutingArbiter](avaudioroutingarbiter.md)
+- [class AVAudioRoutingArbiter](./avaudioroutingarbiter.md)
   An object for configuring macOS apps to participate in AirPods Automatic Switching.
 
 

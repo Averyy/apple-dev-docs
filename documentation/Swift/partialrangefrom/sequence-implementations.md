@@ -1,17 +1,18 @@
 # Sequence Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [PartialRangeFrom.Iterator](partialrangefrom/iterator.md)
+- [PartialRangeFrom.Iterator](./iterator.md)
   The iterator for a `PartialRangeFrom` instance.
 ### Instance Methods
-- [func makeIterator() -> PartialRangeFrom<Bound>.Iterator](partialrangefrom/makeiterator.md)
+- [func makeIterator() -> PartialRangeFrom<Bound>.Iterator](./makeiterator%28%29.md)
   Returns an iterator for this sequence.
 ### Type Aliases
-- [PartialRangeFrom.Element](partialrangefrom/element.md)
+- [PartialRangeFrom.Element](./element.md)
   A type representing the sequence’s elements.
 
 

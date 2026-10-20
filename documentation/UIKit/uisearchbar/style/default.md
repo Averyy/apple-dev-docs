@@ -1,7 +1,8 @@
 # UISearchBar.Style.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The search bar has the default style.
 
@@ -9,7 +10,7 @@ The search bar has the default style.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The search bar has the default style.
 case `default`
 ```
 
+```c
+UISearchBarStyleDefault
+```
+
 #### Discussion
 
-Defaults to [`UISearchBar.Style.prominent`](uisearchbar/style/prominent.md).
+Defaults to [`UISearchBar.Style.prominent`](./prominent.md).
 
 ## See Also
 
-- [UISearchBar.Style.prominent](uisearchbar/style/prominent.md)
+### Constants
+- [UISearchBar.Style.prominent](./prominent.md)
   The search bar has a translucent background, and the search field is opaque.
-- [UISearchBar.Style.minimal](uisearchbar/style/minimal.md)
+- [UISearchBar.Style.minimal](./minimal.md)
   The search bar has no background, and the search field is translucent.
 
 

@@ -1,7 +1,8 @@
 # kAEDefaultTimeout
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The timeout value is determined by the Apple Event Manager. The default timeout value is about one minute.
 

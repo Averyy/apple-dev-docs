@@ -1,7 +1,8 @@
 # configureWithDefaultBackground()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the bar appearance object with default background and shadow values.
 
@@ -18,15 +19,20 @@ Configures the bar appearance object with default background and shadow values.
 func configureWithDefaultBackground()
 ```
 
+```objc
+- (void) configureWithDefaultBackground;
+```
+
 #### Discussion
 
 Calling this method replaces any previous values you specified for the bar appearance properties.
 
 ## See Also
 
-- [func configureWithOpaqueBackground()](uibarappearance/configurewithopaquebackground.md)
+### Resetting the appearance properties
+- [func configureWithOpaqueBackground()](./configurewithopaquebackground%28%29.md)
   Configures the bar appearance object with a set of opaque colors that are appropriate for the current theme.
-- [func configureWithTransparentBackground()](uibarappearance/configurewithtransparentbackground.md)
+- [func configureWithTransparentBackground()](./configurewithtransparentbackground%28%29.md)
   Configures the bar appearance object with a transparent background and no shadow.
 
 

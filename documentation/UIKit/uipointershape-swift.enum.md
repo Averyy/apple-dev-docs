@@ -1,7 +1,8 @@
 # UIPointerShape
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that defines the shape of custom pointers.
 
@@ -9,7 +10,7 @@ An object that defines the shape of custom pointers.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,36 +20,37 @@ enum UIPointerShape
 
 #### Overview
 
-If the desired pointer shape can be expressed as a rounded rectangle, use [`UIPointerShape.roundedRect(_:radius:)`](uipointershape-swift.enum/roundedrect(_:radius:).md) for best results.
+If the desired pointer shape can be expressed as a rounded rectangle, use [`UIPointerShape.roundedRect(_:radius:)`](./uipointershape-swift.enum/roundedrect%28_,radius%29.md) for best results.
 
 ## Topics
 
 ### Specifying pointer shapes
-- [UIPointerShape.horizontalBeam(length:)](uipointershape-swift.enum/horizontalbeam(length:).md)
+- [UIPointerShape.horizontalBeam(length:)](./uipointershape-swift.enum/horizontalbeam%28length%29.md)
   The pointer morphs into a horizontal beam using the specified length.
-- [UIPointerShape.verticalBeam(length:)](uipointershape-swift.enum/verticalbeam(length:).md)
+- [UIPointerShape.verticalBeam(length:)](./uipointershape-swift.enum/verticalbeam%28length%29.md)
   The pointer morphs into a vertical beam using the specified length.
-- [UIPointerShape.path(_:)](uipointershape-swift.enum/path(_:).md)
+- [UIPointerShape.path(_:)](./uipointershape-swift.enum/path%28_%29.md)
   The pointer morphs into the given Bézier path.
-- [case roundedRect(CGRect, radius: CGFloat)](uipointershape-swift.enum/roundedrect(_:radius:).md)
+- [case roundedRect(CGRect, radius: CGFloat)](./uipointershape-swift.enum/roundedrect%28_,radius%29.md)
   The pointer morphs into a rounded rectangle using the provided corner radius.
 ### Accessing corner radius
-- [static let defaultCornerRadius: CGFloat](uipointershape-swift.enum/defaultcornerradius.md)
+- [static let defaultCornerRadius: CGFloat](./uipointershape-swift.enum/defaultcornerradius.md)
   The default corner radius for a pointer using a rounded rectangle.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [class UIPointerStyle](uipointerstyle.md)
+### Pointer styles
+- [class UIPointerStyle](./uipointerstyle.md)
   An object that defines the pointer shape and effect.
-- [enum UIPointerEffect](uipointereffect-swift.enum.md)
+- [enum UIPointerEffect](./uipointereffect-swift.enum.md)
   An effect that alters a view’s appearance when a pointer enters the current region.
-- [class UIPointerAccessory](uipointeraccessory.md)
+- [class UIPointerAccessory](./uipointeraccessory.md)
   Constants that describe accessories to display alongside the primary pointer.
 
 

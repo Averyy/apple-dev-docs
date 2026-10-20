@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when a capture session’s controls are about to enter a fullscreen appearance.
@@ -19,6 +20,10 @@ Tells the delegate when a capture session’s controls are about to enter a full
 func sessionControlsWillEnterFullscreenAppearance(_ session: AVCaptureSession)
 ```
 
+```objc
+- (void) sessionControlsWillEnterFullscreenAppearance:(AVCaptureSession *) session;
+```
+
 #### Discussion
 
 When controls enter a fullscreen appearance, your app should hide portions of its user interface, including duplicative or unnecessary elements. Few onscreen elements should be visible so people can focus on their control interactions while viewing the camera preview unobstructed.
@@ -29,11 +34,12 @@ When controls enter a fullscreen appearance, your app should hide portions of it
 
 ## See Also
 
-- [func sessionControlsDidBecomeActive(AVCaptureSession)](avcapturesessioncontrolsdelegate/sessioncontrolsdidbecomeactive(_:).md)
+### Responding to control events
+- [func sessionControlsDidBecomeActive(AVCaptureSession)](./sessioncontrolsdidbecomeactive%28_%29.md)
   Tells the delegate when a capture session’s controls become active and available for interaction.
-- [func sessionControlsWillExitFullscreenAppearance(AVCaptureSession)](avcapturesessioncontrolsdelegate/sessioncontrolswillexitfullscreenappearance(_:).md)
+- [func sessionControlsWillExitFullscreenAppearance(AVCaptureSession)](./sessioncontrolswillexitfullscreenappearance%28_%29.md)
   Tells the delegate when a capture session’s controls are about to exit a fullscreen appearance.
-- [func sessionControlsDidBecomeInactive(AVCaptureSession)](avcapturesessioncontrolsdelegate/sessioncontrolsdidbecomeinactive(_:).md)
+- [func sessionControlsDidBecomeInactive(AVCaptureSession)](./sessioncontrolsdidbecomeinactive%28_%29.md)
   Tells the delegate when a capture session’s controls become inactive and unavailable for interaction.
 
 

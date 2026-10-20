@@ -1,7 +1,8 @@
 # albums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The albums for the personal recommendation.
 

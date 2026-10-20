@@ -1,7 +1,8 @@
 # scaledValue(for:compatibleWith:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales an arbitrary layout value based on the current Dynamic Type settings and the specified traits.
 
@@ -16,6 +17,10 @@ Scales an arbitrary layout value based on the current Dynamic Type settings and 
 
 ```swift
 func scaledValue(for value: CGFloat, compatibleWith traitCollection: UITraitCollection?) -> CGFloat
+```
+
+```objc
+- (CGFloat) scaledValueForValue:(CGFloat) value compatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
 #### Return Value
@@ -33,7 +38,8 @@ Use this method to scale the height of visual elements containing text. For exam
 
 ## See Also
 
-- [func scaledValue(for: CGFloat) -> CGFloat](uifontmetrics/scaledvalue(for:).md)
+### Scaling Layout Values
+- [func scaledValue(for: CGFloat) -> CGFloat](./scaledvalue%28for%29.md)
   Scales an arbitrary layout value based on the current Dynamic Type settings.
 
 

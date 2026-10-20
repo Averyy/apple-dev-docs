@@ -1,7 +1,8 @@
 # replaceAll(repeating:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replace all bytes in the buffer with the given byte.
 

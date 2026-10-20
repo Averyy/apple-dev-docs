@@ -1,7 +1,8 @@
 # pressureTrend
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind and amount of atmospheric pressure change over time.
 
@@ -22,7 +23,8 @@ var pressureTrend: PressureTrend
 
 ## See Also
 
-- [var pressure: Measurement<UnitPressure>](hourweather/pressure.md)
+### Getting pressure
+- [var pressure: Measurement<UnitPressure>](./pressure.md)
   The atmospheric pressure at sea level at a given location.
 
 

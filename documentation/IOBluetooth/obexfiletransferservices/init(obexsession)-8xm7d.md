@@ -1,17 +1,22 @@
 # init(obexSession:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new OBEXFileTransferServices object
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(obexSession inOBEXSession: IOBluetoothOBEXSession!)
+```
+
+```objc
+- (instancetype) initWithOBEXSession:(IOBluetoothOBEXSession *) inOBEXSession;
 ```
 
 #### Return Value

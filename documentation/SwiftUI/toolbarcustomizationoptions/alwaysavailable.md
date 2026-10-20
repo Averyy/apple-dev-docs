@@ -1,7 +1,8 @@
 # alwaysAvailable
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Configures default customizable toolbar content to always be present in the toolbar.
 

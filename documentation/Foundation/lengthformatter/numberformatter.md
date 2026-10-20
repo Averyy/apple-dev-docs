@@ -1,7 +1,8 @@
 # numberFormatter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number formatter used to format the numbers in length strings.
 
@@ -21,25 +22,30 @@ The number formatter used to format the numbers in length strings.
 var numberFormatter: NumberFormatter! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSNumberFormatter * numberFormatter;
+```
+
 #### Discussion
 
-This property defaults to a number formatter using the [`NumberFormatter.Style.decimal`](numberformatter/style/decimal.md). You can provide a different number formatter to customize the length string’s appearance.
+This property defaults to a number formatter using the [`NumberFormatter.Style.decimal`](../numberformatter/style/decimal.md). You can provide a different number formatter to customize the length string’s appearance.
 
 ## See Also
 
-- [var isForPersonHeightUse: Bool](lengthformatter/isforpersonheightuse.md)
+### Formatting Length Strings
+- [var isForPersonHeightUse: Bool](./isforpersonheightuse.md)
   A Boolean value that indicates whether the resulting string represents a person’s height.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](lengthformatter/getobjectvalue(_:for:errordescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./getobjectvalue%28_,for,errordescription%29.md)
   This method is not supported for the `NSLengthFormatter` class.
-- [func string(fromMeters: Double) -> String](lengthformatter/string(frommeters:).md)
+- [func string(fromMeters: Double) -> String](./string%28frommeters%29.md)
   Returns a length string for the provided value.
-- [func string(fromValue: Double, unit: LengthFormatter.Unit) -> String](lengthformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: LengthFormatter.Unit) -> String](./string%28fromvalue,unit%29.md)
   Returns a properly formatted length string for the given value and unit.
-- [func unitString(fromMeters: Double, usedUnit: UnsafeMutablePointer<LengthFormatter.Unit>?) -> String](lengthformatter/unitstring(frommeters:usedunit:).md)
+- [func unitString(fromMeters: Double, usedUnit: UnsafeMutablePointer<LengthFormatter.Unit>?) -> String](./unitstring%28frommeters,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: LengthFormatter.Unit) -> String](lengthformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: LengthFormatter.Unit) -> String](./unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](lengthformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style used by this formatter.
 
 

@@ -1,7 +1,8 @@
 # automaticallyAdjustsSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var automaticallyAdjustsSize: Bool { get set }
+```
+
+```objc
+@property BOOL automaticallyAdjustsSize;
 ```
 
 

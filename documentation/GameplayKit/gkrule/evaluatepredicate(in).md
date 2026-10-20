@@ -1,7 +1,8 @@
 # evaluatePredicate(in:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the rule has been satisfied in the context of the specified rule system.
 
@@ -19,19 +20,24 @@ Returns a Boolean value indicating whether the rule has been satisfied in the co
 func evaluatePredicate(in system: GKRuleSystem) -> Bool
 ```
 
+```objc
+- (BOOL) evaluatePredicateWithSystem:(GKRuleSystem *) system;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the rule is satisfied (and its action should be executed); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the rule is satisfied (and its action should be executed); otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
 A rule system calls this method when evaluating its rules.
 
-If the rule was created with the [`init(predicate:assertingFact:grade:)`](gkrule/init(predicate:assertingfact:grade:).md) or [`init(predicate:retractingFact:grade:)`](gkrule/init(predicate:retractingfact:grade:).md), calling this method returns the result of testing the predicate against the provided rule system. If the rule was created with the [`init(blockPredicate:action:)`](gkrule/init(blockpredicate:action:).md) method, calling this method calls the predicate block and returns the result. Otherwise, this method always returns [`false`](https://developer.apple.com/documentation/swift/false)—subclasses should override this method to implement their own predicate tests.
+If the rule was created with the [`init(predicate:assertingFact:grade:)`](./init%28predicate,assertingfact,grade%29.md) or [`init(predicate:retractingFact:grade:)`](./init%28predicate,retractingfact,grade%29.md), calling this method returns the result of testing the predicate against the provided rule system. If the rule was created with the [`init(blockPredicate:action:)`](./init%28blockpredicate,action%29.md) method, calling this method calls the predicate block and returns the result. Otherwise, this method always returns [`false`](../../Swift/false.md)—subclasses should override this method to implement their own predicate tests.
 
 ## See Also
 
-- [func performAction(in: GKRuleSystem)](gkrule/performaction(in:).md)
+### Evaluating a Rule
+- [func performAction(in: GKRuleSystem)](./performaction%28in%29.md)
   Performs actions that should result when the rule is satisfied in the context of the specified rule system.
 
 

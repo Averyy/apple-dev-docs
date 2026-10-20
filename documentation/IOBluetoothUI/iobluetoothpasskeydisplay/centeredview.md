@@ -1,7 +1,8 @@
 # centeredView
 
 **Framework**: IOBluetooth UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -13,14 +14,19 @@
 unowned(unsafe) var centeredView: NSView! { get set }
 ```
 
+```objc
+@property (assign) NSView * centeredView;
+```
+
 ## See Also
 
-- [var backgroundImageConstraint: NSLayoutConstraint!](iobluetoothpasskeydisplay/backgroundimageconstraint.md)
-- [var isIncomingRequest: Bool](iobluetoothpasskeydisplay/isincomingrequest-swift.property.md)
-- [var passkey: String!](iobluetoothpasskeydisplay/passkey-swift.property.md)
-- [var returnHighlightImage: NSImage!](iobluetoothpasskeydisplay/returnhighlightimage.md)
-- [var returnImage: NSImage!](iobluetoothpasskeydisplay/returnimage.md)
-- [var usePasskeyNotificaitons: Bool](iobluetoothpasskeydisplay/usepasskeynotificaitons.md)
+### Instance Properties
+- [var backgroundImageConstraint: NSLayoutConstraint!](./backgroundimageconstraint.md)
+- [var isIncomingRequest: Bool](./isincomingrequest-swift.property.md)
+- [var passkey: String!](./passkey-swift.property.md)
+- [var returnHighlightImage: NSImage!](./returnhighlightimage.md)
+- [var returnImage: NSImage!](./returnimage.md)
+- [var usePasskeyNotificaitons: Bool](./usepasskeynotificaitons.md)
 
 
 ---

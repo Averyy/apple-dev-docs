@@ -1,12 +1,13 @@
 # flushBufferedKeyEvents()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears any unprocessed key events when overridden by subclasses.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Clears any unprocessed key events when overridden by subclasses.
 func flushBufferedKeyEvents()
 ```
 
+```objc
+- (void) flushBufferedKeyEvents;
+```
+
 ## See Also
 
-- [func keyDown(with: NSEvent)](nsresponder/keydown(with:).md)
+### Responding to Key Events
+- [func keyDown(with: NSEvent)](./keydown%28with%29.md)
   Informs the receiver that the user has pressed a key.
-- [func keyUp(with: NSEvent)](nsresponder/keyup(with:).md)
+- [func keyUp(with: NSEvent)](./keyup%28with%29.md)
   Informs the receiver that the user has released a key.
-- [func interpretKeyEvents([NSEvent])](nsresponder/interpretkeyevents(_:).md)
+- [func interpretKeyEvents([NSEvent])](./interpretkeyevents%28_%29.md)
   Handles a series of key events.
-- [func performKeyEquivalent(with: NSEvent) -> Bool](nsresponder/performkeyequivalent(with:).md)
+- [func performKeyEquivalent(with: NSEvent) -> Bool](./performkeyequivalent%28with%29.md)
   Handle a key equivalent.
 
 

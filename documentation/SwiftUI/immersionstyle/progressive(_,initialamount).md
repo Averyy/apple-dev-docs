@@ -1,7 +1,8 @@
 # progressive(_:initialAmount:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An immersion style that displays unbounded content that partially replaces passthrough video.
 
@@ -15,13 +16,25 @@ An immersion style that displays unbounded content that partially replaces passt
 static func progressive(_ immersionRange: ClosedRange<Double>, initialAmount: Double? = nil) -> ProgressiveImmersionStyle
 ```
 
+Available when `Self` is `ProgressiveImmersionStyle`.
+
+**Other overloads**:
+
+```swift
+static func progressive(_ immersionRange: PartialRangeFrom<Double>, initialAmount: Double? = nil) -> ProgressiveImmersionStyle
+```
+
+```swift
+static func progressive(_ immersionRange: PartialRangeThrough<Double>, initialAmount: Double? = nil) -> ProgressiveImmersionStyle
+```
+
 #### Discussion
 
 The immersion style affects how windows interact with virtual objects in the environment. In `progressive` immersion, windows always render in front of virtual content, no matter how someone positions the window or the content. This helps people avoid losing track of windows behind virtual content when passthrough is off.
 
-When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](view/onimmersionchange(initial:_:).md) is within the range of the immersion that this style is defined with.
+When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](../view/onimmersionchange%28initial,_%29.md) is within the range of the immersion that this style is defined with.
 
-Use the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md) scene modifier to specify this style for an [`ImmersiveSpace`](immersivespace.md):
+Use the [`immersionStyle(selection:in:)`](../scene/immersionstyle%28selection,in%29.md) scene modifier to specify this style for an [`ImmersiveSpace`](../immersivespace.md):
 
 ```swift
 @main

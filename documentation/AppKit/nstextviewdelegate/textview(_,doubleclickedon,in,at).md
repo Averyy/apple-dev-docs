@@ -1,18 +1,23 @@
 # textView(_:doubleClickedOn:in:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when the user double-clicks a cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func textView(_ textView: NSTextView, doubleClickedOn cell: any NSTextAttachmentCellProtocol, in cellFrame: NSRect, at charIndex: Int)
+```
+
+```objc
+- (void) textView:(NSTextView *) textView doubleClickedOnCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) cellFrame atIndex:(NSUInteger) charIndex;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ The delegate can use this message as its cue to perform an action, such as openi
 
 ## See Also
 
-- [func textView(NSTextView, clickedOn: any NSTextAttachmentCellProtocol, in: NSRect, at: Int)](nstextviewdelegate/textview(_:clickedon:in:at:).md)
+### Clicking and Pasting
+- [func textView(NSTextView, clickedOn: any NSTextAttachmentCellProtocol, in: NSRect, at: Int)](./textview%28_,clickedon,in,at%29.md)
   Sent when the user clicks a cell.
-- [func textView(NSTextView, clickedOnLink: Any, at: Int) -> Bool](nstextviewdelegate/textview(_:clickedonlink:at:).md)
+- [func textView(NSTextView, clickedOnLink: Any, at: Int) -> Bool](./textview%28_,clickedonlink,at%29.md)
   Sent after the user clicks a link.
 
 

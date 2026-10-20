@@ -1,7 +1,8 @@
 # tableView(_:heightForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the height to use for a row in a specified location.
 
@@ -18,9 +19,13 @@ Asks the delegate for the height to use for a row in a specified location.
 optional func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
 ```
 
+```objc
+- (CGFloat) tableView:(UITableView *) tableView heightForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## Mentions
 
-- [Configuring the cells for your table](configuring-the-cells-for-your-table.md)
+- [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
 #### Return Value
 
@@ -28,7 +33,7 @@ A nonnegative floating-point value that specifies the height (in points) that `r
 
 #### Discussion
 
-Override this method when the rows of your table are not all the same height. If your rows are the same height, do not override this method; assign a value to the [`rowHeight`](uitableview/rowheight.md) property of [`UITableView`](uitableview.md) instead. The value returned by this method takes precedence over the value in the [`rowHeight`](uitableview/rowheight.md) property.
+Override this method when the rows of your table are not all the same height. If your rows are the same height, do not override this method; assign a value to the [`rowHeight`](../uitableview/rowheight.md) property of [`UITableView`](../uitableview.md) instead. The value returned by this method takes precedence over the value in the [`rowHeight`](../uitableview/rowheight.md) property.
 
 Before it appears onscreen, the table view calls this method for the items in the visible portion of the table. As the user scrolls, the table view calls the method for items only when they move onscreen. It calls the method each time the item appears onscreen, regardless of whether it appeared onscreen previously.
 
@@ -39,13 +44,15 @@ Before it appears onscreen, the table view calls this method for the items in th
 
 ## See Also
 
-- [func tableView(UITableView, estimatedHeightForRowAt: IndexPath) -> CGFloat](uitableviewdelegate/tableview(_:estimatedheightforrowat:).md)
+### Related Documentation
+- [func tableView(UITableView, estimatedHeightForRowAt: IndexPath) -> CGFloat](./tableview%28_,estimatedheightforrowat%29.md)
   Asks the delegate for the estimated height of a row in a specified location.
-- [func tableView(UITableView, heightForHeaderInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:heightforheaderinsection:).md)
+### Providing header, footer, and row heights
+- [func tableView(UITableView, heightForHeaderInSection: Int) -> CGFloat](./tableview%28_,heightforheaderinsection%29.md)
   Asks the delegate for the height to use for the header of a particular section.
-- [func tableView(UITableView, heightForFooterInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:heightforfooterinsection:).md)
+- [func tableView(UITableView, heightForFooterInSection: Int) -> CGFloat](./tableview%28_,heightforfooterinsection%29.md)
   Asks the delegate for the height to use for the footer of a particular section.
-- [class let automaticDimension: CGFloat](uitableview/automaticdimension.md)
+- [class let automaticDimension: CGFloat](../uitableview/automaticdimension.md)
   A constant representing the default value for a given dimension.
 
 

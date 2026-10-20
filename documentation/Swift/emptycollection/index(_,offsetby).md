@@ -1,7 +1,8 @@
 # index(_:offsetBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index that is the specified distance from the given index.
 
@@ -37,7 +38,7 @@ print(s[i])
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

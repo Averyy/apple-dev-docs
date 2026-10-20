@@ -1,7 +1,8 @@
 # recipientVehicleID
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vehicle to receive the action request.
 
@@ -20,7 +21,7 @@ let recipientVehicleID: String
 
 #### Discussion
 
-This string is the same one that appears in the [`identifier`](vehiclereport/identifier.md) property of one of the session’s vehicle reports.
+This string is the same one that appears in the [`identifier`](../vehiclereport/identifier.md) property of one of the session’s vehicle reports.
 
 
 ---

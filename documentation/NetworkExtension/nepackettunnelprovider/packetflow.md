@@ -1,9 +1,10 @@
 # packetFlow
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A [`NEPacketTunnelFlow`](nepackettunnelflow.md) object which is used to receive IP packets routed to the tunnel’s virtual interface and inject IP packets into the networking stack via the tunnel’s virtual interface.
+A [`NEPacketTunnelFlow`](../nepackettunnelflow.md) object which is used to receive IP packets routed to the tunnel’s virtual interface and inject IP packets into the networking stack via the tunnel’s virtual interface.
 
 **Availability**:
 - iOS 9.0+
@@ -17,6 +18,10 @@ A [`NEPacketTunnelFlow`](nepackettunnelflow.md) object which is used to receive 
 
 ```swift
 var packetFlow: NEPacketTunnelFlow { get }
+```
+
+```objc
+@property (readonly) NEPacketTunnelFlow * packetFlow;
 ```
 
 

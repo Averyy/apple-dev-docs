@@ -1,12 +1,15 @@
 # NSOpenGLContext.Parameter
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify context parameters.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.)
 
 ## Declaration
 
@@ -14,54 +17,58 @@ Constants that specify context parameters.
 enum Parameter
 ```
 
+```c
+enum NSOpenGLContextParameter : NSInteger;
+```
+
 #### Overview
 
-These attribute names are used by [`setValues(_:for:)`](nsopenglcontext/setvalues(_:for:).md) and [`getValues(_:for:)`](nsopenglcontext/getvalues(_:for:).md).
+These attribute names are used by [`setValues(_:for:)`](./setvalues%28_,for%29.md) and [`getValues(_:for:)`](./getvalues%28_,for%29.md).
 
 ## Topics
 
 ### Parameters
-- [NSOpenGLContext.Parameter.swapInterval](nsopenglcontext/parameter/swapinterval.md)
+- [NSOpenGLContext.Parameter.swapInterval](./parameter/swapinterval.md)
   Set or get the swap interval.
-- [NSOpenGLContext.Parameter.surfaceOrder](nsopenglcontext/parameter/surfaceorder.md)
+- [NSOpenGLContext.Parameter.surfaceOrder](./parameter/surfaceorder.md)
   Set or get the surface order.
-- [NSOpenGLContext.Parameter.surfaceOpacity](nsopenglcontext/parameter/surfaceopacity.md)
+- [NSOpenGLContext.Parameter.surfaceOpacity](./parameter/surfaceopacity.md)
   Set or get the surface opacity.
-- [NSOpenGLContext.Parameter.surfaceBackingSize](nsopenglcontext/parameter/surfacebackingsize.md)
+- [NSOpenGLContext.Parameter.surfaceBackingSize](./parameter/surfacebackingsize.md)
   Set or get the height and width of the back buffer.
-- [NSOpenGLContext.Parameter.reclaimResources](nsopenglcontext/parameter/reclaimresources.md)
+- [NSOpenGLContext.Parameter.reclaimResources](./parameter/reclaimresources.md)
   Enable or disable reclaiming resources.
-- [NSOpenGLContext.Parameter.currentRendererID](nsopenglcontext/parameter/currentrendererid.md)
+- [NSOpenGLContext.Parameter.currentRendererID](./parameter/currentrendererid.md)
   Get the current renderer ID.
-- [NSOpenGLContext.Parameter.gpuVertexProcessing](nsopenglcontext/parameter/gpuvertexprocessing.md)
+- [NSOpenGLContext.Parameter.gpuVertexProcessing](./parameter/gpuvertexprocessing.md)
   Get whether the CPU is currently processing vertices with the GPU.
-- [NSOpenGLContext.Parameter.gpuFragmentProcessing](nsopenglcontext/parameter/gpufragmentprocessing.md)
+- [NSOpenGLContext.Parameter.gpuFragmentProcessing](./parameter/gpufragmentprocessing.md)
   Get whether the CPU is currently processing fragments with the GPU.
-- [NSOpenGLContext.Parameter.hasDrawable](nsopenglcontext/parameter/hasdrawable.md)
+- [NSOpenGLContext.Parameter.hasDrawable](./parameter/hasdrawable.md)
   Returns a Boolean that indicates whether a drawable is attached to the context.
-- [NSOpenGLContext.Parameter.mpSwapsInFlight](nsopenglcontext/parameter/mpswapsinflight.md)
+- [NSOpenGLContext.Parameter.mpSwapsInFlight](./parameter/mpswapsinflight.md)
   The number of frames that the multithreaded OpenGL engine can process before stalling.
-- [NSOpenGLContext.Parameter.swapRectangle](nsopenglcontext/parameter/swaprectangle.md)
+- [NSOpenGLContext.Parameter.swapRectangle](./parameter/swaprectangle.md)
   Sets or gets the swap rectangle.
-- [NSOpenGLContext.Parameter.swapRectangleEnable](nsopenglcontext/parameter/swaprectangleenable.md)
+- [NSOpenGLContext.Parameter.swapRectangleEnable](./parameter/swaprectangleenable.md)
   Enables or disables the swap rectangle in the context’s drawable object.
-- [NSOpenGLContext.Parameter.rasterizationEnable](nsopenglcontext/parameter/rasterizationenable.md)
+- [NSOpenGLContext.Parameter.rasterizationEnable](./parameter/rasterizationenable.md)
   If disabled, all rasterization of 2D and 3D primitives is disabled.
-- [NSOpenGLContext.Parameter.stateValidation](nsopenglcontext/parameter/statevalidation.md)
+- [NSOpenGLContext.Parameter.stateValidation](./parameter/statevalidation.md)
   If enabled, OpenGL inspects the context state each time the update method is called to ensure that it is in an appropriate state for switching between renderers.
-- [NSOpenGLContext.Parameter.surfaceSurfaceVolatile](nsopenglcontext/parameter/surfacesurfacevolatile.md)
+- [NSOpenGLContext.Parameter.surfaceSurfaceVolatile](./parameter/surfacesurfacevolatile.md)
 ### Initializers
-- [init?(rawValue: Int)](nsopenglcontext/parameter/init(rawvalue:).md)
+- [init?(rawValue: Int)](./parameter/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # square
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Square symbol.
 
@@ -19,6 +20,8 @@ Square symbol.
 ```swift
 static var square: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

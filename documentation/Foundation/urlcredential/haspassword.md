@@ -1,7 +1,8 @@
 # hasPassword
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the credential has a password.
 
@@ -20,27 +21,32 @@ A Boolean value that indicates whether the credential has a password.
 var hasPassword: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasPassword;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver has a password, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This value is [`true`](../../Swift/true.md) if the receiver has a password, [`false`](../../Swift/false.md) otherwise.
 
 This method does not attempt to retrieve the password.
 
-If this credential’s password is stored in the user’s keychain, [`password`](urlcredential/password.md) may return `nil` even if this method returns [`true`](https://developer.apple.com/documentation/swift/true)—getting the password may fail, or the user may refuse access.
+If this credential’s password is stored in the user’s keychain, [`password`](./password.md) may return `nil` even if this method returns [`true`](../../Swift/true.md)—getting the password may fail, or the user may refuse access.
 
 ## See Also
 
-- [var user: String?](urlcredential/user.md)
+### Getting credential properties
+- [var user: String?](./user.md)
   The credential’s user name.
-- [var certificates: [Any]](urlcredential/certificates.md)
+- [var certificates: [Any]](./certificates.md)
   The intermediate certificates of the credential, if it is a client certificate credential.
-- [var password: String?](urlcredential/password.md)
+- [var password: String?](./password.md)
   The credential’s password.
-- [var identity: SecIdentity?](urlcredential/identity.md)
+- [var identity: SecIdentity?](./identity.md)
   The identity of this credential if it is a client certificate credential.
-- [var persistence: URLCredential.Persistence](urlcredential/persistence-swift.property.md)
+- [var persistence: URLCredential.Persistence](./persistence-swift.property.md)
   The credential’s persistence setting.
-- [URLCredential.Persistence](urlcredential/persistence-swift.enum.md)
+- [URLCredential.Persistence](./persistence-swift.enum.md)
   Constants that specify how long the credential will be kept.
 
 

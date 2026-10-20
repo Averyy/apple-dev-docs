@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 **Availability**:

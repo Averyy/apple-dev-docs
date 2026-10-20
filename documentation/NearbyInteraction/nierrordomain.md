@@ -1,7 +1,8 @@
 # NIErrorDomain
 
 **Framework**: Nearby Interaction  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A unique error domain for Nearby Interaction.
 
@@ -17,9 +18,13 @@ A unique error domain for Nearby Interaction.
 let NIErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const NIErrorDomain;
+```
+
 #### Discussion
 
-For more information on Core Foundation error domains, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
+For more information on Core Foundation error domains, see [Error domains](../CoreFoundation/error-domains.md).
 
 
 ---

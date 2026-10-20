@@ -1,7 +1,8 @@
 # Family Controls
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
 
@@ -11,19 +12,21 @@ A Boolean value that indicates whether the app can request or revoke authorizati
 - Mac Catalyst 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.family-controls`
+- **Type**: boolean
 
 #### Discussion
 
-You must add the Family Controls entitlement to your app before you call the [`AuthorizationCenter`](https://developer.apple.com/documentation/familycontrols/authorizationcenter) class’s [`requestAuthorization(completionHandler:)`](https://developer.apple.com/documentation/familycontrols/authorizationcenter/requestauthorization(completionhandler:)) or [`revokeAuthorization(completionHandler:)`](https://developer.apple.com/documentation/familycontrols/authorizationcenter/revokeauthorization(completionhandler:)) methods.
+You must add the Family Controls entitlement to your app before you call the [`AuthorizationCenter`](../../FamilyControls/authorizationcenter.md) class’s [`requestAuthorization(completionHandler:)`](../../FamilyControls/authorizationcenter/requestauthorization%28completionhandler%29.md) or [`revokeAuthorization(completionHandler:)`](../../FamilyControls/authorizationcenter/revokeauthorization%28completionhandler%29.md) methods.
 
-Adding the Family Controls capability to your app automatically sets this entitlement. Before submitting your app to the App Store, you must [`request permission`](https://developer.apple.comhttps://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+Adding the Family Controls capability to your app automatically sets this entitlement. Before submitting your app to the App Store, you must [request permission](https://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 
 ## See Also
 
-- [Family Controls App and Website Usage](entitlements/com.apple.developer.family-controls.app-and-website-usage.md)
+### Family controls
+- [Family Controls App and Website Usage](./com.apple.developer.family-controls.app-and-website-usage.md)
   A Boolean value that indicates whether the app may, with the person’s permission, access app and website usage information from the current device.
 
 

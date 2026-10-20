@@ -1,7 +1,8 @@
 # init(player:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+
@@ -14,6 +15,10 @@
 
 ```swift
 init(player: AVPlayer?)
+```
+
+```objc
+- (instancetype) initWithPlayer:(AVPlayer *) player;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # UIColor.Prominence.secondary
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A color with a secondary prominence.
 
@@ -18,13 +19,18 @@ A color with a secondary prominence.
 case secondary
 ```
 
+```c
+UIColorProminenceSecondary
+```
+
 ## See Also
 
-- [UIColor.Prominence.primary](uicolor/prominence-swift.enum/primary.md)
+### Constants
+- [UIColor.Prominence.primary](./primary.md)
   A color with a primary prominence, the most prominent in the interface.
-- [UIColor.Prominence.tertiary](uicolor/prominence-swift.enum/tertiary.md)
+- [UIColor.Prominence.tertiary](./tertiary.md)
   A color with a tertiary prominence.
-- [UIColor.Prominence.quaternary](uicolor/prominence-swift.enum/quaternary.md)
+- [UIColor.Prominence.quaternary](./quaternary.md)
   A color with a quaternary prominence, the least prominent in the interface.
 
 

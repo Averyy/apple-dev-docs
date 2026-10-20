@@ -1,7 +1,8 @@
 # keylineTint(_:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a subtle tint color to the surrounding border of a Live Activity that appears in the Dynamic Island.
 

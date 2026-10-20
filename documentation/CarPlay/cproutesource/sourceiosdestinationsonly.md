@@ -1,7 +1,8 @@
 # CPRouteSource.sourceiOSDestinationsOnly
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Only the destination(s) from the device are being used, routes are not.
 
@@ -14,6 +15,10 @@ Only the destination(s) from the device are being used, routes are not.
 
 ```swift
 case sourceiOSDestinationsOnly
+```
+
+```c
+CPRouteSourceiOSDestinationsOnly
 ```
 
 

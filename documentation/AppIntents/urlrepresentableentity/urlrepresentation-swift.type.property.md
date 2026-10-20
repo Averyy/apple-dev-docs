@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The URL representation of the app entity.
@@ -35,6 +36,11 @@ struct MyAppData: AppEntity, URLRepresentableEntity {
     static var urlRepresentation = URLRepresentation("https://example.com/note=\(.$contentID)")
 }
 ```
+
+## Default Implementations
+
+### URLRepresentableEntity Implementations
+- [var urlRepresentation: URL?](./urlrepresentation-swift.property.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new transition.
 
@@ -27,9 +28,10 @@ Creates a new transition.
 
 ## See Also
 
-- [var configuration: BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.property.md)
+### Creating the transition
+- [var configuration: BlurReplaceTransition.Configuration](./configuration-swift.property.md)
   The transition configuration.
-- [BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.struct.md)
+- [BlurReplaceTransition.Configuration](./configuration-swift.struct.md)
   Configuration properties for a transition.
 
 

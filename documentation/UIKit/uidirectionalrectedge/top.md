@@ -1,16 +1,19 @@
 # top
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The top edge.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- tvOS 13.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 13.0 (renamed: NSDirectionalRectEdge)
+- iPadOS 13.0+ - Deprecated in 13.0 (renamed: NSDirectionalRectEdge)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: NSDirectionalRectEdge)
+- tvOS 13.0+ - Deprecated in 13.0 (renamed: NSDirectionalRectEdge)
+- watchOS 6.0+ - Deprecated in 6.0 (renamed: NSDirectionalRectEdge)
+
+> **Deprecated**: Use [`top`](../nsdirectionalrectedge/top.md) instead.
 
 ## Declaration
 
@@ -18,15 +21,20 @@ The top edge.
 static var top: UIDirectionalRectEdge { get }
 ```
 
+```c
+UIDirectionalRectEdgeTop
+```
+
 ## See Also
 
-- [static var leading: UIDirectionalRectEdge](uidirectionalrectedge/leading.md)
+### Constants
+- [static var leading: UIDirectionalRectEdge](./leading.md)
   The leading edge.
-- [static var bottom: UIDirectionalRectEdge](uidirectionalrectedge/bottom.md)
+- [static var bottom: UIDirectionalRectEdge](./bottom.md)
   The bottom edge.
-- [static var trailing: UIDirectionalRectEdge](uidirectionalrectedge/trailing.md)
+- [static var trailing: UIDirectionalRectEdge](./trailing.md)
   The trailing edge.
-- [static var all: UIDirectionalRectEdge](uidirectionalrectedge/all.md)
+- [static var all: UIDirectionalRectEdge](./all.md)
   All edges.
 
 

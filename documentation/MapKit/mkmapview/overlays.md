@@ -1,7 +1,8 @@
 # overlays
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overlay objects associated with the map view.
 
@@ -19,21 +20,26 @@ The overlay objects associated with the map view.
 var overlays: [any MKOverlay] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<id<MKOverlay>> * overlays;
+```
+
 #### Discussion
 
-This property contains the union of all overlays at the different levels of the map. The objects in this array adopt the [`MKOverlay`](mkoverlay.md) protocol. If the map view has no associated no overlays, the value of this property is an empty array.
+This property contains the union of all overlays at the different levels of the map. The objects in this array adopt the [`MKOverlay`](../mkoverlay.md) protocol. If the map view has no associated no overlays, the value of this property is an empty array.
 
 The order of the objects in this array doesn’t necessarily reflect their visual order on the map.
 
 ## See Also
 
-- [func overlays(in: MKOverlayLevel) -> [any MKOverlay]](mkmapview/overlays(in:).md)
+### Accessing overlays
+- [func overlays(in: MKOverlayLevel) -> [any MKOverlay]](./overlays%28in%29.md)
   Returns overlay objects in the specified level of the map.
-- [func renderer(for: any MKOverlay) -> MKOverlayRenderer?](mkmapview/renderer(for:).md)
+- [func renderer(for: any MKOverlay) -> MKOverlayRenderer?](./renderer%28for%29.md)
   Returns the renderer object for drawing the contents of the specified overlay object.
-- [enum MKOverlayLevel](mkoverlaylevel.md)
+- [enum MKOverlayLevel](../mkoverlaylevel.md)
   Constants that indicate the position of overlays relative to other content.
-- [func view(for: any MKOverlay) -> MKOverlayView](mkmapview/view(for:)-38z60.md)
+- [func view(for: any MKOverlay) -> MKOverlayView](./view%28for%29-38z60.md)
   Returns the view associated with the overlay object, if any.
 
 

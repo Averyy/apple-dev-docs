@@ -14,7 +14,7 @@ can work with. These type parameters act as placeholders that
 are replaced by actual concrete type arguments when an instance of a generic type is
 created or a generic function or initializer is called.
 
-For an overview of generics in Swift, see [Generics](Generics.md).
+For an overview of generics in Swift, see [Generics](../LanguageGuide/Generics.md).
 
 <!--
   NOTE: Generic types are sometimes referred to as :newTerm:`parameterized types`
@@ -277,7 +277,7 @@ or initializer to invoke.
 
 For more information about generic `where` clauses and to see an example
 of one in a generic function declaration,
-see [Generic Where Clauses](Generics.md#Generic-Where-Clauses).
+see [Generic Where Clauses](../LanguageGuide/Generics.md#Generic-Where-Clauses).
 
 > Grammar of a generic parameter clause:
 >

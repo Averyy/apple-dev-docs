@@ -1,7 +1,8 @@
 # InAppPurchaseLocalizationV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localized display name and description for an In-App Purchase configured with the v2 API, shown to customers in a specific language.
 
@@ -10,21 +11,21 @@ The localized display name and description for an In-App Purchase configured wit
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalizationV2
 ```
 
 ## Topics
 
 ### Objects and types
-- [object InAppPurchaseLocalizationV2.Attributes](inapppurchaselocalizationv2/attributes-data.dictionary.md)
+- [object InAppPurchaseLocalizationV2.Attributes](./inapppurchaselocalizationv2/attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase localization resource.
-- [object InAppPurchaseLocalizationV2.Relationships](inapppurchaselocalizationv2/relationships-data.dictionary.md)
+- [object InAppPurchaseLocalizationV2.Relationships](./inapppurchaselocalizationv2/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseLocalizations`
 - `id` (string) *(required)*
 - `attributes` (InAppPurchaseLocalizationV2.Attributes)
 - `relationships` (InAppPurchaseLocalizationV2.Relationships)
@@ -32,13 +33,14 @@ object InAppPurchaseLocalizationV2
 
 ## See Also
 
-- [object InAppPurchaseLocalizationV2CreateRequest](inapppurchaselocalizationv2createrequest.md)
+### Objects
+- [object InAppPurchaseLocalizationV2CreateRequest](./inapppurchaselocalizationv2createrequest.md)
   The request body you use to create an In-App Purchase localization with the v2 API.
-- [object InAppPurchaseLocalizationV2Response](inapppurchaselocalizationv2response.md)
+- [object InAppPurchaseLocalizationV2Response](./inapppurchaselocalizationv2response.md)
   The response body for endpoints that create, read, or modify an In-App Purchase localization with the v2 API.
-- [object InAppPurchaseLocalizationV2UpdateRequest](inapppurchaselocalizationv2updaterequest.md)
+- [object InAppPurchaseLocalizationV2UpdateRequest](./inapppurchaselocalizationv2updaterequest.md)
   The request body you use to update an In-App Purchase localization with the v2 API.
-- [object InAppPurchaseLocalizationsV2Response](inapppurchaselocalizationsv2response.md)
+- [object InAppPurchaseLocalizationsV2Response](./inapppurchaselocalizationsv2response.md)
   The response body for endpoints that list In-App Purchase localizations configured with the v2 API.
 
 

@@ -1,7 +1,8 @@
 # maxPixelClock
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Maximum pixel clock frequency in Hz, with error.
 
@@ -10,7 +11,7 @@ Maximum pixel clock frequency in Hz, with error.
 
 ## Declaration
 
-```swift
+```c
 UInt64 maxPixelClock;
 ```
 

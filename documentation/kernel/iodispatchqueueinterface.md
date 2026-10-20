@@ -1,21 +1,23 @@
 # IODispatchQueueInterface
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```cpp
 class IODispatchQueueInterface : OSInterface
 ```
 
 ## See Also
 
-- [IODispatchSourceInterface](iodispatchsourceinterface.md)
-- [IODispatchQueue](iodispatchqueue.md)
+### Dispatch Queues
+- [IODispatchSourceInterface](./iodispatchsourceinterface.md)
+- [IODispatchQueue](./iodispatchqueue.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # level
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the amount of reverb, in decibels.
 
@@ -20,15 +21,20 @@ Controls the amount of reverb, in decibels.
 var level: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float level;
+```
+
 #### Discussion
 
 The default value is `0.0`. The values must be within the range of `-40` to `40` dB.
 
 ## See Also
 
-- [var filterParameters: AVAudioUnitEQFilterParameters](avaudioenvironmentreverbparameters/filterparameters.md)
+### Getting and setting reverb values
+- [var filterParameters: AVAudioUnitEQFilterParameters](./filterparameters.md)
   A filter that the system applies to the output.
-- [func loadFactoryReverbPreset(AVAudioUnitReverbPreset)](avaudioenvironmentreverbparameters/loadfactoryreverbpreset(_:).md)
+- [func loadFactoryReverbPreset(AVAudioUnitReverbPreset)](./loadfactoryreverbpreset%28_%29.md)
   Loads one of the reverbs factory presets.
 
 

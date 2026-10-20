@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The working color space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The working color space.
 var colorSpace: CGColorSpace? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) CGColorSpaceRef colorSpace;
+```
+
 ## See Also
 
-- [var cubeData: Data](cicolorcubewithcolorspace/cubedata.md)
+### Instance Properties
+- [var cubeData: Data](./cubedata.md)
   The cube texture data to use as a color lookup table.
-- [var cubeDimension: Float](cicolorcubewithcolorspace/cubedimension.md)
+- [var cubeDimension: Float](./cubedimension.md)
   The length, in texels, of each side of the cube texture.
-- [var inputImage: CIImage?](cicolorcubewithcolorspace/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var extrapolate: Bool](cicolorcubewithcolorspace/extrapolate.md)
+- [var extrapolate: Bool](./extrapolate.md)
   If true, then the filter extrapolates the color cube for any RGB component values outside the range 0.0 to 1.0.
 
 

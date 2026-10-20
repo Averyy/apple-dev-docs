@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.PhraseCountGenerator
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Abstract base class defining the interface for classes that generate `PhraseCount` via an iterator.
 
@@ -22,26 +23,27 @@ class PhraseCountGenerator
 ## Topics
 
 ### Protocol requirements
-- [init()](sfcustomlanguagemodeldata/phrasecountgenerator/init.md)
-- [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/phrasecountgenerator/iterator.md)
+- [init()](./phrasecountgenerator/init%28%29.md)
+- [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](./phrasecountgenerator/iterator.md)
 
 ## Relationships
 
 ### Inherited By
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator](sfcustomlanguagemodeldata/templatephrasecountgenerator.md)
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator](./templatephrasecountgenerator.md)
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [DataInsertable](datainsertable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [DataInsertable](../datainsertable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [func insert(phraseCountGenerator: SFCustomLanguageModelData.PhraseCountGenerator)](sfcustomlanguagemodeldata/insert(phrasecountgenerator:).md)
+### Adding parameterized sample data with a generator
+- [func insert(phraseCountGenerator: SFCustomLanguageModelData.PhraseCountGenerator)](./insert%28phrasecountgenerator%29.md)
   Add a stream of samples to the body of training data.
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator](sfcustomlanguagemodeldata/templatephrasecountgenerator.md)
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator](./templatephrasecountgenerator.md)
   A `PhraseCountGenerator` that produces `PhraseCount` values based on templates.
 
 

@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an async iterator over the elements of this sequence.
 
@@ -18,9 +19,10 @@ func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator
 
 ## See Also
 
-- [AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/iterator.md)
+### Creating an iterator
+- [AlarmManager.AlarmUpdates.Iterator](./iterator.md)
   A nested type that iterates over the elements of this sequence.
-- [AlarmManager.AlarmUpdates.Element](alarmmanager/alarmupdates-swift.struct/element.md)
+- [AlarmManager.AlarmUpdates.Element](./element.md)
   A type representing the sequence’s elements.
 
 

@@ -1,14 +1,15 @@
 # RECEIVE
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool RECEIVE(SCSITaskIdentifier request, IOMemoryDescriptor *dataBuffer, SCSICmdField3Byte TRANSFER_LENGTH, SCSICmdField1Byte CONTROL);
 ```
 

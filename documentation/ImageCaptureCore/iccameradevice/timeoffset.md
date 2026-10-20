@@ -1,7 +1,8 @@
 # timeOffset
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time offset, in seconds, between the camera’s clock and the computer’s clock.
 
@@ -18,13 +19,18 @@ The time offset, in seconds, between the camera’s clock and the computer’s c
 var timeOffset: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval timeOffset;
+```
+
 #### Discussion
 
-The value of this property is positive if the camera’s clock is ahead of the computer’s clock. Ignore this property if the camera’s [`capabilities`](icdevice/capabilities.md) do not include [`cameraDeviceCanSyncClock`](icdevicecapability/cameradevicecansyncclock.md).
+The value of this property is positive if the camera’s clock is ahead of the computer’s clock. Ignore this property if the camera’s [`capabilities`](../icdevice/capabilities.md) do not include [`cameraDeviceCanSyncClock`](../icdevicecapability/cameradevicecansyncclock.md).
 
 ## See Also
 
-- [func requestSyncClock()](iccameradevice/requestsyncclock.md)
+### Synchronizing the Clock
+- [func requestSyncClock()](./requestsyncclock%28%29.md)
   Synchronizes the camera’s clock with the computer’s clock.
 
 

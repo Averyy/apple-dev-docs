@@ -7,14 +7,14 @@ Specify values for spot functions.
 ## Topics
 
 ### Constants
-- [var cmSpotFunctionUnknown: Int](cmspotfunctionunknown.md)
-- [var cmSpotFunctionDefault: Int](cmspotfunctiondefault.md)
-- [var cmSpotFunctionRound: Int](cmspotfunctionround.md)
-- [var cmSpotFunctionDiamond: Int](cmspotfunctiondiamond.md)
-- [var cmSpotFunctionEllipse: Int](cmspotfunctionellipse.md)
-- [var cmSpotFunctionLine: Int](cmspotfunctionline.md)
-- [var cmSpotFunctionSquare: Int](cmspotfunctionsquare.md)
-- [var cmSpotFunctionCross: Int](cmspotfunctioncross.md)
+- [var cmSpotFunctionUnknown: Int](../cmspotfunctionunknown.md)
+- [var cmSpotFunctionDefault: Int](../cmspotfunctiondefault.md)
+- [var cmSpotFunctionRound: Int](../cmspotfunctionround.md)
+- [var cmSpotFunctionDiamond: Int](../cmspotfunctiondiamond.md)
+- [var cmSpotFunctionEllipse: Int](../cmspotfunctionellipse.md)
+- [var cmSpotFunctionLine: Int](../cmspotfunctionline.md)
+- [var cmSpotFunctionSquare: Int](../cmspotfunctionsquare.md)
+- [var cmSpotFunctionCross: Int](../cmspotfunctioncross.md)
 
 
 ---

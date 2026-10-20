@@ -1,7 +1,8 @@
 # newSubdividedMesh(_:submeshIndex:subdivisionLevels:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new mesh by subdividing the specified mesh.
 
@@ -19,6 +20,10 @@ Creates a new mesh by subdividing the specified mesh.
 class func newSubdividedMesh(_ mesh: MDLMesh, submeshIndex: Int, subdivisionLevels: Int) -> Self?
 ```
 
+```objc
++ (instancetype) newSubdividedMesh:(MDLMesh *) mesh submeshIndex:(NSUInteger) submeshIndex subdivisionLevels:(NSUInteger) subdivisionLevels;
+```
+
 #### Return Value
 
 A new mesh object, or `nil` if subdivision fails.
@@ -29,7 +34,7 @@ Surface subdivision creates a smooth mesh from a coarse mesh by splitting each p
 
 > **Note**:  The computational cost of subdivision increases exponentially with subdivision level. Depending on the arrangement of the original mesh and the device on which a mesh is to be rendered, using a subdivision level greater than 4 may result in more detail than would be visible when rendering.
 
-Meshes intended for use with surface subdivision contain topology information to ensure that the results of subdivision match the artist’s intent. To make use of this information, use the [`init(url:vertexDescriptor:bufferAllocator:preserveTopology:error:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:)-510xi.md) initializer when creating an [`MDLAsset`](mdlasset.md) object to load meshes from.
+Meshes intended for use with surface subdivision contain topology information to ensure that the results of subdivision match the artist’s intent. To make use of this information, use the [`init(url:vertexDescriptor:bufferAllocator:preserveTopology:error:)`](../mdlasset/init%28url,vertexdescriptor,bufferallocator,preservetopology,error%29-510xi.md) initializer when creating an [`MDLAsset`](../mdlasset.md) object to load meshes from.
 
 ## Parameters
 
@@ -39,12 +44,13 @@ Meshes intended for use with surface subdivision contain topology information to
 
 ## See Also
 
-- [init(vertexBuffer: any MDLMeshBuffer, vertexCount: Int, descriptor: MDLVertexDescriptor, submeshes: [MDLSubmesh])](mdlmesh/init(vertexbuffer:vertexcount:descriptor:submeshes:).md)
+### Creating a Custom Mesh
+- [init(vertexBuffer: any MDLMeshBuffer, vertexCount: Int, descriptor: MDLVertexDescriptor, submeshes: [MDLSubmesh])](./init%28vertexbuffer,vertexcount,descriptor,submeshes%29.md)
   Creates a mesh from a single vertex buffer with the specified parameters.
-- [init(vertexBuffers: [any MDLMeshBuffer], vertexCount: Int, descriptor: MDLVertexDescriptor, submeshes: [MDLSubmesh])](mdlmesh/init(vertexbuffers:vertexcount:descriptor:submeshes:).md)
+- [init(vertexBuffers: [any MDLMeshBuffer], vertexCount: Int, descriptor: MDLVertexDescriptor, submeshes: [MDLSubmesh])](./init%28vertexbuffers,vertexcount,descriptor,submeshes%29.md)
   Creates a mesh by unifying vertex data from multiple sources with the specified parameters.
-- [init(bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(bufferallocator:).md)
-- [init(meshBySubdividingMesh: MDLMesh, submeshIndex: Int32, subdivisionLevels: UInt32, allocator: (any MDLMeshBufferAllocator)?)](mdlmesh/init(meshbysubdividingmesh:submeshindex:subdivisionlevels:allocator:).md)
+- [init(bufferAllocator: (any MDLMeshBufferAllocator)?)](./init%28bufferallocator%29.md)
+- [init(meshBySubdividingMesh: MDLMesh, submeshIndex: Int32, subdivisionLevels: UInt32, allocator: (any MDLMeshBufferAllocator)?)](./init%28meshbysubdividingmesh,submeshindex,subdivisionlevels,allocator%29.md)
 
 
 ---

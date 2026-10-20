@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vector with the given components.
 

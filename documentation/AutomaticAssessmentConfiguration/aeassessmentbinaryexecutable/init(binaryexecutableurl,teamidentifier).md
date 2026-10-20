@@ -1,7 +1,8 @@
 # init(binaryExecutableURL:teamIdentifier:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -11,6 +12,10 @@
 
 ```swift
 init(binaryExecutableURL: URL, teamIdentifier: String?)
+```
+
+```objc
+- (instancetype) initWithBinaryExecutableURL:(NSURL *) binaryExecutableURL teamIdentifier:(NSString *) teamIdentifier;
 ```
 
 

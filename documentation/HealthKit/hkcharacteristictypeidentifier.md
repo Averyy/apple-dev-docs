@@ -1,17 +1,18 @@
 # HKCharacteristicTypeIdentifier
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The identifiers that create characteristic type objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,41 +20,46 @@ The identifiers that create characteristic type objects.
 struct HKCharacteristicTypeIdentifier
 ```
 
+```c
+typedef NSString * HKCharacteristicTypeIdentifier;
+```
+
 #### Overview
 
-To create an [`HKCharacteristicType`](hkcharacteristictype.md) instance, pass an [`HKCharacteristicTypeIdentifier`](hkcharacteristictypeidentifier.md) value to the [`characteristicType(forIdentifier:)`](hkobjecttype/characteristictype(foridentifier:).md) method.
+To create an [`HKCharacteristicType`](./hkcharacteristictype.md) instance, pass an [`HKCharacteristicTypeIdentifier`](./hkcharacteristictypeidentifier.md) value to the [`characteristicType(forIdentifier:)`](./hkobjecttype/characteristictype%28foridentifier%29.md) method.
 
 ## Topics
 
 ### Characteristic Types
-- [static let activityMoveMode: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/activitymovemode.md)
+- [static let activityMoveMode: HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier/activitymovemode.md)
   A characteristic identifier for the user’s activity mode.
-- [static let biologicalSex: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/biologicalsex.md)
+- [static let biologicalSex: HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier/biologicalsex.md)
   A characteristic type identifier for the user’s sex.
-- [static let bloodType: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/bloodtype.md)
+- [static let bloodType: HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier/bloodtype.md)
   A characteristic type identifier for the user’s blood type.
-- [static let dateOfBirth: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/dateofbirth.md)
+- [static let dateOfBirth: HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier/dateofbirth.md)
   A characteristic type identifier for the user’s date of birth.
-- [static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/fitzpatrickskintype.md)
+- [static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier/fitzpatrickskintype.md)
   A characteristic type identifier for the user’s skin type.
-- [static let wheelchairUse: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/wheelchairuse.md)
+- [static let wheelchairUse: HKCharacteristicTypeIdentifier](./hkcharacteristictypeidentifier/wheelchairuse.md)
   A characteristic identifier for the user’s use of a wheelchair.
 ### Initializers
-- [init(rawValue: String)](hkcharacteristictypeidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./hkcharacteristictypeidentifier/init%28rawvalue%29.md)
   Returns a newly initialized characteristic type identifier using the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func characteristicType(forIdentifier: HKCharacteristicTypeIdentifier) -> HKCharacteristicType?](hkobjecttype/characteristictype(foridentifier:).md)
+### Creating characteristic types
+- [class func characteristicType(forIdentifier: HKCharacteristicTypeIdentifier) -> HKCharacteristicType?](./hkobjecttype/characteristictype%28foridentifier%29.md)
   Returns the shared characteristic type for the provided identifier.
 
 

@@ -1,7 +1,8 @@
 # suggestedInvocationPhrase
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A phrase suggested to the user when they create a shortcut.
 
@@ -19,19 +20,32 @@ A phrase suggested to the user when they create a shortcut.
 var suggestedInvocationPhrase: String? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * suggestedInvocationPhrase;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite, nullable) NSString * suggestedInvocationPhrase;
+```
+
 #### Discussion
 
 The system displays the suggested invocation phrase to the user when they create the shortcut. Use a short, memorable phrase, such as “Soup time”.
 
-![A screenshot of adding a shortcut to Siri for one order of tomato soup.](/images/com.apple.foundation/media-3020431@2x.png)
+![A screenshot of adding a shortcut to Siri for one order of tomato soup.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-3020431@2x.png)
 
-> **Note**:  To access the [`suggestedInvocationPhrase`](nsuseractivity/suggestedinvocationphrase.md) property, import the *Intents* framework.
+> **Note**:  To access the [`suggestedInvocationPhrase`](./suggestedinvocationphrase.md) property, import the *Intents* framework.
 
 ## See Also
 
-- [var interaction: INInteraction?](nsuseractivity/interaction.md)
+### Providing SiriKit with activity details
+- [var interaction: INInteraction?](./interaction.md)
   The SiriKit interaction object to use when configuring your app.
-- [var shortcutAvailability: INShortcutAvailabilityOptions](nsuseractivity/shortcutavailability.md)
+- [var shortcutAvailability: INShortcutAvailabilityOptions](./shortcutavailability.md)
   A set of defined contexts in which an intent or activity might be relevant to a user.
 
 

@@ -1,17 +1,22 @@
 # ABMultiValueAdd(_:_:_:_:)
 
 **Framework**: Address Book  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a value and its label to a multi-value list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func ABMultiValueAdd(_ multiValue: ABMutableMultiValueRef!, _ value: CFTypeRef!, _ label: CFString!, _ outIdentifier: UnsafeMutablePointer<Unmanaged<CFString>?>!) -> Bool
+```
+
+```c
+extern bool ABMultiValueAdd(ABMutableMultiValueRef multiValue, CFTypeRef value, CFStringRef label, CFStringRef*outIdentifier);
 ```
 
 #### Return Value
@@ -20,46 +25,47 @@ func ABMultiValueAdd(_ multiValue: ABMutableMultiValueRef!, _ value: CFTypeRef!,
 
 #### Discussion
 
-This function performs no type checking and will let you adda value whose type does not match the types of the other valuesin the list. However, if you try to use a multi-value list whosevalues are not all of the same type, functions, such as the ABRecord [`ABRecordSetValue(_:_:_:_:)`](abrecordsetvalue(_:_:_:_:).md) function,will returns `NULL` or [`kABErrorInProperty`](kaberrorinproperty.md).
+This function performs no type checking and will let you adda value whose type does not match the types of the other valuesin the list. However, if you try to use a multi-value list whosevalues are not all of the same type, functions, such as the ABRecord [`ABRecordSetValue(_:_:_:_:)`](./abrecordsetvalue%28_,_,_,_%29.md) function,will returns `NULL` or [`kABErrorInProperty`](./kaberrorinproperty.md).
 
 ## Parameters
 
 - `multiValue`: The multi-value list you wish to modify.
-- `value`: An object representing a value in a multi-value list–it must be of the correct type. For example, if `multiValue` is the value for a property of type [`kABMultiStringProperty`](kabmultistringproperty.md), then `value` needs to be a CFString object. See Property Types for a list of supported types in a multi-value list(see descriptions of the `kABMulti...` constants). If `value` is `NULL`, this function raises an exception.
+- `value`: An object representing a value in a multi-value list–it must be of the correct type. For example, if `multiValue` is the value for a property of type [`kABMultiStringProperty`](./kabmultistringproperty.md), then `value` needs to be a CFString object. See Property Types for a list of supported types in a multi-value list(see descriptions of the `kABMulti...` constants). If `value` is `NULL`, this function raises an exception.
 - `label`: The label for `value`—it need not be unique. If `label` is `NULL`, this function raises an exception.
 - `outIdentifier`: If `value` is added successfully, this parameter returns the new identifier.
 
 ## See Also
 
-- [func ABMultiValueCopyIdentifierAtIndex(ABMultiValueRef!, CFIndex) -> Unmanaged<CFString>!](abmultivaluecopyidentifieratindex(_:_:).md)
+### Multi Values
+- [func ABMultiValueCopyIdentifierAtIndex(ABMultiValueRef!, CFIndex) -> Unmanaged<CFString>!](./abmultivaluecopyidentifieratindex%28_,_%29.md)
   Returns the identifier at the given index.
-- [func ABMultiValueCopyLabelAtIndex(ABMultiValue!, CFIndex) -> Unmanaged<CFString>!](abmultivaluecopylabelatindex(_:_:).md)
+- [func ABMultiValueCopyLabelAtIndex(ABMultiValue!, CFIndex) -> Unmanaged<CFString>!](./abmultivaluecopylabelatindex%28_,_%29.md)
   Returns the label for the given index.
-- [func ABMultiValueCopyPrimaryIdentifier(ABMultiValueRef!) -> Unmanaged<CFString>!](abmultivaluecopyprimaryidentifier(_:).md)
+- [func ABMultiValueCopyPrimaryIdentifier(ABMultiValueRef!) -> Unmanaged<CFString>!](./abmultivaluecopyprimaryidentifier%28_%29.md)
   Returns the identifier for the primary value.
-- [func ABMultiValueCopyValueAtIndex(ABMultiValue!, CFIndex) -> Unmanaged<CFTypeRef>!](abmultivaluecopyvalueatindex(_:_:).md)
+- [func ABMultiValueCopyValueAtIndex(ABMultiValue!, CFIndex) -> Unmanaged<CFTypeRef>!](./abmultivaluecopyvalueatindex%28_,_%29.md)
   Returns the value for the given index.
-- [func ABMultiValueCount(ABMultiValueRef!) -> CFIndex](abmultivaluecount(_:).md)
+- [func ABMultiValueCount(ABMultiValueRef!) -> CFIndex](./abmultivaluecount%28_%29.md)
   Returns the number of entries in a multi-value list.
-- [func ABMultiValueCreate() -> Unmanaged<ABMultiValueRef>!](abmultivaluecreate().md)
+- [func ABMultiValueCreate() -> Unmanaged<ABMultiValueRef>!](./abmultivaluecreate%28%29.md)
   Returns a new ABMultiValue object.
-- [func ABMultiValueCreateCopy(ABMultiValueRef!) -> Unmanaged<ABMultiValueRef>!](abmultivaluecreatecopy(_:).md)
+- [func ABMultiValueCreateCopy(ABMultiValueRef!) -> Unmanaged<ABMultiValueRef>!](./abmultivaluecreatecopy%28_%29.md)
   Returns a copy of a multi-value object.
-- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutable(_:).md)
+- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](./abmultivaluecreatemutable%28_%29.md)
   Returns a newly created mutable multi-value list object.
-- [func ABMultiValueCreateMutableCopy(ABMultiValue!) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutablecopy(_:).md)
+- [func ABMultiValueCreateMutableCopy(ABMultiValue!) -> Unmanaged<ABMutableMultiValue>!](./abmultivaluecreatemutablecopy%28_%29.md)
   Returns a mutable copy of a multi-value object.
-- [func ABMultiValueIndexForIdentifier(ABMultiValueRef!, CFString!) -> CFIndex](abmultivalueindexforidentifier(_:_:).md)
+- [func ABMultiValueIndexForIdentifier(ABMultiValueRef!, CFString!) -> CFIndex](./abmultivalueindexforidentifier%28_,_%29.md)
   Returns the index for the given identifier.
-- [func ABMultiValueInsert(ABMutableMultiValueRef!, CFTypeRef!, CFString!, CFIndex, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> Bool](abmultivalueinsert(_:_:_:_:_:).md)
+- [func ABMultiValueInsert(ABMutableMultiValueRef!, CFTypeRef!, CFString!, CFIndex, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> Bool](./abmultivalueinsert%28_,_,_,_,_%29.md)
   Inserts a value and its label at the given index in amulti-value list.
-- [func ABMultiValuePropertyType(ABMultiValueRef!) -> ABPropertyType](abmultivaluepropertytype(_:).md)
+- [func ABMultiValuePropertyType(ABMultiValueRef!) -> ABPropertyType](./abmultivaluepropertytype%28_%29.md)
   Returns the type for the values in a multi-value list.
-- [func ABMultiValueRemove(ABMutableMultiValueRef!, CFIndex) -> Bool](abmultivalueremove(_:_:).md)
+- [func ABMultiValueRemove(ABMutableMultiValueRef!, CFIndex) -> Bool](./abmultivalueremove%28_,_%29.md)
   Removes the value and label at the given index.
-- [func ABMultiValueReplaceLabel(ABMutableMultiValueRef!, CFString!, CFIndex) -> Bool](abmultivaluereplacelabel(_:_:_:).md)
+- [func ABMultiValueReplaceLabel(ABMutableMultiValueRef!, CFString!, CFIndex) -> Bool](./abmultivaluereplacelabel%28_,_,_%29.md)
   Replaces the label at the given index.
-- [func ABMultiValueReplaceValue(ABMutableMultiValueRef!, CFTypeRef!, CFIndex) -> Bool](abmultivaluereplacevalue(_:_:_:).md)
+- [func ABMultiValueReplaceValue(ABMutableMultiValueRef!, CFTypeRef!, CFIndex) -> Bool](./abmultivaluereplacevalue%28_,_,_%29.md)
   Replaces the value at the given index.
 
 

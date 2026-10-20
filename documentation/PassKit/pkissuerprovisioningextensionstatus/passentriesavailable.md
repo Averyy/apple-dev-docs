@@ -1,7 +1,8 @@
 # passEntriesAvailable
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a payment card is available to add to an iPhone.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether a payment card is available to add to an 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ A Boolean value that indicates whether a payment card is available to add to an 
 var passEntriesAvailable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL passEntriesAvailable;
+```
+
 ## See Also
 
-- [var remotePassEntriesAvailable: Bool](pkissuerprovisioningextensionstatus/remotepassentriesavailable.md)
+### Reporting pass availability
+- [var remotePassEntriesAvailable: Bool](./remotepassentriesavailable.md)
   A Boolean value that indicates whether a payment card is available to add to an Apple Watch.
 
 

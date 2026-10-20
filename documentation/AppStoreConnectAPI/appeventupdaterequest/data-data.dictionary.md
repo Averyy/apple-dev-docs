@@ -1,7 +1,8 @@
 # AppEventUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app event update request.
 
@@ -10,21 +11,21 @@ The request body you use to update an app event update request.
 
 ## Declaration
 
-```swift
+```
 object AppEventUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventUpdateRequest.Data.Attributes](appeventupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppEventUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app event update request resource.
 
 ## Properties
 
 - `attributes` (AppEventUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appEvents`
 
 
 ---

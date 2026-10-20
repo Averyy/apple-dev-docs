@@ -1,12 +1,13 @@
 # echosBullets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the receiver echoes a bullet character rather than each character typed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean that indicates whether the receiver echoes a bullet character rather t
 var echosBullets: Bool { get set }
 ```
 
+```objc
+@property BOOL echosBullets;
+```
+
 #### Discussion
 
-Default is [`true`](https://developer.apple.com/documentation/swift/true).
+Default is [`true`](../../Swift/true.md).
 
 
 ---

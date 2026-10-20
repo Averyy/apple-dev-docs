@@ -1,9 +1,10 @@
 # flags
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-Item-information flags specifying informationabout the item; see [`LSItemInfoFlags`](lsiteminfoflags.md) for a description of these flags.
+Item-information flags specifying informationabout the item; see [`LSItemInfoFlags`](../lsiteminfoflags.md) for a description of these flags.
 
 **Availability**:
 - Mac Catalyst 13.0+ - Deprecated in 13.1
@@ -13,6 +14,10 @@ Item-information flags specifying informationabout the item; see [`LSItemInfoFla
 
 ```swift
 var flags: LSItemInfoFlags
+```
+
+```c
+LSItemInfoFlags flags;
 ```
 
 

@@ -1,14 +1,15 @@
 # tUSBDeviceLPMStatus
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tUSBDeviceLPMStatus : unsigned int {
     ...
 } tUSBDeviceLPMStatus;
@@ -17,9 +18,9 @@ typedef enum tUSBDeviceLPMStatus : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBDeviceLPMStatusDefault](tusbdevicelpmstatus/kusbdevicelpmstatusdefault.md)
-- [kUSBDeviceLPMStatusDisabled](tusbdevicelpmstatus/kusbdevicelpmstatusdisabled.md)
-- [kUSBDeviceLPMStatusEnabled](tusbdevicelpmstatus/kusbdevicelpmstatusenabled.md)
+- [kUSBDeviceLPMStatusDefault](./tusbdevicelpmstatus/kusbdevicelpmstatusdefault.md)
+- [kUSBDeviceLPMStatusDisabled](./tusbdevicelpmstatus/kusbdevicelpmstatusdisabled.md)
+- [kUSBDeviceLPMStatusEnabled](./tusbdevicelpmstatus/kusbdevicelpmstatusenabled.md)
 
 
 ---

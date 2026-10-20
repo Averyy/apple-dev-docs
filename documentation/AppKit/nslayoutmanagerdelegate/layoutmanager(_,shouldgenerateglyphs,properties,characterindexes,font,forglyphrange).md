@@ -1,7 +1,8 @@
 # layoutManager(_:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables customization of the initial glyph generation process.
 
@@ -14,13 +15,17 @@ Enables customization of the initial glyph generation process.
 optional func layoutManager(_ layoutManager: NSLayoutManager, shouldGenerateGlyphs glyphs: UnsafePointer<CGGlyph>, properties props: UnsafePointer<NSLayoutManager.GlyphProperty>, characterIndexes charIndexes: UnsafePointer<Int>, font aFont: NSFont, forGlyphRange glyphRange: NSRange) -> Int
 ```
 
+```objc
+- (NSUInteger) layoutManager:(NSLayoutManager *) layoutManager shouldGenerateGlyphs:(const CGGlyph *) glyphs properties:(const NSGlyphProperty *) props characterIndexes:(const NSUInteger *) charIndexes font:(NSFont *) aFont forGlyphRange:(NSRange) glyphRange;
+```
+
 #### Return Value
 
 The actual glyph range stored in this method. By returning `0`, it can indicate for the layout manager to do the default processing.
 
 #### Discussion
 
-This message is sent whenever the layout manager is about to store the initial glyph information via [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](nslayoutmanager/setglyphs(_:properties:characterindexes:font:forglyphrange:).md). To customize the initial glyph generation process, this method can invoke [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](nslayoutmanager/setglyphs(_:properties:characterindexes:font:forglyphrange:).md) with modified glyph information.
+This message is sent whenever the layout manager is about to store the initial glyph information via [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](../nslayoutmanager/setglyphs%28_,properties,characterindexes,font,forglyphrange%29.md). To customize the initial glyph generation process, this method can invoke [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](../nslayoutmanager/setglyphs%28_,properties,characterindexes,font,forglyphrange%29.md) with modified glyph information.
 
 > **Note**:  Querying glyph information surrounding `glyphRange` could lead to recursion since the data might not be available yet.
 
@@ -35,11 +40,12 @@ This message is sent whenever the layout manager is about to store the initial g
 
 ## See Also
 
-- [func layoutManagerDidInvalidateLayout(NSLayoutManager)](nslayoutmanagerdelegate/layoutmanagerdidinvalidatelayout(_:).md)
+### Invalidating glyphs and layout
+- [func layoutManagerDidInvalidateLayout(NSLayoutManager)](./layoutmanagerdidinvalidatelayout%28_%29.md)
   Informs the delegate when the specified layout manager invalidates layout information (not glyph information).
-- [func layoutManager(NSLayoutManager, shouldUse: NSLayoutManager.ControlCharacterAction, forControlCharacterAt: Int) -> NSLayoutManager.ControlCharacterAction](nslayoutmanagerdelegate/layoutmanager(_:shoulduse:forcontrolcharacterat:).md)
+- [func layoutManager(NSLayoutManager, shouldUse: NSLayoutManager.ControlCharacterAction, forControlCharacterAt: Int) -> NSLayoutManager.ControlCharacterAction](./layoutmanager%28_,shoulduse,forcontrolcharacterat%29.md)
   Returns the control character action for the control character at the specified character index.
-- [NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction.md)
+- [NSLayoutManager.ControlCharacterAction](../nslayoutmanager/controlcharacteraction.md)
   Constants that describe actions for control characters.
 
 

@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized name for the stream.
 
@@ -15,9 +16,14 @@ A localized name for the stream.
 var localizedName: String { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSString * localizedName;
+```
+
 ## See Also
 
-- [var streamID: UUID](cmioextensionstream/streamid.md)
+### Identifying a Stream
+- [var streamID: UUID](./streamid.md)
   A universally unique identifier for the stream.
 
 

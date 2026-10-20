@@ -1,7 +1,8 @@
 # CiXcodeVersion.Relationships.MacOsVersions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data, links, and paging information that describe the relationship between the Xcode Versions and the macOS Versions resources.
 
@@ -10,14 +11,14 @@ The data, links, and paging information that describe the relationship between t
 
 ## Declaration
 
-```swift
+```
 object CiXcodeVersion.Relationships.MacOsVersions
 ```
 
 ## Topics
 
 ### Objects
-- [object CiXcodeVersion.Relationships.MacOsVersions.Data](cixcodeversion/relationships-data.dictionary/macosversions-data.dictionary/data-data.dictionary.md)
+- [object CiXcodeVersion.Relationships.MacOsVersions.Data](./macosversions-data.dictionary/data-data.dictionary.md)
   The type and ID of a related macOS Versions resource.
 
 ## Properties

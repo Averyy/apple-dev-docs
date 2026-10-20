@@ -1,7 +1,8 @@
 # CPAssistantCellActionType
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The supported Siri actions of the assistant cell.
 
@@ -16,33 +17,38 @@ The supported Siri actions of the assistant cell.
 enum CPAssistantCellActionType
 ```
 
+```c
+enum CPAssistantCellActionType : NSInteger;
+```
+
 ## Topics
 
 ### Siri Actions
-- [CPAssistantCellActionType.playMedia](cpassistantcellactiontype/playmedia.md)
+- [CPAssistantCellActionType.playMedia](./cpassistantcellactiontype/playmedia.md)
   Provides an action that uses Siri to prompt the user for media playback.
-- [CPAssistantCellActionType.startCall](cpassistantcellactiontype/startcall.md)
+- [CPAssistantCellActionType.startCall](./cpassistantcellactiontype/startcall.md)
   Provides an action that uses Siri to prompt the user for a person, group, or business to call.
 ### Initializers
-- [init?(rawValue: Int)](cpassistantcellactiontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cpassistantcellactiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var position: CPListItem.AssistantCellPosition](cpassistantcellconfiguration/position.md)
+### Getting the Configuration Attributes
+- [var position: CPListItem.AssistantCellPosition](./cpassistantcellconfiguration/position.md)
   The position of the assistant cell in the list template.
-- [var visibility: CPListItem.AssistantCellVisibility](cpassistantcellconfiguration/visibility.md)
+- [var visibility: CPListItem.AssistantCellVisibility](./cpassistantcellconfiguration/visibility.md)
   The visibility of the assistant cell in the list template.
-- [var assistantAction: CPAssistantCellActionType](cpassistantcellconfiguration/assistantaction.md)
+- [var assistantAction: CPAssistantCellActionType](./cpassistantcellconfiguration/assistantaction.md)
   The action that Siri performs when the user selects the assistant cell.
 
 

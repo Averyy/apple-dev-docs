@@ -1,7 +1,8 @@
 # UIDropSession
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for querying a drop session about its state and associated drag items.
 
@@ -18,36 +19,41 @@ The interface for querying a drop session about its state and associated drag it
 protocol UIDropSession : ProgressReporting, UIDragDropSession
 ```
 
+```objc
+@protocol UIDropSession <UIDragDropSession, NSProgressReporting>
+```
+
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
 ## Topics
 
 ### Getting the drag session
-- [var localDragSession: (any UIDragSession)?](uidropsession/localdragsession.md)
+- [var localDragSession: (any UIDragSession)?](./uidropsession/localdragsession.md)
   The drag session that corresponds to this drop session, for in-app drag activities.
 ### Loading objects
-- [func loadObjects(ofClass: any NSItemProviderReading.Type, completion: ([any NSItemProviderReading]) -> Void) -> Progress](uidropsession/loadobjects(ofclass:completion:).md)
+- [func loadObjects(ofClass: any NSItemProviderReading.Type, completion: ([any NSItemProviderReading]) -> Void) -> Progress](./uidropsession/loadobjects%28ofclass,completion%29.md)
   Creates and loads a new instance of the specified class for each drag item in the session.
 ### Showing a progress indicator
-- [var progressIndicatorStyle: UIDropSessionProgressIndicatorStyle](uidropsession/progressindicatorstyle.md)
+- [var progressIndicatorStyle: UIDropSessionProgressIndicatorStyle](./uidropsession/progressindicatorstyle.md)
   The drop-progress indicator style associated with the drop session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [ProgressReporting](../foundation/progressreporting.md)
-- [UIDragDropSession](uidragdropsession.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [ProgressReporting](../Foundation/progressreporting.md)
+- [UIDragDropSession](./uidragdropsession.md)
 
 ## See Also
 
-- [class UIDropProposal](uidropproposal.md)
+### Drop destinations
+- [class UIDropProposal](./uidropproposal.md)
   A configuration for the behavior of a drop interaction, required if a view accepts drop activities.
-- [enum UIDropOperation](uidropoperation.md)
+- [enum UIDropOperation](./uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
-- [enum UIDropSessionProgressIndicatorStyle](uidropsessionprogressindicatorstyle.md)
+- [enum UIDropSessionProgressIndicatorStyle](./uidropsessionprogressindicatorstyle.md)
   The drop-progress indicator styles for the drop session, used while data is moving from the source to the destination.
 
 

@@ -1,7 +1,8 @@
 # DockAccessory.Animation
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Character animations that describe how to move the dock accessory.
 
@@ -19,35 +20,36 @@ enum Animation
 
 #### Overview
 
-Each animation executes on a predefined trajectory. See [`animate(motion:)`](dockaccessory/animate(motion:).md) for more information.
+Each animation executes on a predefined trajectory. See [`animate(motion:)`](./animate%28motion%29.md) for more information.
 
 ## Topics
 
 ### Enumeration Cases
-- [DockAccessory.Animation.kapow](dockaccessory/animation/kapow.md)
+- [DockAccessory.Animation.kapow](./animation/kapow.md)
   The dock accessory performs a quick tilt and snaps back with some oscillation.
-- [DockAccessory.Animation.no](dockaccessory/animation/no.md)
+- [DockAccessory.Animation.no](./animation/no.md)
   The dock accessory traces a horizontal head shake.
-- [DockAccessory.Animation.wakeup](dockaccessory/animation/wakeup.md)
+- [DockAccessory.Animation.wakeup](./animation/wakeup.md)
   The dock accessory moves upwards towards center.
-- [DockAccessory.Animation.yes](dockaccessory/animation/yes.md)
+- [DockAccessory.Animation.yes](./animation/yes.md)
   The dock accessory traces a vertical head nod.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func animate(motion: DockAccessory.Animation) async throws -> Progress](dockaccessory/animate(motion:).md)
+### Performing animation
+- [func animate(motion: DockAccessory.Animation) async throws -> Progress](./animate%28motion%29.md)
   Starts an animation sequence.
-- [func setRegionOfInterest(CGRect) async throws](dockaccessory/setregionofinterest(_:).md)
+- [func setRegionOfInterest(CGRect) async throws](./setregionofinterest%28_%29.md)
   Sets the area in the video frame in which the dock accessory tracks a subject.
-- [var regionOfInterest: CGRect](dockaccessory/regionofinterest.md)
+- [var regionOfInterest: CGRect](./regionofinterest.md)
   The area in the video frame in which the dock accessory tracks a subject.
 
 

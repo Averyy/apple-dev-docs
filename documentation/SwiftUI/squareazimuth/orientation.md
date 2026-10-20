@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 3D rotation that is snapped to the center of one of the four sides.
 

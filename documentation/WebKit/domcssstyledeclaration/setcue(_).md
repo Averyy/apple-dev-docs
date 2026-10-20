@@ -1,7 +1,8 @@
 # setCue(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setCue(_ cue: String!)
+```
+
+```objc
+- (void) setCue:(NSString *) cue;
 ```
 
 

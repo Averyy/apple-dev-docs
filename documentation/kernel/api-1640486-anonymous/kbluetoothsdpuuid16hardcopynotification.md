@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16HardcopyNotification
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16HardcopyNotification = 0x0016
 ```
 

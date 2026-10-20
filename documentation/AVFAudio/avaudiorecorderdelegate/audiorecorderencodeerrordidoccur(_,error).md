@@ -1,7 +1,8 @@
 # audioRecorderEncodeErrorDidOccur(_:error:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the audio recorder encountered an encoding error during recording.
 
@@ -18,6 +19,10 @@ Tells the delegate that the audio recorder encountered an encoding error during 
 
 ```swift
 optional func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: (any Error)?)
+```
+
+```objc
+- (void) audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *) recorder error:(NSError *) error;
 ```
 
 ## Parameters

@@ -1,17 +1,22 @@
 # isConnected()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether a baseband connection to the device exists.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isConnected() -> Bool
+```
+
+```objc
+- (BOOL) isConnected;
 ```
 
 #### Return Value

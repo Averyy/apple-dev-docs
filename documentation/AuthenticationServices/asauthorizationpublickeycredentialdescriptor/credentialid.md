@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An identifier the authenticator generates during registration to uniquely identify a specific credential.
@@ -18,6 +19,10 @@ An identifier the authenticator generates during registration to uniquely identi
 
 ```swift
 var credentialID: Data { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSData * credentialID;
 ```
 
 

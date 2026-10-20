@@ -1,7 +1,8 @@
 # DeprecatedCSSOMCounter
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface DeprecatedCSSOMCounter
 ```
 
 ## Topics
 
 ### Instance Properties
-- [identifier](deprecatedcssomcounter/2871221-identifier.md)
-- [listStyle](deprecatedcssomcounter/2871281-liststyle.md)
-- [separator](deprecatedcssomcounter/2871205-separator.md)
+- [identifier](./deprecatedcssomcounter/api-2871221-identifier.md)
+- [listStyle](./deprecatedcssomcounter/api-2871281-liststyle.md)
+- [separator](./deprecatedcssomcounter/api-2871205-separator.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MLModelStructure.Pipeline
 
 **Framework**: Core ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct representing the structure of a Pipeline model..
 
@@ -23,30 +24,31 @@ struct Pipeline
 ## Topics
 
 ### Accessing the pipeline model
-- [let subModelNames: [String]](mlmodelstructure-swift.enum/pipeline/submodelnames.md)
+- [let subModelNames: [String]](./pipeline/submodelnames.md)
   The names of the sub models in the Pipeline.
-- [let subModels: [MLModelStructure]](mlmodelstructure-swift.enum/pipeline/submodels.md)
+- [let subModels: [MLModelStructure]](./pipeline/submodels.md)
   The structure of sub models in the Pipeline.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case neuralNetwork(MLModelStructure.NeuralNetwork)](mlmodelstructure-swift.enum/neuralnetwork(_:).md)
+### Model structures
+- [case neuralNetwork(MLModelStructure.NeuralNetwork)](./neuralnetwork%28_%29.md)
   Represents a NeuralNetwork model, the associated value is the structure of the NeuralNetwork.
-- [MLModelStructure.NeuralNetwork](mlmodelstructure-swift.enum/neuralnetwork.md)
+- [MLModelStructure.NeuralNetwork](./neuralnetwork.md)
   A struct representing the structure of a NeuralNetwork model..
-- [case pipeline(MLModelStructure.Pipeline)](mlmodelstructure-swift.enum/pipeline(_:).md)
+- [case pipeline(MLModelStructure.Pipeline)](./pipeline%28_%29.md)
   Represents a Pipeline model, the associated value is the structure of the Pipeline.
-- [case program(MLModelStructure.Program)](mlmodelstructure-swift.enum/program(_:).md)
+- [case program(MLModelStructure.Program)](./program%28_%29.md)
   Represents a MLProgram model. the associated value is the structure of the Program.
-- [MLModelStructure.Program](mlmodelstructure-swift.enum/program.md)
+- [MLModelStructure.Program](./program.md)
   A struct representing the structure of an ML Program model.
-- [MLModelStructure.unsupported](mlmodelstructure-swift.enum/unsupported.md)
+- [MLModelStructure.unsupported](./unsupported.md)
   Represents an unsupported model.
 
 

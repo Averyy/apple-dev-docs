@@ -1,7 +1,8 @@
 # anchorOffset
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An offset that changes the annotation’s default anchor point.
 
@@ -10,13 +11,13 @@ An offset that changes the annotation’s default anchor point.
 
 ## Declaration
 
-```swift
+```
 get anchorOffset(): DOMPoint;
 ```
 
 #### Discussion
 
-You can’t change the anchor offset for a [`PlaceAnnotation`](placeannotation.md).
+You can’t change the anchor offset for a [`PlaceAnnotation`](../placeannotation.md).
 
 
 ---

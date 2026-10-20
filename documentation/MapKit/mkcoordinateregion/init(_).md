@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the region that corresponds to the specified map rectangle.
 
@@ -20,6 +21,10 @@ Returns the region that corresponds to the specified map rectangle.
 init(_ rect: MKMapRect)
 ```
 
+```c
+extern MKCoordinateRegion MKCoordinateRegionForMapRect(MKMapRect rect);
+```
+
 #### Return Value
 
 The region structure specifying the latitude, longitude, and span values for the specified rectangle.
@@ -30,11 +35,12 @@ The region structure specifying the latitude, longitude, and span values for the
 
 ## See Also
 
-- [init()](mkcoordinateregion/init.md)
+### Creating a region
+- [init()](./init%28%29.md)
   Creates a coordinate region.
-- [init(center: CLLocationCoordinate2D, latitudinalMeters: CLLocationDistance, longitudinalMeters: CLLocationDistance)](mkcoordinateregion/init(center:latitudinalmeters:longitudinalmeters:).md)
+- [init(center: CLLocationCoordinate2D, latitudinalMeters: CLLocationDistance, longitudinalMeters: CLLocationDistance)](./init%28center,latitudinalmeters,longitudinalmeters%29.md)
   Creates a new coordinate region from the specified coordinate and distance values.
-- [init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)](mkcoordinateregion/init(center:span:).md)
+- [init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)](./init%28center,span%29.md)
   Creates a coordinate region with a span around the specified center coordinate.
 
 

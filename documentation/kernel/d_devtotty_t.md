@@ -1,14 +1,15 @@
 # d_devtotty_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct tty *(dev_t) d_devtotty_t;
 ```
 

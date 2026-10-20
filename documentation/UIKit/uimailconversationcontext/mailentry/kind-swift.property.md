@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An item that reflects the category that describes an email.
 
@@ -16,9 +17,14 @@ An item that reflects the category that describes an email.
 var kind: UIMailConversationContext.MailEntry.Kind { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIMailConversationEntryKind kind;
+```
+
 ## See Also
 
-- [UIMailConversationContext.MailEntry.Kind](uimailconversationcontext/mailentry/kind-swift.enum.md)
+### Categorizing the email
+- [UIMailConversationContext.MailEntry.Kind](./kind-swift.enum.md)
   A set of categories for an email.
 
 

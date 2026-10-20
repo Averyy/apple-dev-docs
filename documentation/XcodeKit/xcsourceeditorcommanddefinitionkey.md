@@ -1,7 +1,8 @@
 # XCSourceEditorCommandDefinitionKey
 
 **Framework**: XcodeKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A key in the dictionary that defines a source editor command.
 
@@ -14,38 +15,42 @@ A key in the dictionary that defines a source editor command.
 struct XCSourceEditorCommandDefinitionKey
 ```
 
+```c
+typedef NSString * XCSourceEditorCommandDefinitionKey;
+```
+
 ## Mentions
 
-- [Creating a Source Editor Extension](creating-a-source-editor-extension.md)
+- [Creating a Source Editor Extension](./creating-a-source-editor-extension.md)
 
 #### Overview
 
-Source editor commands are defined via an array of dictionaries under the `XCSourceEditorCommandDefinitions` key of a Xcode Source Editor Extension’s `NSExtensionAttributes` within its `Info.plist` file. Commands can also be specified via the [`commandDefinitions`](xcsourceeditorextension/commanddefinitions.md) property in an extension’s conformance to the [`XCSourceEditorExtension`](xcsourceeditorextension.md) protocol.
+Source editor commands are defined via an array of dictionaries under the `XCSourceEditorCommandDefinitions` key of a Xcode Source Editor Extension’s `NSExtensionAttributes` within its `Info.plist` file. Commands can also be specified via the [`commandDefinitions`](./xcsourceeditorextension/commanddefinitions.md) property in an extension’s conformance to the [`XCSourceEditorExtension`](./xcsourceeditorextension.md) protocol.
 
 ## Topics
 
 ### Populating a Command Definition Dictionary
-- [static let classNameKey: XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey/classnamekey.md)
+- [static let classNameKey: XCSourceEditorCommandDefinitionKey](./xcsourceeditorcommanddefinitionkey/classnamekey.md)
   The class of the source editor command, in its attributes.
-- [static let identifierKey: XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey/identifierkey.md)
+- [static let identifierKey: XCSourceEditorCommandDefinitionKey](./xcsourceeditorcommanddefinitionkey/identifierkey.md)
   The identifier of the source editor command in its attributes.
-- [static let nameKey: XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey/namekey.md)
+- [static let nameKey: XCSourceEditorCommandDefinitionKey](./xcsourceeditorcommanddefinitionkey/namekey.md)
   The name of the source editor command in its attributes.
 ### Creating a Key Using a Raw String
-- [init(rawValue: String)](xcsourceeditorcommanddefinitionkey/init(rawvalue:).md)
+- [init(rawValue: String)](./xcsourceeditorcommanddefinitionkey/init%28rawvalue%29.md)
   Creates the key for a source-editor command by using the string value you specify.
 ### Type Properties
-- [static let systemSymbolNameKey: XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey/systemsymbolnamekey.md)
+- [static let systemSymbolNameKey: XCSourceEditorCommandDefinitionKey](./xcsourceeditorcommanddefinitionkey/systemsymbolnamekey.md)
   An SF Symbol from the system associated with the command.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

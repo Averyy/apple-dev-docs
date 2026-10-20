@@ -1,16 +1,17 @@
 # typeID
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Returns the unique type identifier used for [`CGLayer`](cglayer.md) objects.
+Returns the unique type identifier used for [`CGLayer`](../cglayer.md) objects.
 
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the unique type identifier used for [`CGLayer`](cglayer.md) objects.
 
 ```swift
 class var typeID: CFTypeID { get }
+```
+
+```c
+extern CFTypeID CGLayerGetTypeID();
 ```
 
 #### Discussion

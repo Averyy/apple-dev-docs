@@ -1,6 +1,7 @@
 # Extending advanced direction finding and ranging
 
-**Framework**: Nearby Interaction
+**Framework**: Nearby Interaction  
+**Role**: Article
 
 Extend your app’s direction finding capabilities with data from Ultra Wideband devices.
 
@@ -8,7 +9,7 @@ Extend your app’s direction finding capabilities with data from Ultra Wideband
 
 Extended distance measurement (EDM) is a ranging capability available between devices with second-generation Ultra Wideband (UWB) chips. EDM enables measuring precise distance between two Apple devices using UWB technology at significantly farther distances than was possible with the first-generation UWB chip. In iOS 17 and watchOS 10 and later, EDM is available through the Nearby Interaction framework. This article describes the tradeoffs involved in using EDM and getting the best ranging performance for your app.
 
-##### Detect Devices and Their Capabilities
+##### Detect devices and their capabilities
 
 A new UWB communication protocol enables the EDM capabilities in second-generation UWB chips. To use this new measurement technology, both sides have to have the second-generation chip; this includes iPhone 15, Apple Watch Series 9, Apple Watch Ultra 2, and later.
 
@@ -29,15 +30,15 @@ Possible interactions between first-generation and second-generation UWB chips, 
 - Supports one Nearby Interaction peer EDM session and multiple Nearby Interaction peer sessions when communicating with second-generation UWB-equipped devices
 - Supports multiple Nearby Interaction accessory sessions when communicating with third-party MFI chipsets
 
-> **Note**:  For more information on the MFI program, see the [`Nearby Interaction Accessory Protocol Specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification/).
+> **Note**:  For more information on the MFI program, see the [Nearby Interaction Accessory Protocol Specification](https://developer.apple.com/nearby-interaction/specification/).
 
-Design your app with appropriate fallback options for interacting with devices that aren’t capable of EDM. For example, you could choose to show a limited experience that’s backward compatible with first-generation devices or, depending on your app’s intention, restrict interactions with peer devices that aren’t capable of using EDM. To identify a peer device’s measurement capabilities, query the [`deviceCapabilities`](nidiscoverytoken/devicecapabilities.md) property of an [`NIDiscoveryToken`](nidiscoverytoken.md). For an example that demonstrates limiting interactions to compatible devices, see [`Finding devices with precision`](finding-devices-with-precision.md).
+Design your app with appropriate fallback options for interacting with devices that aren’t capable of EDM. For example, you could choose to show a limited experience that’s backward compatible with first-generation devices or, depending on your app’s intention, restrict interactions with peer devices that aren’t capable of using EDM. To identify a peer device’s measurement capabilities, query the [`deviceCapabilities`](./nidiscoverytoken/devicecapabilities.md) property of an [`NIDiscoveryToken`](./nidiscoverytoken.md). For an example that demonstrates limiting interactions to compatible devices, see [Finding devices with precision](./finding-devices-with-precision.md).
 
 Because EDM uses a new communications protocol, Nearby Interaction only supports one extended distance measurement session on a device at any given time. An EDM session can work concurrently with multiple legacy Nearby Interaction sessions on the same device.
 
-The system may interrupt and pause an EDM session if required for critical use, such as when an authorized person uses Find My to locate another person’s device that’s in an EDM session. Additionally, the system may suspend EDM sessions when a person launches the Find My app. The app can listen for a [`sessionSuspensionEnded(_:)`](nisessiondelegate/sessionsuspensionended(_:).md) callback to determine when the app can resume the EDM session.
+The system may interrupt and pause an EDM session if required for critical use, such as when an authorized person uses Find My to locate another person’s device that’s in an EDM session. Additionally, the system may suspend EDM sessions when a person launches the Find My app. The app can listen for a [`sessionSuspensionEnded(_:)`](./nisessiondelegate/sessionsuspensionended%28_%29.md) callback to determine when the app can resume the EDM session.
 
-##### Locate Devices Using Ranging
+##### Locate devices using ranging
 
 The EDM support that the Nearby Interaction framework provides enables a new communication protocol that measures distances between devices using rapid packet exchanges. As a result, it’s susceptible to various wireless signal propagation effects. Most notably, obstruction between the two devices and reflections from the ground, walls, and parts of the local environment that affect the quality of distance measurements. These effects can significantly affect measurement quality at the longer measurement distances enabled by EDM. By design, Nearby Interaction tunes EDM to output measurements to your app at longer operating ranges. If your app requires high quality direction and distance measurements for the longer measurement distances enabled by EDM, estimate the quality of measurements and provide different user experiences.
 
@@ -107,13 +108,13 @@ The following example demonstrates a quality estimator for direction measurement
     }   
 ```
 
-This class is a part of the [`Finding devices with precision`](finding-devices-with-precision.md) sample for iOS 17 that demonstrates measurement quality estimation on devices capable of EDM. This estimator determines measurements are high quality if the framework generates eight or more distinct measurements in the last two seconds, and if the measurements are within a distance threshold of 50 meters. Experiment with different measurement quality metrics to vet the results to meet your app’s intended use cases.
+This class is a part of the [Finding devices with precision](./finding-devices-with-precision.md) sample for iOS 17 that demonstrates measurement quality estimation on devices capable of EDM. This estimator determines measurements are high quality if the framework generates eight or more distinct measurements in the last two seconds, and if the measurements are within a distance threshold of 50 meters. Experiment with different measurement quality metrics to vet the results to meet your app’s intended use cases.
 
-iOS 16 and watchOS 9 introduced an API update to Nearby Interaction for locating stationary devices with high precision aided by an [`ARSession`](https://developer.apple.com/documentation/arkit/arsession). With the EDM capabilities introduced in iOS 17 and watchOS 10, second-generation UWB equipped devices can locate moving devices that also have the second-generation UWB chip.
+iOS 16 and watchOS 9 introduced an API update to Nearby Interaction for locating stationary devices with high precision aided by an [`ARSession`](../ARKit/arsession.md). With the EDM capabilities introduced in iOS 17 and watchOS 10, second-generation UWB equipped devices can locate moving devices that also have the second-generation UWB chip.
 
-##### Measure the Distance Between Devices
+##### Measure the distance between devices
 
-In iOS 14 and watchOS 8 and later, devices equipped with the first-generation UWB chip are capable of precise distance measurement through the Nearby Interaction framework. Devices supporting [`ARKit`](https://developer.apple.com/documentation/arkit) can locate stationary objects or devices. Devices equipped with the second-generation UWB chip are capable of EDM. Pairs of devices supporting both extended distance measurement and Camera Assistance have the ability to locate moving devices. You can query these capabilities through the [`deviceCapabilities`](nisession/devicecapabilities.md) property check.
+In iOS 14 and watchOS 8 and later, devices equipped with the first-generation UWB chip are capable of precise distance measurement through the Nearby Interaction framework. Devices supporting [ARKit](../ARKit/ARKit.md) can locate stationary objects or devices. Devices equipped with the second-generation UWB chip are capable of EDM. Pairs of devices supporting both extended distance measurement and Camera Assistance have the ability to locate moving devices. You can query these capabilities through the [`deviceCapabilities`](./nisession/devicecapabilities.md) property check.
 
 To check a device’s EDM capability:
 
@@ -125,7 +126,7 @@ To check a device’s EDM capability:
     }
 ```
 
-To determine if a peer device supports EDM, examine the peer’s [`NIDiscoveryToken`](nidiscoverytoken.md):
+To determine if a peer device supports EDM, examine the peer’s [`NIDiscoveryToken`](./nidiscoverytoken.md):
 
 ```swift
     if token.deviceCapabilities.supportsExtendedDistanceMeasurement {
@@ -135,7 +136,7 @@ To determine if a peer device supports EDM, examine the peer’s [`NIDiscoveryTo
     }
 ```
 
-If both sides support EDM, they can run [`NISession`](nisession.md) with the configuration that has EDM enabled, as shown in the example below:
+If both sides support EDM, they can run [`NISession`](./nisession.md) with the configuration that has EDM enabled, as shown in the example below:
 
 ```swift
     let config = NINearbyPeerConfiguration(peerToken: token)
@@ -156,9 +157,10 @@ If both sides support EDM, they can run [`NISession`](nisession.md) with the con
 
 ## See Also
 
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+### Related Documentation
+- [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
   Measure the relative position of a nearby device and coach the user to sustain interaction.
-- [Finding devices with precision](finding-devices-with-precision.md)
+- [Finding devices with precision](./finding-devices-with-precision.md)
   Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
 
 

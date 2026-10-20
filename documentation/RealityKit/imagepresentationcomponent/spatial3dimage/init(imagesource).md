@@ -1,7 +1,8 @@
 # init(imageSource:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a spatial 3D image from the contents of an image source.
 
@@ -20,7 +21,8 @@ init(imageSource: CGImageSource) async throws
 
 ## See Also
 
-- [convenience init(contentsOf: URL) async throws](imagepresentationcomponent/spatial3dimage/init(contentsof:).md)
+### Creating a spatial scene from a 2D image or spatial photo
+- [convenience init(contentsOf: URL) async throws](./init%28contentsof%29.md)
   Initializes a spatial 3D image from the contents of an image file.
 
 

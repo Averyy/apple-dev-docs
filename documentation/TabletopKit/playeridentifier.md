@@ -1,7 +1,8 @@
 # PlayerIdentifier
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for players.
 
@@ -21,26 +22,27 @@ A player identifier is unique across all instances of the same tabletop game.
 ## Topics
 
 ### Creating player identifiers
-- [init(uuid: UUID)](playeridentifier/init(uuid:).md)
+- [init(uuid: UUID)](./playeridentifier/init%28uuid%29.md)
   Creates a player identifier.
 ### Getting identifier values
-- [var uuid: UUID](playeridentifier/uuid.md)
+- [var uuid: UUID](./playeridentifier/uuid.md)
   A universally unique value to identify a player.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Player](player.md)
+### Players
+- [struct Player](./player.md)
   A player in a tabletop game.
 
 

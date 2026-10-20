@@ -1,7 +1,8 @@
 # presenceUserType
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user type whose presence triggers the event.
 
@@ -19,9 +20,14 @@ The user type whose presence triggers the event.
 var presenceUserType: HMPresenceEventUserType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) HMPresenceEventUserType presenceUserType;
+```
+
 ## See Also
 
-- [var presenceEventType: HMPresenceEventType](hmpresenceevent/presenceeventtype.md)
+### Inspecting a presence event
+- [var presenceEventType: HMPresenceEventType](./presenceeventtype.md)
   The event type that triggers the presence event.
 
 

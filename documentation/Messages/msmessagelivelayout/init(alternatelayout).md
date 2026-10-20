@@ -1,7 +1,8 @@
 # init(alternateLayout:)
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new live layout using the provided alternate layout.
 
@@ -14,6 +15,10 @@ Initializes a new live layout using the provided alternate layout.
 
 ```swift
 init(alternateLayout: MSMessageTemplateLayout)
+```
+
+```objc
+- (instancetype) initWithAlternateLayout:(MSMessageTemplateLayout *) alternateLayout;
 ```
 
 #### Discussion

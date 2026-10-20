@@ -1,6 +1,7 @@
 # Calling the Apple Ads Platform API
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Authenticate requests, structure endpoint calls, and interpret responses when using the Apple Ads Platform API.
 
@@ -9,7 +10,7 @@ Authenticate requests, structure endpoint calls, and interpret responses when us
 
 #### Overview
 
-Before you can call the API, you need to perform the implementation steps in [`Implementing OAuth for the Apple Ads Platform API`](implementing-oauth-for-the-apple-ads-platform-api.md).
+Before you can call the API, you need to perform the implementation steps in [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md).
 
 To call the Apple Ads Platform API, pass your access token as `Bearer` in the authorization header of HTTP requests. The value tells the API that the caller holds a valid token authorized to access the API and perform the specified actions.
 
@@ -21,7 +22,7 @@ curl "https://api.ads.apple.com/v1/" \
 -H "X-AP-Context: adAccountId={adAccountId}"
 ```
 
-New to the API? See [`Managing Ad Accounts and API Access`](access-overview.md) for a complete walkthrough that shows where `{access_token}` and `{adAccountId}` come from, ending in a real request like the one above.
+New to the API? See [Managing Ad Accounts and API Access](./access-overview.md) for a complete walkthrough that shows where `{access_token}` and `{adAccountId}` come from, ending in a real request like the one above.
 
 #### Include Required Headers
 
@@ -30,9 +31,9 @@ Include the following headers with every request:
 | Header | Description |
 | --- | --- |
 | `Authorization` | **Required.** The authorization value is always `Bearer`. |
-| `X-AP-Context` | **Required.** Scopes the request to a specific ad account. Format: `adAccountId={adAccountId}`. Required for all ad-account-scoped operations. **Note:** This isn’t a requirement when calling [`Get User ACL`](get-user-acls.md), [`Get Me Details`](get-current-user-details.md), [`Get Org by ID`](get-orgs-_id_.md), [`Get Advertiser Resources`](get-advertiser-resources.md), or [`Create Ad Accounts`](post-ad-accounts.md). Budget order endpoints are organization-scoped and handle the header differently. See [`Budget Orders Endpoints`](budget-orders-endpoints.md). |
+| `X-AP-Context` | **Required.** Scopes the request to a specific ad account. Format: `adAccountId={adAccountId}`. Required for all ad-account-scoped operations. **Note:** This isn’t a requirement when calling [`Get User ACL`](./get-user-acls.md), [`Get Me Details`](./get-current-user-details.md), [`Get Org by ID`](./get-orgs-_id_.md), [`Get Advertiser Resources`](./get-advertiser-resources.md), or [`Create Ad Accounts`](./post-ad-accounts.md). Budget order endpoints are organization-scoped and handle the header differently. See [Budget Orders Endpoints](./budget-orders-endpoints.md). |
 
-To return the `userId` and `orgId` of an API caller, use [`Get Me Details`](get-current-user-details.md).
+To return the `userId` and `orgId` of an API caller, use [`Get Me Details`](./get-current-user-details.md).
 
 #### Confirm Product Feature and Delegation Requirements
 
@@ -40,7 +41,7 @@ The `productFeatures` array on an ad account determines whether it can run App S
 
 In addition to `productFeatures`, the ad account must also have a `delegations` entry linking it to the appropriate advertiser resource. App Store accounts need a `CONTENT_PROVIDER` delegation with the CPID as `resourceId`, and Apple Maps accounts need a `BUSINESS_BRAND` delegation with the Brand ID as `resourceId`.
 
-Both must be in place before campaigns can go live. See [`ProductFeatures`](productfeatures.md) for details.
+Both must be in place before campaigns can go live. See [`ProductFeatures`](./productfeatures.md) for details.
 
 #### Structure Endpoint Calls
 
@@ -101,9 +102,9 @@ POST /v1/keywords/bulk-create
 
 The response returns a `result` array with one entry per input item. Each entry includes `correlationId`, `operation`, `success`, and either the entity you created or updated or per-item error details. Delete entries omit the entity.
 
-For supported entities and endpoint paths, see [`Bulk Operations Endpoints`](bulk-operations-endpoints.md).
+For supported entities and endpoint paths, see [Bulk Operations Endpoints](./bulk-operations-endpoints.md).
 
-#### Query the Api
+#### Query the API
 
 The Apple Ads Platform API uses a common query parameter structure in all `/query` endpoints. Define filtering, sort order, and pagination for a query. The API doesn’t return deleted entities unless the user specifically filters to include them.
 
@@ -111,7 +112,7 @@ To return all records and values for supported endpoints, use the `/query` endpo
 
 The `/query` request structure resembles the following:
 
-```None
+```
 POST /v1/campaigns/query
 
 {
@@ -136,7 +137,7 @@ POST /v1/campaigns/query
 }
 ```
 
-For more illustrative examples, see [`Managing Reports`](reports.md).
+For more illustrative examples, see [Managing Reports](./reports.md).
 
 #### Structure the Query Request
 
@@ -155,7 +156,7 @@ The table below details the **filters objects**:
 | Field | Type | Description |
 | --- | --- | --- |
 | `field` | string | To filter on a field, use its name (for example, id or name). |
-| `operator` | string | Comparison operator. Supported operators vary by endpoint. See [`QueryFilterOperator`](queryfilteroperator.md) for the full list and per-operator behavior. `IS_NULL` and `IS_NOT_NULL` take no `value`. For case-insensitive matching with any string operator, set `ignoreCase` to `true` instead of using a separate operator. |
+| `operator` | string | Comparison operator. Supported operators vary by endpoint. See [`QueryFilterOperator`](./queryfilteroperator.md) for the full list and per-operator behavior. `IS_NULL` and `IS_NOT_NULL` take no `value`. For case-insensitive matching with any string operator, set `ignoreCase` to `true` instead of using a separate operator. |
 | `value` | scalar or array | One or more filter conditions applied to the result set. |
 | `ignoreCase` | boolean | When `true`, the filter comparison is case-insensitive. |
 
@@ -178,18 +179,18 @@ The table below details the **request pagination objects**:
 
 The following objects support querying:
 
-- [`QueryRequest`](queryrequest.md): Drives the query. Contains optional filters, sorting, and pagination.
-- [`QueryFilter`](queryfilter.md): A single filter condition. Contains field, operator (see QueryFilterOperator), value, and optional ignoreCase flag.
-- [`QueryFilterOperator`](queryfilteroperator.md): The comparison operators supported in query filters.
-- [`QuerySort`](querysort.md): Defines the sort order for a single field. Contains the field and order (see `QuerySortOrder`).
-- [`QuerySortOrder`](querysortorder.md): The enumeration controlling the sort direction of `ASC` or `DESC`.
-- [`QueryPagination`](querypagination.md): Controls the page size and offset for the result set. Contains `pageSize`, `offset`, and `fetchTotalCount`.
-- [`QueryResponse`](queryresponse.md): The paginated response wrapper that contains a paginated result array of entity objects and pagination metadata.
-- [`QueryPaginationResult`](querypaginationresult.md): Reflects the pagination state of the response. Contains `pageSize`, `offset`, and `totalCount`.
-- [`Error`](error.md): The top-level error returned when the query fails (for example, an invalid filter field).
-- [`ErrorDetail`](errordetail.md): Granular error detail with code and message.
+- [`QueryRequest`](./queryrequest.md): Drives the query. Contains optional filters, sorting, and pagination.
+- [`QueryFilter`](./queryfilter.md): A single filter condition. Contains field, operator (see QueryFilterOperator), value, and optional ignoreCase flag.
+- [`QueryFilterOperator`](./queryfilteroperator.md): The comparison operators supported in query filters.
+- [`QuerySort`](./querysort.md): Defines the sort order for a single field. Contains the field and order (see `QuerySortOrder`).
+- [`QuerySortOrder`](./querysortorder.md): The enumeration controlling the sort direction of `ASC` or `DESC`.
+- [`QueryPagination`](./querypagination.md): Controls the page size and offset for the result set. Contains `pageSize`, `offset`, and `fetchTotalCount`.
+- [`QueryResponse`](./queryresponse.md): The paginated response wrapper that contains a paginated result array of entity objects and pagination metadata.
+- [`QueryPaginationResult`](./querypaginationresult.md): Reflects the pagination state of the response. Contains `pageSize`, `offset`, and `totalCount`.
+- [`Error`](./error.md): The top-level error returned when the query fails (for example, an invalid filter field).
+- [`ErrorDetail`](./errordetail.md): Granular error detail with code and message.
 
-#### Interpret Api Responses
+#### Interpret API Responses
 
 In API responses, the `result` field is the main result object across all responses.
 
@@ -201,7 +202,7 @@ The response object fields are as follows:
 | `pagination` | pagination | Pagination metadata on successful list responses |
 | `error` | error | The primary error container |
 
-Some endpoints instead return a dedicated `ErrorResponse` envelope on failure, which wraps a single `error` field containing the `Error` object (see [`Error`](error.md)) rather than embedding `error` alongside `result` and `pagination`. See [`ErrorResponse`](errorresponse.md) for details.
+Some endpoints instead return a dedicated `ErrorResponse` envelope on failure, which wraps a single `error` field containing the `Error` object (see [`Error`](./error.md)) rather than embedding `error` alongside `result` and `pagination`. See [`ErrorResponse`](./errorresponse.md) for details.
 
 The response pagination object fields are as follows:
 
@@ -225,7 +226,7 @@ The error detail object fields are as follows:
 | --- | --- | --- |
 | `code` | string | A granular reason about one part of the error |
 | `message` | string, nullable | Explicit detail about why the API rejected this part of the request |
-| `info` | Info | Additional context that supplements `message`. Content varies by endpoint and error type. See [`Info`](info.md). |
+| `info` | Info | Additional context that supplements `message`. Content varies by endpoint and error type. See [`Info`](./info.md). |
 
 **Successful Response**
 
@@ -284,52 +285,53 @@ A detailed error message example:
 
 ##### Handle Rate Limits
 
-Every response, successful or not, includes a set of `RateLimit-*` headers you can use to pace requests and avoid a `429`. See [`Applying Rate Limits`](rate-limits.md) for the full header reference and a sample backoff implementation.
+Every response, successful or not, includes a set of `RateLimit-*` headers you can use to pace requests and avoid a `429`. See [Applying Rate Limits](./rate-limits.md) for the full header reference and a sample backoff implementation.
 
 ## Topics
 
 ### Query Objects
-- [object QueryRequest](queryrequest.md)
+- [object QueryRequest](./queryrequest.md)
   The standard request body used across all query endpoints, supporting filters, sorting, pagination, and field selection.
-- [object QueryFilter](queryfilter.md)
+- [object QueryFilter](./queryfilter.md)
   A single filter condition in a query request, specifying a field, comparison operator, and one or more values to match against.
-- [object QuerySort](querysort.md)
+- [object QuerySort](./querysort.md)
   A sort directive in a query request, specifying a field and direction.
-- [object QueryPagination](querypagination.md)
+- [object QueryPagination](./querypagination.md)
   Controls the page size and starting offset for query results.
-- [object QueryResponse](queryresponse.md)
+- [object QueryResponse](./queryresponse.md)
   Response wrapper for paginated query results.
-- [object QueryPaginationResult](querypaginationresult.md)
+- [object QueryPaginationResult](./querypaginationresult.md)
   Pagination metadata returned in query responses, including page size, offset, and optional total count.
 ### Type Aliases
-- [type QueryFilterOperator](queryfilteroperator.md)
+- [type QueryFilterOperator](./queryfilteroperator.md)
   Enumeration of the comparison operators supported in query filters.
-- [type QuerySortOrder](querysortorder.md)
+- [type QuerySortOrder](./querysortorder.md)
   Enumeration of the sort directions available when ordering query results.
 ### Response
-- [object Response](response.md)
+- [object Response](./response.md)
   Base response wrapper used by all response types.
 ### Error Responses
-- [object Error](error.md)
+- [object Error](./error.md)
   The standard error envelope that the API returns when a request fails.
-- [object ErrorDetail](errordetail.md)
+- [object ErrorDetail](./errordetail.md)
   Field-level or request-level detail for a specific part of a failed API request.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   Certain endpoints return this envelope, which wraps an `Error` object, when a request fails.
-- [object Info](info.md)
+- [object Info](./info.md)
   Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 ## See Also
 
-- [Implementing OAuth for the Apple Ads Platform API](implementing-oauth-for-the-apple-ads-platform-api.md)
+### Essentials
+- [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md)
   Generate a key pair and request an access token to authenticate with the Apple Ads Platform API.
-- [Using Client Libraries](client-libraries.md)
+- [Using Client Libraries](./client-libraries.md)
   Integrate the Apple Ads Platform API using an Apple-maintained client library instead of a custom HTTP client.
-- [Applying Rate Limits](rate-limits.md)
+- [Applying Rate Limits](./rate-limits.md)
   Track your remaining quota and pace requests.
-- [Advertising Your App on the App Store](journey-app-store-ads.md)
+- [Advertising Your App on the App Store](./journey-app-store-ads.md)
   Set up and launch an App Store campaign, from account verification through keyword targeting to performance reporting.
-- [Advertising Your Business on Apple Maps](journey-apple-maps-brand-ads.md)
+- [Advertising Your Business on Apple Maps](./journey-apple-maps-brand-ads.md)
   Identify your brand, upload creative assets, build location groups, and create campaigns, ad groups, creatives, and ads to promote it on Apple Maps.
 
 

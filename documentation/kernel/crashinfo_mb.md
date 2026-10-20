@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct crashinfo_mb {
     ...
 };
@@ -17,8 +17,8 @@ struct crashinfo_mb {
 ## Topics
 
 ### Instance Properties
-- [data](crashinfo_mb/4520074-data.md)
-- [start_address](crashinfo_mb/4520075-start_address.md)
+- [data](./crashinfo_mb/api-4520074-data.md)
+- [start_address](./crashinfo_mb/api-4520075-start_address.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SliderTick
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of a tick in a slider, with associated value and optional label.
 
@@ -45,36 +46,37 @@ Slider(value: $percentage) {
 ## Topics
 
 ### Structures
-- [SliderTick.ID](slidertick/id-swift.struct.md)
+- [SliderTick.ID](./slidertick/id-swift.struct.md)
   The identity of a tick.
 ### Initializers
-- [init(_:)](slidertick/init(_:).md)
+- [init(_:)](./slidertick/init%28_%29.md)
   Create a labeled slider tick at a specific value.
-- [init(_:_:)](slidertick/init(_:_:).md)
+- [init(_:_:)](./slidertick/init%28_,_%29.md)
   Create a slider tick with a label from a localized string key.
-- [init(V, label: () -> some View)](slidertick/init(_:label:).md)
+- [init(V, label: () -> some View)](./slidertick/init%28_,label%29.md)
   Create a labeled slider tick at a specific value.
 ### Instance Properties
-- [var id: SliderTick<V>.ID](slidertick/id-swift.property.md)
+- [var id: SliderTick<V>.ID](./slidertick/id-swift.property.md)
   The identity of a tick, which is derived from its value.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [SliderTickContent](slidertickcontent.md)
+- [Comparable](../Swift/comparable.md)
+- [Equatable](../Swift/equatable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [SliderTickContent](./slidertickcontent.md)
 
 ## See Also
 
-- [struct SliderTickBuilder](slidertickbuilder.md)
+### Adding ticks to a slider
+- [struct SliderTickBuilder](./slidertickbuilder.md)
   A result builder that constructs `SliderTick`s for use when creating a `Slider`.
-- [struct SliderTickContentForEach](slidertickcontentforeach.md)
+- [struct SliderTickContentForEach](./slidertickcontentforeach.md)
   A type of slider content that creates content by iterating over a collection.
-- [struct TupleSliderTickContent](tupleslidertickcontent.md)
+- [struct TupleSliderTickContent](./tupleslidertickcontent.md)
   Slider content created from a Swift tuple of slider content.
-- [protocol SliderTickContent](slidertickcontent.md)
+- [protocol SliderTickContent](./slidertickcontent.md)
   A type that provides content for a `SliderTickBuilder`.
 
 

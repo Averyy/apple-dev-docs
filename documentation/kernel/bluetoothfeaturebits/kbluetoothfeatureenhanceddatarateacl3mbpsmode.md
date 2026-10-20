@@ -1,14 +1,15 @@
 # kBluetoothFeatureEnhancedDataRateACL3MbpsMode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothFeatureEnhancedDataRateACL3MbpsMode = (1 << 2L)
 ```
 

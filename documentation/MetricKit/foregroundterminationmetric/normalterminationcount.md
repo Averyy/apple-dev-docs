@@ -1,7 +1,8 @@
 # normalTerminationCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the application terminated normally from the foreground.
 
@@ -19,15 +20,16 @@ let normalTerminationCount: Int
 
 ## See Also
 
-- [let memoryLimitTerminationCount: Int](foregroundterminationmetric/memorylimitterminationcount.md)
+### Foreground termination counts
+- [let memoryLimitTerminationCount: Int](./memorylimitterminationcount.md)
   The number of times the system terminated the app from the foreground for using too much memory.
-- [let badAccessTerminationCount: Int](foregroundterminationmetric/badaccessterminationcount.md)
+- [let badAccessTerminationCount: Int](./badaccessterminationcount.md)
   The number of times the system terminated the app from the foreground for attempting an invalid memory access.
-- [let abnormalTerminationCount: Int](foregroundterminationmetric/abnormalterminationcount.md)
+- [let abnormalTerminationCount: Int](./abnormalterminationcount.md)
   The number of times the app terminated abnormally from the foreground.
-- [let illegalInstructionTerminationCount: Int](foregroundterminationmetric/illegalinstructionterminationcount.md)
+- [let illegalInstructionTerminationCount: Int](./illegalinstructionterminationcount.md)
   The number of times the system terminated the app from the foreground for attempting to execute an illegal or undefined instruction.
-- [let watchdogTerminationCount: Int](foregroundterminationmetric/watchdogterminationcount.md)
+- [let watchdogTerminationCount: Int](./watchdogterminationcount.md)
   The number of times the system watchdog terminated the app from the foreground.
 
 

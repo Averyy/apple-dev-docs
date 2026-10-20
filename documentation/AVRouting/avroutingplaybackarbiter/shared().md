@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: AVRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the singleton playback arbiter instance.
 
@@ -15,6 +16,10 @@ Returns the singleton playback arbiter instance.
 
 ```swift
 class func shared() -> AVRoutingPlaybackArbiter
+```
+
+```objc
++ (AVRoutingPlaybackArbiter *) sharedRoutingPlaybackArbiter;
 ```
 
 

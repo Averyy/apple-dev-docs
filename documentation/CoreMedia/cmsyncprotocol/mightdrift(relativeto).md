@@ -2,6 +2,7 @@
 
 **Framework**: Core Media  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether it’s possible for the clock to drift relative to the input.

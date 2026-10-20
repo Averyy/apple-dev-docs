@@ -1,7 +1,8 @@
 # loadingPolicy
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A policy that defines when a referenced entity loads.
 
@@ -21,7 +22,7 @@ var loadingPolicy: ReferenceComponent.LoadingPolicy { get }
 
 #### Discussion
 
-The default loading policy is [`ReferenceComponent.LoadingPolicy.onDemand`](referencecomponent/loadingpolicy-swift.enum/ondemand.md).
+The default loading policy is [`ReferenceComponent.LoadingPolicy.onDemand`](./loadingpolicy-swift.enum/ondemand.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # setComputeDevice(_:for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a compute device for a compute stage.
 
@@ -23,7 +24,7 @@ func setComputeDevice(_ computeDevice: MLComputeDevice?, for computeStage: VNCom
 
 If the parameter `computeDevice` is `nil`, the framework removes any explicit compute device assignment and allows the framework to select the device.
 
-Configure any compute device for a given compute stage. When performing a request, the system makes a validity check. Call [`supportedComputeStageDevices`](vnrequest/supportedcomputestagedevices.md) to get valid compute devices for a request’s compute stages.
+Configure any compute device for a given compute stage. When performing a request, the system makes a validity check. Call [`supportedComputeStageDevices`](./supportedcomputestagedevices.md) to get valid compute devices for a request’s compute stages.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ Configure any compute device for a given compute stage. When performing a reques
 
 ## See Also
 
-- [func computeDevice(for: VNComputeStage) -> MLComputeDevice?](vnrequest/computedevice(for:).md)
+### Configuring the Compute Device
+- [func computeDevice(for: VNComputeStage) -> MLComputeDevice?](./computedevice%28for%29.md)
   Returns the compute device for a compute stage.
-- [var supportedComputeStageDevices: [VNComputeStage : [MLComputeDevice]]](vnrequest/supportedcomputestagedevices.md)
+- [var supportedComputeStageDevices: [VNComputeStage : [MLComputeDevice]]](./supportedcomputestagedevices.md)
   The collection of compute devices per stage that a request supports.
 
 

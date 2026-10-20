@@ -1,7 +1,8 @@
 # appendInterpolation(_:align:privacy:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated textual representation of a type.
 
@@ -11,7 +12,7 @@ Appends an interpolated textual representation of a type.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,19 +27,20 @@ Don’t call this function directly. The system calls it automatically when inte
 
 ## Parameters
 
-- `value`: An item that conforms to the [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible) protocol.
+- `value`: An item that conforms to the [`CustomStringConvertible`](../../Swift/customstringconvertible.md) protocol.
 - `align`: The alignment to apply to the string. Use this parameter to specify the width of the column containing the data, and the alignment of the data within that column. If you don’t specify this parameter, the system doesn’t align the value.
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 ## See Also
 
-- [func appendInterpolation<T>(@autoclosure () -> T, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:align:privacy:attributes:)-xyum.md)
+### Appending Generic Types
+- [func appendInterpolation<T>(@autoclosure () -> T, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,align,privacy,attributes%29-xyum.md)
   Appends an interpolated textual representation of a type using the specified attributes.
-- [func appendInterpolation<T>(@autoclosure () -> T, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:format:align:privacy:attributes:)-8107a.md)
+- [func appendInterpolation<T>(@autoclosure () -> T, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,format,align,privacy,attributes%29-8107a.md)
   Appends an interpolated numeric type using the specified attributes.
-- [func appendInterpolation(@autoclosure () -> any Any.Type, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:align:privacy:)-8hwmt.md)
+- [func appendInterpolation(@autoclosure () -> any Any.Type, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,align,privacy%29-8hwmt.md)
   Appends an interpolated type description.
-- [func appendInterpolation(@autoclosure () -> any Any.Type, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:align:privacy:attributes:)-9hehv.md)
+- [func appendInterpolation(@autoclosure () -> any Any.Type, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,align,privacy,attributes%29-9hehv.md)
   Appends an interpolated type description with the specified attributes.
 
 

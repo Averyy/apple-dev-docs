@@ -1,7 +1,8 @@
 # datePickerMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode of the date picker.
 
@@ -17,13 +18,18 @@ The mode of the date picker.
 var datePickerMode: UIDatePicker.Mode { get set }
 ```
 
+```objc
+@property (nonatomic) UIDatePickerMode datePickerMode;
+```
+
 #### Discussion
 
-Use this property to change the type of information displayed by the date picker. It determines whether the date picker allows selection of a date, a time, both date and time, or a countdown time. The default mode is [`UIDatePicker.Mode.dateAndTime`](uidatepicker/mode/dateandtime.md). See [`UIDatePicker.Mode`](uidatepicker/mode.md) for a list of mode constants.
+Use this property to change the type of information displayed by the date picker. It determines whether the date picker allows selection of a date, a time, both date and time, or a countdown time. The default mode is [`UIDatePicker.Mode.dateAndTime`](./mode/dateandtime.md). See [`UIDatePicker.Mode`](./mode.md) for a list of mode constants.
 
 ## See Also
 
-- [UIDatePicker.Mode](uidatepicker/mode.md)
+### Configuring the date picker mode
+- [UIDatePicker.Mode](./mode.md)
   The mode displayed by the date picker.
 
 

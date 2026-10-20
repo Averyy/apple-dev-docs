@@ -1,10 +1,11 @@
 # kBluetoothLimitedInquiryAccessCodeEnd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothLimitedInquiryAccessCodeEnd: Int { get }
 ```
 
+```c
+kBluetoothLimitedInquiryAccessCodeEnd
+```
+
 ## See Also
 
-- [var kBluetoothGeneralInquiryAccessCodeIndex: Int](kbluetoothgeneralinquiryaccesscodeindex.md)
-- [var kBluetoothGeneralInquiryAccessCodeLAPValue: Int](kbluetoothgeneralinquiryaccesscodelapvalue.md)
-- [var kBluetoothLimitedInquiryAccessCodeIndex: Int](kbluetoothlimitedinquiryaccesscodeindex.md)
-- [var kBluetoothLimitedInquiryAccessCodeLAPValue: Int](kbluetoothlimitedinquiryaccesscodelapvalue.md)
+### Constants
+- [var kBluetoothGeneralInquiryAccessCodeIndex: Int](./kbluetoothgeneralinquiryaccesscodeindex.md)
+- [var kBluetoothGeneralInquiryAccessCodeLAPValue: Int](./kbluetoothgeneralinquiryaccesscodelapvalue.md)
+- [var kBluetoothLimitedInquiryAccessCodeIndex: Int](./kbluetoothlimitedinquiryaccesscodeindex.md)
+- [var kBluetoothLimitedInquiryAccessCodeLAPValue: Int](./kbluetoothlimitedinquiryaccesscodelapvalue.md)
 
 
 ---

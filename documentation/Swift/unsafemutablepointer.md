@@ -1,7 +1,8 @@
 # UnsafeMutablePointer
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A pointer for accessing and manipulating data of a specific type.
 
@@ -23,7 +24,7 @@ struct UnsafeMutablePointer<Pointee> where Pointee : ~Copyable
 
 ## Mentions
 
-- [Using Imported C Functions in Swift](using-imported-c-functions-in-swift.md)
+- [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
 #### Overview
 
@@ -31,7 +32,7 @@ You use instances of the `UnsafeMutablePointer` type to access data of a specifi
 
 Memory that you manually manage can be either *untyped* or *bound* to a specific type. You use the `UnsafeMutablePointer` type to access and manage memory that has been bound to a specific type.
 
-### Understanding a Pointers Memory State
+### Understanding a Pointer’s Memory State
 
 The memory referenced by an `UnsafeMutablePointer` instance can be in one of several states. Many pointer operations must only be applied to pointers with memory in a specific state—you must keep track of the state of the memory you are working with and understand the changes to that state that different operations perform. Memory can be untyped and uninitialized, bound to a type and uninitialized, or bound to a type and initialized to a value. Finally, memory that was allocated previously may have been deallocated, leaving existing pointers referencing unallocated memory.
 
@@ -51,7 +52,7 @@ let ptr: UnsafeMutablePointer<Int> = ...
 // ptr[0] == 23
 ```
 
-### Accessing a Pointers Memory As a Different Type
+### Accessing a Pointer’s Memory as a Different Type
 
 When you access memory through an `UnsafeMutablePointer` instance, the `Pointee` type must be consistent with the bound type of the memory. If you do need to access memory that is bound to one type as a different type, Swift’s pointer types provide type-safe ways to temporarily or permanently change the bound type of the memory, or to load typed instances directly from raw memory.
 
@@ -159,105 +160,108 @@ printInt(atAddress: &numbers)
 
 No matter which way you call `printInt(atAddress:)`, Swift’s type safety guarantees that you can only pass a pointer to the type required by the function—in this case, a pointer to an `Int`.
 
-> ❗ **Important**: The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafeMutablePointer` initializer. ```swift
-var number = 5
-let numberPointer = UnsafeMutablePointer<Int>(&number)
-// Accessing 'numberPointer' is undefined behavior.
-```
+> ❗ **Important**: The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafeMutablePointer` initializer.
+>
+> ```swift
+> var number = 5
+> let numberPointer = UnsafeMutablePointer<Int>(&number)
+> // Accessing 'numberPointer' is undefined behavior.
+> ```
 
 ## Topics
 
 ### Initializers
-- [init?(UnsafeMutablePointer<Pointee>?)](unsafemutablepointer/init(_:)-38kdq.md)
+- [init?(UnsafeMutablePointer<Pointee>?)](./unsafemutablepointer/init%28_%29-38kdq.md)
   Creates a mutable typed pointer referencing the same memory as the given mutable pointer.
-- [init(UnsafeMutablePointer<Pointee>)](unsafemutablepointer/init(_:)-7msdk.md)
+- [init(UnsafeMutablePointer<Pointee>)](./unsafemutablepointer/init%28_%29-7msdk.md)
   Creates a mutable typed pointer referencing the same memory as the given mutable pointer.
-- [init?(mutating: UnsafePointer<Pointee>?)](unsafemutablepointer/init(mutating:)-23779.md)
+- [init?(mutating: UnsafePointer<Pointee>?)](./unsafemutablepointer/init%28mutating%29-23779.md)
   Creates a mutable typed pointer referencing the same memory as the given immutable pointer.
-- [init(mutating: UnsafePointer<Pointee>)](unsafemutablepointer/init(mutating:)-9gvv3.md)
+- [init(mutating: UnsafePointer<Pointee>)](./unsafemutablepointer/init%28mutating%29-9gvv3.md)
   Creates a mutable typed pointer referencing the same memory as the given immutable pointer.
 ### Instance Properties
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](unsafemutablepointer/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./unsafemutablepointer/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
-- [var pointee: Pointee](unsafemutablepointer/pointee.md)
+- [var pointee: Pointee](./unsafemutablepointer/pointee.md)
   Reads or updates the instance referenced by this pointer.
 ### Instance Methods
-- [func assign(from: UnsafePointer<Pointee>, count: Int)](unsafemutablepointer/assign(from:count:).md)
-- [func assign(repeating: Pointee, count: Int)](unsafemutablepointer/assign(repeating:count:).md)
-- [func deallocate()](unsafemutablepointer/deallocate.md)
+- [func assign(from: UnsafePointer<Pointee>, count: Int)](./unsafemutablepointer/assign%28from,count%29.md)
+- [func assign(repeating: Pointee, count: Int)](./unsafemutablepointer/assign%28repeating,count%29.md)
+- [func deallocate()](./unsafemutablepointer/deallocate%28%29.md)
   Deallocates the memory block previously allocated at this pointer.
-- [func deallocate(capacity: Int)](unsafemutablepointer/deallocate(capacity:).md)
-- [func deinitialize() -> UnsafeMutableRawPointer](unsafemutablepointer/deinitialize.md)
-- [func deinitialize(count: Int) -> UnsafeMutableRawPointer](unsafemutablepointer/deinitialize(count:).md)
+- [func deallocate(capacity: Int)](./unsafemutablepointer/deallocate%28capacity%29.md)
+- [func deinitialize() -> UnsafeMutableRawPointer](./unsafemutablepointer/deinitialize%28%29.md)
+- [func deinitialize(count: Int) -> UnsafeMutableRawPointer](./unsafemutablepointer/deinitialize%28count%29.md)
   Deinitializes the specified number of values starting at this pointer.
-- [func initialize<C>(from: C)](unsafemutablepointer/initialize(from:).md)
+- [func initialize<C>(from: C)](./unsafemutablepointer/initialize%28from%29.md)
   Initializes memory starting at this pointer’s address with the elements of the given collection.
-- [func initialize(from: UnsafePointer<Pointee>, count: Int)](unsafemutablepointer/initialize(from:count:).md)
+- [func initialize(from: UnsafePointer<Pointee>, count: Int)](./unsafemutablepointer/initialize%28from,count%29.md)
   Initializes the memory referenced by this pointer with the values starting at the given pointer.
-- [func initialize(repeating: Pointee, count: Int)](unsafemutablepointer/initialize(repeating:count:).md)
+- [func initialize(repeating: Pointee, count: Int)](./unsafemutablepointer/initialize%28repeating,count%29.md)
   Initializes this pointer’s memory with the specified number of consecutive copies of the given value.
-- [func initialize(to: consuming Pointee)](unsafemutablepointer/initialize(to:).md)
+- [func initialize(to: consuming Pointee)](./unsafemutablepointer/initialize%28to%29.md)
   Initializes this pointer’s memory with a single instance of the given value.
-- [func initialize(to: Pointee, count: Int)](unsafemutablepointer/initialize(to:count:).md)
-- [func move() -> Pointee](unsafemutablepointer/move.md)
+- [func initialize(to: Pointee, count: Int)](./unsafemutablepointer/initialize%28to,count%29.md)
+- [func move() -> Pointee](./unsafemutablepointer/move%28%29.md)
   Retrieves and returns the referenced instance, returning the pointer’s memory to an uninitialized state.
-- [func moveAssign(from: UnsafeMutablePointer<Pointee>, count: Int)](unsafemutablepointer/moveassign(from:count:).md)
-- [func moveInitialize(from: UnsafeMutablePointer<Pointee>, count: Int)](unsafemutablepointer/moveinitialize(from:count:).md)
+- [func moveAssign(from: UnsafeMutablePointer<Pointee>, count: Int)](./unsafemutablepointer/moveassign%28from,count%29.md)
+- [func moveInitialize(from: UnsafeMutablePointer<Pointee>, count: Int)](./unsafemutablepointer/moveinitialize%28from,count%29.md)
   Moves instances from initialized source memory into the uninitialized memory referenced by this pointer, leaving the source memory uninitialized and the memory referenced by this pointer initialized.
-- [func moveUpdate(from: UnsafeMutablePointer<Pointee>, count: Int)](unsafemutablepointer/moveupdate(from:count:).md)
+- [func moveUpdate(from: UnsafeMutablePointer<Pointee>, count: Int)](./unsafemutablepointer/moveupdate%28from,count%29.md)
   Update this pointer’s initialized memory by moving the specified number of instances the source pointer’s memory, leaving the source memory uninitialized.
-- [func pointer<Property>(to: KeyPath<Pointee, Property>) -> UnsafePointer<Property>?](unsafemutablepointer/pointer(to:)-8cyek.md)
+- [func pointer<Property>(to: KeyPath<Pointee, Property>) -> UnsafePointer<Property>?](./unsafemutablepointer/pointer%28to%29-8cyek.md)
   Obtain a pointer to the stored property referred to by a key path.
-- [func pointer<Property>(to: WritableKeyPath<Pointee, Property>) -> UnsafeMutablePointer<Property>?](unsafemutablepointer/pointer(to:)-8veyb.md)
+- [func pointer<Property>(to: WritableKeyPath<Pointee, Property>) -> UnsafeMutablePointer<Property>?](./unsafemutablepointer/pointer%28to%29-8veyb.md)
   Obtain a mutable pointer to the stored property referred to by a key path.
-- [func update(from: UnsafePointer<Pointee>, count: Int)](unsafemutablepointer/update(from:count:).md)
+- [func update(from: UnsafePointer<Pointee>, count: Int)](./unsafemutablepointer/update%28from,count%29.md)
   Update this pointer’s initialized memory with the specified number of instances, copied from the given pointer’s memory.
-- [func update(repeating: Pointee, count: Int)](unsafemutablepointer/update(repeating:count:).md)
+- [func update(repeating: Pointee, count: Int)](./unsafemutablepointer/update%28repeating,count%29.md)
   Update this pointer’s initialized memory with the specified number of consecutive copies of the given value.
-- [func withMemoryRebound<T, E, Result>(to: T.Type, capacity: Int, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](unsafemutablepointer/withmemoryrebound(to:capacity:_:).md)
+- [func withMemoryRebound<T, E, Result>(to: T.Type, capacity: Int, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](./unsafemutablepointer/withmemoryrebound%28to,capacity,_%29.md)
   Executes the given closure while temporarily binding memory to the specified number of instances of the given type.
 ### Subscripts
-- [subscript(Int) -> Pointee](unsafemutablepointer/subscript(_:).md)
+- [subscript(Int) -> Pointee](./unsafemutablepointer/subscript%28_%29.md)
   Reads or updates the pointee at the specified offset from this pointer.
 ### Type Aliases
-- [UnsafeMutablePointer.Distance](unsafemutablepointer/distance.md)
+- [UnsafeMutablePointer.Distance](./unsafemutablepointer/distance.md)
   A type that represents the distance between two pointers.
 ### Type Methods
-- [static func allocate(capacity: Int) -> UnsafeMutablePointer<Pointee>](unsafemutablepointer/allocate(capacity:).md)
+- [static func allocate(capacity: Int) -> UnsafeMutablePointer<Pointee>](./unsafemutablepointer/allocate%28capacity%29.md)
   Allocates uninitialized memory for the specified number of instances of type `Pointee`.
 ### Default Implementations
-- [AtomicOptionalRepresentable Implementations](unsafemutablepointer/atomicoptionalrepresentable-implementations.md)
-- [AtomicRepresentable Implementations](unsafemutablepointer/atomicrepresentable-implementations.md)
-- [Comparable Implementations](unsafemutablepointer/comparable-implementations.md)
-- [CustomReflectable Implementations](unsafemutablepointer/customreflectable-implementations.md)
-- [Equatable Implementations](unsafemutablepointer/equatable-implementations.md)
-- [Hashable Implementations](unsafemutablepointer/hashable-implementations.md)
-- [Strideable Implementations](unsafemutablepointer/strideable-implementations.md)
+- [AtomicOptionalRepresentable Implementations](./unsafemutablepointer/atomicoptionalrepresentable-implementations.md)
+- [AtomicRepresentable Implementations](./unsafemutablepointer/atomicrepresentable-implementations.md)
+- [Comparable Implementations](./unsafemutablepointer/comparable-implementations.md)
+- [CustomReflectable Implementations](./unsafemutablepointer/customreflectable-implementations.md)
+- [Equatable Implementations](./unsafemutablepointer/equatable-implementations.md)
+- [Hashable Implementations](./unsafemutablepointer/hashable-implementations.md)
+- [Strideable Implementations](./unsafemutablepointer/strideable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AtomicOptionalRepresentable](../synchronization/atomicoptionalrepresentable.md)
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [CVarArg](cvararg.md)
-- [Comparable](comparable.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Strideable](strideable.md)
+- [AtomicOptionalRepresentable](../Synchronization/atomicoptionalrepresentable.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [CVarArg](./cvararg.md)
+- [Comparable](./comparable.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [Strideable](./strideable.md)
 
 ## See Also
 
-- [struct UnsafePointer](unsafepointer.md)
+### Typed Pointers
+- [struct UnsafePointer](./unsafepointer.md)
   A pointer for accessing data of a specific type.
-- [struct UnsafeBufferPointer](unsafebufferpointer.md)
+- [struct UnsafeBufferPointer](./unsafebufferpointer.md)
   A nonowning collection interface to a buffer of elements stored contiguously in memory.
-- [struct UnsafeMutableBufferPointer](unsafemutablebufferpointer.md)
+- [struct UnsafeMutableBufferPointer](./unsafemutablebufferpointer.md)
   A nonowning collection interface to a buffer of mutable elements stored contiguously in memory.
 
 

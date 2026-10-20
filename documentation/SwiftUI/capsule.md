@@ -1,7 +1,8 @@
 # Capsule
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A capsule shape aligned inside the frame of the view containing it.
 
@@ -23,7 +24,7 @@ struct Capsule
 
 ## Mentions
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
 #### Overview
 
@@ -32,29 +33,30 @@ A capsule shape is equivalent to a rounded rectangle where the corner radius is 
 ## Topics
 
 ### Creating a capsule
-- [init(style: RoundedCornerStyle)](capsule/init(style:).md)
+- [init(style: RoundedCornerStyle)](./capsule/init%28style%29.md)
   Creates a new capsule shape.
 ### Getting the shape’s characteristics
-- [var style: RoundedCornerStyle](capsule/style.md)
+- [var style: RoundedCornerStyle](./capsule/style.md)
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [InsettableShape](insettableshape.md)
-- [RoundedRectangularShape](roundedrectangularshape.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [InsettableShape](./insettableshape.md)
+- [RoundedRectangularShape](./roundedrectangularshape.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Circle](circle.md)
+### Creating circular shapes
+- [struct Circle](./circle.md)
   A circle centered on the frame of the view containing it.
-- [struct Ellipse](ellipse.md)
+- [struct Ellipse](./ellipse.md)
   An ellipse aligned inside the frame of the view containing it.
 
 

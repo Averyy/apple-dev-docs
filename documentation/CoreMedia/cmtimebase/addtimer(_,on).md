@@ -1,7 +1,8 @@
 # addTimer(_:on:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the timer to the list of timers the timebase manages.
 
@@ -22,11 +23,12 @@ func addTimer(_ timer: Timer, on runloop: RunLoop) throws
 
 ## See Also
 
-- [func addTimer<T>(T) throws](cmtimebase/addtimer(_:).md)
+### Adding and Removing Timers
+- [func addTimer<T>(T) throws](./addtimer%28_%29.md)
   Adds the timer dispatch source to the list of timers the timebase manages.
-- [func removeTimer(Timer) throws](cmtimebase/removetimer(_:)-4f6re.md)
+- [func removeTimer(Timer) throws](./removetimer%28_%29-4f6re.md)
   Removes the timer from the list of timers the timebase manages.
-- [func removeTimer<T>(T) throws](cmtimebase/removetimer(_:)-448o2.md)
+- [func removeTimer<T>(T) throws](./removetimer%28_%29-448o2.md)
   Removes the timer dispatch source from the list of timers the timebase manages.
 
 

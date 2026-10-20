@@ -1,7 +1,8 @@
 # newObject()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a new key-value pair to represent an entry in the content dictionary.
 
@@ -12,6 +13,10 @@ Creates and returns a new key-value pair to represent an entry in the content di
 
 ```swift
 func newObject() -> NSDictionaryControllerKeyValuePair
+```
+
+```objc
+- (NSDictionaryControllerKeyValuePair *) newObject;
 ```
 
 #### Return Value

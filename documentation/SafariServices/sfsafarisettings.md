@@ -1,7 +1,8 @@
 # SFSafariSettings
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that provides your app access to several of Safari’s settings options.
 
@@ -18,9 +19,13 @@ A class that provides your app access to several of Safari’s settings options.
 class SFSafariSettings
 ```
 
+```objc
+@interface SFSafariSettings : NSObject
+```
+
 ## Mentions
 
-- [Importing data exported from Safari](importing-data-exported-from-safari.md)
+- [Importing data exported from Safari](./importing-data-exported-from-safari.md)
 
 #### Overview
 
@@ -29,36 +34,37 @@ This class allows your app to present Safari’s extension settings pane or the 
 ## Topics
 
 ### Accessing Safari extensions
-- [class func openExtensionsSettings(forIdentifiers: [String], completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openextensionssettings(foridentifiers:completionhandler:).md)
+- [class func openExtensionsSettings(forIdentifiers: [String], completionHandler: (((any Error)?) -> Void)?)](./sfsafarisettings/openextensionssettings%28foridentifiers,completionhandler%29.md)
   Presents the extensions pane from Safari Settings.
 ### Exporting browsing data to a file
-- [class func openExportBrowsingDataSettings(completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openexportbrowsingdatasettings(completionhandler:).md)
+- [class func openExportBrowsingDataSettings(completionHandler: (((any Error)?) -> Void)?)](./sfsafarisettings/openexportbrowsingdatasettings%28completionhandler%29.md)
   Presents the Export Browsing Data sheet from Safari Settings.
 ### Type Methods
-- [class func checkAutoFillUserNamesAndPasswordsEnabled(completionHandler: (Bool, (any Error)?) -> Void)](sfsafarisettings/checkautofillusernamesandpasswordsenabled(completionhandler:).md)
+- [class func checkAutoFillUserNamesAndPasswordsEnabled(completionHandler: (Bool, (any Error)?) -> Void)](./sfsafarisettings/checkautofillusernamesandpasswordsenabled%28completionhandler%29.md)
   Query the value of the Safari settings toggle for AutoFill > User names and passwords
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Importing data exported from Safari](importing-data-exported-from-safari.md)
+### Safari content in your app
+- [Importing data exported from Safari](./importing-data-exported-from-safari.md)
   Transfer bookmarks, saved passwords, and other information between browsers.
-- [class SFSafariViewController](sfsafariviewcontroller.md)
+- [class SFSafariViewController](./sfsafariviewcontroller.md)
   An object that provides a visible standard interface for browsing the web.
-- [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
+- [SFAuthenticationSession.CompletionHandler](./sfauthenticationsession/completionhandler.md)
   The completion handler for an authentication session when the user cancels or finishes the login.
 
 

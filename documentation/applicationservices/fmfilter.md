@@ -1,7 +1,8 @@
 # FMFilter
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -12,15 +13,21 @@
 struct FMFilter
 ```
 
+```c
+typedef struct FMFilter {
+    ...
+} FMFilter;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](fmfilter/1462810-init.md)
-- [init(format: UInt32, selector: FMFilterSelector, filter: FMFilter.__Unnamed_union_filter)](fmfilter/1461528-init.md)
+- [init()](./fmfilter/api-1462810-init.md)
+- [init(format: UInt32, selector: FMFilterSelector, filter: FMFilter.__Unnamed_union_filter)](./fmfilter/api-1461528-init.md)
 ### Instance Properties
-- [var filter: FMFilter.__Unnamed_union_filter](fmfilter/1461915-filter.md)
-- [var format: UInt32](fmfilter/1463378-format.md)
-- [var selector: FMFilterSelector](fmfilter/1459528-selector.md)
+- [var filter: FMFilter.__Unnamed_union_filter](./fmfilter/api-1461915-filter.md)
+- [var format: UInt32](./fmfilter/api-1463378-format.md)
+- [var selector: FMFilterSelector](./fmfilter/api-1459528-selector.md)
 
 
 ---

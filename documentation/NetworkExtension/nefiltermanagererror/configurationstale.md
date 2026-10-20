@@ -1,7 +1,8 @@
 # NEFilterManagerError.configurationStale
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates another process modfied the filter configuration since the last time the app loaded the configuration.
 
@@ -18,21 +19,26 @@ An error code that indicates another process modfied the filter configuration si
 case configurationStale
 ```
 
+```c
+NEFilterManagerErrorConfigurationStale
+```
+
 #### Discussion
 
 This error also occurs if the app tries to save the filter configuration before loading it from the Network Extension preferences the first time after the app launches.
 
 ## See Also
 
-- [NEFilterManagerError.configurationInvalid](nefiltermanagererror/configurationinvalid.md)
+### Error codes
+- [NEFilterManagerError.configurationInvalid](./configurationinvalid.md)
   An error code that indicates the filter configuration is invalid.
-- [NEFilterManagerError.configurationDisabled](nefiltermanagererror/configurationdisabled.md)
+- [NEFilterManagerError.configurationDisabled](./configurationdisabled.md)
   An error code that indicates the filter configuration isn’t enabled.
-- [NEFilterManagerError.configurationCannotBeRemoved](nefiltermanagererror/configurationcannotberemoved.md)
+- [NEFilterManagerError.configurationCannotBeRemoved](./configurationcannotberemoved.md)
   An error code that indicates removing the configuration isn’t allowed.
-- [NEFilterManagerError.configurationPermissionDenied](nefiltermanagererror/configurationpermissiondenied.md)
+- [NEFilterManagerError.configurationPermissionDenied](./configurationpermissiondenied.md)
   An error code that indicates the configuration lacks permission.
-- [NEFilterManagerError.configurationInternalError](nefiltermanagererror/configurationinternalerror.md)
+- [NEFilterManagerError.configurationInternalError](./configurationinternalerror.md)
   An error code that indicates an internal configuration error occurred.
 
 

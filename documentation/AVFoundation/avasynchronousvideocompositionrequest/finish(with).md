@@ -1,7 +1,8 @@
 # finish(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finishes the request with an error.
 
@@ -19,6 +20,10 @@ Finishes the request with an error.
 func finish(with error: any Error)
 ```
 
+```objc
+- (void) finishWithError:(NSError *) error;
+```
+
 #### Discussion
 
 A custom compositor calls this method to indicate that the attempt to compose a frame failed.
@@ -29,13 +34,14 @@ A custom compositor calls this method to indicate that the attempt to compose a 
 
 ## See Also
 
-- [func finish(withComposedVideoFrame: CVPixelBuffer)](avasynchronousvideocompositionrequest/finish(withcomposedvideoframe:).md)
+### Finishing the request
+- [func finish(withComposedVideoFrame: CVPixelBuffer)](./finish%28withcomposedvideoframe%29.md)
   Finishes the request to compose the frame.
-- [func finish(withComposedPixelBuffer: CVReadOnlyPixelBuffer)](avasynchronousvideocompositionrequest/finish(withcomposedpixelbuffer:).md)
+- [func finish(withComposedPixelBuffer: CVReadOnlyPixelBuffer)](./finish%28withcomposedpixelbuffer%29.md)
   The method that the custom compositor calls when composition succeeds.
-- [func finish(withComposedTaggedBuffers: [CMTaggedDynamicBuffer])](avasynchronousvideocompositionrequest/finish(withcomposedtaggedbuffers:).md)
+- [func finish(withComposedTaggedBuffers: [CMTaggedDynamicBuffer])](./finish%28withcomposedtaggedbuffers%29.md)
   The method that the custom compositor calls when composition succeeds.
-- [func finishCancelledRequest()](avasynchronousvideocompositionrequest/finishcancelledrequest.md)
+- [func finishCancelledRequest()](./finishcancelledrequest%28%29.md)
   Cancels the request to compose a video frame.
 
 

@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie’s version.
 
@@ -20,15 +21,20 @@ The cookie’s version.
 var version: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger version;
+```
+
 #### Discussion
 
-Version 0 maps to “old-style” Netscape cookies. Version 1 maps to [`RFC 6265`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6265) cookies.
+Version 0 maps to “old-style” Netscape cookies. Version 1 maps to [RFC 6265](https://tools.ietf.org/html/rfc6265) cookies.
 
 ## See Also
 
-- [var name: String](httpcookie/name.md)
+### Getting cookie metadata
+- [var name: String](./name.md)
   The cookie’s name.
-- [var value: String](httpcookie/value.md)
+- [var value: String](./value.md)
   The cookie’s string value.
 
 

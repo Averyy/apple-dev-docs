@@ -1,15 +1,16 @@
 # kAudioUnitErr_InstrumentTypeNotFound
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kAudioUnitErr_InstrumentTypeNotFound: OSStatus { get }
 ```
 
+```c
+kAudioUnitErr_InstrumentTypeNotFound
+```
+
 ## See Also
 
-- [var kAudioUnitErr_IllegalInstrument: OSStatus](kaudiouniterr_illegalinstrument.md)
+### Constants
+- [var kAudioUnitErr_IllegalInstrument: OSStatus](./kaudiouniterr_illegalinstrument.md)
 
 
 ---

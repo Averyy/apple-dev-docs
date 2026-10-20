@@ -1,7 +1,8 @@
 # repeated(count:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Repeats an animation the number of times specified by a whole number.
 
@@ -11,12 +12,18 @@ Repeats an animation the number of times specified by a whole number.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 func repeated(count: Int) -> Self
+```
+
+**Other overloads**:
+
+```swift
+func repeated(count: TimeInterval) -> Self
 ```
 
 #### Return Value
@@ -29,13 +36,14 @@ A version of the calling animation repeated the given number of times.
 
 ## See Also
 
-- [var repeatMode: AnimationRepeatMode](animationdefinition/repeatmode.md)
+### Repeating animation playback
+- [var repeatMode: AnimationRepeatMode](./repeatmode.md)
   An option that determines how the animation repeats.
-- [var fillMode: AnimationFillMode](animationdefinition/fillmode.md)
+- [var fillMode: AnimationFillMode](./fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](animationdefinition/repeated(count:)-937w.md)
+- [func repeated(count: TimeInterval) -> Self](./repeated%28count%29-937w.md)
   Repeats an animation the number of times specified by an irrational number.
-- [func repeatingForever() -> Self](animationdefinition/repeatingforever.md)
+- [func repeatingForever() -> Self](./repeatingforever%28%29.md)
   Repeats the animation infinitely.
 
 

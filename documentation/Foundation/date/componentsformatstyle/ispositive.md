@@ -1,7 +1,8 @@
 # isPositive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether the format input is formatted as a positive or negative range.
 

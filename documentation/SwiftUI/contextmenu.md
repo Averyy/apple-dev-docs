@@ -1,17 +1,20 @@
 # ContextMenu
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for views that you present as menu items in a context menu.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use [`contextMenu(menuItems:)`](./view/contextmenu%28menuitems%29.md) instead.
 
 ## Declaration
 
@@ -23,9 +26,9 @@ struct ContextMenu<MenuItems> where MenuItems : View
 
 A context menu view allows you to present a situationally specific menu that enables taking actions relevant to the current task.
 
-You can create a context menu by first defining a `ContextMenu` container with the controls that represent the actions people can take, and then using the [`contextMenu(_:)`](view/contextmenu(_:).md) view modifier to apply the menu to a view.
+You can create a context menu by first defining a `ContextMenu` container with the controls that represent the actions people can take, and then using the [`contextMenu(_:)`](./view/contextmenu%28_%29.md) view modifier to apply the menu to a view.
 
-The example below creates and applies a two item context menu container to a [`Text`](text.md) view. The Boolean value `shouldShowMenu`, which defaults to true, controls the availability of context menu:
+The example below creates and applies a two item context menu container to a [`Text`](./text.md) view. The Boolean value `shouldShowMenu`, which defaults to true, controls the availability of context menu:
 
 ```swift
 private let menuItems = ContextMenu {
@@ -51,19 +54,20 @@ private struct ContextMenuMenuItems: View {
 }
 ```
 
-![A screenshot of a context menu showing two menu items: Add to Favorites, and Show in Maps.](/images/com.apple.SwiftUI/View-contextMenu-1-iOS@2x.png)
+![A screenshot of a context menu showing two menu items: Add to Favorites, and Show in Maps.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-contextMenu-1-iOS@2x.png)
 
 ## Topics
 
 ### Creating a context menu
-- [init(menuItems: () -> MenuItems)](contextmenu/init(menuitems:).md)
+- [init(menuItems: () -> MenuItems)](./contextmenu/init%28menuitems%29.md)
   Creates a context menu.
 
 ## See Also
 
-- [struct MenuButton](menubutton.md)
+### Deprecated
+- [struct MenuButton](./menubutton.md)
   A button that displays a menu containing a list of choices when pressed.
-- [typealias PullDownButton](pulldownbutton.md)
+- [typealias PullDownButton](./pulldownbutton.md)
 
 
 ---

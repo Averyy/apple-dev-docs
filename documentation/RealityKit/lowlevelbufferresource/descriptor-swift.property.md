@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor used to create this buffer resource.
 
@@ -19,7 +20,8 @@ final var descriptor: LowLevelBufferResource.Descriptor { get }
 
 ## See Also
 
-- [LowLevelBufferResource.Descriptor](lowlevelbufferresource/descriptor-swift.struct.md)
+### Inspecting the descriptor
+- [LowLevelBufferResource.Descriptor](./descriptor-swift.struct.md)
   The capacity and alignment requirements for a buffer resource.
 
 

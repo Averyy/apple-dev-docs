@@ -1,6 +1,7 @@
 # Ads Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Create, retrieve, update, and delete ads using these endpoints.
 
@@ -9,9 +10,9 @@ Create, retrieve, update, and delete ads using these endpoints.
 
 #### Overview
 
-An [`Ad`](ad.md) object connects a [`Creative`](creative.md) to an ad group. The ad is the serving unit: It tells the system which ad creative to show when the ad group wins an auction. An ad group can contain multiple ads, but only one ad per ad group can be `ENABLED` at a time. Enabling a different ad requires pausing the one currently serving.
+An [`Ad`](./ad.md) object connects a [`Creative`](./creative.md) to an ad group. The ad is the serving unit: It tells the system which ad creative to show when the ad group wins an auction. An ad group can contain multiple ads, but only one ad per ad group can be `ENABLED` at a time. Enabling a different ad requires pausing the one currently serving.
 
-Creating an ad requires a `name`, a `status`, the `adGroupId` of the target ad group, and a `creativeId` referencing an existing [`Creative`](creative.md). Create the ad creative first, then reference its `id` here. The `campaignId`, `adAccountId`, and other system fields are read-only, and the system populates them automatically at creation.
+Creating an ad requires a `name`, a `status`, the `adGroupId` of the target ad group, and a `creativeId` referencing an existing [`Creative`](./creative.md). Create the ad creative first, then reference its `id` here. The `campaignId`, `adAccountId`, and other system fields are read-only, and the system populates them automatically at creation.
 
 #### Use the Ads Endpoints
 
@@ -19,11 +20,11 @@ Use these endpoints to create, retrieve, update, and delete ads:
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/ads` | [`Create an Ad`](post-ads.md) creates a new ad. |
-| `POST` | `/v1/ads/query` | [`Query Ads`](post-ads-query.md) retrieves ads matching the specified filters. |
-| `GET` | `/v1/ads/{id}` | [`Get an Ad`](get-ads-_id_.md) retrieves a single ad by its ID. |
-| `PUT` | `/v1/ads/{id}` | [`Update an Ad`](put-ads-_id_.md) updates an existing ad. |
-| `DELETE` | `/v1/ads/{id}` | [`Delete an Ad`](delete-ads-_id_.md) soft-deletes an ad by its ID. |
+| `POST` | `/v1/ads` | [`Create an Ad`](./post-ads.md) creates a new ad. |
+| `POST` | `/v1/ads/query` | [`Query Ads`](./post-ads-query.md) retrieves ads matching the specified filters. |
+| `GET` | `/v1/ads/{id}` | [`Get an Ad`](./get-ads-_id_.md) retrieves a single ad by its ID. |
+| `PUT` | `/v1/ads/{id}` | [`Update an Ad`](./put-ads-_id_.md) updates an existing ad. |
+| `DELETE` | `/v1/ads/{id}` | [`Delete an Ad`](./delete-ads-_id_.md) soft-deletes an ad by its ID. |
 
 ##### Track Ad Status and System Status
 
@@ -31,7 +32,7 @@ Ads have three status fields that together determine whether an ad is serving:
 
 - `status`: The advertiser-controlled field. Set it to `ENABLED` to let the ad serve, or `PAUSED` to stop delivery without deleting the ad. You can only update `status` and `name` after creation.
 - `systemStatus`: A system-computed field that reflects whether the ad is actually running. A value of `RUNNING` means the ad is active and eligible to serve, and a value of `NOT_RUNNING` means the system identified a condition that’s preventing delivery.
-- `displayStatus`: A system-computed field that represents a rolled-up label combining `status` and `systemStatus` into a single delivery state. See [`AdDisplayStatus`](addisplaystatus.md) for all values.
+- `displayStatus`: A system-computed field that represents a rolled-up label combining `status` and `systemStatus` into a single delivery state. See [`AdDisplayStatus`](./addisplaystatus.md) for all values.
 
 When `systemStatus` is `NOT_RUNNING`, the system populates the `systemStatusReasons` array with one or more values explaining why. Reasons marked **App Store-specific** apply only to App Store ads. Unless marked, a reason applies to both App Store and Apple Maps ads:
 
@@ -70,22 +71,23 @@ The `CREATIVE_PENDING` and `CREATIVE_INVALID` reasons reflect this review state.
 
 ## Topics
 
-- [Create an Ad](post-ads.md)
+- [Create an Ad](./post-ads.md)
   Creates a new ad that links an ad creative to an ad group for delivery.
-- [Query Ads](post-ads-query.md)
+- [Query Ads](./post-ads-query.md)
   Searches and filters ads using structured query criteria including field filters, sorting, and pagination.
-- [Get an Ad](get-ads-_id_.md)
+- [Get an Ad](./get-ads-_id_.md)
   Retrieves a single ad by its unique identifier.
-- [Update an Ad](put-ads-_id_.md)
+- [Update an Ad](./put-ads-_id_.md)
   Updates the name or status of an existing ad by its unique identifier.
-- [Delete an Ad](delete-ads-_id_.md)
+- [Delete an Ad](./delete-ads-_id_.md)
   Soft-deletes an ad by its unique identifier, stopping delivery and removing it from active results.
 
 ## See Also
 
-- [Ads Data Objects](ads-data-objects.md)
+### Ads
+- [Ads Data Objects](./ads-data-objects.md)
   Reference the request and response objects used by ad endpoints.
-- [Ads Data Types](ads-data-types.md)
+- [Ads Data Types](./ads-data-types.md)
   Reference the enumerations and scalar types used by ad objects and endpoints.
 
 

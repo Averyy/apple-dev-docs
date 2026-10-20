@@ -1,16 +1,17 @@
 # UIScrollView.IndexDisplayMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines constants that represent how the index appears while the user is scrolling.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - tvOS 10.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,29 +19,34 @@ Defines constants that represent how the index appears while the user is scrolli
 enum IndexDisplayMode
 ```
 
+```c
+enum UIScrollViewIndexDisplayMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIScrollView.IndexDisplayMode.automatic](uiscrollview/indexdisplaymode-swift.enum/automatic.md)
+- [UIScrollView.IndexDisplayMode.automatic](./indexdisplaymode-swift.enum/automatic.md)
   The index is displayed or hidden automatically.
-- [UIScrollView.IndexDisplayMode.alwaysHidden](uiscrollview/indexdisplaymode-swift.enum/alwayshidden.md)
+- [UIScrollView.IndexDisplayMode.alwaysHidden](./indexdisplaymode-swift.enum/alwayshidden.md)
   The index is never displayed.
 ### Initializers
-- [init?(rawValue: Int)](uiscrollview/indexdisplaymode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./indexdisplaymode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var indexDisplayMode: UIScrollView.IndexDisplayMode](uiscrollview/indexdisplaymode-swift.property.md)
+### Managing the index
+- [var indexDisplayMode: UIScrollView.IndexDisplayMode](./indexdisplaymode-swift.property.md)
   The manner in which the index appears while the user is scrolling.
 
 

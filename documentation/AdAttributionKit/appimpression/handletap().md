@@ -1,7 +1,8 @@
 # handleTap()
 
 **Framework**: AdAttributionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes click-through interactions on your custom rendered ad content.
 
@@ -18,7 +19,7 @@ func handleTap() async throws
 
 ## Mentions
 
-- [Presenting ads in your app](presenting-ads-in-your-app.md)
+- [Presenting ads in your app](../presenting-ads-in-your-app.md)
 
 #### Discussion
 
@@ -26,7 +27,7 @@ Handle a person tapping your ad content by calling the app impression’s handle
 
 If the system can validate that  person tapped, it attempts to either launch one of the installed marketplaces to show the product page to install the advertised app, or it performs a reengagement if someone already has the advertised app installed, and opens it directly.
 
-This API requires that you place a [`UIEventAttributionView`](https://developer.apple.com/documentation/uikit/uieventattributionview) on top of your ad content before calling `handleTap()`, as the following example shows:
+This API requires that you place a [`UIEventAttributionView`](../../UIKit/uieventattributionview.md) on top of your ad content before calling `handleTap()`, as the following example shows:
 
 ```swift
    func handleAdTapped(impression: AppImpression) async {
@@ -40,11 +41,12 @@ This API requires that you place a [`UIEventAttributionView`](https://developer.
    }    
 ```
 
-> **Note**: This method is only available for 15 minutes after you create the `impression`. After 15 minutes, you need to initialize a new `AppImpression` instance if you want to use the click-through ad API. This limitation doesn’t apply to view-through ads. For more information on view-through and click-through ads, see [`Presenting ads in your app`](presenting-ads-in-your-app.md).
+> **Note**: This method is only available for 15 minutes after you create the `impression`. After 15 minutes, you need to initialize a new `AppImpression` instance if you want to use the click-through ad API. This limitation doesn’t apply to view-through ads. For more information on view-through and click-through ads, see [Presenting ads in your app](../presenting-ads-in-your-app.md).
 
 ## See Also
 
-- [func handleTap(reengagementURL: URL) async throws](appimpression/handletap(reengagementurl:).md)
+### Processing interactions with click-through ads
+- [func handleTap(reengagementURL: URL) async throws](./handletap%28reengagementurl%29.md)
   Processes click-through interactions on your custom rendered ad content, and delivers a URL to the advertised app if it’s installed.
 
 

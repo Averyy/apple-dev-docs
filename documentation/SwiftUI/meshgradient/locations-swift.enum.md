@@ -1,7 +1,8 @@
 # MeshGradient.Locations
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An array of 2D locations and their control points.
 
@@ -23,17 +24,17 @@ enum Locations
 ## Topics
 
 ### Enumeration Cases
-- [case bezierPoints([MeshGradient.BezierPoint])](meshgradient/locations-swift.enum/bezierpoints(_:).md)
+- [case bezierPoints([MeshGradient.BezierPoint])](./locations-swift.enum/bezierpoints%28_%29.md)
   Vertices explicitly specifying their location and control points.
-- [MeshGradient.Locations.points(_:)](meshgradient/locations-swift.enum/points(_:).md)
+- [MeshGradient.Locations.points(_:)](./locations-swift.enum/points%28_%29.md)
   Vertices are only specified as their location, their control points are inferred from the locations of their neighbors.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

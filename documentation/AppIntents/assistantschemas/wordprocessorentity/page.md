@@ -1,7 +1,8 @@
 # page
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app entity describes a page in a text document.
 

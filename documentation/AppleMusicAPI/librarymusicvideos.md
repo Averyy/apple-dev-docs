@@ -1,7 +1,8 @@
 # LibraryMusicVideos
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents a library music video.
 
@@ -10,33 +11,36 @@ A resource object that represents a library music video.
 
 ## Declaration
 
-```swift
+```
 object LibraryMusicVideos
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryMusicVideos.Attributes](librarymusicvideos/attributes-data.dictionary.md)
+- [object LibraryMusicVideos.Attributes](./librarymusicvideos/attributes-data.dictionary.md)
   The attributes for the library music videos resource type.
-- [object LibraryMusicVideos.Relationships](librarymusicvideos/relationships-data.dictionary.md)
+- [object LibraryMusicVideos.Relationships](./librarymusicvideos/relationships-data.dictionary.md)
   The relationships from library music videos to other resources.
 
 ## Properties
 
 - `id` (string) *(required)*: The identifier for the library music video.
 - `type` (string) *(required)*: This value is always `library-music-videos`.
+
+  **Allowed Values**: `library-music-videos`
 - `href` (string) *(required)*: The relative location for the library music video resource.
 - `attributes` (LibraryMusicVideos.Attributes): The attributes for the library music video.
 - `relationships` (LibraryMusicVideos.Relationships): The relationships for the library music video.
 
 ## See Also
 
-- [object MusicVideos](musicvideos.md)
+### Handling the Response
+- [object MusicVideos](./musicvideos.md)
   A resource object that represents a music video.
-- [object MusicVideosResponse](musicvideosresponse.md)
+- [object MusicVideosResponse](./musicvideosresponse.md)
   The response to a music videos request.
-- [object LibraryMusicVideosResponse](librarymusicvideosresponse.md)
+- [object LibraryMusicVideosResponse](./librarymusicvideosresponse.md)
   The response to a library music videos request.
 
 

@@ -1,6 +1,8 @@
 # Custom Graphics
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: Sample Code  
+**Download**: [CustomGraphics.zip](https://docs-assets.developer.apple.com/published/87e25620b08d/CustomGraphics.zip)
 
 Demonstrates adding a watermark to a PDF page.
 
@@ -16,7 +18,7 @@ You can add a custom drawing to a page or annotation by overriding that class’
 
 ##### Register the Delegate and Set the Page Class
 
-The [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) class first initializes a [`PDFDocument`](pdfdocument.md) instance and sets its delegate to `self`.
+The [`ViewController`](../UIKit/uiviewcontroller.md) class first initializes a [`PDFDocument`](./pdfdocument.md) instance and sets its delegate to `self`.
 
 ```swift
 // 1. Set delegate
@@ -24,7 +26,7 @@ document.delegate = self
 pdfView?.document = document
 ```
 
-The delegate, of type [`PDFDocumentDelegate`](pdfdocumentdelegate.md), implements a [`classForPage()`](pdfdocumentdelegate/classforpage().md) method. This method returns [`AnyClass`](https://developer.apple.com/documentation/swift/anyclass) and declares that all instances of [`PDFPage`](pdfpage.md) for the document presented through [`PDFView`](pdfview.md) should instantiate the subclass `WatermarkPage`.
+The delegate, of type [`PDFDocumentDelegate`](./pdfdocumentdelegate.md), implements a [`classForPage()`](./pdfdocumentdelegate/classforpage%28%29.md) method. This method returns [`AnyClass`](../Swift/anyclass.md) and declares that all instances of [`PDFPage`](./pdfpage.md) for the document presented through [`PDFView`](./pdfview.md) should instantiate the subclass `WatermarkPage`.
 
 This subclass, found in `WatermarkPage.swift`, implements custom drawing.
 
@@ -42,7 +44,7 @@ The delegate is assigned before the document, so `classForPage()`, a `PDFDocumen
 
 ##### Override the Draw Method
 
-`WatermarkPage` subclasses `PDFPage` so that it can override the [`draw(with:to:)`](pdfpage/draw(with:to:).md) method. This method is called by `PDFDocument` to draw the page in a `PDFView`. All custom drawing for a PDF page should be done through this mechanism.
+`WatermarkPage` subclasses `PDFPage` so that it can override the [`draw(with:to:)`](./pdfpage/draw%28with,to%29.md) method. This method is called by `PDFDocument` to draw the page in a `PDFView`. All custom drawing for a PDF page should be done through this mechanism.
 
 ```swift
 // 3. Override PDFPage custom draw
@@ -79,13 +81,14 @@ Custom drawing methods should always be thread-safe and call the superclass meth
 
 ## See Also
 
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+### Annotations
+- [Adding Widgets to a PDF Document](./adding-widgets-to-a-pdf-document.md)
   Add text, button, and choice widgets to a PDF document.
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
+- [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
   Create and add custom annotation and page graphics to your PDF document.
-- [PDF Widgets](pdf-widgets.md)
+- [PDF Widgets](./pdf-widgets.md)
   Demonstrates adding widgets—interactive form elements—to a PDF document.
-- [class PDFAnnotation](pdfannotation.md)
+- [class PDFAnnotation](./pdfannotation.md)
   An annotation in a PDF document.
 
 

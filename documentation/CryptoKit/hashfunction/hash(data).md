@@ -1,7 +1,8 @@
 # hash(data:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Computes the digest of the bytes in the given data instance and returns the computed digest.
 
@@ -26,11 +27,11 @@ The computed digest of the data.
 
 #### Discussion
 
-Use this method if all your data fits into a single data instance. If the data you want to hash is too large, initialize a hash function and use the [`update(data:)`](hashfunction/update(data:).md) and [`finalize()`](hashfunction/finalize().md) methods to compute the digest in blocks.
+Use this method if all your data fits into a single data instance. If the data you want to hash is too large, initialize a hash function and use the [`update(data:)`](./update%28data%29.md) and [`finalize()`](./finalize%28%29.md) methods to compute the digest in blocks.
 
 ## Parameters
 
-- `data`: The data whose digest the hash function should compute. This can be any type that conforms to [`DataProtocol`](https://developer.apple.com/documentation/foundation/dataprotocol), like [`Data`](https://developer.apple.com/documentation/foundation/data) or an array of [`UInt8`](https://developer.apple.com/documentation/swift/uint8) instances.
+- `data`: The data whose digest the hash function should compute. This can be any type that conforms to [`DataProtocol`](../../Foundation/dataprotocol.md), like [`Data`](../../Foundation/data.md) or an array of [`UInt8`](../../Swift/uint8.md) instances.
 
 
 ---

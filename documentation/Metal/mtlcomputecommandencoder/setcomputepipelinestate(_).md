@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the compute encoder with a pipeline state for subsequent kernel calls.
@@ -11,7 +12,7 @@ Configures the compute encoder with a pipeline state for subsequent kernel calls
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,21 +21,26 @@ Configures the compute encoder with a pipeline state for subsequent kernel calls
 func setComputePipelineState(_ state: any MTLComputePipelineState)
 ```
 
+```objc
+- (void) setComputePipelineState:(id<MTLComputePipelineState>) state;
+```
+
 #### Discussion
 
 > ❗ **Important**:  Set a compute encoder’s pipeline state before encoding any commands. Encoding commands without an available pipeline state causes an error.
 
-Create your pipeline state through one of the [`MTLDevice`](mtldevice.md) methods in Creating Compute Pipeline States.
+Create your pipeline state through one of the [`MTLDevice`](../mtldevice.md) methods in Creating Compute Pipeline States.
 
 A compute pipeline state provides information Metal uses to compile and run encoded commands. You can change the pipeline state at any time, allowing you to encode multiple kernel calls in a single command buffer. Changing the pipeline state doesn’t affect any previously encoded commands.
 
 ## Parameters
 
-- `state`: An [`MTLComputePipelineState`](mtlcomputepipelinestate.md) instance.
+- `state`: An [`MTLComputePipelineState`](../mtlcomputepipelinestate.md) instance.
 
 ## See Also
 
-- [var dispatchType: MTLDispatchType](mtlcomputecommandencoder/dispatchtype.md)
+### Configuring the pipeline state
+- [var dispatchType: MTLDispatchType](./dispatchtype.md)
   The dispatch type to use when submitting compute work to the GPU.
 
 

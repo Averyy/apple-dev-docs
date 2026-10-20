@@ -1,7 +1,8 @@
 # barcodeDescriptor
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that describes the low-level details about the barcode and its data.
 
@@ -17,6 +18,10 @@ An object that describes the low-level details about the barcode and its data.
 
 ```swift
 var barcodeDescriptor: CIBarcodeDescriptor? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) CIBarcodeDescriptor * barcodeDescriptor;
 ```
 
 #### Discussion

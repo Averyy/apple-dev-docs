@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.MaterialAssignment
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that determines the material assignments for each part of an extruded shape.
 
@@ -22,26 +23,27 @@ struct MaterialAssignment
 ## Topics
 
 ### Initializers
-- [init(assignAll: UInt32)](meshresource/shapeextrusionoptions/materialassignment-swift.struct/init(assignall:).md)
+- [init(assignAll: UInt32)](./materialassignment-swift.struct/init%28assignall%29.md)
   Creates a material assignment structure that assigns the same material to all faces.
-- [init(front: UInt32, back: UInt32, extrusion: UInt32, frontChamfer: UInt32, backChamfer: UInt32)](meshresource/shapeextrusionoptions/materialassignment-swift.struct/init(front:back:extrusion:frontchamfer:backchamfer:).md)
+- [init(front: UInt32, back: UInt32, extrusion: UInt32, frontChamfer: UInt32, backChamfer: UInt32)](./materialassignment-swift.struct/init%28front,back,extrusion,frontchamfer,backchamfer%29.md)
   Creates a material assignment structure with options for each side of an extruded shape.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MeshResource.ShapeExtrusionOptions](meshresource/shapeextrusionoptions.md)
+### 2D path extrusion for 3D mesh creation
+- [MeshResource.ShapeExtrusionOptions](../shapeextrusionoptions.md)
   A type that determines the extrusion, chamfering, and material assignment of an extruded shape.
-- [MeshResource.ShapeExtrusionOptions.ChamferMode](meshresource/shapeextrusionoptions/chamfermode-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ChamferMode](./chamfermode-swift.enum.md)
   Determines which part of the extrusion to chamfer.
-- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions/curvestrokeresolution.md)
+- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](./curvestrokeresolution.md)
   Designates the resolution at which a smooth curve is discretized.
-- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](./extrusionmethod-swift.enum.md)
   The options that determine the way in which to extrude a swept shape in 3D.
 
 

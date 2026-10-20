@@ -1,7 +1,8 @@
 # latency
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio unit’s processing latency, in seconds.
 
@@ -19,6 +20,18 @@ The audio unit’s processing latency, in seconds.
 var latency: TimeInterval { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval latency;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSTimeInterval latency;
+```
+
 #### Discussion
 
 This property reflects the delay between when an impulse arrives in the input stream vs. output stream. This should reflect the delay due to signal processing (e.g. FFTs), not as an effect (e.g. reverberation).
@@ -29,15 +42,16 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_Latency`
 
 ## See Also
 
-- [var tailTime: TimeInterval](auaudiounit/tailtime.md)
+### Optimizing Performance
+- [var tailTime: TimeInterval](./tailtime.md)
   The audio unit’s tail time, in seconds.
-- [var renderQuality: Int](auaudiounit/renderquality.md)
+- [var renderQuality: Int](./renderquality.md)
   Provides a trade-off between rendering quality and CPU load.
-- [var shouldBypassEffect: Bool](auaudiounit/shouldbypasseffect.md)
+- [var shouldBypassEffect: Bool](./shouldbypasseffect.md)
   Determines whether an effect should route input directly to output, without any processing.
-- [var canProcessInPlace: Bool](auaudiounit/canprocessinplace.md)
+- [var canProcessInPlace: Bool](./canprocessinplace.md)
   Determines whether an audio unit can process in place.
-- [var isRenderingOffline: Bool](auaudiounit/isrenderingoffline.md)
+- [var isRenderingOffline: Bool](./isrenderingoffline.md)
   Communicates to an audio unit that it is rendering offline.
 
 

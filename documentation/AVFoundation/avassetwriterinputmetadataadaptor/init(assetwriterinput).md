@@ -1,22 +1,29 @@
 # init(assetWriterInput:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metadata group adaptor to append timed metadata groups to write to an output file.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 27.0
+- iPadOS 8.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVAssetWriter.inputMetadataReceiver(for:) instead
 
 ## Declaration
 
 ```swift
 init(assetWriterInput input: AVAssetWriterInput)
+```
+
+```objc
+- (instancetype) initWithAssetWriterInput:(AVAssetWriterInput *) input;
 ```
 
 ## Parameters

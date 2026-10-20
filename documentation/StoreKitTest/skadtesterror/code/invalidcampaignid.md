@@ -1,7 +1,8 @@
 # SKAdTestError.Code.invalidCampaignId
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The campaign ID isn’t an integer between one and one hundred.
 
@@ -16,19 +17,24 @@ The campaign ID isn’t an integer between one and one hundred.
 case invalidCampaignId
 ```
 
+```c
+SKAdTestErrorCodeInvalidCampaignId
+```
+
 #### Discussion
 
 A campaign ID is an integer that is greater than or equal to one and less than or equal to one hundred.
 
 ## See Also
 
-- [SKAdTestError.Code.signatureMissingCampaignId](skadtesterror/code/signaturemissingcampaignid.md)
+### Older Errors
+- [SKAdTestError.Code.signatureMissingCampaignId](./signaturemissingcampaignid.md)
   The signature is missing the campaign identifier, in the testing environment.
-- [SKAdTestError.Code.conflictingSource](skadtesterror/code/conflictingsource.md)
+- [SKAdTestError.Code.conflictingSource](./conflictingsource.md)
   This error code is unused.
-- [SKAdTestError.Code.signatureMissingCampaignId](skadtesterror/code/signaturemissingcampaignid.md)
+- [SKAdTestError.Code.signatureMissingCampaignId](./signaturemissingcampaignid.md)
   The signature is missing the campaign identifier, in the testing environment.
-- [SKAdTestError.Code.conflictingSource](skadtesterror/code/conflictingsource.md)
+- [SKAdTestError.Code.conflictingSource](./conflictingsource.md)
   This error code is unused.
 
 

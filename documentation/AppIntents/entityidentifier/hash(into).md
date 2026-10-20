@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the entity identifier.
 
@@ -11,7 +12,7 @@ Hashes the entity identifier.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,9 @@ func hash(into hasher: inout Hasher)
 
 #### Discussion
 
-> ❗ **Important**: This implementation **intentionally ignores** the `stableIdentifier` field. Only `typeIdentifier` and `identifier` are used for hashing. This ensures that the same entity on different devices (same local ID, different stable ID) has the same hash, enabling correct behavior in `Set` and `Dictionary`.
+> ❗ **Important**: This implementation **intentionally ignores** the `stableIdentifier` field. Only `typeIdentifier` and `identifier` are used for hashing.
+>
+> This ensures that the same entity on different devices (same local ID, different stable ID) has the same hash, enabling correct behavior in `Set` and `Dictionary`.
 
 
 ---

@@ -1,7 +1,8 @@
 # iccProfile
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 ICC color profile for the image buffer.
 

@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.unaryArithmetic(type:operation:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An arithmetic node with one operand of the given data type, performing the specified operation
 
@@ -12,7 +13,7 @@ An arithmetic node with one operand of the given data type, performing the speci
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

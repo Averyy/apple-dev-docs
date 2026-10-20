@@ -1,20 +1,22 @@
 # kIOUSBHostDeviceClassName
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kIOUSBHostDeviceClassName
 ```
 
 ## See Also
 
-- [kIOUSBHostInterfaceClassName](kiousbhostinterfaceclassname.md)
+### Services
+- [kIOUSBHostInterfaceClassName](./kiousbhostinterfaceclassname.md)
 
 
 ---

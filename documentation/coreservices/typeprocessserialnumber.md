@@ -1,9 +1,10 @@
 # typeProcessSerialNumber
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-A process serial number. See also [`AEAddressDesc`](aeaddressdesc.md).
+A process serial number. See also [`AEAddressDesc`](./aeaddressdesc.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

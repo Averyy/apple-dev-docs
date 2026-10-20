@@ -1,7 +1,8 @@
 # MLTextClassifier
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A model you train to classify natural language text.
 
@@ -20,91 +21,92 @@ struct MLTextClassifier
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a text classifier model](./creating-a-text-classifier-model.md)
 
 #### Overview
 
 Use a text classifier to train a machine learning model you can include in your app to classify natural language text. The model learns to associate labels with features of the input text, which can be sentences, paragraphs, or even entire documents.
 
-After you train a text classifier, you save it to a Core ML model file. You then use an instance of the [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel) class from the [`Natural Language`](https://developer.apple.com/documentation/naturallanguage) framework to read the model file into your app.
+After you train a text classifier, you save it to a Core ML model file. You then use an instance of the [`NLModel`](../NaturalLanguage/nlmodel.md) class from the [Natural Language](../NaturalLanguage/NaturalLanguage.md) framework to read the model file into your app.
 
 ## Topics
 
 ### Creating and training a text classifier
-- [init(trainingData:parameters:)](mltextclassifier/init(trainingdata:parameters:).md)
+- [init(trainingData:parameters:)](./mltextclassifier/init%28trainingdata,parameters%29.md)
   Creates a text classifier.
-- [init(trainingData:textColumn:labelColumn:parameters:)](mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:).md)
+- [init(trainingData:textColumn:labelColumn:parameters:)](./mltextclassifier/init%28trainingdata,textcolumn,labelcolumn,parameters%29.md)
   Creates a text classifier.
-- [MLTextClassifier.DataSource](mltextclassifier/datasource.md)
+- [MLTextClassifier.DataSource](./mltextclassifier/datasource.md)
   A data source for a text classifier.
-- [MLTextClassifier.ModelParameters](mltextclassifier/modelparameters-swift.struct.md)
+- [MLTextClassifier.ModelParameters](./mltextclassifier/modelparameters-swift.struct.md)
   Parameters that specify model training parameters and validation data.
-- [let modelParameters: MLTextClassifier.ModelParameters](mltextclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLTextClassifier.ModelParameters](./mltextclassifier/modelparameters-swift.property.md)
   The configuration parameters that the text classifier used for training during initialization.
 ### Evaluating a text classifier
-- [func evaluation(on:)](mltextclassifier/evaluation(on:).md)
+- [func evaluation(on:)](./mltextclassifier/evaluation%28on%29.md)
   Computes evaluation metrics.
-- [func evaluation(on:textColumn:labelColumn:)](mltextclassifier/evaluation(on:textcolumn:labelcolumn:).md)
+- [func evaluation(on:textColumn:labelColumn:)](./mltextclassifier/evaluation%28on,textcolumn,labelcolumn%29.md)
   Computes evaluation metrics.
-- [let trainingMetrics: MLClassifierMetrics](mltextclassifier/trainingmetrics.md)
+- [let trainingMetrics: MLClassifierMetrics](./mltextclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [let validationMetrics: MLClassifierMetrics](mltextclassifier/validationmetrics.md)
+- [let validationMetrics: MLClassifierMetrics](./mltextclassifier/validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 ### Testing a text classifier
-- [func prediction(from: String) throws -> String](mltextclassifier/prediction(from:).md)
+- [func prediction(from: String) throws -> String](./mltextclassifier/prediction%28from%29.md)
   Classifies a string with a label.
-- [func predictions(from:)](mltextclassifier/predictions(from:).md)
+- [func predictions(from:)](./mltextclassifier/predictions%28from%29.md)
   Classifies an array of strings with labels.
-- [func predictionWithConfidence(from: String) throws -> [String : Double]](mltextclassifier/predictionwithconfidence(from:).md)
+- [func predictionWithConfidence(from: String) throws -> [String : Double]](./mltextclassifier/predictionwithconfidence%28from%29.md)
   Predicts multiple possible labels and their confidence scores for the specified string.
-- [func predictionsWithConfidence(from:)](mltextclassifier/predictionswithconfidence(from:).md)
+- [func predictionsWithConfidence(from:)](./mltextclassifier/predictionswithconfidence%28from%29.md)
   Predicts multiple possible labels and their confidence scores for each string in the specified array.
 ### Saving a text classifier
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mltextclassifier/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mltextclassifier/write%28to,metadata%29.md)
   Exports the text classifier as a Core ML model file at the specified URL.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mltextclassifier/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mltextclassifier/write%28tofile,metadata%29.md)
   Exports the text classifier as a Core ML model file at the specified file path.
 ### Describing a text classifier
-- [var model: MLModel](mltextclassifier/model.md)
+- [var model: MLModel](./mltextclassifier/model.md)
   The underlying Core ML model of the text classifier.
-- [var description: String](mltextclassifier/description.md)
+- [var description: String](./mltextclassifier/description.md)
   A text representation of the text classifier.
-- [var debugDescription: String](mltextclassifier/debugdescription.md)
+- [var debugDescription: String](./mltextclassifier/debugdescription.md)
   A text representation of the text classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mltextclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./mltextclassifier/playgrounddescription.md)
   A description of the text classifier in a playground.
 ### Supporting types
-- [MLTextClassifier.FeatureExtractorType](mltextclassifier/featureextractortype.md)
+- [MLTextClassifier.FeatureExtractorType](./mltextclassifier/featureextractortype.md)
   The text feature extractor type.
-- [MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelalgorithmtype.md)
+- [MLTextClassifier.ModelAlgorithmType](./mltextclassifier/modelalgorithmtype.md)
   The type of algorithm that a text classifier uses.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mltextclassifier/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mltextclassifier/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mltextclassifier/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mltextclassifier/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mltextclassifier/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mltextclassifier/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+### Text models
+- [Creating a text classifier model](./creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](./creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
-- [struct MLWordTagger](mlwordtagger.md)
+- [struct MLWordTagger](./mlwordtagger.md)
   A word-tagging model you train to classify natural language text at the word level.
-- [struct MLGazetteer](mlgazetteer.md)
+- [struct MLGazetteer](./mlgazetteer.md)
   A collection of terms and their labels, which augments a tagger that analyzes natural language text.
-- [struct MLWordEmbedding](mlwordembedding.md)
+- [struct MLWordEmbedding](./mlwordembedding.md)
   A map of strings in a vector space that enable your app to find similar strings by looking at a string’s neighbors.
 
 

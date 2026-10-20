@@ -1,7 +1,8 @@
 # subscript(column:_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a column you select by its index.
 
@@ -26,13 +27,14 @@ subscript<T>(column index: Int, type: T.Type) -> DiscontiguousColumnSlice<T> { g
 
 ## See Also
 
-- [subscript<T>(ColumnID<T>) -> DiscontiguousColumnSlice<T>](dataframe/slice/subscript(_:)-32h9z.md)
+### Creating a Slice by Selecting a Column
+- [subscript<T>(ColumnID<T>) -> DiscontiguousColumnSlice<T>](./subscript%28_%29-32h9z.md)
   Returns a column you select by its column identifier.
-- [subscript<T>(String, T.Type) -> DiscontiguousColumnSlice<T>](dataframe/slice/subscript(_:_:).md)
+- [subscript<T>(String, T.Type) -> DiscontiguousColumnSlice<T>](./subscript%28_,_%29.md)
   Returns a column you select by its name and type.
-- [subscript(String) -> AnyColumnSlice](dataframe/slice/subscript(_:)-18kdy.md)
+- [subscript(String) -> AnyColumnSlice](./subscript%28_%29-18kdy.md)
   Returns a column you select by its name.
-- [subscript(dynamicMember _: String) -> AnyColumnSlice](dataframe/slice/subscript(dynamicmember:).md)
+- [subscript(dynamicMember _: String) -> AnyColumnSlice](./subscript%28dynamicmember%29.md)
   Returns a column you select by its name to support dynamic-member lookup.
 
 

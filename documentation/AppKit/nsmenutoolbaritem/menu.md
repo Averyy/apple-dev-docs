@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu presented from the toolbar item.
 
@@ -14,11 +15,16 @@ The menu presented from the toolbar item.
 var menu: NSMenu { get set }
 ```
 
+```objc
+@property (strong) NSMenu * menu;
+```
+
 ## See Also
 
-- [var showsIndicator: Bool](nsmenutoolbaritem/showsindicator.md)
+### Configuring a menu toolbar item
+- [var showsIndicator: Bool](./showsindicator.md)
   A Boolean value that determines whether the toolbar item displays an indicator of additional functionality.
-- [var itemMenu: UIMenu](nsmenutoolbaritem/itemmenu.md)
+- [var itemMenu: UIMenu](./itemmenu.md)
 
 
 ---

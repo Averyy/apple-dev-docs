@@ -1,7 +1,8 @@
 # MTLHeapDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration that customizes the behavior for a Metal memory heap.
 
@@ -19,64 +20,69 @@ A configuration that customizes the behavior for a Metal memory heap.
 class MTLHeapDescriptor
 ```
 
+```objc
+@interface MTLHeapDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
+- [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
 #### Overview
 
-Create an [`MTLHeap`](mtlheap.md) by configuring an [`MTLHeapDescriptor`](mtlheapdescriptor.md) instance’s properties and passing it to the [`makeHeap(descriptor:)`](mtldevice/makeheap(descriptor:).md) method of an [`MTLDevice`](mtldevice.md).
+Create an [`MTLHeap`](./mtlheap.md) by configuring an [`MTLHeapDescriptor`](./mtlheapdescriptor.md) instance’s properties and passing it to the [`makeHeap(descriptor:)`](./mtldevice/makeheap%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md).
 
 Each new heap inherits the descriptor’s configuration as you create it, which means you can modify and reuse a descriptor to create other heaps.
 
 ## Topics
 
 ### Configuring a heap
-- [var type: MTLHeapType](mtlheapdescriptor/type.md)
+- [var type: MTLHeapType](./mtlheapdescriptor/type.md)
   The memory placement strategy for any resources you allocate from the heaps you create with this descriptor.
-- [var storageMode: MTLStorageMode](mtlheapdescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./mtlheapdescriptor/storagemode.md)
   The storage mode for the heaps you create with this descriptor.
-- [var cpuCacheMode: MTLCPUCacheMode](mtlheapdescriptor/cpucachemode.md)
+- [var cpuCacheMode: MTLCPUCacheMode](./mtlheapdescriptor/cpucachemode.md)
   The CPU cache behavior for any resources you allocate from the heaps you create with this descriptor.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlheapdescriptor/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./mtlheapdescriptor/hazardtrackingmode.md)
   The hazard tracking behavior for any resources you allocate from the heaps you create with this descriptor.
-- [var resourceOptions: MTLResourceOptions](mtlheapdescriptor/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./mtlheapdescriptor/resourceoptions.md)
   The combined behavior for any resources you allocate from the heaps you create with this descriptor.
-- [var size: Int](mtlheapdescriptor/size.md)
+- [var size: Int](./mtlheapdescriptor/size.md)
   The total amount of memory, in bytes, for the heaps you create with this descriptor.
-- [var sparsePageSize: MTLSparsePageSize](mtlheapdescriptor/sparsepagesize.md)
+- [var sparsePageSize: MTLSparsePageSize](./mtlheapdescriptor/sparsepagesize.md)
   The page size for any resources you allocate from the heaps you create with this descriptor.
 ### Instance Properties
-- [var maxCompatiblePlacementSparsePageSize: MTLSparsePageSize](mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md)
+- [var maxCompatiblePlacementSparsePageSize: MTLSparsePageSize](./mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md)
   Specifies the largest sparse page size that the Metal heap supports.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+### Resource memory allocation and management
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](./implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](./implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
-- [protocol MTLHeap](mtlheap.md)
+- [protocol MTLHeap](./mtlheap.md)
   A memory pool from which you can suballocate resources.
-- [enum MTLHeapType](mtlheaptype.md)
+- [enum MTLHeapType](./mtlheaptype.md)
   The options you use to choose the heap type.
-- [struct MTLSizeAndAlign](mtlsizeandalign.md)
+- [struct MTLSizeAndAlign](./mtlsizeandalign.md)
   The size and alignment of a resource, in bytes.
 
 

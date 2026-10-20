@@ -1,7 +1,8 @@
 # service
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service advertised by the listener.
 

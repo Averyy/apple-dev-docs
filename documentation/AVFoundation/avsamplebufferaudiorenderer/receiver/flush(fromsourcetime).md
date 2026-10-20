@@ -1,7 +1,8 @@
 # flush(fromSourceTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flushes enqueued sample buffers with presentation time stamps later than or equal to the specified time. This method suspends until the flush is completed.
 
@@ -37,9 +38,10 @@ If this method returns `false`, the flush did not succeed and the set of enqueue
 
 ## See Also
 
-- [func flush()](avsamplebufferaudiorenderer/receiver/flush.md)
+### Flushing the receiver
+- [func flush()](./flush%28%29.md)
   Instructs the receiver to discard pending enqueued sample buffers.
-- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason](avsamplebufferaudiorenderer/receiver/suggestedflushreason.md)
+- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason](./suggestedflushreason.md)
   Reasons the receiver suggests the client flush and re-enqueue.
 
 

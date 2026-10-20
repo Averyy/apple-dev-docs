@@ -1,7 +1,8 @@
 # replace(childrenOf:using:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all child items of the specified parent item with the provided section snapshot.
 
@@ -10,7 +11,7 @@ Replaces all child items of the specified parent item with the provided section 
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

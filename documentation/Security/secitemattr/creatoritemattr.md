@@ -1,7 +1,8 @@
 # SecItemAttr.creatorItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the creator attribute.
 
@@ -13,6 +14,10 @@ Identifies the creator attribute.
 
 ```swift
 case creatorItemAttr
+```
+
+```c
+kSecCreatorItemAttr
 ```
 
 #### Discussion

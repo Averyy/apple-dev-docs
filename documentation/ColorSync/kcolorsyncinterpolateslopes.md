@@ -1,7 +1,8 @@
 # kColorSyncInterpolateSlopes
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 CFBooleanRef controlling how the framework determines control-point slopes.
 
@@ -20,30 +21,35 @@ CFBooleanRef controlling how the framework determines control-point slopes.
 var kColorSyncInterpolateSlopes: Unmanaged<CFString>
 ```
 
+```c
+extern CFStringRef kColorSyncInterpolateSlopes;
+```
+
 #### Discussion
 
-When true, the framework computes slopes at control points by Piecewise Cubic Hermite Interpolating Polynomial from the X,Y control point coordinates, and you must omit [`kColorSyncControlPointSlopes`](kcolorsynccontrolpointslopes.md). When false, you must supply explicit slopes in [`kColorSyncControlPointSlopes`](kcolorsynccontrolpointslopes.md) (see below). Shared across all alternates from index 0 when [`kColorSyncCommonCurveParameters`](kcolorsynccommoncurveparameters.md) is true.
+When true, the framework computes slopes at control points by Piecewise Cubic Hermite Interpolating Polynomial from the X,Y control point coordinates, and you must omit [`kColorSyncControlPointSlopes`](./kcolorsynccontrolpointslopes.md). When false, you must supply explicit slopes in [`kColorSyncControlPointSlopes`](./kcolorsynccontrolpointslopes.md) (see below). Shared across all alternates from index 0 when [`kColorSyncCommonCurveParameters`](./kcolorsynccommoncurveparameters.md) is true.
 
 ## See Also
 
-- [var kColorSyncAlternateCurveHeadroomStops: Unmanaged<CFString>](kcolorsyncalternatecurveheadroomstops.md)
+### Describing gain curves
+- [var kColorSyncAlternateCurveHeadroomStops: Unmanaged<CFString>](./kcolorsyncalternatecurveheadroomstops.md)
   Target headroom of this alternate curve in stops (log2) above reference white (float in the range [0.0, 6.0]). The renderer selects the closest alternate to the actual display headroom.
-- [var kColorSyncCommonComponentMixing: Unmanaged<CFString>](kcolorsynccommoncomponentmixing.md)
+- [var kColorSyncCommonComponentMixing: Unmanaged<CFString>](./kcolorsynccommoncomponentmixing.md)
   CFBooleanRef indicating whether alternate curves share one component-mixing configuration.
-- [var kColorSyncCommonCurveParameters: Unmanaged<CFString>](kcolorsynccommoncurveparameters.md)
+- [var kColorSyncCommonCurveParameters: Unmanaged<CFString>](./kcolorsynccommoncurveparameters.md)
   CFBooleanRef indicating whether alternate curves share common gain-curve parameters.
-- [var kColorSyncComponentMix: Unmanaged<CFString>](kcolorsynccomponentmix.md)
+- [var kColorSyncComponentMix: Unmanaged<CFString>](./kcolorsynccomponentmix.md)
   Component mixing type (uint8_t) matching `component_mixing_value` in ST 2094-50.
-- [var kColorSyncControlPointSlopes: Unmanaged<CFString>](kcolorsynccontrolpointslopes.md)
-  CFArrayRef of floats — explicit tangent slopes at each control point, expressed as tan(slope_angle). Only present when [`kColorSyncInterpolateSlopes`](kcolorsyncinterpolateslopes.md) is false.
-- [var kColorSyncControlPointsX: Unmanaged<CFString>](kcolorsynccontrolpointsx.md)
+- [var kColorSyncControlPointSlopes: Unmanaged<CFString>](./kcolorsynccontrolpointslopes.md)
+  CFArrayRef of floats — explicit tangent slopes at each control point, expressed as tan(slope_angle). Only present when [`kColorSyncInterpolateSlopes`](./kcolorsyncinterpolateslopes.md) is false.
+- [var kColorSyncControlPointsX: Unmanaged<CFString>](./kcolorsynccontrolpointsx.md)
   CFArrayRef of floats — the X-axis coordinates of the gain-curve control points.
-- [var kColorSyncControlPointsY: Unmanaged<CFString>](kcolorsynccontrolpointsy.md)
+- [var kColorSyncControlPointsY: Unmanaged<CFString>](./kcolorsynccontrolpointsy.md)
   CFArrayRef of floats — the Y-axis gain offsets at the control points.
-- [var kColorSyncGainCurveChromaticities: Unmanaged<CFString>](kcolorsyncgaincurvechromaticities.md)
+- [var kColorSyncGainCurveChromaticities: Unmanaged<CFString>](./kcolorsyncgaincurvechromaticities.md)
   Chromaticity primaries used to compute the driving signal for the gain curve.
-- [var kColorSyncMaxControlPointIndex: Unmanaged<CFString>](kcolorsyncmaxcontrolpointindex.md)
-  Index of the last control point (uint8_t, 0–31), i.e. the number of control points minus 1. Shared across all alternates from index 0 when [`kColorSyncCommonCurveParameters`](kcolorsynccommoncurveparameters.md) is true.
+- [var kColorSyncMaxControlPointIndex: Unmanaged<CFString>](./kcolorsyncmaxcontrolpointindex.md)
+  Index of the last control point (uint8_t, 0–31), i.e. the number of control points minus 1. Shared across all alternates from index 0 when [`kColorSyncCommonCurveParameters`](./kcolorsynccommoncurveparameters.md) is true.
 
 
 ---

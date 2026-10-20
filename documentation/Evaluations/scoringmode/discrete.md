@@ -1,7 +1,8 @@
 # ScoringMode.discrete
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that requires the model to return exactly one of the values defined in the scoring dimension’s scale, enforced using structured generation.
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An image that appears next to the menu element.
@@ -20,15 +21,20 @@ An image that appears next to the menu element.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIImage * image;
+```
+
 ## See Also
 
-- [var title: String](uimenuleaf/title.md)
+### Managing the appearance
+- [var title: String](./title.md)
   A short display title for the menu element.
-- [var discoverabilityTitle: String?](uimenuleaf/discoverabilitytitle.md)
+- [var discoverabilityTitle: String?](./discoverabilitytitle.md)
   A long, informative title to use in the keyboard shortcut overlay.
-- [var attributes: UIMenuElement.Attributes](uimenuleaf/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./attributes.md)
   The attributes that determine the style of the menu element.
-- [var presentationSourceItem: (any UIPopoverPresentationControllerSourceItem)?](uimenuleaf/presentationsourceitem.md)
+- [var presentationSourceItem: (any UIPopoverPresentationControllerSourceItem)?](./presentationsourceitem.md)
   The item you can use as an anchor for subsequent presentations.
 
 

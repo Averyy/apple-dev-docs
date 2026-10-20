@@ -1,7 +1,8 @@
 # new MarkerAnnotation(location, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a marker annotation at the coordinate location with provided options.
 
@@ -10,7 +11,7 @@ Creates a marker annotation at the coordinate location with provided options.
 
 ## Declaration
 
-```swift
+```
 constructor(
     location: CoordinateData | Place | SearchAutocompleteResult,
     options?: MarkerAnnotationConstructorOptions,
@@ -24,7 +25,8 @@ constructor(
 
 ## See Also
 
-- [interface MarkerAnnotationConstructorOptions](markerannotationconstructoroptions.md)
+### Creating a marker annotation
+- [interface MarkerAnnotationConstructorOptions](../markerannotationconstructoroptions.md)
   An object containing the options that create a marker annotation.
 
 

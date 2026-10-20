@@ -1,7 +1,8 @@
 # UIGestureRecognizerRepresentable.CoordinateSpaceConverter
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type used to convert coordinates to/from coordinate spaces in the hierarchy of the associated SwiftUI view.
 

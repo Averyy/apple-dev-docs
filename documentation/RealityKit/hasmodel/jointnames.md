@@ -1,7 +1,8 @@
 # jointNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of all the joints in the model entity.
 
@@ -11,7 +12,7 @@ The names of all the joints in the model entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ The names of all the joints in the model entity.
 
 ## See Also
 
-- [var jointTransforms: [Transform]](hasmodel/jointtransforms.md)
+### Managing joints
+- [var jointTransforms: [Transform]](./jointtransforms.md)
   The relative joint transforms of the model entity.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new vector from a Spatial point.
 
@@ -19,6 +20,8 @@ Returns a new vector from a Spatial point.
 ```swift
 init(_ vector: Vector3D)
 ```
+
+Available when `Scalar` is `Float`.
 
 #### Discussion
 

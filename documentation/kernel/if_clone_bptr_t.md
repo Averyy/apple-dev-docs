@@ -1,14 +1,15 @@
 # if_clone_bptr_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __if_clone *if_clone_bptr_t;
 ```
 

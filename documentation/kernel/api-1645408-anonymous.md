@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIONDRVAsynchronousIOCommandKind](1645408-anonymous/kiondrvasynchronousiocommandkind.md)
-- [kIONDRVImmediateIOCommandKind](1645408-anonymous/kiondrvimmediateiocommandkind.md)
-- [kIONDRVSynchronousIOCommandKind](1645408-anonymous/kiondrvsynchronousiocommandkind.md)
+- [kIONDRVAsynchronousIOCommandKind](./api-1645408-anonymous/kiondrvasynchronousiocommandkind.md)
+- [kIONDRVImmediateIOCommandKind](./api-1645408-anonymous/kiondrvimmediateiocommandkind.md)
+- [kIONDRVSynchronousIOCommandKind](./api-1645408-anonymous/kiondrvsynchronousiocommandkind.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Accept cookies only from the main document domain.
 
@@ -20,11 +21,16 @@ Accept cookies only from the main document domain.
 case onlyFromMainDocumentDomain
 ```
 
+```c
+NSHTTPCookieAcceptPolicyOnlyFromMainDocumentDomain
+```
+
 ## See Also
 
-- [HTTPCookie.AcceptPolicy.always](httpcookie/acceptpolicy/always.md)
+### Policies
+- [HTTPCookie.AcceptPolicy.always](./always.md)
   Accept all cookies.
-- [HTTPCookie.AcceptPolicy.never](httpcookie/acceptpolicy/never.md)
+- [HTTPCookie.AcceptPolicy.never](./never.md)
   Reject all cookies.
 
 

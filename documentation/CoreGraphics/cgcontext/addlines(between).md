@@ -1,7 +1,8 @@
 # addLines(between:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a sequence of connected straight-line segments to the current path.
 
@@ -22,7 +23,7 @@ func addLines(between points: [CGPoint])
 
 #### Discussion
 
-Calling this convenience method is equivalent to calling the [`move(to:)`](cgcontext/move(to:).md) method with the first value in the points array, then calling the [`addLine(to:)`](cgcontext/addline(to:).md) method for each subsequent point until the array is exhausted. After calling this method, the path’s current point is the last point in the array.
+Calling this convenience method is equivalent to calling the [`move(to:)`](./move%28to%29.md) method with the first value in the points array, then calling the [`addLine(to:)`](./addline%28to%29.md) method for each subsequent point until the array is exhausted. After calling this method, the path’s current point is the last point in the array.
 
 ## Parameters
 
@@ -30,33 +31,34 @@ Calling this convenience method is equivalent to calling the [`move(to:)`](cgcon
 
 ## See Also
 
-- [func beginPath()](cgcontext/beginpath.md)
+### Constructing a Current Graphics Path
+- [func beginPath()](./beginpath%28%29.md)
   Creates a new empty path in a graphics context.
-- [func move(to: CGPoint)](cgcontext/move(to:).md)
+- [func move(to: CGPoint)](./move%28to%29.md)
   Begins a new subpath at the specified point.
-- [func addLine(to: CGPoint)](cgcontext/addline(to:).md)
+- [func addLine(to: CGPoint)](./addline%28to%29.md)
   Appends a straight line segment from the current point to the specified point.
-- [func addRect(CGRect)](cgcontext/addrect(_:).md)
+- [func addRect(CGRect)](./addrect%28_%29.md)
   Adds a rectangular path to the current path.
-- [func addRects([CGRect])](cgcontext/addrects(_:).md)
+- [func addRects([CGRect])](./addrects%28_%29.md)
   Adds a set of rectangular paths to the current path.
-- [func addEllipse(in: CGRect)](cgcontext/addellipse(in:).md)
+- [func addEllipse(in: CGRect)](./addellipse%28in%29.md)
   Adds an ellipse that fits inside the specified rectangle.
-- [func addArc(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](cgcontext/addarc(center:radius:startangle:endangle:clockwise:).md)
+- [func addArc(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](./addarc%28center,radius,startangle,endangle,clockwise%29.md)
   Adds an arc of a circle to the current path, specified with a radius and angles.
-- [func addArc(tangent1End: CGPoint, tangent2End: CGPoint, radius: CGFloat)](cgcontext/addarc(tangent1end:tangent2end:radius:).md)
+- [func addArc(tangent1End: CGPoint, tangent2End: CGPoint, radius: CGFloat)](./addarc%28tangent1end,tangent2end,radius%29.md)
   Adds an arc of a circle to the current path, specified with a radius and two tangent lines.
-- [func addCurve(to: CGPoint, control1: CGPoint, control2: CGPoint)](cgcontext/addcurve(to:control1:control2:).md)
+- [func addCurve(to: CGPoint, control1: CGPoint, control2: CGPoint)](./addcurve%28to,control1,control2%29.md)
   Adds a cubic Bézier curve to the current path, with the specified end point and control points.
-- [func addQuadCurve(to: CGPoint, control: CGPoint)](cgcontext/addquadcurve(to:control:).md)
+- [func addQuadCurve(to: CGPoint, control: CGPoint)](./addquadcurve%28to,control%29.md)
   Adds a quadratic Bézier curve to the current path, with the specified end point and control point.
-- [func addPath(CGPath)](cgcontext/addpath(_:).md)
+- [func addPath(CGPath)](./addpath%28_%29.md)
   Adds a previously created path object to the current path in a graphics context.
-- [func closePath()](cgcontext/closepath.md)
+- [func closePath()](./closepath%28%29.md)
   Closes and terminates the current path’s subpath.
-- [var path: CGPath?](cgcontext/path.md)
+- [var path: CGPath?](./path.md)
   Returns a path object built from the current path information in a graphics context.
-- [func replacePathWithStrokedPath()](cgcontext/replacepathwithstrokedpath.md)
+- [func replacePathWithStrokedPath()](./replacepathwithstrokedpath%28%29.md)
   Replaces the path in the graphics context with the stroked version of the path.
 
 

@@ -1,12 +1,15 @@
 # new()
 
 **Framework**: ClockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an empty text provider.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use factory methods that take parameters.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ Creates an empty text provider.
 class func new() -> Self
 ```
 
+```objc
++ (instancetype) new;
+```
+
 ## See Also
 
-- [init()](clktextprovider/init.md)
+### Creating Empty Text Providers
+- [init()](./init%28%29.md)
   Creates an empty text provider.
 
 

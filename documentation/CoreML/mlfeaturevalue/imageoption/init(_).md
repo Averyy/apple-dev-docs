@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image feature option key from a string.
 
@@ -22,7 +23,7 @@ init(_ rawValue: String)
 
 #### Discussion
 
-Don’t use this initializer directly. Create an image option key with [`cropAndScale`](mlfeaturevalue/imageoption/cropandscale.md) or [`cropRect`](mlfeaturevalue/imageoption/croprect.md) instead.
+Don’t use this initializer directly. Create an image option key with [`cropAndScale`](./cropandscale.md) or [`cropRect`](./croprect.md) instead.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Don’t use this initializer directly. Create an image option key with [`cropAnd
 
 ## See Also
 
-- [init(rawValue: String)](mlfeaturevalue/imageoption/init(rawvalue:).md)
+### Image option key initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates an image feature option key from a raw value string.
 
 

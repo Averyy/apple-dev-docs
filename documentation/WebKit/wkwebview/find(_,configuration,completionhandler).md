@@ -1,7 +1,8 @@
 # find(_:configuration:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for the specified string in the web view’s content.
 
@@ -10,7 +11,7 @@ Searches for the specified string in the web view’s content.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,15 +24,18 @@ Searches for the specified string in the web view’s content.
 
 - `string`: The search string to use.
 - `configuration`: The search parameters. Use this object to specify whether the search is case sensitive, whether it moves forward or backward, and whether it wraps when it reaches the end of the page.
-- `completionHandler`: The completion handler to call with the results of the search. This handler has no return value and takes the following parameter: - **result**: The object that contains the results of the search.
+- `completionHandler`: The completion handler to call with the results of the search. This handler has no return value and takes the following parameter:
+
+  - **result**: The object that contains the results of the search.
 
 ## See Also
 
-- [func find(String, configuration: WKFindConfiguration) async throws -> WKFindResult](wkwebview/find(_:configuration:).md)
+### Searching the current page’s content
+- [func find(String, configuration: WKFindConfiguration) async throws -> WKFindResult](./find%28_,configuration%29.md)
   Searches for the specified string in the web view’s content.
-- [class WKFindConfiguration](wkfindconfiguration.md)
+- [class WKFindConfiguration](../wkfindconfiguration.md)
   The configuration parameters to use when searching the contents of the web view.
-- [class WKFindResult](wkfindresult.md)
+- [class WKFindResult](../wkfindresult.md)
   An object that contains the results of searching the web view’s contents.
 
 

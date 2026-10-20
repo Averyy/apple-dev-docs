@@ -1,7 +1,8 @@
 # Install Profile
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Install a configuration profile on a device.
 
@@ -16,13 +17,13 @@ Install a configuration profile on a device.
 
 ## Mentions
 
-- [Deploying device management enrollment profiles](deploying-device-management-enrollment-profiles.md)
+- [Deploying device management enrollment profiles](./deploying-device-management-enrollment-profiles.md)
 
 #### Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +33,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowInstallationRemoval |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -100,9 +101,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object InstallProfileCommand](installprofilecommand.md)
+- [object InstallProfileCommand](./installprofilecommand.md)
   The command to install a configuration profile on a device.
-- [object InstallProfileResponse](installprofileresponse.md)
+- [object InstallProfileResponse](./installprofileresponse.md)
   A response from the device after it processes the command to install a configuration profile on a device.
 
 ## Endpoint
@@ -111,19 +112,27 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `InstallProfileCommand`
+
 The request object the server returns for the Install Profile Command.
+
+## Responses
+
+- `200` OK (`InstallProfileResponse`, `application/xml`): The response object the system returns for the Install Profile Command.
 
 ## See Also
 
-- [Profile List](profile-list-command.md)
+### Profile management
+- [Profile List](./profile-list-command.md)
   Get a list of installed profiles on a device.
-- [Remove Profile](remove-profile-command.md)
+- [Remove Profile](./remove-profile-command.md)
   Remove a previously installed profile from the device.
-- [Install Provisioning Profile](install-provisioning-profile-command.md)
+- [Install Provisioning Profile](./install-provisioning-profile-command.md)
   Install a provisioning profile on a device.
-- [Provisioning Profile List](provisioning-profile-list-command.md)
+- [Provisioning Profile List](./provisioning-profile-list-command.md)
   Get a list of installed provisioning profiles on a device.
-- [Remove Provisioning Profile](remove-provisioning-profile-command.md)
+- [Remove Provisioning Profile](./remove-provisioning-profile-command.md)
   Remove a previously installed provisioning profile from a device.
 
 

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current binary archive error domain.
 
@@ -21,7 +22,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let MTLBinaryArchiveDomain: String](mtlbinaryarchivedomain.md)
+### Error domain
+- [let MTLBinaryArchiveDomain: String](../mtlbinaryarchivedomain.md)
   The domain for Metal binary archive errors.
 
 

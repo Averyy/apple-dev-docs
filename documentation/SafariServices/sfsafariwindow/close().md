@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.14.4+
@@ -12,9 +13,14 @@
 func close()
 ```
 
+```objc
+- (void) close;
+```
+
 ## See Also
 
-- [func getAllTabs(completionHandler: ([SFSafariTab]) -> Void)](sfsafariwindow/getalltabs(completionhandler:).md)
+### Instance Methods
+- [func getAllTabs(completionHandler: ([SFSafariTab]) -> Void)](./getalltabs%28completionhandler%29.md)
 
 
 ---

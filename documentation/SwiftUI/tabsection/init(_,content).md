@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section with the provided content.
 
@@ -21,6 +22,31 @@ Creates a section with the provided content.
 init(_ titleResource: LocalizedStringResource, @TabContentBuilder<SelectionValue> content: () -> Content) where Header == Text, Footer == EmptyView
 ```
 
+Available when `Content` conforms to `TabContent` and `SelectionValue` conforms to `Hashable`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+init<V>(_ titleResource: LocalizedStringResource, @TabContentBuilder<V?> content: () -> Content) where Header == Text, Footer == EmptyView, SelectionValue == V?, V : Hashable
+```
+
+```swift
+init(_ titleKey: LocalizedStringKey, @TabContentBuilder<SelectionValue> content: () -> Content) where Header == Text, Footer == EmptyView
+```
+
+```swift
+init<S>(_ title: S, @TabContentBuilder<SelectionValue> content: () -> Content) where Header == Text, Footer == EmptyView, S : StringProtocol
+```
+
+```swift
+init<V, S>(_ title: S, @TabContentBuilder<V?> content: () -> Content) where Header == Text, Footer == EmptyView, SelectionValue == V?, V : Hashable, S : StringProtocol
+```
+
+```swift
+init<V>(_ titleKey: LocalizedStringKey, @TabContentBuilder<V?> content: () -> Content) where Header == Text, Footer == EmptyView, SelectionValue == V?, V : Hashable
+```
+
 ## Parameters
 
 - `titleResource`: The localized string resource label for the section’s header.
@@ -28,9 +54,10 @@ init(_ titleResource: LocalizedStringResource, @TabContentBuilder<SelectionValue
 
 ## See Also
 
-- [init(content:)](tabsection/init(content:).md)
+### Creating a tab section
+- [init(content:)](./init%28content%29.md)
   Creates a section with the provided section content.
-- [init(content:header:)](tabsection/init(content:header:).md)
+- [init(content:header:)](./init%28content,header%29.md)
   Creates a section with a header and the provided section content.
 
 

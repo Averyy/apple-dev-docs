@@ -1,7 +1,8 @@
 # QueryRequestPagination
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Pagination parameters for a recommendation query request.
 
@@ -10,7 +11,7 @@ Pagination parameters for a recommendation query request.
 
 ## Declaration
 
-```swift
+```
 object RecommendationQueryRequestPagination
 ```
 
@@ -32,25 +33,29 @@ Continue until `offset + pageSize >= totalCount`. New recommendations may appear
 ## Properties
 
 - `offset` (int32): The zero-based index of the first result to return. Use with `pageSize` to page through large result sets. Defaults to `0`.
+
+  **Default**: `0`; **Minimum**: `0`
 - `pageSize` (int32): The maximum number of results to return per page. Minimum `1`, maximum `1000`. Defaults to `20`.
+
+  **Default**: `20`; **Minimum**: `1`; **Maximum**: `1000`
 
 ## See Also
 
-- [object RecommendationQueryRequest](recommendationqueryrequest.md)
+- [object RecommendationQueryRequest](./recommendationqueryrequest.md)
   The structured request body for all recommendation query endpoints.
-- [object RecommendationSorting](recommendationsorting.md)
+- [object RecommendationSorting](./recommendationsorting.md)
   A sort specification used in a recommendation query request to order results.
-- [type RecommendationSortingOrder](recommendationsortingorder.md)
+- [type RecommendationSortingOrder](./recommendationsortingorder.md)
   The sort direction used in a recommendation sorting specification.
-- [object RecommendationFilterCondition](recommendationfiltercondition.md)
+- [object RecommendationFilterCondition](./recommendationfiltercondition.md)
   A single filter condition used in a recommendation query request to narrow results.
-- [type RecommendationFilterOperator](recommendationfilteroperator.md)
+- [type RecommendationFilterOperator](./recommendationfilteroperator.md)
   The comparison operator applied in a recommendation filter condition.
-- [type RecommendationState](recommendationstate.md)
+- [type RecommendationState](./recommendationstate.md)
   The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
-- [type RecommendationStatus](recommendationstatus.md)
+- [type RecommendationStatus](./recommendationstatus.md)
   The operational status of a recommendation record, independent of its lifecycle state.
-- [type RecommendationCategory](recommendationcategory.md)
+- [type RecommendationCategory](./recommendationcategory.md)
   Enumeration that categorizes a recommendation by optimization area and origin.
 
 

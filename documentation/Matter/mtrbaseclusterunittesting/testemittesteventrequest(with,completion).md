@@ -1,7 +1,8 @@
 # testEmitTestEventRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testEmitTestEventRequest(with params: MTRUnitTestingClusterTestEmitTestEventRequestParams, completion: @escaping @Sendable (MTRUnitTestingClusterTestEmitTestEventResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testEmitTestEventRequest(with params: MTRUnitTestingClusterTestEmitTestEventRequestParams) async throws -> MTRUnitTestingClusterTestEmitTestEventResponseParams
+```
+
+```objc
+- (void) testEmitTestEventRequestWithParams:(MTRUnitTestingClusterTestEmitTestEventRequestParams *) params completion:(void (^)(MTRUnitTestingClusterTestEmitTestEventResponseParams *data, NSError *error)) completion;
 ```
 
 

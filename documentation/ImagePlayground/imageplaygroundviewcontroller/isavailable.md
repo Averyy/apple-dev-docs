@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether image generation is available on the current device.
 

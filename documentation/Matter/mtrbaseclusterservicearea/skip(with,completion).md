@@ -1,7 +1,8 @@
 # skip(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SkipArea
 
@@ -17,7 +18,15 @@ Command SkipArea
 ## Declaration
 
 ```swift
+func skip(with params: MTRServiceAreaClusterSkipAreaParams, completion: @escaping @Sendable (MTRServiceAreaClusterSkipAreaResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func skip(with params: MTRServiceAreaClusterSkipAreaParams) async throws -> MTRServiceAreaClusterSkipAreaResponseParams
+```
+
+```objc
+- (void) skipAreaWithParams:(MTRServiceAreaClusterSkipAreaParams *) params completion:(void (^)(MTRServiceAreaClusterSkipAreaResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

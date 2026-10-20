@@ -1,7 +1,8 @@
 # addressFamilyNotSupported
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The address family isn’t supported by the protocol family.
 
@@ -22,7 +23,7 @@ static var addressFamilyNotSupported: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,11 +33,12 @@ The corresponding C error is `EAFNOSUPPORT`.
 
 ## See Also
 
-- [static var addressInUse: Errno](errno/addressinuse.md)
+### Network Address Errors
+- [static var addressInUse: Errno](./addressinuse.md)
   Address already in use.
-- [static var addressNotAvailable: Errno](errno/addressnotavailable.md)
+- [static var addressNotAvailable: Errno](./addressnotavailable.md)
   Can’t assign the requested address.
-- [static var addressRequired: Errno](errno/addressrequired.md)
+- [static var addressRequired: Errno](./addressrequired.md)
   Destination address required.
 
 

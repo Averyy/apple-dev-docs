@@ -1,13 +1,16 @@
 # CVDisplayLinkSetCurrentCGDisplay(_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the current display of a display link.
 
 **Availability**:
-- Mac Catalyst 13.1+
-- macOS 10.4+
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.4+ - Deprecated in 15.0
+
+> **Deprecated**: use NSView.displayLink(target:selector:), NSWindow.displayLink(target:selector:), or NSScreen.displayLink(target:selector:) 
 
 ## Declaration
 
@@ -15,9 +18,13 @@ Sets the current display of a display link.
 func CVDisplayLinkSetCurrentCGDisplay(_ displayLink: CVDisplayLink, _ displayID: CGDirectDisplayID) -> CVReturn
 ```
 
+```c
+extern CVReturn CVDisplayLinkSetCurrentCGDisplay(CVDisplayLinkRef displayLink, CGDirectDisplayID displayID);
+```
+
 #### Return Value
 
-A Core Video result code. See [`Core Video Constants`](core-video-constants.md) for possible values.
+A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
 #### Discussion
 
@@ -30,12 +37,13 @@ Although it is safe to call this function on a running display link, a discontin
 
 ## See Also
 
-- [func CVDisplayLinkSetCurrentCGDisplayFromOpenGLContext(CVDisplayLink, CGLContextObj, CGLPixelFormatObj) -> CVReturn](cvdisplaylinksetcurrentcgdisplayfromopenglcontext(_:_:_:).md)
+### Configuring Display Links
+- [func CVDisplayLinkSetCurrentCGDisplayFromOpenGLContext(CVDisplayLink, CGLContextObj, CGLPixelFormatObj) -> CVReturn](./cvdisplaylinksetcurrentcgdisplayfromopenglcontext%28_,_,_%29.md)
   Selects the display link most optimal for the current renderer of an OpenGL context.
-- [func CVDisplayLinkSetOutputCallback(CVDisplayLink, CVDisplayLinkOutputCallback?, UnsafeMutableRawPointer?) -> CVReturn](cvdisplaylinksetoutputcallback(_:_:_:).md)
+- [func CVDisplayLinkSetOutputCallback(CVDisplayLink, CVDisplayLinkOutputCallback?, UnsafeMutableRawPointer?) -> CVReturn](./cvdisplaylinksetoutputcallback%28_,_,_%29.md)
   Sets the renderer output callback function.
-- [func CVDisplayLinkSetOutputHandler(CVDisplayLink, CVDisplayLinkOutputHandler) -> CVReturn](cvdisplaylinksetoutputhandler(_:_:).md)
-- [typealias CVDisplayLinkOutputHandler](cvdisplaylinkoutputhandler.md)
+- [func CVDisplayLinkSetOutputHandler(CVDisplayLink, CVDisplayLinkOutputHandler) -> CVReturn](./cvdisplaylinksetoutputhandler%28_,_%29.md)
+- [typealias CVDisplayLinkOutputHandler](./cvdisplaylinkoutputhandler.md)
 
 
 ---

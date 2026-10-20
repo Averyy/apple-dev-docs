@@ -1,7 +1,8 @@
 # Activation Lock a Device
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Enable activation lock on a remote device.
 
@@ -10,7 +11,7 @@ Enable activation lock on a remote device.
 
 ## Mentions
 
-- [Migrating managed devices](migrating-managed-devices.md)
+- [Migrating managed devices](./migrating-managed-devices.md)
 
 #### Discussion
 
@@ -21,11 +22,11 @@ There are two ways to manage Activation Lock: the Activation Lock request is ava
 ## Topics
 
 ### Request and Response
-- [object ActivationLockRequest](activationlockrequest.md)
+- [object ActivationLockRequest](./activationlockrequest.md)
   Request enabling activation lock for a device.
-- [object ActivationLockStatusResponse](activationlockstatusresponse.md)
+- [object ActivationLockStatusResponse](./activationlockstatusresponse.md)
 ### Bypass Codes
-- [Creating and using bypass codes](creating-and-using-bypass-codes.md)
+- [Creating and using bypass codes](./creating-and-using-bypass-codes.md)
   Maintain the bypass code parameters for disabling Activation Lock.
 
 ## Endpoint
@@ -34,21 +35,36 @@ There are two ways to manage Activation Lock: the Activation Lock request is ava
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ActivationLockRequest`
+
 Request enabling activation lock for a device.
+
+## Responses
+
+- `200` OK (`ActivationLockStatusResponse`, `application/json`)
+- `400` Bad Request:
+
+  - `MALFORMED_REQUEST_BODY`: The request body is malformed.
+  - `USER_AGENT_INVALID:`  The `User-Agent` header is invalid.
+  - `USER_AGENT_MISSING:`  The `User-Agent` header is missing or has no assigned value.
+- `401` Unauthorized: The token has expired. The client should retry with a new auth token.
+- `403` Forbidden: The auth token is invalid.
 
 ## See Also
 
-- [Get Device Details](device-details.md)
+### Device management
+- [Get Device Details](./device-details.md)
   Get the details on a set of devices.
-- [Get a List of Devices](fetch-devices.md)
+- [Get a List of Devices](./fetch-devices.md)
   Get a list of devices that are managed by the server.
-- [Sync the List of Devices](sync-devices.md)
+- [Sync the List of Devices](./sync-devices.md)
   Get updates about the list of devices the server manages.
-- [Disown Devices](disown-devices.md)
+- [Disown Devices](./disown-devices.md)
   Notify Apple’s servers that your organization no longer owns the specified devices.
-- [Get Replacement Details](get-replacement-details.md)
+- [Get Replacement Details](./get-replacement-details.md)
   Get information about the device that a replacement device replaces.
-- [Get Beta Enrollment Tokens](get-beta-enrollment-tokens.md)
+- [Get Beta Enrollment Tokens](./get-beta-enrollment-tokens.md)
   Retrieves the beta enrollment tokens available for the organization.
 
 

@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view object that can have a visual effect view added to it.
 
@@ -9,7 +10,7 @@ A view object that can have a visual effect view added to it.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ A view object that can have a visual effect view added to it.
 var contentView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIView * contentView;
+```
+
 #### Discussion
 
-Add subviews to the [`contentView`](uivisualeffectview/contentview.md) and not to [`UIVisualEffectView`](uivisualeffectview.md) directly.
+Add subviews to the [`contentView`](./contentview.md) and not to [`UIVisualEffectView`](../uivisualeffectview.md) directly.
 
 ## See Also
 
-- [var effect: UIVisualEffect?](uivisualeffectview/effect.md)
+### Retrieving view information
+- [var effect: UIVisualEffect?](./effect.md)
   The visual effect provided by the view.
 
 

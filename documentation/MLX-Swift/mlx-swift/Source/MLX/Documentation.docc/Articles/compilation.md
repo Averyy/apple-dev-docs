@@ -285,7 +285,7 @@ print(compiled(MLXArray(Float(3))))
 ```
 
 Note that this pitfall is hard to hit by accident: a plain `compile { ... }`
-closure must be `@Sendable` (see <doc:#Sendable> below), and capturing a
+closure must be `@Sendable` (see [Sendable](#Sendable) below), and capturing a
 `Module` (which is not `Sendable`) is a compile error. Writing
 `compile(inputs: []) { ... }` is the explicit way to say "capture this state
 and freeze it at trace time".
@@ -357,7 +357,7 @@ literal may still resolve to the `@Sendable` variant. Use the Swift 6 language
 mode (or `-strict-concurrency=complete`) to get these checks.
 
 See also ``vmapSendable(_:inAxes:outAxes:)-3tm2r`` for the equivalent in
-<doc:vmap>.
+[Vectorization](vmap.md).
 
 ## Compiling Training Graphs 
 

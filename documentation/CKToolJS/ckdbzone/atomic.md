@@ -1,7 +1,8 @@
 # atomic
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a zone allows atomic changes of multiple records.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether a zone allows atomic changes of multiple 
 
 ## Declaration
 
-```swift
+```
 attribute boolean atomic;
 ```
 

@@ -1,7 +1,8 @@
 # userInterfaceIdiom
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user interface idiom of the trait collection.
 
@@ -10,7 +11,7 @@ The user interface idiom of the trait collection.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,39 +21,40 @@ var userInterfaceIdiom: UIUserInterfaceIdiom { get set }
 
 #### Discussion
 
-The default user interface idiom for a trait collection is [`UIUserInterfaceIdiom.unspecified`](uiuserinterfaceidiom/unspecified.md).
+The default user interface idiom for a trait collection is [`UIUserInterfaceIdiom.unspecified`](../uiuserinterfaceidiom/unspecified.md).
 
 ## See Also
 
-- [var accessibilityContrast: UIAccessibilityContrast](uimutabletraits-13ja5/accessibilitycontrast.md)
+### Getting and setting trait values
+- [var accessibilityContrast: UIAccessibilityContrast](./accessibilitycontrast.md)
   The accessibility contrast associated with the current environment.
-- [var activeAppearance: UIUserInterfaceActiveAppearance](uimutabletraits-13ja5/activeappearance.md)
+- [var activeAppearance: UIUserInterfaceActiveAppearance](./activeappearance.md)
   A property that indicates whether a scene has an active appearance.
-- [var displayGamut: UIDisplayGamut](uimutabletraits-13ja5/displaygamut.md)
+- [var displayGamut: UIDisplayGamut](./displaygamut.md)
   The gamut of the current display.
-- [var displayScale: CGFloat](uimutabletraits-13ja5/displayscale.md)
+- [var displayScale: CGFloat](./displayscale.md)
   The display scale of the trait collection.
-- [var forceTouchCapability: UIForceTouchCapability](uimutabletraits-13ja5/forcetouchcapability.md)
+- [var forceTouchCapability: UIForceTouchCapability](./forcetouchcapability.md)
   The Force Touch capability value of the trait collection.
-- [var headroomUsageLimit: UITraitHDRHeadroomUsageLimit.Value](uimutabletraits-13ja5/headroomusagelimit.md)
+- [var headroomUsageLimit: UITraitHDRHeadroomUsageLimit.Value](./headroomusagelimit.md)
   The HDR headroom usage limit associated with the current environment.
-- [var horizontalSizeClass: UIUserInterfaceSizeClass](uimutabletraits-13ja5/horizontalsizeclass.md)
+- [var horizontalSizeClass: UIUserInterfaceSizeClass](./horizontalsizeclass.md)
   The horizontal size class of the trait collection.
-- [var imageDynamicRange: UIImage.DynamicRange](uimutabletraits-13ja5/imagedynamicrange.md)
+- [var imageDynamicRange: UIImage.DynamicRange](./imagedynamicrange.md)
   The image dynamic range associated with the current environment.
-- [var layoutDirection: UITraitEnvironmentLayoutDirection](uimutabletraits-13ja5/layoutdirection.md)
+- [var layoutDirection: UITraitEnvironmentLayoutDirection](./layoutdirection.md)
   The layout direction associated with the current environment.
-- [var legibilityWeight: UILegibilityWeight](uimutabletraits-13ja5/legibilityweight.md)
+- [var legibilityWeight: UILegibilityWeight](./legibilityweight.md)
   The font weight to apply to text.
-- [var listEnvironment: UIListEnvironment](uimutabletraits-13ja5/listenvironment.md)
+- [var listEnvironment: UIListEnvironment](./listenvironment.md)
   The style of the containing list in a collection view or table view.
-- [var preferredContentSizeCategory: UIContentSizeCategory](uimutabletraits-13ja5/preferredcontentsizecategory.md)
+- [var preferredContentSizeCategory: UIContentSizeCategory](./preferredcontentsizecategory.md)
   The font sizing option preferred by the user.
-- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](uimutabletraits-13ja5/resolvesnaturalalignmentwithbasewritingdirection.md)
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](./resolvesnaturalalignmentwithbasewritingdirection.md)
   The setting for whether the system resolves natural alignment with base writing direction for the current environment.
-- [var sceneCaptureState: UISceneCaptureState](uimutabletraits-13ja5/scenecapturestate.md)
+- [var sceneCaptureState: UISceneCaptureState](./scenecapturestate.md)
   The scene capture state for the current environment.
-- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uimutabletraits-13ja5/splitviewcontrollerlayoutenvironment.md)
+- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](./splitviewcontrollerlayoutenvironment.md)
   The split view controller layout for the current environment.
 
 

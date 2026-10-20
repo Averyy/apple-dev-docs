@@ -1,7 +1,8 @@
 # Alarm
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes an alarm that can alert once or on a repeating schedule.
 
@@ -43,36 +44,37 @@ let configuration = AlarmManager.AlarmConfiguration(
 ## Topics
 
 ### Defining a countdown duration
-- [struct CountdownDuration](alarm/countdownduration-swift.struct.md)
+- [struct CountdownDuration](./alarm/countdownduration-swift.struct.md)
   An object that defines the durations used in an alarm that has a countdown.
-- [var countdownDuration: Alarm.CountdownDuration?](alarm/countdownduration-swift.property.md)
+- [var countdownDuration: Alarm.CountdownDuration?](./alarm/countdownduration-swift.property.md)
   The time left before an alert, in seconds.
-- [var id: UUID](alarm/id.md)
+- [var id: UUID](./alarm/id.md)
   The unique identifier of the alarm.
-- [Alarm.State](alarm/state-swift.enum.md)
+- [Alarm.State](./alarm/state-swift.enum.md)
   An enum that lists all possible states of an alarm.
-- [var state: Alarm.State](alarm/state-swift.property.md)
+- [var state: Alarm.State](./alarm/state-swift.property.md)
   The current state of the alarm.
 ### Setting an alarm schedule
-- [Alarm.Schedule](alarm/schedule-swift.enum.md)
+- [Alarm.Schedule](./alarm/schedule-swift.enum.md)
   A list of all types of schedules that the framework supports.
-- [var schedule: Alarm.Schedule?](alarm/schedule-swift.property.md)
+- [var schedule: Alarm.Schedule?](./alarm/schedule-swift.property.md)
   The schedule determines when the alarm alerts.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Scheduling an alarm with AlarmKit](scheduling-an-alarm-with-alarmkit.md)
+### Alarm management
+- [Scheduling an alarm with AlarmKit](./scheduling-an-alarm-with-alarmkit.md)
   Create prominent alerts at specified dates for your iOS app.
-- [class AlarmManager](alarmmanager.md)
+- [class AlarmManager](./alarmmanager.md)
   An object that exposes functions to work with alarms: scheduling, snoozing, cancelling.
 
 

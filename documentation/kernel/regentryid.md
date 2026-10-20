@@ -1,21 +1,22 @@
 # RegEntryID
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct RegEntryID RegEntryID;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [opaque](regentryid/1401484-opaque.md)
+- [opaque](./regentryid/api-1401484-opaque.md)
 
 
 ---

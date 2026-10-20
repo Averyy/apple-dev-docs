@@ -1,7 +1,8 @@
 # makeProxy()
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a proxy object of this resource.
 
@@ -12,6 +13,10 @@ Creates a proxy object of this resource.
 
 ```swift
 func makeProxy() -> Self
+```
+
+```objc
+- (instancetype) makeProxy;
 ```
 
 #### Discussion

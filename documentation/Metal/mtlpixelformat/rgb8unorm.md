@@ -1,7 +1,8 @@
 # MTLPixelFormat.rgb8Unorm
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ordinary format with three components of 8-bit normalized, unsigned integer values in RGB order.
 
@@ -19,14 +20,18 @@ An ordinary format with three components of 8-bit normalized, unsigned integer v
 case rgb8Unorm
 ```
 
+```c
+MTLPixelFormatRGB8Unorm
+```
+
 #### Discussion
 
 The order of the color components in this format are red, green and blue.
 
-You can apply this format to a texture you create only with an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance with all of the following property configurations:
+You can apply this format to a texture you create only with an [`MTLTextureDescriptor`](../mtltexturedescriptor.md) instance with all of the following property configurations:
 
-- The [`usage`](mtltexturedescriptor/usage.md) property can’t include the [`shaderWrite`](mtltextureusage/shaderwrite.md) option.
-- The [`textureType`](mtltexturedescriptor/texturetype.md) property needs to be equal to [`MTLTextureType.typeTextureBuffer`](mtltexturetype/typetexturebuffer.md).
+- The [`usage`](../mtltexturedescriptor/usage.md) property can’t include the [`shaderWrite`](../mtltextureusage/shaderwrite.md) option.
+- The [`textureType`](../mtltexturedescriptor/texturetype.md) property needs to be equal to [`MTLTextureType.typeTextureBuffer`](../mtltexturetype/typetexturebuffer.md).
 
 
 ---

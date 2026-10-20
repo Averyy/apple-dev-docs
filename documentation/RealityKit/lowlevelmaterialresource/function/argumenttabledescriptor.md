@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The argument table descriptor that describes the buffer and texture slots this function requires, or `nil` if the function takes no per-draw arguments.
@@ -20,7 +21,8 @@ var argumentTableDescriptor: LowLevelArgumentTable.Descriptor? { get }
 
 ## See Also
 
-- [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/function/parametermapping.md)
+### Configuring the function
+- [var parameterMapping: LowLevelMaterialParameterMapping?](./parametermapping.md)
   The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime, or `nil` if the function takes no custom parameters.
 
 

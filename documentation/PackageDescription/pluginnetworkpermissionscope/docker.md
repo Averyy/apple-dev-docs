@@ -1,7 +1,8 @@
 # PluginNetworkPermissionScope.docker
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow connections to Docker through UNIX domain sockets.
 

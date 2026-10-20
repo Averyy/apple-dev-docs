@@ -1,15 +1,18 @@
 # SSLSetSessionConfig(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a predefined configuration for the Secure Sockets Layer (SSL) session.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
+- iOS 10.0+ - Deprecated in 13.0
+- iPadOS 10.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.12+ - Deprecated in 10.15
+
+> **Deprecated**: No longer supported. Use Network.framework.
 
 ## Declaration
 
@@ -17,14 +20,18 @@ Sets a predefined configuration for the Secure Sockets Layer (SSL) session.
 func SSLSetSessionConfig(_ context: SSLContext, _ config: CFString) -> OSStatus
 ```
 
+```c
+OSStatus SSLSetSessionConfig(SSLContextRef context, CFStringRef config);
+```
+
 #### Return Value
 
-A result code. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
+A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `config`: The predefined configuration you want to apply to the SSL session. You can configure enabled protocol versions, enabled cipher suites, and the [`SSLSessionOption.fallback`](sslsessionoption/fallback.md) session option.
+- `config`: The predefined configuration you want to apply to the SSL session. You can configure enabled protocol versions, enabled cipher suites, and the [`SSLSessionOption.fallback`](./sslsessionoption/fallback.md) session option.
 
 
 ---

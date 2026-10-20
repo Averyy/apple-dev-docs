@@ -1,7 +1,8 @@
 # isForMainFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the response targets the web view’s main frame.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the response targets the web view’s mai
 var isForMainFrame: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isForMainFrame) BOOL forMainFrame;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the response targets the main frame. The value is [`false`](https://developer.apple.com/documentation/swift/false) if the response targets a different frame, such as the frame in a new window.
+The value of this property is [`true`](../../Swift/true.md) if the response targets the main frame. The value is [`false`](../../Swift/false.md) if the response targets a different frame, such as the frame in a new window.
 
 ## See Also
 
-- [var canShowMIMEType: Bool](wknavigationresponse/canshowmimetype.md)
+### Getting Additional Response Information
+- [var canShowMIMEType: Bool](./canshowmimetype.md)
   A Boolean value that indicates whether WebKit is capable of displaying the response’s MIME type natively.
 
 

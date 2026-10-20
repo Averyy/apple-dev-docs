@@ -1,7 +1,8 @@
 # HPKE.AEAD.AES_GCM_128
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 128 bits.
 

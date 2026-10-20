@@ -1,7 +1,8 @@
 # Metadata
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Descriptive information about the weather data.
 
@@ -10,7 +11,7 @@ Descriptive information about the weather data.
 
 ## Declaration
 
-```swift
+```
 object Metadata
 ```
 
@@ -31,9 +32,10 @@ object Metadata
 
 ## See Also
 
-- [object CurrentWeather](currentweather.md)
+### Obtaining current weather information
+- [object CurrentWeather](./currentweather.md)
   The current weather conditions for the specified location.
-- [object ProductData](productdata.md)
+- [object ProductData](./productdata.md)
   A base type for all weather data.
 
 

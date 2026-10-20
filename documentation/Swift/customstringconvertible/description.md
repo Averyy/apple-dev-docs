@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A textual representation of this instance.
@@ -41,6 +42,16 @@ print(s)
 ```
 
 The conversion of `p` to a string in the assignment to `s` uses the `Point` type’s `description` property.
+
+## Default Implementations
+
+### CustomStringConvertible Implementations
+- [var description: String](./description-5zvsf.md)
+  A textual description of the vector.
+- [var description: String](./description-7p32f.md)
+  A textual representation of this value.
+- [var description: String](./description-905fa.md)
+  A textual representation of this key.
 
 
 ---

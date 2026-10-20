@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Cleans up the presented WatchKit interface object (and its coordinator) in anticipation of their removal.
@@ -24,6 +25,12 @@ Use this method to perform additional clean-up work related to your custom inter
 
 - `wkInterfaceObject`: Your custom interface object.
 - `coordinator`: The custom coordinator instance you use to communicate changes back to SwiftUI. If you do not use a custom coordinator, the system provides a default instance.
+
+## Default Implementations
+
+### WKInterfaceObjectRepresentable Implementations
+- [static func dismantleWKInterfaceObject(Self.WKInterfaceObjectType, coordinator: Self.Coordinator)](./dismantlewkinterfaceobject%28_,coordinator%29-qd0y.md)
+  Cleans up the presented interface object (and coordinator) in anticipation of their removal.
 
 
 ---

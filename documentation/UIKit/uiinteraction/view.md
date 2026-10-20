@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The view that owns the interaction.
@@ -17,6 +18,10 @@ The view that owns the interaction.
 
 ```swift
 weak var view: UIView? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) UIView * view;
 ```
 
 

@@ -1,7 +1,8 @@
 # jointTransforms
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bind target for the entity’s joint transforms.
 
@@ -11,7 +12,7 @@ A bind target for the entity’s joint transforms.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var jointTransforms: BindTarget { get }
 
 ## See Also
 
-- [var transform: BindTarget](bindtarget/entitypath/transform.md)
+### Accessing a bind target
+- [var transform: BindTarget](./transform.md)
   A bind target for the entity’s transform.
-- [var `self`: BindTarget](bindtarget/entitypath/self.md)
+- [var `self`: BindTarget](./self.md)
   A bind target for the entity.
-- [func parameter(String) -> BindTarget](bindtarget/entitypath/parameter(_:).md)
+- [func parameter(String) -> BindTarget](./parameter%28_%29.md)
   Provides a bind target for a particular animated property.
 
 

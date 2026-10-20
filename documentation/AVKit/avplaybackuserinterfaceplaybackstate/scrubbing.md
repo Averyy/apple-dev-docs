@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfacePlaybackState.scrubbing
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the source is being scrubbed by user interaction with the timeline.
 
@@ -14,6 +15,10 @@ Indicates the source is being scrubbed by user interaction with the timeline.
 
 ```swift
 case scrubbing
+```
+
+```c
+AVPlaybackUserInterfacePlaybackStateScrubbing
 ```
 
 

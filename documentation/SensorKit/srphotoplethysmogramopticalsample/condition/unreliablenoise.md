@@ -1,7 +1,8 @@
 # unreliableNoise
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The signal noise is unreliable.
 
@@ -16,9 +17,14 @@ The signal noise is unreliable.
 static let unreliableNoise: SRPhotoplethysmogramOpticalSample.Condition
 ```
 
+```c
+extern SRPhotoplethysmogramOpticalSampleCondition const SRPhotoplethysmogramOpticalSampleConditionUnreliableNoise;
+```
+
 ## See Also
 
-- [static let signalSaturation: SRPhotoplethysmogramOpticalSample.Condition](srphotoplethysmogramopticalsample/condition/signalsaturation.md)
+### Getting the condition
+- [static let signalSaturation: SRPhotoplethysmogramOpticalSample.Condition](./signalsaturation.md)
   The signal exceeds the measurement capacity of the sensor.
 
 

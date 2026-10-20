@@ -1,17 +1,22 @@
 # dismissPopUp()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the pop-up button’s menu by ordering its window out.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func dismissPopUp()
+```
+
+```objc
+- (void) dismissPopUp;
 ```
 
 #### Discussion
@@ -22,11 +27,13 @@ You normally do not call this method explicitly. It is called by the Application
 
 ## See Also
 
-- [func orderOut(Any?)](nswindow/orderout(_:).md)
+### Related Documentation
+- [func orderOut(Any?)](../nswindow/orderout%28_%29.md)
   Removes the window from the screen list, which hides the window.
-- [func attachPopUp(withFrame: NSRect, in: NSView)](nspopupbuttoncell/attachpopup(withframe:in:).md)
+### Handling events and action messages
+- [func attachPopUp(withFrame: NSRect, in: NSView)](./attachpopup%28withframe,in%29.md)
   Sets up the receiver to display a menu.
-- [func performClick(withFrame: NSRect, in: NSView)](nspopupbuttoncell/performclick(withframe:in:).md)
+- [func performClick(withFrame: NSRect, in: NSView)](./performclick%28withframe,in%29.md)
   Displays the receiver’s menu and track mouse events in it.
 
 

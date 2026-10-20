@@ -1,9 +1,10 @@
 # SLComposeViewControllerResult
 
 **Framework**: Social  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Possible values for the `result` parameter of the [`completionHandler`](slcomposeviewcontroller/completionhandler.md) property.
+Possible values for the `result` parameter of the [`completionHandler`](./slcomposeviewcontroller/completionhandler.md) property.
 
 **Availability**:
 - iOS 6.0+
@@ -16,31 +17,36 @@ Possible values for the `result` parameter of the [`completionHandler`](slcompos
 enum SLComposeViewControllerResult
 ```
 
+```c
+enum SLComposeViewControllerResult : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SLComposeViewControllerResult.cancelled](slcomposeviewcontrollerresult/cancelled.md)
+- [SLComposeViewControllerResult.cancelled](./slcomposeviewcontrollerresult/cancelled.md)
   The view controller is dismissed without sending the post.
-- [SLComposeViewControllerResult.done](slcomposeviewcontrollerresult/done.md)
+- [SLComposeViewControllerResult.done](./slcomposeviewcontrollerresult/done.md)
   The view controller is dismissed and the message is being sent in the background.
 ### Initializers
-- [init?(rawValue: Int)](slcomposeviewcontrollerresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./slcomposeviewcontrollerresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var completionHandler: SLComposeViewControllerCompletionHandler!](slcomposeviewcontroller/completionhandler.md)
+### Processing the Results
+- [var completionHandler: SLComposeViewControllerCompletionHandler!](./slcomposeviewcontroller/completionhandler.md)
   The handler to call when the user is done composing a post.
-- [typealias SLComposeViewControllerCompletionHandler](slcomposeviewcontrollercompletionhandler.md)
+- [typealias SLComposeViewControllerCompletionHandler](./slcomposeviewcontrollercompletionhandler.md)
   Defines a handler to call when the user finishes composing a post.
 
 

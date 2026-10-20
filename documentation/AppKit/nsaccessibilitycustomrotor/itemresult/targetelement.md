@@ -1,7 +1,8 @@
 # targetElement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A target element that references an element to message for accessibility properties.
 
@@ -14,13 +15,18 @@ A target element that references an element to message for accessibility propert
 weak var targetElement: (any NSAccessibilityElementProtocol)? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) id<NSAccessibilityElement> targetElement;
+```
+
 ## See Also
 
-- [var itemLoadingToken: NSAccessibilityLoadingToken?](nsaccessibilitycustomrotor/itemresult/itemloadingtoken.md)
+### Identifying an Item Result
+- [var itemLoadingToken: NSAccessibilityLoadingToken?](./itemloadingtoken.md)
   A token to determine which item to return.
-- [var targetRange: NSRange](nsaccessibilitycustomrotor/itemresult/targetrange.md)
+- [var targetRange: NSRange](./targetrange.md)
   A range that specifies the area of interest for text-based elements.
-- [var customLabel: String?](nsaccessibilitycustomrotor/itemresult/customlabel.md)
+- [var customLabel: String?](./customlabel.md)
   A localized label to use instead of the default item label to describe the item result.
 
 

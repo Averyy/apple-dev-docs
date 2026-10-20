@@ -1,7 +1,8 @@
 # defaultColorSpace
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color space ARKit uses to configure the capture session when this video format is selected.
 
@@ -13,6 +14,10 @@ The color space ARKit uses to configure the capture session when this video form
 
 ```swift
 var defaultColorSpace: AVCaptureColorSpace { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVCaptureColorSpace defaultColorSpace;
 ```
 
 

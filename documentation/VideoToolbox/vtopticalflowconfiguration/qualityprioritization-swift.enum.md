@@ -1,7 +1,8 @@
 # VTOpticalFlowConfiguration.QualityPrioritization
 
 **Framework**: Video Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that specify whether to prioritize quality or performance.
 
@@ -17,6 +18,10 @@ Values that specify whether to prioritize quality or performance.
 enum QualityPrioritization
 ```
 
+```c
+enum VTOpticalFlowConfigurationQualityPrioritization : NSInteger;
+```
+
 #### Overview
 
 See VEFrameRateConversionConfigurationQualityPrioritization for more info.
@@ -24,35 +29,36 @@ See VEFrameRateConversionConfigurationQualityPrioritization for more info.
 ## Topics
 
 ### Enumeration Cases
-- [VTOpticalFlowConfiguration.QualityPrioritization.normal](vtopticalflowconfiguration/qualityprioritization-swift.enum/normal.md)
+- [VTOpticalFlowConfiguration.QualityPrioritization.normal](./qualityprioritization-swift.enum/normal.md)
   A normal quality prioritization level.
-- [VTOpticalFlowConfiguration.QualityPrioritization.quality](vtopticalflowconfiguration/qualityprioritization-swift.enum/quality.md)
+- [VTOpticalFlowConfiguration.QualityPrioritization.quality](./qualityprioritization-swift.enum/quality.md)
   A quality prioritization level.
 ### Initializers
-- [init?(rawValue: Int)](vtopticalflowconfiguration/qualityprioritization-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./qualityprioritization-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var frameWidth: Int](vtopticalflowconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   The width of a source frame in pixels.
-- [var frameHeight: Int](vtopticalflowconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   The height of source frame in pixels.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtopticalflowconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtopticalflowconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var supportedPixelFormats: [OSType]](vtopticalflowconfiguration/supportedpixelformats.md)
-- [var qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.property.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [var qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization](./qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
 
 

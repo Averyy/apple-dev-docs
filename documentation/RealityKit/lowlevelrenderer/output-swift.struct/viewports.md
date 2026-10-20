@@ -1,7 +1,8 @@
 # viewports
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Per-camera viewport rectangles within the render target.
 
@@ -23,9 +24,10 @@ Each entry corresponds to a camera’s `viewportArrayIndex`. Corresponds to `MTL
 
 ## See Also
 
-- [var scissorRects: [MTLScissorRect]?](lowlevelrenderer/output-swift.struct/scissorrects.md)
+### Setting the viewport
+- [var scissorRects: [MTLScissorRect]?](./scissorrects.md)
   Per-camera scissor rectangles within the render target.
-- [var rasterizationRateMap: (any MTLRasterizationRateMap)?](lowlevelrenderer/output-swift.struct/rasterizationratemap.md)
+- [var rasterizationRateMap: (any MTLRasterizationRateMap)?](./rasterizationratemap.md)
   The rasterization rate map to use when rendering.
 
 

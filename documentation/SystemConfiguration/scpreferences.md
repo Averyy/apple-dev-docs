@@ -1,17 +1,18 @@
 # SCPreferences
 
 **Framework**: System Configuration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The handle to an open preferences session for accessing system configuration preferences.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ The handle to an open preferences session for accessing system configuration pre
 class SCPreferences
 ```
 
+```c
+typedef const struct __SCPreferences * SCPreferencesRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct SCPreferencesContext](scpreferencescontext.md)
+### Data Types
+- [struct SCPreferencesContext](./scpreferencescontext.md)
   A structure containing user-specified data and callbacks for accessing system configuration preferences.
-- [typealias SCPreferencesCallBack](scpreferencescallback.md)
+- [typealias SCPreferencesCallBack](./scpreferencescallback.md)
   Type of the callback function used when the preferences have been updated or applied.
 
 

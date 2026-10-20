@@ -1,7 +1,8 @@
 # localizedStringResource
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localizable string that describes the error.
 

@@ -1,7 +1,8 @@
 # compare(_:_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the relative ordering of two items according to the ordering of the properties that the comparator’s key path references.
 
@@ -26,7 +27,7 @@ The relative ordering for the compared properties.
 
 #### Discussion
 
-The method returns flipped comparisons if the sort order is [`SortOrder.reverse`](sortorder/reverse.md).
+The method returns flipped comparisons if the sort order is [`SortOrder.reverse`](../sortorder/reverse.md).
 
 ## Parameters
 

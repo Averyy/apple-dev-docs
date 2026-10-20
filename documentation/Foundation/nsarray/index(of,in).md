@@ -1,7 +1,8 @@
 # index(of:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the lowest index within a specified range whose corresponding array value is equal to a given object .
 
@@ -20,15 +21,19 @@ Returns the lowest index within a specified range whose corresponding array valu
 func index(of anObject: Any, in range: NSRange) -> Int
 ```
 
+```objc
+- (NSUInteger) indexOfObject:(ObjectType) anObject inRange:(NSRange) range;
+```
+
 #### Return Value
 
 The lowest index within `range` whose corresponding array value is equal to `anObject`. If none of the objects within `range` is equal to `anObject`, returns `NSNotFound`.
 
 #### Discussion
 
-Starting at `range.location`, each element of the array is passed as an argument to an [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) message sent to `anObject` until a match is found or the end of the `range` is reached. Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Starting at `range.location`, each element of the array is passed as an argument to an [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) message sent to `anObject` until a match is found or the end of the `range` is reached. Objects are considered equal if [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) returns [`true`](../../Swift/true.md).
 
-This method raises an [`rangeException`](nsexceptionname/rangeexception.md) exception if the `range` parameter represents a range that doesn’t exist in the array.
+This method raises an [`rangeException`](../nsexceptionname/rangeexception.md) exception if the `range` parameter represents a range that doesn’t exist in the array.
 
 ## Parameters
 
@@ -37,27 +42,29 @@ This method raises an [`rangeException`](nsexceptionname/rangeexception.md) exce
 
 ## See Also
 
-- [func contains(Any) -> Bool](nsarray/contains(_:).md)
+### Related Documentation
+- [func contains(Any) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the array.
-- [func index(of: Any) -> Int](nsarray/index(of:).md)
+### Finding Objects in an Array
+- [func index(of: Any) -> Int](./index%28of%29.md)
   Returns the lowest index whose corresponding array value is equal to a given object.
-- [func indexOfObjectIdentical(to: Any) -> Int](nsarray/indexofobjectidentical(to:).md)
+- [func indexOfObjectIdentical(to: Any) -> Int](./indexofobjectidentical%28to%29.md)
   Returns the lowest index whose corresponding array value is identical to a given object.
-- [func indexOfObjectIdentical(to: Any, in: NSRange) -> Int](nsarray/indexofobjectidentical(to:in:).md)
+- [func indexOfObjectIdentical(to: Any, in: NSRange) -> Int](./indexofobjectidentical%28to,in%29.md)
   Returns the lowest index within a specified range whose corresponding array value is equal to a given object .
-- [func indexOfObject(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsarray/indexofobject(passingtest:).md)
+- [func indexOfObject(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./indexofobject%28passingtest%29.md)
   Returns the index of the first object in the array that passes a test in a given block.
-- [func indexOfObject(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsarray/indexofobject(options:passingtest:).md)
+- [func indexOfObject(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./indexofobject%28options,passingtest%29.md)
   Returns the index of an object in the array that passes a test in a given block for a given set of enumeration options.
-- [func indexOfObject(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsarray/indexofobject(at:options:passingtest:).md)
+- [func indexOfObject(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./indexofobject%28at,options,passingtest%29.md)
   Returns the index, from a given set of indexes, of the first object in the array that passes a test in a given block for a given set of enumeration options.
-- [func indexesOfObjects(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsarray/indexesofobjects(passingtest:).md)
+- [func indexesOfObjects(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./indexesofobjects%28passingtest%29.md)
   Returns the indexes of objects in the array that pass a test in a given block.
-- [func indexesOfObjects(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsarray/indexesofobjects(options:passingtest:).md)
+- [func indexesOfObjects(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./indexesofobjects%28options,passingtest%29.md)
   Returns the indexes of objects in the array that pass a test in a given block for a given set of enumeration options.
-- [func indexesOfObjects(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsarray/indexesofobjects(at:options:passingtest:).md)
+- [func indexesOfObjects(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./indexesofobjects%28at,options,passingtest%29.md)
   Returns the indexes, from a given set of indexes, of objects in the array that pass a test in a given block for a given set of enumeration options.
-- [func index(of: Any, inSortedRange: NSRange, options: NSBinarySearchingOptions, usingComparator: (Any, Any) -> ComparisonResult) -> Int](nsarray/index(of:insortedrange:options:usingcomparator:).md)
+- [func index(of: Any, inSortedRange: NSRange, options: NSBinarySearchingOptions, usingComparator: (Any, Any) -> ComparisonResult) -> Int](./index%28of,insortedrange,options,usingcomparator%29.md)
   Returns the index, within a specified range, of an object compared with elements in the array using a given `NSComparator` block.
 
 

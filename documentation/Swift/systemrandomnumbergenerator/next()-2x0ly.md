@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value from a uniform, independent distribution of binary data.
 
@@ -30,9 +31,10 @@ Use this method when you need random binary data to generate another value. If y
 
 ## See Also
 
-- [func next() -> UInt64](systemrandomnumbergenerator/next.md)
+### Generating Random Binary Data
+- [func next() -> UInt64](./next%28%29.md)
   Returns a value from a uniform, independent distribution of binary data.
-- [func next<T>(upperBound: T) -> T](systemrandomnumbergenerator/next(upperbound:).md)
+- [func next<T>(upperBound: T) -> T](./next%28upperbound%29.md)
   Returns a random value that is less than the given upper bound.
 
 

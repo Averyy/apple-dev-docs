@@ -1,18 +1,19 @@
 # AVPlayer.ActionAtItemEnd.advance
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player should advance to the next item, if there is one.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The player should advance to the next item, if there is one.
 case advance
 ```
 
+```c
+AVPlayerActionAtItemEndAdvance
+```
+
 ## See Also
 
-- [AVPlayer.ActionAtItemEnd.pause](avplayer/actionatitemend-swift.enum/pause.md)
+### Actions
+- [AVPlayer.ActionAtItemEnd.pause](./pause.md)
   The player should pause playing.
-- [AVPlayer.ActionAtItemEnd.none](avplayer/actionatitemend-swift.enum/none.md)
+- [AVPlayer.ActionAtItemEnd.none](./none.md)
   The player should do nothing.
 
 

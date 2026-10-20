@@ -1,7 +1,8 @@
 # readAttributeMessages(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMessages(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMessages() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeMessagesWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

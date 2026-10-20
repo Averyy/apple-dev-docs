@@ -1,7 +1,8 @@
 # home(_:didAdd:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a home added a new zone.
 
@@ -19,6 +20,10 @@ Tells the delegate that a home added a new zone.
 optional func home(_ home: HMHome, didAdd zone: HMZone)
 ```
 
+```objc
+- (void) home:(HMHome *) home didAddZone:(HMZone *) zone;
+```
+
 ## Parameters
 
 - `home`: The home.
@@ -26,35 +31,36 @@ optional func home(_ home: HMHome, didAdd zone: HMZone)
 
 ## See Also
 
-- [func homeDidUpdateName(HMHome)](hmhomedelegate/homedidupdatename(_:).md)
+### Observing Home Configuration
+- [func homeDidUpdateName(HMHome)](./homedidupdatename%28_%29.md)
   Tells the delegate that a home’s name changed.
-- [func home(HMHome, didAdd: HMAccessory)](hmhomedelegate/home(_:didadd:)-6jcl7.md)
+- [func home(HMHome, didAdd: HMAccessory)](./home%28_,didadd%29-6jcl7.md)
   Tells the delegate that a home added a new accessory.
-- [func home(HMHome, didUpdate: HMRoom, for: HMAccessory)](hmhomedelegate/home(_:didupdate:for:).md)
+- [func home(HMHome, didUpdate: HMRoom, for: HMAccessory)](./home%28_,didupdate,for%29.md)
   Tells the delegate that a home assigned an accessory to a different room.
-- [func home(HMHome, didRemove: HMAccessory)](hmhomedelegate/home(_:didremove:)-6plye.md)
+- [func home(HMHome, didRemove: HMAccessory)](./home%28_,didremove%29-6plye.md)
   Tells the delegate that a home removed an accessory.
-- [func home(HMHome, didAdd: HMRoom)](hmhomedelegate/home(_:didadd:)-42aqd.md)
+- [func home(HMHome, didAdd: HMRoom)](./home%28_,didadd%29-42aqd.md)
   Tells the delegate that a home added a new room.
-- [func home(HMHome, didUpdateNameFor: HMRoom)](hmhomedelegate/home(_:didupdatenamefor:)-1a110.md)
+- [func home(HMHome, didUpdateNameFor: HMRoom)](./home%28_,didupdatenamefor%29-1a110.md)
   Tells the delegate that a home updated the name of one of its rooms.
-- [func home(HMHome, didAdd: HMRoom, to: HMZone)](hmhomedelegate/home(_:didadd:to:)-4hiew.md)
+- [func home(HMHome, didAdd: HMRoom, to: HMZone)](./home%28_,didadd,to%29-4hiew.md)
   Tells the delegate that a home added a room to a zone.
-- [func home(HMHome, didRemove: HMRoom, from: HMZone)](hmhomedelegate/home(_:didremove:from:)-8oz67.md)
+- [func home(HMHome, didRemove: HMRoom, from: HMZone)](./home%28_,didremove,from%29-8oz67.md)
   Tells the delegate that a home removed a room from a zone.
-- [func home(HMHome, didRemove: HMRoom)](hmhomedelegate/home(_:didremove:)-3if6s.md)
+- [func home(HMHome, didRemove: HMRoom)](./home%28_,didremove%29-3if6s.md)
   Tells the delegate that a home removed a room.
-- [func home(HMHome, didUpdateNameFor: HMZone)](hmhomedelegate/home(_:didupdatenamefor:)-1k32g.md)
+- [func home(HMHome, didUpdateNameFor: HMZone)](./home%28_,didupdatenamefor%29-1k32g.md)
   Tells the delegate that a home changed the name of a zone.
-- [func home(HMHome, didRemove: HMZone)](hmhomedelegate/home(_:didremove:)-3o8ta.md)
+- [func home(HMHome, didRemove: HMZone)](./home%28_,didremove%29-3o8ta.md)
   Tells the delegate that a home removed a zone.
-- [func home(HMHome, didAdd: HMUser)](hmhomedelegate/home(_:didadd:)-8q7jm.md)
+- [func home(HMHome, didAdd: HMUser)](./home%28_,didadd%29-8q7jm.md)
   Tells the delegate that a home added a user.
-- [func home(HMHome, didRemove: HMUser)](hmhomedelegate/home(_:didremove:)-3fm38.md)
+- [func home(HMHome, didRemove: HMUser)](./home%28_,didremove%29-3fm38.md)
   Tells the delegate that a home removed a user.
-- [func homeDidUpdateAccessControl(forCurrentUser: HMHome)](hmhomedelegate/homedidupdateaccesscontrol(forcurrentuser:).md)
+- [func homeDidUpdateAccessControl(forCurrentUser: HMHome)](./homedidupdateaccesscontrol%28forcurrentuser%29.md)
   Tells the delegate that the access control for the current user has changed.
-- [func home(HMHome, didUpdate: HMHomeHubState)](hmhomedelegate/home(_:didupdate:)-5fntk.md)
+- [func home(HMHome, didUpdate: HMHomeHubState)](./home%28_,didupdate%29-5fntk.md)
   Tells the delegate that the state of the home hub has changed.
 
 

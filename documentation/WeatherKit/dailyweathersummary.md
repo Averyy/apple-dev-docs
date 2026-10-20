@@ -1,7 +1,8 @@
 # DailyWeatherSummary
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that holds a collection of day weather summaries.
 
@@ -23,30 +24,30 @@ struct DailyWeatherSummary<T> where T : Decodable, T : Encodable, T : Equatable,
 ## Topics
 
 ### Instance Properties
-- [var days: [T]](dailyweathersummary/days.md)
+- [var days: [T]](./dailyweathersummary/days.md)
   An ordered collection of day weather summaries of type `T`, for each requested day.
-- [var endIndex: DailyWeatherSummary<T>.Index](dailyweathersummary/endindex.md)
+- [var endIndex: DailyWeatherSummary<T>.Index](./dailyweathersummary/endindex.md)
   The end index for the daily weather summaries.
-- [var metadata: WeatherMetadata](dailyweathersummary/metadata.md)
+- [var metadata: WeatherMetadata](./dailyweathersummary/metadata.md)
   Descriptive information about the weather statistics data.
-- [var startIndex: DailyWeatherSummary<T>.Index](dailyweathersummary/startindex.md)
+- [var startIndex: DailyWeatherSummary<T>.Index](./dailyweathersummary/startindex.md)
   The start index for the daily weather summaries.
 ### Subscripts
-- [subscript(DailyWeatherSummary<T>.Index) -> DailyWeatherSummary<T>.Element](dailyweathersummary/subscript(_:).md)
+- [subscript(DailyWeatherSummary<T>.Index) -> DailyWeatherSummary<T>.Element](./dailyweathersummary/subscript%28_%29.md)
   The day weather summary at the provided index.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

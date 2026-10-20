@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the date range using the specified style.
 
@@ -19,6 +20,8 @@ Formats the date range using the specified style.
 ```swift
 func formatted<S>(_ style: S) -> S.FormatOutput where S : FormatStyle, S.FormatInput == Range<Date>
 ```
+
+Available when `Bound` is `Date`.
 
 
 ---

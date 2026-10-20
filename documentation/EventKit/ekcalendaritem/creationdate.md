@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that this calendar item was created.
 
@@ -19,23 +20,28 @@ The date that this calendar item was created.
 var creationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSDate * creationDate;
+```
+
 #### Discussion
 
 If `nil`, this property was not set or was synced in this state.
 
 ## See Also
 
-- [var calendar: EKCalendar!](ekcalendaritem/calendar.md)
+### Accessing Calendar Item Properties
+- [var calendar: EKCalendar!](./calendar.md)
   The calendar for the calendar item.
-- [var title: String!](ekcalendaritem/title.md)
+- [var title: String!](./title.md)
   The title for the calendar item.
-- [var location: String?](ekcalendaritem/location.md)
+- [var location: String?](./location.md)
   The location associated with the calendar item.
-- [var lastModifiedDate: Date?](ekcalendaritem/lastmodifieddate.md)
+- [var lastModifiedDate: Date?](./lastmodifieddate.md)
   The date that the calendar item was last modified.
-- [var timeZone: TimeZone?](ekcalendaritem/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone for the calendar item.
-- [var url: URL?](ekcalendaritem/url.md)
+- [var url: URL?](./url.md)
   The URL for the calendar item.
 
 

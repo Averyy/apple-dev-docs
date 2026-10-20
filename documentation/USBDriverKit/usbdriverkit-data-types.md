@@ -1,17 +1,19 @@
 # USBDriverKit Data Types
 
-**Framework**: USBDriverKit
+**Framework**: USBDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [tIOUSBTopology](tiousbtopology.md)
+- [tIOUSBTopology](./tiousbtopology.md)
 
 ## See Also
 
-- [USBDriverKit Enumerations](usbdriverkit-enumerations.md)
-- [USBDriverKit Functions](usbdriverkit-functions.md)
-- [USBDriverKit Macros](usbdriverkit-macros.md)
+### References
+- [USBDriverKit Enumerations](./usbdriverkit-enumerations.md)
+- [USBDriverKit Functions](./usbdriverkit-functions.md)
+- [USBDriverKit Macros](./usbdriverkit-macros.md)
 
 
 ---

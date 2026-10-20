@@ -1,7 +1,8 @@
 # kCGImagePropertyPixelFormat
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The format of the image’s individual pixels.
 
@@ -20,21 +21,26 @@ The format of the image’s individual pixels.
 let kCGImagePropertyPixelFormat: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyPixelFormat;
+```
+
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). For information about how to interpret this value, see the `PixelFormat` tag in the EXIF specification.
+The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md). For information about how to interpret this value, see the `PixelFormat` tag in the EXIF specification.
 
 ## See Also
 
-- [let kCGImagePropertyPixelWidth: CFString](kcgimagepropertypixelwidth.md)
+### Pixel Information
+- [let kCGImagePropertyPixelWidth: CFString](./kcgimagepropertypixelwidth.md)
   The number of pixels along the x-axis of the image.
-- [let kCGImagePropertyPixelHeight: CFString](kcgimagepropertypixelheight.md)
+- [let kCGImagePropertyPixelHeight: CFString](./kcgimagepropertypixelheight.md)
   The number of pixels along the y-axis of the image.
-- [let kCGImagePropertyDPIHeight: CFString](kcgimagepropertydpiheight.md)
+- [let kCGImagePropertyDPIHeight: CFString](./kcgimagepropertydpiheight.md)
   The resolution, in dots per inch, in the y dimension.
-- [let kCGImagePropertyDPIWidth: CFString](kcgimagepropertydpiwidth.md)
+- [let kCGImagePropertyDPIWidth: CFString](./kcgimagepropertydpiwidth.md)
   The resolution, in dots per inch, in the x dimension.
-- [let kCGImagePropertyDepth: CFString](kcgimagepropertydepth.md)
+- [let kCGImagePropertyDepth: CFString](./kcgimagepropertydepth.md)
   The number of bits in the color sample of a pixel.
 
 

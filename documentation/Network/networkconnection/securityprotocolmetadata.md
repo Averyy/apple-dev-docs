@@ -1,7 +1,8 @@
 # securityProtocolMetadata
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the sec_protocol_metadata_t for the QUIC Connection. See <Security/SecProtocolMetadata.h> for functions to further access security metadata.
 
@@ -19,6 +20,8 @@ Access the sec_protocol_metadata_t for the QUIC Connection. See <Security/SecPro
 ```swift
 final var securityProtocolMetadata: sec_protocol_metadata_t { get }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 
 ---

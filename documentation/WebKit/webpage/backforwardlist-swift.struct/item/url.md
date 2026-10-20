@@ -1,7 +1,8 @@
 # url
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The url of the page this item represents, after having resolved all redirects.
 

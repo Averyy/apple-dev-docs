@@ -1,7 +1,8 @@
 # inset(by:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new modified shape by applying the provided insets to this shape.
 
@@ -25,7 +26,8 @@ If it isn’t possible to inset this shape (for example, if it’s a custom path
 
 ## See Also
 
-- [func inset(by: CGFloat) -> UIShape.Resolved](uishape-swift.struct/resolved/inset(by:)-1r5gp.md)
+### Creating a resolved shape by applying insets
+- [func inset(by: CGFloat) -> UIShape.Resolved](./inset%28by%29-1r5gp.md)
   Creates a new modified shape by applying the provided inset to this shape.
 
 

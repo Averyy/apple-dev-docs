@@ -1,7 +1,8 @@
 # AVAudioConverterOutputStatus
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An option that indicates the return status of an audio converter method.
 
@@ -20,39 +21,44 @@ An option that indicates the return status of an audio converter method.
 enum AVAudioConverterOutputStatus
 ```
 
+```c
+enum AVAudioConverterOutputStatus : NSInteger;
+```
+
 ## Topics
 
 ### Creating an output status
-- [init?(rawValue: Int)](avaudioconverteroutputstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudioconverteroutputstatus/init%28rawvalue%29.md)
 ### Interpreting conversion results
-- [AVAudioConverterOutputStatus.haveData](avaudioconverteroutputstatus/havedata.md)
+- [AVAudioConverterOutputStatus.haveData](./avaudioconverteroutputstatus/havedata.md)
   A status that indicates that the method returns all of the requested data.
-- [AVAudioConverterOutputStatus.inputRanDry](avaudioconverteroutputstatus/inputrandry.md)
+- [AVAudioConverterOutputStatus.inputRanDry](./avaudioconverteroutputstatus/inputrandry.md)
   A status that indicates the method doesn’t have enough input available to satisfy the request.
-- [AVAudioConverterOutputStatus.endOfStream](avaudioconverteroutputstatus/endofstream.md)
+- [AVAudioConverterOutputStatus.endOfStream](./avaudioconverteroutputstatus/endofstream.md)
   A status that indicates the method reaches the end of the stream, and doesn’t return any data.
-- [AVAudioConverterOutputStatus.error](avaudioconverteroutputstatus/error.md)
+- [AVAudioConverterOutputStatus.error](./avaudioconverteroutputstatus/error.md)
   A status that indicates the method encounters an error.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
+### Converting audio formats
+- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?) -> AVAudioConverterOutputStatus](./avaudioconverter/convert%28to,error,withinputfrom%29.md)
   Performs a conversion between audio formats, if the system supports it.
-- [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
+- [typealias AVAudioConverterInputBlock](./avaudioconverterinputblock.md)
   A block to get input data for conversion, as necessary.
-- [func convert(to: AVAudioPCMBuffer, from: AVAudioPCMBuffer) throws](avaudioconverter/convert(to:from:).md)
+- [func convert(to: AVAudioPCMBuffer, from: AVAudioPCMBuffer) throws](./avaudioconverter/convert%28to,from%29.md)
   Performs a basic conversion between audio formats that doesn’t involve converting codecs or sample rates.
-- [enum AVAudioConverterInputStatus](avaudioconverterinputstatus.md)
+- [enum AVAudioConverterInputStatus](./avaudioconverterinputstatus.md)
   An option that indicates the status of an audio converter input block.
 
 

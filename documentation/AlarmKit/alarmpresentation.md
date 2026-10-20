@@ -1,7 +1,8 @@
 # AlarmPresentation
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes the content required for the alarm UI.
 
@@ -38,37 +39,38 @@ let presentation = AlarmPresentation(alert: alert, countdown: countdown, paused:
 ## Topics
 
 ### Defining the alarm UI
-- [init(alert: AlarmPresentation.Alert, countdown: AlarmPresentation.Countdown?, paused: AlarmPresentation.Paused?)](alarmpresentation/init(alert:countdown:paused:).md)
+- [init(alert: AlarmPresentation.Alert, countdown: AlarmPresentation.Countdown?, paused: AlarmPresentation.Paused?)](./alarmpresentation/init%28alert,countdown,paused%29.md)
   Configures an alert with an optional countdown and paused state.
-- [var alert: AlarmPresentation.Alert](alarmpresentation/alert-swift.property.md)
+- [var alert: AlarmPresentation.Alert](./alarmpresentation/alert-swift.property.md)
   The content for the alert mode of the alarm.
-- [var countdown: AlarmPresentation.Countdown?](alarmpresentation/countdown-swift.property.md)
+- [var countdown: AlarmPresentation.Countdown?](./alarmpresentation/countdown-swift.property.md)
   The content for the snooze or countdown mode of the alarm.
-- [var paused: AlarmPresentation.Paused?](alarmpresentation/paused-swift.property.md)
+- [var paused: AlarmPresentation.Paused?](./alarmpresentation/paused-swift.property.md)
   The content for the pause mode of the alarm.
 ### Describing an alarm state
-- [AlarmPresentation.Alert](alarmpresentation/alert-swift.struct.md)
+- [AlarmPresentation.Alert](./alarmpresentation/alert-swift.struct.md)
   An object that describes the UI of the alert that appears when an alarm fires.
-- [AlarmPresentation.Countdown](alarmpresentation/countdown-swift.struct.md)
+- [AlarmPresentation.Countdown](./alarmpresentation/countdown-swift.struct.md)
   An object that describes the content required for the countdown UI.
-- [AlarmPresentation.Paused](alarmpresentation/paused-swift.struct.md)
+- [AlarmPresentation.Paused](./alarmpresentation/paused-swift.struct.md)
   An object that configures the UI for a paused timer state.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AlarmPresentationState](alarmpresentationstate.md)
+### Views
+- [struct AlarmPresentationState](./alarmpresentationstate.md)
   The system managed content state of an alarm Live Activity.
-- [struct AlarmAttributes](alarmattributes.md)
+- [struct AlarmAttributes](./alarmattributes.md)
   An object that contains all information necessary for the alarm UI.
-- [protocol AlarmMetadata](alarmmetadata.md)
+- [protocol AlarmMetadata](./alarmmetadata.md)
   A metadata object that contains information about an alarm.
 
 

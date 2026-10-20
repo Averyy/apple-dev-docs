@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the hand action classifier suitable for debugging.
 
@@ -20,9 +21,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlhandactionclassifier/description.md)
+### Describing a hand action classifier
+- [var description: String](./description.md)
   A text representation of the hand action classifier.
-- [var playgroundDescription: Any](mlhandactionclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the hand action classifier that’s viewable in a playground.
 
 

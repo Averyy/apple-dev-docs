@@ -1,17 +1,18 @@
 # init()
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new viewport.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(originX: Double, originY: Double, width: Double, height: Double, znear: Double, zfar: Double)](mtlviewport/init(originx:originy:width:height:znear:zfar:).md)
+### Creating a viewport
+- [init(originX: Double, originY: Double, width: Double, height: Double, znear: Double, zfar: Double)](./init%28originx,originy,width,height,znear,zfar%29.md)
   Returns a new viewport of a specified size at a specified origin.
 
 

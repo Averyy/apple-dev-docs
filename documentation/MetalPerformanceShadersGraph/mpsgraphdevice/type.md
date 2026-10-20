@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Device of the MPSGraphDevice.
 
@@ -17,6 +18,10 @@ Device of the MPSGraphDevice.
 
 ```swift
 var type: MPSGraphDeviceType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSGraphDeviceType type;
 ```
 
 

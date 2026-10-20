@@ -1,7 +1,8 @@
 # supportsLocale(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the given locale is supported by the model.
 
@@ -20,17 +21,18 @@ final func supportsLocale(_ locale: Locale = Locale.current) -> Bool
 
 ## Mentions
 
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
+- [Supporting languages and locales with Foundation Models](../supporting-languages-and-locales-with-foundation-models.md)
 
 #### Discussion
 
-Use this method over [`supportedLanguages`](systemlanguagemodel/supportedlanguages.md) to check whether the given locale qualifies a person for using this model, as this method also takes language fallbacks into consideration.
+Use this method over [`supportedLanguages`](./supportedlanguages.md) to check whether the given locale qualifies a person for using this model, as this method also takes language fallbacks into consideration.
 
 ## See Also
 
-- [var contextSize: Int](systemlanguagemodel/contextsize.md)
+### Inspecting model capabilities
+- [var contextSize: Int](./contextsize.md)
   The maximum context size in tokens that the model supports.
-- [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
+- [var supportedLanguages: Set<Locale.Language>](./supportedlanguages.md)
   Languages that the model supports.
 
 

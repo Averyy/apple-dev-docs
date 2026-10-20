@@ -1,7 +1,8 @@
 # IOServiceOpenAsFileDescriptor(_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func IOServiceOpenAsFileDescriptor(_ service: io_service_t, _ oflag: Int32) -> Int32
+```
+
+```c
+int IOServiceOpenAsFileDescriptor(io_service_t service, int oflag);
 ```
 
 

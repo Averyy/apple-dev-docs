@@ -1,7 +1,8 @@
 # recordType
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record type to perform this query on.
 
@@ -10,7 +11,7 @@ The record type to perform this query on.
 
 ## Declaration
 
-```swift
+```
 attribute string recordType;
 ```
 

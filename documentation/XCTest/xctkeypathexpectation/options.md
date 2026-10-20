@@ -1,7 +1,8 @@
 # options
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A combination of values that specify what to include in observation notifications.
 
@@ -19,15 +20,16 @@ final let options: NSKeyValueObservingOptions
 
 #### Discussion
 
-For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions).
+For possible values, see [`NSKeyValueObservingOptions`](../../Foundation/nskeyvalueobservingoptions.md).
 
 ## See Also
 
-- [let keyPath: KeyPath<T, V>](xctkeypathexpectation/keypath.md)
+### Expectation properties
+- [let keyPath: KeyPath<T, V>](./keypath.md)
   The key path for the observed property, relative to the observed object.
-- [let observedObject: T](xctkeypathexpectation/observedobject.md)
+- [let observedObject: T](./observedobject.md)
   The object the system observes the key path on.
-- [var expectedValue: V?](xctkeypathexpectation/expectedvalue.md)
+- [var expectedValue: V?](./expectedvalue.md)
   A value that the key path’s specified property must equal to fulfill the expectation.
 
 

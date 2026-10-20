@@ -1,21 +1,26 @@
 # ICReturnPTPDeviceError.Code.failedToSendCommand
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sending a PTP command failed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case failedToSendCommand
+```
+
+```c
+ICReturnPTPFailedToSendCommand
 ```
 
 

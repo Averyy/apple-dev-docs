@@ -1,7 +1,8 @@
 # MTRClusterModeSelect
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,41 +19,45 @@
 class MTRClusterModeSelect
 ```
 
+```objc
+@interface MTRClusterModeSelect : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclustermodeselect/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclustermodeselect/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclustermodeselect/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclustermodeselect/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustermodeselect/changetomode(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclustermodeselect/changetomode(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributecurrentmode(with:).md)
-- [func readAttributeDescription(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributedescription(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeOnMode(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributeonmode(with:).md)
-- [func readAttributeStandardNamespace(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributestandardnamespace(with:).md)
-- [func readAttributeStartUpMode(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributestartupmode(with:).md)
-- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](mtrclustermodeselect/readattributesupportedmodes(with:).md)
-- [func writeAttributeOnMode(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclustermodeselect/writeattributeonmode(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeOnMode(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclustermodeselect/writeattributeonmode(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeStartUpMode(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclustermodeselect/writeattributestartupmode(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeStartUpMode(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclustermodeselect/writeattributestartupmode(withvalue:expectedvalueinterval:params:).md)
+- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclustermodeselect/changetomode%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func changeToMode(with: MTRModeSelectClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclustermodeselect/changetomode%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributecurrentmode%28with%29.md)
+- [func readAttributeDescription(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributedescription%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeOnMode(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributeonmode%28with%29.md)
+- [func readAttributeStandardNamespace(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributestandardnamespace%28with%29.md)
+- [func readAttributeStartUpMode(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributestartupmode%28with%29.md)
+- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](./mtrclustermodeselect/readattributesupportedmodes%28with%29.md)
+- [func writeAttributeOnMode(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclustermodeselect/writeattributeonmode%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeOnMode(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclustermodeselect/writeattributeonmode%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeStartUpMode(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclustermodeselect/writeattributestartupmode%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeStartUpMode(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclustermodeselect/writeattributestartupmode%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

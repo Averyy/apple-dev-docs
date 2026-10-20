@@ -1,12 +1,13 @@
 # init(data:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a representation of an image initialized with the specified PDF data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a representation of an image initialized with the specified PDF data.
 init?(data pdfData: Data)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) pdfData;
+```
+
 #### Return Value
 
-An initialized [`NSPDFImageRep`](nspdfimagerep.md) object, or `nil` if the object could not be initialized. Initialization may fail if the PDF data does not conform to the PDF file format.
+An initialized [`NSPDFImageRep`](../nspdfimagerep.md) object, or `nil` if the object could not be initialized. Initialization may fail if the PDF data does not conform to the PDF file format.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ An initialized [`NSPDFImageRep`](nspdfimagerep.md) object, or `nil` if the objec
 
 ## See Also
 
-- [var pdfRepresentation: Data](nspdfimagerep/pdfrepresentation.md)
+### Related Documentation
+- [var pdfRepresentation: Data](./pdfrepresentation.md)
   The PDF representation of the representation’s image.
 
 

@@ -1,12 +1,13 @@
 # watchOS 6.1.2 Release Notes
 
-**Framework**: watchOS Release Notes
+**Framework**: watchOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 6.1.2 SDK provides support for developing watchOS apps for Apple Watch devices running watchOS 6.1.2. The SDK comes bundled with Xcode 11.3. For information on the compatibility requirements for Xcode 11.3, see [`Xcode 11.3 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11_3-release-notes).
+The watchOS 6.1.2 SDK provides support for developing watchOS apps for Apple Watch devices running watchOS 6.1.2. The SDK comes bundled with Xcode 11.3. For information on the compatibility requirements for Xcode 11.3, see [Xcode 11.3 Release Notes](../Xcode-Release-Notes/xcode-11_3-release-notes.md).
 
 ##### General
 
@@ -14,17 +15,18 @@ There are no release notes for this software update.
 
 ## See Also
 
-- [watchOS 6.2.8 Release Notes](watchos-6_2_8-release-notes.md)
+### watchOS 6
+- [watchOS 6.2.8 Release Notes](./watchos-6_2_8-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 6.2.5 Release Notes](watchos-6_2_5-release-notes.md)
+- [watchOS 6.2.5 Release Notes](./watchos-6_2_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 6.2 Release Notes](watchos-6_2-release-notes.md)
+- [watchOS 6.2 Release Notes](./watchos-6_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 6.1.1 Release Notes](watchos-6_1_1-release-notes.md)
+- [watchOS 6.1.1 Release Notes](./watchos-6_1_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 6.1 Release Notes](watchos-6_1-release-notes.md)
+- [watchOS 6.1 Release Notes](./watchos-6_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 6 Release Notes](watchos-6-release-notes.md)
+- [watchOS 6 Release Notes](./watchos-6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

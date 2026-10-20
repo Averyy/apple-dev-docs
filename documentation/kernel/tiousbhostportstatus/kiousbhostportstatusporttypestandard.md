@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusPortTypeStandard
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The standard port type.
 
@@ -10,7 +11,7 @@ The standard port type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusPortTypeStandard = (kIOUSBHostPortTypeStandard << IOUSBHostFamilyBitRangePhase(0, 3))
 ```
 

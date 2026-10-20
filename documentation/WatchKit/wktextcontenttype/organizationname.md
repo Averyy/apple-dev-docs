@@ -1,12 +1,13 @@
 # organizationName
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An organization’s name.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ An organization’s name.
 static let organizationName: WKTextContentType
 ```
 
+```c
+extern WKTextContentType const WKTextContentTypeOrganizationName;
+```
+
 ## See Also
 
-- [static let jobTitle: WKTextContentType](wktextcontenttype/jobtitle.md)
+### Employment
+- [static let jobTitle: WKTextContentType](./jobtitle.md)
   A job title.
 
 

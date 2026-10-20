@@ -1,7 +1,8 @@
 # dictionaryHandler
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that provides a dictionary for your app to insert data into.
 
@@ -20,17 +21,22 @@ A closure that provides a dictionary for your app to insert data into.
 var dictionaryHandler: ((NSMutableDictionary) -> Bool)? { get set }
 ```
 
+```objc
+@property (copy, nullable) BOOL (^dictionaryHandler)(NSMutableDictionary<NSString *,id> *obj);
+```
+
 ## See Also
 
-- [var entity: NSEntityDescription?](nsbatchinsertrequest/entity.md)
+### Configuring a Request
+- [var entity: NSEntityDescription?](./entity.md)
   The managed entity to insert data into.
-- [var entityName: String](nsbatchinsertrequest/entityname.md)
+- [var entityName: String](./entityname.md)
   The name of the managed entity to insert data into.
-- [var managedObjectHandler: ((NSManagedObject) -> Bool)?](nsbatchinsertrequest/managedobjecthandler.md)
+- [var managedObjectHandler: ((NSManagedObject) -> Bool)?](./managedobjecthandler.md)
   A closure that provides a managed object for your app to insert data into.
-- [var objectsToInsert: [[String : Any]]?](nsbatchinsertrequest/objectstoinsert.md)
+- [var objectsToInsert: [[String : Any]]?](./objectstoinsert.md)
   An array of dictionaries that represents the objects to insert with the keys as attribute names and their assigned values.
-- [var resultType: NSBatchInsertRequestResultType](nsbatchinsertrequest/resulttype.md)
+- [var resultType: NSBatchInsertRequestResultType](./resulttype.md)
   The type of result that Core Data returns from this request.
 
 

@@ -1,7 +1,8 @@
 # timeSnapshot(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func timeSnapshot(completion: @escaping @Sendable (MTRGeneralDiagnosticsClusterTimeSnapshotResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func timeSnapshot() async throws -> MTRGeneralDiagnosticsClusterTimeSnapshotResponseParams
+```
+
+```objc
+- (void) timeSnapshotWithCompletion:(void (^)(MTRGeneralDiagnosticsClusterTimeSnapshotResponseParams *data, NSError *error)) completion;
 ```
 
 

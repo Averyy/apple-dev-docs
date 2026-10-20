@@ -1,7 +1,8 @@
 # init(position:direction:role:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a seat element with the specified position, direction, and role information.
 

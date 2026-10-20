@@ -1,18 +1,19 @@
 # CFHashCode
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for hash codes returned by the `CFHash` function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A type for hash codes returned by the `CFHash` function.
 typealias CFHashCode = UInt
 ```
 
+```c
+typedef unsigned long CFHashCode;
+```
+
 ## See Also
 
-- [typealias CFTypeID](cftypeid.md)
+### Data Types
+- [typealias CFTypeID](./cftypeid.md)
   A type for unique, constant integer values that identify particular Core Foundation opaque types.
 
 

@@ -1,7 +1,8 @@
 # print(_:separator:terminator:to:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Writes the textual representations of the given items into the given output stream.
 
@@ -57,15 +58,16 @@ for n in 1...5 {
 
 ## See Also
 
-- [func print(Any..., separator: String, terminator: String)](print(_:separator:terminator:).md)
+### Printing and Dumping
+- [func print(Any..., separator: String, terminator: String)](./print%28_,separator,terminator%29.md)
   Writes the textual representations of the given items into the standard output.
-- [func debugPrint(Any..., separator: String, terminator: String)](debugprint(_:separator:terminator:).md)
+- [func debugPrint(Any..., separator: String, terminator: String)](./debugprint%28_,separator,terminator%29.md)
   Writes the textual representations of the given items most suitable for debugging into the standard output.
-- [func debugPrint<Target>(Any..., separator: String, terminator: String, to: inout Target)](debugprint(_:separator:terminator:to:).md)
+- [func debugPrint<Target>(Any..., separator: String, terminator: String, to: inout Target)](./debugprint%28_,separator,terminator,to%29.md)
   Writes the textual representations of the given items most suitable for debugging into the given output stream.
-- [func dump<T>(T, name: String?, indent: Int, maxDepth: Int, maxItems: Int) -> T](dump(_:name:indent:maxdepth:maxitems:).md)
+- [func dump<T>(T, name: String?, indent: Int, maxDepth: Int, maxItems: Int) -> T](./dump%28_,name,indent,maxdepth,maxitems%29.md)
   Dumps the given object’s contents using its mirror to standard output.
-- [func dump<T, TargetStream>(T, to: inout TargetStream, name: String?, indent: Int, maxDepth: Int, maxItems: Int) -> T](dump(_:to:name:indent:maxdepth:maxitems:).md)
+- [func dump<T, TargetStream>(T, to: inout TargetStream, name: String?, indent: Int, maxDepth: Int, maxItems: Int) -> T](./dump%28_,to,name,indent,maxdepth,maxitems%29.md)
   Dumps the given object’s contents using its mirror to the specified output stream.
 
 

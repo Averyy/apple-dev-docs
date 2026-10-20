@@ -1,7 +1,8 @@
 # didEvaluateActions(for:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you to peform any necessary logic after scene actions are evaluated.
 
@@ -20,9 +21,13 @@ Tells you to peform any necessary logic after scene actions are evaluated.
 optional func didEvaluateActions(for scene: SKScene)
 ```
 
+```objc
+- (void) didEvaluateActionsForScene:(SKScene *) scene;
+```
+
 ## Mentions
 
-- [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
+- [Detecting Changes at Each Step of an Animation](../detecting-changes-at-each-step-of-an-animation.md)
 
 #### Discussion
 
@@ -36,15 +41,16 @@ Any additional actions applied are not evaluated until the next update.
 
 ## See Also
 
-- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
+### Handling Animation Events
+- [Use SpriteKit Objects within Scene Delegate Callbacks](../use-spritekit-objects-within-scene-delegate-callbacks.md)
   Follow threading guidelines to keep your SpriteKit app thread safe.
-- [func update(TimeInterval, for: SKScene)](skscenedelegate/update(_:for:).md)
+- [func update(TimeInterval, for: SKScene)](./update%28_,for%29.md)
   Tells you to perform any app specific logic to update your scene.
-- [func didSimulatePhysics(for: SKScene)](skscenedelegate/didsimulatephysics(for:).md)
+- [func didSimulatePhysics(for: SKScene)](./didsimulatephysics%28for%29.md)
   Tells you to peform any necessary logic after physics simulations are performed.
-- [func didApplyConstraints(for: SKScene)](skscenedelegate/didapplyconstraints(for:).md)
+- [func didApplyConstraints(for: SKScene)](./didapplyconstraints%28for%29.md)
   Tells you to peform any necessary logic after constraints are applied.
-- [func didFinishUpdate(for: SKScene)](skscenedelegate/didfinishupdate(for:).md)
+- [func didFinishUpdate(for: SKScene)](./didfinishupdate%28for%29.md)
   Tells you to peform any necessary logic after the scene has finished all of the steps required to process animations.
 
 

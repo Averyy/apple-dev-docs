@@ -1,23 +1,28 @@
 # geometry
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use this entry point to deform a geometry’s surface or alter its vertex attributes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 static let geometry: SCNShaderModifierEntryPoint
+```
+
+```c
+extern SCNShaderModifierEntryPoint const SCNShaderModifierEntryPointGeometry;
 ```
 
 #### Discussion
@@ -39,7 +44,7 @@ Your shader modifier reads from this structure and writes new values to the same
 
 The `position`, `normal`, and `tangent` fields are expressed in model space. You can use SceneKit’s uniforms (such as `u_modelViewTransform`) to operate in a different coordinate space, but you must convert back to model space before writing results.
 
-The `kSCNTexcoordCount` variable is a constant integer corresponding to the geometry’s number of texture coordinate sources. Each set of coordinates in the `texcoords` field contains raw values from the geometry—SceneKit applies the [`contentsTransform`](scnmaterialproperty/contentstransform.md) transformation (if any) after the geometry shader modifier completes.
+The `kSCNTexcoordCount` variable is a constant integer corresponding to the geometry’s number of texture coordinate sources. Each set of coordinates in the `texcoords` field contains raw values from the geometry—SceneKit applies the [`contentsTransform`](../scnmaterialproperty/contentstransform.md) transformation (if any) after the geometry shader modifier completes.
 
 The below shader modifier produces an animated sinusoidal deformation:
 
@@ -54,11 +59,12 @@ _geometry.position +=
 
 ## See Also
 
-- [static let fragment: SCNShaderModifierEntryPoint](scnshadermodifierentrypoint/fragment.md)
+### Type Properties
+- [static let fragment: SCNShaderModifierEntryPoint](./fragment.md)
   Use this entry point to change the color of a fragment after all other shading has been performed.
-- [static let lightingModel: SCNShaderModifierEntryPoint](scnshadermodifierentrypoint/lightingmodel.md)
+- [static let lightingModel: SCNShaderModifierEntryPoint](./lightingmodel.md)
   Use this entry point to provide a custom lighting equation.
-- [static let surface: SCNShaderModifierEntryPoint](scnshadermodifierentrypoint/surface.md)
+- [static let surface: SCNShaderModifierEntryPoint](./surface.md)
   Use this entry point to modify the surface properties of a material before lighting is computed.
 
 

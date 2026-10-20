@@ -1,7 +1,8 @@
 # MTRIdentifyType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 enum MTRIdentifyType
 ```
 
+```c
+enum MTRIdentifyType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRIdentifyType.actuator](mtridentifytype/actuator.md)
-- [MTRIdentifyType.audibleBeep](mtridentifytype/audiblebeep.md)
-- [MTRIdentifyType.display](mtridentifytype/display.md)
-- [MTRIdentifyType.lightOutput](mtridentifytype/lightoutput.md)
-- [MTRIdentifyType.none](mtridentifytype/none.md)
-- [MTRIdentifyType.visibleIndicator](mtridentifytype/visibleindicator.md)
+- [MTRIdentifyType.actuator](./mtridentifytype/actuator.md)
+- [MTRIdentifyType.audibleBeep](./mtridentifytype/audiblebeep.md)
+- [MTRIdentifyType.display](./mtridentifytype/display.md)
+- [MTRIdentifyType.lightOutput](./mtridentifytype/lightoutput.md)
+- [MTRIdentifyType.none](./mtridentifytype/none.md)
+- [MTRIdentifyType.visibleIndicator](./mtridentifytype/visibleindicator.md)
 ### Type Properties
-- [static var visibleLED: MTRIdentifyType](mtridentifytype/visibleled.md)
-- [static var visibleLight: MTRIdentifyType](mtridentifytype/visiblelight.md)
+- [static var visibleLED: MTRIdentifyType](./mtridentifytype/visibleled.md)
+- [static var visibleLight: MTRIdentifyType](./mtridentifytype/visiblelight.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtridentifytype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtridentifytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

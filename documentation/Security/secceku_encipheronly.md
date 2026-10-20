@@ -1,7 +1,8 @@
 # SecCEKU_EncipherOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var SecCEKU_EncipherOnly: Int32 { get }
+```
+
+```c
+#define SecCEKU_EncipherOnly
 ```
 
 

@@ -1,7 +1,8 @@
 # gainCurveType
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rate of change for the setting’s volume.
 
@@ -19,13 +20,18 @@ A rate of change for the setting’s volume.
 var gainCurveType: PHASECurveType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PHASECurveType gainCurveType;
+```
+
 #### Discussion
 
-The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](phasegrouppresetsetting/init(gain:rate:gaincurvetype:ratecurvetype:).md) parameter.
+The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](./init%28gain,rate,gaincurvetype,ratecurvetype%29.md) parameter.
 
 ## See Also
 
-- [var gain: Double](phasegrouppresetsetting/gain.md)
+### Setting Loudness
+- [var gain: Double](./gain.md)
   The volume of audio playback.
 
 

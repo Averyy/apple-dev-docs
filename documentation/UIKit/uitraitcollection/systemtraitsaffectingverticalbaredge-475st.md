@@ -1,7 +1,8 @@
 # systemTraitsAffectingVerticalBarEdge
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system traits that affect the value of `verticalBarEdge`.
 
@@ -10,7 +11,7 @@ The system traits that affect the value of `verticalBarEdge`.
 - iPadOS 27.1+
 - Mac Catalyst 27.1+
 - tvOS 27.1+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,8 +25,9 @@ Pass this array to `registerForTraitChanges(_:handler:)` to be notified when the
 
 ## See Also
 
-- [static var systemTraitsAffectingColorAppearance: [UITrait]](uitraitcollection/systemtraitsaffectingcolorappearance-64z7q.md)
-- [static var systemTraitsAffectingImageLookup: [UITrait]](uitraitcollection/systemtraitsaffectingimagelookup-4jv5.md)
+### Getting related traits
+- [static var systemTraitsAffectingColorAppearance: [UITrait]](./systemtraitsaffectingcolorappearance-64z7q.md)
+- [static var systemTraitsAffectingImageLookup: [UITrait]](./systemtraitsaffectingimagelookup-4jv5.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # process(_:for:rotation:fieldOfView:presentationDescriptor:renderTexture:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the rendering of an immersive video frame.
 
@@ -19,7 +20,7 @@ func process(_ frame: ImmersiveVideoFrame, for eye: ImmersivePreviewRenderer.Eye
 
 This method is available on macOS and provides manual control over camera pose and projection parameters. It updates the camera pose based on the provided rotation, configures the projection matrix using the specified field of view, and processes presentation commands to determine the active camera and rendering parameters.
 
-The rendering operation is asynchronous and completes when the frame has been submitted to the GPU. Access [`commandBuffer`](immersivepreviewrenderer/commandbuffer.md) after this method returns to retrieve the command buffer for synchronization.
+The rendering operation is asynchronous and completes when the frame has been submitted to the GPU. Access [`commandBuffer`](./commandbuffer.md) after this method returns to retrieve the command buffer for synchronization.
 
 ## Parameters
 

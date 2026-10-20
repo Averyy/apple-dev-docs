@@ -1,7 +1,8 @@
 # CATextLayer
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that provides simple text layout and rendering of plain or attributed strings.
 
@@ -19,63 +20,68 @@ A layer that provides simple text layout and rendering of plain or attributed st
 class CATextLayer
 ```
 
+```objc
+@interface CATextLayer : CALayer
+```
+
 #### Overview
 
 The first line is aligned to the top of the layer.
 
-> **Note**:  `CATextLayer` disables sub-pixel antialiasing when rendering text. Text can only be drawn using sub-pixel antialiasing when it is composited into an existing opaque background at the same time that it’s rasterized. There is no way to draw text with sub-pixel antialiasing by itself, whether into an image or a layer, in advance of having the background pixels to weave the text pixels into. Setting the `opacity` property of the layer to [`true`](https://developer.apple.com/documentation/swift/true) does not change the rendering mode.
+> **Note**:  `CATextLayer` disables sub-pixel antialiasing when rendering text. Text can only be drawn using sub-pixel antialiasing when it is composited into an existing opaque background at the same time that it’s rasterized. There is no way to draw text with sub-pixel antialiasing by itself, whether into an image or a layer, in advance of having the background pixels to weave the text pixels into. Setting the `opacity` property of the layer to [`true`](../Swift/true.md) does not change the rendering mode.
 
-> **Note**:  In macOS, when a `CATextLayer` instance is positioned using the [`CAConstraintLayoutManager`](caconstraintlayoutmanager.md) class the bounds of the layer is resized to fit the text content.
+> **Note**:  In macOS, when a `CATextLayer` instance is positioned using the [`CAConstraintLayoutManager`](./caconstraintlayoutmanager.md) class the bounds of the layer is resized to fit the text content.
 
 ## Topics
 
 ### Getting and Setting the Text
-- [var string: Any?](catextlayer/string.md)
+- [var string: Any?](./catextlayer/string.md)
   The text to be rendered by the receiver.
 ### Text Visual Properties
-- [var font: CFTypeRef?](catextlayer/font.md)
+- [var font: CFTypeRef?](./catextlayer/font.md)
   The font used to render the receiver’s text.
-- [var fontSize: CGFloat](catextlayer/fontsize.md)
+- [var fontSize: CGFloat](./catextlayer/fontsize.md)
   The font size used to render the receiver’s text. Animatable.
-- [var foregroundColor: CGColor?](catextlayer/foregroundcolor.md)
+- [var foregroundColor: CGColor?](./catextlayer/foregroundcolor.md)
   The color used to render the receiver’s text. Animatable.
-- [var allowsFontSubpixelQuantization: Bool](catextlayer/allowsfontsubpixelquantization.md)
+- [var allowsFontSubpixelQuantization: Bool](./catextlayer/allowsfontsubpixelquantization.md)
   Determines whether to allow subpixel quantization for the graphics context used for text rendering.
 ### Text Alignment and Truncation
-- [var isWrapped: Bool](catextlayer/iswrapped.md)
+- [var isWrapped: Bool](./catextlayer/iswrapped.md)
   Determines whether the text is wrapped to fit within the receiver’s bounds.
-- [var alignmentMode: CATextLayerAlignmentMode](catextlayer/alignmentmode.md)
+- [var alignmentMode: CATextLayerAlignmentMode](./catextlayer/alignmentmode.md)
   Determines how individual lines of text are horizontally aligned within the receiver’s bounds.
-- [var truncationMode: CATextLayerTruncationMode](catextlayer/truncationmode.md)
+- [var truncationMode: CATextLayerTruncationMode](./catextlayer/truncationmode.md)
   Determines how the text is truncated to fit within the receiver’s bounds.
 ### Constants
-- [Truncation modes](truncation-modes.md)
-  These constants are used by the [`truncationMode`](catextlayer/truncationmode.md) property.
-- [Horizontal alignment modes](horizontal-alignment-modes.md)
-  These constants are used by the [`alignmentMode`](catextlayer/alignmentmode.md) property.
+- [Truncation modes](./truncation-modes.md)
+  These constants are used by the [`truncationMode`](./catextlayer/truncationmode.md) property.
+- [Horizontal alignment modes](./horizontal-alignment-modes.md)
+  These constants are used by the [`alignmentMode`](./catextlayer/alignmentmode.md) property.
 
 ## Relationships
 
 ### Inherits From
-- [CALayer](calayer.md)
+- [CALayer](./calayer.md)
 ### Conforms To
-- [CAMediaTiming](camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CAMediaTiming](./camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CAShapeLayer](cashapelayer.md)
+### Text, Shapes, and Gradients
+- [class CAShapeLayer](./cashapelayer.md)
   A layer that draws a cubic Bezier spline in its coordinate space.
-- [class CAGradientLayer](cagradientlayer.md)
+- [class CAGradientLayer](./cagradientlayer.md)
   A layer that draws a color gradient over its background color, filling the shape of the layer.
 
 

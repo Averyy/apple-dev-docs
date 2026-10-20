@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default configuration with most common text formatting options.
 
@@ -15,6 +16,10 @@ Creates a default configuration with most common text formatting options.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

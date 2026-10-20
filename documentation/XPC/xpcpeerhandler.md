@@ -1,7 +1,8 @@
 # XPCPeerHandler
 
 **Framework**: XPC  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that handles incoming messages from a client and session cancellation.
 
@@ -11,7 +12,7 @@ A type that handles incoming messages from a client and session cancellation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,21 +25,21 @@ protocol XPCPeerHandler : Sendable
 ## Topics
 
 ### Receiving client messages
-- [func handleIncomingRequest(Self.Input) -> Self.Output?](xpcpeerhandler/handleincomingrequest(_:).md)
+- [func handleIncomingRequest(Self.Input) -> Self.Output?](./xpcpeerhandler/handleincomingrequest%28_%29.md)
   A closure that receives a message from a client and optionally provides a reply.
-- [associatedtype Input](xpcpeerhandler/input.md)
+- [associatedtype Input](./xpcpeerhandler/input.md)
   A type that represents a message from a client.
-- [associatedtype Output](xpcpeerhandler/output.md)
+- [associatedtype Output](./xpcpeerhandler/output.md)
   A type that represents a response to an incoming request.
 ### Responding to session cancellation
-- [func handleCancellation(error: XPCRichError)](xpcpeerhandler/handlecancellation(error:).md)
+- [func handleCancellation(error: XPCRichError)](./xpcpeerhandler/handlecancellation%28error%29.md)
   A closure the system invokes when it cancels a session with a client.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

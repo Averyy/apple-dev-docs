@@ -1,18 +1,19 @@
 # DispatchSourceProtocol
 
 **Framework**: Dispatch  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Defines a common set of properties and methods that are shared with all dispatch source types.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,79 +21,84 @@ Defines a common set of properties and methods that are shared with all dispatch
 protocol DispatchSourceProtocol : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_dispatch_source <OS_dispatch_object>
+```
+
 #### Overview
 
-You do not adopt this protocol in your objects. Instead, use the [`makeSignalSource(signal:queue:)`](dispatchsource/makesignalsource(signal:queue:).md) method to create an object that adopts this protocol.
+You do not adopt this protocol in your objects. Instead, use the [`makeSignalSource(signal:queue:)`](./dispatchsource/makesignalsource%28signal,queue%29.md) method to create an object that adopts this protocol.
 
 ## Topics
 
 ### Activating, Suspending, and Resuming a Source
-- [func activate()](dispatchsourceprotocol/activate.md)
+- [func activate()](./dispatchsourceprotocol/activate%28%29.md)
   Activates the dispatch source.
-- [func suspend()](dispatchsourceprotocol/suspend.md)
+- [func suspend()](./dispatchsourceprotocol/suspend%28%29.md)
   Suspends the dispatch source.
-- [func resume()](dispatchsourceprotocol/resume.md)
+- [func resume()](./dispatchsourceprotocol/resume%28%29.md)
   Resumes the dispatch source.
 ### Canceling a Dispatch Source
-- [func cancel()](dispatchsourceprotocol/cancel.md)
+- [func cancel()](./dispatchsourceprotocol/cancel%28%29.md)
   Asynchronously cancels the dispatch source, preventing any further invocation of its event handler block.
-- [var isCancelled: Bool](dispatchsourceprotocol/iscancelled.md)
+- [var isCancelled: Bool](./dispatchsourceprotocol/iscancelled.md)
   Returns a Boolean indicating whether the given dispatch source has been canceled.
-- [func setCancelHandler(handler: DispatchWorkItem)](dispatchsourceprotocol/setcancelhandler(handler:).md)
+- [func setCancelHandler(handler: DispatchWorkItem)](./dispatchsourceprotocol/setcancelhandler%28handler%29.md)
   Sets the cancellation handler block for the dispatch source.
-- [func setCancelHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](dispatchsourceprotocol/setcancelhandler(qos:flags:handler:).md)
+- [func setCancelHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](./dispatchsourceprotocol/setcancelhandler%28qos,flags,handler%29.md)
   Sets the cancellation handler block for the dispatch source with the specified quality-of-service class and work item options.
 ### Installing Event Handlers
-- [func setEventHandler(handler: DispatchWorkItem)](dispatchsourceprotocol/seteventhandler(handler:).md)
+- [func setEventHandler(handler: DispatchWorkItem)](./dispatchsourceprotocol/seteventhandler%28handler%29.md)
   Sets the event handler work item for the dispatch source.
-- [func setEventHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](dispatchsourceprotocol/seteventhandler(qos:flags:handler:).md)
-- [func setRegistrationHandler(handler: DispatchWorkItem)](dispatchsourceprotocol/setregistrationhandler(handler:).md)
+- [func setEventHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](./dispatchsourceprotocol/seteventhandler%28qos,flags,handler%29.md)
+- [func setRegistrationHandler(handler: DispatchWorkItem)](./dispatchsourceprotocol/setregistrationhandler%28handler%29.md)
   Sets the registration handler work item for the dispatch source.
-- [func setRegistrationHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](dispatchsourceprotocol/setregistrationhandler(qos:flags:handler:).md)
-- [DispatchSourceProtocol.DispatchSourceHandler](dispatchsourceprotocol/dispatchsourcehandler.md)
+- [func setRegistrationHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](./dispatchsourceprotocol/setregistrationhandler%28qos,flags,handler%29.md)
+- [DispatchSourceProtocol.DispatchSourceHandler](./dispatchsourceprotocol/dispatchsourcehandler.md)
 ### Getting the Dispatch Source Attributes
-- [var handle: UInt](dispatchsourceprotocol/handle.md)
+- [var handle: UInt](./dispatchsourceprotocol/handle.md)
   Returns the underlying system handle associated with the specified dispatch source.
-- [var data: UInt](dispatchsourceprotocol/data.md)
+- [var data: UInt](./dispatchsourceprotocol/data.md)
   Returns pending data for the dispatch source.
-- [var mask: UInt](dispatchsourceprotocol/mask.md)
+- [var mask: UInt](./dispatchsourceprotocol/mask.md)
   Returns the mask of events monitored by the dispatch source.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [DispatchSourceFileSystemObject](dispatchsourcefilesystemobject.md)
-- [DispatchSourceMachReceive](dispatchsourcemachreceive.md)
-- [DispatchSourceMachSend](dispatchsourcemachsend.md)
-- [DispatchSourceMemoryPressure](dispatchsourcememorypressure.md)
-- [DispatchSourceProcess](dispatchsourceprocess.md)
-- [DispatchSourceRead](dispatchsourceread.md)
-- [DispatchSourceSignal](dispatchsourcesignal.md)
-- [DispatchSourceTimer](dispatchsourcetimer.md)
-- [DispatchSourceUserDataAdd](dispatchsourceuserdataadd.md)
-- [DispatchSourceUserDataOr](dispatchsourceuserdataor.md)
-- [DispatchSourceUserDataReplace](dispatchsourceuserdatareplace.md)
-- [DispatchSourceWrite](dispatchsourcewrite.md)
+- [DispatchSourceFileSystemObject](./dispatchsourcefilesystemobject.md)
+- [DispatchSourceMachReceive](./dispatchsourcemachreceive.md)
+- [DispatchSourceMachSend](./dispatchsourcemachsend.md)
+- [DispatchSourceMemoryPressure](./dispatchsourcememorypressure.md)
+- [DispatchSourceProcess](./dispatchsourceprocess.md)
+- [DispatchSourceRead](./dispatchsourceread.md)
+- [DispatchSourceSignal](./dispatchsourcesignal.md)
+- [DispatchSourceTimer](./dispatchsourcetimer.md)
+- [DispatchSourceUserDataAdd](./dispatchsourceuserdataadd.md)
+- [DispatchSourceUserDataOr](./dispatchsourceuserdataor.md)
+- [DispatchSourceUserDataReplace](./dispatchsourceuserdatareplace.md)
+- [DispatchSourceWrite](./dispatchsourcewrite.md)
 ### Conforming Types
-- [DispatchSource](dispatchsource.md)
+- [DispatchSource](./dispatchsource.md)
 
 ## See Also
 
-- [class DispatchSource](dispatchsource.md)
+### System Event Monitoring
+- [class DispatchSource](./dispatchsource.md)
   An object that coordinates the processing of specific low-level system events, such as file-system events, timers, and UNIX signals.
-- [Dispatch Source](dispatch-source.md)
+- [Dispatch Source](./dispatch-source.md)
   An object that coordinates the processing of specific low-level system events, such as file-system events, timers, and UNIX signals.
-- [class DispatchIO](dispatchio.md)
+- [class DispatchIO](./dispatchio.md)
   An object that manages operations on a file descriptor using either stream-based or random-access semantics.
-- [struct DispatchData](dispatchdata.md)
+- [struct DispatchData](./dispatchdata.md)
   An object that manages a memory-based data buffer and exposes it as a contiguous block of memory.
-- [struct DispatchDataIterator](dispatchdataiterator.md)
+- [struct DispatchDataIterator](./dispatchdataiterator.md)
   A byte-by-byte iterator over the contents of a dispatch data object.
-- [Dispatch I/O](dispatch-i-o.md)
+- [Dispatch I/O](./dispatch-i-o.md)
   An object that manages operations on a file descriptor using either stream-based or random-access semantics.
-- [Dispatch Data](dispatch-data.md)
+- [Dispatch Data](./dispatch-data.md)
   An object that manages a memory-based data buffer and exposes it as a contiguous block of memory.
 
 

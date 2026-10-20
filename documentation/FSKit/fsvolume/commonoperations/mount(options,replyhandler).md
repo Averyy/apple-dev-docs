@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Mounts this volume, using the specified options.
@@ -12,7 +13,15 @@ Mounts this volume, using the specified options.
 ## Declaration
 
 ```swift
+func mount(options: FSTaskOptions, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func mount(options: FSTaskOptions) async throws
+```
+
+```objc
+- (void) mountWithOptions:(FSTaskOptions *) options replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 #### Discussion

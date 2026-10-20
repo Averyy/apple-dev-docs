@@ -1,7 +1,8 @@
 # init(networkRule:action:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new filter rule from a network rule and an action to take when network traffic matches.
 
@@ -14,9 +15,13 @@ Creates a new filter rule from a network rule and an action to take when network
 init(networkRule: NENetworkRule, action: NEFilterAction)
 ```
 
+```objc
+- (instancetype) initWithNetworkRule:(NENetworkRule *) networkRule action:(NEFilterAction) action;
+```
+
 ## Parameters
 
-- `networkRule`: An [`NENetworkRule`](nenetworkrule.md) object that defines the network traffic characteristics that this rule matches.
+- `networkRule`: An [`NENetworkRule`](../nenetworkrule.md) object that defines the network traffic characteristics that this rule matches.
 - `action`: The action to take when the network rule matches.
 
 

@@ -1,7 +1,8 @@
 # bnnsArithmeticFunction
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying BNNS arithmetic function.
 
@@ -11,8 +12,10 @@ The underlying BNNS arithmetic function.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

@@ -1,18 +1,19 @@
 # init(bitsPerComponent:bitsPerPixel:colorSpace:bitmapInfo:version:decode:renderingIntent:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Graphics image format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,16 +28,17 @@ init(bitsPerComponent: UInt32, bitsPerPixel: UInt32, colorSpace: Unmanaged<CGCol
 - `colorSpace`: A description of the position of the pixel data in the image, relative to a reference XYZ color space.
 - `bitmapInfo`: The component information that describes the color channels.
 - `version`: Reserved for future expansion — pass `0` here.
-- `decode`: The decode array for the image. See [`decode`](vimage_cgimageformat/decode.md) for more information.
+- `decode`: The decode array for the image. See [`decode`](./decode.md) for more information.
 - `renderingIntent`: A rendering intent constant that specifies how Core Graphics handles colors that aren’t within the destination color space gamut.
 
 ## See Also
 
-- [init?(bitsPerComponent: Int, bitsPerPixel: Int, colorSpace: CGColorSpace, bitmapInfo: CGBitmapInfo, renderingIntent: CGColorRenderingIntent)](vimage_cgimageformat/init(bitspercomponent:bitsperpixel:colorspace:bitmapinfo:renderingintent:).md)
+### Initializers
+- [init?(bitsPerComponent: Int, bitsPerPixel: Int, colorSpace: CGColorSpace, bitmapInfo: CGBitmapInfo, renderingIntent: CGColorRenderingIntent)](./init%28bitspercomponent,bitsperpixel,colorspace,bitmapinfo,renderingintent%29.md)
   Creates a Core Graphics image format with a color space instance and default decode array.
-- [init?(cgImage: CGImage)](vimage_cgimageformat/init(cgimage:).md)
+- [init?(cgImage: CGImage)](./init%28cgimage%29.md)
   Creates a Core Graphics image format of the specified image.
-- [init()](vimage_cgimageformat/init.md)
+- [init()](./init%28%29.md)
   Creates an empty Core Graphics image format.
 
 

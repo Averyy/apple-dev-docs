@@ -1,17 +1,22 @@
 # mouseMoved(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the receiver that the mouse has moved.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func mouseMoved(with event: NSEvent)
+```
+
+```objc
+- (void) mouseMoved:(NSEvent *) event;
 ```
 
 #### Discussion
@@ -24,29 +29,31 @@ The default implementation simply passes this message to the next responder.
 
 ## See Also
 
-- [var acceptsMouseMovedEvents: Bool](nswindow/acceptsmousemovedevents.md)
+### Related Documentation
+- [var acceptsMouseMovedEvents: Bool](../nswindow/acceptsmousemovedevents.md)
   A Boolean value that indicates whether the window accepts mouse-moved events.
-- [func mouseDown(with: NSEvent)](nsresponder/mousedown(with:).md)
+### Responding to Mouse Events
+- [func mouseDown(with: NSEvent)](./mousedown%28with%29.md)
   Informs the receiver that the user has pressed the left mouse button.
-- [func mouseDragged(with: NSEvent)](nsresponder/mousedragged(with:).md)
+- [func mouseDragged(with: NSEvent)](./mousedragged%28with%29.md)
   Informs the receiver that the user has moved the mouse with the left button pressed.
-- [func mouseUp(with: NSEvent)](nsresponder/mouseup(with:).md)
+- [func mouseUp(with: NSEvent)](./mouseup%28with%29.md)
   Informs the receiver that the user has released the left mouse button.
-- [func mouseEntered(with: NSEvent)](nsresponder/mouseentered(with:).md)
+- [func mouseEntered(with: NSEvent)](./mouseentered%28with%29.md)
   Informs the receiver that the cursor has entered a tracking rectangle.
-- [func mouseExited(with: NSEvent)](nsresponder/mouseexited(with:).md)
+- [func mouseExited(with: NSEvent)](./mouseexited%28with%29.md)
   Informs the receiver that the cursor has exited a tracking rectangle.
-- [func rightMouseDown(with: NSEvent)](nsresponder/rightmousedown(with:).md)
+- [func rightMouseDown(with: NSEvent)](./rightmousedown%28with%29.md)
   Informs the receiver that the user has pressed the right mouse button.
-- [func rightMouseDragged(with: NSEvent)](nsresponder/rightmousedragged(with:).md)
+- [func rightMouseDragged(with: NSEvent)](./rightmousedragged%28with%29.md)
   Informs the receiver that the user has moved the mouse with the right button pressed.
-- [func rightMouseUp(with: NSEvent)](nsresponder/rightmouseup(with:).md)
+- [func rightMouseUp(with: NSEvent)](./rightmouseup%28with%29.md)
   Informs the receiver that the user has released the right mouse button.
-- [func otherMouseDown(with: NSEvent)](nsresponder/othermousedown(with:).md)
+- [func otherMouseDown(with: NSEvent)](./othermousedown%28with%29.md)
   Informs the receiver that the user has pressed a mouse button other than the left or right one.
-- [func otherMouseDragged(with: NSEvent)](nsresponder/othermousedragged(with:).md)
+- [func otherMouseDragged(with: NSEvent)](./othermousedragged%28with%29.md)
   Informs the receiver that the user has moved the mouse with a button other than the left or right button pressed.
-- [func otherMouseUp(with: NSEvent)](nsresponder/othermouseup(with:).md)
+- [func otherMouseUp(with: NSEvent)](./othermouseup%28with%29.md)
   Informs the receiver that the user has released a mouse button other than the left or right button.
 
 

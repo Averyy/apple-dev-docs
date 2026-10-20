@@ -1,7 +1,8 @@
 # planarBuffers()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns four unsigned 16-bit planar pixel buffers that contain the deinterleaved channels of the buffer.
 
@@ -11,7 +12,7 @@ Returns four unsigned 16-bit planar pixel buffers that contain the deinterleaved
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,15 @@ Returns four unsigned 16-bit planar pixel buffers that contain the deinterleaved
 func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar16U>]
 ```
 
+Available when `Format` is `vImage.Interleaved16Ux4`.
+
 #### Return Value
 
 An array of planar pixel buffers.
 
 #### Discussion
 
-Use this function to deinterleave a buffer and create four new planar buffers that contain copies of each source channel. For example, the following code generates four 1 x 1 planar buffers from an [`vImage.Interleaved16Ux4`](vimage/interleaved16ux4.md) pixel buffer:
+Use this function to deinterleave a buffer and create four new planar buffers that contain copies of each source channel. For example, the following code generates four 1 x 1 planar buffers from an [`vImage.Interleaved16Ux4`](../interleaved16ux4.md) pixel buffer:
 
 ```swift
 let src = vImage.PixelBuffer<vImage.Interleaved16Ux4>(
@@ -43,21 +46,22 @@ for planarBuffer in planarBuffers {
 
 ## See Also
 
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](vimage/pixelbuffer/planarbuffers-462ja.md)
+### Generating planar buffers from interleaved buffers
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](./planarbuffers%28%29-462ja.md)
   Returns two 8-bit planar pixel buffers that contain the deinterleaved channels of the buffer.
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](vimage/pixelbuffer/planarbuffers-5r3ds.md)
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](./planarbuffers%28%29-5r3ds.md)
   Returns three 8-bit planar pixel buffers that contain the deinterleaved channels of the buffer.
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](vimage/pixelbuffer/planarbuffers-5rx2w.md)
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](./planarbuffers%28%29-5rx2w.md)
   Returns four 8-bit planar pixel buffers that contain the deinterleaved channels of the buffer.
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](vimage/pixelbuffer/planarbuffers-4qws5.md)
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](./planarbuffers%28%29-4qws5.md)
   Returns four 32-bit planar pixel buffers that contain the deinterleaved channels of the 8-bit buffer.
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](vimage/pixelbuffer/planarbuffers-1rj01.md)
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](./planarbuffers%28%29-1rj01.md)
   Returns two 32-bit planar pixel buffers that contain the deinterleaved channels of the buffer.
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](vimage/pixelbuffer/planarbuffers-82ook.md)
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](./planarbuffers%28%29-82ook.md)
   Returns three 32-bit planar pixel buffers that contain the deinterleaved channels of the buffer.
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](vimage/pixelbuffer/planarbuffers-l33r.md)
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]](./planarbuffers%28%29-l33r.md)
   Returns four 8-bit planar pixel buffers that contain the deinterleaved channels of the 32-bit buffer.
-- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](vimage/pixelbuffer/planarbuffers-35dnv.md)
+- [func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]](./planarbuffers%28%29-35dnv.md)
   Returns four 32-bit planar pixel buffers that contain the deinterleaved channels of the buffer.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new window scene geometry preferences object.
 
@@ -17,9 +18,14 @@ Initializes a new window scene geometry preferences object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(interfaceOrientations: UIInterfaceOrientationMask)](uiwindowscene/geometrypreferences/ios/init(interfaceorientations:).md)
+### Creating a geometry preferences object
+- [convenience init(interfaceOrientations: UIInterfaceOrientationMask)](./init%28interfaceorientations%29.md)
   Initializes a new window scene geometry preferences object with the specified interface orientations.
 
 

@@ -1,14 +1,15 @@
 # CS_VALIDATION_CATEGORY_LOCAL_SIGNING
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 CS_VALIDATION_CATEGORY_LOCAL_SIGNING = 7
 ```
 

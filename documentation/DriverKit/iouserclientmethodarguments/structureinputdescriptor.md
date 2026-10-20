@@ -1,48 +1,50 @@
 # structureInputDescriptor
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A memory descriptor containing structure input from the IOKit connect method.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOMemoryDescriptor * structureInputDescriptor;
 ```
 
 #### Discussion
 
-This parameter is set only for large structures, and if set [`structureInput`](iouserclientmethodarguments/structureinput.md) is `NULL`.
+This parameter is set only for large structures, and if set [`structureInput`](./structureinput.md) is `NULL`.
 
 ## See Also
 
-- [version](iouserclientmethodarguments/version.md)
-- [selector](iouserclientmethodarguments/selector.md)
+### Getting the Method Arguments
+- [version](./version.md)
+- [selector](./selector.md)
   The index of the method you want to execute.
-- [completion](iouserclientmethodarguments/completion.md)
+- [completion](./completion.md)
   An action for processing asynchronous data received from the service.
-- [scalarInput](iouserclientmethodarguments/scalarinput.md)
+- [scalarInput](./scalarinput.md)
   An array of scalars from the caller.
-- [scalarInputCount](iouserclientmethodarguments/scalarinputcount.md)
+- [scalarInputCount](./scalarinputcount.md)
   The number of scalars provided by the caller.
-- [structureInput](iouserclientmethodarguments/structureinput.md)
+- [structureInput](./structureinput.md)
   A data object containing the structure input from the IOKit connect method.
-- [scalarOutput](iouserclientmethodarguments/scalaroutput.md)
+- [scalarOutput](./scalaroutput.md)
   An array of scalars to return to the caller.
-- [scalarOutputCount](iouserclientmethodarguments/scalaroutputcount.md)
+- [scalarOutputCount](./scalaroutputcount.md)
   The number of scalars to return to the caller.
-- [structureOutput](iouserclientmethodarguments/structureoutput.md)
+- [structureOutput](./structureoutput.md)
   A data object to return to the caller as structure output.
-- [structureOutputDescriptor](iouserclientmethodarguments/structureoutputdescriptor.md)
+- [structureOutputDescriptor](./structureoutputdescriptor.md)
   An IOMemoryDescriptor specified by the caller for structure output.
-- [structureOutputMaximumSize](iouserclientmethodarguments/structureoutputmaximumsize.md)
+- [structureOutputMaximumSize](./structureoutputmaximumsize.md)
   The maximum size of the output structure that you specified.
 
 

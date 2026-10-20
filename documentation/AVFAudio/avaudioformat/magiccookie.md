@@ -1,7 +1,8 @@
 # magicCookie
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains metadata that encoders and decoders require.
 
@@ -20,21 +21,26 @@ An object that contains metadata that encoders and decoders require.
 var magicCookie: Data? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSData * magicCookie;
+```
+
 #### Discussion
 
 Encoders produce a `magicCookie` object, and some decoders require it to decode properly.
 
 ## See Also
 
-- [var isInterleaved: Bool](avaudioformat/isinterleaved.md)
+### Determining the audio format
+- [var isInterleaved: Bool](./isinterleaved.md)
   A Boolean value that indicates whether the samples mix into one stream.
-- [var isStandard: Bool](avaudioformat/isstandard.md)
+- [var isStandard: Bool](./isstandard.md)
   A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
-- [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
+- [var commonFormat: AVAudioCommonFormat](./commonformat.md)
   The common format identifier instance.
-- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+- [enum AVAudioCommonFormat](../avaudiocommonformat.md)
   The format options that describe common audio formats.
-- [var settings: [String : Any]](avaudioformat/settings.md)
+- [var settings: [String : Any]](./settings.md)
   A dictionary that represents the format as a dictionary using audio setting keys.
 
 

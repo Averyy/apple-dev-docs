@@ -1,7 +1,8 @@
 # animatedValue
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var animatedValue: MDLAnimatedQuaternion { get }
+```
+
+```objc
+@property (nonatomic, readonly) MDLAnimatedQuaternion * animatedValue;
 ```
 
 

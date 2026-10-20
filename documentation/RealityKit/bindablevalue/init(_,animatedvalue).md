@@ -1,7 +1,8 @@
 # init(_:animatedValue:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bindable value.
 
@@ -11,7 +12,7 @@ Creates a bindable value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

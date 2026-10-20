@@ -1,7 +1,8 @@
 # PersonNameComponents.FormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type used to format a person’s name with a style appropriate for the given locale.
 
@@ -24,16 +25,16 @@ struct FormatStyle
 
 Personal names deserve careful and respectful treatment in your apps. Each locale has its own set of rules and conventions to construct and represent personal names. These rules vary widely across different locales in several ways, including the sort and display order of given and family names, the use of salutations and honorifics, and other concerns related to the grammar, spelling, punctuation, and formatting.
 
-A `PersonNameComponents.FormatStyle` creates human readable text from an instance of [`PersonNameComponents`](personnamecomponents.md). You can customize the formatting using the [`style`](personnamecomponents/formatstyle/style-swift.property.md) and [`locale`](personnamecomponents/formatstyle/locale.md) properties. The system automatically caches instances with unique configurations of the format style to enhance performance.
+A `PersonNameComponents.FormatStyle` creates human readable text from an instance of [`PersonNameComponents`](../personnamecomponents.md). You can customize the formatting using the [`style`](./formatstyle/style-swift.property.md) and [`locale`](./formatstyle/locale.md) properties. The system automatically caches instances with unique configurations of the format style to enhance performance.
 
 ##### Format Styles
 
 You can configure a `PersonNameComponents.FormatStyle` to represent names in a variety of styles:
 
-- Long ([`PersonNameComponents.FormatStyle.Style.long`](personnamecomponents/formatstyle/style-swift.enum/long.md))
-- Medium ([`PersonNameComponents.FormatStyle.Style.medium`](personnamecomponents/formatstyle/style-swift.enum/medium.md))
-- Short ([`PersonNameComponents.FormatStyle.Style.short`](personnamecomponents/formatstyle/style-swift.enum/short.md))
-- Abbreviated ([`PersonNameComponents.FormatStyle.Style.abbreviated`](personnamecomponents/formatstyle/style-swift.enum/abbreviated.md))
+- Long ([`PersonNameComponents.FormatStyle.Style.long`](./formatstyle/style-swift.enum/long.md))
+- Medium ([`PersonNameComponents.FormatStyle.Style.medium`](./formatstyle/style-swift.enum/medium.md))
+- Short ([`PersonNameComponents.FormatStyle.Style.short`](./formatstyle/style-swift.enum/short.md))
+- Abbreviated ([`PersonNameComponents.FormatStyle.Style.abbreviated`](./formatstyle/style-swift.enum/abbreviated.md))
 
 When determining how to represent a name in a particular style, a number of factors determine the final format. In order of priority:
 
@@ -46,13 +47,13 @@ In the case of a conflict, the format style uses the factor with the highest pre
 
 These considerations extend to the availability of certain format styles as well. Because developer-specified configurations have the lowest precedence, the value set for the formatter’s style property is invalidated if it isn’t supported for the locale, user preferences, or script. If the specified style isn’t available, it uses the next longest valid style. For example, a name in Arabic script (for example, أحمد الراجحي) doesn’t support the Abbreviated style, so it uses the Short style instead.
 
-For more information and examples, see [`style`](personnamecomponents/formatstyle/style-swift.property.md).
+For more information and examples, see [`style`](./formatstyle/style-swift.property.md).
 
 ##### Formatting Person Name Components
 
-Use either [`formatted()`](personnamecomponents/formatted().md) or [`formatted(_:)`](personnamecomponents/formatted(_:).md), both instance methods of [`PersonNameComponents`](personnamecomponents.md), to create a string representation of a name.
+Use either [`formatted()`](./formatted%28%29.md) or [`formatted(_:)`](./formatted%28_%29.md), both instance methods of [`PersonNameComponents`](../personnamecomponents.md), to create a string representation of a name.
 
-The [`formatted()`](https://developer.apple.com/documentation/swift/sequence/formatted()) method to applies the default format style to a name. For example:
+The [`formatted()`](../../Swift/sequence/formatted%28%29.md) method to applies the default format style to a name. For example:
 
 ```swift
 var tlc = PersonNameComponents()
@@ -67,7 +68,7 @@ tlc.formatted()
 // Thomas Clark
 ```
 
-The [`formatted(_:)`](personnamecomponents/formatted(_:).md) method applies a custom format style to a name. You can use the static factory method [`name(style:)`](formatstyle/name(style:).md) to create a custom format style as a parameter to the method. For example:
+The [`formatted(_:)`](./formatted%28_%29.md) method applies a custom format style to a name. You can use the static factory method [`name(style:)`](../formatstyle/name%28style%29.md) to create a custom format style as a parameter to the method. For example:
 
 ```swift
 tlc.formatted(.name(style: .long))
@@ -98,51 +99,52 @@ mlr.formatted(customPersonFormatStyle)
 ## Topics
 
 ### Creating a Format Style
-- [init(style: PersonNameComponents.FormatStyle.Style, locale: Locale)](personnamecomponents/formatstyle/init(style:locale:).md)
+- [init(style: PersonNameComponents.FormatStyle.Style, locale: Locale)](./formatstyle/init%28style,locale%29.md)
   Creates an instance using the provided format style and locale.
 ### Parsing Person Name Components
-- [init(String) throws](personnamecomponents/init(_:).md)
+- [init(String) throws](./init%28_%29.md)
   Creates a person name components object from a given string.
-- [init<S>(S.ParseInput, strategy: S) throws](personnamecomponents/init(_:strategy:).md)
+- [init<S>(S.ParseInput, strategy: S) throws](./init%28_,strategy%29.md)
   Creates a person name components object from a given string by applying the provided parsing strategy.
-- [var parseStrategy: PersonNameComponents.ParseStrategy](personnamecomponents/formatstyle/parsestrategy.md)
+- [var parseStrategy: PersonNameComponents.ParseStrategy](./formatstyle/parsestrategy.md)
   The strategy used to parse a string into person name components.
 ### Modifying a Format Style
-- [var style: PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.property.md)
+- [var style: PersonNameComponents.FormatStyle.Style](./formatstyle/style-swift.property.md)
   Specifies the style of the formatted result.
-- [PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.enum.md)
+- [PersonNameComponents.FormatStyle.Style](./formatstyle/style-swift.enum.md)
   The type that represents the style of the formatted result.
-- [var locale: Locale](personnamecomponents/formatstyle/locale.md)
+- [var locale: Locale](./formatstyle/locale.md)
   The locale to use when formatting the person name components.
-- [var attributed: PersonNameComponents.AttributedStyle](personnamecomponents/formatstyle/attributed.md)
+- [var attributed: PersonNameComponents.AttributedStyle](./formatstyle/attributed.md)
   The style used to create a locale-aware attributed string representation of an instance of person name components.
-- [func locale(Locale) -> PersonNameComponents.FormatStyle](personnamecomponents/formatstyle/locale(_:).md)
+- [func locale(Locale) -> PersonNameComponents.FormatStyle](./formatstyle/locale%28_%29.md)
   Modifies the person name components format style to use the specified locale.
 ### Applying a Format Style
-- [func format(PersonNameComponents) -> String](personnamecomponents/formatstyle/format(_:).md)
+- [func format(PersonNameComponents) -> String](./formatstyle/format%28_%29.md)
   Creates a string representation from a person name components value.
 ### Default Implementations
-- [ParseableFormatStyle Implementations](personnamecomponents/formatstyle/parseableformatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](./formatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [ParseableFormatStyle](../parseableformatstyle.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func formatted() -> String](personnamecomponents/formatted.md)
+### Formatting Person Name Components
+- [func formatted() -> String](./formatted%28%29.md)
   Generates a locale-aware string representation of an instance of person name components using the default format style.
-- [func formatted<S>(S) -> S.FormatOutput](personnamecomponents/formatted(_:).md)
+- [func formatted<S>(S) -> S.FormatOutput](./formatted%28_%29.md)
   Generates a locale-aware string representation of an instance of person name components using the provided format style.
 
 

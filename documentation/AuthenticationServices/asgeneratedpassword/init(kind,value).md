@@ -1,7 +1,8 @@
 # init(kind:value:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.2+
@@ -13,6 +14,10 @@
 
 ```swift
 init(kind: ASGeneratedPassword.Kind, value: String)
+```
+
+```objc
+- (instancetype) initWithKind:(ASGeneratedPasswordKind) kind value:(NSString *) value;
 ```
 
 

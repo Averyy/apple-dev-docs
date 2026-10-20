@@ -1,7 +1,8 @@
 # connectionID
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory’s unique ID for connecting to the iOS-based device.
 
@@ -19,6 +20,10 @@ The accessory’s unique ID for connecting to the iOS-based device.
 var connectionID: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger connectionID;
+```
+
 #### Discussion
 
 The connection ID uniquely identifies this accessory to the device. If multiple accessories of the same type are connected to the device, you can use this information to distinguish between them.
@@ -27,9 +32,10 @@ The connection ID for an accessory persists only for the duration of the current
 
 ## See Also
 
-- [var isConnected: Bool](eaaccessory/isconnected.md)
+### Getting Connection Information
+- [var isConnected: Bool](./isconnected.md)
   A Boolean value indicating whether the accessory is currently connected to the iOS-based device.
-- [Null Connection ID](null-connection-id.md)
+- [Null Connection ID](../null-connection-id.md)
   The ID for an unconnected accessory.
 
 

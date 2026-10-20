@@ -1,7 +1,8 @@
 # reach(to:rootNode:velocity:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that performs an inverse kinematic reach.
 
@@ -20,13 +21,17 @@ Creates an action that performs an inverse kinematic reach.
 class func reach(to position: CGPoint, rootNode root: SKNode, velocity: CGFloat) -> SKAction
 ```
 
+```objc
++ (SKAction *) reachTo:(CGPoint) position rootNode:(SKNode *) root velocity:(CGFloat) velocity;
+```
+
 #### Return Value
 
 A new action object.
 
 #### Discussion
 
-This action is typically used to implement character animation across a series of moving parts. When the action executes, it performs an inverse kinematic calculation to determine new rotation values for the target node and any of its ancestors up to and including the root node. Each node is rotated around its anchor point in an attempt to get the targeted node’s position closer to the intended destination. Each node’s rotation value is constrained by that node’s [`reachConstraints`](sknode/reachconstraints.md) property. If the action cannot successfully reach the target position, it gets the node as close as it can to the target position.
+This action is typically used to implement character animation across a series of moving parts. When the action executes, it performs an inverse kinematic calculation to determine new rotation values for the target node and any of its ancestors up to and including the root node. Each node is rotated around its anchor point in an attempt to get the targeted node’s position closer to the intended destination. Each node’s rotation value is constrained by that node’s [`reachConstraints`](../sknode/reachconstraints.md) property. If the action cannot successfully reach the target position, it gets the node as close as it can to the target position.
 
 The duration of the action is calculated implicitly based on the speed of movement and the distance that the node needs to travel.
 
@@ -40,13 +45,14 @@ This action is not reversible; the reverse of this action is the same action.
 
 ## See Also
 
-- [Working with Inverse Kinematics](working-with-inverse-kinematics.md)
+### Performing Inverse Kinematics
+- [Working with Inverse Kinematics](../working-with-inverse-kinematics.md)
   Gain fine-tuned control of objects that are connected by joints.
-- [class func reach(to: CGPoint, rootNode: SKNode, duration: TimeInterval) -> SKAction](skaction/reach(to:rootnode:duration:)-9gdvl.md)
+- [class func reach(to: CGPoint, rootNode: SKNode, duration: TimeInterval) -> SKAction](./reach%28to,rootnode,duration%29-9gdvl.md)
   Creates an action that performs an inverse kinematic reach.
-- [class func reach(to: SKNode, rootNode: SKNode, duration: TimeInterval) -> SKAction](skaction/reach(to:rootnode:duration:)-1db76.md)
+- [class func reach(to: SKNode, rootNode: SKNode, duration: TimeInterval) -> SKAction](./reach%28to,rootnode,duration%29-1db76.md)
   Creates an action that performs an inverse kinematic reach.
-- [class func reach(to: SKNode, rootNode: SKNode, velocity: CGFloat) -> SKAction](skaction/reach(to:rootnode:velocity:)-7gbvx.md)
+- [class func reach(to: SKNode, rootNode: SKNode, velocity: CGFloat) -> SKAction](./reach%28to,rootnode,velocity%29-7gbvx.md)
   Creates an action that performs an inverse kinematic reach.
 
 

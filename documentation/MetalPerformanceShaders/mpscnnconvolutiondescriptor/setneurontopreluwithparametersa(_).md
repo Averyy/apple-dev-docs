@@ -1,15 +1,16 @@
 # setNeuronToPReLUWithParametersA(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 11.3
+- iPadOS 11.0+ - Deprecated in 11.3
+- Mac Catalyst 11.0+ - Deprecated in 11.3
+- macOS 10.13+ - Deprecated in 10.13.4
+- tvOS 11.0+ - Deprecated in 11.3
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 func setNeuronToPReLUWithParametersA(_ A: Data)
 ```
 
+```objc
+- (void) setNeuronToPReLUWithParametersA:(NSData *) A;
+```
+
 ## See Also
 
-- [func encode(with: NSCoder)](mpscnnconvolutiondescriptor/encode(with:).md)
-- [func setBatchNormalizationParametersForInferenceWithMean(UnsafePointer<Float>?, variance: UnsafePointer<Float>?, gamma: UnsafePointer<Float>?, beta: UnsafePointer<Float>?, epsilon: Float)](mpscnnconvolutiondescriptor/setbatchnormalizationparametersforinferencewithmean(_:variance:gamma:beta:epsilon:).md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float)](mpscnnconvolutiondescriptor/setneurontype(_:parametera:parameterb:).md)
+### Instance Methods
+- [func encode(with: NSCoder)](./encode%28with%29.md)
+- [func setBatchNormalizationParametersForInferenceWithMean(UnsafePointer<Float>?, variance: UnsafePointer<Float>?, gamma: UnsafePointer<Float>?, beta: UnsafePointer<Float>?, epsilon: Float)](./setbatchnormalizationparametersforinferencewithmean%28_,variance,gamma,beta,epsilon%29.md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float)](./setneurontype%28_,parametera,parameterb%29.md)
 
 
 ---

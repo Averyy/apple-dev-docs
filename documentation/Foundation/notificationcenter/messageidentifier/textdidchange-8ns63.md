@@ -1,7 +1,8 @@
 # textDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,10 +17,13 @@
 static var textDidChange: NotificationCenter.BaseMessageIdentifier<UITextView.TextDidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UITextView.TextDidChangeMessage>`.
+
 ## See Also
 
-- [static var textDidBeginEditing: NotificationCenter.BaseMessageIdentifier<UITextView.TextDidBeginEditingMessage>](notificationcenter/messageidentifier/textdidbeginediting-9y8tn.md)
-- [static var textDidEndEditing: NotificationCenter.BaseMessageIdentifier<UITextView.TextDidEndEditingMessage>](notificationcenter/messageidentifier/textdidendediting-6cmke.md)
+### Identifying UIKit text view messages
+- [static var textDidBeginEditing: NotificationCenter.BaseMessageIdentifier<UITextView.TextDidBeginEditingMessage>](./textdidbeginediting-9y8tn.md)
+- [static var textDidEndEditing: NotificationCenter.BaseMessageIdentifier<UITextView.TextDidEndEditingMessage>](./textdidendediting-6cmke.md)
 
 
 ---

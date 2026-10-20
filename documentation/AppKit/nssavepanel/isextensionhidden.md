@@ -1,12 +1,13 @@
 # isExtensionHidden
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to display filename extensions.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether to display filename extensions.
 var isExtensionHidden: Bool { get set }
 ```
 
+```objc
+@property (getter=isExtensionHidden) BOOL extensionHidden;
+```
+
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), [`NSSavePanel`](nssavepanel.md) shows the filename extension in places where you refer to the file by name. The user can override this value by checking the hide extension menu item, which reflects this value. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`false`](../../Swift/false.md), [`NSSavePanel`](../nssavepanel.md) shows the filename extension in places where you refer to the file by name. The user can override this value by checking the hide extension menu item, which reflects this value. The default value is [`true`](../../Swift/true.md).
 
 If a user adds or removes a filename extension in the panel’s name field, the panel updates this property to reflect that choice.
 
@@ -24,15 +29,16 @@ If a user adds or removes a filename extension in the panel’s name field, the 
 
 ## See Also
 
-- [var canCreateDirectories: Bool](nssavepanel/cancreatedirectories.md)
+### Configuring the Panel’s Behavior
+- [var canCreateDirectories: Bool](./cancreatedirectories.md)
   A Boolean value that indicates whether the panel displays UI for creating directories.
-- [var canSelectHiddenExtension: Bool](nssavepanel/canselecthiddenextension.md)
+- [var canSelectHiddenExtension: Bool](./canselecthiddenextension.md)
   A Boolean value that indicates whether the panel displays UI for hiding or showing filename extensions.
-- [var showsHiddenFiles: Bool](nssavepanel/showshiddenfiles.md)
+- [var showsHiddenFiles: Bool](./showshiddenfiles.md)
   A Boolean value that indicates whether the panel displays files that are normally hidden from the user.
-- [var isExpanded: Bool](nssavepanel/isexpanded.md)
+- [var isExpanded: Bool](./isexpanded.md)
   A Boolean value that indicates whether whether the panel is expanded.
-- [Button tags](button-tags.md)
+- [Button tags](../button-tags.md)
   Button tags that refer to items on the panel.
 
 

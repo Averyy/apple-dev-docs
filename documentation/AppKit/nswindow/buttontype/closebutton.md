@@ -1,12 +1,13 @@
 # NSWindow.ButtonType.closeButton
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The close button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The close button.
 case closeButton
 ```
 
+```c
+NSWindowCloseButton
+```
+
 ## See Also
 
-- [NSWindow.ButtonType.miniaturizeButton](nswindow/buttontype/miniaturizebutton.md)
+### Constants
+- [NSWindow.ButtonType.miniaturizeButton](./miniaturizebutton.md)
   The minimize button.
-- [NSWindow.ButtonType.zoomButton](nswindow/buttontype/zoombutton.md)
+- [NSWindow.ButtonType.zoomButton](./zoombutton.md)
   The zoom button.
-- [NSWindow.ButtonType.toolbarButton](nswindow/buttontype/toolbarbutton.md)
+- [NSWindow.ButtonType.toolbarButton](./toolbarbutton.md)
   The toolbar button.
-- [NSWindow.ButtonType.documentIconButton](nswindow/buttontype/documenticonbutton.md)
+- [NSWindow.ButtonType.documentIconButton](./documenticonbutton.md)
   The document icon button.
-- [NSWindow.ButtonType.documentVersionsButton](nswindow/buttontype/documentversionsbutton.md)
+- [NSWindow.ButtonType.documentVersionsButton](./documentversionsbutton.md)
   The document versions button.
-- [static var fullScreenButton: NSWindow.ButtonType](nswindow/buttontype/fullscreenbutton.md)
+- [static var fullScreenButton: NSWindow.ButtonType](./fullscreenbutton.md)
   The fullscreen icon button.
 
 

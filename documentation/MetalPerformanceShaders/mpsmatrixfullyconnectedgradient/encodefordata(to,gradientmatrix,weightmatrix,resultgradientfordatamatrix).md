@@ -1,7 +1,8 @@
 # encodeForData(to:gradientMatrix:weightMatrix:resultGradientForDataMatrix:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeForData(to commandBuffer: any MTLCommandBuffer, gradientMatrix: MPSMatrix, weightMatrix: MPSMatrix, resultGradientForDataMatrix: MPSMatrix)
+```
+
+```objc
+- (void) encodeGradientForDataToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer gradientMatrix:(const MPSMatrix *) gradientMatrix weightMatrix:(const MPSMatrix *) weightMatrix resultGradientForDataMatrix:(MPSMatrix *) resultGradientForDataMatrix;
 ```
 
 

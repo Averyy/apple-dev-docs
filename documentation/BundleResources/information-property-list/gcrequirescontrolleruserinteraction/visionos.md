@@ -1,7 +1,8 @@
 # visionOS
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value you use to indicate that a game controller is required on visionOS.
 
@@ -10,13 +11,15 @@ A Boolean value you use to indicate that a game controller is required on v
 - iPadOS 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `visionOS`
+- **Type**: boolean
 
 ## See Also
 
-- [iOS](information-property-list/gcrequirescontrolleruserinteraction/ios.md)
+### Platforms
+- [iOS](./ios.md)
   A Boolean value you use to indicate that a game controller is recommended on iOS.
 
 

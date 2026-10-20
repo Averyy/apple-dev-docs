@@ -1,7 +1,8 @@
 # customLayer
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code for problems related to custom layers.
 
@@ -26,27 +27,28 @@ Core ML typically throws this error when the custom layer has a programming mist
 
 ## See Also
 
-- [static var featureType: MLModelError.Code](mlmodelerror-swift.struct/featuretype.md)
+### Error Codes
+- [static var featureType: MLModelError.Code](./featuretype.md)
   An error code for problems related to model features.
-- [static var parameters: MLModelError.Code](mlmodelerror-swift.struct/parameters.md)
+- [static var parameters: MLModelError.Code](./parameters.md)
   An error code for problems related to model parameters.
-- [static var modelCollection: MLModelError.Code](mlmodelerror-swift.struct/modelcollection.md)
+- [static var modelCollection: MLModelError.Code](./modelcollection.md)
   An error code for problems related to retrieving a model collection from the deployment system.
-- [static var modelDecryptionKeyFetch: MLModelError.Code](mlmodelerror-swift.struct/modeldecryptionkeyfetch.md)
+- [static var modelDecryptionKeyFetch: MLModelError.Code](./modeldecryptionkeyfetch.md)
   An error code for problems related to retrieving a model’s decryption key.
-- [static var modelDecryption: MLModelError.Code](mlmodelerror-swift.struct/modeldecryption.md)
+- [static var modelDecryption: MLModelError.Code](./modeldecryption.md)
   An error code for problems related to decrypting models.
-- [static var update: MLModelError.Code](mlmodelerror-swift.struct/update.md)
+- [static var update: MLModelError.Code](./update.md)
   An error code for problems related to on-device model updates.
-- [static var customModel: MLModelError.Code](mlmodelerror-swift.struct/custommodel.md)
+- [static var customModel: MLModelError.Code](./custommodel.md)
   An error code for problems related to custom models.
-- [static var io: MLModelError.Code](mlmodelerror-swift.struct/io.md)
+- [static var io: MLModelError.Code](./io.md)
   An error code for problems related to the system’s input or output.
-- [static var predictionCancelled: MLModelError.Code](mlmodelerror-swift.struct/predictioncancelled.md)
+- [static var predictionCancelled: MLModelError.Code](./predictioncancelled.md)
   An error code for problems related to cancelling the prediction before it completes.
-- [static var generic: MLModelError.Code](mlmodelerror-swift.struct/generic.md)
+- [static var generic: MLModelError.Code](./generic.md)
   An error code for runtime issues that don’t apply to the other error codes.
-- [MLModelError.Code](mlmodelerror-swift.struct/code.md)
+- [MLModelError.Code](./code.md)
   Information about a Core ML model error.
 
 

@@ -1,18 +1,19 @@
 # SparseStatus_t
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the status of a factorization.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,43 +21,48 @@ Constants that describe the status of a factorization.
 struct SparseStatus_t
 ```
 
+```c
+typedef enum { ... } SparseStatus_t;
+```
+
 ## Topics
 
 ### Constants
-- [init(Int32)](sparsestatus_t/init(_:).md)
-- [init(rawValue: Int32)](sparsestatus_t/init(rawvalue:).md)
-- [var rawValue: Int32](sparsestatus_t/rawvalue.md)
-- [var SparseStatusOK: SparseStatus_t](sparsestatusok.md)
+- [init(Int32)](./sparsestatus_t/init%28_%29.md)
+- [init(rawValue: Int32)](./sparsestatus_t/init%28rawvalue%29.md)
+- [var rawValue: Int32](./sparsestatus_t/rawvalue.md)
+- [var SparseStatusOK: SparseStatus_t](./sparsestatusok.md)
   The factorization was successful.
-- [var SparseFactorizationFailed: SparseStatus_t](sparsefactorizationfailed.md)
+- [var SparseFactorizationFailed: SparseStatus_t](./sparsefactorizationfailed.md)
   The factorization failed due to a numerical issue.
-- [var SparseMatrixIsSingular: SparseStatus_t](sparsematrixissingular.md)
+- [var SparseMatrixIsSingular: SparseStatus_t](./sparsematrixissingular.md)
   The factorization aborted because the matrix is singular.
-- [var SparseInternalError: SparseStatus_t](sparseinternalerror.md)
+- [var SparseInternalError: SparseStatus_t](./sparseinternalerror.md)
   The factorization encountered an internal error, such as failing to allocate memory.
-- [var SparseParameterError: SparseStatus_t](sparseparametererror.md)
+- [var SparseParameterError: SparseStatus_t](./sparseparametererror.md)
   An error in a user-supplied parameter.
-- [var SparseStatusReleased: SparseStatus_t](sparsestatusreleased.md)
+- [var SparseStatusReleased: SparseStatus_t](./sparsestatusreleased.md)
   The system freed the factorization object.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var status: SparseStatus_t](sparseopaquesymbolicfactorization/status.md)
+### Instance Properties
+- [var status: SparseStatus_t](./sparseopaquesymbolicfactorization/status.md)
   The status of the factorization.
-- [var type: SparseFactorization_t](sparseopaquesymbolicfactorization/type.md)
+- [var type: SparseFactorization_t](./sparseopaquesymbolicfactorization/type.md)
   The factorization type.
-- [var factorization: UnsafeMutableRawPointer?](sparseopaquesymbolicfactorization/factorization.md)
+- [var factorization: UnsafeMutableRawPointer?](./sparseopaquesymbolicfactorization/factorization.md)
   A pointer to a private internal representation of the symbolic factor.
-- [struct SparseFactorization_t](sparsefactorization_t.md)
+- [struct SparseFactorization_t](./sparsefactorization_t.md)
   Constants that define the factorization type.
 
 

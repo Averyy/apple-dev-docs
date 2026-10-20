@@ -1,7 +1,8 @@
 # init(_:_:_:_:otherwise:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `When` condition comparing an optional union value parameter to a specific case.
 
@@ -19,6 +20,8 @@ Creates a `When` condition comparing an optional union value parameter to a spec
 ```swift
 init<ValueType, Parameter>(_ keyPath: KeyPath<Intent, Parameter>, _ comparisonOperator: EquatableComparisonOperator, _ value: ValueType.ValueType.Cases, @ParameterSummaryBuilder<Intent> _ when: () -> WhenCondition, @ParameterSummaryBuilder<Intent> otherwise: () -> Otherwise) where ValueType : ExpressibleByNilLiteral, ValueType == Parameter.Value, Parameter : AnyIntentValue, ValueType.ValueType : AppUnionValue
 ```
+
+Available when `Intent` conforms to `AppIntent`, `WhenCondition` conforms to `ParameterSummary`, and `Otherwise` conforms to `ParameterSummary`.
 
 ## Parameters
 

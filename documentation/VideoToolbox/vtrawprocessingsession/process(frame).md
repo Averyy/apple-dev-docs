@@ -1,7 +1,8 @@
 # process(frame:)
 
 **Framework**: Video Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes an input pixel buffer.
 

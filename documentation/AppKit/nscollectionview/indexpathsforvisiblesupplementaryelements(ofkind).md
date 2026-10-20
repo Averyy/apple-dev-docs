@@ -1,7 +1,8 @@
 # indexPathsForVisibleSupplementaryElements(ofKind:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index paths of the currently active supplementary views.
 
@@ -14,13 +15,17 @@ Returns the index paths of the currently active supplementary views.
 func indexPathsForVisibleSupplementaryElements(ofKind elementKind: NSCollectionView.SupplementaryElementKind) -> Set<IndexPath>
 ```
 
+```objc
+- (NSSet<NSIndexPath *> *) indexPathsForVisibleSupplementaryElementsOfKind:(NSCollectionViewSupplementaryElementKind) elementKind;
+```
+
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects. The returned array may be empty.
+The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects. The returned array may be empty.
 
 #### Discussion
 
-The index paths returned by this method correspond to supplementary views that are active and currently being managed by the collection view. The set may include index paths for views that are outside of the collection view’s actual visible rectangle. For example, it might contain index paths for views that were recently visible but have since been scrolled out of the visible rectangle. To test whether a view is actually visible, check to see if its frame rectangle intersects the [`visibleRect`](nsview/visiblerect.md) of the collection view.
+The index paths returned by this method correspond to supplementary views that are active and currently being managed by the collection view. The set may include index paths for views that are outside of the collection view’s actual visible rectangle. For example, it might contain index paths for views that were recently visible but have since been scrolled out of the visible rectangle. To test whether a view is actually visible, check to see if its frame rectangle intersects the [`visibleRect`](../nsview/visiblerect.md) of the collection view.
 
 ## Parameters
 
@@ -28,21 +33,22 @@ The index paths returned by this method correspond to supplementary views that a
 
 ## See Also
 
-- [func visibleItems() -> [NSCollectionViewItem]](nscollectionview/visibleitems.md)
+### Locating Items and Views
+- [func visibleItems() -> [NSCollectionViewItem]](./visibleitems%28%29.md)
   Returns an array of the actively managed items in the collection view.
-- [func indexPathsForVisibleItems() -> Set<IndexPath>](nscollectionview/indexpathsforvisibleitems.md)
+- [func indexPathsForVisibleItems() -> Set<IndexPath>](./indexpathsforvisibleitems%28%29.md)
   Returns the index paths of the currently active items.
-- [func visibleSupplementaryViews(ofKind: NSCollectionView.SupplementaryElementKind) -> [any NSView & NSCollectionViewElement]](nscollectionview/visiblesupplementaryviews(ofkind:).md)
+- [func visibleSupplementaryViews(ofKind: NSCollectionView.SupplementaryElementKind) -> [any NSView & NSCollectionViewElement]](./visiblesupplementaryviews%28ofkind%29.md)
   Returns an array of the actively managed supplementary views in the collection view.
-- [func indexPath(for: NSCollectionViewItem) -> IndexPath?](nscollectionview/indexpath(for:).md)
+- [func indexPath(for: NSCollectionViewItem) -> IndexPath?](./indexpath%28for%29.md)
   Returns the index path of the specified item.
-- [func indexPathForItem(at: NSPoint) -> IndexPath?](nscollectionview/indexpathforitem(at:).md)
+- [func indexPathForItem(at: NSPoint) -> IndexPath?](./indexpathforitem%28at%29.md)
   Returns the index path of the item at the specified point.
-- [func item(at: IndexPath) -> NSCollectionViewItem?](nscollectionview/item(at:)-2vx2h.md)
+- [func item(at: IndexPath) -> NSCollectionViewItem?](./item%28at%29-2vx2h.md)
   Returns the item associated with the specified index path.
-- [func supplementaryView(forElementKind: NSCollectionView.SupplementaryElementKind, at: IndexPath) -> (any NSView & NSCollectionViewElement)?](nscollectionview/supplementaryview(forelementkind:at:).md)
+- [func supplementaryView(forElementKind: NSCollectionView.SupplementaryElementKind, at: IndexPath) -> (any NSView & NSCollectionViewElement)?](./supplementaryview%28forelementkind,at%29.md)
   Returns the supplementary view associated with the specified index path.
-- [func scrollToItems(at: Set<IndexPath>, scrollPosition: NSCollectionView.ScrollPosition)](nscollectionview/scrolltoitems(at:scrollposition:).md)
+- [func scrollToItems(at: Set<IndexPath>, scrollPosition: NSCollectionView.ScrollPosition)](./scrolltoitems%28at,scrollposition%29.md)
   Scrolls the collection view contents until the specified items are visible.
 
 

@@ -1,7 +1,8 @@
 # DNSServiceAddRecord(_:_:_:_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a record to a registered service.
 
@@ -20,20 +21,24 @@ Adds a record to a registered service.
 func DNSServiceAddRecord(_ sdRef: DNSServiceRef!, _ RecordRef: UnsafeMutablePointer<DNSRecordRef?>!, _ flags: DNSServiceFlags, _ rrtype: UInt16, _ rdlen: UInt16, _ rdata: UnsafeRawPointer!, _ ttl: UInt32) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceAddRecord(DNSServiceRef sdRef, DNSRecordRef*RecordRef, DNSServiceFlags flags, uint16_t rrtype, uint16_t rdlen, const void *rdata, uint32_t ttl);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the error that occurred (the RecordRef is not initialized).
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the error that occurred (the RecordRef is not initialized).
 
 #### Discussion
 
-The name of the record will be the same as the registered service’s name. The record can later be updated or deregistered by passing the RecordRef initialized by this function to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](dnsserviceupdaterecord(_:_:_:_:_:_:).md) or [`DNSServiceRemoveRecord(_:_:_:)`](dnsserviceremoverecord(_:_:_:).md).
+The name of the record will be the same as the registered service’s name. The record can later be updated or deregistered by passing the RecordRef initialized by this function to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](./dnsserviceupdaterecord%28_,_,_,_,_,_%29.md) or [`DNSServiceRemoveRecord(_:_:_:)`](./dnsserviceremoverecord%28_,_,_%29.md).
 
 Note that the DNSServiceAddRecord/UpdateRecord/RemoveRecord are *NOT* thread-safe with respect to a single DNSServiceRef. If you plan to have multiple threads in your program simultaneously add, update, or remove records from the same DNSServiceRef, then it’s the caller’s responsibility to use a mutext lock or take similar appropriate precautions to serialize those calls.
 
 ## Parameters
 
-- `sdRef`: A DNSServiceRef initialized by [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).md).
-- `RecordRef`: A pointer to an uninitialized DNSRecordRef. Upon succesfull completion of this call, this ref may be passed to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](dnsserviceupdaterecord(_:_:_:_:_:_:).md) or [`DNSServiceRemoveRecord(_:_:_:)`](dnsserviceremoverecord(_:_:_:).md). If the above DNSServiceRef is passed to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md), RecordRef is also invalidated and may not be used further.
+- `sdRef`: A DNSServiceRef initialized by [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](./dnsserviceregister%28_,_,_,_,_,_,_,_,_,_,_,_%29.md).
+- `RecordRef`: A pointer to an uninitialized DNSRecordRef. Upon succesfull completion of this call, this ref may be passed to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](./dnsserviceupdaterecord%28_,_,_,_,_,_%29.md) or [`DNSServiceRemoveRecord(_:_:_:)`](./dnsserviceremoverecord%28_,_,_%29.md). If the above DNSServiceRef is passed to [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md), RecordRef is also invalidated and may not be used further.
 - `flags`: Currently ignored, reserved for future use.
 - `rrtype`: The type of the record (e.g. kDNSServiceType_TXT, kDNSServiceType_SRV, and so on).
 - `rdlen`: The length, in bytes, of the rdata.
@@ -42,11 +47,12 @@ Note that the DNSServiceAddRecord/UpdateRecord/RemoveRecord are *NOT* thread-saf
 
 ## See Also
 
-- [func DNSServiceRegister(UnsafeMutablePointer<DNSServiceRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UInt16, UInt16, UnsafeRawPointer!, DNSServiceRegisterReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+### Service Registration
+- [func DNSServiceRegister(UnsafeMutablePointer<DNSServiceRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UnsafePointer<CChar>!, UInt16, UInt16, UnsafeRawPointer!, DNSServiceRegisterReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](./dnsserviceregister%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Registers a service.
-- [func DNSServiceRemoveRecord(DNSServiceRef!, DNSRecordRef!, DNSServiceFlags) -> DNSServiceErrorType](dnsserviceremoverecord(_:_:_:).md)
-  Removes a record previously added to a service record set via [`DNSServiceAddRecord(_:_:_:_:_:_:_:)`](dnsserviceaddrecord(_:_:_:_:_:_:_:).md), or deregister an record registered individually via [`DNSServiceRegisterRecord(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregisterrecord(_:_:_:_:_:_:_:_:_:_:_:_:).md).
-- [func DNSServiceUpdateRecord(DNSServiceRef!, DNSRecordRef!, DNSServiceFlags, UInt16, UnsafeRawPointer!, UInt32) -> DNSServiceErrorType](dnsserviceupdaterecord(_:_:_:_:_:_:).md)
+- [func DNSServiceRemoveRecord(DNSServiceRef!, DNSRecordRef!, DNSServiceFlags) -> DNSServiceErrorType](./dnsserviceremoverecord%28_,_,_%29.md)
+  Removes a record previously added to a service record set via [`DNSServiceAddRecord(_:_:_:_:_:_:_:)`](./dnsserviceaddrecord%28_,_,_,_,_,_,_%29.md), or deregister an record registered individually via [`DNSServiceRegisterRecord(_:_:_:_:_:_:_:_:_:_:_:_:)`](./dnsserviceregisterrecord%28_,_,_,_,_,_,_,_,_,_,_,_%29.md).
+- [func DNSServiceUpdateRecord(DNSServiceRef!, DNSRecordRef!, DNSServiceFlags, UInt16, UnsafeRawPointer!, UInt32) -> DNSServiceErrorType](./dnsserviceupdaterecord%28_,_,_,_,_,_%29.md)
   Updates a registered resource record.
 
 

@@ -1,7 +1,8 @@
 # MTRApplicationLauncherStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 enum MTRApplicationLauncherStatus
 ```
 
+```c
+enum MTRApplicationLauncherStatus : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRApplicationLauncherStatus.appNotAvailable](mtrapplicationlauncherstatus/appnotavailable.md)
-- [MTRApplicationLauncherStatus.success](mtrapplicationlauncherstatus/success.md)
-- [MTRApplicationLauncherStatus.systemBusy](mtrapplicationlauncherstatus/systembusy.md)
-- [MTRApplicationLauncherStatus.downloading](mtrapplicationlauncherstatus/downloading.md)
-- [MTRApplicationLauncherStatus.installing](mtrapplicationlauncherstatus/installing.md)
-- [MTRApplicationLauncherStatus.pendingUserApproval](mtrapplicationlauncherstatus/pendinguserapproval.md)
+- [MTRApplicationLauncherStatus.appNotAvailable](./mtrapplicationlauncherstatus/appnotavailable.md)
+- [MTRApplicationLauncherStatus.success](./mtrapplicationlauncherstatus/success.md)
+- [MTRApplicationLauncherStatus.systemBusy](./mtrapplicationlauncherstatus/systembusy.md)
+- [MTRApplicationLauncherStatus.downloading](./mtrapplicationlauncherstatus/downloading.md)
+- [MTRApplicationLauncherStatus.installing](./mtrapplicationlauncherstatus/installing.md)
+- [MTRApplicationLauncherStatus.pendingUserApproval](./mtrapplicationlauncherstatus/pendinguserapproval.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrapplicationlauncherstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrapplicationlauncherstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

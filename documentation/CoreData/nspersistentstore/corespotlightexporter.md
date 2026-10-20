@@ -1,7 +1,8 @@
 # coreSpotlightExporter
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spotlight exporter associated with this persistent store.
 
@@ -16,6 +17,10 @@ The spotlight exporter associated with this persistent store.
 
 ```swift
 var coreSpotlightExporter: NSCoreDataCoreSpotlightDelegate { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSCoreDataCoreSpotlightDelegate * coreSpotlightExporter;
 ```
 
 #### Discussion

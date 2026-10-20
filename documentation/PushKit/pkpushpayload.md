@@ -1,7 +1,8 @@
 # PKPushPayload
 
 **Framework**: PushKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information about a received PushKit notification.
 
@@ -19,25 +20,29 @@ An object that contains information about a received PushKit notification.
 class PKPushPayload
 ```
 
+```objc
+@interface PKPushPayload : NSObject
+```
+
 ## Topics
 
 ### Payload Data
-- [var dictionaryPayload: [AnyHashable : Any]](pkpushpayload/dictionarypayload.md)
+- [var dictionaryPayload: [AnyHashable : Any]](./pkpushpayload/dictionarypayload.md)
   The contents of the received payload.
-- [var type: PKPushType](pkpushpayload/type.md)
+- [var type: PKPushType](./pkpushpayload/type.md)
   The type value indicating how to interpret the payload.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

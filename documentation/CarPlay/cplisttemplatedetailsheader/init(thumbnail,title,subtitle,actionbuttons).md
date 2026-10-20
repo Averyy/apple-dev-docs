@@ -1,7 +1,8 @@
 # init(thumbnail:title:subtitle:actionButtons:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new details header with the specified content and action buttons.
 
@@ -14,6 +15,10 @@ Creates a new details header with the specified content and action buttons.
 
 ```swift
 init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, actionButtons actionButton: [CPButton])
+```
+
+```objc
+- (instancetype) initWithThumbnail:(CPThumbnailImage *) thumbnail title:(NSString *) title subtitle:(NSString *) subtitle actionButtons:(NSArray<CPButton *> *) actionButton;
 ```
 
 #### Return Value

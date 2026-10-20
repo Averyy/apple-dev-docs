@@ -1,7 +1,8 @@
 # httpBody
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP response body.
 
@@ -18,11 +19,16 @@ The HTTP response body.
 var httpBody: Data? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) NSData * httpBody;
+```
+
 ## See Also
 
-- [var httpAuthorizationHeaders: [String : String]?](asauthorizationproviderextensionauthorizationresult/httpauthorizationheaders.md)
+### Instance Properties
+- [var httpAuthorizationHeaders: [String : String]?](./httpauthorizationheaders.md)
   A dictionary of authorization HTTP headers.
-- [var httpResponse: HTTPURLResponse?](asauthorizationproviderextensionauthorizationresult/httpresponse.md)
+- [var httpResponse: HTTPURLResponse?](./httpresponse.md)
   The HTTP response for authentications.
 
 

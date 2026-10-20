@@ -1,7 +1,8 @@
 # didDeselectTabs(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when tabs are deselected to fire appropriate events with all loaded web extensions.
 
@@ -16,6 +17,10 @@ Should be called by the app when tabs are deselected to fire appropriate events 
 
 ```swift
 func didDeselectTabs(_ deselectedTabs: [any WKWebExtensionTab])
+```
+
+```objc
+- (void) didDeselectTabs:(NSArray<id<WKWebExtensionTab>> *) deselectedTabs;
 ```
 
 #### Discussion

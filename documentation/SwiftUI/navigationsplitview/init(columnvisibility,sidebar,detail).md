@@ -1,7 +1,8 @@
 # init(columnVisibility:sidebar:detail:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a two-column navigation split view that enables programmatic control of the sidebar’s visibility.
 
@@ -23,13 +24,14 @@ init(columnVisibility: Binding<NavigationSplitViewVisibility>, @ContentBuilder s
 
 ## Parameters
 
-- `columnVisibility`: A [`Binding`](binding.md) to state that controls the visibility of the leading column.
+- `columnVisibility`: A [`Binding`](../binding.md) to state that controls the visibility of the leading column.
 - `sidebar`: The view to show in the leading column.
 - `detail`: The view to show in the detail area.
 
 ## See Also
 
-- [init(columnVisibility: Binding<NavigationSplitViewVisibility>, sidebar: () -> Sidebar, content: () -> Content, detail: () -> Detail)](navigationsplitview/init(columnvisibility:sidebar:content:detail:).md)
+### Hiding columns in a navigation split view
+- [init(columnVisibility: Binding<NavigationSplitViewVisibility>, sidebar: () -> Sidebar, content: () -> Content, detail: () -> Detail)](./init%28columnvisibility,sidebar,content,detail%29.md)
   Creates a three-column navigation split view that enables programmatic control of leading columns’ visibility.
 
 

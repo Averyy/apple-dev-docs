@@ -1,14 +1,15 @@
 # GREATER_THAN_OR_EQUALS
 
 **Framework**: CKTool JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - CKTool JS 1.2.15+
 
 ## Declaration
 
-```swift
+```
 const string GREATER_THAN_OR_EQUALS;
 ```
 

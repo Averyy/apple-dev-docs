@@ -1,7 +1,8 @@
 # BrandsReportingCampaign.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable serving status of the campaign at report time.
 
@@ -10,13 +11,18 @@ Advertiser-configurable serving status of the campaign at report time.
 
 ## Declaration
 
-```swift
+```
 string BrandsReportingCampaign.Status
 ```
 
+## Possible Values
+
+- `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
+- `PAUSED`: The campaign is paused by the advertiser. No ads will serve until the status is changed to `ENABLED`.
+
 #### Discussion
 
-This captures the advertiser-set status as of the report’s generation, separate from the system-evaluated [`BrandsReportingCampaign.SystemStatus`](brandsreportingcampaign/systemstatus-data.typealias.md) alongside it.
+This captures the advertiser-set status as of the report’s generation, separate from the system-evaluated [`BrandsReportingCampaign.SystemStatus`](./systemstatus-data.typealias.md) alongside it.
 
 ##### Example
 
@@ -26,7 +32,7 @@ This captures the advertiser-set status as of the report’s generation, separat
 }
 ```
 
-See [`CampaignStatus`](campaignstatus.md) for additional context.
+See [`CampaignStatus`](../campaignstatus.md) for additional context.
 
 
 ---

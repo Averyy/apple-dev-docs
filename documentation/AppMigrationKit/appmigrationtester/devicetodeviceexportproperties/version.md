@@ -1,7 +1,8 @@
 # version
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data version provided by the app extension.
 

@@ -1,7 +1,8 @@
 # contactViewController(_:didCompleteWith:)
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the view has been presented.
 
@@ -17,6 +18,10 @@ Called when the view has been presented.
 optional func contactViewController(_ viewController: CNContactViewController, didCompleteWith contact: CNContact?)
 ```
 
+```objc
+- (void) contactViewController:(CNContactViewController *) viewController didCompleteWithContact:(CNContact *) contact;
+```
+
 #### Discussion
 
 If creating a new contact, the new contact added to the contacts list is passed in `contact`. If adding to an existing contact, the existing contact is passed in `contact`. It is up to the delegate to dismiss the view controller.
@@ -28,7 +33,8 @@ If creating a new contact, the new contact added to the contacts list is passed 
 
 ## See Also
 
-- [func contactViewController(CNContactViewController, shouldPerformDefaultActionFor: CNContactProperty) -> Bool](cncontactviewcontrollerdelegate/contactviewcontroller(_:shouldperformdefaultactionfor:).md)
+### Responding to User Events
+- [func contactViewController(CNContactViewController, shouldPerformDefaultActionFor: CNContactProperty) -> Bool](./contactviewcontroller%28_,shouldperformdefaultactionfor%29.md)
   Called when the user selects a property.
 
 

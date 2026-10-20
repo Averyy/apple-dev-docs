@@ -1,7 +1,8 @@
 # randomTensor(withShapeTensor:descriptor:stateTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Random op of type matching distribution in descriptor, and returns random values and updated state.
 
@@ -17,6 +18,10 @@ Creates a Random op of type matching distribution in descriptor, and returns ran
 
 ```swift
 func randomTensor(withShapeTensor shapeTensor: MPSGraphTensor, descriptor: MPSGraphRandomOpDescriptor, stateTensor state: MPSGraphTensor, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) randomTensorWithShapeTensor:(MPSGraphTensor *) shapeTensor descriptor:(MPSGraphRandomOpDescriptor *) descriptor stateTensor:(MPSGraphTensor *) state name:(NSString *) name;
 ```
 
 #### Return Value

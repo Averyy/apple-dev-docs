@@ -1,7 +1,8 @@
 # XPathNSResolver
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface XPathNSResolver
 ```
 
 ## Topics
 
 ### Instance Methods
-- [lookupNamespaceURI](xpathnsresolver/1629972-lookupnamespaceuri.md)
+- [lookupNamespaceURI](./xpathnsresolver/api-1629972-lookupnamespaceuri.md)
 
 
 ---

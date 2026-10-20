@@ -1,7 +1,8 @@
 # MPSGraphExecutionStage
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Execution events that can be used with shared events.
 
@@ -19,23 +20,27 @@ Execution events that can be used with shared events.
 enum MPSGraphExecutionStage
 ```
 
+```c
+enum MPSGraphExecutionStage : uint64_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphExecutionStage.completed](mpsgraphexecutionstage/completed.md)
+- [MPSGraphExecutionStage.completed](./mpsgraphexecutionstage/completed.md)
   stage when execution of the graph completes.
 ### Initializers
-- [init?(rawValue: UInt64)](mpsgraphexecutionstage/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./mpsgraphexecutionstage/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

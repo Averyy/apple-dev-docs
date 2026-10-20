@@ -1,7 +1,8 @@
 # request()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the capability to be granted to the current process.
 

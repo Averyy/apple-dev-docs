@@ -1,7 +1,8 @@
 # MTR_ENABLE_PROVISIONAL
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var MTR_ENABLE_PROVISIONAL: Int32 { get }
+```
+
+```c
+#define MTR_ENABLE_PROVISIONAL
 ```
 
 

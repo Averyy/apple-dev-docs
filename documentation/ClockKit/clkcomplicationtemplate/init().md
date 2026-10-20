@@ -1,17 +1,24 @@
 # init()
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new complication.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 7.0
+
+> **Deprecated**: Initializing a template without parameters is deprecated in watchOS 7.0. Use an init with parameters instead.
 
 ## Declaration
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ You shouldn’t create instances of this class directly. Instead, you create ins
 
 ## See Also
 
-- [class func new() -> Self](clkcomplicationtemplate/new.md)
+### Creating Empty Templates
+- [class func new() -> Self](./new%28%29.md)
   Returns a new complication.
 
 

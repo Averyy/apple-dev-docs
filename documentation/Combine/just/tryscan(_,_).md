@@ -1,7 +1,8 @@
 # tryScan(_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,11 +21,12 @@ func tryScan<T>(_ initialResult: T, _ nextPartialResult: (T, Output) throws -> T
 
 ## See Also
 
-- [func map<T>((Output) -> T) -> Just<T>](just/map(_:).md)
-- [func tryMap<T>((Output) throws -> T) -> Result<T, any Error>.Publisher](just/trymap(_:).md)
-- [func mapError<E>((Just<Output>.Failure) -> E) -> Result<Output, E>.Publisher](just/maperror(_:).md)
-- [func scan<T>(T, (T, Output) -> T) -> Result<T, Just<Output>.Failure>.Publisher](just/scan(_:_:).md)
-- [func setFailureType<E>(to: E.Type) -> Result<Output, E>.Publisher](just/setfailuretype(to:).md)
+### Mapping elements
+- [func map<T>((Output) -> T) -> Just<T>](./map%28_%29.md)
+- [func tryMap<T>((Output) throws -> T) -> Result<T, any Error>.Publisher](./trymap%28_%29.md)
+- [func mapError<E>((Just<Output>.Failure) -> E) -> Result<Output, E>.Publisher](./maperror%28_%29.md)
+- [func scan<T>(T, (T, Output) -> T) -> Result<T, Just<Output>.Failure>.Publisher](./scan%28_,_%29.md)
+- [func setFailureType<E>(to: E.Type) -> Result<Output, E>.Publisher](./setfailuretype%28to%29.md)
 
 
 ---

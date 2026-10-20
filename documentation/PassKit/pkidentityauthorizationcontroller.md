@@ -1,7 +1,8 @@
 # PKIdentityAuthorizationController
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that presents a sheet that prompts the user to allow a request for identity information.
 
@@ -17,13 +18,17 @@ An object that presents a sheet that prompts the user to allow a request for ide
 class PKIdentityAuthorizationController
 ```
 
+```objc
+@interface PKIdentityAuthorizationController : NSObject
+```
+
 ## Mentions
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+- [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
 
 #### Overview
 
-Use this class to request [`PKIdentityElement`](pkidentityelement.md) objects from a mobile driver’s license or state identification card. When you request identity information, the system prompts the user for approval.
+Use this class to request [`PKIdentityElement`](./pkidentityelement.md) objects from a mobile driver’s license or state identification card. When you request identity information, the system prompts the user for approval.
 
 ```swift
 // Create an authorization controller.
@@ -50,55 +55,56 @@ controller.requestDocument(request) { document, error in
 
 The system returns response data as an encoded concise binary object representation (CBOR) blob; CBOR is a binary format similar to JSON. You must decrypt the response on your server.
 
-For design guidance, see [`Human Interface Guidelines > Technologies > Wallet`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/wallet/introduction).
+For design guidance, see [Human Interface Guidelines > Technologies > Wallet](https://developer.apple.com/design/human-interface-guidelines/technologies/wallet/introduction).
 
 > ❗ **Important**:  This API only works on iPhone and returns an error if you access it on iPad. This framework requires a special entitlement from Apple. This entitlement is not yet available.
 
 ## Topics
 
 ### Describing a document
-- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+- [class PKIdentityDriversLicenseDescriptor](./pkidentitydriverslicensedescriptor.md)
   An object for requesting information from a user’s driver’s license or equivalent document.
-- [class PKIdentityIntentToStore](pkidentityintenttostore.md)
+- [class PKIdentityIntentToStore](./pkidentityintenttostore.md)
   An object that represents your intention to store an identity element or values derived from an identity element.
-- [protocol PKIdentityDocumentDescriptor](pkidentitydocumentdescriptor.md)
+- [protocol PKIdentityDocumentDescriptor](./pkidentitydocumentdescriptor.md)
   A type that describes the structure and behavior of an identity document.
 ### Requesting a document
-- [func checkCanRequestDocument(any PKIdentityDocumentDescriptor, completion: (Bool) -> Void)](pkidentityauthorizationcontroller/checkcanrequestdocument(_:completion:).md)
+- [func checkCanRequestDocument(any PKIdentityDocumentDescriptor, completion: (Bool) -> Void)](./pkidentityauthorizationcontroller/checkcanrequestdocument%28_,completion%29.md)
   Returns whether an identity document is available to request.
-- [func requestDocument(PKIdentityRequest, completion: (PKIdentityDocument?, (any Error)?) -> Void)](pkidentityauthorizationcontroller/requestdocument(_:completion:).md)
+- [func requestDocument(PKIdentityRequest, completion: (PKIdentityDocument?, (any Error)?) -> Void)](./pkidentityauthorizationcontroller/requestdocument%28_,completion%29.md)
   Prompts the user to approve the request to get the identity information.
 ### Cancelling a request
-- [func cancelRequest()](pkidentityauthorizationcontroller/cancelrequest.md)
+- [func cancelRequest()](./pkidentityauthorizationcontroller/cancelrequest%28%29.md)
   Cancels a request in progress.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKIdentityRequest](pkidentityrequest.md)
+### Identity sheet interactions and authorization
+- [class PKIdentityRequest](./pkidentityrequest.md)
   An object that represents a request for identity information from a Wallet pass.
-- [class PKIdentityDocument](pkidentitydocument.md)
+- [class PKIdentityDocument](./pkidentitydocument.md)
   An object that represents the response to a request.
-- [class PKIdentityElement](pkidentityelement.md)
+- [class PKIdentityElement](./pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
-- [class PKIdentityButton](pkidentitybutton.md)
+- [class PKIdentityButton](./pkidentitybutton.md)
   An object that displays a button to trigger the identity verification flow.
-- [struct VerifyIdentityWithWalletButton](verifyidentitywithwalletbutton.md)
+- [struct VerifyIdentityWithWalletButton](./verifyidentitywithwalletbutton.md)
   A type that displays a button to present the identity verification flow.
-- [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
+- [struct VerifyIdentityWithWalletButtonLabel](./verifyidentitywithwalletbuttonlabel.md)
   A type that represents the label you use with a verify identity button.
-- [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)
+- [struct VerifyIdentityWithWalletButtonStyle](./verifyidentitywithwalletbuttonstyle.md)
   A type that represents the style you use with a verify identity button.
 
 

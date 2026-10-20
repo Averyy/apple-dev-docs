@@ -1,12 +1,13 @@
 # continueTracking(last:current:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether mouse tracking should continue in the receiving cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns a Boolean value that indicates whether mouse tracking should continue in
 func continueTracking(last lastPoint: NSPoint, current currentPoint: NSPoint, in controlView: NSView) -> Bool
 ```
 
+```objc
+- (BOOL) continueTracking:(NSPoint) lastPoint at:(NSPoint) currentPoint inView:(NSView *) controlView;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if mouse tracking should continue, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if mouse tracking should continue, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method is invoked in [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackmouse(with:in:of:untilmouseup:).md). The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true) if the cell is set to continuously send action messages to its target when the mouse button is down or the mouse is being dragged. Subclasses can override this method to provide more sophisticated tracking behavior.
+This method is invoked in [`trackMouse(with:in:of:untilMouseUp:)`](./trackmouse%28with,in,of,untilmouseup%29.md). The default implementation returns [`true`](../../Swift/true.md) if the cell is set to continuously send action messages to its target when the mouse button is down or the mouse is being dragged. Subclasses can override this method to provide more sophisticated tracking behavior.
 
 ## Parameters
 
@@ -30,17 +35,18 @@ This method is invoked in [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackm
 
 ## See Also
 
-- [func trackMouse(with: NSEvent, in: NSRect, of: NSView, untilMouseUp: Bool) -> Bool](nscell/trackmouse(with:in:of:untilmouseup:).md)
+### Tracking the Mouse
+- [func trackMouse(with: NSEvent, in: NSRect, of: NSView, untilMouseUp: Bool) -> Bool](./trackmouse%28with,in,of,untilmouseup%29.md)
   Initiates the mouse tracking behavior in a cell.
-- [func startTracking(at: NSPoint, in: NSView) -> Bool](nscell/starttracking(at:in:).md)
+- [func startTracking(at: NSPoint, in: NSView) -> Bool](./starttracking%28at,in%29.md)
   Begins tracking mouse events within the receiver.
-- [func stopTracking(last: NSPoint, current: NSPoint, in: NSView, mouseIsUp: Bool)](nscell/stoptracking(last:current:in:mouseisup:).md)
+- [func stopTracking(last: NSPoint, current: NSPoint, in: NSView, mouseIsUp: Bool)](./stoptracking%28last,current,in,mouseisup%29.md)
   Stops tracking mouse events within the receiver.
-- [var mouseDownFlags: Int](nscell/mousedownflags.md)
+- [var mouseDownFlags: Int](./mousedownflags.md)
   The modifier flags for the last (left) mouse-down event.
-- [class var prefersTrackingUntilMouseUp: Bool](nscell/preferstrackinguntilmouseup.md)
+- [class var prefersTrackingUntilMouseUp: Bool](./preferstrackinguntilmouseup.md)
   Returns a Boolean value that indicates whether tracking stops when the cursor leaves the cell.
-- [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](nscell/getperiodicdelay(_:interval:).md)
+- [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](./getperiodicdelay%28_,interval%29.md)
   Returns the initial delay and repeat values for continuous sending of action messages to target objects.
 
 

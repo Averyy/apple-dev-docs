@@ -1,7 +1,8 @@
 # reserveCapacity(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reserves enough space in the view’s underlying storage to store the specified number of ASCII characters.
 
@@ -24,7 +25,7 @@ mutating func reserveCapacity(_ n: Int)
 
 Because a Unicode scalar value can require more than a single ASCII character’s worth of storage, additional allocation may be necessary when adding to a Unicode scalar view after a call to `reserveCapacity(_:)`.
 
-> **Note**: O(*n*), where *n* is the capacity being reserved.
+> **Complexity**: O(*n*), where *n* is the capacity being reserved.
 
 ## Parameters
 

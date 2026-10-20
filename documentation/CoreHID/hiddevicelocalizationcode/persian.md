@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.persian
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Persian (Farsi) in the HID specification.
 

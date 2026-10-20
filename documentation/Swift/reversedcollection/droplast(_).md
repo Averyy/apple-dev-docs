@@ -1,7 +1,8 @@
 # dropLast(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence containing all but the specified number of final elements.
 
@@ -36,7 +37,7 @@ print(numbers.dropLast(10))
 // Prints "[]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to drop.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to drop.
 
 ## Parameters
 

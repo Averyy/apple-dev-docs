@@ -1,7 +1,8 @@
 # SCCaptureResolutionType.automatic
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow ScreenCaptureKit to automatically select the quality of content depending on factors such as network connection.
 
@@ -15,11 +16,16 @@ Allow ScreenCaptureKit to automatically select the quality of content depending 
 case automatic
 ```
 
+```c
+SCCaptureResolutionAutomatic
+```
+
 ## See Also
 
-- [SCCaptureResolutionType.best](sccaptureresolutiontype/best.md)
+### Resolutions
+- [SCCaptureResolutionType.best](./best.md)
   Capture streaming content at the best available resolution.
-- [SCCaptureResolutionType.nominal](sccaptureresolutiontype/nominal.md)
+- [SCCaptureResolutionType.nominal](./nominal.md)
   Capture streaming content with a one point to one pixel conversion factor.
 
 

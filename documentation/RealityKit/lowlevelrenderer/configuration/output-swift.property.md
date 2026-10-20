@@ -1,7 +1,8 @@
 # output
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format configuration for this renderer’s output attachments.
 
@@ -19,10 +20,11 @@ var output: LowLevelRenderer.Configuration.Output { get set }
 
 ## See Also
 
-- [LowLevelRenderer.Configuration.Output](lowlevelrenderer/configuration/output-swift.struct.md)
+### Specifying the output
+- [LowLevelRenderer.Configuration.Output](./output-swift.struct.md)
   The pixel format configuration for a renderer’s output attachments.
-- [var renderTargetDescriptor: LowLevelRenderTarget.Descriptor](lowlevelrenderer/configuration/rendertargetdescriptor.md)
-  The render target descriptor derived from this configuration’s [`output`](lowlevelrenderer/configuration/output-swift.property.md).
+- [var renderTargetDescriptor: LowLevelRenderTarget.Descriptor](./rendertargetdescriptor.md)
+  The render target descriptor derived from this configuration’s [`output`](./output-swift.property.md).
 
 
 ---

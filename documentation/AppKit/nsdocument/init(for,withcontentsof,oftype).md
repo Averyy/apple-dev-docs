@@ -1,17 +1,22 @@
 # init(for:withContentsOf:ofType:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a document with the specified contents, and places the resulting document’s file at the designated location.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 convenience init(for urlOrNil: URL?, withContentsOf contentsURL: URL, ofType typeName: String) throws
+```
+
+```objc
+- (instancetype) initForURL:(NSURL *) urlOrNil withContentsOfURL:(NSURL *) contentsURL ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
 #### Return Value
@@ -24,7 +29,7 @@ The system calls this method to open a document that has an associated autosave 
 
 After reading the contents from the specified autosave file, this method updates the document’s change count using the `NSChangeReadOtherContents` change type.
 
-> **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ After reading the contents from the specified autosave file, this method updates
 
 ## See Also
 
-- [init()](nsdocument/init.md)
+### Creating a Document Object
+- [init()](./init%28%29.md)
   Initializes and returns an empty document object.
-- [convenience init(contentsOf: URL, ofType: String) throws](nsdocument/init(contentsof:oftype:).md)
+- [convenience init(contentsOf: URL, ofType: String) throws](./init%28contentsof,oftype%29.md)
   Initializes a document located by a URL of a specified type.
-- [convenience init(type: String) throws](nsdocument/init(type:).md)
+- [convenience init(type: String) throws](./init%28type%29.md)
   Initializes a document of a specified type.
 
 

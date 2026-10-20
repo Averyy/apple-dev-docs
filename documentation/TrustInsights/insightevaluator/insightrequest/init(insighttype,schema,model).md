@@ -1,7 +1,8 @@
 # init(insightType:schema:model:)
 
 **Framework**: Trust Insights  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new insight request with the provided insight type, schema, and model versions.
 

@@ -1,28 +1,30 @@
 # RegistryPropertyGetMod
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 OSStatus RegistryPropertyGetMod(const RegEntryID *entry, const RegPropertyName *name, RegPropertyModifiers *modifiers);
 ```
 
 ## See Also
 
-- [RegistryPropertyCreate](1573027-registrypropertycreate.md)
-- [RegistryPropertyDelete](1573057-registrypropertydelete.md)
-- [RegistryPropertyGet](1573042-registrypropertyget.md)
-- [RegistryPropertyGetSize](1573059-registrypropertygetsize.md)
-- [RegistryPropertyIterate](1573092-registrypropertyiterate.md)
-- [RegistryPropertyIterateCreate](1573069-registrypropertyiteratecreate.md)
-- [RegistryPropertyIterateDispose](1573062-registrypropertyiteratedispose.md)
-- [RegistryPropertySet](1573129-registrypropertyset.md)
-- [RegistryPropertySetMod](1573127-registrypropertysetmod.md)
+### Property Management
+- [RegistryPropertyCreate](./api-1573027-registrypropertycreate.md)
+- [RegistryPropertyDelete](./api-1573057-registrypropertydelete.md)
+- [RegistryPropertyGet](./api-1573042-registrypropertyget.md)
+- [RegistryPropertyGetSize](./api-1573059-registrypropertygetsize.md)
+- [RegistryPropertyIterate](./api-1573092-registrypropertyiterate.md)
+- [RegistryPropertyIterateCreate](./api-1573069-registrypropertyiteratecreate.md)
+- [RegistryPropertyIterateDispose](./api-1573062-registrypropertyiteratedispose.md)
+- [RegistryPropertySet](./api-1573129-registrypropertyset.md)
+- [RegistryPropertySetMod](./api-1573127-registrypropertysetmod.md)
 
 
 ---

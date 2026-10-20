@@ -1,7 +1,8 @@
 # kSecAttrPRFHmacAlgSHA512
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use the SHA512 algorithm.
 
@@ -12,6 +13,10 @@ Use the SHA512 algorithm.
 
 ```swift
 let kSecAttrPRFHmacAlgSHA512: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrPRFHmacAlgSHA512;
 ```
 
 

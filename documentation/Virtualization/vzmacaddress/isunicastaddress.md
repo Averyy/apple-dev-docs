@@ -1,7 +1,8 @@
 # isUnicastAddress
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the address is a unicast address.
 
@@ -14,19 +15,24 @@ A Boolean value that indicates whether the address is a unicast address.
 var isUnicastAddress: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isUnicastAddress) BOOL isUnicastAddress;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the address is a unicast address, or [`false`](https://developer.apple.com/documentation/swift/false) if it isn’t.
+The value of this property is [`true`](../../Swift/true.md) if the address is a unicast address, or [`false`](../../Swift/false.md) if it isn’t.
 
 ## See Also
 
-- [var isBroadcastAddress: Bool](vzmacaddress/isbroadcastaddress.md)
+### Getting address attributes
+- [var isBroadcastAddress: Bool](./isbroadcastaddress.md)
   A Boolean value that indicates whether the address is a broadcast address.
-- [var isMulticastAddress: Bool](vzmacaddress/ismulticastaddress.md)
+- [var isMulticastAddress: Bool](./ismulticastaddress.md)
   A Boolean value that indicates whether the address is a multicast address.
-- [var isLocallyAdministeredAddress: Bool](vzmacaddress/islocallyadministeredaddress.md)
+- [var isLocallyAdministeredAddress: Bool](./islocallyadministeredaddress.md)
   A Boolean value that indicates whether the address is a locally administered address (LAA).
-- [var isUniversallyAdministeredAddress: Bool](vzmacaddress/isuniversallyadministeredaddress.md)
+- [var isUniversallyAdministeredAddress: Bool](./isuniversallyadministeredaddress.md)
   A Boolean value that indicates whether the address is a universally adminstered address (UAA).
 
 

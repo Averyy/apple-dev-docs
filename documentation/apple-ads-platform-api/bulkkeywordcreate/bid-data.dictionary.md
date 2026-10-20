@@ -1,7 +1,8 @@
 # BulkKeywordCreate.Bid
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The keyword-level bid amount for a bulk keyword create item.
 
@@ -10,7 +11,7 @@ The keyword-level bid amount for a bulk keyword create item.
 
 ## Declaration
 
-```swift
+```
 object BulkKeywordCreate.Bid
 ```
 
@@ -18,9 +19,9 @@ object BulkKeywordCreate.Bid
 
 The keyword-level bid amount for a bulk keyword create item, expressed as a `Money` object with `amount` and `currency`. It overrides the ad group’s default bid for this keyword. Omit the field or pass `null` to default to the ad group’s `BidStrategy` bid instead. This bid isn’t used with Maximize Conversions bid strategy campaigns.
 
-See [`BulkKeywordCreate`](bulkkeywordcreate.md) for the full field reference.
+See [`BulkKeywordCreate`](../bulkkeywordcreate.md) for the full field reference.
 
-See also [`Money`](money.md) for the amount and currency structure.
+See also [`Money`](../money.md) for the amount and currency structure.
 
 ## Properties
 

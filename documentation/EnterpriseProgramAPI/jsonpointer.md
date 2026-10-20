@@ -1,19 +1,20 @@
 # JsonPointer
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains the JSON pointer that indicates the location of the error.
 
 ## Declaration
 
-```swift
+```
 object JsonPointer
 ```
 
 #### Discussion
 
-In some cases, the JSON pointer may indicate an element that isn’t in the request entity, but should be. For more information about JSON pointers, see the [`RFC 6901`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6901) proposed standards document.
+In some cases, the JSON pointer may indicate an element that isn’t in the request entity, but should be. For more information about JSON pointers, see the [RFC 6901](https://tools.ietf.org/html/rfc6901) proposed standards document.
 
 ## Properties
 
@@ -21,9 +22,10 @@ In some cases, the JSON pointer may indicate an element that isn’t in the requ
 
 ## See Also
 
-- [object Parameter](parameter.md)
+### Objects
+- [object Parameter](./parameter.md)
   An object that contains the query parameter that produced the error.
-- [object ErrorResponse.Errors.Meta](errorresponse/errors-data.dictionary/meta-data.dictionary.md)
+- [object ErrorResponse.Errors.Meta](./errorresponse/errors-data.dictionary/meta-data.dictionary.md)
   An object that contains the error itself or associated errors.
 
 

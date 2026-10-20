@@ -1,7 +1,8 @@
 # USDPrim.Property.Variability.varying
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Property can have different values at different times (animatable).
 

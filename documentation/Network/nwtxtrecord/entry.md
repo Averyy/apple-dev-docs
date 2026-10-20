@@ -1,7 +1,8 @@
 # NWTXTRecord.Entry
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type of entry in a TXT record dictionary.
 
@@ -23,35 +24,36 @@ enum Entry
 ## Topics
 
 ### Entry Types
-- [NWTXTRecord.Entry.none](nwtxtrecord/entry/none.md)
+- [NWTXTRecord.Entry.none](./entry/none.md)
   The key is not mapped to any value.
-- [NWTXTRecord.Entry.empty](nwtxtrecord/entry/empty.md)
+- [NWTXTRecord.Entry.empty](./entry/empty.md)
   The key is mapped to an empty value.
-- [NWTXTRecord.Entry.string(_:)](nwtxtrecord/entry/string(_:).md)
+- [NWTXTRecord.Entry.string(_:)](./entry/string%28_%29.md)
   The key is mapped to a string.
 ### Enumeration Cases
-- [NWTXTRecord.Entry.data(_:)](nwtxtrecord/entry/data(_:).md)
+- [NWTXTRecord.Entry.data(_:)](./entry/data%28_%29.md)
 ### Initializers
-- [init(Data?)](nwtxtrecord/entry/init(_:).md)
+- [init(Data?)](./entry/init%28_%29.md)
 ### Instance Properties
-- [var data: Data?](nwtxtrecord/entry/data.md)
+- [var data: Data?](./entry/data.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init([String : String])](nwtxtrecord/init(_:)-566pd.md)
+### Creating TXT Records
+- [init([String : String])](./init%28_%29-566pd.md)
   Initializes a TXT record with a dictionary of strings.
-- [func removeEntry(key: String) -> Bool](nwtxtrecord/removeentry(key:).md)
+- [func removeEntry(key: String) -> Bool](./removeentry%28key%29.md)
   Removes an entry from a TXT record dictionary.
-- [func setEntry(NWTXTRecord.Entry, for: String) -> Bool](nwtxtrecord/setentry(_:for:).md)
+- [func setEntry(NWTXTRecord.Entry, for: String) -> Bool](./setentry%28_,for%29.md)
   Sets an entry in a TXT record dictionary.
 
 

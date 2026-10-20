@@ -1,7 +1,8 @@
 # endGeneratingLibraryChangeNotifications()
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the media library to turn off notifications for whenever the library changes.
 
@@ -17,15 +18,20 @@ Asks the media library to turn off notifications for whenever the library change
 func endGeneratingLibraryChangeNotifications()
 ```
 
+```objc
+- (void) endGeneratingLibraryChangeNotifications;
+```
+
 #### Discussion
 
-To completely turn off notifications, you must call this method the same number of times that you called [`beginGeneratingLibraryChangeNotifications()`](mpmedialibrary/begingeneratinglibrarychangenotifications().md).
+To completely turn off notifications, you must call this method the same number of times that you called [`beginGeneratingLibraryChangeNotifications()`](./begingeneratinglibrarychangenotifications%28%29.md).
 
 ## See Also
 
-- [func beginGeneratingLibraryChangeNotifications()](mpmedialibrary/begingeneratinglibrarychangenotifications.md)
+### Receiving notifications when the user’s library changes
+- [func beginGeneratingLibraryChangeNotifications()](./begingeneratinglibrarychangenotifications%28%29.md)
   Asks the media library to turn on notifications for whenever the library changes.
-- [var lastModifiedDate: Date](mpmedialibrary/lastmodifieddate.md)
+- [var lastModifiedDate: Date](./lastmodifieddate.md)
   The calendar date on which the media library was last modified.
 
 

@@ -1,14 +1,15 @@
 # kIOMemoryLedgerTagDefault
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryLedgerTagDefault = VM_LEDGER_TAG_DEFAULT
 ```
 

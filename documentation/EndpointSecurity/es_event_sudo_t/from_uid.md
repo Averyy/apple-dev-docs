@@ -1,16 +1,21 @@
 # from_uid
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var from_uid: es_event_sudo_t.__Unnamed_union_from_uid
+```
+
+```c
+union { ... } from_uid;
 ```
 
 

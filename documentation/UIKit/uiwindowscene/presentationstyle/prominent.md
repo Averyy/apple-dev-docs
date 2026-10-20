@@ -1,21 +1,28 @@
 # UIWindowScene.PresentationStyle.prominent
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Presents prominently above others in the current space.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- tvOS 15.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIWindowScene.PresentationStyle`](../presentationstyle.md).
 
 ## Declaration
 
 ```swift
 case prominent
+```
+
+```c
+UIWindowScenePresentationStyleProminent
 ```
 
 #### Discussion
@@ -24,9 +31,10 @@ On iPad, the system displays the window scene modally, centered and elevated abo
 
 ## See Also
 
-- [UIWindowScene.PresentationStyle.automatic](uiwindowscene/presentationstyle/automatic.md)
+### Constants
+- [UIWindowScene.PresentationStyle.automatic](./automatic.md)
   The system determines the most appropriate style.
-- [UIWindowScene.PresentationStyle.standard](uiwindowscene/presentationstyle/standard.md)
+- [UIWindowScene.PresentationStyle.standard](./standard.md)
   The default style of the system.
 
 

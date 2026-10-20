@@ -1,7 +1,8 @@
 # ServiceType
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 6.0+
@@ -11,17 +12,25 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
+
+- **Name**: `ServiceType`
+- **Type**: string
+
+## Possible Values
+
+- `Application`
 
 
-**Type**: string
 
 **Default**: `Application`
 
 ## See Also
 
-- [EnvironmentVariables](information-property-list/xpcservice/environmentvariables.md)
-- [JoinExistingSession](information-property-list/xpcservice/joinexistingsession.md)
-- [RunLoopType](information-property-list/xpcservice/runlooptype.md)
+### Property List Keys
+- [EnvironmentVariables](./environmentvariables.md)
+- [JoinExistingSession](./joinexistingsession.md)
+- [RunLoopType](./runlooptype.md)
 
 
 ---

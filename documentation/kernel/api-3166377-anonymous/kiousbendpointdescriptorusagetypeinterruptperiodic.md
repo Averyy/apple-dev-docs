@@ -1,14 +1,15 @@
 # kIOUSBEndpointDescriptorUsageTypeInterruptPeriodic
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointDescriptorUsageTypeInterruptPeriodic = (0 << IOUSBBitRangePhase(4, 5))
 ```
 

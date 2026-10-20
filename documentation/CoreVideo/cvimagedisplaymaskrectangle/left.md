@@ -1,7 +1,8 @@
 # left
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal pixel offset of the rectangle from the left of the bounding raster.
 
@@ -22,7 +23,7 @@ var left: UInt16
 
 #### Discussion
 
-This value is always less than [`referenceRasterWidth`](cvimagedisplaymaskrectangle/referencerasterwidth.md).
+This value is always less than [`referenceRasterWidth`](./referencerasterwidth.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # NSCollectionLayoutSectionOrthogonalScrollingBehavior.paging
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The section allows users to page its content orthogonally.
 
@@ -14,17 +15,22 @@ The section allows users to page its content orthogonally.
 case paging
 ```
 
+```c
+NSCollectionLayoutSectionOrthogonalScrollingBehaviorPaging
+```
+
 ## See Also
 
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.none](nscollectionlayoutsectionorthogonalscrollingbehavior/none.md)
+### Enumeration Cases
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.none](./none.md)
   The section does not allow users to scroll its content orthogonally.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuous](nscollectionlayoutsectionorthogonalscrollingbehavior/continuous.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuous](./continuous.md)
   The section allows users to scroll its content orthogonally with continuous scrolling.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](nscollectionlayoutsectionorthogonalscrollingbehavior/continuousgroupleadingboundary.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](./continuousgroupleadingboundary.md)
   The section allows users to scroll its content orthogonally, coming to a natural stop at the leading boundary of the visible group.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](nscollectionlayoutsectionorthogonalscrollingbehavior/grouppaging.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](./grouppaging.md)
   The section allows users to page its content orthogonally one group at a time.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered](nscollectionlayoutsectionorthogonalscrollingbehavior/grouppagingcentered.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered](./grouppagingcentered.md)
   The section allows users to page its content orthogonally one group at a time, centering each group.
 
 

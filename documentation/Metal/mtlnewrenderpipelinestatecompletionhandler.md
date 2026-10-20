@@ -1,17 +1,18 @@
 # MTLNewRenderPipelineStateCompletionHandler
 
 **Framework**: Metal  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A completion handler signature a method calls when it finishes creating a render pipeline.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,18 +20,23 @@ A completion handler signature a method calls when it finishes creating a render
 typealias MTLNewRenderPipelineStateCompletionHandler = ((any MTLRenderPipelineState)?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(id<MTLRenderPipelineState>, NSError *) MTLNewRenderPipelineStateCompletionHandler;
+```
+
 ## Parameters
 
-- `renderPipelineState`: An [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance if the method completes successfully; otherwise `nil`.
+- `renderPipelineState`: An [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md) instance if the method completes successfully; otherwise `nil`.
 - `error`: If an error occurs, an error information instance; otherwise `nil`.
 
 ## See Also
 
-- [typealias MTLNewRenderPipelineStateWithReflectionCompletionHandler](mtlnewrenderpipelinestatewithreflectioncompletionhandler.md)
+### Supporting types
+- [typealias MTLNewRenderPipelineStateWithReflectionCompletionHandler](./mtlnewrenderpipelinestatewithreflectioncompletionhandler.md)
   A completion handler signature a method calls when it finishes creating a render pipeline and reflection information.
-- [typealias MTLNewComputePipelineStateCompletionHandler](mtlnewcomputepipelinestatecompletionhandler.md)
+- [typealias MTLNewComputePipelineStateCompletionHandler](./mtlnewcomputepipelinestatecompletionhandler.md)
   A completion handler signature a method calls when it finishes creating a compute pipeline.
-- [typealias MTLNewComputePipelineStateWithReflectionCompletionHandler](mtlnewcomputepipelinestatewithreflectioncompletionhandler.md)
+- [typealias MTLNewComputePipelineStateWithReflectionCompletionHandler](./mtlnewcomputepipelinestatewithreflectioncompletionhandler.md)
   A completion handler signature a method calls when it finishes creating a compute pipeline and reflection information.
 
 

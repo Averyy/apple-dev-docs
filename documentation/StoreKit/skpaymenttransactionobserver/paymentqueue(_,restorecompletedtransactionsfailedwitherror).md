@@ -1,18 +1,21 @@
 # paymentQueue(_:restoreCompletedTransactionsFailedWithError:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the observer that an error occurred while restoring transactions.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 3.0+ - Deprecated in 18.0
+- iPadOS 3.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use AppStore.sync().
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Tells the observer that an error occurred while restoring transactions.
 optional func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: any Error)
 ```
 
+```objc
+- (void) paymentQueue:(SKPaymentQueue *) queue restoreCompletedTransactionsFailedWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Processing a transaction](processing-a-transaction.md)
+- [Processing a transaction](../processing-a-transaction.md)
 
 ## Parameters
 
@@ -31,7 +38,8 @@ optional func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactions
 
 ## See Also
 
-- [func paymentQueueRestoreCompletedTransactionsFinished(SKPaymentQueue)](skpaymenttransactionobserver/paymentqueuerestorecompletedtransactionsfinished(_:).md)
+### Restoring transactions
+- [func paymentQueueRestoreCompletedTransactionsFinished(SKPaymentQueue)](./paymentqueuerestorecompletedtransactionsfinished%28_%29.md)
   Tells the observer that the payment queue has finished sending restored transactions.
 
 

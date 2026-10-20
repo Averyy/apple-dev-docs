@@ -1,7 +1,8 @@
 # ErrorMessage.Details
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single error detail entry describing one part of a failed change history request.
 
@@ -10,13 +11,13 @@ A single error detail entry describing one part of a failed change history reque
 
 ## Declaration
 
-```swift
+```
 object ErrorMessage.Details
 ```
 
 #### Discussion
 
-Each entry in `ErrorMessage`’s `details` array narrows down which part of the request caused the failure. Use these entries, together with the top-level `message`, for diagnostic logging or user-facing error displays. Use the top-level `code` on [`ErrorMessage`](errormessage.md) for programmatic error handling.
+Each entry in `ErrorMessage`’s `details` array narrows down which part of the request caused the failure. Use these entries, together with the top-level `message`, for diagnostic logging or user-facing error displays. Use the top-level `code` on [`ErrorMessage`](../errormessage.md) for programmatic error handling.
 
 ##### Example
 
@@ -33,14 +34,14 @@ Each entry in `ErrorMessage`’s `details` array narrows down which part of the 
 ## Topics
 
 ### Dictionaries
-- [object ErrorMessage.Details.Info](errormessage/details-data.dictionary/info-data.dictionary.md)
+- [object ErrorMessage.Details.Info](./details-data.dictionary/info-data.dictionary.md)
   An object (string-to-string map) with additional structured context for a specific validation failure.
 
 ## Properties
 
 - `code` (string): A machine-readable code identifying the specific validation failure. Read-only.
 - `message` (string): A human-readable description of this detail entry. Read-only.
-- `info` (ErrorMessage.Details.Info): Additional structured context for this failure. See [`ErrorMessage.Details.Info`](errormessage/details-data.dictionary/info-data.dictionary.md). Read-only.
+- `info` (ErrorMessage.Details.Info): Additional structured context for this failure. See [`ErrorMessage.Details.Info`](./details-data.dictionary/info-data.dictionary.md). Read-only.
 
 
 ---

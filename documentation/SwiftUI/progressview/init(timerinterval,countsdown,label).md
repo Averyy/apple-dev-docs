@@ -1,7 +1,8 @@
 # init(timerInterval:countsDown:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress view for showing continuous progress as time passes, with a descriptive label.
 
@@ -21,6 +22,8 @@ nonisolated
 init(timerInterval: ClosedRange<Date>, countsDown: Bool = true, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View` and `CurrentValueLabel` is `DefaultDateProgressLabel`.
+
 #### Discussion
 
 Use this initializer to create a view that shows continuous progress within a date range. The following example initializes a progress view with a range of `start...end`, where `start` is 30 seconds in the past and `end` is 90 seconds in the future. As a result, the progress view begins at 25 percent complete. This example also provides a custom descriptive label.
@@ -39,11 +42,11 @@ struct ContentView: View {
 }
 ```
 
-![A horizontal bar that represents progress, partially filled in from](/images/com.apple.SwiftUI/ProgressView-7-macOS@2x.png)
+![A horizontal bar that represents progress, partially filled in from](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-7-macOS@2x.png)
 
 By default, the progress view empties as time passes from the start of the date range to the end, but you can use the `countsDown` parameter to create a progress view that fills as time passes, as the above example demonstrates.
 
-The progress view provided by this initializer uses a text label that automatically updates to describe the current time remaining. To provide a custom label to show the current value, use [`init(value:total:label:currentValueLabel:)`](progressview/init(value:total:label:currentvaluelabel:).md) instead.
+The progress view provided by this initializer uses a text label that automatically updates to describe the current time remaining. To provide a custom label to show the current value, use [`init(value:total:label:currentValueLabel:)`](./init%28value,total,label,currentvaluelabel%29.md) instead.
 
 > **Note**: Date-relative progress views, such as those created with this initializer, don’t support custom styles.
 
@@ -55,9 +58,10 @@ The progress view provided by this initializer uses a text label that automatica
 
 ## See Also
 
-- [init(timerInterval: ClosedRange<Date>, countsDown: Bool)](progressview/init(timerinterval:countsdown:).md)
+### Create a progress view spanning a date range
+- [init(timerInterval: ClosedRange<Date>, countsDown: Bool)](./init%28timerinterval,countsdown%29.md)
   Creates a progress view for showing continuous progress as time passes.
-- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](progressview/init(timerinterval:countsdown:label:currentvaluelabel:).md)
+- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](./init%28timerinterval,countsdown,label,currentvaluelabel%29.md)
   Creates a progress view for showing continuous progress as time passes, with descriptive and current progress labels.
 
 

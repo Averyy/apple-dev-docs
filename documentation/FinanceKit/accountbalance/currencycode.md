@@ -1,7 +1,8 @@
 # currencyCode
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The balance currency.
 
@@ -21,15 +22,16 @@ This is the same across available and booked balances.
 
 ## See Also
 
-- [let accountID: UUID](accountbalance/accountid.md)
+### Instance Properties
+- [let accountID: UUID](./accountid.md)
   The account ID the balance belongs to.
-- [var available: Balance?](accountbalance/available.md)
+- [var available: Balance?](./available.md)
   The available balance, if present.
-- [var booked: Balance?](accountbalance/booked.md)
+- [var booked: Balance?](./booked.md)
   The booked balance, if present.
-- [let currentBalance: CurrentBalance](accountbalance/currentbalance.md)
+- [let currentBalance: CurrentBalance](./currentbalance.md)
   The balance at a particular moment in time.
-- [let id: UUID](accountbalance/id.md)
+- [let id: UUID](./id.md)
   A unique account balance ID.
 
 

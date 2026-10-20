@@ -1,7 +1,8 @@
 # NSCollectionLayoutBoundarySupplementaryItem
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to add headers or footers to a collection view.
 
@@ -19,9 +20,13 @@ An object used to add headers or footers to a collection view.
 class NSCollectionLayoutBoundarySupplementaryItem
 ```
 
+```objc
+@interface NSCollectionLayoutBoundarySupplementaryItem : NSCollectionLayoutSupplementaryItem
+```
+
 #### Overview
 
-A boundary supplementary item is a specialized type of supplementary item ([`NSCollectionLayoutSupplementaryItem`](nscollectionlayoutsupplementaryitem.md)). You use boundary supplementary items to add headers or footers to a section of a collection view or the entire collection view.
+A boundary supplementary item is a specialized type of supplementary item ([`NSCollectionLayoutSupplementaryItem`](./nscollectionlayoutsupplementaryitem.md)). You use boundary supplementary items to add headers or footers to a section of a collection view or the entire collection view.
 
 Each type of supplementary item must have a unique element kind. Consider tracking these strings together in a way that makes it straightforward to identify each element, for example:
 
@@ -49,7 +54,7 @@ NSString* const ELEMENT_KIND_LAYOUT_HEADER = @"layout-header-element-kind";
 NSString* const ELEMENT_KIND_LAYOUT_FOOTER = @"layout-footer-element-kind";
 ```
 
-Add boundary supplementary items to a section by setting that section’s [`boundarySupplementaryItems`](nscollectionlayoutsection/boundarysupplementaryitems.md) property:
+Add boundary supplementary items to a section by setting that section’s [`boundarySupplementaryItems`](./nscollectionlayoutsection/boundarysupplementaryitems.md) property:
 
 **Swift**:
 
@@ -86,41 +91,42 @@ NSCollectionLayoutBoundarySupplementaryItem *sectionFooter = [NSCollectionLayout
 ## Topics
 
 ### Creating a boundary supplementary item
-- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment)](nscollectionlayoutboundarysupplementaryitem/init(layoutsize:elementkind:alignment:).md)
+- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment)](./nscollectionlayoutboundarysupplementaryitem/init%28layoutsize,elementkind,alignment%29.md)
   Creates a boundary supplementary item of the specified size and element kind, with an alignment relative to a section or layout.
-- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment, absoluteOffset: CGPoint)](nscollectionlayoutboundarysupplementaryitem/init(layoutsize:elementkind:alignment:absoluteoffset:).md)
+- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment, absoluteOffset: CGPoint)](./nscollectionlayoutboundarysupplementaryitem/init%28layoutsize,elementkind,alignment,absoluteoffset%29.md)
   Creates a boundary supplementary item of the specified size and element kind, with an alignment relative to a section or layout at an absolute offset.
 ### Specifying scrolling behavior
-- [var pinToVisibleBounds: Bool](nscollectionlayoutboundarysupplementaryitem/pintovisiblebounds.md)
+- [var pinToVisibleBounds: Bool](./nscollectionlayoutboundarysupplementaryitem/pintovisiblebounds.md)
   A Boolean value that indicates whether a header or footer is pinned to the top or bottom visible boundary of the section or layout it’s attached to.
 ### Specifying position
-- [var offset: CGPoint](nscollectionlayoutboundarysupplementaryitem/offset.md)
+- [var offset: CGPoint](./nscollectionlayoutboundarysupplementaryitem/offset.md)
   The floating-point value of the boundary supplementary item’s offset from the section or layout it’s attached to.
-- [var alignment: NSRectAlignment](nscollectionlayoutboundarysupplementaryitem/alignment.md)
+- [var alignment: NSRectAlignment](./nscollectionlayoutboundarysupplementaryitem/alignment.md)
   The alignment of the boundary supplementary item relative to the section or layout it’s attached to.
-- [var extendsBoundary: Bool](nscollectionlayoutboundarysupplementaryitem/extendsboundary.md)
+- [var extendsBoundary: Bool](./nscollectionlayoutboundarysupplementaryitem/extendsboundary.md)
   A Boolean value that indicates whether a boundary supplementary item extends the content area of the section or layout it’s attached to.
 
 ## Relationships
 
 ### Inherits From
-- [NSCollectionLayoutSupplementaryItem](nscollectionlayoutsupplementaryitem.md)
+- [NSCollectionLayoutSupplementaryItem](./nscollectionlayoutsupplementaryitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSCollectionLayoutAnchor](nscollectionlayoutanchor.md)
+### Appearance
+- [class NSCollectionLayoutAnchor](./nscollectionlayoutanchor.md)
   An object that defines how to attach a supplementary item to an item in a collection view.
-- [class NSCollectionLayoutSupplementaryItem](nscollectionlayoutsupplementaryitem.md)
+- [class NSCollectionLayoutSupplementaryItem](./nscollectionlayoutsupplementaryitem.md)
   An object used to add an extra visual decoration to an item in a collection view.
-- [class NSCollectionLayoutDecorationItem](nscollectionlayoutdecorationitem.md)
+- [class NSCollectionLayoutDecorationItem](./nscollectionlayoutdecorationitem.md)
   An object used to add a background to a section of a collection view.
 
 

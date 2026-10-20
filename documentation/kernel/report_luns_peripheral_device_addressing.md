@@ -1,14 +1,15 @@
 # REPORT_LUNS_PERIPHERAL_DEVICE_ADDRESSING
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct REPORT_LUNS_PERIPHERAL_DEVICE_ADDRESSING REPORT_LUNS_PERIPHERAL_DEVICE_ADDRESSING;
 ```
 
@@ -19,10 +20,10 @@ This structure represents a Peripheral Device Addressing scheme.
 ## Topics
 
 ### Instance Properties
-- [BUS_IDENTIFIER](report_luns_peripheral_device_addressing/1569397-bus_identifier.md)
-- [TARGET_LUN](report_luns_peripheral_device_addressing/1569390-target_lun.md)
-- [reserved](report_luns_peripheral_device_addressing/1569403-reserved.md)
-- [reserved2](report_luns_peripheral_device_addressing/1569398-reserved2.md)
+- [BUS_IDENTIFIER](./report_luns_peripheral_device_addressing/api-1569397-bus_identifier.md)
+- [TARGET_LUN](./report_luns_peripheral_device_addressing/api-1569390-target_lun.md)
+- [reserved](./report_luns_peripheral_device_addressing/api-1569403-reserved.md)
+- [reserved2](./report_luns_peripheral_device_addressing/api-1569398-reserved2.md)
 
 
 ---

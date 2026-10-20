@@ -1,7 +1,8 @@
 # ColorSyncTransformGetProfileSequence(_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the profile sequence used to create a color transform.
 
@@ -20,21 +21,26 @@ Returns the profile sequence used to create a color transform.
 func ColorSyncTransformGetProfileSequence(_ transform: ColorSyncTransform!) -> Unmanaged<CFArray>?
 ```
 
+```c
+extern CFArrayRefColorSyncTransformGetProfileSequence(ColorSyncTransformRef transform);
+```
+
 ## Parameters
 
 - `transform`: The transform from which to get the profile sequence used to create the transform.
 
 ## See Also
 
-- [func ColorSyncTransformCreate(CFArray?, CFDictionary?) -> Unmanaged<ColorSyncTransform>?](colorsynctransformcreate(_:_:).md)
+### Creating and applying a transform
+- [func ColorSyncTransformCreate(CFArray?, CFDictionary?) -> Unmanaged<ColorSyncTransform>?](./colorsynctransformcreate%28_,_%29.md)
   Creates a color transform from a sequence of profiles.
-- [func ColorSyncTransformConvert(ColorSyncTransform!, Int, Int, UnsafeMutableRawPointer!, ColorSyncDataDepth, ColorSyncDataLayout, Int, UnsafeRawPointer!, ColorSyncDataDepth, ColorSyncDataLayout, Int, CFDictionary?) -> Bool](colorsynctransformconvert(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func ColorSyncTransformConvert(ColorSyncTransform!, Int, Int, UnsafeMutableRawPointer!, ColorSyncDataDepth, ColorSyncDataLayout, Int, UnsafeRawPointer!, ColorSyncDataDepth, ColorSyncDataLayout, Int, CFDictionary?) -> Bool](./colorsynctransformconvert%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Converts color data from a source layout to a destination layout using a color transform.
-- [func ColorSyncTransformCopyProperty(ColorSyncTransform!, CFTypeRef!, CFDictionary?) -> Unmanaged<CFTypeRef>?](colorsynctransformcopyproperty(_:_:_:).md)
+- [func ColorSyncTransformCopyProperty(ColorSyncTransform!, CFTypeRef!, CFDictionary?) -> Unmanaged<CFTypeRef>?](./colorsynctransformcopyproperty%28_,_,_%29.md)
   Copies a property from a color transform.
-- [func ColorSyncTransformSetProperty(ColorSyncTransform!, CFTypeRef!, CFTypeRef?)](colorsynctransformsetproperty(_:_:_:).md)
+- [func ColorSyncTransformSetProperty(ColorSyncTransform!, CFTypeRef!, CFTypeRef?)](./colorsynctransformsetproperty%28_,_,_%29.md)
   Sets a property on a color transform.
-- [func ColorSyncTransformGetTypeID() -> CFTypeID](colorsynctransformgettypeid().md)
+- [func ColorSyncTransformGetTypeID() -> CFTypeID](./colorsynctransformgettypeid%28%29.md)
   Returns the type identifier for the `ColorSyncTransform` opaque type.
 
 

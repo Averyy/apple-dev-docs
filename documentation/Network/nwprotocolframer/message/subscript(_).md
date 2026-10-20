@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Network  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get and set object values in a custom framer message.
 

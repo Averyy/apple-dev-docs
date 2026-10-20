@@ -1,7 +1,8 @@
 # kCGPDFXOutputConditionIdentifier
 
 **Framework**: Core Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 14.0+
@@ -18,19 +19,24 @@
 let kCGPDFXOutputConditionIdentifier: CFString
 ```
 
+```c
+extern CFStringRef const kCGPDFXOutputConditionIdentifier;
+```
+
 #### Discussion
 
-A string identifying the intended output device or production condition in a human- or machine-readable form. This key is required. The value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. For best results, the string should be restricted to characters in the ASCII character set.
+A string identifying the intended output device or production condition in a human- or machine-readable form. This key is required. The value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object. For best results, the string should be restricted to characters in the ASCII character set.
 
 ## See Also
 
-- [let kCGPDFXOutputIntentSubtype: CFString](kcgpdfxoutputintentsubtype.md)
+### Output Intent Keys
+- [let kCGPDFXOutputIntentSubtype: CFString](./kcgpdfxoutputintentsubtype.md)
   The output intent subtype. This key is required.
-- [let kCGPDFXOutputCondition: CFString](kcgpdfxoutputcondition.md)
+- [let kCGPDFXOutputCondition: CFString](./kcgpdfxoutputcondition.md)
   A text string identifying the intended output device or production condition in a human-readable form.
-- [let kCGPDFXRegistryName: CFString](kcgpdfxregistryname.md)
-- [let kCGPDFXInfo: CFString](kcgpdfxinfo.md)
-- [let kCGPDFXDestinationOutputProfile: CFString](kcgpdfxdestinationoutputprofile.md)
+- [let kCGPDFXRegistryName: CFString](./kcgpdfxregistryname.md)
+- [let kCGPDFXInfo: CFString](./kcgpdfxinfo.md)
+- [let kCGPDFXDestinationOutputProfile: CFString](./kcgpdfxdestinationoutputprofile.md)
 
 
 ---

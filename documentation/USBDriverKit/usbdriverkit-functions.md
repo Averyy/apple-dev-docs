@@ -1,19 +1,21 @@
 # USBDriverKit Functions
 
-**Framework**: USBDriverKit
+**Framework**: USBDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Functions
-- [IOUSBGetEndpointSynchronizationType](iousbgetendpointsynchronizationtype.md)
-- [IOUSBGetEndpointUsageType](iousbgetendpointusagetype.md)
-- [IOUSBGetPlatformCapabilityDescriptorWithUUID](iousbgetplatformcapabilitydescriptorwithuuid.md)
+- [IOUSBGetEndpointSynchronizationType](./iousbgetendpointsynchronizationtype.md)
+- [IOUSBGetEndpointUsageType](./iousbgetendpointusagetype.md)
+- [IOUSBGetPlatformCapabilityDescriptorWithUUID](./iousbgetplatformcapabilitydescriptorwithuuid.md)
 
 ## See Also
 
-- [USBDriverKit Enumerations](usbdriverkit-enumerations.md)
-- [USBDriverKit Data Types](usbdriverkit-data-types.md)
-- [USBDriverKit Macros](usbdriverkit-macros.md)
+### References
+- [USBDriverKit Enumerations](./usbdriverkit-enumerations.md)
+- [USBDriverKit Data Types](./usbdriverkit-data-types.md)
+- [USBDriverKit Macros](./usbdriverkit-macros.md)
 
 
 ---

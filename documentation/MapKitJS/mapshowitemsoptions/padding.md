@@ -1,7 +1,8 @@
 # padding
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Spacing that the framework adds around the computed map region when showing items.
 
@@ -10,17 +11,18 @@ Spacing that the framework adds around the computed map region when showing item
 
 ## Declaration
 
-```swift
+```
 padding?: PaddingData;
 ```
 
 ## See Also
 
-- [animate](mapshowitemsoptions/animate.md)
+### Show item options
+- [animate](./animate.md)
   A Boolean value that determines whether the map animates as the map region changes to show the items.
-- [minimumSpan](mapshowitemsoptions/minimumspan.md)
+- [minimumSpan](./minimumspan.md)
   The minimum longitudinal and latitudinal span the map displays.
-- [cameraDistance](mapshowitemsoptions/cameradistance.md)
+- [cameraDistance](./cameradistance.md)
   The distance from the center of the map to the camera, when showing the items.
 
 

@@ -1,7 +1,8 @@
 # velocities
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The velocities of all rigid bodies under the influence of the effect, or nil if velocity information was not requested.
 

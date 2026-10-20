@@ -1,14 +1,15 @@
 # wordIsNearTap
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates whether a word resides near the person’s tap gesture.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -18,11 +19,16 @@ A flag that indicates whether a word resides near the person’s tap gesture.
 static var wordIsNearTap: BESelectionFlags { get }
 ```
 
+```c
+BEWordIsNearTap
+```
+
 ## See Also
 
-- [static var phraseBoundaryChanged: BESelectionFlags](beselectionflags/phraseboundarychanged.md)
+### Describing a text selection
+- [static var phraseBoundaryChanged: BESelectionFlags](./phraseboundarychanged.md)
   A flag that indicates whether a text selection crosses or modifies phrase boundaries in an active selection.
-- [static var selectionFlipped: BESelectionFlags](beselectionflags/selectionflipped.md)
+- [static var selectionFlipped: BESelectionFlags](./selectionflipped.md)
   A flag that indicates whether a text selection is reversed or flipped in direction from its original direction.
 
 

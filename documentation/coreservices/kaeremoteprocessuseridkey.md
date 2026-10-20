@@ -1,7 +1,8 @@
 # kAERemoteProcessUserIDKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use this key to obtain the user ID of the remote process, if available; if so, returned as a `CFNumberRef`.
 
@@ -12,6 +13,10 @@ Use this key to obtain the user ID of the remote process, if available; if so, r
 
 ```swift
 let kAERemoteProcessUserIDKey: CFString!
+```
+
+```c
+const CFStringRef kAERemoteProcessUserIDKey;
 ```
 
 

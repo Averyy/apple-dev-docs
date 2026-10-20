@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a strongly-typed access mode from a raw C access mode.
 
@@ -22,7 +23,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [var rawValue: CInt](filedescriptor/accessmode/rawvalue.md)
+### Working with C APIs
+- [var rawValue: CInt](./rawvalue.md)
   The raw C access mode.
 
 

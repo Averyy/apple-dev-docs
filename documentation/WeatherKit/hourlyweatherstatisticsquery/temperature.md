@@ -1,7 +1,8 @@
 # temperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hourly temperature statistics query.
 

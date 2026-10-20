@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 1.0+
@@ -14,7 +15,8 @@ var content: (GeometryProxy3D) -> Content
 
 ## See Also
 
-- [init(content: (GeometryProxy3D) -> Content)](geometryreader3d/init(content:).md)
+### Creating a geometry reader
+- [init(content: (GeometryProxy3D) -> Content)](./init%28content%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # max
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum representable integer in this type.
 

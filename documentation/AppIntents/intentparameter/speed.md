@@ -1,7 +1,8 @@
 # IntentParameter.Speed
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,29 +19,32 @@
 enum Speed
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitSpeed>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.Speed.kilometersPerHour](intentparameter/speed/kilometersperhour.md)
-- [IntentParameter.Speed.knots](intentparameter/speed/knots.md)
-- [IntentParameter.Speed.metersPerSecond](intentparameter/speed/meterspersecond.md)
-- [IntentParameter.Speed.milesPerHour](intentparameter/speed/milesperhour.md)
+- [IntentParameter.Speed.kilometersPerHour](./speed/kilometersperhour.md)
+- [IntentParameter.Speed.knots](./speed/knots.md)
+- [IntentParameter.Speed.metersPerSecond](./speed/meterspersecond.md)
+- [IntentParameter.Speed.milesPerHour](./speed/milesperhour.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.Speed?](intentparameter/unit-620ka.md)
-- [var defaultUnit: IntentParameter<Value>.Speed?](intentparameter/defaultunit-92l04.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-1bekt.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-8a31x.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Speed?](./unit-620ka.md)
+- [var defaultUnit: IntentParameter<Value>.Speed?](./defaultunit-92l04.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-1bekt.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-8a31x.md)
 
 
 ---

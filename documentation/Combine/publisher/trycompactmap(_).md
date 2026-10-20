@@ -1,7 +1,8 @@
 # tryCompactMap(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls an error-throwing closure with each received element and publishes any returned optional that has a value.
 
@@ -26,13 +27,13 @@ Any non-`nil` optional results of calling the supplied closure.
 
 #### Discussion
 
-Use [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) to remove `nil` elements from a publisher’s stream based on an error-throwing closure you provide. If the closure throws an error, the publisher cancels the upstream publisher and sends the thrown error to the downstream subscriber as a [`Failure`](publisher/failure.md).
+Use [`tryCompactMap(_:)`](./trycompactmap%28_%29.md) to remove `nil` elements from a publisher’s stream based on an error-throwing closure you provide. If the closure throws an error, the publisher cancels the upstream publisher and sends the thrown error to the downstream subscriber as a [`Failure`](./failure.md).
 
-The following example uses an array of numbers as the source for a collection-based publisher. A [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) operator consumes each integer from the publisher and uses a dictionary to transform the numbers from its Arabic to Roman numerals, as an optional [`String`](https://developer.apple.com/documentation/swift/string).
+The following example uses an array of numbers as the source for a collection-based publisher. A [`tryCompactMap(_:)`](./trycompactmap%28_%29.md) operator consumes each integer from the publisher and uses a dictionary to transform the numbers from its Arabic to Roman numerals, as an optional [`String`](../../Swift/string.md).
 
-If the closure called by [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) fails to look up a Roman numeral, it returns the optional String `(unknown)`.
+If the closure called by [`tryCompactMap(_:)`](./trycompactmap%28_%29.md) fails to look up a Roman numeral, it returns the optional String `(unknown)`.
 
-If the closure called by [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) determines the input is `0`, it throws an error. The [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) operator catches this error and stops publishing, sending a [`Subscribers.Completion.failure(_:)`](subscribers/completion/failure(_:).md) that wraps the error.
+If the closure called by [`tryCompactMap(_:)`](./trycompactmap%28_%29.md) determines the input is `0`, it throws an error. The [`tryCompactMap(_:)`](./trycompactmap%28_%29.md) operator catches this error and stops publishing, sending a [`Subscribers.Completion.failure(_:)`](../subscribers/completion/failure%28_%29.md) that wraps the error.
 
 ```swift
 struct ParseError: Error {}
@@ -59,21 +60,22 @@ cancellable = numbers.publisher
 
 ## See Also
 
-- [func filter((Self.Output) -> Bool) -> Publishers.Filter<Self>](publisher/filter(_:).md)
+### Filtering elements
+- [func filter((Self.Output) -> Bool) -> Publishers.Filter<Self>](./filter%28_%29.md)
   Republishes all elements that match a provided closure.
-- [func tryFilter((Self.Output) throws -> Bool) -> Publishers.TryFilter<Self>](publisher/tryfilter(_:).md)
+- [func tryFilter((Self.Output) throws -> Bool) -> Publishers.TryFilter<Self>](./tryfilter%28_%29.md)
   Republishes all elements that match a provided error-throwing closure.
-- [func compactMap<T>((Self.Output) -> T?) -> Publishers.CompactMap<Self, T>](publisher/compactmap(_:).md)
+- [func compactMap<T>((Self.Output) -> T?) -> Publishers.CompactMap<Self, T>](./compactmap%28_%29.md)
   Calls a closure with each received element and publishes any returned optional that has a value.
-- [func removeDuplicates() -> Publishers.RemoveDuplicates<Self>](publisher/removeduplicates.md)
+- [func removeDuplicates() -> Publishers.RemoveDuplicates<Self>](./removeduplicates%28%29.md)
   Publishes only elements that don’t match the previous element.
-- [func removeDuplicates(by: (Self.Output, Self.Output) -> Bool) -> Publishers.RemoveDuplicates<Self>](publisher/removeduplicates(by:).md)
+- [func removeDuplicates(by: (Self.Output, Self.Output) -> Bool) -> Publishers.RemoveDuplicates<Self>](./removeduplicates%28by%29.md)
   Publishes only elements that don’t match the previous element, as evaluated by a provided closure.
-- [func tryRemoveDuplicates(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryRemoveDuplicates<Self>](publisher/tryremoveduplicates(by:).md)
+- [func tryRemoveDuplicates(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryRemoveDuplicates<Self>](./tryremoveduplicates%28by%29.md)
   Publishes only elements that don’t match the previous element, as evaluated by a provided error-throwing closure.
-- [func replaceEmpty(with: Self.Output) -> Publishers.ReplaceEmpty<Self>](publisher/replaceempty(with:).md)
+- [func replaceEmpty(with: Self.Output) -> Publishers.ReplaceEmpty<Self>](./replaceempty%28with%29.md)
   Replaces an empty stream with the provided element.
-- [func replaceError(with: Self.Output) -> Publishers.ReplaceError<Self>](publisher/replaceerror(with:).md)
+- [func replaceError(with: Self.Output) -> Publishers.ReplaceError<Self>](./replaceerror%28with%29.md)
   Replaces any errors in the stream with the provided element.
 
 

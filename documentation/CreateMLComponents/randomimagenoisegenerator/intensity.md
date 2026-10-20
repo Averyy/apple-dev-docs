@@ -1,7 +1,8 @@
 # intensity
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of the random noise to add to the image.
 

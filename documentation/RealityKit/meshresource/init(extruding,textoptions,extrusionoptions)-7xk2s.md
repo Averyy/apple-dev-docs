@@ -1,7 +1,8 @@
 # init(extruding:textOptions:extrusionOptions:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Synchronously generates a 3D mesh from a string, with options for text layout and custom extrusions.
 
@@ -20,13 +21,20 @@ Synchronously generates a 3D mesh from a string, with options for text layout an
 @preconcurrency convenience init(extruding string: AttributedString, textOptions: MeshResource.GenerateTextOptions = GenerateTextOptions(), extrusionOptions: MeshResource.ShapeExtrusionOptions = ShapeExtrusionOptions()) throws
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+convenience init(extruding string: AttributedString, textOptions: MeshResource.GenerateTextOptions = GenerateTextOptions(), extrusionOptions: MeshResource.ShapeExtrusionOptions = ShapeExtrusionOptions()) async throws
+```
+
 #### Discussion
 
 You can use the method to make a 3D mesh of a string, control the text’s layout, chamfers, materials, and how to extrude the shape into 3D.
 
 The generated text is scaled at a ratio of 72 points per meter.
 
-![A screenshot of a living room scene with 3D text in the center that reads “Hello, World!”, which is primarily a teal color with chamfered, gray edges around the text’s faces that face the camera.](/images/com.apple.RealityKit/meshResource-generateText-extrusion.jpg)
+![A screenshot of a living room scene with 3D text in the center that reads “Hello, World!”, which is primarily a teal color with chamfered, gray edges around the text’s faces that face the camera.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/meshResource-generateText-extrusion.jpg)
 
 ## Parameters
 
@@ -36,9 +44,10 @@ The generated text is scaled at a ratio of 72 points per meter.
 
 ## See Also
 
-- [static func generateText(String, extrusionDepth: Float, font: MeshResource.Font, containerFrame: CGRect, alignment: CTTextAlignment, lineBreakMode: CTLineBreakMode) -> MeshResource](meshresource/generatetext(_:extrusiondepth:font:containerframe:alignment:linebreakmode:)-3py6y.md)
+### Creating a text mesh resource
+- [static func generateText(String, extrusionDepth: Float, font: MeshResource.Font, containerFrame: CGRect, alignment: CTTextAlignment, lineBreakMode: CTLineBreakMode) -> MeshResource](./generatetext%28_,extrusiondepth,font,containerframe,alignment,linebreakmode%29-3py6y.md)
   Generates a 3D mesh for rendering static text.
-- [static func generateText(String, extrusionDepth: Float, font: MeshResource.Font, containerFrame: CGRect, alignment: CTTextAlignment, lineBreakMode: CTLineBreakMode) -> MeshResource](meshresource/generatetext(_:extrusiondepth:font:containerframe:alignment:linebreakmode:)-3py6y.md)
+- [static func generateText(String, extrusionDepth: Float, font: MeshResource.Font, containerFrame: CGRect, alignment: CTTextAlignment, lineBreakMode: CTLineBreakMode) -> MeshResource](./generatetext%28_,extrusiondepth,font,containerframe,alignment,linebreakmode%29-3py6y.md)
   Generates a 3D mesh for rendering static text.
 
 

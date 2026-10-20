@@ -1,7 +1,8 @@
 # invalidatableContent(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Mark the receiver as their content might be invalidated.
 
@@ -25,7 +26,7 @@ func invalidatableContent(_ invalidatable: Bool = true) -> some View
 
 Use this modifier to annotate views that display values that are derived from the current state of your data and might be invalidated in response of, for example, user interaction.
 
-The view will change its appearance when [`invalidated`](redactionreasons/invalidated.md) is present in the environment.
+The view will change its appearance when [`invalidated`](../redactionreasons/invalidated.md) is present in the environment.
 
 In an interactive widget a view is invalidated from the moment the user interacts with a control on the widget to the moment when a new timeline update has been presented.
 
@@ -35,11 +36,12 @@ In an interactive widget a view is invalidated from the moment the user interact
 
 ## See Also
 
-- [func disabled(Bool) -> some View](view/disabled(_:).md)
+### Managing view interaction
+- [func disabled(Bool) -> some View](./disabled%28_%29.md)
   Adds a condition that controls whether someone can interact with this view.
-- [var isEnabled: Bool](environmentvalues/isenabled.md)
+- [var isEnabled: Bool](../environmentvalues/isenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows user interaction.
-- [func interactionActivityTrackingTag(String) -> some View](view/interactionactivitytrackingtag(_:).md)
+- [func interactionActivityTrackingTag(String) -> some View](./interactionactivitytrackingtag%28_%29.md)
   Sets a tag that you use for tracking interactivity.
 
 

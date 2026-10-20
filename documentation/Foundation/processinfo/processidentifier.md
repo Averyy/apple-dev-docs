@@ -1,7 +1,8 @@
 # processIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the process (often called process ID).
 
@@ -20,21 +21,26 @@ The identifier of the process (often called process ID).
 var processIdentifier: Int32 { get }
 ```
 
+```objc
+@property (readonly) int processIdentifier;
+```
+
 ## See Also
 
-- [var arguments: [String]](processinfo/arguments.md)
+### Accessing process information
+- [var arguments: [String]](./arguments.md)
   Array of strings with the command-line arguments for the process.
-- [var environment: [String : String]](processinfo/environment.md)
+- [var environment: [String : String]](./environment.md)
   The variable names (keys) and their values in the environment from which the process was launched.
-- [var globallyUniqueString: String](processinfo/globallyuniquestring.md)
+- [var globallyUniqueString: String](./globallyuniquestring.md)
   Global unique identifier for the process.
-- [var isMacCatalystApp: Bool](processinfo/ismaccatalystapp.md)
+- [var isMacCatalystApp: Bool](./ismaccatalystapp.md)
   A Boolean value that indicates whether the process originated as an iOS app and runs on macOS.
-- [var isiOSAppOnMac: Bool](processinfo/isiosapponmac.md)
+- [var isiOSAppOnMac: Bool](./isiosapponmac.md)
   A Boolean value that indicates whether the process is an iPhone or iPad app running on a Mac.
-- [var isiOSAppOnVision: Bool](processinfo/isiosapponvision.md)
+- [var isiOSAppOnVision: Bool](./isiosapponvision.md)
   A Boolean value that indicates whether the process is an iPhone or iPad app running on visionOS.
-- [var processName: String](processinfo/processname.md)
+- [var processName: String](./processname.md)
   The name of the process.
 
 

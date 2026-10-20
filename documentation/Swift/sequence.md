@@ -1,7 +1,8 @@
 # Sequence
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that provides sequential, iterated access to its elements.
 
@@ -116,258 +117,259 @@ A sequence should provide its iterator in O(1). The `Sequence` protocol makes no
 ## Topics
 
 ### Creating an Iterator
-- [func makeIterator() -> Self.Iterator](sequence/makeiterator.md)
+- [func makeIterator() -> Self.Iterator](./sequence/makeiterator%28%29.md)
   Returns an iterator over the elements of this sequence.
-- [associatedtype Iterator : IteratorProtocol](sequence/iterator.md)
+- [associatedtype Iterator : IteratorProtocol](./sequence/iterator.md)
   A type that provides the sequence’s iteration interface and encapsulates its iteration state.
-- [associatedtype Element](sequence/element.md)
+- [associatedtype Element](./sequence/element.md)
   A type representing the sequence’s elements.
 ### Finding Elements
-- [func contains(Self.Element) -> Bool](sequence/contains(_:).md)
+- [func contains(Self.Element) -> Bool](./sequence/contains%28_%29.md)
   Returns a Boolean value indicating whether the sequence contains the given element.
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](sequence/contains(where:).md)
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./sequence/contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](sequence/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./sequence/allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](sequence/first(where:).md)
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./sequence/first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func min() -> Self.Element?](sequence/min.md)
+- [func min() -> Self.Element?](./sequence/min%28%29.md)
   Returns the minimum element in the sequence.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](sequence/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./sequence/min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
-- [func max() -> Self.Element?](sequence/max.md)
+- [func max() -> Self.Element?](./sequence/max%28%29.md)
   Returns the maximum element in the sequence.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](sequence/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./sequence/max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 ### Selecting Elements
-- [func prefix(Int) -> PrefixSequence<Self>](sequence/prefix(_:).md)
+- [func prefix(Int) -> PrefixSequence<Self>](./sequence/prefix%28_%29.md)
   Returns a sequence, up to the specified maximum length, containing the initial elements of the sequence.
-- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]](sequence/prefix(while:).md)
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sequence/prefix%28while%29.md)
   Returns a sequence containing the initial, consecutive elements that satisfy the given predicate.
-- [func suffix(Int) -> [Self.Element]](sequence/suffix(_:).md)
+- [func suffix(Int) -> [Self.Element]](./sequence/suffix%28_%29.md)
   Returns a subsequence, up to the given maximum length, containing the final elements of the sequence.
 ### Excluding Elements
-- [func dropFirst(Int) -> DropFirstSequence<Self>](sequence/dropfirst(_:).md)
+- [func dropFirst(Int) -> DropFirstSequence<Self>](./sequence/dropfirst%28_%29.md)
   Returns a sequence containing all but the given number of initial elements.
-- [func dropLast(Int) -> [Self.Element]](sequence/droplast(_:).md)
+- [func dropLast(Int) -> [Self.Element]](./sequence/droplast%28_%29.md)
   Returns a sequence containing all but the given number of final elements.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>](sequence/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>](./sequence/drop%28while%29.md)
   Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.
 ### Transforming a Sequence
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](sequence/map(_:).md)
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](./sequence/map%28_%29.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
-- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](sequence/compactmap(_:).md)
+- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./sequence/compactmap%28_%29.md)
   Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
-- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](sequence/flatmap(_:)-jo2y.md)
+- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](./sequence/flatmap%28_%29-jo2y.md)
   Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
-- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](sequence/reduce(_:_:).md)
+- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](./sequence/reduce%28_,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](sequence/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](./sequence/reduce%28into,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [var lazy: LazySequence<Self>](sequence/lazy.md)
+- [var lazy: LazySequence<Self>](./sequence/lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
-- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](sequence/flatmap(_:)-383uq.md)
+- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./sequence/flatmap%28_%29-383uq.md)
 ### Iterating Over a Sequence’s Elements
-- [func forEach((Self.Element) throws -> Void) rethrows](sequence/foreach(_:).md)
+- [func forEach((Self.Element) throws -> Void) rethrows](./sequence/foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](sequence/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./sequence/enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [var underestimatedCount: Int](sequence/underestimatedcount.md)
+- [var underestimatedCount: Int](./sequence/underestimatedcount.md)
   A value less than or equal to the number of elements in the sequence, calculated nondestructively.
 ### Sorting Elements
-- [func sorted() -> [Self.Element]](sequence/sorted.md)
+- [func sorted() -> [Self.Element]](./sequence/sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](sequence/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sequence/sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func reversed() -> [Self.Element]](sequence/reversed.md)
+- [func reversed() -> [Self.Element]](./sequence/reversed%28%29.md)
   Returns an array containing the elements of this sequence in reverse order.
 ### Reordering a Sequence’s Elements
-- [func shuffled() -> [Self.Element]](sequence/shuffled.md)
+- [func shuffled() -> [Self.Element]](./sequence/shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](sequence/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./sequence/shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
 ### Formatting a Sequence
-- [func formatted() -> String](sequence/formatted.md)
-- [func formatted<S>(S) -> S.FormatOutput](sequence/formatted(_:).md)
-- [struct ListFormatStyle](../foundation/listformatstyle.md)
+- [func formatted() -> String](./sequence/formatted%28%29.md)
+- [func formatted<S>(S) -> S.FormatOutput](./sequence/formatted%28_%29.md)
+- [struct ListFormatStyle](../Foundation/listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
 ### Splitting and Joining Elements
-- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [ArraySlice<Self.Element>]](sequence/split(maxsplits:omittingemptysubsequences:whereseparator:).md)
+- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [ArraySlice<Self.Element>]](./sequence/split%28maxsplits,omittingemptysubsequences,whereseparator%29.md)
   Returns the longest possible subsequences of the sequence, in order, that don’t contain elements satisfying the given predicate. Elements that are used to split the sequence are not returned as part of any subsequence.
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [ArraySlice<Self.Element>]](sequence/split(separator:maxsplits:omittingemptysubsequences:).md)
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [ArraySlice<Self.Element>]](./sequence/split%28separator,maxsplits,omittingemptysubsequences%29.md)
   Returns the longest possible subsequences of the sequence, in order, around elements equal to the given element.
-- [func joined() -> FlattenSequence<Self>](sequence/joined.md)
+- [func joined() -> FlattenSequence<Self>](./sequence/joined%28%29.md)
   Returns the elements of this sequence of sequences, concatenated.
-- [func joined(separator: String) -> String](sequence/joined(separator:)-5zjyj.md)
+- [func joined(separator: String) -> String](./sequence/joined%28separator%29-5zjyj.md)
   Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.
-- [func joined<Separator>(separator: Separator) -> JoinedSequence<Self>](sequence/joined(separator:)-7w47r.md)
+- [func joined<Separator>(separator: Separator) -> JoinedSequence<Self>](./sequence/joined%28separator%29-7w47r.md)
   Returns the concatenated elements of this sequence of sequences, inserting the given separator between each element.
 ### Comparing Sequences
-- [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](sequence/elementsequal(_:).md)
+- [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](./sequence/elementsequal%28_%29.md)
   Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.
-- [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](sequence/elementsequal(_:by:).md)
+- [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](./sequence/elementsequal%28_,by%29.md)
   Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.
-- [func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool](sequence/starts(with:).md)
+- [func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool](./sequence/starts%28with%29.md)
   Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
-- [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](sequence/starts(with:by:).md)
+- [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](./sequence/starts%28with,by%29.md)
   Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
-- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool](sequence/lexicographicallyprecedes(_:).md)
+- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool](./sequence/lexicographicallyprecedes%28_%29.md)
   Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the less-than operator (`<`) to compare elements.
-- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool](sequence/lexicographicallyprecedes(_:by:).md)
+- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool](./sequence/lexicographicallyprecedes%28_,by%29.md)
   Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the given predicate to compare elements.
 ### Accessing Underlying Storage
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](sequence/withcontiguousstorageifavailable(_:).md)
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](./sequence/withcontiguousstorageifavailable%28_%29.md)
   Executes a closure on the sequence’s contiguous storage.
 ### Publishing a Sequence
-- [var publisher: Publishers.Sequence<Self, Never>](sequence/publisher.md)
+- [var publisher: Publishers.Sequence<Self, Never>](./sequence/publisher.md)
 ### Applying AppKit Graphic Operations
-- [func fill(using: NSCompositingOperation)](sequence/fill(using:)-l1te.md)
+- [func fill(using: NSCompositingOperation)](./sequence/fill%28using%29-l1te.md)
   Fills this list of rects in the current NSGraphicsContext in the context’s fill color. The compositing operation of the fill defaults to the context’s compositing operation, not necessarily using `.copy` like `NSRectFill()`.
-- [func fill(using: NSCompositingOperation)](sequence/fill(using:)-45en6.md)
+- [func fill(using: NSCompositingOperation)](./sequence/fill%28using%29-45en6.md)
   Fills this list of rects in the current NSGraphicsContext with that rect’s associated color The compositing operation of the fill defaults to the context’s compositing operation, not necessarily using `.copy` like `NSRectFill()`.
-- [func clip()](sequence/clip.md)
+- [func clip()](./sequence/clip%28%29.md)
   Modifies the current graphics context clipping path by intersecting it with the graphical union of this list of rects This permanently modifies the graphics state, so the current state should be saved beforehand and restored afterwards.
 ### Instance Methods
-- [func compare<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult](sequence/compare(_:_:).md)
+- [func compare<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult](./sequence/compare%28_,_%29.md)
   If `lhs` is ordered before `rhs` in the ordering described by the given sequence of `SortComparator`s
-- [func count<E>(where: (Self.Element) throws(E) -> Bool) throws(E) -> Int](sequence/count(where:).md)
+- [func count<E>(where: (Self.Element) throws(E) -> Bool) throws(E) -> Int](./sequence/count%28where%29.md)
   Returns the number of elements in the sequence that satisfy the given predicate.
-- [func donatedWithin<DonationInfo>(Tips.DonationTimeRange) -> [Self.Element]](sequence/donatedwithin(_:).md)
+- [func donatedWithin<DonationInfo>(Tips.DonationTimeRange) -> [Self.Element]](./sequence/donatedwithin%28_%29.md)
   Filters donations to only those that occurred within the specified time range.
-- [func fill(using: NSCompositingOperation)](sequence/fill(using:)-6sdhf.md)
+- [func fill(using: NSCompositingOperation)](./sequence/fill%28using%29-6sdhf.md)
   Fills this list of rects in the current NSGraphicsContext with that rect’s associated gray component value in the DeviceGray color space. The compositing operation of the fill defaults to the context’s compositing operation, not necessarily using `.copy` like `NSRectFillListWithGrays()`.
-- [func filter<E>((Self.Element) throws(E) -> Bool) throws(E) -> [Self.Element]](sequence/filter(_:)-3gbw.md)
+- [func filter<E>((Self.Element) throws(E) -> Bool) throws(E) -> [Self.Element]](./sequence/filter%28_%29-3gbw.md)
   Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
-- [func filter(Predicate<Self.Element>) throws -> [Self.Element]](sequence/filter(_:)-8li9y.md)
-- [func filter<T>(matchingCategory: CMTypedTag<T>.Category) -> [CMTypedTag<T>]](sequence/filter(matchingcategory:).md)
+- [func filter(Predicate<Self.Element>) throws -> [Self.Element]](./sequence/filter%28_%29-8li9y.md)
+- [func filter<T>(matchingCategory: CMTypedTag<T>.Category) -> [CMTypedTag<T>]](./sequence/filter%28matchingcategory%29.md)
   Filters a sequence of tags based on matching the specified category.  Returns the tags that match the specified category.
-- [func first<T>(matchingCategory: CMTypedTag<T>.Category) -> CMTypedTag<T>?](sequence/first(matchingcategory:).md)
+- [func first<T>(matchingCategory: CMTypedTag<T>.Category) -> CMTypedTag<T>?](./sequence/first%28matchingcategory%29.md)
   Finds and returns the first tag matching the specified category.
-- [func firstValue<T>(matchingCategory: CMTypedTag<T>.Category) -> T?](sequence/firstvalue(matchingcategory:).md)
+- [func firstValue<T>(matchingCategory: CMTypedTag<T>.Category) -> T?](./sequence/firstvalue%28matchingcategory%29.md)
   Finds the first tag matching the specified category and returns the value of the matching tag.
-- [func largestSubset<DonationInfo, Value>(groupedBy: KeyPath<DonationInfo, Value>) -> [Self.Element]](sequence/largestsubset(groupedby:).md)
+- [func largestSubset<DonationInfo, Value>(groupedBy: KeyPath<DonationInfo, Value>) -> [Self.Element]](./sequence/largestsubset%28groupedby%29.md)
   Returns the largest group of donations when grouped by the specified key path.
-- [func makeBorrowingIterator() -> BorrowingIteratorAdapter<Self.Iterator>](sequence/makeborrowingiterator.md)
-- [func mapAnnotations<Feature, Input, Output>((Input) async throws -> Output) async rethrows -> [AnnotatedFeature<Feature, Output>]](sequence/mapannotations(_:)-48olp.md)
+- [func makeBorrowingIterator() -> BorrowingIteratorAdapter<Self.Iterator>](./sequence/makeborrowingiterator%28%29.md)
+- [func mapAnnotations<Feature, Input, Output>((Input) async throws -> Output) async rethrows -> [AnnotatedFeature<Feature, Output>]](./sequence/mapannotations%28_%29-48olp.md)
   Returns an array containing the results of mapping the given async closure over the sequence’s annotations.
-- [func mapAnnotations<Feature, Input, Output>((Input) throws -> Output) rethrows -> [AnnotatedFeature<Feature, Output>]](sequence/mapannotations(_:)-9q4pb.md)
+- [func mapAnnotations<Feature, Input, Output>((Input) throws -> Output) rethrows -> [AnnotatedFeature<Feature, Output>]](./sequence/mapannotations%28_%29-9q4pb.md)
   Returns an array containing the results of mapping the given closure over the sequence’s annotations.
-- [func mapFeatures<Input, Output, Annotation>((Input) async throws -> Output) async rethrows -> [AnnotatedFeature<Output, Annotation>]](sequence/mapfeatures(_:)-83n0d.md)
+- [func mapFeatures<Input, Output, Annotation>((Input) async throws -> Output) async rethrows -> [AnnotatedFeature<Output, Annotation>]](./sequence/mapfeatures%28_%29-83n0d.md)
   Returns an array containing the results of mapping the given async closure over the sequence’s features.
-- [func mapFeatures<Input, Output, Annotation>((Input) throws -> Output) rethrows -> [AnnotatedFeature<Output, Annotation>]](sequence/mapfeatures(_:)-8zq1h.md)
+- [func mapFeatures<Input, Output, Annotation>((Input) throws -> Output) rethrows -> [AnnotatedFeature<Output, Annotation>]](./sequence/mapfeatures%28_%29-8zq1h.md)
   Returns an array containing the results of mapping the given closure over the sequence’s features.
-- [func randomSplit<Feature, Annotation>(by: Double, seed: Int?) -> ([AnnotatedFeature<Feature, Annotation>], [AnnotatedFeature<Feature, Annotation>])](sequence/randomsplit(by:seed:)-3a1xo.md)
+- [func randomSplit<Feature, Annotation>(by: Double, seed: Int?) -> ([AnnotatedFeature<Feature, Annotation>], [AnnotatedFeature<Feature, Annotation>])](./sequence/randomsplit%28by,seed%29-3a1xo.md)
   Generates two AnnotatedFeatures by randomly splitting the elements of the sequence, at the same proportion within each unique Annotation.
-- [func randomSplit<T>(by: Double, seed: Int?) -> (ArraySlice<T>, ArraySlice<T>)](sequence/randomsplit(by:seed:)-9637d.md)
+- [func randomSplit<T>(by: Double, seed: Int?) -> (ArraySlice<T>, ArraySlice<T>)](./sequence/randomsplit%28by,seed%29-9637d.md)
   Generates two generic arrays by randomly splitting the elements of the sequence.
-- [func randomSplit<T, Generator>(by: Double, using: inout Generator) -> (ArraySlice<T>, ArraySlice<T>)](sequence/randomsplit(by:using:)-500fy.md)
+- [func randomSplit<T, Generator>(by: Double, using: inout Generator) -> (ArraySlice<T>, ArraySlice<T>)](./sequence/randomsplit%28by,using%29-500fy.md)
   Generates two generic arrays by randomly splitting the elements of the sequence.
-- [func randomSplit<Feature, Annotation, Generator>(by: Double, using: inout Generator) -> ([AnnotatedFeature<Feature, Annotation>], [AnnotatedFeature<Feature, Annotation>])](sequence/randomsplit(by:using:)-9i5e5.md)
+- [func randomSplit<Feature, Annotation, Generator>(by: Double, using: inout Generator) -> ([AnnotatedFeature<Feature, Annotation>], [AnnotatedFeature<Feature, Annotation>])](./sequence/randomsplit%28by,using%29-9i5e5.md)
   Generates two AnnotatedFeatures by randomly splitting the elements of the sequence, at the same proportion within each unique Annotation.
-- [func smallestSubset<DonationInfo, Value>(groupedBy: KeyPath<DonationInfo, Value>) -> [Self.Element]](sequence/smallestsubset(groupedby:).md)
+- [func smallestSubset<DonationInfo, Value>(groupedBy: KeyPath<DonationInfo, Value>) -> [Self.Element]](./sequence/smallestsubset%28groupedby%29.md)
   Returns the smallest group of donations when grouped by the specified key path.
-- [func sorted<S, Comparator>(using: S) -> [Self.Element]](sequence/sorted(using:)-69w5u.md)
+- [func sorted<S, Comparator>(using: S) -> [Self.Element]](./sequence/sorted%28using%29-69w5u.md)
   Returns the elements of the sequence, sorted using the given array of `SortComparator`s to compare elements.
-- [func sorted<Comparator>(using: Comparator) -> [Self.Element]](sequence/sorted(using:)-95lls.md)
+- [func sorted<Comparator>(using: Comparator) -> [Self.Element]](./sequence/sorted%28using%29-95lls.md)
   Returns the elements of the sequence, sorted using the given comparator to compare elements.
 ### Type Methods
-- [static func reparentEquipment(some Sequence<any Equipment>, childrenOf: some Equipment, order: MoveEquipmentAction.Order?, context: UInt64) -> Self](sequence/reparentequipment(_:childrenof:order:context:).md)
-- [static func reparentEquipment(matching: some Sequence<EquipmentIdentifier>, childrenOf: EquipmentIdentifier, order: MoveEquipmentAction.Order?, context: UInt64) -> Self](sequence/reparentequipment(matching:childrenof:order:context:).md)
+- [static func reparentEquipment(some Sequence<any Equipment>, childrenOf: some Equipment, order: MoveEquipmentAction.Order?, context: UInt64) -> Self](./sequence/reparentequipment%28_,childrenof,order,context%29.md)
+- [static func reparentEquipment(matching: some Sequence<EquipmentIdentifier>, childrenOf: EquipmentIdentifier, order: MoveEquipmentAction.Order?, context: UInt64) -> Self](./sequence/reparentequipment%28matching,childrenof,order,context%29.md)
 
 ## Relationships
 
 ### Inherited By
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [LazyCollectionProtocol](lazycollectionprotocol.md)
-- [LazySequenceProtocol](lazysequenceprotocol.md)
-- [MutableCollection](mutablecollection.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [RangeReplaceableCollection](rangereplaceablecollection.md)
-- [StringProtocol](stringprotocol.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [LazyCollectionProtocol](./lazycollectionprotocol.md)
+- [LazySequenceProtocol](./lazysequenceprotocol.md)
+- [MutableCollection](./mutablecollection.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [RangeReplaceableCollection](./rangereplaceablecollection.md)
+- [StringProtocol](./stringprotocol.md)
 ### Conforming Types
-- [AnyBidirectionalCollection](anybidirectionalcollection.md)
-- [AnyCollection](anycollection.md)
-- [AnyIterator](anyiterator.md)
-- [AnyRandomAccessCollection](anyrandomaccesscollection.md)
-- [AnyRegexOutput](anyregexoutput.md)
-- [AnySequence](anysequence.md)
-- [Array](array.md)
-- [ArraySlice](arrayslice.md)
-- [ClosedRange](closedrange.md)
-- [CollectionDifference](collectiondifference.md)
-- [CollectionOfOne](collectionofone.md)
-- [ContiguousArray](contiguousarray.md)
-- [DefaultIndices](defaultindices.md)
-- [Dictionary](dictionary.md)
-- [Dictionary.Keys](dictionary/keys-swift.struct.md)
-- [Dictionary.Values](dictionary/values-swift.struct.md)
-- [DiscontiguousSlice](discontiguousslice.md)
-- [DropFirstSequence](dropfirstsequence.md)
-- [DropWhileSequence](dropwhilesequence.md)
-- [EmptyCollection](emptycollection.md)
-- [EmptyCollection.Iterator](emptycollection/iterator.md)
-- [EnumeratedSequence](enumeratedsequence.md)
-- [EnumeratedSequence.Iterator](enumeratedsequence/iterator.md)
-- [FlattenSequence](flattensequence.md)
-- [FlattenSequence.Iterator](flattensequence/iterator.md)
-- [IndexingIterator](indexingiterator.md)
-- [Int.Words](int/words-swift.struct.md)
-- [Int16.Words](int16/words-swift.struct.md)
-- [Int32.Words](int32/words-swift.struct.md)
-- [Int64.Words](int64/words-swift.struct.md)
-- [Int8.Words](int8/words-swift.struct.md)
-- [IteratorSequence](iteratorsequence.md)
-- [JoinedSequence](joinedsequence.md)
-- [KeyValuePairs](keyvaluepairs.md)
-- [LazyDropWhileSequence](lazydropwhilesequence.md)
-- [LazyFilterSequence](lazyfiltersequence.md)
-- [LazyFilterSequence.Iterator](lazyfiltersequence/iterator.md)
-- [LazyMapSequence](lazymapsequence.md)
-- [LazyMapSequence.Iterator](lazymapsequence/iterator.md)
-- [LazyPrefixWhileSequence](lazyprefixwhilesequence.md)
-- [LazyPrefixWhileSequence.Iterator](lazyprefixwhilesequence/iterator.md)
-- [LazySequence](lazysequence.md)
-- [PartialRangeFrom](partialrangefrom.md)
-- [PrefixSequence](prefixsequence.md)
-- [Range](range.md)
-- [RangeSet.Ranges](rangeset/ranges-swift.struct.md)
-- [Repeated](repeated.md)
-- [ReversedCollection](reversedcollection.md)
-- [ReversedCollection.Iterator](reversedcollection/iterator.md)
-- [Set](set.md)
-- [Slice](slice.md)
-- [StrideThrough](stridethrough.md)
-- [StrideTo](strideto.md)
-- [String](string.md)
-- [String.UTF16View](string/utf16view.md)
-- [String.UTF8View](string/utf8view.md)
-- [String.UnicodeScalarView](string/unicodescalarview.md)
-- [Substring](substring.md)
-- [Substring.UTF16View](substring/utf16view.md)
-- [Substring.UTF8View](substring/utf8view.md)
-- [Substring.UnicodeScalarView](substring/unicodescalarview.md)
-- [UInt.Words](uint/words-swift.struct.md)
-- [UInt128.Words](uint128/words-swift.struct.md)
-- [UInt16.Words](uint16/words-swift.struct.md)
-- [UInt32.Words](uint32/words-swift.struct.md)
-- [UInt64.Words](uint64/words-swift.struct.md)
-- [UInt8.Words](uint8/words-swift.struct.md)
-- [UnfoldSequence](unfoldsequence.md)
-- [Unicode.Scalar.UTF16View](unicode/scalar/utf16view.md)
-- [Unicode.Scalar.UTF8View](unicode/scalar/utf8view.md)
-- [UnsafeBufferPointer](unsafebufferpointer.md)
-- [UnsafeMutableBufferPointer](unsafemutablebufferpointer.md)
-- [UnsafeMutableRawBufferPointer](unsafemutablerawbufferpointer.md)
-- [UnsafeRawBufferPointer](unsaferawbufferpointer.md)
-- [UnsafeRawBufferPointer.Iterator](unsaferawbufferpointer/iterator.md)
-- [Zip2Sequence](zip2sequence.md)
+- [AnyBidirectionalCollection](./anybidirectionalcollection.md)
+- [AnyCollection](./anycollection.md)
+- [AnyIterator](./anyiterator.md)
+- [AnyRandomAccessCollection](./anyrandomaccesscollection.md)
+- [AnyRegexOutput](./anyregexoutput.md)
+- [AnySequence](./anysequence.md)
+- [Array](./array.md)
+- [ArraySlice](./arrayslice.md)
+- [ClosedRange](./closedrange.md)
+- [CollectionDifference](./collectiondifference.md)
+- [CollectionOfOne](./collectionofone.md)
+- [ContiguousArray](./contiguousarray.md)
+- [DefaultIndices](./defaultindices.md)
+- [Dictionary](./dictionary.md)
+- [Dictionary.Keys](./dictionary/keys-swift.struct.md)
+- [Dictionary.Values](./dictionary/values-swift.struct.md)
+- [DiscontiguousSlice](./discontiguousslice.md)
+- [DropFirstSequence](./dropfirstsequence.md)
+- [DropWhileSequence](./dropwhilesequence.md)
+- [EmptyCollection](./emptycollection.md)
+- [EmptyCollection.Iterator](./emptycollection/iterator.md)
+- [EnumeratedSequence](./enumeratedsequence.md)
+- [EnumeratedSequence.Iterator](./enumeratedsequence/iterator.md)
+- [FlattenSequence](./flattensequence.md)
+- [FlattenSequence.Iterator](./flattensequence/iterator.md)
+- [IndexingIterator](./indexingiterator.md)
+- [Int.Words](./int/words-swift.struct.md)
+- [Int16.Words](./int16/words-swift.struct.md)
+- [Int32.Words](./int32/words-swift.struct.md)
+- [Int64.Words](./int64/words-swift.struct.md)
+- [Int8.Words](./int8/words-swift.struct.md)
+- [IteratorSequence](./iteratorsequence.md)
+- [JoinedSequence](./joinedsequence.md)
+- [KeyValuePairs](./keyvaluepairs.md)
+- [LazyDropWhileSequence](./lazydropwhilesequence.md)
+- [LazyFilterSequence](./lazyfiltersequence.md)
+- [LazyFilterSequence.Iterator](./lazyfiltersequence/iterator.md)
+- [LazyMapSequence](./lazymapsequence.md)
+- [LazyMapSequence.Iterator](./lazymapsequence/iterator.md)
+- [LazyPrefixWhileSequence](./lazyprefixwhilesequence.md)
+- [LazyPrefixWhileSequence.Iterator](./lazyprefixwhilesequence/iterator.md)
+- [LazySequence](./lazysequence.md)
+- [PartialRangeFrom](./partialrangefrom.md)
+- [PrefixSequence](./prefixsequence.md)
+- [Range](./range.md)
+- [RangeSet.Ranges](./rangeset/ranges-swift.struct.md)
+- [Repeated](./repeated.md)
+- [ReversedCollection](./reversedcollection.md)
+- [ReversedCollection.Iterator](./reversedcollection/iterator.md)
+- [Set](./set.md)
+- [Slice](./slice.md)
+- [StrideThrough](./stridethrough.md)
+- [StrideTo](./strideto.md)
+- [String](./string.md)
+- [String.UTF16View](./string/utf16view.md)
+- [String.UTF8View](./string/utf8view.md)
+- [String.UnicodeScalarView](./string/unicodescalarview.md)
+- [Substring](./substring.md)
+- [Substring.UTF16View](./substring/utf16view.md)
+- [Substring.UTF8View](./substring/utf8view.md)
+- [Substring.UnicodeScalarView](./substring/unicodescalarview.md)
+- [UInt.Words](./uint/words-swift.struct.md)
+- [UInt128.Words](./uint128/words-swift.struct.md)
+- [UInt16.Words](./uint16/words-swift.struct.md)
+- [UInt32.Words](./uint32/words-swift.struct.md)
+- [UInt64.Words](./uint64/words-swift.struct.md)
+- [UInt8.Words](./uint8/words-swift.struct.md)
+- [UnfoldSequence](./unfoldsequence.md)
+- [Unicode.Scalar.UTF16View](./unicode/scalar/utf16view.md)
+- [Unicode.Scalar.UTF8View](./unicode/scalar/utf8view.md)
+- [UnsafeBufferPointer](./unsafebufferpointer.md)
+- [UnsafeMutableBufferPointer](./unsafemutablebufferpointer.md)
+- [UnsafeMutableRawBufferPointer](./unsafemutablerawbufferpointer.md)
+- [UnsafeRawBufferPointer](./unsaferawbufferpointer.md)
+- [UnsafeRawBufferPointer.Iterator](./unsaferawbufferpointer/iterator.md)
+- [Zip2Sequence](./zip2sequence.md)
 
 ## See Also
 
-- [protocol IteratorProtocol](iteratorprotocol.md)
+### First Steps
+- [protocol IteratorProtocol](./iteratorprotocol.md)
   A type that supplies the values of a sequence one at a time.
-- [protocol Collection](collection.md)
+- [protocol Collection](./collection.md)
   A sequence whose elements can be traversed multiple times, nondestructively, and accessed by an indexed subscript.
 
 

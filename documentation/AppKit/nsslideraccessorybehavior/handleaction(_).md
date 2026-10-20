@@ -1,7 +1,8 @@
 # handleAction(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Override point for custom subclasses to handle interaction.
 
@@ -15,6 +16,10 @@ Override point for custom subclasses to handle interaction.
 
 ```swift
 func handleAction(_ sender: NSSliderAccessory)
+```
+
+```objc
+- (void) handleAction:(NSSliderAccessory *) sender;
 ```
 
 

@@ -1,7 +1,8 @@
 # kCMFormatDescriptionCameraCalibrationLensRole_Right
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -18,23 +19,28 @@
 let kCMFormatDescriptionCameraCalibrationLensRole_Right: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionCameraCalibrationLensRole_Right;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection: CFString](kcmformatdescriptionextension_cameracalibrationdatalenscollection.md)
-- [let kCMFormatDescriptionCameraCalibration_ExtrinsicOrientationQuaternion: CFString](kcmformatdescriptioncameracalibration_extrinsicorientationquaternion.md)
-- [let kCMFormatDescriptionCameraCalibration_ExtrinsicOriginSource: CFString](kcmformatdescriptioncameracalibration_extrinsicoriginsource.md)
-- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrix: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrix.md)
-- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixprojectionoffset.md)
-- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixreferencedimensions.md)
-- [let kCMFormatDescriptionCameraCalibration_LensAlgorithmKind: CFString](kcmformatdescriptioncameracalibration_lensalgorithmkind.md)
-- [let kCMFormatDescriptionCameraCalibration_LensDistortions: CFString](kcmformatdescriptioncameracalibration_lensdistortions.md)
-- [let kCMFormatDescriptionCameraCalibration_LensDomain: CFString](kcmformatdescriptioncameracalibration_lensdomain.md)
-- [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialX: CFString](kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialx.md)
-- [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialY: CFString](kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialy.md)
-- [let kCMFormatDescriptionCameraCalibration_LensIdentifier: CFString](kcmformatdescriptioncameracalibration_lensidentifier.md)
-- [let kCMFormatDescriptionCameraCalibration_LensRole: CFString](kcmformatdescriptioncameracalibration_lensrole.md)
-- [let kCMFormatDescriptionCameraCalibration_RadialAngleLimit: CFString](kcmformatdescriptioncameracalibration_radialanglelimit.md)
-- [let kCMFormatDescriptionCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline: CFString](kcmformatdescriptioncameracalibrationextrinsicoriginsource_stereocamerasystembaseline.md)
+### Constants
+- [let kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection: CFString](./kcmformatdescriptionextension_cameracalibrationdatalenscollection.md)
+- [let kCMFormatDescriptionCameraCalibration_ExtrinsicOrientationQuaternion: CFString](./kcmformatdescriptioncameracalibration_extrinsicorientationquaternion.md)
+- [let kCMFormatDescriptionCameraCalibration_ExtrinsicOriginSource: CFString](./kcmformatdescriptioncameracalibration_extrinsicoriginsource.md)
+- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrix: CFString](./kcmformatdescriptioncameracalibration_intrinsicmatrix.md)
+- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset: CFString](./kcmformatdescriptioncameracalibration_intrinsicmatrixprojectionoffset.md)
+- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CFString](./kcmformatdescriptioncameracalibration_intrinsicmatrixreferencedimensions.md)
+- [let kCMFormatDescriptionCameraCalibration_LensAlgorithmKind: CFString](./kcmformatdescriptioncameracalibration_lensalgorithmkind.md)
+- [let kCMFormatDescriptionCameraCalibration_LensDistortions: CFString](./kcmformatdescriptioncameracalibration_lensdistortions.md)
+- [let kCMFormatDescriptionCameraCalibration_LensDomain: CFString](./kcmformatdescriptioncameracalibration_lensdomain.md)
+- [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialX: CFString](./kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialx.md)
+- [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialY: CFString](./kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialy.md)
+- [let kCMFormatDescriptionCameraCalibration_LensIdentifier: CFString](./kcmformatdescriptioncameracalibration_lensidentifier.md)
+- [let kCMFormatDescriptionCameraCalibration_LensRole: CFString](./kcmformatdescriptioncameracalibration_lensrole.md)
+- [let kCMFormatDescriptionCameraCalibration_RadialAngleLimit: CFString](./kcmformatdescriptioncameracalibration_radialanglelimit.md)
+- [let kCMFormatDescriptionCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline: CFString](./kcmformatdescriptioncameracalibrationextrinsicoriginsource_stereocamerasystembaseline.md)
 
 
 ---

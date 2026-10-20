@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the boosted tree classifier that’s suitable for output during debugging.
 
@@ -21,9 +22,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlboostedtreeclassifier/description.md)
+### Describing a boosted tree classifier
+- [var description: String](./description.md)
   A text representation of the boosted tree classifier.
-- [var playgroundDescription: Any](mlboostedtreeclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the boosted tree classifier shown in a playground.
 
 

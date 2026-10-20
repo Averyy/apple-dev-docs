@@ -1,7 +1,8 @@
 # ImmersiveSpaceContent
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that you can use as the content of an immersive space.
 
@@ -37,18 +38,19 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Creating immersive space content
-- [var body: Self.Body](immersivespacecontent/body-swift.property.md)
-- [associatedtype Body : ImmersiveSpaceContent](immersivespacecontent/body-swift.associatedtype.md)
+- [var body: Self.Body](./immersivespacecontent/body-swift.property.md)
+- [associatedtype Body : ImmersiveSpaceContent](./immersivespacecontent/body-swift.associatedtype.md)
 
 ## Relationships
 
 ### Conforming Types
-- [CompositorContentBuilder.Content](compositorcontentbuilder/content.md)
-- [ImmersiveSpaceViewContent](immersivespaceviewcontent.md)
+- [CompositorContentBuilder.Content](./compositorcontentbuilder/content.md)
+- [ImmersiveSpaceViewContent](./immersivespaceviewcontent.md)
 
 ## See Also
 
-- [struct ImmersiveSpaceViewContent](immersivespaceviewcontent.md)
+### Supporting types
+- [struct ImmersiveSpaceViewContent](./immersivespaceviewcontent.md)
   Immersive space content that uses a SwiftUI view hierarchy as the content.
 
 

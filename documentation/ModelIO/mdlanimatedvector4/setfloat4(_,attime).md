@@ -1,7 +1,8 @@
 # setFloat4(_:atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setFloat4(_ value: vector_float4, atTime time: TimeInterval)
+```
+
+```objc
+- (void) setFloat4:(vector_float4) value atTime:(NSTimeInterval) time;
 ```
 
 

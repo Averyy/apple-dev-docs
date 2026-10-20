@@ -1,7 +1,8 @@
 # UIPress.PressType.rightArrow
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents the right arrow button.
 
@@ -18,17 +19,22 @@ A constant that represents the right arrow button.
 case rightArrow
 ```
 
+```c
+UIPressTypeRightArrow
+```
+
 ## See Also
 
-- [UIPress.PressType.upArrow](uipress/presstype/uparrow.md)
+### Navigation
+- [UIPress.PressType.upArrow](./uparrow.md)
   A constant that represents the up arrow button.
-- [UIPress.PressType.downArrow](uipress/presstype/downarrow.md)
+- [UIPress.PressType.downArrow](./downarrow.md)
   A constant that represents the down arrow button.
-- [UIPress.PressType.leftArrow](uipress/presstype/leftarrow.md)
+- [UIPress.PressType.leftArrow](./leftarrow.md)
   A constant that represents the left arrow button.
-- [UIPress.PressType.pageDown](uipress/presstype/pagedown.md)
+- [UIPress.PressType.pageDown](./pagedown.md)
   A constant that represents the page down button.
-- [UIPress.PressType.pageUp](uipress/presstype/pageup.md)
+- [UIPress.PressType.pageUp](./pageup.md)
   A constant that represents the page up button.
 
 

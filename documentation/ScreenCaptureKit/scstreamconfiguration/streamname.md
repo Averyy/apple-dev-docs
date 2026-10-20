@@ -1,7 +1,8 @@
 # streamName
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name that you provide for identifying the stream.
 
@@ -13,6 +14,10 @@ A name that you provide for identifying the stream.
 
 ```swift
 var streamName: String? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSString * streamName;
 ```
 
 

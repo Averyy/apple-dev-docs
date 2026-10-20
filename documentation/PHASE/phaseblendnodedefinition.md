@@ -1,7 +1,8 @@
 # PHASEBlendNodeDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A node that smoothly fades between the audio of its child nodes.
 
@@ -19,11 +20,15 @@ A node that smoothly fades between the audio of its child nodes.
 class PHASEBlendNodeDefinition
 ```
 
+```objc
+@interface PHASEBlendNodeDefinition : PHASESoundEventNodeDefinition
+```
+
 #### Overview
 
 This class defines a threshold and a numeric parameter the app increases and decreases to fade between child nodes. Each child node defines a range within the threshold in which the child node plays audio. As the app moves the blend parameter value between `0` and the threshold, the blend node plays the audio of its child nodes whose range and fade curve overlap at the current value.
 
-![Illustration of a flowchart that represents a sound event node tree. The chart contains three boxes, which represent nodes. At left, a box labeled Blend Node extends an arrow, which points to a box in the upper right that’s labeled, Sampler Node Cobblestone Footstep. The box labeled Random Node extends another arrow, which points to a box in the lower right that’s labeled, Sampler Node Grass Footstep. A verticle bar ranges from top sampler node to the bottom sampler node to indicate the range in which both just one node actively plays audio, or both nodes actively play audio, and to what volume they play. ](/images/com.apple.phase/media-3918862@2x.png)
+![Illustration of a flowchart that represents a sound event node tree. The chart contains three boxes, which represent nodes. At left, a box labeled Blend Node extends an arrow, which points to a box in the upper right that’s labeled, Sampler Node Cobblestone Footstep. The box labeled Random Node extends another arrow, which points to a box in the lower right that’s labeled, Sampler Node Grass Footstep. A verticle bar ranges from top sampler node to the bottom sampler node to indicate the range in which both just one node actively plays audio, or both nodes actively play audio, and to what volume they play. ](https://developer.apple.com/tutorials/images/com.apple.phase/media-3918862@2x.png)
 
 ##### Play a Blend of Simultaneous Audio Data
 
@@ -75,51 +80,52 @@ footstepEvent?.start() { reason in
 ## Topics
 
 ### Creating a Blend Node
-- [init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition)](phaseblendnodedefinition/init(blendmetaparameterdefinition:).md)
+- [init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition)](./phaseblendnodedefinition/init%28blendmetaparameterdefinition%29.md)
   Creates a blend node with a maxiumum blend range value.
-- [convenience init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition, identifier: String)](phaseblendnodedefinition/init(blendmetaparameterdefinition:identifier:).md)
+- [convenience init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition, identifier: String)](./phaseblendnodedefinition/init%28blendmetaparameterdefinition,identifier%29.md)
   Creates a named blend node with a maxiumum blend range value.
-- [init(spatialMixerDefinition: PHASESpatialMixerDefinition)](phaseblendnodedefinition/init(spatialmixerdefinition:).md)
+- [init(spatialMixerDefinition: PHASESpatialMixerDefinition)](./phaseblendnodedefinition/init%28spatialmixerdefinition%29.md)
   Creates a blend node for spatial audio output.
-- [convenience init(spatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)](phaseblendnodedefinition/init(spatialmixerdefinition:identifier:).md)
+- [convenience init(spatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)](./phaseblendnodedefinition/init%28spatialmixerdefinition,identifier%29.md)
   Creates a named blend node for spatial audio output.
 ### Accessing Blend Properties
-- [var blendParameterDefinition: PHASENumberMetaParameterDefinition?](phaseblendnodedefinition/blendparameterdefinition.md)
+- [var blendParameterDefinition: PHASENumberMetaParameterDefinition?](./phaseblendnodedefinition/blendparameterdefinition.md)
   The meta parameter definition that caps the blend range.
-- [var spatialMixerDefinitionForDistance: PHASESpatialMixerDefinition?](phaseblendnodedefinition/spatialmixerdefinitionfordistance.md)
+- [var spatialMixerDefinitionForDistance: PHASESpatialMixerDefinition?](./phaseblendnodedefinition/spatialmixerdefinitionfordistance.md)
   An object that combines spatial audio layers.
 ### Adding Child Nodes
-- [func addRange(envelope: PHASEEnvelope, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrange(envelope:subtree:).md)
+- [func addRange(envelope: PHASEEnvelope, subtree: PHASESoundEventNodeDefinition)](./phaseblendnodedefinition/addrange%28envelope,subtree%29.md)
   Adds a child node with an envelope.
-- [func addRangeForInputValuesAbove(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrangeforinputvaluesabove(value:fullgainatvalue:fadecurvetype:subtree:).md)
+- [func addRangeForInputValuesAbove(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](./phaseblendnodedefinition/addrangeforinputvaluesabove%28value,fullgainatvalue,fadecurvetype,subtree%29.md)
   Adds a child node that blends above a given value.
-- [func addRangeForInputValuesBelow(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrangeforinputvaluesbelow(value:fullgainatvalue:fadecurvetype:subtree:).md)
+- [func addRangeForInputValuesBelow(value: Double, fullGainAtValue: Double, fadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](./phaseblendnodedefinition/addrangeforinputvaluesbelow%28value,fullgainatvalue,fadecurvetype,subtree%29.md)
   Adds a child node that blends below a given value.
-- [func addRangeForInputValuesBetween(lowValue: Double, highValue: Double, fullGainAtLowValue: Double, fullGainAtHighValue: Double, lowFadeCurveType: PHASECurveType, highFadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrangeforinputvaluesbetween(lowvalue:highvalue:fullgainatlowvalue:fullgainathighvalue:lowfadecurvetype:highfadecurvetype:subtree:).md)
+- [func addRangeForInputValuesBetween(lowValue: Double, highValue: Double, fullGainAtLowValue: Double, fullGainAtHighValue: Double, lowFadeCurveType: PHASECurveType, highFadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](./phaseblendnodedefinition/addrangeforinputvaluesbetween%28lowvalue,highvalue,fullgainatlowvalue,fullgainathighvalue,lowfadecurvetype,highfadecurvetype,subtree%29.md)
   Adds a child node that blends between a given high and low value.
 ### Initializers
-- [init(distanceBlendWithSpatialMixerDefinition: PHASESpatialMixerDefinition)](phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:).md)
-- [convenience init(distanceBlendWithSpatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)](phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:identifier:).md)
+- [init(distanceBlendWithSpatialMixerDefinition: PHASESpatialMixerDefinition)](./phaseblendnodedefinition/init%28distanceblendwithspatialmixerdefinition%29.md)
+- [convenience init(distanceBlendWithSpatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)](./phaseblendnodedefinition/init%28distanceblendwithspatialmixerdefinition,identifier%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESwitchNodeDefinition](phaseswitchnodedefinition.md)
+### Control Nodes
+- [class PHASESwitchNodeDefinition](./phaseswitchnodedefinition.md)
   A node that passes invocation to only one of its child nodes.
-- [class PHASERandomNodeDefinition](phaserandomnodedefinition.md)
+- [class PHASERandomNodeDefinition](./phaserandomnodedefinition.md)
   A sound event node that invokes one of its child nodes at random.
-- [class PHASEContainerNodeDefinition](phasecontainernodedefinition.md)
+- [class PHASEContainerNodeDefinition](./phasecontainernodedefinition.md)
   A node that plays all its children at the same time.
 
 

@@ -1,7 +1,8 @@
 # organizer
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attributes queried for the event organizer/host.
 
@@ -20,12 +21,13 @@ var organizer: [SearchableItemAttribute]?
 
 ## See Also
 
-- [var attendees: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/calendar-swift.struct/attendees.md)
-  Attributes queried for attendees/participants. Default: [`participants`](searchableitemattribute/participants.md)
-- [var date: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/calendar-swift.struct/date.md)
-  Attributes queried for the event date. Default: [`dueDate`](searchableitemattribute/duedate.md)
-- [var location: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/calendar-swift.struct/location.md)
-  Attributes queried for the event location. Default: [`namedLocation`](searchableitemattribute/namedlocation.md), [`city`](searchableitemattribute/city.md), [`stateOrProvince`](searchableitemattribute/stateorprovince.md)
+### Getting the domain attributes
+- [var attendees: [SearchableItemAttribute]?](./attendees.md)
+  Attributes queried for attendees/participants. Default: [`participants`](../../../searchableitemattribute/participants.md)
+- [var date: [SearchableItemAttribute]?](./date.md)
+  Attributes queried for the event date. Default: [`dueDate`](../../../searchableitemattribute/duedate.md)
+- [var location: [SearchableItemAttribute]?](./location.md)
+  Attributes queried for the event location. Default: [`namedLocation`](../../../searchableitemattribute/namedlocation.md), [`city`](../../../searchableitemattribute/city.md), [`stateOrProvince`](../../../searchableitemattribute/stateorprovince.md)
 
 
 ---

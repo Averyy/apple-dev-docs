@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that is the content of the form.
 
@@ -22,7 +23,8 @@ let content: FormStyleConfiguration.Content
 
 ## See Also
 
-- [FormStyleConfiguration.Content](formstyleconfiguration/content-swift.struct.md)
+### Getting configuration content
+- [FormStyleConfiguration.Content](./content-swift.struct.md)
   A type-erased content of a form.
 
 

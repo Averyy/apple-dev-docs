@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The user-info dictionary.
@@ -20,6 +21,12 @@ The user-info dictionary.
 ```swift
 var errorUserInfo: [String : Any] { get }
 ```
+
+## Default Implementations
+
+### CustomNSError Implementations
+- [var errorUserInfo: [String : Any]](./erroruserinfo-1aas5.md)
+  The default user-info dictionary.
 
 
 ---

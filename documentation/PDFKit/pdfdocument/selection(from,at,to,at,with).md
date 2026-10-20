@@ -1,7 +1,8 @@
 # selection(from:at:to:at:with:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -13,8 +14,28 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func selection(from startPage: PDFPage, at startPoint: CGPoint, to endPage: PDFPage, at endPoint: CGPoint, with granularity: PDFSelectionGranularity) -> PDFSelection?
+```
+
+*macOS*
+
 ```swift
 func selection(from startPage: PDFPage, at startPoint: NSPoint, to endPage: PDFPage, at endPoint: NSPoint, with granularity: PDFSelectionGranularity) -> PDFSelection?
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (PDFSelection *) selectionFromPage:(PDFPage *) startPage atPoint:(CGPoint) startPoint toPage:(PDFPage *) endPage atPoint:(CGPoint) endPoint withGranularity:(PDFSelectionGranularity) granularity;
+```
+
+*macOS*
+
+```objc
+- (PDFSelection *) selectionFromPage:(PDFPage *) startPage atPoint:(NSPoint) startPoint toPage:(PDFPage *) endPage atPoint:(NSPoint) endPoint withGranularity:(PDFSelectionGranularity) granularity;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an appearance object from data in an unarchiver.
 
@@ -18,11 +19,16 @@ Creates an appearance object from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(style: UIBarButtonItem.Style)](uibarbuttonitemappearance/init(style:).md)
+### Creating a bar button item appearance object
+- [init(style: UIBarButtonItem.Style)](./init%28style%29.md)
   Creates an appearance with default values that are appropriate for the specified button style.
-- [convenience init()](uibarbuttonitemappearance/init.md)
+- [convenience init()](./init%28%29.md)
   Creates an appearance object with default values that are appropriate for a plain button.
 
 

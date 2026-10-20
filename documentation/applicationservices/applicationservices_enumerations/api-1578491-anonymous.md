@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kICMapBinaryMask: Int](kicmapbinarymask.md)
-- [var kICMapDataForkMask: Int](kicmapdataforkmask.md)
-- [var kICMapNotIncomingMask: Int](kicmapnotincomingmask.md)
-- [var kICMapNotOutgoingMask: Int](kicmapnotoutgoingmask.md)
-- [var kICMapPostMask: Int](kicmappostmask.md)
-- [var kICMapResourceForkMask: Int](kicmapresourceforkmask.md)
+- [var kICMapBinaryMask: Int](../kicmapbinarymask.md)
+- [var kICMapDataForkMask: Int](../kicmapdataforkmask.md)
+- [var kICMapNotIncomingMask: Int](../kicmapnotincomingmask.md)
+- [var kICMapNotOutgoingMask: Int](../kicmapnotoutgoingmask.md)
+- [var kICMapPostMask: Int](../kicmappostmask.md)
+- [var kICMapResourceForkMask: Int](../kicmapresourceforkmask.md)
 
 
 ---

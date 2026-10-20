@@ -1,7 +1,8 @@
 # kUseBtoB
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use 'pre*' tag from this profile or equivalent
 

@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents the result of the requested binary large object operation.
 
@@ -21,14 +22,15 @@ enum OperationResult
 ## Topics
 
 ### Results
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.read(data:)](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult/read(data:).md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.read(data:)](./operationresult/read%28data%29.md)
   A result that represents data the system reads from the blob.
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.write(success:)](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult/write(success:).md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.write(success:)](./operationresult/write%28success%29.md)
   A result that represents data the system writes to the blob.
 
 ## See Also
 
-- [var result: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/result.md)
+### Inspecting the result
+- [var result: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](./result.md)
   The result of the requested large binary object operation.
 
 

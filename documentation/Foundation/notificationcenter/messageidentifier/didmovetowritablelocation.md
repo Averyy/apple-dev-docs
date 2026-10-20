@@ -1,7 +1,8 @@
 # didMoveToWritableLocation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,8 @@
 ```swift
 static var didMoveToWritableLocation: NotificationCenter.BaseMessageIdentifier<UIDocument.DidMoveToWritableLocationMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIDocument.DidMoveToWritableLocationMessage>`.
 
 
 ---

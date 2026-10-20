@@ -1,7 +1,8 @@
 # errSecInvalidAuthorityKeyID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authority key ID is not valid.
 
@@ -18,6 +19,10 @@ The authority key ID is not valid.
 
 ```swift
 var errSecInvalidAuthorityKeyID: OSStatus { get }
+```
+
+```c
+errSecInvalidAuthorityKeyID
 ```
 
 

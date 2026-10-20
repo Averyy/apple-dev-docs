@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: External Accessory  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 3.0+

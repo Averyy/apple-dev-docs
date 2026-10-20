@@ -1,7 +1,8 @@
 # subscript(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 26.0+
@@ -18,10 +19,18 @@
 @preconcurrency subscript<T>(componentType: T.Type, backDeploy: Void = ()) -> T? where T : _ImplicitlyAnimatableBuiltinComponent { get set }
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency subscript<T>(componentType: T.Type, backDeploy: Void = ()) -> T? where T : Component { get set }
+```
+
 ## See Also
 
-- [subscript<T>(componentType _: T.Type) -> T?](entity/componentset/subscript(componenttype:)-3miek.md)
-- [subscript<T>(withoutAnimation _: T.Type) -> T?](entity/componentset/subscript(withoutanimation:).md)
+### Accessing animatable components
+- [subscript<T>(componentType _: T.Type) -> T?](./subscript%28componenttype%29-3miek.md)
+- [subscript<T>(withoutAnimation _: T.Type) -> T?](./subscript%28withoutanimation%29.md)
   Gets or sets the component of the specified type, without considering implicit animations.
 
 

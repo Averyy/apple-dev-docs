@@ -1,20 +1,25 @@
 # BE_JIT_WRITE_PROTECT_TAG
 
 **Framework**: BrowserEngineCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A discriminator value the system uses to generate pointer authentication codes for just-in-time compilation.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
-- visionOS ?+
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var BE_JIT_WRITE_PROTECT_TAG: Int { get }
+```
+
+```c
+#define BE_JIT_WRITE_PROTECT_TAG
 ```
 
 

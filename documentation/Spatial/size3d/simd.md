@@ -1,7 +1,8 @@
 # simd
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ var simd: simd_double3 { get set }
 
 ## See Also
 
-- [func containsAny(of: [Point3D]) -> Bool](size3d/containsany(of:).md)
+### Deprecated symbols
+- [func containsAny(of: [Point3D]) -> Bool](./containsany%28of%29.md)
   Returns a Boolean value that indicates whether the size contains the specified point.
 
 

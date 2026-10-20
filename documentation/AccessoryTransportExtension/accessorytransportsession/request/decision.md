@@ -1,7 +1,8 @@
 # AccessoryTransportSession.Request.Decision
 
 **Framework**: Accessory Transport Extension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque type returned from the incoming session handler of an event listener.
 
@@ -16,7 +17,8 @@ struct Decision
 
 ## See Also
 
-- [func accept(sessionRequest: AccessoryTransportSession.Request) -> AccessoryTransportSession.Request.Decision](accessorytransportappextension/accept(sessionrequest:).md)
+### Accepting session requests
+- [func accept(sessionRequest: AccessoryTransportSession.Request) -> AccessoryTransportSession.Request.Decision](../../accessorytransportappextension/accept%28sessionrequest%29.md)
   Handles a new session request for the accessory.
 
 

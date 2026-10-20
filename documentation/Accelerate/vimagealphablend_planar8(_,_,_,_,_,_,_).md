@@ -1,7 +1,8 @@
 # vImageAlphaBlend_Planar8(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs nonpremultiplied alpha compositing of two 8-bit planar buffers.
 
@@ -20,9 +21,13 @@ Performs nonpremultiplied alpha compositing of two 8-bit planar buffers.
 func vImageAlphaBlend_Planar8(_ srcTop: UnsafePointer<vImage_Buffer>, _ srcTopAlpha: UnsafePointer<vImage_Buffer>, _ srcBottom: UnsafePointer<vImage_Buffer>, _ srcBottomAlpha: UnsafePointer<vImage_Buffer>, _ alpha: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageAlphaBlend_Planar8(const vImage_Buffer *srcTop, const vImage_Buffer *srcTopAlpha, const vImage_Buffer *srcBottom, const vImage_Buffer *srcBottomAlpha, const vImage_Buffer *alpha, const vImage_Buffer *dest, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -36,7 +41,7 @@ vImagePremultipliedAlphaBlend_Planar8(srcTopAlpha,
                                       vImage_Flags(kvImageNoFlags))
 ```
 
-On return of [`vImagePremultipliedAlphaBlend_Planar8(_:_:_:_:_:)`](vimagepremultipliedalphablend_planar8(_:_:_:_:_:).md), the value of each pixel in the alpha buffer is:
+On return of [`vImagePremultipliedAlphaBlend_Planar8(_:_:_:_:_:)`](./vimagepremultipliedalphablend_planar8%28_,_,_,_,_%29.md), the value of each pixel in the alpha buffer is:
 
 ```objc
 float alpha = srcTopAlpha + (1.0 - srcTopAlpha) * srcBottomAlpha
@@ -56,19 +61,21 @@ float destColor = (  srcTopColor * srcTopAlpha + (1.0 - srcTopAlpha) * srcBottom
 - `srcTopAlpha`: The vImage buffer that provides the source top alpha.
 - `srcBottom`: The vImage buffer that provides the source bottom image.
 - `srcBottomAlpha`: The vImage buffer that provides the source bottom alpha.
-- `alpha`: The source vImage buffer that provides the precalculated alpha values of the composite image. Precalculate these values by calling the function [`vImagePremultipliedAlphaBlend_Planar8(_:_:_:_:_:)`](vimagepremultipliedalphablend_planar8(_:_:_:_:_:).md).
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `alpha`: The source vImage buffer that provides the precalculated alpha values of the composite image. Precalculate these values by calling the function [`vImagePremultipliedAlphaBlend_Planar8(_:_:_:_:_:)`](./vimagepremultipliedalphablend_planar8%28_,_,_,_,_%29.md).
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [func vImageAlphaBlend_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagealphablend_planarf(_:_:_:_:_:_:_:).md)
+### Performing nonpremultiplied alpha compositing
+- [func vImageAlphaBlend_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagealphablend_planarf%28_,_,_,_,_,_,_%29.md)
   Performs nonpremultiplied alpha compositing of two 8-bit planar buffers.
-- [func vImageAlphaBlend_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagealphablend_argb8888(_:_:_:_:).md)
+- [func vImageAlphaBlend_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagealphablend_argb8888%28_,_,_,_%29.md)
   Performs nonpremultiplied alpha compositing of two 8-bit-per-channel, 4-channel ARGB buffers.
-- [func vImageAlphaBlend_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagealphablend_argbffff(_:_:_:_:).md)
+- [func vImageAlphaBlend_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagealphablend_argbffff%28_,_,_,_%29.md)
   Performs nonpremultiplied alpha compositing of two 32-bit-per-channel, 4-channel ARGB buffers.
 
 

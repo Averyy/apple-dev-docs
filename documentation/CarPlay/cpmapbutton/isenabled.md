@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that enables and disables the map button.
 
@@ -16,13 +17,18 @@ A Boolean value that enables and disables the map button.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isHidden: Bool](cpmapbutton/ishidden.md)
+### Controlling the Button
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that hides and shows the map button.
 
 

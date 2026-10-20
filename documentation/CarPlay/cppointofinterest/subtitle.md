@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle that the picker’s item displays.
 
@@ -16,11 +17,16 @@ The subtitle that the picker’s item displays.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 ## See Also
 
-- [var title: String](cppointofinterest/title.md)
+### Managing the Picker Item’s Data
+- [var title: String](./title.md)
   The title that the picker’s item displays.
-- [var summary: String?](cppointofinterest/summary.md)
+- [var summary: String?](./summary.md)
   The summary that the picker’s item displays.
 
 

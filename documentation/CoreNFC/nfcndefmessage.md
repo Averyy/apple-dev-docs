@@ -1,7 +1,8 @@
 # NFCNDEFMessage
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An NFC NDEF message consisting of an array of payload records.
 
@@ -16,39 +17,44 @@ An NFC NDEF message consisting of an array of payload records.
 class NFCNDEFMessage
 ```
 
+```objc
+@interface NFCNDEFMessage : NSObject
+```
+
 ## Topics
 
 ### Creating an NDEF Message
-- [init(records: [NFCNDEFPayload])](nfcndefmessage/init(records:).md)
+- [init(records: [NFCNDEFPayload])](./nfcndefmessage/init%28records%29.md)
   Creates an NDEF message with the specified records.
-- [convenience init?(data: Data)](nfcndefmessage/init(data:).md)
+- [convenience init?(data: Data)](./nfcndefmessage/init%28data%29.md)
   Creates an NDEF message from raw data representing the message.
 ### Accessing NDEF Records
-- [var records: [NFCNDEFPayload]](nfcndefmessage/records.md)
+- [var records: [NFCNDEFPayload]](./nfcndefmessage/records.md)
   An array of records for the message.
 ### Getting the Message Length
-- [var length: Int](nfcndefmessage/length.md)
+- [var length: Int](./nfcndefmessage/length.md)
   The length, in bytes, of the NDEF message when stored on an NFC tag.
 ### Initializers
-- [init(NDEFRecords: [NFCNDEFPayload])](nfcndefmessage/init(ndefrecords:).md)
+- [init(NDEFRecords: [NFCNDEFPayload])](./nfcndefmessage/init%28ndefrecords%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NFCNDEFPayload](nfcndefpayload.md)
+### NDEF messages and payloads
+- [class NFCNDEFPayload](./nfcndefpayload.md)
   A payload record in an NFC NDEF message.
 
 

@@ -1,7 +1,8 @@
 # setProperty
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback to invoke when setting the property’s value.
 
@@ -19,17 +20,22 @@ A callback to invoke when setting the property’s value.
 var setProperty: JSObjectSetPropertyCallback!
 ```
 
+```c
+JSObjectSetPropertyCallback setProperty;
+```
+
 #### Discussion
 
 This value may be `NULL` if the property has the `ReadOnly` attribute.
 
 ## See Also
 
-- [var name: UnsafePointer<CChar>!](jsstaticvalue/name.md)
+### Accessing Static Value Information
+- [var name: UnsafePointer<CChar>!](./name.md)
   A null-terminated UTF-8 string that contains the property’s name.
-- [var getProperty: JSObjectGetPropertyCallback!](jsstaticvalue/getproperty.md)
+- [var getProperty: JSObjectGetPropertyCallback!](./getproperty.md)
   A callback to invoke when getting the property’s value.
-- [var attributes: JSPropertyAttributes](jsstaticvalue/attributes.md)
+- [var attributes: JSPropertyAttributes](./attributes.md)
   A set of property attributes to give to the property.
 
 

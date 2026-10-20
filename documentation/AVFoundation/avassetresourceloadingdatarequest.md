@@ -1,7 +1,8 @@
 # AVAssetResourceLoadingDataRequest
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for requesting data from a resource that an asset resource-loading request references.
 
@@ -19,55 +20,60 @@ An object for requesting data from a resource that an asset resource-loading req
 class AVAssetResourceLoadingDataRequest
 ```
 
+```objc
+@interface AVAssetResourceLoadingDataRequest : NSObject
+```
+
 #### Overview
 
-The [`AVAssetResourceLoaderDelegate`](avassetresourceloaderdelegate.md) uses the `AVAssetResourceLoadingDataRequest` class to do the actual data reading, and its methods will be invoked, as necessary, to acquire data for the [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md) instance.
+The [`AVAssetResourceLoaderDelegate`](./avassetresourceloaderdelegate.md) uses the `AVAssetResourceLoadingDataRequest` class to do the actual data reading, and its methods will be invoked, as necessary, to acquire data for the [`AVAssetResourceLoadingRequest`](./avassetresourceloadingrequest.md) instance.
 
-When the resource loading delegate, which implements the [`AVAssetResourceLoaderDelegate`](avassetresourceloaderdelegate.md) protocol, receives an instance of [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md) as the second parameter of the delegate’s [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md) method, it has the option of accepting responsibility for loading the referenced resource. If it accepts that responsibility, by returning [`true`](https://developer.apple.com/documentation/swift/true), it must check whether the [`dataRequest`](avassetresourceloadingrequest/datarequest.md) property of the [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md) instance is not `nil`. If it is not `nil`, the resource loading delegate is informed of the range of bytes within the resource that are required by the underlying media system. In response, the data is provided by one or more invocations of [`respond(with:)`](avassetresourceloadingdatarequest/respond(with:).md) as required to provide the requested data. The data can be provided in increments determined by the resource loading delegate according to convenience or efficiency.
+When the resource loading delegate, which implements the [`AVAssetResourceLoaderDelegate`](./avassetresourceloaderdelegate.md) protocol, receives an instance of [`AVAssetResourceLoadingRequest`](./avassetresourceloadingrequest.md) as the second parameter of the delegate’s [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](./avassetresourceloaderdelegate/resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md) method, it has the option of accepting responsibility for loading the referenced resource. If it accepts that responsibility, by returning [`true`](../Swift/true.md), it must check whether the [`dataRequest`](./avassetresourceloadingrequest/datarequest.md) property of the [`AVAssetResourceLoadingRequest`](./avassetresourceloadingrequest.md) instance is not `nil`. If it is not `nil`, the resource loading delegate is informed of the range of bytes within the resource that are required by the underlying media system. In response, the data is provided by one or more invocations of [`respond(with:)`](./avassetresourceloadingdatarequest/respond%28with%29.md) as required to provide the requested data. The data can be provided in increments determined by the resource loading delegate according to convenience or efficiency.
 
-When the [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md) method [`finishLoading()`](avassetresourceloadingrequest/finishloading().md) is invoked, the data request is considered fully satisfied. If the entire range of bytes requested has not yet been provided, the underlying media system assumes that the resource’s length is limited to the provided content.
+When the [`AVAssetResourceLoadingRequest`](./avassetresourceloadingrequest.md) method [`finishLoading()`](./avassetresourceloadingrequest/finishloading%28%29.md) is invoked, the data request is considered fully satisfied. If the entire range of bytes requested has not yet been provided, the underlying media system assumes that the resource’s length is limited to the provided content.
 
 ## Topics
 
 ### Providing data to a request
-- [func respond(with: Data)](avassetresourceloadingdatarequest/respond(with:).md)
+- [func respond(with: Data)](./avassetresourceloadingdatarequest/respond%28with%29.md)
   Provides data to the loading request.
-- [var requestedLength: Int](avassetresourceloadingdatarequest/requestedlength.md)
+- [var requestedLength: Int](./avassetresourceloadingdatarequest/requestedlength.md)
   The length, in bytes, of the data requested.
-- [var requestedOffset: Int64](avassetresourceloadingdatarequest/requestedoffset.md)
+- [var requestedOffset: Int64](./avassetresourceloadingdatarequest/requestedoffset.md)
   The position within the resource of the first byte requested.
-- [var currentOffset: Int64](avassetresourceloadingdatarequest/currentoffset.md)
+- [var currentOffset: Int64](./avassetresourceloadingdatarequest/currentoffset.md)
   The position within the resource of the next byte.
-- [var requestsAllDataToEndOfResource: Bool](avassetresourceloadingdatarequest/requestsalldatatoendofresource.md)
+- [var requestsAllDataToEndOfResource: Bool](./avassetresourceloadingdatarequest/requestsalldatatoendofresource.md)
   A Boolean value that indicates the entire remaining length of the resource from the offest to the end of the resource is being requested.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAssetResourceLoader](avassetresourceloader.md)
+### Resource loading
+- [class AVAssetResourceLoader](./avassetresourceloader.md)
   An object that mediates resource requests from a URL asset.
-- [protocol AVAssetResourceLoaderDelegate](avassetresourceloaderdelegate.md)
+- [protocol AVAssetResourceLoaderDelegate](./avassetresourceloaderdelegate.md)
   Methods you can implement to handle resource-loading requests coming from a URL asset.
-- [class AVAssetResourceLoadingRequest](avassetresourceloadingrequest.md)
+- [class AVAssetResourceLoadingRequest](./avassetresourceloadingrequest.md)
   An object that encapsulates information about a resource request from a resource loader object.
-- [class AVAssetResourceRenewalRequest](avassetresourcerenewalrequest.md)
+- [class AVAssetResourceRenewalRequest](./avassetresourcerenewalrequest.md)
   An object that encapsulates information about a resource request from a resource loader to renew a previously issued request.
-- [class AVAssetResourceLoadingRequestor](avassetresourceloadingrequestor.md)
+- [class AVAssetResourceLoadingRequestor](./avassetresourceloadingrequestor.md)
   An object that contains information about the originator of a resource-loading request.
-- [class AVAssetResourceLoadingContentInformationRequest](avassetresourceloadingcontentinformationrequest.md)
+- [class AVAssetResourceLoadingContentInformationRequest](./avassetresourceloadingcontentinformationrequest.md)
   A query for retrieving essential information about a resource that an asset resource-loading request references.
 
 

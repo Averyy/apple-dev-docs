@@ -1,38 +1,40 @@
 # NewUserClient
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the creation of a new user client for the service.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t NewUserClient(uint32_t type, IOUserClient **userClient);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
 #### Discussion
 
-Override this method if your service supports communication though an external user client. When an app calls [`IOServiceOpen(_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen) to start a new service, the system calls this method on the service passed to that function. In your implementation, call the [`Create`](ioservice/create.md) method to create a new [`IOUserClient`](iouserclient.md) object for your service and return that object in the `userClient` parameter.
+Override this method if your service supports communication though an external user client. When an app calls [`IOServiceOpen(_:_:_:_:)`](../../iokit/api-1514515-ioserviceopen.md) to start a new service, the system calls this method on the service passed to that function. In your implementation, call the [`Create`](./create.md) method to create a new [`IOUserClient`](../iouserclient.md) object for your service and return that object in the `userClient` parameter.
 
 ## Parameters
 
-- `type`: The type passed to [`IOServiceOpen(_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen).
+- `type`: The type passed to [`IOServiceOpen(_:_:_:_:)`](../../iokit/api-1514515-ioserviceopen.md).
 - `userClient`: A pointer to a variable for returning the new user client object. Upon the successful creation of the user client object, assign it to this variable.
 
 ## See Also
 
-- [Create](ioservice/create.md)
+### Creating a New Service
+- [Create](./create.md)
   Requests the creation of a new service object.
 
 

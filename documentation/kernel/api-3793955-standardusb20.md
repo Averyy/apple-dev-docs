@@ -1,14 +1,15 @@
 # StandardUSB20::convertBESLIndexToNs
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 IOReturn StandardUSB20::convertBESLIndexToNs(uint32_t beslIndex, uint32_t & beslNs);
 ```
 

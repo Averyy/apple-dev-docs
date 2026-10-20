@@ -1,7 +1,8 @@
 # Get a Recommendation Relationship Directly by Name
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch a recommendation’s relationship by using its identifier.
 
@@ -10,15 +11,15 @@ Fetch a recommendation’s relationship by using its identifier.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains a single [`PersonalRecommendation.Relationships`](personalrecommendation/relationships-data.dictionary.md) object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains a single [`PersonalRecommendation.Relationships`](./personalrecommendation/relationships-data.dictionary.md) object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/recommendations/6-27s5hU6azhJY/contents
 ```
 
@@ -161,22 +162,40 @@ https://api.music.apple.com/v1/me/recommendations/6-27s5hU6azhJY/contents
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The ID for the recommendation.
+- `relationship` (string) *(required)*: The name of the relationship you want to fetch for this recommendation.
+
+  **Allowed Values**: `contents`
+
+### Query Parameters
+
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`RelationshipResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect Authorization header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object PersonalRecommendation](personalrecommendation.md)
+### Related Documentation
+- [object PersonalRecommendation](./personalrecommendation.md)
   A resource object that represents recommended resources for a user calculated using their selected preferences.
-- [object PersonalRecommendationResponse](personalrecommendationresponse.md)
+- [object PersonalRecommendationResponse](./personalrecommendationresponse.md)
   The response to a request for personal recommendations.
-- [Get a Recommendation](get-a-recommendation.md)
+### Requesting Recommendations
+- [Get a Recommendation](./get-a-recommendation.md)
   Fetch a recommendation by using its identifier.
-- [Get Multiple Recommendations](get-multiple-recommendations.md)
+- [Get Multiple Recommendations](./get-multiple-recommendations.md)
   Fetch one or more recommendations by using their identifiers.
-- [Get Default Recommendations](get-all-recommendations.md)
+- [Get Default Recommendations](./get-all-recommendations.md)
   Fetch default recommendations.
 
 

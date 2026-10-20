@@ -1,7 +1,8 @@
 # isTargetForDropOperation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether this row will draw a drop indicator based on the current dragging feedback style.
 
@@ -14,15 +15,20 @@ Specifies whether this row will draw a drop indicator based on the current dragg
 var isTargetForDropOperation: Bool { get set }
 ```
 
+```objc
+@property (getter=isTargetForDropOperation) BOOL targetForDropOperation;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the row view will draw a drop on indicator based on the current [`draggingDestinationFeedbackStyle`](nstableview/draggingdestinationfeedbackstyle-swift.property.md).
+When [`true`](../../Swift/true.md), the row view will draw a drop on indicator based on the current [`draggingDestinationFeedbackStyle`](../nstableview/draggingdestinationfeedbackstyle-swift.property.md).
 
 ## See Also
 
-- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](nstablerowview/draggingdestinationfeedbackstyle.md)
+### Drag and Drop
+- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](./draggingdestinationfeedbackstyle.md)
   Specifies the dragging destination feedback style.
-- [var indentationForDropOperation: CGFloat](nstablerowview/indentationfordropoperation.md)
+- [var indentationForDropOperation: CGFloat](./indentationfordropoperation.md)
   Defines the amount the drag target for a row should be indented.
 
 

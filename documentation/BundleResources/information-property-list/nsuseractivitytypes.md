@@ -1,7 +1,8 @@
 # NSUserActivityTypes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The user activity types that the app supports.
 
@@ -10,9 +11,10 @@ The user activity types that the app supports.
 - iPadOS 8.0+
 - macOS 10.10+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `NSUserActivityTypes`
+- **Type**: array of string 
 
 
 ---

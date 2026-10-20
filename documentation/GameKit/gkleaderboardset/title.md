@@ -1,7 +1,8 @@
 # title
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized title for the leaderboard set.
 
@@ -20,11 +21,24 @@ The localized title for the leaderboard set.
 var title: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var identifier: String?](gkleaderboardset/identifier.md)
+### Accessing Properties
+- [var identifier: String?](./identifier.md)
   The identifier for the leaderboard set.
-- [var groupIdentifier: String?](gkleaderboardset/groupidentifier.md)
+- [var groupIdentifier: String?](./groupidentifier.md)
   The identifier for the group that the leaderboard set belongs to.
 
 

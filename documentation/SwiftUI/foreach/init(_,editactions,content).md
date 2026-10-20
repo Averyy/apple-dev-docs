@@ -1,7 +1,8 @@
 # init(_:editActions:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that uniquely identifies and creates views across updates based on the identity of the underlying data.
 
@@ -20,6 +21,8 @@ Creates an instance that uniquely identifies and creates views across updates ba
 init<C, R>(_ data: Binding<C>, editActions: EditActions<C>, @ContentBuilder content: @escaping (Binding<C.Element>) -> R) where Data == IndexedIdentifierCollection<C, ID>, ID == C.Element.ID, Content == EditableCollectionContent<R, C>, C : MutableCollection, C : RandomAccessCollection, R : View, C.Element : Identifiable, C.Index : Hashable
 ```
 
+Available when `Data` conforms to `RandomAccessCollection` and `ID` conforms to `Hashable`.
+
 #### Discussion
 
 It’s important that the `id` of a data element doesn’t change unless you replace the data element with a new data element that has a new identity. If the `id` of a data element changes, the content view generated from that data element loses any current state and animations.
@@ -36,7 +39,7 @@ List {
 }
 ```
 
-Use [`deleteDisabled(_:)`](view/deletedisabled(_:).md) and [`moveDisabled(_:)`](view/movedisabled(_:).md) to disable respectively delete or move actions on a per-row basis.
+Use [`deleteDisabled(_:)`](../view/deletedisabled%28_%29.md) and [`moveDisabled(_:)`](../view/movedisabled%28_%29.md) to disable respectively delete or move actions on a per-row basis.
 
 The following example shows a list of recipes whose elements can be deleted only if they satisfy a condition:
 
@@ -53,13 +56,14 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 
 ## Parameters
 
-- `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create views dynamically and can be edited by the user.
+- `data`: The identified data that the [`ForEach`](../foreach.md) instance uses to create views dynamically and can be edited by the user.
 - `editActions`: The edit actions that are synthesized on `data`.
 - `content`: The content builder that creates views dynamically.
 
 ## See Also
 
-- [init<C, R>(Binding<C>, id: KeyPath<C.Element, ID>, editActions: EditActions<C>, content: (Binding<C.Element>) -> R)](foreach/init(_:id:editactions:content:).md)
+### Creating an editable collection
+- [init<C, R>(Binding<C>, id: KeyPath<C.Element, ID>, editActions: EditActions<C>, content: (Binding<C.Element>) -> R)](./init%28_,id,editactions,content%29.md)
   Creates an instance that uniquely identifies and creates views across updates based on the identity of the underlying data.
 
 

@@ -1,7 +1,8 @@
 # init(mappingTransform:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Declares support for the `contains` operator between a `AttributedString?` property and user-supplied values.
 
@@ -11,7 +12,7 @@ Declares support for the `contains` operator between a `AttributedString?` prope
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

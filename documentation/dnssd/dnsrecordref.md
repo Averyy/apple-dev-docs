@@ -1,7 +1,8 @@
 # DNSRecordRef
 
 **Framework**: dnssd  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 10.0+
@@ -18,13 +19,18 @@
 typealias DNSRecordRef = OpaquePointer
 ```
 
+```c
+typedef struct _DNSRecordRef_t * DNSRecordRef;
+```
+
 ## See Also
 
-- [struct CompileTimeAssertionChecks_DNS_SD](compiletimeassertionchecks_dns_sd.md)
-- [typealias DNSServiceRef](dnsserviceref.md)
-- [typealias DNSServiceSleepKeepaliveReply](dnsservicesleepkeepalivereply.md)
-- [typealias dnssd_sock_t](dnssd_sock_t.md)
-- [typealias DNSServiceAttributeRef](dnsserviceattributeref.md)
+### Data Types
+- [struct CompileTimeAssertionChecks_DNS_SD](./compiletimeassertionchecks_dns_sd.md)
+- [typealias DNSServiceRef](./dnsserviceref.md)
+- [typealias DNSServiceSleepKeepaliveReply](./dnsservicesleepkeepalivereply.md)
+- [typealias dnssd_sock_t](./dnssd_sock_t.md)
+- [typealias DNSServiceAttributeRef](./dnsserviceattributeref.md)
 
 
 ---

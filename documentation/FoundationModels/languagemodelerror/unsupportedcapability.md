@@ -1,7 +1,8 @@
 # LanguageModelError.UnsupportedCapability
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about an unsupported capability.
 
@@ -22,25 +23,26 @@ struct UnsupportedCapability
 ## Topics
 
 ### Creating an error instance
-- [init(capability: LanguageModelCapabilities.Capability, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedcapability/init(capability:debugdescription:metadata:).md)
+- [init(capability: LanguageModelCapabilities.Capability, debugDescription: String, metadata: [String : any Sendable])](./unsupportedcapability/init%28capability,debugdescription,metadata%29.md)
   Creates information describing a capability the model doesn’t support.
 ### Inspecting unsupported capability errors
-- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedcapability/metadata.md)
+- [var metadata: [String : any Sendable]](./unsupportedcapability/metadata.md)
   Additional information about the failure, keyed by name.
-- [var capability: LanguageModelCapabilities.Capability](languagemodelerror/unsupportedcapability/capability.md)
+- [var capability: LanguageModelCapabilities.Capability](./unsupportedcapability/capability.md)
   The capability that the model doesn’t support.
-- [var debugDescription: String](languagemodelerror/unsupportedcapability/debugdescription.md)
+- [var debugDescription: String](./unsupportedcapability/debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case unsupportedCapability(LanguageModelError.UnsupportedCapability)](languagemodelerror/unsupportedcapability(_:).md)
+### Capability unsupported error
+- [case unsupportedCapability(LanguageModelError.UnsupportedCapability)](./unsupportedcapability%28_%29.md)
   The model being used doesn’t support a particular feature.
 
 

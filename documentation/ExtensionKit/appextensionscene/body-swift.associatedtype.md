@@ -2,6 +2,7 @@
 
 **Framework**: ExtensionKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type for this scene’s body.
@@ -23,7 +24,8 @@ associatedtype Body : AppExtensionScene
 
 ## See Also
 
-- [var body: Self.Body](appextensionscene/body-swift.property.md)
+### Configuring the app extension
+- [var body: Self.Body](./body-swift.property.md)
   The content and behavior of the scene’s interface.
 
 

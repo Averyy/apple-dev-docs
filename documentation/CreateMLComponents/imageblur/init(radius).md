@@ -1,7 +1,8 @@
 # init(radius:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transformer that blurs an image.
 

@@ -1,7 +1,8 @@
 # Float64
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Convenience type that represent a 64-bit floating point number
 
@@ -10,7 +11,7 @@ Convenience type that represent a 64-bit floating point number
 
 ## Declaration
 
-```swift
+```c
 typedef double Float64;
 ```
 

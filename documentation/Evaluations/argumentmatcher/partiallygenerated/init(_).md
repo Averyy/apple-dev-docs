@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a partial argument matcher from the given generated content.
 
@@ -23,7 +24,7 @@ init(_ content: GeneratedContent) throws
 
 #### Discussion
 
-> **Note**: An error if the content doesn’t match a known matcher type.
+> **Throws**: An error if the content doesn’t match a known matcher type.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # sleep
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Sleep item.
 
@@ -13,6 +14,10 @@ The Sleep item.
 
 ```swift
 static let sleep: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemSleep;
 ```
 
 

@@ -1,7 +1,8 @@
 # norm
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normalization strategy.
 

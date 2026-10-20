@@ -1,7 +1,8 @@
 # imToCol(_:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an imToCol operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates an imToCol operation and returns the result tensor.
 
 ```swift
 func imToCol(_ source: MPSGraphTensor, descriptor: MPSGraphImToColOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) imToColWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphImToColOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

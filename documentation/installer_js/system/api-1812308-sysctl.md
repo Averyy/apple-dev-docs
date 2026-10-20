@@ -7,11 +7,11 @@ Provides the result of a `sysctlbyname()` call using the given selector.
 
 ## Declaration
 
-```swift
+```
 sysctl(selector)
 ```
 
-#### Return_value
+#### Return Value
 
 Hardware data corresponding to `selector`.
 
@@ -27,9 +27,10 @@ Use `man sysctl` in the macOS Terminal application to see a list of hardware sel
 
 ## See Also
 
-- [users.desktopSessionCount](system/1812277-users_desktopsessioncount.md)
+### Accessing System Information
+- [users.desktopSessionCount](./api-1812277-users_desktopsessioncount.md)
   The number of logged-in users.
-- [version](system/1812284-version.md)
+- [version](./api-1812284-version.md)
   A dictionary (associative array) with information about the current system version.
 
 

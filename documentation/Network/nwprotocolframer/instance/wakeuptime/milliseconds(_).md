@@ -1,7 +1,8 @@
 # NWProtocolFramer.Instance.WakeupTime.milliseconds(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A specific number of milliseconds from now.
 
@@ -22,7 +23,8 @@ case milliseconds(UInt64)
 
 ## See Also
 
-- [NWProtocolFramer.Instance.WakeupTime.forever](nwprotocolframer/instance/wakeuptime/forever.md)
+### Time Values
+- [NWProtocolFramer.Instance.WakeupTime.forever](./forever.md)
   A sentinel value to indicate that no wakeup should be delivered.
 
 

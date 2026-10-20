@@ -1,7 +1,8 @@
 # documentInfo
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that specifies additional information to be associated with the PDFs created by the PDF renderer.
 
@@ -18,11 +19,15 @@ A dictionary that specifies additional information to be associated with the PDF
 var documentInfo: [String : Any] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSDictionary<NSString *,id> * documentInfo;
+```
+
 #### Discussion
 
 You can use these keys to specify additional metadata and security information for the PDF, such as the author or the password for accessing it.
 
-The keys used in this dictionary are described in  [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/coregraphics/auxiliary-dictionary-keys).
+The keys used in this dictionary are described in  [Auxiliary Dictionary Keys](../../CoreGraphics/auxiliary-dictionary-keys.md).
 
 
 ---

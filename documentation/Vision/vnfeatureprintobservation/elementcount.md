@@ -1,7 +1,8 @@
 # elementCount
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of elements in the data.
 
@@ -19,9 +20,14 @@ The total number of elements in the data.
 var elementCount: Int { get }
 ```
 
+```objc
+@property (atomic, assign, readonly) NSUInteger elementCount;
+```
+
 ## See Also
 
-- [var data: Data](vnfeatureprintobservation/data.md)
+### Fetching Feature Print Data
+- [var data: Data](./data.md)
   The feature print data.
 
 

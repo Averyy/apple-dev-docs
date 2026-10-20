@@ -1,15 +1,17 @@
 # Variable array of atoms
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An array of atoms carrying the definitions for key structure and other optional information.
 
 ## See Also
 
-- [Size](metadata_key_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_key_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
 
 

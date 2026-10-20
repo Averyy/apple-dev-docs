@@ -1,7 +1,8 @@
 # signature
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The advertising network’s cryptographic signature for the ad impression.
 
@@ -16,14 +17,18 @@ The advertising network’s cryptographic signature for the ad impression.
 var signature: String { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSString * signature;
+```
+
 ## Mentions
 
-- [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
-- [Signing and providing ads](signing-and-providing-ads.md)
+- [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
+- [Signing and providing ads](../signing-and-providing-ads.md)
 
 #### Discussion
 
-The ad network creates a cryptographic signature that it uses to sign ads. For instructions on generating this value, see [`Generating the signature to validate view-through ads`](generating-the-signature-to-validate-view-through-ads.md).
+The ad network creates a cryptographic signature that it uses to sign ads. For instructions on generating this value, see [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md).
 
 
 ---

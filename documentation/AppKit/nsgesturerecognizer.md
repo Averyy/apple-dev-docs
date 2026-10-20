@@ -1,7 +1,8 @@
 # NSGestureRecognizer
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that monitors events and calls its action method when a predefined sequence of events occur.
 
@@ -15,19 +16,23 @@ An object that monitors events and calls its action method when a predefined seq
 class NSGestureRecognizer
 ```
 
+```objc
+@interface NSGestureRecognizer : NSObject
+```
+
 #### Overview
 
 A gesture recognizer might recognize a single click, a click and drag, or a sequence of events that imply rotation. You do not create instances of this class directly. This class is an abstract base class that defines the common behavior for all gesture recognizers. When using a gesture recognizer in your app, create an instance of one of the concrete subclasses.
 
-The concrete subclasses of [`NSGestureRecognizer`](nsgesturerecognizer.md) are the following:
+The concrete subclasses of [`NSGestureRecognizer`](./nsgesturerecognizer.md) are the following:
 
-- [`NSClickGestureRecognizer`](nsclickgesturerecognizer.md)
-- [`NSMagnificationGestureRecognizer`](nsmagnificationgesturerecognizer.md)
-- [`NSPanGestureRecognizer`](nspangesturerecognizer.md)
-- [`NSPressGestureRecognizer`](nspressgesturerecognizer.md)
-- [`NSRotationGestureRecognizer`](nsrotationgesturerecognizer.md)
+- [`NSClickGestureRecognizer`](./nsclickgesturerecognizer.md)
+- [`NSMagnificationGestureRecognizer`](./nsmagnificationgesturerecognizer.md)
+- [`NSPanGestureRecognizer`](./nspangesturerecognizer.md)
+- [`NSPressGestureRecognizer`](./nspressgesturerecognizer.md)
+- [`NSRotationGestureRecognizer`](./nsrotationgesturerecognizer.md)
 
-A gesture recognizer operates on events in a specific view (or in any of that view’s subviews). After creating a gesture recognizer, attach it to one of your views using the [`addGestureRecognizer(_:)`](nsview/addgesturerecognizer(_:).md) method. Events received by your app are forwarded automatically to any relevant gesture recognizers before they are sent to the corresponding view. The gesture recognizer can delay the further progression of the events until recognition is complete or allow the events to be delivered normally.
+A gesture recognizer operates on events in a specific view (or in any of that view’s subviews). After creating a gesture recognizer, attach it to one of your views using the [`addGestureRecognizer(_:)`](./nsview/addgesturerecognizer%28_%29.md) method. Events received by your app are forwarded automatically to any relevant gesture recognizers before they are sent to the corresponding view. The gesture recognizer can delay the further progression of the events until recognition is complete or allow the events to be delivered normally.
 
 A gesture recognizer can detect gestures that are either discrete or continuous in nature. A click gesture is discrete because it involves a mouse-down and mouse-up event without any mouse movements in between. By contrast, a pan or rotation gesture is continuous because it involves tracking mouse movements over a period of time.
 
@@ -53,170 +58,171 @@ When your code needs additional information about the particulars of a gesture, 
 
 ##### State Transitions
 
-Gesture recognizers operate within a predefined state machine, transitioning from state to state as they handle events. All gesture recognizers begin in the Possible ([`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md)) state, but the possible transitions differ for continuous and discrete gestures.
+Gesture recognizers operate within a predefined state machine, transitioning from state to state as they handle events. All gesture recognizers begin in the Possible ([`NSGestureRecognizer.State.possible`](./nsgesturerecognizer/state-swift.enum/possible.md)) state, but the possible transitions differ for continuous and discrete gestures.
 
-Discrete gestures transition from the Possible state directly to the Recognized ([`recognized`](nsgesturerecognizer/state-swift.enum/recognized.md)) or Failed ([`NSGestureRecognizer.State.failed`](nsgesturerecognizer/state-swift.enum/failed.md)) state, depending on whether they successfully interpret the gesture. When a discrete gesture recognizer transitions to the Recognized state, it calls the action method of its target object.
+Discrete gestures transition from the Possible state directly to the Recognized ([`recognized`](./nsgesturerecognizer/state-swift.enum/recognized.md)) or Failed ([`NSGestureRecognizer.State.failed`](./nsgesturerecognizer/state-swift.enum/failed.md)) state, depending on whether they successfully interpret the gesture. When a discrete gesture recognizer transitions to the Recognized state, it calls the action method of its target object.
 
 For continuous gestures, the state transitions are as follows:
 
 - Possible —> Began —> [Changed] —> Cancelled
 - Possible —> Began —> [Changed] —> Ended
 
-The Changed state is optional and may occur multiple times before the Cancelled or Ended state is reached. Many state transitions cause the gesture recognizer to call its action method. Setting the [`state`](nsgesturerecognizer/state-swift.property.md) property to [`NSGestureRecognizer.State.changed`](nsgesturerecognizer/state-swift.enum/changed.md) while monitoring events also calls the action method. You can use these calls to update the state of your app or update any custom animations.
+The Changed state is optional and may occur multiple times before the Cancelled or Ended state is reached. Many state transitions cause the gesture recognizer to call its action method. Setting the [`state`](./nsgesturerecognizer/state-swift.property.md) property to [`NSGestureRecognizer.State.changed`](./nsgesturerecognizer/state-swift.enum/changed.md) while monitoring events also calls the action method. You can use these calls to update the state of your app or update any custom animations.
 
-For a list of possible states, see the constants in [`NSGestureRecognizer.State`](nsgesturerecognizer/state-swift.enum.md).
+For a list of possible states, see the constants in [`NSGestureRecognizer.State`](./nsgesturerecognizer/state-swift.enum.md).
 
 ##### Subclassing Notes
 
 You may create a subclass of `NSGestureRecognizer` that recognizes a distinctive gesture—for example, a “check mark” gesture. A custom gesture recognizer implements any appropriate event-related methods to detect its gesture along with a few other methods for managing state information.
 
-All gesture recognizers must update the value in the state property at appropriate times. Specifically, you must update it for all state transitions. For more information about the possible state transitions of a gesture recognizer, see [`State Transitions`](nsgesturerecognizer#State-Transitions.md).
+All gesture recognizers must update the value in the state property at appropriate times. Specifically, you must update it for all state transitions. For more information about the possible state transitions of a gesture recognizer, see [State Transitions](./nsgesturerecognizer.md#State-Transitions).
 
-> **Note**:  [`NSGestureRecognizer`](nsgesturerecognizer.md) does not support handing off event tracking to other non-gesture recognizer mechanisms (for example drag and drop and pop-up menus).
+> **Note**:  [`NSGestureRecognizer`](./nsgesturerecognizer.md) does not support handing off event tracking to other non-gesture recognizer mechanisms (for example drag and drop and pop-up menus).
 
 ###### Methods to Override
 
 When creating your own gesture recognizer subclass:
 
-- Implement the [`reset()`](nsgesturerecognizer/reset().md) method and any other relevant methods in Methods for Subclasses.
-- Override the [`location(in:)`](nsgesturerecognizer/location(in:).md) method as needed to specify an appropriate point for your gesture.
+- Implement the [`reset()`](./nsgesturerecognizer/reset%28%29.md) method and any other relevant methods in Methods for Subclasses.
+- Override the [`location(in:)`](./nsgesturerecognizer/location%28in%29.md) method as needed to specify an appropriate point for your gesture.
 
-AppKit waits for a mouse-down event, magnify event, or rotation event to occur before starting the gesture recognition process. A gesture recognizer that used only key-down events to recognize its gesture would not have its [`keyDown(with:)`](nsgesturerecognizer/keydown(with:).md) method called until a mouse-down, magnify, or rotation event started the recognition process.
+AppKit waits for a mouse-down event, magnify event, or rotation event to occur before starting the gesture recognition process. A gesture recognizer that used only key-down events to recognize its gesture would not have its [`keyDown(with:)`](./nsgesturerecognizer/keydown%28with%29.md) method called until a mouse-down, magnify, or rotation event started the recognition process.
 
 ###### Alternatives to Subclassing
 
-The `NSGestureRecognizer` class defines the common behaviors that can be configured for all concrete gesture recognizers. It also supports a delegate—an object that adopts the [`NSGestureRecognizerDelegate`](nsgesturerecognizerdelegate.md) protocol—for handling finer-grained customization of some behaviors without the need for subclassing. For example, you can use the delegate to create dependencies between specific gesture recognizer objects.
+The `NSGestureRecognizer` class defines the common behaviors that can be configured for all concrete gesture recognizers. It also supports a delegate—an object that adopts the [`NSGestureRecognizerDelegate`](./nsgesturerecognizerdelegate.md) protocol—for handling finer-grained customization of some behaviors without the need for subclassing. For example, you can use the delegate to create dependencies between specific gesture recognizer objects.
 
-For more information about using the delegate to control the behavior of your gesture recognizers, see [`NSGestureRecognizerDelegate`](nsgesturerecognizerdelegate.md).
+For more information about using the delegate to control the behavior of your gesture recognizers, see [`NSGestureRecognizerDelegate`](./nsgesturerecognizerdelegate.md).
 
 ## Topics
 
 ### Initializing a gesture recognizer
-- [init(target: Any?, action: Selector?)](nsgesturerecognizer/init(target:action:).md)
+- [init(target: Any?, action: Selector?)](./nsgesturerecognizer/init%28target,action%29.md)
   Initializes the gesture recognizer with the specified target and action information.
 ### Accessing the target and action
-- [var action: Selector?](nsgesturerecognizer/action.md)
+- [var action: Selector?](./nsgesturerecognizer/action.md)
   The action method to call when the gesture is recognized.
-- [var target: AnyObject?](nsgesturerecognizer/target.md)
+- [var target: AnyObject?](./nsgesturerecognizer/target.md)
   The object that implements the action method.
 ### Getting the location of events
-- [func location(in: NSView?) -> NSPoint](nsgesturerecognizer/location(in:).md)
+- [func location(in: NSView?) -> NSPoint](./nsgesturerecognizer/location%28in%29.md)
   Returns the point computed as the location of the gesture.
 ### Accessing the recognizer’s state
-- [var state: NSGestureRecognizer.State](nsgesturerecognizer/state-swift.property.md)
+- [var state: NSGestureRecognizer.State](./nsgesturerecognizer/state-swift.property.md)
   The current state of the gesture recognizer.
-- [var view: NSView?](nsgesturerecognizer/view.md)
+- [var view: NSView?](./nsgesturerecognizer/view.md)
   The view to which the gesture recognizer is attached.
-- [var isEnabled: Bool](nsgesturerecognizer/isenabled.md)
+- [var isEnabled: Bool](./nsgesturerecognizer/isenabled.md)
   A Boolean value indicating whether the gesture recognizer is able to handle events.
 ### Delaying events
-- [var delaysPrimaryMouseButtonEvents: Bool](nsgesturerecognizer/delaysprimarymousebuttonevents.md)
+- [var delaysPrimaryMouseButtonEvents: Bool](./nsgesturerecognizer/delaysprimarymousebuttonevents.md)
   A Boolean value that indicates whether primary mouse button events are delivered only after gesture recognition fails.
-- [var delaysSecondaryMouseButtonEvents: Bool](nsgesturerecognizer/delayssecondarymousebuttonevents.md)
+- [var delaysSecondaryMouseButtonEvents: Bool](./nsgesturerecognizer/delayssecondarymousebuttonevents.md)
   A Boolean value that indicates whether secondary mouse button events are delivered only after gesture recognition fails.
-- [var delaysOtherMouseButtonEvents: Bool](nsgesturerecognizer/delaysothermousebuttonevents.md)
+- [var delaysOtherMouseButtonEvents: Bool](./nsgesturerecognizer/delaysothermousebuttonevents.md)
   A Boolean value that indicates whether other mouse button events are delivered only after gesture recognition fails.
-- [var delaysKeyEvents: Bool](nsgesturerecognizer/delayskeyevents.md)
+- [var delaysKeyEvents: Bool](./nsgesturerecognizer/delayskeyevents.md)
   A Boolean value that indicates whether key events are delivered only after gesture recognition fails.
-- [var delaysMagnificationEvents: Bool](nsgesturerecognizer/delaysmagnificationevents.md)
+- [var delaysMagnificationEvents: Bool](./nsgesturerecognizer/delaysmagnificationevents.md)
   A Boolean value that indicates whether magnification events are delivered only after gesture recognition fails.
-- [var delaysRotationEvents: Bool](nsgesturerecognizer/delaysrotationevents.md)
+- [var delaysRotationEvents: Bool](./nsgesturerecognizer/delaysrotationevents.md)
   A Boolean value that indicates whether rotation events are delivered only after gesture recognition fails.
 ### Accessing the delegate
-- [var delegate: (any NSGestureRecognizerDelegate)?](nsgesturerecognizer/delegate.md)
+- [var delegate: (any NSGestureRecognizerDelegate)?](./nsgesturerecognizer/delegate.md)
   The delegate of the gesture recognizer.
 ### Overriding methods for subclasses
-- [func reset()](nsgesturerecognizer/reset.md)
+- [func reset()](./nsgesturerecognizer/reset%28%29.md)
   Overridden to reset the internal state of the gesture recognizer when an attempt completes.
-- [func mouseDown(with: NSEvent)](nsgesturerecognizer/mousedown(with:).md)
+- [func mouseDown(with: NSEvent)](./nsgesturerecognizer/mousedown%28with%29.md)
   Informs the gesture recognizer that the user pressed the left mouse button.
-- [func mouseDragged(with: NSEvent)](nsgesturerecognizer/mousedragged(with:).md)
+- [func mouseDragged(with: NSEvent)](./nsgesturerecognizer/mousedragged%28with%29.md)
   Informs the gesture recognizer that the user moved the mouse with the left button pressed.
-- [func mouseUp(with: NSEvent)](nsgesturerecognizer/mouseup(with:).md)
+- [func mouseUp(with: NSEvent)](./nsgesturerecognizer/mouseup%28with%29.md)
   Informs the gesture recognizer that the user released the left mouse button.
-- [func otherMouseDown(with: NSEvent)](nsgesturerecognizer/othermousedown(with:).md)
+- [func otherMouseDown(with: NSEvent)](./nsgesturerecognizer/othermousedown%28with%29.md)
   Informs the gesture recognizer that the user pressed a mouse button other than the left or right one.
-- [func otherMouseDragged(with: NSEvent)](nsgesturerecognizer/othermousedragged(with:).md)
+- [func otherMouseDragged(with: NSEvent)](./nsgesturerecognizer/othermousedragged%28with%29.md)
   Informs the gesture recognizer that the user moved the mouse with a button other than the left or right one pressed.
-- [func otherMouseUp(with: NSEvent)](nsgesturerecognizer/othermouseup(with:).md)
+- [func otherMouseUp(with: NSEvent)](./nsgesturerecognizer/othermouseup%28with%29.md)
   Informs the gesture recognizer that the user released a mouse button other than the left or right one.
-- [func rightMouseDown(with: NSEvent)](nsgesturerecognizer/rightmousedown(with:).md)
+- [func rightMouseDown(with: NSEvent)](./nsgesturerecognizer/rightmousedown%28with%29.md)
   Informs the gesture recognizer that the user pressed the right mouse button.
-- [func rightMouseDragged(with: NSEvent)](nsgesturerecognizer/rightmousedragged(with:).md)
+- [func rightMouseDragged(with: NSEvent)](./nsgesturerecognizer/rightmousedragged%28with%29.md)
   Informs the gesture recognizer that the user moved the mouse with the right button pressed.
-- [func rightMouseUp(with: NSEvent)](nsgesturerecognizer/rightmouseup(with:).md)
+- [func rightMouseUp(with: NSEvent)](./nsgesturerecognizer/rightmouseup%28with%29.md)
   Informs the gesture recognizer that the user released the right mouse button.
-- [func magnify(with: NSEvent)](nsgesturerecognizer/magnify(with:).md)
+- [func magnify(with: NSEvent)](./nsgesturerecognizer/magnify%28with%29.md)
   Informs the gesture recognizer that the user is performing a pinch gesture.
-- [func rotate(with: NSEvent)](nsgesturerecognizer/rotate(with:).md)
+- [func rotate(with: NSEvent)](./nsgesturerecognizer/rotate%28with%29.md)
   Informs the gesture recognizer that the user is performing a rotation gesture.
-- [func canBePrevented(by: NSGestureRecognizer) -> Bool](nsgesturerecognizer/canbeprevented(by:).md)
+- [func canBePrevented(by: NSGestureRecognizer) -> Bool](./nsgesturerecognizer/canbeprevented%28by%29.md)
   Overridden to indicate that the specified gesture recognizer can prevent the current object from recognizing a gesture.
-- [func canPrevent(NSGestureRecognizer) -> Bool](nsgesturerecognizer/canprevent(_:).md)
+- [func canPrevent(NSGestureRecognizer) -> Bool](./nsgesturerecognizer/canprevent%28_%29.md)
   Overridden to indicate that the current object can prevent the specified gesture recognizer from recognizing its gesture.
-- [func shouldBeRequiredToFail(by: NSGestureRecognizer) -> Bool](nsgesturerecognizer/shouldberequiredtofail(by:).md)
+- [func shouldBeRequiredToFail(by: NSGestureRecognizer) -> Bool](./nsgesturerecognizer/shouldberequiredtofail%28by%29.md)
   Overridden to indicate that the current object must fail before the specified gesture recognizer begins recognizing its gesture.
-- [func shouldRequireFailure(of: NSGestureRecognizer) -> Bool](nsgesturerecognizer/shouldrequirefailure(of:).md)
+- [func shouldRequireFailure(of: NSGestureRecognizer) -> Bool](./nsgesturerecognizer/shouldrequirefailure%28of%29.md)
   Overridden to indicate that the specified gesture recognizer must fail before the current object begins recognizing its gesture.
-- [func keyDown(with: NSEvent)](nsgesturerecognizer/keydown(with:).md)
+- [func keyDown(with: NSEvent)](./nsgesturerecognizer/keydown%28with%29.md)
   Informs the gesture recognizer that the user has pressed a key.
-- [func keyUp(with: NSEvent)](nsgesturerecognizer/keyup(with:).md)
+- [func keyUp(with: NSEvent)](./nsgesturerecognizer/keyup%28with%29.md)
   Informs the gesture recognizer that the user released a key.
-- [func tabletPoint(with: NSEvent)](nsgesturerecognizer/tabletpoint(with:).md)
+- [func tabletPoint(with: NSEvent)](./nsgesturerecognizer/tabletpoint%28with%29.md)
   Informs the user that a tablet-point event occurred.
-- [func flagsChanged(with: NSEvent)](nsgesturerecognizer/flagschanged(with:).md)
+- [func flagsChanged(with: NSEvent)](./nsgesturerecognizer/flagschanged%28with%29.md)
   Informs the current object that the user pressed or released a modifier key (Shift, Control, and so on).
-- [func pressureChange(with: NSEvent)](nsgesturerecognizer/pressurechange(with:).md)
+- [func pressureChange(with: NSEvent)](./nsgesturerecognizer/pressurechange%28with%29.md)
   Informs the current object that a pressure change occurred on a system that supports pressure sensitivity.
 ### Configuring pressure
-- [var pressureConfiguration: NSPressureConfiguration](nsgesturerecognizer/pressureconfiguration.md)
+- [var pressureConfiguration: NSPressureConfiguration](./nsgesturerecognizer/pressureconfiguration.md)
   Configures the behavior and progression of the Force Touch trackpad when responding to recognized pressure gestures.
 ### Getting state values
-- [NSGestureRecognizer.State](nsgesturerecognizer/state-swift.enum.md)
+- [NSGestureRecognizer.State](./nsgesturerecognizer/state-swift.enum.md)
   The current state of the gesture recognizer.
 ### Initializing from a coder
-- [init?(coder: NSCoder)](nsgesturerecognizer/init(coder:).md)
+- [init?(coder: NSCoder)](./nsgesturerecognizer/init%28coder%29.md)
 ### Getting additional recognizer information
-- [var allowedTouchTypes: NSTouch.TouchTypeMask](nsgesturerecognizer/allowedtouchtypes.md)
-- [var isCancellableByScrollGesture: Bool](nsgesturerecognizer/iscancellablebyscrollgesture.md)
+- [var allowedTouchTypes: NSTouch.TouchTypeMask](./nsgesturerecognizer/allowedtouchtypes.md)
+- [var isCancellableByScrollGesture: Bool](./nsgesturerecognizer/iscancellablebyscrollgesture.md)
   Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
-- [var modifierFlags: NSEvent.ModifierFlags](nsgesturerecognizer/modifierflags.md)
+- [var modifierFlags: NSEvent.ModifierFlags](./nsgesturerecognizer/modifierflags.md)
   The keyboard modifier flags in effect while the receiver last processed an event.
-- [var name: String?](nsgesturerecognizer/name.md)
+- [var name: String?](./nsgesturerecognizer/name.md)
 ### Handling touch and mouse events
-- [func touchesBegan(with: NSEvent)](nsgesturerecognizer/touchesbegan(with:).md)
-  Called when one or more fingers first make contact with an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
-- [func touchesCancelled(with: NSEvent)](nsgesturerecognizer/touchescancelled(with:).md)
-  Called when a system event, such as a low-memory warning, cancels an in-progress touch event in an [`NSTouchBar`](nstouchbar.md) object.
-- [func touchesEnded(with: NSEvent)](nsgesturerecognizer/touchesended(with:).md)
-  Called when one or more fingers are removed from contact with an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
-- [func touchesMoved(with: NSEvent)](nsgesturerecognizer/touchesmoved(with:).md)
-  Called when one or more fingers, associated with an in-progress event, move within an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
-- [func mouseCancelled(with: NSEvent)](nsgesturerecognizer/mousecancelled(with:).md)
+- [func touchesBegan(with: NSEvent)](./nsgesturerecognizer/touchesbegan%28with%29.md)
+  Called when one or more fingers first make contact with an [`NSTouchBar`](./nstouchbar.md) instance on the Touch Bar.
+- [func touchesCancelled(with: NSEvent)](./nsgesturerecognizer/touchescancelled%28with%29.md)
+  Called when a system event, such as a low-memory warning, cancels an in-progress touch event in an [`NSTouchBar`](./nstouchbar.md) object.
+- [func touchesEnded(with: NSEvent)](./nsgesturerecognizer/touchesended%28with%29.md)
+  Called when one or more fingers are removed from contact with an [`NSTouchBar`](./nstouchbar.md) instance on the Touch Bar.
+- [func touchesMoved(with: NSEvent)](./nsgesturerecognizer/touchesmoved%28with%29.md)
+  Called when one or more fingers, associated with an in-progress event, move within an [`NSTouchBar`](./nstouchbar.md) instance on the Touch Bar.
+- [func mouseCancelled(with: NSEvent)](./nsgesturerecognizer/mousecancelled%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSClickGestureRecognizer](nsclickgesturerecognizer.md)
-- [NSMagnificationGestureRecognizer](nsmagnificationgesturerecognizer.md)
-- [NSPanGestureRecognizer](nspangesturerecognizer.md)
-- [NSPressGestureRecognizer](nspressgesturerecognizer.md)
-- [NSRotationGestureRecognizer](nsrotationgesturerecognizer.md)
+- [NSClickGestureRecognizer](./nsclickgesturerecognizer.md)
+- [NSMagnificationGestureRecognizer](./nsmagnificationgesturerecognizer.md)
+- [NSPanGestureRecognizer](./nspangesturerecognizer.md)
+- [NSPressGestureRecognizer](./nspressgesturerecognizer.md)
+- [NSRotationGestureRecognizer](./nsrotationgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol NSGestureRecognizerDelegate](nsgesturerecognizerdelegate.md)
+### Custom Gestures
+- [protocol NSGestureRecognizerDelegate](./nsgesturerecognizerdelegate.md)
   A set of methods for fine-tuning a gesture recognizer’s behavior.
 
 

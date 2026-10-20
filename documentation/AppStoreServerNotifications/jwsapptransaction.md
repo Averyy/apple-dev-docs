@@ -1,7 +1,8 @@
 # JWSAppTransaction
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
@@ -10,13 +11,13 @@ App transaction information signed by the App Store, in JSON Web Signature (JWS)
 
 ## Declaration
 
-```swift
+```
 string JWSAppTransaction
 ```
 
 #### Discussion
 
-For more information, refer to [`JWSAppTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwsapptransaction).
+For more information, refer to [`JWSAppTransaction`](../AppStoreServerAPI/jwsapptransaction.md).
 
 
 ---

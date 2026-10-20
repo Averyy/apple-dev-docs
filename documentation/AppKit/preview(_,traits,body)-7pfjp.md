@@ -1,7 +1,8 @@
 # Preview(_:traits:body:)
 
 **Framework**: AppKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Preview an NSView.
 
@@ -23,13 +24,14 @@ Preview an NSView.
 
 ## See Also
 
-- [var NSIMAGE_UNAVAILABLE_MACCATALYST: Int32](nsimage_unavailable_maccatalyst.md)
-- [var NS_USER_ACTIVITY_SUPPORTED: Int32](ns_user_activity_supported.md)
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSViewController)](preview(_:traits:body:)-55ljx.md)
+### Macros
+- [var NSIMAGE_UNAVAILABLE_MACCATALYST: Int32](./nsimage_unavailable_maccatalyst.md)
+- [var NS_USER_ACTIVITY_SUPPORTED: Int32](./ns_user_activity_supported.md)
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSViewController)](./preview%28_,traits,body%29-55ljx.md)
   Preview an NSViewController.
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSView)](preview(_:traits:arguments:body:)-5hzef.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSView)](./preview%28_,traits,arguments,body%29-5hzef.md)
   Creates a group of previews of an NSView.
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSViewController)](preview(_:traits:arguments:body:)-7h191.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSViewController)](./preview%28_,traits,arguments,body%29-7h191.md)
   Creates a group of previews of an NSViewController.
 
 

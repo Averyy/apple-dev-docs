@@ -1,7 +1,8 @@
 # recognizedPoint(forKey:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a point for a key you specify.
 
@@ -19,6 +20,10 @@ Returns a point for a key you specify.
 func recognizedPoint(forKey pointKey: VNRecognizedPointKey) throws -> VNRecognizedPoint3D
 ```
 
+```objc
+- (VNRecognizedPoint3D *) recognizedPointForKey:(VNRecognizedPointKey) pointKey error:(NSError **) error;
+```
+
 #### Return Value
 
 The point the observation associates with the key.
@@ -29,11 +34,12 @@ The point the observation associates with the key.
 
 ## See Also
 
-- [var availableKeys: [VNRecognizedPointKey]](vnrecognizedpoints3dobservation/availablekeys.md)
+### Inspecting the Observation
+- [var availableKeys: [VNRecognizedPointKey]](./availablekeys.md)
   The available point keys in the observation.
-- [var availableGroupKeys: [VNRecognizedPointGroupKey]](vnrecognizedpoints3dobservation/availablegroupkeys.md)
+- [var availableGroupKeys: [VNRecognizedPointGroupKey]](./availablegroupkeys.md)
   The available point group keys in the observation.
-- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint3D]](vnrecognizedpoints3dobservation/recognizedpoints(forgroupkey:).md)
+- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint3D]](./recognizedpoints%28forgroupkey%29.md)
   Returns a point for a group key you specify.
 
 

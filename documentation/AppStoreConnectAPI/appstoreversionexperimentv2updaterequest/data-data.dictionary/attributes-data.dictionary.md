@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentV2UpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app store version experiment v2update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app store version experiment v2update request resour
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentV2UpdateRequest.Data.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # USDPrim.Property.Spec.ValueCollection
 
 **Framework**: USDKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Value-related API for property specs that hold typed default values.
 
@@ -26,18 +27,18 @@ Only `USDPrim.Property.Spec` and `USDPrim.Attribute.Spec` conform to this protoc
 ## Topics
 
 ### Instance Properties
-- [var defaultValue: USDValue?](usdprim/property/spec/valuecollection/defaultvalue.md)
+- [var defaultValue: USDValue?](./valuecollection/defaultvalue.md)
   The authored default value, or `nil` if not authored. Assigning `nil` clears the default.
-- [var typeName: USDPrim.Attribute.ValueType](usdprim/property/spec/valuecollection/typename.md)
+- [var typeName: USDPrim.Attribute.ValueType](./valuecollection/typename.md)
   The property’s value type.
-- [var variability: USDPrim.Property.Variability](usdprim/property/spec/valuecollection/variability.md)
+- [var variability: USDPrim.Property.Variability](./valuecollection/variability.md)
   The property’s variability (varying, uniform, or config).
 
 ## Relationships
 
 ### Conforming Types
-- [USDPrim.Attribute.Spec](usdprim/attribute/spec.md)
-- [USDPrim.Property.Spec](usdprim/property/spec.md)
+- [USDPrim.Attribute.Spec](../../attribute/spec.md)
+- [USDPrim.Property.Spec](../spec.md)
 
 
 ---

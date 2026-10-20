@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the group.
 
@@ -17,6 +18,18 @@ The name of the group.
 
 ```swift
 var name: String { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSString * name;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * name;
 ```
 
 

@@ -1,23 +1,28 @@
 # init(avAudioNode:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an audio player for playing the specified AVFoundation audio node.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 init(avAudioNode audioNode: AVAudioNode)
+```
+
+```objc
+- (instancetype) initWithAVAudioNode:(AVAudioNode *) audioNode;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A positional audio player object.
 
 #### Discussion
 
-Using this initializer is typically not necessary. Instead, call the [`audioPlayerWithAVAudioNode:`](scnaudioplayer/audioplayerwithavaudionode:.md) method, which returns a cached audio player object if one for the specified [`AVAudioNode`](https://developer.apple.com/documentation/avfaudio/avaudionode) object has already been created and is available for use.
+Using this initializer is typically not necessary. Instead, call the [`audioPlayerWithAVAudioNode:`](./audioplayerwithavaudionode_.md) method, which returns a cached audio player object if one for the specified [`AVAudioNode`](../../AVFAudio/avaudionode.md) object has already been created and is available for use.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Using this initializer is typically not necessary. Instead, call the [`audioPlay
 
 ## See Also
 
-- [init(source: SCNAudioSource)](scnaudioplayer/init(source:).md)
+### Creating an Audio Player
+- [init(source: SCNAudioSource)](./init%28source%29.md)
   Initializes an audio player for playing the specified simple audio source.
 
 

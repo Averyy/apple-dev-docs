@@ -1,18 +1,19 @@
 # static
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The default [`categoryBitMask`](scnphysicsbody/categorybitmask.md) value for static bodies.
+The default [`categoryBitMask`](../scnphysicsbody/categorybitmask.md) value for static bodies.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,12 +21,17 @@ The default [`categoryBitMask`](scnphysicsbody/categorybitmask.md) value for sta
 static var `static`: SCNPhysicsCollisionCategory { get }
 ```
 
+```c
+SCNPhysicsCollisionCategoryStatic
+```
+
 ## See Also
 
-- [static var `default`: SCNPhysicsCollisionCategory](scnphysicscollisioncategory/default.md)
-  The default [`categoryBitMask`](scnphysicsbody/categorybitmask.md) value for dynamic and kinematic bodies.
-- [static var all: SCNPhysicsCollisionCategory](scnphysicscollisioncategory/all.md)
-  This is the default value for a physics body’s [`collisionBitMask`](scnphysicsbody/collisionbitmask.md) property.
+### Constants
+- [static var `default`: SCNPhysicsCollisionCategory](./default.md)
+  The default [`categoryBitMask`](../scnphysicsbody/categorybitmask.md) value for dynamic and kinematic bodies.
+- [static var all: SCNPhysicsCollisionCategory](./all.md)
+  This is the default value for a physics body’s [`collisionBitMask`](../scnphysicsbody/collisionbitmask.md) property.
 
 
 ---

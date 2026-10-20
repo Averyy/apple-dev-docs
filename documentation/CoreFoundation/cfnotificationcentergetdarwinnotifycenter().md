@@ -1,23 +1,28 @@
 # CFNotificationCenterGetDarwinNotifyCenter()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the application’s Darwin notification center.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFNotificationCenterGetDarwinNotifyCenter() -> CFNotificationCenter!
+```
+
+```c
+extern CFNotificationCenterRefCFNotificationCenterGetDarwinNotifyCenter();
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ The Darwin Notify Center has no notion of per-user sessions, all notifications a
 
 ## See Also
 
-- [func CFNotificationCenterGetDistributedCenter() -> CFNotificationCenter!](cfnotificationcentergetdistributedcenter().md)
+### Accessing a Notification Center
+- [func CFNotificationCenterGetDistributedCenter() -> CFNotificationCenter!](./cfnotificationcentergetdistributedcenter%28%29.md)
   Returns the application’s distributed notification center.
-- [func CFNotificationCenterGetLocalCenter() -> CFNotificationCenter!](cfnotificationcentergetlocalcenter().md)
+- [func CFNotificationCenterGetLocalCenter() -> CFNotificationCenter!](./cfnotificationcentergetlocalcenter%28%29.md)
   Returns the application’s local notification center.
 
 

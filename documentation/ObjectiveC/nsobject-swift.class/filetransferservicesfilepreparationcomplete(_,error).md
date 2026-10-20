@@ -1,15 +1,20 @@
 # fileTransferServicesFilePreparationComplete(_:error:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesFilePreparationComplete(_ inServices: OBEXFileTransferServices!, error inError: OBEXError)
+```
+
+```objc
+- (void) fileTransferServicesFilePreparationComplete:(OBEXFileTransferServices *) inServices error:(OBEXError) inError;
 ```
 
 

@@ -1,7 +1,8 @@
 # HPKEDiffieHellmanPublicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the public key in a Diffie-Hellman key exchange.
 
@@ -24,20 +25,20 @@ protocol HPKEDiffieHellmanPublicKey : HPKEPublicKeySerialization
 ## Topics
 
 ### Associated Types
-- [associatedtype EphemeralPrivateKey : HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanpublickey/ephemeralprivatekey.md)
+- [associatedtype EphemeralPrivateKey : HPKEDiffieHellmanPrivateKeyGeneration](./hpkediffiehellmanpublickey/ephemeralprivatekey.md)
   The type of the ephemeral private key.
 
 ## Relationships
 
 ### Inherits From
-- [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [HPKEPublicKeySerialization](./hpkepublickeyserialization.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Curve25519.KeyAgreement.PublicKey](curve25519/keyagreement/publickey.md)
-- [P256.KeyAgreement.PublicKey](p256/keyagreement/publickey.md)
-- [P384.KeyAgreement.PublicKey](p384/keyagreement/publickey.md)
-- [P521.KeyAgreement.PublicKey](p521/keyagreement/publickey.md)
+- [Curve25519.KeyAgreement.PublicKey](./curve25519/keyagreement/publickey.md)
+- [P256.KeyAgreement.PublicKey](./p256/keyagreement/publickey.md)
+- [P384.KeyAgreement.PublicKey](./p384/keyagreement/publickey.md)
+- [P521.KeyAgreement.PublicKey](./p521/keyagreement/publickey.md)
 
 
 ---

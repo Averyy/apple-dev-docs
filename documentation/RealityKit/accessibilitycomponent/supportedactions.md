@@ -1,7 +1,8 @@
 # AccessibilityComponent.SupportedActions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom action that can be invoked on an entity in response to specific user cues.
 
@@ -11,7 +12,7 @@ A custom action that can be invoked on an entity in response to specific user cu
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,33 +23,34 @@ struct SupportedActions
 ## Topics
 
 ### Type Properties
-- [static let activate: AccessibilityComponent.SupportedActions](accessibilitycomponent/supportedactions/activate.md)
+- [static let activate: AccessibilityComponent.SupportedActions](./supportedactions/activate.md)
   Tells the entity to activate itself.
-- [static let decrement: AccessibilityComponent.SupportedActions](accessibilitycomponent/supportedactions/decrement.md)
+- [static let decrement: AccessibilityComponent.SupportedActions](./supportedactions/decrement.md)
   Tells the entity to decrement the value of its content.
-- [static let increment: AccessibilityComponent.SupportedActions](accessibilitycomponent/supportedactions/increment.md)
+- [static let increment: AccessibilityComponent.SupportedActions](./supportedactions/increment.md)
   Tells the entity to increment the value of its content.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
+### Accessibility
+- [Improving the Accessibility of RealityKit Apps](../improving-the-accessibility-of-realitykit-apps.md)
   Incorporate assistive technologies in your augmented reality app.
-- [struct AccessibilityComponent](accessibilitycomponent.md)
+- [struct AccessibilityComponent](../accessibilitycomponent.md)
   A component that stores accessibility information for an entity.
-- [AccessibilityComponent.CustomContent](accessibilitycomponent/customcontent-swift.struct.md)
+- [AccessibilityComponent.CustomContent](./customcontent-swift.struct.md)
   A CustomContent struct contains the accessibility strings for the labels you apply to your accessibility content.
-- [AccessibilityComponent.RotorType](accessibilitycomponent/rotortype.md)
+- [AccessibilityComponent.RotorType](./rotortype.md)
   A context-sensitive event that helps VoiceOver users find the next instance of a related element.
-- [enum AccessibilityEvents](accessibilityevents.md)
+- [enum AccessibilityEvents](../accessibilityevents.md)
 
 
 ---

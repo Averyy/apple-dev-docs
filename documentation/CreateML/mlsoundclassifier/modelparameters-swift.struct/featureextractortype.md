@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.FeatureExtractorType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The feature-extractor options for a sound-classifier training algorithm.
 
@@ -20,45 +21,46 @@ enum FeatureExtractorType
 
 #### Overview
 
-Use the [`MLSoundClassifier.ModelParameters.FeatureExtractorType.audioFeaturePrint(type:revision:)`](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/audiofeatureprint(type:revision:).md) feature extractor to create a model with the following advantages over `vggish`:
+Use the [`MLSoundClassifier.ModelParameters.FeatureExtractorType.audioFeaturePrint(type:revision:)`](./featureextractortype/audiofeatureprint%28type,revision%29.md) feature extractor to create a model with the following advantages over `vggish`:
 
 - More accurate predictions
 - Lower latency
 - Smaller model file size
 - Less training time
 
-Use [`MLSoundClassifier.ModelParameters.FeatureExtractorType.vggish(revision:)`](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/vggish(revision:).md) to support older OS versions.
+Use [`MLSoundClassifier.ModelParameters.FeatureExtractorType.vggish(revision:)`](./featureextractortype/vggish%28revision%29.md) to support older OS versions.
 
 ## Topics
 
 ### Designating a feature extractor
-- [case audioFeaturePrint(type: MLSoundClassifier.ModelParameters.FeaturePrintType, revision: Int)](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/audiofeatureprint(type:revision:).md)
+- [case audioFeaturePrint(type: MLSoundClassifier.ModelParameters.FeaturePrintType, revision: Int)](./featureextractortype/audiofeatureprint%28type,revision%29.md)
   Represents the Audio Feature Print extractor.
-- [MLSoundClassifier.ModelParameters.FeaturePrintType](mlsoundclassifier/modelparameters-swift.struct/featureprinttype.md)
+- [MLSoundClassifier.ModelParameters.FeaturePrintType](./featureprinttype.md)
   The type options for an Audio Feature Print feature extractor.
-- [MLSoundClassifier.ModelParameters.FeatureExtractorType.vggish(revision:)](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/vggish(revision:).md)
+- [MLSoundClassifier.ModelParameters.FeatureExtractorType.vggish(revision:)](./featureextractortype/vggish%28revision%29.md)
   Represents the VGGish feature extractor, which is compatible with older OS versions.
 ### Describing a feature extractor
-- [var description: String](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/description.md)
+- [var description: String](./featureextractortype/description.md)
   A text representation of the feature-extractor type.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLSoundClassifier.ModelParameters.ValidationData](mlsoundclassifier/modelparameters-swift.struct/validationdata.md)
+### Supporting types
+- [MLSoundClassifier.ModelParameters.ValidationData](./validationdata.md)
   The source of a validation dataset for a sound classifier.
-- [MLSoundClassifier.ModelParameters.ModelAlgorithmType](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
+- [MLSoundClassifier.ModelParameters.ModelAlgorithmType](./modelalgorithmtype.md)
   The algorithm options to train a sound classifier.
-- [MLSoundClassifier.ModelParameters.ClassifierType](mlsoundclassifier/modelparameters-swift.struct/classifiertype.md)
+- [MLSoundClassifier.ModelParameters.ClassifierType](./classifiertype.md)
   The classifier options for a sound classifier training algorithm.
-- [MLSoundClassifier.ModelParameters.FeaturePrintType](mlsoundclassifier/modelparameters-swift.struct/featureprinttype.md)
+- [MLSoundClassifier.ModelParameters.FeaturePrintType](./featureprinttype.md)
   The type options for an Audio Feature Print feature extractor.
 
 

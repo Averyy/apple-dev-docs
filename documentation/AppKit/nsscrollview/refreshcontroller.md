@@ -1,7 +1,8 @@
 # refreshController
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The refresh controller associated with this scroll view.
 
@@ -12,6 +13,10 @@ The refresh controller associated with this scroll view.
 
 ```swift
 var refreshController: NSRefreshController? { get set }
+```
+
+```objc
+@property (strong, nullable) NSRefreshController * refreshController;
 ```
 
 #### Discussion

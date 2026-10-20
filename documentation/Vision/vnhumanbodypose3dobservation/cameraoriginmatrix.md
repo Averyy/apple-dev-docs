@@ -1,7 +1,8 @@
 # cameraOriginMatrix
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transform from the skeleton hip to the camera.
 
@@ -19,13 +20,18 @@ A transform from the skeleton hip to the camera.
 var cameraOriginMatrix: simd_float4x4 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) simd_float4x4 cameraOriginMatrix;
+```
+
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
 ## See Also
 
-- [func cameraRelativePosition(VNHumanBodyPose3DObservation.JointName) throws -> simd_float4x4](vnhumanbodypose3dobservation/camerarelativeposition(_:).md)
+### Getting the Camera Position
+- [func cameraRelativePosition(VNHumanBodyPose3DObservation.JointName) throws -> simd_float4x4](./camerarelativeposition%28_%29.md)
   Returns a position relative to the camera for the body joint you specify.
 
 

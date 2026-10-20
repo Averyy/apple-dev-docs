@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL being requested.
 
@@ -20,15 +21,20 @@ The URL being requested.
 var url: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * URL;
+```
+
 ## See Also
 
-- [var httpMethod: String](nsmutableurlrequest/httpmethod.md)
+### Accessing request components
+- [var httpMethod: String](./httpmethod.md)
   The HTTP request method.
-- [var httpBody: Data?](nsmutableurlrequest/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The request body.
-- [var httpBodyStream: InputStream?](nsmutableurlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./httpbodystream.md)
   The request body as an input stream.
-- [var mainDocumentURL: URL?](nsmutableurlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./maindocumenturl.md)
   The main document URL.
 
 

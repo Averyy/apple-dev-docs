@@ -1,7 +1,8 @@
 # verticalSpacing
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical component of the image buffer aspect ratio.
 

@@ -1,7 +1,8 @@
 # milliohms
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The milliohms unit of electric resistance.
 
@@ -21,15 +22,20 @@ The milliohms unit of electric resistance.
 class var milliohms: UnitElectricResistance { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitElectricResistance * milliohms;
+```
+
 ## See Also
 
-- [class var megaohms: UnitElectricResistance](unitelectricresistance/megaohms.md)
+### Accessing Predefined Units
+- [class var megaohms: UnitElectricResistance](./megaohms.md)
   The megaohms unit of electric resistance.
-- [class var kiloohms: UnitElectricResistance](unitelectricresistance/kiloohms.md)
+- [class var kiloohms: UnitElectricResistance](./kiloohms.md)
   The kiloohms unit of electric resistance.
-- [class var ohms: UnitElectricResistance](unitelectricresistance/ohms.md)
+- [class var ohms: UnitElectricResistance](./ohms.md)
   The ohms unit of electric resistance.
-- [class var microohms: UnitElectricResistance](unitelectricresistance/microohms.md)
+- [class var microohms: UnitElectricResistance](./microohms.md)
   The microohms unit of electric resistance.
 
 

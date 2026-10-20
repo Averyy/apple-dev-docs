@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identity quaternion `(real: 1, imaginary: (0, 0, 0))`.
 

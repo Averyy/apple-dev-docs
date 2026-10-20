@@ -1,7 +1,8 @@
 # Font
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures fonts.
 
@@ -14,7 +15,7 @@ The payload that configures fonts.
 
 ## Declaration
 
-```swift
+```
 object Font
 ```
 
@@ -24,7 +25,7 @@ Specify `com.apple.font` as the payload type.
 
 In iPadOS 18 and later, the font profile is available on the user channel for Shared iPad.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ In iPadOS 18 and later, the font profile is available on the user channel for Sh
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -77,25 +78,28 @@ In iPadOS 18 and later, the font profile is available on the user channel for Sh
 ## Properties
 
 - `Font` (data) *(required)*: The contents of the font file.
-- `Name` (string): The user-visible name for the font. The device replaces this field with the actual name of the font after installation. Each payload must contain exactly one font file in trueType (.ttf) or OpenType (.otf) format. The device doesn’t support collection formats (.ttc or .otc). The device identifies fonts by their embedded PostScript names. The device considers two fonts with the same PostScript name to be the same font, even if their contents differ. The device doesn’t support installing two different fonts with the same PostScript name, and the resulting behavior is undefined.
+- `Name` (string): The user-visible name for the font. The device replaces this field with the actual name of the font after installation. Each payload must contain exactly one font file in trueType (.ttf) or OpenType (.otf) format. The device doesn’t support collection formats (.ttc or .otc).
+
+  The device identifies fonts by their embedded PostScript names. The device considers two fonts with the same PostScript name to be the same font, even if their contents differ. The device doesn’t support installing two different fonts with the same PostScript name, and the resulting behavior is undefined.
 
 ## See Also
 
-- [object Declarations](declarations.md)
+### System configuration
+- [object Declarations](./declarations.md)
   The payload that applies a set of declarations to the device through the Settings app.
-- [object EnergySaver](energysaver.md)
+- [object EnergySaver](./energysaver.md)
   The payload that configures Energy Saver settings.
-- [object FileProvider](fileprovider.md)
+- [object FileProvider](./fileprovider.md)
   The payload that configures file provider settings.
-- [object LockScreenMessage](lockscreenmessage.md)
+- [object LockScreenMessage](./lockscreenmessage.md)
   The payload that configures a Lock Screen message.
-- [object Screensaver](screensaver.md)
+- [object Screensaver](./screensaver.md)
   The payload that configures the screen saver.
-- [object SystemExtensions](systemextensions.md)
+- [object SystemExtensions](./systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
+- [object SystemLogging](./systemlogging.md)
   The payload that configures system logging.
-- [object TimeServer](timeserver.md)
+- [object TimeServer](./timeserver.md)
   The payload that configures the time server.
 
 

@@ -1,7 +1,8 @@
 # localized
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Compares `String`s using a localized comparison in the current locale.
 

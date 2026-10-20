@@ -1,7 +1,8 @@
 # diagnostics
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that describes the current state of the services session.
 
@@ -21,7 +22,8 @@ final var diagnostics: CLServiceSession.Diagnostics { get }
 
 ## See Also
 
-- [CLServiceSession.Diagnostics](clservicesession-pt7n/diagnostics-swift.class.md)
+### Getting diagnostic information
+- [CLServiceSession.Diagnostics](./diagnostics-swift.class.md)
   An object you use to access location service session diagnostic events.
 
 

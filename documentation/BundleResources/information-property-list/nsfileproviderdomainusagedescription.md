@@ -1,22 +1,24 @@
 # NSFileProviderDomainUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app needs access to files managed by a file provider.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSFileProviderDomainUsageDescription` (Privacy - Access to a File Provide Domain Usage Description)
+- **Type**: string
 
 #### Discussion
 
 The user implicitly grants your app access to a file managed by a file provider when selecting the file in an Open or Save panel, dragging it onto your app, or opening it in Finder. Your app can access that file right away and any time in the future. In addition, if your app creates a new file managed by a file provider, the app can access that file without user consent.
 
-The first time your app tries to access a file managed by a file provider without implied user consent, the system prompts the user for permission. Add the [`NSFileProviderDomainUsageDescription`](information-property-list/nsfileproviderdomainusagedescription.md) key to your app’s [`Information Property List`](information-property-list.md) file to provide a string for the prompt that explains why your app needs access. The usage description is optional, but highly recommended.
+The first time your app tries to access a file managed by a file provider without implied user consent, the system prompts the user for permission. Add the [`NSFileProviderDomainUsageDescription`](./nsfileproviderdomainusagedescription.md) key to your app’s [`Information Property List`](../information-property-list.md) file to provide a string for the prompt that explains why your app needs access. The usage description is optional, but highly recommended.
 
 After the user chooses whether to grant access, the system remembers the user’s choice. To reset permissions, use the `tccutil` command line utility with your app’s bundle ID:
 
@@ -26,16 +28,17 @@ $ tccutil reset FileProviderDomain <bundleID>
 
 ## See Also
 
-- [NSDesktopFolderUsageDescription](information-property-list/nsdesktopfolderusagedescription.md)
+### Files and folders
+- [NSDesktopFolderUsageDescription](./nsdesktopfolderusagedescription.md)
   A message that tells people why the app needs access to their Desktop folder.
-- [NSDocumentsFolderUsageDescription](information-property-list/nsdocumentsfolderusagedescription.md)
-- [NSDownloadsFolderUsageDescription](information-property-list/nsdownloadsfolderusagedescription.md)
+- [NSDocumentsFolderUsageDescription](./nsdocumentsfolderusagedescription.md)
+- [NSDownloadsFolderUsageDescription](./nsdownloadsfolderusagedescription.md)
   A message that tells people why the app needs access to the user’s Downloads folder.
-- [NSNetworkVolumesUsageDescription](information-property-list/nsnetworkvolumesusagedescription.md)
+- [NSNetworkVolumesUsageDescription](./nsnetworkvolumesusagedescription.md)
   A message that tells people why the app needs access to files on a network volume.
-- [NSRemovableVolumesUsageDescription](information-property-list/nsremovablevolumesusagedescription.md)
+- [NSRemovableVolumesUsageDescription](./nsremovablevolumesusagedescription.md)
   A message that tells people why the app needs access to files on a removable volume.
-- [NSFileProviderPresenceUsageDescription](information-property-list/nsfileproviderpresenceusagedescription.md)
+- [NSFileProviderPresenceUsageDescription](./nsfileproviderpresenceusagedescription.md)
   A message that tells people why the app’s file provider needs to determine which files the person is currently accessing.
 
 

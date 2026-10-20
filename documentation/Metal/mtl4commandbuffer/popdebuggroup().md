@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Pops the latest string from the stack of debug groups for this command buffer.
@@ -18,6 +19,10 @@ Pops the latest string from the stack of debug groups for this command buffer.
 
 ```swift
 func popDebugGroup()
+```
+
+```objc
+- (void) popDebugGroup;
 ```
 
 

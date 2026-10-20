@@ -1,7 +1,8 @@
 # NETunnelProviderRoutingMethod.sourceApplication
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Route network traffic to the tunnel based on source application.
 
@@ -18,11 +19,16 @@ Route network traffic to the tunnel based on source application.
 case sourceApplication
 ```
 
+```c
+NETunnelProviderRoutingMethodSourceApplication
+```
+
 ## See Also
 
-- [NETunnelProviderRoutingMethod.destinationIP](netunnelproviderroutingmethod/destinationip.md)
+### Routing Methods
+- [NETunnelProviderRoutingMethod.destinationIP](./destinationip.md)
   Route network traffic to the tunnel based on destination IP.
-- [NETunnelProviderRoutingMethod.networkRule](netunnelproviderroutingmethod/networkrule.md)
+- [NETunnelProviderRoutingMethod.networkRule](./networkrule.md)
   A routing method that routes traffic based on network rule objects specified by the provider.
 
 

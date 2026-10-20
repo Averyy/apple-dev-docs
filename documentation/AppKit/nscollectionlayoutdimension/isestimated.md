@@ -1,7 +1,8 @@
 # isEstimated
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the dimension is expressed as an estimated value.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the dimension is expressed as an estimate
 var isEstimated: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isEstimated;
+```
+
 ## See Also
 
-- [var isAbsolute: Bool](nscollectionlayoutdimension/isabsolute.md)
+### Getting the dimension type
+- [var isAbsolute: Bool](./isabsolute.md)
   A Boolean value that indicates whether the dimension is expressed as an absolute value.
-- [var isFractionalHeight: Bool](nscollectionlayoutdimension/isfractionalheight.md)
+- [var isFractionalHeight: Bool](./isfractionalheight.md)
   A Boolean value that indicates whether the dimension is expressed as a fraction of its container’s height.
-- [var isFractionalWidth: Bool](nscollectionlayoutdimension/isfractionalwidth.md)
+- [var isFractionalWidth: Bool](./isfractionalwidth.md)
   A Boolean value that indicates whether the dimension is expressed as a fraction of its container’s width.
 
 

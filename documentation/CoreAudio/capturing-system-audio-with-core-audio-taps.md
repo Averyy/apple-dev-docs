@@ -1,6 +1,8 @@
 # Capturing system audio with Core Audio taps
 
-**Framework**: Core Audio
+**Framework**: Core Audio  
+**Role**: Sample Code  
+**Download**: [CapturingSystemAudioWithCoreAudioTaps.zip](https://docs-assets.developer.apple.com/published/02fe64305fe7/CapturingSystemAudioWithCoreAudioTaps.zip)
 
 Use a Core Audio tap to capture outgoing audio from a process or group of processes.
 
@@ -12,9 +14,9 @@ Use a Core Audio tap to capture outgoing audio from a process or group of proces
 
 This sample code project shows you how to use a tap as an input in a HAL aggregate device, just like a microphone. An audio tap object can specify which outputs it captures from a process or group of processes, as well as different mixdown options (mono, stereo, and so on). Taps can be public (visible to all users), or private (only visible inside the process that created the tap). Taps can also mute the process output so that the process will no longer play to the speaker or selected audio device, and all process output will go to the tap.
 
-##### Create a Tap and an Aggregate Device
+##### Create a tap and an aggregate device
 
-You create a tap by passing a [`CATapDescription`](catapdescription.md) to [`AudioHardwareCreateProcessTap(_:_:)`](audiohardwarecreateprocesstap(_:_:).md). This returns an `AudioObjectID` for the new tap object. You can destroy a tap using [`AudioHardwareDestroyProcessTap(_:)`](audiohardwaredestroyprocesstap(_:).md):
+You create a tap by passing a [`CATapDescription`](./catapdescription.md) to [`AudioHardwareCreateProcessTap(_:_:)`](./audiohardwarecreateprocesstap%28_,_%29.md). This returns an `AudioObjectID` for the new tap object. You can destroy a tap using [`AudioHardwareDestroyProcessTap(_:)`](./audiohardwaredestroyprocesstap%28_%29.md):
 
 ```swift
 // Create a tap description.
@@ -36,7 +38,7 @@ var tapID = AudioObjectID(kAudioObjectUnknown)
 AudioHardwareCreateProcessTap(description, &tapID)
 ```
 
-You similarly create an aggregate device by passing a `CFDictionary` to [`AudioHardwareCreateAggregateDevice(_:_:)`](audiohardwarecreateaggregatedevice(_:_:).md), and destroy it using [`AudioHardwareDestroyAggregateDevice(_:)`](audiohardwaredestroyaggregatedevice(_:).md).
+You similarly create an aggregate device by passing a `CFDictionary` to [`AudioHardwareCreateAggregateDevice(_:_:)`](./audiohardwarecreateaggregatedevice%28_,_%29.md), and destroy it using [`AudioHardwareDestroyAggregateDevice(_:)`](./audiohardwaredestroyaggregatedevice%28_%29.md).
 
 ```swift
 let description = [kAudioAggregateDeviceNameKey: "Sample Aggregate Audio Device", kAudioAggregateDeviceUIDKey: UUID().uuidString]
@@ -44,9 +46,9 @@ var id: AudioObjectID = 0
 AudioHardwareCreateAggregateDevice(description as CFDictionary, &id)
 ```
 
-##### Add a Tap to an Aggregate Device
+##### Add a tap to an aggregate device
 
-To use a tap as an input source, add it to an aggregate device that you configure for playback. First get the tap’s unique identifier by passing the `kAudioTapPropertyUID` selector and the tap’s audio object ID to [`AudioObjectGetPropertyData(_:_:_:_:_:_:)`](audioobjectgetpropertydata(_:_:_:_:_:_:).md):
+To use a tap as an input source, add it to an aggregate device that you configure for playback. First get the tap’s unique identifier by passing the `kAudioTapPropertyUID` selector and the tap’s audio object ID to [`AudioObjectGetPropertyData(_:_:_:_:_:_:)`](./audioobjectgetpropertydata%28_,_,_,_,_,_%29.md):
 
 ```swift
 // Get the UID of the audio tap.
@@ -58,7 +60,7 @@ _ = withUnsafeMutablePointer(to: &tapUID) { tapUID in
 }
 ```
 
-Then use the `kAudioAggregateDevicePropertyTapList` selector to get and set the list of taps in an aggregate device. To add a tap, pass the tap’s audio object ID and a `CFArray` of `CFString` objects containing the tap’s unique identifier to [`AudioObjectSetPropertyData(_:_:_:_:_:_:)`](audioobjectsetpropertydata(_:_:_:_:_:_:).md):
+Then use the `kAudioAggregateDevicePropertyTapList` selector to get and set the list of taps in an aggregate device. To add a tap, pass the tap’s audio object ID and a `CFArray` of `CFString` objects containing the tap’s unique identifier to [`AudioObjectSetPropertyData(_:_:_:_:_:_:)`](./audioobjectsetpropertydata%28_,_,_,_,_,_%29.md):
 
 ```swift
 var propertyAddress = getPropertyAddress(selector: kAudioAggregateDevicePropertyTapList)
@@ -84,7 +86,7 @@ if var listAsArray = list as? [CFString] {
 }
 ```
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode, ensure that you’re using macOS 14.2 or later.
 
@@ -94,9 +96,10 @@ The first time you start recording from an aggregate device that contains a tap,
 
 ## See Also
 
-- [Creating an Audio Server Driver Plug-in](creating-an-audio-server-driver-plug-in.md)
+### Drivers
+- [Creating an Audio Server Driver Plug-in](./creating-an-audio-server-driver-plug-in.md)
   Build a virtual audio device by creating a custom driver plug-in.
-- [Building an Audio Server Plug-in and Driver Extension](building-an-audio-server-plug-in-and-driver-extension.md)
+- [Building an Audio Server Plug-in and Driver Extension](./building-an-audio-server-plug-in-and-driver-extension.md)
   Create a plug-in and driver extension to support an audio device in macOS.
 
 

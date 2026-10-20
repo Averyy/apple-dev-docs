@@ -1,7 +1,8 @@
 # chartXSelection(range:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -21,12 +22,13 @@ func chartXSelection<P>(range: Binding<ClosedRange<P>?>) -> some View where P : 
 
 ## See Also
 
-- [func chartXSelection<P>(value: Binding<P?>) -> some View](view/chartxselection(value:).md)
-- [func chartYSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](view/chartyselection(range:).md)
-- [func chartYSelection<P>(value: Binding<P?>) -> some View](view/chartyselection(value:).md)
-- [func chartZSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](view/chartzselection(range:).md)
-- [func chartZSelection<P>(value: Binding<P?>) -> some View](view/chartzselection(value:).md)
-- [func chartAngleSelection<P>(value: Binding<P?>) -> some View](view/chartangleselection(value:).md)
+### Selection
+- [func chartXSelection<P>(value: Binding<P?>) -> some View](./chartxselection%28value%29.md)
+- [func chartYSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](./chartyselection%28range%29.md)
+- [func chartYSelection<P>(value: Binding<P?>) -> some View](./chartyselection%28value%29.md)
+- [func chartZSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](./chartzselection%28range%29.md)
+- [func chartZSelection<P>(value: Binding<P?>) -> some View](./chartzselection%28value%29.md)
+- [func chartAngleSelection<P>(value: Binding<P?>) -> some View](./chartangleselection%28value%29.md)
 
 
 ---

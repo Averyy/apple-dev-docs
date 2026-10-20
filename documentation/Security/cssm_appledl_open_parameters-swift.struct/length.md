@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var length: uint32
+```
+
+```c
+uint32 length;
 ```
 
 

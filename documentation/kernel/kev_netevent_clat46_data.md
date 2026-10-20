@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_netevent_clat46_data {
     ...
 };
@@ -17,9 +17,9 @@ struct kev_netevent_clat46_data {
 ## Topics
 
 ### Instance Properties
-- [clat46_event_code](kev_netevent_clat46_data/3944530-clat46_event_code.md)
-- [epid](kev_netevent_clat46_data/3944531-epid.md)
-- [euuid](kev_netevent_clat46_data/3944532-euuid.md)
+- [clat46_event_code](./kev_netevent_clat46_data/api-3944530-clat46_event_code.md)
+- [epid](./kev_netevent_clat46_data/api-3944531-epid.md)
+- [euuid](./kev_netevent_clat46_data/api-3944532-euuid.md)
 
 
 ---

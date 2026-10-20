@@ -1,7 +1,8 @@
 # kAEOR
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a logical `OR` operation.
 

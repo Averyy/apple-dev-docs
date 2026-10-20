@@ -1,7 +1,8 @@
 # EnvironmentLightingConfigurationComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that scales the amount of light that an entity receives from its environment.
 
@@ -36,30 +37,31 @@ spaceship.components.set(EnvironmentLightingConfigurationComponent(
 ## Topics
 
 ### Creating an environment-lighting configuration component
-- [init(environmentLightingWeight: Float)](environmentlightingconfigurationcomponent/init(environmentlightingweight:).md)
+- [init(environmentLightingWeight: Float)](./environmentlightingconfigurationcomponent/init%28environmentlightingweight%29.md)
   Creates an environment-lighting configuration component.
 ### Scaling the environment-lighting contribution
-- [var environmentLightingWeight: Float](environmentlightingconfigurationcomponent/environmentlightingweight.md)
+- [var environmentLightingWeight: Float](./environmentlightingconfigurationcomponent/environmentlightingweight.md)
   A value that controls the environment-lighting contribution to an entity’s lighting.
 ### Operators
-- [static func == (EnvironmentLightingConfigurationComponent, EnvironmentLightingConfigurationComponent) -> Bool](environmentlightingconfigurationcomponent/==(_:_:).md)
+- [static func == (EnvironmentLightingConfigurationComponent, EnvironmentLightingConfigurationComponent) -> Bool](./environmentlightingconfigurationcomponent/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two environment-lighting configuration components are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [class EnvironmentResource](environmentresource.md)
+### Environment
+- [class EnvironmentResource](./environmentresource.md)
   An environmental resource that contains background and lighting information for a scene.
-- [struct VirtualEnvironmentProbeComponent](virtualenvironmentprobecomponent.md)
+- [struct VirtualEnvironmentProbeComponent](./virtualenvironmentprobecomponent.md)
   A component that provides environment lighting for entities you place within the same virtual world.
-- [VirtualEnvironmentProbeComponent.Probe](virtualenvironmentprobecomponent/probe.md)
+- [VirtualEnvironmentProbeComponent.Probe](./virtualenvironmentprobecomponent/probe.md)
   A sample of the environment around a point in a scene the system uses for environment-based lighting.
-- [VirtualEnvironmentProbeComponent.Source](virtualenvironmentprobecomponent/source-swift.enum.md)
+- [VirtualEnvironmentProbeComponent.Source](./virtualenvironmentprobecomponent/source-swift.enum.md)
   Options that define the source of diffuse and specular lighting for environment lighting calculations.
 
 

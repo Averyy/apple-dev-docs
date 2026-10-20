@@ -1,17 +1,24 @@
 # sendAction(on:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the conditions on which the status item sends action messages to its target.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Use the [`button`](./button.md) property.
 
 ## Declaration
 
 ```swift
 func sendAction(on mask: NSEvent.EventTypeMask) -> Int
+```
+
+```objc
+- (NSInteger) sendActionOn:(NSEventMask) mask;
 ```
 
 #### Return Value
@@ -24,9 +31,10 @@ A bit mask containing the previous settings. This bit mask uses the same values 
 
 ## See Also
 
-- [func popUpMenu(NSMenu)](nsstatusitem/popupmenu(_:).md)
+### Deprecated methods
+- [func popUpMenu(NSMenu)](./popupmenu%28_%29.md)
   Displays a menu under a custom status bar item.
-- [func drawStatusBarBackground(in: NSRect, withHighlight: Bool)](nsstatusitem/drawstatusbarbackground(in:withhighlight:).md)
+- [func drawStatusBarBackground(in: NSRect, withHighlight: Bool)](./drawstatusbarbackground%28in,withhighlight%29.md)
   Draws the menu background pattern for a custom status-bar item in regular or highlight pattern.
 
 

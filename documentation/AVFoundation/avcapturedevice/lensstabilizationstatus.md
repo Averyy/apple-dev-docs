@@ -1,7 +1,8 @@
 # AVCaptureDevice.LensStabilizationStatus
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the status of optical image stabilization hardware during a bracketed photo capture.
 
@@ -17,31 +18,35 @@ Constants that indicate the status of optical image stabilization hardware durin
 enum LensStabilizationStatus
 ```
 
+```c
+enum AVCaptureLensStabilizationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Lens stabilization values
-- [AVCaptureDevice.LensStabilizationStatus.unsupported](avcapturedevice/lensstabilizationstatus/unsupported.md)
+- [AVCaptureDevice.LensStabilizationStatus.unsupported](./lensstabilizationstatus/unsupported.md)
   Lens stabilization isn’t available on the device or device configuration that captured this photo.
-- [AVCaptureDevice.LensStabilizationStatus.off](avcapturedevice/lensstabilizationstatus/off.md)
+- [AVCaptureDevice.LensStabilizationStatus.off](./lensstabilizationstatus/off.md)
   Lens stabilization isn’t specified for this photo capture.
-- [AVCaptureDevice.LensStabilizationStatus.active](avcapturedevice/lensstabilizationstatus/active.md)
+- [AVCaptureDevice.LensStabilizationStatus.active](./lensstabilizationstatus/active.md)
   Lens stabilization was active for the full duration of the photo capture.
-- [AVCaptureDevice.LensStabilizationStatus.outOfRange](avcapturedevice/lensstabilizationstatus/outofrange.md)
+- [AVCaptureDevice.LensStabilizationStatus.outOfRange](./lensstabilizationstatus/outofrange.md)
   Lens stabilization was enabled for the photo capture, but device motion or capture duration exceeded the stabilization module’s correction limits.
-- [AVCaptureDevice.LensStabilizationStatus.unavailable](avcapturedevice/lensstabilizationstatus/unavailable.md)
+- [AVCaptureDevice.LensStabilizationStatus.unavailable](./lensstabilizationstatus/unavailable.md)
   Lens stabilization was temporarily unavailable during the photo capture.
 ### Initializers
-- [init?(rawValue: Int)](avcapturedevice/lensstabilizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./lensstabilizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

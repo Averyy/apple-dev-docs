@@ -1,14 +1,15 @@
 # vir_user_wired_count
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 natural_t vir_user_wired_count;
 ```
 

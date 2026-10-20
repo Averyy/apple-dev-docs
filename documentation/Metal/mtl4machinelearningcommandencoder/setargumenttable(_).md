@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets an argument table for the command encoder’s machine learning shader stage.
@@ -20,6 +21,10 @@ Sets an argument table for the command encoder’s machine learning shader stage
 func setArgumentTable(_ argumentTable: (any MTL4ArgumentTable)?)
 ```
 
+```objc
+- (void) setArgumentTable:(id<MTL4ArgumentTable>) argumentTable;
+```
+
 #### Discussion
 
 The argument table provides inputs to all subsequent Machine Learning dispatches.
@@ -30,7 +35,8 @@ The argument table provides inputs to all subsequent Machine Learning dispatches
 
 ## See Also
 
-- [func setPipelineState(any MTL4MachineLearningPipelineState)](mtl4machinelearningcommandencoder/setpipelinestate(_:).md)
+### Configuring the pass
+- [func setPipelineState(any MTL4MachineLearningPipelineState)](./setpipelinestate%28_%29.md)
   Configures the encoder with a machine learning pipeline state instance.
 
 

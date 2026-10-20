@@ -1,7 +1,8 @@
 # init(limitBehavior:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view aligned scroll behavior.
 
@@ -22,7 +23,8 @@ init(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior = .automatic)
 
 ## See Also
 
-- [ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior.md)
+### Creating the target behavior
+- [ViewAlignedScrollTargetBehavior.LimitBehavior](./limitbehavior.md)
   A type that defines the amount of views that can be scrolled at a time.
 
 

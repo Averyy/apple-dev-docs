@@ -1,7 +1,8 @@
 # GameCenterChallengeVersionsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains multiple challenge version  resources.
 
@@ -10,24 +11,25 @@ A response that contains multiple challenge version  resources.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeVersionsResponse
 ```
 
 ## Properties
 
 - `data` ([GameCenterChallengeVersion]) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `GameCenterChallengeImage`, `GameCenterChallengeLocalization`, `GameCenterChallengeVersionRelease`, `GameCenterChallenge`
 - `links` (PagedDocumentLinks) *(required)*
 - `meta` (PagingInformation)
 
 ## See Also
 
-- [object GameCenterChallengeVersion](gamecenterchallengeversion.md)
+### Objects
+- [object GameCenterChallengeVersion](./gamecenterchallengeversion.md)
   The data structure that represent a challenge version.
-- [object GameCenterChallengeVersionCreateRequest](gamecenterchallengeversioncreaterequest.md)
+- [object GameCenterChallengeVersionCreateRequest](./gamecenterchallengeversioncreaterequest.md)
   The request body you use to create a challenge version.
-- [object GameCenterChallengeVersionResponse](gamecenterchallengeversionresponse.md)
+- [object GameCenterChallengeVersionResponse](./gamecenterchallengeversionresponse.md)
   A response containing a single version of a Game Center challenge.
 
 

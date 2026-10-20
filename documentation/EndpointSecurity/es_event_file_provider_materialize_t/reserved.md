@@ -1,13 +1,14 @@
 # reserved
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unused field reserved for future use.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,14 +16,19 @@ An unused field reserved for future use.
 var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+uint8_t reserved[32];
+```
+
 ## See Also
 
-- [var instigator: UnsafeMutablePointer<es_process_t>?](es_event_file_provider_materialize_t/instigator.md)
+### Inspecting Event Properties
+- [var instigator: UnsafeMutablePointer<es_process_t>?](./instigator.md)
   The process that instigated the event.
-- [var instigator_token: audit_token_t](es_event_file_provider_materialize_t/instigator_token.md)
-- [var source: UnsafeMutablePointer<es_file_t>](es_event_file_provider_materialize_t/source.md)
+- [var instigator_token: audit_token_t](./instigator_token.md)
+- [var source: UnsafeMutablePointer<es_file_t>](./source.md)
   The source file.
-- [var target: UnsafeMutablePointer<es_file_t>](es_event_file_provider_materialize_t/target.md)
+- [var target: UnsafeMutablePointer<es_file_t>](./target.md)
   The target fle.
 
 

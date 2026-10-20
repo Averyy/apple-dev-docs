@@ -1,7 +1,8 @@
 # linearVelocity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The linear velocity of the body in the physics simulation.
 
@@ -11,7 +12,7 @@ The linear velocity of the body in the physics simulation.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var linearVelocity: SIMD3<Float>
 
 ## See Also
 
-- [var angularVelocity: SIMD3<Float>](physicsmotioncomponent/angularvelocity.md)
+### Setting velocity
+- [var angularVelocity: SIMD3<Float>](./angularvelocity.md)
   The angular velocity of the body around the center of mass.
 
 

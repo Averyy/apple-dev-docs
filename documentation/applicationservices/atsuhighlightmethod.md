@@ -1,7 +1,8 @@
 # ATSUHighlightMethod
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ATSUHighlightMethod = UInt32
+```
+
+```c
+typedef UInt32 ATSUHighlightMethod;
 ```
 
 

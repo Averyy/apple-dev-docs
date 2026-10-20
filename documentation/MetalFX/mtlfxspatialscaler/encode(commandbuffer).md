@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the spatial scaler to a render pass’s command buffer.
@@ -20,9 +21,13 @@ Adds the spatial scaler to a render pass’s command buffer.
 func encode(commandBuffer: any MTLCommandBuffer)
 ```
 
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer;
+```
+
 ## Parameters
 
-- `commandBuffer`: The destination [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) instance for a render pass.
+- `commandBuffer`: The destination [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) instance for a render pass.
 
 
 ---

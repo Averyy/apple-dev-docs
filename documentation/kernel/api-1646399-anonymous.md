@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOOutputCommandMask](1646399-anonymous/kiooutputcommandmask.md)
-- [kIOOutputCommandNone](1646399-anonymous/kiooutputcommandnone.md)
-- [kIOOutputCommandStall](1646399-anonymous/kiooutputcommandstall.md)
+- [kIOOutputCommandMask](./api-1646399-anonymous/kiooutputcommandmask.md)
+- [kIOOutputCommandNone](./api-1646399-anonymous/kiooutputcommandnone.md)
+- [kIOOutputCommandStall](./api-1646399-anonymous/kiooutputcommandstall.md)
 
 
 ---

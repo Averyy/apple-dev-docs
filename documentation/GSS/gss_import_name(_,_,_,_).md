@@ -1,7 +1,8 @@
 # gss_import_name(_:_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts a name in contiguous octet format to the internal name format.
 
@@ -18,24 +19,29 @@ Converts a name in contiguous octet format to the internal name format.
 func gss_import_name(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ input_name_buffer: gss_buffer_t, _ input_name_type: gss_const_OID?, _ output_name: UnsafeMutablePointer<gss_name_t?>) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_import_name(OM_uint32 *minor_status, gss_buffer_t const input_name_buffer, gss_const_OID input_name_type, gss_name_t*output_name);
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a complete enumeration of status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
 #### Discussion
 
-Use this function to reverse the import procedure carried out with the [`gss_display_name(_:_:_:_:)`](gss_display_name(_:_:_:_:).md) function.
+Use this function to reverse the import procedure carried out with the [`gss_display_name(_:_:_:_:)`](./gss_display_name%28_,_,_,_%29.md) function.
 
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `input_name_buffer`: A buffer holding the octets that represent the name to import.
-- `input_name_type`: An object identifier that specifies the name type. Use [`GSS_C_NO_OID`](gss_c_no_oid.md) to request the default for the mechanism.
-- `output_name`: A pointer the function uses to return the imported name. Release this buffer with a call to [`gss_release_name(_:_:)`](gss_release_name(_:_:).md) when you are done with it.
+- `input_name_type`: An object identifier that specifies the name type. Use [`GSS_C_NO_OID`](./gss_c_no_oid.md) to request the default for the mechanism.
+- `output_name`: A pointer the function uses to return the imported name. Release this buffer with a call to [`gss_release_name(_:_:)`](./gss_release_name%28_,_%29.md) when you are done with it.
 
 ## See Also
 
-- [func gss_export_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_buffer_t) -> OM_uint32](gss_export_name(_:_:_:).md)
+### Imports and Exports
+- [func gss_export_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_buffer_t) -> OM_uint32](./gss_export_name%28_,_,_%29.md)
   Returns a mechanism name in contiguous octet format.
 
 

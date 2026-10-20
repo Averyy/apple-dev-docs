@@ -1,7 +1,8 @@
 # quadratureToleranceDegrees
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of degrees a rectangle corner angle deviates from 90°.
 
@@ -26,15 +27,16 @@ The property’s value defaults to `30`, but you can set it to any value in the 
 
 ## See Also
 
-- [var maximumAspectRatio: Float](detectrectanglesrequest/maximumaspectratio.md)
+### Configuring a request
+- [var maximumAspectRatio: Float](./maximumaspectratio.md)
   The largest aspect ratio the rectangle request detects.
-- [var maximumObservations: Int](detectrectanglesrequest/maximumobservations.md)
+- [var maximumObservations: Int](./maximumobservations.md)
   The maximum number of rectangles the request returns.
-- [var minimumAspectRatio: Float](detectrectanglesrequest/minimumaspectratio.md)
+- [var minimumAspectRatio: Float](./minimumaspectratio.md)
   The smallest aspect ratio the rectangle request detects.
-- [var minimumConfidence: Float](detectrectanglesrequest/minimumconfidence.md)
+- [var minimumConfidence: Float](./minimumconfidence.md)
   The minimum acceptable confidence level for detected rectangles.
-- [var minimumSize: Float](detectrectanglesrequest/minimumsize.md)
+- [var minimumSize: Float](./minimumsize.md)
   The minimum size of the rectangle detected as a proportion of the smallest dimension.
 
 

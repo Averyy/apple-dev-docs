@@ -1,7 +1,8 @@
 # ARView.CameraMode.ar
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that uses the device’s camera to place virtual entities relative to the real world.
 
@@ -18,11 +19,12 @@ case ar
 
 #### Discussion
 
-Use this mode to display virtual content in the real world using [`ARView`](arview.md) This mode requires an iOS device with at least one front-facing camera, such as an iPhone or iPad.
+Use this mode to display virtual content in the real world using [`ARView`](../../arview.md) This mode requires an iOS device with at least one front-facing camera, such as an iPhone or iPad.
 
 ## See Also
 
-- [ARView.CameraMode.nonAR](arview/cameramode-swift.enum/nonar.md)
+### Setting the camera mode
+- [ARView.CameraMode.nonAR](./nonar.md)
   A mode that creates a fully virtual environment with no relationship to the real world.
 
 

@@ -1,7 +1,8 @@
 # payloadString
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string value that represents the barcode payload.
 
@@ -26,11 +27,12 @@ Depending on the symbology or the payload data itself, a string representation o
 
 ## See Also
 
-- [let payloadData: Data?](barcodeobservation/payloaddata.md)
+### Getting the payload
+- [let payloadData: Data?](./payloaddata.md)
   The raw data representation of the barcode’s payload.
-- [let supplementalPayloadData: Data?](barcodeobservation/supplementalpayloaddata.md)
+- [let supplementalPayloadData: Data?](./supplementalpayloaddata.md)
   The raw data representation of the barcode’s supplemental payload.
-- [let supplementalPayloadString: String?](barcodeobservation/supplementalpayloadstring.md)
+- [let supplementalPayloadString: String?](./supplementalpayloadstring.md)
   The supplemental code decoded as a string value.
 
 

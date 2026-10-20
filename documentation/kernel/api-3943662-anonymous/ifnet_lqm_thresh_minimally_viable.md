@@ -1,14 +1,15 @@
 # IFNET_LQM_THRESH_MINIMALLY_VIABLE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IFNET_LQM_THRESH_MINIMALLY_VIABLE = 20
 ```
 

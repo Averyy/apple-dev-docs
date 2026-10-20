@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
@@ -11,13 +12,14 @@ This field must be set to `‘sdtp’`.
 
 ## See Also
 
-- [Size](sample_dependency_flags_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in the sample dependency flags atom.
-- [Version](sample_dependency_flags_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this atom.
-- [Flags](sample_dependency_flags_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space reserved for flags.
-- [Sample dependency flags table](sample_dependency_flags_atom/sample_dependency_flags_table.md)
+- [Sample dependency flags table](./sample_dependency_flags_table.md)
   A table of 8-bit values indicating the sample flag settings.
 
 

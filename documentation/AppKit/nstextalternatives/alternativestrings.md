@@ -1,7 +1,8 @@
 # alternativeStrings
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of alternative possible interpretations that the user might select.
 
@@ -14,13 +15,18 @@ An array of alternative possible interpretations that the user might select.
 var alternativeStrings: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * alternativeStrings;
+```
+
 #### Discussion
 
 The text system presents the alternative strings via a user interface similar to that used for spelling correction alternatives.
 
 ## See Also
 
-- [var primaryString: String](nstextalternatives/primarystring.md)
+### Storing Alternative Text Strings
+- [var primaryString: String](./primarystring.md)
   The text that was initially chosen as the input string.
 
 

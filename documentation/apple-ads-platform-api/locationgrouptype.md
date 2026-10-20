@@ -1,7 +1,8 @@
 # LocationGroupType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 How a location group’s membership is composed: dynamically via rules, or as a static, explicit list.
 
@@ -10,9 +11,14 @@ How a location group’s membership is composed: dynamically via rules, or as a 
 
 ## Declaration
 
-```swift
+```
 string LocationGroupType
 ```
+
+## Possible Values
+
+- `DYNAMIC`
+- `STATIC`
 
 #### Discussion
 
@@ -29,7 +35,7 @@ The two types differ in how `systemStatus` behaves after creation or update. A `
 
 ## See Also
 
-- [type EligibilityStatus](eligibilitystatus.md)
+- [type EligibilityStatus](./eligibilitystatus.md)
   Overall eligibility status for an entity’s policy evaluation.
 
 

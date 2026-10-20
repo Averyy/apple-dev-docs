@@ -1,7 +1,8 @@
 # JSPropertyNameAccumulatorRef
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An ordered set of the names of a JavaScript object’s properties.
 
@@ -19,23 +20,28 @@ An ordered set of the names of a JavaScript object’s properties.
 typealias JSPropertyNameAccumulatorRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueJSPropertyNameAccumulator * JSPropertyNameAccumulatorRef;
+```
+
 ## See Also
 
-- [func JSPropertyNameAccumulatorAddName(JSPropertyNameAccumulatorRef!, JSStringRef!)](jspropertynameaccumulatoraddname(_:_:).md)
+### Working with Properties
+- [func JSPropertyNameAccumulatorAddName(JSPropertyNameAccumulatorRef!, JSStringRef!)](./jspropertynameaccumulatoraddname%28_,_%29.md)
   Adds a property name to a JavaScript property name accumulator.
-- [func JSPropertyNameArrayGetCount(JSPropertyNameArrayRef!) -> Int](jspropertynamearraygetcount(_:).md)
+- [func JSPropertyNameArrayGetCount(JSPropertyNameArrayRef!) -> Int](./jspropertynamearraygetcount%28_%29.md)
   Gets a count of the number of items in a JavaScript property name array.
-- [func JSPropertyNameArrayGetNameAtIndex(JSPropertyNameArrayRef!, Int) -> JSStringRef!](jspropertynamearraygetnameatindex(_:_:).md)
+- [func JSPropertyNameArrayGetNameAtIndex(JSPropertyNameArrayRef!, Int) -> JSStringRef!](./jspropertynamearraygetnameatindex%28_,_%29.md)
   Gets a property name at a specified index in a JavaScript property name array.
-- [func JSPropertyNameArrayRelease(JSPropertyNameArrayRef!)](jspropertynamearrayrelease(_:).md)
+- [func JSPropertyNameArrayRelease(JSPropertyNameArrayRef!)](./jspropertynamearrayrelease%28_%29.md)
   Releases a JavaScript property name array.
-- [func JSPropertyNameArrayRetain(JSPropertyNameArrayRef!) -> JSPropertyNameArrayRef!](jspropertynamearrayretain(_:).md)
+- [func JSPropertyNameArrayRetain(JSPropertyNameArrayRef!) -> JSPropertyNameArrayRef!](./jspropertynamearrayretain%28_%29.md)
   Retains a JavaScript property name array.
-- [typealias JSPropertyAttributes](jspropertyattributes.md)
+- [typealias JSPropertyAttributes](./jspropertyattributes.md)
   A set of JavaScript property attributes.
-- [JSPropertyAttribute](jspropertyattribute.md)
+- [JSPropertyAttribute](./jspropertyattribute.md)
   A JavaScript property attribute.
-- [typealias JSPropertyNameArrayRef](jspropertynamearrayref.md)
+- [typealias JSPropertyNameArrayRef](./jspropertynamearrayref.md)
   An array of JavaScript property names.
 
 

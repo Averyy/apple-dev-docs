@@ -1,7 +1,8 @@
 # AdResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for an Ad operation.
 
@@ -10,7 +11,7 @@ The response object for an Ad operation.
 
 ## Declaration
 
-```swift
+```
 object AdResponse
 ```
 
@@ -43,18 +44,18 @@ Ad create, read, update, and delete operations return `AdResponse`, the single-i
 
 ## Properties
 
-- `result` (Ad): The full `Ad` object, populated on success. Absent on failure. See [`Ad`](ad.md). Read-only.
-- `error` (Error): Describes the problem when the operation fails. Absent on success. See [`Error`](error.md). Read-only.
+- `result` (Ad): The full `Ad` object, populated on success. Absent on failure. See [`Ad`](./ad.md). Read-only.
+- `error` (Error): Describes the problem when the operation fails. Absent on success. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Ad](ad.md)
+- [object Ad](./ad.md)
   Ad entity that links an ad creative to an ad group for serving.
-- [object AdCreate](adcreate.md)
+- [object AdCreate](./adcreate.md)
   The request body for creating a new Ad object.
-- [object AdUpdate](adupdate.md)
+- [object AdUpdate](./adupdate.md)
   The request body for updating an existing Ad object.
-- [object AdQueryResponse](adqueryresponse.md)
+- [object AdQueryResponse](./adqueryresponse.md)
   The response object for an Ad query, containing matched results and pagination metadata.
 
 

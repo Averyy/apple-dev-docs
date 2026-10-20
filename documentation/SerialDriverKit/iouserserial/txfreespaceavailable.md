@@ -1,7 +1,8 @@
 # TxFreeSpaceAvailable
 
 **Framework**: SerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system that the device is ready to accept more data.
 
@@ -10,23 +11,24 @@ Notifies the system that the device is ready to accept more data.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void TxFreeSpaceAvailable();
 ```
 
 #### Discussion
 
-Call this method after freeing up space in the memory buffer you use to transmit data. When more data is available, the system responds by adding that data to the buffer and calling the [`TxDataAvailable`](iouserserial/txdataavailable.md) method.
+Call this method after freeing up space in the memory buffer you use to transmit data. When more data is available, the system responds by adding that data to the buffer and calling the [`TxDataAvailable`](./txdataavailable.md) method.
 
 ## See Also
 
-- [RxDataAvailable](iouserserial/rxdataavailable.md)
+### Transmitting and Receiving Data
+- [RxDataAvailable](./rxdataavailable.md)
   Notifies the system that data from the device is now available.
-- [RxFreeSpaceAvailable](iouserserial/rxfreespaceavailable.md)
+- [RxFreeSpaceAvailable](./rxfreespaceavailable.md)
   Notifies your driver that buffer space is available for your device’s data.
-- [TxDataAvailable](iouserserial/txdataavailable.md)
+- [TxDataAvailable](./txdataavailable.md)
   Notifies your driver that the system has data for you to transmit to the device.
-- [RxError](iouserserial/rxerror.md)
+- [RxError](./rxerror.md)
   Reports errors that occurred when receiving data from the device.
 
 

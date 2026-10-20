@@ -1,7 +1,8 @@
 # ASExtensionErrorDomain
 
 **Framework**: Authentication Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for a credential provider extension error.
 
@@ -18,15 +19,20 @@ The domain for a credential provider extension error.
 let ASExtensionErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const ASExtensionErrorDomain;
+```
+
 ## Mentions
 
-- [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
+- [Providing one-time passcodes to AutoFill](./providing-one-time-passcodes-to-autofill.md)
 
 ## See Also
 
-- [struct ASExtensionError](asextensionerror.md)
+### Recognizing errors
+- [struct ASExtensionError](./asextensionerror.md)
   A credential provider extension error.
-- [ASExtensionError.Code](asextensionerror/code.md)
+- [ASExtensionError.Code](./asextensionerror/code.md)
   The codes for a credential provider extension error.
 
 

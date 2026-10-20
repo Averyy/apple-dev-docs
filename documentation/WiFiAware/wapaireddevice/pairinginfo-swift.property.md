@@ -1,7 +1,8 @@
 # pairingInfo
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unauthenticated information provided by the device before a person pairs it for the first time.
 
@@ -24,7 +25,8 @@ The value is `nil` if the information is unavailable. The values provide a captu
 
 ## See Also
 
-- [WAPairedDevice.PairingInfo](wapaireddevice/pairinginfo-swift.struct.md)
+### Getting pairing-related device data
+- [WAPairedDevice.PairingInfo](./pairinginfo-swift.struct.md)
   A collection of unauthenticated information the system receives from a device before it’s paired for the first time.
 
 

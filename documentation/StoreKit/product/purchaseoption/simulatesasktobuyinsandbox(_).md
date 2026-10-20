@@ -1,7 +1,8 @@
 # simulatesAskToBuyInSandbox(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Simulates an Ask to Buy scenario when testing your app in the sandbox environment.
 
@@ -22,13 +23,13 @@ static func simulatesAskToBuyInSandbox(_ simulateAskToBuy: Bool) -> Product.Purc
 
 #### Return Value
 
-An instance of [`Product.PurchaseOption`](product/purchaseoption.md) to use in [`purchase(options:)`](product/purchase(options:).md).
+An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).
 
 #### Discussion
 
-For information about testing Ask to Buy scenarios, see [`Testing at all stages of development with Xcode and the sandbox`](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md).
+For information about testing Ask to Buy scenarios, see [Testing at all stages of development with Xcode and the sandbox](../../testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md).
 
-For information about purchases made using Ask to Buy, see [`Approve what kids buy with Ask to Buy`](https://developer.apple.comhttps://support.apple.com/en-us/HT201089).
+For information about purchases made using Ask to Buy, see [Approve what kids buy with Ask to Buy](https://support.apple.com/en-us/HT201089).
 
 ## Parameters
 

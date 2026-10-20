@@ -1,7 +1,8 @@
 # MergeablePartData.fileURL(_:)
 
 **Framework**: Assignables  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Part data exported as a file URL to a part data archive.
 
@@ -9,7 +10,7 @@ Part data exported as a file URL to a part data archive.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

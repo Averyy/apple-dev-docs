@@ -1,7 +1,8 @@
 # WACapabilities
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that checks the host device’s supported features and capabilities.
 
@@ -19,27 +20,28 @@ struct WACapabilities
 ## Topics
 
 ### Checking features supported by host device
-- [WACapabilities.Feature](wacapabilities/feature.md)
+- [WACapabilities.Feature](./wacapabilities/feature.md)
   Features that your app’s current host device can support.
-- [static var supportedFeatures: Set<WACapabilities.Feature>](wacapabilities/supportedfeatures.md)
+- [static var supportedFeatures: Set<WACapabilities.Feature>](./wacapabilities/supportedfeatures.md)
   A property that returns a set of supported features, or an empty set if the current platform doesn’t support Wi-Fi Aware.
 ### Checking for the maximum devices and services
-- [static var maximumConnectableDevices: Int](wacapabilities/maximumconnectabledevices.md)
+- [static var maximumConnectableDevices: Int](./wacapabilities/maximumconnectabledevices.md)
   The maximum number of unique devices your app can connect to simultaneously.
-- [static var maximumPublishableServices: Int](wacapabilities/maximumpublishableservices.md)
+- [static var maximumPublishableServices: Int](./wacapabilities/maximumpublishableservices.md)
   The maximum number of unique services your app can publish simultaneously.
-- [static var maximumSubscribableServices: Int](wacapabilities/maximumsubscribableservices.md)
+- [static var maximumSubscribableServices: Int](./wacapabilities/maximumsubscribableservices.md)
   The maximum number of unique services your app can simultaneously subscribe to.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WACapabilities.Feature](wacapabilities/feature.md)
+### Host capabilities
+- [WACapabilities.Feature](./wacapabilities/feature.md)
   Features that your app’s current host device can support.
 
 

@@ -1,7 +1,8 @@
 # SFAuthorizationPluginViewUserShortNameKey
 
 **Framework**: Security Interface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An `NSString` object with the user’s short name.
 
@@ -14,9 +15,14 @@ An `NSString` object with the user’s short name.
 let SFAuthorizationPluginViewUserShortNameKey: String
 ```
 
+```c
+extern NSString * const SFAuthorizationPluginViewUserShortNameKey;
+```
+
 ## See Also
 
-- [let SFAuthorizationPluginViewUserNameKey: String](sfauthorizationpluginviewusernamekey.md)
+### Constants
+- [let SFAuthorizationPluginViewUserNameKey: String](./sfauthorizationpluginviewusernamekey.md)
   An `NSString` object with the user’s (long) name.
 
 

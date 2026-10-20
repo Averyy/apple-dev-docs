@@ -2,6 +2,7 @@
 
 **Framework**: Swift Charts  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of chart content contained in the body of this instance.
@@ -23,7 +24,8 @@ associatedtype Body : ChartContent
 
 ## See Also
 
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+### Implementing chart content
+- [var body: Self.Body](./body-swift.property.md)
   The content and behavior of the chart content.
 
 

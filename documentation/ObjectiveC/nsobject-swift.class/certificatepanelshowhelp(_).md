@@ -1,7 +1,8 @@
 # certificatePanelShowHelp(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implements custom help behavior for the modal panel.
 
@@ -14,9 +15,13 @@ Implements custom help behavior for the modal panel.
 func certificatePanelShowHelp(_ sender: SFCertificatePanel!) -> Bool
 ```
 
+```objc
+- (BOOL) certificatePanelShowHelp:(SFCertificatePanel *) sender;
+```
+
 #### Discussion
 
-You can use this delegate method to implement custom help if you call the [`setShowsHelp(_:)`](https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/setshowshelp(_:)) method to display a help button in the sheet or panel. If you are not implementing custom help, do not implement this method.
+You can use this delegate method to implement custom help if you call the [`setShowsHelp(_:)`](../../SecurityInterface/sfcertificatepanel/setshowshelp%28_%29.md) method to display a help button in the sheet or panel. If you are not implementing custom help, do not implement this method.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ You can use this delegate method to implement custom help if you call the [`setS
 
 ## See Also
 
-- [var delegate: (any NSWindowDelegate)?](../appkit/nswindow/delegate.md)
+### Related Documentation
+- [var delegate: (any NSWindowDelegate)?](../../AppKit/nswindow/delegate.md)
   The window’s delegate.
-- [func setShowsHelp(Bool)](../securityinterface/sfcertificatepanel/setshowshelp(_:).md)
+- [func setShowsHelp(Bool)](../../SecurityInterface/sfcertificatepanel/setshowshelp%28_%29.md)
   Displays a Help button in the sheet or panel.
 
 

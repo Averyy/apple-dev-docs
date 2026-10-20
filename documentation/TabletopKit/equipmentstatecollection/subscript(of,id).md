@@ -1,7 +1,8 @@
 # subscript(of:id:)
 
 **Framework**: TabletopKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns and/or modifies the state for the equipment with given identifier and matching type.
 
@@ -20,11 +21,12 @@ subscript<E>(of type: E.Type, id equipmentID: EquipmentIdentifier) -> E.State? w
 
 ## See Also
 
-- [subscript(id _: EquipmentIdentifier) -> (any MutableEquipmentState)?](equipmentstatecollection/subscript(id:).md)
+### Accessing the subscript
+- [subscript(id _: EquipmentIdentifier) -> (any MutableEquipmentState)?](./subscript%28id%29.md)
   Returns and/or modifies the state for the equipment with given identifier.
-- [subscript(ids _: some Sequence<EquipmentIdentifier>) -> [(any MutableEquipmentState)?]](equipmentstatecollection/subscript(ids:).md)
+- [subscript(ids _: some Sequence<EquipmentIdentifier>) -> [(any MutableEquipmentState)?]](./subscript%28ids%29.md)
   Returns and/or modifies the states for the equipment with given identifiers.
-- [subscript<E>(of _: E.Type, ids _: some Sequence<EquipmentIdentifier>) -> [E.State?]](equipmentstatecollection/subscript(of:ids:).md)
+- [subscript<E>(of _: E.Type, ids _: some Sequence<EquipmentIdentifier>) -> [E.State?]](./subscript%28of,ids%29.md)
   Returns and/or modifies the state for the equipment with given identifier and matching type.
 
 

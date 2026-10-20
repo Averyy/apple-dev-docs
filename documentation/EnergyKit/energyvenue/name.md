@@ -1,14 +1,15 @@
 # name
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the Home to which the venue corresponds.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ let name: String
 
 ## See Also
 
-- [let id: UUID](energyvenue/id.md)
+### Identifying the location
+- [let id: UUID](./id.md)
   A unique identifier for the venue.
 
 

@@ -1,7 +1,8 @@
 # GKChallengeDefinition
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the static metadata you define for the challenge.
 
@@ -20,65 +21,70 @@ An object that represents the static metadata you define for the challenge.
 class GKChallengeDefinition
 ```
 
+```objc
+@interface GKChallengeDefinition : NSObject
+```
+
 ## Mentions
 
-- [Creating engaging challenges from leaderboards](creating-engaging-challenges-from-leaderboards.md)
+- [Creating engaging challenges from leaderboards](./creating-engaging-challenges-from-leaderboards.md)
 
 ## Topics
 
 ### Getting the display properties and image
-- [var title: String](gkchallengedefinition/title.md)
+- [var title: String](./gkchallengedefinition/title.md)
   A short title for the challenge definition.
-- [var details: String?](gkchallengedefinition/details.md)
+- [var details: String?](./gkchallengedefinition/details.md)
   A more detailed description of the challenge definition.
-- [func loadImage(completionHandler: (UIImage?, (any Error)?) -> Void)](gkchallengedefinition/loadimage(completionhandler:).md)
+- [func loadImage(completionHandler: (UIImage?, (any Error)?) -> Void)](./gkchallengedefinition/loadimage%28completionhandler%29.md)
   Loads the image set on the challenge definition, which may be `nil` if none was set.
 ### Getting the challenge rules
-- [var durationOptions: [DateComponents]](gkchallengedefinition/durationoptions.md)
+- [var durationOptions: [DateComponents]](./gkchallengedefinition/durationoptions.md)
   The duration options for the challenge, like `1 day` or `1 week`.
-- [var isRepeatable: Bool](gkchallengedefinition/isrepeatable.md)
+- [var isRepeatable: Bool](./gkchallengedefinition/isrepeatable.md)
   Indicates if a challenge can be attempted more than once.
 ### Getting the leaderboard
-- [var leaderboard: GKLeaderboard?](gkchallengedefinition/leaderboard.md)
+- [var leaderboard: GKLeaderboard?](./gkchallengedefinition/leaderboard.md)
   Scores submitted to this leaderboard will also be submitted as scores in this challenge.
 ### Getting the release state
-- [var releaseState: GKReleaseState](gkchallengedefinition/releasestate.md)
+- [var releaseState: GKReleaseState](./gkchallengedefinition/releasestate.md)
   The release state of the challenge definition in App Store Connect.
-- [struct GKReleaseState](gkreleasestate.md)
+- [struct GKReleaseState](./gkreleasestate.md)
   Describes the release state of an App Store Connect resource, such as an Achievement or Leaderboard.
 ### Getting the identifier properties
-- [var groupIdentifier: String?](gkchallengedefinition/groupidentifier.md)
+- [var groupIdentifier: String?](./gkchallengedefinition/groupidentifier.md)
   The group identifier for the challenge definition, if one exists.
-- [var identifier: String](gkchallengedefinition/identifier.md)
+- [var identifier: String](./gkchallengedefinition/identifier.md)
   The developer defined identifier for a given challenge definition.
 ### Loading challenge definitions
-- [class func loadChallengeDefinitions(completionHandler: ([GKChallengeDefinition]?, (any Error)?) -> Void)](gkchallengedefinition/loadchallengedefinitions(completionhandler:).md)
+- [class func loadChallengeDefinitions(completionHandler: ([GKChallengeDefinition]?, (any Error)?) -> Void)](./gkchallengedefinition/loadchallengedefinitions%28completionhandler%29.md)
   Loads all the challenge definitions for the current game, returns an empty array if none exist.
 ### Checking for active challenges
-- [func hasActiveChallenges(completionHandler: (Bool, (any Error)?) -> Void)](gkchallengedefinition/hasactivechallenges(completionhandler:).md)
+- [func hasActiveChallenges(completionHandler: (Bool, (any Error)?) -> Void)](./gkchallengedefinition/hasactivechallenges%28completionhandler%29.md)
   Indicates if this definition has active challenges associated with it.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating engaging challenges from leaderboards](creating-engaging-challenges-from-leaderboards.md)
+### Challenges
+- [Creating engaging challenges from leaderboards](./creating-engaging-challenges-from-leaderboards.md)
   Encourage friendly competition by adding challenges to your game.
-- [Choosing a leaderboard for your challenges](choosing-a-leaderboard-for-your-challenges.md)
+- [Choosing a leaderboard for your challenges](./choosing-a-leaderboard-for-your-challenges.md)
   Understand what gameplay works well when configuring challenges in your game.
-- [GKShowChallengeBanners](../bundleresources/information-property-list/gkshowchallengebanners.md)
+- [GKShowChallengeBanners](../BundleResources/information-property-list/gkshowchallengebanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 

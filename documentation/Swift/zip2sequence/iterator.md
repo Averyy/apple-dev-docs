@@ -1,7 +1,8 @@
 # Zip2Sequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator for `Zip2Sequence`.
 
@@ -21,19 +22,21 @@ An iterator for `Zip2Sequence`.
 struct Iterator
 ```
 
+Available when `Sequence1` conforms to `Sequence` and `Sequence2` conforms to `Sequence`.
+
 ## Topics
 
 ### Default Implementations
-- [IteratorProtocol Implementations](zip2sequence/iterator/iteratorprotocol-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

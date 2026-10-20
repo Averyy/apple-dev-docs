@@ -1,7 +1,8 @@
 # routes
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of route objects representing the directions between the start and end points.
 
@@ -20,9 +21,13 @@ An array of route objects representing the directions between the start and end 
 var routes: [MKRoute] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<MKRoute *> * routes;
+```
+
 #### Discussion
 
-The array contains one or more [`MKRoute`](mkroute.md) objects, each of which represents a possible set of directions for the user to follow. If you don’t request alternate routes in the original directions request, this array contains at most one object.
+The array contains one or more [`MKRoute`](../../mkroute.md) objects, each of which represents a possible set of directions for the user to follow. If you don’t request alternate routes in the original directions request, this array contains at most one object.
 
 Each route object contains geometry information that you can use to display that route on your app’s map view. Routes may also contain additional information that’s relevant to that particular route, such as the expected travel time and any trip advisory notices.
 

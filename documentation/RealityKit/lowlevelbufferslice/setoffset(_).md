@@ -1,7 +1,8 @@
 # setOffset(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the byte offset of this slice.
 
@@ -19,7 +20,7 @@ mutating func setOffset(_ offset: Int) throws(LowLevelRenderContextError)
 
 #### Discussion
 
-> **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the new offset falls outside the buffer’s allocated capacity.
+> **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if the new offset falls outside the buffer’s allocated capacity.
 
 ## Parameters
 

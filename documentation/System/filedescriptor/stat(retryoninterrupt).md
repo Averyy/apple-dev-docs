@@ -1,7 +1,8 @@
 # stat(retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a `Stat` struct for the file referenced by this `FileDescriptor`.
 

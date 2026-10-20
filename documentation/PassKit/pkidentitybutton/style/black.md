@@ -1,7 +1,8 @@
 # PKIdentityButton.Style.black
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that represents a black button with white lettering.
 
@@ -17,9 +18,14 @@ A style that represents a black button with white lettering.
 case black
 ```
 
+```c
+PKIdentityButtonStyleBlack
+```
+
 ## See Also
 
-- [PKIdentityButton.Style.blackOutline](pkidentitybutton/style/blackoutline.md)
+### Styles
+- [PKIdentityButton.Style.blackOutline](./blackoutline.md)
   A style that represents a black button with a light outline.
 
 

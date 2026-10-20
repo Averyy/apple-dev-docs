@@ -1,7 +1,8 @@
 # stepSize
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -19,14 +20,15 @@ var stepSize: Double
 
 ## See Also
 
-- [var validationData: MLDataTable?](mllinearregressor/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var maxIterations: Int](mllinearregressor/modelparameters-swift.struct/maxiterations.md)
-- [var l1Penalty: Double](mllinearregressor/modelparameters-swift.struct/l1penalty.md)
-- [var l2Penalty: Double](mllinearregressor/modelparameters-swift.struct/l2penalty.md)
-- [var convergenceThreshold: Double](mllinearregressor/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mllinearregressor/modelparameters-swift.struct/featurerescaling.md)
-- [var validation: MLLinearRegressor.ModelParameters.ValidationData](mllinearregressor/modelparameters-swift.struct/validation.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var l1Penalty: Double](./l1penalty.md)
+- [var l2Penalty: Double](./l2penalty.md)
+- [var convergenceThreshold: Double](./convergencethreshold.md)
+- [var featureRescaling: Bool](./featurerescaling.md)
+- [var validation: MLLinearRegressor.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

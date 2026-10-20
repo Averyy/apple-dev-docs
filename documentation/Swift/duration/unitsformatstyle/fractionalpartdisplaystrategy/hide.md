@@ -1,7 +1,8 @@
 # hide
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A display strategy that hides any fractional part by truncating it.
 
@@ -22,9 +23,10 @@ static var hide: Duration.UnitsFormatStyle.FractionalPartDisplayStrategy { get }
 
 ## See Also
 
-- [static func hide(rounded: FloatingPointRoundingRule) -> Duration.UnitsFormatStyle.FractionalPartDisplayStrategy](duration/unitsformatstyle/fractionalpartdisplaystrategy/hide(rounded:).md)
+### Using common strategies
+- [static func hide(rounded: FloatingPointRoundingRule) -> Duration.UnitsFormatStyle.FractionalPartDisplayStrategy](./hide%28rounded%29.md)
   Creates a display strategy that hides any fractional part rounding the unit value.
-- [static func show(length: Int, rounded: FloatingPointRoundingRule, increment: Double?) -> Duration.UnitsFormatStyle.FractionalPartDisplayStrategy](duration/unitsformatstyle/fractionalpartdisplaystrategy/show(length:rounded:increment:).md)
+- [static func show(length: Int, rounded: FloatingPointRoundingRule, increment: Double?) -> Duration.UnitsFormatStyle.FractionalPartDisplayStrategy](./show%28length,rounded,increment%29.md)
   Creates a display strategy that shows a fractional part.
 
 

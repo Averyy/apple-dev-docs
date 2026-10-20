@@ -1,17 +1,22 @@
 # matchesUUIDArray(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns TRUE if ALL of the UUIDs in the given array is found in the target service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func matchesUUIDArray(_ uuidArray: [Any]!) -> Bool
+```
+
+```objc
+- (BOOL) matchesUUIDArray:(NSArray *) uuidArray;
 ```
 
 #### Return Value

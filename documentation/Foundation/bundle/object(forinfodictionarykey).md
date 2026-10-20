@@ -1,7 +1,8 @@
 # object(forInfoDictionaryKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value associated with the specified key in the receiver’s information property list.
 
@@ -20,6 +21,10 @@ Returns the value associated with the specified key in the receiver’s informat
 func object(forInfoDictionaryKey key: String) -> Any?
 ```
 
+```objc
+- (id) objectForInfoDictionaryKey:(NSString *) key;
+```
+
 #### Return Value
 
 The value associated with `key` in the receiver’s property list (`Info.plist`). The localized value of a key is returned when one is available.
@@ -34,13 +39,14 @@ Use of this method is preferred over other access methods because it returns the
 
 ## See Also
 
-- [var bundleURL: URL](bundle/bundleurl.md)
+### Getting bundle information
+- [var bundleURL: URL](./bundleurl.md)
   The full URL of the receiver’s bundle directory.
-- [var bundlePath: String](bundle/bundlepath.md)
+- [var bundlePath: String](./bundlepath.md)
   The full pathname of the receiver’s bundle directory.
-- [var bundleIdentifier: String?](bundle/bundleidentifier.md)
+- [var bundleIdentifier: String?](./bundleidentifier.md)
   The receiver’s bundle identifier.
-- [var infoDictionary: [String : Any]?](bundle/infodictionary.md)
+- [var infoDictionary: [String : Any]?](./infodictionary.md)
   A dictionary, constructed from the bundle’s `Info.plist` file, that contains information about the receiver.
 
 

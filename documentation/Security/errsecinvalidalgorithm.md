@@ -1,7 +1,8 @@
 # errSecInvalidAlgorithm
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid algorithm was detected.
 
@@ -18,6 +19,10 @@ An invalid algorithm was detected.
 
 ```swift
 var errSecInvalidAlgorithm: OSStatus { get }
+```
+
+```c
+errSecInvalidAlgorithm
 ```
 
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 subscript(attachmentIndex: Int) -> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor! { get set }
+```
+
+```objc
+- (MTLAccelerationStructurePassSampleBufferAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
 

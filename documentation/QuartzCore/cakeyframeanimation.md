@@ -1,7 +1,8 @@
 # CAKeyframeAnimation
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides keyframe animation capabilities for a layer object.
 
@@ -19,11 +20,15 @@ An object that provides keyframe animation capabilities for a layer object.
 class CAKeyframeAnimation
 ```
 
+```objc
+@interface CAKeyframeAnimation : CAPropertyAnimation
+```
+
 #### Overview
 
-You create a [`CAKeyframeAnimation`](cakeyframeanimation.md) object using the inherited [`init(keyPath:)`](capropertyanimation/init(keypath:).md) method, specifying the key path of the property that you want to animate on the layer. You can then specify the keyframe values to use to control the timing and animation behavior.
+You create a [`CAKeyframeAnimation`](./cakeyframeanimation.md) object using the inherited [`init(keyPath:)`](./capropertyanimation/init%28keypath%29.md) method, specifying the key path of the property that you want to animate on the layer. You can then specify the keyframe values to use to control the timing and animation behavior.
 
-For most types of animations, you specify the keyframe values using the [`values`](cakeyframeanimation/values.md) and [`keyTimes`](cakeyframeanimation/keytimes.md) properties. During the animation, Core Animation generates intermediate values by interpolating between the values you provide. When animating a value that is a coordinate point, such as the layer’s position, you can specify a [`path`](cakeyframeanimation/path.md) for that point to follow instead of individual values. The pacing of the animation is controlled by the timing information you provide.
+For most types of animations, you specify the keyframe values using the [`values`](./cakeyframeanimation/values.md) and [`keyTimes`](./cakeyframeanimation/keytimes.md) properties. During the animation, Core Animation generates intermediate values by interpolating between the values you provide. When animating a value that is a coordinate point, such as the layer’s position, you can specify a [`path`](./cakeyframeanimation/path.md) for that point to follow instead of individual values. The pacing of the animation is controlled by the timing information you provide.
 
 The following code shows how to create a keyframe animation that animates a layer’s background color from red to green to blue over a two second duration.
 
@@ -40,67 +45,68 @@ colorKeyframeAnimation.duration = 2
 ## Topics
 
 ### Providing keyframe values
-- [var values: [Any]?](cakeyframeanimation/values.md)
+- [var values: [Any]?](./cakeyframeanimation/values.md)
   An array of objects that specify the keyframe values to use for the animation.
-- [var path: CGPath?](cakeyframeanimation/path.md)
+- [var path: CGPath?](./cakeyframeanimation/path.md)
   The path for a point-based property to follow.
 ### Keyframe timing
-- [var keyTimes: [NSNumber]?](cakeyframeanimation/keytimes.md)
+- [var keyTimes: [NSNumber]?](./cakeyframeanimation/keytimes.md)
   An optional array of `NSNumber` objects that define the time at which to apply a given keyframe segment.
-- [var timingFunctions: [CAMediaTimingFunction]?](cakeyframeanimation/timingfunctions.md)
+- [var timingFunctions: [CAMediaTimingFunction]?](./cakeyframeanimation/timingfunctions.md)
   An optional array of `CAMediaTimingFunction` objects that define the pacing for each keyframe segment.
-- [var calculationMode: CAAnimationCalculationMode](cakeyframeanimation/calculationmode.md)
+- [var calculationMode: CAAnimationCalculationMode](./cakeyframeanimation/calculationmode.md)
   Specifies how intermediate keyframe values are calculated by the receiver.
 ### Rotation Mode Attribute
-- [var rotationMode: CAAnimationRotationMode?](cakeyframeanimation/rotationmode.md)
+- [var rotationMode: CAAnimationRotationMode?](./cakeyframeanimation/rotationmode.md)
   Determines whether objects animating along the path rotate to match the path tangent.
 ### Cubic Mode Attributes
-- [var tensionValues: [NSNumber]?](cakeyframeanimation/tensionvalues.md)
+- [var tensionValues: [NSNumber]?](./cakeyframeanimation/tensionvalues.md)
   An array of numbers that define the tightness of the curve.
-- [var continuityValues: [NSNumber]?](cakeyframeanimation/continuityvalues.md)
+- [var continuityValues: [NSNumber]?](./cakeyframeanimation/continuityvalues.md)
   An array of numbers that define the sharpness of the timing curve’s corners.
-- [var biasValues: [NSNumber]?](cakeyframeanimation/biasvalues.md)
+- [var biasValues: [NSNumber]?](./cakeyframeanimation/biasvalues.md)
   An array of numbers that define the position of the curve relative to a control point.
 ### Constants
-- [Rotation Mode Values](rotation-mode-values.md)
-  These constants are used by the [`rotationMode`](cakeyframeanimation/rotationmode.md) property.
-- [Value calculation modes](value-calculation-modes.md)
-  These constants are used by the [`calculationMode`](cakeyframeanimation/calculationmode.md) property.
+- [Rotation Mode Values](./rotation-mode-values.md)
+  These constants are used by the [`rotationMode`](./cakeyframeanimation/rotationmode.md) property.
+- [Value calculation modes](./value-calculation-modes.md)
+  These constants are used by the [`calculationMode`](./cakeyframeanimation/calculationmode.md) property.
 
 ## Relationships
 
 ### Inherits From
-- [CAPropertyAnimation](capropertyanimation.md)
+- [CAPropertyAnimation](./capropertyanimation.md)
 ### Conforms To
-- [CAAction](caaction.md)
-- [CAMediaTiming](camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CAAction](./caaction.md)
+- [CAMediaTiming](./camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CAAnimation](caanimation.md)
+### Animation
+- [class CAAnimation](./caanimation.md)
   The abstract superclass for animations in Core Animation.
-- [protocol CAAnimationDelegate](caanimationdelegate.md)
+- [protocol CAAnimationDelegate](./caanimationdelegate.md)
   Methods your app can implement to respond when animations start and stop.
-- [class CAPropertyAnimation](capropertyanimation.md)
+- [class CAPropertyAnimation](./capropertyanimation.md)
   An abstract subclass for creating animations that manipulate the value of layer properties.
-- [class CABasicAnimation](cabasicanimation.md)
+- [class CABasicAnimation](./cabasicanimation.md)
   An object that provides basic, single-keyframe animation capabilities for a layer property.
-- [class CASpringAnimation](caspringanimation.md)
+- [class CASpringAnimation](./caspringanimation.md)
   An animation that applies a spring-like force to a layer’s properties.
-- [class CATransition](catransition.md)
+- [class CATransition](./catransition.md)
   An object that provides an animated transition between a layer’s states.
-- [class CAValueFunction](cavaluefunction.md)
+- [class CAValueFunction](./cavaluefunction.md)
   An object that provides a flexible method of defining animated transformations.
 
 

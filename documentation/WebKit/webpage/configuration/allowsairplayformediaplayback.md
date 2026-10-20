@@ -1,7 +1,8 @@
 # allowsAirPlayForMediaPlayback
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the webpage allows media playback over AirPlay.
 

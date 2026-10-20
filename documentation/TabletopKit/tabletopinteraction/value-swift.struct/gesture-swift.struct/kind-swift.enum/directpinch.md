@@ -1,7 +1,8 @@
 # TabletopInteraction.Value.Gesture.Kind.directPinch
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 2.2+
@@ -14,7 +15,8 @@ case directPinch
 
 ## See Also
 
-- [TabletopInteraction.Value.Gesture.Kind.indirectPinch](tabletopinteraction/value-swift.struct/gesture-swift.struct/kind-swift.enum/indirectpinch.md)
+### Gestures
+- [TabletopInteraction.Value.Gesture.Kind.indirectPinch](./indirectpinch.md)
 
 
 ---

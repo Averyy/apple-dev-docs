@@ -1,7 +1,8 @@
 # nonPropagated
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of attachments to not copy when propagating attachments from one object to another.
 
@@ -22,7 +23,8 @@ var nonPropagated: [String : Any] { get }
 
 ## See Also
 
-- [var propagated: [String : Any]](cmattachmentbearerattachments/propagated.md)
+### Inspecting Attachments
+- [var propagated: [String : Any]](./propagated.md)
   A dictionary of attachments to copy when propagating attachments from one object to another.
 
 

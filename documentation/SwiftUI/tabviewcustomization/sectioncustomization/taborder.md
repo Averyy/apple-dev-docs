@@ -1,7 +1,8 @@
 # tabOrder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order customization for the tabs in a section, identified by customization identifier.
 

@@ -1,7 +1,8 @@
 # IntentPerson
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information that identifies a person participating in an intents-based interaction.
 
@@ -11,7 +12,7 @@ Information that identifies a person participating in an intents-based interacti
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,65 +23,65 @@ struct IntentPerson
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
-- [Providing contextual cues to Apple Intelligence and Siri](providing-contextual-cues-to-apple-intelligence-and-siri.md)
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
+- [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md)
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
 
 ## Topics
 
 ### Creating a contact
-- [init(identifier: IntentPerson.Identifier, name: IntentPerson.Name, handle: IntentPerson.Handle?, aliases: [IntentPerson.Handle], isMe: Bool, image: DisplayRepresentation.Image?)](intentperson/init(identifier:name:handle:aliases:isme:image:).md)
+- [init(identifier: IntentPerson.Identifier, name: IntentPerson.Name, handle: IntentPerson.Handle?, aliases: [IntentPerson.Handle], isMe: Bool, image: DisplayRepresentation.Image?)](./intentperson/init%28identifier,name,handle,aliases,isme,image%29.md)
 ### Getting the person’s name
-- [var name: IntentPerson.Name](intentperson/name-swift.property.md)
+- [var name: IntentPerson.Name](./intentperson/name-swift.property.md)
   The name of this `IntentPerson`
-- [IntentPerson.Name](intentperson/name-swift.enum.md)
+- [IntentPerson.Name](./intentperson/name-swift.enum.md)
   A type that stores name-related information for a person.
 ### Getting identifying information
-- [var handle: IntentPerson.Handle?](intentperson/handle-swift.property.md)
+- [var handle: IntentPerson.Handle?](./intentperson/handle-swift.property.md)
   The primary `Handle` used to contact this `IntentPerson`
-- [var aliases: [IntentPerson.Handle]](intentperson/aliases.md)
+- [var aliases: [IntentPerson.Handle]](./intentperson/aliases.md)
   Other secondary `Handle`s used to contact this `IntentPerson`, if any
-- [var isMe: Bool](intentperson/isme.md)
+- [var isMe: Bool](./intentperson/isme.md)
   Whether this `IntentPerson` represents the owner of the device
-- [var image: DisplayRepresentation.Image?](intentperson/image.md)
+- [var image: DisplayRepresentation.Image?](./intentperson/image.md)
   An image representing this `IntentPerson`
-- [IntentPerson.Handle](intentperson/handle-swift.struct.md)
+- [IntentPerson.Handle](./intentperson/handle-swift.struct.md)
   A type that describes a single way to contact a person.
-- [IntentPerson.ParameterMode](intentperson/parametermode.md)
+- [IntentPerson.ParameterMode](./intentperson/parametermode.md)
   The type of interface to show when someone chooses a parameter that contains information about a person.
 ### Getting person-related identifiers
-- [var identifier: IntentPerson.Identifier](intentperson/identifier-swift.property.md)
-- [IntentPerson.Identifier](intentperson/identifier-swift.enum.md)
+- [var identifier: IntentPerson.Identifier](./intentperson/identifier-swift.property.md)
+- [IntentPerson.Identifier](./intentperson/identifier-swift.enum.md)
   A type that manages a unique identifier for a person.
 ### Initializers
-- [init(handle: IntentPerson.Handle)](intentperson/init(handle:).md)
+- [init(handle: IntentPerson.Handle)](./intentperson/init%28handle%29.md)
   Initializes an `IntentPerson` from a raw handle, like a phone number or an email address. Use this initializer when the value is not linked to a known contact.
 ### Type Aliases
-- [IntentPerson.Specification](intentperson/specification.md)
-- [IntentPerson.UnwrappedType](intentperson/unwrappedtype.md)
-- [IntentPerson.ValueType](intentperson/valuetype.md)
+- [IntentPerson.Specification](./intentperson/specification.md)
+- [IntentPerson.UnwrappedType](./intentperson/unwrappedtype.md)
+- [IntentPerson.ValueType](./intentperson/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPerson>](intentperson/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPerson>](./intentperson/defaultresolverspecification.md)
 ### Default Implementations
-- [Transferable Implementations](intentperson/transferable-implementations.md)
+- [Transferable Implementations](./intentperson/transferable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [IntentValueConvertible](intentvalueconvertible.md)
-- [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transferable](../coretransferable/transferable.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [IntentValueConvertible](./intentvalueconvertible.md)
+- [IntentValueExpressing](./intentvalueexpressing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transferable](../CoreTransferable/transferable.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 
 ---

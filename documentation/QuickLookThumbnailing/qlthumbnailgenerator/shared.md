@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The singleton thumbnail generator instance.
 
@@ -16,6 +17,10 @@ The singleton thumbnail generator instance.
 
 ```swift
 class var shared: QLThumbnailGenerator { get }
+```
+
+```objc
+@property (class, readonly) QLThumbnailGenerator * sharedGenerator;
 ```
 
 

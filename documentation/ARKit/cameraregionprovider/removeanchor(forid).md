@@ -1,7 +1,8 @@
 # removeAnchor(forID:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove an anchor with a given ID from camera region.
 
@@ -16,7 +17,7 @@ final func removeAnchor(forID id: UUID) async throws
 
 #### Discussion
 
-> **Note**: `CameraRegionProvider.Error`
+> **Throws**: `CameraRegionProvider.Error`
 
 ## Parameters
 

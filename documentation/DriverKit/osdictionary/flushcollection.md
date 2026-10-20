@@ -1,34 +1,36 @@
 # flushCollection
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and drops references to all members of dictionary.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void flushCollection();
 ```
 
 ## See Also
 
-- [withCapacity](osdictionary/withcapacity.md)
+### Creating a Dictionary
+- [withCapacity](./withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [withDictionary](osdictionary/withdictionary.md)
+- [withDictionary](./withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [withObjects](osdictionary/withobjects.md)
+- [withObjects](./withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [OSDictionaryCreate](osdictionarycreate.md)
-- [merge](osdictionary/merge.md)
+- [OSDictionaryCreate](../osdictionarycreate.md)
+- [merge](./merge.md)
   Adds all members of a dictionary to this dictionary.
-- [free](osdictionary/free.md)
+- [free](./free.md)
 
 
 ---

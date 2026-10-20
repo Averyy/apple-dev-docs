@@ -1,7 +1,8 @@
 # VZUSBPassthroughDevice
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 class VZUSBPassthroughDevice
+```
+
+```objc
+@interface VZUSBPassthroughDevice : NSObject
 ```
 
 #### Overview
@@ -21,24 +26,25 @@ This device is created through either instantiating it directly and passing VZUS
 ## Topics
 
 ### Initializers
-- [init(configuration: VZUSBPassthroughDeviceConfiguration) throws](vzusbpassthroughdevice/init(configuration:).md)
+- [init(configuration: VZUSBPassthroughDeviceConfiguration) throws](./vzusbpassthroughdevice/init%28configuration%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VZUSBDevice](vzusbdevice.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VZUSBDevice](./vzusbdevice.md)
 
 ## See Also
 
-- [class VZUSBMassStorageDevice](vzusbmassstoragedevice.md)
+### Storage Devices
+- [class VZUSBMassStorageDevice](./vzusbmassstoragedevice.md)
   A class that represents a hot-pluggable USB mass storage device.
 
 

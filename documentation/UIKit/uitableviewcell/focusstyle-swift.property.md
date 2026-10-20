@@ -1,7 +1,8 @@
 # focusStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance of the cell when focused.
 
@@ -18,13 +19,18 @@ The appearance of the cell when focused.
 var focusStyle: UITableViewCell.FocusStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UITableViewCellFocusStyle focusStyle;
+```
+
 #### Discussion
 
-The default value of this property is [`UITableViewCell.FocusStyle.default`](uitableviewcell/focusstyle-swift.enum/default.md). For the list of possible focus styles, see [`UITableViewCell.FocusStyle`](uitableviewcell/focusstyle-swift.enum.md).
+The default value of this property is [`UITableViewCell.FocusStyle.default`](./focusstyle-swift.enum/default.md). For the list of possible focus styles, see [`UITableViewCell.FocusStyle`](./focusstyle-swift.enum.md).
 
 ## See Also
 
-- [UITableViewCell.FocusStyle](uitableviewcell/focusstyle-swift.enum.md)
+### Managing focus
+- [UITableViewCell.FocusStyle](./focusstyle-swift.enum.md)
   The style of focused cells.
 
 

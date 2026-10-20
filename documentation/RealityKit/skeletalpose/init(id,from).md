@@ -1,7 +1,8 @@
 # init(id:from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a skeletal pose from the rest pose of the model skeleton.
 

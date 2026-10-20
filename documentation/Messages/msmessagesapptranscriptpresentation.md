@@ -1,7 +1,8 @@
 # MSMessagesAppTranscriptPresentation
 
 **Framework**: Messages  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides support for displaying live messages in the transcript of the Messages app.
 
@@ -16,35 +17,40 @@ A protocol that provides support for displaying live messages in the transcript 
 protocol MSMessagesAppTranscriptPresentation
 ```
 
+```objc
+@protocol MSMessagesAppTranscriptPresentation
+```
+
 #### Overview
 
-These methods are called when a view controller is presented using a [`MSMessagesAppPresentationStyle.transcript`](msmessagesapppresentationstyle/transcript.md) presentation style.
+These methods are called when a view controller is presented using a [`MSMessagesAppPresentationStyle.transcript`](./msmessagesapppresentationstyle/transcript.md) presentation style.
 
 ## Topics
 
 ### Providing the Content’s Size
-- [func contentSizeThatFits(CGSize) -> CGSize](msmessagesapptranscriptpresentation/contentsizethatfits(_:).md)
+- [func contentSizeThatFits(CGSize) -> CGSize](./msmessagesapptranscriptpresentation/contentsizethatfits%28_%29.md)
   The size of your messages view, given the provided maximum size.
 ### Instance Properties
-- [var messageCornerRadius: CGFloat](msmessagesapptranscriptpresentation/messagecornerradius.md)
-- [var messageTintColor: UIColor?](msmessagesapptranscriptpresentation/messagetintcolor.md)
+- [var messageCornerRadius: CGFloat](./msmessagesapptranscriptpresentation/messagecornerradius.md)
+- [var messageTintColor: UIColor?](./msmessagesapptranscriptpresentation/messagetintcolor.md)
 ### Instance Methods
-- [func invalidateMessageTintColor()](msmessagesapptranscriptpresentation/invalidatemessagetintcolor.md)
+- [func invalidateMessageTintColor()](./msmessagesapptranscriptpresentation/invalidatemessagetintcolor%28%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [MSMessagesAppViewController](msmessagesappviewcontroller.md)
+- [MSMessagesAppViewController](./msmessagesappviewcontroller.md)
 
 ## See Also
 
-- [IceCreamBuilder: Building an iMessage Extension](icecreambuilder-building-an-imessage-extension.md)
+### Custom iMessage app interface
+- [IceCreamBuilder: Building an iMessage Extension](./icecreambuilder-building-an-imessage-extension.md)
   Allow users to collaborate on the design of ice cream sundae stickers.
-- [Creating a Sticker App with a Custom Layout](creating-a-sticker-app-with-a-custom-layout.md)
+- [Creating a Sticker App with a Custom Layout](./creating-a-sticker-app-with-a-custom-layout.md)
   Expand on the Messages sticker app template to create an app with a customized user interface.
-- [class MSMessagesAppViewController](msmessagesappviewcontroller.md)
+- [class MSMessagesAppViewController](./msmessagesappviewcontroller.md)
   The principal view controller for iMessage apps.
-- [enum MSMessagesAppPresentationStyle](msmessagesapppresentationstyle.md)
+- [enum MSMessagesAppPresentationStyle](./msmessagesapppresentationstyle.md)
   Presentation styles that describe your iMessage app’s appearance.
 
 

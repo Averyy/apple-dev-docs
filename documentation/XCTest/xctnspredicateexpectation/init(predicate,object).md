@@ -1,7 +1,8 @@
 # init(predicate:object:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an expectation that’s fulfilled when an `NSPredicate` instance returns `true`, optionally for a provided object.
 
@@ -11,9 +12,13 @@ Creates an expectation that’s fulfilled when an `NSPredicate` instance returns
 init(predicate: NSPredicate, object: Any?)
 ```
 
+```objc
+- (instancetype) initWithPredicate:(NSPredicate *) predicate object:(id) object;
+```
+
 #### Discussion
 
-When you use an instance of this class from Swift and await using [`fulfillment(of:timeout:enforceOrder:)`](xctestcase/fulfillment(of:timeout:enforceorder:).md) rather than [`wait(for:)`](xctestcase/wait(for:).md), XCTest evaluates `predicate` on the main actor.
+When you use an instance of this class from Swift and await using [`fulfillment(of:timeout:enforceOrder:)`](../xctestcase/fulfillment%28of,timeout,enforceorder%29.md) rather than [`wait(for:)`](../xctestcase/wait%28for%29.md), XCTest evaluates `predicate` on the main actor.
 
 ## Parameters
 

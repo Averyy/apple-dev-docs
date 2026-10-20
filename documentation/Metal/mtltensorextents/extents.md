@@ -1,7 +1,8 @@
 # extents
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieves the extents for this object.
 

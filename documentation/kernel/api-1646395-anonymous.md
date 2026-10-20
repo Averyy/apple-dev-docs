@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOCatalogAddDrivers](1646395-anonymous/kiocatalogadddrivers.md)
-- [kIOCatalogAddDriversNoMatch](1646395-anonymous/kiocatalogadddriversnomatch.md)
-- [kIOCatalogKextdActive](1646395-anonymous/kiocatalogkextdactive.md)
-- [kIOCatalogKextdFinishedLaunching](1646395-anonymous/kiocatalogkextdfinishedlaunching.md)
-- [kIOCatalogRemoveDrivers](1646395-anonymous/kiocatalogremovedrivers.md)
-- [kIOCatalogRemoveDriversNoMatch](1646395-anonymous/kiocatalogremovedriversnomatch.md)
-- [kIOCatalogResetDrivers](1646395-anonymous/kiocatalogresetdrivers.md)
-- [kIOCatalogResetDriversNoMatch](1646395-anonymous/kiocatalogresetdriversnomatch.md)
-- [kIOCatalogRemoveKernelLinker__Removed](1646395-anonymous/kiocatalogremovekernellinker_removed.md)
-- [kIOCatalogStartMatching__Removed](1646395-anonymous/kiocatalogstartmatching_removed.md)
+- [kIOCatalogAddDrivers](./api-1646395-anonymous/kiocatalogadddrivers.md)
+- [kIOCatalogAddDriversNoMatch](./api-1646395-anonymous/kiocatalogadddriversnomatch.md)
+- [kIOCatalogKextdActive](./api-1646395-anonymous/kiocatalogkextdactive.md)
+- [kIOCatalogKextdFinishedLaunching](./api-1646395-anonymous/kiocatalogkextdfinishedlaunching.md)
+- [kIOCatalogRemoveDrivers](./api-1646395-anonymous/kiocatalogremovedrivers.md)
+- [kIOCatalogRemoveDriversNoMatch](./api-1646395-anonymous/kiocatalogremovedriversnomatch.md)
+- [kIOCatalogResetDrivers](./api-1646395-anonymous/kiocatalogresetdrivers.md)
+- [kIOCatalogResetDriversNoMatch](./api-1646395-anonymous/kiocatalogresetdriversnomatch.md)
+- [kIOCatalogRemoveKernelLinker__Removed](./api-1646395-anonymous/kiocatalogremovekernellinker_removed.md)
+- [kIOCatalogStartMatching__Removed](./api-1646395-anonymous/kiocatalogstartmatching_removed.md)
 
 
 ---

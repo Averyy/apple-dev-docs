@@ -1,7 +1,8 @@
 # vn_getpath
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Construct the path to a vnode.
 
@@ -10,11 +11,11 @@ Construct the path to a vnode.
 
 ## Declaration
 
-```swift
+```c
 int vn_getpath(struct vnode *vp, char *pathbuf, int *len);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success or an error code.
 

@@ -1,7 +1,8 @@
 # toolCallingMode(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tool-calling mode.
 

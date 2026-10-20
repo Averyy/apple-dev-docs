@@ -1,7 +1,8 @@
 # dragConfiguration(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures a drag session.
 
@@ -27,7 +28,7 @@ A view that configures a drag session in a way, described by the `configuration`
 
 Below is a simplified example of a view that supports copy, move and delete operations for drag.
 
-##### Drag to Delete Into Trash Bin
+##### Drag to delete into trash bin
 
 If a view wants to support drag-to-delete into the trash bin or another location that has similar semantics, it should specify the support for this operation in a drag configuration:
 
@@ -80,17 +81,18 @@ Note, that any drag supports copy operation by default. In the snippet above, th
 
 ## See Also
 
-- [struct DragConfiguration](dragconfiguration.md)
+### Configuring drag-and-drop behavior
+- [struct DragConfiguration](../dragconfiguration.md)
   The behavior of the drag, proposed by the dragging source. A value that describes the drag operations a drag source supports.
-- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](view/dropconfiguration(_:).md)
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](./dropconfiguration%28_%29.md)
   Configures a drop session.
-- [struct DropConfiguration](dropconfiguration.md)
+- [struct DropConfiguration](../dropconfiguration.md)
   Describes the behavior of the drop.
-- [func dragContainer(for:in:_:)](view/dragcontainer(for:in:_:).md)
+- [func dragContainer(for:in:_:)](./dragcontainer%28for,in,_%29.md)
   A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
-- [func dragContainer(for:itemID:in:_:)](view/dragcontainer(for:itemid:in:_:).md)
+- [func dragContainer(for:itemID:in:_:)](./dragcontainer%28for,itemid,in,_%29.md)
   A container with draggable views.
-- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](view/dragcontainerselection(_:containernamespace:).md)
+- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](./dragcontainerselection%28_,containernamespace%29.md)
   Provides multiple item selection support for drag containers.
 
 

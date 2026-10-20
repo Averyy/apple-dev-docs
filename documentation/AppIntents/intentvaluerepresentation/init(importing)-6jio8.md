@@ -1,7 +1,8 @@
 # init(importing:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value representation that imports an `IntentPerson` into an entity.
 
@@ -19,6 +20,8 @@ Creates a value representation that imports an `IntentPerson` into an entity.
 ```swift
 init(importing: @escaping @Sendable (IntentValue) async throws -> Item)
 ```
+
+Available when `Item` conforms to `Transferable` and `IntentValue` is `IntentPerson`.
 
 #### Discussion
 

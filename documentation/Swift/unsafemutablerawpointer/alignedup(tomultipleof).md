@@ -1,7 +1,8 @@
 # alignedUp(toMultipleOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtain the next pointer whose bit pattern is a multiple of `alignment`.
 

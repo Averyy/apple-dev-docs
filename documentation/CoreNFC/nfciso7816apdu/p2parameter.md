@@ -1,7 +1,8 @@
 # p2Parameter
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the P2 parameter byte.
 
@@ -16,9 +17,14 @@ The value of the P2 parameter byte.
 var p2Parameter: UInt8 { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) uint8_t p2Parameter;
+```
+
 ## See Also
 
-- [var p1Parameter: UInt8](nfciso7816apdu/p1parameter.md)
+### Get the Parameter Bytes
+- [var p1Parameter: UInt8](./p1parameter.md)
   The value of the P1 parameter byte.
 
 

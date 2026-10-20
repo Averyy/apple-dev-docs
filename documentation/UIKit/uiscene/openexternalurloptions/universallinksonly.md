@@ -1,7 +1,8 @@
 # universalLinksOnly
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether URLs must be universal links and have a configured app to open them.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether URLs must be universal links and have a c
 
 ```swift
 var universalLinksOnly: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL universalLinksOnly;
 ```
 
 

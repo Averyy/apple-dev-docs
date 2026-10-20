@@ -1,14 +1,15 @@
 # EnqueuePackets
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t EnqueuePackets(IOUserNetworkPacket **packets, uint32_t packetCount);
 ```
 

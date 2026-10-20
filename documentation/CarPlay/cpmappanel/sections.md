@@ -1,7 +1,8 @@
 # sections
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sections of content to display in the panel.
 
@@ -14,6 +15,10 @@ The sections of content to display in the panel.
 
 ```swift
 var sections: [CPMapPanelSection] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<CPMapPanelSection *> * sections;
 ```
 
 #### Discussion

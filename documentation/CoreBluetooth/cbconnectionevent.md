@@ -1,7 +1,8 @@
 # CBConnectionEvent
 
 **Framework**: Core Bluetooth  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A change to the connection state of a peer.
 
@@ -20,33 +21,38 @@ A change to the connection state of a peer.
 enum CBConnectionEvent
 ```
 
+```c
+enum CBConnectionEvent : NSInteger;
+```
+
 ## Topics
 
 ### Events
-- [CBConnectionEvent.peerConnected](cbconnectionevent/peerconnected.md)
+- [CBConnectionEvent.peerConnected](./cbconnectionevent/peerconnected.md)
   The peer has connected to the local device.
-- [CBConnectionEvent.peerDisconnected](cbconnectionevent/peerdisconnected.md)
+- [CBConnectionEvent.peerDisconnected](./cbconnectionevent/peerdisconnected.md)
   The peer has disconnected from the local device.
 ### Initializers
-- [init?(rawValue: Int)](cbconnectionevent/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cbconnectionevent/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func registerForConnectionEvents(options: [CBConnectionEventMatchingOption : Any]?)](cbcentralmanager/registerforconnectionevents(options:).md)
+### Receiving Connection Events
+- [func registerForConnectionEvents(options: [CBConnectionEventMatchingOption : Any]?)](./cbcentralmanager/registerforconnectionevents%28options%29.md)
   Register for an event notification when the central manager makes a connection matching the given options.
-- [Peripheral Connection Options](peripheral-connection-options.md)
+- [Peripheral Connection Options](./peripheral-connection-options.md)
   Keys used to pass options when connecting to a peripheral.
-- [struct CBConnectionEventMatchingOption](cbconnectioneventmatchingoption.md)
+- [struct CBConnectionEventMatchingOption](./cbconnectioneventmatchingoption.md)
   A set of options to use when registering for connection events.
 
 

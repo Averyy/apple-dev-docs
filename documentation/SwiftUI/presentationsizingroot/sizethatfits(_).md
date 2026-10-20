@@ -1,7 +1,8 @@
 # sizeThatFits(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the subview for its size.
 

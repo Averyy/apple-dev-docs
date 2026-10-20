@@ -1,7 +1,8 @@
 # String.IntentInputOptions.KeyboardType
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the types of keyboard to use for text entry.
 
@@ -23,21 +24,21 @@ enum KeyboardType
 ## Topics
 
 ### Enumeration Cases
-- [String.IntentInputOptions.KeyboardType.URL](string/intentinputoptions/keyboardtype-swift.enum/url.md)
+- [String.IntentInputOptions.KeyboardType.URL](./keyboardtype-swift.enum/url.md)
   A keyboard that provides URL entry.
-- [String.IntentInputOptions.KeyboardType.asciiCapable](string/intentinputoptions/keyboardtype-swift.enum/asciicapable.md)
+- [String.IntentInputOptions.KeyboardType.asciiCapable](./keyboardtype-swift.enum/asciicapable.md)
   A keyboard that displays standard ASCII characters.
-- [String.IntentInputOptions.KeyboardType.default](string/intentinputoptions/keyboardtype-swift.enum/default.md)
-- [String.IntentInputOptions.KeyboardType.numberPad](string/intentinputoptions/keyboardtype-swift.enum/numberpad.md)
+- [String.IntentInputOptions.KeyboardType.default](./keyboardtype-swift.enum/default.md)
+- [String.IntentInputOptions.KeyboardType.numberPad](./keyboardtype-swift.enum/numberpad.md)
   A numeric keypad.
-- [String.IntentInputOptions.KeyboardType.numbersAndPunctuation](string/intentinputoptions/keyboardtype-swift.enum/numbersandpunctuation.md)
+- [String.IntentInputOptions.KeyboardType.numbersAndPunctuation](./keyboardtype-swift.enum/numbersandpunctuation.md)
   A keyboard that displays numbers and punctuation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
+- [Equatable](../../equatable.md)
+- [Hashable](../../hashable.md)
 
 
 ---

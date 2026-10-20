@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes a previously-posted notification from your accessory.
@@ -25,7 +26,8 @@ The system calls this method when a notification needs to be removed, such as wh
 
 ## See Also
 
-- [func removeAllNotifications()](notificationsforwarding/accessorynotificationshandler/removeallnotifications.md)
+### Removing notifications
+- [func removeAllNotifications()](./removeallnotifications%28%29.md)
   Removes all notifications from the user interface.
 
 

@@ -1,11 +1,12 @@
 # RegexComponent Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [URL.ParseStrategy.RegexOutput](url/parsestrategy/regexoutput.md)
+- [URL.ParseStrategy.RegexOutput](./regexoutput.md)
   The type returned when capturing matching substrings with this strategy.
 
 

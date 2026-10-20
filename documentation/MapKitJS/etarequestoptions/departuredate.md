@@ -1,7 +1,8 @@
 # departureDate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The time of departure used in an estimated arrival time request.
 
@@ -10,7 +11,7 @@ The time of departure used in an estimated arrival time request.
 
 ## Declaration
 
-```swift
+```
 departureDate?: Date;
 ```
 
@@ -20,13 +21,14 @@ If you don’t specify a departure date, the server will use the current date an
 
 ## See Also
 
-- [origin](etarequestoptions/origin.md)
+### ETA Request
+- [origin](./origin.md)
   The starting point for estimated arrival time requests.
-- [destinations](etarequestoptions/destinations.md)
+- [destinations](./destinations.md)
   An array of coordinates that represent end points for estimated arrival time requests.
-- [transportType](etarequestoptions/transporttype.md)
+- [transportType](./transporttype.md)
   The mode of transportation the server uses when estimating arrival times.
-- [signal](etarequestoptions/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

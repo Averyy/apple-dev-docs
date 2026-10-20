@@ -7,11 +7,11 @@ Provides the contents of a given plist file.
 
 ## Declaration
 
-```swift
+```
 plistAtPath(filePath)
 ```
 
-#### Return_value
+#### Return Value
 
 A dictionary (associative array) with the contents of the identified plist file.
 
@@ -21,9 +21,10 @@ A dictionary (associative array) with the contents of the identified plist file.
 
 ## See Also
 
-- [fileExistsAtPath](files/1812173-fileexistsatpath.md)
+### Accessing Files
+- [fileExistsAtPath](./api-1812173-fileexistsatpath.md)
   Indicates whether the given path identifies an existent file.
-- [bundleAtPath](files/1812190-bundleatpath.md)
+- [bundleAtPath](./api-1812190-bundleatpath.md)
   Provides the contents of the info plist file of the identified bundle.
 
 

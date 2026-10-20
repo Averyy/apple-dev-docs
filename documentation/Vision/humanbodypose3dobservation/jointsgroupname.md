@@ -1,7 +1,8 @@
 # HumanBodyPose3DObservation.JointsGroupName
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The supported joint group names for the body pose.
 
@@ -22,36 +23,37 @@ enum JointsGroupName
 ## Topics
 
 ### Getting the group names
-- [HumanBodyPose3DObservation.JointsGroupName.head](humanbodypose3dobservation/jointsgroupname/head.md)
-- [HumanBodyPose3DObservation.JointsGroupName.leftArm](humanbodypose3dobservation/jointsgroupname/leftarm.md)
-- [HumanBodyPose3DObservation.JointsGroupName.leftLeg](humanbodypose3dobservation/jointsgroupname/leftleg.md)
-- [HumanBodyPose3DObservation.JointsGroupName.rightArm](humanbodypose3dobservation/jointsgroupname/rightarm.md)
-- [HumanBodyPose3DObservation.JointsGroupName.rightLeg](humanbodypose3dobservation/jointsgroupname/rightleg.md)
-- [HumanBodyPose3DObservation.JointsGroupName.torso](humanbodypose3dobservation/jointsgroupname/torso.md)
+- [HumanBodyPose3DObservation.JointsGroupName.head](./jointsgroupname/head.md)
+- [HumanBodyPose3DObservation.JointsGroupName.leftArm](./jointsgroupname/leftarm.md)
+- [HumanBodyPose3DObservation.JointsGroupName.leftLeg](./jointsgroupname/leftleg.md)
+- [HumanBodyPose3DObservation.JointsGroupName.rightArm](./jointsgroupname/rightarm.md)
+- [HumanBodyPose3DObservation.JointsGroupName.rightLeg](./jointsgroupname/rightleg.md)
+- [HumanBodyPose3DObservation.JointsGroupName.torso](./jointsgroupname/torso.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func allJoints(in: HumanBodyPose3DObservation.JointsGroupName?) -> [HumanBodyPose3DObservation.JointName : Joint3D]](humanbodypose3dobservation/alljoints(in:).md)
+### Getting the joints
+- [func allJoints(in: HumanBodyPose3DObservation.JointsGroupName?) -> [HumanBodyPose3DObservation.JointName : Joint3D]](./alljoints%28in%29.md)
   Retrieves a dictionary of all joints in a joint group.
-- [var availableJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](humanbodypose3dobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The names of the available joint groupings in the observation.
-- [func joint(for: HumanBodyPose3DObservation.JointName) -> Joint3D?](humanbodypose3dobservation/joint(for:).md)
+- [func joint(for: HumanBodyPose3DObservation.JointName) -> Joint3D?](./joint%28for%29.md)
   Retrieves a joint for a given joint name.
-- [var availableJointNames: [HumanBodyPose3DObservation.JointName]](humanbodypose3dobservation/availablejointnames.md)
+- [var availableJointNames: [HumanBodyPose3DObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [HumanBodyPose3DObservation.JointName](humanbodypose3dobservation/jointname.md)
+- [HumanBodyPose3DObservation.JointName](./jointname.md)
   The supported joint names for the body pose.
 
 

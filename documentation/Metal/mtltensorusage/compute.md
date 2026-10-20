@@ -1,7 +1,8 @@
 # compute
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tensor context that applies to compute encoders.
 
@@ -19,9 +20,13 @@ A tensor context that applies to compute encoders.
 static var compute: MTLTensorUsage { get }
 ```
 
+```c
+MTLTensorUsageCompute
+```
+
 #### Discussion
 
-You can use tensors with this context in [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) or [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instances.
+You can use tensors with this context in [`MTL4ComputeCommandEncoder`](../mtl4computecommandencoder.md) or [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instances.
 
 
 ---

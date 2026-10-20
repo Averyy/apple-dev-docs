@@ -1,7 +1,8 @@
 # NWProtocol
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass used by Network framework protocols and by custom network protocols that you define.
 
@@ -23,33 +24,34 @@ class NWProtocol
 ## Topics
 
 ### Adding Protocols to Connections
-- [class NWProtocolOptions](nwprotocoloptions.md)
+- [class NWProtocolOptions](./nwprotocoloptions.md)
   The abstract superclass for configuring the options of a network protocol.
-- [class NWProtocolDefinition](nwprotocoldefinition.md)
+- [class NWProtocolDefinition](./nwprotocoldefinition.md)
   The abstract superclass for identifying a network protocol.
 ### Interacting with Protocols
-- [class NWProtocolMetadata](nwprotocolmetadata.md)
+- [class NWProtocolMetadata](./nwprotocolmetadata.md)
   The abstract superclass for specifying metadata about a network protocol.
 
 ## Relationships
 
 ### Inherited By
-- [NWProtocolFramer](nwprotocolframer.md)
-- [NWProtocolIP](nwprotocolip.md)
-- [NWProtocolQUIC](nwprotocolquic.md)
-- [NWProtocolTCP](nwprotocoltcp.md)
-- [NWProtocolTLS](nwprotocoltls.md)
-- [NWProtocolUDP](nwprotocoludp.md)
-- [NWProtocolWebSocket](nwprotocolwebsocket.md)
+- [NWProtocolFramer](./nwprotocolframer.md)
+- [NWProtocolIP](./nwprotocolip.md)
+- [NWProtocolQUIC](./nwprotocolquic.md)
+- [NWProtocolTCP](./nwprotocoltcp.md)
+- [NWProtocolTLS](./nwprotocoltls.md)
+- [NWProtocolUDP](./nwprotocoludp.md)
+- [NWProtocolWebSocket](./nwprotocolwebsocket.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var defaultProtocolStack: NWParameters.ProtocolStack](nwparameters/defaultprotocolstack.md)
+### Modifying Protocol Stacks
+- [var defaultProtocolStack: NWParameters.ProtocolStack](./nwparameters/defaultprotocolstack.md)
   The protocol stack used by connections and listeners.
-- [NWParameters.ProtocolStack](nwparameters/protocolstack.md)
+- [NWParameters.ProtocolStack](./nwparameters/protocolstack.md)
   An ordered set of protocol options that define the protocols that connections and listeners use.
 
 

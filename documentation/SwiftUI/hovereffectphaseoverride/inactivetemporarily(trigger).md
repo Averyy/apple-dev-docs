@@ -1,7 +1,8 @@
 # inactiveTemporarily(trigger:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Temporaily transitions to the inactve phase until all animations finish, and the transition is complete.
 

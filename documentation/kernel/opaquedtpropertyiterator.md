@@ -1,14 +1,15 @@
 # OpaqueDTPropertyIterator
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct OpaqueDTPropertyIterator {
     ...
 } OpaqueDTPropertyIterator;
@@ -17,9 +18,9 @@ typedef struct OpaqueDTPropertyIterator {
 ## Topics
 
 ### Instance Properties
-- [currentIndex](opaquedtpropertyiterator/2869594-currentindex.md)
-- [currentProperty](opaquedtpropertyiterator/2869598-currentproperty.md)
-- [entry](opaquedtpropertyiterator/2869593-entry.md)
+- [currentIndex](./opaquedtpropertyiterator/api-2869594-currentindex.md)
+- [currentProperty](./opaquedtpropertyiterator/api-2869598-currentproperty.md)
+- [entry](./opaquedtpropertyiterator/api-2869593-entry.md)
 
 
 ---

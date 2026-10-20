@@ -1,7 +1,8 @@
 # init(minimumCapacity:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new unique array with the specified capacity and no elements.
 

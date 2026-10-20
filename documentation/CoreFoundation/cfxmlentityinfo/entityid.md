@@ -1,17 +1,22 @@
 # entityID
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `entityID.systemID` will be `NULL` if `entityType` is internal.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var entityID: CFXMLExternalID
+```
+
+```c
+CFXMLExternalID entityID;
 ```
 
 

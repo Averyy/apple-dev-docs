@@ -1,7 +1,8 @@
 # failOnBinaryArchiveMiss
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs the compiler to return an error when a GPU function for a stitched library isn’t in a binary archive.
 
@@ -17,6 +18,10 @@ An option that instructs the compiler to return an error when a GPU function for
 
 ```swift
 static var failOnBinaryArchiveMiss: MTLStitchedLibraryOptions { get }
+```
+
+```c
+MTLStitchedLibraryOptionFailOnBinaryArchiveMiss
 ```
 
 #### Discussion

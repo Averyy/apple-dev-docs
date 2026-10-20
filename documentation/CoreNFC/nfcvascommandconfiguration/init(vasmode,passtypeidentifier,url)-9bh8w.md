@@ -1,7 +1,8 @@
 # init(vasMode:passTypeIdentifier:url:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a VAS command configuration object.
 
@@ -14,6 +15,10 @@ Creates a VAS command configuration object.
 
 ```swift
 init(vasMode mode: NFCVASCommandConfiguration.Mode, passTypeIdentifier: String, url: URL?)
+```
+
+```objc
+- (instancetype) initWithVASMode:(NFCVASMode) mode passTypeIdentifier:(NSString *) passTypeIdentifier url:(NSURL *) url;
 ```
 
 #### Return Value

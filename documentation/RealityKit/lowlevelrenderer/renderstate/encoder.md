@@ -1,7 +1,8 @@
 # encoder
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying Metal render command encoder for this render pass.
 

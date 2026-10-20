@@ -1,7 +1,8 @@
 # previousChannelInterstitialViewController(for:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a view controller that describes the layout of the previous channel’s interstitial view.
 
@@ -12,6 +13,10 @@ Asks the delegate for a view controller that describes the layout of the previou
 
 ```swift
 optional func previousChannelInterstitialViewController(for playerViewController: AVPlayerViewController) -> UIViewController
+```
+
+```objc
+- (UIViewController *) previousChannelInterstitialViewControllerForPlayerViewController:(AVPlayerViewController *) playerViewController;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The framework calls this method when the user initiates, but hasn’t yet commit
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, skipToNextChannel: (Bool) -> Void)](avplayerviewcontrollerdelegate/playerviewcontroller(_:skiptonextchannel:).md)
+### Responding to channel changes
+- [func playerViewController(AVPlayerViewController, skipToNextChannel: (Bool) -> Void)](./playerviewcontroller%28_,skiptonextchannel%29.md)
   Tells the delegate when the user wants to skip to the next channel.
-- [func playerViewController(AVPlayerViewController, skipToPreviousChannel: (Bool) -> Void)](avplayerviewcontrollerdelegate/playerviewcontroller(_:skiptopreviouschannel:).md)
+- [func playerViewController(AVPlayerViewController, skipToPreviousChannel: (Bool) -> Void)](./playerviewcontroller%28_,skiptopreviouschannel%29.md)
   Tells the delegate when the user wants to skip to the previous channel.
-- [func nextChannelInterstitialViewController(for: AVPlayerViewController) -> UIViewController](avplayerviewcontrollerdelegate/nextchannelinterstitialviewcontroller(for:).md)
+- [func nextChannelInterstitialViewController(for: AVPlayerViewController) -> UIViewController](./nextchannelinterstitialviewcontroller%28for%29.md)
   Asks the delegate for a view controller that describes the layout of the next channel’s interstitial view.
 
 

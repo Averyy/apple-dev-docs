@@ -1,7 +1,8 @@
 # visualSearch
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that identifies objects, landmarks, art, and so on.
 
@@ -18,15 +19,20 @@ A type that identifies objects, landmarks, art, and so on.
 static var visualSearch: AVVideoFrameAnalysisType { get }
 ```
 
+```c
+AVVideoFrameAnalysisTypeVisualSearch
+```
+
 ## See Also
 
-- [static var `default`: AVVideoFrameAnalysisType](avvideoframeanalysistype/default.md)
+### Analysis types
+- [static var `default`: AVVideoFrameAnalysisType](./default.md)
   The default types of analysis to perform.
-- [static var text: AVVideoFrameAnalysisType](avvideoframeanalysistype/text.md)
+- [static var text: AVVideoFrameAnalysisType](./text.md)
   A type that finds text in a paused video frame.
-- [static var subject: AVVideoFrameAnalysisType](avvideoframeanalysistype/subject.md)
+- [static var subject: AVVideoFrameAnalysisType](./subject.md)
   A type that finds a subject that a user can copy out of frame.
-- [static var machineReadableCode: AVVideoFrameAnalysisType](avvideoframeanalysistype/machinereadablecode.md)
+- [static var machineReadableCode: AVVideoFrameAnalysisType](./machinereadablecode.md)
   A type that recognizes machine-readable codes, such as QR codes.
 
 

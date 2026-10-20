@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var kQDCorruptPICTDataErr: Int](kqdcorruptpictdataerr.md)
-- [var kQDCursorAlreadyRegistered: Int](kqdcursoralreadyregistered.md)
-- [var kQDCursorNotRegistered: Int](kqdcursornotregistered.md)
-- [var kQDNoColorHWCursorSupport: Int](kqdnocolorhwcursorsupport.md)
-- [var kQDNoPalette: Int](kqdnopalette.md)
+- [var kQDCorruptPICTDataErr: Int](../../kqdcorruptpictdataerr.md)
+- [var kQDCursorAlreadyRegistered: Int](../../kqdcursoralreadyregistered.md)
+- [var kQDCursorNotRegistered: Int](../../kqdcursornotregistered.md)
+- [var kQDNoColorHWCursorSupport: Int](../../kqdnocolorhwcursorsupport.md)
+- [var kQDNoPalette: Int](../../kqdnopalette.md)
 
 
 ---

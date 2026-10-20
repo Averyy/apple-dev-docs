@@ -1,7 +1,8 @@
 # ColumnSelection
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A selection of columns from a data frame.
 
@@ -23,44 +24,45 @@ enum ColumnSelection
 ## Topics
 
 ### Column selection types
-- [ColumnSelection.all](columnselection/all.md)
+- [ColumnSelection.all](./columnselection/all.md)
   Select all columns in the data frame.
-- [ColumnSelection.exclude(columnNames:)](columnselection/exclude(columnnames:).md)
+- [ColumnSelection.exclude(columnNames:)](./columnselection/exclude%28columnnames%29.md)
   Selects all columns except the specified columns.
-- [ColumnSelection.include(columnNames:)](columnselection/include(columnnames:).md)
+- [ColumnSelection.include(columnNames:)](./columnselection/include%28columnnames%29.md)
   Selects only the specified columns.
-- [ColumnSelection.numeric](columnselection/numeric.md)
+- [ColumnSelection.numeric](./columnselection/numeric.md)
   Select all numeric columns in the data frame.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol TabularTransformer](tabulartransformer.md)
+### Tabular components
+- [protocol TabularTransformer](./tabulartransformer.md)
   A tabular transformer that transforms a data frame.
-- [protocol TabularEstimator](tabularestimator.md)
+- [protocol TabularEstimator](./tabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [protocol SupervisedTabularEstimator](supervisedtabularestimator.md)
+- [protocol SupervisedTabularEstimator](./supervisedtabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [struct ColumnSelector](columnselector.md)
+- [struct ColumnSelector](./columnselector.md)
   An operation that applies an estimator to a selection of columns.
-- [struct ColumnSelectorTransformer](columnselectortransformer.md)
+- [struct ColumnSelectorTransformer](./columnselectortransformer.md)
   A transformer that applies a base transformer to specific columns in a data frame.
-- [struct ColumnConcatenator](columnconcatenator.md)
+- [struct ColumnConcatenator](./columnconcatenator.md)
   A transformer that concatenates every numerical column in a dataframe into to a shaped array for each row.
-- [struct PreprocessingSupervisedTabularEstimator](preprocessingsupervisedtabularestimator.md)
+- [struct PreprocessingSupervisedTabularEstimator](./preprocessingsupervisedtabularestimator.md)
   A supervised tabular estimator that composes a preprocessing transformer and a supervised tabular estimator.
-- [struct PreprocessingTabularEstimator](preprocessingtabularestimator.md)
+- [struct PreprocessingTabularEstimator](./preprocessingtabularestimator.md)
   An estimator that composes a preprocessing transformer and an estimator.
-- [struct PreprocessingUpdatableSupervisedTabularEstimator](preprocessingupdatablesupervisedtabularestimator.md)
+- [struct PreprocessingUpdatableSupervisedTabularEstimator](./preprocessingupdatablesupervisedtabularestimator.md)
   An updatable supervised estimator that composes a preprocessing transformer and an updatable supervised estimator.
-- [struct PreprocessingUpdatableTabularEstimator](preprocessingupdatabletabularestimator.md)
+- [struct PreprocessingUpdatableTabularEstimator](./preprocessingupdatabletabularestimator.md)
   An updatable estimator that composes a preprocessing transformer and an updatable estimator.
 
 

@@ -1,7 +1,8 @@
 # noPresets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Output excludes all graphics printing.
 
@@ -14,15 +15,20 @@ Output excludes all graphics printing.
 static let noPresets: NSPrintPanel.JobStyleHint
 ```
 
+```c
+extern NSPrintPanelJobStyleHint const NSPrintNoPresetsJobStyleHint;
+```
+
 #### Discussion
 
 Equivalent to Core Printing’s `kPMPresetGraphicsTypeNone`.
 
 ## See Also
 
-- [static let photo: NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct/photo.md)
+### Constants
+- [static let photo: NSPrintPanel.JobStyleHint](./photo.md)
   Output contains photographic data.
-- [static let allPresets: NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct/allpresets.md)
+- [static let allPresets: NSPrintPanel.JobStyleHint](./allpresets.md)
   Output appropriate to all graphics types.
 
 

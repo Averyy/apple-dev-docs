@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that identifies the error domain for browser data exchange errors.
 

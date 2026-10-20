@@ -1,7 +1,8 @@
 # init(hue:saturation:brightness:alpha:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object with the specified hue, saturation, brightness, and alpha channel values.
 
@@ -14,15 +15,19 @@ Creates a color object with the specified hue, saturation, brightness, and alpha
 init(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
 ```
 
+```objc
++ (NSColor *) colorWithHue:(CGFloat) hue saturation:(CGFloat) saturation brightness:(CGFloat) brightness alpha:(CGFloat) alpha;
+```
+
 #### Return Value
 
 The color object.
 
 #### Discussion
 
-This method accepts extended color component values. If the component values are outside of the `0-1.0` range, the method creates a color in the extended range color space. This method is provided for easier reuse of code that uses [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) in iOS.
+This method accepts extended color component values. If the component values are outside of the `0-1.0` range, the method creates a color in the extended range color space. This method is provided for easier reuse of code that uses [`UIColor`](../../UIKit/uicolor.md) in iOS.
 
-Where possible, it is preferable to specify the colorspace explicitly using the [`init(srgbRed:green:blue:alpha:)`](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md) or [`init(genericGamma22White:alpha:)`](nscolor/init(genericgamma22white:alpha:).md) method.
+Where possible, it is preferable to specify the colorspace explicitly using the [`init(srgbRed:green:blue:alpha:)`](./init%28srgbred,green,blue,alpha%29-9oz51.md) or [`init(genericGamma22White:alpha:)`](./init%28genericgamma22white,alpha%29.md) method.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ Where possible, it is preferable to specify the colorspace explicitly using the 
 
 ## See Also
 
-- [init(calibratedHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(calibratedhue:saturation:brightness:alpha:).md)
+### Creating a color using HSB components
+- [init(calibratedHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](./init%28calibratedhue,saturation,brightness,alpha%29.md)
   Creates a color object using the given opacity and HSB color space components.
-- [init(deviceHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(devicehue:saturation:brightness:alpha:).md)
+- [init(deviceHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](./init%28devicehue,saturation,brightness,alpha%29.md)
   Creates a color object using the given opacity value and HSB color space components.
-- [init(colorSpace: NSColorSpace, hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(colorspace:hue:saturation:brightness:alpha:).md)
+- [init(colorSpace: NSColorSpace, hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](./init%28colorspace,hue,saturation,brightness,alpha%29.md)
   Creates a color object with the specified color space, hue, saturation, brightness, and alpha channel values.
 
 

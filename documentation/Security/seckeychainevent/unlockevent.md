@@ -1,7 +1,8 @@
 # SecKeychainEvent.unlockEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a keychain was successfully unlocked.
 
@@ -13,6 +14,10 @@ Indicates a keychain was successfully unlocked.
 
 ```swift
 case unlockEvent
+```
+
+```c
+kSecUnlockEvent
 ```
 
 #### Discussion

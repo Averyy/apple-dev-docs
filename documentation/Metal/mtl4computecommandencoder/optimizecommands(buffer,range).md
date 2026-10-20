@@ -1,7 +1,8 @@
 # optimizeCommands(buffer:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encode a command to attempt to improve the performance of a range of commands within an indirect command buffer.
 
@@ -21,18 +22,19 @@ func optimizeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)
 
 ## Parameters
 
-- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that this command optimizes.
+- `buffer`: An [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance that this command optimizes.
 - `range`: A range of commands within `indirectCommandBuffer`.
 
 ## See Also
 
-- [func optimizeContents(forCPUAccess: any MTLTexture)](mtl4computecommandencoder/optimizecontents(forcpuaccess:).md)
+### Encoding optimization commands
+- [func optimizeContents(forCPUAccess: any MTLTexture)](./optimizecontents%28forcpuaccess%29.md)
   Encodes a command that modifies the contents of a texture to improve the performance of CPU accesses to its contents.
-- [func optimizeContents(forCPUAccess: any MTLTexture, slice: Int, level: Int)](mtl4computecommandencoder/optimizecontents(forcpuaccess:slice:level:).md)
+- [func optimizeContents(forCPUAccess: any MTLTexture, slice: Int, level: Int)](./optimizecontents%28forcpuaccess,slice,level%29.md)
   Encodes a command that modifies the contents of a texture to improve the performance of CPU accesses to its contents in a specific region.
-- [func optimizeContents(forGPUAccess: any MTLTexture)](mtl4computecommandencoder/optimizecontents(forgpuaccess:).md)
+- [func optimizeContents(forGPUAccess: any MTLTexture)](./optimizecontents%28forgpuaccess%29.md)
   Encodes a command that modifies the contents of a texture to improve the performance of GPU accesses to its contents.
-- [func optimizeContents(forGPUAccess: any MTLTexture, slice: Int, level: Int)](mtl4computecommandencoder/optimizecontents(forgpuaccess:slice:level:).md)
+- [func optimizeContents(forGPUAccess: any MTLTexture, slice: Int, level: Int)](./optimizecontents%28forgpuaccess,slice,level%29.md)
   Encodes a command that modifies the contents of a texture instance to improve the performance of GPU accesses to its contents in a specific region.
 
 

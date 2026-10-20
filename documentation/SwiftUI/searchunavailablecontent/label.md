@@ -1,7 +1,8 @@
 # SearchUnavailableContent.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the label of a static placeholder search view.
 
@@ -23,18 +24,19 @@ struct Label
 
 #### Overview
 
-You don’t create this type directly. SwiftUI creates it when you build a search [`ContentUnavailableView`](contentunavailableview.md).
+You don’t create this type directly. SwiftUI creates it when you build a search [`ContentUnavailableView`](../contentunavailableview.md).
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [SearchUnavailableContent.Actions](searchunavailablecontent/actions.md)
+### Getting content types
+- [SearchUnavailableContent.Actions](./actions.md)
   A view that represents the actions of a static `ContentUnavailableView.search` view.
-- [SearchUnavailableContent.Description](searchunavailablecontent/description.md)
+- [SearchUnavailableContent.Description](./description.md)
   A view that represents the description of a static `ContentUnavailableView.search` view.
 
 

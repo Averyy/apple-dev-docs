@@ -1,7 +1,8 @@
 # negativeSuffix
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string the receiver uses as a suffix for negative values.
 
@@ -20,13 +21,18 @@ The string the receiver uses as a suffix for negative values.
 var negativeSuffix: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * negativeSuffix;
+```
+
 ## See Also
 
-- [var positivePrefix: String!](numberformatter/positiveprefix.md)
+### Configuring Numeric Prefixes and Suffixes
+- [var positivePrefix: String!](./positiveprefix.md)
   The string the receiver uses as the prefix for positive values.
-- [var positiveSuffix: String!](numberformatter/positivesuffix.md)
+- [var positiveSuffix: String!](./positivesuffix.md)
   The string the receiver uses as the suffix for positive values.
-- [var negativePrefix: String!](numberformatter/negativeprefix.md)
+- [var negativePrefix: String!](./negativeprefix.md)
   The string the receiver uses as a prefix for negative values.
 
 

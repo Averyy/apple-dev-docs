@@ -1,7 +1,8 @@
 # errSecInvalidAlgorithmParms
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An algorithm parameters attribute is not valid.
 
@@ -18,6 +19,10 @@ An algorithm parameters attribute is not valid.
 
 ```swift
 var errSecInvalidAlgorithmParms: OSStatus { get }
+```
+
+```c
+errSecInvalidAlgorithmParms
 ```
 
 

@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsAppearsOnAlbumsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Albums from other artists on which this artist appears or with which they’re associated.
 
@@ -10,7 +11,7 @@ Albums from other artists on which this artist appears or with which they’re a
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsAppearsOnAlbumsView.Attributes
 ```
 

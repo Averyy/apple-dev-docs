@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears a unit’s previous processing state.
 
@@ -18,6 +19,10 @@ Clears a unit’s previous processing state.
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 

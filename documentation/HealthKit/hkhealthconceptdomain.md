@@ -1,7 +1,8 @@
 # HKHealthConceptDomain
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A domain that represents a health concept.
 
@@ -19,6 +20,10 @@ A domain that represents a health concept.
 struct HKHealthConceptDomain
 ```
 
+```c
+typedef NSString * HKHealthConceptDomain;
+```
+
 #### Overview
 
 A health concept describes what type of medical information a concept belongs to. For example, the medication domain groups all medication concepts together.
@@ -26,37 +31,38 @@ A health concept describes what type of medical information a concept belongs to
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](hkhealthconceptdomain/init(rawvalue:).md)
+- [init(rawValue: String)](./hkhealthconceptdomain/init%28rawvalue%29.md)
 ### Type Properties
-- [static let medication: HKHealthConceptDomain](hkhealthconceptdomain/medication.md)
+- [static let medication: HKHealthConceptDomain](./hkhealthconceptdomain/medication.md)
   The domain that represents medication concepts.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKClinicalCoding](hkclinicalcoding.md)
+### Medication queries
+- [class HKClinicalCoding](./hkclinicalcoding.md)
   A clinical coding that represents a medical concept using a standardized coding system.
-- [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+- [class HKHealthConceptIdentifier](./hkhealthconceptidentifier.md)
   A unique identifier for a specific health concept within a domain.
-- [class HKMedicationConcept](hkmedicationconcept.md)
+- [class HKMedicationConcept](./hkmedicationconcept.md)
   An object that describes a specific medication concept.
-- [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
-- [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
-- [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+- [class HKMedicationDoseEvent](./hkmedicationdoseevent.md)
+- [class HKMedicationDoseEventType](./hkmedicationdoseeventtype.md)
+- [class HKUserAnnotatedMedication](./hkuserannotatedmedication.md)
   A reference to the tracked medication and the details a person can customize.
-- [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
-- [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
-- [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
+- [class HKUserAnnotatedMedicationQuery](./hkuserannotatedmedicationquery.md)
+- [class HKUserAnnotatedMedicationType](./hkuserannotatedmedicationtype.md)
+- [struct HKMedicationGeneralForm](./hkmedicationgeneralform.md)
   The manufactured form of a medication.
-- [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
+- [struct HKUserAnnotatedMedicationQueryDescriptor](./hkuserannotatedmedicationquerydescriptor.md)
 
 
 ---

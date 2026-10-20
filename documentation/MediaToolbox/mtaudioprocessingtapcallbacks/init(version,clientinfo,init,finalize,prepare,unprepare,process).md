@@ -1,7 +1,8 @@
 # init(version:clientInfo:init:finalize:prepare:unprepare:process:)
 
 **Framework**: Media Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 6.0+

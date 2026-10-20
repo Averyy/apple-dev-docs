@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of options for reading a JSON file.
 

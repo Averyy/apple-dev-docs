@@ -1,14 +1,15 @@
 # IOUSBHostCILinkStateCompliance
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCILinkStateCompliance = 10
 ```
 

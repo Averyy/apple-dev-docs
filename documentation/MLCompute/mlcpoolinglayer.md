@@ -1,16 +1,17 @@
 # MLCPoolingLayer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that summarizes the average presence of a feature.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,40 +19,45 @@ A layer that summarizes the average presence of a feature.
 class MLCPoolingLayer
 ```
 
+```objc
+@interface MLCPoolingLayer : MLCLayer
+```
+
 ## Topics
 
 ### Creating Pooling Layers
-- [convenience init(descriptor: MLCPoolingDescriptor)](mlcpoolinglayer/init(descriptor:).md)
+- [convenience init(descriptor: MLCPoolingDescriptor)](./mlcpoolinglayer/init%28descriptor%29.md)
   Creates a pooling layer with the descriptor you specify.
-- [class MLCPoolingDescriptor](mlcpoolingdescriptor.md)
+- [class MLCPoolingDescriptor](./mlcpoolingdescriptor.md)
   A configuration object you use to create a pooling layer.
-- [enum MLCPoolingType](mlcpoolingtype-wb8j.md)
+- [enum MLCPoolingType](./mlcpoolingtype-wb8j.md)
   A pooling function type for a pooling layer.
 ### Inspecting Pooling Layers
-- [var descriptor: MLCPoolingDescriptor](mlcpoolinglayer/descriptor.md)
+- [var descriptor: MLCPoolingDescriptor](./mlcpoolinglayer/descriptor.md)
   The configuration object you use to create the pooling layer.
 
 ## Relationships
 
 ### Inherits From
-- [MLCLayer](mlclayer.md)
+- [MLCLayer](./mlclayer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCConvolutionLayer](mlcconvolutionlayer.md)
+### Convolution and Recurrent Layers
+- [class MLCConvolutionLayer](./mlcconvolutionlayer.md)
   A layer that applies a convolution over a signal.
-- [class MLCLSTMLayer](mlclstmlayer.md)
+- [class MLCLSTMLayer](./mlclstmlayer.md)
   A layer that represents long short-term memory (LSTM) networks.
-- [class MLCUpsampleLayer](mlcupsamplelayer.md)
+- [class MLCUpsampleLayer](./mlcupsamplelayer.md)
   A layer that applies upsampling with the shape you specify.
-- [class MLCEmbeddingLayer](mlcembeddinglayer.md)
+- [class MLCEmbeddingLayer](./mlcembeddinglayer.md)
   A layer that stores a word embedding.
 
 

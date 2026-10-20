@@ -1,30 +1,32 @@
 # Log
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Log the current execution context with respect to any queues the current thread holds.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static void Log(const char *message, IODispatchLogFunction output);
 ```
 
 ## Parameters
 
 - `message`: A C string that contains the message to add to the log file.
-- `output`: The function address to use for logging the content. The address of [`IOLog`](iolog.md) is suitable for use.
+- `output`: The function address to use for logging the content. The address of [`IOLog`](../iolog.md) is suitable for use.
 
 ## See Also
 
-- [IODispatchLogFunction](iodispatchlogfunction.md)
+### Logging Dispatch Information
+- [IODispatchLogFunction](../iodispatchlogfunction.md)
   A function that logs content.
 
 

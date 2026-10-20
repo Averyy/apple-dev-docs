@@ -1,7 +1,8 @@
 # SofaType
 
 **Framework**: RoomPlan  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of sofa the framework identifies in a captured room.
 
@@ -18,32 +19,32 @@ enum SofaType
 
 #### Overview
 
-When the framework observes a sofa in the physical environment during a scan, it chooses a type among these options that best matches the sofa’s look. The framework adds that instance of this enum to the [`attributes`](capturedroom/object/attributes.md) array for the object (see [`objects`](capturedroom/objects.md)) that represents the sofa in the captured room.
+When the framework observes a sofa in the physical environment during a scan, it chooses a type among these options that best matches the sofa’s look. The framework adds that instance of this enum to the [`attributes`](./capturedroom/object/attributes.md) array for the object (see [`objects`](./capturedroom/objects.md)) that represents the sofa in the captured room.
 
 ## Topics
 
 ### Choosing a sofa type
-- [SofaType.rectangular](sofatype/rectangular.md)
+- [SofaType.rectangular](./sofatype/rectangular.md)
   A sofa shape that resembles a rectangle.
-- [SofaType.singleSeat](sofatype/singleseat.md)
+- [SofaType.singleSeat](./sofatype/singleseat.md)
   A sofa that resembles a loveseat.
-- [SofaType.lShaped](sofatype/lshaped.md)
+- [SofaType.lShaped](./sofatype/lshaped.md)
   A sofa shape that resembles the letter L.
-- [SofaType.lShapedExtension](sofatype/lshapedextension.md)
+- [SofaType.lShapedExtension](./sofatype/lshapedextension.md)
   The short side of the L-shape sofa.
-- [SofaType.unidentified](sofatype/unidentified.md)
+- [SofaType.unidentified](./sofatype/unidentified.md)
   An uncategorized sofa shape.
 
 ## Relationships
 
 ### Conforms To
-- [CapturedRoomAttribute](capturedroomattribute.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CapturedRoomAttribute](./capturedroomattribute.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

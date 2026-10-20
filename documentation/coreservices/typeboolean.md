@@ -1,7 +1,8 @@
 # typeBoolean
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Boolean value—single byte with value 0 or 1.
 

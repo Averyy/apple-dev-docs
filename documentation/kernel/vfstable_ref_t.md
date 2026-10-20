@@ -1,14 +1,15 @@
 # vfstable_ref_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct vfstable *vfstable_ref_t;
 ```
 

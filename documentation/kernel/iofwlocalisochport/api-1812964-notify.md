@@ -7,14 +7,14 @@ Informs hardware of a change to the DCL program.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn notify( 
  IOFWDCLNotificationTypenotificationType, 
  DCLCommand **dclCommandList, 
  UInt32numDCLCommands );
 ```
 
-#### Return_value
+#### Return Value
 
 IOKit error code.
 

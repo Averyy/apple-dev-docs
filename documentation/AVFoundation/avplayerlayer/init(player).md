@@ -1,7 +1,8 @@
 # init(player:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layer object to present the visual contents of a player’s current item.
 
@@ -17,6 +18,10 @@ Creates a layer object to present the visual contents of a player’s current it
 
 ```swift
 init(player: AVPlayer?)
+```
+
+```objc
++ (AVPlayerLayer *) playerLayerWithPlayer:(AVPlayer *) player;
 ```
 
 #### Return Value

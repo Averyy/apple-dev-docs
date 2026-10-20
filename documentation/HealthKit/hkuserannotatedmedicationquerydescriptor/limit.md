@@ -1,7 +1,8 @@
 # limit
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of resulting HKUserAnnotatedMedication objects.
 

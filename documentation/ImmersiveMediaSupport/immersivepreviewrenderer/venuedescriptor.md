@@ -1,7 +1,8 @@
 # venueDescriptor
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The venue descriptor for rendering immersive video frames.
 

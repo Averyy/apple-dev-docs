@@ -1,7 +1,8 @@
 # nextOpticalFlow
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional optical flow object that contains forward and backward optical flow with the next frame.
 
@@ -17,25 +18,30 @@ Optional optical flow object that contains forward and backward optical flow wit
 var nextOpticalFlow: VTFrameProcessorOpticalFlow? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) VTFrameProcessorOpticalFlow * nextOpticalFlow;
+```
+
 #### Discussion
 
 For the last frame this will always be nil. This object is only needed if optical flow is pre-computed.
 
 ## See Also
 
-- [var sourceFrame: VTFrameProcessorFrame](vtmotionblurparameters/sourceframe.md)
+### Inspecting the parameters
+- [var sourceFrame: VTFrameProcessorFrame](./sourceframe.md)
   The current source frame.
-- [var nextFrame: VTFrameProcessorFrame?](vtmotionblurparameters/nextframe.md)
+- [var nextFrame: VTFrameProcessorFrame?](./nextframe.md)
   The next source frame in presentation time order.
-- [var previousFrame: VTFrameProcessorFrame?](vtmotionblurparameters/previousframe.md)
+- [var previousFrame: VTFrameProcessorFrame?](./previousframe.md)
   The previous source frame in presentation time order.
-- [var motionBlurStrength: Int](vtmotionblurparameters/motionblurstrength.md)
+- [var motionBlurStrength: Int](./motionblurstrength.md)
   A value that indicates the strength of blur to apply.
-- [var previousOpticalFlow: VTFrameProcessorOpticalFlow?](vtmotionblurparameters/previousopticalflow.md)
+- [var previousOpticalFlow: VTFrameProcessorOpticalFlow?](./previousopticalflow.md)
   Optional optical flow object that contains forward and backward optical flow with the previous frame.
-- [var submissionMode: VTMotionBlurParameters.SubmissionMode](vtmotionblurparameters/submissionmode-swift.property.md)
+- [var submissionMode: VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.property.md)
   A value describing the processing request in a parameters submission object.
-- [VTMotionBlurParameters.SubmissionMode](vtmotionblurparameters/submissionmode-swift.enum.md)
+- [VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
 
 

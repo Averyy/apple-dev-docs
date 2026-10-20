@@ -1,7 +1,8 @@
 # shadowOffsetY
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A floating-point number that controls the vertical offset of shadows from the elements casting the shadows.
 
@@ -11,7 +12,7 @@ A floating-point number that controls the vertical offset of shadows from the el
 
 ## Declaration
 
-```swift
+```
 attribute unrestricted float shadowOffsetY;
 ```
 
@@ -23,13 +24,14 @@ Shadows are cast if `shadowOffsetY` is nonzero and the alpha value of `shadowCol
 
 ## See Also
 
-- [clearShadow](canvasrenderingcontext2d/1634057-clearshadow.md)
+### Working with Shadows
+- [clearShadow](./api-1634057-clearshadow.md)
   Turns shadows off.
-- [shadowBlur](canvasrenderingcontext2d/1632236-shadowblur.md)
+- [shadowBlur](./api-1632236-shadowblur.md)
   A floating-point number that controls the degree of Gaussian blur applied to shadows.
-- [shadowColor](canvasrenderingcontext2d/1629275-shadowcolor.md)
+- [shadowColor](./api-1629275-shadowcolor.md)
   A string that contains the RGBa color value of shadows. 
-- [shadowOffsetX](canvasrenderingcontext2d/1632399-shadowoffsetx.md)
+- [shadowOffsetX](./api-1632399-shadowoffsetx.md)
   A floating-point number that controls the horizontal offset of shadows from the elements casting the shadows.
 
 

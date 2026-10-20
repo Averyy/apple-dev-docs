@@ -1,7 +1,8 @@
 # badgeBackgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the badge.
 
@@ -19,13 +20,18 @@ The background color of the badge.
 var badgeBackgroundColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIColor * badgeBackgroundColor;
+```
+
 ## See Also
 
-- [var badgeTextAttributes: [NSAttributedString.Key : Any]](uitabbaritemstateappearance/badgetextattributes.md)
+### Configuring the badge appearance
+- [var badgeTextAttributes: [NSAttributedString.Key : Any]](./badgetextattributes.md)
   String attributes to apply to the text of the item’s badge.
-- [var badgeTitlePositionAdjustment: UIOffset](uitabbaritemstateappearance/badgetitlepositionadjustment.md)
+- [var badgeTitlePositionAdjustment: UIOffset](./badgetitlepositionadjustment.md)
   The additional amount by which to offset the badge’s title horizontally and vertically.
-- [var badgePositionAdjustment: UIOffset](uitabbaritemstateappearance/badgepositionadjustment.md)
+- [var badgePositionAdjustment: UIOffset](./badgepositionadjustment.md)
   The additional amount by which to offset the badge horizontally and vertically.
 
 

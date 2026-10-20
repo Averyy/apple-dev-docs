@@ -1,7 +1,8 @@
 # txtRecord
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A DNS TXT record to identify the printer.
 
@@ -17,6 +18,10 @@ A DNS TXT record to identify the printer.
 var txtRecord: Data? { get set }
 ```
 
+```objc
+@property (copy, readwrite, nullable) NSData * txtRecord;
+```
+
 #### Discussion
 
 This property supplies additional information about a printing service as a set of strings that the system can parse into a series of key/value pairs. The TXT record can provide basic access, identity, and capability information about the printing service. The interface can then locate the printer based on categories such as color or duplex printing.
@@ -25,9 +30,10 @@ A TXT record isn’t required. When absent, the print system queries the URL and
 
 ## See Also
 
-- [var displayName: String?](uiprinterdestination/displayname.md)
+### Describing the printer
+- [var displayName: String?](./displayname.md)
   A human-readable string that displays the name of a printer.
-- [var url: URL](uiprinterdestination/url.md)
+- [var url: URL](./url.md)
   The address of the printer.
 
 

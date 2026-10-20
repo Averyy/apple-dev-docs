@@ -1,7 +1,8 @@
 # init(widthDimension:heightDimension:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a size with the specified width and height dimensions.
 
@@ -16,6 +17,10 @@ Creates a size with the specified width and height dimensions.
 
 ```swift
 convenience init(widthDimension width: NSCollectionLayoutDimension, heightDimension height: NSCollectionLayoutDimension)
+```
+
+```objc
++ (instancetype) sizeWithWidthDimension:(NSCollectionLayoutDimension *) width heightDimension:(NSCollectionLayoutDimension *) height;
 ```
 
 

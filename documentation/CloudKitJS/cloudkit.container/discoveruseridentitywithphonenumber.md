@@ -1,7 +1,8 @@
 # discoverUserIdentityWithPhoneNumber
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches information about a single user based on the user’s phone number.
 
@@ -10,7 +11,7 @@ Fetches information about a single user based on the user’s phone number.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverUserIdentityWithPhoneNumber(
 	String phoneNumber
 );
@@ -18,7 +19,7 @@ Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverUserIdentityW
 
 #### Return Value
 
-A `Promise` object that resolves to [`CloudKit.UserIdentitiesResponse`](cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to [`CloudKit.UserIdentitiesResponse`](../cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
@@ -34,15 +35,16 @@ Use this method to get the ID of a user based on the user’s phone number. The 
 
 ## See Also
 
-- [fetchCurrentUserIdentity](cloudkit.container/fetchcurrentuseridentity.md)
+### Discovering Users
+- [fetchCurrentUserIdentity](./fetchcurrentuseridentity.md)
   Fetches information about the current user asynchronously.
-- [discoverAllUserIdentities](cloudkit.container/discoveralluseridentities.md)
+- [discoverAllUserIdentities](./discoveralluseridentities.md)
   Fetches all user identities in the current user’s address book.
-- [discoverUserIdentities](cloudkit.container/discoveruseridentities.md)
+- [discoverUserIdentities](./discoveruseridentities.md)
   Fetches all users in the specified array.
-- [discoverUserIdentityWithEmailAddress](cloudkit.container/discoveruseridentitywithemailaddress.md)
+- [discoverUserIdentityWithEmailAddress](./discoveruseridentitywithemailaddress.md)
   Fetches information about a single user based on the user’s email address.
-- [discoverUserIdentityWithUserRecordName](cloudkit.container/discoveruseridentitywithuserrecordname.md)
+- [discoverUserIdentityWithUserRecordName](./discoveruseridentitywithuserrecordname.md)
   Fetches information about a single user using the record name.
 
 

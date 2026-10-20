@@ -1,17 +1,24 @@
 # lineFragmentRect(forProposedRect:sweepDirection:movementDirection:remaining:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates and returns the longest rectangle available in the proposed rectangle for displaying text.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](./linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md) instead.
 
 ## Declaration
 
 ```swift
 func lineFragmentRect(forProposedRect proposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remaining remainingRect: NSRectPointer?) -> NSRect
+```
+
+```objc
+- (NSRect) lineFragmentRectForProposedRect:(NSRect) proposedRect sweepDirection:(NSLineSweepDirection) sweepDirection movementDirection:(NSLineMovementDirection) movementDirection remainingRect:(NSRectPointer) remainingRect;
 ```
 
 #### Return Value
@@ -33,11 +40,12 @@ If `proposedRect` doesn’t completely overlap the region along the axis of `mov
 
 ## See Also
 
-- [convenience init(containerSize: NSSize)](nstextcontainer/init(containersize:).md)
+### Deprecated
+- [convenience init(containerSize: NSSize)](./init%28containersize%29.md)
   Initializes a text container with a specified bounding rectangle.
-- [func contains(NSPoint) -> Bool](nstextcontainer/contains(_:).md)
+- [func contains(NSPoint) -> Bool](./contains%28_%29.md)
   Queries whether a point lies within the text container’s region or on the region’s edge—not simply within its bounding rectangle.
-- [var containerSize: NSSize](nstextcontainer/containersize.md)
+- [var containerSize: NSSize](./containersize.md)
   The size of the text container’s bounding rectangle.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphScatterMode.mul
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Multiply
 
@@ -17,6 +18,10 @@ Multiply
 
 ```swift
 case mul
+```
+
+```c
+MPSGraphScatterModeMul
 ```
 
 

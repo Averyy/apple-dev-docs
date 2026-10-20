@@ -1,7 +1,8 @@
 # setModels(_:forTagScheme:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns models for a tag scheme.
 
@@ -20,18 +21,23 @@ Assigns models for a tag scheme.
 func setModels(_ models: [NLModel], forTagScheme tagScheme: NLTagScheme)
 ```
 
+```objc
+- (void) setModels:(NSArray<NLModel *> *) models forTagScheme:(NLTagScheme) tagScheme;
+```
+
 #### Discussion
 
 An array of models is allowed for the case where multiple models need to be used. For example, when models were trained on specific languages.
 
 ## Parameters
 
-- `models`: Array of [`NLModel`](nlmodel.md) objects to be used with this tagger.
+- `models`: Array of [`NLModel`](../nlmodel.md) objects to be used with this tagger.
 - `tagScheme`: The tag scheme the models would be used with.
 
 ## See Also
 
-- [func models(forTagScheme: NLTagScheme) -> [NLModel]](nltagger/models(fortagscheme:).md)
+### Using models with a tagger
+- [func models(forTagScheme: NLTagScheme) -> [NLModel]](./models%28fortagscheme%29.md)
   Returns the models that apply to the given tag scheme.
 
 

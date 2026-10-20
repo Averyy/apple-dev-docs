@@ -1,7 +1,8 @@
 # OneHotEncoder.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that encodes a category as an array of integers.
 
@@ -20,36 +21,38 @@ A transformer that encodes a category as an array of integers.
 struct Transformer
 ```
 
+Available when `Category` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
+
 ## Topics
 
 ### Creating a transformer
-- [init(categories: Set<Category?>)](onehotencoder/transformer/init(categories:).md)
+- [init(categories: Set<Category?>)](./transformer/init%28categories%29.md)
   Creates a one-hot encoder.
 ### Getting the categories
-- [var categories: Set<Category?>](onehotencoder/transformer/categories.md)
+- [var categories: Set<Category?>](./transformer/categories.md)
   Unique values to encode
-- [func category(at: Int) -> Category?](onehotencoder/transformer/category(at:).md)
+- [func category(at: Int) -> Category?](./transformer/category%28at%29.md)
   Retrieves the category at the one-hot encoding index.
 ### Performing the transformation
-- [func applied<S>(S, eventHandler: EventHandler?) throws -> [[Int]]](onehotencoder/transformer/applied(_:eventhandler:).md)
+- [func applied<S>(S, eventHandler: EventHandler?) throws -> [[Int]]](./transformer/applied%28_,eventhandler%29.md)
   Performs a one-hot encoding on a sequence of inputs.
-- [func applied(to: Category?, eventHandler: EventHandler?) throws -> [Int]](onehotencoder/transformer/applied(to:eventhandler:).md)
+- [func applied(to: Category?, eventHandler: EventHandler?) throws -> [Int]](./transformer/applied%28to,eventhandler%29.md)
   Performs a one-hot encoding on a single input.
 ### Default Implementations
-- [Decodable Implementations](onehotencoder/transformer/decodable-implementations.md)
-- [Encodable Implementations](onehotencoder/transformer/encodable-implementations.md)
+- [Decodable Implementations](./transformer/decodable-implementations.md)
+- [Encodable Implementations](./transformer/encodable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transformer](../transformer.md)
 
 
 ---

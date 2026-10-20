@@ -1,7 +1,8 @@
 # simplified
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The level of detail should be simplified.
 
@@ -19,7 +20,7 @@ static let simplified: LevelOfDetail
 
 ## Mentions
 
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+- [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
 #### Discussion
 

@@ -4806,7 +4806,7 @@
       "hash": "778557de2910edd951bada1ff7b515a7e9a2c4129148b9811f9a12117ae5ae5e"
     },
     "https://developer.apple.com/documentation/metalperformanceshaders/mpscnnupsamplingbilineargradientnode": {
-      "etag": "\"635a-65d55dadee1c1-df\"",
+      "etag": "\"635a-65d55dadee1c1\"",
       "file_path": "documentation/MetalPerformanceShaders/mpscnnupsamplingbilineargradientnode.md",
       "hash": "53102cf1dc63438c377961f2fce07597f7efad2914df701403cbe01a92e4a683"
     },
@@ -6106,7 +6106,7 @@
       "hash": "fad730e3898b645e08cf6348785925270757ba721314fdae0a79a47f260e84d9"
     },
     "https://developer.apple.com/documentation/metalperformanceshaders/mpsgetcustomkernelmaxbatchsize(_:_:)": {
-      "etag": "\"24eb-65d55da92415b-df\"",
+      "etag": "\"24eb-65d55da92415b\"",
       "file_path": "documentation/MetalPerformanceShaders/mpsgetcustomkernelmaxbatchsize(_,_).md",
       "hash": "e78332e8a7675522a0e9f67a3267e1180a25cef4dd440517b3b2268df2679b52"
     },
@@ -20016,7 +20016,7 @@
       "hash": "778557de2910edd951bada1ff7b515a7e9a2c4129148b9811f9a12117ae5ae5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpscnnupsamplingbilineargradientnode.json": {
-      "etag": "\"635a-65d55dadee1c1-df\"",
+      "etag": "\"635a-65d55dadee1c1\"",
       "file_path": "documentation/MetalPerformanceShaders/mpscnnupsamplingbilineargradientnode.md",
       "hash": "53102cf1dc63438c377961f2fce07597f7efad2914df701403cbe01a92e4a683"
     },
@@ -21316,7 +21316,7 @@
       "hash": "fad730e3898b645e08cf6348785925270757ba721314fdae0a79a47f260e84d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpsgetcustomkernelmaxbatchsize(_:_:).json": {
-      "etag": "\"24eb-65d55da92415b-df\"",
+      "etag": "\"24eb-65d55da92415b\"",
       "file_path": "documentation/MetalPerformanceShaders/mpsgetcustomkernelmaxbatchsize(_,_).md",
       "hash": "e78332e8a7675522a0e9f67a3267e1180a25cef4dd440517b3b2268df2679b52"
     },
@@ -30430,6 +30430,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 6086
   }
 }

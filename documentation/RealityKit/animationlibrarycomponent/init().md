@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty animation library.
 
@@ -21,9 +22,10 @@ init()
 
 ## See Also
 
-- [init(animations: [String : AnimationResource])](animationlibrarycomponent/init(animations:).md)
+### Creating an animation library component
+- [init(animations: [String : AnimationResource])](./init%28animations%29.md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
-- [init(dictionaryLiteral: (String, AnimationResource)...)](animationlibrarycomponent/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, AnimationResource)...)](./init%28dictionaryliteral%29.md)
   Creates an animation library from a variadic list of key-value pairs.
 
 

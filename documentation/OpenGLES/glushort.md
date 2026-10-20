@@ -1,7 +1,8 @@
 # GLushort
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLushort = UInt16
+```
+
+```c
+typedef uint16_t GLushort;
 ```
 
 

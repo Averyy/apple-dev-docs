@@ -1,7 +1,8 @@
 # MTAudioProcessingTapUnprepareCallback
 
 **Framework**: Media Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An audio processing unpreparation callback function.
 
@@ -19,6 +20,10 @@ An audio processing unpreparation callback function.
 typealias MTAudioProcessingTapUnprepareCallback = (MTAudioProcessingTap) -> Void
 ```
 
+```c
+typedef void (*)(const struct opaqueMTAudioProcessingTap *) MTAudioProcessingTapUnprepareCallback;
+```
+
 #### Overview
 
 The unpreparation callback is invoked when the underlying audio machinery stops calling the process callback.
@@ -34,18 +39,19 @@ Process callbacks will only ever be called after the prepare callback returns, a
 ## Topics
 
 ### Flags
-- [typealias MTAudioProcessingTapCreationFlags](mtaudioprocessingtapcreationflags.md)
+- [typealias MTAudioProcessingTapCreationFlags](./mtaudioprocessingtapcreationflags.md)
   Flags to use when creating audio processing taps.
 
 ## See Also
 
-- [typealias MTAudioProcessingTapInitCallback](mtaudioprocessingtapinitcallback.md)
+### Callback functions
+- [typealias MTAudioProcessingTapInitCallback](./mtaudioprocessingtapinitcallback.md)
   An initialization callback function.
-- [typealias MTAudioProcessingTapPrepareCallback](mtaudioprocessingtappreparecallback.md)
+- [typealias MTAudioProcessingTapPrepareCallback](./mtaudioprocessingtappreparecallback.md)
   An audio processing preparation callback function.
-- [typealias MTAudioProcessingTapProcessCallback](mtaudioprocessingtapprocesscallback.md)
+- [typealias MTAudioProcessingTapProcessCallback](./mtaudioprocessingtapprocesscallback.md)
   An audio processing callback function.
-- [typealias MTAudioProcessingTapFinalizeCallback](mtaudioprocessingtapfinalizecallback.md)
+- [typealias MTAudioProcessingTapFinalizeCallback](./mtaudioprocessingtapfinalizecallback.md)
   A finalization callback function.
 
 

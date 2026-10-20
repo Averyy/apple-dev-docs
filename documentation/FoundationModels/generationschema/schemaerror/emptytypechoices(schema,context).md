@@ -1,7 +1,8 @@
 # GenerationSchema.SchemaError.emptyTypeChoices(schema:context:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that represents an attempt to construct an anyOf schema with an empty array of type choices.
 
@@ -21,13 +22,14 @@ case emptyTypeChoices(schema: String, context: GenerationSchema.SchemaError.Cont
 
 ## See Also
 
-- [case duplicateProperty(schema: String, property: String, context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/duplicateproperty(schema:property:context:).md)
+### Getting schema errors
+- [case duplicateProperty(schema: String, property: String, context: GenerationSchema.SchemaError.Context)](./duplicateproperty%28schema,property,context%29.md)
   An error that represents an attempt to construct a dynamic schema with properties that have conflicting names.
-- [case duplicateType(schema: String?, type: String, context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/duplicatetype(schema:type:context:).md)
+- [case duplicateType(schema: String?, type: String, context: GenerationSchema.SchemaError.Context)](./duplicatetype%28schema,type,context%29.md)
   An error that represents an attempt to construct a schema from dynamic schemas in which two or more of the subschemas have the same type name.
-- [case undefinedReferences(schema: String?, references: [String], context: GenerationSchema.SchemaError.Context)](generationschema/schemaerror/undefinedreferences(schema:references:context:).md)
+- [case undefinedReferences(schema: String?, references: [String], context: GenerationSchema.SchemaError.Context)](./undefinedreferences%28schema,references,context%29.md)
   An error that represents an attempt to construct a schema from dynamic schemas in which one of those schemas references an undefined schema.
-- [GenerationSchema.SchemaError.Context](generationschema/schemaerror/context.md)
+- [GenerationSchema.SchemaError.Context](./context.md)
   The context in which the error occurred.
 
 

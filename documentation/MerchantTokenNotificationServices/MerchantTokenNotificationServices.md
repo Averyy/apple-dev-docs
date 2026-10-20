@@ -1,7 +1,8 @@
 # Apple Pay Merchant Token Management API
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: module
+**Kind**: module  
+**Role**: Web Service
 
 Retrieve and manage payment life-cycle events for your Apple Pay merchant tokens.
 
@@ -13,90 +14,90 @@ Retrieve and manage payment life-cycle events for your Apple Pay merchant tokens
 
 The Apple Pay Merchant Token Management API is a REST API that enables merchants to get the details of a life-cycle event after receiving a merchant token event notification. You can also use this API to inform Apple Pay servers to invalidate your token when it’s no longer in use.
 
-Merchant tokens offer a reliable solution for taking recurring, deferred, and automatic reload payments with Apple Pay. Users can manage their merchant tokens in Wallet. You can enrich the token management experience by providing usage information, using the [`Apple Pay Merchant Token Usage Information API`](https://developer.apple.com/documentation/applepaymerchanttokenusageinformation). This helps users understand past payments and keep track of upcoming payments.
+Merchant tokens offer a reliable solution for taking recurring, deferred, and automatic reload payments with Apple Pay. Users can manage their merchant tokens in Wallet. You can enrich the token management experience by providing usage information, using the [Apple Pay Merchant Token Usage Information API](../ApplePayMerchantTokenUsageInformation/ApplePayMerchantTokenUsageInformation.md). This helps users understand past payments and keep track of upcoming payments.
 
 Apple Pay utilizes a tap-and-pull model to deliver events related to merchant tokens. In this process, the Apple Pay server notifies you of an event. Then you can subsequently retrieve the event details using the provided `eventId`. You can access the event details for seven days. The API between the device and you, the merchant, requires Transport Layer Security (TLS), and the device presents the merchant-provided `authenticationToken` to authenticate requests.
 
 In addition, you can call the Apple Pay server to unlink Merchant Primary Account Numbers (MPANs). Access to the APIs between the Apple Pay server and the merchant requires mutual TLS.
 
-A *merchant token* associates a payment card, merchant, and user. Apple Pay issues a merchant token when a customer initiates a purchase using Apple Pay in your app or on your website. When your app or website creates a payment request for a recurring payment or an automatic reload payment, it passes your server’s notification URL in the `tokenNotificationURL` parameter. For more information about `tokenNotificationURL`, see [`PKAutomaticReloadPaymentRequest`](https://developer.apple.com/documentation/passkit/pkautomaticreloadpaymentrequest), [`PKRecurringPaymentRequest`](https://developer.apple.com/documentation/passkit/pkrecurringpaymentrequest), [`ApplePayAutomaticReloadPaymentRequest`](https://developer.apple.com/documentation/applepayontheweb/applepayautomaticreloadpaymentrequest), [`ApplePayRecurringPaymentRequest`](https://developer.apple.com/documentation/applepayontheweb/applepayrecurringpaymentrequest), [`PKDeferredPaymentRequest`](https://developer.apple.com/documentation/passkit/pkdeferredpaymentrequest), and [`ApplePayDeferredPaymentRequest`](https://developer.apple.com/documentation/applepayontheweb/applepaydeferredpaymentrequest).
+A *merchant token* associates a payment card, merchant, and user. Apple Pay issues a merchant token when a customer initiates a purchase using Apple Pay in your app or on your website. When your app or website creates a payment request for a recurring payment or an automatic reload payment, it passes your server’s notification URL in the `tokenNotificationURL` parameter. For more information about `tokenNotificationURL`, see [`PKAutomaticReloadPaymentRequest`](../PassKit/pkautomaticreloadpaymentrequest.md), [`PKRecurringPaymentRequest`](../PassKit/pkrecurringpaymentrequest.md), [`ApplePayAutomaticReloadPaymentRequest`](../ApplePayontheWeb/applepayautomaticreloadpaymentrequest.md), [`ApplePayRecurringPaymentRequest`](../ApplePayontheWeb/applepayrecurringpaymentrequest.md), [`PKDeferredPaymentRequest`](../PassKit/pkdeferredpaymentrequest.md), and [`ApplePayDeferredPaymentRequest`](../ApplePayontheWeb/applepaydeferredpaymentrequest.md).
 
-If a life-cycle event affects the token — for example, the card’s expiration date changes, or the user or issuer deletes the token — Apple Pay sends you a notification with an event identifier to that `tokenNotificationURL`. You retrieve the details of the event by calling [`Get Details of a Merchant Token Event`](merchant-token-event-retrieval.md) with the event identifier.
+If a life-cycle event affects the token — for example, the card’s expiration date changes, or the user or issuer deletes the token — Apple Pay sends you a notification with an event identifier to that `tokenNotificationURL`. You retrieve the details of the event by calling [`Get Details of a Merchant Token Event`](./merchant-token-event-retrieval.md) with the event identifier.
 
 ## Topics
 
 ### Essentials
-- [Adding merchant token usage information](../applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information.md)
+- [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
   Create directories and add files, images, and localization for your merchant token usage information package.
-- [Apple Pay Merchant Token Usage Information API](../applepaymerchanttokenusageinformation/applepaymerchanttokenusageinformation.md)
+- [Apple Pay Merchant Token Usage Information API](../ApplePayMerchantTokenUsageInformation/ApplePayMerchantTokenUsageInformation.md)
   Add details about your merchant token usage information package.
 ### Merchant token notification handling
-- [Receiving and handling merchant token notifications](../applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications.md)
+- [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications)
   Implement an endpoint to receive and handle merchant token life-cycle updates from Apple Pay.
-- [Send Merchant Token Event](send-merchant-token-event.md)
+- [Send Merchant Token Event](./send-merchant-token-event.md)
   Receive and handle merchant token life-cycle updates from Apple Pay.
-- [Update Merchant Metadata](update-merchant-metadata.md)
+- [Update Merchant Metadata](./update-merchant-metadata.md)
   Update the merchant token’s notification URL.
 ### Merchant token event retrieval
-- [Get Details of a Merchant Token Event](merchant-token-event-retrieval.md)
+- [Get Details of a Merchant Token Event](./merchant-token-event-retrieval.md)
   Get the details of a merchant token event after receiving a notification.
-- [object MerchantTokenEventResponse](merchanttokeneventresponse.md)
+- [object MerchantTokenEventResponse](./merchanttokeneventresponse.md)
   A response body that contains information about a life-cycle event for a merchant token.
-- [object MerchantTokenMetadata](merchanttokenmetadata.md)
+- [object MerchantTokenMetadata](./merchanttokenmetadata.md)
   The card information related to a merchant token, including its card art and metadata.
-- [object CardArt](cardart.md)
+- [object CardArt](./cardart.md)
   Data for displaying art to represent a card.
-- [object CardMetadata](cardmetadata.md)
+- [object CardMetadata](./cardmetadata.md)
   Data about the card, including its expiration date and suffix.
-- [object EncryptedTokenMetadata](encryptedtokenmetadata.md)
+- [object EncryptedTokenMetadata](./encryptedtokenmetadata.md)
   Encrypted data about the merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
-- [object TokenMetadata](tokenmetadata.md)
+- [object TokenMetadata](./tokenmetadata.md)
   Unencrypted metadata about a merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
 ### Merchant token usage information
-- [Retrieve Merchant Token Public Key](retrieve-merchant-token-public-key.md)
+- [Retrieve Merchant Token Public Key](./retrieve-merchant-token-public-key.md)
   Get the merchant token public key.
-- [MerchantToken Usage Data Availability Notification](merchanttoken-usage-data-availability-notification.md)
+- [MerchantToken Usage Data Availability Notification](./merchanttoken-usage-data-availability-notification.md)
   Notify Apple servers that the user’s devices can retrieve merchant token usage information.
-- [object MerchantTokenUsageDataAvailabilityNotificationRequest](merchanttokenusagedataavailabilitynotificationrequest.md)
+- [object MerchantTokenUsageDataAvailabilityNotificationRequest](./merchanttokenusagedataavailabilitynotificationrequest.md)
   The data for the merchant token usage data availability notification request.
-- [Get MerchantToken Usage Information Package](get-merchanttoken-usage-information-package.md)
+- [Get MerchantToken Usage Information Package](./get-merchanttoken-usage-information-package.md)
   Retrieve the merchant token usage information package from the merchant server.
-- [object GetMerchantTokenUsageInformationPackageResponse](getmerchanttokenusageinformationpackageresponse.md)
+- [object GetMerchantTokenUsageInformationPackageResponse](./getmerchanttokenusageinformationpackageresponse.md)
   The encrypted merchant token usage information package.
-- [object AutomaticReloadPaymentDetails](../applepaymerchanttokenusageinformation/automaticreloadpaymentdetails.md)
+- [object AutomaticReloadPaymentDetails](../ApplePayMerchantTokenUsageInformation/automaticreloadpaymentdetails.md)
   Details about an automatic reload payment.
-- [object CurrencyAmount](../applepaymerchanttokenusageinformation/currencyamount.md)
+- [object CurrencyAmount](../ApplePayMerchantTokenUsageInformation/currencyamount.md)
   An amount of money.
-- [object DeferredPaymentDetails](../applepaymerchanttokenusageinformation/deferredpaymentdetails.md)
+- [object DeferredPaymentDetails](../ApplePayMerchantTokenUsageInformation/deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PastPayment](../applepaymerchanttokenusageinformation/pastpayment.md)
+- [object PastPayment](../ApplePayMerchantTokenUsageInformation/pastpayment.md)
   A past payment.
-- [object PaymentIssueDetails](../applepaymerchanttokenusageinformation/paymentissuedetails.md)
+- [object PaymentIssueDetails](../ApplePayMerchantTokenUsageInformation/paymentissuedetails.md)
   Details about a payment issue, such as a declined payment.
-- [object RecurringPaymentDetails](../applepaymerchanttokenusageinformation/recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](../ApplePayMerchantTokenUsageInformation/recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
-- [object UpcomingPayment](../applepaymerchanttokenusageinformation/upcomingpayment.md)
+- [object UpcomingPayment](../ApplePayMerchantTokenUsageInformation/upcomingpayment.md)
   An upcoming payment.
-- [object UsageInformation](../applepaymerchanttokenusageinformation/usageinformation.md)
+- [object UsageInformation](../ApplePayMerchantTokenUsageInformation/usageinformation.md)
   Information about the usage of a merchant token, such as past and upcoming payments.
 ### Merchant token invalidation
-- [Invalidate a Merchant Token](unlinking-merchanttoken.md)
+- [Invalidate a Merchant Token](./unlinking-merchanttoken.md)
   Invalidate a merchant token associated with your merchant identifier, making it invalid for future transaction authorizations.
-- [object MerchantTokenUnlinkRequest](merchanttokenunlinkrequest.md)
+- [object MerchantTokenUnlinkRequest](./merchanttokenunlinkrequest.md)
   The request body you use to invalidate a merchant token.
 ### Error handling
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   Information about errors that the API returns in the response body whenever an API request is unsuccessful.
 ### Dictionaries
-- [object MerchantMetadata](merchantmetadata.md)
+- [object MerchantMetadata](./merchantmetadata.md)
   The metadata of the merchant that updated on the server.
-- [object MerchantTokenUsageMetadata](merchanttokenusagemetadata.md)
+- [object MerchantTokenUsageMetadata](./merchanttokenusagemetadata.md)
   Metadata about where and how to retrieve the latest usage information.
-- [object RetrieveMerchantTokenPublicKeyRequest](retrievemerchanttokenpublickeyrequest.md)
+- [object RetrieveMerchantTokenPublicKeyRequest](./retrievemerchanttokenpublickeyrequest.md)
   Get the merchant token public key request.
-- [object RetrieveMerchantTokenPublicKeyResponse](retrievemerchanttokenpublickeyresponse.md)
+- [object RetrieveMerchantTokenPublicKeyResponse](./retrievemerchanttokenpublickeyresponse.md)
   Get the merchant token public key response.
-- [object UpdateMerchantMetadataRequest](updatemerchantmetadatarequest.md)
+- [object UpdateMerchantMetadataRequest](./updatemerchantmetadatarequest.md)
   Update the merchant token’s notification metadata.
 
 

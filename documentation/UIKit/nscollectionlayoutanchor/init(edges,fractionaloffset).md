@@ -1,7 +1,8 @@
 # init(edges:fractionalOffset:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an anchor with the specified edges to attach to, offset by the provided fractional value.
 
@@ -18,11 +19,16 @@ Creates an anchor with the specified edges to attach to, offset by the provided 
 convenience init(edges: NSDirectionalRectEdge, fractionalOffset: CGPoint)
 ```
 
+```objc
++ (instancetype) layoutAnchorWithEdges:(NSDirectionalRectEdge) edges fractionalOffset:(CGPoint) fractionalOffset;
+```
+
 ## See Also
 
-- [convenience init(edges: NSDirectionalRectEdge)](nscollectionlayoutanchor/init(edges:).md)
+### Creating an anchor
+- [convenience init(edges: NSDirectionalRectEdge)](./init%28edges%29.md)
   Creates an anchor with the specified edges to attach to.
-- [convenience init(edges: NSDirectionalRectEdge, absoluteOffset: CGPoint)](nscollectionlayoutanchor/init(edges:absoluteoffset:).md)
+- [convenience init(edges: NSDirectionalRectEdge, absoluteOffset: CGPoint)](./init%28edges,absoluteoffset%29.md)
   Creates an anchor with the specified edges to attach to, offset by the provided absolute value.
 
 

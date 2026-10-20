@@ -1,7 +1,8 @@
 # VZEFISignature.x509Certificate(_:)
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 27.0+

@@ -1,6 +1,7 @@
 # Xcode 14.2 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -16,7 +17,9 @@ Xcode 14.2 includes Swift 5.7 and SDKs for iOS 16.2, iPadOS 16.2, tvOS 16.1, wat
 
 ###### Known Issues
 
-- Localized strings from an AppIntent may not display properly in Shortcuts or Focus filter settings when the source app is in a folder other than `/Applications`. (102341465) **Workaround**: Move the app to the `/Applications` folder and restart Settings or Shortcuts.
+- Localized strings from an AppIntent may not display properly in Shortcuts or Focus filter settings when the source app is in a folder other than `/Applications`. (102341465)
+
+  **Workaround**: Move the app to the `/Applications` folder and restart Settings or Shortcuts.
 
 ##### Previews
 
@@ -26,15 +29,16 @@ Xcode 14.2 includes Swift 5.7 and SDKs for iOS 16.2, iPadOS 16.2, tvOS 16.1, wat
 
 ## See Also
 
-- [Xcode 14.3.1 Release Notes](xcode-14_3_1-release-notes.md)
+### Xcode 14
+- [Xcode 14.3.1 Release Notes](./xcode-14_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.3 Release Notes](xcode-14_3-release-notes.md)
+- [Xcode 14.3 Release Notes](./xcode-14_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.1 Release Notes](xcode-14_1-release-notes.md)
+- [Xcode 14.1 Release Notes](./xcode-14_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.0.1 Release Notes](xcode-14_0_1-release-notes.md)
+- [Xcode 14.0.1 Release Notes](./xcode-14_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14 Release Notes](xcode-14-release-notes.md)
+- [Xcode 14 Release Notes](./xcode-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -7,7 +7,7 @@ The handleClose method destroys the shared input and output queues.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleClose(
  IOService *forClient, 
  IOOptionBits options );
@@ -19,7 +19,8 @@ virtual void handleClose(
 
 ## See Also
 
-- [handleOpen](iostream/1809688-handleopen.md)
+### Opening and closing streams
+- [handleOpen](./api-1809688-handleopen.md)
   The handleOpen() method relies on the default IOService behavior to ensure that only one client has the stream open at a time. The shared input and output queues are created at open time.
 
 

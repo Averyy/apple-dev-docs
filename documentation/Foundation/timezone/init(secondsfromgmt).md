@@ -1,7 +1,8 @@
 # init(secondsFromGMT:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a time zone initialized with a specific number of seconds from GMT.
 
@@ -34,9 +35,10 @@ Time zones created with this never have daylight savings and the offset is const
 
 ## See Also
 
-- [static var knownTimeZoneIdentifiers: [String]](timezone/knowntimezoneidentifiers.md)
+### Creating a Time Zone
+- [static var knownTimeZoneIdentifiers: [String]](./knowntimezoneidentifiers.md)
   Returns an array of strings listing the identifier of all the time zones known to the system.
-- [static var abbreviationDictionary: [String : String]](timezone/abbreviationdictionary.md)
+- [static var abbreviationDictionary: [String : String]](./abbreviationdictionary.md)
   Returns the mapping of abbreviations to time zone identifiers.
 
 

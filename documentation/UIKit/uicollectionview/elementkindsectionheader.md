@@ -1,7 +1,8 @@
 # elementKindSectionHeader
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A supplementary view that identifies the header for a given section.
 
@@ -9,7 +10,7 @@ A supplementary view that identifies the header for a given section.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ A supplementary view that identifies the header for a given section.
 class let elementKindSectionHeader: String
 ```
 
+```c
+extern NSString * const UICollectionElementKindSectionHeader;
+```
+
 ## See Also
 
-- [UICollectionView.ElementCategory](uicollectionview/elementcategory.md)
+### Identifying collection view elements
+- [UICollectionView.ElementCategory](./elementcategory.md)
   Constants specifying the type of view.
-- [class let elementKindSectionFooter: String](uicollectionview/elementkindsectionfooter.md)
+- [class let elementKindSectionFooter: String](./elementkindsectionfooter.md)
   A supplementary view that identifies the footer for a given section.
 
 

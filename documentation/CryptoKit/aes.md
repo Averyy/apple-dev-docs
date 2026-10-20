@@ -1,7 +1,8 @@
 # AES
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A container for Advanced Encryption Standard (AES) ciphers.
 
@@ -23,21 +24,22 @@ enum AES
 ## Topics
 
 ### AES modes
-- [enum GCM](aes/gcm.md)
+- [enum GCM](./aes/gcm.md)
   The Advanced Encryption Standard (AES) Galois Counter Mode (GCM) cipher suite.
 ### AES wrappers
-- [enum KeyWrap](aes/keywrap.md)
+- [enum KeyWrap](./aes/keywrap.md)
   An implementation of AES Key Wrapping in accordance with the IETF RFC 3394 specification.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ChaChaPoly](chachapoly.md)
+### Ciphers
+- [enum ChaChaPoly](./chachapoly.md)
   An implementation of the ChaCha20-Poly1305 cipher.
 
 

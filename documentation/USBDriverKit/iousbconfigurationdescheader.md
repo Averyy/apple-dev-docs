@@ -1,7 +1,8 @@
 # IOUSBConfigurationDescHeader
 
 **Framework**: USBDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The header of a configuration descriptor.
 
@@ -10,7 +11,7 @@ The header of a configuration descriptor.
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBConfigurationDescHeader;
 ```
 
@@ -21,15 +22,16 @@ Use this method to get the total length of the descriptor. See “USB 2.0 9.6.3:
 ## Topics
 
 ### Accessing the Descriptor Properties
-- [bLength](iousbconfigurationdescheader/blength.md)
-- [bDescriptorType](iousbconfigurationdescheader/bdescriptortype.md)
-- [wTotalLength](iousbconfigurationdescheader/wtotallength.md)
+- [bLength](./iousbconfigurationdescheader/blength.md)
+- [bDescriptorType](./iousbconfigurationdescheader/bdescriptortype.md)
+- [wTotalLength](./iousbconfigurationdescheader/wtotallength.md)
 
 ## See Also
 
-- [IOUSBConfigurationDescriptor](iousbconfigurationdescriptor.md)
+### Configuration Descriptors
+- [IOUSBConfigurationDescriptor](./iousbconfigurationdescriptor.md)
   The structure for storing a USB configuration descriptor.
-- [Power Configuration Settings](power_configuration_settings-enum.md)
+- [Power Configuration Settings](./power_configuration_settings-enum.md)
   Constants for configuring the power settings.
 
 

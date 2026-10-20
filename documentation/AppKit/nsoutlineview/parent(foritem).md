@@ -1,17 +1,22 @@
 # parent(forItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the parent for a given item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func parent(forItem item: Any?) -> Any?
+```
+
+```objc
+- (id) parentForItem:(id) item;
 ```
 
 #### Return Value
@@ -24,11 +29,12 @@ The parent for `item`, or `nil` if the parent is the root.
 
 ## See Also
 
-- [func childIndex(forItem: Any) -> Int](nsoutlineview/childindex(foritem:).md)
+### Getting Related Items
+- [func childIndex(forItem: Any) -> Int](./childindex%28foritem%29.md)
   Returns the child index of the specified item within its parent.
-- [func child(Int, ofItem: Any?) -> Any?](nsoutlineview/child(_:ofitem:).md)
+- [func child(Int, ofItem: Any?) -> Any?](./child%28_,ofitem%29.md)
   Returns the specified child of an item.
-- [func numberOfChildren(ofItem: Any?) -> Int](nsoutlineview/numberofchildren(ofitem:).md)
+- [func numberOfChildren(ofItem: Any?) -> Int](./numberofchildren%28ofitem%29.md)
   Returns the number of children for the specified parent item.
 
 

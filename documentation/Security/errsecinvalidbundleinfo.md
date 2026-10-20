@@ -1,7 +1,8 @@
 # errSecInvalidBundleInfo
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The bundle information is not valid.
 
@@ -18,6 +19,10 @@ The bundle information is not valid.
 
 ```swift
 var errSecInvalidBundleInfo: OSStatus { get }
+```
+
+```c
+errSecInvalidBundleInfo
 ```
 
 

@@ -1,7 +1,8 @@
 # init(fuelMass:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for fuel mass.
 
@@ -16,6 +17,10 @@ Creates additional route information for fuel mass.
 convenience init(fuelMass: Measurement<UnitMass>)
 ```
 
+```objc
++ (instancetype) routeDetailWithFuelMass:(NSMeasurement<NSUnitMass *> *) fuelMass;
+```
+
 #### Return Value
 
 A new @c CPRouteDetail instance representing the fuel mass
@@ -28,8 +33,10 @@ CNG and similar compressed gas systems often measure fuel in mass units rather t
 
 ## Parameters
 
-- `fuelMass`: A measurement representing the fuel mass using @c NSUnitMass. Common units: - @c NSUnitMass.kilograms for compressed natural gas
-- @c NSUnitMass.pounds for CNG in regions using imperial units
+- `fuelMass`: A measurement representing the fuel mass using @c NSUnitMass. Common units:
+
+  - @c NSUnitMass.kilograms for compressed natural gas
+  - @c NSUnitMass.pounds for CNG in regions using imperial units
 
 
 ---

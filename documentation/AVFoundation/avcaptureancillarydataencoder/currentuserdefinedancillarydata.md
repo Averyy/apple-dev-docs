@@ -1,7 +1,8 @@
 # currentUserDefinedAncillaryData
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This is a representation of the user defined anacillary data.
 
@@ -18,15 +19,19 @@ This is a representation of the user defined anacillary data.
 var currentUserDefinedAncillaryData: [AVCaptureAncillaryDataUserKey : Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * currentUserDefinedAncillaryData;
+```
+
 #### Discussion
 
-Using SMPTE 291 and SMPTE RDD 18 standards for user-defined data, this property specifies the user-defined ancillary data to be sent with every frame in [`AVCaptureBroadcastVideoOutput`](avcapturebroadcastvideooutput.md).  The dictionary will contain a NSUUID the [`rdd18InstanceUID`](avcaptureancillarydatauserkey/rdd18instanceuid.md) key, a uint16_t for the [`rdd18UDAMSetVersion`](avcaptureancillarydatauserkey/rdd18udamsetversion.md) key and a dictionary for the [`rdd18UserItems`](avcaptureancillarydatauserkey/rdd18useritems.md). The [`rdd18UserItems`](avcaptureancillarydatauserkey/rdd18useritems.md) will contain keys of the user tag and with the corresponding values.
+Using SMPTE 291 and SMPTE RDD 18 standards for user-defined data, this property specifies the user-defined ancillary data to be sent with every frame in [`AVCaptureBroadcastVideoOutput`](../avcapturebroadcastvideooutput.md).  The dictionary will contain a NSUUID the [`rdd18InstanceUID`](../avcaptureancillarydatauserkey/rdd18instanceuid.md) key, a uint16_t for the [`rdd18UDAMSetVersion`](../avcaptureancillarydatauserkey/rdd18udamsetversion.md) key and a dictionary for the [`rdd18UserItems`](../avcaptureancillarydatauserkey/rdd18useritems.md). The [`rdd18UserItems`](../avcaptureancillarydatauserkey/rdd18useritems.md) will contain keys of the user tag and with the corresponding values.
 
 To update the data please see the following methods:
 
-- `setUserInstanceUID:userUdamVersion:` will update the [`rdd18InstanceUID`](avcaptureancillarydatauserkey/rdd18instanceuid.md) and [`rdd18UDAMSetVersion`](avcaptureancillarydatauserkey/rdd18udamsetversion.md) keys
-- [`setRDD18AncillaryData(_:forTag:)`](avcaptureancillarydataencoder/setrdd18ancillarydata(_:fortag:).md)  will update the [`rdd18UserItems`](avcaptureancillarydatauserkey/rdd18useritems.md) key
-- [`setRDD18AncillaryDataString(_:forTag:)`](avcaptureancillarydataencoder/setrdd18ancillarydatastring(_:fortag:).md) will update the [`rdd18UserItems`](avcaptureancillarydatauserkey/rdd18useritems.md) key
+- `setUserInstanceUID:userUdamVersion:` will update the [`rdd18InstanceUID`](../avcaptureancillarydatauserkey/rdd18instanceuid.md) and [`rdd18UDAMSetVersion`](../avcaptureancillarydatauserkey/rdd18udamsetversion.md) keys
+- [`setRDD18AncillaryData(_:forTag:)`](./setrdd18ancillarydata%28_,fortag%29.md)  will update the [`rdd18UserItems`](../avcaptureancillarydatauserkey/rdd18useritems.md) key
+- [`setRDD18AncillaryDataString(_:forTag:)`](./setrdd18ancillarydatastring%28_,fortag%29.md) will update the [`rdd18UserItems`](../avcaptureancillarydatauserkey/rdd18useritems.md) key
 
 
 ---

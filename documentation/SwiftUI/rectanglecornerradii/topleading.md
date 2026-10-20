@@ -1,7 +1,8 @@
 # topLeading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of the top-leading corner.
 
@@ -23,11 +24,12 @@ var topLeading: CGFloat { get set }
 
 ## See Also
 
-- [var topTrailing: CGFloat](rectanglecornerradii/toptrailing.md)
+### Getting values for specific corners
+- [var topTrailing: CGFloat](./toptrailing.md)
   The radius of the top-trailing corner.
-- [var bottomLeading: CGFloat](rectanglecornerradii/bottomleading.md)
+- [var bottomLeading: CGFloat](./bottomleading.md)
   The radius of the bottom-leading corner.
-- [var bottomTrailing: CGFloat](rectanglecornerradii/bottomtrailing.md)
+- [var bottomTrailing: CGFloat](./bottomtrailing.md)
   The radius of the bottom-trailing corner.
 
 

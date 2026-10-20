@@ -1,7 +1,8 @@
 # hitEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that was hit by the character controller.
 
@@ -11,7 +12,7 @@ The entity that was hit by the character controller.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

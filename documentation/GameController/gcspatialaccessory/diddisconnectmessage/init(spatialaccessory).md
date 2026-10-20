@@ -1,7 +1,8 @@
 # init(spatialAccessory:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 27.0+

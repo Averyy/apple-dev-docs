@@ -1,7 +1,8 @@
 # lineBreakMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode for breaking lines in the paragraph that don’t fit within a container.
 
@@ -14,25 +15,30 @@ The mode for breaking lines in the paragraph that don’t fit within a container
 var lineBreakMode: NSLineBreakMode { get }
 ```
 
+```objc
+@property (readonly) NSLineBreakMode lineBreakMode;
+```
+
 #### Discussion
 
-This property controls how the text system lays out lines that don’t fit in its container, such as by truncating with an ellipsis (…) or clipping the text. This is different from [`NSParagraphStyle.LineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.struct.md), which controls where the system places line breaks in a paragraph.
+This property controls how the text system lays out lines that don’t fit in its container, such as by truncating with an ellipsis (…) or clipping the text. This is different from [`NSParagraphStyle.LineBreakStrategy`](./linebreakstrategy-swift.struct.md), which controls where the system places line breaks in a paragraph.
 
 ## See Also
 
-- [enum NSLineBreakMode](nslinebreakmode.md)
+### Getting line-break information
+- [enum NSLineBreakMode](../nslinebreakmode.md)
   Constants that specify what happens when a line is too long for a container.
-- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.property.md)
+- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](./linebreakstrategy-swift.property.md)
   The strategy for breaking lines while laying out paragraphs.
-- [NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.struct.md)
+- [NSParagraphStyle.LineBreakStrategy](./linebreakstrategy-swift.struct.md)
   Constants that specify how the text system breaks lines while laying out paragraphs.
-- [var hyphenationFactor: Float](nsparagraphstyle/hyphenationfactor.md)
+- [var hyphenationFactor: Float](./hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
-- [var usesDefaultHyphenation: Bool](nsparagraphstyle/usesdefaulthyphenation.md)
+- [var usesDefaultHyphenation: Bool](./usesdefaulthyphenation.md)
   A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
-- [var tighteningFactorForTruncation: Float](nsparagraphstyle/tighteningfactorfortruncation.md)
+- [var tighteningFactorForTruncation: Float](./tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
-- [var allowsDefaultTighteningForTruncation: Bool](nsparagraphstyle/allowsdefaulttighteningfortruncation.md)
+- [var allowsDefaultTighteningForTruncation: Bool](./allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens character spacing before truncating text.
 
 

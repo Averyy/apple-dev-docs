@@ -1,6 +1,7 @@
 # Creating a Floating Caption
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Position a caption in the wide right margin of your article.
 
@@ -8,20 +9,20 @@ Position a caption in the wide right margin of your article.
 
 Apple News Format makes it easy to create side-by-side content, such as a caption that floats next to the article body. On sufficiently wide displays, News automatically lays out such a caption in the article margin; on narrower displays, News automatically stacks the caption with other article content.
 
-![Screenshot of an Apple News article with a floating caption on iPad.](/images/com.apple.applenews/media-3624920@2x.png)
+![Screenshot of an Apple News article with a floating caption on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624920@2x.png)
 
 **On this page, you’ll learn how to create a caption that appears in the right margin of the article on wide displays.**
 
-##### Create a Componentlayout Object for the Floating Caption
+##### Create a ComponentLayout Object for the Floating Caption
 
 Before you can position the caption in the right margin, you must define a component layout object that specifies that the caption will begin in column 7 of the article layout and span three columns.
 
-1. Copy the example code [`sideCaptionLayout: Copy This Code`](creating-a-floating-caption#sideCaptionLayout-Copy-This-Code.md).
+1. Copy the example code [sideCaptionLayout: Copy This Code](./creating-a-floating-caption.md#sideCaptionLayout-Copy-This-Code).
 2. Paste the code between the closing brace (`}`) of the last `ComponentLayout` object and the closing brace for the whole `componentLayouts` property.
 
-Your code should look like the example code [`sideCaptionLayout: Result`](creating-a-floating-caption#sideCaptionLayout-Result.md).
+Your code should look like the example code [sideCaptionLayout: Result](./creating-a-floating-caption.md#sideCaptionLayout-Result).
 
-###### Sidecaptionlayout Copy This Code
+###### sideCaptionLayout: Copy This Code
 
 ```json
 ,
@@ -34,7 +35,7 @@ Your code should look like the example code [`sideCaptionLayout: Result`](creati
     }
 ```
 
-###### Sidecaptionlayout Result
+###### sideCaptionLayout: Result
 
 ```json
 {
@@ -58,13 +59,13 @@ Your code should look like the example code [`sideCaptionLayout: Result`](creati
 On wide displays, when you anchor a caption to the article body, the caption’s top edge will be aligned with the body’s top edge; on narrower displays, the caption will be stacked above the body.
 
 1. Delete the `caption` component and its parent container from your header. The code you’re deleting begins with the comma and opening brace (,`{`) before `"role": "container",` and ends with a mix of three alternating braces and brackets, and a comma (`}]}`).
-2. Copy the example code [`Caption: Copy This Code`](creating-a-floating-caption#Caption-Copy-This-Code.md).
+2. Copy the example code [Caption: Copy This Code](./creating-a-floating-caption.md#Caption-Copy-This-Code).
 3. Paste the code inside your article’s second section, before the opening brace (`{`) of the `body` component whose text begins with `Nam libero tempore`.
-4. Inside the `body` component whose text begins with `Nam libero tempore`, add an `identifier` property with a value of `"body1"`, as shown in the example code [`Caption: Result`](creating-a-floating-caption#Caption-Result.md).
+4. Inside the `body` component whose text begins with `Nam libero tempore`, add an `identifier` property with a value of `"body1"`, as shown in the example code [Caption: Result](./creating-a-floating-caption.md#Caption-Result).
 
 After you make these changes in your `article.json` file, you can preview your working `article.json` file in News Preview to see the floating caption.
 
-###### Caption Copy This Code
+###### Caption: Copy This Code
 
 ```json
         {
@@ -86,7 +87,7 @@ After you make these changes in your `article.json` file, you can preview your w
         },
 ```
 
-###### Caption Result
+###### Caption: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -135,43 +136,45 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ##### Previous
 
-[`Creating a Complex, Layered Header`](creating-a-complex-layered-header.md)
+[Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)
 
 ##### Next
 
-[`Creating an Inset Pull Quote`](creating-an-inset-pull-quote.md)
+[Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md)
 
 ## See Also
 
-- [Planning the Layout for Your Article](planning-the-layout-for-your-article.md)
+### Related Documentation
+- [Planning the Layout for Your Article](./planning-the-layout-for-your-article.md)
   Define a layout that supports the look you want for your article.
-- [Positioning the Content in Your Article](positioning-the-content-in-your-article.md)
+- [Positioning the Content in Your Article](./positioning-the-content-in-your-article.md)
   Align article components with columns in your layout.
-- [Wrapping Text Around a Component](wrapping-text-around-a-component.md)
+- [Wrapping Text Around a Component](./wrapping-text-around-a-component.md)
   Define the layout of a text component to wrap around another component.
-- [Nesting Components in an Article](nesting-components-in-an-article.md)
+- [Nesting Components in an Article](./nesting-components-in-an-article.md)
   Use container components to create the component hierarchies you need for special article designs.
-- [object Caption](../applenewsformat/caption.md)
+- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
   The component for adding caption text.
-- [object Layout](../applenewsformat/layout.md)
+- [object Layout](https://developer.apple.com/documentation/applenewsformat/layout)
   The object for defining columns, gutters, and margins for your article’s designed width.
-- [object ComponentLayout](../applenewsformat/componentlayout.md)
+- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
   The object for defining the positioning for a specific component within the article’s column system.
-- [object Anchor](../applenewsformat/anchor.md)
+- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
   The object for anchoring one component to another component in your article’s layout.
-- [Creating a Complex, Layered Header](creating-a-complex-layered-header.md)
+### Advanced Design Tutorial 2: Layout and Positioning
+- [Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)
   Layer a title and heading in front of an image, with their colors optimized for legibility.
-- [Creating an Inset Pull Quote](creating-an-inset-pull-quote.md)
+- [Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md)
   Wrap article body text around an inset pull quote.
-- [Creating an Inset Photo](creating-an-inset-photo.md)
+- [Creating an Inset Photo](./creating-an-inset-photo.md)
   Wrap article body text around an inset photo.
-- [Adding Color to Text Ranges](adding-color-to-text-ranges.md)
+- [Adding Color to Text Ranges](./adding-color-to-text-ranges.md)
   Create text in color by using HTML to refer to TextStyle objects.
-- [Adding Animations](adding-animations.md)
+- [Adding Animations](./adding-animations.md)
   Use animations to affect how parts of your article come into view the first time they appear.
-- [Adding a Scene](adding-a-scene.md)
+- [Adding a Scene](./adding-a-scene.md)
   Control how the article’s opening section comes into view.
-- [Viewing the Finished Article for Advanced Design Tutorial 2](viewing-the-finished-article-for-advanced-design-tutorial-2.md)
+- [Viewing the Finished Article for Advanced Design Tutorial 2](./viewing-the-finished-article-for-advanced-design-tutorial-2.md)
   See the full JSON code from this tutorial.
 
 

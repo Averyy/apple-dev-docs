@@ -1,7 +1,8 @@
 # size
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the item.
 
@@ -9,7 +10,7 @@ The size of the item.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,27 +19,32 @@ The size of the item.
 var size: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize size;
+```
+
 #### Discussion
 
-Setting the value of this property also changes the size of the rectangle returned by the [`frame`](uicollectionviewlayoutattributes/frame.md) and [`bounds`](uicollectionviewlayoutattributes/bounds.md) properties.
+Setting the value of this property also changes the size of the rectangle returned by the [`frame`](./frame.md) and [`bounds`](./bounds.md) properties.
 
 ## See Also
 
-- [var frame: CGRect](uicollectionviewlayoutattributes/frame.md)
+### Accessing the layout attributes
+- [var frame: CGRect](./frame.md)
   The frame rectangle of the item.
-- [var bounds: CGRect](uicollectionviewlayoutattributes/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The bounds of the item.
-- [var center: CGPoint](uicollectionviewlayoutattributes/center.md)
+- [var center: CGPoint](./center.md)
   The center point of the item.
-- [var transform3D: CATransform3D](uicollectionviewlayoutattributes/transform3d.md)
+- [var transform3D: CATransform3D](./transform3d.md)
   The 3D transform of the item.
-- [var transform: CGAffineTransform](uicollectionviewlayoutattributes/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The affine transform of the item.
-- [var alpha: CGFloat](uicollectionviewlayoutattributes/alpha.md)
+- [var alpha: CGFloat](./alpha.md)
   The transparency of the item.
-- [var zIndex: Int](uicollectionviewlayoutattributes/zindex.md)
+- [var zIndex: Int](./zindex.md)
   Specifies the item’s position on the z axis.
-- [var isHidden: Bool](uicollectionviewlayoutattributes/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   Determines whether the item is currently displayed.
 
 

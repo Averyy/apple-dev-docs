@@ -1,7 +1,8 @@
 # rateDidChangeOriginatingParticipantKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key to retrieve the identifier of the participant that originates the rate change.
 
@@ -19,15 +20,20 @@ A key to retrieve the identifier of the participant that originates the rate cha
 class let rateDidChangeOriginatingParticipantKey: String
 ```
 
+```c
+extern NSString * const AVPlayerRateDidChangeOriginatingParticipantKey;
+```
+
 #### Discussion
 
-The associated value is a UUID of a participant in the playback coordinator’s [`otherParticipants`](avplaybackcoordinator/otherparticipants.md) array.
+The associated value is a UUID of a participant in the playback coordinator’s [`otherParticipants`](../avplaybackcoordinator/otherparticipants.md) array.
 
 ## See Also
 
-- [class let rateDidChangeReasonKey: String](avplayer/ratedidchangereasonkey.md)
+### User information keys
+- [class let rateDidChangeReasonKey: String](./ratedidchangereasonkey.md)
   A key to retrieve the reason for the rate change.
-- [AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason.md)
+- [AVPlayer.RateDidChangeReason](./ratedidchangereason.md)
   A structure that represents a rate change reason.
 
 

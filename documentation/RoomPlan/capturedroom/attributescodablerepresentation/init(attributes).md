@@ -1,7 +1,8 @@
 # init(attributes:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributes codable representation with the given collection of object attributes.
 
@@ -22,7 +23,8 @@ init(attributes: [any CapturedRoomAttribute])
 
 ## See Also
 
-- [init(from: any Decoder) throws](capturedroom/attributescodablerepresentation/init(from:).md)
+### Creating an attributes codable representation
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Deserializes an attributes codable representation from the given decoder.
 
 

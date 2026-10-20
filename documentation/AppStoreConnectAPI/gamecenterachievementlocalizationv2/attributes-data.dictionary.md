@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Game Center achievement localization v2 resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Game Center achievement localization v2 resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationV2.Attributes
 ```
 
@@ -30,7 +31,8 @@ object GameCenterAchievementLocalizationV2.Attributes
 
 ## See Also
 
-- [object GameCenterAchievementLocalizationV2.Relationships](gamecenterachievementlocalizationv2/relationships-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementLocalizationV2.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

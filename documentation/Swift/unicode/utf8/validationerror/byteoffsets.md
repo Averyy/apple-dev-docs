@@ -1,7 +1,8 @@
 # byteOffsets
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of offsets into our input containing the error
 

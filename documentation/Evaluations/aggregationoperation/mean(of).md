@@ -1,7 +1,8 @@
 # AggregationOperation.mean(of:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The arithmetic mean of the metric’s values.
 

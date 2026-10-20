@@ -1,7 +1,8 @@
 # roi(forInput:arguments:outputRect:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Override this class method to implement your processor’s ROI callback.
 
@@ -19,6 +20,10 @@ Override this class method to implement your processor’s ROI callback.
 class func roi(forInput inputIndex: Int32, arguments: [String : Any]?, outputRect: CGRect) -> CGRect
 ```
 
+```objc
++ (CGRect) roiForInput:(int) inputIndex arguments:(NSDictionary<NSString *,id> *) arguments outputRect:(CGRect) outputRect;
+```
+
 #### Return Value
 
  The `CGRect` of the `inputIndex`th input that is required for the above `outputRect`
@@ -29,23 +34,24 @@ This will be called one or more times per render to determine what portion of th
 
 The default implementation would return outputRect.
 
-> ❗ **Important**: This is a class method so that you cannot use or capture any state by accident. All the parameters that affect the output results must be passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
+> ❗ **Important**: This is a class method so that you cannot use or capture any state by accident. All the parameters that affect the output results must be passed to [`apply(withExtent:inputs:arguments:)`](./apply%28withextent,inputs,arguments%29.md).
 
 ## Parameters
 
 - `inputIndex`: The index that tells you which processor input for which to return the ROI rectangle.
-- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
+- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](./apply%28withextent,inputs,arguments%29.md).
 - `outputRect`: The output `CGRect` that processor will be asked to output.
 
 ## See Also
 
-- [class func apply(withExtent: CGRect, inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md)
+### Type Methods
+- [class func apply(withExtent: CGRect, inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](./apply%28withextent,inputs,arguments%29.md)
   Call this method on your Core Image Processor Kernel subclass to create a new image of the specified extent.
-- [class func formatForInput(at: Int32) -> CIFormat](ciimageprocessorkernel/formatforinput(at:).md)
+- [class func formatForInput(at: Int32) -> CIFormat](./formatforinput%28at%29.md)
   Override this class method if you want your any of the inputs to be in a specific pixel format.
-- [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, output: any CIImageProcessorOutput) throws](ciimageprocessorkernel/process(with:arguments:output:).md)
+- [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, output: any CIImageProcessorOutput) throws](./process%28with,arguments,output%29.md)
   Override this class method to implement your Core Image Processor Kernel subclass.
-- [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](ciimageprocessorkernel/roitilearray(forinput:arguments:outputrect:).md)
+- [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](./roitilearray%28forinput,arguments,outputrect%29.md)
   Override this class method to implement your processor’s tiled ROI callback.
 
 

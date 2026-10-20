@@ -1,7 +1,8 @@
 # UIListSeparatorConfiguration.Visibility
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the visibility of list separators.
 
@@ -9,7 +10,7 @@ Constants that define the visibility of list separators.
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,24 +21,25 @@ enum Visibility
 ## Topics
 
 ### Constants
-- [UIListSeparatorConfiguration.Visibility.automatic](uilistseparatorconfiguration-swift.struct/visibility/automatic.md)
+- [UIListSeparatorConfiguration.Visibility.automatic](./visibility/automatic.md)
   The collection view list section automatically determines the visibility of the separator.
-- [UIListSeparatorConfiguration.Visibility.hidden](uilistseparatorconfiguration-swift.struct/visibility/hidden.md)
+- [UIListSeparatorConfiguration.Visibility.hidden](./visibility/hidden.md)
   The list separator is hidden.
-- [UIListSeparatorConfiguration.Visibility.visible](uilistseparatorconfiguration-swift.struct/visibility/visible.md)
+- [UIListSeparatorConfiguration.Visibility.visible](./visibility/visible.md)
   The list separator is visible.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var topSeparatorVisibility: UIListSeparatorConfiguration.Visibility](uilistseparatorconfiguration-swift.struct/topseparatorvisibility.md)
+### Controlling separator visibility
+- [var topSeparatorVisibility: UIListSeparatorConfiguration.Visibility](./topseparatorvisibility.md)
   The visibility of the top separator for the item the configuration applies to.
-- [var bottomSeparatorVisibility: UIListSeparatorConfiguration.Visibility](uilistseparatorconfiguration-swift.struct/bottomseparatorvisibility.md)
+- [var bottomSeparatorVisibility: UIListSeparatorConfiguration.Visibility](./bottomseparatorvisibility.md)
   The visibility of the bottom separator for the item the configuration applies to.
 
 

@@ -1,6 +1,7 @@
 # Reducing spectral leakage with windowing
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Multiply signal data by window sequence values when performing transforms with noninteger period signals.
 
@@ -12,7 +13,7 @@ However, with noninteger period signals, where the endpoints don’t meet, the d
 
 You can use an approach called windowing to reduce spectral leakage when performing transforms over data that includes noninteger period signals. *Windowing* multiplies a signal by a vector that represents a smooth curve with boundary values of zero or near zero. This technique ensures that the endpoints of a signal meet and reduces the discontinuities.
 
-##### Synthesize a Test Signal
+##### Synthesize a test signal
 
 The code examples in this article synthesize the signal data from a series of sine waves. In a real-world app, you’ll most likely acquire signal data from a sensor such as a microphone.
 
@@ -34,7 +35,7 @@ static func synthesizeSignal(frequencyAmplitudePairs: [(f: Float, a: Float)],
 }
 ```
 
-##### Create a Signal with an Integer Number of Periods
+##### Create a signal with an integer number of periods
 
 Using the code below, generate  a Fourier series approximation of a square wave that’s built from a series of sine waves. Each component sine wave has an integer number of periods over the length of the data.
 
@@ -82,21 +83,21 @@ realParts.withUnsafeMutableBufferPointer { realPtr in
 }
 ```
 
-To learn more about computing the frequency components of a signal, see [`Finding the component frequencies in a composite sine wave`](finding-the-component-frequencies-in-a-composite-sine-wave.md).
+To learn more about computing the frequency components of a signal, see [Finding the component frequencies in a composite sine wave](./finding-the-component-frequencies-in-a-composite-sine-wave.md).
 
 The FFT treats the data set as a single period of a continuous signal. The visualization below wraps the signal around a virtual cylinder to illustrate how the FFT interprets the data. This figure also shows that the endpoints meet:
 
-![A diagram showing a square wave wrapped around a cylinder. The signal’s endpoints meet.](/images/com.apple.accelerate/media-3375140@2x.png)
+![A diagram showing a square wave wrapped around a cylinder. The signal’s endpoints meet.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375140@2x.png)
 
 The illustration below shows a representation of the original signal in blue, and the imaginary parts of the frequency-domain data in yellow:
 
-![A diagram showing a square wave and its frequency domain representation. The frequency domain consists of 25 discrete peaks that represent the 25 component sine waves.](/images/com.apple.accelerate/media-3375147@2x.png)
+![A diagram showing a square wave and its frequency domain representation. The frequency domain consists of 25 discrete peaks that represent the 25 component sine waves.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375147@2x.png)
 
 > **Note**:  The visualizations of the frequency-domain data in this article are transformed to improve visibility. Each visualization is actually the square root of the absolute value of each element of `imagParts`.
 
 The FFT result shows that the signal is composed of 25 sine waves, represented as spikes in the graph.
 
-##### Create a Signal with a Noninteger Number of Periods
+##### Create a signal with a noninteger number of periods
 
 Use the code below to define a series of sine waves with noninteger periods:
 
@@ -115,15 +116,15 @@ var signal = synthesizeSignal(frequencyAmplitudePairs: frequencyAmplitudePairs,
 
 The visualization below wraps the noninteger-period signal around a virtual cylinder and shows the endpoint discontinuities:
 
-![A diagram showing a square wave wrapped around a cylinder. The signal’s endpoints do not meet.](/images/com.apple.accelerate/media-3375141@2x.png)
+![A diagram showing a square wave wrapped around a cylinder. The signal’s endpoints do not meet.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375141@2x.png)
 
 The image below shows the results of a transform of this data. The results shows additional, intermediate values that are the result of spectral leakage.
 
-![A diagram showing a square wave and its frequency domain representation. The frequency domain peaks are smeared across the component frequencies.](/images/com.apple.accelerate/media-3375145@2x.png)
+![A diagram showing a square wave and its frequency domain representation. The frequency domain peaks are smeared across the component frequencies.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375145@2x.png)
 
-##### Create a Windowed Signal with a Noninteger Number of Periods
+##### Create a windowed signal with a noninteger number of periods
 
-The code below shows the same noninteger period signal, but in this example, you multiply the signal by the result of [`window(ofType:usingSequence:count:isHalfWindow:)`](vdsp/window(oftype:usingsequence:count:ishalfwindow:).md):
+The code below shows the same noninteger period signal, but in this example, you multiply the signal by the result of [`window(ofType:usingSequence:count:isHalfWindow:)`](./vdsp/window%28oftype,usingsequence,count,ishalfwindow%29.md):
 
 ```swift
 let n = 2048
@@ -147,9 +148,9 @@ signal = vDSP.multiply(signal, window)
 
 The illustration below shows the windowed signal in blue, with its boundaries tapered toward zero, and the transformed version with reduced spectral leakage in yellow:
 
-![A diagram showing a square wave and its frequency domain representation. The square wave is tapered toward the boundaries and the smearing of frequencies is reduced.](/images/com.apple.accelerate/media-3375148@2x.png)
+![A diagram showing a square wave and its frequency domain representation. The square wave is tapered toward the boundaries and the smearing of frequencies is reduced.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375148@2x.png)
 
-##### Select a Window Sequence
+##### Select a window sequence
 
 vDSP provides functions for generating three different windows:
 
@@ -159,9 +160,9 @@ vDSP provides functions for generating three different windows:
 
 The image below provides a visual comparison of the different window sequence types:
 
-![Diagram showing the curves generated by Hamming, Hann, and Blackman window functions.](/images/com.apple.accelerate/media-3379482@2x.png)
+![Diagram showing the curves generated by Hamming, Hann, and Blackman window functions.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3379482@2x.png)
 
-##### Create a Sine Wave with a Noninteger Period
+##### Create a sine wave with a noninteger period
 
 To understand the different effects of the different windows provided by vDSP, create a signal that’s composed of a signal sine wave with a noninteger period:
 
@@ -171,51 +172,52 @@ let frequencyAmplitudePairs = [(f: Float(32.25), a: Float(1))]
 
 The illustration below shows the sine wave and the frequency-domain result:
 
-![A diagram showing a sine wave and its frequency domain representation. The frequency domain representation shows a main central peak that’s surrounded by peaks that decrease toward the edges.](/images/com.apple.accelerate/media-3375146@2x.png)
+![A diagram showing a sine wave and its frequency domain representation. The frequency domain representation shows a main central peak that’s surrounded by peaks that decrease toward the edges.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375146@2x.png)
 
 Spectral leakage is apparent throughout the rendered FFT result.
 
-##### Reduce the Spectral Leakage By Using a Hann Window
+##### Reduce the spectral leakage by using a Hann window
 
 The illustration below shows the time- and frequency-domain representations of the noninteger period sine wave with the Hann window applied:
 
-![A diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that’s surrounded by peaks that rapidly decrease toward the edges.](/images/com.apple.accelerate/media-3375143@2x.png)
+![A diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that’s surrounded by peaks that rapidly decrease toward the edges.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375143@2x.png)
 
-##### Reduce the Spectral Leakage By Using a Hamming Window
+##### Reduce the spectral leakage by using a Hamming window
 
-Create a Hamming window by passing [`vDSP.WindowSequence.hamming`](vdsp/windowsequence/hamming.md) to the [`window(ofType:usingSequence:count:isHalfWindow:)`](vdsp/window(oftype:usingsequence:count:ishalfwindow:).md) function. Unlike the Hann window, the Hamming window doesn’t reach zero at its boundaries.
+Create a Hamming window by passing [`vDSP.WindowSequence.hamming`](./vdsp/windowsequence/hamming.md) to the [`window(ofType:usingSequence:count:isHalfWindow:)`](./vdsp/window%28oftype,usingsequence,count,ishalfwindow%29.md) function. Unlike the Hann window, the Hamming window doesn’t reach zero at its boundaries.
 
 The figure below shows the result of multiplying the signal by a Hamming window: high values around the base frequency in the forward FFT are tighter than the Hann-windowed result, but there’s low-level spectral leakage across the entire forward FFT:
 
-![A diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that’s surrounded by peaks that rapidly decrease toward the edges.](/images/com.apple.accelerate/media-3375142@2x.png)
+![A diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that’s surrounded by peaks that rapidly decrease toward the edges.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375142@2x.png)
 
-##### Reduce the Spectral Leakage By Using a Blackman Window
+##### Reduce the spectral leakage by using a Blackman window
 
-Create a Blackman window by passing [`vDSP.WindowSequence.blackman`](vdsp/windowsequence/blackman.md) to the [`window(ofType:usingSequence:count:isHalfWindow:)`](vdsp/window(oftype:usingsequence:count:ishalfwindow:).md) function.
+Create a Blackman window by passing [`vDSP.WindowSequence.blackman`](./vdsp/windowsequence/blackman.md) to the [`window(ofType:usingSequence:count:isHalfWindow:)`](./vdsp/window%28oftype,usingsequence,count,ishalfwindow%29.md) function.
 
 The illustration below shows the time- and frequency-domain representations of the noninteger period sine wave with the Blackman window applied:
 
-![A diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that’s surrounded by peaks that rapidly decrease toward the edges.](/images/com.apple.accelerate/media-3375144@2x.png)
+![A diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that’s surrounded by peaks that rapidly decrease toward the edges.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3375144@2x.png)
 
 ## See Also
 
-- [Understanding data packing for Fourier transforms](understanding-data-packing-for-fourier-transforms.md)
+### Fourier and Cosine Transforms
+- [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md)
   Format source data for the vDSP Fourier functions, and interpret the results.
-- [Finding the component frequencies in a composite sine wave](finding-the-component-frequencies-in-a-composite-sine-wave.md)
+- [Finding the component frequencies in a composite sine wave](./finding-the-component-frequencies-in-a-composite-sine-wave.md)
   Use 1D fast Fourier transform to compute the frequency components of a signal.
-- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
+- [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
   Optimize discrete Fourier transform (DFT) performance with the vDSP interleaved DFT routines.
-- [Signal extraction from noise](signal-extraction-from-noise.md)
+- [Signal extraction from noise](./signal-extraction-from-noise.md)
   Use Accelerate’s discrete cosine transform to remove noise from a signal.
-- [Performing Fourier Transforms on Multiple Signals](performing-fourier-transforms-on-multiple-signals.md)
+- [Performing Fourier Transforms on Multiple Signals](./performing-fourier-transforms-on-multiple-signals.md)
   Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call.
-- [Halftone descreening with 2D fast Fourier transform](halftone-descreening-with-2d-fast-fourier-transform.md)
+- [Halftone descreening with 2D fast Fourier transform](./halftone-descreening-with-2d-fast-fourier-transform.md)
   Reduce or remove periodic artifacts from images.
-- [Fast Fourier transforms](fast-fourier-transforms.md)
+- [Fast Fourier transforms](./fast-fourier-transforms.md)
   Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Fourier transforms](discrete-fourier-transforms.md)
+- [Discrete Fourier transforms](./discrete-fourier-transforms.md)
   Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Cosine transforms](discrete-cosine-transforms.md)
+- [Discrete Cosine transforms](./discrete-cosine-transforms.md)
   Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa.
 
 

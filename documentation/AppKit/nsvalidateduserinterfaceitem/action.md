@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the selector of the receiver’s action method.
@@ -16,14 +17,20 @@ Returns the selector of the receiver’s action method.
 var action: Selector? { get }
 ```
 
+```objc
+@property (readonly, nullable) SEL action;
+```
+
 #### Return Value
 
 The selector of the receiver’s action method.
 
 ## See Also
 
-- [User Interface Validation](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UIValidation/UIValidation.html#//apple_ref/doc/uid/10000040i)
-- [var tag: Int](nsvalidateduserinterfaceitem/tag.md)
+### Related Documentation
+- [User Interface Validation](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UIValidation/UIValidation.html#//apple_ref/doc/uid/10000040i)
+### Getting information about a user interface item
+- [var tag: Int](./tag.md)
   Returns the receiver’s tag integer.
 
 

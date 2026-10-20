@@ -1,7 +1,8 @@
 # MTLTensorAuxiliaryPlaneDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for an auxiliary plane in a multi-plane tensor.
 
@@ -19,30 +20,34 @@ A configuration for an auxiliary plane in a multi-plane tensor.
 class MTLTensorAuxiliaryPlaneDescriptor
 ```
 
+```objc
+@interface MTLTensorAuxiliaryPlaneDescriptor : NSObject
+```
+
 #### Overview
 
-Use this descriptor to configure an auxiliary plane’s data type and block factors before attaching it to a [`MTLTensorDescriptor`](mtltensordescriptor.md).
+Use this descriptor to configure an auxiliary plane’s data type and block factors before attaching it to a [`MTLTensorDescriptor`](./mtltensordescriptor.md).
 
 ## Topics
 
 ### Instance Properties
-- [var blockFactors: MTLTensorExtents](mtltensorauxiliaryplanedescriptor/blockfactors.md)
+- [var blockFactors: MTLTensorExtents](./mtltensorauxiliaryplanedescriptor/blockfactors.md)
   An extents instance that represents the number of data plane elements which correspond to one element in a plane you create with this descriptor.
-- [var dataType: MTLTensorDataType](mtltensorauxiliaryplanedescriptor/datatype.md)
+- [var dataType: MTLTensorDataType](./mtltensorauxiliaryplanedescriptor/datatype.md)
   The data format of all elements in the plane.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,11 +1,12 @@
 # AccelerateBuffer Implementations
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var count: Int](vimage/pixelbuffer/count.md)
+- [var count: Int](./count.md)
   The total number of pixels multiplied by the number of channels in the buffer, including any row padding.
 
 

@@ -1,7 +1,8 @@
 # whiteNoise
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An estimate of the white noise of the sensor.
 
@@ -18,15 +19,16 @@ let whiteNoise: Double
 
 #### Discussion
 
-This value represents the white noise variance estimate per Hz in the [`normalizedReflectance`](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md) signal (Normalized Units²/Hz). Apply the noise equivalent bandwidth factor to account for in-band noise for your setup.
+This value represents the white noise variance estimate per Hz in the [`normalizedReflectance`](../normalizedreflectance-15f2k.md) signal (Normalized Units²/Hz). Apply the noise equivalent bandwidth factor to account for in-band noise for your setup.
 
 ## See Also
 
-- [let pinkNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/pinknoise.md)
+### Accessing noise terms
+- [let pinkNoise: Double](./pinknoise.md)
   An estimate of the pink noise of the sensor.
-- [let backgroundNoise: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.md)
+- [let backgroundNoise: Double](./backgroundnoise.md)
   An estimated timeseries of ambient noise intrusion.
-- [let backgroundNoiseOffset: Double](srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoiseoffset.md)
+- [let backgroundNoiseOffset: Double](./backgroundnoiseoffset.md)
   The white noise variance estimate in the background noise signal.
 
 

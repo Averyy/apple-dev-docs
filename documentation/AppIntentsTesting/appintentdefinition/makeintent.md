@@ -1,7 +1,8 @@
 # makeIntent
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Creates a populated instance of this intent.
 
@@ -22,7 +23,7 @@ var makeIntent: IntentValuePropertiesCallable<AnyAppIntent> { get }
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 #### Discussion
 

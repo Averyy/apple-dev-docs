@@ -1,7 +1,8 @@
 # search
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Defines a submit label with text of “Search”.
 
@@ -22,21 +23,22 @@ static var search: SubmitLabel { get }
 
 ## See Also
 
-- [static var `continue`: SubmitLabel](submitlabel/continue.md)
+### Getting submission labels
+- [static var `continue`: SubmitLabel](./continue.md)
   Defines a submit label with text of “Continue”.
-- [static var done: SubmitLabel](submitlabel/done.md)
+- [static var done: SubmitLabel](./done.md)
   Defines a submit label with text of “Done”.
-- [static var go: SubmitLabel](submitlabel/go.md)
+- [static var go: SubmitLabel](./go.md)
   Defines a submit label with text of “Go”.
-- [static var join: SubmitLabel](submitlabel/join.md)
+- [static var join: SubmitLabel](./join.md)
   Defines a submit label with text of “Join”.
-- [static var next: SubmitLabel](submitlabel/next.md)
+- [static var next: SubmitLabel](./next.md)
   Defines a submit label with text of “Next”.
-- [static var `return`: SubmitLabel](submitlabel/return.md)
+- [static var `return`: SubmitLabel](./return.md)
   Defines a submit label with text of “Return”.
-- [static var route: SubmitLabel](submitlabel/route.md)
+- [static var route: SubmitLabel](./route.md)
   Defines a submit label with text of “Route”.
-- [static var send: SubmitLabel](submitlabel/send.md)
+- [static var send: SubmitLabel](./send.md)
   Defines a submit label with text of “Send”.
 
 

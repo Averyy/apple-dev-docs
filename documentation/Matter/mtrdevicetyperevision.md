@@ -1,7 +1,8 @@
 # MTRDeviceTypeRevision
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,38 +19,42 @@
 class MTRDeviceTypeRevision
 ```
 
+```objc
+@interface MTRDeviceTypeRevision : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(deviceTypeID: NSNumber, revision: NSNumber)](mtrdevicetyperevision/init(devicetypeid:revision:).md)
-- [init?(deviceTypeStruct: MTRDescriptorClusterDeviceTypeStruct)](mtrdevicetyperevision/init(devicetypestruct:).md)
+- [init?(deviceTypeID: NSNumber, revision: NSNumber)](./mtrdevicetyperevision/init%28devicetypeid,revision%29.md)
+- [init?(deviceTypeStruct: MTRDescriptorClusterDeviceTypeStruct)](./mtrdevicetyperevision/init%28devicetypestruct%29.md)
   Initializes the receiver based on the values in the specified struct.
 ### Instance Properties
-- [var deviceTypeID: NSNumber](mtrdevicetyperevision/devicetypeid.md)
-- [var deviceTypeRevision: NSNumber](mtrdevicetyperevision/devicetyperevision.md)
-- [var typeInformation: MTRDeviceType?](mtrdevicetyperevision/typeinformation.md)
+- [var deviceTypeID: NSNumber](./mtrdevicetyperevision/devicetypeid.md)
+- [var deviceTypeRevision: NSNumber](./mtrdevicetyperevision/devicetyperevision.md)
+- [var typeInformation: MTRDeviceType?](./mtrdevicetyperevision/typeinformation.md)
   Returns the MTRDeviceType corresponding to deviceTypeID, or nil if deviceTypeID does not represent a known device type.
 ### Default Implementations
-- [MTRDeviceTypeRevision Implementations](mtrdevicetyperevision/mtrdevicetyperevision-implementations.md)
+- [MTRDeviceTypeRevision Implementations](./mtrdevicetyperevision/mtrdevicetyperevision-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

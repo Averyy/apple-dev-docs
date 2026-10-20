@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 
@@ -31,9 +32,10 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 
 ## See Also
 
-- [static func != (borrowing Self, borrowing Self) -> Bool](unicode/scalar/!=(_:_:).md)
+### Comparing Scalars
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func < (Unicode.Scalar, Unicode.Scalar) -> Bool](unicode/scalar/_(_:_:).md)
+- [static func < (Unicode.Scalar, Unicode.Scalar) -> Bool](./op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 
 

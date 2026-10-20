@@ -1,7 +1,8 @@
 # NSFetchedResultsChangeType.update
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that an object was changed.
 
@@ -10,7 +11,7 @@ Specifies that an object was changed.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Specifies that an object was changed.
 case update
 ```
 
+```c
+NSFetchedResultsChangeUpdate
+```
+
 ## See Also
 
-- [NSFetchedResultsChangeType.insert](nsfetchedresultschangetype/insert.md)
+### Constants
+- [NSFetchedResultsChangeType.insert](./insert.md)
   Specifies that an object was inserted.
-- [NSFetchedResultsChangeType.delete](nsfetchedresultschangetype/delete.md)
+- [NSFetchedResultsChangeType.delete](./delete.md)
   Specifies that an object was deleted.
-- [NSFetchedResultsChangeType.move](nsfetchedresultschangetype/move.md)
+- [NSFetchedResultsChangeType.move](./move.md)
   Specifies that an object was moved.
 
 

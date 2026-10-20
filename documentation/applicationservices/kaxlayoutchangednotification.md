@@ -1,7 +1,8 @@
 # kAXLayoutChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that the layout changed.
 
@@ -12,6 +13,10 @@ Notification that the layout changed.
 
 ```swift
 var kAXLayoutChangedNotification: String { get }
+```
+
+```c
+#define kAXLayoutChangedNotification
 ```
 
 

@@ -1,7 +1,8 @@
 # average
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average measurement value.
 
@@ -19,9 +20,10 @@ let average: Measurement<DimensionType>
 
 ## See Also
 
-- [let count: Int](averagestatistics/count.md)
+### Statistics
+- [let count: Int](./count.md)
   The number of samples used to calculate the average.
-- [let standardDeviation: Double?](averagestatistics/standarddeviation.md)
+- [let standardDeviation: Double?](./standarddeviation.md)
   The standard deviation of the distribution of values used to calculate the average.
 
 

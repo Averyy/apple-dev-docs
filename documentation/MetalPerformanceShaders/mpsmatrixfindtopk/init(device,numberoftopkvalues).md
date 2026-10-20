@@ -1,7 +1,8 @@
 # init(device:numberOfTopKValues:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, numberOfTopKValues: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device numberOfTopKValues:(NSUInteger) numberOfTopKValues;
 ```
 
 

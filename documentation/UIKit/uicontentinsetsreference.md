@@ -1,7 +1,8 @@
 # UIContentInsetsReference
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the reference point of the content insets.
 
@@ -18,43 +19,48 @@ Constants that describe the reference point of the content insets.
 enum UIContentInsetsReference
 ```
 
+```c
+enum UIContentInsetsReference : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIContentInsetsReference.automatic](uicontentinsetsreference/automatic.md)
+- [UIContentInsetsReference.automatic](./uicontentinsetsreference/automatic.md)
   Content insets use the system default reference point.
-- [UIContentInsetsReference.none](uicontentinsetsreference/none.md)
+- [UIContentInsetsReference.none](./uicontentinsetsreference/none.md)
   Content insets don’t have a reference point in relation to other insets.
-- [UIContentInsetsReference.safeArea](uicontentinsetsreference/safearea.md)
+- [UIContentInsetsReference.safeArea](./uicontentinsetsreference/safearea.md)
   Content insets use a reference point in relation to the safe area.
-- [UIContentInsetsReference.layoutMargins](uicontentinsetsreference/layoutmargins.md)
+- [UIContentInsetsReference.layoutMargins](./uicontentinsetsreference/layoutmargins.md)
   Content insets use a reference point in relation to the layout margins.
-- [UIContentInsetsReference.readableContent](uicontentinsetsreference/readablecontent.md)
+- [UIContentInsetsReference.readableContent](./uicontentinsetsreference/readablecontent.md)
   Content insets use a reference point in relation to the readable content guide.
 ### Initializers
-- [init?(rawValue: Int)](uicontentinsetsreference/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uicontentinsetsreference/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var interGroupSpacing: CGFloat](nscollectionlayoutsection/intergroupspacing.md)
+### Configuring section spacing
+- [var interGroupSpacing: CGFloat](./nscollectionlayoutsection/intergroupspacing.md)
   The amount of space between the groups in the section.
-- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutsection/contentinsets.md)
+- [var contentInsets: NSDirectionalEdgeInsets](./nscollectionlayoutsection/contentinsets.md)
   The amount of space between the content of the section and its boundaries.
-- [var contentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/contentinsetsreference.md)
+- [var contentInsetsReference: UIContentInsetsReference](./nscollectionlayoutsection/contentinsetsreference.md)
   The boundary to reference when defining content insets.
-- [var supplementaryContentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/supplementarycontentinsetsreference.md)
+- [var supplementaryContentInsetsReference: UIContentInsetsReference](./nscollectionlayoutsection/supplementarycontentinsetsreference.md)
   The reference boundary for content insets on boundary supplementary items.
-- [var supplementariesFollowContentInsets: Bool](nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
+- [var supplementariesFollowContentInsets: Bool](./nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
   A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 
 

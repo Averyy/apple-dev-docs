@@ -1,7 +1,8 @@
 # components
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The component system’s list of components.
 
@@ -19,23 +20,28 @@ The component system’s list of components.
 var components: [ComponentType] { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) NSArray<GKComponent *> * components;
+```
+
 #### Discussion
 
 Calling a method of the system’s component class forwards that message to every component in this array.
 
-Important among component-specific messages is the [`update(deltaTime:)`](gkcomponentsystem/update(deltatime:).md) method—call this method on a component system to perform per-frame updates for all the component instances it manages.
+Important among component-specific messages is the [`update(deltaTime:)`](./update%28deltatime%29.md) method—call this method on a component system to perform per-frame updates for all the component instances it manages.
 
 ## See Also
 
-- [var componentClass: AnyClass](gkcomponentsystem/componentclass.md)
+### Managing a List of Components
+- [var componentClass: AnyClass](./componentclass.md)
   The class of components managed by the component system.
-- [func addComponent(ComponentType)](gkcomponentsystem/addcomponent(_:).md)
+- [func addComponent(ComponentType)](./addcomponent%28_%29.md)
   Adds a component instance to the component system.
-- [func addComponent(foundIn: GKEntity)](gkcomponentsystem/addcomponent(foundin:).md)
+- [func addComponent(foundIn: GKEntity)](./addcomponent%28foundin%29.md)
   Adds any instances of the component system’s component class in the specified entity to the component system.
-- [func removeComponent(ComponentType)](gkcomponentsystem/removecomponent(_:).md)
+- [func removeComponent(ComponentType)](./removecomponent%28_%29.md)
   Removes the specified component instance from the component system.
-- [func removeComponent(foundIn: GKEntity)](gkcomponentsystem/removecomponent(foundin:).md)
+- [func removeComponent(foundIn: GKEntity)](./removecomponent%28foundin%29.md)
   Removes any instances of the component system’s component class in the specified entity from the component system.
 
 

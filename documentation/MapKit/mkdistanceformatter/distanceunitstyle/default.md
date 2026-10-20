@@ -1,7 +1,8 @@
 # MKDistanceFormatter.DistanceUnitStyle.default
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Bases the determination to abbreviate on the current locale and user language settings.
 
@@ -20,15 +21,20 @@ Bases the determination to abbreviate on the current locale and user language se
 case `default`
 ```
 
+```c
+MKDistanceFormatterUnitStyleDefault
+```
+
 ## See Also
 
-- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](mkdistanceformatter/distanceunitstyle/abbreviated.md)
+### Constants
+- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](./abbreviated.md)
   Abbreviates units.
-- [MKDistanceFormatter.DistanceUnitStyle.full](mkdistanceformatter/distanceunitstyle/full.md)
+- [MKDistanceFormatter.DistanceUnitStyle.full](./full.md)
   Spells out units in full.
-- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](mkdistanceformatter/distanceunitstyle/abbreviated.md)
+- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](./abbreviated.md)
   Abbreviates units.
-- [MKDistanceFormatter.DistanceUnitStyle.full](mkdistanceformatter/distanceunitstyle/full.md)
+- [MKDistanceFormatter.DistanceUnitStyle.full](./full.md)
   Spells out units in full.
 
 

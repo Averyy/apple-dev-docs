@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.2+
@@ -14,7 +15,8 @@ init()
 
 ## See Also
 
-- [init(streaming_sve_mode_enabled: Bool, za_storage_enabled: Bool)](hv_vcpu_sme_state_t/init(streaming_sve_mode_enabled:za_storage_enabled:).md)
+### Initializers
+- [init(streaming_sve_mode_enabled: Bool, za_storage_enabled: Bool)](./init%28streaming_sve_mode_enabled,za_storage_enabled%29.md)
 
 
 ---

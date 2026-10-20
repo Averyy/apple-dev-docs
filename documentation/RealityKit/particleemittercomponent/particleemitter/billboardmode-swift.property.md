@@ -1,7 +1,8 @@
 # billboardMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode defining whether and how particles orient towards the camera. Defaults to `billboardYAligned`.
 

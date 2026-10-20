@@ -1,7 +1,8 @@
 # PTChannelTransmitRequestSource
 
 **Framework**: Push to Talk  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies the type that indicates the transmission request source.
 
@@ -16,41 +17,46 @@ Identifies the type that indicates the transmission request source.
 enum PTChannelTransmitRequestSource
 ```
 
+```c
+enum PTChannelTransmitRequestSource : NSInteger;
+```
+
 ## Topics
 
 ### Transmission sources
-- [PTChannelTransmitRequestSource.userRequest](ptchanneltransmitrequestsource/userrequest.md)
+- [PTChannelTransmitRequestSource.userRequest](./ptchanneltransmitrequestsource/userrequest.md)
   A transmission request that indicates the user pressed the transmit button in the system user interface.
-- [PTChannelTransmitRequestSource.developerRequest](ptchanneltransmitrequestsource/developerrequest.md)
+- [PTChannelTransmitRequestSource.developerRequest](./ptchanneltransmitrequestsource/developerrequest.md)
   A transmission request that indicates the app calls the begin transmission method.
-- [PTChannelTransmitRequestSource.handsfreeButton](ptchanneltransmitrequestsource/handsfreebutton.md)
+- [PTChannelTransmitRequestSource.handsfreeButton](./ptchanneltransmitrequestsource/handsfreebutton.md)
   A transmission request that indicates a user pressed a button on a hands-free device.
-- [PTChannelTransmitRequestSource.unknown](ptchanneltransmitrequestsource/unknown.md)
+- [PTChannelTransmitRequestSource.unknown](./ptchanneltransmitrequestsource/unknown.md)
   A transmission request that indicates an unknown reason.
 ### Initializers
-- [init?(rawValue: Int)](ptchanneltransmitrequestsource/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ptchanneltransmitrequestsource/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol PTChannelManagerDelegate](ptchannelmanagerdelegate.md)
+### Channel management
+- [protocol PTChannelManagerDelegate](./ptchannelmanagerdelegate.md)
   A type that represents your life cycle of a channel manager.
-- [enum PTTransmissionMode](pttransmissionmode.md)
+- [enum PTTransmissionMode](./pttransmissionmode.md)
   Identifies the type of audio transmission modes.
-- [enum PTServiceStatus](ptservicestatus.md)
+- [enum PTServiceStatus](./ptservicestatus.md)
   Identifies the type that indicates the status of the service.
-- [enum PTChannelJoinReason](ptchanneljoinreason.md)
+- [enum PTChannelJoinReason](./ptchanneljoinreason.md)
   Identifies the type that indicates the join reason.
-- [enum PTChannelLeaveReason](ptchannelleavereason.md)
+- [enum PTChannelLeaveReason](./ptchannelleavereason.md)
   Identifies the type that indicates the leave reason.
 
 

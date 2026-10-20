@@ -1,15 +1,16 @@
 # textAlignment
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of the caption text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@ The alignment of the caption text.
 var textAlignment: AVCaption.TextAlignment { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AVCaptionTextAlignment textAlignment;
+```
+
 ## See Also
 
-- [AVCaption.TextAlignment](avcaption/textalignment-swift.enum.md)
+### Configuring alignment
+- [AVCaption.TextAlignment](../avcaption/textalignment-swift.enum.md)
   Text alignment options for a caption.
 
 

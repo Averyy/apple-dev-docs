@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_Ogg_4_0
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kAudioChannelLayoutTag_Ogg_4_0: AudioChannelLayoutTag { get }
+```
+
+```c
+kAudioChannelLayoutTag_Ogg_4_0
 ```
 
 

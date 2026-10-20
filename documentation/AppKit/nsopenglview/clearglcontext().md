@@ -1,12 +1,15 @@
 # clearGLContext()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Releases the [`NSOpenGLContext`](nsopenglcontext.md) object associated with the view.
+Releases the [`NSOpenGLContext`](../nsopenglcontext.md) object associated with the view.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
@@ -14,16 +17,21 @@ Releases the [`NSOpenGLContext`](nsopenglcontext.md) object associated with the 
 func clearGLContext()
 ```
 
+```objc
+- (void) clearGLContext;
+```
+
 #### Discussion
 
-If necessary, this method calls the [`clearDrawable()`](nsopenglcontext/cleardrawable().md) method of the context object before releasing it.
+If necessary, this method calls the [`clearDrawable()`](../nsopenglcontext/cleardrawable%28%29.md) method of the context object before releasing it.
 
 ## See Also
 
-- [func prepareOpenGL()](nsopenglview/prepareopengl.md)
+### Managing the NSOpenGLContext
+- [func prepareOpenGL()](./prepareopengl%28%29.md)
   Used by subclasses to initialize OpenGL state.
-- [var openGLContext: NSOpenGLContext?](nsopenglview/openglcontext.md)
-  The [`NSOpenGLContext`](nsopenglcontext.md) object associated with the receiver.
+- [var openGLContext: NSOpenGLContext?](./openglcontext.md)
+  The [`NSOpenGLContext`](../nsopenglcontext.md) object associated with the receiver.
 
 
 ---

@@ -1,7 +1,8 @@
 # hoverPose
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location and distance of an Apple Pencil hovering in the area above the view’s bounds when the double-tap gesture occurred.
 

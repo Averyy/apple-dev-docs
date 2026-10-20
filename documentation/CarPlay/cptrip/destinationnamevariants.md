@@ -1,19 +1,24 @@
 # destinationNameVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that represents the names of the destination for this trip, arranged from most to least preferred.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
+- iOS 17.4+ - Deprecated in 27.0
+- iPadOS 17.4+ - Deprecated in 27.0
+- Mac Catalyst 17.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 var destinationNameVariants: [String]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * destinationNameVariants;
 ```
 
 #### Discussion
@@ -22,7 +27,8 @@ You need to provide at least one variant. Present the variant strings as localiz
 
 ## See Also
 
-- [var routeChoices: [CPRouteChoice]](cptrip/routechoices.md)
+### Getting Route Choices
+- [var routeChoices: [CPRouteChoice]](./routechoices.md)
   The list of route choices for the trip.
 
 

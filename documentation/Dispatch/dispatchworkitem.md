@@ -1,7 +1,8 @@
 # DispatchWorkItem
 
 **Framework**: Dispatch  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
 
@@ -10,9 +11,9 @@ The work you want to perform, encapsulated in a way that lets you attach a compl
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,55 +23,56 @@ class DispatchWorkItem
 
 #### Overview
 
-A [`DispatchWorkItem`](dispatchworkitem.md) encapsulates work to be performed on a dispatch queue or within a dispatch group. You can also use a work item as a [`DispatchSource`](dispatchsource.md) event, registration, or cancellation handler.
+A [`DispatchWorkItem`](./dispatchworkitem.md) encapsulates work to be performed on a dispatch queue or within a dispatch group. You can also use a work item as a [`DispatchSource`](./dispatchsource.md) event, registration, or cancellation handler.
 
 ## Topics
 
 ### Creating a Work Item
-- [init(qos: DispatchQoS, flags: DispatchWorkItemFlags, block: () -> Void)](dispatchworkitem/init(qos:flags:block:).md)
+- [init(qos: DispatchQoS, flags: DispatchWorkItemFlags, block: () -> Void)](./dispatchworkitem/init%28qos,flags,block%29.md)
   Creates a new dispatch work item from an existing block and assigns it the specified quality-of-service class.
-- [struct DispatchWorkItemFlags](dispatchworkitemflags.md)
+- [struct DispatchWorkItemFlags](./dispatchworkitemflags.md)
   A set of behaviors for a work item, such as its quality-of-service class and whether to create a barrier or spawn a new detached thread.
 ### Executing the Work Item
-- [func perform()](dispatchworkitem/perform.md)
+- [func perform()](./dispatchworkitem/perform%28%29.md)
   Executes the work item’s block synchronously on the current thread.
 ### Adding a Completion Handler
-- [func notify(queue: DispatchQueue, execute: DispatchWorkItem)](dispatchworkitem/notify(queue:execute:).md)
+- [func notify(queue: DispatchQueue, execute: DispatchWorkItem)](./dispatchworkitem/notify%28queue,execute%29.md)
   Schedules the execution of the specified work item after the completion of the current work item.
-- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](dispatchworkitem/notify(qos:flags:queue:execute:).md)
+- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](./dispatchworkitem/notify%28qos,flags,queue,execute%29.md)
   Schedules the execution of the specified work item, with the specified quality-of-service, after the completion of the current work item.
 ### Waiting for the Completion of a Work Item
-- [func wait()](dispatchworkitem/wait.md)
+- [func wait()](./dispatchworkitem/wait%28%29.md)
   Causes the caller to wait synchronously until the dispatch work item finishes executing.
-- [func wait(timeout: DispatchTime) -> DispatchTimeoutResult](dispatchworkitem/wait(timeout:).md)
+- [func wait(timeout: DispatchTime) -> DispatchTimeoutResult](./dispatchworkitem/wait%28timeout%29.md)
   Causes the caller to wait synchronously until the dispatch work item finishes executing, or until the specified time elapses.
-- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](dispatchworkitem/wait(walltimeout:).md)
+- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](./dispatchworkitem/wait%28walltimeout%29.md)
   Causes the caller to wait synchronously until the dispatch work item finishes executing, or until the specified time elapses.
-- [struct DispatchTime](dispatchtime.md)
+- [struct DispatchTime](./dispatchtime.md)
   A point in time relative to the default clock, with nanosecond precision.
-- [struct DispatchWallTime](dispatchwalltime.md)
+- [struct DispatchWallTime](./dispatchwalltime.md)
   An absolute point in time according to the wall clock, with microsecond precision.
 ### Canceling a Work Item
-- [func cancel()](dispatchworkitem/cancel.md)
+- [func cancel()](./dispatchworkitem/cancel%28%29.md)
   Cancels the current work item asynchronously.
-- [var isCancelled: Bool](dispatchworkitem/iscancelled.md)
+- [var isCancelled: Bool](./dispatchworkitem/iscancelled.md)
   A Boolean value indicating whether the work item has been canceled.
 ### Initializers
-- [init(flags: DispatchWorkItemFlags, block: () -> Void)](dispatchworkitem/init(flags:block:).md)
+- [init(flags: DispatchWorkItemFlags, block: () -> Void)](./dispatchworkitem/init%28flags,block%29.md)
 
 ## See Also
 
-- [class DispatchQueue](dispatchqueue.md)
+### Queues and Tasks
+- [class DispatchQueue](./dispatchqueue.md)
   An object that manages the execution of tasks serially or concurrently on your app’s main thread or on a background thread.
-- [class DispatchGroup](dispatchgroup.md)
+- [class DispatchGroup](./dispatchgroup.md)
   A group of tasks that you monitor as a single unit.
-- [Dispatch Queue](dispatch-queue.md)
+- [Dispatch Queue](./dispatch-queue.md)
   An object that manages the execution of tasks serially or concurrently on your app’s main thread or on a background thread.
-- [Dispatch Work Item](dispatch-work-item.md)
+- [Dispatch Work Item](./dispatch-work-item.md)
   The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
-- [Dispatch Group](dispatch-group.md)
+- [Dispatch Group](./dispatch-group.md)
   A group of tasks that you monitor as a single unit.
-- [Workloop](workloop.md)
+- [Workloop](./workloop.md)
   A dispatch object that prioritizes the execution of tasks based on their quality-of-service (QoS) level.
 
 

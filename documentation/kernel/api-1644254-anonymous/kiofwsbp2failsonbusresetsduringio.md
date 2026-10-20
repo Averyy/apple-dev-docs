@@ -1,14 +1,15 @@
 # kIOFWSBP2FailsOnBusResetsDuringIO
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOFWSBP2FailsOnBusResetsDuringIO = (1 << 1)
 ```
 

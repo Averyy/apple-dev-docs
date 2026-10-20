@@ -1,7 +1,8 @@
 # numberOfCells
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,9 +13,14 @@
 var numberOfCells: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger numberOfCells;
+```
+
 ## See Also
 
-- [var isHidden: Bool](nsgridrow/ishidden.md)
+### Getting the Row Details
+- [var isHidden: Bool](./ishidden.md)
 
 
 ---

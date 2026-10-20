@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells an activity to start recording duration and progress for a task.
 
@@ -18,9 +19,13 @@ Tells an activity to start recording duration and progress for a task.
 func start()
 ```
 
+```objc
+- (void) start;
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 #### Discussion
 
@@ -28,11 +33,12 @@ Beginning in iOS 11.4, you can start more than one activity at a time, each in i
 
 ## See Also
 
-- [func stop()](clsactivity/stop.md)
+### Starting and stopping an activity
+- [func stop()](./stop%28%29.md)
   Tells an activity to stop or pause recording duration and progress for a task.
-- [var isStarted: Bool](clsactivity/isstarted.md)
+- [var isStarted: Bool](./isstarted.md)
   A Boolean that indicates whether an activity is running.
-- [var duration: TimeInterval](clsactivity/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The cumulative time in seconds that an activity has been active.
 
 

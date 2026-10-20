@@ -1,7 +1,8 @@
 # badCPUType
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bad CPU type in executable.
 
@@ -22,7 +23,7 @@ static var badCPUType: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,13 +33,14 @@ The corresponding C error is `EBADARCH`.
 
 ## See Also
 
-- [static var badExecutable: Errno](errno/badexecutable.md)
+### Executable File Errors
+- [static var badExecutable: Errno](./badexecutable.md)
   Bad executable or shared library.
-- [static var execFormatError: Errno](errno/execformaterror.md)
+- [static var execFormatError: Errno](./execformaterror.md)
   Executable format error.
-- [static var malformedMachO: Errno](errno/malformedmacho.md)
+- [static var malformedMachO: Errno](./malformedmacho.md)
   Malformed Mach-O file.
-- [static var sharedLibraryVersionMismatch: Errno](errno/sharedlibraryversionmismatch.md)
+- [static var sharedLibraryVersionMismatch: Errno](./sharedlibraryversionmismatch.md)
   Shared library version mismatch.
 
 

@@ -1,7 +1,8 @@
 # errSecInvalidStopOnPolicy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The stop-on policy is not valid.
 
@@ -18,6 +19,10 @@ The stop-on policy is not valid.
 
 ```swift
 var errSecInvalidStopOnPolicy: OSStatus { get }
+```
+
+```c
+errSecInvalidStopOnPolicy
 ```
 
 

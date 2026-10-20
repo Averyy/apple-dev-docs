@@ -1,7 +1,8 @@
 # appendInterpolation(_:format:align:privacy:attributes:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated double with the specified attributes.
 
@@ -11,7 +12,7 @@ Appends an interpolated double with the specified attributes.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,14 +28,15 @@ mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Double,
 ## Parameters
 
 - `number`: The interpolated double. The system automatically wraps this value in a closure.
-- `format`: The format to apply to the value when the system renders it in a log message. For more information, see [`OSLogFloatFormatting`](oslogfloatformatting.md). The default value is [`fixed`](oslogfloatformatting/fixed.md).
-- `align`: The alignment and minimum number of columns to use when the system renders the value in a log message. For more information, see [`OSLogStringAlignment`](oslogstringalignment.md). The default value is [`none`](oslogstringalignment/none.md).
-- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](oslogprivacy.md). The default value is [`auto`](oslogprivacy/auto.md).
-- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [`Instruments Developer Help`](https://developer.apple.comhttps://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
+- `format`: The format to apply to the value when the system renders it in a log message. For more information, see [`OSLogFloatFormatting`](../oslogfloatformatting.md). The default value is [`fixed`](../oslogfloatformatting/fixed.md).
+- `align`: The alignment and minimum number of columns to use when the system renders the value in a log message. For more information, see [`OSLogStringAlignment`](../oslogstringalignment.md). The default value is [`none`](../oslogstringalignment/none.md).
+- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](../oslogprivacy.md). The default value is [`auto`](../oslogprivacy/auto.md).
+- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [Instruments Developer Help](https://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> Double, format: OSLogFloatFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-6mu00.md)
+### Appending Doubles
+- [func appendInterpolation(@autoclosure () -> Double, format: OSLogFloatFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-6mu00.md)
   Appends an interpolated double.
 
 

@@ -1,7 +1,8 @@
 # transformEnvironment(_:transform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms the environment value of the specified key path with the given function.
 
@@ -23,9 +24,10 @@ func transformEnvironment<V>(_ keyPath: WritableKeyPath<EnvironmentValues, V>, t
 
 ## See Also
 
-- [func environment<T>(T?) -> some Scene](scene/environment(_:).md)
+### Modifying the environment of a scene
+- [func environment<T>(T?) -> some Scene](./environment%28_%29.md)
   Places an observable object in the scene’s environment.
-- [func environment<V>(WritableKeyPath<EnvironmentValues, V>, V) -> some Scene](scene/environment(_:_:).md)
+- [func environment<V>(WritableKeyPath<EnvironmentValues, V>, V) -> some Scene](./environment%28_,_%29.md)
   Sets the environment value of the specified key path to the given value.
 
 

@@ -1,10 +1,11 @@
 # kBluetoothPageScanModeOptional2
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothPageScanModeOptional2: Int { get }
 ```
 
+```c
+kBluetoothPageScanModeOptional2
+```
+
 ## See Also
 
-- [var kBluetoothPageScanModeMandatory: Int](kbluetoothpagescanmodemandatory.md)
-- [var kBluetoothPageScanModeOptional1: Int](kbluetoothpagescanmodeoptional1.md)
-- [var kBluetoothPageScanModeOptional3: Int](kbluetoothpagescanmodeoptional3.md)
+### Constants
+- [var kBluetoothPageScanModeMandatory: Int](./kbluetoothpagescanmodemandatory.md)
+- [var kBluetoothPageScanModeOptional1: Int](./kbluetoothpagescanmodeoptional1.md)
+- [var kBluetoothPageScanModeOptional3: Int](./kbluetoothpagescanmodeoptional3.md)
 
 
 ---

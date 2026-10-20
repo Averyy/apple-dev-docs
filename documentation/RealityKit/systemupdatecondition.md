@@ -1,7 +1,8 @@
 # SystemUpdateCondition
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A condition which causes a system to update.
 
@@ -22,18 +23,19 @@ struct SystemUpdateCondition
 ## Topics
 
 ### Type Properties
-- [static var rendering: SystemUpdateCondition](systemupdatecondition/rendering.md)
+- [static var rendering: SystemUpdateCondition](./systemupdatecondition/rendering.md)
   A condition that is active whenever an update for rendering may be needed, usually matching the refresh rate of the display.
 
 ## See Also
 
-- [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+### System configuration
+- [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md)
   Apply behaviors and physical effects to the objects and characters in a RealityKit scene with the Entity Component System (ECS).
-- [Animating entity rotation with a system](animated-rotation-with-a-system.md)
+- [Animating entity rotation with a system](./animated-rotation-with-a-system.md)
   Rotate an entity around an axis using a Component and a System.
-- [protocol System](system.md)
+- [protocol System](./system.md)
   An object that affects multiple entities in every update of a RealityKit scene.
-- [struct SceneUpdateContext](sceneupdatecontext.md)
+- [struct SceneUpdateContext](./sceneupdatecontext.md)
   An object that contains information about the scene to update.
 
 

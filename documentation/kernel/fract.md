@@ -1,7 +1,8 @@
 # Fract
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Represents a type used by the Compression and Decompression API.
 
@@ -10,7 +11,7 @@ Represents a type used by the Compression and Decompression API.
 
 ## Declaration
 
-```swift
+```c
 typedef UInt32 Fract;
 ```
 

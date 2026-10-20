@@ -1,7 +1,8 @@
 # DockAccessory.Limits.Limit
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of a limit placed on an axis of rotation.
 
@@ -24,18 +25,18 @@ Zero is the default minimum angular speed. Invalid limit specifications include 
 ## Topics
 
 ### Limiting speed and position
-- [let maximumSpeed: Double](dockaccessory/limits-swift.struct/limit/maximumspeed.md)
+- [let maximumSpeed: Double](./limit/maximumspeed.md)
   The maximum speed that the dock accessory moves.
-- [let positionRange: Range<Double>](dockaccessory/limits-swift.struct/limit/positionrange.md)
+- [let positionRange: Range<Double>](./limit/positionrange.md)
   The valid range that the dock accessory moves.
 ### Initializers
-- [init(positionRange: Range<Double>, maximumSpeed: Double) throws](dockaccessory/limits-swift.struct/limit/init(positionrange:maximumspeed:).md)
+- [init(positionRange: Range<Double>, maximumSpeed: Double) throws](./limit/init%28positionrange,maximumspeed%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

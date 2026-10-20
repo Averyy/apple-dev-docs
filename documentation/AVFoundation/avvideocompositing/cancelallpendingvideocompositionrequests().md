@@ -1,7 +1,8 @@
 # cancelAllPendingVideoCompositionRequests()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Directs a custom video compositor object to cancel or finish all pending video composition requests.
 
@@ -19,15 +20,20 @@ Directs a custom video compositor object to cancel or finish all pending video c
 optional func cancelAllPendingVideoCompositionRequests()
 ```
 
+```objc
+- (void) cancelAllPendingVideoCompositionRequests;
+```
+
 #### Discussion
 
-Upon receiving this message, a custom video compositor must block until it has either cancelled all pending frame requests, and called the [`finishCancelledRequest()`](avasynchronousvideocompositionrequest/finishcancelledrequest().md) method for each of them. If cancellation is not possible, the method must block until it has finished processing of all the frames and called the [`finish(withComposedVideoFrame:)`](avasynchronousvideocompositionrequest/finish(withcomposedvideoframe:).md) method for each of them.
+Upon receiving this message, a custom video compositor must block until it has either cancelled all pending frame requests, and called the [`finishCancelledRequest()`](../avasynchronousvideocompositionrequest/finishcancelledrequest%28%29.md) method for each of them. If cancellation is not possible, the method must block until it has finished processing of all the frames and called the [`finish(withComposedVideoFrame:)`](../avasynchronousvideocompositionrequest/finish%28withcomposedvideoframe%29.md) method for each of them.
 
 ## See Also
 
-- [func startRequest(AVAsynchronousVideoCompositionRequest)](avvideocompositing/startrequest(_:).md)
+### Rendering the composition
+- [func startRequest(AVAsynchronousVideoCompositionRequest)](./startrequest%28_%29.md)
   Directs a custom video compositor object to create a new pixel buffer composed asynchronously from a collection of sources.
-- [class AVAsynchronousVideoCompositionRequest](avasynchronousvideocompositionrequest.md)
+- [class AVAsynchronousVideoCompositionRequest](../avasynchronousvideocompositionrequest.md)
   An object that contains information a video compositor needs to render an output pixel buffer.
 
 

@@ -1,7 +1,8 @@
 # searchRules
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A collation used for string search.
 
@@ -28,7 +29,8 @@ Don’t use this collation to determine the relative order of two strings.
 
 ## See Also
 
-- [static let standard: Locale.Collation](locale/collation-swift.struct/standard.md)
+### Using special-purpose collations
+- [static let standard: Locale.Collation](./standard.md)
   A collation that provides the default ordering for each language.
 
 

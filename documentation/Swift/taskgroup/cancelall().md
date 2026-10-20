@@ -1,7 +1,8 @@
 # cancelAll()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancel all of the remaining tasks in the group.
 
@@ -28,13 +29,14 @@ Immediately canceled child tasks should therefore cooperatively check for and re
 
 There are no restrictions on where you can call this method. Code inside a child task or even another task can cancel a group, however one should be very careful to not keep a reference to the group longer than the `with...TaskGroup(...) { ... }` method body is executing.
 
-> **Note**: `Task.isCancelled`
+> **See Also**: `Task.isCancelled`
 
-> **Note**: `TaskGroup.isCancelled`
+> **See Also**: `TaskGroup.isCancelled`
 
 ## See Also
 
-- [var isCancelled: Bool](taskgroup/iscancelled.md)
+### Canceling Tasks
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates whether the group was canceled.
 
 

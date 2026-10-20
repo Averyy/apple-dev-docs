@@ -1,7 +1,8 @@
 # Security Info
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get security-related information about a device.
 
@@ -18,7 +19,7 @@ Get security-related information about a device.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowQuerySecurity |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -88,9 +89,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object SecurityInfoCommand](securityinfocommand.md)
+- [object SecurityInfoCommand](./securityinfocommand.md)
   The command to get security-related information about a device.
-- [object SecurityInfoResponse](securityinforesponse.md)
+- [object SecurityInfoResponse](./securityinforesponse.md)
   A response from the device after it processes the command to get security-related information about a device.
 
 ## Endpoint
@@ -99,17 +100,25 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `SecurityInfoCommand`
+
 The request object the server returns for the Security Info Command.
+
+## Responses
+
+- `200` OK (`SecurityInfoResponse`, `application/xml`): The response object the system returns for the Security Info Command.
 
 ## See Also
 
-- [Certificate List](certificate-list-command.md)
+### Security
+- [Certificate List](./certificate-list-command.md)
   Get a list of installed certificates on a device.
-- [Activation Lock Bypass Code](activation-lock-bypass-code-command.md)
+- [Activation Lock Bypass Code](./activation-lock-bypass-code-command.md)
   Get the code to bypass Activation Lock on a device.
-- [Clear Activation Lock Bypass Code](clear-activation-lock-bypass-code-command.md)
+- [Clear Activation Lock Bypass Code](./clear-activation-lock-bypass-code-command.md)
   Clear the Activation Lock bypass code on a device.
-- [Rotate FileVault Key](rotate-filevault-key-command.md)
+- [Rotate FileVault Key](./rotate-filevault-key-command.md)
   Change the FileVault primary password on a device.
 
 

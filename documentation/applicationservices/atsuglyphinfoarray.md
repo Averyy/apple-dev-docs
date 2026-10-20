@@ -1,7 +1,8 @@
 # ATSUGlyphInfoArray
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,15 +13,21 @@
 struct ATSUGlyphInfoArray
 ```
 
+```c
+typedef struct ATSUGlyphInfoArray {
+    ...
+} ATSUGlyphInfoArray;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsuglyphinfoarray/1459409-init.md)
-- [init(layout: ATSUTextLayout!, numGlyphs: Int, glyphs: ATSUGlyphInfo)](atsuglyphinfoarray/1690599-init.md)
+- [init()](./atsuglyphinfoarray/api-1459409-init.md)
+- [init(layout: ATSUTextLayout!, numGlyphs: Int, glyphs: ATSUGlyphInfo)](./atsuglyphinfoarray/api-1690599-init.md)
 ### Instance Properties
-- [var glyphs: ATSUGlyphInfo](atsuglyphinfoarray/1452027-glyphs.md)
-- [var layout: ATSUTextLayout!](atsuglyphinfoarray/1452037-layout.md)
-- [var numGlyphs: Int](atsuglyphinfoarray/1452089-numglyphs.md)
+- [var glyphs: ATSUGlyphInfo](./atsuglyphinfoarray/api-1452027-glyphs.md)
+- [var layout: ATSUTextLayout!](./atsuglyphinfoarray/api-1452037-layout.md)
+- [var numGlyphs: Int](./atsuglyphinfoarray/api-1452089-numglyphs.md)
 
 
 ---

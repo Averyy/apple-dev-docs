@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of values that indicate whether the browser app has access to a person’s passkeys.
 
@@ -17,33 +18,38 @@ An enumeration of values that indicate whether the browser app has access to a p
 enum AuthorizationState
 ```
 
+```c
+enum ASAuthorizationWebBrowserPublicKeyCredentialManagerAuthorizationState : NSInteger;
+```
+
 ## Topics
 
 ### Passkey access states
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.authorized](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate/authorized.md)
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.authorized](./authorizationstate/authorized.md)
   Someone allows the browser app to use passkeys stored in the keychain, and managed by third-party credential manager apps.
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.denied](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate/denied.md)
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.denied](./authorizationstate/denied.md)
   Someone forbids the browser app to use passkeys stored in the keychain, and managed by third-party credential manager apps.
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.notDetermined](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate/notdetermined.md)
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.notDetermined](./authorizationstate/notdetermined.md)
   The person has yet to choose whether to allow the browser app to access passkeys stored on the keychain, or managed by third-party credential managers.
 ### Initializers
-- [init?(rawValue: Int)](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./authorizationstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var authorizationStateForPlatformCredentials: ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstateforplatformcredentials.md)
+### Requesting access to passkeys
+- [var authorizationStateForPlatformCredentials: ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](./authorizationstateforplatformcredentials.md)
   Returns a value that indicates whether the browser app has access to a person’s passkeys.
-- [func requestAuthorizationForPublicKeyCredentials((ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState) -> Void)](asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_:).md)
+- [func requestAuthorizationForPublicKeyCredentials((ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState) -> Void)](./requestauthorizationforpublickeycredentials%28_%29.md)
   Requests a person’s permission to use their passkeys.
 
 

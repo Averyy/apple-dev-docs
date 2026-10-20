@@ -1,7 +1,8 @@
 # HKCategoryValueOvulationTestResult.indeterminate
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The ovulation test is inconclusive.
 
@@ -19,15 +20,20 @@ The ovulation test is inconclusive.
 case indeterminate
 ```
 
+```c
+HKCategoryValueOvulationTestResultIndeterminate
+```
+
 ## See Also
 
-- [HKCategoryValueOvulationTestResult.negative](hkcategoryvalueovulationtestresult/negative.md)
+### Ovulation Test Results
+- [HKCategoryValueOvulationTestResult.negative](./negative.md)
   The ovulation test is negative.
-- [HKCategoryValueOvulationTestResult.luteinizingHormoneSurge](hkcategoryvalueovulationtestresult/luteinizinghormonesurge.md)
+- [HKCategoryValueOvulationTestResult.luteinizingHormoneSurge](./luteinizinghormonesurge.md)
   The ovulation test detected a surge in the luteinizing hormone. This value often refers to a `Positive` or `Peak` result.
-- [HKCategoryValueOvulationTestResult.estrogenSurge](hkcategoryvalueovulationtestresult/estrogensurge.md)
+- [HKCategoryValueOvulationTestResult.estrogenSurge](./estrogensurge.md)
   The ovulation test detected a surge in estrogen. This value often refers to a `High` result.
-- [static var positive: HKCategoryValueOvulationTestResult](hkcategoryvalueovulationtestresult/positive.md)
+- [static var positive: HKCategoryValueOvulationTestResult](./positive.md)
   The ovulation test is positive.
 
 

@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame, in global coordinates, used to display the Media Library Browser panel.
 
@@ -14,11 +15,16 @@ The frame, in global coordinates, used to display the Media Library Browser pane
 var frame: NSRect { get set }
 ```
 
+```objc
+@property NSRect frame;
+```
+
 ## See Also
 
-- [func togglePanel(Any?)](nsmedialibrarybrowsercontroller/togglepanel(_:).md)
+### Displaying the Media Library Browser Panel
+- [func togglePanel(Any?)](./togglepanel%28_%29.md)
   Toggles the visibility of the Media Library Browser.
-- [var isVisible: Bool](nsmedialibrarybrowsercontroller/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that determines whether the Media Library Browser panel is visible.
 
 

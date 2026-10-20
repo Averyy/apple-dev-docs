@@ -1,7 +1,8 @@
 # init(source:resultWidth:resultHeight:resultFeatureChannels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 init(source: MPSNNImageNode, resultWidth: Int, resultHeight: Int, resultFeatureChannels: Int)
+```
+
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) source resultWidth:(NSUInteger) resultWidth resultHeight:(NSUInteger) resultHeight resultFeatureChannels:(NSUInteger) resultFeatureChannels;
 ```
 
 

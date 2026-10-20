@@ -1,7 +1,8 @@
 # StructureBuilder.BuildError.insufficientInput
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework expects more captured room data.
 

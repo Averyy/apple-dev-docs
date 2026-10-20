@@ -1,7 +1,8 @@
 # fulfill(using:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports that the translation action was successful.
 
@@ -21,7 +22,8 @@ final func fulfill(using translationEngine: SetTranslatingAction.TranslationEngi
 
 ## See Also
 
-- [SetTranslatingAction.TranslationEngine](settranslatingaction/translationengine.md)
+### Completing a translation
+- [SetTranslatingAction.TranslationEngine](./translationengine.md)
   Values that describe the translation engine that provided a translation.
 
 

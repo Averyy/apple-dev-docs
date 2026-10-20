@@ -1,7 +1,8 @@
 # spatialFalloff
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional strength falloff based on the spatial bounds of the effect.
 

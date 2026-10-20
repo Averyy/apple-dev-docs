@@ -1,7 +1,8 @@
 # init(notificationCenter:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a notification queue for the specified notification center.
 
@@ -20,13 +21,17 @@ Initializes and returns a notification queue for the specified notification cent
 init(notificationCenter: NotificationCenter)
 ```
 
+```objc
+- (instancetype) initWithNotificationCenter:(NSNotificationCenter *) notificationCenter;
+```
+
 #### Return Value
 
 The newly initialized notification queue.
 
 #### Discussion
 
-This is the designated initializer for the [`NotificationQueue`](notificationqueue.md) class.
+This is the designated initializer for the [`NotificationQueue`](../notificationqueue.md) class.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ This is the designated initializer for the [`NotificationQueue`](notificationque
 
 ## See Also
 
-- [Notification Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i)
+### Related Documentation
+- [Notification Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i)
 
 
 ---

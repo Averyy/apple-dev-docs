@@ -1,14 +1,15 @@
 # copyClientEntitlementVnode
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<OSObject> copyClientEntitlementVnode(struct vnode *vnode, off_t offset, const char *entitlement);
 ```
 

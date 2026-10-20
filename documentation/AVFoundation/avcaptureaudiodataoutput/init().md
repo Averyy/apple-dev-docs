@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of audio data output.
 
@@ -16,6 +17,10 @@ Creates an instance of audio data output.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

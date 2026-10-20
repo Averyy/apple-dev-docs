@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time zone.
 
@@ -26,9 +27,10 @@ var timeZone: TimeZone? { get set }
 
 ## See Also
 
-- [init(calendar: Calendar?, timeZone: TimeZone?, era: Int?, year: Int?, month: Int?, day: Int?, hour: Int?, minute: Int?, second: Int?, nanosecond: Int?, weekday: Int?, weekdayOrdinal: Int?, quarter: Int?, weekOfMonth: Int?, weekOfYear: Int?, yearForWeekOfYear: Int?)](datecomponents/init(calendar:timezone:era:year:month:day:hour:minute:second:nanosecond:weekday:weekdayordinal:quarter:weekofmonth:weekofyear:yearforweekofyear:).md)
+### Initializing Date Components
+- [init(calendar: Calendar?, timeZone: TimeZone?, era: Int?, year: Int?, month: Int?, day: Int?, hour: Int?, minute: Int?, second: Int?, nanosecond: Int?, weekday: Int?, weekdayOrdinal: Int?, quarter: Int?, weekOfMonth: Int?, weekOfYear: Int?, yearForWeekOfYear: Int?)](./init%28calendar,timezone,era,year,month,day,hour,minute,second,nanosecond,weekday,weekdayordinal,quarter,weekofmonth,weekofyear,yearforweekofyear%29.md)
   Initializes a date components value, optionally specifying values for its fields.
-- [var calendar: Calendar?](datecomponents/calendar.md)
+- [var calendar: Calendar?](./calendar.md)
   The calendar used to interpret the other values in this structure.
 
 

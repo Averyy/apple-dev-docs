@@ -1,7 +1,8 @@
 # rateDidChangeReasonKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key to retrieve the reason for the rate change.
 
@@ -19,15 +20,20 @@ A key to retrieve the reason for the rate change.
 class let rateDidChangeReasonKey: String
 ```
 
+```c
+extern NSString * const AVPlayerRateDidChangeReasonKey;
+```
+
 ## Mentions
 
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 
 ## See Also
 
-- [class let rateDidChangeOriginatingParticipantKey: String](avplayer/ratedidchangeoriginatingparticipantkey.md)
+### User information keys
+- [class let rateDidChangeOriginatingParticipantKey: String](./ratedidchangeoriginatingparticipantkey.md)
   A key to retrieve the identifier of the participant that originates the rate change.
-- [AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason.md)
+- [AVPlayer.RateDidChangeReason](./ratedidchangereason.md)
   A structure that represents a rate change reason.
 
 

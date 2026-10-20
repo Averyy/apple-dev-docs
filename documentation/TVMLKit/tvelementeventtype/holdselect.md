@@ -1,12 +1,15 @@
 # TVElementEventType.holdSelect
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A hold event has been dispatched.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,15 +17,20 @@ A hold event has been dispatched.
 case holdSelect
 ```
 
+```c
+TVElementEventTypeHoldSelect
+```
+
 ## See Also
 
-- [TVElementEventType.change](tvelementeventtype/change.md)
+### Enumeration Cases
+- [TVElementEventType.change](./change.md)
   A change event has been dispatched.
-- [TVElementEventType.highlight](tvelementeventtype/highlight.md)
+- [TVElementEventType.highlight](./highlight.md)
   A highlight event has been dispatched.
-- [TVElementEventType.play](tvelementeventtype/play.md)
+- [TVElementEventType.play](./play.md)
   A play event has been dispatched.
-- [TVElementEventType.select](tvelementeventtype/select.md)
+- [TVElementEventType.select](./select.md)
   A select event has been dispatched.
 
 

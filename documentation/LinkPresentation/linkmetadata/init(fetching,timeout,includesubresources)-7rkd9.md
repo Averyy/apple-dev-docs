@@ -1,9 +1,10 @@
 # init(fetching:timeout:includeSubresources:)
 
 **Framework**: Link Presentation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a [`LinkMetadata`](linkmetadata.md) value from the specified properties by fetching the URL using the specified request.
+Creates a [`LinkMetadata`](../linkmetadata.md) value from the specified properties by fetching the URL using the specified request.
 
 **Availability**:
 - iOS 26.4+

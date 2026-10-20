@@ -1,7 +1,8 @@
 # kSecTrustExtendedValidation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean used to indicate Extended Validation.
 
@@ -20,9 +21,13 @@ A key whose value is a Boolean used to indicate Extended Validation.
 let kSecTrustExtendedValidation: CFString
 ```
 
+```c
+extern CFStringRef const kSecTrustExtendedValidation;
+```
+
 #### Discussion
 
-When the key is present and the value set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), it indicates the chain is validated for Extended Validation (EV).
+When the key is present and the value set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), it indicates the chain is validated for Extended Validation (EV).
 
 
 ---

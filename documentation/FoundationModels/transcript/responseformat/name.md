@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name associated with the response format.
 

@@ -1,7 +1,8 @@
 # NSButton.BezelStyle.badge
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button style suitable for displaying additional information.
 
@@ -12,6 +13,10 @@ A button style suitable for displaying additional information.
 
 ```swift
 case badge
+```
+
+```c
+NSBezelStyleBadge
 ```
 
 #### Discussion
@@ -34,13 +39,14 @@ button.title = @"Badge";
 button.bezelStyle = NSBezelStyleBadge;
 ```
 
-For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also
 
-- [NSButton.BezelStyle.helpButton](nsbutton/bezelstyle-swift.enum/helpbutton.md)
+### Informational
+- [NSButton.BezelStyle.helpButton](./helpbutton.md)
   A round button with a question mark, providing the standard help button look.
-- [NSButton.BezelStyle.circular](nsbutton/bezelstyle-swift.enum/circular.md)
+- [NSButton.BezelStyle.circular](./circular.md)
   A round button that can contain either a single character or an icon.
 
 

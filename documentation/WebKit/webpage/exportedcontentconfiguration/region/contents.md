@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The entire region of the webpage.
 

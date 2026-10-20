@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kPEReadTOD](1646501-anonymous/kpereadtod.md)
-- [kPEWriteTOD](1646501-anonymous/kpewritetod.md)
+- [kPEReadTOD](./api-1646501-anonymous/kpereadtod.md)
+- [kPEWriteTOD](./api-1646501-anonymous/kpewritetod.md)
 
 
 ---

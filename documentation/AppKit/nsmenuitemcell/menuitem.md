@@ -1,12 +1,13 @@
 # menuItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item object associated with the cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The menu item object associated with the cell.
 var menuItem: NSMenuItem? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSMenuItem * menuItem;
+```
+
 ## See Also
 
-- [class NSMenuItem](nsmenuitem.md)
+### Related Documentation
+- [class NSMenuItem](../nsmenuitem.md)
   A command item in an app menu.
 
 

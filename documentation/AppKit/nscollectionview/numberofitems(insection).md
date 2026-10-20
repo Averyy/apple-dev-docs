@@ -1,7 +1,8 @@
 # numberOfItems(inSection:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of items in the specified section.
 
@@ -12,6 +13,10 @@ Returns the number of items in the specified section.
 
 ```swift
 func numberOfItems(inSection section: Int) -> Int
+```
+
+```objc
+- (NSInteger) numberOfItemsInSection:(NSInteger) section;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ Use this method to get the number of items currently displayed by the collection
 
 ## See Also
 
-- [var numberOfSections: Int](nscollectionview/numberofsections.md)
+### Getting the State of the Collection View
+- [var numberOfSections: Int](./numberofsections.md)
   The number of sections in the collection view.
 
 

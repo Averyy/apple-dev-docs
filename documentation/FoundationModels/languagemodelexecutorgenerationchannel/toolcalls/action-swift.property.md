@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to perform.
 
@@ -21,11 +22,12 @@ var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct.md)
+### Handling tool calls
+- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.struct.md)
   An operation that can be performed on a tool-calls entry.
-- [var entryID: String?](languagemodelexecutorgenerationchannel/toolcalls/entryid.md)
+- [var entryID: String?](./entryid.md)
   The identifier for the entry.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](languagemodelexecutorgenerationchannel/toolcalls/toolcall.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](./toolcall.md)
   A per-tool-call event payload.
 
 

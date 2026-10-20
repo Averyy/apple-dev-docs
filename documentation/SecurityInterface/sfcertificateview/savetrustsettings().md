@@ -1,7 +1,8 @@
 # saveTrustSettings()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the user’s current trust settings for the displayed certificate.
 
@@ -14,13 +15,18 @@ Saves the user’s current trust settings for the displayed certificate.
 func saveTrustSettings()
 ```
 
+```objc
+- (void) saveTrustSettings;
+```
+
 #### Discussion
 
 If trust settings are not editable, this method effectively does nothing. You can use `SecTrustGetUserTrust` to subsequently retrieve the trust settings.
 
 ## See Also
 
-- [func setEditableTrust(Bool)](sfcertificateview/seteditabletrust(_:).md)
+### Related Documentation
+- [func setEditableTrust(Bool)](./seteditabletrust%28_%29.md)
   Specifies whether the user can edit the certificate’s trust settings.
 
 

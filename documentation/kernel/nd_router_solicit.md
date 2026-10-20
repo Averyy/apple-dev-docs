@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nd_router_solicit {
     ...
 };
@@ -17,7 +17,7 @@ struct nd_router_solicit {
 ## Topics
 
 ### Instance Properties
-- [nd_rs_hdr](nd_router_solicit/3754184-nd_rs_hdr.md)
+- [nd_rs_hdr](./nd_router_solicit/api-3754184-nd_rs_hdr.md)
 
 
 ---

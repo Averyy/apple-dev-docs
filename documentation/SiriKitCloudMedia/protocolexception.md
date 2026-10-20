@@ -1,7 +1,8 @@
 # ProtocolException
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An exception response from a media service.
 
@@ -10,7 +11,7 @@ An exception response from a media service.
 
 ## Declaration
 
-```swift
+```
 object ProtocolException
 ```
 
@@ -29,13 +30,16 @@ Include the `methodName` and `methodIndex` whenever the reason is `unsupported`,
 - `code` (int64): The identifier for this exception.
 - `reason` (ProtocolExceptionReason) *(required)*: The type of exception the service encounters.
 - `retryWithDelay` (float): The timespan, in seconds, the client needs to wait before retrying the request.
+
+  **Default**: `-1`
 - `trace` ([string]): Debugging backtraces or other information. Production services must not provide this information. Clients without an enabled debug setting discard this data.
 
 ## See Also
 
-- [object ProtocolExceptionInvocationResponse](protocolexceptioninvocationresponse.md)
+### Exceptions
+- [object ProtocolExceptionInvocationResponse](./protocolexceptioninvocationresponse.md)
   A response object that indicates when the service fails to process the client’s request.
-- [type ProtocolExceptionReason](protocolexceptionreason.md)
+- [type ProtocolExceptionReason](./protocolexceptionreason.md)
   Categories of exceptions a service can encounter.
 
 

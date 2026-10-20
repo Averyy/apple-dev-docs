@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kATSUUseLineControlWidth: Int](katsuuselinecontrolwidth.md)
+- [var kATSUUseLineControlWidth: Int](../katsuuselinecontrolwidth.md)
 
 
 ---

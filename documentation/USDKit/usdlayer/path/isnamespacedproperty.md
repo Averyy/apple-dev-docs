@@ -1,7 +1,8 @@
 # isNamespacedProperty
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the leaf property name contains a namespace.
 

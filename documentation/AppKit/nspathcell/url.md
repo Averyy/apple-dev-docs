@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the path displayed by the receiver.
 
@@ -14,13 +15,18 @@ Returns the path displayed by the receiver.
 var url: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * URL;
+```
+
 #### Return Value
 
 The path value.
 
 ## See Also
 
-- [var clickedPathComponentCell: NSPathComponentCell?](nspathcell/clickedpathcomponentcell.md)
+### Setting the Path
+- [var clickedPathComponentCell: NSPathComponentCell?](./clickedpathcomponentcell.md)
   Sets the value of the path displayed by the receiver.
 
 

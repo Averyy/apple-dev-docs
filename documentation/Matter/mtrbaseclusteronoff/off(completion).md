@@ -1,7 +1,8 @@
 # off(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func off(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func off() async throws
+```
+
+```objc
+- (void) offWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

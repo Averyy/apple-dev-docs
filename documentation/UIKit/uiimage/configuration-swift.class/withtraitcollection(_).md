@@ -1,7 +1,8 @@
 # withTraitCollection(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new configuration object that merges the current traits with the traits from the specified trait collection.
 
@@ -18,6 +19,10 @@ Returns a new configuration object that merges the current traits with the trait
 func withTraitCollection(_ traitCollection: UITraitCollection?) -> Self
 ```
 
+```objc
+- (instancetype) configurationWithTraitCollection:(UITraitCollection *) traitCollection;
+```
+
 #### Return Value
 
 A configuration object with the merged set of traits.
@@ -32,7 +37,8 @@ Use this method to augment or change the traits in the current configuration obj
 
 ## See Also
 
-- [func applying(UIImage.Configuration?) -> Self](uiimage/configuration-swift.class/applying(_:).md)
+### Modifying a configuration object
+- [func applying(UIImage.Configuration?) -> Self](./applying%28_%29.md)
   Returns a configuration object that applies the specified configuration values on top of the current object’s values.
 
 

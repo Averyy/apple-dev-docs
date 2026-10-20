@@ -1,17 +1,20 @@
 # email
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The buyer’s email address.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS ?+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 4.0
+
+> **Deprecated**: Use PKContactField and -requiredShippingContactFields / -requiredBillingContactFields
 
 ## Declaration
 
@@ -19,15 +22,20 @@ The buyer’s email address.
 static var email: PKAddressField { get }
 ```
 
+```c
+PKAddressFieldEmail
+```
+
 ## See Also
 
-- [static var postalAddress: PKAddressField](pkaddressfield/postaladdress.md)
+### Constants
+- [static var postalAddress: PKAddressField](./postaladdress.md)
   The buyer’s full street address, including name, street, city, state or province, postal code, and country or region.
-- [static var phone: PKAddressField](pkaddressfield/phone.md)
+- [static var phone: PKAddressField](./phone.md)
   The buyer’s telephone number.
-- [static var name: PKAddressField](pkaddressfield/name.md)
+- [static var name: PKAddressField](./name.md)
   The buyer’s first and last name.
-- [static var all: PKAddressField](pkaddressfield/all.md)
+- [static var all: PKAddressField](./all.md)
   All fields.
 
 

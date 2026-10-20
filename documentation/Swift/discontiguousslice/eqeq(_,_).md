@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether two values are equal.
 ```swift
 static func == (lhs: DiscontiguousSlice<Base>, rhs: DiscontiguousSlice<Base>) -> Bool
 ```
+
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Equatable`.
 
 #### Discussion
 

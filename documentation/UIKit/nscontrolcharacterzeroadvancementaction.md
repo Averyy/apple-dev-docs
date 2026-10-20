@@ -1,15 +1,16 @@
 # NSControlCharacterZeroAdvancementAction
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An action that removes the glyph from layout.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 7.0+ - Deprecated in 9.0 (renamed: NSLayoutManager.ControlCharacterAction.zeroAdvancement)
+- iPadOS 7.0+ - Deprecated in 9.0 (renamed: NSLayoutManager.ControlCharacterAction.zeroAdvancement)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: NSLayoutManager.ControlCharacterAction.zeroAdvancement)
+- tvOS - Deprecated in 9.0 (renamed: NSLayoutManager.ControlCharacterAction.zeroAdvancement)
 
 ## Declaration
 
@@ -17,21 +18,26 @@ An action that removes the glyph from layout.
 var NSControlCharacterZeroAdvancementAction: Int { get }
 ```
 
+```c
+NSControlCharacterZeroAdvancementAction
+```
+
 #### Discussion
 
-Glyphs with this action are filtered out from layout ([`notShownAttribute(forGlyphAt:)`](nslayoutmanager/notshownattribute(forglyphat:).md) `== YES` for the glyph).
+Glyphs with this action are filtered out from layout ([`notShownAttribute(forGlyphAt:)`](./nslayoutmanager/notshownattribute%28forglyphat%29.md) `== YES` for the glyph).
 
 ## See Also
 
-- [var NSControlCharacterContainerBreakAction: Int](nscontrolcharactercontainerbreakaction.md)
+### Deprecated symbols
+- [var NSControlCharacterContainerBreakAction: Int](./nscontrolcharactercontainerbreakaction.md)
   A character that causes a break in layout.
-- [var NSControlCharacterHorizontalTabAction: Int](nscontrolcharacterhorizontaltabaction.md)
+- [var NSControlCharacterHorizontalTabAction: Int](./nscontrolcharacterhorizontaltabaction.md)
   An action that inserts a horizontal tab.
-- [var NSControlCharacterLineBreakAction: Int](nscontrolcharacterlinebreakaction.md)
+- [var NSControlCharacterLineBreakAction: Int](./nscontrolcharacterlinebreakaction.md)
   An action that causes a line break.
-- [var NSControlCharacterParagraphBreakAction: Int](nscontrolcharacterparagraphbreakaction.md)
+- [var NSControlCharacterParagraphBreakAction: Int](./nscontrolcharacterparagraphbreakaction.md)
   An action that causes a paragraph break.
-- [var NSControlCharacterWhitespaceAction: Int](nscontrolcharacterwhitespaceaction.md)
+- [var NSControlCharacterWhitespaceAction: Int](./nscontrolcharacterwhitespaceaction.md)
   An action that programmatically changes the white space around the glyph.
 
 

@@ -1,7 +1,8 @@
 # nw_parameters_expired_dns_behavior_default
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Let the system determine whether or not to allow expired DNS answers.
 
@@ -20,11 +21,16 @@ Let the system determine whether or not to allow expired DNS answers.
 var nw_parameters_expired_dns_behavior_default: nw_parameters_expired_dns_behavior_t { get }
 ```
 
+```c
+nw_parameters_expired_dns_behavior_default
+```
+
 ## See Also
 
-- [var nw_parameters_expired_dns_behavior_allow: nw_parameters_expired_dns_behavior_t](nw_parameters_expired_dns_behavior_allow.md)
+### Expired DNS behaviors
+- [var nw_parameters_expired_dns_behavior_allow: nw_parameters_expired_dns_behavior_t](./nw_parameters_expired_dns_behavior_allow.md)
   Explicitly allow the use of expired DNS answers.
-- [var nw_parameters_expired_dns_behavior_prohibit: nw_parameters_expired_dns_behavior_t](nw_parameters_expired_dns_behavior_prohibit.md)
+- [var nw_parameters_expired_dns_behavior_prohibit: nw_parameters_expired_dns_behavior_t](./nw_parameters_expired_dns_behavior_prohibit.md)
   Explicitly prohibit the use of expired DNS answers.
 
 

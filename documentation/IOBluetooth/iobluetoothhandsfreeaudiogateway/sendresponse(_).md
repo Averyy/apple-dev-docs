@@ -1,7 +1,8 @@
 # sendResponse(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends data followed by a success message to a connected Bluetooth hands-free phone or headset.
 
@@ -14,6 +15,10 @@ Sends data followed by a success message to a connected Bluetooth hands-free pho
 func sendResponse(_ response: String!)
 ```
 
+```objc
+- (void) sendResponse:(NSString *) response;
+```
+
 #### Discussion
 
 Calling this method has the same result as calling `sendResponse(response: response, withOK: true)`.
@@ -24,11 +29,12 @@ Calling this method has the same result as calling `sendResponse(response: respo
 
 ## See Also
 
-- [func sendResponse(String!, withOK: Bool)](iobluetoothhandsfreeaudiogateway/sendresponse(_:withok:).md)
+### Sending and Receiving Commands
+- [func sendResponse(String!, withOK: Bool)](./sendresponse%28_,withok%29.md)
   Sends data followed by an optional success message to a connected Bluetooth hands-free phone or headset.
-- [func sendOKResponse()](iobluetoothhandsfreeaudiogateway/sendokresponse.md)
+- [func sendOKResponse()](./sendokresponse%28%29.md)
   Sends a success message to a connected Bluetooth hands-free phone or headset.
-- [func process(atCommand: String!)](iobluetoothhandsfreeaudiogateway/process(atcommand:).md)
+- [func process(atCommand: String!)](./process%28atcommand%29.md)
   Processes a command from a connected Bluetooth hands-free phone or headset.
 
 

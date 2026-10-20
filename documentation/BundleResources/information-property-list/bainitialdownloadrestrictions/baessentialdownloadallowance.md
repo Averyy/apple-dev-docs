@@ -1,7 +1,8 @@
 # BAEssentialDownloadAllowance
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The combined, maximum size of the essential asset download files.
 
@@ -13,9 +14,10 @@ The combined, maximum size of the essential asset download files.
 - tvOS 18.4+
 - visionOS 2.4+
 
+## Details
 
-
-**Type**: integer
+- **Name**: `BAEssentialDownloadAllowance`
+- **Type**: integer
 
 #### Discussion
 
@@ -23,9 +25,10 @@ If you compress the essential assets, use the compressed file sizes that the sys
 
 ## See Also
 
-- [BADownloadAllowance](information-property-list/bainitialdownloadrestrictions/badownloadallowance.md)
+### Initial download restrictions
+- [BADownloadAllowance](./badownloadallowance.md)
   The combined, maximum size of the initial, non-essential asset download files.
-- [BADownloadDomainAllowList](information-property-list/bainitialdownloadrestrictions/badownloaddomainallowlist.md)
+- [BADownloadDomainAllowList](./badownloaddomainallowlist.md)
   The permitted list of domains the extension can use when scheduling the initial set of asset downloads.
 
 

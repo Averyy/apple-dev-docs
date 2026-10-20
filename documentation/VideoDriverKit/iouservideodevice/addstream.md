@@ -1,7 +1,8 @@
 # AddStream
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an video stream to the device.
 
@@ -10,7 +11,7 @@ Adds an video stream to the device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddStream(IOUserVideoStream *in_stream);
 ```
 
@@ -28,9 +29,10 @@ The stream’s reference count will be incremented if it was successfully added.
 
 ## See Also
 
-- [RemoveStream](iouservideodevice/removestream.md)
+### Working with video streams
+- [RemoveStream](./removestream.md)
   Removes a video stream from the device.
-- [IOUserVideoStream](iouservideostream.md)
+- [IOUserVideoStream](../iouservideostream.md)
   A video stream.
 
 

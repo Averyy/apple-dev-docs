@@ -1,7 +1,8 @@
 # MTREventNameForID(_:_:)
 
 **Framework**: Matter  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Resolve Matter event IDs into a descriptive string.
 
@@ -18,6 +19,10 @@ Resolve Matter event IDs into a descriptive string.
 
 ```swift
 func MTREventNameForID(_ clusterID: MTRClusterIDType, _ eventID: MTREventIDType) -> String!
+```
+
+```c
+extern NSString *MTREventNameForID(MTRClusterIDType clusterID, MTREventIDType eventID);
 ```
 
 #### Discussion

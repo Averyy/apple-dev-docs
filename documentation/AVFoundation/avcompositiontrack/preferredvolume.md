@@ -1,18 +1,19 @@
 # preferredVolume
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The track’s volume preference for playing its audible media.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ The preferred volume for an audio track is typically, but not always, `1.0`. For
 
 ## See Also
 
-- [var hasAudioSampleDependencies: Bool](avcompositiontrack/hasaudiosampledependencies.md)
+### Accessing audible characteristics
+- [var hasAudioSampleDependencies: Bool](./hasaudiosampledependencies.md)
   A Boolean value that indicates whether the track has sample dependencies.
 
 

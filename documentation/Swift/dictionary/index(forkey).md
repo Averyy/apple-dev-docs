@@ -1,7 +1,8 @@
 # index(forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index for the given key.
 
@@ -19,6 +20,8 @@ Returns the index for the given key.
 ```swift
 func index(forKey key: Key) -> Dictionary<Key, Value>.Index?
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Return Value
 
@@ -42,21 +45,22 @@ print("Country code for \(countryCodes[index!].value): '\(countryCodes[index!].k
 
 ## See Also
 
-- [subscript(Key) -> Value?](dictionary/subscript(_:)-8rfql.md)
+### Accessing Keys and Values
+- [subscript(Key) -> Value?](./subscript%28_%29-8rfql.md)
   Accesses the value associated with the given key for reading and writing.
-- [subscript(Key, default _: @autoclosure () -> Value) -> Value](dictionary/subscript(_:default:).md)
+- [subscript(Key, default _: @autoclosure () -> Value) -> Value](./subscript%28_,default%29.md)
   Accesses the value with the given key, falling back to the given default value if the key isn’t found.
-- [subscript(Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](dictionary/subscript(_:)-4bhoo.md)
+- [subscript(Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](./subscript%28_%29-4bhoo.md)
   Accesses the key-value pair at the specified position.
-- [var keys: Dictionary<Key, Value>.Keys](dictionary/keys-swift.property.md)
+- [var keys: Dictionary<Key, Value>.Keys](./keys-swift.property.md)
   A collection containing just the keys of the dictionary.
-- [var values: Dictionary<Key, Value>.Values](dictionary/values-swift.property.md)
+- [var values: Dictionary<Key, Value>.Values](./values-swift.property.md)
   A collection containing just the values of the dictionary.
-- [var first: Self.Element?](dictionary/first.md)
+- [var first: Self.Element?](./first.md)
   The first element of the collection.
-- [func randomElement() -> Self.Element?](dictionary/randomelement.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](dictionary/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 
 

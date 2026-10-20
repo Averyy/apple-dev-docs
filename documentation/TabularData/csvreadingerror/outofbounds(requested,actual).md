@@ -1,7 +1,8 @@
 # CSVReadingError.outOfBounds(requested:actual:)
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the read operation requested rows beyond the end of the CSV file.
 

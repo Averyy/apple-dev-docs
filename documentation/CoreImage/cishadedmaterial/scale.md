@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The scale of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The scale of the effect.
 var scale: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float scale;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cishadedmaterial/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var shadingImage: CIImage?](cishadedmaterial/shadingimage.md)
+- [var shadingImage: CIImage?](./shadingimage.md)
   The image to use as the height field.
 
 

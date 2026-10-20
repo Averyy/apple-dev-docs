@@ -1,7 +1,8 @@
 # deferredDate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date, in the future, of the payment.
 
@@ -17,6 +18,10 @@ The date, in the future, of the payment.
 
 ```swift
 var deferredDate: Date { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSDate * deferredDate;
 ```
 
 

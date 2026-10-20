@@ -1,7 +1,8 @@
 # AudioReader.AsyncBuffers
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async sequence of audio buffers read from an audio file.
 
@@ -26,28 +27,29 @@ This sequence allows iterating through the file only once.
 ## Topics
 
 ### Getting the count
-- [let count: Int?](audioreader/asyncbuffers/count.md)
+- [let count: Int?](./asyncbuffers/count.md)
   The number of audio buffers in the file.
 ### Getting the url
-- [let url: URL](audioreader/asyncbuffers/url.md)
+- [let url: URL](./asyncbuffers/url.md)
   The audio file URL, used when throwing an error.
 ### Creating an iterator
-- [func makeAsyncIterator() -> AudioReader.AsyncBuffers.Iterator](audioreader/asyncbuffers/makeasynciterator.md)
+- [func makeAsyncIterator() -> AudioReader.AsyncBuffers.Iterator](./asyncbuffers/makeasynciterator%28%29.md)
   Constructs an iterator.
-- [AudioReader.AsyncBuffers.Iterator](audioreader/asyncbuffers/iterator.md)
+- [AudioReader.AsyncBuffers.Iterator](./asyncbuffers/iterator.md)
   An async iterator of audio buffers.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [TemporalSequence](../temporalsequence.md)
 
 ## See Also
 
-- [AudioReader.Configuration](audioreader/configuration-swift.struct.md)
+### Managing buffers
+- [AudioReader.Configuration](./configuration-swift.struct.md)
   The configuration of the audio reader.
-- [AudioReader.MicrophoneAsyncBuffers](audioreader/microphoneasyncbuffers.md)
+- [AudioReader.MicrophoneAsyncBuffers](./microphoneasyncbuffers.md)
   An async sequence of audio frames.
 
 

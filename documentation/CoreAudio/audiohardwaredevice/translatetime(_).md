@@ -1,12 +1,13 @@
 # translateTime(_:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Translates the time in the device’s time base from one representation to another. Note that the device has to be running
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

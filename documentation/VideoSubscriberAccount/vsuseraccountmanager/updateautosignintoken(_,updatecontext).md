@@ -1,7 +1,8 @@
 # updateAutoSignInToken(_:updateContext:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current Automatic Sign-In token.
 
@@ -18,30 +19,31 @@ func updateAutoSignInToken(_ newToken: String, updateContext: VSUserAccountManag
 
 ## Mentions
 
-- [Signing people in to their media accounts automatically](signing-people-in-to-media-apps-automatically.md)
+- [Signing people in to their media accounts automatically](../signing-people-in-to-media-apps-automatically.md)
 
 #### Discussion
 
-Call this method when generating a new token value for an account. To update the token, request the person’s authorization for Automatic Sign-In. For more information, see [`requestAutoSignInAuthorization()`](vsuseraccountmanager/requestautosigninauthorization().md).
+Call this method when generating a new token value for an account. To update the token, request the person’s authorization for Automatic Sign-In. For more information, see [`requestAutoSignInAuthorization()`](./requestautosigninauthorization%28%29.md).
 
 ## Parameters
 
-- `newToken`: The new token value to store in the person’s Apple Account. Your app determines the contents of this string using a mechanism you determine fitting to identify the account. In addition, ensure its value is of sufficient length, complexity, and security. For more information on setting this property, see [`value`](vsautosignintoken/value.md).
-- `updateContext`: The object the framework provides that reflects the person’s choice in the authorization prompt; pass the result of the [`requestAutoSignInAuthorization()`](vsuseraccountmanager/requestautosigninauthorization().md) method.
+- `newToken`: The new token value to store in the person’s Apple Account. Your app determines the contents of this string using a mechanism you determine fitting to identify the account. In addition, ensure its value is of sufficient length, complexity, and security. For more information on setting this property, see [`value`](../vsautosignintoken/value.md).
+- `updateContext`: The object the framework provides that reflects the person’s choice in the authorization prompt; pass the result of the [`requestAutoSignInAuthorization()`](./requestautosigninauthorization%28%29.md) method.
 
 ## See Also
 
-- [VSUserAccountManager.AutoSignInToken](vsuseraccountmanager/autosignintoken-swift.struct.md)
+### Signing people in automatically
+- [VSUserAccountManager.AutoSignInToken](./autosignintoken-swift.struct.md)
   A value that represents a person’s account and their consent to Automatic Sign-In.
-- [VSUserAccountManager.AutoSignInTokenUpdateContext](vsuseraccountmanager/autosignintokenupdatecontext.md)
+- [VSUserAccountManager.AutoSignInTokenUpdateContext](./autosignintokenupdatecontext.md)
   An object that contains information about a person’s choice in the Automatic Sign-In prompt.
-- [VSUserAccountManager.AutoSignInAuthorization](vsuseraccountmanager/autosigninauthorization.md)
+- [VSUserAccountManager.AutoSignInAuthorization](./autosigninauthorization.md)
   The possible states the framework sets for Automatic Sign-In.
-- [var autoSignInToken: VSUserAccountManager.AutoSignInToken](vsuseraccountmanager/autosignintoken-swift.property.md)
+- [var autoSignInToken: VSUserAccountManager.AutoSignInToken](./autosignintoken-swift.property.md)
   The current Automatic Sign-In token.
-- [func deleteAutoSignInToken() async throws](vsuseraccountmanager/deleteautosignintoken.md)
+- [func deleteAutoSignInToken() async throws](./deleteautosignintoken%28%29.md)
   Deletes the value of the current Automatic Sign-In token.
-- [func requestAutoSignInAuthorization() async throws -> VSUserAccountManager.AutoSignInTokenUpdateContext](vsuseraccountmanager/requestautosigninauthorization.md)
+- [func requestAutoSignInAuthorization() async throws -> VSUserAccountManager.AutoSignInTokenUpdateContext](./requestautosigninauthorization%28%29.md)
   Presents a modal sheet that offers a person to opt in to Automatic Sign-In.
 
 

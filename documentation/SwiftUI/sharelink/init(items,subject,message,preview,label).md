@@ -1,7 +1,8 @@
 # init(items:subject:message:preview:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that presents the share interface.
 
@@ -30,9 +31,10 @@ init(items: Data, subject: Text? = nil, message: Text? = nil, preview: @escaping
 
 ## See Also
 
-- [init(items: Data, subject: Text?, message: Text?, preview: (Data.Element) -> SharePreview<PreviewImage, PreviewIcon>)](sharelink/init(items:subject:message:preview:).md)
+### Sharing items with a preview
+- [init(items: Data, subject: Text?, message: Text?, preview: (Data.Element) -> SharePreview<PreviewImage, PreviewIcon>)](./init%28items,subject,message,preview%29.md)
   Creates an instance that presents the share interface.
-- [init(_:items:subject:message:preview:)](sharelink/init(_:items:subject:message:preview:).md)
+- [init(_:items:subject:message:preview:)](./init%28_,items,subject,message,preview%29.md)
   Creates an instance, with a custom label, that presents the share interface.
 
 

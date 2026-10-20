@@ -1,7 +1,8 @@
 # InsightEvaluator.InsightContext
 
 **Framework**: Trust Insights  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that provides details about the evaluations to request and provides information the framework requires for the evaluation to take place.
 
@@ -18,33 +19,34 @@ struct InsightContext<each InsightRequest> where repeat each InsightRequest : In
 ## Topics
 
 ### Creating an insight context
-- [init(operationCategory: InsightEvaluator.OperationCategory, requestedEvaluations: (repeat each InsightRequest))](insightevaluator/insightcontext/init(operationcategory:requestedevaluations:).md)
+- [init(operationCategory: InsightEvaluator.OperationCategory, requestedEvaluations: (repeat each InsightRequest))](./insightcontext/init%28operationcategory,requestedevaluations%29.md)
   Creates the context with which to request insights.
 ### insight context properties
-- [var operationCategory: InsightEvaluator.OperationCategory](insightevaluator/insightcontext/operationcategory.md)
+- [var operationCategory: InsightEvaluator.OperationCategory](./insightcontext/operationcategory.md)
   The type of operation you’re requesting the evaluation for.
-- [var requestID: String?](insightevaluator/insightcontext/requestid.md)
+- [var requestID: String?](./insightcontext/requestid.md)
   An optional identifier you can use to tie an assessment to a specific transaction.
-- [let requestedInsight: (repeat each InsightRequest)](insightevaluator/insightcontext/requestedinsight.md)
+- [let requestedInsight: (repeat each InsightRequest)](./insightcontext/requestedinsight.md)
   The insight you’re requesting.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [InsightEvaluator.InsightRequest](insightevaluator/insightrequest.md)
+### Requesting an evaluation
+- [InsightEvaluator.InsightRequest](./insightrequest.md)
   A structure you use to make a request for a specific insight.
-- [InsightEvaluator.InsightRequestProtocol](insightevaluator/insightrequestprotocol.md)
+- [InsightEvaluator.InsightRequestProtocol](./insightrequestprotocol.md)
   A protocol that insight evaluation types conform to.
-- [InsightEvaluator.EvaluationError](insightevaluator/evaluationerror.md)
+- [InsightEvaluator.EvaluationError](./evaluationerror.md)
   Errors the framework can return if there are errors processing an evaluation request.
-- [InsightEvaluator.ModelVersion](insightevaluator/modelversion.md)
+- [InsightEvaluator.ModelVersion](./modelversion.md)
   Values that define the required model version of the insight.
-- [InsightEvaluator.OperationCategory](insightevaluator/operationcategory.md)
+- [InsightEvaluator.OperationCategory](./operationcategory.md)
   Values that represent the types of operation it’s possible to request evaluations for.
 
 

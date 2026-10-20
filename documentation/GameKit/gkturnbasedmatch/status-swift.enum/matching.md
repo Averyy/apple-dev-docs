@@ -1,7 +1,8 @@
 # GKTurnBasedMatch.Status.matching
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match with empty slots that Game Center is actively filling.
 
@@ -20,13 +21,18 @@ A match with empty slots that Game Center is actively filling.
 case matching
 ```
 
+```c
+GKTurnBasedMatchStatusMatching
+```
+
 ## See Also
 
-- [GKTurnBasedMatch.Status.unknown](gkturnbasedmatch/status-swift.enum/unknown.md)
+### Match Statuses
+- [GKTurnBasedMatch.Status.unknown](./unknown.md)
   A match that is in an unknown state.
-- [GKTurnBasedMatch.Status.open](gkturnbasedmatch/status-swift.enum/open.md)
+- [GKTurnBasedMatch.Status.open](./open.md)
   A match that participants are actively playing.
-- [GKTurnBasedMatch.Status.ended](gkturnbasedmatch/status-swift.enum/ended.md)
+- [GKTurnBasedMatch.Status.ended](./ended.md)
   A match that finishes.
 
 

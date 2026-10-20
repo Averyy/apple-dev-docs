@@ -1,7 +1,8 @@
 # deleteSections(withIdentifiers:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the sections with the specified identifiers from the snapshot.
 
@@ -18,15 +19,20 @@ Deletes the sections with the specified identifiers from the snapshot.
 func deleteSections(withIdentifiers sectionIdentifiers: [Any])
 ```
 
+```objc
+- (void) deleteSectionsWithIdentifiers:(NSArray<id> *) sectionIdentifiers;
+```
+
 ## Parameters
 
 - `sectionIdentifiers`: The array of identifiers corresponding to the sections to delete from the snapshot.
 
 ## See Also
 
-- [func deleteAllItems()](nsdiffabledatasourcesnapshotreference/deleteallitems.md)
+### Removing items and sections
+- [func deleteAllItems()](./deleteallitems%28%29.md)
   Deletes all of the items from the snapshot.
-- [func deleteItems(withIdentifiers: [Any])](nsdiffabledatasourcesnapshotreference/deleteitems(withidentifiers:).md)
+- [func deleteItems(withIdentifiers: [Any])](./deleteitems%28withidentifiers%29.md)
   Deletes the items with the specified identifiers from the snapshot.
 
 

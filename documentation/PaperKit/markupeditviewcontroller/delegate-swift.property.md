@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for responding to user actions.
 
@@ -20,7 +21,8 @@ The delegate for responding to user actions.
 
 ## See Also
 
-- [let supportedFeatureSet: FeatureSet](markupeditviewcontroller/supportedfeatureset.md)
+### Configuring the view controller
+- [let supportedFeatureSet: FeatureSet](./supportedfeatureset.md)
   The supported features of this edit UI.
 
 

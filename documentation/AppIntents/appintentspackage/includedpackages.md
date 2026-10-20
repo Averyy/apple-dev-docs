@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -21,7 +22,12 @@ static var includedPackages: [any AppIntentsPackage.Type] { get }
 
 ## Mentions
 
-- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+- [Configuring the runtime behavior of your app intents](../configuring-the-runtime-behavior-of-your-app-intents.md)
+
+## Default Implementations
+
+### AppIntentsPackage Implementations
+- [static var includedPackages: [any AppIntentsPackage.Type]](./includedpackages-77zgd.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized, human-readable name for the input source.
 
@@ -14,13 +15,18 @@ A localized, human-readable name for the input source.
 var localizedName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localizedName;
+```
+
 #### Discussion
 
 You can use this property to display the name of the capture device input source in a user interface.
 
 ## See Also
 
-- [var inputSourceID: String](avcapturedevice/inputsource/inputsourceid.md)
+### Accessing properties
+- [var inputSourceID: String](./inputsourceid.md)
   An identifier for an input source.
 
 

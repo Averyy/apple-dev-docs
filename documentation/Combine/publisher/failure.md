@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The kind of errors this publisher might publish.
@@ -23,7 +24,7 @@ associatedtype Failure : Error
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
+- [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
 #### Discussion
 
@@ -31,7 +32,8 @@ Use `Never` if this `Publisher` does not publish errors.
 
 ## See Also
 
-- [associatedtype Output](publisher/output.md)
+### Declaring supporting types
+- [associatedtype Output](./output.md)
   The kind of values published by this publisher.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the render pipeline state for the command.
@@ -20,11 +21,15 @@ Sets the render pipeline state for the command.
 func setRenderPipelineState(_ pipelineState: any MTLRenderPipelineState)
 ```
 
+```objc
+- (void) setRenderPipelineState:(id<MTLRenderPipelineState>) pipelineState;
+```
+
 #### Discussion
 
-You don’t need to call this method if you create an indirect command buffer with its [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) property equal to [`true`](https://developer.apple.com/documentation/swift/true). The command gets the pipeline state from the parent encoder when it runs.
+You don’t need to call this method if you create an indirect command buffer with its [`inheritPipelineState`](../mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) property equal to [`true`](../../Swift/true.md). The command gets the pipeline state from the parent encoder when it runs.
 
-If you created the indirect command buffer with [`inheritPipelineState`](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) set to [`false`](https://developer.apple.com/documentation/swift/false), you need to set the pipeline state prior to encoding the drawing command.
+If you created the indirect command buffer with [`inheritPipelineState`](../mtlindirectcommandbufferdescriptor/inheritpipelinestate.md) set to [`false`](../../Swift/false.md), you need to set the pipeline state prior to encoding the drawing command.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ If you created the indirect command buffer with [`inheritPipelineState`](mtlindi
 
 ## See Also
 
-- [func setVertexBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectrendercommand/setvertexbuffer(_:offset:at:).md)
+### Setting command arguments
+- [func setVertexBuffer(any MTLBuffer, offset: Int, at: Int)](./setvertexbuffer%28_,offset,at%29.md)
   Sets a vertex buffer argument for the command.
-- [func setFragmentBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectrendercommand/setfragmentbuffer(_:offset:at:).md)
+- [func setFragmentBuffer(any MTLBuffer, offset: Int, at: Int)](./setfragmentbuffer%28_,offset,at%29.md)
   Sets a fragment buffer argument for the command.
 
 

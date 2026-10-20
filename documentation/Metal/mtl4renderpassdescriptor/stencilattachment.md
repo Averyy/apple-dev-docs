@@ -1,7 +1,8 @@
 # stencilAttachment
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Accesses state information for a render attachment that stores stencil data.
 
@@ -18,6 +19,10 @@ Accesses state information for a render attachment that stores stencil data.
 ```swift
 @NSCopying
 var stencilAttachment: MTLRenderPassStencilAttachmentDescriptor! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) MTLRenderPassStencilAttachmentDescriptor * stencilAttachment;
 ```
 
 

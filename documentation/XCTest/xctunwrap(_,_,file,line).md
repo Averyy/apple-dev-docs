@@ -1,7 +1,8 @@
 # XCTUnwrap(_:_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asserts that an expression is not `nil,` and returns the unwrapped value.
 
@@ -28,7 +29,8 @@ This function generates a failure when `expression` is `nil`. Otherwise, it retu
 
 ## See Also
 
-- [func XCTAssertNotNil(@autoclosure () throws -> Any?, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertnotnil(_:_:file:line:).md)
+### Tests for a Non-Nil Condition
+- [func XCTAssertNotNil(@autoclosure () throws -> Any?, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertnotnil%28_,_,file,line%29.md)
   Asserts that an expression is not `nil`.
 
 

@@ -1,14 +1,15 @@
 # kIOPSFamilyCodeUSBCTypeC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kIOPSFamilyCodeUSBCTypeC = iokit_family_err(sub_iokit_usb, 9)
 ```
 

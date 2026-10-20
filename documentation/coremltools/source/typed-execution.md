@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/typed-execution.html
 
 # Typed Execution
 
-**
-
-- [.md](../_sources/source/typed-execution.md)
-- **
-
-.pdf
-
-**
-
-# Typed Execution
-
- Table of contents 
-
-## Contents
-
-# Typed Execution
-
 A model’s compute precision impacts its performance and numerical accuracy, which may impact the user experience of apps using the model. Core ML models saved as [ML programs](convert-to-ml-program.md) or neural networks execute with either float 32 or float 16 precision.
 
 This page describes how the precision is determined by the runtime during execution of either type of model. The ability to choose this precision can give you more flexible control over computations and performance.
@@ -52,11 +35,11 @@ This example produces a float 32 typed Core ML model that executes in float 32 p
 
 A neural network has explicitly typed model inputs and outputs, but does *not* define the types of intermediate tensors that are produced by one layer and consumed by another. Instead, the intermediate tensors are automatically typed at runtime by the compute unit responsible for executing the layer producing them.
 
-![Sample Core ML model description](../_images/input-output-xcode.png)
+![Sample Core ML model description](https://apple.github.io/coremltools/docs-guides/_images/input-output-xcode.png)
 
 A sample Core ML model description, as shown in Xcode. The input and output of the model are typed.
 
-![Sample Core ML model untyped tensors](../_images/neural-net-untyped-tensors.png)
+![Sample Core ML model untyped tensors](https://apple.github.io/coremltools/docs-guides/_images/neural-net-untyped-tensors.png)
 
 A neural network does not define the types of intermediate tensors that are produced by one layer and consumed by another.
 
@@ -64,7 +47,7 @@ The Core ML runtime dynamically partitions the network graph into sections for t
 
 You have some control over numeric precision by configuring the set of allowed compute units when converting the model (such as `All`, `CPU&GPU`, or `CPUOnly`), as shown in following chart:
 
-![Control over numeric precision](../_images/neural-net-control-precision2.png)
+![Control over numeric precision](https://apple.github.io/coremltools/docs-guides/_images/neural-net-control-precision2.png)
 
 Controlling numeric precision by configuring the set of allowed compute units when converting the model.
 
@@ -74,7 +57,7 @@ For example, for float 32 precision, the only guaranteed path is to use `CPUOnly
 
 [ML programs](convert-to-ml-program.md) describe a neural network in a code style in which all variables in the program are strongly typed. In contrast to a neural network model, the types of all the intermediate tensors of an ML program are specified in the model itself.
 
-![ML program typed tensors](../_images/ml-program-typed-tensors.png)
+![ML program typed tensors](https://apple.github.io/coremltools/docs-guides/_images/ml-program-typed-tensors.png)
 
 In an ML program, the types of all the intermediate tensors are specified in the model itself.
 
@@ -84,7 +67,7 @@ For example, a float 32 typed model will only ever run with float 32 precision. 
 
 The ML program runtime supports an expanded set of precisions on the backend engines. All of the ops supported on the GPU runtime are now equally supported in float 16 and float 32 precisions. As a result, a float 32 model saved as an ML program need not be restricted to run only on the CPU. In addition, a few selected ops, such as convolution, are also available with float 16 precision on the CPU, and on newer hardware, it can provide further acceleration.
 
-![ML program runtime](../_images/ml-program-runtime.png)
+![ML program runtime](https://apple.github.io/coremltools/docs-guides/_images/ml-program-runtime.png)
 
 The ML program runtime supports an expanded set of precisions on the backend engines.
 
@@ -93,5 +76,3 @@ By default, an ML program produced by the converter is typed in float 16 precisi
 For models sensitive to precision, you can set the precision to float 32 during conversion by using the `compute_precision=coremltools.precision.FLOAT32` flag with the [convert()](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#module-coremltools.converters._converters_entry) method. Such a model is guaranteed to run with float 32 precision on all hardware and software versions. Unlike a neural network, the float 32 typed ML program will run on a CPU as well as the GPU. Only the NE is barred as a compute unit when a model is typed with float 32 precision.
 
 With an ML program, you can even mix and match precision support within a single compute unit, such as the CPU or GPU. If you need float 32 precision for specific layers instead of the entire model, you can selectively preserve float 32 tensor types by using the `compute_precision=ct.transform.Float16ComputePrecision()` transform during model conversion.
-
-** Contents

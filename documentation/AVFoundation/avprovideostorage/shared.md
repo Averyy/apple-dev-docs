@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the singleton instance for Pro Video Storage.
 
@@ -18,13 +19,18 @@ Returns the singleton instance for Pro Video Storage.
 class var shared: AVProVideoStorage? { get }
 ```
 
+```objc
+@property (class, readonly, nullable) AVProVideoStorage * sharedStorage;
+```
+
 #### Return Value
 
 An instance of the Pro Video Storage class if supported; otherwise, `nil`.
 
 ## See Also
 
-- [class var isSupported: Bool](avprovideostorage/issupported.md)
+### Getting the shared storage
+- [class var isSupported: Bool](./issupported.md)
   Whether Pro Video Storage is supported in its current configuration.
 
 

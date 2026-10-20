@@ -1,7 +1,8 @@
 # UIBackgroundFetchResult
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the result of a background fetch operation.
 
@@ -9,7 +10,7 @@ Constants that indicate the result of a background fetch operation.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,31 +19,36 @@ Constants that indicate the result of a background fetch operation.
 enum UIBackgroundFetchResult
 ```
 
+```c
+enum UIBackgroundFetchResult : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIBackgroundFetchResult.newData](uibackgroundfetchresult/newdata.md)
+- [UIBackgroundFetchResult.newData](./uibackgroundfetchresult/newdata.md)
   New data was successfully downloaded.
-- [UIBackgroundFetchResult.noData](uibackgroundfetchresult/nodata.md)
+- [UIBackgroundFetchResult.noData](./uibackgroundfetchresult/nodata.md)
   There was no new data to download.
-- [UIBackgroundFetchResult.failed](uibackgroundfetchresult/failed.md)
+- [UIBackgroundFetchResult.failed](./uibackgroundfetchresult/failed.md)
   An attempt to download data was made but that attempt failed.
 ### Initializers
-- [init?(rawValue: UInt)](uibackgroundfetchresult/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./uibackgroundfetchresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func application(UIApplication, handleEventsForBackgroundURLSession: String, completionHandler: () -> Void)](uiapplicationdelegate/application(_:handleeventsforbackgroundurlsession:completionhandler:).md)
+### Downloading data in the background
+- [func application(UIApplication, handleEventsForBackgroundURLSession: String, completionHandler: () -> Void)](./uiapplicationdelegate/application%28_,handleeventsforbackgroundurlsession,completionhandler%29.md)
   Tells the delegate that events related to a URL session are waiting to be processed.
 
 

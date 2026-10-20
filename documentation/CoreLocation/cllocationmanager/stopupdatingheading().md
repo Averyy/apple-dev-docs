@@ -1,7 +1,8 @@
 # stopUpdatingHeading()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the generation of heading updates.
 
@@ -17,29 +18,34 @@ Stops the generation of heading updates.
 func stopUpdatingHeading()
 ```
 
+```objc
+- (void) stopUpdatingHeading;
+```
+
 #### Discussion
 
-Call this method whenever your code no longer needs to receive heading-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need location data. You can always restart the generation of heading updates by calling the [`startUpdatingHeading()`](cllocationmanager/startupdatingheading().md) method again.
+Call this method whenever your code no longer needs to receive heading-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need location data. You can always restart the generation of heading updates by calling the [`startUpdatingHeading()`](./startupdatingheading%28%29.md) method again.
 
 If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
 
 ## See Also
 
-- [func startUpdatingHeading()](cllocationmanager/startupdatingheading.md)
+### Running the heading service
+- [func startUpdatingHeading()](./startupdatingheading%28%29.md)
   Starts the generation of updates that report the user’s current heading.
-- [func dismissHeadingCalibrationDisplay()](cllocationmanager/dismissheadingcalibrationdisplay.md)
+- [func dismissHeadingCalibrationDisplay()](./dismissheadingcalibrationdisplay%28%29.md)
   Dismisses the heading calibration view from the screen immediately.
-- [var headingFilter: CLLocationDegrees](cllocationmanager/headingfilter.md)
+- [var headingFilter: CLLocationDegrees](./headingfilter.md)
   The minimum angular change in degrees required to generate new heading events.
-- [let kCLHeadingFilterNone: CLLocationDegrees](kclheadingfilternone.md)
+- [let kCLHeadingFilterNone: CLLocationDegrees](../kclheadingfilternone.md)
   A constant indicating that all header values should be reported.
-- [typealias CLLocationDegrees](cllocationdegrees.md)
+- [typealias CLLocationDegrees](../cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+- [var headingBody: (any CLBodyIdentifiable)?](./headingbody.md)
   A physical body or view that defines the reference orientation for heading calculations.
-- [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
+- [var headingOrientation: CLDeviceOrientation](./headingorientation.md)
   The device orientation to use when computing heading values.
-- [enum CLDeviceOrientation](cldeviceorientation.md)
+- [enum CLDeviceOrientation](../cldeviceorientation.md)
   Constants indicating the physical orientation of the device.
 
 

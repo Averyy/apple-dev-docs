@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes this value into the given encoder.
@@ -30,6 +31,12 @@ This function throws an error if any values are invalid for the given encoder’
 ## Parameters
 
 - `encoder`: The encoder to write data to.
+
+## Default Implementations
+
+### Encodable Implementations
+- [func encode(to: any Encoder) throws](./encode%28to%29-4qkz3.md)
+  Encodes the scalars of this vector into the given encoder in an unkeyed container.
 
 
 ---

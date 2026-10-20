@@ -1,9 +1,10 @@
 # CVEAGLContext
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-A type that resolves to an [`EAGLContext`](https://developer.apple.com/documentation/opengles/eaglcontext) pointer when appropriate.
+A type that resolves to an [`EAGLContext`](../OpenGLES/eaglcontext.md) pointer when appropriate.
 
 **Availability**:
 - iOS 4.0+
@@ -13,8 +14,28 @@ A type that resolves to an [`EAGLContext`](https://developer.apple.com/documenta
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS*
+
+```swift
+typealias CVEAGLContext = EAGLContext
+```
+
+*visionOS*
+
 ```swift
 typealias CVEAGLContext = UnsafeMutableRawPointer
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS*
+
+```c
+typedef EAGLContext * CVEAGLContext;
+```
+
+*visionOS*
+
+```c
+typedef void * CVEAGLContext;
 ```
 
 #### Discussion
@@ -23,7 +44,8 @@ Core Video can be included in procedural C projects as well as Objective-C proje
 
 ## See Also
 
-- [class CVOpenGLESTextureCache](cvopenglestexturecache.md)
+### Data Types
+- [class CVOpenGLESTextureCache](./cvopenglestexturecache.md)
 
 
 ---

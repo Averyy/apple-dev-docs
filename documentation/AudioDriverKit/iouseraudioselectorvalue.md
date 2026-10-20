@@ -1,7 +1,8 @@
 # IOUserAudioSelectorValue
 
 **Framework**: AudioDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of values managed by a selector control.
 
@@ -10,29 +11,30 @@ The type of values managed by a selector control.
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserAudioSelectorValue;
 ```
 
 #### Discussion
 
-AudioDriverKit selectors use [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t) values.
+AudioDriverKit selectors use [`uint32_t`](../kernel/uint32_t.md) values.
 
 ## See Also
 
-- [SetCurrentSelectedValues](iouseraudioselectorcontrol/setcurrentselectedvalues.md)
+### Accessing the Selected Values
+- [SetCurrentSelectedValues](./iouseraudioselectorcontrol/setcurrentselectedvalues.md)
   Sets the current selections of the selector.
-- [GetCurrentSelectedValues](iouseraudioselectorcontrol/getcurrentselectedvalues.md)
+- [GetCurrentSelectedValues](./iouseraudioselectorcontrol/getcurrentselectedvalues.md)
   Gets the current selections of the selector.
-- [GetControlValuesCount](iouseraudioselectorcontrol/getcontrolvaluescount.md)
+- [GetControlValuesCount](./iouseraudioselectorcontrol/getcontrolvaluescount.md)
   Gets the number of available selector values.
-- [AddControlValueDescriptions](iouseraudioselectorcontrol/addcontrolvaluedescriptions.md)
+- [AddControlValueDescriptions](./iouseraudioselectorcontrol/addcontrolvaluedescriptions.md)
   Add value descriptions to the selector control.
-- [RemoveControlValueDescriptions](iouseraudioselectorcontrol/removecontrolvaluedescriptions.md)
+- [RemoveControlValueDescriptions](./iouseraudioselectorcontrol/removecontrolvaluedescriptions.md)
   Removes value descriptions from the selector control.
-- [GetControlValueDescriptions](iouseraudioselectorcontrol/getcontrolvaluedescriptions.md)
+- [GetControlValueDescriptions](./iouseraudioselectorcontrol/getcontrolvaluedescriptions.md)
   Gets value descriptions used by the selector control.
-- [IOUserAudioSelectorValueDescription](iouseraudioselectorvaluedescription.md)
+- [IOUserAudioSelectorValueDescription](./iouseraudioselectorvaluedescription.md)
   A type that describes a value in a selection control.
 
 

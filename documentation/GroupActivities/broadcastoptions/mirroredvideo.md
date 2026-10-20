@@ -1,7 +1,8 @@
 # mirroredVideo
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to mirror video on its vertical axis.
 

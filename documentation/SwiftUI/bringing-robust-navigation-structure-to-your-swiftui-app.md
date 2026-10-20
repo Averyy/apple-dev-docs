@@ -1,6 +1,8 @@
 # Bringing robust navigation structure to your SwiftUI app
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [BringingRobustNavigationStructureToYourSwiftUIApp.zip](https://docs-assets.developer.apple.com/published/45511f40934b/BringingRobustNavigationStructureToYourSwiftUIApp.zip)
 
 Use navigation links, stacks, destinations, and paths to provide a streamlined experience for all platforms, as well as behaviors such as deep linking and state restoration.
 
@@ -13,25 +15,26 @@ Use navigation links, stacks, destinations, and paths to provide a streamlined e
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10054: The SwiftUI cookbook for navigation`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10054/).
+> **Note**: This sample code project is associated with WWDC22 session [10054: The SwiftUI cookbook for navigation](https://developer.apple.com/wwdc22/10054/).
 
 ## See Also
 
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
+### Presenting views in columns
+- [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
   Improve navigation behavior in your app by replacing navigation views with navigation stacks and navigation split views.
-- [struct NavigationSplitView](navigationsplitview.md)
+- [struct NavigationSplitView](./navigationsplitview.md)
   A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.
-- [func navigationSplitViewStyle<S>(S) -> some View](view/navigationsplitviewstyle(_:).md)
+- [func navigationSplitViewStyle<S>(S) -> some View](./view/navigationsplitviewstyle%28_%29.md)
   Sets the style for navigation split views within this view.
-- [func navigationSplitViewColumnWidth(CGFloat) -> some View](view/navigationsplitviewcolumnwidth(_:).md)
+- [func navigationSplitViewColumnWidth(CGFloat) -> some View](./view/navigationsplitviewcolumnwidth%28_%29.md)
   Sets a fixed, preferred width for the column containing this view.
-- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](view/navigationsplitviewcolumnwidth(min:ideal:max:).md)
+- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](./view/navigationsplitviewcolumnwidth%28min,ideal,max%29.md)
   Sets a flexible, preferred width for the column containing this view.
-- [struct NavigationSplitViewVisibility](navigationsplitviewvisibility.md)
+- [struct NavigationSplitViewVisibility](./navigationsplitviewvisibility.md)
   The visibility of the leading columns in a navigation split view.
-- [struct NavigationLink](navigationlink.md)
+- [struct NavigationLink](./navigationlink.md)
   A view that controls a navigation presentation.
-- [struct NavigationView](navigationview.md)
+- [struct NavigationView](./navigationview.md)
   A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 

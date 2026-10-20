@@ -1,7 +1,8 @@
 # uniform(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an absorption data set with the coefficient applied uniformly for every frequency.
 

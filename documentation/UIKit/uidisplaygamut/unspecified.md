@@ -1,7 +1,8 @@
 # UIDisplayGamut.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified gamut value.
 
@@ -18,11 +19,16 @@ An unspecified gamut value.
 case unspecified
 ```
 
+```c
+UIDisplayGamutUnspecified
+```
+
 ## See Also
 
-- [UIDisplayGamut.SRGB](uidisplaygamut/srgb.md)
+### Constants
+- [UIDisplayGamut.SRGB](./srgb.md)
   The sRGB display gamut.
-- [UIDisplayGamut.P3](uidisplaygamut/p3.md)
+- [UIDisplayGamut.P3](./p3.md)
   The P3 display gamut.
 
 

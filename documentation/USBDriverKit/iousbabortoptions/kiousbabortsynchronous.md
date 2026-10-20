@@ -1,7 +1,8 @@
 # kIOUSBAbortSynchronous
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Enqueue the abort request and wait for it to finish.
 
@@ -10,13 +11,14 @@ Enqueue the abort request and wait for it to finish.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBAbortSynchronous
 ```
 
 ## See Also
 
-- [kIOUSBAbortAsynchronous](iousbabortoptions/kiousbabortasynchronous.md)
+### Getting the Options
+- [kIOUSBAbortAsynchronous](./kiousbabortasynchronous.md)
   Enqueue the abort request and return immediately.
 
 

@@ -1,7 +1,8 @@
 # CVImageColorPrimaries.smpte_C
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Color primaries gamut for standard-definition video.
 

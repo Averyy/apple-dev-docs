@@ -1,7 +1,8 @@
 # DeviceHinge.Status
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The status of an individual hinge.
 
@@ -23,26 +24,27 @@ struct Status
 ## Topics
 
 ### Getting hinge status
-- [static var closed: DeviceHinge.Status](devicehinge/status-swift.struct/closed.md)
+- [static var closed: DeviceHinge.Status](./status-swift.struct/closed.md)
   The hinge is closed.
-- [static var fullyOpen: DeviceHinge.Status](devicehinge/status-swift.struct/fullyopen.md)
+- [static var fullyOpen: DeviceHinge.Status](./status-swift.struct/fullyopen.md)
   The hinge is open as far as the device allows.
-- [static var partiallyOpen: DeviceHinge.Status](devicehinge/status-swift.struct/partiallyopen.md)
+- [static var partiallyOpen: DeviceHinge.Status](./status-swift.struct/partiallyopen.md)
   The hinge is partially open.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var angle: Angle](devicehinge/angle.md)
+### Getting hinge information
+- [var angle: Angle](./angle.md)
   Current angle of the hinge.
-- [var status: DeviceHinge.Status](devicehinge/status-swift.property.md)
+- [var status: DeviceHinge.Status](./status-swift.property.md)
   Current status of the hinge.
 
 

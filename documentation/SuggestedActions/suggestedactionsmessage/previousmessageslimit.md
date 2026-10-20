@@ -1,7 +1,8 @@
 # previousMessagesLimit
 
 **Framework**: Suggested Actions  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of previous messages that contribute to generating suggested actions.
 
@@ -20,9 +21,9 @@ static var previousMessagesLimit: Int { get }
 
 #### Discussion
 
-When you pass an array of [`SuggestedActionsMessage`](suggestedactionsmessage.md) values to the `previousMessages` parameter of [`init(message:previousMessages:)`](suggestedactionsview/init(message:previousmessages:).md) or [`generate(message:previousMessages:)`](suggestedactionsview/generate(message:previousmessages:).md), the framework only considers a limited number of provided previous messages. `previousMessagesLimit` represents this limit. The framework ignores any older messages that exceed it.
+When you pass an array of [`SuggestedActionsMessage`](../suggestedactionsmessage.md) values to the `previousMessages` parameter of [`init(message:previousMessages:)`](../suggestedactionsview/init%28message,previousmessages%29.md) or [`generate(message:previousMessages:)`](../suggestedactionsview/generate%28message,previousmessages%29.md), the framework only considers a limited number of provided previous messages. `previousMessagesLimit` represents this limit. The framework ignores any older messages that exceed it.
 
-The value of `previousMessagesLimit` may change between OS releases. Read it at runtime rather than hardcoding a limit to avoid constructing [`SuggestedActionsMessage`](suggestedactionsmessage.md) instances that the framework doesn’t use, as shown in the following example:
+The value of `previousMessagesLimit` may change between OS releases. Read it at runtime rather than hardcoding a limit to avoid constructing [`SuggestedActionsMessage`](../suggestedactionsmessage.md) instances that the framework doesn’t use, as shown in the following example:
 
 ```swift
 let previousMessages = allPreviousMessages

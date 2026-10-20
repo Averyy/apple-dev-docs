@@ -1,7 +1,8 @@
 # AVCaptureOutput.DataDroppedReason.none
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system didn’t drop data.
 
@@ -19,13 +20,18 @@ The system didn’t drop data.
 case none
 ```
 
+```c
+AVCaptureOutputDataDroppedReasonNone
+```
+
 ## See Also
 
-- [AVCaptureOutput.DataDroppedReason.lateData](avcaptureoutput/datadroppedreason/latedata.md)
+### Reasons
+- [AVCaptureOutput.DataDroppedReason.lateData](./latedata.md)
   The system dropped data because you’ve configured capture output to drop data when delegate queue is in a blocked state, and there’s data to deliver.
-- [AVCaptureOutput.DataDroppedReason.outOfBuffers](avcaptureoutput/datadroppedreason/outofbuffers.md)
+- [AVCaptureOutput.DataDroppedReason.outOfBuffers](./outofbuffers.md)
   The system dropped data because the capture output exhausted its internal pool of memory buffers.
-- [AVCaptureOutput.DataDroppedReason.discontinuity](avcaptureoutput/datadroppedreason/discontinuity.md)
+- [AVCaptureOutput.DataDroppedReason.discontinuity](./discontinuity.md)
   The system dropped data because the device providing data experienced a discontinuity, and the output lost an unknown number of data objects.
 
 

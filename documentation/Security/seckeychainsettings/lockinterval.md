@@ -1,7 +1,8 @@
 # lockInterval
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds to wait before the keychain locks.
 
@@ -15,9 +16,13 @@ The number of seconds to wait before the keychain locks.
 var lockInterval: UInt32
 ```
 
+```c
+UInt32 lockInterval;
+```
+
 #### Discussion
 
-If you set [`useLockInterval`](seckeychainsettings/uselockinterval.md) to [`false`](https://developer.apple.com/documentation/swift/false), set [`lockInterval`](seckeychainsettings/lockinterval.md) to `INT_MAX` to indicate that the keychain never locks.
+If you set [`useLockInterval`](./uselockinterval.md) to [`false`](../../Swift/false.md), set [`lockInterval`](./lockinterval.md) to `INT_MAX` to indicate that the keychain never locks.
 
 
 ---

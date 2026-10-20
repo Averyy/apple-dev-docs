@@ -1,7 +1,8 @@
 # defaultToolTip
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text that appears in a tooltip by default.
 
@@ -17,15 +18,20 @@ The text that appears in a tooltip by default.
 var defaultToolTip: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * defaultToolTip;
+```
+
 #### Discussion
 
 Set this property to the default text to display in the tooltip.
 
-If you set the [`delegate`](uitooltipinteraction/delegate.md) property to an object that conforms to the [`UIToolTipInteractionDelegate`](uitooltipinteractiondelegate.md) protocol and implements the [`toolTipInteraction(_:configurationAt:)`](uitooltipinteractiondelegate/tooltipinteraction(_:configurationat:).md) method, then the return value of the delegate method determines the text that appears in the tooltip.
+If you set the [`delegate`](./delegate.md) property to an object that conforms to the [`UIToolTipInteractionDelegate`](../uitooltipinteractiondelegate.md) protocol and implements the [`toolTipInteraction(_:configurationAt:)`](../uitooltipinteractiondelegate/tooltipinteraction%28_,configurationat%29.md) method, then the return value of the delegate method determines the text that appears in the tooltip.
 
 ## See Also
 
-- [var isEnabled: Bool](uitooltipinteraction/isenabled.md)
+### Managing the interaction
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the tooltip interaction is in the enabled state.
 
 

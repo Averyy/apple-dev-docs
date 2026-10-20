@@ -1,13 +1,14 @@
 # PKShareablePassMetadata.Preview
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -16,42 +17,47 @@
 class Preview
 ```
 
+```objc
+@interface PKShareablePassMetadataPreview : PKAddPassMetadataPreview
+```
+
 ## Topics
 
 ### Initializers
-- [init(templateIdentifier: String)](pkshareablepassmetadata/preview-swift.class/init(templateidentifier:).md)
+- [init(templateIdentifier: String)](./preview-swift.class/init%28templateidentifier%29.md)
 ### Instance Properties
-- [var ownerDisplayName: String?](pkshareablepassmetadata/preview-swift.class/ownerdisplayname.md)
-- [var provisioningTemplateIdentifier: String?](pkshareablepassmetadata/preview-swift.class/provisioningtemplateidentifier.md)
+- [var ownerDisplayName: String?](./preview-swift.class/ownerdisplayname.md)
+- [var provisioningTemplateIdentifier: String?](./preview-swift.class/provisioningtemplateidentifier.md)
 
 ## Relationships
 
 ### Inherits From
-- [PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
+- [PKAddPassMetadataPreview](../pkaddpassmetadatapreview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKSecureElementPass](pksecureelementpass.md)
+### General purpose passes
+- [class PKSecureElementPass](../pksecureelementpass.md)
   A pass with a credential that the device stores in a certified payment information chip.
-- [class PKAddSecureElementPassConfiguration](pkaddsecureelementpassconfiguration.md)
+- [class PKAddSecureElementPassConfiguration](../pkaddsecureelementpassconfiguration.md)
   An object that describes the configuration of a secure element payment pass.
-- [class PKAddSecureElementPassViewController](pkaddsecureelementpassviewcontroller.md)
+- [class PKAddSecureElementPassViewController](../pkaddsecureelementpassviewcontroller.md)
   A view controller that manages the addition of secure element payment passes.
-- [class PKPass](pkpass.md)
+- [class PKPass](../pkpass.md)
   An object that represents a single pass.
-- [class PKAddPassesViewController](pkaddpassesviewcontroller.md)
+- [class PKAddPassesViewController](../pkaddpassesviewcontroller.md)
   Lets your app show a pass and prompt the user to add that pass to the pass library.
-- [struct AsyncShareablePassConfiguration](asyncshareablepassconfiguration.md)
-- [class PKShareSecureElementPassViewController](pksharesecureelementpassviewcontroller.md)
-- [protocol PKShareSecureElementPassViewControllerDelegate](pksharesecureelementpassviewcontrollerdelegate.md)
-- [enum PKShareSecureElementPassResult](pksharesecureelementpassresult.md)
+- [struct AsyncShareablePassConfiguration](../asyncshareablepassconfiguration.md)
+- [class PKShareSecureElementPassViewController](../pksharesecureelementpassviewcontroller.md)
+- [protocol PKShareSecureElementPassViewControllerDelegate](../pksharesecureelementpassviewcontrollerdelegate.md)
+- [enum PKShareSecureElementPassResult](../pksharesecureelementpassresult.md)
 
 
 ---

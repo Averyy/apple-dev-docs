@@ -1,7 +1,8 @@
 # ASAuthorizationPasswordRequest
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An authorization request that uses credentials stored in the keychain.
 
@@ -20,26 +21,31 @@ An authorization request that uses credentials stored in the keychain.
 class ASAuthorizationPasswordRequest
 ```
 
+```objc
+@interface ASAuthorizationPasswordRequest : ASAuthorizationRequest
+```
+
 ## Relationships
 
 ### Inherits From
-- [ASAuthorizationRequest](asauthorizationrequest.md)
+- [ASAuthorizationRequest](./asauthorizationrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func createRequest() -> ASAuthorizationPasswordRequest](asauthorizationpasswordprovider/createrequest.md)
+### Creating Requests
+- [func createRequest() -> ASAuthorizationPasswordRequest](./asauthorizationpasswordprovider/createrequest%28%29.md)
   Creates a new password authorization request.
 
 

@@ -1,7 +1,8 @@
 # device
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal device where the scene renders.
 
@@ -20,7 +21,7 @@ var device: any MTLDevice
 
 ## Mentions
 
-- [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
+- [Using Metal performance shaders to create custom postprocess effects](../../using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
 
 ---

@@ -1,13 +1,14 @@
 # CGDisplayStreamUpdateRectType.refreshedRects
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The rectangles for the portions of the display that were redrawn.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The rectangles for the portions of the display that were redrawn.
 case refreshedRects
 ```
 
+```c
+kCGDisplayStreamUpdateRefreshedRects
+```
+
 ## See Also
 
-- [CGDisplayStreamUpdateRectType.movedRects](cgdisplaystreamupdaterecttype/movedrects.md)
+### Constants
+- [CGDisplayStreamUpdateRectType.movedRects](./movedrects.md)
   The rectangles for the portions of the display that were simply moved from one part of the display to another.
-- [CGDisplayStreamUpdateRectType.dirtyRects](cgdisplaystreamupdaterecttype/dirtyrects.md)
+- [CGDisplayStreamUpdateRectType.dirtyRects](./dirtyrects.md)
   The union of both rectangles that were redrawn and rectangles that were moved.
-- [CGDisplayStreamUpdateRectType.reducedDirtyRects](cgdisplaystreamupdaterecttype/reduceddirtyrects.md)
+- [CGDisplayStreamUpdateRectType.reducedDirtyRects](./reduceddirtyrects.md)
   The union is calculated and then simplified. This reduces the number of rectangles returned to your app, but it may report some pixels that were not actually changed.
 
 

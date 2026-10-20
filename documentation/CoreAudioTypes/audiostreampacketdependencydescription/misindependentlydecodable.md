@@ -1,7 +1,8 @@
 # mIsIndependentlyDecodable
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var mIsIndependentlyDecodable: UInt32
+```
+
+```c
+UInt32 mIsIndependentlyDecodable;
 ```
 
 

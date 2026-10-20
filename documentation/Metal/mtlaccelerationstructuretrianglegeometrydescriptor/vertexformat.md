@@ -1,7 +1,8 @@
 # vertexFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of each vertex position in the vertex buffer property.
 
@@ -19,17 +20,22 @@ The format of each vertex position in the vertex buffer property.
 var vertexFormat: MTLAttributeFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLAttributeFormat vertexFormat;
+```
+
 #### Discussion
 
-Set this property to a value that represents the pixel format of the data you assign to the [`vertexBuffer`](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbuffer.md) property. The property’s default is [`MTLAttributeFormat.float3`](mtlattributeformat/float3.md).
+Set this property to a value that represents the pixel format of the data you assign to the [`vertexBuffer`](./vertexbuffer.md) property. The property’s default is [`MTLAttributeFormat.float3`](../mtlattributeformat/float3.md).
 
 ## See Also
 
-- [var vertexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbuffer.md)
+### Configuring vertex data
+- [var vertexBuffer: (any MTLBuffer)?](./vertexbuffer.md)
   A buffer that contains vertex data.
-- [var vertexBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbufferoffset.md)
+- [var vertexBufferOffset: Int](./vertexbufferoffset.md)
   The offset, in bytes, for the first vertex in the vertex buffer.
-- [var vertexStride: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexstride.md)
+- [var vertexStride: Int](./vertexstride.md)
   The stride, in bytes, between vertices in the vertex buffer.
 
 

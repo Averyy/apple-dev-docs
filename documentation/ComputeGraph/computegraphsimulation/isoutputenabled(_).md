@@ -1,7 +1,8 @@
 # isOutputEnabled(_:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the specified output is currently enabled for simulation.
 
@@ -12,7 +13,7 @@ Returns whether the specified output is currently enabled for simulation.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # reset(floatQuaternionArray:atTimes:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+

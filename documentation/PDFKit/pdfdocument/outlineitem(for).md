@@ -1,7 +1,8 @@
 # outlineItem(for:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the most likely parent PDF outline object for the selection.
 
@@ -19,6 +20,10 @@ Returns the most likely parent PDF outline object for the selection.
 func outlineItem(for selection: PDFSelection) -> PDFOutline?
 ```
 
+```objc
+- (PDFOutline *) outlineItemForSelection:(PDFSelection *) selection;
+```
+
 #### Return Value
 
 The PDF outline object that is the most likely parent of the specified selection. Note that only the point representing the first character of the selection is considered in this method.
@@ -33,19 +38,20 @@ Typically, outlines represent structural items such as chapters. You can use thi
 
 ## See Also
 
-- [var documentURL: URL?](pdfdocument/documenturl.md)
+### Accessing Document Information
+- [var documentURL: URL?](./documenturl.md)
   The URL for the document.
-- [var majorVersion: Int](pdfdocument/majorversion.md)
+- [var majorVersion: Int](./majorversion.md)
   The major version of the document.
-- [var minorVersion: Int](pdfdocument/minorversion.md)
+- [var minorVersion: Int](./minorversion.md)
   The minor version of the document.
-- [var string: String?](pdfdocument/string.md)
+- [var string: String?](./string.md)
   A string representing the textual content for the entire document.
-- [var outlineRoot: PDFOutline?](pdfdocument/outlineroot.md)
+- [var outlineRoot: PDFOutline?](./outlineroot.md)
   The document’s root outline to a PDF outline object.
-- [var documentAttributes: [AnyHashable : Any]?](pdfdocument/documentattributes.md)
+- [var documentAttributes: [AnyHashable : Any]?](./documentattributes.md)
   A dictionary of document metadata.
-- [var documentRef: CGPDFDocument?](pdfdocument/documentref.md)
+- [var documentRef: CGPDFDocument?](./documentref.md)
   The `CGPDFDocument` associated with the `PDFDocument` object.
 
 

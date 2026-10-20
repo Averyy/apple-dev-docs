@@ -1,7 +1,8 @@
 # convert(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the measurement to the specified unit.
 
@@ -20,13 +21,16 @@ Converts the measurement to the specified unit.
 mutating func convert(to otherUnit: UnitType)
 ```
 
+Available when `UnitType` inherits `Dimension`.
+
 ## Parameters
 
 - `otherUnit`: A unit of the same `Dimension`.
 
 ## See Also
 
-- [func converted(to: UnitType) -> Measurement<UnitType>](measurement/converted(to:).md)
+### Converting to Other Units
+- [func converted(to: UnitType) -> Measurement<UnitType>](./converted%28to%29.md)
   Returns a new measurement created by converting to the specified unit.
 
 

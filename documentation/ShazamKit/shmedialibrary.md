@@ -1,23 +1,30 @@
 # SHMediaLibrary
 
 **Framework**: ShazamKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the user’s Shazam library.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 18.0
+- iPadOS 15.0+ - Deprecated in 18.0
+- Mac Catalyst 15.0+ - Deprecated in 18.0
+- macOS 12.0+ - Deprecated in 15.0
+- tvOS 15.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 8.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use [`SHLibrary`](./shlibrary.md) instead.
 
 ## Declaration
 
 ```swift
 class SHMediaLibrary
+```
+
+```objc
+@interface SHMediaLibrary : NSObject
 ```
 
 #### Overview
@@ -29,26 +36,27 @@ Use `SHMediaLibrary` to add matched songs from the Shazam catalog to the user’
 ## Topics
 
 ### Adding a matched song to the library
-- [class var `default`: SHMediaLibrary](shmedialibrary/default.md)
+- [class var `default`: SHMediaLibrary](./shmedialibrary/default.md)
   An instance of the user’s default Shazam library.
-- [func add([SHMediaItem], completionHandler: ((any Error)?) -> Void)](shmedialibrary/add(_:completionhandler:).md)
+- [func add([SHMediaItem], completionHandler: ((any Error)?) -> Void)](./shmedialibrary/add%28_,completionhandler%29.md)
   Adds an array of songs to the user’s Shazam library.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SHLibrary](shlibrary.md)
+### Update the user’s Shazam library
+- [class SHLibrary](./shlibrary.md)
   An object that represents a user’s synced Shazam library.
 
 

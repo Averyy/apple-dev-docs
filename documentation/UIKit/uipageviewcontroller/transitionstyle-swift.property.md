@@ -1,7 +1,8 @@
 # transitionStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style used to transition between view controllers.
 
@@ -9,7 +10,7 @@ The style used to transition between view controllers.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ The style used to transition between view controllers.
 var transitionStyle: UIPageViewController.TransitionStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPageViewControllerTransitionStyle transitionStyle;
+```
+
 #### Discussion
 
 The value of this property is set when the page view controller is initialized, and cannot be changed.
 
 ## See Also
 
-- [var navigationOrientation: UIPageViewController.NavigationOrientation](uipageviewcontroller/navigationorientation-swift.property.md)
+### Display Options
+- [var navigationOrientation: UIPageViewController.NavigationOrientation](./navigationorientation-swift.property.md)
   The direction along which navigation occurs.
-- [UIPageViewController.NavigationOrientation](uipageviewcontroller/navigationorientation-swift.enum.md)
+- [UIPageViewController.NavigationOrientation](./navigationorientation-swift.enum.md)
   Orientations for page-turn transitions.
-- [var spineLocation: UIPageViewController.SpineLocation](uipageviewcontroller/spinelocation-swift.property.md)
+- [var spineLocation: UIPageViewController.SpineLocation](./spinelocation-swift.property.md)
   The location of the spine.
-- [UIPageViewController.SpineLocation](uipageviewcontroller/spinelocation-swift.enum.md)
+- [UIPageViewController.SpineLocation](./spinelocation-swift.enum.md)
   Locations for the spine.
-- [UIPageViewController.TransitionStyle](uipageviewcontroller/transitionstyle-swift.enum.md)
+- [UIPageViewController.TransitionStyle](./transitionstyle-swift.enum.md)
   Styles for the page-turn transition.
-- [var isDoubleSided: Bool](uipageviewcontroller/isdoublesided.md)
+- [var isDoubleSided: Bool](./isdoublesided.md)
   A Boolean value that indicates whether content appears on the back of pages.
 
 

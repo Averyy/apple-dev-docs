@@ -1,7 +1,8 @@
 # MTLIntersectionFunctionTableDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specification of how to create an intersection function table.
 
@@ -19,34 +20,39 @@ A specification of how to create an intersection function table.
 class MTLIntersectionFunctionTableDescriptor
 ```
 
+```objc
+@interface MTLIntersectionFunctionTableDescriptor : NSObject
+```
+
 ## Topics
 
 ### Configuring the table’s size
-- [var functionCount: Int](mtlintersectionfunctiontabledescriptor/functioncount.md)
+- [var functionCount: Int](./mtlintersectionfunctiontabledescriptor/functioncount.md)
   The number of entries in the intersection function table.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+### Intersection function tables
+- [protocol MTLIntersectionFunctionTable](./mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
-- [class MTLIntersectionFunctionDescriptor](mtlintersectionfunctiondescriptor.md)
+- [class MTLIntersectionFunctionDescriptor](./mtlintersectionfunctiondescriptor.md)
   A description of an intersection function that performs an intersection test.
-- [struct MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature.md)
+- [struct MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature.md)
   Constants for specifying different types of custom intersection functions.
-- [struct MTLIntersectionFunctionBufferArguments](mtlintersectionfunctionbufferarguments.md)
+- [struct MTLIntersectionFunctionBufferArguments](./mtlintersectionfunctionbufferarguments.md)
 
 
 ---

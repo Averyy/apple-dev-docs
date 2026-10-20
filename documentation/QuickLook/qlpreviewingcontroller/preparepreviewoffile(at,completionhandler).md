@@ -1,7 +1,8 @@
 # preparePreviewOfFile(at:completionHandler:)
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+optional func preparePreviewOfFile(at url: URL, completionHandler handler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 optional func preparePreviewOfFile(at url: URL) async throws
+```
+
+```objc
+- (void) preparePreviewOfFileAtURL:(NSURL *) url completionHandler:(void (^)(NSError *)) handler;
 ```
 
 #### Discussion

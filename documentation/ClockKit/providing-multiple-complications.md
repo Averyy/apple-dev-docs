@@ -1,6 +1,8 @@
 # Providing Multiple Complications
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: Sample Code  
+**Download**: [ProvidingMultipleComplications.zip](https://docs-assets.developer.apple.com/published/08ce5d5a7923/ProvidingMultipleComplications.zip)
 
 Present multiple complications for a single complication family using descriptors.
 
@@ -21,7 +23,7 @@ This sample provides three different complications.
 - The Total Cups complication displays the equivalent number of 8-ounce cups of regular coffee that the user drank based on the logged drinks. For example, if the user logs a double espresso, the Total Cups increases by 1.3 cups.
 - The Both Caffeine and Cups complication displays both the caffeine dose and the total equivalent cups drank.
 
-For most complication families, the app provides both the Caffeine Dose and the Total Cups complication; however, some families have enough space to display the Both Caffeine and Cups complication instead. For example, for the [`CLKComplicationFamily.graphicCircular`](clkcomplicationfamily/graphiccircular.md) family, Coffee Tracker provides a Caffeine Dose and a Total Cups complication, while it only provides the Both Caffeine and Cups complication for the  [`CLKComplicationFamily.graphicBezel`](clkcomplicationfamily/graphicbezel.md) family.
+For most complication families, the app provides both the Caffeine Dose and the Total Cups complication; however, some families have enough space to display the Both Caffeine and Cups complication instead. For example, for the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family, Coffee Tracker provides a Caffeine Dose and a Total Cups complication, while it only provides the Both Caffeine and Cups complication for the  [`CLKComplicationFamily.graphicBezel`](./clkcomplicationfamily/graphicbezel.md) family.
 
 ##### Configure the Sample Code Project
 
@@ -33,9 +35,9 @@ To add the complication to an active watch face, start by building and running t
 4. Scroll to the Coffee Tracker complication, and then click the Digital Crown again to save your changes.
 5. Tap the Coffee Tracker complication to go back to the app.
 
-For more information on setting up watch faces, see [`Change the watch face on your Apple Watch`](https://developer.apple.comhttps://support.apple.com/en-us/HT205536).
+For more information on setting up watch faces, see [Change the watch face on your Apple Watch](https://support.apple.com/en-us/HT205536).
 
-##### Define the Complications Supported By the App
+##### Define the Complications Supported by the App
 
 The Coffee Tracker app declares constants that contain an identifier and a display name for each type of complication that the app supports. The system uses the identifiers to define the different types of complications. It shows the display names when the user scrolls through the complications while configuring a watch face.
 
@@ -52,7 +54,7 @@ struct Complication {
 }
 ```
 
-Then, the complication data source’s [`getComplicationDescriptors(handler:)`](clkcomplicationdatasource/getcomplicationdescriptors(handler:).md) method creates a descriptor for each identifier.
+Then, the complication data source’s [`getComplicationDescriptors(handler:)`](./clkcomplicationdatasource/getcomplicationdescriptors%28handler%29.md) method creates a descriptor for each identifier.
 
 It starts by creating the descriptor for the Caffeine Dose complications. Here, the `supportedFamilies` parameter specifies that this complication is available for most (but not all) of the complication families.
 
@@ -113,7 +115,7 @@ The complications appear in the same order as the descriptor array. When the use
 
 ##### Create Timeline Entries for Each Type of Complication
 
-When the system calls the complication data source’s [`getCurrentTimelineEntry(for:withHandler:)`](clkcomplicationdatasource/getcurrenttimelineentry(for:withhandler:).md), [`getTimelineEntries(for:after:limit:withHandler:)`](clkcomplicationdatasource/gettimelineentries(for:after:limit:withhandler:).md), or [`getLocalizableSampleTemplate(for:withHandler:)`](clkcomplicationdatasource/getlocalizablesampletemplate(for:withhandler:).md) method to request new timeline entries, it passes a [`CLKComplication`](clkcomplication.md) object that contains the complication’s [`family`](clkcomplication/family.md) and  [`identifier`](clkcomplication/identifier.md).
+When the system calls the complication data source’s [`getCurrentTimelineEntry(for:withHandler:)`](./clkcomplicationdatasource/getcurrenttimelineentry%28for,withhandler%29.md), [`getTimelineEntries(for:after:limit:withHandler:)`](./clkcomplicationdatasource/gettimelineentries%28for,after,limit,withhandler%29.md), or [`getLocalizableSampleTemplate(for:withHandler:)`](./clkcomplicationdatasource/getlocalizablesampletemplate%28for,withhandler%29.md) method to request new timeline entries, it passes a [`CLKComplication`](./clkcomplication.md) object that contains the complication’s [`family`](./clkcomplication/family.md) and  [`identifier`](./clkcomplication/identifier.md).
 
 Coffee Tracker then creates a template based on the family and identifier pair by creating a switch statement for the pair.
 
@@ -130,7 +132,7 @@ case (.modularSmall, _):
     return createCaffeineModularSmallTemplate(forDate: date)
 ```
 
-> **Note**: If an app creates templates based on the complication’s `identifier` property, it must check for the [`CLKDefaultComplicationIdentifier`](clkdefaultcomplicationidentifier.md) default identifier. Coffee Tracker first explicitly checks for the Total Cups identifier and then uses the Caffeine Dose templates for any other identifiers.
+> **Note**: If an app creates templates based on the complication’s `identifier` property, it must check for the [`CLKDefaultComplicationIdentifier`](./clkdefaultcomplicationidentifier.md) default identifier. Coffee Tracker first explicitly checks for the Total Cups identifier and then uses the Caffeine Dose templates for any other identifiers.
 
 If the family only supports a single complication, the app just returns a template based on the family.
 
@@ -155,7 +157,8 @@ private func createCaffeineModularSmallTemplate(forDate date: Date) -> CLKCompli
 
 ## See Also
 
-- [Creating and updating a complication’s timeline](creating-and-updating-a-complication-s-timeline.md)
+### Sample Code
+- [Creating and updating a complication’s timeline](./creating-and-updating-a-complication-s-timeline.md)
   Create complications that batch-load a timeline of future entries and run periodic background sessions to update the timeline.
 
 

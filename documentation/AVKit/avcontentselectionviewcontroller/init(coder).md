@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view controller with data in an unarchiver.
 
@@ -21,7 +22,8 @@ Creates a view controller with data in an unarchiver.
 
 ## See Also
 
-- [init(nibName: String?, bundle: Bundle?)](avcontentselectionviewcontroller/init(nibname:bundle:).md)
+### Creating a view controller
+- [init(nibName: String?, bundle: Bundle?)](./init%28nibname,bundle%29.md)
   Creates a view controller with the nib file in the specified bundle.
 
 

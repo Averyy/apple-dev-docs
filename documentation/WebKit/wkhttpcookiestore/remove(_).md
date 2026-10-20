@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an observer from the cookie store.
 
@@ -18,15 +19,20 @@ Removes an observer from the cookie store.
 func remove(_ observer: any WKHTTPCookieStoreObserver)
 ```
 
+```objc
+- (void) removeObserver:(id<WKHTTPCookieStoreObserver>) observer;
+```
+
 ## Parameters
 
 - `observer`: The observer object to remove.
 
 ## See Also
 
-- [func add(any WKHTTPCookieStoreObserver)](wkhttpcookiestore/add(_:).md)
+### Observing cookie store changes
+- [func add(any WKHTTPCookieStoreObserver)](./add%28_%29.md)
   Adds an observer to the cookie store.
-- [protocol WKHTTPCookieStoreObserver](wkhttpcookiestoreobserver.md)
+- [protocol WKHTTPCookieStoreObserver](../wkhttpcookiestoreobserver.md)
   The methods to adopt in an object that monitors changes to a webpage’s cookies.
 
 

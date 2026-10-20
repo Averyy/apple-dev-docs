@@ -1,7 +1,8 @@
 # windowingBehaviors
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that specifies the behaviors of the window.
 
@@ -18,15 +19,20 @@ An object that specifies the behaviors of the window.
 var windowingBehaviors: UISceneWindowingBehaviors? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UISceneWindowingBehaviors * windowingBehaviors;
+```
+
 #### Discussion
 
 For Mac apps built with Mac Catalyst, use this property to specify whether the scene’s window displays minimize and close buttons. This property is `nil` on unsupported platforms.
 
 ## See Also
 
-- [var isFullScreen: Bool](uiwindowscene/isfullscreen.md)
+### Determining window behaviors
+- [var isFullScreen: Bool](./isfullscreen.md)
   A Boolean value that indicates whether the window scene is full screen or windowed.
-- [class UISceneWindowingBehaviors](uiscenewindowingbehaviors.md)
+- [class UISceneWindowingBehaviors](../uiscenewindowingbehaviors.md)
   An object with properties that determine the behavior of a window.
 
 

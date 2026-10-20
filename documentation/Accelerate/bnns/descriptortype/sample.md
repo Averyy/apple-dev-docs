@@ -1,7 +1,8 @@
 # BNNS.DescriptorType.sample
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sample such as input or output.
 
@@ -11,8 +12,10 @@ A sample such as input or output.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,9 +25,10 @@ case sample
 
 ## See Also
 
-- [BNNS.DescriptorType.constant](bnns/descriptortype/constant.md)
+### Descriptor Types
+- [BNNS.DescriptorType.constant](./constant.md)
   A constant that doesn’t have a gradient.
-- [BNNS.DescriptorType.parameter](bnns/descriptortype/parameter.md)
+- [BNNS.DescriptorType.parameter](./parameter.md)
   A parameter that’s trainable, such as weights or bias.
 
 

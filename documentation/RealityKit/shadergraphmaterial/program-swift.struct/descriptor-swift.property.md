@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor used to create this program.
 
@@ -21,7 +22,8 @@ var descriptor: ShaderGraphMaterial.Program.Descriptor { get }
 
 ## See Also
 
-- [ShaderGraphMaterial.Program.Descriptor](shadergraphmaterial/program-swift.struct/descriptor-swift.struct.md)
+### Accessing the descriptor
+- [ShaderGraphMaterial.Program.Descriptor](./descriptor-swift.struct.md)
 
 
 ---

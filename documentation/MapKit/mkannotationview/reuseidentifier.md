@@ -1,7 +1,8 @@
 # reuseIdentifier
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that identifies that the annotation view is reusable.
 
@@ -19,6 +20,10 @@ The string that identifies that the annotation view is reusable.
 var reuseIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * reuseIdentifier;
+```
+
 #### Discussion
 
 You specify the reuse identifier when you create the view. You use this type to retrieve an annotation view that MapKit isn’t currently using because its annotation isn’t onscreen.
@@ -27,17 +32,18 @@ If you define distinctly different types of annotations (with distinctly differe
 
 ## See Also
 
-- [var isEnabled: Bool](mkannotationview/isenabled.md)
+### Getting and setting attributes
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the annotation is in an enabled state.
-- [var image: UIImage?](mkannotationview/image.md)
+- [var image: UIImage?](./image.md)
   The image the annotation view displays.
-- [var isHighlighted: Bool](mkannotationview/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the map view highlights the annotation view.
-- [var annotation: (any MKAnnotation)?](mkannotationview/annotation.md)
+- [var annotation: (any MKAnnotation)?](./annotation.md)
   The annotation object associated with the view.
-- [var centerOffset: CGPoint](mkannotationview/centeroffset.md)
+- [var centerOffset: CGPoint](./centeroffset.md)
   The offset (in points) at which to display the view.
-- [var calloutOffset: CGPoint](mkannotationview/calloutoffset.md)
+- [var calloutOffset: CGPoint](./calloutoffset.md)
   The offset (in points) at which to place the callout.
 
 

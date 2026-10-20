@@ -1,16 +1,21 @@
 # kerberos_principal
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kerberos_principal: es_string_token_t
+```
+
+```c
+es_string_token_t kerberos_principal;
 ```
 
 

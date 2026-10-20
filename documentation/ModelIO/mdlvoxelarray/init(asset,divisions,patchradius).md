@@ -1,7 +1,8 @@
 # init(asset:divisions:patchRadius:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(asset: MDLAsset, divisions: Int32, patchRadius: Float)
+```
+
+```objc
+- (instancetype) initWithAsset:(MDLAsset *) asset divisions:(int) divisions patchRadius:(float) patchRadius;
 ```
 
 

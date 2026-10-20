@@ -1,7 +1,8 @@
 # Augmenter
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An augmenter.
 
@@ -22,40 +23,41 @@ struct Augmenter<RandomTransformer, RandomNumberGenerator> where RandomTransform
 
 ## Mentions
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+- [Augmenting images to expand your training data](./augmenting-images-to-expand-your-training-data.md)
 
 ## Topics
 
 ### Creating an augmenter
-- [init<Input>(generator: RandomNumberGenerator, () -> RandomTransformer)](augmenter/init(generator:_:).md)
+- [init<Input>(generator: RandomNumberGenerator, () -> RandomTransformer)](./augmenter/init%28generator,_%29.md)
   Creates an augmenter from a random number generator and an augmentation builder.
 ### Applying an augmentation
-- [func applied<S, Annotation>(to: S) -> AugmentationSequence<S, RandomTransformer, RandomNumberGenerator, Annotation>](augmenter/applied(to:).md)
+- [func applied<S, Annotation>(to: S) -> AugmentationSequence<S, RandomTransformer, RandomNumberGenerator, Annotation>](./augmenter/applied%28to%29.md)
   Applies an augmentation per input of the base sequence.
-- [func applied<C, Annotation>(to: C, upsampledBy: Int) -> UpsampledAugmentationSequence<C, RandomTransformer, RandomNumberGenerator, Annotation>](augmenter/applied(to:upsampledby:).md)
+- [func applied<C, Annotation>(to: C, upsampledBy: Int) -> UpsampledAugmentationSequence<C, RandomTransformer, RandomNumberGenerator, Annotation>](./augmenter/applied%28to,upsampledby%29.md)
   Applies an augmentation repeatedly to an array of inputs.
 
 ## See Also
 
-- [struct ApplyEachRandomly](applyeachrandomly.md)
+### Augmentations
+- [struct ApplyEachRandomly](./applyeachrandomly.md)
   Applies each transformer randomly given a probability.
-- [struct ApplyRandomly](applyrandomly.md)
+- [struct ApplyRandomly](./applyrandomly.md)
   Randomly applies the transformer with the given probability.
-- [struct AugmentationBuilder](augmentationbuilder.md)
+- [struct AugmentationBuilder](./augmentationbuilder.md)
   A series of augmentations.
-- [struct AugmentationSequence](augmentationsequence.md)
+- [struct AugmentationSequence](./augmentationsequence.md)
   An async sequence of augmented elements.
-- [struct ChooseRandomly](chooserandomly.md)
+- [struct ChooseRandomly](./chooserandomly.md)
   Apply single transformation randomly chosen from a list of transformers.
-- [struct RandomImageCropper](randomimagecropper.md)
+- [struct RandomImageCropper](./randomimagecropper.md)
   Crops an image at a random location.
-- [struct ShuffleRandomly](shufflerandomly.md)
+- [struct ShuffleRandomly](./shufflerandomly.md)
   Apply transformations in a random order.
-- [struct UniformRandomFloatingPointParameter](uniformrandomfloatingpointparameter.md)
+- [struct UniformRandomFloatingPointParameter](./uniformrandomfloatingpointparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [class UniformRandomIntegerParameter](uniformrandomintegerparameter.md)
+- [class UniformRandomIntegerParameter](./uniformrandomintegerparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [struct UpsampledAugmentationSequence](upsampledaugmentationsequence.md)
+- [struct UpsampledAugmentationSequence](./upsampledaugmentationsequence.md)
   An async sequence of augmented elements.
 
 

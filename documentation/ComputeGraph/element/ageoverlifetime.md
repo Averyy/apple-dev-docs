@@ -1,13 +1,14 @@
 # element::ageOverLifetime
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the normalized age of the element as a ratio of its lifetime.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ A normalized value representing age divided by lifetime
 
 Use this function to get a value between 0.0 (just created) and 1.0 (end of life), which is ideal for interpolating properties over the element’s lifetime.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/element__ageOverLifetime.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__ageOverLifetime.svg)
 
 
 ---

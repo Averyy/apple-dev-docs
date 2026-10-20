@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the buffered input state that best aligns with the provided spatial accessory anchor timestamp.
@@ -13,6 +14,10 @@ Returns the buffered input state that best aligns with the provided spatial acce
 
 ```swift
 func inputState(forSpatialAccessoryAnchorTimestamp timestamp: TimeInterval) -> (any GCDevicePhysicalInputState)?
+```
+
+```objc
+- (id<GCDevicePhysicalInputState>) inputStateForSpatialAccessoryAnchorTimestamp:(NSTimeInterval) timestamp;
 ```
 
 #### Return Value

@@ -1,19 +1,21 @@
 # Version
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 One byte that specifies the version of this header atom.
 
 ## See Also
 
-- [Size](extended_language_tag_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this media header atom.
-- [Type](extended_language_tag_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Flags](extended_language_tag_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes of space for media header flags.
-- [Language tag string](extended_language_tag_atom/language_tag_string.md)
+- [Language tag string](./language_tag_string.md)
   A string containing a language tag.
 
 

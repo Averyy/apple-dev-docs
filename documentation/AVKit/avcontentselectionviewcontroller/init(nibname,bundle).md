@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view controller with the nib file in the specified bundle.
 
@@ -17,7 +18,8 @@ Creates a view controller with the nib file in the specified bundle.
 
 ## See Also
 
-- [init?(coder: NSCoder)](avcontentselectionviewcontroller/init(coder:).md)
+### Creating a view controller
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a view controller with data in an unarchiver.
 
 

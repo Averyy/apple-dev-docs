@@ -1,7 +1,8 @@
 # kMDItemKind
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A description of the kind of item this file represents. A CFString.
 
@@ -12,6 +13,10 @@ A description of the kind of item this file represents. A CFString.
 
 ```swift
 let kMDItemKind: CFString!
+```
+
+```c
+const CFStringRef kMDItemKind;
 ```
 
 

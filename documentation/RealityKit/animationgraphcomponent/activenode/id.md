@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique identifier of the node within the compiled graph.
@@ -22,7 +23,8 @@ var id: Int { get }
 
 ## See Also
 
-- [var wasReset: Bool](animationgraphcomponent/activenode/wasreset.md)
+### Inspecting the active node
+- [var wasReset: Bool](./wasreset.md)
   A Boolean value that indicates whether the node was reset during the last evaluation tick.
 
 

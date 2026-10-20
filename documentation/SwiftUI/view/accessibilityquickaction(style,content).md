@@ -1,7 +1,8 @@
 # accessibilityQuickAction(style:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a quick action to be shown by the system when active.
 
@@ -19,7 +20,7 @@ func accessibilityQuickAction<Style, Content>(style: Style, @ContentBuilder cont
 
 The quick action will automatically become active when the view appears. If the view is disabled, the action will defer becoming active until the view is no longer disabled.
 
-The following example shows how to add a quick action to pause and resume a workout, with the [`prompt`](accessibilityquickactionstyle/prompt.md) style.
+The following example shows how to add a quick action to pause and resume a workout, with the [`prompt`](../accessibilityquickactionstyle/prompt.md) style.
 
 ```swift
 @State private var isPaused = false
@@ -34,7 +35,7 @@ var body: some View {
 }
 ```
 
-The following example shows how to add a quick action to play and pause music, with the [`outline`](accessibilityquickactionstyle/outline.md) style.
+The following example shows how to add a quick action to play and pause music, with the [`outline`](../accessibilityquickactionstyle/outline.md) style.
 
 ```swift
 @State private var isPlaying = false
@@ -52,9 +53,10 @@ var body: some View {
 
 ## See Also
 
-- [func accessibilityQuickAction<Style, Content>(style: Style, isActive: Binding<Bool>, content: () -> Content) -> some View](view/accessibilityquickaction(style:isactive:content:).md)
+### Offering Quick Actions to people
+- [func accessibilityQuickAction<Style, Content>(style: Style, isActive: Binding<Bool>, content: () -> Content) -> some View](./accessibilityquickaction%28style,isactive,content%29.md)
   Adds a quick action to be shown by the system when active.
-- [protocol AccessibilityQuickActionStyle](accessibilityquickactionstyle.md)
+- [protocol AccessibilityQuickActionStyle](../accessibilityquickactionstyle.md)
   A type that describes the presentation style of an accessibility quick action.
 
 

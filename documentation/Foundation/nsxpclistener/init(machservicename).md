@@ -1,7 +1,8 @@
 # init(machServiceName:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a listener in a LaunchAgent or LaunchDaemon which has a name advertised in a `launchd.plist` file.
 
@@ -12,6 +13,10 @@ Initializes a listener in a LaunchAgent or LaunchDaemon which has a name adverti
 
 ```swift
 init(machServiceName name: String)
+```
+
+```objc
+- (instancetype) initWithMachServiceName:(NSString *) name;
 ```
 
 #### Discussion

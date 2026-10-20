@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description of the document the app requests.
 
@@ -17,17 +18,22 @@ The description of the document the app requests.
 var descriptor: (any PKIdentityDocumentDescriptor)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id<PKIdentityDocumentDescriptor> descriptor;
+```
+
 #### Discussion
 
-Set this property before you invoke [`requestDocument(_:completion:)`](pkidentityauthorizationcontroller/requestdocument(_:completion:).md).
+Set this property before you invoke [`requestDocument(_:completion:)`](../pkidentityauthorizationcontroller/requestdocument%28_,completion%29.md).
 
 ## See Also
 
-- [var nonce: Data?](pkidentityrequest/nonce.md)
+### Configuring an identity request
+- [var nonce: Data?](./nonce.md)
   An arbitrary number that the signed response playload includes.
-- [var merchantIdentifier: String?](pkidentityrequest/merchantidentifier.md)
+- [var merchantIdentifier: String?](./merchantidentifier.md)
   A value that represents the merchant that makes the request.
-- [var usageDescriptionKey: String?](pkidentityrequest/usagedescriptionkey.md)
+- [var usageDescriptionKey: String?](./usagedescriptionkey.md)
   The key in your app’s information property list that describes the reason for an identity request.
 
 

@@ -1,7 +1,8 @@
 # isLightingEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if particles are affected by scene lighting.
 

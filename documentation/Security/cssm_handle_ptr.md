@@ -1,7 +1,8 @@
 # CSSM_HANDLE_PTR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_HANDLE_PTR = UnsafeMutablePointer<CSSM_INTPTR>
+```
+
+```c
+typedef CSSM_INTPTR * CSSM_HANDLE_PTR;
 ```
 
 

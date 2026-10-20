@@ -1,7 +1,8 @@
 # sectionFootersPinToVisibleBounds
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,9 +13,14 @@
 var sectionFootersPinToVisibleBounds: Bool { get set }
 ```
 
+```objc
+@property BOOL sectionFootersPinToVisibleBounds;
+```
+
 ## See Also
 
-- [var sectionHeadersPinToVisibleBounds: Bool](nscollectionviewflowlayout/sectionheaderspintovisiblebounds.md)
+### Instance Properties
+- [var sectionHeadersPinToVisibleBounds: Bool](./sectionheaderspintovisiblebounds.md)
 
 
 ---

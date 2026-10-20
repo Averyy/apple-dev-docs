@@ -1,7 +1,8 @@
 # AppAssetLibraryLinkageResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of an app asset library resource linked to an app.
 
@@ -10,13 +11,13 @@ The type and ID of an app asset library resource linked to an app.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryLinkageResponse.Data
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appAssetLibraries`
 - `id` (string) *(required)*
 
 

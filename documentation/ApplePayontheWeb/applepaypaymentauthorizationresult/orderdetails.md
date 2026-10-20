@@ -1,7 +1,8 @@
 # orderDetails
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional metadata for an order that the customer placed using this payment method.
 
@@ -11,13 +12,14 @@ Optional metadata for an order that the customer placed using this payment metho
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentOrderDetails orderDetails;
 ```
 
 ## See Also
 
-- [ApplePayPaymentOrderDetails](applepaypaymentorderdetails.md)
+### Providing order details
+- [ApplePayPaymentOrderDetails](../applepaypaymentorderdetails.md)
   A dictionary that contains metadata related to an order.
 
 

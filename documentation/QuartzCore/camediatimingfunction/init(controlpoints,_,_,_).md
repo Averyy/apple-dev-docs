@@ -1,7 +1,8 @@
 # init(controlPoints:_:_:_:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized timing function modeled as a cubic Bézier curve using the specified control points.
 
@@ -17,6 +18,10 @@ Returns an initialized timing function modeled as a cubic Bézier curve using th
 
 ```swift
 init(controlPoints c1x: Float, _ c1y: Float, _ c2x: Float, _ c2y: Float)
+```
+
+```objc
+- (instancetype) initWithControlPoints:(float) c1x :(float) c1y :(float) c2x :(float) c2y;
 ```
 
 #### Return Value
@@ -36,7 +41,8 @@ The end points of the Bézier curve are automatically set to (0.0,0.0) and (1.0,
 
 ## See Also
 
-- [convenience init(name: CAMediaTimingFunctionName)](camediatimingfunction/init(name:).md)
+### Creating Timing Functions
+- [convenience init(name: CAMediaTimingFunctionName)](./init%28name%29.md)
   Creates and returns a new instance of `CAMediaTimingFunction` configured with the predefined timing function specified by `name`.
 
 

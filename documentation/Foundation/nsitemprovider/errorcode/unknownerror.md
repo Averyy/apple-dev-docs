@@ -1,7 +1,8 @@
 # NSItemProvider.ErrorCode.unknownError
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code indicating an unknown error with consuming data from an item provider.
 
@@ -20,13 +21,18 @@ An error code indicating an unknown error with consuming data from an item provi
 case unknownError
 ```
 
+```c
+NSItemProviderUnknownError
+```
+
 ## See Also
 
-- [NSItemProvider.ErrorCode.itemUnavailableError](nsitemprovider/errorcode/itemunavailableerror.md)
+### Constants
+- [NSItemProvider.ErrorCode.itemUnavailableError](./itemunavailableerror.md)
   An error code indicating that the requested data was unavailable from an item provider.
-- [NSItemProvider.ErrorCode.unavailableCoercionError](nsitemprovider/errorcode/unavailablecoercionerror.md)
+- [NSItemProvider.ErrorCode.unavailableCoercionError](./unavailablecoercionerror.md)
   An error code indicating that the requested data type coercion is unavailable from an item provider.
-- [NSItemProvider.ErrorCode.unexpectedValueClassError](nsitemprovider/errorcode/unexpectedvalueclasserror.md)
+- [NSItemProvider.ErrorCode.unexpectedValueClassError](./unexpectedvalueclasserror.md)
   An error code indicating that type coercion to the requested class failed.
 
 

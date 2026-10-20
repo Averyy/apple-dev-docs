@@ -1,7 +1,8 @@
 # setCanControlQuickLookPanel(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether the view can automatically take control of the QuickLook panel.
 
@@ -14,17 +15,22 @@ Specifies whether the view can automatically take control of the QuickLook panel
 func setCanControlQuickLookPanel(_ flag: Bool)
 ```
 
+```objc
+- (void) setCanControlQuickLookPanel:(BOOL) flag;
+```
+
 #### Discussion
 
-When the browser view displays the QuickLook panel it sets itself as the QuickLook datasource. If the browser cells returned by the datasource return items that are URLs or paths, then the QuickLook panel will display the image at that location. Otherwise, the browser cell must implement the [`QLPreviewItem`](https://developer.apple.com/documentation/quicklook/qlpreviewitem) protocol and return the requested URL for the custom cell.
+When the browser view displays the QuickLook panel it sets itself as the QuickLook datasource. If the browser cells returned by the datasource return items that are URLs or paths, then the QuickLook panel will display the image at that location. Otherwise, the browser cell must implement the [`QLPreviewItem`](../../QuickLook/qlpreviewitem.md) protocol and return the requested URL for the custom cell.
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/swift/true), if the view can display the QuickLook panel, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+- `flag`: [`true`](../../Swift/true.md), if the view can display the QuickLook panel, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func canControlQuickLookPanel() -> Bool](ikimagebrowserview/cancontrolquicklookpanel.md)
+### QuickLook Support
+- [func canControlQuickLookPanel() -> Bool](./cancontrolquicklookpanel%28%29.md)
   Returns whether the view can automatically take control of the QuickLook panel.
 
 

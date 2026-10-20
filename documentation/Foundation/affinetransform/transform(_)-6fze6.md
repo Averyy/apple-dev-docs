@@ -1,7 +1,8 @@
 # transform(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the affine transform to the specified size.
 
@@ -24,7 +25,8 @@ A size that represents dimensions in a transformed coordinate space.
 
 ## See Also
 
-- [func transform(NSPoint) -> NSPoint](affinetransform/transform(_:)-1ozpp.md)
+### Transforming Data and Objects
+- [func transform(NSPoint) -> NSPoint](./transform%28_%29-1ozpp.md)
   Applies the affine transform to the specified point.
 
 

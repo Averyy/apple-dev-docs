@@ -1,14 +1,15 @@
 # presentationContextProvider
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that provides a display context in which the system can present an authorization interface to the user.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

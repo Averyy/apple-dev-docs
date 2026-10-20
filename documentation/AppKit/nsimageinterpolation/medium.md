@@ -1,7 +1,8 @@
 # NSImageInterpolation.medium
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Medium quality, slower than the low interpolation option.
 
@@ -14,15 +15,20 @@ Medium quality, slower than the low interpolation option.
 case medium
 ```
 
+```c
+NSImageInterpolationMedium
+```
+
 ## See Also
 
-- [NSImageInterpolation.default](nsimageinterpolation/default.md)
+### Constants
+- [NSImageInterpolation.default](./default.md)
   Use the context’s default interpolation.
-- [NSImageInterpolation.none](nsimageinterpolation/none.md)
+- [NSImageInterpolation.none](./none.md)
   No interpolation.
-- [NSImageInterpolation.low](nsimageinterpolation/low.md)
+- [NSImageInterpolation.low](./low.md)
   Fast, low-quality interpolation.
-- [NSImageInterpolation.high](nsimageinterpolation/high.md)
+- [NSImageInterpolation.high](./high.md)
   Highest quality, slower than the medium interpolation option.
 
 

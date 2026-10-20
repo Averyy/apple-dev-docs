@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a value from a uniform, independent distribution of binary data.
@@ -29,9 +30,16 @@ An unsigned 64-bit random value.
 
 Use this method when you need random binary data to generate another value. If you need an integer value within a specific range, use the static `random(in:using:)` method on that integer type instead of this method.
 
+## Default Implementations
+
+### RandomNumberGenerator Implementations
+- [func next<T>() -> T](./next%28%29-6auxg.md)
+  Returns a value from a uniform, independent distribution of binary data.
+
 ## See Also
 
-- [func next<T>(upperBound: T) -> T](randomnumbergenerator/next(upperbound:).md)
+### Generating Random Binary Data
+- [func next<T>(upperBound: T) -> T](./next%28upperbound%29.md)
   Returns a random value that is less than the given upper bound.
 
 

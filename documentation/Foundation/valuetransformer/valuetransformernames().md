@@ -1,7 +1,8 @@
 # valueTransformerNames()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of all the registered value transformers.
 
@@ -20,17 +21,22 @@ Returns an array of all the registered value transformers.
 class func valueTransformerNames() -> [NSValueTransformerName]
 ```
 
+```objc
++ (NSArray<NSString *> *) valueTransformerNames;
+```
+
 #### Return Value
 
 An array of all the registered value transformers.
 
 ## See Also
 
-- [class func setValueTransformer(ValueTransformer?, forName: NSValueTransformerName)](valuetransformer/setvaluetransformer(_:forname:).md)
+### Using the Name-Based Registry
+- [class func setValueTransformer(ValueTransformer?, forName: NSValueTransformerName)](./setvaluetransformer%28_,forname%29.md)
   Registers the provided value transformer with a given identifier.
-- [init?(forName: NSValueTransformerName)](valuetransformer/init(forname:).md)
+- [init?(forName: NSValueTransformerName)](./init%28forname%29.md)
   Returns the value transformer identified by a given identifier.
-- [struct NSValueTransformerName](nsvaluetransformername.md)
+- [struct NSValueTransformerName](../nsvaluetransformername.md)
   Named value transformers defined by `NSValueTransformer`.
 
 

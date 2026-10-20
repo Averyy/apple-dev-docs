@@ -1,7 +1,8 @@
 # SCDynamicStoreCopyMultiple(_:_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the key-value pairs that match the specified keys and key patterns.
 
@@ -12,6 +13,10 @@ Returns the key-value pairs that match the specified keys and key patterns.
 
 ```swift
 func SCDynamicStoreCopyMultiple(_ store: SCDynamicStore?, _ keys: CFArray?, _ patterns: CFArray?) -> CFDictionary?
+```
+
+```c
+CFDictionaryRefSCDynamicStoreCopyMultiple(SCDynamicStoreRef store, CFArrayRef keys, CFArrayRef patterns);
 ```
 
 #### Return Value
@@ -26,11 +31,12 @@ A dictionary of key-value pairs that match the specified keys and key patterns, 
 
 ## See Also
 
-- [func SCDynamicStoreCopyKeyList(SCDynamicStore?, CFString) -> CFArray?](scdynamicstorecopykeylist(_:_:).md)
+### Getting Keys and Values
+- [func SCDynamicStoreCopyKeyList(SCDynamicStore?, CFString) -> CFArray?](./scdynamicstorecopykeylist%28_,_%29.md)
   Returns the keys that represent the current dynamic store entries that match the specified pattern.
-- [func SCDynamicStoreCopyNotifiedKeys(SCDynamicStore) -> CFArray?](scdynamicstorecopynotifiedkeys(_:).md)
+- [func SCDynamicStoreCopyNotifiedKeys(SCDynamicStore) -> CFArray?](./scdynamicstorecopynotifiedkeys%28_%29.md)
   Returns the keys that have changed since the last call to this function.
-- [func SCDynamicStoreCopyValue(SCDynamicStore?, CFString) -> CFPropertyList?](scdynamicstorecopyvalue(_:_:).md)
+- [func SCDynamicStoreCopyValue(SCDynamicStore?, CFString) -> CFPropertyList?](./scdynamicstorecopyvalue%28_,_%29.md)
   Returns the value associated with the specified key.
 
 

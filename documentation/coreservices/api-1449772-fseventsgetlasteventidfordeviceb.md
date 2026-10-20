@@ -1,7 +1,8 @@
 # FSEventsGetLastEventIdForDeviceBeforeTime(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventsGetLastEventIdForDeviceBeforeTime(_ dev: dev_t, _ time: CFAbsoluteTime) -> FSEventStreamEventId
 ```
 
-#### Return_value
+```c
+FSEventStreamEventId FSEventsGetLastEventIdForDeviceBeforeTime(dev_t dev, CFAbsoluteTime time);
+```
+
+#### Return Value
 
 The last event ID for the given device that was returned before the given time.
 

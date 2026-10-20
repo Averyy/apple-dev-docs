@@ -1,7 +1,8 @@
 # caTransform3DValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CoreAnimation transform structure representation of the value.
 
@@ -19,11 +20,17 @@ The CoreAnimation transform structure representation of the value.
 var caTransform3DValue: CATransform3D { get }
 ```
 
+```objc
+@property (readonly) CATransform3D CATransform3DValue;
+```
+
 ## See Also
 
-- [struct CATransform3D](../quartzcore/catransform3d.md)
+### Related Documentation
+- [struct CATransform3D](../../QuartzCore/catransform3d.md)
   The standard transform matrix used throughout Core Animation.
-- [init(CATransform3D: CATransform3D)](nsvalue/init(catransform3d:).md)
+### Working with CoreAnimation Transform Values
+- [init(CATransform3D: CATransform3D)](./init%28catransform3d%29.md)
   Creates a new value object containing the specified CoreAnimation transform structure.
 
 

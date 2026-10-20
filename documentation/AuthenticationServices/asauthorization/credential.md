@@ -1,7 +1,8 @@
 # credential
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information provided about a user after successful authentication.
 
@@ -20,9 +21,14 @@ Information provided about a user after successful authentication.
 var credential: any ASAuthorizationCredential { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) id<ASAuthorizationCredential> credential;
+```
+
 ## See Also
 
-- [protocol ASAuthorizationCredential](asauthorizationcredential.md)
+### Getting the Credential
+- [protocol ASAuthorizationCredential](../asauthorizationcredential.md)
   An interface that all credentials share.
 
 

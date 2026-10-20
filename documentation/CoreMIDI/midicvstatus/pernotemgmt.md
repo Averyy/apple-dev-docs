@@ -1,16 +1,17 @@
 # MIDICVStatus.perNoteMgmt
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@
 case perNoteMgmt
 ```
 
+```c
+kMIDICVStatusPerNoteMgmt
+```
+
 ## See Also
 
-- [MIDICVStatus.registeredPNC](midicvstatus/registeredpnc.md)
-- [MIDICVStatus.assignablePNC](midicvstatus/assignablepnc.md)
-- [MIDICVStatus.registeredControl](midicvstatus/registeredcontrol.md)
-- [MIDICVStatus.assignableControl](midicvstatus/assignablecontrol.md)
-- [MIDICVStatus.relRegisteredControl](midicvstatus/relregisteredcontrol.md)
-- [MIDICVStatus.relAssignableControl](midicvstatus/relassignablecontrol.md)
-- [MIDICVStatus.perNotePitchBend](midicvstatus/pernotepitchbend.md)
+### MIDI 2.0
+- [MIDICVStatus.registeredPNC](./registeredpnc.md)
+- [MIDICVStatus.assignablePNC](./assignablepnc.md)
+- [MIDICVStatus.registeredControl](./registeredcontrol.md)
+- [MIDICVStatus.assignableControl](./assignablecontrol.md)
+- [MIDICVStatus.relRegisteredControl](./relregisteredcontrol.md)
+- [MIDICVStatus.relAssignableControl](./relassignablecontrol.md)
+- [MIDICVStatus.perNotePitchBend](./pernotepitchbend.md)
 
 
 ---

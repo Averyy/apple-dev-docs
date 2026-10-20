@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value associated with the event.
 

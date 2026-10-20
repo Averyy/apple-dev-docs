@@ -1,7 +1,8 @@
 # privileged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 6.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var privileged: NSXPCConnection.Options { get }
+```
+
+```c
+NSXPCConnectionPrivileged
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # usbAccessoryDidConnect(_:)
 
 **Framework**: Accessory Access  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework invokes when a USB accessory connects to the system.
 
@@ -12,6 +13,10 @@ The method the framework invokes when a USB accessory connects to the system.
 
 ```swift
 optional func usbAccessoryDidConnect(_ usbAccessory: AAUSBAccessory)
+```
+
+```objc
+- (void) usbAccessoryDidConnect:(AAUSBAccessory *) usbAccessory;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The framework invokes method on an arbitrary thread.
 
 ## See Also
 
-- [func usbAccessoryDidDisconnect(AAUSBAccessory)](aausbaccessorylistener/usbaccessorydiddisconnect(_:).md)
+### Protocol methods
+- [func usbAccessoryDidDisconnect(AAUSBAccessory)](./usbaccessorydiddisconnect%28_%29.md)
   The method the framework invokes when a USB accessory disconnects from the system.
 
 

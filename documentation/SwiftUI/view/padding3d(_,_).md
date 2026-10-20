@@ -1,7 +1,8 @@
 # padding3D(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pads this view using the edge insets you specify.
 
@@ -26,17 +27,18 @@ A view that pads this view using edge the insets you specify.
 
 ## See Also
 
-- [func padding(_:)](view/padding(_:).md)
+### Adding padding around a view
+- [func padding(_:)](./padding%28_%29.md)
   Adds a different padding amount to each edge of this view.
-- [func padding(Edge.Set, CGFloat?) -> some View](view/padding(_:_:).md)
+- [func padding(Edge.Set, CGFloat?) -> some View](./padding%28_,_%29.md)
   Adds an equal padding amount to specific edges of this view.
-- [func padding3D(_:)](view/padding3d(_:).md)
+- [func padding3D(_:)](./padding3d%28_%29.md)
   Pads this view using the edge insets you specify.
-- [func scenePadding(Edge.Set) -> some View](view/scenepadding(_:).md)
+- [func scenePadding(Edge.Set) -> some View](./scenepadding%28_%29.md)
   Adds padding to the specified edges of this view using an amount that’s appropriate for the current scene.
-- [func scenePadding(ScenePadding, edges: Edge.Set) -> some View](view/scenepadding(_:edges:).md)
+- [func scenePadding(ScenePadding, edges: Edge.Set) -> some View](./scenepadding%28_,edges%29.md)
   Adds a specified kind of padding to the specified edges of this view using an amount that’s appropriate for the current scene.
-- [struct ScenePadding](scenepadding.md)
+- [struct ScenePadding](../scenepadding.md)
   The padding used to space a view from its containing scene.
 
 

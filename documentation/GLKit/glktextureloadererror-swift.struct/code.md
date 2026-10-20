@@ -1,7 +1,8 @@
 # GLKTextureLoaderError.Code
 
 **Framework**: GLKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values to be returned when a texture loader encounters an error.
 
@@ -17,69 +18,74 @@ Values to be returned when a texture loader encounters an error.
 enum Code
 ```
 
+```c
+enum GLKTextureLoaderError : GLuint;
+```
+
 ## Topics
 
 ### Initializers
-- [init?(rawValue: GLuint)](glktextureloadererror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: GLuint)](./code/init%28rawvalue%29.md)
 ### Type Properties
-- [GLKTextureLoaderError.Code.alphaPremultiplicationFailure](glktextureloadererror-swift.struct/code/alphapremultiplicationfailure.md)
+- [GLKTextureLoaderError.Code.alphaPremultiplicationFailure](./code/alphapremultiplicationfailure.md)
   The texture source data does not allow the alpha to be premultiplied.
-- [GLKTextureLoaderError.Code.compressedTextureUpload](glktextureloadererror-swift.struct/code/compressedtextureupload.md)
+- [GLKTextureLoaderError.Code.compressedTextureUpload](./code/compressedtextureupload.md)
   A compressed texture could not be uploaded.
-- [GLKTextureLoaderError.Code.cubeMapInvalidNumFiles](glktextureloadererror-swift.struct/code/cubemapinvalidnumfiles.md)
+- [GLKTextureLoaderError.Code.cubeMapInvalidNumFiles](./code/cubemapinvalidnumfiles.md)
   The incorrect number of files were specified for the cube map.
-- [GLKTextureLoaderError.Code.dataPreprocessingFailure](glktextureloadererror-swift.struct/code/datapreprocessingfailure.md)
+- [GLKTextureLoaderError.Code.dataPreprocessingFailure](./code/datapreprocessingfailure.md)
   The data could not be preprocessed correctly.
-- [static var errorDomain: String](glktextureloadererror-swift.struct/errordomain.md)
-- [GLKTextureLoaderError.Code.fileOrURLNotFound](glktextureloadererror-swift.struct/code/fileorurlnotfound.md)
+- [static var errorDomain: String](./errordomain.md)
+- [GLKTextureLoaderError.Code.fileOrURLNotFound](./code/fileorurlnotfound.md)
   A file could not be found at the path provided.
-- [GLKTextureLoaderError.Code.incompatibleFormatSRGB](glktextureloadererror-swift.struct/code/incompatibleformatsrgb.md)
+- [GLKTextureLoaderError.Code.incompatibleFormatSRGB](./code/incompatibleformatsrgb.md)
   The decoded data was in an incompatible format for an sRGB texture.
-- [GLKTextureLoaderError.Code.invalidCGImage](glktextureloadererror-swift.struct/code/invalidcgimage.md)
+- [GLKTextureLoaderError.Code.invalidCGImage](./code/invalidcgimage.md)
   The image provided was invalid.
-- [GLKTextureLoaderError.Code.invalidEAGLContext](glktextureloadererror-swift.struct/code/invalideaglcontext.md)
+- [GLKTextureLoaderError.Code.invalidEAGLContext](./code/invalideaglcontext.md)
   The EAGL context was not a valid context.
-- [GLKTextureLoaderError.Code.invalidNSData](glktextureloadererror-swift.struct/code/invalidnsdata.md)
+- [GLKTextureLoaderError.Code.invalidNSData](./code/invalidnsdata.md)
   The data provided is not in a recognized image format.
-- [GLKTextureLoaderError.Code.mipmapUnsupported](glktextureloadererror-swift.struct/code/mipmapunsupported.md)
+- [GLKTextureLoaderError.Code.mipmapUnsupported](./code/mipmapunsupported.md)
   The texture source data does not allow mipmaps to be generated.
-- [GLKTextureLoaderError.Code.pvrAtlasUnsupported](glktextureloadererror-swift.struct/code/pvratlasunsupported.md)
+- [GLKTextureLoaderError.Code.pvrAtlasUnsupported](./code/pvratlasunsupported.md)
   Cube maps may not be compressed in PVRTC format.
-- [GLKTextureLoaderError.Code.reorientationFailure](glktextureloadererror-swift.struct/code/reorientationfailure.md)
+- [GLKTextureLoaderError.Code.reorientationFailure](./code/reorientationfailure.md)
   The texture source data does not allow the image to be reoriented.
-- [GLKTextureLoaderError.Code.uncompressedTextureUpload](glktextureloadererror-swift.struct/code/uncompressedtextureupload.md)
+- [GLKTextureLoaderError.Code.uncompressedTextureUpload](./code/uncompressedtextureupload.md)
   An uncompressed texture could not be uploaded.
-- [GLKTextureLoaderError.Code.unknownFileType](glktextureloadererror-swift.struct/code/unknownfiletype.md)
+- [GLKTextureLoaderError.Code.unknownFileType](./code/unknownfiletype.md)
   The file was in an unrecognized format.
-- [GLKTextureLoaderError.Code.unknownPathType](glktextureloadererror-swift.struct/code/unknownpathtype.md)
+- [GLKTextureLoaderError.Code.unknownPathType](./code/unknownpathtype.md)
   The path type was unrecognized.
-- [GLKTextureLoaderError.Code.unsupportedBitDepth](glktextureloadererror-swift.struct/code/unsupportedbitdepth.md)
+- [GLKTextureLoaderError.Code.unsupportedBitDepth](./code/unsupportedbitdepth.md)
   The data in the source image has an unsupported bit depth.
-- [GLKTextureLoaderError.Code.unsupportedCubeMapDimensions](glktextureloadererror-swift.struct/code/unsupportedcubemapdimensions.md)
+- [GLKTextureLoaderError.Code.unsupportedCubeMapDimensions](./code/unsupportedcubemapdimensions.md)
   The cube map’s dimensions are incorrect.
-- [GLKTextureLoaderError.Code.unsupportedOrientation](glktextureloadererror-swift.struct/code/unsupportedorientation.md)
+- [GLKTextureLoaderError.Code.unsupportedOrientation](./code/unsupportedorientation.md)
   The texture source data is stored with an unsupported origin position.
-- [GLKTextureLoaderError.Code.unsupportedPVRFormat](glktextureloadererror-swift.struct/code/unsupportedpvrformat.md)
+- [GLKTextureLoaderError.Code.unsupportedPVRFormat](./code/unsupportedpvrformat.md)
   The data in the PVRTC compressed format is in an unsupported format.
-- [GLKTextureLoaderError.Code.unsupportedTextureTarget](glktextureloadererror-swift.struct/code/unsupportedtexturetarget.md)
+- [GLKTextureLoaderError.Code.unsupportedTextureTarget](./code/unsupportedtexturetarget.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias GLKTextureLoaderCallback](glktextureloadercallback.md)
+### Constants
+- [typealias GLKTextureLoaderCallback](../glktextureloadercallback.md)
   Signature for the block executed after an asynchronous texture loading operation completes.
-- [Texture Loading Options](texture-loading-options.md)
+- [Texture Loading Options](../texture-loading-options.md)
   Keys to specify in a `textureOperations` dictionary.
-- [Texture Error Handling](texture-error-handling.md)
+- [Texture Error Handling](../texture-error-handling.md)
   Strings used when handling error messages returned from a texture loading method.
 
 

@@ -1,7 +1,8 @@
 # Modify an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update app information, including bundle ID, primary locale, price schedule, and global availability.
 
@@ -10,7 +11,7 @@ Update app information, including bundle ID, primary locale, price schedule, and
 
 ## Mentions
 
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.0 release notes](./app-store-connect-api-4-0-release-notes.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Update app information, including bundle ID, primary locale, price schedule, and
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/6446998023 -d
 "{
   "data": {
@@ -249,17 +250,36 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023 -d
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](get-v1-apps.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppUpdateRequest`
+
+## Responses
+
+- `200` OK (`AppResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List apps](get-v1-apps.md)
+### Getting and modifying app information
+- [List apps](./get-v1-apps.md)
   Find and list apps in App Store Connect.
-- [Read app information](get-v1-apps-_id_.md)
+- [Read app information](./get-v1-apps-_id_.md)
   Get information about a specific app.
-- [Read an app’s encryption declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+- [Read an app’s encryption declarations](./get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an app’s encryption declaration ids](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration ids](./get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
 
 

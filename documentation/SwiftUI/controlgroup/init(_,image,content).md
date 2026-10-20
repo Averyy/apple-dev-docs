@@ -1,7 +1,8 @@
 # init(_:image:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new control group with the specified content that generates its label from a localized string resource and image resource.
 
@@ -20,6 +21,20 @@ Creates a new control group with the specified content that generates its label 
 nonisolated init<C>(_ titleResource: LocalizedStringResource, image: ImageResource, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View
 ```
 
+Available when `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<C, S>(_ title: S, image: ImageResource, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View, S : StringProtocol
+```
+
+```swift
+nonisolated
+init<C>(_ titleKey: LocalizedStringKey, image: ImageResource, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View
+```
+
 ## Parameters
 
 - `titleResource`: Text resource for the group’s localized title, that describes the contents of the group.
@@ -28,7 +43,8 @@ nonisolated init<C>(_ titleResource: LocalizedStringResource, image: ImageResour
 
 ## See Also
 
-- [init(_:systemImage:content:)](controlgroup/init(_:systemimage:content:).md)
+### Creating a control group with an image
+- [init(_:systemImage:content:)](./init%28_,systemimage,content%29.md)
   Creates a new control group with the specified content that generates its label from a string and image name.
 
 

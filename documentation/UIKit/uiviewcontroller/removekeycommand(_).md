@@ -1,7 +1,8 @@
 # removeKeyCommand(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the key command from the view controller.
 
@@ -18,9 +19,13 @@ Removes the key command from the view controller.
 func removeKeyCommand(_ keyCommand: UIKeyCommand)
 ```
 
+```objc
+- (void) removeKeyCommand:(UIKeyCommand *) keyCommand;
+```
+
 #### Discussion
 
-This method lets you easily remove key commands without overriding the [`keyCommands`](uiresponder/keycommands.md) property.
+This method lets you easily remove key commands without overriding the [`keyCommands`](../uiresponder/keycommands.md) property.
 
 ## Parameters
 
@@ -28,11 +33,13 @@ This method lets you easily remove key commands without overriding the [`keyComm
 
 ## See Also
 
-- [var keyCommands: [UIKeyCommand]?](uiresponder/keycommands.md)
+### Related Documentation
+- [var keyCommands: [UIKeyCommand]?](../uiresponder/keycommands.md)
   The key commands that trigger actions on this responder.
-- [var performsActionsWhilePresentingModally: Bool](uiviewcontroller/performsactionswhilepresentingmodally.md)
+### Accessing the available key commands
+- [var performsActionsWhilePresentingModally: Bool](./performsactionswhilepresentingmodally.md)
   A Boolean value indicating whether the view controller performs menu-related actions.
-- [func addKeyCommand(UIKeyCommand)](uiviewcontroller/addkeycommand(_:).md)
+- [func addKeyCommand(UIKeyCommand)](./addkeycommand%28_%29.md)
   Associates the specified keyboard shortcut with the view controller.
 
 

@@ -1,7 +1,8 @@
 # readAttributeActiveTimestamp(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveTimestamp(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveTimestamp() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeActiveTimestampWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

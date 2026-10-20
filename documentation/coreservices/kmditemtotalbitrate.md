@@ -1,7 +1,8 @@
 # kMDItemTotalBitRate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The total bit rate, audio and video combined, of the media. A CFNumber.
 
@@ -12,6 +13,10 @@ The total bit rate, audio and video combined, of the media. A CFNumber.
 
 ```swift
 let kMDItemTotalBitRate: CFString!
+```
+
+```c
+const CFStringRef kMDItemTotalBitRate;
 ```
 
 

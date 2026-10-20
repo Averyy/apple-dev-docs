@@ -1,7 +1,8 @@
 # location(in:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of the scroll update in the coordinate system of the given view.
 
@@ -17,6 +18,10 @@ Returns the location of the scroll update in the coordinate system of the given 
 func location(in view: UIView?) -> CGPoint
 ```
 
+```objc
+- (CGPoint) locationInView:(UIView *) view;
+```
+
 #### Return Value
 
 The location of the scroll update in the specified view’s coordinate system.
@@ -27,7 +32,8 @@ The location of the scroll update in the specified view’s coordinate system.
 
 ## See Also
 
-- [func translation(in: UIView?) -> CGPoint](bescrollviewscrollupdate/translation(in:).md)
+### Transforming coordinates
+- [func translation(in: UIView?) -> CGPoint](./translation%28in%29.md)
   Returns the scroll displacement in the coordinate system of the view that the update represents.
 
 

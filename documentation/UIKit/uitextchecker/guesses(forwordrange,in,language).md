@@ -1,7 +1,8 @@
 # guesses(forWordRange:in:language:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of words that are possible valid replacements for a misspelled word.
 
@@ -9,13 +10,17 @@ Returns a list of words that are possible valid replacements for a misspelled wo
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func guesses(forWordRange range: NSRange, in string: String, language: String) -> [String]?
+```
+
+```objc
+- (NSArray<NSString *> *) guessesForWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language;
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ The strings in the array are in the order they should be presented to the userâ€
 
 ## See Also
 
-- [func completions(forPartialWordRange: NSRange, in: String, language: String) -> [String]?](uitextchecker/completions(forpartialwordrange:in:language:).md)
+### Obtaining Word Guesses and Completions
+- [func completions(forPartialWordRange: NSRange, in: String, language: String) -> [String]?](./completions%28forpartialwordrange,in,language%29.md)
   Returns an array of strings that are possible completions for a partially entered word.
 
 

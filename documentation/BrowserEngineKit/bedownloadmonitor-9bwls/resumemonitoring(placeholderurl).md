@@ -1,7 +1,8 @@
 # resumeMonitoring(placeholderURL:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the system that it needs to resume monitoring the download.
 
@@ -22,11 +23,12 @@ Call this method when your browser resumes the download after an interruption, f
 
 ## Parameters
 
-- `placeholderURL`: The placeholder location your networking extension previously received when it called [`beginMonitoring()`](bedownloadmonitor-9bwls/beginmonitoring().md).
+- `placeholderURL`: The placeholder location your networking extension previously received when it called [`beginMonitoring()`](./beginmonitoring%28%29.md).
 
 ## See Also
 
-- [func beginMonitoring() async throws -> BEDownloadMonitor.Location?](bedownloadmonitor-9bwls/beginmonitoring.md)
+### Reporting progress to the system
+- [func beginMonitoring() async throws -> BEDownloadMonitor.Location?](./beginmonitoring%28%29.md)
   Informs the system to start monitoring the download.
 
 

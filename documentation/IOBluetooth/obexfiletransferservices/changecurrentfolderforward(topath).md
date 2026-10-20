@@ -1,17 +1,22 @@
 # changeCurrentFolderForward(toPath:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Change the remote path
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func changeCurrentFolderForward(toPath inDirName: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) changeCurrentFolderForwardToPath:(NSString *) inDirName;
 ```
 
 #### Return Value

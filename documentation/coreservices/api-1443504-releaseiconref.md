@@ -1,7 +1,8 @@
 # ReleaseIconRef(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.15
@@ -10,6 +11,10 @@
 
 ```swift
 func ReleaseIconRef(_ theIconRef: IconRef!) -> OSErr
+```
+
+```c
+OSErr ReleaseIconRef(IconRef theIconRef);
 ```
 
 

@@ -1,17 +1,24 @@
 # fillFraction
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value displayed by the gauge.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 var fillFraction: Float { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) float fillFraction;
 ```
 
 #### Discussion

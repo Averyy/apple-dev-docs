@@ -1,7 +1,8 @@
 # filter(runBoundaries:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the attribute container with only attributes that have the provided run boundaries.
 

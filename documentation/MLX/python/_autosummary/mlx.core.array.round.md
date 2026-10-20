@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.round
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.round.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.round
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.round
-
-**array.round(*self*, *decimals: int = 0*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
-: See [round()](mlx.core.round.html#mlx.core.round).
-
-** Contents
+**array.round(*self*, *decimals: int = 0*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
+: See [round()](mlx.core.round.md#mlx.core.round).

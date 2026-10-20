@@ -1,7 +1,8 @@
 # preset(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a reverb instance that you can set on a reverb component.
 
@@ -21,7 +22,7 @@ static func preset(_ preset: Reverb.Preset) -> Reverb
 
 #### Return Value
 
-Reverb that can be set on a [`ReverbComponent`](reverbcomponent.md).
+Reverb that can be set on a [`ReverbComponent`](../reverbcomponent.md).
 
 ## Parameters
 

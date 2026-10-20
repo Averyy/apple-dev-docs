@@ -1,7 +1,8 @@
 # style
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The visual presentation for the selection accessory.
 
@@ -10,13 +11,13 @@ The visual presentation for the selection accessory.
 
 ## Declaration
 
-```swift
+```
 style?: PlaceSelectionAccessoryStyle;
 ```
 
 #### Discussion
 
-See [`style`](placeselectionaccessory/style.md) for the available selection accessory styles.
+See [`style`](../placeselectionaccessory/style.md) for the available selection accessory styles.
 
 
 ---

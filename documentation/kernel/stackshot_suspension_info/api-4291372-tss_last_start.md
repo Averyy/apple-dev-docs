@@ -1,14 +1,15 @@
 # tss_last_start
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t tss_last_start;
 ```
 

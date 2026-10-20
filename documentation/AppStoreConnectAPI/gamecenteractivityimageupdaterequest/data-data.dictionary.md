@@ -1,7 +1,8 @@
 # GameCenterActivityImageUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a activity.
 
@@ -10,21 +11,21 @@ The request body you use to update a activity.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityImageUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityImageUpdateRequest.Data.Attributes](gamecenteractivityimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterActivityImageUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an activity resource.
 
 ## Properties
 
 - `attributes` (GameCenterActivityImageUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterActivityImages`
 
 
 ---

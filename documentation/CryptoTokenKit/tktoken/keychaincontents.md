@@ -1,7 +1,8 @@
 # keychainContents
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the keychain for this token.
 
@@ -20,19 +21,24 @@ The contents of the keychain for this token.
 var keychainContents: TKTokenKeychainContents? { get }
 ```
 
+```objc
+@property (readonly, nullable) TKTokenKeychainContents * keychainContents;
+```
+
 ## See Also
 
-- [class TKTokenKeychainContents](tktokenkeychaincontents.md)
+### Accessing Keychain Items
+- [class TKTokenKeychainContents](../tktokenkeychaincontents.md)
   A representation of the state of the keychain for a particular token.
-- [class TKTokenKeychainItem](tktokenkeychainitem.md)
+- [class TKTokenKeychainItem](../tktokenkeychainitem.md)
   An abstract base class for managing a token’s contents as keychain items.
-- [class TKTokenKeychainCertificate](tktokenkeychaincertificate.md)
+- [class TKTokenKeychainCertificate](../tktokenkeychaincertificate.md)
   A token’s certificate as stored in the keychain.
-- [class TKTokenKeychainKey](tktokenkeychainkey.md)
+- [class TKTokenKeychainKey](../tktokenkeychainkey.md)
   A token’s key as stored in the keychain.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./objectid.md)
   A unique and persistent identifier of a particular token object.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./objectid.md)
   A unique and persistent identifier of a particular token object.
 
 

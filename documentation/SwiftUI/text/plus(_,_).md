@@ -1,18 +1,21 @@
 # +(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Concatenates the text in two text views in a new text view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
+- iOS 13.0+ - Deprecated in 26.0
+- iPadOS 13.0+ - Deprecated in 26.0
+- Mac Catalyst 13.0+ - Deprecated in 26.0
+- macOS 10.15+ - Deprecated in 26.0
+- tvOS 13.0+ - Deprecated in 26.0
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use string interpolation on `Text` instead: `Text(\"Hello \\(name)\")`
 
 ## Declaration
 
@@ -26,7 +29,13 @@ A new text view containing the combined contents of the two input text views.
 
 #### Discussion
 
-> **Note**:  The `+` on `Text` has been deprecated. Using this operator to concatenate texts hardcodes a specific order for part of the sentence. This may lead to incorrect localization, especially for right-to-left languages. Instead, prefer using the initializer on `Text` that allows for string interpolation. For example, instead of `Text("Hello") + Text(name)`, that concatenation can be equivalently expressed as `Text("Hello, \(name)!")`. See [`Text`](text.md) for more information on localization and string interpolation.
+> **Attention**:  The `+` on `Text` has been deprecated.
+>
+> Using this operator to concatenate texts hardcodes a specific order for part of the sentence. This may lead to incorrect localization, especially for right-to-left languages.
+>
+> Instead, prefer using the initializer on `Text` that allows for string interpolation. For example, instead of `Text("Hello") + Text(name)`, that concatenation can be equivalently expressed as `Text("Hello, \(name)!")`.
+>
+> See [`Text`](../text.md) for more information on localization and string interpolation.
 
 ## Parameters
 

@@ -1,6 +1,7 @@
 # Xcode 15.2 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -22,8 +23,12 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 ###### Known Issues
 
-- visionOS App Icons don’t receive visual effects (depth, animation, edge textures) in Home View if any layer is smaller than 1024x1024px. Xcode doesn’t provide a warning or error for this behavior.  (107568059) **Workaround:** Make all layers of a visionOS App Icon 1024x1024px (@2x), and keep “Center in Canvas” and “Match Content Image” enabled in the Asset Catalog inspector for each layer.
-- When the Base SDK Build Setting is set to iOS, the “Any visionOS Device” run destination will incorrectly display as “Any visionOS Device (Designed for iPad)” and will build using the iOS SDK.  (112633577) (FB12695059) **Workaround:** Change the Base SDK Build Setting to visionOS to use the “Any visionOS Device” run destination (FB12695059)
+- visionOS App Icons don’t receive visual effects (depth, animation, edge textures) in Home View if any layer is smaller than 1024x1024px. Xcode doesn’t provide a warning or error for this behavior.  (107568059)
+
+  **Workaround:** Make all layers of a visionOS App Icon 1024x1024px (@2x), and keep “Center in Canvas” and “Match Content Image” enabled in the Asset Catalog inspector for each layer.
+- When the Base SDK Build Setting is set to iOS, the “Any visionOS Device” run destination will incorrectly display as “Any visionOS Device (Designed for iPad)” and will build using the iOS SDK.  (112633577) (FB12695059)
+
+  **Workaround:** Change the Base SDK Build Setting to visionOS to use the “Any visionOS Device” run destination (FB12695059)
 
 ##### Asset Catalogs
 
@@ -42,7 +47,9 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 ###### Known Issues
 
 - In certain circumstances, an app can’t read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
-- Running a WatchApp that requires the companion iOS app to be installed will result in the error “An application bundle was not found at the provided path” when the run destination is set to a Watch via iPhone Simulator pair.  (119640671) **Workaround:** Select a singular Watch Simulator run destination and then Run.
+- Running a WatchApp that requires the companion iOS app to be installed will result in the error “An application bundle was not found at the provided path” when the run destination is set to a Watch via iPhone Simulator pair.  (119640671)
+
+  **Workaround:** Select a singular Watch Simulator run destination and then Run.
 
 ##### Distribution
 
@@ -54,7 +61,9 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 ###### Known Issues
 
-- iOS app crashes from a TestFlight build on visionOS may not appear in the Crashes section of the Organizer.   (107965403) **Workaround:** From the “Pricing and Availability” section of your app’s App Store page in App Store Connect, enable the checkbox to allow your app to run on visionOS.
+- iOS app crashes from a TestFlight build on visionOS may not appear in the Crashes section of the Organizer.   (107965403)
+
+  **Workaround:** From the “Pricing and Availability” section of your app’s App Store page in App Store Connect, enable the checkbox to allow your app to run on visionOS.
 
 ##### Playgrounds
 
@@ -74,20 +83,20 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 - Fixed: iOS apps using the `#Preview` macro might quit unexpectedly when targeting `Apple Vision Pro (Designed for iPad)`.  (110801867)
 
-##### Swiftdata
+##### SwiftData
 
 ###### Resolved Issues
 
 - Fixed: visionOS projects that use the `@Observable` property wrapper will fail to build in Xcode 15 beta 3.  (111494849)
 - Fixed: SwiftData models don’t build with the visionOS SDK included in Xcode 15 beta 7.  (114106802)
 
-##### Ui Automation
+##### UI Automation
 
 ###### Known Issues
 
 - visionOS doesn’t have any visual indication when UI automation is running.  Devices with a passcode still need to enter their passcode to start UI automation.  (85512012)
 
-##### Visionos Simulator
+##### visionOS Simulator
 
 ###### Resolved Issues
 
@@ -96,9 +105,11 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 ###### Known Issues
 
-- On some configurations, the first install of an app will fail.  (115968389) **Workaround:** Build & run again.
+- On some configurations, the first install of an app will fail.  (115968389)
 
-##### Visionos Swiftui Previews
+  **Workaround:** Build & run again.
+
+##### visionOS SwiftUI previews
 
 ###### Resolved Issues
 
@@ -120,7 +131,7 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 - HelloGlobe visionOS sample project does not build in Xcode Cloud.  (114666832)
 
-##### Xcode Previews for Visionos
+##### Xcode Previews for visionOS
 
 ###### Resolved Issues
 
@@ -129,15 +140,16 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 ## See Also
 
-- [Xcode 15.4 Release Notes](xcode-15_4-release-notes.md)
+### Xcode 15
+- [Xcode 15.4 Release Notes](./xcode-15_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.3 Release Notes](xcode-15_3-release-notes.md)
+- [Xcode 15.3 Release Notes](./xcode-15_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.1 Release Notes](xcode-15_1-release-notes.md)
+- [Xcode 15.1 Release Notes](./xcode-15_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.0.1 Release Notes](xcode-15_0_1-release-notes.md)
+- [Xcode 15.0.1 Release Notes](./xcode-15_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15 Release Notes](xcode-15-release-notes.md)
+- [Xcode 15 Release Notes](./xcode-15-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

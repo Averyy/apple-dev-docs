@@ -1,7 +1,8 @@
 # readAttributeCondition(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCondition(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCondition() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeConditionWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # outputPowerCharacter
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes the power provided in this state.
 
@@ -10,7 +11,7 @@ Describes the power provided in this state.
 
 ## Declaration
 
-```swift
+```c
 IOPMPowerFlags outputPowerCharacter;
 ```
 

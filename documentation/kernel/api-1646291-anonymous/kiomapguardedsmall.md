@@ -1,14 +1,15 @@
 # kIOMapGuardedSmall
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIOMapGuardedSmall = 0x40000000
 ```
 

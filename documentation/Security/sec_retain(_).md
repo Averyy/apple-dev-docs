@@ -1,7 +1,8 @@
 # sec_retain(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_retain(_ obj: UnsafeMutableRawPointer!) -> UnsafeMutableRawPointer!
+```
+
+```c
+void *sec_retain(void *obj);
 ```
 
 

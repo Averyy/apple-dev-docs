@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that failed validation.
 
@@ -10,7 +11,7 @@ The value that failed validation.
 
 ## Declaration
 
-```swift
+```
 attribute number value;
 ```
 

@@ -1,7 +1,8 @@
 # VTFrameSiloAddSampleBuffer(_:sampleBuffer:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a sample buffer to a frame silo object.
 
@@ -19,15 +20,19 @@ Adds a sample buffer to a frame silo object.
 func VTFrameSiloAddSampleBuffer(_ silo: VTFrameSilo, sampleBuffer: CMSampleBuffer) -> OSStatus
 ```
 
+```c
+extern OSStatus VTFrameSiloAddSampleBuffer(VTFrameSiloRef silo, CMSampleBufferRef sampleBuffer);
+```
+
 #### Return Value
 
 `kVTFrameSiloInvalidTimeRangeErr` if an attempt is made to add a sample buffer with an inappropriate decode timestamp.
 
 #### Discussion
 
-Within each pass, sample buffers must have strictly increasing decode timestamps. Passes after the first pass begin with a call to [`VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRangeArray:)`](vtframesilosettimerangesfornextpass(_:timerangecount:timerangearray:).md).
+Within each pass, sample buffers must have strictly increasing decode timestamps. Passes after the first pass begin with a call to [`VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRangeArray:)`](./vtframesilosettimerangesfornextpass%28_,timerangecount,timerangearray%29.md).
 
-After a call to [`VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRangeArray:)`](vtframesilosettimerangesfornextpass(_:timerangecount:timerangearray:).md), sample buffer decode timestamps must also be within the stated time ranges. Note that time ranges are considered to contain their start times but not their end times.
+After a call to [`VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRangeArray:)`](./vtframesilosettimerangesfornextpass%28_,timerangecount,timerangearray%29.md), sample buffer decode timestamps must also be within the stated time ranges. Note that time ranges are considered to contain their start times but not their end times.
 
 ## Parameters
 
@@ -36,11 +41,12 @@ After a call to [`VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRange
 
 ## See Also
 
-- [func VTFrameSiloSetTimeRangesForNextPass(VTFrameSilo, timeRangeCount: CMItemCount, timeRangeArray: UnsafePointer<CMTimeRange>) -> OSStatus](vtframesilosettimerangesfornextpass(_:timerangecount:timerangearray:).md)
+### Configuring Frame Silos
+- [func VTFrameSiloSetTimeRangesForNextPass(VTFrameSilo, timeRangeCount: CMItemCount, timeRangeArray: UnsafePointer<CMTimeRange>) -> OSStatus](./vtframesilosettimerangesfornextpass%28_,timerangecount,timerangearray%29.md)
   Begins a new pass of samples to be added to a frame silo object.
-- [func VTFrameSiloCallBlockForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, handler: (CMSampleBuffer) -> OSStatus) -> OSStatus](vtframesilocallblockforeachsamplebuffer(_:in:handler:).md)
+- [func VTFrameSiloCallBlockForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, handler: (CMSampleBuffer) -> OSStatus) -> OSStatus](./vtframesilocallblockforeachsamplebuffer%28_,in,handler%29.md)
   Retrieves sample buffers from a frame silo object.
-- [func VTFrameSiloCallFunctionForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, refcon: UnsafeMutableRawPointer?, callback: (UnsafeMutableRawPointer?, CMSampleBuffer) -> OSStatus) -> OSStatus](vtframesilocallfunctionforeachsamplebuffer(_:in:refcon:callback:).md)
+- [func VTFrameSiloCallFunctionForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, refcon: UnsafeMutableRawPointer?, callback: (UnsafeMutableRawPointer?, CMSampleBuffer) -> OSStatus) -> OSStatus](./vtframesilocallfunctionforeachsamplebuffer%28_,in,refcon,callback%29.md)
   Retrieves sample buffers from a frame silo object.
 
 

@@ -1,7 +1,8 @@
 # ObservableObject
 
 **Framework**: Combine  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type of object with a publisher that emits before the object has changed.
 
@@ -22,7 +23,7 @@ protocol ObservableObject : AnyObject
 
 #### Overview
 
-By default an [`ObservableObject`](observableobject.md) synthesizes an [`objectWillChange`](observableobject/objectwillchange.md) publisher that emits the changed value before any of its `@Published` properties changes.
+By default an [`ObservableObject`](./observableobject.md) synthesizes an [`objectWillChange`](./observableobject/objectwillchange.md) publisher that emits the changed value before any of its `@Published` properties changes.
 
 ```swift
 class Contact: ObservableObject {
@@ -53,14 +54,15 @@ print(john.haveBirthday())
 ## Topics
 
 ### Publishing changes
-- [var objectWillChange: Self.ObjectWillChangePublisher](observableobject/objectwillchange.md)
+- [var objectWillChange: Self.ObjectWillChangePublisher](./observableobject/objectwillchange.md)
   A publisher that emits before the object has changed.
-- [associatedtype ObjectWillChangePublisher : Publisher = ObservableObjectPublisher](observableobject/objectwillchangepublisher.md)
+- [associatedtype ObjectWillChangePublisher : Publisher = ObservableObjectPublisher](./observableobject/objectwillchangepublisher.md)
   The type of publisher that emits before the object has changed.
 
 ## See Also
 
-- [class ObservableObjectPublisher](observableobjectpublisher.md)
+### Observable Objects
+- [class ObservableObjectPublisher](./observableobjectpublisher.md)
   A publisher that publishes changes from observable objects.
 
 

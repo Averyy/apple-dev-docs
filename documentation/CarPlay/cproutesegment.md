@@ -1,7 +1,8 @@
 # CPRouteSegment
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 CPRouteSegment describes information pertaining to a segment of a route.
 
@@ -16,45 +17,49 @@ CPRouteSegment describes information pertaining to a segment of a route.
 class CPRouteSegment
 ```
 
+```objc
+@interface CPRouteSegment : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(origin: CPNavigationWaypoint, destination: CPNavigationWaypoint, maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers: [CPManeuver], currentLaneGuidance: CPLaneGuidance, tripTravelEstimates: CPTravelEstimates, maneuverTravelEstimates: CPTravelEstimates, coordinates: [CPLocationCoordinate3D])](cproutesegment/init(origin:destination:maneuvers:laneguidances:currentmaneuvers:currentlaneguidance:triptravelestimates:maneuvertravelestimates:coordinates:).md)
+- [convenience init(origin: CPNavigationWaypoint, destination: CPNavigationWaypoint, maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers: [CPManeuver], currentLaneGuidance: CPLaneGuidance, tripTravelEstimates: CPTravelEstimates, maneuverTravelEstimates: CPTravelEstimates, coordinates: [CPLocationCoordinate3D])](./cproutesegment/init%28origin,destination,maneuvers,laneguidances,currentmaneuvers,currentlaneguidance,triptravelestimates,maneuvertravelestimates,coordinates%29.md)
 ### Instance Properties
-- [var coordinates: [CPLocationCoordinate3D]](cproutesegment/coordinates-8o5b.md)
-- [var currentLaneGuidance: CPLaneGuidance](cproutesegment/currentlaneguidance.md)
+- [var coordinates: [CPLocationCoordinate3D]](./cproutesegment/coordinates-8o5b.md)
+- [var currentLaneGuidance: CPLaneGuidance](./cproutesegment/currentlaneguidance.md)
   currentLaneGuidance is a CPLaneGuidance object, describing the current lane guidance.
-- [var currentManeuvers: [CPManeuver]](cproutesegment/currentmaneuvers.md)
+- [var currentManeuvers: [CPManeuver]](./cproutesegment/currentmaneuvers.md)
   currentManeuvers is an array of CPManeuver objects, describing the current maneuvers.
-- [var destination: CPNavigationWaypoint](cproutesegment/destination.md)
+- [var destination: CPNavigationWaypoint](./cproutesegment/destination.md)
   destination is a CPNavigationWaypoint, describing the destination of the segment.
-- [var identifier: UUID](cproutesegment/identifier.md)
+- [var identifier: UUID](./cproutesegment/identifier.md)
   identifier is a NSUUID that uniquely identifies this route segment.
-- [var laneGuidances: [CPLaneGuidance]](cproutesegment/laneguidances.md)
+- [var laneGuidances: [CPLaneGuidance]](./cproutesegment/laneguidances.md)
   laneGuidances is an array of CPLaneGuidance objects, each describes a single lane guidance.
-- [var maneuverTravelEstimates: CPTravelEstimates](cproutesegment/maneuvertravelestimates.md)
+- [var maneuverTravelEstimates: CPTravelEstimates](./cproutesegment/maneuvertravelestimates.md)
   maneuverTravelEstimates is a CPTravelEstimates object, describing the travel estimates for the first maneuver in the list of current maneuvers.
-- [var maneuvers: [CPManeuver]](cproutesegment/maneuvers.md)
+- [var maneuvers: [CPManeuver]](./cproutesegment/maneuvers.md)
   maneuvers is an array of CPManeuver objects, each describes a single maneuver.
-- [var origin: CPNavigationWaypoint](cproutesegment/origin.md)
+- [var origin: CPNavigationWaypoint](./cproutesegment/origin.md)
   origin is a CPNavigationWaypoint, describing the origin of the segment.
-- [var tripTravelEstimates: CPTravelEstimates](cproutesegment/triptravelestimates.md)
+- [var tripTravelEstimates: CPTravelEstimates](./cproutesegment/triptravelestimates.md)
   tripTravelEstimates is a CPTravelEstimates object, describing the travel estimates for the current trip.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # executeActionSet(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes all the actions in a specified action set.
 
@@ -16,25 +17,36 @@ Executes all the actions in a specified action set.
 ## Declaration
 
 ```swift
+func executeActionSet(_ actionSet: HMActionSet, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func executeActionSet(_ actionSet: HMActionSet) async throws
+```
+
+```objc
+- (void) executeActionSet:(HMActionSet *) actionSet completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `actionSet`: The action set to execute.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var actionSets: [HMActionSet]](hmhome/actionsets.md)
+### Creating action sets
+- [var actionSets: [HMActionSet]](./actionsets.md)
   An array of the action sets in the home.
-- [func addActionSet(withName: String, completionHandler: (HMActionSet?, (any Error)?) -> Void)](hmhome/addactionset(withname:completionhandler:).md)
+- [func addActionSet(withName: String, completionHandler: (HMActionSet?, (any Error)?) -> Void)](./addactionset%28withname,completionhandler%29.md)
   Adds a new action set to the home.
-- [func removeActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](hmhome/removeactionset(_:completionhandler:).md)
+- [func removeActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](./removeactionset%28_,completionhandler%29.md)
   Removes an action set from the home.
-- [func builtinActionSet(ofType: String) -> HMActionSet?](hmhome/builtinactionset(oftype:).md)
+- [func builtinActionSet(ofType: String) -> HMActionSet?](./builtinactionset%28oftype%29.md)
   Retrieves the builtin action set for the specified type.
-- [class HMActionSet](hmactionset.md)
+- [class HMActionSet](../hmactionset.md)
   A collection of actions that you trigger as a group.
 
 

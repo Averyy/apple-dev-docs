@@ -1,7 +1,8 @@
 # CompileTimeAssertionChecks_DNS_SD
 
 **Framework**: dnssd  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 10.0+
@@ -18,27 +19,32 @@
 struct CompileTimeAssertionChecks_DNS_SD
 ```
 
+```c
+struct CompileTimeAssertionChecks_DNS_SD;
+```
+
 ## Topics
 
 ### Instance Properties
-- [var assert0: CChar](compiletimeassertionchecks_dns_sd/assert0.md)
+- [var assert0: CChar](./compiletimeassertionchecks_dns_sd/assert0.md)
 ### Initializers
-- [init()](compiletimeassertionchecks_dns_sd/init.md)
-- [init(assert0: CChar)](compiletimeassertionchecks_dns_sd/init(assert0:).md)
+- [init()](./compiletimeassertionchecks_dns_sd/init%28%29.md)
+- [init(assert0: CChar)](./compiletimeassertionchecks_dns_sd/init%28assert0%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias DNSRecordRef](dnsrecordref.md)
-- [typealias DNSServiceRef](dnsserviceref.md)
-- [typealias DNSServiceSleepKeepaliveReply](dnsservicesleepkeepalivereply.md)
-- [typealias dnssd_sock_t](dnssd_sock_t.md)
-- [typealias DNSServiceAttributeRef](dnsserviceattributeref.md)
+### Data Types
+- [typealias DNSRecordRef](./dnsrecordref.md)
+- [typealias DNSServiceRef](./dnsserviceref.md)
+- [typealias DNSServiceSleepKeepaliveReply](./dnsservicesleepkeepalivereply.md)
+- [typealias dnssd_sock_t](./dnssd_sock_t.md)
+- [typealias DNSServiceAttributeRef](./dnsserviceattributeref.md)
 
 
 ---

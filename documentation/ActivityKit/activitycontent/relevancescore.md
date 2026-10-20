@@ -1,7 +1,8 @@
 # relevanceScore
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A score you assign that determines the order in which your Live Activities appear when you start several Live Activities for your app.
 
@@ -17,7 +18,7 @@ let relevanceScore: Double
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 #### Discussion
 
@@ -25,11 +26,12 @@ If you start more than one Live Activity in your app, the Live Activity with the
 
 ## See Also
 
-- [init(state: State, staleDate: Date?, relevanceScore: Double)](activitycontent/init(state:staledate:relevancescore:).md)
+### Describing a Live Activity
+- [init(state: State, staleDate: Date?, relevanceScore: Double)](./init%28state,staledate,relevancescore%29.md)
   Creates the object that describes the state and configuration of a Live Activity.
-- [let state: State](activitycontent/state.md)
+- [let state: State](./state.md)
   The current state of a Live Activity in its life cycle.
-- [let staleDate: Date?](activitycontent/staledate.md)
+- [let staleDate: Date?](./staledate.md)
   The date when the system considers the Live Activity to be out of date.
 
 

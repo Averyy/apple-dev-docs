@@ -1,7 +1,8 @@
 # goreOrViolence
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A content type that indicates the presence of graphic violence or gore.
 
@@ -18,13 +19,18 @@ A content type that indicates the presence of graphic violence or gore.
 static let goreOrViolence: SCSensitivityAnalysis.ContentType
 ```
 
+```c
+extern SCSensitiveContentType const SCSensitiveContentTypeGoreOrViolence;
+```
+
 #### Discussion
 
-The Sensitive Content Analysis framework includes this value in [`detectedTypes`](scsensitivityanalysis/detectedtypes.md) when it detects violent or disturbing imagery in analyzed media.
+The Sensitive Content Analysis framework includes this value in [`detectedTypes`](../detectedtypes.md) when it detects violent or disturbing imagery in analyzed media.
 
 ## See Also
 
-- [static let sexuallyExplicit: SCSensitivityAnalysis.ContentType](scsensitivityanalysis/contenttype/sexuallyexplicit.md)
+### Identifying content categories
+- [static let sexuallyExplicit: SCSensitivityAnalysis.ContentType](./sexuallyexplicit.md)
   A content type that indicates the presence of nudity or sexually explicit material.
 
 

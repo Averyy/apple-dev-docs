@@ -1,7 +1,8 @@
 # prefix(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a subset of the table given a number of initial rows.
 
@@ -29,13 +30,14 @@ A new data table.
 
 ## See Also
 
-- [subscript(Range<Int>) -> MLDataTable](mldatatable/subscript(_:)-7h4j3.md)
+### Selecting rows
+- [subscript(Range<Int>) -> MLDataTable](./subscript%28_%29-7h4j3.md)
   Creates a subset of the table given a range of rows.
-- [subscript<R>(R) -> MLDataTable](mldatatable/subscript(_:)-5le8a.md)
+- [subscript<R>(R) -> MLDataTable](./subscript%28_%29-5le8a.md)
   Creates a subset of the table given a range expression of rows.
-- [func suffix(Int) -> MLDataTable](mldatatable/suffix(_:).md)
+- [func suffix(Int) -> MLDataTable](./suffix%28_%29.md)
   Creates a subset of the table given a number of final rows.
-- [func intersect<T>(T..., of: String) -> MLDataTable](mldatatable/intersect(_:of:).md)
+- [func intersect<T>(T..., of: String) -> MLDataTable](./intersect%28_,of%29.md)
   Creates a subset of the table by including the rows that contain any of the given values in the given column.
 
 

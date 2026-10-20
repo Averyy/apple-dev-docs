@@ -1,7 +1,8 @@
 # sourceTrackID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier of a track in the container file whose media this track segment presents.
 
@@ -20,11 +21,16 @@ An identifier of a track in the container file whose media this track segment pr
 var sourceTrackID: CMPersistentTrackID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMPersistentTrackID sourceTrackID;
+```
+
 ## See Also
 
-- [var sourceURL: URL?](avcompositiontracksegment/sourceurl.md)
+### Accessing segment properties
+- [var sourceURL: URL?](./sourceurl.md)
   A URL of the container file whose media this track segment presents.
-- [var isEmpty: Bool](avcompositiontracksegment/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the segment is empty.
 
 

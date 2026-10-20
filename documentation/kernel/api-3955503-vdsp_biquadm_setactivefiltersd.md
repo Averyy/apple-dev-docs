@@ -1,14 +1,15 @@
 # vDSP_biquadm_SetActiveFiltersD
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 void vDSP_biquadm_SetActiveFiltersD(vDSP_biquadm_SetupD __setup, const bool *__filter_states);
 ```
 

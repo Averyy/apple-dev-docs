@@ -1,7 +1,8 @@
 # kSecAttrProtocolHTTPSProxy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 HTTPS proxy.
 
@@ -18,6 +19,10 @@ HTTPS proxy.
 
 ```swift
 let kSecAttrProtocolHTTPSProxy: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolHTTPSProxy;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(properties:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an HTTP cookie object with the given cookie properties.
 
@@ -20,13 +21,17 @@ Initializes an HTTP cookie object with the given cookie properties.
 init?(properties: [HTTPCookiePropertyKey : Any])
 ```
 
+```objc
+- (instancetype) initWithProperties:(NSDictionary<NSString *,id> *) properties;
+```
+
 #### Return Value
 
 A new cookie object, with the given properies.
 
 #### Discussion
 
-This initializer returns `nil` if the provided properties are invalid. To successfully create a cookie, you must provide values for (at least) the [`path`](httpcookiepropertykey/path.md), [`name`](httpcookiepropertykey/name.md), and [`value`](httpcookiepropertykey/value.md) keys, and either the [`originURL`](httpcookiepropertykey/originurl.md) key or the [`domain`](httpcookiepropertykey/domain.md) key.
+This initializer returns `nil` if the provided properties are invalid. To successfully create a cookie, you must provide values for (at least) the [`path`](../httpcookiepropertykey/path.md), [`name`](../httpcookiepropertykey/name.md), and [`value`](../httpcookiepropertykey/value.md) keys, and either the [`originURL`](../httpcookiepropertykey/originurl.md) key or the [`domain`](../httpcookiepropertykey/domain.md) key.
 
 See Accepting cookies for more information on the available cookie attribute constants and the constraints imposed on the values in the dictionary.
 
@@ -36,7 +41,8 @@ See Accepting cookies for more information on the available cookie attribute con
 
 ## See Also
 
-- [class func cookies(withResponseHeaderFields: [String : String], for: URL) -> [HTTPCookie]](httpcookie/cookies(withresponseheaderfields:for:).md)
+### Creating cookies
+- [class func cookies(withResponseHeaderFields: [String : String], for: URL) -> [HTTPCookie]](./cookies%28withresponseheaderfields,for%29.md)
   Creates an array of HTTP cookies that corresponds to the provided response header fields for the provided URL.
 
 

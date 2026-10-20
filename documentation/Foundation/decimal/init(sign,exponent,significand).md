@@ -1,7 +1,8 @@
 # init(sign:exponent:significand:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a decimal initialized with the given sign, exponent, and significand.
 

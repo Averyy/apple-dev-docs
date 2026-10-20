@@ -1,7 +1,8 @@
 # pauseSpeaking(at:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses speech at the boundary you specify.
 
@@ -10,7 +11,7 @@ Pauses speech at the boundary you specify.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Pauses speech at the boundary you specify.
 func pauseSpeaking(at boundary: AVSpeechBoundary) -> Bool
 ```
 
+```objc
+- (BOOL) pauseSpeakingAtBoundary:(AVSpeechBoundary) boundary;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if speech pauses; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if speech pauses; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The `boundary` parameter also affects how the speech synthesizer resumes speaking text after a pause and call to [`continueSpeaking()`](avspeechsynthesizer/continuespeaking().md). If the boundary is [`AVSpeechBoundary.immediate`](avspeechboundary/immediate.md), speech resumes from the exact point where it pauses, even if that point occurs in the middle of speaking a word. If the boundary is [`AVSpeechBoundary.word`](avspeechboundary/word.md), speech resumes from the word that follows the last spoken word where it pauses.
+The `boundary` parameter also affects how the speech synthesizer resumes speaking text after a pause and call to [`continueSpeaking()`](./continuespeaking%28%29.md). If the boundary is [`AVSpeechBoundary.immediate`](../avspeechboundary/immediate.md), speech resumes from the exact point where it pauses, even if that point occurs in the middle of speaking a word. If the boundary is [`AVSpeechBoundary.word`](../avspeechboundary/word.md), speech resumes from the word that follows the last spoken word where it pauses.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ The `boundary` parameter also affects how the speech synthesizer resumes speakin
 
 ## See Also
 
-- [func speak(AVSpeechUtterance)](avspeechsynthesizer/speak(_:).md)
+### Controlling speech
+- [func speak(AVSpeechUtterance)](./speak%28_%29.md)
   Adds the utterance you specify to the speech synthesizer’s queue.
-- [func continueSpeaking() -> Bool](avspeechsynthesizer/continuespeaking.md)
+- [func continueSpeaking() -> Bool](./continuespeaking%28%29.md)
   Resumes speech from its paused point.
-- [func stopSpeaking(at: AVSpeechBoundary) -> Bool](avspeechsynthesizer/stopspeaking(at:).md)
+- [func stopSpeaking(at: AVSpeechBoundary) -> Bool](./stopspeaking%28at%29.md)
   Stops speech at the boundary you specify.
-- [enum AVSpeechBoundary](avspeechboundary.md)
+- [enum AVSpeechBoundary](../avspeechboundary.md)
   Specifies when to pause or stop speech.
 
 

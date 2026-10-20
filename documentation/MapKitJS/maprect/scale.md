@@ -1,7 +1,8 @@
 # scale(scaleFactor, scaleCenter)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a scaled map rectangle for a map location.
 
@@ -10,7 +11,7 @@ Returns a scaled map rectangle for a map location.
 
 ## Declaration
 
-```swift
+```
 scale(scaleFactor: number, scaleCenter?: MapPointData): MapRect;
 ```
 
@@ -38,11 +39,12 @@ const scaledRectAroundOrigin = mapRect.scale(2, new mapkit.MapPoint(mapRect.minX
 
 ## See Also
 
-- [copy()](maprect/copy.md)
+### Working with map rectangles
+- [copy()](./copy.md)
   Returns a copy of a map rectangle.
-- [equals(anotherRect)](maprect/equals.md)
+- [equals(anotherRect)](./equals.md)
   Compares whether two map rectangles are equal.
-- [toCoordinateRegion()](maprect/tocoordinateregion.md)
+- [toCoordinateRegion()](./tocoordinateregion.md)
   Returns the region that corresponds to a map rectangle.
 
 

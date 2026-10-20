@@ -1,35 +1,37 @@
 # kPCIPMCPMESupportFromD2
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A low-power state of the device, in which the device is not in use.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kPCIPMCPMESupportFromD2
 ```
 
 ## See Also
 
-- [kPCIPMCPMESupportFromD0](kpcipmcpmesupportfromd0.md)
+### Capabilities Registers
+- [kPCIPMCPMESupportFromD0](./kpcipmcpmesupportfromd0.md)
   The full-power state of the device, in which the device is running and fully operational.
-- [kPCIPMCPMESupportFromD1](kpcipmcpmesupportfromd1.md)
+- [kPCIPMCPMESupportFromD1](./kpcipmcpmesupportfromd1.md)
   A low-power state of the device, in which the device is handling only configuration and message requests.
-- [kPCIPMCPMESupportFromD3Hot](kpcipmcpmesupportfromd3hot.md)
+- [kPCIPMCPMESupportFromD3Hot](./kpcipmcpmesupportfromd3hot.md)
   A low-power state of the device, in which the device is running in a limited capacity.
-- [kPCIPMCPMESupportFromD3Cold](kpcipmcpmesupportfromd3cold.md)
+- [kPCIPMCPMESupportFromD3Cold](./kpcipmcpmesupportfromd3cold.md)
   The state where the device has no power.
-- [kPCIPMCD1Support](kpcipmcd1support.md)
+- [kPCIPMCD1Support](./kpcipmcd1support.md)
   A constant that indicates the device supports the D1 state.
-- [kPCIPMCD2Support](kpcipmcd2support.md)
+- [kPCIPMCD2Support](./kpcipmcd2support.md)
   A constant that indicates the device supports the D2 state.
-- [kPCIPMCD3Support](kpcipmcd3support.md)
+- [kPCIPMCD3Support](./kpcipmcd3support.md)
   A constant that indicates the device supports the D3 state.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new local Now Playing session.
 

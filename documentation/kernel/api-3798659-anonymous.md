@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,8 +19,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOServiceHaltStatePowerOff](3798659-anonymous/kioservicehaltstatepoweroff.md)
-- [kIOServiceHaltStateRestart](3798659-anonymous/kioservicehaltstaterestart.md)
+- [kIOServiceHaltStatePowerOff](./api-3798659-anonymous/kioservicehaltstatepoweroff.md)
+- [kIOServiceHaltStateRestart](./api-3798659-anonymous/kioservicehaltstaterestart.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # resolvedModel
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resolved object model.
 
@@ -20,9 +21,14 @@ The resolved object model.
 var resolvedModel: NSManagedObjectModel { get }
 ```
 
+```objc
+@property (strong, readonly) NSManagedObjectModel * resolvedModel;
+```
+
 ## See Also
 
-- [var versionChecksum: String](nsmanagedobjectmodelreference/versionchecksum.md)
+### Resolving the model object
+- [var versionChecksum: String](./versionchecksum.md)
   The version checksum of the resolved model.
 
 

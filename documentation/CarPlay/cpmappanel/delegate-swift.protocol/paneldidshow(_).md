@@ -1,7 +1,8 @@
 # panelDidShow(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system displayed the specified map panel.
 
@@ -14,6 +15,10 @@ Tells the delegate that the system displayed the specified map panel.
 
 ```swift
 optional func panelDidShow(_ panel: CPMapPanel)
+```
+
+```objc
+- (void) panelDidShow:(CPMapPanel *) panel;
 ```
 
 #### Discussion

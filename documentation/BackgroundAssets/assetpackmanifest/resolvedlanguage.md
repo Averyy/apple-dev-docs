@@ -1,7 +1,8 @@
 # resolvedLanguage
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language that best matches current preferences and for which a localized asset pack is available locally.
 
@@ -21,17 +22,18 @@ var resolvedLanguage: Locale.Language? { get }
 
 ## Mentions
 
-- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 #### Discussion
 
-The preferred languages set in Settings or System Settings inform the choice of resolved language, respecting any language that your app sets manually by setting [`resolvedLanguage`](assetpackmanager/resolvedlanguage.md). This property may be `nil` if no localized asset packs are available. If a person using the device recently changed their preferred language or if this manifest is outdated, then this property’s value may be out of sync with the set of asset packs that are available locally.
+The preferred languages set in Settings or System Settings inform the choice of resolved language, respecting any language that your app sets manually by setting [`resolvedLanguage`](../assetpackmanager/resolvedlanguage.md). This property may be `nil` if no localized asset packs are available. If a person using the device recently changed their preferred language or if this manifest is outdated, then this property’s value may be out of sync with the set of asset packs that are available locally.
 
 ## See Also
 
-- [var primaryLanguage: Locale.Language?](assetpackmanifest/primarylanguage.md)
+### Inspecting asset pack localization
+- [var primaryLanguage: Locale.Language?](./primarylanguage.md)
   The app’s primary language as configured in App Store Connect.
-- [var availableLanguages: [Locale.Language]](assetpackmanifest/availablelanguages.md)
+- [var availableLanguages: [Locale.Language]](./availablelanguages.md)
   The languages for which asset packs in this manifest are localized.
 
 

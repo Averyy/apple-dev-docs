@@ -1,7 +1,8 @@
 # preferredDrawableSize
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The recommended dimensions of the drawable.
 
@@ -19,19 +20,24 @@ The recommended dimensions of the drawable.
 var preferredDrawableSize: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize preferredDrawableSize;
+```
+
 ## See Also
 
-- [var colorPixelFormat: MTLPixelFormat](mtkview/colorpixelformat.md)
+### Configuring the Color Render Target
+- [var colorPixelFormat: MTLPixelFormat](./colorpixelformat.md)
   The color pixel format for the current drawable’s texture.
-- [var colorspace: CGColorSpace?](mtkview/colorspace.md)
+- [var colorspace: CGColorSpace?](./colorspace.md)
   The color space of the rendered content.
-- [var framebufferOnly: Bool](mtkview/framebufferonly.md)
+- [var framebufferOnly: Bool](./framebufferonly.md)
   A Boolean value that determines whether the drawable’s textures are used only for rendering.
-- [var drawableSize: CGSize](mtkview/drawablesize.md)
+- [var drawableSize: CGSize](./drawablesize.md)
   The current size of drawable textures.
-- [var autoResizeDrawable: Bool](mtkview/autoresizedrawable.md)
+- [var autoResizeDrawable: Bool](./autoresizedrawable.md)
   A Boolean value that controls whether to resize the drawable as the view changes size.
-- [var clearColor: MTLClearColor](mtkview/clearcolor.md)
+- [var clearColor: MTLClearColor](./clearcolor.md)
   The color to use to clear the color target when creating a render pass descriptor.
 
 

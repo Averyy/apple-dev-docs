@@ -1,7 +1,8 @@
 # init(first:second:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an object representing the outputs of the web authentication PRF extension.
 
@@ -20,7 +21,7 @@ init(first: SymmetricKey, second: SymmetricKey?)
 
 #### Discussion
 
-Call this method only if the registration request includes input values. Otherwise, use [`supported`](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/supported.md) or [`unsupported`](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/unsupported.md).
+Call this method only if the registration request includes input values. Otherwise, use [`supported`](./supported.md) or [`unsupported`](./unsupported.md).
 
 
 ---

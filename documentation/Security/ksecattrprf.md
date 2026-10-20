@@ -1,7 +1,8 @@
 # kSecAttrPRF
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s pseudorandom function.
 
@@ -14,9 +15,13 @@ A key whose value indicates the item’s pseudorandom function.
 let kSecAttrPRF: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrPRF;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and indicates the pseudorandom function associated with this cryptographic key. See [`Pseudorandom Function Values`](item-attribute-keys-and-values#Pseudorandom-Function-Values.md) for a list of valid values.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and indicates the pseudorandom function associated with this cryptographic key. See [Pseudorandom Function Values](./item-attribute-keys-and-values.md#Pseudorandom-Function-Values) for a list of valid values.
 
 
 ---

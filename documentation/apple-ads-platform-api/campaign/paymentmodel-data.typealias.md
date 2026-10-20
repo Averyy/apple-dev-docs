@@ -1,7 +1,8 @@
 # Campaign.PaymentModel
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The payment model that determines payment method and budget availability for the ad account running this campaign.
 
@@ -10,9 +11,14 @@ The payment model that determines payment method and budget availability for the
 
 ## Declaration
 
-```swift
+```
 string Campaign.PaymentModel
 ```
+
+## Possible Values
+
+- `PAYG`: Pay as You Go. The default billing model when no payment model is configured. Budget orders are not available with this model.
+- `LOC`: Line of Credit. A monthly invoicing model required to use budget orders. Invoicing details are available in [`InvoiceDetail`](../invoicedetail.md).
 
 #### Discussion
 

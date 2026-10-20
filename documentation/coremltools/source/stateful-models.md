@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/stateful-models.html
 
 # Stateful Models
 
-**
-
-- [.md](../_sources/source/stateful-models.md)
-- **
-
-.pdf
-
-**
-
-# Stateful Models
-
- Table of contents 
-
-## Contents
-
-# Stateful Models
-
 This section introduces how Core ML models support stateful prediction.
 Starting from `iOS18` / `macOS15`, Core ML models can have a *state* input type.
 With a *stateful model*, you can keep track of specific  intermediate values
@@ -50,6 +33,8 @@ acc_in = acc_out
 ...
 ```
 
+![Stateless with I/O](https://apple.github.io/coremltools/docs-guides/_images/stateless-acc-example.png)
+
 With stateful models you can read and write the accumulator state directly. You don’t need to define them as inputs or outputs and copy them explicitly from output of the previous prediction to the input of the next prediction call. The model takes care of updating the value implicitly.
 
 ```
@@ -61,12 +46,16 @@ y_2 = model(x_2, acc)
 ...
 ```
 
+![Stateful model](https://apple.github.io/coremltools/docs-guides/_images/stateful-model-accum.png)
+
 Using stateful models in Core ML is convenient because it simplifies your code,
 and it leaves the decision of how to update the state to the
 model runtime, which may be more efficient.
 
 State inputs show up alongside the usual model inputs in the Xcode UI as shown in
 the snapshot below.
+
+![States in Xcode UI](https://apple.github.io/coremltools/docs-guides/_images/Xcode_stateful_model_io.png)
 
 ## Registering States for a PyTorch Model
 
@@ -212,7 +201,7 @@ Write and read second state
 
 ## Creating a Stateful Model in MIL
 
-You can use the [Model Intermediate Language](https://apple.github.io/coremltools/docs-guides/source/model-intermediate-language.md) (MIL) to create a stateful model directly from MIL ops. Construct a MIL program using the Python [Builder](https://apple.github.io/coremltools/source/coremltools.converters.mil.html#module-coremltools.converters.mil.mil) class for MIL, as shown in the following example, which creates a simple accumulator:
+You can use the [Model Intermediate Language](https://apple.github.io/coremltools/docs-guides/source/model-intermediate-language.html) (MIL) to create a stateful model directly from MIL ops. Construct a MIL program using the Python [Builder](https://apple.github.io/coremltools/source/coremltools.converters.mil.html#module-coremltools.converters.mil.mil) class for MIL, as shown in the following example, which creates a simple accumulator:
 
 ```
 import coremltools as ct
@@ -496,5 +485,3 @@ Time (ms) with kv-cache: 238.0
 
 It’s clear that when we modify the attention module to get a stateful model with kv-cache, a given prediction runs much faster than
 with the original stateless model.
-
-** Contents

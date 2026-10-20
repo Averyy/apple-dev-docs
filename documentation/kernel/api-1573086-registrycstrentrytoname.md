@@ -1,20 +1,22 @@
 # RegistryCStrEntryToName
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 OSStatus RegistryCStrEntryToName(const RegEntryID *entryID, RegEntryID *parentEntry, RegCStrEntryName *nameComponent, Boolean *done);
 ```
 
 ## See Also
 
-- [RegistryCStrEntryLookup](1573022-registrycstrentrylookup.md)
+### C String Utilities
+- [RegistryCStrEntryLookup](./api-1573022-registrycstrentrylookup.md)
 
 
 ---

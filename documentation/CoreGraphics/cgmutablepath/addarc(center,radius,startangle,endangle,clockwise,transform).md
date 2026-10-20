@@ -1,7 +1,8 @@
 # addArc(center:radius:startAngle:endAngle:clockwise:transform:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an arc of a circle to the path, specified with a radius and angles.
 
@@ -34,36 +35,37 @@ If the path already contains a subpath, this method adds a line connecting the c
 - `radius`: The radius of the arc, in user space coordinates.
 - `startAngle`: The angle to the starting point of the arc, measured in radians from the positive x-axis.
 - `endAngle`: The angle to the end point of the arc, measured in radians from the positive x-axis.
-- `clockwise`: [`true`](https://developer.apple.com/documentation/swift/true) to make a clockwise arc; [`false`](https://developer.apple.com/documentation/swift/false) to make a counterclockwise arc.
+- `clockwise`: [`true`](../../Swift/true.md) to make a clockwise arc; [`false`](../../Swift/false.md) to make a counterclockwise arc.
 - `transform`: An affine transform to apply to the arc before adding to the path. Defaults to the identity transform if not specified.
 
 ## See Also
 
-- [func move(to: CGPoint, transform: CGAffineTransform)](cgmutablepath/move(to:transform:).md)
+### Constructing a Graphics Path
+- [func move(to: CGPoint, transform: CGAffineTransform)](./move%28to,transform%29.md)
   Begins a new subpath at the specified point.
-- [func addLine(to: CGPoint, transform: CGAffineTransform)](cgmutablepath/addline(to:transform:).md)
+- [func addLine(to: CGPoint, transform: CGAffineTransform)](./addline%28to,transform%29.md)
   Appends a straight line segment from the current point to the specified point.
-- [func addLines(between: [CGPoint], transform: CGAffineTransform)](cgmutablepath/addlines(between:transform:).md)
+- [func addLines(between: [CGPoint], transform: CGAffineTransform)](./addlines%28between,transform%29.md)
   Adds a sequence of connected straight-line segments to the path.
-- [func addRect(CGRect, transform: CGAffineTransform)](cgmutablepath/addrect(_:transform:).md)
+- [func addRect(CGRect, transform: CGAffineTransform)](./addrect%28_,transform%29.md)
   Adds a rectangular subpath to the path.
-- [func addRects([CGRect], transform: CGAffineTransform)](cgmutablepath/addrects(_:transform:).md)
+- [func addRects([CGRect], transform: CGAffineTransform)](./addrects%28_,transform%29.md)
   Adds a set of rectangular subpaths to the path.
-- [func addEllipse(in: CGRect, transform: CGAffineTransform)](cgmutablepath/addellipse(in:transform:).md)
+- [func addEllipse(in: CGRect, transform: CGAffineTransform)](./addellipse%28in,transform%29.md)
   Adds an ellipse that fits inside the specified rectangle.
-- [func addRoundedRect(in: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: CGAffineTransform)](cgmutablepath/addroundedrect(in:cornerwidth:cornerheight:transform:).md)
+- [func addRoundedRect(in: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: CGAffineTransform)](./addroundedrect%28in,cornerwidth,cornerheight,transform%29.md)
   Adds a subpath to the path, in the shape of a rectangle with rounded corners.
-- [func addArc(tangent1End: CGPoint, tangent2End: CGPoint, radius: CGFloat, transform: CGAffineTransform)](cgmutablepath/addarc(tangent1end:tangent2end:radius:transform:).md)
+- [func addArc(tangent1End: CGPoint, tangent2End: CGPoint, radius: CGFloat, transform: CGAffineTransform)](./addarc%28tangent1end,tangent2end,radius,transform%29.md)
   Adds an arc of a circle to the path, specified with a radius and two tangent lines.
-- [func addRelativeArc(center: CGPoint, radius: CGFloat, startAngle: CGFloat, delta: CGFloat, transform: CGAffineTransform)](cgmutablepath/addrelativearc(center:radius:startangle:delta:transform:).md)
+- [func addRelativeArc(center: CGPoint, radius: CGFloat, startAngle: CGFloat, delta: CGFloat, transform: CGAffineTransform)](./addrelativearc%28center,radius,startangle,delta,transform%29.md)
   Adds an arc of a circle to the path, specified with a radius and a difference in angle.
-- [func addCurve(to: CGPoint, control1: CGPoint, control2: CGPoint, transform: CGAffineTransform)](cgmutablepath/addcurve(to:control1:control2:transform:).md)
+- [func addCurve(to: CGPoint, control1: CGPoint, control2: CGPoint, transform: CGAffineTransform)](./addcurve%28to,control1,control2,transform%29.md)
   Adds a cubic Bézier curve to the path, with the specified end point and control points.
-- [func addQuadCurve(to: CGPoint, control: CGPoint, transform: CGAffineTransform)](cgmutablepath/addquadcurve(to:control:transform:).md)
+- [func addQuadCurve(to: CGPoint, control: CGPoint, transform: CGAffineTransform)](./addquadcurve%28to,control,transform%29.md)
   Adds a quadratic Bézier curve to the path, with the specified end point and control point.
-- [func addPath(CGPath, transform: CGAffineTransform)](cgmutablepath/addpath(_:transform:).md)
+- [func addPath(CGPath, transform: CGAffineTransform)](./addpath%28_,transform%29.md)
   Appends another path object to the path.
-- [func closeSubpath()](cgmutablepath/closesubpath.md)
+- [func closeSubpath()](./closesubpath%28%29.md)
   Closes and completes a subpath in a mutable graphics path.
 
 

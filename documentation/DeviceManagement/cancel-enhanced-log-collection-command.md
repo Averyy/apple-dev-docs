@@ -1,7 +1,8 @@
 # Cancel Enhanced Log Collection
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Cancel enhanced log collection on the device.
 
@@ -14,7 +15,7 @@ Cancel enhanced log collection on the device.
 
 #### Discussion
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -27,9 +28,9 @@ Cancel enhanced log collection on the device.
 ## Topics
 
 ### Commands and responses
-- [object CancelEnhancedLogCollectionCommand](cancelenhancedlogcollectioncommand.md)
+- [object CancelEnhancedLogCollectionCommand](./cancelenhancedlogcollectioncommand.md)
   The command to cancel enhanced log collection on the device.
-- [object CancelEnhancedLogCollectionResponse](cancelenhancedlogcollectionresponse.md)
+- [object CancelEnhancedLogCollectionResponse](./cancelenhancedlogcollectionresponse.md)
   A response from the device after it processes the command to cancel enhanced log collection on the device.
 
 ## Endpoint
@@ -38,11 +39,19 @@ Cancel enhanced log collection on the device.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `CancelEnhancedLogCollectionCommand`
+
 The request object the server returns for the Cancel Enhanced Log Collection Command.
+
+## Responses
+
+- `200` OK (`CancelEnhancedLogCollectionResponse`, `application/xml`): The response object the system returns for the Cancel Enhanced Log Collection Command.
 
 ## See Also
 
-- [Trigger Enhanced Log Collection](trigger-enhanced-log-collection-command.md)
+### Enhanced logging
+- [Trigger Enhanced Log Collection](./trigger-enhanced-log-collection-command.md)
   Trigger enhanced log collection on the device.
 
 

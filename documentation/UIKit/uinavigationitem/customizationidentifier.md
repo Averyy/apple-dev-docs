@@ -1,7 +1,8 @@
 # customizationIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A globally unique string that enables user customization of the navigation bar layout.
 
@@ -17,9 +18,13 @@ A globally unique string that enables user customization of the navigation bar l
 var customizationIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * customizationIdentifier;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # devices
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of external sync devices connected to this host.
 
@@ -16,6 +17,10 @@ An array of external sync devices connected to this host.
 
 ```swift
 var devices: [AVExternalSyncDevice] { get }
+```
+
+```objc
+@property (readonly) NSArray<AVExternalSyncDevice *> * devices;
 ```
 
 #### Discussion

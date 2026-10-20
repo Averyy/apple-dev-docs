@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the container that this database resides in.
 
@@ -10,7 +11,7 @@ A unique identifier for the container that this database resides in.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String containerIdentifier;
 ```
 

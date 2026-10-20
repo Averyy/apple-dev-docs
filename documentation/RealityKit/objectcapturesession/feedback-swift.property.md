@@ -1,7 +1,8 @@
 # feedback
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current set of active `Feedback` states.
 
@@ -18,15 +19,16 @@ var feedback: Set<ObjectCaptureSession.Feedback> { get }
 
 ## See Also
 
-- [ObjectCaptureSession.Feedback](objectcapturesession/feedback-swift.enum.md)
+### Configuring a session
+- [ObjectCaptureSession.Feedback](./feedback-swift.enum.md)
   Provides information about possible problems with the capture session.
-- [var isPaused: Bool](objectcapturesession/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates if the capture session is paused.
-- [var state: ObjectCaptureSession.CaptureState](objectcapturesession/state.md)
+- [var state: ObjectCaptureSession.CaptureState](./state.md)
   The current state of the capture session.
-- [var cameraTracking: ObjectCaptureSession.Tracking](objectcapturesession/cameratracking.md)
+- [var cameraTracking: ObjectCaptureSession.Tracking](./cameratracking.md)
   The current state of ARKit camera tracking.
-- [ObjectCaptureSession.Tracking](objectcapturesession/tracking.md)
+- [ObjectCaptureSession.Tracking](./tracking.md)
   A data structure that describes the current tracking state for the camera.
 
 

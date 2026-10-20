@@ -1,7 +1,8 @@
 # isSystemTrackingEnabled
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indication of whether system tracking is enabled.
 
@@ -19,11 +20,12 @@ var isSystemTrackingEnabled: Bool { get }
 
 #### Discussion
 
-This property is `true` if system tracking is enabled; otherwise the property is `false`. To change system tracking behavior, see [`setSystemTrackingEnabled(_:)`](dockaccessorymanager/setsystemtrackingenabled(_:).md).
+This property is `true` if system tracking is enabled; otherwise the property is `false`. To change system tracking behavior, see [`setSystemTrackingEnabled(_:)`](./setsystemtrackingenabled%28_%29.md).
 
 ## See Also
 
-- [func setSystemTrackingEnabled(Bool) async throws](dockaccessorymanager/setsystemtrackingenabled(_:).md)
+### Changing tracking behavior
+- [func setSystemTrackingEnabled(Bool) async throws](./setsystemtrackingenabled%28_%29.md)
   Enable and disable system tracking for camera-enabled apps.
 
 

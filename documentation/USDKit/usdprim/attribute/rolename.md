@@ -1,7 +1,8 @@
 # roleName
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this attribute type’s role, which clarifies the semantic purpose of its values.
 

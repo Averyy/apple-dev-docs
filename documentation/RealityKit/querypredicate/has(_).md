@@ -1,7 +1,8 @@
 # has(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new predicate that describes entities that have a specific component.
 
@@ -11,7 +12,7 @@ Creates a new predicate that describes entities that have a specific component.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

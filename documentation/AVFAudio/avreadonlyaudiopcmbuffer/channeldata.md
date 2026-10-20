@@ -1,7 +1,8 @@
 # AVReadOnlyAudioPCMBuffer.ChannelData
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents read-only channel data.
 
@@ -33,15 +34,16 @@ For **interleaved** formats:
 ## Topics
 
 ### Getting typed channel data
-- [AVReadOnlyAudioPCMBuffer.ChannelData.float(_:)](avreadonlyaudiopcmbuffer/channeldata/float(_:).md)
-- [AVReadOnlyAudioPCMBuffer.ChannelData.int16(_:)](avreadonlyaudiopcmbuffer/channeldata/int16(_:).md)
-- [AVReadOnlyAudioPCMBuffer.ChannelData.int32(_:)](avreadonlyaudiopcmbuffer/channeldata/int32(_:).md)
+- [AVReadOnlyAudioPCMBuffer.ChannelData.float(_:)](./channeldata/float%28_%29.md)
+- [AVReadOnlyAudioPCMBuffer.ChannelData.int16(_:)](./channeldata/int16%28_%29.md)
+- [AVReadOnlyAudioPCMBuffer.ChannelData.int32(_:)](./channeldata/int32%28_%29.md)
 
 ## See Also
 
-- [func channelData(Int) -> AVReadOnlyAudioPCMBuffer.ChannelData](avreadonlyaudiopcmbuffer/channeldata(_:).md)
+### Accessing channel data
+- [func channelData(Int) -> AVReadOnlyAudioPCMBuffer.ChannelData](./channeldata%28_%29.md)
   Returns read-only access to a specific channel’s data.
-- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](avreadonlyaudiopcmbuffer/withunsafeaudiobufferlist(_:).md)
+- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](./withunsafeaudiobufferlist%28_%29.md)
   Provides scoped read-only access to the audio buffer list.
 
 

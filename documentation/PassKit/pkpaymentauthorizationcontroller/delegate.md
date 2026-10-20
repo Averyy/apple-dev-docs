@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s delegate.
 
@@ -19,17 +20,22 @@ The controller’s delegate.
 weak var delegate: (any PKPaymentAuthorizationControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PKPaymentAuthorizationControllerDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate is called at various points in the interaction, such as when the user selects shipping or billing information and when the user authorizes the payment request.
 
 ## See Also
 
-- [protocol PKPaymentAuthorizationControllerDelegate](pkpaymentauthorizationcontrollerdelegate.md)
+### Handling user interactions
+- [protocol PKPaymentAuthorizationControllerDelegate](../pkpaymentauthorizationcontrollerdelegate.md)
   Methods that let you respond to user interactions with your payment authorization controller.
-- [func present(completion: ((Bool) -> Void)?)](pkpaymentauthorizationcontroller/present(completion:).md)
+- [func present(completion: ((Bool) -> Void)?)](./present%28completion%29.md)
   Presents the payment sheet modally over your app.
-- [func dismiss(completion: (() -> Void)?)](pkpaymentauthorizationcontroller/dismiss(completion:).md)
+- [func dismiss(completion: (() -> Void)?)](./dismiss%28completion%29.md)
   Dismisses the payment sheet.
 
 

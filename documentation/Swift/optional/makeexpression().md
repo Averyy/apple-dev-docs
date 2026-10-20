@@ -1,7 +1,8 @@
 # makeExpression()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an expression that represents this optional intent value.
 
@@ -19,6 +20,8 @@ Creates an expression that represents this optional intent value.
 ```swift
 func makeExpression() -> IntentValueExpression
 ```
+
+Available when `Wrapped` conforms to `IntentValueExpressing`.
 
 #### Return Value
 

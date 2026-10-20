@@ -1,7 +1,8 @@
 # ListStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that describes the behavior and appearance of a list.
 
@@ -23,74 +24,75 @@ protocol ListStyle
 ## Topics
 
 ### Getting built-in list styles
-- [static var automatic: DefaultListStyle](liststyle/automatic.md)
+- [static var automatic: DefaultListStyle](./liststyle/automatic.md)
   The list style that describes a platform’s default behavior and appearance for a list.
-- [static var bordered: BorderedListStyle](liststyle/bordered.md)
+- [static var bordered: BorderedListStyle](./liststyle/bordered.md)
   The list style that describes the behavior and appearance of a list with standard border.
-- [static var carousel: CarouselListStyle](liststyle/carousel.md)
+- [static var carousel: CarouselListStyle](./liststyle/carousel.md)
   The carousel list style.
-- [static var elliptical: EllipticalListStyle](liststyle/elliptical.md)
+- [static var elliptical: EllipticalListStyle](./liststyle/elliptical.md)
   The list style that describes the behavior and appearance of an elliptical list.
-- [static var grouped: GroupedListStyle](liststyle/grouped.md)
+- [static var grouped: GroupedListStyle](./liststyle/grouped.md)
   The list style that describes the behavior and appearance of a grouped list.
-- [static var inset: InsetListStyle](liststyle/inset.md)
+- [static var inset: InsetListStyle](./liststyle/inset.md)
   The list style that describes the behavior and appearance of an inset list.
-- [static var insetGrouped: InsetGroupedListStyle](liststyle/insetgrouped.md)
+- [static var insetGrouped: InsetGroupedListStyle](./liststyle/insetgrouped.md)
   The list style that describes the behavior and appearance of an inset grouped list.
-- [static var plain: PlainListStyle](liststyle/plain.md)
+- [static var plain: PlainListStyle](./liststyle/plain.md)
   The list style that describes the behavior and appearance of a plain list.
-- [static var sidebar: SidebarListStyle](liststyle/sidebar.md)
+- [static var sidebar: SidebarListStyle](./liststyle/sidebar.md)
   The list style that describes the behavior and appearance of a sidebar list.
-- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedListStyle](liststyle/bordered(alternatesrowbackgrounds:).md)
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedListStyle](./liststyle/bordered%28alternatesrowbackgrounds%29.md)
   The list style that describes the behavior and appearance of a list with standard border.
-- [static func inset(alternatesRowBackgrounds: Bool) -> InsetListStyle](liststyle/inset(alternatesrowbackgrounds:).md)
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetListStyle](./liststyle/inset%28alternatesrowbackgrounds%29.md)
   The list style that describes the behavior and appearance of an inset list with optional alternating row backgrounds.
 ### Supporting types
-- [struct DefaultListStyle](defaultliststyle.md)
+- [struct DefaultListStyle](./defaultliststyle.md)
   The list style that describes a platform’s default behavior and appearance for a list.
-- [struct BorderedListStyle](borderedliststyle.md)
+- [struct BorderedListStyle](./borderedliststyle.md)
   The list style that describes the behavior and appearance of a list with standard border.
-- [struct CarouselListStyle](carouselliststyle.md)
+- [struct CarouselListStyle](./carouselliststyle.md)
   The carousel list style.
-- [struct EllipticalListStyle](ellipticalliststyle.md)
+- [struct EllipticalListStyle](./ellipticalliststyle.md)
   The list style that describes the behavior and appearance of an elliptical list.
-- [struct GroupedListStyle](groupedliststyle.md)
+- [struct GroupedListStyle](./groupedliststyle.md)
   The list style that describes the behavior and appearance of a grouped list.
-- [struct InsetListStyle](insetliststyle.md)
+- [struct InsetListStyle](./insetliststyle.md)
   The list style that describes the behavior and appearance of an inset list.
-- [struct InsetGroupedListStyle](insetgroupedliststyle.md)
+- [struct InsetGroupedListStyle](./insetgroupedliststyle.md)
   The list style that describes the behavior and appearance of an inset grouped list.
-- [struct PlainListStyle](plainliststyle.md)
+- [struct PlainListStyle](./plainliststyle.md)
   The list style that describes the behavior and appearance of a plain list.
-- [struct SidebarListStyle](sidebarliststyle.md)
+- [struct SidebarListStyle](./sidebarliststyle.md)
   The list style that describes the behavior and appearance of a sidebar list.
 
 ## Relationships
 
 ### Conforming Types
-- [BorderedListStyle](borderedliststyle.md)
-- [CarouselListStyle](carouselliststyle.md)
-- [DefaultListStyle](defaultliststyle.md)
-- [EllipticalListStyle](ellipticalliststyle.md)
-- [GroupedListStyle](groupedliststyle.md)
-- [InsetGroupedListStyle](insetgroupedliststyle.md)
-- [InsetListStyle](insetliststyle.md)
-- [PlainListStyle](plainliststyle.md)
-- [SidebarListStyle](sidebarliststyle.md)
+- [BorderedListStyle](./borderedliststyle.md)
+- [CarouselListStyle](./carouselliststyle.md)
+- [DefaultListStyle](./defaultliststyle.md)
+- [EllipticalListStyle](./ellipticalliststyle.md)
+- [GroupedListStyle](./groupedliststyle.md)
+- [InsetGroupedListStyle](./insetgroupedliststyle.md)
+- [InsetListStyle](./insetliststyle.md)
+- [PlainListStyle](./plainliststyle.md)
+- [SidebarListStyle](./sidebarliststyle.md)
 
 ## See Also
 
-- [func listStyle<S>(S) -> some View](view/liststyle(_:).md)
+### Styling collection views
+- [func listStyle<S>(S) -> some View](./view/liststyle%28_%29.md)
   Sets the style for lists within this view.
-- [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
+- [func tableStyle<S>(S) -> some View](./view/tablestyle%28_%29.md)
   Sets the style for tables within this view.
-- [protocol TableStyle](tablestyle.md)
+- [protocol TableStyle](./tablestyle.md)
   A type that applies a custom appearance to all tables within a view.
-- [struct TableStyleConfiguration](tablestyleconfiguration.md)
+- [struct TableStyleConfiguration](./tablestyleconfiguration.md)
   The properties of a table.
-- [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
+- [func disclosureGroupStyle<S>(S) -> some View](./view/disclosuregroupstyle%28_%29.md)
   Sets the style for disclosure groups within this view.
-- [protocol DisclosureGroupStyle](disclosuregroupstyle.md)
+- [protocol DisclosureGroupStyle](./disclosuregroupstyle.md)
   A type that specifies the appearance and interaction of disclosure groups within a view hierarchy.
 
 

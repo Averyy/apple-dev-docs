@@ -1,7 +1,8 @@
 # dataLayout
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the layout of source or output  tensor. e.g. `batch x channels x width x height` for `NCHW` layout
 
@@ -17,6 +18,10 @@ The property that defines the layout of source or output  tensor. e.g. `batch x 
 
 ```swift
 var dataLayout: MPSGraphTensorNamedDataLayout { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout dataLayout;
 ```
 
 

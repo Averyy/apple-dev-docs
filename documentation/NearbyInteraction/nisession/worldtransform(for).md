@@ -1,7 +1,8 @@
 # worldTransform(for:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a world transform to integrate a nearby object in an AR experience.
 
@@ -22,12 +23,12 @@ A world transform in ARKit’s coordinate space.
 
 #### Discussion
 
-This [`ARKit`](https://developer.apple.com/documentation/arkit) transform represents the given object’s position in the physical environment, if it’s available. Otherwise, this function returns `nil`.
+This [ARKit](../../ARKit/ARKit.md) transform represents the given object’s position in the physical environment, if it’s available. Otherwise, this function returns `nil`.
 
 With this transform, you can:
 
 - Overlay 3D virtual content onto a camera-feed visualization where the nearby object resides in the physical environment, such as done by an AR app’s renderer.
-- Play a 3D-spatial sound from the location of the nearby object, for example, by using [`PHASE`](https://developer.apple.com/documentation/phase).
+- Play a 3D-spatial sound from the location of the nearby object, for example, by using [PHASE](../../PHASE/PHASE.md).
 
 ## Parameters
 
@@ -35,7 +36,8 @@ With this transform, you can:
 
 ## See Also
 
-- [func setARSession(ARSession)](nisession/setarsession(_:).md)
+### Utilizing Camera Assistance
+- [func setARSession(ARSession)](./setarsession%28_%29.md)
   Provides the framework with an existing AR session to use for Camera Assistance.
 
 

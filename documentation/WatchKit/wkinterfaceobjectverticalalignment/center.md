@@ -1,7 +1,8 @@
 # WKInterfaceObjectVerticalAlignment.center
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Center alignment. The object’s content is centered vertically in the container and extends equally up and down.
 
@@ -14,11 +15,16 @@ Center alignment. The object’s content is centered vertically in the container
 case center
 ```
 
+```c
+WKInterfaceObjectVerticalAlignmentCenter
+```
+
 ## See Also
 
-- [WKInterfaceObjectVerticalAlignment.top](wkinterfaceobjectverticalalignment/top.md)
+### Constants
+- [WKInterfaceObjectVerticalAlignment.top](./top.md)
   Top alignment. The object’s content aligns with the top edge of the container and extends downward.
-- [WKInterfaceObjectVerticalAlignment.bottom](wkinterfaceobjectverticalalignment/bottom.md)
+- [WKInterfaceObjectVerticalAlignment.bottom](./bottom.md)
   Bottom alignment. The object’s content aligns with the bottom edge of the container and extends upward.
 
 

@@ -1,22 +1,27 @@
 # sawInfinity
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `TRUE` if there was an infinite value on this channel since the last time the property was retrieved.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var sawInfinity: DarwinBoolean
+```
+
+```c
+Boolean sawInfinity;
 ```
 
 

@@ -1,7 +1,8 @@
 # window(_:willUseFullScreenContentSize:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to allow the delegate to modify the full-screen content size.
 
@@ -15,6 +16,10 @@ Called to allow the delegate to modify the full-screen content size.
 optional func window(_ window: NSWindow, willUseFullScreenContentSize proposedSize: NSSize) -> NSSize
 ```
 
+```objc
+- (NSSize) window:(NSWindow *) window willUseFullScreenContentSize:(NSSize) proposedSize;
+```
+
 #### Return Value
 
 The window size to use when displaying content size.
@@ -26,15 +31,16 @@ The window size to use when displaying content size.
 
 ## See Also
 
-- [func window(NSWindow, willUseFullScreenPresentationOptions: NSApplication.PresentationOptions) -> NSApplication.PresentationOptions](nswindowdelegate/window(_:willusefullscreenpresentationoptions:).md)
+### Managing Full-Screen Presentation
+- [func window(NSWindow, willUseFullScreenPresentationOptions: NSApplication.PresentationOptions) -> NSApplication.PresentationOptions](./window%28_,willusefullscreenpresentationoptions%29.md)
   Returns the presentation options the window uses when transitioning to full-screen mode.
-- [func windowWillEnterFullScreen(Notification)](nswindowdelegate/windowwillenterfullscreen(_:).md)
+- [func windowWillEnterFullScreen(Notification)](./windowwillenterfullscreen%28_%29.md)
   The window is about to enter full-screen mode.
-- [func windowDidEnterFullScreen(Notification)](nswindowdelegate/windowdidenterfullscreen(_:).md)
+- [func windowDidEnterFullScreen(Notification)](./windowdidenterfullscreen%28_%29.md)
   The window has entered full-screen mode.
-- [func windowWillExitFullScreen(Notification)](nswindowdelegate/windowwillexitfullscreen(_:).md)
+- [func windowWillExitFullScreen(Notification)](./windowwillexitfullscreen%28_%29.md)
   The window is about to exit full-screen mode.
-- [func windowDidExitFullScreen(Notification)](nswindowdelegate/windowdidexitfullscreen(_:).md)
+- [func windowDidExitFullScreen(Notification)](./windowdidexitfullscreen%28_%29.md)
   The window has left full-screen mode.
 
 

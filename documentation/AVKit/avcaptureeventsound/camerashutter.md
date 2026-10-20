@@ -1,7 +1,8 @@
 # cameraShutter
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default sound for photo capture.
 
@@ -16,11 +17,16 @@ The default sound for photo capture.
 class var cameraShutter: AVCaptureEventSound { get }
 ```
 
+```objc
+@property (class, readonly) AVCaptureEventSound * cameraShutterSound;
+```
+
 ## See Also
 
-- [class var beginVideoRecording: AVCaptureEventSound](avcaptureeventsound/beginvideorecording.md)
+### Accessing default sounds
+- [class var beginVideoRecording: AVCaptureEventSound](./beginvideorecording.md)
   The default sound for starting a video recording.
-- [class var endVideoRecording: AVCaptureEventSound](avcaptureeventsound/endvideorecording.md)
+- [class var endVideoRecording: AVCaptureEventSound](./endvideorecording.md)
   The default sound for ending a video recording.
 
 

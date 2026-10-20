@@ -1,7 +1,8 @@
 # init(object:type:index:associatedIndex:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a change object that represents inserting, removing, or moving an object from an ordered collection at a specific index.
 
@@ -20,9 +21,13 @@ Creates a change object that represents inserting, removing, or moving an object
 init(object anObject: Any?, type: NSCollectionChangeType, index: Int, associatedIndex: Int)
 ```
 
+```objc
+- (instancetype) initWithObject:(ObjectType) anObject type:(NSCollectionChangeType) type index:(NSUInteger) index associatedIndex:(NSUInteger) associatedIndex;
+```
+
 #### Discussion
 
-Pairs of changes with opposite types that refer to each other represent the index location of their counterpart with the [`associatedIndex`](nsorderedcollectionchange/associatedindex.md) property. Initializing an [`NSOrderedCollectionDifference`](nsorderedcollectiondifference.md) with broken associations (or associations that aren’t reflexive) generates an exception. The following example creates a diff where the object `@”Red”` moves from index `8` to index `3`:
+Pairs of changes with opposite types that refer to each other represent the index location of their counterpart with the [`associatedIndex`](./associatedindex.md) property. Initializing an [`NSOrderedCollectionDifference`](../nsorderedcollectiondifference.md) with broken associations (or associations that aren’t reflexive) generates an exception. The following example creates a diff where the object `@”Red”` moves from index `8` to index `3`:
 
 ```objc
 NSOrderedCollectionDifference *diff = [[NSOrderedCollectionDifference alloc] initWithChanges:@[
@@ -31,7 +36,7 @@ NSOrderedCollectionDifference *diff = [[NSOrderedCollectionDifference alloc] ini
 ]];
 ```
 
-A move pair can have a different `object` in its removal and insertion changes, which can imply that the change represents moving and changing or replacing an element. Diffs that [`controller(_:didChangeContentWith:)`](https://developer.apple.com/documentation/coredata/nsfetchedresultscontrollerdelegate/controller(_:didchangecontentwith:)-5ullb) passes to delegates of [`NSFetchedResultsController`](https://developer.apple.com/documentation/coredata/nsfetchedresultscontroller) communicate that an object changed even when its position in the results is unaffected.
+A move pair can have a different `object` in its removal and insertion changes, which can imply that the change represents moving and changing or replacing an element. Diffs that [`controller(_:didChangeContentWith:)`](../../CoreData/nsfetchedresultscontrollerdelegate/controller%28_,didchangecontentwith%29-5ullb.md) passes to delegates of [`NSFetchedResultsController`](../../CoreData/nsfetchedresultscontroller.md) communicate that an object changed even when its position in the results is unaffected.
 
 > **Note**:  Don’t ignore a move when the indexes of its changes are the same. The calculated difference from `@[@”A”, @”B”, @”C”]` to `@[@”C”, @”B”]` may legitimately produce a diff where the change removes the object at index 0 and the object at index 1 moves to index 1. Ignoring the move produces the incorrect result `@[@”B”, @”C”]`.
 
@@ -44,7 +49,8 @@ A move pair can have a different `object` in its removal and insertion changes, 
 
 ## See Also
 
-- [convenience init(object: Any?, type: NSCollectionChangeType, index: Int)](nsorderedcollectionchange/init(object:type:index:).md)
+### Creating a Change
+- [convenience init(object: Any?, type: NSCollectionChangeType, index: Int)](./init%28object,type,index%29.md)
   Creates a change object that represents inserting or removing an object from an ordered collection at a specific index.
 
 

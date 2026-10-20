@@ -1,7 +1,8 @@
 # init(contentsOf:error:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated script instance from the source identified by the passed URL.
 
@@ -13,6 +14,10 @@ Initializes a newly allocated script instance from the source identified by the 
 
 ```swift
 init?(contentsOf url: URL, error errorInfo: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)
+```
+
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) url error:(NSDictionary<NSString *,id> **) errorInfo;
 ```
 
 #### Return Value
@@ -30,8 +35,10 @@ This method is a designated initializer for `NSAppleScript`.
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [init?(source: String)](nsapplescript/init(source:).md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Initializing a Script
+- [init?(source: String)](./init%28source%29.md)
   Initializes a newly allocated script instance from the passed source.
 
 

@@ -1,14 +1,15 @@
 # ml_phys_write_double_64
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_phys_write_double_64(addr64_t paddr, unsigned long long data);
 ```
 

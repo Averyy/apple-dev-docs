@@ -1,7 +1,8 @@
 # entities
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of GameplayKit entities managed by the scene.
 
@@ -19,15 +20,20 @@ The list of GameplayKit entities managed by the scene.
 var entities: [GKEntity] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<GKEntity *> * entities;
+```
+
 #### Discussion
 
 When you add entities (and their components) to a scene in the Xcode SpriteKit scene editor, Xcode automatically adds them to this array.
 
 ## See Also
 
-- [func addEntity(GKEntity)](gkscene/addentity(_:).md)
+### Managing Entities and Components
+- [func addEntity(GKEntity)](./addentity%28_%29.md)
   Adds a GameplayKit entity to the list of entities managed by the scene.
-- [func removeEntity(GKEntity)](gkscene/removeentity(_:).md)
+- [func removeEntity(GKEntity)](./removeentity%28_%29.md)
   Removes a GameplayKit entity from the list of entities managed by the scene.
 
 

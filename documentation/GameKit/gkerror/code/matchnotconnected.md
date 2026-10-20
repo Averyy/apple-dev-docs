@@ -1,7 +1,8 @@
 # GKError.Code.matchNotConnected
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t complete the requested operation because the match isn’t connected to other players.
 
@@ -20,15 +21,20 @@ The system can’t complete the requested operation because the match isn’t co
 case matchNotConnected
 ```
 
+```c
+GKErrorMatchNotConnected
+```
+
 ## See Also
 
-- [GKError.Code.matchRequestInvalid](gkerror/code/matchrequestinvalid.md)
+### Matchmaking Errors
+- [GKError.Code.matchRequestInvalid](./matchrequestinvalid.md)
   The system can’t complete the requested operation because the match request is invalid.
-- [GKError.Code.unexpectedConnection](gkerror/code/unexpectedconnection.md)
+- [GKError.Code.unexpectedConnection](./unexpectedconnection.md)
   An unexpected player has connected to a match.
-- [GKError.Code.invitationsDisabled](gkerror/code/invitationsdisabled.md)
+- [GKError.Code.invitationsDisabled](./invitationsdisabled.md)
   The system can’t complete the requested operation because the receiving player has disabled invitations.
-- [GKError.Code.restrictedToAutomatch](gkerror/code/restrictedtoautomatch.md)
+- [GKError.Code.restrictedToAutomatch](./restrictedtoautomatch.md)
   The system can’t complete the requested operation because the player is using automatch.
 
 

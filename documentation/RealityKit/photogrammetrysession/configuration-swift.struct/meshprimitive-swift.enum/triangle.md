@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.MeshPrimitive.triangle
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 18.0+

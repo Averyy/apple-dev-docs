@@ -1,7 +1,8 @@
 # isResolved
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the version object is in conflict or not.
 
@@ -20,23 +21,28 @@ A Boolean value that indicates if the version object is in conflict or not.
 var isResolved: Bool { get set }
 ```
 
+```objc
+@property (getter=isResolved) BOOL resolved;
+```
+
 #### Discussion
 
-When the system detects a conflict involving versions of a file, it sets this property to [`false`](https://developer.apple.com/documentation/swift/false) to indicate an unresolved conflict. After you resolve the conflict, set this property to [`true`](https://developer.apple.com/documentation/swift/true) to tell the system it is resolved; you must then remove any versions of the file that are no longer useful.
+When the system detects a conflict involving versions of a file, it sets this property to [`false`](../../Swift/false.md) to indicate an unresolved conflict. After you resolve the conflict, set this property to [`true`](../../Swift/true.md) to tell the system it is resolved; you must then remove any versions of the file that are no longer useful.
 
 > ❗ **Important**:  If you do not explicitly remove versions of a file that are no longer useful, iCloud continues to sync them to all a user’s devices and those versions continue to consume user iCloud quota.
 
-To remove an unused version of a file, call the [`remove()`](nsfileversion/remove().md) method. To remove all unused versions of a file, call the [`removeOtherVersionsOfItem(at:)`](nsfileversion/removeotherversionsofitem(at:).md) method.
+To remove an unused version of a file, call the [`remove()`](./remove%28%29.md) method. To remove all unused versions of a file, call the [`removeOtherVersionsOfItem(at:)`](./removeotherversionsofitem%28at%29.md) method.
 
-> ❗ **Important**:  Never set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false). If you do, the system raises an exception.
+> ❗ **Important**:  Never set the value of this property to [`false`](../../Swift/false.md). If you do, the system raises an exception.
 
-Resolving a conflict causes the file version object to be removed from any reports about conflicting versions, such as those returned by the [`unresolvedConflictVersionsOfItem(at:)`](nsfileversion/unresolvedconflictversionsofitem(at:).md) method.
+Resolving a conflict causes the file version object to be removed from any reports about conflicting versions, such as those returned by the [`unresolvedConflictVersionsOfItem(at:)`](./unresolvedconflictversionsofitem%28at%29.md) method.
 
 ## See Also
 
-- [var isConflict: Bool](nsfileversion/isconflict.md)
+### Handling Version Conflicts
+- [var isConflict: Bool](./isconflict.md)
   A Boolean value indicating whether the contents of the version are in conflict with the contents of another version.
-- [class func unresolvedConflictVersionsOfItem(at: URL) -> [NSFileVersion]?](nsfileversion/unresolvedconflictversionsofitem(at:).md)
+- [class func unresolvedConflictVersionsOfItem(at: URL) -> [NSFileVersion]?](./unresolvedconflictversionsofitem%28at%29.md)
   Returns an array of version objects that are currently in conflict for the specified URL.
 
 

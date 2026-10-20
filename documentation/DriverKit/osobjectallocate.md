@@ -1,26 +1,28 @@
 # OSObjectAllocate
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Helper function for OSTypeAlloc(). Not to be called directly.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 extern kern_return_t OSObjectAllocate(OSMetaClass *meta, OSObject **pObject);
 ```
 
 ## See Also
 
-- [OSObjectRetain](osobjectretain.md)
-- [OSObjectRelease](osobjectrelease.md)
+### Object Support
+- [OSObjectRetain](./osobjectretain.md)
+- [OSObjectRelease](./osobjectrelease.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SignificantUpdateAction
 
 **Framework**: Declared Age Range  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that presents a system sheet for significant app update acknowledgments.
 
@@ -23,7 +24,7 @@ Use this function to inform people about important changes to your app that requ
 ## Topics
 
 ### Presenting acknowledgments
-- [func callAsFunction(updateDescription: String) async throws](significantupdateaction/callasfunction(updatedescription:).md)
+- [func callAsFunction(updateDescription: String) async throws](./significantupdateaction/callasfunction%28updatedescription%29.md)
   Shows the significant update acknowledgment interface.
 
 

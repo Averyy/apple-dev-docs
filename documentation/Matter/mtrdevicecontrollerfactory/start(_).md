@@ -1,7 +1,8 @@
 # start(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -18,9 +19,13 @@
 func start(_ startupParams: MTRDeviceControllerFactoryParams) throws
 ```
 
+```objc
+- (BOOL) startControllerFactory:(MTRDeviceControllerFactoryParams *) startupParams error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](../onboarding-a-matter-device.md)
 
 
 ---

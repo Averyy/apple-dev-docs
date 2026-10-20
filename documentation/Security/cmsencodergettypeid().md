@@ -1,7 +1,8 @@
 # CMSEncoderGetTypeID()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for the CMSEncoder opaque type.
 
@@ -12,6 +13,10 @@ Returns the type identifier for the CMSEncoder opaque type.
 
 ```swift
 func CMSEncoderGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID CMSEncoderGetTypeID();
 ```
 
 

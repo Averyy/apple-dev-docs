@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Remove an identified action.
@@ -17,6 +18,10 @@ Remove an identified action.
 
 ```swift
 func remove(action removedIdentifier: UIAction.Identifier)
+```
+
+```objc
+- (void) removeActionForIdentifier:(UIActionIdentifier) removedIdentifier;
 ```
 
 ## Parameters

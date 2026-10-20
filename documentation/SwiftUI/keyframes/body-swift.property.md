@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The composition of content that comprise the keyframes.
@@ -24,9 +25,10 @@ The composition of content that comprise the keyframes.
 
 ## See Also
 
-- [associatedtype Body : Keyframes](keyframes/body-swift.associatedtype.md)
+### Creating a keyframe
+- [associatedtype Body : Keyframes](./body-swift.associatedtype.md)
   The type of keyframes representing the body of this type.
-- [associatedtype Value = Self.Body.Value](keyframes/value.md)
+- [associatedtype Value = Self.Body.Value](./value.md)
   The type of value animated by this keyframes type
 
 

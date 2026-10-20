@@ -1,7 +1,8 @@
 # CFBundleDocumentTypes
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The document types supported by the bundle.
 
@@ -13,37 +14,39 @@ The document types supported by the bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `CFBundleDocumentTypes` (Document types)
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### Property List Keys
-- [CFBundleTypeIconFile](information-property-list/cfbundledocumenttypes/cfbundletypeiconfile.md)
+- [CFBundleTypeIconFile](./cfbundledocumenttypes/cfbundletypeiconfile.md)
   The icon to associate with the document type.
-- [CFBundleTypeName](information-property-list/cfbundledocumenttypes/cfbundletypename.md)
+- [CFBundleTypeName](./cfbundledocumenttypes/cfbundletypename.md)
   The abstract name for the document type.
-- [CFBundleTypeRole](information-property-list/cfbundledocumenttypes/cfbundletyperole.md)
+- [CFBundleTypeRole](./cfbundledocumenttypes/cfbundletyperole.md)
   The app’s role with respect to the document type.
-- [LSHandlerRank](information-property-list/cfbundledocumenttypes/lshandlerrank.md)
+- [LSHandlerRank](./cfbundledocumenttypes/lshandlerrank.md)
   The ranking of this app among apps that declare themselves as editors or viewers of the given file type.
-- [LSItemContentTypes](information-property-list/cfbundledocumenttypes/lsitemcontenttypes.md)
+- [LSItemContentTypes](./cfbundledocumenttypes/lsitemcontenttypes.md)
   The document file types the app supports.
-- [LSTypeIsPackage](information-property-list/cfbundledocumenttypes/lstypeispackage.md)
+- [LSTypeIsPackage](./cfbundledocumenttypes/lstypeispackage.md)
   A Boolean value indicating whether the document is distributed as a bundle.
-- [NSDocumentClass](information-property-list/cfbundledocumenttypes/nsdocumentclass.md)
+- [NSDocumentClass](./cfbundledocumenttypes/nsdocumentclass.md)
   The subclass used to create instances of this document.
-- [NSExportableTypes](information-property-list/cfbundledocumenttypes/nsexportabletypes.md)
+- [NSExportableTypes](./cfbundledocumenttypes/nsexportabletypes.md)
   The file types that this document can be exported to.
 
 ## See Also
 
-- [UISupportsDocumentBrowser](information-property-list/uisupportsdocumentbrowser.md)
+### Documents
+- [UISupportsDocumentBrowser](./uisupportsdocumentbrowser.md)
   A Boolean value indicating whether the app is a document-based app.
-- [LSSupportsOpeningDocumentsInPlace](information-property-list/lssupportsopeningdocumentsinplace.md)
+- [LSSupportsOpeningDocumentsInPlace](./lssupportsopeningdocumentsinplace.md)
   A Boolean value indicating whether the app may open the original document from a file provider, rather than a copy of the document.
-- [NSDownloadsUbiquitousContents](information-property-list/nsdownloadsubiquitouscontents.md)
+- [NSDownloadsUbiquitousContents](./nsdownloadsubiquitouscontents.md)
   A Boolean value that indicates whether the system should download documents before handing them over to the app.
 
 

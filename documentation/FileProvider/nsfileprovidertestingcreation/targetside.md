@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The target location for the new item.
@@ -19,11 +20,16 @@ The target location for the new item.
 var targetSide: NSFileProviderTestingOperationSide { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderTestingOperationSide targetSide;
+```
+
 ## See Also
 
-- [var sourceItem: NSFileProviderItem](nsfileprovidertestingcreation/sourceitem.md)
+### Accessing the Operation’s Data
+- [var sourceItem: NSFileProviderItem](./sourceitem.md)
   A description of the item stored at the source.
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileprovidertestingcreation/domainversion.md)
+- [var domainVersion: NSFileProviderDomainVersion?](./domainversion.md)
   The domain’s version when the system discovered the item at the source location.
 
 

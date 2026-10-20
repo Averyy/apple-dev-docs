@@ -1,7 +1,8 @@
 # bluetoothTransportBridgingIdentifier
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory’s Bluetooth identifier, if any, for use when bridging classic transport profiles.
 
@@ -15,11 +16,16 @@ The accessory’s Bluetooth identifier, if any, for use when bridging classic tr
 var bluetoothTransportBridgingIdentifier: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * bluetoothTransportBridgingIdentifier;
+```
+
 ## See Also
 
-- [var bluetoothIdentifier: UUID?](asaccessory/bluetoothidentifier.md)
+### Accessing identifiers
+- [var bluetoothIdentifier: UUID?](./bluetoothidentifier.md)
   The accessory’s unique Bluetooth identifier, if any.
-- [var ssid: String?](asaccessory/ssid.md)
+- [var ssid: String?](./ssid.md)
   The accessory’s Wi-Fi SSID, if any.
 
 

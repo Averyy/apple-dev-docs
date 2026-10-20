@@ -1,7 +1,8 @@
 # disallowed
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The model may not call any tool.
 
@@ -21,13 +22,14 @@ static let disallowed: GenerationOptions.ToolCallingMode
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Expanding generation with tool calling](../../expanding-generation-with-tool-calling.md)
 
 ## See Also
 
-- [static let allowed: GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct/allowed.md)
+### Getting the tool calling modes
+- [static let allowed: GenerationOptions.ToolCallingMode](./allowed.md)
   The model may or may not call tools.
-- [static let required: GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct/required.md)
+- [static let required: GenerationOptions.ToolCallingMode](./required.md)
   The model must call one or multiple tools.
 
 

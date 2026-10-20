@@ -1,7 +1,8 @@
 # biometry
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var biometry: LAEnvironment.MechanismBiometry? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) LAEnvironmentMechanismBiometry * biometry;
 ```
 
 #### Discussion

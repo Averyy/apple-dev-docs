@@ -1,7 +1,8 @@
 # MTLDepthClipMode.clip
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Clip fragments outside the near or far planes.
 
@@ -19,9 +20,14 @@ Clip fragments outside the near or far planes.
 case clip
 ```
 
+```c
+MTLDepthClipModeClip
+```
+
 ## See Also
 
-- [MTLDepthClipMode.clamp](mtldepthclipmode/clamp.md)
+### Clip modes
+- [MTLDepthClipMode.clamp](./clamp.md)
   Clamp fragments outside the near or far planes.
 
 

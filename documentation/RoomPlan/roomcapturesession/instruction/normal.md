@@ -1,7 +1,8 @@
 # RoomCaptureSession.Instruction.normal
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An instruction that indicates scanning proceeds normally and the user needs no coaching.
 
@@ -18,15 +19,16 @@ case normal
 
 ## See Also
 
-- [RoomCaptureSession.Instruction.moveCloseToWall](roomcapturesession/instruction/moveclosetowall.md)
+### Determining a coaching recommendation
+- [RoomCaptureSession.Instruction.moveCloseToWall](./moveclosetowall.md)
   An instruction that requests the user move closer to the wall.
-- [RoomCaptureSession.Instruction.moveAwayFromWall](roomcapturesession/instruction/moveawayfromwall.md)
+- [RoomCaptureSession.Instruction.moveAwayFromWall](./moveawayfromwall.md)
   An instruction that requests the user move further from the wall.
-- [RoomCaptureSession.Instruction.turnOnLight](roomcapturesession/instruction/turnonlight.md)
+- [RoomCaptureSession.Instruction.turnOnLight](./turnonlight.md)
   An instruction that requests the user increase the amount of light in the room.
-- [RoomCaptureSession.Instruction.slowDown](roomcapturesession/instruction/slowdown.md)
+- [RoomCaptureSession.Instruction.slowDown](./slowdown.md)
   An instruction that requests that the user move slower.
-- [RoomCaptureSession.Instruction.lowTexture](roomcapturesession/instruction/lowtexture.md)
+- [RoomCaptureSession.Instruction.lowTexture](./lowtexture.md)
   An instruction that indicates the framework doesn’t detect distinguishable room features.
 
 

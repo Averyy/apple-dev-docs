@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies a widget in your WidgetKit extension.
 
@@ -14,9 +15,14 @@ A string that uniquely identifies a widget in your WidgetKit extension.
 var kind: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * kind;
+```
+
 ## See Also
 
-- [var extensionBundleIdentifier: String](clkcomplicationstaticwidgetmigrationconfiguration/extensionbundleidentifier.md)
+### Accessing configuration properties
+- [var extensionBundleIdentifier: String](./extensionbundleidentifier.md)
   The bundle identifier for your WidgetKit extension.
 
 

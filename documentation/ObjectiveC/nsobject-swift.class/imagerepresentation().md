@@ -1,17 +1,22 @@
 # imageRepresentation()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the image to display.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func imageRepresentation() -> Any!
+```
+
+```objc
+- (id) imageRepresentation;
 ```
 
 #### Return Value

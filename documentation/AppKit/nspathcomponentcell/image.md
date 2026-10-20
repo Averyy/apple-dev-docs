@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed for this component cell.
 
@@ -12,6 +13,10 @@ The image displayed for this component cell.
 
 ```swift
 var image: NSImage? { get set }
+```
+
+```objc
+@property (strong, nullable) NSImage * image;
 ```
 
 

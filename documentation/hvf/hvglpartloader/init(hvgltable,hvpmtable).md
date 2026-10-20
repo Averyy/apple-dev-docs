@@ -1,7 +1,8 @@
 # init(hvglTable:hvpmTable:)
 
 **Framework**: hvf  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns nil if the data is malformed or missing
 

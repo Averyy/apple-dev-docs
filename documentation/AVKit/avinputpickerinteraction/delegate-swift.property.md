@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input picker view’s delegate.
 
@@ -16,9 +17,14 @@ The input picker view’s delegate.
 weak var delegate: (any AVInputPickerInteraction.Delegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<AVInputPickerInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [AVInputPickerInteraction.Delegate](avinputpickerinteraction/delegate-swift.protocol.md)
+### Setting the delegate
+- [AVInputPickerInteraction.Delegate](./delegate-swift.protocol.md)
   The `AVInputPickerInteractionDelegate` protocol defines methods you use to receive notifications about transitions in an `AVInputPickerInteraction` object.
 
 

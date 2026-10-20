@@ -1,7 +1,8 @@
 # symbolRenderingMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the rendering mode for symbol images within this view.
 
@@ -30,15 +31,16 @@ A view that uses the rendering mode you supply.
 
 ## See Also
 
-- [func antialiased(Bool) -> Image](image/antialiased(_:).md)
+### Specifying rendering behavior
+- [func antialiased(Bool) -> Image](./antialiased%28_%29.md)
   Specifies whether SwiftUI applies antialiasing when rendering the image.
-- [func renderingMode(Image.TemplateRenderingMode?) -> Image](image/renderingmode(_:).md)
+- [func renderingMode(Image.TemplateRenderingMode?) -> Image](./renderingmode%28_%29.md)
   Indicates whether SwiftUI renders an image as-is, or by using a different mode.
-- [func interpolation(Image.Interpolation) -> Image](image/interpolation(_:).md)
+- [func interpolation(Image.Interpolation) -> Image](./interpolation%28_%29.md)
   Specifies the current level of quality for rendering an image that requires interpolation.
-- [Image.TemplateRenderingMode](image/templaterenderingmode.md)
+- [Image.TemplateRenderingMode](./templaterenderingmode.md)
   A type that indicates how SwiftUI renders images.
-- [Image.Interpolation](image/interpolation.md)
+- [Image.Interpolation](./interpolation.md)
   The level of quality for rendering an image that requires interpolation, such as a scaled image.
 
 

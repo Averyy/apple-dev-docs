@@ -1,7 +1,8 @@
 # ASDeliveredVerificationCodesManager.VerificationError.Code.userPermissionDenied
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This error signals that the user had denied the requested operation.
 

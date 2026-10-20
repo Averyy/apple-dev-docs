@@ -1,7 +1,8 @@
 # textInputClientDidScroll()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func textInputClientDidScroll()
+```
+
+```objc
+- (void) textInputClientDidScroll;
 ```
 
 

@@ -1,7 +1,8 @@
 # ApplePayMerchandisingAction
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type of action taken when the button is tapped on the ApplePayMerchandisingView
 
@@ -18,20 +19,20 @@ struct ApplePayMerchandisingAction
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](applepaymerchandisingaction/init(rawvalue:).md)
+- [init(rawValue: String)](./applepaymerchandisingaction/init%28rawvalue%29.md)
   Instantiates a particular action
 ### Instance Properties
-- [let rawValue: String](applepaymerchandisingaction/rawvalue.md)
+- [let rawValue: String](./applepaymerchandisingaction/rawvalue.md)
   The string representation of the action
 ### Type Properties
-- [static var learnMore: ApplePayMerchandisingAction](applepaymerchandisingaction/learnmore.md)
+- [static var learnMore: ApplePayMerchandisingAction](./applepaymerchandisingaction/learnmore.md)
   Displays a simple info sheet on the learn more details
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

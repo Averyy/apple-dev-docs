@@ -1,7 +1,8 @@
 # MLDataValue.ValueType.invalid
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An invalid type.
 
@@ -21,17 +22,18 @@ case invalid
 
 ## See Also
 
-- [MLDataValue.ValueType.int](mldatavalue/valuetype/int.md)
+### Supported values
+- [MLDataValue.ValueType.int](./int.md)
   An integer type.
-- [MLDataValue.ValueType.double](mldatavalue/valuetype/double.md)
+- [MLDataValue.ValueType.double](./double.md)
   A double type.
-- [MLDataValue.ValueType.string](mldatavalue/valuetype/string.md)
+- [MLDataValue.ValueType.string](./string.md)
   A string type.
-- [MLDataValue.ValueType.dictionary](mldatavalue/valuetype/dictionary.md)
+- [MLDataValue.ValueType.dictionary](./dictionary.md)
   A dictionary type.
-- [MLDataValue.ValueType.sequence](mldatavalue/valuetype/sequence.md)
+- [MLDataValue.ValueType.sequence](./sequence.md)
   A sequence type.
-- [MLDataValue.ValueType.multiArray](mldatavalue/valuetype/multiarray.md)
+- [MLDataValue.ValueType.multiArray](./multiarray.md)
   A multidimensional type.
 
 

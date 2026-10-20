@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current time zone that views should use when handling dates.
 
@@ -22,13 +23,14 @@ var timeZone: TimeZone { get set }
 
 ## See Also
 
-- [struct DatePicker](datepicker.md)
+### Choosing dates
+- [struct DatePicker](../datepicker.md)
   A control for selecting an absolute date.
-- [func datePickerStyle<S>(S) -> some View](view/datepickerstyle(_:).md)
+- [func datePickerStyle<S>(S) -> some View](../view/datepickerstyle%28_%29.md)
   Sets the style for date pickers within this view.
-- [struct MultiDatePicker](multidatepicker.md)
+- [struct MultiDatePicker](../multidatepicker.md)
   A control for picking multiple dates.
-- [var calendar: Calendar](environmentvalues/calendar.md)
+- [var calendar: Calendar](./calendar.md)
   The current calendar that views should use when handling dates.
 
 

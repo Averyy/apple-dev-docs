@@ -1,7 +1,8 @@
 # laplacianBias
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var laplacianBias: Float { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite, getter=getLaplacianBias, setter=setLaplacianBias:) float laplacianBias;
 ```
 
 

@@ -1,7 +1,8 @@
 # visibilityResultBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures a buffer into which Metal writes counts of fragments (pixels) passing the depth and stencil tests.
 
@@ -17,6 +18,10 @@ Configures a buffer into which Metal writes counts of fragments (pixels) passing
 
 ```swift
 var visibilityResultBuffer: (any MTLBuffer)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id<MTLBuffer> visibilityResultBuffer;
 ```
 
 

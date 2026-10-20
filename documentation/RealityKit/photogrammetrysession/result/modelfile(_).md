@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Result.modelFile(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The result of a request for a USDZ file.
 
@@ -23,9 +24,10 @@ case modelFile(URL)
 
 ## See Also
 
-- [PhotogrammetrySession.Result.modelEntity(_:)](photogrammetrysession/result/modelentity(_:).md)
+### Types of output
+- [PhotogrammetrySession.Result.modelEntity(_:)](./modelentity%28_%29.md)
   The result of a request for an in-memory entity.
-- [PhotogrammetrySession.Result.bounds(_:)](photogrammetrysession/result/bounds(_:).md)
+- [PhotogrammetrySession.Result.bounds(_:)](./bounds%28_%29.md)
   The result of a request for a bounding box.
 
 

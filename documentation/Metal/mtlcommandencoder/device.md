@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The Metal device from which the command encoder was created.
@@ -11,7 +12,7 @@ The Metal device from which the command encoder was created.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The Metal device from which the command encoder was created.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly) id<MTLDevice> device;
+```
+
 #### Discussion
 
-This command encoder can only be used with this [`MTLDevice`](mtldevice.md).
+This command encoder can only be used with this [`MTLDevice`](../mtldevice.md).
 
 ## See Also
 
-- [var label: String?](mtlcommandencoder/label.md)
+### Identifying the command encoder
+- [var label: String?](./label.md)
   A string that labels the command encoder.
 
 

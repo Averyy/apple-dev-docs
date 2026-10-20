@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A binding to the optional value.
 
@@ -26,7 +27,8 @@ The unwrapped value is `nil` when no focused view hierarchy has published a corr
 
 ## See Also
 
-- [var wrappedValue: Value?](focusedbinding/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: Value?](./wrappedvalue.md)
   The unwrapped value for the focus key given the current scope and state of the focused view hierarchy.
 
 

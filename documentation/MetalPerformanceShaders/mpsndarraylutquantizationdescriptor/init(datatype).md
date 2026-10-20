@@ -1,7 +1,8 @@
 # init(dataType:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(dataType quantizationDataType: MPSDataType)
+```
+
+```objc
+- (instancetype) initWithDataType:(MPSDataType) quantizationDataType;
 ```
 
 

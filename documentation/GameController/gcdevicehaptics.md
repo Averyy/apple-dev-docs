@@ -1,7 +1,8 @@
 # GCDeviceHaptics
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The locations of haptic actuators on a game controller.
 
@@ -19,46 +20,51 @@ The locations of haptic actuators on a game controller.
 class GCDeviceHaptics
 ```
 
+```objc
+@interface GCDeviceHaptics : NSObject
+```
+
 #### Overview
 
 Use this class to create a haptic engine with a specified locality. Any patterns you send to that engine play on the specified actuators.
 
-> ❗ **Important**:  The [`supportsHaptics`](https://developer.apple.com/documentation/corehaptics/chhapticdevicecapability/supportshaptics) property of the engine that returns from the [`createEngine(withLocality:)`](gcdevicehaptics/createengine(withlocality:).md) method applies to the device, not the game controller. Use the [`supportedLocalities`](gcdevicehaptics/supportedlocalities.md) method in this class to determine whether a game controller supports haptics.
+> ❗ **Important**:  The [`supportsHaptics`](../CoreHaptics/chhapticdevicecapability/supportshaptics.md) property of the engine that returns from the [`createEngine(withLocality:)`](./gcdevicehaptics/createengine%28withlocality%29.md) method applies to the device, not the game controller. Use the [`supportedLocalities`](./gcdevicehaptics/supportedlocalities.md) method in this class to determine whether a game controller supports haptics.
 
 ## Topics
 
 ### Creating a haptics engine
-- [func createEngine(withLocality: GCHapticsLocality) -> CHHapticEngine?](gcdevicehaptics/createengine(withlocality:).md)
+- [func createEngine(withLocality: GCHapticsLocality) -> CHHapticEngine?](./gcdevicehaptics/createengine%28withlocality%29.md)
   Creates a haptics engine with the specified locality.
-- [let GCHapticDurationInfinite: Float](gchapticdurationinfinite.md)
+- [let GCHapticDurationInfinite: Float](./gchapticdurationinfinite.md)
   An infinite duration for a haptics event.
 ### Getting the localities
-- [var supportedLocalities: Set<GCHapticsLocality>](gcdevicehaptics/supportedlocalities.md)
+- [var supportedLocalities: Set<GCHapticsLocality>](./gcdevicehaptics/supportedlocalities.md)
   The locations of haptic actuators on the device.
-- [struct GCHapticsLocality](gchapticslocality.md)
+- [struct GCHapticsLocality](./gchapticslocality.md)
   The location of one or more haptics actuators on a game controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Input](input.md)
+### Game controller profiles
+- [Input](./input.md)
   Receive controller input in the way that best integrates with the flow of your game or game engine.
-- [class GCMotion](gcmotion.md)
+- [class GCMotion](./gcmotion.md)
   A controller profile that supports orientation and motion.
-- [class GCDeviceBattery](gcdevicebattery.md)
+- [class GCDeviceBattery](./gcdevicebattery.md)
   The charge level and state of a device’s battery.
-- [class GCDeviceLight](gcdevicelight.md)
+- [class GCDeviceLight](./gcdevicelight.md)
   The colored light on a device.
 
 

@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the object instance being used for storage.
 
@@ -22,11 +23,12 @@ var buffer: AnyObject { get }
 
 ## See Also
 
-- [var capacity: Int](managedbufferpointer/capacity.md)
+### Inspecting a Buffer
+- [var capacity: Int](./capacity.md)
   The actual number of elements that can be stored in this object.
-- [var header: Header](managedbufferpointer/header.md)
+- [var header: Header](./header.md)
   The stored `Header` instance.
-- [func isUniqueReference() -> Bool](managedbufferpointer/isuniquereference.md)
+- [func isUniqueReference() -> Bool](./isuniquereference%28%29.md)
   Returns `true` if `self` holds the only strong reference to its buffer; otherwise, returns `false`.
 
 

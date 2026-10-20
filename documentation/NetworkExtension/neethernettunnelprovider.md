@@ -1,7 +1,8 @@
 # NEEthernetTunnelProvider
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that implements the client side of a custom link-layer packet tunneling protocol.
 
@@ -14,31 +15,36 @@ A type that implements the client side of a custom link-layer packet tunneling p
 class NEEthernetTunnelProvider
 ```
 
+```objc
+@interface NEEthernetTunnelProvider : NEPacketTunnelProvider
+```
+
 ## Relationships
 
 ### Inherits From
-- [NEPacketTunnelProvider](nepackettunnelprovider.md)
+- [NEPacketTunnelProvider](./nepackettunnelprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEPacketTunnelProvider](nepackettunnelprovider.md)
+### Packet tunnel provider
+- [class NEPacketTunnelProvider](./nepackettunnelprovider.md)
   The principal class for a packet tunnel provider app extension.
-- [class NETunnelProvider](netunnelprovider.md)
+- [class NETunnelProvider](./netunnelprovider.md)
   An abstract base class shared by NEPacketTunnelProvider and NEAppProxyProvider.
-- [class NEProvider](neprovider.md)
+- [class NEProvider](./neprovider.md)
   An abstract base class for all NetworkExtension providers.
-- [class NEPacketTunnelNetworkSettings](nepackettunnelnetworksettings.md)
+- [class NEPacketTunnelNetworkSettings](./nepackettunnelnetworksettings.md)
   The configuration for a packet tunnel provider’s virtual interface.
-- [class NETunnelNetworkSettings](netunnelnetworksettings.md)
+- [class NETunnelNetworkSettings](./netunnelnetworksettings.md)
   The configuration for a tunnel provider’s virtual interface.
-- [class NEEthernetTunnelNetworkSettings](neethernettunnelnetworksettings.md)
+- [class NEEthernetTunnelNetworkSettings](./neethernettunnelnetworksettings.md)
   The network settings for an ethernet-based VPN tunnel.
 
 

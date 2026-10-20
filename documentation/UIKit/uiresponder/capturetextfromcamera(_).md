@@ -1,7 +1,8 @@
 # captureTextFromCamera(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts scanning text using the device’s camera.
 
@@ -18,11 +19,15 @@ Starts scanning text using the device’s camera.
 func captureTextFromCamera(_ sender: Any?)
 ```
 
+```objc
+- (void) captureTextFromCamera:(id) sender;
+```
+
 #### Discussion
 
-To receive callbacks from the data scanner, the responder should conform to either the [`UIKeyInput`](uikeyinput.md) or [`UITextInput`](uitextinput.md) protocol. If it conforms to [`UIKeyInput`](uikeyinput.md), the scanner calls the [`insertText:`](https://developer.apple.com/documentation/appkit/nstextinput/inserttext:) protocol method. If it conforms to [`UITextInput`](uitextinput.md), the scanner calls the [`setMarkedText(_:selectedRange:)`](uitextinput/setmarkedtext(_:selectedrange:).md) and [`unmarkText()`](uitextinput/unmarktext().md) protocol methods.
+To receive callbacks from the data scanner, the responder should conform to either the [`UIKeyInput`](../uikeyinput.md) or [`UITextInput`](../uitextinput.md) protocol. If it conforms to [`UIKeyInput`](../uikeyinput.md), the scanner calls the [`insertText:`](../../AppKit/nstextinput/inserttext_.md) protocol method. If it conforms to [`UITextInput`](../uitextinput.md), the scanner calls the [`setMarkedText(_:selectedRange:)`](../uitextinput/setmarkedtext%28_,selectedrange%29.md) and [`unmarkText()`](../uitextinput/unmarktext%28%29.md) protocol methods.
 
-To determine whether the data scanner runs on the user’s device, pass [`captureTextFromCamera(_:)`](uiresponder/capturetextfromcamera(_:).md) to the [`canPerformAction(_:withSender:)`](uiresponder/canperformaction(_:withsender:).md) method.
+To determine whether the data scanner runs on the user’s device, pass [`captureTextFromCamera(_:)`](./capturetextfromcamera%28_%29.md) to the [`canPerformAction(_:withSender:)`](./canperformaction%28_,withsender%29.md) method.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ To determine whether the data scanner runs on the user’s device, pass [`captur
 
 ## See Also
 
-- [Scanning data with the camera](../visionkit/scanning-data-with-the-camera.md)
+### Related Documentation
+- [Scanning data with the camera](../../VisionKit/scanning-data-with-the-camera.md)
   Enable Live Text data scanning of text and codes that appear in the camera’s viewfinder.
 
 

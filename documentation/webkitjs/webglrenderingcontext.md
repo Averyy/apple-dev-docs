@@ -1,7 +1,8 @@
 # WebGLRenderingContext
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface WebGLRenderingContext
 ```
 
 ## Relationships
 
 ### Inherits From
-- [WebGLRenderingContextBase](webglrenderingcontextbase.md)
+- [WebGLRenderingContextBase](./webglrenderingcontextbase.md)
 
 
 ---

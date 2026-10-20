@@ -1,7 +1,8 @@
 # id(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds a view’s identity to the given proxy value.
 
@@ -27,9 +28,10 @@ When the proxy value specified by the `id` parameter changes, the identity of th
 
 ## See Also
 
-- [func tag<V>(V, includeOptional: Bool) -> some View](view/tag(_:includeoptional:).md)
+### Managing the view hierarchy
+- [func tag<V>(V, includeOptional: Bool) -> some View](./tag%28_,includeoptional%29.md)
   Sets the unique tag value of this view.
-- [func equatable() -> EquatableView<Self>](view/equatable.md)
+- [func equatable() -> EquatableView<Self>](./equatable%28%29.md)
   Prevents the view from updating its child view when its new value is the same as its old value.
 
 

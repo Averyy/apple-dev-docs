@@ -1,16 +1,17 @@
 # defaultPixelBufferAttributes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 17.2+
-- iPadOS 17.2+
-- Mac Catalyst 17.2+
-- macOS 14.2+
-- tvOS 17.2+
-- visionOS 1.1+
-- watchOS 10.2+
+- iOS 17.2+ - Deprecated in 27.0
+- iPadOS 17.2+ - Deprecated in 27.0
+- Mac Catalyst 17.2+ - Deprecated in 27.0
+- macOS 14.2+ - Deprecated in 27.0
+- tvOS 17.2+ - Deprecated in 27.0
+- visionOS 1.1+ - Deprecated in 27.0
+- watchOS 10.2+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var defaultPixelBufferAttributes: [String : Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSDictionary<NSString *,id> * defaultPixelBufferAttributes;
+```
+
 ## See Also
 
-- [var defaultOutputSettings: [String : any Sendable]?](avvideooutputspecification/defaultoutputsettings.md)
-- [func setOutputSettings([String : any Sendable]?, for: [CMTag])](avvideooutputspecification/setoutputsettings(_:for:).md)
-- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](avvideooutputspecification/setoutputpixelbufferattributes(_:for:).md)
-- [var preferredTagCollections: [[CMTag]]](avvideooutputspecification/preferredtagcollections-3gdo7.md)
+### Configuring the specification
+- [var defaultOutputSettings: [String : any Sendable]?](./defaultoutputsettings.md)
+- [func setOutputSettings([String : any Sendable]?, for: [CMTag])](./setoutputsettings%28_,for%29.md)
+- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](./setoutputpixelbufferattributes%28_,for%29.md)
+- [var preferredTagCollections: [[CMTag]]](./preferredtagcollections-3gdo7.md)
 
 
 ---

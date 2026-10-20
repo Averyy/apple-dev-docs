@@ -1,12 +1,15 @@
 # returnToDefaultState
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating that the app should return to its default state.
 
 **Availability**:
-- watchOS 3.0+
+- watchOS 3.0+ - Deprecated in 4.0
+
+> **Deprecated**: Use [`reasonForSnapshot`](./reasonforsnapshot.md) instead.
 
 ## Declaration
 
@@ -14,11 +17,16 @@ A Boolean value indicating that the app should return to its default state.
 var returnToDefaultState: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL returnToDefaultState;
+```
+
 ## See Also
 
-- [var reasonForSnapshot: WKSnapshotReason](wksnapshotrefreshbackgroundtask/reasonforsnapshot.md)
+### Instance properties
+- [var reasonForSnapshot: WKSnapshotReason](./reasonforsnapshot.md)
   The reason for taking the upcoming snapshot.
-- [enum WKSnapshotReason](wksnapshotreason.md)
+- [enum WKSnapshotReason](../wksnapshotreason.md)
   The reason for a background snapshot task.
 
 

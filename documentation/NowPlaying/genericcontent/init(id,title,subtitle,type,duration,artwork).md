@@ -1,7 +1,8 @@
 # init(id:title:subtitle:type:duration:artwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates generic media content.
 

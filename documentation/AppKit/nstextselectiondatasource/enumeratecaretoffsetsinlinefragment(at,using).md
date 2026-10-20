@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Enumerates all the insertion point caret offsets from left to right in visual order.
@@ -15,6 +16,10 @@ Enumerates all the insertion point caret offsets from left to right in visual or
 func enumerateCaretOffsetsInLineFragment(at location: any NSTextLocation, using block: (CGFloat, any NSTextLocation, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateCaretOffsetsInLineFragmentAtLocation:(id<NSTextLocation>) location usingBlock:(void (^)(CGFloat caretOffset, id<NSTextLocation>location, BOOL leadingEdge, BOOL *stop)) block;
+```
+
 #### Discussion
 
 The `caretOffset` is in the coordinate system for the text container. When `leadingEdge` is `true`, it indicates that `caretOffset` is at the logical edge preceding the character. For left-to-right characters, the caret is on the left, and on the right for right-to-left characters.
@@ -26,9 +31,10 @@ The `caretOffset` is in the coordinate system for the text container. When `lead
 
 ## See Also
 
-- [func enumerateContainerBoundaries(from: any NSTextLocation, reverse: Bool, using: (any NSTextLocation, UnsafeMutablePointer<ObjCBool>) -> Void)](nstextselectiondatasource/enumeratecontainerboundaries(from:reverse:using:).md)
+### Enumerating components of the selection
+- [func enumerateContainerBoundaries(from: any NSTextLocation, reverse: Bool, using: (any NSTextLocation, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratecontainerboundaries%28from,reverse,using%29.md)
   Enumerates all the container boundaries starting from the location you specify.
-- [func enumerateSubstrings(from: any NSTextLocation, options: NSString.EnumerationOptions, using: (String?, NSTextRange, NSTextRange?, UnsafeMutablePointer<ObjCBool>) -> Void)](nstextselectiondatasource/enumeratesubstrings(from:options:using:).md)
+- [func enumerateSubstrings(from: any NSTextLocation, options: NSString.EnumerationOptions, using: (String?, NSTextRange, NSTextRange?, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratesubstrings%28from,options,using%29.md)
   Enumerates the textual segment boundaries starting at the location you specify.
 
 

@@ -1,7 +1,8 @@
 # FloatingPointSign.minus
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sign for a negative value.
 

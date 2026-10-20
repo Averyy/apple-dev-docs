@@ -1,7 +1,8 @@
 # isoRegions(ofCategory:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An array of regions matching the specified categories.
 

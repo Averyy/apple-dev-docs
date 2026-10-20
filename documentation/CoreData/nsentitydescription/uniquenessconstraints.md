@@ -1,7 +1,8 @@
 # uniquenessConstraints
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of arrays that contains one or more attributes with a value that must be unique over the instances of that entity.
 
@@ -20,9 +21,13 @@ An array of arrays that contains one or more attributes with a value that must b
 var uniquenessConstraints: [[Any]] { get set }
 ```
 
+```objc
+@property (strong) NSArray<NSArray<id> *> * uniquenessConstraints;
+```
+
 #### Discussion
 
-Each inner array contains one or more [`NSAttributeDescription`](nsattributedescription.md) objects or strings that contain the names of attributes on the entity.
+Each inner array contains one or more [`NSAttributeDescription`](../nsattributedescription.md) objects or strings that contain the names of attributes on the entity.
 
 This value forms part of the entity’s version hash. Stores that don’t support uniqueness constraints must refuse to initialize when receiving a model that contains such constraints.
 
@@ -30,9 +35,10 @@ This value forms part of the entity’s version hash. Stores that don’t suppor
 
 ## See Also
 
-- [var indexes: [NSFetchIndexDescription]](nsentitydescription/indexes.md)
+### Configuring indexes and constraints
+- [var indexes: [NSFetchIndexDescription]](./indexes.md)
   An array of fetch index descriptions for the entity.
-- [var compoundIndexes: [[Any]]](nsentitydescription/compoundindexes.md)
+- [var compoundIndexes: [[Any]]](./compoundindexes.md)
   The compound indexes for the entity as an array of arrays.
 
 

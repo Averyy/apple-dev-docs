@@ -1,17 +1,22 @@
 # boundingBox
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle that bounds the image representation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var boundingBox: NSRect { get }
+```
+
+```objc
+@property (readonly) NSRect boundingBox;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The rectangle bounding the receiver. This rectangle is obtained from the the `pi
 
 ## See Also
 
-- [var pictRepresentation: Data](nspictimagerep/pictrepresentation.md)
+### Getting Data
+- [var pictRepresentation: Data](./pictrepresentation.md)
   The image representation’s PICT data.
 
 

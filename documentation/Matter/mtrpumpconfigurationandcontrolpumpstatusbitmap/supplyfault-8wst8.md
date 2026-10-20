@@ -1,7 +1,8 @@
 # supplyFault
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var supplyFault: MTRPumpConfigurationAndControlPumpStatusBitmap { get }
+```
+
+```c
+MTRPumpConfigurationAndControlPumpStatusBitmapSupplyFault
 ```
 
 

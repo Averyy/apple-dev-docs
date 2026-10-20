@@ -1,7 +1,8 @@
 # signalStrength
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the received signal strength, in dBm, from the anchor that provides the measurement.
 
@@ -16,15 +17,20 @@ A value that represents the received signal strength, in dBm, from the anchor th
 var signalStrength: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double signalStrength;
+```
+
 ## See Also
 
-- [var coordinates: simd_double3](nidltdoameasurement/coordinates.md)
+### Locating the anchor
+- [var coordinates: simd_double3](./coordinates.md)
   A triplet that represents the location in 3D space of the anchor that provides the measurement.
-- [var coordinatesType: NIDLTDOACoordinatesType](nidltdoameasurement/coordinatestype.md)
+- [var coordinatesType: NIDLTDOACoordinatesType](./coordinatestype.md)
   The type of coordinate system that the measurement conforms to.
-- [var floorElevation: NIDLTDOAMeasurement.FloorElevation?](nidltdoameasurement/floorelevation-swift.property.md)
+- [var floorElevation: NIDLTDOAMeasurement.FloorElevation?](./floorelevation-swift.property.md)
   The floor elevation information for the anchor, if available.
-- [NIDLTDOAMeasurement.FloorElevation](nidltdoameasurement/floorelevation-swift.class.md)
+- [NIDLTDOAMeasurement.FloorElevation](./floorelevation-swift.class.md)
   An object that describes how high off the ground DL-TDOA anchors reside in the environment.
 
 

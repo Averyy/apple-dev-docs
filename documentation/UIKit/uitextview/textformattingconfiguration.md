@@ -1,7 +1,8 @@
 # textFormattingConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For text views that have flag `allowsEditingTextAttributes` set, this configuration will be used for `UITextFormattingViewController` when its presentation is requested.
 
@@ -16,6 +17,10 @@ For text views that have flag `allowsEditingTextAttributes` set, this configurat
 ```swift
 @NSCopying
 var textFormattingConfiguration: UITextFormattingViewController.Configuration? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) UITextFormattingViewControllerConfiguration * textFormattingConfiguration;
 ```
 
 #### Discussion

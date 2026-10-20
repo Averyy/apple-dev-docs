@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance you use to send permission requests and receive responses.
 
@@ -20,7 +21,7 @@ static let shared: AskCenter
 
 #### Overview
 
-Use this singleton instance to access all [`AskCenter`](askcenter.md) functionality. The system maintains this shared instance across your app’s lifecycle and ensures consistent handling of permission requests and responses.
+Use this singleton instance to access all [`AskCenter`](../askcenter.md) functionality. The system maintains this shared instance across your app’s lifecycle and ensures consistent handling of permission requests and responses.
 
 ```swift
  let center = AskCenter.shared

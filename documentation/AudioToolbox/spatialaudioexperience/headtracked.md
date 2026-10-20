@@ -1,7 +1,8 @@
 # headTracked
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A head-tracked spatial audio experience with an automatic anchoring strategy and automatic sound stage size.
 
@@ -13,6 +14,8 @@ A head-tracked spatial audio experience with an automatic anchoring strategy and
 ```swift
 static var headTracked: HeadTrackedSpatialAudio { get }
 ```
+
+Available when `Self` is `HeadTrackedSpatialAudio`.
 
 
 ---

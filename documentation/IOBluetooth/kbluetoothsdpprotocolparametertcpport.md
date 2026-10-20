@@ -1,10 +1,11 @@
 # kBluetoothSDPProtocolParameterTCPPort
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kBluetoothSDPProtocolParameterTCPPort: ProtocolParameters { get }
 ```
 
+```c
+kBluetoothSDPProtocolParameterTCPPort
+```
+
 ## See Also
 
-- [var kBluetoothSDPProtocolParameterBNEPSupportedNetworkPacketTypeList: ProtocolParameters](kbluetoothsdpprotocolparameterbnepsupportednetworkpackettypelist.md)
-- [var kBluetoothSDPProtocolParameterBNEPVersion: ProtocolParameters](kbluetoothsdpprotocolparameterbnepversion.md)
-- [var kBluetoothSDPProtocolParameterL2CAPPSM: ProtocolParameters](kbluetoothsdpprotocolparameterl2cappsm.md)
-- [var kBluetoothSDPProtocolParameterRFCOMMChannel: ProtocolParameters](kbluetoothsdpprotocolparameterrfcommchannel.md)
-- [var kBluetoothSDPProtocolParameterUDPPort: ProtocolParameters](kbluetoothsdpprotocolparameterudpport.md)
+### Constants
+- [var kBluetoothSDPProtocolParameterBNEPSupportedNetworkPacketTypeList: ProtocolParameters](./kbluetoothsdpprotocolparameterbnepsupportednetworkpackettypelist.md)
+- [var kBluetoothSDPProtocolParameterBNEPVersion: ProtocolParameters](./kbluetoothsdpprotocolparameterbnepversion.md)
+- [var kBluetoothSDPProtocolParameterL2CAPPSM: ProtocolParameters](./kbluetoothsdpprotocolparameterl2cappsm.md)
+- [var kBluetoothSDPProtocolParameterRFCOMMChannel: ProtocolParameters](./kbluetoothsdpprotocolparameterrfcommchannel.md)
+- [var kBluetoothSDPProtocolParameterUDPPort: ProtocolParameters](./kbluetoothsdpprotocolparameterudpport.md)
 
 
 ---

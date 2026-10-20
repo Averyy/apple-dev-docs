@@ -1,7 +1,8 @@
 # UITitlebarTitleVisibility.visible
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state indicating that the title is visible in the title bar.
 
@@ -14,9 +15,14 @@ A state indicating that the title is visible in the title bar.
 case visible
 ```
 
+```c
+UITitlebarTitleVisibilityVisible
+```
+
 ## See Also
 
-- [UITitlebarTitleVisibility.hidden](uititlebartitlevisibility/hidden.md)
+### Visibility states
+- [UITitlebarTitleVisibility.hidden](./hidden.md)
   A state indicating that the title isn’t visible in the title bar.
 
 

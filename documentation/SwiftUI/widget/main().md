@@ -1,7 +1,8 @@
 # main()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initializes and runs the widget.
 
@@ -22,11 +23,12 @@ Initializes and runs the widget.
 
 #### Overview
 
-Because you precede your [`Widget`](widget.md) conformer’s declaration with the [`@main`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls your widget’s `main()` method to launch the widget. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
+Because you precede your [`Widget`](../widget.md) conformer’s declaration with the [@main](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls your widget’s `main()` method to launch the widget. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
 
 ## See Also
 
-- [init()](widget/init.md)
+### Running a widget
+- [init()](./init%28%29.md)
   Creates a widget using `body` as its content.
 
 

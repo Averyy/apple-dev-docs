@@ -1,6 +1,7 @@
 # UIAccessibilityDragging
 
-**Framework**: Objective-C Runtime
+**Framework**: Objective-C Runtime  
+**Role**: API Collection
 
 A pair of properties to allow you to fine-tune how drags and drops are exposed to assistive technologies.
 
@@ -23,21 +24,23 @@ For each location descriptor, the associated view should be the `UIView` with th
 ## Topics
 
 ### Fine-Tuning Drag and Drop
-- [var accessibilityDragSourceDescriptors: [UIAccessibilityLocationDescriptor]?](nsobject-swift.class/accessibilitydragsourcedescriptors.md)
+- [var accessibilityDragSourceDescriptors: [UIAccessibilityLocationDescriptor]?](./nsobject-swift.class/accessibilitydragsourcedescriptors.md)
   An array of location descriptor objects that you use to define what drags are possible from this element.
-- [var accessibilityDropPointDescriptors: [UIAccessibilityLocationDescriptor]?](nsobject-swift.class/accessibilitydroppointdescriptors.md)
+- [var accessibilityDropPointDescriptors: [UIAccessibilityLocationDescriptor]?](./nsobject-swift.class/accessibilitydroppointdescriptors.md)
   An array of location descriptor objects that you use to define where drops are possible on this element.
 
 ## See Also
 
-- [Accessibility Programming Guide for iOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785)
-- [UIAccessibility](../uikit/uiaccessibility-protocol.md)
+### Related Documentation
+- [Accessibility Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785)
+### Improving Accessibility
+- [UIAccessibility](../UIKit/uiaccessibility-protocol.md)
   A set of methods that provides accessibility information about views and controls in an app’s user interface.
-- [UIAccessibilityContainer](../uikit/uiaccessibilitycontainer.md)
+- [UIAccessibilityContainer](../UIKit/uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
-- [UIAccessibilityAction](uiaccessibilityaction.md)
+- [UIAccessibilityAction](./uiaccessibilityaction.md)
   A set of methods that accessibility elements can use to support specific actions.
-- [UIAccessibilityFocus](uiaccessibilityfocus.md)
+- [UIAccessibilityFocus](./uiaccessibilityfocus.md)
   An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 
 

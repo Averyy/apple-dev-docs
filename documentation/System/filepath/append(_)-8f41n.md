@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Append a `component` on to the end of this path.
 

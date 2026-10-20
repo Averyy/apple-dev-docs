@@ -1,7 +1,8 @@
 # isInvitable
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the local player can send an invitation to the player.
 
@@ -19,13 +20,26 @@ A Boolean value that indicates whether the local player can send an invitation t
 var isInvitable: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) BOOL isInvitable;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL isInvitable;
+```
+
 ## See Also
 
-- [var alias: String](gkplayer/alias.md)
+### Accessing player details
+- [var alias: String](./alias.md)
   A string the player chooses to identify themself to other players.
-- [var displayName: String](gkplayer/displayname.md)
+- [var displayName: String](./displayname.md)
   A string to display for the player.
-- [var isFriend: Bool](gkplayer/isfriend.md)
+- [var isFriend: Bool](./isfriend.md)
   A Boolean value that indicates whether the player is a friend of the local player.
 
 

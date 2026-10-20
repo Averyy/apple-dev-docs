@@ -1,7 +1,8 @@
 # kIOUSBGetEndpointDescriptorCurrentPolicy
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The descriptor controlling the current endpoint policy.
 
@@ -10,17 +11,18 @@ The descriptor controlling the current endpoint policy.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBGetEndpointDescriptorCurrentPolicy
 ```
 
 #### Discussion
 
-Specify this option when you want to include descriptor changes you made using the [`AdjustPipe`](iousbhostpipe/3294684-adjustpipe.md) method.
+Specify this option when you want to include descriptor changes you made using the [`AdjustPipe`](../iousbhostpipe/api-3294684-adjustpipe.md) method.
 
 ## See Also
 
-- [kIOUSBGetEndpointDescriptorOriginal](iousbgetendpointdescriptoroptions/kiousbgetendpointdescriptororiginal.md)
+### Getting the Options
+- [kIOUSBGetEndpointDescriptorOriginal](./kiousbgetendpointdescriptororiginal.md)
   The original descriptor that the system uses to create the pipe.
 
 

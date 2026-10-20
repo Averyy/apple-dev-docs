@@ -1,25 +1,26 @@
 # TestNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 interface TestNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [>](testnode/2528151.md)
-- [name](testnode/1777925-name.md)
-- [serializer](testnode/2871430-serializer.md)
+- [>](./testnode/api-2528151.md)
+- [name](./testnode/api-1777925-name.md)
+- [serializer](./testnode/api-2871430-serializer.md)
 ### Instance Methods
-- [testWorkerPromise](testnode/2871414-testworkerpromise.md)
+- [testWorkerPromise](./testnode/api-2871414-testworkerpromise.md)
 
 ## Relationships
 

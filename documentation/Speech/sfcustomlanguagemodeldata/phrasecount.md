@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.PhraseCount
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A phrase used to bias the language model, along with a weight influencing the relative strength of the bias.
 
@@ -22,26 +23,27 @@ struct PhraseCount
 ## Topics
 
 ### Creating a weighted phrase
-- [init(phrase: String, count: Int)](sfcustomlanguagemodeldata/phrasecount/init(phrase:count:).md)
+- [init(phrase: String, count: Int)](./phrasecount/init%28phrase,count%29.md)
 ### Inspecting the weighted phrase
-- [let count: Int](sfcustomlanguagemodeldata/phrasecount/count.md)
-- [let phrase: String](sfcustomlanguagemodeldata/phrasecount/phrase.md)
+- [let count: Int](./phrasecount/count.md)
+- [let phrase: String](./phrasecount/phrase.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataInsertable](datainsertable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [DataInsertable](../datainsertable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func insert(phraseCount: SFCustomLanguageModelData.PhraseCount)](sfcustomlanguagemodeldata/insert(phrasecount:).md)
+### Adding phrases
+- [func insert(phraseCount: SFCustomLanguageModelData.PhraseCount)](./insert%28phrasecount%29.md)
   Add a sample to the body of training data.
 
 

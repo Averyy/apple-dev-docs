@@ -1,7 +1,8 @@
 # setText(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the label text to the specified string.
 
@@ -14,13 +15,17 @@ Sets the label text to the specified string.
 func setText(_ text: String?)
 ```
 
+```objc
+- (void) setText:(NSString *) text;
+```
+
 ## Mentions
 
-- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md)
+- [Connecting Your User Interface to Your Code](../connecting-your-user-interface-to-your-code.md)
 
 #### Discussion
 
-This method changes the string displayed by the label to the new value. When using this method to set the text, the default font and styling information for the text is derived from the storyboard file. You can change the default text color using the [`setTextColor(_:)`](wkinterfacelabel/settextcolor(_:).md) method.
+This method changes the string displayed by the label to the new value. When using this method to set the text, the default font and styling information for the text is derived from the storyboard file. You can change the default text color using the [`setTextColor(_:)`](./settextcolor%28_%29.md) method.
 
 Changing the text of the label causes the label to resize itself to accommodate the new string. If the string is too large to fit the available space, WatchKit truncates the text.
 
@@ -30,10 +35,12 @@ Changing the text of the label causes the label to resize itself to accommodate 
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setTextColor(UIColor?)](wkinterfacelabel/settextcolor(_:).md)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Setting the Label Text
+- [func setTextColor(UIColor?)](./settextcolor%28_%29.md)
   Sets the color to apply to plain text strings.
-- [func setAttributedText(NSAttributedString?)](wkinterfacelabel/setattributedtext(_:).md)
+- [func setAttributedText(NSAttributedString?)](./setattributedtext%28_%29.md)
   Sets the label text to the specified attributed string.
 
 

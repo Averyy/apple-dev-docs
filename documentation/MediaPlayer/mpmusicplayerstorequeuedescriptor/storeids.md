@@ -1,7 +1,8 @@
 # storeIDs
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the store identifiers found by the query used to create the queue descriptor.
 
@@ -18,9 +19,14 @@ An array containing the store identifiers found by the query used to create the 
 var storeIDs: [String]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * storeIDs;
+```
+
 ## See Also
 
-- [var startItemID: String?](mpmusicplayerstorequeuedescriptor/startitemid.md)
+### Store identifier queue descriptor properties
+- [var startItemID: String?](./startitemid.md)
   The item identified by the store identifier to play first.
 
 

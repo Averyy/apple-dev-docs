@@ -1,7 +1,8 @@
 # Raw
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An algorithm that uses timestamp values as-is.
 
@@ -10,19 +11,20 @@ An algorithm that uses timestamp values as-is.
 
 ## Declaration
 
-```swift
+```c
 Raw
 ```
 
 #### Discussion
 
-Under this algorithm, the Host doesn’t apply any filtering to the time stamps returned from [`GetCurrentZeroTimestamp`](iouseraudioclockdevice/getcurrentzerotimestamp.md).
+Under this algorithm, the Host doesn’t apply any filtering to the time stamps returned from [`GetCurrentZeroTimestamp`](../../iouseraudioclockdevice/getcurrentzerotimestamp.md).
 
 ## See Also
 
-- [SimpleIIR](audiodriverkit/iouseraudioclockalgorithm/simpleiir.md)
+### Clock-Smoothing Algorithms
+- [SimpleIIR](./simpleiir.md)
   The simple IIR filter algorithm.
-- [TwelvePtMovingWindowAverage](audiodriverkit/iouseraudioclockalgorithm/twelveptmovingwindowaverage.md)
+- [TwelvePtMovingWindowAverage](./twelveptmovingwindowaverage.md)
   The 12-point moving window average filter algorithm.
 
 

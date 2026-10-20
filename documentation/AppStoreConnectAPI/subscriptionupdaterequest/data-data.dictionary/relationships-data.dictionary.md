@@ -1,7 +1,8 @@
 # SubscriptionUpdateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionUpdateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/introductoryoffers-data.dictionary.md)
-- [object SubscriptionUpdateRequest.Data.Relationships.Prices](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary.md)
-- [object SubscriptionUpdateRequest.Data.Relationships.PromotionalOffers](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/promotionaloffers-data.dictionary.md)
+- [object SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers](./relationships-data.dictionary/introductoryoffers-data.dictionary.md)
+- [object SubscriptionUpdateRequest.Data.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
+- [object SubscriptionUpdateRequest.Data.Relationships.PromotionalOffers](./relationships-data.dictionary/promotionaloffers-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object SubscriptionUpdateRequest.Data.Relationships
 
 ## See Also
 
-- [object SubscriptionUpdateRequest.Data.Attributes](subscriptionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionUpdateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription update request resource.
 
 

@@ -1,41 +1,43 @@
 # rr_record_s
 
 **Framework**: NetworkingDriverKit  
-**Kind**: union
+**Kind**: union  
+**Role**: Union
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 union rr_record_s;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [label](rr_record_s/label.md)
-- [ptr](rr_record_s/ptr.md)
-- [rr](rr_record_s/rr.md)
+- [label](./rr_record_s/label.md)
+- [ptr](./rr_record_s/ptr.md)
+- [rr](./rr_record_s/rr.md)
 
 ## See Also
 
-- [IOUserNetworkHardwareCounts](iousernetworkhardwarecounts.md)
-- [IOUserNetworkKeepAliveOffloadFrame](iousernetworkkeepaliveoffloadframe.md)
-- [IOUserNetworkLinkLayerReachabilityInfo](iousernetworklinklayerreachabilityinfo.md)
-- [IOUserNetworkPacketBufferPoolOptions](iousernetworkpacketbufferpooloptions.md)
-- [IOUserNetworkPacketDescriptor](iousernetworkpacketdescriptor.md)
-- [IOUserNetworkPacketPollerParameters](iousernetworkpacketpollerparameters.md)
-- [IOUserNetworkPacketQueue_IVars](iousernetworkpacketqueue_ivars.md)
-- [IOUserNetworkRxCompletionQueue_IVars](iousernetworkrxcompletionqueue_ivars.md)
-- [IOUserNetworkRxSubmissionQueue_IVars](iousernetworkrxsubmissionqueue_ivars.md)
-- [IOUserNetworkStatistics](iousernetworkstatistics.md)
-- [IOUserNetworkTSOOptions](iousernetworktsooptions.md)
-- [IOUserNetworkTxCompletionQueue_IVars](iousernetworktxcompletionqueue_ivars.md)
-- [IOUserNetworkTxSubmissionQueue_IVars](iousernetworktxsubmissionqueue_ivars.md)
-- [nicproxy_inet_info_s](nicproxy_inet_info_s.md)
-- [nicproxy_info_s](nicproxy_info_s.md)
+### Structures
+- [IOUserNetworkHardwareCounts](./iousernetworkhardwarecounts.md)
+- [IOUserNetworkKeepAliveOffloadFrame](./iousernetworkkeepaliveoffloadframe.md)
+- [IOUserNetworkLinkLayerReachabilityInfo](./iousernetworklinklayerreachabilityinfo.md)
+- [IOUserNetworkPacketBufferPoolOptions](./iousernetworkpacketbufferpooloptions.md)
+- [IOUserNetworkPacketDescriptor](./iousernetworkpacketdescriptor.md)
+- [IOUserNetworkPacketPollerParameters](./iousernetworkpacketpollerparameters.md)
+- [IOUserNetworkPacketQueue_IVars](./iousernetworkpacketqueue_ivars.md)
+- [IOUserNetworkRxCompletionQueue_IVars](./iousernetworkrxcompletionqueue_ivars.md)
+- [IOUserNetworkRxSubmissionQueue_IVars](./iousernetworkrxsubmissionqueue_ivars.md)
+- [IOUserNetworkStatistics](./iousernetworkstatistics.md)
+- [IOUserNetworkTSOOptions](./iousernetworktsooptions.md)
+- [IOUserNetworkTxCompletionQueue_IVars](./iousernetworktxcompletionqueue_ivars.md)
+- [IOUserNetworkTxSubmissionQueue_IVars](./iousernetworktxsubmissionqueue_ivars.md)
+- [nicproxy_inet_info_s](./nicproxy_inet_info_s.md)
+- [nicproxy_info_s](./nicproxy_info_s.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # minimumSize(withPrioritizedCompressionOptions:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the minimum size of the button by using the compression options.
 
@@ -14,6 +15,10 @@ Returns the minimum size of the button by using the compression options.
 func minimumSize(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInterfaceCompressionOptions]) -> NSSize
 ```
 
+```objc
+- (NSSize) minimumSizeWithPrioritizedCompressionOptions:(NSArray<NSUserInterfaceCompressionOptions *> *) prioritizedOptions;
+```
+
 #### Return Value
 
 The size of the compressed button.
@@ -24,9 +29,10 @@ The size of the compressed button.
 
 ## See Also
 
-- [var activeCompressionOptions: NSUserInterfaceCompressionOptions](nsbutton/activecompressionoptions.md)
+### Managing button compression
+- [var activeCompressionOptions: NSUserInterfaceCompressionOptions](./activecompressionoptions.md)
   The compression options active for this button.
-- [func compress(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions])](nsbutton/compress(withprioritizedcompressionoptions:).md)
+- [func compress(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions])](./compress%28withprioritizedcompressionoptions%29.md)
   Sets the priority compression options for this button.
 
 

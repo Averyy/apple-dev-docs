@@ -1,7 +1,8 @@
 # DynamicTypeSize.accessibility3
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The third accessibility size.
 
@@ -22,15 +23,16 @@ case accessibility3
 
 ## See Also
 
-- [DynamicTypeSize.accessibility1](dynamictypesize/accessibility1.md)
+### Getting accessibility type sizes
+- [DynamicTypeSize.accessibility1](./accessibility1.md)
   The first accessibility size.
-- [DynamicTypeSize.accessibility2](dynamictypesize/accessibility2.md)
+- [DynamicTypeSize.accessibility2](./accessibility2.md)
   The second accessibility size.
-- [DynamicTypeSize.accessibility4](dynamictypesize/accessibility4.md)
+- [DynamicTypeSize.accessibility4](./accessibility4.md)
   The fourth accessibility size.
-- [DynamicTypeSize.accessibility5](dynamictypesize/accessibility5.md)
+- [DynamicTypeSize.accessibility5](./accessibility5.md)
   The fifth accessibility size.
-- [var isAccessibilitySize: Bool](dynamictypesize/isaccessibilitysize.md)
+- [var isAccessibilitySize: Bool](./isaccessibilitysize.md)
   A Boolean value indicating whether the size is one that is associated with accessibility.
 
 

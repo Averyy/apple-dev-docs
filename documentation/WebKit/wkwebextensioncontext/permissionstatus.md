@@ -1,7 +1,8 @@
 # WKWebExtensionContext.PermissionStatus
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants used to indicate permission status in web extension context.
 
@@ -18,35 +19,39 @@ Constants used to indicate permission status in web extension context.
 enum PermissionStatus
 ```
 
+```c
+enum WKWebExtensionContextPermissionStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [WKWebExtensionContext.PermissionStatus.deniedExplicitly](wkwebextensioncontext/permissionstatus/deniedexplicitly.md)
+- [WKWebExtensionContext.PermissionStatus.deniedExplicitly](./permissionstatus/deniedexplicitly.md)
   Indicates that the permission was explicitly denied.
-- [WKWebExtensionContext.PermissionStatus.deniedImplicitly](wkwebextensioncontext/permissionstatus/deniedimplicitly.md)
+- [WKWebExtensionContext.PermissionStatus.deniedImplicitly](./permissionstatus/deniedimplicitly.md)
   Indicates that the permission was implicitly denied because of another explicitly denied permission.
-- [WKWebExtensionContext.PermissionStatus.grantedExplicitly](wkwebextensioncontext/permissionstatus/grantedexplicitly.md)
+- [WKWebExtensionContext.PermissionStatus.grantedExplicitly](./permissionstatus/grantedexplicitly.md)
   Indicates that the permission was explicitly granted permission.
-- [WKWebExtensionContext.PermissionStatus.grantedImplicitly](wkwebextensioncontext/permissionstatus/grantedimplicitly.md)
+- [WKWebExtensionContext.PermissionStatus.grantedImplicitly](./permissionstatus/grantedimplicitly.md)
   Indicates that the permission was implicitly granted because of another explicitly granted permission.
-- [WKWebExtensionContext.PermissionStatus.requestedExplicitly](wkwebextensioncontext/permissionstatus/requestedexplicitly.md)
+- [WKWebExtensionContext.PermissionStatus.requestedExplicitly](./permissionstatus/requestedexplicitly.md)
   Indicates that the permission was explicitly requested.
-- [WKWebExtensionContext.PermissionStatus.requestedImplicitly](wkwebextensioncontext/permissionstatus/requestedimplicitly.md)
+- [WKWebExtensionContext.PermissionStatus.requestedImplicitly](./permissionstatus/requestedimplicitly.md)
   Indicates that the permission was implicitly requested because of another explicitly requested permission.
-- [WKWebExtensionContext.PermissionStatus.unknown](wkwebextensioncontext/permissionstatus/unknown.md)
+- [WKWebExtensionContext.PermissionStatus.unknown](./permissionstatus/unknown.md)
   Indicates an unknown permission status.
 ### Initializers
-- [init?(rawValue: Int)](wkwebextensioncontext/permissionstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./permissionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

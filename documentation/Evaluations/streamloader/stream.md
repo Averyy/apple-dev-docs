@@ -1,7 +1,8 @@
 # stream
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The async sequence that forwards each sample from the underlying async sequence during an evaluation run.
 

@@ -1,7 +1,8 @@
 # set(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the specified key to a property list object.
 
@@ -20,11 +21,15 @@ Sets the value of the specified key to a property list object.
 func set(_ value: Any?, forKey defaultName: String)
 ```
 
+```objc
+- (void) setObject:(id) value forKey:(NSString *) defaultName;
+```
+
 #### Discussion
 
-Use this method to write property list object types to the defaults store. To store types that aren’t property list objects, archive them to a [`Data`](data.md) object and use this method to save that data object to the defaults store.
+Use this method to write property list object types to the defaults store. To store types that aren’t property list objects, archive them to a [`Data`](../data.md) object and use this method to save that data object to the defaults store.
 
-After you call this method, the system generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
+After you call this method, the system generates a [`didChangeNotification`](./didchangenotification.md) for registered observers.
 
 ## Parameters
 
@@ -33,15 +38,16 @@ After you call this method, the system generates a [`didChangeNotification`](use
 
 ## See Also
 
-- [func set(Bool, forKey: String)](userdefaults/set(_:forkey:)-3nn5m.md)
+### Setting the value for a key
+- [func set(Bool, forKey: String)](./set%28_,forkey%29-3nn5m.md)
   Sets the value of the specified key to a Boolean value.
-- [func set(Int, forKey: String)](userdefaults/set(_:forkey:)-3v852.md)
+- [func set(Int, forKey: String)](./set%28_,forkey%29-3v852.md)
   Sets the value of the specified key to an integer.
-- [func set(Float, forKey: String)](userdefaults/set(_:forkey:)-1t5ec.md)
+- [func set(Float, forKey: String)](./set%28_,forkey%29-1t5ec.md)
   Sets the value of the specified key to a floating-point number.
-- [func set(Double, forKey: String)](userdefaults/set(_:forkey:)-2w22f.md)
+- [func set(Double, forKey: String)](./set%28_,forkey%29-2w22f.md)
   Sets the value of the specified key to a double.
-- [func set(URL?, forKey: String)](userdefaults/set(_:forkey:)-2bqjt.md)
+- [func set(URL?, forKey: String)](./set%28_,forkey%29-2bqjt.md)
   Sets the value of the specified key to a URL.
 
 

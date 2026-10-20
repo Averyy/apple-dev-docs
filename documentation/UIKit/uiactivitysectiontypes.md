@@ -1,7 +1,8 @@
 # UIActivitySectionTypes
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -15,28 +16,33 @@
 struct UIActivitySectionTypes
 ```
 
+```c
+enum UIActivitySectionTypes : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](uiactivitysectiontypes/init(rawvalue:).md)
+- [init(rawValue: UInt)](./uiactivitysectiontypes/init%28rawvalue%29.md)
 ### Type Properties
-- [static var peopleSuggestions: UIActivitySectionTypes](uiactivitysectiontypes/peoplesuggestions.md)
+- [static var peopleSuggestions: UIActivitySectionTypes](./uiactivitysectiontypes/peoplesuggestions.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var excludedActivitySectionTypes: UIActivitySectionTypes](uiactivityviewcontroller/excludedactivitysectiontypes.md)
+### Excluding specific sections
+- [var excludedActivitySectionTypes: UIActivitySectionTypes](./uiactivityviewcontroller/excludedactivitysectiontypes.md)
   Hides some sections of the activity view controller. Default is none
 
 

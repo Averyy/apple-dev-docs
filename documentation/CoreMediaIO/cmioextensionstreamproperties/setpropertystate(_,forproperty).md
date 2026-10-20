@@ -1,7 +1,8 @@
 # setPropertyState(_:forProperty:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the state of the specified property.
 
@@ -15,6 +16,10 @@ Sets the state of the specified property.
 func setPropertyState(_ propertyState: CMIOExtensionPropertyState<AnyObject>?, forProperty property: CMIOExtensionProperty)
 ```
 
+```objc
+- (void) setPropertyState:(CMIOExtensionPropertyState *) propertyState forProperty:(CMIOExtensionProperty) property;
+```
+
 ## Parameters
 
 - `propertyState`: The new state for the property.
@@ -22,7 +27,8 @@ func setPropertyState(_ propertyState: CMIOExtensionPropertyState<AnyObject>?, f
 
 ## See Also
 
-- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](cmioextensionstreamproperties/propertiesdictionary.md)
+### Managing Property State
+- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](./propertiesdictionary.md)
   A dictionary representation of the property state.
 
 

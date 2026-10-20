@@ -1,7 +1,8 @@
 # init(source:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a virtual-environment probe component.
 

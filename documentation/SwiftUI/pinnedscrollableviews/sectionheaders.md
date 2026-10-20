@@ -1,7 +1,8 @@
 # sectionHeaders
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The header view of each `Section` will be pinned.
 
@@ -22,7 +23,8 @@ static let sectionHeaders: PinnedScrollableViews
 
 ## See Also
 
-- [static let sectionFooters: PinnedScrollableViews](pinnedscrollableviews/sectionfooters.md)
+### Getting scrollable view types
+- [static let sectionFooters: PinnedScrollableViews](./sectionfooters.md)
   The footer view of each `Section` will be pinned.
 
 

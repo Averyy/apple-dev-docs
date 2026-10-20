@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The targeted entity.
 
@@ -20,9 +21,10 @@ var entity: Entity
 
 ## See Also
 
-- [var gestureValue: Value](entitytargetvalue/gesturevalue.md)
+### Accessing gesture info
+- [var gestureValue: Value](./gesturevalue.md)
   The gesture value updated by the gesture.
-- [subscript<T>(dynamicMember _: KeyPath<Value, T>) -> T](entitytargetvalue/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<Value, T>) -> T](./subscript%28dynamicmember%29.md)
 
 
 ---

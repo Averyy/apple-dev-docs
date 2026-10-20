@@ -1,7 +1,8 @@
 # init(depthPass:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model sort group with an optional depth pass.
 

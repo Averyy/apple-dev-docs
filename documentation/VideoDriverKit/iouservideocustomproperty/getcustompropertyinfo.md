@@ -1,7 +1,8 @@
 # GetCustomPropertyInfo
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the custom property information.
 
@@ -10,7 +11,7 @@ Gets the custom property information.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoCustomPropertyInfo GetCustomPropertyInfo();
 ```
 
@@ -20,11 +21,12 @@ The IOUserVideoCustomPropertyInfo for the custom property.
 
 ## See Also
 
-- [SetQualifierAndDataValue](iouservideocustomproperty/setqualifieranddatavalue.md)
+### Accessing the data value
+- [SetQualifierAndDataValue](./setqualifieranddatavalue.md)
   Sets the custom property’s data value.
-- [GetCustomPropertyValueWithQualifier](iouservideocustomproperty/getcustompropertyvaluewithqualifier.md)
+- [GetCustomPropertyValueWithQualifier](./getcustompropertyvaluewithqualifier.md)
   Gets the custom property value for a given qualifier.
-- [IOUserVideoCustomPropertyInfo](videodriverkit/iouservideocustompropertyinfo.md)
+- [IOUserVideoCustomPropertyInfo](../videodriverkit-page/iouservideocustompropertyinfo.md)
   A description of a a custom property that allow the Host to marshal the data between the Host and its clients.
 
 

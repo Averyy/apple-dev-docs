@@ -1,7 +1,8 @@
 # MLModelAsset
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstraction of a compiled Core ML model asset.
 
@@ -20,59 +21,64 @@ An abstraction of a compiled Core ML model asset.
 class MLModelAsset
 ```
 
+```objc
+@interface MLModelAsset : NSObject
+```
+
 #### Overview
 
-[`MLModelAsset`](mlmodelasset.md) provides a unified interface by abstracting the compiled model representations for `.mlmodelc` files and in-memory representations.
+[`MLModelAsset`](./mlmodelasset.md) provides a unified interface by abstracting the compiled model representations for `.mlmodelc` files and in-memory representations.
 
-To use an in-memory model, create an [`MLModelAsset`](mlmodelasset.md) with an in-memory model specification, then call [`load(_:configuration:completionHandler:)`](mlmodel/load(_:configuration:completionhandler:).md).
+To use an in-memory model, create an [`MLModelAsset`](./mlmodelasset.md) with an in-memory model specification, then call [`load(_:configuration:completionHandler:)`](./mlmodel/load%28_,configuration,completionhandler%29.md).
 
 ## Topics
 
 ### Creating a model asset
-- [convenience init(specification: Data) throws](mlmodelasset/init(specification:).md)
+- [convenience init(specification: Data) throws](./mlmodelasset/init%28specification%29.md)
   Creates a model asset from an in-memory model specification.
-- [convenience init(specification: Data, blobMapping: [URL : Data]) throws](mlmodelasset/init(specification:blobmapping:).md)
+- [convenience init(specification: Data, blobMapping: [URL : Data]) throws](./mlmodelasset/init%28specification,blobmapping%29.md)
   Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
-- [convenience init(url: URL) throws](mlmodelasset/init(url:)-43988.md)
+- [convenience init(url: URL) throws](./mlmodelasset/init%28url%29-43988.md)
   Constructs a ModelAsset from a compiled model URL.
 ### Getting function names
-- [func functionNames(completionHandler: ([String]?, (any Error)?) -> Void)](mlmodelasset/functionnames(completionhandler:).md)
+- [func functionNames(completionHandler: ([String]?, (any Error)?) -> Void)](./mlmodelasset/functionnames%28completionhandler%29.md)
   The list of function names in the model asset.
 ### Getting the model description
-- [func modelDescription(completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(completionhandler:).md)
+- [func modelDescription(completionHandler: (MLModelDescription?, (any Error)?) -> Void)](./mlmodelasset/modeldescription%28completionhandler%29.md)
   The default model descripton.
-- [func modelDescription(ofFunctionNamed: String, completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(offunctionnamed:completionhandler:).md)
+- [func modelDescription(ofFunctionNamed: String, completionHandler: (MLModelDescription?, (any Error)?) -> Void)](./mlmodelasset/modeldescription%28offunctionnamed,completionhandler%29.md)
   The model descripton for a specified function.
 ### Initializers
-- [convenience init(URL: URL) throws](mlmodelasset/init(url:)-5540m.md)
+- [convenience init(URL: URL) throws](./mlmodelasset/init%28url%29-5540m.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Making Predictions with a Sequence of Inputs](making-predictions-with-a-sequence-of-inputs.md)
+### Model inputs and outputs
+- [Making Predictions with a Sequence of Inputs](./making-predictions-with-a-sequence-of-inputs.md)
   Integrate a recurrent neural network model to process sequences of inputs.
-- [class MLFeatureValue](mlfeaturevalue.md)
+- [class MLFeatureValue](./mlfeaturevalue.md)
   A generic wrapper around an underlying value and the value’s type.
-- [struct MLSendableFeatureValue](mlsendablefeaturevalue.md)
+- [struct MLSendableFeatureValue](./mlsendablefeaturevalue.md)
   A sendable feature value.
-- [protocol MLFeatureProvider](mlfeatureprovider.md)
+- [protocol MLFeatureProvider](./mlfeatureprovider.md)
   An interface that represents a collection of values for either a model’s input or its output.
-- [class MLDictionaryFeatureProvider](mldictionaryfeatureprovider.md)
+- [class MLDictionaryFeatureProvider](./mldictionaryfeatureprovider.md)
   A convenience wrapper for the given dictionary of data.
-- [protocol MLBatchProvider](mlbatchprovider.md)
+- [protocol MLBatchProvider](./mlbatchprovider.md)
   An interface that represents a collection of feature providers.
-- [class MLArrayBatchProvider](mlarraybatchprovider.md)
+- [class MLArrayBatchProvider](./mlarraybatchprovider.md)
   A convenience wrapper for batches of feature providers.
 
 

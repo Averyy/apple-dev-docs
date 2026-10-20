@@ -1,7 +1,8 @@
 # xcodeMetrics.ProductData
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The metrics information of an app on a specific platform.
 
@@ -10,14 +11,14 @@ The metrics information of an app on a specific platform.
 
 ## Declaration
 
-```swift
+```
 object xcodeMetrics.ProductData
 ```
 
 ## Topics
 
 ### Objects
-- [object xcodeMetrics.ProductData.MetricCategories](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary.md)
+- [object xcodeMetrics.ProductData.MetricCategories](./productdata-data.dictionary/metriccategories-data.dictionary.md)
   A metric category and its associated array of data and measurements.
 
 ## Properties
@@ -27,7 +28,8 @@ object xcodeMetrics.ProductData
 
 ## See Also
 
-- [object xcodeMetrics.Insights](xcodemetrics/insights-data.dictionary.md)
+### Objects
+- [object xcodeMetrics.Insights](./insights-data.dictionary.md)
   Analysis of power and performance data collected for your app that includes regressions and trends.
 
 

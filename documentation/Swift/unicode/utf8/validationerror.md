@@ -1,7 +1,8 @@
 # Unicode.UTF8.ValidationError
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The kind and location of a UTF-8 encoding error.
 
@@ -37,7 +38,7 @@ Valid UTF-8 is represented by this table:
 | U+40000..U+FFFFF | F1..F3 | 80..BF | 80..BF | 80..BF |
 | U+100000..U+10FFFF | F4 | 80..8F | 80..BF | 80..BF |
 
-##### Classifying Errors
+##### Classifying errors
 
 An *unexpected continuation* is when a continuation byte (`10xxxxxx`) occurs in a position that should be the start of a new scalar value. Unexpected continuations can often occur when the input contains arbitrary data instead of textual content. An unexpected continuation at the start of input might mean that the input was not correctly sliced along scalar boundaries or that it does not contain UTF-8.
 
@@ -49,12 +50,12 @@ An *invalid non-surrogate code point* is any code point higher than `U+10FFFF`. 
 
 An *overlong encoding* occurs when a scalar value that could have been encoded using fewer bytes is encoded in a longer byte sequence. Overlong encodings are invalid UTF-8 and can lead to security issues if not correctly detected:
 
-- [`https://nvd.nist.gov/vuln/detail/CVE-2008-2938`](https://developer.apple.comhttps://nvd.nist.gov/vuln/detail/CVE-2008-2938)
-- [`https://nvd.nist.gov/vuln/detail/CVE-2000-0884`](https://developer.apple.comhttps://nvd.nist.gov/vuln/detail/CVE-2000-0884)
+- [https://nvd.nist.gov/vuln/detail/CVE-2008-2938](https://nvd.nist.gov/vuln/detail/CVE-2008-2938)
+- [https://nvd.nist.gov/vuln/detail/CVE-2000-0884](https://nvd.nist.gov/vuln/detail/CVE-2000-0884)
 
 An overlong encoding of `NUL`, `0xC0 0x80`, is used in Java’s Modified UTF-8 but is invalid UTF-8. Overlong encoding errors often catch attempts to bypass security measures.
 
-##### Reporting the Range of the Error
+##### Reporting the range of the error
 
 The range of the error reported follows the *Maximal subpart of an ill-formed subsequence* algorithm in which each error is either one byte long or ends before the first byte that is disallowed. See “U+FFFD Substitution of Maximal Subparts” in the Unicode Standard. Unicode started recommending this algorithm in version 6 and is adopted by the W3C.
 
@@ -75,39 +76,39 @@ Other commonly reported error ranges can be constructed from this result. For ex
 ## Topics
 
 ### Structures
-- [Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct.md)
+- [Unicode.UTF8.ValidationError.Kind](./validationerror/kind-swift.struct.md)
   The kind of encoding error encountered during validation
 ### Operators
-- [static func == (Unicode.UTF8.ValidationError, Unicode.UTF8.ValidationError) -> Bool](unicode/utf8/validationerror/==(_:_:).md)
+- [static func == (Unicode.UTF8.ValidationError, Unicode.UTF8.ValidationError) -> Bool](./validationerror/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Initializers
-- [init(Unicode.UTF8.ValidationError.Kind, Range<Int>)](unicode/utf8/validationerror/init(_:_:).md)
-- [init(Unicode.UTF8.ValidationError.Kind, at: Int)](unicode/utf8/validationerror/init(_:at:).md)
+- [init(Unicode.UTF8.ValidationError.Kind, Range<Int>)](./validationerror/init%28_,_%29.md)
+- [init(Unicode.UTF8.ValidationError.Kind, at: Int)](./validationerror/init%28_,at%29.md)
 ### Instance Properties
-- [var byteOffsets: Range<Int>](unicode/utf8/validationerror/byteoffsets.md)
+- [var byteOffsets: Range<Int>](./validationerror/byteoffsets.md)
   The range of offsets into our input containing the error
-- [var hashValue: Int](unicode/utf8/validationerror/hashvalue.md)
+- [var hashValue: Int](./validationerror/hashvalue.md)
   The hash value.
-- [var kind: Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.property.md)
+- [var kind: Unicode.UTF8.ValidationError.Kind](./validationerror/kind-swift.property.md)
   The kind of encoding error
 ### Instance Methods
-- [func hash(into: inout Hasher)](unicode/utf8/validationerror/hash(into:).md)
+- [func hash(into: inout Hasher)](./validationerror/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [CustomStringConvertible Implementations](unicode/utf8/validationerror/customstringconvertible-implementations.md)
-- [Equatable Implementations](unicode/utf8/validationerror/equatable-implementations.md)
+- [CustomStringConvertible Implementations](./validationerror/customstringconvertible-implementations.md)
+- [Equatable Implementations](./validationerror/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Error](error.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](../../copyable.md)
+- [CustomStringConvertible](../../customstringconvertible.md)
+- [Equatable](../../equatable.md)
+- [Error](../../error.md)
+- [Escapable](../../escapable.md)
+- [Hashable](../../hashable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 
 ---

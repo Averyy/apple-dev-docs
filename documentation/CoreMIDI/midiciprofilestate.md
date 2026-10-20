@@ -1,7 +1,8 @@
 # MIDICIProfileState
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides the enabled and disabled profiles for a MIDI channel or port on a device.
 
@@ -18,47 +19,52 @@ An object that provides the enabled and disabled profiles for a MIDI channel or 
 class MIDICIProfileState
 ```
 
+```objc
+@interface MIDICIProfileState : NSObject
+```
+
 ## Topics
 
 ### Creating a Profile State
-- [init(channel: MIDIChannelNumber, enabledProfiles: [MIDICIProfile], disabledProfiles: [MIDICIProfile])](midiciprofilestate/init(channel:enabledprofiles:disabledprofiles:).md)
+- [init(channel: MIDIChannelNumber, enabledProfiles: [MIDICIProfile], disabledProfiles: [MIDICIProfile])](./midiciprofilestate/init%28channel,enabledprofiles,disabledprofiles%29.md)
   Creates a new profile state object for the specified MIDI channel and profiles.
-- [init(enabledProfiles: [MIDICIProfile], disabledProfiles: [MIDICIProfile])](midiciprofilestate/init(enabledprofiles:disabledprofiles:).md)
+- [init(enabledProfiles: [MIDICIProfile], disabledProfiles: [MIDICIProfile])](./midiciprofilestate/init%28enabledprofiles,disabledprofiles%29.md)
   Creates a new profile state object for the specified profiles.
 ### Accessing the MIDI Channel
-- [var midiChannel: MIDIChannelNumber](midiciprofilestate/midichannel.md)
+- [var midiChannel: MIDIChannelNumber](./midiciprofilestate/midichannel.md)
   The MIDI channel to which this state applies.
 ### Accessing Profiles
-- [var enabledProfiles: [MIDICIProfile]](midiciprofilestate/enabledprofiles.md)
+- [var enabledProfiles: [MIDICIProfile]](./midiciprofilestate/enabledprofiles.md)
   The object’s enabled profiles.
-- [var disabledProfiles: [MIDICIProfile]](midiciprofilestate/disabledprofiles.md)
+- [var disabledProfiles: [MIDICIProfile]](./midiciprofilestate/disabledprofiles.md)
   The object’s disabled profiles.
 ### Initializers
-- [init?(coder: NSCoder)](midiciprofilestate/init(coder:).md)
+- [init?(coder: NSCoder)](./midiciprofilestate/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MIDICIDiscoveryManager](midicidiscoverymanager.md)
+### Capability Inquiry
+- [class MIDICIDiscoveryManager](./midicidiscoverymanager.md)
   A singleton object that performs systemwide MIDI-CI discovery.
-- [class MIDICISession](midicisession.md)
+- [class MIDICISession](./midicisession.md)
   An object that represents a MIDI-CI session.
-- [class MIDICIProfile](midiciprofile.md)
+- [class MIDICIProfile](./midiciprofile.md)
   A mapping of MIDI messages to specific sounds and synthesis behaviors, such as General MIDI, a drawbar organ, and so on.
-- [class MIDICIResponder](midiciresponder.md)
+- [class MIDICIResponder](./midiciresponder.md)
   An object that responds to MIDI-CI inquiries from an initiator on behalf of a MIDI client, and handles profile and property exchange operations.
 
 

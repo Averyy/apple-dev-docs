@@ -1,14 +1,15 @@
 # mptcpci_subflow_connids
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 sae_connid_t mptcpci_subflow_connids[4];
 ```
 

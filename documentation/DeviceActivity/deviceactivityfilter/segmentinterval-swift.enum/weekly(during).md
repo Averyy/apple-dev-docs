@@ -1,7 +1,8 @@
 # DeviceActivityFilter.SegmentInterval.weekly(during:)
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system aggregates data into weekly segments within the specified interval.
 

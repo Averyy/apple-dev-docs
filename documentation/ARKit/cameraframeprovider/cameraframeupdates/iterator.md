@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraFrameUpdates.Iterator
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous iterator that produces camera frame elements on an asynchronous sequence.
 
@@ -17,16 +18,16 @@ struct Iterator
 ## Topics
 
 ### Type methods
-- [func next() async -> CameraFrameProvider.CameraFrameUpdates.Element?](cameraframeprovider/cameraframeupdates/iterator/next.md)
+- [func next() async -> CameraFrameProvider.CameraFrameUpdates.Element?](./iterator/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there’s no next element.
 ### Type aliases
-- [CameraFrameProvider.CameraFrameUpdates.Element](cameraframeprovider/cameraframeupdates/element.md)
+- [CameraFrameProvider.CameraFrameUpdates.Element](./element.md)
   The type of element produced by this asynchronous sequence of camera frame structures.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

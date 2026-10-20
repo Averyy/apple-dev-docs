@@ -1,7 +1,8 @@
 # stringValues
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings in the sequence.
 
@@ -20,13 +21,18 @@ An array of strings in the sequence.
 var stringValues: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * stringValues;
+```
+
 #### Discussion
 
-Only use this property when the sequence’s [`type`](mlsequence/type.md) is [`MLFeatureType.string`](mlfeaturetype/string.md).
+Only use this property when the sequence’s [`type`](./type.md) is [`MLFeatureType.string`](../mlfeaturetype/string.md).
 
 ## See Also
 
-- [var int64Values: [NSNumber]](mlsequence/int64values.md)
+### Retrieving the Sequence’s Values
+- [var int64Values: [NSNumber]](./int64values.md)
   An array of 64-bit integers in the sequence.
 
 

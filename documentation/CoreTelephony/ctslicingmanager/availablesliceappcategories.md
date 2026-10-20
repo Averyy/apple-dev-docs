@@ -1,7 +1,8 @@
 # availableSliceAppCategories
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Network-slicing app categories available to your app.
 
@@ -18,7 +19,7 @@ final var availableSliceAppCategories: [CTSlicingManager.AppCategory] { get asyn
 
 #### Discussion
 
-This property returns an array of [`CTSlicingManager.AppCategory`](ctslicingmanager/appcategory.md) values that meet all of the following requirements:
+This property returns an array of [`CTSlicingManager.AppCategory`](./appcategory.md) values that meet all of the following requirements:
 
 - The carrier’s network supports them.
 - Your app’s entitlements include them.
@@ -37,8 +38,10 @@ do {
 }
 ```
 
-> **Note**: - `POSIXError.ENOTSUP` if network slicing is not currently available.
-- `POSIXError.EINVAL` if an invalid parameter or system error occurs.
+> **Throws**:
+>
+> - `POSIXError.ENOTSUP` if network slicing is not currently available.
+> - `POSIXError.EINVAL` if an invalid parameter or system error occurs.
 
 
 ---

@@ -1,14 +1,15 @@
 # CS_GenericBlob
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __SC_GenericBlob {
     ...
 } CS_GenericBlob;
@@ -17,9 +18,9 @@ typedef struct __SC_GenericBlob {
 ## Topics
 
 ### Instance Properties
-- [data](cs_genericblob/2869927-data.md)
-- [length](cs_genericblob/2869940-length.md)
-- [magic](cs_genericblob/2869938-magic.md)
+- [data](./cs_genericblob/api-2869927-data.md)
+- [length](./cs_genericblob/api-2869940-length.md)
+- [magic](./cs_genericblob/api-2869938-magic.md)
 
 
 ---

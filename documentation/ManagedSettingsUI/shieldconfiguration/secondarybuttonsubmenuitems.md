@@ -1,7 +1,8 @@
 # secondaryButtonSubmenuItems
 
 **Framework**: Managed Settings UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that define the items to display in the secondary button’s submenu.
 
@@ -30,13 +31,14 @@ Or, your app might tailor actions for an education app as:
 2. “Complete homework.”
 3. “Take a quiz.”
 
-To respond to menu item taps, implement [`ShieldAction.firstSecondarySubmenuItemPressed`](https://developer.apple.com/documentation/managedsettings/shieldaction/firstsecondarysubmenuitempressed), [`ShieldAction.secondSecondarySubmenuItemPressed`](https://developer.apple.com/documentation/managedsettings/shieldaction/secondsecondarysubmenuitempressed), and [`ShieldAction.thirdSecondarySubmenuItemPressed`](https://developer.apple.com/documentation/managedsettings/shieldaction/thirdsecondarysubmenuitempressed), depending on the number of elements your app adds to the array.
+To respond to menu item taps, implement [`ShieldAction.firstSecondarySubmenuItemPressed`](../../ManagedSettings/shieldaction/firstsecondarysubmenuitempressed.md), [`ShieldAction.secondSecondarySubmenuItemPressed`](../../ManagedSettings/shieldaction/secondsecondarysubmenuitempressed.md), and [`ShieldAction.thirdSecondarySubmenuItemPressed`](../../ManagedSettings/shieldaction/thirdsecondarysubmenuitempressed.md), depending on the number of elements your app adds to the array.
 
-If you provide `nil` or an empty array, the secondary button doesn’t display a submenu and instead invokes the [`ShieldAction.secondaryButtonPressed`](https://developer.apple.com/documentation/managedsettings/shieldaction/secondarybuttonpressed) action when a person presses the secondary button. The system automatically adds a Cancel button to dismiss the menu.
+If you provide `nil` or an empty array, the secondary button doesn’t display a submenu and instead invokes the [`ShieldAction.secondaryButtonPressed`](../../ManagedSettings/shieldaction/secondarybuttonpressed.md) action when a person presses the secondary button. The system automatically adds a Cancel button to dismiss the menu.
 
 ## See Also
 
-- [let secondaryButtonLabel: ShieldConfiguration.Label?](shieldconfiguration/secondarybuttonlabel.md)
+### Configure the secondary button
+- [let secondaryButtonLabel: ShieldConfiguration.Label?](./secondarybuttonlabel.md)
   The label of the optional secondary button.
 
 

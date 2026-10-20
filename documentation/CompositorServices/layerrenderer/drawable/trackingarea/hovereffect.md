@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.TrackingArea.HoverEffect
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Hover effect that will be automatically rendered by CompositorServices, when the area is looked at.
 
@@ -18,7 +19,7 @@ struct HoverEffect
 ## Topics
 
 ### Type Properties
-- [static let automatic: LayerRenderer.Drawable.TrackingArea.HoverEffect](layerrenderer/drawable/trackingarea/hovereffect/automatic.md)
+- [static let automatic: LayerRenderer.Drawable.TrackingArea.HoverEffect](./hovereffect/automatic.md)
 
 
 ---

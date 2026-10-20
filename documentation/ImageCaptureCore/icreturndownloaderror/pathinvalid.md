@@ -1,16 +1,17 @@
 # pathInvalid
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The destination path is invalid.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ static var pathInvalid: ICReturnDownloadError.Code { get }
 
 ## See Also
 
-- [static var fileWritable: ICReturnDownloadError.Code](icreturndownloaderror/filewritable.md)
+### Error Codes
+- [static var fileWritable: ICReturnDownloadError.Code](./filewritable.md)
   The destination file is not writable.
-- [ICReturnDownloadError.Code](icreturndownloaderror/code.md)
+- [ICReturnDownloadError.Code](./code.md)
 
 
 ---

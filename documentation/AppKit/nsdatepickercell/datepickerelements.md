@@ -1,12 +1,13 @@
 # datePickerElements
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bitmask that indicates which visual elements are shown by the date picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A bitmask that indicates which visual elements are shown by the date picker.
 var datePickerElements: NSDatePicker.ElementFlags { get set }
 ```
 
+```objc
+@property NSDatePickerElementFlags datePickerElements;
+```
+
 #### Discussion
 
-Elements not included in the bitmask are hidden from view. For a list of possible values, see [`NSDatePicker.ElementFlags`](nsdatepicker/elementflags.md).
+Elements not included in the bitmask are hidden from view. For a list of possible values, see [`NSDatePicker.ElementFlags`](../nsdatepicker/elementflags.md).
 
 ## See Also
 
-- [var backgroundColor: NSColor](nsdatepickercell/backgroundcolor.md)
+### Configuring Appearance
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The cell’s background color.
-- [var drawsBackground: Bool](nsdatepickercell/drawsbackground.md)
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean value indicating whether the cell draws its background.
-- [var textColor: NSColor](nsdatepickercell/textcolor.md)
+- [var textColor: NSColor](./textcolor.md)
   The cell’s text color.
-- [var datePickerStyle: NSDatePicker.Style](nsdatepickercell/datepickerstyle.md)
+- [var datePickerStyle: NSDatePicker.Style](./datepickerstyle.md)
   The date picker style to use.
 
 

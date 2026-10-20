@@ -1,7 +1,8 @@
 # AVAudioEnvironmentOutputType.auto
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically detects the playback route and picks the correct output.
 
@@ -19,17 +20,22 @@ Automatically detects the playback route and picks the correct output.
 case auto
 ```
 
+```c
+AVAudioEnvironmentOutputTypeAuto
+```
+
 #### Discussion
 
-When using the automatic output type, wired output defaults to [`AVAudioEnvironmentOutputType.headphones`](avaudioenvironmentoutputtype/headphones.md), and manual rendering with a two-channel output layout defaults to [`AVAudioEnvironmentOutputType.externalSpeakers`](avaudioenvironmentoutputtype/externalspeakers.md).
+When using the automatic output type, wired output defaults to [`AVAudioEnvironmentOutputType.headphones`](./headphones.md), and manual rendering with a two-channel output layout defaults to [`AVAudioEnvironmentOutputType.externalSpeakers`](./externalspeakers.md).
 
 ## See Also
 
-- [AVAudioEnvironmentOutputType.headphones](avaudioenvironmentoutputtype/headphones.md)
+### Choosing an output type
+- [AVAudioEnvironmentOutputType.headphones](./headphones.md)
   Renders the audio output for headphones.
-- [AVAudioEnvironmentOutputType.builtInSpeakers](avaudioenvironmentoutputtype/builtinspeakers.md)
+- [AVAudioEnvironmentOutputType.builtInSpeakers](./builtinspeakers.md)
   Renders the audio output for built-in speakers on the current hardware.
-- [AVAudioEnvironmentOutputType.externalSpeakers](avaudioenvironmentoutputtype/externalspeakers.md)
+- [AVAudioEnvironmentOutputType.externalSpeakers](./externalspeakers.md)
   Renders the audio output for external speakers according to the audio environment node’s output channel layout.
 
 

@@ -1,7 +1,8 @@
 # InstallProvisioningProfileCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to install a provisioning profile on a device.
 
@@ -16,14 +17,14 @@ The command to install a provisioning profile on a device.
 
 ## Declaration
 
-```swift
+```
 object InstallProvisioningProfileCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object InstallProvisioningProfileCommand.Command](installprovisioningprofilecommand/command-data.dictionary.md)
+- [object InstallProvisioningProfileCommand.Command](./installprovisioningprofilecommand/command-data.dictionary.md)
   The command to install a provisioning profile on a device.
 
 ## Properties
@@ -33,7 +34,8 @@ object InstallProvisioningProfileCommand
 
 ## See Also
 
-- [object InstallProvisioningProfileResponse](installprovisioningprofileresponse.md)
+### Commands and responses
+- [object InstallProvisioningProfileResponse](./installprovisioningprofileresponse.md)
   A response from the device after it processes the command to install a provisioning profile on a device.
 
 

@@ -1,7 +1,8 @@
 # fileManager(_:shouldMoveItemAtPath:toPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the file manager should move the specified item to the new path.
 
@@ -20,15 +21,19 @@ Asks the delegate if the file manager should move the specified item to the new 
 optional func fileManager(_ fileManager: FileManager, shouldMoveItemAtPath srcPath: String, toPath dstPath: String) -> Bool
 ```
 
+```objc
+- (BOOL) fileManager:(NSFileManager *) fileManager shouldMoveItemAtPath:(NSString *) srcPath toPath:(NSString *) dstPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If you do not implement this method, the file manager assumes a response of [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if the operation should proceed, otherwise [`false`](../../Swift/false.md). If you do not implement this method, the file manager assumes a response of [`true`](../../Swift/true.md).
 
 #### Discussion
 
 This method is called only once for the item being moved, regardless of whether the item is a file, directory, or symbolic link.
 
-This method performs the same task as the [`fileManager(_:shouldMoveItemAt:to:)`](filemanagerdelegate/filemanager(_:shouldmoveitemat:to:).md) method, which is preferred over this method in macOS 10.6 and later.
+This method performs the same task as the [`fileManager(_:shouldMoveItemAt:to:)`](./filemanager%28_,shouldmoveitemat,to%29.md) method, which is preferred over this method in macOS 10.6 and later.
 
 ## Parameters
 
@@ -38,15 +43,17 @@ This method performs the same task as the [`fileManager(_:shouldMoveItemAt:to:)`
 
 ## See Also
 
-- [func moveItem(atPath: String, toPath: String) throws](filemanager/moveitem(atpath:topath:).md)
+### Related Documentation
+- [func moveItem(atPath: String, toPath: String) throws](../filemanager/moveitem%28atpath,topath%29.md)
   Moves the file or directory at the specified path to a new location synchronously.
-- [func moveItem(at: URL, to: URL) throws](filemanager/moveitem(at:to:).md)
+- [func moveItem(at: URL, to: URL) throws](../filemanager/moveitem%28at,to%29.md)
   Moves the file or directory at the specified URL to a new location synchronously.
-- [func fileManager(FileManager, shouldMoveItemAt: URL, to: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldmoveitemat:to:).md)
+### Moving  an Item
+- [func fileManager(FileManager, shouldMoveItemAt: URL, to: URL) -> Bool](./filemanager%28_,shouldmoveitemat,to%29.md)
   Asks the delegate if the file manager should move the specified item to the new URL.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, movingItemAt: URL, to: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:movingitemat:to:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, movingItemAt: URL, to: URL) -> Bool](./filemanager%28_,shouldproceedaftererror,movingitemat,to%29.md)
   Asks the delegate if the move operation should continue after an error occurs while moving the item at the specified URL.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, movingItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:movingitematpath:topath:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, movingItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldproceedaftererror,movingitematpath,topath%29.md)
   Asks the delegate if the move operation should continue after an error occurs while moving the item at the specified path.
 
 

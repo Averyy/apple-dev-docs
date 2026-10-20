@@ -1,7 +1,8 @@
 # squareRoot()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the square root of the value, rounded to a representable value.
 

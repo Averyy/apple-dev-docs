@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.ChamferMode.both
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Chamfer both the front and the back of the extrusion.
 

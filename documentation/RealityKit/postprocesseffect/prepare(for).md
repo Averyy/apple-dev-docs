@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A method where you can prepare the metal device with initial setup work.
@@ -22,9 +23,15 @@ mutating func prepare(for device: any MTLDevice)
 
 #### Discussion
 
-When you set or update the [`customPostProcessing`](realityviewrenderingeffects/custompostprocessing.md) property, RealityKit calls this method once, after it does its setup work, but before rendering the next frame.
+When you set or update the [`customPostProcessing`](../realityviewrenderingeffects/custompostprocessing.md) property, RealityKit calls this method once, after it does its setup work, but before rendering the next frame.
 
 Adding long-running tasks in this method may cause rendering hitches.
+
+## Default Implementations
+
+### PostProcessEffect Implementations
+- [func prepare(for: any MTLDevice)](./prepare%28for%29-69w45.md)
+  Default implementation, which does not change the Metal device.
 
 
 ---

@@ -1,7 +1,8 @@
 # SSL_RSA_EXPORT_WITH_RC4_40_MD5
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Session key size conforms to pre-1998 US export restrictions.
 
@@ -18,6 +19,10 @@ Session key size conforms to pre-1998 US export restrictions.
 
 ```swift
 var SSL_RSA_EXPORT_WITH_RC4_40_MD5: SSLCipherSuite { get }
+```
+
+```c
+SSL_RSA_EXPORT_WITH_RC4_40_MD5
 ```
 
 

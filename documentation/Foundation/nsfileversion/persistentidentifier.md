@@ -1,7 +1,8 @@
 # persistentIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for this version of the file.
 
@@ -20,21 +21,26 @@ The identifier for this version of the file.
 var persistentIdentifier: any NSCoding { get }
 ```
 
+```objc
+@property (retain, readonly) id<NSCoding> persistentIdentifier;
+```
+
 #### Discussion
 
-You can save the value of this property persistently and use it to recreate the version object later. When recreating the version object using the [`version(itemAt:forPersistentIdentifier:)`](nsfileversion/version(itemat:forpersistentidentifier:).md) method, the version object returned is equivalent to the current object.
+You can save the value of this property persistently and use it to recreate the version object later. When recreating the version object using the [`version(itemAt:forPersistentIdentifier:)`](./version%28itemat,forpersistentidentifier%29.md) method, the version object returned is equivalent to the current object.
 
 ## See Also
 
-- [var url: URL](nsfileversion/url.md)
+### Accessing the Version Information
+- [var url: URL](./url.md)
   The URL identifying the location of the file associated with the file version object.
-- [var localizedName: String?](nsfileversion/localizedname.md)
+- [var localizedName: String?](./localizedname.md)
   The string containing the user-presentable name of the file version.
-- [var localizedNameOfSavingComputer: String?](nsfileversion/localizednameofsavingcomputer.md)
+- [var localizedNameOfSavingComputer: String?](./localizednameofsavingcomputer.md)
   The user-presentable name of the computer on which the revision was saved.
-- [var modificationDate: Date?](nsfileversion/modificationdate.md)
+- [var modificationDate: Date?](./modificationdate.md)
   The modification date of the version.
-- [var isDiscardable: Bool](nsfileversion/isdiscardable.md)
+- [var isDiscardable: Bool](./isdiscardable.md)
   A Boolean value that specifies whether the system can delete the associated file at some future time.
 
 

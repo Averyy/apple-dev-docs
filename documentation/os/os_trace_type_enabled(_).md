@@ -1,23 +1,30 @@
 # os_trace_type_enabled(_:)
 
 **Framework**: os  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether the specified info level trace information is enabled.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 8.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 11.0 (renamed: OSLog.isEnabled(self:type:))
+- iPadOS 8.0+ - Deprecated in 11.0 (renamed: OSLog.isEnabled(self:type:))
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: OSLog.isEnabled(self:type:))
+- macOS 10.10+ - Deprecated in 10.13 (renamed: OSLog.isEnabled(self:type:))
+- tvOS 8.0+ - Deprecated in 11.0 (renamed: OSLog.isEnabled(self:type:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: OSLog.isEnabled(self:type:))
+- watchOS 2.0+ - Deprecated in 4.0 (renamed: OSLog.isEnabled(self:type:))
+
+> **Deprecated**: Use [`isEnabled(type:)`](./oslog/isenabled%28type%29.md) instead.
 
 ## Declaration
 
 ```swift
 func os_trace_type_enabled(_ type: UInt8) -> Bool
+```
+
+```c
+static bool os_trace_type_enabled(uint8_t type);
 ```
 
 #### Discussion
@@ -26,13 +33,14 @@ Generally, trace points should not involve expensive operations, however some ci
 
 ## Parameters
 
-- `type`: The type of trace to check. Possible values are [`OS_TRACE_TYPE_DEBUG`](os_trace_type_debug.md) and [`OS_TRACE_TYPE_INFO`](os_trace_type_info.md).
+- `type`: The type of trace to check. Possible values are [`OS_TRACE_TYPE_DEBUG`](./os_trace_type_debug.md) and [`OS_TRACE_TYPE_INFO`](./os_trace_type_info.md).
 
 ## See Also
 
-- [func os_trace_debug_enabled() -> Bool](os_trace_debug_enabled().md)
+### Deprecated Functions
+- [func os_trace_debug_enabled() -> Bool](./os_trace_debug_enabled%28%29.md)
   Returns whether debug level trace information is enabled.
-- [func os_trace_info_enabled() -> Bool](os_trace_info_enabled().md)
+- [func os_trace_info_enabled() -> Bool](./os_trace_info_enabled%28%29.md)
   Returns whether info level trace information is enabled.
 
 

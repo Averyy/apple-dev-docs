@@ -1,7 +1,8 @@
 # MTLFunctionOptions
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that define how Metal compiles a GPU function.
 
@@ -19,48 +20,53 @@ Options that define how Metal compiles a GPU function.
 struct MTLFunctionOptions
 ```
 
+```c
+enum MTLFunctionOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Function compilation options
-- [static var failOnBinaryArchiveMiss: MTLFunctionOptions](mtlfunctionoptions/failonbinaryarchivemiss.md)
+- [static var failOnBinaryArchiveMiss: MTLFunctionOptions](./mtlfunctionoptions/failonbinaryarchivemiss.md)
   An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
-- [static var compileToBinary: MTLFunctionOptions](mtlfunctionoptions/compiletobinary.md)
+- [static var compileToBinary: MTLFunctionOptions](./mtlfunctionoptions/compiletobinary.md)
   An option that instructs the compiler to generate a binary format for dynamic linking.
-- [static var pipelineIndependent: MTLFunctionOptions](mtlfunctionoptions/pipelineindependent.md)
+- [static var pipelineIndependent: MTLFunctionOptions](./mtlfunctionoptions/pipelineindependent.md)
   An option that generates the same function handle across all pipeline states that link a function, which lets you share function tables across pipeline states.
-- [static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions](mtlfunctionoptions/storefunctioninmetalpipelinesscript.md)
+- [static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions](./mtlfunctionoptions/storefunctioninmetalpipelinesscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
-- [static var storeFunctionInMetalScript: MTLFunctionOptions](mtlfunctionoptions/storefunctioninmetalscript.md)
+- [static var storeFunctionInMetalScript: MTLFunctionOptions](./mtlfunctionoptions/storefunctioninmetalscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
 ### Swift support
-- [init(rawValue: UInt)](mtlfunctionoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtlfunctionoptions/init%28rawvalue%29.md)
   Creates a new function options structure from a raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var device: any MTLDevice](mtlfunction/device.md)
+### Identifying shader functions
+- [var device: any MTLDevice](./mtlfunction/device.md)
   The device object that created the shader function.
-- [var label: String?](mtlfunction/label.md)
+- [var label: String?](./mtlfunction/label.md)
   A string that identifies the shader function.
-- [var functionType: MTLFunctionType](mtlfunction/functiontype.md)
+- [var functionType: MTLFunctionType](./mtlfunction/functiontype.md)
   The shader function’s type.
-- [var name: String](mtlfunction/name.md)
+- [var name: String](./mtlfunction/name.md)
   The function’s name.
-- [enum MTLFunctionType](mtlfunctiontype.md)
+- [enum MTLFunctionType](./mtlfunctiontype.md)
   The type of a top-level Metal Shading Language (MSL) function.
-- [var options: MTLFunctionOptions](mtlfunction/options.md)
+- [var options: MTLFunctionOptions](./mtlfunction/options.md)
   The options that Metal used to compile this function.
 
 

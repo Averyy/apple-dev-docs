@@ -1,7 +1,8 @@
 # CGPDFStringGetLength(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of bytes in a PDF string.
 
@@ -10,7 +11,7 @@ Returns the number of bytes in a PDF string.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the number of bytes in a PDF string.
 
 ```swift
 func CGPDFStringGetLength(_ string: CGPDFStringRef) -> Int
+```
+
+```c
+extern size_t CGPDFStringGetLength(CGPDFStringRef string);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ Returns the number of bytes referenced by the string, or `0` if the string is `N
 
 ## See Also
 
-- [func CGPDFStringGetBytePtr(CGPDFStringRef) -> UnsafePointer<UInt8>?](cgpdfstringgetbyteptr(_:).md)
+### Getting PDF String Data
+- [func CGPDFStringGetBytePtr(CGPDFStringRef) -> UnsafePointer<UInt8>?](./cgpdfstringgetbyteptr%28_%29.md)
   Returns a pointer to the bytes of a PDF string.
 
 

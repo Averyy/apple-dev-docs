@@ -1,7 +1,8 @@
 # processImages(textelDensity:styleImageDestination:contentImagesDestination:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the content images to square images and saves them to a destination directory.
 

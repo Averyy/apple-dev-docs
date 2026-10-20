@@ -1,24 +1,26 @@
 # free
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Releases the resources owned by the network packet buffer pool object.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [Create](iousernetworkpacketbufferpool/create.md)
+### Creating a Buffer Pool
+- [Create](./create.md)
   Creates a new packet buffer pool object and allocates space for the specified number of packets.
-- [init](iousernetworkpacketbufferpool/init.md)
+- [init](./init.md)
   Initializes the network packet buffer pool object.
 
 

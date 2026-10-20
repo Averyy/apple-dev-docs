@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.Layout.tile
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 When the sidebar is displayed, the selected view controller is resized and shifted to display alongside the sidebar. The selected view controller is not occluded by the sidebar, cannot render underneath the sidebar.
 
@@ -15,6 +16,10 @@ When the sidebar is displayed, the selected view controller is resized and shift
 
 ```swift
 case tile
+```
+
+```c
+UITabBarControllerSidebarLayoutTile
 ```
 
 

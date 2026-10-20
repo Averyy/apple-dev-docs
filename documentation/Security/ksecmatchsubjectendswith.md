@@ -1,7 +1,8 @@
 # kSecMatchSubjectEndsWith
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string to match against the end of a certificate or identity’s subject.
 
@@ -14,9 +15,13 @@ A key whose value is a string to match against the end of a certificate or ident
 let kSecMatchSubjectEndsWith: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchSubjectEndsWith;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). If provided, returned certificates or identities are limited to those whose subject ends with this string.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md). If provided, returned certificates or identities are limited to those whose subject ends with this string.
 
 
 ---

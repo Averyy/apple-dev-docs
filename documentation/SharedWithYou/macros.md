@@ -1,6 +1,7 @@
 # Macros
 
-**Framework**: Shared with You
+**Framework**: Shared with You  
+**Role**: API Collection
 
 
 ---

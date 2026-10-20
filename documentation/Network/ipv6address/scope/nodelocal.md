@@ -1,7 +1,8 @@
 # IPv6Address.Scope.nodeLocal
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The node-local multicast scope.
 
@@ -22,13 +23,14 @@ case nodeLocal
 
 ## See Also
 
-- [IPv6Address.Scope.linkLocal](ipv6address/scope/linklocal.md)
+### Scope Values
+- [IPv6Address.Scope.linkLocal](./linklocal.md)
   The link-local multicast scope.
-- [IPv6Address.Scope.siteLocal](ipv6address/scope/sitelocal.md)
+- [IPv6Address.Scope.siteLocal](./sitelocal.md)
   The site-local multicast scope.
-- [IPv6Address.Scope.organizationLocal](ipv6address/scope/organizationlocal.md)
+- [IPv6Address.Scope.organizationLocal](./organizationlocal.md)
   The organization-local multicast scope.
-- [IPv6Address.Scope.global](ipv6address/scope/global.md)
+- [IPv6Address.Scope.global](./global.md)
   The global multicast scope.
 
 

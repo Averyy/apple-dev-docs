@@ -1,7 +1,8 @@
 # LengthGreaterThanMaxError
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An error a validator emits when the length property of the value given is greater than the allowed maximum.
 
@@ -10,7 +11,7 @@ An error a validator emits when the length property of the value given is greate
 
 ## Declaration
 
-```swift
+```
 interface LengthGreaterThanMaxError
 ```
 
@@ -21,21 +22,22 @@ Extends `LengthError`.
 ## Topics
 
 ### Instance Properties
-- [maximum](lengthgreaterthanmaxerror/maximum.md)
+- [maximum](./lengthgreaterthanmaxerror/maximum.md)
   The maximum value (inclusive) for the tested length property.
 
 ## Relationships
 
 ### Inherited By
-- [LengthError](lengtherror.md)
+- [LengthError](./lengtherror.md)
 
 ## See Also
 
-- [LengthError](lengtherror.md)
+### Length Errors
+- [LengthError](./lengtherror.md)
   The base class of length-related validation errors.
-- [LengthLessThanMinError](lengthlessthanminerror.md)
+- [LengthLessThanMinError](./lengthlessthanminerror.md)
   An error a validator emits when the length property of the value given is less than the allowed minimum.
-- [LengthNotNumericError](lengthnotnumericerror.md)
+- [LengthNotNumericError](./lengthnotnumericerror.md)
   An error a validator emits when the length property of a value isn’t numeric.
 
 

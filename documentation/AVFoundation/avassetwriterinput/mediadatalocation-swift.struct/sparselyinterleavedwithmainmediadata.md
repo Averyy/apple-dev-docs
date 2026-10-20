@@ -1,7 +1,8 @@
 # sparselyInterleavedWithMainMediaData
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that there may be large segments of time without any media data from this track. When mediaDataLocation is set to this value, AVAssetWriter will interleave the media data, but will not wait for media data from this track to achieve tight interleaving with other tracks.
 
@@ -19,11 +20,16 @@ Indicates that there may be large segments of time without any media data from t
 static let sparselyInterleavedWithMainMediaData: AVAssetWriterInput.MediaDataLocation
 ```
 
+```c
+extern AVAssetWriterInputMediaDataLocation const AVAssetWriterInputMediaDataLocationSparselyInterleavedWithMainMediaData;
+```
+
 ## See Also
 
-- [static let interleavedWithMainMediaData: AVAssetWriterInput.MediaDataLocation](avassetwriterinput/mediadatalocation-swift.struct/interleavedwithmainmediadata.md)
+### Media data locations
+- [static let interleavedWithMainMediaData: AVAssetWriterInput.MediaDataLocation](./interleavedwithmainmediadata.md)
   A value that indicates to interleave the input’s media data with other media data.
-- [static let beforeMainMediaDataNotInterleaved: AVAssetWriterInput.MediaDataLocation](avassetwriterinput/mediadatalocation-swift.struct/beforemainmediadatanotinterleaved.md)
+- [static let beforeMainMediaDataNotInterleaved: AVAssetWriterInput.MediaDataLocation](./beforemainmediadatanotinterleaved.md)
   A value that indicates to use noninterleaved data, and write it before interleaved data.
 
 

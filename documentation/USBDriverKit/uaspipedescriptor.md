@@ -1,7 +1,8 @@
 # UASPipeDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines the Mass Storage Specific UAS pipe usage descriptor.
 
@@ -10,25 +11,26 @@ A structure that defines the Mass Storage Specific UAS pipe usage descriptor.
 
 ## Declaration
 
-```swift
+```c
 struct UASPipeDescriptor;
 ```
 
 ## Topics
 
 ### Accessing the Descriptor Properties
-- [bLength](uaspipedescriptor/blength.md)
-- [bDescriptorType](uaspipedescriptor/bdescriptortype.md)
-- [bPipeID](uaspipedescriptor/bpipeid.md)
-- [bReserved](uaspipedescriptor/breserved.md)
+- [bLength](./uaspipedescriptor/blength.md)
+- [bDescriptorType](./uaspipedescriptor/bdescriptortype.md)
+- [bPipeID](./uaspipedescriptor/bpipeid.md)
+- [bReserved](./uaspipedescriptor/breserved.md)
 
 ## See Also
 
-- [IOUSB20HubDescriptor](iousb20hubdescriptor.md)
+### USB Descriptors
+- [IOUSB20HubDescriptor](./iousb20hubdescriptor.md)
   A structure that defines the descriptor for a USB hub.
-- [IOUSBSuperSpeedHubDescriptor](iousbsuperspeedhubdescriptor.md)
+- [IOUSBSuperSpeedHubDescriptor](./iousbsuperspeedhubdescriptor.md)
   A structure that defines the descriptor for a Super Speed USB hub.
-- [SuperSpeed Hub Characteristics](superspeed_hub_characteristics-enum.md)
+- [SuperSpeed Hub Characteristics](./superspeed_hub_characteristics-enum.md)
   Constants for specifying super-speed hub characteristics.
 
 

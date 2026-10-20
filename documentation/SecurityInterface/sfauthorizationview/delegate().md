@@ -1,7 +1,8 @@
 # delegate()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the delegate for this view.
 
@@ -14,9 +15,14 @@ Returns the delegate for this view.
 func delegate() -> Any!
 ```
 
+```objc
+- (id) delegate;
+```
+
 ## See Also
 
-- [func setDelegate(Any!)](sfauthorizationview/setdelegate(_:).md)
+### Setting and getting the delegate for the view
+- [func setDelegate(Any!)](./setdelegate%28_%29.md)
   Sets the delegate for this authorization view.
 
 

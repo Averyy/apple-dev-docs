@@ -1,7 +1,8 @@
 # UIPageControl.InteractionState.continuous
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The interaction state for which the page changes through a continuous interaction.
 
@@ -18,11 +19,16 @@ The interaction state for which the page changes through a continuous interactio
 case continuous
 ```
 
+```c
+UIPageControlInteractionStateContinuous
+```
+
 ## See Also
 
-- [UIPageControl.InteractionState.none](uipagecontrol/interactionstate-swift.enum/none.md)
+### Constants
+- [UIPageControl.InteractionState.none](./none.md)
   The default interaction state, where no interaction has occurred.
-- [UIPageControl.InteractionState.discrete](uipagecontrol/interactionstate-swift.enum/discrete.md)
+- [UIPageControl.InteractionState.discrete](./discrete.md)
   The interaction state for which the page changes through a single, discrete interaction.
 
 

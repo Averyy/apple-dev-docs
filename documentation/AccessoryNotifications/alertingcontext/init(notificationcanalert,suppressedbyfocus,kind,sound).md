@@ -1,7 +1,8 @@
 # init(notificationCanAlert:suppressedByFocus:kind:sound:)
 
 **Framework**: Accessory Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an alerting context with notification alert conditions.
 

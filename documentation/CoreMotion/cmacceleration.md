@@ -1,7 +1,8 @@
 # CMAcceleration
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of a structure containing 3-axis acceleration values.
 
@@ -19,6 +20,10 @@ The type of a structure containing 3-axis acceleration values.
 struct CMAcceleration
 ```
 
+```c
+typedef struct { ... } CMAcceleration;
+```
+
 #### Overview
 
 A G is a unit of gravitation force equal to that exerted by the earth’s gravitational field (9.81 m s−2).
@@ -26,25 +31,26 @@ A G is a unit of gravitation force equal to that exerted by the earth’s gravit
 ## Topics
 
 ### Initializers
-- [init()](cmacceleration/init.md)
-- [init(x: Double, y: Double, z: Double)](cmacceleration/init(x:y:z:).md)
+- [init()](./cmacceleration/init%28%29.md)
+- [init(x: Double, y: Double, z: Double)](./cmacceleration/init%28x,y,z%29.md)
 ### Getting the Acceleration Values
-- [var x: Double](cmacceleration/x.md)
+- [var x: Double](./cmacceleration/x.md)
   X-axis acceleration in G’s (gravitational force).
-- [var y: Double](cmacceleration/y.md)
+- [var y: Double](./cmacceleration/y.md)
   Y-axis acceleration in G’s (gravitational force).
-- [var z: Double](cmacceleration/z.md)
+- [var z: Double](./cmacceleration/z.md)
   Z-axis acceleration in G’s (gravitational force).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var acceleration: CMAcceleration](cmaccelerometerdata/acceleration.md)
+### Accessing Accelerometer Data
+- [var acceleration: CMAcceleration](./cmaccelerometerdata/acceleration.md)
   The acceleration measured by the accelerometer.
 
 

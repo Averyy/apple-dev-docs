@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string that identifies complications from the descriptor to the user.
 
@@ -14,15 +15,20 @@ A localized string that identifies complications from the descriptor to the user
 var displayName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * displayName;
+```
+
 ## See Also
 
-- [var identifier: String](clkcomplicationdescriptor/identifier.md)
+### Accessing the descriptor’s data
+- [var identifier: String](./identifier.md)
   A string that uniquely identifies the descriptor.
-- [var supportedFamilies: [CLKComplicationFamily]](clkcomplicationdescriptor/supportedfamilies-4ckbx.md)
+- [var supportedFamilies: [CLKComplicationFamily]](./supportedfamilies-4ckbx.md)
   The families that support this type of complication.
-- [var userActivity: NSUserActivity?](clkcomplicationdescriptor/useractivity.md)
+- [var userActivity: NSUserActivity?](./useractivity.md)
   A user activity object that represents the state of the app at a moment in time.
-- [var userInfo: [AnyHashable : Any]?](clkcomplicationdescriptor/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A dictionary of data that your data source can use to generate timeline entries.
 
 

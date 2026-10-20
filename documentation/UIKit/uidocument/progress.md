@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The upload or download progress of a document.
 
@@ -17,21 +18,26 @@ The upload or download progress of a document.
 var progress: Progress? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSProgress * progress;
+```
+
 #### Discussion
 
-The value of this property is valid while [`progressAvailable`](uidocument/state/progressavailable.md) is set.
+The value of this property is valid while [`progressAvailable`](./state/progressavailable.md) is set.
 
 ## See Also
 
-- [var fileURL: URL](uidocument/fileurl.md)
+### Accessing document attributes
+- [var fileURL: URL](./fileurl.md)
   The file URL you use to initialize the document.
-- [var localizedName: String](uidocument/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   The localized name of the document.
-- [var fileType: String?](uidocument/filetype.md)
+- [var fileType: String?](./filetype.md)
   The file type of the document.
-- [var fileModificationDate: Date?](uidocument/filemodificationdate.md)
+- [var fileModificationDate: Date?](./filemodificationdate.md)
   The date and time your app last modified the document file.
-- [var documentState: UIDocument.State](uidocument/documentstate.md)
+- [var documentState: UIDocument.State](./documentstate.md)
   The current state of the document.
 
 

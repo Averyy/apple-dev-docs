@@ -1,7 +1,8 @@
 # isSoftDotted
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar has a “soft dot” that disappears when a diacritic is placed over the scalar.
 
@@ -24,7 +25,7 @@ var isSoftDotted: Bool { get }
 
 For example, “i” is soft dotted because the dot disappears when adding an accent mark, as in “í”.
 
-This property corresponds to the “Soft_Dotted” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Soft_Dotted” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

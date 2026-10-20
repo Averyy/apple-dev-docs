@@ -1,7 +1,8 @@
 # pixelBufferAndDisplayTime(forItemTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves an image that is appropriate for display at the specified item time, and marks the image as acquired
 
@@ -33,9 +34,10 @@ The buffer retrieved from pixelBufferAndDisplayTime(forItemTime:) may itself be 
 
 ## See Also
 
-- [func hasNewPixelBuffer(forItemTime: CMTime) -> Bool](avplayeritemvideooutput/hasnewpixelbuffer(foritemtime:).md)
+### Getting pixel buffer data
+- [func hasNewPixelBuffer(forItemTime: CMTime) -> Bool](./hasnewpixelbuffer%28foritemtime%29.md)
   Returns a Boolean value that indicates whether video output is available for the specified item time.
-- [func copyPixelBuffer(forItemTime: CMTime, itemTimeForDisplay: UnsafeMutablePointer<CMTime>?) -> CVPixelBuffer?](avplayeritemvideooutput/copypixelbuffer(foritemtime:itemtimefordisplay:).md)
+- [func copyPixelBuffer(forItemTime: CMTime, itemTimeForDisplay: UnsafeMutablePointer<CMTime>?) -> CVPixelBuffer?](./copypixelbuffer%28foritemtime,itemtimefordisplay%29.md)
   Retrieves an image that is appropriate for display at the specified item time, and marks the image as acquired.
 
 

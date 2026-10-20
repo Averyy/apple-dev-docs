@@ -1,7 +1,8 @@
 # itemsPtr
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A C array of objects.
 
@@ -18,6 +19,10 @@ A C array of objects.
 
 ```swift
 var itemsPtr: AutoreleasingUnsafeMutablePointer<AnyObject?>?
+```
+
+```c
+id* itemsPtr;
 ```
 
 

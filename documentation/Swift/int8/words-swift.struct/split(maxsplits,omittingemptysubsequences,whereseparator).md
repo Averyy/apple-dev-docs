@@ -1,7 +1,8 @@
 # split(maxSplits:omittingEmptySubsequences:whereSeparator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
 
@@ -50,7 +51,7 @@ print(line.split(omittingEmptySubsequences: false, whereSeparator: { $0 == " " }
 // Prints "["BLANCHE:", "", "", "I", "don\'t", "want", "realism.", "I", "want", "magic!"]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

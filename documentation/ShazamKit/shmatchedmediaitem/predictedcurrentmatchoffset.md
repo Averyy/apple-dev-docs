@@ -1,7 +1,8 @@
 # predictedCurrentMatchOffset
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The updated timecode in the reference recording that matches the current playback position of the query audio, in seconds.
 
@@ -20,15 +21,28 @@ The updated timecode in the reference recording that matches the current playbac
 var predictedCurrentMatchOffset: TimeInterval { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval predictedCurrentMatchOffset;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) NSTimeInterval predictedCurrentMatchOffset;
+```
+
 ## Mentions
 
-- [Matching audio using the built-in microphone](matching-audio-using-the-built-in-microphone.md)
+- [Matching audio using the built-in microphone](../matching-audio-using-the-built-in-microphone.md)
 
 ## See Also
 
-- [var matchOffset: TimeInterval](shmatchedmediaitem/matchoffset.md)
+### Reading information about the match
+- [var matchOffset: TimeInterval](./matchoffset.md)
   The timecode in the reference recording that matches the start of the query, in seconds.
-- [var frequencySkew: Float](shmatchedmediaitem/frequencyskew.md)
+- [var frequencySkew: Float](./frequencyskew.md)
   A multiple for the difference in frequency between the matched audio and the query audio.
 
 

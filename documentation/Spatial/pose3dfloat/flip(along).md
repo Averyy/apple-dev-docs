@@ -1,7 +1,8 @@
 # flip(along:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flips the pose along the specified axis.
 

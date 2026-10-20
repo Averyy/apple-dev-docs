@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * name;
 ```
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a `PDFOutline` object.
 
@@ -19,11 +20,15 @@ Initializes a `PDFOutline` object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
 If you want the `PDFOutline` object returned by this method to be the outline root, you must add additional `PDFOutline` objects to create the outline hierarchy you desire. Then, you must add the root outline object to your PDF document by passing it to the `PDFDocument` `setOutlineRoot(_:)` method.
 
-If you want the `PDFOutline` object returned by this method to be a child of an existing outline, you must use `setLabel(_:)` to give it a label and give it either a destination or action using `setDestination(_:)` or `setAction(_:)`, respectively. In addition, you must add this outline object to the existing `PDFOutline` object as a new child, using [`insertChild(_:at:)`](pdfoutline/insertchild(_:at:).md)
+If you want the `PDFOutline` object returned by this method to be a child of an existing outline, you must use `setLabel(_:)` to give it a label and give it either a destination or action using `setDestination(_:)` or `setAction(_:)`, respectively. In addition, you must add this outline object to the existing `PDFOutline` object as a new child, using [`insertChild(_:at:)`](./insertchild%28_,at%29.md)
 
 
 ---

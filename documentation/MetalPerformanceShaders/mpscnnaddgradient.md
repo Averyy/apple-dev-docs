@@ -1,7 +1,8 @@
 # MPSCNNAddGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A gradient addition operator.
 
@@ -19,45 +20,50 @@ A gradient addition operator.
 class MPSCNNAddGradient
 ```
 
+```objc
+@interface MPSCNNAddGradient : MPSCNNArithmeticGradient
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, isSecondarySourceFilter: Bool)](mpscnnaddgradient/init(device:issecondarysourcefilter:).md)
+- [init(device: any MTLDevice, isSecondarySourceFilter: Bool)](./mpscnnaddgradient/init%28device,issecondarysourcefilter%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNArithmeticGradient](mpscnnarithmeticgradient.md)
+- [MPSCNNArithmeticGradient](./mpscnnarithmeticgradient.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNAdd](mpscnnadd.md)
+### Arithmetic Layers
+- [class MPSCNNAdd](./mpscnnadd.md)
   An addition operator.
-- [class MPSCNNSubtract](mpscnnsubtract.md)
+- [class MPSCNNSubtract](./mpscnnsubtract.md)
   A subtraction operator.
-- [class MPSCNNSubtractGradient](mpscnnsubtractgradient.md)
+- [class MPSCNNSubtractGradient](./mpscnnsubtractgradient.md)
   A gradient subtraction operator.
-- [class MPSCNNMultiply](mpscnnmultiply.md)
+- [class MPSCNNMultiply](./mpscnnmultiply.md)
   A multiply operator.
-- [class MPSCNNMultiplyGradient](mpscnnmultiplygradient.md)
+- [class MPSCNNMultiplyGradient](./mpscnnmultiplygradient.md)
   A gradient multiply operator.
-- [class MPSCNNDivide](mpscnndivide.md)
+- [class MPSCNNDivide](./mpscnndivide.md)
   A division operator.
-- [class MPSCNNArithmetic](mpscnnarithmetic.md)
+- [class MPSCNNArithmetic](./mpscnnarithmetic.md)
   The base class for arithmetic operators.
-- [class MPSCNNArithmeticGradient](mpscnnarithmeticgradient.md)
+- [class MPSCNNArithmeticGradient](./mpscnnarithmeticgradient.md)
   The base class for gradient arithmetic operators.
-- [class MPSCNNArithmeticGradientState](mpscnnarithmeticgradientstate.md)
+- [class MPSCNNArithmeticGradientState](./mpscnnarithmeticgradientstate.md)
   An object that stores the clamp mask used by gradient arithmetic operators.
 
 

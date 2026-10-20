@@ -1,7 +1,8 @@
 # interleaveLayout
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
 
@@ -20,17 +21,18 @@ var interleaveLayout: NDArray.InterleaveLayout? { get }
 
 #### Discussion
 
-See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md) for full documentation.
+See [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md) for full documentation.
 
 ## See Also
 
-- [var scalarType: NDArray.ScalarType](ndarray/mutablerawview/scalartype.md)
+### Inspecting the view
+- [var scalarType: NDArray.ScalarType](./scalartype.md)
   The scalar type of the ndArray.
-- [var shape: Span<Int>](ndarray/mutablerawview/shape.md)
+- [var shape: Span<Int>](./shape.md)
   The shape of the ndArray.
-- [var strides: Span<Int>](ndarray/mutablerawview/strides.md)
+- [var strides: Span<Int>](./strides.md)
   The strides of the ndArray.
-- [var mutableBytes: MutableRawSpan](ndarray/mutablerawview/mutablebytes.md)
+- [var mutableBytes: MutableRawSpan](./mutablebytes.md)
   A mutable span over the backing bytes of this tensor.
 
 

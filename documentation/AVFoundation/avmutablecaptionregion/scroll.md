@@ -1,7 +1,8 @@
 # scroll
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll mode of the region.
 
@@ -17,15 +18,20 @@ The scroll mode of the region.
 var scroll: AVCaptionRegion.Scroll { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AVCaptionRegionScroll scroll;
+```
+
 ## See Also
 
-- [var origin: AVCaptionPoint](avmutablecaptionregion/origin.md)
+### Configuring the region
+- [var origin: AVCaptionPoint](./origin.md)
   The region’s top-left position.
-- [var size: AVCaptionSize](avmutablecaptionregion/size.md)
+- [var size: AVCaptionSize](./size.md)
   The height and width of the region.
-- [var displayAlignment: AVCaptionRegion.DisplayAlignment](avmutablecaptionregion/displayalignment.md)
+- [var displayAlignment: AVCaptionRegion.DisplayAlignment](./displayalignment.md)
   The alignment of lines for the region.
-- [var writingMode: AVCaptionRegion.WritingMode](avmutablecaptionregion/writingmode.md)
+- [var writingMode: AVCaptionRegion.WritingMode](./writingmode.md)
   The block and inline progression direction of the region.
 
 

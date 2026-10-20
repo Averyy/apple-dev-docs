@@ -1,7 +1,8 @@
 # kSKIndexInvertedVector
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies an index type with all the capabilities of an inverted and a vector index.
 

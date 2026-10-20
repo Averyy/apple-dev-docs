@@ -1,7 +1,8 @@
 # Read Beta Tester Metrics for an App
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get usage metrics for beta testers of a specific app.
 
@@ -10,7 +11,7 @@ Get usage metrics for beta testers of a specific app.
 
 ## Mentions
 
-- [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
+- [App Store Connect API 3.1 release notes](./app-store-connect-api-3-1-release-notes.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ Get usage metrics for beta testers of a specific app.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/6447306070/metrics/betaTesterUsages?period=P365D&limit=5&groupBy=betaTesters
 ```
 
@@ -161,7 +162,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6447306070/metrics/betaTesterUsage
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/6448250830/metrics/betaTesterUsages?filter%5BbetaTesters%5D=cd082742-b2ec-4e63-b63f-6732f3e7abdd
 ```
 
@@ -216,13 +217,32 @@ https://api.appstoreconnect.apple.com/v1/apps/6448250830/metrics/betaTesterUsage
 
 ## Parameters
 
-- `filter[betaTesters]` (string): An opaque resource ID that uniquely identifies the resource. Obtain the betaTester resource ID from the [`List beta testers`](get-v1-betatesters.md) response.
-- `groupBy` ([string])
-- `limit` (integer)
-- `period` (string): - **`P7D`**: 7 days
-- **`P30D`**: 30 days
-- **`P90D`**: 90 days
-- **`P365D`**: 356 days
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
+- `filter[betaTesters]` (string): An opaque resource ID that uniquely identifies the resource. Obtain the betaTester resource ID from the [`List beta testers`](./get-v1-betatesters.md) response.
+- `groupBy` ([string]): **Allowed Values**: `betaTesters`
+- `limit` (integer): **Maximum**: `200`
+- `period` (string):
+
+  - **`P7D`**: 7 days
+  - **`P30D`**: 30 days
+  - **`P90D`**: 90 days
+  - **`P365D`**: 356 days
+
+  **Allowed Values**: `P7D`, `P30D`, `P90D`, `P365D`
+
+## Responses
+
+- `200` OK (`AppsBetaTesterUsagesV1MetricResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

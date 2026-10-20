@@ -1,7 +1,8 @@
 # splitViewControllerInteractivePresentationGestureWillBegin(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the interactive presentation gesture is about to begin.
 
@@ -18,9 +19,13 @@ Tells the delegate that the interactive presentation gesture is about to begin.
 optional func splitViewControllerInteractivePresentationGestureWillBegin(_ svc: UISplitViewController)
 ```
 
+```objc
+- (void) splitViewControllerInteractivePresentationGestureWillBegin:(UISplitViewController *) svc;
+```
+
 #### Discussion
 
-This delegate method only applies to column-style split view interfaces. For more information, see [`Split view styles`](uisplitviewcontroller#Split-view-styles.md).
+This delegate method only applies to column-style split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 
 The split view controller calls this method when the interactive presentation gesture is about to begin. Use this method for performance optimizations related to drawing the column content or other work related to handling the interactive gesture.
 
@@ -30,7 +35,8 @@ The split view controller calls this method when the interactive presentation ge
 
 ## See Also
 
-- [func splitViewControllerInteractivePresentationGestureDidEnd(UISplitViewController)](uisplitviewcontrollerdelegate/splitviewcontrollerinteractivepresentationgesturedidend(_:).md)
+### Handling the presentation gesture
+- [func splitViewControllerInteractivePresentationGestureDidEnd(UISplitViewController)](./splitviewcontrollerinteractivepresentationgesturedidend%28_%29.md)
   Tells the delegate when the interactive presentation gesture ends.
 
 

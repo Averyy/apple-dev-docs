@@ -1,7 +1,8 @@
 # pasteAndSearch(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pastes the current contents of the pasteboard into your app’s interface and performs a search.
 
@@ -18,6 +19,10 @@ Pastes the current contents of the pasteboard into your app’s interface and pe
 optional func pasteAndSearch(_ sender: Any?)
 ```
 
+```objc
+- (void) pasteAndSearch:(id) sender;
+```
+
 #### Discussion
 
 UIKit calls this method when the user selects the Paste and Search command from an editing menu. Your implementation should read the data from the pasteboard and begin a search based on the content.
@@ -28,17 +33,18 @@ UIKit calls this method when the user selects the Paste and Search command from 
 
 ## See Also
 
-- [func cut(Any?)](uiresponderstandardeditactions/cut(_:).md)
+### Handling copy, cut, paste, and delete commands
+- [func cut(Any?)](./cut%28_%29.md)
   Removes the selected content and writes the data for it to the pasteboard.
-- [func copy(Any?)](uiresponderstandardeditactions/copy(_:).md)
+- [func copy(Any?)](./copy%28_%29.md)
   Copies the selected content to the pasteboard.
-- [func paste(Any?)](uiresponderstandardeditactions/paste(_:).md)
+- [func paste(Any?)](./paste%28_%29.md)
   Pastes the current contents of the pasteboard into your app’s interface.
-- [func pasteAndGo(Any?)](uiresponderstandardeditactions/pasteandgo(_:).md)
+- [func pasteAndGo(Any?)](./pasteandgo%28_%29.md)
   Pastes the current contents of the pasteboard into your app’s interface and navigates to the entity it references.
-- [func pasteAndMatchStyle(Any?)](uiresponderstandardeditactions/pasteandmatchstyle(_:).md)
+- [func pasteAndMatchStyle(Any?)](./pasteandmatchstyle%28_%29.md)
   Pastes the current contents of the pasteboard into your app’s interface using the text style of the target.
-- [func delete(Any?)](uiresponderstandardeditactions/delete(_:).md)
+- [func delete(Any?)](./delete%28_%29.md)
   Removes the selected content from your interface.
 
 

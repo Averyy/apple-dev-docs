@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the state value that can be used to establish bindings between view content and accessibility focus placement.
 
@@ -22,13 +23,14 @@ var projectedValue: AccessibilityFocusState<Value>.Binding { get }
 
 #### Discussion
 
-Use `projectedValue` in conjunction with [`accessibilityFocused(_:equals:)`](view/accessibilityfocused(_:equals:).md) to establish bindings between view content and accessibility focus placement.
+Use `projectedValue` in conjunction with [`accessibilityFocused(_:equals:)`](../view/accessibilityfocused%28_,equals%29.md) to establish bindings between view content and accessibility focus placement.
 
 ## See Also
 
-- [var wrappedValue: Value](accessibilityfocusstate/wrappedvalue.md)
+### Getting the state
+- [var wrappedValue: Value](./wrappedvalue.md)
   The current state value, taking into account whatever bindings might be in effect due to the current location of focus.
-- [AccessibilityFocusState.Binding](accessibilityfocusstate/binding.md)
+- [AccessibilityFocusState.Binding](./binding.md)
 
 
 ---

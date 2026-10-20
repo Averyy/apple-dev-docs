@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ScatterMode
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify how scatter operations overwrite destination elements.
 
@@ -23,28 +24,28 @@ enum ScatterMode
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.ScatterMode.add](bnnsgraph/builder/scattermode/add.md)
+- [BNNSGraph.Builder.ScatterMode.add](./scattermode/add.md)
   The operation adds existing values to scattered values.
-- [BNNSGraph.Builder.ScatterMode.divide](bnnsgraph/builder/scattermode/divide.md)
+- [BNNSGraph.Builder.ScatterMode.divide](./scattermode/divide.md)
   The operation divides scattered values by existing values.
-- [BNNSGraph.Builder.ScatterMode.maximum](bnnsgraph/builder/scattermode/maximum.md)
+- [BNNSGraph.Builder.ScatterMode.maximum](./scattermode/maximum.md)
   The operation writes the maximum of the existing value and the scattered value.
-- [BNNSGraph.Builder.ScatterMode.minimum](bnnsgraph/builder/scattermode/minimum.md)
+- [BNNSGraph.Builder.ScatterMode.minimum](./scattermode/minimum.md)
   The operation writes the minimum of the existing value and the scattered value.
-- [BNNSGraph.Builder.ScatterMode.multiply](bnnsgraph/builder/scattermode/multiply.md)
+- [BNNSGraph.Builder.ScatterMode.multiply](./scattermode/multiply.md)
   The operation multiplies existing values by scattered values.
-- [BNNSGraph.Builder.ScatterMode.subtract](bnnsgraph/builder/scattermode/subtract.md)
+- [BNNSGraph.Builder.ScatterMode.subtract](./scattermode/subtract.md)
   The operation subtracts scattered values from existing values.
-- [BNNSGraph.Builder.ScatterMode.update](bnnsgraph/builder/scattermode/update.md)
+- [BNNSGraph.Builder.ScatterMode.update](./scattermode/update.md)
   The operation overwrites existing values with scattered values.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the receiver is equal to the specified date interval.
 
@@ -20,9 +21,13 @@ Indicates whether the receiver is equal to the specified date interval.
 func isEqual(to dateInterval: DateInterval) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToDateInterval:(NSDateInterval *) dateInterval;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the [`startDate`](nsdateinterval/startdate.md) and [`duration`](nsdateinterval/duration.md) of `dateInterval` and the receiver are equal. Otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the [`startDate`](./startdate.md) and [`duration`](./duration.md) of `dateInterval` and the receiver are equal. Otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ func isEqual(to dateInterval: DateInterval) -> Bool
 
 ## See Also
 
-- [func compare(DateInterval) -> ComparisonResult](nsdateinterval/compare(_:).md)
+### Comparing Date Intervals
+- [func compare(DateInterval) -> ComparisonResult](./compare%28_%29.md)
   Compares the receiver with the specified date interval.
 
 

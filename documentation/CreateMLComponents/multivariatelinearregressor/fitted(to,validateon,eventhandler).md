@@ -1,7 +1,8 @@
 # fitted(to:validateOn:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a linear regressor model to shaped arrays of features and annotations.
 
@@ -20,6 +21,12 @@ Fits a linear regressor model to shaped arrays of features and annotations.
 func fitted(to input: AnnotatedBatch<Scalar>, validateOn validation: AnnotatedBatch<Scalar>?, eventHandler: EventHandler? = nil) async throws -> MultivariateLinearRegressor<Scalar>.Model
 ```
 
+**Other overloads**:
+
+```swift
+func fitted(to input: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn validation: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler? = nil) async throws -> MultivariateLinearRegressor<Scalar>.Model
+```
+
 #### Return Value
 
 The fitted model.
@@ -32,7 +39,8 @@ The fitted model.
 
 ## See Also
 
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/fitted(to:eventhandler:).md)
+### Fitting
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](./fitted%28to,eventhandler%29.md)
   Fits a linear regressor model to a sequence of annotated features.
 
 

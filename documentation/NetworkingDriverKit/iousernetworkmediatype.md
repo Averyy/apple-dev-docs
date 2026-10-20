@@ -1,16 +1,17 @@
 # IOUserNetworkMediaType
 
 **Framework**: NetworkingDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A structure describing a specific Ethernet type and configuration that your driver supports.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserNetworkMediaType;
 ```
 
@@ -25,16 +26,17 @@ IOUserNetworkMediaType media_type = kIOUserNetworkMediaEthernet10BaseT | kIOUser
 ## Topics
 
 ### Configuring the Media Type Information
-- [Media Type Constants](media-type-constants.md)
+- [Media Type Constants](./media-type-constants.md)
   The types of networking media your driver supports.
-- [Configuration Options](configuration-options.md)
+- [Configuration Options](./configuration-options.md)
   The configuration options that you support for a specific network media type.
 
 ## See Also
 
-- [ReportAvailableMediaTypes](iousernetworkethernet/reportavailablemediatypes.md)
+### Declaring the Supported Media Types
+- [ReportAvailableMediaTypes](./iousernetworkethernet/reportavailablemediatypes.md)
   Tells the system what types of networking media your driver supports.
-- [SelectMediaType](iousernetworkethernet/selectmediatype.md)
+- [SelectMediaType](./iousernetworkethernet/selectmediatype.md)
   Selects the media type to use when communicating with the network stack.
 
 

@@ -1,7 +1,8 @@
 # isCompanionAppInstalled
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the companion has installed the app.
 
@@ -14,21 +15,26 @@ A Boolean value indicating whether the companion has installed the app.
 var isCompanionAppInstalled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCompanionAppInstalled) BOOL companionAppInstalled;
+```
+
 #### Discussion
 
 Use this property on independent watchOS apps to determine whether the paired iPhone has installed the app.
 
 ## See Also
 
-- [var isPaired: Bool](wcsession/ispaired.md)
+### Getting the Paired Device Information
+- [var isPaired: Bool](./ispaired.md)
   A Boolean indicating whether the current iPhone has a paired Apple Watch.
-- [var iOSDeviceNeedsUnlockAfterRebootForReachability: Bool](wcsession/iosdeviceneedsunlockafterrebootforreachability.md)
+- [var iOSDeviceNeedsUnlockAfterRebootForReachability: Bool](./iosdeviceneedsunlockafterrebootforreachability.md)
   A Boolean value indicating whether the paired iPhone must be in an unlocked state to be reachable.
-- [var isWatchAppInstalled: Bool](wcsession/iswatchappinstalled.md)
+- [var isWatchAppInstalled: Bool](./iswatchappinstalled.md)
   A Boolean value indicating whether the currently paired and active Apple Watch has installed the app.
-- [var isComplicationEnabled: Bool](wcsession/iscomplicationenabled.md)
+- [var isComplicationEnabled: Bool](./iscomplicationenabled.md)
   A Boolean value indicating whether the Watch app’s complication is in use on the currently paired and active Apple Watch.
-- [var watchDirectoryURL: URL?](wcsession/watchdirectoryurl.md)
+- [var watchDirectoryURL: URL?](./watchdirectoryurl.md)
   A directory for storing information specific to the currently paired and active Apple Watch.
 
 

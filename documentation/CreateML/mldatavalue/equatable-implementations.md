@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (MLDataValue, MLDataValue) -> Bool](mldatavalue/==(_:_:).md)
+- [static func == (MLDataValue, MLDataValue) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two data values wrap the same underlying value.
 
 

@@ -1,7 +1,8 @@
 # frames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of weights in which each element represents a discrete state of the target entity at a given point in the animation’s timeline.
 
@@ -19,9 +20,11 @@ An array of weights in which each element represents a discrete state of the tar
 var frames: [BlendShapeWeights] { get set }
 ```
 
+Available when `Value` is `BlendShapeWeights`.
+
 #### Discussion
 
-This array contains sequential values for the animated property when [`bindTarget`](animationdefinition/bindtarget.md) is an array of weights.
+This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of weights.
 
 
 ---

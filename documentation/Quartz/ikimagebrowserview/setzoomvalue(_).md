@@ -1,7 +1,8 @@
 # setZoomValue(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the zoom value.
 
@@ -14,9 +15,13 @@ Sets the zoom value.
 func setZoomValue(_ aValue: Float)
 ```
 
+```objc
+- (void) setZoomValue:(float) aValue;
+```
+
 #### Discussion
 
-You must use `setZoomValue` or [`setCellSize(_:)`](ikimagebrowserview/setcellsize(_:).md), but not both. Setting the zoom value changes the cell size, and vice versa.
+You must use `setZoomValue` or [`setCellSize(_:)`](./setcellsize%28_%29.md), but not both. Setting the zoom value changes the cell size, and vice versa.
 
 ## Parameters
 
@@ -24,13 +29,15 @@ You must use `setZoomValue` or [`setCellSize(_:)`](ikimagebrowserview/setcellsiz
 
 ## See Also
 
-- [func setCellSize(NSSize)](ikimagebrowserview/setcellsize(_:).md)
+### Related Documentation
+- [func setCellSize(NSSize)](./setcellsize%28_%29.md)
   Sets the cell  size.
-- [func zoomValue() -> Float](ikimagebrowserview/zoomvalue.md)
+### Zooming and Resizing
+- [func zoomValue() -> Float](./zoomvalue%28%29.md)
   Returns the current zoom value.
-- [func setContentResizingMask(Int)](ikimagebrowserview/setcontentresizingmask(_:).md)
+- [func setContentResizingMask(Int)](./setcontentresizingmask%28_%29.md)
   Determines how the receiver resizes its content when zooming.
-- [func contentResizingMask() -> Int](ikimagebrowserview/contentresizingmask.md)
+- [func contentResizingMask() -> Int](./contentresizingmask%28%29.md)
   Returns the receiver’s content resizing mask, which determines how its content is resized while zooming.
 
 

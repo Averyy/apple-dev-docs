@@ -1,7 +1,8 @@
 # kMERAWProcessorObjectNameKey
 
 **Framework**: MediaExtension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 18.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kMERAWProcessorObjectNameKey: String { get }
+```
+
+```c
+#define kMERAWProcessorObjectNameKey
 ```
 
 

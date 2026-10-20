@@ -1,18 +1,21 @@
 # availableTagSchemes(forLanguage:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the tag schemes available for a particular language on the current device.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 27.2
+- iPadOS 5.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.7+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: All NSLinguisticTagger API should be replaced with NaturalLanguage.framework API
 
 ## Declaration
 
@@ -20,13 +23,17 @@ Returns the tag schemes available for a particular language on the current devic
 class func availableTagSchemes(forLanguage language: String) -> [NSLinguisticTagScheme]
 ```
 
+```objc
++ (NSArray<NSString *> *) availableTagSchemesForLanguage:(NSString *) language;
+```
+
 #### Return Value
 
-The available tag schemes. For possible values, see [`NSLinguisticTagScheme`](nslinguistictagscheme.md).
+The available tag schemes. For possible values, see [`NSLinguisticTagScheme`](../nslinguistictagscheme.md).
 
 #### Discussion
 
-This is a convenience method for calling the [`availableTagSchemes(for:language:)`](nslinguistictagger/availabletagschemes(for:language:).md), passing [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md) as the linguistic unit.
+This is a convenience method for calling the [`availableTagSchemes(for:language:)`](./availabletagschemes%28for,language%29.md), passing [`NSLinguisticTaggerUnit.word`](../nslinguistictaggerunit/word.md) as the linguistic unit.
 
 ## Parameters
 
@@ -34,10 +41,11 @@ This is a convenience method for calling the [`availableTagSchemes(for:language:
 
 ## See Also
 
-- [class func availableTagSchemes(for: NSLinguisticTaggerUnit, language: String) -> [NSLinguisticTagScheme]](nslinguistictagger/availabletagschemes(for:language:).md)
+### Getting the Tag Schemes
+- [class func availableTagSchemes(for: NSLinguisticTaggerUnit, language: String) -> [NSLinguisticTagScheme]](./availabletagschemes%28for,language%29.md)
   Returns the tag schemes available for a particular unit and language on the current device.
-- [var tagSchemes: [NSLinguisticTagScheme]](nslinguistictagger/tagschemes.md)
-  Returns the tag schemes configured for this linguistic tagger. For possible values, see [`NSLinguisticTagScheme`](nslinguistictagscheme.md).
+- [var tagSchemes: [NSLinguisticTagScheme]](./tagschemes.md)
+  Returns the tag schemes configured for this linguistic tagger. For possible values, see [`NSLinguisticTagScheme`](../nslinguistictagscheme.md).
 
 
 ---

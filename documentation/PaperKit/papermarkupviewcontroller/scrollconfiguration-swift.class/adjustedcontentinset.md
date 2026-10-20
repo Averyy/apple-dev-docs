@@ -1,7 +1,8 @@
 # adjustedContentInset
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The insets that the system derives from the content insets and safe area insets.
 
@@ -23,11 +24,12 @@ When `contentInsetAdjustmentBehavior` allows, the scroll view may incorporate it
 
 ## See Also
 
-- [var contentInset: NSEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinset-1ktjn.md)
+### Configuring content insets
+- [var contentInset: NSEdgeInsets](./contentinset-1ktjn.md)
   The custom distance to inset the content view from the scroll view edges.
-- [var contentInset: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinset-3vn4v.md)
+- [var contentInset: UIEdgeInsets](./contentinset-3vn4v.md)
   The custom distance to inset the content view from the safe area or scroll view edges.
-- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinsetadjustmentbehavior.md)
+- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](./contentinsetadjustmentbehavior.md)
   The behavior for determining the adjusted content inset.
 
 

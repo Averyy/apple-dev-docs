@@ -1,10 +1,11 @@
 # lowercaseWord(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 optional func lowercaseWord(_ sender: Any?)
 ```
 
+```objc
+- (void) lowercaseWord:(id) sender;
+```
+
 ## See Also
 
-- [func capitalizeWord(Any?)](nsstandardkeybindingresponding/capitalizeword(_:).md)
-- [func changeCaseOfLetter(Any?)](nsstandardkeybindingresponding/changecaseofletter(_:).md)
-- [func uppercaseWord(Any?)](nsstandardkeybindingresponding/uppercaseword(_:).md)
+### Changing Capitalization
+- [func capitalizeWord(Any?)](./capitalizeword%28_%29.md)
+- [func changeCaseOfLetter(Any?)](./changecaseofletter%28_%29.md)
+- [func uppercaseWord(Any?)](./uppercaseword%28_%29.md)
 
 
 ---

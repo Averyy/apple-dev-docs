@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The magnitude of this value.
@@ -31,6 +32,12 @@ let x = -200
 ```
 
 The global `abs(_:)` function provides more familiar syntax when you need to find an absolute value. In addition, because `abs(_:)` always returns a value of the same type, even in a generic context, using the function instead of the `magnitude` property is encouraged.
+
+## Default Implementations
+
+### Numeric Implementations
+- [var magnitude: Self](./magnitude-5ma51.md)
+  The magnitude of this value.
 
 
 ---

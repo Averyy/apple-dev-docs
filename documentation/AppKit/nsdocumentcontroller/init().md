@@ -1,17 +1,22 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 This method is the designated initializer for `NSDocumentController`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ The first instance of `NSDocumentController` or any of its subclasses that is cr
 
 ## See Also
 
-- [init?(coder: NSCoder)](nsdocumentcontroller/init(coder:).md)
+### Initializing a New NSDocumentController
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   This method initializes a new NSDocumentController from the coder.
 
 

@@ -1,7 +1,8 @@
 # init(naturalLanguageQuery:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a local search request based on the provided string.
 
@@ -20,13 +21,18 @@ Initializes and returns a local search request based on the provided string.
 convenience init(naturalLanguageQuery: String)
 ```
 
+```objc
+- (instancetype) initWithNaturalLanguageQuery:(NSString *) naturalLanguageQuery;
+```
+
 ## Parameters
 
 - `naturalLanguageQuery`: A string containing the desired search item.
 
 ## See Also
 
-- [convenience init(naturalLanguageQuery: String, region: MKCoordinateRegion)](mklocalsearch/request/init(naturallanguagequery:region:).md)
+### Initializing a natural language search request
+- [convenience init(naturalLanguageQuery: String, region: MKCoordinateRegion)](./init%28naturallanguagequery,region%29.md)
   Initializes and returns a local search request based on the provided string and region.
 
 

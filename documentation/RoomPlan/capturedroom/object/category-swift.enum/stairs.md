@@ -1,7 +1,8 @@
 # CapturedRoom.Object.Category.stairs
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A category for an object that represents stairs.
 
@@ -18,35 +19,36 @@ case stairs
 
 ## See Also
 
-- [CapturedRoom.Object.Category.bathtub](capturedroom/object/category-swift.enum/bathtub.md)
+### Determining the object category
+- [CapturedRoom.Object.Category.bathtub](./bathtub.md)
   A category for an object that represents a bathtub.
-- [CapturedRoom.Object.Category.bed](capturedroom/object/category-swift.enum/bed.md)
+- [CapturedRoom.Object.Category.bed](./bed.md)
   A category for an object that represents a bed.
-- [CapturedRoom.Object.Category.chair](capturedroom/object/category-swift.enum/chair.md)
+- [CapturedRoom.Object.Category.chair](./chair.md)
   A category for an object that represents a chair.
-- [CapturedRoom.Object.Category.dishwasher](capturedroom/object/category-swift.enum/dishwasher.md)
+- [CapturedRoom.Object.Category.dishwasher](./dishwasher.md)
   A category for an object that represents a dishwasher.
-- [CapturedRoom.Object.Category.fireplace](capturedroom/object/category-swift.enum/fireplace.md)
+- [CapturedRoom.Object.Category.fireplace](./fireplace.md)
   A category for an object that represents a fireplace.
-- [CapturedRoom.Object.Category.oven](capturedroom/object/category-swift.enum/oven.md)
+- [CapturedRoom.Object.Category.oven](./oven.md)
   A category for an object that represents an oven.
-- [CapturedRoom.Object.Category.refrigerator](capturedroom/object/category-swift.enum/refrigerator.md)
+- [CapturedRoom.Object.Category.refrigerator](./refrigerator.md)
   A category for an object that represents a refrigerator.
-- [CapturedRoom.Object.Category.sink](capturedroom/object/category-swift.enum/sink.md)
+- [CapturedRoom.Object.Category.sink](./sink.md)
   A category for an object that represents a sink.
-- [CapturedRoom.Object.Category.sofa](capturedroom/object/category-swift.enum/sofa.md)
+- [CapturedRoom.Object.Category.sofa](./sofa.md)
   A category for an object that represents a sofa.
-- [CapturedRoom.Object.Category.storage](capturedroom/object/category-swift.enum/storage.md)
+- [CapturedRoom.Object.Category.storage](./storage.md)
   A category for an object that represents a storage area.
-- [CapturedRoom.Object.Category.stove](capturedroom/object/category-swift.enum/stove.md)
+- [CapturedRoom.Object.Category.stove](./stove.md)
   A category for an object that represents a stove.
-- [CapturedRoom.Object.Category.table](capturedroom/object/category-swift.enum/table.md)
+- [CapturedRoom.Object.Category.table](./table.md)
   A category for an object that represents a table.
-- [CapturedRoom.Object.Category.television](capturedroom/object/category-swift.enum/television.md)
+- [CapturedRoom.Object.Category.television](./television.md)
   A category for an object that represents a television.
-- [CapturedRoom.Object.Category.toilet](capturedroom/object/category-swift.enum/toilet.md)
+- [CapturedRoom.Object.Category.toilet](./toilet.md)
   A category for an object that represents a toilet.
-- [CapturedRoom.Object.Category.washerDryer](capturedroom/object/category-swift.enum/washerdryer.md)
+- [CapturedRoom.Object.Category.washerDryer](./washerdryer.md)
   A category for an object that represents a clothes washer or dryer.
 
 

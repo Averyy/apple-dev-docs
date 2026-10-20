@@ -1,7 +1,8 @@
 # Entity.ComponentSet
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of components that an entity stores.
 
@@ -11,7 +12,7 @@ A collection of components that an entity stores.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,9 +25,9 @@ A collection of components that an entity stores.
 
 A `ComponentSet` represents all the components that an entity holds. Use this set to add, remove, and update components on an entity. This set can hold one component of each type.
 
-Access the `ComponentSet` of an [`Entity`](entity.md) using its [`components`](entity/components.md) property.
+Access the `ComponentSet` of an [`Entity`](../entity.md) using its [`components`](./components.md) property.
 
-`ComponentSet` conforms to [`Sequence`](https://developer.apple.com/documentation/swift/sequence), allowing you to iterate over it to access and use each component, as the example below shows:
+`ComponentSet` conforms to [`Sequence`](../../Swift/sequence.md), allowing you to iterate over it to access and use each component, as the example below shows:
 
 ```swift
 for component in entity.components {
@@ -37,64 +38,65 @@ for component in entity.components {
 ## Topics
 
 ### Updating the set
-- [func set<T>(T)](entity/componentset/set(_:)-8sii2.md)
+- [func set<T>(T)](./componentset/set%28_%29-8sii2.md)
   Adds a new component to the set, or overrides an existing one.
-- [func set([any Component])](entity/componentset/set(_:)-2qzsc.md)
+- [func set([any Component])](./componentset/set%28_%29-2qzsc.md)
   Adds multiple components to the set, overriding any existing components of the same type.
-- [func remove(any Component.Type)](entity/componentset/remove(_:).md)
+- [func remove(any Component.Type)](./componentset/remove%28_%29.md)
   Removes the component of the specified type from the collection.
-- [func removeAll()](entity/componentset/removeall.md)
+- [func removeAll()](./componentset/removeall%28%29.md)
   Removes all components from the collection.
 ### Accessing members
-- [subscript<T>(T.Type) -> T?](entity/componentset/subscript(_:)-5wdsf.md)
+- [subscript<T>(T.Type) -> T?](./componentset/subscript%28_%29-5wdsf.md)
   Gets or sets the component of the specified type.
-- [subscript(any Component.Type) -> (any Component)?](entity/componentset/subscript(_:)-47rhg.md)
+- [subscript(any Component.Type) -> (any Component)?](./componentset/subscript%28_%29-47rhg.md)
   Gets or sets the component with a specific dynamically supplied type.
 ### Checking for membership
-- [func has(any Component.Type) -> Bool](entity/componentset/has(_:).md)
+- [func has(any Component.Type) -> Bool](./componentset/has%28_%29.md)
   Returns a Boolean value that indicates whether the set contains a component of the given type.
 ### Accessing components
-- [subscript<T>(componentType _: T.Type) -> T?](entity/componentset/subscript(componenttype:)-8y2jv.md)
+- [subscript<T>(componentType _: T.Type) -> T?](./componentset/subscript%28componenttype%29-8y2jv.md)
   Gets or sets the component of the specified type.
-- [subscript<T>(T.Type, Void) -> T?](entity/componentset/subscript(_:_:)-404se.md)
+- [subscript<T>(T.Type, Void) -> T?](./componentset/subscript%28_,_%29-404se.md)
   Gets or sets the component of the specified type.
 ### Accessing animatable components
-- [subscript<T>(componentType _: T.Type) -> T?](entity/componentset/subscript(componenttype:)-3miek.md)
-- [subscript<T>(T.Type, Void) -> T?](entity/componentset/subscript(_:_:)-b2gl.md)
-- [subscript<T>(withoutAnimation _: T.Type) -> T?](entity/componentset/subscript(withoutanimation:).md)
+- [subscript<T>(componentType _: T.Type) -> T?](./componentset/subscript%28componenttype%29-3miek.md)
+- [subscript<T>(T.Type, Void) -> T?](./componentset/subscript%28_,_%29-b2gl.md)
+- [subscript<T>(withoutAnimation _: T.Type) -> T?](./componentset/subscript%28withoutanimation%29.md)
   Gets or sets the component of the specified type, without considering implicit animations.
 ### Setting components by name
-- [func set(qualifiedComponentName: String, representation: some Encodable) throws](entity/componentset/set(qualifiedcomponentname:representation:).md)
+- [func set(qualifiedComponentName: String, representation: some Encodable) throws](./componentset/set%28qualifiedcomponentname,representation%29.md)
   Adds component data to an entity that is written to a Reality file but has no other effect at author time.
 ### Instance Properties
-- [var count: Int](entity/componentset/count.md)
+- [var count: Int](./componentset/count.md)
   The number of components in the collection.
-- [var entity: Entity](entity/componentset/entity.md)
+- [var entity: Entity](./componentset/entity.md)
 ### Instance Methods
-- [func set(_:)](entity/componentset/set(_:).md)
+- [func set(_:)](./componentset/set%28_%29.md)
   Adds multiple components to the set, overriding any existing components of the same type.
 ### Subscripts
-- [subscript(_:)](entity/componentset/subscript(_:).md)
+- [subscript(_:)](./componentset/subscript%28_%29.md)
   Gets or sets the component with a specific dynamically supplied type.
-- [subscript(_:_:)](entity/componentset/subscript(_:_:).md)
+- [subscript(_:_:)](./componentset/subscript%28_,_%29.md)
   Gets or sets the component of the specified type.
-- [subscript(componentType:)](entity/componentset/subscript(componenttype:).md)
+- [subscript(componentType:)](./componentset/subscript%28componenttype%29.md)
   Gets or sets the component of the specified type.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var components: Entity.ComponentSet](entity/components.md)
+### Managing components
+- [var components: Entity.ComponentSet](./components.md)
   All the components that an entity stores.
 
 

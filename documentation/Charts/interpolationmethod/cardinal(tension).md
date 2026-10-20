@@ -1,7 +1,8 @@
 # cardinal(tension:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Interpolate data points with cardinal spline, using the given tension parameter.
 

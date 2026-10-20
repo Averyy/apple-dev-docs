@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for this attachment.
 

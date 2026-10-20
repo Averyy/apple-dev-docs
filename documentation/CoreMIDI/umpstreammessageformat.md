@@ -1,16 +1,17 @@
 # UMPStreamMessageFormat
 
 **Framework**: Core MIDI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,44 +19,49 @@
 enum UMPStreamMessageFormat
 ```
 
+```c
+enum UMPStreamMessageFormat : UInt8;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UMPStreamMessageFormat.complete](umpstreammessageformat/complete.md)
-- [UMPStreamMessageFormat.continuing](umpstreammessageformat/continuing.md)
-- [UMPStreamMessageFormat.end](umpstreammessageformat/end.md)
-- [UMPStreamMessageFormat.start](umpstreammessageformat/start.md)
+- [UMPStreamMessageFormat.complete](./umpstreammessageformat/complete.md)
+- [UMPStreamMessageFormat.continuing](./umpstreammessageformat/continuing.md)
+- [UMPStreamMessageFormat.end](./umpstreammessageformat/end.md)
+- [UMPStreamMessageFormat.start](./umpstreammessageformat/start.md)
 ### Initializers
-- [init?(rawValue: UInt8)](umpstreammessageformat/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./umpstreammessageformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var kMIDIInvalidUniqueID: MIDIUniqueID](kmidiinvaliduniqueid.md)
+### Enumerations
+- [var kMIDIInvalidUniqueID: MIDIUniqueID](./kmidiinvaliduniqueid.md)
   An invalid identifier.
-- [struct MIDICICategoryOptions](midicicategoryoptions.md)
-- [enum MIDICIDeviceType](midicidevicetype.md)
-- [enum MIDICIManagementMessageType](midicimanagementmessagetype.md)
-- [enum MIDICIProcessInquiryMessageType](midiciprocessinquirymessagetype.md)
-- [enum MIDICIProfileMessageType](midiciprofilemessagetype.md)
-- [enum MIDICIProfileType](midiciprofiletype.md)
-- [enum MIDICIPropertyExchangeMessageType](midicipropertyexchangemessagetype.md)
-- [enum MIDINetworkConnectionPolicy](midinetworkconnectionpolicy.md)
-- [enum MIDINoteAttribute](midinoteattribute.md)
-- [struct MIDIPerNoteManagementOptions](midipernotemanagementoptions.md)
-- [struct MIDIProgramChangeOptions](midiprogramchangeoptions.md)
-- [enum MIDIUMPCIObjectBackingType](midiumpciobjectbackingtype.md)
-- [enum MIDIUMPFunctionBlockDirection](midiumpfunctionblockdirection.md)
-- [enum MIDIUMPFunctionBlockMIDI1Info](midiumpfunctionblockmidi1info.md)
+- [struct MIDICICategoryOptions](./midicicategoryoptions.md)
+- [enum MIDICIDeviceType](./midicidevicetype.md)
+- [enum MIDICIManagementMessageType](./midicimanagementmessagetype.md)
+- [enum MIDICIProcessInquiryMessageType](./midiciprocessinquirymessagetype.md)
+- [enum MIDICIProfileMessageType](./midiciprofilemessagetype.md)
+- [enum MIDICIProfileType](./midiciprofiletype.md)
+- [enum MIDICIPropertyExchangeMessageType](./midicipropertyexchangemessagetype.md)
+- [enum MIDINetworkConnectionPolicy](./midinetworkconnectionpolicy.md)
+- [enum MIDINoteAttribute](./midinoteattribute.md)
+- [struct MIDIPerNoteManagementOptions](./midipernotemanagementoptions.md)
+- [struct MIDIProgramChangeOptions](./midiprogramchangeoptions.md)
+- [enum MIDIUMPCIObjectBackingType](./midiumpciobjectbackingtype.md)
+- [enum MIDIUMPFunctionBlockDirection](./midiumpfunctionblockdirection.md)
+- [enum MIDIUMPFunctionBlockMIDI1Info](./midiumpfunctionblockmidi1info.md)
 
 
 ---

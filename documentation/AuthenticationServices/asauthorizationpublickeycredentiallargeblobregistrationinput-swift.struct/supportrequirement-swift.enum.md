@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that express the level of support required for the binary large object passkey extension.
 
@@ -21,18 +22,19 @@ enum SupportRequirement
 ## Topics
 
 ### Supporting requirement values
-- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.preferred](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.enum/preferred.md)
-- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.required](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.enum/required.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.preferred](./supportrequirement-swift.enum/preferred.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.required](./supportrequirement-swift.enum/required.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var supportRequirement: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.property.md)
+### Determining binary large object support
+- [var supportRequirement: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement](./supportrequirement-swift.property.md)
   A type that represents the level of support required for the large binary object passkey extension.
 
 

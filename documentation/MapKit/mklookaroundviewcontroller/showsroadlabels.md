@@ -1,7 +1,8 @@
 # showsRoadLabels
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the map display road labels.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the map display road labels.
 var showsRoadLabels: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL showsRoadLabels;
+```
+
 ## See Also
 
-- [var isNavigationEnabled: Bool](mklookaroundviewcontroller/isnavigationenabled.md)
+### Customizing the LookAround display
+- [var isNavigationEnabled: Bool](./isnavigationenabled.md)
   A Boolean value that indicates whether the map’s navigation controls are visible.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklookaroundviewcontroller/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   The filter used to determine the points of interest shown on the map.
-- [var badgePosition: MKLookAroundBadgePosition](mklookaroundviewcontroller/badgeposition.md)
+- [var badgePosition: MKLookAroundBadgePosition](./badgeposition.md)
   A value that indicates the badge’s position on the LookAround view.
-- [enum MKLookAroundBadgePosition](mklookaroundbadgeposition.md)
+- [enum MKLookAroundBadgePosition](../mklookaroundbadgeposition.md)
   Constants that control the position of badges on LookAround views.
 
 

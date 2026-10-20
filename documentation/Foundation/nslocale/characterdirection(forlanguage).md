@@ -1,7 +1,8 @@
 # characterDirection(forLanguage:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the direction of the sequence of characters in a line for the specified ISO language code.
 
@@ -20,9 +21,13 @@ Returns the direction of the sequence of characters in a line for the specified 
 class func characterDirection(forLanguage isoLangCode: String) -> NSLocale.LanguageDirection
 ```
 
+```objc
++ (NSLocaleLanguageDirection) characterDirectionForLanguage:(NSString *) isoLangCode;
+```
+
 #### Return Value
 
-Returns the direction in which characters appear within a line in the specified language. See [`NSLocale.LanguageDirection`](nslocale/languagedirection.md) for possible values. If the appropriate direction can’t be determined [`NSLocale.LanguageDirection.unknown`](nslocale/languagedirection/unknown.md) is returned.
+Returns the direction in which characters appear within a line in the specified language. See [`NSLocale.LanguageDirection`](./languagedirection.md) for possible values. If the appropriate direction can’t be determined [`NSLocale.LanguageDirection.unknown`](./languagedirection/unknown.md) is returned.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ Returns the direction in which characters appear within a line in the specified 
 
 ## See Also
 
-- [class func lineDirection(forLanguage: String) -> NSLocale.LanguageDirection](nslocale/linedirection(forlanguage:).md)
+### Getting Line and Character Direction for a Language
+- [class func lineDirection(forLanguage: String) -> NSLocale.LanguageDirection](./linedirection%28forlanguage%29.md)
   Returns the direction of the sequence of lines for the specified ISO language code.
-- [NSLocale.LanguageDirection](nslocale/languagedirection.md)
+- [NSLocale.LanguageDirection](./languagedirection.md)
   The directions that a language may take across a page of text.
 
 

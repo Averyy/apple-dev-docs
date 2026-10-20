@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The collection of pages in this document.
@@ -10,7 +11,7 @@ The collection of pages in this document.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ This can only be changed using the corresponding view object.
 
 ## See Also
 
-- [associatedtype Page : MergeableDocumentPage](mergeabledocument/page.md)
+### Getting the pages
+- [associatedtype Page : MergeableDocumentPage](./page.md)
   The page type this document contains.
 
 

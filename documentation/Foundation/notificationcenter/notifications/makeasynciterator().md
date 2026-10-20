@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -26,7 +27,8 @@ An instance of the `AsyncIterator` type used to produce elements of the asynchro
 
 ## See Also
 
-- [NotificationCenter.Notifications.Iterator](notificationcenter/notifications/iterator.md)
+### Creating an Iterator
+- [NotificationCenter.Notifications.Iterator](./iterator.md)
   The asynchronous iterator created by this asynchronous sequence.
 
 

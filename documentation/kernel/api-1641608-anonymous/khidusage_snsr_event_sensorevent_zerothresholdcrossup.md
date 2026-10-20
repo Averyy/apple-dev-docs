@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Event_SensorEvent_ZeroThresholdCrossUp
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Event_SensorEvent_ZeroThresholdCrossUp = 0x081C
 ```
 

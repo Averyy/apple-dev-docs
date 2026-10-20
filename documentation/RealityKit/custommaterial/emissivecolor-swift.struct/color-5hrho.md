@@ -1,7 +1,8 @@
 # color
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -17,9 +18,10 @@ var color: UIColor { get set }
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/emissivecolor-swift.struct/texture.md)
+### Accessing emissive color data
+- [var texture: CustomMaterial.Texture?](./texture.md)
   An optional image texture that defines the color of light emission.
-- [var color: NSColor](custommaterial/emissivecolor-swift.struct/color-9scic.md)
+- [var color: NSColor](./color-9scic.md)
 
 
 ---

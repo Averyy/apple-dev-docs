@@ -1,7 +1,8 @@
 # ScaleDomain
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that you can use to configure the domain of a chart.
 
@@ -24,15 +25,15 @@ protocol ScaleDomain
 
 A type you use to configure the domain of a chart scale.
 
-#### Including Zero in Number Scales
+#### Including zero in number scales
 
 By default, number scales include zero in the domain to ensure charts follow the best practice to include a zero baseline in bar charts.
 
-![Horizontal bar chart with y-axis showing categories A, B, and C and x-axis ranging from 0 to 15. There are three bars: A 5, B 10, C 15.](/images/com.apple.Charts/Scales.ChartWithDefaultCategoryDomain@2x.png)
+![Horizontal bar chart with y-axis showing categories A, B, and C and x-axis ranging from 0 to 15. There are three bars: A 5, B 10, C 15.](https://developer.apple.com/tutorials/images/com.apple.Charts/Scales.ChartWithDefaultCategoryDomain@2x.png)
 
 For other marks, this zero baseline isn’t as important, but the framework includes zero by default so the domain inference logic is consistent and deterministic.  Changing the mark type won’t suddenly affect scale domain.
 
-![Horizontal dot plot with x-axis ranging from 0 to 100. It has 5 dots, at 12, 20, 50, 70, and 85.](/images/com.apple.Charts/ExNumberScale@2x.png)
+![Horizontal dot plot with x-axis ranging from 0 to 100. It has 5 dots, at 12, 20, 50, 70, and 85.](https://developer.apple.com/tutorials/images/com.apple.Charts/ExNumberScale@2x.png)
 
 If you don’t want to include the zero baseline in certain cases, use `automatic(includeszero:reversed:)` to customize the scale domain and disable the automatic zero inclusion.
 
@@ -45,9 +46,9 @@ Chart([20, 30, 50, 70, 85], id: \.self) {
 .chartXScale(domain: .automatic(includesZero: false))
 ```
 
-![Horizontal dot plot with x-axis ranging from 20 to 100. It has 5 dots, at 20, 30, 50, 70, and 85.](/images/com.apple.Charts/ScaleDomain.ChartWithNumberScaleExcludingZero@2x.png)
+![Horizontal dot plot with x-axis ranging from 20 to 100. It has 5 dots, at 20, 30, 50, 70, and 85.](https://developer.apple.com/tutorials/images/com.apple.Charts/ScaleDomain.ChartWithNumberScaleExcludingZero@2x.png)
 
-#### Reversing the Order of Inferred Domain
+#### Reversing the order of inferred domain
 
 You can also reverse the order of the inferred domain:
 
@@ -60,35 +61,36 @@ Chart([20, 30, 50, 70, 85], id: \.self) {
 .chartXScale(domain: .automatic(reversed: true))
 ```
 
-![Horizontal dot plot with x-axis ranging from 100 to 0. It has 5 dots, at 85, 70, 50, 30, and 20.](/images/com.apple.Charts/ScaleDomain.ChartWithNumberScaleReversed@2x.png)
+![Horizontal dot plot with x-axis ranging from 100 to 0. It has 5 dots, at 85, 70, 50, 30, and 20.](https://developer.apple.com/tutorials/images/com.apple.Charts/ScaleDomain.ChartWithNumberScaleReversed@2x.png)
 
 ## Topics
 
 ### Type Properties
-- [static var automatic: AutomaticScaleDomain](scaledomain/automatic.md)
+- [static var automatic: AutomaticScaleDomain](./scaledomain/automatic.md)
   Creates a scale domain configuration that infers the scale domain from data.
 ### Type Methods
-- [static func automatic(includesZero: Bool?, reversed: Bool?) -> AutomaticScaleDomain](scaledomain/automatic(includeszero:reversed:).md)
+- [static func automatic(includesZero: Bool?, reversed: Bool?) -> AutomaticScaleDomain](./scaledomain/automatic%28includeszero,reversed%29.md)
   Creates a scale domain configuration that infers the scale domain from data.
-- [static func automatic<DataValue>(includesZero: Bool?, reversed: Bool?, dataType: DataValue.Type, modifyInferredDomain: (inout [DataValue]) -> Void) -> AutomaticScaleDomain](scaledomain/automatic(includeszero:reversed:datatype:modifyinferreddomain:).md)
+- [static func automatic<DataValue>(includesZero: Bool?, reversed: Bool?, dataType: DataValue.Type, modifyInferredDomain: (inout [DataValue]) -> Void) -> AutomaticScaleDomain](./scaledomain/automatic%28includeszero,reversed,datatype,modifyinferreddomain%29.md)
   Creates a scale domain configuration that infers the scale domain from data.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticScaleDomain](automaticscaledomain.md)
+- [AutomaticScaleDomain](./automaticscaledomain.md)
 
 ## See Also
 
-- [protocol ScaleRange](scalerange.md)
+### Scales
+- [protocol ScaleRange](./scalerange.md)
   A type that you can use to configure the range of a chart.
-- [protocol PositionScaleRange](positionscalerange.md)
+- [protocol PositionScaleRange](./positionscalerange.md)
   A type that configures the x-axis and y-axis values.
-- [struct PlotDimensionScaleRange](plotdimensionscalerange.md)
+- [struct PlotDimensionScaleRange](./plotdimensionscalerange.md)
   A range that represents the plot area’s width or height.
-- [struct AutomaticScaleDomain](automaticscaledomain.md)
+- [struct AutomaticScaleDomain](./automaticscaledomain.md)
   A domain that the chart infers from its data.
-- [struct ScaleType](scaletype.md)
+- [struct ScaleType](./scaletype.md)
   The ways you can scale the domain or range of a plot.
 
 

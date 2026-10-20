@@ -1,7 +1,8 @@
 # vfs_setflags
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Set flags on a mount.
 
@@ -10,11 +11,11 @@ Set flags on a mount.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setflags(mount_t mp, uint64_t flags);
 ```
 
-#### Return_value
+#### Return Value
 
 Flags.
 

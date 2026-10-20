@@ -1,7 +1,8 @@
 # streamLatency
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 17.4+
@@ -13,9 +14,14 @@
 static let streamLatency: CMIOExtensionProperty
 ```
 
+```c
+extern CMIOExtensionProperty const CMIOExtensionPropertyStreamLatency;
+```
+
 ## See Also
 
-- [static let deviceLatency: CMIOExtensionProperty](cmioextensionproperty/devicelatency.md)
+### Type Properties
+- [static let deviceLatency: CMIOExtensionProperty](./devicelatency.md)
 
 
 ---

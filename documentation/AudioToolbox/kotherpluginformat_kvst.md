@@ -1,10 +1,11 @@
 # kOtherPluginFormat_kVST
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kOtherPluginFormat_kVST: UInt32 { get }
 ```
 
+```c
+kOtherPluginFormat_kVST
+```
+
 ## See Also
 
-- [var kOtherPluginFormat_AU: UInt32](kotherpluginformat_au.md)
-- [var kOtherPluginFormat_Undefined: UInt32](kotherpluginformat_undefined.md)
-- [var kOtherPluginFormat_kMAS: UInt32](kotherpluginformat_kmas.md)
+### Constants
+- [var kOtherPluginFormat_AU: UInt32](./kotherpluginformat_au.md)
+- [var kOtherPluginFormat_Undefined: UInt32](./kotherpluginformat_undefined.md)
+- [var kOtherPluginFormat_kMAS: UInt32](./kotherpluginformat_kmas.md)
 
 
 ---

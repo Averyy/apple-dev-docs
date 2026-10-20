@@ -1,10 +1,11 @@
 # WebKitErrorCannotShowMIMEType
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var WebKitErrorCannotShowMIMEType: Int { get }
 ```
 
+```c
+WebKitErrorCannotShowMIMEType
+```
+
 ## See Also
 
-- [var WebKitErrorCannotShowURL: Int](webkiterrorcannotshowurl.md)
-- [var WebKitErrorFrameLoadInterruptedByPolicyChange: Int](webkiterrorframeloadinterruptedbypolicychange.md)
+### Constants
+- [var WebKitErrorCannotShowURL: Int](./webkiterrorcannotshowurl.md)
+- [var WebKitErrorFrameLoadInterruptedByPolicyChange: Int](./webkiterrorframeloadinterruptedbypolicychange.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # modelContext
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SwiftData model context that will be used for queries and other model operations within this environment.
 
@@ -21,16 +22,17 @@ var modelContext: ModelContext { get set }
 
 ## See Also
 
-- [var calendar: Calendar](environmentvalues/calendar.md)
+### Global objects
+- [var calendar: Calendar](./calendar.md)
   The current calendar that views should use when handling dates.
-- [var documentConfiguration: DocumentConfiguration?](environmentvalues/documentconfiguration.md)
-  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
-- [var locale: Locale](environmentvalues/locale.md)
+- [var documentConfiguration: DocumentConfiguration?](./documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](../documentgroup.md).
+- [var locale: Locale](./locale.md)
   The current locale that views should use.
-- [var managedObjectContext: NSManagedObjectContext](environmentvalues/managedobjectcontext.md)
-- [var timeZone: TimeZone](environmentvalues/timezone.md)
+- [var managedObjectContext: NSManagedObjectContext](./managedobjectcontext.md)
+- [var timeZone: TimeZone](./timezone.md)
   The current time zone that views should use when handling dates.
-- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
+- [var undoManager: UndoManager?](./undomanager.md)
   The undo manager used to register a view’s undo operations.
 
 

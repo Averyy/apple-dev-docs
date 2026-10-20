@@ -1,7 +1,8 @@
 # init(receiveSubscription:receiveValue:receiveCompletion:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type-erasing subscriber that executes the provided closures.
 
@@ -28,9 +29,10 @@ init(receiveSubscription: ((any Subscription) -> Void)? = nil, receiveValue: ((I
 
 ## See Also
 
-- [init<S>(S)](anysubscriber/init(_:)-2dbfs.md)
+### Creating a type-erased subscriber
+- [init<S>(S)](./init%28_%29-2dbfs.md)
   Creates a type-erasing subscriber to wrap an existing subscriber.
-- [init<S>(S)](anysubscriber/init(_:)-3t3eh.md)
+- [init<S>(S)](./init%28_%29-3t3eh.md)
   Creates a type-erasing subscriber to wrap an existing subscriber.
 
 

@@ -1,7 +1,8 @@
 # init(group:mask:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collision filter.
 
@@ -11,7 +12,7 @@ Creates a collision filter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ init(group: CollisionGroup, mask: CollisionGroup)
 
 #### Discussion
 
-Collision filters are created for the collision group specified in the `group` parameter. The `mask` parameter defines which objects will collide with the objects that use this filter. Because [`CollisionGroup`](collisiongroup.md) conforms to [`OptionSet`](https://developer.apple.com/documentation/swift/optionset), you can specify any combination of collision groups in the `mask` parameter by using the various [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) methods like `CollisionGroup/union(_:)`, `CollisionGroup/subtracting(_:)`, and `CollisionGroup/intersection(_:)`. Entities from any group contained in `mask` will collide with entities using this filter, while those not contained by `mask` will not.
+Collision filters are created for the collision group specified in the `group` parameter. The `mask` parameter defines which objects will collide with the objects that use this filter. Because [`CollisionGroup`](../collisiongroup.md) conforms to [`OptionSet`](../../Swift/optionset.md), you can specify any combination of collision groups in the `mask` parameter by using the various [`OptionSet`](../../Swift/optionset.md) methods like `CollisionGroup/union(_:)`, `CollisionGroup/subtracting(_:)`, and `CollisionGroup/intersection(_:)`. Entities from any group contained in `mask` will collide with entities using this filter, while those not contained by `mask` will not.
 
 To combine multiple groups into a filter, use the `CollisionGroup/union(_:)` method, like this:
 
@@ -34,7 +35,7 @@ let groupC = CollisionGroup(rawValue: 1 << 2)
 let theFilter = CollisionFilter(group: groupA, mask: groupA.union(groupB))
 ```
 
-A common use case is to want entities to collide with everything except one group, or a few groups. In a game, for example, you might not want a player’s pieces to collide with their own pieces, or you might not want players on the same team to collide with each other. You can accomplish that by starting with the [`all`](collisiongroup/all.md) property, subtracting the group or groups that you don’t want the entities using this filter to collide with, like this:
+A common use case is to want entities to collide with everything except one group, or a few groups. In a game, for example, you might not want a player’s pieces to collide with their own pieces, or you might not want players on the same team to collide with each other. You can accomplish that by starting with the [`all`](../collisiongroup/all.md) property, subtracting the group or groups that you don’t want the entities using this filter to collide with, like this:
 
 ```swift
 // Create a filter that collides with everything except B
@@ -48,9 +49,10 @@ let notGroupB = CollisionGroup.all.subtracting(groupB)
 
 ## See Also
 
-- [static let `default`: CollisionFilter](collisionfilter/default.md)
+### Creating a collision filter
+- [static let `default`: CollisionFilter](./default.md)
   The default collision filter.
-- [static let sensor: CollisionFilter](collisionfilter/sensor.md)
+- [static let sensor: CollisionFilter](./sensor.md)
   A collision filter for an entity that collides with everything.
 
 

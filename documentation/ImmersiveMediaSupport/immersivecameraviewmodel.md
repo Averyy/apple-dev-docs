@@ -1,7 +1,8 @@
 # ImmersiveCameraViewModel
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view model that holds all the resources needed to render an immersive camera view.
 
@@ -20,33 +21,34 @@ struct ImmersiveCameraViewModel
 
 #### Overview
 
-App needs to query this type instance from [`VenueDescriptor`](venuedescriptor.md) instance given the immersive camera identifier.
+App needs to query this type instance from [`VenueDescriptor`](./venuedescriptor.md) instance given the immersive camera identifier.
 
 ## Topics
 
 ### Instance Properties
-- [var cameraID: String](immersivecameraviewmodel/cameraid.md)
+- [var cameraID: String](./immersivecameraviewmodel/cameraid.md)
   The camera identifier string of the Immersive camera associated with this view model.
-- [var environmentBackdrop: MDLAsset?](immersivecameraviewmodel/environmentbackdrop.md)
+- [var environmentBackdrop: MDLAsset?](./immersivecameraviewmodel/environmentbackdrop.md)
   The environment backdrop associated with the immersive camera view
-- [var leftEye: MDLMesh](immersivecameraviewmodel/lefteye.md)
+- [var leftEye: MDLMesh](./immersivecameraviewmodel/lefteye.md)
   Left eye mesh associated with the immersive camera view.
-- [var mask: ImmersiveVideoMask?](immersivecameraviewmodel/mask.md)
+- [var mask: ImmersiveVideoMask?](./immersivecameraviewmodel/mask.md)
   Generated immersive video mask associated with the immersive camera view
-- [var rightEye: MDLMesh](immersivecameraviewmodel/righteye.md)
+- [var rightEye: MDLMesh](./immersivecameraviewmodel/righteye.md)
   Right eye mesh associated with the immersive camera view.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ImmersiveVideoFrame](immersivevideoframe.md)
+### Immersive video rendering support
+- [struct ImmersiveVideoFrame](./immersivevideoframe.md)
   A type that represents an immersive video frame, including its layout, presentation time, and pixel buffer data.
-- [struct ImmersiveVideoMask](immersivevideomask.md)
+- [struct ImmersiveVideoMask](./immersivevideomask.md)
   A video mask to use during video rendering to smooth the edges of the mesh.
 
 

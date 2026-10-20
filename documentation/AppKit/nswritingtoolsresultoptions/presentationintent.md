@@ -1,7 +1,8 @@
 # presentationIntent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 static var presentationIntent: NSWritingToolsResultOptions { get }
+```
+
+```c
+NSWritingToolsResultPresentationIntent
 ```
 
 

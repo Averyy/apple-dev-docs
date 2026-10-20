@@ -1,7 +1,8 @@
 # ShapeConfiguration.Shape
 
 **Framework**: PaperKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -19,35 +20,36 @@ enum Shape
 ## Topics
 
 ### Choosing a shape
-- [ShapeConfiguration.Shape.rectangle](shapeconfiguration/shape/rectangle.md)
+- [ShapeConfiguration.Shape.rectangle](./shape/rectangle.md)
   A rectangle shape.
-- [ShapeConfiguration.Shape.ellipse](shapeconfiguration/shape/ellipse.md)
+- [ShapeConfiguration.Shape.ellipse](./shape/ellipse.md)
   An ellipse shape.
-- [ShapeConfiguration.Shape.line](shapeconfiguration/shape/line.md)
+- [ShapeConfiguration.Shape.line](./shape/line.md)
   A line shape.
-- [ShapeConfiguration.Shape.chatBubble](shapeconfiguration/shape/chatbubble.md)
+- [ShapeConfiguration.Shape.chatBubble](./shape/chatbubble.md)
   A chat bubble shape.
-- [ShapeConfiguration.Shape.roundedRectangle](shapeconfiguration/shape/roundedrectangle.md)
+- [ShapeConfiguration.Shape.roundedRectangle](./shape/roundedrectangle.md)
   A rounded rectangle.
-- [ShapeConfiguration.Shape.regularPolygon](shapeconfiguration/shape/regularpolygon.md)
+- [ShapeConfiguration.Shape.regularPolygon](./shape/regularpolygon.md)
   A n-sided polygon shape.
-- [ShapeConfiguration.Shape.star](shapeconfiguration/shape/star.md)
+- [ShapeConfiguration.Shape.star](./shape/star.md)
   A n-pointed star shape.
-- [ShapeConfiguration.Shape.arrowShape](shapeconfiguration/shape/arrowshape.md)
+- [ShapeConfiguration.Shape.arrowShape](./shape/arrowshape.md)
   A filled arrow shape.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: ShapeConfiguration.Shape](shapeconfiguration/type.md)
+### Choosing a shape type
+- [var type: ShapeConfiguration.Shape](./type.md)
   The type of shape.
 
 

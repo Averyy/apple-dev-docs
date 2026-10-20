@@ -1,7 +1,8 @@
 # restoreTrainingSession(sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Restores an existing training session.
 
@@ -25,15 +26,16 @@ A `MLTrainingSession` that can be used to resume training.
 
 ## Parameters
 
-- `sessionParameters`: Training session parameters. The method requires the a valid [`sessionDirectory`](mltrainingsessionparameters/sessiondirectory.md) parameter.
+- `sessionParameters`: Training session parameters. The method requires the a valid [`sessionDirectory`](../mltrainingsessionparameters/sessiondirectory.md) parameter.
 
 ## See Also
 
-- [init(trainingData:targetColumn:featureColumns:parameters:)](mldecisiontreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+### Training a decision tree classifier asynchronously
+- [init(trainingData:targetColumn:featureColumns:parameters:)](./init%28trainingdata,targetcolumn,featurecolumns,parameters%29.md)
   Creates a decision tree classifier.
-- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mldecisiontreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./maketrainingsession%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Creates or restores a training session.
-- [static func resume(MLTrainingSession<MLDecisionTreeClassifier>) throws -> MLJob<MLDecisionTreeClassifier>](mldecisiontreeclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLDecisionTreeClassifier>) throws -> MLJob<MLDecisionTreeClassifier>](./resume%28_%29.md)
   Resumes a training session from the last checkpoint if available.
 
 

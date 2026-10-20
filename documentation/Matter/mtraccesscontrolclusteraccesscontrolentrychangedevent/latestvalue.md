@@ -1,7 +1,8 @@
 # latestValue
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var latestValue: MTRAccessControlClusterAccessControlEntryStruct? { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRAccessControlClusterAccessControlEntryStruct * latestValue;
 ```
 
 

@@ -1,12 +1,13 @@
 # textEncodingName
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s text encoding name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The receiver’s text encoding name.
 var textEncodingName: String! { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * textEncodingName;
+```
+
 ## See Also
 
-- [var data: Data!](webresource/data.md)
+### Getting attributes
+- [var data: Data!](./data.md)
   The receiver’s data.
-- [var url: URL!](webresource/url.md)
+- [var url: URL!](./url.md)
   The receiver’s URL.
-- [var mimeType: String!](webresource/mimetype.md)
+- [var mimeType: String!](./mimetype.md)
   The receiver’s MIME type.
-- [var frameName: String!](webresource/framename.md)
+- [var frameName: String!](./framename.md)
   The name of the frame. If the receiver does not represent the contents of an entire HTML frame, this is `nil`.
 
 

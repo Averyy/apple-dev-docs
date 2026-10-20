@@ -1,7 +1,8 @@
 # NSTableView.ColumnDidMoveMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct ColumnDidMoveMessage
 ## Topics
 
 ### Initializers
-- [init(tableView: NSTableView, oldColumn: Int, newColumn: Int)](nstableview/columndidmovemessage/init(tableview:oldcolumn:newcolumn:).md)
+- [init(tableView: NSTableView, oldColumn: Int, newColumn: Int)](./columndidmovemessage/init%28tableview,oldcolumn,newcolumn%29.md)
 ### Instance Properties
-- [var newColumn: Int](nstableview/columndidmovemessage/newcolumn.md)
-- [var oldColumn: Int](nstableview/columndidmovemessage/oldcolumn.md)
-- [var tableView: NSTableView](nstableview/columndidmovemessage/tableview.md)
+- [var newColumn: Int](./columndidmovemessage/newcolumn.md)
+- [var oldColumn: Int](./columndidmovemessage/oldcolumn.md)
+- [var tableView: NSTableView](./columndidmovemessage/tableview.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

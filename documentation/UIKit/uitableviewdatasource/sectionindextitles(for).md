@@ -1,7 +1,8 @@
 # sectionIndexTitles(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the data source to return the titles for the sections of a table view.
 
@@ -9,13 +10,17 @@ Asks the data source to return the titles for the sections of a table view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func sectionIndexTitles(for tableView: UITableView) -> [String]?
+```
+
+```objc
+- (NSArray<NSString *> *) sectionIndexTitlesForTableView:(UITableView *) tableView;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ An array of strings that serve as the title of sections in the table view and ap
 
 ## See Also
 
-- [func tableView(UITableView, sectionForSectionIndexTitle: String, at: Int) -> Int](uitableviewdatasource/tableview(_:sectionforsectionindextitle:at:).md)
+### Configuring an index
+- [func tableView(UITableView, sectionForSectionIndexTitle: String, at: Int) -> Int](./tableview%28_,sectionforsectionindextitle,at%29.md)
   Asks the data source to return the index of the section having the given title and section title index.
 
 

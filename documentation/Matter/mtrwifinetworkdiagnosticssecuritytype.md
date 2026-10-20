@@ -1,7 +1,8 @@
 # MTRWiFiNetworkDiagnosticsSecurityType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 enum MTRWiFiNetworkDiagnosticsSecurityType
 ```
 
+```c
+enum MTRWiFiNetworkDiagnosticsSecurityType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRWiFiNetworkDiagnosticsSecurityType.WEP](mtrwifinetworkdiagnosticssecuritytype/wep.md)
-- [MTRWiFiNetworkDiagnosticsSecurityType.WPA](mtrwifinetworkdiagnosticssecuritytype/wpa.md)
-- [MTRWiFiNetworkDiagnosticsSecurityType.WPA2](mtrwifinetworkdiagnosticssecuritytype/wpa2.md)
-- [MTRWiFiNetworkDiagnosticsSecurityType.WPA3](mtrwifinetworkdiagnosticssecuritytype/wpa3.md)
-- [MTRWiFiNetworkDiagnosticsSecurityType.none](mtrwifinetworkdiagnosticssecuritytype/none.md)
-- [MTRWiFiNetworkDiagnosticsSecurityType.unspecified](mtrwifinetworkdiagnosticssecuritytype/unspecified.md)
+- [MTRWiFiNetworkDiagnosticsSecurityType.WEP](./mtrwifinetworkdiagnosticssecuritytype/wep.md)
+- [MTRWiFiNetworkDiagnosticsSecurityType.WPA](./mtrwifinetworkdiagnosticssecuritytype/wpa.md)
+- [MTRWiFiNetworkDiagnosticsSecurityType.WPA2](./mtrwifinetworkdiagnosticssecuritytype/wpa2.md)
+- [MTRWiFiNetworkDiagnosticsSecurityType.WPA3](./mtrwifinetworkdiagnosticssecuritytype/wpa3.md)
+- [MTRWiFiNetworkDiagnosticsSecurityType.none](./mtrwifinetworkdiagnosticssecuritytype/none.md)
+- [MTRWiFiNetworkDiagnosticsSecurityType.unspecified](./mtrwifinetworkdiagnosticssecuritytype/unspecified.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrwifinetworkdiagnosticssecuritytype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrwifinetworkdiagnosticssecuritytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

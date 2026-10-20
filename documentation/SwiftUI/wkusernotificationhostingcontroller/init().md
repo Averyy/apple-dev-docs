@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a notification hosting controller object that you can use to implement your notification interfaces using SwiftUI views.
 

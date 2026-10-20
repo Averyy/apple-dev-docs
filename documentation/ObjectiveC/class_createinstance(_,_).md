@@ -1,7 +1,8 @@
 # class_createInstance(_:_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an instance of a class, allocating memory for the class in the default malloc memory zone.
 
@@ -18,6 +19,10 @@ Creates an instance of a class, allocating memory for the class in the default m
 
 ```swift
 func class_createInstance(_ cls: AnyClass?, _ extraBytes: Int) -> Any?
+```
+
+```c
+extern idclass_createInstance(Class cls, size_t extraBytes);
 ```
 
 #### Return Value

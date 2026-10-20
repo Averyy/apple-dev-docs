@@ -1,7 +1,8 @@
 # SparseGetTranspose(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a transposed copy of the specified matrix of double-precision, floating-point values.
 
@@ -20,13 +21,17 @@ Returns a transposed copy of the specified matrix of double-precision, floating-
 func SparseGetTranspose(_ Matrix: SparseMatrix_Double) -> SparseMatrix_Double
 ```
 
+```c
+static SparseMatrix_Double SparseGetTranspose(SparseMatrix_Double Matrix);
+```
+
 #### Return Value
 
-A [`SparseMatrix_Double`](sparsematrix_double.md) structure that represents the transposed matrix.
+A [`SparseMatrix_Double`](./sparsematrix_double.md) structure that represents the transposed matrix.
 
 #### Discussion
 
-Use this function to return a new [`SparseMatrix_Double`](sparsematrix_double.md) structure that shares underlying storage with the specified matrix, but with its [`transpose`](sparseattributes_t/transpose.md) attribute as `true`. The system doesn’t reference-count the underlying storage, so you must ensure it doesn’t destroy the original matrix before you finish with the matrix that this routine returns.
+Use this function to return a new [`SparseMatrix_Double`](./sparsematrix_double.md) structure that shares underlying storage with the specified matrix, but with its [`transpose`](./sparseattributes_t/transpose.md) attribute as `true`. The system doesn’t reference-count the underlying storage, so you must ensure it doesn’t destroy the original matrix before you finish with the matrix that this routine returns.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Use this function to return a new [`SparseMatrix_Double`](sparsematrix_double.md
 
 ## See Also
 
-- [func SparseGetTranspose(SparseMatrix_Float) -> SparseMatrix_Float](sparsegettranspose(_:)-7no8k.md)
+### Matrix transpose functions
+- [func SparseGetTranspose(SparseMatrix_Float) -> SparseMatrix_Float](./sparsegettranspose%28_%29-7no8k.md)
   Returns a transposed copy of the specified matrix of single-precision, floating-point values.
 
 

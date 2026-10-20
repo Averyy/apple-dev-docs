@@ -1,30 +1,32 @@
 # IODTResolveAddressing
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 OSArray * IODTResolveAddressing(IORegistryEntry *regEntry, const char *addressPropertyName, IODeviceMemory *parent);
 ```
 
 ## See Also
 
-- [IODTCompareNubName](1442126-iodtcomparenubname.md)
-- [IODTFindMatchingEntries](1442113-iodtfindmatchingentries.md)
-- [IODTFindSlotName](1442138-iodtfindslotname.md)
-- [IODTGetCellCounts](1442140-iodtgetcellcounts.md)
-- [IODTInterruptControllerName](1442136-iodtinterruptcontrollername.md)
-- [IODTMakeNVDescriptor](1442146-iodtmakenvdescriptor.md)
-- [IODTMatchNubWithKeys](1442144-iodtmatchnubwithkeys.md)
-- [IODTResolveAddressCell](1442103-iodtresolveaddresscell.md)
-- [IODTSetResolving](1442142-iodtsetresolving.md)
-- [IODTGetInterruptOptions](1442172-iodtgetinterruptoptions.md)
-- [IODTMapInterrupts](1442130-iodtmapinterrupts.md)
+### Registry Utilities
+- [IODTCompareNubName](./api-1442126-iodtcomparenubname.md)
+- [IODTFindMatchingEntries](./api-1442113-iodtfindmatchingentries.md)
+- [IODTFindSlotName](./api-1442138-iodtfindslotname.md)
+- [IODTGetCellCounts](./api-1442140-iodtgetcellcounts.md)
+- [IODTInterruptControllerName](./api-1442136-iodtinterruptcontrollername.md)
+- [IODTMakeNVDescriptor](./api-1442146-iodtmakenvdescriptor.md)
+- [IODTMatchNubWithKeys](./api-1442144-iodtmatchnubwithkeys.md)
+- [IODTResolveAddressCell](./api-1442103-iodtresolveaddresscell.md)
+- [IODTSetResolving](./api-1442142-iodtsetresolving.md)
+- [IODTGetInterruptOptions](./api-1442172-iodtgetinterruptoptions.md)
+- [IODTMapInterrupts](./api-1442130-iodtmapinterrupts.md)
 
 
 ---

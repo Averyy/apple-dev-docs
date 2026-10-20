@@ -1,7 +1,8 @@
 # formatDescription
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that describes the details of the media data.
 

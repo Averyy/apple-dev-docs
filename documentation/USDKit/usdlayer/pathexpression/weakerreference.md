@@ -1,7 +1,8 @@
 # weakerReference
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A reference to a weaker expression for composition with stronger layers.
 

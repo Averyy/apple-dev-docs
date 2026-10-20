@@ -1,7 +1,8 @@
 # variant
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variant of the on-device model backing this instance.
 
@@ -20,7 +21,8 @@ final var variant: SystemLanguageModel.Variant { get }
 
 ## See Also
 
-- [SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.struct.md)
+### Accessing the model variant
+- [SystemLanguageModel.Variant](./variant-swift.struct.md)
   The variant of an on-device model.
 
 

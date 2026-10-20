@@ -1,7 +1,8 @@
 # removeAll(keepingCapacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all elements from the array.
 
@@ -22,7 +23,7 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the length of the array.
+> **Complexity**: O(*n*), where *n* is the length of the array.
 
 ## Parameters
 
@@ -30,23 +31,24 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 
 ## See Also
 
-- [func remove(at: Int) -> Element](array/remove(at:).md)
+### Removing Elements
+- [func remove(at: Int) -> Element](./remove%28at%29.md)
   Removes and returns the element at the specified position.
-- [func removeFirst() -> Self.Element](array/removefirst.md)
+- [func removeFirst() -> Self.Element](./removefirst%28%29.md)
   Removes and returns the first element of the collection.
-- [func removeFirst(Int)](array/removefirst(_:).md)
+- [func removeFirst(Int)](./removefirst%28_%29.md)
   Removes the specified number of elements from the beginning of the collection.
-- [func removeLast() -> Self.Element](array/removelast.md)
+- [func removeLast() -> Self.Element](./removelast%28%29.md)
   Removes and returns the last element of the collection.
-- [func removeLast(Int)](array/removelast(_:).md)
+- [func removeLast(Int)](./removelast%28_%29.md)
   Removes the specified number of elements from the end of the collection.
-- [func removeSubrange(Range<Self.Index>)](array/removesubrange(_:)-8may1.md)
+- [func removeSubrange(Range<Self.Index>)](./removesubrange%28_%29-8may1.md)
   Removes the elements in the specified subrange from the collection.
-- [func removeSubrange<R>(R)](array/removesubrange(_:)-9twou.md)
+- [func removeSubrange<R>(R)](./removesubrange%28_%29-9twou.md)
   Removes the elements in the specified subrange from the collection.
-- [func removeAll(where: (Self.Element) throws -> Bool) rethrows](array/removeall(where:)-5k61r.md)
+- [func removeAll(where: (Self.Element) throws -> Bool) rethrows](./removeall%28where%29-5k61r.md)
   Removes all the elements that satisfy the given predicate.
-- [func popLast() -> Self.Element?](array/poplast.md)
+- [func popLast() -> Self.Element?](./poplast%28%29.md)
   Removes and returns the last element of the collection.
 
 

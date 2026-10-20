@@ -1,7 +1,8 @@
 # kCLLocationCoordinate2DInvalid
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid coordinate value.
 
@@ -20,13 +21,18 @@ An invalid coordinate value.
 let kCLLocationCoordinate2DInvalid: CLLocationCoordinate2D
 ```
 
+```c
+extern const CLLocationCoordinate2D kCLLocationCoordinate2DInvalid;
+```
+
 #### Discussion
 
 Use this constant when you want to indicate that a coordinate is invalid.
 
 ## See Also
 
-- [func CLLocationCoordinate2DIsValid(CLLocationCoordinate2D) -> Bool](cllocationcoordinate2disvalid(_:).md)
+### Validating a coordinate
+- [func CLLocationCoordinate2DIsValid(CLLocationCoordinate2D) -> Bool](./cllocationcoordinate2disvalid%28_%29.md)
   Returns a Boolean value indicating whether the specified coordinate is valid.
 
 

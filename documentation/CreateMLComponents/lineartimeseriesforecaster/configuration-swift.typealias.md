@@ -1,7 +1,8 @@
 # LinearTimeSeriesForecaster.Configuration
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -18,9 +19,12 @@
 typealias Configuration = LinearTimeSeriesForecasterConfiguration
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 ## See Also
 
-- [LinearTimeSeriesForecaster.Model](lineartimeseriesforecaster/model.md)
+### Supporting types
+- [LinearTimeSeriesForecaster.Model](./model.md)
   A linear time-series forecasting model.
 
 

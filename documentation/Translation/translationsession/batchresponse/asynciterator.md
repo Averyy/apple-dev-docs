@@ -1,7 +1,8 @@
 # TranslationSession.BatchResponse.AsyncIterator
 
 **Framework**: Translation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -20,11 +21,12 @@ struct AsyncIterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [TranslationSession.BatchResponse.Element](translationsession/batchresponse/element.md)
+### Iteration types
+- [TranslationSession.BatchResponse.Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 

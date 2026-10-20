@@ -1,7 +1,8 @@
 # Shared with You
 
 **Framework**: Shared with You  
-**Kind**: module
+**Kind**: module  
+**Role**: Technology
 
 Surface shared content and collaborate in your app.
 
@@ -15,42 +16,42 @@ Surface shared content and collaborate in your app.
 
 ## Mentions
 
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+- [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
 
 #### Overview
 
 Access and view content shared from Messages across the system and continue the messaging experience without leaving your app. Incorporate Shared with You to make it easier for people to access content shared through conversations or notifications.
 
-![An image of an iPhone. In the middle of the screen is a Shared with You shelf with three list items arranged vertically. Each list item has a gray rectangle with text next to it. All three rows have Title as the title and Subtitle as the subtitle. Below the subtitle in all three rows is an oval button with the title From Juan.](/images/com.apple.sharedwithyou/media-4301694@2x.png)
+![An image of an iPhone. In the middle of the screen is a Shared with You shelf with three list items arranged vertically. Each list item has a gray rectangle with text next to it. All three rows have Title as the title and Subtitle as the subtitle. Below the subtitle in all three rows is an oval button with the title From Juan.](https://developer.apple.com/tutorials/images/com.apple.sharedwithyou/media-4301694@2x.png)
 
-Support a Shared with You shelf in your app to visually represent shared items with an [`SWAttributionView`](swattributionview.md) that the system renders. Securely share universal links that your app accesses using the [`SWHighlight`](swhighlight.md) class. For information on getting started, see [`Making your app content shareable`](making-your-app-content-shareable.md).
+Support a Shared with You shelf in your app to visually represent shared items with an [`SWAttributionView`](./swattributionview.md) that the system renders. Securely share universal links that your app accesses using the [`SWHighlight`](./swhighlight.md) class. For information on getting started, see [Making your app content shareable](./making-your-app-content-shareable.md).
 
-> **Note**:  Session 10094: [`Add Shared with You to your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10094)
+> **Related sessions from WWDC22**:  Session 10094: [Add Shared with You to your app](https://developer.apple.com/videos/play/wwdc2022/10094)
 
 ## Topics
 
 ### Frameworks
-- [Shared with You Core](../sharedwithyoucore/sharedwithyoucore.md)
+- [Shared with You Core](https://developer.apple.com/documentation/sharedwithyoucore)
   Integrate custom collaboration with Messages, Mail, and FaceTime.
 ### Shared content
-- [Making your app content shareable](making-your-app-content-shareable.md)
+- [Making your app content shareable](./making-your-app-content-shareable.md)
   Add support for universal links and a Shared with You shelf to support shared content in your app.
-- [Shared content interactions](shared-content-interactions.md)
+- [Shared content interactions](./shared-content-interactions.md)
   Use highlights and attribution views to manage participants and trigger events for shared content.
 ### Collaboration
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+- [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
   Manage shared content collaboration in your app using CloudKit and iCloud Drive.
-- [Adding custom collaboration to your app](adding-custom-collaboration-to-your-app.md)
+- [Adding custom collaboration to your app](./adding-custom-collaboration-to-your-app.md)
   Integrate your custom collaboration app with Messages.
-- [Collaboration views](collaboration-views.md)
+- [Collaboration views](./collaboration-views.md)
   Create and customize a collaboration view to manage the shared content actions.
 ### Framework versions
-- [Version number](version-number.md)
-- [Version string](version-string.md)
+- [Version number](./version-number.md)
+- [Version string](./version-string.md)
 ### Macros
-- [Macros](macros.md)
+- [Macros](./macros.md)
 ### Variables
-- [let SWCopyRepresentationTypeIdentifier: String](swcopyrepresentationtypeidentifier.md)
+- [let SWCopyRepresentationTypeIdentifier: String](./swcopyrepresentationtypeidentifier.md)
 
 
 ---

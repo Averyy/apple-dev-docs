@@ -1,7 +1,8 @@
 # placeOfBirth
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile driver’s license holder’s birth place on record with the issuer.
 

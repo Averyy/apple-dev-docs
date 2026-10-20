@@ -1,6 +1,8 @@
 # Implementing a multistage image filter using heaps and fences
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [ImplementingAMultistageImageFilterUsingHeapsAndFences.zip](https://docs-assets.developer.apple.com/published/90274df6ea7a/ImplementingAMultistageImageFilterUsingHeapsAndFences.zip)
 
 Use fences to synchronize access to resources allocated on a heap.
 
@@ -22,19 +24,19 @@ This sample demonstrates:
 
 This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and a Gaussian blur filter.
 
-![Screenshot of the sample app running to show a filtered image.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-1-ImageFilteringWithHeapsAndFences.png)
+![Screenshot of the sample app running to show a filtered image.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-1-ImageFilteringWithHeapsAndFences.png)
 
-##### Getting Started
+##### Getting started
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS. Metal is not supported in the iOS or tvOS Simulator, so the iOS and tvOS schemes require a physical device to run the sample. The default scheme is macOS, which runs the sample as is on your Mac.
 
-##### Optimize Resource Allocation and Performance
+##### Optimize resource allocation and performance
 
 Storing textures in a heap gives the sample more control over how resource memory is allocated and accessed. It’s also much faster to allocate resources from a heap than from a device. When resources are allocated from a device, Metal creates and tracks additional state to ensure that the resource memory is allocated, synchronized, and made available throughout the lifetime of any command buffer that needs the given resource. It does so even if the resource itself is destroyed before the command buffer begins execution.
 
 Although Metal also carries out this process for heaps, it doesn’t do so for resources within the heap. Instead, the app needs to perform explicit fine-grained synchronization when it creates objects from the heap and reuses memory. However, the overall cost of allocating resources from a heap is much lower than that of allocating resources from a device, particularly in the middle of a frame.
 
-##### Create a Heap for Static Textures
+##### Create a heap for static textures
 
 The sample loads image files into an array called `_imageTextures`. Instead of using `_imageTextures` directly, the sample uses `_imageHeap`, from which it allocates static textures. The sample creates a heap large enough to store all the static textures by aggregating their sizes. For each texture in `_imageTextures`, the sample calls the `heapTextureSizeAndAlignWithDescriptor:` method to calculate the size and alignment values required to allocate sufficient memory backing for each texture.
 
@@ -99,9 +101,9 @@ for(NSUInteger level = 0; level < _imageTextures[i].mipmapLevelCount;  level++)
 _imageTextures[i] = heapTexture;
 ```
 
-![Layout diagram that shows multiple static textures stored in a single heap.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-2-StaticTexturesHeap.png)
+![Layout diagram that shows multiple static textures stored in a single heap.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-2-StaticTexturesHeap.png)
 
-##### Create a Heap for Dynamic Textures
+##### Create a heap for dynamic textures
 
 The sample uses a separate heap, `_scratchHeap`, from which it allocates dynamic textures with a temporary lifetime. These textures have the same properties of the static texture being filtered in a given frame.
 
@@ -135,9 +137,9 @@ if(!_scratchHeap || requiredSize > [_scratchHeap maxAvailableSizeWithAlignment:r
 
 Any textures allocated from `_scratchHeap` can also be deallocated, which allows the sample to reuse that same memory backing to allocate another texture.
 
-![Layout diagram that shows multiple dynamic textures allocated from a single heap and deallocated back into the same heap.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-3-DynamicTexturesHeap.png)
+![Layout diagram that shows multiple dynamic textures allocated from a single heap and deallocated back into the same heap.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-3-DynamicTexturesHeap.png)
 
-##### Manage Dependencies Between Filters
+##### Manage dependencies between filters
 
 The sample uses `_fence` to control access to dynamic textures allocated from `_scratchHeap` and prevent GPU race conditions in the filter graph. This fence ensures that operations on dynamic textures are completed before the filter graph begins subsequent operations that depend on the results of previous operations.
 
@@ -184,9 +186,9 @@ The second filter, implemented by the sample in `AAPLGaussianBlurFilter`, calls 
 [computeEncoder waitForFence:fence];
 ```
 
-![Timeline diagram that shows how a fence manages dependencies between filters.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-4-FenceBetweenFilters.png)
+![Timeline diagram that shows how a fence manages dependencies between filters.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-4-FenceBetweenFilters.png)
 
-##### Reuse Memory and Manage Dependencies Within a Filter
+##### Reuse memory and manage dependencies within a filter
 
 The Gaussian blur filter performs a horizontal blur and a vertical blur for each mipmap level of the dynamic texture produced by the downsample filter. For each mipmap level, the sample allocates a temporary texture, `intermediaryTexture`, from the dynamic textures heap.
 
@@ -251,21 +253,22 @@ This memory reuse creates dynamic texture dependencies between mipmap levels. Th
 
 Because the sample already calls the `waitForFence:` method to wait for the downsample filter to complete its work, the sample leverages this same call to wait for any previous mipmap levels to complete their work before beginning a new mipmap level iteration.
 
-![Timeline diagram that shows how a fence manages dependencies within a filter.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-5-FenceWithinFilter.png)
+![Timeline diagram that shows how a fence manages dependencies within a filter.](https://developer.apple.com/tutorials/images/com.apple.metal/image-filtering-with-heaps-and-fences-5-FenceWithinFilter.png)
 
 ## See Also
 
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+### Resource memory allocation and management
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](./implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [protocol MTLHeap](mtlheap.md)
+- [protocol MTLHeap](./mtlheap.md)
   A memory pool from which you can suballocate resources.
-- [class MTLHeapDescriptor](mtlheapdescriptor.md)
+- [class MTLHeapDescriptor](./mtlheapdescriptor.md)
   A configuration that customizes the behavior for a Metal memory heap.
-- [enum MTLHeapType](mtlheaptype.md)
+- [enum MTLHeapType](./mtlheaptype.md)
   The options you use to choose the heap type.
-- [struct MTLSizeAndAlign](mtlsizeandalign.md)
+- [struct MTLSizeAndAlign](./mtlsizeandalign.md)
   The size and alignment of a resource, in bytes.
 
 

@@ -1,12 +1,13 @@
 # isRulerVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver’s enclosing scroll view shows its ruler.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the receiver’s enclosing scroll view sh
 var isRulerVisible: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isRulerVisible) BOOL rulerVisible;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s enclosing scroll view shows its ruler, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver’s enclosing scroll view shows its ruler, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func toggleRuler(Any?)](nstext/toggleruler(_:).md)
+### Using the ruler
+- [func toggleRuler(Any?)](./toggleruler%28_%29.md)
   This action method shows or hides the ruler, if the receiver is enclosed in a scroll view.
 
 

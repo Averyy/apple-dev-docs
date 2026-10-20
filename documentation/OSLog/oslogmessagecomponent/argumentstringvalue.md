@@ -1,7 +1,8 @@
 # argumentStringValue
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The argument formatted as a string.
 
@@ -20,21 +21,26 @@ The argument formatted as a string.
 var argumentStringValue: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * argumentStringValue;
+```
+
 #### Discussion
 
 The `argumentStringValue` property can be `nil` if the argument can’t be decoded. For example, redacted arguments or the last component can’t be decoded.
 
 ## See Also
 
-- [var argumentDataValue: Data?](oslogmessagecomponent/argumentdatavalue.md)
+### Accessing the Argument
+- [var argumentDataValue: Data?](./argumentdatavalue.md)
   The argument formatted as a sequence of bytes.
-- [var argumentDoubleValue: Double](oslogmessagecomponent/argumentdoublevalue.md)
+- [var argumentDoubleValue: Double](./argumentdoublevalue.md)
   The argument formatted as a double.
-- [var argumentInt64Value: Int64](oslogmessagecomponent/argumentint64value.md)
+- [var argumentInt64Value: Int64](./argumentint64value.md)
   The argument formatted as a signed 64-bit integer.
-- [var argumentNumberValue: NSNumber?](oslogmessagecomponent/argumentnumbervalue.md)
+- [var argumentNumberValue: NSNumber?](./argumentnumbervalue.md)
   The argument formatted as a number.
-- [var argumentUInt64Value: UInt64](oslogmessagecomponent/argumentuint64value.md)
+- [var argumentUInt64Value: UInt64](./argumentuint64value.md)
   The argument formatted as an unsigned 64-bit integer.
 
 

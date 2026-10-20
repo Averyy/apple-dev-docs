@@ -1,7 +1,8 @@
 # init(enabledProfiles:disabledProfiles:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new profile state object for the specified profiles.
 
@@ -12,10 +13,16 @@ Creates a new profile state object for the specified profiles.
 - macOS 11.0+
 - visionOS 1.0+
 
+> **Deprecated**: Use [`init(channel:enabledProfiles:disabledProfiles:)`](./init%28channel,enabledprofiles,disabledprofiles%29.md) instead.
+
 ## Declaration
 
 ```swift
 init(enabledProfiles enabled: [MIDICIProfile], disabledProfiles disabled: [MIDICIProfile])
+```
+
+```objc
+- (instancetype) initWithEnabledProfiles:(NSArray<MIDICIProfile *> *) enabled disabledProfiles:(NSArray<MIDICIProfile *> *) disabled;
 ```
 
 #### Return Value
@@ -29,7 +36,8 @@ A new profile state instance.
 
 ## See Also
 
-- [init(channel: MIDIChannelNumber, enabledProfiles: [MIDICIProfile], disabledProfiles: [MIDICIProfile])](midiciprofilestate/init(channel:enabledprofiles:disabledprofiles:).md)
+### Creating a Profile State
+- [init(channel: MIDIChannelNumber, enabledProfiles: [MIDICIProfile], disabledProfiles: [MIDICIProfile])](./init%28channel,enabledprofiles,disabledprofiles%29.md)
   Creates a new profile state object for the specified MIDI channel and profiles.
 
 

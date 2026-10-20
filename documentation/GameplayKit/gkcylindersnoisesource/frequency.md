@@ -1,7 +1,8 @@
 # frequency
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines the size and spacing of concentric cylinders.
 
@@ -17,6 +18,10 @@ A value that determines the size and spacing of concentric cylinders.
 
 ```swift
 var frequency: Double { get set }
+```
+
+```objc
+@property (nonatomic) double frequency;
 ```
 
 #### Discussion

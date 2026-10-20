@@ -1,7 +1,8 @@
 # triangleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of triangles in the buffers.
 
@@ -17,6 +18,10 @@ The number of triangles in the buffers.
 
 ```swift
 var triangleCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger triangleCount;
 ```
 
 #### Discussion

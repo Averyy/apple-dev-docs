@@ -1,7 +1,8 @@
 # buildIf(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 15.0+
@@ -21,8 +22,9 @@ static func buildIf<Content>(_ content: Content?) -> some AccessibilityRotorCont
 
 ## See Also
 
-- [static buildBlock(_:)](accessibilityrotorcontentbuilder/buildblock(_:).md)
-- [static func buildExpression<Content>(Content) -> Content](accessibilityrotorcontentbuilder/buildexpression(_:).md)
+### Building navigation content
+- [static buildBlock(_:)](./buildblock%28_%29.md)
+- [static func buildExpression<Content>(Content) -> Content](./buildexpression%28_%29.md)
   Builds an expression within the builder.
 
 

@@ -1,7 +1,8 @@
 # ClothQueryVolumeEvents.NewBodyIntersections
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event type that a cloth query volume publishes (before simulation update) when cloth bodies intersect it.
 
@@ -23,22 +24,22 @@ This event should be treated as having a non-escapable lifetime. Some of its dat
 ## Topics
 
 ### Accessing the intersections
-- [func withIntersections<Result>((Span<ClothQueryVolumeEvents.NewBodyIntersections.Intersection>) -> Result) -> Result](clothqueryvolumeevents/newbodyintersections/withintersections(_:).md)
+- [func withIntersections<Result>((Span<ClothQueryVolumeEvents.NewBodyIntersections.Intersection>) -> Result) -> Result](./newbodyintersections/withintersections%28_%29.md)
   Provides access to the intersections with cloth bodies that took place.
-- [ClothQueryVolumeEvents.NewBodyIntersections.Intersection](clothqueryvolumeevents/newbodyintersections/intersection.md)
+- [ClothQueryVolumeEvents.NewBodyIntersections.Intersection](./newbodyintersections/intersection.md)
   An intersection with a cloth body.
 ### Identifying the query volume
-- [let queryVolumeEntity: Entity](clothqueryvolumeevents/newbodyintersections/queryvolumeentity.md)
+- [let queryVolumeEntity: Entity](./newbodyintersections/queryvolumeentity.md)
   The entity that has the query volume component that this event originates from.
-- [let updateCount: UInt64](clothqueryvolumeevents/newbodyintersections/updatecount.md)
+- [let updateCount: UInt64](./newbodyintersections/updatecount.md)
   The simulation update that this event originates from.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

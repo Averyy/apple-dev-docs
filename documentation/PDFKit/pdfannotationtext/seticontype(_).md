@@ -1,17 +1,22 @@
 # setIconType(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the icon type for the annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setIconType(_ type: PDFTextAnnotationIconType)
+```
+
+```objc
+- (void) setIconType:(PDFTextAnnotationIconType) type;
 ```
 
 ## Parameters
@@ -20,9 +25,11 @@ func setIconType(_ type: PDFTextAnnotationIconType)
 
 ## See Also
 
-- [enum PDFTextAnnotationIconType](pdftextannotationicontype.md)
+### Related Documentation
+- [enum PDFTextAnnotationIconType](../pdftextannotationicontype.md)
   The types of icons that a text annotation can use.
-- [func iconType() -> PDFTextAnnotationIconType](pdfannotationtext/icontype.md)
+### Managing the Annotation Icon’s Type
+- [func iconType() -> PDFTextAnnotationIconType](./icontype%28%29.md)
   Returns the icon type for the annotation.
 
 

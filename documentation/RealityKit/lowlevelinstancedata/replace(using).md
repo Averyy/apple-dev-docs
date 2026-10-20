@@ -1,7 +1,8 @@
 # replace(using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a Metal buffer that you can use to replace the per instance transform data on GPU using Metal.
 

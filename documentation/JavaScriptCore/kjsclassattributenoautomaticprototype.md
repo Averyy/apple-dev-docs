@@ -1,7 +1,8 @@
 # kJSClassAttributeNoAutomaticPrototype
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attribute that specifies that a class doesn’t automatically generate a shared prototype for its instance objects.
 
@@ -19,13 +20,18 @@ An attribute that specifies that a class doesn’t automatically generate a shar
 var kJSClassAttributeNoAutomaticPrototype: Int { get }
 ```
 
+```c
+kJSClassAttributeNoAutomaticPrototype
+```
+
 #### Discussion
 
-Use [`kJSClassAttributeNoAutomaticPrototype`](kjsclassattributenoautomaticprototype.md) with [`JSObjectSetPrototype(_:_:_:)`](jsobjectsetprototype(_:_:_:).md) to manage prototypes manually.
+Use [`kJSClassAttributeNoAutomaticPrototype`](./kjsclassattributenoautomaticprototype.md) with [`JSObjectSetPrototype(_:_:_:)`](./jsobjectsetprototype%28_,_,_%29.md) to manage prototypes manually.
 
 ## See Also
 
-- [var kJSClassAttributeNone: Int](kjsclassattributenone.md)
+### Constants
+- [var kJSClassAttributeNone: Int](./kjsclassattributenone.md)
   An attribute that specifies that a class has no special attributes.
 
 

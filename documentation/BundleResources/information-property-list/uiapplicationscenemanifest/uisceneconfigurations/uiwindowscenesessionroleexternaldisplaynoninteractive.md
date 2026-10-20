@@ -1,7 +1,8 @@
 # UIWindowSceneSessionRoleExternalDisplayNonInteractive
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 Configurations for scenes you use to display noninteractive content on an externally connected display.
 
@@ -10,9 +11,10 @@ Configurations for scenes you use to display noninteractive content on an extern
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `UIWindowSceneSessionRoleExternalDisplayNonInteractive` (External Display Session Role Non-Interactive)
+- **Type**: array of dictionary 
 
 #### Discussion
 
@@ -21,24 +23,26 @@ Use this key to specify scene configurations for a session role. Each scene conf
 ## Topics
 
 ### Configuration name
-- [UISceneConfigurationName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneconfigurationname.md)
+- [UISceneConfigurationName](./uiwindowscenesessionroleapplication/uisceneconfigurationname.md)
   The app-specific name you use to identify the scene.
 ### Scene objects
-- [UISceneClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneclassname.md)
+- [UISceneClassName](./uiwindowscenesessionroleapplication/uisceneclassname.md)
   The name of the scene class you want UIKit to instantiate.
-- [UISceneDelegateClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenedelegateclassname.md)
+- [UISceneDelegateClassName](./uiwindowscenesessionroleapplication/uiscenedelegateclassname.md)
   The name of the app-specific class that you want UIKit to instantiate and use as the scene delegate object.
 ### Storyboard
-- [UISceneStoryboardFile](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile.md)
+- [UISceneStoryboardFile](./uiwindowscenesessionroleapplication/uiscenestoryboardfile.md)
   The name of the storyboard file containing the scene’s initial user interface.
 
 ## See Also
 
-- [Presenting content on a connected display](../uikit/presenting-content-on-a-connected-display.md)
+### Related Documentation
+- [Presenting content on a connected display](../../../../UIKit/presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
-- [UIWindowSceneSessionRoleApplication](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication.md)
+### Window scene roles
+- [UIWindowSceneSessionRoleApplication](./uiwindowscenesessionroleapplication.md)
   Configurations for scenes you use to display content on the device’s main screen and respond to user interactions.
-- [UIWindowSceneSessionRoleExternalDisplay](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleexternaldisplay.md)
+- [UIWindowSceneSessionRoleExternalDisplay](./uiwindowscenesessionroleexternaldisplay.md)
   Configurations for scenes you use to display noninteractive content on an externally connected display.
 
 

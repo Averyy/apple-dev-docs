@@ -1,7 +1,8 @@
 # updateStatus(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Manually updates the authorization view.
 
@@ -14,11 +15,15 @@ Manually updates the authorization view.
 func updateStatus(_ inSender: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) updateStatus:(id) inSender;
+```
+
 #### Discussion
 
-Calls to [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) return [`true`](https://developer.apple.com/documentation/swift/true) if in the unlocked state, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Calls to [`updateStatus(_:)`](./updatestatus%28_%29.md) return [`true`](../../Swift/true.md) if in the unlocked state, [`false`](../../Swift/false.md) otherwise.
 
-If autoupdates have not been set, you must call [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) for the authorization view’s initial state to display correctly. The Security Framework calls this method for you when you change the state of the lock (by calling [`deauthorize(_:)`](sfauthorizationview/deauthorize(_:).md), for example).
+If autoupdates have not been set, you must call [`updateStatus(_:)`](./updatestatus%28_%29.md) for the authorization view’s initial state to display correctly. The Security Framework calls this method for you when you change the state of the lock (by calling [`deauthorize(_:)`](./deauthorize%28_%29.md), for example).
 
 ## Parameters
 
@@ -26,9 +31,10 @@ If autoupdates have not been set, you must call [`updateStatus(_:)`](sfauthoriza
 
 ## See Also
 
-- [func setAutoupdate(Bool)](sfauthorizationview/setautoupdate(_:).md)
+### Related Documentation
+- [func setAutoupdate(Bool)](./setautoupdate%28_%29.md)
   Sets the authorization view to update itself automatically.
-- [func setAutoupdate(Bool, interval: TimeInterval)](sfauthorizationview/setautoupdate(_:interval:).md)
+- [func setAutoupdate(Bool, interval: TimeInterval)](./setautoupdate%28_,interval%29.md)
   Sets the authorization view to update itself at a specific interval.
 
 

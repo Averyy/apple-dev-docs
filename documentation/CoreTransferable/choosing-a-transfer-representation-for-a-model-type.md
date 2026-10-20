@@ -1,6 +1,7 @@
 # Choosing a transfer representation for a model type
 
-**Framework**: Core Transferable
+**Framework**: Core Transferable  
+**Role**: Article
 
 Define a custom representation for your data using a combination of built-in types.
 
@@ -10,17 +11,17 @@ When you enable types in your app to participate in system interactions like sha
 
 Core Transferable defines a set of transfer representations and modifiers that you can combine together in different ways to get the behavior that’s right for the different data transfer and sharing scenarios your app supports. For each of your app’s model types that participate in sharing and data transfer, pick the built-in transfer representations to represent your model’s data, or define your own. Then, determine whether your app allows people to share or receive the model’s data, or both.
 
-##### Compose Transfer Representations
+##### Compose transfer representations
 
-Core Transferable defines three main transfer representations: [`DataRepresentation`](datarepresentation.md), [`FileRepresentation`](filerepresentation.md), and [`CodableRepresentation`](codablerepresentation.md). Use [`DataRepresentation`](datarepresentation.md) for model types where the entire model is stored in memory, and use [`FileRepresentation`](filerepresentation.md) for types stored on disk.
+Core Transferable defines three main transfer representations: [`DataRepresentation`](./datarepresentation.md), [`FileRepresentation`](./filerepresentation.md), and [`CodableRepresentation`](./codablerepresentation.md). Use [`DataRepresentation`](./datarepresentation.md) for model types where the entire model is stored in memory, and use [`FileRepresentation`](./filerepresentation.md) for types stored on disk.
 
-You use [`CodableRepresentation`](codablerepresentation.md) as convenient way to create a transfer representation if your model is already `Codable` or you can easily make it `Codable`. For more information on making a type `Codable`, see [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types).
+You use [`CodableRepresentation`](./codablerepresentation.md) as convenient way to create a transfer representation if your model is already `Codable` or you can easily make it `Codable`. For more information on making a type `Codable`, see [Encoding and Decoding Custom Types](../Foundation/encoding-and-decoding-custom-types.md).
 
-> ❗ **Important**: If you use a `CodableRepresentation`, you’re often defining a new data type as well. As a result, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
+> ❗ **Important**: If you use a `CodableRepresentation`, you’re often defining a new data type as well. As a result, include corresponding entries in the app’s `Info.plist`. For more information, see [Defining file and data types for your app](../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md).
 
-Use the [`ProxyRepresentation`](proxyrepresentation.md) type to let another type that conforms to `Transferable` take on the responsibility of representing your type. Common types like strings, data, and images are already `Transferable`, and you can use them as proxy representations in some common contexts.
+Use the [`ProxyRepresentation`](./proxyrepresentation.md) type to let another type that conforms to `Transferable` take on the responsibility of representing your type. Common types like strings, data, and images are already `Transferable`, and you can use them as proxy representations in some common contexts.
 
-You can combine multiple transfer representations together to support different clients or scenarios. For example, you can combine a [`CodableRepresentation`](codablerepresentation.md) with a [`ProxyRepresentation`](proxyrepresentation.md) to let your app transfer its `Note` type to different parts of the app, but still maintain compatibility with other text editors:
+You can combine multiple transfer representations together to support different clients or scenarios. For example, you can combine a [`CodableRepresentation`](./codablerepresentation.md) with a [`ProxyRepresentation`](./proxyrepresentation.md) to let your app transfer its `Note` type to different parts of the app, but still maintain compatibility with other text editors:
 
 ```swift
 struct Note: Transferable {
@@ -36,9 +37,9 @@ extension UTType {
 }
 ```
 
-The order of the transfer representations in the [`transferRepresentation`](transferable/transferrepresentation.md) builder matters: the most preferable representation comes first, followed by the less preferable — but more compatible — representations.
+The order of the transfer representations in the [`transferRepresentation`](./transferable/transferrepresentation.md) builder matters: the most preferable representation comes first, followed by the less preferable — but more compatible — representations.
 
-##### Configure Your Model Type for Import or Export
+##### Configure your model type for import or export
 
 You can limit a transfer representation to support only importing, only exporting, or the representation can support both. Imports occur when your app is the recipient of an item from sharing, the *drop* of a drag-and-drop interaction, or the *paste* from a copy-and-paste interaction. Conversely, exports occur when people share, copy, or drag an item out of your app. For example, your vector image editing app might support exporting, but choose not to import PNG images.
 
@@ -72,9 +73,10 @@ extension UTType {
 
 ## See Also
 
-- [protocol Transferable](transferable.md)
+### Essentials
+- [protocol Transferable](./transferable.md)
   A protocol that describes how a type interacts with transport APIs such as drag and drop or copy and paste.
-- [protocol TransferRepresentation](transferrepresentation.md)
+- [protocol TransferRepresentation](./transferrepresentation.md)
   A declarative description of the process of importing and exporting a transferable item.
 
 

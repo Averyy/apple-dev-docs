@@ -1,7 +1,8 @@
 # fetch(_:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of typed models that match the criteria of the specified fetch descriptor.
 
@@ -31,19 +32,20 @@ The array of typed models that satisfy the criteria of the fetch descriptor. If 
 
 ## See Also
 
-- [func fetch<T>(FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<T>](modelcontext/fetch(_:batchsize:).md)
+### Fetching models
+- [func fetch<T>(FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<T>](./fetch%28_,batchsize%29.md)
   Returns a collection of typed models, in batches, which match the criteria of the specified fetch descriptor.
-- [func fetchCount<T>(FetchDescriptor<T>) throws -> Int](modelcontext/fetchcount(_:).md)
+- [func fetchCount<T>(FetchDescriptor<T>) throws -> Int](./fetchcount%28_%29.md)
   Returns the number of models that match the criteria of the specified fetch descriptor.
-- [struct FetchDescriptor](fetchdescriptor.md)
+- [struct FetchDescriptor](../fetchdescriptor.md)
   A type that describes the criteria, sort order, and any additional configuration to use when performing a fetch.
-- [struct FetchResultsCollection](fetchresultscollection.md)
+- [struct FetchResultsCollection](../fetchresultscollection.md)
   A collection that efficiently provides the results of a completed fetch.
-- [func enumerate<T>(FetchDescriptor<T>, batchSize: Int, allowEscapingMutations: Bool, block: (T) throws -> Void) throws](modelcontext/enumerate(_:batchsize:allowescapingmutations:block:).md)
+- [func enumerate<T>(FetchDescriptor<T>, batchSize: Int, allowEscapingMutations: Bool, block: (T) throws -> Void) throws](./enumerate%28_,batchsize,allowescapingmutations,block%29.md)
   Runs a closure for each model that matches the criteria of the specified fetch descriptor.
-- [func model(for: PersistentIdentifier) -> any PersistentModel](modelcontext/model(for:).md)
+- [func model(for: PersistentIdentifier) -> any PersistentModel](./model%28for%29.md)
   Returns the persistent model for the specified identifier.
-- [func registeredModel<T>(for: PersistentIdentifier) -> T?](modelcontext/registeredmodel(for:).md)
+- [func registeredModel<T>(for: PersistentIdentifier) -> T?](./registeredmodel%28for%29.md)
   Returns the typed model for the specified identifier.
 
 

@@ -1,7 +1,8 @@
 # HKError.Code.unknownError
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case unknownError
+```
+
+```c
+HKUnknownError
 ```
 
 

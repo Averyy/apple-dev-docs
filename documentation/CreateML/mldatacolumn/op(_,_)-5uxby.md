@@ -1,7 +1,8 @@
 # /(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of integers by dividing each element in the first column by the corresponding element in the second column.
 
@@ -19,6 +20,30 @@ Creates a column of integers by dividing each element in the first column by the
 static func / (a: MLDataColumn<Int>, b: MLDataColumn<Int>) -> MLDataColumn<Int>
 ```
 
+Available when `Element` is `Int`.
+
+**Other overloads**:
+
+```swift
+static func / (a: Double, b: MLDataColumn<Double>) -> MLDataColumn<Double>
+```
+
+```swift
+static func / (a: Int, b: MLDataColumn<Int>) -> MLDataColumn<Int>
+```
+
+```swift
+static func / (a: MLDataColumn<Double>, b: Double) -> MLDataColumn<Double>
+```
+
+```swift
+static func / (a: MLDataColumn<Double>, b: MLDataColumn<Double>) -> MLDataColumn<Double>
+```
+
+```swift
+static func / (a: MLDataColumn<Int>, b: Int) -> MLDataColumn<Int>
+```
+
 #### Return Value
 
 A new column of integers if the columns are the same size; otherwise an invalid column.
@@ -30,19 +55,20 @@ A new column of integers if the columns are the same size; otherwise an invalid 
 
 ## See Also
 
-- [static func + (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](mldatacolumn/+(_:_:)-24g38.md)
+### Combining columns to generate a column
+- [static func + (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](./plus%28_,_%29-24g38.md)
   Creates a column of integers by adding each element in the first column to the corresponding element in the second column.
-- [static func + (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/+(_:_:)-q5bb.md)
+- [static func + (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](./plus%28_,_%29-q5bb.md)
   Creates a column of doubles by adding each element in the first column to the corresponding element in the second column.
-- [static func - (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](mldatacolumn/-(_:_:)-11hbf.md)
+- [static func - (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](./minus%28_,_%29-11hbf.md)
   Creates a column of integers by subtracting each element in the second column from the corresponding element in the first column.
-- [static func - (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/-(_:_:)-3mwsr.md)
+- [static func - (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](./minus%28_,_%29-3mwsr.md)
   Creates a column of doubles by subtracting each element in the second column from the corresponding element in the first column.
-- [static func * (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](mldatacolumn/*(_:_:)-40smy.md)
+- [static func * (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](./star%28_,_%29-40smy.md)
   Creates a column of integers by multiplying each element in the first column by the corresponding element in the second column.
-- [static func * (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/*(_:_:)-lchb.md)
+- [static func * (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](./star%28_,_%29-lchb.md)
   Creates a column of doubles by multiplying each element in the first column by the corresponding element in the second column.
-- [static func / (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/_(_:_:)-69vgc.md)
+- [static func / (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](./op%28_,_%29-69vgc.md)
   Creates a column of doubles by dividing each element in the first column by the corresponding element in the second column.
 
 

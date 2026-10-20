@@ -1,7 +1,8 @@
 # enabled(_:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the enabled state for this command.
 
@@ -22,7 +23,7 @@ func enabled(_ isEnabled: Bool) -> MediaCommand
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](../publishing-media-sessions.md)
 
 ## Parameters
 
@@ -30,7 +31,8 @@ func enabled(_ isEnabled: Bool) -> MediaCommand
 
 ## See Also
 
-- [struct MediaCommand](mediacommand.md)
+### Creating commands
+- [struct MediaCommand](../mediacommand.md)
   A command that describes a media control action for a Now Playing session.
 
 

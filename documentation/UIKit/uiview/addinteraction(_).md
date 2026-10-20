@@ -1,7 +1,8 @@
 # addInteraction(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an interaction to the view.
 
@@ -18,17 +19,22 @@ Adds an interaction to the view.
 func addInteraction(_ interaction: any UIInteraction)
 ```
 
+```objc
+- (void) addInteraction:(id<UIInteraction>) interaction;
+```
+
 ## Parameters
 
 - `interaction`: The interaction object to add to the view.
 
 ## See Also
 
-- [func removeInteraction(any UIInteraction)](uiview/removeinteraction(_:).md)
+### Adding and removing interactions
+- [func removeInteraction(any UIInteraction)](./removeinteraction%28_%29.md)
   Removes an interaction from the view.
-- [var interactions: [any UIInteraction]](uiview/interactions.md)
+- [var interactions: [any UIInteraction]](./interactions.md)
   The array of interactions for the view.
-- [protocol UIInteraction](uiinteraction.md)
+- [protocol UIInteraction](../uiinteraction.md)
   The protocol that an interaction implements to access the view that owns it.
 
 

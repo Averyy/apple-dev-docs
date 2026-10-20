@@ -1,7 +1,8 @@
 # tryReduce(_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,11 +19,14 @@
 func tryReduce<T>(_ initialResult: T, _ nextPartialResult: @escaping (T, Publishers.Sequence<Elements, Failure>.Output) throws -> T) -> Result<T, any Error>.Publisher
 ```
 
+Available when `Elements` conforms to `Sequence` and `Failure` conforms to `Error`.
+
 ## See Also
 
-- [func collect() -> Result<[Publishers.Sequence<Elements, Failure>.Output], Failure>.Publisher](publishers/sequence/collect.md)
-- [func ignoreOutput() -> Empty<Publishers.Sequence<Elements, Failure>.Output, Failure>](publishers/sequence/ignoreoutput.md)
-- [func reduce<T>(T, (T, Publishers.Sequence<Elements, Failure>.Output) -> T) -> Result<T, Failure>.Publisher](publishers/sequence/reduce(_:_:).md)
+### Reducing elements
+- [func collect() -> Result<[Publishers.Sequence<Elements, Failure>.Output], Failure>.Publisher](./collect%28%29.md)
+- [func ignoreOutput() -> Empty<Publishers.Sequence<Elements, Failure>.Output, Failure>](./ignoreoutput%28%29.md)
+- [func reduce<T>(T, (T, Publishers.Sequence<Elements, Failure>.Output) -> T) -> Result<T, Failure>.Publisher](./reduce%28_,_%29.md)
 
 
 ---

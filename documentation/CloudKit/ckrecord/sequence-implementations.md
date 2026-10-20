@@ -1,11 +1,12 @@
 # Sequence Implementations
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func makeIterator() -> CKRecordKeyValueIterator](ckrecord/makeiterator.md)
+- [func makeIterator() -> CKRecordKeyValueIterator](./makeiterator%28%29.md)
   Returns an iterator of the record’s key-value pairs.
 
 

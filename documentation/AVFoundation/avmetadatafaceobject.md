@@ -1,7 +1,8 @@
 # AVMetadataFaceObject
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Face information detected by a metadata capture output.
 
@@ -18,44 +19,48 @@ Face information detected by a metadata capture output.
 class AVMetadataFaceObject
 ```
 
+```objc
+@interface AVMetadataFaceObject : AVMetadataObject
+```
+
 ## Mentions
 
-- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](./configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
 #### Overview
 
-The `AVMetadataFaceObject` class is a concrete subclass of [`AVMetadataObject`](avmetadataobject.md) that defines the features of a single detected face. You can retrieve instances of this class from the output of an [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) object on devices that support face detection.
+The `AVMetadataFaceObject` class is a concrete subclass of [`AVMetadataObject`](./avmetadataobject.md) that defines the features of a single detected face. You can retrieve instances of this class from the output of an [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md) object on devices that support face detection.
 
 ## Topics
 
 ### Getting the face identifier
-- [var faceID: Int](avmetadatafaceobject/faceid.md)
+- [var faceID: Int](./avmetadatafaceobject/faceid.md)
   The unique ID for this face metadata object.
 ### Accessing the face detection data
-- [var hasRollAngle: Bool](avmetadatafaceobject/hasrollangle.md)
+- [var hasRollAngle: Bool](./avmetadatafaceobject/hasrollangle.md)
   A Boolean value indicating whether there is a valid roll angle associated with the face.
-- [var rollAngle: CGFloat](avmetadatafaceobject/rollangle.md)
+- [var rollAngle: CGFloat](./avmetadatafaceobject/rollangle.md)
   The roll angle of the face specified in degrees.
-- [var hasYawAngle: Bool](avmetadatafaceobject/hasyawangle.md)
+- [var hasYawAngle: Bool](./avmetadatafaceobject/hasyawangle.md)
   A Boolean value indicating whether there is a valid yaw angle associated with the face.
-- [var yawAngle: CGFloat](avmetadatafaceobject/yawangle.md)
+- [var yawAngle: CGFloat](./avmetadatafaceobject/yawangle.md)
   The yaw angle of the face specified in degrees.
 ### Constants
-- [Face metadata type](face-metadata-type.md)
+- [Face metadata type](./face-metadata-type.md)
   A metadata type string for face detection metadata.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataObject](avmetadataobject.md)
+- [AVMetadataObject](./avmetadataobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

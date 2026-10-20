@@ -1,7 +1,8 @@
 # SubscriptionMigrateDescriptors
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The description and display name of the subscription to migrate to that you manage.
 
@@ -10,26 +11,31 @@ The description and display name of the subscription to migrate to that you mana
 
 ## Declaration
 
-```swift
+```
 object SubscriptionMigrateDescriptors
 ```
 
 ## Properties
 
 - `description` (description) *(required)*: The description of the subscription to migrate to. This string doesn’t display to customers.
+
+  **Maximum Length**: `45`
 - `displayName` (displayName) *(required)*: The display name of the subscription to migrate to. This string displays to customers.
+
+  **Maximum Length**: `30`
 
 ## See Also
 
-- [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)
+### Migration from the server
+- [Migrate a Subscription to Advanced Commerce API](./migrate-subscription-to-advanced-commerce-api.md)
   Migrate a subscription that a customer purchased through Apple In-App Purchase to a subscription you manage using the Advanced Commerce API.
-- [object SubscriptionMigrateRequest](subscriptionmigraterequest.md)
+- [object SubscriptionMigrateRequest](./subscriptionmigraterequest.md)
   The subscription details you provide to migrate a subscription from Apple In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
-- [object SubscriptionMigrateResponse](subscriptionmigrateresponse.md)
+- [object SubscriptionMigrateResponse](./subscriptionmigrateresponse.md)
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
-- [object SubscriptionMigrateItem](subscriptionmigrateitem.md)
+- [object SubscriptionMigrateItem](./subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
-- [object SubscriptionMigrateRenewalItem](subscriptionmigraterenewalitem.md)
+- [object SubscriptionMigrateRenewalItem](./subscriptionmigraterenewalitem.md)
   The item information that replaces a migrated subscription item when the subscription renews.
 
 

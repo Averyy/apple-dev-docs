@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts the given element in the set if it is not already present.
@@ -52,11 +53,19 @@ print(classDays)
 
 - `newMember`: An element to insert into the set.
 
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func insert(Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)](./insert%28_%29-1uo97.md)
+- [func insert(Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)](./insert%28_%29-9wohp.md)
+  Adds the given element to the option set if it is not already a member.
+
 ## See Also
 
-- [func update(with: Self.Element) -> Self.Element?](setalgebra/update(with:).md)
+### Adding and Removing Elements
+- [func update(with: Self.Element) -> Self.Element?](./update%28with%29.md)
   Inserts the given element into the set unconditionally.
-- [func remove(Self.Element) -> Self.Element?](setalgebra/remove(_:).md)
+- [func remove(Self.Element) -> Self.Element?](./remove%28_%29.md)
   Removes the given element and any elements subsumed by the given element.
 
 

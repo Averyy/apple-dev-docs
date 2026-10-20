@@ -1,7 +1,8 @@
 # coreSpotlight(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a source that retrieves data from the app’s Spotlight index.
 
@@ -20,7 +21,8 @@ static func coreSpotlight(_ source: CoreSpotlightSource) -> SearchSource
 
 ## See Also
 
-- [static var coreSpotlight: SearchSource](searchsource/corespotlight.md)
+### Searching a Spotlight index
+- [static var coreSpotlight: SearchSource](./corespotlight.md)
   A source that retrieves data from the app’s Spotlight index.
 
 

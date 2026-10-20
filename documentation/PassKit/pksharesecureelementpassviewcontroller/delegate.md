@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -13,6 +14,10 @@
 
 ```swift
 weak var delegate: (any PKShareSecureElementPassViewControllerDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<PKShareSecureElementPassViewControllerDelegate> delegate;
 ```
 
 

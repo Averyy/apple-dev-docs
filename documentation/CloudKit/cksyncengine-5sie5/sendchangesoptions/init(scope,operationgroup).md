@@ -1,7 +1,8 @@
 # init(scope:operationGroup:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of send changes options.
 
@@ -11,7 +12,7 @@ Creates a new set of send changes options.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init(scope: CKSyncEngine.SendChangesOptions.Scope = .all, operationGroup: CKOper
 
 ## Parameters
 
-- `scope`: The scope of the changes to send. Defaults to [`CKSyncEngine.SendChangesOptions.Scope.all`](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/all.md).
+- `scope`: The scope of the changes to send. Defaults to [`CKSyncEngine.SendChangesOptions.Scope.all`](./scope-swift.enum/all.md).
 - `operationGroup`: The operation group to use for the underlying CloudKit operations. If `nil`, a default operation group will be created.
 
 

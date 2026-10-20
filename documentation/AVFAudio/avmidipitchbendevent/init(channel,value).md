@@ -1,7 +1,8 @@
 # init(channel:value:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with a channel and pitch bend value.
 
@@ -17,6 +18,10 @@ Creates an event with a channel and pitch bend value.
 
 ```swift
 init(channel: UInt32, value: UInt32)
+```
+
+```objc
+- (instancetype) initWithChannel:(UInt32) channel value:(UInt32) value;
 ```
 
 ## Parameters

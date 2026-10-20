@@ -1,7 +1,8 @@
 # isDependedOnByOthers
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether other samples depend on this sample for decoding.
 

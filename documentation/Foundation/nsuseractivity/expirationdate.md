@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date after which the activity is no longer eligible for Handoff or indexing.
 
@@ -20,19 +21,24 @@ The date after which the activity is no longer eligible for Handoff or indexing.
 var expirationDate: Date? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDate * expirationDate;
+```
+
 #### Discussion
 
 If you don’t set the value of this property, the system automatically expires the activity after a period of time.
 
 ## See Also
 
-- [var isEligibleForHandoff: Bool](nsuseractivity/iseligibleforhandoff.md)
+### Enabling system behaviors
+- [var isEligibleForHandoff: Bool](./iseligibleforhandoff.md)
   A Boolean value that indicates whether the activity can continue on another device using Handoff.
-- [var isEligibleForSearch: Bool](nsuseractivity/iseligibleforsearch.md)
+- [var isEligibleForSearch: Bool](./iseligibleforsearch.md)
   A Boolean value that indicates whether to add the activity to the on-device index.
-- [var isEligibleForPublicIndexing: Bool](nsuseractivity/iseligibleforpublicindexing.md)
+- [var isEligibleForPublicIndexing: Bool](./iseligibleforpublicindexing.md)
   A Boolean value that indicates whether the activity is publicly accessible by all iOS users.
-- [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)
+- [var isEligibleForPrediction: Bool](./iseligibleforprediction.md)
   A Boolean value that determines whether Siri can suggest the activity as a shortcut.
 
 

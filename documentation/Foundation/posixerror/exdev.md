@@ -1,7 +1,8 @@
 # EXDEV
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cross-device link.
 

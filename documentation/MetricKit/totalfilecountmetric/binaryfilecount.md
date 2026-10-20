@@ -1,7 +1,8 @@
 # binaryFileCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of your app’s binary files.
 
@@ -17,7 +18,8 @@ let binaryFileCount: Int
 
 ## See Also
 
-- [let dataFileCount: Int](totalfilecountmetric/datafilecount.md)
+### Measurements
+- [let dataFileCount: Int](./datafilecount.md)
   The total number of data files in your app’s container(s).
 
 

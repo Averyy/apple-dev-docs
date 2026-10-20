@@ -1,7 +1,8 @@
 # partIndex
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The part index of the part these parameters refer to
 

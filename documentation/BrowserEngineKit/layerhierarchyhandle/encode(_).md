@@ -1,7 +1,8 @@
 # encode(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Serializes the hierarchy handle into a Mach port reference and accompanying data.
 
@@ -15,9 +16,13 @@ Serializes the hierarchy handle into a Mach port reference and accompanying data
 func encode(_ block: (mach_port_t, Data) -> Void)
 ```
 
+```objc
+- (void) encodeWithBlock:(void (^)(mach_port_t copiedPort, NSData *data)) block;
+```
+
 #### Discussion
 
-This method invokes the supplied closure with a `mach_port_t` and `Data` object that together represent the serialized layer hierarchy handle. The port serves as a reference to the layer hierarchy that you can share with another process. Use the port and data together to reconstruct the handle using [`init(port:data:)`](layerhierarchyhandle/init(port:data:).md).
+This method invokes the supplied closure with a `mach_port_t` and `Data` object that together represent the serialized layer hierarchy handle. The port serves as a reference to the layer hierarchy that you can share with another process. Use the port and data together to reconstruct the handle using [`init(port:data:)`](./init%28port,data%29.md).
 
 ```swift
 handle.encode { port, data in
@@ -34,9 +39,9 @@ handle.encode { port, data in
 }
 ```
 
-> ❗ **Important**: Dispose of the Mach port in the supplied closure after sending it to the other process. The port is `MACH_PORT_NULL` if the handle has already been invalidated (see [`invalidate()`](layerhierarchy/invalidate().md)).
+> ❗ **Important**: Dispose of the Mach port in the supplied closure after sending it to the other process. The port is `MACH_PORT_NULL` if the handle has already been invalidated (see [`invalidate()`](../layerhierarchy/invalidate%28%29.md)).
 
-Each call to this method creates a new port reference and unique serialized data. Decode each port and data pair only once using [`init(port:data:)`](layerhierarchyhandle/init(port:data:).md).
+Each call to this method creates a new port reference and unique serialized data. Decode each port and data pair only once using [`init(port:data:)`](./init%28port,data%29.md).
 
 ## Parameters
 
@@ -44,7 +49,8 @@ Each call to this method creates a new port reference and unique serialized data
 
 ## See Also
 
-- [init(port: mach_port_t, data: Data) throws](layerhierarchyhandle/init(port:data:).md)
+### Sharing a layer hierarchy handle using Mach
+- [init(port: mach_port_t, data: Data) throws](./init%28port,data%29.md)
   Creates a layer hierarchy handle using a Mach port reference and serialized data.
 
 

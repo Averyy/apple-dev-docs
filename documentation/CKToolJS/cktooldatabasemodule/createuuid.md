@@ -1,7 +1,8 @@
 # createUuid
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new `Uuid`.
 
@@ -10,7 +11,7 @@ Creates a new `Uuid`.
 
 ## Declaration
 
-```swift
+```
 static Uuid createUuid();
 ```
 

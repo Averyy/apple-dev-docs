@@ -1,7 +1,8 @@
 # type
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the type of the event.
 
@@ -9,7 +10,7 @@ Returns the type of the event.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Returns the type of the event.
 var type: UIEvent.EventType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIEventType type;
+```
+
 #### Discussion
 
-The [`UIEvent.EventType`](uievent/eventtype.md) constant returned by this property indicates the general type of this event — for example, whether it’s a touch or motion event.
+The [`UIEvent.EventType`](./eventtype.md) constant returned by this property indicates the general type of this event — for example, whether it’s a touch or motion event.
 
 ## See Also
 
-- [UIEvent.EventType](uievent/eventtype.md)
+### Getting the event type
+- [UIEvent.EventType](./eventtype.md)
   Constants that specify the general type of an event.
-- [var subtype: UIEvent.EventSubtype](uievent/subtype.md)
+- [var subtype: UIEvent.EventSubtype](./subtype.md)
   Returns the subtype of the event.
-- [UIEvent.EventSubtype](uievent/eventsubtype.md)
+- [UIEvent.EventSubtype](./eventsubtype.md)
   Constants that specify the subtype of the event in relation to its general type.
 
 

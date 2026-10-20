@@ -1,7 +1,8 @@
 # EvaluationResultsError.invalidJSONFormat
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The JSON data doesn’t match the expected evaluation result format.
 

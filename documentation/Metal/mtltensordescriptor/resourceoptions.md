@@ -1,9 +1,10 @@
 # resourceOptions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A packed set of the [`storageMode`](mtltensordescriptor/storagemode.md), [`cpuCacheMode`](mtltensordescriptor/cpucachemode.md), and [`hazardTrackingMode`](mtltensordescriptor/hazardtrackingmode.md) properties.
+A packed set of the [`storageMode`](./storagemode.md), [`cpuCacheMode`](./cpucachemode.md), and [`hazardTrackingMode`](./hazardtrackingmode.md) properties.
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@ A packed set of the [`storageMode`](mtltensordescriptor/storagemode.md), [`cpuCa
 
 ```swift
 var resourceOptions: MTLResourceOptions { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLResourceOptions resourceOptions;
 ```
 
 

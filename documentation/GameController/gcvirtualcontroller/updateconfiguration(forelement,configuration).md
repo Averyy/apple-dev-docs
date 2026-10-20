@@ -1,7 +1,8 @@
 # updateConfiguration(forElement:configuration:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the configuration for one of the virtual controller’s input elements.
 
@@ -16,18 +17,23 @@ Changes the configuration for one of the virtual controller’s input elements.
 func updateConfiguration(forElement element: String, configuration config: (GCVirtualController.ElementConfiguration) -> GCVirtualController.ElementConfiguration)
 ```
 
+```objc
+- (void) updateConfigurationForElement:(NSString *) element configuration:(GCVirtualControllerElementConfiguration * (^)(GCVirtualControllerElementConfiguration *oldConfiguration)) config;
+```
+
 ## Mentions
 
-- [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Adding virtual controls to games that support game controllers in iOS](../adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
 ## Parameters
 
-- `element`: The element whose configuration you want to change. For the possible values of this parameter, see the [`elements`](gcvirtualcontroller/configuration/elements.md) property.
+- `element`: The element whose configuration you want to change. For the possible values of this parameter, see the [`elements`](./configuration/elements.md) property.
 - `config`: The new configuration for the element.
 
 ## See Also
 
-- [GCVirtualController.ElementConfiguration](gcvirtualcontroller/elementconfiguration.md)
+### Customizing the elements
+- [GCVirtualController.ElementConfiguration](./elementconfiguration.md)
   The properties of a virtual controller’s element that you can customize.
 
 

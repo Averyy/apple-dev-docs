@@ -1,7 +1,8 @@
 # controlSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size to apply to controls within a view.
 
@@ -22,13 +23,14 @@ var controlSize: ControlSize { get set }
 
 #### Discussion
 
-The default is [`ControlSize.regular`](controlsize/regular.md).
+The default is [`ControlSize.regular`](../controlsize/regular.md).
 
 ## See Also
 
-- [func controlSize(_:)](view/controlsize(_:).md)
+### Sizing controls
+- [func controlSize(_:)](../view/controlsize%28_%29.md)
   Sets the size for controls within this view.
-- [enum ControlSize](controlsize.md)
+- [enum ControlSize](../controlsize.md)
   The size classes, like regular or small, that you can apply to controls within a view.
 
 

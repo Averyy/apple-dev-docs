@@ -1,14 +1,15 @@
 # Creating and Running a Playground Book
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Build a playground book from a template, and run it in Swift Playgrounds.
 
 #### Overview
 
-You use both a Mac running Xcode and an iPad to create a playground book. You download the [`Swift Playgrounds Author Template`](https://developer.apple.comhttps://developer.apple.com/download/more/?=Swift%20Playgrounds%20Author%20Template) and open it in Xcode on a Mac. You then write pages for the book and package its resources into a `.playgroundbook` file that you share with an iPad.
+You use both a Mac running Xcode and an iPad to create a playground book. You download the [Swift Playgrounds Author Template](https://developer.apple.com/download/more/?=Swift%20Playgrounds%20Author%20Template) and open it in Xcode on a Mac. You then write pages for the book and package its resources into a `.playgroundbook` file that you share with an iPad.
 
-> ❗ **Important**: The Swift Playgrounds Author Template is deprecated and may not be compatible with future versions of Xcode. You can continue working with Playground Books by editing their contents directly in Xcode and other tools. In Finder, select and control-click on your Playground Book, and choose “Show Package Contents”. For details on working with the structure and format, see [`Playground Books`](playground-books.md). For information on working with the Swift Playgrounds App and Swift Package formats, see [`Swift Playgrounds`](swift-playgrounds.md) and [`Swift.org`](https://developer.apple.comhttps://www.swift.org/package-manager/).”
+> ❗ **Important**: The Swift Playgrounds Author Template is deprecated and may not be compatible with future versions of Xcode. You can continue working with Playground Books by editing their contents directly in Xcode and other tools. In Finder, select and control-click on your Playground Book, and choose “Show Package Contents”. For details on working with the structure and format, see [Playground Books](./playground-books.md). For information on working with the Swift Playgrounds App and Swift Package formats, see [Swift Playgrounds](./swift-playgrounds.md) and [Swift.org](https://www.swift.org/package-manager/).”
 
 ##### Extract and Open the Template
 
@@ -18,7 +19,7 @@ The Swift Playgrounds Author Template is packaged as a `.xip` archive. To open t
 
 The template contains all the initial files and resources you need to start writing content for Swift Playgrounds. Choose `Product > Build` to compile these resources into a `.playgroundbook` file that you can share with an iPad.
 
-##### Run the Playground Book on Your Ipad
+##### Run the Playground Book on Your iPad
 
 To run the built playground book, transfer it to Swift Playgrounds:
 
@@ -30,11 +31,12 @@ Swift Playgrounds automatically opens when you share a playground book.
 
 The following image shows the content from the template running in Swift Playgrounds.
 
-![Screenshot showing a playground page with a variable declaration in the code editor, and text field in the live view with the text, Live View.](/images/com.apple.Swift-Playgrounds/creating-and-running-a-playground-book-1@2x.png)
+![Screenshot showing a playground page with a variable declaration in the code editor, and text field in the live view with the text, Live View.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/creating-and-running-a-playground-book-1@2x.png)
 
 ## See Also
 
-- [Structuring Content for Swift Playgrounds](structuring-content-for-swift-playgrounds.md)
+### Playground Setup
+- [Structuring Content for Swift Playgrounds](./structuring-content-for-swift-playgrounds.md)
   Add content to a playground book by creating new folders and property lists.
 
 

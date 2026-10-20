@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the invalidation type.
 
@@ -17,8 +18,9 @@ init()
 
 ## See Also
 
-- [func display()](nsview/display.md)
-  Displays the view and all its subviews if possible, invoking each of the `NSView` methods [`lockFocus()`](nsview/lockfocus().md), [`draw(_:)`](nsview/draw(_:).md), and [`unlockFocus()`](nsview/unlockfocus().md) as necessary.
+### Creating the invalidation type
+- [func display()](../../display%28%29.md)
+  Displays the view and all its subviews if possible, invoking each of the `NSView` methods [`lockFocus()`](../../lockfocus%28%29.md), [`draw(_:)`](../../draw%28_%29.md), and [`unlockFocus()`](../../unlockfocus%28%29.md) as necessary.
 
 
 ---

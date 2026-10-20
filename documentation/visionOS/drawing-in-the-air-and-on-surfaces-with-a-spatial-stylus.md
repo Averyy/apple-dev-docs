@@ -1,6 +1,8 @@
 # Drawing in the air and on surfaces with a spatial stylus
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [DrawingInTheAirAndOnSurfacesWithASpatialStylus.zip](https://docs-assets.developer.apple.com/published/9fdaf5babf19/DrawingInTheAirAndOnSurfacesWithASpatialStylus.zip)
 
 Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
 
@@ -16,11 +18,11 @@ The key techniques the sample demonstrates are as follows:
 
 - **Latency compensation**: Reduce the lag a person experiences when drawing by predicting anchors for the initial stroke rendering and correcting with the latest anchors for accuracy over time.
 - **Adaptive prediction**: Adjust prediction strategies based on drawing context—using shorter prediction horizons or latest anchors directly when drawing on surfaces to minimize jitter, and longer prediction horirzons when drawing in air.
-- **Surface alignment**: Reduce swimming artifacts between virtual brush strokes and the real world when drawing on physical surfaces by transitioning strokes from the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/rendered) coordinate space to the [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/none) coordinate space.
+- **Surface alignment**: Reduce swimming artifacts between virtual brush strokes and the real world when drawing on physical surfaces by transitioning strokes from the [`ARKitCoordinateSpace.Correction.rendered`](../ARKit/arkitcoordinatespace/correction/rendered.md) coordinate space to the [`ARKitCoordinateSpace.Correction.none`](../ARKit/arkitcoordinatespace/correction/none.md) coordinate space.
 
-> **Note**: This sample uses the low-level mesh drawing implementation from [`Creating a spatial drawing app with RealityKit`](https://developer.apple.com/documentation/realitykit/creating-a-spatial-drawing-app-with-realitykit) as its foundation.
+> **Note**: This sample uses the low-level mesh drawing implementation from [Creating a spatial drawing app with RealityKit](../RealityKit/creating-a-spatial-drawing-app-with-realitykit.md) as its foundation.
 
-#### Discover and Track the Active Stylus
+#### Discover and track the active stylus
 
 Before any drawing can happen, the app must first discover available styli, establish a connection with one, and begin tracking its movements in 3D space.
 
@@ -100,7 +102,7 @@ private func setActiveStylus(stylus: GCStylus) async {
 }
 ```
 
-The sample wraps updates to the value of `activeStylus` in [`withAnimation(_:_:)`](https://developer.apple.com/documentation/swiftui/withanimation(_:_:)) blocks so that SwiftUI views can animate their content when its value changes. For example, the `StylusSettingsHeaderView` animates a symbol displaying whether the person has connected a stylus by observing this value:
+The sample wraps updates to the value of `activeStylus` in [`withAnimation(_:_:)`](../SwiftUI/withanimation%28_,_%29.md) blocks so that SwiftUI views can animate their content when its value changes. For example, the `StylusSettingsHeaderView` animates a symbol displaying whether the person has connected a stylus by observing this value:
 
 ```swift
 struct StylusSettingsHeaderView: View {
@@ -117,7 +119,7 @@ struct StylusSettingsHeaderView: View {
 }
 ```
 
-Finally, the `runAccessoryTracking` method initializes the [`AccessoryTrackingProvider`](https://developer.apple.com/documentation/arkit/accessorytrackingprovider) with the stylus and runs the [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession):
+Finally, the `runAccessoryTracking` method initializes the [`AccessoryTrackingProvider`](../ARKit/accessorytrackingprovider.md) with the stylus and runs the [`ARKitSession`](../ARKit/arkitsession.md):
 
 ```swift
 private func runAccessoryTracking(for stylus: GCStylus) async {
@@ -133,9 +135,9 @@ private func runAccessoryTracking(for stylus: GCStylus) async {
 }
 ```
 
-For more information about discovering and tracking spatial styli, see [`Discovering and tracking spatial game controllers and styli`](https://developer.apple.com/documentation/gamecontroller/discovering-and-tracking-spatial-game-controllers-and-styli).
+For more information about discovering and tracking spatial styli, see [Discovering and tracking spatial game controllers and styli](../GameController/discovering-and-tracking-spatial-game-controllers-and-styli.md).
 
-#### Capture Stylus Button Inputs
+#### Capture stylus button inputs
 
 The sample captures input data from each of the active stylus’ buttons every frame.
 
@@ -196,7 +198,7 @@ func getLatestStylusButtonInputs() -> [StylusButtonInput] {
 }
 ```
 
-> **Note**: While button press notification do exist (see [`Handling input events`](https://developer.apple.com/documentation/gamecontroller/handling-input-events)), in this case the app requires the lowest latency possible for button presses to synchronize them with accessory anchors. As the update loop already notifies the app on every frame render the app can efficiently query the button state at that point.
+> **Note**: While button press notification do exist (see [Handling input events](../GameController/handling-input-events.md)), in this case the app requires the lowest latency possible for button presses to synchronize them with accessory anchors. As the update loop already notifies the app on every frame render the app can efficiently query the button state at that point.
 
 It’s also important to increase the input queue depth to be large enough to buffer all of the inputs the app could receive from the stylus in a single frame, otherwise the app can miss inputs:
 
@@ -243,7 +245,7 @@ class DrawingInputProvider {
 
 This sample app supports two brush types, uniform and calligraphic. For the uniform type the sample creates strokes with a constant radius. For the calligraphic type, the radius of the strokes depends on the button input pressure. Here, the sample overrides the button input’s `isPressed` property when in calligraphic mode to allow the person to set a specific pressure threshold to start and stop drawing.
 
-#### Get Stylus Anchor Inputs
+#### Get stylus anchor inputs
 
 The sample stores tracking information about the stylus’ position and timestamp in the `StylusAnchorInput` structure:
 
@@ -254,7 +256,7 @@ struct StylusAnchorInput {
 }
 ```
 
-The `getAnchorInput` method in `DrawingInputProvider` populates a `StylusAnchorInput` structure by obtaining an [`AccessoryAnchor`](https://developer.apple.com/documentation/arkit/accessoryanchor) for the given tracking mode, and extracting its position relative to an entity with the given [`ARKitCoordinateSpace.Correction`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction):
+The `getAnchorInput` method in `DrawingInputProvider` populates a `StylusAnchorInput` structure by obtaining an [`AccessoryAnchor`](../ARKit/accessoryanchor.md) for the given tracking mode, and extracting its position relative to an entity with the given [`ARKitCoordinateSpace.Correction`](../ARKit/arkitcoordinatespace/correction.md):
 
 ```swift
 private func getAnchorInput(trackingMode: TrackingMode, correction: ARKitCoordinateSpace.Correction, relativeTo: Entity) -> StylusAnchorInput? {
@@ -299,7 +301,7 @@ func getStylusTipPosition(for anchor: AccessoryAnchor, correction: ARKitCoordina
 }
 ```
 
-#### Capture Initial and Final Anchor Inputs
+#### Capture initial and final anchor inputs
 
 The app takes a dual-input approach to drawing that provides immediate visual feedback while also applying corrections for greater accuracy. Specifically, the app captures both “initial” and “final” stylus anchor inputs every frame, and later corrects the initial anchors with the final anchors over time to achieve a balance between low-latency and high-accuracy brush strokes.
 
@@ -351,7 +353,7 @@ private func getCurrentStylusInputState(relativeTo: Entity) -> StylusInputState?
 }
 ```
 
-To minimize latency, the sample uses predicted anchors for the initial stylus anchor inputs, and the latest anchors for the final inputs. Additionally, the sample uses the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/rendered) correction for initial inputs to ensure the stroke aligns with the tip of the pen, and [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/none) for final anchors when drawing on a surface so that the virtual drawing aligns with the real world surface and straight lines remain straight:
+To minimize latency, the sample uses predicted anchors for the initial stylus anchor inputs, and the latest anchors for the final inputs. Additionally, the sample uses the [`ARKitCoordinateSpace.Correction.rendered`](../ARKit/arkitcoordinatespace/correction/rendered.md) correction for initial inputs to ensure the stroke aligns with the tip of the pen, and [`ARKitCoordinateSpace.Correction.none`](../ARKit/arkitcoordinatespace/correction/none.md) for final anchors when drawing on a surface so that the virtual drawing aligns with the real world surface and straight lines remain straight:
 
 ```swift
 var surfaceDrawingSettings = DrawingSettings(
@@ -366,7 +368,7 @@ var airDrawingSettings = DrawingSettings(
 
 > **Note**: The app uses a shorter prediction horizon for drawing on surfaces to reduce jitter. You can also use the latest anchors directly instead of predicting to minimize jitter as much as possible when drawing on surfaces. In air, you can use a comparatively longer prediction horizon before jitter becomes an issue.
 
-#### Synchronize Stylus Position with Button Inputs
+#### Synchronize stylus position with button inputs
 
 Creating a fluid drawing experience requires precise synchronization between the stylus’s position in 3D space and its button input data. The `DrawingInputProvider` class is responsible for this synchronization. Each frame it queries for stylus anchors and aligns them with button inputs to create drawing inputs.
 
@@ -502,7 +504,7 @@ func provideLatestInputs(to drawingDocument: DrawingDocument) {
 }
 ```
 
-#### Draw Strokes and Correct Them Over Time
+#### Draw strokes and correct them over time
 
 People expect their brush strokes to appear instantly while still maintaining high visual quality. The sample addresses this challenge by implementing a dual-source drawing system that provides immediate visual feedback and refined, accurate strokes. The `DrawingDocument` class manages this dual-source approach. When the drawing document receives input, it passes the data to the drawing sources and animates between them:
 
@@ -542,29 +544,30 @@ Here, the `animationDuration` parameter controls how long it takes for the initi
 
 ## See Also
 
-- [Happy Beam](happybeam.md)
+### ARKit
+- [Happy Beam](./happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Setting up access to ARKit data](setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [Incorporating real-world surroundings in an immersive experience](incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](./incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
-- [Placing content on detected planes](placing-content-on-detected-planes.md)
+- [Placing content on detected planes](./placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [Tracking specific points in world space](tracking-points-in-world-space.md)
+- [Tracking specific points in world space](./tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Tracking preregistered images in 3D space](tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](./tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
-- [Exploring object tracking with ARKit](exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](./exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
+- [Object tracking with Reality Composer Pro experiences](./object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
+- [Building local experiences with room tracking](./building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
-- [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](./placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
-- [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
+- [Working with generic spatial accessories](./working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 
 

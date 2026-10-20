@@ -1,7 +1,8 @@
 # defaultInput
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default input for the group.
 
@@ -19,9 +20,14 @@ The default input for the group.
 var defaultInput: AVAssetWriterInput? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVAssetWriterInput * defaultInput;
+```
+
 ## See Also
 
-- [var inputs: [AVAssetWriterInput]](avassetwriterinputgroup/inputs.md)
+### Accessing the inputs
+- [var inputs: [AVAssetWriterInput]](./inputs.md)
   The inputs with tracks that are mutually exclusive to each other for playback or processing.
 
 

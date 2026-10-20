@@ -1,21 +1,22 @@
 # SubscriptionOfferCodeCreateRequest.Data.Relationships.Prices
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodeCreateRequest.Data.Relationships.Prices
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodeCreateRequest.Data.Relationships.Prices.Data](subscriptionoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionOfferCodeCreateRequest.Data.Relationships.Prices.Data](./prices-data.dictionary/data-data.dictionary.md)
   The request body you use to create a subscription offer code.
 
 ## Properties
@@ -24,7 +25,8 @@ object SubscriptionOfferCodeCreateRequest.Data.Relationships.Prices
 
 ## See Also
 
-- [object SubscriptionOfferCodeCreateRequest.Data.Relationships.Subscription](subscriptionoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)
+### Objects
+- [object SubscriptionOfferCodeCreateRequest.Data.Relationships.Subscription](./subscription-data.dictionary.md)
 
 
 ---

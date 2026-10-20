@@ -1,7 +1,8 @@
 # joined(separator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.
 
@@ -19,6 +20,8 @@ Returns a new string by concatenating the elements of the sequence, adding the g
 ```swift
 func joined(separator: String = "") -> String
 ```
+
+Available when `Element` conforms to `StringProtocol`.
 
 #### Return Value
 
@@ -41,15 +44,16 @@ print(list)
 
 ## See Also
 
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](array/split(separator:maxsplits:omittingemptysubsequences:)-3dgmv.md)
+### Splitting and Joining Elements
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./split%28separator,maxsplits,omittingemptysubsequences%29-3dgmv.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](array/split(maxsplits:omittingemptysubsequences:whereseparator:).md)
+- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](./split%28maxsplits,omittingemptysubsequences,whereseparator%29.md)
   Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
-- [func joined() -> FlattenSequence<Self>](array/joined.md)
+- [func joined() -> FlattenSequence<Self>](./joined%28%29.md)
   Returns the elements of this sequence of sequences, concatenated.
-- [func joined<Separator>(separator: Separator) -> JoinedSequence<Self>](array/joined(separator:)-7uber.md)
+- [func joined<Separator>(separator: Separator) -> JoinedSequence<Self>](./joined%28separator%29-7uber.md)
   Returns the concatenated elements of this sequence of sequences, inserting the given separator between each element.
-- [func joined(separator: String) -> String](array/joined(separator:)-5do1g.md)
+- [func joined(separator: String) -> String](./joined%28separator%29-5do1g.md)
   Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBServerConnectType](1645101-anonymous/kiofbserverconnecttype.md)
-- [kIOFBSharedConnectType](1645101-anonymous/kiofbsharedconnecttype.md)
-- [kIODisplayAssertionConnectType](1645101-anonymous/kiodisplayassertionconnecttype.md)
-- [kIOGDiagnoseConnectType](1645101-anonymous/kiogdiagnoseconnecttype.md)
-- [kIOGDiagnoseGTraceType](1645101-anonymous/kiogdiagnosegtracetype.md)
+- [kIOFBServerConnectType](./api-1645101-anonymous/kiofbserverconnecttype.md)
+- [kIOFBSharedConnectType](./api-1645101-anonymous/kiofbsharedconnecttype.md)
+- [kIODisplayAssertionConnectType](./api-1645101-anonymous/kiodisplayassertionconnecttype.md)
+- [kIOGDiagnoseConnectType](./api-1645101-anonymous/kiogdiagnoseconnecttype.md)
+- [kIOGDiagnoseGTraceType](./api-1645101-anonymous/kiogdiagnosegtracetype.md)
 
 
 ---

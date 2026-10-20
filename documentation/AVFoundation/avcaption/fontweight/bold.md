@@ -1,7 +1,8 @@
 # AVCaption.FontWeight.bold
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bold font weight.
 
@@ -17,11 +18,16 @@ A bold font weight.
 case bold
 ```
 
+```c
+AVCaptionFontWeightBold
+```
+
 ## See Also
 
-- [AVCaption.FontWeight.unknown](avcaption/fontweight/unknown.md)
+### Font weights
+- [AVCaption.FontWeight.unknown](./unknown.md)
   An unknown font weight.
-- [AVCaption.FontWeight.normal](avcaption/fontweight/normal.md)
+- [AVCaption.FontWeight.normal](./normal.md)
   A normal font weight.
 
 

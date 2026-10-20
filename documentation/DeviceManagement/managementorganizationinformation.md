@@ -1,7 +1,8 @@
 # ManagementOrganizationInformation
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure the managing organization’s contact information.
 
@@ -16,7 +17,7 @@ The declaration to configure the managing organization’s contact information.
 
 ## Declaration
 
-```swift
+```
 object ManagementOrganizationInformation
 ```
 
@@ -24,7 +25,7 @@ object ManagementOrganizationInformation
 
 Specify `com.apple.management.organization-info` as the declaration type.
 
-##### Management Declaration Example
+##### Management declaration example
 
 ```json
 {
@@ -42,7 +43,7 @@ Specify `com.apple.management.organization-info` as the declaration type.
 ## Topics
 
 ### Objects
-- [object ManagementOrganizationInformationProofObject](managementorganizationinformationproofobject.md)
+- [object ManagementOrganizationInformationProofObject](./managementorganizationinformationproofobject.md)
   The additional properties that verify the identity and authenticity of the organization.
 
 ## Properties
@@ -54,9 +55,10 @@ Specify `com.apple.management.organization-info` as the declaration type.
 
 ## See Also
 
-- [object ManagementProperties](managementproperties.md)
+### Management
+- [object ManagementProperties](./managementproperties.md)
   The declaration to configure the properties on the device.
-- [object ManagementServerCapabilities](managementservercapabilities.md)
+- [object ManagementServerCapabilities](./managementservercapabilities.md)
   The declaration to configure the server’s feature set.
 
 

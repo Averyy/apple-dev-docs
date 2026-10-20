@@ -1,7 +1,8 @@
 # removeRDD18AncillaryData(forTag:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the user to remove the ancillary data associated with the tag.
 
@@ -16,6 +17,10 @@ Allows the user to remove the ancillary data associated with the tag.
 
 ```swift
 func removeRDD18AncillaryData(forTag tag: UInt16)
+```
+
+```objc
+- (void) removeRDD18AncillaryDataForTag:(uint16_t) tag;
 ```
 
 ## Parameters

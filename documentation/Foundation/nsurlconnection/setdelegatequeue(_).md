@@ -1,7 +1,8 @@
 # setDelegateQueue(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines the operation queue that is used to call methods on the connection’s delegate.
 
@@ -20,13 +21,17 @@ Determines the operation queue that is used to call methods on the connection’
 func setDelegateQueue(_ queue: OperationQueue?)
 ```
 
+```objc
+- (void) setDelegateQueue:(NSOperationQueue *) queue;
+```
+
 #### Discussion
 
-By default, a connection is scheduled on the current thread in the default mode when it is created. If you create a connection with the [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) method and provide [`false`](https://developer.apple.com/documentation/swift/false) for the `startImmediately` parameter, you can instead schedule the connection on an operation queue before starting it with the [`start()`](nsurlconnection/start().md) method.
+By default, a connection is scheduled on the current thread in the default mode when it is created. If you create a connection with the [`init(request:delegate:startImmediately:)`](./init%28request,delegate,startimmediately%29.md) method and provide [`false`](../../Swift/false.md) for the `startImmediately` parameter, you can instead schedule the connection on an operation queue before starting it with the [`start()`](./start%28%29.md) method.
 
 You cannot reschedule a connection after it has started.
 
-It is an error to schedule delegate method calls with both this method and the [`schedule(in:forMode:)`](nsurlconnection/schedule(in:formode:).md) method.
+It is an error to schedule delegate method calls with both this method and the [`schedule(in:forMode:)`](./schedule%28in,formode%29.md) method.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ It is an error to schedule delegate method calls with both this method and the [
 
 ## See Also
 
-- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](nsurlconnection/schedule(in:formode:).md)
+### Scheduling Delegate Method Calls
+- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](./schedule%28in,formode%29.md)
   Determines the run loop and mode that the connection uses to call methods on its delegate.
-- [func unschedule(from: RunLoop, forMode: RunLoop.Mode)](nsurlconnection/unschedule(from:formode:).md)
+- [func unschedule(from: RunLoop, forMode: RunLoop.Mode)](./unschedule%28from,formode%29.md)
   Causes the connection to stop calling delegate methods in the specified run loop and mode.
 
 

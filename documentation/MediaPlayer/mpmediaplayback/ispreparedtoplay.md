@@ -2,6 +2,7 @@
 
 **Framework**: Media Player  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether a media player is ready to play.
@@ -19,19 +20,24 @@ A Boolean value indicating whether a media player is ready to play.
 var isPreparedToPlay: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isPreparedToPlay;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media player is ready to begin playing the queued media items.
+When set to [`true`](../../Swift/true.md), the media player is ready to begin playing the queued media items.
 
 ## See Also
 
-- [func play()](mpmediaplayback/play.md)
+### Starting and stopping playback
+- [func play()](./play%28%29.md)
   Initiates playback of the current item.
-- [func pause()](mpmediaplayback/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses playback of the current item.
-- [func stop()](mpmediaplayback/stop.md)
+- [func stop()](./stop%28%29.md)
   Ends playback of the current item.
-- [func prepareToPlay()](mpmediaplayback/preparetoplay.md)
+- [func prepareToPlay()](./preparetoplay%28%29.md)
   Prepares a media player for playback.
 
 

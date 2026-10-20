@@ -1,12 +1,13 @@
 # rawValue
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw integer value of a possible selection behavior constant.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

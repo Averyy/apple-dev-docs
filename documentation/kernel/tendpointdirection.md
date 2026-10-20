@@ -1,14 +1,15 @@
 # tEndpointDirection
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tEndpointDirection : unsigned int {
     ...
 } tEndpointDirection;
@@ -17,9 +18,9 @@ typedef enum tEndpointDirection : unsigned int {
 ## Topics
 
 ### Constants
-- [kEndpointDirectionIn](tendpointdirection/kendpointdirectionin.md)
-- [kEndpointDirectionOut](tendpointdirection/kendpointdirectionout.md)
-- [kEndpointDirectionUnknown](tendpointdirection/kendpointdirectionunknown.md)
+- [kEndpointDirectionIn](./tendpointdirection/kendpointdirectionin.md)
+- [kEndpointDirectionOut](./tendpointdirection/kendpointdirectionout.md)
+- [kEndpointDirectionUnknown](./tendpointdirection/kendpointdirectionunknown.md)
 
 
 ---

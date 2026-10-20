@@ -1,7 +1,8 @@
 # IKCameraDeviceViewTransferMode.fileBased
 
 **Framework**: Quartz  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Transferred files will be saved to disk by the delegate.
 
@@ -14,9 +15,14 @@ Transferred files will be saved to disk by the delegate.
 case fileBased
 ```
 
+```c
+IKCameraDeviceViewTransferModeFileBased
+```
+
 ## See Also
 
-- [IKCameraDeviceViewTransferMode.memoryBased](ikcameradeviceviewtransfermode/memorybased.md)
+### Constants
+- [IKCameraDeviceViewTransferMode.memoryBased](./memorybased.md)
   Transferred files will be supplied to the delegate as an `NSData` object.
 
 

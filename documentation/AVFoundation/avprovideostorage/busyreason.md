@@ -1,7 +1,8 @@
 # AVProVideoStorage.BusyReason
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reason that Pro Video Storage may be busy.
 
@@ -18,30 +19,35 @@ A reason that Pro Video Storage may be busy.
 struct BusyReason
 ```
 
+```c
+typedef NSString * AVProVideoStorageBusyReason;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](avprovideostorage/busyreason/init(rawvalue:).md)
+- [init(rawValue: String)](./busyreason/init%28rawvalue%29.md)
 ### Type Properties
-- [static let adjustingCapacity: AVProVideoStorage.BusyReason](avprovideostorage/busyreason/adjustingcapacity.md)
+- [static let adjustingCapacity: AVProVideoStorage.BusyReason](./busyreason/adjustingcapacity.md)
   Pro Video Storage is being created or resized.
-- [static let capturing: AVProVideoStorage.BusyReason](avprovideostorage/busyreason/capturing.md)
+- [static let capturing: AVProVideoStorage.BusyReason](./busyreason/capturing.md)
   A capture to Pro Video Storage is in progress.
-- [static let replenishing: AVProVideoStorage.BusyReason](avprovideostorage/busyreason/replenishing.md)
+- [static let replenishing: AVProVideoStorage.BusyReason](./busyreason/replenishing.md)
   Pro Video Storage capacity is being replenished.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var busyReasons: Set<AVProVideoStorage.BusyReason>](avprovideostorage/busyreasons.md)
+### Determining whether storage is busy
+- [var busyReasons: Set<AVProVideoStorage.BusyReason>](./busyreasons.md)
   Whether Pro Video Storage is busy and the associated reasons.
 
 

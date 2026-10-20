@@ -1,7 +1,8 @@
 # init(axialHeadroom:space:start:end:function:extendStart:extendEnd:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(axialHeadroom headroom: Float, space: CGColorSpace, start: CGPoint, end: CGPoint, function: CGFunction, extendStart: Bool, extendEnd: Bool)
+```
+
+```c
+extern CGShadingRefCGShadingCreateAxialWithContentHeadroom(float headroom, CGColorSpaceRef space, CGPoint start, CGPoint end, CGFunctionRef function, bool extendStart, bool extendEnd);
 ```
 
 

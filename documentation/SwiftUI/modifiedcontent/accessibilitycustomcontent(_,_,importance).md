@@ -1,7 +1,8 @@
 # accessibilityCustomContent(_:_:importance:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add additional accessibility information to the view.
 
@@ -19,6 +20,55 @@ Add additional accessibility information to the view.
 ```swift
 @export(implementation)
 nonisolated func accessibilityCustomContent(_ key: AccessibilityCustomContentKey, _ valueResource: LocalizedStringResource, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated func accessibilityCustomContent(_ label: LocalizedStringResource, _ value: Text, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+@export(implementation)
+nonisolated func accessibilityCustomContent(_ label: LocalizedStringResource, _ valueResource: LocalizedStringResource, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityCustomContent(_ key: AccessibilityCustomContentKey, _ value: Text?, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityCustomContent(_ key: AccessibilityCustomContentKey, _ valueKey: LocalizedStringKey, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityCustomContent(_ label: Text, _ value: Text, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityCustomContent(_ labelKey: LocalizedStringKey, _ value: Text, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityCustomContent(_ labelKey: LocalizedStringKey, _ valueKey: LocalizedStringKey, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityCustomContent<V>(_ key: AccessibilityCustomContentKey, _ value: V, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier> where V : StringProtocol
+```
+
+```swift
+nonisolated
+func accessibilityCustomContent<V>(_ labelKey: LocalizedStringKey, _ value: V, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Content, Modifier> where V : StringProtocol
 ```
 
 #### Discussion

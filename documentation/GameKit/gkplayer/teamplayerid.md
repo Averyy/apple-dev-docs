@@ -1,7 +1,8 @@
 # teamPlayerID
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for a player of all the games that you distribute using your developer account.
 
@@ -19,29 +20,42 @@ A unique identifier for a player of all the games that you distribute using your
 var teamPlayerID: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, retain, readonly, nonnull) NSString * teamPlayerID;
+```
+
+*macOS*
+
+```objc
+@property (atomic, retain, readonly, nonnull) NSString * teamPlayerID;
+```
+
 ## Mentions
 
-- [Protecting the player’s privacy using scoped identifiers](protecting-the-player-s-privacy-using-scoped-identifiers.md)
+- [Protecting the player’s privacy using scoped identifiers](../protecting-the-player-s-privacy-using-scoped-identifiers.md)
 
 #### Discussion
 
-This identifier is unique to this game instance if the [`scopedIDsArePersistent()`](gkplayer/scopedidsarepersistent().md) method returns [`false`](https://developer.apple.com/documentation/swift/false). Otherwise, this identifier is the same across all game instances of your games that use the same developer Team ID. An instance is the time between when the game launches and when the game terminates. For more information about the Team ID, see [`Locate your Team ID`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-your-team/locate-your-team-id).
+This identifier is unique to this game instance if the [`scopedIDsArePersistent()`](./scopedidsarepersistent%28%29.md) method returns [`false`](../../Swift/false.md). Otherwise, this identifier is the same across all game instances of your games that use the same developer Team ID. An instance is the time between when the game launches and when the game terminates. For more information about the Team ID, see [Locate your Team ID](https://developer.apple.com/help/account/manage-your-team/locate-your-team-id).
 
-For the local player (a [`GKLocalPlayer`](gklocalplayer.md) object), this identifier is the same across all local player instances of your games. If the player is friends with the local player, this identifier is the same across all local player and friend game instances. To determine whether the player is a friend, use the [`loadFriends(_:)`](gklocalplayer/loadfriends(_:).md) method.
+For the local player (a [`GKLocalPlayer`](../gklocalplayer.md) object), this identifier is the same across all local player instances of your games. If the player is friends with the local player, this identifier is the same across all local player and friend game instances. To determine whether the player is a friend, use the [`loadFriends(_:)`](../gklocalplayer/loadfriends%28_%29.md) method.
 
-To protect the player’s privacy, use the [`gamePlayerID`](gkplayer/gameplayerid.md) property instead of the [`teamPlayerID`](gkplayer/teamplayerid.md) property. If you need to use the [`teamPlayerID`](gkplayer/teamplayerid.md) for tracking players across multiple games, also store the [`gamePlayerID`](gkplayer/gameplayerid.md) property. For more information, see [`Protecting the player’s privacy using scoped identifiers`](protecting-the-player-s-privacy-using-scoped-identifiers.md).
+To protect the player’s privacy, use the [`gamePlayerID`](./gameplayerid.md) property instead of the [`teamPlayerID`](./teamplayerid.md) property. If you need to use the [`teamPlayerID`](./teamplayerid.md) for tracking players across multiple games, also store the [`gamePlayerID`](./gameplayerid.md) property. For more information, see [Protecting the player’s privacy using scoped identifiers](../protecting-the-player-s-privacy-using-scoped-identifiers.md).
 
-If you transfer your game to another developer, the [`teamPlayerID`](gkplayer/teamplayerid.md) property isn’t the same for the new developer. For more information, see [`Overview of app transfer`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/transfer-an-app/overview-of-app-transfer).
+If you transfer your game to another developer, the [`teamPlayerID`](./teamplayerid.md) property isn’t the same for the new developer. For more information, see [Overview of app transfer](https://developer.apple.com/help/app-store-connect/transfer-an-app/overview-of-app-transfer).
 
 ## See Also
 
-- [var gamePlayerID: String](gkplayer/gameplayerid.md)
+### Identifying the player
+- [var gamePlayerID: String](./gameplayerid.md)
   A unique identifier for a player of the game.
-- [func scopedIDsArePersistent() -> Bool](gkplayer/scopedidsarepersistent.md)
+- [func scopedIDsArePersistent() -> Bool](./scopedidsarepersistent%28%29.md)
   Returns a Boolean value depending on whether the player identifiers are persistent across game instances or unique to the game instance.
-- [let GKPlayerIDNoLongerAvailable: String](gkplayeridnolongeravailable.md)
+- [let GKPlayerIDNoLongerAvailable: String](../gkplayeridnolongeravailable.md)
   A constant for a player ID that’s no longer available.
-- [var playerID: String](gkplayer/playerid.md)
+- [var playerID: String](./playerid.md)
   A unique identifier for a player of the game.
 
 

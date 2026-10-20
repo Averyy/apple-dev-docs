@@ -1,12 +1,13 @@
 # NSFontCollection.ActionTypeKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The following actions are possible values of the [`actionUserInfoKey`](nsfontcollection/actionuserinfokey.md) in the [`didChangeNotification`](nsfontcollection/didchangenotification.md) `userInfo` method.
+The following actions are possible values of the [`actionUserInfoKey`](./actionuserinfokey.md) in the [`didChangeNotification`](./didchangenotification.md) `userInfo` method.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,33 +15,38 @@ The following actions are possible values of the [`actionUserInfoKey`](nsfontcol
 struct ActionTypeKey
 ```
 
+```c
+typedef NSString * NSFontCollectionActionTypeKey;
+```
+
 ## Topics
 
 ### Action Key Types
-- [static let shown: NSFontCollection.ActionTypeKey](nsfontcollection/actiontypekey/shown.md)
+- [static let shown: NSFontCollection.ActionTypeKey](./actiontypekey/shown.md)
   The font collection was shown.
-- [static let hidden: NSFontCollection.ActionTypeKey](nsfontcollection/actiontypekey/hidden.md)
+- [static let hidden: NSFontCollection.ActionTypeKey](./actiontypekey/hidden.md)
   The font collection was hidden.
-- [static let renamed: NSFontCollection.ActionTypeKey](nsfontcollection/actiontypekey/renamed.md)
+- [static let renamed: NSFontCollection.ActionTypeKey](./actiontypekey/renamed.md)
   The font collection was renamed.
 ### Initializers
-- [init(rawValue: String)](nsfontcollection/actiontypekey/init(rawvalue:).md)
+- [init(rawValue: String)](./actiontypekey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let didChangeNotification: NSNotification.Name](nsfontcollection/didchangenotification.md)
+### Responding to Changes
+- [class let didChangeNotification: NSNotification.Name](./didchangenotification.md)
   Posted whenever a font collection is changed.
-- [NSFontCollection.UserInfoKey](nsfontcollection/userinfokey.md)
-  These constants are used as keys in the [`didChangeNotification`](nsfontcollection/didchangenotification.md) `userInfo` dictionary to indicate the changes that have taken place.
+- [NSFontCollection.UserInfoKey](./userinfokey.md)
+  These constants are used as keys in the [`didChangeNotification`](./didchangenotification.md) `userInfo` dictionary to indicate the changes that have taken place.
 
 
 ---

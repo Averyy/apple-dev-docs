@@ -1,7 +1,8 @@
 # safeAreaPadding(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the provided insets into the safe area of this view.
 
@@ -36,19 +37,20 @@ ScrollView(.horizontal) {
 .safeAreaPadding(.horizontal, 20.0)
 ```
 
-See the horizontal [`safeAreaInset(edge:alignment:spacing:content:)`](view/safeareainset(edge:alignment:spacing:content:)-6gwby.md) or vertical [`safeAreaInset(edge:alignment:spacing:content:)`](view/safeareainset(edge:alignment:spacing:content:)-4s51l.md) modifier for adding to the safe area based on the size of a view.
+See the horizontal [`safeAreaInset(edge:alignment:spacing:content:)`](./safeareainset%28edge,alignment,spacing,content%29-6gwby.md) or vertical [`safeAreaInset(edge:alignment:spacing:content:)`](./safeareainset%28edge,alignment,spacing,content%29-4s51l.md) modifier for adding to the safe area based on the size of a view.
 
 ## See Also
 
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
+### Staying in the safe areas
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](./ignoressafearea%28_,edges%29.md)
   Expands the safe area of a view.
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](./ignoressafearea%28_,edges,alignment%29.md)
   Expands the safe area of a view aligning content within the new bounds using the provided alignment.
-- [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
+- [func safeAreaInset(edge:alignment:spacing:content:)](./safeareainset%28edge,alignment,spacing,content%29.md)
   Shows the specified content beside the modified view.
-- [func safeAreaPadding(_:)](view/safeareapadding(_:).md)
+- [func safeAreaPadding(_:)](./safeareapadding%28_%29.md)
   Adds the provided insets into the safe area of this view.
-- [struct SafeAreaRegions](safearearegions.md)
+- [struct SafeAreaRegions](../safearearegions.md)
   A set of symbolic safe area regions.
 
 

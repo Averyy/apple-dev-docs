@@ -1,7 +1,8 @@
 # navigationTransitionMetric
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A metric that records the duration of navigation transitions between views.
 
@@ -19,9 +20,14 @@ A metric that records the duration of navigation transitions between views.
 class var navigationTransitionMetric: any XCTMetric { get }
 ```
 
+```objc
+@property (class, readonly) id<XCTMetric> navigationTransitionMetric;
+```
+
 ## See Also
 
-- [class var customNavigationTransitionMetric: any XCTMetric](xctossignpostmetric/customnavigationtransitionmetric.md)
+### Measuring Navigation Transitions
+- [class var customNavigationTransitionMetric: any XCTMetric](./customnavigationtransitionmetric.md)
   A metric that records the duration of custom navigation transitions between views.
 
 

@@ -1,7 +1,8 @@
 # dewPoint
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The temperature at which relative humidity is 100%.
 
@@ -22,11 +23,12 @@ var dewPoint: Measurement<UnitTemperature>
 
 ## See Also
 
-- [var apparentTemperature: Measurement<UnitTemperature>](currentweather/apparenttemperature.md)
+### Getting temperature and humidity
+- [var apparentTemperature: Measurement<UnitTemperature>](./apparenttemperature.md)
   The feels-like temperature when factoring wind and humidity.
-- [var humidity: Double](currentweather/humidity.md)
+- [var humidity: Double](./humidity.md)
   The amount of water vapor in the air.
-- [var temperature: Measurement<UnitTemperature>](currentweather/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./temperature.md)
   The current temperature.
 
 

@@ -1,7 +1,8 @@
 # monthlyStatistics(for:startMonth:endMonth:including:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns monthly weather statistics for the requested location, for each month from the start month to the end month, inclusively.
 
@@ -26,7 +27,7 @@ The requested monthly weather statistics.
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 The statistics returned for each month are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular Gregorian Calendar month of the year.
 
@@ -42,7 +43,7 @@ If `start` comes after `end` in the year, then a wrap around will occur. This ne
 let (monthlyPrecipitationStatistics, monthlyTemperatureStatistics) = try await service.monthlyStatistics(for: newYork, startMonth: 11, endMonth: 2, including: .precipitation, .temperature)
 ```
 
-> **Note**: `startMonth in 1...12 && endMonth in 1...12`
+> **Precondition**: `startMonth in 1...12 && endMonth in 1...12`
 
 ## Parameters
 

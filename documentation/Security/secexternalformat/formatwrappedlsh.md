@@ -1,7 +1,8 @@
 # SecExternalFormat.formatWrappedLSH
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Not supported.
 
@@ -12,6 +13,10 @@ Not supported.
 
 ```swift
 case formatWrappedLSH
+```
+
+```c
+kSecFormatWrappedLSH
 ```
 
 

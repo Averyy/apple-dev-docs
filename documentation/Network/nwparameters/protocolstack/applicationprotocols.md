@@ -1,7 +1,8 @@
 # applicationProtocols
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of application protocol options used by connections and listeners.
 

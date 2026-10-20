@@ -1,22 +1,27 @@
 # CIDataMatrixCodeDescriptor.ECCVersion
 
 **Framework**: Core Image  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the Data Matrix code ECC version.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum ECCVersion
+```
+
+```c
+enum CIDataMatrixCodeECCVersion : NSInteger;
 ```
 
 #### Overview
@@ -28,30 +33,30 @@ ECC 200 symbols utilize Reed-Solomon error correction. The error correction capa
 ## Topics
 
 ### Enumeration Cases
-- [CIDataMatrixCodeDescriptor.ECCVersion.v000](cidatamatrixcodedescriptor/eccversion-swift.enum/v000.md)
+- [CIDataMatrixCodeDescriptor.ECCVersion.v000](./eccversion-swift.enum/v000.md)
   Indicates error correction using convolutional code error correction with no data protection.
-- [CIDataMatrixCodeDescriptor.ECCVersion.v050](cidatamatrixcodedescriptor/eccversion-swift.enum/v050.md)
+- [CIDataMatrixCodeDescriptor.ECCVersion.v050](./eccversion-swift.enum/v050.md)
   Indicates 1/4 of the symbol is dedicated to convolutional code error correction.
-- [CIDataMatrixCodeDescriptor.ECCVersion.v080](cidatamatrixcodedescriptor/eccversion-swift.enum/v080.md)
+- [CIDataMatrixCodeDescriptor.ECCVersion.v080](./eccversion-swift.enum/v080.md)
   Indicates 1/3 of the symbol is dedicated to convolutional code error correction.
-- [CIDataMatrixCodeDescriptor.ECCVersion.v100](cidatamatrixcodedescriptor/eccversion-swift.enum/v100.md)
+- [CIDataMatrixCodeDescriptor.ECCVersion.v100](./eccversion-swift.enum/v100.md)
   Indicates 1/2 of the symbol is dedicated to convolutional code error correction.
-- [CIDataMatrixCodeDescriptor.ECCVersion.v140](cidatamatrixcodedescriptor/eccversion-swift.enum/v140.md)
+- [CIDataMatrixCodeDescriptor.ECCVersion.v140](./eccversion-swift.enum/v140.md)
   Indicates 3/4 of the symbol is dedicated to convolutional code error correction.
-- [CIDataMatrixCodeDescriptor.ECCVersion.v200](cidatamatrixcodedescriptor/eccversion-swift.enum/v200.md)
+- [CIDataMatrixCodeDescriptor.ECCVersion.v200](./eccversion-swift.enum/v200.md)
   Indicates error correction using Reed-Solomon error correction. Data protection overhead varies based on symbol size.
 ### Initializers
-- [init?(rawValue: Int)](cidatamatrixcodedescriptor/eccversion-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./eccversion-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

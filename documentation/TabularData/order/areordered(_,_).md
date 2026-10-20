@@ -1,7 +1,8 @@
 # areOrdered(_:_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean that indicates whether the comparable types match the order’s state.
 
@@ -27,9 +28,10 @@ func areOrdered<T>(_ lhs: T, _ rhs: T) -> Bool where T : Comparable
 
 ## See Also
 
-- [Order.ascending](order/ascending.md)
+### Getting the Properties
+- [Order.ascending](./ascending.md)
   A sort ordering that starts with the lowest value and monotonically proceeds to higher values.
-- [Order.descending](order/descending.md)
+- [Order.descending](./descending.md)
   A sort ordering that starts with the highest value and monotonically proceeds to lower values.
 
 

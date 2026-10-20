@@ -1,18 +1,19 @@
 # customField(evaluationBlock:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a field that runs the specified block to determine the force a field applies to each object in its area of effect.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,21 @@ Creates a field that runs the specified block to determine the force a field app
 class func customField(evaluationBlock block: @escaping SCNFieldForceEvaluator) -> SCNPhysicsField
 ```
 
+```objc
++ (SCNPhysicsField *) customFieldWithEvaluationBlock:(SCNFieldForceEvaluator) block;
+```
+
 #### Return Value
 
-A physics field object. To use the field in a scene, attach it to the [`physicsField`](scnnode/physicsfield.md) property of an [`SCNNode`](scnnode.md) object.
+A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
 #### Discussion
 
-For custom physics fields, SceneKit ignores the [`direction`](scnphysicsfield/direction.md), [`strength`](scnphysicsfield/strength.md), [`falloffExponent`](scnphysicsfield/falloffexponent.md), and [`minimumDistance`](scnphysicsfield/minimumdistance.md) properties. Instead, SceneKit calls your block to determine the direction and magnitude of force to apply to each physics body or particle in the field’s area of effect.
+For custom physics fields, SceneKit ignores the [`direction`](./direction.md), [`strength`](./strength.md), [`falloffExponent`](./falloffexponent.md), and [`minimumDistance`](./minimumdistance.md) properties. Instead, SceneKit calls your block to determine the direction and magnitude of force to apply to each physics body or particle in the field’s area of effect.
 
 ## Parameters
 
-- `block`: A block that SceneKit runs for each object in the field’s area of effect. See [`SCNFieldForceEvaluator`](scnfieldforceevaluator.md).
+- `block`: A block that SceneKit runs for each object in the field’s area of effect. See [`SCNFieldForceEvaluator`](../scnfieldforceevaluator.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # AccountNotFoundRetryableError
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error response that indicates the App Store account wasn’t found, but you can try again.
 
@@ -10,22 +11,23 @@ An error response that indicates the App Store account wasn’t found, but you c
 
 ## Declaration
 
-```swift
+```
 object AccountNotFoundRetryableError
 ```
 
 ## Properties
 
-- `errorCode` (int64)
-- `errorMessage` (string)
+- `errorCode` (int64): **Allowed Values**: `4040002`
+- `errorMessage` (string): **Allowed Values**: `Account not found. Please try again.`
 
 ## See Also
 
-- [object AppNotFoundRetryableError](appnotfoundretryableerror.md)
+### Errors to retry
+- [object AppNotFoundRetryableError](./appnotfoundretryableerror.md)
   An error response that indicates the app wasn’t found, but you can try again.
-- [object GeneralInternalRetryableError](generalinternalretryableerror.md)
+- [object GeneralInternalRetryableError](./generalinternalretryableerror.md)
   An error response that indicates an unknown error occurred, but you can try again.
-- [object OriginalTransactionIdNotFoundRetryableError](originaltransactionidnotfoundretryableerror.md)
+- [object OriginalTransactionIdNotFoundRetryableError](./originaltransactionidnotfoundretryableerror.md)
   An error response that indicates the original transaction identifier wasn’t found, but you can try again.
 
 

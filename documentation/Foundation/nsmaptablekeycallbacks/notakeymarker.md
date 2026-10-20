@@ -1,7 +1,8 @@
 # notAKeyMarker
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 No key put in map table can be this value. An exception is raised if attempt is made to use this value as a key
 
@@ -18,6 +19,10 @@ No key put in map table can be this value. An exception is raised if attempt is 
 
 ```swift
 var notAKeyMarker: UnsafeRawPointer?
+```
+
+```c
+const void * notAKeyMarker;
 ```
 
 

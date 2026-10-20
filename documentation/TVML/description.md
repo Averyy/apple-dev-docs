@@ -18,89 +18,90 @@ The `description` element contains text used to describe a displayed element. Th
 </descriptiveAlertTemplate>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`alertTemplate`](alerttemplate.md)
-- [`banner`](banner.md)
-- [`descriptiveAlertTemplate`](descriptivealerttemplate.md)
-- [`header`](header.md)
-- [`lockup`](lockup.md)
-- [`overlay`](overlay.md)
-- [`relatedContent`](relatedcontent.md)
-- [`reviewCard`](reviewcard.md)
-- [`section`](section.md)
-- [`stackTemplate`](stacktemplate.md)
+- [alertTemplate](./alerttemplate.md)
+- [banner](./banner.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
+- [header](./header.md)
+- [lockup](./lockup.md)
+- [overlay](./overlay.md)
+- [relatedContent](./relatedcontent.md)
+- [reviewCard](./reviewcard.md)
+- [section](./section.md)
+- [stackTemplate](./stacktemplate.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [background-color](background-color.md)
+- [background-color](./background-color.md)
   Changes the background color of an element.
-- [color](color.md)
+- [color](./color.md)
   Changes the color of an element.
-- [font-family](font-family.md)
+- [font-family](./font-family.md)
   Specifies the font used for the text in an element.
-- [font-size](font-size.md)
+- [font-size](./font-size.md)
   Specifies the font size for the text in an element.
-- [font-weight](font-weight.md)
+- [font-weight](./font-weight.md)
   Specifies the font weight for the text in an element.
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [max-height](element-shaping-max-height.md)
+- [max-height](./element-shaping-max-height.md)
   Specifies the maximum height for an element.
-- [max-width](element-shaping-max-width.md)
+- [max-width](./element-shaping-max-width.md)
   Specifies the maximum width for an element.
-- [min-height](element-shaping-min-height.md)
+- [min-height](./element-shaping-min-height.md)
   Specifies the minimum height for an element.
-- [min-width](element-shaping-min-width.md)
+- [min-width](./element-shaping-min-width.md)
   Specifies the minimum width for an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [text-align](text-align.md)
+- [text-align](./text-align.md)
   Aligns text horizontally in an element.
-- [text-shadow](text-shadow.md)
+- [text-shadow](./text-shadow.md)
   Adds a shadow effect to displayed text.
-- [tv-highlight-color](tv-highlight-color.md)
+- [tv-highlight-color](./tv-highlight-color.md)
   Changes an element’s color when it comes into focus.
-- [tv-minimum-scale-factor](tv-minimum-scale-factor.md)
+- [tv-minimum-scale-factor](./tv-minimum-scale-factor.md)
   Sets the minimum size for text.
-- [tv-text-max-lines](tv-text-max-lines.md)
+- [tv-text-max-lines](./tv-text-max-lines.md)
   Specifies the maximum number of lines of text in an element.
-- [tv-text-style](tv-text-style.md)
+- [tv-text-style](./tv-text-style.md)
   Sets a predefined size and style for text.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [accessibilityText](accessibilitytext.md)
+- [accessibilityText](./accessibilitytext.md)
   Adds hidden text to an element that is used when VoiceOver is enabled.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [handlesOverflow](handlesoverflow.md)
+- [handlesOverflow](./handlesoverflow.md)
   Adds the “MORE” label to a description.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [showsScrollIndicator](showsscrollindicator.md)
+- [showsScrollIndicator](./showsscrollindicator.md)
   Shows a scroll indicator along the side of an element appropriate for the user’s specified language.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [decorationLabel](decorationlabel.md)
+### Text Elements
+- [decorationLabel](./decorationlabel.md)
   Displays text that describes a displayed element.
-- [date](date.md)
+- [date](./date.md)
   Displays a date.
-- [monogram](monogram.md)
+- [monogram](./monogram.md)
   Displays information below a `monogramLockup` element.
-- [ordinal](ordinal.md)
+- [ordinal](./ordinal.md)
   Displays a number.
-- [strike](strike.md)
+- [strike](./strike.md)
   Draws a line through the designated text.
-- [subtitle](subtitle.md)
+- [subtitle](./subtitle.md)
   Displays text below the subtitle’s containing element.
-- [text](text.md)
+- [text](./text.md)
   Displays text on the screen.
-- [title](title.md)
+- [title](./title.md)
   Displays a short amount of text.
 
 

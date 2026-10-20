@@ -1,7 +1,8 @@
 # timeoutIntervalForResource
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of time that a resource request should be allowed to take.
 
@@ -20,6 +21,10 @@ The maximum amount of time that a resource request should be allowed to take.
 var timeoutIntervalForResource: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval timeoutIntervalForResource;
+```
+
 #### Discussion
 
 This property determines the resource timeout interval for all tasks within sessions based on this configuration. The resource timeout interval controls how long (in seconds) to wait for an entire resource to transfer before giving up. The resource timer starts when the request is initiated and counts until either the request completes or this timeout interval is reached, whichever comes first.
@@ -28,21 +33,22 @@ The default value is 7 days.
 
 ## See Also
 
-- [var identifier: String?](urlsessionconfiguration/identifier.md)
+### Setting general properties
+- [var identifier: String?](./identifier.md)
   The background session identifier of the configuration object.
-- [var httpAdditionalHeaders: [AnyHashable : Any]?](urlsessionconfiguration/httpadditionalheaders.md)
+- [var httpAdditionalHeaders: [AnyHashable : Any]?](./httpadditionalheaders.md)
   A dictionary of additional headers to send with requests.
-- [var networkServiceType: NSURLRequest.NetworkServiceType](urlsessionconfiguration/networkservicetype.md)
+- [var networkServiceType: NSURLRequest.NetworkServiceType](./networkservicetype.md)
   The type of network service for all tasks within network sessions to enable Cellular Network Slicing.
-- [var allowsCellularAccess: Bool](urlsessionconfiguration/allowscellularaccess.md)
+- [var allowsCellularAccess: Bool](./allowscellularaccess.md)
   A Boolean value that determines whether connections should be made over a cellular network.
-- [var timeoutIntervalForRequest: TimeInterval](urlsessionconfiguration/timeoutintervalforrequest.md)
+- [var timeoutIntervalForRequest: TimeInterval](./timeoutintervalforrequest.md)
   The timeout interval to use when waiting for additional data.
-- [var sharedContainerIdentifier: String?](urlsessionconfiguration/sharedcontaineridentifier.md)
+- [var sharedContainerIdentifier: String?](./sharedcontaineridentifier.md)
   The identifier for the shared container into which files in background URL sessions should be downloaded.
-- [var waitsForConnectivity: Bool](urlsessionconfiguration/waitsforconnectivity.md)
+- [var waitsForConnectivity: Bool](./waitsforconnectivity.md)
   A Boolean value that indicates whether the session should wait for connectivity to become available, or fail immediately.
-- [var usesClassicLoadingMode: Bool](urlsessionconfiguration/usesclassicloadingmode.md)
+- [var usesClassicLoadingMode: Bool](./usesclassicloadingmode.md)
 
 
 ---

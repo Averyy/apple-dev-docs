@@ -1,7 +1,8 @@
 # MLObjectDetector.AnnotationType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available types of image annotations.
 
@@ -16,35 +17,36 @@ enum AnnotationType
 
 ## Mentions
 
-- [Building an object detector data source](building-an-object-detector-data-source.md)
+- [Building an object detector data source](../building-an-object-detector-data-source.md)
 
 #### Overview
 
-Use [`MLObjectDetector.AnnotationType`](mlobjectdetector/annotationtype.md) to tell Create ML how to interpret your object annotations.
+Use [`MLObjectDetector.AnnotationType`](./annotationtype.md) to tell Create ML how to interpret your object annotations.
 
 ## Topics
 
 ### Bounding box annotations
-- [case boundingBox(units: MLBoundingBoxUnits, origin: MLBoundingBoxCoordinatesOrigin, anchor: MLBoundingBoxAnchor)](mlobjectdetector/annotationtype/boundingbox(units:origin:anchor:).md)
+- [case boundingBox(units: MLBoundingBoxUnits, origin: MLBoundingBoxCoordinatesOrigin, anchor: MLBoundingBoxAnchor)](./annotationtype/boundingbox%28units,origin,anchor%29.md)
   An annotation type that defines a rectangle around an object within an image.
-- [enum MLBoundingBoxUnits](mlboundingboxunits.md)
+- [enum MLBoundingBoxUnits](../mlboundingboxunits.md)
   The units a bounding box annotation uses to define its position and size.
-- [enum MLBoundingBoxAnchor](mlboundingboxanchor.md)
+- [enum MLBoundingBoxAnchor](../mlboundingboxanchor.md)
   A location within a bounding box that an annotation’s coordinates use as their reference point.
-- [enum MLBoundingBoxCoordinatesOrigin](mlboundingboxcoordinatesorigin.md)
+- [enum MLBoundingBoxCoordinatesOrigin](../mlboundingboxcoordinatesorigin.md)
   The location within an image that an annotation’s coordinates use as their origin.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLObjectDetector.DataSource](mlobjectdetector/datasource.md)
+### Supporting types
+- [MLObjectDetector.DataSource](./datasource.md)
   A data source for an object detector.
-- [MLObjectDetector.ModelParameters](mlobjectdetector/modelparameters-swift.struct.md)
+- [MLObjectDetector.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training an object detection model.
 
 

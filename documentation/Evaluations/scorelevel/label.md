@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A short judge-facing label for this level.
@@ -24,6 +25,12 @@ var label: String { get }
 #### Discussion
 
 The default is `String(describing: self)`, which for enums produces the case name.
+
+## Default Implementations
+
+### ScoreLevel Implementations
+- [var label: String](./label-75ocw.md)
+  A short judge-facing label for this level.
 
 
 ---

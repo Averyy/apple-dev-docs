@@ -1,7 +1,8 @@
 # beginFinalPass
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates the last pass in a multi-pass compression session.
 
@@ -17,6 +18,10 @@ A flag that indicates the last pass in a multi-pass compression session.
 
 ```swift
 static var beginFinalPass: VTCompressionSessionOptionFlags { get }
+```
+
+```c
+kVTCompressionSessionBeginFinalPass
 ```
 
 

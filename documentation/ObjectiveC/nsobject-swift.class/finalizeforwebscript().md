@@ -1,7 +1,8 @@
 # finalizeForWebScript()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs cleanup when the scripting environment is reset.
 
@@ -12,6 +13,10 @@ Performs cleanup when the scripting environment is reset.
 
 ```swift
 func finalizeForWebScript()
+```
+
+```objc
+- (void) finalizeForWebScript;
 ```
 
 #### Discussion

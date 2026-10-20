@@ -1,7 +1,8 @@
 # ssid
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service set identifier (SSID) for the network profile, encoded as a string.
 
@@ -14,15 +15,20 @@ The service set identifier (SSID) for the network profile, encoded as a string.
 var ssid: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * ssid;
+```
+
 #### Discussion
 
 If the SSID can not be encoded as a valid UTF-8 or WinLatin1 string, this method returns *nil*.
 
 ## See Also
 
-- [var security: CWSecurity](cwnetworkprofile/security.md)
+### Instance Properties
+- [var security: CWSecurity](./security.md)
   The security mode for the network profile.
-- [var ssidData: Data?](cwnetworkprofile/ssiddata.md)
+- [var ssidData: Data?](./ssiddata.md)
   The service set identifier (SSID) for the network profile, returned as data.
 
 

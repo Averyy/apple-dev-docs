@@ -1,7 +1,8 @@
 # addDebugMarker(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a debug marker string to a specific buffer range.
 
@@ -11,7 +12,7 @@ Adds a debug marker string to a specific buffer range.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ func addDebugMarker(_ marker: String, range: Range<Int>)
 
 ## See Also
 
-- [func removeAllDebugMarkers()](mtlbuffer/removealldebugmarkers.md)
+### Debugging buffers
+- [func removeAllDebugMarkers()](./removealldebugmarkers%28%29.md)
   Removes all debug marker strings from the buffer.
 
 

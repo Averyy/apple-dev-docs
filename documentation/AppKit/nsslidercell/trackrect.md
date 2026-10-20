@@ -1,17 +1,22 @@
 # trackRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle within which the cell tracks the pointer while the mouse button is down.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var trackRect: NSRect { get }
+```
+
+```objc
+@property (readonly) NSRect trackRect;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The tracking rectangle includes the slider bar, but not the bezel.
 
 ## See Also
 
-- [var altIncrementValue: Double](nsslidercell/altincrementvalue.md)
+### Managing Cell Behavior
+- [var altIncrementValue: Double](./altincrementvalue.md)
   The amount by which the slider changes its value when the user Option-drags the knob.
-- [class var prefersTrackingUntilMouseUp: Bool](nsslidercell/preferstrackinguntilmouseup.md)
+- [class var prefersTrackingUntilMouseUp: Bool](./preferstrackinguntilmouseup.md)
   Returns a Boolean value indicating whether the `NSSliderCell` continues to track the pointer until the next mouse up.
 
 

@@ -1,7 +1,8 @@
 # OrgSystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-derived operational status of an organization.
 
@@ -10,23 +11,28 @@ System-derived operational status of an organization.
 
 ## Declaration
 
-```swift
+```
 string OrgSystemStatus
 ```
 
+## Possible Values
+
+- `ACTIVE`: The organization is active and operational.
+- `INACTIVE`: The organization is inactive. Check `systemStatusReasons` for the specific cause.
+
 ## See Also
 
-- [type ProductFeatures](productfeatures.md)
+- [type ProductFeatures](./productfeatures.md)
   Product features are the advertising capabilities for an ad account.
-- [type OrgSystemStatusReason](orgsystemstatusreason.md)
+- [type OrgSystemStatusReason](./orgsystemstatusreason.md)
   Reasons that can cause an organization’s system status to not be active.
-- [type AdAccountSystemStatus](adaccountsystemstatus.md)
+- [type AdAccountSystemStatus](./adaccountsystemstatus.md)
   System-derived operational status of an ad account.
-- [type AdAccountSystemStatusReason](adaccountsystemstatusreason.md)
+- [type AdAccountSystemStatusReason](./adaccountsystemstatusreason.md)
   Enumeration of reasons that can cause an ad account’s system status to be `INACTIVE`.
-- [object AdvertiserResourceListResponse](advertiserresourcelistresponse.md)
+- [object AdvertiserResourceListResponse](./advertiserresourcelistresponse.md)
   Response envelope for advertiser resource list requests.
-- [type AdvertiserResourceType](advertiserresourcetype.md)
+- [type AdvertiserResourceType](./advertiserresourcetype.md)
   The type of advertiser resource you delegate to an ad account.
 
 

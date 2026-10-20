@@ -1,7 +1,8 @@
 # BNNS.DescriptorType.constant
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that doesn’t have a gradient.
 
@@ -11,8 +12,10 @@ A constant that doesn’t have a gradient.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,9 +25,10 @@ case constant
 
 ## See Also
 
-- [BNNS.DescriptorType.parameter](bnns/descriptortype/parameter.md)
+### Descriptor Types
+- [BNNS.DescriptorType.parameter](./parameter.md)
   A parameter that’s trainable, such as weights or bias.
-- [BNNS.DescriptorType.sample](bnns/descriptortype/sample.md)
+- [BNNS.DescriptorType.sample](./sample.md)
   A sample such as input or output.
 
 

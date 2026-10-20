@@ -1,17 +1,18 @@
 # SCNetworkReachabilityCallBack
 
 **Framework**: System Configuration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type of callback function used when the reachability of a network address or name changes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,10 +20,14 @@ Type of callback function used when the reachability of a network address or nam
 typealias SCNetworkReachabilityCallBack = (SCNetworkReachability, SCNetworkReachabilityFlags, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const struct __SCNetworkReachability *, enum SCNetworkReachabilityFlags, void *) SCNetworkReachabilityCallBack;
+```
+
 ## Parameters
 
 - `target`: The network target being monitored for changes.
-- `flags`: The flags representing the reachability status of the network address or name (see [`SCNetworkReachabilityFlags`](scnetworkreachabilityflags.md) for information about these flags).
+- `flags`: The flags representing the reachability status of the network address or name (see [`SCNetworkReachabilityFlags`](./scnetworkreachabilityflags.md) for information about these flags).
 - `info`: A C pointer to a user-specified block of data.
 
 

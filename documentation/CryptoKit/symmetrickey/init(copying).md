@@ -1,7 +1,8 @@
 # init(copying:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a key from the given data.
 

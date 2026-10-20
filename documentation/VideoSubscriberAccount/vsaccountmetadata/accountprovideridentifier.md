@@ -1,7 +1,8 @@
 # accountProviderIdentifier
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the account provider.
 
@@ -9,7 +10,7 @@ The unique identifier of the account provider.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,13 +20,18 @@ The unique identifier of the account provider.
 var accountProviderIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * accountProviderIdentifier;
+```
+
 #### Discussion
 
 Use this property to brand your app.
 
 ## See Also
 
-- [var authenticationExpirationDate: Date?](vsaccountmetadata/authenticationexpirationdate.md)
+### Getting TV Provider Info
+- [var authenticationExpirationDate: Date?](./authenticationexpirationdate.md)
   The date when the user’s current authentication session expires.
 
 

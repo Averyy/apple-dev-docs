@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOPhysicalLength alignMask;
 ```
 
@@ -15,9 +15,10 @@ Currently unused. Reserved for automated aligment restriction code.
 
 ## See Also
 
-- [outSeg](iomemorycursor/outseg.md)
-- [maxTransferSize](iomemorycursor/maxtransfersize.md)
-- [maxSegmentSize](iomemorycursor/maxsegmentsize.md)
+### Instance Variables
+- [outSeg](./outseg.md)
+- [maxTransferSize](./maxtransfersize.md)
+- [maxSegmentSize](./maxsegmentsize.md)
 
 
 ---

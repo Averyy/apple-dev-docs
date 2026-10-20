@@ -1,14 +1,15 @@
 # nspace_path_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef char nspace_path_t[8192];
 ```
 

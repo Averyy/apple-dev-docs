@@ -1,6 +1,7 @@
 # Managing sparse texture memory
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Take direct control of memory allocation for texture data by using sparse textures.
 
@@ -10,11 +11,11 @@ When you create a texture, by default, Metal allocates memory to hold the textur
 
 To use sparse textures, allocate a sparse heap from which to allocate memory, and then create sparse textures from this heap. Initially, a texture has no storage. To add storage to a region inside the texture, ask the GPU to map memory from the heap for that region. A *sparse tile* is a memory allocation (as opposed to memory tiles a GPU uses for tile-based rendering). Sparse tiles are conceptually similar to virtual memory pages. When you don’t need a region to have storage, you can unmap its sparse tile and recover that memory.
 
-![A figure showing a single sparse heap and two sparse textures. Each texture has a few regions mapped to sparse tiles on the heap.](/images/com.apple.metal/managing-sparse-texture-memory-1@2x.png)
+![A figure showing a single sparse heap and two sparse textures. Each texture has a few regions mapped to sparse tiles on the heap.](https://developer.apple.com/tutorials/images/com.apple.metal/managing-sparse-texture-memory-1@2x.png)
 
-Because sparse textures work closely with texture mipmaps, you should be familiar with mipmaps before using sparse textures. For more information, see [`Improving texture sampling quality and performance with mipmaps`](improving-texture-sampling-quality-and-performance-with-mipmaps.md).
+Because sparse textures work closely with texture mipmaps, you should be familiar with mipmaps before using sparse textures. For more information, see [Improving texture sampling quality and performance with mipmaps](./improving-texture-sampling-quality-and-performance-with-mipmaps.md).
 
-##### Check for Sparse Texture Support
+##### Check for sparse texture support
 
 Not all GPUs support sparse textures. Check for support on the device object before attempting to use sparse textures:
 
@@ -27,25 +28,26 @@ Not all GPUs support sparse textures. Check for support on the device object bef
 
 ## See Also
 
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
+### Sparse textures
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](./converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](./assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Reading and writing to sparse textures](reading-and-writing-to-sparse-textures.md)
+- [Reading and writing to sparse textures](./reading-and-writing-to-sparse-textures.md)
   Decide how to handle access to unmapped texture regions.
-- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](./estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
-- [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
+- [class MTLResourceStatePassDescriptor](./mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](mtlresourcestatepasssamplebufferattachmentdescriptor.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](./mtlresourcestatepasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a resource state pass.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
   An array of sample buffer attachments for a resource state pass.
-- [protocol MTLResourceStateCommandEncoder](mtlresourcestatecommandencoder.md)
+- [protocol MTLResourceStateCommandEncoder](./mtlresourcestatecommandencoder.md)
   An encoder that encodes commands that modify resource configurations.
-- [struct MTLMapIndirectArguments](mtlmapindirectarguments.md)
+- [struct MTLMapIndirectArguments](./mtlmapindirectarguments.md)
   The data layout for mapping sparse texture regions when using indirect commands.
 
 

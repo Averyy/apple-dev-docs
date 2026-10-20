@@ -1,15 +1,18 @@
 # pirServerURL
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that contains the domain name of the PIR server.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
+- iOS 26.0+ - Deprecated in 27.2
+- iPadOS 26.0+ - Deprecated in 27.2
+- Mac Catalyst 26.0+ - Deprecated in 27.2
+- macOS 26.0+ - Deprecated in 27.2
+
+> **Deprecated**: Set the PIR server URL in your information property list in the `NSPIRConfiguration` dictionary.
 
 ## Declaration
 
@@ -25,13 +28,14 @@ To use the PIR server for URL filtering, make sure the server contains a PIR use
 
 ## See Also
 
-- [var pirAuthenticationToken: String?](neurlfiltermanager/pirauthenticationtoken.md)
+### Working with a Private Information Retrieval server
+- [var pirAuthenticationToken: String?](./pirauthenticationtoken.md)
   A PIR per-user authentication token string.
-- [func refreshPIRParameters() async throws](neurlfiltermanager/refreshpirparameters.md)
+- [func refreshPIRParameters() async throws](./refreshpirparameters%28%29.md)
   Refetches PIR parameters from the server.
-- [func resetPIRCache() async throws](neurlfiltermanager/resetpircache.md)
+- [func resetPIRCache() async throws](./resetpircache%28%29.md)
   Resets the PIR on-device cache.
-- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
+- [var pirPrivacyPassIssuerURL: URL?](./pirprivacypassissuerurl.md)
   A URL that contains the domain name of Privacy Pass issuer.
 
 

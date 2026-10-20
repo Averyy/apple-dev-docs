@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothVoiceSettingInputCodingALawInputCoding](1640171-anonymous/kbluetoothvoicesettinginputcodingalawinputcoding.md)
-- [kBluetoothVoiceSettingInputCodingLinearInputCoding](1640171-anonymous/kbluetoothvoicesettinginputcodinglinearinputcoding.md)
-- [kBluetoothVoiceSettingInputCodingMask](1640171-anonymous/kbluetoothvoicesettinginputcodingmask.md)
-- [kBluetoothVoiceSettingInputCodingULawInputCoding](1640171-anonymous/kbluetoothvoicesettinginputcodingulawinputcoding.md)
+- [kBluetoothVoiceSettingInputCodingALawInputCoding](./api-1640171-anonymous/kbluetoothvoicesettinginputcodingalawinputcoding.md)
+- [kBluetoothVoiceSettingInputCodingLinearInputCoding](./api-1640171-anonymous/kbluetoothvoicesettinginputcodinglinearinputcoding.md)
+- [kBluetoothVoiceSettingInputCodingMask](./api-1640171-anonymous/kbluetoothvoicesettinginputcodingmask.md)
+- [kBluetoothVoiceSettingInputCodingULawInputCoding](./api-1640171-anonymous/kbluetoothvoicesettinginputcodingulawinputcoding.md)
 
 
 ---

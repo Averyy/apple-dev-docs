@@ -1,7 +1,8 @@
 # AVAudioUnitReverbPreset.mediumHall2
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A preset that represents a reverb with the acoustic characteristics of an alternative medium-sized hall environment.
 
@@ -10,7 +11,7 @@ A preset that represents a reverb with the acoustic characteristics of an altern
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ A preset that represents a reverb with the acoustic characteristics of an altern
 case mediumHall2
 ```
 
+```c
+AVAudioUnitReverbPresetMediumHall2
+```
+
 ## See Also
 
-- [AVAudioUnitReverbPreset.mediumHall](avaudiounitreverbpreset/mediumhall.md)
+### Choosing a hall preset
+- [AVAudioUnitReverbPreset.mediumHall](./mediumhall.md)
   A preset that represents a reverb with the acoustic characteristics of a medium-sized hall environment.
-- [AVAudioUnitReverbPreset.largeHall](avaudiounitreverbpreset/largehall.md)
+- [AVAudioUnitReverbPreset.largeHall](./largehall.md)
   A preset that represents a reverb with the acoustic characteristics of a large-sized hall environment.
-- [AVAudioUnitReverbPreset.mediumHall3](avaudiounitreverbpreset/mediumhall3.md)
+- [AVAudioUnitReverbPreset.mediumHall3](./mediumhall3.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative medium-sized hall environment.
-- [AVAudioUnitReverbPreset.largeHall2](avaudiounitreverbpreset/largehall2.md)
+- [AVAudioUnitReverbPreset.largeHall2](./largehall2.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative large-sized hall environment.
 
 

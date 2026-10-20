@@ -1,7 +1,8 @@
 # tailSizeInBytes
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the sparse texture tail, in bytes.
 
@@ -15,15 +16,28 @@ The size of the sparse texture tail, in bytes.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var tailSizeInBytes: Int { get }
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 optional var tailSizeInBytes: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger tailSizeInBytes;
+```
+
 ## See Also
 
-- [var isSparse: Bool](mtltexture/issparse.md)
+### Querying sparse properties
+- [var isSparse: Bool](./issparse.md)
   A Boolean value that indicates whether this is a sparse texture.
-- [var firstMipmapInTail: Int](mtltexture/firstmipmapintail.md)
+- [var firstMipmapInTail: Int](./firstmipmapintail.md)
   The index of the first mipmap in the tail.
 
 

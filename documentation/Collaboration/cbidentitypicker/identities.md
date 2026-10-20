@@ -1,7 +1,8 @@
 # identities
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of identities (represented by `CBIdentity` objects) selected using the identity picker.
 
@@ -12,6 +13,10 @@ The array of identities (represented by `CBIdentity` objects) selected using the
 
 ```swift
 var identities: [CBIdentity] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<CBIdentity *> * identities;
 ```
 
 

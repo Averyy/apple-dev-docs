@@ -1,7 +1,8 @@
 # skipInternalAuth
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var skipInternalAuth: AuthorizationFlags { get }
+```
+
+```c
+kAuthorizationFlagSkipInternalAuth
 ```
 
 

@@ -1,7 +1,8 @@
 # historyCount
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A count of history items available for export.
 
@@ -15,13 +16,18 @@ A count of history items available for export.
 var historyCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger historyCount;
+```
+
 ## See Also
 
-- [var bookmarksCount: Int](beexportmetadata/bookmarkscount.md)
+### Accessing data counts
+- [var bookmarksCount: Int](./bookmarkscount.md)
   A count of bookmarks available for export.
-- [var extensionsCount: Int](beexportmetadata/extensionscount.md)
+- [var extensionsCount: Int](./extensionscount.md)
   A count of extensions available for export.
-- [var readingListCount: Int](beexportmetadata/readinglistcount.md)
+- [var readingListCount: Int](./readinglistcount.md)
   A count of reading list items available for export.
 
 

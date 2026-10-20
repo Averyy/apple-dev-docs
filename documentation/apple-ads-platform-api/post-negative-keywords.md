@@ -1,7 +1,8 @@
 # Create a Negative Keyword
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a negative keyword at the campaign or ad group level to prevent ads from showing for unwanted search terms.
 
@@ -10,11 +11,11 @@ Create a negative keyword at the campaign or ad group level to prevent ads from 
 
 #### Discussion
 
-This endpoint creates one negative keyword per request. To create many negative keywords in a single call, use [`Bulk Create Negative Keywords`](post-negative-keywords-bulk-create.md).
+This endpoint creates one negative keyword per request. To create many negative keywords in a single call, use [`Bulk Create Negative Keywords`](./post-negative-keywords-bulk-create.md).
 
 Negative keywords prevent your ads from showing when a user’s search query contains a term you want to exclude. They block traffic rather than compete for it. Negative keywords can be created at two levels, campaign or ad group, each with distinct field requirements and scope.
 
-#### Use Campaign Level Negative Keywords
+#### Use Campaign-Level Negative Keywords
 
 Campaign-level negative keywords block ads from appearing for excluded search terms across all ad groups in the campaign. Use campaign-level negatives when you want broad exclusions that apply uniformly throughout an entire campaign.
 
@@ -25,7 +26,7 @@ A campaign-level negative keyword requires `campaignId` and leaves `adGroupId` u
 | `campaignId` | Required |
 | `adGroupId` | Must not be set |
 
-#### Use Ad Group Level Negative Keywords
+#### Use Ad-Group-Level Negative Keywords
 
 Ad group-level negative keywords are scoped to a single ad group. Use ad group-level negatives when you need finer control over exclusions for a specific ad group within a campaign.
 
@@ -151,17 +152,34 @@ POST /v1/negative-keywords
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `NegativeKeywordCreate`
+
+## Responses
+
+- `200` OK (`NegativeKeywordResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Query Negative Keywords](post-negative-keywords-query.md)
+- [Query Negative Keywords](./post-negative-keywords-query.md)
   Query negative keywords using structured filters, sorting, and pagination.
-- [Get a Negative Keyword](get-negative-keywords-_id_.md)
+- [Get a Negative Keyword](./get-negative-keywords-_id_.md)
   Retrieve a single negative keyword by its unique identifier.
-- [Update a Negative Keyword](put-negative-keywords-_id_.md)
+- [Update a Negative Keyword](./put-negative-keywords-_id_.md)
   Update a negative keyword’s status to enable or pause its search term exclusion.
-- [Delete a Negative Keyword](delete-negative-keywords-_id_.md)
+- [Delete a Negative Keyword](./delete-negative-keywords-_id_.md)
   Soft-delete a negative keyword by ID.
 
 

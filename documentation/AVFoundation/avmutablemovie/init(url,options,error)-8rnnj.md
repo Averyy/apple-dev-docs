@@ -1,7 +1,8 @@
 # init(url:options:error:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 
@@ -19,13 +20,17 @@ Creates a mutable movie object from a movie header stored in a QuickTime movie f
 init(url URL: URL, options: [String : Any]? = nil, error: ()) throws
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options error:(NSError **) outError;
+```
+
 #### Return Value
 
 An `AVMutableMovie` object.
 
 #### Discussion
 
-On initialization, the [`defaultMediaDataStorage`](avmutablemovie/defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](avmutablemovietrack/mediadatastorage.md) properties are set to `nil`. To create an `AVMutableMovie` from a file and then append sample buffers to any of its tracks, you must first set one of these properties to indicate where the sample data should be written.
+On initialization, the [`defaultMediaDataStorage`](./defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](../avmutablemovietrack/mediadatastorage.md) properties are set to `nil`. To create an `AVMutableMovie` from a file and then append sample buffers to any of its tracks, you must first set one of these properties to indicate where the sample data should be written.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ On initialization, the [`defaultMediaDataStorage`](avmutablemovie/defaultmediada
 
 ## See Also
 
-- [init(data: Data, options: [String : Any]?, error: ()) throws](avmutablemovie/init(data:options:error:).md)
+### Creating a movie
+- [init(data: Data, options: [String : Any]?, error: ()) throws](./init%28data,options,error%29.md)
   Creates a mutable movie object from a movie stored in a data object.
-- [init(settingsFrom: AVMovie?, options: [String : Any]?) throws](avmutablemovie/init(settingsfrom:options:).md)
+- [init(settingsFrom: AVMovie?, options: [String : Any]?) throws](./init%28settingsfrom,options%29.md)
   Creates a mutable movie object without tracks.
 
 

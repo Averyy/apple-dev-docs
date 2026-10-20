@@ -1,17 +1,18 @@
 # EKWeekday
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The day of the week.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,58 +21,63 @@ The day of the week.
 enum EKWeekday
 ```
 
+```c
+enum EKWeekday : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKWeekday.sunday](ekweekday/sunday.md)
+- [EKWeekday.sunday](./ekweekday/sunday.md)
   The value for Sunday.
-- [EKWeekday.monday](ekweekday/monday.md)
+- [EKWeekday.monday](./ekweekday/monday.md)
   The value for Monday.
-- [EKWeekday.tuesday](ekweekday/tuesday.md)
+- [EKWeekday.tuesday](./ekweekday/tuesday.md)
   The value for Tuesday.
-- [EKWeekday.wednesday](ekweekday/wednesday.md)
+- [EKWeekday.wednesday](./ekweekday/wednesday.md)
   The value for Wednesday.
-- [EKWeekday.thursday](ekweekday/thursday.md)
+- [EKWeekday.thursday](./ekweekday/thursday.md)
   The value for Thursday.
-- [EKWeekday.friday](ekweekday/friday.md)
+- [EKWeekday.friday](./ekweekday/friday.md)
   The value for Friday.
-- [EKWeekday.saturday](ekweekday/saturday.md)
+- [EKWeekday.saturday](./ekweekday/saturday.md)
   The value for Saturday.
 ### Deprecated
-- [static var EKSunday: EKWeekday](ekweekday/eksunday.md)
+- [static var EKSunday: EKWeekday](./ekweekday/eksunday.md)
   The value for Sunday.
-- [static var EKMonday: EKWeekday](ekweekday/ekmonday.md)
+- [static var EKMonday: EKWeekday](./ekweekday/ekmonday.md)
   The value for Monday.
-- [static var EKTuesday: EKWeekday](ekweekday/ektuesday.md)
+- [static var EKTuesday: EKWeekday](./ekweekday/ektuesday.md)
   The value for Tuesday.
-- [static var EKWednesday: EKWeekday](ekweekday/ekwednesday.md)
+- [static var EKWednesday: EKWeekday](./ekweekday/ekwednesday.md)
   The value for Wednesday.
-- [static var EKThursday: EKWeekday](ekweekday/ekthursday.md)
+- [static var EKThursday: EKWeekday](./ekweekday/ekthursday.md)
   The value for Thursday.
-- [static var EKFriday: EKWeekday](ekweekday/ekfriday.md)
+- [static var EKFriday: EKWeekday](./ekweekday/ekfriday.md)
   The value for Friday.
-- [static var EKSaturday: EKWeekday](ekweekday/eksaturday.md)
+- [static var EKSaturday: EKWeekday](./ekweekday/eksaturday.md)
   The value for Saturday.
 ### Initializers
-- [init?(rawValue: Int)](ekweekday/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekweekday/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(EKWeekday)](ekrecurrencedayofweek/init(_:).md)
+### Creating a Day of the Week
+- [convenience init(EKWeekday)](./ekrecurrencedayofweek/init%28_%29.md)
   Creates and returns a day of the week with a given day.
-- [convenience init(EKWeekday, weekNumber: Int)](ekrecurrencedayofweek/init(_:weeknumber:).md)
+- [convenience init(EKWeekday, weekNumber: Int)](./ekrecurrencedayofweek/init%28_,weeknumber%29.md)
   Creates and returns an autoreleased day of the week with a given day and week number.
-- [init(dayOfTheWeek: EKWeekday, weekNumber: Int)](ekrecurrencedayofweek/init(dayoftheweek:weeknumber:).md)
+- [init(dayOfTheWeek: EKWeekday, weekNumber: Int)](./ekrecurrencedayofweek/init%28dayoftheweek,weeknumber%29.md)
   Initializes and returns a day of the week with a given day and week number.
 
 

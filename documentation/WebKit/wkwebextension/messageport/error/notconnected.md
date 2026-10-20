@@ -1,7 +1,8 @@
 # notConnected
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the message port is disconnected.
 

@@ -1,7 +1,8 @@
 # shadowPath
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path to use for drawing the preview’s shadow.
 
@@ -19,15 +20,20 @@ The path to use for drawing the preview’s shadow.
 var shadowPath: UIBezierPath? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIBezierPath * shadowPath;
+```
+
 #### Discussion
 
-If `nil`, the system uses the [`visiblePath`](uipreviewparameters/visiblepath.md) to draw the shadow.
+If `nil`, the system uses the [`visiblePath`](./visiblepath.md) to draw the shadow.
 
 ## See Also
 
-- [var backgroundColor: UIColor!](uipreviewparameters/backgroundcolor.md)
+### Configuring the preview attributes
+- [var backgroundColor: UIColor!](./backgroundcolor.md)
   The background color to display behind the preview.
-- [var visiblePath: UIBezierPath?](uipreviewparameters/visiblepath.md)
+- [var visiblePath: UIBezierPath?](./visiblepath.md)
   The portion of the view to show in the preview.
 
 

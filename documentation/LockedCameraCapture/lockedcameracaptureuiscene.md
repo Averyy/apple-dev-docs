@@ -1,7 +1,8 @@
 # LockedCameraCaptureUIScene
 
 **Framework**: LockedCameraCapture  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the session object and UI to display for the locked camera capture extension.
 
@@ -19,25 +20,26 @@ struct LockedCameraCaptureUIScene<Content> where Content : View
 ## Topics
 
 ### Initializers
-- [init(content: (LockedCameraCaptureSession) -> Content)](lockedcameracaptureuiscene/init(content:).md)
+- [init(content: (LockedCameraCaptureSession) -> Content)](./lockedcameracaptureuiscene/init%28content%29.md)
   Creates a locked camera capture extension scene.
 ### Instance Properties
-- [var body: some AppExtensionScene](lockedcameracaptureuiscene/body.md)
+- [var body: some AppExtensionScene](./lockedcameracaptureuiscene/body.md)
   The content and behavior of the locked camera capture extension’s UI.
-- [let session: LockedCameraCaptureSession](lockedcameracaptureuiscene/session.md)
+- [let session: LockedCameraCaptureSession](./lockedcameracaptureuiscene/session.md)
   An object that can request to open the extension’s containing app and receives session configuration updates.
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
-- [LockedCameraCaptureExtensionScene](lockedcameracaptureextensionscene.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
+- [LockedCameraCaptureExtensionScene](./lockedcameracaptureextensionscene.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class LockedCameraCaptureSession](lockedcameracapturesession.md)
+### Capture and launch
+- [class LockedCameraCaptureSession](./lockedcameracapturesession.md)
   An object that can request to open the extension’s containing app and receives session configuration updates.
 
 

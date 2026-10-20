@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: GameKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 

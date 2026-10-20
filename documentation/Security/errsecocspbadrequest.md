@@ -1,7 +1,8 @@
 # errSecOCSPBadRequest
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) request is incorrect or cannot be parsed.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) request is incorrect or cannot be 
 
 ```swift
 var errSecOCSPBadRequest: OSStatus { get }
+```
+
+```c
+errSecOCSPBadRequest
 ```
 
 

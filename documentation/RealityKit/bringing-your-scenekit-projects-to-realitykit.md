@@ -1,6 +1,8 @@
 # Bringing your SceneKit projects to RealityKit
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [BringingYourSceneKitProjectsToRealityKit.zip](https://docs-assets.developer.apple.com/published/ef18a310f8dc/BringingYourSceneKitProjectsToRealityKit.zip)
 
 Adapt a platformer game for RealityKit’s powerful ECS and modularity.
 
@@ -25,11 +27,13 @@ The RealityKit version showcases modern Swift development practices, including:
 - SwiftUI integration for user interface elements
 - Input handling systems for multiple device types
 
+[Video: A character moving around in a volcanic environment, fighting enemies, collecting coins, and finding a key.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/pyropanda-key-sequence.mov)
+
 Whether you’re maintaining an existing SceneKit project or planning a new 3D experience, this sample demonstrates how RealityKit enables more maintainable and performant 3D applications across Apple platforms.
 
-> **Note**: This article and sample code project are associated with WWDC25 session 288: [`Bring your SceneKit projects to RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/288/).
+> **Note**: This article and sample code project are associated with WWDC25 session 288: [Bring your SceneKit projects to RealityKit](https://developer.apple.com/videos/play/wwdc2025/288/).
 
-#### Understand Scenekit Deprecation
+#### Understand SceneKit deprecation
 
 SceneKit is soft-deprecated. This means that your existing apps and games continue to work, and you aren’t required to take immediate action.
 
@@ -40,7 +44,7 @@ But the implications of any deprecation, however soft, are still significant:
 
 For any project with a long-term vision, or for those looking to harness the latest innovations, migrate to another native framework like RealityKit.
 
-#### Design Modular Swift Packages
+#### Design modular Swift packages
 
 The core architectural strength of RealityKit comes from its modular design, which you can leverage through Swift packages. Each package encapsulates specific functionality, making the codebase more maintainable, testable, and reusable. This approach aligns perfectly with RealityKit’s ECS architecture:
 
@@ -48,7 +52,7 @@ The core architectural strength of RealityKit comes from its modular design, whi
 - **Components** hold pure data, defining properties or state.
 - **Systems** encapsulate all the logic, operating on entities with specific components.
 
-##### Explore Key Packages in the Sample Project
+##### Explore key packages in the sample project
 
 The sample project demonstrates how to organize RealityKit functionality into cohesive, reusable Swift packages:
 
@@ -62,7 +66,7 @@ The sample project demonstrates how to organize RealityKit functionality into co
 
 This modular approach enables clean separation of concerns, promotes code reusability, and makes complex systems more understandable and maintainable.
 
-##### Implement Character Movement and Input Handling
+##### Implement character movement and input handling
 
 The `CharacterMovement` package provides a flexible system for controlling character movement in 3D space, supporting multiple input methods across different platforms. This package simplifies one of the most complex aspects of migrating from SceneKit: implementing responsive character controls.
 
@@ -113,7 +117,9 @@ character.components[CharacterMovementComponent.self]?.jumpPressed = true
 
 This package enables the main character, Max, to move around the scene, and animate as he does so.
 
-##### Configure Camera Management
+[Video: A character in a volcanic environment moving in sync with an on-screen joystick controller input.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/pp-charactermovement.mov)
+
+##### Configure camera management
 
 With most platforms, you can add a camera component, such as `PerspectiveCameraComponent`, to an entity to change the perspective, but this isn’t possible on visionOS because the person wearing an Apple Vision Pro is the camera. To get around this factor, the app instead moves the world and physics simulation root entities around the wearer.
 
@@ -150,9 +156,11 @@ worldCamera.addChild(Entity(components: PerspectiveCameraComponent()))
 
 This approach ensures that on platforms like iOS and macOS, the camera moves around the world, while on visionOS, the world moves around the wearer for a comfortable immersive experience that prevents motion sickness and maintains proper spatial awareness.
 
+[Video: A character moving around in a volcanic environment, with the perspective smoothly following them.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/pyropanda-camera-following.mov)
+
 > ❗ **Important**: On visionOS, moving either the world or the camera in a fully immersive space can be disorienting for people. Use this technique primarily for experiences with finite bounds, such as volumes, portals, windows, or immersive spaces that aren’t fully immersive. When implementing such camera or world movements, keep transitions smooth and predictable to maintain comfort.
 
-##### Create Enemy Ai and Agency
+##### Create enemy AI and agency
 
 The `AgentComponent` package adds autonomous behavior to enemy entities, allowing them to chase or flee from the player character.
 
@@ -182,7 +190,9 @@ let chasingComponent = AgentComponent(
 chasing.components.set(chasingComponent)
 ```
 
-#### Convert Scenekit Assets to Usd
+[Video: A character moving around in a volcanic environment, with the perspective smoothly following them.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/pp-agencycomponent.mov)
+
+#### Convert SceneKit assets to USD
 
 When migrating from SceneKit to RealityKit, asset conversion is a critical step. When building a RealityKit app, Universal Scene Description (USD) is the format of choice for 3D content across all Apple platforms.
 
@@ -190,7 +200,7 @@ Most digital content creation tools offer good support for USD, so the best choi
 
 You can invoke `scntool` by typing `xcrun scntool` into a terminal window:
 
-![A terminal window displaying the scntool help output.](/images/com.apple.RealityKit/terminal-xcrun-scntool.png)
+![A terminal window displaying the scntool help output.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/terminal-xcrun-scntool.png)
 
 To convert an SCN asset to USDZ, you can use:
 
@@ -204,13 +214,13 @@ If you have a separate SCN file, which contains animation data, you can append t
 xcrun scntool --convert max.scn --format usdz --append-animation max_spin.scn
 ```
 
-#### Implement Portrait Mode for Immersive Spaces on Visionos
+#### Implement Portrait mode for immersive spaces on visionOS
 
 The RealityKit version of the sample demonstrates how to leverage visionOS-specific features to enhance immersive experiences, particularly through the use of immersive spaces with Portrait mode.
 
 Portrait mode provides a grounded experience where users can still see their physical surroundings while engaging with immersive content, perfect for games like platformers.
 
-Pyro Panda uses the new portrait aspect ratio for immersive spaces by first declaring a [`ProgressiveImmersionStyle`](https://developer.apple.com/documentation/swiftui/progressiveimmersionstyle) with the aspect ratio [`portrait`](https://developer.apple.com/documentation/swiftui/progressiveimmersionaspectratio/portrait):
+Pyro Panda uses the new portrait aspect ratio for immersive spaces by first declaring a [`ProgressiveImmersionStyle`](../SwiftUI/progressiveimmersionstyle.md) with the aspect ratio [`portrait`](../SwiftUI/progressiveimmersionaspectratio/portrait.md):
 
 ```swift
 var immersionStyle: ProgressiveImmersionStyle {
@@ -233,9 +243,11 @@ ImmersiveSpace(id: appModel.immersiveSpaceID) {
 )
 ```
 
+[Video: The Pyro Panda game inside a visionOS immersive portal in Portrait mode.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/pyropanda-avp.mov)
+
 This implementation preserves the person’s awareness of their physical environment when playing the game, while still making the experience immersive.
 
-#### Handle Hardware Compatibility
+#### Handle hardware compatibility
 
 RealityKit is built for modern hardware, with capabilities that may exceed what older devices can handle. The sample shows you how to gracefully handle hardware compatibility:
 
@@ -263,19 +275,20 @@ This approach ensures your RealityKit application performs well across all suppo
 
 ## See Also
 
-- [Creating a Spaceship game](creating-a-spaceship-game.md)
+### Sample code links
+- [Creating a Spaceship game](./creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [BOT-anist](../visionos/bot-anist.md)
+- [BOT-anist](../visionOS/bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
-- [Rendering a windowed game in stereo](rendering-a-windowed-game-in-stereo.md)
+- [Rendering a windowed game in stereo](./rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
-- [Happy Beam](../visionos/happybeam.md)
+- [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Swift Splash](../visionos/swift-splash.md)
+- [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Destination Video](../visionos/destination-video.md)
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
+- [Creating a game with scene understanding](./creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
 
 

@@ -1,7 +1,8 @@
 # init(device:sourceCount:sourceGradientIndex:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, sourceCount count: Int, sourceGradientIndex: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device sourceCount:(NSUInteger) count sourceGradientIndex:(NSUInteger) sourceGradientIndex;
 ```
 
 

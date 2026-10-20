@@ -1,7 +1,8 @@
 # matchStreamingBuffer(_:at:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the audio in the buffer to a signature, and searches the reference signatures in the session catalog.
 
@@ -20,13 +21,17 @@ Converts the audio in the buffer to a signature, and searches the reference sign
 func matchStreamingBuffer(_ buffer: AVAudioPCMBuffer, at time: AVAudioTime?)
 ```
 
+```objc
+- (void) matchStreamingBuffer:(AVAudioPCMBuffer *) buffer atTime:(AVAudioTime *) time;
+```
+
 #### Discussion
 
-This method continues to generate signatures and perform searches until the audio in the buffer stops, which may result in multiple calls to the [`delegate`](shsession/delegate.md).
+This method continues to generate signatures and perform searches until the audio in the buffer stops, which may result in multiple calls to the [`delegate`](./delegate.md).
 
-The audio buffer must be in one of the supported formats. For the list of the supported audio formats, see [`append(_:at:)`](shsignaturegenerator/append(_:at:).md).
+The audio buffer must be in one of the supported formats. For the list of the supported audio formats, see [`append(_:at:)`](../shsignaturegenerator/append%28_,at%29.md).
 
-To use the microphone as input for the buffer, see [`Matching audio using the built-in microphone`](matching-audio-using-the-built-in-microphone.md).
+To use the microphone as input for the buffer, see [Matching audio using the built-in microphone](../matching-audio-using-the-built-in-microphone.md).
 
 > **Note**:  You must use the audio format of the first call to this method in the current session in all subsequent calls for the session.
 
@@ -37,9 +42,10 @@ To use the microphone as input for the buffer, see [`Matching audio using the bu
 
 ## See Also
 
-- [func match(SHSignature)](shsession/match(_:).md)
+### Making a match
+- [func match(SHSignature)](./match%28_%29.md)
   Searches for the query signature in the reference signatures that the session catalog contains.
-- [Matching audio using the built-in microphone](matching-audio-using-the-built-in-microphone.md)
+- [Matching audio using the built-in microphone](../matching-audio-using-the-built-in-microphone.md)
   Use the audio stream from the microphone as the source for a ShazamKit session.
 
 

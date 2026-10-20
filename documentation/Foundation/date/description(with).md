@@ -1,7 +1,8 @@
 # description(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representation of the receiver using the given locale.
 
@@ -30,9 +31,10 @@ A string representation of the `Date`, using the given locale, or if the locale 
 
 ## See Also
 
-- [var description: String](date/description.md)
-  The representation is useful for debugging only. There are a number of options to acquire a formatted string for a date including: date formatters (see [`NSDateFormatter`](https://developer.apple.com//apple_ref/occ/cl/NSDateFormatter) and [`Data Formatting Guide`](https://developer.apple.com//apple_ref/doc/uid/10000029i)), and the `Date` function `description(locale:)`.
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](date/customplaygroundquicklook.md)
+### Describing Dates
+- [var description: String](./description.md)
+  The representation is useful for debugging only. There are a number of options to acquire a formatted string for a date including: date formatters (see [NSDateFormatter](https://developer.apple.com//apple_ref/occ/cl/NSDateFormatter) and [Data Formatting Guide](https://developer.apple.com//apple_ref/doc/uid/10000029i)), and the `Date` function `description(locale:)`.
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the date.
 
 

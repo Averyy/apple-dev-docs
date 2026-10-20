@@ -1,7 +1,8 @@
 # totalCountdownDuration
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of the countdown.
 
@@ -18,13 +19,14 @@ var totalCountdownDuration: TimeInterval
 
 ## See Also
 
-- [init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterval, startDate: Date, fireDate: Date)](alarmpresentationstate/mode-swift.enum/countdown/init(totalcountdownduration:previouslyelapsedduration:startdate:firedate:).md)
+### Creating a countdown
+- [init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterval, startDate: Date, fireDate: Date)](./init%28totalcountdownduration,previouslyelapsedduration,startdate,firedate%29.md)
   Creates an instance of a countdown.
-- [var fireDate: Date](alarmpresentationstate/mode-swift.enum/countdown/firedate.md)
+- [var fireDate: Date](./firedate.md)
   The date the countdown starts.
-- [var previouslyElapsedDuration: TimeInterval](alarmpresentationstate/mode-swift.enum/countdown/previouslyelapsedduration.md)
+- [var previouslyElapsedDuration: TimeInterval](./previouslyelapsedduration.md)
   The amount of time that elapsed before the most recent resumption of the countdown.
-- [var startDate: Date](alarmpresentationstate/mode-swift.enum/countdown/startdate.md)
+- [var startDate: Date](./startdate.md)
   The date at which the countdown was mostly recently resumed.
 
 

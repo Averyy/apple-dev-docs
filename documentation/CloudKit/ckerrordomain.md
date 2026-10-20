@@ -1,7 +1,8 @@
 # CKErrorDomain
 
 **Framework**: CloudKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for CloudKit errors.
 
@@ -10,7 +11,7 @@ The error domain for CloudKit errors.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,19 +21,24 @@ The error domain for CloudKit errors.
 let CKErrorDomain: String
 ```
 
+```c
+extern NSString * const CKErrorDomain;
+```
+
 ## See Also
 
-- [struct CKError](ckerror.md)
+### Errors
+- [struct CKError](./ckerror.md)
   A type that describes a CloudKit error.
-- [CKError.Code](ckerror/code.md)
+- [CKError.Code](./ckerror/code.md)
   The error codes that CloudKit returns.
-- [let CKErrorRetryAfterKey: String](ckerrorretryafterkey.md)
+- [let CKErrorRetryAfterKey: String](./ckerrorretryafterkey.md)
   The key to retrieve the number of seconds to wait before you retry a request.
-- [let CKErrorUserDidResetEncryptedDataKey: String](ckerroruserdidresetencrypteddatakey.md)
+- [let CKErrorUserDidResetEncryptedDataKey: String](./ckerroruserdidresetencrypteddatakey.md)
   The key that determines whether CloudKit deletes a record zone because of a user action.
-- [let CKPartialErrorsByItemIDKey: String](ckpartialerrorsbyitemidkey.md)
+- [let CKPartialErrorsByItemIDKey: String](./ckpartialerrorsbyitemidkey.md)
   The key to retrieve partial errors.
-- [Record Changed Error Keys](record-changed-error-keys.md)
+- [Record Changed Error Keys](./record-changed-error-keys.md)
   Constants that represent conflicting records in a save operation.
 
 

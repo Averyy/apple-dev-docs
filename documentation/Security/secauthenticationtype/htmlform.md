@@ -1,7 +1,8 @@
 # SecAuthenticationType.htmlForm
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies HTML form based authentication.
 
@@ -13,6 +14,10 @@ Specifies HTML form based authentication.
 
 ```swift
 case htmlForm
+```
+
+```c
+kSecAuthenticationTypeHTMLForm
 ```
 
 

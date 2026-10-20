@@ -1,7 +1,8 @@
 # default
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use the system’s default access for the device selected by the user.
 

@@ -1,7 +1,8 @@
 # constraints
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the constraints held by the view.
 
@@ -14,19 +15,24 @@ Returns the constraints held by the view.
 var constraints: [NSLayoutConstraint] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSLayoutConstraint *> * constraints;
+```
+
 #### Return Value
 
 The constraints held by the view.
 
 ## See Also
 
-- [func addConstraint(NSLayoutConstraint)](nsview/addconstraint(_:).md)
+### Managing the View’s Constraints
+- [func addConstraint(NSLayoutConstraint)](./addconstraint%28_%29.md)
   Adds a constraint on the layout of the receiving view or its subviews.
-- [func addConstraints([NSLayoutConstraint])](nsview/addconstraints(_:).md)
+- [func addConstraints([NSLayoutConstraint])](./addconstraints%28_%29.md)
   Adds multiple constraints on the layout of the receiving view or its subviews.
-- [func removeConstraint(NSLayoutConstraint)](nsview/removeconstraint(_:).md)
+- [func removeConstraint(NSLayoutConstraint)](./removeconstraint%28_%29.md)
   Removes the specified constraint from the view.
-- [func removeConstraints([NSLayoutConstraint])](nsview/removeconstraints(_:).md)
+- [func removeConstraints([NSLayoutConstraint])](./removeconstraints%28_%29.md)
   Removes the specified constraints from the view.
 
 

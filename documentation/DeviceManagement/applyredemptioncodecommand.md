@@ -1,7 +1,8 @@
 # ApplyRedemptionCodeCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to complete the installation of an app using a redemption code.
 
@@ -12,14 +13,14 @@ The command to complete the installation of an app using a redemption code.
 
 ## Declaration
 
-```swift
+```
 object ApplyRedemptionCodeCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ApplyRedemptionCodeCommand.Command](applyredemptioncodecommand/command-data.dictionary.md)
+- [object ApplyRedemptionCodeCommand.Command](./applyredemptioncodecommand/command-data.dictionary.md)
   The command to complete the installation of an app using a redemption code.
 
 ## Properties
@@ -29,7 +30,8 @@ object ApplyRedemptionCodeCommand
 
 ## See Also
 
-- [object ApplyRedemptionCodeResponse](applyredemptioncoderesponse.md)
+### Commands and responses
+- [object ApplyRedemptionCodeResponse](./applyredemptioncoderesponse.md)
   A response from the device after it processes the command to complete the installation of an app using a redemption code.
 
 

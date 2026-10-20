@@ -1,7 +1,8 @@
 # PHOTO_FAILED_TO_LOAD
 
 **Framework**: LivePhotosKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Photo asset failed to load.
 
@@ -10,7 +11,7 @@ Photo asset failed to load.
 
 ## Declaration
 
-```swift
+```
 const number PHOTO_FAILED_TO_LOAD;
 ```
 
@@ -20,7 +21,8 @@ Error code for when the photo component of the Live Photo is unable to be loaded
 
 ## See Also
 
-- [VIDEO_FAILED_TO_LOAD](livephotoskit.errors/video_failed_to_load.md)
+### Enumeration Cases
+- [VIDEO_FAILED_TO_LOAD](./video_failed_to_load.md)
   Video asset failed to load.
 
 

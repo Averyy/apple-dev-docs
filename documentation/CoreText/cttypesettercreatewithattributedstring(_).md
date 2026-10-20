@@ -1,7 +1,8 @@
 # CTTypesetterCreateWithAttributedString(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable typesetter object using an attributed string.
 
@@ -20,6 +21,10 @@ Creates an immutable typesetter object using an attributed string.
 func CTTypesetterCreateWithAttributedString(_ string: CFAttributedString) -> CTTypesetter
 ```
 
+```c
+extern CTTypesetterRefCTTypesetterCreateWithAttributedString(CFAttributedStringRef string);
+```
+
 #### Return Value
 
 A reference to a CTTypesetter object if the call was successful; otherwise, `NULL`.
@@ -34,7 +39,8 @@ The resultant typesetter can be used to create lines, perform line breaking, and
 
 ## See Also
 
-- [func CTTypesetterCreateWithAttributedStringAndOptions(CFAttributedString, CFDictionary?) -> CTTypesetter?](cttypesettercreatewithattributedstringandoptions(_:_:).md)
+### Creating a Typesetter
+- [func CTTypesetterCreateWithAttributedStringAndOptions(CFAttributedString, CFDictionary?) -> CTTypesetter?](./cttypesettercreatewithattributedstringandoptions%28_,_%29.md)
   Creates an immutable typesetter object using an attributed string and a dictionary of options.
 
 

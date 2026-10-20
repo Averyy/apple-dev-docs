@@ -1,7 +1,8 @@
 # FetchBody
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface FetchBody
 ```
 
 ## Topics
 
 ### Instance Properties
-- [bodyUsed](fetchbody/2871373-bodyused.md)
+- [bodyUsed](./fetchbody/api-2871373-bodyused.md)
 ### Instance Methods
-- [arrayBuffer](fetchbody/2871200-arraybuffer.md)
-- [blob](fetchbody/2871324-blob.md)
-- [json](fetchbody/2871283-json.md)
-- [text](fetchbody/2871015-text.md)
+- [arrayBuffer](./fetchbody/api-2871200-arraybuffer.md)
+- [blob](./fetchbody/api-2871324-blob.md)
+- [json](./fetchbody/api-2871283-json.md)
+- [text](./fetchbody/api-2871015-text.md)
 
 
 ---

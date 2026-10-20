@@ -1,7 +1,8 @@
 # GLKVertexAttrib.texCoord0
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This index is used to provide a set of texture coordinates to a shader.
 
@@ -17,15 +18,20 @@ This index is used to provide a set of texture coordinates to a shader.
 case texCoord0
 ```
 
+```c
+GLKVertexAttribTexCoord0
+```
+
 ## See Also
 
-- [GLKVertexAttrib.position](glkvertexattrib/position.md)
+### Constants
+- [GLKVertexAttrib.position](./position.md)
   This index is used to provide the vertex position to a shader.
-- [GLKVertexAttrib.normal](glkvertexattrib/normal.md)
+- [GLKVertexAttrib.normal](./normal.md)
   This index is used to provide the vertex normal to a shader.
-- [GLKVertexAttrib.color](glkvertexattrib/color.md)
+- [GLKVertexAttrib.color](./color.md)
   This index is used to provide the vertex color to a shader.
-- [GLKVertexAttrib.texCoord1](glkvertexattrib/texcoord1.md)
+- [GLKVertexAttrib.texCoord1](./texcoord1.md)
   This index is used to provide the second set of texture coordinates to a shader.
 
 

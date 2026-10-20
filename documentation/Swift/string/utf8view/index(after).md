@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next consecutive position after `i`.
 
@@ -22,7 +23,7 @@ func index(after i: String.UTF8View.Index) -> String.UTF8View.Index
 
 #### Discussion
 
-> **Note**: The next position is representable.
+> **Precondition**: The next position is representable.
 
 
 ---

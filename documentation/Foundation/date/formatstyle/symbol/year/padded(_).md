@@ -1,7 +1,8 @@
 # padded(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a custom format style that portrays the year of the calendar system of the provided length, zero-padded if necessary.
 
@@ -26,7 +27,7 @@ A custom year format style that portrays the year of the calendar system with th
 
 #### Discussion
 
-Use [`padded(_:)`](date/formatstyle/symbol/year/padded(_:).md) to display a year using three or more digits, zero-padded if necessary. For example, `002`, `020`, `201`, `2017`.
+Use [`padded(_:)`](./padded%28_%29.md) to display a year using three or more digits, zero-padded if necessary. For example, `002`, `020`, `201`, `2017`.
 
 ## Parameters
 
@@ -34,13 +35,14 @@ Use [`padded(_:)`](date/formatstyle/symbol/year/padded(_:).md) to display a year
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/defaultdigits.md)
+### Modifying a Year
+- [static var defaultDigits: Date.FormatStyle.Symbol.Year](./defaultdigits.md)
   The custom year format style showing the minimum number of digits that represents the numeric year.
-- [static var twoDigits: Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Year](./twodigits.md)
   The custom format style portraying the two-digit numeric year, zero-padded if necessary.
-- [static func relatedGregorian(minimumLength: Int) -> Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/relatedgregorian(minimumlength:).md)
+- [static func relatedGregorian(minimumLength: Int) -> Date.FormatStyle.Symbol.Year](./relatedgregorian%28minimumlength%29.md)
   Returns a custom format style that portrays the year of a non-Gregorian calendar system in the corresponding Gregorian year.
-- [static func extended(minimumLength: Int) -> Date.FormatStyle.Symbol.Year](date/formatstyle/symbol/year/extended(minimumlength:).md)
+- [static func extended(minimumLength: Int) -> Date.FormatStyle.Symbol.Year](./extended%28minimumlength%29.md)
   Returns a custom format style that portrays the year of the calendar system, encompassing all supra-year fields.
 
 

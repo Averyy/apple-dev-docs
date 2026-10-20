@@ -1,14 +1,15 @@
 # ths_state
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 uint32_t ths_state;
 ```
 

@@ -1,7 +1,8 @@
 # interpolated(towards:amount:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new threshold that combines this threshold value with another threshold, interpolated by the given amount.
 
@@ -27,7 +28,8 @@ func interpolated(towards other: ScrollTransitionConfiguration.Threshold, amount
 
 ## See Also
 
-- [func inset(by: Double) -> ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/inset(by:).md)
+### Modifying the threshold
+- [func inset(by: Double) -> ScrollTransitionConfiguration.Threshold](./inset%28by%29.md)
   Returns a threshold that is met when the target view is closer to the center of the container by `distance`. Use negative values to move the threshold away from the center.
 
 

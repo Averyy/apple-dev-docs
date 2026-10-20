@@ -1,7 +1,8 @@
 # collectionViewLayout
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout object used to organize the collection view’s content.
 
@@ -14,9 +15,13 @@ The layout object used to organize the collection view’s content.
 var collectionViewLayout: NSCollectionViewLayout? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSCollectionViewLayout * collectionViewLayout;
+```
+
 #### Discussion
 
-Typically, you specify the layout object at design time in Interface Builder. The layout object works with your data source object to generate the needed items and views to display. In macOS 10.11 and later, using a data source object is recommended, but you may specify `nil` for this property if your collection view does not use a data source object. The collection view uses the [`NSCollectionViewGridLayout`](nscollectionviewgridlayout.md) object by default.
+Typically, you specify the layout object at design time in Interface Builder. The layout object works with your data source object to generate the needed items and views to display. In macOS 10.11 and later, using a data source object is recommended, but you may specify `nil` for this property if your collection view does not use a data source object. The collection view uses the [`NSCollectionViewGridLayout`](../nscollectionviewgridlayout.md) object by default.
 
 Assigning a new value to this property changes the layout object and causes the collection view to update its contents immediately and without animations. If you want to animate a layout change, use an animator object to set the layout object as follows:
 
@@ -24,7 +29,7 @@ Assigning a new value to this property changes the layout object and causes the 
 [[collectionView animator] setCollectionViewLayout:myLayout];
 ```
 
-You can use the completion handler of the associated [`NSAnimationContext`](nsanimationcontext.md) object to perform additional tasks when the animations finish.
+You can use the completion handler of the associated [`NSAnimationContext`](../nsanimationcontext.md) object to perform additional tasks when the animations finish.
 
 
 ---

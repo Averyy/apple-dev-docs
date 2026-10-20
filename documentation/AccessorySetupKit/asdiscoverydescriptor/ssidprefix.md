@@ -1,7 +1,8 @@
 # ssidPrefix
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prefix string of SSID of the accessory’s Wi-Fi network.
 
@@ -15,13 +16,18 @@ The prefix string of SSID of the accessory’s Wi-Fi network.
 var ssidPrefix: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * SSIDPrefix;
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 ## See Also
 
-- [var ssid: String?](asdiscoverydescriptor/ssid.md)
+### Specifying Wi-Fi properties
+- [var ssid: String?](./ssid.md)
   The SSID of the accessory’s Wi-Fi network.
 
 

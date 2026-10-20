@@ -1,7 +1,8 @@
 # DirectionsRequest
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 The requested start and end points for a route, as well as the planned mode of transportation.
 
@@ -10,13 +11,13 @@ The requested start and end points for a route, as well as the planned mode of t
 
 ## Declaration
 
-```swift
+```
 interface DirectionsRequest
 ```
 
 #### Overview
 
-Provide a `DirectionsRequest` object to the [`route()`](directions/route.md) method to get directions between two points. You must provide [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
+Provide a `DirectionsRequest` object to the [`route()`](./directions/route.md) method to get directions between two points. You must provide [`origin`](./directionsrequest/origin.md) and [`destination`](./directionsrequest/destination.md).
 
 ```javascript
 const myDirections = new mapkit.Directions();
@@ -30,32 +31,33 @@ const data = await myDirections.route({
 ## Topics
 
 ### Directions request
-- [origin](directionsrequest/origin.md)
+- [origin](./directionsrequest/origin.md)
   The starting point for routing directions.
-- [destination](directionsrequest/destination.md)
+- [destination](./directionsrequest/destination.md)
   The end point for routing directions.
-- [arrivalDate](directionsrequest/arrivaldate.md)
+- [arrivalDate](./directionsrequest/arrivaldate.md)
   The arrival date for the trip.
-- [departureDate](directionsrequest/departuredate.md)
+- [departureDate](./directionsrequest/departuredate.md)
   The departure date for the trip.
-- [requestsAlternateRoutes](directionsrequest/requestsalternateroutes.md)
+- [requestsAlternateRoutes](./directionsrequest/requestsalternateroutes.md)
   A Boolean value that indicates whether the server returns multiple routes when they’re available.
-- [transportType](directionsrequest/transporttype.md)
+- [transportType](./directionsrequest/transporttype.md)
   The mode of transportation the directions apply to.
-- [avoidTolls](directionsrequest/avoidtolls.md)
+- [avoidTolls](./directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [signal](directionsrequest/signal.md)
+- [signal](./directionsrequest/signal.md)
   A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [route(request)](directions/route.md)
+### Getting directions
+- [route(request)](./directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
-- [interface DirectionsResponse](directionsresponse.md)
+- [interface DirectionsResponse](./directionsresponse.md)
   The directions and estimated travel time for a route.
-- [class Route](route.md)
+- [class Route](./route.md)
   Information about a route, including step-by-step instructions, distance, and estimated travel time.
-- [class RouteStep](routestep.md)
+- [class RouteStep](./routestep.md)
   A single step of the route between the requested start and end points.
 
 

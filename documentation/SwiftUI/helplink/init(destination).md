@@ -1,7 +1,8 @@
 # init(destination:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a new help link that opens the specified destination URL.
 
@@ -19,7 +20,7 @@ Constructs a new help link that opens the specified destination URL.
 
 Use this initializer when you want the standard help button appearance that opens a link to a website.
 
-You can override the default behavior when the button is clicked by setting the [`openURL`](environmentvalues/openurl.md) environment value with a custom [`OpenURLAction`](openurlaction.md).
+You can override the default behavior when the button is clicked by setting the [`openURL`](../environmentvalues/openurl.md) environment value with a custom [`OpenURLAction`](../openurlaction.md).
 
 ## Parameters
 
@@ -27,11 +28,12 @@ You can override the default behavior when the button is clicked by setting the 
 
 ## See Also
 
-- [init(action: () -> Void)](helplink/init(action:).md)
+### Creating a help link
+- [init(action: () -> Void)](./init%28action%29.md)
   Constructs a new help link with the specified action.
-- [init(anchor: NSHelpManager.AnchorName)](helplink/init(anchor:).md)
+- [init(anchor: NSHelpManager.AnchorName)](./init%28anchor%29.md)
   Constructs a new help link with the specified anchor in the main app bundle’s book.
-- [init(anchor: NSHelpManager.AnchorName, book: NSHelpManager.BookName)](helplink/init(anchor:book:).md)
+- [init(anchor: NSHelpManager.AnchorName, book: NSHelpManager.BookName)](./init%28anchor,book%29.md)
   Constructs a new help link with the specified anchor and book.
 
 

@@ -1,7 +1,8 @@
 # commands
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The commands associated with the extension.
 
@@ -18,13 +19,18 @@ The commands associated with the extension.
 var commands: [WKWebExtension.Command] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<WKWebExtensionCommand *> * commands;
+```
+
 #### Discussion
 
 Provides all commands registered within the extension. Each command represents an action or behavior available for the web extension.
 
 ## See Also
 
-- [func performCommand(WKWebExtension.Command)](wkwebextensioncontext/performcommand(_:).md)
+### Related Documentation
+- [func performCommand(WKWebExtension.Command)](./performcommand%28_%29.md)
   Performs the specified command, triggering events specific to this extension.
 
 

@@ -1,7 +1,8 @@
 # replaceDisabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents replace operations in a text editor.
 
@@ -25,16 +26,16 @@ A view that disables the replace feature of a find and replace interface.
 
 #### Discussion
 
-Add this modifier to ensure that people can’t activate the replace feature of a find and replace interface for a [`TextEditor`](texteditor.md):
+Add this modifier to ensure that people can’t activate the replace feature of a find and replace interface for a [`TextEditor`](../texteditor.md):
 
 ```swift
 TextEditor(text: $text)
     .replaceDisabled()
 ```
 
-If you want to disable both find and replace, use the [`findDisabled(_:)`](view/finddisabled(_:).md) modifier instead.
+If you want to disable both find and replace, use the [`findDisabled(_:)`](./finddisabled%28_%29.md) modifier instead.
 
-Using this modifer also disables the replace feature of a find and replace interface that you present programmatically using the [`findNavigator(isPresented:)`](view/findnavigator(ispresented:).md) method. Be sure to place the disabling modifier closer to the text editor for this to work:
+Using this modifer also disables the replace feature of a find and replace interface that you present programmatically using the [`findNavigator(isPresented:)`](./findnavigator%28ispresented%29.md) method. Be sure to place the disabling modifier closer to the text editor for this to work:
 
 ```swift
 TextEditor(text: $text)
@@ -59,11 +60,12 @@ VStack {
 
 ## See Also
 
-- [func findNavigator(isPresented: Binding<Bool>) -> some View](view/findnavigator(ispresented:).md)
+### Searching for text in a view
+- [func findNavigator(isPresented: Binding<Bool>) -> some View](./findnavigator%28ispresented%29.md)
   Programmatically presents the find and replace interface for text editor views.
-- [func findDisabled(Bool) -> some View](view/finddisabled(_:).md)
+- [func findDisabled(Bool) -> some View](./finddisabled%28_%29.md)
   Prevents find and replace operations in a text editor.
-- [struct FindContext](findcontext.md)
+- [struct FindContext](../findcontext.md)
   The status of the find navigator for views which support text editing.
 
 

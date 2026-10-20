@@ -1,7 +1,8 @@
 # PHASEDistanceModelParameters
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for a sound’s rate of change over distance.
 
@@ -19,38 +20,43 @@ A base class for a sound’s rate of change over distance.
 class PHASEDistanceModelParameters
 ```
 
+```objc
+@interface PHASEDistanceModelParameters : NSObject
+```
+
 #### Overview
 
-When your app outputs sound with a 3D position and orientation, designate a subclass of this class to indicate the manner in which PHASE changes sound with distance. Assign an instance of either [`PHASEGeometricSpreadingDistanceModelParameters`](phasegeometricspreadingdistancemodelparameters.md) or [`PHASEEnvelopeDistanceModelParameters`](phaseenvelopedistancemodelparameters.md), depending on your app’s needs, to the [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md) class’s [`distanceModelParameters`](phasespatialmixerdefinition/distancemodelparameters.md) property.
+When your app outputs sound with a 3D position and orientation, designate a subclass of this class to indicate the manner in which PHASE changes sound with distance. Assign an instance of either [`PHASEGeometricSpreadingDistanceModelParameters`](./phasegeometricspreadingdistancemodelparameters.md) or [`PHASEEnvelopeDistanceModelParameters`](./phaseenvelopedistancemodelparameters.md), depending on your app’s needs, to the [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md) class’s [`distanceModelParameters`](./phasespatialmixerdefinition/distancemodelparameters.md) property.
 
 ## Topics
 
 ### Fading the Sound
-- [var fadeOutParameters: PHASEDistanceModelFadeOutParameters?](phasedistancemodelparameters/fadeoutparameters.md)
+- [var fadeOutParameters: PHASEDistanceModelFadeOutParameters?](./phasedistancemodelparameters/fadeoutparameters.md)
   A distance over which the framework fades out the mixer’s sound.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PHASEEnvelopeDistanceModelParameters](phaseenvelopedistancemodelparameters.md)
-- [PHASEGeometricSpreadingDistanceModelParameters](phasegeometricspreadingdistancemodelparameters.md)
+- [PHASEEnvelopeDistanceModelParameters](./phaseenvelopedistancemodelparameters.md)
+- [PHASEGeometricSpreadingDistanceModelParameters](./phasegeometricspreadingdistancemodelparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEGeometricSpreadingDistanceModelParameters](phasegeometricspreadingdistancemodelparameters.md)
+### Distance Modeling
+- [class PHASEGeometricSpreadingDistanceModelParameters](./phasegeometricspreadingdistancemodelparameters.md)
   An object that dissipates sound frequencies over distance.
-- [class PHASEEnvelopeDistanceModelParameters](phaseenvelopedistancemodelparameters.md)
+- [class PHASEEnvelopeDistanceModelParameters](./phaseenvelopedistancemodelparameters.md)
   A graph of points and curves that shapes the volume of a sound over distance.
-- [class PHASEDistanceModelFadeOutParameters](phasedistancemodelfadeoutparameters.md)
+- [class PHASEDistanceModelFadeOutParameters](./phasedistancemodelfadeoutparameters.md)
   A distance over which the framework fades out sound.
 
 

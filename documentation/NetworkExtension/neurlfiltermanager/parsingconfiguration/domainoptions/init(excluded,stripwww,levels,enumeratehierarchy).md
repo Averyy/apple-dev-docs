@@ -1,7 +1,8 @@
 # init(excluded:stripWWW:levels:enumerateHierarchy:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new domain options configuration with default values.
 

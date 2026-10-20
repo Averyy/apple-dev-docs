@@ -1,9 +1,10 @@
 # overlay
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A possible value of the [`presentationType`](nsview/definitionoptionkey/presentationtype.md) dictionary key that produces a small overlay window at the string location,
+A possible value of the [`presentationType`](../definitionoptionkey/presentationtype.md) dictionary key that produces a small overlay window at the string location,
 
 **Availability**:
 - macOS 10.6+
@@ -14,10 +15,15 @@ A possible value of the [`presentationType`](nsview/definitionoptionkey/presenta
 static let overlay: NSView.DefinitionPresentationType
 ```
 
+```c
+extern NSDefinitionPresentationType const NSDefinitionPresentationTypeOverlay;
+```
+
 ## See Also
 
-- [static let dictionaryApplication: NSView.DefinitionPresentationType](nsview/definitionpresentationtype/dictionaryapplication.md)
-  A possible value of the [`presentationType`](nsview/definitionoptionkey/presentationtype.md) dictionary key that invokes Dictionary application to display the definition.
+### Presentation Values
+- [static let dictionaryApplication: NSView.DefinitionPresentationType](./dictionaryapplication.md)
+  A possible value of the [`presentationType`](../definitionoptionkey/presentationtype.md) dictionary key that invokes Dictionary application to display the definition.
 
 
 ---

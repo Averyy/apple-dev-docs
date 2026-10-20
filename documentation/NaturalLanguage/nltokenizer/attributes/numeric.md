@@ -1,7 +1,8 @@
 # numeric
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The string contains numbers.
 
@@ -20,11 +21,16 @@ The string contains numbers.
 static var numeric: NLTokenizer.Attributes { get }
 ```
 
+```c
+NLTokenizerAttributeNumeric
+```
+
 ## See Also
 
-- [static var emoji: NLTokenizer.Attributes](nltokenizer/attributes/emoji.md)
+### Contents
+- [static var emoji: NLTokenizer.Attributes](./emoji.md)
   The string contains emoji.
-- [static var symbolic: NLTokenizer.Attributes](nltokenizer/attributes/symbolic.md)
+- [static var symbolic: NLTokenizer.Attributes](./symbolic.md)
   The string contains symbols.
 
 

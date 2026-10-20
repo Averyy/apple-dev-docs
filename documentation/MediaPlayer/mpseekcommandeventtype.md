@@ -1,7 +1,8 @@
 # MPSeekCommandEventType
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the beginning and ending of seek events.
 
@@ -10,7 +11,7 @@ Defines the beginning and ending of seek events.
 - iPadOS 7.1+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,25 +21,29 @@ Defines the beginning and ending of seek events.
 enum MPSeekCommandEventType
 ```
 
+```c
+enum MPSeekCommandEventType : NSUInteger;
+```
+
 ## Topics
 
 ### Event types
-- [MPSeekCommandEventType.beginSeeking](mpseekcommandeventtype/beginseeking.md)
+- [MPSeekCommandEventType.beginSeeking](./mpseekcommandeventtype/beginseeking.md)
   Indicates the external media player began seeking.
-- [MPSeekCommandEventType.endSeeking](mpseekcommandeventtype/endseeking.md)
+- [MPSeekCommandEventType.endSeeking](./mpseekcommandeventtype/endseeking.md)
   Indicates the external media player stopped seeking.
 ### Initializers
-- [init?(rawValue: UInt)](mpseekcommandeventtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpseekcommandeventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

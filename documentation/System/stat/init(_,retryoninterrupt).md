@@ -1,7 +1,8 @@
 # init(_:retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `Stat` struct from a `FileDescriptor`.
 

@@ -1,12 +1,13 @@
 # iOS & iPadOS 17.1 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 17.1. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [`Xcode 15 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15-release-notes).
+The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 17.1. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [Xcode 15 Release Notes](../Xcode-Release-Notes/xcode-15-release-notes.md).
 
 ##### App Intents
 
@@ -42,45 +43,52 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Remote Widgets might render blank on mismatched iOS and macOS releases.  (115436466)
 
-##### Skadnetwork
+##### SKAdNetwork
 
 ###### Resolved Issues
 
 - Fixed: Calling the deprecated SKAdNetwork registerAppForAdNetworkAttribution API will not reset the conversion value to 0 in SKAdNetwork 4.0 postbacks.  (113371209)
 
-##### Storekit
+##### StoreKit
 
 ###### Resolved Issues
 
 - Fixed issue where the `completionBlock` in `loadProduct(withParameters:completionBlock:)` would return success for an invalid product identifier.  (114389619) (FB13048488)
 
-##### Wallet Apple Pay
+##### Wallet & Apple Pay
 
 ###### Known Issues
 
-- Wallet might crash on launch for some users who connect cards to bank accounts on on iOS 17.1 Beta 1 & 2 once Beta 3 is released.  (116694764) **Workaround:** Update device to iOS 17.1 Beta 3.
-- The connection between a card and bank account might unexpectedly revoke.  (116738732) **Workaround:** Follow the instructions in the “Update Your Connection” repair flow.
-- If the connection between a card and bank account is revoked, some users might encounter an error when completing the “Update Your Connection” repair flow.  (116738863) **Workaround:** Opening Settings and navigate to Apple Pay & Wallet > Connections. Remove the connection to your institution, and re-connect your card again.
+- Wallet might crash on launch for some users who connect cards to bank accounts on on iOS 17.1 Beta 1 & 2 once Beta 3 is released.  (116694764)
 
-##### Iphone 12 in France
+  **Workaround:** Update device to iOS 17.1 Beta 3.
+- The connection between a card and bank account might unexpectedly revoke.  (116738732)
+
+  **Workaround:** Follow the instructions in the “Update Your Connection” repair flow.
+- If the connection between a card and bank account is revoked, some users might encounter an error when completing the “Update Your Connection” repair flow.  (116738863)
+
+  **Workaround:** Opening Settings and navigate to Apple Pay & Wallet > Connections. Remove the connection to your institution, and re-connect your card again.
+
+##### iPhone 12 in France
 
 ###### Notes
 
-- Updates the iPhone 12 for users in France to accommodate a test protocol for Specific Absorption Rate (SAR) testing. For more information, visit this website: [`https://support.apple.com/kb/HT213923`](https://developer.apple.comhttps://support.apple.com/kb/HT213923)  (116601274)
+- Updates the iPhone 12 for users in France to accommodate a test protocol for Specific Absorption Rate (SAR) testing. For more information, visit this website: [https://support.apple.com/kb/HT213923](https://support.apple.com/kb/HT213923)  (116601274)
 
 ## See Also
 
-- [iOS & iPadOS 17.6 Release Notes](ios-ipados-17_6-release-notes.md)
+### iOS & iPadOS 17
+- [iOS & iPadOS 17.6 Release Notes](./ios-ipados-17_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.5 Release Notes](ios-ipados-17_5-release-notes.md)
+- [iOS & iPadOS 17.5 Release Notes](./ios-ipados-17_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.4 Release Notes](ios-ipados-17_4-release-notes.md)
+- [iOS & iPadOS 17.4 Release Notes](./ios-ipados-17_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.3 Release Notes](ios-ipados-17_3-release-notes.md)
+- [iOS & iPadOS 17.3 Release Notes](./ios-ipados-17_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.2 Release Notes](ios-ipados-17_2-release-notes.md)
+- [iOS & iPadOS 17.2 Release Notes](./ios-ipados-17_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17 Release Notes](ios-ipados-17-release-notes.md)
+- [iOS & iPadOS 17 Release Notes](./ios-ipados-17-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

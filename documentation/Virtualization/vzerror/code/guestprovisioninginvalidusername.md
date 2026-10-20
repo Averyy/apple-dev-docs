@@ -1,7 +1,8 @@
 # VZError.Code.guestProvisioningInvalidUsername
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the username for guest provisioning is invalid.
 
@@ -12,6 +13,10 @@ An error that indicates the username for guest provisioning is invalid.
 
 ```swift
 case guestProvisioningInvalidUsername
+```
+
+```c
+VZErrorGuestProvisioningInvalidUsername
 ```
 
 

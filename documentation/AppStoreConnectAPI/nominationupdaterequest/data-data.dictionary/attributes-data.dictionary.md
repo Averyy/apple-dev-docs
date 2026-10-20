@@ -1,14 +1,15 @@
 # NominationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object NominationUpdateRequest.Data.Attributes
 ```
 
@@ -27,7 +28,7 @@ object NominationUpdateRequest.Data.Attributes
 - `publishStartDate` (date-time)
 - `submitted` (boolean)
 - `supplementalMaterialsUris` ([uri])
-- `type` (string)
+- `type` (string): **Allowed Values**: `APP_LAUNCH`, `APP_ENHANCEMENTS`, `NEW_CONTENT`
 
 
 ---

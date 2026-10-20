@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that acts as the view controller’s delegate.
 
@@ -17,13 +18,18 @@ An object that acts as the view controller’s delegate.
 weak var delegate: (any PKAddSecureElementPassViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PKAddSecureElementPassViewControllerDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must adopt the [`PKAddSecureElementPassViewControllerDelegate`](pkaddsecureelementpassviewcontrollerdelegate.md) protocol. The view controller doesn’t retain the delegate.
+The delegate must adopt the [`PKAddSecureElementPassViewControllerDelegate`](../pkaddsecureelementpassviewcontrollerdelegate.md) protocol. The view controller doesn’t retain the delegate.
 
 ## See Also
 
-- [protocol PKAddSecureElementPassViewControllerDelegate](pkaddsecureelementpassviewcontrollerdelegate.md)
+### Responding to the life cycle of a pass
+- [protocol PKAddSecureElementPassViewControllerDelegate](../pkaddsecureelementpassviewcontrollerdelegate.md)
   The methods for responding to the life cycle events of a Secure Element pass.
 
 

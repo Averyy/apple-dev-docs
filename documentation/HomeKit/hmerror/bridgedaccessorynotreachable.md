@@ -1,7 +1,8 @@
 # bridgedAccessoryNotReachable
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating the bridged accessory cannot be reached.
 
@@ -21,9 +22,10 @@ static var bridgedAccessoryNotReachable: HMError.Code { get }
 
 ## See Also
 
-- [static var cannotRemoveNonBridgeAccessory: HMError.Code](hmerror/cannotremovenonbridgeaccessory.md)
+### Detecting bridge errors
+- [static var cannotRemoveNonBridgeAccessory: HMError.Code](./cannotremovenonbridgeaccessory.md)
   An attempt to remove a bridged accessory.
-- [static var cannotUnblockNonBridgeAccessory: HMError.Code](hmerror/cannotunblocknonbridgeaccessory.md)
+- [static var cannotUnblockNonBridgeAccessory: HMError.Code](./cannotunblocknonbridgeaccessory.md)
   An error indicating a non-bridge accessory cannot be unblocked.
 
 

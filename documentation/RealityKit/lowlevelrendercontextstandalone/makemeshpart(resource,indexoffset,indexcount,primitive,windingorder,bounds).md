@@ -1,7 +1,8 @@
 # makeMeshPart(resource:indexOffset:indexCount:primitive:windingOrder:bounds:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a mesh part that selects a contiguous range of indices from a mesh resource.
 
@@ -19,11 +20,11 @@ final func makeMeshPart(resource: LowLevelMeshResource, indexOffset: Int, indexC
 
 #### Return Value
 
-A newly created [`LowLevelMeshPart`](lowlevelmeshpart.md).
+A newly created [`LowLevelMeshPart`](../lowlevelmeshpart.md).
 
 #### Discussion
 
-> **Note**: An error if the index range falls outside the resource’s index buffer.
+> **Throws**: An error if the index range falls outside the resource’s index buffer.
 
 ## Parameters
 

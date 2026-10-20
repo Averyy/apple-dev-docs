@@ -1,7 +1,8 @@
 # MTLVisibilityResultType.reset
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reset visibility result data when you create a render command encoder.
 
@@ -17,6 +18,10 @@ Reset visibility result data when you create a render command encoder.
 
 ```swift
 case reset
+```
+
+```c
+MTLVisibilityResultTypeReset
 ```
 
 

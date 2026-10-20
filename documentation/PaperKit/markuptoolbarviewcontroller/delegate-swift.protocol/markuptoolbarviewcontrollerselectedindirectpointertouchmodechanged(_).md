@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the `selectedIndirectPointerTouchMode` changes.
@@ -22,7 +23,8 @@ Default implementation provided.
 
 ## See Also
 
-- [func markupToolbarViewControllerSelectedDrawingToolChanged(MarkupToolbarViewController)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselecteddrawingtoolchanged(_:).md)
+### Responding to changes
+- [func markupToolbarViewControllerSelectedDrawingToolChanged(MarkupToolbarViewController)](./markuptoolbarviewcontrollerselecteddrawingtoolchanged%28_%29.md)
   Called when the `selectedDrawingTool` changes.
 
 

@@ -1,7 +1,8 @@
 # intrinsicMatrixProjectionOffset
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Offset of the point of perspective relative to the rectilinear projection.
 

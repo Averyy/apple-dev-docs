@@ -1,18 +1,19 @@
 # mbuf_flags
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 mbuf_flags_t mbuf_flags(const mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 The flags.
 

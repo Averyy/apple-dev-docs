@@ -1,7 +1,8 @@
 # scroll(to:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -18,7 +19,8 @@
 
 ## See Also
 
-- [UITabBarController.Sidebar.ScrollTarget](uitabbarcontroller/sidebar-swift.class/scrolltarget.md)
+### Scrolling
+- [UITabBarController.Sidebar.ScrollTarget](./scrolltarget.md)
 
 
 ---

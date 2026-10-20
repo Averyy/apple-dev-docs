@@ -1,7 +1,8 @@
 # kSecImportItemKeyID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key ID.
 
@@ -20,9 +21,13 @@ Key ID.
 let kSecImportItemKeyID: CFString
 ```
 
+```c
+extern CFStringRef const kSecImportItemKeyID;
+```
+
 ## Mentions
 
-- [Importing an Identity](importing-an-identity.md)
+- [Importing an Identity](./importing-an-identity.md)
 
 #### Discussion
 

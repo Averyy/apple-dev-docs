@@ -1,7 +1,8 @@
 # Add resource to favorites
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add the user’s resource to favorites.
 
@@ -22,8 +23,17 @@ If successful, the HTTP status code is 202 (Accepted) and there’s no response 
 
 ## Parameters
 
+### Query Parameters
+
 - `ids` ([string]) *(required)*: The ids of the specific type.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object that `storefront` specifies. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
+## Responses
+
+- `202` Accepted (`EmptyBodyResponse`, `application/json`): Request accepted.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 
 ---

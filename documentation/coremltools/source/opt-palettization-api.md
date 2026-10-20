@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-palettization-ap
 
 # API Overview
 
-**
-
-- [.md](../_sources/source/opt-palettization-api.md)
-- **
-
-.pdf
-
-**
-
-# API Overview
-
- Table of contents 
-
-## Contents
-
-# API Overview
-
 This page summarizes all the APIs that are available to palettize the weights of a model.
 While there are several APIs available, different due to the input model format (Core ML or PyTorch model) and/or the
 optimization workflow, they all follow a similar flow and have the following steps in common:
@@ -73,7 +56,7 @@ Some key parameters that the config accepts are:
 
 There is also an option to customize the ops to palettize. More granular control can be achieved by using the
 `op_type_configs` and `op_name_configs` flags of OptimizationConfig. In order to get the names of the ops to customize,
-see the [get_weights_metadata()](mlmodel-utilities.html#get-weights-metadata)
+see the [get_weights_metadata()](mlmodel-utilities.md#get-weights-metadata)
 utility, which provides detailed information about all the weights in the network,
 along with the ops each weight feeds into.
 
@@ -139,7 +122,7 @@ For more details, please follow the detailed API page for [coremltools.optimize.
 
 ### Sensitive K-Means Palettization API Example
 
-This API implements the [Sensitive K-Means Algorithm](opt-palettization-algos.html#sensitive-k-means). This algorithm
+This API implements the [Sensitive K-Means Algorithm](opt-palettization-algos.md#sensitive-k-means). This algorithm
 requires calibration data as well as a loss function to compute parameter sensitivity.
 
 The following example shows `4-bit` palettization applied to all ops, with the exception that all the `linear` ops are
@@ -264,7 +247,7 @@ The DKM API has several other options, to control some of the specific knobs of 
 In most cases, you do not need to use values other than the default ones. To find out about these though, checkout the
 API Reference page [coremltools.optimize.torch.palettization.DKMPalettizer](https://apple.github.io/coremltools/source/coremltools.optimize.torch.palettization.html#coremltools.optimize.torch.palettization.DKMPalettizer).
 
-[This notebook](https://apple.github.io/coremltools/_examples/dkm_palettization.md) provides a full example of applying DKM on an MNIST model.
+[This notebook](https://apple.github.io/coremltools/_examples/dkm_palettization.html) provides a full example of applying DKM on an MNIST model.
 
 ## Converting the Palettized PyTorch Model
 
@@ -290,5 +273,3 @@ palettized_coreml_model = ct.convert(traced_model, inputs=..,
 If you palettized the Torch model using other non-coremltools APIs, or you are using coremltools version < 8, then
 please check out the [conversion page](opt-conversion.md) to find out the process for getting the Core ML model with
 the correct palettized ops in it.
-
-** Contents

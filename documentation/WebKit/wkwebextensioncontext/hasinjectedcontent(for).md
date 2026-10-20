@@ -1,7 +1,8 @@
 # hasInjectedContent(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the extension has script or stylesheet content that can be injected into the specified URL.
 
@@ -16,6 +17,10 @@ Checks if the extension has script or stylesheet content that can be injected in
 
 ```swift
 func hasInjectedContent(for url: URL) -> Bool
+```
+
+```objc
+- (BOOL) hasInjectedContentForURL:(NSURL *) url;
 ```
 
 #### Return Value

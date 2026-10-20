@@ -1,14 +1,15 @@
 # kSCSICmd_VendorSpecific_Start
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_VendorSpecific_Start = 0xC0
 ```
 

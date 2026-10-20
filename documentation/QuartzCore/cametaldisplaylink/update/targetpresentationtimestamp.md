@@ -1,7 +1,8 @@
 # targetPresentationTimestamp
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the system estimates until the display of the next frame.
 
@@ -17,6 +18,10 @@ The time the system estimates until the display of the next frame.
 
 ```swift
 var targetPresentationTimestamp: CFTimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) CFTimeInterval targetPresentationTimestamp;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # sliceIndex
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the view’s texture in an array-based texture type.
 
@@ -15,19 +16,24 @@ The index of the view’s texture in an array-based texture type.
 var sliceIndex: Int { get }
 ```
 
+```c
+size_t cp_view_texture_map_get_slice_index(cp_view_texture_map_t view_texture_map);
+```
+
 #### Discussion
 
-Use the returned index to retrieve the view’s texture when the texture type is [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray). When configuring your render pass descriptor, specify the index in the [`slice`](https://developer.apple.com/documentation/metal/mtlrenderpassattachmentdescriptor/slice) property of the descriptor’s color and depth attachments.
+Use the returned index to retrieve the view’s texture when the texture type is [`MTLTextureType.type2DArray`](../../../../../Metal/mtltexturetype/type2darray.md). When configuring your render pass descriptor, specify the index in the [`slice`](../../../../../Metal/mtlrenderpassattachmentdescriptor/slice.md) property of the descriptor’s color and depth attachments.
 
-If you don’t use array-based textures for drawing, fetch the index using [`textureIndex`](layerrenderer/drawable/view/texturemap-swift.struct/textureindex.md) instead.
+If you don’t use array-based textures for drawing, fetch the index using [`textureIndex`](./textureindex.md) instead.
 
 ## See Also
 
-- [var textureMap: LayerRenderer.Drawable.View.TextureMap](layerrenderer/drawable/view/texturemap-swift.property.md)
+### Getting the view’s texture map
+- [var textureMap: LayerRenderer.Drawable.View.TextureMap](../texturemap-swift.property.md)
   The texture map for a view.
-- [var textureIndex: Int](layerrenderer/drawable/view/texturemap-swift.struct/textureindex.md)
+- [var textureIndex: Int](./textureindex.md)
   The index of the view’s textures in the drawable.
-- [var viewport: MTLViewport](layerrenderer/drawable/view/texturemap-swift.struct/viewport.md)
+- [var viewport: MTLViewport](./viewport.md)
   The portion of the texture that the view uses to draw its content.
 
 

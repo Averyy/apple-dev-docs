@@ -1,7 +1,8 @@
 # videoFrameRateRangeForBackgroundReplacement
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum and maximum frame rates available when Background Replacement is active.
 
@@ -18,13 +19,18 @@ The minimum and maximum frame rates available when Background Replacement is act
 var videoFrameRateRangeForBackgroundReplacement: AVFrameRateRange? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForBackgroundReplacement;
+```
+
 #### Discussion
 
 Devices may support a limited frame rate range when Background Replacement is active. If this device format doesn’t support this feature, the value of this property is `nil`.
 
 ## See Also
 
-- [var isBackgroundReplacementSupported: Bool](avcapturedevice/format/isbackgroundreplacementsupported.md)
+### Determining background replacement support
+- [var isBackgroundReplacementSupported: Bool](./isbackgroundreplacementsupported.md)
   A Boolean value that indicates whether the format supports background replacement.
 
 

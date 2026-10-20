@@ -1,9 +1,10 @@
 # DocumentConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+The configuration of a document in a [`DocumentGroup`](./documentgroup.md).
 
 **Availability**:
 - iOS 17.0+
@@ -21,22 +22,23 @@ struct DocumentConfiguration
 ## Topics
 
 ### Getting configuration values
-- [var fileURL: URL?](documentconfiguration/fileurl.md)
+- [var fileURL: URL?](./documentconfiguration/fileurl.md)
   A URL of an open document.
-- [var isEditable: Bool](documentconfiguration/iseditable.md)
+- [var isEditable: Bool](./documentconfiguration/iseditable.md)
   A Boolean value that indicates whether you can edit the document.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var documentConfiguration: DocumentConfiguration?](environmentvalues/documentconfiguration.md)
-  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
-- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
+### Accessing document configuration
+- [var documentConfiguration: DocumentConfiguration?](./environmentvalues/documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](./documentgroup.md).
+- [var undoManager: UndoManager?](./environmentvalues/undomanager.md)
   The undo manager used to register a view’s undo operations.
 
 

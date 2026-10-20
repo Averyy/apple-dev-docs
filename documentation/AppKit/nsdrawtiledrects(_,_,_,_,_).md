@@ -1,17 +1,22 @@
 # NSDrawTiledRects(_:_:_:_:_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws rectangles with borders.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func NSDrawTiledRects(_ boundsRect: NSRect, _ clipRect: NSRect, _ sides: UnsafePointer<NSRectEdge>, _ grays: UnsafePointer<CGFloat>, _ count: Int) -> NSRect
+```
+
+```c
+extern NSRect NSDrawTiledRects(NSRect boundsRect, NSRect clipRect, const NSRectEdge *sides, const CGFloat *grays, NSInteger count);
 ```
 
 #### Return Value
@@ -50,9 +55,10 @@ In the preceding example, `mySides` is an array that specifies sides of a rectan
 
 ## See Also
 
-- [func NSEraseRect(NSRect)](nseraserect(_:).md)
+### Drawing Rectangles
+- [func NSEraseRect(NSRect)](./nseraserect%28_%29.md)
   Erases the specified rect by filling it with white.
-- [func NSDrawGroove(NSRect, NSRect)](nsdrawgroove(_:_:).md)
+- [func NSDrawGroove(NSRect, NSRect)](./nsdrawgroove%28_,_%29.md)
   Draws a gray-filled rectangle with a groove border.
 
 

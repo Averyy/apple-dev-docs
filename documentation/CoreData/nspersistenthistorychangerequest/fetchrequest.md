@@ -1,7 +1,8 @@
 # fetchRequest
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specified fetch request, when retrieving history.
 
@@ -20,9 +21,14 @@ The specified fetch request, when retrieving history.
 var fetchRequest: NSFetchRequest<any NSFetchRequestResult>? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSFetchRequest * fetchRequest;
+```
+
 ## See Also
 
-- [var resultType: NSPersistentHistoryResultType](nspersistenthistorychangerequest/resulttype.md)
+### Configuring the Request
+- [var resultType: NSPersistentHistoryResultType](./resulttype.md)
   The type of result that this request returns.
 
 

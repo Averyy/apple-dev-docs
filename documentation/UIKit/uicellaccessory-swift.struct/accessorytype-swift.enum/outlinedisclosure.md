@@ -1,7 +1,8 @@
 # UICellAccessory.AccessoryType.outlineDisclosure
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The outline disclosure accessory type.
 
@@ -9,7 +10,7 @@ The outline disclosure accessory type.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,26 @@ case outlineDisclosure
 
 ## See Also
 
-- [UICellAccessory.AccessoryType.disclosureIndicator](uicellaccessory-swift.struct/accessorytype-swift.enum/disclosureindicator.md)
+### Accessories
+- [UICellAccessory.AccessoryType.disclosureIndicator](./disclosureindicator.md)
   The disclosure indicator accessory type.
-- [UICellAccessory.AccessoryType.popUpMenu](uicellaccessory-swift.struct/accessorytype-swift.enum/popupmenu.md)
+- [UICellAccessory.AccessoryType.popUpMenu](./popupmenu.md)
   The popup menu accessory type.
-- [UICellAccessory.AccessoryType.checkmark](uicellaccessory-swift.struct/accessorytype-swift.enum/checkmark.md)
+- [UICellAccessory.AccessoryType.checkmark](./checkmark.md)
   The checkmark accessory type.
-- [UICellAccessory.AccessoryType.delete](uicellaccessory-swift.struct/accessorytype-swift.enum/delete.md)
+- [UICellAccessory.AccessoryType.delete](./delete.md)
   The delete control accessory type.
-- [UICellAccessory.AccessoryType.insert](uicellaccessory-swift.struct/accessorytype-swift.enum/insert.md)
+- [UICellAccessory.AccessoryType.insert](./insert.md)
   The insert control accessory type.
-- [UICellAccessory.AccessoryType.reorder](uicellaccessory-swift.struct/accessorytype-swift.enum/reorder.md)
+- [UICellAccessory.AccessoryType.reorder](./reorder.md)
   The reorder control accessory type.
-- [UICellAccessory.AccessoryType.multiselect](uicellaccessory-swift.struct/accessorytype-swift.enum/multiselect.md)
+- [UICellAccessory.AccessoryType.multiselect](./multiselect.md)
   The multiselect control accessory type.
-- [UICellAccessory.AccessoryType.label](uicellaccessory-swift.struct/accessorytype-swift.enum/label.md)
+- [UICellAccessory.AccessoryType.label](./label.md)
   The label accessory type.
-- [UICellAccessory.AccessoryType.detail](uicellaccessory-swift.struct/accessorytype-swift.enum/detail.md)
+- [UICellAccessory.AccessoryType.detail](./detail.md)
   The detail accessory type.
-- [UICellAccessory.AccessoryType.customView(_:)](uicellaccessory-swift.struct/accessorytype-swift.enum/customview(_:).md)
+- [UICellAccessory.AccessoryType.customView(_:)](./customview%28_%29.md)
   The custom accessory type.
 
 

@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A label that identifies this device in the guest VM.
 
@@ -14,11 +15,16 @@ A label that identifies this device in the guest VM.
 var tag: String { get set }
 ```
 
+```objc
+@property (copy) NSString * tag;
+```
+
 ## See Also
 
-- [var share: VZDirectoryShare?](vzvirtiofilesystemdeviceconfiguration/share.md)
+### Getting file system information
+- [var share: VZDirectoryShare?](./share.md)
   A value that defines how the host exposes resources to the guest virtual machine.
-- [class var macOSGuestAutomountTag: String](vzvirtiofilesystemdeviceconfiguration/macosguestautomounttag.md)
+- [class var macOSGuestAutomountTag: String](./macosguestautomounttag.md)
   A value that indicates that the guest needs to automount this file system device in the guest VM.
 
 

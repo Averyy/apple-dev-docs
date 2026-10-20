@@ -1,7 +1,8 @@
 # NSTextContentManager
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that defines the interface and a default implementation for managing the text document contents.
 
@@ -18,75 +19,80 @@ An abstract class that defines the interface and a default implementation for ma
 class NSTextContentManager
 ```
 
+```objc
+@interface NSTextContentManager : NSObject
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
 
 ## Topics
 
 ### Creating a content manager
-- [init()](nstextcontentmanager/init.md)
+- [init()](./nstextcontentmanager/init%28%29.md)
   Creates a new content manager.
-- [init?(coder: NSCoder)](nstextcontentmanager/init(coder:).md)
+- [init?(coder: NSCoder)](./nstextcontentmanager/init%28coder%29.md)
   Creates a new content manager object from data in an unarchiver.
 ### Controlling backing store synchronization
-- [var automaticallySynchronizesToBackingStore: Bool](nstextcontentmanager/automaticallysynchronizestobackingstore.md)
+- [var automaticallySynchronizesToBackingStore: Bool](./nstextcontentmanager/automaticallysynchronizestobackingstore.md)
   Determines whether to automatically synchronize with the backing store when an editing transaction finishes.
 ### Performing transactions
-- [var hasEditingTransaction: Bool](nstextcontentmanager/haseditingtransaction.md)
+- [var hasEditingTransaction: Bool](./nstextcontentmanager/haseditingtransaction.md)
   Indicates there’s an active editing transaction from the primary text layout manager.
-- [func performEditingTransaction(() -> Void)](nstextcontentmanager/performeditingtransaction(_:).md)
+- [func performEditingTransaction(() -> Void)](./nstextcontentmanager/performeditingtransaction%28_%29.md)
   Performs an editing transaction and invokes a block upon completion.
-- [func recordEditAction(in: NSTextRange, newTextRange: NSTextRange)](nstextcontentmanager/recordeditaction(in:newtextrange:).md)
+- [func recordEditAction(in: NSTextRange, newTextRange: NSTextRange)](./nstextcontentmanager/recordeditaction%28in,newtextrange%29.md)
   Records information about an edit action to the transaction.
 ### Working with layout managers
-- [var primaryTextLayoutManager: NSTextLayoutManager?](nstextcontentmanager/primarytextlayoutmanager.md)
+- [var primaryTextLayoutManager: NSTextLayoutManager?](./nstextcontentmanager/primarytextlayoutmanager.md)
   The primary text layout manager for this content.
-- [var textLayoutManagers: [NSTextLayoutManager]](nstextcontentmanager/textlayoutmanagers.md)
+- [var textLayoutManagers: [NSTextLayoutManager]](./nstextcontentmanager/textlayoutmanagers.md)
   The array of text layout managers associated with this text content manager.
-- [var automaticallySynchronizesTextLayoutManagers: Bool](nstextcontentmanager/automaticallysynchronizestextlayoutmanagers.md)
+- [var automaticallySynchronizesTextLayoutManagers: Bool](./nstextcontentmanager/automaticallysynchronizestextlayoutmanagers.md)
   Determines if the framework should automatically synchronize all text layout managers when exiting an editing transaction.
-- [func addTextLayoutManager(NSTextLayoutManager)](nstextcontentmanager/addtextlayoutmanager(_:).md)
+- [func addTextLayoutManager(NSTextLayoutManager)](./nstextcontentmanager/addtextlayoutmanager%28_%29.md)
   Adds the layout manager you provide to the list of layout managers.
-- [func removeTextLayoutManager(NSTextLayoutManager)](nstextcontentmanager/removetextlayoutmanager(_:).md)
+- [func removeTextLayoutManager(NSTextLayoutManager)](./nstextcontentmanager/removetextlayoutmanager%28_%29.md)
   Removes the layout manager you specifiy from the list of layout managers.
-- [func synchronizeTextLayoutManagers((((any Error)?) -> Void)?)](nstextcontentmanager/synchronizetextlayoutmanagers(_:).md)
+- [func synchronizeTextLayoutManagers((((any Error)?) -> Void)?)](./nstextcontentmanager/synchronizetextlayoutmanagers%28_%29.md)
   Synchronizes changes to all nonprimary text layout managers.
 ### Customizing and validating text elements
-- [var delegate: (any NSTextContentManagerDelegate)?](nstextcontentmanager/delegate.md)
+- [var delegate: (any NSTextContentManagerDelegate)?](./nstextcontentmanager/delegate.md)
   The delegate for the content manager object.
-- [protocol NSTextContentManagerDelegate](nstextcontentmanagerdelegate.md)
+- [protocol NSTextContentManagerDelegate](./nstextcontentmanagerdelegate.md)
   The optional methods that delegates of content manager objects implement for customizing or validating text elements.
-- [NSTextContentManager.EnumerationOptions](nstextcontentmanager/enumerationoptions.md)
+- [NSTextContentManager.EnumerationOptions](./nstextcontentmanager/enumerationoptions.md)
   Values that control the order in which the framework enumerates text elements.
 ### Finding a specific text element
-- [func textElements(for: NSTextRange) -> [NSTextElement]](nstextcontentmanager/textelements(for:).md)
+- [func textElements(for: NSTextRange) -> [NSTextElement]](./nstextcontentmanager/textelements%28for%29.md)
   Returns an array of text elements that intersect with the range you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSTextContentStorage](nstextcontentstorage.md)
+- [NSTextContentStorage](./nstextcontentstorage.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [NSTextElementProvider](nstextelementprovider.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NSTextElementProvider](./nstextelementprovider.md)
 
 ## See Also
 
-- [class NSTextContentStorage](nstextcontentstorage.md)
+### Text management
+- [class NSTextContentStorage](./nstextcontentstorage.md)
   A concrete object for managing your view’s text content and generating the text elements necessary for layout.
-- [class NSAttributedString](../foundation/nsattributedstring.md)
+- [class NSAttributedString](../Foundation/nsattributedstring.md)
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
-- [class NSMutableAttributedString](../foundation/nsmutableattributedstring.md)
+- [class NSMutableAttributedString](../Foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
 
 

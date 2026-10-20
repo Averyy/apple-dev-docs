@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kInvertingEncoding](1645151-anonymous/kinvertingencoding.md)
-- [kTransparentEncoding](1645151-anonymous/ktransparentencoding.md)
+- [kInvertingEncoding](./api-1645151-anonymous/kinvertingencoding.md)
+- [kTransparentEncoding](./api-1645151-anonymous/ktransparentencoding.md)
 
 
 ---

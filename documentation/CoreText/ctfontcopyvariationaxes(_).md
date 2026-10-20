@@ -1,7 +1,8 @@
 # CTFontCopyVariationAxes(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of variation axes.
 
@@ -20,9 +21,13 @@ Returns an array of variation axes.
 func CTFontCopyVariationAxes(_ font: CTFont) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCTFontCopyVariationAxes(CTFontRef font);
+```
+
 #### Return Value
 
-An array of variation axes dictionaries. Each variation axis dictionary contains the five variation axis keys listed in [`Font Variation Axis Dictionary Keys`](font-variation-axis-dictionary-keys.md).
+An array of variation axes dictionaries. Each variation axis dictionary contains the five variation axis keys listed in [Font Variation Axis Dictionary Keys](./font-variation-axis-dictionary-keys.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ An array of variation axes dictionaries. Each variation axis dictionary contains
 
 ## See Also
 
-- [func CTFontCopyVariation(CTFont) -> CFDictionary?](ctfontcopyvariation(_:).md)
+### Working With Font Variations
+- [func CTFontCopyVariation(CTFont) -> CFDictionary?](./ctfontcopyvariation%28_%29.md)
   Returns a variation dictionary from the font reference.
 
 

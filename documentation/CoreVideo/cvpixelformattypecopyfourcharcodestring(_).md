@@ -1,7 +1,8 @@
 # CVPixelFormatTypeCopyFourCharCodeString(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func CVPixelFormatTypeCopyFourCharCodeString(_ pixelFormat: OSType) -> CFString
+```
+
+```c
+extern CFStringRefCVPixelFormatTypeCopyFourCharCodeString(OSType pixelFormat);
 ```
 
 #### Return Value

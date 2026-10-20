@@ -1,7 +1,8 @@
 # sampleReferenceBaseURL
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base URL for sample references.
 
@@ -19,6 +20,10 @@ The base URL for sample references.
 var sampleReferenceBaseURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * sampleReferenceBaseURL;
+```
+
 #### Discussion
 
 When this property is an absolute URL, the sample locations written to the file when appending sample references to this track are relative to this URL. The URL must point to a location contained by any common parent directory of the locations that will be referenced. For example, setting the this property to `file:///Users/johnappleseed/Movies/` and appending sample buffers that refer to `file:///Users/johnappleseed/Movies/data/movie1.mov` will cause the sample reference `data/movie1.mov` to be written to the movie file.
@@ -27,11 +32,12 @@ If this property can’t be resolved as an absolute URL or if it points to a loc
 
 ## See Also
 
-- [var isModified: Bool](avmutablemovietrack/ismodified.md)
+### Configuring track information
+- [var isModified: Bool](./ismodified.md)
   A Boolean value that indicates whether a track is in a modified state.
-- [var alternateGroupID: Int](avmutablemovietrack/alternategroupid.md)
+- [var alternateGroupID: Int](./alternategroupid.md)
   A number that identifies the track as a member of a particular alternate group.
-- [var mediaDataStorage: AVMediaDataStorage?](avmutablemovietrack/mediadatastorage.md)
+- [var mediaDataStorage: AVMediaDataStorage?](./mediadatastorage.md)
   A storage container for the media data to be added to a track.
 
 

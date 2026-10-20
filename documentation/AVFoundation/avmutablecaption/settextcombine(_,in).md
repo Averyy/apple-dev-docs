@@ -1,7 +1,8 @@
 # setTextCombine(_:in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets text combine for a range.
 
@@ -25,15 +26,16 @@ func setTextCombine(_ textCombine: AVCaption.TextCombine, in range: NSRange)
 
 ## See Also
 
-- [AVCaption.Ruby](avcaption/ruby.md)
+### Configuring advanced typography
+- [AVCaption.Ruby](../avcaption/ruby.md)
   An object that presents ruby characters.
-- [func setRuby(AVCaption.Ruby, in: NSRange)](avmutablecaption/setruby(_:in:).md)
+- [func setRuby(AVCaption.Ruby, in: NSRange)](./setruby%28_,in%29.md)
   Sets ruby text for a range.
-- [func removeRuby(in: NSRange)](avmutablecaption/removeruby(in:).md)
+- [func removeRuby(in: NSRange)](./removeruby%28in%29.md)
   Removes ruby text from a range.
-- [AVCaption.TextCombine](avcaption/textcombine.md)
+- [AVCaption.TextCombine](../avcaption/textcombine.md)
   The caption’s supported rendering policy options.
-- [func removeTextCombine(in: NSRange)](avmutablecaption/removetextcombine(in:).md)
+- [func removeTextCombine(in: NSRange)](./removetextcombine%28in%29.md)
   Removes text combine from a range.
 
 

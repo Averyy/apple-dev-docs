@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_SPREADMETHOD_REFLECT;
 ```
 
 ## See Also
 
-- [SVG_SPREADMETHOD_PAD](svggradientelement/1629256-svg_spreadmethod_pad.md)
-- [SVG_SPREADMETHOD_REPEAT](svggradientelement/1632241-svg_spreadmethod_repeat.md)
-- [SVG_SPREADMETHOD_UNKNOWN](svggradientelement/1632395-svg_spreadmethod_unknown.md)
+### Miscellaneous
+- [SVG_SPREADMETHOD_PAD](./api-1629256-svg_spreadmethod_pad.md)
+- [SVG_SPREADMETHOD_REPEAT](./api-1632241-svg_spreadmethod_repeat.md)
+- [SVG_SPREADMETHOD_UNKNOWN](./api-1632395-svg_spreadmethod_unknown.md)
 
 
 ---

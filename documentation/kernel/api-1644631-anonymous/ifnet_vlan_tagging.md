@@ -1,14 +1,15 @@
 # IFNET_VLAN_TAGGING
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 IFNET_VLAN_TAGGING = 0x00010000
 ```
 

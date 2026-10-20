@@ -1,7 +1,8 @@
 # HKPredicateKeyPathSum
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the sum of a quantity series inside a predicate format string.
 
@@ -17,6 +18,10 @@ The key path for accessing the sum of a quantity series inside a predicate forma
 
 ```swift
 let HKPredicateKeyPathSum: String
+```
+
+```c
+extern NSString * const HKPredicateKeyPathSum;
 ```
 
 

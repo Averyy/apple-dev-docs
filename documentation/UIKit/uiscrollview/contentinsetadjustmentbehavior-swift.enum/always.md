@@ -1,7 +1,8 @@
 # UIScrollView.ContentInsetAdjustmentBehavior.always
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Always include the safe area insets in the content adjustment.
 
@@ -16,6 +17,10 @@ Always include the safe area insets in the content adjustment.
 
 ```swift
 case always
+```
+
+```c
+UIScrollViewContentInsetAdjustmentAlways
 ```
 
 

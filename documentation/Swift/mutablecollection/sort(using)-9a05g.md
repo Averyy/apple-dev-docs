@@ -1,7 +1,8 @@
 # sort(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts the collection using the given array of `SortComparator`s to compare elements.
 
@@ -19,6 +20,8 @@ Sorts the collection using the given array of `SortComparator`s to compare eleme
 ```swift
 mutating func sort<S, Comparator>(using comparators: S) where S : Sequence, Comparator : SortComparator, Comparator == S.Element, Self.Element == Comparator.Compared
 ```
+
+Available when `Self` conforms to `RandomAccessCollection`.
 
 ## Parameters
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kPEScaleFactor1x](1646498-anonymous/kpescalefactor1x.md)
-- [kPEScaleFactor2x](1646498-anonymous/kpescalefactor2x.md)
-- [kPEScaleFactorUnknown](1646498-anonymous/kpescalefactorunknown.md)
+- [kPEScaleFactor1x](./api-1646498-anonymous/kpescalefactor1x.md)
+- [kPEScaleFactor2x](./api-1646498-anonymous/kpescalefactor2x.md)
+- [kPEScaleFactorUnknown](./api-1646498-anonymous/kpescalefactorunknown.md)
 
 
 ---

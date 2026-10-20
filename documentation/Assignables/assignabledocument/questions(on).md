@@ -1,7 +1,8 @@
 # questions(on:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Find questions that exist on the specified page.
 
@@ -9,7 +10,7 @@ Find questions that exist on the specified page.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ Questions on the specified page.
 
 ## See Also
 
-- [func appendQuestion(pageID: AssignableDocument.Page.ID, rect: CGRect, maxScore: Double?) -> AssignableDocument.Question.ID](assignabledocument/appendquestion(pageid:rect:maxscore:).md)
+### Getting and setting the questions
+- [func appendQuestion(pageID: AssignableDocument.Page.ID, rect: CGRect, maxScore: Double?) -> AssignableDocument.Question.ID](./appendquestion%28pageid,rect,maxscore%29.md)
   Creates a new question and appends it to the document.
-- [func removeQuestion(AssignableDocument.Question.ID) -> AssignableDocument.Question?](assignabledocument/removequestion(_:).md)
+- [func removeQuestion(AssignableDocument.Question.ID) -> AssignableDocument.Question?](./removequestion%28_%29.md)
   Removes a question and its boxes from the document.
 
 

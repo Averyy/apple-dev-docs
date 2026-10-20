@@ -1,7 +1,8 @@
 # weightSet
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The runtime named blend shapes weights.
 
@@ -21,11 +22,11 @@ var weightSet: BlendShapeWeightsSet { get set }
 
 #### Discussion
 
-Initialize the `weightSet` variable using the [`init()`](blendshapeweightsset/init().md) function.
+Initialize the `weightSet` variable using the [`init()`](../blendshapeweightsset/init%28%29.md) function.
 
 The `weightSet` variable has the following limitations as to how it can be set:
 
-- If `weightSet` is assigned to a new [`BlendShapeWeightsSet`](blendshapeweightsset.md), then the new set have the same number of weights and weight names as the current variable. Additionally, make sure the weight names exactly match the current set’s weight names.
+- If `weightSet` is assigned to a new [`BlendShapeWeightsSet`](../blendshapeweightsset.md), then the new set have the same number of weights and weight names as the current variable. Additionally, make sure the weight names exactly match the current set’s weight names.
 - Weight name changes are ignored.
 - Setting an incorrect number of weight values are ignored.
 - Blend shape name changes are ignored.

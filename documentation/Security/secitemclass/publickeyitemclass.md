@@ -1,7 +1,8 @@
 # SecItemClass.publicKeyItemClass
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the item is a public key of a public-private pair.
 
@@ -13,6 +14,10 @@ Indicates that the item is a public key of a public-private pair.
 
 ```swift
 case publicKeyItemClass
+```
+
+```c
+kSecPublicKeyItemClass
 ```
 
 

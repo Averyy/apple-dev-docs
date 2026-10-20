@@ -1,7 +1,8 @@
 # AttributedTextFormatting.EmptyDefinition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text formatting definition that places no constraints on the values of attributes.
 
@@ -23,12 +24,12 @@ struct EmptyDefinition<Scope> where Scope : AttributeScope
 ## Topics
 
 ### Initializers
-- [init()](attributedtextformatting/emptydefinition/init.md)
+- [init()](./emptydefinition/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+- [AttributedTextFormattingDefinition](../attributedtextformattingdefinition.md)
 
 
 ---

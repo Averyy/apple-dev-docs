@@ -1,7 +1,8 @@
 # release
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The callback used release a retain on the info pointer. This can be NULL.
 
@@ -13,6 +14,10 @@ The callback used release a retain on the info pointer. This can be NULL.
 
 ```swift
 var release: CFAllocatorReleaseCallBack?
+```
+
+```c
+CFAllocatorReleaseCallBack release;
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecTimestampBadRequest
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The timestamp transaction is not permitted or supported.
 
@@ -18,6 +19,10 @@ The timestamp transaction is not permitted or supported.
 
 ```swift
 var errSecTimestampBadRequest: OSStatus { get }
+```
+
+```c
+errSecTimestampBadRequest
 ```
 
 

@@ -1,7 +1,8 @@
 # contentInset
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom distance to inset the content view from the scroll view edges.
 
@@ -20,11 +21,12 @@ Use this property to add additional scroll area around content. Default is `NSEd
 
 ## See Also
 
-- [var contentInset: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinset-3vn4v.md)
+### Configuring content insets
+- [var contentInset: UIEdgeInsets](./contentinset-3vn4v.md)
   The custom distance to inset the content view from the safe area or scroll view edges.
-- [var adjustedContentInset: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/adjustedcontentinset.md)
+- [var adjustedContentInset: UIEdgeInsets](./adjustedcontentinset.md)
   The insets that the system derives from the content insets and safe area insets.
-- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](papermarkupviewcontroller/scrollconfiguration-swift.class/contentinsetadjustmentbehavior.md)
+- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](./contentinsetadjustmentbehavior.md)
   The behavior for determining the adjusted content inset.
 
 

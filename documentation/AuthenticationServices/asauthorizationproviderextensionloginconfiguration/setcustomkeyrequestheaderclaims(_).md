@@ -1,7 +1,8 @@
 # setCustomKeyRequestHeaderClaims(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -12,17 +13,22 @@
 func setCustomKeyRequestHeaderClaims(_ claims: [String : Any]) throws
 ```
 
+```objc
+- (BOOL) setCustomKeyRequestHeaderClaims:(NSDictionary<NSString *,id> *) claims returningError:(NSError **) error;
+```
+
 ## Mentions
 
-- [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
+- [Supporting key requests and key exchange requests](../supporting-key-requests-and-key-exchange-requests.md)
 
 ## See Also
 
-- [func setCustomKeyExchangeRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestbodyclaims(_:).md)
-- [func setCustomKeyExchangeRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestheaderclaims(_:).md)
-- [func setCustomKeyRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestbodyclaims(_:).md)
-- [func setCustomRefreshRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestbodyclaims(_:).md)
-- [func setCustomRefreshRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestheaderclaims(_:).md)
+### Instance Methods
+- [func setCustomKeyExchangeRequestBodyClaims([String : Any]) throws](./setcustomkeyexchangerequestbodyclaims%28_%29.md)
+- [func setCustomKeyExchangeRequestHeaderClaims([String : Any]) throws](./setcustomkeyexchangerequestheaderclaims%28_%29.md)
+- [func setCustomKeyRequestBodyClaims([String : Any]) throws](./setcustomkeyrequestbodyclaims%28_%29.md)
+- [func setCustomRefreshRequestBodyClaims([String : Any]) throws](./setcustomrefreshrequestbodyclaims%28_%29.md)
+- [func setCustomRefreshRequestHeaderClaims([String : Any]) throws](./setcustomrefreshrequestheaderclaims%28_%29.md)
 
 
 ---

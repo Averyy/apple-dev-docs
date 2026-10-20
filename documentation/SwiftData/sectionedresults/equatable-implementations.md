@@ -1,12 +1,13 @@
 # Equatable Implementations
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (SectionedResults<Element, SectionTitle>, SectionedResults<Element, SectionTitle>) -> Bool](sectionedresults/==(_:_:).md)
-  Two `SectionedResults` are equal if they contain the same [`ResultsSection`](resultssection.md) values, in the same order.
+- [static func == (SectionedResults<Element, SectionTitle>, SectionedResults<Element, SectionTitle>) -> Bool](./eqeq%28_,_%29.md)
+  Two `SectionedResults` are equal if they contain the same [`ResultsSection`](../resultssection.md) values, in the same order.
 
 
 ---

@@ -1,14 +1,15 @@
 # vm_stats
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t vm_stats(void *info, unsigned int *count);
 ```
 

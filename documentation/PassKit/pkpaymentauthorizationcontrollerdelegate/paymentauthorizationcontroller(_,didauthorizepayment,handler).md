@@ -1,7 +1,8 @@
 # paymentAuthorizationController(_:didAuthorizePayment:handler:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user authorized the payment request, and asks for a result.
 
@@ -17,7 +18,16 @@ Tells the delegate that the user authorized the payment request, and asks for a 
 
 ```swift
 @MainActor
+optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizationController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void)
+```
+
+```swift
+@MainActor
 optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizationController, didAuthorizePayment payment: PKPayment) async -> PKPaymentAuthorizationResult
+```
+
+```objc
+- (void) paymentAuthorizationController:(PKPaymentAuthorizationController *) controller didAuthorizePayment:(PKPayment *) payment handler:(void (^)(PKPaymentAuthorizationResult *result)) completion;
 ```
 
 #### Discussion
@@ -32,13 +42,14 @@ The system calls this method after the payment request is authorized. You submit
 
 ## See Also
 
-- [func paymentAuthorizationController(PKPaymentAuthorizationController, didRequestMerchantSessionUpdate: (PKPaymentRequestMerchantSessionUpdate) -> Void)](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didrequestmerchantsessionupdate:).md)
+### Handling user’s payment authorization
+- [func paymentAuthorizationController(PKPaymentAuthorizationController, didRequestMerchantSessionUpdate: (PKPaymentRequestMerchantSessionUpdate) -> Void)](./paymentauthorizationcontroller%28_,didrequestmerchantsessionupdate%29.md)
   Requests an object that validates the identity of a merchant for a payment request.
-- [func paymentAuthorizationControllerWillAuthorizePayment(PKPaymentAuthorizationController)](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerwillauthorizepayment(_:).md)
+- [func paymentAuthorizationControllerWillAuthorizePayment(PKPaymentAuthorizationController)](./paymentauthorizationcontrollerwillauthorizepayment%28_%29.md)
   Tells the delegate that the user is authorizing the payment request.
-- [func paymentAuthorizationController(PKPaymentAuthorizationController, didAuthorizePayment: PKPayment, completion: (PKPaymentAuthorizationStatus) -> Void)](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didauthorizepayment:completion:).md)
+- [func paymentAuthorizationController(PKPaymentAuthorizationController, didAuthorizePayment: PKPayment, completion: (PKPaymentAuthorizationStatus) -> Void)](./paymentauthorizationcontroller%28_,didauthorizepayment,completion%29.md)
   Tells the delegate that the user authorized the payment request, and asks for a result.
-- [func paymentAuthorizationControllerDidFinish(PKPaymentAuthorizationController)](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md)
+- [func paymentAuthorizationControllerDidFinish(PKPaymentAuthorizationController)](./paymentauthorizationcontrollerdidfinish%28_%29.md)
   Tells the delegate that payment authorization has completed.
 
 

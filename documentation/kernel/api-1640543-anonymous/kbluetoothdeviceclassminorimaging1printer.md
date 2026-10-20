@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorImaging1Printer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorImaging1Printer = 0x20
 ```
 

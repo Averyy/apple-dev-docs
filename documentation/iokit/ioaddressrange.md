@@ -1,7 +1,8 @@
 # IOAddressRange
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOAddressRange = IOVirtualRange
+```
+
+```c
+typedef IOVirtualRange IOAddressRange;
 ```
 
 

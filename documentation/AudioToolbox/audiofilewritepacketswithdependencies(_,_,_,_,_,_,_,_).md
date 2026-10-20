@@ -1,7 +1,8 @@
 # AudioFileWritePacketsWithDependencies(_:_:_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func AudioFileWritePacketsWithDependencies(_ inAudioFile: AudioFileID, _ inUseCache: Bool, _ inNumBytes: UInt32, _ inPacketDescriptions: UnsafePointer<AudioStreamPacketDescription>?, _ inPacketDependencies: UnsafePointer<AudioStreamPacketDependencyDescription>, _ inStartingPacket: Int64, _ ioNumPackets: UnsafeMutablePointer<UInt32>, _ inBuffer: UnsafeRawPointer) -> OSStatus
+```
+
+```c
+extern OSStatus AudioFileWritePacketsWithDependencies(AudioFileID inAudioFile, Boolean inUseCache, UInt32 inNumBytes, const AudioStreamPacketDescription *inPacketDescriptions, const AudioStreamPacketDependencyDescription *inPacketDependencies, SInt64 inStartingPacket, UInt32 *ioNumPackets, const void *inBuffer);
 ```
 
 #### Return Value
@@ -33,7 +38,7 @@ For all uncompressed formats, `packets == frames`.
 - `inUseCache`: Set to `true` if you want to cache the data. Otherwise, set to `false`.
 - `inNumBytes`: The number of bytes of audio data being written.
 - `inPacketDescriptions`: A pointer to an array of packet descriptions for the audio data. Not all formats require packet descriptions. If no packet descriptions are required, for instance, if you are writing CBR data,  pass `NULL`.
-- `inPacketDependencies`: A pointer to an array of packet dependencies for the audio data. This must not be `NULL`.  To write packets without dependencies, use [`AudioFileWritePackets(_:_:_:_:_:_:_:)`](audiofilewritepackets(_:_:_:_:_:_:_:).md) instead.
+- `inPacketDependencies`: A pointer to an array of packet dependencies for the audio data. This must not be `NULL`.  To write packets without dependencies, use [`AudioFileWritePackets(_:_:_:_:_:_:_:)`](./audiofilewritepackets%28_,_,_,_,_,_,_%29.md) instead.
 - `inStartingPacket`: The packet index for the placement of the first provided packet.
 - `ioNumPackets`: On input, a pointer to the number of packets to write. On output, a pointer to the number of packets actually written.
 - `inBuffer`: A pointer to user-allocated memory containing the new audio data to write to the audio data file.

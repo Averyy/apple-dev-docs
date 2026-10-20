@@ -1,7 +1,8 @@
 # LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:mask:peephole:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an LSTM operation and returns the value tensor and optionally the cell state tensor and  the training state tensor.
 
@@ -17,6 +18,10 @@ Creates an LSTM operation and returns the value tensor and optionally the cell s
 
 ```swift
 func LSTM(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, inputWeight: MPSGraphTensor?, bias: MPSGraphTensor?, initState: MPSGraphTensor?, initCell: MPSGraphTensor?, mask: MPSGraphTensor?, peephole: MPSGraphTensor?, descriptor: MPSGraphLSTMDescriptor, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) LSTMWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias initState:(MPSGraphTensor *) initState initCell:(MPSGraphTensor *) initCell mask:(MPSGraphTensor *) mask peephole:(MPSGraphTensor *) peephole descriptor:(MPSGraphLSTMDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value
@@ -35,7 +40,7 @@ for t = 0 to T-1
   h[t] = o[t]g(c[t]), where
 ```
 
-`W` is optional `inputWeight`, `R` is `recurrentWeight`, `b` is optional `bias`, `m` is optional `mask`, `x[t]` is `source` `h[t]` is the first output, `c[t]` is the second output (optional), `z[t]` is either the second or third output (optional), `h[-1]` is `initCell`.  and `h[-1]` is `initState`. `p` is an optional peephole vector. See [`MPSGraphLSTMDescriptor`](mpsgraphlstmdescriptor.md) for different `activation` options for `f()` and `g()`.
+`W` is optional `inputWeight`, `R` is `recurrentWeight`, `b` is optional `bias`, `m` is optional `mask`, `x[t]` is `source` `h[t]` is the first output, `c[t]` is the second output (optional), `z[t]` is either the second or third output (optional), `h[-1]` is `initCell`.  and `h[-1]` is `initState`. `p` is an optional peephole vector. See [`MPSGraphLSTMDescriptor`](../mpsgraphlstmdescriptor.md) for different `activation` options for `f()` and `g()`.
 
 ## Parameters
 

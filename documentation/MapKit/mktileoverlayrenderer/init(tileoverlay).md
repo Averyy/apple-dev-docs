@@ -1,7 +1,8 @@
 # init(tileOverlay:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a tile renderer with the specified overlay object.
 
@@ -19,6 +20,10 @@ Initializes and returns a tile renderer with the specified overlay object.
 init(tileOverlay overlay: MKTileOverlay)
 ```
 
+```objc
+- (instancetype) initWithTileOverlay:(MKTileOverlay *) overlay;
+```
+
 #### Return Value
 
 An initialized tile renderer object.
@@ -33,7 +38,8 @@ The returned renderer object works with the tile overlay object to coordinate th
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
 
 
 ---

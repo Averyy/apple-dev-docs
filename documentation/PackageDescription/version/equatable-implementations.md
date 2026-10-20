@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: PackageDescription
+**Framework**: PackageDescription  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Version, Version) -> Bool](version/==(_:_:).md)
+- [static func == (Version, Version) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

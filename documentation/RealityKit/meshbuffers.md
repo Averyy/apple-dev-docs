@@ -1,7 +1,8 @@
 # MeshBuffers
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that holds the data for an model entity’s mesh.
 
@@ -11,7 +12,7 @@ An object that holds the data for an model entity’s mesh.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,65 +23,66 @@ enum MeshBuffers
 ## Topics
 
 ### Creating texture coordinate buffers
-- [static func textureCoordinates(Int) -> MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates(_:).md)
-- [MeshBuffers.UVs](meshbuffers/uvs.md)
+- [static func textureCoordinates(Int) -> MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates%28_%29.md)
+- [MeshBuffers.UVs](./meshbuffers/uvs.md)
 ### Accessing coordinate channels
-- [static let textureCoordinates1: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates1.md)
-- [static let textureCoordinates2: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates2.md)
-- [static let textureCoordinates3: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates3.md)
-- [static let textureCoordinates4: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates4.md)
-- [static let textureCoordinates5: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates5.md)
-- [static let textureCoordinates6: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates6.md)
-- [static let textureCoordinates7: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates7.md)
+- [static let textureCoordinates1: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates1.md)
+- [static let textureCoordinates2: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates2.md)
+- [static let textureCoordinates3: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates3.md)
+- [static let textureCoordinates4: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates4.md)
+- [static let textureCoordinates5: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates5.md)
+- [static let textureCoordinates6: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates6.md)
+- [static let textureCoordinates7: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates7.md)
 ### Structures
-- [MeshBuffers.Identifier](meshbuffers/identifier.md)
-- [MeshBuffers.Semantic](meshbuffers/semantic.md)
+- [MeshBuffers.Identifier](./meshbuffers/identifier.md)
+- [MeshBuffers.Semantic](./meshbuffers/semantic.md)
 ### Type Aliases
-- [MeshBuffers.BlendShapeOffsets](meshbuffers/blendshapeoffsets.md)
-- [MeshBuffers.JointInfluences](meshbuffers/jointinfluences-swift.typealias.md)
-- [MeshBuffers.Normals](meshbuffers/normals-swift.typealias.md)
-- [MeshBuffers.Positions](meshbuffers/positions-swift.typealias.md)
-- [MeshBuffers.Tangents](meshbuffers/tangents-swift.typealias.md)
-- [MeshBuffers.TextureCoordinates](meshbuffers/texturecoordinates-swift.typealias.md)
-- [MeshBuffers.TriangleIndices](meshbuffers/triangleindices-swift.typealias.md)
+- [MeshBuffers.BlendShapeOffsets](./meshbuffers/blendshapeoffsets.md)
+- [MeshBuffers.JointInfluences](./meshbuffers/jointinfluences-swift.typealias.md)
+- [MeshBuffers.Normals](./meshbuffers/normals-swift.typealias.md)
+- [MeshBuffers.Positions](./meshbuffers/positions-swift.typealias.md)
+- [MeshBuffers.Tangents](./meshbuffers/tangents-swift.typealias.md)
+- [MeshBuffers.TextureCoordinates](./meshbuffers/texturecoordinates-swift.typealias.md)
+- [MeshBuffers.TriangleIndices](./meshbuffers/triangleindices-swift.typealias.md)
 ### Type Properties
-- [static let bitangents: MeshBuffers.Semantic<SIMD3<Float>>](meshbuffers/bitangents.md)
-- [static let jointInfluences: MeshBuffers.Semantic<MeshJointInfluence>](meshbuffers/jointinfluences-swift.type.property.md)
-- [static let normals: MeshBuffers.Semantic<SIMD3<Float>>](meshbuffers/normals-swift.type.property.md)
-- [static let positions: MeshBuffers.Semantic<SIMD3<Float>>](meshbuffers/positions-swift.type.property.md)
-- [static let tangents: MeshBuffers.Semantic<SIMD3<Float>>](meshbuffers/tangents-swift.type.property.md)
-- [static let textureCoordinates: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates-swift.type.property.md)
-- [static let triangleIndices: MeshBuffers.Semantic<UInt32>](meshbuffers/triangleindices-swift.type.property.md)
-- [static let uv2: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv2.md)
-- [static let uv3: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv3.md)
-- [static let uv4: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv4.md)
-- [static let uv5: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv5.md)
-- [static let uv6: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv6.md)
-- [static let uv7: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv7.md)
+- [static let bitangents: MeshBuffers.Semantic<SIMD3<Float>>](./meshbuffers/bitangents.md)
+- [static let jointInfluences: MeshBuffers.Semantic<MeshJointInfluence>](./meshbuffers/jointinfluences-swift.type.property.md)
+- [static let normals: MeshBuffers.Semantic<SIMD3<Float>>](./meshbuffers/normals-swift.type.property.md)
+- [static let positions: MeshBuffers.Semantic<SIMD3<Float>>](./meshbuffers/positions-swift.type.property.md)
+- [static let tangents: MeshBuffers.Semantic<SIMD3<Float>>](./meshbuffers/tangents-swift.type.property.md)
+- [static let textureCoordinates: MeshBuffers.Semantic<SIMD2<Float>>](./meshbuffers/texturecoordinates-swift.type.property.md)
+- [static let triangleIndices: MeshBuffers.Semantic<UInt32>](./meshbuffers/triangleindices-swift.type.property.md)
+- [static let uv2: MeshBuffers.Semantic<SIMD4<Float>>](./meshbuffers/uv2.md)
+- [static let uv3: MeshBuffers.Semantic<SIMD4<Float>>](./meshbuffers/uv3.md)
+- [static let uv4: MeshBuffers.Semantic<SIMD4<Float>>](./meshbuffers/uv4.md)
+- [static let uv5: MeshBuffers.Semantic<SIMD4<Float>>](./meshbuffers/uv5.md)
+- [static let uv6: MeshBuffers.Semantic<SIMD4<Float>>](./meshbuffers/uv6.md)
+- [static let uv7: MeshBuffers.Semantic<SIMD4<Float>>](./meshbuffers/uv7.md)
 ### Type Methods
-- [static func blendShapeOffsets(named: String) -> MeshBuffers.Semantic<SIMD3<Float>>](meshbuffers/blendshapeoffsets(named:).md)
-- [static func custom<Value>(String, type: Value.Type) -> MeshBuffers.Semantic<Value>](meshbuffers/custom(_:type:).md)
+- [static func blendShapeOffsets(named: String) -> MeshBuffers.Semantic<SIMD3<Float>>](./meshbuffers/blendshapeoffsets%28named%29.md)
+- [static func custom<Value>(String, type: Value.Type) -> MeshBuffers.Semantic<Value>](./meshbuffers/custom%28_,type%29.md)
 ### Enumerations
-- [MeshBuffers.ElementType](meshbuffers/elementtype.md)
+- [MeshBuffers.ElementType](./meshbuffers/elementtype.md)
   The data type for each element of the buffer.
-- [MeshBuffers.Rate](meshbuffers/rate.md)
+- [MeshBuffers.Rate](./meshbuffers/rate.md)
   Defines how elements in the buffer map to features of the mesh.
 
 ## See Also
 
-- [struct MeshBuffer](meshbuffer.md)
+### Mesh description
+- [struct MeshBuffer](./meshbuffer.md)
   Mesh buffer containing elements of any type.
-- [protocol MeshBufferContainer](meshbuffercontainer.md)
+- [protocol MeshBufferContainer](./meshbuffercontainer.md)
   Conforming objects contain a table of mesh buffers.
-- [protocol MeshBufferSemantic](meshbuffersemantic.md)
+- [protocol MeshBufferSemantic](./meshbuffersemantic.md)
   A protocol that holds an identifier value for mesh buffers.
-- [struct AnyMeshBuffer](anymeshbuffer.md)
+- [struct AnyMeshBuffer](./anymeshbuffer.md)
   Mesh buffer stored in the container.
-- [struct MeshInstanceCollection](meshinstancecollection.md)
+- [struct MeshInstanceCollection](./meshinstancecollection.md)
   An object that holds a collection of mesh resource instances.
-- [struct MeshModelCollection](meshmodelcollection.md)
+- [struct MeshModelCollection](./meshmodelcollection.md)
   An object that holds a collection of mesh models.
-- [struct MeshPartCollection](meshpartcollection.md)
+- [struct MeshPartCollection](./meshpartcollection.md)
   An object that holds a collection of mesh parts.
 
 

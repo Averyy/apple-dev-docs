@@ -1,7 +1,8 @@
 # constantBlockAlignment
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of the constant block.
 
@@ -19,21 +20,26 @@ The alignment of the constant block.
 var constantBlockAlignment: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger constantBlockAlignment;
+```
+
 #### Discussion
 
 If set, this property forces the constant block to be aligned to the specified value. It should be set on the first constant only, and is valid only if a corresponding explicit `alignas` specifier is applied to the constant in the Metal shader language.
 
 ## See Also
 
-- [var dataType: MTLDataType](mtlargumentdescriptor/datatype.md)
+### Setting the descriptor’s properties
+- [var dataType: MTLDataType](./datatype.md)
   The data type of the argument.
-- [var index: Int](mtlargumentdescriptor/index.md)
+- [var index: Int](./index.md)
   The index ID of the argument.
-- [var access: MTLBindingAccess](mtlargumentdescriptor/access.md)
+- [var access: MTLBindingAccess](./access.md)
   The access permissions of the argument.
-- [var arrayLength: Int](mtlargumentdescriptor/arraylength.md)
+- [var arrayLength: Int](./arraylength.md)
   The length of an array argument.
-- [var textureType: MTLTextureType](mtlargumentdescriptor/texturetype.md)
+- [var textureType: MTLTextureType](./texturetype.md)
   The texture type of a texture argument.
 
 

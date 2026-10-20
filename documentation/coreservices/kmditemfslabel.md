@@ -1,7 +1,8 @@
 # kMDItemFSLabel
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Index of the Finder label of the file. Possible values are 0 through 7. A CFNumber.
 
@@ -12,6 +13,10 @@ Index of the Finder label of the file. Possible values are 0 through 7. A CFNumb
 
 ```swift
 let kMDItemFSLabel: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSLabel;
 ```
 
 

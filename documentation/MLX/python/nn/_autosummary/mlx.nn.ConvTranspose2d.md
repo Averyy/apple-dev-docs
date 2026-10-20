@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.C
 
 # mlx.nn.ConvTranspose2d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.ConvTranspose2d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.ConvTranspose2d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.ConvTranspose2d
-
 **class ConvTranspose2d(*in_channels: int*, *out_channels: int*, *kernel_size: int | tuple*, *stride: int | tuple = 1*, *padding: int | tuple = 0*, *dilation: int | tuple = 1*, *output_padding: int | tuple = 0*, *bias: bool = True*)**
 : Applies a 2-dimensional transposed convolution over the multi-channel input
 image.
@@ -60,5 +33,3 @@ side of the output shape. Default: `0`.
 output. Default: `True`
 
 Methods
-
-** Contents

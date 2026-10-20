@@ -1,22 +1,43 @@
 # incompleteAchievementImage()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A common image that you can display when the player hasn’t completed the achievement.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+class func incompleteAchievementImage() -> UIImage
+```
+
+*macOS*
+
 ```swift
 class func incompleteAchievementImage() -> NSImage
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
++ (UIImage *) incompleteAchievementImage;
+```
+
+*macOS*
+
+```objc
++ (NSImage *) incompleteAchievementImage;
 ```
 
 #### Return Value
@@ -25,15 +46,16 @@ A common image that represents an incomplete achievement.
 
 #### Discussion
 
-In macOS versions earlier than macOS 11, this class method returns an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) object but otherwise works the same as in iOS, Mac Catalyst, and tvOS.
+In macOS versions earlier than macOS 11, this class method returns an [`NSImage`](../../AppKit/nsimage.md) object but otherwise works the same as in iOS, Mac Catalyst, and tvOS.
 
-Starting with iOS 14, macOS 11, and tvOS 14, this method returns a symbol image. To match your game’s appearance, make adjustments to the symbol image as described in [`Configuring and displaying symbol images in your UI`](https://developer.apple.com/documentation/uikit/configuring-and-displaying-symbol-images-in-your-ui).
+Starting with iOS 14, macOS 11, and tvOS 14, this method returns a symbol image. To match your game’s appearance, make adjustments to the symbol image as described in [Configuring and displaying symbol images in your UI](../../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md).
 
 ## See Also
 
-- [class func placeholderCompletedAchievementImage() -> UIImage](gkachievementdescription/placeholdercompletedachievementimage.md)
+### Working with Achievement Images
+- [class func placeholderCompletedAchievementImage() -> UIImage](./placeholdercompletedachievementimage%28%29.md)
   A placeholder image that you can display when the player completes the achievement.
-- [func loadImage(completionHandler: ((UIImage?, (any Error)?) -> Void)?)](gkachievementdescription/loadimage(completionhandler:).md)
+- [func loadImage(completionHandler: ((UIImage?, (any Error)?) -> Void)?)](./loadimage%28completionhandler%29.md)
   Loads the image to display when the player completes the achievement.
 
 

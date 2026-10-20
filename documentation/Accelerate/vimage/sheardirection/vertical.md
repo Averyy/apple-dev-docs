@@ -1,7 +1,8 @@
 # vImage.ShearDirection.vertical
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Perform a vertical shear.
 
@@ -11,7 +12,7 @@ Perform a vertical shear.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case vertical
 
 ## See Also
 
-- [vImage.ShearDirection.horizontal](vimage/sheardirection/horizontal.md)
+### Enumeration Cases
+- [vImage.ShearDirection.horizontal](./horizontal.md)
   Perform a horizontal shear.
 
 

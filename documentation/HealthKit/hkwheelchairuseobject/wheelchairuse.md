@@ -1,7 +1,8 @@
 # wheelchairUse
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value indicating the user’s wheelchair use.
 
@@ -19,14 +20,18 @@ A value indicating the user’s wheelchair use.
 var wheelchairUse: HKWheelchairUse { get }
 ```
 
+```objc
+@property (readonly) HKWheelchairUse wheelchairUse;
+```
+
 #### Discussion
 
-For a list of possible values, see [`HKWheelchairUse`](hkwheelchairuse.md).
+For a list of possible values, see [`HKWheelchairUse`](../hkwheelchairuse.md).
 
 ## Topics
 
 ### Valid Wheelchair Use Values
-- [enum HKWheelchairUse](hkwheelchairuse.md)
+- [enum HKWheelchairUse](../hkwheelchairuse.md)
   Constants indicating the user’s wheelchair use.
 
 

@@ -1,18 +1,19 @@
 # subscript(_:)
 
 **Framework**: SpriteKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns an array of nodes that match the name parameter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns an array of nodes that match the name parameter.
 subscript(name: String) -> [SKNode] { get }
 ```
 
+```objc
+- (NSArray<SKNode *> *) objectForKeyedSubscript:(NSString *) name;
+```
+
 ## Mentions
 
-- [Searching the Node Tree](searching-the-node-tree.md)
+- [Searching the Node Tree](../searching-the-node-tree.md)
 
 #### Return Value
 
@@ -34,13 +39,14 @@ An array of `SKNode` objects that match the name. If no matching nodes are found
 
 ## See Also
 
-- [Searching the Node Tree](searching-the-node-tree.md)
+### Accessing Nodes by Name
+- [Searching the Node Tree](../searching-the-node-tree.md)
   Access nodes by name to avoid needing an instance variable.
-- [var name: String?](sknode/name.md)
+- [var name: String?](./name.md)
   The node’s assignable name.
-- [func childNode(withName: String) -> SKNode?](sknode/childnode(withname:).md)
+- [func childNode(withName: String) -> SKNode?](./childnode%28withname%29.md)
   Searches the children of the receiving node for a node with a specific name.
-- [func enumerateChildNodes(withName: String, using: (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)](sknode/enumeratechildnodes(withname:using:).md)
+- [func enumerateChildNodes(withName: String, using: (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratechildnodes%28withname,using%29.md)
   Searches the children of the receiving node to perform processing for nodes that share a name.
 
 

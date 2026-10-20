@@ -1,15 +1,20 @@
 # isr
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var isr: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)
+```
+
+```c
+uint32_t isr[8];
 ```
 
 

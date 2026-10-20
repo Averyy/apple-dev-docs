@@ -1,7 +1,8 @@
 # AccessoryMessage.Result.success
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result indicating successful message transmission to the accessory.
 
@@ -16,7 +17,8 @@ case success
 
 ## See Also
 
-- [case failure(AccessoryMessage.Error)](accessorymessage/result/failure(_:).md)
+### Identifying result types
+- [case failure(AccessoryMessage.Error)](./failure%28_%29.md)
   A result indicating message transmission failed.
 
 

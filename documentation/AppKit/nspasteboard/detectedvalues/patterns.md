@@ -1,7 +1,8 @@
 # patterns
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of key paths that represent patterns that the data detection system identifies.
 

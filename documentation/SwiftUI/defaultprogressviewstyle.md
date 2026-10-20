@@ -1,7 +1,8 @@
 # DefaultProgressViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default progress view style in the current context of the view being styled.
 
@@ -23,24 +24,25 @@ struct DefaultProgressViewStyle
 
 #### Overview
 
-Use [`automatic`](progressviewstyle/automatic.md) to construct this style.
+Use [`automatic`](./progressviewstyle/automatic.md) to construct this style.
 
 ## Topics
 
 ### Creating the progress view style
-- [init()](defaultprogressviewstyle/init.md)
+- [init()](./defaultprogressviewstyle/init%28%29.md)
   Creates a default progress view style.
 
 ## Relationships
 
 ### Conforms To
-- [ProgressViewStyle](progressviewstyle.md)
+- [ProgressViewStyle](./progressviewstyle.md)
 
 ## See Also
 
-- [struct CircularProgressViewStyle](circularprogressviewstyle.md)
+### Supporting types
+- [struct CircularProgressViewStyle](./circularprogressviewstyle.md)
   A progress view that uses a circular gauge to indicate the partial completion of an activity.
-- [struct LinearProgressViewStyle](linearprogressviewstyle.md)
+- [struct LinearProgressViewStyle](./linearprogressviewstyle.md)
   A progress view that visually indicates its progress using a horizontal bar.
 
 

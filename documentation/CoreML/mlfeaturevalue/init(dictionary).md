@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value that contains a dictionary of numbers.
 
@@ -20,13 +21,18 @@ Creates a feature value that contains a dictionary of numbers.
 convenience init(dictionary value: [AnyHashable : NSNumber]) throws
 ```
 
+```objc
++ (instancetype) featureValueWithDictionary:(NSDictionary<id,NSNumber *> *) value error:(NSError **) error;
+```
+
 ## Parameters
 
 - `value`: A dictionary of numbers.
 
 ## See Also
 
-- [convenience init(sequence: MLSequence)](mlfeaturevalue/init(sequence:).md)
+### Creating collection feature values
+- [convenience init(sequence: MLSequence)](./init%28sequence%29.md)
   Creates a feature value that contains a sequence.
 
 

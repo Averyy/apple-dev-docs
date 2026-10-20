@@ -1,7 +1,8 @@
 # CGImageSourceCreateWithData(_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an image source that reads from a Core Foundation data object.
 
@@ -20,22 +21,27 @@ Creates an image source that reads from a Core Foundation data object.
 func CGImageSourceCreateWithData(_ data: CFData, _ options: CFDictionary?) -> CGImageSource?
 ```
 
+```c
+extern CGImageSourceRefCGImageSourceCreateWithData(CFDataRef data, CFDictionaryRef options);
+```
+
 #### Return Value
 
-An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
+An image source. You’re responsible for releasing this type using [`CFRelease`](../CoreFoundation/cfrelease.md).
 
 ## Parameters
 
-- `data`: The data object from which to read. For more information on data objects, see [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and [`Data Objects`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBinaryData/DataObjects.html#//apple_ref/doc/uid/20000171).
-- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
+- `data`: The data object from which to read. For more information on data objects, see [`CFData`](../CoreFoundation/cfdata.md) and [Data Objects](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBinaryData/DataObjects.html#//apple_ref/doc/uid/20000171).
+- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [Specifying the Read Options](./cgimagesource.md#Specifying-the-Read-Options).
 
 ## See Also
 
-- [func CGImageSourceCreateWithURL(CFURL, CFDictionary?) -> CGImageSource?](cgimagesourcecreatewithurl(_:_:).md)
+### Creating an Image Source
+- [func CGImageSourceCreateWithURL(CFURL, CFDictionary?) -> CGImageSource?](./cgimagesourcecreatewithurl%28_,_%29.md)
   Creates an image source that reads from a location specified by a URL.
-- [func CGImageSourceCreateWithDataProvider(CGDataProvider, CFDictionary?) -> CGImageSource?](cgimagesourcecreatewithdataprovider(_:_:).md)
+- [func CGImageSourceCreateWithDataProvider(CGDataProvider, CFDictionary?) -> CGImageSource?](./cgimagesourcecreatewithdataprovider%28_,_%29.md)
   Creates an image source that reads data from the specified data provider.
-- [func CGImageSourceCreateIncremental(CFDictionary?) -> CGImageSource](cgimagesourcecreateincremental(_:).md)
+- [func CGImageSourceCreateIncremental(CFDictionary?) -> CGImageSource](./cgimagesourcecreateincremental%28_%29.md)
   Creates an empty image source that you can use to accumulate incremental image data.
 
 

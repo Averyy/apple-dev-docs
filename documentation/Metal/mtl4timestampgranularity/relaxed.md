@@ -1,7 +1,8 @@
 # MTL4TimestampGranularity.relaxed
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A minimally-invasive timestamp which may be less precise.
 
@@ -17,6 +18,10 @@ A minimally-invasive timestamp which may be less precise.
 
 ```swift
 case relaxed
+```
+
+```c
+MTL4TimestampGranularityRelaxed
 ```
 
 #### Discussion

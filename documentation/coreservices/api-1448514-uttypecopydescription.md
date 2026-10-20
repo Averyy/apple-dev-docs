@@ -1,7 +1,8 @@
 # UTTypeCopyDescription(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the localized, user-readable type description string associated with a uniform type identifier.
 
@@ -20,7 +21,11 @@ Returns the localized, user-readable type description string associated with a u
 func UTTypeCopyDescription(_ inUTI: CFString) -> Unmanaged<CFString>?
 ```
 
-#### Return_value
+```c
+CFStringRef UTTypeCopyDescription(CFStringRef inUTI);
+```
+
+#### Return Value
 
 A localized string describing the type, or `NULL` if no type description is available.
 

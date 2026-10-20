@@ -1,7 +1,8 @@
 # methodOptions
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var methodOptions: ()
+```
+
+```c
+uint64_t methodOptions[0];
 ```
 
 

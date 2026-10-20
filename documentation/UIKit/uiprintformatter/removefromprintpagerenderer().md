@@ -1,7 +1,8 @@
 # removeFromPrintPageRenderer()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the print formatter from the page renderer.
 
@@ -17,13 +18,18 @@ Removes the print formatter from the page renderer.
 func removeFromPrintPageRenderer()
 ```
 
+```objc
+- (void) removeFromPrintPageRenderer;
+```
+
 #### Discussion
 
-A print formatter is typically associated with a pages of a [`UIPrintPageRenderer`](uiprintpagerenderer.md) object through the [`addPrintFormatter(_:startingAtPageAt:)`](uiprintpagerenderer/addprintformatter(_:startingatpageat:).md) method.
+A print formatter is typically associated with a pages of a [`UIPrintPageRenderer`](../uiprintpagerenderer.md) object through the [`addPrintFormatter(_:startingAtPageAt:)`](../uiprintpagerenderer/addprintformatter%28_,startingatpageat%29.md) method.
 
 ## See Also
 
-- [var printPageRenderer: UIPrintPageRenderer?](uiprintformatter/printpagerenderer.md)
+### Communicating with the page renderer
+- [var printPageRenderer: UIPrintPageRenderer?](./printpagerenderer.md)
   Returns the page renderer for the print formatter.
 
 

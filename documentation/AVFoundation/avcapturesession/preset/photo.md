@@ -1,7 +1,8 @@
 # photo
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A preset suitable for capturing high-resolution photo quality output.
 
@@ -16,6 +17,10 @@ A preset suitable for capturing high-resolution photo quality output.
 
 ```swift
 static let photo: AVCaptureSession.Preset
+```
+
+```c
+extern AVCaptureSessionPreset const AVCaptureSessionPresetPhoto;
 ```
 
 

@@ -1,7 +1,8 @@
 # AVAudioSequencerUserCallback
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A callback the sequencer calls asynchronously during playback when it encounters a user event.
 
@@ -19,9 +20,13 @@ A callback the sequencer calls asynchronously during playback when it encounters
 typealias AVAudioSequencerUserCallback = (AVMusicTrack, Data, AVMusicTimeStamp) -> Void
 ```
 
+```c
+typedef void (^)(AVMusicTrack *, NSData *, double) AVAudioSequencerUserCallback;
+```
+
 #### Discussion
 
-The sequencer delivers this callback asynchronously to the rendering thread on an internal queue. The `userData` this returns is unique to each [`AVMusicUserEvent`](avmusicuserevent.md) instance.
+The sequencer delivers this callback asynchronously to the rendering thread on an internal queue. The `userData` this returns is unique to each [`AVMusicUserEvent`](./avmusicuserevent.md) instance.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ The sequencer delivers this callback asynchronously to the rendering thread on a
 
 ## See Also
 
-- [func setUserCallback(AVAudioSequencerUserCallback?)](avaudiosequencer/setusercallback(_:).md)
+### Setting the user callback
+- [func setUserCallback(AVAudioSequencerUserCallback?)](./avaudiosequencer/setusercallback%28_%29.md)
   Adds a callback that the sequencer calls each time it encounters a user event during playback.
 
 

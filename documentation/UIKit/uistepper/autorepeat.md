@@ -1,7 +1,8 @@
 # autorepeat
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to repeatedly change the stepper’s value as the user presses and holds a stepper button.
 
@@ -17,23 +18,28 @@ A Boolean value that determines whether to repeatedly change the stepper’s val
 var autorepeat: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL autorepeat;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user pressing and holding on the stepper repeatedly alters [`value`](uistepper/value.md).
+If [`true`](../../Swift/true.md), the user pressing and holding on the stepper repeatedly alters [`value`](./value.md).
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isContinuous: Bool](uistepper/iscontinuous.md)
+### Configuring the stepper
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value that determines whether to send value changes during user interaction or after user interaction ends.
-- [var wraps: Bool](uistepper/wraps.md)
+- [var wraps: Bool](./wraps.md)
   A Boolean value that determines whether the stepper can wrap its value to the minimum or maximum value when incrementing and decrementing the value.
-- [var minimumValue: Double](uistepper/minimumvalue.md)
+- [var minimumValue: Double](./minimumvalue.md)
   The lowest possible numeric value for the stepper.
-- [var maximumValue: Double](uistepper/maximumvalue.md)
+- [var maximumValue: Double](./maximumvalue.md)
   The highest possible numeric value for the stepper.
-- [var stepValue: Double](uistepper/stepvalue.md)
+- [var stepValue: Double](./stepvalue.md)
   The step, or increment, value for the stepper.
 
 

@@ -1,7 +1,8 @@
 # withCString(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of UTF-8 code units.
 
@@ -34,9 +35,10 @@ The pointer passed as an argument to `body` is valid only during the execution o
 
 ## See Also
 
-- [var utf8CString: ContiguousArray<CChar>](string/utf8cstring.md)
+### Getting C Strings
+- [var utf8CString: ContiguousArray<CChar>](./utf8cstring.md)
   A contiguously stored null-terminated UTF-8 representation of the string.
-- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](string/withcstring(encodedas:_:).md)
+- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](./withcstring%28encodedas,_%29.md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of code units.
 
 

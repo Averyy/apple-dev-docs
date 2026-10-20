@@ -1,21 +1,23 @@
 # kIOUSB30BusCurrentMinimum
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30BusCurrentMinimum
 ```
 
 ## See Also
 
-- [kIOUSB30BusCurrentDefault](tiousb30buscurrent/kiousb30buscurrentdefault.md)
-- [kIOUSB30BusCurrentMaxPowerUnits](tiousb30buscurrent/kiousb30buscurrentmaxpowerunits.md)
+### Getting the Current Limits
+- [kIOUSB30BusCurrentDefault](./kiousb30buscurrentdefault.md)
+- [kIOUSB30BusCurrentMaxPowerUnits](./kiousb30buscurrentmaxpowerunits.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # current
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device that runs the app.
 
@@ -14,6 +15,10 @@ The device that runs the app.
 
 ```swift
 class var current: SRDevice { get }
+```
+
+```objc
+@property (class, readonly) SRDevice * currentDevice;
 ```
 
 

@@ -1,7 +1,8 @@
 # finalize()
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finalizes the hash function and returns the computed digest.
 
@@ -26,7 +27,7 @@ The computed digest of the data.
 
 #### Discussion
 
-Call this method after you provide the hash function with all the data to hash by making one or more calls to the `update(data:)` or [`update(bufferPointer:)`](sha3_512/update(bufferpointer:).md) method. After finalizing the hash function, discard it. To compute a new digest, create a new hash function with a call to the [`init()`](sha3_512/init().md) method.
+Call this method after you provide the hash function with all the data to hash by making one or more calls to the `update(data:)` or [`update(bufferPointer:)`](./update%28bufferpointer%29.md) method. After finalizing the hash function, discard it. To compute a new digest, create a new hash function with a call to the [`init()`](./init%28%29.md) method.
 
 
 ---

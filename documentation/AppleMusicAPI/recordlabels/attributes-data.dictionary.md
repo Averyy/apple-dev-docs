@@ -1,7 +1,8 @@
 # RecordLabels.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a record label resource.
 
@@ -10,7 +11,7 @@ The attributes for a record label resource.
 
 ## Declaration
 
-```swift
+```
 object RecordLabels.Attributes
 ```
 
@@ -23,7 +24,8 @@ object RecordLabels.Attributes
 
 ## See Also
 
-- [object RecordLabels.Views](recordlabels/views-data.dictionary.md)
+### Related Objects
+- [object RecordLabels.Views](./views-data.dictionary.md)
   The relationship views for a record label resource.
 
 

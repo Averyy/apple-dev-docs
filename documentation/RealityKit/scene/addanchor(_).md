@@ -1,7 +1,8 @@
 # addAnchor(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an anchor to the scene’s list of anchors.
 
@@ -25,9 +26,10 @@ Adds an anchor to the scene’s list of anchors.
 
 ## See Also
 
-- [var anchors: Scene.AnchorCollection](scene/anchors.md)
+### Adding and removing anchors
+- [var anchors: Scene.AnchorCollection](./anchors.md)
   The collection of anchors contained in the scene.
-- [func removeAnchor(any HasAnchoring)](scene/removeanchor(_:).md)
+- [func removeAnchor(any HasAnchoring)](./removeanchor%28_%29.md)
   Removes the specified anchor from the scene.
 
 

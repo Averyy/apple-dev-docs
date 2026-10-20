@@ -1,7 +1,8 @@
 # Process.TerminationReason.uncaughtSignal
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The task exited due to an uncaught signal.
 
@@ -14,9 +15,14 @@ The task exited due to an uncaught signal.
 case uncaughtSignal
 ```
 
+```c
+NSTaskTerminationReasonUncaughtSignal
+```
+
 ## See Also
 
-- [Process.TerminationReason.exit](process/terminationreason-swift.enum/exit.md)
+### Constants
+- [Process.TerminationReason.exit](./exit.md)
   The task exited normally.
 
 

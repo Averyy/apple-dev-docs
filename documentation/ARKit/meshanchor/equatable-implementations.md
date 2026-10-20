@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (MeshAnchor, MeshAnchor) -> Bool](meshanchor/==(_:_:).md)
+- [static func == (MeshAnchor, MeshAnchor) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two mesh anchors are equal.
 
 

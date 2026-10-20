@@ -1,7 +1,8 @@
 # LayoutValueKey
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A key for accessing a layout value of a layout container’s subviews.
 
@@ -22,7 +23,7 @@ protocol LayoutValueKey
 
 #### Overview
 
-If you create a custom layout by defining a type that conforms to the [`Layout`](layout.md) protocol, you can also create custom layout values that you set on individual views, and that your container view can access to guide its layout behavior. Your custom values resemble the built-in layout values that you set with view modifiers like [`layoutPriority(_:)`](view/layoutpriority(_:).md) and [`zIndex(_:)`](view/zindex(_:).md), but have a purpose that you define.
+If you create a custom layout by defining a type that conforms to the [`Layout`](./layout.md) protocol, you can also create custom layout values that you set on individual views, and that your container view can access to guide its layout behavior. Your custom values resemble the built-in layout values that you set with view modifiers like [`layoutPriority(_:)`](./view/layoutpriority%28_%29.md) and [`zIndex(_:)`](./view/zindex%28_%29.md), but have a purpose that you define.
 
 To create a custom layout value, define a type that conforms to the `LayoutValueKey` protocol and implement the one required property that returns the default value of the property. For example, you can create a property that defines an amount of flexibility for a view, defined as an optional floating point number with a default value of `nil`:
 
@@ -32,11 +33,11 @@ private struct Flexibility: LayoutValueKey {
 }
 ```
 
-The Swift compiler infers this particular key’s associated type as an optional [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) from this definition.
+The Swift compiler infers this particular key’s associated type as an optional [`CGFloat`](../CoreFoundation/cgfloat-swift.struct.md) from this definition.
 
-##### Set a Value on a View
+##### Set a value on a view
 
-Set the value on a view by adding the [`layoutValue(key:value:)`](view/layoutvalue(key:value:).md) view modifier to the view. To make your custom value easier to work with, you can do this in a convenience modifier in an extension of the [`View`](view.md) protocol:
+Set the value on a view by adding the [`layoutValue(key:value:)`](./view/layoutvalue%28key,value%29.md) view modifier to the view. To make your custom value easier to work with, you can do this in a convenience modifier in an extension of the [`View`](./view.md) protocol:
 
 ```swift
 extension View {
@@ -56,11 +57,11 @@ BasicVStack {
 }
 ```
 
-Any view that you don’t explicitly set a value for uses the default value, as with the first [`Text`](text.md) view, above.
+Any view that you don’t explicitly set a value for uses the default value, as with the first [`Text`](./text.md) view, above.
 
-##### Retrieve a Value During Layout
+##### Retrieve a value during layout
 
-Access a custom layout value using the key as an index on subview’s proxy (an instance of [`LayoutSubview`](layoutsubview.md)) and use the value to make decisions about sizing, placement, or other layout operations. For example, you might read the flexibility value in your layout view’s [`sizeThatFits(_:)`](layoutsubview/sizethatfits(_:).md) method, and adjust your size calculations accordingly:
+Access a custom layout value using the key as an index on subview’s proxy (an instance of [`LayoutSubview`](./layoutsubview.md)) and use the value to make decisions about sizing, placement, or other layout operations. For example, you might read the flexibility value in your layout view’s [`sizeThatFits(_:)`](./layoutsubview/sizethatfits%28_%29.md) method, and adjust your size calculations accordingly:
 
 ```swift
 extension BasicVStack {
@@ -84,14 +85,15 @@ extension BasicVStack {
 ## Topics
 
 ### Providing a default value
-- [static var defaultValue: Self.Value](layoutvaluekey/defaultvalue.md)
+- [static var defaultValue: Self.Value](./layoutvaluekey/defaultvalue.md)
   The default value of the key.
-- [associatedtype Value](layoutvaluekey/value.md)
+- [associatedtype Value](./layoutvaluekey/value.md)
   The type of the key’s value.
 
 ## See Also
 
-- [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](view/layoutvalue(key:value:).md)
+### Associating values with views in a custom layout
+- [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](./view/layoutvalue%28key,value%29.md)
   Associates a value with a custom layout property.
 
 

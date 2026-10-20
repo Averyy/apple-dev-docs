@@ -1,7 +1,8 @@
 # SecItemAttr.serverItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the server attribute.
 
@@ -13,6 +14,10 @@ Identifies the server attribute.
 
 ```swift
 case serverItemAttr
+```
+
+```c
+kSecServerItemAttr
 ```
 
 #### Discussion

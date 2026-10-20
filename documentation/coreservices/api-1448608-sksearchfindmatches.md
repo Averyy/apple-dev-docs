@@ -1,7 +1,8 @@
 # SKSearchFindMatches(_:_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts search result information from a search object.
 
@@ -14,13 +15,17 @@ Extracts search result information from a search object.
 func SKSearchFindMatches(_ inSearch: SKSearch!, _ inMaximumCount: CFIndex, _ outDocumentIDsArray: UnsafeMutablePointer<SKDocumentID>!, _ outScoresArray: UnsafeMutablePointer<Float>!, _ maximumTime: CFTimeInterval, _ outFoundCount: UnsafeMutablePointer<CFIndex>!) -> Bool
 ```
 
-#### Return_value
+```c
+Boolean SKSearchFindMatches(SKSearchRef inSearch, CFIndex inMaximumCount, SKDocumentID *outDocumentIDsArray, float *outScoresArray, CFTimeInterval maximumTime, CFIndex *outFoundCount);
+```
+
+#### Return Value
 
 A logical value indicating whether the search is still in progress. Returns false when the search is exhausted.
 
 #### Discussion
 
-The [`SKSearchFindMatches(_:_:_:_:_:_:)`](1448608-sksearchfindmatches.md) extracts results from a find operation initiated by a search object (SKSearchRef).
+The [`SKSearchFindMatches(_:_:_:_:_:_:)`](./api-1448608-sksearchfindmatches.md) extracts results from a find operation initiated by a search object (SKSearchRef).
 
 This function provides results to its output parameters simply in the order in which they are found. This reduces latency to support search-as-you-type functionality. Larger scores mean greater relevance.
 
@@ -30,12 +35,12 @@ Applications are free to display relevance scores in any appropriate manner. One
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
-Before invoking a search, call [`SKIndexFlush(_:)`](1450667-skindexflush.md) on all indexes you will query to ensure that updates to the indexes have been flushed to disk.
+Before invoking a search, call [`SKIndexFlush(_:)`](./api-1450667-skindexflush.md) on all indexes you will query to ensure that updates to the indexes have been flushed to disk.
 
 ## Parameters
 
-- `inSearch`: A reference to a search object (SKSearchRef) previously created with [`SKSearchCreate(_:_:_:)`](1443079-sksearchcreate.md).
-- `inMaximumCount`: The maximum number of items to find. For each item found, [`SKSearchFindMatches(_:_:_:_:_:_:)`](1448608-sksearchfindmatches.md) places the associated document ID into the `outDocumentIDsArray` array. Specify an `inMaximumCount` of 0 to find as many items as possible within `maximumTime`.
+- `inSearch`: A reference to a search object (SKSearchRef) previously created with [`SKSearchCreate(_:_:_:)`](./api-1443079-sksearchcreate.md).
+- `inMaximumCount`: The maximum number of items to find. For each item found, [`SKSearchFindMatches(_:_:_:_:_:_:)`](./api-1448608-sksearchfindmatches.md) places the associated document ID into the `outDocumentIDsArray` array. Specify an `inMaximumCount` of 0 to find as many items as possible within `maximumTime`.
 - `outDocumentIDsArray`: On input, a pointer to an array for document IDs. On output, points to points to the previously allocated array, which now contains the found document IDs. The size of this array must be equal to `inMaximumCount`.
 - `outScoresArray`: On input, a pointer to an array for scores. On output, points to the previously allocated array, which now contains relevance scores for the found items. The size of this array, if not `NULL`, must be equal to `inMaximumCount`. Can be `NULL` on input, provided that your application doesn’t need this information. Search Kit does not normalize relevance scores, so they can be very large.
 - `maximumTime`: The maximum number of seconds before this function returns, whether or not `inMaximumCount` items have been found. Setting maximumTime to 0 tells the search to return quickly
@@ -43,11 +48,12 @@ Before invoking a search, call [`SKIndexFlush(_:)`](1450667-skindexflush.md) on 
 
 ## See Also
 
-- [func SKSearchCreate(SKIndex!, CFString!, SKSearchOptions) -> Unmanaged<SKSearch>!](1443079-sksearchcreate.md)
+### Fast Asynchronous Searching
+- [func SKSearchCreate(SKIndex!, CFString!, SKSearchOptions) -> Unmanaged<SKSearch>!](./api-1443079-sksearchcreate.md)
   Creates an asynchronous search object for querying an index, and initiates search.
-- [func SKSearchCancel(SKSearch!)](1442083-sksearchcancel.md)
+- [func SKSearchCancel(SKSearch!)](./api-1442083-sksearchcancel.md)
   Cancels an asynchronous search request.
-- [func SKSearchGetTypeID() -> CFTypeID](1448621-sksearchgettypeid.md)
+- [func SKSearchGetTypeID() -> CFTypeID](./api-1448621-sksearchgettypeid.md)
   Gets the type identifier for Search Kit search objects.
 
 

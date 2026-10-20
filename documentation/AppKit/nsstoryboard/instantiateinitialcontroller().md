@@ -1,7 +1,8 @@
 # instantiateInitialController()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the initial view controller or window controller from a storyboard.
 
@@ -12,6 +13,10 @@ Creates the initial view controller or window controller from a storyboard.
 
 ```swift
 func instantiateInitialController() -> Any?
+```
+
+```objc
+- (id) instantiateInitialController;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ Each time you call this method, it creates a new instance of the initial control
 
 ## See Also
 
-- [func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)?) -> Controller?](nsstoryboard/instantiateinitialcontroller(creator:)-pi04.md)
+### Loading the Initial View Controller
+- [func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)?) -> Controller?](./instantiateinitialcontroller%28creator%29-pi04.md)
   Creates the initial view controller from the storyboard and initializes it using your custom code.
-- [func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)?) -> Controller?](nsstoryboard/instantiateinitialcontroller(creator:)-529r1.md)
+- [func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)?) -> Controller?](./instantiateinitialcontroller%28creator%29-529r1.md)
   Creates the initial window controller from the storyboard and initializes it using your custom code.
 
 

@@ -1,7 +1,8 @@
 # LARight.State.authorized
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The authorization completed successfully.
 
@@ -18,13 +19,18 @@ The authorization completed successfully.
 case authorized
 ```
 
+```c
+LARightStateAuthorized
+```
+
 ## See Also
 
-- [LARight.State.authorizing](laright/state-swift.enum/authorizing.md)
+### Authorization states
+- [LARight.State.authorizing](./authorizing.md)
   The authorization is in progress but not completed.
-- [LARight.State.notAuthorized](laright/state-swift.enum/notauthorized.md)
+- [LARight.State.notAuthorized](./notauthorized.md)
   The authorization failed.
-- [LARight.State.unknown](laright/state-swift.enum/unknown.md)
+- [LARight.State.unknown](./unknown.md)
   The authorization is in an unknown state.
 
 

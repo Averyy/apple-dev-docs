@@ -1,7 +1,8 @@
 # SubscriptionChangeMetadataRequest
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you provide to change the metadata of a subscription.
 
@@ -10,7 +11,7 @@ The request body you provide to change the metadata of a subscription.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionChangeMetadataRequest
 ```
 
@@ -24,13 +25,14 @@ object SubscriptionChangeMetadataRequest
 
 ## See Also
 
-- [Change Subscription Metadata](change-subscription-metadata.md)
+### Subscription metadata changes from the server
+- [Change Subscription Metadata](./change-subscription-metadata.md)
   Update the SKU, display name, and description associated with a subscription, without affecting the subscription’s billing or its service.
-- [object SubscriptionChangeMetadataResponse](subscriptionchangemetadataresponse.md)
+- [object SubscriptionChangeMetadataResponse](./subscriptionchangemetadataresponse.md)
   The response body for a successful subscription metadata change.
-- [object SubscriptionChangeMetadataDescriptors](subscriptionchangemetadatadescriptors.md)
+- [object SubscriptionChangeMetadataDescriptors](./subscriptionchangemetadatadescriptors.md)
   The subscription metadata to change, specifically the description and display name.
-- [object SubscriptionChangeMetadataItem](subscriptionchangemetadataitem.md)
+- [object SubscriptionChangeMetadataItem](./subscriptionchangemetadataitem.md)
   The metadata to change for an item, specifically its SKU, description, and display name.
 
 

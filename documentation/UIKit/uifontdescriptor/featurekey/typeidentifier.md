@@ -1,17 +1,20 @@
 # typeIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key for identifying the font feature selector.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 7.0+ - Deprecated in 15.0
+- iPadOS 7.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use [`selector`](./selector.md) instead.
 
 ## Declaration
 
@@ -19,17 +22,22 @@ A key for identifying the font feature selector.
 static let typeIdentifier: UIFontDescriptor.FeatureKey
 ```
 
+```c
+extern UIFontDescriptorFeatureKey const UIFontFeatureSelectorIdentifierKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object specifying the ligature, character shape, or other font feature.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object specifying the ligature, character shape, or other font feature.
 
 ## See Also
 
-- [static let type: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/type.md)
+### Keys
+- [static let type: UIFontDescriptor.FeatureKey](./type.md)
   A key for identifying the font feature type.
-- [static let selector: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/selector.md)
+- [static let selector: UIFontDescriptor.FeatureKey](./selector.md)
   A key for identifying the font feature selector.
-- [static let featureIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/featureidentifier.md)
+- [static let featureIdentifier: UIFontDescriptor.FeatureKey](./featureidentifier.md)
   A key for identifying a font feature type.
 
 

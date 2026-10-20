@@ -1,7 +1,8 @@
 # input
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input object that owns the port.
 
@@ -16,6 +17,10 @@ The input object that owns the port.
 
 ```swift
 var input: AVCaptureInput { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVCaptureInput * input;
 ```
 
 

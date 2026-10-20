@@ -1,7 +1,8 @@
 # HashChangeEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface HashChangeEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [newURL](hashchangeevent/1634424-newurl.md)
-- [oldURL](hashchangeevent/1630602-oldurl.md)
+- [newURL](./hashchangeevent/api-1634424-newurl.md)
+- [oldURL](./hashchangeevent/api-1630602-oldurl.md)
 ### Instance Methods
-- [initHashChangeEvent](hashchangeevent/1631907-inithashchangeevent.md)
+- [initHashChangeEvent](./hashchangeevent/api-1631907-inithashchangeevent.md)
 
 ## Relationships
 

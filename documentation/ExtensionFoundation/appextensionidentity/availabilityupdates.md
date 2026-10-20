@@ -1,10 +1,13 @@
 # availabilityUpdates
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 13.0+
+- macOS 13.0+ - Deprecated in 26.0
+
+> **Deprecated**: Replaced with AppExtensionPoint.Monitor
 
 ## Declaration
 
@@ -14,11 +17,12 @@ static var availabilityUpdates: AsyncStream<AppExtensionIdentity.Availability> {
 
 ## See Also
 
-- [AppExtensionIdentity.Availability](appextensionidentity/availability.md)
+### Deprecated
+- [AppExtensionIdentity.Availability](./availability.md)
   An object that contains information about available extensions.
-- [static func matching(appExtensionPointIDs: String...) throws -> AppExtensionIdentity.Identities](appextensionidentity/matching(appextensionpointids:).md)
+- [static func matching(appExtensionPointIDs: String...) throws -> AppExtensionIdentity.Identities](./matching%28appextensionpointids%29.md)
   The asynchronous sequence of extension identities which target the specified extension point identifiers.
-- [AppExtensionIdentity.Identities](appextensionidentity/identities.md)
+- [AppExtensionIdentity.Identities](./identities.md)
   An asynchronous sequence that returns the enabled extensions that match provided constraints.
 
 

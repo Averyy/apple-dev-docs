@@ -1,7 +1,8 @@
 # dominantLanguage
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most likely language for the processed text.
 
@@ -20,19 +21,24 @@ The most likely language for the processed text.
 var dominantLanguage: NLLanguage? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NLLanguage dominantLanguage;
+```
+
 ## Mentions
 
-- [Identifying the language in text](identifying-the-language-in-text.md)
+- [Identifying the language in text](../identifying-the-language-in-text.md)
 
 ## See Also
 
-- [class func dominantLanguage(for: String) -> NLLanguage?](nllanguagerecognizer/dominantlanguage(for:).md)
+### Determining the language
+- [class func dominantLanguage(for: String) -> NLLanguage?](./dominantlanguage%28for%29.md)
   Finds the most likely language of a piece of text.
-- [func processString(String)](nllanguagerecognizer/processstring(_:).md)
+- [func processString(String)](./processstring%28_%29.md)
   Analyzes the piece of text to determine its dominant language.
-- [func languageHypotheses(withMaximum: Int) -> [NLLanguage : Double]](nllanguagerecognizer/languagehypotheses(withmaximum:).md)
+- [func languageHypotheses(withMaximum: Int) -> [NLLanguage : Double]](./languagehypotheses%28withmaximum%29.md)
   Generates the probabilities of possible languages for the processed text.
-- [func reset()](nllanguagerecognizer/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets the recognizer to its initial state.
 
 

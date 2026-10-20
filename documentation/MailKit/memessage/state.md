@@ -1,7 +1,8 @@
 # state
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the mail message.
 
@@ -12,6 +13,10 @@ The state of the mail message.
 
 ```swift
 var state: MEMessageState { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) MEMessageState state;
 ```
 
 

@@ -1,7 +1,8 @@
 # lightColor
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diffuse and specular color of the light source.
 
@@ -16,23 +17,44 @@ The diffuse and specular color of the light source.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+var lightColor: UIColor { get set }
+```
+
+*macOS*
+
 ```swift
 var lightColor: NSColor { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic) UIColor * lightColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic) NSColor * lightColor;
 ```
 
 #### Discussion
 
 The default value is white.
 
-If you are using custom shaders, you can substitute an [`SKUniform`](skuniform.md) object instead.
+If you are using custom shaders, you can substitute an [`SKUniform`](../skuniform.md) object instead.
 
 ## See Also
 
-- [var ambientColor: UIColor](sklightnode/ambientcolor.md)
+### Configuring the Lighting Properties
+- [var ambientColor: UIColor](./ambientcolor.md)
   The ambient color of the light.
-- [var shadowColor: UIColor](sklightnode/shadowcolor.md)
+- [var shadowColor: UIColor](./shadowcolor.md)
   The color of any shadow cast by a sprite.
-- [var falloff: CGFloat](sklightnode/falloff.md)
+- [var falloff: CGFloat](./falloff.md)
   The exponent for the rate of decay of the light source.
 
 

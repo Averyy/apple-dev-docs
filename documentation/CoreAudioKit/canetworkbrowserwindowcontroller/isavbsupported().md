@@ -1,7 +1,8 @@
 # isAVBSupported()
 
 **Framework**: CoreAudioKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the current machine hardware supports Audio Video Bridging (AVB).
 
@@ -14,9 +15,13 @@ Returns a Boolean value that indicates whether the current machine hardware supp
 class func isAVBSupported() -> Bool
 ```
 
+```objc
++ (BOOL) isAVBSupported;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the hardware supports AVB; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the hardware supports AVB; otherwise, [`false`](../../Swift/false.md).
 
 
 ---

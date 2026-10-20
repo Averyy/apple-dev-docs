@@ -1,9 +1,10 @@
 # USDPlayer.TextureLevelInfo
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Byte-layout descriptor for a single mip level within a [`USDPlayer.TextureData`](usdplayer/texturedata.md).
+Byte-layout descriptor for a single mip level within a [`USDPlayer.TextureData`](./texturedata.md).
 
 **Availability**:
 - iOS 27.0+
@@ -22,18 +23,18 @@ struct TextureLevelInfo
 ## Topics
 
 ### Instance Properties
-- [let byteCountPerImage: Int](usdplayer/texturelevelinfo/bytecountperimage.md)
+- [let byteCountPerImage: Int](./texturelevelinfo/bytecountperimage.md)
   Total byte size of this mip level.
-- [let byteCountPerRow: Int](usdplayer/texturelevelinfo/bytecountperrow.md)
+- [let byteCountPerRow: Int](./texturelevelinfo/bytecountperrow.md)
   Row stride in bytes.
-- [let dataOffset: Int](usdplayer/texturelevelinfo/dataoffset.md)
-  Byte offset into [`data`](usdplayer/texturedata/data.md) where this mip level begins.
+- [let dataOffset: Int](./texturelevelinfo/dataoffset.md)
+  Byte offset into [`data`](./texturedata/data.md) where this mip level begins.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

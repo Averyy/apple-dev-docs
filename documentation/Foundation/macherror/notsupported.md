@@ -1,7 +1,8 @@
 # notSupported
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Empty thread activation (No thread linked to it).
 

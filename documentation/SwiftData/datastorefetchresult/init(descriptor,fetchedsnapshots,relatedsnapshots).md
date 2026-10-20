@@ -1,7 +1,8 @@
 # init(descriptor:fetchedSnapshots:relatedSnapshots:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+

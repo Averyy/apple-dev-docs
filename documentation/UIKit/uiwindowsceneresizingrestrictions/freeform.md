@@ -1,7 +1,8 @@
 # UIWindowSceneResizingRestrictions.freeform
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User resizes are only restricted by the system and other restrictions put in place
 
@@ -12,6 +13,10 @@ User resizes are only restricted by the system and other restrictions put in pla
 
 ```swift
 case freeform
+```
+
+```c
+UIWindowSceneResizingRestrictionsFreeform
 ```
 
 

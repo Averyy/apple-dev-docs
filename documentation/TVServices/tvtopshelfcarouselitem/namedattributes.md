@@ -1,7 +1,8 @@
 # namedAttributes
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information to display for your content, such as a list of leading actors.
 
@@ -14,13 +15,18 @@ Additional information to display for your content, such as a list of leading ac
 var namedAttributes: [TVTopShelfNamedAttribute] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<TVTopShelfNamedAttribute *> * namedAttributes;
+```
+
 #### Discussion
 
-Use this property to specify additional details about your content. In appropriate views, the system formats the provided information and displays it alongside the rest of your content. For information about how to create named attributes, see [`TVTopShelfNamedAttribute`](tvtopshelfnamedattribute.md).
+Use this property to specify additional details about your content. In appropriate views, the system formats the provided information and displays it alongside the rest of your content. For information about how to create named attributes, see [`TVTopShelfNamedAttribute`](../tvtopshelfnamedattribute.md).
 
 ## See Also
 
-- [class TVTopShelfNamedAttribute](tvtopshelfnamedattribute.md)
+### Adding Custom Attributes
+- [class TVTopShelfNamedAttribute](../tvtopshelfnamedattribute.md)
   An object you use to display additional information.
 
 

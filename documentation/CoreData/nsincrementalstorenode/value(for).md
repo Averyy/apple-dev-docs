@@ -1,7 +1,8 @@
 # value(for:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value for the given property.
 
@@ -10,7 +11,7 @@ Returns the value for the given property.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the value for the given property.
 
 ```swift
 func value(for prop: NSPropertyDescription) -> Any?
+```
+
+```objc
+- (id) valueForPropertyDescription:(NSPropertyDescription *) prop;
 ```
 
 #### Return Value
@@ -34,11 +39,12 @@ If a relationship is `nil`, you should create a new value by invoking `newValueF
 
 ## See Also
 
-- [var objectID: NSManagedObjectID](nsincrementalstorenode/objectid.md)
+### Managing Node Data
+- [var objectID: NSManagedObjectID](./objectid.md)
   The object ID that identifies the data stored by the receiver.
-- [func update(withValues: [String : Any], version: UInt64)](nsincrementalstorenode/update(withvalues:version:).md)
+- [func update(withValues: [String : Any], version: UInt64)](./update%28withvalues,version%29.md)
   Update the values and version to reflect new data being saved to or loaded from the external store.
-- [var version: UInt64](nsincrementalstorenode/version.md)
+- [var version: UInt64](./version.md)
   The version of data in the receiver.
 
 

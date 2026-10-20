@@ -1,7 +1,8 @@
 # init(double:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor initialized with Apple event type `typeIEEE64BitFloatingPoint` that stores the specified double value.
 
@@ -12,6 +13,10 @@ Creates a descriptor initialized with Apple event type `typeIEEE64BitFloatingPoi
 
 ```swift
 init(double doubleValue: Double)
+```
+
+```objc
++ (NSAppleEventDescriptor *) descriptorWithDouble:(double) doubleValue;
 ```
 
 

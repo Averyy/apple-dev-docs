@@ -1,7 +1,8 @@
 # CVOpenGLESTexture
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to a Core Video texture-based image buffer.
 
@@ -17,9 +18,13 @@ A reference to a Core Video texture-based image buffer.
 typealias CVOpenGLESTexture = CVImageBuffer
 ```
 
+```c
+typedef CVImageBufferRef CVOpenGLESTextureRef;
+```
+
 #### Discussion
 
-Core Video OpenGLES textures are managed by a [`CVOpenGLESTextureCache`](cvopenglestexturecache.md).
+Core Video OpenGLES textures are managed by a [`CVOpenGLESTextureCache`](./cvopenglestexturecache.md).
 
 
 ---

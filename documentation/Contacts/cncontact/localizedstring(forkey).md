@@ -1,7 +1,8 @@
 # localizedString(forKey:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a string containing the localized contact property name.
 
@@ -17,6 +18,10 @@ Returns a string containing the localized contact property name.
 
 ```swift
 class func localizedString(forKey key: String) -> String
+```
+
+```objc
++ (NSString *) localizedStringForKey:(NSString *) key;
 ```
 
 #### Return Value

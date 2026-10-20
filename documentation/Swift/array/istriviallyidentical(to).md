@@ -1,7 +1,8 @@
 # isTriviallyIdentical(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a boolean value indicating whether this array is identical to `other`.
 
@@ -41,7 +42,7 @@ print(c.isTriviallyIdentical(to: d))
 
 Comparing arrays this way includes comparing implementation details that are normally hidden, such as the memory location of any underlying array storage, These details aren’t considered when comparing for equality with the `==` operator. Therefore, identical arrays are guaranteed to compare equal, but not all equal arrays are identical.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

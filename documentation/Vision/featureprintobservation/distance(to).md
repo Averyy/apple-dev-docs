@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the distance between two feature print observations.
 

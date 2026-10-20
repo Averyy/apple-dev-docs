@@ -1,7 +1,8 @@
 # CSSM_PADDING_APPLE_SSLv2
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_PADDING_APPLE_SSLv2: UInt32 { get }
+```
+
+```c
+CSSM_PADDING_APPLE_SSLv2
 ```
 
 

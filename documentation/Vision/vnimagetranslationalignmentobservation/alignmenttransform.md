@@ -1,7 +1,8 @@
 # alignmentTransform
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment transform to align the floating image with the reference image.
 
@@ -17,6 +18,10 @@ The alignment transform to align the floating image with the reference image.
 
 ```swift
 var alignmentTransform: CGAffineTransform { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CGAffineTransform alignmentTransform;
 ```
 
 

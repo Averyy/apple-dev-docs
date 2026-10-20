@@ -1,23 +1,28 @@
 # init(bodies:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a physics body that’s shaped like a union of the argument physics bodies.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 init(bodies: [SKPhysicsBody])
+```
+
+```objc
++ (SKPhysicsBody *) bodyWithBodies:(NSArray<SKPhysicsBody *> *) bodies;
 ```
 
 #### Return Value
@@ -32,7 +37,7 @@ The properties on the children, such as mass or friction, are ignored. Only the 
 
 ## Parameters
 
-- `bodies`: An array of [`SKPhysicsBody`](skphysicsbody.md) objects. The objects must be volume-based physics bodies. (You may not use a compound body created using this method in the array.)
+- `bodies`: An array of [`SKPhysicsBody`](../skphysicsbody.md) objects. The objects must be volume-based physics bodies. (You may not use a compound body created using this method in the array.)
 
 
 ---

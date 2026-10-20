@@ -1,7 +1,8 @@
 # PDFPrintScalingMode.pageScaleToFit
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scale each page up or down to best fit the paper size.
 
@@ -14,11 +15,16 @@ Scale each page up or down to best fit the paper size.
 case pageScaleToFit
 ```
 
+```c
+kPDFPrintPageScaleToFit
+```
+
 ## See Also
 
-- [PDFPrintScalingMode.pageScaleDownToFit](pdfprintscalingmode/pagescaledowntofit.md)
+### Enumeration Cases
+- [PDFPrintScalingMode.pageScaleDownToFit](./pagescaledowntofit.md)
   Scale large pages down to fit the paper size (smaller pages do not get scaled up).
-- [PDFPrintScalingMode.pageScaleNone](pdfprintscalingmode/pagescalenone.md)
+- [PDFPrintScalingMode.pageScaleNone](./pagescalenone.md)
   Do not apply scaling to the page when printing.
 
 

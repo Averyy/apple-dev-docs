@@ -1,7 +1,8 @@
 # addItem(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a dynamic item to the collision behavior’s item array.
 
@@ -9,13 +10,17 @@ Adds a dynamic item to the collision behavior’s item array.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func addItem(_ item: any UIDynamicItem)
+```
+
+```objc
+- (void) addItem:(id<UIDynamicItem>) item;
 ```
 
 #### Discussion
@@ -30,11 +35,12 @@ There is no hard limit to the number of dynamic items you can add to a collision
 
 ## See Also
 
-- [init(items: [any UIDynamicItem])](uicollisionbehavior/init(items:).md)
+### Initializing and managing a collision behavior
+- [init(items: [any UIDynamicItem])](./init%28items%29.md)
   Initializes a collision behavior with an array of dynamic items.
-- [func removeItem(any UIDynamicItem)](uicollisionbehavior/removeitem(_:).md)
+- [func removeItem(any UIDynamicItem)](./removeitem%28_%29.md)
   Removes a specific dynamic item from the collision behavior.
-- [var items: [any UIDynamicItem]](uicollisionbehavior/items.md)
+- [var items: [any UIDynamicItem]](./items.md)
   Returns the set of dynamic items you’ve added to the collision behavior.
 
 

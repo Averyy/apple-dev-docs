@@ -1,7 +1,8 @@
 # pixelType
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 One of kIOCLUTPixels (indexed pixels with changeable CLUT), kIORGBDirectPixels (direct pixels).
 
@@ -10,7 +11,7 @@ One of kIOCLUTPixels (indexed pixels with changeable CLUT), kIORGBDirectPixels (
 
 ## Declaration
 
-```swift
+```c
 UInt32 pixelType;
 ```
 

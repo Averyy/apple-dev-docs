@@ -1,14 +1,15 @@
 # kBluetoothL2CAPConfigurationOptionExtendedFlowSpecification
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPConfigurationOptionExtendedFlowSpecification = 0x06
 ```
 

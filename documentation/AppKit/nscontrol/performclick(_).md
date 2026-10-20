@@ -1,12 +1,13 @@
 # performClick(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Simulates a single mouse click on the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Simulates a single mouse click on the receiver.
 func performClick(_ sender: Any?)
 ```
 
+```objc
+- (void) performClick:(id) sender;
+```
+
 #### Discussion
 
-This method calls the [`performClick(_:)`](nscell/performclick(_:).md) method of the receiver’s cell with the sender being the control itself. This method raises an exception if the action message cannot be successfully sent.
+This method calls the [`performClick(_:)`](../nscell/performclick%28_%29.md) method of the receiver’s cell with the sender being the control itself. This method raises an exception if the action message cannot be successfully sent.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ This method calls the [`performClick(_:)`](nscell/performclick(_:).md) method of
 
 ## See Also
 
-- [var refusesFirstResponder: Bool](nscontrol/refusesfirstresponder.md)
+### Activating from the Keyboard
+- [var refusesFirstResponder: Bool](./refusesfirstresponder.md)
   A Boolean value indicating whether the receiver refuses the first responder role.
 
 

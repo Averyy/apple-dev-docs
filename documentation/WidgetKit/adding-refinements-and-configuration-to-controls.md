@@ -1,6 +1,7 @@
 # Adding refinements and configuration to controls
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Customize the way controls display across the system and offer people the ability to configure them.
 
@@ -10,11 +11,11 @@ You can use controls to allow people to enhance Control Center, the Lock Screen,
 
 Controls perform an action, and can provide configuration options to allow someone to customize what the action does, such as choosing which light to turn on and off. Consider if configuration is a good choice for your control.
 
-##### Customize Your Controls Name and Description
+##### Customize your control’s name and description
 
-By default, the name of your app displays as the name for your control when the control appears in the controls gallery, and control toggles display in their inactive state. Customize your control’s name if your app offers multiple controls or to provide more context about what your control does. Customize the name of your control using the [`displayName(_:)`](https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration/displayname(_:)) modifier. Localize your control’s name, if applicable.
+By default, the name of your app displays as the name for your control when the control appears in the controls gallery, and control toggles display in their inactive state. Customize your control’s name if your app offers multiple controls or to provide more context about what your control does. Customize the name of your control using the [`displayName(_:)`](../SwiftUI/controlwidgetconfiguration/displayname%28_%29.md) modifier. Localize your control’s name, if applicable.
 
-The control’s configuration view displays a localizable description for a control. Add a description, using the [`description(_:)`](https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration/description(_:)) modifier, to give additional information about what the control does.
+The control’s configuration view displays a localizable description for a control. Add a description, using the [`description(_:)`](../SwiftUI/controlwidgetconfiguration/description%28_%29.md) modifier, to give additional information about what the control does.
 
 The following code adds a name and description to the control that gives people more insight about what it does:
 
@@ -36,13 +37,13 @@ struct TimerToggle: ControlWidget {
 }
 ```
 
-##### Set Your Controls Tint Color
+##### Set your control’s tint color
 
-Choose a tint color that matches your app’s brand. Apply the [`tint(_:)`](https://developer.apple.com/documentation/swiftui/controlwidgettemplate/tint(_:)) modifier to the control’s template to set a custom tint color.
+Choose a tint color that matches your app’s brand. Apply the [`tint(_:)`](../SwiftUI/controlwidgettemplate/tint%28_%29.md) modifier to the control’s template to set a custom tint color.
 
-By default, a control’s tint color is set to the Global Accent Color you specify for your widget extension’s target. If you don’t specify one there, the tint color falls back to the Global Accent Color you specify for your app’s target. If you specify neither, the control uses the system’s default tint color. For each target, Xcode adds the Global Accent Color to its Info.plist as the [`NSAccentColorName`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsaccentcolorname) key. Set this value using the target’s **Global Accent Color Name** build setting instead of editing the Info.plist directly.
+By default, a control’s tint color is set to the Global Accent Color you specify for your widget extension’s target. If you don’t specify one there, the tint color falls back to the Global Accent Color you specify for your app’s target. If you specify neither, the control uses the system’s default tint color. For each target, Xcode adds the Global Accent Color to its Info.plist as the [`NSAccentColorName`](../BundleResources/information-property-list/nsaccentcolorname.md) key. Set this value using the target’s **Global Accent Color Name** build setting instead of editing the Info.plist directly.
 
-For guidance on choosing a tint color, see [`Human Interface Guidelines > Controls`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/controls) and [`Human Interface Guidelines > Branding`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/branding).
+For guidance on choosing a tint color, see [Human Interface Guidelines > Controls](https://developer.apple.com/design/human-interface-guidelines/controls) and [Human Interface Guidelines > Branding](https://developer.apple.com/design/human-interface-guidelines/branding).
 
 ```swift
 struct GarageDoorOpener: ControlWidget {
@@ -60,11 +61,11 @@ struct GarageDoorOpener: ControlWidget {
 }
 ```
 
-##### Enforce Security and Privacy for Controls
+##### Enforce security and privacy for controls
 
 Controls can require a device to be authenticated to allow the control to perform its action or to display its current state and information. Set the `authenticationPolicy` in the control’s app intent to refine what level of authentication is necessary to perform the action.
 
-The following code sets the [`authenticationPolicy`](https://developer.apple.com/documentation/appintents/appintent/authenticationpolicy-1r9kh) to [`IntentAuthenticationPolicy.requiresAuthentication`](https://developer.apple.com/documentation/appintents/intentauthenticationpolicy/requiresauthentication) to require device authentication to unlock a door:
+The following code sets the [`authenticationPolicy`](../AppIntents/appintent/authenticationpolicy-1r9kh.md) to [`IntentAuthenticationPolicy.requiresAuthentication`](../AppIntents/intentauthenticationpolicy/requiresauthentication.md) to require device authentication to unlock a door:
 
 ```swift
 struct UnlockDoor: AppIntent {
@@ -74,7 +75,7 @@ struct UnlockDoor: AppIntent {
 }
 ```
 
-Use the [`privacySensitive(_:)`](https://developer.apple.com/documentation/swiftui/controlwidgettemplate/privacysensitive(_:)) modifier on a [`ControlWidgetTemplate`](https://developer.apple.com/documentation/swiftui/controlwidgettemplate) type to redact the active or inactive state of a control while the device isn’t authenticated.
+Use the [`privacySensitive(_:)`](../SwiftUI/controlwidgettemplate/privacysensitive%28_%29.md) modifier on a [`ControlWidgetTemplate`](../SwiftUI/controlwidgettemplate.md) type to redact the active or inactive state of a control while the device isn’t authenticated.
 
 The following code adds the `privacySensitive()` modifier to a control toggle. The modifier redacts the state and information in the control that displays whether a door is open or closed:
 
@@ -98,9 +99,9 @@ You may use the `privacySensitive()` modifier on a control’s value or label in
 
 Require authentication if a control performing its action would be problematic if done unintentionally or not by the device owner. Redact information if a control displays personally identifiable or security-related information or state.
 
-##### Refine Action Button Hint Text
+##### Refine Action button hint text
 
-The Action button gives quick and easy access to controls and system functionality. Provide hint text to people to help give context to the action the control performs. The text set with the `displayName` modifier on the [`StaticControlConfiguration`](staticcontrolconfiguration.md) or [`AppIntentControlConfiguration`](appintentcontrolconfiguration.md) provides text to the system to display a hint. The default hint text is different for buttons, toggles, and buttons that have an [`OpenIntent`](https://developer.apple.com/documentation/appintents/openintent) action to launch an app.
+The Action button gives quick and easy access to controls and system functionality. Provide hint text to people to help give context to the action the control performs. The text set with the `displayName` modifier on the [`StaticControlConfiguration`](./staticcontrolconfiguration.md) or [`AppIntentControlConfiguration`](./appintentcontrolconfiguration.md) provides text to the system to display a hint. The default hint text is different for buttons, toggles, and buttons that have an [`OpenIntent`](../AppIntents/openintent.md) action to launch an app.
 
 The following code shows the default hint text for a button:
 
@@ -147,7 +148,7 @@ struct LightswitchToggle: ControlWidget {
 }
 ```
 
-Use [`Label`](https://developer.apple.com/documentation/swiftui/label) and the [`controlWidgetActionHint(_:)`](https://developer.apple.com/documentation/swiftui/view/controlwidgetactionhint(_:)) modifier in your control content to create fully custom hint text. Begin the  `controlWidgetActionHint` with a verb, similar to [`accessibilityHint(_:isEnabled:)`](https://developer.apple.com/documentation/swiftui/view/accessibilityhint(_:isenabled:)).
+Use [`Label`](../SwiftUI/label.md) and the [`controlWidgetActionHint(_:)`](../SwiftUI/view/controlwidgetactionhint%28_%29.md) modifier in your control content to create fully custom hint text. Begin the  `controlWidgetActionHint` with a verb, similar to [`accessibilityHint(_:isEnabled:)`](../SwiftUI/view/accessibilityhint%28_,isenabled%29.md).
 
 When you customize hint text for button controls, the hint text prepends with “Hold to…” The following code shows custom hint text for a button:
 
@@ -198,17 +199,17 @@ ControlWidgetToggle(...) { isOn in
 
 > **Note**: `controlWidgetActionHint` takes precedence over custom value text `Label` provides.
 
-##### Add Control Center Status Text
+##### Add Control Center status text
 
-Use the [`controlWidgetStatus(_:)`](https://developer.apple.com/documentation/swiftui/view/controlwidgetstatus(_:)) modifier to display momentary status text in Control Center when a control’s action is performed. Status text conveys additional information about the control’s state or the duration of effectiveness of the state. For example, status text might display the time a car idles before turning off after being remotely started.
+Use the [`controlWidgetStatus(_:)`](../SwiftUI/view/controlwidgetstatus%28_%29.md) modifier to display momentary status text in Control Center when a control’s action is performed. Status text conveys additional information about the control’s state or the duration of effectiveness of the state. For example, status text might display the time a car idles before turning off after being remotely started.
 
 Use status text sparingly and only in situations where important information isn’t conveyed by the control.
 
-##### Add Configuration to a Control
+##### Add configuration to a control
 
 Make a control configurable to enable people to use multiple controls and to set them up to perform different actions, such as selecting a productivity timer instead of a reading timer.
 
-To make a control configurable, use an [`AppIntentControlConfiguration`](appintentcontrolconfiguration.md) and conform your value provider to [`AppIntentControlValueProvider`](appintentcontrolvalueprovider.md). This step tells the system you provide the ability for someone to configure the control when they long press the control, in edit mode, in Control Center, on the Lock Screen, and when they configure the control for the Action button.
+To make a control configurable, use an [`AppIntentControlConfiguration`](./appintentcontrolconfiguration.md) and conform your value provider to [`AppIntentControlValueProvider`](./appintentcontrolvalueprovider.md). This step tells the system you provide the ability for someone to configure the control when they long press the control, in edit mode, in Control Center, on the Lock Screen, and when they configure the control for the Action button.
 
 The following code creates a control toggle that starts and stops a timer. Someone can configure the control and select their desired type of timer. The control uses `AppIntentControlConfiguration` and sets the name of the control to the name of the configured timer. `ToggleTimerIntent` acts on the selected timer. The control has a provider that uses `AppIntentControlValueProvider` and has a custom app intent, `SelectTimerIntent`, that provides the type of timer choices:
 
@@ -276,7 +277,7 @@ struct ToggleTimerIntent: SetValueIntent {
 
 A control that requires configuration to be functional can use the `promptsForUserConfiguration` modifier to have the system automatically prompt someone for configuration when they add it to Control Center or the Lock Screen, or configure it for the Action button.
 
-The following code uses the [`promptsForUserConfiguration()`](https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration/promptsforuserconfiguration()) modifier on the `AppIntentControlConfiguration` to prompt someone to configure the control when they choose it:
+The following code uses the [`promptsForUserConfiguration()`](../SwiftUI/controlwidgetconfiguration/promptsforuserconfiguration%28%29.md) modifier on the `AppIntentControlConfiguration` to prompt someone to configure the control when they choose it:
 
 ```swift
 struct TimerToggle: ControlWidget {
@@ -297,19 +298,20 @@ struct TimerToggle: ControlWidget {
 
 ## See Also
 
-- [Creating controls to perform actions across the system](creating-controls-to-perform-actions-across-the-system.md)
+### Setup and configuration
+- [Creating controls to perform actions across the system](./creating-controls-to-perform-actions-across-the-system.md)
   Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
-- [struct StaticControlConfiguration](staticcontrolconfiguration.md)
+- [struct StaticControlConfiguration](./staticcontrolconfiguration.md)
   The description of a control that has no user-configurable options.
-- [struct AppIntentControlConfiguration](appintentcontrolconfiguration.md)
+- [struct AppIntentControlConfiguration](./appintentcontrolconfiguration.md)
   The description of a control that uses a custom app intent to provide user-configurable options.
-- [class ControlCenter](controlcenter.md)
+- [class ControlCenter](./controlcenter.md)
   An object you use to access configuration information for controls and reload them.
-- [struct ControlInfo](controlinfo.md)
+- [struct ControlInfo](./controlinfo.md)
   A structure that contains information about user-configured controls.
-- [struct ControlWidgetButton](controlwidgetbutton.md)
+- [struct ControlWidgetButton](./controlwidgetbutton.md)
   A control template representing a button.
-- [struct ControlWidgetToggle](controlwidgettoggle.md)
+- [struct ControlWidgetToggle](./controlwidgettoggle.md)
   A control template representing a toggle.
 
 

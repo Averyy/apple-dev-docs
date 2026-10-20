@@ -1,7 +1,8 @@
 # FormatFlagIsFloat
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag to indicate whether samples are floating-point values.
 
@@ -10,7 +11,7 @@ A flag to indicate whether samples are floating-point values.
 
 ## Declaration
 
-```swift
+```c
 FormatFlagIsFloat
 ```
 
@@ -20,11 +21,12 @@ Set this flag for floating-point samples; clear it for integers.
 
 ## See Also
 
-- [LinearPCMFormatFlagIsFloat](audiodriverkit/iouseraudioformatflags/linearpcmformatflagisfloat.md)
+### Numeric Representation Flags
+- [LinearPCMFormatFlagIsFloat](./linearpcmformatflagisfloat.md)
   A flag to indicate whether PCM samples are floating-point values.
-- [FormatFlagIsSignedInteger](audiodriverkit/iouseraudioformatflags/formatflagissignedinteger.md)
+- [FormatFlagIsSignedInteger](./formatflagissignedinteger.md)
   A flag to indicate whether samples are signed or unsigned integers.
-- [LinearPCMFormatFlagIsSignedInteger](audiodriverkit/iouseraudioformatflags/linearpcmformatflagissignedinteger.md)
+- [LinearPCMFormatFlagIsSignedInteger](./linearpcmformatflagissignedinteger.md)
   A flag to indicate whether PCM samples are signed or unsigned integers.
 
 

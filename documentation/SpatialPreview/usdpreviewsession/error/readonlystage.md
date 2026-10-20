@@ -1,13 +1,14 @@
 # USDPreviewSession.Error.readOnlyStage
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The stage was replaced during optimization and any changes made to the stage won’t be synced.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

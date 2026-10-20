@@ -1,7 +1,8 @@
 # QLPreviewItemEditingMode.disabled
 
 **Framework**: Quick Look  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case disabled
+```
+
+```c
+QLPreviewItemEditingModeDisabled
 ```
 
 

@@ -1,7 +1,8 @@
 # encodeXPCReadParams(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 class func encodeXPCReadParams(_ params: MTRReadParams) -> [String : Any]?
+```
+
+```objc
++ (NSDictionary<NSString *,id> *) encodeXPCReadParams:(MTRReadParams *) params;
 ```
 
 

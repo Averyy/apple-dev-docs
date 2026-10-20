@@ -1,7 +1,8 @@
 # unstacked(alongAxis:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unpacks the given dimension of a rank-`R` tensor into multiple rank-`(R-1)` tensors.
 

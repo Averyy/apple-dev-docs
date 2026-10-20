@@ -1,7 +1,8 @@
 # loadFactoryPreset(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the audio distortion unit by loading a distortion preset.
 
@@ -19,9 +20,13 @@ Configures the audio distortion unit by loading a distortion preset.
 func loadFactoryPreset(_ preset: AVAudioUnitDistortionPreset)
 ```
 
+```objc
+- (void) loadFactoryPreset:(AVAudioUnitDistortionPreset) preset;
+```
+
 #### Discussion
 
-For more information about possible values for `preset`, see [`AVAudioUnitDistortionPreset`](avaudiounitdistortionpreset.md). The default value is [`AVAudioUnitDistortionPreset.drumsBitBrush`](avaudiounitdistortionpreset/drumsbitbrush.md).
+For more information about possible values for `preset`, see [`AVAudioUnitDistortionPreset`](../avaudiounitdistortionpreset.md). The default value is [`AVAudioUnitDistortionPreset.drumsBitBrush`](../avaudiounitdistortionpreset/drumsbitbrush.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ For more information about possible values for `preset`, see [`AVAudioUnitDistor
 
 ## See Also
 
-- [enum AVAudioUnitDistortionPreset](avaudiounitdistortionpreset.md)
+### Configuring the distortion
+- [enum AVAudioUnitDistortionPreset](../avaudiounitdistortionpreset.md)
   Constants that represent preset audio distortions.
 
 

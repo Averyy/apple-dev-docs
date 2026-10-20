@@ -1,15 +1,16 @@
 # init(forURL:title:target:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new targeted drag item preview with a URL, a title, and a drag item preview.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,7 @@ A drag preview for a URL with a title based on the specified drag item preview t
 
 #### Discussion
 
-This method creates a two-line drag item preview, with the title displayed on the first line. The second line is a textual representation of the URL that might not show the full URL string. Don’t use a file URL. Passing `nil` for the title is the same as calling [`init(forURL:target:)`](uitargeteddragpreview/init(forurl:target:).md).
+This method creates a two-line drag item preview, with the title displayed on the first line. The second line is a textual representation of the URL that might not show the full URL string. Don’t use a file URL. Passing `nil` for the title is the same as calling [`init(forURL:target:)`](./init%28forurl,target%29.md).
 
 ## Parameters
 
@@ -33,7 +34,8 @@ This method creates a two-line drag item preview, with the title displayed on th
 
 ## See Also
 
-- [convenience init(forURL: URL, target: UIDragPreviewTarget)](uitargeteddragpreview/init(forurl:target:).md)
+### Initializing a targeted drag item preview
+- [convenience init(forURL: URL, target: UIDragPreviewTarget)](./init%28forurl,target%29.md)
   Initializes a new targeted drag item preview with a URL and a drag item preview.
 
 

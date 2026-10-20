@@ -1,7 +1,8 @@
 # kPMQualityLowest
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies to use the lowest print quality available to the printer.
 

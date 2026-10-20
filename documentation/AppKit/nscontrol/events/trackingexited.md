@@ -1,7 +1,8 @@
 # trackingExited
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event where tracking transitions from inside to outside the bounds of the control.
 
@@ -14,23 +15,28 @@ An event where tracking transitions from inside to outside the bounds of the con
 static var trackingExited: NSControl.Events { get }
 ```
 
+```c
+NSControlEventTrackingExited
+```
+
 ## See Also
 
-- [static var trackingBegan: NSControl.Events](nscontrol/events/trackingbegan.md)
+### Tracking events
+- [static var trackingBegan: NSControl.Events](./trackingbegan.md)
   A tracking began event in the control.
-- [static var trackingRepeated: NSControl.Events](nscontrol/events/trackingrepeated.md)
+- [static var trackingRepeated: NSControl.Events](./trackingrepeated.md)
   A repeated tracking began event in the control. For this event the click count is greater than one.
-- [static var trackingInside: NSControl.Events](nscontrol/events/trackinginside.md)
+- [static var trackingInside: NSControl.Events](./trackinginside.md)
   An event where the pointer or touch moves inside the bounds of the control.
-- [static var trackingOutside: NSControl.Events](nscontrol/events/trackingoutside.md)
+- [static var trackingOutside: NSControl.Events](./trackingoutside.md)
   An event where the pointer or touch moves outside the bounds of the control.
-- [static var trackingEntered: NSControl.Events](nscontrol/events/trackingentered.md)
+- [static var trackingEntered: NSControl.Events](./trackingentered.md)
   An event where tracking transitions from outside to inside the bounds of the control.
-- [static var trackingEndedInside: NSControl.Events](nscontrol/events/trackingendedinside.md)
+- [static var trackingEndedInside: NSControl.Events](./trackingendedinside.md)
   A tracking ended event where the pointer or touch is inside the bounds of the control.
-- [static var trackingEndedOutside: NSControl.Events](nscontrol/events/trackingendedoutside.md)
+- [static var trackingEndedOutside: NSControl.Events](./trackingendedoutside.md)
   A tracking ended event where the pointer or touch is outside the bounds of the control.
-- [static var trackingCancelled: NSControl.Events](nscontrol/events/trackingcancelled.md)
+- [static var trackingCancelled: NSControl.Events](./trackingcancelled.md)
   A system event canceling the current tracking for the control.
 
 

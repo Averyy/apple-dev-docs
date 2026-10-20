@@ -1,7 +1,8 @@
 # storyboard
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The storyboard file from which the window controller was loaded.
 
@@ -14,17 +15,22 @@ The storyboard file from which the window controller was loaded.
 var storyboard: NSStoryboard? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSStoryboard * storyboard;
+```
+
 #### Discussion
 
 The value of this property is `nil` if the window controller was not loaded from a storyboard.
 
 ## See Also
 
-- [var owner: AnyObject?](nswindowcontroller/owner.md)
+### Getting Nib and Storyboard Information
+- [var owner: AnyObject?](./owner.md)
   The owner of the nib file containing the window managed by the receiver.
-- [var windowNibName: NSNib.Name?](nswindowcontroller/windownibname.md)
+- [var windowNibName: NSNib.Name?](./windownibname.md)
   The name of the nib file that stores the window associated with the receiver.
-- [var windowNibPath: String?](nswindowcontroller/windownibpath.md)
+- [var windowNibPath: String?](./windownibpath.md)
   The full path of the nib file that stores the window associated with the receiver.
 
 

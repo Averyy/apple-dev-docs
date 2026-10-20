@@ -1,7 +1,8 @@
 # UIAccessibility.GuidedAccessError.Code.permissionDenied
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the app isn’t authorized to perform the requested action.
 
@@ -17,13 +18,18 @@ An error that indicates the app isn’t authorized to perform the requested acti
 case permissionDenied
 ```
 
+```c
+UIGuidedAccessErrorPermissionDenied
+```
+
 #### Discussion
 
 For example, this error might indicate that your app is requesting a configuration change but isn’t locked into Single App Mode through a configuration profile.
 
 ## See Also
 
-- [UIAccessibility.GuidedAccessError.Code.failed](uiaccessibility/guidedaccesserror/code/failed.md)
+### Errors
+- [UIAccessibility.GuidedAccessError.Code.failed](./failed.md)
   An error that indicates a failure for an unspecified reason.
 
 

@@ -1,18 +1,19 @@
 # CFRunLoopSourceContext1
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains program-defined data and callbacks with which you can configure a version 1 CFRunLoopSource’s behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,39 +21,44 @@ A structure that contains program-defined data and callbacks with which you can 
 struct CFRunLoopSourceContext1
 ```
 
+```c
+typedef struct { ... } CFRunLoopSourceContext1;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cfrunloopsourcecontext1/init.md)
-- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!, equal: ((UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinBoolean)!, hash: ((UnsafeRawPointer?) -> CFHashCode)!, getPort: ((UnsafeMutableRawPointer?) -> mach_port_t)!, perform: ((UnsafeMutableRawPointer?, CFIndex, CFAllocator?, UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?)!)](cfrunloopsourcecontext1/init(version:info:retain:release:copydescription:equal:hash:getport:perform:).md)
+- [init()](./cfrunloopsourcecontext1/init%28%29.md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!, equal: ((UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinBoolean)!, hash: ((UnsafeRawPointer?) -> CFHashCode)!, getPort: ((UnsafeMutableRawPointer?) -> mach_port_t)!, perform: ((UnsafeMutableRawPointer?, CFIndex, CFAllocator?, UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?)!)](./cfrunloopsourcecontext1/init%28version,info,retain,release,copydescription,equal,hash,getport,perform%29.md)
 ### Instance Properties
-- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](cfrunloopsourcecontext1/copydescription.md)
+- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](./cfrunloopsourcecontext1/copydescription.md)
   A copy description callback for your program-defined `info` pointer. Can be `NULL`.
-- [var equal: ((UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinBoolean)!](cfrunloopsourcecontext1/equal.md)
+- [var equal: ((UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinBoolean)!](./cfrunloopsourcecontext1/equal.md)
   An equality test callback for your program-defined `info` pointer. Can be `NULL`.
-- [var getPort: ((UnsafeMutableRawPointer?) -> mach_port_t)!](cfrunloopsourcecontext1/getport.md)
+- [var getPort: ((UnsafeMutableRawPointer?) -> mach_port_t)!](./cfrunloopsourcecontext1/getport.md)
   A callback to retrieve the native Mach port represented by the source. This callback is called when the source is either added to or removed from a run loop mode.
-- [var hash: ((UnsafeRawPointer?) -> CFHashCode)!](cfrunloopsourcecontext1/hash.md)
+- [var hash: ((UnsafeRawPointer?) -> CFHashCode)!](./cfrunloopsourcecontext1/hash.md)
   A hash calculation callback for your program-defined `info` pointer. Can be `NULL`.
-- [var info: UnsafeMutableRawPointer!](cfrunloopsourcecontext1/info.md)
+- [var info: UnsafeMutableRawPointer!](./cfrunloopsourcecontext1/info.md)
   An arbitrary pointer to program-defined data, which can be associated with the run loop source at creation time. This pointer is passed to all the callbacks defined in the context.
-- [var perform: ((UnsafeMutableRawPointer?, CFIndex, CFAllocator?, UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?)!](cfrunloopsourcecontext1/perform.md)
+- [var perform: ((UnsafeMutableRawPointer?, CFIndex, CFAllocator?, UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?)!](./cfrunloopsourcecontext1/perform.md)
   A perform callback for the run loop source. This callback is called when the source has fired.
-- [var release: ((UnsafeRawPointer?) -> Void)!](cfrunloopsourcecontext1/release.md)
+- [var release: ((UnsafeRawPointer?) -> Void)!](./cfrunloopsourcecontext1/release.md)
   A release callback for your program-defined `info` pointer. Can be `NULL`.
-- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](cfrunloopsourcecontext1/retain.md)
+- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](./cfrunloopsourcecontext1/retain.md)
   A retain callback for your program-defined `info` pointer. Can be `NULL`.
-- [var version: CFIndex](cfrunloopsourcecontext1/version.md)
+- [var version: CFIndex](./cfrunloopsourcecontext1/version.md)
   Version number of the structure. Must be 1.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct CFRunLoopSourceContext](cfrunloopsourcecontext.md)
+### Data Types
+- [struct CFRunLoopSourceContext](./cfrunloopsourcecontext.md)
   A structure that contains program-defined data and callbacks with which you can configure a version 0 CFRunLoopSource’s behavior.
 
 

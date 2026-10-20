@@ -1,7 +1,8 @@
 # Build.Relationships.BetaGroups.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a build.
 
@@ -10,7 +11,7 @@ The request body you use to update a build.
 
 ## Declaration
 
-```swift
+```
 object Build.Relationships.BetaGroups.Data
 ```
 
@@ -18,6 +19,8 @@ object Build.Relationships.BetaGroups.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaGroups`
 
 
 ---

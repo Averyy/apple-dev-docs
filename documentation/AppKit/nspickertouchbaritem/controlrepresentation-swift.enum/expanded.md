@@ -1,7 +1,8 @@
 # NSPickerTouchBarItem.ControlRepresentation.expanded
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system displays the control and all of its options directly.
 
@@ -17,11 +18,16 @@ The system displays the control and all of its options directly.
 case expanded
 ```
 
+```c
+NSPickerTouchBarItemControlRepresentationExpanded
+```
+
 ## See Also
 
-- [NSPickerTouchBarItem.ControlRepresentation.automatic](nspickertouchbaritem/controlrepresentation-swift.enum/automatic.md)
+### Display styles
+- [NSPickerTouchBarItem.ControlRepresentation.automatic](./automatic.md)
   The system dynamically changes the display mode based on the available space.
-- [NSPickerTouchBarItem.ControlRepresentation.collapsed](nspickertouchbaritem/controlrepresentation-swift.enum/collapsed.md)
+- [NSPickerTouchBarItem.ControlRepresentation.collapsed](./collapsed.md)
   The system displays the control’s options through a popover.
 
 

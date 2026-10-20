@@ -1,7 +1,8 @@
 # TabletopNetworkSessionCoordinator.NetworkSession
 
 **Framework**: TabletopKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ typealias NetworkSession = TabletopNetworkSession<Self>
 
 ## See Also
 
-- [func coordinateWithSession(Self.NetworkSession)](tabletopnetworksessioncoordinator/coordinatewithsession(_:).md)
+### Starting network sessions
+- [func coordinateWithSession(Self.NetworkSession)](./coordinatewithsession%28_%29.md)
 
 
 ---

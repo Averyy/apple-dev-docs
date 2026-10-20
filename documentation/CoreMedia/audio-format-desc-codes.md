@@ -1,54 +1,56 @@
 # Audio Format Description Mask Codes
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 Mask codes that identify audio formats.
 
 ## Topics
 
 ### Constants
-- [var kCMAudioFormatDescriptionMask_All: CMAudioFormatDescriptionMask](kcmaudioformatdescriptionmask_all.md)
+- [var kCMAudioFormatDescriptionMask_All: CMAudioFormatDescriptionMask](./kcmaudioformatdescriptionmask_all.md)
   A mask that represents all parts of an audio format description.
-- [var kCMAudioFormatDescriptionMask_ChannelLayout: CMAudioFormatDescriptionMask](kcmaudioformatdescriptionmask_channellayout.md)
+- [var kCMAudioFormatDescriptionMask_ChannelLayout: CMAudioFormatDescriptionMask](./kcmaudioformatdescriptionmask_channellayout.md)
   A mask that represents the audio channel layout.
-- [var kCMAudioFormatDescriptionMask_Extensions: CMAudioFormatDescriptionMask](kcmaudioformatdescriptionmask_extensions.md)
+- [var kCMAudioFormatDescriptionMask_Extensions: CMAudioFormatDescriptionMask](./kcmaudioformatdescriptionmask_extensions.md)
   A mask that represents the format description extensions.
-- [var kCMAudioFormatDescriptionMask_MagicCookie: CMAudioFormatDescriptionMask](kcmaudioformatdescriptionmask_magiccookie.md)
+- [var kCMAudioFormatDescriptionMask_MagicCookie: CMAudioFormatDescriptionMask](./kcmaudioformatdescriptionmask_magiccookie.md)
   A mask that represents the magic cookie.
-- [var kCMAudioFormatDescriptionMask_StreamBasicDescription: CMAudioFormatDescriptionMask](kcmaudioformatdescriptionmask_streambasicdescription.md)
+- [var kCMAudioFormatDescriptionMask_StreamBasicDescription: CMAudioFormatDescriptionMask](./kcmaudioformatdescriptionmask_streambasicdescription.md)
   A mask that represents the audio stream description.
 
 ## See Also
 
-- [Chroma Location Extension Constants](chroma-location-extension-constants.md)
+### Constants
+- [Chroma Location Extension Constants](./chroma-location-extension-constants.md)
   Constants that identify chroma location extensions.
-- [Clean Aperture Extension Constants](clean-aperture-extension-constants.md)
+- [Clean Aperture Extension Constants](./clean-aperture-extension-constants.md)
   Constants that identify clean aperture extensions.
-- [Closed Caption Format Type Constants](closed-caption-formats.md)
+- [Closed Caption Format Type Constants](./closed-caption-formats.md)
   Types that identify closed caption formats.
-- [Color Primary Extension Constants](color-primary-extension-constants.md)
+- [Color Primary Extension Constants](./color-primary-extension-constants.md)
   Constants that identify color primary extensions.
-- [Field Detail Extension Constants](field-detail-extension-constants.md)
+- [Field Detail Extension Constants](./field-detail-extension-constants.md)
   Constants that identify field detail extensions.
-- [Format Description Bridge Error Codes](format-description-bridge-errors.md)
+- [Format Description Bridge Error Codes](./format-description-bridge-errors.md)
   Bridge errors the system returns from format description calls.
-- [Format Description Constants](format-description-constants.md)
+- [Format Description Constants](./format-description-constants.md)
   Constants that identify format descriptions.
-- [Format Description Error Codes](format-description-errors.md)
+- [Format Description Error Codes](./format-description-errors.md)
   Errors the system returns from format description calls.
-- [HEVC Temporal Level Info Constants](hevc-temporal-level-info-constants.md)
+- [HEVC Temporal Level Info Constants](./hevc-temporal-level-info-constants.md)
   Constants that identify HEVC temporal level information.
-- [Metadata Format Description Constants](metadata-format-description-constants.md)
+- [Metadata Format Description Constants](./metadata-format-description-constants.md)
   Constants that identify metadata format descriptions.
-- [MPEG-2-conformant Formats](mpeg-2-conformant-formats.md)
+- [MPEG-2-conformant Formats](./mpeg-2-conformant-formats.md)
   Constants that identify MPEG-2 formats.
-- [Pixel Aspect Ratio Extension Constants](pixel-aspect-ratio-extension-constants.md)
+- [Pixel Aspect Ratio Extension Constants](./pixel-aspect-ratio-extension-constants.md)
   Constants that identify pixel aspect ratio extensions.
-- [Text Display Flags](text-display-flags.md)
+- [Text Display Flags](./text-display-flags.md)
   Flags that identify text display methods.
-- [Text Format Constants](text-format-constants.md)
+- [Text Format Constants](./text-format-constants.md)
   Types that identify text formats.
-- [Text Format Description Constants](text-format-description-constants.md)
+- [Text Format Description Constants](./text-format-description-constants.md)
   Constants that identify text format descriptions.
 
 

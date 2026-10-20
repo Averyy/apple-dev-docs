@@ -1,7 +1,8 @@
 # wellKnownTypeURIPayload()
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the URL of a valid Well Known Type URI payload.
 
@@ -14,6 +15,10 @@ Returns the URL of a valid Well Known Type URI payload.
 
 ```swift
 func wellKnownTypeURIPayload() -> URL?
+```
+
+```objc
+- (NSURL *) wellKnownTypeURIPayload;
 ```
 
 #### Return Value

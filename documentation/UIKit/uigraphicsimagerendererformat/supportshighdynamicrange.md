@@ -1,7 +1,8 @@
 # supportsHighDynamicRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var supportsHighDynamicRange: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL supportsHighDynamicRange;
 ```
 
 

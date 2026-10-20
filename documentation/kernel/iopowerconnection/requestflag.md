@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool requestFlag;
 ```
 
@@ -15,13 +15,14 @@ set to true when desiredDomainState is set
 
 ## See Also
 
-- [stateKnown](iopowerconnection/stateknown.md)
-- [readyFlag](iopowerconnection/readyflag.md)
-- [preventSystemSleepFlag](iopowerconnection/preventsystemsleepflag.md)
-- [preventIdleSleepFlag](iopowerconnection/preventidlesleepflag.md)
-- [desiredDomainState](iopowerconnection/desireddomainstate.md)
-- [currentPowerFlags](iopowerconnection/currentpowerflags.md)
-- [awaitingAck](iopowerconnection/awaitingack.md)
+### Instance Variables
+- [stateKnown](./stateknown.md)
+- [readyFlag](./readyflag.md)
+- [preventSystemSleepFlag](./preventsystemsleepflag.md)
+- [preventIdleSleepFlag](./preventidlesleepflag.md)
+- [desiredDomainState](./desireddomainstate.md)
+- [currentPowerFlags](./currentpowerflags.md)
+- [awaitingAck](./awaitingack.md)
 
 
 ---

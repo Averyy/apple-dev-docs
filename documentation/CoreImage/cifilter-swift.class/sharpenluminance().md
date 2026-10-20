@@ -1,7 +1,8 @@
 # sharpenLuminance()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies a sharpening effect to an image.
 
@@ -19,6 +20,10 @@ Applies a sharpening effect to an image.
 class func sharpenLuminance() -> any CIFilter & CISharpenLuminance
 ```
 
+```objc
++ (CIFilter<CISharpenLuminance> *) sharpenLuminanceFilter;
+```
+
 #### Return Value
 
 The modified image.
@@ -29,9 +34,9 @@ This method applies the sharpen luminance filter to an image. The effect increas
 
 The bicubic sharpen luminance filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`sharpness`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`sharpness`**: A `float` representing the desired strength of the effect as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that results in detail from the sign in the image to be more visible:
 
@@ -45,11 +50,12 @@ func sharpen (inputImage: CIImage) -> CIImage? {
 }
 ```
 
-![Two photographs of a downtown sidewalk with trees, a blue square highlighting the end of the sidewalk with a bike lane and street sign displayed. The photo on the left has no modifications to color. In the photo on the right a sharpen luminance filter has been applied resulting in the black of the bike lane sign becoming darker.](/images/com.apple.coreimage/media-3595821@2x.png)
+![Two photographs of a downtown sidewalk with trees, a blue square highlighting the end of the sidewalk with a bike lane and street sign displayed. The photo on the left has no modifications to color. In the photo on the right a sharpen luminance filter has been applied resulting in the black of the bike lane sign becoming darker.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3595821@2x.png)
 
 ## See Also
 
-- [class func unsharpMask() -> any CIFilter & CIUnsharpMask](cifilter-swift.class/unsharpmask.md)
+### Filters
+- [class func unsharpMask() -> any CIFilter & CIUnsharpMask](./unsharpmask%28%29.md)
   Increases an image’s contrast between two colors.
 
 

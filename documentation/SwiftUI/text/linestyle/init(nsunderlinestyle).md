@@ -1,7 +1,8 @@
 # init(nsUnderlineStyle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `Text.LineStyle` from `NSUnderlineStyle`.
 
@@ -26,7 +27,7 @@ A new `Text.LineStyle` or `nil` when `nsUnderlineStyle` contains styles not supp
 
 #### Discussion
 
-> **Note**: Use this initializer only if you need to convert an existing `NSUnderlineStyle` to a SwiftUI `Text.LineStyle`. Otherwise, create a `Text.LineStyle` using an initializer like [`init(pattern:color:)`](text/linestyle/init(pattern:color:).md).
+> **Note**: Use this initializer only if you need to convert an existing `NSUnderlineStyle` to a SwiftUI `Text.LineStyle`. Otherwise, create a `Text.LineStyle` using an initializer like [`init(pattern:color:)`](./init%28pattern,color%29.md).
 
 ## Parameters
 
@@ -34,9 +35,10 @@ A new `Text.LineStyle` or `nil` when `nsUnderlineStyle` contains styles not supp
 
 ## See Also
 
-- [init(pattern: Text.LineStyle.Pattern, color: Color?)](text/linestyle/init(pattern:color:).md)
+### Creating a text line style
+- [init(pattern: Text.LineStyle.Pattern, color: Color?)](./init%28pattern,color%29.md)
   Creates a line style.
-- [Text.LineStyle.Pattern](text/linestyle/pattern.md)
+- [Text.LineStyle.Pattern](./pattern.md)
   The pattern, that the line has.
 
 

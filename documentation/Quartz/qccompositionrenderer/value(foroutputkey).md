@@ -2,12 +2,15 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the value for an output port of a composition.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,9 +18,13 @@ Returns the value for an output port of a composition.
 func value(forOutputKey key: String!) -> Any!
 ```
 
+```objc
+- (id) valueForOutputKey:(NSString *) key;
+```
+
 #### Return Value
 
-The value. The data type of returned value depends on the type of the output port. See [`QCPortAttributeTypeKey`](qcportattributetypekey.md) for more information.
+The value. The data type of returned value depends on the type of the output port. See [`QCPortAttributeTypeKey`](../qcportattributetypekey.md) for more information.
 
 ## Parameters
 
@@ -25,11 +32,12 @@ The value. The data type of returned value depends on the type of the output por
 
 ## See Also
 
-- [func setValue(Any!, forInputKey: String!) -> Bool](qccompositionrenderer/setvalue(_:forinputkey:).md)
+### Passing and Retrieving Values From a Composition
+- [func setValue(Any!, forInputKey: String!) -> Bool](./setvalue%28_,forinputkey%29.md)
   Sets the value for an input port of a composition.
-- [func value(forInputKey: String!) -> Any!](qccompositionrenderer/value(forinputkey:).md)
+- [func value(forInputKey: String!) -> Any!](./value%28forinputkey%29.md)
   Returns the value for an input port of a composition.
-- [func value(forOutputKey: String!, ofType: String!) -> Any!](qccompositionrenderer/value(foroutputkey:oftype:).md)
+- [func value(forOutputKey: String!, ofType: String!) -> Any!](./value%28foroutputkey,oftype%29.md)
   Returns the current value on an output port (identified by its key) of the root patch of the composition.
 
 

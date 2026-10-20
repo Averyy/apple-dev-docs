@@ -1,7 +1,8 @@
 # AudioConvertingTransformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer for audio conversion.
 
@@ -22,30 +23,31 @@ struct AudioConvertingTransformer
 ## Topics
 
 ### Creating the transformer
-- [init(targetFormat: AVAudioFormat)](audioconvertingtransformer/init(targetformat:).md)
+- [init(targetFormat: AVAudioFormat)](./audioconvertingtransformer/init%28targetformat%29.md)
   Creates an audio conversion transformer to convert the format of the buffers.
 ### Getting the properties
-- [let targetFormat: AVAudioFormat](audioconvertingtransformer/targetformat.md)
+- [let targetFormat: AVAudioFormat](./audioconvertingtransformer/targetformat.md)
   The target audio format for the output buffers. It must have an AVAudioPCMFormat as its common format type.
 ### Applying the transformer
-- [func applied(to: AVAudioPCMBuffer, eventHandler: EventHandler?) throws -> AVAudioPCMBuffer](audioconvertingtransformer/applied(to:eventhandler:).md)
+- [func applied(to: AVAudioPCMBuffer, eventHandler: EventHandler?) throws -> AVAudioPCMBuffer](./audioconvertingtransformer/applied%28to,eventhandler%29.md)
   Performs conversion of the input audio buffer.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [struct AudioReader](audioreader.md)
+### Audio components
+- [struct AudioReader](./audioreader.md)
   An audio file reader.
-- [struct AudioFeaturePrint](audiofeatureprint.md)
+- [struct AudioFeaturePrint](./audiofeatureprint.md)
   A stream transformer that extracts audio features from audio buffers.
 
 

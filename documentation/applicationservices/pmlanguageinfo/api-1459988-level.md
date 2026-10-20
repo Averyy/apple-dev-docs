@@ -1,7 +1,8 @@
 # level
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Specifies the level of the imaging language used by the printer driver. 
 
@@ -12,6 +13,10 @@ Specifies the level of the imaging language used by the printer driver.
 
 ```swift
 var level: Str32
+```
+
+```c
+Str32 level;
 ```
 
 

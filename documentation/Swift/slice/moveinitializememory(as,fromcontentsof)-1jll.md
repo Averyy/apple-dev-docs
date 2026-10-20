@@ -1,7 +1,8 @@
 # moveInitializeMemory(as:fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this slice’s memory initialized.
 
@@ -20,6 +21,8 @@ Moves every element of an initialized source buffer into the uninitialized memor
 @discardableResult
 func moveInitializeMemory<T>(as type: T.Type, fromContentsOf source: UnsafeMutableBufferPointer<T>) -> UnsafeMutableBufferPointer<T> where T : ~Copyable
 ```
+
+Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
 #### Return Value
 

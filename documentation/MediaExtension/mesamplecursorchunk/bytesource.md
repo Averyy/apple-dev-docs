@@ -1,7 +1,8 @@
 # byteSource
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The byte source to use to read the data for the sample.
 
@@ -14,13 +15,18 @@ The byte source to use to read the data for the sample.
 var byteSource: MEByteSource { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) MEByteSource * byteSource;
+```
+
 ## See Also
 
-- [var chunkStorageRange: AVSampleCursorStorageRange](mesamplecursorchunk/chunkstoragerange.md)
+### Inspecting a chunk
+- [var chunkStorageRange: AVSampleCursorStorageRange](./chunkstoragerange.md)
   The offset location and length of the sample’s chunk within the byte source.
-- [var chunkInfo: AVSampleCursorChunkInfo](mesamplecursorchunk/chunkinfo.md)
+- [var chunkInfo: AVSampleCursorChunkInfo](./chunkinfo.md)
   An object that provides details about the chunk in the media.
-- [var sampleIndexWithinChunk: CFIndex](mesamplecursorchunk/sampleindexwithinchunk.md)
+- [var sampleIndexWithinChunk: CFIndex](./sampleindexwithinchunk.md)
   The offset index of the sample within the chunk, in samples.
 
 

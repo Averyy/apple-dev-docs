@@ -1,14 +1,15 @@
 # kauth_listener_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kauth_listener *kauth_listener_t;
 ```
 

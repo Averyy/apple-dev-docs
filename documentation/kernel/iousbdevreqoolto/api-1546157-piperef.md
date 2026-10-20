@@ -1,7 +1,8 @@
 # pipeRef
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A reference to the USB pipe.
 
@@ -10,29 +11,30 @@ A reference to the USB pipe.
 
 ## Declaration
 
-```swift
+```c
 UInt8 pipeRef;
 ```
 
 ## See Also
 
-- [bmRequestType](iousbdevreqoolto/1546443-bmrequesttype.md)
+### Getting the Properties
+- [bmRequestType](./api-1546443-bmrequesttype.md)
   The type of the request.
-- [bRequest](iousbdevreqoolto/1546099-brequest.md)
+- [bRequest](./api-1546099-brequest.md)
   The request code.
-- [wValue](iousbdevreqoolto/1546109-wvalue.md)
+- [wValue](./api-1546109-wvalue.md)
   The 16-bit parameter for the request.
-- [wIndex](iousbdevreqoolto/1545920-windex.md)
+- [wIndex](./api-1545920-windex.md)
   The 16-bit parameter for the request.
-- [wLength](iousbdevreqoolto/1546286-wlength.md)
+- [wLength](./api-1546286-wlength.md)
   The length of the data part of the request.
-- [pData](iousbdevreqoolto/1546044-pdata.md)
+- [pData](./api-1546044-pdata.md)
   The pointer to the data for the request.
-- [wLenDone](iousbdevreqoolto/1546113-wlendone.md)
+- [wLenDone](./api-1546113-wlendone.md)
   The number of data bytes that the system actually transferred.
-- [completionTimeout](iousbdevreqoolto/1546368-completiontimeout.md)
+- [completionTimeout](./api-1546368-completiontimeout.md)
   The value of the completion timeout in milliseconds.
-- [noDataTimeout](iousbdevreqoolto/1546132-nodatatimeout.md)
+- [noDataTimeout](./api-1546132-nodatatimeout.md)
   The value of the completion timeout in milliseconds if there’s no data.
 
 

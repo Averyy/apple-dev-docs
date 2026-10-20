@@ -1,7 +1,8 @@
 # AudioCodecUninitialize(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Moves the codec from the initialized state back to the uninitialized state.
 
@@ -19,6 +20,10 @@ Moves the codec from the initialized state back to the uninitialized state.
 func AudioCodecUninitialize(_ inCodec: AudioCodec) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioCodecUninitialize(AudioCodec inCodec);
+```
+
 #### Return Value
 
 Returns `NoErr` if successful, otherwise, a result code. See `Result Codes` for a list of possible values.
@@ -29,15 +34,17 @@ This function returns the codec to the uninitialized state. The codec may then b
 
 ## Parameters
 
-- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](https://developer.apple.com/documentation/coreservices/1516552-findnextcomponent) and OpenAComponent) to obtain an audio codec object.
+- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](../coreservices/api-1516552-findnextcomponent.md) and OpenAComponent) to obtain an audio codec object.
 
 ## See Also
 
-- [func AudioCodecSetProperty(AudioCodec, AudioCodecPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](audiocodecsetproperty(_:_:_:_:).md)
+### Related Documentation
+- [func AudioCodecSetProperty(AudioCodec, AudioCodecPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./audiocodecsetproperty%28_,_,_,_%29.md)
   Sets the value of a codec property.
-- [func AudioCodecInitialize(AudioCodec, UnsafePointer<AudioStreamBasicDescription>?, UnsafePointer<AudioStreamBasicDescription>?, UnsafeRawPointer?, UInt32) -> OSStatus](audiocodecinitialize(_:_:_:_:_:).md)
+### Initializing an Audio Codec
+- [func AudioCodecInitialize(AudioCodec, UnsafePointer<AudioStreamBasicDescription>?, UnsafePointer<AudioStreamBasicDescription>?, UnsafeRawPointer?, UInt32) -> OSStatus](./audiocodecinitialize%28_,_,_,_,_%29.md)
   Sets up the specified codec to perform a data format translation.
-- [func AudioCodecReset(AudioCodec) -> OSStatus](audiocodecreset(_:).md)
+- [func AudioCodecReset(AudioCodec) -> OSStatus](./audiocodecreset%28_%29.md)
   Flushes all the audio data in the codec and clears the input buffer.
 
 

@@ -1,7 +1,8 @@
 # guidanceBackgroundColor
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color the map template uses when displaying guidance.
 
@@ -16,17 +17,22 @@ The background color the map template uses when displaying guidance.
 var guidanceBackgroundColor: UIColor { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UIColor * guidanceBackgroundColor;
+```
+
 #### Discussion
 
-The system determines whether [`guidanceBackgroundColor`](cpmaptemplate/guidancebackgroundcolor.md) meets contrast requirements, and uses the default color when the provided color doesn’t meet those requirements. The system adjusts font color to correspond with the guidance background color.
+The system determines whether [`guidanceBackgroundColor`](./guidancebackgroundcolor.md) meets contrast requirements, and uses the default color when the provided color doesn’t meet those requirements. The system adjusts font color to correspond with the guidance background color.
 
 > **Note**:  The system ignores alpha values.
 
 ## See Also
 
-- [var automaticallyHidesNavigationBar: Bool](cpmaptemplate/automaticallyhidesnavigationbar.md)
+### Configuring Map Templates
+- [var automaticallyHidesNavigationBar: Bool](./automaticallyhidesnavigationbar.md)
   A Boolean value that indicates whether the template should automatically hide the navigation bar.
-- [var hidesButtonsWithNavigationBar: Bool](cpmaptemplate/hidesbuttonswithnavigationbar.md)
+- [var hidesButtonsWithNavigationBar: Bool](./hidesbuttonswithnavigationbar.md)
   A Boolean value that tells the system to hide the map buttons when hiding the navigation bar.
 
 

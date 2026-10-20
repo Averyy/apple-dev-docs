@@ -1,7 +1,8 @@
 # CVFillExtendedPixelsCallBack
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a pointer to a custom extended pixel-fill function, which is called whenever the system needs to pad a buffer holding your custom pixel format.
 
@@ -20,6 +21,10 @@ Defines a pointer to a custom extended pixel-fill function, which is called when
 typealias CVFillExtendedPixelsCallBack = (CVPixelBuffer, UnsafeMutableRawPointer?) -> DarwinBoolean
 ```
 
+```c
+typedef unsigned char (*)(struct __CVBuffer *, void *) CVFillExtendedPixelsCallBack;
+```
+
 #### Return Value
 
 If `true`, the padding was successful; otherwise, `false`.
@@ -27,7 +32,7 @@ If `true`, the padding was successful; otherwise, `false`.
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer to be padded.
-- `refCon`: A pointer to application-defined data. This is the same value you stored in the [`CVFillExtendedPixelsCallBackData`](cvfillextendedpixelscallbackdata.md) structure.
+- `refCon`: A pointer to application-defined data. This is the same value you stored in the [`CVFillExtendedPixelsCallBackData`](./cvfillextendedpixelscallbackdata.md) structure.
 
 
 ---

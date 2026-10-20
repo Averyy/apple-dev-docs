@@ -1,7 +1,8 @@
 # init(_:systemImage:action:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that generates its label from a localized string key and system image name.
 
@@ -21,13 +22,27 @@ Creates a button that generates its label from a localized string key and system
 nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, action: @escaping @MainActor () -> Void)
 ```
 
+Available when `Label` is `Label<Text, Image>`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, systemImage: String, action: @escaping @MainActor () -> Void)
+```
+
+```swift
+@export(implementation)
+nonisolated init<S>(_ title: S, systemImage: String, action: @escaping @MainActor () -> Void) where S : StringProtocol
+```
+
 ## Mentions
 
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Discussion
 
-This initializer creates a [`Label`](label.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Label`](../label.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](../text/init%28_,tablename,bundle,comment%29.md). See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -37,11 +52,12 @@ This initializer creates a [`Label`](label.md) view on your behalf, and treats t
 
 ## See Also
 
-- [init(action: () -> Void, label: () -> Label)](button/init(action:label:).md)
+### Creating a button
+- [init(action: () -> Void, label: () -> Label)](./init%28action,label%29.md)
   Creates a button that displays a custom label.
-- [init(_:action:)](button/init(_:action:).md)
+- [init(_:action:)](./init%28_,action%29.md)
   Creates a button that generates its label from a localized string resource.
-- [init(_:image:action:)](button/init(_:image:action:).md)
+- [init(_:image:action:)](./init%28_,image,action%29.md)
   Creates a button that generates its label from a localized string resource and image resource.
 
 

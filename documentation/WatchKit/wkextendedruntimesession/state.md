@@ -1,7 +1,8 @@
 # state
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session’s current state.
 
@@ -14,24 +15,29 @@ The session’s current state.
 var state: WKExtendedRuntimeSessionState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WKExtendedRuntimeSessionState state;
+```
+
 #### Discussion
 
-For a list of session states, see [`WKExtendedRuntimeSessionState`](wkextendedruntimesessionstate.md).
+For a list of session states, see [`WKExtendedRuntimeSessionState`](../wkextendedruntimesessionstate.md).
 
 ## See Also
 
-- [func start()](wkextendedruntimesession/start.md)
+### Managing the Session State
+- [func start()](./start%28%29.md)
   Starts running the session.
-- [func start(at: Date)](wkextendedruntimesession/start(at:).md)
+- [func start(at: Date)](./start%28at%29.md)
   Schedules a session to start running at a future date.
-- [func invalidate()](wkextendedruntimesession/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Stops the session.
-- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md)
+- [enum WKExtendedRuntimeSessionState](../wkextendedruntimesessionstate.md)
   The activation states for an extended runtime session.
-- [var expirationDate: Date?](wkextendedruntimesession/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The time and date when the session expires.
-- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:).md)
-- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](wkextendedruntimesessionautolaunchauthorizationstatus.md)
+- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](./requestautolaunchauthorizationstatus%28completion%29.md)
+- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](../wkextendedruntimesessionautolaunchauthorizationstatus.md)
 
 
 ---

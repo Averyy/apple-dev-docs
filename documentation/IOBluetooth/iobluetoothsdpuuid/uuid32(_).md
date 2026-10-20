@@ -1,17 +1,22 @@
 # uuid32(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new 32-bit IOBluetoothSDPUUID with the given UUID32
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func uuid32(_ uuid32: BluetoothSDPUUID32) -> Self!
+```
+
+```objc
++ (instancetype) uuid32:(BluetoothSDPUUID32) uuid32;
 ```
 
 #### Return Value

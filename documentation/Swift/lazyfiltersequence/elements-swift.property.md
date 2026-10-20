@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identical to `self`.
 
@@ -19,6 +20,8 @@ Identical to `self`.
 ```swift
 var elements: Self { get }
 ```
+
+Available when `Self` is `Self.Elements`.
 
 
 ---

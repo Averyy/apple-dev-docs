@@ -1,7 +1,8 @@
 # WebhookDelivery.Attributes.Response
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The HTTP response received from the webhook endpoint during a delivery attempt.
 
@@ -10,7 +11,7 @@ The HTTP response received from the webhook endpoint during a delivery attempt.
 
 ## Declaration
 
-```swift
+```
 object WebhookDelivery.Attributes.Response
 ```
 

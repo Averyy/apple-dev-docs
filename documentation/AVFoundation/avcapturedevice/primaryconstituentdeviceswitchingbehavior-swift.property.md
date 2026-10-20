@@ -1,7 +1,8 @@
 # primaryConstituentDeviceSwitchingBehavior
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The switching behavior for the primary constituent device.
 
@@ -18,31 +19,36 @@ The switching behavior for the primary constituent device.
 var primaryConstituentDeviceSwitchingBehavior: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCapturePrimaryConstituentDeviceSwitchingBehavior primaryConstituentDeviceSwitchingBehavior;
+```
+
 #### Discussion
 
-The default value of this property is [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/auto.md) for devices that support camera switching, and [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md) for those that don’t.
+The default value of this property is [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto`](./primaryconstituentdeviceswitchingbehavior-swift.enum/auto.md) for devices that support camera switching, and [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported`](./primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md) for those that don’t.
 
 This property is key-value observable.
 
 ## See Also
 
-- [func setPrimaryConstituentDeviceSwitchingBehavior(AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions)](avcapturedevice/setprimaryconstituentdeviceswitchingbehavior(_:restrictedswitchingbehaviorconditions:).md)
+### Restricting camera switching
+- [func setPrimaryConstituentDeviceSwitchingBehavior(AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions)](./setprimaryconstituentdeviceswitchingbehavior%28_,restrictedswitchingbehaviorconditions%29.md)
   Sets the switching behavior of the primary constituent device.
-- [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.property.md)
+- [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.property.md)
   The conditions that restrict the primary constituent device’s switching behavior.
-- [var activePrimaryConstituentDeviceSwitchingBehavior: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](avcapturedevice/activeprimaryconstituentdeviceswitchingbehavior.md)
+- [var activePrimaryConstituentDeviceSwitchingBehavior: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](./activeprimaryconstituentdeviceswitchingbehavior.md)
   The switching behavior of the active constituent device.
-- [var activePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/activeprimaryconstituentdevicerestrictedswitchingbehaviorconditions.md)
+- [var activePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./activeprimaryconstituentdevicerestrictedswitchingbehaviorconditions.md)
   The conditions that restrict camera switching behavior for the active primary constituent device.
-- [var activePrimaryConstituent: AVCaptureDevice?](avcapturedevice/activeprimaryconstituent.md)
+- [var activePrimaryConstituent: AVCaptureDevice?](./activeprimaryconstituent.md)
   A virtual device’s active primary constituent device.
-- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum.md)
+- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](./primaryconstituentdeviceswitchingbehavior-swift.enum.md)
   Constants that control when to allow a virtual device to switch its active primary constituent device.
-- [AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct.md)
+- [AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct.md)
   A structure that defines the conditions in which to restrict camera switching.
-- [var supportedFallbackPrimaryConstituentDevices: [AVCaptureDevice]](avcapturedevice/supportedfallbackprimaryconstituentdevices.md)
+- [var supportedFallbackPrimaryConstituentDevices: [AVCaptureDevice]](./supportedfallbackprimaryconstituentdevices.md)
   The constituent devices available to select as a fallback for a longer focal length primary constituent device.
-- [var fallbackPrimaryConstituentDevices: [AVCaptureDevice]](avcapturedevice/fallbackprimaryconstituentdevices.md)
+- [var fallbackPrimaryConstituentDevices: [AVCaptureDevice]](./fallbackprimaryconstituentdevices.md)
   The fallback devices to use when a constituent device with a longer focal length becomes limited by its light sensitivity or minimum focus distance.
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueStatusFault.generalFault
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory experienced a general fault.
 
@@ -19,9 +20,14 @@ The accessory experienced a general fault.
 case generalFault
 ```
 
+```c
+HMCharacteristicValueStatusFaultGeneralFault
+```
+
 ## See Also
 
-- [HMCharacteristicValueStatusFault.noFault](hmcharacteristicvaluestatusfault/nofault.md)
+### Fault Status
+- [HMCharacteristicValueStatusFault.noFault](./nofault.md)
   The accessory has not experienced a fault.
 
 

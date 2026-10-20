@@ -1,7 +1,8 @@
 # WKInterfaceSemanticContentAttribute.unspecified
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default value for views. The view is flipped when switching between left-to-right and right-to-left layouts.
 
@@ -14,15 +15,20 @@ The default value for views. The view is flipped when switching between left-to-
 case unspecified
 ```
 
+```c
+WKInterfaceSemanticContentAttributeUnspecified
+```
+
 ## See Also
 
-- [WKInterfaceSemanticContentAttribute.playback](wkinterfacesemanticcontentattribute/playback.md)
+### Constants
+- [WKInterfaceSemanticContentAttribute.playback](./playback.md)
   A view representing the playback controls, such as Play, Rewind, or Fast Forward buttons or playhead scrubbers. These views are not flipped when switching between left-to-right and right-to-left layouts.
-- [WKInterfaceSemanticContentAttribute.spatial](wkinterfacesemanticcontentattribute/spatial.md)
+- [WKInterfaceSemanticContentAttribute.spatial](./spatial.md)
   A view representing a directional control, for example a segment control for text alignment, or a D-pad control for a game. These views are not flipped when switching between left-to-right and right-to-left layouts.
-- [WKInterfaceSemanticContentAttribute.forceLeftToRight](wkinterfacesemanticcontentattribute/forcelefttoright.md)
+- [WKInterfaceSemanticContentAttribute.forceLeftToRight](./forcelefttoright.md)
   A view that is always displayed using a left-to-right layout.
-- [WKInterfaceSemanticContentAttribute.forceRightToLeft](wkinterfacesemanticcontentattribute/forcerighttoleft.md)
+- [WKInterfaceSemanticContentAttribute.forceRightToLeft](./forcerighttoleft.md)
   A view that is always displayed using a left-to-right layout.
 
 

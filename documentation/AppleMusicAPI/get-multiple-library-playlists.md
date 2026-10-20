@@ -1,7 +1,8 @@
 # Get Multiple Library Playlists
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch one or more library playlists by using their identifiers.
 
@@ -12,13 +13,13 @@ Fetch one or more library playlists by using their identifiers.
 
 If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/library/playlists
 ```
 
@@ -488,22 +489,33 @@ https://api.music.apple.com/v1/me/library/playlists
 
 ## Parameters
 
+### Query Parameters
+
 - `ids` ([string]) *(required)*: The unique identifiers for the playlists.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`LibraryPlaylistsResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object LibraryPlaylists](libraryplaylists.md)
+### Related Documentation
+- [object LibraryPlaylists](./libraryplaylists.md)
   A resource object that represents a library playlist.
-- [object LibraryPlaylistsResponse](libraryplaylistsresponse.md)
+- [object LibraryPlaylistsResponse](./libraryplaylistsresponse.md)
   The response to a library playlists request.
-- [Get a Library Playlist](get-a-library-playlist.md)
+### Requesting a Library Playlist
+- [Get a Library Playlist](./get-a-library-playlist.md)
   Fetch a library playlist by using its identifier.
-- [Get a Library Playlist's Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-5l22w.md)
+- [Get a Library Playlist's Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-5l22w.md)
   Fetch a library playlist’s relationship by using its identifier.
-- [Get All Library Playlists](get-all-library-playlists.md)
+- [Get All Library Playlists](./get-all-library-playlists.md)
   Fetch all the library playlists in alphabetical order.
 
 

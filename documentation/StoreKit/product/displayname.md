@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized display name of the product, if it exists.
 
@@ -22,23 +23,24 @@ let displayName: String
 
 #### Discussion
 
-The storefront of the device determines the language of the display name, not the preferred language set on the device. For more information, see [`Storefront`](storefront.md).
+The storefront of the device determines the language of the display name, not the preferred language set on the device. For more information, see [`Storefront`](../storefront.md).
 
-> **Note**:  When you create a new product in App Store Connect or in a StoreKit configuration file, you can test it before you add a product localization. The [`displayName`](product/displayname.md) value is an empty string until you add a localization. For more information on localizations, see [`Add and remove localizations`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/view-and-edit-in-app-purchase-information#add-and-remove-localizations).
+> **Note**:  When you create a new product in App Store Connect or in a StoreKit configuration file, you can test it before you add a product localization. The [`displayName`](./displayname.md) value is an empty string until you add a localization. For more information on localizations, see [Add and remove localizations](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/view-and-edit-in-app-purchase-information#add-and-remove-localizations).
 
 ## See Also
 
-- [let description: String](product/description.md)
+### Displaying a product description and price
+- [let description: String](./description.md)
   The localized description of the product.
-- [let displayPrice: String](product/displayprice.md)
+- [let displayPrice: String](./displayprice.md)
   The localized string representation of the product price, suitable for display.
-- [let price: Decimal](product/price.md)
+- [let price: Decimal](./price.md)
   The decimal representation of the cost of the product, in local currency.
-- [var priceFormatStyle: Decimal.FormatStyle.Currency](product/priceformatstyle.md)
+- [var priceFormatStyle: Decimal.FormatStyle.Currency](./priceformatstyle.md)
   The format style for the numbers in the price of the product.
-- [var subscriptionPeriodFormatStyle: Date.ComponentsFormatStyle](product/subscriptionperiodformatstyle.md)
+- [var subscriptionPeriodFormatStyle: Date.ComponentsFormatStyle](./subscriptionperiodformatstyle.md)
   The format style for the date components related to a subscription’s duration.
-- [var subscriptionPeriodUnitFormatStyle: Product.SubscriptionPeriod.Unit.FormatStyle](product/subscriptionperiodunitformatstyle.md)
+- [var subscriptionPeriodUnitFormatStyle: Product.SubscriptionPeriod.Unit.FormatStyle](./subscriptionperiodunitformatstyle.md)
   The format style for subscription period units, such as week, month, or year.
 
 

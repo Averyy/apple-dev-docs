@@ -1,7 +1,8 @@
 # AudioFileStreamSeek(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Provides a byte offset for a specified packet in the data stream.
 
@@ -19,26 +20,31 @@ Provides a byte offset for a specified packet in the data stream.
 func AudioFileStreamSeek(_ inAudioFileStream: AudioFileStreamID, _ inPacketOffset: Int64, _ outDataByteOffset: UnsafeMutablePointer<Int64>, _ ioFlags: UnsafeMutablePointer<AudioFileStreamSeekFlags>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileStreamSeek(AudioFileStreamID inAudioFileStream, SInt64 inPacketOffset, SInt64 *outDataByteOffset, AudioFileStreamSeekFlags *ioFlags);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
 
 #### Discussion
 
-After you call this function, the parser assumes the next data passed to the [`AudioFileStreamParseBytes(_:_:_:_:)`](audiofilestreamparsebytes(_:_:_:_:).md) function starts from the byte offset returned in the `outDataByteOffset` parameter.
+After you call this function, the parser assumes the next data passed to the [`AudioFileStreamParseBytes(_:_:_:_:)`](./audiofilestreamparsebytes%28_,_,_,_%29.md) function starts from the byte offset returned in the `outDataByteOffset` parameter.
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser to which you wish to provide a byte offset. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
+- `inAudioFileStream`: The ID of the parser to which you wish to provide a byte offset. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](./audiofilestreamopen%28_,_,_,_,_%29.md) function.
 - `inPacketOffset`: The number of packets from the beginning of the file of the packet whose byte offset you wish to have returned.
 - `outDataByteOffset`: On output, the absolute byte offset of the packet whose offset you specify in the `inPacketOffset` parameter. For audio file formats that do not contain packet tables, the returned offset may be an estimate.
 - `ioFlags`: On output, if the `outDataByteOffset` parameter returns an estimate, this parameter returns the constant `kAudioFileStreamSeekFlag_OffsetIsEstimated`. Currently, no input flags are defined for this call.
 
 ## See Also
 
-- [func AudioFileStreamParseBytes(AudioFileStreamID, UInt32, UnsafeRawPointer?, AudioFileStreamParseFlags) -> OSStatus](audiofilestreamparsebytes(_:_:_:_:).md)
+### Related Documentation
+- [func AudioFileStreamParseBytes(AudioFileStreamID, UInt32, UnsafeRawPointer?, AudioFileStreamParseFlags) -> OSStatus](./audiofilestreamparsebytes%28_,_,_,_%29.md)
   Passes audio file stream data to the parser.
-- [func AudioFileStreamOpen(UnsafeMutableRawPointer?, AudioFileStream_PropertyListenerProc, AudioFileStream_PacketsProc, AudioFileTypeID, UnsafeMutablePointer<AudioFileStreamID?>) -> OSStatus](audiofilestreamopen(_:_:_:_:_:).md)
+- [func AudioFileStreamOpen(UnsafeMutableRawPointer?, AudioFileStream_PropertyListenerProc, AudioFileStream_PacketsProc, AudioFileTypeID, UnsafeMutablePointer<AudioFileStreamID?>) -> OSStatus](./audiofilestreamopen%28_,_,_,_,_%29.md)
   Creates and opens a new audio file stream parser.
 
 

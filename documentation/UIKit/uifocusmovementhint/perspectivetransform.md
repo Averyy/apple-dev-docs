@@ -1,7 +1,8 @@
 # perspectiveTransform
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 3D transform that represents a perspective matrix to be applied to match UIKit interaction hinting.
 
@@ -18,13 +19,18 @@ A 3D transform that represents a perspective matrix to be applied to match UIKit
 var perspectiveTransform: CATransform3D { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CATransform3D perspectiveTransform;
+```
+
 ## See Also
 
-- [var interactionTransform: CATransform3D](uifocusmovementhint/interactiontransform.md)
+### Transforming a hint
+- [var interactionTransform: CATransform3D](./interactiontransform.md)
   A 3D transform that contains the combined transformations of perspective, rotation, and translation.
-- [var rotation: CGVector](uifocusmovementhint/rotation.md)
+- [var rotation: CGVector](./rotation.md)
   A vector to apply to a transform to match system interaction hinting.
-- [var translation: CGVector](uifocusmovementhint/translation.md)
+- [var translation: CGVector](./translation.md)
   A vector to apply to a transform to match system interaction hinting.
 
 

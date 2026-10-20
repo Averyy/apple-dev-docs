@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BlendMode.opaque
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The particle fully occludes anything drawn before it.
 

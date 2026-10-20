@@ -1,7 +1,8 @@
 # isFinished
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the progress object is complete.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates the progress object is complete.
 var isFinished: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isFinished) BOOL finished;
+```
+
 #### Discussion
 
-A progress object finishes when the [`completedUnitCount`](progress/completedunitcount.md) equals or exceeds the [`totalUnitCount`](progress/totalunitcount.md).
+A progress object finishes when the [`completedUnitCount`](./completedunitcount.md) equals or exceeds the [`totalUnitCount`](./totalunitcount.md).
 
-By default, [`Progress`](progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
+By default, [`Progress`](../progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
 
 ## See Also
 
-- [var isIndeterminate: Bool](progress/isindeterminate.md)
+### Observing Progress
+- [var isIndeterminate: Bool](./isindeterminate.md)
   A Boolean value that indicates whether the tracked progress is indeterminate.
-- [var fractionCompleted: Double](progress/fractioncompleted.md)
+- [var fractionCompleted: Double](./fractioncompleted.md)
   The fraction of the overall work that the progress object completes, including work from its suboperations.
 
 

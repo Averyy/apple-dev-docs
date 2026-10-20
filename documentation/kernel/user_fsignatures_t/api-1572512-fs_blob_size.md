@@ -1,14 +1,15 @@
 # fs_blob_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 user_size_t fs_blob_size;
 ```
 

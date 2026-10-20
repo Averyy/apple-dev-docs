@@ -1,7 +1,8 @@
 # softplus(alpha:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a softplus activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a softplus activation operation to the current graph.
 ```swift
 func softplus(alpha: Float) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # SEC_ASN1_ANY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var SEC_ASN1_ANY: Int32 { get }
+```
+
+```c
+#define SEC_ASN1_ANY
 ```
 
 

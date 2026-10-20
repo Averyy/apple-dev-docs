@@ -1,7 +1,8 @@
 # NSCalendar.Identifier
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported calendar types.
 
@@ -20,6 +21,10 @@ The supported calendar types.
 struct Identifier
 ```
 
+```c
+typedef NSString * NSCalendarIdentifier;
+```
+
 #### Discussion
 
 Use these identifiers to specify the kind of calendar. The Gregorian calendar is the calendar typically used in Europe, the Western Hemisphere, and elsewhere.
@@ -27,67 +32,68 @@ Use these identifiers to specify the kind of calendar. The Gregorian calendar is
 ## Topics
 
 ### Initializers
-- [init(String)](nscalendar/identifier/init(_:).md)
-- [init(rawValue: String)](nscalendar/identifier/init(rawvalue:).md)
+- [init(String)](./identifier/init%28_%29.md)
+- [init(rawValue: String)](./identifier/init%28rawvalue%29.md)
 ### Calendar identifiers
-- [static let gregorian: NSCalendar.Identifier](nscalendar/identifier/gregorian.md)
+- [static let gregorian: NSCalendar.Identifier](./identifier/gregorian.md)
   Identifier for the Gregorian calendar.
-- [static let ISO8601: NSCalendar.Identifier](nscalendar/identifier/iso8601.md)
+- [static let ISO8601: NSCalendar.Identifier](./identifier/iso8601.md)
   Identifier for the ISO8601 calendar.
-- [static let bangla: NSCalendar.Identifier](nscalendar/identifier/bangla.md)
-- [static let buddhist: NSCalendar.Identifier](nscalendar/identifier/buddhist.md)
+- [static let bangla: NSCalendar.Identifier](./identifier/bangla.md)
+- [static let buddhist: NSCalendar.Identifier](./identifier/buddhist.md)
   Identifier for the Buddhist calendar.
-- [static let chinese: NSCalendar.Identifier](nscalendar/identifier/chinese.md)
+- [static let chinese: NSCalendar.Identifier](./identifier/chinese.md)
   Identifier for the Chinese calendar.
-- [static let coptic: NSCalendar.Identifier](nscalendar/identifier/coptic.md)
+- [static let coptic: NSCalendar.Identifier](./identifier/coptic.md)
   Identifier for the Coptic calendar.
-- [static let dangi: NSCalendar.Identifier](nscalendar/identifier/dangi.md)
-- [static let ethiopicAmeteAlem: NSCalendar.Identifier](nscalendar/identifier/ethiopicametealem.md)
+- [static let dangi: NSCalendar.Identifier](./identifier/dangi.md)
+- [static let ethiopicAmeteAlem: NSCalendar.Identifier](./identifier/ethiopicametealem.md)
   Identifier for the Ethiopic (Amete Alem) calendar.
-- [static let ethiopicAmeteMihret: NSCalendar.Identifier](nscalendar/identifier/ethiopicametemihret.md)
+- [static let ethiopicAmeteMihret: NSCalendar.Identifier](./identifier/ethiopicametemihret.md)
   Identifier for the Ethiopic (Amete Mihret) calendar.
-- [static let gujarati: NSCalendar.Identifier](nscalendar/identifier/gujarati.md)
-- [static let hebrew: NSCalendar.Identifier](nscalendar/identifier/hebrew.md)
+- [static let gujarati: NSCalendar.Identifier](./identifier/gujarati.md)
+- [static let hebrew: NSCalendar.Identifier](./identifier/hebrew.md)
   Identifier for the Hebrew calendar.
-- [static let indian: NSCalendar.Identifier](nscalendar/identifier/indian.md)
+- [static let indian: NSCalendar.Identifier](./identifier/indian.md)
   Identifier for the Indian calendar.
-- [static let islamic: NSCalendar.Identifier](nscalendar/identifier/islamic.md)
+- [static let islamic: NSCalendar.Identifier](./identifier/islamic.md)
   Identifier for the Islamic calendar.
-- [static let islamicCivil: NSCalendar.Identifier](nscalendar/identifier/islamiccivil.md)
+- [static let islamicCivil: NSCalendar.Identifier](./identifier/islamiccivil.md)
   Identifier for the Islamic civil calendar.
-- [static let islamicTabular: NSCalendar.Identifier](nscalendar/identifier/islamictabular.md)
+- [static let islamicTabular: NSCalendar.Identifier](./identifier/islamictabular.md)
   Identifier for a tabular Islamic calendar.
-- [static let islamicUmmAlQura: NSCalendar.Identifier](nscalendar/identifier/islamicummalqura.md)
+- [static let islamicUmmAlQura: NSCalendar.Identifier](./identifier/islamicummalqura.md)
   Identifier for the Islamic Umm al-Qura calendar.
-- [static let japanese: NSCalendar.Identifier](nscalendar/identifier/japanese.md)
+- [static let japanese: NSCalendar.Identifier](./identifier/japanese.md)
   Identifier for the Japanese calendar.
-- [static let kannada: NSCalendar.Identifier](nscalendar/identifier/kannada.md)
-- [static let malayalam: NSCalendar.Identifier](nscalendar/identifier/malayalam.md)
-- [static let marathi: NSCalendar.Identifier](nscalendar/identifier/marathi.md)
-- [static let odia: NSCalendar.Identifier](nscalendar/identifier/odia.md)
-- [static let persian: NSCalendar.Identifier](nscalendar/identifier/persian.md)
+- [static let kannada: NSCalendar.Identifier](./identifier/kannada.md)
+- [static let malayalam: NSCalendar.Identifier](./identifier/malayalam.md)
+- [static let marathi: NSCalendar.Identifier](./identifier/marathi.md)
+- [static let odia: NSCalendar.Identifier](./identifier/odia.md)
+- [static let persian: NSCalendar.Identifier](./identifier/persian.md)
   Identifier for the Persian calendar.
-- [static let republicOfChina: NSCalendar.Identifier](nscalendar/identifier/republicofchina.md)
+- [static let republicOfChina: NSCalendar.Identifier](./identifier/republicofchina.md)
   Identifier for the Republic of China calendar.
-- [static let tamil: NSCalendar.Identifier](nscalendar/identifier/tamil.md)
-- [static let telugu: NSCalendar.Identifier](nscalendar/identifier/telugu.md)
-- [static let vietnamese: NSCalendar.Identifier](nscalendar/identifier/vietnamese.md)
-- [static let vikram: NSCalendar.Identifier](nscalendar/identifier/vikram.md)
+- [static let tamil: NSCalendar.Identifier](./identifier/tamil.md)
+- [static let telugu: NSCalendar.Identifier](./identifier/telugu.md)
+- [static let vietnamese: NSCalendar.Identifier](./identifier/vietnamese.md)
+- [static let vikram: NSCalendar.Identifier](./identifier/vikram.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init?(identifier: NSCalendar.Identifier)](nscalendar/init(identifier:).md)
+### Creating and Initializing Calendars
+- [init?(identifier: NSCalendar.Identifier)](./init%28identifier%29.md)
   Creates a new calendar specified by a given identifier.
-- [init?(calendarIdentifier: NSCalendar.Identifier)](nscalendar/init(calendaridentifier:).md)
+- [init?(calendarIdentifier: NSCalendar.Identifier)](./init%28calendaridentifier%29.md)
   Initializes a calendar according to a given identifier.
 
 

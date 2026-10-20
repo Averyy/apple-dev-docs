@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new, empty share request access operation.
 
@@ -18,6 +19,10 @@ Creates a new, empty share request access operation.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

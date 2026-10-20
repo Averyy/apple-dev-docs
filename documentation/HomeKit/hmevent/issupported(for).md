@@ -1,7 +1,8 @@
 # isSupported(for:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A Boolean value indicating whether the event can be added to an event trigger on the specified home.
 
@@ -19,9 +20,14 @@ A Boolean value indicating whether the event can be added to an event trigger on
 class func isSupported(for home: HMHome) -> Bool
 ```
 
+```objc
++ (BOOL) isSupportedForHome:(HMHome *) home;
+```
+
 ## See Also
 
-- [var uniqueIdentifier: UUID](hmevent/uniqueidentifier.md)
+### Getting information about the event
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the event.
 
 

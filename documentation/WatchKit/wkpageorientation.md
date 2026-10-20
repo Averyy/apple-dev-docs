@@ -1,7 +1,8 @@
 # WKPageOrientation
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Scrolling orientations for page-based interfaces.
 
@@ -14,33 +15,38 @@ Scrolling orientations for page-based interfaces.
 enum WKPageOrientation
 ```
 
+```c
+enum WKPageOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [WKPageOrientation.horizontal](wkpageorientation/horizontal.md)
+- [WKPageOrientation.horizontal](./wkpageorientation/horizontal.md)
   A horizontal page-based scrolling orientation.
-- [WKPageOrientation.vertical](wkpageorientation/vertical.md)
+- [WKPageOrientation.vertical](./wkpageorientation/vertical.md)
   A vertical page-based scrolling orientation.
 ### Initializers
-- [init?(rawValue: Int)](wkpageorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkpageorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md)
+### Navigating a page-based interface
+- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](./wkinterfacecontroller/reloadrootpagecontrollers%28withnames,contexts,orientation,pageindex%29.md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface for the given scrolling orientation.
-- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](wkinterfacecontroller/reloadrootcontrollers(withnamesandcontexts:).md)
+- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](./wkinterfacecontroller/reloadrootcontrollers%28withnamesandcontexts%29.md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface.
-- [func becomeCurrentPage()](wkinterfacecontroller/becomecurrentpage.md)
+- [func becomeCurrentPage()](./wkinterfacecontroller/becomecurrentpage%28%29.md)
   Displays the interface controller in the page-based interface.
 
 

@@ -1,7 +1,8 @@
 # billingContact
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-selected billing address for this transaction.
 
@@ -19,19 +20,24 @@ The user-selected billing address for this transaction.
 var billingContact: PKContact? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) PKContact * billingContact;
+```
+
 #### Discussion
 
-Only the fields specified in the [`requiredBillingAddressFields`](pkpaymentrequest/requiredbillingaddressfields.md) property of the [`PKPaymentRequest`](pkpaymentrequest.md) object are populated. If no required billing fields were specified, the value of this property is `nil`.
+Only the fields specified in the [`requiredBillingAddressFields`](../pkpaymentrequest/requiredbillingaddressfields.md) property of the [`PKPaymentRequest`](../pkpaymentrequest.md) object are populated. If no required billing fields were specified, the value of this property is `nil`.
 
 ## See Also
 
-- [var shippingContact: PKContact?](pkpayment/shippingcontact.md)
+### Working with billing and shipping information
+- [var shippingContact: PKContact?](./shippingcontact.md)
   The user-selected shipping address for this transaction.
-- [var shippingMethod: PKShippingMethod?](pkpayment/shippingmethod.md)
+- [var shippingMethod: PKShippingMethod?](./shippingmethod.md)
   The user-selected shipping method for this transaction.
-- [class PKContact](pkcontact.md)
+- [class PKContact](../pkcontact.md)
   An object that encapsulates contact information needed for billing and shipping.
-- [class PKShippingMethod](pkshippingmethod.md)
+- [class PKShippingMethod](../pkshippingmethod.md)
   An object that defines a shipping method for delivering physical goods.
 
 

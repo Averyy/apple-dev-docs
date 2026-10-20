@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system tints the content using the system default value for its context.
 
@@ -14,13 +15,18 @@ The system tints the content using the system default value for its context.
 class var `default`: NSTintConfiguration { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSTintConfiguration * defaultTintConfiguration;
+```
+
 ## See Also
 
-- [class var monochrome: NSTintConfiguration](nstintconfiguration/monochrome.md)
+### Setting the Tint Color
+- [class var monochrome: NSTintConfiguration](./monochrome.md)
   The content always displays in monochrome.
-- [var baseTintColor: NSColor?](nstintconfiguration/basetintcolor.md)
+- [var baseTintColor: NSColor?](./basetintcolor.md)
   The color the system supplies when you create a tint configuration.
-- [var equivalentContentTintColor: NSColor?](nstintconfiguration/equivalentcontenttintcolor.md)
+- [var equivalentContentTintColor: NSColor?](./equivalentcontenttintcolor.md)
   A color object that matches the effective content tint.
 
 

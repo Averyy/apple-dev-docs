@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:

@@ -1,7 +1,8 @@
 # kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry
 
 **Framework**: IOBluetooth UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,19 @@
 var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int { get }
 ```
 
+```c
+kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry
+```
+
 #### Discussion
 
 - automatically start an inquiry when the panel is displayed. This has been deprecated in 10.5
 
 ## See Also
 
-- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
-- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](kiobluetoothservicebrowsercontrolleroptionsnone.md)
+### Constants
+- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](./kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](./kiobluetoothservicebrowsercontrolleroptionsnone.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # subscriberNumber()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the Bluetooth audio gateway send the subscriber number to the delegate.
 
@@ -14,13 +15,18 @@ Requests that the Bluetooth audio gateway send the subscriber number to the dele
 func subscriberNumber()
 ```
 
+```objc
+- (void) subscriberNumber;
+```
+
 #### Discussion
 
-The subscriber number is sent to the [`handsFree(_:subscriberNumber:)`](iobluetoothhandsfreedevicedelegate/handsfree(_:subscribernumber:).md) function of the delegate.
+The subscriber number is sent to the [`handsFree(_:subscriberNumber:)`](../iobluetoothhandsfreedevicedelegate/handsfree%28_,subscribernumber%29.md) function of the delegate.
 
 ## See Also
 
-- [func currentCallList()](iobluetoothhandsfreedevice/currentcalllist.md)
+### Requesting Status Information
+- [func currentCallList()](./currentcalllist%28%29.md)
   Requests that the Bluetooth audio gateway send the delegate a list of calls that are active, on hold, or being set up.
 
 

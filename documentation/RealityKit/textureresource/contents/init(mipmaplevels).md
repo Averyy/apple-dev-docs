@@ -1,7 +1,8 @@
 # init(mipmapLevels:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a texture contents object from an array of mipmaps.
 

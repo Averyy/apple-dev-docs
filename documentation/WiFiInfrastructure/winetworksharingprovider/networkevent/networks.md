@@ -1,7 +1,8 @@
 # networks
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest network data, containing a list of all networks shared to the device.
 
@@ -22,7 +23,8 @@ The list will be filtered to networks matching the provided predicate, with a pr
 
 ## See Also
 
-- [let networksUpdateCounter: UInt64](winetworksharingprovider/networkevent/networksupdatecounter.md)
+### Getting network data
+- [let networksUpdateCounter: UInt64](./networksupdatecounter.md)
   A counter that increments whenever the network data changes.
 
 

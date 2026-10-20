@@ -1,16 +1,19 @@
 # AVPlayerItemPlaybackStalled
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 6.0+
-- macOS 10.9+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 6.0+ - Deprecated in 27.0
+- iPadOS 6.0+ - Deprecated in 27.0
+- Mac Catalyst 6.0+ - Deprecated in 27.0
+- macOS 10.9+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVPlayerItem.playbackStalledNotification instead.
 
 ## Declaration
 

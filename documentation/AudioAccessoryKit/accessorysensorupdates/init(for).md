@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sensor update sequence for the specified accessory.
 

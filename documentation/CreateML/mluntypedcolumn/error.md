@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error present when the column is invalid.
 
@@ -21,7 +22,8 @@ var error: (any Error)? { get }
 
 ## See Also
 
-- [var isValid: Bool](mluntypedcolumn/isvalid.md)
+### Handling untyped column errors
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the column is valid.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from the given integer.
 
@@ -19,6 +20,8 @@ Creates a new instance from the given integer.
 ```swift
 init<T>(_ source: T) where T : BinaryInteger
 ```
+
+Available when `Self` conforms to `FixedWidthInteger`.
 
 #### Discussion
 
@@ -40,15 +43,16 @@ let z = Int8(x * 10)
 
 ## See Also
 
-- [init?<T>(exactly: T)](int/init(exactly:)-b1dy.md)
-- [init<Other>(clamping: Other)](int/init(clamping:).md)
+### Converting Integers
+- [init?<T>(exactly: T)](./init%28exactly%29-b1dy.md)
+- [init<Other>(clamping: Other)](./init%28clamping%29.md)
   Creates a new instance with the representable value that’s closest to the given integer.
-- [init<T>(truncatingIfNeeded: T)](int/init(truncatingifneeded:).md)
+- [init<T>(truncatingIfNeeded: T)](./init%28truncatingifneeded%29.md)
   Creates a new instance from the bit pattern of the given instance by sign-extending or truncating to fit this type.
-- [init(bitPattern: UInt)](int/init(bitpattern:)-72037.md)
+- [init(bitPattern: UInt)](./init%28bitpattern%29-72037.md)
   Creates a new instance with the same memory representation as the given value.
-- [init?(exactly: NSNumber)](int/init(exactly:)-177ax.md)
-- [init(truncating: NSNumber)](int/init(truncating:).md)
+- [init?(exactly: NSNumber)](./init%28exactly%29-177ax.md)
+- [init(truncating: NSNumber)](./init%28truncating%29.md)
 
 
 ---

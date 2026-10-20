@@ -1,7 +1,8 @@
 # mediaIdentifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the media object.
 
@@ -14,6 +15,10 @@ A unique identifier for the media object.
 
 ```swift
 var mediaIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * mediaIdentifier;
 ```
 
 

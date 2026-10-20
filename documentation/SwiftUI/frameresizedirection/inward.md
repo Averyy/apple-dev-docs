@@ -1,7 +1,8 @@
 # FrameResizeDirection.inward
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the frame can be resized inwards to be smaller.
 

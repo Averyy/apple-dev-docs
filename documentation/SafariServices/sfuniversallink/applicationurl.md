@@ -1,7 +1,8 @@
 # applicationURL
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to the app that can open this universal link.
 
@@ -14,15 +15,20 @@ The URL to the app that can open this universal link.
 var applicationURL: URL { get }
 ```
 
+```objc
+@property (readonly) NSURL * applicationURL;
+```
+
 #### Discussion
 
-The URL represents a location on the file system. You can retrieve additional information about this app using [`resourceValues(forKeys:)`](https://developer.apple.com/documentation/foundation/nsurl/resourcevalues(forkeys:)).
+The URL represents a location on the file system. You can retrieve additional information about this app using [`resourceValues(forKeys:)`](../../Foundation/nsurl/resourcevalues%28forkeys%29.md).
 
 ## See Also
 
-- [var isEnabled: Bool](sfuniversallink/isenabled.md)
+### Configuring Universal Links
+- [var isEnabled: Bool](./isenabled.md)
   A flag that indicates whether the universal link is enabled.
-- [var webpageURL: URL](sfuniversallink/webpageurl.md)
+- [var webpageURL: URL](./webpageurl.md)
   The URL specified when initializing the receiver.
 
 

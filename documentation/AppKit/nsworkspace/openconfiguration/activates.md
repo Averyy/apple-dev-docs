@@ -1,7 +1,8 @@
 # activates
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the system activates the app and brings it to the foreground.
 
@@ -14,21 +15,26 @@ A Boolean value indicating whether the system activates the app and brings it to
 var activates: Bool { get set }
 ```
 
+```objc
+@property BOOL activates;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the system to bring the app to the foreground.
+The default value of this property is [`true`](../../../Swift/true.md), which causes the system to bring the app to the foreground.
 
 ## See Also
 
-- [var addsToRecentItems: Bool](nsworkspace/openconfiguration/addstorecentitems.md)
+### Specifying app-related behaviors
+- [var addsToRecentItems: Bool](./addstorecentitems.md)
   A Boolean value indicating whether to add the app or documents to the Recent Items menu.
-- [var allowsRunningApplicationSubstitution: Bool](nsworkspace/openconfiguration/allowsrunningapplicationsubstitution.md)
+- [var allowsRunningApplicationSubstitution: Bool](./allowsrunningapplicationsubstitution.md)
   A Boolean value that indicates whether to use a running instance of an application even if it’s at a different URL.
-- [var createsNewApplicationInstance: Bool](nsworkspace/openconfiguration/createsnewapplicationinstance.md)
+- [var createsNewApplicationInstance: Bool](./createsnewapplicationinstance.md)
   A Boolean value indicating whether you want the system to launch a new instance of the app.
-- [var hides: Bool](nsworkspace/openconfiguration/hides.md)
+- [var hides: Bool](./hides.md)
   A Boolean value indicating whether you want the app to hide itself after it launches.
-- [var hidesOthers: Bool](nsworkspace/openconfiguration/hidesothers.md)
+- [var hidesOthers: Bool](./hidesothers.md)
   A Boolean value indicating whether you want to hide all apps except the one that launched.
 
 

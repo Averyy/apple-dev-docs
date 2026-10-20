@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty (invalid) spec handle.
 

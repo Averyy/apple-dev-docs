@@ -1,14 +1,15 @@
 # kIOUserClientMethodArgumentsCurrentVersion
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUserClientMethodArgumentsCurrentVersion = IO_USER_CLIENT_METHOD_ARGUMENTS_CURRENT_VERSION
 ```
 

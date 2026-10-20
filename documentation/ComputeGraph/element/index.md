@@ -1,13 +1,14 @@
 # element::index
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the index of the current element.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The zero-based index of the element
 
 Use this function to get the element’s position in the element buffer, which can be useful for creating unique variations or patterns.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/element__index.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__index.svg)
 
 
 ---

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default configuration options that Compositor Services uses to configure the layer.
 
@@ -15,6 +16,8 @@ The default configuration options that Compositor Services uses to configure the
 nonisolated
 static var `default`: DefaultCompositorLayerConfiguration { get }
 ```
+
+Available when `Self` is `DefaultCompositorLayerConfiguration`.
 
 
 ---

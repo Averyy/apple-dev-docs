@@ -1,7 +1,8 @@
 # reducedPrecisionFastMath
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Across the executable allow reduced precision fast math optimizations.
 
@@ -17,6 +18,10 @@ Across the executable allow reduced precision fast math optimizations.
 
 ```swift
 var reducedPrecisionFastMath: MPSGraphReducedPrecisionFastMath { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSGraphReducedPrecisionFastMath reducedPrecisionFastMath;
 ```
 
 

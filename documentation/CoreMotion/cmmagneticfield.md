@@ -1,7 +1,8 @@
 # CMMagneticField
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure containing 3-axis magnetometer data
 
@@ -19,28 +20,33 @@ A structure containing 3-axis magnetometer data
 struct CMMagneticField
 ```
 
+```c
+typedef struct { ... } CMMagneticField;
+```
+
 ## Topics
 
 ### Getting the Field Values
-- [var x: Double](cmmagneticfield/x.md)
+- [var x: Double](./cmmagneticfield/x.md)
   X-axis magnetic field in microteslas.
-- [var y: Double](cmmagneticfield/y.md)
+- [var y: Double](./cmmagneticfield/y.md)
   Y-axis magnetic field in microteslas.
-- [var z: Double](cmmagneticfield/z.md)
+- [var z: Double](./cmmagneticfield/z.md)
   Z-axis magnetic field in microteslas.
 ### Initializers
-- [init()](cmmagneticfield/init.md)
-- [init(x: Double, y: Double, z: Double)](cmmagneticfield/init(x:y:z:).md)
+- [init()](./cmmagneticfield/init%28%29.md)
+- [init(x: Double, y: Double, z: Double)](./cmmagneticfield/init%28x,y,z%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var magneticField: CMMagneticField](cmmagnetometerdata/magneticfield.md)
+### Getting the Field Strength
+- [var magneticField: CMMagneticField](./cmmagnetometerdata/magneticfield.md)
   Returns the magnetic field measured by the magnetometer.
 
 

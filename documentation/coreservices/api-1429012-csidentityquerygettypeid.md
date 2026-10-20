@@ -1,7 +1,8 @@
 # CSIdentityQueryGetTypeID()
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func CSIdentityQueryGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID CSIdentityQueryGetTypeID(void);
 ```
 
 

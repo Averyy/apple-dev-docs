@@ -1,7 +1,8 @@
 # CXAnswerCallAction
 
 **Framework**: CallKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of the act of answering an incoming call.
 
@@ -18,38 +19,43 @@ An encapsulation of the act of answering an incoming call.
 class CXAnswerCallAction
 ```
 
+```objc
+@interface CXAnswerCallAction : CXCallAction
+```
+
 #### Overview
 
-[`CXAnswerCallAction`](cxanswercallaction.md) is a concrete subclass of [`CXCallAction`](cxcallaction.md).
+[`CXAnswerCallAction`](./cxanswercallaction.md) is a concrete subclass of [`CXCallAction`](./cxcallaction.md).
 
-When an incoming call is allowed by the system and approved by the user, the provider sends [`provider(_:perform:)`](cxproviderdelegate/provider(_:perform:)-h4in.md) to its delegate. The provider’s delegate calls the [`fulfill()`](cxaction/fulfill().md) method to indicate that the action was successfully performed. To indicate that the call connected at a time other than the current time, you can instead call the [`fulfill(withDateConnected:)`](cxanswercallaction/fulfill(withdateconnected:).md).
+When an incoming call is allowed by the system and approved by the user, the provider sends [`provider(_:perform:)`](./cxproviderdelegate/provider%28_,perform%29-h4in.md) to its delegate. The provider’s delegate calls the [`fulfill()`](./cxaction/fulfill%28%29.md) method to indicate that the action was successfully performed. To indicate that the call connected at a time other than the current time, you can instead call the [`fulfill(withDateConnected:)`](./cxanswercallaction/fulfill%28withdateconnected%29.md).
 
 ## Topics
 
 ### Completing Actions
-- [func fulfill(withDateConnected: Date)](cxanswercallaction/fulfill(withdateconnected:).md)
+- [func fulfill(withDateConnected: Date)](./cxanswercallaction/fulfill%28withdateconnected%29.md)
   Reports the successful execution of the action at the specified time.
 
 ## Relationships
 
 ### Inherits From
-- [CXCallAction](cxcallaction.md)
+- [CXCallAction](./cxcallaction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Responding to VoIP Notifications from PushKit](../pushkit/responding-to-voip-notifications-from-pushkit.md)
+### Incoming calls
+- [Responding to VoIP Notifications from PushKit](../PushKit/responding-to-voip-notifications-from-pushkit.md)
   Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
-- [class CXCallUpdate](cxcallupdate.md)
+- [class CXCallUpdate](./cxcallupdate.md)
   An encapsulation of new and changed information about a call.
 
 

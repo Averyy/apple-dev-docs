@@ -1,7 +1,8 @@
 # CharacterSet
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of Unicode character values for use in search operations.
 
@@ -29,157 +30,158 @@ This type provides “copy-on-write” behavior, and is also bridged to the Obje
 ## Topics
 
 ### Getting Standard Character Sets
-- [static var alphanumerics: CharacterSet](characterset/alphanumerics.md)
+- [static var alphanumerics: CharacterSet](./characterset/alphanumerics.md)
   Returns a character set containing the characters in Unicode General Categories L*, M*, and N*.
-- [static var capitalizedLetters: CharacterSet](characterset/capitalizedletters.md)
+- [static var capitalizedLetters: CharacterSet](./characterset/capitalizedletters.md)
   Returns a character set containing the characters in Unicode General Category Lt.
-- [static var controlCharacters: CharacterSet](characterset/controlcharacters.md)
+- [static var controlCharacters: CharacterSet](./characterset/controlcharacters.md)
   Returns a character set containing the characters in Unicode General Category Cc and Cf.
-- [static var decimalDigits: CharacterSet](characterset/decimaldigits.md)
+- [static var decimalDigits: CharacterSet](./characterset/decimaldigits.md)
   Returns a character set containing the characters in the category of Decimal Numbers.
-- [static var decomposables: CharacterSet](characterset/decomposables.md)
+- [static var decomposables: CharacterSet](./characterset/decomposables.md)
   Returns a character set containing individual Unicode characters that can also be represented as composed character sequences (such as for letters with accents), by the definition of “standard decomposition” in version 3.2 of the Unicode character encoding standard.
-- [static var illegalCharacters: CharacterSet](characterset/illegalcharacters.md)
+- [static var illegalCharacters: CharacterSet](./characterset/illegalcharacters.md)
   Returns a character set containing values in the category of Non-Characters or that have not yet been defined in version 3.2 of the Unicode standard.
-- [static var letters: CharacterSet](characterset/letters.md)
+- [static var letters: CharacterSet](./characterset/letters.md)
   Returns a character set containing the characters in Unicode General Category L* & M*.
-- [static var lowercaseLetters: CharacterSet](characterset/lowercaseletters.md)
+- [static var lowercaseLetters: CharacterSet](./characterset/lowercaseletters.md)
   Returns a character set containing the characters in Unicode General Category Ll.
-- [static var newlines: CharacterSet](characterset/newlines.md)
+- [static var newlines: CharacterSet](./characterset/newlines.md)
   Returns a character set containing the newline characters (`U+000A ~ U+000D`, `U+0085`, `U+2028`, and `U+2029`).
-- [static var nonBaseCharacters: CharacterSet](characterset/nonbasecharacters.md)
+- [static var nonBaseCharacters: CharacterSet](./characterset/nonbasecharacters.md)
   Returns a character set containing the characters in Unicode General Category M*.
-- [static var punctuationCharacters: CharacterSet](characterset/punctuationcharacters.md)
+- [static var punctuationCharacters: CharacterSet](./characterset/punctuationcharacters.md)
   Returns a character set containing the characters in Unicode General Category P*.
-- [static var symbols: CharacterSet](characterset/symbols.md)
+- [static var symbols: CharacterSet](./characterset/symbols.md)
   Returns a character set containing the characters in Unicode General Category S*.
-- [static var uppercaseLetters: CharacterSet](characterset/uppercaseletters.md)
+- [static var uppercaseLetters: CharacterSet](./characterset/uppercaseletters.md)
   Returns a character set containing the characters in Unicode General Category Lu and Lt.
-- [static var whitespaces: CharacterSet](characterset/whitespaces.md)
+- [static var whitespaces: CharacterSet](./characterset/whitespaces.md)
   Returns a character set containing the characters in Unicode General Category Zs and `CHARACTER TABULATION (U+0009)`.
-- [static var whitespacesAndNewlines: CharacterSet](characterset/whitespacesandnewlines.md)
+- [static var whitespacesAndNewlines: CharacterSet](./characterset/whitespacesandnewlines.md)
   Returns a character set containing characters in Unicode General Category Z*, `U+000A ~ U+000D`, and `U+0085`.
 ### Getting Character Sets for URL Encoding
-- [static var urlFragmentAllowed: CharacterSet](characterset/urlfragmentallowed.md)
+- [static var urlFragmentAllowed: CharacterSet](./characterset/urlfragmentallowed.md)
   Returns the character set for characters allowed in a fragment URL component.
-- [static var urlHostAllowed: CharacterSet](characterset/urlhostallowed.md)
+- [static var urlHostAllowed: CharacterSet](./characterset/urlhostallowed.md)
   Returns the character set for characters allowed in a host URL subcomponent.
-- [static var urlPasswordAllowed: CharacterSet](characterset/urlpasswordallowed.md)
+- [static var urlPasswordAllowed: CharacterSet](./characterset/urlpasswordallowed.md)
   Returns the character set for characters allowed in a password URL subcomponent.
-- [static var urlPathAllowed: CharacterSet](characterset/urlpathallowed.md)
+- [static var urlPathAllowed: CharacterSet](./characterset/urlpathallowed.md)
   Returns the character set for characters allowed in a path URL component.
-- [static var urlQueryAllowed: CharacterSet](characterset/urlqueryallowed.md)
+- [static var urlQueryAllowed: CharacterSet](./characterset/urlqueryallowed.md)
   Returns the character set for characters allowed in a query URL component.
-- [static var urlUserAllowed: CharacterSet](characterset/urluserallowed.md)
+- [static var urlUserAllowed: CharacterSet](./characterset/urluserallowed.md)
   Returns the character set for characters allowed in a user URL subcomponent.
 ### Creating a Custom Character Set
-- [init()](characterset/init.md)
+- [init()](./characterset/init%28%29.md)
   Initialize an empty instance.
 ### Creating and Managing Bitmap Representations
-- [var bitmapRepresentation: Data](characterset/bitmaprepresentation.md)
+- [var bitmapRepresentation: Data](./characterset/bitmaprepresentation.md)
   Returns a representation of the `CharacterSet` in binary format.
 ### Inverting a Character Set
-- [func invert()](characterset/invert.md)
+- [func invert()](./characterset/invert%28%29.md)
   Invert the contents of the `CharacterSet`.
-- [var inverted: CharacterSet](characterset/inverted.md)
+- [var inverted: CharacterSet](./characterset/inverted.md)
   Returns an inverted copy of the receiver.
 ### Combining Character Sets
-- [func formIntersection(CharacterSet)](characterset/formintersection(_:).md)
+- [func formIntersection(CharacterSet)](./characterset/formintersection%28_%29.md)
   Sets the value to an intersection of the `CharacterSet` with another `CharacterSet`.
-- [func formSymmetricDifference(CharacterSet)](characterset/formsymmetricdifference(_:).md)
+- [func formSymmetricDifference(CharacterSet)](./characterset/formsymmetricdifference%28_%29.md)
   Sets the value to an exclusive or of the `CharacterSet` with another `CharacterSet`.
-- [func formUnion(CharacterSet)](characterset/formunion(_:).md)
+- [func formUnion(CharacterSet)](./characterset/formunion%28_%29.md)
   Sets the value to a union of the `CharacterSet` with another `CharacterSet`.
-- [func hasMember(inPlane: UInt8) -> Bool](characterset/hasmember(inplane:).md)
+- [func hasMember(inPlane: UInt8) -> Bool](./characterset/hasmember%28inplane%29.md)
   Returns true if the `CharacterSet` has a member in the specified plane.
-- [func insert(charactersIn: String)](characterset/insert(charactersin:)-2syuj.md)
+- [func insert(charactersIn: String)](./characterset/insert%28charactersin%29-2syuj.md)
   Insert the values from the specified string into the `CharacterSet`.
-- [func intersection(CharacterSet) -> CharacterSet](characterset/intersection(_:).md)
+- [func intersection(CharacterSet) -> CharacterSet](./characterset/intersection%28_%29.md)
   Returns an intersection of the `CharacterSet` with another `CharacterSet`.
-- [func invert()](characterset/invert.md)
+- [func invert()](./characterset/invert%28%29.md)
   Invert the contents of the `CharacterSet`.
-- [func isSuperset(of: CharacterSet) -> Bool](characterset/issuperset(of:).md)
+- [func isSuperset(of: CharacterSet) -> Bool](./characterset/issuperset%28of%29.md)
   Returns true if `self` is a superset of `other`.
-- [func remove(charactersIn: String)](characterset/remove(charactersin:)-3sayw.md)
+- [func remove(charactersIn: String)](./characterset/remove%28charactersin%29-3sayw.md)
   Remove the values from the specified string from the `CharacterSet`.
-- [func subtracting(CharacterSet) -> CharacterSet](characterset/subtracting(_:).md)
+- [func subtracting(CharacterSet) -> CharacterSet](./characterset/subtracting%28_%29.md)
   Returns a `CharacterSet` created by removing elements in `other` from `self`.
-- [func symmetricDifference(CharacterSet) -> CharacterSet](characterset/symmetricdifference(_:).md)
+- [func symmetricDifference(CharacterSet) -> CharacterSet](./characterset/symmetricdifference%28_%29.md)
   Returns an exclusive or of the `CharacterSet` with another `CharacterSet`.
-- [func union(CharacterSet) -> CharacterSet](characterset/union(_:).md)
+- [func union(CharacterSet) -> CharacterSet](./characterset/union%28_%29.md)
   Returns a union of the `CharacterSet` with another `CharacterSet`.
 ### Adding Characters
-- [func insert(charactersIn: String)](characterset/insert(charactersin:)-2syuj.md)
+- [func insert(charactersIn: String)](./characterset/insert%28charactersin%29-2syuj.md)
   Insert the values from the specified string into the `CharacterSet`.
 ### Removing Characters
-- [func remove(charactersIn: String)](characterset/remove(charactersin:)-3sayw.md)
+- [func remove(charactersIn: String)](./characterset/remove%28charactersin%29-3sayw.md)
   Remove the values from the specified string from the `CharacterSet`.
-- [func subtracting(CharacterSet) -> CharacterSet](characterset/subtracting(_:).md)
+- [func subtracting(CharacterSet) -> CharacterSet](./characterset/subtracting%28_%29.md)
   Returns a `CharacterSet` created by removing elements in `other` from `self`.
 ### Testing Set Membership
-- [func hasMember(inPlane: UInt8) -> Bool](characterset/hasmember(inplane:).md)
+- [func hasMember(inPlane: UInt8) -> Bool](./characterset/hasmember%28inplane%29.md)
   Returns true if the `CharacterSet` has a member in the specified plane.
-- [func isSuperset(of: CharacterSet) -> Bool](characterset/issuperset(of:).md)
+- [func isSuperset(of: CharacterSet) -> Bool](./characterset/issuperset%28of%29.md)
   Returns true if `self` is a superset of `other`.
 ### Comparing Character Sets
-- [static func == (CharacterSet, CharacterSet) -> Bool](characterset/==(_:_:).md)
+- [static func == (CharacterSet, CharacterSet) -> Bool](./characterset/eqeq%28_,_%29.md)
   Returns true if the two `CharacterSet`s are equal.
 ### Using Reference Types
-- [class NSCharacterSet](nscharacterset.md)
+- [class NSCharacterSet](./nscharacterset.md)
   An object representing a fixed set of Unicode character values for use in search operations.
-- [class NSMutableCharacterSet](nsmutablecharacterset.md)
+- [class NSMutableCharacterSet](./nsmutablecharacterset.md)
   An object representing a mutable set of Unicode character values for use in search operations.
 ### Initializers
-- [init(bitmapRepresentation: Data)](characterset/init(bitmaprepresentation:).md)
+- [init(bitmapRepresentation: Data)](./characterset/init%28bitmaprepresentation%29.md)
   Initialize with a bitmap representation.
-- [init(charactersIn: ClosedRange<Unicode.Scalar>)](characterset/init(charactersin:)-87iva.md)
+- [init(charactersIn: ClosedRange<Unicode.Scalar>)](./characterset/init%28charactersin%29-87iva.md)
   Initialize with a closed range of integers.
-- [init(charactersIn: String)](characterset/init(charactersin:)-87m2b.md)
+- [init(charactersIn: String)](./characterset/init%28charactersin%29-87m2b.md)
   Initialize with the characters in the given string.
-- [init(charactersIn: Range<Unicode.Scalar>)](characterset/init(charactersin:)-8tcll.md)
+- [init(charactersIn: Range<Unicode.Scalar>)](./characterset/init%28charactersin%29-8tcll.md)
   Initialize with a range of integers.
-- [init?(contentsOfFile: String)](characterset/init(contentsoffile:).md)
+- [init?(contentsOfFile: String)](./characterset/init%28contentsoffile%29.md)
   Initialize with the contents of a file.
 ### Instance Methods
-- [func contains(Unicode.Scalar) -> Bool](characterset/contains(_:).md)
+- [func contains(Unicode.Scalar) -> Bool](./characterset/contains%28_%29.md)
   Test for membership of a particular `Unicode.Scalar` in the `CharacterSet`.
-- [func insert(Unicode.Scalar) -> (inserted: Bool, memberAfterInsert: Unicode.Scalar)](characterset/insert(_:).md)
+- [func insert(Unicode.Scalar) -> (inserted: Bool, memberAfterInsert: Unicode.Scalar)](./characterset/insert%28_%29.md)
   Insert a `Unicode.Scalar` representation of a character into the `CharacterSet`.
-- [func insert(charactersIn: Range<Unicode.Scalar>)](characterset/insert(charactersin:)-7urdg.md)
+- [func insert(charactersIn: Range<Unicode.Scalar>)](./characterset/insert%28charactersin%29-7urdg.md)
   Insert a range of integer values in the `CharacterSet`.
-- [func insert(charactersIn: ClosedRange<Unicode.Scalar>)](characterset/insert(charactersin:)-803uz.md)
+- [func insert(charactersIn: ClosedRange<Unicode.Scalar>)](./characterset/insert%28charactersin%29-803uz.md)
   Insert a closed range of integer values in the `CharacterSet`.
-- [func remove(Unicode.Scalar) -> Unicode.Scalar?](characterset/remove(_:).md)
+- [func remove(Unicode.Scalar) -> Unicode.Scalar?](./characterset/remove%28_%29.md)
   Remove a `Unicode.Scalar` representation of a character from the `CharacterSet`.
-- [func remove(charactersIn: ClosedRange<Unicode.Scalar>)](characterset/remove(charactersin:)-1kqte.md)
+- [func remove(charactersIn: ClosedRange<Unicode.Scalar>)](./characterset/remove%28charactersin%29-1kqte.md)
   Remove a closed range of integer values from the `CharacterSet`.
-- [func remove(charactersIn: Range<Unicode.Scalar>)](characterset/remove(charactersin:)-5td97.md)
+- [func remove(charactersIn: Range<Unicode.Scalar>)](./characterset/remove%28charactersin%29-5td97.md)
   Remove a range of integer values from the `CharacterSet`.
-- [func subtract(CharacterSet)](characterset/subtract(_:).md)
+- [func subtract(CharacterSet)](./characterset/subtract%28_%29.md)
   Sets the value to a `CharacterSet` created by removing elements in `other` from `self`.
-- [func update(with: Unicode.Scalar) -> Unicode.Scalar?](characterset/update(with:).md)
+- [func update(with: Unicode.Scalar) -> Unicode.Scalar?](./characterset/update%28with%29.md)
   Insert a `Unicode.Scalar` representation of a character into the `CharacterSet`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [ReferenceConvertible](./referenceconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias UnicodeScalar](../swift/unicodescalar.md)
+### Characters
+- [typealias UnicodeScalar](../Swift/unicodescalar.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # logo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The team logo or, if no logo is available, the initials/abbreviation for this team. See @c CPNowPlayingSportsTeamLogo.
 
@@ -15,6 +16,10 @@ The team logo or, if no logo is available, the initials/abbreviation for this te
 ```swift
 @NSCopying
 var logo: CPNowPlayingSportsTeamLogo { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CPNowPlayingSportsTeamLogo * logo;
 ```
 
 

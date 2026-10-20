@@ -1,14 +1,15 @@
 # dyld_kernel_image_info_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct dyld_kernel_image_info {
     ...
 } dyld_kernel_image_info_t;
@@ -17,10 +18,10 @@ typedef struct dyld_kernel_image_info {
 ## Topics
 
 ### Instance Properties
-- [fsid](dyld_kernel_image_info_t/1645871-fsid.md)
-- [fsobjid](dyld_kernel_image_info_t/1645873-fsobjid.md)
-- [load_addr](dyld_kernel_image_info_t/1645870-load_addr.md)
-- [uuid](dyld_kernel_image_info_t/1645882-uuid.md)
+- [fsid](./dyld_kernel_image_info_t/api-1645871-fsid.md)
+- [fsobjid](./dyld_kernel_image_info_t/api-1645873-fsobjid.md)
+- [load_addr](./dyld_kernel_image_info_t/api-1645870-load_addr.md)
+- [uuid](./dyld_kernel_image_info_t/api-1645882-uuid.md)
 
 
 ---

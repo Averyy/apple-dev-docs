@@ -1,7 +1,8 @@
 # init(absoluteDate:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an alarm with an absolute date.
 
@@ -19,6 +20,10 @@ Creates and returns an alarm with an absolute date.
 init(absoluteDate date: Date)
 ```
 
+```objc
++ (EKAlarm *) alarmWithAbsoluteDate:(NSDate *) date;
+```
+
 #### Return Value
 
 The created alarm.
@@ -29,8 +34,10 @@ The created alarm.
 
 ## See Also
 
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
-- [init(relativeOffset: TimeInterval)](ekalarm/init(relativeoffset:).md)
+### Related Documentation
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Creating an Alarm
+- [init(relativeOffset: TimeInterval)](./init%28relativeoffset%29.md)
   Creates and returns an alarm with a relative offset.
 
 

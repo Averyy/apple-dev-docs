@@ -1,7 +1,8 @@
 # focusGroupIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the focus group that the environment belongs to.
 
@@ -15,6 +16,10 @@ The identifier of the focus group that the environment belongs to.
 
 ```swift
 optional var focusGroupIdentifier: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * focusGroupIdentifier;
 ```
 
 

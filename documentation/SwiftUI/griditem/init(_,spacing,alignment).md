@@ -1,7 +1,8 @@
 # init(_:spacing:alignment:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a grid item with the specified size, spacing, and alignment.
 

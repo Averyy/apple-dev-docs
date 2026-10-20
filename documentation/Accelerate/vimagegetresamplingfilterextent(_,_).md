@@ -1,7 +1,8 @@
 # vImageGetResamplingFilterExtent(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the maximum sampling radius for a resampling filter.
 
@@ -20,13 +21,17 @@ Returns the maximum sampling radius for a resampling filter.
 func vImageGetResamplingFilterExtent(_ filter: ResamplingFilter, _ flags: vImage_Flags) -> vImagePixelCount
 ```
 
+```c
+vImagePixelCount vImageGetResamplingFilterExtent(ResamplingFilter filter, vImage_Flags flags);
+```
+
 #### Return Value
 
 The maximum sampling radius for the specified resampling filter.
 
 #### Discussion
 
-This function returns the maximum distance from any pixel that the filter will look, either horizontally or vertically, depending on whether a horizontal or vertical shear is used.  It’s analogous to `kernelWidth` in [`vImageNewResamplingFilterForFunctionUsingBuffer(_:_:_:_:_:_:)`](vimagenewresamplingfilterforfunctionusingbuffer(_:_:_:_:_:_:).md), but might be slightly larger to allow for extra slope when dealing with subpixel coordinates during resampling.
+This function returns the maximum distance from any pixel that the filter will look, either horizontally or vertically, depending on whether a horizontal or vertical shear is used.  It’s analogous to `kernelWidth` in [`vImageNewResamplingFilterForFunctionUsingBuffer(_:_:_:_:_:_:)`](./vimagenewresamplingfilterforfunctionusingbuffer%28_,_,_,_,_,_%29.md), but might be slightly larger to allow for extra slope when dealing with subpixel coordinates during resampling.
 
 ## Parameters
 
@@ -35,13 +40,14 @@ This function returns the maximum distance from any pixel that the filter will l
 
 ## See Also
 
-- [func vImageNewResamplingFilter(Float, vImage_Flags) -> ResamplingFilter!](vimagenewresamplingfilter(_:_:).md)
+### Resampling filters
+- [func vImageNewResamplingFilter(Float, vImage_Flags) -> ResamplingFilter!](./vimagenewresamplingfilter%28_,_%29.md)
   Creates a resampling filter object that corresponds to the default kernel supplied by the vImage framework.
-- [func vImageNewResamplingFilterForFunctionUsingBuffer(ResamplingFilter, Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagenewresamplingfilterforfunctionusingbuffer(_:_:_:_:_:_:).md)
+- [func vImageNewResamplingFilterForFunctionUsingBuffer(ResamplingFilter, Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagenewresamplingfilterforfunctionusingbuffer%28_,_,_,_,_,_%29.md)
   Creates a resampling filter object that encapsulates a resampling kernel function that you provide.
-- [func vImageGetResamplingFilterSize(Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, vImage_Flags) -> Int](vimagegetresamplingfiltersize(_:_:_:_:).md)
+- [func vImageGetResamplingFilterSize(Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, vImage_Flags) -> Int](./vimagegetresamplingfiltersize%28_,_,_,_%29.md)
   Returns the minimum size, in bytes, for the buffer needed by the new resampling filter function.
-- [func vImageDestroyResamplingFilter(ResamplingFilter!)](vimagedestroyresamplingfilter(_:).md)
+- [func vImageDestroyResamplingFilter(ResamplingFilter!)](./vimagedestroyresamplingfilter%28_%29.md)
   Disposes of a resampling filter object.
 
 

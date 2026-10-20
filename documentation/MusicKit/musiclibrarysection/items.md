@@ -1,7 +1,8 @@
 # items
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of items that correspond to the children of the section.
 

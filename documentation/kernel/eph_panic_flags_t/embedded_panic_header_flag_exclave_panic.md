@@ -1,14 +1,15 @@
 # EMBEDDED_PANIC_HEADER_FLAG_EXCLAVE_PANIC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_PANIC_HEADER_FLAG_EXCLAVE_PANIC
 ```
 

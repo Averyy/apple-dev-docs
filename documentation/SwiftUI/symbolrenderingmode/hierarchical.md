@@ -1,7 +1,8 @@
 # hierarchical
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that renders symbols as multiple layers, with different opacities applied to the foreground style.
 
@@ -22,7 +23,7 @@ static let hierarchical: SymbolRenderingMode
 
 #### Discussion
 
-SwiftUI fills the first layer with the foreground style, and the others the secondary, and tertiary variants of the foreground style. You can specify these styles explicitly using the [`foregroundStyle(_:_:)`](view/foregroundstyle(_:_:).md) and [`foregroundStyle(_:_:_:)`](view/foregroundstyle(_:_:_:).md) modifiers. If you only specify a primary foreground style, SwiftUI automatically derives the others from that style. For example, you can render a filled exclamation mark triangle with purple as the tint color for the exclamation mark, and lower opacity purple for the triangle:
+SwiftUI fills the first layer with the foreground style, and the others the secondary, and tertiary variants of the foreground style. You can specify these styles explicitly using the [`foregroundStyle(_:_:)`](../view/foregroundstyle%28_,_%29.md) and [`foregroundStyle(_:_:_:)`](../view/foregroundstyle%28_,_,_%29.md) modifiers. If you only specify a primary foreground style, SwiftUI automatically derives the others from that style. For example, you can render a filled exclamation mark triangle with purple as the tint color for the exclamation mark, and lower opacity purple for the triangle:
 
 ```swift
 Image(systemName: "exclamationmark.triangle.fill")
@@ -32,11 +33,12 @@ Image(systemName: "exclamationmark.triangle.fill")
 
 ## See Also
 
-- [static let monochrome: SymbolRenderingMode](symbolrenderingmode/monochrome.md)
+### Getting symbol rendering modes
+- [static let monochrome: SymbolRenderingMode](./monochrome.md)
   A mode that renders symbols as a single layer filled with the foreground style.
-- [static let multicolor: SymbolRenderingMode](symbolrenderingmode/multicolor.md)
+- [static let multicolor: SymbolRenderingMode](./multicolor.md)
   A mode that renders symbols as multiple layers with their inherit styles.
-- [static let palette: SymbolRenderingMode](symbolrenderingmode/palette.md)
+- [static let palette: SymbolRenderingMode](./palette.md)
   A mode that renders symbols as multiple layers, with different styles applied to the layers.
 
 

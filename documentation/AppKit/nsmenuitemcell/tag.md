@@ -1,17 +1,22 @@
 # tag
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The integer tag of the selected menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var tag: Int { get set }
+```
+
+```objc
+@property NSInteger tag;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ If no item is selected, the value in this property is `0`.
 
 ## See Also
 
-- [var tag: Int](nsactioncell/tag.md)
+### Related Documentation
+- [var tag: Int](../nsactioncell/tag.md)
   Returns the receiver’s tag.
 
 

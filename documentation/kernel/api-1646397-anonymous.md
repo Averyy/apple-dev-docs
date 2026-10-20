@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOCatalogGetCacheMissList](1646397-anonymous/kiocataloggetcachemisslist.md)
-- [kIOCatalogGetContents](1646397-anonymous/kiocataloggetcontents.md)
-- [kIOCatalogGetModuleDemandList](1646397-anonymous/kiocataloggetmoduledemandlist.md)
-- [kIOCatalogGetROMMkextList](1646397-anonymous/kiocataloggetrommkextlist.md)
+- [kIOCatalogGetCacheMissList](./api-1646397-anonymous/kiocataloggetcachemisslist.md)
+- [kIOCatalogGetContents](./api-1646397-anonymous/kiocataloggetcontents.md)
+- [kIOCatalogGetModuleDemandList](./api-1646397-anonymous/kiocataloggetmoduledemandlist.md)
+- [kIOCatalogGetROMMkextList](./api-1646397-anonymous/kiocataloggetrommkextlist.md)
 
 
 ---

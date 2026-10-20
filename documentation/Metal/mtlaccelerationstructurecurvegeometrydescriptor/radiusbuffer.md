@@ -1,7 +1,8 @@
 # radiusBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains the curve radius for each control point.
 
@@ -19,9 +20,13 @@ A buffer that contains the curve radius for each control point.
 var radiusBuffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> radiusBuffer;
+```
+
 #### Discussion
 
-The buffer contains values that are greater than or equal to `0.0` in the format you configure with the [`radiusFormat`](mtlaccelerationstructurecurvegeometrydescriptor/radiusformat.md) property. This property needs to have a non-nil value when you build an acceleration structure.
+The buffer contains values that are greater than or equal to `0.0` in the format you configure with the [`radiusFormat`](./radiusformat.md) property. This property needs to have a non-nil value when you build an acceleration structure.
 
 
 ---

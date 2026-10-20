@@ -1,17 +1,20 @@
 # buffer
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A new copy of the audio data for this input.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- tvOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 27.0
+- iPadOS 26.0+ - Deprecated in 27.0
+- Mac Catalyst 26.0+ - Deprecated in 27.0
+- macOS 26.0+ - Deprecated in 27.0
+- tvOS 26.0+ - Deprecated in 27.0
+- visionOS 26.0+ - Deprecated in 27.0
+
+> **Deprecated**: use other AnalyzerInput properties to get information about audio
 
 ## Declaration
 
@@ -21,11 +24,12 @@ var buffer: AVAudioPCMBuffer { get }
 
 ## See Also
 
-- [let bufferStartTime: CMTime?](analyzerinput/bufferstarttime.md)
+### Inspecting an input element
+- [let bufferStartTime: CMTime?](./bufferstarttime.md)
   The time-code of this input.
-- [let bufferDuration: CMTime](analyzerinput/bufferduration.md)
+- [let bufferDuration: CMTime](./bufferduration.md)
   The length of this input.
-- [let bufferFormat: AVAudioFormat](analyzerinput/bufferformat.md)
+- [let bufferFormat: AVAudioFormat](./bufferformat.md)
   The audio format of this input.
 
 

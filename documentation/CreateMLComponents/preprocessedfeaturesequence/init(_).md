@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an asynchronous sequence of stored temporal features.
 

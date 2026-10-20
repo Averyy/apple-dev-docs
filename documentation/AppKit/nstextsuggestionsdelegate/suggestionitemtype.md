@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the `representedValue` property of the provided suggestion items (`NSSuggestionItem`).

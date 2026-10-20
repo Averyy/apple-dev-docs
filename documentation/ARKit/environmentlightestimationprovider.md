@@ -1,7 +1,8 @@
 # EnvironmentLightEstimationProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A source of live data about lighting information in the environment.
 
@@ -21,32 +22,33 @@ Use the anchor this provider returns to reflect lighting from a person’s surro
 ## Topics
 
 ### Creating an environment light estimation provider
-- [convenience init()](environmentlightestimationprovider/init.md)
+- [convenience init()](./environmentlightestimationprovider/init%28%29.md)
   Creates an environment light estimation provider.
 ### Inspecting the environment light estimation provider
-- [var anchorUpdates: AnchorUpdateSequence<EnvironmentProbeAnchor>](environmentlightestimationprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<EnvironmentProbeAnchor>](./environmentlightestimationprovider/anchorupdates.md)
   An asynchronous sequence of all anchor updates.
-- [var description: String](environmentlightestimationprovider/description.md)
+- [var description: String](./environmentlightestimationprovider/description.md)
   A textual representation of this environment light estimation provider.
-- [var state: DataProviderState](environmentlightestimationprovider/state.md)
+- [var state: DataProviderState](./environmentlightestimationprovider/state.md)
   The state of an environment light estimation provider.
 ### Type properties
-- [static var isSupported: Bool](environmentlightestimationprovider/issupported.md)
+- [static var isSupported: Bool](./environmentlightestimationprovider/issupported.md)
   A Boolean value that indicates whether a device supports the environment light estimation provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](environmentlightestimationprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./environmentlightestimationprovider/requiredauthorizations.md)
   The authorization types that an environment light estimation provider requires.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EnvironmentProbeAnchor](environmentprobeanchor.md)
+### Lighting estimation
+- [struct EnvironmentProbeAnchor](./environmentprobeanchor.md)
   An environment probe in the world.
 
 

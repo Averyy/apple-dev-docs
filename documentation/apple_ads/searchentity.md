@@ -1,22 +1,25 @@
 # SearchEntity
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The list of geolocations that includes the geoidentifier and entity type.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object SearchEntity
 ```
 
 #### Discussion
 
-Use the [`Search for Geolocations`](search-for-geolocations.md) endpoint to fetch a `displayName` for a geolocation.
+Use the [`Search for Geolocations`](./search-for-geolocations.md) endpoint to fetch a `displayName` for a geolocation.
 
 ##### Example Search Entity Object
 
@@ -37,14 +40,15 @@ Use the [`Search for Geolocations`](search-for-geolocations.md) endpoint to fetc
 - `countryOrRegion` (string): The geoterritory where you’re promoting your app in ISO alpha-2 country code format.
 - `displayName` (string): The geographic targeting location in the format of `locality`,`adminArea,countryOrRegion`.
 - `entity` (string): The type of geography for targeting locations. Search results are in the preferred language according to your organization.
-- `id` (string): The geographic location in the format of [`CountryOrRegion`](countryorregion.md)|`adminArea`|`locality`.
+- `id` (string): The geographic location in the format of [`CountryOrRegion`](./countryorregion.md)|`adminArea`|`locality`.
 - `locality` (string): A city or the equivalent according to its associated `adminArea`.
 
 ## See Also
 
-- [object GeoRequest](georequest.md)
+### Search Geolocation Request and Response Objects
+- [object GeoRequest](./georequest.md)
   The geosearch request object.
-- [object SearchEntityListResponse](searchentitylistresponse.md)
+- [object SearchEntityListResponse](./searchentitylistresponse.md)
   The response details of geosearch requests.
 
 

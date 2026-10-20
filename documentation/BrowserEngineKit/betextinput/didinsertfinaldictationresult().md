@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A Boolean value that indicates when the system inserts a dictation result.
@@ -16,6 +17,10 @@ A Boolean value that indicates when the system inserts a dictation result.
 
 ```swift
 func didInsertFinalDictationResult()
+```
+
+```objc
+- (void) didInsertFinalDictationResult;
 ```
 
 

@@ -1,7 +1,8 @@
 # QueryPaginationResult
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Pagination metadata returned in query responses, including page size, offset, and optional total count.
 
@@ -10,7 +11,7 @@ Pagination metadata returned in query responses, including page size, offset, an
 
 ## Declaration
 
-```swift
+```
 object QueryPaginationResult
 ```
 
@@ -38,15 +39,16 @@ A request with `pagination: { "offset": 150, "pageSize": 50 }` against a result 
 
 ## See Also
 
-- [object QueryRequest](queryrequest.md)
+### Query Objects
+- [object QueryRequest](./queryrequest.md)
   The standard request body used across all query endpoints, supporting filters, sorting, pagination, and field selection.
-- [object QueryFilter](queryfilter.md)
+- [object QueryFilter](./queryfilter.md)
   A single filter condition in a query request, specifying a field, comparison operator, and one or more values to match against.
-- [object QuerySort](querysort.md)
+- [object QuerySort](./querysort.md)
   A sort directive in a query request, specifying a field and direction.
-- [object QueryPagination](querypagination.md)
+- [object QueryPagination](./querypagination.md)
   Controls the page size and starting offset for query results.
-- [object QueryResponse](queryresponse.md)
+- [object QueryResponse](./queryresponse.md)
   Response wrapper for paginated query results.
 
 

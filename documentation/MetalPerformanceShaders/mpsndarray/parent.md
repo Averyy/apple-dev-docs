@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var parent: MPSNDArray? { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nullable) MPSNDArray * parent;
 ```
 
 

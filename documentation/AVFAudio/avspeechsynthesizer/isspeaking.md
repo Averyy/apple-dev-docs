@@ -1,7 +1,8 @@
 # isSpeaking
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the speech synthesizer is speaking or is in a paused state and has utterances to speak.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the speech synthesizer is speaking or is 
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the speech synthesizer is speaking or is 
 var isSpeaking: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSpeaking) BOOL speaking;
+```
+
 #### Discussion
 
 If `true`, the synthesizer is speaking or is in a paused state with utterances in its queue. If `false`, the synthesizer isn’t speaking and it doesn’t have any utterances in its queue.
 
 ## See Also
 
-- [var isPaused: Bool](avspeechsynthesizer/ispaused.md)
+### Inspecting a speech synthesizer
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether a speech synthesizer is in a paused state.
 
 

@@ -1,7 +1,8 @@
 # kRotate180DegreesClockwise
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies rotation by 180° clockwise.
 
@@ -10,7 +11,7 @@ A constant that specifies rotation by 180° clockwise.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ A constant that specifies rotation by 180° clockwise.
 var kRotate180DegreesClockwise: Int { get }
 ```
 
+```c
+kRotate180DegreesClockwise
+```
+
 ## See Also
 
-- [var kRotate0DegreesClockwise: Int](krotate0degreesclockwise.md)
+### Constants
+- [var kRotate0DegreesClockwise: Int](./krotate0degreesclockwise.md)
   A constant that specifies rotation by 0° (that is, copy without rotating).
-- [var kRotate90DegreesClockwise: Int](krotate90degreesclockwise.md)
+- [var kRotate90DegreesClockwise: Int](./krotate90degreesclockwise.md)
   A constant that specifies rotation by 90° clockwise.
-- [var kRotate270DegreesClockwise: Int](krotate270degreesclockwise.md)
+- [var kRotate270DegreesClockwise: Int](./krotate270degreesclockwise.md)
   A constant that specifies rotation by 270° clockwise.
-- [var kRotate0DegreesCounterClockwise: Int](krotate0degreescounterclockwise.md)
+- [var kRotate0DegreesCounterClockwise: Int](./krotate0degreescounterclockwise.md)
   A constant that specifies rotation by 0° (that is, copy without rotating).
-- [var kRotate90DegreesCounterClockwise: Int](krotate90degreescounterclockwise.md)
+- [var kRotate90DegreesCounterClockwise: Int](./krotate90degreescounterclockwise.md)
   A constant that specifies rotation by 90° counterclockwise.
-- [var kRotate180DegreesCounterClockwise: Int](krotate180degreescounterclockwise.md)
+- [var kRotate180DegreesCounterClockwise: Int](./krotate180degreescounterclockwise.md)
   A constant that specifies rotation by 180° counterclockwise.
-- [var kRotate270DegreesCounterClockwise: Int](krotate270degreescounterclockwise.md)
+- [var kRotate270DegreesCounterClockwise: Int](./krotate270degreescounterclockwise.md)
   A constant that specifies rotation by 270° counterclockwise.
 
 

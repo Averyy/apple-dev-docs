@@ -1,7 +1,8 @@
 # loginManager
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The manager that interacts with Platform SSO.
 
@@ -12,6 +13,10 @@ The manager that interacts with Platform SSO.
 
 ```swift
 var loginManager: ASAuthorizationProviderExtensionLoginManager? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) ASAuthorizationProviderExtensionLoginManager * loginManager;
 ```
 
 

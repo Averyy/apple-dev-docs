@@ -1,20 +1,21 @@
 # BundleIdCapabilityCreateRequest.Data.Relationships
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object BundleIdCapabilityCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId](bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md)
+- [object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId](./relationships-data.dictionary/bundleid-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties

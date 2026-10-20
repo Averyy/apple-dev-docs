@@ -1,7 +1,8 @@
 # urlForImageResource(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of the specified image resource as an NSURL.
 
@@ -14,6 +15,10 @@ Returns the location of the specified image resource as an NSURL.
 func urlForImageResource(_ name: NSImage.Name) -> URL?
 ```
 
+```objc
+- (NSURL *) URLForImageResource:(NSImageName) name;
+```
+
 #### Return Value
 
 An `NSURL` for the resource file or `nil` if the file was not found.
@@ -24,9 +29,10 @@ An `NSURL` for the resource file or `nil` if the file was not found.
 
 ## See Also
 
-- [func pathForImageResource(NSImage.Name) -> String?](bundle/pathforimageresource(_:).md)
+### Finding image resources
+- [func pathForImageResource(NSImage.Name) -> String?](./pathforimageresource%28_%29.md)
   Returns the location of the specified image resource file.
-- [func image(forResource: NSImage.Name) -> NSImage?](bundle/image(forresource:).md)
+- [func image(forResource: NSImage.Name) -> NSImage?](./image%28forresource%29.md)
   Returns an `NSImage` instance associated with the specified name, which can be backed by multiple files representing different resolution versions of the image.
 
 

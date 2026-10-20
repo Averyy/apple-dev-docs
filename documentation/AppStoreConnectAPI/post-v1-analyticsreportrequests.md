@@ -1,7 +1,8 @@
 # Request Reports
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Request analytics reports for your apps.
 
@@ -10,7 +11,7 @@ Request analytics reports for your apps.
 
 ## Mentions
 
-- [Downloading Analytics Reports](downloading-analytics-reports.md)
+- [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ When making a request with this endpoint, the `accessType` `ONGOING` is most com
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/analyticsReportRequests 
 {
   "data": {
@@ -73,17 +74,33 @@ POST https://api.appstoreconnect.apple.com/v1/analyticsReportRequests
 
 `POST https://api.appstoreconnect.apple.com/v1/analyticsReportRequests`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AnalyticsReportRequestCreateRequest`
+
+## Responses
+
+- `201` Created (`AnalyticsReportRequestResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read Report Requests](get-v1-apps-_id_-analyticsreportrequests.md)
+### Making, Reading, and Deleting Requests
+- [Read Report Requests](./get-v1-apps-_id_-analyticsreportrequests.md)
   Read analytics report requests for a specific app.
-- [Read Report Request Information](get-v1-analyticsreportrequests-_id_.md)
+- [Read Report Request Information](./get-v1-analyticsreportrequests-_id_.md)
   Get details for and the state of a specific analytics report request.
-- [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
+- [Read Reports for a Specific Request](./get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read reports ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read reports ids for a specific request](./get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
-- [Delete a Report Request](delete-v1-analyticsreportrequests-_id_.md)
+- [Delete a Report Request](./delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.
 
 

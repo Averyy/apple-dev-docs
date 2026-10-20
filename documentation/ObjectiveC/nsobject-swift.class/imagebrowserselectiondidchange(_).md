@@ -1,17 +1,22 @@
 # imageBrowserSelectionDidChange(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom tasks when the selection changes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func imageBrowserSelectionDidChange(_ aBrowser: IKImageBrowserView!)
+```
+
+```objc
+- (void) imageBrowserSelectionDidChange:(IKImageBrowserView *) aBrowser;
 ```
 
 #### Discussion

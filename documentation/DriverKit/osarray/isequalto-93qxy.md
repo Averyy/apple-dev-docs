@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the array with an OSObject
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
@@ -31,7 +32,8 @@ If the object is of class OSArray, the result of isEqualTo(const OSArray * anArr
 
 ## See Also
 
-- [isEqualTo](osarray/isequalto-5w7om.md)
+### Comparing Arrays
+- [isEqualTo](./isequalto-5w7om.md)
   Compares all members of two arrays with isEqualTo().
 
 

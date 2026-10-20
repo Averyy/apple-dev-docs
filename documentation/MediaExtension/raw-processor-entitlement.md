@@ -1,6 +1,7 @@
 # RAW processor entitlement
 
-**Framework**: MediaExtension
+**Framework**: MediaExtension  
+**Role**: Article
 
 Include an entitlement to indicate your extension is a MediaExtension RAW processor.
 
@@ -17,17 +18,18 @@ The entitlement key is `com.apple.developer.mediaextension.videodecoder` and it 
 
 ## See Also
 
-- [protocol MERAWProcessor](merawprocessor.md)
+### RAW processors
+- [protocol MERAWProcessor](./merawprocessor.md)
   A protocol that defines the requirements for a RAW processor.
-- [protocol MERAWProcessorExtension](merawprocessorextension.md)
+- [protocol MERAWProcessorExtension](./merawprocessorextension.md)
   A protocol that defines a factory to create RAW processors for a codec type that the extension implements.
-- [class MERAWProcessorPixelBufferManager](merawprocessorpixelbuffermanager.md)
+- [class MERAWProcessorPixelBufferManager](./merawprocessorpixelbuffermanager.md)
   Describes pixel buffer requirements and creates new pixel buffers.
-- [class MERAWProcessingParameter](merawprocessingparameter.md)
+- [class MERAWProcessingParameter](./merawprocessingparameter.md)
   An object for the RAW processor to describe each processing parameter the processor exposes.
-- [enum MERAWProcessorNotification](merawprocessornotification.md)
+- [enum MERAWProcessorNotification](./merawprocessornotification.md)
   Notifications that indicate a RAW processor state change.
-- [RAW processor property list dictionary](raw-processor-property-list-dictionary.md)
+- [RAW processor property list dictionary](./raw-processor-property-list-dictionary.md)
   Include a property list dictionary to describe a RAW processor.
 
 

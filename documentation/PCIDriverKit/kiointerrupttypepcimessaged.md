@@ -1,23 +1,25 @@
 # kIOInterruptTypePCIMessaged
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A message signaled interrupt (MSI) type for a PCI device.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOInterruptTypePCIMessaged
 ```
 
 ## See Also
 
-- [kIOInterruptTypePCIMessagedX](kiointerrupttypepcimessagedx.md)
+### Types
+- [kIOInterruptTypePCIMessagedX](./kiointerrupttypepcimessagedx.md)
   An extended message signal interrupt (MSI-X) type for a PCI device.
 
 

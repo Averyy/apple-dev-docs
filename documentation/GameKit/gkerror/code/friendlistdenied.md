@@ -1,7 +1,8 @@
 # GKError.Code.friendListDenied
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Access to the local player’s list of friends denied.
 
@@ -20,13 +21,18 @@ Access to the local player’s list of friends denied.
 case friendListDenied
 ```
 
+```c
+GKErrorFriendListDenied
+```
+
 ## See Also
 
-- [GKError.Code.friendListDescriptionMissing](gkerror/code/friendlistdescriptionmissing.md)
+### Friend List Errors
+- [GKError.Code.friendListDescriptionMissing](./friendlistdescriptionmissing.md)
   Access to the local player’s list of friends denied for lack of a reason.
-- [GKError.Code.friendListRestricted](gkerror/code/friendlistrestricted.md)
+- [GKError.Code.friendListRestricted](./friendlistrestricted.md)
   Access to the local player’s list of friends restricted.
-- [GKError.Code.friendRequestNotAvailable](gkerror/code/friendrequestnotavailable.md)
+- [GKError.Code.friendRequestNotAvailable](./friendrequestnotavailable.md)
   The player can’t send a friend request at this time from this device.
 
 

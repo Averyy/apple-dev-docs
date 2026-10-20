@@ -1,7 +1,8 @@
 # ASImportableEditableField.FieldType
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of editable field types.
 
@@ -21,46 +22,47 @@ enum FieldType
 ## Topics
 
 ### Determining field type
-- [ASImportableEditableField.FieldType.boolean](asimportableeditablefield/fieldtype-swift.enum/boolean.md)
+- [ASImportableEditableField.FieldType.boolean](./fieldtype-swift.enum/boolean.md)
   A type for a Boolean value field.
-- [ASImportableEditableField.FieldType.concealedString](asimportableeditablefield/fieldtype-swift.enum/concealedstring.md)
+- [ASImportableEditableField.FieldType.concealedString](./fieldtype-swift.enum/concealedstring.md)
   A type for a concealed string field.
-- [ASImportableEditableField.FieldType.date](asimportableeditablefield/fieldtype-swift.enum/date.md)
+- [ASImportableEditableField.FieldType.date](./fieldtype-swift.enum/date.md)
   A type for a date field.
-- [ASImportableEditableField.FieldType.email](asimportableeditablefield/fieldtype-swift.enum/email.md)
+- [ASImportableEditableField.FieldType.email](./fieldtype-swift.enum/email.md)
   A type for an email field.
-- [ASImportableEditableField.FieldType.number](asimportableeditablefield/fieldtype-swift.enum/number.md)
+- [ASImportableEditableField.FieldType.number](./fieldtype-swift.enum/number.md)
   A type for a number field.
-- [ASImportableEditableField.FieldType.string](asimportableeditablefield/fieldtype-swift.enum/string.md)
+- [ASImportableEditableField.FieldType.string](./fieldtype-swift.enum/string.md)
   A type for a concealed string field.
 ### Enumeration Cases
-- [ASImportableEditableField.FieldType.countryCode](asimportableeditablefield/fieldtype-swift.enum/countrycode.md)
-- [ASImportableEditableField.FieldType.subdivisionCode](asimportableeditablefield/fieldtype-swift.enum/subdivisioncode.md)
-- [ASImportableEditableField.FieldType.wifiNetworkSecurityType](asimportableeditablefield/fieldtype-swift.enum/wifinetworksecuritytype.md)
-- [ASImportableEditableField.FieldType.yearMonth](asimportableeditablefield/fieldtype-swift.enum/yearmonth.md)
+- [ASImportableEditableField.FieldType.countryCode](./fieldtype-swift.enum/countrycode.md)
+- [ASImportableEditableField.FieldType.subdivisionCode](./fieldtype-swift.enum/subdivisioncode.md)
+- [ASImportableEditableField.FieldType.wifiNetworkSecurityType](./fieldtype-swift.enum/wifinetworksecuritytype.md)
+- [ASImportableEditableField.FieldType.yearMonth](./fieldtype-swift.enum/yearmonth.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var id: Data?](asimportableeditablefield/id.md)
+### Accessing field properties
+- [var id: Data?](./id.md)
   A unique identifier for this editable field.
-- [var fieldType: ASImportableEditableField.FieldType](asimportableeditablefield/fieldtype-swift.property.md)
+- [var fieldType: ASImportableEditableField.FieldType](./fieldtype-swift.property.md)
   The type of this editable field.
-- [var value: String](asimportableeditablefield/value.md)
+- [var value: String](./value.md)
   The value stored in this editable field.
-- [var label: String?](asimportableeditablefield/label.md)
+- [var label: String?](./label.md)
   A value describing the field, if any.
 
 

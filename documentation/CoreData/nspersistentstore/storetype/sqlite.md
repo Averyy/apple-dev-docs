@@ -1,7 +1,8 @@
 # sqlite
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A store that reads from and writes to a persistent SQLite database.
 
@@ -11,7 +12,7 @@ A store that reads from and writes to a persistent SQLite database.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static let sqlite: NSPersistentStore.StoreType
 
 ## See Also
 
-- [static let binary: NSPersistentStore.StoreType](nspersistentstore/storetype/binary.md)
+### Store Types
+- [static let binary: NSPersistentStore.StoreType](./binary.md)
   A store that reads from and writes to a persistent binary file.
-- [static let inMemory: NSPersistentStore.StoreType](nspersistentstore/storetype/inmemory.md)
+- [static let inMemory: NSPersistentStore.StoreType](./inmemory.md)
   An ephemeral store that reads from and writes to memory only.
-- [static let xml: NSPersistentStore.StoreType](nspersistentstore/storetype/xml.md)
+- [static let xml: NSPersistentStore.StoreType](./xml.md)
   A store that reads from and writes to a persistent XML file.
 
 

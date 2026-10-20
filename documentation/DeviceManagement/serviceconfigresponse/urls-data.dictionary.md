@@ -1,19 +1,20 @@
 # ServiceConfigResponse.Urls
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The set of current service URLs.
 
 ## Declaration
 
-```swift
+```
 object ServiceConfigResponse.Urls
 ```
 
 ## Mentions
 
-- [Managing users](managing-users.md)
+- [Managing users](../managing-users.md)
 
 #### Overview
 
@@ -25,9 +26,10 @@ Each key names an endpoint and each value is its current URL. These URLs are dyn
 
 ## See Also
 
-- [object ServiceConfigResponse.Limits](serviceconfigresponse/limits-data.dictionary.md)
+### Objects and Data Types
+- [object ServiceConfigResponse.Limits](./limits-data.dictionary.md)
   The set of current request limits.
-- [object ResponseErrorCode](responseerrorcode.md)
+- [object ResponseErrorCode](../responseerrorcode.md)
   An error code.
 
 

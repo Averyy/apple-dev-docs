@@ -1,7 +1,8 @@
 # MTRThermostatSystemMode
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,32 +19,36 @@
 enum MTRThermostatSystemMode
 ```
 
+```c
+enum MTRThermostatSystemMode : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThermostatSystemMode.auto](mtrthermostatsystemmode/auto.md)
-- [MTRThermostatSystemMode.cool](mtrthermostatsystemmode/cool.md)
-- [MTRThermostatSystemMode.dry](mtrthermostatsystemmode/dry.md)
-- [MTRThermostatSystemMode.emergencyHeat](mtrthermostatsystemmode/emergencyheat.md)
-- [MTRThermostatSystemMode.fanOnly](mtrthermostatsystemmode/fanonly.md)
-- [MTRThermostatSystemMode.heat](mtrthermostatsystemmode/heat.md)
-- [MTRThermostatSystemMode.off](mtrthermostatsystemmode/off.md)
-- [MTRThermostatSystemMode.precooling](mtrthermostatsystemmode/precooling.md)
-- [MTRThermostatSystemMode.sleep](mtrthermostatsystemmode/sleep.md)
+- [MTRThermostatSystemMode.auto](./mtrthermostatsystemmode/auto.md)
+- [MTRThermostatSystemMode.cool](./mtrthermostatsystemmode/cool.md)
+- [MTRThermostatSystemMode.dry](./mtrthermostatsystemmode/dry.md)
+- [MTRThermostatSystemMode.emergencyHeat](./mtrthermostatsystemmode/emergencyheat.md)
+- [MTRThermostatSystemMode.fanOnly](./mtrthermostatsystemmode/fanonly.md)
+- [MTRThermostatSystemMode.heat](./mtrthermostatsystemmode/heat.md)
+- [MTRThermostatSystemMode.off](./mtrthermostatsystemmode/off.md)
+- [MTRThermostatSystemMode.precooling](./mtrthermostatsystemmode/precooling.md)
+- [MTRThermostatSystemMode.sleep](./mtrthermostatsystemmode/sleep.md)
 ### Type Properties
-- [static var emergencyHeating: MTRThermostatSystemMode](mtrthermostatsystemmode/emergencyheating.md)
+- [static var emergencyHeating: MTRThermostatSystemMode](./mtrthermostatsystemmode/emergencyheating.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthermostatsystemmode/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthermostatsystemmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

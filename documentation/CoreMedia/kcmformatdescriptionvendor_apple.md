@@ -1,7 +1,8 @@
 # kCMFormatDescriptionVendor_Apple
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that speicifies Apple as the vendor.
 
@@ -20,19 +21,24 @@ A string that speicifies Apple as the vendor.
 let kCMFormatDescriptionVendor_Apple: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionVendor_Apple;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionConformsToMPEG2VideoProfile: CFString](kcmformatdescriptionconformstompeg2videoprofile.md)
+### Constants
+- [let kCMFormatDescriptionConformsToMPEG2VideoProfile: CFString](./kcmformatdescriptionconformstompeg2videoprofile.md)
   The value is a number that specifies the MPEG2 video profile.
-- [let kCMFormatDescriptionExtension_TemporalQuality: CFString](kcmformatdescriptionextension_temporalquality.md)
+- [let kCMFormatDescriptionExtension_TemporalQuality: CFString](./kcmformatdescriptionextension_temporalquality.md)
   The value is a number.
-- [let kCMFormatDescriptionExtension_SpatialQuality: CFString](kcmformatdescriptionextension_spatialquality.md)
+- [let kCMFormatDescriptionExtension_SpatialQuality: CFString](./kcmformatdescriptionextension_spatialquality.md)
   The value is a number.
-- [let kCMFormatDescriptionExtension_Version: CFString](kcmformatdescriptionextension_version.md)
+- [let kCMFormatDescriptionExtension_Version: CFString](./kcmformatdescriptionextension_version.md)
   The value is a number.
-- [let kCMFormatDescriptionExtension_RevisionLevel: CFString](kcmformatdescriptionextension_revisionlevel.md)
+- [let kCMFormatDescriptionExtension_RevisionLevel: CFString](./kcmformatdescriptionextension_revisionlevel.md)
   The value is a number.
-- [let kCMFormatDescriptionExtension_Vendor: CFString](kcmformatdescriptionextension_vendor.md)
+- [let kCMFormatDescriptionExtension_Vendor: CFString](./kcmformatdescriptionextension_vendor.md)
   The value is a string of four character codes.
 
 

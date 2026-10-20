@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreeCallHoldModes.mode4
 
 **Framework**: IOBluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 case mode4
 ```
 
+```c
+IOBluetoothHandsFreeCallHoldMode4
+```
+
 ## See Also
 
-- [IOBluetoothHandsFreeCallHoldModes.mode0](iobluetoothhandsfreecallholdmodes/mode0.md)
-- [IOBluetoothHandsFreeCallHoldModes.mode1](iobluetoothhandsfreecallholdmodes/mode1.md)
-- [IOBluetoothHandsFreeCallHoldModes.mode1idx](iobluetoothhandsfreecallholdmodes/mode1idx.md)
-- [IOBluetoothHandsFreeCallHoldModes.mode2](iobluetoothhandsfreecallholdmodes/mode2.md)
-- [IOBluetoothHandsFreeCallHoldModes.mode2idx](iobluetoothhandsfreecallholdmodes/mode2idx.md)
-- [IOBluetoothHandsFreeCallHoldModes.mode3](iobluetoothhandsfreecallholdmodes/mode3.md)
+### Enumeration Cases
+- [IOBluetoothHandsFreeCallHoldModes.mode0](./mode0.md)
+- [IOBluetoothHandsFreeCallHoldModes.mode1](./mode1.md)
+- [IOBluetoothHandsFreeCallHoldModes.mode1idx](./mode1idx.md)
+- [IOBluetoothHandsFreeCallHoldModes.mode2](./mode2.md)
+- [IOBluetoothHandsFreeCallHoldModes.mode2idx](./mode2idx.md)
+- [IOBluetoothHandsFreeCallHoldModes.mode3](./mode3.md)
 
 
 ---

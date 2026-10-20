@@ -1,7 +1,8 @@
 # vImageBuffer_InitWithCVPixelBuffer(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Initializes a vImage buffer with a copy of the contents of a Core Video pixel buffer.
 
@@ -20,30 +21,38 @@ Initializes a vImage buffer with a copy of the contents of a Core Video pixel bu
 func vImageBuffer_InitWithCVPixelBuffer(_ buffer: UnsafeMutablePointer<vImage_Buffer>, _ desiredFormat: UnsafeMutablePointer<vImage_CGImageFormat>, _ cvPixelBuffer: CVPixelBuffer, _ cvImageFormat: vImageCVImageFormat!, _ backgroundColor: UnsafePointer<CGFloat>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageBuffer_InitWithCVPixelBuffer(vImage_Buffer *buffer, vImage_CGImageFormat *desiredFormat, CVPixelBufferRef cvPixelBuffer, vImageCVImageFormatRef cvImageFormat, const CGFloat *backgroundColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-Some Core Video pixel buffers and image formats have incompletely specified color information that prevents [`vImageBuffer_InitWithCVPixelBuffer(_:_:_:_:_:_:)`](vimagebuffer_initwithcvpixelbuffer(_:_:_:_:_:_:).md) from performing the conversion. In this situation, the function returns one of the format errors below. To proceed, create a [`vImageCVImageFormat`](vimagecvimageformat.md) instance, add the missing information, and pass the image format instance as the `cvImageFormat` parameter to this function. It’s possible that more than one piece of information is missing.
+Some Core Video pixel buffers and image formats have incompletely specified color information that prevents [`vImageBuffer_InitWithCVPixelBuffer(_:_:_:_:_:_:)`](./vimagebuffer_initwithcvpixelbuffer%28_,_,_,_,_,_%29.md) from performing the conversion. In this situation, the function returns one of the format errors below. To proceed, create a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance, add the missing information, and pass the image format instance as the `cvImageFormat` parameter to this function. It’s possible that more than one piece of information is missing.
 
-- **[`kvImageCVImageFormat_ConversionMatrix`](kvimagecvimageformat_conversionmatrix.md)**: The conversion matrix is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use the [`vImageCVImageFormat_CopyConversionMatrix(_:_:_:)`](vimagecvimageformat_copyconversionmatrix(_:_:_:).md) function to copy a conversion matrix to an image format.
-- **[`kvImageCVImageFormat_ChromaSiting`](kvimagecvimageformat_chromasiting.md)**: The chrominance siting information is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use [`vImageCVImageFormat_SetChromaSiting(_:_:)`](vimagecvimageformat_setchromasiting(_:_:).md) to set the chrominance siting on an image format.
-- **[`kvImageCVImageFormat_ColorSpace`](kvimagecvimageformat_colorspace.md)**: The color space that contains primaries and transfer function is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use [`vImageCVImageFormat_SetColorSpace(_:_:)`](vimagecvimageformat_setcolorspace(_:_:).md) to set the color space on an image format.
+- **[`kvImageCVImageFormat_ConversionMatrix`](./kvimagecvimageformat_conversionmatrix.md)**: The conversion matrix is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use the [`vImageCVImageFormat_CopyConversionMatrix(_:_:_:)`](./vimagecvimageformat_copyconversionmatrix%28_,_,_%29.md) function to copy a conversion matrix to an image format.
+- **[`kvImageCVImageFormat_ChromaSiting`](./kvimagecvimageformat_chromasiting.md)**: The chrominance siting information is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use [`vImageCVImageFormat_SetChromaSiting(_:_:)`](./vimagecvimageformat_setchromasiting%28_,_%29.md) to set the chrominance siting on an image format.
+- **[`kvImageCVImageFormat_ColorSpace`](./kvimagecvimageformat_colorspace.md)**: The color space that contains primaries and transfer function is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use [`vImageCVImageFormat_SetColorSpace(_:_:)`](./vimagecvimageformat_setcolorspace%28_,_%29.md) to set the color space on an image format.
 
 #### Discussion
 
-For compatibility with Core Video, vImage substitutes gamma `1/1.961` for [`kCVImageBufferTransferFunction_ITU_R_709_2`](https://developer.apple.com/documentation/corevideo/kcvimagebuffertransferfunction_itu_r_709_2) and substitutes the ITU-R BT.709-5 transfer function for [`kCVImageBufferTransferFunction_SMPTE_240M_1995`](https://developer.apple.com/documentation/corevideo/kcvimagebuffertransferfunction_smpte_240m_1995). You can manually set the transfer function using [`vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(_:_:_:_:_:)`](vimagecreatergbcolorspacewithprimariesandtransferfunction(_:_:_:_:_:).md) and [`vImageCVImageFormat_SetColorSpace(_:_:)`](vimagecvimageformat_setcolorspace(_:_:).md) to avoid this substitution.
+For compatibility with Core Video, vImage substitutes gamma `1/1.961` for [`kCVImageBufferTransferFunction_ITU_R_709_2`](../CoreVideo/kcvimagebuffertransferfunction_itu_r_709_2.md) and substitutes the ITU-R BT.709-5 transfer function for [`kCVImageBufferTransferFunction_SMPTE_240M_1995`](../CoreVideo/kcvimagebuffertransferfunction_smpte_240m_1995.md). You can manually set the transfer function using [`vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(_:_:_:_:_:)`](./vimagecreatergbcolorspacewithprimariesandtransferfunction%28_,_,_,_,_%29.md) and [`vImageCVImageFormat_SetColorSpace(_:_:)`](./vimagecvimageformat_setcolorspace%28_,_%29.md) to avoid this substitution.
 
 ## Parameters
 
-- `buffer`: The destination empty [`vImage_Buffer`](vimage_buffer.md) structure. On return, the function allocates new memory to the buffer and sets the buffer’s size to match the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) instance’s dimensions.
-- `desiredFormat`: A [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that specifies the image format of the [`vImage_Buffer`](vimage_buffer.md) structure. If [`colorSpace`](vimage_cgimageformat/colorspace.md) is `nil`, the function uses [`sRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/srgb).
-- `cvPixelBuffer`: The source [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) instance. It’s not necessary to lock the pixel buffer before calling this function.
-- `cvImageFormat`: An optional [`vImageCVImageFormat`](vimagecvimageformat.md) instance that specifies the pixel format of the source pixel buffer. If this parameter is `nil`, the function attempts to derive this information from the Core Video pixel buffer.
+- `buffer`: The destination empty [`vImage_Buffer`](./vimage_buffer.md) structure. On return, the function allocates new memory to the buffer and sets the buffer’s size to match the [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) instance’s dimensions.
+- `desiredFormat`: A [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure that specifies the image format of the [`vImage_Buffer`](./vimage_buffer.md) structure. If [`colorSpace`](./vimage_cgimageformat/colorspace.md) is `nil`, the function uses [`sRGB`](../CoreGraphics/cgcolorspace/srgb.md).
+- `cvPixelBuffer`: The source [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md) instance. It’s not necessary to lock the pixel buffer before calling this function.
+- `cvImageFormat`: An optional [`vImageCVImageFormat`](./vimagecvimageformat.md) instance that specifies the pixel format of the source pixel buffer. If this parameter is `nil`, the function attempts to derive this information from the Core Video pixel buffer.
 - `backgroundColor`: If the source image contains alpha information and the destination format doesn’t contain alpha information, this function flattens the source image against this parameter.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). Pass [`kvImageNoAllocate`](kvimagenoallocate.md) if the destination buffer references existing data. If the pixel buffer uses chrominance subsampling and you want vImage to use a higher quality, but a slower, resampling filter, set the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+
+  Pass [`kvImageNoAllocate`](./kvimagenoallocate.md) if the destination buffer references existing data.
+
+  If the pixel buffer uses chrominance subsampling and you want vImage to use a higher quality, but a slower, resampling filter, set the [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) flag.
 
 
 ---

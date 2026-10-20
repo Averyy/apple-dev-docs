@@ -1,7 +1,8 @@
 # Document
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A document that supports both reading and writing.
 
@@ -20,7 +21,7 @@ protocol Document : ReadableDocument, WritableDocument
 
 #### Overview
 
-`Document` is a convenience protocol that combines [`ReadableDocument`](readabledocument.md) and [`WritableDocument`](writabledocument.md). Conform to it when your document can both open and save files:
+`Document` is a convenience protocol that combines [`ReadableDocument`](./readabledocument.md) and [`WritableDocument`](./writabledocument.md). Conform to it when your document can both open and save files:
 
 ```swift
 @Observable
@@ -57,7 +58,7 @@ final class TextDocument: Document {
 }
 ```
 
-Use [`DocumentGroup`](documentgroup.md) as your app’s first scene to opt into the document infrastructure (autosaving, file coordination, undo management, conflict resolution):
+Use [`DocumentGroup`](./documentgroup.md) as your app’s first scene to opt into the document infrastructure (autosaving, file coordination, undo management, conflict resolution):
 
 ```swift
 @main
@@ -72,27 +73,28 @@ struct MyApp: App {
 }
 ```
 
-For a read-only document, conform only to [`ReadableDocument`](readabledocument.md).
+For a read-only document, conform only to [`ReadableDocument`](./readabledocument.md).
 
 The document can be `@MainActor` or nonisolated, `Sendable` or not — use whichever works best for the app.
 
 ## Relationships
 
 ### Inherits From
-- [ReadableDocument](readabledocument.md)
-- [WritableDocument](writabledocument.md)
+- [ReadableDocument](./readabledocument.md)
+- [WritableDocument](./writabledocument.md)
 
 ## See Also
 
-- [protocol ReadableDocument](readabledocument.md)
+### Storing document data in a reference type instance
+- [protocol ReadableDocument](./readabledocument.md)
   A document type that supports reading from file.
-- [protocol WritableDocument](writabledocument.md)
+- [protocol WritableDocument](./writabledocument.md)
   A document type that supports writing to file.
-- [class URLDocumentConfiguration](urldocumentconfiguration.md)
+- [class URLDocumentConfiguration](./urldocumentconfiguration.md)
   The configuration of an open document that stores its file URL, last modification date, and related metadata.
-- [struct DocumentCreationContext](documentcreationcontext.md)
+- [struct DocumentCreationContext](./documentcreationcontext.md)
   Context about how a document was created.
-- [protocol DocumentBaseBox](documentbasebox.md)
+- [protocol DocumentBaseBox](./documentbasebox.md)
   A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 
 

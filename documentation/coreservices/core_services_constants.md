@@ -1,14 +1,15 @@
 # Core Services Constants
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kFSEventStreamEventExtendedDocIDKey: String](kfseventstreameventextendeddocidkey.md)
-- [let kMDItemMediaExtensions: CFString!](kmditemmediaextensions.md)
-- [let kMDItemXMPCredit: CFString!](kmditemxmpcredit.md)
-- [let kMDItemXMPDigitalSourceType: CFString!](kmditemxmpdigitalsourcetype.md)
+- [var kFSEventStreamEventExtendedDocIDKey: String](./kfseventstreameventextendeddocidkey.md)
+- [let kMDItemMediaExtensions: CFString!](./kmditemmediaextensions.md)
+- [let kMDItemXMPCredit: CFString!](./kmditemxmpcredit.md)
+- [let kMDItemXMPDigitalSourceType: CFString!](./kmditemxmpdigitalsourcetype.md)
 
 
 ---

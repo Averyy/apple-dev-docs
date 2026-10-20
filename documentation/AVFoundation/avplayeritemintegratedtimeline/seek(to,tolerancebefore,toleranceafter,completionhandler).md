@@ -1,7 +1,8 @@
 # seek(to:toleranceBefore:toleranceAfter:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Seeks to a particular time in the integrated time domain.
 
@@ -17,7 +18,15 @@ Seeks to a particular time in the integrated time domain.
 ## Declaration
 
 ```swift
+func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime) async -> Bool
+```
+
+```objc
+- (void) seekToTime:(CMTime) time toleranceBefore:(CMTime) toleranceBefore toleranceAfter:(CMTime) toleranceAfter completionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
 ## Parameters
@@ -29,7 +38,8 @@ func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime) asyn
 
 ## See Also
 
-- [func seek(to: Date, completionHandler: ((Bool) -> Void)?)](avplayeritemintegratedtimeline/seek(to:completionhandler:).md)
+### Seeking
+- [func seek(to: Date, completionHandler: ((Bool) -> Void)?)](./seek%28to,completionhandler%29.md)
   Seeks to a particular date in the integrated time domain.
 
 

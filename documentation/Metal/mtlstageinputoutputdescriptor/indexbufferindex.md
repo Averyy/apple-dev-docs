@@ -1,7 +1,8 @@
 # indexBufferIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the index buffer for a compute function using indexed thread addressing.
 
@@ -19,9 +20,14 @@ The location of the index buffer for a compute function using indexed thread add
 var indexBufferIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger indexBufferIndex;
+```
+
 ## See Also
 
-- [var indexType: MTLIndexType](mtlstageinputoutputdescriptor/indextype.md)
+### Declaring index buffers for indirect compute commands
+- [var indexType: MTLIndexType](./indextype.md)
   The data type of the indices stored in the index buffer.
 
 

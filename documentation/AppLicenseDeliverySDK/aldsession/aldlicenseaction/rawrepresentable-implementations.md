@@ -1,13 +1,14 @@
 # RawRepresentable Implementations
 
-**Framework**: App License Delivery SDK
+**Framework**: App License Delivery SDK  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var hashValue: Int](aldsession/aldlicenseaction/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
 ### Instance Methods
-- [func hash(into: inout Hasher)](aldsession/aldlicenseaction/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
 
 
 ---

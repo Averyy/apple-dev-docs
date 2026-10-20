@@ -1,7 +1,8 @@
 # seek(toOffset:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the file pointer to the specified offset within the file.
 
@@ -20,9 +21,13 @@ Moves the file pointer to the specified offset within the file.
 func seek(toOffset offset: UInt64) throws
 ```
 
+```objc
+- (BOOL) seekToOffset:(unsigned long long) offset error:(NSError **) error;
+```
+
 #### Discussion
 
-> **Note**: Throws an error if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs while seeking.
+> **Throws**: Throws an error if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs while seeking.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ func seek(toOffset offset: UInt64) throws
 
 ## See Also
 
-- [func offset() throws -> UInt64](filehandle/offset.md)
+### Seeking within a file
+- [func offset() throws -> UInt64](./offset%28%29.md)
   Gets the position of the file pointer within the file.
-- [func seekToEnd() throws -> UInt64](filehandle/seektoend.md)
+- [func seekToEnd() throws -> UInt64](./seektoend%28%29.md)
   Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
 
 

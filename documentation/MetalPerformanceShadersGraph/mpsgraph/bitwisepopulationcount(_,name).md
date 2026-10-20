@@ -1,7 +1,8 @@
 # bitwisePopulationCount(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the population count of the input tensor elements.
 
@@ -17,6 +18,10 @@ Returns the population count of the input tensor elements.
 
 ```swift
 func bitwisePopulationCount(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) bitwisePopulationCountWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

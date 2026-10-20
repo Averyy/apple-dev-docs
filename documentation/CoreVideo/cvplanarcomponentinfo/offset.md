@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset from the main base address to the base address of this plane. (big-endian)
 
@@ -20,9 +21,14 @@ The offset from the main base address to the base address of this plane. (big-en
 var offset: Int32
 ```
 
+```c
+int32_t offset;
+```
+
 ## See Also
 
-- [var rowBytes: UInt32](cvplanarcomponentinfo/rowbytes.md)
+### Properties
+- [var rowBytes: UInt32](./rowbytes.md)
   The number of bytes per row of this plane. (big-endian)
 
 

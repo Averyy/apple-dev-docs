@@ -1,16 +1,17 @@
 # UIGestureRecognizerDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods implemented by the delegate of a gesture recognizer to fine-tune an app’s gesture-recognition behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ A set of methods implemented by the delegate of a gesture recognizer to fine-tun
 protocol UIGestureRecognizerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIGestureRecognizerDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Preferring one gesture over another](preferring-one-gesture-over-another.md)
+- [Preferring one gesture over another](./preferring-one-gesture-over-another.md)
 
 #### Overview
 
@@ -67,37 +72,38 @@ myScreenEdgePanGestureRecognizer.delegate = self;
 ## Topics
 
 ### Regulating gesture recognition
-- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](uigesturerecognizerdelegate/gesturerecognizershouldbegin(_:).md)
+- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](./uigesturerecognizerdelegate/gesturerecognizershouldbegin%28_%29.md)
   Asks the delegate if a gesture recognizer should begin interpreting touches.
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UITouch) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh.md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UITouch) -> Bool](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldreceive%29-16fuh.md)
   Asks the delegate if a gesture recognizer should receive an object representing a touch.
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIPress) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-73vzu.md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIPress) -> Bool](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldreceive%29-73vzu.md)
   Asks the delegate if a gesture recognizer should receive an object representing a press.
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIEvent) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-evxd.md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIEvent) -> Bool](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldreceive%29-evxd.md)
   Asks the delegate if a gesture recognizer should receive an object representing a touch or press event.
 ### Controlling simultaneous gesture recognition
-- [func gestureRecognizer(UIGestureRecognizer, shouldRecognizeSimultaneouslyWith: UIGestureRecognizer) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldRecognizeSimultaneouslyWith: UIGestureRecognizer) -> Bool](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldrecognizesimultaneouslywith%29.md)
   Asks the delegate if two gesture recognizers should be allowed to recognize gestures simultaneously.
 ### Setting up failure requirements
-- [func gestureRecognizer(UIGestureRecognizer, shouldRequireFailureOf: UIGestureRecognizer) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldrequirefailureof:).md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldRequireFailureOf: UIGestureRecognizer) -> Bool](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldrequirefailureof%29.md)
   Asks the delegate if a gesture recognizer should require another gesture recognizer to fail.
-- [func gestureRecognizer(UIGestureRecognizer, shouldBeRequiredToFailBy: UIGestureRecognizer) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldberequiredtofailby:).md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldBeRequiredToFailBy: UIGestureRecognizer) -> Bool](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldberequiredtofailby%29.md)
   Asks the delegate if a gesture recognizer should be required to fail by another gesture recognizer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UITableViewCell](uitableviewcell.md)
+- [UITableViewCell](./uitableviewcell.md)
 
 ## See Also
 
-- [Implementing a custom gesture recognizer](implementing-a-custom-gesture-recognizer.md)
+### Custom gestures
+- [Implementing a custom gesture recognizer](./implementing-a-custom-gesture-recognizer.md)
   Discover when and how to build your own gesture recognizers.
-- [class UIGestureRecognizer](uigesturerecognizer.md)
+- [class UIGestureRecognizer](./uigesturerecognizer.md)
   The base class for concrete gesture recognizers.
-- [Supporting gesture interaction in your apps](supporting-gesture-interaction-in-your-apps.md)
+- [Supporting gesture interaction in your apps](./supporting-gesture-interaction-in-your-apps.md)
   Enrich your app’s user experience by supporting standard and custom gesture interaction.
 
 

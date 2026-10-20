@@ -1,7 +1,8 @@
 # init(URL:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -19,7 +20,8 @@ init(URL videoURL: URL)
 
 ## See Also
 
-- [init(url: URL)](vnvideoprocessor/init(url:)-94b7.md)
+### Creating a Video Processor
+- [init(url: URL)](./init%28url%29-94b7.md)
   Creates a video processor to perform Vision requests against the specified video asset.
 
 

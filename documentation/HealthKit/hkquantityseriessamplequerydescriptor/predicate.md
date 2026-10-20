@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate that defines the set of series samples that the query returns.
 
@@ -10,7 +11,7 @@ A predicate that defines the set of series samples that the query returns.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,8 +22,9 @@ var predicate: HKSamplePredicate<HKQuantitySample>
 
 ## See Also
 
-- [var options: HKQuantitySeriesSampleQueryDescriptor.Options](hkquantityseriessamplequerydescriptor/options-swift.property.md)
-  A set of options for the query. For a list of possible values, see [`HKQuantitySeriesSampleQueryDescriptor.Options`](hkquantityseriessamplequerydescriptor/options-swift.struct.md).
+### Accessing Query Properties
+- [var options: HKQuantitySeriesSampleQueryDescriptor.Options](./options-swift.property.md)
+  A set of options for the query. For a list of possible values, see [`HKQuantitySeriesSampleQueryDescriptor.Options`](./options-swift.struct.md).
 
 
 ---

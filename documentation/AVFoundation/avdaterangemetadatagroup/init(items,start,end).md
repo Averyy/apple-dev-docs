@@ -1,7 +1,8 @@
 # init(items:start:end:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of `AVDateRangeMetadataGroup` with a collection of metadata items.
 
@@ -20,6 +21,10 @@ Initializes an instance of `AVDateRangeMetadataGroup` with a collection of metad
 init(items: [AVMetadataItem], start startDate: Date, end endDate: Date?)
 ```
 
+```objc
+- (instancetype) initWithItems:(NSArray<AVMetadataItem *> *) items startDate:(NSDate *) startDate endDate:(NSDate *) endDate;
+```
+
 #### Return Value
 
 A new instance of `AVDateRangeMetadataGroup`.
@@ -30,7 +35,7 @@ Creates a new instance of `AVDateRangeMetadataGroup` with the specified collecti
 
 ## Parameters
 
-- `items`: The array of [`AVMetadataItem`](avmetadataitem.md) instances to associate with this group.
+- `items`: The array of [`AVMetadataItem`](../avmetadataitem.md) instances to associate with this group.
 - `startDate`: The starting date for the group of metadata items.
 - `endDate`: The ending date for the group of metadata items.
 

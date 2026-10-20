@@ -1,7 +1,8 @@
 # CNContactType
 
 **Framework**: Contacts  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types a contact can be.
 
@@ -19,31 +20,36 @@ The types a contact can be.
 enum CNContactType
 ```
 
+```c
+enum CNContactType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CNContactType.person](cncontacttype/person.md)
+- [CNContactType.person](./cncontacttype/person.md)
   The contact is a person.
-- [CNContactType.organization](cncontacttype/organization.md)
+- [CNContactType.organization](./cncontacttype/organization.md)
   The contact is an Organization.
 ### Initializers
-- [init?(rawValue: Int)](cncontacttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cncontacttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: String](cncontact/identifier.md)
+### Identifying the Contact
+- [var identifier: String](./cncontact/identifier.md)
   A value that uniquely identifies a contact on the device.
-- [var contactType: CNContactType](cncontact/contacttype.md)
+- [var contactType: CNContactType](./cncontact/contacttype.md)
   An enum identifying the contact type.
 
 

@@ -1,7 +1,8 @@
 # init(representedObject:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated tree node that represents the specified object.
 
@@ -12,6 +13,10 @@ Initializes a newly allocated tree node that represents the specified object.
 
 ```swift
 init(representedObject modelObject: Any?)
+```
+
+```objc
+- (instancetype) initWithRepresentedObject:(id) modelObject;
 ```
 
 #### Return Value

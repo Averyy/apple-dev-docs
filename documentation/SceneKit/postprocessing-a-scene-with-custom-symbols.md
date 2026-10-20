@@ -1,6 +1,8 @@
 # Postprocessing a Scene With Custom Symbols
 
-**Framework**: SceneKit
+**Framework**: SceneKit  
+**Role**: Sample Code  
+**Download**: [PostprocessingASceneWithCustomSymbols.zip](https://docs-assets.developer.apple.com/published/f89f16c9e038/PostprocessingASceneWithCustomSymbols.zip)
 
 Create visual effects in a scene by defining a rendering technique with custom symbols.
 
@@ -14,7 +16,7 @@ Create visual effects in a scene by defining a rendering technique with custom s
 
 Games and 3D apps are often distinguishable because of unique visual effects.  Many games offer settings where users can select filters which change the visual aesthetic of a game.  For example, a user might select a grayscale filter to achieve a grittier feeling, or a pixelation filter make the game retro.
 
-This sample app uses an [`SCNTechnique`](scntechnique.md) with custom symbols to create a user-adjustable color filter for the scene. The sample app binds values for each custom symbol to the Metal shader used by the [`SCNTechnique`](scntechnique.md). The Metal shader accesses the bound values to produce the color filter effect in the scene.  See the “Defining a Technique” section of the [`SCNTechnique`](scntechnique.md) documentation for detailed information about the steps required to define a technique.
+This sample app uses an [`SCNTechnique`](./scntechnique.md) with custom symbols to create a user-adjustable color filter for the scene. The sample app binds values for each custom symbol to the Metal shader used by the [`SCNTechnique`](./scntechnique.md). The Metal shader accesses the bound values to produce the color filter effect in the scene.  See the “Defining a Technique” section of the [`SCNTechnique`](./scntechnique.md) documentation for detailed information about the steps required to define a technique.
 
 ##### Configure the Sample Code Project
 
@@ -55,9 +57,9 @@ In the key-value pair above, the key, on the left, is the name of the symbol as 
 
 ##### Bind a Value to Each Custom Symbol
 
-To bind values to the custom symbols, the sample project uses the [`setValue(_:forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkey:)) method of [`SCNTechnique`](scntechnique.md).  Once bound, the values are available in the Metal shading program.
+To bind values to the custom symbols, the sample project uses the [`setValue:forKey:`](../ObjectiveC/nsobject-swift.class/setvalue%28_,forkey%29.md) method of [`SCNTechnique`](./scntechnique.md).  Once bound, the values are available in the Metal shading program.
 
-Value bindings use the logical type that corresponds with the Metal type. For example, custom symbols defined in the technique with a type of `vec3`, with a type of `float3` in the shader, use a `SCNVector3` value when bound. Reference the table on the [`SCNShadable`](scnshadable.md) page of the documentation to identify corresponding types between GLSL, Metal, and Swift.
+Value bindings use the logical type that corresponds with the Metal type. For example, custom symbols defined in the technique with a type of `vec3`, with a type of `float3` in the shader, use a `SCNVector3` value when bound. Reference the table on the [`SCNShadable`](./scnshadable.md) page of the documentation to identify corresponding types between GLSL, Metal, and Swift.
 
 ##### Access Your Custom Symbols in Metal
 
@@ -78,17 +80,18 @@ fragment half4 myFragmentShader(VertexOut in [[stage_in]],
 
 ## See Also
 
-- [protocol SCNShadable](scnshadable.md)
+### Renderer Customization
+- [protocol SCNShadable](./scnshadable.md)
   Methods for customizing SceneKit’s rendering of geometry and materials using Metal or OpenGL shader programs.
-- [class SCNProgram](scnprogram.md)
+- [class SCNProgram](./scnprogram.md)
   A complete Metal or OpenGL shader program that replaces SceneKit’s rendering of a geometry or material.
-- [protocol SCNBufferStream](scnbufferstream.md)
+- [protocol SCNBufferStream](./scnbufferstream.md)
   An object that manages a Metal buffer used by a custom shader program.
-- [class SCNTechnique](scntechnique.md)
+- [class SCNTechnique](./scntechnique.md)
   A specification for augmenting or postprocessing SceneKit’s rendering of a scene using additional drawing passes with custom Metal or OpenGL shaders.
-- [protocol SCNTechniqueSupport](scntechniquesupport.md)
-  The common interface for SceneKit objects that support multipass rendering using [`SCNTechnique`](scntechnique.md) objects.
-- [protocol SCNNodeRendererDelegate](scnnoderendererdelegate.md)
+- [protocol SCNTechniqueSupport](./scntechniquesupport.md)
+  The common interface for SceneKit objects that support multipass rendering using [`SCNTechnique`](./scntechnique.md) objects.
+- [protocol SCNNodeRendererDelegate](./scnnoderendererdelegate.md)
   Methods you can implement to use your own custom Metal or OpenGL drawing code to render content for a node.
 
 

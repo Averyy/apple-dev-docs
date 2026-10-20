@@ -1,7 +1,8 @@
 # AppExtensionPoint.Attribute
 
 **Framework**: ExtensionFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that marks a type as an extension point attribute.
 
@@ -27,21 +28,22 @@ Types adopt this protocol if they comprise part of an extension point definition
 ## Relationships
 
 ### Conforming Types
-- [AppExtensionPoint.EnhancedSecurity](appextensionpoint/enhancedsecurity.md)
-- [AppExtensionPoint.Scope](appextensionpoint/scope.md)
-- [AppExtensionPoint.UserInterface](appextensionpoint/userinterface.md)
+- [AppExtensionPoint.EnhancedSecurity](./enhancedsecurity.md)
+- [AppExtensionPoint.Scope](./scope.md)
+- [AppExtensionPoint.UserInterface](./userinterface.md)
 
 ## See Also
 
-- [AppExtensionPoint.Definition](appextensionpoint/definition.md)
+### Declaring an extension point
+- [AppExtensionPoint.Definition](./definition.md)
   A property wrapper that a host app uses to declare the extension points it supports.
-- [AppExtensionPoint.Name](appextensionpoint/name.md)
+- [AppExtensionPoint.Name](./name.md)
   A type that defines the name of an extension point.
-- [AppExtensionPoint.UserInterface](appextensionpoint/userinterface.md)
+- [AppExtensionPoint.UserInterface](./userinterface.md)
   A type with that indicates whether the extension point displays UI from an app extension.
-- [AppExtensionPoint.EnhancedSecurity](appextensionpoint/enhancedsecurity.md)
+- [AppExtensionPoint.EnhancedSecurity](./enhancedsecurity.md)
   A type that indicates whether an extension point requires extra security.
-- [AppExtensionPoint.Scope](appextensionpoint/scope.md)
+- [AppExtensionPoint.Scope](./scope.md)
   A type that regulates which app extensions may access an extension point.
 
 

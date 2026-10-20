@@ -1,7 +1,8 @@
 # Get an Ad
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieves a single ad by its unique identifier.
 
@@ -10,7 +11,7 @@ Retrieves a single ad by its unique identifier.
 
 #### Discussion
 
-This endpoint retrieves a single ad by its ID. The response includes `systemStatus`, `displayStatus`, `systemStatusReasons`, and `systemStatusLimitingReasons`. To diagnose why an ad may not be delivering, use these fields together. See [`Ads Endpoints`](ads-endpoints.md) for the full status field semantics.
+This endpoint retrieves a single ad by its ID. The response includes `systemStatus`, `displayStatus`, `systemStatusReasons`, and `systemStatusLimitingReasons`. To diagnose why an ad may not be delivering, use these fields together. See [Ads Endpoints](./ads-endpoints.md) for the full status field semantics.
 
 The `displayStatus` field resolves to one of the following values:
 
@@ -52,7 +53,7 @@ Keep the following constraints in mind when reading a GET response:
 
 Response for an ad that is actively serving. The `systemStatus` field is `RUNNING` and the `displayStatus` field is `RUNNING`.
 
-```None
+```
 GET https://api.ads.apple.com/v1/ads/777888999
 ```
 
@@ -85,7 +86,7 @@ GET https://api.ads.apple.com/v1/ads/777888999
 
 Response for an ad whose ad creative is pending review. The `systemStatus` field is `NOT_RUNNING` with a reason of `AD_APPROVAL_PENDING`, and the `displayStatus` field is `PROCESSING`.
 
-```None
+```
 GET https://api.ads.apple.com/v1/ads/777888998
 ```
 
@@ -120,17 +121,33 @@ GET https://api.ads.apple.com/v1/ads/777888998
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AdResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad](post-ads.md)
+- [Create an Ad](./post-ads.md)
   Creates a new ad that links an ad creative to an ad group for delivery.
-- [Query Ads](post-ads-query.md)
+- [Query Ads](./post-ads-query.md)
   Searches and filters ads using structured query criteria including field filters, sorting, and pagination.
-- [Update an Ad](put-ads-_id_.md)
+- [Update an Ad](./put-ads-_id_.md)
   Updates the name or status of an existing ad by its unique identifier.
-- [Delete an Ad](delete-ads-_id_.md)
+- [Delete an Ad](./delete-ads-_id_.md)
   Soft-deletes an ad by its unique identifier, stopping delivery and removing it from active results.
 
 

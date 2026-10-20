@@ -1,7 +1,8 @@
 # handles
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handles of all remote members who receive an invite  to join the conversation.
 
@@ -20,7 +21,8 @@ final let handles: [Handle]
 
 ## See Also
 
-- [let isVideo: Bool](startconversationaction/isvideo.md)
+### Accessing action attributes
+- [let isVideo: Bool](./isvideo.md)
   A value that specifies if the conversation contains a video stream.
 
 

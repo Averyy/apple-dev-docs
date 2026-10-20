@@ -7,7 +7,7 @@ A constant that specifies that all pages of a document should be printed.
 ## Topics
 
 ### Constants
-- [var kPMPrintAllPages: Int](kpmprintallpages.md)
+- [var kPMPrintAllPages: Int](../kpmprintallpages.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # storyboard
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The storyboard from which the view controller was loaded.
 
@@ -14,13 +15,18 @@ The storyboard from which the view controller was loaded.
 var storyboard: NSStoryboard? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSStoryboard * storyboard;
+```
+
 #### Discussion
 
 If the view controller was not loaded from a storyboard, the value of this property is `nil`.
 
 ## See Also
 
-- [func dismiss(Any?)](nsviewcontroller/dismiss(_:)-3n76y.md)
+### Using a Storyboard
+- [func dismiss(Any?)](./dismiss%28_%29-3n76y.md)
 
 
 ---

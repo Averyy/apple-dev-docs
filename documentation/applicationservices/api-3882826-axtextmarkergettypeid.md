@@ -1,7 +1,8 @@
 # AXTextMarkerGetTypeID()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXTextMarkerGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID AXTextMarkerGetTypeID(void);
 ```
 
 

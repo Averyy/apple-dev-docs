@@ -1,43 +1,44 @@
 # BidirectionalCollection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [ReversedCollection.Index](reversedcollection/index.md)
+- [ReversedCollection.Index](./index.md)
   An index that traverses the same positions as an underlying index, with inverted traversal direction.
 ### Instance Properties
-- [var last: Self.Element?](reversedcollection/last.md)
+- [var last: Self.Element?](./last.md)
   The last element of the collection.
 ### Instance Methods
-- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](reversedcollection/difference(from:).md)
+- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](./difference%28from%29.md)
   Returns the difference needed to produce this collection’s ordered elements from the given collection.
-- [func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>](reversedcollection/difference(from:by:).md)
+- [func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>](./difference%28from,by%29.md)
   Returns the difference needed to produce this collection’s ordered elements from the given collection, using the given predicate as an equivalence test.
-- [func distance(from: ReversedCollection<Base>.Index, to: ReversedCollection<Base>.Index) -> Int](reversedcollection/distance(from:to:).md)
+- [func distance(from: ReversedCollection<Base>.Index, to: ReversedCollection<Base>.Index) -> Int](./distance%28from,to%29.md)
   Returns the distance between two indices.
-- [func dropLast(Int) -> Self.SubSequence](reversedcollection/droplast(_:).md)
+- [func dropLast(Int) -> Self.SubSequence](./droplast%28_%29.md)
   Returns a subsequence containing all but the specified number of final elements.
-- [func formIndex(before: inout Self.Index)](reversedcollection/formindex(before:).md)
+- [func formIndex(before: inout Self.Index)](./formindex%28before%29.md)
   Replaces the given index with its predecessor.
-- [func index(ReversedCollection<Base>.Index, offsetBy: Int) -> ReversedCollection<Base>.Index](reversedcollection/index(_:offsetby:).md)
+- [func index(ReversedCollection<Base>.Index, offsetBy: Int) -> ReversedCollection<Base>.Index](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(ReversedCollection<Base>.Index, offsetBy: Int, limitedBy: ReversedCollection<Base>.Index) -> ReversedCollection<Base>.Index?](reversedcollection/index(_:offsetby:limitedby:).md)
+- [func index(ReversedCollection<Base>.Index, offsetBy: Int, limitedBy: ReversedCollection<Base>.Index) -> ReversedCollection<Base>.Index?](./index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(after: ReversedCollection<Base>.Index) -> ReversedCollection<Base>.Index](reversedcollection/index(after:).md)
+- [func index(after: ReversedCollection<Base>.Index) -> ReversedCollection<Base>.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(before: ReversedCollection<Base>.Index) -> ReversedCollection<Base>.Index](reversedcollection/index(before:).md)
+- [func index(before: ReversedCollection<Base>.Index) -> ReversedCollection<Base>.Index](./index%28before%29.md)
   Returns the position immediately before the given index.
-- [func joined(separator: String) -> String](reversedcollection/joined(separator:)-3e82c.md)
+- [func joined(separator: String) -> String](./joined%28separator%29-3e82c.md)
   Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.
-- [func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](reversedcollection/last(where:).md)
+- [func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./last%28where%29.md)
   Returns the last element of the sequence that satisfies the given predicate.
-- [func lastIndex(of: Self.Element) -> Self.Index?](reversedcollection/lastindex(of:).md)
+- [func lastIndex(of: Self.Element) -> Self.Index?](./lastindex%28of%29.md)
   Returns the last index where the specified value appears in the collection.
-- [func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](reversedcollection/lastindex(where:).md)
+- [func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./lastindex%28where%29.md)
   Returns the index of the last element in the collection that matches the given predicate.
-- [func suffix(Int) -> Self.SubSequence](reversedcollection/suffix(_:).md)
+- [func suffix(Int) -> Self.SubSequence](./suffix%28_%29.md)
   Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
 
 

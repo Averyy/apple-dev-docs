@@ -1,7 +1,8 @@
 # assignmentRevocation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transaction was revoked by the organization administrator.
 

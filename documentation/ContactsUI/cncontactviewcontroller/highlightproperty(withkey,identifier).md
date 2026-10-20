@@ -1,7 +1,8 @@
 # highlightProperty(withKey:identifier:)
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Highlights the property of the contact being displayed.
 
@@ -15,6 +16,10 @@ Highlights the property of the contact being displayed.
 
 ```swift
 func highlightProperty(withKey key: String, identifier: String?)
+```
+
+```objc
+- (void) highlightPropertyWithKey:(NSString *) key identifier:(NSString *) identifier;
 ```
 
 #### Discussion

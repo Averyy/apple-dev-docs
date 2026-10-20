@@ -1,7 +1,8 @@
 # OSLogEnumerator.Options
 
 **Framework**: OSLog  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Option to control the direction of the iteration.
 
@@ -20,25 +21,29 @@ Option to control the direction of the iteration.
 struct Options
 ```
 
+```c
+enum OSLogEnumeratorOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Changing Directions
-- [static var reverse: OSLogEnumerator.Options](oslogenumerator/options/reverse.md)
+- [static var reverse: OSLogEnumerator.Options](./options/reverse.md)
   Tells the framework to iterate backwards.
 ### Initializers
-- [init(rawValue: UInt)](oslogenumerator/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

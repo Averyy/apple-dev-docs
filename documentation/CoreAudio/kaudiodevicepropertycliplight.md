@@ -1,11 +1,12 @@
 # kAudioDevicePropertyClipLight
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,23 +14,28 @@
 var kAudioDevicePropertyClipLight: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioDevicePropertyClipLight
+```
+
 ## See Also
 
-- [var kAudioDevicePropertyChannelNominalLineLevel: AudioObjectPropertySelector](kaudiodevicepropertychannelnominallinelevel.md)
-- [var kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString: AudioObjectPropertySelector](kaudiodevicepropertychannelnominallinelevelnameforidcfstring.md)
-- [var kAudioDevicePropertyChannelNominalLineLevels: AudioObjectPropertySelector](kaudiodevicepropertychannelnominallinelevels.md)
-- [var kAudioDevicePropertyClockSource: AudioObjectPropertySelector](kaudiodevicepropertyclocksource.md)
-- [var kAudioDevicePropertyClockSourceKindForID: AudioObjectPropertySelector](kaudiodevicepropertyclocksourcekindforid.md)
-- [var kAudioDevicePropertyClockSourceNameForIDCFString: AudioObjectPropertySelector](kaudiodevicepropertyclocksourcenameforidcfstring.md)
-- [var kAudioDevicePropertyClockSources: AudioObjectPropertySelector](kaudiodevicepropertyclocksources.md)
-- [var kAudioDevicePropertyDataSource: AudioObjectPropertySelector](kaudiodevicepropertydatasource.md)
-- [var kAudioDevicePropertyDataSourceKindForID: AudioObjectPropertySelector](kaudiodevicepropertydatasourcekindforid.md)
-- [var kAudioDevicePropertyDataSourceNameForIDCFString: AudioObjectPropertySelector](kaudiodevicepropertydatasourcenameforidcfstring.md)
-- [var kAudioDevicePropertyDataSources: AudioObjectPropertySelector](kaudiodevicepropertydatasources.md)
-- [var kAudioDevicePropertyHighPassFilterSetting: AudioObjectPropertySelector](kaudiodevicepropertyhighpassfiltersetting.md)
-- [var kAudioDevicePropertyHighPassFilterSettingNameForIDCFString: AudioObjectPropertySelector](kaudiodevicepropertyhighpassfiltersettingnameforidcfstring.md)
-- [var kAudioDevicePropertyHighPassFilterSettings: AudioObjectPropertySelector](kaudiodevicepropertyhighpassfiltersettings.md)
-- [var kAudioDevicePropertyJackIsConnected: AudioObjectPropertySelector](kaudiodevicepropertyjackisconnected.md)
+### Constants
+- [var kAudioDevicePropertyChannelNominalLineLevel: AudioObjectPropertySelector](./kaudiodevicepropertychannelnominallinelevel.md)
+- [var kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString: AudioObjectPropertySelector](./kaudiodevicepropertychannelnominallinelevelnameforidcfstring.md)
+- [var kAudioDevicePropertyChannelNominalLineLevels: AudioObjectPropertySelector](./kaudiodevicepropertychannelnominallinelevels.md)
+- [var kAudioDevicePropertyClockSource: AudioObjectPropertySelector](./kaudiodevicepropertyclocksource.md)
+- [var kAudioDevicePropertyClockSourceKindForID: AudioObjectPropertySelector](./kaudiodevicepropertyclocksourcekindforid.md)
+- [var kAudioDevicePropertyClockSourceNameForIDCFString: AudioObjectPropertySelector](./kaudiodevicepropertyclocksourcenameforidcfstring.md)
+- [var kAudioDevicePropertyClockSources: AudioObjectPropertySelector](./kaudiodevicepropertyclocksources.md)
+- [var kAudioDevicePropertyDataSource: AudioObjectPropertySelector](./kaudiodevicepropertydatasource.md)
+- [var kAudioDevicePropertyDataSourceKindForID: AudioObjectPropertySelector](./kaudiodevicepropertydatasourcekindforid.md)
+- [var kAudioDevicePropertyDataSourceNameForIDCFString: AudioObjectPropertySelector](./kaudiodevicepropertydatasourcenameforidcfstring.md)
+- [var kAudioDevicePropertyDataSources: AudioObjectPropertySelector](./kaudiodevicepropertydatasources.md)
+- [var kAudioDevicePropertyHighPassFilterSetting: AudioObjectPropertySelector](./kaudiodevicepropertyhighpassfiltersetting.md)
+- [var kAudioDevicePropertyHighPassFilterSettingNameForIDCFString: AudioObjectPropertySelector](./kaudiodevicepropertyhighpassfiltersettingnameforidcfstring.md)
+- [var kAudioDevicePropertyHighPassFilterSettings: AudioObjectPropertySelector](./kaudiodevicepropertyhighpassfiltersettings.md)
+- [var kAudioDevicePropertyJackIsConnected: AudioObjectPropertySelector](./kaudiodevicepropertyjackisconnected.md)
 
 
 ---

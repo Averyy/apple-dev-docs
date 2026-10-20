@@ -1,7 +1,8 @@
 # defaultCustomization(_:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the way customizable toolbar items with the default behavior behave.
 
@@ -28,7 +29,7 @@ Default customizable items support a variety of edits by the user.
 - A user can remove an item that is in the toolbar.
 - A user can move an item within the toolbar.
 
-By default, all default customizable items will be initially present in the toolbar. Provide a value of [`Visibility.hidden`](visibility/hidden.md) to this modifier to specify that items should initially be hidden from the user, and require them to add those items to the toolbar if desired.
+By default, all default customizable items will be initially present in the toolbar. Provide a value of [`Visibility.hidden`](../visibility/hidden.md) to this modifier to specify that items should initially be hidden from the user, and require them to add those items to the toolbar if desired.
 
 ```swift
 ContentView()
@@ -40,9 +41,9 @@ ContentView()
     }
 ```
 
-You can ensure that the user can always use an item with default customizability, even if it’s removed from the customizable toolbar. To do this, provide the [`alwaysAvailable`](toolbarcustomizationoptions/alwaysavailable.md) option. These items will remain in the overflow if the user removes them from the toolbar.
+You can ensure that the user can always use an item with default customizability, even if it’s removed from the customizable toolbar. To do this, provide the [`alwaysAvailable`](../toolbarcustomizationoptions/alwaysavailable.md) option. These items will remain in the overflow if the user removes them from the toolbar.
 
-Provide a value of [`alwaysAvailable`](toolbarcustomizationoptions/alwaysavailable.md) to the options parameter of this modifier to receive this behavior.
+Provide a value of [`alwaysAvailable`](../toolbarcustomizationoptions/alwaysavailable.md) to the options parameter of this modifier to receive this behavior.
 
 ```swift
 ContentView()
@@ -61,7 +62,8 @@ ContentView()
 
 ## See Also
 
-- [func defaultCustomization() -> some CustomizableToolbarContent](customizabletoolbarcontent/defaultcustomization.md)
+### Using default options
+- [func defaultCustomization() -> some CustomizableToolbarContent](./defaultcustomization%28%29.md)
   Configures customizable toolbar content with the default visibility and options.
 
 

@@ -1,14 +1,15 @@
 # uio_free
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void uio_free(uio_t a_uio);
 ```
 

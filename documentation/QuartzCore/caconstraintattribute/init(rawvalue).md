@@ -1,11 +1,12 @@
 # init(rawValue:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 

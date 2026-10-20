@@ -1,7 +1,8 @@
 # contentInsetsReference
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The boundary to reference when defining content insets.
 
@@ -18,23 +19,28 @@ The boundary to reference when defining content insets.
 var contentInsetsReference: UIContentInsetsReference { get set }
 ```
 
+```objc
+@property (nonatomic) UIContentInsetsReference contentInsetsReference;
+```
+
 #### Discussion
 
-This property represents the reference point to use when defining [`contentInsets`](nscollectionlayoutsection/contentinsets.md).
+This property represents the reference point to use when defining [`contentInsets`](./contentinsets.md).
 
-The default value of this property is [`UIContentInsetsReference.automatic`](uicontentinsetsreference/automatic.md), which means the section follows the layout configuration’s [`contentInsetsReference`](uicollectionviewcompositionallayoutconfiguration/contentinsetsreference.md).
+The default value of this property is [`UIContentInsetsReference.automatic`](../uicontentinsetsreference/automatic.md), which means the section follows the layout configuration’s [`contentInsetsReference`](../uicollectionviewcompositionallayoutconfiguration/contentinsetsreference.md).
 
 ## See Also
 
-- [var interGroupSpacing: CGFloat](nscollectionlayoutsection/intergroupspacing.md)
+### Configuring section spacing
+- [var interGroupSpacing: CGFloat](./intergroupspacing.md)
   The amount of space between the groups in the section.
-- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutsection/contentinsets.md)
+- [var contentInsets: NSDirectionalEdgeInsets](./contentinsets.md)
   The amount of space between the content of the section and its boundaries.
-- [var supplementaryContentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/supplementarycontentinsetsreference.md)
+- [var supplementaryContentInsetsReference: UIContentInsetsReference](./supplementarycontentinsetsreference.md)
   The reference boundary for content insets on boundary supplementary items.
-- [enum UIContentInsetsReference](uicontentinsetsreference.md)
+- [enum UIContentInsetsReference](../uicontentinsetsreference.md)
   Constants that describe the reference point of the content insets.
-- [var supplementariesFollowContentInsets: Bool](nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
+- [var supplementariesFollowContentInsets: Bool](./supplementariesfollowcontentinsets.md)
   A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 
 

@@ -1,14 +1,15 @@
 # xdrbuf_type
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum xdrbuf_type : unsigned int {
     ...
 } xdrbuf_type;
@@ -17,8 +18,8 @@ typedef enum xdrbuf_type : unsigned int {
 ## Topics
 
 ### Constants
-- [XDRBUF_BUFFER](xdrbuf_type/xdrbuf_buffer.md)
-- [XDRBUF_NONE](xdrbuf_type/xdrbuf_none.md)
+- [XDRBUF_BUFFER](./xdrbuf_type/xdrbuf_buffer.md)
+- [XDRBUF_NONE](./xdrbuf_type/xdrbuf_none.md)
 
 
 ---

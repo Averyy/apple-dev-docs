@@ -1,9 +1,10 @@
 # ByteCountFormatter.CountStyle.decimal
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Causes 1000 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](bytecountformatter/countstyle-swift.enum/file.md) or [`ByteCountFormatter.CountStyle.memory`](bytecountformatter/countstyle-swift.enum/memory.md) in most cases.
+Causes 1000 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](./file.md) or [`ByteCountFormatter.CountStyle.memory`](./memory.md) in most cases.
 
 **Availability**:
 - iOS 2.0+
@@ -20,14 +21,19 @@ Causes 1000 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.
 case decimal
 ```
 
+```c
+NSByteCountFormatterCountStyleDecimal
+```
+
 ## See Also
 
-- [ByteCountFormatter.CountStyle.file](bytecountformatter/countstyle-swift.enum/file.md)
+### Constants
+- [ByteCountFormatter.CountStyle.file](./file.md)
   Specifies display of file byte counts. The actual behavior for this is platform-specific; in macOS 10.8, this uses the decimal style, but that may change over time.
-- [ByteCountFormatter.CountStyle.memory](bytecountformatter/countstyle-swift.enum/memory.md)
+- [ByteCountFormatter.CountStyle.memory](./memory.md)
   Specifies display of memory byte counts. The actual behavior for this is platform-specific; in macOS 10.8, this uses the binary style, but that may change over time.
-- [ByteCountFormatter.CountStyle.binary](bytecountformatter/countstyle-swift.enum/binary.md)
-  Causes 1024 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](bytecountformatter/countstyle-swift.enum/file.md) or [`ByteCountFormatter.CountStyle.memory`](bytecountformatter/countstyle-swift.enum/memory.md) in most cases.
+- [ByteCountFormatter.CountStyle.binary](./binary.md)
+  Causes 1024 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](./file.md) or [`ByteCountFormatter.CountStyle.memory`](./memory.md) in most cases.
 
 
 ---

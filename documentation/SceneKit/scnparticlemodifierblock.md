@@ -1,18 +1,19 @@
 # SCNParticleModifierBlock
 
 **Framework**: SceneKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The signature for blocks called by SceneKit to modify particle properties on each frame of simulation, used by the [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) method.
+The signature for blocks called by SceneKit to modify particle properties on each frame of simulation, used by the [`addModifier(forProperties:at:modifier:)`](./scnparticlesystem/addmodifier%28forproperties,at,modifier%29.md) method.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,19 +21,23 @@ The signature for blocks called by SceneKit to modify particle properties on eac
 typealias SCNParticleModifierBlock = (UnsafeMutablePointer<UnsafeMutableRawPointer>, UnsafeMutablePointer<Int>, Int, Int, Float) -> Void
 ```
 
+```c
+typedef void (^)(void **, unsigned long *, long, long, float) SCNParticleModifierBlock;
+```
+
 #### Discussion
 
 The block takes the following parameters:
 
-- **data**: An array of floating-point values containing stripes of property data for the system’s particles. The width and format of each data stripe depend on the properties you specify when calling the [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) method.
-- **dataStride**: An array identifying the offset, in bytes, of each property’s value in the data stripe for each particle. The order of offsets in this array corresponds to the order of the `properties` array you specify when calling the [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) method.
+- **data**: An array of floating-point values containing stripes of property data for the system’s particles. The width and format of each data stripe depend on the properties you specify when calling the [`addModifier(forProperties:at:modifier:)`](./scnparticlesystem/addmodifier%28forproperties,at,modifier%29.md) method.
+- **dataStride**: An array identifying the offset, in bytes, of each property’s value in the data stripe for each particle. The order of offsets in this array corresponds to the order of the `properties` array you specify when calling the [`addModifier(forProperties:at:modifier:)`](./scnparticlesystem/addmodifier%28forproperties,at,modifier%29.md) method.
 - **start**: The index of the first particle’s data stripe in the `data` array.
 - **end**: The index of the last particle’s data stripe in the `data` array.
 - **deltaTime**: The elapsed time, in seconds, since the last frame of simulation.
 
 Use this block to change properties of individual particles on each frame of simulation.
 
-> ❗ **Important**:  Running your own code to update particle properties every frame can have a severe impact on rendering performance. If the behavior over time that you want for your particle system can be described more declaratively, use the [`propertyControllers`](scnparticlesystem/propertycontrollers.md) property and [`SCNParticlePropertyController`](scnparticlepropertycontroller.md) class instead. If you need to change particle properties only at certain times (rather than continuously), add a handler block for an event using the [`handle(_:forProperties:handler:)`](scnparticlesystem/handle(_:forproperties:handler:).md) method.
+> ❗ **Important**:  Running your own code to update particle properties every frame can have a severe impact on rendering performance. If the behavior over time that you want for your particle system can be described more declaratively, use the [`propertyControllers`](./scnparticlesystem/propertycontrollers.md) property and [`SCNParticlePropertyController`](./scnparticlepropertycontroller.md) class instead. If you need to change particle properties only at certain times (rather than continuously), add a handler block for an event using the [`handle(_:forProperties:handler:)`](./scnparticlesystem/handle%28_,forproperties,handler%29.md) method.
 
 The following example illustrates setting up a modifier block that alters particle’s position and velocity:
 
@@ -59,18 +64,19 @@ The following example illustrates setting up a modifier block that alters partic
 
 ## See Also
 
-- [var propertyControllers: [SCNParticleSystem.ParticleProperty : SCNParticlePropertyController]?](scnparticlesystem/propertycontrollers.md)
+### Modifying Particles Over Time
+- [var propertyControllers: [SCNParticleSystem.ParticleProperty : SCNParticlePropertyController]?](./scnparticlesystem/propertycontrollers.md)
   A dictionary that optionally associates particle properties with objects that animate a property’s value for each particle.
-- [func addModifier(forProperties: [SCNParticleSystem.ParticleProperty], at: SCNParticleModifierStage, modifier: SCNParticleModifierBlock)](scnparticlesystem/addmodifier(forproperties:at:modifier:).md)
+- [func addModifier(forProperties: [SCNParticleSystem.ParticleProperty], at: SCNParticleModifierStage, modifier: SCNParticleModifierBlock)](./scnparticlesystem/addmodifier%28forproperties,at,modifier%29.md)
   Adds a block that modifies particle properties, to be executed each time SceneKit renders a frame.
-- [func removeModifiers(at: SCNParticleModifierStage)](scnparticlesystem/removemodifiers(at:).md)
+- [func removeModifiers(at: SCNParticleModifierStage)](./scnparticlesystem/removemodifiers%28at%29.md)
   Removes particle modifier blocks for the specified stage of the particle simulation.
-- [func removeAllModifiers()](scnparticlesystem/removeallmodifiers.md)
+- [func removeAllModifiers()](./scnparticlesystem/removeallmodifiers%28%29.md)
   Removes all particle modifier blocks associated with the particle system.
-- [SCNParticleSystem.ParticleProperty](scnparticlesystem/particleproperty.md)
-  Keys identifying properties of individual particles, used by the [`propertyControllers`](scnparticlesystem/propertycontrollers.md) dictionary and the [`handle(_:forProperties:handler:)`](scnparticlesystem/handle(_:forproperties:handler:).md) and [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) methods.
-- [enum SCNParticleModifierStage](scnparticlemodifierstage.md)
-  Stages of SceneKit’s particle simulation process into which you can insert modifier blocks, used by the [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) method.
+- [SCNParticleSystem.ParticleProperty](./scnparticlesystem/particleproperty.md)
+  Keys identifying properties of individual particles, used by the [`propertyControllers`](./scnparticlesystem/propertycontrollers.md) dictionary and the [`handle(_:forProperties:handler:)`](./scnparticlesystem/handle%28_,forproperties,handler%29.md) and [`addModifier(forProperties:at:modifier:)`](./scnparticlesystem/addmodifier%28forproperties,at,modifier%29.md) methods.
+- [enum SCNParticleModifierStage](./scnparticlemodifierstage.md)
+  Stages of SceneKit’s particle simulation process into which you can insert modifier blocks, used by the [`addModifier(forProperties:at:modifier:)`](./scnparticlesystem/addmodifier%28forproperties,at,modifier%29.md) method.
 
 
 ---

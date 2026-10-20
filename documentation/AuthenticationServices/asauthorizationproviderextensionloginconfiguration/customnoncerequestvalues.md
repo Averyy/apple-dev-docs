@@ -1,7 +1,8 @@
 # customNonceRequestValues
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom values to add to the server nonce POST request body.
 
@@ -14,17 +15,22 @@ Custom values to add to the server nonce POST request body.
 var customNonceRequestValues: [URLQueryItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSURLQueryItem *> * customNonceRequestValues;
+```
+
 ## Mentions
 
-- [Obtaining a server nonce](obtaining-a-server-nonce.md)
+- [Obtaining a server nonce](../obtaining-a-server-nonce.md)
 
 ## See Also
 
-- [var nonceEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/nonceendpointurl.md)
+### Configuring the server nonce
+- [var nonceEndpointURL: URL](./nonceendpointurl.md)
   The URL to retrieve a one-time use value from the server.
-- [var nonceResponseKeypath: String](asauthorizationproviderextensionloginconfiguration/nonceresponsekeypath.md)
+- [var nonceResponseKeypath: String](./nonceresponsekeypath.md)
   The keypath in the response that contains the one-time use value.
-- [var serverNonceClaimName: String](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md)
+- [var serverNonceClaimName: String](./servernonceclaimname.md)
   The name of the claim to include in authentication requests.
 
 

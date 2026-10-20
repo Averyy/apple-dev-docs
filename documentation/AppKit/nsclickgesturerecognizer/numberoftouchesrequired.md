@@ -1,9 +1,10 @@
 # numberOfTouchesRequired
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The number of touches required in an [`NSTouchBar`](nstouchbar.md) object for the gesture recognizer to match.
+The number of touches required in an [`NSTouchBar`](../nstouchbar.md) object for the gesture recognizer to match.
 
 **Availability**:
 - macOS 10.12.2+
@@ -14,11 +15,16 @@ The number of touches required in an [`NSTouchBar`](nstouchbar.md) object for th
 var numberOfTouchesRequired: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfTouchesRequired;
+```
+
 ## See Also
 
-- [var buttonMask: Int](nsclickgesturerecognizer/buttonmask.md)
+### Configuring the gesture
+- [var buttonMask: Int](./buttonmask.md)
   A bit mask of the button (or buttons) required to recognize this click.
-- [var numberOfClicksRequired: Int](nsclickgesturerecognizer/numberofclicksrequired.md)
+- [var numberOfClicksRequired: Int](./numberofclicksrequired.md)
   The number of clicks required to match.
 
 

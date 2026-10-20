@@ -1,7 +1,8 @@
 # CustomerReviewSummarization.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a customer review summarization resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a customer review summarization resource.
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewSummarization.Attributes
 ```
 

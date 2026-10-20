@@ -1,7 +1,8 @@
 # fitted(to:validateOn:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the tabular transformer fitted using the provided tabular estimator.
 
@@ -32,7 +33,8 @@ The a fitted tabular transformer.
 
 ## See Also
 
-- [protocol Transformer](transformer.md)
+### Fitting
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

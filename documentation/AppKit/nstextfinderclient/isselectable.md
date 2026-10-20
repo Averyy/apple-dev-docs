@@ -1,12 +1,13 @@
 # isSelectable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the text is selectable.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Returns whether the text is selectable.
 optional var isSelectable: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSelectable) BOOL selectable;
+```
+
 #### Discussion
 
-If this properties is not implemented, the text finder will act as if they returned [`true`](https://developer.apple.com/documentation/swift/true).
+If this properties is not implemented, the text finder will act as if they returned [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var allowsMultipleSelection: Bool](nstextfinderclient/allowsmultipleselection.md)
+### Selection Information
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   Returns whether multiple items can be selected.
-- [var firstSelectedRange: NSRange](nstextfinderclient/firstselectedrange.md)
+- [var firstSelectedRange: NSRange](./firstselectedrange.md)
   Returns the currently selected range.
-- [var selectedRanges: [NSValue]](nstextfinderclient/selectedranges.md)
+- [var selectedRanges: [NSValue]](./selectedranges.md)
   Returns an array of selected ranges.
 
 

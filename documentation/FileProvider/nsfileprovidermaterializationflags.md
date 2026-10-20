@@ -1,7 +1,8 @@
 # NSFileProviderMaterializationFlags
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Flags that provides additional information about the provided content.
 
@@ -14,32 +15,37 @@ Flags that provides additional information about the provided content.
 struct NSFileProviderMaterializationFlags
 ```
 
+```c
+enum NSFileProviderMaterializationFlags : NSUInteger;
+```
+
 ## Topics
 
 ### Accessing Flags
-- [static var knownSparseRanges: NSFileProviderMaterializationFlags](nsfileprovidermaterializationflags/knownsparseranges.md)
+- [static var knownSparseRanges: NSFileProviderMaterializationFlags](./nsfileprovidermaterializationflags/knownsparseranges.md)
   A flag indicating that the system should consider the file fully materialized, even if it’s a sparse file.
 ### Creating Flags
-- [init(rawValue: UInt)](nsfileprovidermaterializationflags/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsfileprovidermaterializationflags/init%28rawvalue%29.md)
   Creates a new materialization flag.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func fetchPartialContents(for: NSFileProviderItemIdentifier, version: NSFileProviderItemVersion, request: NSFileProviderRequest, minimalRange: NSRange, aligningTo: Int, options: NSFileProviderFetchContentsOptions, completionHandler: (URL?, NSFileProviderItem?, NSRange, NSFileProviderMaterializationFlags, (any Error)?) -> Void) -> Progress](nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:).md)
+### Fetching Ranges from a File
+- [func fetchPartialContents(for: NSFileProviderItemIdentifier, version: NSFileProviderItemVersion, request: NSFileProviderRequest, minimalRange: NSRange, aligningTo: Int, options: NSFileProviderFetchContentsOptions, completionHandler: (URL?, NSFileProviderItem?, NSRange, NSFileProviderMaterializationFlags, (any Error)?) -> Void) -> Progress](./nsfileproviderpartialcontentfetching/fetchpartialcontents%28for,version,request,minimalrange,aligningto,options,completionhandler%29.md)
   Tells the file provider to download the requested item from remote storage.
-- [struct NSFileProviderFetchContentsOptions](nsfileproviderfetchcontentsoptions.md)
+- [struct NSFileProviderFetchContentsOptions](./nsfileproviderfetchcontentsoptions.md)
   Options for fetching a range of data from a file.
 
 

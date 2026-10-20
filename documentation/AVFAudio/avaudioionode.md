@@ -1,7 +1,8 @@
 # AVAudioIONode
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that performs audio input or output in the engine.
 
@@ -20,58 +21,63 @@ An object that performs audio input or output in the engine.
 class AVAudioIONode
 ```
 
+```objc
+@interface AVAudioIONode : AVAudioNode
+```
+
 #### Overview
 
-When rendering to and from an audio device in macOS, [`AVAudioInputNode`](avaudioinputnode.md) and [`AVAudioOutputNode`](avaudiooutputnode.md) communicate with the system’s default input and output devices. In iOS, they communicate with the devices appropriate to the app’s [`AVAudioSession`](avaudiosession.md) category, configurations, and user actions, such as connecting or disconnecting external devices.
+When rendering to and from an audio device in macOS, [`AVAudioInputNode`](./avaudioinputnode.md) and [`AVAudioOutputNode`](./avaudiooutputnode.md) communicate with the system’s default input and output devices. In iOS, they communicate with the devices appropriate to the app’s [`AVAudioSession`](./avaudiosession.md) category, configurations, and user actions, such as connecting or disconnecting external devices.
 
-In the manual rendering mode, [`AVAudioInputNode`](avaudioinputnode.md) and [`AVAudioOutputNode`](avaudiooutputnode.md) perform the input and output in the engine in response to the client’s request.
+In the manual rendering mode, [`AVAudioInputNode`](./avaudioinputnode.md) and [`AVAudioOutputNode`](./avaudiooutputnode.md) perform the input and output in the engine in response to the client’s request.
 
 ## Topics
 
 ### Getting the Audio Unit
-- [func withAudioUnit<R, E>((borrowing AudioUnit?) throws(E) -> R) throws(E) -> R](avaudioionode/withaudiounit(_:)-57kv.md)
+- [func withAudioUnit<R, E>((borrowing AudioUnit?) throws(E) -> R) throws(E) -> R](./avaudioionode/withaudiounit%28_%29-57kv.md)
   Provides scoped access to the I/O node’s AudioUnit
-- [func withAudioUnit<R, E>((borrowing AudioUnit?) throws(E) -> R) throws(E) -> R](avaudioionode/withaudiounit(_:)-6i8ld.md)
+- [func withAudioUnit<R, E>((borrowing AudioUnit?) throws(E) -> R) throws(E) -> R](./avaudioionode/withaudiounit%28_%29-6i8ld.md)
   Provides scoped access to the I/O node’s AudioUnit
-- [var audioUnit: AudioUnit?](avaudioionode/audiounit-1bqu3.md)
-- [var audioUnit: AudioUnit?](avaudioionode/audiounit-1caha.md)
+- [var audioUnit: AudioUnit?](./avaudioionode/audiounit-1bqu3.md)
+- [var audioUnit: AudioUnit?](./avaudioionode/audiounit-1caha.md)
 ### Getting the I/O latency
-- [var presentationLatency: TimeInterval](avaudioionode/presentationlatency.md)
+- [var presentationLatency: TimeInterval](./avaudioionode/presentationlatency.md)
   The presentation or hardware latency, applicable when rendering to or from an audio device.
 ### Enabling voice processing
-- [func setVoiceProcessingEnabled(Bool) throws](avaudioionode/setvoiceprocessingenabled(_:).md)
+- [func setVoiceProcessingEnabled(Bool) throws](./avaudioionode/setvoiceprocessingenabled%28_%29.md)
   Enables or disables voice processing on the I/O node.
-- [var isVoiceProcessingEnabled: Bool](avaudioionode/isvoiceprocessingenabled.md)
+- [var isVoiceProcessingEnabled: Bool](./avaudioionode/isvoiceprocessingenabled.md)
   A Boolean value that indicates whether voice processing is in an enabled state.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioNode](avaudionode.md)
+- [AVAudioNode](./avaudionode.md)
 ### Inherited By
-- [AVAudioInputNode](avaudioinputnode.md)
-- [AVAudioOutputNode](avaudiooutputnode.md)
+- [AVAudioInputNode](./avaudioinputnode.md)
+- [AVAudioOutputNode](./avaudiooutputnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Using voice processing](using-voice-processing.md)
+### Engine and nodes
+- [Using voice processing](./using-voice-processing.md)
   Add voice-processing capabilities to your app by using audio engine.
-- [class AVAudioEngine](avaudioengine.md)
+- [class AVAudioEngine](./avaudioengine.md)
   An object that manages a graph of audio nodes, controls playback, and configures real-time rendering constraints.
-- [class AVAudioInputNode](avaudioinputnode.md)
+- [class AVAudioInputNode](./avaudioinputnode.md)
   An object that connects to the system’s audio input.
-- [class AVAudioOutputNode](avaudiooutputnode.md)
+- [class AVAudioOutputNode](./avaudiooutputnode.md)
   An object that connects to the system’s audio output.
-- [class AVAudioNode](avaudionode.md)
+- [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
 
 

@@ -1,25 +1,27 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the action object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [SetAbortedHandler](osaction/setabortedhandler.md)
+### Configuring the Action
+- [SetAbortedHandler](./setabortedhandler.md)
   Install a handler for the system to call when no other processes reference the action object.
 
 

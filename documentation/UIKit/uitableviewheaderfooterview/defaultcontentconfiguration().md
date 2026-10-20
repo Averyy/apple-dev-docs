@@ -1,7 +1,8 @@
 # defaultContentConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a default list content configuration for the view’s style.
 
@@ -10,7 +11,7 @@ Retrieves a default list content configuration for the view’s style.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,19 +26,20 @@ A default list content configuration. The system determines default values for t
 
 #### Discussion
 
-The default content configuration has preconfigured default styling, but doesn’t contain any content. After you get the default configuration, you assign your content to it, customize any other properties, and assign it to the view as the current [`contentConfiguration`](uitableviewheaderfooterview/contentconfiguration-6b4eg.md).
+The default content configuration has preconfigured default styling, but doesn’t contain any content. After you get the default configuration, you assign your content to it, customize any other properties, and assign it to the view as the current [`contentConfiguration`](./contentconfiguration-6b4eg.md).
 
 ## See Also
 
-- [var contentConfiguration: (any UIContentConfiguration)?](uitableviewheaderfooterview/contentconfiguration-6b4eg.md)
+### Managing the content
+- [var contentConfiguration: (any UIContentConfiguration)?](./contentconfiguration-6b4eg.md)
   The current content configuration of the view.
-- [var automaticallyUpdatesContentConfiguration: Bool](uitableviewheaderfooterview/automaticallyupdatescontentconfiguration.md)
+- [var automaticallyUpdatesContentConfiguration: Bool](./automaticallyupdatescontentconfiguration.md)
   A Boolean value that determines whether the view automatically updates its content configuration when its state changes.
-- [var contentView: UIView](uitableviewheaderfooterview/contentview.md)
+- [var contentView: UIView](./contentview.md)
   The content view of the header or footer.
-- [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
+- [var textLabel: UILabel?](./textlabel.md)
   A primary text label for the view.
-- [var detailTextLabel: UILabel?](uitableviewheaderfooterview/detailtextlabel.md)
+- [var detailTextLabel: UILabel?](./detailtextlabel.md)
   A detail text label for the view.
 
 

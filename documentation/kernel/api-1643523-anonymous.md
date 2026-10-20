@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBFunctionRemoteWakeCapableBit](1643523-anonymous/kusbfunctionremotewakecapablebit.md)
-- [kUSBFunctionRemoteWakeEnableBit](1643523-anonymous/kusbfunctionremotewakeenablebit.md)
-- [kUSBFunctionRemoteWakeupBit](1643523-anonymous/kusbfunctionremotewakeupbit.md)
-- [kUSBLowPowerSuspendStateBit](1643523-anonymous/kusblowpowersuspendstatebit.md)
+- [kUSBFunctionRemoteWakeCapableBit](./api-1643523-anonymous/kusbfunctionremotewakecapablebit.md)
+- [kUSBFunctionRemoteWakeEnableBit](./api-1643523-anonymous/kusbfunctionremotewakeenablebit.md)
+- [kUSBFunctionRemoteWakeupBit](./api-1643523-anonymous/kusbfunctionremotewakeupbit.md)
+- [kUSBLowPowerSuspendStateBit](./api-1643523-anonymous/kusblowpowersuspendstatebit.md)
 
 
 ---

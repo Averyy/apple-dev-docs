@@ -1,7 +1,8 @@
 # SpotlightSearchTool.GuidanceLevel.focused(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to search only specific types of content.
 
@@ -20,7 +21,7 @@ case focused(SpotlightSearchTool.ContentDomain = .items)
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
 #### Discussion
 
@@ -28,9 +29,10 @@ Choose this option to search attributes only for the specified types of content.
 
 ## See Also
 
-- [SpotlightSearchTool.GuidanceLevel.complete](spotlightsearchtool/guidancelevel/complete.md)
+### Getting the guidance levels
+- [SpotlightSearchTool.GuidanceLevel.complete](./complete.md)
   An option to use all available search techniques.
-- [case dynamic(SpotlightSearchTool.GuidanceProfile)](spotlightsearchtool/guidancelevel/dynamic(_:).md)
+- [case dynamic(SpotlightSearchTool.GuidanceProfile)](./dynamic%28_%29.md)
   An option to search using only the specified techniques.
 
 

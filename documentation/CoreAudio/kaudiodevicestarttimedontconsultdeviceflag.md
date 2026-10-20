@@ -1,11 +1,12 @@
 # kAudioDeviceStartTimeDontConsultDeviceFlag
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioDeviceStartTimeDontConsultDeviceFlag: UInt32 { get }
 ```
 
+```c
+kAudioDeviceStartTimeDontConsultDeviceFlag
+```
+
 ## See Also
 
-- [var kAudioDeviceStartTimeDontConsultHALFlag: UInt32](kaudiodevicestarttimedontconsulthalflag.md)
-- [var kAudioDeviceStartTimeIsInputFlag: UInt32](kaudiodevicestarttimeisinputflag.md)
+### Constants
+- [var kAudioDeviceStartTimeDontConsultHALFlag: UInt32](./kaudiodevicestarttimedontconsulthalflag.md)
+- [var kAudioDeviceStartTimeIsInputFlag: UInt32](./kaudiodevicestarttimeisinputflag.md)
 
 
 ---

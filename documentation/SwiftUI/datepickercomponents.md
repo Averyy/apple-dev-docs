@@ -1,7 +1,8 @@
 # DatePickerComponents
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The date and time components that a date picker shows.
 
@@ -21,7 +22,7 @@ struct DatePickerComponents
 
 #### Overview
 
-Pass a value of this type as the `displayedComponents` argument of a [`DatePicker`](datepicker.md) initializer to choose which parts of a date someone can edit. Combine options to show more than one group.
+Pass a value of this type as the `displayedComponents` argument of a [`DatePicker`](./datepicker.md) initializer to choose which parts of a date someone can edit. Combine options to show more than one group.
 
 ```swift
 DatePicker(
@@ -31,32 +32,33 @@ DatePicker(
 )
 ```
 
-A picker shows `[.hourAndMinute, .date]` unless you choose otherwise. Each option respects the current locale, so [`date`](datepickercomponents/date.md) orders the day, month, and year the way the person’s region expects.
+A picker shows `[.hourAndMinute, .date]` unless you choose otherwise. Each option respects the current locale, so [`date`](./datepickercomponents/date.md) orders the day, month, and year the way the person’s region expects.
 
 ## Topics
 
 ### Getting date picker components
-- [static let date: DatePickerComponents](datepickercomponents/date.md)
+- [static let date: DatePickerComponents](./datepickercomponents/date.md)
   Displays day, month, and year based on the locale
-- [static let hourAndMinute: DatePickerComponents](datepickercomponents/hourandminute.md)
+- [static let hourAndMinute: DatePickerComponents](./datepickercomponents/hourandminute.md)
   Displays hour and minute components based on the locale
-- [static let hourMinuteAndSecond: DatePickerComponents](datepickercomponents/hourminuteandsecond.md)
+- [static let hourMinuteAndSecond: DatePickerComponents](./datepickercomponents/hourminuteandsecond.md)
   Displays hour, minute and second components based on the locale
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [DatePicker.Components](datepicker/components.md)
+### Setting date picker components
+- [DatePicker.Components](./datepicker/components.md)
 
 
 ---

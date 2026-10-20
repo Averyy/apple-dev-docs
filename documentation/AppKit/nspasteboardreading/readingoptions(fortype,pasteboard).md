@@ -1,7 +1,8 @@
 # readingOptions(forType:pasteboard:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns options for reading data of a specified type from a given pasteboard.
 
@@ -14,9 +15,13 @@ Returns options for reading data of a specified type from a given pasteboard.
 optional static func readingOptions(forType type: NSPasteboard.PasteboardType, pasteboard: NSPasteboard) -> NSPasteboard.ReadingOptions
 ```
 
+```objc
++ (NSPasteboardReadingOptions) readingOptionsForType:(NSPasteboardType) type pasteboard:(NSPasteboard *) pasteboard;
+```
+
 #### Return Value
 
-Options for reading data of `type` from `pasteboard`. For a list of valid values, see [`NSPasteboard.ReadingOptions`](nspasteboard/readingoptions.md).
+Options for reading data of `type` from `pasteboard`. For a list of valid values, see [`NSPasteboard.ReadingOptions`](../nspasteboard/readingoptions.md).
 
 #### Discussion
 
@@ -24,14 +29,17 @@ Do not perform other pasteboard operations in this method implementation.
 
 ## Parameters
 
-- `type`: A UTI supported by instances of the receiver for reading (one of the types returned by [`readableTypes(for:)`](nspasteboardreading/readabletypes(for:).md)).
-- `pasteboard`: A pasteboard. You can use the pasteboard argument to provide return different based on the pasteboard name, should you need to do so.
+- `type`: A UTI supported by instances of the receiver for reading (one of the types returned by [`readableTypes(for:)`](./readabletypes%28for%29.md)).
+- `pasteboard`: A pasteboard.
+
+  You can use the pasteboard argument to provide return different based on the pasteboard name, should you need to do so.
 
 ## See Also
 
-- [static func readableTypes(for: NSPasteboard) -> [NSPasteboard.PasteboardType]](nspasteboardreading/readabletypes(for:).md)
+### Reading From the Pasteboard
+- [static func readableTypes(for: NSPasteboard) -> [NSPasteboard.PasteboardType]](./readabletypes%28for%29.md)
   Returns an array of uniform type identifier strings of data types the receiver can read from the pasteboard and initialize from.
-- [NSPasteboard.ReadingOptions](nspasteboard/readingoptions.md)
+- [NSPasteboard.ReadingOptions](../nspasteboard/readingoptions.md)
   Options that specify how to interpret data on the pasteboard when initializing pasteboard data.
 
 

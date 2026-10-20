@@ -1,7 +1,8 @@
 # replace(using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a Metal texture that your app’s shaders can write to when they run on a GPU.
 
@@ -26,7 +27,7 @@ The buffer’s contents are in an uninitialized state.
 
 ## Parameters
 
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
+- `commandBuffer`: The [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
 
 
 ---

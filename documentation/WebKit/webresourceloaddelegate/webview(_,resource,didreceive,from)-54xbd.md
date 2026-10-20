@@ -1,17 +1,22 @@
 # webView(_:resource:didReceive:from:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when an authentication challenge has been received for a resource.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, resource identifier: Any!, didReceive challenge: URLAuthenticationChallenge!, from dataSource: WebDataSource!)
+```
+
+```objc
+- (void) webView:(WebView *) sender resource:(id) identifier didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge fromDataSource:(WebDataSource *) dataSource;
 ```
 
 ## Parameters
@@ -23,7 +28,8 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, didReceive 
 
 ## See Also
 
-- [func webView(WebView!, resource: Any!, didCancel: URLAuthenticationChallenge!, from: WebDataSource!)](webresourceloaddelegate/webview(_:resource:didcancel:from:).md)
+### Authenticating Resources
+- [func webView(WebView!, resource: Any!, didCancel: URLAuthenticationChallenge!, from: WebDataSource!)](./webview%28_,resource,didcancel,from%29.md)
   Invoked when an authentication challenge for a resource was canceled.
 
 

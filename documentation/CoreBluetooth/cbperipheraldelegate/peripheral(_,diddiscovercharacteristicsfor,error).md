@@ -1,7 +1,8 @@
 # peripheral(_:didDiscoverCharacteristicsFor:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the peripheral found characteristics for a service.
 
@@ -20,9 +21,13 @@ Tells the delegate that the peripheral found characteristics for a service.
 optional func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didDiscoverCharacteristicsForService:(CBService *) service error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method when your app calls the [`discoverCharacteristics(_:for:)`](cbperipheral/discovercharacteristics(_:for:).md) method. If the peripheral successfully discovers the characteristics of the specified service, you can access them through the service’s [`characteristics`](cbservice/characteristics.md) property. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method when your app calls the [`discoverCharacteristics(_:for:)`](../cbperipheral/discovercharacteristics%28_,for%29.md) method. If the peripheral successfully discovers the characteristics of the specified service, you can access them through the service’s [`characteristics`](../cbservice/characteristics.md) property. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Core Bluetooth invokes this method when your app calls the [`discoverCharacteris
 
 ## See Also
 
-- [func peripheral(CBPeripheral, didDiscoverDescriptorsFor: CBCharacteristic, error: (any Error)?)](cbperipheraldelegate/peripheral(_:diddiscoverdescriptorsfor:error:).md)
+### Discovering Characteristics and their Descriptors
+- [func peripheral(CBPeripheral, didDiscoverDescriptorsFor: CBCharacteristic, error: (any Error)?)](./peripheral%28_,diddiscoverdescriptorsfor,error%29.md)
   Tells the delegate that the peripheral found descriptors for a characteristic.
 
 

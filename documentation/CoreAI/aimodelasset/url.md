@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file URL of the model asset bundle on disk.
 
@@ -20,9 +21,10 @@ let url: URL
 
 ## See Also
 
-- [var metadata: AIModelAsset.Metadata](aimodelasset/metadata-swift.property.md)
+### Inspecting an asset
+- [var metadata: AIModelAsset.Metadata](./metadata-swift.property.md)
   The author-provided metadata for the model asset.
-- [func summary(includingStatistics: Bool) throws -> AIModelAsset.Summary?](aimodelasset/summary(includingstatistics:).md)
+- [func summary(includingStatistics: Bool) throws -> AIModelAsset.Summary?](./summary%28includingstatistics%29.md)
   Returns the model summary.
 
 

@@ -43,8 +43,8 @@ There are 3 general ways to select and use concrete Downloader and Tokenizer imp
 - using an integration package
 - using [MLXHuggingFace](MLXHuggingFace) macros
 
-If you are <doc:upgrade> from mlx-swift-lm 2.x the macros will be the
-simplest way, but consider <doc:#Integration-Packages> as there are alternate
+If you are [Upgrade From 2.x Release](upgrade.md) from mlx-swift-lm 2.x the macros will be the
+simplest way, but consider [Integration Packages](#Integration-Packages) as there are alternate
 implementations that may provide features and capabilities that you want.
 
 ### Implementing Protocols
@@ -59,7 +59,7 @@ mlx-swift-lm requires implementation of at least the two tokenizer protocols:
 - ``Tokenizer`` -- adapt the concrete tokenizers to the mlx-swift-lm protocol.
 - ``TokenizerLoader`` -- factory for ``Tokenizer`` implementations.
 
-You can look at <doc:#Integration-Packages> implementations for examples
+You can look at [Integration Packages](#Integration-Packages) implementations for examples
 of how to write these -- there are only a few properties and methods
 and they typically have trivial mappings to the concrete implementation.
 
@@ -136,14 +136,14 @@ So which adapter do you chose?
 No additional integration packages are provided at this time, but feel free to
 contribute one!
 
-See <doc:#Xcode-projects> for information about how to hook it up.
+See [Xcode projects](#Xcode-projects) for information about how to hook it up.
 
 ### MLXHuggingFace Macros
 
 To provide parity with mlx-swift-lm 2.x there is a built in integration with
 the HuggingFace downloader and tokenizer implementations using macros.
 
-Add these dependencies to your project (see <doc:#Xcode-projects>):
+Add these dependencies to your project (see [Xcode projects](#Xcode-projects)):
 
 - [https://github.com/huggingface/swift-huggingface](https://github.com/huggingface/swift-huggingface)
 - [https://github.com/huggingface/swift-transformers](https://github.com/huggingface/swift-transformers)
@@ -195,10 +195,10 @@ print(try await session.respond(to: "What are two things to see in San Francisco
 print(try await session.respond(to: "How about a great place to eat?"))
 ```
 
-`#hubDownloader()` provides an integration just like what is shown in <doc:#Implementing-Protocols> and `#huggingFaceTokenizerLoader()`
+`#hubDownloader()` provides an integration just like what is shown in [Implementing Protocols](#Implementing-Protocols) and `#huggingFaceTokenizerLoader()`
 provides something similar to load the tokenizers.
 
-See <doc:upgrade> for more information on upgrading from a 2.x release.
+See [Upgrade From 2.x Release](upgrade.md) for more information on upgrading from a 2.x release.
 
 ## Xcode projects
 
@@ -222,7 +222,7 @@ In your Package.swift add a reference to mlx-swift-lm, chosing either the `main`
 
 Beyond that, chose one of the 3 integration methods and add either the adapter packages OR the implementation packages if using macros/local implemenentation.  See <doc#Integration-Packages>.
 
-You can use the <doc:#MLXHuggingFace-Macros> like this:
+You can use the [MLXHuggingFace Macros](#MLXHuggingFace-Macros) like this:
 
 ```swift
 .package(url: "https://github.com/huggingface/swift-huggingface", from: "0.9.0"),

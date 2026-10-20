@@ -1,7 +1,8 @@
 # CNErrorUserInfoAffectedRecordIdentifiersKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 String objects for which the error code applies.
 
@@ -19,17 +20,22 @@ String objects for which the error code applies.
 let CNErrorUserInfoAffectedRecordIdentifiersKey: String
 ```
 
+```c
+extern NSString * const CNErrorUserInfoAffectedRecordIdentifiersKey;
+```
+
 #### Discussion
 
-An array of one or more [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects for which the error code applies.
+An array of one or more [`NSString`](../Foundation/nsstring.md) objects for which the error code applies.
 
 ## See Also
 
-- [let CNErrorUserInfoAffectedRecordsKey: String](cnerroruserinfoaffectedrecordskey.md)
+### Error data keys
+- [let CNErrorUserInfoAffectedRecordsKey: String](./cnerroruserinfoaffectedrecordskey.md)
   The contact, group, and container objects for which the error code applies.
-- [let CNErrorUserInfoValidationErrorsKey: String](cnerroruserinfovalidationerrorskey.md)
+- [let CNErrorUserInfoValidationErrorsKey: String](./cnerroruserinfovalidationerrorskey.md)
   An array of validation-related error objects.
-- [let CNErrorUserInfoKeyPathsKey: String](cnerroruserinfokeypathskey.md)
+- [let CNErrorUserInfoKeyPathsKey: String](./cnerroruserinfokeypathskey.md)
   An array of key paths associated with a given error.
 
 

@@ -1,7 +1,8 @@
 # EREMOTE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Too many levels of remote in path.
 

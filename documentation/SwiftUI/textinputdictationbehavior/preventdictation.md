@@ -1,7 +1,8 @@
 # preventDictation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Prevents the search bar from having a dictation microphone.
 
@@ -16,9 +17,10 @@ static let preventDictation: TextInputDictationBehavior
 
 ## See Also
 
-- [static let automatic: TextInputDictationBehavior](textinputdictationbehavior/automatic.md)
+### Getting behavior values
+- [static let automatic: TextInputDictationBehavior](./automatic.md)
   A platform-appropriate default text input dictation behavior.
-- [static func inline(activation: TextInputDictationActivation) -> TextInputDictationBehavior](textinputdictationbehavior/inline(activation:).md)
+- [static func inline(activation: TextInputDictationActivation) -> TextInputDictationBehavior](./inline%28activation%29.md)
   Adds a dictation microphone in the search bar.
 
 

@@ -1,7 +1,8 @@
 # restingOrientation
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The final resting orientation of the equipment at the end of the toss simulation.
 
@@ -16,11 +17,12 @@ var restingOrientation: Rotation3D { get }
 
 ## See Also
 
-- [var id: EquipmentIdentifier](tabletopinteraction/tossoutcome/id.md)
+### Getting the outcome properties
+- [var id: EquipmentIdentifier](./id.md)
   The identifier of the equipment that was tossed.
-- [var pose: TableVisualState.Pose2D](tabletopinteraction/tossoutcome/pose.md)
+- [var pose: TableVisualState.Pose2D](./pose.md)
   The final pose of the equipment at the end of the toss simulation, in table space.
-- [var tossableRepresentation: TossableRepresentation](tabletopinteraction/tossoutcome/tossablerepresentation.md)
+- [var tossableRepresentation: TossableRepresentation](./tossablerepresentation.md)
   The tossable representation of the equipment that was tossed.
 
 

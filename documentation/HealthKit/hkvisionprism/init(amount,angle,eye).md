@@ -1,7 +1,8 @@
 # init(amount:angle:eye:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vision prism object, using a single quantity and an alignment angle.
 
@@ -19,15 +20,20 @@ Creates a new vision prism object, using a single quantity and an alignment angl
 init(amount: HKQuantity, angle: HKQuantity, eye: HKVisionEye)
 ```
 
+```objc
+- (instancetype) initWithAmount:(HKQuantity *) amount angle:(HKQuantity *) angle eye:(HKVisionEye) eye;
+```
+
 ## Parameters
 
-- `amount`: The strength of the correction, measured in [`prismDiopter()`](hkunit/prismdiopter().md) units.
-- `angle`: The orientation of the adjustment, measured in [`degreeAngle()`](hkunit/degreeangle().md) units.
-- `eye`: A value indicating which eye the correction applies to: [`HKVisionEye.left`](hkvisioneye/left.md) or [`HKVisionEye.right`](hkvisioneye/right.md).
+- `amount`: The strength of the correction, measured in [`prismDiopter()`](../hkunit/prismdiopter%28%29.md) units.
+- `angle`: The orientation of the adjustment, measured in [`degreeAngle()`](../hkunit/degreeangle%28%29.md) units.
+- `eye`: A value indicating which eye the correction applies to: [`HKVisionEye.left`](../hkvisioneye/left.md) or [`HKVisionEye.right`](../hkvisioneye/right.md).
 
 ## See Also
 
-- [init(verticalAmount: HKQuantity, verticalBase: HKPrismBase, horizontalAmount: HKQuantity, horizontalBase: HKPrismBase, eye: HKVisionEye)](hkvisionprism/init(verticalamount:verticalbase:horizontalamount:horizontalbase:eye:).md)
+### Creating vision prism objects
+- [init(verticalAmount: HKQuantity, verticalBase: HKPrismBase, horizontalAmount: HKQuantity, horizontalBase: HKPrismBase, eye: HKVisionEye)](./init%28verticalamount,verticalbase,horizontalamount,horizontalbase,eye%29.md)
   Creates a new vision prism object that separates the correction strength into horizontal and vertical components.
 
 

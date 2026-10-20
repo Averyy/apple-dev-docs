@@ -1,7 +1,8 @@
 # CSSM_WORDID__FIRST_UNUSED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_WORDID__FIRST_UNUSED: Int { get }
+```
+
+```c
+CSSM_WORDID__FIRST_UNUSED
 ```
 
 

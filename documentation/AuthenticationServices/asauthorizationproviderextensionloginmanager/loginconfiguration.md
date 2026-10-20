@@ -1,7 +1,8 @@
 # loginConfiguration
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current login configuration for the extension.
 
@@ -15,21 +16,26 @@ The current login configuration for the extension.
 var loginConfiguration: ASAuthorizationProviderExtensionLoginConfiguration? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) ASAuthorizationProviderExtensionLoginConfiguration * loginConfiguration;
+```
+
 ## See Also
 
-- [enum ASAuthorizationProviderExtensionKeyType](asauthorizationproviderextensionkeytype.md)
+### Performing authentication
+- [enum ASAuthorizationProviderExtensionKeyType](../asauthorizationproviderextensionkeytype.md)
   The key types for platform single sign-on.
-- [var isDeviceRegistered: Bool](asauthorizationproviderextensionloginmanager/isdeviceregistered.md)
+- [var isDeviceRegistered: Bool](./isdeviceregistered.md)
   A Boolean value that indicates whether the device completes registration.
-- [var isUserRegistered: Bool](asauthorizationproviderextensionloginmanager/isuserregistered.md)
+- [var isUserRegistered: Bool](./isuserregistered.md)
   A Boolean value that indicates whether the user completes registration.
-- [var ssoTokens: [AnyHashable : Any]?](asauthorizationproviderextensionloginmanager/ssotokens.md)
+- [var ssoTokens: [AnyHashable : Any]?](./ssotokens.md)
   The single sign-on response tokens for the current user and extension.
-- [func identity(for: ASAuthorizationProviderExtensionKeyType) -> SecIdentity?](asauthorizationproviderextensionloginmanager/identity(for:).md)
+- [func identity(for: ASAuthorizationProviderExtensionKeyType) -> SecIdentity?](./identity%28for%29.md)
   Retrieves the identity for the specified platform single sign-on key type.
-- [func key(for: ASAuthorizationProviderExtensionKeyType) -> SecKey?](asauthorizationproviderextensionloginmanager/key(for:).md)
+- [func key(for: ASAuthorizationProviderExtensionKeyType) -> SecKey?](./key%28for%29.md)
   Retrieves the key for the specified platform single sign-on key type.
-- [func userNeedsReauthentication(completion: ((any Error)?) -> Void)](asauthorizationproviderextensionloginmanager/userneedsreauthentication(completion:).md)
+- [func userNeedsReauthentication(completion: ((any Error)?) -> Void)](./userneedsreauthentication%28completion%29.md)
   Requests platform single sign-on to reauthenticate the current user.
 
 

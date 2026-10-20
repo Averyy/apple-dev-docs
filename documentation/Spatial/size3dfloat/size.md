@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the volume.
 

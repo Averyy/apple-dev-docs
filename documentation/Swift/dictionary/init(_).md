@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -18,10 +19,13 @@
 init(_ container: AttributeContainer)
 ```
 
+Available when `Key` is `NSAttributedString.Key` and `Value` is `Any`.
+
 ## See Also
 
-- [init<S>(AttributeContainer, including: S.Type) throws](dictionary/init(_:including:)-7afz2.md)
-- [init<S>(AttributeContainer, including: KeyPath<AttributeScopes, S.Type>) throws](dictionary/init(_:including:)-8ls7v.md)
+### Creating a Dictionary from an Attribute Container
+- [init<S>(AttributeContainer, including: S.Type) throws](./init%28_,including%29-7afz2.md)
+- [init<S>(AttributeContainer, including: KeyPath<AttributeScopes, S.Type>) throws](./init%28_,including%29-8ls7v.md)
 
 
 ---

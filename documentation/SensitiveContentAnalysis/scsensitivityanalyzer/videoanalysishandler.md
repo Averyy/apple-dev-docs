@@ -1,7 +1,8 @@
 # SCSensitivityAnalyzer.VideoAnalysisHandler
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that checks if a video contains sensitive content and provides status updates.
 
@@ -20,9 +21,9 @@ final class VideoAnalysisHandler
 
 #### Overview
 
-Checking video for sensitive content can take longer than checking images. This class enables an app to stay informed on the framework’s progress while it checks a video for sensitive content. The [`SCSensitivityAnalyzer`](scsensitivityanalyzer.md) method [`videoAnalysis(forFileAt:)`](scsensitivityanalyzer/videoanalysis(forfileat:).md) returns an instance of this class.
+Checking video for sensitive content can take longer than checking images. This class enables an app to stay informed on the framework’s progress while it checks a video for sensitive content. The [`SCSensitivityAnalyzer`](../scsensitivityanalyzer.md) method [`videoAnalysis(forFileAt:)`](./videoanalysis%28forfileat%29.md) returns an instance of this class.
 
-To analyze a video file for sensitive content, pass a video URL into the [`videoAnalysis(forFileAt:)`](scsensitivityanalyzer/videoanalysis(forfileat:).md) function. While waiting on the [`hasSensitiveContent()`](scsensitivityanalyzer/videoanalysishandler/hassensitivecontent().md) method, check [`progress`](scsensitivityanalyzer/videoanalysishandler/progress.md) for the completion status:
+To analyze a video file for sensitive content, pass a video URL into the [`videoAnalysis(forFileAt:)`](./videoanalysis%28forfileat%29.md) function. While waiting on the [`hasSensitiveContent()`](./videoanalysishandler/hassensitivecontent%28%29.md) method, check [`progress`](./videoanalysishandler/progress.md) for the completion status:
 
 ```swift
 let handler = analyzer.videoAnalysis(forFileAt: videoFileUrl)
@@ -37,15 +38,16 @@ let response = try await handler.hasSensitiveContent()
 ## Topics
 
 ### Checking progress
-- [var progress: Progress](scsensitivityanalyzer/videoanalysishandler/progress.md)
+- [var progress: Progress](./videoanalysishandler/progress.md)
   An object that provides the app with status updates while a sensitive content check occurs for a video.
 ### Determining sensitivity
-- [func hasSensitiveContent() async throws -> SCSensitivityAnalysis](scsensitivityanalyzer/videoanalysishandler/hassensitivecontent.md)
+- [func hasSensitiveContent() async throws -> SCSensitivityAnalysis](./videoanalysishandler/hassensitivecontent%28%29.md)
   Provides a result that indicates if the video file contains sensitive content.
 
 ## See Also
 
-- [func videoAnalysis(forFileAt: URL) -> SCSensitivityAnalyzer.VideoAnalysisHandler](scsensitivityanalyzer/videoanalysis(forfileat:).md)
+### Analyzing video
+- [func videoAnalysis(forFileAt: URL) -> SCSensitivityAnalyzer.VideoAnalysisHandler](./videoanalysis%28forfileat%29.md)
   Analyzes a video file on disk at a URL for sensitive content.
 
 

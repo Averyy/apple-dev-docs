@@ -1,7 +1,8 @@
 # init(device:gaussianSigma:minLineLength:maxLines:detailRatio:gradientThreshold:lineErrorThreshold:mergeLocalityThreshold:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.4+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, gaussianSigma: Float, minLineLength: UInt16, maxLines: Int, detailRatio: UInt16, gradientThreshold: Float, lineErrorThreshold: Float, mergeLocalityThreshold: Float)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device gaussianSigma:(const float) gaussianSigma minLineLength:(const unsigned short) minLineLength maxLines:(const NSUInteger) maxLines detailRatio:(const unsigned short) detailRatio gradientThreshold:(const float) gradientThreshold lineErrorThreshold:(const float) lineErrorThreshold mergeLocalityThreshold:(const float) mergeLocalityThreshold;
 ```
 
 

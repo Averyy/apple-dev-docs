@@ -1,7 +1,8 @@
 # GKGameActivityListener
 
 **Framework**: GameKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that responds to activity events.
 
@@ -19,29 +20,34 @@ An object that responds to activity events.
 protocol GKGameActivityListener
 ```
 
+```objc
+@protocol GKGameActivityListener
+```
+
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
-- [Creating engaging challenges from leaderboards](creating-engaging-challenges-from-leaderboards.md)
+- [Creating activities for your game](./creating-activities-for-your-game.md)
+- [Creating engaging challenges from leaderboards](./creating-engaging-challenges-from-leaderboards.md)
 
 ## Topics
 
 ### Responding to an activity
-- [func player(GKPlayer, wantsToPlay: GKGameActivity, completionHandler: (Bool) -> Void)](gkgameactivitylistener/player(_:wantstoplay:completionhandler:).md)
+- [func player(GKPlayer, wantsToPlay: GKGameActivity, completionHandler: (Bool) -> Void)](./gkgameactivitylistener/player%28_,wantstoplay,completionhandler%29.md)
   Called when a player intends to play for a specific game activity. A completion handler block is provided to indicate whether the activity was successfully handled.
 
 ## Relationships
 
 ### Inherited By
-- [GKLocalPlayerListener](gklocalplayerlistener.md)
+- [GKLocalPlayerListener](./gklocalplayerlistener.md)
 
 ## See Also
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+### Activities
+- [Creating activities for your game](./creating-activities-for-your-game.md)
   Use activities to surface game content to players and encourage them to connect with each other.
-- [class GKGameActivity](gkgameactivity.md)
+- [class GKGameActivity](./gkgameactivity.md)
   An object that represents a single instance of a game activity for the current game.
-- [class GKGameActivityDefinition](gkgameactivitydefinition.md)
+- [class GKGameActivityDefinition](./gkgameactivitydefinition.md)
   An object that represents the static metadata you define for the activity.
 
 

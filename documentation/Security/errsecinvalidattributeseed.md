@@ -1,7 +1,8 @@
 # errSecInvalidAttributeSeed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A seed attribute is not valid.
 
@@ -18,6 +19,10 @@ A seed attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeSeed: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeSeed
 ```
 
 

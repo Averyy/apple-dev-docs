@@ -1,7 +1,8 @@
 # vDSP_zvabs
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Complex vector absolute values; single precision.
 
@@ -10,7 +11,7 @@ Complex vector absolute values; single precision.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_zvabs(const DSPSplitComplex *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 

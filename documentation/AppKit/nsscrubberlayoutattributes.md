@@ -1,7 +1,8 @@
 # NSScrubberLayoutAttributes
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The layout of a scrubber item.
 
@@ -14,49 +15,54 @@ The layout of a scrubber item.
 class NSScrubberLayoutAttributes
 ```
 
+```objc
+@interface NSScrubberLayoutAttributes : NSObject
+```
+
 #### Overview
 
 A layout attributes object is the model for the layout of a single item in a scrubber control.
 
-If you require model attributes in addition to those provided by this class, create a subclass and add appropriate attributes. Subclasses must implement [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)), [`hash`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/hash) and the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol.
+If you require model attributes in addition to those provided by this class, create a subclass and add appropriate attributes. Subclasses must implement [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md), [`hash`](../ObjectiveC/nsobjectprotocol/hash.md) and the [`NSCopying`](../Foundation/nscopying.md) protocol.
 
 ## Topics
 
 ### Creating layout attributes
-- [convenience init(forItemAt: Int)](nsscrubberlayoutattributes/init(foritemat:).md)
+- [convenience init(forItemAt: Int)](./nsscrubberlayoutattributes/init%28foritemat%29.md)
   Creates a new layout attributes object for the specified scrubber item index.
 ### Controlling the layout
-- [var alpha: CGFloat](nsscrubberlayoutattributes/alpha.md)
+- [var alpha: CGFloat](./nsscrubberlayoutattributes/alpha.md)
   The item’s alpha value.
-- [var frame: NSRect](nsscrubberlayoutattributes/frame.md)
+- [var frame: NSRect](./nsscrubberlayoutattributes/frame.md)
   The frame of the scrubber item.
-- [var itemIndex: Int](nsscrubberlayoutattributes/itemindex.md)
+- [var itemIndex: Int](./nsscrubberlayoutattributes/itemindex.md)
   The index of the scrubber item that is represented by the item’s layout attributes.
 ### Initializers
-- [convenience init(forItemAtIndex: Int)](nsscrubberlayoutattributes/init(foritematindex:).md)
+- [convenience init(forItemAtIndex: Int)](./nsscrubberlayoutattributes/init%28foritematindex%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSScrubberFlowLayout](nsscrubberflowlayout.md)
+### Scrubber layouts
+- [class NSScrubberFlowLayout](./nsscrubberflowlayout.md)
   A concrete layout object that arranges items end-to-end in a linear strip.
-- [protocol NSScrubberFlowLayoutDelegate](nsscrubberflowlayoutdelegate.md)
+- [protocol NSScrubberFlowLayoutDelegate](./nsscrubberflowlayoutdelegate.md)
   A protocol that a scrubber delegate can adopt to provide the size of an item.
-- [class NSScrubberProportionalLayout](nsscrubberproportionallayout.md)
+- [class NSScrubberProportionalLayout](./nsscrubberproportionallayout.md)
   A concrete layout object that sizes each item to some fraction of the scrubber’s visible size.
-- [class NSScrubberLayout](nsscrubberlayout.md)
+- [class NSScrubberLayout](./nsscrubberlayout.md)
   An abstract class that describes the layout of items within a scrubber control.
 
 

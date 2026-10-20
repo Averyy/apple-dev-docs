@@ -1,7 +1,8 @@
 # APPLE_EXTENSION_CODE_SIGNING_LENGTH
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var APPLE_EXTENSION_CODE_SIGNING_LENGTH: Int32 { get }
+```
+
+```c
+#define APPLE_EXTENSION_CODE_SIGNING_LENGTH
 ```
 
 

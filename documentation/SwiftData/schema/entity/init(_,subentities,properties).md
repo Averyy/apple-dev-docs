@@ -1,7 +1,8 @@
 # init(_:subentities:properties:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -21,8 +22,9 @@ init(_ name: String, subentities: Schema.Entity..., properties: any SchemaProper
 
 ## See Also
 
-- [init(String)](schema/entity/init(_:).md)
-- [init(String, properties: any SchemaProperty...)](schema/entity/init(_:properties:).md)
+### Creating an entity
+- [init(String)](./init%28_%29.md)
+- [init(String, properties: any SchemaProperty...)](./init%28_,properties%29.md)
 
 
 ---

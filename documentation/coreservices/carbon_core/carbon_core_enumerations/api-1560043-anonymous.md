@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kModemOutOfMemory: Int](kmodemoutofmemory.md)
-- [var kModemPreferencesMissing: Int](kmodempreferencesmissing.md)
-- [var kModemScriptMissing: Int](kmodemscriptmissing.md)
+- [var kModemOutOfMemory: Int](../../kmodemoutofmemory.md)
+- [var kModemPreferencesMissing: Int](../../kmodempreferencesmissing.md)
+- [var kModemScriptMissing: Int](../../kmodemscriptmissing.md)
 
 
 ---

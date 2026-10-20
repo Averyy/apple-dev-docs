@@ -1,7 +1,8 @@
 # errSSLClosedAbort
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The connection closed due to an error.
 
@@ -18,6 +19,10 @@ The connection closed due to an error.
 
 ```swift
 var errSSLClosedAbort: OSStatus { get }
+```
+
+```c
+errSSLClosedAbort
 ```
 
 

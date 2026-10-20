@@ -1,7 +1,8 @@
 # bottomLeading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide representing a point at the leading edge of the horizontal axis, bottom of the vertical axis, and center of the depth axis.
 

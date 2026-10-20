@@ -1,7 +1,8 @@
 # NSUncaughtExceptionHandler
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type for uncaught exception handler functions.
 
@@ -20,9 +21,14 @@ The type for uncaught exception handler functions.
 typealias NSUncaughtExceptionHandler = (NSException) -> Void
 ```
 
+```c
+typedef void (NSException *) NSUncaughtExceptionHandler;
+```
+
 ## See Also
 
-- [struct NSExceptionName](nsexceptionname.md)
+### Related Types
+- [struct NSExceptionName](./nsexceptionname.md)
 
 
 ---

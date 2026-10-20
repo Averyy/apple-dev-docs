@@ -1,7 +1,8 @@
 # descriptorForRequiredKeysForDelimiter
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the required key descriptor for the name delimiter.
 
@@ -19,11 +20,16 @@ Returns the required key descriptor for the name delimiter.
 class var descriptorForRequiredKeysForDelimiter: any CNKeyDescriptor { get }
 ```
 
+```objc
+@property (class, readonly) id<CNKeyDescriptor> descriptorForRequiredKeysForDelimiter;
+```
+
 ## See Also
 
-- [class func descriptorForRequiredKeys(for: CNContactFormatterStyle) -> any CNKeyDescriptor](cncontactformatter/descriptorforrequiredkeys(for:).md)
+### Getting a descriptor
+- [class func descriptorForRequiredKeys(for: CNContactFormatterStyle) -> any CNKeyDescriptor](./descriptorforrequiredkeys%28for%29.md)
   Returns the required key descriptor for the specified formatting style of the contact.
-- [class var descriptorForRequiredKeysForNameOrder: any CNKeyDescriptor](cncontactformatter/descriptorforrequiredkeysfornameorder.md)
+- [class var descriptorForRequiredKeysForNameOrder: any CNKeyDescriptor](./descriptorforrequiredkeysfornameorder.md)
   Returns the required key descriptor for the display name order.
 
 

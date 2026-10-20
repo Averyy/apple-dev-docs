@@ -1,7 +1,8 @@
 # GameCenterScoreModeration.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships between a Game Center score moderation and other resources.
 
@@ -10,22 +11,23 @@ The relationships between a Game Center score moderation and other resources.
 
 ## Declaration
 
-```swift
+```
 object GameCenterScoreModeration.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterScoreModeration.Relationships.Player](gamecenterscoremoderation/relationships-data.dictionary/player-data.dictionary.md)
+- [object GameCenterScoreModeration.Relationships.Player](./relationships-data.dictionary/player-data.dictionary.md)
 
 ## Properties
 
-- `player` (GameCenterScoreModeration.Relationships.Player): The player who submitted the score. See [`GameCenterDetailPlayer`](gamecenterdetailplayer.md).
+- `player` (GameCenterScoreModeration.Relationships.Player): The player who submitted the score. See [`GameCenterDetailPlayer`](../gamecenterdetailplayer.md).
 
 ## See Also
 
-- [object GameCenterScoreModeration.Attributes](gamecenterscoremoderation/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterScoreModeration.Attributes](./attributes-data.dictionary.md)
   The attributes that describe a Game Center score moderation.
 
 

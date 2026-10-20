@@ -1,7 +1,8 @@
 # iOS
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 iOS is a supported platform.
 
@@ -20,7 +21,8 @@ static var iOS: Platform { get }
 
 ## See Also
 
-- [static var macOS: Platform](platform/macos.md)
+### Obtaining supported platforms
+- [static var macOS: Platform](./macos.md)
   macOS is a supported platform.
 
 

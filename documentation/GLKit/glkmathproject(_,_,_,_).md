@@ -1,7 +1,8 @@
 # GLKMathProject(_:_:_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Projects a point in object space into the window coordinate system.
 
@@ -17,6 +18,10 @@ Projects a point in object space into the window coordinate system.
 func GLKMathProject(_ object: GLKVector3, _ model: GLKMatrix4, _ projection: GLKMatrix4, _ viewport: UnsafeMutablePointer<Int32>) -> GLKVector3
 ```
 
+```c
+GLKVector3 GLKMathProject(GLKVector3 object, GLKMatrix4 model, GLKMatrix4 projection, int *viewport);
+```
+
 #### Return Value
 
 The projected point in window coordinates.
@@ -30,7 +35,8 @@ The projected point in window coordinates.
 
 ## See Also
 
-- [func GLKMathUnproject(GLKVector3, GLKMatrix4, GLKMatrix4, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Bool>?) -> GLKVector3](glkmathunproject(_:_:_:_:_:).md)
+### Projecting Vectors
+- [func GLKMathUnproject(GLKVector3, GLKMatrix4, GLKMatrix4, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Bool>?) -> GLKVector3](./glkmathunproject%28_,_,_,_,_%29.md)
   Projects a point in view space into object space.
 
 

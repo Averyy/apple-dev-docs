@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that acts as the delegate of the view controller.
 
@@ -17,17 +18,22 @@ An object that acts as the delegate of the view controller.
 weak var delegate: (any UIDocumentPickerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIDocumentPickerDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must adopt the [`UIDocumentPickerDelegate`](uidocumentpickerdelegate.md) protocol.
+The delegate must adopt the [`UIDocumentPickerDelegate`](../uidocumentpickerdelegate.md) protocol.
 
 ## See Also
 
-- [protocol UIDocumentPickerDelegate](uidocumentpickerdelegate.md)
+### Getting the user-selected document
+- [protocol UIDocumentPickerDelegate](../uidocumentpickerdelegate.md)
   A set of methods for tracking when the user selects a document or destination, or cancels the operation.
-- [var allowsMultipleSelection: Bool](uidocumentpickerviewcontroller/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean value that determines whether the user can select more than one document at a time.
-- [var directoryURL: URL?](uidocumentpickerviewcontroller/directoryurl.md)
+- [var directoryURL: URL?](./directoryurl.md)
   The initial directory that the document picker displays.
 
 

@@ -1,7 +1,8 @@
 # burstUUID
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The burst UUID of the file if it is in a burst.
 
@@ -18,13 +19,18 @@ The burst UUID of the file if it is in a burst.
 var burstUUID: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * burstUUID;
+```
+
 ## See Also
 
-- [var firstPicked: Bool](iccamerafile/firstpicked.md)
+### Inspecting a File in a Burst
+- [var firstPicked: Bool](./firstpicked.md)
   A Boolean value that indicates whether a file is autopicked by Photos to represent the burst.
-- [var burstFavorite: Bool](iccamerafile/burstfavorite.md)
+- [var burstFavorite: Bool](./burstfavorite.md)
   A Boolean value that indicates this file is the burst favorite in a burst.
-- [var burstPicked: Bool](iccamerafile/burstpicked.md)
+- [var burstPicked: Bool](./burstpicked.md)
   A Boolean value that indicates whether this file is user picked in a burst.
 
 

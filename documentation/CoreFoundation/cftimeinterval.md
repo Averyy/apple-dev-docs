@@ -1,18 +1,19 @@
 # CFTimeInterval
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type used to represent elapsed time in seconds.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Type used to represent elapsed time in seconds.
 typealias CFTimeInterval = Double
 ```
 
+```c
+typedef double CFTimeInterval;
+```
+
 ## See Also
 
-- [typealias CFAbsoluteTime](cfabsolutetime.md)
+### Data Types
+- [typealias CFAbsoluteTime](./cfabsolutetime.md)
   Type used to represent a specific point in time relative to the absolute reference date of 1 Jan 2001 00:00:00 GMT.
-- [struct CFGregorianDate](cfgregoriandate.md)
+- [struct CFGregorianDate](./cfgregoriandate.md)
   Structure used to represent a point in time using the Gregorian calendar.
-- [struct CFGregorianUnits](cfgregorianunits.md)
+- [struct CFGregorianUnits](./cfgregorianunits.md)
   Structure used to represent a time interval in Gregorian units.
 
 

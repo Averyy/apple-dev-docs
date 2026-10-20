@@ -1,7 +1,8 @@
 # exportController
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An instance of the controller object you use to test your export code.
 
@@ -17,7 +18,8 @@ var exportController: AppMigrationTester.AppExportController { get async throws 
 
 ## See Also
 
-- [AppMigrationTester.AppExportController](appmigrationtester/appexportcontroller.md)
+### Testing export
+- [AppMigrationTester.AppExportController](./appexportcontroller.md)
   A class you use to test your extension’s export code.
 
 

@@ -1,7 +1,8 @@
 # TipKit
 
 **Framework**: TipKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Display tips that help people discover features in your app.
 
@@ -18,17 +19,17 @@ Display tips that help people discover features in your app.
 
 Use TipKit to show contextual tips that highlight new, interesting, or unused features people haven’t discovered on their own yet.
 
-![A conceptual image showing general tips added to general apps.](/images/com.apple.TipKit/tipkit_hero@2x.png)
+![A conceptual image showing general tips added to general apps.](https://developer.apple.com/tutorials/images/com.apple.TipKit/tipkit_hero@2x.png)
 
-Define your tip content, and the conditions under which they appear, with the [`Tip`](tip.md) protocol. Then draw attention to new features using the [`TipView`](tipview.md).
+Define your tip content, and the conditions under which they appear, with the [`Tip`](./tip.md) protocol. Then draw attention to new features using the [`TipView`](./tipview.md).
 
 As you design tips for your app, ensure you don’t overwhelm your users. Use tips sparingly to highlight nonobvious features people haven’t discovered on their own. Similarly, avoid displaying tips each time someone uses your app. Tips can become distracting when they appear unnecessarily. Don’t use tips to guide people through your app, or for advertising and promotion purposes.
 
-For design guidance on tips, see [`Human Interface Guidelines > Offering help`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/offering-help).
+For design guidance on tips, see [Human Interface Guidelines > Offering help](https://developer.apple.com/design/human-interface-guidelines/offering-help).
 
-> **Note**: Session 10070: [`Customize feature discovery with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10070/)
+> **Related session from WWDC24**: Session 10070: [Customize feature discovery with TipKit](https://developer.apple.com/videos/play/wwdc2024/10070/)
 
-> **Note**: Session 10229: [`Make features discoverable with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10229/)
+> **Related session from WWDC23**: Session 10229: [Make features discoverable with TipKit](https://developer.apple.com/videos/play/wwdc2023/10229/)
 
 ```swift
 import SwiftUI
@@ -82,79 +83,79 @@ struct LandmarkTips: App {
 ## Topics
 
 ### Essentials
-- [Highlighting app features with TipKit](highlightingappfeatureswithtipkit.md)
+- [Highlighting app features with TipKit](./highlightingappfeatureswithtipkit.md)
   Bring attention to new features in your app by using tips.
 ### Content
-- [protocol Tip](tip.md)
+- [protocol Tip](./tip.md)
   A type that sets a tip’s content, as well as the conditions for when it displays.
-- [class TipGroup](tipgroup.md)
+- [class TipGroup](./tipgroup.md)
   A collection of tips that can be presented one at a time using a specific order or based on the first tip eligible for display.
 ### Configuration
-- [static func configure([Tips.ConfigurationOption]) throws](tips/configure(_:).md)
+- [static func configure([Tips.ConfigurationOption]) throws](./tips/configure%28_%29.md)
   Loads and configures the persistent state of all tips in your app.
-- [static func cloudKitContainer(Tips.ConfigurationOption.CloudKitContainer?) -> Tips.ConfigurationOption](tips/configurationoption/cloudkitcontainer(_:).md)
+- [static func cloudKitContainer(Tips.ConfigurationOption.CloudKitContainer?) -> Tips.ConfigurationOption](./tips/configurationoption/cloudkitcontainer%28_%29.md)
   Sets the CloudKit container used for syncing tips.
-- [static func datastoreLocation(Tips.ConfigurationOption.DatastoreLocation) -> Tips.ConfigurationOption](tips/configurationoption/datastorelocation(_:).md)
+- [static func datastoreLocation(Tips.ConfigurationOption.DatastoreLocation) -> Tips.ConfigurationOption](./tips/configurationoption/datastorelocation%28_%29.md)
   Specify a custom location for your tips datastore.
-- [static func displayFrequency(Tips.ConfigurationOption.DisplayFrequency) -> Tips.ConfigurationOption](tips/configurationoption/displayfrequency(_:).md)
+- [static func displayFrequency(Tips.ConfigurationOption.DisplayFrequency) -> Tips.ConfigurationOption](./tips/configurationoption/displayfrequency%28_%29.md)
   Customizes how often new tips are presented in your app after another tip has been displayed.
 ### Views
-- [struct TipView](tipview.md)
+- [struct TipView](./tipview.md)
   A user interface element that represents an inline tip.
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View
-](../swiftui/view/popovertip(_:arrowedge:action:).md)
+](../SwiftUI/view/popovertip%28_,arrowedge,action%29.md)
   Presents a popover tip on the modified view.
 ### UIKit Views
-- [class TipUIView](tipuiview.md)
+- [class TipUIView](./tipuiview.md)
   A user interface element that represents a tip in UIKit applications.
-- [class TipUIPopoverViewController](tipuipopoverviewcontroller.md)
+- [class TipUIPopoverViewController](./tipuipopoverviewcontroller.md)
   A view controller that displays a popover tip in UIKit applications.
-- [class TipUICollectionViewCell](tipuicollectionviewcell.md)
+- [class TipUICollectionViewCell](./tipuicollectionviewcell.md)
   A collection view cell that embeds a tip.
-- [class TipUICollectionReusableView](tipuicollectionreusableview.md)
+- [class TipUICollectionReusableView](./tipuicollectionreusableview.md)
   A UICollectionReusableView subclass that represents a tip.
 ### AppKit Views
-- [class TipNSView](tipnsview.md)
+- [class TipNSView](./tipnsview.md)
   A user interface element that represents a tip in AppKit applications.
-- [class TipNSPopover](tipnspopover.md)
+- [class TipNSPopover](./tipnspopover.md)
   A subclass of NSPopover that displays a popover tip in AppKit applications.
 ### Display rules
-- [struct Rule](tips/rule.md)
+- [struct Rule](./tips/rule.md)
   A condition to meet before displaying a tip.
-- [struct Parameter](tips/parameter.md)
+- [struct Parameter](./tips/parameter.md)
   A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
-- [struct Event](tips/event.md)
+- [struct Event](./tips/event.md)
   A repeatable user-defined action.
 ### View Style
 - [func tipViewStyle(some TipViewStyle) -> some View
-](../swiftui/view/tipviewstyle(_:).md)
+](../SwiftUI/view/tipviewstyle%28_%29.md)
   Sets the given style for TipView within the view hierarchy.
-- [protocol TipViewStyle](tipviewstyle.md)
+- [protocol TipViewStyle](./tipviewstyle.md)
   A type that applies custom appearance to all tips within a view hierarchy.
-- [struct TipViewStyleConfiguration](tipviewstyleconfiguration.md)
+- [struct TipViewStyleConfiguration](./tipviewstyleconfiguration.md)
   The container type that holds a tip’s configuration.
-- [struct MiniTipViewStyle](minitipviewstyle.md)
+- [struct MiniTipViewStyle](./minitipviewstyle.md)
   The default style for a TipView.
 ### Testing
-- [static func showAllTipsForTesting()](tips/showalltipsfortesting.md)
+- [static func showAllTipsForTesting()](./tips/showalltipsfortesting%28%29.md)
   Show all tips regardless of their display rule eligibility or display frequency status for UI testing of tips.
-- [static func showTipsForTesting([any Tip.Type])](tips/showtipsfortesting(_:).md)
+- [static func showTipsForTesting([any Tip.Type])](./tips/showtipsfortesting%28_%29.md)
   Show specified tips regardless of their display rule eligibility or display frequency status for UI testing of certain tips.
-- [static func hideAllTipsForTesting()](tips/hidealltipsfortesting.md)
+- [static func hideAllTipsForTesting()](./tips/hidealltipsfortesting%28%29.md)
   Hide all tips regardless of their display rule eligibility for UI testing without tips.
-- [static func hideTipsForTesting([any Tip.Type])](tips/hidetipsfortesting(_:).md)
+- [static func hideTipsForTesting([any Tip.Type])](./tips/hidetipsfortesting%28_%29.md)
   Hide specified tips regardless of their display rule eligibility for UI testing without certain tips.
-- [static func resetDatastore() throws](tips/resetdatastore.md)
+- [static func resetDatastore() throws](./tips/resetdatastore%28%29.md)
   Resets the tips’ datastore to the initial state for re-testing tip display rules and eligibility.
 ### Common types
-- [struct AnyTip](anytip.md)
+- [struct AnyTip](./anytip.md)
   A type-erased tip value.
-- [struct TipKitError](tipkiterror.md)
+- [struct TipKitError](./tipkiterror.md)
   A localized tip kit error.
-- [protocol TipOption](tipoption.md)
+- [protocol TipOption](./tipoption.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
 ### Enumerations
-- [enum Tips](tips.md)
+- [enum Tips](./tips.md)
   TipKit namespace.
 
 

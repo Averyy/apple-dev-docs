@@ -1,7 +1,8 @@
 # withBorrowedName(body:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Borrow access to the port name in a block that can perform non-consuming operations.
 
@@ -19,6 +20,8 @@ Borrow access to the port name in a block that can perform non-consuming operati
 ```swift
 func withBorrowedName<ReturnType>(body: (mach_port_name_t, mach_port_context_t) -> ReturnType) -> ReturnType
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

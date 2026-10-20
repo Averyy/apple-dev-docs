@@ -1,7 +1,8 @@
 # entity(for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the identified attachment view as an entity, if the view with that identifier exists.
 
@@ -16,15 +17,15 @@ func entity(for id: some Hashable) -> ViewAttachmentEntity?
 
 #### Return Value
 
-The resolved attachment entity, or `nil` if [`RealityView`](realityview.md) can’t find an attachment view with the given `id`.
+The resolved attachment entity, or `nil` if [`RealityView`](../realityview.md) can’t find an attachment view with the given `id`.
 
 #### Discussion
 
-Attachment entities are not automatically added to your [`RealityView`](realityview.md)’s content. To display an attachment, add it to your [`RealityView`](realityview.md)’s content using a function like `RealityViewContent/add(_:)`.
+Attachment entities are not automatically added to your [`RealityView`](../realityview.md)’s content. To display an attachment, add it to your [`RealityView`](../realityview.md)’s content using a function like `RealityViewContent/add(_:)`.
 
 ## Parameters
 
-- `id`: The value that you used to tag the view when you define it in the `attachments` parameter of the [`RealityView`](realityview.md) initializer [`init(make:update:attachments:)`](realityview/init(make:update:attachments:).md).
+- `id`: The value that you used to tag the view when you define it in the `attachments` parameter of the [`RealityView`](../realityview.md) initializer [`init(make:update:attachments:)`](../realityview/init%28make,update,attachments%29.md).
 
 
 ---

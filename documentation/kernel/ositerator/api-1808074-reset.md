@@ -7,7 +7,7 @@ Resets the iterator to the beginning of the collection, as if it had just been c
 
 ## Declaration
 
-```swift
+```cpp
 virtual void reset() = 0;
 ```
 
@@ -17,9 +17,10 @@ Subclasses must implement this pure virtual member function.
 
 ## See Also
 
-- [getNextObject](ositerator/1808048-getnextobject.md)
+### Miscellaneous
+- [getNextObject](./api-1808048-getnextobject.md)
   Advances to and returns the next object in the iteration.
-- [isValid](ositerator/1808063-isvalid.md)
+- [isValid](./api-1808063-isvalid.md)
   Check that the collection hasn't been modified during iteration.
 
 

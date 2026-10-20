@@ -1,7 +1,8 @@
 # UICornerCurve.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Selects the corner style automatically.
 
@@ -17,11 +18,16 @@ Selects the corner style automatically.
 case automatic
 ```
 
+```c
+UICornerCurveAutomatic
+```
+
 ## See Also
 
-- [UICornerCurve.circular](uicornercurve/circular.md)
+### Choosing a corner style
+- [UICornerCurve.circular](./circular.md)
   Always uses a circular corner style.
-- [UICornerCurve.continuous](uicornercurve/continuous.md)
+- [UICornerCurve.continuous](./continuous.md)
   Always uses a continuous corner style.
 
 

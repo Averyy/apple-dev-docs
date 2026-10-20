@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate of the browser and receives browser events.
 
@@ -18,9 +19,14 @@ The object that acts as the delegate of the browser and receives browser events.
 weak var delegate: (any EAWiFiUnconfiguredAccessoryBrowserDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<EAWiFiUnconfiguredAccessoryBrowserDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol EAWiFiUnconfiguredAccessoryBrowserDelegate](eawifiunconfiguredaccessorybrowserdelegate.md)
+### Managing Browser Interactions
+- [protocol EAWiFiUnconfiguredAccessoryBrowserDelegate](../eawifiunconfiguredaccessorybrowserdelegate.md)
   A protocol you use to manage the search and configuration processes for an unconfigured accessory browser.
 
 

@@ -1,7 +1,8 @@
 # DeclarativeManagementCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
@@ -16,18 +17,18 @@ The command to enable your server to support declarative management or trigger a
 
 ## Declaration
 
-```swift
+```
 object DeclarativeManagementCommand
 ```
 
 ## Mentions
 
-- [Integrating declarative management](integrating-declarative-management.md)
+- [Integrating declarative management](./integrating-declarative-management.md)
 
 ## Topics
 
 ### Objects
-- [object DeclarativeManagementCommand.Command](declarativemanagementcommand/command-data.dictionary.md)
+- [object DeclarativeManagementCommand.Command](./declarativemanagementcommand/command-data.dictionary.md)
   The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 ## Properties
@@ -37,7 +38,8 @@ object DeclarativeManagementCommand
 
 ## See Also
 
-- [object DeclarativeManagementResponse](declarativemanagementresponse.md)
+### Commands and responses
+- [object DeclarativeManagementResponse](./declarativemanagementresponse.md)
   A response from the device after it processes the command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 

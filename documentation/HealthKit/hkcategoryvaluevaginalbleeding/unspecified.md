@@ -1,7 +1,8 @@
 # HKCategoryValueVaginalBleeding.unspecified
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates an unspecified amount of vaginal bleeding.
 
@@ -19,15 +20,20 @@ A value that indicates an unspecified amount of vaginal bleeding.
 case unspecified
 ```
 
+```c
+HKCategoryValueVaginalBleedingUnspecified
+```
+
 ## See Also
 
-- [HKCategoryValueVaginalBleeding.light](hkcategoryvaluevaginalbleeding/light.md)
+### Specifiying bleeding intensity values
+- [HKCategoryValueVaginalBleeding.light](./light.md)
   A value that indicates light vaginal bleeding.
-- [HKCategoryValueVaginalBleeding.medium](hkcategoryvaluevaginalbleeding/medium.md)
+- [HKCategoryValueVaginalBleeding.medium](./medium.md)
   A value that indicates a medium amount of vaginal bleeding.
-- [HKCategoryValueVaginalBleeding.heavy](hkcategoryvaluevaginalbleeding/heavy.md)
+- [HKCategoryValueVaginalBleeding.heavy](./heavy.md)
   A value that indicates a heavy amount of vaginal bleeding.
-- [HKCategoryValueVaginalBleeding.none](hkcategoryvaluevaginalbleeding/none.md)
+- [HKCategoryValueVaginalBleeding.none](./none.md)
   A value that indicates no vaginal bleeding.
 
 

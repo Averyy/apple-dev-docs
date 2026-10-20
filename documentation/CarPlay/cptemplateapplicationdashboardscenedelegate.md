@@ -1,7 +1,8 @@
 # CPTemplateApplicationDashboardSceneDelegate
 
 **Framework**: CarPlay  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
 
@@ -16,11 +17,15 @@ The methods for responding to the life-cycle events of your navigation app’s d
 protocol CPTemplateApplicationDashboardSceneDelegate : UISceneDelegate
 ```
 
+```objc
+@protocol CPTemplateApplicationDashboardSceneDelegate <UISceneDelegate>
+```
+
 #### Overview
 
 This protocol defines methods that CarPlay calls when the scene connects and disconnects, and your implementation provides the appropriate behavior when these events occur. For example, setting the window’s root view controller when CarPlay connects your navigation app’s dashboard scene.
 
-You don’t create instances of your dashboard scene delegate directly. Instead, you specify the name of the class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)) method.
+You don’t create instances of your dashboard scene delegate directly. Instead, you specify the name of the class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](../UIKit/uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) method.
 
 ```plist
 <key>CPTemplateApplicationDashboardSceneSessionRoleApplication</key>
@@ -40,28 +45,29 @@ You don’t create instances of your dashboard scene delegate directly. Instead,
 ## Topics
 
 ### Responding to the Scene Life Cycle
-- [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didConnect: CPDashboardController, to: UIWindow)](cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene(_:didconnect:to:).md)
+- [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didConnect: CPDashboardController, to: UIWindow)](./cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene%28_,didconnect,to%29.md)
   Tells the delegate about the addition of a CarPlay Dashboard scene to your navigation app.
-- [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didDisconnect: CPDashboardController, from: UIWindow)](cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene(_:diddisconnect:from:).md)
+- [func templateApplicationDashboardScene(CPTemplateApplicationDashboardScene, didDisconnect: CPDashboardController, from: UIWindow)](./cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene%28_,diddisconnect,from%29.md)
   Tells the delegate when CarPlay removes the dashboard scene from your navigation app.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UISceneDelegate](../uikit/uiscenedelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UISceneDelegate](../UIKit/uiscenedelegate.md)
 
 ## See Also
 
-- [Integrating CarPlay with Your Navigation App](integrating-carplay-with-your-navigation-app.md)
+### Navigation
+- [Integrating CarPlay with Your Navigation App](./integrating-carplay-with-your-navigation-app.md)
   Configure your navigation app to work with CarPlay by displaying your custom map and directions.
-- [class CPTemplateApplicationDashboardScene](cptemplateapplicationdashboardscene.md)
+- [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
   A CarPlay scene that controls your app’s dashboard navigation window.
-- [class CPMapTemplate](cpmaptemplate.md)
+- [class CPMapTemplate](./cpmaptemplate.md)
   A template that displays a navigation overlay that your app draws on the map.
-- [class CPSearchTemplate](cpsearchtemplate.md)
+- [class CPSearchTemplate](./cpsearchtemplate.md)
   A template that provides the ability to search for a destination and see a list of search results.
-- [class CPVoiceControlTemplate](cpvoicecontroltemplate.md)
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
   A template that displays a voice control indicator during audio input.
 
 

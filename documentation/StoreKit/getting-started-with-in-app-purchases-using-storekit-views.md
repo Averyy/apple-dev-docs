@@ -1,6 +1,7 @@
 # Getting started with Apple In-App Purchase using StoreKit views
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Set up an in-app store using SwiftUI and StoreKit views.
 
@@ -8,7 +9,7 @@ Set up an in-app store using SwiftUI and StoreKit views.
 
 StoreKit provides a streamlined system for building basic Apple In-App Purchase (IAP) capabilities that allow you to provide purchases in your app and process transactions using simple SwiftUI views. You can use this capability to build a basic store with default styling, or you can customize your store’s experience using the full, expressive capabilities of SwiftUI.
 
-#### Choose Your Product Types
+#### Choose your product types
 
 StoreKit supports the following product types, and StoreKit views can display all of them without any custom programming:
 
@@ -17,7 +18,7 @@ StoreKit supports the following product types, and StoreKit views can display al
 - **Auto-renewable subscriptions**: Recurring access to virtual content, services, and premium features in your app on an ongoing basis. An auto-renewable subscription continues to automatically renew at the end of each subscription period until people choose to cancel it.
 - **Non-renewing subscriptions**: Access to a service or content that lasts for a limited time, like access to an in-game battle pass. People purchase a non-renewing subscription each time they want to extend their access to the service or content.
 
-#### Prototype Your in App Store Offline
+#### Prototype your in-app store offline
 
 With StoreKit, you can create a file that allows you to prototype and test your Apple In-App Purchase code in Xcode without needing to set up products in App Store Connect. Xcode calls this a StoreKit local configuration; to create a local configuration file, follow these steps:
 
@@ -28,11 +29,11 @@ With StoreKit, you can create a file that allows you to prototype and test your 
 5. In the dialog, enter a name for the file, for example `LocalConfiguration.storekit`. Leave the configuration sync checkbox unchecked and click Next.
 6. Select a location for your file in your app’s project, then click Create to save the file.
 
-For more information about setting up a local configuration file, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
+For more information about setting up a local configuration file, see [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md).
 
 This local configuration file allows you to experiment with product IDs and various purchase types offline. To use the product IDs in a published app, create the same product IDs in App Store Connect after you finish prototyping.
 
-#### Choose Ids for Your Products
+#### Choose IDs for your products
 
 In your app, define products that someone can buy, in order to prototype your store. Choose descriptive product IDs that are easy for you to read and understand. In this example, the product IDs describe the product type they represent.
 
@@ -51,11 +52,11 @@ enum ProductID: String {
 }
 ```
 
-> **Note**: In a production app, consider fetching the list of product IDs programmatically — either from App Store Connect, or from your own server. This approach lets you enable and disable products without recompiling your app. For more information, see [`Configure Apple In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+> **Note**: In a production app, consider fetching the list of product IDs programmatically — either from App Store Connect, or from your own server. This approach lets you enable and disable products without recompiling your app. For more information, see [Configure Apple In-App Purchase settings](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
-#### Monitor Transactions in Your App
+#### Monitor transactions in your app
 
-StoreKit provides several asynchronous sequences that provide your app with information and updates. For example, the class below checks [`unfinished`](transaction/unfinished.md) and [`currentEntitlements`](transaction/currententitlements.md) at startup, and continues to check [`updates`](transaction/updates.md) in the background while the app is running.
+StoreKit provides several asynchronous sequences that provide your app with information and updates. For example, the class below checks [`unfinished`](./transaction/unfinished.md) and [`currentEntitlements`](./transaction/currententitlements.md) at startup, and continues to check [`updates`](./transaction/updates.md) in the background while the app is running.
 
 ```swift
 import Foundation
@@ -156,7 +157,7 @@ private func handle(updatedTransaction verificationResult: VerificationResult<Tr
 }
 ```
 
-#### Define Products in the Local Storekit Configuration File
+#### Define products in the local StoreKit configuration file
 
 Before moving on to the views that display these products, define these products in the local configuration file you created earlier.
 
@@ -167,9 +168,9 @@ To create the local products, follow these steps:
 3. Edit the new product name, product ID string, price, and other properties.
 4. Repeat steps 2 and 3 with additional product ID strings, and product types as needed.
 
-![A screenshot of the StoreKitWorkflows app showing a view the StoreKit local configuration editor and some of the properties available to edit.](/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-LocalConfiguration-Editing@2x.png)
+![A screenshot of the StoreKitWorkflows app showing a view the StoreKit local configuration editor and some of the properties available to edit.](https://developer.apple.com/tutorials/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-LocalConfiguration-Editing@2x.png)
 
-#### Create Swiftui Views That Display Your Products
+#### Create SwiftUI views that display your products
 
 After completing the local configuration, you can show all of your products on one page with a simple, compact SwiftUI view.
 
@@ -196,19 +197,20 @@ struct AllProductsView: View {
 
 Here, the `StoreView` view from StoreKit constructs a page and lays out a grid that contains each product, as shown in the following screenshot:
 
-![A screenshot of the StoreKitWorkflows app showing a view of all available products.](/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-AllProducts@2x.png)
+![A screenshot of the StoreKitWorkflows app showing a view of all available products.](https://developer.apple.com/tutorials/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-AllProducts@2x.png)
 
 To show a specific subset of your available products, use the same view structure, but change the list of product IDs you provide to the `StoreView()`. So, change `store.allProductIDs` to another array of product IDs. For example, the `subscriptionProductIDs` array contains only subscription purchase types, so replace `store.allProductIDs` with the `subscriptionProductIDs` array to show subscriptions as shown here.
 
-![A screenshot of the StoreKitWorkflows app showing a view of only available subscriptions.](/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-SubsOnly@2x.png)
+![A screenshot of the StoreKitWorkflows app showing a view of only available subscriptions.](https://developer.apple.com/tutorials/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-SubsOnly@2x.png)
 
-For more information on StoreKit Testing in Xcode, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/). For more information on the presentation of Apple In-App Purchase products, see Human Interface Guidelines > [`Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase). For more information on creating products in App Store Connect, see [`Configure Apple In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+For more information on StoreKit Testing in Xcode, see [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md). For more information on the presentation of Apple In-App Purchase products, see Human Interface Guidelines > [Apple In-App Purchase](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase). For more information on creating products in App Store Connect, see [Configure Apple In-App Purchase settings](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 ## See Also
 
-- [Apple In-App Purchase](in-app-purchase.md)
+### Apple In-App Purchase
+- [Apple In-App Purchase](./in-app-purchase.md)
   Offer content and services in your app across Apple platforms using a Swift-based interface.
-- [Understanding StoreKit workflows](understanding-storekit-workflows.md)
+- [Understanding StoreKit workflows](./understanding-storekit-workflows.md)
   Implement an in-app store with several product types, using StoreKit views.
 
 

@@ -1,17 +1,18 @@
 # serializedXMP(from:inputImageExtent:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Serializes filter parameters into XMP form that is suitable for embedding in an image.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 17.0
+- iPadOS 6.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- macOS 10.9+ - Deprecated in 14.0
+- tvOS - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Serializes filter parameters into XMP form that is suitable for embedding in an 
 class func serializedXMP(from filters: [CIFilter], inputImageExtent extent: CGRect) -> Data?
 ```
 
+```objc
++ (NSData *) serializedXMPFromFilters:(NSArray<CIFilter *> *) filters inputImageExtent:(CGRect) extent;
+```
+
 #### Discussion
 
-At this time the only filters classes that can be serialized using this method are, CIAffineTransform, CICrop, and the filters returned by the [`CIImage`](ciimage.md) methods [`autoAdjustmentFilters()`](ciimage/autoadjustmentfilters().md) and [`autoAdjustmentFilters(options:)`](ciimage/autoadjustmentfilters(options:).md). The parameters of other filter classes will not be serialized.
+At this time the only filters classes that can be serialized using this method are, CIAffineTransform, CICrop, and the filters returned by the [`CIImage`](../ciimage.md) methods [`autoAdjustmentFilters()`](../ciimage/autoadjustmentfilters%28%29.md) and [`autoAdjustmentFilters(options:)`](../ciimage/autoadjustmentfilters%28options%29.md). The parameters of other filter classes will not be serialized.
 
 ## Parameters
 
@@ -30,16 +35,17 @@ At this time the only filters classes that can be serialized using this method a
 
 ## See Also
 
-- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:)-7qpsv.md)
+### Deprecated
+- [init!(CVPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](./init%28cvpixelbuffer,properties,options%29-7qpsv.md)
   Creates a filter from a Core Video pixel buffer.
-- [init!(imageData: Data!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(imagedata:options:).md)
+- [init!(imageData: Data!, options: [CIRAWFilterOption : Any]!)](./init%28imagedata,options%29.md)
   Creates a filter that allows the processing of RAW images.
-- [init!(imageURL: URL!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(imageurl:options:).md)
+- [init!(imageURL: URL!, options: [CIRAWFilterOption : Any]!)](./init%28imageurl,options%29.md)
   Creates a filter that allows the processing of RAW images.
-- [struct CIRAWFilterOption](cirawfilteroption.md)
-- [class func filterArray(fromSerializedXMP: Data, inputImageExtent: CGRect, error: NSErrorPointer) -> [CIFilter]](cifilter-swift.class/filterarray(fromserializedxmp:inputimageextent:error:).md)
+- [struct CIRAWFilterOption](../cirawfilteroption.md)
+- [class func filterArray(fromSerializedXMP: Data, inputImageExtent: CGRect, error: NSErrorPointer) -> [CIFilter]](./filterarray%28fromserializedxmp,inputimageextent,error%29.md)
   Returns an array of filter objects de-serialized from XMP data.
-- [class func supportedRawCameraModels() -> [String]!](cifilter-swift.class/supportedrawcameramodels.md)
+- [class func supportedRawCameraModels() -> [String]!](./supportedrawcameramodels%28%29.md)
 
 
 ---

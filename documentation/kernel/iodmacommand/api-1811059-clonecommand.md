@@ -7,12 +7,12 @@ Creates a new command based on the specification of the current one.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IODMACommand *cloneCommand(
  void *refCon = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a new memory cursor if successfully created and initialised, 0 otherwise.
 
@@ -22,29 +22,30 @@ Factory function to create and initialise an IODMACommand in one operation. The 
 
 ## See Also
 
-- [withSpecification](iodmacommand/1811330-withspecification.md)
+### Creating a DMA Command
+- [withSpecification](./api-1811330-withspecification.md)
   Creates and initializes a DMA command in one operation.
-- [+ withSpecification](iodmacommand/1547758-withspecification.md)
+- [+ withSpecification](./api-1547758-withspecification.md)
   Creates and initializes an DMA command in one operation.
-- [+ withSpecification](iodmacommand/3516452-withspecification.md)
+- [+ withSpecification](./api-3516452-withspecification.md)
   Creates and initializes an DMA command in one operation.
-- [initWithSpecification](iodmacommand/1811207-initwithspecification.md)
+- [initWithSpecification](./api-1811207-initwithspecification.md)
   Primary initializer for the DMA command object.
-- [- initWithSpecification](iodmacommand/1547748-initwithspecification.md)
+- [- initWithSpecification](./api-1547748-initwithspecification.md)
   Primary initializer for the DMA command object.
-- [- initWithSpecification](iodmacommand/3516450-initwithspecification.md)
+- [- initWithSpecification](./api-3516450-initwithspecification.md)
   Primary initializer for the DMA command object.
-- [weakWithSpecification](iodmacommand/1811323-weakwithspecification.md)
+- [weakWithSpecification](./api-1811323-weakwithspecification.md)
   Creates and initializes an DMA command object in one operation if this version of the operating system supports it.
-- [+ withRefCon](iodmacommand/1547747-withrefcon.md)
-- [- initWithRefCon](iodmacommand/1547754-initwithrefcon.md)
-- [- cloneCommand](iodmacommand/1547732-clonecommand.md)
+- [+ withRefCon](./api-1547747-withrefcon.md)
+- [- initWithRefCon](./api-1547754-initwithrefcon.md)
+- [- cloneCommand](./api-1547732-clonecommand.md)
   Creates a new command based on the specification of the current one.
-- [- init](../driverkit/iodmacommand/init.md)
-- [- free](iodmacommand/1547725-free.md)
-- [MappingOptions](iodmacommand/mappingoptions.md)
+- [- init](../../DriverKit/iodmacommand/init.md)
+- [- free](./api-1547725-free.md)
+- [MappingOptions](./mappingoptions.md)
   Mapping types to indicate the desired mapper type for translating memory descriptors into I/O DMA Bus addresses.
-- [SynchronizeOptions](iodmacommand/synchronizeoptions.md)
+- [SynchronizeOptions](./synchronizeoptions.md)
   Options for the synchronize method.
 
 

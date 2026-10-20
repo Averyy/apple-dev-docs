@@ -1,13 +1,14 @@
 # ErrorResponse.Errors.Meta.Any Key
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that is the error or assocaited errors.
 
 ## Declaration
 
-```swift
+```
 object ErrorResponse.Errors.Meta.Any Key
 ```
 

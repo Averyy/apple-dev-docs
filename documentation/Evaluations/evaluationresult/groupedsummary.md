@@ -1,7 +1,8 @@
 # groupedSummary
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A formatted description of summary metrics organized by groups.
 
@@ -22,7 +23,7 @@ var groupedSummary: String { get }
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 #### Example Output
 
@@ -38,7 +39,8 @@ Text Quality:
 
 ## See Also
 
-- [func jsonRepresentableDataFrame(of: EvaluationResult.DataFrameKind) throws -> DataFrame](evaluationresult/jsonrepresentabledataframe(of:).md)
+### Formatting results
+- [func jsonRepresentableDataFrame(of: EvaluationResult.DataFrameKind) throws -> DataFrame](./jsonrepresentabledataframe%28of%29.md)
   Transforms a DataFrame into one with column types compatible with JSON representation.
 
 

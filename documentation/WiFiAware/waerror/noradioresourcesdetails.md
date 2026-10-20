@@ -1,7 +1,8 @@
 # WAError.NoRadioResourcesDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing what resources are lacking.
 
@@ -19,14 +20,15 @@ struct NoRadioResourcesDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case noRadioResources(WAError.NoRadioResourcesDetails)](waerror/noradioresources(_:).md)
+### Checking for insufficient radio resources
+- [case noRadioResources(WAError.NoRadioResourcesDetails)](./noradioresources%28_%29.md)
   An error that occurs if the radio lacks resources.
 
 

@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the recognized item in the view.
 
@@ -18,7 +19,8 @@ var bounds: RecognizedItem.Bounds { get }
 
 ## See Also
 
-- [var observation: VNBarcodeObservation](recognizeditem/barcode/observation.md)
+### Locating barcodes
+- [var observation: VNBarcodeObservation](./observation.md)
   A representation of the barcode information.
 
 

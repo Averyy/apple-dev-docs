@@ -1,7 +1,8 @@
 # NEURLFilterPrefilter.PrefilterData
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents Bloom filter data, as used by a prefilter.
 
@@ -20,22 +21,23 @@ enum PrefilterData
 ## Topics
 
 ### Accessing prefilter data
-- [NEURLFilterPrefilter.PrefilterData.smallFilter(_:)](neurlfilterprefilter/prefilterdata/smallfilter(_:).md)
+- [NEURLFilterPrefilter.PrefilterData.smallFilter(_:)](./prefilterdata/smallfilter%28_%29.md)
   A prefilter data enumeration case that contains the prefilter data as the associated value.
-- [NEURLFilterPrefilter.PrefilterData.temporaryFilepath(_:)](neurlfilterprefilter/prefilterdata/temporaryfilepath(_:).md)
+- [NEURLFilterPrefilter.PrefilterData.temporaryFilepath(_:)](./prefilterdata/temporaryfilepath%28_%29.md)
   A prefilter data enumeration case that contains a temporary file path to the prefilter data as the associated value.
 
 ## See Also
 
-- [let data: NEURLFilterPrefilter.PrefilterData](neurlfilterprefilter/data.md)
+### Working with prefilter properties
+- [let data: NEURLFilterPrefilter.PrefilterData](./data.md)
   The Bloom filter data.
-- [let tag: String](neurlfilterprefilter/tag.md)
+- [let tag: String](./tag.md)
   The tag of the Bloom filter data, such as the SHA-256 hash of the Bloom filter data.
-- [let bitCount: Int](neurlfilterprefilter/bitcount.md)
+- [let bitCount: Int](./bitcount.md)
   The number of bits in the Bloom filter.
-- [let hashCount: Int](neurlfilterprefilter/hashcount.md)
+- [let hashCount: Int](./hashcount.md)
   The number of hashes for the Bloom filter.
-- [let murmurSeed: UInt32](neurlfilterprefilter/murmurseed.md)
+- [let murmurSeed: UInt32](./murmurseed.md)
   The seed used for the hashing function.
 
 

@@ -1,7 +1,8 @@
 # TableType.dining
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A table top for the purpose of dining.
 
@@ -18,9 +19,10 @@ case dining
 
 ## See Also
 
-- [TableType.coffee](tabletype/coffee.md)
+### Choosing a chair type
+- [TableType.coffee](./coffee.md)
   A table top that resembles a coffee table.
-- [TableType.unidentified](tabletype/unidentified.md)
+- [TableType.unidentified](./unidentified.md)
   An uncategorized table top.
 
 

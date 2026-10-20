@@ -1,7 +1,8 @@
 # UNNotificationContentExtensionMediaPlayPauseButtonType.none
 
 **Framework**: User Notifications UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No media button.
 
@@ -18,15 +19,20 @@ No media button.
 case none
 ```
 
+```c
+UNNotificationContentExtensionMediaPlayPauseButtonTypeNone
+```
+
 #### Discussion
 
 Specify this option when you don’t want a media button. This is the default option.
 
 ## See Also
 
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.default](unnotificationcontentextensionmediaplaypausebuttontype/default.md)
+### Button Types
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.default](./default.md)
   A standard play/pause button.
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.overlay](unnotificationcontentextensionmediaplaypausebuttontype/overlay.md)
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.overlay](./overlay.md)
   A partially transparent play/pause button that is layered on top of your media content.
 
 

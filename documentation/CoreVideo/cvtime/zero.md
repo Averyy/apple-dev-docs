@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 CVTime with 0 value
 

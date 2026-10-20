@@ -1,7 +1,8 @@
 # ColorSyncAlphaInfo
 
 **Framework**: ColorSync  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The location of the alpha component in a pixel, and whether it’s premultiplied.
 
@@ -20,28 +21,33 @@ The location of the alpha component in a pixel, and whether it’s premultiplied
 struct ColorSyncAlphaInfo
 ```
 
+```c
+enum ColorSyncAlphaInfo : unsigned int;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](colorsyncalphainfo/init(_:).md)
-- [init(rawValue: UInt32)](colorsyncalphainfo/init(rawvalue:).md)
+- [init(UInt32)](./colorsyncalphainfo/init%28_%29.md)
+- [init(rawValue: UInt32)](./colorsyncalphainfo/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](colorsyncalphainfo/rawvalue.md)
+- [var rawValue: UInt32](./colorsyncalphainfo/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct ColorSyncDataDepth](colorsyncdatadepth.md)
+### Describing data layout
+- [struct ColorSyncDataDepth](./colorsyncdatadepth.md)
   The bit depth and numeric type of a color component in a pixel.
-- [typealias ColorSyncDataLayout](colorsyncdatalayout.md)
+- [typealias ColorSyncDataLayout](./colorsyncdatalayout.md)
   A bit field describing the alpha information and byte order of a pixel layout.
 
 

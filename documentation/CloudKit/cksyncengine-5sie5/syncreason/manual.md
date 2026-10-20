@@ -1,7 +1,8 @@
 # CKSyncEngine.SyncReason.manual
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A manual sync operation.
 
@@ -11,7 +12,7 @@ A manual sync operation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case manual
 
 #### Discussion
 
-The sync engine uses this reason only when your app invokes the [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) and [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) methods.
+The sync engine uses this reason only when your app invokes the [`fetchChanges(_:)`](../fetchchanges%28_%29.md) and [`sendChanges(_:)`](../sendchanges%28_%29.md) methods.
 
 ## See Also
 
-- [CKSyncEngine.SyncReason.scheduled](cksyncengine-5sie5/syncreason/scheduled.md)
+### Sync reasons
+- [CKSyncEngine.SyncReason.scheduled](./scheduled.md)
   The sync engine automatically scheduled this sync.
 
 

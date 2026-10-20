@@ -1,7 +1,8 @@
 # includeAddresses
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that indicates whether the search results should include addresses.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the search results should include address
 
 ## Declaration
 
-```swift
+```
 includeAddresses?: boolean;
 ```
 
@@ -20,7 +21,8 @@ The default value is `true`.
 
 ## See Also
 
-- [addressFilter](searchoptions/addressfilter.md)
+### Address filtering
+- [addressFilter](./addressfilter.md)
   An address filter that lists which address components to include or exclude in search results.
 
 

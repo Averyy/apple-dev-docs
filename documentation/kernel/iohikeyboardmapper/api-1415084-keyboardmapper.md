@@ -1,14 +1,15 @@
 # keyboardMapper
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 static IOHIKeyboardMapper * keyboardMapper(IOHIKeyboard *delegate, const UInt8 *mapping, UInt32 mappingLength, bool mappingShouldBeFreed);
 ```
 

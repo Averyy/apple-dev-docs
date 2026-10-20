@@ -1,12 +1,15 @@
 # TVMLKitErrorDomain
 
 **Framework**: TVMLKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error occurred in TVMLKit.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ An error occurred in TVMLKit.
 let TVMLKitErrorDomain: String
 ```
 
+```c
+extern NSString * const TVMLKitErrorDomain;
+```
+
 ## See Also
 
-- [enum TVMLKitError](tvmlkiterror.md)
+### Errors
+- [enum TVMLKitError](./tvmlkiterror.md)
   Error codes for the TVMLKit error domain.
-- [struct TVDocumentError](tvdocumenterror-swift.struct.md)
+- [struct TVDocumentError](./tvdocumenterror-swift.struct.md)
 
 
 ---

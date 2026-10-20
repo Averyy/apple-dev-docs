@@ -1,7 +1,8 @@
 # UICellAccessory.OutlineDisclosureOptions.Style.cell
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The style to use for a selectable cell with nested children.
 
@@ -9,7 +10,7 @@ The style to use for a selectable cell with nested children.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ When using this style, a tap on the outline disclosure accessory toggles the exp
 
 ## See Also
 
-- [UICellAccessory.OutlineDisclosureOptions.Style.automatic](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum/automatic.md)
+### Constants
+- [UICellAccessory.OutlineDisclosureOptions.Style.automatic](./automatic.md)
   The system automatically determines the style depending on whether the cell’s configuration is as a section header.
-- [UICellAccessory.OutlineDisclosureOptions.Style.header](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum/header.md)
+- [UICellAccessory.OutlineDisclosureOptions.Style.header](./header.md)
   The style to use for a section header.
 
 

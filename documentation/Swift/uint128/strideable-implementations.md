@@ -1,11 +1,12 @@
 # Strideable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias Stride](uint128/stride.md)
+- [typealias Stride](./stride.md)
   A type that represents the distance between two values.
 
 

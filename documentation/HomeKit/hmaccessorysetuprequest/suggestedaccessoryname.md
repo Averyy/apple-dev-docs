@@ -1,7 +1,8 @@
 # suggestedAccessoryName
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name that the framework suggests when the user names the accessory being set up.
 
@@ -16,17 +17,22 @@ The name that the framework suggests when the user names the accessory being set
 var suggestedAccessoryName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * suggestedAccessoryName;
+```
+
 #### Discussion
 
 If this value is `nil`, then the suggested name is taken from the accessory itself. If the user sets up an accessory bridge, then this value only applies to the accessory bridge and not any accessories behind the bridge.
 
 ## See Also
 
-- [var homeUniqueIdentifier: UUID?](hmaccessorysetuprequest/homeuniqueidentifier.md)
+### Setting up accessorices
+- [var homeUniqueIdentifier: UUID?](./homeuniqueidentifier.md)
   The identifier corresponding to the home that the accessory should be added to when being set up.
-- [var payload: HMAccessorySetupPayload?](hmaccessorysetuprequest/payload.md)
+- [var payload: HMAccessorySetupPayload?](./payload.md)
   The payload to use for accessory setup.
-- [var suggestedRoomUniqueIdentifier: UUID?](hmaccessorysetuprequest/suggestedroomuniqueidentifier.md)
+- [var suggestedRoomUniqueIdentifier: UUID?](./suggestedroomuniqueidentifier.md)
   The identifier corresponding to the room that the framework suggests.
 
 

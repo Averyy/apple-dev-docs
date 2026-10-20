@@ -1,12 +1,13 @@
 # isLeaf
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the browser cell is a leaf or a branch cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ A Boolean that indicates whether the browser cell is a leaf or a branch cell.
 var isLeaf: Bool { get set }
 ```
 
+```objc
+@property (getter=isLeaf) BOOL leaf;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the browser cell is a leaf cell.
+When the value of this property is [`true`](../../Swift/true.md), the browser cell is a leaf cell.
 
 A branch `NSBrowserCell` has an image near its right edge indicating that more, hierarchically related information is available; when the user selects the cell, the `NSBrowser` displays a new column of `NSBrowserCell` objects. A leaf `NSBrowserCell` has no image, indicating that the user has reached a terminal piece of information; it doesn’t point to additional information.
 
 ## See Also
 
-- [func reset()](nsbrowsercell/reset.md)
+### Managing Browser Cell State
+- [func reset()](./reset%28%29.md)
   Unhighlights the receiver and unsets its state.
-- [func set()](nsbrowsercell/set.md)
+- [func set()](./set%28%29.md)
   Highlights the receiver and sets its state.
-- [var isLoaded: Bool](nsbrowsercell/isloaded.md)
+- [var isLoaded: Bool](./isloaded.md)
   A Boolean that indicates whether the cell is ready to display.
-- [func highlightColor(in: NSView) -> NSColor?](nsbrowsercell/highlightcolor(in:).md)
+- [func highlightColor(in: NSView) -> NSColor?](./highlightcolor%28in%29.md)
   Returns the highlight color that the receiver wants to display.
 
 

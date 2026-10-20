@@ -1,7 +1,8 @@
 # makeSignpostID()
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an identifier that’s unique within the scope of the signposter.
 
@@ -11,7 +12,7 @@ Returns an identifier that’s unique within the scope of the signposter.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func makeSignpostID() -> OSSignpostID
 
 ## Mentions
 
-- [Recording Performance Data](recording-performance-data.md)
+- [Recording Performance Data](../recording-performance-data.md)
 
 #### Return Value
 
@@ -32,13 +33,14 @@ A signpost ID that you use to match an interval’s signposts.
 
 The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously.
 
-Use this method instead of [`init(log:)`](ossignpostid/init(log:).md).
+Use this method instead of [`init(log:)`](../ossignpostid/init%28log%29.md).
 
 ## See Also
 
-- [func makeSignpostID(from: AnyObject) -> OSSignpostID](ossignposter/makesignpostid(from:).md)
+### Generating Signpost IDs
+- [func makeSignpostID(from: AnyObject) -> OSSignpostID](./makesignpostid%28from%29.md)
   Returns an identifier that the signposter derives from the specified object.
-- [struct OSSignpostID](ossignpostid.md)
+- [struct OSSignpostID](../ossignpostid.md)
   An identifier that disambiguates signposted intervals.
 
 

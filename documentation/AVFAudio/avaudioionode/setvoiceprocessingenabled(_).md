@@ -1,7 +1,8 @@
 # setVoiceProcessingEnabled(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables voice processing on the I/O node.
 
@@ -20,13 +21,18 @@ Enables or disables voice processing on the I/O node.
 func setVoiceProcessingEnabled(_ enabled: Bool) throws
 ```
 
+```objc
+- (BOOL) setVoiceProcessingEnabled:(BOOL) enabled error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `enabled`: The Boolean value that indicates whether to enable voice processing.
 
 ## See Also
 
-- [var isVoiceProcessingEnabled: Bool](avaudioionode/isvoiceprocessingenabled.md)
+### Enabling voice processing
+- [var isVoiceProcessingEnabled: Bool](./isvoiceprocessingenabled.md)
   A Boolean value that indicates whether voice processing is in an enabled state.
 
 

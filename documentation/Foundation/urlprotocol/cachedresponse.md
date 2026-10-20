@@ -1,7 +1,8 @@
 # cachedResponse
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol’s cached response.
 
@@ -21,19 +22,24 @@ The protocol’s cached response.
 var cachedResponse: CachedURLResponse? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSCachedURLResponse * cachedResponse;
+```
+
 #### Discussion
 
 If not overridden in a subclass, this method returns the cached response stored at initialization time.
 
 ## See Also
 
-- [var client: (any URLProtocolClient)?](urlprotocol/client.md)
+### Getting protocol attributes
+- [var client: (any URLProtocolClient)?](./client.md)
   The object the protocol uses to communicate with the URL loading system.
-- [protocol URLProtocolClient](urlprotocolclient.md)
-  The interface used by [`URLProtocol`](urlprotocol.md) subclasses to communicate with the URL Loading System.
-- [var request: URLRequest](urlprotocol/request.md)
+- [protocol URLProtocolClient](../urlprotocolclient.md)
+  The interface used by [`URLProtocol`](../urlprotocol.md) subclasses to communicate with the URL Loading System.
+- [var request: URLRequest](./request.md)
   The protocol’s request.
-- [var task: URLSessionTask?](urlprotocol/task.md)
+- [var task: URLSessionTask?](./task.md)
   The protocol’s task.
 
 

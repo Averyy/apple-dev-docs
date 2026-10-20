@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerCanonCameraSerialNumber
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The camera serial number.
 
@@ -20,15 +21,20 @@ The camera serial number.
 let kCGImagePropertyMakerCanonCameraSerialNumber: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyMakerCanonCameraSerialNumber;
+```
+
 ## See Also
 
-- [let kCGImagePropertyMakerCanonOwnerName: CFString](kcgimagepropertymakercanonownername.md)
+### Camera Details
+- [let kCGImagePropertyMakerCanonOwnerName: CFString](./kcgimagepropertymakercanonownername.md)
   The name of the camera’s owner.
-- [let kCGImagePropertyMakerCanonImageSerialNumber: CFString](kcgimagepropertymakercanonimageserialnumber.md)
+- [let kCGImagePropertyMakerCanonImageSerialNumber: CFString](./kcgimagepropertymakercanonimageserialnumber.md)
   The image serial number.
-- [let kCGImagePropertyMakerCanonLensModel: CFString](kcgimagepropertymakercanonlensmodel.md)
+- [let kCGImagePropertyMakerCanonLensModel: CFString](./kcgimagepropertymakercanonlensmodel.md)
   The lens model.
-- [let kCGImagePropertyMakerCanonFirmware: CFString](kcgimagepropertymakercanonfirmware.md)
+- [let kCGImagePropertyMakerCanonFirmware: CFString](./kcgimagepropertymakercanonfirmware.md)
   The firmware version.
 
 

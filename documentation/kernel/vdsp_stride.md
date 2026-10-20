@@ -1,7 +1,8 @@
 # vDSP_Stride
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Used to hold differences between indices of elements, including the lengths of strides.
 
@@ -10,7 +11,7 @@ Used to hold differences between indices of elements, including the lengths of s
 
 ## Declaration
 
-```swift
+```c
 typedef long vDSP_Stride;
 ```
 

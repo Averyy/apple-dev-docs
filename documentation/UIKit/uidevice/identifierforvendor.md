@@ -1,7 +1,8 @@
 # identifierForVendor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An alphanumeric string that uniquely identifies a device to the app’s vendor.
 
@@ -9,13 +10,17 @@ An alphanumeric string that uniquely identifies a device to the app’s vendor.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var identifierForVendor: UUID? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSUUID * identifierForVendor;
 ```
 
 #### Discussion
@@ -45,17 +50,18 @@ The value in this property remains the same while the app (or another app from t
 
 ## See Also
 
-- [var name: String](uidevice/name.md)
+### Identifying the device and operating system
+- [var name: String](./name.md)
   The name of the device.
-- [var systemName: String](uidevice/systemname.md)
+- [var systemName: String](./systemname.md)
   The name of the operating system running on the device.
-- [var systemVersion: String](uidevice/systemversion.md)
+- [var systemVersion: String](./systemversion.md)
   The current version of the operating system.
-- [var model: String](uidevice/model.md)
+- [var model: String](./model.md)
   The model of the device.
-- [var localizedModel: String](uidevice/localizedmodel.md)
+- [var localizedModel: String](./localizedmodel.md)
   The model of the device as a localized string.
-- [var userInterfaceIdiom: UIUserInterfaceIdiom](uidevice/userinterfaceidiom.md)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](./userinterfaceidiom.md)
   The style of interface to use on the current device.
 
 

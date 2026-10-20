@@ -1,7 +1,8 @@
 # promised
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Data for a type with this option is promised, not immediately written.
 
@@ -12,6 +13,10 @@ Data for a type with this option is promised, not immediately written.
 
 ```swift
 static var promised: NSPasteboard.WritingOptions { get }
+```
+
+```c
+NSPasteboardWritingPromised
 ```
 
 

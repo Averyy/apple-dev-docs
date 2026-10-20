@@ -1,7 +1,8 @@
 # previousLocation(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the previous location of the touch in the view’s coordinates.
 
@@ -14,9 +15,14 @@ Indicates the previous location of the touch in the view’s coordinates.
 func previousLocation(in view: NSView?) -> NSPoint
 ```
 
+```objc
+- (NSPoint) previousLocationInView:(NSView *) view;
+```
+
 ## See Also
 
-- [func location(in: NSView?) -> NSPoint](nstouch/location(in:).md)
+### Getting the Touch Location
+- [func location(in: NSView?) -> NSPoint](./location%28in%29.md)
   Indicates the location of the touch in the view’s coordinates.
 
 

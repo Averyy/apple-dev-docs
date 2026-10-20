@@ -1,17 +1,22 @@
 # isFavorite()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports whether the target device is a favorite for the user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isFavorite() -> Bool
+```
+
+```objc
+- (BOOL) isFavorite;
 ```
 
 #### Return Value

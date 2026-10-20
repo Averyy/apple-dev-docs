@@ -1,7 +1,8 @@
 # DeviceMotionEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 An instance of `DeviceMotionEvent` is created when significant change in motion occurs. The event object encapsulates the measurements of the interval, rotation rate, and acceleration of a device. 
 
@@ -10,7 +11,7 @@ An instance of `DeviceMotionEvent` is created when significant change in motion 
 
 ## Declaration
 
-```swift
+```
 interface DeviceMotionEvent
 ```
 
@@ -23,16 +24,16 @@ You register for these types of events using the window’s `addEventListener` m
 ## Topics
 
 ### Creating Motion Events
-- [initDeviceMotionEvent](devicemotionevent/1633270-initdevicemotionevent.md)
+- [initDeviceMotionEvent](./devicemotionevent/api-1633270-initdevicemotionevent.md)
   Initializes a new device motion event.
 ### Getting Motion Event Properties
-- [acceleration](devicemotionevent/1629483-acceleration.md)
+- [acceleration](./devicemotionevent/api-1629483-acceleration.md)
   The acceleration that the user is giving to the device. 
-- [accelerationIncludingGravity](devicemotionevent/1629110-accelerationincludinggravity.md)
+- [accelerationIncludingGravity](./devicemotionevent/api-1629110-accelerationincludinggravity.md)
   The total acceleration of the device, which includes the user acceleration and the gravity.
-- [interval](devicemotionevent/1632148-interval.md)
+- [interval](./devicemotionevent/api-1632148-interval.md)
   The interval in milliseconds since the last device motion event.
-- [rotationRate](devicemotionevent/1634377-rotationrate.md)
+- [rotationRate](./devicemotionevent/api-1634377-rotationrate.md)
   The rotation rate of the device.
 
 ## Relationships

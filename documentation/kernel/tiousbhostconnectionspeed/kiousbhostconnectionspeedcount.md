@@ -1,7 +1,8 @@
 # kIOUSBHostConnectionSpeedCount
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The speed count.
 
@@ -10,7 +11,7 @@ The speed count.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostConnectionSpeedCount = 7
 ```
 

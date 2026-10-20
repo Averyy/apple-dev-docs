@@ -1,7 +1,8 @@
 # layoutAttribute
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the accessory view, in relation to the window’s title bar.
 
@@ -14,15 +15,20 @@ The location of the accessory view, in relation to the window’s title bar.
 var layoutAttribute: NSLayoutConstraint.Attribute { get set }
 ```
 
+```objc
+@property NSLayoutAttribute layoutAttribute;
+```
+
 #### Discussion
 
-The default value of this property is [`NSLayoutConstraint.Attribute.bottom`](https://developer.apple.com/documentation/uikit/nslayoutconstraint/attribute/bottom), which means that the accessory view should display below the title bar. You can also set this property to [`NSLayoutConstraint.Attribute.right`](https://developer.apple.com/documentation/uikit/nslayoutconstraint/attribute/right) or (in apps linked on macOS 10.11 or later) [`NSLayoutConstraint.Attribute.left`](https://developer.apple.com/documentation/uikit/nslayoutconstraint/attribute/left). All other values are invalid and will cause an assertion to be raised.
+The default value of this property is [`NSLayoutConstraint.Attribute.bottom`](../../UIKit/nslayoutconstraint/attribute/bottom.md), which means that the accessory view should display below the title bar. You can also set this property to [`NSLayoutConstraint.Attribute.right`](../../UIKit/nslayoutconstraint/attribute/right.md) or (in apps linked on macOS 10.11 or later) [`NSLayoutConstraint.Attribute.left`](../../UIKit/nslayoutconstraint/attribute/left.md). All other values are invalid and will cause an assertion to be raised.
 
-> **Note**:  In an app linked on macOS 10.11 or later, setting [`layoutAttribute`](nstitlebaraccessoryviewcontroller/layoutattribute.md) to [`NSLayoutConstraint.Attribute.right`](https://developer.apple.com/documentation/uikit/nslayoutconstraint/attribute/right) does not right indent toolbar items unless the window’s [`titleVisibility`](nswindow/titlevisibility-swift.property.md) property is equal to [`NSWindow.TitleVisibility.hidden`](nswindow/titlevisibility-swift.enum/hidden.md).
+> **Note**:  In an app linked on macOS 10.11 or later, setting [`layoutAttribute`](./layoutattribute.md) to [`NSLayoutConstraint.Attribute.right`](../../UIKit/nslayoutconstraint/attribute/right.md) does not right indent toolbar items unless the window’s [`titleVisibility`](../nswindow/titlevisibility-swift.property.md) property is equal to [`NSWindow.TitleVisibility.hidden`](../nswindow/titlevisibility-swift.enum/hidden.md).
 
 ## See Also
 
-- [var fullScreenMinHeight: CGFloat](nstitlebaraccessoryviewcontroller/fullscreenminheight.md)
+### Configuring a title bar accessory view controller
+- [var fullScreenMinHeight: CGFloat](./fullscreenminheight.md)
   The visual minimum height of an accessory view that displays below the title bar when the window is in full screen mode.
 
 

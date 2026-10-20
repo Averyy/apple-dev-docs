@@ -1,17 +1,22 @@
 # entityType
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity type code.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var entityType: CFXMLEntityTypeCode
+```
+
+```c
+CFXMLEntityTypeCode entityType;
 ```
 
 

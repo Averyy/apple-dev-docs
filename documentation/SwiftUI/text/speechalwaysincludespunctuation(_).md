@@ -1,7 +1,8 @@
 # speechAlwaysIncludesPunctuation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether VoiceOver should always speak all punctuation in the text view.
 
@@ -40,11 +41,12 @@ By default, VoiceOver voices punctuation based on surrounding context.
 
 ## See Also
 
-- [func speechAdjustedPitch(Double) -> Text](text/speechadjustedpitch(_:).md)
+### Configuring voiceover
+- [func speechAdjustedPitch(Double) -> Text](./speechadjustedpitch%28_%29.md)
   Raises or lowers the pitch of spoken text.
-- [func speechAnnouncementsQueued(Bool) -> Text](text/speechannouncementsqueued(_:).md)
+- [func speechAnnouncementsQueued(Bool) -> Text](./speechannouncementsqueued%28_%29.md)
   Controls whether to queue pending announcements behind existing speech rather than interrupting speech in progress.
-- [func speechSpellsOutCharacters(Bool) -> Text](text/speechspellsoutcharacters(_:).md)
+- [func speechSpellsOutCharacters(Bool) -> Text](./speechspellsoutcharacters%28_%29.md)
   Sets whether VoiceOver should speak the contents of the text view character by character.
 
 

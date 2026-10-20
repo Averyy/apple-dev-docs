@@ -1,7 +1,8 @@
 # random()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a random Boolean value.
 
@@ -41,7 +42,8 @@ This method is equivalent to calling `Bool.random(using:)`, passing in the syste
 
 ## See Also
 
-- [static func random<T>(using: inout T) -> Bool](bool/random(using:).md)
+### Creating a Random Value
+- [static func random<T>(using: inout T) -> Bool](./random%28using%29.md)
   Returns a random Boolean value, using the given generator as a source for randomness.
 
 

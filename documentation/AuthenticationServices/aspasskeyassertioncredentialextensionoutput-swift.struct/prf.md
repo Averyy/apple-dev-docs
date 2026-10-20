@@ -1,7 +1,8 @@
 # prf
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The outputs of the WebAuthn PRF extension in passkey assertion requests.
 
@@ -20,11 +21,12 @@ var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput? { get }
 
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](aspasskeyassertioncredentialextensionoutput-swift.struct/largeblob.md)
+### Inspecting properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](./largeblob.md)
   The output for a large binary object operation during passkey assertion.
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](../asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct.md)
   A type to represent the output of the requested large binary object operation, which returns in a passkey sign-in response.
-- [struct ASAuthorizationPublicKeyCredentialPRFAssertionOutput](asauthorizationpublickeycredentialprfassertionoutput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFAssertionOutput](../asauthorizationpublickeycredentialprfassertionoutput-swift.struct.md)
   A type to represent outputs of the web authentication PRF extension, when requesting them during an assertion.
 
 

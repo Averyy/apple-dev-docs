@@ -1,7 +1,8 @@
 # overlay
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overlay that the framework selected or deselected.
 
@@ -10,7 +11,7 @@ The overlay that the framework selected or deselected.
 
 ## Declaration
 
-```swift
+```
 readonly overlay: Overlay;
 ```
 

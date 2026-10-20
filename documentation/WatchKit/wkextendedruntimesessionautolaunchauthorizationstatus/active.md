@@ -1,7 +1,8 @@
 # WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.active
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - watchOS 9.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case active
+```
+
+```c
+WKExtendedRuntimeSessionAutoLaunchAuthorizationStatusActive
 ```
 
 

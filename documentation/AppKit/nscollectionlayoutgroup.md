@@ -1,7 +1,8 @@
 # NSCollectionLayoutGroup
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for a set of items that lays out the items along a path.
 
@@ -14,69 +15,74 @@ A container for a set of items that lays out the items along a path.
 class NSCollectionLayoutGroup
 ```
 
+```objc
+@interface NSCollectionLayoutGroup : NSCollectionLayoutItem
+```
+
 #### Overview
 
 Groups determine how the items in a collection view lay out in relation to each other. A group might lay out its items in a horizontal row, a vertical column, or a custom arrangement. A group determines the rules for how items are rendered in relation to each other, but in itself doesn’t render any content.
 
 For example, in the Photos app, a group of items is a row of photos. In the App Store app, a group might be a single column of cells (items) arranged in a vertical column.
 
-![Schematic representation of the App Store app on iOS, showing a collection view with a compositional layout. The layout is composed of horizontally-scrolling sections that have different layouts. The top section shows one group with one item visible onscreen, with other groups peeking in from the sides of the screen. The bottom section shows one group that’s a column of three cells, each of those cells being an item. The two different types of groups are highlighted and labeled as groups.](/images/com.apple.appkit/media-3568663@2x.png)
+![Schematic representation of the App Store app on iOS, showing a collection view with a compositional layout. The layout is composed of horizontally-scrolling sections that have different layouts. The top section shows one group with one item visible onscreen, with other groups peeking in from the sides of the screen. The bottom section shows one group that’s a column of three cells, each of those cells being an item. The two different types of groups are highlighted and labeled as groups.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3568663@2x.png)
 
-Each group specifies its own size in terms of a width dimension and a height dimension. Groups can express their dimensions relative to their container, as an absolute value, or as an estimated value that might change at runtime, like in response to a change in system font size. For more information, see [`NSCollectionLayoutDimension`](nscollectionlayoutdimension.md).
+Each group specifies its own size in terms of a width dimension and a height dimension. Groups can express their dimensions relative to their container, as an absolute value, or as an estimated value that might change at runtime, like in response to a change in system font size. For more information, see [`NSCollectionLayoutDimension`](./nscollectionlayoutdimension.md).
 
-Because a group is a subclass of [`NSCollectionLayoutItem`](nscollectionlayoutitem.md), it behaves like an item. You can combine a group with other items and groups into more complex layouts.
+Because a group is a subclass of [`NSCollectionLayoutItem`](./nscollectionlayoutitem.md), it behaves like an item. You can combine a group with other items and groups into more complex layouts.
 
-![Illustration of group nesting in a compositional layout. A larger group contains one large item on the leading side and two smaller items stacked vertically in a nested group on the trailing side.](/images/com.apple.appkit/media-3568666@2x.png)
+![Illustration of group nesting in a compositional layout. A larger group contains one large item on the leading side and two smaller items stacked vertically in a nested group on the trailing side.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3568666@2x.png)
 
-After you configure a group, you must initialize a section ([`NSCollectionLayoutSection`](nscollectionlayoutsection.md)) of your collection view layout with that group.
+After you configure a group, you must initialize a section ([`NSCollectionLayoutSection`](./nscollectionlayoutsection.md)) of your collection view layout with that group.
 
 ## Topics
 
 ### Creating a horizontal group
-- [class func horizontal(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self](nscollectionlayoutgroup/horizontal(layoutsize:subitems:).md)
+- [class func horizontal(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self](./nscollectionlayoutgroup/horizontal%28layoutsize,subitems%29.md)
   Creates a group of the specified size, containing an array of items arranged in a horizontal line.
-- [class func horizontal(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLayoutItem, count: Int) -> Self](nscollectionlayoutgroup/horizontal(layoutsize:subitem:count:).md)
+- [class func horizontal(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLayoutItem, count: Int) -> Self](./nscollectionlayoutgroup/horizontal%28layoutsize,subitem,count%29.md)
   Creates a group of the specified size, containing an array of equally sized items arranged in a horizontal line up to the number specified by count.
 ### Creating a vertical group
-- [class func vertical(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self](nscollectionlayoutgroup/vertical(layoutsize:subitems:).md)
+- [class func vertical(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self](./nscollectionlayoutgroup/vertical%28layoutsize,subitems%29.md)
   Creates a group of the specified size, containing an array of items arranged in a vertical line.
-- [class func vertical(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLayoutItem, count: Int) -> Self](nscollectionlayoutgroup/vertical(layoutsize:subitem:count:).md)
+- [class func vertical(layoutSize: NSCollectionLayoutSize, subitem: NSCollectionLayoutItem, count: Int) -> Self](./nscollectionlayoutgroup/vertical%28layoutsize,subitem,count%29.md)
   Creates a group of the specified size, containing an array of equally sized items arranged in a vertical line up to the number specified by count.
 ### Creating a custom group
-- [class func custom(layoutSize: NSCollectionLayoutSize, itemProvider: NSCollectionLayoutGroupCustomItemProvider) -> Self](nscollectionlayoutgroup/custom(layoutsize:itemprovider:).md)
+- [class func custom(layoutSize: NSCollectionLayoutSize, itemProvider: NSCollectionLayoutGroupCustomItemProvider) -> Self](./nscollectionlayoutgroup/custom%28layoutsize,itemprovider%29.md)
   Creates a group of the specified size, with an item provider that creates a custom arrangement for those items.
 ### Getting the group’s items
-- [var subitems: [NSCollectionLayoutItem]](nscollectionlayoutgroup/subitems.md)
+- [var subitems: [NSCollectionLayoutItem]](./nscollectionlayoutgroup/subitems.md)
   An array of the items contained in the group.
-- [var supplementaryItems: [NSCollectionLayoutSupplementaryItem]](nscollectionlayoutgroup/supplementaryitems.md)
+- [var supplementaryItems: [NSCollectionLayoutSupplementaryItem]](./nscollectionlayoutgroup/supplementaryitems.md)
   An array of the supplementary items that are anchored to the group.
 ### Configuring group spacing
-- [var interItemSpacing: NSCollectionLayoutSpacing?](nscollectionlayoutgroup/interitemspacing.md)
+- [var interItemSpacing: NSCollectionLayoutSpacing?](./nscollectionlayoutgroup/interitemspacing.md)
   The amount of space between the items in the group.
 ### Debugging group layout
-- [func visualDescription() -> String](nscollectionlayoutgroup/visualdescription.md)
+- [func visualDescription() -> String](./nscollectionlayoutgroup/visualdescription%28%29.md)
   Returns a string with an ASCII representation of the group.
 
 ## Relationships
 
 ### Inherits From
-- [NSCollectionLayoutItem](nscollectionlayoutitem.md)
+- [NSCollectionLayoutItem](./nscollectionlayoutitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSCollectionLayoutItem](nscollectionlayoutitem.md)
+### Components
+- [class NSCollectionLayoutItem](./nscollectionlayoutitem.md)
   The most basic component of a collection view’s layout.
-- [class NSCollectionLayoutSection](nscollectionlayoutsection.md)
+- [class NSCollectionLayoutSection](./nscollectionlayoutsection.md)
   A container that combines a set of groups into distinct visual groupings.
 
 

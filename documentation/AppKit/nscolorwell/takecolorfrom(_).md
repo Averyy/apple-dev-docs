@@ -1,17 +1,22 @@
 # takeColorFrom(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the currently selected color to the color of the specified object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func takeColorFrom(_ sender: Any?)
+```
+
+```objc
+- (void) takeColorFrom:(id) sender;
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ This method attempts to access a property or accessor method named `color`. If t
 
 ## See Also
 
-- [var color: NSColor](nscolorwell/color.md)
+### Managing the selected color
+- [var color: NSColor](./color.md)
   The currently selected color for the color well.
-- [var supportsAlpha: Bool](nscolorwell/supportsalpha.md)
+- [var supportsAlpha: Bool](./supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
 
 

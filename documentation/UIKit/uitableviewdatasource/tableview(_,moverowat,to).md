@@ -1,7 +1,8 @@
 # tableView(_:moveRowAt:to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the data source to move a row at a specific location in the table view to another location.
 
@@ -18,9 +19,13 @@ Tells the data source to move a row at a specific location in the table view to 
 optional func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView moveRowAtIndexPath:(NSIndexPath *) sourceIndexPath toIndexPath:(NSIndexPath *) destinationIndexPath;
+```
+
 #### Discussion
 
-The [`UITableView`](uitableview.md) object sends this message to the data source when the user presses the reorder control in the row at `sourceIndexPath`.
+The [`UITableView`](../uitableview.md) object sends this message to the data source when the user presses the reorder control in the row at `sourceIndexPath`.
 
 ## Parameters
 
@@ -30,9 +35,11 @@ The [`UITableView`](uitableview.md) object sends this message to the data source
 
 ## See Also
 
-- [func tableView(UITableView, commit: UITableViewCell.EditingStyle, forRowAt: IndexPath)](uitableviewdatasource/tableview(_:commit:forrowat:).md)
+### Related Documentation
+- [func tableView(UITableView, commit: UITableViewCell.EditingStyle, forRowAt: IndexPath)](./tableview%28_,commit,forrowat%29.md)
   Asks the data source to commit the insertion or deletion of a specified row.
-- [func tableView(UITableView, canMoveRowAt: IndexPath) -> Bool](uitableviewdatasource/tableview(_:canmoverowat:).md)
+### Reordering table rows
+- [func tableView(UITableView, canMoveRowAt: IndexPath) -> Bool](./tableview%28_,canmoverowat%29.md)
   Asks the data source whether a given row can move to another location in the table view.
 
 

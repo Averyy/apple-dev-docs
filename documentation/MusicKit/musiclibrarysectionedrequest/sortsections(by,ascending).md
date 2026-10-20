@@ -1,7 +1,8 @@
 # sortSections(by:ascending:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts sections by a specified property.
 

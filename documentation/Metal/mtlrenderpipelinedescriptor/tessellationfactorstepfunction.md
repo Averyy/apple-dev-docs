@@ -1,7 +1,8 @@
 # tessellationFactorStepFunction
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The step function for determining the tessellation factors for a patch from the tessellation factor buffer.
 
@@ -19,31 +20,36 @@ The step function for determining the tessellation factors for a patch from the 
 var tessellationFactorStepFunction: MTLTessellationFactorStepFunction { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLTessellationFactorStepFunction tessellationFactorStepFunction;
+```
+
 #### Discussion
 
-The default value is [`MTLTessellationFactorStepFunction.constant`](mtltessellationfactorstepfunction/constant.md).
+The default value is [`MTLTessellationFactorStepFunction.constant`](../mtltessellationfactorstepfunction/constant.md).
 
 ## See Also
 
-- [var maxTessellationFactor: Int](mtlrenderpipelinedescriptor/maxtessellationfactor.md)
+### Specifying tessellation state
+- [var maxTessellationFactor: Int](./maxtessellationfactor.md)
   The maximum tessellation factor that the tessellator uses when tessellating patches.
-- [var isTessellationFactorScaleEnabled: Bool](mtlrenderpipelinedescriptor/istessellationfactorscaleenabled.md)
+- [var isTessellationFactorScaleEnabled: Bool](./istessellationfactorscaleenabled.md)
   A Boolean value that determines whether the pipeline scales the tessellation factor.
-- [var tessellationFactorFormat: MTLTessellationFactorFormat](mtlrenderpipelinedescriptor/tessellationfactorformat.md)
+- [var tessellationFactorFormat: MTLTessellationFactorFormat](./tessellationfactorformat.md)
   The format of the tessellation factors in the tessellation factor buffer.
-- [var tessellationControlPointIndexType: MTLTessellationControlPointIndexType](mtlrenderpipelinedescriptor/tessellationcontrolpointindextype.md)
+- [var tessellationControlPointIndexType: MTLTessellationControlPointIndexType](./tessellationcontrolpointindextype.md)
   The size of the control point indices in a control point index buffer.
-- [var tessellationOutputWindingOrder: MTLWinding](mtlrenderpipelinedescriptor/tessellationoutputwindingorder.md)
+- [var tessellationOutputWindingOrder: MTLWinding](./tessellationoutputwindingorder.md)
   The winding order of triangles from the tessellator.
-- [var tessellationPartitionMode: MTLTessellationPartitionMode](mtlrenderpipelinedescriptor/tessellationpartitionmode.md)
+- [var tessellationPartitionMode: MTLTessellationPartitionMode](./tessellationpartitionmode.md)
   The partitioning mode that the tessellator uses to derive the number and spacing of segments for subdividing a corresponding edge.
-- [enum MTLTessellationFactorFormat](mtltessellationfactorformat.md)
+- [enum MTLTessellationFactorFormat](../mtltessellationfactorformat.md)
   Options for specifying the format of the tessellation factors in a tessellation factor buffer.
-- [enum MTLTessellationControlPointIndexType](mtltessellationcontrolpointindextype.md)
+- [enum MTLTessellationControlPointIndexType](../mtltessellationcontrolpointindextype.md)
   Options for specifying the size of the control point indices in a control point index buffer.
-- [enum MTLTessellationFactorStepFunction](mtltessellationfactorstepfunction.md)
+- [enum MTLTessellationFactorStepFunction](../mtltessellationfactorstepfunction.md)
   Options for specifying the step function that determines the tessellation factors for a patch from the tessellation factor buffer.
-- [enum MTLTessellationPartitionMode](mtltessellationpartitionmode.md)
+- [enum MTLTessellationPartitionMode](../mtltessellationpartitionmode.md)
   Options for choosing the partition mode that the tessellator applies when deriving the number and spacing of segments for subdividing a corresponding edge.
 
 

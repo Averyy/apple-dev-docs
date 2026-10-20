@@ -1,7 +1,8 @@
 # init(mesh:modelID:instances:bounds:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mesh instances component with a mesh resource, optional model ID, instance data, and optional bounding box.
 

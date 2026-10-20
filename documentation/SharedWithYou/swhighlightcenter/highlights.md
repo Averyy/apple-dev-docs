@@ -1,7 +1,8 @@
 # highlights
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of shared highlights.
 
@@ -19,9 +20,14 @@ An array of shared highlights.
 var highlights: [SWHighlight] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<SWHighlight *> * highlights;
+```
+
 ## See Also
 
-- [class var highlightCollectionTitle: String](swhighlightcenter/highlightcollectiontitle.md)
+### Accessing highlights
+- [class var highlightCollectionTitle: String](./highlightcollectiontitle.md)
   A localized title to display with a collection of highlights.
 
 

@@ -1,7 +1,8 @@
 # accessibilityDimFlashingLights
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the setting to reduce flashing or strobing lights in video content is on. This setting can also be used to determine if UI in playback controls should be shown to indicate upcoming content that includes flashing or strobing lights.
 
@@ -22,9 +23,10 @@ var accessibilityDimFlashingLights: Bool { get }
 
 ## See Also
 
-- [var accessibilityPlayAnimatedImages: Bool](environmentvalues/accessibilityplayanimatedimages.md)
+### Minimizing motion
+- [var accessibilityPlayAnimatedImages: Bool](./accessibilityplayanimatedimages.md)
   Whether the setting for playing animations in an animated image is on. When this value is false, any presented image that contains animation should not play automatically.
-- [var accessibilityReduceMotion: Bool](environmentvalues/accessibilityreducemotion.md)
+- [var accessibilityReduceMotion: Bool](./accessibilityreducemotion.md)
   Whether the system preference for Reduce Motion is enabled.
 
 

@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale at which to render the image.
 
@@ -40,13 +41,14 @@ The default value of this property is `1.0`.
 
 ## See Also
 
-- [var proposedSize: ProposedViewSize](imagerenderer/proposedsize.md)
+### Accessing renderer properties
+- [var proposedSize: ProposedViewSize](./proposedsize.md)
   The size proposed to the root view.
-- [var isOpaque: Bool](imagerenderer/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates whether the alpha channel of the image is fully opaque.
-- [var colorMode: ColorRenderingMode](imagerenderer/colormode.md)
+- [var colorMode: ColorRenderingMode](./colormode.md)
   The working color space and storage format of the image.
-- [var allowedDynamicRange: Image.DynamicRange?](imagerenderer/alloweddynamicrange.md)
+- [var allowedDynamicRange: Image.DynamicRange?](./alloweddynamicrange.md)
   The allowed dynamic range of the image, or nil to mark that the dynamic range of the image should be unrestricted. This property defaults to `sdr`, i.e. HDR content will be tone mapped to SDR.
 
 

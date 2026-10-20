@@ -1,7 +1,8 @@
 # init(cube:options:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously creates an environment resource from a cube texture.
 
@@ -20,11 +21,18 @@ Asynchronously creates an environment resource from a cube texture.
 @preconcurrency convenience init(cube cubeTexture: TextureResource, options: EnvironmentResource.CreateOptions) async throws
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(cube cubeTexture: TextureResource, options: EnvironmentResource.CreateOptions) throws
+```
+
 #### Discussion
 
 RealityKit generates an environment resource from a skybox cube texture of the environment. The created environment shares the input skybox.
 
-> **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce an environmental resource’s memory and disk usage.
+> **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](./createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](./createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](../textureresource/compression/astc%28blocksize,quality%29.md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](../entity/write%28to%29.md). Compression options also significantly reduce an environmental resource’s memory and disk usage.
 
 ```swift
 // Use compression and high quality options to export optimized resources.
@@ -65,13 +73,14 @@ lightEntity.components.set(ImageBasedLightComponent(
 
 ## See Also
 
-- [convenience init(named: String, in: Bundle?) async throws](environmentresource/init(named:in:).md)
+### Loading the resource
+- [convenience init(named: String, in: Bundle?) async throws](./init%28named,in%29.md)
   Asynchronously loads an environment resource from a bundle.
-- [convenience init(equirectangular: CGImage, withName: String?) async throws](environmentresource/init(equirectangular:withname:)-8o2v7.md)
+- [convenience init(equirectangular: CGImage, withName: String?) async throws](./init%28equirectangular,withname%29-8o2v7.md)
   Asynchronously generates an environment resource from an equirectangular image.
-- [convenience init(equirectangular: CGImage, withName: String?) async throws](environmentresource/init(equirectangular:withname:)-8o2v7.md)
+- [convenience init(equirectangular: CGImage, withName: String?) async throws](./init%28equirectangular,withname%29-8o2v7.md)
   Asynchronously generates an environment resource from an equirectangular image.
-- [static func load(named: String, in: Bundle?) throws -> EnvironmentResource](environmentresource/load(named:in:).md)
+- [static func load(named: String, in: Bundle?) throws -> EnvironmentResource](./load%28named,in%29.md)
   Synchronously loads an environment resource from a bundle.
 
 

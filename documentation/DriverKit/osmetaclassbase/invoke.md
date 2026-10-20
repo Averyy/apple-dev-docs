@@ -1,25 +1,27 @@
 # Invoke
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runtime internals
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Invoke(IORPC invoke);
 ```
 
 ## See Also
 
-- [Dispatch](osmetaclassbase/dispatch.md)
+### Managing Runtime Internals
+- [Dispatch](./dispatch.md)
   Runtime internals
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 This object’s array of child objects.
@@ -20,11 +21,16 @@ This object’s array of child objects.
 var objects: [MDLObject] { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) NSArray<MDLObject *> * objects;
+```
+
 ## See Also
 
-- [func add(MDLObject)](mdlobjectcontainercomponent/add(_:).md)
+### Working with Child Objects
+- [func add(MDLObject)](./add%28_%29.md)
   Adds the specified object as a child of this object.
-- [func remove(MDLObject)](mdlobjectcontainercomponent/remove(_:).md)
+- [func remove(MDLObject)](./remove%28_%29.md)
   Removes the specified object from this object’s array of children.
 
 

@@ -1,7 +1,8 @@
 # *=(_:_:)
 
 **Framework**: Combine  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Multiplies a demand by an integer, and assigns the result to the demand.
 
@@ -26,23 +27,24 @@ When multiplying any value by `.unlimited`, the result is `.unlimited`. If the m
 
 ## See Also
 
-- [static func * (Subscribers.Demand, Int) -> Subscribers.Demand](subscribers/demand/*(_:_:).md)
+### Performing mathematical operations
+- [static func * (Subscribers.Demand, Int) -> Subscribers.Demand](./star%28_,_%29.md)
   Returns the result of multiplying a demand by an integer.
-- [static func + (Subscribers.Demand, Subscribers.Demand) -> Subscribers.Demand](subscribers/demand/+(_:_:)-2hdad.md)
+- [static func + (Subscribers.Demand, Subscribers.Demand) -> Subscribers.Demand](./plus%28_,_%29-2hdad.md)
   Returns the result of adding two demands. When adding any value to `.unlimited`, the result is `.unlimited`.
-- [static func + (Subscribers.Demand, Int) -> Subscribers.Demand](subscribers/demand/+(_:_:)-902we.md)
+- [static func + (Subscribers.Demand, Int) -> Subscribers.Demand](./plus%28_,_%29-902we.md)
   Returns the result of adding an integer to a demand.
-- [static func += (inout Subscribers.Demand, Subscribers.Demand)](subscribers/demand/+=(_:_:)-20lis.md)
+- [static func += (inout Subscribers.Demand, Subscribers.Demand)](./pluseq%28_,_%29-20lis.md)
   Adds two demands, and assigns the result to the first demand.
-- [static func += (inout Subscribers.Demand, Int)](subscribers/demand/+=(_:_:)-3k1hv.md)
+- [static func += (inout Subscribers.Demand, Int)](./pluseq%28_,_%29-3k1hv.md)
   Adds an integer to a demand, and assigns the result to the demand.
-- [static func - (Subscribers.Demand, Subscribers.Demand) -> Subscribers.Demand](subscribers/demand/-(_:_:)-1r0gm.md)
+- [static func - (Subscribers.Demand, Subscribers.Demand) -> Subscribers.Demand](./minus%28_,_%29-1r0gm.md)
   Returns the result of subtracting one demand from another.
-- [static func - (Subscribers.Demand, Int) -> Subscribers.Demand](subscribers/demand/-(_:_:)-6mw4s.md)
+- [static func - (Subscribers.Demand, Int) -> Subscribers.Demand](./minus%28_,_%29-6mw4s.md)
   Returns the result of subtracting an integer from a demand.
-- [static func -= (inout Subscribers.Demand, Subscribers.Demand)](subscribers/demand/-=(_:_:)-1d0m9.md)
+- [static func -= (inout Subscribers.Demand, Subscribers.Demand)](./minuseq%28_,_%29-1d0m9.md)
   Subtracts one demand from another, and assigns the result to the first demand.
-- [static func -= (inout Subscribers.Demand, Int)](subscribers/demand/-=(_:_:)-9pwnc.md)
+- [static func -= (inout Subscribers.Demand, Int)](./minuseq%28_,_%29-9pwnc.md)
   Subtracts an integer from a demand, and assigns the result to the demand.
 
 

@@ -1,7 +1,8 @@
 # rightTrigger
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the right trigger.
 
@@ -11,7 +12,7 @@ The name of the right trigger.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ static let rightTrigger: GCButtonElementName
 
 ## See Also
 
-- [static let leftTrigger: GCButtonElementName](gcbuttonelementname-swift.struct/lefttrigger.md)
+### Getting extended gamepad trigger names
+- [static let leftTrigger: GCButtonElementName](./lefttrigger.md)
   The name of the left trigger.
 
 

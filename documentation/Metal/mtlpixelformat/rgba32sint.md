@@ -1,7 +1,8 @@
 # MTLPixelFormat.rgba32Sint
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ordinary format with four 32-bit signed integer components in RGBA order.
 
@@ -10,7 +11,7 @@ Ordinary format with four 32-bit signed integer components in RGBA order.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ Ordinary format with four 32-bit signed integer components in RGBA order.
 case rgba32Sint
 ```
 
+```c
+MTLPixelFormatRGBA32Sint
+```
+
 ## See Also
 
-- [MTLPixelFormat.rgba32Uint](mtlpixelformat/rgba32uint.md)
+### Ordinary 128-bit pixel formats
+- [MTLPixelFormat.rgba32Uint](./rgba32uint.md)
   Ordinary format with four 32-bit unsigned integer components in RGBA order.
-- [MTLPixelFormat.rgba32Float](mtlpixelformat/rgba32float.md)
+- [MTLPixelFormat.rgba32Float](./rgba32float.md)
   Ordinary format with four 32-bit floating-point components in RGBA order.
 
 

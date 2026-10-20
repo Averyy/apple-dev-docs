@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_LogTransferFunction
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the transfer function or gamma of the content is a log format and identifies the specific log curve. Log curve identifiers include `kCVImageBufferLogTransferFunction_AppleLog` (“com.apple.rec2020.apple-log”) and `kCVImageBufferLogTransferFunction_AppleLog2` (“com.apple.apple-wide-gamut.apple-log”). When the LogTransferFunction is specified for a VTCompressionSession, if source image buffers do not have exactly that LogTransferFunction, encoding will fail.
 
@@ -17,6 +18,10 @@ Indicates that the transfer function or gamma of the content is a log format and
 
 ```swift
 let kVTCompressionPropertyKey_LogTransferFunction: CFString
+```
+
+```c
+extern CFStringRef const kVTCompressionPropertyKey_LogTransferFunction;
 ```
 
 

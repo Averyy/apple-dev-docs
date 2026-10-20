@@ -1,7 +1,8 @@
 # init(displayName:category:protocolType:identifier:)
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes a discovered device.
 
@@ -9,7 +10,7 @@ Creates an object that describes a discovered device.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Creates an object that describes a discovered device.
 init(displayName: String, category: DDDevice.Category, protocolType: UTType, identifier: String)
 ```
 
+```objc
+- (instancetype) initWithDisplayName:(NSString *) displayName category:(DDDeviceCategory) category protocolType:(UTType *) protocolType identifier:(NSString *) identifier;
+```
+
 #### Discussion
 
-As an example `identifier` for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](https://developer.apple.com/documentation/corebluetooth/cbadvertisementdatalocalnamekey)).
+As an example `identifier` for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](../../CoreBluetooth/cbadvertisementdatalocalnamekey.md)).
 
 ## Parameters
 

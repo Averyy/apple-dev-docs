@@ -1,7 +1,8 @@
 # Unicode.UTF8.ValidationError.Kind
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The kind of encoding error encountered during validation
 
@@ -24,43 +25,43 @@ struct Kind
 ## Topics
 
 ### Initializers
-- [init?(rawValue: UInt8)](unicode/utf8/validationerror/kind-swift.struct/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./kind-swift.struct/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [var rawValue: UInt8](unicode/utf8/validationerror/kind-swift.struct/rawvalue-swift.property.md)
+- [var rawValue: UInt8](./kind-swift.struct/rawvalue-swift.property.md)
   The corresponding value of the raw type.
 ### Type Aliases
-- [Unicode.UTF8.ValidationError.Kind.RawValue](unicode/utf8/validationerror/kind-swift.struct/rawvalue-swift.typealias.md)
+- [Unicode.UTF8.ValidationError.Kind.RawValue](./kind-swift.struct/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
-- [static var invalidNonSurrogateCodePointByte: Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct/invalidnonsurrogatecodepointbyte.md)
+- [static var invalidNonSurrogateCodePointByte: Unicode.UTF8.ValidationError.Kind](./kind-swift.struct/invalidnonsurrogatecodepointbyte.md)
   A byte in an invalid, non-surrogate code point (`>U+10FFFF`) sequence
-- [static var overlongEncodingByte: Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct/overlongencodingbyte.md)
+- [static var overlongEncodingByte: Unicode.UTF8.ValidationError.Kind](./kind-swift.struct/overlongencodingbyte.md)
   A byte in an overlong encoding sequence
-- [static var surrogateCodePointByte: Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct/surrogatecodepointbyte.md)
+- [static var surrogateCodePointByte: Unicode.UTF8.ValidationError.Kind](./kind-swift.struct/surrogatecodepointbyte.md)
   A byte in a surrogate code point (`U+D800..U+DFFF`) sequence
-- [static var truncatedScalar: Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct/truncatedscalar.md)
+- [static var truncatedScalar: Unicode.UTF8.ValidationError.Kind](./kind-swift.struct/truncatedscalar.md)
   A multi-byte sequence that is the start of a valid multi-byte scalar but is cut off before ending correctly
-- [static var unexpectedContinuationByte: Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct/unexpectedcontinuationbyte.md)
+- [static var unexpectedContinuationByte: Unicode.UTF8.ValidationError.Kind](./kind-swift.struct/unexpectedcontinuationbyte.md)
   A continuation byte (`10xxxxxx`) outside of a multi-byte sequence
 ### Default Implementations
-- [CustomStringConvertible Implementations](unicode/utf8/validationerror/kind-swift.struct/customstringconvertible-implementations.md)
-- [Equatable Implementations](unicode/utf8/validationerror/kind-swift.struct/equatable-implementations.md)
-- [RawRepresentable Implementations](unicode/utf8/validationerror/kind-swift.struct/rawrepresentable-implementations.md)
+- [CustomStringConvertible Implementations](./kind-swift.struct/customstringconvertible-implementations.md)
+- [Equatable Implementations](./kind-swift.struct/equatable-implementations.md)
+- [RawRepresentable Implementations](./kind-swift.struct/rawrepresentable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Error](error.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [RawRepresentable](rawrepresentable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../../../bitwisecopyable.md)
+- [Copyable](../../../copyable.md)
+- [CustomStringConvertible](../../../customstringconvertible.md)
+- [Equatable](../../../equatable.md)
+- [Error](../../../error.md)
+- [Escapable](../../../escapable.md)
+- [Hashable](../../../hashable.md)
+- [RawRepresentable](../../../rawrepresentable.md)
+- [Sendable](../../../sendable.md)
+- [SendableMetatype](../../../sendablemetatype.md)
 
 
 ---

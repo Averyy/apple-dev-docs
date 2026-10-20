@@ -1,7 +1,8 @@
 # address
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A full or partial IP address for a device known to be on the network.
 
@@ -17,9 +18,14 @@ A full or partial IP address for a device known to be on the network.
 var address: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * address;
+```
+
 ## See Also
 
-- [var mask: Data](avcustomroutingpartialip/mask.md)
+### Inspecting the IP fragment
+- [var mask: Data](./mask.md)
   A mask that represents how many octets of the IP address to respect.
 
 

@@ -1,7 +1,8 @@
 # generatedContent
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The generated content representation of this trajectory expectation.
 

@@ -1,6 +1,7 @@
 # Discovering asset specifications
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Query the asset library reference data to learn the valid dimensions, formats, placement groups, and limits before you upload.
 
@@ -10,14 +11,14 @@ The App Asset Library validates every asset against a catalog of specifications,
 
 Reference data is read-only, and its identifiers are strings rather than enumerations precisely so new device families can appear without an API change. Don’t hard-code them.
 
-For the resource reference, see [`App Asset Library reference data`](app-asset-library-reference-data.md). For the concept, see [`Understanding the App Asset Library`](understanding-the-app-asset-library.md).
+For the resource reference, see [App Asset Library reference data](./app-asset-library-reference-data.md). For the concept, see [Understanding the App Asset Library](./understanding-the-app-asset-library.md).
 
-#### Read the Reference Data
+#### Read the reference data
 
-Fetch the catalog with `GET /v1/appAssetLibraryRefData` ([`List app asset library ref data`](get-v1-appassetlibraryrefdata.md)). The collection holds a single [`AppAssetLibraryRefDatum`](appassetlibraryrefdatum.md) with attributes that are six parallel arrays:
+Fetch the catalog with `GET /v1/appAssetLibraryRefData` ([`List app asset library ref data`](./get-v1-appassetlibraryrefdata.md)). The collection holds a single [`AppAssetLibraryRefDatum`](./appassetlibraryrefdatum.md) with attributes that are six parallel arrays:
 
 - **`features`**: What each App Store feature supports, including the placement types available and the maximum number of assets per placement group.
-- **`placementProfileGroups`**: Every placement group identifier, with the platform ([`AppAssetLibraryPlacementPlatform`](appassetlibraryplacementplatform.md)) and display class ([`AppAssetLibraryDisplayClass`](appassetlibrarydisplayclass.md)) to which it maps.
+- **`placementProfileGroups`**: Every placement group identifier, with the platform ([`AppAssetLibraryPlacementPlatform`](./appassetlibraryplacementplatform.md)) and display class ([`AppAssetLibraryDisplayClass`](./appassetlibrarydisplayclass.md)) to which it maps.
 - **`imageSpecs`**: Image requirements, including dimensions, aspect ratio, permitted extensions and MIME types, maximum file size, and whether alpha is allowed.
 - **`videoSpecs`**: Video requirements, including the same values as images, plus frame-rate ranges, duration bounds, and whether audio is required.
 - **`placementTypes`**: For each placement type, the asset categories it accepts and a mapping from placement group to permitted specification IDs.
@@ -25,11 +26,11 @@ Fetch the catalog with `GET /v1/appAssetLibraryRefData` ([`List app asset librar
 
 Narrow the response with `filter[features]`, `filter[placementTypes]`, `filter[placementProfileGroups]`, or `filter[specs]`, or use `fields[appAssetLibraryRefData]` to request only the arrays you need. Reading one array instead of all six keeps a routine specification check small:
 
-```None
+```
 GET /v1/appAssetLibraryRefData?fields[appAssetLibraryRefData]=imageSpecs
 ```
 
-#### Follow the Lookup Chain
+#### Follow the lookup chain
 
 The six arrays are designed for traversal in order. To find the file you need for an iPhone screenshot on an App Store version, walk them like this:
 
@@ -62,44 +63,45 @@ For screenshots and previews, `minWidth` equals `maxWidth` and `minHeight` equal
 
 When you’re working backward from a file you already have, use `compatiblePlacementTypes` to skip the chain: Given a specification, it lists every placement type that accepts it.
 
-#### Understand Universal Assets
+#### Understand universal assets
 
 A specification with `universalAsset` set to `true` satisfies several placement types at once. Check `compatiblePlacementTypes` on the specification to see which ones. Uploading one file at a universal specification and creating a placement per type is less work than producing a file for each.
 
-#### Respect the Placement Limits
+#### Respect the placement limits
 
 `groupLimits` caps how many assets a placement group holds. For `APP_STORE_VERSIONS`, the App Store allows 10 screenshots, 3 app previews, and 1 product page header asset per group. In-app events allow a single asset for each of their placement types.
 
 Read the limit rather than assuming it. Creating placements past the cap fails, and the limits differ by feature: custom product pages and product page optimizations carry their own policies, and they don’t always match the App Store version policies.
 
-#### Match the Asset Category
+#### Match the asset category
 
 Each entry in `placementTypes` lists an `acceptsAssetCategories` array. `APP_SCREENSHOT` and `IMESSAGE_APP_SCREENSHOT` accept `APP_SCREENSHOTS_AND_PREVIEWS`; the creative placement types such as `EVENT_CARD_ASSET` and `PRODUCT_PAGE_HEADER_ASSET` accept `CREATIVE_ASSETS`. Because you set an asset’s `category` when you reserve it and can’t change it afterward, check this before uploading. You can’t place an asset where you intend if it has the wrong category.
 
-> **Note**:  [`AppAssetLibraryFeature`](appassetlibraryfeature.md) enumerates more features than the reference data currently returns. Iterate over the `features` array you receive rather than over the enumeration, and treat a feature that’s absent as unavailable for your app.
+> **Note**:  [`AppAssetLibraryFeature`](./appassetlibraryfeature.md) enumerates more features than the reference data currently returns. Iterate over the `features` array you receive rather than over the enumeration, and treat a feature that’s absent as unavailable for your app.
 
-#### Cache with Care
+#### Cache with care
 
 The catalog is stable within a session but not permanent; Apple adds specifications and groups as new devices ship. Fetch it when your integration starts rather than embedding a copy, and key your logic on the identifiers you read back. Two habits make the difference:
 
 - Resolve a `specId` returned on an asset by looking it up in the catalog, instead of comparing against a hard-coded list.
 - Treat an unrecognized placement group or specification ID as a signal to refresh, not as an error.
 
-To read a specific reference data resource by ID, use `GET /v1/appAssetLibraryRefData/{id}` ([`Read an app asset library ref data`](get-v1-appassetlibraryrefdata-_id_.md)).
+To read a specific reference data resource by ID, use `GET /v1/appAssetLibraryRefData/{id}` ([`Read an app asset library ref data`](./get-v1-appassetlibraryrefdata-_id_.md)).
 
-After you know the specification you need, upload the asset. For more information, see [`Uploading and managing image assets`](uploading-and-managing-image-assets.md) and [`Uploading and managing video assets`](uploading-and-managing-video-assets.md).
+After you know the specification you need, upload the asset. For more information, see [Uploading and managing image assets](./uploading-and-managing-image-assets.md) and [Uploading and managing video assets](./uploading-and-managing-video-assets.md).
 
 ## See Also
 
-- [Understanding the App Asset Library](understanding-the-app-asset-library.md)
+### Essentials
+- [Understanding the App Asset Library](./understanding-the-app-asset-library.md)
   Upload an image or video once, then reuse it across your app’s App Store surfaces with per-surface placements.
-- [Uploading and managing image assets](uploading-and-managing-image-assets.md)
+- [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
   Reserve, upload, and commit an image to your app’s asset library, then update, archive, or delete it.
-- [Uploading and managing video assets](uploading-and-managing-video-assets.md)
+- [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
   Reserve, upload, and commit a video to your app’s asset library, set its preview frame, then update, archive, or delete it.
-- [Placing assets on your App Store surfaces](placing-assets-on-your-app-store-surfaces.md)
+- [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
   Create placements that position library assets on App Store surfaces, then set their display order within a localization.
-- [Migrating to the App Asset Library](migrating-to-the-app-asset-library.md)
+- [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
   Move your screenshots, app previews, and in-app event media from the deprecated set-based resources to the asset library.
 
 

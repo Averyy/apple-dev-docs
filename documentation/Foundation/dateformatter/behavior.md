@@ -1,7 +1,8 @@
 # DateFormatter.Behavior
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the behavior `NSDateFormatter` should exhibit.
 
@@ -20,28 +21,33 @@ Constants that specify the behavior `NSDateFormatter` should exhibit.
 enum Behavior
 ```
 
+```c
+enum NSDateFormatterBehavior : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
-- [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
-- [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
+- [DateFormatter.Behavior.default](./behavior/default.md)
+- [DateFormatter.Behavior.behavior10_0](./behavior/behavior10_0.md)
+- [DateFormatter.Behavior.behavior10_4](./behavior/behavior10_4.md)
 ### Initializers
-- [init?(rawValue: UInt)](dateformatter/behavior/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./behavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DateFormatter.Style](dateformatter/style.md)
+### Constants
+- [DateFormatter.Style](./style.md)
   The following constants specify predefined format styles for dates and times.
 
 

@@ -1,7 +1,8 @@
 # init(target:selector:object:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSThread` object initialized with the given arguments.
 
@@ -20,6 +21,10 @@ Returns an `NSThread` object initialized with the given arguments.
 convenience init(target: Any, selector: Selector, object argument: Any?)
 ```
 
+```objc
+- (instancetype) initWithTarget:(id) target selector:(SEL) selector object:(id) argument;
+```
+
 #### Return Value
 
 An `NSThread` object initialized with the given arguments.
@@ -36,9 +41,11 @@ The objects `target` and `argument` are retained during the execution of the det
 
 ## See Also
 
-- [func start()](thread/start.md)
+### Related Documentation
+- [func start()](./start%28%29.md)
   Starts the receiver.
-- [init()](thread/init.md)
+### Initializing an NSThread Object
+- [init()](./init%28%29.md)
   Returns an initialized `NSThread` object.
 
 

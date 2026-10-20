@@ -1,14 +1,15 @@
 # withInternalBuffer
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IONetworkData * withInternalBuffer(const char *name, UInt32 bufferSize, UInt32 accessTypes, void *target, Action action, void *param);
 ```
 

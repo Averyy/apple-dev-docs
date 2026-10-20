@@ -1,7 +1,8 @@
 # cacheNode(for:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the cache node for a given managed object ID.
 
@@ -10,7 +11,7 @@ Returns the cache node for a given managed object ID.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the cache node for a given managed object ID.
 
 ```swift
 func cacheNode(for objectID: NSManagedObjectID) -> NSAtomicStoreCacheNode?
+```
+
+```objc
+- (NSAtomicStoreCacheNode *) cacheNodeForObjectID:(NSManagedObjectID *) objectID;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ This method is normally used by cache nodes to locate related cache nodes (by re
 
 ## See Also
 
-- [func cacheNodes() -> Set<NSAtomicStoreCacheNode>](nsatomicstore/cachenodes.md)
+### Utility Methods
+- [func cacheNodes() -> Set<NSAtomicStoreCacheNode>](./cachenodes%28%29.md)
   Returns the set of cache nodes registered with the receiver.
-- [func referenceObject(for: NSManagedObjectID) -> Any](nsatomicstore/referenceobject(for:).md)
+- [func referenceObject(for: NSManagedObjectID) -> Any](./referenceobject%28for%29.md)
   Returns the reference object for a given managed object ID.
 
 

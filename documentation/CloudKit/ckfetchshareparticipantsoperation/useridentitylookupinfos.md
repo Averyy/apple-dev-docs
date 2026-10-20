@@ -1,7 +1,8 @@
 # userIdentityLookupInfos
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user data for the participants.
 
@@ -20,11 +21,15 @@ The user data for the participants.
 var userIdentityLookupInfos: [CKUserIdentity.LookupInfo]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<CKUserIdentityLookupInfo *> * userIdentityLookupInfos;
+```
+
 #### Discussion
 
 Use this property to view or change the participants user data. If you intend to specify or change the value of this property, do so before you execute the operation or submit it to a queue.
 
-> **Note**: If you don’t set [`userIdentityLookupInfos`](ckfetchshareparticipantsoperation/useridentitylookupinfos.md) prior to executing the operation, it returns immediately with no results.
+> **Note**: If you don’t set [`userIdentityLookupInfos`](./useridentitylookupinfos.md) prior to executing the operation, it returns immediately with no results.
 
 
 ---

@@ -1,7 +1,8 @@
 # kMDItemFocalLength35mm
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemFocalLength35mm: CFString!
+```
+
+```c
+const CFStringRef kMDItemFocalLength35mm;
 ```
 
 

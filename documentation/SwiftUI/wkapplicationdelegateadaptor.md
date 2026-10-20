@@ -1,7 +1,8 @@
 # WKApplicationDelegateAdaptor
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper that is used in `App` to provide a delegate from WatchKit.
 
@@ -17,29 +18,30 @@ A property wrapper that is used in `App` to provide a delegate from WatchKit.
 
 ## Mentions
 
-- [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
+- [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 
 ## Topics
 
 ### Creating a delegate adaptor
-- [init(_:)](wkapplicationdelegateadaptor/init(_:).md)
+- [init(_:)](./wkapplicationdelegateadaptor/init%28_%29.md)
   Creates an `WKApplicationDelegateAdaptor` using a WatchKit Application Delegate.
 ### Getting the delegate adaptor
-- [var projectedValue: ObservedObject<DelegateType>.Wrapper](wkapplicationdelegateadaptor/projectedvalue.md)
+- [var projectedValue: ObservedObject<DelegateType>.Wrapper](./wkapplicationdelegateadaptor/projectedvalue.md)
   A projection of the observed object that creates bindings to its properties using dynamic member lookup.
-- [var wrappedValue: DelegateType](wkapplicationdelegateadaptor/wrappedvalue.md)
+- [var wrappedValue: DelegateType](./wkapplicationdelegateadaptor/wrappedvalue.md)
   The underlying delegate.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WKExtensionDelegateAdaptor](wkextensiondelegateadaptor.md)
+### Targeting watchOS
+- [struct WKExtensionDelegateAdaptor](./wkextensiondelegateadaptor.md)
   A property wrapper type that you use to create a WatchKit extension delegate.
 
 

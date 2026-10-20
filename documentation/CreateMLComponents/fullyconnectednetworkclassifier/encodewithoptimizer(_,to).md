@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a fitted transformer with an optimizer.
 
@@ -20,6 +21,8 @@ Encodes a fitted transformer with an optimizer.
 func encodeWithOptimizer(_ transformer: FullyConnectedNetworkClassifier<Scalar, Label>.Transformer, to encoder: inout any EstimatorEncoder) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
+
 ## Parameters
 
 - `transformer`: A fully connected network classifier model.
@@ -27,7 +30,8 @@ func encodeWithOptimizer(_ transformer: FullyConnectedNetworkClassifier<Scalar, 
 
 ## See Also
 
-- [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](fullyconnectednetworkclassifier/decode(from:).md)
+### Encoding and decoding
+- [func decode(from: inout any EstimatorDecoder) throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>](./decode%28from%29.md)
   Decodes the estimator.
 
 

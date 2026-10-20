@@ -1,7 +1,8 @@
 # init(of:selection:sortOrder:columns:rows:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sortable table with the given columns and rows that supports selecting multiple rows.
 
@@ -19,6 +20,15 @@ Creates a sortable table with the given columns and rows that supports selecting
 nonisolated init<Sort>(of valueType: Value.Type, selection: Binding<Set<Value.ID>>, sortOrder: Binding<[Sort]>, @TableColumnBuilder<Value, Sort> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows) where Sort : SortComparator, Columns.TableRowValue == Sort.Compared
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init<Sort>(of valueType: Value.Type, selection: Binding<Value.ID?>, sortOrder: Binding<[Sort]>, @TableColumnBuilder<Value, Sort> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows) where Sort : SortComparator, Columns.TableRowValue == Sort.Compared
+```
+
 ## Parameters
 
 - `valueType`: The type of value used to derive the table’s contents.
@@ -29,11 +39,12 @@ nonisolated init<Sort>(of valueType: Value.Type, selection: Binding<Set<Value.ID
 
 ## See Also
 
-- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](table/init(of:sortorder:columns:rows:).md)
+### Creating a sortable table from columns and rows
+- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](./init%28of,sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows.
-- [init<Sort>(sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](table/init(sortorder:columns:rows:).md)
+- [init<Sort>(sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](./init%28sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows.
-- [init(selection:sortOrder:columns:rows:)](table/init(selection:sortorder:columns:rows:).md)
+- [init(selection:sortOrder:columns:rows:)](./init%28selection,sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows that supports selecting multiple rows.
 
 

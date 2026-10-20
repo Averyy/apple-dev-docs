@@ -1,7 +1,8 @@
 # provider(_:didActivate:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the provider’s audio session is activated.
 
@@ -18,6 +19,10 @@ Called when the provider’s audio session is activated.
 optional func provider(_ provider: CXProvider, didActivate audioSession: AVAudioSession)
 ```
 
+```objc
+- (void) provider:(CXProvider *) provider didActivateAudioSession:(AVAudioSession *) audioSession;
+```
+
 ## Parameters
 
 - `provider`: The telephony provider.
@@ -25,7 +30,8 @@ optional func provider(_ provider: CXProvider, didActivate audioSession: AVAudio
 
 ## See Also
 
-- [func provider(CXProvider, didDeactivate: AVAudioSession)](cxproviderdelegate/provider(_:diddeactivate:).md)
+### Handling Changes to Audio Session Activation State
+- [func provider(CXProvider, didDeactivate: AVAudioSession)](./provider%28_,diddeactivate%29.md)
   Called when the provider’s audio session is deactivated.
 
 

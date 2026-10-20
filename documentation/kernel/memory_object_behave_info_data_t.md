@@ -1,14 +1,15 @@
 # memory_object_behave_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct memory_object_behave_info {
     ...
 } memory_object_behave_info_data_t;
@@ -17,11 +18,11 @@ typedef struct memory_object_behave_info {
 ## Topics
 
 ### Instance Properties
-- [advisory_pageout](memory_object_behave_info_data_t/1562622-advisory_pageout.md)
-- [copy_strategy](memory_object_behave_info_data_t/1562617-copy_strategy.md)
-- [invalidate](memory_object_behave_info_data_t/1562515-invalidate.md)
-- [silent_overwrite](memory_object_behave_info_data_t/1562541-silent_overwrite.md)
-- [temporary](memory_object_behave_info_data_t/1562554-temporary.md)
+- [advisory_pageout](./memory_object_behave_info_data_t/api-1562622-advisory_pageout.md)
+- [copy_strategy](./memory_object_behave_info_data_t/api-1562617-copy_strategy.md)
+- [invalidate](./memory_object_behave_info_data_t/api-1562515-invalidate.md)
+- [silent_overwrite](./memory_object_behave_info_data_t/api-1562541-silent_overwrite.md)
+- [temporary](./memory_object_behave_info_data_t/api-1562554-temporary.md)
 
 
 ---

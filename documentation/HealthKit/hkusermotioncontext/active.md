@@ -1,7 +1,8 @@
 # HKUserMotionContext.active
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person was active during the sample.
 
@@ -19,11 +20,16 @@ The person was active during the sample.
 case active
 ```
 
+```c
+HKUserMotionContextActive
+```
+
 ## See Also
 
-- [HKUserMotionContext.notSet](hkusermotioncontext/notset.md)
+### Motion contexts
+- [HKUserMotionContext.notSet](./notset.md)
   The person’s motion was not specified.
-- [HKUserMotionContext.stationary](hkusermotioncontext/stationary.md)
+- [HKUserMotionContext.stationary](./stationary.md)
   The person was stationary during the sample.
 
 

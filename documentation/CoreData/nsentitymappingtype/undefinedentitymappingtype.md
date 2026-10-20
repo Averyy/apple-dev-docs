@@ -1,18 +1,19 @@
 # NSEntityMappingType.undefinedEntityMappingType
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the developer handles destination instance creation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ Specifies that the developer handles destination instance creation.
 case undefinedEntityMappingType
 ```
 
+```c
+NSUndefinedEntityMappingType
+```
+
 ## See Also
 
-- [NSEntityMappingType.customEntityMappingType](nsentitymappingtype/customentitymappingtype.md)
+### Constants
+- [NSEntityMappingType.customEntityMappingType](./customentitymappingtype.md)
   Specifies a custom mapping.
-- [NSEntityMappingType.addEntityMappingType](nsentitymappingtype/addentitymappingtype.md)
+- [NSEntityMappingType.addEntityMappingType](./addentitymappingtype.md)
   Specifies that this is a new entity in the destination model.
-- [NSEntityMappingType.removeEntityMappingType](nsentitymappingtype/removeentitymappingtype.md)
+- [NSEntityMappingType.removeEntityMappingType](./removeentitymappingtype.md)
   Specifies that this entity is not present in the destination model.
-- [NSEntityMappingType.copyEntityMappingType](nsentitymappingtype/copyentitymappingtype.md)
+- [NSEntityMappingType.copyEntityMappingType](./copyentitymappingtype.md)
   Specifies that source instances are migrated as-is.
-- [NSEntityMappingType.transformEntityMappingType](nsentitymappingtype/transformentitymappingtype.md)
+- [NSEntityMappingType.transformEntityMappingType](./transformentitymappingtype.md)
   Specifies that entity exists in source and destination and is mapped.
 
 

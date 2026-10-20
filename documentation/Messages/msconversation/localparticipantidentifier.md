@@ -1,7 +1,8 @@
 # localParticipantIdentifier
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UUID that identifies the user on this device.
 
@@ -16,13 +17,18 @@ A UUID that identifies the user on this device.
 var localParticipantIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUUID * localParticipantIdentifier;
+```
+
 #### Discussion
 
 This UUID is scoped to this device. It remains stable as long as the extension is enabled. If the extension is disabled and reenabled, or if the containing app is removed and reinstalled, the UUID for the local participant changes.
 
 ## See Also
 
-- [var remoteParticipantIdentifiers: [UUID]](msconversation/remoteparticipantidentifiers.md)
+### Accessing Participants
+- [var remoteParticipantIdentifiers: [UUID]](./remoteparticipantidentifiers.md)
   An array of UUIDs representing the remote participants in this conversation.
 
 

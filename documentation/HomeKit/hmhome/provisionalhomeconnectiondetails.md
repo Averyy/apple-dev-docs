@@ -1,7 +1,8 @@
 # HMHome.ProvisionalHomeConnectionDetails
 
 **Framework**: HomeKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the token to transfer a temporary, provisional home to a person’s home hub.
 
@@ -22,32 +23,33 @@ Use the `prepare-session` REST endpoint of the home hub to obtain the transfer t
 ## Topics
 
 ### Creating connection details
-- [init(transferToken: Data)](hmhome/provisionalhomeconnectiondetails/init(transfertoken:).md)
+- [init(transferToken: Data)](./provisionalhomeconnectiondetails/init%28transfertoken%29.md)
   Creates a structure that contains the token you need to transfer a temporary home to a person’s home hub.
-- [var transferToken: Data](hmhome/provisionalhomeconnectiondetails/transfertoken.md)
+- [var transferToken: Data](./provisionalhomeconnectiondetails/transfertoken.md)
   An opaque token you need to transfer a temporary home to a person’s home hub.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isProvisionalHome: Bool](hmhome/isprovisionalhome.md)
+### Providing installation services
+- [var isProvisionalHome: Bool](./isprovisionalhome.md)
   A property that indicates if the home is a temporary, provisional home for use by installation services.
-- [func isProvisionalHome(forPairingIdentifier: String) async throws -> Bool](hmhome/isprovisionalhome(forpairingidentifier:).md)
+- [func isProvisionalHome(forPairingIdentifier: String) async throws -> Bool](./isprovisionalhome%28forpairingidentifier%29.md)
   Checks whether the home is a temporary, provisional home for use by installation services.
-- [func transferProvisionalHome(connectionDetails: HMHome.ProvisionalHomeConnectionDetails, targetHomeUniqueIdentifier: UUID) async throws(HMHome.ProvisionalHomeTransferError) -> HMHome.ProvisionalHomeTransferResult](hmhome/transferprovisionalhome(connectiondetails:targethomeuniqueidentifier:).md)
+- [func transferProvisionalHome(connectionDetails: HMHome.ProvisionalHomeConnectionDetails, targetHomeUniqueIdentifier: UUID) async throws(HMHome.ProvisionalHomeTransferError) -> HMHome.ProvisionalHomeTransferResult](./transferprovisionalhome%28connectiondetails,targethomeuniqueidentifier%29.md)
   Transfers a temporary, provisional home to a person’s home hub.
-- [HMHome.ProvisionalHomeTransferResult](hmhome/provisionalhometransferresult.md)
+- [HMHome.ProvisionalHomeTransferResult](./provisionalhometransferresult.md)
   The outcome of transferring a temporary home to a home hub.
-- [HMHome.ProvisionalHomeTransferError](hmhome/provisionalhometransfererror.md)
+- [HMHome.ProvisionalHomeTransferError](./provisionalhometransfererror.md)
   Errors that occur when transferring a temporary home to a person’s home hub.
 
 

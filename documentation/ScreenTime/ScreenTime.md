@@ -1,7 +1,8 @@
 # Screen Time
 
 **Framework**: Screen Time  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Share and manage web-usage data, and observe changes made by a parent or guardian.
 
@@ -24,15 +25,15 @@ The Screen Time framework gives you the tools you need to help parents and guard
 ## Topics
 
 ### Essentials
-- [class STWebpageController](stwebpagecontroller.md)
+- [class STWebpageController](./stwebpagecontroller.md)
   The controller you use to report web usage and block restricted webpages.
 ### Configuration queries
-- [class STScreenTimeConfigurationObserver](stscreentimeconfigurationobserver.md)
+- [class STScreenTimeConfigurationObserver](./stscreentimeconfigurationobserver.md)
   The object you use to observe changes to the current configuration.
-- [class STScreenTimeConfiguration](stscreentimeconfiguration.md)
+- [class STScreenTimeConfiguration](./stscreentimeconfiguration.md)
   The configuration for this device.
 ### Web-Usage data deletion
-- [class STWebHistory](stwebhistory.md)
+- [class STWebHistory](./stwebhistory.md)
   The object you use to delete web-usage data.
 
 

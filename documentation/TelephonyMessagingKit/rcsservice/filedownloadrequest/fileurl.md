@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the file to download.
 
@@ -16,9 +17,10 @@ var fileURL: URL
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/filedownloadrequest/cellularserviceid.md)
+### Accessing download request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   The service identifier associated with this request.
-- [var destinationFileURL: URL](rcsservice/filedownloadrequest/destinationfileurl.md)
+- [var destinationFileURL: URL](./destinationfileurl.md)
   The destination path of the downloaded file.
 
 

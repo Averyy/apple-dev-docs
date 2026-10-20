@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration with rendering parameters for the render handler.
 

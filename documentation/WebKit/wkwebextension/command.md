@@ -1,7 +1,8 @@
 # WKWebExtension.Command
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates the properties for an individual web extension command.
 
@@ -19,6 +20,10 @@ An object that encapsulates the properties for an individual web extension comma
 class Command
 ```
 
+```objc
+@interface WKWebExtensionCommand : NSObject
+```
+
 #### Overview
 
 Provides access to command properties such as a unique identifier, a descriptive title, and shortcut keys. Commands can be used by a web extension to perform specific actions within a web extension context, such toggling features, or interacting with web content. These commands enhance the functionality of the extension by allowing users to invoke actions quickly.
@@ -26,62 +31,63 @@ Provides access to command properties such as a unique identifier, a descriptive
 ## Topics
 
 ### Instance Properties
-- [var activationKey: String?](wkwebextension/command/activationkey.md)
+- [var activationKey: String?](./command/activationkey.md)
   The primary key used to trigger the command, distinct from any modifier flags.
-- [var id: String](wkwebextension/command/id.md)
+- [var id: String](./command/id.md)
   A unique identifier for the command.
-- [var keyCommand: UIKeyCommand?](wkwebextension/command/keycommand.md)
+- [var keyCommand: UIKeyCommand?](./command/keycommand.md)
   A key command representation of the web extension command for use in the responder chain.
-- [var menuItem: UIMenuElement](wkwebextension/command/menuitem.md)
+- [var menuItem: UIMenuElement](./command/menuitem.md)
   A menu item representation of the web extension command for use in menus.
-- [var modifierFlags: UIKeyModifierFlags](wkwebextension/command/modifierflags.md)
+- [var modifierFlags: UIKeyModifierFlags](./command/modifierflags.md)
   The modifier flags used with the activation key to trigger the command.
-- [var title: String](wkwebextension/command/title.md)
+- [var title: String](./command/title.md)
   A descriptive title for the command to help discoverability.
-- [var webExtensionContext: WKWebExtensionContext?](wkwebextension/command/webextensioncontext.md)
+- [var webExtensionContext: WKWebExtensionContext?](./command/webextensioncontext.md)
   The web extension context associated with the command.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebExtension](wkwebextension.md)
+### Web extensions
+- [class WKWebExtension](../wkwebextension.md)
   An object that encapsulates a web extension’s resources that the manifest file defines.
-- [protocol WKWebExtensionTab](wkwebextensiontab.md)
+- [protocol WKWebExtensionTab](../wkwebextensiontab.md)
   A protocol with methods that represent a tab to web extensions.
-- [protocol WKWebExtensionWindow](wkwebextensionwindow.md)
+- [protocol WKWebExtensionWindow](../wkwebextensionwindow.md)
   A protocol with methods that represent a window to web extensions.
-- [class WKWebExtensionContext](wkwebextensioncontext.md)
+- [class WKWebExtensionContext](../wkwebextensioncontext.md)
   An object that represents the runtime environment for a web extension.
-- [class WKWebExtensionController](wkwebextensioncontroller.md)
+- [class WKWebExtensionController](../wkwebextensioncontroller.md)
   An object that manages a set of loaded extension contexts.
-- [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
+- [protocol WKWebExtensionControllerDelegate](../wkwebextensioncontrollerdelegate.md)
   A group of methods you use to customize web extension interactions.
-- [WKWebExtension.Action](wkwebextension/action.md)
+- [WKWebExtension.Action](./action.md)
   An object that encapsulates the properties for an individual web extension action.
-- [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
+- [WKWebExtension.MatchPattern](./matchpattern.md)
   An object that represents a way to specify groups of URLs.
-- [WKWebExtension.MessagePort](wkwebextension/messageport.md)
+- [WKWebExtension.MessagePort](./messageport.md)
   An object that manages message-based communication with a web extension.
-- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+- [WKWebExtension.DataRecord](./datarecord.md)
   An object that represents a record of stored data for a specific web extension context.
-- [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
+- [WKWebExtension.TabConfiguration](./tabconfiguration.md)
   An object that encapsulates configuration options for a tab in an extension.
-- [WKWebExtension.WindowConfiguration](wkwebextension/windowconfiguration.md)
+- [WKWebExtension.WindowConfiguration](./windowconfiguration.md)
   An object that encapsulates configuration options for a window in an extension.
-- [WKWebExtensionController.Configuration](wkwebextensioncontroller/configuration-swift.class.md)
-  A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
+- [WKWebExtensionController.Configuration](../wkwebextensioncontroller/configuration-swift.class.md)
+  A [`WKWebExtensionController.Configuration`](../wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
 
 
 ---

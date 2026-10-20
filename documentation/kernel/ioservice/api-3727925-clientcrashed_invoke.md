@@ -1,14 +1,15 @@
 # ClientCrashed_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t ClientCrashed_Invoke(const IORPC rpc, OSMetaClassBase *target, ClientCrashed_Handler func);
 ```
 

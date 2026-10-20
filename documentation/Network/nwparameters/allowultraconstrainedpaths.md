@@ -1,7 +1,8 @@
 # allowUltraConstrainedPaths
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allow connection to use interfaces considered ultra-constrained by the system
 

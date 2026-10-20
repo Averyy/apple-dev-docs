@@ -1,7 +1,8 @@
 # startingRow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the table row at which this text table block starts.
 
@@ -14,17 +15,22 @@ Returns the table row at which this text table block starts.
 var startingRow: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger startingRow;
+```
+
 #### Return Value
 
 The table row at which this text table block starts.
 
 ## See Also
 
-- [var rowSpan: Int](nstexttableblock/rowspan.md)
+### Getting information about the block’s position in its enclosing table
+- [var rowSpan: Int](./rowspan.md)
   Returns the number of table rows spanned by this text table block.
-- [var startingColumn: Int](nstexttableblock/startingcolumn.md)
+- [var startingColumn: Int](./startingcolumn.md)
   Returns the table column at which this text table block starts.
-- [var columnSpan: Int](nstexttableblock/columnspan.md)
+- [var columnSpan: Int](./columnspan.md)
   Returns the number of table columns spanned by this text table block.
 
 

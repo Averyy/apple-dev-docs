@@ -1,7 +1,8 @@
 # init(image:menu:target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a combo button that displays an image.
 
@@ -14,13 +15,17 @@ Creates a combo button that displays an image.
 convenience init(image: NSImage, menu: NSMenu?, target: Any?, action: Selector?)
 ```
 
+```objc
++ (instancetype) comboButtonWithImage:(NSImage *) image menu:(NSMenu *) menu target:(id) target action:(SEL) action;
+```
+
 #### Return Value
 
 A combo button configured with only the specified image.
 
 #### Discussion
 
-This method sets the [`title`](nscombobutton/title.md) property to an empty string.
+This method sets the [`title`](./title.md) property to an empty string.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ This method sets the [`title`](nscombobutton/title.md) property to an empty stri
 
 ## See Also
 
-- [convenience init(title: String, image: NSImage, menu: NSMenu?, target: Any?, action: Selector?)](nscombobutton/init(title:image:menu:target:action:).md)
+### Creating a Combo Button
+- [convenience init(title: String, image: NSImage, menu: NSMenu?, target: Any?, action: Selector?)](./init%28title,image,menu,target,action%29.md)
   Creates a combo button that displays both a title and image.
-- [convenience init(title: String, menu: NSMenu?, target: Any?, action: Selector?)](nscombobutton/init(title:menu:target:action:).md)
+- [convenience init(title: String, menu: NSMenu?, target: Any?, action: Selector?)](./init%28title,menu,target,action%29.md)
   Creates a combo button that displays a title.
 
 

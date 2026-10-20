@@ -1,12 +1,13 @@
 # Getting the default GPU
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Select the system’s default GPU device on which to run your Metal code.
 
 #### Overview
 
-To use the Metal framework, start by getting a GPU device. All of the instances your app needs to interact with Metal come from an [`MTLDevice`](mtldevice.md) that you acquire at runtime. Some devices, such as those with iOS and tvOS have a single GPU that you can access by calling [`MTLCreateSystemDefaultDevice()`](mtlcreatesystemdefaultdevice().md).
+To use the Metal framework, start by getting a GPU device. All of the instances your app needs to interact with Metal come from an [`MTLDevice`](./mtldevice.md) that you acquire at runtime. Some devices, such as those with iOS and tvOS have a single GPU that you can access by calling [`MTLCreateSystemDefaultDevice()`](./mtlcreatesystemdefaultdevice%28%29.md).
 
 ```swift
 if(!(device = MTLCreateSystemDefaultDevice()))
@@ -19,13 +20,14 @@ On macOS devices that have multiple GPUs, such as a MacBook Pro, the system defa
 
 ## See Also
 
-- [Detecting GPU features and Metal software versions](detecting-gpu-features-and-metal-software-versions.md)
+### Locating and inspecting a GPU device
+- [Detecting GPU features and Metal software versions](./detecting-gpu-features-and-metal-software-versions.md)
   Use the device object’s properties to determine how you perform tasks in Metal.
-- [func MTLCreateSystemDefaultDevice() -> (any MTLDevice)?](mtlcreatesystemdefaultdevice().md)
+- [func MTLCreateSystemDefaultDevice() -> (any MTLDevice)?](./mtlcreatesystemdefaultdevice%28%29.md)
   Returns the device instance Metal selects as the default.
-- [protocol MTLDevice](mtldevice.md)
+- [protocol MTLDevice](./mtldevice.md)
   The main Metal interface to a GPU that apps use to draw graphics and run computations in parallel.
-- [Multi-GPU systems](multi-gpu-systems.md)
+- [Multi-GPU systems](./multi-gpu-systems.md)
   Locate and work with internal and external GPUs and their displays, video memory, and performance tradeoffs.
 
 

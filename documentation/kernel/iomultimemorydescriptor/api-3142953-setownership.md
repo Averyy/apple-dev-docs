@@ -1,14 +1,15 @@
 # setOwnership
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 IOReturn setOwnership(task_t newOwner, int newLedgerTag, IOOptionBits newOptions);
 ```
 

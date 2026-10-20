@@ -1,7 +1,8 @@
 # isInstance
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 True if the prim is an instance of a prototype.
 

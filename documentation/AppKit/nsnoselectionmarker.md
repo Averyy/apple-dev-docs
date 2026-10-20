@@ -1,12 +1,13 @@
 # NSNoSelectionMarker
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 This marker indicates that the controller’s selection is currently empty.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 11.0
 
 ## Declaration
 
@@ -14,11 +15,16 @@ This marker indicates that the controller’s selection is currently empty.
 var NSNoSelectionMarker: AnyObject
 ```
 
+```c
+extern id NSNoSelectionMarker;
+```
+
 ## See Also
 
-- [var NSMultipleValuesMarker: AnyObject](nsmultiplevaluesmarker.md)
+### Deprecated
+- [var NSMultipleValuesMarker: AnyObject](./nsmultiplevaluesmarker.md)
   This marker indicates that a key’s value contains multiple values that differ.
-- [var NSNotApplicableMarker: AnyObject](nsnotapplicablemarker.md)
+- [var NSNotApplicableMarker: AnyObject](./nsnotapplicablemarker.md)
   This marker indicates that an object is not key-value coding compliant for the requested key.
 
 

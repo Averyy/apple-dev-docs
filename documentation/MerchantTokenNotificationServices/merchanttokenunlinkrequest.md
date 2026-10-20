@@ -1,7 +1,8 @@
 # MerchantTokenUnlinkRequest
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to invalidate a merchant token.
 
@@ -11,7 +12,7 @@ The request body you use to invalidate a merchant token.
 
 ## Declaration
 
-```swift
+```
 object MerchantTokenUnlinkRequest
 ```
 
@@ -19,9 +20,12 @@ object MerchantTokenUnlinkRequest
 
 - `merchantTokenIdentifier` (string) *(required)*: The merchant token identifier to invalidate.
 
+  **Maximum Length**: `64`
+
 ## See Also
 
-- [Invalidate a Merchant Token](unlinking-merchanttoken.md)
+### Merchant token invalidation
+- [Invalidate a Merchant Token](./unlinking-merchanttoken.md)
   Invalidate a merchant token associated with your merchant identifier, making it invalid for future transaction authorizations.
 
 

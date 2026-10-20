@@ -1,7 +1,8 @@
 # openDocument(completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a document in a document view controller from outside the document view controller.
 
@@ -14,7 +15,15 @@ Opens a document in a document view controller from outside the document view co
 ## Declaration
 
 ```swift
+func openDocument(completionHandler: @escaping (Bool) -> Void)
+```
+
+```swift
 func openDocument() async -> Bool
+```
+
+```objc
+- (void) openDocumentWithCompletionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
 ## Parameters
@@ -23,9 +32,10 @@ func openDocument() async -> Bool
 
 ## See Also
 
-- [var document: UIDocument?](uidocumentviewcontroller/document.md)
+### Managing the document view
+- [var document: UIDocument?](./document.md)
   The document that the controller presents or edits.
-- [func documentDidOpen()](uidocumentviewcontroller/documentdidopen.md)
+- [func documentDidOpen()](./documentdidopen%28%29.md)
   Provides an opportunity to configure the view after the system loads the controller’s document into memory.
 
 

@@ -1,7 +1,8 @@
 # SuggestedActionsMessage.Participant
 
 **Framework**: Suggested Actions  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sender or recipient of a message in a conversation.
 
@@ -22,7 +23,7 @@ struct Participant
 
 Create a `Participant` by providing a display name, a handle that uniquely identifies the participant, and a Boolean value that indicates whether the participant is the user of this device. Common handles are phone numbers or email addresses, but you can use any string that uniquely identifies a participant within your app’s user identity system.
 
-To enable the Suggested Actions to tailor the suggested actions to the person who uses a device, make sure the `isUser` parameter of [`init(name:handle:isUser:)`](suggestedactionsmessage/participant/init(name:handle:isuser:).md) is `true` for the participant that uses the device. Set `isUser` to `false` for other participants. The following code snippet shows how an app can initialize a `Participant` who uses the current device and a second participant who sends a message from their own device to the first participant’s device:
+To enable the Suggested Actions to tailor the suggested actions to the person who uses a device, make sure the `isUser` parameter of [`init(name:handle:isUser:)`](./participant/init%28name,handle,isuser%29.md) is `true` for the participant that uses the device. Set `isUser` to `false` for other participants. The following code snippet shows how an app can initialize a `Participant` who uses the current device and a second participant who sends a message from their own device to the first participant’s device:
 
 ```swift
 // The participant who uses this device.
@@ -43,18 +44,19 @@ let contact = SuggestedActionsMessage.Participant(
 ## Topics
 
 ### Creating the participant representation
-- [init(name: String, handle: String, isUser: Bool)](suggestedactionsmessage/participant/init(name:handle:isuser:).md)
+- [init(name: String, handle: String, isUser: Bool)](./participant/init%28name,handle,isuser%29.md)
   Creates a participant in a conversation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(id: some Hashable, date: Date, subject: AttributedString?, body: AttributedString, sender: SuggestedActionsMessage.Participant, recipients: [SuggestedActionsMessage.Participant])](suggestedactionsmessage/init(id:date:subject:body:sender:recipients:).md)
+### Creating the message representation
+- [init(id: some Hashable, date: Date, subject: AttributedString?, body: AttributedString, sender: SuggestedActionsMessage.Participant, recipients: [SuggestedActionsMessage.Participant])](./init%28id,date,subject,body,sender,recipients%29.md)
   Creates a representation of a message that the system uses to display suggested actions.
 
 

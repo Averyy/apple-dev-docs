@@ -1,15 +1,16 @@
 # minimumThresholdValue
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var minimumThresholdValue: Float
 ```
 
+```c
+float minimumThresholdValue;
+```
+
 ## See Also
 
-- [var maximumKeypoints: Int](mpsimagekeypointrangeinfo/maximumkeypoints.md)
+### Instance Properties
+- [var maximumKeypoints: Int](./maximumkeypoints.md)
 
 
 ---

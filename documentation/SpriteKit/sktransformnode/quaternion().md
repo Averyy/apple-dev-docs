@@ -1,7 +1,8 @@
 # quaternion()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -18,10 +19,15 @@
 func quaternion() -> simd_quatf
 ```
 
+```objc
+- (simd_quatf) quaternion;
+```
+
 ## See Also
 
-- [func eulerAngles() -> vector_float3](sktransformnode/eulerangles.md)
-- [func rotationMatrix() -> matrix_float3x3](sktransformnode/rotationmatrix.md)
+### Reading the Current Rotation
+- [func eulerAngles() -> vector_float3](./eulerangles%28%29.md)
+- [func rotationMatrix() -> matrix_float3x3](./rotationmatrix%28%29.md)
 
 
 ---

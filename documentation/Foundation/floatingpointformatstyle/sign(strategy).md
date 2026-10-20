@@ -1,7 +1,8 @@
 # sign(strategy:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
 
@@ -26,7 +27,7 @@ A floating-point format style modified to use the specified sign display strateg
 
 #### Discussion
 
-The following example creates a default [`FloatingPointFormatStyle`](floatingpointformatstyle.md) for the `en_US` locale, and a second style that displays a sign for all values except zero. It then applies each style to an array of floating-point values. The formatting that the modified style applies adds the negative (`-`) or positive (`+`) sign to all the numbers.
+The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and a second style that displays a sign for all values except zero. It then applies each style to an array of floating-point values. The formatting that the modified style applies adds the negative (`-`) or positive (`+`) sign to all the numbers.
 
 ```swift
 let defaultStyle = FloatingPointFormatStyle<Double>(locale: Locale(identifier: "en_US"))
@@ -38,27 +39,28 @@ let alwaysNums = nums.map { alwaysStyle.format($0) } // ["-2.1", "-1.2", "0", "+
 
 ## Parameters
 
-- `strategy`: The sign display strategy to apply to the format style, such as [`automatic`](numberformatstyleconfiguration/signdisplaystrategy/automatic.md) or [`never`](numberformatstyleconfiguration/signdisplaystrategy/never.md).
+- `strategy`: The sign display strategy to apply to the format style, such as [`automatic`](../numberformatstyleconfiguration/signdisplaystrategy/automatic.md) or [`never`](../numberformatstyleconfiguration/signdisplaystrategy/never.md).
 
 ## See Also
 
-- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(FloatingPointFormatStyle<Value>.Configuration.Grouping) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/grouping(_:).md)
+- [func grouping(FloatingPointFormatStyle<Value>.Configuration.Grouping) -> FloatingPointFormatStyle<Value>](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/locale(_:).md)
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func notation(FloatingPointFormatStyle<Value>.Configuration.Notation) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/notation(_:).md)
+- [func notation(FloatingPointFormatStyle<Value>.Configuration.Notation) -> FloatingPointFormatStyle<Value>](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(FloatingPointFormatStyle<Value>.Configuration.Precision) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/precision(_:).md)
+- [func precision(FloatingPointFormatStyle<Value>.Configuration.Precision) -> FloatingPointFormatStyle<Value>](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: FloatingPointFormatStyle<Value>.Configuration.RoundingRule, increment: Double?) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/rounded(rule:increment:).md)
+- [func rounded(rule: FloatingPointFormatStyle<Value>.Configuration.RoundingRule, increment: Double?) -> FloatingPointFormatStyle<Value>](./rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/scale(_:).md)
+- [func scale(Double) -> FloatingPointFormatStyle<Value>](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [FloatingPointFormatStyle.Configuration](floatingpointformatstyle/configuration.md)
+- [FloatingPointFormatStyle.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

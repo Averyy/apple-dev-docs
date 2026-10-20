@@ -1,7 +1,8 @@
 # speechRecognitionTaskWasCancelled(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the task has been canceled.
 
@@ -18,21 +19,26 @@ Tells the delegate that the task has been canceled.
 optional func speechRecognitionTaskWasCancelled(_ task: SFSpeechRecognitionTask)
 ```
 
+```objc
+- (void) speechRecognitionTaskWasCancelled:(SFSpeechRecognitionTask *) task;
+```
+
 #### Discussion
 
 A speech recognition task can be canceled by the user, by your app, or by the system.
 
 ## Parameters
 
-- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](../sfspeechrecognitiontask.md) object) that represents the request.
 
 ## See Also
 
-- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishRecognition: SFSpeechRecognitionResult)](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishrecognition:).md)
+### Finishing a speech recognition task
+- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishRecognition: SFSpeechRecognitionResult)](./speechrecognitiontask%28_,didfinishrecognition%29.md)
   Tells the delegate when the final utterance is recognized.
-- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishSuccessfully: Bool)](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishsuccessfully:).md)
+- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishSuccessfully: Bool)](./speechrecognitiontask%28_,didfinishsuccessfully%29.md)
   Tells the delegate when the recognition of all requested utterances is finished.
-- [func speechRecognitionTask(SFSpeechRecognitionTask, didProcessAudioDuration: TimeInterval)](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didprocessaudioduration:).md)
+- [func speechRecognitionTask(SFSpeechRecognitionTask, didProcessAudioDuration: TimeInterval)](./speechrecognitiontask%28_,didprocessaudioduration%29.md)
   Tells the delegate how much audio has been processed by the task.
 
 

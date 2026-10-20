@@ -1,7 +1,8 @@
 # trackingAreasUsage
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture usage value used when creating the tracking areas textures for the layer.
 

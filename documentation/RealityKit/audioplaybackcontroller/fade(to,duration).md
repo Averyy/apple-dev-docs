@@ -1,7 +1,8 @@
 # fade(to:duration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transitions the gain to the given value over a time interval using a linear curve.
 
@@ -11,7 +12,7 @@ Transitions the gain to the given value over a time interval using a linear curv
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,7 +32,8 @@ The target gain must be zero or negative, where zero is nominal loudness and neg
 
 ## See Also
 
-- [var gain: AudioPlaybackController.Decibel](audioplaybackcontroller/gain.md)
+### Setting the volume
+- [var gain: AudioPlaybackController.Decibel](./gain.md)
   The individual gain in decibels of the audio playback controller output.
 
 

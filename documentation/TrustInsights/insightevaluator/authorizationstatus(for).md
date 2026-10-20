@@ -1,7 +1,8 @@
 # authorizationStatus(for:)
 
 **Framework**: Trust Insights  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an authorization status that indicates whether a person permitted the app to request evaluations for the given context.
 
@@ -17,21 +18,22 @@ final nonisolated(nonsending) func authorizationStatus<each I>(for context: Insi
 
 #### Return Value
 
-An [`InsightEvaluator.AuthorizationStatus`](insightevaluator/authorizationstatus.md) that indicates whether someone authorized the app to request evaluations.
+An [`InsightEvaluator.AuthorizationStatus`](./authorizationstatus.md) that indicates whether someone authorized the app to request evaluations.
 
 #### Discussion
 
-> **Note**: Errors in cases where there is a system failure.
+> **Throws**: Errors in cases where there is a system failure.
 
 ## Parameters
 
-- `context`: The [`InsightEvaluator.InsightContext`](insightevaluator/insightcontext.md) to request evaluations for.
+- `context`: The [`InsightEvaluator.InsightContext`](./insightcontext.md) to request evaluations for.
 
 ## See Also
 
-- [func requestAuthorization<each I>(for: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus](insightevaluator/requestauthorization(for:).md)
+### Obtaining permission or checking authorization to perform evaluations
+- [func requestAuthorization<each I>(for: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus](./requestauthorization%28for%29.md)
   Requests authorization from a person to generate evaluations.
-- [InsightEvaluator.AuthorizationStatus](insightevaluator/authorizationstatus.md)
+- [InsightEvaluator.AuthorizationStatus](./authorizationstatus.md)
   Values that indicate the status of the app’s authorization to request evaluations.
 
 

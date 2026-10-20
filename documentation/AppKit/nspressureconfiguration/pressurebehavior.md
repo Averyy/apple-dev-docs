@@ -1,7 +1,8 @@
 # pressureBehavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pressure behavior of the pressure configuration object.
 
@@ -12,6 +13,10 @@ The pressure behavior of the pressure configuration object.
 
 ```swift
 var pressureBehavior: NSEvent.PressureBehavior { get }
+```
+
+```objc
+@property (readonly) NSPressureBehavior pressureBehavior;
 ```
 
 #### Discussion

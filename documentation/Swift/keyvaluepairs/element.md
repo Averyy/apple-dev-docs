@@ -1,7 +1,8 @@
 # KeyValuePairs.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The element type of a `KeyValuePairs`: a tuple containing an individual key-value pair.
 

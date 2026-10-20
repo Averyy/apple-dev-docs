@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sub_umbrella_command {
     ...
 };
@@ -17,9 +17,9 @@ struct sub_umbrella_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](sub_umbrella_command/1525365-cmd.md)
-- [cmdsize](sub_umbrella_command/1525827-cmdsize.md)
-- [sub_umbrella](sub_umbrella_command/1525490-sub_umbrella.md)
+- [cmd](./sub_umbrella_command/api-1525365-cmd.md)
+- [cmdsize](./sub_umbrella_command/api-1525827-cmdsize.md)
+- [sub_umbrella](./sub_umbrella_command/api-1525490-sub_umbrella.md)
   A data structure of type `lc_str`. Specifies the name of the umbrella framework of which this file is a member.
 
 

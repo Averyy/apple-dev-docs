@@ -1,9 +1,10 @@
 # returnIndicesMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Defines the mode for returned indices of maximum values within each pooling window. Use this in conjunction with [`maxPooling2DReturnIndices(_:descriptor:name:)`](mpsgraph/maxpooling2dreturnindices(_:descriptor:name:).md) API. If `returnIndicesMode = MPSGraphPoolingReturnIndicesNone` then only the first result MPSGraph returns from [`maxPooling2DReturnIndices(_:descriptor:name:)`](mpsgraph/maxpooling2dreturnindices(_:descriptor:name:).md) will be valid and using the second result will assert. Default value: `MPSGraphPoolingReturnIndicesNone`.
+Defines the mode for returned indices of maximum values within each pooling window. Use this in conjunction with [`maxPooling2DReturnIndices(_:descriptor:name:)`](../mpsgraph/maxpooling2dreturnindices%28_,descriptor,name%29.md) API. If `returnIndicesMode = MPSGraphPoolingReturnIndicesNone` then only the first result MPSGraph returns from [`maxPooling2DReturnIndices(_:descriptor:name:)`](../mpsgraph/maxpooling2dreturnindices%28_,descriptor,name%29.md) will be valid and using the second result will assert. Default value: `MPSGraphPoolingReturnIndicesNone`.
 
 **Availability**:
 - iOS 15.3+
@@ -17,6 +18,10 @@ Defines the mode for returned indices of maximum values within each pooling wind
 
 ```swift
 var returnIndicesMode: MPSGraphPoolingReturnIndicesMode { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphPoolingReturnIndicesMode returnIndicesMode;
 ```
 
 

@@ -1,7 +1,8 @@
 # clientConnectionInvalidated()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the connection to the Wi-Fi subsystem is permanently invalidated.
 
@@ -15,25 +16,30 @@ Tells the delegate that the connection to the Wi-Fi subsystem is permanently inv
 optional func clientConnectionInvalidated()
 ```
 
+```objc
+- (void) clientConnectionInvalidated;
+```
+
 ## See Also
 
-- [func bssidDidChangeForWiFiInterface(withName: String)](cweventdelegate/bssiddidchangeforwifiinterface(withname:).md)
+### Instance Methods
+- [func bssidDidChangeForWiFiInterface(withName: String)](./bssiddidchangeforwifiinterface%28withname%29.md)
   Tells the delegate that the current BSSID has changed.
-- [func clientConnectionInterrupted()](cweventdelegate/clientconnectioninterrupted.md)
+- [func clientConnectionInterrupted()](./clientconnectioninterrupted%28%29.md)
   Tells the delegate that the connection to the Wi-Fi subsystem is temporarily interrupted.
-- [func countryCodeDidChangeForWiFiInterface(withName: String)](cweventdelegate/countrycodedidchangeforwifiinterface(withname:).md)
+- [func countryCodeDidChangeForWiFiInterface(withName: String)](./countrycodedidchangeforwifiinterface%28withname%29.md)
   Tells the delegate that the currently adopted country code has changed.
-- [func linkDidChangeForWiFiInterface(withName: String)](cweventdelegate/linkdidchangeforwifiinterface(withname:).md)
+- [func linkDidChangeForWiFiInterface(withName: String)](./linkdidchangeforwifiinterface%28withname%29.md)
   Tells the delegate that the Wi-Fi link state changed.
-- [func linkQualityDidChangeForWiFiInterface(withName: String, rssi: Int, transmitRate: Double)](cweventdelegate/linkqualitydidchangeforwifiinterface(withname:rssi:transmitrate:).md)
+- [func linkQualityDidChangeForWiFiInterface(withName: String, rssi: Int, transmitRate: Double)](./linkqualitydidchangeforwifiinterface%28withname,rssi,transmitrate%29.md)
   Tells the delegate that the link quality has changed.
-- [func modeDidChangeForWiFiInterface(withName: String)](cweventdelegate/modedidchangeforwifiinterface(withname:).md)
+- [func modeDidChangeForWiFiInterface(withName: String)](./modedidchangeforwifiinterface%28withname%29.md)
   Tells the delegate that the operating mode has changed.
-- [func powerStateDidChangeForWiFiInterface(withName: String)](cweventdelegate/powerstatedidchangeforwifiinterface(withname:).md)
+- [func powerStateDidChangeForWiFiInterface(withName: String)](./powerstatedidchangeforwifiinterface%28withname%29.md)
   Tells the delegate that the Wi-Fi power state changed.
-- [func scanCacheUpdatedForWiFiInterface(withName: String)](cweventdelegate/scancacheupdatedforwifiinterface(withname:).md)
+- [func scanCacheUpdatedForWiFiInterface(withName: String)](./scancacheupdatedforwifiinterface%28withname%29.md)
   Tells the delegate that the Wi-Fi interface’s scan cache has been updated with new results.
-- [func ssidDidChangeForWiFiInterface(withName: String)](cweventdelegate/ssiddidchangeforwifiinterface(withname:).md)
+- [func ssidDidChangeForWiFiInterface(withName: String)](./ssiddidchangeforwifiinterface%28withname%29.md)
   Tells the delegate that the current SSID has changed.
 
 

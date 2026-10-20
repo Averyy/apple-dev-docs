@@ -1,7 +1,8 @@
 # FetchResultsCollection
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection that efficiently provides the results of a completed fetch.
 
@@ -24,26 +25,27 @@ struct FetchResultsCollection<Element>
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [func fetch<T>(FetchDescriptor<T>) throws -> [T]](modelcontext/fetch(_:).md)
+### Fetching models
+- [func fetch<T>(FetchDescriptor<T>) throws -> [T]](./modelcontext/fetch%28_%29.md)
   Returns an array of typed models that match the criteria of the specified fetch descriptor.
-- [func fetch<T>(FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<T>](modelcontext/fetch(_:batchsize:).md)
+- [func fetch<T>(FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<T>](./modelcontext/fetch%28_,batchsize%29.md)
   Returns a collection of typed models, in batches, which match the criteria of the specified fetch descriptor.
-- [func fetchCount<T>(FetchDescriptor<T>) throws -> Int](modelcontext/fetchcount(_:).md)
+- [func fetchCount<T>(FetchDescriptor<T>) throws -> Int](./modelcontext/fetchcount%28_%29.md)
   Returns the number of models that match the criteria of the specified fetch descriptor.
-- [struct FetchDescriptor](fetchdescriptor.md)
+- [struct FetchDescriptor](./fetchdescriptor.md)
   A type that describes the criteria, sort order, and any additional configuration to use when performing a fetch.
-- [func enumerate<T>(FetchDescriptor<T>, batchSize: Int, allowEscapingMutations: Bool, block: (T) throws -> Void) throws](modelcontext/enumerate(_:batchsize:allowescapingmutations:block:).md)
+- [func enumerate<T>(FetchDescriptor<T>, batchSize: Int, allowEscapingMutations: Bool, block: (T) throws -> Void) throws](./modelcontext/enumerate%28_,batchsize,allowescapingmutations,block%29.md)
   Runs a closure for each model that matches the criteria of the specified fetch descriptor.
-- [func model(for: PersistentIdentifier) -> any PersistentModel](modelcontext/model(for:).md)
+- [func model(for: PersistentIdentifier) -> any PersistentModel](./modelcontext/model%28for%29.md)
   Returns the persistent model for the specified identifier.
-- [func registeredModel<T>(for: PersistentIdentifier) -> T?](modelcontext/registeredmodel(for:).md)
+- [func registeredModel<T>(for: PersistentIdentifier) -> T?](./modelcontext/registeredmodel%28for%29.md)
   Returns the typed model for the specified identifier.
 
 

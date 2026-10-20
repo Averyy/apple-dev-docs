@@ -1,7 +1,8 @@
 # product(axes:keepDimensions:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a product reduction operation along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a product reduction operation along the given axis operation to the current
 ```swift
 func product(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

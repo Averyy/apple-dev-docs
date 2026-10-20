@@ -1,7 +1,8 @@
 # maxCallStackDepth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum call stack depth for indirect function calls in tile shaders.
 
@@ -19,6 +20,10 @@ The maximum call stack depth for indirect function calls in tile shaders.
 var maxCallStackDepth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxCallStackDepth;
+```
+
 #### Discussion
 
 The property’s default value is `1`. Change its value if you use recursive functions in your tile dispatch.
@@ -29,9 +34,10 @@ The maximum call stack depth applies only to indirect function calls in your sha
 
 ## See Also
 
-- [var tileFunction: any MTLFunction](mtltilerenderpipelinedescriptor/tilefunction.md)
+### Specifying graphics functions and associated data
+- [var tileFunction: any MTLFunction](./tilefunction.md)
   The compute kernel or fragment function the pipeline calls.
-- [var tileBuffers: MTLPipelineBufferDescriptorArray](mtltilerenderpipelinedescriptor/tilebuffers.md)
+- [var tileBuffers: MTLPipelineBufferDescriptorArray](./tilebuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s tile function.
 
 

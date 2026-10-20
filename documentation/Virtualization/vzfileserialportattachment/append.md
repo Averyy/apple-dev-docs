@@ -1,7 +1,8 @@
 # append
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the virtual machine appends data to the file.
 
@@ -14,13 +15,18 @@ A Boolean that indicates whether the virtual machine appends data to the file.
 var append: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL append;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the virtual machine appends new data to the file; otherwise, it replaces the existing contents of the file before writing new data to it.
+When the value of this property is [`true`](../../Swift/true.md), the virtual machine appends new data to the file; otherwise, it replaces the existing contents of the file before writing new data to it.
 
 ## See Also
 
-- [var url: URL](vzfileserialportattachment/url.md)
+### Getting the file details
+- [var url: URL](./url.md)
   The URL of a file on the local file system.
 
 

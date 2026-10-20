@@ -1,6 +1,7 @@
 # Writing custom build scripts
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Extend your Xcode Cloud workflows with custom build scripts that perform custom tasks or install additional tools.
 
@@ -18,9 +19,9 @@ For Xcode Cloud to recognize your custom build scripts, you’ll need to place t
 
 > ❗ **Important**: Xcode Cloud uses `zsh` as its default Unix shell. As a best practice, always include a shebang in the first line of your custom build script; for example `#!/bin/sh`.
 
-For additional information about custom build scripts, see [`Customize your advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10269). For more information on installing a third-party tool, see [`Install a third-party dependency with a custom script`](making-dependencies-available-to-xcode-cloud#Install-a-third-party-dependency-with-a-custom-script.md).
+For additional information about custom build scripts, see [Customize your advanced Xcode Cloud workflows](https://developer.apple.com/videos/play/wwdc2021/10269). For more information on installing a third-party tool, see [Install a third-party dependency with a custom script](./making-dependencies-available-to-xcode-cloud.md#Install-a-third-party-dependency-with-a-custom-script).
 
-##### Create the Ci Scripts Directory
+##### Create the CI scripts directory
 
 Custom build scripts reside in a directory named `ci_scripts` that’s located in the same directory as your Xcode project or workspace, and Xcode Cloud runs your custom build scripts with this directory as the root directory.
 
@@ -30,7 +31,7 @@ To create the `ci_scripts` directory:
 2. In the Project navigator, Control-click your project and choose New Group to create the group and its corresponding directory.
 3. Name the new group `ci_scripts`.
 
-##### Create a Custom Build Script
+##### Create a custom build script
 
 When Xcode Cloud performs an action you’ve added to a workflow, it performs a series of steps. If you add a custom build script, Xcode Cloud runs it at a specific moment between these steps.
 
@@ -40,7 +41,7 @@ The name of a custom script’s corresponding file determines when Xcode Cloud r
 - **`ci_pre_xcodebuild.sh`**: The pre-`xcodebuild` script runs before Xcode Cloud runs the `xcodebuild` command. You might use a pre-`xcodebuild` script to compile additional dependencies.
 - **`ci_post_xcodebuild.sh`**: The post-`xcodebuild` script runs after Xcode Cloud runs the `xcodebuild` command — even if the `xcodebuild` command fails. You might use a post-`xcodebuild` script to upload artifacts to storage or another service.
 
-![An illustration that shows the different steps Xcode Cloud performs when it performs an action, including the custom build scripts from left to right.](/images/com.apple.Xcode/Writing-Custom-Build-Scripts-1@2x.png)
+![An illustration that shows the different steps Xcode Cloud performs when it performs an action, including the custom build scripts from left to right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Writing-Custom-Build-Scripts-1@2x.png)
 
 To create a custom build script:
 
@@ -58,7 +59,7 @@ Xcode Cloud respects the shebang if the file is executable. If you don’t inclu
 
 Files you create with a custom build script aren’t available to other custom build scripts, and Xcode Cloud deletes any files a custom build script creates. As a result, downloadable Xcode Cloud build artifacts don’t include files you create with custom build scripts.
 
-##### Add Resources to the Ci Scripts Directory
+##### Add resources to the CI scripts directory
 
 Custom build scripts run in a temporary build environment where your source code may not be available. As a result, you need to place all resources your custom scripts access in the `ci_scripts` directory. For example, place artwork or `.plist` files in the directory.
 
@@ -66,7 +67,7 @@ Custom build scripts run in a temporary build environment where your source code
 
 In some cases, a custom build script needs to access a file that’s located in the repository, but placing it in the `ci_scripts` directory isn’t practical. In this case, create a symbolic link to the file in the `ci_scripts` directory. Xcode Cloud detects the symbolic link and makes it available within the `ci_scripts` directory in a subsequent phase of the running action.
 
-##### Access Environment Variables
+##### Access environment variables
 
 Environment variables are key to custom scripts because they allow you to write flexible custom scripts with advanced control flows. For example, the following code snippet checks if the `CI_PULL_REQUEST_NUMBER` variable is present to only run a command when Xcode Cloud runs the script as part of a build from a pull request:
 
@@ -81,17 +82,17 @@ then
 fi
 ```
 
-For a list of predefined environment variables, see [`Environment variable reference`](environment-variable-reference.md).
+For a list of predefined environment variables, see [Environment variable reference](./environment-variable-reference.md).
 
-##### Define Custom Environment Variables
+##### Define custom environment variables
 
-In addition to predefined environment variables, you can define custom environment variables in a workflow’s Environment section. To learn more about configuring custom environment variables, see [`Custom environment variables`](xcode-cloud-workflow-reference#Custom-environment-variables.md)
+In addition to predefined environment variables, you can define custom environment variables in a workflow’s Environment section. To learn more about configuring custom environment variables, see [Custom environment variables](./xcode-cloud-workflow-reference.md#Custom-environment-variables)
 
-##### Add Debug Information
+##### Add debug information
 
 The output of your custom build scripts appears in the build report’s build logs. Log information that may be helpful when you debug a custom build script. However, never log sensitive information like API keys or access tokens in your shell script output unless you use a secret custom environment variable. If you mark a custom environment variable to be a secret, Xcode Cloud replaces its value with asterisks (`**********`) in build logs.
 
-##### Write Resilient Scripts
+##### Write resilient scripts
 
 Custom build scripts can perform critical tasks like installing dependencies or uploading build artifacts to storage. Write resilient code that handles errors gracefully, and, if a command fails, return a nonzero exit code. By returning a nonzero exit code in your custom build script, you let Xcode Cloud know that something went wrong and let it fail the build to let you know that there’s an issue.
 
@@ -115,7 +116,7 @@ echo "Something went wrong. Include helpful information here."
 exit 1
 ```
 
-##### Use Helper Scripts in Complex Custom Build Scripts
+##### Use helper scripts in complex custom build scripts
 
 If your repository contains more than one project, you’ll likely need to configure several Xcode Cloud workflows. Because Xcode Cloud only recognizes one `ci_scripts` directory in your repository — and that directory can only contain the three custom build scripts — you’ll need to add *helper scripts*. Helper scripts are shell scripts you place in the `ci_scripts` directory that you can use to split up the tasks of the default build scripts.
 
@@ -140,7 +141,8 @@ To help make your helper scripts more recognizable, you should avoid prefixing t
 
 ## See Also
 
-- [Environment variable reference](environment-variable-reference.md)
+### Custom build scripts
+- [Environment variable reference](./environment-variable-reference.md)
   Review predefined environment variables you use in custom build scripts.
 
 

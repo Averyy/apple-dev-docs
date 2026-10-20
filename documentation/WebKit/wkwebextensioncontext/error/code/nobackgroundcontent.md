@@ -1,7 +1,8 @@
 # WKWebExtensionContext.Error.Code.noBackgroundContent
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the extension does not have background content.
 
@@ -16,6 +17,10 @@ Indicates that the extension does not have background content.
 
 ```swift
 case noBackgroundContent
+```
+
+```c
+WKWebExtensionContextErrorNoBackgroundContent
 ```
 
 

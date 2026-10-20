@@ -1,7 +1,8 @@
 # MatterAddDeviceExtensionRequestHandler.WiFiScanResult
 
 **Framework**: MatterSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A result of a Wi-Fi-scan operation performed on the device
 
@@ -10,7 +11,7 @@ A result of a Wi-Fi-scan operation performed on the device
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,35 +26,36 @@ Use an instances to create a `WiFiNetworkAssociation` as a possible Wi-Fi networ
 ## Topics
 
 ### Creating the result
-- [init(ssid: Data, rssi: Int8, security: MTRNetworkCommissioningWiFiSecurity, band: MTRNetworkCommissioningWiFiBand)](matteradddeviceextensionrequesthandler/wifiscanresult/init(ssid:rssi:security:band:).md)
+- [init(ssid: Data, rssi: Int8, security: MTRNetworkCommissioningWiFiSecurity, band: MTRNetworkCommissioningWiFiBand)](./wifiscanresult/init%28ssid,rssi,security,band%29.md)
   Creates a new instance of the request handler.
 ### Getting result information
-- [var band: MTRNetworkCommissioningWiFiBand](matteradddeviceextensionrequesthandler/wifiscanresult/band.md)
+- [var band: MTRNetworkCommissioningWiFiBand](./wifiscanresult/band.md)
   The band for the Wi-Fi network.
-- [var rssi: Int8](matteradddeviceextensionrequesthandler/wifiscanresult/rssi.md)
+- [var rssi: Int8](./wifiscanresult/rssi.md)
   The device-observed RSSI of the network.
-- [var security: MTRNetworkCommissioningWiFiSecurity](matteradddeviceextensionrequesthandler/wifiscanresult/security.md)
+- [var security: MTRNetworkCommissioningWiFiSecurity](./wifiscanresult/security.md)
   The security method used to secure the Wi-Fi network.
-- [var ssid: Data](matteradddeviceextensionrequesthandler/wifiscanresult/ssid.md)
+- [var ssid: Data](./wifiscanresult/ssid.md)
   The SSID of the Wi-Fi network.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func selectWiFiNetwork(from: [MatterAddDeviceExtensionRequestHandler.WiFiScanResult]) async throws -> MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](matteradddeviceextensionrequesthandler/selectwifinetwork(from:).md)
+### Selecting the Wi-Fi network
+- [func selectWiFiNetwork(from: [MatterAddDeviceExtensionRequestHandler.WiFiScanResult]) async throws -> MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](./selectwifinetwork%28from%29.md)
   Provides the visible Wi-Fi networks to the Matter device.
-- [MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](matteradddeviceextensionrequesthandler/wifinetworkassociation.md)
+- [MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](./wifinetworkassociation.md)
   The description of an association to a Wi-Fi network.
 
 

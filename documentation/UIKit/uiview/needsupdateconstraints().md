@@ -1,7 +1,8 @@
 # needsUpdateConstraints()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value that determines whether the view’s constraints need updating.
 
@@ -9,7 +10,7 @@ A Boolean value that determines whether the view’s constraints need updating.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,21 +19,26 @@ A Boolean value that determines whether the view’s constraints need updating.
 func needsUpdateConstraints() -> Bool
 ```
 
+```objc
+- (BOOL) needsUpdateConstraints;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view’s constraints need updating, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the view’s constraints need updating, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-The constraint-based layout system uses the return value of this method to determine whether it needs to call [`updateConstraints()`](uiview/updateconstraints().md) on your view as part of its normal layout pass.
+The constraint-based layout system uses the return value of this method to determine whether it needs to call [`updateConstraints()`](./updateconstraints%28%29.md) on your view as part of its normal layout pass.
 
 ## See Also
 
-- [func setNeedsUpdateConstraints()](uiview/setneedsupdateconstraints.md)
+### Triggering Auto Layout
+- [func setNeedsUpdateConstraints()](./setneedsupdateconstraints%28%29.md)
   Controls whether the view’s constraints need updating.
-- [func updateConstraints()](uiview/updateconstraints.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
   Updates constraints for the view.
-- [func updateConstraintsIfNeeded()](uiview/updateconstraintsifneeded.md)
+- [func updateConstraintsIfNeeded()](./updateconstraintsifneeded%28%29.md)
   Updates the constraints for the receiving view and its subviews.
 
 

@@ -1,7 +1,8 @@
 # SpinAction
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action which animates the transform of an entity to rotate around a specified local axis.
 
@@ -21,7 +22,7 @@ struct SpinAction
 
 #### Overview
 
-This action rotates an entity around itself from a specified [`localAxis`](spinaction/localaxis.md) gradually adjusting its local transform. The [`localAxis`](spinaction/localaxis.md) specifies which cartesian axis around which to rotate in local space. The full spin completes after the action has ended.
+This action rotates an entity around itself from a specified [`localAxis`](./spinaction/localaxis.md) gradually adjusting its local transform. The [`localAxis`](./spinaction/localaxis.md) specifies which cartesian axis around which to rotate in local space. The full spin completes after the action has ended.
 
 The example below creates an animation that spins an entity around the x-axis two times for five seconds with a linear transition.
 
@@ -44,51 +45,52 @@ let spinAnimation = try AnimationResource
 entity.playAnimation(spinAnimation)
 ```
 
-> **Note**: Use the [`localAxis`](spinaction/localaxis.md) to determine whether the entity spins clockwise or counterclockwise.
+> **Note**: Use the [`localAxis`](./spinaction/localaxis.md) to determine whether the entity spins clockwise or counterclockwise.
 
-> ❗ **Important**: This action directly animates the [`BindTarget.transform`](bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
+> ❗ **Important**: This action directly animates the [`BindTarget.transform`](./bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
 
 ## Topics
 
 ### Initializers
-- [init(revolutions: Float, localAxis: SIMD3<Float>, timingFunction: AnimationTimingFunction, isAdditive: Bool)](spinaction/init(revolutions:localaxis:timingfunction:isadditive:).md)
+- [init(revolutions: Float, localAxis: SIMD3<Float>, timingFunction: AnimationTimingFunction, isAdditive: Bool)](./spinaction/init%28revolutions,localaxis,timingfunction,isadditive%29.md)
   Creates a new spin action.
 ### Instance Properties
-- [var animatedValueType: (any AnimatableData.Type)?](spinaction/animatedvaluetype.md)
+- [var animatedValueType: (any AnimatableData.Type)?](./spinaction/animatedvaluetype.md)
   The type for the value that the action modifies over time.
-- [var isAdditive: Bool](spinaction/isadditive.md)
+- [var isAdditive: Bool](./spinaction/isadditive.md)
   A Boolean value that indicates whether the animation system additively blends the action’s output with the base value.
-- [var localAxis: SIMD3<Float>](spinaction/localaxis.md)
+- [var localAxis: SIMD3<Float>](./spinaction/localaxis.md)
   A vector that describes the axis of rotation (in local space).
-- [var revolutions: Float](spinaction/revolutions.md)
+- [var revolutions: Float](./spinaction/revolutions.md)
   The number of rotations to complete before stopping.
-- [var timingFunction: AnimationTimingFunction](spinaction/timingfunction.md)
+- [var timingFunction: AnimationTimingFunction](./spinaction/timingfunction.md)
   A timing function that controls the progress of the animation.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [EntityAction](entityaction.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [EntityAction](./entityaction.md)
 
 ## See Also
 
-- [struct BillboardAction](billboardaction.md)
+### Built-in actions
+- [struct BillboardAction](./billboardaction.md)
   An action that animates the blend factor of an entity’s billboard component.
-- [struct EmphasizeAction](emphasizeaction.md)
+- [struct EmphasizeAction](./emphasizeaction.md)
   An action that performs an animation to call attention to an entity.
-- [struct FromToByAction](fromtobyaction.md)
+- [struct FromToByAction](./fromtobyaction.md)
   An action that starts, stops, or increments by a specific value.
-- [struct ImpulseAction](impulseaction.md)
+- [struct ImpulseAction](./impulseaction.md)
   An action that applies an impulse to the physics body at its center of mass when played as an animation.
-- [struct OrbitEntityAction](orbitentityaction.md)
+- [struct OrbitEntityAction](./orbitentityaction.md)
   An action which animates the transform of an entity to revolve around a specified pivot entity.
-- [struct PlayAnimationAction](playanimationaction.md)
+- [struct PlayAnimationAction](./playanimationaction.md)
   An action that plays an animation on the given target entity with a range of playback options.
-- [struct PlayAudioAction](playaudioaction.md)
+- [struct PlayAudioAction](./playaudioaction.md)
   An action which plays an audio resource on the given target entity.
-- [struct SetEntityEnabledAction](setentityenabledaction.md)
+- [struct SetEntityEnabledAction](./setentityenabledaction.md)
   An action that enables or disables the targeted entity and its descendants when played as an animation.
 
 

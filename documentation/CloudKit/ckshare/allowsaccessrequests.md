@@ -1,7 +1,8 @@
 # allowsAccessRequests
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether uninvited users can request access to this share.
 
@@ -18,6 +19,10 @@ Indicates whether uninvited users can request access to this share.
 
 ```swift
 var allowsAccessRequests: Bool { get set }
+```
+
+```objc
+@property (assign, readwrite) BOOL allowsAccessRequests;
 ```
 
 #### Discussion

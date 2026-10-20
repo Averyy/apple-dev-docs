@@ -7,7 +7,7 @@ See the documentation for the IOService method newUserClient.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn newUserClient(
  task_t owningTask,
  void *securityID, 

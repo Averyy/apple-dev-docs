@@ -1,7 +1,8 @@
 # columns
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The columns of the underlying matrix.
 

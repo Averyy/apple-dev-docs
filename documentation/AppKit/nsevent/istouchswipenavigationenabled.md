@@ -1,7 +1,8 @@
 # isTouchSwipeNavigationEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 class var isTouchSwipeNavigationEnabled: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isTouchSwipeNavigationEnabled) BOOL touchSwipeNavigationEnabled;
 ```
 
 

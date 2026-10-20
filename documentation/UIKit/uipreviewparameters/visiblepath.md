@@ -1,7 +1,8 @@
 # visiblePath
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portion of the view to show in the preview.
 
@@ -19,15 +20,20 @@ The portion of the view to show in the preview.
 var visiblePath: UIBezierPath? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIBezierPath * visiblePath;
+```
+
 #### Discussion
 
 Specify the path information in the coordinate space of the view being animated.
 
 ## See Also
 
-- [var backgroundColor: UIColor!](uipreviewparameters/backgroundcolor.md)
+### Configuring the preview attributes
+- [var backgroundColor: UIColor!](./backgroundcolor.md)
   The background color to display behind the preview.
-- [var shadowPath: UIBezierPath?](uipreviewparameters/shadowpath.md)
+- [var shadowPath: UIBezierPath?](./shadowpath.md)
   The path to use for drawing the preview’s shadow.
 
 

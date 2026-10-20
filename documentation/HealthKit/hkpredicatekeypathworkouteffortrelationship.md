@@ -1,7 +1,8 @@
 # HKPredicateKeyPathWorkoutEffortRelationship
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -17,11 +18,16 @@
 let HKPredicateKeyPathWorkoutEffortRelationship: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathWorkoutEffortRelationship;
+```
+
 ## See Also
 
-- [let HKDataTypeIdentifierStateOfMind: String](hkdatatypeidentifierstateofmind.md)
-- [let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String](hkmetadatakeyapplefitnesspluscatalogidentifier.md)
-- [let HKMetadataKeyMaximumLightIntensity: String](hkmetadatakeymaximumlightintensity.md)
+### Constants
+- [let HKDataTypeIdentifierStateOfMind: String](./hkdatatypeidentifierstateofmind.md)
+- [let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String](./hkmetadatakeyapplefitnesspluscatalogidentifier.md)
+- [let HKMetadataKeyMaximumLightIntensity: String](./hkmetadatakeymaximumlightintensity.md)
   A key that indicates the maximum intensity of light for an outdoor time sample.
 
 

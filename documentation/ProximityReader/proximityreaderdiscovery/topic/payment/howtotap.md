@@ -1,7 +1,8 @@
 # ProximityReaderDiscovery.Topic.Payment.howToTap
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A topic that shows merchants how to use Tap to Pay on iPhone to pay for goods and services.
 

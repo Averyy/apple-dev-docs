@@ -1,7 +1,8 @@
 # PolicyAssignmentQueryRequest
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for querying policy assignment with rejection reason details.
 
@@ -10,7 +11,7 @@ The request body for querying policy assignment with rejection reason details.
 
 ## Declaration
 
-```swift
+```
 object PolicyAssignmentQueryRequest
 ```
 
@@ -20,41 +21,41 @@ The `PolicyAssignmentQueryRequest` object extends the standard `QueryRequest` pa
 
 ## Properties
 
-- `filters` ([QueryFilter]): Filter conditions for the query. Supported filterable fields are `promotedObjectId` (operators `IN`, `EQUALS`; filters by brand or promoted object ID) and `deleted` (operator `EQUALS`; includes soft-deleted records when `true`, excludes them when `false`). See [`QueryFilter`](queryfilter.md).
-- `sorting` ([QuerySort]): Sort directives. Each entry specifies a `field` (for example, `id`) and `order` (`ASC` or `DESC`). See [`QuerySort`](querysort.md).
-- `pagination` (QueryPagination): Pagination parameters. Default `pageSize`: 20. Default `offset`: 0. Set `fetchTotalCount` to `true` inside the pagination object to include the total count of matching records in the response. See [`QueryPagination`](querypagination.md).
+- `filters` ([QueryFilter]): Filter conditions for the query. Supported filterable fields are `promotedObjectId` (operators `IN`, `EQUALS`; filters by brand or promoted object ID) and `deleted` (operator `EQUALS`; includes soft-deleted records when `true`, excludes them when `false`). See [`QueryFilter`](./queryfilter.md).
+- `sorting` ([QuerySort]): Sort directives. Each entry specifies a `field` (for example, `id`) and `order` (`ASC` or `DESC`). See [`QuerySort`](./querysort.md).
+- `pagination` (QueryPagination): Pagination parameters. Default `pageSize`: 20. Default `offset`: 0. Set `fetchTotalCount` to `true` inside the pagination object to include the total count of matching records in the response. See [`QueryPagination`](./querypagination.md).
 
 ## See Also
 
-- [object Brand](brand.md)
+- [object Brand](./brand.md)
   A brand eligible for promotion through Apple Maps ads.
-- [object BrandResponse](brandresponse.md)
+- [object BrandResponse](./brandresponse.md)
   The Get Brand by ID endpoint returns this response object.
-- [object BrandQueryResponse](brandqueryresponse.md)
+- [object BrandQueryResponse](./brandqueryresponse.md)
   The Query Brands endpoint returns this response object.
-- [object BrandRejectionReasonResponse](brandrejectionreasonresponse.md)
+- [object BrandRejectionReasonResponse](./brandrejectionreasonresponse.md)
   A single policy assignment with rejection reason details for a brand entity.
-- [object BusinessCategory](businesscategory.md)
+- [object BusinessCategory](./businesscategory.md)
   A category in the Apple Maps business taxonomy used to classify brands and locations.
-- [object BusinessCategoryResponse](businesscategoryresponse.md)
+- [object BusinessCategoryResponse](./businesscategoryresponse.md)
   The Get Business Category endpoint returns this response object.
-- [object BusinessCategoryQueryResponse](businesscategoryqueryresponse.md)
+- [object BusinessCategoryQueryResponse](./businesscategoryqueryresponse.md)
   The Query Business Categories endpoint returns this response object.
-- [object Location](location.md)
+- [object Location](./location.md)
   The brand location object.
-- [object LocationResponse](locationresponse.md)
+- [object LocationResponse](./locationresponse.md)
   The response object returned by the Get a Location endpoint.
-- [object LocationGroup](locationgroup.md)
+- [object LocationGroup](./locationgroup.md)
   A collection of business locations associated with a brand, used to target geos in Apple Maps campaigns.
-- [object LocationGroupCreate](locationgroupcreate.md)
+- [object LocationGroupCreate](./locationgroupcreate.md)
   The request body object for creating a new location group.
-- [object LocationGroupUpdate](locationgroupupdate.md)
+- [object LocationGroupUpdate](./locationgroupupdate.md)
   The request body object for updating an existing location group.
-- [object LocationGroupResponse](locationgroupresponse.md)
+- [object LocationGroupResponse](./locationgroupresponse.md)
   The response object returned by the Get Location Group endpoint.
-- [object LocationGroupQueryResponse](locationgroupqueryresponse.md)
+- [object LocationGroupQueryResponse](./locationgroupqueryresponse.md)
   The response object returned by the Query Location Groups endpoint.
-- [object LocationQueryResponse](locationqueryresponse.md)
+- [object LocationQueryResponse](./locationqueryresponse.md)
   The paginated response envelope returned by the Query Locations endpoint.
 
 

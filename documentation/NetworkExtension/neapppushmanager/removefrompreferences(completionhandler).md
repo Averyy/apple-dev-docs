@@ -1,7 +1,8 @@
 # removeFromPreferences(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the manager’s configuration from the persistent store.
 
@@ -14,7 +15,15 @@ Removes the manager’s configuration from the persistent store.
 ## Declaration
 
 ```swift
+func removeFromPreferences(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeFromPreferences() async throws
+```
+
+```objc
+- (void) removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Parameters
@@ -23,11 +32,12 @@ func removeFromPreferences() async throws
 
 ## See Also
 
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](neapppushmanager/loadfrompreferences(completionhandler:).md)
+### Persisting manager settings
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./loadfrompreferences%28completionhandler%29.md)
   Loads the manager’s saved configuration from the persistent store.
-- [class func loadAllFromPreferences(completionHandler: ([NEAppPushManager]?, (any Error)?) -> Void)](neapppushmanager/loadallfrompreferences(completionhandler:).md)
+- [class func loadAllFromPreferences(completionHandler: ([NEAppPushManager]?, (any Error)?) -> Void)](./loadallfrompreferences%28completionhandler%29.md)
   Loads all saved manager configurations asynchronously.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](neapppushmanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./savetopreferences%28completionhandler%29.md)
   Saves the manager’s configuration in the persistent store.
 
 

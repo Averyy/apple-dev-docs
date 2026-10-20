@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rate to use when starting playback.
 
@@ -19,15 +20,20 @@ A rate to use when starting playback.
 var rate: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float rate;
+```
+
 #### Discussion
 
 This value is always nonzero.
 
 ## See Also
 
-- [var itemTime: CMTime](avdelegatingplaybackcoordinatorplaycommand/itemtime.md)
+### Accessing command details
+- [var itemTime: CMTime](./itemtime.md)
   A time in the item timeline to use to begin playback.
-- [var hostClockTime: CMTime](avdelegatingplaybackcoordinatorplaycommand/hostclocktime.md)
+- [var hostClockTime: CMTime](./hostclocktime.md)
   A host clock time to use to begin playback.
 
 

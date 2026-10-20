@@ -1,7 +1,8 @@
 # drawOn
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A symbol effect that applies the DrawOn animation to symbol images.
 
@@ -19,6 +20,8 @@ A symbol effect that applies the DrawOn animation to symbol images.
 ```swift
 static var drawOn: DrawOnSymbolEffect { get }
 ```
+
+Available when `Self` is `DrawOnSymbolEffect`.
 
 #### Discussion
 

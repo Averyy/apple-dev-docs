@@ -1,7 +1,8 @@
 # InflectionConcept.localizedPhrase(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system uses the associated string for grammatical agreement when localizing text.
 
@@ -26,7 +27,8 @@ case localizedPhrase(String)
 
 ## See Also
 
-- [InflectionConcept.termsOfAddress(_:)](inflectionconcept/termsofaddress(_:).md)
+### Using inflection concepts
+- [InflectionConcept.termsOfAddress(_:)](./termsofaddress%28_%29.md)
   Indicates that the system uses the associated terms of address for grammatical agreement when localizing text.
 
 

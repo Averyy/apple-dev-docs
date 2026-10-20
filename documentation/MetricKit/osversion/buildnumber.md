@@ -1,7 +1,8 @@
 # buildNumber
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The build number of the operating system (e.g., “23F75”).
 

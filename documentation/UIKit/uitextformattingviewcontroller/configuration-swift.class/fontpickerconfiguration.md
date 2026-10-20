@@ -1,7 +1,8 @@
 # fontPickerConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configuration object that will be used to customize `UIFontPickerViewController` if presented by `UITextFormattingViewController`.
 
@@ -16,6 +17,10 @@ Configuration object that will be used to customize `UIFontPickerViewController`
 ```swift
 @NSCopying
 var fontPickerConfiguration: UIFontPickerViewController.Configuration? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIFontPickerViewControllerConfiguration * fontPickerConfiguration;
 ```
 
 

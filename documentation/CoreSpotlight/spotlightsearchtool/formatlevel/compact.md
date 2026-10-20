@@ -1,7 +1,8 @@
 # SpotlightSearchTool.FormatLevel.compact
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Compact encoding
 
@@ -20,11 +21,12 @@ case compact
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
 ## See Also
 
-- [SpotlightSearchTool.FormatLevel.structured](spotlightsearchtool/formatlevel/structured.md)
+### Getting the format levels
+- [SpotlightSearchTool.FormatLevel.structured](./structured.md)
   Full, structured encoded
 
 

@@ -1,7 +1,8 @@
 # client
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides the target search string, find bar location, and feedback methods.
 
@@ -13,6 +14,10 @@ The object that provides the target search string, find bar location, and feedba
 ```swift
 @IBOutlet
 unowned(unsafe) var client: (any NSTextFinderClient)? { get set }
+```
+
+```objc
+@property (assign, nullable) id<NSTextFinderClient> client;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # MTLIOError.Code
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error codes for creating an input/output file handle.
 
@@ -19,41 +20,46 @@ The error codes for creating an input/output file handle.
 enum Code
 ```
 
+```c
+enum MTLIOError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [MTLIOError.Code.urlInvalid](mtlioerror-swift.struct/code/urlinvalid.md)
+- [MTLIOError.Code.urlInvalid](./code/urlinvalid.md)
   An error code that represents a problem with a file URL.
-- [MTLIOError.Code.internal](mtlioerror-swift.struct/code/internal.md)
+- [MTLIOError.Code.internal](./code/internal.md)
   An error code that represents a problem internal to the Metal framework.
-- [MTLIOError.Code.urlInvalid](mtlioerror-swift.struct/code/urlinvalid.md)
+- [MTLIOError.Code.urlInvalid](./code/urlinvalid.md)
   An error code that represents a problem with a file URL.
-- [MTLIOError.Code.internal](mtlioerror-swift.struct/code/internal.md)
+- [MTLIOError.Code.internal](./code/internal.md)
   An error code that represents a problem internal to the Metal framework.
 ### Initializers
-- [init?(rawValue: Int)](mtlioerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLIOCommandBuffer](mtliocommandbuffer.md)
+### I/O command buffers
+- [protocol MTLIOCommandBuffer](../mtliocommandbuffer.md)
   A command buffer that contains input/output commands that work with files in the file systems and Metal resources.
-- [protocol MTLIOFileHandle](mtliofilehandle.md)
+- [protocol MTLIOFileHandle](../mtliofilehandle.md)
   Represents a raw or compressed file, such as a resource asset file in your app’s bundle.
-- [typealias MTLIOCommandBufferHandler](mtliocommandbufferhandler.md)
+- [typealias MTLIOCommandBufferHandler](../mtliocommandbufferhandler.md)
   A convenience type that defines the signature of an input/output command buffer’s completion handler.
-- [enum MTLIOStatus](mtliostatus.md)
+- [enum MTLIOStatus](../mtliostatus.md)
   Represents the state of an input/output command buffer.
-- [let MTLIOErrorDomain: String](mtlioerrordomain.md)
+- [let MTLIOErrorDomain: String](../mtlioerrordomain.md)
   The domain for input/output command queue errors.
 
 

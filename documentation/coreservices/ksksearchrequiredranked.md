@@ -1,7 +1,8 @@
 # kSKSearchRequiredRanked
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Deprecated. Specifies a query that can include required (`'+'`) or excluded (`'-'`) terms.
 

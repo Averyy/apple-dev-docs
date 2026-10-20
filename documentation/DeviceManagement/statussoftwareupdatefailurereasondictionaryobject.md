@@ -1,7 +1,8 @@
 # StatusSoftwareUpdateFailureReasonDictionaryObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Details about a software update failure.
 
@@ -15,7 +16,7 @@ Details about a software update failure.
 
 ## Declaration
 
-```swift
+```
 object StatusSoftwareUpdateFailureReasonDictionaryObject
 ```
 

@@ -1,7 +1,8 @@
 # plotFrame
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An anchor to the frame of the chart’s plot, or `nil` if there is no chart in the context of the chart proxy.
 

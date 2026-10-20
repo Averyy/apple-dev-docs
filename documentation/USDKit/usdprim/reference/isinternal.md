@@ -1,7 +1,8 @@
 # isInternal
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this is an internal reference (empty asset path).
 

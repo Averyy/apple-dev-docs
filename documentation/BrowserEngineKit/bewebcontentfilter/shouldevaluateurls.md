@@ -1,7 +1,8 @@
 # shouldEvaluateURLs
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Determines whether the built-in web content filter is active.
 
@@ -15,13 +16,18 @@ Determines whether the built-in web content filter is active.
 class var shouldEvaluateURLs: Bool { get }
 ```
 
+```objc
+@property (class, readonly) BOOL shouldEvaluateURLs;
+```
+
 #### Return Value
 
 `true` if the built-in web content filter is active; `false`, otherwise.
 
 ## See Also
 
-- [func evaluateURL(URL, completionHandler: (Bool, Data?) -> Void)](bewebcontentfilter/evaluateurl(_:completionhandler:).md)
+### Evaluating URLs
+- [func evaluateURL(URL, completionHandler: (Bool, Data?) -> Void)](./evaluateurl%28_,completionhandler%29.md)
   Determines whether to block a URL.
 
 

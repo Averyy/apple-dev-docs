@@ -1,7 +1,8 @@
 # applicationProtocols(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set application protocols supported by clients of this protocol.
 

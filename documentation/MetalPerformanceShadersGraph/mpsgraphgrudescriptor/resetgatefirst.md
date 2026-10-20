@@ -1,7 +1,8 @@
 # resetGateFirst
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that controls the internal order of the GRU gates.
 
@@ -17,6 +18,10 @@ A parameter that controls the internal order of the GRU gates.
 
 ```swift
 var resetGateFirst: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL resetGateFirst;
 ```
 
 #### Discussion

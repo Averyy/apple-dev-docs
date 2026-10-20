@@ -1,14 +1,15 @@
 # last_papt
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 sptm_papt_t last_papt;
 ```
 

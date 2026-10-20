@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -20,7 +21,8 @@ var projectedValue: Binding<Value> { get }
 
 ## See Also
 
-- [var wrappedValue: Value](appstorage/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: Value](./wrappedvalue.md)
 
 
 ---

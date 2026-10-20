@@ -1,7 +1,8 @@
 # isMainFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the frame is the web site’s main frame or a subframe.
 

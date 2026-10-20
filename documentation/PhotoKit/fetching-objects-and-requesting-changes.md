@@ -1,6 +1,7 @@
 # Fetching Objects and Requesting Changes
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Article
 
 Get assets, asset collections, and collection lists matching a specified query.
 
@@ -24,17 +25,18 @@ PhotoKit supports a number of Photos app features for working directly with a us
 
 Use the [`PHCollectionList`](https://developer.apple.com/documentation/photos/phcollectionlist) class to find assets corresponding to the Moments hierarchy in the Photos App. Lists of collections are read-only, immutable, and contain only metadata. Use the [`PHAsset`](https://developer.apple.com/documentation/photos/phasset) class to identify burst photos, Live Photos, panoramic photos, and high-frame-rate videos. When iCloud Photos is enabled, assets and collections in the Photos framework reflect content available across all devices on the same iCloud account.
 
-For more information about Live Photos, see [`Displaying Live Photos`](displaying-live-photos.md).
+For more information about Live Photos, see [Displaying Live Photos](./displaying-live-photos.md).
 
 ## See Also
 
-- [Delivering an Enhanced Privacy Experience in Your Photos App](delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
+### Articles
+- [Delivering an Enhanced Privacy Experience in Your Photos App](./delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
   Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
-- [Loading and Caching Assets and Thumbnails](loading-and-caching-assets-and-thumbnails.md)
+- [Loading and Caching Assets and Thumbnails](./loading-and-caching-assets-and-thumbnails.md)
   Request image, video, or Live Photos content, and cache for quick reuse.
-- [Displaying Live Photos](displaying-live-photos.md)
+- [Displaying Live Photos](./displaying-live-photos.md)
   Provide the same interactive playback of Live Photos as in the iOS Photos app.
-- [Creating Photo Editing Extensions](creating-photo-editing-extensions.md)
+- [Creating Photo Editing Extensions](./creating-photo-editing-extensions.md)
   Provide custom functionality in the Photos app by bundling an app extension.
 
 

@@ -1,7 +1,8 @@
 # CSIdentityAddMember(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityAddMember(_ group: CSIdentity!, _ member: CSIdentity!)
+```
+
+```c
+void CSIdentityAddMember(CSIdentityRef group, CSIdentityRef member);
 ```
 
 

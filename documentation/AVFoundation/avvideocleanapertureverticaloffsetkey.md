@@ -1,7 +1,8 @@
 # AVVideoCleanApertureVerticalOffsetKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to access the vertical offset of video that’s free from transition artifacts caused by signal encoding.
 
@@ -19,19 +20,24 @@ A key to access the vertical offset of video that’s free from transition artif
 let AVVideoCleanApertureVerticalOffsetKey: String
 ```
 
+```c
+extern NSString * const AVVideoCleanApertureVerticalOffsetKey;
+```
+
 #### Discussion
 
 The value for this key is an instance of `NSNumber`.
 
 ## See Also
 
-- [let AVVideoCleanApertureKey: String](avvideocleanaperturekey.md)
+### Clean aperture
+- [let AVVideoCleanApertureKey: String](./avvideocleanaperturekey.md)
   A key that defines the region within the video dimension displayed during playback.
-- [let AVVideoCleanApertureWidthKey: String](avvideocleanaperturewidthkey.md)
+- [let AVVideoCleanApertureWidthKey: String](./avvideocleanaperturewidthkey.md)
   A key to access the width of video that’s free from transition artifacts caused by signal encoding.
-- [let AVVideoCleanApertureHeightKey: String](avvideocleanapertureheightkey.md)
+- [let AVVideoCleanApertureHeightKey: String](./avvideocleanapertureheightkey.md)
   A key to access the height of video that’s free from transition artifacts caused by signal encoding.
-- [let AVVideoCleanApertureHorizontalOffsetKey: String](avvideocleanaperturehorizontaloffsetkey.md)
+- [let AVVideoCleanApertureHorizontalOffsetKey: String](./avvideocleanaperturehorizontaloffsetkey.md)
   A key to access the horizontal offset of video that’s free from transition artifacts caused by signal encoding.
 
 

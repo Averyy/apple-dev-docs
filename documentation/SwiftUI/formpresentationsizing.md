@@ -1,7 +1,8 @@
 # FormPresentationSizing
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The size is appropriate for forms and slightly less wide than`.page`
 
@@ -22,24 +23,25 @@ struct FormPresentationSizing
 
 #### Overview
 
-On iOS, `.form` sizing enforces a platform-defined floor for the vertical and horizontal dimensions. On macOS, no floor is enforced, however a maximum proposed height is derived from the presenter height. To achieve presentations outside of these bounds, see `PresentationSizing.fitted` or implement your own custom [`PresentationSizing`](presentationsizing.md).
+On iOS, `.form` sizing enforces a platform-defined floor for the vertical and horizontal dimensions. On macOS, no floor is enforced, however a maximum proposed height is derived from the presenter height. To achieve presentations outside of these bounds, see `PresentationSizing.fitted` or implement your own custom [`PresentationSizing`](./presentationsizing.md).
 
-> **Note**: [`form`](presentationsizing/form.md)
+> **See Also**: [`form`](./presentationsizing/form.md)
 
 ## Relationships
 
 ### Conforms To
-- [PresentationSizing](presentationsizing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [PresentationSizing](./presentationsizing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AutomaticPresentationSizing](automaticpresentationsizing.md)
+### Supporting types
+- [struct AutomaticPresentationSizing](./automaticpresentationsizing.md)
   The default presentation sizing, appropriate for the platform.
-- [struct FittedPresentationSizing](fittedpresentationsizing.md)
+- [struct FittedPresentationSizing](./fittedpresentationsizing.md)
   The size of the presentation is dictated by the ideal size of the content.
-- [struct PagePresentationSizing](pagepresentationsizing.md)
+- [struct PagePresentationSizing](./pagepresentationsizing.md)
   The size is roughly the size of a page of paper, appropriate for informational or compositional content.
 
 

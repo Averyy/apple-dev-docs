@@ -1,7 +1,8 @@
 # input
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundled language model input (prompt, instructions, schema).
 
@@ -22,13 +23,14 @@ var input: ModelSampleInput
 
 ## See Also
 
-- [var prompt: Prompt](modelsample/prompt.md)
+### Specifying the query
+- [var prompt: Prompt](./prompt.md)
   The user’s prompt for this sample.
-- [var promptDescription: String](modelsample/promptdescription.md)
+- [var promptDescription: String](./promptdescription.md)
   A text representation of the prompt, synthesized from its segments.
-- [var instructions: Instructions?](modelsample/instructions.md)
+- [var instructions: Instructions?](./instructions.md)
   Optional instructions providing context to the model for this sample.
-- [var instructionsDescription: String?](modelsample/instructionsdescription.md)
+- [var instructionsDescription: String?](./instructionsdescription.md)
   A text representation of the instructions, synthesized from their segments.
 
 

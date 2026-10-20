@@ -1,12 +1,13 @@
 # measurementUnits
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The measurement units used by the ruler to `unitName`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The measurement units used by the ruler to `unitName`.
 var measurementUnits: NSRulerView.UnitName { get set }
 ```
 
+```objc
+@property (copy) NSRulerViewUnitName measurementUnits;
+```
+
 #### Discussion
 
-`unitName` must have been registered with the NSRulerView class object prior to invoking this method. See the description of the class method [`registerUnit(withName:abbreviation:unitToPointsConversionFactor:stepUpCycle:stepDownCycle:)`](nsrulerview/registerunit(withname:abbreviation:unittopointsconversionfactor:stepupcycle:stepdowncycle:).md) for a list of predefined units.
+`unitName` must have been registered with the NSRulerView class object prior to invoking this method. See the description of the class method [`registerUnit(withName:abbreviation:unitToPointsConversionFactor:stepUpCycle:stepDownCycle:)`](./registerunit%28withname,abbreviation,unittopointsconversionfactor,stepupcycle,stepdowncycle%29.md) for a list of predefined units.
 
 ## See Also
 
-- [class func registerUnit(withName: NSRulerView.UnitName, abbreviation: String, unitToPointsConversionFactor: CGFloat, stepUpCycle: [NSNumber], stepDownCycle: [NSNumber])](nsrulerview/registerunit(withname:abbreviation:unittopointsconversionfactor:stepupcycle:stepdowncycle:).md)
+### Altering measurement units
+- [class func registerUnit(withName: NSRulerView.UnitName, abbreviation: String, unitToPointsConversionFactor: CGFloat, stepUpCycle: [NSNumber], stepDownCycle: [NSNumber])](./registerunit%28withname,abbreviation,unittopointsconversionfactor,stepupcycle,stepdowncycle%29.md)
   Registers a new unit of measurement with the NSRulerView class, making it available to all instances of NSRulerView.
-- [NSRulerView.UnitName](nsrulerview/unitname.md)
+- [NSRulerView.UnitName](./unitname.md)
 
 
 ---

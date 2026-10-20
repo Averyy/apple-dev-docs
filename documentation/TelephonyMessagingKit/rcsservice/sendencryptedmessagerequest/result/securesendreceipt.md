@@ -1,7 +1,8 @@
 # secureSendReceipt
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The send receipt of the message.
 
@@ -20,7 +21,8 @@ Use this to re-send a message when the recipient device fails to decrypt the mes
 
 ## See Also
 
-- [RCSMessage.SecureSendReceipt](rcsmessage/securesendreceipt.md)
+### Inspecting result properties
+- [RCSMessage.SecureSendReceipt](../../../rcsmessage/securesendreceipt.md)
   A structure that contains the security context of an end-to-end encrypted message.
 
 

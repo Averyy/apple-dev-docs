@@ -1,7 +1,8 @@
 # specularModel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specular algorithm to use.
 
@@ -21,12 +22,13 @@ var specularModel: LitLightingModel.SpecularModel
 
 ## See Also
 
-- [var diffuseModel: LitLightingModel.DiffuseModel](litlightingmodel/diffusemodel-swift.property.md)
+### Configuring shading models
+- [var diffuseModel: LitLightingModel.DiffuseModel](./diffusemodel-swift.property.md)
   The diffuse algorithm to use.
-- [LitLightingModel.DiffuseModel](litlightingmodel/diffusemodel-swift.enum.md)
-  The diffuse lighting algorithm used in a [`LitLightingModel`](litlightingmodel.md).
-- [LitLightingModel.SpecularModel](litlightingmodel/specularmodel-swift.enum.md)
-  The specular lighting algorithm used in a [`LitLightingModel`](litlightingmodel.md).
+- [LitLightingModel.DiffuseModel](./diffusemodel-swift.enum.md)
+  The diffuse lighting algorithm used in a [`LitLightingModel`](../litlightingmodel.md).
+- [LitLightingModel.SpecularModel](./specularmodel-swift.enum.md)
+  The specular lighting algorithm used in a [`LitLightingModel`](../litlightingmodel.md).
 
 
 ---

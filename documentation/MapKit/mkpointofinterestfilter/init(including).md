@@ -1,7 +1,8 @@
 # init(including:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the point of interest filter with a list of categories to include.
 
@@ -20,17 +21,22 @@ Initialize the point of interest filter with a list of categories to include.
 init(including categories: [MKPointOfInterestCategory])
 ```
 
+```objc
+- (instancetype) initIncludingCategories:(NSArray<NSString *> *) categories;
+```
+
 ## Parameters
 
 - `categories`: An array of categories to include.
 
 ## See Also
 
-- [class var excludingAll: MKPointOfInterestFilter](mkpointofinterestfilter/excludingall.md)
+### Creating filters
+- [class var excludingAll: MKPointOfInterestFilter](./excludingall.md)
   A filter that excludes all point of interest categories.
-- [class var includingAll: MKPointOfInterestFilter](mkpointofinterestfilter/includingall.md)
+- [class var includingAll: MKPointOfInterestFilter](./includingall.md)
   A filter that includes all point of interest categories.
-- [init(excluding: [MKPointOfInterestCategory])](mkpointofinterestfilter/init(excluding:).md)
+- [init(excluding: [MKPointOfInterestCategory])](./init%28excluding%29.md)
   Initialize the point of interest filter with a list of categories to exclude.
 
 

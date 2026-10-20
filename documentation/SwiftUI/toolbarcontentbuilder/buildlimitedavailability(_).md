@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.5+
@@ -19,12 +20,20 @@
 static func buildLimitedAvailability(_ content: any CustomizableToolbarContent) -> some CustomizableToolbarContent
 ```
 
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildLimitedAvailability(_ content: any ToolbarContent) -> some ToolbarContent
+```
+
 ## See Also
 
-- [static buildIf(_:)](toolbarcontentbuilder/buildif(_:).md)
-- [static buildEither(first:)](toolbarcontentbuilder/buildeither(first:).md)
-- [static buildEither(second:)](toolbarcontentbuilder/buildeither(second:).md)
-- [static buildExpression(_:)](toolbarcontentbuilder/buildexpression(_:).md)
+### Building conditional toolbar content
+- [static buildIf(_:)](./buildif%28_%29.md)
+- [static buildEither(first:)](./buildeither%28first%29.md)
+- [static buildEither(second:)](./buildeither%28second%29.md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Builds an expression within the builder.
 
 

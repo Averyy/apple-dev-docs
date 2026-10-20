@@ -1,7 +1,8 @@
 # setContentOffset(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the point at which the origin of the content view is offset from the origin of the scroll view.
 
@@ -9,7 +10,7 @@ Sets the point at which the origin of the content view is offset from the origin
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,16 +19,21 @@ Sets the point at which the origin of the content view is offset from the origin
 func setContentOffset(_ contentOffset: CGPoint, animated: Bool)
 ```
 
+```objc
+- (void) setContentOffset:(CGPoint) contentOffset animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `contentOffset`: A point (expressed in points) that’s offset from the content view’s origin.
-- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition at a constant velocity to the new offset, [`false`](https://developer.apple.com/documentation/swift/false) to make the transition immediate.
+- `animated`: [`true`](../../Swift/true.md) to animate the transition at a constant velocity to the new offset, [`false`](../../Swift/false.md) to make the transition immediate.
 
 ## See Also
 
-- [var contentSize: CGSize](uiscrollview/contentsize.md)
+### Managing the content size and offset
+- [var contentSize: CGSize](./contentsize.md)
   The size of the content view.
-- [var contentOffset: CGPoint](uiscrollview/contentoffset.md)
+- [var contentOffset: CGPoint](./contentoffset.md)
   The point at which the origin of the content view is offset from the origin of the scroll view.
 
 

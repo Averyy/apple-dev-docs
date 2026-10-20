@@ -1,7 +1,8 @@
 # LibraryPlaylistCreationRequest.Relationships.Tracks
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The songs and music videos to add to the created playlist’s tracklist.
 
@@ -10,14 +11,14 @@ The songs and music videos to add to the created playlist’s tracklist.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistCreationRequest.Relationships.Tracks
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryPlaylistCreationRequest.Relationships.Tracks.Data](libraryplaylistcreationrequest/relationships-data.dictionary/tracks-data.dictionary/data-data.dictionary.md)
+- [object LibraryPlaylistCreationRequest.Relationships.Tracks.Data](./tracks-data.dictionary/data-data.dictionary.md)
   Data of the tracks too add to the created library playlist.
 
 ## Properties
@@ -26,7 +27,8 @@ object LibraryPlaylistCreationRequest.Relationships.Tracks
 
 ## See Also
 
-- [object LibraryPlaylistCreationRequest.Relationships.Parent](libraryplaylistcreationrequest/relationships-data.dictionary/parent-data.dictionary.md)
+### Related Objects
+- [object LibraryPlaylistCreationRequest.Relationships.Parent](./parent-data.dictionary.md)
   Library playlist folder which contains the playlist that the user creates.
 
 

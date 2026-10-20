@@ -1,7 +1,8 @@
 # init(value:in:neutralValue:enabledBounds:label:currentValueLabel:minimumValueLabel:maximumValueLabel:ticks:onEditingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slider to select a value from a given range, which displays the provided labels and customized ticks.
 
@@ -19,6 +20,8 @@ Creates a slider to select a value from a given range, which displays the provid
 nonisolated
 init<V>(value: Binding<V>, in bounds: ClosedRange<V> = 0...1, neutralValue: V? = nil, enabledBounds: ClosedRange<V>? = nil, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> some View = { EmptyView() }, @ContentBuilder minimumValueLabel: () -> ValueLabel = { EmptyView() }, @ContentBuilder maximumValueLabel: () -> ValueLabel = { EmptyView() }, @SliderTickBuilder<V> ticks: () -> some SliderTickContent, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V.Stride : BinaryFloatingPoint
 ```
+
+Available when `Label` conforms to `View` and `ValueLabel` conforms to `View`.
 
 #### Discussion
 

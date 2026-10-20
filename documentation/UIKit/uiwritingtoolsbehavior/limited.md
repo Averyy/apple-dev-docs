@@ -1,7 +1,8 @@
 # UIWritingToolsBehavior.limited
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to provide a limited, overlay-panel experience for the text view.
 
@@ -17,13 +18,18 @@ An option to provide a limited, overlay-panel experience for the text view.
 case limited
 ```
 
+```c
+UIWritingToolsBehaviorLimited
+```
+
 ## See Also
 
-- [UIWritingToolsBehavior.none](uiwritingtoolsbehavior/none.md)
+### Getting the writing tools behaviors
+- [UIWritingToolsBehavior.none](./none.md)
   An option to prevent the writing tools from modifying the text in the view.
-- [UIWritingToolsBehavior.default](uiwritingtoolsbehavior/default.md)
+- [UIWritingToolsBehavior.default](./default.md)
   An option to let the system determine the best way to enable writing tools for the view.
-- [UIWritingToolsBehavior.complete](uiwritingtoolsbehavior/complete.md)
+- [UIWritingToolsBehavior.complete](./complete.md)
   An option to provide the complete writing tools experience for the text view.
 
 

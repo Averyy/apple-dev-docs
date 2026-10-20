@@ -1,7 +1,8 @@
 # coordinateSpace3D(for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value that can be used for `CoordinateSpace3D` based coordinate conversions.
 

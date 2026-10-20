@@ -166,14 +166,12 @@
       "hash": "2de606f180483d89f3c3a6a10c1038317229cd18fac5445f155ce09f5d091756"
     },
     "https://developer.apple.com/documentation/assignables/assignabledocument/correctmarktype/!=(_:_:)": {
-      "etag": "W/\"f0f8d741d7043152aa2f4a69cf3afbec\"",
       "file_path": "documentation/Assignables/assignabledocument/correctmarktype/noteq(_,_).md",
-      "hash": "3827fbaba458876e867ac2fa2f25de8266bc6fc293ca5b73eb3b07337ca68423"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/assignables/assignabledocument/correctmarktype/==(_:_:)": {
-      "etag": "W/\"48a872615fcda66aa9aad59614517fd6\"",
       "file_path": "documentation/Assignables/assignabledocument/correctmarktype/eqeq(_,_).md",
-      "hash": "5f68be9cbf4484ee5647e670a00823cf01d1b8a2c2ef84c8e10f0e93bb937c11"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/assignables/assignabledocument/correctmarktype/checkmark": {
       "etag": "\"1a53-65d55d17feab0-df\"",
@@ -941,9 +939,8 @@
       "hash": "79f0848e0a164b068ead6c36dde2e765401bdd2f0556c7f24cff4ec4124cb28c"
     },
     "https://developer.apple.com/documentation/assignables/assignedworkdocument/scoreannotation/kind-swift.enum/!=(_:_:)": {
-      "etag": "W/\"44960a9949d1dcb9ddc40e01dc2f241e\"",
       "file_path": "documentation/Assignables/assignedworkdocument/scoreannotation/kind-swift.enum/noteq(_,_).md",
-      "hash": "e7738f31ca00bbc798619fbc0d9c4ab182e4d58b327695c97bb5de3d33ae5580"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/assignables/assignedworkdocument/scoreannotation/kind-swift.enum/bonus": {
       "etag": "\"1ff4-65d55d17e55e1-df\"",
@@ -1461,14 +1458,12 @@
       "hash": "2de606f180483d89f3c3a6a10c1038317229cd18fac5445f155ce09f5d091756"
     },
     "https://developer.apple.com/tutorials/data/documentation/assignables/assignabledocument/correctmarktype/!=(_:_:).json": {
-      "etag": "W/\"f0f8d741d7043152aa2f4a69cf3afbec\"",
       "file_path": "documentation/Assignables/assignabledocument/correctmarktype/noteq(_,_).md",
-      "hash": "3827fbaba458876e867ac2fa2f25de8266bc6fc293ca5b73eb3b07337ca68423"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/assignables/assignabledocument/correctmarktype/==(_:_:).json": {
-      "etag": "W/\"48a872615fcda66aa9aad59614517fd6\"",
       "file_path": "documentation/Assignables/assignabledocument/correctmarktype/eqeq(_,_).md",
-      "hash": "5f68be9cbf4484ee5647e670a00823cf01d1b8a2c2ef84c8e10f0e93bb937c11"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/assignables/assignabledocument/correctmarktype/checkmark.json": {
       "etag": "\"1a53-65d55d17feab0-df\"",
@@ -2236,9 +2231,8 @@
       "hash": "79f0848e0a164b068ead6c36dde2e765401bdd2f0556c7f24cff4ec4124cb28c"
     },
     "https://developer.apple.com/tutorials/data/documentation/assignables/assignedworkdocument/scoreannotation/kind-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"44960a9949d1dcb9ddc40e01dc2f241e\"",
       "file_path": "documentation/Assignables/assignedworkdocument/scoreannotation/kind-swift.enum/noteq(_,_).md",
-      "hash": "e7738f31ca00bbc798619fbc0d9c4ab182e4d58b327695c97bb5de3d33ae5580"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/assignables/assignedworkdocument/scoreannotation/kind-swift.enum/bonus.json": {
       "etag": "\"1ff4-65d55d17e55e1-df\"",
@@ -2592,6 +2586,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 518
   }
 }

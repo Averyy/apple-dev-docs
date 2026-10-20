@@ -1,7 +1,8 @@
 # isDisabled
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the host is bypassing the renderer due to poor performance.
 
@@ -14,6 +15,10 @@ Indicates whether the host is bypassing the renderer due to poor performance.
 
 ```swift
 var isDisabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isDisabled) BOOL disabled;
 ```
 
 #### Discussion

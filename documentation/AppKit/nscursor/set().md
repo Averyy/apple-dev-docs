@@ -1,7 +1,8 @@
 # set()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes the receiver the current cursor.
 
@@ -17,15 +18,21 @@ Makes the receiver the current cursor.
 func set()
 ```
 
+```objc
+- (void) set;
+```
+
 ## See Also
 
-- [class var current: NSCursor](nscursor/current.md)
+### Related Documentation
+- [class var current: NSCursor](./current.md)
   Returns the application’s current cursor.
-- [class func pop()](nscursor/pop-swift.type.method.md)
+### Controlling which cursor is current
+- [class func pop()](./pop%28%29-swift.type.method.md)
   Pops the current cursor off the top of the stack.
-- [func pop()](nscursor/pop-swift.method.md)
-  Sends a [`pop()`](nscursor/pop()-swift.type.method.md) message to the receiver’s class.
-- [func push()](nscursor/push.md)
+- [func pop()](./pop%28%29-swift.method.md)
+  Sends a [`pop()`](./pop%28%29-swift.type.method.md) message to the receiver’s class.
+- [func push()](./push%28%29.md)
   Puts the receiver on top of the cursor stack and makes it the current cursor.
 
 

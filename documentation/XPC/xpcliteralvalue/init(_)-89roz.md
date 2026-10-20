@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an XPCLiteralValue from a floating-point number.
 
@@ -11,7 +12,7 @@ Creates an XPCLiteralValue from a floating-point number.
 - Mac Catalyst 27.0+
 - macOS 27.0+
 - tvOS 27.0+
-- visionOS ?+
+- visionOS
 - watchOS 27.0+
 
 ## Declaration

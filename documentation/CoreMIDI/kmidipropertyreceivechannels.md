@@ -1,7 +1,8 @@
 # kMIDIPropertyReceiveChannels
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The bitmap of channels on which the object receives messages.
 
@@ -18,6 +19,10 @@ The bitmap of channels on which the object receives messages.
 let kMIDIPropertyReceiveChannels: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyReceiveChannels;
+```
+
 #### Discussion
 
 You can use this property in the following scenarios:
@@ -28,11 +33,12 @@ You can use this property in the following scenarios:
 
 ## See Also
 
-- [let kMIDIPropertyTransmitChannels: CFString](kmidipropertytransmitchannels.md)
+### Channels
+- [let kMIDIPropertyTransmitChannels: CFString](./kmidipropertytransmitchannels.md)
   The bitmap of channels on which the object transmits messages.
-- [let kMIDIPropertyMaxReceiveChannels: CFString](kmidipropertymaxreceivechannels.md)
+- [let kMIDIPropertyMaxReceiveChannels: CFString](./kmidipropertymaxreceivechannels.md)
   The maximum number of MIDI channels on which a device may simultaneously receive channel messages.
-- [let kMIDIPropertyMaxTransmitChannels: CFString](kmidipropertymaxtransmitchannels.md)
+- [let kMIDIPropertyMaxTransmitChannels: CFString](./kmidipropertymaxtransmitchannels.md)
   The maximum number of MIDI channels on which a device may simultaneously transmit channel messages.
 
 

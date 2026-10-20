@@ -1,7 +1,8 @@
 # init(value:in:step:label:minimumValueLabel:maximumValueLabel:onEditingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels.
 
@@ -19,6 +20,8 @@ Creates a slider to select a value from a given range, subject to a step increme
 @export(implementation)
 nonisolated init<V>(value: Binding<V>, in bounds: ClosedRange<V>, step: V.Stride = 1, @ContentBuilder label: () -> Label, @ContentBuilder minimumValueLabel: () -> ValueLabel, @ContentBuilder maximumValueLabel: () -> ValueLabel, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V : BinaryFloatingPoint, V.Stride : BinaryFloatingPoint
 ```
+
+Available when `Label` conforms to `View` and `ValueLabel` conforms to `View`.
 
 #### Discussion
 
@@ -38,11 +41,12 @@ The slider calls `onEditingChanged` when editing begins and ends. For example, o
 
 ## See Also
 
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, onEditingChanged: (Bool) -> Void)](slider/init(value:in:label:oneditingchanged:).md)
+### Creating a slider with labels
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, onEditingChanged: (Bool) -> Void)](./init%28value,in,label,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, which displays the provided label.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](slider/init(value:in:step:label:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](./init%28value,in,step,label,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided label.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](slider/init(value:in:label:minimumvaluelabel:maximumvaluelabel:oneditingchanged:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, label: () -> Label, minimumValueLabel: () -> ValueLabel, maximumValueLabel: () -> ValueLabel, onEditingChanged: (Bool) -> Void)](./init%28value,in,label,minimumvaluelabel,maximumvaluelabel,oneditingchanged%29.md)
   Creates a slider to select a value from a given range, which displays the provided labels.
 
 

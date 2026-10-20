@@ -1,7 +1,8 @@
 # imagery(elevation:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a map style based on satellite imagery with the elevation characteristics you specify.
 
@@ -11,7 +12,7 @@ Creates a map style based on satellite imagery with the elevation characteristic
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func imagery(elevation: MapStyle.Elevation = .automatic) -> MapStyle
 
 #### Return Value
 
-A [`MapStyle`](mapstyle.md) with the elevation style you specified.
+A [`MapStyle`](../mapstyle.md) with the elevation style you specified.
 
 #### Discussion
 
@@ -30,17 +31,18 @@ A [`MapStyle`](mapstyle.md) with the elevation style you specified.
 
 ## Parameters
 
-- `elevation`: One of the [`MapStyle.Elevation`](mapstyle/elevation.md) values that determines how the map renders elevation.
+- `elevation`: One of the [`MapStyle.Elevation`](./elevation.md) values that determines how the map renders elevation.
 
 ## See Also
 
-- [static func hybrid(elevation: MapStyle.Elevation, pointsOfInterest: PointOfInterestCategories, showsTraffic: Bool) -> MapStyle](mapstyle/hybrid(elevation:pointsofinterest:showstraffic:).md)
+### Creating map styles
+- [static func hybrid(elevation: MapStyle.Elevation, pointsOfInterest: PointOfInterestCategories, showsTraffic: Bool) -> MapStyle](./hybrid%28elevation,pointsofinterest,showstraffic%29.md)
   Creates a hybrid map style that includes the elevation, point of interest, and traffic characteristics you specify.
-- [static func standard(elevation: MapStyle.Elevation, emphasis: MapStyle.StandardEmphasis, pointsOfInterest: PointOfInterestCategories, showsTraffic: Bool) -> MapStyle](mapstyle/standard(elevation:emphasis:pointsofinterest:showstraffic:).md)
+- [static func standard(elevation: MapStyle.Elevation, emphasis: MapStyle.StandardEmphasis, pointsOfInterest: PointOfInterestCategories, showsTraffic: Bool) -> MapStyle](./standard%28elevation,emphasis,pointsofinterest,showstraffic%29.md)
   Creates a standard map style that includes the elevation, point of interest, and traffic characteristics you specify.
-- [MapStyle.Elevation](mapstyle/elevation.md)
+- [MapStyle.Elevation](./elevation.md)
   Values you use to determine whether a map renders elevation.
-- [MapStyle.StandardEmphasis](mapstyle/standardemphasis.md)
+- [MapStyle.StandardEmphasis](./standardemphasis.md)
   Values that control how the framework emphasizes map features.
 
 

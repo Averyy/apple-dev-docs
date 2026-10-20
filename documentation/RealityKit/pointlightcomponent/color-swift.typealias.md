@@ -1,7 +1,8 @@
 # PointLightComponent.Color
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A platform-specific type used to define color for a point light.
 
@@ -14,6 +15,14 @@ A platform-specific type used to define color for a point light.
 - visionOS 2.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+typealias Color = UIColor
+```
+
+*macOS*
 
 ```swift
 typealias Color = NSColor

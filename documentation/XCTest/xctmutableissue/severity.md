@@ -1,12 +1,17 @@
 # severity
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ## Declaration
 
 ```swift
 var severity: XCTIssueReference.Severity { get set }
+```
+
+```objc
+@property (readwrite) XCTIssueSeverity severity;
 ```
 
 

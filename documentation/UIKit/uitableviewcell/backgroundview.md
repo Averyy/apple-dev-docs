@@ -1,7 +1,8 @@
 # backgroundView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view to use as the background of the cell.
 
@@ -9,7 +10,7 @@ The view to use as the background of the cell.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,31 @@ The view to use as the background of the cell.
 var backgroundView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIView * backgroundView;
+```
+
 #### Discussion
 
-[`UITableViewCell`](uitableviewcell.md) adds the background view as a subview behind all other views and uses its current frame location.
+[`UITableViewCell`](../uitableviewcell.md) adds the background view as a subview behind all other views and uses its current frame location.
 
-A background configuration is mutually exclusive with background views, so you must use one approach or the other. Setting a non-`nil` value for this property resets [`backgroundConfiguration`](uitableviewcell/backgroundconfiguration-24e8e.md) to `nil`.
+A background configuration is mutually exclusive with background views, so you must use one approach or the other. Setting a non-`nil` value for this property resets [`backgroundConfiguration`](./backgroundconfiguration-24e8e.md) to `nil`.
 
 ## See Also
 
-- [var contentView: UIView](uitableviewcell/contentview.md)
+### Related Documentation
+- [var contentView: UIView](./contentview.md)
   The content view of the cell object.
-- [func defaultBackgroundConfiguration() -> UIBackgroundConfiguration](uitableviewcell/defaultbackgroundconfiguration.md)
+### Configuring the background
+- [func defaultBackgroundConfiguration() -> UIBackgroundConfiguration](./defaultbackgroundconfiguration%28%29.md)
   Retrieves a background configuration with system default values.
-- [var backgroundConfiguration: UIBackgroundConfiguration?](uitableviewcell/backgroundconfiguration-24e8e.md)
+- [var backgroundConfiguration: UIBackgroundConfiguration?](./backgroundconfiguration-24e8e.md)
   The current background configuration of the cell.
-- [var automaticallyUpdatesBackgroundConfiguration: Bool](uitableviewcell/automaticallyupdatesbackgroundconfiguration.md)
+- [var automaticallyUpdatesBackgroundConfiguration: Bool](./automaticallyupdatesbackgroundconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its background configuration when its state changes.
-- [var selectedBackgroundView: UIView?](uitableviewcell/selectedbackgroundview.md)
+- [var selectedBackgroundView: UIView?](./selectedbackgroundview.md)
   The view to use as the background for a selected cell.
-- [var multipleSelectionBackgroundView: UIView?](uitableviewcell/multipleselectionbackgroundview.md)
+- [var multipleSelectionBackgroundView: UIView?](./multipleselectionbackgroundview.md)
   The background view to use for a selected cell when the table view allows multiple row selections.
 
 

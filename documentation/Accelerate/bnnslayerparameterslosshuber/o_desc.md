@@ -1,18 +1,21 @@
 # o_desc
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor of the output.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,15 +23,20 @@ The descriptor of the output.
 var o_desc: BNNSNDArrayDescriptor
 ```
 
+```c
+BNNSNDArrayDescriptor o_desc;
+```
+
 ## See Also
 
-- [var function: BNNSLossFunction](bnnslayerparameterslosshuber/function.md)
+### Instance Properties
+- [var function: BNNSLossFunction](./function.md)
   The function that’s used to compute loss.
-- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparameterslosshuber/i_desc.md)
+- [var i_desc: BNNSNDArrayDescriptor](./i_desc.md)
   The descriptor of the input.
-- [var reduction: BNNSLossReductionFunction](bnnslayerparameterslosshuber/reduction.md)
+- [var reduction: BNNSLossReductionFunction](./reduction.md)
   The function that’s used to reduce the computed loss.
-- [var huber_delta: Float](bnnslayerparameterslosshuber/huber_delta.md)
+- [var huber_delta: Float](./huber_delta.md)
   The boundary value that defines where Huber loss returns mean absolute error or mean square error.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes the specified object from this object’s array of children.
@@ -20,15 +21,20 @@ Removes the specified object from this object’s array of children.
 func remove(_ object: MDLObject)
 ```
 
+```objc
+- (void) removeObject:(MDLObject *) object;
+```
+
 ## Parameters
 
 - `object`: The object to remove.
 
 ## See Also
 
-- [var objects: [MDLObject]](mdlobjectcontainercomponent/objects.md)
+### Working with Child Objects
+- [var objects: [MDLObject]](./objects.md)
   This object’s array of child objects.
-- [func add(MDLObject)](mdlobjectcontainercomponent/add(_:).md)
+- [func add(MDLObject)](./add%28_%29.md)
   Adds the specified object as a child of this object.
 
 

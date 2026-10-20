@@ -1,7 +1,8 @@
 # init(items:header:headerSubtitle:headerImage:headerButton:sectionIndexTitle:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section with list items, a header, a section index title, and section header details.
 
@@ -16,6 +17,10 @@ Creates a section with list items, a header, a section index title, and section 
 init(items: [any CPListTemplateItem], header: String, headerSubtitle: String?, headerImage: UIImage?, headerButton: CPButton?, sectionIndexTitle: String?)
 ```
 
+```objc
+- (instancetype) initWithItems:(NSArray<id<CPListTemplateItem>> *) items header:(NSString *) header headerSubtitle:(NSString *) headerSubtitle headerImage:(UIImage *) headerImage headerButton:(CPButton *) headerButton sectionIndexTitle:(NSString *) sectionIndexTitle;
+```
+
 #### Return Value
 
 A newly initialized list section.
@@ -28,15 +33,16 @@ A newly initialized list section.
 
 ## See Also
 
-- [protocol CPListTemplateItem](cplisttemplateitem.md)
+### Creating a Section
+- [protocol CPListTemplateItem](../cplisttemplateitem.md)
   A description of the common properties of all list item types.
-- [protocol CPSelectableListItem](cpselectablelistitem.md)
+- [protocol CPSelectableListItem](../cpselectablelistitem.md)
   A description of a selectable list item.
-- [class CPListItem](cplistitem.md)
+- [class CPListItem](../cplistitem.md)
   A selectable row in a list template.
-- [class CPListImageRowItem](cplistimagerowitem.md)
+- [class CPListImageRowItem](../cplistimagerowitem.md)
   A list template row that displays a series of images.
-- [class CPMessageListItem](cpmessagelistitem.md)
+- [class CPMessageListItem](../cpmessagelistitem.md)
   A list template row that represents a conversation or contact.
 
 

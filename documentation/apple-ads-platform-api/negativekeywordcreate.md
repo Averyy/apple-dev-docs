@@ -1,7 +1,8 @@
 # NegativeKeywordCreate
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for creating a new negative keyword.
 
@@ -10,7 +11,7 @@ The request body for creating a new negative keyword.
 
 ## Declaration
 
-```swift
+```
 object NegativeKeywordCreate
 ```
 
@@ -32,28 +33,30 @@ The `NegativeKeywordCreate` object is the request payload for adding a negative 
 ## Topics
 
 ### Type Aliases
-- [type NegativeKeywordCreate.MatchType](negativekeywordcreate/matchtype-data.typealias.md)
+- [type NegativeKeywordCreate.MatchType](./negativekeywordcreate/matchtype-data.typealias.md)
   The matching behavior to use when creating this negative keyword.
-- [type NegativeKeywordCreate.Status](negativekeywordcreate/status-data.typealias.md)
+- [type NegativeKeywordCreate.Status](./negativekeywordcreate/status-data.typealias.md)
   Whether this negative keyword is active at creation.
 
 ## Properties
 
-- `campaignId` (int64): Scopes this negative keyword to a specific campaign. Required for campaign-level negatives when calling `POST /v1/negative-keywords` ([`Create a Negative Keyword`](post-negative-keywords.md)) directly. Must not be set for ad group-level negatives.
-- `adGroupId` (int64): Scopes this negative keyword to a specific ad group. Required for ad group-level negatives when calling `POST /v1/negative-keywords` ([`Create a Negative Keyword`](post-negative-keywords.md)) directly. Don’t set `campaignId` when providing this field.
+- `campaignId` (int64): Scopes this negative keyword to a specific campaign. Required for campaign-level negatives when calling `POST /v1/negative-keywords` ([`Create a Negative Keyword`](./post-negative-keywords.md)) directly. Must not be set for ad group-level negatives.
+- `adGroupId` (int64): Scopes this negative keyword to a specific ad group. Required for ad group-level negatives when calling `POST /v1/negative-keywords` ([`Create a Negative Keyword`](./post-negative-keywords.md)) directly. Don’t set `campaignId` when providing this field.
 - `text` (string) *(required)*: The keyword text to exclude. Immutable after creation. To correct it, delete the existing record and create a new one.
-- `matchType` (NegativeKeywordCreate.MatchType): The match type for this negative keyword. See [`KeywordMatchType`](keywordmatchtype.md). Defaults to `BROAD` if omitted. Immutable after creation.
-- `status` (NegativeKeywordCreate.Status): Whether this negative keyword is active. See [`NegativeKeywordStatus`](negativekeywordstatus.md). Defaults to `ENABLED` if omitted.
+
+  **Minimum Length**: `1`
+- `matchType` (NegativeKeywordCreate.MatchType): The match type for this negative keyword. See [`KeywordMatchType`](./keywordmatchtype.md). Defaults to `BROAD` if omitted. Immutable after creation.
+- `status` (NegativeKeywordCreate.Status): Whether this negative keyword is active. See [`NegativeKeywordStatus`](./negativekeywordstatus.md). Defaults to `ENABLED` if omitted.
 
 ## See Also
 
-- [object NegativeKeyword](negativekeyword.md)
+- [object NegativeKeyword](./negativekeyword.md)
   A keyword exclusion that prevents ads from showing when a search query matches the excluded term.
-- [object NegativeKeywordUpdate](negativekeywordupdate.md)
+- [object NegativeKeywordUpdate](./negativekeywordupdate.md)
   The request body for updating an existing negative keyword.
-- [object NegativeKeywordResponse](negativekeywordresponse.md)
+- [object NegativeKeywordResponse](./negativekeywordresponse.md)
   The response object for a negative keyword operation.
-- [object NegativeKeywordQueryResponse](negativekeywordqueryresponse.md)
+- [object NegativeKeywordQueryResponse](./negativekeywordqueryresponse.md)
   The response object for a negative keyword query, containing matched results and pagination metadata.
 
 

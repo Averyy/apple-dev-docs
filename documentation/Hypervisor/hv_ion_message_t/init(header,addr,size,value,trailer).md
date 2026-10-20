@@ -1,12 +1,13 @@
 # init(header:addr:size:value:trailer:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new I/O notifier message with the parameters you provide.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ init(header: mach_msg_header_t, addr: UInt64, size: UInt64, value: UInt64, trail
 
 ## See Also
 
-- [init()](hv_ion_message_t/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates a new I/O notifier message.
 
 

@@ -1,7 +1,8 @@
 # context
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The context of the system during the camera session.
 
@@ -16,13 +17,18 @@ The context of the system during the camera session.
 var context: SRFaceMetrics.Context { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) SRFaceMetricsContext context;
+```
+
 ## See Also
 
-- [var sessionIdentifier: String](srfacemetrics/sessionidentifier.md)
+### Getting session information
+- [var sessionIdentifier: String](./sessionidentifier.md)
   An identifier for the camera session.
-- [SRFaceMetrics.Context](srfacemetrics/context-swift.struct.md)
+- [SRFaceMetrics.Context](./context-swift.struct.md)
   The context of the system during the camera session.
-- [var version: String](srfacemetrics/version.md)
+- [var version: String](./version.md)
   The version of the algorithm that the system uses to generate the face metrics and analytics.
 
 

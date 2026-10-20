@@ -1,7 +1,8 @@
 # init(get:set:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a binding with closures that read and write the binding value.
 
@@ -21,6 +22,13 @@ Creates a binding with closures that read and write the binding value.
 init(get: @escaping @isolated(any) @Sendable () -> Value, set: @escaping @isolated(any) @Sendable (Value) -> Void)
 ```
 
+**Other overloads**:
+
+```swift
+@preconcurrency
+init(get: @escaping @isolated(any) @Sendable () -> Value, set: @escaping @isolated(any) @Sendable (Value, Transaction) -> Void)
+```
+
 #### Discussion
 
 A binding conforms to Sendable only if its wrapped value type also conforms to Sendable. It is always safe to pass a sendable binding between different concurrency domains. However, reading from or writing to a binding’s wrapped value from a different concurrency domain may or may not be safe, depending on how the binding was created. SwiftUI will issue a warning at runtime if it detects a binding being used in a way that may compromise data safety.
@@ -30,15 +38,18 @@ For a “computed” binding created using get and set closure parameters, the s
 ## Parameters
 
 - `get`: A closure that retrieves the binding value. The closure has no parameters, and returns a value.
-- `set`: A closure that sets the binding value. The closure has the following parameter: - newValue: The new value of the binding value.
+- `set`: A closure that sets the binding value. The closure has the following parameter:
+
+  - newValue: The new value of the binding value.
 
 ## See Also
 
-- [init(_:)](binding/init(_:).md)
+### Creating a binding
+- [init(_:)](./init%28_%29.md)
   Creates a binding by projecting the base value to a hashable value.
-- [init(projectedValue: Binding<Value>)](binding/init(projectedvalue:).md)
+- [init(projectedValue: Binding<Value>)](./init%28projectedvalue%29.md)
   Creates a binding from the value of another binding.
-- [static func constant(Value) -> Binding<Value>](binding/constant(_:).md)
+- [static func constant(Value) -> Binding<Value>](./constant%28_%29.md)
   Creates a binding with an immutable value.
 
 

@@ -1,7 +1,8 @@
 # CPGridTemplate
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template that displays and manages a grid of items.
 
@@ -17,58 +18,63 @@ A template that displays and manages a grid of items.
 class CPGridTemplate
 ```
 
+```objc
+@interface CPGridTemplate : CPTemplate
+```
+
 #### Overview
 
-Use this template to display a grid of items as buttons. When creating the grid template, provide an array of [`CPGridButton`](cpgridbutton.md) objects. Each button contains a title, an image, and an optional handler that the system invokes after the user taps the button on the CarPlay screen.
+Use this template to display a grid of items as buttons. When creating the grid template, provide an array of [`CPGridButton`](./cpgridbutton.md) objects. Each button contains a title, an image, and an optional handler that the system invokes after the user taps the button on the CarPlay screen.
 
 When there are more than eight buttons in the array, the template displays only the first eight. When there are more than four buttons, the template balances the display of the buttons betweem two rows.
 
 ## Topics
 
 ### Creating a Grid Template
-- [init(title: String?, gridButtons: [CPGridButton])](cpgridtemplate/init(title:gridbuttons:).md)
+- [init(title: String?, gridButtons: [CPGridButton])](./cpgridtemplate/init%28title,gridbuttons%29.md)
   Creates a grid template with a title and a set of buttons.
-- [class CPGridButton](cpgridbutton.md)
+- [class CPGridButton](./cpgridbutton.md)
   A menu item button displayed on a grid template.
 ### Getting the Grid Title
-- [var title: String](cpgridtemplate/title.md)
+- [var title: String](./cpgridtemplate/title.md)
   The title shown in the grid template’s navigation bar.
 ### Getting the Grid Buttons
-- [var gridButtons: [CPGridButton]](cpgridtemplate/gridbuttons.md)
+- [var gridButtons: [CPGridButton]](./cpgridtemplate/gridbuttons.md)
   The array of grid buttons displayed on the template.
 ### Instance Methods
-- [func updateGridButtons([CPGridButton])](cpgridtemplate/updategridbuttons(_:).md)
-- [func updateTitle(String)](cpgridtemplate/updatetitle(_:).md)
+- [func updateGridButtons([CPGridButton])](./cpgridtemplate/updategridbuttons%28_%29.md)
+- [func updateTitle(String)](./cpgridtemplate/updatetitle%28_%29.md)
 ### Type Properties
-- [class var maximumGridButtonImageSize: CGSize](cpgridtemplate/maximumgridbuttonimagesize.md)
+- [class var maximumGridButtonImageSize: CGSize](./cpgridtemplate/maximumgridbuttonimagesize.md)
   The expected image size for your @c CPGridButton.
 
 ## Relationships
 
 ### Inherits From
-- [CPTemplate](cptemplate.md)
+- [CPTemplate](./cptemplate.md)
 ### Conforms To
-- [CPBarButtonProviding](cpbarbuttonproviding.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CPBarButtonProviding](./cpbarbuttonproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CPListTemplate](cplisttemplate.md)
+### General Purpose Templates
+- [class CPListTemplate](./cplisttemplate.md)
   A template that displays and manages a list of items.
-- [class CPTabBarTemplate](cptabbartemplate.md)
+- [class CPTabBarTemplate](./cptabbartemplate.md)
   A container template that displays and manages other templates, presenting them as tabs.
-- [class CPTemplate](cptemplate.md)
+- [class CPTemplate](./cptemplate.md)
   An abstract base class for interface templates.
-- [protocol CPBarButtonProviding](cpbarbuttonproviding.md)
+- [protocol CPBarButtonProviding](./cpbarbuttonproviding.md)
   The methods that templates use to provide buttons for the navigation bar.
 
 

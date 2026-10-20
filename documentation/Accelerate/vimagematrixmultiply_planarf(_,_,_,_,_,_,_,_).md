@@ -1,7 +1,8 @@
 # vImageMatrixMultiply_PlanarF(_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies each pixel in a set of 32-bit source image planes by a matrix to produce a set of 32-bit destination image planes.
 
@@ -20,9 +21,13 @@ Multiplies each pixel in a set of 32-bit source image planes by a matrix to prod
 func vImageMatrixMultiply_PlanarF(_ srcs: UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, _ dests: UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, _ src_planes: UInt32, _ dest_planes: UInt32, _ matrix: UnsafePointer<Float>, _ pre_bias: UnsafePointer<Float>!, _ post_bias: UnsafePointer<Float>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageMatrixMultiply_PlanarF(const vImage_Buffer * srcs[], const vImage_Buffer * dests[], uint32_t src_planes, uint32_t dest_planes, const float matrix[], const float *pre_bias, const float *post_bias, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -132,15 +137,16 @@ On return, the destination buffer contains a grayscale representation of the red
 - `matrix`: An array of values that contains the `src_planes` rows multiplied by `dest_planes` columns 2D matrix elements.
 - `pre_bias`: An array of bias values for each source plane. The function adds the corresponding bias value to each source value before the matrix multiplication step. Pass `nil` to specify zero prebias.
 - `post_bias`: An array of bias values for each source plane. The function adds the corresponding bias value to each destination value after the matrix multiplication step. Pass `nil` to specify zero postbias.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Adjusting saturation and applying tone mapping](adjusting-saturation-and-applying-tone-mapping.md)
+### Multiplying multiple-plane pixels by a matrix
+- [Adjusting saturation and applying tone mapping](./adjusting-saturation-and-applying-tone-mapping.md)
   Convert an RGB image to discrete luminance and chrominance channels, and apply color and contrast treatments.
-- [func vImageMatrixMultiply_Planar8(UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UInt32, UInt32, UnsafePointer<Int16>, Int32, UnsafePointer<Int16>!, UnsafePointer<Int32>!, vImage_Flags) -> vImage_Error](vimagematrixmultiply_planar8(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageMatrixMultiply_Planar8(UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UInt32, UInt32, UnsafePointer<Int16>, Int32, UnsafePointer<Int16>!, UnsafePointer<Int32>!, vImage_Flags) -> vImage_Error](./vimagematrixmultiply_planar8%28_,_,_,_,_,_,_,_,_%29.md)
   Multiplies each pixel in a set of 8-bit source image planes by a matrix to produce a set of 8-bit destination image planes.
-- [func vImageMatrixMultiply_Planar16S(UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UInt32, UInt32, UnsafePointer<Int16>, Int32, UnsafePointer<Int16>!, UnsafePointer<Int32>!, vImage_Flags) -> vImage_Error](vimagematrixmultiply_planar16s(_:_:_:_:_:_:_:_:_:).md)
+- [func vImageMatrixMultiply_Planar16S(UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, UInt32, UInt32, UnsafePointer<Int16>, Int32, UnsafePointer<Int16>!, UnsafePointer<Int32>!, vImage_Flags) -> vImage_Error](./vimagematrixmultiply_planar16s%28_,_,_,_,_,_,_,_,_%29.md)
   Multiplies each pixel in a set of 16-bit source image planes by a matrix to produce a set of 8-bit destination image planes.
 
 

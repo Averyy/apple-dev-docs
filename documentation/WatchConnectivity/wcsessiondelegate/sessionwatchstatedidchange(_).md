@@ -1,7 +1,8 @@
 # sessionWatchStateDidChange(_:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates a change to the counterpart’s information.
 
@@ -17,9 +18,13 @@ Indicates a change to the counterpart’s information.
 optional func sessionWatchStateDidChange(_ session: WCSession)
 ```
 
+```objc
+- (void) sessionWatchStateDidChange:(WCSession *) session;
+```
+
 #### Discussion
 
-The session object calls this method when the value in the [`isPaired`](wcsession/ispaired.md), [`isWatchAppInstalled`](wcsession/iswatchappinstalled.md), [`isComplicationEnabled`](wcsession/iscomplicationenabled.md), or [`watchDirectoryURL`](wcsession/watchdirectoryurl.md) properties of the [`WCSession`](wcsession.md) object changes. Use this state to update the state of your iOS app. For example, when the complication is disabled, make a note of that fact and do not send any more data updates for the complication.
+The session object calls this method when the value in the [`isPaired`](../wcsession/ispaired.md), [`isWatchAppInstalled`](../wcsession/iswatchappinstalled.md), [`isComplicationEnabled`](../wcsession/iscomplicationenabled.md), or [`watchDirectoryURL`](../wcsession/watchdirectoryurl.md) properties of the [`WCSession`](../wcsession.md) object changes. Use this state to update the state of your iOS app. For example, when the complication is disabled, make a note of that fact and do not send any more data updates for the complication.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ The session object calls this method when the value in the [`isPaired`](wcsessio
 
 ## See Also
 
-- [func sessionReachabilityDidChange(WCSession)](wcsessiondelegate/sessionreachabilitydidchange(_:).md)
+### Managing State Changes
+- [func sessionReachabilityDidChange(WCSession)](./sessionreachabilitydidchange%28_%29.md)
   Indicates a change to the counterpart’s reachability status.
-- [func sessionCompanionAppInstalledDidChange(WCSession)](wcsessiondelegate/sessioncompanionappinstalleddidchange(_:).md)
+- [func sessionCompanionAppInstalledDidChange(WCSession)](./sessioncompanionappinstalleddidchange%28_%29.md)
   Indicates a change to the companion app’s installed state.
 
 

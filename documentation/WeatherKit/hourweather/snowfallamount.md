@@ -1,7 +1,8 @@
 # snowfallAmount
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of snowfall for the hour.
 

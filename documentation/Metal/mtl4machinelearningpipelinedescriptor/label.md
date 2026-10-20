@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns an optional string that helps identify pipeline states you create from this descriptor.
 
@@ -17,6 +18,10 @@ Assigns an optional string that helps identify pipeline states you create from t
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
 ```
 
 

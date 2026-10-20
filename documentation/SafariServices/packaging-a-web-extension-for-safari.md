@@ -1,6 +1,7 @@
 # Packaging a web extension for Safari
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Package your existing extension as a Safari web extension using Xcode’s command-line tool.
 
@@ -12,9 +13,9 @@ If you create a web extension that works in a browser other than Safari, you can
 - Configures the Xcode project with a macOS app or iOS app that installs the extension in Safari
 - Configures a Safari web extension with your extension files in the Xcode project
 
-Safari web extension packager is available as a command line tool which you can use alongside Xcode on a Mac, or as a web-based tool available in App Store Connect. To learn more about using the web-based tool, see [`Packaging and distributing Safari Web Extensions with App Store Connect`](packaging-and-distributing-safari-web-extensions-with-app-store-connect.md).
+Safari web extension packager is available as a command line tool which you can use alongside Xcode on a Mac, or as a web-based tool available in App Store Connect. To learn more about using the web-based tool, see [Packaging and distributing Safari Web Extensions with App Store Connect](./packaging-and-distributing-safari-web-extensions-with-app-store-connect.md).
 
-##### Run the Packager
+##### Run the packager
 
 To run the packager, open the Terminal app and run the `xcrun` command with the `safari-web-extension-packager` option, providing the path for your existing extension files.
 
@@ -46,7 +47,7 @@ New Xcode projects require you to select either the Swift or Objective-C languag
 
 If the packager runs interactively, it asks you to confirm your selections and gives you the opportunity to update them.
 
-##### Review the Manifest Warnings
+##### Review the manifest warnings
 
 The packager generates and opens your new Xcode project. The packager reports any manifest keys that the current version of Safari doesn’t support.
 
@@ -59,13 +60,13 @@ offline_enabled
 
 ```
 
-Review any reported exceptions, and see [`Assessing your Safari web extension’s browser compatibility`](assessing-your-safari-web-extension-s-browser-compatibility.md) for details on how to resolve them.
+Review any reported exceptions, and see [Assessing your Safari web extension’s browser compatibility](./assessing-your-safari-web-extension-s-browser-compatibility.md) for details on how to resolve them.
 
-##### Build and Run Your Converted Safari Web Extension
+##### Build and run your converted Safari web extension
 
-To see your converted extension in Safari, follow the instructions in [`Running your Safari web extension`](running-your-safari-web-extension.md).
+To see your converted extension in Safari, follow the instructions in [Running your Safari web extension](./running-your-safari-web-extension.md).
 
-##### Add Ios to Your Existing Xcode Project
+##### Add iOS to your existing Xcode project
 
 If you have an existing Xcode project with a macOS Safari web extension, and you want to add support for iOS to it, use the packager with the `--rebuild-project` option.
 
@@ -77,9 +78,10 @@ Provide the path to your current extension’s Xcode project file (including the
 
 ## See Also
 
-- [Packaging and distributing Safari Web Extensions with App Store Connect](packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
+### Extension conversions and packaging
+- [Packaging and distributing Safari Web Extensions with App Store Connect](./packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
   Upload and distribute Safari Web Extensions without using a Mac or Xcode.
-- [Converting a Safari app extension to a Safari web extension](converting-a-safari-app-extension-to-a-safari-web-extension.md)
+- [Converting a Safari app extension to a Safari web extension](./converting-a-safari-app-extension-to-a-safari-web-extension.md)
   Unify your web extensions and simplify development by sharing code with a Safari web extension.
 
 

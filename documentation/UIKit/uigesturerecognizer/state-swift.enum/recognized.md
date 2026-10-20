@@ -1,16 +1,17 @@
 # recognized
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The gesture recognizer has received a multitouch sequence that it recognizes as its gesture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,28 +19,33 @@ The gesture recognizer has received a multitouch sequence that it recognizes as 
 static var recognized: UIGestureRecognizer.State { get }
 ```
 
+```c
+UIGestureRecognizerStateRecognized
+```
+
 ## Mentions
 
-- [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
-- [Implementing a discrete gesture recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing a Continuous Gesture Recognizer](../../implementing-a-continuous-gesture-recognizer.md)
+- [Implementing a discrete gesture recognizer](../../implementing-a-discrete-gesture-recognizer.md)
 
 #### Discussion
 
-The gesture recognizer sends its action message (or messages) at the next cycle of the run loop and resets its state to [`UIGestureRecognizer.State.possible`](uigesturerecognizer/state-swift.enum/possible.md).
+The gesture recognizer sends its action message (or messages) at the next cycle of the run loop and resets its state to [`UIGestureRecognizer.State.possible`](./possible.md).
 
 ## See Also
 
-- [UIGestureRecognizer.State.possible](uigesturerecognizer/state-swift.enum/possible.md)
+### Constants
+- [UIGestureRecognizer.State.possible](./possible.md)
   The gesture recognizer hasn’t yet recognized its gesture, but may be evaluating touch events.
-- [UIGestureRecognizer.State.began](uigesturerecognizer/state-swift.enum/began.md)
+- [UIGestureRecognizer.State.began](./began.md)
   The gesture recognizer has received touch objects recognized as a continuous gesture.
-- [UIGestureRecognizer.State.changed](uigesturerecognizer/state-swift.enum/changed.md)
+- [UIGestureRecognizer.State.changed](./changed.md)
   The gesture recognizer has received touches recognized as a change to a continuous gesture.
-- [UIGestureRecognizer.State.ended](uigesturerecognizer/state-swift.enum/ended.md)
+- [UIGestureRecognizer.State.ended](./ended.md)
   The gesture recognizer has received touches recognized as the end of a continuous gesture.
-- [UIGestureRecognizer.State.cancelled](uigesturerecognizer/state-swift.enum/cancelled.md)
+- [UIGestureRecognizer.State.cancelled](./cancelled.md)
   The gesture recognizer has received touches resulting in the cancellation of a continuous gesture.
-- [UIGestureRecognizer.State.failed](uigesturerecognizer/state-swift.enum/failed.md)
+- [UIGestureRecognizer.State.failed](./failed.md)
   The gesture recognizer has received a multi-touch sequence that it can’t recognize as its gesture.
 
 

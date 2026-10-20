@@ -1,7 +1,8 @@
 # machineLearningFunctionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the function that the machine learning pipeline you create from this descriptor executes.
 
@@ -18,6 +19,10 @@ Assigns the function that the machine learning pipeline you create from this des
 ```swift
 @NSCopying
 var machineLearningFunctionDescriptor: MTL4FunctionDescriptor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * machineLearningFunctionDescriptor;
 ```
 
 

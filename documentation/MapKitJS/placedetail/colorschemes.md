@@ -1,28 +1,32 @@
 # ColorSchemes
 
 **Framework**: MapKit JS  
-**Kind**: var
+**Kind**: var  
+**Role**: Static Property
 
 A static property that allows you to access the Look Around color scheme enumeration.
 
 **Availability**:
-- MapKit JS 5.78.1+
+- MapKit JS 5.78.1+ - Deprecated in 6.0
+
+> **Deprecated**: Please use mapkit.ColorScheme instead.
 
 ## Declaration
 
-```swift
+```
 static get ColorSchemes(): typeof ColorScheme;
 ```
 
 ## See Also
 
-- [colorScheme](placedetail/colorscheme.md)
+### Working with place detail settings
+- [colorScheme](./colorscheme.md)
   The color scheme when displaying a place detail.
-- [displaysMap](placedetail/displaysmap.md)
+- [displaysMap](./displaysmap.md)
   A Boolean value that indicates whether to display the map in the place detail.
-- [element](placedetail/element.md)
+- [element](./element.md)
   The place detail’s DOM element.
-- [place](placedetail/place.md)
+- [place](./place.md)
   The place that the place detail displays.
 
 

@@ -1,7 +1,8 @@
 # buildIf(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces an optional slider content for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
 

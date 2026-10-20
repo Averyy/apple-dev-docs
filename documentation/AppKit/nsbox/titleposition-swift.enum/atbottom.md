@@ -1,15 +1,20 @@
 # NSBox.TitlePosition.atBottom
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case atBottom
+```
+
+```c
+NSAtBottom
 ```
 
 #### Discussion
@@ -18,12 +23,13 @@ Title positioned within the box’s bottom border.
 
 ## See Also
 
-- [NSBox.TitlePosition.noTitle](nsbox/titleposition-swift.enum/notitle.md)
-- [NSBox.TitlePosition.aboveTop](nsbox/titleposition-swift.enum/abovetop.md)
-- [NSBox.TitlePosition.atTop](nsbox/titleposition-swift.enum/attop.md)
-- [NSBox.TitlePosition.belowTop](nsbox/titleposition-swift.enum/belowtop.md)
-- [NSBox.TitlePosition.aboveBottom](nsbox/titleposition-swift.enum/abovebottom.md)
-- [NSBox.TitlePosition.belowBottom](nsbox/titleposition-swift.enum/belowbottom.md)
+### Constants
+- [NSBox.TitlePosition.noTitle](./notitle.md)
+- [NSBox.TitlePosition.aboveTop](./abovetop.md)
+- [NSBox.TitlePosition.atTop](./attop.md)
+- [NSBox.TitlePosition.belowTop](./belowtop.md)
+- [NSBox.TitlePosition.aboveBottom](./abovebottom.md)
+- [NSBox.TitlePosition.belowBottom](./belowbottom.md)
 
 
 ---

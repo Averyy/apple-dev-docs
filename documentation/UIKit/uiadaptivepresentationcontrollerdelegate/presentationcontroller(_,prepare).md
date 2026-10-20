@@ -1,7 +1,8 @@
 # presentationController(_:prepare:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to configure the adaptive presentation controller after an adaptivity change.
 
@@ -16,6 +17,10 @@ Provides an opportunity to configure the adaptive presentation controller after 
 
 ```swift
 optional func presentationController(_ presentationController: UIPresentationController, prepare adaptivePresentationController: UIPresentationController)
+```
+
+```objc
+- (void) presentationController:(UIPresentationController *) presentationController prepareAdaptivePresentationController:(UIPresentationController *) adaptivePresentationController;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # writeAttributeNullableBitmap32(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeNullableBitmap32(withValue value: NSNumber?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeNullableBitmap32(withValue value: NSNumber?) async throws
+```
+
+```objc
+- (void) writeAttributeNullableBitmap32WithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

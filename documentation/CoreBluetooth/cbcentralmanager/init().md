@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the central manager without a delegate.
 
@@ -20,15 +21,20 @@ Initializes the central manager without a delegate.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?)](cbcentralmanager/init(delegate:queue:).md)
+### Initializing a Central Manager
+- [convenience init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?)](./init%28delegate,queue%29.md)
   Initializes the central manager with a specified delegate and dispatch queue.
-- [init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](cbcentralmanager/init(delegate:queue:options:).md)
+- [init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](./init%28delegate,queue,options%29.md)
   Initializes the central manager with specified delegate, dispatch queue, and initialization options.
-- [Central Manager Initialization Options](central-manager-initialization-options.md)
+- [Central Manager Initialization Options](../central-manager-initialization-options.md)
   Keys used to pass options when initializing a central manager.
-- [Central Manager State Restoration Options](central-manager-state-restoration-options.md)
+- [Central Manager State Restoration Options](../central-manager-state-restoration-options.md)
   Restore central manager state in scene-based apps.
 
 

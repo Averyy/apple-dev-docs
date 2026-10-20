@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the string with an OSObject
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
@@ -31,7 +32,8 @@ If the object is of class OSNumber, the result of isEqualTo(const OSNumber * aDa
 
 ## See Also
 
-- [isEqualTo](osnumber/isequalto-58rb9.md)
+### Comparing Numbers
+- [isEqualTo](./isequalto-58rb9.md)
   Compares the number with an OSNumber.
 
 

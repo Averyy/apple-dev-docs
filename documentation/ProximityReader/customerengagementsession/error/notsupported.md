@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.notSupported
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current device or the environment doesn’t support this feature.
 

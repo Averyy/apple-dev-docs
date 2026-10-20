@@ -1,9 +1,10 @@
 # tabView
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A background placement inside a [`TabView`](tabview.md).
+A background placement inside a [`TabView`](../tabview.md).
 
 **Availability**:
 - watchOS 10.0+
@@ -16,9 +17,10 @@ static let tabView: ContainerBackgroundPlacement
 
 ## See Also
 
-- [static let navigation: ContainerBackgroundPlacement](containerbackgroundplacement/navigation.md)
-  A background placement inside a [`NavigationStack`](navigationstack.md) or [`NavigationSplitView`](navigationsplitview.md).
-- [static let widget: ContainerBackgroundPlacement](containerbackgroundplacement/widget.md)
+### Getting placements
+- [static let navigation: ContainerBackgroundPlacement](./navigation.md)
+  A background placement inside a [`NavigationStack`](../navigationstack.md) or [`NavigationSplitView`](../navigationsplitview.md).
+- [static let widget: ContainerBackgroundPlacement](./widget.md)
   The container background placement for a widget.
 
 

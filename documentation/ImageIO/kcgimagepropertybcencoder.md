@@ -1,7 +1,8 @@
 # kCGImagePropertyBCEncoder
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImagePropertyBCEncoder: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyBCEncoder;
 ```
 
 

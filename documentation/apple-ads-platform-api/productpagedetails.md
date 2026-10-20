@@ -1,7 +1,8 @@
 # ProductPageDetails
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
 
@@ -10,7 +11,7 @@ Product page metadata for a Default Product Page, Custom Product Page, or Produc
 
 ## Declaration
 
-```swift
+```
 object ProductPageDetails
 ```
 
@@ -44,15 +45,15 @@ The `ProductPageDetails` object describes a product page associated with an app.
 
 ## See Also
 
-- [object ProductPageDetailsResponse](productpagedetailsresponse.md)
+- [object ProductPageDetailsResponse](./productpagedetailsresponse.md)
   Response object for a single product page retrieval.
-- [object ProductPageDetailsQueryResponse](productpagedetailsqueryresponse.md)
+- [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)
   Paginated response object for the product page details query.
-- [object ProductPageLocaleDetails](productpagelocaledetails.md)
+- [object ProductPageLocaleDetails](./productpagelocaledetails.md)
   Locale-specific metadata for an App Store product page.
-- [object ProductPageLocaleDetailsQueryResponse](productpagelocaledetailsqueryresponse.md)
+- [object ProductPageLocaleDetailsQueryResponse](./productpagelocaledetailsqueryresponse.md)
   Paginated response object for the product page locale details query.
-- [object DeviceAssetGroup](deviceassetgroup.md)
+- [object DeviceAssetGroup](./deviceassetgroup.md)
   Represents assets organized by device type with fallback device information.
 
 

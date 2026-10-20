@@ -1,7 +1,8 @@
 # incompatibleTemporaryDirectoryContents
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the contents of the specified temporary files directory are inconsistent with the current resuming export.
 
@@ -19,17 +20,22 @@ Indicates that the contents of the specified temporary files directory are incon
 static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason
 ```
 
+```c
+extern AVAssetExportSessionResumptionFailureReason const AVAssetExportSessionResumptionFailureReasonIncompatibleTemporaryDirectoryContents;
+```
+
 #### Discussion
 
 You’re likely aliasing two distinct exports together. Use a unique temporary files directory for each export, or clear the directory before resuming.
 
 ## See Also
 
-- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatiblesessionsettings.md)
+### Failure reasons
+- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](./incompatiblesessionsettings.md)
   Indicates the export session settings are incompatible with resumable export.
-- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/temporarydirectorydoesnotexist.md)
+- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](./temporarydirectorydoesnotexist.md)
   Indicates that the specified temporary files directory doesn’t exist.
-- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/unsupportedforpresetonplatform.md)
+- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](./unsupportedforpresetonplatform.md)
   Indicates that resumption isn’t supported for this preset and platform combination.
 
 

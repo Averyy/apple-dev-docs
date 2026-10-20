@@ -1,18 +1,19 @@
 # CFWriteStreamCreateWithBuffer(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a writable stream for a fixed-size block of memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,19 @@ Creates a writable stream for a fixed-size block of memory.
 func CFWriteStreamCreateWithBuffer(_ alloc: CFAllocator!, _ buffer: UnsafeMutablePointer<UInt8>!, _ bufferCapacity: CFIndex) -> CFWriteStream!
 ```
 
+```c
+extern CFWriteStreamRefCFWriteStreamCreateWithBuffer(CFAllocatorRef alloc, UInt8 *buffer, CFIndex bufferCapacity);
+```
+
 #### Return Value
 
-A new write stream, or `NULL` on failure. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new write stream, or `NULL` on failure. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
-When `buffer` is filled after writing `bufferCapacity` bytes, the stream is exhausted and its status becomes [`CFStreamStatus.atEnd`](cfstreamstatus/atend.md).
+When `buffer` is filled after writing `bufferCapacity` bytes, the stream is exhausted and its status becomes [`CFStreamStatus.atEnd`](./cfstreamstatus/atend.md).
 
-You must open the stream, using [`CFWriteStreamOpen(_:)`](cfwritestreamopen(_:).md), before writing to it.
+You must open the stream, using [`CFWriteStreamOpen(_:)`](./cfwritestreamopen%28_%29.md), before writing to it.
 
 ## Parameters
 
@@ -38,9 +43,10 @@ You must open the stream, using [`CFWriteStreamOpen(_:)`](cfwritestreamopen(_:).
 
 ## See Also
 
-- [func CFWriteStreamCreateWithAllocatedBuffers(CFAllocator!, CFAllocator!) -> CFWriteStream!](cfwritestreamcreatewithallocatedbuffers(_:_:).md)
+### Creating a Write Stream
+- [func CFWriteStreamCreateWithAllocatedBuffers(CFAllocator!, CFAllocator!) -> CFWriteStream!](./cfwritestreamcreatewithallocatedbuffers%28_,_%29.md)
   Creates a writable stream for a growable block of memory.
-- [func CFWriteStreamCreateWithFile(CFAllocator!, CFURL!) -> CFWriteStream!](cfwritestreamcreatewithfile(_:_:).md)
+- [func CFWriteStreamCreateWithFile(CFAllocator!, CFURL!) -> CFWriteStream!](./cfwritestreamcreatewithfile%28_,_%29.md)
   Creates a writable stream for a file.
 
 

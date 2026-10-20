@@ -1,26 +1,28 @@
 # bU1DevExitLat
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bU1DevExitLat;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilitysuperspeedusb/blength.md)
-- [bDescriptorType](iousbdevicecapabilitysuperspeedusb/bdescriptortype.md)
-- [bDevCapabilityType](iousbdevicecapabilitysuperspeedusb/bdevcapabilitytype.md)
-- [bmAttributes](iousbdevicecapabilitysuperspeedusb/bmattributes.md)
-- [wSpeedsSupported](iousbdevicecapabilitysuperspeedusb/wspeedssupported.md)
-- [bFunctionalitySupport](iousbdevicecapabilitysuperspeedusb/bfunctionalitysupport.md)
-- [wU2DevExitLat](iousbdevicecapabilitysuperspeedusb/wu2devexitlat.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bDevCapabilityType](./bdevcapabilitytype.md)
+- [bmAttributes](./bmattributes.md)
+- [wSpeedsSupported](./wspeedssupported.md)
+- [bFunctionalitySupport](./bfunctionalitysupport.md)
+- [wU2DevExitLat](./wu2devexitlat.md)
 
 
 ---

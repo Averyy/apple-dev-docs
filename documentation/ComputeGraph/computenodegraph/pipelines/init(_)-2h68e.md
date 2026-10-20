@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Compute Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Assembles and compiles pipelines from the provided graph.
 
@@ -12,7 +13,7 @@ Assembles and compiles pipelines from the provided graph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

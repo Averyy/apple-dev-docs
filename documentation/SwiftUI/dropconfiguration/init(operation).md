@@ -1,7 +1,8 @@
 # init(operation:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration value with the operation chosen by the drop destination.
 

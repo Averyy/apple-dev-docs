@@ -1,15 +1,18 @@
 # UIImagePickerController.ImageURLExportPreset
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate how to export images to the client app.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
 
 ## Declaration
 
@@ -17,31 +20,36 @@ Constants that indicate how to export images to the client app.
 enum ImageURLExportPreset
 ```
 
+```c
+enum UIImagePickerControllerImageURLExportPreset : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIImagePickerController.ImageURLExportPreset.compatible](uiimagepickercontroller/imageurlexportpreset/compatible.md)
+- [UIImagePickerController.ImageURLExportPreset.compatible](./imageurlexportpreset/compatible.md)
   A preset for converting HEIF formatted images to JPEG.
-- [UIImagePickerController.ImageURLExportPreset.current](uiimagepickercontroller/imageurlexportpreset/current.md)
+- [UIImagePickerController.ImageURLExportPreset.current](./imageurlexportpreset/current.md)
   A preset for passing image data as-is to the client.
 ### Initializers
-- [init?(rawValue: Int)](uiimagepickercontroller/imageurlexportpreset/init(rawvalue:).md)
+- [init?(rawValue: Int)](./imageurlexportpreset/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var imageExportPreset: UIImagePickerController.ImageURLExportPreset](uiimagepickercontroller/imageexportpreset.md)
+### Deprecated
+- [var imageExportPreset: UIImagePickerController.ImageURLExportPreset](./imageexportpreset.md)
   The preset to use when preparing images for export to your app.
-- [var videoExportPreset: String](uiimagepickercontroller/videoexportpreset.md)
+- [var videoExportPreset: String](./videoexportpreset.md)
   The preset to use when preparing video for export to your app.
 
 

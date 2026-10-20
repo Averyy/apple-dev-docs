@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the audio file.
 
@@ -16,6 +17,10 @@ The URL of the audio file.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSURL * URL;
 ```
 
 

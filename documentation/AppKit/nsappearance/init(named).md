@@ -1,7 +1,8 @@
 # init(named:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an appearance object based on the name of one of the standard system appearances.
 
@@ -14,23 +15,28 @@ Creates an appearance object based on the name of one of the standard system app
 init?(named name: NSAppearance.Name)
 ```
 
+```objc
++ (NSAppearance *) appearanceNamed:(NSAppearanceName) name;
+```
+
 #### Return Value
 
-A standard [`NSAppearance`](nsappearance.md) object.
+A standard [`NSAppearance`](../nsappearance.md) object.
 
 #### Discussion
 
-When you specify a standard appearance name—such as [`aqua`](nsappearance/name-swift.struct/aqua.md)—this method returns a built-in appearance.
+When you specify a standard appearance name—such as [`aqua`](./name-swift.struct/aqua.md)—this method returns a built-in appearance.
 
 ## Parameters
 
-- `name`: The name of a standard appearance. See [`NSAppearance.Name`](nsappearance/name-swift.struct.md) for the list of standard appearance names.
+- `name`: The name of a standard appearance. See [`NSAppearance.Name`](./name-swift.struct.md) for the list of standard appearance names.
 
 ## See Also
 
-- [init?(appearanceNamed: NSAppearance.Name, bundle: Bundle?)](nsappearance/init(appearancenamed:bundle:).md)
+### Creating an Appearance
+- [init?(appearanceNamed: NSAppearance.Name, bundle: Bundle?)](./init%28appearancenamed,bundle%29.md)
   Creates an appearance object from the named appearance file located in the specified bundle.
-- [init?(coder: NSCoder)](nsappearance/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

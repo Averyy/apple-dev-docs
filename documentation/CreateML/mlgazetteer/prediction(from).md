@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts the label for the given term.
 
@@ -24,11 +25,12 @@ A label.
 
 ## See Also
 
-- [func predictions(from:)](mlgazetteer/predictions(from:).md)
+### Testing a gazetteer
+- [func predictions(from:)](./predictions%28from%29.md)
   Predicts the labels for the given terms.
-- [func predictions(from: [String]) throws -> [String]](mlgazetteer/predictions(from:)-2rej.md)
+- [func predictions(from: [String]) throws -> [String]](./predictions%28from%29-2rej.md)
   Predicts the labels for the given terms.
-- [func predictions(from: MLDataColumn<String>) throws -> MLDataColumn<String>](mlgazetteer/predictions(from:)-2jaui.md)
+- [func predictions(from: MLDataColumn<String>) throws -> MLDataColumn<String>](./predictions%28from%29-2jaui.md)
   Predicts the labels for the given terms in the table column.
 
 

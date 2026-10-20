@@ -1,7 +1,8 @@
 # bReservedID
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved for future use.
 
@@ -10,19 +11,20 @@ Reserved for future use.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bReservedID;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilitycontainerid/1546211-blength.md)
+### Getting the Properties
+- [bLength](./api-1546211-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdevicecapabilitycontainerid/1546207-bdescriptortype.md)
+- [bDescriptorType](./api-1546207-bdescriptortype.md)
   The type of the descriptor.
-- [bDevCapabilityType](iousbdevicecapabilitycontainerid/1546363-bdevcapabilitytype.md)
+- [bDevCapabilityType](./api-1546363-bdevcapabilitytype.md)
   The device capability type.
-- [containerID](iousbdevicecapabilitycontainerid/1545924-containerid.md)
+- [containerID](./api-1545924-containerid.md)
   A number that uniquely identifies the device instance across all modes of operation.
 
 

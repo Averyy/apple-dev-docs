@@ -1,7 +1,8 @@
 # loadMetadata()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the metadata for the store.
 
@@ -10,7 +11,7 @@ Loads the metadata for the store.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Loads the metadata for the store.
 
 ```swift
 func loadMetadata() throws
+```
+
+```objc
+- (BOOL) loadMetadata:(NSError **) error;
 ```
 
 #### Discussion
@@ -28,8 +33,10 @@ Any subclass of `NSIncrementalStore` which is file-based must be able to handle 
 
 ## See Also
 
-- [Incremental Store Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/IncrementalStorePG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010706)
-- [class func identifierForNewStore(at: URL) -> Any](nsincrementalstore/identifierfornewstore(at:).md)
+### Related Documentation
+- [Incremental Store Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/IncrementalStorePG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010706)
+### Accessing Metadata
+- [class func identifierForNewStore(at: URL) -> Any](./identifierfornewstore%28at%29.md)
   Returns the identifier for the store at a given URL.
 
 

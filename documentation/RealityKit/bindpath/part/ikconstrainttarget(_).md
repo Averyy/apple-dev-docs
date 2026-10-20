@@ -1,7 +1,8 @@
 # BindPath.Part.ikConstraintTarget(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A path component to an IK solver’s constraint target transform.
 

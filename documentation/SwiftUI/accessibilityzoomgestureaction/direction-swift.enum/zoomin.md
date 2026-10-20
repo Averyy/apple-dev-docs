@@ -1,7 +1,8 @@
 # AccessibilityZoomGestureAction.Direction.zoomIn
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The gesture direction that represents zooming in.
 
@@ -22,7 +23,8 @@ case zoomIn
 
 ## See Also
 
-- [AccessibilityZoomGestureAction.Direction.zoomOut](accessibilityzoomgestureaction/direction-swift.enum/zoomout.md)
+### Getting the direction
+- [AccessibilityZoomGestureAction.Direction.zoomOut](./zoomout.md)
   The gesture direction that represents zooming out.
 
 

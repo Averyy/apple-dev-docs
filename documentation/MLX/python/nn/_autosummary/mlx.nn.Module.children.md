@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.children
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Module.children.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Module.children
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Module.children
-
 **Module.children()**
 : Return the direct descendants of this Module instance.
-
-** Contents

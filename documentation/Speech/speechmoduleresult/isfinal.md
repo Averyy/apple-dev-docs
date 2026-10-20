@@ -1,7 +1,8 @@
 # isFinal
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this result is final at the time it is produced.
 
@@ -28,7 +29,8 @@ Equivalent to `resultsFinalizationTime >= range.end`.
 
 ## See Also
 
-- [var resultsFinalizationTime: CMTime](speechmoduleresult/resultsfinalizationtime.md)
+### Getting finalization state
+- [var resultsFinalizationTime: CMTime](./resultsfinalizationtime.md)
   The audio input time up to which results from this module have been finalized (after this result). The module’s results are final up to but not including this time.
 
 

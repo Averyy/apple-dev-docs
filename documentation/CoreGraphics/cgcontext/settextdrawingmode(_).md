@@ -1,7 +1,8 @@
 # setTextDrawingMode(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current text drawing mode.
 
@@ -10,7 +11,7 @@ Sets the current text drawing mode.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,40 +21,45 @@ Sets the current text drawing mode.
 func setTextDrawingMode(_ mode: CGTextDrawingMode)
 ```
 
+```c
+extern void CGContextSetTextDrawingMode(CGContextRef c, CGTextDrawingMode mode);
+```
+
 ## Parameters
 
-- `mode`: A text drawing mode (such as [`CGTextDrawingMode.fill`](cgtextdrawingmode/fill.md) or [`CGTextDrawingMode.stroke`](cgtextdrawingmode/stroke.md)) that specifies how Core Graphics renders individual glyphs in a graphics context. See [`CGTextDrawingMode`](cgtextdrawingmode.md) for a complete list.
+- `mode`: A text drawing mode (such as [`CGTextDrawingMode.fill`](../cgtextdrawingmode/fill.md) or [`CGTextDrawingMode.stroke`](../cgtextdrawingmode/stroke.md)) that specifies how Core Graphics renders individual glyphs in a graphics context. See [`CGTextDrawingMode`](../cgtextdrawingmode.md) for a complete list.
 
 ## See Also
 
-- [var textMatrix: CGAffineTransform](cgcontext/textmatrix.md)
+### Drawing Text
+- [var textMatrix: CGAffineTransform](./textmatrix.md)
   Returns the current text matrix.
-- [var textPosition: CGPoint](cgcontext/textposition.md)
-- [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](cgcontext/selectfont(name:size:textencoding:).md)
+- [var textPosition: CGPoint](./textposition.md)
+- [func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextEncoding)](./selectfont%28name,size,textencoding%29.md)
   Sets the font and font size in a graphics context.
-- [func setCharacterSpacing(CGFloat)](cgcontext/setcharacterspacing(_:).md)
+- [func setCharacterSpacing(CGFloat)](./setcharacterspacing%28_%29.md)
   Sets the current character spacing.
-- [func setFont(CGFont)](cgcontext/setfont(_:).md)
+- [func setFont(CGFont)](./setfont%28_%29.md)
   Sets the platform font in a graphics context.
-- [func setFontSize(CGFloat)](cgcontext/setfontsize(_:).md)
+- [func setFontSize(CGFloat)](./setfontsize%28_%29.md)
   Sets the current font size.
-- [func setAllowsFontSmoothing(Bool)](cgcontext/setallowsfontsmoothing(_:).md)
+- [func setAllowsFontSmoothing(Bool)](./setallowsfontsmoothing%28_%29.md)
   Sets whether or not to allow font smoothing for a graphics context.
-- [func setAllowsFontSubpixelPositioning(Bool)](cgcontext/setallowsfontsubpixelpositioning(_:).md)
+- [func setAllowsFontSubpixelPositioning(Bool)](./setallowsfontsubpixelpositioning%28_%29.md)
   Sets whether or not to allow subpixel positioning for a graphics context.
-- [func setAllowsFontSubpixelQuantization(Bool)](cgcontext/setallowsfontsubpixelquantization(_:).md)
+- [func setAllowsFontSubpixelQuantization(Bool)](./setallowsfontsubpixelquantization%28_%29.md)
   Sets whether or not to allow subpixel quantization for a graphics context.
-- [func setShouldSmoothFonts(Bool)](cgcontext/setshouldsmoothfonts(_:).md)
+- [func setShouldSmoothFonts(Bool)](./setshouldsmoothfonts%28_%29.md)
   Enables or disables font smoothing in a graphics context.
-- [func setShouldSubpixelPositionFonts(Bool)](cgcontext/setshouldsubpixelpositionfonts(_:).md)
+- [func setShouldSubpixelPositionFonts(Bool)](./setshouldsubpixelpositionfonts%28_%29.md)
   Enables or disables subpixel positioning in a graphics context.
-- [func setShouldSubpixelQuantizeFonts(Bool)](cgcontext/setshouldsubpixelquantizefonts(_:).md)
+- [func setShouldSubpixelQuantizeFonts(Bool)](./setshouldsubpixelquantizefonts%28_%29.md)
   Enables or disables subpixel quantization in a graphics context.
-- [func showGlyphs(g: UnsafePointer<CGGlyph>?, count: Int)](cgcontext/showglyphs(g:count:).md)
+- [func showGlyphs(g: UnsafePointer<CGGlyph>?, count: Int)](./showglyphs%28g,count%29.md)
   Displays an array of glyphs at the current text position.
-- [func showGlyphs([CGGlyph], at: [CGPoint])](cgcontext/showglyphs(_:at:).md)
+- [func showGlyphs([CGGlyph], at: [CGPoint])](./showglyphs%28_,at%29.md)
   Draws a set of glyphs at a set of corresponding positions.
-- [func showGlyphsAtPoint(x: CGFloat, y: CGFloat, glyphs: UnsafePointer<CGGlyph>?, count: Int)](cgcontext/showglyphsatpoint(x:y:glyphs:count:).md)
+- [func showGlyphsAtPoint(x: CGFloat, y: CGFloat, glyphs: UnsafePointer<CGGlyph>?, count: Int)](./showglyphsatpoint%28x,y,glyphs,count%29.md)
   Displays an array of glyphs at a position you specify.
 
 

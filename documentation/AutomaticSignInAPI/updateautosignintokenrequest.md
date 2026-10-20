@@ -1,7 +1,8 @@
 # UpdateAutoSignInTokenRequest
 
 **Framework**: Automatic Sign-In API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body that contains the old sign-in token and the new sign-in token.
 
@@ -10,22 +11,23 @@ The request body that contains the old sign-in token and the new sign-in token.
 
 ## Declaration
 
-```swift
+```
 object UpdateAutoSignInTokenRequest
 ```
 
 #### Overview
 
-This is the request object for the [`Update Sign-In Token`](update-this-token-for-all-associated-users.md) endpoint.
+This is the request object for the [`Update Sign-In Token`](./update-this-token-for-all-associated-users.md) endpoint.
 
 ## Properties
 
-- `existingAutoSignInTokenValue` (string): The sign-in token [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsautosignintoken/value) that needs to be updated.
-- `newAutoSignInTokenValue` (string): The new sign-in token [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsautosignintoken/value).
+- `existingAutoSignInTokenValue` (string): The sign-in token [`value`](../VideoSubscriberAccount/vsautosignintoken/value.md) that needs to be updated.
+- `newAutoSignInTokenValue` (string): The new sign-in token [`value`](../VideoSubscriberAccount/vsautosignintoken/value.md).
 
 ## See Also
 
-- [Update Sign-In Token](update-this-token-for-all-associated-users.md)
+### Token updates
+- [Update Sign-In Token](./update-this-token-for-all-associated-users.md)
   Updates a specific sign-in token to a new value.
 
 

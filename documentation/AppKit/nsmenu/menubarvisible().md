@@ -1,12 +1,13 @@
 # menuBarVisible()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the menu bar is visible.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ Returns a Boolean value that indicates whether the menu bar is visible.
 class func menuBarVisible() -> Bool
 ```
 
+```objc
++ (BOOL) menuBarVisible;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the menu bar is visible and selectable, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the menu bar is visible and selectable, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class func setMenuBarVisible(Bool)](nsmenu/setmenubarvisible(_:).md)
+### Related Documentation
+- [class func setMenuBarVisible(Bool)](./setmenubarvisible%28_%29.md)
   Sets whether the menu bar is visible and selectable by the user.
-- [class func setMenuBarVisible(Bool)](nsmenu/setmenubarvisible(_:).md)
+### Managing the Menu Bar
+- [class func setMenuBarVisible(Bool)](./setmenubarvisible%28_%29.md)
   Sets whether the menu bar is visible and selectable by the user.
-- [var menuBarHeight: CGFloat](nsmenu/menubarheight.md)
+- [var menuBarHeight: CGFloat](./menubarheight.md)
   The menu bar height for the main menu in pixels.
 
 

@@ -1,7 +1,8 @@
 # maximumImageSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum size of a list item’s image and accessory image.
 
@@ -16,23 +17,28 @@ The maximum size of a list item’s image and accessory image.
 class var maximumImageSize: CGSize { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) CGSize maximumImageSize;
+```
+
 #### Discussion
 
 At runtime, use this value to determine the maximum size for a list item’s image and accessory image.
 
 ## See Also
 
-- [var text: String?](cplistitem/text.md)
+### Managing Content
+- [var text: String?](./text.md)
   The list item’s primary text.
-- [func setText(String)](cplistitem/settext(_:).md)
+- [func setText(String)](./settext%28_%29.md)
   Updates the list item’s primary text.
-- [var detailText: String?](cplistitem/detailtext.md)
+- [var detailText: String?](./detailtext.md)
   The list item’s secondary text.
-- [func setDetailText(String?)](cplistitem/setdetailtext(_:).md)
+- [func setDetailText(String?)](./setdetailtext%28_%29.md)
   Updates the list item’s secondary text.
-- [var image: UIImage?](cplistitem/image.md)
+- [var image: UIImage?](./image.md)
   The image that the list item displays in its leading region.
-- [func setImage(UIImage?)](cplistitem/setimage(_:).md)
+- [func setImage(UIImage?)](./setimage%28_%29.md)
   Updates the list item’s image.
 
 

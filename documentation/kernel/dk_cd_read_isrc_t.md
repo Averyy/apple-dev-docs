@@ -1,23 +1,24 @@
 # dk_cd_read_isrc_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 typedef struct dk_cd_read_isrc_t dk_cd_read_isrc_t;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [isrc](dk_cd_read_isrc_t/1459426-isrc.md)
-- [reserved0112](dk_cd_read_isrc_t/1459466-reserved0112.md)
-- [track](dk_cd_read_isrc_t/1459398-track.md)
+- [isrc](./dk_cd_read_isrc_t/api-1459426-isrc.md)
+- [reserved0112](./dk_cd_read_isrc_t/api-1459466-reserved0112.md)
+- [track](./dk_cd_read_isrc_t/api-1459398-track.md)
 
 
 ---

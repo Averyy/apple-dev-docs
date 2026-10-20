@@ -1,7 +1,8 @@
 # flatten(channelOrdering:backgroundColor:isPremultiplied:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms an 32-bit-per-channel RGBA or ARGB buffer to an RGB buffer against an opaque background color.
 
@@ -11,7 +12,7 @@ Transforms an 32-bit-per-channel RGBA or ARGB buffer to an RGB buffer against an
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Transforms an 32-bit-per-channel RGBA or ARGB buffer to an RGB buffer against an
 ```swift
 func flatten(channelOrdering: vImage.ChannelOrdering, backgroundColor: Pixel_FFFF, isPremultiplied: Bool, destination: vImage.PixelBuffer<vImage.InterleavedFx3>)
 ```
+
+Available when `Format` is `vImage.InterleavedFx4`.
 
 ## Parameters
 
@@ -29,9 +32,10 @@ func flatten(channelOrdering: vImage.ChannelOrdering, backgroundColor: Pixel_FFF
 
 ## See Also
 
-- [func flatten(channelOrdering: vImage.ChannelOrdering, backgroundColor: Pixel_8888, isPremultiplied: Bool, destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](vimage/pixelbuffer/flatten(channelordering:backgroundcolor:ispremultiplied:destination:)-97nx.md)
+### Flattening Channels
+- [func flatten(channelOrdering: vImage.ChannelOrdering, backgroundColor: Pixel_8888, isPremultiplied: Bool, destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](./flatten%28channelordering,backgroundcolor,ispremultiplied,destination%29-97nx.md)
   Transforms an 8-bit-per-channel RGBA or ARGB buffer to an RGB buffer against an opaque background color.
-- [vImage.ChannelOrdering](vimage/channelordering.md)
+- [vImage.ChannelOrdering](../channelordering.md)
   Constants that specify the channel ordering of a pixel buffer.
 
 

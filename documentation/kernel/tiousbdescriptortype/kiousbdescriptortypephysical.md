@@ -1,7 +1,8 @@
 # kIOUSBDescriptorTypePhysical
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type for a physical descriptor.
 
@@ -10,15 +11,16 @@ The type for a physical descriptor.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDescriptorTypePhysical = 35
 ```
 
 ## See Also
 
-- [kIOUSBDecriptorTypeHID](tiousbdescriptortype/kiousbdecriptortypehid.md)
+### Getting the Descriptor Type
+- [kIOUSBDecriptorTypeHID](./kiousbdecriptortypehid.md)
   The type for a human interaction device descriptor.
-- [kIOUSBDecriptorTypeReport](tiousbdescriptortype/kiousbdecriptortypereport.md)
+- [kIOUSBDecriptorTypeReport](./kiousbdecriptortypereport.md)
   The type for a report descriptor.
 
 

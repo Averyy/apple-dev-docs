@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a file path from a URL
 

@@ -1,7 +1,8 @@
 # SwiftData
 
 **Framework**: SwiftData  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Write your model code declaratively to add managed persistence and efficient model fetching.
 
@@ -20,118 +21,118 @@ Combining Core Data’s proven persistence technology and Swift’s modern concu
 
 SwiftData has uses beyond persisting locally created content. For example, an app that fetches data from a remote web service might use SwiftData to implement a lightweight caching mechanism and provide limited offline functionality.
 
-![A white Swift logo containing ones and zeros on a blueprint-style background.](/images/com.apple.SwiftData/swiftdata-hero@2x.png)
+![A white Swift logo containing ones and zeros on a blueprint-style background.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/swiftdata-hero@2x.png)
 
-SwiftData is unintrusive by design and supplements your app’s existing model classes. Attach the [`Model()`](model().md) macro to any model class to make it persistable. Customize the behavior of that model’s properties with the [`Attribute(_:originalName:hashModifier:)`](attribute(_:originalname:hashmodifier:).md) and [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macros. Use the [`ModelContext`](modelcontext.md) class to insert, update, and delete instances of that model, and to write unsaved changes to disk.
+SwiftData is unintrusive by design and supplements your app’s existing model classes. Attach the [`Model()`](./model%28%29.md) macro to any model class to make it persistable. Customize the behavior of that model’s properties with the [`Attribute(_:originalName:hashModifier:)`](./attribute%28_,originalname,hashmodifier%29.md) and [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](./relationship%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md) macros. Use the [`ModelContext`](./modelcontext.md) class to insert, update, and delete instances of that model, and to write unsaved changes to disk.
 
-To display models in a SwiftUI view, use the [`Query()`](query().md) macro and specify a predicate or fetch descriptor. SwiftData performs the fetch when the view appears, and tells SwiftUI about any subsequent changes to the fetched models so the view can update accordingly. You can access the model context in any SwiftUI view using the [`modelContext`](https://developer.apple.com/documentation/swiftui/environmentvalues/modelcontext) environment value, and specify a particular model container or context for a view with the [`modelContainer(_:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(_:)) and [`modelContext(_:)`](https://developer.apple.com/documentation/swiftui/view/modelcontext(_:)) view modifiers.
+To display models in a SwiftUI view, use the [`Query()`](./query%28%29.md) macro and specify a predicate or fetch descriptor. SwiftData performs the fetch when the view appears, and tells SwiftUI about any subsequent changes to the fetched models so the view can update accordingly. You can access the model context in any SwiftUI view using the [`modelContext`](../SwiftUI/environmentvalues/modelcontext.md) environment value, and specify a particular model container or context for a view with the [`modelContainer(_:)`](../SwiftUI/view/modelcontainer%28_%29.md) and [`modelContext(_:)`](../SwiftUI/view/modelcontext%28_%29.md) view modifiers.
 
 ## Topics
 
 ### Essentials
-- [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
+- [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
   Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
-- [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
+- [Adding and editing persistent data in your app](./adding-and-editing-persistent-data-in-your-app.md)
   Create a data entry form for collecting and changing data managed by SwiftData.
-- [Adopting SwiftData for a Core Data app](../coredata/adopting-swiftdata-for-a-core-data-app.md)
+- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
   Persist data in your app intuitively with the Swift native persistence framework.
-- [SwiftData updates](../updates/swiftdata.md)
+- [SwiftData updates](../Updates/swiftdata.md)
   Learn about important changes to SwiftData.
-- [Adopting inheritance in SwiftData](adopting-inheritance-in-swiftdata.md)
+- [Adopting inheritance in SwiftData](./adopting-inheritance-in-swiftdata.md)
   Add flexibility to your models using class inheritance.
 ### Model definition
-- [macro Model()](model().md)
+- [macro Model()](./model%28%29.md)
   Converts a Swift class into a stored model that’s managed by SwiftData.
-- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](attribute(_:originalname:hashmodifier:).md)
+- [macro Attribute(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](./attribute%28_,originalname,hashmodifier%29.md)
   Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
-- [macro Unique<T>([PartialKeyPath<T>]...)](unique(_:).md)
+- [macro Unique<T>([PartialKeyPath<T>]...)](./unique%28_%29.md)
   Specifies the key-paths that SwiftData uses to enforce the uniqueness of model instances.
-- [macro Index<T>([PartialKeyPath<T>]...)](index(_:)-74ia2.md)
+- [macro Index<T>([PartialKeyPath<T>]...)](./index%28_%29-74ia2.md)
   Specifies the key-paths that SwiftData uses to create one or more binary indices for the associated model.
-- [macro Index<T>(Schema.Index<T>.Types<T>...)](index(_:)-7d4z0.md)
+- [macro Index<T>(Schema.Index<T>.Types<T>...)](./index%28_%29-7d4z0.md)
   Specifies the key-paths that SwiftData uses to create one or more indicies for the associated model, where each index is either binary or R-tree.
-- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
+- [Defining data relationships with enumerations and model classes](./defining-data-relationships-with-enumerations-and-model-classes.md)
   Create relationships for static and dynamic data stored in your app.
-- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
+- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](./relationship%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md)
   Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
-- [macro Transient()](transient().md)
+- [macro Transient()](./transient%28%29.md)
   Tells SwiftData not to persist the annotated property when managing the owning class.
 ### Model life cycle
-- [class ModelContainer](modelcontainer.md)
+- [class ModelContainer](./modelcontainer.md)
   An object that manages an app’s schema and model storage configuration.
-- [class ModelContext](modelcontext.md)
+- [class ModelContext](./modelcontext.md)
   An object that enables you to fetch, insert, and delete models, and save any changes to disk.
-- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
+- [Fetching and filtering time-based model changes](./fetching-and-filtering-time-based-model-changes.md)
   Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
-- [struct HistoryDescriptor](historydescriptor.md)
+- [struct HistoryDescriptor](./historydescriptor.md)
   A type that describes the criteria, and, optionally, sort order, to use when fetching history data
-- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
+- [Deleting persistent data from your app](./deleting-persistent-data-from-your-app.md)
   Explore different ways to use SwiftData to delete persistent data.
-- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+- [Reverting data changes using the undo manager](./reverting-data-changes-using-the-undo-manager.md)
   Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
+- [Syncing model data across a person’s devices](./syncing-model-data-across-a-persons-devices.md)
   Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
-- [Concurrency support](concurrencysupport.md)
+- [Concurrency support](./concurrencysupport.md)
   Types you use to access model attributes and perform storage-related tasks in a safe and isolated way.
 ### Model fetch
-- [Filtering and sorting persistent data](filtering-and-sorting-persistent-data.md)
+- [Filtering and sorting persistent data](./filtering-and-sorting-persistent-data.md)
   Manage data store presentation using predicates and dynamic queries.
-- [macro Query()](query().md)
+- [macro Query()](./query%28%29.md)
   Fetches all instances of the attached model type.
-- [Additional query macros](additionalquerymacros.md)
+- [Additional query macros](./additionalquerymacros.md)
   Supplementary macros that enable you to narrow query results and tell SwiftData how to sort, order, and section those results.
-- [struct Query](query.md)
+- [struct Query](./query.md)
   A type that fetches models using the specified criteria, and manages those models so they remain in sync with the underlying data.
-- [struct FetchDescriptor](fetchdescriptor.md)
+- [struct FetchDescriptor](./fetchdescriptor.md)
   A type that describes the criteria, sort order, and any additional configuration to use when performing a fetch.
 ### Model storage
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
+- [Maintaining a local copy of server data](./maintaining-a-local-copy-of-server-data.md)
   Create and update a persistent store to cache read-only network data.
-- [class DefaultStore](defaultstore.md)
+- [class DefaultStore](./defaultstore.md)
   A data store that uses Core Data as its undelying storage mechanism.
-- [protocol DataStore](datastore.md)
+- [protocol DataStore](./datastore.md)
   An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
-- [protocol DataStoreBatching](datastorebatching.md)
+- [protocol DataStoreBatching](./datastorebatching.md)
   An interface that enables a custom data store to support batch requests.
-- [protocol HistoryProviding](historyproviding.md)
+- [protocol HistoryProviding](./historyproviding.md)
   An interface that enables a custom data store to provide the history of changes for its persisted models.
-- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
+- [Building a document-based app using SwiftData](../SwiftUI/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [struct ModelDocument](modeldocument.md)
+- [struct ModelDocument](./modeldocument.md)
   A document type that uses SwiftData to manage its storage.
 ### History life cycle
-- [enum HistoryChange](historychange.md)
+- [enum HistoryChange](./historychange.md)
   Values that describe data history transactions.
-- [protocol HistoryDelete](historydelete.md)
+- [protocol HistoryDelete](./historydelete.md)
   An interface that enables a custom data store to delete items from the history of changes to its persisted models.
-- [protocol HistoryInsert](historyinsert.md)
-- [protocol HistoryToken](historytoken.md)
-- [protocol HistoryTransaction](historytransaction.md)
-- [protocol HistoryUpdate](historyupdate.md)
-- [struct HistoryTombstone](historytombstone.md)
-- [struct DefaultHistoryInsert](defaulthistoryinsert.md)
-- [struct DefaultHistoryUpdate](defaulthistoryupdate.md)
-- [struct DefaultHistoryDelete](defaulthistorydelete.md)
-- [struct DefaultHistoryToken](defaulthistorytoken.md)
-- [struct DefaultHistoryTransaction](defaulthistorytransaction.md)
+- [protocol HistoryInsert](./historyinsert.md)
+- [protocol HistoryToken](./historytoken.md)
+- [protocol HistoryTransaction](./historytransaction.md)
+- [protocol HistoryUpdate](./historyupdate.md)
+- [struct HistoryTombstone](./historytombstone.md)
+- [struct DefaultHistoryInsert](./defaulthistoryinsert.md)
+- [struct DefaultHistoryUpdate](./defaulthistoryupdate.md)
+- [struct DefaultHistoryDelete](./defaulthistorydelete.md)
+- [struct DefaultHistoryToken](./defaulthistorytoken.md)
+- [struct DefaultHistoryTransaction](./defaulthistorytransaction.md)
 ### Data store observation
-- [class ResultsObserver](resultsobserver.md)
+- [class ResultsObserver](./resultsobserver.md)
   Observes and tracks changes to a collection of persistent models in a model context.
-- [class HistoryObserver](historyobserver.md)
+- [class HistoryObserver](./historyobserver.md)
   Monitors a model container’s data stores for remote changes and notifies when new history transactions are available.
 ### Codeable support
-- [enum DataStoreSnapshotCodingKey](datastoresnapshotcodingkey.md)
+- [enum DataStoreSnapshotCodingKey](./datastoresnapshotcodingkey.md)
   The key space to use when implementing custom coders and decoders for data store snapshots,
 ### Errors
-- [struct SwiftDataError](swiftdataerror.md)
+- [struct SwiftDataError](./swiftdataerror.md)
   A type that describes a SwiftData error.
-- [enum DataStoreError](datastoreerror.md)
+- [enum DataStoreError](./datastoreerror.md)
   A type that describes a data store error.
 ### Structures
-- [struct ResultsSection](resultssection.md)
+- [struct ResultsSection](./resultssection.md)
   A section of fetched results grouped by a common section key path value.
-- [struct SectionedResults](sectionedresults.md)
-  A `RandomAccessCollection` of [`ResultsSection`](resultssection.md) instances representing sectioned query results.
+- [struct SectionedResults](./sectionedresults.md)
+  A `RandomAccessCollection` of [`ResultsSection`](./resultssection.md) instances representing sectioned query results.
 
 
 ---

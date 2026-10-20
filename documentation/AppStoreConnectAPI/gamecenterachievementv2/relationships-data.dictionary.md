@@ -1,7 +1,8 @@
 # GameCenterAchievementV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,7 +11,7 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementV2.Relationships
 ```
 
@@ -24,13 +25,13 @@ object GameCenterAchievementV2.Relationships
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementV2.Relationships.Activity](gamecenterachievementv2/relationships-data.dictionary/activity-data.dictionary.md)
+- [object GameCenterAchievementV2.Relationships.Activity](./relationships-data.dictionary/activity-data.dictionary.md)
   The data and links that describe the activity of the Game Center achievement v2.
-- [object GameCenterAchievementV2.Relationships.GameCenterDetail](gamecenterachievementv2/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterAchievementV2.Relationships.GameCenterDetail](./relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
   The data that describes the Game Center detail of the Game Center achievement v2.
-- [object GameCenterAchievementV2.Relationships.GameCenterGroup](gamecenterachievementv2/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterAchievementV2.Relationships.GameCenterGroup](./relationships-data.dictionary/gamecentergroup-data.dictionary.md)
   The data that describes the Game Center group of the Game Center achievement v2.
-- [object GameCenterAchievementV2.Relationships.Versions](gamecenterachievementv2/relationships-data.dictionary/versions-data.dictionary.md)
+- [object GameCenterAchievementV2.Relationships.Versions](./relationships-data.dictionary/versions-data.dictionary.md)
   The data and links that describe the versions of the Game Center achievement v2.
 
 ## Properties
@@ -42,7 +43,8 @@ object GameCenterAchievementV2.Relationships
 
 ## See Also
 
-- [object GameCenterAchievementV2.Attributes](gamecenterachievementv2/attributes-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementV2.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Game Center achievement v2 resource.
 
 

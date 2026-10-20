@@ -1,7 +1,8 @@
 # gyroData
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest sample of gyroscope data.
 
@@ -18,25 +19,30 @@ The latest sample of gyroscope data.
 var gyroData: CMGyroData? { get }
 ```
 
+```objc
+@property (readonly, nullable) CMGyroData * gyroData;
+```
+
 ## Mentions
 
-- [Getting raw gyroscope events](getting-raw-gyroscope-events.md)
+- [Getting raw gyroscope events](../getting-raw-gyroscope-events.md)
 
 #### Discussion
 
-If no gyroscope data is available, the value of this property is `nil`. An app that is receiving gyroscope data after calling [`startGyroUpdates()`](cmmotionmanager/startgyroupdates().md) periodically checks the value of this property and processes the gyroscope data.
+If no gyroscope data is available, the value of this property is `nil`. An app that is receiving gyroscope data after calling [`startGyroUpdates()`](./startgyroupdates%28%29.md) periodically checks the value of this property and processes the gyroscope data.
 
 ## See Also
 
-- [var gyroUpdateInterval: TimeInterval](cmmotionmanager/gyroupdateinterval.md)
+### Managing Gyroscope Updates
+- [var gyroUpdateInterval: TimeInterval](./gyroupdateinterval.md)
   The interval, in seconds, for providing gyroscope updates to the block handler.
-- [func startGyroUpdates(to: OperationQueue, withHandler: CMGyroHandler)](cmmotionmanager/startgyroupdates(to:withhandler:).md)
+- [func startGyroUpdates(to: OperationQueue, withHandler: CMGyroHandler)](./startgyroupdates%28to,withhandler%29.md)
   Starts gyroscope updates on an operation queue and with a specified handler.
-- [func startGyroUpdates()](cmmotionmanager/startgyroupdates.md)
+- [func startGyroUpdates()](./startgyroupdates%28%29.md)
   Starts gyroscope updates without a handler.
-- [func stopGyroUpdates()](cmmotionmanager/stopgyroupdates.md)
+- [func stopGyroUpdates()](./stopgyroupdates%28%29.md)
   Stops gyroscope updates.
-- [typealias CMGyroHandler](cmgyrohandler.md)
+- [typealias CMGyroHandler](../cmgyrohandler.md)
   The type of block callback for handling gyroscope data.
 
 

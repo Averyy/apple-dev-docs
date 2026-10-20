@@ -1,7 +1,8 @@
 # isCenterStageEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether a user or an app enabled Center Stage on a device.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether a user or an app enabled Center Stage on 
 class var isCenterStageEnabled: Bool { get set }
 ```
 
+```objc
+@property (class, getter=isCenterStageEnabled) BOOL centerStageEnabled;
+```
+
 #### Discussion
 
-You can only set this value when Center Stage is under app or cooperative control. Attempting to change the enabled state when the control mode is [`AVCaptureDevice.CenterStageControlMode.user`](avcapturedevice/centerstagecontrolmode-swift.enum/user.md), results in the system throwing an exception.
+You can only set this value when Center Stage is under app or cooperative control. Attempting to change the enabled state when the control mode is [`AVCaptureDevice.CenterStageControlMode.user`](./centerstagecontrolmode-swift.enum/user.md), results in the system throwing an exception.
 
 > **Note**:  When Center Stage is under user or cooperative control, the user may change the feature’s enabled state in Control Center. Key-value observe this property value to monitor these changes.
 
 ## See Also
 
-- [var isCenterStageActive: Bool](avcapturedevice/iscenterstageactive.md)
+### Configuring Center Stage
+- [var isCenterStageActive: Bool](./iscenterstageactive.md)
   A Boolean value that indicates whether Center Stage is active on a device.
-- [var centerStageRectOfInterest: CGRect](avcapturedevice/centerstagerectofinterest.md)
+- [var centerStageRectOfInterest: CGRect](./centerstagerectofinterest.md)
   The effective region within the output pixel buffer to perform Center Stage framing.
-- [class var centerStageControlMode: AVCaptureDevice.CenterStageControlMode](avcapturedevice/centerstagecontrolmode-swift.type.property.md)
+- [class var centerStageControlMode: AVCaptureDevice.CenterStageControlMode](./centerstagecontrolmode-swift.type.property.md)
   A value that indicates the current mode of Center Stage control.
-- [AVCaptureDevice.CenterStageControlMode](avcapturedevice/centerstagecontrolmode-swift.enum.md)
+- [AVCaptureDevice.CenterStageControlMode](./centerstagecontrolmode-swift.enum.md)
   Constants that indicate the current Center Stage control mode.
 
 

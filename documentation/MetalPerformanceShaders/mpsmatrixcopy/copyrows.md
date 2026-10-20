@@ -1,7 +1,8 @@
 # copyRows
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var copyRows: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger copyRows;
 ```
 
 

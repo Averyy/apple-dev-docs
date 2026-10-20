@@ -1,14 +1,15 @@
 # kIO2vuyPixelFormat
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIO2vuyPixelFormat = IO_FOUR_CHAR_CODE('2vuy')
 ```
 

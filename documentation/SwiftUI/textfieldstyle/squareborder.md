@@ -1,12 +1,15 @@
 # squareBorder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A text field style with a system-defined square border.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use `textFieldStyle(.bordered)` instead. As of macOS 26, text fields no longer have a rectangular border.
 
 ## Declaration
 
@@ -15,17 +18,20 @@ A text field style with a system-defined square border.
 static var squareBorder: SquareBorderTextFieldStyle { get }
 ```
 
+Available when `Self` is `SquareBorderTextFieldStyle`.
+
 #### Discussion
 
 As of macOS 26, text fields no longer have a rectangular border.
 
 ## See Also
 
-- [static var roundedBorder: RoundedBorderTextFieldStyle](textfieldstyle/roundedborder.md)
+### Deprecated
+- [static var roundedBorder: RoundedBorderTextFieldStyle](./roundedborder.md)
   A text field style with a system-defined rounded border.
-- [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
+- [struct RoundedBorderTextFieldStyle](../roundedbordertextfieldstyle.md)
   A text field style with a system-defined rounded border.
-- [struct SquareBorderTextFieldStyle](squarebordertextfieldstyle.md)
+- [struct SquareBorderTextFieldStyle](../squarebordertextfieldstyle.md)
   A text field style with a system-defined square border.
 
 

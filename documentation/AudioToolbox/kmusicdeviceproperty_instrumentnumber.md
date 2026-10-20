@@ -1,15 +1,16 @@
 # kMusicDeviceProperty_InstrumentNumber
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kMusicDeviceProperty_InstrumentNumber: AudioUnitPropertyID { get }
 ```
 
+```c
+kMusicDeviceProperty_InstrumentNumber
+```
+
 ## See Also
 
-- [var kMusicDeviceProperty_InstrumentName: AudioUnitPropertyID](kmusicdeviceproperty_instrumentname.md)
+### Constants
+- [var kMusicDeviceProperty_InstrumentName: AudioUnitPropertyID](./kmusicdeviceproperty_instrumentname.md)
 
 
 ---

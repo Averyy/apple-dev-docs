@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ConvolutionPadding
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The padding that you use for convolution operations to specify zero-padding.
 
@@ -23,22 +24,22 @@ enum ConvolutionPadding
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.ConvolutionPadding.custom(padding:)](bnnsgraph/builder/convolutionpadding/custom(padding:).md)
+- [BNNSGraph.Builder.ConvolutionPadding.custom(padding:)](./convolutionpadding/custom%28padding%29.md)
   Custom padding
-- [BNNSGraph.Builder.ConvolutionPadding.lower](bnnsgraph/builder/convolutionpadding/lower.md)
+- [BNNSGraph.Builder.ConvolutionPadding.lower](./convolutionpadding/lower.md)
   Pad the output to look like the input but prefer padding on the top and left.
-- [BNNSGraph.Builder.ConvolutionPadding.same](bnnsgraph/builder/convolutionpadding/same.md)
+- [BNNSGraph.Builder.ConvolutionPadding.same](./convolutionpadding/same.md)
   Pad the output to look like the input
-- [BNNSGraph.Builder.ConvolutionPadding.valid](bnnsgraph/builder/convolutionpadding/valid.md)
+- [BNNSGraph.Builder.ConvolutionPadding.valid](./convolutionpadding/valid.md)
   No padding
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

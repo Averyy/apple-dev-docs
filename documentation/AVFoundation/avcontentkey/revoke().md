@@ -1,7 +1,8 @@
 # revoke()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -18,9 +19,14 @@
 func revoke()
 ```
 
+```objc
+- (void) revoke;
+```
+
 ## See Also
 
-- [var externalContentProtectionStatus: AVExternalContentProtectionStatus](avcontentkey/externalcontentprotectionstatus.md)
+### Inspecting protection status
+- [var externalContentProtectionStatus: AVExternalContentProtectionStatus](./externalcontentprotectionstatus.md)
   The external protection status for the content key based on all attached displays.
 
 

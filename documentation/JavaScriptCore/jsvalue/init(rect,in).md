@@ -1,7 +1,8 @@
 # init(rect:in:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init!(rect: CGRect, in context: JSContext!)
+```
+
+```objc
++ (JSValue *) valueWithRect:(CGRect) rect inContext:(JSContext *) context;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # certificateChainRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func certificateChainRequest(with params: MTROperationalCredentialsClusterCertificateChainRequestParams, completion: @escaping @Sendable (MTROperationalCredentialsClusterCertificateChainResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func certificateChainRequest(with params: MTROperationalCredentialsClusterCertificateChainRequestParams) async throws -> MTROperationalCredentialsClusterCertificateChainResponseParams
+```
+
+```objc
+- (void) certificateChainRequestWithParams:(MTROperationalCredentialsClusterCertificateChainRequestParams *) params completion:(void (^)(MTROperationalCredentialsClusterCertificateChainResponseParams *data, NSError *error)) completion;
 ```
 
 

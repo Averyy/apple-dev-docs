@@ -1,7 +1,8 @@
 # startSystemExtensionMode()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Starts the Network Extension machinery from inside a System Extension.
 
@@ -14,11 +15,15 @@ Starts the Network Extension machinery from inside a System Extension.
 class func startSystemExtensionMode()
 ```
 
+```objc
++ (void) startSystemExtensionMode;
+```
+
 #### Discussion
 
 Call this method as early as possible after your system extension starts.
 
-Once called, this class method causes your system extension to start handling requests from the Network Extension session manager daemon to instantiate appropriate [`NEProvider`](neprovider.md) subclass instances. The system extension must declare a mapping of Network Extension extension points to [`NEProvider`](neprovider.md) subclass instances in its `Info.plist`. The following example shows this mapping:
+Once called, this class method causes your system extension to start handling requests from the Network Extension session manager daemon to instantiate appropriate [`NEProvider`](../neprovider.md) subclass instances. The system extension must declare a mapping of Network Extension extension points to [`NEProvider`](../neprovider.md) subclass instances in its `Info.plist`. The following example shows this mapping:
 
 ```xml
 <key>NetworkExtension</key><dict>

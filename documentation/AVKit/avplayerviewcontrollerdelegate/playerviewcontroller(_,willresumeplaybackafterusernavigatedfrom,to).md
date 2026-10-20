@@ -1,7 +1,8 @@
 # playerViewController(_:willResumePlaybackAfterUserNavigatedFrom:to:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user navigates to a new time and playback is about to begin.
 
@@ -14,11 +15,15 @@ Tells the delegate when the user navigates to a new time and playback is about t
 optional func playerViewController(_ playerViewController: AVPlayerViewController, willResumePlaybackAfterUserNavigatedFrom oldTime: CMTime, to targetTime: CMTime)
 ```
 
+```objc
+- (void) playerViewController:(AVPlayerViewController *) playerViewController willResumePlaybackAfterUserNavigatedFromTime:(CMTime) oldTime toTime:(CMTime) targetTime;
+```
+
 #### Discussion
 
-Unlike the [`timeJumpedNotification`](https://developer.apple.com/documentation/avfoundation/avplayeritem/timejumpednotification) notification, this method fires only for complete, user-initiated navigation events. For example, if the user begins scrubbing through the media timeline and pauses several times before resuming playback, the player view controller calls this method only once.
+Unlike the [`timeJumpedNotification`](../../AVFoundation/avplayeritem/timejumpednotification.md) notification, this method fires only for complete, user-initiated navigation events. For example, if the user begins scrubbing through the media timeline and pauses several times before resuming playback, the player view controller calls this method only once.
 
-You can use this method to present interstitial content before resuming playback, however, it’s recommended to use [`playerViewController(_:timeToSeekAfterUserNavigatedFrom:to:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:timetoseekafterusernavigatedfrom:to:).md) for this purpose.
+You can use this method to present interstitial content before resuming playback, however, it’s recommended to use [`playerViewController(_:timeToSeekAfterUserNavigatedFrom:to:)`](./playerviewcontroller%28_,timetoseekafterusernavigatedfrom,to%29.md) for this purpose.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ You can use this method to present interstitial content before resuming playback
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, timeToSeekAfterUserNavigatedFrom: CMTime, to: CMTime) -> CMTime](avplayerviewcontrollerdelegate/playerviewcontroller(_:timetoseekafterusernavigatedfrom:to:).md)
+### Responding to navigation events
+- [func playerViewController(AVPlayerViewController, timeToSeekAfterUserNavigatedFrom: CMTime, to: CMTime) -> CMTime](./playerviewcontroller%28_,timetoseekafterusernavigatedfrom,to%29.md)
   Tells the delegate when the user skips, scrubs, or otherwise navigates to a new time and wants to resume playback at the target time.
-- [func skipToPreviousItem(for: AVPlayerViewController)](avplayerviewcontrollerdelegate/skiptopreviousitem(for:).md)
+- [func skipToPreviousItem(for: AVPlayerViewController)](./skiptopreviousitem%28for%29.md)
   Tells the delegate when the user requests skipping to the previous item in the timeline.
-- [func skipToNextItem(for: AVPlayerViewController)](avplayerviewcontrollerdelegate/skiptonextitem(for:).md)
+- [func skipToNextItem(for: AVPlayerViewController)](./skiptonextitem%28for%29.md)
   Tells the delegate when the user requests skipping to the next item in the timeline.
 
 

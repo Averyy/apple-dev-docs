@@ -1,7 +1,8 @@
 # MDCopyLabelWithUUID(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDCopyLabelWithUUID(_ labelUUID: CFUUID!) -> MDLabel!
+```
+
+```c
+MDLabelRef MDCopyLabelWithUUID(CFUUIDRef labelUUID);
 ```
 
 

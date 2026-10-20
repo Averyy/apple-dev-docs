@@ -1,7 +1,8 @@
 # MEMessageAction.Flag.orange
 
 **Framework**: MailKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 12.0+
@@ -12,16 +13,21 @@
 case orange
 ```
 
+```c
+MEMessageActionFlagOrange
+```
+
 ## See Also
 
-- [MEMessageAction.Flag.blue](memessageaction/flag/blue.md)
-- [MEMessageAction.Flag.defaultColor](memessageaction/flag/defaultcolor.md)
-- [MEMessageAction.Flag.gray](memessageaction/flag/gray.md)
-- [MEMessageAction.Flag.green](memessageaction/flag/green.md)
-- [MEMessageAction.Flag.none](memessageaction/flag/none.md)
-- [MEMessageAction.Flag.purple](memessageaction/flag/purple.md)
-- [MEMessageAction.Flag.red](memessageaction/flag/red.md)
-- [MEMessageAction.Flag.yellow](memessageaction/flag/yellow.md)
+### Enumeration Cases
+- [MEMessageAction.Flag.blue](./blue.md)
+- [MEMessageAction.Flag.defaultColor](./defaultcolor.md)
+- [MEMessageAction.Flag.gray](./gray.md)
+- [MEMessageAction.Flag.green](./green.md)
+- [MEMessageAction.Flag.none](./none.md)
+- [MEMessageAction.Flag.purple](./purple.md)
+- [MEMessageAction.Flag.red](./red.md)
+- [MEMessageAction.Flag.yellow](./yellow.md)
 
 
 ---

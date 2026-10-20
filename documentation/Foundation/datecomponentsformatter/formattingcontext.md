@@ -1,7 +1,8 @@
 # formattingContext
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Not yet supported.
 
@@ -18,6 +19,10 @@ Not yet supported.
 
 ```swift
 var formattingContext: Formatter.Context { get set }
+```
+
+```objc
+@property NSFormattingContext formattingContext;
 ```
 
 

@@ -1,7 +1,8 @@
 # deleteStores(_:)
 
 **Framework**: Managed Settings  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Deletes the given stores configured by your app if they exist
 

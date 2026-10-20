@@ -1,14 +1,15 @@
 # IFNET_THROTTLE_OFF
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IFNET_THROTTLE_OFF = 0
 ```
 

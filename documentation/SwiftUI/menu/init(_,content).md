@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu that generates its label from a localized string resource.
 
@@ -20,6 +21,20 @@ Creates a menu that generates its label from a localized string resource.
 nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder content: () -> Content) where Label == Text
 ```
 
+Available when `Label` conforms to `View` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content) where Label == Text
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, @ContentBuilder content: () -> Content) where Label == Text, S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: Text resource for the link’s localized title, which describes the contents of the menu.
@@ -27,11 +42,12 @@ nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder conte
 
 ## See Also
 
-- [init(content: () -> Content, label: () -> Label)](menu/init(content:label:).md)
+### Creating a menu from content
+- [init(content: () -> Content, label: () -> Label)](./init%28content,label%29.md)
   Creates a menu with a custom label.
-- [init(_:image:content:)](menu/init(_:image:content:).md)
+- [init(_:image:content:)](./init%28_,image,content%29.md)
   Creates a menu that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:content:)](menu/init(_:systemimage:content:).md)
+- [init(_:systemImage:content:)](./init%28_,systemimage,content%29.md)
   Creates a menu that generates its label from a localized string key and system image.
 
 

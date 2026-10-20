@@ -1,7 +1,8 @@
 # value(as:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the wrapped value if it is of type `T`, otherwise `nil`.
 

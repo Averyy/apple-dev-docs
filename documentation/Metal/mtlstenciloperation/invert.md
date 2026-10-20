@@ -1,7 +1,8 @@
 # MTLStencilOperation.invert
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A stencil operation that applies a logical bitwise NOT to a stencil value.
 
@@ -10,7 +11,7 @@ A stencil operation that applies a logical bitwise NOT to a stencil value.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A stencil operation that applies a logical bitwise NOT to a stencil value.
 case invert
 ```
 
+```c
+MTLStencilOperationInvert
+```
+
 ## See Also
 
-- [MTLStencilOperation.keep](mtlstenciloperation/keep.md)
+### Stencil operations
+- [MTLStencilOperation.keep](./keep.md)
   A stencil operation that doesn’t modify a stencil value.
-- [MTLStencilOperation.zero](mtlstenciloperation/zero.md)
+- [MTLStencilOperation.zero](./zero.md)
   A stencil operation that sets a stencil value to zero.
-- [MTLStencilOperation.replace](mtlstenciloperation/replace.md)
+- [MTLStencilOperation.replace](./replace.md)
   A stencil operation that replaces a stencil value with a reference value.
-- [MTLStencilOperation.incrementClamp](mtlstenciloperation/incrementclamp.md)
+- [MTLStencilOperation.incrementClamp](./incrementclamp.md)
   A stencil operation that increases a stencil value by one, but only when the current value isn’t the maximum representable value.
-- [MTLStencilOperation.decrementClamp](mtlstenciloperation/decrementclamp.md)
+- [MTLStencilOperation.decrementClamp](./decrementclamp.md)
   A stencil operation that decreases a nonzero stencil value by one.
-- [MTLStencilOperation.incrementWrap](mtlstenciloperation/incrementwrap.md)
+- [MTLStencilOperation.incrementWrap](./incrementwrap.md)
   A stencil operation that decreases a nonzero stencil value by one, or when it’s the maximum representable value, resets it to zero.
-- [MTLStencilOperation.decrementWrap](mtlstenciloperation/decrementwrap.md)
+- [MTLStencilOperation.decrementWrap](./decrementwrap.md)
   A stencil operation that decreases a nonzero stencil value by one, or when it’s zero, resets it to the maximum representable value.
 
 

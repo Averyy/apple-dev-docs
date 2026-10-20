@@ -1,6 +1,8 @@
 # Ranging for Beacons
 
-**Framework**: Core Location
+**Framework**: Core Location  
+**Role**: Sample Code  
+**Download**: [RangingForBeacons.zip](https://docs-assets.developer.apple.com/published/d7d2b5ab19c1/RangingForBeacons.zip)
 
 Configure a device to act as a beacon and to detect surrounding beacons.
 
@@ -16,9 +18,9 @@ Beacons make location-based products and services available to users by broadcas
 
 This sample code project configures a device to act as a beacon, and configures a device to use ranging to find surrounding beacons. Use two iOS devices to run the sample, with one acting as a beacon, and the other ranging for the beacon.
 
-> **Note**: This project is associated with WWDC 2019 session [`705: What’s New in Location`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/705/).
+> **Note**: This project is associated with WWDC 2019 session [705: What’s New in Location](https://developer.apple.com/videos/play/wwdc19/705/).
 
-##### Configure a Device to Act As a Beacon
+##### Configure a Device to Act as a Beacon
 
 Run the sample app on the first iOS device. Select the option to Configure a Beacon. The project hardcodes a default value for the UUID that can be changed in `ConfigureBeaconViewController.swift`.
 
@@ -74,13 +76,14 @@ While one or more beacons are in range, the `locationManager(_ manager: CLLocati
 
 ## See Also
 
-- [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
+### iBeacon
+- [Determining the proximity to an iBeacon device](./determining-the-proximity-to-an-ibeacon-device.md)
   Detect beacons and determine the relative distance to them.
-- [Turning an iOS device into an iBeacon device](turning-an-ios-device-into-an-ibeacon-device.md)
+- [Turning an iOS device into an iBeacon device](./turning-an-ios-device-into-an-ibeacon-device.md)
   Broadcast iBeacon signals from an iOS device.
-- [class CLBeacon](clbeacon.md)
+- [class CLBeacon](./clbeacon.md)
   Information about an observed iBeacon device and its relative distance to a person’s device.
-- [protocol CLCondition](clcondition-swift.protocol.md)
+- [protocol CLCondition](./clcondition-swift.protocol.md)
   The abstract base class for all other monitor conditions.
 
 

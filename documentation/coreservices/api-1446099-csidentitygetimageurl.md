@@ -1,7 +1,8 @@
 # CSIdentityGetImageURL(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityGetImageURL(_ identity: CSIdentity!) -> Unmanaged<CFURL>!
+```
+
+```c
+CFURLRef CSIdentityGetImageURL(CSIdentityRef identity);
 ```
 
 

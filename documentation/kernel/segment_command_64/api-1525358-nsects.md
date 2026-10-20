@@ -1,7 +1,8 @@
 # nsects
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Indicates the number of section data structures following this load command.
 
@@ -10,7 +11,7 @@ Indicates the number of section data structures following this load command.
 
 ## Declaration
 
-```swift
+```c
 uint32_t nsects;
 ```
 

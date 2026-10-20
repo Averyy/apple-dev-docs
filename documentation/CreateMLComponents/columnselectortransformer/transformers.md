@@ -1,7 +1,8 @@
 # transformers
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of column names to transformers.
 
@@ -22,7 +23,8 @@ var transformers: [String : Base]
 
 ## See Also
 
-- [var columnMapping: [String : String]](columnselectortransformer/columnmapping.md)
+### Getting the properties
+- [var columnMapping: [String : String]](./columnmapping.md)
   A mapping of input column names to output column names.
 
 

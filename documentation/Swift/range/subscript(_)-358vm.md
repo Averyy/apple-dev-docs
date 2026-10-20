@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the subsequence bounded by the given range.
 
@@ -19,6 +20,8 @@ Accesses the subsequence bounded by the given range.
 ```swift
 subscript(bounds: Range<Range<Bound>.Index>) -> Range<Bound> { get }
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 ## Parameters
 

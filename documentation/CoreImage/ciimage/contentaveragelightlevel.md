@@ -1,7 +1,8 @@
 # contentAverageLightLevel
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the content average light level of the image.
 
@@ -19,6 +20,10 @@ Returns the content average light level of the image.
 var contentAverageLightLevel: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float contentAverageLightLevel;
+```
+
 #### Discussion
 
 If the image average light level is unknown, then the value 0.0 will be returned.
@@ -30,9 +35,9 @@ The image average light level may known when a CIImage is first initialized. If 
 - `CGImage` : then the headroom will be determined by `CGImageGetContentAverageLightLevel()`.
 - `CVPixelBuffer` : then the headroom will be determined by `kCVImageBufferContentLightLevelInfoKey`.
 
-If the image is the result of applying a [`CIFilter`](cifilter-swift.class.md) or [`CIKernel`](cikernel.md), this property will return `0.0`.
+If the image is the result of applying a [`CIFilter`](../cifilter-swift.class.md) or [`CIKernel`](../cikernel.md), this property will return `0.0`.
 
-There are exceptions to this.  Applying a [`CIWarpKernel`](ciwarpkernel.md) or certain [`CIFilter`](cifilter-swift.class.md) (e.g. `CIGaussianBlur`, `CILanczosScaleTransform`, `CIAreaAverage` and some others) to an image will result in a [`CIImage`](ciimage.md) instance with the same `contentAverageLightLevel` property value.
+There are exceptions to this.  Applying a [`CIWarpKernel`](../ciwarpkernel.md) or certain [`CIFilter`](../cifilter-swift.class.md) (e.g. `CIGaussianBlur`, `CILanczosScaleTransform`, `CIAreaAverage` and some others) to an image will result in a [`CIImage`](../ciimage.md) instance with the same `contentAverageLightLevel` property value.
 
 
 ---

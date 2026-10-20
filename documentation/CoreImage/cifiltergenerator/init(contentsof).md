@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a filter generator object with the contents of a filter generator file.
 
@@ -14,9 +15,13 @@ Initializes a filter generator object with the contents of a filter generator fi
 init?(contentsOf aURL: URL)
 ```
 
+```objc
+- (id) initWithContentsOfURL:(NSURL *) aURL;
+```
+
 #### Return Value
 
-The initialized [`CIFilterGenerator`](cifiltergenerator.md) object. Returns `nil` if the file can’t be read.
+The initialized [`CIFilterGenerator`](../cifiltergenerator.md) object. Returns `nil` if the file can’t be read.
 
 ## Parameters
 

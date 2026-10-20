@@ -1,18 +1,19 @@
 # rawValue
 
 **Framework**: Compression  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of the constant.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

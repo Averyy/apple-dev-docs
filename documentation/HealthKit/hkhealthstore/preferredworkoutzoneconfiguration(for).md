@@ -1,7 +1,8 @@
 # preferredWorkoutZoneConfiguration(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a person’s preferred zone configuration for a quantity type.
 
@@ -21,7 +22,7 @@ func preferredWorkoutZoneConfiguration(for quantityType: HKQuantityType) async t
 
 ## Mentions
 
-- [Accessing workout zone data](accessing-workout-zone-data.md)
+- [Accessing workout zone data](../accessing-workout-zone-data.md)
 
 #### Return Value
 
@@ -39,9 +40,10 @@ This method throws an error if the framework can’t retrieve the requested zone
 
 ## See Also
 
-- [func preferredUnits(for: Set<HKQuantityType>, completion: ([HKQuantityType : HKUnit], (any Error)?) -> Void)](hkhealthstore/preferredunits(for:completion:).md)
+### Accessing the preferred units
+- [func preferredUnits(for: Set<HKQuantityType>, completion: ([HKQuantityType : HKUnit], (any Error)?) -> Void)](./preferredunits%28for,completion%29.md)
   Returns the user’s preferred units for the given quantity types.
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
 
 

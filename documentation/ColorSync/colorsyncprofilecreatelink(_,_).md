@@ -1,7 +1,8 @@
 # ColorSyncProfileCreateLink(_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a device link profile from an array of profiles.
 
@@ -20,6 +21,10 @@ Creates a device link profile from an array of profiles.
 func ColorSyncProfileCreateLink(_ profileInfo: CFArray!, _ options: CFDictionary?) -> Unmanaged<ColorSyncProfile>?
 ```
 
+```c
+extern ColorSyncProfileRefColorSyncProfileCreateLink(CFArrayRef profileInfo, CFDictionaryRef options);
+```
+
 #### Return Value
 
 A new profile, or `NULL` in case of failure.
@@ -30,13 +35,13 @@ Each dictionary in `profileInfo` contains a profile object and information on th
 
 Required keys:
 
-- [`kColorSyncProfile`](kcolorsyncprofile.md): A [`ColorSyncProfile`](colorsyncprofile.md).
-- [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md): A `CFStringRef` defining the rendering intent.
-- [`kColorSyncTransformTag`](kcolorsynctransformtag.md): A `CFStringRef` defining which tags to use.
+- [`kColorSyncProfile`](./kcolorsyncprofile.md): A [`ColorSyncProfile`](./colorsyncprofile.md).
+- [`kColorSyncRenderingIntent`](./kcolorsyncrenderingintent.md): A `CFStringRef` defining the rendering intent.
+- [`kColorSyncTransformTag`](./kcolorsynctransformtag.md): A `CFStringRef` defining which tags to use.
 
 Optional key:
 
-- [`kColorSyncBlackPointCompensation`](kcolorsyncblackpointcompensation.md): A `CFBooleanRef` to enable or disable black point compensation.
+- [`kColorSyncBlackPointCompensation`](./kcolorsyncblackpointcompensation.md): A `CFBooleanRef` to enable or disable black point compensation.
 
 ## Parameters
 
@@ -45,10 +50,11 @@ Optional key:
 
 ## See Also
 
-- [var kColorSyncTransformDeviceToDevice: Unmanaged<CFString>!](kcolorsynctransformdevicetodevice.md)
-  A [`kColorSyncTransformTag`](kcolorsynctransformtag.md) value selecting the device-to-device conversion direction.
-- [var kColorSyncTransformGamutCheck: Unmanaged<CFString>!](kcolorsynctransformgamutcheck.md)
-  A [`kColorSyncTransformTag`](kcolorsynctransformtag.md) value that checks whether colors fall outside the destination gamut.
+### Proofing and gamut checking
+- [var kColorSyncTransformDeviceToDevice: Unmanaged<CFString>!](./kcolorsynctransformdevicetodevice.md)
+  A [`kColorSyncTransformTag`](./kcolorsynctransformtag.md) value selecting the device-to-device conversion direction.
+- [var kColorSyncTransformGamutCheck: Unmanaged<CFString>!](./kcolorsynctransformgamutcheck.md)
+  A [`kColorSyncTransformTag`](./kcolorsynctransformtag.md) value that checks whether colors fall outside the destination gamut.
 
 
 ---

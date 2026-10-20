@@ -1,7 +1,8 @@
 # init(label:probability:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a classification with label and probability.
 
@@ -22,8 +23,10 @@ init(label: Label, probability: Float)
 
 #### Discussion
 
-- Parameters - label: The classification label.
-- probability: The classification probability.
+- Parameters
+
+  - label: The classification label.
+  - probability: The classification probability.
 
 
 ---

@@ -1,7 +1,8 @@
 # inputFeatureChannels
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var inputFeatureChannels: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger inputFeatureChannels;
+```
+
 ## See Also
 
-- [var layerSequenceDirection: MPSRNNSequenceDirection](mpsrnndescriptor/layersequencedirection.md)
-- [var outputFeatureChannels: Int](mpsrnndescriptor/outputfeaturechannels.md)
-- [var useFloat32Weights: Bool](mpsrnndescriptor/usefloat32weights.md)
-- [var useLayerInputUnitTransformMode: Bool](mpsrnndescriptor/uselayerinputunittransformmode.md)
+### Instance Properties
+- [var layerSequenceDirection: MPSRNNSequenceDirection](./layersequencedirection.md)
+- [var outputFeatureChannels: Int](./outputfeaturechannels.md)
+- [var useFloat32Weights: Bool](./usefloat32weights.md)
+- [var useLayerInputUnitTransformMode: Bool](./uselayerinputunittransformmode.md)
 
 
 ---

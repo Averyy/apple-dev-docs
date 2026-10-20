@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether the transition animations can be interrupted.
@@ -19,15 +20,20 @@ A Boolean value indicating whether the transition animations can be interrupted.
 var isInterruptible: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isInterruptible;
+```
+
 ## See Also
 
-- [var initiallyInteractive: Bool](uiviewcontrollertransitioncoordinatorcontext/initiallyinteractive.md)
+### Getting the transition state
+- [var initiallyInteractive: Bool](./initiallyinteractive.md)
   A Boolean value indicating whether the transition started as an interactive transition.
-- [var isInteractive: Bool](uiviewcontrollertransitioncoordinatorcontext/isinteractive.md)
+- [var isInteractive: Bool](./isinteractive.md)
   A Boolean value indicating whether the transition is currently interactive.
-- [var isAnimated: Bool](uiviewcontrollertransitioncoordinatorcontext/isanimated.md)
+- [var isAnimated: Bool](./isanimated.md)
   A Boolean value indicating whether the transition is explicitly animated.
-- [var isCancelled: Bool](uiviewcontrollertransitioncoordinatorcontext/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value indicating whether an interactive transition was canceled.
 
 

@@ -1,7 +1,8 @@
 # min()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the element with the lowest value, ignoring missing elements.
 
@@ -20,19 +21,22 @@ Returns the element with the lowest value, ignoring missing elements.
 func min() -> DiscontiguousColumnSlice<WrappedElement>.Element
 ```
 
+Available when `WrappedElement` conforms to `Comparable`.
+
 ## See Also
 
-- [func sum() -> WrappedElement](discontiguouscolumnslice/sum.md)
+### Getting Statistical Values
+- [func sum() -> WrappedElement](./sum%28%29.md)
   Returns the sum of the column slice’s elements, ignoring missing elements.
-- [func max() -> DiscontiguousColumnSlice<WrappedElement>.Element](discontiguouscolumnslice/max.md)
+- [func max() -> DiscontiguousColumnSlice<WrappedElement>.Element](./max%28%29.md)
   Returns the element with the highest value, ignoring missing elements.
-- [func mean() -> DiscontiguousColumnSlice<WrappedElement>.Element](discontiguouscolumnslice/mean-3y11c.md)
+- [func mean() -> DiscontiguousColumnSlice<WrappedElement>.Element](./mean%28%29-3y11c.md)
   Returns the mean average of the floating-point slice’s elements, ignoring missing elements.
-- [func mean() -> Double?](discontiguouscolumnslice/mean-49u93.md)
+- [func mean() -> Double?](./mean%28%29-49u93.md)
   Returns the mean average of the integer slice’s elements, ignoring missing elements.
-- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](discontiguouscolumnslice/standarddeviation(deltadegreesoffreedom:)-36nx2.md)
+- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](./standarddeviation%28deltadegreesoffreedom%29-36nx2.md)
   Returns the standard deviation of the integer column slice’s elements, ignoring missing elements.
-- [func standardDeviation(deltaDegreesOfFreedom: Int) -> DiscontiguousColumnSlice<WrappedElement>.Element](discontiguouscolumnslice/standarddeviation(deltadegreesoffreedom:)-5vd4r.md)
+- [func standardDeviation(deltaDegreesOfFreedom: Int) -> DiscontiguousColumnSlice<WrappedElement>.Element](./standarddeviation%28deltadegreesoffreedom%29-5vd4r.md)
   Returns the standard deviation of the floating-point column slice’s elements, ignoring missing elements.
 
 

@@ -1,7 +1,8 @@
 # selectionAccessoryOffset
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The offset that changes the selection accessory’s default anchor point.
 
@@ -10,7 +11,7 @@ The offset that changes the selection accessory’s default anchor point.
 
 ## Declaration
 
-```swift
+```
 selectionAccessoryOffset?: DOMPoint;
 ```
 

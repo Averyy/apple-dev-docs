@@ -1,7 +1,8 @@
 # extensionInput
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An input for WebAuthn extensions.
 
@@ -20,13 +21,14 @@ var extensionInput: ASPasskeyCredentialExtensionInput { get }
 
 ## See Also
 
-- [var clientDataHash: Data](aspasskeycredentialrequest/clientdatahash.md)
+### Viewing passkey challenge information
+- [var clientDataHash: Data](./clientdatahash.md)
   The hash of the client data for this assertion.
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](aspasskeycredentialrequest/userverificationpreference.md)
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   The relying party’s user verification preference.
-- [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](aspasskeycredentialrequest/supportedalgorithms-74mad.md)
+- [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](./supportedalgorithms-74mad.md)
   A list of cryptographic signature algorithms that the relying party supports.
-- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
+- [enum ASPasskeyCredentialExtensionInput](../aspasskeycredentialextensioninput.md)
   A type for WebAuthn extension inputs.
 
 

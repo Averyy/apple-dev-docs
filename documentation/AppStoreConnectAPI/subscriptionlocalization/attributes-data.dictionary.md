@@ -1,7 +1,8 @@
 # SubscriptionLocalization.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription localization resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription localization resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalization.Attributes
 ```
 
@@ -19,11 +20,12 @@ object SubscriptionLocalization.Attributes
 - `description` (string)
 - `locale` (string)
 - `name` (string)
-- `state` (string)
+- `state` (string): **Allowed Values**: `PREPARE_FOR_SUBMISSION`, `WAITING_FOR_REVIEW`, `APPROVED`, `REJECTED`
 
 ## See Also
 
-- [object SubscriptionLocalization.Relationships](subscriptionlocalization/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionLocalization.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

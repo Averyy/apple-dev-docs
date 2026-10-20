@@ -2,6 +2,7 @@
 
 **Framework**: GameplayKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates and returns a new random Boolean value.
@@ -20,21 +21,26 @@ Generates and returns a new random Boolean value.
 func nextBool() -> Bool
 ```
 
+```objc
+- (BOOL) nextBool;
+```
+
 #### Return Value
 
 A random Boolean value.
 
 #### Discussion
 
-Typically, custom classes implementing this protocol should implement the [`nextBool()`](gkrandom/nextbool().md) method based on the value returned by the [`nextInt(upperBound:)`](gkrandom/nextint(upperbound:).md) method. Alternative implementations are possible, but may lead to less uniform results.
+Typically, custom classes implementing this protocol should implement the [`nextBool()`](./nextbool%28%29.md) method based on the value returned by the [`nextInt(upperBound:)`](./nextint%28upperbound%29.md) method. Alternative implementations are possible, but may lead to less uniform results.
 
 ## See Also
 
-- [func nextInt() -> Int](gkrandom/nextint.md)
+### Generating Random Numbers
+- [func nextInt() -> Int](./nextint%28%29.md)
   Generates and returns a new random integer.
-- [func nextInt(upperBound: Int) -> Int](gkrandom/nextint(upperbound:).md)
+- [func nextInt(upperBound: Int) -> Int](./nextint%28upperbound%29.md)
   Generates and returns a new random integer less than the specified limit.
-- [func nextUniform() -> Float](gkrandom/nextuniform.md)
+- [func nextUniform() -> Float](./nextuniform%28%29.md)
   Generates and returns a new random floating-point value.
 
 

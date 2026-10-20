@@ -1,14 +1,15 @@
 # setAsyncReference64
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static void setAsyncReference64(OSAsyncReference64 asyncRef, mach_port_t wakePort, mach_vm_address_t callback, io_user_reference_t refcon);
 ```
 

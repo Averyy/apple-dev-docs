@@ -1,7 +1,8 @@
 # MusicSubscription.Error
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that MusicKit can throw upon requesting the current music subscription of the user.
 
@@ -23,26 +24,26 @@ enum Error
 ## Topics
 
 ### Enumeration Cases
-- [MusicSubscription.Error.permissionDenied](musicsubscription/error/permissiondenied.md)
+- [MusicSubscription.Error.permissionDenied](./error/permissiondenied.md)
   An error indicating that the user doesn’t consent for your app to access their Apple Music data.
-- [MusicSubscription.Error.privacyAcknowledgementRequired](musicsubscription/error/privacyacknowledgementrequired.md)
+- [MusicSubscription.Error.privacyAcknowledgementRequired](./error/privacyacknowledgementrequired.md)
   An error indicating that the user needs to acknowledge the most-recent privacy policy for Apple Music.
-- [MusicSubscription.Error.unknown](musicsubscription/error/unknown.md)
+- [MusicSubscription.Error.unknown](./error/unknown.md)
   An error indicating the ocurrence of an unknown or unexpected error.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSecPolicyAppleCodeSigning
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Policy for use in evaluating Apple code signing certificates.
 
@@ -20,9 +21,13 @@ Policy for use in evaluating Apple code signing certificates.
 let kSecPolicyAppleCodeSigning: CFString
 ```
 
+```c
+extern CFStringRef const kSecPolicyAppleCodeSigning;
+```
+
 #### Discussion
 
-To learn more about code signing certificates, read [`App Distribution Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
+To learn more about code signing certificates, read [App Distribution Guide](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
 
 
 ---

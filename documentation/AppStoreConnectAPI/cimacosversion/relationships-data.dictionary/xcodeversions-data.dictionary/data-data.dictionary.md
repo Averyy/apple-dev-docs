@@ -1,7 +1,8 @@
 # CiMacOsVersion.Relationships.XcodeVersions.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Xcode Versions resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Xcode Versions resource.
 
 ## Declaration
 
-```swift
+```
 object CiMacOsVersion.Relationships.XcodeVersions.Data
 ```
 
@@ -18,6 +19,8 @@ object CiMacOsVersion.Relationships.XcodeVersions.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Xcode Versions resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `ciXcodeVersions`
 
 
 ---

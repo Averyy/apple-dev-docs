@@ -1,7 +1,8 @@
 # itemViewForItem(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view for the item at the specified index.
 
@@ -12,6 +13,10 @@ Returns the view for the item at the specified index.
 
 ```swift
 func itemViewForItem(at index: Int) -> NSScrubberItemView?
+```
+
+```objc
+- (NSScrubberItemView *) itemViewForItemAtIndex:(NSInteger) index;
 ```
 
 #### Return Value

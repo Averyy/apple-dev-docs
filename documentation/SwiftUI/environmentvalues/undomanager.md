@@ -1,7 +1,8 @@
 # undoManager
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The undo manager used to register a view’s undo operations.
 
@@ -26,10 +27,11 @@ This value is `nil` when the environment represents a context that doesn’t sup
 
 ## See Also
 
-- [var documentConfiguration: DocumentConfiguration?](environmentvalues/documentconfiguration.md)
-  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
-- [struct DocumentConfiguration](documentconfiguration.md)
-  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+### Accessing document configuration
+- [var documentConfiguration: DocumentConfiguration?](./documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](../documentgroup.md).
+- [struct DocumentConfiguration](../documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](../documentgroup.md).
 
 
 ---

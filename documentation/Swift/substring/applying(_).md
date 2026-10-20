@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given difference to this collection.
 
@@ -26,7 +27,7 @@ An instance representing the state of the receiver with the difference applied, 
 
 #### Discussion
 
-> **Note**: O(*n* + *c*), where *n* is `self.count` and *c* is the number of changes contained by the parameter.
+> **Complexity**: O(*n* + *c*), where *n* is `self.count` and *c* is the number of changes contained by the parameter.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # onPasteCommand(of:validator:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform in response to the system’s Paste command with items that you validate.
 
@@ -13,6 +14,13 @@ Adds an action to perform in response to the system’s Paste command with items
 ```swift
 nonisolated
 func onPasteCommand<Payload>(of supportedContentTypes: [UTType], validator: @escaping ([NSItemProvider]) -> Payload?, perform payloadAction: @escaping (Payload) -> Void) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onPasteCommand<Payload>(of supportedTypes: [String], validator: @escaping ([NSItemProvider]) -> Payload?, perform payloadAction: @escaping (Payload) -> Void) -> some View
 ```
 
 #### Return Value
@@ -33,11 +41,12 @@ For example, if your app can handle plain text and rich text, but you prefer ric
 
 ## See Also
 
-- [func onCopyCommand(perform: (() -> [NSItemProvider])?) -> some View](view/oncopycommand(perform:).md)
+### Copying items using item providers
+- [func onCopyCommand(perform: (() -> [NSItemProvider])?) -> some View](./oncopycommand%28perform%29.md)
   Adds an action to perform in response to the system’s Copy command.
-- [func onCutCommand(perform: (() -> [NSItemProvider])?) -> some View](view/oncutcommand(perform:).md)
+- [func onCutCommand(perform: (() -> [NSItemProvider])?) -> some View](./oncutcommand%28perform%29.md)
   Adds an action to perform in response to the system’s Cut command.
-- [func onPasteCommand(of:perform:)](view/onpastecommand(of:perform:).md)
+- [func onPasteCommand(of:perform:)](./onpastecommand%28of,perform%29.md)
   Adds an action to perform in response to the system’s Paste command.
 
 

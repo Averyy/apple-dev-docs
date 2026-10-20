@@ -1,7 +1,8 @@
 # agent(plistName:)
 
 **Framework**: Service Management  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initializes an app service object with a launch agent with the property list name you provide.
 
@@ -15,21 +16,26 @@ Initializes an app service object with a launch agent with the property list nam
 class func agent(plistName: String) -> Self
 ```
 
+```objc
++ (instancetype) agentServiceWithPlistName:(NSString *) plistName;
+```
+
 #### Discussion
 
 The property list name must correspond to a property list in the calling app’s `Contents/Library/LaunchAgents` directory.
 
 ## Parameters
 
-- `plistName`: The name of the property list corresponding to the [`SMAppService`](smappservice.md).
+- `plistName`: The name of the property list corresponding to the [`SMAppService`](../smappservice.md).
 
 ## See Also
 
-- [class var mainApp: SMAppService](smappservice/mainapp.md)
+### Managing apps
+- [class var mainApp: SMAppService](./mainapp.md)
   An app service object that corresponds to the main application as a login item.
-- [class func daemon(plistName: String) -> Self](smappservice/daemon(plistname:).md)
+- [class func daemon(plistName: String) -> Self](./daemon%28plistname%29.md)
   Initializes an app service object with a launch daemon with the property list name you provide.
-- [class func loginItem(identifier: String) -> Self](smappservice/loginitem(identifier:).md)
+- [class func loginItem(identifier: String) -> Self](./loginitem%28identifier%29.md)
   Initializes an app service object for a login item corresponding to the bundle with the identifier you provide.
 
 

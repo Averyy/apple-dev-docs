@@ -1,7 +1,8 @@
 # disable(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command Disable
 
@@ -17,7 +18,15 @@ Command Disable
 ## Declaration
 
 ```swift
+func disable(with params: MTREnergyEVSEClusterDisableParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func disable(with params: MTREnergyEVSEClusterDisableParams?) async throws
+```
+
+```objc
+- (void) disableWithParams:(MTREnergyEVSEClusterDisableParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

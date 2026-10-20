@@ -1,7 +1,8 @@
 # precipitation
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description of precipitation for this day.
 
@@ -22,11 +23,12 @@ var precipitation: Precipitation
 
 ## See Also
 
-- [var precipitationChance: Double](dayweather/precipitationchance.md)
+### Getting precipitation
+- [var precipitationChance: Double](./precipitationchance.md)
   The probability of precipitation during the day.
-- [var rainfallAmount: Measurement<UnitLength>](dayweather/rainfallamount.md)
+- [var rainfallAmount: Measurement<UnitLength>](./rainfallamount.md)
   The amount of liquid precipitation for the day.
-- [var snowfallAmount: Measurement<UnitLength>](dayweather/snowfallamount.md)
+- [var snowfallAmount: Measurement<UnitLength>](./snowfallamount.md)
   The amount of snowfall for the day.
 
 

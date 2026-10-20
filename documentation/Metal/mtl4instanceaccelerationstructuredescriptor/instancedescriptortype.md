@@ -1,7 +1,8 @@
 # instanceDescriptorType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of instance descriptor that the instance descriptor buffer references.
 
@@ -19,14 +20,18 @@ The type of instance descriptor that the instance descriptor buffer references.
 var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType { get set }
 ```
 
+```objc
+@property (nonatomic) MTLAccelerationStructureInstanceDescriptorType instanceDescriptorType;
+```
+
 #### Discussion
 
 This value determines the layout Metal expects for the structs the instance descriptor buffer contains:
 
-- [`MTLAccelerationStructureInstanceDescriptorType.indirect`](mtlaccelerationstructureinstancedescriptortype/indirect.md): Use the [`MTLIndirectAccelerationStructureInstanceDescriptor`](mtlindirectaccelerationstructureinstancedescriptor.md) struct layout.
-- [`MTLAccelerationStructureInstanceDescriptorType.indirectMotion`](mtlaccelerationstructureinstancedescriptortype/indirectmotion.md): Use the [`MTLIndirectAccelerationStructureMotionInstanceDescriptor`](mtlindirectaccelerationstructuremotioninstancedescriptor.md) struct layout.
+- [`MTLAccelerationStructureInstanceDescriptorType.indirect`](../mtlaccelerationstructureinstancedescriptortype/indirect.md): Use the [`MTLIndirectAccelerationStructureInstanceDescriptor`](../mtlindirectaccelerationstructureinstancedescriptor.md) struct layout.
+- [`MTLAccelerationStructureInstanceDescriptorType.indirectMotion`](../mtlaccelerationstructureinstancedescriptortype/indirectmotion.md): Use the [`MTLIndirectAccelerationStructureMotionInstanceDescriptor`](../mtlindirectaccelerationstructuremotioninstancedescriptor.md) struct layout.
 
-The default value is [`MTLAccelerationStructureInstanceDescriptorType.indirect`](mtlaccelerationstructureinstancedescriptortype/indirect.md).
+The default value is [`MTLAccelerationStructureInstanceDescriptorType.indirect`](../mtlaccelerationstructureinstancedescriptortype/indirect.md).
 
 
 ---

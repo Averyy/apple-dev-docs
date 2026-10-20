@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sadb_x_kmprivate {
     ...
 };
@@ -17,9 +17,9 @@ struct sadb_x_kmprivate {
 ## Topics
 
 ### Instance Properties
-- [sadb_x_kmprivate_exttype](sadb_x_kmprivate/1588225-sadb_x_kmprivate_exttype.md)
-- [sadb_x_kmprivate_len](sadb_x_kmprivate/1588115-sadb_x_kmprivate_len.md)
-- [sadb_x_kmprivate_reserved](sadb_x_kmprivate/1588262-sadb_x_kmprivate_reserved.md)
+- [sadb_x_kmprivate_exttype](./sadb_x_kmprivate/api-1588225-sadb_x_kmprivate_exttype.md)
+- [sadb_x_kmprivate_len](./sadb_x_kmprivate/api-1588115-sadb_x_kmprivate_len.md)
+- [sadb_x_kmprivate_reserved](./sadb_x_kmprivate/api-1588262-sadb_x_kmprivate_reserved.md)
 
 
 ---

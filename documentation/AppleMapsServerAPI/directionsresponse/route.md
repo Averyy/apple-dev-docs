@@ -1,7 +1,8 @@
 # DirectionsResponse.Route
 
 **Framework**: Apple Maps Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represent the components of a single route.
 
@@ -10,7 +11,7 @@ An object that represent the components of a single route.
 
 ## Declaration
 
-```swift
+```
 object DirectionsResponse.Route
 ```
 
@@ -23,9 +24,12 @@ object DirectionsResponse.Route
 - `stepIndexes` ([integer]): An array of integer values that you can use to determine the number steps along this route. Each value in the array corresponds to an index into the `steps` array.
 - `transportType` (string): A string that represents the mode of transportation the service used to estimate the arrival time. Same as the input query param `transportType` or `Automobile` if the input query didn’t specify a transportation type.
 
+  **Allowed Values**: `Automobile`, `Walking`, `Cycling`
+
 ## See Also
 
-- [object DirectionsResponse.Step](directionsresponse/step.md)
+### Steps and routes
+- [object DirectionsResponse.Step](./step.md)
   An object that represents a step along a route.
 
 

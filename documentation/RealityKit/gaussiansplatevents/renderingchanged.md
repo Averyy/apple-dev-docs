@@ -1,7 +1,8 @@
 # GaussianSplatEvents.RenderingChanged
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event that signals the framework changed how it renders an entity’s splats to manage performance.
 
@@ -25,22 +26,22 @@ Subscribe to this event to learn when the framework throttles splat rendering. I
 ## Topics
 
 ### Instance Properties
-- [let entity: Entity](gaussiansplatevents/renderingchanged/entity.md)
+- [let entity: Entity](./renderingchanged/entity.md)
   The entity whose Gaussian splat rendering changed.
-- [let isRenderingLimited: Bool](gaussiansplatevents/renderingchanged/isrenderinglimited.md)
+- [let isRenderingLimited: Bool](./renderingchanged/isrenderinglimited.md)
   A Boolean value that indicates whether the framework is currently limiting the entity’s splat rendering.
-- [let renderingStatus: GaussianSplatEvents.RenderingChanged.Status](gaussiansplatevents/renderingchanged/renderingstatus.md)
+- [let renderingStatus: GaussianSplatEvents.RenderingChanged.Status](./renderingchanged/renderingstatus.md)
   The level of rendering the framework now applies to the entity’s splats.
 ### Enumerations
-- [GaussianSplatEvents.RenderingChanged.Status](gaussiansplatevents/renderingchanged/status.md)
+- [GaussianSplatEvents.RenderingChanged.Status](./renderingchanged/status.md)
   The level of detail at which the framework renders an entity’s splats.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

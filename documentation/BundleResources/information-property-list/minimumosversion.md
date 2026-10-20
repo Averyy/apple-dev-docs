@@ -1,7 +1,8 @@
 # MinimumOSVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The minimum version of the operating system required for the app to run in iOS, iPadOS, tvOS, and watchOS.
 
@@ -12,13 +13,14 @@ The minimum version of the operating system required for the app to run in iOS, 
 - visionOS 1.0+
 - watchOS 1.0+
 
+## Details
+
+- **Name**: `MinimumOSVersion`
+- **Type**: string
+
 ## Mentions
 
-- [Managing your app’s information property list values](managing-your-app-s-information-property-list.md)
-
-
-
-**Type**: string
+- [Managing your app’s information property list values](../managing-your-app-s-information-property-list.md)
 
 #### Discussion
 
@@ -26,18 +28,19 @@ The App Store uses this key to indicate the OS releases on which your app can ru
 
 Don’t specify `MinimumOSVersion` in the `Info.plist` file for apps built in Xcode. It uses the value of the Deployment Target in the General settings pane.
 
-For macOS, see [`LSMinimumSystemVersion`](information-property-list/lsminimumsystemversion.md).
+For macOS, see [`LSMinimumSystemVersion`](./lsminimumsystemversion.md).
 
 ## See Also
 
-- [LSMinimumSystemVersion](information-property-list/lsminimumsystemversion.md)
+### Operating system version
+- [LSMinimumSystemVersion](./lsminimumsystemversion.md)
   The minimum version of the operating system required for the app to run in macOS.
-- [LSMinimumSystemVersionByArchitecture](information-property-list/lsminimumsystemversionbyarchitecture.md)
+- [LSMinimumSystemVersionByArchitecture](./lsminimumsystemversionbyarchitecture.md)
   The minimum version of macOS required for the app to run on a set of architectures.
-- [LSRequiresIPhoneOS](information-property-list/lsrequiresiphoneos.md)
+- [LSRequiresIPhoneOS](./lsrequiresiphoneos.md)
   A Boolean value indicating whether the app must run in iOS.
-- [WKApplication](information-property-list/wkapplication.md)
-- [WKWatchKitApp](information-property-list/wkwatchkitapp.md)
+- [WKApplication](./wkapplication.md)
+- [WKWatchKitApp](./wkwatchkitapp.md)
   A Boolean value that indicates whether the bundle is a watchOS app.
 
 

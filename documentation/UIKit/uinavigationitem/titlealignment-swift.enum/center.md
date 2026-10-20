@@ -1,7 +1,8 @@
 # UINavigationItem.TitleAlignment.center
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The title is center-aligned.
 
@@ -16,6 +17,10 @@ The title is center-aligned.
 
 ```swift
 case center
+```
+
+```c
+UINavigationItemTitleAlignmentCenter
 ```
 
 #### Discussion

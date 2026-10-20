@@ -1,6 +1,8 @@
 # Building a guessing game for visionOS
 
-**Framework**: Group Activities
+**Framework**: Group Activities  
+**Role**: Sample Code  
+**Download**: [BuildingAGuessingGameForVisionOS.zip](https://docs-assets.developer.apple.com/published/8baa890170f0/BuildingAGuessingGameForVisionOS.zip)
 
 Create a team-based guessing game for visionOS using Group Activities.
 
@@ -14,13 +16,13 @@ This sample shows how to build a guessing game for two competing teams. Particip
 
 After the initial welcome screen for the game, the participants select categories and divide into two teams. During the team-selection process, all participants start in the audience section. If a participant chooses to join a team, they move to the appropriate team area. During the game itself, the teams take turns guessing a word or phrase in a window that only one team member can see. The team member that sees the word or phrase can use any gestures or phrases to elicit a correct guess, but can’t say the word or phrase itself. If the team correctly guesses the word or phrase, the team scores a point. The team with the most points at the end of the game wins.
 
-> **Note**: This sample code project is associated with WWDC24 session [`10201: Customize spatial Persona templates in SharePlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10201).
+> **Note**: This sample code project is associated with WWDC24 session [10201: Customize spatial Persona templates in SharePlay](https://developer.apple.com/videos/play/wwdc2024/10201).
 
-> **Note**: SharePlay requires the  [`com.apple.developer.group-session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.group-session) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of doc:defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.
+> **Note**: SharePlay requires the  [`com.apple.developer.group-session`](../BundleResources/entitlements/com.apple.developer.group-session.md) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of doc:defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.
 
-##### Define the Group Activity
+##### Define the group activity
 
-The [`GroupActivity`](groupactivity.md) protocol provides the system with the context and metadata to start an activity-related session. The sample defines a single `GroupActivity` to represent the game:
+The [`GroupActivity`](./groupactivity.md) protocol provides the system with the context and metadata to start an activity-related session. The sample defines a single `GroupActivity` to represent the game:
 
 ```swift
 struct GuessTogetherActivity: GroupActivity, Transferable, Sendable {
@@ -32,11 +34,11 @@ struct GuessTogetherActivity: GroupActivity, Transferable, Sendable {
 }
 ```
 
-For more information, see [`Defining your app’s SharePlay activities`](defining-your-apps-shareplay-activities.md).
+For more information, see [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md).
 
-##### Encourage People to Start a Game
+##### Encourage people to start a game
 
-The welcome screen displays a custom `SharePlayButton`; tapping it starts the game. If the player is already in a FaceTime call, the `GuessTogetherActivity` activates. Otherwise, a [`GroupActivitySharingController`](groupactivitysharingcontroller-ybcy.md) displays a sheet inviting the player to start the FaceTime call. When a recipient accepts the FaceTime call, the system prompts them to join the `GuessTogetherActivity`:
+The welcome screen displays a custom `SharePlayButton`; tapping it starts the game. If the player is already in a FaceTime call, the `GuessTogetherActivity` activates. Otherwise, a [`GroupActivitySharingController`](./groupactivitysharingcontroller-ybcy.md) displays a sheet inviting the player to start the FaceTime call. When a recipient accepts the FaceTime call, the system prompts them to join the `GuessTogetherActivity`:
 
 ```swift
 struct SharePlayButton<ActivityType: GroupActivity & Transferable & Sendable>: View {
@@ -107,11 +109,11 @@ struct ActivitySharingView<ActivityType: GroupActivity & Sendable>: UIViewContro
 }
 ```
 
-For more information, see [`Presenting SharePlay activities from your app’s UI`](promoting-shareplay-activities-from-your-apps-ui.md).
+For more information, see [Presenting SharePlay activities from your app’s UI](./promoting-shareplay-activities-from-your-apps-ui.md).
 
-##### Join and Manage the Activity
+##### Join and manage the activity
 
-The system creates a [`GroupSession`](groupsession.md) when a player activates an activity. Players can activate an activity in several ways, at any time. This sample uses an asynchronous task in `MainView` to monitor the creation of new `GroupSession` instances for `GuessTogetherActivity`. This task calls the `observeGroupSessions` method, which receives new sessions and creates a `SessionController` to manage gameplay. A separate task detects when the session ends and cleans up the `SessionController`.
+The system creates a [`GroupSession`](./groupsession.md) when a player activates an activity. Players can activate an activity in several ways, at any time. This sample uses an asynchronous task in `MainView` to monitor the creation of new `GroupSession` instances for `GuessTogetherActivity`. This task calls the `observeGroupSessions` method, which receives new sessions and creates a `SessionController` to manage gameplay. A separate task detects when the session ends and cleans up the `SessionController`.
 
 ```swift
 // MainView
@@ -155,11 +157,11 @@ struct MainView: View {
 }
 ```
 
-For more information, see [`Joining and managing a shared activity`](joining-and-managing-a-shared-activity.md).
+For more information, see [Joining and managing a shared activity](./joining-and-managing-a-shared-activity.md).
 
-##### Synchronize Game State By Sending and Receiving Messages
+##### Synchronize game state by sending and receiving messages
 
-When a player’s action changes the game state, `SessionController` uses [`GroupSessionMessenger`](groupsessionmessenger.md) to send an update to the other players. For example, when player X joins the red team, `TeamSelectionView` calls `SessionController.joinTeam`. This sets `SessionController.localPlayer.team`, sending a call to `SessionController.shareLocalPlayerState`.
+When a player’s action changes the game state, `SessionController` uses [`GroupSessionMessenger`](./groupsessionmessenger.md) to send an update to the other players. For example, when player X joins the red team, `TeamSelectionView` calls `SessionController.joinTeam`. This sets `SessionController.localPlayer.team`, sending a call to `SessionController.shareLocalPlayerState`.
 
 ```swift
 // SessionController
@@ -215,11 +217,11 @@ private func observeRemotePlayerModelUpdates() {
 }
 ```
 
-For more information, see [`Synchronizing data during a SharePlay activity`](synchronizing-data-during-a-shareplay-activity.md).
+For more information, see [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md).
 
-##### Enable Spatial Personas in an Immersive Space
+##### Enable spatial personas in an immersive space
 
-To display spatial Personas when an immersive space is open, set the [`supportsGroupImmersiveSpace`](systemcoordinator/configuration-swift.struct/supportsgroupimmersivespace.md) property on [`SystemCoordinator.Configuration`](systemcoordinator/configuration-swift.struct.md) to `true`:
+To display spatial Personas when an immersive space is open, set the [`supportsGroupImmersiveSpace`](./systemcoordinator/configuration-swift.struct/supportsgroupimmersivespace.md) property on [`SystemCoordinator.Configuration`](./systemcoordinator/configuration-swift.struct.md) to `true`:
 
 ```swift
 // SessionController
@@ -233,9 +235,9 @@ func configureSystemCoordinator() {
 
 In an immersive space, the system provides a shared coordinate system for participants and content. This allows you to position entities consistently across all participants’ perspectives. For example, an entity positioned 0.5 meters in front of player X appears 0.5 meters in front of player X from player Y’s perspective.
 
-For more information, see [`Adding spatial Persona support to an activity`](adding-spatial-persona-support-to-an-activity.md).
+For more information, see [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md).
 
-##### Specify Custom Positions for Participants
+##### Specify custom positions for participants
 
 The game has three distinct stages:
 
@@ -243,7 +245,7 @@ The game has three distinct stages:
 - Team-selection stage, where players join one of the teams.
 - Game stage, where the teams take turns playing the game.
 
-Each time the current stage changes, the `SessionController` object updates the position of the participants in the space. When selecting a category, the participants appear side by side in front of the game window. During team selection and gameplay, the game arranges players using custom spatial templates. The game specifies each arrangement of participants by changing the configuration of the [`SystemCoordinator`](systemcoordinator.md) object.
+Each time the current stage changes, the `SessionController` object updates the position of the participants in the space. When selecting a category, the participants appear side by side in front of the game window. During team selection and gameplay, the game arranges players using custom spatial templates. The game specifies each arrangement of participants by changing the configuration of the [`SystemCoordinator`](./systemcoordinator.md) object.
 
 ```swift
 // SessionController
@@ -262,7 +264,7 @@ func updateSpatialTemplatePreference() {
 
 When the game moves to the team-selection stage, the session rearranges the participants according to which team they choose. All participants start in the audience initially facing the app window, which displays buttons to join either the red team or blue team.
 
-![An illustration of the arrangement of participants during the team selection process. Participants start facing the screen. When they select a team, they move to the side of the screen associated with their chosen team.](/images/com.apple.GroupActivities/team-selection@2x.png)
+![An illustration of the arrangement of participants during the team selection process. Participants start facing the screen. When they select a team, they move to the side of the screen associated with their chosen team.](https://developer.apple.com/tutorials/images/com.apple.GroupActivities/team-selection@2x.png)
 
 The `TeamSelectionTemplate` specifies the positions of seats during the team-selection process. Participants don’t have an assigned role initially, so the system places them in the audience seats. As participants join a team, the system moves them to the assigned seating area for their chosen team.
 
@@ -301,7 +303,7 @@ struct TeamSelectionTemplate: SpatialTemplate {
 
 During gameplay, teams take turns playing the game while the audience watches. Audience members face the main window while the active team sits on either side of that window. The team member giving clues sits on one side of the window, while their teammates sit opposite. The template orients the active team members so that they face each other at the start of the game, with audience members facing the main window.
 
-![An illustration of the arrangement of participants during the game. The active team members sit on opposite sides of the app’s window, while the rest of the players sit in the audience facing the window.](/images/com.apple.GroupActivities/game@2x.png)
+![An illustration of the arrangement of participants during the game. The active team members sit on opposite sides of the app’s window, while the rest of the players sit in the audience facing the window.](https://developer.apple.com/tutorials/images/com.apple.GroupActivities/game@2x.png)
 
 The `GameTemplate` structure defines separate roles for the current player and the active team members. Members of the opposing team don’t receive a role until it’s their turn to play, so they initially sit in the audience positions. Because the active team members face each other, and not the app window, their seat positions include a `direction` parameter to specify where they look initially.
 
@@ -350,23 +352,24 @@ struct GameTemplate: SpatialTemplate {
 }
 ```
 
-For more information about building custom spatial templates, see [`SpatialTemplate`](spatialtemplate.md).
+For more information about building custom spatial templates, see [`SpatialTemplate`](./spatialtemplate.md).
 
 ## See Also
 
-- [protocol SpatialTemplate](spatialtemplate.md)
+### Custom spatial templates
+- [protocol SpatialTemplate](./spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
-- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+- [struct SpatialTemplatePreference](./spatialtemplatepreference.md)
   A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
-- [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
+- [struct SpatialTemplateSeatElement](./spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
-- [protocol SpatialTemplateElement](spatialtemplateelement.md)
+- [protocol SpatialTemplateElement](./spatialtemplateelement.md)
   An interface that defines an element in your spatial template.
-- [struct SpatialTemplateElementPosition](spatialtemplateelementposition.md)
+- [struct SpatialTemplateElementPosition](./spatialtemplateelementposition.md)
   A type that defines the position of an element in a spatial template.
-- [struct SpatialTemplateElementDirection](spatialtemplateelementdirection.md)
+- [struct SpatialTemplateElementDirection](./spatialtemplateelementdirection.md)
   The initial direction a participant faces when an activity starts.
-- [protocol SpatialTemplateRole](spatialtemplaterole.md)
+- [protocol SpatialTemplateRole](./spatialtemplaterole.md)
   An interface for defining roles that you assign to the participants of a group activity.
 
 

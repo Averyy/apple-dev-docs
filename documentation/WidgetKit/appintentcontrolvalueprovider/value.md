@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of value provided to the template.

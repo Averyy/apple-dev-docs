@@ -1,7 +1,8 @@
 # topReleases
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of top releases for the record label.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of top rele
 ```swift
 static var topReleases: MusicRelationshipProperty<RecordLabel, Album> { get }
 ```
+
+Available when `Root` is `RecordLabel`.
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var gaussianSigma: Float](cicannyedgedetector/gaussiansigma.md)
-- [var hysteresisPasses: Int](cicannyedgedetector/hysteresispasses.md)
-- [var perceptual: Bool](cicannyedgedetector/perceptual.md)
-- [var thresholdHigh: Float](cicannyedgedetector/thresholdhigh.md)
-- [var thresholdLow: Float](cicannyedgedetector/thresholdlow.md)
+### Instance Properties
+- [var gaussianSigma: Float](./gaussiansigma.md)
+- [var hysteresisPasses: Int](./hysteresispasses.md)
+- [var perceptual: Bool](./perceptual.md)
+- [var thresholdHigh: Float](./thresholdhigh.md)
+- [var thresholdLow: Float](./thresholdlow.md)
 
 
 ---

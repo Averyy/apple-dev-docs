@@ -1,7 +1,8 @@
 # RemoteKeylessEntryAction.ExecutionRequest
 
 **Framework**: CarKey  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that reports the results of an automatically ending action asynchronously.
 
@@ -20,21 +21,21 @@ final class ExecutionRequest
 
 #### Overview
 
-When you perform an action, the system creates a [`RemoteKeylessEntryAction.ExecutionRequest`](remotekeylessentryaction/executionrequest.md) object for that request and returns it to your app. Use that object to asynchronously determine whether your request completed successfully or reported an error.
+When you perform an action, the system creates a [`RemoteKeylessEntryAction.ExecutionRequest`](./executionrequest.md) object for that request and returns it to your app. Use that object to asynchronously determine whether your request completed successfully or reported an error.
 
 ## Topics
 
 ### Getting the Vehicle’s Response
-- [func results() async throws -> ExecutionStatus](remotekeylessentryaction/executionrequest/results.md)
+- [func results() async throws -> ExecutionStatus](./executionrequest/results%28%29.md)
   Returns the results of a preceding action request.
-- [struct ExecutionStatus](executionstatus.md)
+- [struct ExecutionStatus](../executionstatus.md)
   A type that contains the status code a vehicle returns after executing an action.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

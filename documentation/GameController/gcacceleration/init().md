@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an acceleration structure.
 

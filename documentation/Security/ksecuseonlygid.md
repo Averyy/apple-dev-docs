@@ -1,7 +1,8 @@
 # kSecUseOnlyGID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The access control list should be owned by users that are members of a group matching the specified group ID parameter.
 
@@ -18,6 +19,10 @@ The access control list should be owned by users that are members of a group mat
 
 ```swift
 var kSecUseOnlyGID: Int { get }
+```
+
+```c
+kSecUseOnlyGID
 ```
 
 

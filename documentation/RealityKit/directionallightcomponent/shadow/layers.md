@@ -1,7 +1,8 @@
 # layers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layers of entities that cast shadows from this light.
 
@@ -21,11 +22,11 @@ var layers: RenderLayer.Set? { get set }
 
 #### Discussion
 
-An entity casts a shadow into this light’s shadow map when the layers of its [`RenderLayerComponent`](renderlayercomponent.md) intersect with this set.
+An entity casts a shadow into this light’s shadow map when the layers of its [`RenderLayerComponent`](../../renderlayercomponent.md) intersect with this set.
 
 Set this property to:
 
-- `nil` (the default) to inherit [`layers`](directionallightcomponent/layers.md), so any entity the light illuminates can also cast a shadow from it.
+- `nil` (the default) to inherit [`layers`](../layers.md), so any entity the light illuminates can also cast a shadow from it.
 - An empty set to disable shadow casting from this light entirely.
 
 Shadow casting can be restricted by layer on devices with Apple6 GPU family feature support.

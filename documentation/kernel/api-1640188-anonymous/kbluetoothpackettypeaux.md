@@ -1,14 +1,15 @@
 # kBluetoothPacketTypeAUX
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothPacketTypeAUX = 0x0200
 ```
 

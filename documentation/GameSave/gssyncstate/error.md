@@ -1,7 +1,8 @@
 # GSSyncState.error
 
 **Framework**: GameSave  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The directory is in error state and can’t be used.
 
@@ -18,23 +19,28 @@ The directory is in error state and can’t be used.
 case error
 ```
 
+```c
+GSSyncStateError
+```
+
 #### Discussion
 
-In this state, the value of [`error`](gssynceddirectorystate/error.md) is nonnull.
+In this state, the value of [`error`](../gssynceddirectorystate/error.md) is nonnull.
 
 ## See Also
 
-- [GSSyncState.closed](gssyncstate/closed.md)
+### Directory states
+- [GSSyncState.closed](./closed.md)
   The directory is closed.
-- [GSSyncState.conflicted](gssyncstate/conflicted.md)
+- [GSSyncState.conflicted](./conflicted.md)
   The directory has conflicts with the cloud, which the game needs to resolve.
-- [GSSyncState.local](gssyncstate/local.md)
+- [GSSyncState.local](./local.md)
   The directory is local-only and not synced to iCloud.
-- [GSSyncState.offline](gssyncstate/offline.md)
+- [GSSyncState.offline](./offline.md)
   The directory is available locally, but not fully synced because the device is offline.
-- [GSSyncState.ready](gssyncstate/ready.md)
+- [GSSyncState.ready](./ready.md)
   The directory is fully synced and ready to use.
-- [GSSyncState.syncing](gssyncstate/syncing.md)
+- [GSSyncState.syncing](./syncing.md)
   The directory is currently syncing and is not ready yet.
 
 

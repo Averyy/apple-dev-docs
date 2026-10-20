@@ -1,7 +1,8 @@
 # DiscontiguousSlice.Index
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A position in a `DiscontiguousSlice`.
 
@@ -20,28 +21,30 @@ A position in a `DiscontiguousSlice`.
 struct Index
 ```
 
+Available when `Base` conforms to `Collection`.
+
 ## Topics
 
 ### Instance Properties
-- [let base: Base.Index](discontiguousslice/index/base.md)
+- [let base: Base.Index](./index/base.md)
   The position of this index in the base collection.
 ### Default Implementations
-- [Comparable Implementations](discontiguousslice/index/comparable-implementations.md)
-- [CustomStringConvertible Implementations](discontiguousslice/index/customstringconvertible-implementations.md)
-- [Equatable Implementations](discontiguousslice/index/equatable-implementations.md)
-- [Hashable Implementations](discontiguousslice/index/hashable-implementations.md)
+- [Comparable Implementations](./index/comparable-implementations.md)
+- [CustomStringConvertible Implementations](./index/customstringconvertible-implementations.md)
+- [Equatable Implementations](./index/equatable-implementations.md)
+- [Hashable Implementations](./index/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Copyable](../copyable.md)
+- [CustomStringConvertible](../customstringconvertible.md)
+- [Equatable](../equatable.md)
+- [Escapable](../escapable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

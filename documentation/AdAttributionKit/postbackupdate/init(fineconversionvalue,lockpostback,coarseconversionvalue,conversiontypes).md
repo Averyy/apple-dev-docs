@@ -1,7 +1,8 @@
 # init(fineConversionValue:lockPostback:coarseConversionValue:conversionTypes:)
 
 **Framework**: AdAttributionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new postback update with the conversions values, conversion types, and lock indication you provide.
 

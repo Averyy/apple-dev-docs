@@ -1,7 +1,8 @@
 # AppScreenshotSet.Relationships.AppStoreVersionLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshotSet.Relationships.AppStoreVersionLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppScreenshotSet.Relationships.AppStoreVersionLocalization.Data](appscreenshotset/relationships-data.dictionary/appstoreversionlocalization-data.dictionary/data-data.dictionary.md)
+- [object AppScreenshotSet.Relationships.AppStoreVersionLocalization.Data](./appstoreversionlocalization-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -26,10 +27,11 @@ object AppScreenshotSet.Relationships.AppStoreVersionLocalization
 
 ## See Also
 
-- [object AppScreenshotSet.Relationships.AppScreenshots](appscreenshotset/relationships-data.dictionary/appscreenshots-data.dictionary.md)
+### Objects
+- [object AppScreenshotSet.Relationships.AppScreenshots](./appscreenshots-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppScreenshotSet.Relationships.AppCustomProductPageLocalization](appscreenshotset/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
-- [object AppScreenshotSet.Relationships.AppStoreVersionExperimentTreatmentLocalization](appscreenshotset/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
+- [object AppScreenshotSet.Relationships.AppCustomProductPageLocalization](./appcustomproductpagelocalization-data.dictionary.md)
+- [object AppScreenshotSet.Relationships.AppStoreVersionExperimentTreatmentLocalization](./appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
 
 
 ---

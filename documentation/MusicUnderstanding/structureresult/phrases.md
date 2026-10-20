@@ -1,7 +1,8 @@
 # phrases
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range of each phrase in the song.
 

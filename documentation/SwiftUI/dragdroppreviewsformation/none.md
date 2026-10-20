@@ -1,7 +1,8 @@
 # none
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Drag images maintain their set positions relative to each other.
 

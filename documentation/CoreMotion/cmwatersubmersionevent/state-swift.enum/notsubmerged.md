@@ -1,7 +1,8 @@
 # CMWaterSubmersionEvent.State.notSubmerged
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device isn’t submerged in water.
 
@@ -18,15 +19,20 @@ The device isn’t submerged in water.
 case notSubmerged
 ```
 
+```c
+CMWaterSubmersionStateNotSubmerged
+```
+
 ## Mentions
 
-- [Accessing submersion data](accessing-submersion-data.md)
+- [Accessing submersion data](../../accessing-submersion-data.md)
 
 ## See Also
 
-- [CMWaterSubmersionEvent.State.submerged](cmwatersubmersionevent/state-swift.enum/submerged.md)
+### Submersion states
+- [CMWaterSubmersionEvent.State.submerged](./submerged.md)
   The device is submerged in water.
-- [CMWaterSubmersionEvent.State.unknown](cmwatersubmersionevent/state-swift.enum/unknown.md)
+- [CMWaterSubmersionEvent.State.unknown](./unknown.md)
   The submersion state is unknown.
 
 

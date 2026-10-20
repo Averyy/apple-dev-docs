@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the label.
 
@@ -19,6 +20,8 @@ A text representation of the label.
 ```swift
 var debugDescription: String { get }
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 
 ---

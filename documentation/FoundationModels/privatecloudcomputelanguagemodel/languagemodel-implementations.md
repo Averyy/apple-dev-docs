@@ -1,11 +1,12 @@
 # LanguageModel Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [PrivateCloudComputeLanguageModel.Executor](privatecloudcomputelanguagemodel/executor.md)
+- [PrivateCloudComputeLanguageModel.Executor](./executor.md)
   An executor that responds to session requests using Private Cloud Compute.
 
 

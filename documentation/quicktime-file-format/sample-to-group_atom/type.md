@@ -1,13 +1,14 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
 ## Mentions
 
-- [Representing encoder delay explicitly](example_representing_encoder_delay_explicitly.md)
+- [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
 #### Overview
 
@@ -15,19 +16,20 @@ Set to `'sbgp'`.
 
 ## See Also
 
-- [Size](sample-to-group_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this sample-to-group atom.
-- [Version](sample-to-group_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this sample-to-group atom.
-- [Flags](sample-to-group_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte reserved space.
-- [Grouping type](sample-to-group_atom/grouping_type.md)
+- [Grouping type](./grouping_type.md)
   A 32-bit integer identifying the grouping type.
-- [Default length](sample-to-group_atom/default_length.md)
+- [Default length](./default_length.md)
   A 32-bit integer indicating the length of the group entry in the payload data.
-- [Entry count](sample-to-group_atom/entry_count.md)
+- [Entry count](./entry_count.md)
   A 32-bit integer giving the number of entries in the table data that follows.
-- [Table data](sample-to-group_atom/table_data.md)
+- [Table data](./table_data.md)
   A table of sample count and group description index pairs.
 
 

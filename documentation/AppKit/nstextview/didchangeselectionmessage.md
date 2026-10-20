@@ -1,7 +1,8 @@
 # NSTextView.DidChangeSelectionMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,14 +16,14 @@ struct DidChangeSelectionMessage
 ## Topics
 
 ### Instance Properties
-- [var oldSelectedCharacterRange: NSRange?](nstextview/didchangeselectionmessage/oldselectedcharacterrange.md)
-- [var textView: NSTextView](nstextview/didchangeselectionmessage/textview.md)
+- [var oldSelectedCharacterRange: NSRange?](./didchangeselectionmessage/oldselectedcharacterrange.md)
+- [var textView: NSTextView](./didchangeselectionmessage/textview.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

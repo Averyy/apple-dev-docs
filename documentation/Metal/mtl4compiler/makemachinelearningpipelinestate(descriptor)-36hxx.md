@@ -1,7 +1,8 @@
 # makeMachineLearningPipelineState(descriptor:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new machine learning pipeline state asynchronously.
 

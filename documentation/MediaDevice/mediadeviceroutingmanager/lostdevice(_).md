@@ -1,7 +1,8 @@
 # lostDevice(_:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a device from the system’s device lists so users can no longer select it.
 
@@ -19,11 +20,11 @@ final func lostDevice(_ device: MediaOutputDevice)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 
-Call this function when a previously discovered [`MediaOutputDevice`](mediaoutputdevice.md) can no longer be found.
+Call this function when a previously discovered [`MediaOutputDevice`](../mediaoutputdevice.md) can no longer be found.
 
 ## Parameters
 

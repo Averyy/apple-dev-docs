@@ -1,13 +1,14 @@
 # NSDictionary Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-1pcl.md)
-- [convenience init?(contentsOfURL: URL)](nsdictionary/init(contentsofurl:)-7fxy9.md)
-- [convenience init(contentsOfURL: URL, error: ()) throws](nsdictionary/init(contentsofurl:error:).md)
+- [init?(contentsOfURL: URL)](./init%28contentsofurl%29-1pcl.md)
+- [convenience init?(contentsOfURL: URL)](./init%28contentsofurl%29-7fxy9.md)
+- [convenience init(contentsOfURL: URL, error: ()) throws](./init%28contentsofurl,error%29.md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
 
 

@@ -1,7 +1,8 @@
 # USDPrim.Property.Variability.uniform
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Value must remain constant across all time samples.
 

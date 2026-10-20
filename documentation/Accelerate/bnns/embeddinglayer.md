@@ -1,7 +1,8 @@
 # BNNS.EmbeddingLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer object that wraps an embedding filter and manages its deinitialization.
 
@@ -11,8 +12,10 @@ A layer object that wraps an embedding filter and manages its deinitialization.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -138,26 +141,27 @@ dictionary.deallocate()
 ## Topics
 
 ### Creating an Embedding Layer
-- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, dictionary: BNNSNDArrayDescriptor, paddingIndex: Int, maximumNorm: Float, normType: BNNS.Norm, scalesGradientByFrequency: Bool, filterParameters: BNNSFilterParameters?)](bnns/embeddinglayer/init(input:output:dictionary:paddingindex:maximumnorm:normtype:scalesgradientbyfrequency:filterparameters:).md)
+- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, dictionary: BNNSNDArrayDescriptor, paddingIndex: Int, maximumNorm: Float, normType: BNNS.Norm, scalesGradientByFrequency: Bool, filterParameters: BNNSFilterParameters?)](./embeddinglayer/init%28input,output,dictionary,paddingindex,maximumnorm,normtype,scalesgradientbyfrequency,filterparameters%29.md)
   Returns a new embedding layer.
-- [struct Norm](bnns/norm.md)
+- [struct Norm](./norm.md)
   Constants that describe norm types.
 ### Applying an Embedding Layer
-- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](bnns/embeddinglayer/apply(batchsize:input:output:).md)
+- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](./embeddinglayer/apply%28batchsize,input,output%29.md)
   Applies the layer to a set of input objects, writing the result to a set of output objects.
-- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingWeightsGradient: BNNSNDArrayDescriptor) throws](bnns/embeddinglayer/applybackward(batchsize:input:output:outputgradient:generatingweightsgradient:).md)
+- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingWeightsGradient: BNNSNDArrayDescriptor) throws](./embeddinglayer/applybackward%28batchsize,input,output,outputgradient,generatingweightsgradient%29.md)
   Applies the layer backward to generate input gradients.
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.Layer](bnns/layer.md)
+- [BNNS.Layer](./layer.md)
 
 ## See Also
 
-- [struct BNNSLayerParametersEmbedding](bnnslayerparametersembedding.md)
+### Embedding layers
+- [struct BNNSLayerParametersEmbedding](../bnnslayerparametersembedding.md)
   A structure that contains the parameters of an embedding layer.
-- [func BNNSFilterCreateLayerEmbedding(UnsafePointer<BNNSLayerParametersEmbedding>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerembedding(_:_:).md)
+- [func BNNSFilterCreateLayerEmbedding(UnsafePointer<BNNSLayerParametersEmbedding>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayerembedding%28_,_%29.md)
   Returns a new embedding layer.
 
 

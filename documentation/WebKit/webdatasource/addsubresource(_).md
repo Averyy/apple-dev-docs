@@ -1,17 +1,22 @@
 # addSubresource(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a resource to the data source’s list of subresources.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func addSubresource(_ subresource: WebResource!)
+```
+
+```objc
+- (void) addSubresource:(WebResource *) subresource;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ If the data source needs to reload the resource’s URL, it loads the data from 
 
 ## See Also
 
-- [var mainResource: WebResource!](webdatasource/mainresource.md)
+### Accessing subresources
+- [var mainResource: WebResource!](./mainresource.md)
   A`WebResource` object representing the data source.
-- [func subresource(for: URL!) -> WebResource!](webdatasource/subresource(for:).md)
+- [func subresource(for: URL!) -> WebResource!](./subresource%28for%29.md)
   Returns a subresource for the given URL.
-- [var subresources: [Any]!](webdatasource/subresources.md)
+- [var subresources: [Any]!](./subresources.md)
   The data source’s subresources that have finished downloading.
 
 

@@ -1,7 +1,8 @@
 # USDPrim.ListPosition
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Where a new composition arc should be inserted relative to existing arcs.
 
@@ -22,32 +23,33 @@ enum ListPosition
 ## Topics
 
 ### Enumeration Cases
-- [USDPrim.ListPosition.backOfAppendList](usdprim/listposition/backofappendlist.md)
+- [USDPrim.ListPosition.backOfAppendList](./listposition/backofappendlist.md)
   Insert at the back of the append list, making this the weakest arc.
-- [USDPrim.ListPosition.backOfPrependList](usdprim/listposition/backofprependlist.md)
+- [USDPrim.ListPosition.backOfPrependList](./listposition/backofprependlist.md)
   Insert at the back of the prepend list.
-- [USDPrim.ListPosition.frontOfAppendList](usdprim/listposition/frontofappendlist.md)
+- [USDPrim.ListPosition.frontOfAppendList](./listposition/frontofappendlist.md)
   Insert at the front of the append list.
-- [USDPrim.ListPosition.frontOfPrependList](usdprim/listposition/frontofprependlist.md)
+- [USDPrim.ListPosition.frontOfPrependList](./listposition/frontofprependlist.md)
   Insert at the front of the prepend list, making this the strongest arc.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var references: USDPrim.ReferenceCollection](usdprim/references.md)
+### Composing references and payloads
+- [var references: USDPrim.ReferenceCollection](./references.md)
   The reference composition arcs on this prim.
-- [USDPrim.Reference](usdprim/reference.md)
+- [USDPrim.Reference](./reference.md)
   A reference to an external layer or asset.
-- [USDPrim.ReferenceCollection](usdprim/referencecollection.md)
+- [USDPrim.ReferenceCollection](./referencecollection.md)
   Manages reference composition arcs on a prim.
-- [USDPrim.Payload](usdprim/payload.md)
+- [USDPrim.Payload](./payload.md)
   A payload to an external asset.
 
 

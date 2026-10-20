@@ -1,7 +1,8 @@
 # squeezingShape(at:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified dimensions of size 1 from the shape of the tensor.
 
@@ -20,6 +21,12 @@ Removes the specified dimensions of size 1 from the shape of the tensor.
 func squeezingShape(at axes: Int...) -> MLTensor
 ```
 
+**Other overloads**:
+
+```swift
+func squeezingShape(at axes: [Int]) -> MLTensor
+```
+
 #### Discussion
 
 For example:
@@ -36,7 +43,8 @@ y.shape // is [2, 1]
 
 ## See Also
 
-- [func squeezingShape() -> MLTensor](mltensor/squeezingshape.md)
+### Removing dimensions from the shape of the tensor
+- [func squeezingShape() -> MLTensor](./squeezingshape%28%29.md)
   Removes all dimensions of size 1 from the shape of the tensor.
 
 

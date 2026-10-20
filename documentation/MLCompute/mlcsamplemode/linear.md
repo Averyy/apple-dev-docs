@@ -1,14 +1,15 @@
 # MLCSampleMode.linear
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -16,10 +17,15 @@
 case linear
 ```
 
+```c
+MLCSampleModeLinear
+```
+
 ## See Also
 
-- [MLCSampleMode.nearest](mlcsamplemode/nearest.md)
-- [var debugDescription: String](mlcsamplemode/debugdescription.md)
+### Enumeration Cases
+- [MLCSampleMode.nearest](./nearest.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual description of the sample mode, suitable for debugging.
 
 

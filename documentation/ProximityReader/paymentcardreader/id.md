@@ -1,14 +1,17 @@
 # id
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this object.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 17.0+
+- iOS 15.4+ - Deprecated in 16.0
+- iPadOS 15.4+ - Deprecated in 16.0
+- Mac Catalyst 17.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use ObjectIdentifier instead
 
 ## Declaration
 
@@ -18,9 +21,10 @@ final let id: String
 
 ## See Also
 
-- [func prepare(using: PaymentCardReader.Token, updateHandler: ((PaymentCardReader.UpdateEvent) -> Void)?) async throws -> PaymentCardReaderSession](paymentcardreader/prepare(using:updatehandler:).md)
+### Deprecated
+- [func prepare(using: PaymentCardReader.Token, updateHandler: ((PaymentCardReader.UpdateEvent) -> Void)?) async throws -> PaymentCardReaderSession](./prepare%28using,updatehandler%29.md)
   Configures the pipeline for reading payment or loyalty cards.
-- [PaymentCardReader.UpdateEvent](paymentcardreader/updateevent.md)
+- [PaymentCardReader.UpdateEvent](./updateevent.md)
   An event you receive during the configuration of the payment system.
 
 

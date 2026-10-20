@@ -1,7 +1,8 @@
 # Publishers.Encode
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that encodes elements received from an upstream publisher, using a given encoder.
 
@@ -23,24 +24,25 @@ struct Encode<Upstream, Coder> where Upstream : Publisher, Coder : TopLevelEncod
 ## Topics
 
 ### Creating a encode publisher
-- [init(upstream: Upstream, encoder: Coder)](publishers/encode/init(upstream:encoder:).md)
+- [init(upstream: Upstream, encoder: Coder)](./encode/init%28upstream,encoder%29.md)
   Creates a publisher that decodes elements received from an upstream publisher, using a given decoder.
 ### Declaring supporting types
-- [Publishers.Encode.Output](publishers/encode/output.md)
+- [Publishers.Encode.Output](./encode/output.md)
   The kind of values published by this publisher.
-- [Publishers.Encode.Failure](publishers/encode/failure.md)
+- [Publishers.Encode.Failure](./encode/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/encode/upstream.md)
+- [let upstream: Upstream](./encode/upstream.md)
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Decode](publishers/decode.md)
+### Encoding and decoding
+- [Publishers.Decode](./decode.md)
   A publisher that decodes elements received from an upstream publisher, using a given decoder.
 
 

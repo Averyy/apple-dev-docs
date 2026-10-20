@@ -1,7 +1,8 @@
 # addressCheckingResult(range:components:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified address components.
 
@@ -20,18 +21,23 @@ Creates and returns a text checking result with the specified address components
 class func addressCheckingResult(range: NSRange, components: [NSTextCheckingKey : String]) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) addressCheckingResultWithRange:(NSRange) range components:(NSDictionary<NSString *,NSString *> *) components;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`address`](nstextcheckingresult/checkingtype/address.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`address`](./checkingtype/address.md).
 
 ## Parameters
 
 - `range`: The range of the detected result.
-- `components`: A dictionary containing the address components. The dictionary keys are described in [`Keys for Address Components`](keys-for-address-components.md).
+- `components`: A dictionary containing the address components. The dictionary keys are described in [Keys for Address Components](../keys-for-address-components.md).
 
 ## See Also
 
-- [var addressComponents: [NSTextCheckingKey : String]?](nstextcheckingresult/addresscomponents.md)
+### Text Checking Results for Addresses
+- [var addressComponents: [NSTextCheckingKey : String]?](./addresscomponents.md)
   The address dictionary of a type checking result.
 
 

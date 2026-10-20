@@ -1,7 +1,8 @@
 # getEntry(for:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accesses an entry in a TXT record dictionary.
 
@@ -22,9 +23,10 @@ func getEntry(for key: String) -> NWTXTRecord.Entry?
 
 ## See Also
 
-- [subscript(String) -> String?](nwtxtrecord/subscript(_:).md)
+### Examining TXT Records
+- [subscript(String) -> String?](./subscript%28_%29.md)
   Get and set values in a TXT record dictionary, by keys.
-- [var dictionary: [String : String]](nwtxtrecord/dictionary.md)
+- [var dictionary: [String : String]](./dictionary.md)
   The TXT record as a dictionary of strings.
 
 

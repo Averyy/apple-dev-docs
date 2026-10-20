@@ -1,7 +1,8 @@
 # replaceObject(at:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the object at `index` with `anObject`.
 
@@ -20,26 +21,36 @@ Replaces the object at `index` with `anObject`.
 func replaceObject(at index: Int, with anObject: Any)
 ```
 
+```objc
+- (void) replaceObjectAtIndex:(NSUInteger) index withObject:(ObjectType) anObject;
+```
+
 ## Parameters
 
-- `index`: The index of the object to be replaced. This value must not exceed the bounds of the array. > ❗ **Important**:  Raises an `NSRangeException` if `index` is beyond the end of the array.
-- `anObject`: The object with which to replace the object at index `index` in the array. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `anObject` is `nil`.
+- `index`: The index of the object to be replaced. This value must not exceed the bounds of the array.
+
+  > ❗ **Important**:  Raises an `NSRangeException` if `index` is beyond the end of the array.
+- `anObject`: The object with which to replace the object at index `index` in the array. This value must not be `nil`.
+
+  > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `anObject` is `nil`.
 
 ## See Also
 
-- [func removeObjects(at: IndexSet)](nsmutablearray/removeobjects(at:).md)
+### Related Documentation
+- [func removeObjects(at: IndexSet)](./removeobjects%28at%29.md)
   Removes the objects at the specified indexes from the array.
-- [func removeObject(at: Int)](nsmutablearray/removeobject(at:).md)
+- [func removeObject(at: Int)](./removeobject%28at%29.md)
   Removes the object at `index` .
-- [func insert(Any, at: Int)](nsmutablearray/insert(_:at:)-5dbx5.md)
+- [func insert(Any, at: Int)](./insert%28_,at%29-5dbx5.md)
   Inserts a given object into the array’s contents at a given index.
-- [func replaceObjects(at: IndexSet, with: [Any])](nsmutablearray/replaceobjects(at:with:).md)
+### Replacing Objects
+- [func replaceObjects(at: IndexSet, with: [Any])](./replaceobjects%28at,with%29.md)
   Replaces the objects in the receiving array at locations specified with the objects from a given array.
-- [func replaceObjects(in: NSRange, withObjectsFrom: [Any], range: NSRange)](nsmutablearray/replaceobjects(in:withobjectsfrom:range:).md)
+- [func replaceObjects(in: NSRange, withObjectsFrom: [Any], range: NSRange)](./replaceobjects%28in,withobjectsfrom,range%29.md)
   Replaces the objects in the receiving array specified by one given range with the objects in another array specified by another range.
-- [func replaceObjects(in: NSRange, withObjectsFrom: [Any])](nsmutablearray/replaceobjects(in:withobjectsfrom:).md)
+- [func replaceObjects(in: NSRange, withObjectsFrom: [Any])](./replaceobjects%28in,withobjectsfrom%29.md)
   Replaces the objects in the receiving array specified by a given range with all of the objects from a given array.
-- [func setArray([Any])](nsmutablearray/setarray(_:).md)
+- [func setArray([Any])](./setarray%28_%29.md)
   Sets the receiving array’s elements to those in another given array.
 
 

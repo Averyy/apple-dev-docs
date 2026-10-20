@@ -1,17 +1,22 @@
 # selectedRow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The row number of the selected cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var selectedRow: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger selectedRow;
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ When the value of this property is `–1`, no cells are selected. If cells in mu
 
 ## See Also
 
-- [var selectedCells: [NSCell]](nsmatrix/selectedcells.md)
+### Finding Cells
+- [var selectedCells: [NSCell]](./selectedcells.md)
   An array containing all of the matrix’s highlighted cells plus its selected cell.
-- [var selectedColumn: Int](nsmatrix/selectedcolumn.md)
+- [var selectedColumn: Int](./selectedcolumn.md)
   The column number of the selected cell.
-- [func cell(atRow: Int, column: Int) -> NSCell?](nsmatrix/cell(atrow:column:).md)
+- [func cell(atRow: Int, column: Int) -> NSCell?](./cell%28atrow,column%29.md)
   Returns the cell at the specified row and column.
-- [func cell(withTag: Int) -> NSCell?](nsmatrix/cell(withtag:).md)
+- [func cell(withTag: Int) -> NSCell?](./cell%28withtag%29.md)
   Searches the receiver and returns the last cell matching the specified tag.
-- [var cells: [NSCell]](nsmatrix/cells.md)
+- [var cells: [NSCell]](./cells.md)
   An array containing the cells of the matrix.
 
 

@@ -1,7 +1,8 @@
 # NSRecursiveLock
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A lock that may be acquired multiple times by the same thread without causing a deadlock.
 
@@ -20,49 +21,54 @@ A lock that may be acquired multiple times by the same thread without causing a 
 class NSRecursiveLock
 ```
 
+```objc
+@interface NSRecursiveLock : NSObject
+```
+
 #### Overview
 
-[`NSRecursiveLock`](nsrecursivelock.md) defines a lock that may be acquired multiple times by the same thread without causing a deadlock, a situation where a thread is permanently blocked waiting for itself to relinquish a lock. While the locking thread has one or more locks, all other threads are prevented from accessing the code protected by the lock.
+[`NSRecursiveLock`](./nsrecursivelock.md) defines a lock that may be acquired multiple times by the same thread without causing a deadlock, a situation where a thread is permanently blocked waiting for itself to relinquish a lock. While the locking thread has one or more locks, all other threads are prevented from accessing the code protected by the lock.
 
 ## Topics
 
 ### Acquiring a Lock
-- [func lock(before: Date) -> Bool](nsrecursivelock/lock(before:).md)
+- [func lock(before: Date) -> Bool](./nsrecursivelock/lock%28before%29.md)
   Attempts to acquire a lock before a given date.
-- [func `try`() -> Bool](nsrecursivelock/try.md)
+- [func `try`() -> Bool](./nsrecursivelock/try%28%29.md)
   Attempts to acquire a lock, and immediately returns a Boolean value that indicates whether the attempt was successful.
 ### Naming the Lock
-- [var name: String?](nsrecursivelock/name.md)
+- [var name: String?](./nsrecursivelock/name.md)
   The name associated with the receiver.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSLocking](nslocking.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSLocking](./nslocking.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class Thread](thread.md)
+### Threads and Locking
+- [class Thread](./thread.md)
   A thread of execution.
-- [protocol NSLocking](nslocking.md)
+- [protocol NSLocking](./nslocking.md)
   The elementary methods adopted by classes that define lock objects.
-- [class NSLock](nslock.md)
+- [class NSLock](./nslock.md)
   An object that coordinates the operation of multiple threads of execution within the same application.
-- [class NSDistributedLock](nsdistributedlock.md)
+- [class NSDistributedLock](./nsdistributedlock.md)
   A lock that multiple applications on multiple hosts can use to restrict access to some shared resource, such as a file.
-- [class NSConditionLock](nsconditionlock.md)
+- [class NSConditionLock](./nsconditionlock.md)
   A lock that can be associated with specific, user-defined conditions.
-- [class NSCondition](nscondition.md)
+- [class NSCondition](./nscondition.md)
   A condition variable whose semantics follow those used for POSIX-style conditions.
 
 

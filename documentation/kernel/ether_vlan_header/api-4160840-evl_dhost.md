@@ -1,14 +1,15 @@
 # evl_dhost
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 u_char evl_dhost[6];
 ```
 

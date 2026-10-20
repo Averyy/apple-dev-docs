@@ -1,7 +1,8 @@
 # GLenum
 
 **Framework**: WebKit JS  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 typedef  GLenum;
 ```
 

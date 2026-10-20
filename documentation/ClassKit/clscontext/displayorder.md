@@ -1,7 +1,8 @@
 # displayOrder
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of a context relative to its siblings.
 
@@ -18,9 +19,13 @@ The position of a context relative to its siblings.
 var displayOrder: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger displayOrder;
+```
+
 ## Mentions
 
-- [Building missing contexts](building-missing-contexts.md)
+- [Building missing contexts](../building-missing-contexts.md)
 
 #### Discussion
 
@@ -28,9 +33,10 @@ Setting this value provides a hint to the system about what order you intend sib
 
 ## See Also
 
-- [var topic: CLSContextTopic?](clscontext/topic.md)
+### Managing context presentation
+- [var topic: CLSContextTopic?](./topic.md)
   The area of study to which a context relates.
-- [struct CLSContextTopic](clscontexttopic.md)
+- [struct CLSContextTopic](../clscontexttopic.md)
   The areas of study to which contexts may relate.
 
 

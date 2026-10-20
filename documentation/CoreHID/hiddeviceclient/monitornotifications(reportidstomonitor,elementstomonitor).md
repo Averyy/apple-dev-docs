@@ -1,7 +1,8 @@
 # monitorNotifications(reportIDsToMonitor:elementsToMonitor:)
 
 **Framework**: Core HID  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous that receives notifications about the associated device.
 
@@ -16,7 +17,7 @@ func monitorNotifications(reportIDsToMonitor: [ClosedRange<HIDReportID>], elemen
 
 ## Mentions
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
 #### Return Value
 
@@ -44,16 +45,17 @@ case .deviceRemoved:
 }
 ```
 
-> **Note**: [`HIDDeviceError`](hiddeviceerror.md) if there is an issue with setup.
+> **Throws**: [`HIDDeviceError`](../hiddeviceerror.md) if there is an issue with setup.
 
 ## Parameters
 
-- `reportIDsToMonitor`: The report IDs that should trigger an [`HIDDeviceClient.Notification.inputReport(id:data:timestamp:)`](hiddeviceclient/notification/inputreport(id:data:timestamp:).md) notification.
-- `elementsToMonitor`: The elements that should trigger an [`HIDDeviceClient.Notification.elementUpdates(values:)`](hiddeviceclient/notification/elementupdates(values:).md) notification. Elements of interest can be parsed from [`elements`](hiddeviceclient/elements.md).
+- `reportIDsToMonitor`: The report IDs that should trigger an [`HIDDeviceClient.Notification.inputReport(id:data:timestamp:)`](./notification/inputreport%28id,data,timestamp%29.md) notification.
+- `elementsToMonitor`: The elements that should trigger an [`HIDDeviceClient.Notification.elementUpdates(values:)`](./notification/elementupdates%28values%29.md) notification. Elements of interest can be parsed from [`elements`](./elements.md).
 
 ## See Also
 
-- [HIDDeviceClient.Notification](hiddeviceclient/notification.md)
+### Monitor device notifications
+- [HIDDeviceClient.Notification](./notification.md)
   Notifications for a HID device.
 
 

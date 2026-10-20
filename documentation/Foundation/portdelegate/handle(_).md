@@ -1,7 +1,8 @@
 # handle(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes a given incoming message on the port.
 
@@ -16,15 +17,27 @@ Processes a given incoming message on the port.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+optional func handle(_ message: NSPortMessage)
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 optional func handle(_ message: PortMessage)
 ```
 
+```objc
+- (void) handlePortMessage:(NSPortMessage *) message;
+```
+
 #### Discussion
 
-See [`Port`](port.md) for more information.
+See [`Port`](../port.md) for more information.
 
-The delegate should implement either [`handle(_:)`](portdelegate/handle(_:).md) or the [`NSMachPortDelegate`](nsmachportdelegate.md) protocol method [`handleMachMessage(_:)`](nsmachportdelegate/handlemachmessage(_:).md). You must not implement both delegate methods.
+The delegate should implement either [`handle(_:)`](./handle%28_%29.md) or the [`NSMachPortDelegate`](../nsmachportdelegate.md) protocol method [`handleMachMessage(_:)`](../nsmachportdelegate/handlemachmessage%28_%29.md). You must not implement both delegate methods.
 
 ## Parameters
 
@@ -32,7 +45,8 @@ The delegate should implement either [`handle(_:)`](portdelegate/handle(_:).md) 
 
 ## See Also
 
-- [Distributed Objects Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
+### Related Documentation
+- [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
 
 
 ---

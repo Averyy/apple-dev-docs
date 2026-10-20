@@ -1,7 +1,8 @@
 # playbackProgress
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of content played for the media item.
 
@@ -19,27 +20,32 @@ The amount of content played for the media item.
 var playbackProgress: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float playbackProgress;
+```
+
 #### Discussion
 
 The value of this property ranges from `0.0` to `1.0`. A value `0.0` indicates that the media item hasn’t played, while `1.0` indicates that the media item has completely played. The default value is `–1.0` indicates that the progress indicator isn’t displayed. The system displays a progress indicator automatically if this property has a value between `0.0` and `1.0`.
 
 ## See Also
 
-- [var artwork: MPMediaItemArtwork?](mpcontentitem/artwork.md)
+### Retrieving information about a media item
+- [var artwork: MPMediaItemArtwork?](./artwork.md)
   A single image that’s associated with the media item.
-- [var isContainer: Bool](mpcontentitem/iscontainer.md)
+- [var isContainer: Bool](./iscontainer.md)
   A Boolean value that indicates whether a media item is container of other items.
-- [var isExplicitContent: Bool](mpcontentitem/isexplicitcontent.md)
+- [var isExplicitContent: Bool](./isexplicitcontent.md)
   A Boolean value that indicates whether the media item contains explicit content.
-- [var identifier: String](mpcontentitem/identifier.md)
+- [var identifier: String](./identifier.md)
   The unique identifier for the media item.
-- [var isPlayable: Bool](mpcontentitem/isplayable.md)
+- [var isPlayable: Bool](./isplayable.md)
   A Boolean value that indicates whether a media item is able to be played.
-- [var isStreamingContent: Bool](mpcontentitem/isstreamingcontent.md)
+- [var isStreamingContent: Bool](./isstreamingcontent.md)
   A Boolean value that indicates whether the content item is streaming content.
-- [var subtitle: String?](mpcontentitem/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A secondary designator for the media item.
-- [var title: String?](mpcontentitem/title.md)
+- [var title: String?](./title.md)
   The public name of the media item.
 
 

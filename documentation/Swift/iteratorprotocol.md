@@ -1,7 +1,8 @@
 # IteratorProtocol
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that supplies the values of a sequence one at a time.
 
@@ -101,7 +102,7 @@ Whenever you use multiple iterators (or `for`-`in` loops) over a single sequence
 
 Obtain each separate iterator from separate calls to the sequence’s `makeIterator()` method rather than by copying. Copying an iterator is safe, but advancing one copy of an iterator by calling its `next()` method may invalidate other copies of that iterator. `for`-`in` loops are safe in this regard.
 
-### Adding Iteratorprotocol Conformance to Your Type
+### Adding IteratorProtocol Conformance to Your Type
 
 Implementing an iterator that conforms to `IteratorProtocol` is simple. Declare a `next()` method that advances one step in the related sequence and returns the current element. When the sequence has been exhausted, the `next()` method returns `nil`.
 
@@ -156,50 +157,51 @@ for count in threeTwoOne {
 ## Topics
 
 ### Associated Types
-- [associatedtype Element](iteratorprotocol/element.md)
+- [associatedtype Element](./iteratorprotocol/element.md)
   The type of element traversed by the iterator.
 ### Instance Methods
-- [func next() -> Self.Element?](iteratorprotocol/next.md)
+- [func next() -> Self.Element?](./iteratorprotocol/next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 
 ## Relationships
 
 ### Conforming Types
-- [AnyIterator](anyiterator.md)
-- [CollectionOfOne.Iterator](collectionofone/iterator.md)
-- [Dictionary.Iterator](dictionary/iterator.md)
-- [Dictionary.Keys.Iterator](dictionary/keys-swift.struct/iterator.md)
-- [Dictionary.Values.Iterator](dictionary/values-swift.struct/iterator.md)
-- [DropWhileSequence.Iterator](dropwhilesequence/iterator.md)
-- [EmptyCollection.Iterator](emptycollection/iterator.md)
-- [EnumeratedSequence.Iterator](enumeratedsequence/iterator.md)
-- [FlattenSequence.Iterator](flattensequence/iterator.md)
-- [IndexingIterator](indexingiterator.md)
-- [IteratorSequence](iteratorsequence.md)
-- [JoinedSequence.Iterator](joinedsequence/iterator.md)
-- [LazyDropWhileSequence.Iterator](lazydropwhilesequence/iterator.md)
-- [LazyFilterSequence.Iterator](lazyfiltersequence/iterator.md)
-- [LazyMapSequence.Iterator](lazymapsequence/iterator.md)
-- [LazyPrefixWhileSequence.Iterator](lazyprefixwhilesequence/iterator.md)
-- [PartialRangeFrom.Iterator](partialrangefrom/iterator.md)
-- [PrefixSequence.Iterator](prefixsequence/iterator.md)
-- [ReversedCollection.Iterator](reversedcollection/iterator.md)
-- [Set.Iterator](set/iterator.md)
-- [StrideThroughIterator](stridethroughiterator.md)
-- [StrideToIterator](stridetoiterator.md)
-- [String.Iterator](string/iterator.md)
-- [String.UTF16View.Iterator](string/utf16view/iterator.md)
-- [String.UnicodeScalarView.Iterator](string/unicodescalarview/iterator.md)
-- [UnfoldSequence](unfoldsequence.md)
-- [UnsafeBufferPointer.Iterator](unsafebufferpointer/iterator.md)
-- [UnsafeRawBufferPointer.Iterator](unsaferawbufferpointer/iterator.md)
-- [Zip2Sequence.Iterator](zip2sequence/iterator.md)
+- [AnyIterator](./anyiterator.md)
+- [CollectionOfOne.Iterator](./collectionofone/iterator.md)
+- [Dictionary.Iterator](./dictionary/iterator.md)
+- [Dictionary.Keys.Iterator](./dictionary/keys-swift.struct/iterator.md)
+- [Dictionary.Values.Iterator](./dictionary/values-swift.struct/iterator.md)
+- [DropWhileSequence.Iterator](./dropwhilesequence/iterator.md)
+- [EmptyCollection.Iterator](./emptycollection/iterator.md)
+- [EnumeratedSequence.Iterator](./enumeratedsequence/iterator.md)
+- [FlattenSequence.Iterator](./flattensequence/iterator.md)
+- [IndexingIterator](./indexingiterator.md)
+- [IteratorSequence](./iteratorsequence.md)
+- [JoinedSequence.Iterator](./joinedsequence/iterator.md)
+- [LazyDropWhileSequence.Iterator](./lazydropwhilesequence/iterator.md)
+- [LazyFilterSequence.Iterator](./lazyfiltersequence/iterator.md)
+- [LazyMapSequence.Iterator](./lazymapsequence/iterator.md)
+- [LazyPrefixWhileSequence.Iterator](./lazyprefixwhilesequence/iterator.md)
+- [PartialRangeFrom.Iterator](./partialrangefrom/iterator.md)
+- [PrefixSequence.Iterator](./prefixsequence/iterator.md)
+- [ReversedCollection.Iterator](./reversedcollection/iterator.md)
+- [Set.Iterator](./set/iterator.md)
+- [StrideThroughIterator](./stridethroughiterator.md)
+- [StrideToIterator](./stridetoiterator.md)
+- [String.Iterator](./string/iterator.md)
+- [String.UTF16View.Iterator](./string/utf16view/iterator.md)
+- [String.UnicodeScalarView.Iterator](./string/unicodescalarview/iterator.md)
+- [UnfoldSequence](./unfoldsequence.md)
+- [UnsafeBufferPointer.Iterator](./unsafebufferpointer/iterator.md)
+- [UnsafeRawBufferPointer.Iterator](./unsaferawbufferpointer/iterator.md)
+- [Zip2Sequence.Iterator](./zip2sequence/iterator.md)
 
 ## See Also
 
-- [protocol Sequence](sequence.md)
+### First Steps
+- [protocol Sequence](./sequence.md)
   A type that provides sequential, iterated access to its elements.
-- [protocol Collection](collection.md)
+- [protocol Collection](./collection.md)
   A sequence whose elements can be traversed multiple times, nondestructively, and accessed by an indexed subscript.
 
 

@@ -1,9 +1,10 @@
 # daysOfTheWeek
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The days of the week associated with the recurrence rule, as an array of [`EKRecurrenceDayOfWeek`](ekrecurrencedayofweek.md) objects.
+The days of the week associated with the recurrence rule, as an array of [`EKRecurrenceDayOfWeek`](../ekrecurrencedayofweek.md) objects.
 
 **Availability**:
 - iOS 4.0+
@@ -19,35 +20,40 @@ The days of the week associated with the recurrence rule, as an array of [`EKRec
 var daysOfTheWeek: [EKRecurrenceDayOfWeek]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<EKRecurrenceDayOfWeek *> * daysOfTheWeek;
+```
+
 #### Discussion
 
-This property value is valid only for recurrence rules that were initialized with specific days of the week and a frequency type of [`EKRecurrenceFrequency.weekly`](ekrecurrencefrequency/weekly.md), [`EKRecurrenceFrequency.monthly`](ekrecurrencefrequency/monthly.md), or [`EKRecurrenceFrequency.yearly`](ekrecurrencefrequency/yearly.md).
+This property value is valid only for recurrence rules that were initialized with specific days of the week and a frequency type of [`EKRecurrenceFrequency.weekly`](../ekrecurrencefrequency/weekly.md), [`EKRecurrenceFrequency.monthly`](../ekrecurrencefrequency/monthly.md), or [`EKRecurrenceFrequency.yearly`](../ekrecurrencefrequency/yearly.md).
 
 ## See Also
 
-- [enum EKRecurrenceFrequency](ekrecurrencefrequency.md)
+### Accessing Recurrence Rule Properties
+- [enum EKRecurrenceFrequency](../ekrecurrencefrequency.md)
   The frequency for recurrence rules.
-- [var calendarIdentifier: String](ekrecurrencerule/calendaridentifier.md)
+- [var calendarIdentifier: String](./calendaridentifier.md)
   The identifier for the recurrence rule’s calendar.
-- [var recurrenceEnd: EKRecurrenceEnd?](ekrecurrencerule/recurrenceend.md)
+- [var recurrenceEnd: EKRecurrenceEnd?](./recurrenceend.md)
   Indicates when the recurrence rule ends.
-- [var frequency: EKRecurrenceFrequency](ekrecurrencerule/frequency.md)
+- [var frequency: EKRecurrenceFrequency](./frequency.md)
   The frequency of the recurrence rule.
-- [var interval: Int](ekrecurrencerule/interval.md)
+- [var interval: Int](./interval.md)
   Specifies how often the recurrence rule repeats over the unit of time indicated by its frequency.
-- [var firstDayOfTheWeek: Int](ekrecurrencerule/firstdayoftheweek.md)
+- [var firstDayOfTheWeek: Int](./firstdayoftheweek.md)
   Indicates which day of the week the recurrence rule treats as the first day of the week.
-- [var daysOfTheMonth: [NSNumber]?](ekrecurrencerule/daysofthemonth.md)
+- [var daysOfTheMonth: [NSNumber]?](./daysofthemonth.md)
   The days of the month associated with the recurrence rule, as an array of `NSNumber` objects.
-- [var daysOfTheYear: [NSNumber]?](ekrecurrencerule/daysoftheyear.md)
+- [var daysOfTheYear: [NSNumber]?](./daysoftheyear.md)
   The days of the year associated with the recurrence rule, as an array of `NSNumber` objects.
-- [var weeksOfTheYear: [NSNumber]?](ekrecurrencerule/weeksoftheyear.md)
+- [var weeksOfTheYear: [NSNumber]?](./weeksoftheyear.md)
   The weeks of the year associated with the recurrence rule, as an array of `NSNumber` objects.
-- [var monthsOfTheYear: [NSNumber]?](ekrecurrencerule/monthsoftheyear.md)
+- [var monthsOfTheYear: [NSNumber]?](./monthsoftheyear.md)
   The months of the year associated with the recurrence rule, as an array of `NSNumber` objects.
-- [var setPositions: [NSNumber]?](ekrecurrencerule/setpositions.md)
+- [var setPositions: [NSNumber]?](./setpositions.md)
   An array of ordinal numbers that filters which recurrences to include in the recurrence rule’s frequency.
-- [func EK_LOSE_FRACTIONAL_SECONDS_DO_NOT_USE()](ek_lose_fractional_seconds_do_not_use().md)
+- [func EK_LOSE_FRACTIONAL_SECONDS_DO_NOT_USE()](../ek_lose_fractional_seconds_do_not_use%28%29.md)
   A deprecated function.
 
 

@@ -1,7 +1,8 @@
 # CoreSpotlightActionIdentifier
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string an app defines to identify the action.
 
@@ -10,19 +11,21 @@ A string an app defines to identify the action.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CoreSpotlightActionIdentifier`
+- **Type**: string
 
 #### Discussion
 
-Core Spotlight includes the value of this key in the `userInfo` dictionary of the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) when it invokes the app.
+Core Spotlight includes the value of this key in the `userInfo` dictionary of the [`NSUserActivity`](../../../Foundation/nsuseractivity.md) when it invokes the app.
 
 ## See Also
 
-- [CoreSpotlightActionTitle](information-property-list/corespotlightactions/corespotlightactiontitle.md)
+### Action Properties
+- [CoreSpotlightActionTitle](./corespotlightactiontitle.md)
   The user-visible string that Spotlight displays as the title of the action.
-- [CoreSpotlightActionSymbolImage](information-property-list/corespotlightactions/corespotlightactionsymbolimage.md)
+- [CoreSpotlightActionSymbolImage](./corespotlightactionsymbolimage.md)
   The name of a SF Symbol to display next to the action’s title.
 
 

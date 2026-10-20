@@ -1,7 +1,8 @@
 # AudioConverterSetProperty(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the value of an audio converter object property.
 
@@ -17,6 +18,10 @@ Sets the value of an audio converter object property.
 
 ```swift
 func AudioConverterSetProperty(_ inAudioConverter: AudioConverterRef, _ inPropertyID: AudioConverterPropertyID, _ inPropertyDataSize: UInt32, _ inPropertyData: UnsafeRawPointer) -> OSStatus
+```
+
+```c
+extern OSStatus AudioConverterSetProperty(AudioConverterRef inAudioConverter, AudioConverterPropertyID inPropertyID, UInt32 inPropertyDataSize, const void *inPropertyData);
 ```
 
 #### Return Value
@@ -46,9 +51,10 @@ You can employ the property mechanism, for example, to split a monaural input to
 
 ## See Also
 
-- [func AudioConverterGetProperty(AudioConverterRef, AudioConverterPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audioconvertergetproperty(_:_:_:_:).md)
+### Configuring Audio Converter Properties
+- [func AudioConverterGetProperty(AudioConverterRef, AudioConverterPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audioconvertergetproperty%28_,_,_,_%29.md)
   Gets an audio converter property value.
-- [func AudioConverterGetPropertyInfo(AudioConverterRef, AudioConverterPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](audioconvertergetpropertyinfo(_:_:_:_:).md)
+- [func AudioConverterGetPropertyInfo(AudioConverterRef, AudioConverterPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./audioconvertergetpropertyinfo%28_,_,_,_%29.md)
   Gets information about an audio converter property.
 
 

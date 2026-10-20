@@ -1,7 +1,8 @@
 # NSManagedObjectContext.ScheduledTaskType
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The different types of scheduled tasks.
 
@@ -11,7 +12,7 @@ The different types of scheduled tasks.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,26 +24,27 @@ enum ScheduledTaskType
 ## Topics
 
 ### Scheduled Task Types
-- [NSManagedObjectContext.ScheduledTaskType.enqueued](nsmanagedobjectcontext/scheduledtasktype/enqueued.md)
+- [NSManagedObjectContext.ScheduledTaskType.enqueued](./scheduledtasktype/enqueued.md)
   The enqueued scheduled task type.
-- [NSManagedObjectContext.ScheduledTaskType.immediate](nsmanagedobjectcontext/scheduledtasktype/immediate.md)
+- [NSManagedObjectContext.ScheduledTaskType.immediate](./scheduledtasktype/immediate.md)
   The immediate scheduled task type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [func perform(() -> Void)](nsmanagedobjectcontext/perform(_:).md)
+### Performing block operations
+- [func perform(() -> Void)](./perform%28_%29.md)
   Asynchronously performs the specified closure on the context’s queue.
-- [func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType, () throws -> T) async rethrows -> T](nsmanagedobjectcontext/perform(schedule:_:).md)
+- [func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType, () throws -> T) async rethrows -> T](./perform%28schedule,_%29.md)
   Submits a closure to the context’s queue for asynchronous execution.
-- [func performAndWait(() -> Void)](nsmanagedobjectcontext/performandwait(_:)-ypye.md)
+- [func performAndWait(() -> Void)](./performandwait%28_%29-ypye.md)
   Synchronously performs the specified closure on the context’s queue.
-- [func performAndWait<T>(() throws -> T) rethrows -> T](nsmanagedobjectcontext/performandwait(_:)-6aaf1.md)
+- [func performAndWait<T>(() throws -> T) rethrows -> T](./performandwait%28_%29-6aaf1.md)
   Submits a closure to the context’s queue for synchronous execution.
 
 

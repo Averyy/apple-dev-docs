@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content view of the accessory.
 
@@ -14,6 +15,10 @@ The content view of the accessory.
 
 ```swift
 var contentView: UIView { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nonnull) UIView * contentView;
 ```
 
 

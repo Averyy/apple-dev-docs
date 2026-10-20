@@ -1,17 +1,22 @@
 # openConnection(_:withPageTimeout:authenticationRequired:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a baseband connection to the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func openConnection(_ target: Any!, withPageTimeout pageTimeoutValue: BluetoothHCIPageTimeout, authenticationRequired: Bool) -> IOReturn
+```
+
+```objc
+- (IOReturn) openConnection:(id) target withPageTimeout:(BluetoothHCIPageTimeout) pageTimeoutValue authenticationRequired:(BOOL) authenticationRequired;
 ```
 
 #### Return Value

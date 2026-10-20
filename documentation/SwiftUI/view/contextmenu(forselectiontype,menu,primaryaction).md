@@ -1,7 +1,8 @@
 # contextMenu(forSelectionType:menu:primaryAction:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an item-based context menu to a view.
 
@@ -25,7 +26,7 @@ A view that can display an item-based context menu.
 
 #### Discussion
 
-You can add an item-based context menu to a container that supports selection, like a [`List`](list.md) or a [`Table`](table.md). In the closure that you use to define the menu, you receive a collection of items that depends on the selection state of the container and the location where the person clicks or taps to activate the menu. The collection contains:
+You can add an item-based context menu to a container that supports selection, like a [`List`](../list.md) or a [`Table`](../table.md). In the closure that you use to define the menu, you receive a collection of items that depends on the selection state of the container and the location where the person clicks or taps to activate the menu. The collection contains:
 
 - The selected item or items, when people initiate the context menu from any selected item.
 - Nothing, if people tap or click to activate the context menu from an empty part of the container. This is true even when one or more items is currently selected.
@@ -61,21 +62,21 @@ struct ContextMenuItemExample: View {
 }
 ```
 
-The above example assumes that the `Item` type conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, and relies on the associated `ID` type for both selection and context menu presentation.
+The above example assumes that the `Item` type conforms to the [`Identifiable`](../../Swift/identifiable.md) protocol, and relies on the associated `ID` type for both selection and context menu presentation.
 
-If you add the modifier to a view hierarchy that doesn’t have a container that supports selection, the context menu never activates. To add a context menu that doesn’t depend on selection behavior, use [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md). To add a context menu to a specific row in a table, use [`contextMenu(menuItems:)`](tablerowcontent/contextmenu(menuitems:).md).
+If you add the modifier to a view hierarchy that doesn’t have a container that supports selection, the context menu never activates. To add a context menu that doesn’t depend on selection behavior, use [`contextMenu(menuItems:)`](./contextmenu%28menuitems%29.md). To add a context menu to a specific row in a table, use [`contextMenu(menuItems:)`](../tablerowcontent/contextmenu%28menuitems%29.md).
 
-##### Add a Primary Action
+##### Add a primary action
 
 Optionally, you can add a custom primary action to the context menu. In macOS, a single click on a row in a selectable container selects that row, and a double click performs the primary action. In iOS and iPadOS, tapping on the row activates the primary action. To select a row without performing an action, either enter edit mode or hold shift or command on a keyboard while tapping the row.
 
-For example, you can modify the context menu from the previous example so that double clicking the row on macOS opens a new window for selected items. Get the [`OpenWindowAction`](openwindowaction.md) from the environment:
+For example, you can modify the context menu from the previous example so that double clicking the row on macOS opens a new window for selected items. Get the [`OpenWindowAction`](../openwindowaction.md) from the environment:
 
 ```swift
 @Environment(\.openWindow) private var openWindow
 ```
 
-Then call [`openWindow`](environmentvalues/openwindow.md) from inside the `primaryAction` closure for each item:
+Then call [`openWindow`](../environmentvalues/openwindow.md) from inside the `primaryAction` closure for each item:
 
 ```swift
 .contextMenu(forSelectionType: Item.ID.self) { items in
@@ -87,7 +88,7 @@ Then call [`openWindow`](environmentvalues/openwindow.md) from inside the `prima
 }
 ```
 
-The open window action depends on the declaration of a [`WindowGroup`](windowgroup.md) scene in your [`App`](app.md) that responds to the `Item` type:
+The open window action depends on the declaration of a [`WindowGroup`](../windowgroup.md) scene in your [`App`](../app.md) that responds to the `Item` type:
 
 ```swift
 WindowGroup("Item Detail", for: Item.self) { $item in
@@ -98,14 +99,15 @@ WindowGroup("Item Detail", for: Item.self) { $item in
 ## Parameters
 
 - `itemType`: The identifier type of the items. Ensure that this matches the container’s selection type.
-- `menu`: A closure that produces the menu. A single parameter to the closure contains the set of items to act on. An empty set indicates menu activation over the empty area of the selectable container, while a non-empty set indicates menu activation over selected items. Use controls like [`Button`](button.md), [`Picker`](picker.md), and [`Toggle`](toggle.md) to define the menu items. You can also create submenus using [`Menu`](menu.md), or group items with [`Section`](section.md). You can deactivate the context menu by returning nothing from the closure.
+- `menu`: A closure that produces the menu. A single parameter to the closure contains the set of items to act on. An empty set indicates menu activation over the empty area of the selectable container, while a non-empty set indicates menu activation over selected items. Use controls like [`Button`](../button.md), [`Picker`](../picker.md), and [`Toggle`](../toggle.md) to define the menu items. You can also create submenus using [`Menu`](../menu.md), or group items with [`Section`](../section.md). You can deactivate the context menu by returning nothing from the closure.
 - `primaryAction`: A closure that defines the action to perform in response to the primary interaction. A single parameter to the closure contains the set of items to act on.
 
 ## See Also
 
-- [func contextMenu<MenuItems>(menuItems: () -> MenuItems) -> some View](view/contextmenu(menuitems:).md)
+### Creating context menus
+- [func contextMenu<MenuItems>(menuItems: () -> MenuItems) -> some View](./contextmenu%28menuitems%29.md)
   Adds a context menu to a view.
-- [func contextMenu<M, P>(menuItems: () -> M, preview: () -> P) -> some View](view/contextmenu(menuitems:preview:).md)
+- [func contextMenu<M, P>(menuItems: () -> M, preview: () -> P) -> some View](./contextmenu%28menuitems,preview%29.md)
   Adds a context menu with a custom preview to a view.
 
 

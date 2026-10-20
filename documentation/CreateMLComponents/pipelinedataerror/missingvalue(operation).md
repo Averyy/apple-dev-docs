@@ -1,7 +1,8 @@
 # PipelineDataError.missingValue(operation:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that an expected value is missing.
 
@@ -22,17 +23,18 @@ case missingValue(operation: String)
 
 ## See Also
 
-- [PipelineDataError.emptyInput(operation:)](pipelinedataerror/emptyinput(operation:).md)
+### Analyzing the error
+- [PipelineDataError.emptyInput(operation:)](./emptyinput%28operation%29.md)
   An error that indicates that the input to fit is empty.
-- [case incompatibleConfiguration(operation: String, debugDescription: String)](pipelinedataerror/incompatibleconfiguration(operation:debugdescription:).md)
+- [case incompatibleConfiguration(operation: String, debugDescription: String)](./incompatibleconfiguration%28operation,debugdescription%29.md)
   An error that indicates that an input is not compatible with an operation’s configuration.
-- [case incompatibleDataFormat(operation: String, debugDescription: String)](pipelinedataerror/incompatibledataformat(operation:debugdescription:).md)
+- [case incompatibleDataFormat(operation: String, debugDescription: String)](./incompatibledataformat%28operation,debugdescription%29.md)
   An error that indicates that an input doesn’t have the expected data format.
-- [PipelineDataError.incompatibleShape(_:debugDescription:)](pipelinedataerror/incompatibleshape(_:debugdescription:).md)
+- [PipelineDataError.incompatibleShape(_:debugDescription:)](./incompatibleshape%28_,debugdescription%29.md)
   An error that indicates that an input’s doesn’t have the expected shape for the operation.
-- [PipelineDataError.missingAnnotation(operation:)](pipelinedataerror/missingannotation(operation:).md)
+- [PipelineDataError.missingAnnotation(operation:)](./missingannotation%28operation%29.md)
   An error that indicates that an expected annotation is missing.
-- [case unrecognizedCategory(operation: String, category: String)](pipelinedataerror/unrecognizedcategory(operation:category:).md)
+- [case unrecognizedCategory(operation: String, category: String)](./unrecognizedcategory%28operation,category%29.md)
   An error that indicates that a new category was encountered after fitting.
 
 

@@ -1,7 +1,8 @@
 # fade(value:duration:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value gradually over the given amount of time.
 
@@ -17,6 +18,10 @@ Sets the value gradually over the given amount of time.
 
 ```swift
 func fade(value: Double, duration: TimeInterval)
+```
+
+```objc
+- (void) fadeToValue:(double) value duration:(NSTimeInterval) duration;
 ```
 
 ## Parameters

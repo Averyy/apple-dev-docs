@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in elements, of each dimension of the shape.
 
@@ -11,7 +12,7 @@ The size, in elements, of each dimension of the shape.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var size: (Int, Int, Int, Int, Int, Int, Int, Int) { get }
 
 ## See Also
 
-- [var batchStride: Int](bnns/shape/batchstride.md)
+### Inspecting the Properties of a Shape
+- [var batchStride: Int](./batchstride.md)
   The number of elements between each batch of data in the shape.
-- [var layout: BNNSDataLayout](bnns/shape/layout.md)
+- [var layout: BNNSDataLayout](./layout.md)
   The data layout of the shape.
-- [var rank: Int](bnns/shape/rank.md)
+- [var rank: Int](./rank.md)
   The number of dimensions of the shape.
-- [var stride: (Int, Int, Int, Int, Int, Int, Int, Int)](bnns/shape/stride.md)
+- [var stride: (Int, Int, Int, Int, Int, Int, Int, Int)](./stride.md)
   The stride, in elements, of each dimension of the shape.
 
 

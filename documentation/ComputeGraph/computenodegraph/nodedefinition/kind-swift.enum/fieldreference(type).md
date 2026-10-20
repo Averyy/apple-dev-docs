@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.fieldReference(type:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Node contains a reference to a field of another stage, containing the given layout
 
@@ -12,7 +13,7 @@ Node contains a reference to a field of another stage, containing the given layo
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

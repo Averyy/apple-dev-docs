@@ -1,14 +1,15 @@
 # reserved4
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 UInt8 reserved4:4;
 ```
 

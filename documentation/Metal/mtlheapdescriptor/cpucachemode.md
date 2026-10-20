@@ -1,7 +1,8 @@
 # cpuCacheMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CPU cache behavior for any resources you allocate from the heaps you create with this descriptor.
 
@@ -19,25 +20,30 @@ The CPU cache behavior for any resources you allocate from the heaps you create 
 var cpuCacheMode: MTLCPUCacheMode { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLCPUCacheMode cpuCacheMode;
+```
+
 #### Discussion
 
-This property’s default value is [`MTLCPUCacheMode.defaultCache`](mtlcpucachemode/defaultcache.md).
+This property’s default value is [`MTLCPUCacheMode.defaultCache`](../mtlcpucachemode/defaultcache.md).
 
 The resources you allocate from a heap inherit that heap’s CPU cache mode.
 
 ## See Also
 
-- [var type: MTLHeapType](mtlheapdescriptor/type.md)
+### Configuring a heap
+- [var type: MTLHeapType](./type.md)
   The memory placement strategy for any resources you allocate from the heaps you create with this descriptor.
-- [var storageMode: MTLStorageMode](mtlheapdescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The storage mode for the heaps you create with this descriptor.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlheapdescriptor/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   The hazard tracking behavior for any resources you allocate from the heaps you create with this descriptor.
-- [var resourceOptions: MTLResourceOptions](mtlheapdescriptor/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./resourceoptions.md)
   The combined behavior for any resources you allocate from the heaps you create with this descriptor.
-- [var size: Int](mtlheapdescriptor/size.md)
+- [var size: Int](./size.md)
   The total amount of memory, in bytes, for the heaps you create with this descriptor.
-- [var sparsePageSize: MTLSparsePageSize](mtlheapdescriptor/sparsepagesize.md)
+- [var sparsePageSize: MTLSparsePageSize](./sparsepagesize.md)
   The page size for any resources you allocate from the heaps you create with this descriptor.
 
 

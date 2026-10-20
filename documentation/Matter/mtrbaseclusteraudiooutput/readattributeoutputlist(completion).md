@@ -1,7 +1,8 @@
 # readAttributeOutputList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOutputList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOutputList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeOutputListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

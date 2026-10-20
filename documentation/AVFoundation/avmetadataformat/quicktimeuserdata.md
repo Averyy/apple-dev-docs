@@ -1,7 +1,8 @@
 # quickTimeUserData
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The QuickTime user data metadata format.
 
@@ -20,19 +21,24 @@ The QuickTime user data metadata format.
 static let quickTimeUserData: AVMetadataFormat
 ```
 
+```c
+extern AVMetadataFormat const AVMetadataFormatQuickTimeUserData;
+```
+
 ## See Also
 
-- [static let hlsMetadata: AVMetadataFormat](avmetadataformat/hlsmetadata.md)
+### Metadata formats
+- [static let hlsMetadata: AVMetadataFormat](./hlsmetadata.md)
   The HLS metadata format.
-- [static let iTunesMetadata: AVMetadataFormat](avmetadataformat/itunesmetadata.md)
+- [static let iTunesMetadata: AVMetadataFormat](./itunesmetadata.md)
   The iTunes metadata format.
-- [static let id3Metadata: AVMetadataFormat](avmetadataformat/id3metadata.md)
+- [static let id3Metadata: AVMetadataFormat](./id3metadata.md)
   The ID3 metadata format.
-- [static let isoUserData: AVMetadataFormat](avmetadataformat/isouserdata.md)
+- [static let isoUserData: AVMetadataFormat](./isouserdata.md)
   The ISO user data metadata format.
-- [static let quickTimeMetadata: AVMetadataFormat](avmetadataformat/quicktimemetadata.md)
+- [static let quickTimeMetadata: AVMetadataFormat](./quicktimemetadata.md)
   The QuickTime metadata format.
-- [static let unknown: AVMetadataFormat](avmetadataformat/unknown.md)
+- [static let unknown: AVMetadataFormat](./unknown.md)
   An unknown metadata format.
 
 

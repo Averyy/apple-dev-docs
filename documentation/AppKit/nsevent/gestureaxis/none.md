@@ -1,7 +1,8 @@
 # NSEvent.GestureAxis.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No specific axis.
 
@@ -14,11 +15,16 @@ No specific axis.
 case none
 ```
 
+```c
+NSEventGestureAxisNone
+```
+
 ## See Also
 
-- [NSEvent.GestureAxis.horizontal](nsevent/gestureaxis/horizontal.md)
+### Getting the Axis
+- [NSEvent.GestureAxis.horizontal](./horizontal.md)
   The horizontal axis.
-- [NSEvent.GestureAxis.vertical](nsevent/gestureaxis/vertical.md)
+- [NSEvent.GestureAxis.vertical](./vertical.md)
   The vertical axis.
 
 

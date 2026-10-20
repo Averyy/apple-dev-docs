@@ -1,7 +1,8 @@
 # fireDateComponents
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date components that specify when the event is triggered.
 
@@ -17,6 +18,10 @@ The date components that specify when the event is triggered.
 
 ```swift
 var fireDateComponents: DateComponents { get set }
+```
+
+```objc
+@property (nonatomic, strong, readwrite) NSDateComponents * fireDateComponents;
 ```
 
 

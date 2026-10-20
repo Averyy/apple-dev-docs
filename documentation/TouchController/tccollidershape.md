@@ -1,7 +1,8 @@
 # TCColliderShape
 
 **Framework**: Touch Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the shape of a control collider.
 
@@ -16,33 +17,38 @@ Defines the shape of a control collider.
 enum TCColliderShape
 ```
 
+```c
+enum TCColliderShape : NSInteger;
+```
+
 ## Topics
 
 ### Shapes
-- [TCColliderShape.circle](tccollidershape/circle.md)
+- [TCColliderShape.circle](./tccollidershape/circle.md)
   A circular collider.
-- [TCColliderShape.leftSide](tccollidershape/leftside.md)
+- [TCColliderShape.leftSide](./tccollidershape/leftside.md)
   A collider representing the left side of the view the touch controller is embedded in. Useful for thumbsticks and delta controls, so the user can easily hit the control without looking closely.
-- [TCColliderShape.rect](tccollidershape/rect.md)
+- [TCColliderShape.rect](./tccollidershape/rect.md)
   A rectangular collider.
-- [TCColliderShape.rightSide](tccollidershape/rightside.md)
+- [TCColliderShape.rightSide](./tccollidershape/rightside.md)
   A collider representing the right side of the view the touch controller is embedded in. Useful for thumbsticks and delta controls, so the user can easily hit the control without looking closely.
 ### Creating a collider shape
-- [init?(rawValue: Int)](tccollidershape/init(rawvalue:).md)
+- [init?(rawValue: Int)](./tccollidershape/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var colliderShape: TCColliderShape](tcbutton/collidershape.md)
+### Getting the collider shape
+- [var colliderShape: TCColliderShape](./tcbutton/collidershape.md)
   The collider shape for the button.
 
 

@@ -1,11 +1,12 @@
 # Sequence Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [LowLevelMeshInstanceArray.Iterator](lowlevelmeshinstancearray/iterator.md)
+- [LowLevelMeshInstanceArray.Iterator](./iterator.md)
   An iterator over the mesh instance slots.
 
 

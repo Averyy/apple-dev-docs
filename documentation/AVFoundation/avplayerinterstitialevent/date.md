@@ -1,7 +1,8 @@
 # date
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date within the date range of the primary content that playback of interstitial content begins.
 
@@ -20,23 +21,28 @@ A date within the date range of the primary content that playback of interstitia
 var date: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * date;
+```
+
 #### Discussion
 
 This property value is `nil` if you initialized the event with a time instead of a date.
 
 ## See Also
 
-- [var time: CMTime](avplayerinterstitialevent/time.md)
+### Inspecting timing
+- [var time: CMTime](./time.md)
   A time within the timeline of the primary content that playback of interstitial content begins.
-- [var willPlayOnce: Bool](avplayerinterstitialevent/willplayonce.md)
+- [var willPlayOnce: Bool](./willplayonce.md)
   A Boolean value that indicates whether to schedule this event one time only and suppress subsequent replay.
-- [var resumptionOffset: CMTime](avplayerinterstitialevent/resumptionoffset.md)
+- [var resumptionOffset: CMTime](./resumptionoffset.md)
   A time offset at which playback of primary content resumes after interstitial content finishes.
-- [var playoutLimit: CMTime](avplayerinterstitialevent/playoutlimit.md)
+- [var playoutLimit: CMTime](./playoutlimit.md)
   The time offset at which playback of the interstitial ends.
-- [var alignsStartWithPrimarySegmentBoundary: Bool](avplayerinterstitialevent/alignsstartwithprimarysegmentboundary.md)
+- [var alignsStartWithPrimarySegmentBoundary: Bool](./alignsstartwithprimarysegmentboundary.md)
   A Boolean value that indicates whether the start time of interstitial playback should snap to a segment boundary of the primary asset.
-- [var alignsResumptionWithPrimarySegmentBoundary: Bool](avplayerinterstitialevent/alignsresumptionwithprimarysegmentboundary.md)
+- [var alignsResumptionWithPrimarySegmentBoundary: Bool](./alignsresumptionwithprimarysegmentboundary.md)
   A Boolean value that indicates whether the resumption time of primary playback should snap to a segment boundary of the primary asset.
 
 

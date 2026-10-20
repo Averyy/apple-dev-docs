@@ -1,7 +1,8 @@
 # addEvent(_:at:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a music event to a track at the time you specify.
 
@@ -19,12 +20,16 @@ Adds a music event to a track at the time you specify.
 func addEvent(_ event: AVMusicEvent, at beat: AVMusicTimeStamp)
 ```
 
+```objc
+- (void) addEvent:(AVMusicEvent *) event atBeat:(AVMusicTimeStamp) beat;
+```
+
 #### Discussion
 
-The system copies event contents into the track, so you can add the same event at different timestamps. You can’t add all [`AVMusicEvent`](avmusicevent.md) subclasses to a track.
+The system copies event contents into the track, so you can add the same event at different timestamps. You can’t add all [`AVMusicEvent`](../avmusicevent.md) subclasses to a track.
 
-- You can only add [`AVExtendedTempoEvent`](avextendedtempoevent.md) and [`AVMIDIMetaEvent`](avmidimetaevent.md) with certain [`AVMIDIMetaEvent.EventType`](avmidimetaevent/eventtype.md) to a sequencer’s tempo track.
-- You can add [`AVParameterEvent`](avparameterevent.md) to automation tracks.
+- You can only add [`AVExtendedTempoEvent`](../avextendedtempoevent.md) and [`AVMIDIMetaEvent`](../avmidimetaevent.md) with certain [`AVMIDIMetaEvent.EventType`](../avmidimetaevent/eventtype.md) to a sequencer’s tempo track.
+- You can add [`AVParameterEvent`](../avparameterevent.md) to automation tracks.
 - You can’t add other event subclasses to tempo or automation tracks.
 
 ## Parameters
@@ -34,9 +39,10 @@ The system copies event contents into the track, so you can add the same event a
 
 ## See Also
 
-- [func moveEvents(in: AVBeatRange, by: AVMusicTimeStamp)](avmusictrack/moveevents(in:by:).md)
+### Adding and clearing events
+- [func moveEvents(in: AVBeatRange, by: AVMusicTimeStamp)](./moveevents%28in,by%29.md)
   Moves the beat location of all events in the given beat range by the amount you specify.
-- [func clearEvents(in: AVBeatRange)](avmusictrack/clearevents(in:).md)
+- [func clearEvents(in: AVBeatRange)](./clearevents%28in%29.md)
   Removes all events in the given beat range from the music track.
 
 

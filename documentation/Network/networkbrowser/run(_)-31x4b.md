@@ -1,7 +1,8 @@
 # run(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Run the browser and receive updates when when the set of discovered endpoints change.
 

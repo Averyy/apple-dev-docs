@@ -1,7 +1,8 @@
 # CurrentWeather
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the current conditions observed at a location.
 
@@ -27,67 +28,68 @@ The current conditions may not be a literal observation, but rather the result o
 ## Topics
 
 ### Getting temperature and humidity
-- [var apparentTemperature: Measurement<UnitTemperature>](currentweather/apparenttemperature.md)
+- [var apparentTemperature: Measurement<UnitTemperature>](./currentweather/apparenttemperature.md)
   The feels-like temperature when factoring wind and humidity.
-- [var dewPoint: Measurement<UnitTemperature>](currentweather/dewpoint.md)
+- [var dewPoint: Measurement<UnitTemperature>](./currentweather/dewpoint.md)
   The temperature at which relative humidity is 100%.
-- [var humidity: Double](currentweather/humidity.md)
+- [var humidity: Double](./currentweather/humidity.md)
   The amount of water vapor in the air.
-- [var temperature: Measurement<UnitTemperature>](currentweather/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./currentweather/temperature.md)
   The current temperature.
 ### Getting wind and pressure
-- [var pressure: Measurement<UnitPressure>](currentweather/pressure.md)
+- [var pressure: Measurement<UnitPressure>](./currentweather/pressure.md)
   The sea level air pressure in millibars.
-- [var pressureTrend: PressureTrend](currentweather/pressuretrend.md)
+- [var pressureTrend: PressureTrend](./currentweather/pressuretrend.md)
   The direction of change of the sea level air pressure.
-- [var wind: Wind](currentweather/wind.md)
+- [var wind: Wind](./currentweather/wind.md)
   The wind speed, direction, and gust.
 ### Getting conditions
-- [var cloudCover: Double](currentweather/cloudcover.md)
+- [var cloudCover: Double](./currentweather/cloudcover.md)
   The percentage of the sky covered with clouds.
-- [var condition: WeatherCondition](currentweather/condition.md)
+- [var condition: WeatherCondition](./currentweather/condition.md)
   An enumeration value indicating the condition at the time.
 ### Getting date and validity
-- [var date: Date](currentweather/date.md)
+- [var date: Date](./currentweather/date.md)
   The date of the current weather.
 ### Getting daylight and visibility
-- [var isDaylight: Bool](currentweather/isdaylight.md)
+- [var isDaylight: Bool](./currentweather/isdaylight.md)
   A Boolean value indicating whether there is daylight.
-- [var uvIndex: UVIndex](currentweather/uvindex.md)
+- [var uvIndex: UVIndex](./currentweather/uvindex.md)
   The level of ultraviolet radiation.
-- [var visibility: Measurement<UnitLength>](currentweather/visibility.md)
+- [var visibility: Measurement<UnitLength>](./currentweather/visibility.md)
   The distance at which terrain is visible.
 ### Getting additional information
-- [var metadata: WeatherMetadata](currentweather/metadata.md)
+- [var metadata: WeatherMetadata](./currentweather/metadata.md)
   Descriptive information about the current weather data.
-- [var symbolName: String](currentweather/symbolname.md)
+- [var symbolName: String](./currentweather/symbolname.md)
   The SF Symbol icon that represents the current weather condition and whether it’s daylight at the current date.
 ### Instance Properties
-- [var cloudCoverByAltitude: CloudCoverByAltitude](currentweather/cloudcoverbyaltitude.md)
+- [var cloudCoverByAltitude: CloudCoverByAltitude](./currentweather/cloudcoverbyaltitude.md)
   The percentage of the sky covered with low-altitude, middle altitude and high-altitude clouds during the period.
-- [var precipitationIntensity: Measurement<UnitSpeed>](currentweather/precipitationintensity.md)
+- [var precipitationIntensity: Measurement<UnitSpeed>](./currentweather/precipitationintensity.md)
   The current precipitation intensity in kilometers per hour.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WeatherQuery](weatherquery.md)
+### Requests
+- [struct WeatherQuery](./weatherquery.md)
   A structure that encapsulates a generic weather dataset request.
-- [struct WeatherAttribution](weatherattribution.md)
+- [struct WeatherAttribution](./weatherattribution.md)
   A structure that  defines the necessary information for attributing a weather data provider.
-- [struct WeatherMetadata](weathermetadata.md)
+- [struct WeatherMetadata](./weathermetadata.md)
   A structure that provides additional weather information.
-- [enum WeatherSeverity](weatherseverity.md)
+- [enum WeatherSeverity](./weatherseverity.md)
   A description of the severity of the severe weather event.
 
 

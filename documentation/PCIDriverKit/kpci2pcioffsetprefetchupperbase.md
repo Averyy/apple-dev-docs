@@ -1,41 +1,43 @@
 # kPCI2PCIOffsetPrefetchUpperBase
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The offset to the prefetchable base upper 32 bits register.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kPCI2PCIOffsetPrefetchUpperBase
 ```
 
 ## See Also
 
-- [kPCI2PCIOffsetPrimaryBus](kpci2pcioffsetprimarybus.md)
+### Offsets
+- [kPCI2PCIOffsetPrimaryBus](./kpci2pcioffsetprimarybus.md)
   The offset to the primary bus number register.
-- [kPCI2PCIOffsetSecondaryBus](kpci2pcioffsetsecondarybus.md)
+- [kPCI2PCIOffsetSecondaryBus](./kpci2pcioffsetsecondarybus.md)
   The offset to the secondary bus number register.
-- [kPCI2PCIOffsetSubordinateBus](kpci2pcioffsetsubordinatebus.md)
+- [kPCI2PCIOffsetSubordinateBus](./kpci2pcioffsetsubordinatebus.md)
   The offset to the subordinate bus number register.
-- [kPCI2PCIOffsetSecondaryLT](kpci2pcioffsetsecondarylt.md)
+- [kPCI2PCIOffsetSecondaryLT](./kpci2pcioffsetsecondarylt.md)
   The offset to the secondary latency timer register.
-- [kPCI2PCIOffsetIORange](kpci2pcioffsetiorange.md)
+- [kPCI2PCIOffsetIORange](./kpci2pcioffsetiorange.md)
   The offset to the I/O base upper and I/O limit upper registers.
-- [kPCI2PCIOffsetMemoryRange](kpci2pcioffsetmemoryrange.md)
+- [kPCI2PCIOffsetMemoryRange](./kpci2pcioffsetmemoryrange.md)
   The offset to the memory base and memory limit registers.
-- [kPCI2PCIOffsetPrefetchMemoryRange](kpci2pcioffsetprefetchmemoryrange.md)
+- [kPCI2PCIOffsetPrefetchMemoryRange](./kpci2pcioffsetprefetchmemoryrange.md)
   The offset to the prefetchable memory base and prefetchable memory limit registers.
-- [kPCI2PCIOffsetPrefetchUpperLimit](kpci2pcioffsetprefetchupperlimit.md)
+- [kPCI2PCIOffsetPrefetchUpperLimit](./kpci2pcioffsetprefetchupperlimit.md)
   The offset to the prefetchable limit upper 32 bits registers.
-- [kPCI2PCIOffsetUpperIORange](kpci2pcioffsetupperiorange.md)
+- [kPCI2PCIOffsetUpperIORange](./kpci2pcioffsetupperiorange.md)
   The offset to the I/O base upper and I/O limit upper registers.
-- [kPCI2PCIOffsetBridgeControl](kpci2pcioffsetbridgecontrol.md)
+- [kPCI2PCIOffsetBridgeControl](./kpci2pcioffsetbridgecontrol.md)
   The offset to the bridge control register.
 
 

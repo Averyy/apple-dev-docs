@@ -1,7 +1,8 @@
 # ViewModifier
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A modifier that you apply to a view or another view modifier, producing a different version of the original value.
 
@@ -23,11 +24,11 @@ A modifier that you apply to a view or another view modifier, producing a differ
 
 ## Mentions
 
-- [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
+- [Reducing view modifier maintenance](./reducing-view-modifier-maintenance.md)
 
 #### Overview
 
-Adopt the [`ViewModifier`](viewmodifier.md) protocol when you want to create a reusable modifier that you can apply to any view. The example below combines several modifiers to create a new modifier that you can use to create blue caption text surrounded by a rounded rectangle:
+Adopt the [`ViewModifier`](./viewmodifier.md) protocol when you want to create a reusable modifier that you can apply to any view. The example below combines several modifiers to create a new modifier that you can use to create blue caption text surrounded by a rounded rectangle:
 
 ```swift
 struct BorderedCaption: ViewModifier {
@@ -44,7 +45,7 @@ struct BorderedCaption: ViewModifier {
 }
 ```
 
-You can apply [`modifier(_:)`](view/modifier(_:).md) directly to a view, but a more common and idiomatic approach uses [`modifier(_:)`](view/modifier(_:).md) to define an extension to [`View`](view.md) itself that incorporates the view modifier:
+You can apply [`modifier(_:)`](./view/modifier%28_%29.md) directly to a view, but a more common and idiomatic approach uses [`modifier(_:)`](./view/modifier%28_%29.md) to define an extension to [`View`](./view.md) itself that incorporates the view modifier:
 
 ```swift
 extension View {
@@ -64,7 +65,7 @@ Text("Downtown Bus")
     .borderedCaption()
 ```
 
-![A screenshot showing the image of a bus with a caption reading](/images/com.apple.SwiftUI/SwiftUI-View-ViewModifier@2x.png)
+![A screenshot showing the image of a bus with a caption reading](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-ViewModifier@2x.png)
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -85,66 +86,67 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Creating a view modifier
-- [func body(content: Self.Content) -> Self.Body](viewmodifier/body(content:).md)
+- [func body(content: Self.Content) -> Self.Body](./viewmodifier/body%28content%29.md)
   Gets the current body of the caller.
-- [associatedtype Body : View](viewmodifier/body.md)
+- [associatedtype Body : View](./viewmodifier/body.md)
   The type of view representing the body.
-- [ViewModifier.Content](viewmodifier/content.md)
+- [ViewModifier.Content](./viewmodifier/content.md)
   The content view type passed to `body()`.
 ### Adding animations to a view
-- [func animation(Animation?) -> some ViewModifier](viewmodifier/animation(_:).md)
+- [func animation(Animation?) -> some ViewModifier](./viewmodifier/animation%28_%29.md)
   Returns a new version of the modifier that will apply `animation` to all animatable values within the modifier.
-- [func concat<T>(T) -> ModifiedContent<Self, T>](viewmodifier/concat(_:).md)
+- [func concat<T>(T) -> ModifiedContent<Self, T>](./viewmodifier/concat%28_%29.md)
   Returns a new modifier that is the result of concatenating `self` with `modifier`.
 ### Handling view taps and gestures
-- [func transaction((inout Transaction) -> Void) -> some ViewModifier](viewmodifier/transaction(_:).md)
+- [func transaction((inout Transaction) -> Void) -> some ViewModifier](./viewmodifier/transaction%28_%29.md)
   Returns a new version of the modifier that will apply the transaction mutation function `transform` to all transactions within the modifier.
 
 ## Relationships
 
 ### Inherited By
-- [AnimatableModifier](animatablemodifier.md)
-- [EnvironmentalModifier](environmentalmodifier.md)
-- [GeometryEffect](geometryeffect.md)
+- [AnimatableModifier](./animatablemodifier.md)
+- [EnvironmentalModifier](./environmentalmodifier.md)
+- [GeometryEffect](./geometryeffect.md)
 ### Conforming Types
-- [AccessibilityAttachmentModifier](accessibilityattachmentmodifier.md)
-- [EmptyModifier](emptymodifier.md)
-- [LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
-- [ManipulableModifier](manipulablemodifier.md)
-- [ManipulableResponderModifier](manipulablerespondermodifier.md)
-- [ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
-- [ManipulationGeometryModifier](manipulationgeometrymodifier.md)
-- [ManipulationGestureModifier](manipulationgesturemodifier.md)
-- [ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
-- [ModifiedContent](modifiedcontent.md)
+- [AccessibilityAttachmentModifier](./accessibilityattachmentmodifier.md)
+- [EmptyModifier](./emptymodifier.md)
+- [LayoutRotationUnaryLayout](./layoutrotationunarylayout.md)
+- [ManipulableModifier](./manipulablemodifier.md)
+- [ManipulableResponderModifier](./manipulablerespondermodifier.md)
+- [ManipulableTransformBindingModifier](./manipulabletransformbindingmodifier.md)
+- [ManipulationGeometryModifier](./manipulationgeometrymodifier.md)
+- [ManipulationGestureModifier](./manipulationgesturemodifier.md)
+- [ManipulationUsingGestureStateModifier](./manipulationusinggesturestatemodifier.md)
+- [ModifiedContent](./modifiedcontent.md)
 
 ## See Also
 
-- [Configuring views](configuring-views.md)
+### Modifying a view
+- [Configuring views](./configuring-views.md)
   Adjust the characteristics of a view by applying view modifiers.
-- [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
+- [Reducing view modifier maintenance](./reducing-view-modifier-maintenance.md)
   Bundle view modifiers that you regularly reuse into a custom view modifier.
-- [func modifier<T>(T) -> ModifiedContent<Self, T>](view/modifier(_:).md)
+- [func modifier<T>(T) -> ModifiedContent<Self, T>](./view/modifier%28_%29.md)
   Applies a modifier to a view and returns a new view.
-- [struct EmptyModifier](emptymodifier.md)
+- [struct EmptyModifier](./emptymodifier.md)
   An empty, or identity, modifier, used during development to switch modifiers at compile time.
-- [struct ModifiedContent](modifiedcontent.md)
+- [struct ModifiedContent](./modifiedcontent.md)
   A value with a modifier applied to it.
-- [protocol EnvironmentalModifier](environmentalmodifier.md)
+- [protocol EnvironmentalModifier](./environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
-- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableModifier](./manipulablemodifier.md)
   A view modifier that lets hand gestures move, rotate, and scale a view.
-- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableResponderModifier](./manipulablerespondermodifier.md)
   A view modifier that makes a view respond to manipulation hand gestures.
-- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulableTransformBindingModifier](./manipulabletransformbindingmodifier.md)
   A view modifier that applies a 3D affine transform to a view and lets hand gestures change it.
-- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGeometryModifier](./manipulationgeometrymodifier.md)
   A view modifier that tracks the geometry a manipulation gesture acts on.
-- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationGestureModifier](./manipulationgesturemodifier.md)
   A view modifier that recognizes manipulation hand gestures and reports their state through a binding.
-- [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+- [struct ManipulationUsingGestureStateModifier](./manipulationusinggesturestatemodifier.md)
   A view modifier that applies the manipulation state from a gesture on another view.
-- [enum Manipulable](manipulable.md)
+- [enum Manipulable](./manipulable.md)
   A namespace for various manipulable related types.
 
 

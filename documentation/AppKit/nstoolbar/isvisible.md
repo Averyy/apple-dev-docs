@@ -1,7 +1,8 @@
 # isVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the toolbar is visible.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the toolbar is visible.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,19 +18,24 @@ A Boolean value that indicates whether the toolbar is visible.
 var isVisible: Bool { get set }
 ```
 
+```objc
+@property (getter=isVisible) BOOL visible;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the toolbar is visible; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false). Change the value to hide or show the toolbar.
+If the value of this property is [`true`](../../Swift/true.md), the toolbar is visible; otherwise, it’s [`false`](../../Swift/false.md). Change the value to hide or show the toolbar.
 
 ## See Also
 
-- [var displayMode: NSToolbar.DisplayMode](nstoolbar/displaymode-swift.property.md)
+### Configuring the toolbar’s behavior
+- [var displayMode: NSToolbar.DisplayMode](./displaymode-swift.property.md)
   A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.
-- [NSToolbar.DisplayMode](nstoolbar/displaymode-swift.enum.md)
+- [NSToolbar.DisplayMode](./displaymode-swift.enum.md)
   Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
-- [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)
+- [var allowsUserCustomization: Bool](./allowsusercustomization.md)
   A Boolean value that indicates whether users can modify the contents of the toolbar.
-- [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)
+- [var allowsExtensionItems: Bool](./allowsextensionitems.md)
   A Boolean value that indicates whether the toolbar can add items for Action extensions.
 
 

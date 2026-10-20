@@ -1,7 +1,8 @@
 # synonyms
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of localized phrases that are synonyms of this particular display representation
 
@@ -11,7 +12,7 @@ A list of localized phrases that are synonyms of this particular display represe
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

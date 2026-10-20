@@ -1,6 +1,7 @@
 # Storing Keys as Data
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Create an external representation of a key for transmission.
 
@@ -8,9 +9,9 @@ Create an external representation of a key for transmission.
 
 If you have a key that you want to send somewhere, you package it in a form that’s suitable for transmission.
 
-##### Export the Key As a Data Instance
+##### Export the Key as a Data Instance
 
-Create a data instance representing a key using the [`SecKeyCopyExternalRepresentation(_:_:)`](seckeycopyexternalrepresentation(_:_:).md) function:
+Create a data instance representing a key using the [`SecKeyCopyExternalRepresentation(_:_:)`](./seckeycopyexternalrepresentation%28_,_%29.md) function:
 
 **Swift**:
 
@@ -39,9 +40,9 @@ if (!keyData) {
 
 The data instance returned from this function can then be sent across a network, through the file system, or by any other means, so long as the data’s content is preserved exactly.
 
-This method works for both public and private keys. However, it doesn’t work for all keys. For example, if a key is bound to a smart card or to the Secure Enclave, you can’t export it this way. Also, in macOS, a key that has the [`kSecKeyExtractable`](kseckeyextractable.md) attribute set to false is ineligible for export. In these cases, or if any other error occurs, the returned data is `nil` and the error object indicates the reason for failure.
+This method works for both public and private keys. However, it doesn’t work for all keys. For example, if a key is bound to a smart card or to the Secure Enclave, you can’t export it this way. Also, in macOS, a key that has the [`kSecKeyExtractable`](./kseckeyextractable.md) attribute set to false is ineligible for export. In these cases, or if any other error occurs, the returned data is `nil` and the error object indicates the reason for failure.
 
-When an error does occur, you become responsible for the error object’s memory. In Objective-C, you transfer ownership to Automatic Reference Counting (ARC) using a call to [`CFBridgingRelease`](https://developer.apple.com/documentation/foundation/cfbridgingrelease). In Swift, you convert the unmanaged [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) object to a managed [`Error`](https://developer.apple.com/documentation/swift/error) using [`takeRetainedValue()`](https://developer.apple.com/documentation/swift/unmanaged/takeretainedvalue()) and a cast.
+When an error does occur, you become responsible for the error object’s memory. In Objective-C, you transfer ownership to Automatic Reference Counting (ARC) using a call to [`CFBridgingRelease`](../Foundation/cfbridgingrelease.md). In Swift, you convert the unmanaged [`CFError`](../CoreFoundation/cferror.md) object to a managed [`Error`](../Swift/error.md) using [`takeRetainedValue()`](../Swift/unmanaged/takeretainedvalue%28%29.md) and a cast.
 
 The format of the returned data depends on the kind of key you are exporting:
 
@@ -55,9 +56,9 @@ Avoid insecure distribution of cryptographic keys, and pay special attention to 
 
 > ❗ **Important**:  If there’s even a possibility that an untrusted entity has gained access to your private key, it is compromised and you should stop using it.
 
-##### Restore a Key From a Data Instance
+##### Restore a Key from a Data Instance
 
-When you’re ready to restore the data instance back into a key, use the [`SecKeyCreateWithData(_:_:_:)`](seckeycreatewithdata(_:_:_:).md) function:
+When you’re ready to restore the data instance back into a key, use the [`SecKeyCreateWithData(_:_:_:)`](./seckeycreatewithdata%28_,_,_%29.md) function:
 
 **Swift**:
 
@@ -93,7 +94,7 @@ if (key) { CFRelease(key); }  // After you are done with it
 
 In this case, you use an options dictionary to inform the function about certain characteristics of the key. At a minimum, you indicate the key’s type and class, which means you need to communicate this information along with the key data or establish it ahead of time. If the function returns an empty key reference, check the error object for indications of failure.
 
-In Objective-C, you release the key object’s memory after you’re done using it. You also transfer ownership of the error object, if it exists, to ARC. In Swift, the key object’s memory is already managed by the system, but you transfer ownership of the unmanaged [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) to the system with [`takeRetainedValue()`](https://developer.apple.com/documentation/swift/unmanaged/takeretainedvalue()) and recast it as an [`Error`](https://developer.apple.com/documentation/swift/error) before throwing it.
+In Objective-C, you release the key object’s memory after you’re done using it. You also transfer ownership of the error object, if it exists, to ARC. In Swift, the key object’s memory is already managed by the system, but you transfer ownership of the unmanaged [`CFError`](../CoreFoundation/cferror.md) to the system with [`takeRetainedValue()`](../Swift/unmanaged/takeretainedvalue%28%29.md) and recast it as an [`Error`](../Swift/error.md) before throwing it.
 
 
 ---

@@ -1,7 +1,8 @@
 # Unicode.Version
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A version of the Unicode Standard represented by its major and minor components.
 

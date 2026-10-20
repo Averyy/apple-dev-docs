@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Specifies how time is mapped to receiver’s time space from the parent time space.
@@ -20,13 +21,18 @@ Specifies how time is mapped to receiver’s time space from the parent time spa
 var speed: Float { get set }
 ```
 
+```objc
+@property float speed;
+```
+
 #### Discussion
 
 For example, if `speed` is 2.0 local time progresses twice as fast as parent time. Defaults to 1.0.
 
 ## See Also
 
-- [var duration: CFTimeInterval](camediatiming/duration.md)
+### Duration and Speed
+- [var duration: CFTimeInterval](./duration.md)
   Specifies the basic duration of the animation, in seconds.
 
 

@@ -1,7 +1,8 @@
 # indexDidUpdate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,8 @@
 ```swift
 static var indexDidUpdate: NotificationCenter.BaseMessageIdentifier<NSCoreDataCoreSpotlightDelegate.IndexDidUpdateMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSCoreDataCoreSpotlightDelegate.IndexDidUpdateMessage>`.
 
 
 ---

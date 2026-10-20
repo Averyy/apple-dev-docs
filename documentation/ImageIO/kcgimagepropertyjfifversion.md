@@ -1,7 +1,8 @@
 # kCGImagePropertyJFIFVersion
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of JFIF.
 
@@ -18,6 +19,10 @@ The version of JFIF.
 
 ```swift
 let kCGImagePropertyJFIFVersion: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyJFIFVersion;
 ```
 
 

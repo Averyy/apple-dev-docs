@@ -7,7 +7,7 @@ An object providing methods to obtain information about running applications.
 
 #### Overview
 
-See [`Applications`](applications.md) for the methods and properties of this object.
+See [Applications](../applications.md) for the methods and properties of this object.
 
 
 ---

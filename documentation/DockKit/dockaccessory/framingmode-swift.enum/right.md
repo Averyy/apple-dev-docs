@@ -1,7 +1,8 @@
 # DockAccessory.FramingMode.right
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Frame the subject in the right side of the frame.
 
@@ -19,11 +20,12 @@ case right
 
 ## See Also
 
-- [DockAccessory.FramingMode.automatic](dockaccessory/framingmode-swift.enum/automatic.md)
+### Defining the framing mode
+- [DockAccessory.FramingMode.automatic](./automatic.md)
   Automatically frame the subject.
-- [DockAccessory.FramingMode.center](dockaccessory/framingmode-swift.enum/center.md)
+- [DockAccessory.FramingMode.center](./center.md)
   Frame the subject in the center of the frame.
-- [DockAccessory.FramingMode.left](dockaccessory/framingmode-swift.enum/left.md)
+- [DockAccessory.FramingMode.left](./left.md)
   Frame the subject in the left side of the frame.
 
 

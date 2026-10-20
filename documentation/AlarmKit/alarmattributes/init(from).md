@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance from the given decoder.
 
@@ -22,7 +23,8 @@ init(from decoder: any Decoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](alarmattributes/encode(to:).md)
+### Decoding and encoding
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Performs encoding of the value using the given encoder.
 
 

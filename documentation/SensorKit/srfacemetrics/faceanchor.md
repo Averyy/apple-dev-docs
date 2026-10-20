@@ -1,7 +1,8 @@
 # faceAnchor
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor for the face that the sensor detects in front of the camera.
 
@@ -16,13 +17,18 @@ The anchor for the face that the sensor detects in front of the camera.
 var faceAnchor: ARFaceAnchor { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) ARFaceAnchor * faceAnchor;
+```
+
 ## See Also
 
-- [var partialFaceExpressions: [SRFaceMetricsExpression]](srfacemetrics/partialfaceexpressions.md)
+### Getting face analytics
+- [var partialFaceExpressions: [SRFaceMetricsExpression]](./partialfaceexpressions.md)
   The partial face expressions that the algorithm detects.
-- [var wholeFaceExpressions: [SRFaceMetricsExpression]](srfacemetrics/wholefaceexpressions.md)
+- [var wholeFaceExpressions: [SRFaceMetricsExpression]](./wholefaceexpressions.md)
   The whole face expressions that the algorithm detects.
-- [class SRFaceMetricsExpression](srfacemetricsexpression.md)
+- [class SRFaceMetricsExpression](../srfacemetricsexpression.md)
   An object that represents a facial expression.
 
 

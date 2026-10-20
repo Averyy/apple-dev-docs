@@ -1,7 +1,8 @@
 # HandleChangeCustomPropertyDataValueWithQualifier
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the property the data value is changing.
 
@@ -10,22 +11,22 @@ Tells the property the data value is changing.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeCustomPropertyDataValueWithQualifier(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation sets the value and returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess), without checking the qualifier data. Subclass and override this method to handle changes to the custom property and return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) upon success.
+The default implementation sets the value and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md), without checking the qualifier data. Subclass and override this method to handle changes to the custom property and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 
 ## Parameters
 
-- `in_qualifier_data`: The qualifier data [`OSObject`](https://developer.apple.com/documentation/driverkit/osobject) associated with setting the property data value. This can be an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring), [`OSDictionary`](https://developer.apple.com/documentation/driverkit/osdictionary), or `NULL`.
-- `in_data`: An [`OSObject`](https://developer.apple.com/documentation/driverkit/osobject) to set as the custom property value.
+- `in_qualifier_data`: The qualifier data [`OSObject`](../../DriverKit/osobject.md) associated with setting the property data value. This can be an [`OSString`](../../DriverKit/osstring.md), [`OSDictionary`](../../DriverKit/osdictionary.md), or `NULL`.
+- `in_data`: An [`OSObject`](../../DriverKit/osobject.md) to set as the custom property value.
 
 
 ---

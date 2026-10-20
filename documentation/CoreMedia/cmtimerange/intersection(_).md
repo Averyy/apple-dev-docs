@@ -1,7 +1,8 @@
 # intersection(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new time range with the time elements that are common to both this time range and the given time range.
 
@@ -30,7 +31,8 @@ A time range that represents the largest intersection of the input.
 
 ## See Also
 
-- [func union(CMTimeRange) -> CMTimeRange](cmtimerange/union(_:).md)
+### Combining Time Ranges
+- [func union(CMTimeRange) -> CMTimeRange](./union%28_%29.md)
   Returns a new time range with the time elements of both this time range and the given time range.
 
 

@@ -1,7 +1,8 @@
 # VNRequestFaceLandmarksConstellation.constellation76Points
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constellation with 76 points.
 
@@ -11,11 +12,16 @@ A constellation with 76 points.
 case constellation76Points
 ```
 
+```c
+VNRequestFaceLandmarksConstellation76Points
+```
+
 ## See Also
 
-- [VNRequestFaceLandmarksConstellation.constellationNotDefined](vnrequestfacelandmarksconstellation/constellationnotdefined.md)
+### Types of Constellations
+- [VNRequestFaceLandmarksConstellation.constellationNotDefined](./constellationnotdefined.md)
   An undefined constellation.
-- [VNRequestFaceLandmarksConstellation.constellation65Points](vnrequestfacelandmarksconstellation/constellation65points.md)
+- [VNRequestFaceLandmarksConstellation.constellation65Points](./constellation65points.md)
   A constellation with 65 points.
 
 

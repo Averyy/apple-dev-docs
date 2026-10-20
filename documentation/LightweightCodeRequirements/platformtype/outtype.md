@@ -1,9 +1,10 @@
 # PlatformType.OutType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The type of this constraint: [`PlatformType`](platformtype.md)
+The type of this constraint: [`PlatformType`](../platformtype.md)
 
 **Availability**:
 - iOS 17.4+

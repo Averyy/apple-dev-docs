@@ -1,16 +1,17 @@
 # Making a view into a drag source
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Adopt draggable API to provide items for drag-and-drop operations.
 
 #### Overview
 
-When someone drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, the drag operation has some data associated with it, as well as a preview of the data that the system displays. Add the [`draggable(_:)`](view/draggable(_:).md) modifier to enable the view to function as a drag source, and provide a value that conforms to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol.
+When someone drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, the drag operation has some data associated with it, as well as a preview of the data that the system displays. Add the [`draggable(_:)`](./view/draggable%28_%29.md) modifier to enable the view to function as a drag source, and provide a value that conforms to the [`Transferable`](../CoreTransferable/transferable.md) protocol.
 
-The `Transferable` protocol describes how you can serialize and deserialize your model object for sharing and data transfer. It provides a transfer representation by composing one or more of the Core Transferable framework’s built-in [`TransferRepresentation`](https://developer.apple.com/documentation/coretransferable/transferrepresentation) types.
+The `Transferable` protocol describes how you can serialize and deserialize your model object for sharing and data transfer. It provides a transfer representation by composing one or more of the Core Transferable framework’s built-in [`TransferRepresentation`](../CoreTransferable/transferrepresentation.md) types.
 
-##### Enable a View As a Drag Source
+##### Enable a view as a drag source
 
 Use the `draggable(_:)` modifier to send or receive `Transferable` items within an app, among a collection of your own apps, or between your apps and other apps that support the import or export of a specified data format.
 
@@ -25,7 +26,7 @@ struct MyView: View {
 }
 ```
 
-Use the [`draggable(_:preview:)`](view/draggable(_:preview:).md) modifier to define a custom preview for the dragged item.
+Use the [`draggable(_:preview:)`](./view/draggable%28_,preview%29.md) modifier to define a custom preview for the dragged item.
 
 ```swift
     Text(name)
@@ -41,7 +42,7 @@ Use the [`draggable(_:preview:)`](view/draggable(_:preview:).md) modifier to def
         }
 ```
 
-To customize the lift preview that the system shows as it transitions to displaying your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) modifier with a [`dragPreview`](contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius, as in the following code example:
+To customize the lift preview that the system shows as it transitions to displaying your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](./view/contentshape%28_,_,eofill%29.md) modifier with a [`dragPreview`](./contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius, as in the following code example:
 
 ```swift
     Text(name)
@@ -58,11 +59,11 @@ To customize the lift preview that the system shows as it transitions to display
         }
 ```
 
-##### Create a Transferable Item for Drag and Drop Operations
+##### Create a transferable item for drag-and-drop operations
 
-To support drag operations of model objects, conform a model to the `Transferable` protocol to create a transferable item, and implement the [`TransferRepresentation`](https://developer.apple.com/documentation/coretransferable/transferrepresentation) static property. Types like [`String`](https://developer.apple.com/documentation/swift/string), [`Data`](https://developer.apple.com/documentation/foundation/data), [`URL`](https://developer.apple.com/documentation/foundation/url), and [`Image`](image.md) already conform to `Transferable`, making them easy to use in drag-and-drop operations.
+To support drag operations of model objects, conform a model to the `Transferable` protocol to create a transferable item, and implement the [`transferRepresentation`](../CoreTransferable/transferrepresentation.md) static property. Types like [`String`](../Swift/string.md), [`Data`](../Foundation/data.md), [`URL`](../Foundation/url.md), and [`Image`](./image.md) already conform to `Transferable`, making them easy to use in drag-and-drop operations.
 
-Define a data model, representing a user profile, that is a type conforming to [`Codable`](https://developer.apple.com/documentation/swift/codable) with the properties `name` and `phoneNumber`.
+Define a data model, representing a user profile, that is a type conforming to [`Codable`](../Swift/codable.md) with the properties `name` and `phoneNumber`.
 
 ```swift
 struct Profile: Codable, Identifiable {
@@ -72,7 +73,7 @@ struct Profile: Codable, Identifiable {
 }
 ```
 
-Extend `Profile` to conform to the `Transferable` protocol to compose a transfer representation, and add [`CodableRepresentation`](https://developer.apple.com/documentation/coretransferable/codablerepresentation) with the custom uniform type identifier `com.example.profile` to represent the `Profile` data structure.
+Extend `Profile` to conform to the `Transferable` protocol to compose a transfer representation, and add [`CodableRepresentation`](../CoreTransferable/codablerepresentation.md) with the custom uniform type identifier `com.example.profile` to represent the `Profile` data structure.
 
 ```swift
 extension Profile: Transferable {
@@ -83,9 +84,9 @@ extension Profile: Transferable {
 }
 ```
 
-Make sure to include the custom uniform type identifier in the app’s `Info.plist` file. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
+Make sure to include the custom uniform type identifier in the app’s `Info.plist` file. For more information, see [Defining file and data types for your app](../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md).
 
-Declare new uniform type identifiers as convenience variables on [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct). For an exported declaration, use the following code:
+Declare new uniform type identifiers as convenience variables on [`UTType`](../UniformTypeIdentifiers/uttype-swift.struct.md). For an exported declaration, use the following code:
 
 ```swift
 extension UTType {
@@ -93,9 +94,9 @@ extension UTType {
 }
 ```
 
-The other type of transfer representation in the previous code example is a [`ProxyRepresentation`](https://developer.apple.com/documentation/coretransferable/proxyrepresentation), which uses the `String` structure’s built-in `Transferable` conformance. `ProxyRepresentation` serves as an alternative that lets people drag and drop the profile item in any text editor that doesn’t support the `com.example.profile` content type, but works with text formats.
+The other type of transfer representation in the previous code example is a [`ProxyRepresentation`](../CoreTransferable/proxyrepresentation.md), which uses the `String` structure’s built-in `Transferable` conformance. `ProxyRepresentation` serves as an alternative that lets people drag and drop the profile item in any text editor that doesn’t support the `com.example.profile` content type, but works with text formats.
 
-To add more transfer representations to a draggable item, specify one or more additional representations in order of preference. This ensures that the system uses the most suitable representation, depending on the content type that the receiver can accept for drag-and-drop operations. For more information, see [`Choosing a transfer representation for a model type`](https://developer.apple.com/documentation/coretransferable/choosing-a-transfer-representation-for-a-model-type).
+To add more transfer representations to a draggable item, specify one or more additional representations in order of preference. This ensures that the system uses the most suitable representation, depending on the content type that the receiver can accept for drag-and-drop operations. For more information, see [Choosing a transfer representation for a model type](../CoreTransferable/choosing-a-transfer-representation-for-a-model-type.md).
 
 To use the `com.example.profile` content type for drag operations, pass in the profiles to the `draggable(_:)` modifier.
 
@@ -117,9 +118,9 @@ struct ContentView: View {
 }
 ```
 
-##### Enable List Reordering
+##### Enable list reordering
 
-Within a [`List`](list.md), you can use the [`onMove(perform:)`](dynamicviewcontent/onmove(perform:).md) modifier to enable reordering. The modifier allows you to reorder list items by using a long press on a row, and then dragging it to a new location. Add the `onMove(perform:)` modifier to a `List` to enable the interaction.
+Within a [`List`](./list.md), you can use the [`onMove(perform:)`](./dynamicviewcontent/onmove%28perform%29.md) modifier to enable reordering. The modifier allows you to reorder list items by using a long press on a row, and then dragging it to a new location. Add the `onMove(perform:)` modifier to a `List` to enable the interaction.
 
 ```swift
     List {
@@ -133,13 +134,14 @@ Within a [`List`](list.md), you can use the [`onMove(perform:)`](dynamicviewcont
     }
 ```
 
-To conditionally disable item reordering on a specific row, set [`moveDisabled(_:)`](view/movedisabled(_:).md) to `true`.
+To conditionally disable item reordering on a specific row, set [`moveDisabled(_:)`](./view/movedisabled%28_%29.md) to `true`.
 
 ## See Also
 
-- [Adopting drag and drop using SwiftUI](adopting-drag-and-drop-using-swiftui.md)
+### Essentials
+- [Adopting drag and drop using SwiftUI](./adopting-drag-and-drop-using-swiftui.md)
   Enable drag-and-drop interactions in lists, tables and custom views.
-- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
+- [Reordering items in lists, stacks, grids, and custom layouts](./reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
   Add drag-to-reorder interactions to SwiftUI layouts using reordering modifiers.
 
 

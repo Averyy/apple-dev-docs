@@ -1,6 +1,7 @@
 # Optimizing key-value caching in language model sessions
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Prevent repeated token processing by preserving the cached state across turns.
 
@@ -10,25 +11,25 @@ When using a language model session for multi-turn conversations, model provider
 
 Some workflows require the prefix to change between turns. Dynamic instructions provide a declarative way to conditionally include or exclude instructions and tools based on application state. A profile pairs dynamic instructions with session-level configuration like the model and temperature, and a dynamic profile orchestrates transitions between profiles. When you use these APIs, how you structure your dynamic instructions directly affects how much of the cache the system preserves between turns.
 
-For more information about using dynamic instructions, see [`Composing dynamic sessions with instructions and profiles`](composing-dynamic-sessions-with-instructions-and-profiles.md).
+For more information about using dynamic instructions, see [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md).
 
-#### Set Up a Stable Session Foundation
+#### Set up a stable session foundation
 
 A session typically arranges its content into a token sequence with a specific order, like instructions appearing at the top, tool definitions coming next, and then transcript entries follow at the end. Each cached value in the sequence depends on every token that precedes it. When a token changes at any position, the system recomputes the cached values from that point forward. Each segment that the system recomputes adds latency that a person experiences while waiting for a response.
 
 Appending new content at the end of the sequence — through calls to respond or stream methods — is a cache-friendly operation, because all preceding cached values remain valid. For example, the following table shows each turn reusing previously computed values from the cache:
 
-![A three-column diagram showing key-value cache reuse across Turn 1, Turn 2,](/images/com.apple.foundationmodels/optimizing-key-value-caching-in-language-model-sessions-cached@2x.png)
+![A three-column diagram showing key-value cache reuse across Turn 1, Turn 2,](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/optimizing-key-value-caching-in-language-model-sessions-cached@2x.png)
 
 Because the instructions and tool definitions form a stable prefix, the system caches them once and reuses them across every turn. A change to the instructions, for example, invalidates the cache for the tool definitions and the entire transcript. A change deep in the transcript, by contrast, only invalidates the values that follow it.
 
 The second turn in the following example, however, doesn’t benefit from reusing cached tokens when you modify the beginning of the transcript. Turn three recovers because the prefix is stable again.
 
-![A three-column diagram showing key-value cache invalidation. Pink blocks mark](/images/com.apple.foundationmodels/optimizing-key-value-caching-in-language-model-sessions-compute@2x.png)
+![A three-column diagram showing key-value cache invalidation. Pink blocks mark](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/optimizing-key-value-caching-in-language-model-sessions-compute@2x.png)
 
-An effective way to preserve cached context is to establish a stable prefix when creating the session. Use [`init(profile:history:)`](languagemodelsession/init(profile:history:).md) to define your instructions and tools up front, and don’t change them over the lifetime of the session. Place any content that varies between interactions toward the end of your instructions rather than at the beginning.
+An effective way to preserve cached context is to establish a stable prefix when creating the session. Use [`init(profile:history:)`](./languagemodelsession/init%28profile,history%29.md) to define your instructions and tools up front, and don’t change them over the lifetime of the session. Place any content that varies between interactions toward the end of your instructions rather than at the beginning.
 
-When the session is about to receive its first prompt, call [`prewarm(promptPrefix:)`](languagemodelsession/prewarm(promptprefix:).md) to precompute the prefix into the cache before the first call to [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) arrives:
+When the session is about to receive its first prompt, call [`prewarm(promptPrefix:)`](./languagemodelsession/prewarm%28promptprefix%29.md) to precompute the prefix into the cache before the first call to [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) arrives:
 
 ```swift
 let session = LanguageModelSession(
@@ -46,9 +47,9 @@ session.prewarm(
 )
 ```
 
-Prewarming works best when there’s time to finish loading the model and caching the prompt before a request. Prewarm the model when you know usage is at least one or two seconds in the future. That way, when the first call to [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) occurs, the cached portion is already warm and only the remaining tokens need computation. This eliminates the need to compute every segment on the first turn and prevents unnecessary latency.
+Prewarming works best when there’s time to finish loading the model and caching the prompt before a request. Prewarm the model when you know usage is at least one or two seconds in the future. That way, when the first call to [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) occurs, the cached portion is already warm and only the remaining tokens need computation. This eliminates the need to compute every segment on the first turn and prevents unnecessary latency.
 
-#### Consider Model Accuracy From Transcript Modification
+#### Consider model accuracy from transcript modification
 
 Modifying the transcript impacts model accuracy because there’s no reliable way for the model to distinguish between information that never existed and information that did exist but was removed from the context. A model treats whatever’s in the context as the complete picture and reasons confidently from incomplete evidence. Carefully consider when and how you modify session history. Not only does modifying session history incur a cache invalidation, several categories of accuracy problems occur:
 
@@ -57,17 +58,17 @@ Modifying the transcript impacts model accuracy because there’s no reliable wa
 - **State tracking errors**: Without evidence of prior action, the model loses its place and begins repeating, skipping, or undoing its work.
 - **Summary distortion**: Transcript summarization strips nuance from earlier decisions, so the model only sees flat statements that misrepresent decisions.
 
-When you use tools, changing them not only involves accuracy problems, but incurs a performance hit from cache invalidations. Adding or removing tools midsession changes the token sequence at the beginning of the transcript, which invalidates the cached values for all of the entries after that point. When you use [`DynamicInstructions`](dynamicinstructions.md), define the tools you need up front and keep that set unchanged.
+When you use tools, changing them not only involves accuracy problems, but incurs a performance hit from cache invalidations. Adding or removing tools midsession changes the token sequence at the beginning of the transcript, which invalidates the cached values for all of the entries after that point. When you use [`DynamicInstructions`](./dynamicinstructions.md), define the tools you need up front and keep that set unchanged.
 
-Carefully consider when to remove a tool because the [`Transcript`](transcript.md) can contain entries that reference the [`Tool`](tool.md) name and output, which impact the model’s accuracy. Removing a tool the model previously used can cause the model to produce unexpected results because it sees references in the transcript for a tool that no longer exists in its tool definitions. If you do remove any tools, also remove any associated output that refers to them so the model doesn’t see any references.
+Carefully consider when to remove a tool because the [`Transcript`](./transcript.md) can contain entries that reference the [`Tool`](./tool.md) name and output, which impact the model’s accuracy. Removing a tool the model previously used can cause the model to produce unexpected results because it sees references in the transcript for a tool that no longer exists in its tool definitions. If you do remove any tools, also remove any associated output that refers to them so the model doesn’t see any references.
 
 Adding a new tool late in a conversation can produce unexpected behavior. The model follows patterns established in earlier turns and might not incorporate a newly available tool into its responses.
 
-#### Preserve the Cache with Dynamic Instructions
+#### Preserve the cache with dynamic instructions
 
-The framework re-evaluates a [`DynamicInstructions`](dynamicinstructions.md) body before each model request. When the resolved instructions or tools change between turns the system updates the prefix and invalidates any cached values.
+The framework re-evaluates a [`DynamicInstructions`](./dynamicinstructions.md) body before each model request. When the resolved instructions or tools change between turns the system updates the prefix and invalidates any cached values.
 
-Place instructions and tools that remain constant at the top of your [`DynamicInstructions`](dynamicinstructions.md) body, and group conditional content at the bottom. The framework flattens the resolved instructions and tool definitions in the order you declare them, so content that appears first in the body occupies earlier positions in the token sequence. Keeping static content first means the system can reuse the cached values for those tokens even when a later condition changes.
+Place instructions and tools that remain constant at the top of your [`DynamicInstructions`](./dynamicinstructions.md) body, and group conditional content at the bottom. The framework flattens the resolved instructions and tool definitions in the order you declare them, so content that appears first in the body occupies earlier positions in the token sequence. Keeping static content first means the system can reuse the cached values for those tokens even when a later condition changes.
 
 ```swift
 struct PresentationInstructions: DynamicInstructions {
@@ -94,9 +95,9 @@ struct PresentationInstructions: DynamicInstructions {
 
 Design your dynamic profiles so transitions between your profiles occur at natural boundaries in the conversation rather than on every turn. Switching from one profile to another typically changes the entire prefix — which invalidates the cache for the full transcript — so treat it as a deliberate reset.
 
-#### Prefer Stateless History Transforms
+#### Prefer stateless history transforms
 
-Attach input filters to a profile with the [`historyTransform(_:)`](languagemodelsession/dynamicprofile/historytransform(_:).md) modifier to transform the transcript before each model request. Prefer stateless transforms over stateful ones because they don’t modify the global transcript, so they’re easier to understand with respect to cache consistency.
+Attach input filters to a profile with the [`historyTransform(_:)`](./languagemodelsession/dynamicprofile/historytransform%28_%29.md) modifier to transform the transcript before each model request. Prefer stateless transforms over stateful ones because they don’t modify the global transcript, so they’re easier to understand with respect to cache consistency.
 
 A stateless filter produces the same output for the same input. A stateless transform that drops entries, like truncating to recent history, invalidates parts of the cache for the entries it removes. However, a transform that replaces content in-place, like removing debug metadata, can preserve cache consistency because the model sees the same token sequence each time.
 
@@ -129,7 +130,7 @@ Profile {
 }
 ```
 
-#### Manage Transcript Growth Within the Context Window
+#### Manage transcript growth within the context window
 
 Every element in the session — instructions, tool definitions, and all transcript entries — counts toward the context size. As the conversation grows, the transcript eventually approaches the available context.
 
@@ -137,15 +138,15 @@ Defer removing entries from the transcript until the context window is nearly fu
 
 When you do trim, removing only the most recent entries is cheaper than modifying earlier ones because it invalidates fewer cached values. If you need to remove older entries, consider summarizing the conversation and starting a fresh session with that summary as context.
 
-When the transcript grows beyond the context window, the framework throws [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md). To recover, summarize the conversation and update the session [`transcript`](languagemodelsession/transcript.md) by accessing the history from `@SessionProperty`.
+When the transcript grows beyond the context window, the framework throws [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md). To recover, summarize the conversation and update the session [`transcript`](./languagemodelsession/transcript.md) by accessing the history from `@SessionProperty`.
 
-For more information about managing the context window, see [`Managing the context window`](managing-the-context-window.md).
+For more information about managing the context window, see [Managing the context window](./managing-the-context-window.md).
 
-#### Restore Sessions From Saved Transcripts
+#### Restore sessions from saved transcripts
 
-If preserving the full conversation history matters more than the first-response latency, like when a person expects to continue exactly where they left off, consider rehydrating a session from a previous state. Persist a session’s [`transcript`](languagemodelsession/transcript.md) and use it when initializing a session with [`init(model:tools:transcript:)`](languagemodelsession/init(model:tools:transcript:).md) or [`init(profile:history:)`](languagemodelsession/init(profile:history:).md)
+If preserving the full conversation history matters more than the first-response latency, like when a person expects to continue exactly where they left off, consider rehydrating a session from a previous state. Persist a session’s [`transcript`](./languagemodelsession/transcript.md) and use it when initializing a session with [`init(model:tools:transcript:)`](./languagemodelsession/init%28model,tools,transcript%29.md) or [`init(profile:history:)`](./languagemodelsession/init%28profile,history%29.md)
 
-The session starts without a KV cache, so the model reprocesses the full transcript on the first call to [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) or [`prewarm(promptPrefix:)`](languagemodelsession/prewarm(promptprefix:).md). The following creates a new session from a saved transcript and prewarms it to begin rebuilding the cache:
+The session starts without a KV cache, so the model reprocesses the full transcript on the first call to [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) or [`prewarm(promptPrefix:)`](./languagemodelsession/prewarm%28promptprefix%29.md). The following creates a new session from a saved transcript and prewarms it to begin rebuilding the cache:
 
 ```swift
 let transcript = // Load a transcript you save from a previous conversation.
@@ -161,25 +162,26 @@ session.prewarm()
 
 The reprocessing latency on the first call is proportional to the size of the restored transcript. If the saved transcript is large, consider trimming it to the most relevant entries before rehydrating.
 
-#### Profile Cache Performance with Instruments
+#### Profile cache performance with Instruments
 
 Use the Foundation Models instrument to measure how your session uses tokens and where latency occurs. The instrument shows asset load times, token counts, and durations for each request, so you can identify whether cache invalidation is causing unexpected reprocessing. Use the instrument to determine your cache hit rate by dividing the cached input tokens by the total input tokens. When this rate is low between turns, it signals that the system invalidated the cache and the model reprocessed the full prefix.
 
-For more information about profiling and optimization techniques with Instruments, see [`Analyzing the runtime performance of your Foundation Models app`](analyzing-the-runtime-performance-of-your-foundation-models-app.md).
+For more information about profiling and optimization techniques with Instruments, see [Analyzing the runtime performance of your Foundation Models app](./analyzing-the-runtime-performance-of-your-foundation-models-app.md).
 
 ## See Also
 
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+### Custom language model provider
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
   Send requests on device to an open source model you export with Core AI to get a consistent API experience.
-- [protocol LanguageModel](languagemodel.md)
+- [protocol LanguageModel](./languagemodel.md)
   A protocol that you use to interface with a model.
-- [struct LanguageModelCapabilities](languagemodelcapabilities.md)
+- [struct LanguageModelCapabilities](./languagemodelcapabilities.md)
   A set of capabilities that a language model provides.
-- [protocol LanguageModelExecutor](languagemodelexecutor.md)
+- [protocol LanguageModelExecutor](./languagemodelexecutor.md)
   A protocol that defines the interface for responding to session requests.
-- [struct LanguageModelExecutorGenerationChannel](languagemodelexecutorgenerationchannel.md)
+- [struct LanguageModelExecutorGenerationChannel](./languagemodelexecutorgenerationchannel.md)
   A type you use to send model output deltas and updates to the framework.
-- [struct LanguageModelExecutorGenerationRequest](languagemodelexecutorgenerationrequest.md)
+- [struct LanguageModelExecutorGenerationRequest](./languagemodelexecutorgenerationrequest.md)
   A type that contains the details for a generation request.
 
 

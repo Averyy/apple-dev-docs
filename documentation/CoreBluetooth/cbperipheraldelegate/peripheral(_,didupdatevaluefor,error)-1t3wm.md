@@ -1,7 +1,8 @@
 # peripheral(_:didUpdateValueFor:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that retrieving a specified characteristic descriptor’s value succeeded.
 
@@ -20,9 +21,13 @@ Tells the delegate that retrieving a specified characteristic descriptor’s val
 optional func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor descriptor: CBDescriptor, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didUpdateValueForDescriptor:(CBDescriptor *) descriptor error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](cbperipheral/readvalue(for:)-91hhp.md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](../cbperipheral/readvalue%28for%29-91hhp.md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](c
 
 ## See Also
 
-- [func peripheral(CBPeripheral, didUpdateValueFor: CBCharacteristic, error: (any Error)?)](cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1xyna.md)
+### Retrieving Characteristic and Descriptor Values
+- [func peripheral(CBPeripheral, didUpdateValueFor: CBCharacteristic, error: (any Error)?)](./peripheral%28_,didupdatevaluefor,error%29-1xyna.md)
   Tells the delegate that retrieving the specified characteristic’s value succeeded, or that the characteristic’s value changed.
 
 

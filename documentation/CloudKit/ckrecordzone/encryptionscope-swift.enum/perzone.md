@@ -1,7 +1,8 @@
 # CKRecordZone.EncryptionScope.perZone
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Zone uses per-zone encryption keys for encrypted values across all records and the zone-wide share, if present.
 
@@ -18,6 +19,10 @@ Zone uses per-zone encryption keys for encrypted values across all records and t
 
 ```swift
 case perZone
+```
+
+```c
+CKRecordZoneEncryptionScopePerZone
 ```
 
 #### Discussion

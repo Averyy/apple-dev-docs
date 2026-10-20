@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassHCR_Scan
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassHCR_Scan = 0x1127
 ```
 

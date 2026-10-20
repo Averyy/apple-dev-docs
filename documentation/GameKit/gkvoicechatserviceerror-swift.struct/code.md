@@ -1,17 +1,20 @@
 # GKVoiceChatServiceError.Code
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for the voice chat service error domain.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- tvOS 9.0+ - Deprecated in 18.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,72 +22,77 @@ Error codes for the voice chat service error domain.
 enum Code
 ```
 
+```c
+enum GKVoiceChatServiceError : int;
+```
+
 ## Topics
 
 ### Constants
-- [GKVoiceChatServiceError.Code.internalError](gkvoicechatserviceerror-swift.struct/code/internalerror.md)
+- [GKVoiceChatServiceError.Code.internalError](./code/internalerror.md)
   A serious error occurred inside the voice chat service.
-- [GKVoiceChatServiceError.Code.noRemotePacketsError](gkvoicechatserviceerror-swift.struct/code/noremotepacketserror.md)
+- [GKVoiceChatServiceError.Code.noRemotePacketsError](./code/noremotepacketserror.md)
   The voice chat service stopped receiving packets from the remote participant.
-- [GKVoiceChatServiceError.Code.unableToConnectError](gkvoicechatserviceerror-swift.struct/code/unabletoconnecterror.md)
+- [GKVoiceChatServiceError.Code.unableToConnectError](./code/unabletoconnecterror.md)
   The voice chat service was unable to establish a connection with another user.
-- [GKVoiceChatServiceError.Code.remoteParticipantHangupError](gkvoicechatserviceerror-swift.struct/code/remoteparticipanthanguperror.md)
+- [GKVoiceChatServiceError.Code.remoteParticipantHangupError](./code/remoteparticipanthanguperror.md)
   The remote participant in a voice chat stopped the chat.
-- [GKVoiceChatServiceError.Code.invalidCallIDError](gkvoicechatserviceerror-swift.struct/code/invalidcalliderror.md)
+- [GKVoiceChatServiceError.Code.invalidCallIDError](./code/invalidcalliderror.md)
   The voice chat service didn’t recognize the call identifier.
-- [GKVoiceChatServiceError.Code.audioUnavailableError](gkvoicechatserviceerror-swift.struct/code/audiounavailableerror.md)
+- [GKVoiceChatServiceError.Code.audioUnavailableError](./code/audiounavailableerror.md)
   The audio hardware is unavailable to the voice chat service.
-- [GKVoiceChatServiceError.Code.uninitializedClientError](gkvoicechatserviceerror-swift.struct/code/uninitializedclienterror.md)
+- [GKVoiceChatServiceError.Code.uninitializedClientError](./code/uninitializedclienterror.md)
   The application did not set a client before calling voice chat service methods.
-- [GKVoiceChatServiceError.Code.clientMissingRequiredMethodsError](gkvoicechatserviceerror-swift.struct/code/clientmissingrequiredmethodserror.md)
+- [GKVoiceChatServiceError.Code.clientMissingRequiredMethodsError](./code/clientmissingrequiredmethodserror.md)
   The voice chat service did not find an expected method defined by the client.
-- [GKVoiceChatServiceError.Code.remoteParticipantBusyError](gkvoicechatserviceerror-swift.struct/code/remoteparticipantbusyerror.md)
+- [GKVoiceChatServiceError.Code.remoteParticipantBusyError](./code/remoteparticipantbusyerror.md)
   The remote participant is already connected to a voice chat.
-- [GKVoiceChatServiceError.Code.remoteParticipantCancelledError](gkvoicechatserviceerror-swift.struct/code/remoteparticipantcancellederror.md)
+- [GKVoiceChatServiceError.Code.remoteParticipantCancelledError](./code/remoteparticipantcancellederror.md)
   A remote participant attempted to start a voice chat, then canceled.
-- [GKVoiceChatServiceError.Code.remoteParticipantResponseInvalidError](gkvoicechatserviceerror-swift.struct/code/remoteparticipantresponseinvaliderror.md)
+- [GKVoiceChatServiceError.Code.remoteParticipantResponseInvalidError](./code/remoteparticipantresponseinvaliderror.md)
   Invalid data was received from a remote participant.
-- [GKVoiceChatServiceError.Code.remoteParticipantDeclinedInviteError](gkvoicechatserviceerror-swift.struct/code/remoteparticipantdeclinedinviteerror.md)
+- [GKVoiceChatServiceError.Code.remoteParticipantDeclinedInviteError](./code/remoteparticipantdeclinedinviteerror.md)
   A remote participant declined an invitation.
-- [GKVoiceChatServiceError.Code.methodCurrentlyInvalidError](gkvoicechatserviceerror-swift.struct/code/methodcurrentlyinvaliderror.md)
+- [GKVoiceChatServiceError.Code.methodCurrentlyInvalidError](./code/methodcurrentlyinvaliderror.md)
   A method on the voice chat service was called when it was not allowed to be called (for example, attempting to connect when the voice chat service was already connected).
-- [GKVoiceChatServiceError.Code.networkConfigurationError](gkvoicechatserviceerror-swift.struct/code/networkconfigurationerror.md)
+- [GKVoiceChatServiceError.Code.networkConfigurationError](./code/networkconfigurationerror.md)
   The voice chat service had problems accessing the network.
-- [GKVoiceChatServiceError.Code.unsupportedRemoteVersionError](gkvoicechatserviceerror-swift.struct/code/unsupportedremoteversionerror.md)
+- [GKVoiceChatServiceError.Code.unsupportedRemoteVersionError](./code/unsupportedremoteversionerror.md)
   The other participant is running a different version of the voice chat service.
-- [GKVoiceChatServiceError.Code.outOfMemoryError](gkvoicechatserviceerror-swift.struct/code/outofmemoryerror.md)
+- [GKVoiceChatServiceError.Code.outOfMemoryError](./code/outofmemoryerror.md)
   The voice chat service was unable to allocate memory required to operate.
-- [GKVoiceChatServiceError.Code.invalidParameterError](gkvoicechatserviceerror-swift.struct/code/invalidparametererror.md)
+- [GKVoiceChatServiceError.Code.invalidParameterError](./code/invalidparametererror.md)
   A parameter had an unrecognized value.
 ### Initializers
-- [init?(rawValue: Int32)](gkvoicechatserviceerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [GKGameSessionError.Code](gkgamesessionerror/code.md)
+### Deprecated enumerations
+- [GKGameSessionError.Code](../gkgamesessionerror/code.md)
   Error codes for the game session domain.
-- [enum GKPeerConnectionState](gkpeerconnectionstate.md)
+- [enum GKPeerConnectionState](../gkpeerconnectionstate.md)
   The state of a peer known to the session.
-- [enum GKPeerPickerConnectionType](gkpeerpickerconnectiontype.md)
+- [enum GKPeerPickerConnectionType](../gkpeerpickerconnectiontype.md)
   Network connections available to the peer picker dialog.
-- [enum GKSendDataMode](gksenddatamode.md)
+- [enum GKSendDataMode](../gksenddatamode.md)
   The mechanism used to transmit data to other peers.
-- [GKSessionError.Code](gksessionerror-swift.struct/code.md)
+- [GKSessionError.Code](../gksessionerror-swift.struct/code.md)
   Error codes for the session error domain.
-- [struct GKSessionError](gksessionerror-swift.struct.md)
-- [enum GKSessionMode](gksessionmode.md)
+- [struct GKSessionError](../gksessionerror-swift.struct.md)
+- [enum GKSessionMode](../gksessionmode.md)
   Modes that determine how a session interacts with other peers.
-- [struct GKVoiceChatServiceError](gkvoicechatserviceerror-swift.struct.md)
+- [struct GKVoiceChatServiceError](../gkvoicechatserviceerror-swift.struct.md)
 
 
 ---

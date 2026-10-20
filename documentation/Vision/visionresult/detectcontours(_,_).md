@@ -1,7 +1,8 @@
 # VisionResult.detectContours(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a detect contours request.
 
@@ -22,9 +23,10 @@ case detectContours(DetectContoursRequest, ContoursObservation)
 
 ## See Also
 
-- [case detectTrajectories(DetectTrajectoriesRequest, [TrajectoryObservation])](visionresult/detecttrajectories(_:_:).md)
+### Getting the trajectory, contour, and horizon detection result
+- [case detectTrajectories(DetectTrajectoriesRequest, [TrajectoryObservation])](./detecttrajectories%28_,_%29.md)
   A result from performing a detect trajectories request.
-- [case detectHorizon(DetectHorizonRequest, HorizonObservation?)](visionresult/detecthorizon(_:_:).md)
+- [case detectHorizon(DetectHorizonRequest, HorizonObservation?)](./detecthorizon%28_,_%29.md)
   A result from performing a detect horizon request.
 
 

@@ -1,7 +1,8 @@
 # significantEvent
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The significant time-based event that is used to calculate when the event fires.
 
@@ -19,9 +20,14 @@ The significant time-based event that is used to calculate when the event fires.
 var significantEvent: HMSignificantEvent { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite) HMSignificantEvent significantEvent;
+```
+
 ## See Also
 
-- [var offset: DateComponents](hmmutablesignificanttimeevent/offset.md)
+### Configuring a significant time event
+- [var offset: DateComponents](./offset.md)
   The offset from the significant event that this event fires at.
 
 

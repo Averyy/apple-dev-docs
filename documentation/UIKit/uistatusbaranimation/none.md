@@ -1,15 +1,16 @@
 # UIStatusBarAnimation.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No animation is applied to the status bar as it is shown or hidden.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@ No animation is applied to the status bar as it is shown or hidden.
 case none
 ```
 
+```c
+UIStatusBarAnimationNone
+```
+
 ## See Also
 
-- [UIStatusBarAnimation.fade](uistatusbaranimation/fade.md)
+### Constants
+- [UIStatusBarAnimation.fade](./fade.md)
   The status bar fades in and out as it is shown or hidden, respectively.
-- [UIStatusBarAnimation.slide](uistatusbaranimation/slide.md)
+- [UIStatusBarAnimation.slide](./slide.md)
   The status bar slides in or out as it is shown or hidden, respectively.
 
 

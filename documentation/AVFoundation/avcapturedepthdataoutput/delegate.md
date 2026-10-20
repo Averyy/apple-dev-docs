@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that receives depth data.
 
@@ -17,17 +18,22 @@ A delegate object that receives depth data.
 var delegate: (any AVCaptureDepthDataOutputDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<AVCaptureDepthDataOutputDelegate> delegate;
+```
+
 #### Discussion
 
-This property is read-only. You set the delegate object and the dispatch queue for calling delegate methods together using the [`setDelegate(_:callbackQueue:)`](avcapturedepthdataoutput/setdelegate(_:callbackqueue:).md) method.
+This property is read-only. You set the delegate object and the dispatch queue for calling delegate methods together using the [`setDelegate(_:callbackQueue:)`](./setdelegate%28_,callbackqueue%29.md) method.
 
 ## See Also
 
-- [func setDelegate((any AVCaptureDepthDataOutputDelegate)?, callbackQueue: dispatch_queue_t?)](avcapturedepthdataoutput/setdelegate(_:callbackqueue:).md)
+### Receiving captured depth data
+- [func setDelegate((any AVCaptureDepthDataOutputDelegate)?, callbackQueue: dispatch_queue_t?)](./setdelegate%28_,callbackqueue%29.md)
   Designates a delegate object to receive depth data and a dispatch queue for delivering that data.
-- [var delegateCallbackQueue: dispatch_queue_t?](avcapturedepthdataoutput/delegatecallbackqueue.md)
+- [var delegateCallbackQueue: dispatch_queue_t?](./delegatecallbackqueue.md)
   A dispatch queue for delivering depth data.
-- [protocol AVCaptureDepthDataOutputDelegate](avcapturedepthdataoutputdelegate.md)
+- [protocol AVCaptureDepthDataOutputDelegate](../avcapturedepthdataoutputdelegate.md)
   Methods for receiving depth data produced by a depth capture output.
 
 

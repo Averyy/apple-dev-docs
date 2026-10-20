@@ -1,15 +1,16 @@
 # UIDocumentPickerDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods for tracking when the user selects a document or destination, or cancels the operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -18,28 +19,33 @@ A set of methods for tracking when the user selects a document or destination, o
 protocol UIDocumentPickerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIDocumentPickerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to user actions
-- [func documentPicker(UIDocumentPickerViewController, didPickDocumentsAt: [URL])](uidocumentpickerdelegate/documentpicker(_:didpickdocumentsat:).md)
+- [func documentPicker(UIDocumentPickerViewController, didPickDocumentsAt: [URL])](./uidocumentpickerdelegate/documentpicker%28_,didpickdocumentsat%29.md)
   Tells the delegate that the user has selected one or more documents.
-- [func documentPickerWasCancelled(UIDocumentPickerViewController)](uidocumentpickerdelegate/documentpickerwascancelled(_:).md)
+- [func documentPickerWasCancelled(UIDocumentPickerViewController)](./uidocumentpickerdelegate/documentpickerwascancelled%28_%29.md)
   Tells the delegate that the user canceled the document picker.
-- [func documentPicker(UIDocumentPickerViewController, didPickDocumentAt: URL)](uidocumentpickerdelegate/documentpicker(_:didpickdocumentat:).md)
+- [func documentPicker(UIDocumentPickerViewController, didPickDocumentAt: URL)](./uidocumentpickerdelegate/documentpicker%28_,didpickdocumentat%29.md)
   Tells the delegate that the user has selected a document or a destination.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any UIDocumentPickerDelegate)?](uidocumentpickerviewcontroller/delegate.md)
+### Getting the user-selected document
+- [var delegate: (any UIDocumentPickerDelegate)?](./uidocumentpickerviewcontroller/delegate.md)
   An object that acts as the delegate of the view controller.
-- [var allowsMultipleSelection: Bool](uidocumentpickerviewcontroller/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./uidocumentpickerviewcontroller/allowsmultipleselection.md)
   A Boolean value that determines whether the user can select more than one document at a time.
-- [var directoryURL: URL?](uidocumentpickerviewcontroller/directoryurl.md)
+- [var directoryURL: URL?](./uidocumentpickerviewcontroller/directoryurl.md)
   The initial directory that the document picker displays.
 
 

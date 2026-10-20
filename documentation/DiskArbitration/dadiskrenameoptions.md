@@ -1,7 +1,8 @@
 # DADiskRenameOptions
 
 **Framework**: Disk Arbitration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options for DADiskRename().
 
@@ -15,24 +16,29 @@ Options for DADiskRename().
 typealias DADiskRenameOptions = UInt32
 ```
 
+```c
+typedef UInt32 DADiskRenameOptions;
+```
+
 ## Topics
 
 ### Constants
-- [var kDADiskRenameOptionDefault: Int](kdadiskrenameoptiondefault.md)
+- [var kDADiskRenameOptionDefault: Int](./kdadiskrenameoptiondefault.md)
 
 ## See Also
 
-- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+### Data Types
+- [typealias DADiskClaimOptions](./dadiskclaimoptions.md)
   Options for DADiskClaim().
-- [typealias DADiskEjectOptions](dadiskejectoptions.md)
+- [typealias DADiskEjectOptions](./dadiskejectoptions.md)
   Options for DADiskEject().
-- [typealias DADiskMountOptions](dadiskmountoptions.md)
+- [typealias DADiskMountOptions](./dadiskmountoptions.md)
   Options for DADiskMount().
-- [typealias DADiskOptions](dadiskoptions.md)
+- [typealias DADiskOptions](./dadiskoptions.md)
   Options for DADiskGetOptions() and DADiskSetOptions().
-- [typealias DADiskUnmountOptions](dadiskunmountoptions.md)
+- [typealias DADiskUnmountOptions](./dadiskunmountoptions.md)
   Options for DADiskUnmount().
-- [typealias DAReturn](dareturn.md)
+- [typealias DAReturn](./dareturn.md)
   A return code.
 
 

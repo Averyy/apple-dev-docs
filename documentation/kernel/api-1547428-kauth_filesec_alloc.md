@@ -1,14 +1,15 @@
 # kauth_filesec_alloc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kauth_filesec_t kauth_filesec_alloc(int size);
 ```
 

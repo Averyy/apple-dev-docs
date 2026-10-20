@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The drag item represented by the placeholder cell.
@@ -16,6 +17,10 @@ The drag item represented by the placeholder cell.
 
 ```swift
 var dragItem: UIDragItem { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIDragItem * dragItem;
 ```
 
 

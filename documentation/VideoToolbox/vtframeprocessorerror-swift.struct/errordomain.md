@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error domain of Video Toolbox errors.
 
@@ -21,7 +22,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let VTFrameProcessorErrorDomain: String](vtframeprocessorerrordomain.md)
+### Error domain
+- [let VTFrameProcessorErrorDomain: String](../vtframeprocessorerrordomain.md)
   The error domain of Video Toolbox errors.
 
 

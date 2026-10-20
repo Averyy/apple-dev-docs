@@ -1,7 +1,8 @@
 # MetricsKey
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A key that uniquely identifies a metric.
 
@@ -23,46 +24,47 @@ struct MetricsKey
 ## Topics
 
 ### Getting the properties
-- [static let source: MetricsKey](metricskey/source.md)
+- [static let source: MetricsKey](./metricskey/source.md)
   A key associated with a temporal stream source (e.g. a file name).
-- [static let trainingAccuracy: MetricsKey](metricskey/trainingaccuracy.md)
+- [static let trainingAccuracy: MetricsKey](./metricskey/trainingaccuracy.md)
   A key associated with a training accuracy metric.
-- [static let trainingError: MetricsKey](metricskey/trainingerror.md)
+- [static let trainingError: MetricsKey](./metricskey/trainingerror.md)
   A key associated with a training error metric.
-- [static let trainingLoss: MetricsKey](metricskey/trainingloss.md)
+- [static let trainingLoss: MetricsKey](./metricskey/trainingloss.md)
   A key associated with a training loss metric.
-- [static let trainingMaximumError: MetricsKey](metricskey/trainingmaximumerror.md)
+- [static let trainingMaximumError: MetricsKey](./metricskey/trainingmaximumerror.md)
   A key associated with a training maximum error metric.
-- [static let trainingMeanAveragePrecision: MetricsKey](metricskey/trainingmeanaverageprecision.md)
+- [static let trainingMeanAveragePrecision: MetricsKey](./metricskey/trainingmeanaverageprecision.md)
   A key associated with a training mean average precision metric.
-- [static let validationAccuracy: MetricsKey](metricskey/validationaccuracy.md)
+- [static let validationAccuracy: MetricsKey](./metricskey/validationaccuracy.md)
   A key associated with a validation accuracy metric.
-- [static let validationError: MetricsKey](metricskey/validationerror.md)
+- [static let validationError: MetricsKey](./metricskey/validationerror.md)
   A key associated with a validation error metric.
-- [static let validationLoss: MetricsKey](metricskey/validationloss.md)
+- [static let validationLoss: MetricsKey](./metricskey/validationloss.md)
   A key associated with a validation loss metric.
-- [static let validationMaximumError: MetricsKey](metricskey/validationmaximumerror.md)
+- [static let validationMaximumError: MetricsKey](./metricskey/validationmaximumerror.md)
   A key associated with a validation maximum error metric.
-- [static let validationMeanAveragePrecision: MetricsKey](metricskey/validationmeanaverageprecision.md)
+- [static let validationMeanAveragePrecision: MetricsKey](./metricskey/validationmeanaverageprecision.md)
   A key associated with a validation mean average precision metric.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Event](event.md)
+### Event handling
+- [struct Event](./event.md)
   Maintains the status of the pipeline.
-- [typealias EventHandler](eventhandler.md)
+- [typealias EventHandler](./eventhandler.md)
   A closure to handle processing events.
 
 

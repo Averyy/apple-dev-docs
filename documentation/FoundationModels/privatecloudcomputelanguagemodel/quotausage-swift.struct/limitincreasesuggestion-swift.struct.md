@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An offer that a user can act on to increase their quota for a language model.
 
@@ -22,20 +23,21 @@ struct LimitIncreaseSuggestion
 ## Topics
 
 ### Presenting the suggestion
-- [func show()](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.struct/show.md)
+- [func show()](./limitincreasesuggestion-swift.struct/show%28%29.md)
   Presents the limit increase flow to the user.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isLimitReached: Bool](privatecloudcomputelanguagemodel/quotausage-swift.struct/islimitreached.md)
+### Inspecting the quota limit
+- [var isLimitReached: Bool](./islimitreached.md)
   A Boolean value that indicates whether the usage limit has been reached.
-- [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.property.md)
+- [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](./limitincreasesuggestion-swift.property.md)
   A suggestion the user can act on to increase their quota.
 
 

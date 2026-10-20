@@ -1,18 +1,19 @@
 # repeatMode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode used to determine how the keyframe sequence repeats.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The mode used to determine how the keyframe sequence repeats.
 var repeatMode: SKRepeatMode { get set }
 ```
 
+```objc
+@property (nonatomic) SKRepeatMode repeatMode;
+```
+
 ## Mentions
 
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Discussion
 
-The possible values are defined in [`SKRepeatMode`](skrepeatmode.md). The default value is [`SKRepeatMode.clamp`](skrepeatmode/clamp.md).
+The possible values are defined in [`SKRepeatMode`](../skrepeatmode.md). The default value is [`SKRepeatMode.clamp`](../skrepeatmode/clamp.md).
 
 ## See Also
 
-- [var interpolationMode: SKInterpolationMode](skkeyframesequence/interpolationmode.md)
+### Interpolation Modifiers
+- [var interpolationMode: SKInterpolationMode](./interpolationmode.md)
   The mode used to determine how values for times between the keyframes are calculated.
 
 

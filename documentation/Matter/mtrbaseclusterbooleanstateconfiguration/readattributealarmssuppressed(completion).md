@@ -1,7 +1,8 @@
 # readAttributeAlarmsSuppressed(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAlarmsSuppressed(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAlarmsSuppressed() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeAlarmsSuppressedWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

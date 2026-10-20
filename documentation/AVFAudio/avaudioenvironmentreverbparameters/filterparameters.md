@@ -1,7 +1,8 @@
 # filterParameters
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A filter that the system applies to the output.
 
@@ -20,11 +21,16 @@ A filter that the system applies to the output.
 var filterParameters: AVAudioUnitEQFilterParameters { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioUnitEQFilterParameters * filterParameters;
+```
+
 ## See Also
 
-- [var level: Float](avaudioenvironmentreverbparameters/level.md)
+### Getting and setting reverb values
+- [var level: Float](./level.md)
   Controls the amount of reverb, in decibels.
-- [func loadFactoryReverbPreset(AVAudioUnitReverbPreset)](avaudioenvironmentreverbparameters/loadfactoryreverbpreset(_:).md)
+- [func loadFactoryReverbPreset(AVAudioUnitReverbPreset)](./loadfactoryreverbpreset%28_%29.md)
   Loads one of the reverbs factory presets.
 
 

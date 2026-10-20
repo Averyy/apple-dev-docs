@@ -1,7 +1,8 @@
 # NSAccessibilitySortDirection.ascending
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The column is sorted in ascending values.
 
@@ -14,11 +15,16 @@ The column is sorted in ascending values.
 case ascending
 ```
 
+```c
+NSAccessibilitySortDirectionAscending
+```
+
 ## See Also
 
-- [NSAccessibilitySortDirection.unknown](nsaccessibilitysortdirection/unknown.md)
+### Constants
+- [NSAccessibilitySortDirection.unknown](./unknown.md)
   The sort direction is unknown.
-- [NSAccessibilitySortDirection.descending](nsaccessibilitysortdirection/descending.md)
+- [NSAccessibilitySortDirection.descending](./descending.md)
   The column is sorted in descending values.
 
 

@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an in-progress snapshot request.
 
@@ -18,9 +19,14 @@ Cancels an in-progress snapshot request.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 ## See Also
 
-- [func getSnapshotWithCompletionHandler((MKLookAroundSnapshotter.Snapshot?, (any Error)?) -> Void)](mklookaroundsnapshotter/getsnapshotwithcompletionhandler(_:).md)
+### Starting and stopping a snapshot
+- [func getSnapshotWithCompletionHandler((MKLookAroundSnapshotter.Snapshot?, (any Error)?) -> Void)](./getsnapshotwithcompletionhandler%28_%29.md)
   Requests a new snapshot and calls the completion handler you provide.
 
 

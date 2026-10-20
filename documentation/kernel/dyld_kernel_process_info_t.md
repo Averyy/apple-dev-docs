@@ -1,14 +1,15 @@
 # dyld_kernel_process_info_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct dyld_kernel_process_info {
     ...
 } dyld_kernel_process_info_t;
@@ -17,13 +18,13 @@ typedef struct dyld_kernel_process_info {
 ## Topics
 
 ### Instance Properties
-- [cache_image_info](dyld_kernel_process_info_t/1645878-cache_image_info.md)
-- [dyldState](dyld_kernel_process_info_t/1645877-dyldstate.md)
-- [imageCount](dyld_kernel_process_info_t/1645880-imagecount.md)
-- [initialImageCount](dyld_kernel_process_info_t/1645876-initialimagecount.md)
-- [no_cache](dyld_kernel_process_info_t/1645881-no_cache.md)
-- [private_cache](dyld_kernel_process_info_t/1645875-private_cache.md)
-- [timestamp](dyld_kernel_process_info_t/1645872-timestamp.md)
+- [cache_image_info](./dyld_kernel_process_info_t/api-1645878-cache_image_info.md)
+- [dyldState](./dyld_kernel_process_info_t/api-1645877-dyldstate.md)
+- [imageCount](./dyld_kernel_process_info_t/api-1645880-imagecount.md)
+- [initialImageCount](./dyld_kernel_process_info_t/api-1645876-initialimagecount.md)
+- [no_cache](./dyld_kernel_process_info_t/api-1645881-no_cache.md)
+- [private_cache](./dyld_kernel_process_info_t/api-1645875-private_cache.md)
+- [timestamp](./dyld_kernel_process_info_t/api-1645872-timestamp.md)
 
 
 ---

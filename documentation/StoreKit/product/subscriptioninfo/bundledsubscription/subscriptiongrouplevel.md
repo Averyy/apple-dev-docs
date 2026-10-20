@@ -1,7 +1,8 @@
 # subscriptionGroupLevel
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of this subscription relative to other subscriptions in the same group.
 

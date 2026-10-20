@@ -1,7 +1,8 @@
 # refreshCurrentPreviewItem()
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the Quick Look preview controller to recompute the display of the current preview item.
 
@@ -17,19 +18,24 @@ Asks the Quick Look preview controller to recompute the display of the current p
 func refreshCurrentPreviewItem()
 ```
 
+```objc
+- (void) refreshCurrentPreviewItem;
+```
+
 #### Discussion
 
 Quick Look recomputes the display regardless of whether the current preview item changes.
 
 ## See Also
 
-- [class func canPreview(any QLPreviewItem) -> Bool](qlpreviewcontroller/canpreview(_:).md)
+### Managing item previews
+- [class func canPreview(any QLPreviewItem) -> Bool](./canpreview%28_%29.md)
   Returns a Boolean value that indicates whether the preview controller can display an item.
-- [var currentPreviewItem: (any QLPreviewItem)?](qlpreviewcontroller/currentpreviewitem.md)
+- [var currentPreviewItem: (any QLPreviewItem)?](./currentpreviewitem.md)
   The item displaying in the Quick Look preview controller.
-- [var currentPreviewItemIndex: Int](qlpreviewcontroller/currentpreviewitemindex.md)
+- [var currentPreviewItemIndex: Int](./currentpreviewitemindex.md)
   The index within the preview item navigation list of the item displaying in the Quick Look preview controller.
-- [func reloadData()](qlpreviewcontroller/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Asks the preview controller to reload its data from its data source.
 
 

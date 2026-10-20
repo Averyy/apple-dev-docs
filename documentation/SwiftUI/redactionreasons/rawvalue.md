@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value.
 
@@ -22,7 +23,8 @@ let rawValue: Int
 
 ## See Also
 
-- [init(rawValue: Int)](redactionreasons/init(rawvalue:).md)
+### Creating redaction reasons
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates a new set from a raw value.
 
 

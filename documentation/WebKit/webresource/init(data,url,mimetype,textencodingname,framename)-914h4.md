@@ -1,17 +1,22 @@
 # init(data:url:mimeType:textEncodingName:frameName:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a web resource instance.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(data: Data!, url URL: URL!, mimeType MIMEType: String!, textEncodingName: String!, frameName: String!)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data URL:(NSURL *) URL MIMEType:(NSString *) MIMEType textEncodingName:(NSString *) textEncodingName frameName:(NSString *) frameName;
 ```
 
 #### Return Value

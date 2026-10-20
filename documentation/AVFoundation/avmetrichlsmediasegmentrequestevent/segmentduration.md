@@ -1,7 +1,8 @@
 # segmentDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the duration of segment in seconds.
 
@@ -20,14 +21,19 @@ Returns the duration of segment in seconds.
 var segmentDuration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval segmentDuration;
+```
+
 ## See Also
 
-- [var byteRange: NSRange](avmetrichlsmediasegmentrequestevent/byterange.md)
-- [var indexFileURL: URL](avmetrichlsmediasegmentrequestevent/indexfileurl.md)
-- [var isMapSegment: Bool](avmetrichlsmediasegmentrequestevent/ismapsegment.md)
-- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](avmetrichlsmediasegmentrequestevent/mediaresourcerequestevent.md)
-- [var mediaType: AVMediaType](avmetrichlsmediasegmentrequestevent/mediatype.md)
-- [var url: URL?](avmetrichlsmediasegmentrequestevent/url.md)
+### Inspecting the event
+- [var byteRange: NSRange](./byterange.md)
+- [var indexFileURL: URL](./indexfileurl.md)
+- [var isMapSegment: Bool](./ismapsegment.md)
+- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](./mediaresourcerequestevent.md)
+- [var mediaType: AVMediaType](./mediatype.md)
+- [var url: URL?](./url.md)
 
 
 ---

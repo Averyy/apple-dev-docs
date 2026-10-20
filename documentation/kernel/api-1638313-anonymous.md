@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,15 +18,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOBlitSourceCGSSurface](1638313-anonymous/kioblitsourcecgssurface.md)
-- [kIOBlitSourceDefault](1638313-anonymous/kioblitsourcedefault.md)
-- [kIOBlitSourceFramebuffer](1638313-anonymous/kioblitsourceframebuffer.md)
-- [kIOBlitSourceIsSame](1638313-anonymous/kioblitsourceissame.md)
-- [kIOBlitSourceMemory](1638313-anonymous/kioblitsourcememory.md)
-- [kIOBlitSourceOOLMemory](1638313-anonymous/kioblitsourceoolmemory.md)
-- [kIOBlitSourceOOLPattern](1638313-anonymous/kioblitsourceoolpattern.md)
-- [kIOBlitSourcePattern](1638313-anonymous/kioblitsourcepattern.md)
-- [kIOBlitSourceSolid](1638313-anonymous/kioblitsourcesolid.md)
+- [kIOBlitSourceCGSSurface](./api-1638313-anonymous/kioblitsourcecgssurface.md)
+- [kIOBlitSourceDefault](./api-1638313-anonymous/kioblitsourcedefault.md)
+- [kIOBlitSourceFramebuffer](./api-1638313-anonymous/kioblitsourceframebuffer.md)
+- [kIOBlitSourceIsSame](./api-1638313-anonymous/kioblitsourceissame.md)
+- [kIOBlitSourceMemory](./api-1638313-anonymous/kioblitsourcememory.md)
+- [kIOBlitSourceOOLMemory](./api-1638313-anonymous/kioblitsourceoolmemory.md)
+- [kIOBlitSourceOOLPattern](./api-1638313-anonymous/kioblitsourceoolpattern.md)
+- [kIOBlitSourcePattern](./api-1638313-anonymous/kioblitsourcepattern.md)
+- [kIOBlitSourceSolid](./api-1638313-anonymous/kioblitsourcesolid.md)
 
 
 ---

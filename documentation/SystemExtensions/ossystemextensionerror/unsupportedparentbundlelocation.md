@@ -1,7 +1,8 @@
 # unsupportedParentBundleLocation
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates the extension’s parent app isn’t in a valid location for activation.
 
@@ -23,31 +24,32 @@ The expected location of a driver extension is in the `Contents/Library/SystemEx
 
 ## See Also
 
-- [OSSystemExtensionError.Code](ossystemextensionerror/code.md)
+### Error Codes
+- [OSSystemExtensionError.Code](./code.md)
   Error codes for system extensions.
-- [static var unknown: OSSystemExtensionError.Code](ossystemextensionerror/unknown.md)
+- [static var unknown: OSSystemExtensionError.Code](./unknown.md)
   An error code that indicates an unknown error occurred.
-- [static var missingEntitlement: OSSystemExtensionError.Code](ossystemextensionerror/missingentitlement.md)
+- [static var missingEntitlement: OSSystemExtensionError.Code](./missingentitlement.md)
   An error code that indicates the system extension lacks a required entitlement.
-- [static var extensionNotFound: OSSystemExtensionError.Code](ossystemextensionerror/extensionnotfound.md)
+- [static var extensionNotFound: OSSystemExtensionError.Code](./extensionnotfound.md)
   An error code that indicates the manager can’t find the system extension.
-- [static var extensionMissingIdentifier: OSSystemExtensionError.Code](ossystemextensionerror/extensionmissingidentifier.md)
+- [static var extensionMissingIdentifier: OSSystemExtensionError.Code](./extensionmissingidentifier.md)
   An error code that indicates the extension identifier is missing.
-- [static var duplicateExtensionIdentifer: OSSystemExtensionError.Code](ossystemextensionerror/duplicateextensionidentifer.md)
+- [static var duplicateExtensionIdentifer: OSSystemExtensionError.Code](./duplicateextensionidentifer.md)
   An error code that indicates the extension identifier duplicates an existing identifier.
-- [static var unknownExtensionCategory: OSSystemExtensionError.Code](ossystemextensionerror/unknownextensioncategory.md)
+- [static var unknownExtensionCategory: OSSystemExtensionError.Code](./unknownextensioncategory.md)
   An error code that indicates the extension manager can’t recognize the extension’s category identifier.
-- [static var codeSignatureInvalid: OSSystemExtensionError.Code](ossystemextensionerror/codesignatureinvalid.md)
+- [static var codeSignatureInvalid: OSSystemExtensionError.Code](./codesignatureinvalid.md)
   An error code that indicates the extension’s signature is invalid.
-- [static var validationFailed: OSSystemExtensionError.Code](ossystemextensionerror/validationfailed.md)
+- [static var validationFailed: OSSystemExtensionError.Code](./validationfailed.md)
   An error code that indicates the manager can’t validate the extension.
-- [static var forbiddenBySystemPolicy: OSSystemExtensionError.Code](ossystemextensionerror/forbiddenbysystempolicy.md)
+- [static var forbiddenBySystemPolicy: OSSystemExtensionError.Code](./forbiddenbysystempolicy.md)
   An error code that indicates the system policy prohibits activating the system extension.
-- [static var requestCanceled: OSSystemExtensionError.Code](ossystemextensionerror/requestcanceled.md)
+- [static var requestCanceled: OSSystemExtensionError.Code](./requestcanceled.md)
   An error code that indicates the system extension manager request was canceled.
-- [static var requestSuperseded: OSSystemExtensionError.Code](ossystemextensionerror/requestsuperseded.md)
+- [static var requestSuperseded: OSSystemExtensionError.Code](./requestsuperseded.md)
   An error code that indicates the system extension request failed because the system already has a pending request for the same identifier.
-- [static var authorizationRequired: OSSystemExtensionError.Code](ossystemextensionerror/authorizationrequired.md)
+- [static var authorizationRequired: OSSystemExtensionError.Code](./authorizationrequired.md)
   An error code that indicates the system was unable to obtain the proper authorization.
 
 

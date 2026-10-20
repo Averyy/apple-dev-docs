@@ -1,7 +1,8 @@
 # ImmersiveVideoMask.Layout
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the layout of the video mask.
 
@@ -21,22 +22,22 @@ enum Layout
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveVideoMask.Layout.mono](immersivevideomask/layout-swift.enum/mono.md)
+- [ImmersiveVideoMask.Layout.mono](./layout-swift.enum/mono.md)
   A value that represents mono mask layout.
-- [ImmersiveVideoMask.Layout.overUnder](immersivevideomask/layout-swift.enum/overunder.md)
+- [ImmersiveVideoMask.Layout.overUnder](./layout-swift.enum/overunder.md)
   A value that represents over-under mask layout.
-- [ImmersiveVideoMask.Layout.separate](immersivevideomask/layout-swift.enum/separate.md)
+- [ImmersiveVideoMask.Layout.separate](./layout-swift.enum/separate.md)
   A value that represents stereo mask, but separated.
-- [ImmersiveVideoMask.Layout.sideBySide](immersivevideomask/layout-swift.enum/sidebyside.md)
+- [ImmersiveVideoMask.Layout.sideBySide](./layout-swift.enum/sidebyside.md)
   A value that represents side by side mask layout.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

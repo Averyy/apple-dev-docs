@@ -1,7 +1,8 @@
 # aspectRatio(for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The aspect ratio of the image this component will present for the requested viewing mode.
 

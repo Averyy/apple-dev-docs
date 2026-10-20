@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.CreationVariety.high
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to use a lot of variety when creating images.
 

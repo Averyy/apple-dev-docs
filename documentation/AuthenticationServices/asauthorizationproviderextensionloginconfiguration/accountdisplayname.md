@@ -1,7 +1,8 @@
 # accountDisplayName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for the account.
 
@@ -14,9 +15,13 @@ The display name for the account.
 var accountDisplayName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * accountDisplayName;
+```
+
 ## Mentions
 
-- [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
+- [Configuring authentication with the identity provider (IdP)](../configuring-authentication-with-the-identity-provider-idp.md)
 
 #### Discussion
 
@@ -24,7 +29,8 @@ The system uses this value for notifications and login prompts.
 
 ## See Also
 
-- [var invalidCredentialPredicate: String?](asauthorizationproviderextensionloginconfiguration/invalidcredentialpredicate.md)
+### Obtaining the recommended configuration
+- [var invalidCredentialPredicate: String?](./invalidcredentialpredicate.md)
   The predicate string that identifies invalid credential errors.
 
 

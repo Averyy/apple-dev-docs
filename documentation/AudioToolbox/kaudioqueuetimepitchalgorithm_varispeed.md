@@ -1,15 +1,16 @@
 # kAudioQueueTimePitchAlgorithm_Varispeed
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioQueueTimePitchAlgorithm_Varispeed: UInt32 { get }
 ```
 
+```c
+kAudioQueueTimePitchAlgorithm_Varispeed
+```
+
 ## See Also
 
-- [var kAudioQueueTimePitchAlgorithm_Spectral: UInt32](kaudioqueuetimepitchalgorithm_spectral.md)
-- [var kAudioQueueTimePitchAlgorithm_TimeDomain: UInt32](kaudioqueuetimepitchalgorithm_timedomain.md)
+### Constants
+- [var kAudioQueueTimePitchAlgorithm_Spectral: UInt32](./kaudioqueuetimepitchalgorithm_spectral.md)
+- [var kAudioQueueTimePitchAlgorithm_TimeDomain: UInt32](./kaudioqueuetimepitchalgorithm_timedomain.md)
 
 
 ---

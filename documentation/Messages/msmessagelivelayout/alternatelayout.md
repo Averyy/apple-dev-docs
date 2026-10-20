@@ -1,7 +1,8 @@
 # alternateLayout
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A template layout to be displayed when the live layout is unavailable.
 
@@ -14,6 +15,10 @@ A template layout to be displayed when the live layout is unavailable.
 
 ```swift
 var alternateLayout: MSMessageTemplateLayout { get }
+```
+
+```objc
+@property (nonatomic, readonly) MSMessageTemplateLayout * alternateLayout;
 ```
 
 #### Discussion

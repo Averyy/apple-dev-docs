@@ -1,7 +1,8 @@
 # instanceCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the number of instance descriptors in the instance descriptor buffer references.
 
@@ -17,6 +18,10 @@ Controls the number of instance descriptors in the instance descriptor buffer re
 
 ```swift
 var instanceCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger instanceCount;
 ```
 
 

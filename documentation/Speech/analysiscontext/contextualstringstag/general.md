@@ -1,7 +1,8 @@
 # general
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A predefined tag for applications that have no need to distinguish between sets of contextual strings.
 

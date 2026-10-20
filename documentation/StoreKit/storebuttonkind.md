@@ -1,7 +1,8 @@
 # StoreButtonKind
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button to display in a store view or subscription store view.
 
@@ -22,32 +23,33 @@ struct StoreButtonKind
 
 #### Overview
 
-Use the [`storeButton(_:for:)`](https://developer.apple.com/documentation/swiftui/view/storebutton(_:for:)) modifier on a view to set the visibility of the buttons.
+Use the [`storeButton(_:for:)`](../SwiftUI/view/storebutton%28_,for%29.md) modifier on a view to set the visibility of the buttons.
 
 ## Topics
 
 ### Getting button types for store views
-- [static var cancellation: StoreButtonKind](storebuttonkind/cancellation.md)
+- [static var cancellation: StoreButtonKind](./storebuttonkind/cancellation.md)
   A type of button that people use to dismiss the current store presentation.
-- [static var restorePurchases: StoreButtonKind](storebuttonkind/restorepurchases.md)
+- [static var restorePurchases: StoreButtonKind](./storebuttonkind/restorepurchases.md)
   A type of button that people use to restore purchases.
 ### Getting additional button types for subscription store views
-- [static var signIn: StoreButtonKind](storebuttonkind/signin.md)
+- [static var signIn: StoreButtonKind](./storebuttonkind/signin.md)
   A type of button that people use to sign in.
-- [static var redeemCode: StoreButtonKind](storebuttonkind/redeemcode.md)
+- [static var redeemCode: StoreButtonKind](./storebuttonkind/redeemcode.md)
   A type of button that people use to redeem an offer code.
-- [static var policies: StoreButtonKind](storebuttonkind/policies.md)
+- [static var policies: StoreButtonKind](./storebuttonkind/policies.md)
   A type of button that people use to display store policies.
 
 ## See Also
 
+### Configuring accessory buttons
 - [func storeButton(Visibility, for: StoreButtonKind...) -> some View
-](../swiftui/view/storebutton(_:for:).md)
+](../SwiftUI/view/storebutton%28_,for%29.md)
   Specifies the visibility of auxiliary buttons that store view and subscription store view instances may use.
 - [func subscriptionStoreSignInAction((() -> ())?) -> some View
-](../swiftui/view/subscriptionstoresigninaction(_:).md)
+](../SwiftUI/view/subscriptionstoresigninaction%28_%29.md)
   Adds an action to perform when a person uses the sign-in button on a subscription store view within a view.
-- [struct SubscriptionOfferViewButtonKind](subscriptionofferviewbuttonkind.md)
+- [struct SubscriptionOfferViewButtonKind](./subscriptionofferviewbuttonkind.md)
 
 
 ---

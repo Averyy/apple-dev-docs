@@ -1,7 +1,8 @@
 # ASImportableExtension.Shared.SharingAccessor.AccessorType.group
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+

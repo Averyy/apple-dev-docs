@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized title displayed to a person.
 
@@ -16,15 +17,20 @@ The localized title displayed to a person.
 var title: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * title;
+```
+
 #### Discussion
 
-Define the value of this property as a parameter to the request initializer:  [`init(identifier:title:subtitle:)`](bgcontinuedprocessingtaskrequest/init(identifier:title:subtitle:).md). After that, this property is read only, however you can update the title by calling [`updateTitle(_:subtitle:)`](bgcontinuedprocessingtask/updatetitle(_:subtitle:).md).
+Define the value of this property as a parameter to the request initializer:  [`init(identifier:title:subtitle:)`](../bgcontinuedprocessingtaskrequest/init%28identifier,title,subtitle%29.md). After that, this property is read only, however you can update the title by calling [`updateTitle(_:subtitle:)`](./updatetitle%28_,subtitle%29.md).
 
 ## See Also
 
-- [var subtitle: String](bgcontinuedprocessingtask/subtitle.md)
+### Titling the task
+- [var subtitle: String](./subtitle.md)
   The localized subtitle displayed to a person.
-- [func updateTitle(String, subtitle: String)](bgcontinuedprocessingtask/updatetitle(_:subtitle:).md)
+- [func updateTitle(String, subtitle: String)](./updatetitle%28_,subtitle%29.md)
   Update the task title and subtitle that the system displays to a person.
 
 

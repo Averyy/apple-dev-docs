@@ -1,7 +1,8 @@
 # contentBased
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The writing direction following the language of the string that is laid out.
 
@@ -22,7 +23,7 @@ static let contentBased: Text.WritingDirectionStrategy
 
 #### Discussion
 
-The system may use different sources to determine the language of the string. This may include the characters used in the string, especially BiDi isolation markers, the language of the localization file the string was loaded from, or explicit annotations with the [`languageIdentifier`](https://developer.apple.com/documentation/foundation/attributescopes/foundationattributes/languageidentifier) attribute.
+The system may use different sources to determine the language of the string. This may include the characters used in the string, especially BiDi isolation markers, the language of the localization file the string was loaded from, or explicit annotations with the [`languageIdentifier`](../../../Foundation/attributescopes/foundationattributes/languageidentifier.md) attribute.
 
 
 ---

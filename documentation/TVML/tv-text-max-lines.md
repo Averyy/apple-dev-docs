@@ -1,6 +1,7 @@
 # tv-text-max-lines
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the maximum number of lines of text in an element.
 
@@ -12,22 +13,23 @@ Here’s an example that shows a text element with a maximum of three lines of t
 <text style="tv-text-max-lines:3">Maximum of 3 lines</text>
 ```
 
-##### Values for Tv Text Max Lines
+##### Values for tv-text-max-lines
 
 - **Integer**: The maximum number of lines to be displayed in an element.
 
-##### Elements That Use Tv Text Max Lines
+##### Elements that Use tv-text-max-lines
 
-- [`description`](description.md)
-- [`subtitle`](subtitle.md)
-- [`text`](text.md)
-- [`title`](title.md)
+- [description](./description.md)
+- [subtitle](./subtitle.md)
+- [text](./text.md)
+- [title](./title.md)
 
 ## See Also
 
-- [tv-minimum-scale-factor](tv-minimum-scale-factor.md)
+### Text Sizing
+- [tv-minimum-scale-factor](./tv-minimum-scale-factor.md)
   Sets the minimum size for text.
-- [tv-text-style](tv-text-style.md)
+- [tv-text-style](./tv-text-style.md)
   Sets a predefined size and style for text.
 
 

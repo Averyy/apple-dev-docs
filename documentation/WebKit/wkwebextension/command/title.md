@@ -1,7 +1,8 @@
 # title
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptive title for the command to help discoverability.
 
@@ -16,6 +17,10 @@ A descriptive title for the command to help discoverability.
 
 ```swift
 var title: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
 ```
 
 #### Discussion

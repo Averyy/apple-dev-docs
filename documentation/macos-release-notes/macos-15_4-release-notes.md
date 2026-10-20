@@ -1,18 +1,21 @@
 # macOS Sequoia 15.4 Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 15.4 SDK provides support to develop apps for Mac computers running Sequoia 15.4. The SDK comes bundled with Xcode 16.3. For information on the compatibility requirements for Xcode 16.3, see [`Xcode 16.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_3-release-notes).
+The macOS 15.4 SDK provides support to develop apps for Mac computers running Sequoia 15.4. The SDK comes bundled with Xcode 16.3. For information on the compatibility requirements for Xcode 16.3, see [Xcode 16.3 Release Notes](../Xcode-Release-Notes/xcode-16_3-release-notes.md).
 
 ##### Apple Intelligence
 
 ###### Known Issues
 
-- After restoring macOS 15.4, some Apple Intelligence features might not be available or you might see “Downloading support…”.  (145297891) **Workaround:** Restarting your device might resolve the issue.
+- After restoring macOS 15.4, some Apple Intelligence features might not be available or you might see “Downloading support…”.  (145297891)
+
+  **Workaround:** Restarting your device might resolve the issue.
 
 ##### Automatic Assessment Configuration
 
@@ -24,9 +27,11 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- After updating to macOS 15.4 beta, you might experience issues with loading installed drivers.  (145330084) (FB16547388) **Workaround:** Go to System Settings > General > Login Items & Extensions and disable your affected driver extensions. Restart your Mac. After restarting, go back to System Settings > General > Login Items & Extensions and re-enable the affected driver extensions.
+- After updating to macOS 15.4 beta, you might experience issues with loading installed drivers.  (145330084) (FB16547388)
 
-##### Fskit
+  **Workaround:** Go to System Settings > General > Login Items & Extensions and disable your affected driver extensions. Restart your Mac. After restarting, go back to System Settings > General > Login Items & Extensions and re-enable the affected driver extensions.
+
+##### FSKit
 
 ###### New Features
 
@@ -38,15 +43,19 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: Game controllers might stop responding when accessibility features, such as Voice Over, are enabled.  (141497799)
 
-##### Hvf
+##### hvf
 
 ###### Known Issues
 
-- Availability checking is disabled for C APIs in hvf.  (147323772) **Workaround:** To enable availability checking, add this ahead of any headers: ```None
- #define BUILD_FOR_APPLE_SDK 1
-```
+- Availability checking is disabled for C APIs in hvf.  (147323772)
 
-##### Libxml2
+  **Workaround:** To enable availability checking, add this ahead of any headers:
+
+  ```
+   #define BUILD_FOR_APPLE_SDK 1
+  ```
+
+##### libxml2
 
 ###### Deprecations
 
@@ -64,25 +73,33 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 - Podcasts Search provides suggestions as you type to help you find what you’re looking for.  (144169175)
 
-##### Scsicontrollerdriverkit
+##### SCSIControllerDriverKit
 
 ###### New Features
 
-- Four new API’s have been introduced: `UserMapBundledParallelTaskCommandAndResponseBuffers`, `BundledParallelTaskCompletion`, `UserProcessBundledParallelTasks` and `UserCompleteBundledParallelTask`. These APIs introduce the concepts of bundled I/Os and shared memory, for parallel task command and response buffers. The shared memory addresses the RPC copy overhead. Bundled I/O enables the exchange of multiple I/Os in a single API call (in both submission and completion path), instead of handing over one I/O at a time between DriverKit and DriverExtension. This helps mitigate the DriverKit latencies while interacting with DriverExtension. The `IOUserSCSIParallelInterfaceController.iig` file explains the concepts of I/O bundling and shared memory for parallel task and response buffers. If DriverExtension has considerably lower I/O performance compared to the KernelExtension for workloads with high queue depths or very small I/O sizes (i.e. 4KB), try using these new APIs.  (134516478)
+- Four new API’s have been introduced: `UserMapBundledParallelTaskCommandAndResponseBuffers`, `BundledParallelTaskCompletion`, `UserProcessBundledParallelTasks` and `UserCompleteBundledParallelTask`.
 
-##### Sd Card Reader
+  These APIs introduce the concepts of bundled I/Os and shared memory, for parallel task command and response buffers.
+
+  The shared memory addresses the RPC copy overhead. Bundled I/O enables the exchange of multiple I/Os in a single API call (in both submission and completion path), instead of handing over one I/O at a time between DriverKit and DriverExtension. This helps mitigate the DriverKit latencies while interacting with DriverExtension.
+
+  The `IOUserSCSIParallelInterfaceController.iig` file explains the concepts of I/O bundling and shared memory for parallel task and response buffers.
+
+  If DriverExtension has considerably lower I/O performance compared to the KernelExtension for workloads with high queue depths or very small I/O sizes (i.e. 4KB), try using these new APIs.  (134516478)
+
+##### SD Card Reader
 
 ###### New Features
 
 - Apple silicon Macs with an internal SD card reader now support SDUC cards larger than 2TB.  (122898691)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- New StoreKit APIs support [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) in-app purchases.  (118528943)
+- New StoreKit APIs support [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/) in-app purchases.  (118528943)
 - By using the new purchase option API `introductoryOfferEligibility(compactJWS:)`, you can now set a preference for whether an introductory offer should be redeemed during a purchase. This API requires you to sign a payload on your server in order to either apply the offer (even if the customer is not eligible) or block it.  (136152740)
-- New properties `appTransactionID`, `originalPlatform`, and `period` are now available in [`AppTransaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/apptransaction), [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction), [`Transaction.Offer`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/offer-swift.struct), and [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo).  (136395697)
+- New properties `appTransactionID`, `originalPlatform`, and `period` are now available in [AppTransaction](../StoreKit/apptransaction.md), [Transaction](../StoreKit/transaction.md), [Transaction.Offer](../StoreKit/transaction/offer-swift.struct.md), and [Product.SubscriptionInfo.RenewalInfo](../StoreKit/product/subscriptioninfo/renewalinfo.md).  (136395697)
 - The `Platform` symbol used by originalPlatform in AppTransaction has been moved to `AppStore.Platform`.  (143632084)
 - The introductory offer eligibility preference API in PurchaseOption has been renamed to `introductoryOfferEligibility(compactJWS:)`.  (143905053)
 - `watchOS` is removed as an option in the AppStore.Platform API. `watchOS` is now combined with `iOS`.  (145578780)
@@ -94,17 +111,19 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524) **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
+- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)
+
+  **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
 
 ###### Deprecations
 
-- [`Transaction.currentEntitlement(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/currententitlement(for:)) is now deprecated. This API returns the latest transaction that entitles the user to a product, which may not include transactions originated for family shared subscriptions. Use the `Transaction.currentEntitlements(for:)` method to get all the transactions that entitle the user to a product.  (138320205)
+- [Transaction.currentEntitlement(for:)](../StoreKit/transaction/currententitlement%28for%29.md) is now deprecated. This API returns the latest transaction that entitles the user to a product, which may not include transactions originated for family shared subscriptions. Use the `Transaction.currentEntitlements(for:)` method to get all the transactions that entitle the user to a product.  (138320205)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
-- On macOS `.sheet`, `.alert` and `.confirmationDialog` modal presentations conditionally allow app termination (via the menu item, ⌘Q, Software Update, etc.) automatically. This is now configurable with two new modifiers, [`presentationPreventsAppTermination(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/presentationpreventsapptermination(_:)) and [`dialogPreventsAppTermination(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/dialogpreventsapptermination(_:)).  (141551605)
+- On macOS `.sheet`, `.alert` and `.confirmationDialog` modal presentations conditionally allow app termination (via the menu item, ⌘Q, Software Update, etc.) automatically. This is now configurable with two new modifiers, [presentationPreventsAppTermination(_:)](../SwiftUI/view/presentationpreventsapptermination%28_%29.md) and [dialogPreventsAppTermination(_:)](../SwiftUI/view/dialogpreventsapptermination%28_%29.md).  (141551605)
 
 ###### Resolved Issues
 
@@ -119,13 +138,13 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 - fileport_makeport(2) and fileport_makefd(2) are now APIs with manual pages.  (66571768) (FB8270900)
 
-##### Uiwritingtoolscoordinator
+##### UIWritingToolsCoordinator
 
 ###### Resolved Issues
 
 - Fixed: In macOS 15.4 beta, NSWritingToolsCoordinatorDelegate method `-writingToolsCoordinator:requestsRangeInContextWithIdentifierForPoint:completion:` is marked as optional and will not be called.  (142681236)
 
-##### Urlsession
+##### URLSession
 
 ###### New Features
 
@@ -137,7 +156,7 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: M4 Macs are unable to launch virtual machine, and attempts result in a system restart.  (145309647) (FB16542958)
 
-##### Webkit
+##### WebKit
 
 ###### New Features
 
@@ -151,17 +170,18 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ## See Also
 
-- [macOS Sequoia 15.6 Release Notes](macos-15_6-release-notes.md)
+### macOS 15
+- [macOS Sequoia 15.6 Release Notes](./macos-15_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.5 Release Notes](macos-15_5-release-notes.md)
+- [macOS Sequoia 15.5 Release Notes](./macos-15_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.3 Release Notes](macos-15_3-release-notes.md)
+- [macOS Sequoia 15.3 Release Notes](./macos-15_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.2 Release Notes](macos-15_2-release-notes.md)
+- [macOS Sequoia 15.2 Release Notes](./macos-15_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.1 Release Notes](macos-15_1-release-notes.md)
+- [macOS Sequoia 15.1 Release Notes](./macos-15_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15 Release Notes](macos-15-release-notes.md)
+- [macOS Sequoia 15 Release Notes](./macos-15-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

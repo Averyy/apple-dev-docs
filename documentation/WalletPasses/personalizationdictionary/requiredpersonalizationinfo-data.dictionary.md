@@ -1,7 +1,8 @@
 # PersonalizationDictionary.RequiredPersonalizationInfo
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains the user-entered information for a personalized pass.
 
@@ -12,7 +13,7 @@ An object that contains the user-entered information for a personalized pass.
 
 ## Declaration
 
-```swift
+```
 object PersonalizationDictionary.RequiredPersonalizationInfo
 ```
 

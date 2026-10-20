@@ -1,7 +1,8 @@
 # MSCriticalMessagingError.notAuthorized
 
 **Framework**: Messages  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation isn’t authorized.
 
@@ -17,17 +18,18 @@ case notAuthorized
 
 #### Discussion
 
-The requested operation isn’t authorized; use [`requestAuthorization(for:)`](mscriticalsmsmessenger/requestauthorization(for:).md) to request someone’s authorization to be able to send background messages from this app.
+The requested operation isn’t authorized; use [`requestAuthorization(for:)`](../mscriticalsmsmessenger/requestauthorization%28for%29.md) to request someone’s authorization to be able to send background messages from this app.
 
 ## See Also
 
-- [MSCriticalMessagingError.unknown](mscriticalmessagingerror/unknown.md)
+### Error codes
+- [MSCriticalMessagingError.unknown](./unknown.md)
   The error code the framework returns after an unknown error occurs.
-- [MSCriticalMessagingError.invalidAuthenticationRequest](mscriticalmessagingerror/invalidauthenticationrequest.md)
+- [MSCriticalMessagingError.invalidAuthenticationRequest](./invalidauthenticationrequest.md)
   The authentication request isn’t valid.
-- [MSCriticalMessagingError.notSupported](mscriticalmessagingerror/notsupported.md)
+- [MSCriticalMessagingError.notSupported](./notsupported.md)
   The framework doesn’t support the current device.
-- [MSCriticalMessagingError.sendFailed](mscriticalmessagingerror/sendfailed.md)
+- [MSCriticalMessagingError.sendFailed](./sendfailed.md)
   The message failed to send.
 
 

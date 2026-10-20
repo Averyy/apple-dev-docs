@@ -1,7 +1,8 @@
 # position
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the node in continuous 2D space.
 
@@ -19,11 +20,15 @@ The position of the node in continuous 2D space.
 var position: vector_float3 { get set }
 ```
 
+```objc
+@property (nonatomic) vector_float3 position;
+```
+
 #### Discussion
 
 You specify a position when creating a node, but you can also change a node’s position after initialization.
 
-When working with an array of nodes returned by the [`GKGraph`](gkgraph.md) [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) method, read the position from each node to determine the path for an entity in your game scene to follow.
+When working with an array of nodes returned by the [`GKGraph`](../gkgraph.md) [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method, read the position from each node to determine the path for an entity in your game scene to follow.
 
 
 ---

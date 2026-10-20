@@ -1,7 +1,8 @@
 # ShaderGraph.NodeDefinition.Input
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -18,23 +19,23 @@ struct Input
 ## Topics
 
 ### Initializers
-- [init(name: String, type: ShaderGraph.DataType, isUniform: Bool, semanticType: ShaderGraph.NodeDefinition.SemanticType?, defaultValue: ShaderGraph.Value?)](shadergraph/nodedefinition/input/init(name:type:isuniform:semantictype:defaultvalue:).md)
+- [init(name: String, type: ShaderGraph.DataType, isUniform: Bool, semanticType: ShaderGraph.NodeDefinition.SemanticType?, defaultValue: ShaderGraph.Value?)](./input/init%28name,type,isuniform,semantictype,defaultvalue%29.md)
 ### Instance Properties
-- [let defaultValue: ShaderGraph.Value?](shadergraph/nodedefinition/input/defaultvalue.md)
+- [let defaultValue: ShaderGraph.Value?](./input/defaultvalue.md)
   The default value for this input, if any exists.
-- [let isUniform: Bool](shadergraph/nodedefinition/input/isuniform.md)
+- [let isUniform: Bool](./input/isuniform.md)
   Whether the value is uniform and must be set at compile-time
-- [let name: String](shadergraph/nodedefinition/input/name.md)
+- [let name: String](./input/name.md)
   The unique name of this input in its definition.
-- [let semanticType: ShaderGraph.NodeDefinition.SemanticType?](shadergraph/nodedefinition/input/semantictype.md)
+- [let semanticType: ShaderGraph.NodeDefinition.SemanticType?](./input/semantictype.md)
   The original type of this input.
-- [let type: ShaderGraph.DataType](shadergraph/nodedefinition/input/type.md)
+- [let type: ShaderGraph.DataType](./input/type.md)
   The type of the input.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 
 ---

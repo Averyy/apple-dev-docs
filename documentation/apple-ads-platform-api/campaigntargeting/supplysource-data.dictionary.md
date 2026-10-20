@@ -1,7 +1,8 @@
 # CampaignTargeting.SupplySource
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The supply source where a campaign’s ads are eligible to appear.
 
@@ -10,7 +11,7 @@ The supply source where a campaign’s ads are eligible to appear.
 
 ## Declaration
 
-```swift
+```
 object CampaignTargeting.SupplySource
 ```
 
@@ -23,7 +24,7 @@ The `supplySource` field is **include-only**; setting `exclude` has no effect. V
 | `APPSTORE` | App Store ads |
 | `MAPS` | Apple Maps |
 
-Each source has its own set of placements. See [`CampaignTargeting.SupplyPlacement`](campaigntargeting/supplyplacement-data.dictionary.md) for the full placement list, and [`TargetingData`](targetingdata.md) for the `include`/`exclude` shape.
+Each source has its own set of placements. See [`CampaignTargeting.SupplyPlacement`](./supplyplacement-data.dictionary.md) for the full placement list, and [`TargetingData`](../targetingdata.md) for the `include`/`exclude` shape.
 
 ## Properties
 

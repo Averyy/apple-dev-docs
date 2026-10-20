@@ -1,7 +1,8 @@
 # CGPDFContentStreamCreateWithPage(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a content stream object from a PDF page object.
 
@@ -10,7 +11,7 @@ Creates a content stream object from a PDF page object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Creates a content stream object from a PDF page object.
 func CGPDFContentStreamCreateWithPage(_ page: CGPDFPage) -> CGPDFContentStreamRef
 ```
 
+```c
+extern CGPDFContentStreamRefCGPDFContentStreamCreateWithPage(CGPDFPageRef page);
+```
+
 #### Return Value
 
-A new [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) object. In Objective-C, you’re responsible for releasing this object by calling the [`CGPDFContentStreamRelease(_:)`](cgpdfcontentstreamrelease(_:).md) function.
+A new [`CGPDFContentStreamRef`](./cgpdfcontentstreamref.md) object. In Objective-C, you’re responsible for releasing this object by calling the [`CGPDFContentStreamRelease(_:)`](./cgpdfcontentstreamrelease%28_%29.md) function.
 
 #### Discussion
 
-A [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) object can contain more than one PDF content stream. To retrieve an array of the PDF content streams in the object, call the function [`CGPDFContentStreamGetStreams(_:)`](cgpdfcontentstreamgetstreams(_:).md). To obtain the resources associated with a [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) object, call the function [`CGPDFContentStreamGetResource(_:_:_:)`](cgpdfcontentstreamgetresource(_:_:_:).md).
+A [`CGPDFContentStreamRef`](./cgpdfcontentstreamref.md) object can contain more than one PDF content stream. To retrieve an array of the PDF content streams in the object, call the function [`CGPDFContentStreamGetStreams(_:)`](./cgpdfcontentstreamgetstreams%28_%29.md). To obtain the resources associated with a [`CGPDFContentStreamRef`](./cgpdfcontentstreamref.md) object, call the function [`CGPDFContentStreamGetResource(_:_:_:)`](./cgpdfcontentstreamgetresource%28_,_,_%29.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ A [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) object can contain more th
 
 ## See Also
 
-- [func CGPDFContentStreamCreateWithStream(CGPDFStreamRef, CGPDFDictionaryRef, CGPDFContentStreamRef) -> CGPDFContentStreamRef](cgpdfcontentstreamcreatewithstream(_:_:_:).md)
+### Creating a PDF Content Stream Object
+- [func CGPDFContentStreamCreateWithStream(CGPDFStreamRef, CGPDFDictionaryRef, CGPDFContentStreamRef) -> CGPDFContentStreamRef](./cgpdfcontentstreamcreatewithstream%28_,_,_%29.md)
   Creates a PDF content stream object from an existing PDF content stream object.
 
 

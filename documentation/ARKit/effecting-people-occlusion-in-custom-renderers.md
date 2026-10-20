@@ -1,6 +1,8 @@
 # Effecting People Occlusion in Custom Renderers
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [EffectingPeopleOcclusionInCustomRenderers.zip](https://docs-assets.developer.apple.com/published/312e0c700f54/EffectingPeopleOcclusionInCustomRenderers.zip)
 
 Occlude your app’s virtual content where ARKit recognizes people in the camera feed by using matte generator.
 
@@ -11,17 +13,18 @@ Occlude your app’s virtual content where ARKit recognizes people in the camera
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`607: Bringing People into AR`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/607/).
+> **Note**: This sample code project is associated with WWDC 2019 session [607: Bringing People into AR](https://developer.apple.com/videos/play/wwdc19/607/).
 
 > **Note**: To run the app, use an iOS device with A12 chip or later.
 
 ## See Also
 
-- [Occluding virtual content with people](occluding-virtual-content-with-people.md)
+### Occlusion
+- [Occluding virtual content with people](./occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
-- [Visualizing and interacting with a reconstructed scene](visualizing-and-interacting-with-a-reconstructed-scene.md)
+- [Visualizing and interacting with a reconstructed scene](./visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [class ARMatteGenerator](armattegenerator.md)
+- [class ARMatteGenerator](./armattegenerator.md)
   An object that creates matte textures you use to occlude your app’s virtual content with people, that ARKit recognizes in the camera feed.
 
 

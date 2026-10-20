@@ -1,7 +1,8 @@
 # init(reason:context:result:label:)
 
 **Framework**: Local Authentication  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a local authentication view.
 
@@ -19,16 +20,19 @@ Creates a local authentication view.
 
 - `reason`: A localized reason that describes why your app presents an authentication prompt to the user.
 - `context`: A context used to evaluate authentication policies. If `nil`, the system creates one.
-- `result`: A closure to call when the authentication succeeds or fails. - **`result`**: A [`Result`](https://developer.apple.com/documentation/swift/result) instance that indicates success or failure with a reason.
+- `result`: A closure to call when the authentication succeeds or fails.
+
+  - **`result`**: A [`Result`](../../Swift/result.md) instance that indicates success or failure with a reason.
 - `label`: A label that displays below the authentication view.
 
 ## See Also
 
-- [init<S>(S, reason: Text, context: LAContext?, result: (Result<Void, any Error>) -> Void)](localauthenticationview/init(_:reason:context:result:)-8ubaq.md)
+### Authenticating with an implicit context
+- [init<S>(S, reason: Text, context: LAContext?, result: (Result<Void, any Error>) -> Void)](./init%28_,reason,context,result%29-8ubaq.md)
   Creates a local authentication view with a title.
-- [init(LocalizedStringKey, reason: Text, context: LAContext?, result: (Result<Void, any Error>) -> Void)](localauthenticationview/init(_:reason:context:result:)-917ds.md)
+- [init(LocalizedStringKey, reason: Text, context: LAContext?, result: (Result<Void, any Error>) -> Void)](./init%28_,reason,context,result%29-917ds.md)
   Creates a local authentication view with a localizable title.
-- [init(Text, reason: Text, context: LAContext?, result: (Result<Void, any Error>) -> Void)](localauthenticationview/init(_:reason:context:result:)-4pkpi.md)
+- [init(Text, reason: Text, context: LAContext?, result: (Result<Void, any Error>) -> Void)](./init%28_,reason,context,result%29-4pkpi.md)
   Creates a local authentication view with a title text view.
 
 

@@ -1,7 +1,8 @@
 # kQCPlugInExecutionModeProcessor
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A processor execution mode. The custom patch executes whenever its inputs change or if the time change (assuming it’s time-dependent).
 
@@ -14,11 +15,16 @@ A processor execution mode. The custom patch executes whenever its inputs change
 var kQCPlugInExecutionModeProcessor: QCPlugInExecutionMode { get }
 ```
 
+```c
+kQCPlugInExecutionModeProcessor
+```
+
 ## See Also
 
-- [var kQCPlugInExecutionModeProvider: QCPlugInExecutionMode](kqcpluginexecutionmodeprovider.md)
+### Constants
+- [var kQCPlugInExecutionModeProvider: QCPlugInExecutionMode](./kqcpluginexecutionmodeprovider.md)
   A provider execution mode. The custom patch executes on demand—that is, whenever data is requested of it, but at most once per frame.
-- [var kQCPlugInExecutionModeConsumer: QCPlugInExecutionMode](kqcpluginexecutionmodeconsumer.md)
+- [var kQCPlugInExecutionModeConsumer: QCPlugInExecutionMode](./kqcpluginexecutionmodeconsumer.md)
   A consumer execution mode. The custom patch always executes assuming the value of its Enable input port is `true`. (The Enable port is automatically added by the system.)
 
 

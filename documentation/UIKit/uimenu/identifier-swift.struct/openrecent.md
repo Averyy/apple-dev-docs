@@ -1,7 +1,8 @@
 # openRecent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Open Recent menu.
 
@@ -18,19 +19,24 @@ The Open Recent menu.
 static let openRecent: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuOpenRecent;
+```
+
 ## See Also
 
-- [static let newItem: UIMenu.Identifier](uimenu/identifier-swift.struct/newitem.md)
+### File menus
+- [static let newItem: UIMenu.Identifier](./newitem.md)
   New item menu
-- [static let open: UIMenu.Identifier](uimenu/identifier-swift.struct/open.md)
+- [static let open: UIMenu.Identifier](./open.md)
   The Open menu.
-- [static let close: UIMenu.Identifier](uimenu/identifier-swift.struct/close.md)
+- [static let close: UIMenu.Identifier](./close.md)
   The Close menu.
-- [static let print: UIMenu.Identifier](uimenu/identifier-swift.struct/print.md)
+- [static let print: UIMenu.Identifier](./print.md)
   The Print menu.
-- [static let document: UIMenu.Identifier](uimenu/identifier-swift.struct/document.md)
+- [static let document: UIMenu.Identifier](./document.md)
   The Document menu.
-- [static let newScene: UIMenu.Identifier](uimenu/identifier-swift.struct/newscene.md)
+- [static let newScene: UIMenu.Identifier](./newscene.md)
   The New Scene menu.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 Container type used for storing and retrieving app specific information that can be accessed whenever (and wherever) this intent gets run

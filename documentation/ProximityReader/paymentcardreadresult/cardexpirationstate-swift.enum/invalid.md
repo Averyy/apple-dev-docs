@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardExpirationState.invalid
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card expiration date is invalid.
 

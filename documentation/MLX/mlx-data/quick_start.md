@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/quick_start.html
 
 # Quick Start Guide
 
-**
-
-- [.rst](_sources/quick_start.rst)
-- **
-
-.pdf
-
-**
-
-# Quick Start Guide
-
- Table of contents 
-
-## Contents
-
-# Quick Start Guide
-
 ## Load some data
 
 In MLX data all samples are dictionaries of arrays. The library provides
@@ -57,7 +40,7 @@ for batch in mnist_mlp:
     x, y = batch["image"], batch["label"]
 ```
 
-MLX Data provides many [operations](python/dataset.html#operations) that transform
+MLX Data provides many [operations](python/dataset.md#operations) that transform
 samples so you can create arbitrarily complex pipelines.
 
 ## About the GIL
@@ -86,5 +69,3 @@ dset = dset.key_transform("audio", mfsc(n_filterbank=80, sampling_freq=16000))
 # Filter stream samples based on values (empty dict means drop the sample)
 dset = dset.sample_transform(lambda s: s if s["length"] > 10 else dict())
 ```
-
-** Contents

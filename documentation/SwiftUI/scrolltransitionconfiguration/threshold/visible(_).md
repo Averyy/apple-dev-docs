@@ -1,7 +1,8 @@
 # visible(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The target view is visible by the given amount, where zero is fully hidden, and one is fully visible.
 
@@ -26,10 +27,11 @@ Values less than zero or greater than one are clamped.
 
 ## See Also
 
-- [static var centered: ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/centered.md)
+### Getting the threshold
+- [static var centered: ScrollTransitionConfiguration.Threshold](./centered.md)
   The target view is centered within the container
-- [static let hidden: ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/hidden.md)
-- [static let visible: ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/visible.md)
+- [static let hidden: ScrollTransitionConfiguration.Threshold](./hidden.md)
+- [static let visible: ScrollTransitionConfiguration.Threshold](./visible.md)
 
 
 ---

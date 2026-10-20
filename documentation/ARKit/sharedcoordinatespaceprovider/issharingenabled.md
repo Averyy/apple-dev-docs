@@ -1,7 +1,8 @@
 # isSharingEnabled
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns true if coordinate space sharing is enabled, false otherwise.
 

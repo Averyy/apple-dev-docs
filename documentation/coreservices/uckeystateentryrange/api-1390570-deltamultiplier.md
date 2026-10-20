@@ -1,7 +1,8 @@
 # deltaMultiplier
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 8-bit integer.
 
@@ -13,6 +14,10 @@ An unsigned 8-bit integer.
 
 ```swift
 var deltaMultiplier: UInt8
+```
+
+```c
+UInt8 deltaMultiplier;
 ```
 
 

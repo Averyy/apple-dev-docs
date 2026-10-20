@@ -1,7 +1,8 @@
 # GroupSession.State
 
 **Framework**: Group Activities  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of a session.
 
@@ -22,25 +23,26 @@ enum State
 ## Topics
 
 ### Session states
-- [GroupSession.State.waiting](groupsession/state-swift.enum/waiting.md)
+- [GroupSession.State.waiting](./state-swift.enum/waiting.md)
   An idle state that indicates the session is waiting for the app to join the activity.
-- [GroupSession.State.joined](groupsession/state-swift.enum/joined.md)
+- [GroupSession.State.joined](./state-swift.enum/joined.md)
   An active state that indicates the session allows data synchronization between devices.
-- [GroupSession.State.invalidated(reason:)](groupsession/state-swift.enum/invalidated(reason:).md)
+- [GroupSession.State.invalidated(reason:)](./state-swift.enum/invalidated%28reason%29.md)
   A state that indicates the session is no longer valid and can’t be used for shared activities.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: GroupSession<ActivityType>.State](groupsession/state-swift.property.md)
+### Getting the session details
+- [var state: GroupSession<ActivityType>.State](./state-swift.property.md)
   The current state of the session.
-- [let id: UUID](groupsession/id.md)
+- [let id: UUID](./id.md)
   The unique identifier of the current session.
 
 

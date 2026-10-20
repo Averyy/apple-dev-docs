@@ -1,16 +1,19 @@
 # UIWindowScene.PresentationStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The placement of a window scene relative to other scenes in the workspace.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- tvOS 15.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`placement`](./activationrequestoptions/placement.md) instead.
 
 ## Declaration
 
@@ -18,33 +21,38 @@ The placement of a window scene relative to other scenes in the workspace.
 enum PresentationStyle
 ```
 
+```c
+enum UIWindowScenePresentationStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIWindowScene.PresentationStyle.automatic](uiwindowscene/presentationstyle/automatic.md)
+- [UIWindowScene.PresentationStyle.automatic](./presentationstyle/automatic.md)
   The system determines the most appropriate style.
-- [UIWindowScene.PresentationStyle.prominent](uiwindowscene/presentationstyle/prominent.md)
+- [UIWindowScene.PresentationStyle.prominent](./presentationstyle/prominent.md)
   Presents prominently above others in the current space.
-- [UIWindowScene.PresentationStyle.standard](uiwindowscene/presentationstyle/standard.md)
+- [UIWindowScene.PresentationStyle.standard](./presentationstyle/standard.md)
   The default style of the system.
 ### Initializers
-- [init?(rawValue: UInt)](uiwindowscene/presentationstyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./presentationstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
+### Deprecated
+- [var coordinateSpace: any UICoordinateSpace](./coordinatespace.md)
   The coordinate space occupied by the scene.
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./interfaceorientation.md)
   The orientation to use when displaying content in your windows.
 
 

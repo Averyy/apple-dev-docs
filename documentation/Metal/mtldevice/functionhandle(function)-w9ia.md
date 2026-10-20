@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the handle for a binary function from a pipeline state.
@@ -20,13 +21,17 @@ Returns the handle for a binary function from a pipeline state.
 func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)?
 ```
 
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithBinaryFunction:(id<MTL4BinaryFunction>) function;
+```
+
 #### Return Value
 
 A function handle if the method succeeds, otherwise `nil`.
 
 ## Parameters
 
-- `function`: A function that the Metal compiler created with the [`pipelineIndependent`](mtlfunctionoptions/pipelineindependent.md) setting.
+- `function`: A function that the Metal compiler created with the [`pipelineIndependent`](../mtlfunctionoptions/pipelineindependent.md) setting.
 
 
 ---

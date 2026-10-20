@@ -1,7 +1,8 @@
 # RecognizeDocumentsRequest.Revision.revision1
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An algorithm or implementation that represents the first revision.
 

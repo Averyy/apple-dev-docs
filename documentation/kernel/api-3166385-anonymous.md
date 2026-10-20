@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBUSB20ExtensionCapabilityBESL](3166385-anonymous/kiousbusb20extensioncapabilitybesl.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLD](3166385-anonymous/kiousbusb20extensioncapabilitybesld.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLDPhase](3166385-anonymous/kiousbusb20extensioncapabilitybesldphase.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLDValid](3166385-anonymous/kiousbusb20extensioncapabilitybesldvalid.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLPhase](3166385-anonymous/kiousbusb20extensioncapabilitybeslphase.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLSupport](3166385-anonymous/kiousbusb20extensioncapabilitybeslsupport.md)
-- [kIOUSBUSB20ExtensionCapabilityBESLValid](3166385-anonymous/kiousbusb20extensioncapabilitybeslvalid.md)
-- [kIOUSBUSB20ExtensionCapabilityLPM](3166385-anonymous/kiousbusb20extensioncapabilitylpm.md)
+- [kIOUSBUSB20ExtensionCapabilityBESL](./api-3166385-anonymous/kiousbusb20extensioncapabilitybesl.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLD](./api-3166385-anonymous/kiousbusb20extensioncapabilitybesld.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLDPhase](./api-3166385-anonymous/kiousbusb20extensioncapabilitybesldphase.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLDValid](./api-3166385-anonymous/kiousbusb20extensioncapabilitybesldvalid.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLPhase](./api-3166385-anonymous/kiousbusb20extensioncapabilitybeslphase.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLSupport](./api-3166385-anonymous/kiousbusb20extensioncapabilitybeslsupport.md)
+- [kIOUSBUSB20ExtensionCapabilityBESLValid](./api-3166385-anonymous/kiousbusb20extensioncapabilitybeslvalid.md)
+- [kIOUSBUSB20ExtensionCapabilityLPM](./api-3166385-anonymous/kiousbusb20extensioncapabilitylpm.md)
 
 
 ---

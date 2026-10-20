@@ -1,7 +1,8 @@
 # customData
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of custom data authored on this object.
 

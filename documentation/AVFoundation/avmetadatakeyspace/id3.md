@@ -1,7 +1,8 @@
 # id3
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The ID3 key space.
 
@@ -20,21 +21,26 @@ The ID3 key space.
 static let id3: AVMetadataKeySpace
 ```
 
+```c
+extern AVMetadataKeySpace const AVMetadataKeySpaceID3;
+```
+
 ## See Also
 
-- [static let audioFile: AVMetadataKeySpace](avmetadatakeyspace/audiofile.md)
+### Format-specific key spaces
+- [static let audioFile: AVMetadataKeySpace](./audiofile.md)
   The AudioToolbox audio file key space.
-- [static let hlsDateRange: AVMetadataKeySpace](avmetadatakeyspace/hlsdaterange.md)
+- [static let hlsDateRange: AVMetadataKeySpace](./hlsdaterange.md)
   The HTTP Live Streaming key space.
-- [static let iTunes: AVMetadataKeySpace](avmetadatakeyspace/itunes.md)
+- [static let iTunes: AVMetadataKeySpace](./itunes.md)
   The iTunes key space.
-- [static let icy: AVMetadataKeySpace](avmetadatakeyspace/icy.md)
+- [static let icy: AVMetadataKeySpace](./icy.md)
   The Icecast/ShoutCAST streaming key space.
-- [static let isoUserData: AVMetadataKeySpace](avmetadatakeyspace/isouserdata.md)
+- [static let isoUserData: AVMetadataKeySpace](./isouserdata.md)
   The ISO key space.
-- [static let quickTimeMetadata: AVMetadataKeySpace](avmetadatakeyspace/quicktimemetadata.md)
+- [static let quickTimeMetadata: AVMetadataKeySpace](./quicktimemetadata.md)
   The QuickTime metadata key space.
-- [static let quickTimeUserData: AVMetadataKeySpace](avmetadatakeyspace/quicktimeuserdata.md)
+- [static let quickTimeUserData: AVMetadataKeySpace](./quicktimeuserdata.md)
   The QuickTime user data key space.
 
 

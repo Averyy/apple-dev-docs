@@ -1,7 +1,8 @@
 # carpet
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A material that simulates the acoustic properties of carpet.
 
@@ -21,13 +22,14 @@ static let carpet: Audio.Material
 
 ## See Also
 
-- [static let curtain: Audio.Material](audio/material/curtain.md)
+### Using soft furnishing materials
+- [static let curtain: Audio.Material](./curtain.md)
   A material that simulates the acoustic properties of a curtain.
-- [static let mattress: Audio.Material](audio/material/mattress.md)
+- [static let mattress: Audio.Material](./mattress.md)
   A material that simulates the acoustic properties of a mattress.
-- [static let seatingUpholstered: Audio.Material](audio/material/seatingupholstered.md)
+- [static let seatingUpholstered: Audio.Material](./seatingupholstered.md)
   A material that simulates the acoustic properties of upholstered seating.
-- [static let seatingHard: Audio.Material](audio/material/seatinghard.md)
+- [static let seatingHard: Audio.Material](./seatinghard.md)
   A material that simulates the acoustic properties of hard seating.
 
 

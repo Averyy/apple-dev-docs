@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system’s singleton device discovery session instance.
 
@@ -16,6 +17,10 @@ The system’s singleton device discovery session instance.
 
 ```swift
 class var shared: AVExternalStorageDeviceDiscoverySession? { get }
+```
+
+```objc
+@property (class, readonly, nullable) AVExternalStorageDeviceDiscoverySession * sharedSession;
 ```
 
 

@@ -1,7 +1,8 @@
 # Create an end user license agreement
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a custom end user license agreement (EULA) to an app and configure the territories to which it applies.
 
@@ -14,11 +15,11 @@ Use this endpoint to associate a custom license agreement with an app in the spe
 
 In the following example the request contains a blank value for the `agreementText` attribute. Replace that attribute value with your actual agreement text.
 
-##### Create a Custom License Agreement for Usa and China
+##### Create a Custom License Agreement for USA and China
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements
 
 {
@@ -89,11 +90,27 @@ POST https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements
 
 `POST https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `EndUserLicenseAgreementCreateRequest`
+
+## Responses
+
+- `201` Created (`EndUserLicenseAgreementResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Modify an end user license agreement](patch-v1-enduserlicenseagreements-_id_.md)
+### Creating, Modifying, and Deleting an EULA
+- [Modify an end user license agreement](./patch-v1-enduserlicenseagreements-_id_.md)
   Update the text or territories for your custom end user license agreement.
-- [Delete an end user license agreement](delete-v1-enduserlicenseagreements-_id_.md)
+- [Delete an end user license agreement](./delete-v1-enduserlicenseagreements-_id_.md)
   Delete the custom end user license agreement that is associated with an app.
 
 

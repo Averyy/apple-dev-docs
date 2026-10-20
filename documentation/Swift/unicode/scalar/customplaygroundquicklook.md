@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for the `Unicode.Scalar` instance.
 
@@ -14,6 +15,8 @@ A custom playground Quick Look for the `Unicode.Scalar` instance.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: Unicode.Scalar.customPlaygroundQuickLook will be removed in a future Swift version
+
 ## Declaration
 
 ```swift
@@ -22,17 +25,18 @@ var customPlaygroundQuickLook: _PlaygroundQuickLook { get }
 
 ## See Also
 
-- [var description: String](unicode/scalar/description.md)
+### Printing and Displaying a Scalar
+- [var description: String](./description.md)
   A textual representation of the Unicode scalar.
-- [func write<Target>(to: inout Target)](unicode/scalar/write(to:).md)
+- [func write<Target>(to: inout Target)](./write%28to%29.md)
   Writes the textual representation of the Unicode scalar into the given output stream.
-- [func escaped(asASCII: Bool) -> String](unicode/scalar/escaped(asascii:).md)
+- [func escaped(asASCII: Bool) -> String](./escaped%28asascii%29.md)
   Returns a string representation of the Unicode scalar.
-- [var utf16: Unicode.Scalar.UTF16View](unicode/scalar/utf16.md)
-- [Unicode.Scalar.UTF16View](unicode/scalar/utf16view.md)
-- [var debugDescription: String](unicode/scalar/debugdescription.md)
+- [var utf16: Unicode.Scalar.UTF16View](./utf16.md)
+- [Unicode.Scalar.UTF16View](./utf16view.md)
+- [var debugDescription: String](./debugdescription.md)
   An escaped textual representation of the Unicode scalar, suitable for debugging.
-- [var customMirror: Mirror](unicode/scalar/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Unicode.Scalar` instance.
 
 

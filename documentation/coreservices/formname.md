@@ -1,7 +1,8 @@
 # formName
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the Apple event object by name.
 

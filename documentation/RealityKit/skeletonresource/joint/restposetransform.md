@@ -1,7 +1,8 @@
 # restPoseTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rest pose transform of the joint. Defines position, rotation, and scale relative to the parent joint in local space. Used as the reference pose for all animations and deformations.
 
@@ -21,9 +22,10 @@ var restPoseTransform: Transform
 
 ## See Also
 
-- [var id: String](skeletonresource/joint/id.md)
+### Inspecting a joint
+- [var id: String](./id.md)
   The identifier of the joint, automatically derived from the joint name.
-- [let children: [SkeletonResource.Joint]](skeletonresource/joint/children.md)
+- [let children: [SkeletonResource.Joint]](./children.md)
   The child joints of this joint. All children must have unique names within the same parent. `JointBuilder` preserves the order children are declared in the closure body, so iteration over `children` is deterministic.
 
 

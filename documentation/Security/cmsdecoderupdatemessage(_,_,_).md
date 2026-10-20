@@ -1,7 +1,8 @@
 # CMSDecoderUpdateMessage(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Feeds raw bytes of the message to be decoded into the decoder.
 
@@ -14,9 +15,13 @@ Feeds raw bytes of the message to be decoded into the decoder.
 func CMSDecoderUpdateMessage(_ cmsDecoder: CMSDecoder, _ msgBytes: UnsafeRawPointer, _ msgBytesLen: Int) -> OSStatus
 ```
 
+```c
+OSStatus CMSDecoderUpdateMessage(CMSDecoderRef cmsDecoder, const void *msgBytes, size_t msgBytesLen);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md). Returns [`errSecUnknownFormat`](errsecunknownformat.md) upon detection of an improperly formatted CMS message.
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecUnknownFormat`](./errsecunknownformat.md) upon detection of an improperly formatted CMS message.
 
 #### Discussion
 
@@ -30,7 +35,8 @@ This function can be called multiple times. Call the `CMSDecoderFinalizeMessage`
 
 ## See Also
 
-- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](cmsdecodercreate(_:).md)
+### Related Documentation
+- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](./cmsdecodercreate%28_%29.md)
   Creates a CMSDecoder reference.
 
 

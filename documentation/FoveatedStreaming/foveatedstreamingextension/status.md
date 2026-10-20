@@ -1,7 +1,8 @@
 # FoveatedStreamingExtension.Status
 
 **Framework**: Foveated Streaming  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The lifecycle state of the extension.
 

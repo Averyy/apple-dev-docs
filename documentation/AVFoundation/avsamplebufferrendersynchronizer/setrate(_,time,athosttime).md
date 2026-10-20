@@ -1,7 +1,8 @@
 # setRate(_:time:atHostTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the playback rate and the relationship between the current time and host time.
 
@@ -20,25 +21,30 @@ Sets the playback rate and the relationship between the current time and host ti
 func setRate(_ rate: Float, time: CMTime, atHostTime hostTime: CMTime)
 ```
 
+```objc
+- (void) setRate:(float) rate time:(CMTime) time atHostTime:(CMTime) hostTime;
+```
+
 ## Parameters
 
 - `rate`: A new timebase rate. This value must be greater than or equal to `0.0`.
-- `time`: A new timebase time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero), or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
-- `hostTime`: A new host time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero), or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+- `time`: A new timebase time. This value must be greater than or equal to [`zero`](../../CoreMedia/cmtime/zero.md), or [`invalid`](../../CoreMedia/cmtime/invalid.md).
+- `hostTime`: A new host time. This value must be greater than or equal to [`zero`](../../CoreMedia/cmtime/zero.md), or [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
 ## See Also
 
-- [func currentTime() -> CMTime](avsamplebufferrendersynchronizer/currenttime.md)
+### Accessing time information
+- [func currentTime() -> CMTime](./currenttime%28%29.md)
   Returns the current time of the synchronizer.
-- [var timebase: CMTimebase](avsamplebufferrendersynchronizer/timebase.md)
+- [var timebase: CMTimebase](./timebase.md)
   The synchronizer’s rendering timebase which determines how it interprets timestamps.
-- [var rate: Float](avsamplebufferrendersynchronizer/rate.md)
+- [var rate: Float](./rate.md)
   The current playback rate.
-- [func setRate(Float, time: CMTime)](avsamplebufferrendersynchronizer/setrate(_:time:).md)
+- [func setRate(Float, time: CMTime)](./setrate%28_,time%29.md)
   Sets the renderer’s time and rate.
-- [class let rateDidChangeNotification: NSNotification.Name](avsamplebufferrendersynchronizer/ratedidchangenotification.md)
+- [class let rateDidChangeNotification: NSNotification.Name](./ratedidchangenotification.md)
   The synchronizer’s rendering rate changed.
-- [var delaysRateChangeUntilHasSufficientMediaData: Bool](avsamplebufferrendersynchronizer/delaysratechangeuntilhassufficientmediadata.md)
+- [var delaysRateChangeUntilHasSufficientMediaData: Bool](./delaysratechangeuntilhassufficientmediadata.md)
   A Boolean value that Indicates whether the playback should start immediately on rate change requests.
 
 

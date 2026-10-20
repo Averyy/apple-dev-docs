@@ -1,7 +1,8 @@
 # asin()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an element-wise asin operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an element-wise asin operation to the current graph.
 ```swift
 func asin() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

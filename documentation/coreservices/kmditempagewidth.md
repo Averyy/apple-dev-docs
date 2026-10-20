@@ -1,7 +1,8 @@
 # kMDItemPageWidth
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Width of the document page, in points (72 points per inch). For PDF files this indicates the width of the first page only. A CFNumber.
 
@@ -12,6 +13,10 @@ Width of the document page, in points (72 points per inch). For PDF files this i
 
 ```swift
 let kMDItemPageWidth: CFString!
+```
+
+```c
+const CFStringRef kMDItemPageWidth;
 ```
 
 

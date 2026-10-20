@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying app entity data.
 
@@ -22,11 +23,12 @@ let entity: AnyAppEntity
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 ## See Also
 
-- [let isSelected: Bool](viewannotation/isselected.md)
+### Accessing onscreen context
+- [let isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the entity’s associated view is selected.
 
 

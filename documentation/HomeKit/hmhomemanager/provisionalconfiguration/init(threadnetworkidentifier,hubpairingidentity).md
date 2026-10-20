@@ -1,7 +1,8 @@
 # init(threadNetworkIdentifier:hubPairingIdentity:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the configuration for a provisional home.
 
@@ -28,7 +29,8 @@ The configuration for a provisional home.
 
 ## See Also
 
-- [init?(dictionaryRepresentation: [String : any Sendable])](hmhomemanager/provisionalconfiguration/init(dictionaryrepresentation:).md)
+### Creating the configuration
+- [init?(dictionaryRepresentation: [String : any Sendable])](./init%28dictionaryrepresentation%29.md)
   Creates the configuration for a provisional home.
 
 

@@ -1,7 +1,8 @@
 # cachingOptions
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that enables translation caching and configures the socket communication type for Rosetta.
 
@@ -16,9 +17,10 @@ var cachingOptions: VZLinuxRosettaDirectoryShare.CachingOptions? { get }
 
 ## See Also
 
-- [func setCachingOptions(VZLinuxRosettaDirectoryShare.CachingOptions?) throws](vzlinuxrosettadirectoryshare/setcachingoptions(_:).md)
+### Setting the ahead of time (AOT) caching options
+- [func setCachingOptions(VZLinuxRosettaDirectoryShare.CachingOptions?) throws](./setcachingoptions%28_%29.md)
   Sets the Rosetta caching options using the options you specify.
-- [VZLinuxRosettaDirectoryShare.CachingOptions](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum.md)
+- [VZLinuxRosettaDirectoryShare.CachingOptions](./cachingoptions-swift.enum.md)
   Socket values you specify to configure Rosetta’s caching capabilities.
 
 

@@ -1,15 +1,20 @@
 # fileTransferServicesCreateFolderComplete(_:error:folder:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesCreateFolderComplete(_ inServices: OBEXFileTransferServices!, error inError: OBEXError, folder inFolderName: String!)
+```
+
+```objc
+- (void) fileTransferServicesCreateFolderComplete:(OBEXFileTransferServices *) inServices error:(OBEXError) inError folder:(NSString *) inFolderName;
 ```
 
 

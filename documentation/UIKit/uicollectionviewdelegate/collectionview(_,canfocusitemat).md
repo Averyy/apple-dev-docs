@@ -1,7 +1,8 @@
 # collectionView(_:canFocusItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the item at the specified index path can be focused.
 
@@ -18,15 +19,19 @@ Asks the delegate whether the item at the specified index path can be focused.
 optional func collectionView(_ collectionView: UICollectionView, canFocusItemAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(UICollectionView *) collectionView canFocusItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item can receive be focused or [`false`](https://developer.apple.com/documentation/swift/false) if it can not.
+[`true`](../../Swift/true.md) if the item can receive be focused or [`false`](../../Swift/false.md) if it can not.
 
 #### Discussion
 
-You can use this method, or a cell’s [`canBecomeFocused`](uiview/canbecomefocused.md) method, to control which items in the collection view can receive focus. The focus engine calls the cell’s [`canBecomeFocused`](uiview/canbecomefocused.md) method first, the default implementation of which defers to the collection view and this delegate method.
+You can use this method, or a cell’s [`canBecomeFocused`](../uiview/canbecomefocused.md) method, to control which items in the collection view can receive focus. The focus engine calls the cell’s [`canBecomeFocused`](../uiview/canbecomefocused.md) method first, the default implementation of which defers to the collection view and this delegate method.
 
-If you do not implement this method, the ability to focus on items depends on whether the collection view’s items are selectable. When the items are selectable, they can also be focused as if this method had returned [`true`](https://developer.apple.com/documentation/swift/true); otherwise, they do not receive focus.
+If you do not implement this method, the ability to focus on items depends on whether the collection view’s items are selectable. When the items are selectable, they can also be focused as if this method had returned [`true`](../../Swift/true.md); otherwise, they do not receive focus.
 
 ## Parameters
 
@@ -35,15 +40,17 @@ If you do not implement this method, the ability to focus on items depends on wh
 
 ## See Also
 
-- [var allowsSelection: Bool](uicollectionview/allowsselection.md)
+### Related Documentation
+- [var allowsSelection: Bool](../uicollectionview/allowsselection.md)
   A Boolean value that indicates whether users can select items in the collection view.
-- [func indexPathForPreferredFocusedView(in: UICollectionView) -> IndexPath?](uicollectionviewdelegate/indexpathforpreferredfocusedview(in:).md)
+### Working with focus
+- [func indexPathForPreferredFocusedView(in: UICollectionView) -> IndexPath?](./indexpathforpreferredfocusedview%28in%29.md)
   Asks the delegate for the index path of the cell that should be focused.
-- [func collectionView(UICollectionView, shouldUpdateFocusIn: UICollectionViewFocusUpdateContext) -> Bool](uicollectionviewdelegate/collectionview(_:shouldupdatefocusin:).md)
+- [func collectionView(UICollectionView, shouldUpdateFocusIn: UICollectionViewFocusUpdateContext) -> Bool](./collectionview%28_,shouldupdatefocusin%29.md)
   Asks the delegate whether a change in focus should occur.
-- [func collectionView(UICollectionView, didUpdateFocusIn: UICollectionViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](uicollectionviewdelegate/collectionview(_:didupdatefocusin:with:).md)
+- [func collectionView(UICollectionView, didUpdateFocusIn: UICollectionViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](./collectionview%28_,didupdatefocusin,with%29.md)
   Tells the delegate that a focus update occurred.
-- [func collectionView(UICollectionView, selectionFollowsFocusForItemAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:selectionfollowsfocusforitemat:).md)
+- [func collectionView(UICollectionView, selectionFollowsFocusForItemAt: IndexPath) -> Bool](./collectionview%28_,selectionfollowsfocusforitemat%29.md)
   Asks the delegate whether to relate selection and focus behavior for the cell at the corresponding index path.
 
 

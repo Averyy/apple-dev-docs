@@ -1,7 +1,8 @@
 # realUserStatus
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the user appears to be a real person.
 
@@ -20,13 +21,18 @@ A value that indicates whether the user appears to be a real person.
 var realUserStatus: ASUserDetectionStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ASUserDetectionStatus realUserStatus;
+```
+
 #### Discussion
 
-Use this property’s value as one piece of data when trying to prevent fraud. A value of [`ASUserDetectionStatus.likelyReal`](asuserdetectionstatus/likelyreal.md) is a hint that the system has a reasonably high confidence that the user is a real person, as opposed to an automated agent, but this isn’t a guarantee.
+Use this property’s value as one piece of data when trying to prevent fraud. A value of [`ASUserDetectionStatus.likelyReal`](../asuserdetectionstatus/likelyreal.md) is a hint that the system has a reasonably high confidence that the user is a real person, as opposed to an automated agent, but this isn’t a guarantee.
 
 ## See Also
 
-- [enum ASUserDetectionStatus](asuserdetectionstatus.md)
+### Detecting User Characteristics
+- [enum ASUserDetectionStatus](../asuserdetectionstatus.md)
   Possible values for the real user indicator.
 
 

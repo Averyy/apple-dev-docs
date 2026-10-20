@@ -1,7 +1,8 @@
 # supportAddingBinaryFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to its callable functions list.
 
@@ -19,9 +20,14 @@ A Boolean value that indicates whether you can use the pipeline to create new pi
 var supportAddingBinaryFunctions: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL supportAddingBinaryFunctions;
+```
+
 ## See Also
 
-- [var binaryArchives: [any MTLBinaryArchive]?](mtlcomputepipelinedescriptor/binaryarchives.md)
+### Loading binary archives
+- [var binaryArchives: [any MTLBinaryArchive]?](./binaryarchives.md)
   The binary archives that contain any precompiled shader functions to link.
 
 

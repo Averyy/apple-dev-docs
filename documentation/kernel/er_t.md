@@ -1,14 +1,15 @@
 # er_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct eventreq {
     ...
 } er_t;
@@ -17,13 +18,13 @@ typedef struct eventreq {
 ## Topics
 
 ### Instance Properties
-- [er_data](er_t/1496218-er_data.md)
-- [er_ecnt](er_t/1496230-er_ecnt.md)
-- [er_eventbits](er_t/1496227-er_eventbits.md)
-- [er_handle](er_t/1496194-er_handle.md)
-- [er_rcnt](er_t/1496229-er_rcnt.md)
-- [er_type](er_t/1496192-er_type.md)
-- [er_wcnt](er_t/1496226-er_wcnt.md)
+- [er_data](./er_t/api-1496218-er_data.md)
+- [er_ecnt](./er_t/api-1496230-er_ecnt.md)
+- [er_eventbits](./er_t/api-1496227-er_eventbits.md)
+- [er_handle](./er_t/api-1496194-er_handle.md)
+- [er_rcnt](./er_t/api-1496229-er_rcnt.md)
+- [er_type](./er_t/api-1496192-er_type.md)
+- [er_wcnt](./er_t/api-1496226-er_wcnt.md)
 
 
 ---

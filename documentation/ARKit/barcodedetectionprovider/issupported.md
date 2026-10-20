@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that determines whether a device supports the barcode detection provider.
 
@@ -16,7 +17,8 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](barcodedetectionprovider/requiredauthorizations.md)
+### Type properties
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The authorization types you need to use the barcode detection provider.
 
 

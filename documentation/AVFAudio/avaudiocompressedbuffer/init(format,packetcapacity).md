@@ -1,7 +1,8 @@
 # init(format:packetCapacity:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a buffer that contains constant bytes per packet of audio data in a compressed state.
 
@@ -20,9 +21,13 @@ Creates a buffer that contains constant bytes per packet of audio data in a comp
 init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount)
 ```
 
+```objc
+- (instancetype) initWithFormat:(AVAudioFormat *) format packetCapacity:(AVAudioPacketCount) packetCapacity;
+```
+
 #### Return Value
 
-A new [`AVAudioCompressedBuffer`](avaudiocompressedbuffer.md) instance.
+A new [`AVAudioCompressedBuffer`](../avaudiocompressedbuffer.md) instance.
 
 #### Discussion
 
@@ -35,7 +40,8 @@ This fails if the format is PCM or if the format has variable bytes per packet (
 
 ## See Also
 
-- [init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount, maximumPacketSize: Int)](avaudiocompressedbuffer/init(format:packetcapacity:maximumpacketsize:).md)
+### Creating an audio buffer
+- [init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount, maximumPacketSize: Int)](./init%28format,packetcapacity,maximumpacketsize%29.md)
   Creates a buffer that contains audio data in a compressed state.
 
 

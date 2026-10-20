@@ -1,14 +1,15 @@
 # kCSRPrivateSpaceBaseAddressHi
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kCSRPrivateSpaceBaseAddressHi = 0x0000FFFF
 ```
 

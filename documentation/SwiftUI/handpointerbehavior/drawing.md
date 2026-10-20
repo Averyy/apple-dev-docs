@@ -1,7 +1,8 @@
 # drawing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enables the hand pointer refined for drawing.
 

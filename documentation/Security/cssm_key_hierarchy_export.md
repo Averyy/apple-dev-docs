@@ -1,7 +1,8 @@
 # CSSM_KEY_HIERARCHY_EXPORT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KEY_HIERARCHY_EXPORT: Int { get }
+```
+
+```c
+CSSM_KEY_HIERARCHY_EXPORT
 ```
 
 

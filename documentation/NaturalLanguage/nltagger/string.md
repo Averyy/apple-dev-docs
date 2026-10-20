@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string being analyzed by the linguistic tagger.
 
@@ -20,9 +21,14 @@ The string being analyzed by the linguistic tagger.
 var string: String? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSString * string;
+```
+
 ## See Also
 
-- [init(tagSchemes: [NLTagScheme])](nltagger/init(tagschemes:).md)
+### Creating a tagger
+- [init(tagSchemes: [NLTagScheme])](./init%28tagschemes%29.md)
   Creates a linguistic tagger instance using the specified tag schemes and options.
 
 

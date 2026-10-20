@@ -1,7 +1,8 @@
 # AVAudioPCMBuffer.MutableChannelData.float(_:)
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -20,8 +21,9 @@ case float(MutableSpan<Float>)
 
 ## See Also
 
-- [AVAudioPCMBuffer.MutableChannelData.int16(_:)](avaudiopcmbuffer/mutablechanneldata/int16(_:).md)
-- [AVAudioPCMBuffer.MutableChannelData.int32(_:)](avaudiopcmbuffer/mutablechanneldata/int32(_:).md)
+### Getting typed mutable channel data
+- [AVAudioPCMBuffer.MutableChannelData.int16(_:)](./int16%28_%29.md)
+- [AVAudioPCMBuffer.MutableChannelData.int32(_:)](./int32%28_%29.md)
 
 
 ---

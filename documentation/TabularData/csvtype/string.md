@@ -1,7 +1,8 @@
 # CSVType.string
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A string type.
 

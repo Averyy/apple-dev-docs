@@ -1,7 +1,8 @@
 # removeRequest(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops performing a request on future frames.
 
@@ -26,10 +27,11 @@ final func removeRequest(_ request: any VisionRequest) async -> Bool
 
 ## See Also
 
+### Adding and removing a request
 - [func addRequest<T>(T, cadence: VideoProcessor.Cadence?) async throws -> some AsyncSequence<T.Result, any Error>
-](videoprocessor/addrequest(_:cadence:).md)
+](./addrequest%28_,cadence%29.md)
   Adds a request to the video processor.
-- [VideoProcessor.Cadence](videoprocessor/cadence.md)
+- [VideoProcessor.Cadence](./cadence.md)
   A type that describes the video processing cadence.
 
 

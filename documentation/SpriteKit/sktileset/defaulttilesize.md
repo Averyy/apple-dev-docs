@@ -1,7 +1,8 @@
 # defaultTileSize
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tile set’s default tile size.
 
@@ -20,21 +21,26 @@ The tile set’s default tile size.
 var defaultTileSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize defaultTileSize;
+```
+
 #### Discussion
 
-The default tile size an [`SKTileMapNode`](sktilemapnode.md) will use for its tiles
+The default tile size an [`SKTileMapNode`](../sktilemapnode.md) will use for its tiles
 
 ## See Also
 
-- [var defaultTileGroup: SKTileGroup?](sktileset/defaulttilegroup.md)
+### Accessing or Reading a Tile Set’s Properties
+- [var defaultTileGroup: SKTileGroup?](./defaulttilegroup.md)
   The tile set’s default tile group.
-- [var name: String?](sktileset/name.md)
+- [var name: String?](./name.md)
   A name associated with the tile set.
-- [var tileGroups: [SKTileGroup]](sktileset/tilegroups.md)
+- [var tileGroups: [SKTileGroup]](./tilegroups.md)
   The tile set’s array of tile group objects.
-- [var type: SKTileSetType](sktileset/type.md)
+- [var type: SKTileSetType](./type.md)
   The tile set’s type.
-- [enum SKTileSetType](sktilesettype.md)
+- [enum SKTileSetType](../sktilesettype.md)
   An enumeration defining how tiles are arranged.
 
 

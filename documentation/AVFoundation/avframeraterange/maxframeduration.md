@@ -1,7 +1,8 @@
 # maxFrameDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum frame duration supported by the range.
 
@@ -19,17 +20,22 @@ The maximum frame duration supported by the range.
 var maxFrameDuration: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime maxFrameDuration;
+```
+
 #### Discussion
 
-This value is the reciprocal of [`minFrameRate`](avframeraterange/minframerate.md), and expresses the minimum frame rate as a duration.
+This value is the reciprocal of [`minFrameRate`](./minframerate.md), and expresses the minimum frame rate as a duration.
 
 ## See Also
 
-- [var maxFrameRate: Float64](avframeraterange/maxframerate.md)
+### Accessing properties
+- [var maxFrameRate: Float64](./maxframerate.md)
   The maximum frame rate supported by the range.
-- [var minFrameDuration: CMTime](avframeraterange/minframeduration.md)
+- [var minFrameDuration: CMTime](./minframeduration.md)
   The minimum frame duration supported by the range.
-- [var minFrameRate: Float64](avframeraterange/minframerate.md)
+- [var minFrameRate: Float64](./minframerate.md)
   The minimum frame rate supported by the range.
 
 

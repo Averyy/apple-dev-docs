@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the properties of the receiver.
 
@@ -10,7 +11,7 @@ An array containing the properties of the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ An array containing the properties of the receiver.
 var properties: [NSPropertyDescription] { get set }
 ```
 
+```objc
+@property (strong) NSArray<__kindof NSPropertyDescription *> * properties;
+```
+
 #### Discussion
 
-The elements in the array are instances of [`NSAttributeDescription`](nsattributedescription.md), [`NSRelationshipDescription`](nsrelationshipdescription.md), and/or [`NSFetchedPropertyDescription`](nsfetchedpropertydescription.md).
+The elements in the array are instances of [`NSAttributeDescription`](../nsattributedescription.md), [`NSRelationshipDescription`](../nsrelationshipdescription.md), and/or [`NSFetchedPropertyDescription`](../nsfetchedpropertydescription.md).
 
 ##### Special Considerations
 
@@ -30,13 +35,14 @@ Setting the properties raises an exception if the receiver’s model has been us
 
 ## See Also
 
-- [var propertiesByName: [String : NSPropertyDescription]](nsentitydescription/propertiesbyname.md)
+### Working with properties
+- [var propertiesByName: [String : NSPropertyDescription]](./propertiesbyname.md)
   A dictionary containing the properties of the receiver.
-- [var attributesByName: [String : NSAttributeDescription]](nsentitydescription/attributesbyname.md)
+- [var attributesByName: [String : NSAttributeDescription]](./attributesbyname.md)
   The attributes of the receiver in a dictionary.
-- [var relationshipsByName: [String : NSRelationshipDescription]](nsentitydescription/relationshipsbyname.md)
+- [var relationshipsByName: [String : NSRelationshipDescription]](./relationshipsbyname.md)
   The relationships of the receiver in a dictionary.
-- [func relationships(forDestination: NSEntityDescription) -> [NSRelationshipDescription]](nsentitydescription/relationships(fordestination:).md)
+- [func relationships(forDestination: NSEntityDescription) -> [NSRelationshipDescription]](./relationships%28fordestination%29.md)
   Returns an array containing the relationships of the receiver where the entity description of the relationship is a given entity.
 
 

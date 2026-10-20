@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional name that can help you identify a residency set you create with the descriptor.
 
@@ -19,13 +20,18 @@ An optional name that can help you identify a residency set you create with the 
 var label: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
+```
+
 #### Discussion
 
-Metal applies the value of this property to the [`label`](mtlresidencyset/label.md) property of an [`MTLResidencySet`](mtlresidencyset.md) that you create by passing the descriptor to [`makeResidencySet(descriptor:)`](mtldevice/makeresidencyset(descriptor:).md).
+Metal applies the value of this property to the [`label`](../mtlresidencyset/label.md) property of an [`MTLResidencySet`](../mtlresidencyset.md) that you create by passing the descriptor to [`makeResidencySet(descriptor:)`](../mtldevice/makeresidencyset%28descriptor%29.md).
 
 ## See Also
 
-- [var initialCapacity: Int](mtlresidencysetdescriptor/initialcapacity.md)
+### Configuring the residency set
+- [var initialCapacity: Int](./initialcapacity.md)
   The number of allocations a new residency set can store without reallocating memory.
 
 

@@ -1,7 +1,8 @@
 # AVAudioSessionRouteDescription
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the input and output ports associated with a session’s audio route.
 
@@ -19,43 +20,48 @@ An object that describes the input and output ports associated with a session’
 class AVAudioSessionRouteDescription
 ```
 
+```objc
+@interface AVAudioSessionRouteDescription : NSObject
+```
+
 ## Mentions
 
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Responding to audio route changes](./responding-to-audio-route-changes.md)
 
 #### Overview
 
-You don’t create instances of this class yourself. Instead, you retrieve the current audio route from your app’s [`AVAudioSession`](avaudiosession.md) object.
+You don’t create instances of this class yourself. Instead, you retrieve the current audio route from your app’s [`AVAudioSession`](./avaudiosession.md) object.
 
 ## Topics
 
 ### Getting the route’s ports
-- [var inputs: [AVAudioSessionPortDescription]](avaudiosessionroutedescription/inputs.md)
+- [var inputs: [AVAudioSessionPortDescription]](./avaudiosessionroutedescription/inputs.md)
   An array of audio input port descriptions.
-- [var outputs: [AVAudioSessionPortDescription]](avaudiosessionroutedescription/outputs.md)
+- [var outputs: [AVAudioSessionPortDescription]](./avaudiosessionroutedescription/outputs.md)
   An array of audio output port descriptions.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var currentRoute: AVAudioSessionRouteDescription](avaudiosession/currentroute.md)
+### Inspecting the current route
+- [var currentRoute: AVAudioSessionRouteDescription](./avaudiosession/currentroute.md)
   A description of the current audio route’s input and output ports.
-- [class AVAudioSessionPortDescription](avaudiosessionportdescription.md)
+- [class AVAudioSessionPortDescription](./avaudiosessionportdescription.md)
   Information about the capabilities of the port and the hardware channels it supports.
-- [class let routeChangeNotification: NSNotification.Name](avaudiosession/routechangenotification.md)
+- [class let routeChangeNotification: NSNotification.Name](./avaudiosession/routechangenotification.md)
   A notification the system posts when its audio route changes.
 
 

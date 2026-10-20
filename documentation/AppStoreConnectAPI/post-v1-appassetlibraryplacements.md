@@ -1,7 +1,8 @@
 # Create an app asset library placement
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create an app asset library placement.
 
@@ -10,9 +11,9 @@ Create an app asset library placement.
 
 ## Mentions
 
-- [App Store Connect API 4.5.1 release notes](app-store-connect-api-4-5-1-release-notes.md)
-- [Migrating to the App Asset Library](migrating-to-the-app-asset-library.md)
-- [Placing assets on your App Store surfaces](placing-assets-on-your-app-store-surfaces.md)
+- [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
+- [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
+- [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ Create an app asset library placement.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements
 
 {
@@ -88,11 +89,25 @@ POST https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `AppAssetLibraryPlacementCreateRequest`
+
 The request body you use to create an app asset library placement.
+
+## Responses
+
+- `201` Created (`AppAssetLibraryPlacementResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Delete an app asset library placement](delete-v1-appassetlibraryplacements-_id_.md)
+### Managing placements
+- [Delete an app asset library placement](./delete-v1-appassetlibraryplacements-_id_.md)
   Delete an app asset library placement.
 
 

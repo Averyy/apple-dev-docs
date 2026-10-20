@@ -1,7 +1,8 @@
 # bit_TopCenterSurround
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The top center surround channel.
 
@@ -20,21 +21,26 @@ The top center surround channel.
 static var bit_TopCenterSurround: AudioChannelBitmap { get }
 ```
 
+```c
+kAudioChannelBit_TopCenterSurround
+```
+
 ## See Also
 
-- [static var bit_Center: AudioChannelBitmap](audiochannelbitmap/bit_center.md)
+### Center
+- [static var bit_Center: AudioChannelBitmap](./bit_center.md)
   The center channel.
-- [static var bit_CenterSurround: AudioChannelBitmap](audiochannelbitmap/bit_centersurround.md)
+- [static var bit_CenterSurround: AudioChannelBitmap](./bit_centersurround.md)
   The center surround channel.
-- [static var bit_CenterTopFront: AudioChannelBitmap](audiochannelbitmap/bit_centertopfront.md)
+- [static var bit_CenterTopFront: AudioChannelBitmap](./bit_centertopfront.md)
   The top-front center channel.
-- [static var bit_CenterTopMiddle: AudioChannelBitmap](audiochannelbitmap/bit_centertopmiddle.md)
+- [static var bit_CenterTopMiddle: AudioChannelBitmap](./bit_centertopmiddle.md)
   The top-middle center channel.
-- [static var bit_CenterTopRear: AudioChannelBitmap](audiochannelbitmap/bit_centertoprear.md)
+- [static var bit_CenterTopRear: AudioChannelBitmap](./bit_centertoprear.md)
   The top-right center channel.
-- [static var bit_TopBackCenter: AudioChannelBitmap](audiochannelbitmap/bit_topbackcenter.md)
+- [static var bit_TopBackCenter: AudioChannelBitmap](./bit_topbackcenter.md)
   The top-back center channel.
-- [static var bit_VerticalHeightCenter: AudioChannelBitmap](audiochannelbitmap/bit_verticalheightcenter.md)
+- [static var bit_VerticalHeightCenter: AudioChannelBitmap](./bit_verticalheightcenter.md)
   The vertical height center channel.
 
 

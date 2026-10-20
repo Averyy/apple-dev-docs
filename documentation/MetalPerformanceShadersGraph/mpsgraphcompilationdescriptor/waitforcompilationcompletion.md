@@ -1,7 +1,8 @@
 # waitForCompilationCompletion
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flag that makes the compile or specialize call blocking till the entire compilation is complete, defaults to NO.
 
@@ -17,6 +18,10 @@ Flag that makes the compile or specialize call blocking till the entire compilat
 
 ```swift
 var waitForCompilationCompletion: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL waitForCompilationCompletion;
 ```
 
 

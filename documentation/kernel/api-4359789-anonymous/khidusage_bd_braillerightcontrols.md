@@ -1,14 +1,15 @@
 # kHIDUsage_BD_BrailleRightControls
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BD_BrailleRightControls = 0x20E
 ```
 

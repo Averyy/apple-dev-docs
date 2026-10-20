@@ -1,7 +1,8 @@
 # init(bundle:)
 
 **Framework**: Preference Panes  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a preference pane with the specified bundle.
 
@@ -13,6 +14,10 @@ Initializes a preference pane with the specified bundle.
 
 ```swift
 init(bundle: Bundle)
+```
+
+```objc
+- (instancetype) initWithBundle:(NSBundle *) bundle;
 ```
 
 

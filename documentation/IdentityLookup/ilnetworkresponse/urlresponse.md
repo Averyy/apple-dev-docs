@@ -1,7 +1,8 @@
 # urlResponse
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Encapsulation of an HTTPS URL response.
 
@@ -15,6 +16,10 @@ Encapsulation of an HTTPS URL response.
 
 ```swift
 var urlResponse: HTTPURLResponse { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSHTTPURLResponse * urlResponse;
 ```
 
 

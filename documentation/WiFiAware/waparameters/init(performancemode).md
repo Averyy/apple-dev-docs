@@ -1,7 +1,8 @@
 # init(performanceMode:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the parameters with defaults.
 
@@ -18,7 +19,8 @@ init(performanceMode: WAPerformanceMode = .bulk)
 
 ## See Also
 
-- [var performanceMode: WAPerformanceMode](waparameters/performancemode.md)
+### Checking the configured performance mode
+- [var performanceMode: WAPerformanceMode](./performancemode.md)
   The initial performance configuration of the data path when connected.
 
 

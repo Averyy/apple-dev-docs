@@ -1,7 +1,8 @@
 # optimizeForPersistentKernel
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var optimizeForPersistentKernel: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL optimizeForPersistentKernel;
 ```
 
 

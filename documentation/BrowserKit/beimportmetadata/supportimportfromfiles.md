@@ -1,7 +1,8 @@
 # supportImportFromFiles
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the import supports data from files.
 
@@ -13,6 +14,10 @@ A Boolean value that indicates whether the import supports data from files.
 
 ```swift
 var supportImportFromFiles: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL supportImportFromFiles;
 ```
 
 

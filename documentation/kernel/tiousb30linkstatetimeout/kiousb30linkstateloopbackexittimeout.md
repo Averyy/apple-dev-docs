@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateLoopbackExitTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The loopback exit timeout.
 
@@ -10,7 +11,7 @@ The loopback exit timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateLoopbackExitTimeout = 2
 ```
 

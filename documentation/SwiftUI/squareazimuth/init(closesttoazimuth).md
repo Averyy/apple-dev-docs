@@ -1,9 +1,10 @@
 # init(closestToAzimuth:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a [`SquareAzimuth`](squareazimuth.md) case with an orientation that has a horizontal angle closest to the provided azimuth.
+Creates a [`SquareAzimuth`](../squareazimuth.md) case with an orientation that has a horizontal angle closest to the provided azimuth.
 
 **Availability**:
 - visionOS 2.0+

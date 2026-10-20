@@ -1,12 +1,13 @@
 # run()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the print operation on the current thread.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ Runs the print operation on the current thread.
 func run() -> Bool
 ```
 
+```objc
+- (BOOL) runOperation;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation was successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation was successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The operation runs to completion in the current thread, blocking the application. A separate thread is not spawned, even if [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.md) is [`true`](https://developer.apple.com/documentation/swift/true). Use [`runModal(for:delegate:didRun:contextInfo:)`](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md) to use document-modal sheets and to allow a separate thread to perform the operation.
+The operation runs to completion in the current thread, blocking the application. A separate thread is not spawned, even if [`canSpawnSeparateThread`](./canspawnseparatethread.md) is [`true`](../../Swift/true.md). Use [`runModal(for:delegate:didRun:contextInfo:)`](./runmodal%28for,delegate,didrun,contextinfo%29.md) to use document-modal sheets and to allow a separate thread to perform the operation.
 
 ## See Also
 
-- [func runModal(for: NSWindow, delegate: Any?, didRun: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md)
+### Running the Print Operation
+- [func runModal(for: NSWindow, delegate: Any?, didRun: Selector?, contextInfo: UnsafeMutableRawPointer?)](./runmodal%28for,delegate,didrun,contextinfo%29.md)
   Runs the print operation, calling your custom delegate method upon completion.
-- [func cleanUp()](nsprintoperation/cleanup.md)
+- [func cleanUp()](./cleanup%28%29.md)
   Called at the end of a print operation to remove the print operation as the current operation.
-- [func deliverResult() -> Bool](nsprintoperation/deliverresult.md)
+- [func deliverResult() -> Bool](./deliverresult%28%29.md)
   Delivers the results of the print operation to the intended destination.
 
 

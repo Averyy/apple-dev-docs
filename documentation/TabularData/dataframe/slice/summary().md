@@ -1,7 +1,8 @@
 # summary()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame that summarizes the columns of the data frame slice.
 
@@ -22,11 +23,12 @@ func summary() -> DataFrame
 
 ## See Also
 
-- [func summary(of: String...) -> DataFrame](dataframe/slice/summary(of:).md)
+### Summarizing a Slice
+- [func summary(of: String...) -> DataFrame](./summary%28of%29.md)
   Generates a data frame that summarizes the columns you select by name.
-- [func summary(ofColumns: Int...) -> DataFrame](dataframe/slice/summary(ofcolumns:).md)
+- [func summary(ofColumns: Int...) -> DataFrame](./summary%28ofcolumns%29.md)
   Generates a data frame that summarizes the columns you select by index.
-- [enum SummaryColumnIDs](summarycolumnids.md)
+- [enum SummaryColumnIDs](../../summarycolumnids.md)
   The summary data frame column identifiers.
 
 

@@ -1,7 +1,8 @@
 # nw_object_t
 
 **Framework**: Network  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The generic type for objects in the Network framework.
 
@@ -20,11 +21,15 @@ The generic type for objects in the Network framework.
 typealias nw_object_t = any OS_nw_object
 ```
 
+```c
+typedef NSObject<OS_nw_object> * nw_object_t;
+```
+
 #### Discussion
 
 Network.framework objects are reference-counted objects that can be used with Automatic Reference Counting (ARC) or directly retained and released.
 
-The objects also conform to the description method of [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) to be used for debugging.
+The objects also conform to the description method of [`NSObject`](../ObjectiveC/nsobject-swift.class.md) to be used for debugging.
 
 
 ---

@@ -1,18 +1,19 @@
 # AVPlayerItem.Status
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The statuses for a player item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ The statuses for a player item.
 enum Status
 ```
 
+```c
+enum AVPlayerItemStatus : NSInteger;
+```
+
 ## Topics
 
 ### Player item statuses
-- [AVPlayerItem.Status.unknown](avplayeritem/status-swift.enum/unknown.md)
+- [AVPlayerItem.Status.unknown](./status-swift.enum/unknown.md)
   The item’s status is unknown.
-- [AVPlayerItem.Status.readyToPlay](avplayeritem/status-swift.enum/readytoplay.md)
+- [AVPlayerItem.Status.readyToPlay](./status-swift.enum/readytoplay.md)
   The item is ready to play.
-- [AVPlayerItem.Status.failed](avplayeritem/status-swift.enum/failed.md)
+- [AVPlayerItem.Status.failed](./status-swift.enum/failed.md)
   The item no longer plays due to an error.
 ### Initializers
-- [init?(rawValue: Int)](avplayeritem/status-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./status-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var status: AVPlayerItem.Status](avplayeritem/status-swift.property.md)
+### Determining readiness
+- [var status: AVPlayerItem.Status](./status-swift.property.md)
   The status of the player item.
-- [var error: (any Error)?](avplayeritem/error.md)
+- [var error: (any Error)?](./error.md)
   The error that caused the player item to fail.
 
 

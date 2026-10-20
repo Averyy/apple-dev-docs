@@ -1,7 +1,8 @@
 # shareMetadatas
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The share metadatas to process.
 
@@ -20,15 +21,20 @@ The share metadatas to process.
 var shareMetadatas: [CKShare.Metadata]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<CKShareMetadata *> * shareMetadatas;
+```
+
 #### Discussion
 
 Use this property to view or change the metadata of the shares you want to process. If you intend to specify or change the value of this property, do so before you execute the operation or submit it to a queue.
 
 ## See Also
 
-- [var perShareCompletionBlock: ((CKShare.Metadata, CKShare?, (any Error)?) -> Void)?](ckacceptsharesoperation/persharecompletionblock.md)
+### Processing the Share Accept Results
+- [var perShareCompletionBlock: ((CKShare.Metadata, CKShare?, (any Error)?) -> Void)?](./persharecompletionblock.md)
   The block to execute as CloudKit processes individual shares.
-- [var acceptSharesCompletionBlock: (((any Error)?) -> Void)?](ckacceptsharesoperation/acceptsharescompletionblock.md)
+- [var acceptSharesCompletionBlock: (((any Error)?) -> Void)?](./acceptsharescompletionblock.md)
   The closure to execute when the operation finishes.
 
 

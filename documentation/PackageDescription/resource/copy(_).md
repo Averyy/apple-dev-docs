@@ -1,7 +1,8 @@
 # copy(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies the copy rule to a resource at the given path.
 
@@ -20,7 +21,7 @@ A `Resource` instance.
 
 #### Discussion
 
-If possible, use [`process(_:localization:)`](resource/process(_:localization:).md) and automatically apply optimizations to resources.
+If possible, use [`process(_:localization:)`](./process%28_,localization%29.md) and automatically apply optimizations to resources.
 
 If your resources must remain untouched or must retain a specific folder structure, use the `copy` rule. It copies resources at the given `path`, as is, to the top level in the package’s resource bundle. If the given path represents a directory, Swift Package Manager preserves its structure.
 
@@ -30,11 +31,12 @@ If your resources must remain untouched or must retain a specific folder structu
 
 ## See Also
 
-- [static func process(String, localization: Resource.Localization?) -> Resource](resource/process(_:localization:).md)
+### Applying Rules
+- [static func process(String, localization: Resource.Localization?) -> Resource](./process%28_,localization%29.md)
   Applies a platform-specific rules to the resource at the given path.
-- [Resource.Localization](resource/localization.md)
+- [Resource.Localization](./localization.md)
   Defines the explicit type of localization for resources.
-- [static func embedInCode(String) -> Resource](resource/embedincode(_:).md)
+- [static func embedInCode(String) -> Resource](./embedincode%28_%29.md)
   Applies the embed rule to a resource at the given path.
 
 

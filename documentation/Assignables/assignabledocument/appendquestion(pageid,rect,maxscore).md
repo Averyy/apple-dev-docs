@@ -1,7 +1,8 @@
 # appendQuestion(pageID:rect:maxScore:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new question and appends it to the document.
 
@@ -9,7 +10,7 @@ Creates a new question and appends it to the document.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,9 +30,10 @@ The newly created question’s ID.
 
 ## See Also
 
-- [func questions(on: AssignableDocument.Page.ID) -> [AssignableDocument.Question]](assignabledocument/questions(on:).md)
+### Getting and setting the questions
+- [func questions(on: AssignableDocument.Page.ID) -> [AssignableDocument.Question]](./questions%28on%29.md)
   Find questions that exist on the specified page.
-- [func removeQuestion(AssignableDocument.Question.ID) -> AssignableDocument.Question?](assignabledocument/removequestion(_:).md)
+- [func removeQuestion(AssignableDocument.Question.ID) -> AssignableDocument.Question?](./removequestion%28_%29.md)
   Removes a question and its boxes from the document.
 
 

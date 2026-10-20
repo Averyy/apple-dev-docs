@@ -1,14 +1,15 @@
 # kHFSCatExpandedTimesBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHFSCatExpandedTimesBit = 0x000c
 ```
 

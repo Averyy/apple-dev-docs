@@ -1,7 +1,8 @@
 # ManagedDownloaderExtension
 
 **Framework**: Background Assets  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An app extension that uses the system implementation to schedule asset-pack downloads automatically.
 
@@ -23,31 +24,32 @@ protocol ManagedDownloaderExtension : BADownloaderExtension where Self.Configura
 
 The protocol provides default implementations for all of the inherited `BADownloaderExtension` requirements.
 
-> ⚠️ **Warning**: Don’t implement any of the inherited `BADownloaderExtension` requirements aside from, optionally, [`backgroundDownload(_:didReceive:)`](badownloaderextension-qwaw/backgrounddownload(_:didreceive:).md).
+> ⚠️ **Warning**: Don’t implement any of the inherited `BADownloaderExtension` requirements aside from, optionally, [`backgroundDownload(_:didReceive:)`](./badownloaderextension-qwaw/backgrounddownload%28_,didreceive%29.md).
 
 ## Topics
 
 ### Downloading assets
-- [func shouldDownload(AssetPack) -> Bool](manageddownloaderextension/shoulddownload(_:).md)
+- [func shouldDownload(AssetPack) -> Bool](./manageddownloaderextension/shoulddownload%28_%29.md)
   Determines whether to download an asset pack.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [BADownloaderExtension](badownloaderextension-qwaw.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [BADownloaderExtension](./badownloaderextension-qwaw.md)
 
 ## See Also
 
-- [struct AssetPack](assetpack.md)
+### Managed asset packs
+- [struct AssetPack](./assetpack.md)
   An archive of assets that the system downloads together.
-- [actor AssetPackManager](assetpackmanager.md)
+- [actor AssetPackManager](./assetpackmanager.md)
   An actor that manages asset packs.
-- [struct AssetPackManifest](assetpackmanifest.md)
+- [struct AssetPackManifest](./assetpackmanifest.md)
   A manifest of asset packs that are available to download.
-- [BAAppGroupID](../bundleresources/information-property-list/baappgroupid.md)
+- [BAAppGroupID](../BundleResources/information-property-list/baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAHasManagedAssetPacks](../bundleresources/information-property-list/bahasmanagedassetpacks.md)
+- [BAHasManagedAssetPacks](../BundleResources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
 
 

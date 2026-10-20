@@ -1,7 +1,8 @@
 # shouldCalculateReceiveTime
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether a connection delivers receive timestamps for IP packets.
 
@@ -22,13 +23,15 @@ var shouldCalculateReceiveTime: Bool { get set }
 
 ## See Also
 
-- [var receiveTime: UInt64](nwprotocolip/metadata/receivetime.md)
+### Related Documentation
+- [var receiveTime: UInt64](../metadata/receivetime.md)
   The time at which a packet was received, in nanoseconds, based on `CLOCK_MONOTONIC_RAW`.
-- [var hopLimit: UInt8](nwprotocolip/options/hoplimit.md)
+### Customizing IP Behavior
+- [var hopLimit: UInt8](./hoplimit.md)
   The default hop limit for packets a connection generates.
-- [var useMinimumMTU: Bool](nwprotocolip/options/useminimummtu.md)
+- [var useMinimumMTU: Bool](./useminimummtu.md)
   A Boolean indicating that the connection uses the  minimum MTU value, which is 1280 bytes for IPv6.
-- [var disableFragmentation: Bool](nwprotocolip/options/disablefragmentation.md)
+- [var disableFragmentation: Bool](./disablefragmentation.md)
   A Boolean that indicates whether fragmentation is disabled on outbound packets.
 
 

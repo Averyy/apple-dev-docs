@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a single-plane tensor with the specified descriptor that shares storage with this buffer.
@@ -20,19 +21,23 @@ Creates a single-plane tensor with the specified descriptor that shares storage 
 func makeTensor(descriptor: MTLTensorDescriptor, offset: Int) throws -> any MTLTensor
 ```
 
+```objc
+- (id<MTLTensor>) newTensorWithDescriptor:(MTLTensorDescriptor *) descriptor offset:(NSUInteger) offset error:(NSError **) error;
+```
+
 #### Return Value
 
 A tensor, or `nil` if validation fails.
 
 #### Discussion
 
-This method validates the constraints documented on [`MTLTensorDescriptor`](mtltensordescriptor.md), and additionally requires:
+This method validates the constraints documented on [`MTLTensorDescriptor`](../mtltensordescriptor.md), and additionally requires:
 
-- `offset` is 0 when [`usage`](mtltensordescriptor/usage.md) contains [`machineLearning`](mtltensorusage/machinelearning.md).
-- `offset` is aligned to 128 bytes if the data plane uses a format [`MTLTensorDataType`](mtltensordatatype.md).
+- `offset` is 0 when [`usage`](../mtltensordescriptor/usage.md) contains [`machineLearning`](../mtltensorusage/machinelearning.md).
+- `offset` is aligned to 128 bytes if the data plane uses a format [`MTLTensorDataType`](../mtltensordatatype.md).
 - `offset` is aligned to the size of the data type in bytes otherwise.
 
-This method doesn’t create tensors that contain auxiliary planes. Use [`makeTensor(descriptor:attachments:)`](mtldevice/maketensor(descriptor:attachments:).md) instead to create a multi-plane tensor with per-plane buffer backing storage.
+This method doesn’t create tensors that contain auxiliary planes. Use [`makeTensor(descriptor:attachments:)`](../mtldevice/maketensor%28descriptor,attachments%29.md) instead to create a multi-plane tensor with per-plane buffer backing storage.
 
 ## Parameters
 

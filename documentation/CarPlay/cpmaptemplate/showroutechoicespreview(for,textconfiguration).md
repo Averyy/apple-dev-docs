@@ -1,7 +1,8 @@
 # showRouteChoicesPreview(for:textConfiguration:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the route choices for a single trip.
 
@@ -16,6 +17,10 @@ Displays the route choices for a single trip.
 func showRouteChoicesPreview(for tripPreview: CPTrip, textConfiguration: CPTripPreviewTextConfiguration?)
 ```
 
+```objc
+- (void) showRouteChoicesPreviewForTrip:(CPTrip *) tripPreview textConfiguration:(CPTripPreviewTextConfiguration *) textConfiguration;
+```
+
 #### Discussion
 
 The trip preview can appear over an active navigation session.
@@ -27,13 +32,14 @@ The trip preview can appear over an active navigation session.
 
 ## See Also
 
-- [func showTripPreviews([CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)](cpmaptemplate/showtrippreviews(_:textconfiguration:).md)
+### Displaying Trip Previews
+- [func showTripPreviews([CPTrip], textConfiguration: CPTripPreviewTextConfiguration?)](./showtrippreviews%28_,textconfiguration%29.md)
   Displays the preview for one or more trips, and allows route selection.
-- [func showTripPreviews([CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)](cpmaptemplate/showtrippreviews(_:selectedtrip:textconfiguration:).md)
+- [func showTripPreviews([CPTrip], selectedTrip: CPTrip?, textConfiguration: CPTripPreviewTextConfiguration?)](./showtrippreviews%28_,selectedtrip,textconfiguration%29.md)
   Displays the previews for a collection of trips, with a single selected trip.
-- [func hideTripPreviews()](cpmaptemplate/hidetrippreviews.md)
+- [func hideTripPreviews()](./hidetrippreviews%28%29.md)
   Hides the display of trip previews.
-- [class CPTripPreviewTextConfiguration](cptrippreviewtextconfiguration.md)
+- [class CPTripPreviewTextConfiguration](../cptrippreviewtextconfiguration.md)
   A configuration object for changing the button titles on a trip preview.
 
 

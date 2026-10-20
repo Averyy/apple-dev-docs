@@ -1,7 +1,8 @@
 # Delete an Ad Creative
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove an ad creative by its unique identifier.
 
@@ -38,7 +39,7 @@ Keep these constraints in mind before issuing the delete request.
 
 Deletes an ad creative by its unique identifier. The system soft-deletes the ad creative and automatically sets existing ads that reference it to `systemStatus: NOT_RUNNING`.
 
-```None
+```
 DELETE https://api.ads.apple.com/v1/creatives/666777888
 ```
 
@@ -54,17 +55,33 @@ DELETE https://api.ads.apple.com/v1/creatives/666777888
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad Creative](post-creatives.md)
+- [Create an Ad Creative](./post-creatives.md)
   Add a new ad creative that defines the visual presentation and tap destination for an ad.
-- [Query Ad Creatives](post-creatives-query.md)
+- [Query Ad Creatives](./post-creatives-query.md)
   Retrieve ad creatives that match structured filter, sort, and pagination criteria.
-- [Get an Ad Creative](get-creatives-_id_.md)
+- [Get an Ad Creative](./get-creatives-_id_.md)
   Fetch a single ad creative by its unique identifier.
-- [Update an Ad Creative](put-creatives-_id_.md)
+- [Update an Ad Creative](./put-creatives-_id_.md)
   Change an ad creative’s name or creative spec by its unique identifier.
 
 

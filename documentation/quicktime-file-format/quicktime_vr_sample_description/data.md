@@ -1,7 +1,8 @@
 # data
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The VR world atom container.
 
@@ -11,15 +12,16 @@ The sample description structure is extended to hold this atom container.
 
 ## See Also
 
-- [size](quicktime_vr_sample_description/size.md)
+### Data fields
+- [size](./size.md)
   The size, in bytes, of the sample description header structure.
-- [type](quicktime_vr_sample_description/type.md)
+- [type](./type.md)
   The sample description type.
-- [reserved1](quicktime_vr_sample_description/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
-- [reserved2](quicktime_vr_sample_description/reserved2.md)
+- [reserved2](./reserved2.md)
   Reserved.
-- [dataRefIndex](quicktime_vr_sample_description/datarefindex.md)
+- [dataRefIndex](./datarefindex.md)
   Reserved.
 
 

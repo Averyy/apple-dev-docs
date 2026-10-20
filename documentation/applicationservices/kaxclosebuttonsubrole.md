@@ -1,7 +1,8 @@
 # kAXCloseButtonSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A close button (that is, the red button in a window’s title bar that closes the window).
 
@@ -12,6 +13,10 @@ A close button (that is, the red button in a window’s title bar that closes th
 
 ```swift
 var kAXCloseButtonSubrole: String { get }
+```
+
+```c
+#define kAXCloseButtonSubrole
 ```
 
 

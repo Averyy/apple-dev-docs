@@ -1,6 +1,7 @@
 # App Store review details
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Manage the required information you provide for App Review.
 
@@ -15,44 +16,45 @@ Use `appStoreReviewDetails` to provide information required for App Review. This
 - Demo account name (if your app uses a single sign-on service)
 - Demo account password (if your app uses a single sign-on service)
 
-Optionally, provide notes for the review team using the notes attribute. If you need to attach a file for App Review, use the [`App Store review attachments`](app-store-review-attachments.md) resource.
+Optionally, provide notes for the review team using the notes attribute. If you need to attach a file for App Review, use the [App Store review attachments](./app-store-review-attachments.md) resource.
 
-For more information see [`App Review information`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-review-information).
+For more information see [App Review information](https://developer.apple.com/help/app-store-connect/reference/app-review-information).
 
 ## Topics
 
 ### Creating, Modifying, and Reading Review Details
-- [Create an app store review detail](post-v1-appstorereviewdetails.md)
+- [Create an app store review detail](./post-v1-appstorereviewdetails.md)
   Add App Store review details to an App Store version, including contact and demo account information.
-- [Read app store review detail information](get-v1-appstorereviewdetails-_id_.md)
+- [Read app store review detail information](./get-v1-appstorereviewdetails-_id_.md)
   Get App Review details you provided, including contact information, demo account, and notes.
-- [List App Store review attachment IDs for an App Store review detail](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
-- [Modify an app store review detail](patch-v1-appstorereviewdetails-_id_.md)
+- [List App Store review attachment IDs for an App Store review detail](./get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
+- [Modify an app store review detail](./patch-v1-appstorereviewdetails-_id_.md)
   Update the App Store review details, including the contact information, demo account, and notes.
 ### Objects
-- [object AppStoreReviewDetail](appstorereviewdetail.md)
+- [object AppStoreReviewDetail](./appstorereviewdetail.md)
   The data structure that represent an App Store Review Details  resource.
-- [object AppStoreReviewDetailCreateRequest](appstorereviewdetailcreaterequest.md)
+- [object AppStoreReviewDetailCreateRequest](./appstorereviewdetailcreaterequest.md)
   The request body you use to create an App Store Review Detail.
-- [object AppStoreReviewDetailUpdateRequest](appstorereviewdetailupdaterequest.md)
+- [object AppStoreReviewDetailUpdateRequest](./appstorereviewdetailupdaterequest.md)
   The request body you use to update an App Store Review Detail.
-- [object AppStoreReviewDetailResponse](appstorereviewdetailresponse.md)
+- [object AppStoreReviewDetailResponse](./appstorereviewdetailresponse.md)
   The response body for endpoints that read or modify App Store review details for a version.
-- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
+- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](./appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
 
 ## See Also
 
-- [Review submissions](review-submissions.md)
+### App Store Review Submissions
+- [Review submissions](./review-submissions.md)
   Create and manage your submissions for review, which can include your App Store version, App Store version experiments, custom product page versions, and in-app events.
-- [Review submission items](review-submission-items.md)
+- [Review submission items](./review-submission-items.md)
   Manage the contents of your review submission, which can include your App Store version, App Store version experiments, custom product page versions, and in-app events.
-- [App Clip App Store review details](app-clip-app-store-review-details.md)
+- [App Clip App Store review details](./app-clip-app-store-review-details.md)
   Manage required App Clip information you provide for App Review.
-- [App Store review attachments](app-store-review-attachments.md)
+- [App Store review attachments](./app-store-review-attachments.md)
   Manage the attachments you upload to App Store Connect for App Review.
-- [App Store version submissions](app-store-version-submissions.md)
+- [App Store version submissions](./app-store-version-submissions.md)
   Submit versions of your app to App Review.
-- [Actors](actors.md)
+- [Actors](./actors.md)
   Get information about who or which service made a review submission.
 
 

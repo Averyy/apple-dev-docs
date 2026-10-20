@@ -1,12 +1,15 @@
 # TVElementResettableProperty.updateType
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The [`updateType`](tvviewelement/updatetype.md) property is reset to [`TVElementUpdateType.none`](tvelementupdatetype/none.md).
+The [`updateType`](../tvviewelement/updatetype.md) property is reset to [`TVElementUpdateType.none`](../tvelementupdatetype/none.md).
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,10 +17,15 @@ The [`updateType`](tvviewelement/updatetype.md) property is reset to [`TVElement
 case updateType
 ```
 
+```c
+TVElementResettablePropertyUpdateType
+```
+
 ## See Also
 
-- [TVElementResettableProperty.autoHighlightIdentifier](tvelementresettableproperty/autohighlightidentifier.md)
-  The [`autoHighlightIdentifier`](tvviewelement/autohighlightidentifier.md) property is reset to `nil`.
+### Constants
+- [TVElementResettableProperty.autoHighlightIdentifier](./autohighlightidentifier.md)
+  The [`autoHighlightIdentifier`](../tvviewelement/autohighlightidentifier.md) property is reset to `nil`.
 
 
 ---

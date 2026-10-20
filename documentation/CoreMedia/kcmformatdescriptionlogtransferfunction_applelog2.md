@@ -1,7 +1,8 @@
 # kCMFormatDescriptionLogTransferFunction_AppleLog2
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Log Transfer Function identifier for Apple Log 2.
 
@@ -18,6 +19,10 @@ Log Transfer Function identifier for Apple Log 2.
 
 ```swift
 let kCMFormatDescriptionLogTransferFunction_AppleLog2: CFString
+```
+
+```c
+extern CFStringRef const kCMFormatDescriptionLogTransferFunction_AppleLog2;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(topLeading:bottomLeading:bottomTrailing:topTrailing:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of corner radii for a rounded rectangle with uneven corners.
 

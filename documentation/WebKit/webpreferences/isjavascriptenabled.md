@@ -1,12 +1,13 @@
 # isJavaScriptEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether or not the web view allows JavaScript.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean that indicates whether or not the web view allows JavaScript.
 var isJavaScriptEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isJavaScriptEnabled) BOOL javaScriptEnabled;
+```
+
 #### Discussion
 
-Set to [`true`](https://developer.apple.com/documentation/swift/true) if the web view should allow JavaScript, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Set to [`true`](../../Swift/true.md) if the web view should allow JavaScript, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var javaScriptCanOpenWindowsAutomatically: Bool](webpreferences/javascriptcanopenwindowsautomatically.md)
+### Enabling JavaScript
+- [var javaScriptCanOpenWindowsAutomatically: Bool](./javascriptcanopenwindowsautomatically.md)
   A Boolean that indicates whether or not the web view allows JavaScript to open windows automatically.
 
 

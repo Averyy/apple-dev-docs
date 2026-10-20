@@ -1,7 +1,8 @@
 # sparse_insert_entries_double(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Inserts a list of scalar entries into a double-precision sparse matrix.
 
@@ -20,6 +21,10 @@ Inserts a list of scalar entries into a double-precision sparse matrix.
 func sparse_insert_entries_double(_ A: sparse_matrix_double!, _ N: sparse_dimension, _ val: UnsafePointer<Double>!, _ indx: UnsafePointer<sparse_index>!, _ jndx: UnsafePointer<sparse_index>!) -> sparse_status
 ```
 
+```c
+sparse_status sparse_insert_entries_double(sparse_matrix_double A, sparse_dimension N, const double * restrictval, const sparse_index * restrictindx, const sparse_index * restrictjndx);
+```
+
 #### Discussion
 
 Use to build a sparse matrix by providing a list of point entries. For each entry provided, update `A[indx[i],jndx[i]] = val[i]`.
@@ -34,7 +39,7 @@ Indices in `indx` and `jndx` an are assumed to be unique. Additionally, indices 
 
 ## Parameters
 
-- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_create_double(_:_:)`](sparse_matrix_create_double(_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_create_double(_:_:)`](./sparse_matrix_create_double%28_,_%29.md). [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned if not met.
 - `N`: The number of values to insert into `A`. Each of `indx`, `jndx` and `val` are of size `N`.
 - `val`: Pointer to list of scalar values to insert into `A`. The value is inserted into the location specified by the corresponding indices in `indx` and `jndx`. Must hold `N` values.
 - `indx`: An array of row indices that correspond to the values in `val`. Must hold `N` values.
@@ -42,23 +47,24 @@ Indices in `indx` and `jndx` an are assumed to be unique. Additionally, indices 
 
 ## See Also
 
-- [func sparse_matrix_create_double(sparse_dimension, sparse_dimension) -> sparse_matrix_double!](sparse_matrix_create_double(_:_:).md)
+### Matrix creation and population
+- [func sparse_matrix_create_double(sparse_dimension, sparse_dimension) -> sparse_matrix_double!](./sparse_matrix_create_double%28_,_%29.md)
   Returns a double-precision sparse matrix object.
-- [func sparse_matrix_create_float(sparse_dimension, sparse_dimension) -> sparse_matrix_float!](sparse_matrix_create_float(_:_:).md)
+- [func sparse_matrix_create_float(sparse_dimension, sparse_dimension) -> sparse_matrix_float!](./sparse_matrix_create_float%28_,_%29.md)
   Returns a single-precision sparse matrix object.
-- [func sparse_insert_entry_double(sparse_matrix_double!, Double, sparse_index, sparse_index) -> sparse_status](sparse_insert_entry_double(_:_:_:_:).md)
+- [func sparse_insert_entry_double(sparse_matrix_double!, Double, sparse_index, sparse_index) -> sparse_status](./sparse_insert_entry_double%28_,_,_,_%29.md)
   Inserts a single scalar entry into a double-precision sparse matrix.
-- [func sparse_insert_entry_float(sparse_matrix_float!, Float, sparse_index, sparse_index) -> sparse_status](sparse_insert_entry_float(_:_:_:_:).md)
+- [func sparse_insert_entry_float(sparse_matrix_float!, Float, sparse_index, sparse_index) -> sparse_status](./sparse_insert_entry_float%28_,_,_,_%29.md)
   Inserts a single scalar entry into a single-precision sparse matrix.
-- [func sparse_insert_entries_float(sparse_matrix_float!, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_insert_entries_float(_:_:_:_:_:).md)
+- [func sparse_insert_entries_float(sparse_matrix_float!, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<sparse_index>!) -> sparse_status](./sparse_insert_entries_float%28_,_,_,_,_%29.md)
   Inserts a list of scalar entries into a single-precision sparse matrix.
-- [func sparse_insert_col_double(sparse_matrix_double!, sparse_index, sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_insert_col_double(_:_:_:_:_:).md)
+- [func sparse_insert_col_double(sparse_matrix_double!, sparse_index, sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!) -> sparse_status](./sparse_insert_col_double%28_,_,_,_,_%29.md)
   Inserts a list of scalar entries into a single column of a double-precision sparse matrix.
-- [func sparse_insert_col_float(sparse_matrix_float!, sparse_index, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_insert_col_float(_:_:_:_:_:).md)
+- [func sparse_insert_col_float(sparse_matrix_float!, sparse_index, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!) -> sparse_status](./sparse_insert_col_float%28_,_,_,_,_%29.md)
   Inserts a list of scalar entries into a single column of a single-precision sparse matrix.
-- [func sparse_insert_row_double(sparse_matrix_double!, sparse_index, sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_insert_row_double(_:_:_:_:_:).md)
+- [func sparse_insert_row_double(sparse_matrix_double!, sparse_index, sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!) -> sparse_status](./sparse_insert_row_double%28_,_,_,_,_%29.md)
   Inserts a list of scalar entries into a single row of a double-precision sparse matrix.
-- [func sparse_insert_row_float(sparse_matrix_float!, sparse_index, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_insert_row_float(_:_:_:_:_:).md)
+- [func sparse_insert_row_float(sparse_matrix_float!, sparse_index, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!) -> sparse_status](./sparse_insert_row_float%28_,_,_,_,_%29.md)
   Inserts a list of scalar entries into a single row of a single-precision sparse matrix.
 
 

@@ -1,7 +1,8 @@
 # write(to:options:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the configurations of the configuration catalog to a reality file.
 

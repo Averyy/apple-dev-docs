@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Display name for business.
 
@@ -16,9 +17,10 @@ let displayName: String
 
 ## See Also
 
-- [let nameType: RCSService.Business.OrganizationName.NameType](rcsservice/business/organizationname/nametype-swift.property.md)
+### Accessing organization name properties
+- [let nameType: RCSService.Business.OrganizationName.NameType](./nametype-swift.property.md)
   The type of the name.
-- [RCSService.Business.OrganizationName.NameType](rcsservice/business/organizationname/nametype-swift.enum.md)
+- [RCSService.Business.OrganizationName.NameType](./nametype-swift.enum.md)
   Enumeration representing the type of name specified by the business.
 
 

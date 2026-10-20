@@ -1,7 +1,8 @@
 # HKWorkoutSortIdentifierDuration
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for sorting workouts based on their duration.
 
@@ -19,11 +20,16 @@ A constant for sorting workouts based on their duration.
 let HKWorkoutSortIdentifierDuration: String
 ```
 
+```c
+extern NSString * const HKWorkoutSortIdentifierDuration;
+```
+
 ## See Also
 
-- [let HKWorkoutSortIdentifierTotalDistance: String](hkworkoutsortidentifiertotaldistance.md)
+### Specifying sort identifiers
+- [let HKWorkoutSortIdentifierTotalDistance: String](./hkworkoutsortidentifiertotaldistance.md)
   A constant for sorting workouts based on their total distance.
-- [let HKWorkoutSortIdentifierTotalEnergyBurned: String](hkworkoutsortidentifiertotalenergyburned.md)
+- [let HKWorkoutSortIdentifierTotalEnergyBurned: String](./hkworkoutsortidentifiertotalenergyburned.md)
   A constant for sorting workouts based on the total energy burned.
 
 

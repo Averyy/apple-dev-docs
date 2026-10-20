@@ -1,7 +1,8 @@
 # accessoryView
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that is placed to the left of the search field.
 
@@ -13,6 +14,10 @@ The view that is placed to the left of the search field.
 ```swift
 @IBOutlet
 var accessoryView: NSView! { get set }
+```
+
+```objc
+@property (nonatomic, retain) NSView * accessoryView;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # IntentFile.IntentFileError
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,18 +22,18 @@ enum IntentFileError
 ## Topics
 
 ### Enumeration Cases
-- [IntentFile.IntentFileError.failedToLoadData](intentfile/intentfileerror/failedtoloaddata.md)
-- [IntentFile.IntentFileError.failedToLoadFile](intentfile/intentfileerror/failedtoloadfile.md)
+- [IntentFile.IntentFileError.failedToLoadData](./intentfileerror/failedtoloaddata.md)
+- [IntentFile.IntentFileError.failedToLoadFile](./intentfileerror/failedtoloadfile.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../../Foundation/customnserror.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # urlSession(_:task:didCompleteWithError:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the task finished transferring data.
 
@@ -20,16 +21,20 @@ Tells the delegate that the task finished transferring data.
 optional func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: (any Error)?)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task didCompleteWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
-- [Downloading files from websites](downloading-files-from-websites.md)
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
-- [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
+- [Pausing and resuming downloads](../pausing-and-resuming-downloads.md)
+- [Downloading files from websites](../downloading-files-from-websites.md)
+- [Fetching website data into memory](../fetching-website-data-into-memory.md)
+- [Pausing and resuming uploads](../pausing-and-resuming-uploads.md)
 
 #### Discussion
 
-The only errors your delegate receives through the `error` parameter are client-side errors, such as being unable to resolve the hostname or connect to the host. To check for server-side errors, inspect the [`response`](urlsessiontask/response.md) property of the `task` parameter received by this callback.
+The only errors your delegate receives through the `error` parameter are client-side errors, such as being unable to resolve the hostname or connect to the host. To check for server-side errors, inspect the [`response`](../urlsessiontask/response.md) property of the `task` parameter received by this callback.
 
 ## Parameters
 

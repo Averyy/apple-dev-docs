@@ -1,7 +1,8 @@
 # NFCISO15693TagResponseErrorKey
 
 **Framework**: Core NFC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user information dictionary key indicating that a tag responded with a command error.
 
@@ -16,9 +17,13 @@ A user information dictionary key indicating that a tag responded with a command
 let NFCISO15693TagResponseErrorKey: String
 ```
 
+```c
+extern NSString * const NFCISO15693TagResponseErrorKey;
+```
+
 #### Discussion
 
-Check for the presence of this key in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary of an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object to determine whether a tag responded with a command error. When a command error occurs, the [`code`](https://developer.apple.com/documentation/foundation/nserror/code) property contains an error code defined in the ISO15693-3 specification.
+Check for the presence of this key in the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary of an [`NSError`](../Foundation/nserror.md) object to determine whether a tag responded with a command error. When a command error occurs, the [`code`](../Foundation/nserror/code.md) property contains an error code defined in the ISO15693-3 specification.
 
 
 ---

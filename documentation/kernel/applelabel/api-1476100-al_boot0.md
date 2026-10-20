@@ -1,14 +1,15 @@
 # al_boot0
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 uint8_t al_boot0[416];
 ```
 

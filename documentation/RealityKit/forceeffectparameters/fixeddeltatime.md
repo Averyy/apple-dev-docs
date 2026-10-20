@@ -1,7 +1,8 @@
 # fixedDeltaTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fixed delta time between simulation steps.
 

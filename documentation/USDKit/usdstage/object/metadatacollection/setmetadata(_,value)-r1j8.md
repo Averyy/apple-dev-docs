@@ -1,7 +1,8 @@
 # setMetadata(_:value:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the metadata value for the given key.
 

@@ -1,7 +1,8 @@
 # dataValue
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionary wrapped in a data value.
 

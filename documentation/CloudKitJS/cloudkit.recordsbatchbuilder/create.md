@@ -1,7 +1,8 @@
 # create
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates one or more records.
 
@@ -10,7 +11,7 @@ Creates one or more records.
 
 ## Declaration
 
-```swift
+```
 CloudKit.RecordsBatchBuilder create(
 	CloudKit.Record|CloudKit.Record[] records,
 	optional Object options
@@ -23,16 +24,17 @@ The object that received this method call.
 
 ## Parameters
 
-- `records`: A [`CloudKit.Record`](cloudkit.record.md) dictionary representing the record to create, if you are creating a single record. If you are creating multiple records, this parameter is an array of [`CloudKit.Record`](cloudkit.record.md) dictionaries representing the records to create. Only the values of the fields in the dictionaries are set.
+- `records`: A [`CloudKit.Record`](../cloudkit.record.md) dictionary representing the record to create, if you are creating a single record. If you are creating multiple records, this parameter is an array of [`CloudKit.Record`](../cloudkit.record.md) dictionaries representing the records to create. Only the values of the fields in the dictionaries are set.
 - `options`: A dictionary containing options for this operation. This parameter contains a single `desiredKeys` key that is an array of field names (`String` values). Only the fields specified in the array are set.
 
 ## See Also
 
-- [createOrUpdate](cloudkit.recordsbatchbuilder/createorupdate.md)
+### Creating and Updating Records
+- [createOrUpdate](./createorupdate.md)
   Creates or updates one or more records depending on the information provided.
-- [update](cloudkit.recordsbatchbuilder/update.md)
+- [update](./update.md)
   Updates one or more existing records.
-- [forceUpdate](cloudkit.recordsbatchbuilder/forceupdate.md)
+- [forceUpdate](./forceupdate.md)
   Updates one or more existing records regardless of conflicts.
 
 

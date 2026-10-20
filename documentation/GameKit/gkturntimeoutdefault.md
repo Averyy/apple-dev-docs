@@ -1,7 +1,8 @@
 # GKTurnTimeoutDefault
 
 **Framework**: GameKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A one-week time limit to take a turn.
 
@@ -20,9 +21,14 @@ A one-week time limit to take a turn.
 var GKTurnTimeoutDefault: TimeInterval
 ```
 
+```c
+extern NSTimeInterval GKTurnTimeoutDefault;
+```
+
 ## See Also
 
-- [var GKTurnTimeoutNone: TimeInterval](gkturntimeoutnone.md)
+### Timeouts
+- [var GKTurnTimeoutNone: TimeInterval](./gkturntimeoutnone.md)
   No timeout to take a turn.
 
 

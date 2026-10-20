@@ -1,7 +1,8 @@
 # UIApplication.CategoryDefaultError.Code
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of reasons an error happens when the system discovers whether your app is the default in a category.
 
@@ -16,29 +17,34 @@ An enumeration of reasons an error happens when the system discovers whether you
 enum Code
 ```
 
+```c
+enum UIApplicationCategoryDefaultErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [UIApplication.CategoryDefaultError.Code.rateLimited](uiapplication/categorydefaulterror/code/ratelimited.md)
+- [UIApplication.CategoryDefaultError.Code.rateLimited](./code/ratelimited.md)
   The system didn’t determine if your app is the default in a category because the app made the request too many times.
 ### Initializers
-- [init?(rawValue: Int)](uiapplication/categorydefaulterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let retryAvailableDateErrorKey: String](uiapplication/categorydefaulterror/retryavailabledateerrorkey.md)
+### Getting information about the error
+- [static let retryAvailableDateErrorKey: String](./retryavailabledateerrorkey.md)
   A dictionary key, with a value that’s a date when a result is next available.
-- [static let statusLastProvidedDateErrorKey: String](uiapplication/categorydefaulterror/statuslastprovideddateerrorkey.md)
+- [static let statusLastProvidedDateErrorKey: String](./statuslastprovideddateerrorkey.md)
   A dictionary key, with a value that’s the date your app last received a successful result.
 
 

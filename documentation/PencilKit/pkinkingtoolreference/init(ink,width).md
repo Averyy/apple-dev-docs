@@ -1,7 +1,8 @@
 # init(ink:width:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an inking tool with the specified ink and width.
 
@@ -18,16 +19,21 @@ Create an inking tool with the specified ink and width.
 convenience init(ink: PKInk, width: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithInk:(PKInk *) ink width:(CGFloat) width;
+```
+
 ## Parameters
 
-- `ink`: The shape of the tool. You may specify [`PKInkTypeMarker`](pkinktypemarker.md), [`PKInkTypePen`](pkinktypepen.md), or [`PKInkTypePencil`](pkinktypepencil.md).
+- `ink`: The shape of the tool. You may specify [`PKInkTypeMarker`](../pkinktypemarker.md), [`PKInkTypePen`](../pkinktypepen.md), or [`PKInkTypePencil`](../pkinktypepencil.md).
 - `width`: The width of a line drawn with the tool.
 
 ## See Also
 
-- [init(inkType: __PKInkType, color: UIColor, width: CGFloat)](pkinkingtoolreference/init(inktype:color:width:).md)
+### Creating an inking tool
+- [init(inkType: __PKInkType, color: UIColor, width: CGFloat)](./init%28inktype,color,width%29.md)
   Creates an ink tool object with the specified color and line width values.
-- [convenience init(inkType: __PKInkType, color: UIColor)](pkinkingtoolreference/init(inktype:color:).md)
+- [convenience init(inkType: __PKInkType, color: UIColor)](./init%28inktype,color%29.md)
   Creates an ink tool object with the default line width and the specified color.
 
 

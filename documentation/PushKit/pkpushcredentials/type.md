@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The push type constant associated with the token.
 
@@ -19,13 +20,18 @@ The push type constant associated with the token.
 var type: PKPushType { get }
 ```
 
+```objc
+@property (copy, readonly) PKPushType type;
+```
+
 #### Discussion
 
-For possible values, see [`PKPushType`](pkpushtype.md).
+For possible values, see [`PKPushType`](../pkpushtype.md).
 
 ## See Also
 
-- [var token: Data](pkpushcredentials/token.md)
+### Getting the Token
+- [var token: Data](./token.md)
   A unique device token to use when sending push notifications to the current device.
 
 

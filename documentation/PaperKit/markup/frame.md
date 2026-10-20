@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The element’s unrotated frame.
@@ -25,11 +26,12 @@ Together with `rotation` this defines the element’s position in its parent. Th
 
 ## See Also
 
-- [var rotation: CGFloat](markup/rotation.md)
+### Laying out
+- [var rotation: CGFloat](./rotation.md)
   The element’s rotation around the center of its frame.
-- [var renderFrame: CGRect](markup/renderframe.md)
+- [var renderFrame: CGRect](./renderframe.md)
   The unrotated frame that tightly fits the rendered contents of the element.
-- [func applyTransform(CGAffineTransform)](markup/applytransform(_:).md)
+- [func applyTransform(CGAffineTransform)](./applytransform%28_%29.md)
   Transforms this element with the specified transform.
 
 

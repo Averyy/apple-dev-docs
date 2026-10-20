@@ -1,7 +1,8 @@
 # MTRXPCClientProtocol_MTRDeviceController
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.2+
@@ -18,17 +19,21 @@
 protocol MTRXPCClientProtocol_MTRDeviceController : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRXPCClientProtocol_MTRDeviceController <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func controller(UUID, controllerConfigurationUpdated: [AnyHashable : Any])](mtrxpcclientprotocol_mtrdevicecontroller/controller(_:controllerconfigurationupdated:).md)
+- [func controller(UUID, controllerConfigurationUpdated: [AnyHashable : Any])](./mtrxpcclientprotocol_mtrdevicecontroller/controller%28_,controllerconfigurationupdated%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MTRXPCClientProtocol](mtrxpcclientprotocol.md)
+- [MTRXPCClientProtocol](./mtrxpcclientprotocol.md)
 
 
 ---

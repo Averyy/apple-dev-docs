@@ -1,21 +1,26 @@
 # init(bytesNoCopy:length:deallocator:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tensor data instance with a data buffer, byte length, and custom deallocator closure you specify.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.4
+- iPadOS 14.5+ - Deprecated in 17.4
+- Mac Catalyst 14.5+ - Deprecated in 17.4
+- macOS 11.3+ - Deprecated in 14.3
+- tvOS 14.5+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, deallocator: @escaping (UnsafeMutableRawPointer, Int) -> Void)
+```
+
+```objc
++ (instancetype) dataWithBytesNoCopy:(void *) bytes length:(NSUInteger) length deallocator:(void (^)(void *bytes, NSUInteger length)) deallocator;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ A new `MLCTensorData` instance.
 
 ## See Also
 
-- [convenience init(bytesNoCopy: UnsafeMutableRawPointer, length: Int)](mlctensordata/init(bytesnocopy:length:).md)
+### Creating Tensor Data
+- [convenience init(bytesNoCopy: UnsafeMutableRawPointer, length: Int)](./init%28bytesnocopy,length%29.md)
   Creates a tensor data instance with the buffer of data and length of bytes you specify.
-- [convenience init(immutableBytesNoCopy: UnsafeRawPointer, length: Int)](mlctensordata/init(immutablebytesnocopy:length:).md)
+- [convenience init(immutableBytesNoCopy: UnsafeRawPointer, length: Int)](./init%28immutablebytesnocopy,length%29.md)
   Creates a tensor data instance with the buffer of immutable data and length of bytes you specify.
 
 

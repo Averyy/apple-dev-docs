@@ -1,13 +1,15 @@
 # Item list
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A list of metadata values and related keys.
 
 ## See Also
 
-- [Type](metadata_item_list_atom/type.md)
+### Data fields
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

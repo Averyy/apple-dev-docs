@@ -1,7 +1,8 @@
 # movieTypes()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the file types that a movie supports.
 
@@ -17,6 +18,10 @@ Returns the file types that a movie supports.
 
 ```swift
 class func movieTypes() -> [AVFileType]
+```
+
+```objc
++ (NSArray<NSString *> *) movieTypes;
 ```
 
 #### Return Value

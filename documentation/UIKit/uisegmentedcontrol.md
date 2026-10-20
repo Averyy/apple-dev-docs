@@ -1,7 +1,8 @@
 # UISegmentedControl
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A horizontal control that consists of multiple segments, each segment functioning as a discrete button.
 
@@ -9,7 +10,7 @@ A horizontal control that consists of multiple segments, each segment functionin
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,16 +20,20 @@ A horizontal control that consists of multiple segments, each segment functionin
 class UISegmentedControl
 ```
 
+```objc
+@interface UISegmentedControl : UIControl
+```
+
 ## Mentions
 
-- [About app development with UIKit](about-app-development-with-uikit.md)
-- [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
+- [About app development with UIKit](./about-app-development-with-uikit.md)
+- [Attaching gesture recognizers to UIKit controls](./attaching-gesture-recognizers-to-uikit-controls.md)
 
 #### Overview
 
-A segmented control can display a title (an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object) or an image ([`UIImage`](uiimage.md) object). The [`UISegmentedControl`](uisegmentedcontrol.md) object automatically resizes segments to fit proportionally within their superview unless they have a specific width set. When you add and remove segments, you can request that the action be animated with sliding and fading effects.
+A segmented control can display a title (an [`NSString`](../Foundation/nsstring.md) object) or an image ([`UIImage`](./uiimage.md) object). The [`UISegmentedControl`](./uisegmentedcontrol.md) object automatically resizes segments to fit proportionally within their superview unless they have a specific width set. When you add and remove segments, you can request that the action be animated with sliding and fading effects.
 
-You register the target-action methods for a segmented control using the [`valueChanged`](uicontrol/event/valuechanged.md) constant as shown below.
+You register the target-action methods for a segmented control using the [`valueChanged`](./uicontrol/event/valuechanged.md) constant as shown below.
 
 **Swift**:
 
@@ -49,15 +54,15 @@ How you configure a segmented control can affect its display behavior:
 - If you set a segmented control to have a momentary style, a segment doesn’t show itself as selected (blue background) when the user touches it. The disclosure button is always momentary and doesn’t affect the actual selection.
 - In versions of iOS prior to 3.0, if a segmented control has only two segments, then it behaves like a switch — tapping the currently-selected segment causes the other segment to be selected. In iOS 3.0 and later, tapping the currently-selected segment doesn’t cause the other segment to be selected.
 
-##### Customize Appearance
+##### Customize appearance
 
-You can customize the appearance of segmented controls using the methods listed in [`Customizing appearance`](uisegmentedcontrol#Customizing-appearance.md). You can customize the appearance of all segmented controls using the appearance proxy (for example, `[UISegmentedControl appearance]`), or just of a single control.
+You can customize the appearance of segmented controls using the methods listed in [Customizing appearance](./uisegmentedcontrol.md#Customizing-appearance). You can customize the appearance of all segmented controls using the appearance proxy (for example, `[UISegmentedControl appearance]`), or just of a single control.
 
-When customizing appearance, in general, you should specify a value for the normal state of a property to be used by other states which don’t have a custom value set. Similarly, when a property is dependent on the bar metrics (on the iPhone in landscape orientation, bars have a different height from standard), you should make sure you specify a value for [`UIBarMetrics.default`](uibarmetrics/default.md).
+When customizing appearance, in general, you should specify a value for the normal state of a property to be used by other states which don’t have a custom value set. Similarly, when a property is dependent on the bar metrics (on the iPhone in landscape orientation, bars have a different height from standard), you should make sure you specify a value for [`UIBarMetrics.default`](./uibarmetrics/default.md).
 
-In the case of the segmented control, appearance properties for [`landscapePhone`](uibarmetrics/landscapephone.md) are only respected for segmented controls in the smaller navigation and toolbars that are used in landscape orientation on the iPhone.
+In the case of the segmented control, appearance properties for [`landscapePhone`](./uibarmetrics/landscapephone.md) are only respected for segmented controls in the smaller navigation and toolbars that are used in landscape orientation on the iPhone.
 
-To provide complete customization, you need to provide divider images for different state combinations, using [`setDividerImage(_:forLeftSegmentState:rightSegmentState:barMetrics:)`](uisegmentedcontrol/setdividerimage(_:forleftsegmentstate:rightsegmentstate:barmetrics:).md):
+To provide complete customization, you need to provide divider images for different state combinations, using [`setDividerImage(_:forLeftSegmentState:rightSegmentState:barMetrics:)`](./uisegmentedcontrol/setdividerimage%28_,forleftsegmentstate,rightsegmentstate,barmetrics%29.md):
 
 **Swift**:
 
@@ -92,144 +97,145 @@ mySegmentedControl.setDividerImage(myImage, forLeftSegmentState: UIControlState.
 ## Topics
 
 ### Creating a segmented control
-- [init(items: [Any]?)](uisegmentedcontrol/init(items:).md)
+- [init(items: [Any]?)](./uisegmentedcontrol/init%28items%29.md)
   Creates a segmented control with segments having the given titles or images.
-- [convenience init(frame: CGRect, actions: [UIAction])](uisegmentedcontrol/init(frame:actions:).md)
+- [convenience init(frame: CGRect, actions: [UIAction])](./uisegmentedcontrol/init%28frame,actions%29.md)
   Creates a segmented control with the given frame and adds segments for the actions you specify.
-- [init(frame: CGRect)](uisegmentedcontrol/init(frame:).md)
+- [init(frame: CGRect)](./uisegmentedcontrol/init%28frame%29.md)
   Creates an empty segmented control with the frame you specify.
-- [init?(coder: NSCoder)](uisegmentedcontrol/init(coder:).md)
+- [init?(coder: NSCoder)](./uisegmentedcontrol/init%28coder%29.md)
   Creates a segmented control with data from an unarchiver.
 ### Managing segment content
-- [func setImage(UIImage?, forSegmentAt: Int)](uisegmentedcontrol/setimage(_:forsegmentat:).md)
+- [func setImage(UIImage?, forSegmentAt: Int)](./uisegmentedcontrol/setimage%28_,forsegmentat%29.md)
   Sets the content of a segment to a given image.
-- [func imageForSegment(at: Int) -> UIImage?](uisegmentedcontrol/imageforsegment(at:).md)
+- [func imageForSegment(at: Int) -> UIImage?](./uisegmentedcontrol/imageforsegment%28at%29.md)
   Returns the image for a specific segment.
-- [func setTitle(String?, forSegmentAt: Int)](uisegmentedcontrol/settitle(_:forsegmentat:).md)
+- [func setTitle(String?, forSegmentAt: Int)](./uisegmentedcontrol/settitle%28_,forsegmentat%29.md)
   Sets the title of a segment.
-- [func titleForSegment(at: Int) -> String?](uisegmentedcontrol/titleforsegment(at:).md)
+- [func titleForSegment(at: Int) -> String?](./uisegmentedcontrol/titleforsegment%28at%29.md)
   Returns the title of the specified segment.
 ### Managing segment actions
-- [func actionForSegment(at: Int) -> UIAction?](uisegmentedcontrol/actionforsegment(at:).md)
+- [func actionForSegment(at: Int) -> UIAction?](./uisegmentedcontrol/actionforsegment%28at%29.md)
   Fetches the action of the segment at the index you specify, if one exists.
-- [func setAction(UIAction, forSegmentAt: Int)](uisegmentedcontrol/setaction(_:forsegmentat:).md)
+- [func setAction(UIAction, forSegmentAt: Int)](./uisegmentedcontrol/setaction%28_,forsegmentat%29.md)
   Sets the action for the segment at the index you specify.
 ### Managing segments
-- [var numberOfSegments: Int](uisegmentedcontrol/numberofsegments.md)
+- [var numberOfSegments: Int](./uisegmentedcontrol/numberofsegments.md)
   Returns the number of segments the segmented control has.
-- [func segmentIndex(identifiedBy: UIAction.Identifier) -> Int](uisegmentedcontrol/segmentindex(identifiedby:).md)
+- [func segmentIndex(identifiedBy: UIAction.Identifier) -> Int](./uisegmentedcontrol/segmentindex%28identifiedby%29.md)
   The index of a segment with an action that has an identifier matching the identifier you specify.
-- [func insertSegment(action: UIAction, at: Int, animated: Bool)](uisegmentedcontrol/insertsegment(action:at:animated:).md)
+- [func insertSegment(action: UIAction, at: Int, animated: Bool)](./uisegmentedcontrol/insertsegment%28action,at,animated%29.md)
   Insert a segment with the action you specify at the given index.
-- [func insertSegment(with: UIImage?, at: Int, animated: Bool)](uisegmentedcontrol/insertsegment(with:at:animated:).md)
+- [func insertSegment(with: UIImage?, at: Int, animated: Bool)](./uisegmentedcontrol/insertsegment%28with,at,animated%29.md)
   Inserts a segment at the position you specify and gives it an image as content.
-- [func insertSegment(withTitle: String?, at: Int, animated: Bool)](uisegmentedcontrol/insertsegment(withtitle:at:animated:).md)
+- [func insertSegment(withTitle: String?, at: Int, animated: Bool)](./uisegmentedcontrol/insertsegment%28withtitle,at,animated%29.md)
   Inserts a segment at the position you specify and gives it a title as content.
-- [func removeAllSegments()](uisegmentedcontrol/removeallsegments.md)
+- [func removeAllSegments()](./uisegmentedcontrol/removeallsegments%28%29.md)
   Removes all segments of the segmented control.
-- [func removeSegment(at: Int, animated: Bool)](uisegmentedcontrol/removesegment(at:animated:).md)
+- [func removeSegment(at: Int, animated: Bool)](./uisegmentedcontrol/removesegment%28at,animated%29.md)
   Removes the segment you specify from the segmented control, optionally animating the transition.
-- [var selectedSegmentIndex: Int](uisegmentedcontrol/selectedsegmentindex.md)
+- [var selectedSegmentIndex: Int](./uisegmentedcontrol/selectedsegmentindex.md)
   The index number that identifies the selected segment that the user last touched.
-- [class var noSegment: Int](uisegmentedcontrol/nosegment.md)
+- [class var noSegment: Int](./uisegmentedcontrol/nosegment.md)
   A segment index value indicating that there’s no selected segment.
 ### Managing segment behavior and appearance
-- [var isMomentary: Bool](uisegmentedcontrol/ismomentary.md)
+- [var isMomentary: Bool](./uisegmentedcontrol/ismomentary.md)
   A Boolean value that determines whether segments in the segmented control show selected state.
-- [func setEnabled(Bool, forSegmentAt: Int)](uisegmentedcontrol/setenabled(_:forsegmentat:).md)
+- [func setEnabled(Bool, forSegmentAt: Int)](./uisegmentedcontrol/setenabled%28_,forsegmentat%29.md)
   Enables the segment you specify.
-- [func isEnabledForSegment(at: Int) -> Bool](uisegmentedcontrol/isenabledforsegment(at:).md)
+- [func isEnabledForSegment(at: Int) -> Bool](./uisegmentedcontrol/isenabledforsegment%28at%29.md)
   Returns whether the indicated segment is enabled.
-- [func setContentOffset(CGSize, forSegmentAt: Int)](uisegmentedcontrol/setcontentoffset(_:forsegmentat:).md)
+- [func setContentOffset(CGSize, forSegmentAt: Int)](./uisegmentedcontrol/setcontentoffset%28_,forsegmentat%29.md)
   Adjusts the offset for drawing the content (image or text) of the specified segment.
-- [func contentOffsetForSegment(at: Int) -> CGSize](uisegmentedcontrol/contentoffsetforsegment(at:).md)
+- [func contentOffsetForSegment(at: Int) -> CGSize](./uisegmentedcontrol/contentoffsetforsegment%28at%29.md)
   Returns the offset for drawing the content (image or text) of the segment you specify.
-- [func setWidth(CGFloat, forSegmentAt: Int)](uisegmentedcontrol/setwidth(_:forsegmentat:).md)
+- [func setWidth(CGFloat, forSegmentAt: Int)](./uisegmentedcontrol/setwidth%28_,forsegmentat%29.md)
   Sets the width of the segment at the index you specify.
-- [func widthForSegment(at: Int) -> CGFloat](uisegmentedcontrol/widthforsegment(at:).md)
+- [func widthForSegment(at: Int) -> CGFloat](./uisegmentedcontrol/widthforsegment%28at%29.md)
   Returns the width of the segment at the index you specify.
-- [var apportionsSegmentWidthsByContent: Bool](uisegmentedcontrol/apportionssegmentwidthsbycontent.md)
+- [var apportionsSegmentWidthsByContent: Bool](./uisegmentedcontrol/apportionssegmentwidthsbycontent.md)
   Indicates whether the control attempts to adjust segment widths based on their content widths.
 ### Customizing appearance
-- [var selectedSegmentTintColor: UIColor?](uisegmentedcontrol/selectedsegmenttintcolor.md)
+- [var selectedSegmentTintColor: UIColor?](./uisegmentedcontrol/selectedsegmenttintcolor.md)
   The color to use for highlighting the currently selected segment.
-- [func backgroundImage(for: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](uisegmentedcontrol/backgroundimage(for:barmetrics:).md)
+- [func backgroundImage(for: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](./uisegmentedcontrol/backgroundimage%28for,barmetrics%29.md)
   Returns the background image for a given state and bar metrics.
-- [func setBackgroundImage(UIImage?, for: UIControl.State, barMetrics: UIBarMetrics)](uisegmentedcontrol/setbackgroundimage(_:for:barmetrics:).md)
+- [func setBackgroundImage(UIImage?, for: UIControl.State, barMetrics: UIBarMetrics)](./uisegmentedcontrol/setbackgroundimage%28_,for,barmetrics%29.md)
   Sets the background image for given state and bar metrics.
-- [func contentPositionAdjustment(forSegmentType: UISegmentedControl.Segment, barMetrics: UIBarMetrics) -> UIOffset](uisegmentedcontrol/contentpositionadjustment(forsegmenttype:barmetrics:).md)
+- [func contentPositionAdjustment(forSegmentType: UISegmentedControl.Segment, barMetrics: UIBarMetrics) -> UIOffset](./uisegmentedcontrol/contentpositionadjustment%28forsegmenttype,barmetrics%29.md)
   Returns the positioning offset for a given segment and bar metrics.
-- [func setContentPositionAdjustment(UIOffset, forSegmentType: UISegmentedControl.Segment, barMetrics: UIBarMetrics)](uisegmentedcontrol/setcontentpositionadjustment(_:forsegmenttype:barmetrics:).md)
+- [func setContentPositionAdjustment(UIOffset, forSegmentType: UISegmentedControl.Segment, barMetrics: UIBarMetrics)](./uisegmentedcontrol/setcontentpositionadjustment%28_,forsegmenttype,barmetrics%29.md)
   Sets the content positioning offset for a given segment and bar metrics.
-- [UISegmentedControl.Segment](uisegmentedcontrol/segment.md)
+- [UISegmentedControl.Segment](./uisegmentedcontrol/segment.md)
   Constants for specifying a segment in a control.
-- [func dividerImage(forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](uisegmentedcontrol/dividerimage(forleftsegmentstate:rightsegmentstate:barmetrics:).md)
+- [func dividerImage(forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](./uisegmentedcontrol/dividerimage%28forleftsegmentstate,rightsegmentstate,barmetrics%29.md)
   Returns the divider image used for a given combination of left and right segment states and bar metrics.
-- [func setDividerImage(UIImage?, forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State, barMetrics: UIBarMetrics)](uisegmentedcontrol/setdividerimage(_:forleftsegmentstate:rightsegmentstate:barmetrics:).md)
+- [func setDividerImage(UIImage?, forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State, barMetrics: UIBarMetrics)](./uisegmentedcontrol/setdividerimage%28_,forleftsegmentstate,rightsegmentstate,barmetrics%29.md)
   Sets the divider image to use for a given combination of left and right segment states and bar metrics.
-- [func titleTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](uisegmentedcontrol/titletextattributes(for:).md)
+- [func titleTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](./uisegmentedcontrol/titletextattributes%28for%29.md)
   Returns the text attributes of the title for a given control state.
-- [func setTitleTextAttributes([NSAttributedString.Key : Any]?, for: UIControl.State)](uisegmentedcontrol/settitletextattributes(_:for:).md)
+- [func setTitleTextAttributes([NSAttributedString.Key : Any]?, for: UIControl.State)](./uisegmentedcontrol/settitletextattributes%28_,for%29.md)
   Sets the text attributes of the title for a given control state.
 
 ## Relationships
 
 ### Inherits From
-- [UIControl](uicontrol.md)
+- [UIControl](./uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](uiappearance.md)
-- [UIAppearanceContainer](uiappearancecontainer.md)
-- [UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
-- [UICoordinateSpace](uicoordinatespace.md)
-- [UIDynamicItem](uidynamicitem.md)
-- [UIFocusEnvironment](uifocusenvironment.md)
-- [UIFocusItem](uifocusitem.md)
-- [UIFocusItemContainer](uifocusitemcontainer.md)
-- [UILargeContentViewerItem](uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UISpringLoadedInteractionSupporting](uispringloadedinteractionsupporting.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](./uiappearance.md)
+- [UIAppearanceContainer](./uiappearancecontainer.md)
+- [UIContextMenuInteractionDelegate](./uicontextmenuinteractiondelegate.md)
+- [UICoordinateSpace](./uicoordinatespace.md)
+- [UIDynamicItem](./uidynamicitem.md)
+- [UIFocusEnvironment](./uifocusenvironment.md)
+- [UIFocusItem](./uifocusitem.md)
+- [UIFocusItemContainer](./uifocusitemcontainer.md)
+- [UILargeContentViewerItem](./uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](./uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UISpringLoadedInteractionSupporting](./uispringloadedinteractionsupporting.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Responding to control-based events using target-action](responding-to-control-based-events-using-target-action.md)
+### Controls
+- [Responding to control-based events using target-action](./responding-to-control-based-events-using-target-action.md)
   Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
-- [class UIControl](uicontrol.md)
+- [class UIControl](./uicontrol.md)
   The base class for controls, which are visual elements that convey a specific action or intention in response to user interactions.
-- [class UIButton](uibutton.md)
+- [class UIButton](./uibutton.md)
   A control that executes your custom code in response to user interactions.
-- [class UIColorWell](uicolorwell.md)
+- [class UIColorWell](./uicolorwell.md)
   A control that displays a color picker.
-- [class UIDatePicker](uidatepicker.md)
+- [class UIDatePicker](./uidatepicker.md)
   A control for inputting date and time values.
-- [class UIPageControl](uipagecontrol.md)
+- [class UIPageControl](./uipagecontrol.md)
   A control that displays a horizontal series of dots, each of which corresponds to a page in the app’s document or other data-model entity.
-- [class UISlider](uislider.md)
+- [class UISlider](./uislider.md)
   A control for selecting a single value from a continuous range of values.
-- [class UIStepper](uistepper.md)
+- [class UIStepper](./uistepper.md)
   A control for incrementing or decrementing a value.
-- [class UISwitch](uiswitch.md)
+- [class UISwitch](./uiswitch.md)
   A control that offers a binary choice, such as on/off.
 
 

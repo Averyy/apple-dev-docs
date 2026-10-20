@@ -1,7 +1,8 @@
 # init(rootView:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hosting menu object that wraps the specified SwiftUI view.
 

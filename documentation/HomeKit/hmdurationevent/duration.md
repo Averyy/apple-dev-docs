@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event’s duration, in seconds.
 
@@ -17,6 +18,10 @@ The event’s duration, in seconds.
 
 ```swift
 var duration: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval duration;
 ```
 
 

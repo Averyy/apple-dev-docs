@@ -1,7 +1,8 @@
 # readAttributeDeviceTypeList(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeDeviceTypeList(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeDeviceTypeListWithParams:(MTRReadParams *) params;
 ```
 
 

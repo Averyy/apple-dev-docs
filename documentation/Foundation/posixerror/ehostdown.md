@@ -1,7 +1,8 @@
 # EHOSTDOWN
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Host is down.
 

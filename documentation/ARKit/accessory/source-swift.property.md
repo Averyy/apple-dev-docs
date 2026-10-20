@@ -1,7 +1,8 @@
 # source
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input source used to create this accessory.
 

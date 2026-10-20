@@ -1,7 +1,8 @@
 # AudioQueueAllocateBufferWithPacketDescriptions(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asks an audio queue object to allocate an audio queue buffer with space for packet descriptions.
 
@@ -17,6 +18,10 @@ Asks an audio queue object to allocate an audio queue buffer with space for pack
 
 ```swift
 func AudioQueueAllocateBufferWithPacketDescriptions(_ inAQ: AudioQueueRef, _ inBufferByteSize: UInt32, _ inNumberPacketDescriptions: UInt32, _ outBuffer: UnsafeMutablePointer<AudioQueueBufferRef?>) -> OSStatus
+```
+
+```c
+extern OSStatus AudioQueueAllocateBufferWithPacketDescriptions(AudioQueueRef inAQ, UInt32 inBufferByteSize, UInt32 inNumberPacketDescriptions, AudioQueueBufferRef*outBuffer);
 ```
 
 #### Return Value
@@ -38,13 +43,14 @@ Once allocated, the pointer to the audio queue buffer and the buffer’s capacit
 
 ## See Also
 
-- [func AudioQueueAllocateBuffer(AudioQueueRef, UInt32, UnsafeMutablePointer<AudioQueueBufferRef?>) -> OSStatus](audioqueueallocatebuffer(_:_:_:).md)
+### Handling Audio Queue Buffers
+- [func AudioQueueAllocateBuffer(AudioQueueRef, UInt32, UnsafeMutablePointer<AudioQueueBufferRef?>) -> OSStatus](./audioqueueallocatebuffer%28_,_,_%29.md)
   Asks an audio queue object to allocate an audio queue buffer.
-- [func AudioQueueFreeBuffer(AudioQueueRef, AudioQueueBufferRef) -> OSStatus](audioqueuefreebuffer(_:_:).md)
+- [func AudioQueueFreeBuffer(AudioQueueRef, AudioQueueBufferRef) -> OSStatus](./audioqueuefreebuffer%28_,_%29.md)
   Asks an audio queue to dispose of an audio queue buffer.
-- [func AudioQueueEnqueueBuffer(AudioQueueRef, AudioQueueBufferRef, UInt32, UnsafePointer<AudioStreamPacketDescription>?) -> OSStatus](audioqueueenqueuebuffer(_:_:_:_:).md)
+- [func AudioQueueEnqueueBuffer(AudioQueueRef, AudioQueueBufferRef, UInt32, UnsafePointer<AudioStreamPacketDescription>?) -> OSStatus](./audioqueueenqueuebuffer%28_,_,_,_%29.md)
   Adds a buffer to the buffer queue of a recording or playback audio queue.
-- [func AudioQueueEnqueueBufferWithParameters(AudioQueueRef, AudioQueueBufferRef, UInt32, UnsafePointer<AudioStreamPacketDescription>?, UInt32, UInt32, UInt32, UnsafePointer<AudioQueueParameterEvent>?, UnsafePointer<AudioTimeStamp>?, UnsafeMutablePointer<AudioTimeStamp>?) -> OSStatus](audioqueueenqueuebufferwithparameters(_:_:_:_:_:_:_:_:_:_:).md)
+- [func AudioQueueEnqueueBufferWithParameters(AudioQueueRef, AudioQueueBufferRef, UInt32, UnsafePointer<AudioStreamPacketDescription>?, UInt32, UInt32, UInt32, UnsafePointer<AudioQueueParameterEvent>?, UnsafePointer<AudioTimeStamp>?, UnsafeMutablePointer<AudioTimeStamp>?) -> OSStatus](./audioqueueenqueuebufferwithparameters%28_,_,_,_,_,_,_,_,_,_%29.md)
   Adds a buffer to the buffer queue of a playback audio queue object, specifying start time and other settings.
 
 

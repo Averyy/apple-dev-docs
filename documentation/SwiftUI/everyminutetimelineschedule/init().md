@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a per-minute update schedule.
 
@@ -22,7 +23,7 @@ init()
 
 #### Discussion
 
-Use the [`entries(from:mode:)`](everyminutetimelineschedule/entries(from:mode:).md) method to get the sequence of dates.
+Use the [`entries(from:mode:)`](./entries%28from,mode%29.md) method to get the sequence of dates.
 
 
 ---

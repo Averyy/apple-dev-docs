@@ -1,7 +1,8 @@
 # backgroundImageConstraint
 
 **Framework**: IOBluetooth UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -13,14 +14,19 @@
 unowned(unsafe) var backgroundImageConstraint: NSLayoutConstraint! { get set }
 ```
 
+```objc
+@property (assign) NSLayoutConstraint * backgroundImageConstraint;
+```
+
 ## See Also
 
-- [var centeredView: NSView!](iobluetoothpasskeydisplay/centeredview.md)
-- [var isIncomingRequest: Bool](iobluetoothpasskeydisplay/isincomingrequest-swift.property.md)
-- [var passkey: String!](iobluetoothpasskeydisplay/passkey-swift.property.md)
-- [var returnHighlightImage: NSImage!](iobluetoothpasskeydisplay/returnhighlightimage.md)
-- [var returnImage: NSImage!](iobluetoothpasskeydisplay/returnimage.md)
-- [var usePasskeyNotificaitons: Bool](iobluetoothpasskeydisplay/usepasskeynotificaitons.md)
+### Instance Properties
+- [var centeredView: NSView!](./centeredview.md)
+- [var isIncomingRequest: Bool](./isincomingrequest-swift.property.md)
+- [var passkey: String!](./passkey-swift.property.md)
+- [var returnHighlightImage: NSImage!](./returnhighlightimage.md)
+- [var returnImage: NSImage!](./returnimage.md)
+- [var usePasskeyNotificaitons: Bool](./usepasskeynotificaitons.md)
 
 
 ---

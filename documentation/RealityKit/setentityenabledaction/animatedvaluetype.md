@@ -1,7 +1,8 @@
 # animatedValueType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type for the value that the action modifies over time.
 

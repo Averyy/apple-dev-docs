@@ -1,7 +1,8 @@
 # init(contentsOf:named:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance of this type with the contents of the given URL.
 
@@ -15,11 +16,13 @@ Initialize an instance of this type with the contents of the given URL.
 init(contentsOf url: URL, named preferredName: String? = nil, sourceLocation: SourceLocation = #_sourceLocation) async throws
 ```
 
+Available when `AttachableValue` is `_AttachableURLWrapper`.
+
 #### Discussion
 
-> **Note**: Any error that occurs attempting to read from `url`.
+> **Throws**: Any error that occurs attempting to read from `url`.
 
-Use this initializer to create an instance of [`Attachment`](attachment.md) that represents a local file or directory:
+Use this initializer to create an instance of [`Attachment`](../attachment.md) that represents a local file or directory:
 
 ```swift
 let url = try await FoodTruck.saveMenu(as: .pdf)

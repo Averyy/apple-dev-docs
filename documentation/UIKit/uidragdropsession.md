@@ -1,7 +1,8 @@
 # UIDragDropSession
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common interface for querying the state of both drag sessions and drop sessions.
 
@@ -18,39 +19,44 @@ The common interface for querying the state of both drag sessions and drop sessi
 protocol UIDragDropSession : NSObjectProtocol
 ```
 
+```objc
+@protocol UIDragDropSession <NSObject>
+```
+
 ## Topics
 
 ### Checking for drag items
-- [func canLoadObjects(ofClass: any NSItemProviderReading.Type) -> Bool](uidragdropsession/canloadobjects(ofclass:).md)
+- [func canLoadObjects(ofClass: any NSItemProviderReading.Type) -> Bool](./uidragdropsession/canloadobjects%28ofclass%29.md)
   Returns a Boolean value that indicates whether at least one drag item in the session can create an instance of the specified class.
-- [func hasItemsConforming(toTypeIdentifiers: [String]) -> Bool](uidragdropsession/hasitemsconforming(totypeidentifiers:).md)
+- [func hasItemsConforming(toTypeIdentifiers: [String]) -> Bool](./uidragdropsession/hasitemsconforming%28totypeidentifiers%29.md)
   Returns a Boolean value that indicates whether at least one drag item in the session conforms to at least one of the specified UTIs.
-- [var items: [UIDragItem]](uidragdropsession/items.md)
+- [var items: [UIDragItem]](./uidragdropsession/items.md)
   An array of drag items in the drag session or drop session.
 ### Checking for drag and drop session restrictions
-- [var allowsMoveOperation: Bool](uidragdropsession/allowsmoveoperation.md)
+- [var allowsMoveOperation: Bool](./uidragdropsession/allowsmoveoperation.md)
   A Boolean value that indicates whether the drag session permits moving drag items within the same app.
-- [var isRestrictedToDraggingApplication: Bool](uidragdropsession/isrestrictedtodraggingapplication.md)
+- [var isRestrictedToDraggingApplication: Bool](./uidragdropsession/isrestrictedtodraggingapplication.md)
   A Boolean value that indicates whether the drag session is confined to the app that started the drag activity.
 ### Getting the location of a drag activity
-- [func location(in: UIView) -> CGPoint](uidragdropsession/location(in:).md)
+- [func location(in: UIView) -> CGPoint](./uidragdropsession/location%28in%29.md)
   Returns the geometrical location of the user’s drag activity within the specified view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [UIDragSession](uidragsession.md)
-- [UIDropSession](uidropsession.md)
+- [UIDragSession](./uidragsession.md)
+- [UIDropSession](./uidropsession.md)
 
 ## See Also
 
-- [class UIDragItem](uidragitem.md)
+### Drag sources
+- [class UIDragItem](./uidragitem.md)
   A representation of an underlying data item as a person drags it from one location to another.
-- [protocol UIDragSession](uidragsession.md)
+- [protocol UIDragSession](./uidragsession.md)
   The interface for configuring a drag session.
-- [protocol UIDragAnimating](uidraganimating.md)
+- [protocol UIDragAnimating](./uidraganimating.md)
   The interface for providing custom animation alongside the system’s lift, drop, and cancellation animations.
 
 

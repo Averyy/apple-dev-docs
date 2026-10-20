@@ -1,7 +1,8 @@
 # assetWriter(_:didOutputSegmentData:segmentType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the asset writer output segment data.
 
@@ -19,6 +20,10 @@ Tells the delegate that the asset writer output segment data.
 optional func assetWriter(_ writer: AVAssetWriter, didOutputSegmentData segmentData: Data, segmentType: AVAssetSegmentType)
 ```
 
+```objc
+- (void) assetWriter:(AVAssetWriter *) writer didOutputSegmentData:(NSData *) segmentData segmentType:(AVAssetSegmentType) segmentType;
+```
+
 ## Parameters
 
 - `writer`: The asset writer that output segment data.
@@ -27,9 +32,10 @@ optional func assetWriter(_ writer: AVAssetWriter, didOutputSegmentData segmentD
 
 ## See Also
 
-- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType, segmentReport: AVAssetSegmentReport?)](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:segmentreport:).md)
+### Responding to segment output
+- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType, segmentReport: AVAssetSegmentReport?)](./assetwriter%28_,didoutputsegmentdata,segmenttype,segmentreport%29.md)
   Tells the delegate that the asset writer output segment data and a report.
-- [class AVAssetSegmentReport](avassetsegmentreport.md)
+- [class AVAssetSegmentReport](../avassetsegmentreport.md)
   An object that provides information about segment data.
 
 

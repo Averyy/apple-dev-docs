@@ -1,7 +1,8 @@
 # PermissionButton
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button that presents a system UI to a parent or guardian to ask for an exception to a child’s communication limits.
 
@@ -22,25 +23,25 @@ A button that presents a system UI to a parent or guardian to ask for an excepti
 ## Topics
 
 ### Creating buttons
-- [init(question: PermissionQuestion<Topic>, label: () -> Label)](permissionbutton/init(question:label:)-25jfa.md)
+- [init(question: PermissionQuestion<Topic>, label: () -> Label)](./permissionbutton/init%28question,label%29-25jfa.md)
   Creates a button that requests permission from parents or guardians.
-- [init(question: PermissionQuestion<Topic>, label: () -> Label)](permissionbutton/init(question:label:)-8291n.md)
+- [init(question: PermissionQuestion<Topic>, label: () -> Label)](./permissionbutton/init%28question,label%29-8291n.md)
   Creates a button that requests permission from parents or guardians to continue using your app after a significant update.
 ### Accessing properties
-- [let question: PermissionQuestion<Topic>](permissionbutton/question.md)
+- [let question: PermissionQuestion<Topic>](./permissionbutton/question.md)
   The question to ask a parent or guardian about making an exception to their child’s communication limits.
-- [var body: some View](permissionbutton/body.md)
+- [var body: some View](./permissionbutton/body.md)
   The body of the view.
 ### Initializers
-- [init(question: PermissionQuestion<Topic>, permissionFlow: PermissionFlow, onPermissionResult: (Result<PermissionResult, any Error>) -> Void, label: () -> Label)](permissionbutton/init(question:permissionflow:onpermissionresult:label:).md)
+- [init(question: PermissionQuestion<Topic>, permissionFlow: PermissionFlow, onPermissionResult: (Result<PermissionResult, any Error>) -> Void, label: () -> Label)](./permissionbutton/init%28question,permissionflow,onpermissionresult,label%29.md)
   Creates a button that requests permission from parents or guardians, presenting a specific permission flow and reporting the outcome to a completion handler.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

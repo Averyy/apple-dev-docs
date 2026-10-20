@@ -1,7 +1,8 @@
 # v
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -12,12 +13,17 @@
 var v: (vUInt32, vUInt32) { get set }
 ```
 
+```c
+vUInt32 v[2];
+```
+
 ## See Also
 
-- [var s: vS256.__Unnamed_struct_s](vs256/s.md)
-- [var vs: vS256.__Unnamed_struct_vs](vs256/vs.md)
-- [var s: vS256.__Unnamed_struct_s](vs256/s.md)
-- [var vs: vS256.__Unnamed_struct_vs](vs256/vs.md)
+### Instance Properties
+- [var s: vS256.__Unnamed_struct_s](./s.md)
+- [var vs: vS256.__Unnamed_struct_vs](./vs.md)
+- [var s: vS256.__Unnamed_struct_s](./s.md)
+- [var vs: vS256.__Unnamed_struct_vs](./vs.md)
 
 
 ---

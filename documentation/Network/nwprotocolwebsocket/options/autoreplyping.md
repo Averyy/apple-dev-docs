@@ -1,7 +1,8 @@
 # autoReplyPing
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the connection automatically replies to Ping messages instead of delivering them to you.
 
@@ -22,11 +23,12 @@ var autoReplyPing: Bool { get set }
 
 ## See Also
 
-- [init(NWProtocolWebSocket.Version)](nwprotocolwebsocket/options/init(_:).md)
+### Configuring WebSocket Options
+- [init(NWProtocolWebSocket.Version)](./init%28_%29.md)
   Initializes a default set of WebSocket connection options.
-- [NWProtocolWebSocket.Version](nwprotocolwebsocket/version.md)
+- [NWProtocolWebSocket.Version](../version.md)
   Supported versions of the WebSocket protocol.
-- [var maximumMessageSize: Int](nwprotocolwebsocket/options/maximummessagesize.md)
+- [var maximumMessageSize: Int](./maximummessagesize.md)
   The maximum allowed message size, in bytes, to be received by the WebSocket connection.
 
 

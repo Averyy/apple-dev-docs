@@ -1,6 +1,7 @@
 # Writing ARM64 code for Apple platforms
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Create 64-bit ARM assembly language instructions that adhere to the application binary interface (ABI) that Apple platforms support.
 
@@ -8,16 +9,16 @@ Create 64-bit ARM assembly language instructions that adhere to the application 
 
 The ARM architecture defines rules for how to call functions, manage the stack, and perform other operations. If part of your code includes ARM assembly instructions, you must adhere to these rules in order for your code to interoperate correctly with compiler-generated code. Similarly, if you write a compiler, the machine instructions you generate must adhere to these rules. If you don’t adhere to them, your code may behave unexpectedly or even crash.
 
-Apple platforms diverge from the standard 64-bit ARM architecture in a few specific ways. Apart from these small differences, iOS, tvOS, and macOS adhere to the rest of the 64-bit ARM specification. For information about the ARM64 specification, including the Procedure Call Standard for the ARM 64-bit Architecture (AArch64), go to [`https://developer.arm.com`](https://developer.apple.comhttps://developer.arm.com).
+Apple platforms diverge from the standard 64-bit ARM architecture in a few specific ways. Apart from these small differences, iOS, tvOS, and macOS adhere to the rest of the 64-bit ARM specification. For information about the ARM64 specification, including the Procedure Call Standard for the ARM 64-bit Architecture (AArch64), go to [https://developer.arm.com](https://developer.arm.com).
 
-##### Respect the Purpose of Specific Cpu Registers
+##### Respect the purpose of specific CPU registers
 
 The ARM standard delegates certain decisions to platform designers. Apple platforms adhere to the following choices:
 
 - The platforms reserve register `x18`. Don’t use this register.
 - The frame pointer register (`x29`) must always address a valid frame record. Some functions — such as leaf functions or tail calls — may opt not to create an entry in this list. As a result, stack traces are always meaningful, even without debug information.
 
-##### Handle Data Types and Data Alignment Properly
+##### Handle data types and data alignment properly
 
 Some fundamental types of the C language have slightly different implementations:
 
@@ -44,13 +45,13 @@ The following table lists the integer data types, their sizes, and their natural
 | `fpos_t` | 8 | 8 |
 | `off_t` | 8 | 8 |
 
-##### Respect the Stacks Red Zone
+##### Respect the stack’s red zone
 
 The ARM64 red zone consists of the 128 bytes immediately below the stack pointer. Apple platforms don’t modify these bytes during exceptions. User-mode programs can rely on the bytes below the stack pointer to not change unexpectedly, and can potentially make use of the space for local variables.
 
 > **Note**: If a function calls itself, the caller must assume that the callee modifies the contents of its red zone. The caller must therefore create a proper stack frame.
 
-##### Pass Arguments to Functions Correctly
+##### Pass arguments to functions correctly
 
 The stack pointer on Apple platforms follows the ARM64 standard ABI and requires 16-byte alignment. When passing arguments to functions, Apple platforms diverge from the ARM64 standard ABI in the following ways:
 
@@ -71,7 +72,7 @@ The following example shows a function whose second argument requires 16-byte al
 void large_type(int x0, __int128 x1_x2) {} 
 ```
 
-##### Update Code That Passes Arguments to Variadic Functions
+##### Update code that passes arguments to variadic functions
 
 For functions that contain a variable number of parameters, Apple initializes the relevant registers (Stage A) and determines how to pad or extend arguments (Stage B) as usual. When it’s time to assign arguments to registers and stack slots, Apple platforms use the following rules for each variadic argument:
 
@@ -82,7 +83,7 @@ Because of these changes, the type `va_list` is an alias for `char*`, and not fo
 
 > **Note**: The C language requires the promotion of arguments smaller than int before a call. Beyond that, the Apple platforms ABI doesn’t add unused bytes to the stack.
 
-##### Handle C++ Differences
+##### Handle C++ differences
 
 The generic ARM64 C++ ABI mirrors the Itanium C++ ABI. Apple’s C++ ABI differs from this ABI in the following ways:
 
@@ -96,9 +97,9 @@ The generic ARM64 C++ ABI mirrors the Itanium C++ ABI. Apple’s C++ ABI differs
 
 For more information about the generic ARM64 C++ ABI, see “C++ Application Binary Interface Standard for the ARM 64-bit architecture” at developer.arm.com.
 
-##### Enable Dit for Constant Time Cryptographic Operations
+##### Enable DIT for constant-time cryptographic operations
 
-Certain instructions on ARM64, including but not limited to those described in [`Arm Architecture Registers for Future Architecture Technologies`](https://developer.apple.comhttps://developer.arm.com/documentation/ddi0601/2020-12/AArch64-Registers/DIT--Data-Independent-Timing), may take a different amount of time to run depending on the data values on which they operate. Malicious code running on the device might use this property to infer information about the data the CPU processes, such as cryptographic keys, or other sensitive data.
+Certain instructions on ARM64, including but not limited to those described in [Arm Architecture Registers for Future Architecture Technologies](https://developer.arm.com/documentation/ddi0601/2020-12/AArch64-Registers/DIT--Data-Independent-Timing), may take a different amount of time to run depending on the data values on which they operate. Malicious code running on the device might use this property to infer information about the data the CPU processes, such as cryptographic keys, or other sensitive data.
 
 Apple silicon provides *data-independent timing* (DIT), in which the processor completes certain instructions in a constant amount of time. With DIT enabled, the processor uses the longer, worst-case amount of time to complete the instruction, regardless of the input data. When you write software specifically to avoid leaking internal information and to run code in constant time, enabling DIT — and restricting your code to instructions that support DIT — before loading cryptographic key material, performing cryptographic operations, or processing sensitive data ensures the timing of specific instructions doesn’t reveal information about the data being processed.
 
@@ -127,9 +128,9 @@ int cryptographic_routine() {
 }
 ```
 
-Alternatively, to turn on DIT with older SDKs or platforms where the APIs aren’t available, you need to check whether DIT is defined and supported by the CPU and then use low-level kernel and CPU registers. To test whether the APIs are available, use the compiler’s [`__builtin_available`](https://developer.apple.comhttps://clang.llvm.org/docs/LanguageExtensions.html#objective-c-available) directive.
+Alternatively, to turn on DIT with older SDKs or platforms where the APIs aren’t available, you need to check whether DIT is defined and supported by the CPU and then use low-level kernel and CPU registers. To test whether the APIs are available, use the compiler’s [__builtin_available](https://clang.llvm.org/docs/LanguageExtensions.html#objective-c-available) directive.
 
-To determine whether a device’s CPU supports DIT, test the `hw.optional.arm.FEAT_DIT` system control using [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname):
+To determine whether a device’s CPU supports DIT, test the `hw.optional.arm.FEAT_DIT` system control using [`sysctlbyname`](../kernel/api-1387446-sysctlbyname.md):
 
 ```c
 #include <sys/sysctl.h>
@@ -327,7 +328,8 @@ int cryptographic_routine(void) {
 
 ## See Also
 
-- [Writing 64-bit Intel code for Apple Platforms](writing-64-bit-intel-code-for-apple-platforms.md)
+### 64-bit interfaces
+- [Writing 64-bit Intel code for Apple Platforms](./writing-64-bit-intel-code-for-apple-platforms.md)
   Create 64-bit Intel assembly language instructions that adhere to the application binary interface (ABI) that Apple platforms support.
 
 

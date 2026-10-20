@@ -1,7 +1,8 @@
 # ShaderGraphMaterial
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
 
@@ -49,89 +50,90 @@ You can also load shader graph materials directly from `.reality` files:
 let shader = try! await ShaderGraphMaterial(named: "/Root/Glass", from: "Scene.usda")
 ```
 
-For more information on using custom parameters in a `ShaderGraphMaterial`,  see doc://documentation.apple.com/documentation/visionos/implementing-adjustable-material-in-visionos.
+For more information on using custom parameters in a `ShaderGraphMaterial`,  see https://developer.apple.com/documentation/visionos/implementing-adjustable-material-in-visionos.
 
 Create dynamic materials without Metal.
 
 ## Topics
 
 ### Shader Graph fundamentals
-- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
-- [protocol Material](material.md)
+- [protocol Material](./material.md)
   A type that describes the material aspects of a mesh, like color and texture.
-- [struct MaterialParameterTypes](materialparametertypes.md)
+- [struct MaterialParameterTypes](./materialparametertypes.md)
   A set of types that material parameters can use.
 ### Accessing the program
-- [var program: ShaderGraphMaterial.Program](shadergraphmaterial/program-swift.property.md)
-- [ShaderGraphMaterial.Program](shadergraphmaterial/program-swift.struct.md)
+- [var program: ShaderGraphMaterial.Program](./shadergraphmaterial/program-swift.property.md)
+- [ShaderGraphMaterial.Program](./shadergraphmaterial/program-swift.struct.md)
 ### Initializers
-- [init(materialXLabel: String, data: Data) async throws](shadergraphmaterial/init(materialxlabel:data:).md)
+- [init(materialXLabel: String, data: Data) async throws](./shadergraphmaterial/init%28materialxlabel,data%29.md)
   Loads a ShaderGraphMaterial from MaterialX data.
-- [init(named:from:)](shadergraphmaterial/init(named:from:).md)
+- [init(named:from:)](./shadergraphmaterial/init%28named,from%29.md)
   Loads a ShaderGraphMaterial from a named material within a USD file.
-- [init(named: String, from: String, in: Bundle?) async throws](shadergraphmaterial/init(named:from:in:).md)
+- [init(named: String, from: String, in: Bundle?) async throws](./shadergraphmaterial/init%28named,from,in%29.md)
   Loads a ShaderGraphMaterial from a bundle.
-- [init(program: ShaderGraphMaterial.Program)](shadergraphmaterial/init(program:).md)
+- [init(program: ShaderGraphMaterial.Program)](./shadergraphmaterial/init%28program%29.md)
   Create a ShaderGraphMaterial with an already initialized Program. Use this method when you want to preload a library of shaders and create instances of them quickly and synchronously via ShaderGraphMaterials at runtime.
 ### Instance Properties
-- [var faceCulling: ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.property.md)
+- [var faceCulling: ShaderGraphMaterial.FaceCulling](./shadergraphmaterial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var parameterNames: [String]](shadergraphmaterial/parameternames.md)
-- [var readsDepth: Bool](shadergraphmaterial/readsdepth.md)
+- [var parameterNames: [String]](./shadergraphmaterial/parameternames.md)
+- [var readsDepth: Bool](./shadergraphmaterial/readsdepth.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var triangleFillMode: ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.property.md)
+- [var triangleFillMode: ShaderGraphMaterial.TriangleFillMode](./shadergraphmaterial/trianglefillmode-swift.property.md)
   The object that controls how RealityKit draws triangles.
-- [var writesDepth: Bool](shadergraphmaterial/writesdepth.md)
+- [var writesDepth: Bool](./shadergraphmaterial/writesdepth.md)
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 ### Instance Methods
-- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](shadergraphmaterial/getparameter(handle:).md)
-- [func getParameter(name: String) -> MaterialParameters.Value?](shadergraphmaterial/getparameter(name:).md)
-- [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](shadergraphmaterial/setparameter(handle:value:).md)
-- [func setParameter(name: String, value: MaterialParameters.Value) throws](shadergraphmaterial/setparameter(name:value:).md)
+- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](./shadergraphmaterial/getparameter%28handle%29.md)
+- [func getParameter(name: String) -> MaterialParameters.Value?](./shadergraphmaterial/getparameter%28name%29.md)
+- [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](./shadergraphmaterial/setparameter%28handle,value%29.md)
+- [func setParameter(name: String, value: MaterialParameters.Value) throws](./shadergraphmaterial/setparameter%28name,value%29.md)
 ### Type Aliases
-- [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
+- [ShaderGraphMaterial.FaceCulling](./shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
+- [ShaderGraphMaterial.TriangleFillMode](./shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
 ### Type Methods
-- [static func parameterHandle(name: String) -> MaterialParameters.Handle](shadergraphmaterial/parameterhandle(name:).md)
+- [static func parameterHandle(name: String) -> MaterialParameters.Handle](./shadergraphmaterial/parameterhandle%28name%29.md)
 ### Enumerations
-- [ShaderGraphMaterial.Error](shadergraphmaterial/error.md)
-- [ShaderGraphMaterial.LoadError](shadergraphmaterial/loaderror.md)
+- [ShaderGraphMaterial.Error](./shadergraphmaterial/error.md)
+- [ShaderGraphMaterial.LoadError](./shadergraphmaterial/loaderror.md)
 
 ## Relationships
 
 ### Conforms To
-- [Material](material.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Material](./material.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
+### Shaders
+- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
+- [ShaderGraphMaterial.FaceCulling](./shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
+- [ShaderGraphMaterial.TriangleFillMode](./shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-- [Modifying RealityKit rendering using custom materials](modifying-realitykit-rendering-using-custom-materials.md)
+- [Modifying RealityKit rendering using custom materials](./modifying-realitykit-rendering-using-custom-materials.md)
   Write Metal shader functions to implement custom rendering effects.
-- [struct CustomMaterial](custommaterial.md)
+- [struct CustomMaterial](./custommaterial.md)
   A material that works with custom Metal shader functions.
-- [CustomMaterial.SurfaceShader](custommaterial/surfaceshader.md)
+- [CustomMaterial.SurfaceShader](./custommaterial/surfaceshader.md)
   The custom material’s surface shader function.
-- [CustomMaterial.GeometryModifier](custommaterial/geometrymodifier.md)
+- [CustomMaterial.GeometryModifier](./custommaterial/geometrymodifier.md)
   The custom material’s optional shader function that can manipulate an entity’s vertex data.
-- [protocol MaterialFunction](materialfunction.md)
+- [protocol MaterialFunction](./materialfunction.md)
   The abstract superclass for objects representing compute functions for RealityKit custom materials .
-- [CustomMaterial.Program](custommaterial/program-swift.class.md)
+- [CustomMaterial.Program](./custommaterial/program-swift.class.md)
   An object that represents the backing shader compilation required for custom materials.
-- [CustomMaterial.Program.Descriptor](custommaterial/program-swift.class/descriptor-swift.struct.md)
+- [CustomMaterial.Program.Descriptor](./custommaterial/program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
-- [enum CustomShaderStage](customshaderstage.md)
+- [enum CustomShaderStage](./customshaderstage.md)
 
 
 ---

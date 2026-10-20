@@ -1,7 +1,8 @@
 # has(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the set contains a component of the given type.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether the set contains a component of t
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

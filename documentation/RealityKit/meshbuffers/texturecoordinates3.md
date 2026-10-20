@@ -1,7 +1,8 @@
 # textureCoordinates3
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,12 +20,13 @@ static let textureCoordinates3: MeshBuffers.Semantic<SIMD2<Float>>
 
 ## See Also
 
-- [static let textureCoordinates1: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates1.md)
-- [static let textureCoordinates2: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates2.md)
-- [static let textureCoordinates4: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates4.md)
-- [static let textureCoordinates5: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates5.md)
-- [static let textureCoordinates6: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates6.md)
-- [static let textureCoordinates7: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates7.md)
+### Accessing coordinate channels
+- [static let textureCoordinates1: MeshBuffers.Semantic<SIMD2<Float>>](./texturecoordinates1.md)
+- [static let textureCoordinates2: MeshBuffers.Semantic<SIMD2<Float>>](./texturecoordinates2.md)
+- [static let textureCoordinates4: MeshBuffers.Semantic<SIMD2<Float>>](./texturecoordinates4.md)
+- [static let textureCoordinates5: MeshBuffers.Semantic<SIMD2<Float>>](./texturecoordinates5.md)
+- [static let textureCoordinates6: MeshBuffers.Semantic<SIMD2<Float>>](./texturecoordinates6.md)
+- [static let textureCoordinates7: MeshBuffers.Semantic<SIMD2<Float>>](./texturecoordinates7.md)
 
 
 ---

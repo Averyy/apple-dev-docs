@@ -1,7 +1,8 @@
 # MTLBlendFactor.unspecialized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defers assigning the blend factor.
 
@@ -17,6 +18,10 @@ Defers assigning the blend factor.
 
 ```swift
 case unspecialized
+```
+
+```c
+MTLBlendFactorUnspecialized
 ```
 
 #### Discussion

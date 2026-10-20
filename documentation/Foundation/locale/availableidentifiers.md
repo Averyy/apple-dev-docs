@@ -1,7 +1,8 @@
 # availableIdentifiers
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of available identifiers.
 
@@ -22,13 +23,14 @@ static var availableIdentifiers: [String] { get }
 
 ## See Also
 
-- [static var isoRegionCodes: [String]](locale/isoregioncodes.md)
+### Getting known identifiers and codes
+- [static var isoRegionCodes: [String]](./isoregioncodes.md)
   A list of available region codes.
-- [static var isoLanguageCodes: [String]](locale/isolanguagecodes.md)
+- [static var isoLanguageCodes: [String]](./isolanguagecodes.md)
   A list of available language codes.
-- [static var isoCurrencyCodes: [String]](locale/isocurrencycodes.md)
+- [static var isoCurrencyCodes: [String]](./isocurrencycodes.md)
   A list of available currency codes.
-- [static var commonISOCurrencyCodes: [String]](locale/commonisocurrencycodes.md)
+- [static var commonISOCurrencyCodes: [String]](./commonisocurrencycodes.md)
   A list of common currency codes.
 
 

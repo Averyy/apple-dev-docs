@@ -1,7 +1,8 @@
 # GetControlValue
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the floating-point stereo pan value of the control.
 
@@ -10,7 +11,7 @@ Gets the floating-point stereo pan value of the control.
 
 ## Declaration
 
-```swift
+```c
 float GetControlValue();
 ```
 
@@ -24,11 +25,12 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetControlValue](iouseraudiostereopancontrol/setcontrolvalue.md)
+### Accessing the Value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the stereo pan value of the control.
-- [SetPanningChannels](iouseraudiostereopancontrol/setpanningchannels.md)
+- [SetPanningChannels](./setpanningchannels.md)
   Sets the current stereo panning channels.
-- [GetPanningChannels](iouseraudiostereopancontrol/getpanningchannels.md)
+- [GetPanningChannels](./getpanningchannels.md)
   Gets the current stereo panning channels.
 
 

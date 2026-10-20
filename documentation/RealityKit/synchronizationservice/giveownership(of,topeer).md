@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Transfers ownership of the given entity to the named network device.
@@ -12,7 +13,7 @@ Transfers ownership of the given entity to the named network device.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -32,7 +33,8 @@ A Boolean that’s `true` if the ownership transfer succeeds.
 
 ## See Also
 
-- [func owner(of: Entity) -> (any SynchronizationPeerID)?](synchronizationservice/owner(of:).md)
+### Managing ownership
+- [func owner(of: Entity) -> (any SynchronizationPeerID)?](./owner%28of%29.md)
   Gets the device that owns a given entity, if any.
 
 

@@ -1,18 +1,19 @@
 # CFTimeZoneCopySystem()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the time zone currently used by the system.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,25 +21,30 @@ Returns the time zone currently used by the system.
 func CFTimeZoneCopySystem() -> CFTimeZone!
 ```
 
+```c
+extern CFTimeZoneRefCFTimeZoneCopySystem();
+```
+
 #### Return Value
 
-A time zone representing the time zone currently used by the system, or the GMT time zone if the current zone cannot be determined. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A time zone representing the time zone currently used by the system, or the GMT time zone if the current zone cannot be determined. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 
-- [func CFTimeZoneCopyAbbreviationDictionary() -> CFDictionary!](cftimezonecopyabbreviationdictionary().md)
+### System and Default Time Zones and Information
+- [func CFTimeZoneCopyAbbreviationDictionary() -> CFDictionary!](./cftimezonecopyabbreviationdictionary%28%29.md)
   Returns a dictionary holding the mappings of time zone abbreviations to time zone names.
-- [func CFTimeZoneCopyAbbreviation(CFTimeZone!, CFAbsoluteTime) -> CFString!](cftimezonecopyabbreviation(_:_:).md)
+- [func CFTimeZoneCopyAbbreviation(CFTimeZone!, CFAbsoluteTime) -> CFString!](./cftimezonecopyabbreviation%28_,_%29.md)
   Returns the abbreviation of a time zone at a specified date.
-- [func CFTimeZoneCopyDefault() -> CFTimeZone!](cftimezonecopydefault().md)
+- [func CFTimeZoneCopyDefault() -> CFTimeZone!](./cftimezonecopydefault%28%29.md)
   Returns the default time zone set for your application.
-- [func CFTimeZoneSetDefault(CFTimeZone!)](cftimezonesetdefault(_:).md)
+- [func CFTimeZoneSetDefault(CFTimeZone!)](./cftimezonesetdefault%28_%29.md)
   Sets the default time zone for your application the given time zone.
-- [func CFTimeZoneCopyKnownNames() -> CFArray!](cftimezonecopyknownnames().md)
+- [func CFTimeZoneCopyKnownNames() -> CFArray!](./cftimezonecopyknownnames%28%29.md)
   Returns an array of strings containing the names of all the time zones known to the system.
-- [func CFTimeZoneResetSystem()](cftimezoneresetsystem().md)
+- [func CFTimeZoneResetSystem()](./cftimezoneresetsystem%28%29.md)
   Clears the previously determined system time zone, if any.
-- [func CFTimeZoneSetAbbreviationDictionary(CFDictionary!)](cftimezonesetabbreviationdictionary(_:).md)
+- [func CFTimeZoneSetAbbreviationDictionary(CFDictionary!)](./cftimezonesetabbreviationdictionary%28_%29.md)
   Sets the abbreviation dictionary to a given dictionary.
 
 

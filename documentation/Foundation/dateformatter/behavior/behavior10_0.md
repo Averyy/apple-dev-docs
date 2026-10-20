@@ -1,7 +1,8 @@
 # DateFormatter.Behavior.behavior10_0
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.0+
@@ -12,14 +13,19 @@
 case behavior10_0
 ```
 
+```c
+NSDateFormatterBehavior10_0
+```
+
 #### Discussion
 
 Specifies formatting behavior equivalent to that in OS X 10.0.
 
 ## See Also
 
-- [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
-- [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
+### Constants
+- [DateFormatter.Behavior.default](./default.md)
+- [DateFormatter.Behavior.behavior10_4](./behavior10_4.md)
 
 
 ---

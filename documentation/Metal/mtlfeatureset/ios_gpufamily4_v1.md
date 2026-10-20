@@ -1,15 +1,16 @@
 # MTLFeatureSet.iOS_GPUFamily4_v1
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The GPU family 4, version 1 feature set for iOS.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 16.0
+- iPadOS 11.0+ - Deprecated in 16.0
+- Mac Catalyst 11.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,9 +18,13 @@ The GPU family 4, version 1 feature set for iOS.
 case iOS_GPUFamily4_v1
 ```
 
+```c
+MTLFeatureSet_iOS_GPUFamily4_v1
+```
+
 ## Mentions
 
-- [Detecting GPU features and Metal software versions](detecting-gpu-features-and-metal-software-versions.md)
+- [Detecting GPU features and Metal software versions](../detecting-gpu-features-and-metal-software-versions.md)
 
 #### Discussion
 
@@ -27,7 +32,8 @@ This feature set corresponds with Apple A11 devices running iOS 11.
 
 ## See Also
 
-- [MTLFeatureSet.iOS_GPUFamily4_v2](mtlfeatureset/ios_gpufamily4_v2.md)
+### iOS GPU family 4
+- [MTLFeatureSet.iOS_GPUFamily4_v2](./ios_gpufamily4_v2.md)
   The GPU family 4, version 2 feature set for iOS.
 
 

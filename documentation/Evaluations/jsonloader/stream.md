@@ -1,7 +1,8 @@
 # stream
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The async sequence that reads and yields each sample from the JSON or JSONL file during an evaluation run.
 

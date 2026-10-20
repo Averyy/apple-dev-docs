@@ -1,7 +1,8 @@
 # textElements(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of text elements that intersect with the range you specify.
 
@@ -18,17 +19,21 @@ Returns an array of text elements that intersect with the range you specify.
 func textElements(for range: NSTextRange) -> [NSTextElement]
 ```
 
+```objc
+- (NSArray<NSTextElement *> *) textElementsForRange:(NSTextRange *) range;
+```
+
 #### Return Value
 
-An array of [`NSTextElement`](nstextelement.md).
+An array of [`NSTextElement`](../nstextelement.md).
 
 #### Discussion
 
-This method can return a set of elements that don’t fill the entire range if the entire range isn’t synchronously available. Uses [`enumerateTextElements(from:options:using:)`](nstextelementprovider/enumeratetextelements(from:options:using:).md) to fill the array.
+This method can return a set of elements that don’t fill the entire range if the entire range isn’t synchronously available. Uses [`enumerateTextElements(from:options:using:)`](../nstextelementprovider/enumeratetextelements%28from,options,using%29.md) to fill the array.
 
 ## Parameters
 
-- `range`: An [`NSTextRange`](nstextrange.md) that describes the range of text to process.
+- `range`: An [`NSTextRange`](../nstextrange.md) that describes the range of text to process.
 
 
 ---

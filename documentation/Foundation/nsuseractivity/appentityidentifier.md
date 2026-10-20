@@ -1,7 +1,8 @@
 # appEntityIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of an app entity that you associate with the user activity.
 
@@ -24,13 +25,14 @@ var appEntityIdentifier: EntityIdentifier? { get set }
 
 By associating an app entity with a user activity, you make the entity available to Siri and Apple Intelligence. To clear the association with the app entity, set `appEntityIdentifier` to `nil`.
 
-For more information, refer to doc://com.apple.documentation/documentation/appintents/Making-onscreen-content-available-to-siri-and-apple-intelligence and [`App Intents`](https://developer.apple.com/documentation/appintents).
+For more information, refer to https://developer.apple.com/documentation/appintents/Making-onscreen-content-available-to-siri-and-apple-intelligence and [App Intents](../../AppIntents/AppIntents.md).
 
 ## See Also
 
-- [var targetContentIdentifier: String?](nsuseractivity/targetcontentidentifier.md)
+### Specifying app identifiers
+- [var targetContentIdentifier: String?](./targetcontentidentifier.md)
   A string that identifies the user activity’s content.
-- [var externalMediaContentIdentifier: String?](nsuseractivity/externalmediacontentidentifier.md)
+- [var externalMediaContentIdentifier: String?](./externalmediacontentidentifier.md)
   A unique identifier from the app’s media content catalog for the currently displayed media item.
 
 

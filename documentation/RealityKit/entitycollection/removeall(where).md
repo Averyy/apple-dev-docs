@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes all entities from this collection that satisfy the given predicate.
@@ -23,6 +24,12 @@ mutating func removeAll(where: (Entity) throws -> Bool) rethrows
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any remaining entities.
+
+## Default Implementations
+
+### EntityCollection Implementations
+- [func removeAll(where: (Entity) throws -> Bool) rethrows](./removeall%28where%29-6pdng.md)
+  Removes all entities from this collection that satisfy the given predicate.
 
 
 ---

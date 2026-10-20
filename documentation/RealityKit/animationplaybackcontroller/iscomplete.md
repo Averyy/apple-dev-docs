@@ -1,7 +1,8 @@
 # isComplete
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the animation has finished running.
 
@@ -11,7 +12,7 @@ A Boolean that indicates whether the animation has finished running.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ After an animation completes, the playback controller becomes invalid. To play t
 
 ## See Also
 
-- [var isPaused: Bool](animationplaybackcontroller/ispaused.md)
+### Managing completion
+- [var isPaused: Bool](./ispaused.md)
   A Boolean that indicates whether the animation is paused.
 
 

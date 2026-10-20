@@ -1,7 +1,8 @@
 # isCompatibleWithSavedPhotosAlbum
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can write the composition to the Saved Photos album.
 
@@ -20,15 +21,16 @@ var isCompatibleWithSavedPhotosAlbum: Bool { get }
 
 ## See Also
 
-- [var isPlayable: Bool](avcomposition/isplayable.md)
+### Determining suitability
+- [var isPlayable: Bool](./isplayable.md)
   A Boolean value that indicates whether the asset has playable content.
-- [var isReadable: Bool](avcomposition/isreadable.md)
+- [var isReadable: Bool](./isreadable.md)
   A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
-- [var isExportable: Bool](avcomposition/isexportable.md)
+- [var isExportable: Bool](./isexportable.md)
   A Boolean value that indicates whether you can export this asset using an export session.
-- [var isComposable: Bool](avcomposition/iscomposable.md)
+- [var isComposable: Bool](./iscomposable.md)
   A Boolean value that indicates whether you can use the asset as a segment of a composition track.
-- [var isCompatibleWithAirPlayVideo: Bool](avcomposition/iscompatiblewithairplayvideo.md)
+- [var isCompatibleWithAirPlayVideo: Bool](./iscompatiblewithairplayvideo.md)
   A Boolean value that indicates whether the asset is compatible with AirPlay Video.
 
 

@@ -1,7 +1,8 @@
 # kQLPreviewPDFPagesWithThumbnailsOnRightStyle
 
 **Framework**: Quick Look  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The content of the PDF appears with thumbnails of all pages on the right side of the current page’s content.
 
@@ -14,11 +15,16 @@ The content of the PDF appears with thumbnails of all pages on the right side of
 var kQLPreviewPDFPagesWithThumbnailsOnRightStyle: QLPreviewPDFStyle { get }
 ```
 
+```c
+kQLPreviewPDFPagesWithThumbnailsOnRightStyle
+```
+
 ## See Also
 
-- [var kQLPreviewPDFStandardStyle: QLPreviewPDFStyle](kqlpreviewpdfstandardstyle.md)
+### Styles for PDF Previews
+- [var kQLPreviewPDFStandardStyle: QLPreviewPDFStyle](./kqlpreviewpdfstandardstyle.md)
   The PDF appears in the operating system’s standard style.
-- [var kQLPreviewPDFPagesWithThumbnailsOnLeftStyle: QLPreviewPDFStyle](kqlpreviewpdfpageswiththumbnailsonleftstyle.md)
+- [var kQLPreviewPDFPagesWithThumbnailsOnLeftStyle: QLPreviewPDFStyle](./kqlpreviewpdfpageswiththumbnailsonleftstyle.md)
   The content of the PDF appears with thumbnails of all pages on the left side of the current page’s content.
 
 

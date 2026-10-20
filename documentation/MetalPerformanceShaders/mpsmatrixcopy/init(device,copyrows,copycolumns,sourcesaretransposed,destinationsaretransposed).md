@@ -1,7 +1,8 @@
 # init(device:copyRows:copyColumns:sourcesAreTransposed:destinationsAreTransposed:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, copyRows: Int, copyColumns: Int, sourcesAreTransposed: Bool, destinationsAreTransposed: Bool)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device copyRows:(NSUInteger) copyRows copyColumns:(NSUInteger) copyColumns sourcesAreTransposed:(BOOL) sourcesAreTransposed destinationsAreTransposed:(BOOL) destinationsAreTransposed;
 ```
 
 

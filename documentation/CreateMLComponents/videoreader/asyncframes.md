@@ -1,7 +1,8 @@
 # VideoReader.AsyncFrames
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async sequence of video frames.
 
@@ -26,41 +27,42 @@ This sequence allows iterating through the file only once.
 ## Topics
 
 ### Getting the properties
-- [var count: Int?](videoreader/asyncframes/count.md)
+- [var count: Int?](./asyncframes/count.md)
   The number of frames. For this sequence count is always nil.
-- [let frameSize: CGSize](videoreader/asyncframes/framesize.md)
+- [let frameSize: CGSize](./asyncframes/framesize.md)
   The frame size.
-- [let nominalFrameRate: Float](videoreader/asyncframes/nominalframerate.md)
+- [let nominalFrameRate: Float](./asyncframes/nominalframerate.md)
   The nominal frame rate.
-- [let timescale: CMTimeScale](videoreader/asyncframes/timescale.md)
+- [let timescale: CMTimeScale](./asyncframes/timescale.md)
   The timescale of the video track.
-- [let url: URL](videoreader/asyncframes/url.md)
+- [let url: URL](./asyncframes/url.md)
   The video file URL, used when throwing an error.
-- [let videoDuration: CMTime](videoreader/asyncframes/videoduration.md)
+- [let videoDuration: CMTime](./asyncframes/videoduration.md)
   The video duration.
 ### Creating an iterator
-- [func makeAsyncIterator() -> VideoReader.AsyncFrames.Iterator](videoreader/asyncframes/makeasynciterator.md)
+- [func makeAsyncIterator() -> VideoReader.AsyncFrames.Iterator](./asyncframes/makeasynciterator%28%29.md)
   Constructs an iterator.
-- [VideoReader.AsyncFrames.Iterator](videoreader/asyncframes/iterator.md)
+- [VideoReader.AsyncFrames.Iterator](./asyncframes/iterator.md)
   An async iterator of video frames.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [TemporalSequence](../temporalsequence.md)
 
 ## See Also
 
-- [static read(_:)](videoreader/read(_:).md)
+### Reading
+- [static read(_:)](./read%28_%29.md)
   Reads a sequence of annotated files as an array of annotated async sequences of video frames.
-- [static func readCamera(configuration: VideoReader.CameraConfiguration) async throws -> VideoReader.CameraAsyncBuffers](videoreader/readcamera(configuration:).md)
+- [static func readCamera(configuration: VideoReader.CameraConfiguration) async throws -> VideoReader.CameraAsyncBuffers](./readcamera%28configuration%29.md)
   Reads an async sequence of video frames captured with a video camera.
-- [static func read(contentsOf: URL) async throws -> VideoReader.AsyncFrames](videoreader/read(contentsof:).md)
+- [static func read(contentsOf: URL) async throws -> VideoReader.AsyncFrames](./read%28contentsof%29.md)
   Reads a video file as an async sequence of video frames.
-- [VideoReader.CameraAsyncBuffers](videoreader/cameraasyncbuffers.md)
+- [VideoReader.CameraAsyncBuffers](./cameraasyncbuffers.md)
   An async sequence of video frames.
-- [VideoReader.CameraConfiguration](videoreader/cameraconfiguration.md)
+- [VideoReader.CameraConfiguration](./cameraconfiguration.md)
   The configuration of the camera to pass to the `readCamera` method.
 
 

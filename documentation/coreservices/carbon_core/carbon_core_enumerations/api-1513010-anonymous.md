@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kCSIdentityFlagHidden: Int](kcsidentityflaghidden.md)
-- [var kCSIdentityFlagNone: Int](kcsidentityflagnone.md)
+- [var kCSIdentityFlagHidden: Int](../../kcsidentityflaghidden.md)
+- [var kCSIdentityFlagNone: Int](../../kcsidentityflagnone.md)
 
 
 ---

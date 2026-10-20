@@ -1,7 +1,8 @@
 # ManagedContentStyle
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that applies a custom appearance to the managed content view.
 
@@ -20,17 +21,18 @@ struct ManagedContentStyle
 ## Topics
 
 ### Determining styles
-- [static var automatic: ManagedContentStyle](managedcontentstyle/automatic.md)
-- [static var compact: ManagedContentStyle](managedcontentstyle/compact.md)
-- [static var header: ManagedContentStyle](managedcontentstyle/header.md)
-- [static var vertical: ManagedContentStyle](managedcontentstyle/vertical.md)
+- [static var automatic: ManagedContentStyle](./managedcontentstyle/automatic.md)
+- [static var compact: ManagedContentStyle](./managedcontentstyle/compact.md)
+- [static var header: ManagedContentStyle](./managedcontentstyle/header.md)
+- [static var vertical: ManagedContentStyle](./managedcontentstyle/vertical.md)
 
 ## See Also
 
-- [struct ManagedAppView](managedappview.md)
+### View creation
+- [struct ManagedAppView](./managedappview.md)
   A view that displays a managed app.
-- [struct ManagedContentView](managedcontentview.md)
-- [struct ManagedContentOfferState](managedcontentofferstate.md)
+- [struct ManagedContentView](./managedcontentview.md)
+- [struct ManagedContentOfferState](./managedcontentofferstate.md)
   The state for a managed content view offer.
 
 

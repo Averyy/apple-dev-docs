@@ -1,7 +1,8 @@
 # running
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -18,13 +19,18 @@
 static var running: SMPTETimeFlags { get }
 ```
 
+```c
+kSMPTETimeRunning
+```
+
 #### Discussion
 
 Time is running.
 
 ## See Also
 
-- [static var valid: SMPTETimeFlags](smptetimeflags/valid.md)
+### Type Properties
+- [static var valid: SMPTETimeFlags](./valid.md)
 
 
 ---

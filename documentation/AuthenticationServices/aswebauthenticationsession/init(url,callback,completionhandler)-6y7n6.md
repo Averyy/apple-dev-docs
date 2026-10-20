@@ -1,7 +1,8 @@
 # init(URL:callback:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.4+

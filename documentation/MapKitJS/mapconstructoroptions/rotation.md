@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The map’s rotation, in degrees.
 
@@ -10,7 +11,7 @@ The map’s rotation, in degrees.
 
 ## Declaration
 
-```swift
+```
 rotation?: number;
 ```
 
@@ -20,13 +21,14 @@ The default value is `0.`
 
 ## See Also
 
-- [visibleMapRect](mapconstructoroptions/visiblemaprect.md)
+### Controlling the visible portion of the map
+- [visibleMapRect](./visiblemaprect.md)
   The visible area of the map, in map units.
-- [region](mapconstructoroptions/region.md)
+- [region](./region.md)
   The area the map is displaying.
-- [center](mapconstructoroptions/center.md)
+- [center](./center.md)
   The map coordinate at the center of the map view.
-- [tintColor](mapconstructoroptions/tintcolor.md)
+- [tintColor](./tintcolor.md)
   The CSS color that MapKit JS uses for the user interface controls on the map.
 
 

@@ -1,7 +1,8 @@
 # init(animation:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transaction and assigns its animation property.
 
@@ -26,7 +27,8 @@ init(animation: Animation?)
 
 ## See Also
 
-- [init()](transaction/init.md)
+### Creating a transaction
+- [init()](./init%28%29.md)
   Creates a transaction.
 
 

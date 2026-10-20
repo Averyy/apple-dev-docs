@@ -1,7 +1,8 @@
 # widgetConfigurationIntent(of:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the associated App Intent.
 
@@ -21,7 +22,7 @@ func widgetConfigurationIntent<Intent>(of intentType: Intent.Type = Intent.self)
 
 ## Mentions
 
-- [Making a configurable widget](making-a-configurable-widget.md)
+- [Making a configurable widget](../making-a-configurable-widget.md)
 
 #### Return Value
 

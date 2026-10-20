@@ -1,7 +1,8 @@
 # inputView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary view for the input view controller.
 
@@ -9,7 +10,7 @@ The primary view for the input view controller.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The primary view for the input view controller.
 var inputView: UIInputView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIInputView * inputView;
+```
+
 #### Discussion
 
-When you use an input view controller subclass as the primary view controller for a custom keyboard, this property’s [`UIInputView`](uiinputview.md) object is initially empty. To display your keyboard’s user interface, add controls and views to the [`inputView`](uiinputviewcontroller/inputview.md) property.
+When you use an input view controller subclass as the primary view controller for a custom keyboard, this property’s [`UIInputView`](../uiinputview.md) object is initially empty. To display your keyboard’s user interface, add controls and views to the [`inputView`](./inputview.md) property.
 
 
 ---

@@ -1,7 +1,8 @@
 # restingOrientation
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides the resting orientation for when this face is in contact with the table.
 
@@ -16,8 +17,9 @@ var restingOrientation: Rotation3D { get }
 
 ## See Also
 
-- [var latitude: Angle2D](tossablerepresentation/sphereface/latitude.md)
-- [var longitude: Angle2D](tossablerepresentation/sphereface/longitude.md)
+### Getting the sphere face properties
+- [var latitude: Angle2D](./latitude.md)
+- [var longitude: Angle2D](./longitude.md)
 
 
 ---

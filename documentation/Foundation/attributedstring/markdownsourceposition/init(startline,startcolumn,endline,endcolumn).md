@@ -1,7 +1,8 @@
 # init(startLine:startColumn:endLine:endColumn:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Markdown source position instance from its start and end line and column.
 

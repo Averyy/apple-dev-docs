@@ -1,7 +1,8 @@
 # custom(key:value:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds data for a custom key to a purchase.
 
@@ -22,11 +23,11 @@ static func custom(key: String, value: Data) -> Product.PurchaseOption
 
 ## Mentions
 
-- [Sending Advanced Commerce API requests from your app](sending-advanced-commerce-api-requests-from-your-app.md)
+- [Sending Advanced Commerce API requests from your app](../../sending-advanced-commerce-api-requests-from-your-app.md)
 
 #### Discussion
 
-Use this custom option with the [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi).
+Use this custom option with the [Advanced Commerce API](../../../AdvancedCommerceAPI/AdvancedCommerceAPI.md).
 
 ## Parameters
 
@@ -35,11 +36,12 @@ Use this custom option with the [`Advanced Commerce API`](https://developer.appl
 
 ## See Also
 
-- [static func custom(key: String, value: String) -> Product.PurchaseOption](product/purchaseoption/custom(key:value:)-3g3nc.md)
+### Setting custom purchase options
+- [static func custom(key: String, value: String) -> Product.PurchaseOption](./custom%28key,value%29-3g3nc.md)
   Adds a string for a custom key to a purchase.
-- [static func custom(key: String, value: Bool) -> Product.PurchaseOption](product/purchaseoption/custom(key:value:)-8tjim.md)
+- [static func custom(key: String, value: Bool) -> Product.PurchaseOption](./custom%28key,value%29-8tjim.md)
   Adds a Boolean value for a custom key to a purchase.
-- [static func custom(key: String, value: Double) -> Product.PurchaseOption](product/purchaseoption/custom(key:value:)-7rju9.md)
+- [static func custom(key: String, value: Double) -> Product.PurchaseOption](./custom%28key,value%29-7rju9.md)
   Adds a number for a custom key to a purchase.
 
 

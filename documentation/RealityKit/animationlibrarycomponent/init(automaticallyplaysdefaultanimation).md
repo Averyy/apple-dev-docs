@@ -1,7 +1,8 @@
 # init(automaticallyPlaysDefaultAnimation:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty animation library.
 
@@ -30,13 +31,14 @@ entity.components.set(library)
 
 ## Parameters
 
-- `automaticallyPlaysDefaultAnimation`: Whether to automatically play the default animation when the entity is added to a scene and enabled. When `true`, the animation system plays the default animation automatically. When `false`, animations require manual playback. See [`automaticallyPlaysDefaultAnimation`](animationlibrarycomponent/automaticallyplaysdefaultanimation.md) for details.
+- `automaticallyPlaysDefaultAnimation`: Whether to automatically play the default animation when the entity is added to a scene and enabled. When `true`, the animation system plays the default animation automatically. When `false`, animations require manual playback. See [`automaticallyPlaysDefaultAnimation`](./automaticallyplaysdefaultanimation.md) for details.
 
 ## See Also
 
-- [var automaticallyPlaysDefaultAnimation: Bool](animationlibrarycomponent/automaticallyplaysdefaultanimation.md)
+### Configuring default playback
+- [var automaticallyPlaysDefaultAnimation: Bool](./automaticallyplaysdefaultanimation.md)
   Whether to automatically play the default animation when the entity is added to a scene and enabled. Default value is false, meaning the default animation will not be automatically played by default. This value can only be set when initializing `AnimationLibraryComponent`
-- [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(animations:automaticallyplaysdefaultanimation:).md)
+- [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](./init%28animations,automaticallyplaysdefaultanimation%29.md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
 
 

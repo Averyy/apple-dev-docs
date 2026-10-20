@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current text formatting configuration object.
 
@@ -16,6 +17,10 @@ Current text formatting configuration object.
 ```swift
 @NSCopying
 var configuration: UITextFormattingViewController.Configuration { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) UITextFormattingViewControllerConfiguration * configuration;
 ```
 
 

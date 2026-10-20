@@ -1,7 +1,8 @@
 # requiredThreadsPerThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The required number of threads per threadgroup for compute dispatches.
 
@@ -17,6 +18,10 @@ The required number of threads per threadgroup for compute dispatches.
 
 ```swift
 var requiredThreadsPerThreadgroup: MTLSize { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLSize requiredThreadsPerThreadgroup;
 ```
 
 #### Discussion

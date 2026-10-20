@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to resolve media items in an update media affinity intent.
 
@@ -10,31 +11,34 @@ Your service’s response to a request to resolve media items in an update media
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying the Result
-- [object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse.Result](updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.md)
+- [object UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse.Result](./updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.md)
   The results of resolving the media items in an intent to update media affinity.
 
 ## Properties
 
 - `method` (string) *(required)*: The results of processing the intent.
+
+  **Allowed Values**: `UpdateMediaAffinityIntentHandling.resolveMediaItems`
 - `result` (UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse.Result) *(required)*: The action your service takes to process this intent.
 
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object UpdateMediaAffinityMediaItemResolutionResult](updatemediaaffinitymediaitemresolutionresult.md)
+### Identifying the Intended Media Items
+- [object UpdateMediaAffinityMediaItemResolutionResult](./updatemediaaffinitymediaitemresolutionresult.md)
   A media item that matches an update media affinity intent, or information about why your service can’t provide a media item.
-- [type UpdateMediaAffinityMediaItemUnsupportedReason](updatemediaaffinitymediaitemunsupportedreason.md)
+- [type UpdateMediaAffinityMediaItemUnsupportedReason](./updatemediaaffinitymediaitemunsupportedreason.md)
   Reasons the media service can’t update information about the media item.
 
 

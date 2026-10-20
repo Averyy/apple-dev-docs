@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,7 +17,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let SFErrorDomain: String](sferrordomain.md)
+### Error Domain
+- [let SFErrorDomain: String](../sferrordomain.md)
   The domain for content blocker or Safari app extension errors.
 
 

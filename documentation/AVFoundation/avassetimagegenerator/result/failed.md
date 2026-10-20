@@ -1,17 +1,18 @@
 # AVAssetImageGenerator.Result.failed
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates that image generation failed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A result that indicates that image generation failed.
 case failed
 ```
 
+```c
+AVAssetImageGeneratorFailed
+```
+
 ## See Also
 
-- [AVAssetImageGenerator.Result.succeeded](avassetimagegenerator/result/succeeded.md)
+### Results
+- [AVAssetImageGenerator.Result.succeeded](./succeeded.md)
   A result that indicates that image generation succeeded.
-- [AVAssetImageGenerator.Result.cancelled](avassetimagegenerator/result/cancelled.md)
+- [AVAssetImageGenerator.Result.cancelled](./cancelled.md)
   A result that indicates you canceled image generation.
 
 

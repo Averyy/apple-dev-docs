@@ -1,7 +1,8 @@
 # lowercased()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a lowercased version of this character.
 
@@ -39,13 +40,14 @@ for ch in chars {
 
 ## See Also
 
-- [var isCased: Bool](character/iscased.md)
+### Checking a Character’s Case
+- [var isCased: Bool](./iscased.md)
   A Boolean value indicating whether this character changes under any form of case conversion.
-- [var isUppercase: Bool](character/isuppercase.md)
+- [var isUppercase: Bool](./isuppercase.md)
   A Boolean value indicating whether this character is considered uppercase.
-- [func uppercased() -> String](character/uppercased.md)
+- [func uppercased() -> String](./uppercased%28%29.md)
   Returns an uppercased version of this character.
-- [var isLowercase: Bool](character/islowercase.md)
+- [var isLowercase: Bool](./islowercase.md)
   A Boolean value indicating whether this character is considered lowercase.
 
 

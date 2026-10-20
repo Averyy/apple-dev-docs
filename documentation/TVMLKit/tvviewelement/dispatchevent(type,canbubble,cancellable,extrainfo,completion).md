@@ -1,30 +1,45 @@
 # dispatchEvent(type:canBubble:cancellable:extraInfo:completion:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dispatches an event of a specific type to the JavaScript file.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
+
+```swift
+func dispatchEvent(type: TVElementEventType, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?, completion: (@Sendable (Bool, Bool) -> Void)? = nil)
+```
 
 ```swift
 func dispatchEvent(type: TVElementEventType, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?) async -> (Bool, Bool)
 ```
 
+```objc
+- (void) dispatchEventOfType:(TVElementEventType) type canBubble:(BOOL) canBubble cancellable:(BOOL) isCancellable extraInfo:(NSDictionary<NSString *,id> *) extraInfo completion:(void (^)(BOOL isDispatched, BOOL isCancelled)) completion;
+```
+
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func dispatchEvent(type: TVElementEventType, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?) async -> (Bool, Bool)
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func dispatchEvent(type: TVElementEventType, canBubble: Bool, cancellable isCancellable: Bool, extraInfo: [String : Any]?) async -> (Bool, Bool)
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 Use this method to dispatch events from views and view controllers to JavaScript.
 
 ## Parameters
 
-- `type`: The type of TV element to dispatch. For possible values see [`TVElementEventType`](tvelementeventtype.md).
+- `type`: The type of TV element to dispatch. For possible values see [`TVElementEventType`](../tvelementeventtype.md).
 - `canBubble`: A flag that indicates an event is dispatched on the target’s parent nodes after the event has been dispatched on the target.
 - `isCancellable`: A flag to indicate whether the event can be cancelled.
 - `extraInfo`: Extra properties that need to be exposed in the event object.
@@ -32,9 +47,10 @@ Use this method to dispatch events from views and view controllers to JavaScript
 
 ## See Also
 
-- [enum TVElementEventType](tvelementeventtype.md)
+### Dispatching Events
+- [enum TVElementEventType](../tvelementeventtype.md)
   The type of event that has been dispatched.
-- [func dispatchEvent(name: String, canBubble: Bool, cancellable: Bool, extraInfo: [String : Any]?, completion: ((Bool, Bool) -> Void)?)](tvviewelement/dispatchevent(name:canbubble:cancellable:extrainfo:completion:).md)
+- [func dispatchEvent(name: String, canBubble: Bool, cancellable: Bool, extraInfo: [String : Any]?, completion: ((Bool, Bool) -> Void)?)](./dispatchevent%28name,canbubble,cancellable,extrainfo,completion%29.md)
   Dispatches a custom-named event.
 
 

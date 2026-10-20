@@ -1,7 +1,8 @@
 # init(installedSource:target:preferredStrategy:)
 
 **Framework**: Translation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a translation session to translate between a given source and target language already installed on device.
 
@@ -19,17 +20,18 @@ convenience init(installedSource source: Locale.Language, target: Locale.Languag
 
 #### Discussion
 
-If one or both languages aren’t installed on the device, attempting to translate will throw errors. To get the person’s permission to download languages that aren’t already installed, translate using a [`TranslationSession`](translationsession.md) provided by [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) or [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:)).
+If one or both languages aren’t installed on the device, attempting to translate will throw errors. To get the person’s permission to download languages that aren’t already installed, translate using a [`TranslationSession`](../translationsession.md) provided by [`translationTask(_:action:)`](../../SwiftUI/view/translationtask%28_,action%29.md) or [`translationTask(source:target:action:)`](../../SwiftUI/view/translationtask%28source,target,action%29.md).
 
-> **Note**: If you created a `TranslationSession` using [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md), you don’t need a `.translationTask()`; however, you will need a [`sourceLanguage`](translationsession/sourcelanguage.md).
+> **Note**: If you created a `TranslationSession` using [`init(installedSource:target:)`](./init%28installedsource,target%29.md), you don’t need a `.translationTask()`; however, you will need a [`sourceLanguage`](./sourcelanguage.md).
 
 ## Parameters
 
-- `preferredStrategy`: The translation approach to use. [`highFidelity`](translationsession/strategy/highfidelity.md) uses Apple Intelligence models when available on device, or falls back to [`lowLatency`](translationsession/strategy/lowlatency.md) when those models aren’t available. The `lowLatency` strategy uses traditional models for translation.
+- `preferredStrategy`: The translation approach to use. [`highFidelity`](./strategy/highfidelity.md) uses Apple Intelligence models when available on device, or falls back to [`lowLatency`](./strategy/lowlatency.md) when those models aren’t available. The `lowLatency` strategy uses traditional models for translation.
 
 ## See Also
 
-- [convenience init(installedSource: Locale.Language, target: Locale.Language?)](translationsession/init(installedsource:target:).md)
+### Initalizing a translation session
+- [convenience init(installedSource: Locale.Language, target: Locale.Language?)](./init%28installedsource,target%29.md)
   Creates a translation session to translate between a given source and target language already installed on device.
 
 

@@ -1,7 +1,8 @@
 # sourceTypes
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the verifiable clinical record.
 
@@ -18,13 +19,18 @@ The format of the verifiable clinical record.
 var sourceTypes: [HKVerifiableClinicalRecordSourceType] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * sourceTypes;
+```
+
 #### Discussion
 
-For a list of valid formats, see [`HKVerifiableClinicalRecordSourceType`](hkverifiableclinicalrecordsourcetype.md).
+For a list of valid formats, see [`HKVerifiableClinicalRecordSourceType`](../hkverifiableclinicalrecordsourcetype.md).
 
 ## See Also
 
-- [var recordTypes: [String]](hkverifiableclinicalrecordquery/recordtypes.md)
+### Accessing the Metadata
+- [var recordTypes: [String]](./recordtypes.md)
   The type of records that this query returns.
 
 

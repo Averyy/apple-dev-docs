@@ -1,7 +1,8 @@
 # squareRoot()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the square root of the value, rounded to a representable value.
 
@@ -40,23 +41,24 @@ let distance = hypotenuse(dx, dy)
 
 ## See Also
 
-- [Floating-Point Operators for Float](floating-point-operators-for-float.md)
+### Performing Calculations
+- [Floating-Point Operators for Float](../floating-point-operators-for-float.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func addingProduct(Self, Self) -> Self](float/addingproduct(_:_:).md)
+- [func addingProduct(Self, Self) -> Self](./addingproduct%28_,_%29.md)
   Returns the result of adding the product of the two given values to this value, computed without intermediate rounding.
-- [func addProduct(Float, Float)](float/addproduct(_:_:).md)
+- [func addProduct(Float, Float)](./addproduct%28_,_%29.md)
   Adds the product of the two given values to this value in place, computed without intermediate rounding.
-- [func formSquareRoot()](float/formsquareroot.md)
+- [func formSquareRoot()](./formsquareroot%28%29.md)
   Replaces this value with its square root, rounded to a representable value.
-- [func remainder(dividingBy: Self) -> Self](float/remainder(dividingby:).md)
+- [func remainder(dividingBy: Self) -> Self](./remainder%28dividingby%29.md)
   Returns the remainder of this value divided by the given value.
-- [func formRemainder(dividingBy: Float)](float/formremainder(dividingby:).md)
+- [func formRemainder(dividingBy: Float)](./formremainder%28dividingby%29.md)
   Replaces this value with the remainder of itself divided by the given value.
-- [func truncatingRemainder(dividingBy: Self) -> Self](float/truncatingremainder(dividingby:).md)
+- [func truncatingRemainder(dividingBy: Self) -> Self](./truncatingremainder%28dividingby%29.md)
   Returns the remainder of this value divided by the given value using truncating division.
-- [func formTruncatingRemainder(dividingBy: Float)](float/formtruncatingremainder(dividingby:).md)
+- [func formTruncatingRemainder(dividingBy: Float)](./formtruncatingremainder%28dividingby%29.md)
   Replaces this value with the remainder of itself divided by the given value using truncating division.
-- [func negate()](float/negate.md)
+- [func negate()](./negate%28%29.md)
   Replaces this value with its additive inverse.
 
 

@@ -1,7 +1,8 @@
 # secondaryButtonProperties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional configuration for the secondary button.
 
@@ -10,7 +11,7 @@ Additional configuration for the secondary button.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

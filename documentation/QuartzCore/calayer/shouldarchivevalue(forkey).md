@@ -1,7 +1,8 @@
 # shouldArchiveValue(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean indicating whether the value of the specified key should be archived.
 
@@ -19,13 +20,17 @@ Returns a Boolean indicating whether the value of the specified key should be ar
 func shouldArchiveValue(forKey key: String) -> Bool
 ```
 
+```objc
+- (BOOL) shouldArchiveValueForKey:(NSString *) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified property should be archived or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](../../Swift/true.md) if the specified property should be archived or [`false`](../../Swift/false.md) if it should not.
 
 #### Discussion
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true).
+The default implementation returns [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -33,7 +38,8 @@ The default implementation returns [`true`](https://developer.apple.com/document
 
 ## See Also
 
-- [class func defaultValue(forKey: String) -> Any?](calayer/defaultvalue(forkey:).md)
+### Key-value coding extensions
+- [class func defaultValue(forKey: String) -> Any?](./defaultvalue%28forkey%29.md)
   Specifies the default value associated with the specified key.
 
 

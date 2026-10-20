@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassCordlessTelephony
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassCordlessTelephony = 0x1109
 ```
 

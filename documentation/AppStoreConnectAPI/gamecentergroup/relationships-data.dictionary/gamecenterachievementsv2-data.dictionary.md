@@ -1,7 +1,8 @@
 # GameCenterGroup.Relationships.GameCenterAchievementsV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the Game Center achievements of the Game Center group.
 
@@ -10,7 +11,7 @@ The data and links that describe the Game Center achievements of the Game Center
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroup.Relationships.GameCenterAchievementsV2
 ```
 
@@ -23,7 +24,7 @@ object GameCenterGroup.Relationships.GameCenterAchievementsV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterGroup.Relationships.GameCenterAchievementsV2.Data](gamecentergroup/relationships-data.dictionary/gamecenterachievementsv2-data.dictionary/data-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterAchievementsV2.Data](./gamecenterachievementsv2-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

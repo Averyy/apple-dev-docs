@@ -1,12 +1,13 @@
 # isEditable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the rule editor is editable.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A Boolean value that determines whether the rule editor is editable.
 var isEditable: Bool { get set }
 ```
 
+```objc
+@property (getter=isEditable) BOOL editable;
+```
+
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true).
+The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var nestingMode: NSRuleEditor.NestingMode](nsruleeditor/nestingmode-swift.property.md)
+### Configuring a Rule Editor
+- [var nestingMode: NSRuleEditor.NestingMode](./nestingmode-swift.property.md)
   The rule editor’s nesting mode.
-- [NSRuleEditor.NestingMode](nsruleeditor/nestingmode-swift.enum.md)
+- [NSRuleEditor.NestingMode](./nestingmode-swift.enum.md)
   Specifies a type for nesting modes.
-- [var canRemoveAllRows: Bool](nsruleeditor/canremoveallrows.md)
+- [var canRemoveAllRows: Bool](./canremoveallrows.md)
   A Boolean value that indicates whether all the rows can be removed.
-- [var rowHeight: CGFloat](nsruleeditor/rowheight.md)
+- [var rowHeight: CGFloat](./rowheight.md)
   The rule editor’s row height.
 
 

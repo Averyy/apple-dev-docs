@@ -1,7 +1,8 @@
 # UISplitViewController.Column.primary
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The column for the primary view controller.
 
@@ -18,15 +19,20 @@ The column for the primary view controller.
 case primary
 ```
 
+```c
+UISplitViewControllerColumnPrimary
+```
+
 ## See Also
 
-- [UISplitViewController.Column.supplementary](uisplitviewcontroller/column/supplementary.md)
+### Constants
+- [UISplitViewController.Column.supplementary](./supplementary.md)
   The column for the supplementary view controller.
-- [UISplitViewController.Column.secondary](uisplitviewcontroller/column/secondary.md)
+- [UISplitViewController.Column.secondary](./secondary.md)
   The column for the secondary, or detail, view controller.
-- [UISplitViewController.Column.compact](uisplitviewcontroller/column/compact.md)
+- [UISplitViewController.Column.compact](./compact.md)
   The column for the view controller that’s shown when the split view controller is collapsed.
-- [UISplitViewController.Column.inspector](uisplitviewcontroller/column/inspector.md)
+- [UISplitViewController.Column.inspector](./inspector.md)
   The column for the inspector, or trailing, view controller.
 
 

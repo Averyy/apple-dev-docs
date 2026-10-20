@@ -1,7 +1,8 @@
 # allowsUltraConstrainedNetworkAccess
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `true` if the receiver is allowed to use an interface marked as ultra-constrained to satify the request, `false` otherwise.
 

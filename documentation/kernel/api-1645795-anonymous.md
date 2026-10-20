@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBHostClassRequestCompletionTimeout](1645795-anonymous/kusbhostclassrequestcompletiontimeout.md)
-- [kUSBHostClassRequestNoDataTimeout](1645795-anonymous/kusbhostclassrequestnodatatimeout.md)
-- [kUSBHostDefaultControlCompletionTimeoutMS](1645795-anonymous/kusbhostdefaultcontrolcompletiontimeoutms.md)
-- [kUSBHostDefaultControlNoDataTimeoutMS](1645795-anonymous/kusbhostdefaultcontrolnodatatimeoutms.md)
-- [kUSBHostSetAddressTimeout](1645795-anonymous/kusbhostsetaddresstimeout.md)
-- [kUSBHostStandardRequestCompletionTimeout](1645795-anonymous/kusbhoststandardrequestcompletiontimeout.md)
-- [kUSBHostStandardRequestNoDataTimeout](1645795-anonymous/kusbhoststandardrequestnodatatimeout.md)
-- [kUSBHostStandardRequestSimpleCompletionTimeout](1645795-anonymous/kusbhoststandardrequestsimplecompletiontimeout.md)
-- [kUSBHostVendorRequestCompletionTimeout](1645795-anonymous/kusbhostvendorrequestcompletiontimeout.md)
-- [kUSBHostVendorRequestNoDataTimeout](1645795-anonymous/kusbhostvendorrequestnodatatimeout.md)
+- [kUSBHostClassRequestCompletionTimeout](./api-1645795-anonymous/kusbhostclassrequestcompletiontimeout.md)
+- [kUSBHostClassRequestNoDataTimeout](./api-1645795-anonymous/kusbhostclassrequestnodatatimeout.md)
+- [kUSBHostDefaultControlCompletionTimeoutMS](./api-1645795-anonymous/kusbhostdefaultcontrolcompletiontimeoutms.md)
+- [kUSBHostDefaultControlNoDataTimeoutMS](./api-1645795-anonymous/kusbhostdefaultcontrolnodatatimeoutms.md)
+- [kUSBHostSetAddressTimeout](./api-1645795-anonymous/kusbhostsetaddresstimeout.md)
+- [kUSBHostStandardRequestCompletionTimeout](./api-1645795-anonymous/kusbhoststandardrequestcompletiontimeout.md)
+- [kUSBHostStandardRequestNoDataTimeout](./api-1645795-anonymous/kusbhoststandardrequestnodatatimeout.md)
+- [kUSBHostStandardRequestSimpleCompletionTimeout](./api-1645795-anonymous/kusbhoststandardrequestsimplecompletiontimeout.md)
+- [kUSBHostVendorRequestCompletionTimeout](./api-1645795-anonymous/kusbhostvendorrequestcompletiontimeout.md)
+- [kUSBHostVendorRequestNoDataTimeout](./api-1645795-anonymous/kusbhostvendorrequestnodatatimeout.md)
 
 
 ---

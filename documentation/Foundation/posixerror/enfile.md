@@ -1,7 +1,8 @@
 # ENFILE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Too many open files in system.
 

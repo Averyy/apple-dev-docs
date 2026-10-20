@@ -1,7 +1,8 @@
 # AVAssetSegmentTrackReport
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides information on a track in segment data.
 
@@ -19,43 +20,48 @@ An object that provides information on a track in segment data.
 class AVAssetSegmentTrackReport
 ```
 
+```objc
+@interface AVAssetSegmentTrackReport : NSObject
+```
+
 ## Topics
 
 ### Inspecting a report
-- [var trackID: CMPersistentTrackID](avassetsegmenttrackreport/trackid.md)
+- [var trackID: CMPersistentTrackID](./avassetsegmenttrackreport/trackid.md)
   A persistent unique identifier for a track.
-- [var mediaType: AVMediaType](avassetsegmenttrackreport/mediatype.md)
+- [var mediaType: AVMediaType](./avassetsegmenttrackreport/mediatype.md)
   The type of media a track contains.
-- [var duration: CMTime](avassetsegmenttrackreport/duration.md)
+- [var duration: CMTime](./avassetsegmenttrackreport/duration.md)
   The duration of a track.
-- [var earliestPresentationTimeStamp: CMTime](avassetsegmenttrackreport/earliestpresentationtimestamp.md)
+- [var earliestPresentationTimeStamp: CMTime](./avassetsegmenttrackreport/earliestpresentationtimestamp.md)
   The earliest presentation timestamp (PTS) for this track.
-- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](avassetsegmenttrackreport/firstvideosampleinformation.md)
+- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](./avassetsegmenttrackreport/firstvideosampleinformation.md)
   Information about the first video sample in a track.
-- [class AVAssetSegmentReportSampleInformation](avassetsegmentreportsampleinformation.md)
+- [class AVAssetSegmentReportSampleInformation](./avassetsegmentreportsampleinformation.md)
   An object that provides information about sample data in a track.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var segmentType: AVAssetSegmentType](avassetsegmentreport/segmenttype.md)
+### Inspecting a report
+- [var segmentType: AVAssetSegmentType](./avassetsegmentreport/segmenttype.md)
   The type of segment data.
-- [enum AVAssetSegmentType](avassetsegmenttype.md)
+- [enum AVAssetSegmentType](./avassetsegmenttype.md)
   Constants that define the type of a segment.
-- [var trackReports: [AVAssetSegmentTrackReport]](avassetsegmentreport/trackreports.md)
+- [var trackReports: [AVAssetSegmentTrackReport]](./avassetsegmentreport/trackreports.md)
   The reports for the segment’s track data.
 
 

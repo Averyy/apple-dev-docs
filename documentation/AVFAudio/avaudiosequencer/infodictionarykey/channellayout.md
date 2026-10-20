@@ -1,7 +1,8 @@
 # channelLayout
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the channel layout.
 
@@ -17,6 +18,10 @@ A key that represents the channel layout.
 
 ```swift
 static let channelLayout: AVAudioSequencer.InfoDictionaryKey
+```
+
+```c
+extern AVAudioSequencerInfoDictionaryKey AVAudioSequencerInfoDictionaryKeyChannelLayout;
 ```
 
 

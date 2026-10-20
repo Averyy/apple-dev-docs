@@ -1,14 +1,15 @@
 # IOUSBHostCISetupTransferData1wValue
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCISetupTransferData1wValue = IOUSBBitRange64(16, 31)
 ```
 

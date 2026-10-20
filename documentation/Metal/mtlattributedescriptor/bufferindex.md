@@ -1,7 +1,8 @@
 # bufferIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index in the buffer argument table for the buffer that contains the data for this attribute.
 
@@ -19,13 +20,18 @@ The index in the buffer argument table for the buffer that contains the data for
 var bufferIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger bufferIndex;
+```
+
 ## See Also
 
-- [var offset: Int](mtlattributedescriptor/offset.md)
+### Defining attribute location
+- [var offset: Int](./offset.md)
   The offset, in bytes, from the start of the buffer that contains the attribute data to the start of the data itself.
-- [var format: MTLAttributeFormat](mtlattributedescriptor/format.md)
+- [var format: MTLAttributeFormat](./format.md)
   The format of the attribute’s data.
-- [enum MTLAttributeFormat](mtlattributeformat.md)
+- [enum MTLAttributeFormat](../mtlattributeformat.md)
   The data format options for acceleration structures.
 
 

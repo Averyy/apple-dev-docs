@@ -1,7 +1,8 @@
 # result
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result or error from a throwing task, after it completes.
 
@@ -20,6 +21,8 @@ The result or error from a throwing task, after it completes.
 var result: Result<Success, Failure> { get async }
 ```
 
+Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 #### Return Value
 
 If the task succeeded, `.success` with the task’s result as the associated value; otherwise, `.failure` with the error as the associated value.
@@ -30,9 +33,10 @@ If the task hasn’t completed, accessing this property waits for it to complete
 
 ## See Also
 
-- [var value: Success](task/value-60t02.md)
+### Accessing Results
+- [var value: Success](./value-60t02.md)
   The result from a throwing task, after it completes.
-- [var value: Success](task/value-40dtq.md)
+- [var value: Success](./value-40dtq.md)
   The result from a nonthrowing task, after it completes.
 
 

@@ -1,7 +1,8 @@
 # moveForward()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Move VoiceOver to the next element and return its speech.
 
@@ -19,6 +20,10 @@ Move VoiceOver to the next element and return its speech.
 
 ```swift
 func moveForward() throws -> XCUIVoiceOverService.Output
+```
+
+```objc
+- (XCUIVoiceOverOutput *) moveForwardAndReturnError:(NSError **) error;
 ```
 
 

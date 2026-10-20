@@ -1,7 +1,8 @@
 # getPendingDatasetRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command GetPendingDatasetRequest
 
@@ -17,7 +18,15 @@ Command GetPendingDatasetRequest
 ## Declaration
 
 ```swift
+func getPendingDatasetRequest(with params: MTRThreadBorderRouterManagementClusterGetPendingDatasetRequestParams?, completion: @escaping @Sendable (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func pendingDatasetRequest(with params: MTRThreadBorderRouterManagementClusterGetPendingDatasetRequestParams?) async throws -> MTRThreadBorderRouterManagementClusterDatasetResponseParams
+```
+
+```objc
+- (void) getPendingDatasetRequestWithParams:(MTRThreadBorderRouterManagementClusterGetPendingDatasetRequestParams *) params completion:(void (^)(MTRThreadBorderRouterManagementClusterDatasetResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

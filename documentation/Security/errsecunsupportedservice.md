@@ -1,7 +1,8 @@
 # errSecUnsupportedService
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The service is not supported.
 
@@ -18,6 +19,10 @@ The service is not supported.
 
 ```swift
 var errSecUnsupportedService: OSStatus { get }
+```
+
+```c
+errSecUnsupportedService
 ```
 
 

@@ -1,7 +1,8 @@
 # senselArrayPattern
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bayer pattern indicating sensel arrangement.
 

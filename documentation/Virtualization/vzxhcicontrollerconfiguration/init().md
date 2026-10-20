@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a USB Extensible Host Controller Interface (XHCI) configuration.
 
@@ -12,6 +13,10 @@ Creates a USB Extensible Host Controller Interface (XHCI) configuration.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

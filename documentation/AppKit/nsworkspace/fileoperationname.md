@@ -1,12 +1,15 @@
 # NSWorkspace.FileOperationName
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that define types of file operations.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
+
+> **Deprecated**: Use [`FileManager`](../../Foundation/filemanager.md) methods instead.
 
 ## Declaration
 
@@ -14,51 +17,56 @@ Constants that define types of file operations.
 struct FileOperationName
 ```
 
+```c
+typedef NSString * NSWorkspaceFileOperationName;
+```
+
 #### Overview
 
-These constants specify different types of file operations used by [`performFileOperation(_:source:destination:files:tag:)`](nsworkspace/performfileoperation(_:source:destination:files:tag:).md).
+These constants specify different types of file operations used by [`performFileOperation(_:source:destination:files:tag:)`](./performfileoperation%28_,source,destination,files,tag%29.md).
 
 ## Topics
 
 ### Type Properties
-- [static let compressOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/compressoperation.md)
+- [static let compressOperation: NSWorkspace.FileOperationName](./fileoperationname/compressoperation.md)
   Compress file. This operation always returns an error.
-- [static let copyOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/copyoperation.md)
+- [static let copyOperation: NSWorkspace.FileOperationName](./fileoperationname/copyoperation.md)
   Copy file to destination.
-- [static let decompressOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/decompressoperation.md)
+- [static let decompressOperation: NSWorkspace.FileOperationName](./fileoperationname/decompressoperation.md)
   Decompress file. This operation always returns an error.
-- [static let decryptOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/decryptoperation.md)
+- [static let decryptOperation: NSWorkspace.FileOperationName](./fileoperationname/decryptoperation.md)
   Decrypt file. This operation always returns an error.
-- [static let destroyOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/destroyoperation.md)
+- [static let destroyOperation: NSWorkspace.FileOperationName](./fileoperationname/destroyoperation.md)
   Destroy file.
-- [static let duplicateOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/duplicateoperation.md)
+- [static let duplicateOperation: NSWorkspace.FileOperationName](./fileoperationname/duplicateoperation.md)
   Duplicate file in source directory.
-- [static let encryptOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/encryptoperation.md)
+- [static let encryptOperation: NSWorkspace.FileOperationName](./fileoperationname/encryptoperation.md)
   Encrypt file. This operation always returns an error.
-- [static let linkOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/linkoperation.md)
+- [static let linkOperation: NSWorkspace.FileOperationName](./fileoperationname/linkoperation.md)
   Create hard link to file in destination.
-- [static let moveOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/moveoperation.md)
+- [static let moveOperation: NSWorkspace.FileOperationName](./fileoperationname/moveoperation.md)
   Move file to destination.
-- [static let recycleOperation: NSWorkspace.FileOperationName](nsworkspace/fileoperationname/recycleoperation.md)
+- [static let recycleOperation: NSWorkspace.FileOperationName](./fileoperationname/recycleoperation.md)
   Move file to trash.
 ### Initializers
-- [init(rawValue: String)](nsworkspace/fileoperationname/init(rawvalue:).md)
+- [init(rawValue: String)](./fileoperationname/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSWorkspace.LaunchOptions](nsworkspace/launchoptions.md)
+### Deprecated types
+- [NSWorkspace.LaunchOptions](./launchoptions.md)
   Constants specifying how you want to launch an app
-- [NSWorkspace.LaunchConfigurationKey](nsworkspace/launchconfigurationkey.md)
-  The following keys can be used in the configuration dictionary of the [`launchApplication(at:options:configuration:)`](nsworkspace/launchapplication(at:options:configuration:).md) method.  Each key is optional, and if omitted, default behavior is applied.
+- [NSWorkspace.LaunchConfigurationKey](./launchconfigurationkey.md)
+  The following keys can be used in the configuration dictionary of the [`launchApplication(at:options:configuration:)`](./launchapplication%28at,options,configuration%29.md) method.  Each key is optional, and if omitted, default behavior is applied.
 
 
 ---

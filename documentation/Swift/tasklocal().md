@@ -1,9 +1,10 @@
 # TaskLocal()
 
 **Framework**: Swift  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
-Macro that introduces a [`TaskLocal`](tasklocal.md) binding.
+Macro that introduces a [`TaskLocal`](./tasklocal.md) binding.
 
 **Availability**:
 - iOS 13.0+
@@ -23,13 +24,14 @@ Macro that introduces a [`TaskLocal`](tasklocal.md) binding.
 
 #### Overview
 
-For information about task-local bindings, see [`TaskLocal`](tasklocal.md).
+For information about task-local bindings, see [`TaskLocal`](./tasklocal.md).
 
-> **Note**: [`TaskLocal`](tasklocal.md)
+> **See Also**: [`TaskLocal`](./tasklocal.md)
 
 ## See Also
 
-- [class TaskLocal](tasklocal.md)
+### Task-Local Storage
+- [class TaskLocal](./tasklocal.md)
   Wrapper type that defines a task-local value key.
 
 

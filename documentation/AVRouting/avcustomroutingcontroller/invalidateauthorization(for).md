@@ -1,7 +1,8 @@
 # invalidateAuthorization(for:)
 
 **Framework**: AVRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Revokes an app’s authorization to connect to a route.
 
@@ -17,6 +18,10 @@ Revokes an app’s authorization to connect to a route.
 func invalidateAuthorization(for route: AVCustomDeviceRoute)
 ```
 
+```objc
+- (void) invalidateAuthorizationForRoute:(AVCustomDeviceRoute *) route;
+```
+
 #### Discussion
 
 The route only becomes authorized again if the user selects it using the route picker.
@@ -27,9 +32,10 @@ The route only becomes authorized again if the user selects it using the route p
 
 ## See Also
 
-- [var authorizedRoutes: [AVCustomDeviceRoute]](avcustomroutingcontroller/authorizedroutes.md)
+### Managing authorization
+- [var authorizedRoutes: [AVCustomDeviceRoute]](./authorizedroutes.md)
   A list of authorized routes.
-- [class let authorizedRoutesDidChange: NSNotification.Name](avcustomroutingcontroller/authorizedroutesdidchange.md)
+- [class let authorizedRoutesDidChange: NSNotification.Name](./authorizedroutesdidchange.md)
   A notification the system posts when the list of authorized routes changes.
 
 

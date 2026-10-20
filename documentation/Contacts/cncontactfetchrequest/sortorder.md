@@ -1,7 +1,8 @@
 # sortOrder
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort order for contacts.
 
@@ -19,17 +20,30 @@ The sort order for contacts.
 var sortOrder: CNContactSortOrder { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic) CNContactSortOrder sortOrder;
+```
+
+*macOS*
+
+```objc
+@property (atomic) CNContactSortOrder sortOrder;
+```
+
 #### Discussion
 
 The default sort order is `CNContactSortOrderNone`.
 
 ## See Also
 
-- [var mutableObjects: Bool](cncontactfetchrequest/mutableobjects.md)
+### Configuring the Fetch Options
+- [var mutableObjects: Bool](./mutableobjects.md)
   A Boolean value that indicates whether to return mutable contacts.
-- [var unifyResults: Bool](cncontactfetchrequest/unifyresults.md)
+- [var unifyResults: Bool](./unifyresults.md)
   A Boolean value that indicates whether to return linked contacts as unified contacts.
-- [enum CNContactSortOrder](cncontactsortorder.md)
+- [enum CNContactSortOrder](../cncontactsortorder.md)
   Indicates the sorting order for contacts.
 
 

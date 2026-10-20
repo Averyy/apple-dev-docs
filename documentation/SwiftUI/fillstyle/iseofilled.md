@@ -1,7 +1,8 @@
 # isEOFilled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to use the even-odd rule when rendering a shape.
 
@@ -26,7 +27,8 @@ When `isOEFilled` is `false`, the style uses the non-zero winding number rule.
 
 ## See Also
 
-- [var isAntialiased: Bool](fillstyle/isantialiased.md)
+### Setting fill style properties
+- [var isAntialiased: Bool](./isantialiased.md)
   A Boolean value that indicates whether to apply antialiasing to the edges of a shape.
 
 

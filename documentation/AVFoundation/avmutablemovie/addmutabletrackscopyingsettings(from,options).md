@@ -1,7 +1,8 @@
 # addMutableTracksCopyingSettings(from:options:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds one or more empty tracks to the target movie and copies the track settings from the source tracks.
 
@@ -19,9 +20,13 @@ Adds one or more empty tracks to the target movie and copies the track settings 
 func addMutableTracksCopyingSettings(from existingTracks: [AVAssetTrack], options: [String : Any]? = nil) -> [AVMutableMovieTrack]
 ```
 
+```objc
+- (NSArray<AVMutableMovieTrack *> *) addMutableTracksCopyingSettingsFromTracks:(NSArray<AVAssetTrack *> *) existingTracks options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
-An array of [`AVMutableMovieTrack`](avmutablemovietrack.md) objects. The index of a track in this array is the same as the index of its source track in the `existingTracks` array.
+An array of [`AVMutableMovieTrack`](../avmutablemovietrack.md) objects. The index of a track in this array is the same as the index of its source track in the `existingTracks` array.
 
 #### Discussion
 
@@ -34,11 +39,12 @@ Properties involving pairs of tracks,such as track references, are copied from t
 
 ## See Also
 
-- [func mutableTrack(compatibleWith: AVAssetTrack) -> AVMutableMovieTrack?](avmutablemovie/mutabletrack(compatiblewith:).md)
+### Managing tracks
+- [func mutableTrack(compatibleWith: AVAssetTrack) -> AVMutableMovieTrack?](./mutabletrack%28compatiblewith%29.md)
   Provides a reference to a track from a mutable movie into which you can insert any time range.
-- [func addMutableTrack(withMediaType: AVMediaType, copySettingsFrom: AVAssetTrack?, options: [String : Any]?) -> AVMutableMovieTrack?](avmutablemovie/addmutabletrack(withmediatype:copysettingsfrom:options:).md)
+- [func addMutableTrack(withMediaType: AVMediaType, copySettingsFrom: AVAssetTrack?, options: [String : Any]?) -> AVMutableMovieTrack?](./addmutabletrack%28withmediatype,copysettingsfrom,options%29.md)
   Adds an empty track to the target movie.
-- [func removeTrack(AVMovieTrack)](avmutablemovie/removetrack(_:).md)
+- [func removeTrack(AVMovieTrack)](./removetrack%28_%29.md)
   Removes the specified track from the target movie.
 
 

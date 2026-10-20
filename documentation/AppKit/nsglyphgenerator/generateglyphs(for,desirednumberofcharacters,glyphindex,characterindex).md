@@ -1,17 +1,22 @@
 # generateGlyphs(for:desiredNumberOfCharacters:glyphIndex:characterIndex:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates glyphs for the specified glyph storage object (`NSLayoutManager` by default).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func generateGlyphs(for glyphStorage: any NSGlyphStorage, desiredNumberOfCharacters nChars: Int, glyphIndex: UnsafeMutablePointer<Int>?, characterIndex charIndex: UnsafeMutablePointer<Int>?)
+```
+
+```objc
+- (void) generateGlyphsForGlyphStorage:(id<NSGlyphStorage>) glyphStorage desiredNumberOfCharacters:(NSUInteger) nChars glyphIndex:(NSUInteger *) glyphIndex characterIndex:(NSUInteger *) charIndex;
 ```
 
 #### Discussion

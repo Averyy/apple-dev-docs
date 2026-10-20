@@ -1,7 +1,8 @@
 # MPMediaEntity
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for media items, media item collections, and media playlist instances.
 
@@ -18,63 +19,68 @@ The abstract superclass for media items, media item collections, and media playl
 class MPMediaEntity
 ```
 
+```objc
+@interface MPMediaEntity : NSObject
+```
+
 #### Overview
 
-This is the superclass for [`MPMediaItem`](mpmediaitem.md) and [`MPMediaItemCollection`](mpmediaitemcollection.md) instances, and in turn for [`MPMediaPlaylist`](mpmediaplaylist.md) instances.
+This is the superclass for [`MPMediaItem`](./mpmediaitem.md) and [`MPMediaItemCollection`](./mpmediaitemcollection.md) instances, and in turn for [`MPMediaPlaylist`](./mpmediaplaylist.md) instances.
 
 ## Topics
 
 ### Working with media properties
-- [class func canFilter(byProperty: String) -> Bool](mpmediaentity/canfilter(byproperty:).md)
+- [class func canFilter(byProperty: String) -> Bool](./mpmediaentity/canfilter%28byproperty%29.md)
   Indicates whether you can use the media property key that you specify to construct a media property predicate.
-- [func enumerateValues(forProperties: Set<String>, using: (String, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](mpmediaentity/enumeratevalues(forproperties:using:).md)
+- [func enumerateValues(forProperties: Set<String>, using: (String, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./mpmediaentity/enumeratevalues%28forproperties,using%29.md)
   Executes a provided block with the fetched values for the given item properties.
-- [var persistentID: MPMediaEntityPersistentID](mpmediaentity/persistentid.md)
+- [var persistentID: MPMediaEntityPersistentID](./mpmediaentity/persistentid.md)
   The persistent identifier for a media entity.
-- [subscript(Any) -> Any?](mpmediaentity/subscript(_:).md)
+- [subscript(Any) -> Any?](./mpmediaentity/subscript%28_%29.md)
   Returns the object specified by the key.
-- [func value(forProperty: String) -> Any?](mpmediaentity/value(forproperty:).md)
+- [func value(forProperty: String) -> Any?](./mpmediaentity/value%28forproperty%29.md)
   Retrieves the value for a specified media property key.
-- [typealias MPMediaEntityPersistentID](mpmediaentitypersistentid.md)
+- [typealias MPMediaEntityPersistentID](./mpmediaentitypersistentid.md)
   Defines the type for storing a persistent identifier to a particular entity.
 ### Media entity property keys
-- [Media entity property keys](media-entity-property-keys.md)
+- [Media entity property keys](./media-entity-property-keys.md)
   The property keys used to retrieve metadata for media entities.
 ### Initializers
-- [init?(coder: NSCoder)](mpmediaentity/init(coder:).md)
+- [init?(coder: NSCoder)](./mpmediaentity/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MPMediaItem](mpmediaitem.md)
-- [MPMediaItemCollection](mpmediaitemcollection.md)
+- [MPMediaItem](./mpmediaitem.md)
+- [MPMediaItemCollection](./mpmediaitemcollection.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+### Media items and playlists
+- [Providing animated artwork for media items](./providing-animated-artwork-for-media-items.md)
   Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
-- [class MPMediaItem](mpmediaitem.md)
+- [class MPMediaItem](./mpmediaitem.md)
   A collection of properties that represents a single item in the media library.
-- [class MPMediaItemArtwork](mpmediaitemartwork.md)
+- [class MPMediaItemArtwork](./mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
-- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+- [class MPMediaItemAnimatedArtwork](./mpmediaitemanimatedartwork.md)
   An animated image, such as an animated music album cover art, for a media item.
-- [class MPMediaItemCollection](mpmediaitemcollection.md)
+- [class MPMediaItemCollection](./mpmediaitemcollection.md)
   A sorted set of media items from the media library.
-- [class MPMediaPlaylist](mpmediaplaylist.md)
+- [class MPMediaPlaylist](./mpmediaplaylist.md)
   A playable collection of related media items.
-- [class MPMediaPlaylistCreationMetadata](mpmediaplaylistcreationmetadata.md)
+- [class MPMediaPlaylistCreationMetadata](./mpmediaplaylistcreationmetadata.md)
   A set of attributes for describing a playlist when creating it.
 
 

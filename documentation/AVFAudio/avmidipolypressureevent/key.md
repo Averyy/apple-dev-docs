@@ -1,7 +1,8 @@
 # key
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI key number.
 
@@ -19,9 +20,14 @@ The MIDI key number.
 var key: UInt32 { get set }
 ```
 
+```objc
+@property (readwrite) UInt32 key;
+```
+
 ## See Also
 
-- [var pressure: UInt32](avmidipolypressureevent/pressure.md)
+### Configuring a poly pressure event
+- [var pressure: UInt32](./pressure.md)
   The poly pressure value for the requested key.
 
 

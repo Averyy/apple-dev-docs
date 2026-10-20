@@ -1,7 +1,8 @@
 # MerchantIdCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a merchant ID.
 
@@ -10,14 +11,14 @@ The request body you use to create a merchant ID.
 
 ## Declaration
 
-```swift
+```
 object MerchantIdCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object MerchantIdCreateRequest.Data](merchantidcreaterequest/data-data.dictionary.md)
+- [object MerchantIdCreateRequest.Data](./merchantidcreaterequest/data-data.dictionary.md)
   The request body you use to create a merchant ID.
 
 ## Properties
@@ -26,15 +27,16 @@ object MerchantIdCreateRequest
 
 ## See Also
 
-- [object MerchantId](merchantid.md)
+### Objects
+- [object MerchantId](./merchantid.md)
   An Apple Pay merchant identifier registered to your account, used to associate payment capabilities with your app’s bundle ID.
-- [object MerchantIdResponse](merchantidresponse.md)
+- [object MerchantIdResponse](./merchantidresponse.md)
   A response containing a single Apple Pay merchant identifier.
-- [object MerchantIdsResponse](merchantidsresponse.md)
+- [object MerchantIdsResponse](./merchantidsresponse.md)
   A response containing a list of Apple Pay merchant identifiers registered to your account.
-- [object MerchantIdUpdateRequest](merchantidupdaterequest.md)
+- [object MerchantIdUpdateRequest](./merchantidupdaterequest.md)
   The request body you use to update a merchant ID.
-- [object MerchantIdCertificatesLinkagesResponse](merchantidcertificateslinkagesresponse.md)
+- [object MerchantIdCertificatesLinkagesResponse](./merchantidcertificateslinkagesresponse.md)
 
 
 ---

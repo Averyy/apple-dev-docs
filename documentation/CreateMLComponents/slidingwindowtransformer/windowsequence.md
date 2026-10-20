@@ -1,7 +1,8 @@
 # SlidingWindowTransformer.WindowSequence
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async sequence of windows.
 
@@ -20,24 +21,27 @@ An async sequence of windows.
 struct WindowSequence
 ```
 
+Available when `Input` conforms to `Sendable`.
+
 ## Topics
 
 ### Getting the count
-- [var count: Int?](slidingwindowtransformer/windowsequence/count.md)
+- [var count: Int?](./windowsequence/count.md)
   The number of elements in the sequence.
 ### Creating an iterator
-- [SlidingWindowTransformer.WindowSequence.Iterator](slidingwindowtransformer/windowsequence/iterator.md)
+- [SlidingWindowTransformer.WindowSequence.Iterator](./windowsequence/iterator.md)
   An async iterator of window sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [TemporalSequence](../temporalsequence.md)
 
 ## See Also
 
-- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> SlidingWindowTransformer<Input>.WindowSequence](slidingwindowtransformer/applied(to:eventhandler:).md)
+### Performing the transformation
+- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> SlidingWindowTransformer<Input>.WindowSequence](./applied%28to,eventhandler%29.md)
   Extracts a window sequence from the input sequence
 
 

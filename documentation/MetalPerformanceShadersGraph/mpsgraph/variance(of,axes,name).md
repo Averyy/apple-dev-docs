@@ -1,7 +1,8 @@
 # variance(of:axes:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the variance of the first input along the specified axes.
 
@@ -17,6 +18,10 @@ Returns the variance of the first input along the specified axes.
 
 ```swift
 func variance(of tensor: MPSGraphTensor, axes: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) varianceOfTensor:(MPSGraphTensor *) tensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
 #### Return Value

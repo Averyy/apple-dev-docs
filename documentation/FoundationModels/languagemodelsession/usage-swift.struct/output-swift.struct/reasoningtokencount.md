@@ -1,7 +1,8 @@
 # reasoningTokenCount
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of output tokens that were part of the model’s reasoning output.
 
@@ -21,11 +22,12 @@ var reasoningTokenCount: Int
 
 #### Discussion
 
-This value is always less than or equal to [`totalTokenCount`](languagemodelsession/usage-swift.struct/output-swift.struct/totaltokencount.md). A non-zero value requires the model to declare the [`reasoning`](languagemodelcapabilities/capability/reasoning.md) capability.
+This value is always less than or equal to [`totalTokenCount`](./totaltokencount.md). A non-zero value requires the model to declare the [`reasoning`](../../../languagemodelcapabilities/capability/reasoning.md) capability.
 
 ## See Also
 
-- [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/output-swift.struct/totaltokencount.md)
+### Getting the token count
+- [var totalTokenCount: Int](./totaltokencount.md)
   The total number of output tokens.
 
 

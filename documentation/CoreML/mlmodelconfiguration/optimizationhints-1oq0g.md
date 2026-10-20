@@ -1,7 +1,8 @@
 # optimizationHints
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A group of hints for CoreML to optimize
 

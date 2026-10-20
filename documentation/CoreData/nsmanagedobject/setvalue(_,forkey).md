@@ -1,7 +1,8 @@
 # setValue(_:forKey:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the specified property of the managed object to the specified value.
 
@@ -10,7 +11,7 @@ Sets the specified property of the managed object to the specified value.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sets the specified property of the managed object to the specified value.
 
 ```swift
 func setValue(_ value: Any?, forKey key: String)
+```
+
+```objc
+- (void) setValue:(id) value forKey:(NSString *) key;
 ```
 
 #### Discussion
@@ -35,15 +40,17 @@ This method is overridden by `NSManagedObject` to access the managed object’s 
 
 ## See Also
 
-- [func setObservationInfo(UnsafeMutableRawPointer?)](nsmanagedobject/setobservationinfo(_:).md)
+### Related Documentation
+- [func setObservationInfo(UnsafeMutableRawPointer?)](./setobservationinfo%28_%29.md)
   Sets the observation info of the managed object.
-- [func value(forKey: String) -> Any?](nsmanagedobject/value(forkey:).md)
+### Supporting Key-Value Coding
+- [func value(forKey: String) -> Any?](./value%28forkey%29.md)
   Returns the value for the property specified by `key`.
-- [func primitiveValue(forKey: String) -> Any?](nsmanagedobject/primitivevalue(forkey:).md)
+- [func primitiveValue(forKey: String) -> Any?](./primitivevalue%28forkey%29.md)
   Returns the value for the specified property from the managed object’s private internal storage .
-- [func setPrimitiveValue(Any?, forKey: String)](nsmanagedobject/setprimitivevalue(_:forkey:).md)
+- [func setPrimitiveValue(Any?, forKey: String)](./setprimitivevalue%28_,forkey%29.md)
   Sets the value of a given property in the managed object’s private internal storage.
-- [func objectIDs(forRelationshipNamed: String) -> [NSManagedObjectID]](nsmanagedobject/objectids(forrelationshipnamed:).md)
+- [func objectIDs(forRelationshipNamed: String) -> [NSManagedObjectID]](./objectids%28forrelationshipnamed%29.md)
   Returns the object IDs for all of the managed objects that are in the named relationship.
 
 

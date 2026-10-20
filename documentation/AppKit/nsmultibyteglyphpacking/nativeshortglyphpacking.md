@@ -1,17 +1,22 @@
 # NSMultibyteGlyphPacking.nativeShortGlyphPacking
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The native format for macOS.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
 
 ## Declaration
 
 ```swift
 case nativeShortGlyphPacking
+```
+
+```c
+NSNativeShortGlyphPacking
 ```
 
 

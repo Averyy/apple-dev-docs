@@ -1,7 +1,8 @@
 # JSONEncoder.DataEncodingStrategy.deferredToData
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that encodes data using the encoding specified by the data instance itself.
 

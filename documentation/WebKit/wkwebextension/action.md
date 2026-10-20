@@ -1,7 +1,8 @@
 # WKWebExtension.Action
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates the properties for an individual web extension action.
 
@@ -19,6 +20,10 @@ An object that encapsulates the properties for an individual web extension actio
 class Action
 ```
 
+```objc
+@interface WKWebExtensionAction : NSObject
+```
+
 #### Overview
 
 This class provides access to action properties, such as pop-up, icon, or title, with tab-specific values.
@@ -26,77 +31,78 @@ This class provides access to action properties, such as pop-up, icon, or title,
 ## Topics
 
 ### Instance Properties
-- [var associatedTab: (any WKWebExtensionTab)?](wkwebextension/action/associatedtab.md)
+- [var associatedTab: (any WKWebExtensionTab)?](./action/associatedtab.md)
   The tab that this action is associated with, or `nil` if it’s the default action.
-- [var badgeText: String](wkwebextension/action/badgetext.md)
+- [var badgeText: String](./action/badgetext.md)
   The badge text for the action.
-- [var hasUnreadBadgeText: Bool](wkwebextension/action/hasunreadbadgetext.md)
+- [var hasUnreadBadgeText: Bool](./action/hasunreadbadgetext.md)
   A Boolean value indicating whether the badge text is unread.
-- [var inspectionName: String?](wkwebextension/action/inspectionname.md)
+- [var inspectionName: String?](./action/inspectionname.md)
   The name shown when inspecting the pop-up web view.
-- [var isEnabled: Bool](wkwebextension/action/isenabled.md)
+- [var isEnabled: Bool](./action/isenabled.md)
   A Boolean value indicating whether the action is enabled.
-- [var label: String](wkwebextension/action/label.md)
+- [var label: String](./action/label.md)
   The localized display label for the action.
-- [var menuItems: [UIMenuElement]](wkwebextension/action/menuitems.md)
+- [var menuItems: [UIMenuElement]](./action/menuitems.md)
   The menu items provided by the extension for this action.
-- [var popupPopover: NSPopover?](wkwebextension/action/popuppopover.md)
+- [var popupPopover: NSPopover?](./action/popuppopover.md)
   A popover that presents a web view loaded with the pop-up page for this action, or `nil` if no popup is specified.
-- [var popupViewController: UIViewController?](wkwebextension/action/popupviewcontroller.md)
+- [var popupViewController: UIViewController?](./action/popupviewcontroller.md)
   A view controller that presents a web view loaded with the pop-up page for this action, or `nil` if no popup is specified.
-- [var popupWebView: WKWebView?](wkwebextension/action/popupwebview.md)
+- [var popupWebView: WKWebView?](./action/popupwebview.md)
   A web view loaded with the pop-up page for this action, or `nil` if no pop-up is specified.
-- [var presentsPopup: Bool](wkwebextension/action/presentspopup.md)
+- [var presentsPopup: Bool](./action/presentspopup.md)
   A Boolean value indicating whether the action has a pop-up.
-- [var webExtensionContext: WKWebExtensionContext?](wkwebextension/action/webextensioncontext.md)
+- [var webExtensionContext: WKWebExtensionContext?](./action/webextensioncontext.md)
   The extension context to which this action is related.
 ### Instance Methods
-- [func closePopup()](wkwebextension/action/closepopup.md)
+- [func closePopup()](./action/closepopup%28%29.md)
   Triggers the dismissal process of the pop-up.
-- [func icon(for: CGSize) -> UIImage?](wkwebextension/action/icon(for:).md)
+- [func icon(for: CGSize) -> UIImage?](./action/icon%28for%29.md)
   Returns the action icon for the specified size.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebExtension](wkwebextension.md)
+### Web extensions
+- [class WKWebExtension](../wkwebextension.md)
   An object that encapsulates a web extension’s resources that the manifest file defines.
-- [protocol WKWebExtensionTab](wkwebextensiontab.md)
+- [protocol WKWebExtensionTab](../wkwebextensiontab.md)
   A protocol with methods that represent a tab to web extensions.
-- [protocol WKWebExtensionWindow](wkwebextensionwindow.md)
+- [protocol WKWebExtensionWindow](../wkwebextensionwindow.md)
   A protocol with methods that represent a window to web extensions.
-- [class WKWebExtensionContext](wkwebextensioncontext.md)
+- [class WKWebExtensionContext](../wkwebextensioncontext.md)
   An object that represents the runtime environment for a web extension.
-- [class WKWebExtensionController](wkwebextensioncontroller.md)
+- [class WKWebExtensionController](../wkwebextensioncontroller.md)
   An object that manages a set of loaded extension contexts.
-- [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
+- [protocol WKWebExtensionControllerDelegate](../wkwebextensioncontrollerdelegate.md)
   A group of methods you use to customize web extension interactions.
-- [WKWebExtension.Command](wkwebextension/command.md)
+- [WKWebExtension.Command](./command.md)
   An object that encapsulates the properties for an individual web extension command.
-- [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
+- [WKWebExtension.MatchPattern](./matchpattern.md)
   An object that represents a way to specify groups of URLs.
-- [WKWebExtension.MessagePort](wkwebextension/messageport.md)
+- [WKWebExtension.MessagePort](./messageport.md)
   An object that manages message-based communication with a web extension.
-- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+- [WKWebExtension.DataRecord](./datarecord.md)
   An object that represents a record of stored data for a specific web extension context.
-- [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
+- [WKWebExtension.TabConfiguration](./tabconfiguration.md)
   An object that encapsulates configuration options for a tab in an extension.
-- [WKWebExtension.WindowConfiguration](wkwebextension/windowconfiguration.md)
+- [WKWebExtension.WindowConfiguration](./windowconfiguration.md)
   An object that encapsulates configuration options for a window in an extension.
-- [WKWebExtensionController.Configuration](wkwebextensioncontroller/configuration-swift.class.md)
-  A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
+- [WKWebExtensionController.Configuration](../wkwebextensioncontroller/configuration-swift.class.md)
+  A [`WKWebExtensionController.Configuration`](../wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
 
 
 ---

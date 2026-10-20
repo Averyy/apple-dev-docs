@@ -1,7 +1,8 @@
 # wait(until:tolerance:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Blocks the current thread until the specified time.
 
@@ -17,7 +18,7 @@ func wait(until deadline: LayerRenderer.Clock.Instant, tolerance: Duration? = ni
 
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
 #### Discussion
 

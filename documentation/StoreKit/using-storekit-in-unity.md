@@ -1,6 +1,7 @@
 # Using StoreKit in Unity
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Provide in-app purchases in Unity-based games using C#.
 
@@ -10,10 +11,10 @@ Apple provides a StoreKit plug-in for Unity — an open source C# wrapper that g
 
 The plug-in exposes the same APIs and the same full feature set available to native Apple developers, through idiomatic C# calls that fit naturally into a Unity project. It’s maintained by Apple, ships as source on GitHub, and includes a sample project demonstrating the core purchase flow.
 
-#### Understand the Storekit Plugins Capabilities
+#### Understand the StoreKit plugin’s capabilities
 
-- **[`Product fetching`](https://developer.apple.comhttps://github.com/apple/unityplugins/blob/27-beta/plug-ins/Apple.StoreKit/Apple.StoreKit_Unity/Assets/Apple.StoreKit/Documentation~/Apple.StoreKit.md#fetching-products)** — retrieve product metadata (price, display name, description) for your app’s in-app purchases and subscriptions.
-- **[`Purchases`](https://developer.apple.comhttps://github.com/apple/unityplugins/blob/27-beta/plug-ins/Apple.StoreKit/Apple.StoreKit_Unity/Assets/Apple.StoreKit/Documentation~/Apple.StoreKit.md#making-a-purchase)** — initiate a purchase and receive a verification result.
+- **[Product fetching](https://github.com/apple/unityplugins/blob/27-beta/plug-ins/Apple.StoreKit/Apple.StoreKit_Unity/Assets/Apple.StoreKit/Documentation~/Apple.StoreKit.md#fetching-products)** — retrieve product metadata (price, display name, description) for your app’s in-app purchases and subscriptions.
+- **[Purchases](https://github.com/apple/unityplugins/blob/27-beta/plug-ins/Apple.StoreKit/Apple.StoreKit_Unity/Assets/Apple.StoreKit/Documentation~/Apple.StoreKit.md#making-a-purchase)** — initiate a purchase and receive a verification result.
 - **Transaction verification** — cryptographically verify transactions via `VerificationResult`.
 - **Transaction updates** — listen for real-time transaction changes (renewals, refunds, revocations) via `Transaction.Updates`.
 - **Current entitlements** — check what a player currently owns via `GetCurrentEntitlements`.
@@ -24,9 +25,9 @@ The plug-in exposes the same APIs and the same full feature set available to nat
 - **Advanced Commerce** — `AdvancedCommerceProduct` support for custom pricing and purchase options.
 - **Storefront and app lifecycle helpers** — `Storefront.GetCurrent`, `AppStore.Sync`, `AppStore.RequestReview`.
 
-#### Getting Started
+#### Getting started
 
-For installation, setup, and usage instructions, see the plug-in’s [`README`](https://developer.apple.comhttps://github.com/apple/unityplugins/blob/main/README.md) in the GitHub repository — this article doesn’t duplicate that content.
+For installation, setup, and usage instructions, see the plug-in’s [README](https://github.com/apple/unityplugins/blob/main/README.md) in the GitHub repository — this article doesn’t duplicate that content.
 
 
 ---

@@ -1,7 +1,8 @@
 # titleAndIcon
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The title and icon label style. The toolbar contents will display both a control and title
 

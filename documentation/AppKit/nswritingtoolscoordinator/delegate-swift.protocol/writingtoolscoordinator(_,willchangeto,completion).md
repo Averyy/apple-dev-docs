@@ -1,7 +1,8 @@
 # writingToolsCoordinator(_:willChangeTo:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your delegate of relevant state changes when Writing Tools is running in your view.
 
@@ -11,16 +12,24 @@ Notifies your delegate of relevant state changes when Writing Tools is running i
 ## Declaration
 
 ```swift
+optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinator, willChangeTo newState: NSWritingToolsCoordinator.State, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinator, willChangeTo newState: NSWritingToolsCoordinator.State) async
+```
+
+```objc
+- (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator willChangeToState:(NSWritingToolsCoordinatorState) newState completion:(void (^)()) completion;
 ```
 
 ## Mentions
 
-- [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
+- [Adding Writing Tools support to a custom AppKit view](../../adding-writing-tools-support-to-a-custom-nsview.md)
 
 #### Discussion
 
-Use state transitions to perform actions related to your view or text storage. When Writing Tools is active, it updates its state to indicate what task it’s currently performing. Writing Tools starts in the [`NSWritingToolsCoordinator.State.inactive`](nswritingtoolscoordinator/state-swift.enum/inactive.md) state and moves to other states as it presents UI and starts interacting with your view’s content. For example, it moves to the [`NSWritingToolsCoordinator.State.interactiveResting`](nswritingtoolscoordinator/state-swift.enum/interactiveresting.md) state when it’s making changes to your view’s text storage.
+Use state transitions to perform actions related to your view or text storage. When Writing Tools is active, it updates its state to indicate what task it’s currently performing. Writing Tools starts in the [`NSWritingToolsCoordinator.State.inactive`](../state-swift.enum/inactive.md) state and moves to other states as it presents UI and starts interacting with your view’s content. For example, it moves to the [`NSWritingToolsCoordinator.State.interactiveResting`](../state-swift.enum/interactiveresting.md) state when it’s making changes to your view’s text storage.
 
 ## Parameters
 

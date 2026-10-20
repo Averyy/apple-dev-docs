@@ -1,7 +1,8 @@
 # continuationToken
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that indicates there are more records to fetch.
 
@@ -10,7 +11,7 @@ A string that indicates there are more records to fetch.
 
 ## Declaration
 
-```swift
+```
 attribute string? continuationToken;
 ```
 

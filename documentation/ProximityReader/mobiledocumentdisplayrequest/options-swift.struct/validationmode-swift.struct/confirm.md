@@ -1,7 +1,8 @@
 # confirm
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Confirmation buttons that enable the user to express their validation decision.
 

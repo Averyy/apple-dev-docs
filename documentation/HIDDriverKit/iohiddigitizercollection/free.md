@@ -1,23 +1,25 @@
 # free
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [withType](iohiddigitizercollection/withtype.md)
-- [initWithType](iohiddigitizercollection/initwithtype.md)
-- [IOHIDDigitizerCollectionType](iohiddigitizercollectiontype.md)
+### Creating a Digitizer Collection
+- [withType](./withtype.md)
+- [initWithType](./initwithtype.md)
+- [IOHIDDigitizerCollectionType](../iohiddigitizercollectiontype.md)
 
 
 ---

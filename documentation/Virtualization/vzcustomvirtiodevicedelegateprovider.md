@@ -1,7 +1,8 @@
 # VZCustomVirtioDeviceDelegateProvider
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A custom Virtio Device provider for devices that implement a custom Virtio device configuration delegate.
 
@@ -14,6 +15,10 @@ A custom Virtio Device provider for devices that implement a custom Virtio devic
 class VZCustomVirtioDeviceDelegateProvider
 ```
 
+```objc
+@interface VZCustomVirtioDeviceDelegateProvider : VZCustomVirtioDeviceProvider
+```
+
 #### Overview
 
 The delegate runs in the same process as the guest’s `VZVirtualMachine` instance.
@@ -21,29 +26,30 @@ The delegate runs in the same process as the guest’s `VZVirtualMachine` instan
 ## Topics
 
 ### Initializers
-- [init(deviceQueue: dispatch_queue_t, delegate: any VZCustomVirtioDeviceConfigurationDelegate)](vzcustomvirtiodevicedelegateprovider/init(devicequeue:delegate:).md)
+- [init(deviceQueue: dispatch_queue_t, delegate: any VZCustomVirtioDeviceConfigurationDelegate)](./vzcustomvirtiodevicedelegateprovider/init%28devicequeue,delegate%29.md)
   Creates a custom Virtio device delegate provider.
 ### Instance Properties
-- [var delegate: (any VZCustomVirtioDeviceConfigurationDelegate)?](vzcustomvirtiodevicedelegateprovider/delegate.md)
+- [var delegate: (any VZCustomVirtioDeviceConfigurationDelegate)?](./vzcustomvirtiodevicedelegateprovider/delegate.md)
   The delegate object that implements the device.
-- [var deviceQueue: dispatch_queue_t](vzcustomvirtiodevicedelegateprovider/devicequeue.md)
+- [var deviceQueue: dispatch_queue_t](./vzcustomvirtiodevicedelegateprovider/devicequeue.md)
   The queue the framework uses to synchronize operations for this device.
 
 ## Relationships
 
 ### Inherits From
-- [VZCustomVirtioDeviceProvider](vzcustomvirtiodeviceprovider.md)
+- [VZCustomVirtioDeviceProvider](./vzcustomvirtiodeviceprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZCustomVirtioDeviceProvider](vzcustomvirtiodeviceprovider.md)
+### Responding to Virtio driver events
+- [class VZCustomVirtioDeviceProvider](./vzcustomvirtiodeviceprovider.md)
   A base class that describes the provider of a custom Virtio device.
 
 

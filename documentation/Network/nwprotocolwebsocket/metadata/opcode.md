@@ -1,7 +1,8 @@
 # opcode
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type code of a WebSocket message.
 
@@ -22,9 +23,10 @@ final let opcode: NWProtocolWebSocket.Opcode
 
 ## See Also
 
-- [var closeCode: NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/metadata/closecode.md)
+### Receiving Messages
+- [var closeCode: NWProtocolWebSocket.CloseCode](./closecode.md)
   The close code on a WebSocket message.
-- [NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/closecode.md)
+- [NWProtocolWebSocket.CloseCode](../closecode.md)
   Types of codes used upon closing a WebSocket connection.
 
 

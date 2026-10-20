@@ -1,7 +1,8 @@
 # selectionAnchorRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -12,9 +13,13 @@
 optional var selectionAnchorRect: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect selectionAnchorRect;
+```
+
 ## Mentions
 
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
+- [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 
 
 ---

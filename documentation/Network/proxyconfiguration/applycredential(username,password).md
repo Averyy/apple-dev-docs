@@ -1,7 +1,8 @@
 # applyCredential(username:password:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a username and password to use as authentication for a proxy configuration.
 
@@ -27,7 +28,8 @@ func applyCredential(username: String, password: String)
 
 ## See Also
 
-- [var allowFailover: Bool](proxyconfiguration/allowfailover.md)
+### Customizing Proxy Behavior
+- [var allowFailover: Bool](./allowfailover.md)
   A Boolean that indicates whether or not a proxy configuration allows failover to non-proxied connections. Failover isn’t allowed by default.
 
 

@@ -1,7 +1,8 @@
 # deleted
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Managed objects that were deleted during this save.
 

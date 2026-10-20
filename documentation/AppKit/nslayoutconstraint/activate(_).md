@@ -1,7 +1,8 @@
 # activate(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Activates each constraint in the specified array.
 
@@ -14,9 +15,13 @@ Activates each constraint in the specified array.
 class func activate(_ constraints: [NSLayoutConstraint])
 ```
 
+```objc
++ (void) activateConstraints:(NSArray<NSLayoutConstraint *> *) constraints;
+```
+
 #### Discussion
 
-This convenience method provides an easy way to activate a set of constraints with one call. The effect of this method is the same as setting the [`isActive`](nslayoutconstraint/isactive.md) property of each constraint to [`true`](https://developer.apple.com/documentation/swift/true). Typically, using this method is more efficient than activating each constraint individually.
+This convenience method provides an easy way to activate a set of constraints with one call. The effect of this method is the same as setting the [`isActive`](./isactive.md) property of each constraint to [`true`](../../Swift/true.md). Typically, using this method is more efficient than activating each constraint individually.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ This convenience method provides an easy way to activate a set of constraints wi
 
 ## See Also
 
-- [var isActive: Bool](nslayoutconstraint/isactive.md)
+### Activating and deactivating constraints
+- [var isActive: Bool](./isactive.md)
   The active state of the constraint.
-- [class func deactivate([NSLayoutConstraint])](nslayoutconstraint/deactivate(_:).md)
+- [class func deactivate([NSLayoutConstraint])](./deactivate%28_%29.md)
   Deactivates each constraint in the specified array.
 
 

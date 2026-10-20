@@ -1,17 +1,22 @@
 # CFNotificationCenterGetDistributedCenter()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the application’s distributed notification center.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func CFNotificationCenterGetDistributedCenter() -> CFNotificationCenter!
+```
+
+```c
+extern CFNotificationCenterRefCFNotificationCenterGetDistributedCenter();
 ```
 
 #### Return Value
@@ -24,9 +29,10 @@ A distributed notification center delivers notifications between applications. A
 
 ## See Also
 
-- [func CFNotificationCenterGetDarwinNotifyCenter() -> CFNotificationCenter!](cfnotificationcentergetdarwinnotifycenter().md)
+### Accessing a Notification Center
+- [func CFNotificationCenterGetDarwinNotifyCenter() -> CFNotificationCenter!](./cfnotificationcentergetdarwinnotifycenter%28%29.md)
   Returns the application’s Darwin notification center.
-- [func CFNotificationCenterGetLocalCenter() -> CFNotificationCenter!](cfnotificationcentergetlocalcenter().md)
+- [func CFNotificationCenterGetLocalCenter() -> CFNotificationCenter!](./cfnotificationcentergetlocalcenter%28%29.md)
   Returns the application’s local notification center.
 
 

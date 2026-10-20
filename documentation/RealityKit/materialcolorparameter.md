@@ -1,7 +1,8 @@
 # MaterialColorParameter
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The color parameter applied to a material.
 
@@ -11,7 +12,7 @@ The color parameter applied to a material.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,38 +23,39 @@ enum MaterialColorParameter
 ## Topics
 
 ### Selecting color parameters
-- [MaterialColorParameter.color(_:)](materialcolorparameter/color(_:)-7gx04.md)
+- [MaterialColorParameter.color(_:)](./materialcolorparameter/color%28_%29-7gx04.md)
   A color value in macOS.
-- [MaterialColorParameter.texture(_:)](materialcolorparameter/texture(_:).md)
+- [MaterialColorParameter.texture(_:)](./materialcolorparameter/texture%28_%29.md)
   A texture resource.
 ### Operators
-- [static func == (MaterialColorParameter, MaterialColorParameter) -> Bool](materialcolorparameter/==(_:_:).md)
+- [static func == (MaterialColorParameter, MaterialColorParameter) -> Bool](./materialcolorparameter/eqeq%28_,_%29.md)
   Indicates whether two color parameters are equal.
 ### Enumeration Cases
-- [MaterialColorParameter.color(_:)](materialcolorparameter/color(_:)-49aw0.md)
+- [MaterialColorParameter.color(_:)](./materialcolorparameter/color%28_%29-49aw0.md)
   A color value in macOS.
 ### Instance Methods
-- [func hash(into: inout Hasher)](materialcolorparameter/hash(into:).md)
+- [func hash(into: inout Hasher)](./materialcolorparameter/hash%28into%29.md)
   Hashes the essential components of the color parameter by feeding them into the given hash function.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol Material](material.md)
+### Material types
+- [protocol Material](./material.md)
   A type that describes the material aspects of a mesh, like color and texture.
-- [typealias Color](material/color.md)
+- [typealias Color](./material/color.md)
   An alias for the color type that’s appropriate for the current platform.
-- [typealias Parameters](material/parameters.md)
+- [typealias Parameters](./material/parameters.md)
   The parameter type that custom materials uses for properties the framework passes to shader functions.
-- [struct MaterialParameterTypes](materialparametertypes.md)
+- [struct MaterialParameterTypes](./materialparametertypes.md)
   A set of types that material parameters can use.
-- [struct MaterialParameters](materialparameters.md)
-- [enum MaterialScalarParameter](materialscalarparameter.md)
+- [struct MaterialParameters](./materialparameters.md)
+- [enum MaterialScalarParameter](./materialscalarparameter.md)
   The scalar parameter applied to a material.
 
 

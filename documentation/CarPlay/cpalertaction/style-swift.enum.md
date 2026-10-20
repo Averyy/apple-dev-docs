@@ -1,7 +1,8 @@
 # CPAlertAction.Style
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Display styles for an alert’s action button.
 
@@ -16,31 +17,36 @@ Display styles for an alert’s action button.
 enum Style
 ```
 
+```c
+enum CPAlertActionStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Styles
-- [CPAlertAction.Style.default](cpalertaction/style-swift.enum/default.md)
+- [CPAlertAction.Style.default](./style-swift.enum/default.md)
   The default display style for an action button.
-- [CPAlertAction.Style.cancel](cpalertaction/style-swift.enum/cancel.md)
+- [CPAlertAction.Style.cancel](./style-swift.enum/cancel.md)
   The display style indicating that the action leaves data unchanged.
-- [CPAlertAction.Style.destructive](cpalertaction/style-swift.enum/destructive.md)
+- [CPAlertAction.Style.destructive](./style-swift.enum/destructive.md)
   The style indicating that the action changes or deletes data.
 ### Initializers
-- [init?(rawValue: UInt)](cpalertaction/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var style: CPAlertAction.Style](cpalertaction/style-swift.property.md)
+### Getting the Action Style
+- [var style: CPAlertAction.Style](./style-swift.property.md)
   The display style for the action button.
 
 

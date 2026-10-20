@@ -1,18 +1,19 @@
 # joints
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joints connected to this physics body.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The joints connected to this physics body.
 var joints: [SKPhysicsJoint] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<SKPhysicsJoint *> * joints;
+```
+
 #### Discussion
 
-This property holds an array of [`SKPhysicsJoint`](skphysicsjoint.md) objects that define all joints added to the scene’s physics world that are connected to this physics body.
+This property holds an array of [`SKPhysicsJoint`](../skphysicsjoint.md) objects that define all joints added to the scene’s physics world that are connected to this physics body.
 
 
 ---

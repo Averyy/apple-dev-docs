@@ -2,6 +2,7 @@
 
 **Framework**: App Intents Testing  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Validates that the provided value matches this definition’s type.

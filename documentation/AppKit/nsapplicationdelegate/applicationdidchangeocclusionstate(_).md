@@ -1,7 +1,8 @@
 # applicationDidChangeOcclusionState(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate about changes to the app’s occlusion state.
 
@@ -15,13 +16,17 @@ Tells the delegate about changes to the app’s occlusion state.
 optional func applicationDidChangeOcclusionState(_ notification: Notification)
 ```
 
+```objc
+- (void) applicationDidChangeOcclusionState:(NSNotification *) notification;
+```
+
 #### Discussion
 
 Upon receiving this method, you can query the application for its occlusion state. Note that this only notifies about changes in the state of the occlusion, not when the occlusion region changes. You can use this method to increase responsiveness and save power by halting any expensive calculations that the user can not see.
 
 ## Parameters
 
-- `notification`: A notification named [`didChangeOcclusionStateNotification`](nsapplication/didchangeocclusionstatenotification.md). Calling the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) method of this notification returns the `NSApplication` object itself.
+- `notification`: A notification named [`didChangeOcclusionStateNotification`](../nsapplication/didchangeocclusionstatenotification.md). Calling the [`object`](../../Foundation/nsnotification/object.md) method of this notification returns the `NSApplication` object itself.
 
 
 ---

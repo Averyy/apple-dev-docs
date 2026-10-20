@@ -1,7 +1,8 @@
 # featheredEdge
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feathering configuration for the clipping boundaries.
 
@@ -21,7 +22,8 @@ var featheredEdge: ClippingComponent.FeatheredEdge
 
 ## See Also
 
-- [ClippingComponent.FeatheredEdge](clippingcomponent/featherededge-swift.struct.md)
+### Feathering clipped edges
+- [ClippingComponent.FeatheredEdge](./featherededge-swift.struct.md)
   Configuration for feathering the clipping boundaries.
 
 

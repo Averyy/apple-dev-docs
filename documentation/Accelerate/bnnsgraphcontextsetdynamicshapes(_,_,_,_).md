@@ -1,7 +1,8 @@
 # BNNSGraphContextSetDynamicShapes(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies the dynamic shapes for a graph and, if possible, infers, the output shapes.
 
@@ -20,6 +21,10 @@ Specifies the dynamic shapes for a graph and, if possible, infers, the output sh
 func BNNSGraphContextSetDynamicShapes(_ context: bnns_graph_context_t, _ function: UnsafePointer<CChar>?, _ shapes_count: Int, _ shapes: UnsafeMutablePointer<bnns_graph_shape_t>) -> Int32
 ```
 
+```c
+int BNNSGraphContextSetDynamicShapes(bnns_graph_context_t context, const char *function, size_t shapes_count, bnns_graph_shape_t *shapes);
+```
+
 #### Return Value
 
 - `0` on success if all tensor shapes were exactly determined. That is, the workspace size is exact.
@@ -32,7 +37,7 @@ func BNNSGraphContextSetDynamicShapes(_ context: bnns_graph_context_t, _ functio
 
 #### Discussion
 
-Don’t call this function while existing calls to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](bnnsgraphcontextexecute(_:_:_:_:_:_:).md) are running.
+Don’t call this function while existing calls to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](./bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md) are running.
 
 For example, the following code sets the dynamic shapes for an example graph context, specifies the output shape, and updates the context’s required workspace size.
 
@@ -58,32 +63,37 @@ let result = outputShape.withUnsafeMutableBufferPointer { output in
 print(outputShape)
 ```
 
-On return, the output shape contains the correct size for the input shape, and a subsequent call to [`BNNSGraphContextGetWorkspaceSize(_:_:)`](bnnsgraphcontextgetworkspacesize(_:_:).md) returns the correct workspace size.
+On return, the output shape contains the correct size for the input shape, and a subsequent call to [`BNNSGraphContextGetWorkspaceSize(_:_:)`](./bnnsgraphcontextgetworkspacesize%28_,_%29.md) returns the correct workspace size.
 
 ## Parameters
 
 - `context`: The graph context.
 - `function`: The function. Specify as `nil` if the graph only contains one function.
 - `shapes_count`: The number of elements in the `shapes` array.
-- `shapes`: An array of input and output shapes in the same order as you pass to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](bnnsgraphcontextexecute(_:_:_:_:_:_:).md). On input, this function reads input shapes with a nonzero rank, and uses the constant or default value from the source model for input shapes with a zero rank. The function generates an error for shapes with a nonzero value that doesn’t match the source model. On output, the function sets output shapes with a nonzero rank to the upper bounds of the expected output shape. If the function can’t deduce the output shape because it depends on the input data values, the value of `shapes[idx].size[d]` is zero.
+- `shapes`: An array of input and output shapes in the same order as you pass to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](./bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md).
+
+  On input, this function reads input shapes with a nonzero rank, and uses the constant or default value from the source model for input shapes with a zero rank. The function generates an error for shapes with a nonzero value that doesn’t match the source model.
+
+  On output, the function sets output shapes with a nonzero rank to the upper bounds of the expected output shape. If the function can’t deduce the output shape because it depends on the input data values, the value of `shapes[idx].size[d]` is zero.
 
 ## See Also
 
-- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+### Specifying and querying a context’s properties
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](./bnnsgraphcontextsetstreamingadvancecount%28_,_%29.md)
   Sets the streaming advancement amount for cases with dynamically shaped inputs.
-- [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](bnnsgraphcontextsetargumenttype(_:_:).md)
+- [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](./bnnsgraphcontextsetargumenttype%28_,_%29.md)
   Specifies the argument type for a graph context.
-- [struct BNNSGraphArgumentType](bnnsgraphargumenttype.md)
+- [struct BNNSGraphArgumentType](./bnnsgraphargumenttype.md)
   Constants that specify the argument type for a graph context.
-- [struct bnns_graph_shape_t](bnns_graph_shape_t.md)
+- [struct bnns_graph_shape_t](./bnns_graph_shape_t.md)
   The specification of the shape of an argument.
-- [func BNNSGraphContextSetBatchSize(bnns_graph_context_t, UnsafePointer<CChar>?, UInt64) -> Int32](bnnsgraphcontextsetbatchsize(_:_:_:).md)
+- [func BNNSGraphContextSetBatchSize(bnns_graph_context_t, UnsafePointer<CChar>?, UInt64) -> Int32](./bnnsgraphcontextsetbatchsize%28_,_,_%29.md)
   Sets the batch size for a graph.
-- [func BNNSGraphContextEnableNanAndInfChecks(bnns_graph_context_t, Bool)](bnnsgraphcontextenablenanandinfchecks(_:_:).md)
+- [func BNNSGraphContextEnableNanAndInfChecks(bnns_graph_context_t, Bool)](./bnnsgraphcontextenablenanandinfchecks%28_,_%29.md)
   Specifies that the context checks intermediate tensors for NaNs and infinities.
-- [func BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t, UnsafePointer<CChar>?) -> Int](bnnsgraphcontextgetworkspacesize(_:_:).md)
+- [func BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t, UnsafePointer<CChar>?) -> Int](./bnnsgraphcontextgetworkspacesize%28_,_%29.md)
   Returns the minimum size, in bytes, of the workspace that graph context execution requires.
-- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](./bnnsgraphcontextsetstreamingadvancecount%28_,_%29.md)
   Sets the streaming advancement amount for cases with dynamically shaped inputs.
 
 

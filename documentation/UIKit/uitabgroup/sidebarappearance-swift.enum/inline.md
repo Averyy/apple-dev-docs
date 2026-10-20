@@ -1,7 +1,8 @@
 # UITabGroup.SidebarAppearance.inline
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Displays only the children alongside the group’s siblings.
 
@@ -15,6 +16,10 @@ Displays only the children alongside the group’s siblings.
 
 ```swift
 case inline
+```
+
+```c
+UITabGroupSidebarAppearanceInline
 ```
 
 

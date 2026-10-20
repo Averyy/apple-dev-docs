@@ -1,20 +1,27 @@
 # providerIdentifier
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A purpose identifier for coordinated reads and writes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 8.0+ - Deprecated in 11.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`NSFileProviderManager`](../nsfileprovidermanager.md) class’s [`providerIdentifier`](../nsfileprovidermanager/provideridentifier.md) method instead.
 
 ## Declaration
 
 ```swift
 var providerIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * providerIdentifier;
 ```
 
 #### Discussion
@@ -27,7 +34,8 @@ This method returns the containing app’s bundle identifier.
 
 ## See Also
 
-- [var documentStorageURL: URL](nsfileproviderextension/documentstorageurl.md)
+### Accessing the document storage
+- [var documentStorageURL: URL](./documentstorageurl.md)
   The root URL for all shared documents.
 
 

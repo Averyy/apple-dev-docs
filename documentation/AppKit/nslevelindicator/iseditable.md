@@ -1,7 +1,8 @@
 # isEditable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
@@ -10,6 +11,10 @@
 
 ```swift
 var isEditable: Bool { get set }
+```
+
+```objc
+@property (getter=isEditable) BOOL editable;
 ```
 
 

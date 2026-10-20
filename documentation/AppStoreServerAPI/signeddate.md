@@ -1,7 +1,8 @@
 # signedDate
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature data.
 
@@ -10,13 +11,14 @@ The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature
 
 ## Declaration
 
-```swift
+```
 timestamp signedDate
 ```
 
 ## See Also
 
-- [type receiptCreationDate](receiptcreationdate.md)
+### JSON Web Signature (JWS) date
+- [type receiptCreationDate](./receiptcreationdate.md)
   The date that the App Store signs a JSON Web Signature (JWS) app transaction.
 
 

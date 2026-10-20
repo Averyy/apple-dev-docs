@@ -1,7 +1,8 @@
 # recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when a user-invoked account reset deletes a record zone.
 
@@ -20,23 +21,28 @@ The closure to execute when a user-invoked account reset deletes a record zone.
 var recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock: ((CKRecordZone.ID) -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock)(CKRecordZoneID *zoneID);
+```
+
 #### Discussion
 
 The closure returns no value and takes a single parameter: the deleted record zone’s ID.
 
-The operation executes this closure, instead of [`recordZoneWithIDWasDeletedBlock`](ckfetchdatabasechangesoperation/recordzonewithidwasdeletedblock.md), after a user action causes CloudKit to delete the record zone. Reupload any locally cached data to iCloud to minimize data loss.
+The operation executes this closure, instead of [`recordZoneWithIDWasDeletedBlock`](./recordzonewithidwasdeletedblock.md), after a user action causes CloudKit to delete the record zone. Reupload any locally cached data to iCloud to minimize data loss.
 
 ## See Also
 
-- [var recordZoneWithIDChangedBlock: ((CKRecordZone.ID) -> Void)?](ckfetchdatabasechangesoperation/recordzonewithidchangedblock.md)
+### Processing the Operation’s Results
+- [var recordZoneWithIDChangedBlock: ((CKRecordZone.ID) -> Void)?](./recordzonewithidchangedblock.md)
   The closure to execute with a single record zone change.
-- [var recordZoneWithIDWasDeletedBlock: ((CKRecordZone.ID) -> Void)?](ckfetchdatabasechangesoperation/recordzonewithidwasdeletedblock.md)
+- [var recordZoneWithIDWasDeletedBlock: ((CKRecordZone.ID) -> Void)?](./recordzonewithidwasdeletedblock.md)
   The closure to execute when a record zone no longer exists.
-- [var recordZoneWithIDWasPurgedBlock: ((CKRecordZone.ID) -> Void)?](ckfetchdatabasechangesoperation/recordzonewithidwaspurgedblock.md)
+- [var recordZoneWithIDWasPurgedBlock: ((CKRecordZone.ID) -> Void)?](./recordzonewithidwaspurgedblock.md)
   The closure to execute when CloudKit purges a record zone.
-- [var changeTokenUpdatedBlock: ((CKServerChangeToken) -> Void)?](ckfetchdatabasechangesoperation/changetokenupdatedblock.md)
+- [var changeTokenUpdatedBlock: ((CKServerChangeToken) -> Void)?](./changetokenupdatedblock.md)
   The closure to execute when the change token updates.
-- [var fetchDatabaseChangesCompletionBlock: ((CKServerChangeToken?, Bool, (any Error)?) -> Void)?](ckfetchdatabasechangesoperation/fetchdatabasechangescompletionblock.md)
+- [var fetchDatabaseChangesCompletionBlock: ((CKServerChangeToken?, Bool, (any Error)?) -> Void)?](./fetchdatabasechangescompletionblock.md)
   The closure to execute when the operation finishes.
 
 

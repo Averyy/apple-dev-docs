@@ -1,7 +1,8 @@
 # VZVirtualMachineViewAdaptor
 
 **Framework**: Virtualization  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sendable wrapper that connects a virtual machine view to a virtual machine.
 
@@ -16,7 +17,7 @@ struct VZVirtualMachineViewAdaptor
 
 #### Discussion
 
-`VZVirtualMachineViewAdaptor` enables Swift 6 strict concurrency when using [`VZVirtualMachineView`](vzvirtualmachineview.md). Since [`VZVirtualMachine`](vzvirtualmachine.md) operates on a specific dispatch queue and is not [`Sendable`](https://developer.apple.com/documentation/swift/sendable), assigning it directly to [`virtualMachine`](vzvirtualmachineview/virtualmachine.md) would be a compiler error when crossing isolation boundaries. The adaptor holds a strong reference to the virtual machine, allowing you to  safely copy it  across actor boundaries.
+`VZVirtualMachineViewAdaptor` enables Swift 6 strict concurrency when using [`VZVirtualMachineView`](./vzvirtualmachineview.md). Since [`VZVirtualMachine`](./vzvirtualmachine.md) operates on a specific dispatch queue and is not [`Sendable`](../Swift/sendable.md), assigning it directly to [`virtualMachine`](./vzvirtualmachineview/virtualmachine.md) would be a compiler error when crossing isolation boundaries. The adaptor holds a strong reference to the virtual machine, allowing you to  safely copy it  across actor boundaries.
 
 The following example demonstrates how to create and run a `VZVirtualMachineViewAdaptor` from the main actor.
 
@@ -34,28 +35,29 @@ The following example demonstrates how to create and run a `VZVirtualMachineView
 ## Topics
 
 ### Initializers
-- [init(virtualMachine: VZVirtualMachine)](vzvirtualmachineviewadaptor/init(virtualmachine:).md)
+- [init(virtualMachine: VZVirtualMachine)](./vzvirtualmachineviewadaptor/init%28virtualmachine%29.md)
   Initialize an adaptor for a virtual machine.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VZGraphicsDevice](vzgraphicsdevice.md)
+### Devices
+- [class VZGraphicsDevice](./vzgraphicsdevice.md)
   A class that represents a graphics device in a VM.
-- [class VZGraphicsDisplay](vzgraphicsdisplay.md)
+- [class VZGraphicsDisplay](./vzgraphicsdisplay.md)
   A class that represents a graphics display in a VM.
-- [class VZMacGraphicsDevice](vzmacgraphicsdevice.md)
+- [class VZMacGraphicsDevice](./vzmacgraphicsdevice.md)
   An object that represents a Mac graphics device.
-- [class VZVirtioGraphicsScanout](vzvirtiographicsscanout.md)
+- [class VZVirtioGraphicsScanout](./vzvirtiographicsscanout.md)
   A Virtio graphics scanout that corresponds to a Virtio graphics scanout configuration.
-- [class VZMacGraphicsDisplay](vzmacgraphicsdisplay.md)
+- [class VZMacGraphicsDisplay](./vzmacgraphicsdisplay.md)
   An object that represents the graphics display on a Mac.
-- [class VZVirtioGraphicsDevice](vzvirtiographicsdevice.md)
+- [class VZVirtioGraphicsDevice](./vzvirtiographicsdevice.md)
   A Virtio graphics device.
 
 

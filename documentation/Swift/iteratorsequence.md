@@ -1,7 +1,8 @@
 # IteratorSequence
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence built around an iterator of type `Base`.
 
@@ -32,31 +33,32 @@ for x in IteratorSequence(i) { ... }
 ## Topics
 
 ### Initializers
-- [init(Base)](iteratorsequence/init(_:).md)
+- [init(Base)](./iteratorsequence/init%28_%29.md)
   Creates an instance whose iterator is a copy of `base`.
 ### Default Implementations
-- [IteratorProtocol Implementations](iteratorsequence/iteratorprotocol-implementations.md)
-- [Sequence Implementations](iteratorsequence/sequence-implementations.md)
+- [IteratorProtocol Implementations](./iteratorsequence/iteratorprotocol-implementations.md)
+- [Sequence Implementations](./iteratorsequence/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [IteratorProtocol](./iteratorprotocol.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct IndexingIterator](indexingiterator.md)
+### Indices and Iterators
+- [struct IndexingIterator](./indexingiterator.md)
   A type that iterates over a collection using its indices.
-- [typealias EnumeratedIterator](enumeratediterator.md)
-- [typealias SetIterator](setiterator.md)
-- [struct StrideThroughIterator](stridethroughiterator.md)
+- [typealias EnumeratedIterator](./enumeratediterator.md)
+- [typealias SetIterator](./setiterator.md)
+- [struct StrideThroughIterator](./stridethroughiterator.md)
   An iterator for a `StrideThrough` instance.
-- [struct StrideToIterator](stridetoiterator.md)
+- [struct StrideToIterator](./stridetoiterator.md)
   An iterator for a `StrideTo` instance.
 
 

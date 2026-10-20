@@ -1,7 +1,8 @@
 # SCStreamError.Code.userDeclined
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error message that indicates the user didn’t grant Screen Recording permission to your app.
 
@@ -19,9 +20,14 @@ An error message that indicates the user didn’t grant Screen Recording permiss
 case userDeclined
 ```
 
+```c
+SCStreamErrorUserDeclined
+```
+
 ## See Also
 
-- [SCStreamError.Code.missingEntitlements](scstreamerror/code/missingentitlements.md)
+### Privacy and entitlements
+- [SCStreamError.Code.missingEntitlements](./missingentitlements.md)
   An error message that indicates missing entitlements in your app.
 
 

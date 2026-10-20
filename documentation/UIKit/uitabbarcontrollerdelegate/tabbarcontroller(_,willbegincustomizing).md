@@ -1,7 +1,8 @@
 # tabBarController(_:willBeginCustomizing:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the tab bar customization sheet is about to be displayed.
 
@@ -16,6 +17,10 @@ Tells the delegate that the tab bar customization sheet is about to be displayed
 optional func tabBarController(_ tabBarController: UITabBarController, willBeginCustomizing viewControllers: [UIViewController])
 ```
 
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController willBeginCustomizingViewControllers:(NSArray<__kindof UIViewController *> *) viewControllers;
+```
+
 ## Parameters
 
 - `tabBarController`: The tab bar controller that is being customized.
@@ -23,9 +28,10 @@ optional func tabBarController(_ tabBarController: UITabBarController, willBegin
 
 ## See Also
 
-- [func tabBarController(UITabBarController, willEndCustomizing: [UIViewController], changed: Bool)](uitabbarcontrollerdelegate/tabbarcontroller(_:willendcustomizing:changed:).md)
+### Managing tab bar customizations
+- [func tabBarController(UITabBarController, willEndCustomizing: [UIViewController], changed: Bool)](./tabbarcontroller%28_,willendcustomizing,changed%29.md)
   Tells the delegate that the tab bar customization sheet is about to be dismissed.
-- [func tabBarController(UITabBarController, didEndCustomizing: [UIViewController], changed: Bool)](uitabbarcontrollerdelegate/tabbarcontroller(_:didendcustomizing:changed:).md)
+- [func tabBarController(UITabBarController, didEndCustomizing: [UIViewController], changed: Bool)](./tabbarcontroller%28_,didendcustomizing,changed%29.md)
   Tells the delegate that the tab bar customization sheet was dismissed.
 
 

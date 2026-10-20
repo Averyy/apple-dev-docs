@@ -1,23 +1,28 @@
 # setWeight(_:forTargetAt:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies a weight value at a specified target index.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func setWeight(_ weight: CGFloat, forTargetAt targetIndex: Int)
+```
+
+```objc
+- (void) setWeight:(CGFloat) weight forTargetAtIndex:(NSUInteger) targetIndex;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ You can also animate weights implicitly or explicitly using the keypath `weights
 ## Parameters
 
 - `weight`: A number specifying the contribution of the target geometry to the blended surface, generally between `0.0` and `1.0`.
-- `targetIndex`: The index of a geometry in the morpher’s [`targets`](scnmorpher/targets.md) array.
+- `targetIndex`: The index of a geometry in the morpher’s [`targets`](./targets.md) array.
 
 ## See Also
 
-- [func weight(forTargetAt: Int) -> CGFloat](scnmorpher/weight(fortargetat:).md)
+### Blending between Morph Targets
+- [func weight(forTargetAt: Int) -> CGFloat](./weight%28fortargetat%29.md)
   Returns the weight value for the specified target index.
 
 

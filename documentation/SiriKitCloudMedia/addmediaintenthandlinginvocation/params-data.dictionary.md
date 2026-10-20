@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingInvocation.Params
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The parameters of an add media intent request.
 
@@ -10,7 +11,7 @@ The parameters of an add media intent request.
 
 ## Declaration
 
-```swift
+```
 object AddMediaIntentHandlingInvocation.Params
 ```
 

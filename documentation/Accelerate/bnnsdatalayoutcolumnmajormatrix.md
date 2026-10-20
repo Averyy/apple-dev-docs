@@ -1,7 +1,8 @@
 # BNNSDataLayoutColumnMajorMatrix
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 2D column-major matrix.
 
@@ -20,6 +21,10 @@ A constant that represents a 2D column-major matrix.
 var BNNSDataLayoutColumnMajorMatrix: BNNSDataLayout { get }
 ```
 
+```c
+BNNSDataLayoutColumnMajorMatrix
+```
+
 #### Discussion
 
 The value `(row, col)` is at index `row * stride[0] + col * stride[1]`.
@@ -29,11 +34,12 @@ The value `(row, col)` is at index `row * stride[0] + col * stride[1]`.
 
 ## See Also
 
-- [var BNNSDataLayoutRowMajorMatrix: BNNSDataLayout](bnnsdatalayoutrowmajormatrix.md)
+### 2D Data Layouts
+- [var BNNSDataLayoutRowMajorMatrix: BNNSDataLayout](./bnnsdatalayoutrowmajormatrix.md)
   A constant that represents a 2D row-major matrix.
-- [var BNNSDataLayout2DFirstMajor: BNNSDataLayout](bnnsdatalayout2dfirstmajor.md)
+- [var BNNSDataLayout2DFirstMajor: BNNSDataLayout](./bnnsdatalayout2dfirstmajor.md)
   A constant that represents a 2D first-major matrix.
-- [var BNNSDataLayout2DLastMajor: BNNSDataLayout](bnnsdatalayout2dlastmajor.md)
+- [var BNNSDataLayout2DLastMajor: BNNSDataLayout](./bnnsdatalayout2dlastmajor.md)
   A constant that represents a 2D last-major matrix.
 
 

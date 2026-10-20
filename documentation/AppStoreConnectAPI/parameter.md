@@ -1,7 +1,8 @@
 # Parameter
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains the query parameter that produced the error.
 
@@ -10,7 +11,7 @@ An object that contains the query parameter that produced the error.
 
 ## Declaration
 
-```swift
+```
 object Parameter
 ```
 
@@ -20,11 +21,12 @@ object Parameter
 
 ## See Also
 
-- [object ErrorLinks](errorlinks.md)
+### Objects
+- [object ErrorLinks](./errorlinks.md)
   Navigation links within an error response, providing references to related resources or documentation.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The error details that an API returns in the response body whenever the API request isn’t successful.
-- [object JsonPointer](jsonpointer.md)
+- [object JsonPointer](./jsonpointer.md)
   An object that contains the JSON pointer that indicates the location of the error.
 
 

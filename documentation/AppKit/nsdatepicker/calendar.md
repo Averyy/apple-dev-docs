@@ -1,12 +1,13 @@
 # calendar
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar used by the date picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The calendar used by the date picker.
 var calendar: Calendar? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSCalendar * calendar;
+```
+
 ## See Also
 
-- [var locale: Locale?](nsdatepicker/locale.md)
+### Controlling Date Picker Range and Mode
+- [var locale: Locale?](./locale.md)
   The date picker’s locale.
-- [var datePickerMode: NSDatePicker.Mode](nsdatepicker/datepickermode.md)
+- [var datePickerMode: NSDatePicker.Mode](./datepickermode.md)
   The date picker’s mode.
-- [var timeZone: TimeZone?](nsdatepicker/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone for the date picker.
-- [NSDatePicker.Mode](nsdatepicker/mode.md)
+- [NSDatePicker.Mode](./mode.md)
   Constants that define whether the picker provides a single date, or a range of dates.
 
 

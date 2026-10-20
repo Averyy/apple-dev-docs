@@ -1,7 +1,8 @@
 # getPlaylist(with:creationMetadata:completionHandler:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves an app maintained existing playlist or creates a new playlist when no playlist exists.
 
@@ -14,7 +15,15 @@ Retrieves an app maintained existing playlist or creates a new playlist when no 
 ## Declaration
 
 ```swift
+func getPlaylist(with uuid: UUID, creationMetadata: MPMediaPlaylistCreationMetadata?, completionHandler: @escaping @Sendable (MPMediaPlaylist?, (any Error)?) -> Void)
+```
+
+```swift
 func getPlaylist(with uuid: UUID, creationMetadata: MPMediaPlaylistCreationMetadata?) async throws -> MPMediaPlaylist
+```
+
+```objc
+- (void) getPlaylistWithUUID:(NSUUID *) uuid creationMetadata:(MPMediaPlaylistCreationMetadata *) creationMetadata completionHandler:(void (^)(MPMediaPlaylist *playlist, NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -27,8 +36,10 @@ When there’s no playlist associated with the UUID, the system creates a new pl
 
 - `uuid`: The unique identifier for the playlist.
 - `creationMetadata`: The metadata that the system uses to create a new playlist, which it ignores if a playlist already exists.
-- `completionHandler`: A block that the system calls after it retrieves or creates the playlist. - **playlist**: Contains the playlist identified by the UUID or the newly created playlist.
-- **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+- `completionHandler`: A block that the system calls after it retrieves or creates the playlist.
+
+  - **playlist**: Contains the playlist identified by the UUID or the newly created playlist.
+  - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 
 ---

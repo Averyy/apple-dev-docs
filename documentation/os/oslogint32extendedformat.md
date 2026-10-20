@@ -1,7 +1,8 @@
 # OSLogInt32ExtendedFormat
 
 **Framework**: os  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The formatting options for 32-bit integer values.
 
@@ -11,7 +12,7 @@ The formatting options for 32-bit integer values.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,51 +23,52 @@ enum OSLogInt32ExtendedFormat
 
 ## Mentions
 
-- [Generating Log Messages from Your Code](generating-log-messages-from-your-code.md)
+- [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
 ## Topics
 
 ### Getting the Formats
-- [OSLogInt32ExtendedFormat.ipv4Address](oslogint32extendedformat/ipv4address.md)
+- [OSLogInt32ExtendedFormat.ipv4Address](./oslogint32extendedformat/ipv4address.md)
   A format that displays a 32-bit integer as an IPv4 address.
-- [OSLogInt32ExtendedFormat.secondsSince1970](oslogint32extendedformat/secondssince1970.md)
+- [OSLogInt32ExtendedFormat.secondsSince1970](./oslogint32extendedformat/secondssince1970.md)
   A format that displays a 32-bit integer as a date.
-- [OSLogInt32ExtendedFormat.darwinErrno](oslogint32extendedformat/darwinerrno.md)
+- [OSLogInt32ExtendedFormat.darwinErrno](./oslogint32extendedformat/darwinerrno.md)
   A format that displays a 32-bit integer as a Darwin error number.
-- [OSLogInt32ExtendedFormat.darwinMode](oslogint32extendedformat/darwinmode.md)
+- [OSLogInt32ExtendedFormat.darwinMode](./oslogint32extendedformat/darwinmode.md)
   A format that displays a 32-bit integer as a Darwin file mode.
-- [OSLogInt32ExtendedFormat.darwinSignal](oslogint32extendedformat/darwinsignal.md)
+- [OSLogInt32ExtendedFormat.darwinSignal](./oslogint32extendedformat/darwinsignal.md)
   A format that displays a 32-bit integer as a Darwin signal.
-- [OSLogInt32ExtendedFormat.bitrate](oslogint32extendedformat/bitrate.md)
+- [OSLogInt32ExtendedFormat.bitrate](./oslogint32extendedformat/bitrate.md)
   A format that displays a 32-bit integer as a bit rate.
-- [OSLogInt32ExtendedFormat.bitrateIEC](oslogint32extendedformat/bitrateiec.md)
+- [OSLogInt32ExtendedFormat.bitrateIEC](./oslogint32extendedformat/bitrateiec.md)
   A format that displays a 32-bit integer as an IEC bit rate.
-- [OSLogInt32ExtendedFormat.byteCount](oslogint32extendedformat/bytecount.md)
+- [OSLogInt32ExtendedFormat.byteCount](./oslogint32extendedformat/bytecount.md)
   A format that displays a 32-bit integer as bytes.
-- [OSLogInt32ExtendedFormat.byteCountIEC](oslogint32extendedformat/bytecountiec.md)
+- [OSLogInt32ExtendedFormat.byteCountIEC](./oslogint32extendedformat/bytecountiec.md)
   A format that displays a 32-bit integer as IEC bytes.
-- [OSLogInt32ExtendedFormat.truth](oslogint32extendedformat/truth.md)
+- [OSLogInt32ExtendedFormat.truth](./oslogint32extendedformat/truth.md)
   A format that displays a 32-bit integer as true or false.
-- [OSLogInt32ExtendedFormat.answer](oslogint32extendedformat/answer.md)
+- [OSLogInt32ExtendedFormat.answer](./oslogint32extendedformat/answer.md)
   A format that displays a 32-bit integer as yes or no.
 ### Enumeration Cases
-- [OSLogInt32ExtendedFormat.machErrno](oslogint32extendedformat/macherrno.md)
+- [OSLogInt32ExtendedFormat.machErrno](./oslogint32extendedformat/macherrno.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [enum OSLogBoolFormat](oslogboolformat.md)
+### Value Formatters
+- [enum OSLogBoolFormat](./oslogboolformat.md)
   The formatting options for Boolean values.
-- [struct OSLogIntegerFormatting](oslogintegerformatting.md)
+- [struct OSLogIntegerFormatting](./oslogintegerformatting.md)
   The formatting options for integer values.
-- [struct OSLogFloatFormatting](oslogfloatformatting.md)
+- [struct OSLogFloatFormatting](./oslogfloatformatting.md)
   The formatting options for double and floating-point numbers.
-- [enum OSLogPointerFormat](oslogpointerformat.md)
+- [enum OSLogPointerFormat](./oslogpointerformat.md)
   The formatting options for pointer data.
 
 

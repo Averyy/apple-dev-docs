@@ -1,14 +1,15 @@
 # SaveDeviceState_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+ - Deprecated in 12.0
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t SaveDeviceState_Invoke(const IORPC rpc, OSMetaClassBase *target, SaveDeviceState_Handler func);
 ```
 

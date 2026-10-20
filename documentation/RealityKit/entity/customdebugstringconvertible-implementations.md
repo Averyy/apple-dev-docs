@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](entity/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A human readable description of the entity.
 
 

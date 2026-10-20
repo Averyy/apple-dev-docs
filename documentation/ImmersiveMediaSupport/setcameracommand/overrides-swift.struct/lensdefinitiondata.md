@@ -1,7 +1,8 @@
 # lensDefinitionData
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Inline lens definition (ILPD) data to override lens calibration
 

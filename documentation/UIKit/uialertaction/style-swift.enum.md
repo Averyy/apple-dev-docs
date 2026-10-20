@@ -1,7 +1,8 @@
 # UIAlertAction.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Styles to apply to action buttons in an alert.
 
@@ -9,7 +10,7 @@ Styles to apply to action buttons in an alert.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,27 +19,31 @@ Styles to apply to action buttons in an alert.
 enum Style
 ```
 
+```c
+enum UIAlertActionStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIAlertAction.Style.default](uialertaction/style-swift.enum/default.md)
+- [UIAlertAction.Style.default](./style-swift.enum/default.md)
   Apply the default style to the action’s button.
-- [UIAlertAction.Style.cancel](uialertaction/style-swift.enum/cancel.md)
+- [UIAlertAction.Style.cancel](./style-swift.enum/cancel.md)
   Apply a style that indicates the action cancels the operation and leaves things unchanged.
-- [UIAlertAction.Style.destructive](uialertaction/style-swift.enum/destructive.md)
+- [UIAlertAction.Style.destructive](./style-swift.enum/destructive.md)
   Apply a style that indicates the action might change or delete data.
 ### Initializers
-- [init?(rawValue: Int)](uialertaction/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

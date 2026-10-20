@@ -1,7 +1,8 @@
 # init(credentialID:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the descriptor with a credential.
 
@@ -17,6 +18,10 @@ Creates the descriptor with a credential.
 
 ```swift
 init(credentialID: Data)
+```
+
+```objc
+- (instancetype) initWithCredentialID:(NSData *) credentialID;
 ```
 
 ## Parameters

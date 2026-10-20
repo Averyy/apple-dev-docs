@@ -1,6 +1,8 @@
 # Becoming a now playable app
 
-**Framework**: Media Player
+**Framework**: Media Player  
+**Role**: Sample Code  
+**Download**: [BecomingANowPlayableApp.zip](https://docs-assets.developer.apple.com/published/6eacaf8a4885/BecomingANowPlayableApp.zip)
 
 Ensure your app is eligible to become the Now Playing app by adopting best practices for providing Now Playing info and registering for remote command center actions.
 
@@ -14,9 +16,9 @@ Ensure your app is eligible to become the Now Playing app by adopting best pract
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session 501: [`Reaching the Big Screen with AirPlay 2`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/501/).
+> **Note**: This sample code project is associated with WWDC 2019 session 501: [Reaching the Big Screen with AirPlay 2](https://developer.apple.com/videos/play/wwdc19/501/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
@@ -25,15 +27,16 @@ Before you run the sample code project in Xcode:
 
 ## See Also
 
-- [class MPNowPlayingSession](mpnowplayingsession.md)
+### Now Playing information
+- [class MPNowPlayingSession](./mpnowplayingsession.md)
   An object that manages Now Playing information and remote commands for multiple players.
-- [class MPNowPlayingInfoCenter](mpnowplayinginfocenter.md)
+- [class MPNowPlayingInfoCenter](./mpnowplayinginfocenter.md)
   An object for setting the Now Playing information for media that your app plays.
-- [class MPNowPlayingInfoLanguageOption](mpnowplayinginfolanguageoption.md)
+- [class MPNowPlayingInfoLanguageOption](./mpnowplayinginfolanguageoption.md)
   A set of interfaces for setting the language option for the Now Playing item.
-- [class MPNowPlayingInfoLanguageOptionGroup](mpnowplayinginfolanguageoptiongroup.md)
+- [class MPNowPlayingInfoLanguageOptionGroup](./mpnowplayinginfolanguageoptiongroup.md)
   A grouped set of language options where only a single language option can be active at a time.
-- [Language option characteristic constants](language-option-characteristic-constants.md)
+- [Language option characteristic constants](./language-option-characteristic-constants.md)
   The constants for defining language characteristics.
 
 

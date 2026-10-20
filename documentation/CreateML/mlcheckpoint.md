@@ -1,7 +1,8 @@
 # MLCheckpoint
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The state of a model’s asynchronous training session at a specific point in time during the feature extraction or training phase.
 
@@ -22,40 +23,41 @@ struct MLCheckpoint
 ## Topics
 
 ### Inspecting a checkpoint
-- [var phase: MLPhase](mlcheckpoint/phase.md)
+- [var phase: MLPhase](./mlcheckpoint/phase.md)
   The training session’s phase when it created the checkpoint.
-- [var iteration: Int](mlcheckpoint/iteration.md)
+- [var iteration: Int](./mlcheckpoint/iteration.md)
   The iteration number of a training session’s phase when it created the checkpoint.
-- [var date: Date](mlcheckpoint/date.md)
+- [var date: Date](./mlcheckpoint/date.md)
   The time when the training session created the checkpoint.
-- [var url: URL](mlcheckpoint/url.md)
+- [var url: URL](./mlcheckpoint/url.md)
   The location of the checkpoint in the file system.
 ### Assessing a checkpoint
-- [var metrics: [MLProgress.Metric : Any]](mlcheckpoint/metrics.md)
+- [var metrics: [MLProgress.Metric : Any]](./mlcheckpoint/metrics.md)
   Measurements of the model’s performance at the time the session saved the checkpoint.
-- [MLProgress.Metric](mlprogress/metric.md)
+- [MLProgress.Metric](./mlprogress/metric.md)
   Metrics you use to evaluate a model’s performance during a training session.
 ### Encoding and decoding a checkpoint
-- [func encode(to: any Encoder) throws](mlcheckpoint/encode(to:).md)
+- [func encode(to: any Encoder) throws](./mlcheckpoint/encode%28to%29.md)
   Encodes the checkpoint into the encoder.
-- [init(from: any Decoder) throws](mlcheckpoint/init(from:).md)
+- [init(from: any Decoder) throws](./mlcheckpoint/init%28from%29.md)
   Creates a new checkpoint by decoding from the decoder.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MLJob](mljob.md)
+### Model training Control
+- [class MLJob](./mljob.md)
   The representation of a model’s asynchronous training session you use to monitor the session’s progress or terminate its execution.
-- [class MLTrainingSession](mltrainingsession.md)
+- [class MLTrainingSession](./mltrainingsession.md)
   The current state of a model’s asynchronous training session.
-- [struct MLTrainingSessionParameters](mltrainingsessionparameters.md)
+- [struct MLTrainingSessionParameters](./mltrainingsessionparameters.md)
   The configuration settings for a training session.
 
 

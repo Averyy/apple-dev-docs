@@ -1,7 +1,8 @@
 # windowLevel(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the window level of this scene.
 
@@ -30,23 +31,24 @@ Window("Utility Window", id: "...") {
 
 ## See Also
 
-- [func defaultPosition(UnitPoint) -> some Scene](scene/defaultposition(_:).md)
+### Positioning a window
+- [func defaultPosition(UnitPoint) -> some Scene](./defaultposition%28_%29.md)
   Sets a default position for a window.
-- [struct WindowLevel](windowlevel.md)
+- [struct WindowLevel](../windowlevel.md)
   The level of a window.
-- [struct WindowLayoutRoot](windowlayoutroot.md)
+- [struct WindowLayoutRoot](../windowlayoutroot.md)
   A proxy which represents the root contents of a window.
-- [struct WindowPlacement](windowplacement.md)
+- [struct WindowPlacement](../windowplacement.md)
   A type which represents a preferred size and position for a window.
-- [func defaultWindowPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](scene/defaultwindowplacement(_:).md)
+- [func defaultWindowPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](./defaultwindowplacement%28_%29.md)
   Defines a function used for determining the default placement of windows.
-- [func windowIdealPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](scene/windowidealplacement(_:).md)
+- [func windowIdealPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](./windowidealplacement%28_%29.md)
   Provides a function which determines a placement to use when windows of a scene zoom.
-- [struct WindowPlacementContext](windowplacementcontext.md)
+- [struct WindowPlacementContext](../windowplacementcontext.md)
   A type which represents contextual information used for sizing and positioning windows.
-- [struct WindowProxy](windowproxy.md)
+- [struct WindowProxy](../windowproxy.md)
   The proxy for an open window in the app.
-- [struct DisplayProxy](displayproxy.md)
+- [struct DisplayProxy](../displayproxy.md)
   A type which provides information about display hardware.
 
 

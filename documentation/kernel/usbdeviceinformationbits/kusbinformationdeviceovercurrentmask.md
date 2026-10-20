@@ -1,7 +1,8 @@
 # kUSBInformationDeviceOvercurrentMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is in overcurrent.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is in overcurrent.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceOvercurrentMask = (1 << kUSBInformationDeviceOvercurrentBit)
 ```
 

@@ -1,7 +1,8 @@
 # payload
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The APDU data received from the NFC reader.
 

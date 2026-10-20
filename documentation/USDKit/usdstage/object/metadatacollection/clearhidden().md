@@ -1,7 +1,8 @@
 # clearHidden()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the authored `isHidden` opinion on this object.
 

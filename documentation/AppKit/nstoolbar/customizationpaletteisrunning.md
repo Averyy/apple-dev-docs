@@ -1,7 +1,8 @@
 # customizationPaletteIsRunning
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the toolbar’s customization palette is in use.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the toolbar’s customization palette is 
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether the toolbar’s customization palette is 
 var customizationPaletteIsRunning: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL customizationPaletteIsRunning;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the toolbar’s customization palette is running; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) when the toolbar’s customization palette is running; otherwise, it’s [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func runCustomizationPalette(Any?)](nstoolbar/runcustomizationpalette(_:).md)
+### Displaying the customization palette
+- [func runCustomizationPalette(Any?)](./runcustomizationpalette%28_%29.md)
   Displays the toolbar’s customization palette and handles any user-initiated customizations.
 
 

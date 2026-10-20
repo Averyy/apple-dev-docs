@@ -1,7 +1,8 @@
 # UILexicon
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A read-only array of term pairs, each in a lexicon entry object, for a custom keyboard.
 
@@ -18,49 +19,54 @@ A read-only array of term pairs, each in a lexicon entry object, for a custom ke
 class UILexicon
 ```
 
+```objc
+@interface UILexicon : NSObject
+```
+
 ## Mentions
 
-- [Configuring a custom keyboard interface](configuring-a-custom-keyboard-interface.md)
+- [Configuring a custom keyboard interface](./configuring-a-custom-keyboard-interface.md)
 
 #### Overview
 
-To obtain the lexicon, call the [`requestSupplementaryLexicon(completion:)`](uiinputviewcontroller/requestsupplementarylexicon(completion:).md) method of the [`UIInputViewController`](uiinputviewcontroller.md) class. This method can be called only from a custom keyboard app extension. A lexicon contains words from various sources, including:
+To obtain the lexicon, call the [`requestSupplementaryLexicon(completion:)`](./uiinputviewcontroller/requestsupplementarylexicon%28completion%29.md) method of the [`UIInputViewController`](./uiinputviewcontroller.md) class. This method can be called only from a custom keyboard app extension. A lexicon contains words from various sources, including:
 
 - Unpaired first names and last names from the user’s Address Book database
 - Text shortcuts defined in the Settings > General > Keyboard > Shortcuts list
 - A common words dictionary
 
-Apple intends for you to consider the words in a lexicon object as supplementary to an autocorrection/suggestion lexicon of your own design. For information on custom keyboards, see [`Custom Keyboard`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/CustomKeyboard.html#//apple_ref/doc/uid/TP40014214-CH16) in [`App Extension Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214).
+Apple intends for you to consider the words in a lexicon object as supplementary to an autocorrection/suggestion lexicon of your own design. For information on custom keyboards, see [Custom Keyboard](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/CustomKeyboard.html#//apple_ref/doc/uid/TP40014214-CH16) in [App Extension Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214).
 
 ## Topics
 
 ### Accessing the lexicon
-- [var entries: [UILexiconEntry]](uilexicon/entries.md)
+- [var entries: [UILexiconEntry]](./uilexicon/entries.md)
   A read-only array of term pairs for use by a custom keyboard.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol UITextDocumentProxy](uitextdocumentproxy.md)
+### Custom keyboard
+- [protocol UITextDocumentProxy](./uitextdocumentproxy.md)
   An object that provides textual context to a custom keyboard.
-- [protocol UIInputViewAudioFeedback](uiinputviewaudiofeedback.md)
+- [protocol UIInputViewAudioFeedback](./uiinputviewaudiofeedback.md)
   A property that enables a custom input or keyboard accessory view to play standard keyboard input clicks.
-- [class UIInputViewController](uiinputviewcontroller.md)
+- [class UIInputViewController](./uiinputviewcontroller.md)
   The primary view controller for a custom keyboard app extension.
-- [class UILexiconEntry](uilexiconentry.md)
+- [class UILexiconEntry](./uilexiconentry.md)
   A read-only term pair, available within a lexicon object, for a custom keyboard.
 
 

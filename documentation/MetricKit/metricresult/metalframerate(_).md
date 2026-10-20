@@ -1,7 +1,8 @@
 # MetricResult.metalFrameRate(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,12 +18,13 @@ case metalFrameRate(MetalFrameRateMetric)
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [case pixelLuminance(PixelLuminanceMetric)](metricresult/pixelluminance(_:).md)
-- [case gpuTime(GPUTimeMetric)](metricresult/gputime(_:).md)
+### Display and GPU
+- [case pixelLuminance(PixelLuminanceMetric)](./pixelluminance%28_%29.md)
+- [case gpuTime(GPUTimeMetric)](./gputime%28_%29.md)
 
 
 ---

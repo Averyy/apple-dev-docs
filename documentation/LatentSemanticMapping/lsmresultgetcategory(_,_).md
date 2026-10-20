@@ -1,13 +1,14 @@
 # LSMResultGetCategory(_:_:)
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the category of the specified result.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Returns the category of the specified result.
 func LSMResultGetCategory(_ result: LSMResult, _ n: CFIndex) -> LSMCategory
 ```
 
+```c
+LSMCategory LSMResultGetCategory(LSMResultRef result, CFIndex n);
+```
+
 ## See Also
 
-- [func LSMResultGetCount(LSMResult) -> CFIndex](lsmresultgetcount(_:).md)
+### Querying Result Information
+- [func LSMResultGetCount(LSMResult) -> CFIndex](./lsmresultgetcount%28_%29.md)
   Returns the number of results.
-- [func LSMResultGetScore(LSMResult, CFIndex) -> Float](lsmresultgetscore(_:_:).md)
+- [func LSMResultGetScore(LSMResult, CFIndex) -> Float](./lsmresultgetscore%28_,_%29.md)
   Returns the likelihood of the specified result.
 
 

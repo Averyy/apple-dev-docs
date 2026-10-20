@@ -1,7 +1,8 @@
 # AppEventUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app event update request.
 
@@ -10,14 +11,14 @@ The request body you use to update an app event update request.
 
 ## Declaration
 
-```swift
+```
 object AppEventUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventUpdateRequest.Data](appeventupdaterequest/data-data.dictionary.md)
+- [object AppEventUpdateRequest.Data](./appeventupdaterequest/data-data.dictionary.md)
   The request body you use to update an app event update request.
 
 ## Properties
@@ -26,17 +27,18 @@ object AppEventUpdateRequest
 
 ## See Also
 
-- [object AppEvent](appevent.md)
+### Objects and types
+- [object AppEvent](./appevent.md)
   A time-limited promotional or informational event for an app, displayed to customers on the App Store product page.
-- [object AppEventCreateRequest](appeventcreaterequest.md)
+- [object AppEventCreateRequest](./appeventcreaterequest.md)
   The request body you use to create an app event.
-- [object AppEventsResponse](appeventsresponse.md)
+- [object AppEventsResponse](./appeventsresponse.md)
   The response body for endpoints that list in-app events for an app.
-- [object AppEventResponse](appeventresponse.md)
+- [object AppEventResponse](./appeventresponse.md)
   The response body for endpoints that create, read, or modify an in-app event.
-- [type AppEventAssetType](appeventassettype.md)
+- [type AppEventAssetType](./appeventassettype.md)
   A string that represents the type of asset for an app event.
-- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationsLinkagesResponse](./appeventlocalizationslinkagesresponse.md)
 
 
 ---

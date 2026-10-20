@@ -1,7 +1,8 @@
 # pageControlProgress(_:initialProgressForPage:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the initial progress (between 0…1) for the specified page. By default, `currentProgress` is set to 0 when the page changes.
 
@@ -16,6 +17,10 @@ Returns the initial progress (between 0…1) for the specified page. By default,
 
 ```swift
 optional func pageControlProgress(_ progress: UIPageControlProgress, initialProgressForPage page: Int) -> Float
+```
+
+```objc
+- (float) pageControlProgress:(UIPageControlProgress *) progress initialProgressForPage:(NSInteger) page;
 ```
 
 

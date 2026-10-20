@@ -1,18 +1,19 @@
 # sf_accept_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*sf_accept_func)(void *cookie, socket_t so_listen, socket_t so, const struct sockaddr *local, const struct sockaddr *remote);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - The caller will continue with normal processing of accept. EJUSTRETURN - The to be accepted socket will be disconnected prior to being returned to the caller of accept. No further control or data operations on the socket will be allowed. This is the recommended return value as it has the least amount of impact, especially to applications which don't check the error value returned by accept. Anything Else - The to be accepted socket will be closed and the error will be returned to the caller of accept. Note that socket filter developers are advised to exercise caution when returning non-zero values to the caller, since some applications don't check the error value returned by accept and therefore risk breakage.
 

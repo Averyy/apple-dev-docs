@@ -1,9 +1,10 @@
 # SpeechDetector.Result
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](speechdetector/init(detectionoptions:reportresults:).md) and currently only support error handling from the VAD model.
+A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](./init%28detectionoptions,reportresults%29.md) and currently only support error handling from the VAD model.
 
 **Availability**:
 - iOS 26.0+
@@ -22,27 +23,28 @@ struct Result
 ## Topics
 
 ### Getting detection results
-- [let speechDetected: Bool](speechdetector/result/speechdetected.md)
+- [let speechDetected: Bool](./result/speechdetected.md)
 ### Getting audio range
-- [var range: CMTimeRange](speechmoduleresult/range.md)
+- [var range: CMTimeRange](../speechmoduleresult/range.md)
   The audio input range that this result applies to.
 ### Getting finalization state
-- [var isFinal: Bool](speechmoduleresult/isfinal.md)
+- [var isFinal: Bool](../speechmoduleresult/isfinal.md)
   Whether this result is final at the time it is produced.
-- [var resultsFinalizationTime: CMTime](speechmoduleresult/resultsfinalizationtime.md)
+- [var resultsFinalizationTime: CMTime](../speechmoduleresult/resultsfinalizationtime.md)
   The audio input time up to which results from this module have been finalized (after this result). The module’s results are final up to but not including this time.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpeechModuleResult](speechmoduleresult.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SpeechModuleResult](../speechmoduleresult.md)
 
 ## See Also
 
-- [var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error>](speechdetector/results.md)
+### Getting results
+- [var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error>](./results.md)
   The asynchronous sequence of speech detection results.
 
 

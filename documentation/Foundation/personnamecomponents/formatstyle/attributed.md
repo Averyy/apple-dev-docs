@@ -1,7 +1,8 @@
 # attributed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style used to create a locale-aware attributed string representation of an instance of person name components.
 
@@ -22,13 +23,14 @@ var attributed: PersonNameComponents.AttributedStyle { get }
 
 ## See Also
 
-- [var style: PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.property.md)
+### Modifying a Format Style
+- [var style: PersonNameComponents.FormatStyle.Style](./style-swift.property.md)
   Specifies the style of the formatted result.
-- [PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.enum.md)
+- [PersonNameComponents.FormatStyle.Style](./style-swift.enum.md)
   The type that represents the style of the formatted result.
-- [var locale: Locale](personnamecomponents/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting the person name components.
-- [func locale(Locale) -> PersonNameComponents.FormatStyle](personnamecomponents/formatstyle/locale(_:).md)
+- [func locale(Locale) -> PersonNameComponents.FormatStyle](./locale%28_%29.md)
   Modifies the person name components format style to use the specified locale.
 
 

@@ -1,6 +1,8 @@
 # Asynchronously loading images into table and collection views
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [AsynchronouslyLoadingImagesIntoTableAndCollectionViews.zip](https://docs-assets.developer.apple.com/published/ddaa59c48206/AsynchronouslyLoadingImagesIntoTableAndCollectionViews.zip)
 
 Store and fetch images asynchronously to make your app more responsive.
 
@@ -14,9 +16,9 @@ Store and fetch images asynchronously to make your app more responsive.
 
 Caching images can help you make the table and collection views in your app instantiate fast and respond quickly to scrolling. The app in the sample project demonstrates fetching images with URLs. The images are not part of the assets catalog and instead are a part of the app bundle to simulate loading each asynchronously by URL. This ensures the user interface remains responsive. This project also supports Mac Catalyst.
 
-##### Handle Image Loading and Caching
+##### Handle image loading and caching
 
-In the sample, the class `ImageCache.swift` demonstrates a basic mechanism for image loading from a URL with [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) and caching the downloaded images using [`NSCache`](https://developer.apple.com/documentation/foundation/nscache). Views such as `UITableView` and `UICollectionView` are subclasses of `UIScrollView`.
+In the sample, the class `ImageCache.swift` demonstrates a basic mechanism for image loading from a URL with [`NSURLSession`](../Foundation/urlsession.md) and caching the downloaded images using [`NSCache`](../Foundation/nscache.md). Views such as `UITableView` and `UICollectionView` are subclasses of `UIScrollView`.
 
 As the user scrolls in a view, the app requests the same image repeatedly. This sample holds onto the relevant completion blocks until the image loads, then passes the image to all of the requesting blocks so the API only has to make one call to fetch an image for a given URL. The following code shows how the sample project constructs a basic caching and loading method:
 
@@ -60,11 +62,11 @@ final func load(url: NSURL, item: Item, completion: @escaping (Item, UIImage?) -
 }
 ```
 
-##### Update Your Datasource Responsibly
+##### Update your datasource responsibly
 
 An app that loads all of its data on launch risks running out of memory or terminating for taking too long to complete. Unless the app requires all data to be loaded before operation, load your images as the UI requests them.
 
-> **Note**: To ensure items load before becoming visible on screen, make use of prefetching APIs when applicable. See [`Prefetching collection view data`](prefetching-collection-view-data.md) for best practices of prefetching data.
+> **Note**: To ensure items load before becoming visible on screen, make use of prefetching APIs when applicable. See [Prefetching collection view data](./prefetching-collection-view-data.md) for best practices of prefetching data.
 
 Generally the app should wait until the data source requests a cell to fetch and set an image. The sample project demonstrates one approach to fetching and displaying an image on a reusable view:
 
@@ -87,21 +89,22 @@ cell.contentConfiguration = content
 
 ## See Also
 
-- [Filling a table with data](filling-a-table-with-data.md)
+### Data
+- [Filling a table with data](./filling-a-table-with-data.md)
   Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard.
-- [protocol UITableViewDataSource](uitableviewdatasource.md)
+- [protocol UITableViewDataSource](./uitableviewdatasource.md)
   The methods that an object adopts to manage data and provide cells for a table view.
-- [protocol UITableViewDataSourcePrefetching](uitableviewdatasourceprefetching.md)
+- [protocol UITableViewDataSourcePrefetching](./uitableviewdatasourceprefetching.md)
   A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early.
-- [class UITableViewDiffableDataSource](uitableviewdiffabledatasource-2euir.md)
+- [class UITableViewDiffableDataSource](./uitableviewdiffabledatasource-2euir.md)
   The object you use to manage data and provide cells for a table view.
-- [struct NSDiffableDataSourceSnapshot](nsdiffabledatasourcesnapshot-swift.struct.md)
+- [struct NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshot-swift.struct.md)
   A representation of the state of the data in a view at a specific point in time.
-- [class UILocalizedIndexedCollation](uilocalizedindexedcollation.md)
+- [class UILocalizedIndexedCollation](./uilocalizedindexedcollation.md)
   An object that organizes, sorts, and localizes the data for a table view that has a section index.
-- [protocol UIDataSourceTranslating](uidatasourcetranslating.md)
+- [protocol UIDataSourceTranslating](./uidatasourcetranslating.md)
   An advanced interface for managing a data source object.
-- [class UIRefreshControl](uirefreshcontrol.md)
+- [class UIRefreshControl](./uirefreshcontrol.md)
   A standard control that can initiate the refreshing of a scroll view’s contents.
 
 

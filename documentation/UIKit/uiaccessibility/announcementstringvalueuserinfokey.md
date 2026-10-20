@@ -1,7 +1,8 @@
 # announcementStringValueUserInfoKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The text of the announcement.
 
@@ -9,7 +10,7 @@ The text of the announcement.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ nonisolated
 static let announcementStringValueUserInfoKey: String
 ```
 
+```c
+extern NSString * const UIAccessibilityAnnouncementKeyStringValue;
+```
+
 ## See Also
 
-- [static let announcementWasSuccessfulUserInfoKey: String](uiaccessibility/announcementwassuccessfuluserinfokey.md)
+### Notification keys
+- [static let announcementWasSuccessfulUserInfoKey: String](./announcementwassuccessfuluserinfokey.md)
   A Boolean value that indicates whether the announcement is successful.
-- [static let focusedElementUserInfoKey: String](uiaccessibility/focusedelementuserinfokey.md)
+- [static let focusedElementUserInfoKey: String](./focusedelementuserinfokey.md)
   The element currently in focus by the assistive app.
-- [static let unfocusedElementUserInfoKey: String](uiaccessibility/unfocusedelementuserinfokey.md)
+- [static let unfocusedElementUserInfoKey: String](./unfocusedelementuserinfokey.md)
   The element previously in focus by the assistive app.
-- [static let assistiveTechnologyUserInfoKey: String](uiaccessibility/assistivetechnologyuserinfokey.md)
+- [static let assistiveTechnologyUserInfoKey: String](./assistivetechnologyuserinfokey.md)
   The identifier of the assistive app.
-- [UIAccessibility.AssistiveTechnologyIdentifier](uiaccessibility/assistivetechnologyidentifier.md)
+- [UIAccessibility.AssistiveTechnologyIdentifier](./assistivetechnologyidentifier.md)
   Identifiers for assistive apps.
 
 

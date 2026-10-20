@@ -1,14 +1,15 @@
 # LOAD_UNLOAD_MEDIUM
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool LOAD_UNLOAD_MEDIUM(SCSITaskIdentifier request, SCSICmdField1Bit IMMED, SCSICmdField1Bit LO_UNLO, SCSICmdField1Bit START, SCSICmdField1Byte SLOT, SCSICmdField1Byte CONTROL);
 ```
 

@@ -1,7 +1,8 @@
 # kCFErrorDomainWinSock
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -17,13 +18,18 @@
 let kCFErrorDomainWinSock: CFString
 ```
 
+```c
+extern CFStringRef const kCFErrorDomainWinSock;
+```
+
 #### Discussion
 
 Error domain that returns error codes specific to the underlying network layer when running CFNetwork code on Windows.
 
 ## See Also
 
-- [let kCFErrorDomainCFNetwork: CFString](kcferrordomaincfnetwork.md)
+### Constants
+- [let kCFErrorDomainCFNetwork: CFString](./kcferrordomaincfnetwork.md)
 
 
 ---

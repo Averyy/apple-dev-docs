@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw bitmask that represents this set of marker positions.
 

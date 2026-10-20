@@ -1,6 +1,7 @@
 # Transforming an image in three dimensions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Create and use a projective transformation to apply a perspective warp to an image.
 
@@ -8,11 +9,11 @@ Create and use a projective transformation to apply a perspective warp to an ima
 
 The vImage library provides a set of functions that allow you create projective-transformation structures and apply them to images. The following image shows the effect of a projective transformation that derives from the four corner points of a perspective distorted rectangle. The image demonstrates how the projective transformation warps the image to match the empty billboard rectangle.
 
-![A flow diagram of two images. On the left is a photograph of an empty picture frame, and on the right is the same image with a photograph of a palm tree composited over the picture frame. The photograph has been taken at an angle so that the picture frame is subject to perspective distortion. The composite image shows the palm tree image warped to fit the distorted frame.](/images/com.apple.accelerate/media-4098130@2x.png)
+![A flow diagram of two images. On the left is a photograph of an empty picture frame, and on the right is the same image with a photograph of a palm tree composited over the picture frame. The photograph has been taken at an angle so that the picture frame is subject to perspective distortion. The composite image shows the palm tree image warped to fit the distorted frame.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4098130@2x.png)
 
-##### Create the Vimage Buffers That Represent the Source Images
+##### Create the vImage buffers that represent the source images
 
-Create a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that describes the four-channel, 8-bit-per-channel images that this example uses.
+Create a [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure that describes the four-channel, 8-bit-per-channel images that this example uses.
 
 ```swift
 var format = vImage_CGImageFormat(
@@ -50,9 +51,9 @@ let warpedBuffer = vImage.PixelBuffer<vImage.Interleaved8x4>(
     size: backgroundBuffer.size)
 ```
 
-##### Use the Vision Framework to Find the Rectangle Corner Points
+##### Use the Vision framework to find the rectangle corner points
 
-The [`Vision`](https://developer.apple.com/documentation/vision) framework allows you to find the corner points of the target rectangle. The code below is a simplified example. See [`Detecting Objects in Still Images`](https://developer.apple.com/documentation/vision/detecting-objects-in-still-images) for additional information.
+The [Vision](../Vision/Vision.md) framework allows you to find the corner points of the target rectangle. The code below is a simplified example. See [Detecting Objects in Still Images](../Vision/detecting-objects-in-still-images.md) for additional information.
 
 ```swift
 let imageRequestHandler = VNImageRequestHandler(cgImage: backgroundImage,
@@ -69,9 +70,9 @@ guard let observation = requests.first?.results?.first as? VNRectangleObservatio
 
 On return, `observation` contains the four corner points of the target rectangle.
 
-##### Create the Source and Destination Points
+##### Create the source and destination points
 
-Use the values in the Vision [`VNRectangleObservation`](https://developer.apple.com/documentation/vision/vnrectangleobservation) instance to create a set of points for the vImage warp function. The Vision framework returns normalized coordinates in the range `0...1` with `0` at the bottom-left of the image. The vImage warp function requires coordinates that represent pixel values with `0` at the top-left of the image.
+Use the values in the Vision [`VNRectangleObservation`](../Vision/vnrectangleobservation.md) instance to create a set of points for the vImage warp function. The Vision framework returns normalized coordinates in the range `0...1` with `0` at the bottom-left of the image. The vImage warp function requires coordinates that represent pixel values with `0` at the top-left of the image.
 
 The destination points refer to the corner points of the target rectangle.
 
@@ -111,9 +112,9 @@ let srcPoints: [vImagePoint] = {
 
 ```
 
-##### Calculate the Projective Transformation
+##### Calculate the projective transformation
 
-Call [`vImageGetPerspectiveWarp(_:_:_:_:)`](vimagegetperspectivewarp(_:_:_:_:).md) to calculate the projective transformation to translate the foreground image to the target rectangle.
+Call [`vImageGetPerspectiveWarp(_:_:_:_:)`](./vimagegetperspectivewarp%28_,_,_,_%29.md) to calculate the projective transformation to translate the foreground image to the target rectangle.
 
 ```swift
 var transform = vImage_PerpsectiveTransform()
@@ -123,9 +124,9 @@ vImageGetPerspectiveWarp(srcPoints, dstPoints, &transform, 0)
 
 On return, `transform` contains the projective transformation to warp the source points to the destination points.
 
-##### Apply the Perspective Warp
+##### Apply the perspective warp
 
-Call [`vImagePerspectiveWarp_ARGB8888(_:_:_:_:_:_:_:)`](vimageperspectivewarp_argb8888(_:_:_:_:_:_:_:).md) to warp the foreground image to the destination rectangle’s shape and position.
+Call [`vImagePerspectiveWarp_ARGB8888(_:_:_:_:_:_:_:)`](./vimageperspectivewarp_argb8888%28_,_,_,_,_,_,_%29.md) to warp the foreground image to the destination rectangle’s shape and position.
 
 ```swift
 foregroundBuffer.withUnsafePointerToVImageBuffer { src in
@@ -144,7 +145,7 @@ foregroundBuffer.withUnsafePointerToVImageBuffer { src in
 
 ```
 
-##### Composite the Warped Foreground Over the Background Image
+##### Composite the warped foreground over the background image
 
 Finally, composite the warped foreground image over the background image.
 
@@ -159,9 +160,10 @@ let result = backgroundBuffer.makeCGImage(cgImageFormat: format)
 
 ## See Also
 
-- [func vImageGetPerspectiveWarp(UnsafePointer<(Float, Float)>, UnsafePointer<(Float, Float)>, UnsafeMutablePointer<vImage_PerpsectiveTransform>, vImage_Flags) -> vImage_Error](vimagegetperspectivewarp(_:_:_:_:).md)
+### Computing a projective transformation from source and destination quadrilaterals
+- [func vImageGetPerspectiveWarp(UnsafePointer<(Float, Float)>, UnsafePointer<(Float, Float)>, UnsafeMutablePointer<vImage_PerpsectiveTransform>, vImage_Flags) -> vImage_Error](./vimagegetperspectivewarp%28_,_,_,_%29.md)
   Returns a projective-transformation structure that defines the mapping between a source quadrilateral and a destination quadrilateral.
-- [struct vImage_PerpsectiveTransform](vimage_perpsectivetransform.md)
+- [struct vImage_PerpsectiveTransform](./vimage_perpsectivetransform.md)
   A projective-transformation matrix.
 
 

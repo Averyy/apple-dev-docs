@@ -1,7 +1,8 @@
 # failing(rationale:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a metric with a failing result.
 
@@ -22,7 +23,7 @@ func failing(rationale: String? = nil) -> Metric
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 #### Discussion
 
@@ -32,11 +33,12 @@ let failingResult = metric.failing(rationale: "No match found")
 
 ## See Also
 
-- [func passing(rationale: String?) -> Metric](metric/passing(rationale:).md)
+### Producing results
+- [func passing(rationale: String?) -> Metric](./passing%28rationale%29.md)
   Returns a metric with a passing result.
-- [func scoring(Double, rationale: String?) -> Metric](metric/scoring(_:rationale:).md)
+- [func scoring(Double, rationale: String?) -> Metric](./scoring%28_,rationale%29.md)
   Returns a metric with a numeric result.
-- [func ignore(rationale: String?) -> Metric](metric/ignore(rationale:).md)
+- [func ignore(rationale: String?) -> Metric](./ignore%28rationale%29.md)
   Returns a metric with an ignored result, excluded from aggregation.
 
 

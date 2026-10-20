@@ -1,7 +1,8 @@
 # MKOverlayLevel.aboveLabels
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Place the overlay above map labels, shields, or point-of-interest icons but below annotations and 3D projections of buildings.
 
@@ -20,13 +21,18 @@ Place the overlay above map labels, shields, or point-of-interest icons but belo
 case aboveLabels
 ```
 
+```c
+MKOverlayLevelAboveLabels
+```
+
 #### Discussion
 
-[`MKMapView`](mkmapview.md) displays graphics in layers. The value [`MKOverlayLevel.aboveLabels`](mkoverlaylevel/abovelabels.md) places a layer in the map view above roadways and map labels.
+[`MKMapView`](../mkmapview.md) displays graphics in layers. The value [`MKOverlayLevel.aboveLabels`](./abovelabels.md) places a layer in the map view above roadways and map labels.
 
 ## See Also
 
-- [MKOverlayLevel.aboveRoads](mkoverlaylevel/aboveroads.md)
+### Constants
+- [MKOverlayLevel.aboveRoads](./aboveroads.md)
   Place the overlay above roadways but below map labels, shields, or point-of-interest icons.
 
 

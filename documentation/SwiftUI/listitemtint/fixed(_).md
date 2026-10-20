@@ -1,7 +1,8 @@
 # fixed(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An explicit tint color.
 
@@ -30,9 +31,10 @@ The system doesn’t override this tint effect.
 
 ## See Also
 
-- [static let monochrome: ListItemTint](listitemtint/monochrome.md)
+### Getting list item tint options
+- [static let monochrome: ListItemTint](./monochrome.md)
   A standard grayscale tint effect.
-- [static func preferred(Color) -> ListItemTint](listitemtint/preferred(_:).md)
+- [static func preferred(Color) -> ListItemTint](./preferred%28_%29.md)
   An explicit tint color that the system can override.
 
 

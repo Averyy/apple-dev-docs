@@ -1,7 +1,8 @@
 # playAudio(_:at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously prepares and plays a new audio playback instance at a specified time on this entity.
 

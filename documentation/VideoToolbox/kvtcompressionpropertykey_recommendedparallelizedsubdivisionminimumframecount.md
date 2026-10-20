@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumFrameCount
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The recommended minimum number of video frames for a given subdivision in a parallel encoding configuration.
 
@@ -19,6 +20,10 @@ The recommended minimum number of video frames for a given subdivision in a para
 let kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumFrameCount: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumFrameCount;
+```
+
 #### Discussion
 
 For best results, ensure that the total number of frames of a parallelized subdivision is greater than or equal to this value.
@@ -27,9 +32,10 @@ For best results, ensure that the total number of frames of a parallelized subdi
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_RecommendedParallelizationLimit: CFString](kvtcompressionpropertykey_recommendedparallelizationlimit.md)
+### Parallelization
+- [let kVTCompressionPropertyKey_RecommendedParallelizationLimit: CFString](./kvtcompressionpropertykey_recommendedparallelizationlimit.md)
   The recommended number of compression sessions to instantiate in a parallel encoding configuration.
-- [let kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumDuration: CFString](kvtcompressionpropertykey_recommendedparallelizedsubdivisionminimumduration.md)
+- [let kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumDuration: CFString](./kvtcompressionpropertykey_recommendedparallelizedsubdivisionminimumduration.md)
   The recommended minimum duration for a given subdivision in a parallel encoding configuration.
 
 

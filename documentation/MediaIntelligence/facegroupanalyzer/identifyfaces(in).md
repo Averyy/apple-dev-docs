@@ -1,7 +1,8 @@
 # identifyFaces(in:)
 
 **Framework**: Media Intelligence  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detects and identifies faces without modifying the analyzer’s data.
 
@@ -21,7 +22,7 @@ final nonisolated(nonsending) func identifyFaces(in assets: [MediaIntelligenceIm
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
 #### Return Value
 
@@ -29,7 +30,7 @@ An async sequence of `(assetID, faces)` pairs.
 
 #### Discussion
 
-Use this method to recognize people in new images against the existing gallery without storing any face data. Each returned face has an [`entityID`](facegroupanalyzer/face/entityid.md) if the framework matched it to a known entity, or `nil` if no match was found.
+Use this method to recognize people in new images against the existing gallery without storing any face data. Each returned face has an [`entityID`](./face/entityid.md) if the framework matched it to a known entity, or `nil` if no match was found.
 
 ## Parameters
 
@@ -37,17 +38,18 @@ Use this method to recognize people in new images against the existing gallery w
 
 ## See Also
 
+### Fetching and identifying faces
 - [func fetchFaces([FaceGroupAnalyzer.Face.ID]) throws -> some AsyncSequence<FaceGroupAnalyzer.Face, any Error>
-](facegroupanalyzer/fetchfaces(_:).md)
+](./fetchfaces%28_%29.md)
   Returns the faces with the specified identifiers.
 - [func fetchFaces(for: [FaceGroupAnalyzer.Entity.ID]) throws -> some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/fetchfaces(for:).md)
+](./fetchfaces%28for%29.md)
   Returns the faces belonging to the specified entities.
 - [func fetchFaces(in: [MediaIntelligenceImageAsset.ID]) throws -> some AsyncSequence<(assetID: MediaIntelligenceImageAsset.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/fetchfaces(in:).md)
+](./fetchfaces%28in%29.md)
   Returns the faces from the specified assets.
 - [func fetchAssetIDs(for: [FaceGroupAnalyzer.Entity.ID]) throws -> some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, assetIDs: Array<MediaIntelligenceImageAsset.ID>), any Error>
-](facegroupanalyzer/fetchassetids(for:).md)
+](./fetchassetids%28for%29.md)
   Returns the asset identifiers for the specified entities.
 
 

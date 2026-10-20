@@ -1,7 +1,8 @@
 # hourlyStatistics(for:startHour:endHour:including:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns hourly weather statistics for the requested location, for each hour from the start hour to the end hour, inclusively.
 
@@ -26,7 +27,7 @@ The requested hourly weather statistics.
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 The statistics returned for each hour are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular hour of the year, in UTC.
 
@@ -42,7 +43,7 @@ If the start hour is greater than the end hour, then a wrap around will occur. T
 let hourlyTemperatureStatistics = try await service.hourlyStatistics(for: newYork, startHour: 8783, endHour: 2, including: .temperature)
 ```
 
-> **Note**: `startHour in 1...8784 && endHour in 1...8784`
+> **Precondition**: `startHour in 1...8784 && endHour in 1...8784`
 
 ## Parameters
 

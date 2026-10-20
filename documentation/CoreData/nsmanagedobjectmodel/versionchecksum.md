@@ -1,7 +1,8 @@
 # versionChecksum
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Base64-encoded 128-bit model version hash.
 
@@ -20,17 +21,22 @@ The Base64-encoded 128-bit model version hash.
 var versionChecksum: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * versionChecksum;
+```
+
 #### Discussion
 
 This value is also available in the versioned model’s `VersionInfo.plist` file and in Xcode’s build log.
 
 ## See Also
 
-- [var versionIdentifiers: Set<AnyHashable>](nsmanagedobjectmodel/versionidentifiers.md)
+### Versioning and migrating entities
+- [var versionIdentifiers: Set<AnyHashable>](./versionidentifiers.md)
   The set of developer-defined version identifiers for the object model.
-- [var entityVersionHashesByName: [String : Data]](nsmanagedobjectmodel/entityversionhashesbyname.md)
+- [var entityVersionHashesByName: [String : Data]](./entityversionhashesbyname.md)
   The dictionary of the model’s entity names and their corresponding version hashes.
-- [func isConfiguration(withName: String?, compatibleWithStoreMetadata: [String : Any]) -> Bool](nsmanagedobjectmodel/isconfiguration(withname:compatiblewithstoremetadata:).md)
+- [func isConfiguration(withName: String?, compatibleWithStoreMetadata: [String : Any]) -> Bool](./isconfiguration%28withname,compatiblewithstoremetadata%29.md)
   Returns a Boolean value that indicates whether a given configuration in the model is compatible with given metadata from a persistent store.
 
 

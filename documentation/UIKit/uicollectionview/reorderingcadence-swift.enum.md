@@ -1,7 +1,8 @@
 # UICollectionView.ReorderingCadence
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the speed at which collection view items are reorganized during a drop.
 
@@ -17,37 +18,42 @@ Constants indicating the speed at which collection view items are reorganized du
 enum ReorderingCadence
 ```
 
+```c
+enum UICollectionViewReorderingCadence : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UICollectionView.ReorderingCadence.immediate](uicollectionview/reorderingcadence-swift.enum/immediate.md)
+- [UICollectionView.ReorderingCadence.immediate](./reorderingcadence-swift.enum/immediate.md)
   Items are reordered into place immediately.
-- [UICollectionView.ReorderingCadence.fast](uicollectionview/reorderingcadence-swift.enum/fast.md)
+- [UICollectionView.ReorderingCadence.fast](./reorderingcadence-swift.enum/fast.md)
   Items are reordered quickly, but with a short delay.
-- [UICollectionView.ReorderingCadence.slow](uicollectionview/reorderingcadence-swift.enum/slow.md)
+- [UICollectionView.ReorderingCadence.slow](./reorderingcadence-swift.enum/slow.md)
   Items are reordered after a delay.
 ### Initializers
-- [init?(rawValue: Int)](uicollectionview/reorderingcadence-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./reorderingcadence-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dropDelegate: (any UICollectionViewDropDelegate)?](uicollectionview/dropdelegate.md)
+### Managing drop interactions
+- [var dropDelegate: (any UICollectionViewDropDelegate)?](./dropdelegate.md)
   The delegate object that manages the dropping of items into the collection view.
-- [protocol UICollectionViewDropDelegate](uicollectionviewdropdelegate.md)
+- [protocol UICollectionViewDropDelegate](../uicollectionviewdropdelegate.md)
   The interface for handling drops in a collection view.
-- [var hasActiveDrop: Bool](uicollectionview/hasactivedrop.md)
+- [var hasActiveDrop: Bool](./hasactivedrop.md)
   A Boolean value that indicates whether the collection view is currently tracking a drop session.
-- [var reorderingCadence: UICollectionView.ReorderingCadence](uicollectionview/reorderingcadence-swift.property.md)
+- [var reorderingCadence: UICollectionView.ReorderingCadence](./reorderingcadence-swift.property.md)
   The speed at which items in the collection view are reordered to show potential drop locations.
 
 

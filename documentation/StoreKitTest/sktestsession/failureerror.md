@@ -1,17 +1,20 @@
 # failureError
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error code that transactions return when you enable failing transactions.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+- watchOS 7.0+ - Deprecated in 10.0
+
+> **Deprecated**: No longer supported. Use simulatedError(forAPI:)
 
 ## Declaration
 
@@ -19,15 +22,20 @@ The error code that transactions return when you enable failing transactions.
 var failureError: SKError.Code { get set }
 ```
 
+```objc
+@property (nonatomic, assign) SKErrorCode failureError;
+```
+
 #### Discussion
 
-You can force an error by setting [`failTransactionsEnabled`](sktestsession/failtransactionsenabled.md) to `true` and setting [`failureError`](sktestsession/failureerror.md) value to one of these supported error codes: [`SKError.Code.unknown`](https://developer.apple.com/documentation/storekit/skerror/code/unknown), [`SKError.Code.invalidOfferIdentifier`](https://developer.apple.com/documentation/storekit/skerror/code/invalidofferidentifier), [`SKError.Code.invalidSignature`](https://developer.apple.com/documentation/storekit/skerror/code/invalidsignature), [`SKError.Code.missingOfferParams`](https://developer.apple.com/documentation/storekit/skerror/code/missingofferparams), [`SKError.Code.invalidOfferPrice`](https://developer.apple.com/documentation/storekit/skerror/code/invalidofferprice).
+You can force an error by setting [`failTransactionsEnabled`](./failtransactionsenabled.md) to `true` and setting [`failureError`](./failureerror.md) value to one of these supported error codes: [`SKError.Code.unknown`](../../StoreKit/skerror/code/unknown.md), [`SKError.Code.invalidOfferIdentifier`](../../StoreKit/skerror/code/invalidofferidentifier.md), [`SKError.Code.invalidSignature`](../../StoreKit/skerror/code/invalidsignature.md), [`SKError.Code.missingOfferParams`](../../StoreKit/skerror/code/missingofferparams.md), [`SKError.Code.invalidOfferPrice`](../../StoreKit/skerror/code/invalidofferprice.md).
 
 Use these settings to test your how your app responds to failed transactions.
 
 ## See Also
 
-- [var failTransactionsEnabled: Bool](sktestsession/failtransactionsenabled.md)
+### Forcing failed transactions
+- [var failTransactionsEnabled: Bool](./failtransactionsenabled.md)
   A Boolean value that determines whether transactions fail in the testing environment.
 
 

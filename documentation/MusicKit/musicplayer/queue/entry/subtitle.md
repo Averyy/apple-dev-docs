@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle of this entry of the playback queue.
 

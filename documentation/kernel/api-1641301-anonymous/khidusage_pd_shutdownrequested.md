@@ -1,14 +1,15 @@
 # kHIDUsage_PD_ShutdownRequested
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PD_ShutdownRequested = 0x68
 ```
 

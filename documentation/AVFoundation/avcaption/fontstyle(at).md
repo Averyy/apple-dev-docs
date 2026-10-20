@@ -1,7 +1,8 @@
 # fontStyle(at:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the font style and range at the index position.
 
@@ -28,15 +29,16 @@ A tuple that contains the font style and range to which it applies.
 
 ## See Also
 
-- [AVCaption.FontStyle](avcaption/fontstyle.md)
+### Accessing font styles
+- [AVCaption.FontStyle](./fontstyle.md)
   Font styles for caption text.
-- [func fontWeight(at: String.Index) -> (AVCaption.FontWeight, Range<String.Index>)](avcaption/fontweight(at:).md)
+- [func fontWeight(at: String.Index) -> (AVCaption.FontWeight, Range<String.Index>)](./fontweight%28at%29.md)
   Returns the font weight and range at the index position.
-- [AVCaption.FontWeight](avcaption/fontweight.md)
+- [AVCaption.FontWeight](./fontweight.md)
   Font weights for a caption.
-- [func decoration(at: String.Index) -> (AVCaption.Decoration, Range<String.Index>)](avcaption/decoration(at:).md)
+- [func decoration(at: String.Index) -> (AVCaption.Decoration, Range<String.Index>)](./decoration%28at%29.md)
   Returns the text decoration at the index position.
-- [AVCaption.Decoration](avcaption/decoration.md)
+- [AVCaption.Decoration](./decoration.md)
   Text decorations for caption text.
 
 

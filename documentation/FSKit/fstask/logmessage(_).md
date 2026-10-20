@@ -1,7 +1,8 @@
 # logMessage(_:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Logs the given string to the initiating client.
 
@@ -12,6 +13,10 @@ Logs the given string to the initiating client.
 
 ```swift
 func logMessage(_ str: String)
+```
+
+```objc
+- (void) logMessage:(NSString *) str;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # automaticallySynchronizesToBackingStore
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether to automatically synchronize with the backing store when an editing transaction finishes.
 
@@ -16,6 +17,10 @@ Determines whether to automatically synchronize with the backing store when an e
 
 ```swift
 var automaticallySynchronizesToBackingStore: Bool { get set }
+```
+
+```objc
+@property BOOL automaticallySynchronizesToBackingStore;
 ```
 
 

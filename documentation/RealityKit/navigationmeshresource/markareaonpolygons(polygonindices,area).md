@@ -1,7 +1,8 @@
 # markAreaOnPolygons(polygonIndices:area:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the polygons at these indices with an area.
 
@@ -21,19 +22,20 @@ func markAreaOnPolygons(polygonIndices: [Int], area: NavigationMeshResource.Area
 
 ## See Also
 
-- [func markAreaInBox(boundingBox: BoundingBox, area: NavigationMeshResource.Area)](navigationmeshresource/markareainbox(boundingbox:area:).md)
+### Marking areas and flags
+- [func markAreaInBox(boundingBox: BoundingBox, area: NavigationMeshResource.Area)](./markareainbox%28boundingbox,area%29.md)
   Marks all polygons in this box with an area.
-- [func markFlagInBox(boundingBox: BoundingBox, flag: NavigationMeshResource.Flag)](navigationmeshresource/markflaginbox(boundingbox:flag:).md)
+- [func markFlagInBox(boundingBox: BoundingBox, flag: NavigationMeshResource.Flag)](./markflaginbox%28boundingbox,flag%29.md)
   Marks all polygons in this box with a flag.
-- [func markAreaInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, area: NavigationMeshResource.Area)](navigationmeshresource/markareaincylinder(position:radius:halfheight:area:).md)
+- [func markAreaInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, area: NavigationMeshResource.Area)](./markareaincylinder%28position,radius,halfheight,area%29.md)
   Marks all polygons in this cylinder with an area.
-- [func markFlagInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, flag: NavigationMeshResource.Flag)](navigationmeshresource/markflagincylinder(position:radius:halfheight:flag:).md)
+- [func markFlagInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, flag: NavigationMeshResource.Flag)](./markflagincylinder%28position,radius,halfheight,flag%29.md)
   Marks all polygons in this cylinder with a flag.
-- [func markFlagOnPolygons(polygonIndices: [Int], flag: NavigationMeshResource.Flag)](navigationmeshresource/markflagonpolygons(polygonindices:flag:).md)
+- [func markFlagOnPolygons(polygonIndices: [Int], flag: NavigationMeshResource.Flag)](./markflagonpolygons%28polygonindices,flag%29.md)
   Marks the polygons at these indices with a flag.
-- [func markAreaOnOffMeshConnections(offMeshConnectionIndices: [Int], area: NavigationMeshResource.Area)](navigationmeshresource/markareaonoffmeshconnections(offmeshconnectionindices:area:).md)
+- [func markAreaOnOffMeshConnections(offMeshConnectionIndices: [Int], area: NavigationMeshResource.Area)](./markareaonoffmeshconnections%28offmeshconnectionindices,area%29.md)
   Marks the off-mesh connections at these indices with an area.
-- [func markFlagOnOffMeshConnections(offMeshConnectionIndices: [Int], flag: NavigationMeshResource.Flag)](navigationmeshresource/markflagonoffmeshconnections(offmeshconnectionindices:flag:).md)
+- [func markFlagOnOffMeshConnections(offMeshConnectionIndices: [Int], flag: NavigationMeshResource.Flag)](./markflagonoffmeshconnections%28offmeshconnectionindices,flag%29.md)
   Marks the off-mesh connections at these indices with a flag.
 
 

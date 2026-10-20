@@ -1,7 +1,8 @@
 # semanticSegmentationMatte(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the semantic segmentation matte associated with this photo.
 
@@ -17,15 +18,19 @@ Retrieves the semantic segmentation matte associated with this photo.
 func semanticSegmentationMatte(for semanticSegmentationMatteType: AVSemanticSegmentationMatte.MatteType) -> AVSemanticSegmentationMatte?
 ```
 
+```objc
+- (AVSemanticSegmentationMatte *) semanticSegmentationMatteForType:(AVSemanticSegmentationMatteType) semanticSegmentationMatteType;
+```
+
 #### Return Value
 
-An instance of [`AVSemanticSegmentationMatte`](avsemanticsegmentationmatte.md), or `nil` of you didn’t request semantic segmentation matte delivery or if no mattes of the specified type were found.
+An instance of [`AVSemanticSegmentationMatte`](../avsemanticsegmentationmatte.md), or `nil` of you didn’t request semantic segmentation matte delivery or if no mattes of the specified type were found.
 
 #### Discussion
 
-If you requested one or more semantic segmentation mattes by calling [`enabledSemanticSegmentationMatteTypes`](avcapturephotosettings/enabledsemanticsegmentationmattetypes.md) with a nonempty array of types, this property offers access to the resulting [`AVSemanticSegmentationMatte`](avsemanticsegmentationmatte.md) objects.
+If you requested one or more semantic segmentation mattes by calling [`enabledSemanticSegmentationMatteTypes`](../avcapturephotosettings/enabledsemanticsegmentationmattetypes.md) with a nonempty array of types, this property offers access to the resulting [`AVSemanticSegmentationMatte`](../avsemanticsegmentationmatte.md) objects.
 
-> **Note**:  Semantic segmentation mattes are only embedded in the photo’s internal file format container if you set [`embedsSemanticSegmentationMattesInPhoto`](avcapturephotosettings/embedssemanticsegmentationmattesinphoto.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  Semantic segmentation mattes are only embedded in the photo’s internal file format container if you set [`embedsSemanticSegmentationMattesInPhoto`](../avcapturephotosettings/embedssemanticsegmentationmattesinphoto.md) to [`true`](../../Swift/true.md).
 
 ## Parameters
 

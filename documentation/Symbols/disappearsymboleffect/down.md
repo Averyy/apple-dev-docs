@@ -1,7 +1,8 @@
 # down
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that scales the symbol down as it disappears.
 
@@ -22,7 +23,8 @@ var down: DisappearSymbolEffect { get }
 
 ## See Also
 
-- [var up: DisappearSymbolEffect](disappearsymboleffect/up.md)
+### Accessing symbol effects
+- [var up: DisappearSymbolEffect](./up.md)
   An effect that scales the symbol up as it disappears.
 
 

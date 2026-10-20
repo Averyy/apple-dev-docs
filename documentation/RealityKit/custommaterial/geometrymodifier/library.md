@@ -1,7 +1,8 @@
 # library
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal library that contains this surface shader function.
 
@@ -20,7 +21,8 @@ var library: any MTLLibrary { get set }
 
 ## See Also
 
-- [var name: String](custommaterial/geometrymodifier/name.md)
+### Accessing geometry modifier properties
+- [var name: String](./name.md)
   The name of the geometry modifier function.
 
 

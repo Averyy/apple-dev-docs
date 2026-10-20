@@ -1,7 +1,8 @@
 # stroke
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Draws the outline of the current path using the current stroke style and line width.
 
@@ -11,7 +12,7 @@ Draws the outline of the current path using the current stroke style and line wi
 
 ## Declaration
 
-```swift
+```
 void stroke(
     DOMPath path
 );
@@ -23,19 +24,20 @@ The stroke style can be a color, gradient, or pattern.
 
 ## See Also
 
-- [fill](canvasrenderingcontext2d/1631011-fill.md)
+### Filling and Stroking Lines and Paths
+- [fill](./api-1631011-fill.md)
   Fills the current path using the current fill color, gradient, or pattern.
-- [fillStyle](canvasrenderingcontext2d/1633959-fillstyle.md)
+- [fillStyle](./api-1633959-fillstyle.md)
   A CSS color, a gradient, or a pattern used to fill shapes and text.
-- [lineCap](canvasrenderingcontext2d/1629505-linecap.md)
+- [lineCap](./api-1629505-linecap.md)
   A string specifying the type of end cap to put on lines to be drawn using `lineTo()`.
-- [lineJoin](canvasrenderingcontext2d/1629229-linejoin.md)
+- [lineJoin](./api-1629229-linejoin.md)
   A string specifying the manner in which line joins are drawn.
-- [lineWidth](canvasrenderingcontext2d/1630379-linewidth.md)
+- [lineWidth](./api-1630379-linewidth.md)
   A floating-point number that controls the width of lines and strokes, in pixels.
-- [miterLimit](canvasrenderingcontext2d/1631529-miterlimit.md)
+- [miterLimit](./api-1631529-miterlimit.md)
   A floating-point number that controls the miter limit ratio for mitered line joins.
-- [strokeStyle](canvasrenderingcontext2d/1634470-strokestyle.md)
+- [strokeStyle](./api-1634470-strokestyle.md)
   A CSS color, a gradient, or a pattern used to stroke lines and shapes.
 
 

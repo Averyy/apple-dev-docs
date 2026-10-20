@@ -1,7 +1,8 @@
 # GCControllerButtonInput
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A control element that represents a button touch or press.
 
@@ -19,6 +20,10 @@ A control element that represents a button touch or press.
 class GCControllerButtonInput
 ```
 
+```objc
+@interface GCControllerButtonInput : GCControllerElement
+```
+
 #### Overview
 
 A `GCControllerButtonInput` object represents a button on a controller that can report either analog or digital values.
@@ -26,54 +31,55 @@ A `GCControllerButtonInput` object represents a button on a controller that can 
 ## Topics
 
 ### Accessing input values
-- [var isTouched: Bool](gccontrollerbuttoninput/istouched.md)
+- [var isTouched: Bool](./gccontrollerbuttoninput/istouched.md)
   A Boolean value that indicates whether the user is touching the button.
-- [var isPressed: Bool](gccontrollerbuttoninput/ispressed.md)
+- [var isPressed: Bool](./gccontrollerbuttoninput/ispressed.md)
   A Boolean value that indicates whether the user is pressing the button.
-- [var value: Float](gccontrollerbuttoninput/value.md)
+- [var value: Float](./gccontrollerbuttoninput/value.md)
   The level of pressure the user is applying to the button.
 ### Getting change information
-- [var touchedChangedHandler: GCControllerButtonTouchedChangedHandler?](gccontrollerbuttoninput/touchedchangedhandler.md)
+- [var touchedChangedHandler: GCControllerButtonTouchedChangedHandler?](./gccontrollerbuttoninput/touchedchangedhandler.md)
   The block that the element calls when the user touches the button.
-- [typealias GCControllerButtonTouchedChangedHandler](gccontrollerbuttontouchedchangedhandler.md)
+- [typealias GCControllerButtonTouchedChangedHandler](./gccontrollerbuttontouchedchangedhandler.md)
   The signature for the block that executes when the user touches the button if the controller supports that feature.
-- [var pressedChangedHandler: GCControllerButtonValueChangedHandler?](gccontrollerbuttoninput/pressedchangedhandler.md)
+- [var pressedChangedHandler: GCControllerButtonValueChangedHandler?](./gccontrollerbuttoninput/pressedchangedhandler.md)
   The block that the element calls when the user presses or releases the button.
-- [var valueChangedHandler: GCControllerButtonValueChangedHandler?](gccontrollerbuttoninput/valuechangedhandler.md)
+- [var valueChangedHandler: GCControllerButtonValueChangedHandler?](./gccontrollerbuttoninput/valuechangedhandler.md)
   The block that the element calls when the user changes the level of pressure on the button.
-- [typealias GCControllerButtonValueChangedHandler](gccontrollerbuttonvaluechangedhandler.md)
+- [typealias GCControllerButtonValueChangedHandler](./gccontrollerbuttonvaluechangedhandler.md)
   The signature for the block that executes when a button’s state changes.
 ### Setting snapshot values
-- [func setValue(Float)](gccontrollerbuttoninput/setvalue(_:).md)
+- [func setValue(Float)](./gccontrollerbuttoninput/setvalue%28_%29.md)
   Sets the pressure value of a snapshot of a button.
 
 ## Relationships
 
 ### Inherits From
-- [GCControllerElement](gccontrollerelement.md)
+- [GCControllerElement](./gccontrollerelement.md)
 ### Inherited By
-- [GCDualSenseAdaptiveTrigger](gcdualsenseadaptivetrigger.md)
+- [GCDualSenseAdaptiveTrigger](./gcdualsenseadaptivetrigger.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GCControllerElement](gccontrollerelement.md)
+### Accessing controller elements
+- [class GCControllerElement](./gccontrollerelement.md)
   An input for a physical control, such as a button or thumbstick.
-- [class GCControllerAxisInput](gccontrolleraxisinput.md)
+- [class GCControllerAxisInput](./gccontrolleraxisinput.md)
   A control element that tracks movement along an axis.
-- [class GCControllerTouchpad](gccontrollertouchpad.md)
+- [class GCControllerTouchpad](./gccontrollertouchpad.md)
   A control element that represents a touch event on a touchpad.
-- [class GCControllerDirectionPad](gccontrollerdirectionpad.md)
+- [class GCControllerDirectionPad](./gccontrollerdirectionpad.md)
   A control element associated with a directional pad or a thumbstick.
-- [class GCDeviceCursor](gcdevicecursor.md)
+- [class GCDeviceCursor](./gcdevicecursor.md)
   A control element for the cursor used as a directional pad.
-- [class GCDualSenseAdaptiveTrigger](gcdualsenseadaptivetrigger.md)
+- [class GCDualSenseAdaptiveTrigger](./gcdualsenseadaptivetrigger.md)
   A class that encapsulates the features of a DualSense adaptive trigger.
 
 

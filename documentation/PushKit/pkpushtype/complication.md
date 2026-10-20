@@ -1,20 +1,27 @@
 # complication
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A push type for watchOS complications.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
+- iOS 9.0+ - Deprecated in 13.0
+- iPadOS 9.0+ - Deprecated in 13.0
+- Mac Catalyst 9.0+ - Deprecated in 13.0
 - watchOS 6.0+
+
+> **Deprecated**: Complication pushes are supported directly on watchOS now, so this should no longer be used on iOS.
 
 ## Declaration
 
 ```swift
 static let complication: PKPushType
+```
+
+```c
+extern PKPushType const PKPushTypeComplication;
 ```
 
 #### Discussion
@@ -27,9 +34,10 @@ The system limits you to 50 push notifications per day. If you exceed the limit,
 
 ## See Also
 
-- [static let fileProvider: PKPushType](pkpushtype/fileprovider.md)
+### Notification Types
+- [static let fileProvider: PKPushType](./fileprovider.md)
   A push type for file provider updates.
-- [static let voIP: PKPushType](pkpushtype/voip.md)
+- [static let voIP: PKPushType](./voip.md)
   A push type for Voice-over-IP (VoIP) call invitations.
 
 

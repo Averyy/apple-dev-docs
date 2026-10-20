@@ -1,7 +1,8 @@
 # kDNSServiceFlagsEnableDNSSEC
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceFlagsEnableDNSSEC: UInt32 { get }
+```
+
+```c
+kDNSServiceFlagsEnableDNSSEC
 ```
 
 

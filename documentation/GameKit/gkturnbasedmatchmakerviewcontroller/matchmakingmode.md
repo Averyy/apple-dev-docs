@@ -1,7 +1,8 @@
 # matchmakingMode
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode that a multiplayer game uses to find players.
 
@@ -19,9 +20,13 @@ The mode that a multiplayer game uses to find players.
 var matchmakingMode: GKMatchmakingMode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) GKMatchmakingMode matchmakingMode;
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
@@ -29,11 +34,12 @@ This method throws an exception if you set the mode to a value that isn’t poss
 
 ## See Also
 
-- [init(matchRequest: GKMatchRequest)](gkturnbasedmatchmakerviewcontroller/init(matchrequest:).md)
+### Creating and Configuring the View Controller
+- [init(matchRequest: GKMatchRequest)](./init%28matchrequest%29.md)
   Creates a matchmaker view controller for the local player to start inviting other players to a turn-based game.
-- [var showExistingMatches: Bool](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md)
+- [var showExistingMatches: Bool](./showexistingmatches.md)
   A Boolean value that determines whether the view controller shows existing matches.
-- [enum GKMatchmakingMode](gkmatchmakingmode.md)
+- [enum GKMatchmakingMode](../gkmatchmakingmode.md)
   Possible modes that a multiplayer game uses to find matches.
 
 

@@ -1,7 +1,8 @@
 # unsigned64BitValue
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the value of the OSNumber as a uint64_t value.
 
@@ -11,21 +12,30 @@ Returns the value of the OSNumber as a uint64_t value.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+uint64_t unsigned64BitValue(void);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned long long unsigned64BitValue(void);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the value of the OSNumber as a uint64_t value.
 
 ## See Also
 
-- [- unsigned8BitValue](osnumber/3180927-unsigned8bitvalue.md)
+### Getting Integer Values
+- [- unsigned8BitValue](./api-3180927-unsigned8bitvalue.md)
   Returns the value of the OSNumber as a uint8_t value.
-- [- unsigned16BitValue](osnumber/3180924-unsigned16bitvalue.md)
+- [- unsigned16BitValue](./api-3180924-unsigned16bitvalue.md)
   Returns the value of the OSNumber as a uint16_t value.
-- [- unsigned32BitValue](osnumber/3180925-unsigned32bitvalue.md)
+- [- unsigned32BitValue](./api-3180925-unsigned32bitvalue.md)
   Returns the value of the OSNumber as a uint32_t value.
 
 

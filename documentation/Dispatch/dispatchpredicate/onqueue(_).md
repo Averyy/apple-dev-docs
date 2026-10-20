@@ -1,7 +1,8 @@
 # DispatchPredicate.onQueue(_:)
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A predicate that indicates the evaluated context is the associated dispatch queue.
 
@@ -11,7 +12,7 @@ A predicate that indicates the evaluated context is the associated dispatch queu
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case onQueue(DispatchQueue)
 
 ## See Also
 
-- [DispatchPredicate.onQueueAsBarrier(_:)](dispatchpredicate/onqueueasbarrier(_:).md)
+### Predicates
+- [DispatchPredicate.onQueueAsBarrier(_:)](./onqueueasbarrier%28_%29.md)
   A predicate that indicates the evaluated context is the associated dispatch queue as part of a barrier operation.
-- [DispatchPredicate.notOnQueue(_:)](dispatchpredicate/notonqueue(_:).md)
+- [DispatchPredicate.notOnQueue(_:)](./notonqueue%28_%29.md)
   A predicate that indicates the evaluated context is not the associated dispatch queue.
 
 

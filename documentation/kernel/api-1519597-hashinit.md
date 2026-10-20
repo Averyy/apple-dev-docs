@@ -1,14 +1,15 @@
 # hashinit
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void * hashinit(int count, int type, u_long *hashmask);
 ```
 

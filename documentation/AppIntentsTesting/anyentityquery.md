@@ -1,7 +1,8 @@
 # AnyEntityQuery
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased, intermediate representation of your entity query for testing purposes.
 
@@ -40,19 +41,20 @@ let all = try await landmarkDef.allEntities()
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnyAppIntent](anyappintent.md)
+### Intermediate types
+- [struct AnyAppIntent](./anyappintent.md)
   A type-erased, intermediate representation of an app intent for testing purposes.
-- [struct AnyAppEntity](anyappentity.md)
+- [struct AnyAppEntity](./anyappentity.md)
   A type-erased, intermediate representation of your app entity for testing purposes.
-- [struct AnyAppEnum](anyappenum.md)
+- [struct AnyAppEnum](./anyappenum.md)
   A type-erased representation of an app enumeration that provides dynamic enumeration value access.
-- [struct AnyTransientAppEntity](anytransientappentity.md)
+- [struct AnyTransientAppEntity](./anytransientappentity.md)
   A type-erased representation of a transient app entity that provides dynamic property access.
 
 

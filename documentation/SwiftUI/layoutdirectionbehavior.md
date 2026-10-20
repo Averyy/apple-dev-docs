@@ -1,7 +1,8 @@
 # LayoutDirectionBehavior
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A description of what should happen when the layout direction changes.
 
@@ -27,30 +28,31 @@ A `LayoutDirectionBehavior` can be used with the `layoutDirectionBehavior` view 
 ## Topics
 
 ### Getting behaviors
-- [LayoutDirectionBehavior.fixed](layoutdirectionbehavior/fixed.md)
+- [LayoutDirectionBehavior.fixed](./layoutdirectionbehavior/fixed.md)
   A behavior that doesn’t mirror when the layout direction changes.
-- [static var mirrors: LayoutDirectionBehavior](layoutdirectionbehavior/mirrors.md)
+- [static var mirrors: LayoutDirectionBehavior](./layoutdirectionbehavior/mirrors.md)
   A behavior that mirrors when the layout direction is right-to-left.
-- [LayoutDirectionBehavior.mirrors(in:)](layoutdirectionbehavior/mirrors(in:).md)
+- [LayoutDirectionBehavior.mirrors(in:)](./layoutdirectionbehavior/mirrors%28in%29.md)
   A behavior that mirrors when the layout direction has the specified value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func layoutDirectionBehavior(LayoutDirectionBehavior) -> some View](view/layoutdirectionbehavior(_:).md)
+### Setting a layout direction
+- [func layoutDirectionBehavior(LayoutDirectionBehavior) -> some View](./view/layoutdirectionbehavior%28_%29.md)
   Sets the behavior of this view for different layout directions.
-- [var layoutDirection: LayoutDirection](environmentvalues/layoutdirection.md)
+- [var layoutDirection: LayoutDirection](./environmentvalues/layoutdirection.md)
   The layout direction associated with the current environment.
-- [enum LayoutDirection](layoutdirection.md)
+- [enum LayoutDirection](./layoutdirection.md)
   A direction in which SwiftUI can lay out content.
-- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
+- [struct LayoutRotationUnaryLayout](./layoutrotationunarylayout.md)
   A layout that rotates the space containing a view.
 
 

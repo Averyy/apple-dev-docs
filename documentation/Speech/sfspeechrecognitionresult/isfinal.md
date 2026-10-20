@@ -1,7 +1,8 @@
 # isFinal
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether speech recognition is complete and whether the transcriptions are final.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether speech recognition is complete and whethe
 
 ```swift
 var isFinal: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isFinal) BOOL final;
 ```
 
 #### Discussion

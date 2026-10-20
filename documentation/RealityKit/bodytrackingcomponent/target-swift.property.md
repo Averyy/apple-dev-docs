@@ -1,7 +1,8 @@
 # target
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The body-tracking setting.
 
@@ -18,7 +19,8 @@ var target: BodyTrackingComponent.Target
 
 ## See Also
 
-- [BodyTrackingComponent.Target](bodytrackingcomponent/target-swift.enum.md)
+### Selecting a body to track
+- [BodyTrackingComponent.Target](./target-swift.enum.md)
   Body-tracking settings for selecting a person to track.
 
 

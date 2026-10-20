@@ -1,22 +1,23 @@
 # UserTargetPresentForID
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if a specific target is present.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserTargetPresentForID(SCSIDeviceIdentifier targetID, bool *result);
 ```
 
 #### Return Value
 
-A value that indicates the result of checking for the target’s existence. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of checking for the target’s existence. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
@@ -29,15 +30,16 @@ Your driver extension can call this method to determine if a target ID is actual
 
 ## See Also
 
-- [UserInitializeTargetForID](iouserscsiparallelinterfacecontroller/userinitializetargetforid.md)
+### Managing targets
+- [UserInitializeTargetForID](./userinitializetargetforid.md)
   Initializes a target device in response to a call from the framework.
-- [UserCreateTargetForID](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md)
+- [UserCreateTargetForID](./usercreatetargetforid.md)
   Creates the specified target.
-- [UserDestroyTargetForID](iouserscsiparallelinterfacecontroller/userdestroytargetforid.md)
+- [UserDestroyTargetForID](./userdestroytargetforid.md)
   Destroys the specified target.
-- [UserSetTargetProperties](iouserscsiparallelinterfacecontroller/usersettargetproperties.md)
+- [UserSetTargetProperties](./usersettargetproperties.md)
   Sets properties on the target.
-- [UserRemoveTargetProperties](iouserscsiparallelinterfacecontroller/userremovetargetproperties.md)
+- [UserRemoveTargetProperties](./userremovetargetproperties.md)
   Removes properties from a target.
 
 

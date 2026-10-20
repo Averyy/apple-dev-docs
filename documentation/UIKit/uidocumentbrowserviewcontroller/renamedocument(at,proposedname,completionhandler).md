@@ -1,7 +1,8 @@
 # renameDocument(at:proposedName:completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renames a document at the specified URL.
 
@@ -14,15 +15,25 @@ Renames a document at the specified URL.
 ## Declaration
 
 ```swift
+func renameDocument(at documentURL: URL, proposedName: String, completionHandler: @escaping (URL?, (any Error)?) -> Void)
+```
+
+```swift
 func renameDocument(at documentURL: URL, proposedName: String) async throws -> URL
+```
+
+```objc
+- (void) renameDocumentAtURL:(NSURL *) documentURL proposedName:(NSString *) proposedName completionHandler:(void (^)(NSURL *finalURL, NSError *error)) completionHandler;
 ```
 
 ## Parameters
 
 - `documentURL`: The URL specifying the location of the document.
 - `proposedName`: The proposed new name to rename the document to. If `proposedName` is already taken, the system might alter the proposed name and confirm the new suggestion with the user. The final name that the system chooses appears in the `finalURL` parameter of `completionHandler`.
-- `completionHandler`: A completion handler to execute after the renaming operation occurs. The final URL and error information are available in the completion handler. - **`finalURL`**: The URL of the newly renamed document, or `nil` if an error occurs.
-- **`error`**: An object that describes the error, if one occurs; otherwise, `nil`.
+- `completionHandler`: A completion handler to execute after the renaming operation occurs. The final URL and error information are available in the completion handler.
+
+  - **`finalURL`**: The URL of the newly renamed document, or `nil` if an error occurs.
+  - **`error`**: An object that describes the error, if one occurs; otherwise, `nil`.
 
 
 ---

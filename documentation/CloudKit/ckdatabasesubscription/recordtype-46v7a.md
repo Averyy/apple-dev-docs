@@ -1,7 +1,8 @@
 # recordType
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of record that the subscription queries.
 
@@ -11,7 +12,7 @@ The type of record that the subscription queries.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 

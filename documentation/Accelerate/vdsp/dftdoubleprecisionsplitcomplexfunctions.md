@@ -1,7 +1,8 @@
 # vDSP.DFTDoublePrecisionSplitComplexFunctions
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -21,27 +22,28 @@ struct DFTDoublePrecisionSplitComplexFunctions
 ## Topics
 
 ### Type Methods
-- [static func destroySetup(OpaquePointer)](vdsp/dftdoubleprecisionsplitcomplexfunctions/destroysetup(_:).md)
-- [static func makeDiscreteFourierTransform(previous: OpaquePointer?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType) throws -> OpaquePointer](vdsp/dftdoubleprecisionsplitcomplexfunctions/makediscretefouriertransform(previous:count:direction:transformtype:).md)
+- [static func destroySetup(OpaquePointer)](./dftdoubleprecisionsplitcomplexfunctions/destroysetup%28_%29.md)
+- [static func makeDiscreteFourierTransform(previous: OpaquePointer?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType) throws -> OpaquePointer](./dftdoubleprecisionsplitcomplexfunctions/makediscretefouriertransform%28previous,count,direction,transformtype%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [vDSP_DiscreteTransformLifecycleFunctions](vdsp_discretetransformlifecyclefunctions.md)
+- [vDSP_DiscreteTransformLifecycleFunctions](../vdsp_discretetransformlifecyclefunctions.md)
 
 ## See Also
 
-- [struct Biquad](vdsp/biquad.md)
+### Structures
+- [struct Biquad](./biquad.md)
   A single- or double-precision biquadratic filter.
-- [struct VectorizableDouble](vdsp/vectorizabledouble.md)
+- [struct VectorizableDouble](./vectorizabledouble.md)
   A structure that represents a double-precision real value for biquadratic filtering and discrete Fourier transforms.
-- [struct VectorizableFloat](vdsp/vectorizablefloat.md)
+- [struct VectorizableFloat](./vectorizablefloat.md)
   A structure that represents a single-precision real value for biquadratic filtering and discrete Fourier transforms.
-- [struct DFTDoublePrecisionInterleavedFunctions](vdsp/dftdoubleprecisioninterleavedfunctions.md)
-- [struct DFTSinglePrecisionInterleavedFunctions](vdsp/dftsingleprecisioninterleavedfunctions.md)
-- [struct DFTSinglePrecisionSplitComplexFunctions](vdsp/dftsingleprecisionsplitcomplexfunctions.md)
-- [struct vDSP_SplitComplexDouble](vdsp_splitcomplexdouble.md)
-- [struct vDSP_SplitComplexFloat](vdsp_splitcomplexfloat.md)
+- [struct DFTDoublePrecisionInterleavedFunctions](./dftdoubleprecisioninterleavedfunctions.md)
+- [struct DFTSinglePrecisionInterleavedFunctions](./dftsingleprecisioninterleavedfunctions.md)
+- [struct DFTSinglePrecisionSplitComplexFunctions](./dftsingleprecisionsplitcomplexfunctions.md)
+- [struct vDSP_SplitComplexDouble](../vdsp_splitcomplexdouble.md)
+- [struct vDSP_SplitComplexFloat](../vdsp_splitcomplexfloat.md)
 
 
 ---

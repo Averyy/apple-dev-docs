@@ -1,7 +1,8 @@
 # NSView.BackgroundStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Background styles to apply to a view’s cell.
 
@@ -14,49 +15,54 @@ Background styles to apply to a view’s cell.
 enum BackgroundStyle
 ```
 
+```c
+enum NSBackgroundStyle : NSInteger;
+```
+
 #### Overview
 
-Apply these styles to the [`backgroundStyle`](nscell/backgroundstyle.md) or [`interiorBackgroundStyle`](nscell/interiorbackgroundstyle.md) properties of an [`NSCell`](nscell.md) object.
+Apply these styles to the [`backgroundStyle`](../nscell/backgroundstyle.md) or [`interiorBackgroundStyle`](../nscell/interiorbackgroundstyle.md) properties of an [`NSCell`](../nscell.md) object.
 
 ## Topics
 
 ### Getting the Background Styles
-- [NSView.BackgroundStyle.normal](nsview/backgroundstyle/normal.md)
+- [NSView.BackgroundStyle.normal](./backgroundstyle/normal.md)
   A style that reflects the predominant color scheme of the view’s appearance.
-- [NSView.BackgroundStyle.emphasized](nsview/backgroundstyle/emphasized.md)
+- [NSView.BackgroundStyle.emphasized](./backgroundstyle/emphasized.md)
   A style that adds emphasis to the background using an alternate color or visual effect.
-- [NSView.BackgroundStyle.raised](nsview/backgroundstyle/raised.md)
+- [NSView.BackgroundStyle.raised](./backgroundstyle/raised.md)
   A style that makes the background appear higher than the content drawn on it.
-- [NSView.BackgroundStyle.lowered](nsview/backgroundstyle/lowered.md)
+- [NSView.BackgroundStyle.lowered](./backgroundstyle/lowered.md)
   A style that makes the background appear lower than the content drawn on it.
-- [static var light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
+- [static var light: NSView.BackgroundStyle](./backgroundstyle/light.md)
   The background is a light color.
-- [static var dark: NSView.BackgroundStyle](nsview/backgroundstyle/dark.md)
+- [static var dark: NSView.BackgroundStyle](./backgroundstyle/dark.md)
   The background is a dark color.
 ### Initializers
-- [init?(rawValue: Int)](nsview/backgroundstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./backgroundstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isBezeled: Bool](nscell/isbezeled.md)
+### Managing Display Attributes
+- [var isBezeled: Bool](../nscell/isbezeled.md)
   A Boolean value indicating whether the cell has a bezeled border.
-- [var isBordered: Bool](nscell/isbordered.md)
+- [var isBordered: Bool](../nscell/isbordered.md)
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
-- [var isOpaque: Bool](nscell/isopaque.md)
+- [var isOpaque: Bool](../nscell/isopaque.md)
   A Boolean value indicating whether the cell is completely opaque.
-- [var backgroundStyle: NSView.BackgroundStyle](nscell/backgroundstyle.md)
+- [var backgroundStyle: NSView.BackgroundStyle](../nscell/backgroundstyle.md)
   The cell’s background style.
-- [var interiorBackgroundStyle: NSView.BackgroundStyle](nscell/interiorbackgroundstyle.md)
+- [var interiorBackgroundStyle: NSView.BackgroundStyle](../nscell/interiorbackgroundstyle.md)
   The cell’s interior background style.
 
 

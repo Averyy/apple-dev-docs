@@ -1,7 +1,8 @@
 # contextMenu
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Text formatting controls placed in the context menu, and the edit menu on iOS.
 

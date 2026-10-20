@@ -1,7 +1,8 @@
 # ShieldSettings.ActivityCategoryPolicy.all(except:)
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy that indicates the device shields all apps and websites, except content that you specify.
 
@@ -22,9 +23,10 @@ Your app can specify up to 50 application or web domain tokens exceptions at onc
 
 ## See Also
 
-- [ShieldSettings.ActivityCategoryPolicy.none](shieldsettings/activitycategorypolicy/none.md)
+### Shielding categories
+- [ShieldSettings.ActivityCategoryPolicy.none](./none.md)
   A policy that indicates the device doesn’t shield any content.
-- [case specific(Set<ActivityCategoryToken>, except: Set<Token<Activity>>)](shieldsettings/activitycategorypolicy/specific(_:except:).md)
+- [case specific(Set<ActivityCategoryToken>, except: Set<Token<Activity>>)](./specific%28_,except%29.md)
   A policy that indicates the device shields specific categories of activity, with some exceptions.
 
 

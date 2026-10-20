@@ -1,7 +1,8 @@
 # AVCaptureDevice.MicrophoneMode.wideSpectrum
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that minimizes microphone audio processing to capture all sounds in the room.
 
@@ -18,11 +19,16 @@ A mode that minimizes microphone audio processing to capture all sounds in the r
 case wideSpectrum
 ```
 
+```c
+AVCaptureMicrophoneModeWideSpectrum
+```
+
 ## See Also
 
-- [AVCaptureDevice.MicrophoneMode.standard](avcapturedevice/microphonemode/standard.md)
+### Microphone modes
+- [AVCaptureDevice.MicrophoneMode.standard](./standard.md)
   A mode that processes microphone audio with standard voice DSP.
-- [AVCaptureDevice.MicrophoneMode.voiceIsolation](avcapturedevice/microphonemode/voiceisolation.md)
+- [AVCaptureDevice.MicrophoneMode.voiceIsolation](./voiceisolation.md)
   A mode that processes microphone audio to isolate the voice and attenuate other signals.
 
 

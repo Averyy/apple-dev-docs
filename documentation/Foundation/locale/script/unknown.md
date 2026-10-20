@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents an uncoded script
 

@@ -1,43 +1,44 @@
 # Deprecated symbols
 
-**Framework**: GameKit
+**Framework**: GameKit  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Deprecated initializers
-- [init?(playerIDs: [String]?)](gkleaderboard/init(playerids:).md)
+- [init?(playerIDs: [String]?)](./gkleaderboard/init%28playerids%29.md)
   Initializes a leaderboard request to retrieve the scores of a specific group of players.
-- [init(players: [GKPlayer])](gkleaderboard/init(players:).md)
+- [init(players: [GKPlayer])](./gkleaderboard/init%28players%29.md)
   Initializes a leaderboard request to retrieve the scores of a specific group of players.
 ### Deprecated properties
-- [var category: String?](gkleaderboard/category.md)
+- [var category: String?](./gkleaderboard/category.md)
   The named leaderboard to retrieve information from.
-- [var identifier: String?](gkleaderboard/identifier.md)
+- [var identifier: String?](./gkleaderboard/identifier.md)
   The named leaderboard to retrieve information from.
-- [var isLoading: Bool](gkleaderboard/isloading.md)
+- [var isLoading: Bool](./gkleaderboard/isloading.md)
   A Boolean value that indicates whether the leaderboard object is retrieving scores.
-- [var localPlayerScore: GKScore?](gkleaderboard/localplayerscore.md)
+- [var localPlayerScore: GKScore?](./gkleaderboard/localplayerscore.md)
   The score that the local player earns.
-- [var maxRange: Int](gkleaderboard/maxrange.md)
+- [var maxRange: Int](./gkleaderboard/maxrange.md)
   The size of the leaderboard.
-- [var playerScope: GKLeaderboard.PlayerScope](gkleaderboard/playerscope-swift.property.md)
+- [var playerScope: GKLeaderboard.PlayerScope](./gkleaderboard/playerscope-swift.property.md)
   A filter that restricts the search to a subset of the players in Game Center.
-- [var range: NSRange](gkleaderboard/range.md)
+- [var range: NSRange](./gkleaderboard/range.md)
   The numerical score rankings to return from the search.
-- [var scores: [GKScore]?](gkleaderboard/scores.md)
+- [var scores: [GKScore]?](./gkleaderboard/scores.md)
   An array of scores that contains the scores that the search returns.
-- [var timeScope: GKLeaderboard.TimeScope](gkleaderboard/timescope-swift.property.md)
+- [var timeScope: GKLeaderboard.TimeScope](./gkleaderboard/timescope-swift.property.md)
   A filter that restricts the search to scores within a specific period of time.
 ### Deprecated methods
-- [class func setDefault(String?, withCompletionHandler: (((any Error)?) -> Void)?)](gkleaderboard/setdefault(_:withcompletionhandler:).md)
+- [class func setDefault(String?, withCompletionHandler: (((any Error)?) -> Void)?)](./gkleaderboard/setdefault%28_,withcompletionhandler%29.md)
   Sets the default leaderboard for the local player.
-- [class func loadCategories(completionHandler: (([String]?, [String]?, (any Error)?) -> Void)?)](gkleaderboard/loadcategories(completionhandler:).md)
+- [class func loadCategories(completionHandler: (([String]?, [String]?, (any Error)?) -> Void)?)](./gkleaderboard/loadcategories%28completionhandler%29.md)
   Loads the list of leaderboard categories along with their corresponding localized titles.
-- [class func loadLeaderboards(completionHandler: (([GKLeaderboard]?, (any Error)?) -> Void)?)](gkleaderboard/loadleaderboards(completionhandler:).md)
+- [class func loadLeaderboards(completionHandler: (([GKLeaderboard]?, (any Error)?) -> Void)?)](./gkleaderboard/loadleaderboards%28completionhandler%29.md)
   Loads a list of leaderboards from Game Center.
-- [func loadScores(completionHandler: (([GKScore]?, (any Error)?) -> Void)?)](gkleaderboard/loadscores(completionhandler:).md)
+- [func loadScores(completionHandler: (([GKScore]?, (any Error)?) -> Void)?)](./gkleaderboard/loadscores%28completionhandler%29.md)
   Retrieves a set of scores from Game Center.
 
 

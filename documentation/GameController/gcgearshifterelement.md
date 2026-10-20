@@ -1,7 +1,8 @@
 # GCGearShifterElement
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An element that represents either a pattern or a sequential gear shift.
 
@@ -15,32 +16,37 @@ An element that represents either a pattern or a sequential gear shift.
 class GCGearShifterElement
 ```
 
+```objc
+@interface GCGearShifterElement : NSObject
+```
+
 ## Topics
 
 ### Accessing input values
-- [var patternInput: (any GCSwitchPositionInput)?](gcgearshifterelement/patterninput.md)
+- [var patternInput: (any GCSwitchPositionInput)?](./gcgearshifterelement/patterninput.md)
   The input object for a pattern gear shift.
-- [var sequentialInput: (any GCRelativeInput)?](gcgearshifterelement/sequentialinput.md)
+- [var sequentialInput: (any GCRelativeInput)?](./gcgearshifterelement/sequentialinput.md)
   The input object for a sequential gear shift.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GCPhysicalInputElement](gcphysicalinputelement.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GCPhysicalInputElement](./gcphysicalinputelement.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol GCAxisInput](gcaxisinput.md)
+### Gear shifter elements
+- [protocol GCAxisInput](./gcaxisinput.md)
   The common properties of inputs that provide absolute values along an axis with a fixed origin.
-- [protocol GCRelativeInput](gcrelativeinput.md)
+- [protocol GCRelativeInput](./gcrelativeinput.md)
   The common properties of inputs that provide positions along an axis that are relative to the previous position.
 
 

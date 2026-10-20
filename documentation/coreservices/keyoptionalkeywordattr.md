@@ -1,7 +1,8 @@
 # keyOptionalKeywordAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 List of keywords for parameters of an Apple event that should be treated as optional by the target application.
 

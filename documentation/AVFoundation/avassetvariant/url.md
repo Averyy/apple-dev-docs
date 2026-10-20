@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides URL to media playlist corresponding to variant
 
@@ -18,6 +19,10 @@ Provides URL to media playlist corresponding to variant
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSURL * URL;
 ```
 
 

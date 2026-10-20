@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the model algorithm type.
 
@@ -16,9 +17,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlwordtagger/modelalgorithmtype/debugdescription.md)
+### Describing an algorithm type
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the algorithm type that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlwordtagger/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the algorithm type in a playground.
 
 

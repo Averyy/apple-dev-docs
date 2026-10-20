@@ -1,7 +1,8 @@
 # overlays
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An array that contains all of the map’s overlays.
 
@@ -10,7 +11,7 @@ An array that contains all of the map’s overlays.
 
 ## Declaration
 
-```swift
+```
 overlays?: Overlay[];
 ```
 
@@ -20,11 +21,12 @@ The default value is `[]` (empty array).
 
 ## See Also
 
-- [selectedOverlay](mapconstructoroptions/selectedoverlay.md)
+### Configuring map overlays
+- [selectedOverlay](./selectedoverlay.md)
   The selected overlay on the map.
-- [showsPointsOfInterest](mapconstructoroptions/showspointsofinterest.md)
+- [showsPointsOfInterest](./showspointsofinterest.md)
   A Boolean value that determines whether the map displays points of interest.
-- [pointOfInterestFilter](mapconstructoroptions/pointofinterestfilter.md)
+- [pointOfInterestFilter](./pointofinterestfilter.md)
   The filter that determines the points of interest that display on the map.
 
 

@@ -1,7 +1,8 @@
 # NEDNSSettingsManagerError.configurationCannotBeRemoved
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates removing the DNS settings manager failed.
 
@@ -18,13 +19,18 @@ An error code that indicates removing the DNS settings manager failed.
 case configurationCannotBeRemoved
 ```
 
+```c
+NEDNSSettingsManagerErrorConfigurationCannotBeRemoved
+```
+
 ## See Also
 
-- [NEDNSSettingsManagerError.configurationInvalid](nednssettingsmanagererror/configurationinvalid.md)
+### Error codes
+- [NEDNSSettingsManagerError.configurationInvalid](./configurationinvalid.md)
   An error code that indicates the DNS settings manager is invalid.
-- [NEDNSSettingsManagerError.configurationDisabled](nednssettingsmanagererror/configurationdisabled.md)
+- [NEDNSSettingsManagerError.configurationDisabled](./configurationdisabled.md)
   An error code that indicates the DNS settings manager isn’t enabled.
-- [NEDNSSettingsManagerError.configurationStale](nednssettingsmanagererror/configurationstale.md)
+- [NEDNSSettingsManagerError.configurationStale](./configurationstale.md)
   An error code that indicates the DNS settings manager isn’t loaded.
 
 

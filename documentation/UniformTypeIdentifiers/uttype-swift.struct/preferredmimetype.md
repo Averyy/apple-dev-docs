@@ -1,7 +1,8 @@
 # preferredMIMEType
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred MIME type for the type.
 
@@ -22,7 +23,7 @@ var preferredMIMEType: String? { get }
 
 #### Discussion
 
-If available, the preferred (first available) tag of class [`mimeType`](uttagclass/mimetype.md). If not `nil`, the value of this property is the best available MIME type value for this type.
+If available, the preferred (first available) tag of class [`mimeType`](../uttagclass/mimetype.md). If not `nil`, the value of this property is the best available MIME type value for this type.
 
 The value of this property is equivalent to, but more efficient than:
 
@@ -32,9 +33,10 @@ type.tags[.mimeType]?.first
 
 ## See Also
 
-- [var preferredFilenameExtension: String?](uttype-swift.struct/preferredfilenameextension.md)
+### Obtaining tags
+- [var preferredFilenameExtension: String?](./preferredfilenameextension.md)
   The preferred filename extension for the type.
-- [var tags: [UTTagClass : [String]]](uttype-swift.struct/tags.md)
+- [var tags: [UTTagClass : [String]]](./tags.md)
   The tag specification dictionary of the type.
 
 

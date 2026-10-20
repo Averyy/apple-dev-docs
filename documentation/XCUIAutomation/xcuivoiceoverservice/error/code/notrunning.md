@@ -1,24 +1,29 @@
 # XCUIVoiceOverService.Error.Code.notRunning
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A navigation or speech method was called without first calling @c enable().
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 case notRunning
+```
+
+```c
+XCUIVoiceOverServiceErrorNotRunning
 ```
 
 

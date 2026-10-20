@@ -1,18 +1,19 @@
 # init(control:scalingMethod:scaling:pivotTolerance:zeroTolerance:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new numeric factor options structure with the specified properties.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ init(control: SparseControl_t, scalingMethod: SparseScaling_t, scaling: UnsafeMu
 
 #### Discussion
 
-> **Note**:  Only the symmetric factorization algorithms use the [`pivotTolerance`](sparsenumericfactoroptions/pivottolerance.md) and [`zeroTolerance`](sparsenumericfactoroptions/zerotolerance.md) parameters. [`SparseFactorizationQR`](sparsefactorizationqr.md) ignores the pivot and zero tolerance values.
+> **Note**:  Only the symmetric factorization algorithms use the [`pivotTolerance`](./pivottolerance.md) and [`zeroTolerance`](./zerotolerance.md) parameters. [`SparseFactorizationQR`](../sparsefactorizationqr.md) ignores the pivot and zero tolerance values.
 
 ## Parameters
 
@@ -34,7 +35,8 @@ init(control: SparseControl_t, scalingMethod: SparseScaling_t, scaling: UnsafeMu
 
 ## See Also
 
-- [init()](sparsenumericfactoroptions/init.md)
+### Creating a Numeric Factor Options Stucture
+- [init()](./init%28%29.md)
   Returns a new numeric factor options structure with default properties.
 
 

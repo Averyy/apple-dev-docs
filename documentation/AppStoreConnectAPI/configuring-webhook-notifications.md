@@ -1,6 +1,7 @@
 # Configuring and parsing App Store Connect API webhook notifications
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Manage the configuration, testing, and processing of App Store Connect API notifications for your app.
 
@@ -8,9 +9,9 @@ Manage the configuration, testing, and processing of App Store Connect API notif
 
 A notification webhook is an endpoint that you create on your server, which receives `HTTP POST` requests from App Store Connect. The `POST` requests describe important events about your app. Your app can have many webhooks.
 
-##### Configure Your Webhook Notifications
+##### Configure your webhook notifications
 
-To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Create a Webhook Configuration`](post-v1-webhooks.md) endpoint:
+To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Create a Webhook Configuration`](./post-v1-webhooks.md) endpoint:
 
 ```other
 POST https://api.appstoreconnect.apple.com/v1/webhooks
@@ -45,16 +46,16 @@ with a payload like this:
 
 ```
 
-Any time you reconfigure your web server, use the [`Modify a Webhook Configuration`](patch-v1-webhooks-_id_.md) endpoint to update App Store Connect. The attributes you can modify are `enabled`, `name`, `url`, `secret`, and `eventTypes`.
+Any time you reconfigure your web server, use the [`Modify a Webhook Configuration`](./patch-v1-webhooks-_id_.md) endpoint to update App Store Connect. The attributes you can modify are `enabled`, `name`, `url`, `secret`, and `eventTypes`.
 
-##### Set Up Notification Authentication
+##### Set up notification authentication
 
 Secure your webhook by verifying that a request to your endpoint comes from App Store Connect. The security protocol for webhooks is hash-based message authentication code (HMAC), which requires that you:
 
 - Share a secret phrase with the request sender (App Store Connect).
 - Verify that each POST to your endpoint has the HMAC header and validate it with your secret.
 
-When you register your webhook URL with App Store Connect, define the secret phrase using the secret key in [`WebhookCreateRequest.Data.Attributes`](webhookcreaterequest/data-data.dictionary/attributes-data.dictionary.md). Choose a `String` value for `secret` that’s difficult to guess.
+When you register your webhook URL with App Store Connect, define the secret phrase using the secret key in [`WebhookCreateRequest.Data.Attributes`](./webhookcreaterequest/data-data.dictionary/attributes-data.dictionary.md). Choose a `String` value for `secret` that’s difficult to guess.
 
 App Store Connect creates a hash signature using the secret and includes it in each `POST`. The signature resides in the payload header as `x-apple-signature`.
 
@@ -75,15 +76,15 @@ This result verifies a `POST` is authentic — the sender knows the secret — i
 x-apple-signature:hmacsha256=7f062172b01cb00b53ca068614674a3d982a34062a0f5d37687d5e3377e54657
 ```
 
-Use an implementation of HMAC `hex digest` to generate the hash. For more information, see [`GitHub’s Validating webhook deliveries`](https://developer.apple.comhttps://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries).
+Use an implementation of HMAC `hex digest` to generate the hash. For more information, see [GitHub’s Validating webhook deliveries](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries).
 
-##### Review Your Configured Webhook Notifications
+##### Review your configured webhook notifications
 
-Use [`Read Webhook Information for an App`](get-v1-apps-_id_-webhooks.md) to view a list of webhooks for an app. The response includes the unique IDs and details of your webhook configurations. Use those unique IDs with [`Read Webhook Information`](get-v1-webhooks-_id_.md) to read details for a specific webhook.
+Use [`Read Webhook Information for an App`](./get-v1-apps-_id_-webhooks.md) to view a list of webhooks for an app. The response includes the unique IDs and details of your webhook configurations. Use those unique IDs with [`Read Webhook Information`](./get-v1-webhooks-_id_.md) to read details for a specific webhook.
 
-##### Verify Your Server Is Receiving Notifications
+##### Verify your server is receiving notifications
 
-Once you establish your webhook configuration and your listener, you can verify you are receiving notifications by using [`Test Your Webhook`](post-v1-webhookpings.md), with a payload like this, where the `id` for type `webhooks` is the unique identifier found in the response from [`Create a Webhook Configuration`](post-v1-webhooks.md) or  [`Read Webhook Information for an App`](get-v1-apps-_id_-webhooks.md):
+Once you establish your webhook configuration and your listener, you can verify you are receiving notifications by using [`Test Your Webhook`](./post-v1-webhookpings.md), with a payload like this, where the `id` for type `webhooks` is the unique identifier found in the response from [`Create a Webhook Configuration`](./post-v1-webhooks.md) or  [`Read Webhook Information for an App`](./get-v1-apps-_id_-webhooks.md):
 
 ```json
 {
@@ -101,9 +102,9 @@ Once you establish your webhook configuration and your listener, you can verify 
 }
 ```
 
-##### Read a List of Past Deliveries
+##### Read a list of past deliveries
 
-You can see past notification deliveries sent from App Store Connect to your server,  by using the [`Read the Deliveries for a Webhook`](get-v1-webhooks-_id_-deliveries.md) endpoint.
+You can see past notification deliveries sent from App Store Connect to your server,  by using the [`Read the Deliveries for a Webhook`](./get-v1-webhooks-_id_-deliveries.md) endpoint.
 
 The response looks like this:
 
@@ -170,13 +171,13 @@ The response looks like this:
 
 ```
 
-#### Parse Webhook Notifications
+#### Parse webhook notifications
 
-When App Store Connect sends a notification to your webhook, it does so in the form of an HTTP POST. When you receive a notification, check its type to process it accordingly. The action you perform depends on the notification type. Each type has a specific dataset, or schema, composed of attributes that drive the different action you take. There are several types of webhook events; for more information about these events, see [`Understanding webhook events`](webhook-events.md).
+When App Store Connect sends a notification to your webhook, it does so in the form of an HTTP POST. When you receive a notification, check its type to process it accordingly. The action you perform depends on the notification type. Each type has a specific dataset, or schema, composed of attributes that drive the different action you take. There are several types of webhook events; for more information about these events, see [Understanding webhook events](./webhook-events.md).
 
-##### Process a Specific Notification
+##### Process a specific notification
 
-This example uses the notification type `appStoreVersionAppVersionStateUpdated`. The attributes include the `version`, states, and a `timestamp` that shows when the state change. The payload includes a relationship to the `appStoreVersions id`. Use this information to read more about your app’s version using [`Read app store version information`](get-v1-appstoreversions-_id_.md).
+This example uses the notification type `appStoreVersionAppVersionStateUpdated`. The attributes include the `version`, states, and a `timestamp` that shows when the state change. The payload includes a relationship to the `appStoreVersions id`. Use this information to read more about your app’s version using [`Read app store version information`](./get-v1-appstoreversions-_id_.md).
 
 ```json
 {
@@ -203,7 +204,8 @@ This example uses the notification type `appStoreVersionAppVersionStateUpdated`.
 
 ## See Also
 
-- [Understanding webhook events](webhook-events.md)
+### Essentials
+- [Understanding webhook events](./webhook-events.md)
   Learn the events that describe payloads and the notifications the system sends.
 
 

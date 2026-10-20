@@ -1,7 +1,8 @@
 # SparseSubfactorR
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An *R* factor subfactor that’s valid for QR and Cholesky *AᵀA* only.
 
@@ -20,27 +21,32 @@ An *R* factor subfactor that’s valid for QR and Cholesky *AᵀA* only.
 var SparseSubfactorR: SparseSubfactor_t { get }
 ```
 
+```c
+SparseSubfactorR
+```
+
 ## See Also
 
-- [var SparseSubfactorInvalid: SparseSubfactor_t](sparsesubfactorinvalid.md)
+### Constants
+- [var SparseSubfactorInvalid: SparseSubfactor_t](./sparsesubfactorinvalid.md)
   An invalid subfactor that indicates the requested type is incompatible with the supplied factorization or the system has destroyed it.
-- [var SparseSubfactorP: SparseSubfactor_t](sparsesubfactorp.md)
+- [var SparseSubfactorP: SparseSubfactor_t](./sparsesubfactorp.md)
   A permutation subfactor that’s valid for all factorization types.
-- [var SparseSubfactorS: SparseSubfactor_t](sparsesubfactors.md)
+- [var SparseSubfactorS: SparseSubfactor_t](./sparsesubfactors.md)
   A diagonal scaling subfactor that’s valid for Cholesky and *LDLᵀ* only.
-- [var SparseSubfactorL: SparseSubfactor_t](sparsesubfactorl.md)
+- [var SparseSubfactorL: SparseSubfactor_t](./sparsesubfactorl.md)
   An *L* factor subfactor that’s valid for Cholesky and *LDLᵀ* only.
-- [var SparseSubfactorD: SparseSubfactor_t](sparsesubfactord.md)
+- [var SparseSubfactorD: SparseSubfactor_t](./sparsesubfactord.md)
   A *D* factor subfactor that’s valid for *LDLᵀ*` `only.
-- [var SparseSubfactorPLPS: SparseSubfactor_t](sparsesubfactorplps.md)
+- [var SparseSubfactorPLPS: SparseSubfactor_t](./sparsesubfactorplps.md)
   A half-solve subfactor that’s valid for Cholesky and *LDLᵀ* only.
-- [var SparseSubfactorQ: SparseSubfactor_t](sparsesubfactorq.md)
+- [var SparseSubfactorQ: SparseSubfactor_t](./sparsesubfactorq.md)
   A *Q* factor subfactor that’s valid for QR only.
-- [var SparseSubfactorRP: SparseSubfactor_t](sparsesubfactorrp.md)
+- [var SparseSubfactorRP: SparseSubfactor_t](./sparsesubfactorrp.md)
   A half-solve subfactor that’s valid for QR and Cholesky *AᵀA* only.
-- [var SparseSubfactorSc: SparseSubfactor_t](sparsesubfactorsc.md)
+- [var SparseSubfactorSc: SparseSubfactor_t](./sparsesubfactorsc.md)
   Types of sub-factor object.
-- [var SparseSubfactorSr: SparseSubfactor_t](sparsesubfactorsr.md)
+- [var SparseSubfactorSr: SparseSubfactor_t](./sparsesubfactorsr.md)
   Types of sub-factor object.
 
 

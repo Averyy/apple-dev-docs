@@ -1,14 +1,15 @@
 # LCK_WAKE_DEFAULT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 LCK_WAKE_DEFAULT
 ```
 

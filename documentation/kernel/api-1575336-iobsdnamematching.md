@@ -1,7 +1,8 @@
 # IOBSDNameMatching
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Create a matching dictionary that specifies an IOService match based on BSD device name.
 
@@ -10,11 +11,11 @@ Create a matching dictionary that specifies an IOService match based on BSD devi
 
 ## Declaration
 
-```swift
+```c
 OSDictionary * IOBSDNameMatching(const char *name);
 ```
 
-#### Return_value
+#### Return Value
 
 The matching dictionary created, is returned on success, or zero on failure. The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification which will consume a reference, otherwise it should be released with CFRelease by the caller.
 
@@ -30,13 +31,14 @@ IOServices that represent BSD devices have an associated BSD name. This function
 
 ## See Also
 
-- [IORegistryEntry](ioregistryentry.md)
+### Driver Registry
+- [IORegistryEntry](./ioregistryentry.md)
   The base class for all objects in the registry.
-- [IORegistryIterator](ioregistryiterator.md)
+- [IORegistryIterator](./ioregistryiterator.md)
   An iterator over the registry.
-- [IOPrintPlane](1558295-ioprintplane.md)
-- [Registry Utilities](iokit_fundamentals/registry_utilities.md)
-- [Registry Keys](iokit_fundamentals/registry_keys.md)
+- [IOPrintPlane](./api-1558295-ioprintplane.md)
+- [Registry Utilities](./iokit_fundamentals/registry_utilities.md)
+- [Registry Keys](./iokit_fundamentals/registry_keys.md)
 
 
 ---

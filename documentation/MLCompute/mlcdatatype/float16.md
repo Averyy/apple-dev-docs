@@ -1,14 +1,15 @@
 # MLCDataType.float16
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.4
+- iPadOS 15.0+ - Deprecated in 17.4
+- Mac Catalyst 15.0+ - Deprecated in 17.4
+- macOS 12.0+ - Deprecated in 14.3
+- tvOS 15.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -16,14 +17,19 @@
 case float16
 ```
 
+```c
+MLCDataTypeFloat16
+```
+
 ## See Also
 
-- [MLCDataType.float32](mlcdatatype/float32.md)
-- [MLCDataType.boolean](mlcdatatype/boolean.md)
-- [MLCDataType.int8](mlcdatatype/int8.md)
-- [MLCDataType.int32](mlcdatatype/int32.md)
-- [MLCDataType.int64](mlcdatatype/int64.md)
-- [MLCDataType.uint8](mlcdatatype/uint8.md)
+### Enumeration Cases
+- [MLCDataType.float32](./float32.md)
+- [MLCDataType.boolean](./boolean.md)
+- [MLCDataType.int8](./int8.md)
+- [MLCDataType.int32](./int32.md)
+- [MLCDataType.int64](./int64.md)
+- [MLCDataType.uint8](./uint8.md)
 
 
 ---

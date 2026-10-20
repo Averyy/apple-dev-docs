@@ -1,7 +1,8 @@
 # isBrowsingVersions
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the document is currently displaying the Versions browser.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the document is currently displaying the 
 var isBrowsingVersions: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isBrowsingVersions) BOOL browsingVersions;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the versions browser is visible.
+The value of this property is [`true`](../../Swift/true.md) when the versions browser is visible.
 
 ## See Also
 
-- [func browseVersions(Any?)](nsdocument/browseversions(_:).md)
+### Browsing Document Versions
+- [func browseVersions(Any?)](./browseversions%28_%29.md)
   Opens the Versions browser in the document’s main window.
-- [func stopBrowsingVersions(completionHandler: (() -> Void)?)](nsdocument/stopbrowsingversions(completionhandler:).md)
+- [func stopBrowsingVersions(completionHandler: (() -> Void)?)](./stopbrowsingversions%28completionhandler%29.md)
   Dismiss the Versions browser for the current document.
 
 

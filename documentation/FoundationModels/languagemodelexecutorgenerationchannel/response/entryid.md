@@ -1,7 +1,8 @@
 # entryID
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the entry.
 
@@ -21,11 +22,12 @@ var entryID: String?
 
 ## See Also
 
-- [var action: LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.property.md)
+### Handling a response
+- [var action: LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.struct.md)
   An operation that can be performed on a response entry.
-- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
+- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](../textsegmentreplacement.md)
   A replacement for a streaming entry’s current text segment.
 
 

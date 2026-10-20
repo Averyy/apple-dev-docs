@@ -1,7 +1,8 @@
 # vDSP_fft_zrip
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Computes a forward or inverse in-place, single-precision real FFT.
 
@@ -10,7 +11,7 @@ Computes a forward or inverse in-place, single-precision real FFT.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_fft_zrip(FFTSetup __Setup, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __Log2N, FFTDirection __Direction);
 ```
 
@@ -22,7 +23,7 @@ Forward transforms read real input and write packed complex output. Inverse tran
 
 where F is `Direction`, C is `C`, and N is two raised to the power of `Log2N`.
 
-See also functions [`vDSP_create_fftsetup`](1580009-vdsp_create_fftsetup.md) and [`vDSP_destroy_fftsetup`](1579978-vdsp_destroy_fftsetup.md).
+See also functions [`vDSP_create_fftsetup`](./api-1580009-vdsp_create_fftsetup.md) and [`vDSP_destroy_fftsetup`](./api-1579978-vdsp_destroy_fftsetup.md).
 
 ## Parameters
 
@@ -30,7 +31,7 @@ See also functions [`vDSP_create_fftsetup`](1580009-vdsp_create_fftsetup.md) and
 - `__C`: A pointer to the input-output data.
 - `__IC`: The stride between the elements in `C`, set to 1 for best performance.
 - `__Log2N`: The base 2 exponent of the number of elements to process. For example, to process 1024 elements, specify 10 for parameter `Log2N`.
-- `__Direction`: A flag that specifies the transform direction. Pass [`kFFTDirection_Forward`](1645049-anonymous/kfftdirection_forward.md) to transform from the time domain to the frequency domain. Pass [`kFFTDirection_Inverse`](1645049-anonymous/kfftdirection_inverse.md) to transform from the frequency domain to the time domain.
+- `__Direction`: A flag that specifies the transform direction. Pass [`kFFTDirection_Forward`](./api-1645049-anonymous/kfftdirection_forward.md) to transform from the time domain to the frequency domain. Pass [`kFFTDirection_Inverse`](./api-1645049-anonymous/kfftdirection_inverse.md) to transform from the frequency domain to the time domain.
 
 
 ---

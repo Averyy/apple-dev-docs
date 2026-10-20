@@ -1,7 +1,8 @@
 # openInMaps(launchOptions:from:completionHandler:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the Maps app from a particular scene using the specified options.
 
@@ -14,7 +15,15 @@ Opens the Maps app from a particular scene using the specified options.
 ## Declaration
 
 ```swift
+func openInMaps(launchOptions: [String : Any]? = nil, from scene: UIScene?, completionHandler completion: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func openInMaps(launchOptions: [String : Any]? = nil, from scene: UIScene?) async -> Bool
+```
+
+```objc
+- (void) openInMapsWithLaunchOptions:(NSDictionary<NSString *,id> *) launchOptions fromScene:(UIScene *) scene completionHandler:(void (^)(BOOL success)) completion;
 ```
 
 ## Parameters
@@ -25,15 +34,16 @@ func openInMaps(launchOptions: [String : Any]? = nil, from scene: UIScene?) asyn
 
 ## See Also
 
-- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?) -> Bool](mkmapitem/openmaps(with:launchoptions:).md)
+### Launching the Maps app
+- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?) -> Bool](./openmaps%28with,launchoptions%29.md)
   Opens the Maps app and displays the specified map items.
-- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](mkmapitem/openmaps(with:launchoptions:completionhandler:).md)
+- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](./openmaps%28with,launchoptions,completionhandler%29.md)
   Opens the Maps app using the specified map items and options.
-- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, from: UIScene?, completionHandler: ((Bool) -> Void)?)](mkmapitem/openmaps(with:launchoptions:from:completionhandler:).md)
+- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, from: UIScene?, completionHandler: ((Bool) -> Void)?)](./openmaps%28with,launchoptions,from,completionhandler%29.md)
   Opens the Maps app from a particular scene using the specified map items and options.
-- [func openInMaps(launchOptions: [String : Any]?) -> Bool](mkmapitem/openinmaps(launchoptions:).md)
+- [func openInMaps(launchOptions: [String : Any]?) -> Bool](./openinmaps%28launchoptions%29.md)
   Opens the Maps app and displays the map item.
-- [func openInMaps(launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](mkmapitem/openinmaps(launchoptions:completionhandler:).md)
+- [func openInMaps(launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](./openinmaps%28launchoptions,completionhandler%29.md)
   Opens the Maps app and displays the map item.
 
 

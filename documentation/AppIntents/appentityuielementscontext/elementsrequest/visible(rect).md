@@ -1,7 +1,8 @@
 # AppEntityUIElementsContext.ElementsRequest.visible(rect:)
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Any visible elements that intersect the given rect should be provided.
 

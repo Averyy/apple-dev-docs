@@ -1,7 +1,8 @@
 # MessageAuthenticationCode
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a message authentication code.
 
@@ -24,34 +25,35 @@ protocol MessageAuthenticationCode : ContiguousBytes, CustomStringConvertible, H
 ## Topics
 
 ### Retrieving the code length
-- [var byteCount: Int](messageauthenticationcode/bytecount.md)
+- [var byteCount: Int](./messageauthenticationcode/bytecount.md)
   The number of bytes in the message authentication code.
 ### Comparing codes
-- [static func == <D>(Self, D) -> Bool](messageauthenticationcode/==(_:_:)-3rxc4.md)
+- [static func == <D>(Self, D) -> Bool](./messageauthenticationcode/eqeq%28_,_%29-3rxc4.md)
   Returns a Boolean value indicating whether a message authentication code is equivalent to a collection of binary data.
-- [static func == (Self, Self) -> Bool](messageauthenticationcode/==(_:_:)-b90.md)
+- [static func == (Self, Self) -> Bool](./messageauthenticationcode/eqeq%28_,_%29-b90.md)
   Returns a Boolean value indicating whether two message authentication codes are equal.
 ### Default Implementations
-- [CustomStringConvertible Implementations](messageauthenticationcode/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./messageauthenticationcode/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 ### Conforming Types
-- [HashedAuthenticationCode](hashedauthenticationcode.md)
+- [HashedAuthenticationCode](./hashedauthenticationcode.md)
 
 ## See Also
 
-- [typealias MAC](hmac/mac.md)
+### Working with codes
+- [typealias MAC](./hmac/mac.md)
   An alias for a hash-based message authentication code.
-- [struct HashedAuthenticationCode](hashedauthenticationcode.md)
+- [struct HashedAuthenticationCode](./hashedauthenticationcode.md)
   A hash-based message authentication code.
 
 

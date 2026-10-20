@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Binary UUID
 
@@ -20,11 +21,12 @@ let uuid: UUID
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let name: String](callstacktree/binaryinfo-swift.struct/name.md)
+### Binary details
+- [let name: String](./name.md)
   Binary name
 
 

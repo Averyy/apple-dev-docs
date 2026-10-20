@@ -1,7 +1,8 @@
 # volatileDomainNames
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of identifiers for the volatile domains associated with the current object.
 
@@ -20,17 +21,22 @@ An array of identifiers for the volatile domains associated with the current obj
 var volatileDomainNames: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * volatileDomainNames;
+```
+
 #### Discussion
 
-Each string in the array corresponds to one of the volatile domains this `UserDefaults` object searches. To get the contents of one of these domains, call the [`volatileDomain(forName:)`](userdefaults/volatiledomain(forname:).md) method.
+Each string in the array corresponds to one of the volatile domains this `UserDefaults` object searches. To get the contents of one of these domains, call the [`volatileDomain(forName:)`](./volatiledomain%28forname%29.md) method.
 
 ## See Also
 
-- [class let argumentDomain: String](userdefaults/argumentdomain.md)
+### Getting the domain names
+- [class let argumentDomain: String](./argumentdomain.md)
   The identifier for the domain that contains command-line settings.
-- [class let globalDomain: String](userdefaults/globaldomain.md)
+- [class let globalDomain: String](./globaldomain.md)
   The identifier for the domain that contains system-specified settings for all apps.
-- [class let registrationDomain: String](userdefaults/registrationdomain.md)
+- [class let registrationDomain: String](./registrationdomain.md)
   The identifier for the domain that contains your app’s registered default values.
 
 

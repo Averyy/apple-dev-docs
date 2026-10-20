@@ -1,12 +1,13 @@
 # performKeyEquivalent(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks the button’s key equivalent against the specified event and, if they match, simulates the button being clicked.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Checks the button’s key equivalent against the specified event and, if they ma
 func performKeyEquivalent(with key: NSEvent) -> Bool
 ```
 
+```objc
+- (BOOL) performKeyEquivalent:(NSEvent *) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the key equivalent in `anEvent` matches the button’s key equivalent; [`false`](https://developer.apple.com/documentation/swift/false) if it does not. This method also returns [`false`](https://developer.apple.com/documentation/swift/false) if the button is blocked by a modal panel or the button is disabled.
+[`true`](../../Swift/true.md) if the key equivalent in `anEvent` matches the button’s key equivalent; [`false`](../../Swift/false.md) if it does not. This method also returns [`false`](../../Swift/false.md) if the button is blocked by a modal panel or the button is disabled.
 
 #### Discussion
 
-If the character in `anEvent` matches the button’s key equivalent, and the modifier flags in `anEvent` match the key-equivalent modifier mask, [`performKeyEquivalent(with:)`](nsbutton/performkeyequivalent(with:).md) simulates the user clicking the button and returning [`true`](https://developer.apple.com/documentation/swift/true). Otherwise, [`performKeyEquivalent(with:)`](nsbutton/performkeyequivalent(with:).md) does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false).
+If the character in `anEvent` matches the button’s key equivalent, and the modifier flags in `anEvent` match the key-equivalent modifier mask, [`performKeyEquivalent(with:)`](./performkeyequivalent%28with%29.md) simulates the user clicking the button and returning [`true`](../../Swift/true.md). Otherwise, [`performKeyEquivalent(with:)`](./performkeyequivalent%28with%29.md) does nothing and returns [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -28,9 +33,10 @@ If the character in `anEvent` matches the button’s key equivalent, and the mod
 
 ## See Also
 
-- [var keyEquivalent: String](nsbutton/keyequivalent.md)
+### Related Documentation
+- [var keyEquivalent: String](./keyequivalent.md)
   The key-equivalent character of the button.
-- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsbutton/keyequivalentmodifiermask.md)
+- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](./keyequivalentmodifiermask.md)
   The mask specifying the modifier keys for the button’s key equivalent.
 
 

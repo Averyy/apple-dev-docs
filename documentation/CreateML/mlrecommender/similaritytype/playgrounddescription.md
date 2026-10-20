@@ -1,7 +1,8 @@
 # playgroundDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the similarity type shown in a playground.
 
@@ -16,9 +17,10 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var description: String](mlrecommender/similaritytype/description.md)
+### Similarity type descriptions
+- [var description: String](./description.md)
   A text representation of the similarity type.
-- [var debugDescription: String](mlrecommender/similaritytype/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the similarity type that’s suitable for output during debugging.
 
 

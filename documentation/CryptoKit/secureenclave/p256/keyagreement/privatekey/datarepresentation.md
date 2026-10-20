@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data representation of the private key.
 

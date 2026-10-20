@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,8 +19,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_VERSION_DESCRIPTOR_SAT](1643311-anonymous/kinquiry_version_descriptor_sat.md)
-- [kINQUIRY_VERSION_DESCRIPTOR_SAT](../driverkit/kinquiry_version_descriptor_sat.md)
+- [kINQUIRY_VERSION_DESCRIPTOR_SAT](./api-1643311-anonymous/kinquiry_version_descriptor_sat.md)
+- [kINQUIRY_VERSION_DESCRIPTOR_SAT](../DriverKit/kinquiry_version_descriptor_sat.md)
 
 
 ---

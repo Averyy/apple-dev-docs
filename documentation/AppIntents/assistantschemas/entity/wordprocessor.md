@@ -1,7 +1,8 @@
 # wordProcessor
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app entities that describe text document data.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app entities that describe text document data.
 ```swift
 static var wordProcessor: some AssistantSchemas.WordProcessorEntity { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EntitySchema`.
 
 
 ---

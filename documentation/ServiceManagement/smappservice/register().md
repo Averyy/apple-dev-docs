@@ -1,7 +1,8 @@
 # register()
 
 **Framework**: Service Management  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the service so it can begin launching subject to user approval.
 
@@ -15,6 +16,10 @@ Registers the service so it can begin launching subject to user approval.
 func register() throws
 ```
 
+```objc
+- (BOOL) registerAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
 The registration process applies to the following rules, depending upon the type of service:
@@ -25,15 +30,16 @@ The registration process applies to the following rules, depending upon the type
 - If an app needs to register a LaunchAgent for multiple users, you must call the API once per user while that user is running the app.
 - If the service corresponds to a LaunchDaemon, the system won’t bootstrap the LaunchDaemon until an admin approves the LaunchDaemon in System Preferences. The system bootstraps LaunchDaemons registered with this method and approved by an admin on each subsequent boot.
 
-If the service is already registered, this method returns [`kSMErrorAlreadyRegistered`](ksmerroralreadyregistered.md).
+If the service is already registered, this method returns [`kSMErrorAlreadyRegistered`](../ksmerroralreadyregistered.md).
 
-If the service isn’t approved by the user, this method returns [`kSMErrorLaunchDeniedByUser`](ksmerrorlaunchdeniedbyuser.md).
+If the service isn’t approved by the user, this method returns [`kSMErrorLaunchDeniedByUser`](../ksmerrorlaunchdeniedbyuser.md).
 
 ## See Also
 
-- [func unregister() throws](smappservice/unregister.md)
+### Registering services
+- [func unregister() throws](./unregister%28%29.md)
   Unregisters the service so the system no longer launches it.
-- [func unregister(completionHandler: ((any Error)?) -> Void)](smappservice/unregister(completionhandler:).md)
+- [func unregister(completionHandler: ((any Error)?) -> Void)](./unregister%28completionhandler%29.md)
   Unregisters the service so the system no longer launches it and calls a completion handler you provide with the resulting error value.
 
 

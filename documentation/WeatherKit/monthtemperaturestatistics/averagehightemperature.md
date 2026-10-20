@@ -1,7 +1,8 @@
 # averageHighTemperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average observed high temperature for the month.
 

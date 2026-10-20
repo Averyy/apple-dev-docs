@@ -1,7 +1,8 @@
 # Automated Device Enrollment
 
 **Framework**: Automated Device Enrollment  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Allow users of third-party MDM apps to add macOS and iOS devices to their organization.
 
@@ -14,15 +15,15 @@ Allow users of third-party MDM apps to add macOS and iOS devices to their organi
 
 This framework provides a user interface for device administrators to add macOS, iOS, and iPadOS devices to their Apple School Manager, Apple Business Manager, and Apple Business Essentials organizations. The provided SwiftUI view allows a user with device enrollment privileges to sign in with their Managed Apple ID and add devices to their organization.
 
-This feature requires Bluetooth access to discover and pair with nearby devices, and camera access to scan visual pairing PIN codes. To use this feature, you must have the Automated Device Enrollment entitlement. To obtain permission for this entitlement, see [`Automated Device Enrollment Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automated-device-enrollment/).
+This feature requires Bluetooth access to discover and pair with nearby devices, and camera access to scan visual pairing PIN codes. To use this feature, you must have the Automated Device Enrollment entitlement. To obtain permission for this entitlement, see [Automated Device Enrollment Entitlement Request](https://developer.apple.com/contact/request/automated-device-enrollment/).
 
 ## Topics
 
 ### Essentials
 - [func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View
-](../swiftui/view/automateddeviceenrollmentaddition(ispresented:).md)
+](../SwiftUI/view/automateddeviceenrollmentaddition%28ispresented%29.md)
   Presents a modal view that enables users to add devices to their organization.
-- [com.apple.developer.automated-device-enrollment.add-devices](../bundleresources/entitlements/com.apple.developer.automated-device-enrollment.add-devices.md)
+- [com.apple.developer.automated-device-enrollment.add-devices](../BundleResources/entitlements/com.apple.developer.automated-device-enrollment.add-devices.md)
   A Boolean value that indicates whether an app may add a device to Automated Device Enrollment.
 
 

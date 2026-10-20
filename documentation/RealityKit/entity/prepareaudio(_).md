@@ -1,7 +1,8 @@
 # prepareAudio(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares an audio resource for playback.
 
@@ -11,7 +12,7 @@ Prepares an audio resource for playback.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,11 @@ Prepares an audio resource for playback.
 
 #### Return Value
 
-An [`AudioPlaybackController`](audioplaybackcontroller.md) object that you can use to start and stop audio playback for this specific instance of a resource playing on this entity. You can also use this controller to update playback properties, such as gain and speed, during playback.
+An [`AudioPlaybackController`](../audioplaybackcontroller.md) object that you can use to start and stop audio playback for this specific instance of a resource playing on this entity. You can also use this controller to update playback properties, such as gain and speed, during playback.
 
 #### Discussion
 
-To start playback right away with default `AudioPlaybackController` properties, use the [`playAudio(_:)`](entity/playaudio(_:).md) method instead.
+To start playback right away with default `AudioPlaybackController` properties, use the [`playAudio(_:)`](./playaudio%28_%29.md) method instead.
 
 > **Note**: As soon as the system prepares an audio resource, the audio engine begins tracking the position of the entity and allocates rendering resources, which incurs a power cost.
 
@@ -41,23 +42,24 @@ controller.play()
 
 ## Parameters
 
-- `resource`: The audio resource the method plays. Load an audio resource from the file system with [`init(named:in:configuration:)`](audiofileresource/init(named:in:configuration:).md) , or from a URL with [`init(contentsOf:withName:configuration:)`](audiofileresource/init(contentsof:withname:configuration:).md).
+- `resource`: The audio resource the method plays. Load an audio resource from the file system with [`init(named:in:configuration:)`](../audiofileresource/init%28named,in,configuration%29.md) , or from a URL with [`init(contentsOf:withName:configuration:)`](../audiofileresource/init%28contentsof,withname,configuration%29.md).
 
 ## See Also
 
-- [func playAudio(AudioResource) -> AudioPlaybackController](entity/playaudio(_:).md)
+### Playing audio
+- [func playAudio(AudioResource) -> AudioPlaybackController](./playaudio%28_%29.md)
   Prepares and plays a new audio playback instance on this entity.
-- [func playAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](entity/playaudio(configuration:_:).md)
+- [func playAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](./playaudio%28configuration,_%29.md)
   Prepares and plays a real-time audio playback instance.
-- [func prepareAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](entity/prepareaudio(configuration:_:).md)
+- [func prepareAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](./prepareaudio%28configuration,_%29.md)
   Prepares a real-time audio playback instances.
-- [func stopAllAudio()](entity/stopallaudio.md)
+- [func stopAllAudio()](./stopallaudio%28%29.md)
   Stops playback for all audio on this entity.
-- [var spatialAudio: SpatialAudioComponent?](entity/spatialaudio.md)
+- [var spatialAudio: SpatialAudioComponent?](./spatialaudio.md)
   The component that configures the spatial rendering of sounds from this entity.
-- [var ambientAudio: AmbientAudioComponent?](entity/ambientaudio.md)
+- [var ambientAudio: AmbientAudioComponent?](./ambientaudio.md)
   The component that configures the ambient rendering of sounds from this entity.
-- [var channelAudio: ChannelAudioComponent?](entity/channelaudio.md)
+- [var channelAudio: ChannelAudioComponent?](./channelaudio.md)
   The component that configures the channel-based rendering of sounds from this entity.
 
 

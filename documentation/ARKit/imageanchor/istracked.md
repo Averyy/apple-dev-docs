@@ -1,7 +1,8 @@
 # isTracked
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether ARKit is currently tracking this image.
 
@@ -16,15 +17,16 @@ var isTracked: Bool { get }
 
 ## See Also
 
-- [var originFromAnchorTransform: simd_float4x4](imageanchor/originfromanchortransform.md)
+### Getting image information
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The location and orientation of the image in world space.
-- [var referenceImage: ReferenceImage](imageanchor/referenceimage.md)
+- [var referenceImage: ReferenceImage](./referenceimage.md)
   The reference image that this image anchor tracks.
-- [var estimatedScaleFactor: Float](imageanchor/estimatedscalefactor.md)
+- [var estimatedScaleFactor: Float](./estimatedscalefactor.md)
   The estimated scale factor between the tracked image’s physical size and the reference image’s size.
-- [var description: String](imageanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
-- [var id: UUID](imageanchor/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of this anchor.
 
 

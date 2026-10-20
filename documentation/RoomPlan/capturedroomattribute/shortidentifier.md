@@ -2,6 +2,7 @@
 
 **Framework**: RoomPlan  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A human-readable identifier for the attribute.

@@ -1,12 +1,15 @@
 # shared()
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the singleton instance of the interface factory.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns the singleton instance of the interface factory.
 class func shared() -> Self
 ```
 
+```objc
++ (instancetype) sharedInterfaceFactory;
+```
+
 ## Mentions
 
-- [Creating TVML Elements](creating-tvml-elements.md)
+- [Creating TVML Elements](../creating-tvml-elements.md)
 
 #### Return Value
 
@@ -24,7 +31,8 @@ The shared interface factory.
 
 ## See Also
 
-- [var extendedInterfaceCreator: (any TVInterfaceCreating)?](tvinterfacefactory/extendedinterfacecreator.md)
+### Extending an Interface
+- [var extendedInterfaceCreator: (any TVInterfaceCreating)?](./extendedinterfacecreator.md)
   The interface that is being extended.
 
 

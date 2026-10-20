@@ -1,7 +1,8 @@
 # isCandidateListVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that represents the visibility of this item’s candidate list.
 
@@ -14,17 +15,22 @@ A Boolean value that represents the visibility of this item’s candidate list.
 var isCandidateListVisible: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isCandidateListVisible) BOOL candidateListVisible;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the candidate list is currently visible, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+If [`true`](../../Swift/true.md), then the candidate list is currently visible, [`false`](../../Swift/false.md) otherwise.
 
-When [`isCollapsed`](nscandidatelisttouchbaritem/iscollapsed.md) is [`false`](https://developer.apple.com/documentation/swift/false), and the item is not obscured by UI then this property is true.
+When [`isCollapsed`](./iscollapsed.md) is [`false`](../../Swift/false.md), and the item is not obscured by UI then this property is true.
 
-This property is KVO compliant, and you should supply a candidate list when its value is [`true`](https://developer.apple.com/documentation/swift/true).
+This property is KVO compliant, and you should supply a candidate list when its value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func update(withInsertionPointVisibility: Bool)](nscandidatelisttouchbaritem/update(withinsertionpointvisibility:).md)
+### Managing candidate list visibility
+- [func update(withInsertionPointVisibility: Bool)](./update%28withinsertionpointvisibility%29.md)
   Updates the candidate list visibility configuration based on the client’s insertion point state.
 
 

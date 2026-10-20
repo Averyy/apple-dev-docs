@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The spring-based timing parameters to use.
@@ -19,17 +20,22 @@ The spring-based timing parameters to use.
 var springTimingParameters: UISpringTimingParameters? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UISpringTimingParameters * springTimingParameters;
+```
+
 #### Discussion
 
-Implement this property and use it to provide spring-based timing information. If the value of the [`timingCurveType`](uitimingcurveprovider/timingcurvetype.md) property is [`UITimingCurveType.spring`](uitimingcurvetype/spring.md) or [`UITimingCurveType.composed`](uitimingcurvetype/composed.md), you must return an object from this property.
+Implement this property and use it to provide spring-based timing information. If the value of the [`timingCurveType`](./timingcurvetype.md) property is [`UITimingCurveType.spring`](../uitimingcurvetype/spring.md) or [`UITimingCurveType.composed`](../uitimingcurvetype/composed.md), you must return an object from this property.
 
-For more information about configuring spring-based timing parameters, see [`UISpringTimingParameters`](uispringtimingparameters.md).
+For more information about configuring spring-based timing parameters, see [`UISpringTimingParameters`](../uispringtimingparameters.md).
 
 ## See Also
 
-- [var timingCurveType: UITimingCurveType](uitimingcurveprovider/timingcurvetype.md)
+### Getting the timing information
+- [var timingCurveType: UITimingCurveType](./timingcurvetype.md)
   The type of timing information to use.
-- [var cubicTimingParameters: UICubicTimingParameters?](uitimingcurveprovider/cubictimingparameters.md)
+- [var cubicTimingParameters: UICubicTimingParameters?](./cubictimingparameters.md)
   The cubic timing parameters to use.
 
 

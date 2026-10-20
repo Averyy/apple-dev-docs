@@ -1,7 +1,8 @@
 # getYearDaySchedule(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getYearDaySchedule(with params: MTRDoorLockClusterGetYearDayScheduleParams, completion: @escaping @Sendable (MTRDoorLockClusterGetYearDayScheduleResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func yearDaySchedule(with params: MTRDoorLockClusterGetYearDayScheduleParams) async throws -> MTRDoorLockClusterGetYearDayScheduleResponseParams
+```
+
+```objc
+- (void) getYearDayScheduleWithParams:(MTRDoorLockClusterGetYearDayScheduleParams *) params completion:(void (^)(MTRDoorLockClusterGetYearDayScheduleResponseParams *data, NSError *error)) completion;
 ```
 
 

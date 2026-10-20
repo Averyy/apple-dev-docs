@@ -3,7 +3,7 @@
 **Framework**: TVMLKit JS  
 **Kind**: clconst
 
-The corresponding value is a localized string representation containing the reason for the failure that, if present, will be returned by [`localizedFailureReason`](https://developer.apple.com/documentation/foundation/nserror/localizedfailurereason).
+The corresponding value is a localized string representation containing the reason for the failure that, if present, will be returned by [`localizedFailureReason`](../../../Foundation/nserror/localizedfailurereason.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # READ_ONLY
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Read-only permissions.
 
@@ -10,17 +11,18 @@ Read-only permissions.
 
 ## Declaration
 
-```swift
+```
 const String READ_ONLY;
 ```
 
 ## See Also
 
-- [NONE](cloudkit.shareparticipantpermission/none.md)
+### Enumeration Cases
+- [NONE](./none.md)
   No permissions.
-- [READ_WRITE](cloudkit.shareparticipantpermission/read_write.md)
+- [READ_WRITE](./read_write.md)
   Read-write permissions.
-- [UNKNOWN](cloudkit.shareparticipantpermission/unknown.md)
+- [UNKNOWN](./unknown.md)
   Unknown permissions.
 
 

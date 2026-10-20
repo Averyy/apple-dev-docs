@@ -1,7 +1,8 @@
 # considerExpiration
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Consider expired certificates invalid.
 
@@ -13,6 +14,10 @@ Consider expired certificates invalid.
 
 ```swift
 static var considerExpiration: SecCSFlags { get }
+```
+
+```c
+kSecCSConsiderExpiration
 ```
 
 #### Discussion

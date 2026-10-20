@@ -1,7 +1,8 @@
 # CTGlyphInfoGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier of the glyph info object
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier of the glyph info object
 
 ```swift
 func CTGlyphInfoGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTGlyphInfoGetTypeID();
 ```
 
 

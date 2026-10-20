@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the current runtime environment supports image-tracking providers.
 
@@ -16,9 +17,10 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [init(referenceImages: [ReferenceImage])](imagetrackingprovider/init(referenceimages:).md)
+### Creating an image-tracking provider
+- [init(referenceImages: [ReferenceImage])](./init%28referenceimages%29.md)
   Creates an image-tracking provider that tracks the reference images you supply.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](imagetrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for tracking images.
 
 

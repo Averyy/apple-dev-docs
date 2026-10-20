@@ -1,18 +1,19 @@
 # MIDIThruConnectionEndpoint
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A source or destination in a MIDI thru connection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,36 +21,41 @@ A source or destination in a MIDI thru connection.
 struct MIDIThruConnectionEndpoint
 ```
 
+```c
+struct MIDIThruConnectionEndpoint;
+```
+
 #### Overview
 
-Set the endpoint’s [`uniqueID`](midithruconnectionendpoint/uniqueid.md) to 0 if the endpoint exists and you’re passing its [`endpointRef`](midithruconnectionendpoint/endpointref.md). When retrieving a connection from Core MIDI, its [`endpointRef`](midithruconnectionendpoint/endpointref.md) may be `NULL` if it doesn’t exist, but the [`uniqueID`](midithruconnectionendpoint/uniqueid.md) is always non-zero.
+Set the endpoint’s [`uniqueID`](./midithruconnectionendpoint/uniqueid.md) to 0 if the endpoint exists and you’re passing its [`endpointRef`](./midithruconnectionendpoint/endpointref.md). When retrieving a connection from Core MIDI, its [`endpointRef`](./midithruconnectionendpoint/endpointref.md) may be `NULL` if it doesn’t exist, but the [`uniqueID`](./midithruconnectionendpoint/uniqueid.md) is always non-zero.
 
 ## Topics
 
 ### Configuring an Endpoint
-- [var uniqueID: MIDIUniqueID](midithruconnectionendpoint/uniqueid.md)
+- [var uniqueID: MIDIUniqueID](./midithruconnectionendpoint/uniqueid.md)
   The connection’s unique identifier.
-- [var endpointRef: MIDIEndpointRef](midithruconnectionendpoint/endpointref.md)
+- [var endpointRef: MIDIEndpointRef](./midithruconnectionendpoint/endpointref.md)
   The endpoint reference.
 ### Initializers
-- [init()](midithruconnectionendpoint/init.md)
-- [init(endpointRef: MIDIEndpointRef, uniqueID: MIDIUniqueID)](midithruconnectionendpoint/init(endpointref:uniqueid:).md)
+- [init()](./midithruconnectionendpoint/init%28%29.md)
+- [init(endpointRef: MIDIEndpointRef, uniqueID: MIDIUniqueID)](./midithruconnectionendpoint/init%28endpointref,uniqueid%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func MIDIThruConnectionCreate(CFString?, CFData, UnsafeMutablePointer<MIDIThruConnectionRef>) -> OSStatus](midithruconnectioncreate(_:_:_:).md)
+### Managing Connections
+- [func MIDIThruConnectionCreate(CFString?, CFData, UnsafeMutablePointer<MIDIThruConnectionRef>) -> OSStatus](./midithruconnectioncreate%28_,_,_%29.md)
   Creates a MIDI thru connection.
-- [func MIDIThruConnectionDispose(MIDIThruConnectionRef) -> OSStatus](midithruconnectiondispose(_:).md)
+- [func MIDIThruConnectionDispose(MIDIThruConnectionRef) -> OSStatus](./midithruconnectiondispose%28_%29.md)
   Disposes a MIDI thru connection.
-- [typealias MIDIThruConnectionRef](midithruconnectionref.md)
+- [typealias MIDIThruConnectionRef](./midithruconnectionref.md)
   An opaque reference to a play-through connection.
-- [Endpoint Configuration](endpoint-configuration.md)
+- [Endpoint Configuration](./endpoint-configuration.md)
   Values that define the supported endpoint configurations.
 
 

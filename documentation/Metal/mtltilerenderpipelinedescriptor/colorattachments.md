@@ -1,7 +1,8 @@
 # colorAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of attachments that store color data.
 
@@ -19,9 +20,14 @@ An array of attachments that store color data.
 var colorAttachments: MTLTileRenderPipelineColorAttachmentDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLTileRenderPipelineColorAttachmentDescriptorArray * colorAttachments;
+```
+
 ## See Also
 
-- [func reset()](mtltilerenderpipelinedescriptor/reset.md)
+### Specifying rendering pipeline state
+- [func reset()](./reset%28%29.md)
   Specifies the default rendering pipeline state values for the descriptor.
 
 

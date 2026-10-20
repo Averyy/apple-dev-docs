@@ -1,7 +1,8 @@
 # init(mtlDevice:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a device from a given Metal device.
 
@@ -17,6 +18,10 @@ Creates a device from a given Metal device.
 
 ```swift
 convenience init(mtlDevice metalDevice: any MTLDevice)
+```
+
+```objc
++ (instancetype) deviceWithMTLDevice:(id<MTLDevice>) metalDevice;
 ```
 
 #### Return Value

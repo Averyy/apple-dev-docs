@@ -1,7 +1,8 @@
 # DeviceActivityData.User.FamilyRole
 
 **Framework**: Device Activity  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Role of a person in their iCloud family.
 
@@ -23,23 +24,24 @@ If the person is not signed into an iCloud account or in an iCloud family, they 
 ## Topics
 
 ### Defining family roles
-- [DeviceActivityData.User.FamilyRole.individual](deviceactivitydata/user-swift.struct/familyrole/individual.md)
+- [DeviceActivityData.User.FamilyRole.individual](./familyrole/individual.md)
   A person who has authorized your app.
-- [DeviceActivityData.User.FamilyRole.child](deviceactivitydata/user-swift.struct/familyrole/child.md)
+- [DeviceActivityData.User.FamilyRole.child](./familyrole/child.md)
   A child being managed by a parent or guardian in their iCloud family.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [var role: DeviceActivityData.User.FamilyRole](deviceactivitydata/user-swift.struct/role.md)
+### Defining the account role
+- [var role: DeviceActivityData.User.FamilyRole](./role.md)
   Access the role of the person.
 
 

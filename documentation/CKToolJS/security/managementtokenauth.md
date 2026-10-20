@@ -1,7 +1,8 @@
 # ManagementTokenAuth
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Your management token.
 
@@ -10,7 +11,7 @@ Your management token.
 
 ## Declaration
 
-```swift
+```
 attribute string? ManagementTokenAuth;
 ```
 

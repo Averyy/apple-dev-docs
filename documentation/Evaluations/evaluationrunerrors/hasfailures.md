@@ -1,7 +1,8 @@
 # hasFailures
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this represents any failure worth persisting.
 

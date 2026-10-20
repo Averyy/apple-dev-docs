@@ -1,7 +1,8 @@
 # compact
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An product view style suitable for layouts where less space is available, or for displaying more items in a small amount of space.
 
@@ -19,12 +20,15 @@ An product view style suitable for layouts where less space is available, or for
 @preconcurrency static var compact: CompactProductViewStyle { get }
 ```
 
+Available when `Self` is `CompactProductViewStyle`.
+
 ## See Also
 
-- [static var automatic: AutomaticProductViewStyle](productviewstyle/automatic.md)
-- [static var large: LargeProductViewStyle](productviewstyle/large.md)
+### Getting built-in product view styles
+- [static var automatic: AutomaticProductViewStyle](./automatic.md)
+- [static var large: LargeProductViewStyle](./large.md)
   A product view style suitable for layouts where the Apple In-App Purchase content is prominent.
-- [static var regular: RegularProductViewStyle](productviewstyle/regular.md)
+- [static var regular: RegularProductViewStyle](./regular.md)
   A product view style that uses a standard, platform-appropriate layout.
 
 

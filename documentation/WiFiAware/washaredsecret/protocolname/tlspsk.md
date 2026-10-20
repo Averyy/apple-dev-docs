@@ -1,7 +1,8 @@
 # tlsPSK
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Derive a shared secret to bootstrap TLS, using the resulting shared secret as a TLS Pre-Shared Key.
 
@@ -18,7 +19,7 @@ static let tlsPSK: WASharedSecret.ProtocolName
 
 #### Discussion
 
-Best practices for TLS security are described in [`NIST Special Publication 800-52`](https://developer.apple.comhttps://csrc.nist.gov/pubs/sp/800/52/r2/final). TLS 1.3 is recommended.
+Best practices for TLS security are described in [NIST Special Publication 800-52](https://csrc.nist.gov/pubs/sp/800/52/r2/final). TLS 1.3 is recommended.
 
 Specifying this value will use the “`TLS-PSK`” string as the protocol name when deriving the shared secret.
 

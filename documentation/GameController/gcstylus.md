@@ -1,7 +1,8 @@
 # GCStylus
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a physical stylus connected to the device.
 
@@ -14,15 +15,19 @@ An object that represents a physical stylus connected to the device.
 class GCStylus
 ```
 
+```objc
+@interface GCStylus : NSObject
+```
+
 ## Mentions
 
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
 #### Overview
 
 Use the `styli` property to get the currently connect stylus accessories when your application starts.  Register for `GCStylusDidConnectNotification` and `GCStylusDidDisconnectNotification` to get notified when a stylus connects of disconnects while your application is running.
 
-```None
+```
 // Register for notifications
 NotificationCenter.default.addObserver(self, selector: #selector(stylus(didConnect:)), name: NSNotification.Name.GCStylusDidConnect, object: nil)
 NotificationCenter.default.addObserver(self, selector: #selector(stylus(didDisconnect:)), name: NSNotification.Name.GCStylusDidConnect, object: nil)
@@ -47,7 +52,7 @@ Use the `input` property to get the input profile of the stylus.  A spatial styl
 - The secondary button (`GCInputStylusSecondaryButton`) is the middle button in the input cluster.  It can measures pressure/force levels. It’s intended to be used for controlling in-air drawing, selection, and generic interactions.
 - The tip is also represented as a button (`GCInputStylusTip`).
 
-```None
+```
 guard let input = stylus.input else { return }
 input.inputStateQueueDepth = 20
 input.inputStateAvailableHandler = { input in
@@ -76,53 +81,54 @@ Use the `haptics` property to get the haptics profile of the stylus.  A spatial 
 ## Topics
 
 ### Accessing the styli
-- [class var styli: [GCStylus]](gcstylus/styli.md)
+- [class var styli: [GCStylus]](./gcstylus/styli.md)
   Get the collection of stylus accessories currently connected to the device.
 ### Getting input values and haptics
-- [var input: (any GCDevicePhysicalInput)?](gcstylus/input.md)
+- [var input: (any GCDevicePhysicalInput)?](./gcstylus/input.md)
   Gets the input profile for the stylus.
-- [var haptics: GCDeviceHaptics?](gcstylus/haptics.md)
+- [var haptics: GCDeviceHaptics?](./gcstylus/haptics.md)
   Gets the haptics profile for the stylus, if supported.
 ### Retrieving the buttons
-- [var GCInputStylusPrimaryButton: String](gcinputstylusprimarybutton-18g2p.md)
-- [var GCInputStylusSecondaryButton: String](gcinputstylussecondarybutton-6r3q.md)
-- [var GCInputStylusTip: String](gcinputstylustip-1rhuw.md)
+- [var GCInputStylusPrimaryButton: String](./gcinputstylusprimarybutton-18g2p.md)
+- [var GCInputStylusSecondaryButton: String](./gcinputstylussecondarybutton-6r3q.md)
+- [var GCInputStylusTip: String](./gcinputstylustip-1rhuw.md)
 ### Structures
-- [GCStylus.DidConnectMessage](gcstylus/didconnectmessage.md)
+- [GCStylus.DidConnectMessage](./gcstylus/didconnectmessage.md)
   A message that posts after a stylus accessory connects to the device.
-- [GCStylus.DidDisconnectMessage](gcstylus/diddisconnectmessage.md)
+- [GCStylus.DidDisconnectMessage](./gcstylus/diddisconnectmessage.md)
   A message that posts after a stylus accessory disconnects from the device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GCDevice](gcdevice.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GCDevice](./gcdevice.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting Game Controllers](supporting-game-controllers.md)
+### Game controllers
+- [Supporting Game Controllers](./supporting-game-controllers.md)
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
-- [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
+- [Letting players use their second-generation Siri Remote as a game controller](./letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
   Support the second-generation Siri Remote as a game controller in your Apple TV game.
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
   Receive controller and stylus input to interact with content in your augmented reality app.
-- [protocol GCDevice](gcdevice.md)
+- [protocol GCDevice](./gcdevice.md)
   A protocol that defines a common interface for game input devices.
-- [class GCController](gccontroller.md)
+- [class GCController](./gccontroller.md)
   A representation of a real game controller, a virtual controller, or a snapshot of a controller.
-- [class GCRacingWheel](gcracingwheel.md)
+- [class GCRacingWheel](./gcracingwheel.md)
   An object that represents a physical racing wheel controller connected to a device.
-- [class GCKeyboard](gckeyboard.md)
+- [class GCKeyboard](./gckeyboard.md)
   An object that represents a physical keyboard connected to a device.
-- [class GCMouse](gcmouse.md)
+- [class GCMouse](./gcmouse.md)
   An object that represents a physical mouse connected to a device.
 
 

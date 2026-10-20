@@ -1,17 +1,22 @@
 # ABCopyArrayOfMatchingRecords(_:_:)
 
 **Framework**: Address Book  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of records that match the given search element, or an empty array if no records match the search element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func ABCopyArrayOfMatchingRecords(_ addressBook: ABAddressBookRef!, _ search: ABSearchElementRef!) -> Unmanaged<CFArray>!
+```
+
+```c
+extern CFArrayRefABCopyArrayOfMatchingRecords(ABAddressBookRef addressBook, ABSearchElementRef search);
 ```
 
 #### Return Value
@@ -21,13 +26,14 @@ A new array containing ABRecord objects representing all the records that match 
 ## Parameters
 
 - `addressBook`: The address book for the logged-in user.
-- `search`: The search element that specifies the query. If `search` is `NULL`, this function raises an exception. Create an ABSearchElement object using the record specific functions: [`ABGroupCreateSearchElement(_:_:_:_:_:)`](abgroupcreatesearchelement(_:_:_:_:_:).md) or [`ABPersonCreateSearchElement(_:_:_:_:_:)`](abpersoncreatesearchelement(_:_:_:_:_:).md). See `ABSearchElement C` for more functions that create compound queries.
+- `search`: The search element that specifies the query. If `search` is `NULL`, this function raises an exception. Create an ABSearchElement object using the record specific functions: [`ABGroupCreateSearchElement(_:_:_:_:_:)`](./abgroupcreatesearchelement%28_,_,_,_,_%29.md) or [`ABPersonCreateSearchElement(_:_:_:_:_:)`](./abpersoncreatesearchelement%28_,_,_,_,_%29.md). See `ABSearchElement C` for more functions that create compound queries.
 
 ## See Also
 
-- [func ABSearchElementCreateWithConjunction(ABSearchConjunction, CFArray!) -> Unmanaged<ABSearchElementRef>!](absearchelementcreatewithconjunction(_:_:).md)
+### Search Elements
+- [func ABSearchElementCreateWithConjunction(ABSearchConjunction, CFArray!) -> Unmanaged<ABSearchElementRef>!](./absearchelementcreatewithconjunction%28_,_%29.md)
   Returns a compound search element created by combiningthe search elements in an array with the given conjunction.
-- [func ABSearchElementMatchesRecord(ABSearchElementRef!, ABRecordRef!) -> Bool](absearchelementmatchesrecord(_:_:).md)
+- [func ABSearchElementMatchesRecord(ABSearchElementRef!, ABRecordRef!) -> Bool](./absearchelementmatchesrecord%28_,_%29.md)
   Tests whether or not a record matches a search element.
 
 

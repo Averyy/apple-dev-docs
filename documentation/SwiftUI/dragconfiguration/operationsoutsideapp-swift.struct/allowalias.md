@@ -1,7 +1,8 @@
 # allowAlias
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if the drag operation supports creating aliases to the dropped items.
 

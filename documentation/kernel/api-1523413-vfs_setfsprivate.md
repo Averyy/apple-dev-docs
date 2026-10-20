@@ -1,7 +1,8 @@
 # vfs_setfsprivate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Set filesystem-private mount data.
 
@@ -10,11 +11,11 @@ Set filesystem-private mount data.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setfsprivate(mount_t mp, void *mntdata);
 ```
 
-#### Return_value
+#### Return Value
 
 Void.
 

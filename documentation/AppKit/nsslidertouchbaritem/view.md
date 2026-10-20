@@ -1,7 +1,8 @@
 # view
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12.2+
@@ -12,11 +13,16 @@
 var view: any NSView & NSUserInterfaceCompression { get }
 ```
 
+```objc
+@property (readonly, nonnull) NSView<NSUserInterfaceCompression> * view;
+```
+
 ## See Also
 
-- [var slider: NSSlider](nsslidertouchbaritem/slider.md)
+### Configuring the slider
+- [var slider: NSSlider](./slider.md)
   The slider displayed by the bar item.
-- [var label: String?](nsslidertouchbaritem/label.md)
+- [var label: String?](./label.md)
   The text displayed alongside the slider.
 
 

@@ -1,7 +1,8 @@
 # LanguageTag
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper around an IETF language tag.
 
@@ -13,45 +14,46 @@ struct LanguageTag
 
 #### Overview
 
-To learn more about the IETF worldwide standard for language tags, see [`RFC5646`](https://developer.apple.comhttps://tools.ietf.org/html/rfc5646).
+To learn more about the IETF worldwide standard for language tags, see [RFC5646](https://tools.ietf.org/html/rfc5646).
 
 ## Topics
 
 ### Creating a Language Tag
-- [init(extendedGraphemeClusterLiteral: String)](languagetag/init(extendedgraphemeclusterliteral:).md)
+- [init(extendedGraphemeClusterLiteral: String)](./languagetag/init%28extendedgraphemeclusterliteral%29.md)
   Creates an instance initialized to the given value.
-- [init(stringLiteral: String)](languagetag/init(stringliteral:).md)
+- [init(stringLiteral: String)](./languagetag/init%28stringliteral%29.md)
   Creates an instance initialized to the given value.
-- [init(unicodeScalarLiteral: String)](languagetag/init(unicodescalarliteral:).md)
+- [init(unicodeScalarLiteral: String)](./languagetag/init%28unicodescalarliteral%29.md)
   Creates an instance initialized to the given value.
-- [init?(rawValue: String)](languagetag/init(rawvalue:).md)
+- [init?(rawValue: String)](./languagetag/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Describing a Language Tag
-- [var description: String](languagetag/description.md)
+- [var description: String](./languagetag/description.md)
   A textual representation of the language tag.
 ### Default Implementations
-- [CustomStringConvertible Implementations](languagetag/customstringconvertible-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](languagetag/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringLiteral Implementations](languagetag/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](languagetag/expressiblebyunicodescalarliteral-implementations.md)
-- [RawRepresentable Implementations](languagetag/rawrepresentable-implementations.md)
+- [CustomStringConvertible Implementations](./languagetag/customstringconvertible-implementations.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](./languagetag/expressiblebyextendedgraphemeclusterliteral-implementations.md)
+- [ExpressibleByStringLiteral Implementations](./languagetag/expressiblebystringliteral-implementations.md)
+- [ExpressibleByUnicodeScalarLiteral Implementations](./languagetag/expressiblebyunicodescalarliteral-implementations.md)
+- [RawRepresentable Implementations](./languagetag/rawrepresentable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [var defaultLocalization: LanguageTag?](package/defaultlocalization.md)
+### Localizing Package Resources
+- [var defaultLocalization: LanguageTag?](./package/defaultlocalization.md)
   The default localization for resources.
 
 

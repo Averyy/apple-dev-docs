@@ -1,17 +1,22 @@
 # stopSpeaking(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the speaking of text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func stopSpeaking(_ sender: Any?)
+```
+
+```objc
+- (void) stopSpeaking:(id) sender;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func stopSpeaking(_ sender: Any?)
 
 ## See Also
 
-- [func startSpeaking(Any?)](nstextview/startspeaking(_:).md)
+### Speaking text
+- [func startSpeaking(Any?)](./startspeaking%28_%29.md)
   Speaks the selected text, or all text if no selection.
 
 

@@ -1,7 +1,8 @@
 # startSuspended
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the controller should start out suspended.
 
@@ -18,6 +19,10 @@ Whether the controller should start out suspended.
 
 ```swift
 var startSuspended: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL startSuspended;
 ```
 
 #### Discussion

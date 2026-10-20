@@ -1,33 +1,35 @@
 # frexpf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float frexpf(float, int *);
 ```
 
 ## See Also
 
-- [exp](1557217-exp.md)
-- [exp2](1557304-exp2.md)
-- [exp2f](1557192-exp2f.md)
-- [exp2l](1557194-exp2l.md)
-- [expf](1532210-expf.md)
-- [expl](1557224-expl.md)
-- [expm1](1557227-expm1.md)
-- [expm1f](1557179-expm1f.md)
-- [expm1l](1557178-expm1l.md)
-- [frexp](1557221-frexp.md)
-- [frexpl](1557175-frexpl.md)
-- [ldexp](1557152-ldexp.md)
-- [ldexpf](1557190-ldexpf.md)
-- [ldexpl](1557365-ldexpl.md)
+### Exponent
+- [exp](./api-1557217-exp.md)
+- [exp2](./api-1557304-exp2.md)
+- [exp2f](./api-1557192-exp2f.md)
+- [exp2l](./api-1557194-exp2l.md)
+- [expf](./api-1532210-expf.md)
+- [expl](./api-1557224-expl.md)
+- [expm1](./api-1557227-expm1.md)
+- [expm1f](./api-1557179-expm1f.md)
+- [expm1l](./api-1557178-expm1l.md)
+- [frexp](./api-1557221-frexp.md)
+- [frexpl](./api-1557175-frexpl.md)
+- [ldexp](./api-1557152-ldexp.md)
+- [ldexpf](./api-1557190-ldexpf.md)
+- [ldexpl](./api-1557365-ldexpl.md)
 
 
 ---

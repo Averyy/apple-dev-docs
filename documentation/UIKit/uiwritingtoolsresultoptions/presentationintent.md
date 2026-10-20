@@ -1,7 +1,8 @@
 # presentationIntent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 implies `RichText`, `List`, and `Table`, and Writing Tools may provide text with presentation intent attributes. Writing Tools will use `NSPresentationIntent` instead of `NSTextList` and `NSTextTable` to represent lists and tables.
 
@@ -15,6 +16,10 @@ implies `RichText`, `List`, and `Table`, and Writing Tools may provide text with
 
 ```swift
 static var presentationIntent: UIWritingToolsResultOptions { get }
+```
+
+```c
+UIWritingToolsResultPresentationIntent
 ```
 
 

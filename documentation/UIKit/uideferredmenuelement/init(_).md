@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A convenience initializer that creates a placeholder menu element that the system replaces with the result of the provider’s completion handler.
 
@@ -18,11 +19,15 @@ A convenience initializer that creates a placeholder menu element that the syste
 convenience init(_ elementProvider: @escaping (@escaping ([UIMenuElement]) -> Void) -> Void)
 ```
 
+```objc
++ (instancetype) elementWithProvider:(void (^)(void (^completion)(NSArray<UIMenuElement *> *elements))) elementProvider;
+```
+
 #### Discussion
 
 The system calls each element’s closure once, when it first encounters the element in a menu. Once provided, the system caches the element and may reuse it across menus.
 
-You can use [`uncached(_:)`](uideferredmenuelement/uncached(_:).md) to initialize a deferred menu element without caching. With caching disabled, the system calls the provider closure each time it displays the element.
+You can use [`uncached(_:)`](./uncached%28_%29.md) to initialize a deferred menu element without caching. With caching disabled, the system calls the provider closure each time it displays the element.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ You can use [`uncached(_:)`](uideferredmenuelement/uncached(_:).md) to initializ
 
 ## See Also
 
-- [class func uncached((([UIMenuElement]) -> Void) -> Void) -> Self](uideferredmenuelement/uncached(_:).md)
+### Creating a deferred menu element
+- [class func uncached((([UIMenuElement]) -> Void) -> Void) -> Self](./uncached%28_%29.md)
   Returns a placeholder menu element that the system replaces with the result of the provider’s completion handler.
-- [class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheItems: Bool) -> Self](uideferredmenuelement/usingfocus(identifier:shouldcacheitems:).md)
+- [class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheItems: Bool) -> Self](./usingfocus%28identifier,shouldcacheitems%29.md)
 
 
 ---

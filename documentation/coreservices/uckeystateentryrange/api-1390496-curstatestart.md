@@ -1,7 +1,8 @@
 # curStateStart
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer specifying the beginning of a given dead-key state range.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the beginning of a given dead-key state ra
 
 ```swift
 var curStateStart: UInt16
+```
+
+```c
+UInt16 curStateStart;
 ```
 
 

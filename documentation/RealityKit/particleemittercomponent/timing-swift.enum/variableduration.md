@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.Timing.VariableDuration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Duration along with an optional variation used to define an amount of time.
 
@@ -22,19 +23,19 @@ struct VariableDuration
 ## Topics
 
 ### Initializers
-- [init(duration: TimeInterval, variation: TimeInterval?)](particleemittercomponent/timing-swift.enum/variableduration/init(duration:variation:).md)
+- [init(duration: TimeInterval, variation: TimeInterval?)](./variableduration/init%28duration,variation%29.md)
 ### Instance Properties
-- [let duration: TimeInterval](particleemittercomponent/timing-swift.enum/variableduration/duration.md)
+- [let duration: TimeInterval](./variableduration/duration.md)
   Base duration of time.
-- [let variation: TimeInterval?](particleemittercomponent/timing-swift.enum/variableduration/variation.md)
+- [let variation: TimeInterval?](./variableduration/variation.md)
   Defines a plus/minus range from which a value is randomly selected and used to offset duration.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 
 ---

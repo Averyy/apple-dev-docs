@@ -1,7 +1,8 @@
 # value
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The slider’s current value.
 
@@ -17,15 +18,20 @@ The slider’s current value.
 var value: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float value;
+```
+
 #### Discussion
 
-Use this property to get and set the slider’s current value. To render an animated transition from the current value to the new value, use the [`setValue(_:animated:)`](uislider/setvalue(_:animated:).md) method instead.
+Use this property to get and set the slider’s current value. To render an animated transition from the current value to the new value, use the [`setValue(_:animated:)`](./setvalue%28_,animated%29.md) method instead.
 
 If you try to set a value that’s below the minimum or above the maximum, the minimum or maximum value is set instead. The default value of this property is `0.0`.
 
 ## See Also
 
-- [func setValue(Float, animated: Bool)](uislider/setvalue(_:animated:).md)
+### Accessing the slider’s value
+- [func setValue(Float, animated: Bool)](./setvalue%28_,animated%29.md)
   Sets the slider’s current value, allowing you to animate the change visually.
 
 

@@ -1,7 +1,8 @@
 # multicolor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that renders symbols as multiple layers with their inherit styles.
 
@@ -31,11 +32,12 @@ Image(systemName: "exclamationmark.triangle.fill")
 
 ## See Also
 
-- [static let hierarchical: SymbolRenderingMode](symbolrenderingmode/hierarchical.md)
+### Getting symbol rendering modes
+- [static let hierarchical: SymbolRenderingMode](./hierarchical.md)
   A mode that renders symbols as multiple layers, with different opacities applied to the foreground style.
-- [static let monochrome: SymbolRenderingMode](symbolrenderingmode/monochrome.md)
+- [static let monochrome: SymbolRenderingMode](./monochrome.md)
   A mode that renders symbols as a single layer filled with the foreground style.
-- [static let palette: SymbolRenderingMode](symbolrenderingmode/palette.md)
+- [static let palette: SymbolRenderingMode](./palette.md)
   A mode that renders symbols as multiple layers, with different styles applied to the layers.
 
 

@@ -1,7 +1,8 @@
 # LibraryItem.Category
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The kinds of library items that you can create.
 
@@ -27,18 +28,19 @@ When you specify a category for a library item, Xcode can group it with similar 
 ## Topics
 
 ### Specifying a Category
-- [static let control: LibraryItem.Category](libraryitem/category/control.md)
+- [static let control: LibraryItem.Category](./category/control.md)
   A category for controls, like buttons and context menus.
-- [static let effect: LibraryItem.Category](libraryitem/category/effect.md)
+- [static let effect: LibraryItem.Category](./category/effect.md)
   A category for effects, like opacity and saturation modifiers.
-- [static let layout: LibraryItem.Category](libraryitem/category/layout.md)
+- [static let layout: LibraryItem.Category](./category/layout.md)
   A category for items that manage layout, like stack views and frame modifiers.
-- [static let other: LibraryItem.Category](libraryitem/category/other.md)
+- [static let other: LibraryItem.Category](./category/other.md)
   A general category.
 
 ## See Also
 
-- [init<SnippetExpressionType>(@autoclosure () -> SnippetExpressionType, visible: Bool, title: String?, category: LibraryItem.Category, matchingSignature: String?)](libraryitem/init(_:visible:title:category:matchingsignature:).md)
+### Creating a Library Item
+- [init<SnippetExpressionType>(@autoclosure () -> SnippetExpressionType, visible: Bool, title: String?, category: LibraryItem.Category, matchingSignature: String?)](./init%28_,visible,title,category,matchingsignature%29.md)
   Creates a new library item.
 
 

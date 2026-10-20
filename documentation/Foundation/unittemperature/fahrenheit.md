@@ -1,7 +1,8 @@
 # fahrenheit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The degree Fahrenheit unit of temperature.
 
@@ -21,11 +22,16 @@ The degree Fahrenheit unit of temperature.
 class var fahrenheit: UnitTemperature { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitTemperature * fahrenheit;
+```
+
 ## See Also
 
-- [class var kelvin: UnitTemperature](unittemperature/kelvin.md)
+### Accessing Predefined Units
+- [class var kelvin: UnitTemperature](./kelvin.md)
   The kelvin unit of temperature.
-- [class var celsius: UnitTemperature](unittemperature/celsius.md)
+- [class var celsius: UnitTemperature](./celsius.md)
   The degree Celsius unit of temperature.
 
 

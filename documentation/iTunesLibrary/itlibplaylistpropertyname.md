@@ -1,7 +1,8 @@
 # ITLibPlaylistPropertyName
 
 **Framework**: iTunes Library  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name or title of the playlist.
 
@@ -15,27 +16,32 @@ The name or title of the playlist.
 let ITLibPlaylistPropertyName: String
 ```
 
+```c
+extern NSString * const ITLibPlaylistPropertyName;
+```
+
 ## Topics
 
 ### Related Documentation
-- [var name: String](itlibplaylist/name.md)
+- [var name: String](./itlibplaylist/name.md)
   The name or title of the playlist.
 
 ## See Also
 
-- [let ITLibPlaylistPropertyAllItemsPlaylist: String](itlibplaylistpropertyallitemsplaylist.md)
+### Playlist Properties
+- [let ITLibPlaylistPropertyAllItemsPlaylist: String](./itlibplaylistpropertyallitemsplaylist.md)
   A Boolean value that indicates whether the API exposes every item in the playlist.
-- [let ITLibPlaylistPropertyDistinguisedKind: String](itlibplaylistpropertydistinguisedkind.md)
+- [let ITLibPlaylistPropertyDistinguisedKind: String](./itlibplaylistpropertydistinguisedkind.md)
   An indication of whether the playlist has a special distinction.
-- [let ITLibPlaylistPropertyItems: String](itlibplaylistpropertyitems.md)
+- [let ITLibPlaylistPropertyItems: String](./itlibplaylistpropertyitems.md)
   The media items (tracks) in the playlist.
-- [let ITLibPlaylistPropertyKind: String](itlibplaylistpropertykind.md)
+- [let ITLibPlaylistPropertyKind: String](./itlibplaylistpropertykind.md)
   An indication of the type of playlist.
-- [let ITLibPlaylistPropertyPrimary: String](itlibplaylistpropertyprimary.md)
+- [let ITLibPlaylistPropertyPrimary: String](./itlibplaylistpropertyprimary.md)
   A Boolean value that indicates whether the playlist is the primary playlist.
-- [let ITLibPlaylistPropertyParentPersistentID: String](itlibplaylistpropertyparentpersistentid.md)
+- [let ITLibPlaylistPropertyParentPersistentID: String](./itlibplaylistpropertyparentpersistentid.md)
   The unique persistent identifier of the playlist’s parent playlist.
-- [let ITLibPlaylistPropertyVisible: String](itlibplaylistpropertyvisible.md)
+- [let ITLibPlaylistPropertyVisible: String](./itlibplaylistpropertyvisible.md)
   A Boolean value that indicates whether the playlist is visible to the user in iTunes.
 
 

@@ -1,7 +1,8 @@
 # emojiCount(for:)
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the number of typed emojis for the specified sentiment in the report.
 
@@ -16,6 +17,10 @@ Provides the number of typed emojis for the specified sentiment in the report.
 func emojiCount(for category: SRKeyboardMetrics.SentimentCategory) -> Int
 ```
 
+```objc
+- (NSInteger) emojiCountForSentimentCategory:(SRKeyboardMetricsSentimentCategory) category;
+```
+
 #### Return Value
 
 The total number of typed emojis for a sentiment.
@@ -26,9 +31,10 @@ The total number of typed emojis for a sentiment.
 
 ## See Also
 
-- [func wordCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](srkeyboardmetrics/wordcount(for:).md)
+### Inferring Sentiment
+- [func wordCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](./wordcount%28for%29.md)
   Provides the number of typed words for the specified sentiment in the report.
-- [SRKeyboardMetrics.SentimentCategory](srkeyboardmetrics/sentimentcategory.md)
+- [SRKeyboardMetrics.SentimentCategory](./sentimentcategory.md)
   Moods that the framework determines by analyzing the user’s input.
 
 

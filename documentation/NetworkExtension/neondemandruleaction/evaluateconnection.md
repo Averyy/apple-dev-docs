@@ -1,7 +1,8 @@
 # NEOnDemandRuleAction.evaluateConnection
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Start the VPN after evaluating the destination host being accessed against the rule’s parameters.
 
@@ -19,13 +20,18 @@ Start the VPN after evaluating the destination host being accessed against the r
 case evaluateConnection
 ```
 
+```c
+NEOnDemandRuleActionEvaluateConnection
+```
+
 ## See Also
 
-- [NEOnDemandRuleAction.connect](neondemandruleaction/connect.md)
+### Rule Actions
+- [NEOnDemandRuleAction.connect](./connect.md)
   Start the VPN connection for every connection attempt.
-- [NEOnDemandRuleAction.disconnect](neondemandruleaction/disconnect.md)
+- [NEOnDemandRuleAction.disconnect](./disconnect.md)
   Do not start the VPN connection, and disconnect the VPN connection if it is not currently disconnected.
-- [NEOnDemandRuleAction.ignore](neondemandruleaction/ignore.md)
+- [NEOnDemandRuleAction.ignore](./ignore.md)
   Do not start the VPN connection, but do not disconnect it if it is currently connected.
 
 

@@ -1,7 +1,8 @@
 # BasicChart3DSurfaceStyle
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,13 +20,14 @@ struct BasicChart3DSurfaceStyle
 ## Relationships
 
 ### Conforms To
-- [Chart3DSurfaceStyle](chart3dsurfacestyle.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Chart3DSurfaceStyle](./chart3dsurfacestyle.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol Chart3DSurfaceStyle](chart3dsurfacestyle.md)
+### Configuring surfaces
+- [protocol Chart3DSurfaceStyle](./chart3dsurfacestyle.md)
 
 
 ---

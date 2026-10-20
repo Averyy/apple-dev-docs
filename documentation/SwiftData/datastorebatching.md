@@ -1,7 +1,8 @@
 # DataStoreBatching
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that enables a custom data store to support batch requests.
 
@@ -24,29 +25,30 @@ protocol DataStoreBatching : DataStore
 ## Topics
 
 ### Deleting persisted model data
-- [func delete<T>(DataStoreBatchDeleteRequest<T>) throws](datastorebatching/delete(_:).md)
-- [struct DataStoreBatchDeleteRequest](datastorebatchdeleterequest.md)
+- [func delete<T>(DataStoreBatchDeleteRequest<T>) throws](./datastorebatching/delete%28_%29.md)
+- [struct DataStoreBatchDeleteRequest](./datastorebatchdeleterequest.md)
 
 ## Relationships
 
 ### Inherits From
-- [DataStore](datastore.md)
+- [DataStore](./datastore.md)
 ### Conforming Types
-- [DefaultStore](defaultstore.md)
+- [DefaultStore](./defaultstore.md)
 
 ## See Also
 
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
+### Model storage
+- [Maintaining a local copy of server data](./maintaining-a-local-copy-of-server-data.md)
   Create and update a persistent store to cache read-only network data.
-- [class DefaultStore](defaultstore.md)
+- [class DefaultStore](./defaultstore.md)
   A data store that uses Core Data as its undelying storage mechanism.
-- [protocol DataStore](datastore.md)
+- [protocol DataStore](./datastore.md)
   An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
-- [protocol HistoryProviding](historyproviding.md)
+- [protocol HistoryProviding](./historyproviding.md)
   An interface that enables a custom data store to provide the history of changes for its persisted models.
-- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
+- [Building a document-based app using SwiftData](../SwiftUI/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [struct ModelDocument](modeldocument.md)
+- [struct ModelDocument](./modeldocument.md)
   A document type that uses SwiftData to manage its storage.
 
 

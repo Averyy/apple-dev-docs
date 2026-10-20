@@ -1,14 +1,15 @@
 # kUSB3LPMMaxU1Timeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kUSB3LPMMaxU1Timeout = 0x7F
 ```
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicator of which properties to inspect for this image size constraint.
 
@@ -20,9 +21,14 @@ Indicator of which properties to inspect for this image size constraint.
 var type: MLImageSizeConstraintType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLImageSizeConstraintType type;
+```
+
 ## See Also
 
-- [enum MLImageSizeConstraintType](mlimagesizeconstrainttype.md)
+### Determining relevant constraints
+- [enum MLImageSizeConstraintType](../mlimagesizeconstrainttype.md)
   The modes that determine how the model defines a feature’s image size constraint.
 
 

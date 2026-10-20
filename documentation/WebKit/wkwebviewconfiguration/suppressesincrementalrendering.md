@@ -1,7 +1,8 @@
 # suppressesIncrementalRendering
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the web view suppresses content rendering until the content is fully loaded into memory.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the web view suppresses content rendering
 var suppressesIncrementalRendering: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL suppressesIncrementalRendering;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var ignoresViewportScaleLimits: Bool](wkwebviewconfiguration/ignoresviewportscalelimits.md)
+### Configuring the rendering behavior
+- [var ignoresViewportScaleLimits: Bool](./ignoresviewportscalelimits.md)
   A Boolean value that determines whether a web view allows scaling of the webpage.
 
 

@@ -1,7 +1,8 @@
 # kCMIOStreamUnknown
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var kCMIOStreamUnknown: Int { get }
 ```
 
+```c
+kCMIOStreamUnknown
+```
+
 ## See Also
 
-- [var kCMIOStreamClassID: Int](kcmiostreamclassid.md)
+### Constants
+- [var kCMIOStreamClassID: Int](./kcmiostreamclassid.md)
 
 
 ---

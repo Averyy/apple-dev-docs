@@ -1,7 +1,8 @@
 # customAttribute(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a custom attribute to the text view.
 

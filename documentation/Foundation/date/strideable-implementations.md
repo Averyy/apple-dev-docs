@@ -1,16 +1,17 @@
 # Strideable Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func advanced(by: TimeInterval) -> Date](date/advanced(by:).md)
+- [func advanced(by: TimeInterval) -> Date](./advanced%28by%29.md)
   Returns a date offset the specified time interval from this date.
-- [func distance(to: Date) -> TimeInterval](date/distance(to:).md)
+- [func distance(to: Date) -> TimeInterval](./distance%28to%29.md)
   Returns the distance from this date to another date, specified as a time interval.
 ### Type Aliases
-- [typealias Stride](date/stride.md)
+- [typealias Stride](./stride.md)
   A type alias to define the stride of a date.
 
 

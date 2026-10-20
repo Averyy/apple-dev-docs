@@ -2,6 +2,7 @@
 
 **Framework**: Speech  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The set of all possible asset locales that the module supports.
@@ -22,7 +23,8 @@ static var supportedLocales: [Locale] { get async }
 
 ## See Also
 
-- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](localedependentspeechmodule/supportedlocale(equivalentto:).md)
+### Getting supported locales
+- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](./supportedlocale%28equivalentto%29.md)
   A locale from the module’s supported locales equivalent to the given locale.
 
 

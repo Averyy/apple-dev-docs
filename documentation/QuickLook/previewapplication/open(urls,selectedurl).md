@@ -1,7 +1,8 @@
 # open(urls:selectedURL:)
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Previews the provided URLs.
 

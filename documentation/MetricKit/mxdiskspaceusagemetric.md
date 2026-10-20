@@ -1,21 +1,28 @@
 # MXDiskSpaceUsageMetric
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing metrics about your app’s disk space usage.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 27.2
+- iPadOS 26.0+ - Deprecated in 27.2
+- Mac Catalyst 26.0+ - Deprecated in 27.0
+- macOS 26.0+ - Deprecated in 27.2
+- visionOS 26.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricResult`](./metricresult.md), and read the [`TotalFileCountMetric`](./totalfilecountmetric.md), [`TotalFileSizeMetric`](./totalfilesizemetric.md), or [`TotalDiskSpaceCapacityMetric`](./totaldiskspacecapacitymetric.md) cases instead.
 
 ## Declaration
 
 ```swift
 class MXDiskSpaceUsageMetric
+```
+
+```objc
+@interface MXDiskSpaceUsageMetric : MXMetric
 ```
 
 #### Overview
@@ -30,51 +37,52 @@ Disk space is a limited resource shared by many apps. Optimize your app’s disk
 
 Modern file systems such APFS provide enhanced features to maximize space utilization, such as file cloning. The disk space usage metric reports size accurately without double counting the cloned files.
 
-For example, if you copy a file using [`copyItem(at:to:)`](https://developer.apple.com/documentation/foundation/filemanager/copyitem(at:to:)), the file system shows two separate files. However, due to the file system optimization, the copied file shares the same storage space with the original file. If you manually calculate the size of all your files, your calculation may also include the copied file, resulting in a larger size than expected.
+For example, if you copy a file using [`copyItem(at:to:)`](../Foundation/filemanager/copyitem%28at,to%29.md), the file system shows two separate files. However, due to the file system optimization, the copied file shares the same storage space with the original file. If you manually calculate the size of all your files, your calculation may also include the copied file, resulting in a larger size than expected.
 
-##### Storing App Specific Files
+##### Storing App-Specific Files
 
-Use the [`totalCacheFolderSize`](mxdiskspaceusagemetric/totalcachefoldersize.md) property of MXDiskSpaceUsageMetric to gain insights into how the operating system manages your app’s cached content in the field. Placing files in the appropriate directories, such as the [`cachesDirectory`](https://developer.apple.com/documentation/foundation/url/cachesdirectory) and [`temporaryDirectory`](https://developer.apple.com/documentation/foundation/url/temporarydirectory) (see [`File System Basics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)), allows the system to intelligently manage and purge content when necessary, ensuring optimal disk space utilization and a better user experience.
+Use the [`totalCacheFolderSize`](./mxdiskspaceusagemetric/totalcachefoldersize.md) property of MXDiskSpaceUsageMetric to gain insights into how the operating system manages your app’s cached content in the field. Placing files in the appropriate directories, such as the [`cachesDirectory`](../Foundation/url/cachesdirectory.md) and [`temporaryDirectory`](../Foundation/url/temporarydirectory.md) (see [File System Basics](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)), allows the system to intelligently manage and purge content when necessary, ensuring optimal disk space utilization and a better user experience.
 
 ## Topics
 
 ### Reading file counts
-- [var totalBinaryFileCount: Int](mxdiskspaceusagemetric/totalbinaryfilecount.md)
+- [var totalBinaryFileCount: Int](./mxdiskspaceusagemetric/totalbinaryfilecount.md)
   The total number of your app’s binary files.
-- [var totalDataFileCount: Int](mxdiskspaceusagemetric/totaldatafilecount.md)
+- [var totalDataFileCount: Int](./mxdiskspaceusagemetric/totaldatafilecount.md)
   The total number of data files in your app’s container(s).
 ### Reading file sizes
-- [var totalBinaryFileSize: Measurement<UnitInformationStorage>](mxdiskspaceusagemetric/totalbinaryfilesize.md)
+- [var totalBinaryFileSize: Measurement<UnitInformationStorage>](./mxdiskspaceusagemetric/totalbinaryfilesize.md)
   The total size of disk space your app’s binary files occupy.
-- [var totalCacheFolderSize: Measurement<UnitInformationStorage>](mxdiskspaceusagemetric/totalcachefoldersize.md)
+- [var totalCacheFolderSize: Measurement<UnitInformationStorage>](./mxdiskspaceusagemetric/totalcachefoldersize.md)
   The total size of your application’s cache folder.
-- [var totalCloneSize: Measurement<UnitInformationStorage>](mxdiskspaceusagemetric/totalclonesize.md)
+- [var totalCloneSize: Measurement<UnitInformationStorage>](./mxdiskspaceusagemetric/totalclonesize.md)
   The total size of all clone files that are attributed to your app.
-- [var totalDataFileSize: Measurement<UnitInformationStorage>](mxdiskspaceusagemetric/totaldatafilesize.md)
+- [var totalDataFileSize: Measurement<UnitInformationStorage>](./mxdiskspaceusagemetric/totaldatafilesize.md)
   The total size of disk space your app uses for storing data files.
 ### Reading disk capacity and space
-- [var totalDiskSpaceCapacity: Measurement<UnitInformationStorage>](mxdiskspaceusagemetric/totaldiskspacecapacity.md)
+- [var totalDiskSpaceCapacity: Measurement<UnitInformationStorage>](./mxdiskspaceusagemetric/totaldiskspacecapacity.md)
   The total disk space capacity of the current device.
-- [var totalDiskSpaceUsedSize: Measurement<UnitInformationStorage>](mxdiskspaceusagemetric/totaldiskspaceusedsize.md)
+- [var totalDiskSpaceUsedSize: Measurement<UnitInformationStorage>](./mxdiskspaceusagemetric/totaldiskspaceusedsize.md)
   The total amount of used disk storage on the current device.
 
 ## Relationships
 
 ### Inherits From
-- [MXMetric](mxmetric.md)
+- [MXMetric](./mxmetric.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXDiskIOMetric](mxdiskiometric.md)
+### Disk metrics
+- [class MXDiskIOMetric](./mxdiskiometric.md)
   An object representing metrics about disk usage.
 
 

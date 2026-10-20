@@ -1,7 +1,8 @@
 # AppStoreVersionPhasedReleaseUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,21 +11,21 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPhasedReleaseUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionPhasedReleaseUpdateRequest.Data.Attributes](appstoreversionphasedreleaseupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppStoreVersionPhasedReleaseUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
 ## Properties
 
 - `attributes` (AppStoreVersionPhasedReleaseUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionPhasedReleases`
 
 
 ---

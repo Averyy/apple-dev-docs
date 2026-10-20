@@ -1,23 +1,28 @@
 # AVSpeechSynthesizerDelegate
 
 **Framework**: AVFAudio  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate protocol that contains optional methods you can implement to respond to events that occur during speech synthesis.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 protocol AVSpeechSynthesizerDelegate : NSObjectProtocol, Sendable
+```
+
+```objc
+@protocol AVSpeechSynthesizerDelegate <NSObject>
 ```
 
 #### Overview
@@ -31,31 +36,32 @@ A speech synthesizer sends messages to its delegate for three categories of even
 ## Topics
 
 ### Responding to speech synthesis events
-- [func speechSynthesizer(AVSpeechSynthesizer, didStart: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didstart:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didStart: AVSpeechUtterance)](./avspeechsynthesizerdelegate/speechsynthesizer%28_,didstart%29.md)
   Tells the delegate when the synthesizer begins speaking an utterance.
-- [func speechSynthesizer(AVSpeechSynthesizer, willSpeakRangeOfSpeechString: NSRange, utterance: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:willspeakrangeofspeechstring:utterance:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, willSpeakRangeOfSpeechString: NSRange, utterance: AVSpeechUtterance)](./avspeechsynthesizerdelegate/speechsynthesizer%28_,willspeakrangeofspeechstring,utterance%29.md)
   Tells the delegate when the synthesizer is about to speak a portion of an utterance’s text.
-- [func speechSynthesizer(AVSpeechSynthesizer, willSpeak: AVSpeechSynthesisMarker, utterance: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:willspeak:utterance:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, willSpeak: AVSpeechSynthesisMarker, utterance: AVSpeechUtterance)](./avspeechsynthesizerdelegate/speechsynthesizer%28_,willspeak,utterance%29.md)
   Tells the delegate when the synthesizer is about to speak a marker of an utterance’s text.
-- [func speechSynthesizer(AVSpeechSynthesizer, didPause: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didpause:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didPause: AVSpeechUtterance)](./avspeechsynthesizerdelegate/speechsynthesizer%28_,didpause%29.md)
   Tells the delegate when the synthesizer pauses while speaking an utterance.
-- [func speechSynthesizer(AVSpeechSynthesizer, didContinue: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didcontinue:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didContinue: AVSpeechUtterance)](./avspeechsynthesizerdelegate/speechsynthesizer%28_,didcontinue%29.md)
   Tells the delegate when the synthesizer resumes speaking an utterance after pausing.
-- [func speechSynthesizer(AVSpeechSynthesizer, didFinish: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didfinish:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didFinish: AVSpeechUtterance)](./avspeechsynthesizerdelegate/speechsynthesizer%28_,didfinish%29.md)
   Tells the delegate when the synthesizer finishes speaking an utterance.
-- [func speechSynthesizer(AVSpeechSynthesizer, didCancel: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didcancel:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didCancel: AVSpeechUtterance)](./avspeechsynthesizerdelegate/speechsynthesizer%28_,didcancel%29.md)
   Tells the delegate when the synthesizer cancels speaking an utterance.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var delegate: (any AVSpeechSynthesizerDelegate)?](avspeechsynthesizer/delegate.md)
+### Managing the delegate
+- [var delegate: (any AVSpeechSynthesizerDelegate)?](./avspeechsynthesizer/delegate.md)
   The delegate object for the speech synthesizer.
 
 

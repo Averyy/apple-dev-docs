@@ -1,7 +1,8 @@
 # date(_:matchesComponents:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether a given date matches all of the given date components.
 
@@ -20,13 +21,17 @@ Returns whether a given date matches all of the given date components.
 func date(_ date: Date, matchesComponents components: DateComponents) -> Bool
 ```
 
+```objc
+- (BOOL) date:(NSDate *) date matchesComponents:(NSDateComponents *) components;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the given date matches the given components, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the given date matches the given components, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method is useful for determining whether dates calculated by methods like  [`nextDate(after:matching:value:options:)`](nscalendar/nextdate(after:matching:value:options:).md) or [`enumerateDates(startingAfter:matching:options:using:)`](nscalendar/enumeratedates(startingafter:matching:options:using:).md) are exact, or required an adjustment due to a nonexistent time.
+This method is useful for determining whether dates calculated by methods like  [`nextDate(after:matching:value:options:)`](./nextdate%28after,matching,value,options%29.md) or [`enumerateDates(startingAfter:matching:options:using:)`](./enumeratedates%28startingafter,matching,options,using%29.md) are exact, or required an adjustment due to a nonexistent time.
 
 ## Parameters
 
@@ -35,25 +40,27 @@ This method is useful for determining whether dates calculated by methods like  
 
 ## See Also
 
-- [func nextDate(after: Date, matching: NSCalendar.Unit, value: Int, options: NSCalendar.Options) -> Date?](nscalendar/nextdate(after:matching:value:options:).md)
+### Related Documentation
+- [func nextDate(after: Date, matching: NSCalendar.Unit, value: Int, options: NSCalendar.Options) -> Date?](./nextdate%28after,matching,value,options%29.md)
   Returns the next date after a given date matching the given calendar unit value.
-- [func enumerateDates(startingAfter: Date, matching: DateComponents, options: NSCalendar.Options, using: (Date?, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)](nscalendar/enumeratedates(startingafter:matching:options:using:).md)
+- [func enumerateDates(startingAfter: Date, matching: DateComponents, options: NSCalendar.Options, using: (Date?, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratedates%28startingafter,matching,options,using%29.md)
   Computes the dates that match (or most closely match) a given set of components, and calls the block once for each of them, until the enumeration is stopped.
-- [func component(NSCalendar.Unit, from: Date) -> Int](nscalendar/component(_:from:).md)
+### Extracting Components
+- [func component(NSCalendar.Unit, from: Date) -> Int](./component%28_,from%29.md)
   Returns the specified date component from a given date.
-- [func components(NSCalendar.Unit, from: Date) -> DateComponents](nscalendar/components(_:from:).md)
+- [func components(NSCalendar.Unit, from: Date) -> DateComponents](./components%28_,from%29.md)
   Returns the date components representing a given date.
-- [func components(NSCalendar.Unit, from: Date, to: Date, options: NSCalendar.Options) -> DateComponents](nscalendar/components(_:from:to:options:)-84y5w.md)
+- [func components(NSCalendar.Unit, from: Date, to: Date, options: NSCalendar.Options) -> DateComponents](./components%28_,from,to,options%29-84y5w.md)
   Returns the difference between two supplied dates as date components.
-- [func components(NSCalendar.Unit, from: DateComponents, to: DateComponents, options: NSCalendar.Options) -> DateComponents](nscalendar/components(_:from:to:options:)-49lo8.md)
+- [func components(NSCalendar.Unit, from: DateComponents, to: DateComponents, options: NSCalendar.Options) -> DateComponents](./components%28_,from,to,options%29-49lo8.md)
   Returns the difference between start and end dates given as date components.
-- [func components(in: TimeZone, from: Date) -> DateComponents](nscalendar/components(in:from:).md)
+- [func components(in: TimeZone, from: Date) -> DateComponents](./components%28in,from%29.md)
   Returns all the date components of a date, as if in a given time zone (instead of the receiving calendar’s time zone).
-- [func getEra(UnsafeMutablePointer<Int>?, year: UnsafeMutablePointer<Int>?, month: UnsafeMutablePointer<Int>?, day: UnsafeMutablePointer<Int>?, from: Date)](nscalendar/getera(_:year:month:day:from:).md)
+- [func getEra(UnsafeMutablePointer<Int>?, year: UnsafeMutablePointer<Int>?, month: UnsafeMutablePointer<Int>?, day: UnsafeMutablePointer<Int>?, from: Date)](./getera%28_,year,month,day,from%29.md)
   Returns by reference the era, year, week of year, and weekday component values for a given date.
-- [func getEra(UnsafeMutablePointer<Int>?, yearForWeekOfYear: UnsafeMutablePointer<Int>?, weekOfYear: UnsafeMutablePointer<Int>?, weekday: UnsafeMutablePointer<Int>?, from: Date)](nscalendar/getera(_:yearforweekofyear:weekofyear:weekday:from:).md)
+- [func getEra(UnsafeMutablePointer<Int>?, yearForWeekOfYear: UnsafeMutablePointer<Int>?, weekOfYear: UnsafeMutablePointer<Int>?, weekday: UnsafeMutablePointer<Int>?, from: Date)](./getera%28_,yearforweekofyear,weekofyear,weekday,from%29.md)
   Returns by reference the era, year, week of year, and weekday component values for a given date.
-- [func getHour(UnsafeMutablePointer<Int>?, minute: UnsafeMutablePointer<Int>?, second: UnsafeMutablePointer<Int>?, nanosecond: UnsafeMutablePointer<Int>?, from: Date)](nscalendar/gethour(_:minute:second:nanosecond:from:).md)
+- [func getHour(UnsafeMutablePointer<Int>?, minute: UnsafeMutablePointer<Int>?, second: UnsafeMutablePointer<Int>?, nanosecond: UnsafeMutablePointer<Int>?, from: Date)](./gethour%28_,minute,second,nanosecond,from%29.md)
   Returns by reference the hour, minute, second, and nanosecond component values for a given date.
 
 

@@ -1,7 +1,8 @@
 # reorder(displayed:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a reorder system accessory with the specified display state and configuration options.
 
@@ -10,7 +11,7 @@ Creates a reorder system accessory with the specified display state and configur
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,12 +29,13 @@ If your collection view supports interactive reordering of its cells, a user can
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the reorder accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](uicellaccessory-swift.struct/displayedstate/whenediting.md).
-- `options`: Configuration options for the reorder accessory. See [`UICellAccessory.ReorderOptions`](uicellaccessory-swift.struct/reorderoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the reorder accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](./displayedstate/whenediting.md).
+- `options`: Configuration options for the reorder accessory. See [`UICellAccessory.ReorderOptions`](./reorderoptions.md) for possible configuration options.
 
 ## See Also
 
-- [UICellAccessory.ReorderOptions](uicellaccessory-swift.struct/reorderoptions.md)
+### Creating a reorder accessory
+- [UICellAccessory.ReorderOptions](./reorderoptions.md)
   Configuration options for a reorder accessory.
 
 

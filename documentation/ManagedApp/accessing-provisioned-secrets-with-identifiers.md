@@ -1,6 +1,7 @@
 # Accessing provisioned secrets with identifiers
 
-**Framework**: ManagedApp
+**Framework**: ManagedApp  
+**Role**: Article
 
 Specify the secrets your app requires for device management features, receive secrets from MDM servers and use secrets in your app.
 
@@ -19,30 +20,30 @@ Some device management features rely on *secrets*, that is, secure credentials p
 
 Your app accesses secrets by their identifier using the framework supplied secret *provider* classes. Each provider offers a list of identifiers that catalogs all the currently available secrets, of a particular type, that an MDM admin provisions. You can access secrets using predefined identifiers, or identifiers that you add to your app’s configuration.
 
-The provider’s list of identifiers is an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence). If your app requires notification when the available secrets change, or if your app supports dynamic lists of secrets, iterate the sequence for the lifetime of the app using `for await`.
+The provider’s list of identifiers is an [`AsyncSequence`](../Swift/asyncsequence.md). If your app requires notification when the available secrets change, or if your app supports dynamic lists of secrets, iterate the sequence for the lifetime of the app using `for await`.
 
-#### Specify the Secrets Your App Supports
+#### Specify the secrets your app supports
 
 To implement features with secrets, identify the provisions that you require from MDM admins. Publish a specification that details the requirements in a location accessible to MDM admins; for example, hosting it on your app website.
 
-> **Note**: If your app also defines a configuration specification for general information, you can add your secrets requirements to the same document. For more information about general configuration, see [`Specifying and decoding a configuration`](specifying-and-decoding-a-configuration.md).
+> **Note**: If your app also defines a configuration specification for general information, you can add your secrets requirements to the same document. For more information about general configuration, see [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md).
 
-When an admin provisions secrets on their MDM server according to your specification, they use [`Device Management`](https://developer.apple.com/documentation/devicemanagement). The device’s operating system works with [`Device Management`](https://developer.apple.com/documentation/devicemanagement) to ingest the secrets on the device. From the perspective of your app, [`ManagedApp`](ManagedApp.md) receives the secrets automatically.
+When an admin provisions secrets on their MDM server according to your specification, they use [Device Management](../DeviceManagement/DeviceManagement.md). The device’s operating system works with [Device Management](../DeviceManagement/DeviceManagement.md) to ingest the secrets on the device. From the perspective of your app, [ManagedApp](./ManagedApp.md) receives the secrets automatically.
 
-#### Retrieve Secrets Using a Known Identifier
+#### Retrieve secrets using a known identifier
 
 The framework defines a provider class for each type of secret:
 
-- [`ManagedAppPasswordsProvider`](managedapppasswordsprovider.md)
-- [`ManagedAppCertificatesProvider`](managedappcertificatesprovider.md)
-- [`ManagedAppIdentitiesProvider`](managedappidentitiesprovider.md)
+- [`ManagedAppPasswordsProvider`](./managedapppasswordsprovider.md)
+- [`ManagedAppCertificatesProvider`](./managedappcertificatesprovider.md)
+- [`ManagedAppIdentitiesProvider`](./managedappidentitiesprovider.md)
 
 A provider contains:
 
 - An accessor that returns secrets by ID
 - A list of identifiers that contains all of the currently available secrets
 
-The following code acquires a password using the [`password(withIdentifier:)`](managedapppasswordsprovider/password(withidentifier:).md) accessor with a predefined identifier:
+The following code acquires a password using the [`password(withIdentifier:)`](./managedapppasswordsprovider/password%28withidentifier%29.md) accessor with a predefined identifier:
 
 ```swift
 let loginPasswordIdentifier = "mainLoginPassword"
@@ -57,7 +58,7 @@ do { /* Attempt to look up the login password. */
 // Use the password.
 ```
 
-Another task that often uses known identifiers is responding to client certificate authentication challenges. The following example responds to a client certificate challenge within the [`URLSessionDelegate`](https://developer.apple.com/documentation/foundation/urlsessiondelegate) callback, and requests an identity using the [`ManagedAppIdentitiesProvider`](managedappidentitiesprovider.md) accessor:
+Another task that often uses known identifiers is responding to client certificate authentication challenges. The following example responds to a client certificate challenge within the [`URLSessionDelegate`](../Foundation/urlsessiondelegate.md) callback, and requests an identity using the [`ManagedAppIdentitiesProvider`](./managedappidentitiesprovider.md) accessor:
 
 ```swift
 public func urlSession(_ session: URLSession, 
@@ -86,9 +87,9 @@ public func urlSession(_ session: URLSession,
 
 > ❗ **Important**: For security reasons, only request a secret from the framework when your app needs it immediately. This minimizes the amount of time that the secret is in your app’s memory. Avoid logging sensitive information such as passwords or private-key data.
 
-#### Retrieve Secrets Using the Providers Identifiers Sequence
+#### Retrieve secrets using the provider’s identifiers sequence
 
-If your app needs a notification when the available secrets change, or if your app maintains dynamic lists of secrets, use the provider’s [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence).  Use a `for await` construct on the provider’s `identifiers` property to listen for changes. The following example builds a list of available usernames by iterating the  [`ManagedAppIdentitiesProvider`](managedappidentitiesprovider.md) sequence:
+If your app needs a notification when the available secrets change, or if your app maintains dynamic lists of secrets, use the provider’s [`AsyncSequence`](../Swift/asyncsequence.md).  Use a `for await` construct on the provider’s `identifiers` property to listen for changes. The following example builds a list of available usernames by iterating the  [`ManagedAppIdentitiesProvider`](./managedappidentitiesprovider.md) sequence:
 
 ```swift
 let accountUsernameIdentifierPrefix = "User:"
@@ -104,9 +105,9 @@ Task {
 }
 ```
 
-> **Note**: Instead of predefining identifiers, you can add identifiers to your configuration specification so the identifiers are flexible and MDM admins can configure them. For more information, see [`Specifying and decoding a configuration`](specifying-and-decoding-a-configuration.md).
+> **Note**: Instead of predefining identifiers, you can add identifiers to your configuration specification so the identifiers are flexible and MDM admins can configure them. For more information, see [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md).
 
-#### Access an Identity for Authentication or Signing
+#### Access an identity for authentication or signing
 
 To log someone in, an app needs to authenticate with a server. To acquire the person’s identity to authenticate, pass the person’s username as the identifier argument of the identity provider’s accessor, for example:
 
@@ -123,7 +124,7 @@ do { /* Access the identity. */
 }
 ```
 
-Alternatively, your app can use the identity for cryptographic signing. Because [`SecIdentity`](https://developer.apple.com/documentation/security/secidentity) is in the [`Security`](https://developer.apple.com/documentation/security) framework, you can create a cryptographic signature using other [`Security`](https://developer.apple.com/documentation/security) framework API. The following code begins a signature by acquiring a reference to the identity’s private key:
+Alternatively, your app can use the identity for cryptographic signing. Because [`SecIdentity`](../Security/secidentity.md) is in the [Security](../Security/Security.md) framework, you can create a cryptographic signature using other [Security](../Security/Security.md) framework API. The following code begins a signature by acquiring a reference to the identity’s private key:
 
 ```swift
 // Access the private key. 
@@ -131,9 +132,9 @@ var privateKey: SecKey? = nil
 SecIdentityCopyPrivateKey(identity, &privateKey)
 ```
 
-The [`SecKey`](https://developer.apple.com/documentation/security/seckey) object is an opaque reference to the underlying private key data that’s in system memory. Don’t load actual private key data in your app’s memory unless absolutely necessary; for example, when using the  [`SecKeyCopyExternalRepresentation(_:_:)`](https://developer.apple.com/documentation/security/seckeycopyexternalrepresentation(_:_:)) function.
+The [`SecKey`](../Security/seckey.md) object is an opaque reference to the underlying private key data that’s in system memory. Don’t load actual private key data in your app’s memory unless absolutely necessary; for example, when using the  [`SecKeyCopyExternalRepresentation(_:_:)`](../Security/seckeycopyexternalrepresentation%28_,_%29.md) function.
 
-While choosing the signing algorithm, call [`SecKeyIsAlgorithmSupported(_:_:_:)`](https://developer.apple.com/documentation/security/seckeyisalgorithmsupported(_:_:_:)) to ensure the admin-provisioned key supports the algorithm:
+While choosing the signing algorithm, call [`SecKeyIsAlgorithmSupported(_:_:_:)`](../Security/seckeyisalgorithmsupported%28_,_,_%29.md) to ensure the admin-provisioned key supports the algorithm:
 
 ```swift
 // Choose signing algorithm. 
@@ -157,11 +158,12 @@ let signature = SecKeyCreateSignature(privateKey, algorithm, message as CFData, 
 
 ## See Also
 
-- [class ManagedAppCertificatesProvider](managedappcertificatesprovider.md)
+### Secrets and identifiers
+- [class ManagedAppCertificatesProvider](./managedappcertificatesprovider.md)
   A class that provides certificates that an MDM admin provisions for a managed app or extension.
-- [class ManagedAppIdentitiesProvider](managedappidentitiesprovider.md)
+- [class ManagedAppIdentitiesProvider](./managedappidentitiesprovider.md)
   A class that provides identities that an MDM admin provisions for a managed app or extension.
-- [class ManagedAppPasswordsProvider](managedapppasswordsprovider.md)
+- [class ManagedAppPasswordsProvider](./managedapppasswordsprovider.md)
   A class that provides passwords that an MDM admin provisions for a managed app or extension.
 
 

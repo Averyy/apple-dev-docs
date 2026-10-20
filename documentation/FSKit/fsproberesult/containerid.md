@@ -1,7 +1,8 @@
 # containerID
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container identifier, as found during the probe operation.
 
@@ -14,17 +15,22 @@ The container identifier, as found during the probe operation.
 var containerID: FSContainerIdentifier? { get }
 ```
 
+```objc
+@property (readonly, nullable) FSContainerIdentifier * containerID;
+```
+
 #### Discussion
 
-This value is non-`nil` unless the result is [`FSMatchResult.notRecognized`](fsmatchresult/notrecognized.md). For formats that lack a durable UUID on which to base a container identifier — which is only legal for a [`FSUnaryFileSystem`](fsunaryfilesystem.md) — this value may be a random UUID.
+This value is non-`nil` unless the result is [`FSMatchResult.notRecognized`](../fsmatchresult/notrecognized.md). For formats that lack a durable UUID on which to base a container identifier — which is only legal for a [`FSUnaryFileSystem`](../fsunaryfilesystem.md) — this value may be a random UUID.
 
 ## See Also
 
-- [var name: String?](fsproberesult/name.md)
+### Working with result properties
+- [var name: String?](./name.md)
   The resource name, as found during the probe operation.
-- [var result: FSMatchResult](fsproberesult/result.md)
+- [var result: FSMatchResult](./result.md)
   The match result, representing the recognition and usability of a probed resource.
-- [enum FSMatchResult](fsmatchresult.md)
+- [enum FSMatchResult](../fsmatchresult.md)
   A type that represents the recognition and usability of a probed resource.
 
 

@@ -1,12 +1,13 @@
 # addItems(withTitles:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds multiple items to the end of the menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Adds multiple items to the end of the menu.
 func addItems(withTitles itemTitles: [String])
 ```
 
+```objc
+- (void) addItemsWithTitles:(NSArray<NSString *> *) itemTitles;
+```
+
 #### Discussion
 
-If you want to move an item, it’s better to invoke [`removeItem(withTitle:)`](nspopupbutton/removeitem(withtitle:).md) explicitly and then send this method. After adding the items, this method uses the [`synchronizeTitleAndSelectedItem()`](nspopupbutton/synchronizetitleandselecteditem().md) method to make sure the item being displayed matches the currently selected item.
+If you want to move an item, it’s better to invoke [`removeItem(withTitle:)`](./removeitem%28withtitle%29.md) explicitly and then send this method. After adding the items, this method uses the [`synchronizeTitleAndSelectedItem()`](./synchronizetitleandselecteditem%28%29.md) method to make sure the item being displayed matches the currently selected item.
 
 Since this method searches for duplicate items, it should not be used if you are adding items to an already populated menu with more than a few hundred items. Add items directly to the receiver’s menu instead.
 
@@ -26,15 +31,16 @@ Since this method searches for duplicate items, it should not be used if you are
 
 ## See Also
 
-- [func addItem(withTitle: String)](nspopupbutton/additem(withtitle:).md)
+### Inserting and deleting items
+- [func addItem(withTitle: String)](./additem%28withtitle%29.md)
   Adds an item with the specified title to the end of the menu.
-- [func insertItem(withTitle: String, at: Int)](nspopupbutton/insertitem(withtitle:at:).md)
+- [func insertItem(withTitle: String, at: Int)](./insertitem%28withtitle,at%29.md)
   Inserts an item at the specified position in the menu.
-- [func removeAllItems()](nspopupbutton/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items in the receiver’s item menu.
-- [func removeItem(withTitle: String)](nspopupbutton/removeitem(withtitle:).md)
+- [func removeItem(withTitle: String)](./removeitem%28withtitle%29.md)
   Removes the item with the specified title from the menu.
-- [func removeItem(at: Int)](nspopupbutton/removeitem(at:).md)
+- [func removeItem(at: Int)](./removeitem%28at%29.md)
   Removes the item at the specified index.
 
 

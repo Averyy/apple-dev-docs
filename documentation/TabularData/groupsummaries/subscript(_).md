@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Retrieves one or more summaries by their group keys.

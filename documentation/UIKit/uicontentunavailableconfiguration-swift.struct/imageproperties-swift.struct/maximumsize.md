@@ -1,7 +1,8 @@
 # maximumSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A maximum size for the image.
 
@@ -10,7 +11,7 @@ A maximum size for the image.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var maximumSize: CGSize { get set }
 
 #### Discussion
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero). Setting a [`width`](https://developer.apple.com/documentation/corefoundation/cgsize/width) or [`height`](https://developer.apple.com/documentation/corefoundation/cgsize/height) of zero makes the size unconstrained on that dimension. If the image exceeds [`maximumSize`](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/maximumsize.md) size on either dimension, the view reduces its size proportionately, maintaining aspect ratio.
+The default value is [`CGSizeZero`](../../../CoreGraphics/cgsizezero.md). Setting a [`width`](../../../CoreFoundation/cgsize/width.md) or [`height`](../../../CoreFoundation/cgsize/height.md) of zero makes the size unconstrained on that dimension. If the image exceeds [`maximumSize`](./maximumsize.md) size on either dimension, the view reduces its size proportionately, maintaining aspect ratio.
 
 
 ---

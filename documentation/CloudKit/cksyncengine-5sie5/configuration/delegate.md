@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides the records to sync and handles any related events.
 
@@ -11,7 +12,7 @@ The object that provides the records to sync and handles any related events.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var delegate: any CKSyncEngineDelegate
 
 ## See Also
 
-- [protocol CKSyncEngineDelegate](cksyncenginedelegate-1q7g8.md)
+### Handling record changes
+- [protocol CKSyncEngineDelegate](../../cksyncenginedelegate-1q7g8.md)
   An interface for providing record data to a sync engine and customizing that engine’s behavior.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of shape style this will resolve to.
@@ -27,7 +28,8 @@ When you create a custom shape style, Swift infers this type from your implement
 
 ## See Also
 
-- [func resolve(in: EnvironmentValues) -> Self.Resolved](shapestyle/resolve(in:).md)
+### Resolving a shape style in an environment
+- [func resolve(in: EnvironmentValues) -> Self.Resolved](./resolve%28in%29.md)
   Evaluate to a resolved shape style given the current `environment`.
 
 

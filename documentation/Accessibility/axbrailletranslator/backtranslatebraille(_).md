@@ -1,7 +1,8 @@
 # backTranslateBraille(_:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Input Braille should use the unicode Braille characters (0x2800-0x28FF).
 
@@ -18,6 +19,10 @@ Input Braille should use the unicode Braille characters (0x2800-0x28FF).
 
 ```swift
 func backTranslateBraille(_ braille: String) -> AXBrailleTranslationResult
+```
+
+```objc
+- (AXBrailleTranslationResult *) backTranslateBraille:(NSString *) braille;
 ```
 
 

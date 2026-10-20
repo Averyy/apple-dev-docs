@@ -1,7 +1,8 @@
 # intendedSpatialExperience
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AUAudioUnit’s intended spatial audio experience.
 
@@ -18,7 +19,7 @@ var intendedSpatialExperience: any SpatialAudioExperience { get set }
 
 This value is only useful for output audio units; otherwise it’s a no-op.
 
-If unspecified, the property value defaults to [`AutomaticSpatialAudio`](automaticspatialaudio.md).
+If unspecified, the property value defaults to [`AutomaticSpatialAudio`](../automaticspatialaudio.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # CWChannelBand.bandUnknown
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unknown channel band.
 
@@ -14,11 +15,16 @@ Unknown channel band.
 case bandUnknown
 ```
 
+```c
+kCWChannelBandUnknown
+```
+
 ## See Also
 
-- [CWChannelBand.band2GHz](cwchannelband/band2ghz.md)
+### Constants
+- [CWChannelBand.band2GHz](./band2ghz.md)
   2.4GHz channel band.
-- [CWChannelBand.band5GHz](cwchannelband/band5ghz.md)
+- [CWChannelBand.band5GHz](./band5ghz.md)
   5GHz channel band.
 
 

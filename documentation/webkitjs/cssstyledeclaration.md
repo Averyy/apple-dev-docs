@@ -1,7 +1,8 @@
 # CSSStyleDeclaration
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,25 +10,25 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSStyleDeclaration
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cssText](cssstyledeclaration/1630235-csstext.md)
-- [length](cssstyledeclaration/1630130-length.md)
-- [parentRule](cssstyledeclaration/1634058-parentrule.md)
+- [cssText](./cssstyledeclaration/api-1630235-csstext.md)
+- [length](./cssstyledeclaration/api-1630130-length.md)
+- [parentRule](./cssstyledeclaration/api-1634058-parentrule.md)
 ### Instance Methods
-- [getPropertyCSSValue](cssstyledeclaration/1630992-getpropertycssvalue.md)
-- [getPropertyPriority](cssstyledeclaration/1629221-getpropertypriority.md)
-- [getPropertyShorthand](cssstyledeclaration/1631895-getpropertyshorthand.md)
-- [getPropertyValue](cssstyledeclaration/1632297-getpropertyvalue.md)
-- [isPropertyImplicit](cssstyledeclaration/1633671-ispropertyimplicit.md)
-- [item](cssstyledeclaration/1632284-item.md)
-- [removeProperty](cssstyledeclaration/1629534-removeproperty.md)
-- [setProperty](cssstyledeclaration/1631257-setproperty.md)
+- [getPropertyCSSValue](./cssstyledeclaration/api-1630992-getpropertycssvalue.md)
+- [getPropertyPriority](./cssstyledeclaration/api-1629221-getpropertypriority.md)
+- [getPropertyShorthand](./cssstyledeclaration/api-1631895-getpropertyshorthand.md)
+- [getPropertyValue](./cssstyledeclaration/api-1632297-getpropertyvalue.md)
+- [isPropertyImplicit](./cssstyledeclaration/api-1633671-ispropertyimplicit.md)
+- [item](./cssstyledeclaration/api-1632284-item.md)
+- [removeProperty](./cssstyledeclaration/api-1629534-removeproperty.md)
+- [setProperty](./cssstyledeclaration/api-1631257-setproperty.md)
 
 
 ---

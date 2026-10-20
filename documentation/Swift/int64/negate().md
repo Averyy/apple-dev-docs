@@ -1,7 +1,8 @@
 # negate()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces this value with its additive inverse.
 

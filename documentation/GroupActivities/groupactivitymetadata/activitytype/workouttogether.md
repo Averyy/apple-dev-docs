@@ -1,7 +1,8 @@
 # workoutTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared workout activity, such as participating in a fitness class together.
 

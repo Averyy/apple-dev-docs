@@ -1,7 +1,8 @@
 # newBackgroundContext()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new managed object context that executes on a private queue.
 
@@ -20,9 +21,13 @@ Returns a new managed object context that executes on a private queue.
 func newBackgroundContext() -> NSManagedObjectContext
 ```
 
+```objc
+- (NSManagedObjectContext *) newBackgroundContext;
+```
+
 ## Mentions
 
-- [Using Core Data in the background](using-core-data-in-the-background.md)
+- [Using Core Data in the background](../using-core-data-in-the-background.md)
 
 #### Return Value
 
@@ -30,11 +35,12 @@ A newly created private managed object context.
 
 #### Discussion
 
-Invoking this method causes the persistent container to create and return a new [`NSManagedObjectContext`](nsmanagedobjectcontext.md) with the [`concurrencyType`](nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). This new context will be associated with the [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) directly and is set to consume [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave) broadcasts automatically.
+Invoking this method causes the persistent container to create and return a new [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) with the [`concurrencyType`](../nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](../nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). This new context will be associated with the [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md) directly and is set to consume [`NSManagedObjectContextDidSave`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md) broadcasts automatically.
 
 ## See Also
 
-- [var viewContext: NSManagedObjectContext](nspersistentcontainer/viewcontext.md)
+### Acquiring Contexts
+- [var viewContext: NSManagedObjectContext](./viewcontext.md)
   The main queue’s managed object context.
 
 

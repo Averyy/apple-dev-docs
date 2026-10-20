@@ -1,7 +1,8 @@
 # activeTab(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the active tab is needed for the window.
 
@@ -16,6 +17,10 @@ Called when the active tab is needed for the window.
 
 ```swift
 optional func activeTab(for context: WKWebExtensionContext) -> (any WKWebExtensionTab)?
+```
+
+```objc
+- (id<WKWebExtensionTab>) activeTabForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

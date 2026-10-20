@@ -1,7 +1,8 @@
 # backgroundView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that provides the background appearance.
 
@@ -9,13 +10,17 @@ The view that provides the background appearance.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var backgroundView: UIView? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIView * backgroundView;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(center:radius:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circular geographic condition with a center point and radius you specify.
 

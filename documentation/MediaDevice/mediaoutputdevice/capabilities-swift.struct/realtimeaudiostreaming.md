@@ -1,7 +1,8 @@
 # realtimeAudioStreaming
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Capable of receiving audio samples and processing them in realtime.
 
@@ -18,7 +19,7 @@ static let realtimeAudioStreaming: MediaOutputDevice.Capabilities
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 
 ---

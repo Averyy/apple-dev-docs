@@ -1,7 +1,8 @@
 # relativeAltitude
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The change in altitude (in meters) since the first reported event.
 
@@ -17,13 +18,18 @@ The change in altitude (in meters) since the first reported event.
 var relativeAltitude: NSNumber { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSNumber * relativeAltitude;
+```
+
 #### Discussion
 
 For the first altitude event delivered to your altimeter object, the value of this property is `0`. Subsequent events contain a number that reflects the relative change in altitude with respect to the first reported event. For example, if the altitude changed five meters between the first and second events, the value in this property is `5` for the second event.
 
 ## See Also
 
-- [var pressure: NSNumber](cmaltitudedata/pressure.md)
+### Getting the Altitude Data
+- [var pressure: NSNumber](./pressure.md)
   The recorded pressure, in kilopascals.
 
 

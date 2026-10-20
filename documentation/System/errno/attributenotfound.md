@@ -1,7 +1,8 @@
 # attributeNotFound
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Attribute not found.
 
@@ -22,7 +23,7 @@ static var attributeNotFound: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,25 +33,26 @@ The corresponding C error is `ENOATTR`.
 
 ## See Also
 
-- [static var badFileDescriptor: Errno](errno/badfiledescriptor.md)
+### File and Directory Errors
+- [static var badFileDescriptor: Errno](./badfiledescriptor.md)
   Bad file descriptor.
-- [static var fileExists: Errno](errno/fileexists.md)
+- [static var fileExists: Errno](./fileexists.md)
   File exists.
-- [static var fileTooLarge: Errno](errno/filetoolarge.md)
+- [static var fileTooLarge: Errno](./filetoolarge.md)
   The file is too large.
-- [static var improperLink: Errno](errno/improperlink.md)
+- [static var improperLink: Errno](./improperlink.md)
   Improper link.
-- [static var isDirectory: Errno](errno/isdirectory.md)
+- [static var isDirectory: Errno](./isdirectory.md)
   Is a directory.
-- [static var noLocks: Errno](errno/nolocks.md)
+- [static var noLocks: Errno](./nolocks.md)
   No locks available.
-- [static var noSuchFileOrDirectory: Errno](errno/nosuchfileordirectory.md)
+- [static var noSuchFileOrDirectory: Errno](./nosuchfileordirectory.md)
   No such file or directory.
-- [static var notDirectory: Errno](errno/notdirectory.md)
+- [static var notDirectory: Errno](./notdirectory.md)
   Not a directory.
-- [static var permissionDenied: Errno](errno/permissiondenied.md)
+- [static var permissionDenied: Errno](./permissiondenied.md)
   Permission denied.
-- [static var textFileBusy: Errno](errno/textfilebusy.md)
+- [static var textFileBusy: Errno](./textfilebusy.md)
   Text file busy.
 
 

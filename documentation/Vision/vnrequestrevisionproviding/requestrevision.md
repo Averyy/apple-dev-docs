@@ -2,9 +2,10 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
-The revision of the [`VNRequest`](vnrequest.md) subclass used to generate the implementing object.
+The revision of the [`VNRequest`](../vnrequest.md) subclass used to generate the implementing object.
 
 **Availability**:
 - iOS 12.0+
@@ -18,6 +19,10 @@ The revision of the [`VNRequest`](vnrequest.md) subclass used to generate the im
 
 ```swift
 var requestRevision: Int { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) NSUInteger requestRevision;
 ```
 
 

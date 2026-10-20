@@ -1,7 +1,8 @@
 # CPSessionConfiguration
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides vehicle properties and configuration for the CarPlay environment.
 
@@ -16,6 +17,10 @@ An object that provides vehicle properties and configuration for the CarPlay env
 class CPSessionConfiguration
 ```
 
+```objc
+@interface CPSessionConfiguration : NSObject
+```
+
 #### Overview
 
 You use a session configuration to determine any user interface limits the vehicle imposes, such as keyboard display and list length, and the content style the vehicle selects according to the ambient light level.
@@ -23,52 +28,53 @@ You use a session configuration to determine any user interface limits the vehic
 ## Topics
 
 ### Creating a Session Configuration
-- [init(delegate: any CPSessionConfigurationDelegate)](cpsessionconfiguration/init(delegate:).md)
+- [init(delegate: any CPSessionConfigurationDelegate)](./cpsessionconfiguration/init%28delegate%29.md)
   Creates a session configuration with a delegate.
-- [protocol CPSessionConfigurationDelegate](cpsessionconfigurationdelegate.md)
+- [protocol CPSessionConfigurationDelegate](./cpsessionconfigurationdelegate.md)
   A protocol for receiving notifications about changes to vehicle properties and configuration.
 ### Managing the Delegate
-- [var delegate: (any CPSessionConfigurationDelegate)?](cpsessionconfiguration/delegate.md)
+- [var delegate: (any CPSessionConfigurationDelegate)?](./cpsessionconfiguration/delegate.md)
   An object that serves as the delegate to the session configuration.
 ### Getting the Content Style
-- [var contentStyle: CPContentStyle](cpsessionconfiguration/contentstyle.md)
+- [var contentStyle: CPContentStyle](./cpsessionconfiguration/contentstyle.md)
   The content style that the vehicle selects.
-- [struct CPContentStyle](cpcontentstyle.md)
+- [struct CPContentStyle](./cpcontentstyle.md)
   The types of content style that the vehicle allows.
 ### Getting the Limits
-- [var limitedUserInterfaces: CPLimitableUserInterface](cpsessionconfiguration/limiteduserinterfaces.md)
+- [var limitedUserInterfaces: CPLimitableUserInterface](./cpsessionconfiguration/limiteduserinterfaces.md)
   A bit mask value that indicates the user interface limits.
-- [struct CPLimitableUserInterface](cplimitableuserinterface.md)
+- [struct CPLimitableUserInterface](./cplimitableuserinterface.md)
   The types of limitable user interface elements.
 ### Instance Properties
-- [var supportsVideoPlayback: Bool](cpsessionconfiguration/supportsvideoplayback.md)
+- [var supportsVideoPlayback: Bool](./cpsessionconfiguration/supportsvideoplayback.md)
   The connected CarPlay system supports video playback.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Requesting CarPlay Entitlements](requesting-carplay-entitlements.md)
+### CarPlay Integration
+- [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md)
   Configure your CarPlay-enabled app with the entitlements it requires.
-- [Displaying Content in CarPlay](displaying-content-in-carplay.md)
+- [Displaying Content in CarPlay](./displaying-content-in-carplay.md)
   Use scenes to present your app’s content on the vehicle’s built-in screen.
-- [Supporting Previous Versions of iOS](supporting-previous-versions-of-ios.md)
+- [Supporting Previous Versions of iOS](./supporting-previous-versions-of-ios.md)
   Make your CarPlay-enabled apps compatible with older system versions, such as iOS 13 and earlier.
-- [Using the CarPlay Simulator](using-the-carplay-simulator.md)
+- [Using the CarPlay Simulator](./using-the-carplay-simulator.md)
   Configure Simulator to run and debug your CarPlay-enabled app.
-- [class CPTemplateApplicationScene](cptemplateapplicationscene.md)
+- [class CPTemplateApplicationScene](./cptemplateapplicationscene.md)
   A CarPlay scene that controls your app’s user interface.
-- [protocol CPTemplateApplicationSceneDelegate](cptemplateapplicationscenedelegate.md)
+- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
   The methods for responding to the life cycle events of your app’s scene.
 
 

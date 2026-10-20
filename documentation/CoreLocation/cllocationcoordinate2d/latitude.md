@@ -1,7 +1,8 @@
 # latitude
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latitude in degrees.
 
@@ -20,13 +21,18 @@ The latitude in degrees.
 var latitude: CLLocationDegrees
 ```
 
+```c
+CLLocationDegrees latitude;
+```
+
 #### Discussion
 
 Positive values indicate latitudes north of the equator. Negative values indicate latitudes south of the equator.
 
 ## See Also
 
-- [var longitude: CLLocationDegrees](cllocationcoordinate2d/longitude.md)
+### Getting the geographic coordinates
+- [var longitude: CLLocationDegrees](./longitude.md)
   The longitude in degrees.
 
 

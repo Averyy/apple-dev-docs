@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes and returns the element at the specified position.
@@ -39,11 +40,17 @@ print(measurements)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
 - `i`: The position of the element to remove. `index` must be a valid index of the collection that is not equal to the collection’s end index.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [func remove(at: Self.Index) -> Self.Element](./remove%28at%29-98ice.md)
+  Removes and returns the element at the specified position.
 
 
 ---

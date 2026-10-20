@@ -1,14 +1,17 @@
 # primaryAngle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the angle the framework highlights if this lane is preferred or good.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
+- iOS 17.4+ - Deprecated in 18.0
+- iPadOS 17.4+ - Deprecated in 18.0
+- Mac Catalyst 17.4+ - Deprecated in 18.0
+
+> **Deprecated**: Use highlightedAngle to get value, use -[CPLane initAngles:highlightedAngle:isPreferred:] to create a CPLane with highlightedAngle set
 
 ## Declaration
 
@@ -16,15 +19,20 @@ A value that represents the angle the framework highlights if this lane is prefe
 var primaryAngle: Measurement<UnitAngle> { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSMeasurement<NSUnitAngle *> * primaryAngle;
+```
+
 #### Discussion
 
-If `primaryAngle` is present it can’t be included in [`secondaryAngles`](cplane/secondaryangles.md).
+If `primaryAngle` is present it can’t be included in [`secondaryAngles`](./secondaryangles.md).
 
 ## See Also
 
-- [var secondaryAngles: [Measurement<UnitAngle>]](cplane/secondaryangles.md)
+### Properties
+- [var secondaryAngles: [Measurement<UnitAngle>]](./secondaryangles.md)
   A list of the remaining angles of this lane guidance.
-- [var status: CPLaneStatus](cplane/status.md)
+- [var status: CPLaneStatus](./status.md)
   A value that describes the lane’s status.
 
 

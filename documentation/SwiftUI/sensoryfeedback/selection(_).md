@@ -1,7 +1,8 @@
 # selection(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Plays feedback in response to a specific UI element’s values changing.
 

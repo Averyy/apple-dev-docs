@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replace an identified action with menu elements.
@@ -17,6 +18,10 @@ Replace an identified action with menu elements.
 
 ```swift
 func replace(action replacedIdentifier: UIAction.Identifier, with replacementElements: [UIMenuElement])
+```
+
+```objc
+- (void) replaceActionForIdentifier:(UIActionIdentifier) replacedIdentifier withElements:(NSArray<UIMenuElement *> *) replacementElements;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # CMBlockBuffer.Flags
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines feature and control flags.
 
@@ -23,27 +24,28 @@ struct Flags
 ## Topics
 
 ### Type Properties
-- [static let alwaysCopyData: CMBlockBuffer.Flags](cmblockbuffer/flags/alwayscopydata.md)
-- [static let assureMemoryNow: CMBlockBuffer.Flags](cmblockbuffer/flags/assurememorynow.md)
-- [static let dontOptimizeDepth: CMBlockBuffer.Flags](cmblockbuffer/flags/dontoptimizedepth.md)
-- [static let permitEmptyReference: CMBlockBuffer.Flags](cmblockbuffer/flags/permitemptyreference.md)
+- [static let alwaysCopyData: CMBlockBuffer.Flags](./flags/alwayscopydata.md)
+- [static let assureMemoryNow: CMBlockBuffer.Flags](./flags/assurememorynow.md)
+- [static let dontOptimizeDepth: CMBlockBuffer.Flags](./flags/dontoptimizedepth.md)
+- [static let permitEmptyReference: CMBlockBuffer.Flags](./flags/permitemptyreference.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [CMBlockBuffer.Error](cmblockbuffer/error.md)
+### Data Types
+- [CMBlockBuffer.Error](./error.md)
   A structure that defines block buffer errors.
-- [CMBlockBuffer.Slice](cmblockbuffer/slice.md)
+- [CMBlockBuffer.Slice](./slice.md)
   A slice of a `CMBlockBuffer` instance.
 
 

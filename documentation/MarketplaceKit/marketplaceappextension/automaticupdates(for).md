@@ -2,6 +2,7 @@
 
 **Framework**: MarketplaceKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:

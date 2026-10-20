@@ -1,7 +1,8 @@
 # init(validation:maxIterations:l1Penalty:l2Penalty:stepSize:convergenceThreshold:featureRescaling:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -19,9 +20,10 @@ init(validation: MLLinearRegressor.ModelParameters.ValidationData, maxIterations
 
 ## See Also
 
-- [init(validationData: MLDataTable?, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](mllinearregressor/modelparameters-swift.struct/init(validationdata:maxiterations:l1penalty:l2penalty:stepsize:convergencethreshold:featurerescaling:).md)
+### Creating parameters
+- [init(validationData: MLDataTable?, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](./init%28validationdata,maxiterations,l1penalty,l2penalty,stepsize,convergencethreshold,featurerescaling%29.md)
   Creates a new set of parameters.
-- [MLLinearRegressor.ModelParameters.ValidationData](mllinearregressor/modelparameters-swift.struct/validationdata-swift.enum.md)
+- [MLLinearRegressor.ModelParameters.ValidationData](./validationdata-swift.enum.md)
   Values for specifying validation data.
 
 

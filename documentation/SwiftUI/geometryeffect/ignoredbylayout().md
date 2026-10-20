@@ -1,7 +1,8 @@
 # ignoredByLayout()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an effect that produces the same geometry transform as this effect, but only applies the transform while rendering its view.
 
@@ -27,7 +28,8 @@ Use this method to disable layout changes during transitions. The view ignores t
 
 ## See Also
 
-- [func effectValue(size: CGSize) -> ProjectionTransform](geometryeffect/effectvalue(size:).md)
+### Applying effects
+- [func effectValue(size: CGSize) -> ProjectionTransform](./effectvalue%28size%29.md)
   Returns the current value of the effect.
 
 

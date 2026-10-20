@@ -1,7 +1,8 @@
 # MarkupError
 
 **Framework**: PaperKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error thrown for encoding / decoding data models.
 
@@ -21,21 +22,21 @@ enum MarkupError
 ## Topics
 
 ### Handling error cases
-- [MarkupError.incorrectFormat](markuperror/incorrectformat.md)
+- [MarkupError.incorrectFormat](./markuperror/incorrectformat.md)
   Incorrect format or header.
-- [MarkupError.malformedData](markuperror/malformeddata.md)
+- [MarkupError.malformedData](./markuperror/malformeddata.md)
   The binary data was malformed in some way.
-- [MarkupError.incompatibleFormatTooNew](markuperror/incompatibleformattoonew.md)
+- [MarkupError.incompatibleFormatTooNew](./markuperror/incompatibleformattoonew.md)
   The data being decoded has a newer format that cannot be decoded.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

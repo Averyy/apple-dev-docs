@@ -1,7 +1,8 @@
 # handActivationBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Customizes the activation behavior for a gesture when driven by hand or hand-like input.
 
@@ -21,9 +22,9 @@ A new gesture with a preference to activate with the provided behavior.
 
 #### Discussion
 
-Use [`automatic`](handactivationbehavior/automatic.md) to allow a gesture to activate with default system behaviors. Use [`pinch`](handactivationbehavior/pinch.md) when a gesture should only trigger when the hand is pinched.
+Use [`automatic`](../handactivationbehavior/automatic.md) to allow a gesture to activate with default system behaviors. Use [`pinch`](../handactivationbehavior/pinch.md) when a gesture should only trigger when the hand is pinched.
 
-For example, in a 3D chess application, a [`DragGesture`](draggesture.md) that enables movement of the pieces could use the pinch behavior to ensure that piece movement is only possible when a hand is pinched in order to avoid pushing the piece around by only touching it:
+For example, in a 3D chess application, a [`DragGesture`](../draggesture.md) that enables movement of the pieces could use the pinch behavior to ensure that piece movement is only possible when a hand is pinched in order to avoid pushing the piece around by only touching it:
 
 ```swift
 Model3D(named: "Pawn")

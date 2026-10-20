@@ -1,7 +1,8 @@
 # imageSize
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The size of an image.
 
@@ -10,13 +11,18 @@ The size of an image.
 
 ## Declaration
 
-```swift
+```
 string imageSize
 ```
 
+## Possible Values
+
+- `FULL_SIZE`: 3840 pixels in width, and from 160 to 2160 pixels in height, inclusive.
+- `BULLET_POINT`: 1024 by 1024 pixels, to use for bullet points only.
+
 ## Mentions
 
-- [Retention Messaging API changelog](retention-messaging-changelog.md)
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
 
 
@@ -28,15 +34,16 @@ Specify the `FULL_SIZE` image size when you upload an image to appear above the 
 
 Specify the `BULLET_POINT` size when you upload an image to use as a bullet point icon.
 
-For more information, see [`Upload Image`](upload-image.md) and [`BulletPoint`](bulletpoint.md).
+For more information, see [`Upload Image`](./upload-image.md) and [`BulletPoint`](./bulletpoint.md).
 
 ## See Also
 
-- [type imageIdentifier](imageidentifier.md)
+### Images
+- [type imageIdentifier](./imageidentifier.md)
   A unique identifier for an image that you provide when you upload the image.
-- [type imageState](imagestate.md)
+- [type imageState](./imagestate.md)
   The approval state of an image.
-- [type altText](alttext.md)
+- [type altText](./alttext.md)
   The alternative text for a corresponding image.
 
 

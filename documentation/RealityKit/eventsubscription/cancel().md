@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the event subscription.
 

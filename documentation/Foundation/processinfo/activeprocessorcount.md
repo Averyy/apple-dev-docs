@@ -1,7 +1,8 @@
 # activeProcessorCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of active processing cores available on the computer.
 
@@ -20,23 +21,28 @@ The number of active processing cores available on the computer.
 var activeProcessorCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger activeProcessorCount;
+```
+
 #### Discussion
 
-Whereas the [`processorCount`](processinfo/processorcount.md) property reports the number of advertised processing cores, the [`activeProcessorCount`](processinfo/activeprocessorcount.md) property reflects the actual number of active processing cores on the system. There are a number of different factors that may cause a core to not be active, including boot arguments, thermal throttling, or a manufacturing defect.
+Whereas the [`processorCount`](./processorcount.md) property reports the number of advertised processing cores, the [`activeProcessorCount`](./activeprocessorcount.md) property reflects the actual number of active processing cores on the system. There are a number of different factors that may cause a core to not be active, including boot arguments, thermal throttling, or a manufacturing defect.
 
 This property value is equal to the result of entering the command `sysctl -n hw.logicalcpu` on the current system.
 
 ## See Also
 
-- [var processorCount: Int](processinfo/processorcount.md)
+### Getting computer information
+- [var processorCount: Int](./processorcount.md)
   The number of processing cores available on the computer.
-- [var physicalMemory: UInt64](processinfo/physicalmemory.md)
+- [var physicalMemory: UInt64](./physicalmemory.md)
   The amount of physical memory on the computer in bytes.
-- [func isDeviceCertified(for: NSDeviceCertification) -> Bool](processinfo/isdevicecertified(for:).md)
+- [func isDeviceCertified(for: NSDeviceCertification) -> Bool](./isdevicecertified%28for%29.md)
   Indicates whether the device supports the requested performance tier.
-- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](processinfo/hasperformanceprofile(_:).md)
+- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](./hasperformanceprofile%28_%29.md)
   Indicates whether an app is running under a known performance profile.
-- [var systemUptime: TimeInterval](processinfo/systemuptime.md)
+- [var systemUptime: TimeInterval](./systemuptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 
 

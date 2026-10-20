@@ -1,7 +1,8 @@
 # quaternaryTextColor
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The final posttertiary text color to use when displaying the background color.
 

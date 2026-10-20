@@ -1,7 +1,8 @@
 # .!(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 A vector mask that is the pointwise logical negation of the input.
 
@@ -19,6 +20,8 @@ A vector mask that is the pointwise logical negation of the input.
 ```swift
 static func .! (a: SIMDMask<Storage>) -> SIMDMask<Storage>
 ```
+
+Available when `Storage` conforms to `SIMD`, `Storage.Scalar` conforms to `FixedWidthInteger`, and `Storage.Scalar` conforms to `SignedInteger`.
 
 #### Discussion
 

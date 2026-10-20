@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a binding to the resulting value of a given key path.
 
@@ -58,9 +59,10 @@ struct PlayerView: View {
 
 ## See Also
 
-- [var wrappedValue: Value](binding/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: Value](./wrappedvalue.md)
   The underlying value referenced by the binding variable.
-- [var projectedValue: Binding<Value>](binding/projectedvalue.md)
+- [var projectedValue: Binding<Value>](./projectedvalue.md)
   A projection of the binding value that returns a binding.
 
 

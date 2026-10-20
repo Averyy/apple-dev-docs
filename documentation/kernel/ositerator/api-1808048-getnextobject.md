@@ -7,11 +7,11 @@ Advances to and returns the next object in the iteration.
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSObject *getNextObject() = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 The next object in the iteration context, `NULL` if there is no next object or if the iterator is no longer valid.
 
@@ -23,9 +23,10 @@ Subclasses must implement this pure virtual function to check for validity with 
 
 ## See Also
 
-- [isValid](ositerator/1808063-isvalid.md)
+### Miscellaneous
+- [isValid](./api-1808063-isvalid.md)
   Check that the collection hasn't been modified during iteration.
-- [reset](ositerator/1808074-reset.md)
+- [reset](./api-1808074-reset.md)
   Resets the iterator to the beginning of the collection, as if it had just been created.
 
 

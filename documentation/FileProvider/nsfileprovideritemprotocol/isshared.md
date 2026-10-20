@@ -1,7 +1,8 @@
 # isShared
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the item is shared with other users.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the item is shared with other users.
 optional var isShared: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isShared) BOOL shared;
+```
+
 ## See Also
 
-- [var isSharedByCurrentUser: Bool](nsfileprovideritemprotocol/issharedbycurrentuser.md)
+### Sharing
+- [var isSharedByCurrentUser: Bool](./issharedbycurrentuser.md)
   A Boolean value that indicates whether the item was shared by the current user.
-- [var mostRecentEditorNameComponents: PersonNameComponents?](nsfileprovideritemprotocol/mostrecenteditornamecomponents.md)
+- [var mostRecentEditorNameComponents: PersonNameComponents?](./mostrecenteditornamecomponents.md)
   The most recent editor’s name.
-- [var ownerNameComponents: PersonNameComponents?](nsfileprovideritemprotocol/ownernamecomponents.md)
+- [var ownerNameComponents: PersonNameComponents?](./ownernamecomponents.md)
   The name of the item’s owner.
 
 

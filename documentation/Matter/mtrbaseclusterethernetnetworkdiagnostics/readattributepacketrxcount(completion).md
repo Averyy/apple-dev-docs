@@ -1,7 +1,8 @@
 # readAttributePacketRxCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePacketRxCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePacketRxCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePacketRxCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

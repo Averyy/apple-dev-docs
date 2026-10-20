@@ -1,7 +1,8 @@
 # primaryAction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hand gesture shortcut for the primary action.
 

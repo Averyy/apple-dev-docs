@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of why the stacking operation failed.
 

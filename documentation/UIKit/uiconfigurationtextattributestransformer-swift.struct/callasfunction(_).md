@@ -1,7 +1,8 @@
 # callAsFunction(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the transform closure of the text attributes transformer.
 
@@ -10,7 +11,7 @@ Calls the transform closure of the text attributes transformer.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

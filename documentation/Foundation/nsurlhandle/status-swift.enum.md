@@ -1,9 +1,10 @@
 # NSURLHandle.Status
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These following constants are defined by `NSURLHandle` and are returned by [`status`](nsurlhandle/status-c.method.md).
+These following constants are defined by `NSURLHandle` and are returned by [`status`](./status-c.method.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,29 +16,33 @@ These following constants are defined by `NSURLHandle` and are returned by [`sta
 enum Status
 ```
 
+```c
+enum NSURLHandleStatus : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSURLHandle.Status.notLoaded](nsurlhandle/status-swift.enum/notloaded.md)
+- [NSURLHandle.Status.notLoaded](./status-swift.enum/notloaded.md)
   The resource data has not been loaded.
-- [NSURLHandle.Status.loadSucceeded](nsurlhandle/status-swift.enum/loadsucceeded.md)
+- [NSURLHandle.Status.loadSucceeded](./status-swift.enum/loadsucceeded.md)
   The resource data was successfully loaded.
-- [NSURLHandle.Status.loadInProgress](nsurlhandle/status-swift.enum/loadinprogress.md)
+- [NSURLHandle.Status.loadInProgress](./status-swift.enum/loadinprogress.md)
   The resource data is in the process of loading.
-- [NSURLHandle.Status.loadFailed](nsurlhandle/status-swift.enum/loadfailed.md)
+- [NSURLHandle.Status.loadFailed](./status-swift.enum/loadfailed.md)
   The resource data failed to load.
 ### Initializers
-- [init?(rawValue: UInt)](nsurlhandle/status-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./status-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

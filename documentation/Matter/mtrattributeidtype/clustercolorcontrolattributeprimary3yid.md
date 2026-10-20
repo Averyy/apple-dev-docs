@@ -1,7 +1,8 @@
 # clusterColorControlAttributePrimary3YID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterColorControlAttributePrimary3YID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterColorControlAttributePrimary3YID
 ```
 
 

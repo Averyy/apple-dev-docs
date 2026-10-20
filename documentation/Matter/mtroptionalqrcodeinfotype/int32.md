@@ -1,7 +1,8 @@
 # MTROptionalQRCodeInfoType.int32
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case int32
+```
+
+```c
+MTROptionalQRCodeInfoTypeInt32
 ```
 
 

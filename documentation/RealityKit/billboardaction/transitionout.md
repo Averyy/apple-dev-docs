@@ -1,7 +1,8 @@
 # transitionOut
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate of change at the end of the action.
 

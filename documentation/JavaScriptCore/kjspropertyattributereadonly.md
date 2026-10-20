@@ -1,7 +1,8 @@
 # kJSPropertyAttributeReadOnly
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attribute that specifies that a property is read-only.
 
@@ -19,13 +20,18 @@ An attribute that specifies that a property is read-only.
 var kJSPropertyAttributeReadOnly: Int { get }
 ```
 
+```c
+kJSPropertyAttributeReadOnly
+```
+
 ## See Also
 
-- [var kJSPropertyAttributeNone: Int](kjspropertyattributenone.md)
+### Constants
+- [var kJSPropertyAttributeNone: Int](./kjspropertyattributenone.md)
   An attribute that specifies that a property has no special attributes.
-- [var kJSPropertyAttributeDontEnum: Int](kjspropertyattributedontenum.md)
+- [var kJSPropertyAttributeDontEnum: Int](./kjspropertyattributedontenum.md)
   An attribute that specifies that property enumerators and JavaScript for-in loops don’t enumerate a property.
-- [var kJSPropertyAttributeDontDelete: Int](kjspropertyattributedontdelete.md)
+- [var kJSPropertyAttributeDontDelete: Int](./kjspropertyattributedontdelete.md)
   An attribute that specifies that the delete operation fails on a property.
 
 

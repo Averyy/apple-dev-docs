@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CATapDescription that describes the configuration of this tap.
 

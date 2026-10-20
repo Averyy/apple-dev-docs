@@ -1,7 +1,8 @@
 # OSAllocatedUnfairLock
 
 **Framework**: os  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that creates an unfair lock.
 
@@ -11,7 +12,7 @@ A structure that creates an unfair lock.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,11 +24,11 @@ struct OSAllocatedUnfairLock<State>
 
 #### Overview
 
-Unfair locks are low-level locks that block efficiently on contention. They’re useful for protecting code that loads stored resources. However, it’s unsafe to use [`os_unfair_lock`](os_unfair_lock.md) from Swift because it’s a value type and, therefore, doesn’t have a stable memory address. That means when you call [`os_unfair_lock_lock`](os_unfair_lock_lock.md) or [`os_unfair_lock_unlock`](os_unfair_lock_unlock.md) and pass a lock object using the `&` operator, the system may lock or unlock the wrong object.
+Unfair locks are low-level locks that block efficiently on contention. They’re useful for protecting code that loads stored resources. However, it’s unsafe to use [`os_unfair_lock`](./os_unfair_lock.md) from Swift because it’s a value type and, therefore, doesn’t have a stable memory address. That means when you call [`os_unfair_lock_lock`](./os_unfair_lock_lock.md) or [`os_unfair_lock_unlock`](./os_unfair_lock_unlock.md) and pass a lock object using the `&` operator, the system may lock or unlock the wrong object.
 
-Instead, use [`OSAllocatedUnfairLock`](osallocatedunfairlock.md), which avoids that pitfall because it doesn’t function as a value type, despite being a structure. All copied instances of an [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) control the same underlying lock allocation.
+Instead, use [`OSAllocatedUnfairLock`](./osallocatedunfairlock.md), which avoids that pitfall because it doesn’t function as a value type, despite being a structure. All copied instances of an [`OSAllocatedUnfairLock`](./osallocatedunfairlock.md) control the same underlying lock allocation.
 
-> ❗ **Important**:  If you’ve existing Swift code that uses [`os_unfair_lock`](os_unfair_lock.md), change it to use [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) to ensure correct locking behavior.
+> ❗ **Important**:  If you’ve existing Swift code that uses [`os_unfair_lock`](./os_unfair_lock.md), change it to use [`OSAllocatedUnfairLock`](./osallocatedunfairlock.md) to ensure correct locking behavior.
 
 To create a lock that protects operation state, create an enumeration that contains the possible states, then create a lock object, passing the initial state. Here’s an example of what that looks like for an asset load operation:
 
@@ -70,7 +71,7 @@ myLock.withLock {
 }
 ```
 
-You can also use [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) with the more traditional lock/unlock approach by calling [`lock()`](osallocatedunfairlock/lock().md) before executing code that needs protection, and [`unlock()`](osallocatedunfairlock/unlock().md) upon completion, like this:
+You can also use [`OSAllocatedUnfairLock`](./osallocatedunfairlock.md) with the more traditional lock/unlock approach by calling [`lock()`](./osallocatedunfairlock/lock%28%29.md) before executing code that needs protection, and [`unlock()`](./osallocatedunfairlock/unlock%28%29.md) upon completion, like this:
 
 ```swift
 myLock.lock()
@@ -78,55 +79,56 @@ myLock.lock()
 myLock.unlock()
 ```
 
-When using this approach, you must call [`unlock()`](osallocatedunfairlock/unlock().md) from the same thread you use to call [`lock()`](osallocatedunfairlock/lock().md). Because of this, it’s unsafe to use this approach across an `await` suspension point. When using a lock with asynchronous code, lock using a closure or, even better, consider using an [`Actor`](https://developer.apple.com/documentation/swift/actor).
+When using this approach, you must call [`unlock()`](./osallocatedunfairlock/unlock%28%29.md) from the same thread you use to call [`lock()`](./osallocatedunfairlock/lock%28%29.md). Because of this, it’s unsafe to use this approach across an `await` suspension point. When using a lock with asynchronous code, lock using a closure or, even better, consider using an [`Actor`](../Swift/actor.md).
 
-> ⚠️ **Warning**:  [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) isn’t a recursive lock. Attempting to lock an object more than once from the same thread without unlocking in between triggers a runtime exception.
+> ⚠️ **Warning**:  [`OSAllocatedUnfairLock`](./osallocatedunfairlock.md) isn’t a recursive lock. Attempting to lock an object more than once from the same thread without unlocking in between triggers a runtime exception.
 
 ## Topics
 
 ### Creating a lock object
-- [init()](osallocatedunfairlock/init.md)
+- [init()](./osallocatedunfairlock/init%28%29.md)
   Creates a lock object that doesn’t protect state data.
-- [init(initialState: State)](osallocatedunfairlock/init(initialstate:).md)
+- [init(initialState: State)](./osallocatedunfairlock/init%28initialstate%29.md)
   Creates a lock object that maintains and protects state data.
 ### Using locks
-- [func lock()](osallocatedunfairlock/lock.md)
+- [func lock()](./osallocatedunfairlock/lock%28%29.md)
   Acquires a lock.
-- [func lockIfAvailable() -> Bool](osallocatedunfairlock/lockifavailable.md)
+- [func lockIfAvailable() -> Bool](./osallocatedunfairlock/lockifavailable%28%29.md)
   Attempts to acquire a lock.
-- [func unlock()](osallocatedunfairlock/unlock.md)
+- [func unlock()](./osallocatedunfairlock/unlock%28%29.md)
   Ends the lock.
 ### Determining lock ownership
-- [OSAllocatedUnfairLock.Ownership](osallocatedunfairlock/ownership.md)
+- [OSAllocatedUnfairLock.Ownership](./osallocatedunfairlock/ownership.md)
   An enumeration that represents the ownership status of an unfair lock.
-- [func precondition(OSAllocatedUnfairLock<State>.Ownership)](osallocatedunfairlock/precondition(_:).md)
+- [func precondition(OSAllocatedUnfairLock<State>.Ownership)](./osallocatedunfairlock/precondition%28_%29.md)
   Asserts if the lock object fails to meet specified ownership requirements.
 ### Initializers
-- [init(uncheckedState: State)](osallocatedunfairlock/init(uncheckedstate:).md)
+- [init(uncheckedState: State)](./osallocatedunfairlock/init%28uncheckedstate%29.md)
 ### Instance Methods
-- [func lock(flags: OSAllocatedUnfairLockFlags)](osallocatedunfairlock/lock(flags:).md)
-- [func withLock<R>((inout State) throws -> R) rethrows -> R](osallocatedunfairlock/withlock(_:)-1uy7m.md)
-- [func withLock<R>(() throws -> R) rethrows -> R](osallocatedunfairlock/withlock(_:)-hple.md)
-- [func withLock<R>(flags: OSAllocatedUnfairLockFlags, (inout State) throws -> R) rethrows -> R](osallocatedunfairlock/withlock(flags:_:)-1ub4c.md)
-- [func withLock<R>(flags: OSAllocatedUnfairLockFlags, () throws -> R) rethrows -> R](osallocatedunfairlock/withlock(flags:_:)-u2xj.md)
-- [func withLockIfAvailable<R>(() throws -> R) rethrows -> R?](osallocatedunfairlock/withlockifavailable(_:)-1rp3w.md)
-- [func withLockIfAvailable<R>((inout State) throws -> R) rethrows -> R?](osallocatedunfairlock/withlockifavailable(_:)-3kw0o.md)
-- [func withLockIfAvailableUnchecked<R>((inout State) throws -> R) rethrows -> R?](osallocatedunfairlock/withlockifavailableunchecked(_:)-15q0y.md)
-- [func withLockIfAvailableUnchecked<R>(() throws -> R) rethrows -> R?](osallocatedunfairlock/withlockifavailableunchecked(_:)-6gji7.md)
-- [func withLockUnchecked<R>((inout State) throws -> R) rethrows -> R](osallocatedunfairlock/withlockunchecked(_:)-7qywq.md)
-- [func withLockUnchecked<R>(() throws -> R) rethrows -> R](osallocatedunfairlock/withlockunchecked(_:)-9v03m.md)
-- [func withLockUnchecked<R>(flags: OSAllocatedUnfairLockFlags, (inout State) throws -> R) rethrows -> R](osallocatedunfairlock/withlockunchecked(flags:_:)-8cv64.md)
-- [func withLockUnchecked<R>(flags: OSAllocatedUnfairLockFlags, () throws -> R) rethrows -> R](osallocatedunfairlock/withlockunchecked(flags:_:)-9iq8s.md)
+- [func lock(flags: OSAllocatedUnfairLockFlags)](./osallocatedunfairlock/lock%28flags%29.md)
+- [func withLock<R>((inout State) throws -> R) rethrows -> R](./osallocatedunfairlock/withlock%28_%29-1uy7m.md)
+- [func withLock<R>(() throws -> R) rethrows -> R](./osallocatedunfairlock/withlock%28_%29-hple.md)
+- [func withLock<R>(flags: OSAllocatedUnfairLockFlags, (inout State) throws -> R) rethrows -> R](./osallocatedunfairlock/withlock%28flags,_%29-1ub4c.md)
+- [func withLock<R>(flags: OSAllocatedUnfairLockFlags, () throws -> R) rethrows -> R](./osallocatedunfairlock/withlock%28flags,_%29-u2xj.md)
+- [func withLockIfAvailable<R>(() throws -> R) rethrows -> R?](./osallocatedunfairlock/withlockifavailable%28_%29-1rp3w.md)
+- [func withLockIfAvailable<R>((inout State) throws -> R) rethrows -> R?](./osallocatedunfairlock/withlockifavailable%28_%29-3kw0o.md)
+- [func withLockIfAvailableUnchecked<R>((inout State) throws -> R) rethrows -> R?](./osallocatedunfairlock/withlockifavailableunchecked%28_%29-15q0y.md)
+- [func withLockIfAvailableUnchecked<R>(() throws -> R) rethrows -> R?](./osallocatedunfairlock/withlockifavailableunchecked%28_%29-6gji7.md)
+- [func withLockUnchecked<R>((inout State) throws -> R) rethrows -> R](./osallocatedunfairlock/withlockunchecked%28_%29-7qywq.md)
+- [func withLockUnchecked<R>(() throws -> R) rethrows -> R](./osallocatedunfairlock/withlockunchecked%28_%29-9v03m.md)
+- [func withLockUnchecked<R>(flags: OSAllocatedUnfairLockFlags, (inout State) throws -> R) rethrows -> R](./osallocatedunfairlock/withlockunchecked%28flags,_%29-8cv64.md)
+- [func withLockUnchecked<R>(flags: OSAllocatedUnfairLockFlags, () throws -> R) rethrows -> R](./osallocatedunfairlock/withlockunchecked%28flags,_%29-9iq8s.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct OSAllocatedUnfairLockFlags](osallocatedunfairlockflags.md)
+### Swift Wrappers
+- [struct OSAllocatedUnfairLockFlags](./osallocatedunfairlockflags.md)
 
 
 ---

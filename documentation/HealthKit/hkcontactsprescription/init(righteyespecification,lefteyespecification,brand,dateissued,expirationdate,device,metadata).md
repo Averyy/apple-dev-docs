@@ -1,7 +1,8 @@
 # init(rightEyeSpecification:leftEyeSpecification:brand:dateIssued:expirationDate:device:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new glasses prescription sample.
 
@@ -17,6 +18,10 @@ Creates a new glasses prescription sample.
 
 ```swift
 convenience init(rightEyeSpecification: HKContactsLensSpecification?, leftEyeSpecification: HKContactsLensSpecification?, brand: String, dateIssued: Date, expirationDate: Date?, device: HKDevice?, metadata: [String : Any]?)
+```
+
+```objc
++ (instancetype) prescriptionWithRightEyeSpecification:(HKContactsLensSpecification *) rightEyeSpecification leftEyeSpecification:(HKContactsLensSpecification *) leftEyeSpecification brand:(NSString *) brand dateIssued:(NSDate *) dateIssued expirationDate:(NSDate *) expirationDate device:(HKDevice *) device metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
 ## Parameters

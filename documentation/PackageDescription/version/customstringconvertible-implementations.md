@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: PackageDescription
+**Framework**: PackageDescription  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](version/description.md)
+- [var description: String](./description.md)
   A textual description of the version object.
 
 

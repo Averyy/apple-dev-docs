@@ -1,7 +1,8 @@
 # isDetached
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window created by a popover’s detachment is automatically created.
 
@@ -14,21 +15,26 @@ A Boolean value that indicates whether the window created by a popover’s detac
 var isDetached: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isDetached) BOOL detached;
+```
+
 #### Discussion
 
-When [`isDetached`](nspopover/isdetached.md) is [`true`](https://developer.apple.com/documentation/swift/true), the detached window is automatically created. This property does not apply when detaching a popover results in a window returned by [`detachableWindow(for:)`](nspopoverdelegate/detachablewindow(for:).md).
+When [`isDetached`](./isdetached.md) is [`true`](../../Swift/true.md), the detached window is automatically created. This property does not apply when detaching a popover results in a window returned by [`detachableWindow(for:)`](../nspopoverdelegate/detachablewindow%28for%29.md).
 
 ## See Also
 
-- [var appearance: NSAppearance?](nspopover/appearance-swift.property.md)
+### Managing a Popover’s Appearance
+- [var appearance: NSAppearance?](./appearance-swift.property.md)
   The appearance of the popover.
-- [var effectiveAppearance: NSAppearance](nspopover/effectiveappearance.md)
+- [var effectiveAppearance: NSAppearance](./effectiveappearance.md)
   The appearance that will be used when the popover is displayed onscreen.
-- [var animates: Bool](nspopover/animates.md)
+- [var animates: Bool](./animates.md)
   Specifies if the popover is to be animated.
-- [var contentSize: NSSize](nspopover/contentsize.md)
+- [var contentSize: NSSize](./contentsize.md)
   The content size of the popover.
-- [var isShown: Bool](nspopover/isshown.md)
+- [var isShown: Bool](./isshown.md)
   The display state of the popover.
 
 

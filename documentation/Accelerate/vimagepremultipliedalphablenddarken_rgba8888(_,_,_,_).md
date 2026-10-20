@@ -1,7 +1,8 @@
 # vImagePremultipliedAlphaBlendDarken_RGBA8888(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers using the darken blend mode.
 
@@ -20,13 +21,17 @@ Performs alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers usin
 func vImagePremultipliedAlphaBlendDarken_RGBA8888(_ srcTop: UnsafePointer<vImage_Buffer>, _ srcBottom: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImagePremultipliedAlphaBlendDarken_RGBA8888(const vImage_Buffer *srcTop, const vImage_Buffer *srcBottom, const vImage_Buffer *dest, vImage_Flags flags);
+```
+
 ## Mentions
 
-- [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
+- [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -45,20 +50,22 @@ uint8_t alpha =  srcTopAlpha + ((255 - srcTopAlpha) * srcBottomAlpha + 127)/255;
 
 - `srcTop`: The vImage buffer that provides the source top image.
 - `srcBottom`: The vImage buffer that provides the source bottom image.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
+### Related Documentation
+- [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
   Combine two images by using blend modes to create a single output.
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [func vImagePremultipliedAlphaBlendLighten_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultipliedalphablendlighten_rgba8888(_:_:_:_:).md)
+### Performing premultiplied alpha compositing with blend modes
+- [func vImagePremultipliedAlphaBlendLighten_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagepremultipliedalphablendlighten_rgba8888%28_,_,_,_%29.md)
   Performs alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers using the lighten blend mode.
-- [func vImagePremultipliedAlphaBlendScreen_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultipliedalphablendscreen_rgba8888(_:_:_:_:).md)
+- [func vImagePremultipliedAlphaBlendScreen_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagepremultipliedalphablendscreen_rgba8888%28_,_,_,_%29.md)
   Performs alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers using the screen blend mode.
-- [func vImagePremultipliedAlphaBlendMultiply_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagepremultipliedalphablendmultiply_rgba8888(_:_:_:_:).md)
+- [func vImagePremultipliedAlphaBlendMultiply_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagepremultipliedalphablendmultiply_rgba8888%28_,_,_,_%29.md)
   Performs alpha compositing of two 8-bit-per-channel, 4-channel BGRA buffers using the multiply blend mode.
 
 

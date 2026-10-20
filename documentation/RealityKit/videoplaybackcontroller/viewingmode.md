@@ -1,7 +1,8 @@
 # VideoPlaybackController.ViewingMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for viewing video playback.
 
@@ -22,28 +23,29 @@ enum ViewingMode
 ## Topics
 
 ### Enumeration Cases
-- [VideoPlaybackController.ViewingMode.mono](videoplaybackcontroller/viewingmode/mono.md)
+- [VideoPlaybackController.ViewingMode.mono](./viewingmode/mono.md)
   A viewing mode that presents video in monoscopic mode.
-- [VideoPlaybackController.ViewingMode.stereo](videoplaybackcontroller/viewingmode/stereo.md)
+- [VideoPlaybackController.ViewingMode.stereo](./viewingmode/stereo.md)
   A viewing mode that presents video in stereoscopic mode, if it’s available.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct VideoPlayerComponent](videoplayercomponent.md)
+### Video player configurations
+- [struct VideoPlayerComponent](../videoplayercomponent.md)
   A component that supports general video-playback experience with an AV player.
-- [VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/immersiveviewingmode-swift.enum.md)
+- [VideoPlayerComponent.ImmersiveViewingMode](../videoplayercomponent/immersiveviewingmode-swift.enum.md)
   Options for viewing the video during immersive-media playback.
-- [struct VideoMaterial](videomaterial.md)
+- [struct VideoMaterial](../videomaterial.md)
   A material that supports animated textures.
-- [class VideoPlaybackController](videoplaybackcontroller.md)
+- [class VideoPlaybackController](../videoplaybackcontroller.md)
   An object that controls the playback of video for a video material.
 
 

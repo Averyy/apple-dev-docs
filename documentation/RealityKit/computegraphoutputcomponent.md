@@ -1,7 +1,8 @@
 # ComputeGraphOutputComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transient component that identifies the compute graph output associated with an entity.
 
@@ -25,14 +26,14 @@ The system attaches this component to child entities that represent individual g
 ## Topics
 
 ### Instance Properties
-- [var outputID: ComputeNodeGraph.NodeID](computegraphoutputcomponent/outputid.md)
+- [var outputID: ComputeNodeGraph.NodeID](./computegraphoutputcomponent/outputid.md)
   The identifier of the output node in the compute graph that this entity represents.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [TransientComponent](transientcomponent.md)
+- [Component](./component.md)
+- [TransientComponent](./transientcomponent.md)
 
 
 ---

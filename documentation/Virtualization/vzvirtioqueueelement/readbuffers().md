@@ -1,7 +1,8 @@
 # readBuffers()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the remaining read buffers memory represented as an array of data.
 
@@ -14,13 +15,17 @@ Gets the remaining read buffers memory represented as an array of data.
 func readBuffers() -> [Data]
 ```
 
+```objc
+- (NSArray<NSData *> *) readBuffers;
+```
+
 #### Return Value
 
-An array of [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that represents the remaining read buffers memory.
+An array of [`NSData`](../../Foundation/nsdata.md) object that represents the remaining read buffers memory.
 
 #### Discussion
 
-This method gets the remaining read buffers memory, after calling this method, [`readBuffersAvailableByteCount`](vzvirtioqueueelement/readbuffersavailablebytecount.md) will be zero, behaving as if you have read all of the read buffers available in the [`VZVirtioQueueElement`](vzvirtioqueueelement.md).
+This method gets the remaining read buffers memory, after calling this method, [`readBuffersAvailableByteCount`](./readbuffersavailablebytecount.md) will be zero, behaving as if you have read all of the read buffers available in the [`VZVirtioQueueElement`](../vzvirtioqueueelement.md).
 
 Here, the memory is represented as scatter-gather buffers directly referencing guest memory without any extra copy.
 

@@ -1,6 +1,7 @@
 # Timed metadata sample data format
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 A concatenation of one or more atoms that structure a timed metadata media sample.
 
@@ -12,15 +13,15 @@ If no value for a particular key is present in the timed metadata media sample a
 
 > **Note**: All metadata samples are marked as sync samples.
 
-If no values for any key are present for a time range, one approach is to include a `“NULL”` or unreferenced metadata media sample (see Unreferenced or `NULL` timed metadata sample data in [`Constant-size timed metadata sample data`](constant-size_timed_metadata_sample_data.md)) for the time range. A zero-byte timed metadata media sample cannot be used because all sample sizes must be one or more bytes. Alternatively, “empty edit” track edit list entries could be used to indicate there is no metadata for a range of movie time.
+If no values for any key are present for a time range, one approach is to include a `“NULL”` or unreferenced metadata media sample (see Unreferenced or `NULL` timed metadata sample data in [Constant-size timed metadata sample data](./constant-size_timed_metadata_sample_data.md)) for the time range. A zero-byte timed metadata media sample cannot be used because all sample sizes must be one or more bytes. Alternatively, “empty edit” track edit list entries could be used to indicate there is no metadata for a range of movie time.
 
 In general, however, it is preferable to include a NULL metadata media sample data instead of using a track edit with an empty edit list to indicate the absence of metadata. Some readers may be unprepared for complex edits (more than one edit list entry and/or a non-contiguous presentation media time).
 
-#### Timed Metadata Media Sample Structure
+#### Timed metadata media sample structure
 
 The timed metadata media sample data consists of some number of concatenated atoms. A `local_key_id` value defines the atom type for each of the atoms. The `local_key_id` value corresponds to a `local_key_id` defined for a metadata key atom in the metadata key table atom for the timed metadata sample. No special interpretation is made regarding the 32-bit value of `local_key_id`. Its interpretation is based solely on what is defined in the corresponding metadata key of the associated metadata sample description.
 
-The `local_key_id` value `0` is reserved and can be used as a placeholder atom in the media sample. Such an atom has no prescribed contents. (See [`Metadata key atom`](metadata_key_atom.md).)
+The `local_key_id` value `0` is reserved and can be used as a placeholder atom in the media sample. Such an atom has no prescribed contents. (See [`Metadata key atom`](./metadata_key_atom.md).)
 
 The `local_key_id` value `0xFFFFFFFF` is also reserved. In the future, this may be documented to hold a particular payload. This `local_key_id` should not be used or interpreted otherwise. If a reader finds an atom with `local_key_id` of `0xFFFFFFFF` and does not understand its format, the atom should be ignored.
 
@@ -32,15 +33,16 @@ Consider the metadata format for a geographic point location using coordinates a
 
 ## See Also
 
-- [Overview of timed metadata](overview_of_timed_metadata.md)
+### Storing timed metadata media
+- [Overview of timed metadata](./overview_of_timed_metadata.md)
   Synchronize metadata references to media tracks for particular media time periods with timed metadata.
-- [Timed metadata sample description](timed_metadata_sample_descriptions.md)
+- [Timed metadata sample description](./timed_metadata_sample_descriptions.md)
   An atom that defines how to interpret timed metadata media samples.
-- [Constant-size timed metadata sample data](constant-size_timed_metadata_sample_data.md)
+- [Constant-size timed metadata sample data](./constant-size_timed_metadata_sample_data.md)
   Create metadata tracks with samples that have the same size.
-- [Combining multiple streams of metadata into the same track](combining_multiple_streams_of_metadata_into_the_same_track.md)
+- [Combining multiple streams of metadata into the same track](./combining_multiple_streams_of_metadata_into_the_same_track.md)
   Introduce new metadata samples with the union of all metadata values from combined tracks.
-- [Movie-level relationships among tracks](movie-level_relationships_among_tracks.md)
+- [Movie-level relationships among tracks](./movie-level_relationships_among_tracks.md)
   Handling tracks with more than one associated metadata track.
 
 

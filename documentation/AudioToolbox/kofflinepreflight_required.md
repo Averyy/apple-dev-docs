@@ -1,10 +1,11 @@
 # kOfflinePreflight_Required
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kOfflinePreflight_Required: Int { get }
 ```
 
+```c
+kOfflinePreflight_Required
+```
+
 ## See Also
 
-- [var kOfflinePreflight_NotRequired: Int](kofflinepreflight_notrequired.md)
-- [var kOfflinePreflight_Optional: Int](kofflinepreflight_optional.md)
+### Constants
+- [var kOfflinePreflight_NotRequired: Int](./kofflinepreflight_notrequired.md)
+- [var kOfflinePreflight_Optional: Int](./kofflinepreflight_optional.md)
 
 
 ---

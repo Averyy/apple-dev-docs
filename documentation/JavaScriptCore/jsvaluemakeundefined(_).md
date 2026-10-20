@@ -1,7 +1,8 @@
 # JSValueMakeUndefined(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript value of the undefined type.
 
@@ -19,6 +20,10 @@ Creates a JavaScript value of the undefined type.
 func JSValueMakeUndefined(_ ctx: JSContextRef!) -> JSValueRef!
 ```
 
+```c
+JSValueRefJSValueMakeUndefined(JSContextRef ctx);
+```
+
 #### Return Value
 
 The unique undefined value.
@@ -29,15 +34,16 @@ The unique undefined value.
 
 ## See Also
 
-- [func JSValueMakeNull(JSContextRef!) -> JSValueRef!](jsvaluemakenull(_:).md)
+### Creating Values
+- [func JSValueMakeNull(JSContextRef!) -> JSValueRef!](./jsvaluemakenull%28_%29.md)
   Creates a JavaScript value of the null type.
-- [func JSValueMakeBoolean(JSContextRef!, Bool) -> JSValueRef!](jsvaluemakeboolean(_:_:).md)
+- [func JSValueMakeBoolean(JSContextRef!, Bool) -> JSValueRef!](./jsvaluemakeboolean%28_,_%29.md)
   Creates a JavaScript Boolean value.
-- [func JSValueMakeNumber(JSContextRef!, Double) -> JSValueRef!](jsvaluemakenumber(_:_:).md)
+- [func JSValueMakeNumber(JSContextRef!, Double) -> JSValueRef!](./jsvaluemakenumber%28_,_%29.md)
   Creates a JavaScript value of the number type.
-- [func JSValueMakeString(JSContextRef!, JSStringRef!) -> JSValueRef!](jsvaluemakestring(_:_:).md)
+- [func JSValueMakeString(JSContextRef!, JSStringRef!) -> JSValueRef!](./jsvaluemakestring%28_,_%29.md)
   Creates a JavaScript value of the string type.
-- [func JSValueMakeSymbol(JSContextRef!, JSStringRef!) -> JSValueRef!](jsvaluemakesymbol(_:_:).md)
+- [func JSValueMakeSymbol(JSContextRef!, JSStringRef!) -> JSValueRef!](./jsvaluemakesymbol%28_,_%29.md)
   Creates a JavaScript value of the symbol type.
 
 

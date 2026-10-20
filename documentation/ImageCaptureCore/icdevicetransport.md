@@ -1,7 +1,8 @@
 # ICDeviceTransport
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The hardware connection types a device can use.
 
@@ -18,23 +19,28 @@ The hardware connection types a device can use.
 struct ICDeviceTransport
 ```
 
+```c
+typedef NSString * ICDeviceTransport;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](icdevicetransport/init(rawvalue:).md)
+- [init(rawValue: String)](./icdevicetransport/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var transportType: String?](icdevice/transporttype.md)
+### Inspecting a Device’s Transport Type
+- [var transportType: String?](./icdevice/transporttype.md)
   The hardware connection type the device is using.
 
 

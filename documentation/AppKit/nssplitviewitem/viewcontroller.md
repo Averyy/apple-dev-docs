@@ -1,7 +1,8 @@
 # viewController
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller that the split view item represents.
 
@@ -12,6 +13,10 @@ The view controller that the split view item represents.
 
 ```swift
 var viewController: NSViewController { get set }
+```
+
+```objc
+@property (strong) NSViewController * viewController;
 ```
 
 #### Discussion

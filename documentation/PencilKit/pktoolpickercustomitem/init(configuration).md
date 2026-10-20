@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new custom item with the specified configuration.
 

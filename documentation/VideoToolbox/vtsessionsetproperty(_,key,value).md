@@ -1,7 +1,8 @@
 # VTSessionSetProperty(_:key:value:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a property on a VideoToolbox session.
 
@@ -19,6 +20,10 @@ Sets a property on a VideoToolbox session.
 func VTSessionSetProperty(_ session: VTSession, key propertyKey: CFString, value propertyValue: CFTypeRef?) -> OSStatus
 ```
 
+```c
+extern OSStatus VTSessionSetProperty(VTSessionRef session, CFStringRef propertyKey, CFTypeRef propertyValue);
+```
+
 #### Discussion
 
 Setting a property value to `NULL` restores the default value.
@@ -26,16 +31,17 @@ Setting a property value to `NULL` restores the default value.
 ## Topics
 
 ### Related Documentation
-- [Compression Properties](compression-properties.md)
+- [Compression Properties](./compression-properties.md)
   Properties that you use to configure a compression session.
-- [Decompression Properties](decompression-properties.md)
+- [Decompression Properties](./decompression-properties.md)
   Properties used to configure a VideoToolbox decompression session.
-- [Pixel Transfer Properties](pixel-transfer-properties.md)
+- [Pixel Transfer Properties](./pixel-transfer-properties.md)
   Properties used to configure a VideoToolbox pixel transfer session.
 
 ## See Also
 
-- [func VTSessionSetProperties(VTSession, propertyDictionary: CFDictionary) -> OSStatus](vtsessionsetproperties(_:propertydictionary:).md)
+### Setting Properties
+- [func VTSessionSetProperties(VTSession, propertyDictionary: CFDictionary) -> OSStatus](./vtsessionsetproperties%28_,propertydictionary%29.md)
   Sets multiple properties at once.
 
 

@@ -1,7 +1,8 @@
 # viewWillAppear()
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view controller that the system is going to add a view to a view hierarchy.
 

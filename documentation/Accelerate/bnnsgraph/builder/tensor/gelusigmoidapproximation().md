@@ -1,7 +1,8 @@
 # geluSigmoidApproximation()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Gaussian Error Linear Unit (GELU) sigmoid approximation activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Gaussian Error Linear Unit (GELU) sigmoid approximation activation operat
 ```swift
 func geluSigmoidApproximation() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

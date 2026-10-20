@@ -1,7 +1,8 @@
 # PlaygroundPage.AssessmentStatus
 
 **Framework**: Playground Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The values you use to communicate whether a learner has passed, failed, or not yet finished the task on a page.
 
@@ -18,15 +19,16 @@ enum PlaygroundPage.AssessmentStatus
 ## Topics
 
 ### Passing
-- [PlaygroundPage.AssessmentStatus.pass(message:)](playgroundpage/assessmentstatus/pass_message.md)
+- [PlaygroundPage.AssessmentStatus.pass(message:)](./assessmentstatus/pass_message.md)
   An assessment that communicates that a learner has successfully completed a task.
 ### Failing
-- [PlaygroundPage.AssessmentStatus.fail(hints:solution:)](playgroundpage/assessmentstatus/fail_hints_solution.md)
+- [PlaygroundPage.AssessmentStatus.fail(hints:solution:)](./assessmentstatus/fail_hints_solution.md)
   An assessment that communicates that a learner hasn't successfully completed a task.
 
 ## See Also
 
-- [var assessmentStatus: PlaygroundPage.AssessmentStatus?](playgroundpage/3029560-assessmentstatus.md)
+### Assessing Progress
+- [var assessmentStatus: PlaygroundPage.AssessmentStatus?](./api-3029560-assessmentstatus.md)
   A value that indicates whether a learner has passed, failed, or not yet finished the task on a page.
 
 

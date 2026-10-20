@@ -1,7 +1,8 @@
 # GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.Result
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The links to the details of the data.
 
@@ -10,14 +11,14 @@ The links to the details of the data.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.Result
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.Result.Links](gamecentermatchmakingbooleanruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/result-data.dictionary/links-data.dictionary.md)
+- [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.Result.Links](./result-data.dictionary/links-data.dictionary.md)
   The link representation of the results.
 
 ## Properties
@@ -27,7 +28,8 @@ object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.R
 
 ## See Also
 
-- [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue](gamecentermatchmakingbooleanruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/gamecentermatchmakingqueue-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingBooleanRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue](./gamecentermatchmakingqueue-data.dictionary.md)
   The details of the data about the queue.
 
 

@@ -1,7 +1,8 @@
 # recurrence
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interval on which to repeat firing the trigger.
 
@@ -19,17 +20,22 @@ The interval on which to repeat firing the trigger.
 var recurrence: DateComponents? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDateComponents * recurrence;
+```
+
 #### Discussion
 
 This value may be `nil` if the trigger should not repeat.
 
-The next fire date is calculated by adding the date components to the last fire date, as evaluated in the context of the trigger’s [`recurrenceCalendar`](hmtimertrigger/recurrencecalendar.md). Depending on the calendar, some date components may result in an undefined next fire date.
+The next fire date is calculated by adding the date components to the last fire date, as evaluated in the context of the trigger’s [`recurrenceCalendar`](./recurrencecalendar.md). Depending on the calendar, some date components may result in an undefined next fire date.
 
 The minimum recurrence interval is five minutes, and the most precision possible are whole minute values—you may not specify seconds in a recurrence interval. The maximum recurrence interval is five weeks.
 
 ## See Also
 
-- [func updateRecurrence(DateComponents?, completionHandler: ((any Error)?) -> Void)](hmtimertrigger/updaterecurrence(_:completionhandler:).md)
+### Using recurrence
+- [func updateRecurrence(DateComponents?, completionHandler: ((any Error)?) -> Void)](./updaterecurrence%28_,completionhandler%29.md)
   Updates the recurrence interval.
 
 

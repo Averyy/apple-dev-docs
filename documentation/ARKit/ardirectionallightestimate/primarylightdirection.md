@@ -1,7 +1,8 @@
 # primaryLightDirection
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A vector indicating the orientation of the strongest directional light source in the scene.
 
@@ -15,17 +16,22 @@ A vector indicating the orientation of the strongest directional light source in
 var primaryLightDirection: simd_float3 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) simd_float3 primaryLightDirection;
+```
+
 #### Discussion
 
-When ARKit analyzes the directional lighting environment for a detected face, the resulting lighting estimate can represent the influence of multiple light sources with different directions and intensities. To access this level of detail for use in your custom rendering code, use the [`sphericalHarmonicsCoefficients`](ardirectionallightestimate/sphericalharmonicscoefficients.md) property.
+When ARKit analyzes the directional lighting environment for a detected face, the resulting lighting estimate can represent the influence of multiple light sources with different directions and intensities. To access this level of detail for use in your custom rendering code, use the [`sphericalHarmonicsCoefficients`](./sphericalharmonicscoefficients.md) property.
 
-If your app displays AR content using a technology that doesn’t support environment-based lighting, this [`primaryLightDirection`](ardirectionallightestimate/primarylightdirection.md) property represents the average of directional light sources in the scene. This vector is normalized and in world coordinate space.
+If your app displays AR content using a technology that doesn’t support environment-based lighting, this [`primaryLightDirection`](./primarylightdirection.md) property represents the average of directional light sources in the scene. This vector is normalized and in world coordinate space.
 
 ## See Also
 
-- [var sphericalHarmonicsCoefficients: Data](ardirectionallightestimate/sphericalharmonicscoefficients.md)
+### Examining Light Parameters
+- [var sphericalHarmonicsCoefficients: Data](./sphericalharmonicscoefficients.md)
   Data describing the estimated lighting environment in all directions.
-- [var primaryLightIntensity: CGFloat](ardirectionallightestimate/primarylightintensity.md)
+- [var primaryLightIntensity: CGFloat](./primarylightintensity.md)
   The estimated intensity, in lumens, of the strongest directional light source in the scene.
 
 

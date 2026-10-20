@@ -1,7 +1,8 @@
 # isSupported(_:)
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the current device supports device discovery using Wi-FI Aware.
 
@@ -19,7 +20,7 @@ Returns a Boolean value that indicates whether the current device supports devic
 
 ## Parameters
 
-- `listenerProvider`: A [`ListenerProvider`](https://developer.apple.com/documentation/network/listenerprovider) protocol object that defines the service the listener advertises.
+- `listenerProvider`: A [`ListenerProvider`](../../Network/listenerprovider.md) protocol object that defines the service the listener advertises.
 
 
 ---

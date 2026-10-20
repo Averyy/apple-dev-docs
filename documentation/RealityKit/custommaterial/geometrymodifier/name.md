@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the geometry modifier function.
 
@@ -24,7 +25,8 @@ This is the name of the Metal function that the custom material uses as its geom
 
 ## See Also
 
-- [var library: any MTLLibrary](custommaterial/geometrymodifier/library.md)
+### Accessing geometry modifier properties
+- [var library: any MTLLibrary](./library.md)
   The Metal library that contains this surface shader function.
 
 

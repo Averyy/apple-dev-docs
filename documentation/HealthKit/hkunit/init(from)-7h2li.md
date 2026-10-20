@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Converts a mass formatter enumeration value into a corresponding HealthKit unit object.
 
@@ -19,25 +20,30 @@ Converts a mass formatter enumeration value into a corresponding HealthKit unit 
 convenience init(from massFormatterUnit: MassFormatter.Unit)
 ```
 
+```objc
++ (instancetype) unitFromMassFormatterUnit:(NSMassFormatterUnit) massFormatterUnit;
+```
+
 #### Return Value
 
 A HealthKit unit object, or `nil` if the unit parameter is not a valid energy formatter unit value.
 
 ## Parameters
 
-- `massFormatterUnit`: A valid mass formatter unit value. For a list of possible mass formatter unit values, see [`MassFormatter.Unit`](https://developer.apple.com/documentation/foundation/massformatter/unit).
+- `massFormatterUnit`: A valid mass formatter unit value. For a list of possible mass formatter unit values, see [`MassFormatter.Unit`](../../Foundation/massformatter/unit.md).
 
 ## See Also
 
-- [class func energyFormatterUnit(from: HKUnit) -> EnergyFormatter.Unit](hkunit/energyformatterunit(from:).md)
+### Working with formatter units
+- [class func energyFormatterUnit(from: HKUnit) -> EnergyFormatter.Unit](./energyformatterunit%28from%29.md)
   Converts a HealthKit unit object into a corresponding energy formatter enumeration value.
-- [convenience init(from: EnergyFormatter.Unit)](hkunit/init(from:)-1j1pq.md)
+- [convenience init(from: EnergyFormatter.Unit)](./init%28from%29-1j1pq.md)
   Converts an energy formatter enumeration value into a corresponding HealthKit unit object.
-- [class func lengthFormatterUnit(from: HKUnit) -> LengthFormatter.Unit](hkunit/lengthformatterunit(from:).md)
+- [class func lengthFormatterUnit(from: HKUnit) -> LengthFormatter.Unit](./lengthformatterunit%28from%29.md)
   Converts a HealthKit unit object into a corresponding length formatter enumeration value.
-- [convenience init(from: LengthFormatter.Unit)](hkunit/init(from:)-55e1u.md)
+- [convenience init(from: LengthFormatter.Unit)](./init%28from%29-55e1u.md)
   Converts a length formatter enumeration value into a corresponding HealthKit object.
-- [class func massFormatterUnit(from: HKUnit) -> MassFormatter.Unit](hkunit/massformatterunit(from:).md)
+- [class func massFormatterUnit(from: HKUnit) -> MassFormatter.Unit](./massformatterunit%28from%29.md)
   Converts a HealthKit unit object into a corresponding mass formatter enumeration value.
 
 

@@ -1,7 +1,8 @@
 # ComputeGraphResource.BufferInfo
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,7 @@ struct BufferInfo
 ## Topics
 
 ### Initializers
-- [init(buffer: any MTLBuffer, bufferOffset: Int, elementCount: Int)](computegraphresource/bufferinfo/init(buffer:bufferoffset:elementcount:).md)
+- [init(buffer: any MTLBuffer, bufferOffset: Int, elementCount: Int)](./bufferinfo/init%28buffer,bufferoffset,elementcount%29.md)
 
 
 ---

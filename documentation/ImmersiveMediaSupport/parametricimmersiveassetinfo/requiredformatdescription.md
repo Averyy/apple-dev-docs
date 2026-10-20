@@ -1,7 +1,8 @@
 # requiredFormatDescription
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A result format descriptor for overriding a mutable video track that’s used to convert the asset to parametric immersive asset. Use `replaceFormatDescription` to replace the format description on the `AVMutableMovieTrack`.
 

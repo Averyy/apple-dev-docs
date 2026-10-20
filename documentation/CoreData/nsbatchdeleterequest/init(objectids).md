@@ -1,7 +1,8 @@
 # init(objectIDs:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request that deletes the managed objects with the specified identifiers.
 
@@ -20,6 +21,10 @@ Creates a request that deletes the managed objects with the specified identifier
 convenience init(objectIDs objects: [NSManagedObjectID])
 ```
 
+```objc
+- (instancetype) initWithObjectIDs:(NSArray<NSManagedObjectID *> *) objects;
+```
+
 #### Discussion
 
 > ❗ **Important**:  The identifiers your provide must be from managed objects of the same entity type; mixing entity types results in an error when you execute the request.
@@ -30,7 +35,8 @@ convenience init(objectIDs objects: [NSManagedObjectID])
 
 ## See Also
 
-- [init(fetchRequest: NSFetchRequest<any NSFetchRequestResult>)](nsbatchdeleterequest/init(fetchrequest:).md)
+### Creating a Request
+- [init(fetchRequest: NSFetchRequest<any NSFetchRequestResult>)](./init%28fetchrequest%29.md)
   Creates a request that deletes the results of the specified fetch request.
 
 

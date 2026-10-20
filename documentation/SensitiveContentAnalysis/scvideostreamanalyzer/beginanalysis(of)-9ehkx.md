@@ -1,7 +1,8 @@
 # beginAnalysis(of:)
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes video frames for the given decompression session.
 
@@ -16,9 +17,13 @@ Analyzes video frames for the given decompression session.
 func beginAnalysis(of decompressionSession: VTDecompressionSession) throws
 ```
 
+```objc
+- (BOOL) beginAnalysisOfDecompressionSession:(VTDecompressionSessionRef) decompressionSession error:(NSError **) error;
+```
+
 #### Discussion
 
-If the framework detects sensitive content in the video stream, the [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession) produces blank frames to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](scvideostreamanalyzer/continuestream().md).
+If the framework detects sensitive content in the video stream, the [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md) produces blank frames to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](./continuestream%28%29.md).
 
 ## Parameters
 
@@ -26,13 +31,14 @@ If the framework detects sensitive content in the video stream, the [`VTDecompre
 
 ## See Also
 
-- [func analyze(CVPixelBuffer)](scvideostreamanalyzer/analyze(_:).md)
+### Analyzing a video stream
+- [func analyze(CVPixelBuffer)](./analyze%28_%29.md)
   Analyzes individual video-stream frames for sensitive content.
-- [func beginAnalysis(of: AVCaptureDeviceInput) throws](scvideostreamanalyzer/beginanalysis(of:)-78qm.md)
+- [func beginAnalysis(of: AVCaptureDeviceInput) throws](./beginanalysis%28of%29-78qm.md)
   Analyzes video frames for the given capture device input.
-- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](scvideostreamanalyzer/analysischanges.md)
+- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](./analysischanges.md)
   A stream your app uses to receive video-stream analysis results.
-- [func endAnalysis()](scvideostreamanalyzer/endanalysis.md)
+- [func endAnalysis()](./endanalysis%28%29.md)
   Stops stream analysis.
 
 

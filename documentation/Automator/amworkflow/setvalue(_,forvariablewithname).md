@@ -1,7 +1,8 @@
 # setValue(_:forVariableWithName:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the workflow variable with the specified name.
 
@@ -15,9 +16,13 @@ Sets the value of the workflow variable with the specified name.
 func setValue(_ value: Any?, forVariableWithName variableName: String) -> Bool
 ```
 
+```objc
+- (BOOL) setValue:(id) value forVariableWithName:(NSString *) variableName;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `variableName` was found and its value is set; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `variableName` was found and its value is set; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 

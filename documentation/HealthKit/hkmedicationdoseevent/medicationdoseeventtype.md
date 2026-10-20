@@ -1,7 +1,8 @@
 # medicationDoseEventType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type that identified the samples that store medication dose event data.
 
@@ -18,6 +19,10 @@ The data type that identified the samples that store medication dose event data.
 ```swift
 @NSCopying
 var medicationDoseEventType: HKMedicationDoseEventType { get }
+```
+
+```objc
+@property (copy, readonly) HKMedicationDoseEventType * medicationDoseEventType;
 ```
 
 #### Discussion

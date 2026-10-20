@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingStatus.success
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the successful return of the requested data.
 
@@ -20,13 +21,18 @@ A status that indicates the successful return of the requested data.
 case success
 ```
 
+```c
+AVAudioEngineManualRenderingStatusSuccess
+```
+
 ## See Also
 
-- [AVAudioEngineManualRenderingStatus.error](avaudioenginemanualrenderingstatus/error.md)
+### Interpreting rendering results
+- [AVAudioEngineManualRenderingStatus.error](./error.md)
   A problem that occurs during rendering and results in no data returning.
-- [AVAudioEngineManualRenderingStatus.insufficientDataFromInputNode](avaudioenginemanualrenderingstatus/insufficientdatafrominputnode.md)
+- [AVAudioEngineManualRenderingStatus.insufficientDataFromInputNode](./insufficientdatafrominputnode.md)
   A condition that occurs when the input node doesn’t return enough input data to satisfy the render request at the time of the request.
-- [AVAudioEngineManualRenderingStatus.cannotDoInCurrentContext](avaudioenginemanualrenderingstatus/cannotdoincurrentcontext.md)
+- [AVAudioEngineManualRenderingStatus.cannotDoInCurrentContext](./cannotdoincurrentcontext.md)
   An operation that the system can’t perform under the current conditions.
 
 

@@ -1,7 +1,8 @@
 # MPError.Code.networkConnectionFailed
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the operation failed because the device can’t connect to the network.
 
@@ -20,21 +21,26 @@ An error that indicates the operation failed because the device can’t connect 
 case networkConnectionFailed
 ```
 
+```c
+MPErrorNetworkConnectionFailed
+```
+
 ## See Also
 
-- [MPError.Code.cancelled](mperror/code/cancelled.md)
+### Error codes
+- [MPError.Code.cancelled](./cancelled.md)
   An error that indicates the system canceled the requested operation before it completed.
-- [MPError.Code.cloudServiceCapabilityMissing](mperror/code/cloudservicecapabilitymissing.md)
+- [MPError.Code.cloudServiceCapabilityMissing](./cloudservicecapabilitymissing.md)
   An error that indicates the operation can’t complete because iCloud services aren’t enabled.
-- [MPError.Code.notFound](mperror/code/notfound.md)
+- [MPError.Code.notFound](./notfound.md)
   An error that indicates the operation failed because the system can’t find the requested identifier in the current storefront.
-- [MPError.Code.notSupported](mperror/code/notsupported.md)
+- [MPError.Code.notSupported](./notsupported.md)
   An error that indicates the requested operation failed because the system doesn’t support it.
-- [MPError.Code.permissionDenied](mperror/code/permissiondenied.md)
+- [MPError.Code.permissionDenied](./permissiondenied.md)
   An error that indicates the operation can’t complete because the user doesn’t have permission to execute the operation.
-- [MPError.Code.requestTimedOut](mperror/code/requesttimedout.md)
+- [MPError.Code.requestTimedOut](./requesttimedout.md)
   An error that indicates the requested operation timed out.
-- [MPError.Code.unknown](mperror/code/unknown.md)
+- [MPError.Code.unknown](./unknown.md)
   An error that indicates the requested operation can’t complete due to an unknown error.
 
 

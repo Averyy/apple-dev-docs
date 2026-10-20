@@ -1,7 +1,8 @@
 # ...(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a partial range up to, and including, its upper bound.
 
@@ -40,7 +41,7 @@ print(numbers[...3])
 // Prints "[10, 20, 30, 40]"
 ```
 
-> **Note**: `maximum` must compare equal to itself (i.e. cannot be NaN).
+> **Precondition**: `maximum` must compare equal to itself (i.e. cannot be NaN).
 
 ## Parameters
 

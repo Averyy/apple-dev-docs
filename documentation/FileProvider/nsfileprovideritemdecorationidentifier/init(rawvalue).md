@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new decoration identifier matching the provided value.
 
@@ -19,7 +20,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nsfileprovideritemdecorationidentifier/init(_:).md)
+### Creating Decoration Identifiers
+- [init(String)](./init%28_%29.md)
   Returns a new decoration identifier matching the provided String.
 
 

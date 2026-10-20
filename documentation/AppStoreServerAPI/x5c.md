@@ -1,7 +1,8 @@
 # x5c
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The JSON Web Signature (JWS) header parameter that contains the certificate chain that corresponds to the key used to digitally sign the JWS.
 
@@ -10,17 +11,18 @@ The JSON Web Signature (JWS) header parameter that contains the certificate chai
 
 ## Declaration
 
-```swift
+```
 [string] x5c
 ```
 
 #### Discussion
 
-For more information, or to download Apple’s root and intermediate certificates, see [`Apple PKI`](https://developer.apple.comhttps://www.apple.com/certificateauthority/).
+For more information, or to download Apple’s root and intermediate certificates, see [Apple PKI](https://www.apple.com/certificateauthority/).
 
 ## See Also
 
-- [type alg](alg.md)
+### Data types
+- [type alg](./alg.md)
   An algorithm used to sign a JSON Web Signature.
 
 

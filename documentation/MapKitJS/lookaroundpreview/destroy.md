@@ -1,7 +1,8 @@
 # destroy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Destroys the Look Around view and releases its resources.
 
@@ -10,7 +11,7 @@ Destroys the Look Around view and releases its resources.
 
 ## Declaration
 
-```swift
+```
 destroy(): void;
 ```
 

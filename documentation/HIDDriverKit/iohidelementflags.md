@@ -1,22 +1,24 @@
 # IOHIDElementFlags
 
 **Framework**: HIDDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOHIDElementFlags;
 ```
 
 ## See Also
 
-- [getFlags](iohidelement/getflags.md)
-- [HID Element Flags](hid-element-flags-enum.md)
+### Getting the Element Flags
+- [getFlags](./iohidelement/getflags.md)
+- [HID Element Flags](./hid-element-flags-enum.md)
 
 
 ---

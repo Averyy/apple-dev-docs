@@ -1,7 +1,8 @@
 # temperatureAndTintValues(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts device-specific white balance RGB gain values to device-independent temperature and tint values.
 
@@ -17,31 +18,36 @@ Converts device-specific white balance RGB gain values to device-independent tem
 func temperatureAndTintValues(for whiteBalanceGains: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceTemperatureAndTintValues
 ```
 
+```objc
+- (AVCaptureWhiteBalanceTemperatureAndTintValues) temperatureAndTintValuesForDeviceWhiteBalanceGains:(AVCaptureWhiteBalanceGains) whiteBalanceGains;
+```
+
 #### Return Value
 
 A structure that contains device-independent values.
 
 #### Discussion
 
-Each change in the structure supports values between `1.0` and [`maxWhiteBalanceGain`](avcapturedevice/maxwhitebalancegain.md). This method throws an exception if you specify an unsupported value.
+Each change in the structure supports values between `1.0` and [`maxWhiteBalanceGain`](./maxwhitebalancegain.md). This method throws an exception if you specify an unsupported value.
 
 ## Parameters
 
-- `whiteBalanceGains`: The white balance gain values. You can’t specify a value of [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md).
+- `whiteBalanceGains`: The white balance gain values. You can’t specify a value of [`currentWhiteBalanceGains`](./currentwhitebalancegains.md).
 
 ## See Also
 
-- [func chromaticityValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceChromaticityValues](avcapturedevice/chromaticityvalues(for:).md)
+### Performing conversions
+- [func chromaticityValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceChromaticityValues](./chromaticityvalues%28for%29.md)
   Converts device-specific white balance RGB gain values to device-independent chromaticity values.
-- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceChromaticityValues) -> AVCaptureDevice.WhiteBalanceGains](avcapturedevice/devicewhitebalancegains(for:)-9gdtw.md)
+- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceChromaticityValues) -> AVCaptureDevice.WhiteBalanceGains](./devicewhitebalancegains%28for%29-9gdtw.md)
   Converts device-independent chromaticity values to device-specific white balance RGB gain values.
-- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues) -> AVCaptureDevice.WhiteBalanceGains](avcapturedevice/devicewhitebalancegains(for:)-3wtsa.md)
+- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues) -> AVCaptureDevice.WhiteBalanceGains](./devicewhitebalancegains%28for%29-3wtsa.md)
   Converts device-independent temperature and tint values to device-specific white balance RGB gain values.
-- [AVCaptureDevice.WhiteBalanceGains](avcapturedevice/whitebalancegains.md)
+- [AVCaptureDevice.WhiteBalanceGains](./whitebalancegains.md)
   A structure that defines RGB white balance gain values.
-- [AVCaptureDevice.WhiteBalanceChromaticityValues](avcapturedevice/whitebalancechromaticityvalues.md)
+- [AVCaptureDevice.WhiteBalanceChromaticityValues](./whitebalancechromaticityvalues.md)
   A structure that defines CIE 1931 xy chromaticity values.
-- [AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues.md)
+- [AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./whitebalancetemperatureandtintvalues.md)
   A structure that defines temperature and tint values correlated to a white-balance color.
 
 

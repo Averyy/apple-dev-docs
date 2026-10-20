@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an option key using the specified raw value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

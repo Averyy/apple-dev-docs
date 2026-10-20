@@ -1,17 +1,22 @@
 # register(forChannelCloseNotification:selector:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows a client to register for a channel close notification.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func register(forChannelCloseNotification observer: Any!, selector inSelector: Selector!) -> IOBluetoothUserNotification!
+```
+
+```objc
+- (IOBluetoothUserNotification *) registerForChannelCloseNotification:(id) observer selector:(SEL) inSelector;
 ```
 
 #### Return Value

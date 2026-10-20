@@ -1,7 +1,8 @@
 # BNNSOptimizerRegularizationL2
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A regularization function that applies L2 regularization.
 
@@ -20,16 +21,21 @@ A regularization function that applies L2 regularization.
 var BNNSOptimizerRegularizationL2: BNNSOptimizerRegularizationFunction { get }
 ```
 
+```c
+BNNSOptimizerRegularizationL2
+```
+
 #### Discussion
 
 ## See Also
 
-- [init(UInt32)](bnnsoptimizerregularizationfunction/init(_:).md)
-- [init(rawValue: UInt32)](bnnsoptimizerregularizationfunction/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsoptimizerregularizationfunction/rawvalue.md)
-- [var BNNSOptimizerRegularizationL1: BNNSOptimizerRegularizationFunction](bnnsoptimizerregularizationl1.md)
+### Regularization Functions
+- [init(UInt32)](./bnnsoptimizerregularizationfunction/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsoptimizerregularizationfunction/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsoptimizerregularizationfunction/rawvalue.md)
+- [var BNNSOptimizerRegularizationL1: BNNSOptimizerRegularizationFunction](./bnnsoptimizerregularizationl1.md)
   A regularization function that applies L1 regularization.
-- [var BNNSOptimizerRegularizationNone: BNNSOptimizerRegularizationFunction](bnnsoptimizerregularizationnone.md)
+- [var BNNSOptimizerRegularizationNone: BNNSOptimizerRegularizationFunction](./bnnsoptimizerregularizationnone.md)
   A regularization function that adoesn’t apply any regularization.
 
 

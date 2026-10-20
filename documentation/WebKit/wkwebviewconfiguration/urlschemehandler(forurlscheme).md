@@ -1,7 +1,8 @@
 # urlSchemeHandler(forURLScheme:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the currently registered handler object for the specified URL scheme.
 
@@ -18,6 +19,10 @@ Returns the currently registered handler object for the specified URL scheme.
 func urlSchemeHandler(forURLScheme urlScheme: String) -> (any WKURLSchemeHandler)?
 ```
 
+```objc
+- (id<WKURLSchemeHandler>) urlSchemeHandlerForURLScheme:(NSString *) urlScheme;
+```
+
 #### Return Value
 
 The handler object for the specified scheme, or `nil` if the scheme has no handler.
@@ -28,7 +33,8 @@ The handler object for the specified scheme, or `nil` if the scheme has no handl
 
 ## See Also
 
-- [func setURLSchemeHandler((any WKURLSchemeHandler)?, forURLScheme: String)](wkwebviewconfiguration/seturlschemehandler(_:forurlscheme:).md)
+### Adding handlers for custom URL schemes
+- [func setURLSchemeHandler((any WKURLSchemeHandler)?, forURLScheme: String)](./seturlschemehandler%28_,forurlscheme%29.md)
   Registers an object to load resources associated with the specified URL scheme.
 
 

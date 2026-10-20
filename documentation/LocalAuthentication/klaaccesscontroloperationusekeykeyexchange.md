@@ -1,7 +1,8 @@
 # kLAAccessControlOperationUseKeyKeyExchange
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var kLAAccessControlOperationUseKeyKeyExchange: Int32 { get }
+```
+
+```c
+#define kLAAccessControlOperationUseKeyKeyExchange
 ```
 
 

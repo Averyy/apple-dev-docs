@@ -1,14 +1,15 @@
 # simple_values
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 int64_t simple_values[4];
 ```
 

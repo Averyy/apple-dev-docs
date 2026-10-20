@@ -1,7 +1,8 @@
 # CustomerEngagement.ShoppingCart.Item
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An item in a shopping cart, including details like price and quantity.
 
@@ -19,30 +20,30 @@ struct Item
 ## Topics
 
 ### Initializers
-- [init(id: String, name: String, quantity: Int, totalPrice: Decimal, totalAdjustedPrice: Decimal?, descriptions: [String], details: [String])](customerengagement/shoppingcart/item/init(id:name:quantity:totalprice:totaladjustedprice:descriptions:details:).md)
+- [init(id: String, name: String, quantity: Int, totalPrice: Decimal, totalAdjustedPrice: Decimal?, descriptions: [String], details: [String])](./item/init%28id,name,quantity,totalprice,totaladjustedprice,descriptions,details%29.md)
 ### Instance Properties
-- [var descriptions: [String]](customerengagement/shoppingcart/item/descriptions.md)
+- [var descriptions: [String]](./item/descriptions.md)
   An array of description lines for this shopping cart item.
-- [var details: [String]](customerengagement/shoppingcart/item/details.md)
+- [var details: [String]](./item/details.md)
   An array of detail lines for this shopping cart item.
-- [let id: String](customerengagement/shoppingcart/item/id.md)
+- [let id: String](./item/id.md)
   A unique identifier of the shopping cart item.
-- [var name: String](customerengagement/shoppingcart/item/name.md)
+- [var name: String](./item/name.md)
   The name of the shopping cart item.
-- [var quantity: Int](customerengagement/shoppingcart/item/quantity.md)
+- [var quantity: Int](./item/quantity.md)
   The total number of units that make up the line item.
-- [var totalAdjustedPrice: Decimal?](customerengagement/shoppingcart/item/totaladjustedprice.md)
+- [var totalAdjustedPrice: Decimal?](./item/totaladjustedprice.md)
   A total adjusted price associated with the line item, typically used to indicate a price change.
-- [var totalPrice: Decimal](customerengagement/shoppingcart/item/totalprice.md)
+- [var totalPrice: Decimal](./item/totalprice.md)
   A value indicating the total price of the item.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MTREnergyEVSESupplyState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTREnergyEVSESupplyState
 ```
 
+```c
+enum MTREnergyEVSESupplyState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTREnergyEVSESupplyState.chargingEnabled](mtrenergyevsesupplystate/chargingenabled.md)
-- [MTREnergyEVSESupplyState.disabled](mtrenergyevsesupplystate/disabled.md)
-- [MTREnergyEVSESupplyState.disabledDiagnostics](mtrenergyevsesupplystate/disableddiagnostics.md)
-- [MTREnergyEVSESupplyState.disabledError](mtrenergyevsesupplystate/disablederror.md)
+- [MTREnergyEVSESupplyState.chargingEnabled](./mtrenergyevsesupplystate/chargingenabled.md)
+- [MTREnergyEVSESupplyState.disabled](./mtrenergyevsesupplystate/disabled.md)
+- [MTREnergyEVSESupplyState.disabledDiagnostics](./mtrenergyevsesupplystate/disableddiagnostics.md)
+- [MTREnergyEVSESupplyState.disabledError](./mtrenergyevsesupplystate/disablederror.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrenergyevsesupplystate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrenergyevsesupplystate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

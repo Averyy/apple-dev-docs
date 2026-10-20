@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic alternating row background behavior.
 
@@ -20,9 +21,10 @@ This defers to default component behavior for alternating row backgrounds. Some 
 
 ## See Also
 
-- [static let enabled: AlternatingRowBackgroundBehavior](alternatingrowbackgroundbehavior/enabled.md)
+### Getting alternating row background behavior
+- [static let enabled: AlternatingRowBackgroundBehavior](./enabled.md)
   Alternating rows will be enabled for applicable views.
-- [static let disabled: AlternatingRowBackgroundBehavior](alternatingrowbackgroundbehavior/disabled.md)
+- [static let disabled: AlternatingRowBackgroundBehavior](./disabled.md)
   Alternating rows will be disabled for applicable views.
 
 

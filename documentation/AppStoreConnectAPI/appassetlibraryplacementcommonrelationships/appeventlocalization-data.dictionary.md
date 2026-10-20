@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementCommonRelationships.AppEventLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The in-app event localization on which the app asset library placement appears.
 
@@ -10,14 +11,14 @@ The in-app event localization on which the app asset library placement appears.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementCommonRelationships.AppEventLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryPlacementCommonRelationships.AppEventLocalization.Data](appassetlibraryplacementcommonrelationships/appeventlocalization-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryPlacementCommonRelationships.AppEventLocalization.Data](./appeventlocalization-data.dictionary/data-data.dictionary.md)
   The type and ID of an in-app event localization resource on which the placement appears.
 
 ## Properties
@@ -26,11 +27,12 @@ object AppAssetLibraryPlacementCommonRelationships.AppEventLocalization
 
 ## See Also
 
-- [object AppAssetLibraryPlacementCommonRelationships.AppStoreVersionLocalization](appassetlibraryplacementcommonrelationships/appstoreversionlocalization-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryPlacementCommonRelationships.AppStoreVersionLocalization](./appstoreversionlocalization-data.dictionary.md)
   The App Store version localization on which the app asset library placement appears.
-- [object AppAssetLibraryPlacementCommonRelationships.AppCustomProductPageLocalization](appassetlibraryplacementcommonrelationships/appcustomproductpagelocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementCommonRelationships.AppCustomProductPageLocalization](./appcustomproductpagelocalization-data.dictionary.md)
   The custom product page localization on which the app asset library placement appears.
-- [object AppAssetLibraryPlacementCommonRelationships.AppStoreVersionExperimentTreatmentLocalization](appassetlibraryplacementcommonrelationships/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementCommonRelationships.AppStoreVersionExperimentTreatmentLocalization](./appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
   The App Store version experiment treatment localization on which the app asset library placement appears.
 
 

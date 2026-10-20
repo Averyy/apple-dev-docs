@@ -1,7 +1,8 @@
 # azimuthAngle(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A value that represents the azimuth angle of the hovering pointing device in the specified view.
 
@@ -17,9 +18,13 @@ A value that represents the azimuth angle of the hovering pointing device in the
 func azimuthAngle(in view: UIView?) -> CGFloat
 ```
 
+```objc
+- (CGFloat) azimuthAngleInView:(UIView *) view;
+```
+
 #### Return Value
 
-A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) that represents the azimuth angle of the hovering pointing device.
+A [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) that represents the azimuth angle of the hovering pointing device.
 
 #### Discussion
 
@@ -33,13 +38,14 @@ This method returns `0` for devices that don’t support azimuth.
 
 ## See Also
 
-- [var altitudeAngle: CGFloat](uihovergesturerecognizer/altitudeangle.md)
+### Supporting Apple Pencil hover
+- [var altitudeAngle: CGFloat](./altitudeangle.md)
   A value that represents the altitude angle of the hovering pointing device.
-- [func azimuthUnitVector(in: UIView?) -> CGVector](uihovergesturerecognizer/azimuthunitvector(in:).md)
+- [func azimuthUnitVector(in: UIView?) -> CGVector](./azimuthunitvector%28in%29.md)
   A value that represents the azimuth unit vector of the hovering pointing device in the specified view.
-- [var rollAngle: CGFloat](uihovergesturerecognizer/rollangle.md)
+- [var rollAngle: CGFloat](./rollangle.md)
   A value that represents the current barrel-roll angle of Apple Pencil.
-- [var zOffset: CGFloat](uihovergesturerecognizer/zoffset.md)
+- [var zOffset: CGFloat](./zoffset.md)
   A value that represents the normalized distance between the screen and a hovering pointing device, such as Apple Pencil.
 
 

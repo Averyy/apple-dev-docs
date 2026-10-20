@@ -1,7 +1,8 @@
 # String.UTF16View.Iterator.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element traversed by the iterator.
 

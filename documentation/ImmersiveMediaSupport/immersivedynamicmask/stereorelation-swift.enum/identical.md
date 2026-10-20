@@ -1,7 +1,8 @@
 # ImmersiveDynamicMask.StereoRelation.identical
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+

@@ -1,9 +1,10 @@
 # MediaOutputDevice.Capabilities
 
 **Framework**: Media Device  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Defines the media capabilities supported by a [`MediaOutputDevice`](mediaoutputdevice.md).
+Defines the media capabilities supported by a [`MediaOutputDevice`](../mediaoutputdevice.md).
 
 **Availability**:
 - iOS 27.0+
@@ -23,39 +24,40 @@ Use these options to describe what a device can do, such as streaming audio or v
 ## Topics
 
 ### Instance Properties
-- [var description: String](mediaoutputdevice/capabilities-swift.struct/description.md)
+- [var description: String](./capabilities-swift.struct/description.md)
   A textual representation of the capabilities.
 ### Type Properties
-- [static let appLaunch: MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct/applaunch.md)
+- [static let appLaunch: MediaOutputDevice.Capabilities](./capabilities-swift.struct/applaunch.md)
   Capable of launching an application and providing an application-to-application data channel.
-- [static let realtimeAudioStreaming: MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct/realtimeaudiostreaming.md)
+- [static let realtimeAudioStreaming: MediaOutputDevice.Capabilities](./capabilities-swift.struct/realtimeaudiostreaming.md)
   Capable of receiving audio samples and processing them in realtime.
-- [static let realtimeVideoStreaming: MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct/realtimevideostreaming.md)
+- [static let realtimeVideoStreaming: MediaOutputDevice.Capabilities](./capabilities-swift.struct/realtimevideostreaming.md)
   Capable of receiving video samples and processing them in realtime.
-- [static let urlPlayback: MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct/urlplayback.md)
+- [static let urlPlayback: MediaOutputDevice.Capabilities](./capabilities-swift.struct/urlplayback.md)
   Capable of receiving a media URL and providing a playback experience.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct MediaOutputDevice](mediaoutputdevice.md)
+### Device discovery and management
+- [struct MediaOutputDevice](../mediaoutputdevice.md)
   Represents a discoverable media output device such as a TV, speaker, or streaming stick.
-- [MediaOutputDevice.DeviceType](mediaoutputdevice/devicetype-swift.enum.md)
+- [MediaOutputDevice.DeviceType](./devicetype-swift.enum.md)
   A device type used for display in user interfaces.
-- [MediaOutputDevice.VolumeControl](mediaoutputdevice/volumecontrol-swift.enum.md)
+- [MediaOutputDevice.VolumeControl](./volumecontrol-swift.enum.md)
   Defines the type of volume control supported by an output device or group.
-- [MediaOutputDevice.AuthorizationMethod](mediaoutputdevice/authorizationmethod.md)
+- [MediaOutputDevice.AuthorizationMethod](./authorizationmethod.md)
   Specifies what kind of authorization UI to present when connecting to a device.
 
 

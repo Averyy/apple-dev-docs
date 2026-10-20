@@ -1,10 +1,13 @@
 # init()
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 12.0
+
+> **Deprecated**: SecAsn1 is not supported
 
 ## Declaration
 

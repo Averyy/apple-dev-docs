@@ -1,7 +1,8 @@
 # extendedLogDataStringEncoding
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string encoding of the extended log data.
 
@@ -20,11 +21,16 @@ The string encoding of the extended log data.
 var extendedLogDataStringEncoding: UInt { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSStringEncoding extendedLogDataStringEncoding;
+```
+
 ## See Also
 
-- [var events: [AVPlayerItemAccessLogEvent]](avplayeritemaccesslog/events.md)
+### Accessing log data
+- [var events: [AVPlayerItemAccessLogEvent]](./events.md)
   A chronologically ordered array of player item access log events.
-- [func extendedLogData() -> Data?](avplayeritemaccesslog/extendedlogdata.md)
+- [func extendedLogData() -> Data?](./extendedlogdata%28%29.md)
   Returns a serialized representation of the access log in the Extended Log File Format.
 
 

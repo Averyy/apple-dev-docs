@@ -1,7 +1,8 @@
 # init(tailLocation:tailAngle:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an new speech bubble with a tail pointing to a specific location.
 

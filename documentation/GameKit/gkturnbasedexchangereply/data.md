@@ -1,7 +1,8 @@
 # data
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The game-specific data that the recipent provides in the exchange request reply.
 
@@ -20,13 +21,26 @@ The game-specific data that the recipent provides in the exchange request reply.
 var data: Data? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSData * data;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nullable) NSData * data;
+```
+
 ## See Also
 
-- [var message: String?](gkturnbasedexchangereply/message.md)
+### Retrieving Reply Details
+- [var message: String?](./message.md)
   A message from the recipient to the sender of the exchange request.
-- [var recipient: GKTurnBasedParticipant](gkturnbasedexchangereply/recipient.md)
+- [var recipient: GKTurnBasedParticipant](./recipient.md)
   The participant who replies to the exchange request.
-- [var replyDate: Date](gkturnbasedexchangereply/replydate.md)
+- [var replyDate: Date](./replydate.md)
   The date the recipient replies to the exchange request.
 
 

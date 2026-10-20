@@ -1,7 +1,8 @@
 # init(cullingPlanes:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a frustum with the given culling planes.
 
@@ -23,7 +24,8 @@ init(cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane])
 
 ## See Also
 
-- [var cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane]](lowlevelrenderer/cullconfiguration/frustum-swift.struct/cullingplanes.md)
+### Creating a frustum
+- [var cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane]](./cullingplanes.md)
   The planes that define the culling volume.
 
 

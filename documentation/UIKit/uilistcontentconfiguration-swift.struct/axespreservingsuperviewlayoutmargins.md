@@ -1,7 +1,8 @@
 # axesPreservingSuperviewLayoutMargins
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the content view preserves the layout margins that it inherits from its superview on the horizontal or vertical axes.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the content view preserves the layout ma
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,19 +21,20 @@ var axesPreservingSuperviewLayoutMargins: UIAxis { get set }
 
 #### Discussion
 
-By default, the content view preserves the layout margins of its superview on [`both`](uiaxis/both.md) axes.
+By default, the content view preserves the layout margins of its superview on [`both`](../uiaxis/both.md) axes.
 
 ## See Also
 
-- [var directionalLayoutMargins: NSDirectionalEdgeInsets](uilistcontentconfiguration-swift.struct/directionallayoutmargins.md)
+### Customizing layout
+- [var directionalLayoutMargins: NSDirectionalEdgeInsets](./directionallayoutmargins.md)
   The margins between the content and the edges of the content view.
-- [var prefersSideBySideTextAndSecondaryText: Bool](uilistcontentconfiguration-swift.struct/preferssidebysidetextandsecondarytext.md)
+- [var prefersSideBySideTextAndSecondaryText: Bool](./preferssidebysidetextandsecondarytext.md)
   A Boolean value that determines whether the configuration positions the text and secondary text side by side.
-- [var imageToTextPadding: CGFloat](uilistcontentconfiguration-swift.struct/imagetotextpadding.md)
+- [var imageToTextPadding: CGFloat](./imagetotextpadding.md)
   The padding between the image and text.
-- [var textToSecondaryTextHorizontalPadding: CGFloat](uilistcontentconfiguration-swift.struct/texttosecondarytexthorizontalpadding.md)
+- [var textToSecondaryTextHorizontalPadding: CGFloat](./texttosecondarytexthorizontalpadding.md)
   The minimum horizontal padding between the text and secondary text.
-- [var textToSecondaryTextVerticalPadding: CGFloat](uilistcontentconfiguration-swift.struct/texttosecondarytextverticalpadding.md)
+- [var textToSecondaryTextVerticalPadding: CGFloat](./texttosecondarytextverticalpadding.md)
   The vertical padding between the text and secondary text.
 
 

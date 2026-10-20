@@ -1,7 +1,8 @@
 # errSecInvalidID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The ID is not valid.
 
@@ -18,6 +19,10 @@ The ID is not valid.
 
 ```swift
 var errSecInvalidID: OSStatus { get }
+```
+
+```c
+errSecInvalidID
 ```
 
 

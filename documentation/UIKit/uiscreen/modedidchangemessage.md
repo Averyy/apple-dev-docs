@@ -1,7 +1,8 @@
 # UIScreen.ModeDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,15 +19,15 @@ struct ModeDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(screen: UIScreen)](uiscreen/modedidchangemessage/init(screen:).md)
+- [init(screen: UIScreen)](./modedidchangemessage/init%28screen%29.md)
 ### Instance Properties
-- [var screen: UIScreen](uiscreen/modedidchangemessage/screen.md)
+- [var screen: UIScreen](./modedidchangemessage/screen.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

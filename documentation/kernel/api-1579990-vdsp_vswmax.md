@@ -1,7 +1,8 @@
 # vDSP_vswmax
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds the maximum value in a sliding window at each possible position in a single-precision input vector.
 
@@ -10,7 +11,7 @@ Finds the maximum value in a sliding window at each possible position in a singl
 
 ## Declaration
 
-```swift
+```c
 void vDSP_vswmax(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __WindowLength);
 ```
 

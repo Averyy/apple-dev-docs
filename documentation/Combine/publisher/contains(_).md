@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes a Boolean value upon receiving an element equal to the argument.
 
@@ -20,15 +21,17 @@ Publishes a Boolean value upon receiving an element equal to the argument.
 func contains(_ output: Self.Output) -> Publishers.Contains<Self>
 ```
 
+Available when `Output` conforms to `Equatable`.
+
 #### Return Value
 
 A publisher that emits the Boolean value `true` when the upstream publisher emits a matching value.
 
 #### Discussion
 
-Use [`contains(_:)`](publisher/contains(_:).md) to find the first element in an upstream that’s equal to the supplied argument. The contains publisher consumes all received elements until the upstream publisher produces a matching element. Upon finding the first match, it emits `true` and finishes normally. If the upstream finishes normally without producing a matching element, this publisher emits `false` and finishes.
+Use [`contains(_:)`](./contains%28_%29.md) to find the first element in an upstream that’s equal to the supplied argument. The contains publisher consumes all received elements until the upstream publisher produces a matching element. Upon finding the first match, it emits `true` and finishes normally. If the upstream finishes normally without producing a matching element, this publisher emits `false` and finishes.
 
-In the example below, the [`contains(_:)`](publisher/contains(_:).md) operator emits `true` the first time it receives the value `5` from the `numbers.publisher`, and then finishes normally.
+In the example below, the [`contains(_:)`](./contains%28_%29.md) operator emits `true` the first time it receives the value `5` from the `numbers.publisher`, and then finishes normally.
 
 ```swift
 let numbers = [-1, 5, 10, 5]
@@ -45,13 +48,14 @@ numbers.publisher
 
 ## See Also
 
-- [func contains(where: (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>](publisher/contains(where:).md)
+### Applying matching criteria to elements
+- [func contains(where: (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>](./contains%28where%29.md)
   Publishes a Boolean value upon receiving an element that satisfies the predicate closure.
-- [func tryContains(where: (Self.Output) throws -> Bool) -> Publishers.TryContainsWhere<Self>](publisher/trycontains(where:).md)
+- [func tryContains(where: (Self.Output) throws -> Bool) -> Publishers.TryContainsWhere<Self>](./trycontains%28where%29.md)
   Publishes a Boolean value upon receiving an element that satisfies the throwing predicate closure.
-- [func allSatisfy((Self.Output) -> Bool) -> Publishers.AllSatisfy<Self>](publisher/allsatisfy(_:).md)
+- [func allSatisfy((Self.Output) -> Bool) -> Publishers.AllSatisfy<Self>](./allsatisfy%28_%29.md)
   Publishes a single Boolean value that indicates whether all received elements pass a given predicate.
-- [func tryAllSatisfy((Self.Output) throws -> Bool) -> Publishers.TryAllSatisfy<Self>](publisher/tryallsatisfy(_:).md)
+- [func tryAllSatisfy((Self.Output) throws -> Bool) -> Publishers.TryAllSatisfy<Self>](./tryallsatisfy%28_%29.md)
   Publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
 
 

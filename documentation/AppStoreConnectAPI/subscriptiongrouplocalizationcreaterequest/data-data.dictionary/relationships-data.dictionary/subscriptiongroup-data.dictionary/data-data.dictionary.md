@@ -1,7 +1,8 @@
 # SubscriptionGroupLocalizationCreateRequest.Data.Relationships.SubscriptionGroup.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription group localization.
 
@@ -10,14 +11,14 @@ The request body you use to create a subscription group localization.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalizationCreateRequest.Data.Relationships.SubscriptionGroup.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionGroups`
 
 
 ---

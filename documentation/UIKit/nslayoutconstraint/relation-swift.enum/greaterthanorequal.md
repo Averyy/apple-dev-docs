@@ -1,16 +1,17 @@
 # NSLayoutConstraint.Relation.greaterThanOrEqual
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constraint requires the first attribute to be greater than or equal to the modified second attribute.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ The constraint requires the first attribute to be greater than or equal to the m
 case greaterThanOrEqual
 ```
 
+```c
+NSLayoutRelationGreaterThanOrEqual
+```
+
 ## See Also
 
-- [NSLayoutConstraint.Relation.lessThanOrEqual](nslayoutconstraint/relation-swift.enum/lessthanorequal.md)
+### Constants
+- [NSLayoutConstraint.Relation.lessThanOrEqual](./lessthanorequal.md)
   The constraint requires the first attribute to be less than or equal to the modified second attribute.
-- [NSLayoutConstraint.Relation.equal](nslayoutconstraint/relation-swift.enum/equal.md)
+- [NSLayoutConstraint.Relation.equal](./equal.md)
   The constraint requires the first attribute to be exactly equal to the modified second attribute.
 
 

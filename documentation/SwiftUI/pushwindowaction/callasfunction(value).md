@@ -1,7 +1,8 @@
 # callAsFunction(value:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pushes a window defined by a window group that presents the type of the specified value.
 
@@ -17,13 +18,13 @@ func callAsFunction<D>(value: D) where D : Decodable, D : Encodable, D : Hashabl
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`pushWindow`](environmentvalues/pushwindow.md) action with a value:
+Don’t call this method directly. SwiftUI calls it when you call the [`pushWindow`](../environmentvalues/pushwindow.md) action with a value:
 
 ```swift
 pushWindow(value: video.id)
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 

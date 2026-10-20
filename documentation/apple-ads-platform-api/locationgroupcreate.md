@@ -1,7 +1,8 @@
 # LocationGroupCreate
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body object for creating a new location group.
 
@@ -10,15 +11,15 @@ The request body object for creating a new location group.
 
 ## Declaration
 
-```swift
+```
 object LocationGroupCreate
 ```
 
 #### Discussion
 
-The `LocationGroupCreate` object is the payload sent to [`Create Location Group`](create-location-group.md).
+The `LocationGroupCreate` object is the payload sent to [`Create Location Group`](./create-location-group.md).
 
-##### Grouptype Details
+##### groupType Details
 
 The `groupType` you choose determines how membership is defined and maintained:
 
@@ -49,7 +50,7 @@ Creating a group also requires satisfying the following constraints:
 
 When `field` is `adminArea`, the `value` must be the full English name of the administrative area, such as `"Illinois"` rather than `"IL"` or `"California"` rather than `"CA"`.
 
-> **Note**: **Important:** The API accepts abbreviated codes without returning an error, but the system creates the location group with `groupTotal: 0` because no locations match. There is no validation error to indicate the mismatch. Use the full name exactly as it appears in a location’s `adminArea` field (returned by [`Query for Locations`](query-locations.md) or [`Get a Location`](get-location-by-id.md)) to ensure rules evaluate correctly.
+> **Note**: **Important:** The API accepts abbreviated codes without returning an error, but the system creates the location group with `groupTotal: 0` because no locations match. There is no validation error to indicate the mismatch. Use the full name exactly as it appears in a location’s `adminArea` field (returned by [`Query for Locations`](./query-locations.md) or [`Get a Location`](./get-location-by-id.md)) to ensure rules evaluate correctly.
 
 ##### Status
 
@@ -83,41 +84,41 @@ After creation, a `DYNAMIC` group’s `systemStatus` is initially `PENDING` whil
 - `brandId` (string) *(required)*: Associated brand identifier.
 - `adAccountId` (string) *(required)*: Ad account ID that will own this location group.
 - `groupType` (LocationGroupType) *(required)*: Type of location grouping. Values: `STATIC`, `DYNAMIC`. See groupType Details in the Discussion section.
-- `rules` ([Rule]): Array of [`Rule`](rule.md) objects for `DYNAMIC` groups. Provide when `groupType` is `DYNAMIC`.
+- `rules` ([Rule]): Array of [`Rule`](./rule.md) objects for `DYNAMIC` groups. Provide when `groupType` is `DYNAMIC`.
 - `locationIds` ([string]): Array of location IDs for `STATIC` groups. Provide when `groupType` is `STATIC`.
 - `description` (string): Optional description of the location group.
 
 ## See Also
 
-- [object Brand](brand.md)
+- [object Brand](./brand.md)
   A brand eligible for promotion through Apple Maps ads.
-- [object BrandResponse](brandresponse.md)
+- [object BrandResponse](./brandresponse.md)
   The Get Brand by ID endpoint returns this response object.
-- [object BrandQueryResponse](brandqueryresponse.md)
+- [object BrandQueryResponse](./brandqueryresponse.md)
   The Query Brands endpoint returns this response object.
-- [object BrandRejectionReasonResponse](brandrejectionreasonresponse.md)
+- [object BrandRejectionReasonResponse](./brandrejectionreasonresponse.md)
   A single policy assignment with rejection reason details for a brand entity.
-- [object BusinessCategory](businesscategory.md)
+- [object BusinessCategory](./businesscategory.md)
   A category in the Apple Maps business taxonomy used to classify brands and locations.
-- [object BusinessCategoryResponse](businesscategoryresponse.md)
+- [object BusinessCategoryResponse](./businesscategoryresponse.md)
   The Get Business Category endpoint returns this response object.
-- [object BusinessCategoryQueryResponse](businesscategoryqueryresponse.md)
+- [object BusinessCategoryQueryResponse](./businesscategoryqueryresponse.md)
   The Query Business Categories endpoint returns this response object.
-- [object Location](location.md)
+- [object Location](./location.md)
   The brand location object.
-- [object LocationResponse](locationresponse.md)
+- [object LocationResponse](./locationresponse.md)
   The response object returned by the Get a Location endpoint.
-- [object LocationGroup](locationgroup.md)
+- [object LocationGroup](./locationgroup.md)
   A collection of business locations associated with a brand, used to target geos in Apple Maps campaigns.
-- [object LocationGroupUpdate](locationgroupupdate.md)
+- [object LocationGroupUpdate](./locationgroupupdate.md)
   The request body object for updating an existing location group.
-- [object LocationGroupResponse](locationgroupresponse.md)
+- [object LocationGroupResponse](./locationgroupresponse.md)
   The response object returned by the Get Location Group endpoint.
-- [object LocationGroupQueryResponse](locationgroupqueryresponse.md)
+- [object LocationGroupQueryResponse](./locationgroupqueryresponse.md)
   The response object returned by the Query Location Groups endpoint.
-- [object LocationQueryResponse](locationqueryresponse.md)
+- [object LocationQueryResponse](./locationqueryresponse.md)
   The paginated response envelope returned by the Query Locations endpoint.
-- [object Eligibility](eligibility.md)
+- [object Eligibility](./eligibility.md)
   Eligibility status and constraint details for a Business domain entity.
 
 

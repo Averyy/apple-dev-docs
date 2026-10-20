@@ -1,7 +1,8 @@
 # MTRColorControlColorCapabilitiesBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.2+
@@ -18,28 +19,32 @@
 struct MTRColorControlColorCapabilitiesBitmap
 ```
 
+```c
+enum MTRColorControlColorCapabilitiesBitmap : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrcolorcontrolcolorcapabilitiesbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrcolorcontrolcolorcapabilitiesbitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var XY: MTRColorControlColorCapabilitiesBitmap](mtrcolorcontrolcolorcapabilitiesbitmap/xy.md)
-- [static var colorLoop: MTRColorControlColorCapabilitiesBitmap](mtrcolorcontrolcolorcapabilitiesbitmap/colorloop.md)
-- [static var colorTemperature: MTRColorControlColorCapabilitiesBitmap](mtrcolorcontrolcolorcapabilitiesbitmap/colortemperature.md)
-- [static var enhancedHue: MTRColorControlColorCapabilitiesBitmap](mtrcolorcontrolcolorcapabilitiesbitmap/enhancedhue.md)
-- [static var hueSaturation: MTRColorControlColorCapabilitiesBitmap](mtrcolorcontrolcolorcapabilitiesbitmap/huesaturation.md)
+- [static var XY: MTRColorControlColorCapabilitiesBitmap](./mtrcolorcontrolcolorcapabilitiesbitmap/xy.md)
+- [static var colorLoop: MTRColorControlColorCapabilitiesBitmap](./mtrcolorcontrolcolorcapabilitiesbitmap/colorloop.md)
+- [static var colorTemperature: MTRColorControlColorCapabilitiesBitmap](./mtrcolorcontrolcolorcapabilitiesbitmap/colortemperature.md)
+- [static var enhancedHue: MTRColorControlColorCapabilitiesBitmap](./mtrcolorcontrolcolorcapabilitiesbitmap/enhancedhue.md)
+- [static var hueSaturation: MTRColorControlColorCapabilitiesBitmap](./mtrcolorcontrolcolorcapabilitiesbitmap/huesaturation.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

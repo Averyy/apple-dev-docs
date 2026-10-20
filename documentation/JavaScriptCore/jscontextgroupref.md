@@ -1,7 +1,8 @@
 # JSContextGroupRef
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A group that associates JavaScript contexts with one another.
 
@@ -19,6 +20,10 @@ A group that associates JavaScript contexts with one another.
 typealias JSContextGroupRef = OpaquePointer
 ```
 
+```c
+typedef const struct OpaqueJSContextGroup * JSContextGroupRef;
+```
+
 #### Discussion
 
 Contexts in the same group may share and exchange JavaScript objects.
@@ -26,18 +31,19 @@ Contexts in the same group may share and exchange JavaScript objects.
 ## Topics
 
 ### Accessing the Content Group
-- [func JSContextGetGroup(JSContextRef!) -> JSContextGroupRef!](jscontextgetgroup(_:).md)
+- [func JSContextGetGroup(JSContextRef!) -> JSContextGroupRef!](./jscontextgetgroup%28_%29.md)
   Gets the context group that a JavaScript execution context belongs to.
 
 ## See Also
 
-- [typealias JSContextRef](jscontextref.md)
+### JavaScriptCore Engine Interface
+- [typealias JSContextRef](./jscontextref.md)
   A JavaScript execution context.
-- [typealias JSGlobalContextRef](jsglobalcontextref.md)
+- [typealias JSGlobalContextRef](./jsglobalcontextref.md)
   A global JavaScript execution context.
-- [typealias JSStringRef](jsstringref.md)
+- [typealias JSStringRef](./jsstringref.md)
   A UTF-16 character buffer.
-- [typealias JSClassRef](jsclassref.md)
+- [typealias JSClassRef](./jsclassref.md)
   A JavaScript class.
 
 

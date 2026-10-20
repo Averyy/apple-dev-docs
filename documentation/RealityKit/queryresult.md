@@ -1,7 +1,8 @@
 # QueryResult
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that returns the results of an entity query.
 
@@ -11,7 +12,7 @@ An object that returns the results of an entity query.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ struct QueryResult<Element>
 
 #### Overview
 
-You can’t create query result objects. Instead, call [`performQuery(_:)`](scene/performquery(_:).md), which returns a [`QueryResult`](queryresult.md) containing the entities that meet your specified query criteria.
+You can’t create query result objects. Instead, call [`performQuery(_:)`](./scene/performquery%28_%29.md), which returns a [`QueryResult`](./queryresult.md) containing the entities that meet your specified query criteria.
 
 ```swift
 // Ask the scene to perform the query and iterate over the returned entities.
@@ -33,25 +34,26 @@ scene.performQuery(query).forEach { entity in
 ## Topics
 
 ### Creating an iterator
-- [QueryResult.Iterator](queryresult/iterator.md)
+- [QueryResult.Iterator](./queryresult/iterator.md)
   The type of iterator used for entity query results.
-- [func makeIterator() -> QueryResult<Element>.Iterator](queryresult/makeiterator.md)
+- [func makeIterator() -> QueryResult<Element>.Iterator](./queryresult/makeiterator%28%29.md)
   Returns an iterator for the contained entities.
 ### Default Implementations
-- [Sequence Implementations](queryresult/sequence-implementations.md)
+- [Sequence Implementations](./queryresult/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sequence](../swift/sequence.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct EntityQuery](entityquery.md)
+### Entity queries
+- [struct EntityQuery](./entityquery.md)
   An object that retrieves entities from a scene.
-- [struct QueryPredicate](querypredicate.md)
+- [struct QueryPredicate](./querypredicate.md)
   An object that defines the criteria for an entity query.
 
 

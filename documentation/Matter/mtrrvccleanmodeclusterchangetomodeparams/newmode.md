@@ -1,7 +1,8 @@
 # newMode
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var newMode: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy, getter=getNewMode) NSNumber * newMode;
 ```
 
 

@@ -1,14 +1,15 @@
 # Transition Animation Keys
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 The following constants define the keys that reference the transitions used as views are made visible and hidden.
 
 ## Topics
 
 ### Constants
-- [let NSAnimationTriggerOrderIn: String](nsanimationtriggerorderin.md)
-- [let NSAnimationTriggerOrderOut: String](nsanimationtriggerorderout.md)
+- [let NSAnimationTriggerOrderIn: String](./nsanimationtriggerorderin.md)
+- [let NSAnimationTriggerOrderOut: String](./nsanimationtriggerorderout.md)
 
 
 ---

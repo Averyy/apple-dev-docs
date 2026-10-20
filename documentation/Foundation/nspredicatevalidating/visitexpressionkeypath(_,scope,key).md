@@ -1,7 +1,8 @@
 # visitExpressionKeyPath(_:scope:key:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func visitExpressionKeyPath(_ expression: NSExpression, scope: String?, key: String?) throws
+```
+
+```objc
+- (BOOL) visitExpressionKeyPath:(NSExpression *) expression scope:(NSString *) scope key:(NSString *) key error:(NSError **) error;
 ```
 
 

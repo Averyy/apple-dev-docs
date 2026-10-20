@@ -1,7 +1,8 @@
 # NSApplicationServiceIdentifier
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 16.0+
@@ -9,9 +10,10 @@
 - visionOS 1.0+
 - watchOS 9.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSApplicationServiceIdentifier`
+- **Type**: string
 
 
 ---

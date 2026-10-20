@@ -1,7 +1,8 @@
 # default
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default measurement options.
 
@@ -10,6 +11,10 @@ The default measurement options.
 ```swift
 @NSCopying
 class var `default`: XCTMeasureOptions { get }
+```
+
+```objc
+@property (class, copy, readonly) XCTMeasureOptions * defaultOptions;
 ```
 
 

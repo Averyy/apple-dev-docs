@@ -1,7 +1,8 @@
 # transform(forImageWidth:height:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an affine transform for the specified image width and height.
 
@@ -19,6 +20,10 @@ Creates an affine transform for the specified image width and height.
 func transform(forImageWidth width: Int, height: Int) -> CGAffineTransform
 ```
 
+```objc
+- (CGAffineTransform) transformForImageWidth:(size_t) width height:(size_t) height;
+```
+
 #### Return Value
 
 An affine transform.
@@ -30,9 +35,10 @@ An affine transform.
 
 ## See Also
 
-- [var angle: CGFloat](vnhorizonobservation/angle.md)
+### Evaluating the Horizon
+- [var angle: CGFloat](./angle.md)
   The angle of the observed horizon.
-- [var transform: CGAffineTransform](vnhorizonobservation/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The transform to apply to the detected horizon.
 
 

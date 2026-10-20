@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Token
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A session token.
 
@@ -19,21 +20,22 @@ struct Token
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.struct.md)
+### Configuring a session
+- [CustomerEngagementSession.Configuration](./configuration-swift.struct.md)
   A set of configuration options for a customer engagement session.
-- [let configuration: CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.property.md)
+- [let configuration: CustomerEngagementSession.Configuration](./configuration-swift.property.md)
   Configuration for this session.
-- [func open(using: CustomerEngagement.Token?) async throws](customerengagementsession/open(using:).md)
+- [func open(using: CustomerEngagement.Token?) async throws](./open%28using%29.md)
   Opens the engagement session.
-- [func close() async throws](customerengagementsession/close.md)
+- [func close() async throws](./close%28%29.md)
   Closes the engagement session.
 
 

@@ -1,7 +1,8 @@
 # location
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The position where the annotation applies.
 
@@ -14,11 +15,16 @@ The position where the annotation applies.
 static let location: NSAccessibility.AnnotationAttributeKey
 ```
 
+```c
+extern NSAccessibilityAnnotationAttributeKey const NSAccessibilityAnnotationLocation;
+```
+
 ## See Also
 
-- [static let label: NSAccessibility.AnnotationAttributeKey](nsaccessibility-swift.struct/annotationattributekey/label.md)
+### Keys
+- [static let label: NSAccessibility.AnnotationAttributeKey](./label.md)
   A description of the annotation.
-- [static let element: NSAccessibility.AnnotationAttributeKey](nsaccessibility-swift.struct/annotationattributekey/element.md)
+- [static let element: NSAccessibility.AnnotationAttributeKey](./element.md)
   The user interface element for the annotation.
 
 

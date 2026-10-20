@@ -1,14 +1,15 @@
 # kGUARD_EXC_REQUIRE_REPLY_PORT_SEMANTICS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_REQUIRE_REPLY_PORT_SEMANTICS = 1u << 23
 ```
 

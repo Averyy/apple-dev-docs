@@ -1,7 +1,8 @@
 # beginFloatingCursor(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the object when the gesture that the system uses to manipulate the cursor begins.
 
@@ -18,6 +19,10 @@ Tells the object when the gesture that the system uses to manipulate the cursor 
 optional func beginFloatingCursor(at point: CGPoint)
 ```
 
+```objc
+- (void) beginFloatingCursorAtPoint:(CGPoint) point;
+```
+
 #### Discussion
 
 UIKit calls this method when the user begins to perform a two-finger pan gesture to pick up the cursor. You can use this method to update the visual state of your text view. For example, you might use this method to display custom visual feedback for cursor movements.
@@ -26,13 +31,14 @@ If you do not implement this method, UIKit provides visual feedback only when th
 
 ## Parameters
 
-- `point`: The point at which the gesture occurred in your view. This point is in the coordinate space of the view in the [`textInputView`](uitextinput/textinputview.md) property.
+- `point`: The point at which the gesture occurred in your view. This point is in the coordinate space of the view in the [`textInputView`](./textinputview.md) property.
 
 ## See Also
 
-- [func updateFloatingCursor(at: CGPoint)](uitextinput/updatefloatingcursor(at:).md)
+### Managing the floating cursor
+- [func updateFloatingCursor(at: CGPoint)](./updatefloatingcursor%28at%29.md)
   Tells the object that the floating cursor moved to a new location.
-- [func endFloatingCursor()](uitextinput/endfloatingcursor.md)
+- [func endFloatingCursor()](./endfloatingcursor%28%29.md)
   Tells the object when the gesture that the system uses to manipulate the cursor ends.
 
 

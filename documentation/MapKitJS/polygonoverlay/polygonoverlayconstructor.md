@@ -1,7 +1,8 @@
 # new PolygonOverlay(points, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a polygon overlay with an array of points and style options.
 
@@ -10,7 +11,7 @@ Creates a polygon overlay with an array of points and style options.
 
 ## Declaration
 
-```swift
+```
 constructor(
     points: CoordinateData[][] | CoordinateData[],
     options?: OverlayOptions,
@@ -34,12 +35,13 @@ The following example shows the `options` parameter for a polygon overlay:
 
 ## Parameters
 
-- `points`: The points in the polygon as an array of arrays of [`Coordinate`](coordinate.md), or an array of [`Coordinate`](coordinate.md). For the latter, MapKit JS autowraps the array with an enclosing array.
+- `points`: The points in the polygon as an array of arrays of [`Coordinate`](../coordinate.md), or an array of [`Coordinate`](../coordinate.md). For the latter, MapKit JS autowraps the array with an enclosing array.
 - `options`: An optional object literal of options for initializing the polygon.
 
 ## See Also
 
-- [interface OverlayOptions](overlayoptions.md)
+### Creating a polygon overlay
+- [interface OverlayOptions](../overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
 
 

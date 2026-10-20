@@ -1,7 +1,8 @@
 # results
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of fetching record information.
 
@@ -10,7 +11,7 @@ The results of fetching record information.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.RecordInfo[] results;
 ```
 

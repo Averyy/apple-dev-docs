@@ -10,13 +10,14 @@ The USB mouse data structure.
 
 ## Declaration
 
-```swift
+```c
 IOUSBMouseData mouse;
 ```
 
 ## See Also
 
-- [kbd](iousbhiddata/1545955-kbd.md)
+### Getting the Properties
+- [kbd](./api-1545955-kbd.md)
   The USB keyboard data structure.
 
 

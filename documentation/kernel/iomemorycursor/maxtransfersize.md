@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOPhysicalLength maxTransferSize;
 ```
 
@@ -15,9 +15,10 @@ Maximum size of a transfer that this memory cursor is allowed to generate
 
 ## See Also
 
-- [outSeg](iomemorycursor/outseg.md)
-- [maxSegmentSize](iomemorycursor/maxsegmentsize.md)
-- [alignMask](iomemorycursor/alignmask.md)
+### Instance Variables
+- [outSeg](./outseg.md)
+- [maxSegmentSize](./maxsegmentsize.md)
+- [alignMask](./alignmask.md)
 
 
 ---

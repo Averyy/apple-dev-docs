@@ -1,7 +1,8 @@
 # clearcoatScale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This BindTarget references a Float type
 

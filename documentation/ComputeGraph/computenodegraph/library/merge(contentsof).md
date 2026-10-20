@@ -1,7 +1,8 @@
 # merge(contentsOf:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Merges nodes from specified library into this library.
 
@@ -12,7 +13,7 @@ Merges nodes from specified library into this library.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

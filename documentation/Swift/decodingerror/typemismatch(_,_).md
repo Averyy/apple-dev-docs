@@ -1,7 +1,8 @@
 # DecodingError.typeMismatch(_:_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that a value of the given type could not be decoded because it did not match the type of what was found in the encoded payload.
 

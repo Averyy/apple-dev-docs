@@ -1,7 +1,8 @@
 # DataFrameTemporalAnnotationParameters.FilePathType
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The file path type to be used.
 
@@ -23,18 +24,18 @@ enum FilePathType
 ## Topics
 
 ### File path types
-- [DataFrameTemporalAnnotationParameters.FilePathType.absolute](dataframetemporalannotationparameters/filepathtype-swift.enum/absolute.md)
+- [DataFrameTemporalAnnotationParameters.FilePathType.absolute](./filepathtype-swift.enum/absolute.md)
   The file path is absolute.
-- [DataFrameTemporalAnnotationParameters.FilePathType.relative(baseURL:)](dataframetemporalannotationparameters/filepathtype-swift.enum/relative(baseurl:).md)
+- [DataFrameTemporalAnnotationParameters.FilePathType.relative(baseURL:)](./filepathtype-swift.enum/relative%28baseurl%29.md)
   The file path is relative to the `baseURL`.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

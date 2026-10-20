@@ -1,7 +1,8 @@
 # MLStyleTransfer.ModelParameters.ValidationData.none
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An empty validation dataset you use to skip model validation.
 
@@ -20,7 +21,8 @@ case none
 
 ## See Also
 
-- [MLStyleTransfer.ModelParameters.ValidationData.content(_:)](mlstyletransfer/modelparameters/validationdata/content(_:).md)
+### Designating validation data
+- [MLStyleTransfer.ModelParameters.ValidationData.content(_:)](./content%28_%29.md)
   The location of a validation image you use to validate the model.
 
 

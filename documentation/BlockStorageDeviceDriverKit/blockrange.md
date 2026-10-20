@@ -1,7 +1,8 @@
 # BlockRange
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a range of blocks.
 
@@ -10,7 +11,7 @@ A structure that represents a range of blocks.
 
 ## Declaration
 
-```swift
+```c
 struct BlockRange;
 ```
 
@@ -21,26 +22,27 @@ The pure virtual function `_DoAsyncUnmap`, which your dext must implement, takes
 ## Topics
 
 ### Accessing Block Range Properties
-- [startBlock](blockrange/startblock.md)
+- [startBlock](./blockrange/startblock.md)
   The address of the first block in this range.
-- [numOfBlocks](blockrange/numofblocks.md)
+- [numOfBlocks](./blockrange/numofblocks.md)
   The number of blocks in this range.
 
 ## See Also
 
-- [DoAsyncUnmap](iouserblockstoragedevice/doasyncunmap.md)
+### Accessing the Device
+- [DoAsyncUnmap](./iouserblockstoragedevice/doasyncunmap.md)
   Sends an asynchronous request to the dext to reclaim storage by unmapping.
-- [DoAsyncSynchronize](iouserblockstoragedevice/doasyncsynchronize.md)
+- [DoAsyncSynchronize](./iouserblockstoragedevice/doasyncsynchronize.md)
   Forces the hardware buffer to flush data blocks to the media.
-- [DoAsyncEjectMedia](iouserblockstoragedevice/doasyncejectmedia.md)
+- [DoAsyncEjectMedia](./iouserblockstoragedevice/doasyncejectmedia.md)
   Ejects the media.
-- [Complete](iouserblockstoragedevice/complete.md)
+- [Complete](./iouserblockstoragedevice/complete.md)
   Indicates that the dext completed an asynchronous call.
-- [DoAsyncReadWrite](iouserblockstoragedevice/doasyncreadwrite.md)
+- [DoAsyncReadWrite](./iouserblockstoragedevice/doasyncreadwrite.md)
   Starts an asynchronous read or write operation.
-- [IOUserStorageOptions](iouserstorageoptions.md)
+- [IOUserStorageOptions](./iouserstorageoptions.md)
   Options that affect the performance of read-write operations.
-- [CompleteIO](iouserblockstoragedevice/completeio.md)
+- [CompleteIO](./iouserblockstoragedevice/completeio.md)
   Indicates that the dext completed an asynchronous read-write call.
 
 

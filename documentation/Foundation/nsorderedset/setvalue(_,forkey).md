@@ -1,7 +1,8 @@
 # setValue(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes `setValue:forKey:` on each of the receiver’s members using the specified value and key
 
@@ -20,6 +21,10 @@ Invokes `setValue:forKey:` on each of the receiver’s members using the specifi
 func setValue(_ value: Any?, forKey key: String)
 ```
 
+```objc
+- (void) setValue:(id) value forKey:(NSString *) key;
+```
+
 ## Parameters
 
 - `value`: The object value.
@@ -27,7 +32,8 @@ func setValue(_ value: Any?, forKey key: String)
 
 ## See Also
 
-- [func value(forKey: String) -> Any](nsorderedset/value(forkey:).md)
+### Key-Value Coding Support
+- [func value(forKey: String) -> Any](./value%28forkey%29.md)
   Returns an ordered set containing the results of invoking `valueForKey:` using key on each of the ordered set’s objects.
 
 

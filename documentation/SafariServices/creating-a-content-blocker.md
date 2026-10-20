@@ -1,6 +1,7 @@
 # Creating a content blocker
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Create a content blocker for Safari in Xcode.
 
@@ -12,17 +13,17 @@ You use a containing app to contain and deliver a content blocker in the App Sto
 
 When the content blocker launches, it communicates with its containing app through a set of shared resources, and it communicates directly with Safari.
 
-![An image showing a content blocker communicating with various resources.](/images/com.apple.safariservices/media-4047829@2x.png)
+![An image showing a content blocker communicating with various resources.](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-4047829@2x.png)
 
 Apps tell Safari in advance what kinds of content to block. Because Safari doesn’t have to consult with the app during loading, and because Xcode compiles content blockers into bytecode, this model runs efficiently. Additionally, content blockers have no knowledge of users’ history or the websites they visit.
 
-##### Add the Extension Target to Your Containing App
+##### Add the extension target to your containing app
 
 Choose File > New > Target and select Content Blocker Extension. Click Next and give your content blocker a name.
 
-![An Xcode screenshot showing the Content Blocker Extension option selected in the Choose a template for your new target dialog.](/images/com.apple.safariservices/media-4047980@2x.png)
+![An Xcode screenshot showing the Content Blocker Extension option selected in the Choose a template for your new target dialog.](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-4047980@2x.png)
 
-##### Add Behaviors to Your Content Blocker
+##### Add behaviors to your content blocker
 
 In your Xcode project, open the folder with the same title as your content blocker. This folder contains the action request handler and a JSON file, along with a property list file and an entitlements file. Open the `blockerList.json` file.
 
@@ -49,7 +50,7 @@ In the JSON file, write rules to define content-blocking behaviors. Each rule is
 ]
 ```
 
-##### Add Triggers to Your Content Blocker
+##### Add triggers to your content blocker
 
 A trigger dictionary must include a `url-filter` key, which specifies a pattern to match the URL against. The remaining keys are optional and modify the behavior of the trigger. For example, you can limit the trigger to specific domains or have it not apply when Safari finds a match for a specific domain.
 
@@ -63,7 +64,7 @@ For example, to write a trigger for image and style sheet resources that Safari 
 }
 ```
 
-###### Capture Urls By Pattern
+###### Capture URLs by pattern
 
 In `url-filter`, match more than just a specific URL, using regular expressions.
 
@@ -78,7 +79,7 @@ In `url-filter`, match more than just a specific URL, using regular expressions.
 | `*` | Matches the preceding character zero or more times. |
 | `?` | Matches the preceding character zero or one time. |
 
-###### Use Trigger Fields to Define Patterns
+###### Use trigger fields to define patterns
 
 There are many valid trigger fields you can use to define patterns.
 
@@ -95,7 +96,7 @@ There are many valid trigger fields you can use to define patterns.
 | `unless-frame-url` | An array of strings to match to the frame’s document URL; acts on any site except URL patterns in the provided list. The values must be lowercase ASCII, or Punycode for non-ASCII. You can’t use this with `if-frame-url`. |
 | `load-context` | An array of strings that specify loading contexts. Valid values are `top-frame` and `child-frame`. |
 
-##### Add Actions to Your Content Blocker
+##### Add actions to your content blocker
 
 When a trigger matches a resource, the browser queues the associated action for execution. Safari evaluates all the triggers, and executes the actions in order. When a domain matches a trigger, Safari skips all rules after the triggered rule that specify the same action.
 
@@ -112,7 +113,7 @@ For example, you can specify the following type and selector:
 }
 ```
 
-###### Select Values for the Type Field
+###### Select values for the type field
 
 | Syntax | Description |
 | --- | --- |
@@ -126,9 +127,10 @@ For the `selector` field, specify a string that defines a selector list. This va
 
 ## See Also
 
-- [class SFContentBlockerManager](sfcontentblockermanager.md)
+### Content blockers
+- [class SFContentBlockerManager](./sfcontentblockermanager.md)
   A class that your app uses to interact with a content blocker extension.
-- [class SFContentBlockerState](sfcontentblockerstate.md)
+- [class SFContentBlockerState](./sfcontentblockerstate.md)
   The state of a content blocker extension.
 
 

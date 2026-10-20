@@ -1,7 +1,8 @@
 # AttributedString.TextAlignment.left
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The left edge of each line is aligned to the left edge of the container.
 

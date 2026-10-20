@@ -1,7 +1,8 @@
 # removeAllAnimations()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove all animations attached to the layer.
 
@@ -19,15 +20,20 @@ Remove all animations attached to the layer.
 func removeAllAnimations()
 ```
 
+```objc
+- (void) removeAllAnimations;
+```
+
 ## See Also
 
-- [func add(CAAnimation, forKey: String?)](calayer/add(_:forkey:).md)
+### Layer animations
+- [func add(CAAnimation, forKey: String?)](./add%28_,forkey%29.md)
   Add the specified animation object to the layer’s render tree.
-- [func animation(forKey: String) -> CAAnimation?](calayer/animation(forkey:).md)
+- [func animation(forKey: String) -> CAAnimation?](./animation%28forkey%29.md)
   Returns the animation object with the specified identifier.
-- [func removeAnimation(forKey: String)](calayer/removeanimation(forkey:).md)
+- [func removeAnimation(forKey: String)](./removeanimation%28forkey%29.md)
   Remove the animation object with the specified key.
-- [func animationKeys() -> [String]?](calayer/animationkeys.md)
+- [func animationKeys() -> [String]?](./animationkeys%28%29.md)
   Returns an array of strings that identify the animations currently attached to the layer.
 
 

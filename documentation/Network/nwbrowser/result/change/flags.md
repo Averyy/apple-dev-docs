@@ -1,7 +1,8 @@
 # NWBrowser.Result.Change.Flags
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Flags providing details about a change in a discovered service.
 
@@ -23,36 +24,37 @@ struct Flags
 ## Topics
 
 ### Change Flags
-- [static let identical: NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags/identical.md)
+- [static let identical: NWBrowser.Result.Change.Flags](./flags/identical.md)
   The results are identical.
-- [static let interfaceAdded: NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags/interfaceadded.md)
+- [static let interfaceAdded: NWBrowser.Result.Change.Flags](./flags/interfaceadded.md)
   The service was discovered over a new interface.
-- [static let interfaceRemoved: NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags/interfaceremoved.md)
+- [static let interfaceRemoved: NWBrowser.Result.Change.Flags](./flags/interfaceremoved.md)
   The service was no longer discovered over a certain interface.
-- [static let metadataChanged: NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags/metadatachanged.md)
+- [static let metadataChanged: NWBrowser.Result.Change.Flags](./flags/metadatachanged.md)
   The service’s associated metadata changed.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [OptionSet](../../../../Swift/optionset.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NWBrowser.Result.Change.identical](nwbrowser/result/change/identical.md)
+### Inspecting Change Types
+- [NWBrowser.Result.Change.identical](./identical.md)
   No change was detected for the result.
-- [NWBrowser.Result.Change.added(_:)](nwbrowser/result/change/added(_:).md)
+- [NWBrowser.Result.Change.added(_:)](./added%28_%29.md)
   A new result was discovered.
-- [NWBrowser.Result.Change.removed(_:)](nwbrowser/result/change/removed(_:).md)
+- [NWBrowser.Result.Change.removed(_:)](./removed%28_%29.md)
   A previously discovered result was removed.
-- [case changed(old: NWBrowser.Result, new: NWBrowser.Result, flags: NWBrowser.Result.Change.Flags)](nwbrowser/result/change/changed(old:new:flags:).md)
+- [case changed(old: NWBrowser.Result, new: NWBrowser.Result, flags: NWBrowser.Result.Change.Flags)](./changed%28old,new,flags%29.md)
   A result changed properties but was not removed.
 
 

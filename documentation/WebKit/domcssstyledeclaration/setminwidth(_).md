@@ -1,7 +1,8 @@
 # setMinWidth(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setMinWidth(_ minWidth: String!)
+```
+
+```objc
+- (void) setMinWidth:(NSString *) minWidth;
 ```
 
 

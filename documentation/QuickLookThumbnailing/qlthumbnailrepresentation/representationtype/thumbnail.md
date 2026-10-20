@@ -1,7 +1,8 @@
 # QLThumbnailRepresentation.RepresentationType.thumbnail
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A thumbnail representation of an image.
 
@@ -18,11 +19,16 @@ A thumbnail representation of an image.
 case thumbnail
 ```
 
+```c
+QLThumbnailRepresentationTypeThumbnail
+```
+
 ## See Also
 
-- [QLThumbnailRepresentation.RepresentationType.icon](qlthumbnailrepresentation/representationtype/icon.md)
+### Enumeration Cases
+- [QLThumbnailRepresentation.RepresentationType.icon](./icon.md)
   A file icon representation of an image.
-- [QLThumbnailRepresentation.RepresentationType.lowQualityThumbnail](qlthumbnailrepresentation/representationtype/lowqualitythumbnail.md)
+- [QLThumbnailRepresentation.RepresentationType.lowQualityThumbnail](./lowqualitythumbnail.md)
   A cached thumbnail representation of an image.
 
 

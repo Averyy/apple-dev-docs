@@ -1,7 +1,8 @@
 # addingPercentEncoding(withAllowedCharacters:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string created by replacing all characters not in the specified set with percent-encoded characters.
 

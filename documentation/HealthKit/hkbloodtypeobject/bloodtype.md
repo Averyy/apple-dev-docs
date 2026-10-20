@@ -1,7 +1,8 @@
 # bloodType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blood type.
 
@@ -19,14 +20,18 @@ The blood type.
 var bloodType: HKBloodType { get }
 ```
 
+```objc
+@property (readonly) HKBloodType bloodType;
+```
+
 #### Discussion
 
-For a list of possible blood types, see [`HKBloodType`](hkbloodtype.md).
+For a list of possible blood types, see [`HKBloodType`](../hkbloodtype.md).
 
 ## Topics
 
 ### Valid Blood Types
-- [enum HKBloodType](hkbloodtype.md)
+- [enum HKBloodType](../hkbloodtype.md)
   Constants indicating the user’s blood type.
 
 

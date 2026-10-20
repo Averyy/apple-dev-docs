@@ -1,7 +1,8 @@
 # init(forOpeningContentTypes:asCopy:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a document picker that can open or copy the types of documents you specify.
 
@@ -17,20 +18,25 @@ Creates and returns a document picker that can open or copy the types of documen
 init(forOpeningContentTypes contentTypes: [UTType], asCopy: Bool)
 ```
 
+```objc
+- (instancetype) initForOpeningContentTypes:(NSArray<UTType *> *) contentTypes asCopy:(BOOL) asCopy;
+```
+
 ## Parameters
 
-- `contentTypes`: An array of uniform type identifiers for the document picker to display. For more information, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
+- `contentTypes`: An array of uniform type identifiers for the document picker to display. For more information, see [Uniform Type Identifiers](../../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 - `asCopy`: A Boolean value that indicates whether the document picker copies the selected document.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uidocumentpickerviewcontroller/init(coder:).md)
+### Creating a document picker
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns an initialized object from data in a specified unarchiver.
-- [convenience init(forExporting: [URL])](uidocumentpickerviewcontroller/init(forexporting:).md)
+- [convenience init(forExporting: [URL])](./init%28forexporting%29.md)
   Creates and returns a document picker that can export the types of documents you specify.
-- [init(forExporting: [URL], asCopy: Bool)](uidocumentpickerviewcontroller/init(forexporting:ascopy:).md)
+- [init(forExporting: [URL], asCopy: Bool)](./init%28forexporting,ascopy%29.md)
   Creates and returns a document picker that can export or copy the types of documents you specify.
-- [convenience init(forOpeningContentTypes: [UTType])](uidocumentpickerviewcontroller/init(foropeningcontenttypes:).md)
+- [convenience init(forOpeningContentTypes: [UTType])](./init%28foropeningcontenttypes%29.md)
   Creates and returns a document picker that can open the types of documents you specify.
 
 

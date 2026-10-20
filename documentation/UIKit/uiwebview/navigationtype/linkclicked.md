@@ -1,13 +1,14 @@
 # UIWebView.NavigationType.linkClicked
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User tapped a link.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ User tapped a link.
 case linkClicked
 ```
 
+```c
+UIWebViewNavigationTypeLinkClicked
+```
+
 ## See Also
 
-- [UIWebView.NavigationType.formSubmitted](uiwebview/navigationtype/formsubmitted.md)
+### Constants
+- [UIWebView.NavigationType.formSubmitted](./formsubmitted.md)
   User submitted a form.
-- [UIWebView.NavigationType.backForward](uiwebview/navigationtype/backforward.md)
+- [UIWebView.NavigationType.backForward](./backforward.md)
   User tapped the back or forward button.
-- [UIWebView.NavigationType.reload](uiwebview/navigationtype/reload.md)
+- [UIWebView.NavigationType.reload](./reload.md)
   User tapped the reload button.
-- [UIWebView.NavigationType.formResubmitted](uiwebview/navigationtype/formresubmitted.md)
+- [UIWebView.NavigationType.formResubmitted](./formresubmitted.md)
   User resubmitted a form.
-- [UIWebView.NavigationType.other](uiwebview/navigationtype/other.md)
+- [UIWebView.NavigationType.other](./other.md)
   Some other action occurred.
 
 

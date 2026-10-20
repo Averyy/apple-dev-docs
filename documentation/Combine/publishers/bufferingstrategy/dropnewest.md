@@ -1,7 +1,8 @@
 # Publishers.BufferingStrategy.dropNewest
 
 **Framework**: Combine  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 When the buffer is full, discard the newly received element.
 
@@ -22,9 +23,10 @@ case dropNewest
 
 ## See Also
 
-- [Publishers.BufferingStrategy.dropOldest](publishers/bufferingstrategy/dropoldest.md)
+### Buffering strategies
+- [Publishers.BufferingStrategy.dropOldest](./dropoldest.md)
   When the buffer is full, discard the oldest element in the buffer.
-- [Publishers.BufferingStrategy.customError(_:)](publishers/bufferingstrategy/customerror(_:).md)
+- [Publishers.BufferingStrategy.customError(_:)](./customerror%28_%29.md)
   When the buffer is full, execute the closure to provide a custom error.
 
 

@@ -1,7 +1,8 @@
 # init(authorization:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a file manager object that is authorized to perform privileged file system operations.
 
@@ -14,9 +15,14 @@ Initializes a file manager object that is authorized to perform privileged file 
 convenience init(authorization: NSWorkspace.Authorization)
 ```
 
+```objc
++ (instancetype) fileManagerWithAuthorization:(NSWorkspaceAuthorization *) authorization;
+```
+
 ## See Also
 
-- [class var `default`: FileManager](filemanager/default.md)
+### Creating a file manager
+- [class var `default`: FileManager](./default.md)
   The shared file manager object for the process.
 
 

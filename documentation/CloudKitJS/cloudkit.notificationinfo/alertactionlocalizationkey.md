@@ -1,7 +1,8 @@
 # alertActionLocalizationKey
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A key to get a localized right button title that appears in the alert dialog.
 
@@ -10,7 +11,7 @@ A key to get a localized right button title that appears in the alert dialog.
 
 ## Declaration
 
-```swift
+```
 attribute String alertActionLocalizationKey;
 ```
 

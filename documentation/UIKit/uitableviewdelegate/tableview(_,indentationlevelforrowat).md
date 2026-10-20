@@ -1,7 +1,8 @@
 # tableView(_:indentationLevelForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to return the level of indentation for a row in a given section.
 
@@ -18,6 +19,10 @@ Asks the delegate to return the level of indentation for a row in a given sectio
 optional func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int
 ```
 
+```objc
+- (NSInteger) tableView:(UITableView *) tableView indentationLevelForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
 Returns the depth of the specified row to show its hierarchical position in the section.
@@ -29,9 +34,10 @@ Returns the depth of the specified row to show its hierarchical position in the 
 
 ## See Also
 
-- [func tableView(UITableView, willDisplay: UITableViewCell, forRowAt: IndexPath)](uitableviewdelegate/tableview(_:willdisplay:forrowat:).md)
+### Configuring rows for the table view
+- [func tableView(UITableView, willDisplay: UITableViewCell, forRowAt: IndexPath)](./tableview%28_,willdisplay,forrowat%29.md)
   Tells the delegate the table view is about to draw a cell for a particular row.
-- [func tableView(UITableView, shouldSpringLoadRowAt: IndexPath, with: any UISpringLoadedInteractionContext) -> Bool](uitableviewdelegate/tableview(_:shouldspringloadrowat:with:).md)
+- [func tableView(UITableView, shouldSpringLoadRowAt: IndexPath, with: any UISpringLoadedInteractionContext) -> Bool](./tableview%28_,shouldspringloadrowat,with%29.md)
   Called to let you fine tune the spring-loading behavior of the rows in a table.
 
 

@@ -1,7 +1,8 @@
 # SegmentBlendType
 
 **Framework**: hvf  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The blend type for a segment of a path
 
@@ -23,25 +24,25 @@ enum SegmentBlendType
 ## Topics
 
 ### Enumeration Cases
-- [SegmentBlendType.corner](segmentblendtype/corner.md)
+- [SegmentBlendType.corner](./segmentblendtype/corner.md)
   Segment is a corner segment
-- [SegmentBlendType.curve](segmentblendtype/curve.md)
+- [SegmentBlendType.curve](./segmentblendtype/curve.md)
   Segment is a curve segment
-- [SegmentBlendType.tangent](segmentblendtype/tangent.md)
+- [SegmentBlendType.tangent](./segmentblendtype/tangent.md)
   Segment is an isolated tangent segment
-- [SegmentBlendType.tangentTangent1](segmentblendtype/tangenttangent1.md)
+- [SegmentBlendType.tangentTangent1](./segmentblendtype/tangenttangent1.md)
   Segment is the first of two tangents in a row
-- [SegmentBlendType.tangentTangent2](segmentblendtype/tangenttangent2.md)
+- [SegmentBlendType.tangentTangent2](./segmentblendtype/tangenttangent2.md)
   Segment is the second of two tangents in a row
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

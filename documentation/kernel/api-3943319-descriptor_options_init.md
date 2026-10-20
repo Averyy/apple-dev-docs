@@ -1,14 +1,15 @@
 # descriptor_options_init
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 void descriptor_options_init(descriptor_options options);
 ```
 

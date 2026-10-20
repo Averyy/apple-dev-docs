@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the digest by feeding them into the given hash function.
 
@@ -22,7 +23,7 @@ func hash(into hasher: inout Hasher)
 
 #### Discussion
 
-This method is part of the digest’s conformance to Swift standard library’s [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol, making it possible to compare digests. Don’t confuse that hashing with the cryptographically secure hashing that you use to create the digest in the first place by, for example, calling `SHA256/hash(data:)`.
+This method is part of the digest’s conformance to Swift standard library’s [`Hashable`](../../Swift/hashable.md) protocol, making it possible to compare digests. Don’t confuse that hashing with the cryptographically secure hashing that you use to create the digest in the first place by, for example, calling `SHA256/hash(data:)`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # RelativeDateTimeFormatter.UnitsStyle.abbreviated
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that uses abbreviated units, such as “2 mo. ago”.
 
@@ -20,17 +21,22 @@ A style that uses abbreviated units, such as “2 mo. ago”.
 case abbreviated
 ```
 
+```c
+NSRelativeDateTimeFormatterUnitsStyleAbbreviated
+```
+
 #### Discussion
 
 This style may give different results in languages other than English.
 
 ## See Also
 
-- [RelativeDateTimeFormatter.UnitsStyle.full](relativedatetimeformatter/unitsstyle-swift.enum/full.md)
+### Formatting Date and Time Units
+- [RelativeDateTimeFormatter.UnitsStyle.full](./full.md)
   A style that uses full units, such as “2 months ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.short](relativedatetimeformatter/unitsstyle-swift.enum/short.md)
+- [RelativeDateTimeFormatter.UnitsStyle.short](./short.md)
   A style that uses shortened units, such as “2 mo. ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.spellOut](relativedatetimeformatter/unitsstyle-swift.enum/spellout.md)
+- [RelativeDateTimeFormatter.UnitsStyle.spellOut](./spellout.md)
   A style that spells out units such as “two months ago”.
 
 

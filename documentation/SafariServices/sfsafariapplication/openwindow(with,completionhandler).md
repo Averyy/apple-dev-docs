@@ -1,7 +1,8 @@
 # openWindow(with:completionHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens a new window with the desired webpage.
 
@@ -11,14 +12,26 @@ Opens a new window with the desired webpage.
 ## Declaration
 
 ```swift
+class func openWindow(with url: URL, completionHandler: (@Sendable (SFSafariWindow?) -> Void)? = nil)
+```
+
+```swift
 class func openWindow(with url: URL) async -> SFSafariWindow?
+```
+
+```objc
++ (void) openWindowWithURL:(NSURL *) url completionHandler:(void (^)(SFSafariWindow *window)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-class func openWindow(with url: URL) async -> SFSafariWindow?
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> class func openWindow(with url: URL) async -> SFSafariWindow?
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
@@ -27,9 +40,10 @@ class func openWindow(with url: URL) async -> SFSafariWindow?
 
 ## See Also
 
-- [class func getActiveWindow(completionHandler: (SFSafariWindow?) -> Void)](sfsafariapplication/getactivewindow(completionhandler:).md)
+### Working with Windows
+- [class func getActiveWindow(completionHandler: (SFSafariWindow?) -> Void)](./getactivewindow%28completionhandler%29.md)
   Calls the completion handler with the active browser window.
-- [class func showPreferencesForExtension(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](sfsafariapplication/showpreferencesforextension(withidentifier:completionhandler:).md)
+- [class func showPreferencesForExtension(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](./showpreferencesforextension%28withidentifier,completionhandler%29.md)
   Launches Safari and opens the preferences panel for a Safari app extension.
 
 

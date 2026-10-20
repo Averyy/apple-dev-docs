@@ -1,7 +1,8 @@
 # init(_:title:systemImageName:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a collection of options for App Shortcuts with the specified parameters.
 
@@ -11,7 +12,7 @@ Initializes a collection of options for App Shortcuts with the specified paramet
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # annotationForMapFeature
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The method MapKit JS calls when the framework creates a map feature annotation.
 
@@ -10,7 +11,7 @@ The method MapKit JS calls when the framework creates a map feature annotation.
 
 ## Declaration
 
-```swift
+```
 annotationForMapFeature?: (
     mapFeatureAnnotation: MapFeatureAnnotation,
 ) => Annotation | undefined;

@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the shared Media Library Browser instance.
 
@@ -12,6 +13,10 @@ Returns the shared Media Library Browser instance.
 
 ```swift
 class var shared: NSMediaLibraryBrowserController { get }
+```
+
+```objc
+@property (class, strong, readonly) NSMediaLibraryBrowserController * sharedMediaLibraryBrowserController;
 ```
 
 #### Return Value

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a depth-stencil state instance.
@@ -11,7 +12,7 @@ Creates a depth-stencil state instance.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,17 @@ Creates a depth-stencil state instance.
 func makeDepthStencilState(descriptor: MTLDepthStencilDescriptor) -> (any MTLDepthStencilState)?
 ```
 
+```objc
+- (id<MTLDepthStencilState>) newDepthStencilStateWithDescriptor:(MTLDepthStencilDescriptor *) descriptor;
+```
+
 #### Return Value
 
-A new [`MTLDepthStencilState`](mtldepthstencilstate.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLDepthStencilState`](../mtldepthstencilstate.md) instance if the method completed successfully; otherwise `nil`.
 
 ## Parameters
 
-- `descriptor`: An [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance.
+- `descriptor`: An [`MTLDepthStencilDescriptor`](../mtldepthstencildescriptor.md) instance.
 
 
 ---

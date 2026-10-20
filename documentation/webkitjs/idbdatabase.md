@@ -1,7 +1,8 @@
 # IDBDatabase
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,25 +10,25 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBDatabase
 ```
 
 ## Topics
 
 ### Instance Properties
-- [name](idbdatabase/1634315-name.md)
-- [objectStoreNames](idbdatabase/1628836-objectstorenames.md)
-- [onabort](idbdatabase/1630007-onabort.md)
-- [onclose](idbdatabase/2871211-onclose.md)
-- [onerror](idbdatabase/1632273-onerror.md)
-- [onversionchange](idbdatabase/1634380-onversionchange.md)
-- [version](idbdatabase/1634017-version.md)
+- [name](./idbdatabase/api-1634315-name.md)
+- [objectStoreNames](./idbdatabase/api-1628836-objectstorenames.md)
+- [onabort](./idbdatabase/api-1630007-onabort.md)
+- [onclose](./idbdatabase/api-2871211-onclose.md)
+- [onerror](./idbdatabase/api-1632273-onerror.md)
+- [onversionchange](./idbdatabase/api-1634380-onversionchange.md)
+- [version](./idbdatabase/api-1634017-version.md)
 ### Instance Methods
-- [close](idbdatabase/1630199-close.md)
-- [createObjectStore](idbdatabase/1630957-createobjectstore.md)
-- [deleteObjectStore](idbdatabase/1631514-deleteobjectstore.md)
-- [transaction](idbdatabase/1634210-transaction.md)
+- [close](./idbdatabase/api-1630199-close.md)
+- [createObjectStore](./idbdatabase/api-1630957-createobjectstore.md)
+- [deleteObjectStore](./idbdatabase/api-1631514-deleteobjectstore.md)
+- [transaction](./idbdatabase/api-1634210-transaction.md)
 
 ## Relationships
 

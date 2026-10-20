@@ -1,7 +1,8 @@
 # CWSecurity.wpaPersonalMixed
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 WPA/WPA2 Personal authentication.
 
@@ -14,35 +15,40 @@ WPA/WPA2 Personal authentication.
 case wpaPersonalMixed
 ```
 
+```c
+kCWSecurityWPAPersonalMixed
+```
+
 ## See Also
 
-- [CWSecurity.none](cwsecurity/none.md)
+### Constants
+- [CWSecurity.none](./none.md)
   Open System authentication.
-- [CWSecurity.WEP](cwsecurity/wep.md)
+- [CWSecurity.WEP](./wep.md)
   WEP security.
-- [CWSecurity.wpaPersonal](cwsecurity/wpapersonal.md)
+- [CWSecurity.wpaPersonal](./wpapersonal.md)
   WPA Personal authentication.
-- [CWSecurity.wpa2Personal](cwsecurity/wpa2personal.md)
+- [CWSecurity.wpa2Personal](./wpa2personal.md)
   WPA2 Personal authentication.
-- [CWSecurity.personal](cwsecurity/personal.md)
+- [CWSecurity.personal](./personal.md)
   Personal authentication.
-- [CWSecurity.dynamicWEP](cwsecurity/dynamicwep.md)
+- [CWSecurity.dynamicWEP](./dynamicwep.md)
   Dynamic WEP security.
-- [CWSecurity.wpaEnterprise](cwsecurity/wpaenterprise.md)
+- [CWSecurity.wpaEnterprise](./wpaenterprise.md)
   WPA Enterprise authentication.
-- [CWSecurity.wpaEnterpriseMixed](cwsecurity/wpaenterprisemixed.md)
+- [CWSecurity.wpaEnterpriseMixed](./wpaenterprisemixed.md)
   WPA/WPA2 Enterprise authentication.
-- [CWSecurity.wpa2Enterprise](cwsecurity/wpa2enterprise.md)
+- [CWSecurity.wpa2Enterprise](./wpa2enterprise.md)
   WPA2 Enterprise authentication.
-- [CWSecurity.enterprise](cwsecurity/enterprise.md)
+- [CWSecurity.enterprise](./enterprise.md)
   Enterprise authentication.
-- [CWSecurity.wpa3Personal](cwsecurity/wpa3personal.md)
+- [CWSecurity.wpa3Personal](./wpa3personal.md)
   WPA3 Personal authentication.
-- [CWSecurity.wpa3Enterprise](cwsecurity/wpa3enterprise.md)
+- [CWSecurity.wpa3Enterprise](./wpa3enterprise.md)
   WPA3 Enterprise authentication.
-- [CWSecurity.wpa3Transition](cwsecurity/wpa3transition.md)
+- [CWSecurity.wpa3Transition](./wpa3transition.md)
   WPA3 Transition (WPA3/WPA2 Personal) authentication.
-- [CWSecurity.unknown](cwsecurity/unknown.md)
+- [CWSecurity.unknown](./unknown.md)
   Unknown security type.
 
 

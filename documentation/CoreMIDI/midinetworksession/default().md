@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default singleton session.
 
@@ -18,15 +19,20 @@ Returns the default singleton session.
 class func `default`() -> MIDINetworkSession
 ```
 
+```objc
++ (MIDINetworkSession *) defaultSession;
+```
+
 #### Return Value
 
 The default session.
 
 ## See Also
 
-- [var isEnabled: Bool](midinetworksession/isenabled.md)
+### Configuring a Session
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the session is enabled.
-- [var connectionPolicy: MIDINetworkConnectionPolicy](midinetworksession/connectionpolicy.md)
+- [var connectionPolicy: MIDINetworkConnectionPolicy](./connectionpolicy.md)
   The policy that determines who can connect to this session.
 
 

@@ -1,7 +1,8 @@
 # AppSchema.MessagesEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the messages domain.
 
@@ -21,31 +22,32 @@ protocol MessagesEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var conversation: some AppSchemaEntity](appschema/messagesentity/conversation.md)
+- [var conversation: some AppSchemaEntity](./messagesentity/conversation.md)
   An entity schema for a conversation.
-- [var customAttachment: some AppSchemaEntity](appschema/messagesentity/customattachment.md)
+- [var customAttachment: some AppSchemaEntity](./messagesentity/customattachment.md)
   An entity schema for a custom attachment.
-- [var message: some AppSchemaEntity](appschema/messagesentity/message.md)
+- [var message: some AppSchemaEntity](./messagesentity/message.md)
   An entity schema for a message.
-- [var messagePerson: some AppSchemaEntity](appschema/messagesentity/messageperson.md)
+- [var messagePerson: some AppSchemaEntity](./messagesentity/messageperson.md)
   An entity schema for a message person.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var conversation: some AppSchemaEntity](appschema/messagesentity/conversation.md)
+### Content and parameter types
+- [var conversation: some AppSchemaEntity](./messagesentity/conversation.md)
   An entity schema for a conversation.
-- [var customAttachment: some AppSchemaEntity](appschema/messagesentity/customattachment.md)
+- [var customAttachment: some AppSchemaEntity](./messagesentity/customattachment.md)
   An entity schema for a custom attachment.
-- [var message: some AppSchemaEntity](appschema/messagesentity/message.md)
+- [var message: some AppSchemaEntity](./messagesentity/message.md)
   An entity schema for a message.
-- [var messagePerson: some AppSchemaEntity](appschema/messagesentity/messageperson.md)
+- [var messagePerson: some AppSchemaEntity](./messagesentity/messageperson.md)
   An entity schema for a message person.
 
 

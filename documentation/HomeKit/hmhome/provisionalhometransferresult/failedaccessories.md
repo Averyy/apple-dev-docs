@@ -1,7 +1,8 @@
 # failedAccessories
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of accessories that failed to transfer to a person’s home hub.
 
@@ -17,11 +18,12 @@ var failedAccessories: [HMHome.ProvisionalHomeTransferResult.FailedAccessory]
 
 ## See Also
 
-- [var transferredAccessories: [HMHome.ProvisionalHomeTransferResult.TransferredAccessory]](hmhome/provisionalhometransferresult/transferredaccessories.md)
+### Inspecting transfer outcomes
+- [var transferredAccessories: [HMHome.ProvisionalHomeTransferResult.TransferredAccessory]](./transferredaccessories.md)
   An array of accessories that you transferred from a temporary home to a person’s home hub.
-- [HMHome.ProvisionalHomeTransferResult.TransferredAccessory](hmhome/provisionalhometransferresult/transferredaccessory.md)
+- [HMHome.ProvisionalHomeTransferResult.TransferredAccessory](./transferredaccessory.md)
   An accessory that you transferred from a temporary home to a person’s home hub.
-- [HMHome.ProvisionalHomeTransferResult.FailedAccessory](hmhome/provisionalhometransferresult/failedaccessory.md)
+- [HMHome.ProvisionalHomeTransferResult.FailedAccessory](./failedaccessory.md)
   An accessory that HomeKit was unable to transfer to a person’s home hub.
 
 

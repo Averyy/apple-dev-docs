@@ -1,7 +1,8 @@
 # setCursorVisible(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls the visibility of the cursor.
 
@@ -16,6 +17,10 @@ Controls the visibility of the cursor.
 
 ```swift
 func setCursorVisible(_ visible: Bool, animated: Bool)
+```
+
+```objc
+- (void) setCursorVisible:(BOOL) visible animated:(BOOL) animated;
 ```
 
 

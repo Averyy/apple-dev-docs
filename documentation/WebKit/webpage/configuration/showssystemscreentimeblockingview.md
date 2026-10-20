@@ -1,7 +1,8 @@
 # showsSystemScreenTimeBlockingView
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the webpage should use the system Screen Time blocking view.
 

@@ -1,7 +1,8 @@
 # ReversedCollection.Index
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An index that traverses the same positions as an underlying index, with inverted traversal direction.
 
@@ -21,27 +22,29 @@ An index that traverses the same positions as an underlying index, with inverted
 struct Index
 ```
 
+Available when `Base` conforms to `BidirectionalCollection`.
+
 ## Topics
 
 ### Initializers
-- [init(Base.Index)](reversedcollection/index/init(_:).md)
+- [init(Base.Index)](./index/init%28_%29.md)
   Creates a new index into a reversed collection for the position before the specified index.
 ### Instance Properties
-- [let base: Base.Index](reversedcollection/index/base.md)
+- [let base: Base.Index](./index/base.md)
   The position after this position in the underlying collection.
 ### Default Implementations
-- [Comparable Implementations](reversedcollection/index/comparable-implementations.md)
-- [Equatable Implementations](reversedcollection/index/equatable-implementations.md)
-- [Hashable Implementations](reversedcollection/index/hashable-implementations.md)
+- [Comparable Implementations](./index/comparable-implementations.md)
+- [Equatable Implementations](./index/equatable-implementations.md)
+- [Hashable Implementations](./index/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

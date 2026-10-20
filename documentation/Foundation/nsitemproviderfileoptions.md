@@ -1,7 +1,8 @@
 # NSItemProviderFileOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Data-access specifications that declare how to handle items.
 
@@ -20,45 +21,50 @@ Data-access specifications that declare how to handle items.
 struct NSItemProviderFileOptions
 ```
 
+```c
+enum NSItemProviderFileOptions : NSInteger;
+```
+
 ## Topics
 
 ### Creating File Options
-- [init(rawValue: Int)](nsitemproviderfileoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./nsitemproviderfileoptions/init%28rawvalue%29.md)
 ### File Options
-- [static var openInPlace: NSItemProviderFileOptions](nsitemproviderfileoptions/openinplace.md)
+- [static var openInPlace: NSItemProviderFileOptions](./nsitemproviderfileoptions/openinplace.md)
   A data-access specification declaring that items should open in place, rather than being copied.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [NSItemProvider.CompletionHandler](nsitemprovider/completionhandler.md)
+### Constants
+- [NSItemProvider.CompletionHandler](./nsitemprovider/completionhandler.md)
   A block that receives the item provider’s data.
-- [NSItemProvider.LoadHandler](nsitemprovider/loadhandler.md)
+- [NSItemProvider.LoadHandler](./nsitemprovider/loadhandler.md)
   A block that loads the item provider’s data and coerces it to the specified type.
-- [Options Dictionary Key](options-dictionary-key.md)
+- [Options Dictionary Key](./options-dictionary-key.md)
   Keys indicating options to use when generating the item provider’s data.
-- [Keys for Items Accessed in JavaScript Code](keys-for-items-accessed-in-javascript-code.md)
+- [Keys for Items Accessed in JavaScript Code](./keys-for-items-accessed-in-javascript-code.md)
   Keys in property list items that the system recieves from or sends to JavaScript code.
-- [class let errorDomain: String](nsitemprovider/errordomain.md)
+- [class let errorDomain: String](./nsitemprovider/errordomain.md)
   The error domain associated with the item provider.
-- [protocol NSItemProviderReading](nsitemproviderreading.md)
+- [protocol NSItemProviderReading](./nsitemproviderreading.md)
   The protocol for implementing a class to allow an item provider to create an instance of the class.
-- [protocol NSItemProviderWriting](nsitemproviderwriting.md)
+- [protocol NSItemProviderWriting](./nsitemproviderwriting.md)
   The protocol for implementing a class to allow an item provider to retrieve data from an instance of the class.
-- [enum NSItemProviderRepresentationVisibility](nsitemproviderrepresentationvisibility.md)
+- [enum NSItemProviderRepresentationVisibility](./nsitemproviderrepresentationvisibility.md)
   Specifications that control which categories of processes can see an item.
-- [NSItemProvider.ErrorCode](nsitemprovider/errorcode.md)
+- [NSItemProvider.ErrorCode](./nsitemprovider/errorcode.md)
   The error codes that describe problems with consuming data from an item provider.
 
 

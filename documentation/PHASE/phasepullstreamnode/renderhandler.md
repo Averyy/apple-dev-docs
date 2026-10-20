@@ -1,7 +1,8 @@
 # renderHandler
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var renderHandler: PHASEPullStreamRenderHandler { get set }
+```
+
+```objc
+@property (nonatomic, strong) PHASEPullStreamRenderBlock renderBlock;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # contentUnavailableConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current content-unavailable configuration of the view controller.
 
@@ -10,7 +11,7 @@ The current content-unavailable configuration of the view controller.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ The current content-unavailable configuration of the view controller.
 
 #### Discussion
 
-Use this property to configure a content-unavailable view that the view controller manages. The value of this property is commonly an instance of [`UIContentUnavailableConfiguration`](uicontentunavailableconfiguration-swift.struct.md), but you can use other types of content configuration, including a [`UIHostingConfiguration`](https://developer.apple.com/documentation/swiftui/uihostingconfiguration), to display a SwiftUI view.
+Use this property to configure a content-unavailable view that the view controller manages. The value of this property is commonly an instance of [`UIContentUnavailableConfiguration`](../uicontentunavailableconfiguration-swift.struct.md), but you can use other types of content configuration, including a [`UIHostingConfiguration`](../../SwiftUI/uihostingconfiguration.md), to display a SwiftUI view.
 
 ## See Also
 
-- [var contentUnavailableConfigurationState: UIContentUnavailableConfigurationState](uiviewcontroller/contentunavailableconfigurationstate-7sczw.md)
+### Indicating missing content
+- [var contentUnavailableConfigurationState: UIContentUnavailableConfigurationState](./contentunavailableconfigurationstate-7sczw.md)
   The current configuration state of the content-unavailable view.
-- [func setNeedsUpdateContentUnavailableConfiguration()](uiviewcontroller/setneedsupdatecontentunavailableconfiguration.md)
+- [func setNeedsUpdateContentUnavailableConfiguration()](./setneedsupdatecontentunavailableconfiguration%28%29.md)
   Requests that the system update the content-unavailable configuration for the latest state.
-- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](uiviewcontroller/updatecontentunavailableconfiguration(using:).md)
+- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](./updatecontentunavailableconfiguration%28using%29.md)
   Updates the content-unavailable configuration for the provided state.
-- [struct UIContentUnavailableConfiguration](uicontentunavailableconfiguration-swift.struct.md)
+- [struct UIContentUnavailableConfiguration](../uicontentunavailableconfiguration-swift.struct.md)
   A content configuration for a content-unavailable view.
 
 

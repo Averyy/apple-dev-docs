@@ -1,7 +1,8 @@
 # send(_:to:)
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a critical message to the specified recipient.
 
@@ -17,7 +18,7 @@ func send(_ message: MSCriticalMessage, to recipient: MSRecipient) async throws 
 
 ## Mentions
 
-- [Sending SMS messages from an app](critical-messaging-api.md)
+- [Sending SMS messages from an app](../critical-messaging-api.md)
 
 #### Return Value
 
@@ -27,7 +28,7 @@ func send(_ message: MSCriticalMessage, to recipient: MSRecipient) async throws 
 
 There’s no user interaction necessary for the framework to send this message. If the message sends successfully, the framework displays a notification indicating sending the message was successful. Upon error, this method throws a `MSCriticalMessagingError/errorDomain` error.
 
-> **Note**: The system may impose a rate limit on frequency of messages sent, if usage exceeds this limit the framework  returns a  [`MSCriticalMessagingError.sendFailed`](mscriticalmessagingerror/sendfailed.md) error.
+> **Note**: The system may impose a rate limit on frequency of messages sent, if usage exceeds this limit the framework  returns a  [`MSCriticalMessagingError.sendFailed`](../mscriticalmessagingerror/sendfailed.md) error.
 
 ## Parameters
 

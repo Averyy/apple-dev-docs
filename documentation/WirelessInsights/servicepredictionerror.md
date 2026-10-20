@@ -1,7 +1,8 @@
 # ServicePredictionError
 
 **Framework**: WirelessInsights  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents errors encountered while using the WirelessInsights framework.
 
@@ -18,26 +19,27 @@ enum ServicePredictionError
 ## Topics
 
 ### Handling configuration errors
-- [ServicePredictionError.unsupportedDevice](servicepredictionerror/unsupporteddevice.md)
+- [ServicePredictionError.unsupportedDevice](./servicepredictionerror/unsupporteddevice.md)
   The device doesn’t currently support service predictions.
 ### Handling connectivity errors
-- [ServicePredictionError.connectionError](servicepredictionerror/connectionerror.md)
+- [ServicePredictionError.connectionError](./servicepredictionerror/connectionerror.md)
   An unexpected error occurred while setting up the event stream.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var servicePredictions: any AsyncSequence<[ServicePrediction], any Error>](servicepredictionprovider/servicepredictions.md)
+### Receiving service predictions
+- [var servicePredictions: any AsyncSequence<[ServicePrediction], any Error>](./servicepredictionprovider/servicepredictions.md)
   An asychronous sequence of current predictions.
-- [struct ServicePrediction](serviceprediction.md)
+- [struct ServicePrediction](./serviceprediction.md)
   An individual prediction of anticipated cellular network availability.
 
 

@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified content rule list to the content controller object.
 
@@ -18,6 +19,10 @@ Adds the specified content rule list to the content controller object.
 func add(_ contentRuleList: WKContentRuleList)
 ```
 
+```objc
+- (void) addContentRuleList:(WKContentRuleList *) contentRuleList;
+```
+
 #### Discussion
 
 Call this method to apply a set of content filtering rules to your web view’s configuration.
@@ -28,11 +33,12 @@ Call this method to apply a set of content filtering rules to your web view’s 
 
 ## See Also
 
-- [func remove(WKContentRuleList)](wkusercontentcontroller/remove(_:).md)
+### Adding and Removing Content Rules
+- [func remove(WKContentRuleList)](./remove%28_%29.md)
   Removes the specified rule list from the content controller object.
-- [func removeAllContentRuleLists()](wkusercontentcontroller/removeallcontentrulelists.md)
+- [func removeAllContentRuleLists()](./removeallcontentrulelists%28%29.md)
   Removes all rules lists from the content controller.
-- [class WKContentRuleList](wkcontentrulelist.md)
+- [class WKContentRuleList](../wkcontentrulelist.md)
   A compiled list of rules to apply to web content.
 
 

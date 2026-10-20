@@ -1,7 +1,8 @@
 # stopMonitoringSignificantLocationChanges()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the delivery of location events based on significant location changes.
 
@@ -17,13 +18,18 @@ Stops the delivery of location events based on significant location changes.
 func stopMonitoringSignificantLocationChanges()
 ```
 
+```objc
+- (void) stopMonitoringSignificantLocationChanges;
+```
+
 #### Discussion
 
-Use this method to stop the delivery of location events that was started using the [`startMonitoringSignificantLocationChanges()`](cllocationmanager/startmonitoringsignificantlocationchanges().md) method. If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
+Use this method to stop the delivery of location events that was started using the [`startMonitoringSignificantLocationChanges()`](./startmonitoringsignificantlocationchanges%28%29.md) method. If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
 
 ## See Also
 
-- [func startMonitoringSignificantLocationChanges()](cllocationmanager/startmonitoringsignificantlocationchanges.md)
+### Running the significant change location service
+- [func startMonitoringSignificantLocationChanges()](./startmonitoringsignificantlocationchanges%28%29.md)
   Starts the generation of updates based on significant location changes.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWIsochChanNum](1645963-anonymous/kfwisochchannum.md)
-- [kFWIsochChanNumPhase](1645963-anonymous/kfwisochchannumphase.md)
-- [kFWIsochDataLength](1645963-anonymous/kfwisochdatalength.md)
-- [kFWIsochDataLengthPhase](1645963-anonymous/kfwisochdatalengthphase.md)
-- [kFWIsochSy](1645963-anonymous/kfwisochsy.md)
-- [kFWIsochSyPhase](1645963-anonymous/kfwisochsyphase.md)
-- [kFWIsochTCode](1645963-anonymous/kfwisochtcode.md)
-- [kFWIsochTCodePhase](1645963-anonymous/kfwisochtcodephase.md)
-- [kFWIsochTag](1645963-anonymous/kfwisochtag.md)
-- [kFWIsochTagPhase](1645963-anonymous/kfwisochtagphase.md)
+- [kFWIsochChanNum](./api-1645963-anonymous/kfwisochchannum.md)
+- [kFWIsochChanNumPhase](./api-1645963-anonymous/kfwisochchannumphase.md)
+- [kFWIsochDataLength](./api-1645963-anonymous/kfwisochdatalength.md)
+- [kFWIsochDataLengthPhase](./api-1645963-anonymous/kfwisochdatalengthphase.md)
+- [kFWIsochSy](./api-1645963-anonymous/kfwisochsy.md)
+- [kFWIsochSyPhase](./api-1645963-anonymous/kfwisochsyphase.md)
+- [kFWIsochTCode](./api-1645963-anonymous/kfwisochtcode.md)
+- [kFWIsochTCodePhase](./api-1645963-anonymous/kfwisochtcodephase.md)
+- [kFWIsochTag](./api-1645963-anonymous/kfwisochtag.md)
+- [kFWIsochTagPhase](./api-1645963-anonymous/kfwisochtagphase.md)
 
 
 ---

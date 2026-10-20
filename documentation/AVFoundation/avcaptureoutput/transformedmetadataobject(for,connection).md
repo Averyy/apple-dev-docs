@@ -1,7 +1,8 @@
 # transformedMetadataObject(for:connection:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a metadata object’s visual properties to layer coordinates.
 
@@ -16,6 +17,10 @@ Converts a metadata object’s visual properties to layer coordinates.
 
 ```swift
 func transformedMetadataObject(for metadataObject: AVMetadataObject, connection: AVCaptureConnection) -> AVMetadataObject?
+```
+
+```objc
+- (AVMetadataObject *) transformedMetadataObjectForMetadataObject:(AVMetadataObject *) metadataObject connection:(AVCaptureConnection *) connection;
 ```
 
 #### Return Value
@@ -35,9 +40,10 @@ This method converts the visual properties in the coordinate space of the suppli
 
 ## See Also
 
-- [func metadataOutputRectConverted(fromOutputRect: CGRect) -> CGRect](avcaptureoutput/metadataoutputrectconverted(fromoutputrect:).md)
+### Converting between coordinate systems
+- [func metadataOutputRectConverted(fromOutputRect: CGRect) -> CGRect](./metadataoutputrectconverted%28fromoutputrect%29.md)
   Converts a rectangle in the capture output object’s coordinate system to one in the coordinate system used for metadata outputs.
-- [func outputRectConverted(fromMetadataOutputRect: CGRect) -> CGRect](avcaptureoutput/outputrectconverted(frommetadataoutputrect:).md)
+- [func outputRectConverted(fromMetadataOutputRect: CGRect) -> CGRect](./outputrectconverted%28frommetadataoutputrect%29.md)
   Converts a rectangle in the coordinate system used for metadata outputs to one in the capture output object’s coordinate system.
 
 

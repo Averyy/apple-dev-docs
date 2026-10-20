@@ -1,7 +1,8 @@
 # readAttributeUncertainty(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeUncertainty(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeUncertainty() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeUncertaintyWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

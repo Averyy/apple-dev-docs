@@ -1,7 +1,8 @@
 # intendedSpatialAudioExperience
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The synchronizer’s intended Spatial Audio experience.
 
@@ -16,9 +17,9 @@ var intendedSpatialAudioExperience: any SpatialAudioExperience { get set }
 
 #### Discussion
 
-The value applies to all [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md) objects within this synchronizer.
+The value applies to all [`AVSampleBufferAudioRenderer`](../avsamplebufferaudiorenderer.md) objects within this synchronizer.
 
-If unspecified, the property value defaults to [`CAAutomaticSpatialAudio`](https://developer.apple.com/documentation/audiotoolbox/caautomaticspatialaudio).
+If unspecified, the property value defaults to [`CAAutomaticSpatialAudio`](../../AudioToolbox/caautomaticspatialaudio.md).
 
 
 ---

@@ -1,18 +1,19 @@
 # init(cfuuid:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 9.0
+- iPadOS 5.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.7+ - Deprecated in 10.13
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
 init(cfuuid theUUID: CFUUID)
 ```
 
+```objc
++ (CBUUID *) UUIDWithCFUUID:(CFUUIDRef) theUUID;
+```
+
 #### Return Value
 
-A new [`CBUUID`](cbuuid.md) object for the specified UUID.
+A new [`CBUUID`](../cbuuid.md) object for the specified UUID.
 
 ## Parameters
 
-- `theUUID`: A UUID represented by a [`CFUUID`](https://developer.apple.com/documentation/corefoundation/cfuuid) object.
+- `theUUID`: A UUID represented by a [`CFUUID`](../../CoreFoundation/cfuuid.md) object.
 
 ## See Also
 
-- [init(string: String)](cbuuid/init(string:).md)
+### Creating New CBUUID Objects
+- [init(string: String)](./init%28string%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
-- [init(data: Data)](cbuuid/init(data:).md)
+- [init(data: Data)](./init%28data%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data container.
-- [init(nsuuid: UUID)](cbuuid/init(nsuuid:)-2amob.md)
+- [init(nsuuid: UUID)](./init%28nsuuid%29-2amob.md)
   Creates a Core Bluetooth UUID object from a Foundation UUID object.
 
 

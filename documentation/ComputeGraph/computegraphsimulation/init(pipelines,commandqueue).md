@@ -1,7 +1,8 @@
 # init(pipelines:commandQueue:)
 
 **Framework**: Compute Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a ComputeGraphSimulation for the given pipelines
 
@@ -12,7 +13,7 @@ Initialize a ComputeGraphSimulation for the given pipelines
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ convenience init(pipelines: ComputeNodeGraph.Pipelines, commandQueue: any MTLCom
 
 #### Discussion
 
-The simulation will use the provided command queue for operations such as [`fastForward()`](computegraphsimulation/fastforward().md) and resetting the system.
+The simulation will use the provided command queue for operations such as [`fastForward()`](./fastforward%28%29.md) and resetting the system.
 
 
 ---

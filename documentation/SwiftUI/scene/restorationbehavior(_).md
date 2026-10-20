@@ -1,7 +1,8 @@
 # restorationBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the restoration behavior for this scene.
 
@@ -23,7 +24,7 @@ func restorationBehavior(_ behavior: SceneRestorationBehavior) -> some Scene
 
 #### Discussion
 
-Use this scene modifier to apply a value of this type to a [`Scene`](scene.md) you define in your [`App`](app.md) declaration. The value you specify determines how the system will restore windows from a previous run of your application.
+Use this scene modifier to apply a value of this type to a [`Scene`](../scene.md) you define in your [`App`](../app.md) declaration. The value you specify determines how the system will restore windows from a previous run of your application.
 
 For example, you may have a scene that you do not wish to be restored on launch:
 
@@ -42,23 +43,24 @@ struct MyApp: App {
 }
 ```
 
-The default value for all scenes if you do not apply the modifier is [`automatic`](scenerestorationbehavior/automatic.md). With that strategy, scenes will restore themselves depending on the default behavior for the platform.
+The default value for all scenes if you do not apply the modifier is [`automatic`](../scenerestorationbehavior/automatic.md). With that strategy, scenes will restore themselves depending on the default behavior for the platform.
 
 ## See Also
 
-- [struct WindowVisibilityToggle](windowvisibilitytoggle.md)
+### Configuring window visibility
+- [struct WindowVisibilityToggle](../windowvisibilitytoggle.md)
   A specialized button for toggling the visibility of a window.
-- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](scene/defaultlaunchbehavior(_:).md)
+- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](./defaultlaunchbehavior%28_%29.md)
   Sets the default launch behavior for this scene.
-- [struct SceneLaunchBehavior](scenelaunchbehavior.md)
+- [struct SceneLaunchBehavior](../scenelaunchbehavior.md)
   The launch behavior for a scene.
-- [struct SceneRestorationBehavior](scenerestorationbehavior.md)
+- [struct SceneRestorationBehavior](../scenerestorationbehavior.md)
   The restoration behavior for a scene.
-- [func persistentSystemOverlays(Visibility) -> some Scene](scene/persistentsystemoverlays(_:).md)
+- [func persistentSystemOverlays(Visibility) -> some Scene](./persistentsystemoverlays%28_%29.md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
-- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](../view/windowtoolbarfullscreenvisibility%28_%29.md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
-- [struct WindowToolbarFullScreenVisibility](windowtoolbarfullscreenvisibility.md)
+- [struct WindowToolbarFullScreenVisibility](../windowtoolbarfullscreenvisibility.md)
   The visibility of the window toolbar with respect to full screen mode.
 
 

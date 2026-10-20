@@ -1,7 +1,8 @@
 # AVCaptureDevice.ExposureMode
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the exposure mode of a capture device.
 
@@ -18,35 +19,40 @@ Constants that specify the exposure mode of a capture device.
 enum ExposureMode
 ```
 
+```c
+enum AVCaptureExposureMode : NSInteger;
+```
+
 ## Topics
 
 ### Exposure modes
-- [AVCaptureDevice.ExposureMode.locked](avcapturedevice/exposuremode-swift.enum/locked.md)
+- [AVCaptureDevice.ExposureMode.locked](./exposuremode-swift.enum/locked.md)
   A mode that locks exposure for the device.
-- [AVCaptureDevice.ExposureMode.autoExpose](avcapturedevice/exposuremode-swift.enum/autoexpose.md)
+- [AVCaptureDevice.ExposureMode.autoExpose](./exposuremode-swift.enum/autoexpose.md)
   A mode that automatically adjusts the exposure one time, and then locks exposure for the device.
-- [AVCaptureDevice.ExposureMode.continuousAutoExposure](avcapturedevice/exposuremode-swift.enum/continuousautoexposure.md)
+- [AVCaptureDevice.ExposureMode.continuousAutoExposure](./exposuremode-swift.enum/continuousautoexposure.md)
   A mode that continuously monitors exposure levels and automatically adjusts exposure when necessary.
-- [AVCaptureDevice.ExposureMode.custom](avcapturedevice/exposuremode-swift.enum/custom.md)
+- [AVCaptureDevice.ExposureMode.custom](./exposuremode-swift.enum/custom.md)
   A mode where an app manually sets the exposure duration and ISO values.
 ### Initializers
-- [init?(rawValue: Int)](avcapturedevice/exposuremode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./exposuremode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func isExposureModeSupported(AVCaptureDevice.ExposureMode) -> Bool](avcapturedevice/isexposuremodesupported(_:).md)
+### Managing the exposure mode
+- [func isExposureModeSupported(AVCaptureDevice.ExposureMode) -> Bool](./isexposuremodesupported%28_%29.md)
   Returns a Boolean value that indicates whether a device supports the specified exposure mode.
-- [var exposureMode: AVCaptureDevice.ExposureMode](avcapturedevice/exposuremode-swift.property.md)
+- [var exposureMode: AVCaptureDevice.ExposureMode](./exposuremode-swift.property.md)
   The exposure mode for the device.
 
 

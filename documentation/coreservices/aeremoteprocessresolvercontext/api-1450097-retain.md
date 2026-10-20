@@ -1,7 +1,8 @@
 # retain
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A prototype for a function callback that retainsthe specified data. Called on the info pointer. This field may be `NULL`.
 
@@ -13,6 +14,10 @@ A prototype for a function callback that retainsthe specified data. Called on th
 
 ```swift
 var retain: CFAllocatorRetainCallBack!
+```
+
+```c
+CFAllocatorRetainCallBack retain;
 ```
 
 

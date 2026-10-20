@@ -1,7 +1,8 @@
 # NSWhoseSpecifier.SubelementIdentifier.indexSubelement
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An element at a given index that meets the specifier test.
 
@@ -15,15 +16,20 @@ An element at a given index that meets the specifier test.
 case indexSubelement
 ```
 
+```c
+NSIndexSubelement
+```
+
 ## See Also
 
-- [NSWhoseSpecifier.SubelementIdentifier.everySubelement](nswhosespecifier/subelementidentifier/everysubelement.md)
+### Constants
+- [NSWhoseSpecifier.SubelementIdentifier.everySubelement](./everysubelement.md)
   Every element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.middleSubelement](nswhosespecifier/subelementidentifier/middlesubelement.md)
+- [NSWhoseSpecifier.SubelementIdentifier.middleSubelement](./middlesubelement.md)
   The middle element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.randomSubelement](nswhosespecifier/subelementidentifier/randomsubelement.md)
+- [NSWhoseSpecifier.SubelementIdentifier.randomSubelement](./randomsubelement.md)
   Any element that meets the specifier test.
-- [NSWhoseSpecifier.SubelementIdentifier.noSubelement](nswhosespecifier/subelementidentifier/nosubelement.md)
+- [NSWhoseSpecifier.SubelementIdentifier.noSubelement](./nosubelement.md)
   No sub-element met the specifier test. Valid only for specifying the end sub-element.; that is, there is no end, so consider all elements.
 
 

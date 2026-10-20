@@ -1,7 +1,8 @@
 # readAttributeLampRatedHours(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLampRatedHours(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLampRatedHours() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeLampRatedHoursWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

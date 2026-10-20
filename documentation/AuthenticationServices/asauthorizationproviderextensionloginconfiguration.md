@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionLoginConfiguration
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface for configuring platform single sign-on.
 
@@ -14,10 +15,14 @@ An interface for configuring platform single sign-on.
 class ASAuthorizationProviderExtensionLoginConfiguration
 ```
 
+```objc
+@interface ASAuthorizationProviderExtensionLoginConfiguration : NSObject
+```
+
 ## Mentions
 
-- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
-- [Interpreting Platform Single Sign-on authorization scopes](interpreting-platform-single-sign-on-authorization-scopes.md)
+- [Creating extensions that support Platform SSO](./creating-extensions-that-support-platform-sso.md)
+- [Interpreting Platform Single Sign-on authorization scopes](./interpreting-platform-single-sign-on-authorization-scopes.md)
 
 #### Overview
 
@@ -26,120 +31,121 @@ This class provides login configuration information for platform single sign-on.
 ## Topics
 
 ### Creating the configuration
-- [init(clientID: String, issuer: String, tokenEndpointURL: URL, jwksEndpointURL: URL, audience: String?)](asauthorizationproviderextensionloginconfiguration/init(clientid:issuer:tokenendpointurl:jwksendpointurl:audience:).md)
+- [init(clientID: String, issuer: String, tokenEndpointURL: URL, jwksEndpointURL: URL, audience: String?)](./asauthorizationproviderextensionloginconfiguration/init%28clientid,issuer,tokenendpointurl,jwksendpointurl,audience%29.md)
   Creates a configuration with the required values.
-- [class func configuration(openIDConfigurationURL: URL, clientID: String, issuer: String?, completion: (ASAuthorizationProviderExtensionLoginConfiguration?, (any Error)?) -> Void)](asauthorizationproviderextensionloginconfiguration/configuration(openidconfigurationurl:clientid:issuer:completion:).md)
+- [class func configuration(openIDConfigurationURL: URL, clientID: String, issuer: String?, completion: (ASAuthorizationProviderExtensionLoginConfiguration?, (any Error)?) -> Void)](./asauthorizationproviderextensionloginconfiguration/configuration%28openidconfigurationurl,clientid,issuer,completion%29.md)
   Creates a login configuration using the OpenID configuration.
 ### Obtaining the required configuration
-- [var audience: String](asauthorizationproviderextensionloginconfiguration/audience.md)
+- [var audience: String](./asauthorizationproviderextensionloginconfiguration/audience.md)
   The audience for validation and requests.
-- [var clientID: String](asauthorizationproviderextensionloginconfiguration/clientid.md)
+- [var clientID: String](./asauthorizationproviderextensionloginconfiguration/clientid.md)
   The identifier for the client at the identity provider.
-- [var jwksEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/jwksendpointurl.md)
+- [var jwksEndpointURL: URL](./asauthorizationproviderextensionloginconfiguration/jwksendpointurl.md)
   The JSON Web Key Set endpoint URL for keys.
-- [var tokenEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md)
+- [var tokenEndpointURL: URL](./asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md)
   The token endpoint URL for login requests.
-- [var issuer: String](asauthorizationproviderextensionloginconfiguration/issuer.md)
+- [var issuer: String](./asauthorizationproviderextensionloginconfiguration/issuer.md)
   The issuer of the identity token that the identity provider returns.
 ### Obtaining the recommended configuration
-- [var accountDisplayName: String?](asauthorizationproviderextensionloginconfiguration/accountdisplayname.md)
+- [var accountDisplayName: String?](./asauthorizationproviderextensionloginconfiguration/accountdisplayname.md)
   The display name for the account.
-- [var invalidCredentialPredicate: String?](asauthorizationproviderextensionloginconfiguration/invalidcredentialpredicate.md)
+- [var invalidCredentialPredicate: String?](./asauthorizationproviderextensionloginconfiguration/invalidcredentialpredicate.md)
   The predicate string that identifies invalid credential errors.
 ### Configuring the server nonce
-- [var customNonceRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customnoncerequestvalues.md)
+- [var customNonceRequestValues: [URLQueryItem]](./asauthorizationproviderextensionloginconfiguration/customnoncerequestvalues.md)
   Custom values to add to the server nonce POST request body.
-- [var nonceEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/nonceendpointurl.md)
+- [var nonceEndpointURL: URL](./asauthorizationproviderextensionloginconfiguration/nonceendpointurl.md)
   The URL to retrieve a one-time use value from the server.
-- [var nonceResponseKeypath: String](asauthorizationproviderextensionloginconfiguration/nonceresponsekeypath.md)
+- [var nonceResponseKeypath: String](./asauthorizationproviderextensionloginconfiguration/nonceresponsekeypath.md)
   The keypath in the response that contains the one-time use value.
-- [var serverNonceClaimName: String](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md)
+- [var serverNonceClaimName: String](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md)
   The name of the claim to include in authentication requests.
 ### Configuring the previous refresh token
-- [var includePreviousRefreshTokenInLoginRequest: Bool](asauthorizationproviderextensionloginconfiguration/includepreviousrefreshtokeninloginrequest.md)
+- [var includePreviousRefreshTokenInLoginRequest: Bool](./asauthorizationproviderextensionloginconfiguration/includepreviousrefreshtokeninloginrequest.md)
   A Boolean value that indicates whether to include the previous refresh token in the authentation request.
-- [var previousRefreshTokenClaimName: String](asauthorizationproviderextensionloginconfiguration/previousrefreshtokenclaimname.md)
+- [var previousRefreshTokenClaimName: String](./asauthorizationproviderextensionloginconfiguration/previousrefreshtokenclaimname.md)
   The claim name for the previous single sign-on token value in the authentication request.
 ### Customizing the authentication request
-- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomassertionrequestbodyclaims(_:).md)
+- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomassertionrequestbodyclaims%28_%29.md)
   Adds the custom claims to the embedded assertion request body.
-- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomassertionrequestheaderclaims(_:).md)
+- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomassertionrequestheaderclaims%28_%29.md)
   Adds the custom claims to the embedded assertion request header.
-- [func setCustomLoginRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomloginrequestbodyclaims(_:).md)
+- [func setCustomLoginRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomloginrequestbodyclaims%28_%29.md)
   Adds the custom claims to the login request body.
-- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomloginrequestheaderclaims(_:).md)
+- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomloginrequestheaderclaims%28_%29.md)
   Adds the custom claims to the login request header.
-- [var additionalScopes: String](asauthorizationproviderextensionloginconfiguration/additionalscopes.md)
+- [var additionalScopes: String](./asauthorizationproviderextensionloginconfiguration/additionalscopes.md)
   A set of extra scopes to add to the base for the authentication request.
-- [var customLoginRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customloginrequestvalues.md)
+- [var customLoginRequestValues: [URLQueryItem]](./asauthorizationproviderextensionloginconfiguration/customloginrequestvalues.md)
   Provider-supplied values to add to the login POST request body.
-- [var kerberosTicketMappings: [ASAuthorizationProviderExtensionKerberosMapping]](asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md)
+- [var kerberosTicketMappings: [ASAuthorizationProviderExtensionKerberosMapping]](./asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md)
   The set of ticket mappings the system uses to import Kerberos tickets from the single sign-on token.
 ### Instance Properties
-- [var additionalAuthorizationScopes: String?](asauthorizationproviderextensionloginconfiguration/additionalauthorizationscopes.md)
-- [var customFederationUserPreauthenticationRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customfederationuserpreauthenticationrequestvalues.md)
-- [var customKeyExchangeRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customkeyexchangerequestvalues.md)
-- [var customKeyRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customkeyrequestvalues.md)
-- [var customRefreshRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customrefreshrequestvalues.md)
-- [var customRequestJWTParameterName: String?](asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md)
-- [var deviceContext: Data?](asauthorizationproviderextensionloginconfiguration/devicecontext.md)
-- [var federationMEXURL: URL?](asauthorizationproviderextensionloginconfiguration/federationmexurl.md)
-- [var federationMEXURLKeypath: String?](asauthorizationproviderextensionloginconfiguration/federationmexurlkeypath.md)
-- [var federationPredicate: String?](asauthorizationproviderextensionloginconfiguration/federationpredicate.md)
-- [var federationRequestURN: String?](asauthorizationproviderextensionloginconfiguration/federationrequesturn.md)
-- [var federationType: ASAuthorizationProviderExtensionLoginConfiguration.FederationType](asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md)
-- [var federationUserPreauthenticationURL: URL?](asauthorizationproviderextensionloginconfiguration/federationuserpreauthenticationurl.md)
-- [var groupRequestClaimName: String?](asauthorizationproviderextensionloginconfiguration/grouprequestclaimname.md)
-- [var groupResponseClaimName: String?](asauthorizationproviderextensionloginconfiguration/groupresponseclaimname.md)
-- [var jwksTrustedRootCertificates: [SecCertificate]](asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-5y2pc.md)
-- [var keyEndpointURL: URL?](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md)
-- [var loginRequestEncryptionAPVPrefix: Data?](asauthorizationproviderextensionloginconfiguration/loginrequestencryptionapvprefix.md)
-- [var loginRequestEncryptionPublicKey: SecKey?](asauthorizationproviderextensionloginconfiguration/loginrequestencryptionpublickey.md)
-- [var refreshEndpointURL: URL?](asauthorizationproviderextensionloginconfiguration/refreshendpointurl.md)
-- [var uniqueIdentifierClaimName: String?](asauthorizationproviderextensionloginconfiguration/uniqueidentifierclaimname.md)
-- [var userSecureEnclaveKeyBiometricPolicy: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.property.md)
-- [var authorizationURL: URL](asauthorizationproviderextensionloginconfiguration/authorizationurl.md)
-- [var authorizationURLKeypath: String](asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md)
-- [var fallbackFederationType: ASAuthorizationProviderExtensionLoginConfiguration.FederationType](asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md)
-- [var hpkeAuthPublicKey: SecKey?](asauthorizationproviderextensionloginconfiguration/hpkeauthpublickey.md)
-- [var hpkePreSharedKey: Data?](asauthorizationproviderextensionloginconfiguration/hpkepresharedkey.md)
-- [var hpkePreSharedKeyID: Data?](asauthorizationproviderextensionloginconfiguration/hpkepresharedkeyid.md)
-- [var includePlatformSSOAuthorizationScopes: Bool](asauthorizationproviderextensionloginconfiguration/includeplatformssoauthorizationscopes.md)
-- [var loginRequestEncryptionAlgorithm: ASAuthorizationProviderExtensionEncryptionAlgorithm](asauthorizationproviderextensionloginconfiguration/loginrequestencryptionalgorithm.md)
-- [var loginRequestHPKEPreSharedKey: Data?](asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkey.md)
-- [var loginRequestHPKEPreSharedKeyID: Data?](asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkeyid.md)
-- [var serverNonceExpirationTime: NSNumber](asauthorizationproviderextensionloginconfiguration/servernonceexpirationtime.md)
+- [var additionalAuthorizationScopes: String?](./asauthorizationproviderextensionloginconfiguration/additionalauthorizationscopes.md)
+- [var customFederationUserPreauthenticationRequestValues: [URLQueryItem]](./asauthorizationproviderextensionloginconfiguration/customfederationuserpreauthenticationrequestvalues.md)
+- [var customKeyExchangeRequestValues: [URLQueryItem]](./asauthorizationproviderextensionloginconfiguration/customkeyexchangerequestvalues.md)
+- [var customKeyRequestValues: [URLQueryItem]](./asauthorizationproviderextensionloginconfiguration/customkeyrequestvalues.md)
+- [var customRefreshRequestValues: [URLQueryItem]](./asauthorizationproviderextensionloginconfiguration/customrefreshrequestvalues.md)
+- [var customRequestJWTParameterName: String?](./asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md)
+- [var deviceContext: Data?](./asauthorizationproviderextensionloginconfiguration/devicecontext.md)
+- [var federationMEXURL: URL?](./asauthorizationproviderextensionloginconfiguration/federationmexurl.md)
+- [var federationMEXURLKeypath: String?](./asauthorizationproviderextensionloginconfiguration/federationmexurlkeypath.md)
+- [var federationPredicate: String?](./asauthorizationproviderextensionloginconfiguration/federationpredicate.md)
+- [var federationRequestURN: String?](./asauthorizationproviderextensionloginconfiguration/federationrequesturn.md)
+- [var federationType: ASAuthorizationProviderExtensionLoginConfiguration.FederationType](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md)
+- [var federationUserPreauthenticationURL: URL?](./asauthorizationproviderextensionloginconfiguration/federationuserpreauthenticationurl.md)
+- [var groupRequestClaimName: String?](./asauthorizationproviderextensionloginconfiguration/grouprequestclaimname.md)
+- [var groupResponseClaimName: String?](./asauthorizationproviderextensionloginconfiguration/groupresponseclaimname.md)
+- [var jwksTrustedRootCertificates: [SecCertificate]](./asauthorizationproviderextensionloginconfiguration/jwkstrustedrootcertificates-5y2pc.md)
+- [var keyEndpointURL: URL?](./asauthorizationproviderextensionloginconfiguration/keyendpointurl.md)
+- [var loginRequestEncryptionAPVPrefix: Data?](./asauthorizationproviderextensionloginconfiguration/loginrequestencryptionapvprefix.md)
+- [var loginRequestEncryptionPublicKey: SecKey?](./asauthorizationproviderextensionloginconfiguration/loginrequestencryptionpublickey.md)
+- [var refreshEndpointURL: URL?](./asauthorizationproviderextensionloginconfiguration/refreshendpointurl.md)
+- [var uniqueIdentifierClaimName: String?](./asauthorizationproviderextensionloginconfiguration/uniqueidentifierclaimname.md)
+- [var userSecureEnclaveKeyBiometricPolicy: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](./asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.property.md)
+- [var authorizationURL: URL](./asauthorizationproviderextensionloginconfiguration/authorizationurl.md)
+- [var authorizationURLKeypath: String](./asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md)
+- [var fallbackFederationType: ASAuthorizationProviderExtensionLoginConfiguration.FederationType](./asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md)
+- [var hpkeAuthPublicKey: SecKey?](./asauthorizationproviderextensionloginconfiguration/hpkeauthpublickey.md)
+- [var hpkePreSharedKey: Data?](./asauthorizationproviderextensionloginconfiguration/hpkepresharedkey.md)
+- [var hpkePreSharedKeyID: Data?](./asauthorizationproviderextensionloginconfiguration/hpkepresharedkeyid.md)
+- [var includePlatformSSOAuthorizationScopes: Bool](./asauthorizationproviderextensionloginconfiguration/includeplatformssoauthorizationscopes.md)
+- [var loginRequestEncryptionAlgorithm: ASAuthorizationProviderExtensionEncryptionAlgorithm](./asauthorizationproviderextensionloginconfiguration/loginrequestencryptionalgorithm.md)
+- [var loginRequestHPKEPreSharedKey: Data?](./asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkey.md)
+- [var loginRequestHPKEPreSharedKeyID: Data?](./asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkeyid.md)
+- [var serverNonceExpirationTime: NSNumber](./asauthorizationproviderextensionloginconfiguration/servernonceexpirationtime.md)
 ### Instance Methods
-- [func setCustomKeyExchangeRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestbodyclaims(_:).md)
-- [func setCustomKeyExchangeRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestheaderclaims(_:).md)
-- [func setCustomKeyRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestbodyclaims(_:).md)
-- [func setCustomKeyRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestheaderclaims(_:).md)
-- [func setCustomRefreshRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestbodyclaims(_:).md)
-- [func setCustomRefreshRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestheaderclaims(_:).md)
+- [func setCustomKeyExchangeRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestbodyclaims%28_%29.md)
+- [func setCustomKeyExchangeRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestheaderclaims%28_%29.md)
+- [func setCustomKeyRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestbodyclaims%28_%29.md)
+- [func setCustomKeyRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestheaderclaims%28_%29.md)
+- [func setCustomRefreshRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestbodyclaims%28_%29.md)
+- [func setCustomRefreshRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestheaderclaims%28_%29.md)
 ### Structures
-- [ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](./asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct.md)
 ### Enumerations
-- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
+### Configuration
+- [Configuring authentication with the identity provider (IdP)](./configuring-authentication-with-the-identity-provider-idp.md)
   Specify how Platform SSO authenticates with the identity provider.
-- [Interpreting Platform Single Sign-on authorization scopes](interpreting-platform-single-sign-on-authorization-scopes.md)
+- [Interpreting Platform Single Sign-on authorization scopes](./interpreting-platform-single-sign-on-authorization-scopes.md)
   Use authorization scopes to apply authentication policies.
-- [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)
+- [class ASAuthorizationProviderExtensionLoginManager](./asauthorizationproviderextensionloginmanager.md)
   An interface to maintain platform single sign-on (SSO) during authentication and registration.
 
 

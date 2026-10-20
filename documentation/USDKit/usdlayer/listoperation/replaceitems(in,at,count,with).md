@@ -1,7 +1,8 @@
 # replaceItems(in:at:count:with:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces `count` items in `operation`’s slot starting at `index` with `newItems`.
 
@@ -21,7 +22,7 @@ mutating func replaceItems(in operation: USDLayer.ListOperationType, at index: I
 
 #### Discussion
 
-> **Note**: An error if the range is out of bounds.
+> **Throws**: An error if the range is out of bounds.
 
 ## Parameters
 

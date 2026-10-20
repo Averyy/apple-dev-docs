@@ -1,7 +1,8 @@
 # last(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the last element of the sequence that satisfies the given predicate.
 
@@ -36,7 +37,7 @@ if let lastNegative = numbers.last(where: { $0 < 0 }) {
 // Prints "The last negative number is -6."
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

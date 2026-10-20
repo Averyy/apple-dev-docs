@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the Look Around scene object.
 
@@ -10,7 +11,7 @@ Returns a copy of the Look Around scene object.
 
 ## Declaration
 
-```swift
+```
 copy(): LookAroundScene;
 ```
 

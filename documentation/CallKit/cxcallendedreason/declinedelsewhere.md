@@ -1,7 +1,8 @@
 # CXCallEndedReason.declinedElsewhere
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Another device declined the call.
 
@@ -18,15 +19,20 @@ Another device declined the call.
 case declinedElsewhere
 ```
 
+```c
+CXCallEndedReasonDeclinedElsewhere
+```
+
 ## See Also
 
-- [CXCallEndedReason.failed](cxcallendedreason/failed.md)
+### Constants
+- [CXCallEndedReason.failed](./failed.md)
   An error occurred while attempting to service the call.
-- [CXCallEndedReason.remoteEnded](cxcallendedreason/remoteended.md)
+- [CXCallEndedReason.remoteEnded](./remoteended.md)
   The remote party explicitly ended the call.
-- [CXCallEndedReason.unanswered](cxcallendedreason/unanswered.md)
+- [CXCallEndedReason.unanswered](./unanswered.md)
   The call never started connecting and was never explicitly ended, such as when an outgoing or incoming call times out.
-- [CXCallEndedReason.answeredElsewhere](cxcallendedreason/answeredelsewhere.md)
+- [CXCallEndedReason.answeredElsewhere](./answeredelsewhere.md)
   Another device answered the call.
 
 

@@ -1,7 +1,8 @@
 # readAttributePrimary4X(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePrimary4X(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePrimary4X() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePrimary4XWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # commonKeyPublisher
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the name of the publisher.
 
@@ -20,37 +21,42 @@ A key that represents the name of the publisher.
 static let commonKeyPublisher: AVMetadataKey
 ```
 
+```c
+extern AVMetadataKey const AVMetadataCommonKeyPublisher;
+```
+
 ## See Also
 
-- [static let commonKeyAccessibilityDescription: AVMetadataKey](avmetadatakey/commonkeyaccessibilitydescription.md)
+### Common metadata keys
+- [static let commonKeyAccessibilityDescription: AVMetadataKey](./commonkeyaccessibilitydescription.md)
   A key that represents the accessibility description for the media.
-- [static let commonKeyAlbumName: AVMetadataKey](avmetadatakey/commonkeyalbumname.md)
+- [static let commonKeyAlbumName: AVMetadataKey](./commonkeyalbumname.md)
   A key that represents the name of the album.
-- [static let commonKeyArtist: AVMetadataKey](avmetadatakey/commonkeyartist.md)
+- [static let commonKeyArtist: AVMetadataKey](./commonkeyartist.md)
   A key that represents the name of the artist.
-- [static let commonKeyArtwork: AVMetadataKey](avmetadatakey/commonkeyartwork.md)
+- [static let commonKeyArtwork: AVMetadataKey](./commonkeyartwork.md)
   A key that represents an image relating to the album.
-- [static let commonKeyAuthor: AVMetadataKey](avmetadatakey/commonkeyauthor.md)
+- [static let commonKeyAuthor: AVMetadataKey](./commonkeyauthor.md)
   A key that represents the name of the author.
-- [static let commonKeyContributor: AVMetadataKey](avmetadatakey/commonkeycontributor.md)
+- [static let commonKeyContributor: AVMetadataKey](./commonkeycontributor.md)
   A key that represents the name of the contributor.
-- [static let commonKeyCopyrights: AVMetadataKey](avmetadatakey/commonkeycopyrights.md)
+- [static let commonKeyCopyrights: AVMetadataKey](./commonkeycopyrights.md)
   A key that represents the copyright statement.
-- [static let commonKeyCreationDate: AVMetadataKey](avmetadatakey/commonkeycreationdate.md)
+- [static let commonKeyCreationDate: AVMetadataKey](./commonkeycreationdate.md)
   A key that represents the date of the original recording.
-- [static let commonKeyCreator: AVMetadataKey](avmetadatakey/commonkeycreator.md)
+- [static let commonKeyCreator: AVMetadataKey](./commonkeycreator.md)
   A key that represents the name of the creator.
-- [static let commonKeyDescription: AVMetadataKey](avmetadatakey/commonkeydescription.md)
+- [static let commonKeyDescription: AVMetadataKey](./commonkeydescription.md)
   A key that represents the description of the media.
-- [static let commonKeyFormat: AVMetadataKey](avmetadatakey/commonkeyformat.md)
+- [static let commonKeyFormat: AVMetadataKey](./commonkeyformat.md)
   A key that represents the file format of the media content.
-- [static let commonKeyIdentifier: AVMetadataKey](avmetadatakey/commonkeyidentifier.md)
+- [static let commonKeyIdentifier: AVMetadataKey](./commonkeyidentifier.md)
   A key that represents the ID for the media.
-- [static let commonKeyLanguage: AVMetadataKey](avmetadatakey/commonkeylanguage.md)
+- [static let commonKeyLanguage: AVMetadataKey](./commonkeylanguage.md)
   A key that represents the language of the text or lyrics spoken or sung in the audio.
-- [static let commonKeyLastModifiedDate: AVMetadataKey](avmetadatakey/commonkeylastmodifieddate.md)
+- [static let commonKeyLastModifiedDate: AVMetadataKey](./commonkeylastmodifieddate.md)
   A key that represents the last modification date of the media.
-- [static let commonKeyLocation: AVMetadataKey](avmetadatakey/commonkeylocation.md)
+- [static let commonKeyLocation: AVMetadataKey](./commonkeylocation.md)
   A key that represents the location information for the media.
 
 

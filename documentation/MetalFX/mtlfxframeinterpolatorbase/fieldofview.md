@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The vertical field of view angle, in degrees, of the camera that renders the scene into the color buffer.
@@ -17,6 +18,10 @@ The vertical field of view angle, in degrees, of the camera that renders the sce
 
 ```swift
 var fieldOfView: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float fieldOfView;
 ```
 
 #### Discussion

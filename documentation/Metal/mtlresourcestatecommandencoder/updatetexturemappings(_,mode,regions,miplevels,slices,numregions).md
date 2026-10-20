@@ -1,7 +1,8 @@
 # updateTextureMappings(_:mode:regions:mipLevels:slices:numRegions:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command to update memory mappings for multiple regions inside a texture.
 
@@ -15,8 +16,20 @@ Encodes a command to update memory mappings for multiple regions inside a textur
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func updateTextureMappings(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, regions: UnsafePointer<MTLRegion>, mipLevels: UnsafePointer<Int>, slices: UnsafePointer<Int>, numRegions: Int)
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 optional func updateTextureMappings(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, regions: UnsafePointer<MTLRegion>, mipLevels: UnsafePointer<Int>, slices: UnsafePointer<Int>, numRegions: Int)
+```
+
+```objc
+- (void) updateTextureMappings:(id<MTLTexture>) texture mode:(const MTLSparseTextureMappingMode) mode regions:(const MTLRegion[]) regions mipLevels:(const NSUInteger[]) mipLevels slices:(const NSUInteger[]) slices numRegions:(NSUInteger) numRegions;
 ```
 
 ## Parameters
@@ -30,9 +43,10 @@ optional func updateTextureMappings(_ texture: any MTLTexture, mode: MTLSparseTe
 
 ## See Also
 
-- [func updateTextureMapping(any MTLTexture, mode: MTLSparseTextureMappingMode, region: MTLRegion, mipLevel: Int, slice: Int)](mtlresourcestatecommandencoder/updatetexturemapping(_:mode:region:miplevel:slice:).md)
+### Updating texture memory assignments
+- [func updateTextureMapping(any MTLTexture, mode: MTLSparseTextureMappingMode, region: MTLRegion, mipLevel: Int, slice: Int)](./updatetexturemapping%28_,mode,region,miplevel,slice%29.md)
   Encodes a command to update the texture mappings for a region in a single texture mipmap.
-- [enum MTLSparseTextureMappingMode](mtlsparsetexturemappingmode.md)
+- [enum MTLSparseTextureMappingMode](../mtlsparsetexturemappingmode.md)
   Options for sparse texture mapping.
 
 

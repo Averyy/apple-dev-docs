@@ -1,7 +1,8 @@
 # objects(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a set containing all the objects of the specified type in the correlation.
 
@@ -19,19 +20,24 @@ Returns a set containing all the objects of the specified type in the correlatio
 func objects(for objectType: HKObjectType) -> Set<HKSample>
 ```
 
+```objc
+- (NSSet<__kindof HKSample *> *) objectsForType:(HKObjectType *) objectType;
+```
+
 #### Return Value
 
 A set containing all the objects of the specified type in the correlation.
 
 ## Parameters
 
-- `objectType`: The quantity or category type for the data stored inside the correlation. For example, to get all the samples measuring calories from inside a correlation, use an [`HKSampleType`](hksampletype.md) object created with the [`dietaryEnergyConsumed`](hkquantitytypeidentifier/dietaryenergyconsumed.md) identifier.
+- `objectType`: The quantity or category type for the data stored inside the correlation. For example, to get all the samples measuring calories from inside a correlation, use an [`HKSampleType`](../hksampletype.md) object created with the [`dietaryEnergyConsumed`](../hkquantitytypeidentifier/dietaryenergyconsumed.md) identifier.
 
 ## See Also
 
-- [var correlationType: HKCorrelationType](hkcorrelation/correlationtype.md)
+### Getting Correlation Data
+- [var correlationType: HKCorrelationType](./correlationtype.md)
   The type for this correlation.
-- [var objects: Set<HKSample>](hkcorrelation/objects.md)
+- [var objects: Set<HKSample>](./objects.md)
   The set of sample objects that make up the correlation.
 
 

@@ -1,7 +1,8 @@
 # viewAligned
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The scroll behavior that aligns scroll targets to view-based geometry.
 
@@ -21,6 +22,8 @@ The scroll behavior that aligns scroll targets to view-based geometry.
 static var viewAligned: ViewAlignedScrollTargetBehavior { get }
 ```
 
+Available when `Self` is `ViewAlignedScrollTargetBehavior`.
+
 #### Discussion
 
 You use this behavior when a scroll view should always align its scroll targets to a rectangle that’s aligned to the geometry of a view. In the following example, the scroll view always picks an item view to settle on.
@@ -38,17 +41,18 @@ ScrollView(.horizontal) {
 .padding(.horizontal, 20.0)
 ```
 
-You configure which views should be used for settling using the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier. Apply this modifier to a layout container like [`LazyVStack`](lazyvstack.md) or [`HStack`](hstack.md) and each individual view in that layout will be considered for alignment.
+You configure which views should be used for settling using the [`scrollTargetLayout(isEnabled:)`](../view/scrolltargetlayout%28isenabled%29.md) modifier. Apply this modifier to a layout container like [`LazyVStack`](../lazyvstack.md) or [`HStack`](../hstack.md) and each individual view in that layout will be considered for alignment.
 
-You can customize whether the view aligned behavior limits the number of views that can be scrolled at a time by using the [`ViewAlignedScrollTargetBehavior.LimitBehavior`](viewalignedscrolltargetbehavior/limitbehavior.md) type. Provide a value of [`always`](viewalignedscrolltargetbehavior/limitbehavior/always.md) to always have the behavior only allow a few views to be scrolled at a time.
+You can customize whether the view aligned behavior limits the number of views that can be scrolled at a time by using the [`ViewAlignedScrollTargetBehavior.LimitBehavior`](../viewalignedscrolltargetbehavior/limitbehavior.md) type. Provide a value of [`always`](../viewalignedscrolltargetbehavior/limitbehavior/always.md) to always have the behavior only allow a few views to be scrolled at a time.
 
 By default, the view aligned behavior limits the number of views it scrolls when in a compact horizontal size class when scrollable in the horizontal axis, when in a compact vertical size class when scrollable in the vertical axis, and otherwise doesn’t impose any limit on the number of views that can be scrolled.
 
 ## See Also
 
-- [static var paging: PagingScrollTargetBehavior](scrolltargetbehavior/paging.md)
+### Getting the scroll target behavior
+- [static var paging: PagingScrollTargetBehavior](./paging.md)
   The scroll behavior that aligns scroll targets to container-based geometry.
-- [static func viewAligned(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior) -> Self](scrolltargetbehavior/viewaligned(limitbehavior:).md)
+- [static func viewAligned(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior) -> Self](./viewaligned%28limitbehavior%29.md)
   The scroll behavior that aligns scroll targets to view-based geometry.
 
 

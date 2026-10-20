@@ -1,7 +1,8 @@
 # UITextView.BorderStyle.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The text view does not display a border.
 
@@ -16,6 +17,10 @@ The text view does not display a border.
 
 ```swift
 case none
+```
+
+```c
+UITextViewBorderStyleNone
 ```
 
 

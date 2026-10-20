@@ -1,7 +1,8 @@
 # init(_:placement:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar spacer item with the specified sizing behavior and placement.
 

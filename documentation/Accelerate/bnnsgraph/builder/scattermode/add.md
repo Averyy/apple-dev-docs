@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ScatterMode.add
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation adds existing values to scattered values.
 

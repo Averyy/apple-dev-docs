@@ -1,7 +1,8 @@
 # VNRectangleObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the four vertices of a detected rectangle.
 
@@ -19,46 +20,51 @@ An object that represents the four vertices of a detected rectangle.
 class VNRectangleObservation
 ```
 
+```objc
+@interface VNRectangleObservation : VNDetectedObjectObservation
+```
+
 ## Topics
 
 ### Creating an Observation
-- [convenience init(requestRevision: Int, topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint)](vnrectangleobservation/init(requestrevision:topleft:topright:bottomright:bottomleft:).md)
+- [convenience init(requestRevision: Int, topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint)](./vnrectangleobservation/init%28requestrevision,topleft,topright,bottomright,bottomleft%29.md)
   Creates a rectangle observation from its corner points.
-- [convenience init(requestRevision: Int, topLeft: CGPoint, bottomLeft: CGPoint, bottomRight: CGPoint, topRight: CGPoint)](vnrectangleobservation/init(requestrevision:topleft:bottomleft:bottomright:topright:).md)
+- [convenience init(requestRevision: Int, topLeft: CGPoint, bottomLeft: CGPoint, bottomRight: CGPoint, topRight: CGPoint)](./vnrectangleobservation/init%28requestrevision,topleft,bottomleft,bottomright,topright%29.md)
   Creates a rectangle observation from its corner points.
 ### Accessing the Coordinates
-- [var bottomLeft: CGPoint](vnrectangleobservation/bottomleft.md)
+- [var bottomLeft: CGPoint](./vnrectangleobservation/bottomleft.md)
   The coordinates of the lower-left corner of the observation bounding box.
-- [var bottomRight: CGPoint](vnrectangleobservation/bottomright.md)
+- [var bottomRight: CGPoint](./vnrectangleobservation/bottomright.md)
   The coordinates of the lower-right corner of the observation bounding box.
-- [var topLeft: CGPoint](vnrectangleobservation/topleft.md)
+- [var topLeft: CGPoint](./vnrectangleobservation/topleft.md)
   The coordinates of the upper-left corner of the observation bounding box.
-- [var topRight: CGPoint](vnrectangleobservation/topright.md)
+- [var topRight: CGPoint](./vnrectangleobservation/topright.md)
   The coordinates of the upper-right corner of the observation bounding box.
 
 ## Relationships
 
 ### Inherits From
-- [VNDetectedObjectObservation](vndetectedobjectobservation.md)
+- [VNDetectedObjectObservation](./vndetectedobjectobservation.md)
 ### Inherited By
-- [VNBarcodeObservation](vnbarcodeobservation.md)
-- [VNRecognizedTextObservation](vnrecognizedtextobservation.md)
-- [VNTextObservation](vntextobservation.md)
+- [VNBarcodeObservation](./vnbarcodeobservation.md)
+- [VNRecognizedTextObservation](./vnrecognizedtextobservation.md)
+- [VNTextObservation](./vntextobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [var results: [VNRectangleObservation]?](vndetectdocumentsegmentationrequest/results.md)
+### Accessing the Results
+- [var results: [VNRectangleObservation]?](./vndetectdocumentsegmentationrequest/results.md)
   The results of a document segmentation request.
 
 

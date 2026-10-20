@@ -1,7 +1,8 @@
 # menuActionDismissBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells a menu whether to dismiss after performing an action.
 
@@ -23,7 +24,7 @@ func menuActionDismissBehavior(_ behavior: MenuActionDismissBehavior) -> some Vi
 
 ## Mentions
 
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Return Value
 
@@ -49,7 +50,7 @@ Menu("Font size") {
 }
 ```
 
-You can use this modifier on any controls that present a menu, like a [`Picker`](picker.md) that uses the [`menu`](pickerstyle/menu.md) style or a [`ControlGroup`](controlgroup.md). For example, the code below creates a picker that disables dismissal when someone selects one of the options:
+You can use this modifier on any controls that present a menu, like a [`Picker`](../picker.md) that uses the [`menu`](../pickerstyle/menu.md) style or a [`ControlGroup`](../controlgroup.md). For example, the code below creates a picker that disables dismissal when someone selects one of the options:
 
 ```swift
 Picker("Flavor", selection: $selectedFlavor) {
@@ -82,7 +83,8 @@ Text("Favorite Card Suit")
 
 ## See Also
 
-- [struct MenuActionDismissBehavior](menuactiondismissbehavior.md)
+### Configuring menu dismissal
+- [struct MenuActionDismissBehavior](../menuactiondismissbehavior.md)
   The set of menu dismissal behavior options.
 
 

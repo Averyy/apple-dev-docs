@@ -1,7 +1,8 @@
 # foundDevice(_:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system of a new media device, so it can be included in device lists for users to select.
 
@@ -19,7 +20,7 @@ final func foundDevice(_ device: MediaOutputDevice)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 

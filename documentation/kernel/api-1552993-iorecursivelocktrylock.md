@@ -1,7 +1,8 @@
 # IORecursiveLockTryLock
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Attempt to lock a recursive lock.
 
@@ -11,11 +12,19 @@ Attempt to lock a recursive lock.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+bool IORecursiveLockTryLock(struct IORecursiveLock *lock);
+```
+
+*macOS*
+
+```c
 boolean_t IORecursiveLockTryLock(IORecursiveLock *lock);
 ```
 
-#### Return_value
+#### Return Value
 
 True if the lock is now locked by the caller, otherwise false.
 
@@ -29,21 +38,22 @@ Lock the lock if it is currently unlocked, or held by the calling thread, and re
 
 ## See Also
 
-- [IORecursiveLockAlloc](1553013-iorecursivelockalloc.md)
+### Recursive Locks
+- [IORecursiveLockAlloc](./api-1553013-iorecursivelockalloc.md)
   Allocates and initializes an recursive lock.
-- [IORecursiveLockFree](1553031-iorecursivelockfree.md)
+- [IORecursiveLockFree](./api-1553031-iorecursivelockfree.md)
   Frees a recursive lock.
-- [IORecursiveLockGetMachLock](1552988-iorecursivelockgetmachlock.md)
+- [IORecursiveLockGetMachLock](./api-1552988-iorecursivelockgetmachlock.md)
   Accessor to a Mach mutex.
-- [IORecursiveLockHaveLock](1552995-iorecursivelockhavelock.md)
+- [IORecursiveLockHaveLock](./api-1552995-iorecursivelockhavelock.md)
   Check if a recursive lock is held by the calling thread.
-- [IORecursiveLockLock](1553020-iorecursivelocklock.md)
+- [IORecursiveLockLock](./api-1553020-iorecursivelocklock.md)
   Lock a recursive lock.
-- [IORecursiveLockSleep](1553001-iorecursivelocksleep.md)
-- [IORecursiveLockSleepDeadline](1552986-iorecursivelocksleepdeadline.md)
-- [IORecursiveLockUnlock](1553032-iorecursivelockunlock.md)
+- [IORecursiveLockSleep](./api-1553001-iorecursivelocksleep.md)
+- [IORecursiveLockSleepDeadline](./api-1552986-iorecursivelocksleepdeadline.md)
+- [IORecursiveLockUnlock](./api-1553032-iorecursivelockunlock.md)
   Unlock a recursive lock.
-- [IORecursiveLockWakeup](1553014-iorecursivelockwakeup.md)
+- [IORecursiveLockWakeup](./api-1553014-iorecursivelockwakeup.md)
 
 
 ---

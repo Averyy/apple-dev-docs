@@ -1,7 +1,8 @@
 # droppedReason
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value indicating why the capture output failed to deliver depth data, if applicable.
 
@@ -17,9 +18,14 @@ A value indicating why the capture output failed to deliver depth data, if appli
 var droppedReason: AVCaptureOutput.DataDroppedReason { get }
 ```
 
+```objc
+@property (readonly) AVCaptureOutputDataDroppedReason droppedReason;
+```
+
 ## See Also
 
-- [var depthDataWasDropped: Bool](avcapturesynchronizeddepthdata/depthdatawasdropped.md)
+### Handling dropped data
+- [var depthDataWasDropped: Bool](./depthdatawasdropped.md)
   A Boolean value indicating whether depth data was discarded between capture and processing.
 
 

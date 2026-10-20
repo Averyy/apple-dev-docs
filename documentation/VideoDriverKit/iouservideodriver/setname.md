@@ -1,7 +1,8 @@
 # SetName
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the name of the video driver.
 
@@ -10,7 +11,7 @@ Sets the name of the video driver.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetName(OSString *in_name);
 ```
 
@@ -28,15 +29,16 @@ If the object can change the name dynamically, the object sends a notification t
 
 ## See Also
 
-- [GetClassID](iouservideodriver/getclassid.md)
+### Getting information about the class
+- [GetClassID](./getclassid.md)
   Gets the class identifier of the object.
-- [GetBaseClassID](iouservideodriver/getbaseclassid.md)
+- [GetBaseClassID](./getbaseclassid.md)
   Gets the class identifier of the base class object.
-- [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+- [IOUserVideoClassID](../videodriverkit-page/iouservideoclassid.md)
   Video class identifiers of an video object.
-- [GetWorkQueue](iouservideodriver/getworkqueue.md)
+- [GetWorkQueue](./getworkqueue.md)
   Gets the work queue created by the video object.
-- [GetName](iouservideodriver/getname.md)
+- [GetName](./getname.md)
   Gets the name of the driver.
 
 

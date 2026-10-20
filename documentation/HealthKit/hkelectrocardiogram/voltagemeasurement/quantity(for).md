@@ -1,7 +1,8 @@
 # quantity(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the voltage for the specified lead.
 
@@ -19,9 +20,13 @@ Returns the voltage for the specified lead.
 func quantity(for lead: HKElectrocardiogram.Lead) -> HKQuantity?
 ```
 
+```objc
+- (HKQuantity *) quantityForLead:(HKElectrocardiogramLead) lead;
+```
+
 #### Return Value
 
-A quantity object containing a value in volt units. These values are compatible with any units created using [`voltUnit(with:)`](hkunit/voltunit(with:).md).
+A quantity object containing a value in volt units. These values are compatible with any units created using [`voltUnit(with:)`](../../hkunit/voltunit%28with%29.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ A quantity object containing a value in volt units. These values are compatible 
 
 ## See Also
 
-- [var timeSinceSampleStart: TimeInterval](hkelectrocardiogram/voltagemeasurement/timesincesamplestart.md)
+### Accessing Data
+- [var timeSinceSampleStart: TimeInterval](./timesincesamplestart.md)
   The time of the measurement relative to the sample’s start time.
 
 

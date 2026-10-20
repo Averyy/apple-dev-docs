@@ -1,7 +1,8 @@
 # RecordLabels.Views.RecordLabelsLatestReleasesView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for the record label latest releases view.
 
@@ -10,7 +11,7 @@ The attributes for the record label latest releases view.
 
 ## Declaration
 
-```swift
+```
 object RecordLabels.Views.RecordLabelsLatestReleasesView.Attributes
 ```
 

@@ -1,10 +1,11 @@
 # kBluetoothHCILoopbackModeLocal
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothHCILoopbackModeLocal: Int { get }
 ```
 
+```c
+kBluetoothHCILoopbackModeLocal
+```
+
 ## See Also
 
-- [var kBluetoothHCILoopbackModeOff: Int](kbluetoothhciloopbackmodeoff.md)
-- [var kBluetoothHCILoopbackModeRemote: Int](kbluetoothhciloopbackmoderemote.md)
+### Constants
+- [var kBluetoothHCILoopbackModeOff: Int](./kbluetoothhciloopbackmodeoff.md)
+- [var kBluetoothHCILoopbackModeRemote: Int](./kbluetoothhciloopbackmoderemote.md)
 
 
 ---

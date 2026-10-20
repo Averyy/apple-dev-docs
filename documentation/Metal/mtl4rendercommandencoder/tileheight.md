@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Sets the height of a tile for this render pass.
@@ -20,11 +21,16 @@ Sets the height of a tile for this render pass.
 var tileHeight: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger tileHeight;
+```
+
 ## See Also
 
-- [func dispatchThreadsPerTile(MTLSize)](mtl4rendercommandencoder/dispatchthreadspertile(_:).md)
+### Drawing with tile shaders
+- [func dispatchThreadsPerTile(MTLSize)](./dispatchthreadspertile%28_%29.md)
   Encodes a command that invokes a tile shader function from the encoder’s current tile render pipeline state.
-- [var tileWidth: Int](mtl4rendercommandencoder/tilewidth.md)
+- [var tileWidth: Int](./tilewidth.md)
   Sets the width of a tile for this render pass.
 
 

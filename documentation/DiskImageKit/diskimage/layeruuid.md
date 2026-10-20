@@ -1,7 +1,8 @@
 # layerUUID
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UUID of the image that the framework uses to validate its compatibility with the layer above it in the stack
 

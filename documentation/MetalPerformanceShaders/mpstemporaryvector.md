@@ -1,7 +1,8 @@
 # MPSTemporaryVector
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A vector allocated on GPU private memory.
 
@@ -19,32 +20,37 @@ A vector allocated on GPU private memory.
 class MPSTemporaryVector
 ```
 
+```objc
+@interface MPSTemporaryVector : MPSVector
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(commandBuffer: any MTLCommandBuffer, descriptor: MPSVectorDescriptor)](mpstemporaryvector/init(commandbuffer:descriptor:).md)
+- [convenience init(commandBuffer: any MTLCommandBuffer, descriptor: MPSVectorDescriptor)](./mpstemporaryvector/init%28commandbuffer,descriptor%29.md)
 ### Instance Properties
-- [var readCount: Int](mpstemporaryvector/readcount.md)
+- [var readCount: Int](./mpstemporaryvector/readcount.md)
 ### Type Methods
-- [class func prefetchStorage(with: any MTLCommandBuffer, descriptorList: [MPSVectorDescriptor])](mpstemporaryvector/prefetchstorage(with:descriptorlist:).md)
+- [class func prefetchStorage(with: any MTLCommandBuffer, descriptorList: [MPSVectorDescriptor])](./mpstemporaryvector/prefetchstorage%28with,descriptorlist%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSVector](mpsvector.md)
+- [MPSVector](./mpsvector.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSVector](mpsvector.md)
+### Vectors
+- [class MPSVector](./mpsvector.md)
   A 1D array of data that stores the data’s values.
-- [class MPSVectorDescriptor](mpsvectordescriptor.md)
+- [class MPSVectorDescriptor](./mpsvectordescriptor.md)
   A description of the length and data type of a vector.
 
 

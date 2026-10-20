@@ -1,18 +1,19 @@
 # maskNode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The node used to determine the crop node’s mask.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The node used to determine the crop node’s mask.
 var maskNode: SKNode? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SKNode * maskNode;
+```
+
 ## Mentions
 
-- [Cropping Nodes](cropping-nodes.md)
+- [Cropping Nodes](../cropping-nodes.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # sendMessageData(_:replyHandler:errorHandler:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a data object immediately to the paired and active device and optionally handles a response.
 
@@ -18,6 +19,10 @@ Sends a data object immediately to the paired and active device and optionally h
 func sendMessageData(_ data: Data, replyHandler: ((Data) -> Void)?, errorHandler: ((any Error) -> Void)? = nil)
 ```
 
+```objc
+- (void) sendMessageData:(NSData *) data replyHandler:(void (^)(NSData *replyMessageData)) replyHandler errorHandler:(void (^)(NSError *error)) errorHandler;
+```
+
 #### Discussion
 
 Use this message to send a data object to the counterpart as soon as possible. Messages are queued serially and delivered in the order in which you sent them. Delivery of the messages happens asynchronously, so this method returns immediately.
@@ -26,17 +31,22 @@ If you specify a reply handler block, your handler block is executed asynchronou
 
 Calling this method from your WatchKit extension while it is active and running wakes up the corresponding iOS app in the background and makes it reachable. Calling this method from your iOS app does not wake up the corresponding WatchKit extension. If you call this method and the counterpart is unreachable (or becomes unreachable before the message is delivered), the `errorHandler` block is executed with an appropriate error. The `errorHandler` block may also be called if the `message` parameter contains non property list data types.
 
-This method can only be called while the session is active—that is, the [`activationState`](wcsession/activationstate.md) property is set to  [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md). Calling this method for an inactive or deactivated session is a programmer error.
+This method can only be called while the session is active—that is, the [`activationState`](./activationstate.md) property is set to  [`WCSessionActivationState.activated`](../wcsessionactivationstate/activated.md). Calling this method for an inactive or deactivated session is a programmer error.
 
 ## Parameters
 
 - `data`: A data object containing the information you want to send. This parameter must not be `nil`.
-- `replyHandler`: A reply handler for receiving a response from the counterpart. Specify `nil` if you do not want to receive a reply. This block has no return value and takes the following parameter: - **replyMessage**: A data object containing the response from the counterpart.
-- `errorHandler`: A block that is executed when an error occurs. Specify `nil` if you do not care about error information. This block has no return value and takes the following parameter: - **errorHandler**: An error object containing the reason for the failure. When sending messages, the most common error is that the paired device was not reachable, but other errors may occur too.
+- `replyHandler`: A reply handler for receiving a response from the counterpart. Specify `nil` if you do not want to receive a reply. This block has no return value and takes the following parameter:
+
+  - **replyMessage**: A data object containing the response from the counterpart.
+- `errorHandler`: A block that is executed when an error occurs. Specify `nil` if you do not care about error information. This block has no return value and takes the following parameter:
+
+  - **errorHandler**: An error object containing the reason for the failure. When sending messages, the most common error is that the paired device was not reachable, but other errors may occur too.
 
 ## See Also
 
-- [func sendMessage([String : Any], replyHandler: (([String : Any]) -> Void)?, errorHandler: ((any Error) -> Void)?)](wcsession/sendmessage(_:replyhandler:errorhandler:).md)
+### Sending Messages
+- [func sendMessage([String : Any], replyHandler: (([String : Any]) -> Void)?, errorHandler: ((any Error) -> Void)?)](./sendmessage%28_,replyhandler,errorhandler%29.md)
   Sends a message immediately to the paired and active device and optionally handles a response.
 
 

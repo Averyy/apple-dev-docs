@@ -1,7 +1,8 @@
 # urlSession(_:didBecomeInvalidWithError:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the URL session that the session has been invalidated.
 
@@ -20,9 +21,13 @@ Tells the URL session that the session has been invalidated.
 optional func urlSession(_ session: URLSession, didBecomeInvalidWithError error: (any Error)?)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session didBecomeInvalidWithError:(NSError *) error;
+```
+
 #### Discussion
 
-If you invalidate a session by calling its [`finishTasksAndInvalidate()`](urlsession/finishtasksandinvalidate().md) method, the session waits until after the final task in the session finishes or fails before calling this delegate method. If you call the [`invalidateAndCancel()`](urlsession/invalidateandcancel().md) method, the session calls this delegate method immediately.
+If you invalidate a session by calling its [`finishTasksAndInvalidate()`](../urlsession/finishtasksandinvalidate%28%29.md) method, the session waits until after the final task in the session finishes or fails before calling this delegate method. If you call the [`invalidateAndCancel()`](../urlsession/invalidateandcancel%28%29.md) method, the session calls this delegate method immediately.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ If you invalidate a session by calling its [`finishTasksAndInvalidate()`](urlses
 
 ## See Also
 
-- [func urlSessionDidFinishEvents(forBackgroundURLSession: URLSession)](urlsessiondelegate/urlsessiondidfinishevents(forbackgroundurlsession:).md)
+### Handling session life cycle changes
+- [func urlSessionDidFinishEvents(forBackgroundURLSession: URLSession)](./urlsessiondidfinishevents%28forbackgroundurlsession%29.md)
   Tells the delegate that all messages enqueued for a session have been delivered.
 
 

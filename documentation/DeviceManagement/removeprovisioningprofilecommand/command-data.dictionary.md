@@ -1,7 +1,8 @@
 # RemoveProvisioningProfileCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove a previously installed provisioning profile from a device.
 
@@ -16,14 +17,18 @@ The command to remove a previously installed provisioning profile from a device.
 
 ## Declaration
 
-```swift
+```
 object RemoveProvisioningProfileCommand.Command
 ```
 
 ## Properties
 
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `RemoveProvisioningProfile`
 - `UUID` (string) *(required)*: The unique identifier of the provisioning profile to remove.
 
 

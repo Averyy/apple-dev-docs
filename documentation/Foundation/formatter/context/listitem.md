@@ -1,7 +1,8 @@
 # Formatter.Context.listItem
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The formatting context for a list or menu item.
 
@@ -20,21 +21,26 @@ The formatting context for a list or menu item.
 case listItem
 ```
 
+```c
+NSFormattingContextListItem
+```
+
 #### Discussion
 
 Use this context for dates or date symbols appearing in a list or menu item.
 
 ## See Also
 
-- [Formatter.Context.unknown](formatter/context/unknown.md)
+### Constants
+- [Formatter.Context.unknown](./unknown.md)
   An unknown formatting context.
-- [Formatter.Context.dynamic](formatter/context/dynamic.md)
+- [Formatter.Context.dynamic](./dynamic.md)
   A formatting context determined automatically at runtime.
-- [Formatter.Context.standalone](formatter/context/standalone.md)
+- [Formatter.Context.standalone](./standalone.md)
   The formatting context for stand-alone usage.
-- [Formatter.Context.beginningOfSentence](formatter/context/beginningofsentence.md)
+- [Formatter.Context.beginningOfSentence](./beginningofsentence.md)
   The formatting context for the beginning of a sentence.
-- [Formatter.Context.middleOfSentence](formatter/context/middleofsentence.md)
+- [Formatter.Context.middleOfSentence](./middleofsentence.md)
   The formatting context for the middle of a sentence.
 
 

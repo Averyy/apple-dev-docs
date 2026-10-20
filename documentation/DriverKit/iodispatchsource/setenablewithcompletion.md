@@ -1,25 +1,26 @@
 # SetEnableWithCompletion
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables the dispatch source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCancelHandler handler);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -32,7 +33,8 @@ Subclasses must provide an implementation of this method.
 
 ## See Also
 
-- [SetEnable](iodispatchsource/setenable.md)
+### Enabling and Disabling the Source
+- [SetEnable](./setenable.md)
   Enables or disables the delivery of events to your code.
 
 

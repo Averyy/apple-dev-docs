@@ -1,7 +1,8 @@
 # preferredVerticalBarBehavior
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical bar behavior that this view controller prefers.
 
@@ -18,6 +19,10 @@ The vertical bar behavior that this view controller prefers.
 var preferredVerticalBarBehavior: UIVerticalBarBehavior { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIVerticalBarBehavior preferredVerticalBarBehavior;
+```
+
 #### Discussion
 
 Override this property to opt out of the vertical bar. Return `UIVerticalBarBehaviorDisabled` to hide the vertical bar. Defaults to `UIVerticalBarBehaviorAutomatic`.
@@ -28,11 +33,12 @@ When the resolved configuration changes, the system animates the transition: con
 
 ## See Also
 
-- [enum UIVerticalBarBehavior](uiverticalbarbehavior.md)
+### Configuring bars on the vertical axis
+- [enum UIVerticalBarBehavior](../uiverticalbarbehavior.md)
   A behavior that determines whether the vertical bar is used.
-- [var childForPreferredVerticalBarBehavior: UIViewController?](uiviewcontroller/childforpreferredverticalbarbehavior.md)
+- [var childForPreferredVerticalBarBehavior: UIViewController?](./childforpreferredverticalbarbehavior.md)
   Which child view controller, if any, should control the vertical bar behavior.
-- [func setNeedsUpdateOfVerticalBarConfiguration()](uiviewcontroller/setneedsupdateofverticalbarconfiguration.md)
+- [func setNeedsUpdateOfVerticalBarConfiguration()](./setneedsupdateofverticalbarconfiguration%28%29.md)
   Signals to the system that the preferred vertical bar configuration, such as its behavior, has changed.
 
 

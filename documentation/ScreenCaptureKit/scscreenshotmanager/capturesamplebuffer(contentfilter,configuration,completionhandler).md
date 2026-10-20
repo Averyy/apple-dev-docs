@@ -1,7 +1,8 @@
 # captureSampleBuffer(contentFilter:configuration:completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Captures a single frame directly from a stream’s buffer, using a filter.
 
@@ -12,7 +13,15 @@ Captures a single frame directly from a stream’s buffer, using a filter.
 ## Declaration
 
 ```swift
+class func captureSampleBuffer(contentFilter: SCContentFilter, configuration config: SCStreamConfiguration, completionHandler: (@Sendable (CMSampleBuffer?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func captureSampleBuffer(contentFilter: SCContentFilter, configuration config: SCStreamConfiguration) async throws -> CMSampleBuffer
+```
+
+```objc
++ (void) captureSampleBufferWithFilter:(SCContentFilter *) contentFilter configuration:(SCStreamConfiguration *) config completionHandler:(void (^)(CMSampleBufferRef sampleBuffer, NSError *error)) completionHandler;
 ```
 
 ## Parameters
@@ -23,7 +32,8 @@ class func captureSampleBuffer(contentFilter: SCContentFilter, configuration con
 
 ## See Also
 
-- [class func captureImage(contentFilter: SCContentFilter, configuration: SCStreamConfiguration, completionHandler: ((CGImage?, (any Error)?) -> Void)?)](scscreenshotmanager/captureimage(contentfilter:configuration:completionhandler:).md)
+### Individual frame capture
+- [class func captureImage(contentFilter: SCContentFilter, configuration: SCStreamConfiguration, completionHandler: ((CGImage?, (any Error)?) -> Void)?)](./captureimage%28contentfilter,configuration,completionhandler%29.md)
   Captures a single frame from a stream as an image, using a filter.
 
 

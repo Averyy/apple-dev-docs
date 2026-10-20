@@ -1,12 +1,13 @@
 # HV_VCPU_DEFAULT
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default vCPU creation behavior.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The default vCPU creation behavior.
 var HV_VCPU_DEFAULT: Int { get }
 ```
 
+```c
+HV_VCPU_DEFAULT
+```
+
 ## See Also
 
-- [var HV_VCPU_ACCEL_RDPMC: Int](hv_vcpu_accel_rdpmc.md)
+### Constants
+- [var HV_VCPU_ACCEL_RDPMC: Int](./hv_vcpu_accel_rdpmc.md)
   Instructs the kernel, when set, to handle RDPMC VM exits directly rather than passing them to user space.
-- [var HV_VCPU_TSC_RELATIVE: Int](hv_vcpu_tsc_relative.md)
+- [var HV_VCPU_TSC_RELATIVE: Int](./hv_vcpu_tsc_relative.md)
   The value that represents the relative offset the system should add to the hypervisor TSC clock.
 
 

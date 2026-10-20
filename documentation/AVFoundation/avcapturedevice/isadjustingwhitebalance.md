@@ -1,7 +1,8 @@
 # isAdjustingWhiteBalance
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device is currently adjusting the white balance.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the device is currently adjusting the whi
 
 ```swift
 var isAdjustingWhiteBalance: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isAdjustingWhiteBalance) BOOL adjustingWhiteBalance;
 ```
 
 #### Discussion

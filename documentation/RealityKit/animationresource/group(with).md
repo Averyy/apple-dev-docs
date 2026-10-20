@@ -1,7 +1,8 @@
 # group(with:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an animation resource that simultaneously plays back a collection of animations.
 
@@ -11,7 +12,7 @@ Creates an animation resource that simultaneously plays back a collection of ani
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,13 +31,14 @@ An animation resource that simultaneously plays back the argument collection of 
 
 ## See Also
 
-- [static func generate(with: any AnimationDefinition) throws -> AnimationResource](animationresource/generate(with:).md)
+### Creating an animation resource
+- [static func generate(with: any AnimationDefinition) throws -> AnimationResource](./generate%28with%29.md)
   Creates an animation resource from a definition.
-- [static func sequence(with: [AnimationResource]) throws -> AnimationResource](animationresource/sequence(with:).md)
+- [static func sequence(with: [AnimationResource]) throws -> AnimationResource](./sequence%28with%29.md)
   Creates an animation resource that plays a collection of animations in a specified sequence.
-- [func `repeat`(count: Int) -> AnimationResource](animationresource/repeat(count:).md)
+- [func `repeat`(count: Int) -> AnimationResource](./repeat%28count%29.md)
   Creates an animation that repeats the specified number of times.
-- [func `repeat`(duration: TimeInterval) -> AnimationResource](animationresource/repeat(duration:).md)
+- [func `repeat`(duration: TimeInterval) -> AnimationResource](./repeat%28duration%29.md)
   Repeats an animation for the specified amount of time.
 
 

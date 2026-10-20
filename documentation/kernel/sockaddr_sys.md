@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr_sys {
     ...
 };
@@ -17,10 +17,10 @@ struct sockaddr_sys {
 ## Topics
 
 ### Instance Properties
-- [ss_family](sockaddr_sys/1574703-ss_family.md)
-- [ss_len](sockaddr_sys/1574699-ss_len.md)
-- [ss_reserved](sockaddr_sys/1574697-ss_reserved.md)
-- [ss_sysaddr](sockaddr_sys/1574704-ss_sysaddr.md)
+- [ss_family](./sockaddr_sys/api-1574703-ss_family.md)
+- [ss_len](./sockaddr_sys/api-1574699-ss_len.md)
+- [ss_reserved](./sockaddr_sys/api-1574697-ss_reserved.md)
+- [ss_sysaddr](./sockaddr_sys/api-1574704-ss_sysaddr.md)
 
 
 ---

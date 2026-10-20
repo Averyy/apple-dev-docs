@@ -1,7 +1,8 @@
 # indexPath
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contour object’s index path.
 
@@ -19,17 +20,22 @@ The contour object’s index path.
 var indexPath: IndexPath { get }
 ```
 
+```objc
+@property (readonly) NSIndexPath * indexPath;
+```
+
 ## See Also
 
-- [var aspectRatio: Float](vncontour/aspectratio.md)
+### Inspecting the Contour
+- [var aspectRatio: Float](./aspectratio.md)
   The aspect ratio of the contour.
-- [var normalizedPath: CGPath](vncontour/normalizedpath.md)
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The contour object as a path in normalized coordinates.
-- [var pointCount: Int](vncontour/pointcount.md)
+- [var pointCount: Int](./pointcount.md)
   The contour’s number of points.
-- [var normalizedPoints: [simd_float2]](vncontour/normalizedpoints-8n2s5.md)
+- [var normalizedPoints: [simd_float2]](./normalizedpoints-8n2s5.md)
   The contour’s array of points in normalized coordinates.
-- [func polygonApproximation(epsilon: Float) throws -> VNContour](vncontour/polygonapproximation(epsilon:).md)
+- [func polygonApproximation(epsilon: Float) throws -> VNContour](./polygonapproximation%28epsilon%29.md)
   Simplifies the contour to a polygon using a Ramer-Douglas-Peucker algorithm.
 
 

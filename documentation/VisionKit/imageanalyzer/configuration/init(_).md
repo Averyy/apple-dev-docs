@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: VisionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration that an image analyzer uses to find items.
 
@@ -24,9 +25,10 @@ init(_ types: ImageAnalyzer.AnalysisTypes)
 
 ## See Also
 
-- [let analysisTypes: ImageAnalyzer.AnalysisTypes](imageanalyzer/configuration/analysistypes.md)
+### Creating configurations
+- [let analysisTypes: ImageAnalyzer.AnalysisTypes](./analysistypes.md)
   The types of items that the image analyzer looks for in the image.
-- [ImageAnalyzer.AnalysisTypes](imageanalyzer/analysistypes.md)
+- [ImageAnalyzer.AnalysisTypes](../analysistypes.md)
   The types of items that an image analyzer looks for in an image.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The default value for the environment key.
@@ -23,7 +24,8 @@ static var defaultValue: Self.Value { get }
 
 ## See Also
 
-- [associatedtype Value](environmentkey/value.md)
+### Getting the default value
+- [associatedtype Value](./value.md)
   The associated type representing the type of the environment key’s value.
 
 

@@ -1,7 +1,8 @@
 # init(requirement:)
 
 **Framework**: Local Authentication  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a right with the authentication requirements you supply.
 
@@ -18,15 +19,20 @@ Creates a right with the authentication requirements you supply.
 init(requirement: LAAuthenticationRequirement)
 ```
 
+```objc
+- (instancetype) initWithRequirement:(LAAuthenticationRequirement *) requirement;
+```
+
 ## See Also
 
-- [init()](laright/init.md)
+### Authorizing a right
+- [init()](./init%28%29.md)
   Creates a right using the default authorization requirements.
-- [var tag: Int](laright/tag.md)
+- [var tag: Int](./tag.md)
   An integer you use to identify a right.
-- [func authorize(localizedReason: String, completion: ((any Error)?) -> Void)](laright/authorize(localizedreason:completion:).md)
+- [func authorize(localizedReason: String, completion: ((any Error)?) -> Void)](./authorize%28localizedreason,completion%29.md)
   Performs an authorization on the right.
-- [func authorize(localizedReason: String, in: LAPresentationContext, completion: ((any Error)?) -> Void)](laright/authorize(localizedreason:in:completion:).md)
+- [func authorize(localizedReason: String, in: LAPresentationContext, completion: ((any Error)?) -> Void)](./authorize%28localizedreason,in,completion%29.md)
   Performs an authorization on the right with a window context you supply.
 
 

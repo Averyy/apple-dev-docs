@@ -1,7 +1,8 @@
 # FloatLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The default type for an otherwise-unconstrained floating-point literal.
 
@@ -22,9 +23,10 @@ typealias FloatLiteralType = Double
 
 ## See Also
 
-- [typealias BooleanLiteralType](booleanliteraltype.md)
+### Basic Values
+- [typealias BooleanLiteralType](./booleanliteraltype.md)
   The default type for an otherwise-unconstrained Boolean literal.
-- [typealias IntegerLiteralType](integerliteraltype.md)
+- [typealias IntegerLiteralType](./integerliteraltype.md)
   The default type for an otherwise-unconstrained integer literal.
 
 

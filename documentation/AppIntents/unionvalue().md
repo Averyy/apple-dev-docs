@@ -1,7 +1,8 @@
 # UnionValue()
 
 **Framework**: App Intents  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 18.0+
@@ -21,28 +22,29 @@
 
 ## Mentions
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 ## See Also
 
-- [protocol AppEntity](appentity.md)
+### App entity types
+- [protocol AppEntity](./appentity.md)
   An interface for making a custom type or app-specific concept discoverable by Apple Intelligence and experiences like Siri or the Shortcuts app.
-- [protocol FileEntity](fileentity.md)
+- [protocol FileEntity](./fileentity.md)
   An entity that refers to a document or other file.
-- [protocol IndexedEntity](indexedentity.md)
+- [protocol IndexedEntity](./indexedentity.md)
   An interface that allows you to include an entity in your app’s Spotlight index.
-- [protocol SyncableEntity](syncableentity.md)
+- [protocol SyncableEntity](./syncableentity.md)
   An interface that indicates your entity has an identifier that’s consistent across devices.
-- [protocol TransientAppEntity](transientappentity.md)
+- [protocol TransientAppEntity](./transientappentity.md)
   A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
-- [protocol UniqueAppEntity](uniqueappentity.md)
+- [protocol UniqueAppEntity](./uniqueappentity.md)
   An AppEntity subtype for entities that only have a single instance.
-- [protocol OwnershipProvidingEntity](ownershipprovidingentity.md)
+- [protocol OwnershipProvidingEntity](./ownershipprovidingentity.md)
   A type that provides the system with ownership and sharing context for an app entity.
-- [protocol AppUnionValue](appunionvalue.md)
+- [protocol AppUnionValue](./appunionvalue.md)
   A protocol that provides nominal type identity and metadata for union values.
-- [protocol AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
+- [protocol AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
   A protocol for the cases enumeration of an `AppUnionValue`.
 
 

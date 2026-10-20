@@ -1,7 +1,8 @@
 # modifyEnabledAlarms(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ModifyEnabledAlarms
 
@@ -17,7 +18,15 @@ Command ModifyEnabledAlarms
 ## Declaration
 
 ```swift
+func modifyEnabledAlarms(with params: MTRDishwasherAlarmClusterModifyEnabledAlarmsParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func modifyEnabledAlarms(with params: MTRDishwasherAlarmClusterModifyEnabledAlarmsParams) async throws
+```
+
+```objc
+- (void) modifyEnabledAlarmsWithParams:(MTRDishwasherAlarmClusterModifyEnabledAlarmsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

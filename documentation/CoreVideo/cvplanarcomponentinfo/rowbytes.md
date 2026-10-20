@@ -1,7 +1,8 @@
 # rowBytes
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes per row of this plane. (big-endian)
 
@@ -20,9 +21,14 @@ The number of bytes per row of this plane. (big-endian)
 var rowBytes: UInt32
 ```
 
+```c
+uint32_t rowBytes;
+```
+
 ## See Also
 
-- [var offset: Int32](cvplanarcomponentinfo/offset.md)
+### Properties
+- [var offset: Int32](./offset.md)
   The offset from the main base address to the base address of this plane. (big-endian)
 
 

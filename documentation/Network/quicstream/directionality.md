@@ -1,7 +1,8 @@
 # QUICStream.Directionality
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,14 +22,14 @@ enum Directionality
 ## Topics
 
 ### Enumeration Cases
-- [QUICStream.Directionality.bidirectional](quicstream/directionality/bidirectional.md)
-- [QUICStream.Directionality.unidirectional](quicstream/directionality/unidirectional.md)
+- [QUICStream.Directionality.bidirectional](./directionality/bidirectional.md)
+- [QUICStream.Directionality.unidirectional](./directionality/unidirectional.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

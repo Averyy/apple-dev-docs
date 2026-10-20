@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides an object that enumerates over search results, in response to a call from the system.
@@ -15,19 +16,24 @@ Provides an object that enumerates over search results, in response to a call fr
 func searchEnumerator(for request: NSFileProviderStringSearchRequest) -> any NSFileProviderSearchEnumerator
 ```
 
+```objc
+- (id<NSFileProviderSearchEnumerator>) searchEnumeratorForStringSearchRequest:(NSFileProviderStringSearchRequest *) request;
+```
+
 #### Return Value
 
-An [`NSFileProviderSearchEnumerator`](nsfileprovidersearchenumerator.md) that you implement to provide search results to the system.
+An [`NSFileProviderSearchEnumerator`](../nsfileprovidersearchenumerator.md) that you implement to provide search results to the system.
 
 ## Parameters
 
-- `request`: An [`NSFileProviderStringSearchRequest`](nsfileproviderstringsearchrequest.md) that contains the search query.
+- `request`: An [`NSFileProviderStringSearchRequest`](../nsfileproviderstringsearchrequest.md) that contains the search query.
 
 ## See Also
 
-- [class NSFileProviderStringSearchRequest](nsfileproviderstringsearchrequest.md)
+### Implementing search
+- [class NSFileProviderStringSearchRequest](../nsfileproviderstringsearchrequest.md)
   A type that contains details of a string-based search request.
-- [protocol NSFileProviderSearchEnumerator](nsfileprovidersearchenumerator.md)
+- [protocol NSFileProviderSearchEnumerator](../nsfileprovidersearchenumerator.md)
   A protocol that defines methods for providing search results and canceling searches.
 
 

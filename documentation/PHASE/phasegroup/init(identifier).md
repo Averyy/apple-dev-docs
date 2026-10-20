@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group with a unique name.
 
@@ -17,6 +18,10 @@ Creates a group with a unique name.
 
 ```swift
 init(identifier: String)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
 ```
 
 ## Parameters

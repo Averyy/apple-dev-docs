@@ -1,16 +1,17 @@
 # MLCSampleMode
 
 **Framework**: ML Compute  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A sampling mode for an upsample layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,31 +19,36 @@ A sampling mode for an upsample layer.
 enum MLCSampleMode
 ```
 
+```c
+enum MLCSampleMode : int32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MLCSampleMode.nearest](mlcsamplemode/nearest.md)
-- [MLCSampleMode.linear](mlcsamplemode/linear.md)
-- [var debugDescription: String](mlcsamplemode/debugdescription.md)
+- [MLCSampleMode.nearest](./mlcsamplemode/nearest.md)
+- [MLCSampleMode.linear](./mlcsamplemode/linear.md)
+- [var debugDescription: String](./mlcsamplemode/debugdescription.md)
   A textual description of the sample mode, suitable for debugging.
 ### Initializers
-- [init?(rawValue: Int32)](mlcsamplemode/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./mlcsamplemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init?(shape: [Int])](mlcupsamplelayer/init(shape:).md)
+### Creating Upsample Layers
+- [convenience init?(shape: [Int])](./mlcupsamplelayer/init%28shape%29.md)
   Creates an upsample layer with the shape you specify.
-- [convenience init?(shape: [Int], sampleMode: MLCSampleMode, alignsCorners: Bool)](mlcupsamplelayer/init(shape:samplemode:alignscorners:).md)
+- [convenience init?(shape: [Int], sampleMode: MLCSampleMode, alignsCorners: Bool)](./mlcupsamplelayer/init%28shape,samplemode,alignscorners%29.md)
   Creates an upsample layer with the shape, upsampling algorithm, and corner alignment option you specify.
 
 

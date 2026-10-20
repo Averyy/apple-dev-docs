@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range of the reported observation.
 
@@ -19,15 +20,20 @@ The time range of the reported observation.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CMTimeRange timeRange;
+```
+
 #### Discussion
 
-When evaluating a sequence of image buffers, use this property to determine each observation’s start time and duration. If a request doesn’t support time ranges, or the time range is unknown, the value of this property is [`zero`](https://developer.apple.com/documentation/coremedia/cmtimerange/zero).
+When evaluating a sequence of image buffers, use this property to determine each observation’s start time and duration. If a request doesn’t support time ranges, or the time range is unknown, the value of this property is [`zero`](../../CoreMedia/cmtimerange/zero.md).
 
 ## See Also
 
-- [var confidence: VNConfidence](vnobservation/confidence.md)
+### Evaluating Observations
+- [var confidence: VNConfidence](./confidence.md)
   The level of confidence in the observation’s accuracy.
-- [typealias VNConfidence](vnconfidence.md)
+- [typealias VNConfidence](../vnconfidence.md)
   A type alias for the confidence value of an observation.
 
 

@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animal body pose the request observes.
 
@@ -17,6 +18,10 @@ The animal body pose the request observes.
 
 ```swift
 var results: [VNAnimalBodyPoseObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNAnimalBodyPoseObservation *> * results;
 ```
 
 

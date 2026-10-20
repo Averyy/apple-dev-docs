@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns reflection information for this machine learning pipeline state.
@@ -18,6 +19,10 @@ Returns reflection information for this machine learning pipeline state.
 
 ```swift
 var reflection: MTL4MachineLearningPipelineReflection? { get }
+```
+
+```objc
+@property (readonly, nullable) MTL4MachineLearningPipelineReflection * reflection;
 ```
 
 

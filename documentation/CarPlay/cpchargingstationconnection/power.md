@@ -1,7 +1,8 @@
 # power
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var power: Measurement<UnitPower> { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSMeasurement<NSUnitPower *> * power;
 ```
 
 

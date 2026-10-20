@@ -1,7 +1,8 @@
 # NotificationCenter.Publisher.Output
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -22,7 +23,8 @@ typealias Output = Notification
 
 ## See Also
 
-- [NotificationCenter.Publisher.Failure](notificationcenter/publisher/failure.md)
+### Declaring Publisher Topography
+- [NotificationCenter.Publisher.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

@@ -1,14 +1,15 @@
 # kIOMemoryTypeUPL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryTypeUPL = 0x00000030
 ```
 

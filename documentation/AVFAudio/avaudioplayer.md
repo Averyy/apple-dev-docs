@@ -1,7 +1,8 @@
 # AVAudioPlayer
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that plays audio data from a file or buffer.
 
@@ -20,9 +21,13 @@ An object that plays audio data from a file or buffer.
 class AVAudioPlayer
 ```
 
+```objc
+@interface AVAudioPlayer : NSObject
+```
+
 ## Mentions
 
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Routing audio to specific devices in multidevice sessions](./routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
 #### Overview
 
@@ -33,111 +38,112 @@ Use an audio player to:
 - Access playback-level metering data
 - Play multiple sounds simultaneously by synchronizing the playback of multiple players
 
-For more information about preparing your app to play audio, see [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback).
+For more information about preparing your app to play audio, see [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md).
 
-> ❗ **Important**:  For more advanced playback capabilities, like playing streaming or positional audio, use [`AVAudioEngine`](avaudioengine.md) instead.
+> ❗ **Important**:  For more advanced playback capabilities, like playing streaming or positional audio, use [`AVAudioEngine`](./avaudioengine.md) instead.
 
 ## Topics
 
 ### Creating an audio player
-- [init(contentsOf: URL) throws](avaudioplayer/init(contentsof:).md)
+- [init(contentsOf: URL) throws](./avaudioplayer/init%28contentsof%29.md)
   Creates a player to play audio from a file.
-- [init(contentsOf: URL, fileTypeHint: String?) throws](avaudioplayer/init(contentsof:filetypehint:).md)
+- [init(contentsOf: URL, fileTypeHint: String?) throws](./avaudioplayer/init%28contentsof,filetypehint%29.md)
   Creates a player to play audio from a file of a particular type.
-- [init(data: Data) throws](avaudioplayer/init(data:).md)
+- [init(data: Data) throws](./avaudioplayer/init%28data%29.md)
   Creates a player to play in-memory audio data.
-- [init(data: Data, fileTypeHint: String?) throws](avaudioplayer/init(data:filetypehint:).md)
+- [init(data: Data, fileTypeHint: String?) throws](./avaudioplayer/init%28data,filetypehint%29.md)
   Creates a player to play in-memory audio data of a particular type.
 ### Controlling playback
-- [func prepareToPlay() -> Bool](avaudioplayer/preparetoplay.md)
+- [func prepareToPlay() -> Bool](./avaudioplayer/preparetoplay%28%29.md)
   Prepares the player for audio playback.
-- [func play() -> Bool](avaudioplayer/play.md)
+- [func play() -> Bool](./avaudioplayer/play%28%29.md)
   Plays audio asynchronously.
-- [func play(atTime: TimeInterval) -> Bool](avaudioplayer/play(attime:).md)
+- [func play(atTime: TimeInterval) -> Bool](./avaudioplayer/play%28attime%29.md)
   Plays audio asynchronously, starting at a specified point in the audio output device’s timeline.
-- [func pause()](avaudioplayer/pause.md)
+- [func pause()](./avaudioplayer/pause%28%29.md)
   Pauses audio playback.
-- [func stop()](avaudioplayer/stop.md)
+- [func stop()](./avaudioplayer/stop%28%29.md)
   Stops playback and undoes the setup the system requires for playback.
-- [var isPlaying: Bool](avaudioplayer/isplaying.md)
+- [var isPlaying: Bool](./avaudioplayer/isplaying.md)
   A Boolean value that indicates whether the player is currently playing audio.
 ### Configuring playback settings
-- [var volume: Float](avaudioplayer/volume.md)
+- [var volume: Float](./avaudioplayer/volume.md)
   The audio player’s volume relative to other audio output.
-- [func setVolume(Float, fadeDuration: TimeInterval)](avaudioplayer/setvolume(_:fadeduration:).md)
+- [func setVolume(Float, fadeDuration: TimeInterval)](./avaudioplayer/setvolume%28_,fadeduration%29.md)
   Changes the audio player’s volume over a duration of time.
-- [var pan: Float](avaudioplayer/pan.md)
+- [var pan: Float](./avaudioplayer/pan.md)
   The audio player’s stereo pan position.
-- [var enableRate: Bool](avaudioplayer/enablerate.md)
+- [var enableRate: Bool](./avaudioplayer/enablerate.md)
   A Boolean value that indicates whether you can adjust the playback rate of the audio player.
-- [var rate: Float](avaudioplayer/rate.md)
+- [var rate: Float](./avaudioplayer/rate.md)
   The audio player’s playback rate.
-- [var numberOfLoops: Int](avaudioplayer/numberofloops.md)
+- [var numberOfLoops: Int](./avaudioplayer/numberofloops.md)
   The number of times the audio repeats playback.
 ### Accessing player timing
-- [var currentTime: TimeInterval](avaudioplayer/currenttime.md)
+- [var currentTime: TimeInterval](./avaudioplayer/currenttime.md)
   The current playback time, in seconds, within the audio timeline.
-- [var duration: TimeInterval](avaudioplayer/duration.md)
+- [var duration: TimeInterval](./avaudioplayer/duration.md)
   The total duration, in seconds, of the player’s audio.
 ### Configuring the Spatial Audio experience
-- [var intendedSpatialExperience: any SpatialAudioExperience](avaudioplayer/intendedspatialexperience-27klj.md)
+- [var intendedSpatialExperience: any SpatialAudioExperience](./avaudioplayer/intendedspatialexperience-27klj.md)
   The intended spatial experience for this player.
 ### Managing audio channels
-- [var numberOfChannels: Int](avaudioplayer/numberofchannels.md)
+- [var numberOfChannels: Int](./avaudioplayer/numberofchannels.md)
   The number of audio channels in the player’s audio.
-- [var channelAssignments: [AVAudioSessionChannelDescription]?](avaudioplayer/channelassignments.md)
+- [var channelAssignments: [AVAudioSessionChannelDescription]?](./avaudioplayer/channelassignments.md)
   An array of channel descriptions for the audio player.
 ### Managing audio-level metering
-- [var isMeteringEnabled: Bool](avaudioplayer/ismeteringenabled.md)
+- [var isMeteringEnabled: Bool](./avaudioplayer/ismeteringenabled.md)
   A Boolean value that indicates whether the player is able to generate audio-level metering data.
-- [func updateMeters()](avaudioplayer/updatemeters.md)
+- [func updateMeters()](./avaudioplayer/updatemeters%28%29.md)
   Refreshes the average and peak power values for all channels of an audio player.
-- [func averagePower(forChannel: Int) -> Float](avaudioplayer/averagepower(forchannel:).md)
+- [func averagePower(forChannel: Int) -> Float](./avaudioplayer/averagepower%28forchannel%29.md)
   Returns the average power, in decibels full-scale (dBFS), for an audio channel.
-- [func peakPower(forChannel: Int) -> Float](avaudioplayer/peakpower(forchannel:).md)
+- [func peakPower(forChannel: Int) -> Float](./avaudioplayer/peakpower%28forchannel%29.md)
   Returns the peak power, in decibels full-scale (dBFS), for an audio channel.
 ### Responding to player events
-- [var delegate: (any AVAudioPlayerDelegate)?](avaudioplayer/delegate.md)
+- [var delegate: (any AVAudioPlayerDelegate)?](./avaudioplayer/delegate.md)
   The delegate object for the audio player.
-- [protocol AVAudioPlayerDelegate](avaudioplayerdelegate.md)
+- [protocol AVAudioPlayerDelegate](./avaudioplayerdelegate.md)
   A protocol that defines the methods to respond to audio playback events and decoding errors.
 ### Inspecting the audio data
-- [var url: URL?](avaudioplayer/url.md)
+- [var url: URL?](./avaudioplayer/url.md)
   The URL of the audio file.
-- [var data: Data?](avaudioplayer/data.md)
+- [var data: Data?](./avaudioplayer/data.md)
   The audio data associated with the player.
-- [var format: AVAudioFormat](avaudioplayer/format.md)
+- [var format: AVAudioFormat](./avaudioplayer/format.md)
   The format of the player’s audio data.
-- [var settings: [String : Any]](avaudioplayer/settings.md)
+- [var settings: [String : Any]](./avaudioplayer/settings.md)
   A dictionary that provides information about the player’s audio data.
 ### Accessing device information
-- [var currentDevice: String?](avaudioplayer/currentdevice.md)
+- [var currentDevice: String?](./avaudioplayer/currentdevice.md)
   The unique identifier of the current audio player.
-- [var deviceCurrentTime: TimeInterval](avaudioplayer/devicecurrenttime.md)
+- [var deviceCurrentTime: TimeInterval](./avaudioplayer/devicecurrenttime.md)
   The time value, in seconds, of the audio output device’s clock.
 ### Initializers
-- [init(contentsOfURL: URL) throws](avaudioplayer/init(contentsofurl:).md)
-- [init(contentsOfURL: URL, fileTypeHint: String?) throws](avaudioplayer/init(contentsofurl:filetypehint:).md)
+- [init(contentsOfURL: URL) throws](./avaudioplayer/init%28contentsofurl%29.md)
+- [init(contentsOfURL: URL, fileTypeHint: String?) throws](./avaudioplayer/init%28contentsofurl,filetypehint%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioRecorder](avaudiorecorder.md)
+### Basic playback and recording
+- [class AVAudioRecorder](./avaudiorecorder.md)
   An object that records audio data to a file.
-- [class AVMIDIPlayer](avmidiplayer.md)
+- [class AVMIDIPlayer](./avmidiplayer.md)
   An object that plays MIDI data through a system sound module.
 
 

@@ -1,7 +1,8 @@
 # indexPath(for:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index path of the given element within the sectioned results.
 
@@ -22,7 +23,7 @@ final func indexPath(for element: Element) -> IndexPath?
 
 #### Return Value
 
-An index path where `[0]` is the section index and `[1]` is the item index, or `nil` if the object is not found or [`sections`](resultsobserver/sections.md) is `nil`.
+An index path where `[0]` is the section index and `[1]` is the item index, or `nil` if the object is not found or [`sections`](./sections.md) is `nil`.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ An index path where `[0]` is the section index and `[1]` is the item index, or `
 
 ## See Also
 
-- [var results: FetchResultsCollection<Element>](resultsobserver/results.md)
+### Accessing observer results
+- [var results: FetchResultsCollection<Element>](./results.md)
   The current collection of fetched models matching the fetch criteria.
-- [func element(at: IndexPath) -> Element?](resultsobserver/element(at:).md)
+- [func element(at: IndexPath) -> Element?](./element%28at%29.md)
   Returns the element at the given index path in the sectioned results.
 
 

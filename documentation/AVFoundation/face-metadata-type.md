@@ -1,13 +1,14 @@
 # Face metadata type
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 A metadata type string for face detection metadata.
 
 ## Topics
 
 ### Constants
-- [static let face: AVMetadataObject.ObjectType](avmetadataobject/objecttype/face.md)
+- [static let face: AVMetadataObject.ObjectType](./avmetadataobject/objecttype/face.md)
   A constant that identifies face metadata.
 
 

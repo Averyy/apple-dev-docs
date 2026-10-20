@@ -1,20 +1,25 @@
 # threadsPerGrid
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var threadsPerGrid: (UInt32, UInt32, UInt32)
+```
+
+```c
+uint32_t threadsPerGrid[3];
 ```
 
 

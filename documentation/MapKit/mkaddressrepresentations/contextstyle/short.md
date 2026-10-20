@@ -1,7 +1,8 @@
 # MKAddressRepresentations.ContextStyle.short
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents the short context style.
 
@@ -20,15 +21,20 @@ The value that represents the short context style.
 case short
 ```
 
+```c
+MKAddressRepresentationsContextStyleShort
+```
+
 #### Discussion
 
-The value that tells the framework to exclude optional context. For example, when used with [`cityWithContext(_:)`](mkaddressrepresentations/citywithcontext(_:).md) MapKit always excludes the region name.
+The value that tells the framework to exclude optional context. For example, when used with [`cityWithContext(_:)`](../citywithcontext%28_%29.md) MapKit always excludes the region name.
 
 ## See Also
 
-- [MKAddressRepresentations.ContextStyle.automatic](mkaddressrepresentations/contextstyle/automatic.md)
+### Available context styles
+- [MKAddressRepresentations.ContextStyle.automatic](./automatic.md)
   The value that represents the automatic context style.
-- [MKAddressRepresentations.ContextStyle.full](mkaddressrepresentations/contextstyle/full.md)
+- [MKAddressRepresentations.ContextStyle.full](./full.md)
   The value that represents the full context style.
 
 

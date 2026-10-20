@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFortyFiveSecondTimeoutInMS](1638115-anonymous/kfortyfivesecondtimeoutinms.md)
-- [kOneSecondTimeoutInMS](1638115-anonymous/konesecondtimeoutinms.md)
-- [kTenSecondTimeoutInMS](1638115-anonymous/ktensecondtimeoutinms.md)
-- [kThirtySecondTimeoutInMS](1638115-anonymous/kthirtysecondtimeoutinms.md)
-- [kTwentyFiveSecondTimeoutInMS](1638115-anonymous/ktwentyfivesecondtimeoutinms.md)
+- [kFortyFiveSecondTimeoutInMS](./api-1638115-anonymous/kfortyfivesecondtimeoutinms.md)
+- [kOneSecondTimeoutInMS](./api-1638115-anonymous/konesecondtimeoutinms.md)
+- [kTenSecondTimeoutInMS](./api-1638115-anonymous/ktensecondtimeoutinms.md)
+- [kThirtySecondTimeoutInMS](./api-1638115-anonymous/kthirtysecondtimeoutinms.md)
+- [kTwentyFiveSecondTimeoutInMS](./api-1638115-anonymous/ktwentyfivesecondtimeoutinms.md)
 
 
 ---

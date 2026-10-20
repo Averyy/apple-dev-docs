@@ -1,12 +1,13 @@
 # tokenizingCharacterSet
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s tokenizing character set to a given character set.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The receiver’s tokenizing character set to a given character set.
 var tokenizingCharacterSet: CharacterSet! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSCharacterSet * tokenizingCharacterSet;
+```
+
 ## See Also
 
-- [class var defaultTokenizingCharacterSet: CharacterSet](nstokenfieldcell/defaulttokenizingcharacterset.md)
+### Managing the Tokenizing Character Set
+- [class var defaultTokenizingCharacterSet: CharacterSet](./defaulttokenizingcharacterset.md)
   Returns the default tokenizing character set.
 
 

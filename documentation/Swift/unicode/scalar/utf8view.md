@@ -1,7 +1,8 @@
 # Unicode.Scalar.UTF8View
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -22,23 +23,23 @@ struct UTF8View
 ## Topics
 
 ### Default Implementations
-- [BidirectionalCollection Implementations](unicode/scalar/utf8view/bidirectionalcollection-implementations.md)
-- [Collection Implementations](unicode/scalar/utf8view/collection-implementations.md)
-- [RandomAccessCollection Implementations](unicode/scalar/utf8view/randomaccesscollection-implementations.md)
-- [Sequence Implementations](unicode/scalar/utf8view/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./utf8view/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./utf8view/collection-implementations.md)
+- [RandomAccessCollection Implementations](./utf8view/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./utf8view/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../../bidirectionalcollection.md)
+- [BitwiseCopyable](../../bitwisecopyable.md)
+- [Collection](../../collection.md)
+- [Copyable](../../copyable.md)
+- [Escapable](../../escapable.md)
+- [RandomAccessCollection](../../randomaccesscollection.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
+- [Sequence](../../sequence.md)
 
 
 ---

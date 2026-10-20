@@ -1,7 +1,8 @@
 # wantsForwardedScrollEvents(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether to forward elastic scrolling gesture events up the responder.
 
@@ -14,43 +15,48 @@ Returns whether to forward elastic scrolling gesture events up the responder.
 func wantsForwardedScrollEvents(for axis: NSEvent.GestureAxis) -> Bool
 ```
 
+```objc
+- (BOOL) wantsForwardedScrollEventsForAxis:(NSEventGestureAxis) axis;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) when forward gesture scroll events should be forwarded up the responder chain when the scrolling content is already at the edge of the scrolled direction at the beginning of the scroll gesture; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Returns [`true`](../../Swift/true.md) when forward gesture scroll events should be forwarded up the responder chain when the scrolling content is already at the edge of the scrolled direction at the beginning of the scroll gesture; [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-Some views process gesture scroll events to perform elastic scrolling. In some cases, you may want to track gesture scroll events like a swipe, see [`trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)`](nsevent/trackswipeevent(options:dampenamountthresholdmin:max:usinghandler:).md).
+Some views process gesture scroll events to perform elastic scrolling. In some cases, you may want to track gesture scroll events like a swipe, see [`trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)`](../nsevent/trackswipeevent%28options,dampenamountthresholdmin,max,usinghandler%29.md).
 
-Implement this method and return [`true`](https://developer.apple.com/documentation/swift/true) in your swipe controller and views that perform elastic scrolling will forward gesture scroll events up the responder chain on the following condition: the content to be scrolled is already at the edge of the scrolled direction at the beginning of the scroll gesture.
+Implement this method and return [`true`](../../Swift/true.md) in your swipe controller and views that perform elastic scrolling will forward gesture scroll events up the responder chain on the following condition: the content to be scrolled is already at the edge of the scrolled direction at the beginning of the scroll gesture.
 
 Otherwise, the view will perform elastic scrolling.
 
 ## Parameters
 
-- `axis`: The gesture axis. See [`NSEvent.GestureAxis`](nsevent/gestureaxis.md) for the possible values.
+- `axis`: The gesture axis. See [`NSEvent.GestureAxis`](../nsevent/gestureaxis.md) for the possible values.
 
 ## See Also
 
-- [func magnify(with: NSEvent)](nsresponder/magnify(with:).md)
+### Touch and Gesture Events
+- [func magnify(with: NSEvent)](./magnify%28with%29.md)
   Informs the receiver that the user has begun a pinch gesture.
-- [func rotate(with: NSEvent)](nsresponder/rotate(with:).md)
+- [func rotate(with: NSEvent)](./rotate%28with%29.md)
   Informs the receiver that the user has begun a rotation gesture.
-- [func swipe(with: NSEvent)](nsresponder/swipe(with:).md)
+- [func swipe(with: NSEvent)](./swipe%28with%29.md)
   Informs the receiver that the user has begun a swipe gesture.
-- [func touchesBegan(with: NSEvent)](nsresponder/touchesbegan(with:).md)
+- [func touchesBegan(with: NSEvent)](./touchesbegan%28with%29.md)
   Informs the receiver that new set of touches has been recognized.
-- [func touchesMoved(with: NSEvent)](nsresponder/touchesmoved(with:).md)
+- [func touchesMoved(with: NSEvent)](./touchesmoved%28with%29.md)
   Informs the receiver that one or more touches has moved.
-- [func touchesCancelled(with: NSEvent)](nsresponder/touchescancelled(with:).md)
+- [func touchesCancelled(with: NSEvent)](./touchescancelled%28with%29.md)
   Informs the receiver that tracking of touches has been cancelled for any reason.
-- [func touchesEnded(with: NSEvent)](nsresponder/touchesended(with:).md)
+- [func touchesEnded(with: NSEvent)](./touchesended%28with%29.md)
   Returns that a set of touches have been removed.
-- [func smartMagnify(with: NSEvent)](nsresponder/smartmagnify(with:).md)
+- [func smartMagnify(with: NSEvent)](./smartmagnify%28with%29.md)
   Informs the receiver that the user performed a smart zoom gesture.
-- [func wantsScrollEventsForSwipeTracking(on: NSEvent.GestureAxis) -> Bool](nsresponder/wantsscrolleventsforswipetracking(on:).md)
+- [func wantsScrollEventsForSwipeTracking(on: NSEvent.GestureAxis) -> Bool](./wantsscrolleventsforswipetracking%28on%29.md)
   Implement this method to track gesture scroll events such as a swipe.
-- [NSEvent.GestureAxis](nsevent/gestureaxis.md)
+- [NSEvent.GestureAxis](../nsevent/gestureaxis.md)
   Constants that specify the direction of travel for a gesture.
 
 

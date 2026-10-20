@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player is currently playing audio.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the player is currently playing audio.
 var isPlaying: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isPlaying) BOOL playing;
+```
+
 ## See Also
 
-- [func prepareToPlay() -> Bool](avaudioplayer/preparetoplay.md)
+### Controlling playback
+- [func prepareToPlay() -> Bool](./preparetoplay%28%29.md)
   Prepares the player for audio playback.
-- [func play() -> Bool](avaudioplayer/play.md)
+- [func play() -> Bool](./play%28%29.md)
   Plays audio asynchronously.
-- [func play(atTime: TimeInterval) -> Bool](avaudioplayer/play(attime:).md)
+- [func play(atTime: TimeInterval) -> Bool](./play%28attime%29.md)
   Plays audio asynchronously, starting at a specified point in the audio output device’s timeline.
-- [func pause()](avaudioplayer/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses audio playback.
-- [func stop()](avaudioplayer/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops playback and undoes the setup the system requires for playback.
 
 

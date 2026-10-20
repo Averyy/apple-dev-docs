@@ -1,7 +1,8 @@
 # cgImage
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Core Graphics image created from the pixel buffer observation.
 
@@ -22,12 +23,13 @@ var cgImage: CGImage { get throws }
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [var pixelFormat: OSType](pixelbufferobservation/pixelformat.md)
+- [var pixelFormat: OSType](./pixelformat.md)
   The four-character code that identifies the pixel format.
-- [var pixelBuffer: CVReadOnlyPixelBuffer](pixelbufferobservation/pixelbuffer.md)
-- [var size: CGSize](pixelbufferobservation/size.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer](./pixelbuffer.md)
+- [var size: CGSize](./size.md)
   The size of the image.
 
 

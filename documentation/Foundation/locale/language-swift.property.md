@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language of a locale.
 
@@ -22,7 +23,8 @@ var language: Locale.Language { get }
 
 ## See Also
 
-- [Locale.Language](locale/language-swift.struct.md)
+### Getting language components
+- [Locale.Language](./language-swift.struct.md)
   A type that represents a language, as used in a locale.
 
 

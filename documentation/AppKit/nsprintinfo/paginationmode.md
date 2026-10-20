@@ -1,12 +1,13 @@
 # NSPrintInfo.PaginationMode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the different ways in which an image is divided into pages.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,34 +15,39 @@ Constants that specify the different ways in which an image is divided into page
 enum PaginationMode
 ```
 
+```c
+enum NSPrintingPaginationMode : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by [`horizontalPagination`](nsprintinfo/horizontalpagination.md) and [`verticalPagination`](nsprintinfo/verticalpagination.md).
+These constants are used by [`horizontalPagination`](./horizontalpagination.md) and [`verticalPagination`](./verticalpagination.md).
 
 ## Topics
 
 ### Constants
-- [NSPrintInfo.PaginationMode.automatic](nsprintinfo/paginationmode/automatic.md)
-- [NSPrintInfo.PaginationMode.fit](nsprintinfo/paginationmode/fit.md)
-- [NSPrintInfo.PaginationMode.clip](nsprintinfo/paginationmode/clip.md)
+- [NSPrintInfo.PaginationMode.automatic](./paginationmode/automatic.md)
+- [NSPrintInfo.PaginationMode.fit](./paginationmode/fit.md)
+- [NSPrintInfo.PaginationMode.clip](./paginationmode/clip.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsprintinfo/paginationmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./paginationmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var horizontalPagination: NSPrintInfo.PaginationMode](nsprintinfo/horizontalpagination.md)
+### Pagination
+- [var horizontalPagination: NSPrintInfo.PaginationMode](./horizontalpagination.md)
   The horizontal pagination mode.
-- [var verticalPagination: NSPrintInfo.PaginationMode](nsprintinfo/verticalpagination.md)
+- [var verticalPagination: NSPrintInfo.PaginationMode](./verticalpagination.md)
   The vertical pagination to the specified mode.
 
 

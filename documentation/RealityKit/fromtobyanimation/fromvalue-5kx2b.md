@@ -1,7 +1,8 @@
 # fromValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,15 +18,18 @@
 var fromValue: SIMD2<Float>? { get set }
 ```
 
+Available when `Value` is `SIMD2<Float>`.
+
 ## See Also
 
-- [var fromValue: JointTransforms?](fromtobyanimation/fromvalue-2h2wq.md)
-- [var fromValue: Transform?](fromtobyanimation/fromvalue-8dr21.md)
-- [var fromValue: Double?](fromtobyanimation/fromvalue-4tv25.md)
-- [var fromValue: Float?](fromtobyanimation/fromvalue-umpp.md)
-- [var fromValue: simd_quatf?](fromtobyanimation/fromvalue-12wzs.md)
-- [var fromValue: SIMD3<Float>?](fromtobyanimation/fromvalue-6msd.md)
-- [var fromValue: SIMD4<Float>?](fromtobyanimation/fromvalue-5ckq7.md)
+### Defining a start value
+- [var fromValue: JointTransforms?](./fromvalue-2h2wq.md)
+- [var fromValue: Transform?](./fromvalue-8dr21.md)
+- [var fromValue: Double?](./fromvalue-4tv25.md)
+- [var fromValue: Float?](./fromvalue-umpp.md)
+- [var fromValue: simd_quatf?](./fromvalue-12wzs.md)
+- [var fromValue: SIMD3<Float>?](./fromvalue-6msd.md)
+- [var fromValue: SIMD4<Float>?](./fromvalue-5ckq7.md)
 
 
 ---

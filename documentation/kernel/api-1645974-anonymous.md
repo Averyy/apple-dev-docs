@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,11 +19,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOReportDisable](1645974-anonymous/kioreportdisable.md)
-- [kIOReportEnable](1645974-anonymous/kioreportenable.md)
-- [kIOReportGetDimensions](1645974-anonymous/kioreportgetdimensions.md)
-- [kIOReportNotifyHubOnChange](1645974-anonymous/kioreportnotifyhubonchange.md)
-- [kIOReportTraceOnChange](1645974-anonymous/kioreporttraceonchange.md)
+- [kIOReportDisable](./api-1645974-anonymous/kioreportdisable.md)
+- [kIOReportEnable](./api-1645974-anonymous/kioreportenable.md)
+- [kIOReportGetDimensions](./api-1645974-anonymous/kioreportgetdimensions.md)
+- [kIOReportNotifyHubOnChange](./api-1645974-anonymous/kioreportnotifyhubonchange.md)
+- [kIOReportTraceOnChange](./api-1645974-anonymous/kioreporttraceonchange.md)
 
 
 ---

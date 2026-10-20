@@ -1,7 +1,8 @@
 # List Win-Back Offers
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 The data structure that represents a get-v1-subscriptions-{id}-win back offers resource.
 
@@ -18,7 +19,7 @@ List all win-back offers for a specific subscription.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/subscriptions/6447497832/winBackOffers
 ```
 
@@ -84,27 +85,43 @@ https://api.appstoreconnect.apple.com/v1/subscriptions/6447497832/winBackOffers
 
 ## Parameters
 
-- `fields[winBackOfferPrices]` ([string])
-- `fields[winBackOffers]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[prices]` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[winBackOfferPrices]` ([string]): **Allowed Values**: `territory`, `subscriptionPricePoint`
+- `fields[winBackOffers]` ([string]): **Allowed Values**: `referenceName`, `offerId`, `duration`, `offerMode`, `periodCount`, `customerEligibilityPaidSubscriptionDurationInMonths`, `customerEligibilityTimeSinceLastSubscribedInMonths`, `customerEligibilityWaitBetweenOffersInMonths`, `startDate`, `endDate`, `priority`, `promotionIntent`, `targetSubscriptionPlanType`, `prices`
+- `include` ([string]): **Allowed Values**: `prices`
+- `limit` (integer): **Maximum**: `200`
+- `limit[prices]` (integer): **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`WinBackOffersResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)
+### Endpoints
+- [Creating and configuring win-back offers](./creating-and-configuring-win-back-offers.md)
   Configure win-back offers for your auto-renewable subscriptions with the App Store Connect API.
-- [List win-back offer IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
-- [Read Win-Back Offer Information](get-v1-winbackoffers-_id_.md)
+- [List win-back offer IDs for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-winbackoffers.md)
+- [Read Win-Back Offer Information](./get-v1-winbackoffers-_id_.md)
   The data structure that represents a get-v1-win back offers-{id} resource.
-- [List Win-Back Offer Prices](get-v1-winbackoffers-_id_-prices.md)
+- [List Win-Back Offer Prices](./get-v1-winbackoffers-_id_-prices.md)
   The data structure that represents a get-v1-win back offers-{id}-prices resource.
-- [List price IDs for a win-back offer](get-v1-winbackoffers-_id_-relationships-prices.md)
-- [Create a Win-Back Offer](post-v1-winbackoffers.md)
+- [List price IDs for a win-back offer](./get-v1-winbackoffers-_id_-relationships-prices.md)
+- [Create a Win-Back Offer](./post-v1-winbackoffers.md)
   Create a win-back offer for a specific subscription.
-- [Modify a Win-Back Offer](patch-v1-winbackoffers-_id_.md)
+- [Modify a Win-Back Offer](./patch-v1-winbackoffers-_id_.md)
   The data structure that represents a patch-v1-win back offers-{id} resource.
-- [Delete a Win-Back Offer](delete-v1-winbackoffers-_id_.md)
+- [Delete a Win-Back Offer](./delete-v1-winbackoffers-_id_.md)
   The data structure that represents a delete-v1-win back offers-{id} resource.
 
 

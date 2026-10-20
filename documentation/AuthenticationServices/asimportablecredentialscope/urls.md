@@ -1,7 +1,8 @@
 # urls
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 URLs where that are associated with this credential.
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that can be used to multiply effects that are applied differently depending on the phase.
 
@@ -26,7 +27,8 @@ Zero when in the `identity` case, -1.0 for `willAppear`, and 1.0 for `didDisappe
 
 ## See Also
 
-- [var isIdentity: Bool](transitionphase/isidentity.md)
+### Getting phase characteristics
+- [var isIdentity: Bool](./isidentity.md)
   A Boolean that indicates whether the transition should have an identity effect, i.e. not change the appearance of its view.
 
 

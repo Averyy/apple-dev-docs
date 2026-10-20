@@ -1,7 +1,8 @@
 # snapshot()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a representation of the current state of the data in the collection view.
 
@@ -20,7 +21,8 @@ A snapshot containing section and item identifiers in the order that they appear
 
 ## See Also
 
-- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool, completion: (() -> Void)?)](nscollectionviewdiffabledatasource-axww/apply(_:animatingdifferences:completion:).md)
+### Updating Data
+- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool, completion: (() -> Void)?)](./apply%28_,animatingdifferences,completion%29.md)
   Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
 
 

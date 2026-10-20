@@ -1,7 +1,8 @@
 # gatherAlongAxisTensor(_:updates:indices:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a GatherAlongAxis operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a GatherAlongAxis operation and returns the result tensor.
 
 ```swift
 func gatherAlongAxisTensor(_ axisTensor: MPSGraphTensor, updates updatesTensor: MPSGraphTensor, indices indicesTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) gatherAlongAxisTensor:(MPSGraphTensor *) axisTensor withUpdatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor name:(NSString *) name;
 ```
 
 #### Return Value

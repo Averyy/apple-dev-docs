@@ -1,7 +1,8 @@
 # eventAttribution
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object you use to send tap event attribution data to the browser for Private Click Measurement.
 
@@ -15,6 +16,10 @@ An object you use to send tap event attribution data to the browser for Private 
 
 ```swift
 static let eventAttribution: UIApplication.OpenExternalURLOptionsKey
+```
+
+```c
+extern UIApplicationOpenExternalURLOptionsKey const UIApplicationOpenExternalURLOptionsEventAttributionKey;
 ```
 
 

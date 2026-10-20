@@ -1,14 +1,15 @@
 # set_ss
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 void set_ss(uint16_t ss);
 ```
 

@@ -1,14 +1,15 @@
 # kState_ShiftActivates_Flag
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kState_ShiftActivates_Flag = 0x0002
 ```
 

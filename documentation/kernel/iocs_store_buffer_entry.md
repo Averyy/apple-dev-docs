@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct iocs_store_buffer_entry {
     ...
 };
@@ -17,8 +17,8 @@ struct iocs_store_buffer_entry {
 ## Topics
 
 ### Instance Properties
-- [iocs](iocs_store_buffer_entry/3728065-iocs.md)
-- [path_name](iocs_store_buffer_entry/3728066-path_name.md)
+- [iocs](./iocs_store_buffer_entry/api-3728065-iocs.md)
+- [path_name](./iocs_store_buffer_entry/api-3728066-path_name.md)
 
 
 ---

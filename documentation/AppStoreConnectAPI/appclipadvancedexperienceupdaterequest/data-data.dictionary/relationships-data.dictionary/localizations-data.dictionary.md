@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship to the Advanced App Clip Experience Localizations resource you set with the request that updates an Advanced App Clip Experiences resource.
 
@@ -10,14 +11,14 @@ The relationship to the Advanced App Clip Experience Localizations resource you 
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations.Data](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations.Data](./localizations-data.dictionary/data-data.dictionary.md)
   The type and ID of the Advanced App Clip Experience Localizations resource that you’re relating with the Advanced App Clip Experiences resource you’re updating.
 
 ## Properties
@@ -26,9 +27,10 @@ object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.Localizations
 
 ## See Also
 
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.AppClip](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary/appclip-data.dictionary.md)
+### Objects
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.AppClip](./appclip-data.dictionary.md)
   The relationship to the App Clips resource you set with the request that updates an Advanced App Clip Experiences resource.
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.HeaderImage](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary/headerimage-data.dictionary.md)
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.HeaderImage](./headerimage-data.dictionary.md)
   The relationship to the App Clip Header Images resource you set with the request that updates an Advanced App Clip Experiences resource.
 
 

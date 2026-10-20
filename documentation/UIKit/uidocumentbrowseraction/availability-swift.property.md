@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that defines where the action can appear (in the Edit Menu, the navigation bar, or both).
 
@@ -17,17 +18,22 @@ A value that defines where the action can appear (in the Edit Menu, the navigati
 var availability: UIDocumentBrowserAction.Availability { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIDocumentBrowserActionAvailability availability;
+```
+
 #### Discussion
 
-For a list of possible values, see [`UIDocumentBrowserAction.Availability`](uidocumentbrowseraction/availability-swift.struct.md).
+For a list of possible values, see [`UIDocumentBrowserAction.Availability`](./availability-swift.struct.md).
 
 ## See Also
 
-- [var identifier: String](uidocumentbrowseraction/identifier.md)
+### Accessing activity data
+- [var identifier: String](./identifier.md)
   The action’s unique identifier.
-- [var localizedTitle: String](uidocumentbrowseraction/localizedtitle.md)
+- [var localizedTitle: String](./localizedtitle.md)
   The title that appears in the menu or navigation bar.
-- [UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct.md)
+- [UIDocumentBrowserAction.Availability](./availability-swift.struct.md)
   Values that determine where the action can appear in the document browser.
 
 

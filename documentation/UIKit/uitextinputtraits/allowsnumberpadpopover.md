@@ -1,7 +1,8 @@
 # allowsNumberPadPopover
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional var allowsNumberPadPopover: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL allowsNumberPadPopover;
 ```
 
 

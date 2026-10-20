@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this capture, if the capture is named.
 

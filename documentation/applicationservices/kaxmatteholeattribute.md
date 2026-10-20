@@ -1,7 +1,8 @@
 # kAXMatteHoleAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The accessibility object that represents the area available to the user through the matte hole.
 
@@ -12,6 +13,10 @@ The accessibility object that represents the area available to the user through 
 
 ```swift
 var kAXMatteHoleAttribute: String { get }
+```
+
+```c
+#define kAXMatteHoleAttribute
 ```
 
 

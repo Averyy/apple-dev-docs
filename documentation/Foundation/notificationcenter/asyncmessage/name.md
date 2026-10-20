@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A optional name corresponding to this type, used to interoperate with notification posters and observers.
@@ -21,9 +22,16 @@ A optional name corresponding to this type, used to interoperate with notificati
 static var name: Notification.Name { get }
 ```
 
+## Default Implementations
+
+### NotificationCenter.AsyncMessage Implementations
+- [static var name: Notification.Name](./name-6jusd.md)
+  A optional name corresponding to this type, used to interoperate with notification posters and observers.
+
 ## See Also
 
-- [associatedtype Subject](notificationcenter/asyncmessage/subject.md)
+### Declaring the message name and subject
+- [associatedtype Subject](./subject.md)
   A type which you can optionally post and observe along with this `AsyncMessage`.
 
 

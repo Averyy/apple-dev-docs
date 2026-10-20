@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance.
 
@@ -19,6 +20,8 @@ A textual representation of this instance.
 ```swift
 var description: String { get }
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Discussion
 

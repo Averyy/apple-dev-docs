@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System Extensions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.15+

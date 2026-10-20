@@ -1,7 +1,8 @@
 # allowedAudioSpatializationFormats
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source audio channel layouts the audio renderer supports for spatialization.
 
@@ -19,9 +20,13 @@ The source audio channel layouts the audio renderer supports for spatialization.
 var allowedAudioSpatializationFormats: AVAudioSpatializationFormats { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AVAudioSpatializationFormats allowedAudioSpatializationFormats;
+```
+
 #### Discussion
 
-The default property value is [`multichannel`](avaudiospatializationformats/multichannel.md), which tells the player to spatialize any decodable multichannel layout. Setting the value to [`monoStereoAndMultichannel`](avaudiospatializationformats/monostereoandmultichannel.md) tells the player to spatialize any decodable mono, stereo, or multichannel layout. When this property value is [`monoAndStereo`](avaudiospatializationformats/monoandstereo.md) the player attempts to spatialize content tagged with a stereo channel layout (two-channel content with no layout specified as well as mono).
+The default property value is [`multichannel`](../avaudiospatializationformats/multichannel.md), which tells the player to spatialize any decodable multichannel layout. Setting the value to [`monoStereoAndMultichannel`](../avaudiospatializationformats/monostereoandmultichannel.md) tells the player to spatialize any decodable mono, stereo, or multichannel layout. When this property value is [`monoAndStereo`](../avaudiospatializationformats/monoandstereo.md) the player attempts to spatialize content tagged with a stereo channel layout (two-channel content with no layout specified as well as mono).
 
 This property isn’t key-value observable.
 

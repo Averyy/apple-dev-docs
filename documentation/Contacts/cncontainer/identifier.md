@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for a contacts container on the device.
 
@@ -19,17 +20,30 @@ The unique identifier for a contacts container on the device.
 var identifier: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
 It is recommended that you use the identifier when re-fetching the container. The identifier can be persisted between app launches.
 
 ## See Also
 
-- [var name: String](cncontainer/name.md)
+### Getting the Container Information
+- [var name: String](./name.md)
   The name of the container.
-- [var type: CNContainerType](cncontainer/type.md)
+- [var type: CNContainerType](./type.md)
   The type of the container.
-- [enum CNContainerType](cncontainertype.md)
+- [enum CNContainerType](../cncontainertype.md)
   The container may be local on the device or associated with a server account that has contacts.
 
 

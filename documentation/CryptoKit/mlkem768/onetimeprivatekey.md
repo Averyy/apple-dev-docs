@@ -1,7 +1,8 @@
 # MLKEM768.OneTimePrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,24 +22,24 @@ struct OneTimePrivateKey
 ## Topics
 
 ### Initializers
-- [init() throws](mlkem768/onetimeprivatekey/init.md)
+- [init() throws](./onetimeprivatekey/init%28%29.md)
   Initializes a random one-time-use private key.
 ### Instance Properties
-- [var publicKey: MLKEM768.PublicKey](mlkem768/onetimeprivatekey/publickey.md)
+- [var publicKey: MLKEM768.PublicKey](./onetimeprivatekey/publickey.md)
   The corresponding public key.
 ### Instance Methods
-- [func decapsulate<D>(D) throws -> SymmetricKey](mlkem768/onetimeprivatekey/decapsulate(_:).md)
+- [func decapsulate<D>(D) throws -> SymmetricKey](./onetimeprivatekey/decapsulate%28_%29.md)
   Decapsulate a shared secret.
 ### Type Methods
-- [static func generate() throws -> MLKEM768.OneTimePrivateKey](mlkem768/onetimeprivatekey/generate.md)
+- [static func generate() throws -> MLKEM768.OneTimePrivateKey](./onetimeprivatekey/generate%28%29.md)
   Generates a new, random one-time-use private key.
 
 ## Relationships
 
 ### Conforms To
-- [KEMOneTimePrivateKey](kemonetimeprivatekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [KEMOneTimePrivateKey](../kemonetimeprivatekey.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

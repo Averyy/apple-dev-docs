@@ -1,7 +1,8 @@
 # kCGImagePropertyExifLensMake
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string with the name of the lens manufacturer.
 
@@ -20,13 +21,18 @@ A string with the name of the lens manufacturer.
 let kCGImagePropertyExifLensMake: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifLensMake;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifLensSpecification: CFString](kcgimagepropertyexiflensspecification.md)
+### Lens Information
+- [let kCGImagePropertyExifLensSpecification: CFString](./kcgimagepropertyexiflensspecification.md)
   The specification information for the camera lens.
-- [let kCGImagePropertyExifLensModel: CFString](kcgimagepropertyexiflensmodel.md)
+- [let kCGImagePropertyExifLensModel: CFString](./kcgimagepropertyexiflensmodel.md)
   A string with the lens model information.
-- [let kCGImagePropertyExifLensSerialNumber: CFString](kcgimagepropertyexiflensserialnumber.md)
+- [let kCGImagePropertyExifLensSerialNumber: CFString](./kcgimagepropertyexiflensserialnumber.md)
   A string with the lens’s serial number.
 
 

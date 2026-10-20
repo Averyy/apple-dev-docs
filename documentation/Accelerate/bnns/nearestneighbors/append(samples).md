@@ -1,7 +1,8 @@
 # append(samples:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds new sample data to a k-nearest neighbors object.
 
@@ -11,7 +12,7 @@ Adds new sample data to a k-nearest neighbors object.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

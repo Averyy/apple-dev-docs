@@ -1,7 +1,8 @@
 # hv_vcpu_set_sme_zt0_reg(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the value of the vCPU ZT0 register in streaming Scalable Vector Extension (SVE) mode.
 
@@ -14,6 +15,10 @@ Sets the value of the vCPU ZT0 register in streaming Scalable Vector Extension (
 func hv_vcpu_set_sme_zt0_reg(_ vcpu: hv_vcpu_t, _ value: UnsafePointer<hv_sme_zt0_uchar64_t>) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vcpu_set_sme_zt0_reg(hv_vcpu_t vcpu, const hv_sme_zt0_uchar64_t *value);
+```
+
 #### Return Value
 
 `HV_SUCCESS` on success, an error code otherwise.
@@ -22,7 +27,7 @@ func hv_vcpu_set_sme_zt0_reg(_ vcpu: hv_vcpu_t, _ value: UnsafePointer<hv_sme_zt
 
 > ❗ **Important**:  You need to call this on the owning thread.
 
-This method returns an error if `PSTATE.ZA` is `0` (For example, if [`za_storage_enabled`](hv_vcpu_sme_state_t/za_storage_enabled.md) is `false`).
+This method returns an error if `PSTATE.ZA` is `0` (For example, if [`za_storage_enabled`](./hv_vcpu_sme_state_t/za_storage_enabled.md) is `false`).
 
 This methods doesn’t require streaming SVE mode to be in an enabled state.
 
@@ -33,21 +38,22 @@ This methods doesn’t require streaming SVE mode to be in an enabled state.
 
 ## See Also
 
-- [func hv_sme_config_get_max_svl_bytes(UnsafeMutablePointer<Int>) -> hv_return_t](hv_sme_config_get_max_svl_bytes(_:).md)
-- [func hv_vcpu_apic_ctrl(hv_vcpuid_t, hv_apic_ctrl_t) -> hv_return_t](hv_vcpu_apic_ctrl(_:_:).md)
-- [func hv_vcpu_apic_get_state(hv_vcpuid_t, UnsafeMutablePointer<hv_apic_state_ext_t>) -> hv_return_t](hv_vcpu_apic_get_state(_:_:).md)
-- [func hv_vcpu_apic_lsc_enter_imm32(hv_vcpuid_t, UInt64, UInt32, UInt16, UInt32, UnsafeMutablePointer<UInt64>?, UInt32) -> hv_return_t](hv_vcpu_apic_lsc_enter_imm32(_:_:_:_:_:_:_:).md)
-- [func hv_vcpu_apic_lsc_enter_r32(hv_vcpuid_t, Bool, UInt64, UInt32, UInt16, hv_x86_reg_t, UnsafeMutablePointer<UInt64>?, UInt32) -> hv_return_t](hv_vcpu_apic_lsc_enter_r32(_:_:_:_:_:_:_:_:).md)
-- [func hv_vcpu_apic_lsc_invalidate(hv_vcpuid_t) -> hv_return_t](hv_vcpu_apic_lsc_invalidate(_:).md)
-- [func hv_vcpu_apic_put_state(hv_vcpuid_t, UnsafePointer<hv_apic_state_ext_t>) -> hv_return_t](hv_vcpu_apic_put_state(_:_:).md)
-- [func hv_vcpu_apic_read(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt32>) -> hv_return_t](hv_vcpu_apic_read(_:_:_:).md)
-- [func hv_vcpu_apic_trigger_lvt(hv_vcpuid_t, hv_apic_lvt_flavor_t) -> hv_return_t](hv_vcpu_apic_trigger_lvt(_:_:).md)
-- [func hv_vcpu_apic_write(hv_vcpuid_t, UInt32, UInt32, UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vcpu_apic_write(_:_:_:_:).md)
-- [func hv_vcpu_exit_apic_access_read(hv_vcpuid_t, UnsafeMutablePointer<UInt32>) -> hv_return_t](hv_vcpu_exit_apic_access_read(_:_:).md)
-- [func hv_vcpu_exit_info(hv_vcpuid_t, UnsafeMutablePointer<hv_vm_exitinfo_t>) -> hv_return_t](hv_vcpu_exit_info(_:_:).md)
-- [func hv_vcpu_exit_init_ap(hv_vcpuid_t, UnsafeMutablePointer<Bool>, UInt32) -> hv_return_t](hv_vcpu_exit_init_ap(_:_:_:).md)
-- [func hv_vcpu_exit_inject_excp(hv_vcpuid_t, UnsafeMutablePointer<UInt8>, UnsafeMutablePointer<Bool>, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vcpu_exit_inject_excp(_:_:_:_:_:).md)
-- [func hv_vcpu_exit_ioapic_eoi(hv_vcpuid_t, UnsafeMutablePointer<UInt8>) -> hv_return_t](hv_vcpu_exit_ioapic_eoi(_:_:).md)
+### Functions
+- [func hv_sme_config_get_max_svl_bytes(UnsafeMutablePointer<Int>) -> hv_return_t](./hv_sme_config_get_max_svl_bytes%28_%29.md)
+- [func hv_vcpu_apic_ctrl(hv_vcpuid_t, hv_apic_ctrl_t) -> hv_return_t](./hv_vcpu_apic_ctrl%28_,_%29.md)
+- [func hv_vcpu_apic_get_state(hv_vcpuid_t, UnsafeMutablePointer<hv_apic_state_ext_t>) -> hv_return_t](./hv_vcpu_apic_get_state%28_,_%29.md)
+- [func hv_vcpu_apic_lsc_enter_imm32(hv_vcpuid_t, UInt64, UInt32, UInt16, UInt32, UnsafeMutablePointer<UInt64>?, UInt32) -> hv_return_t](./hv_vcpu_apic_lsc_enter_imm32%28_,_,_,_,_,_,_%29.md)
+- [func hv_vcpu_apic_lsc_enter_r32(hv_vcpuid_t, Bool, UInt64, UInt32, UInt16, hv_x86_reg_t, UnsafeMutablePointer<UInt64>?, UInt32) -> hv_return_t](./hv_vcpu_apic_lsc_enter_r32%28_,_,_,_,_,_,_,_%29.md)
+- [func hv_vcpu_apic_lsc_invalidate(hv_vcpuid_t) -> hv_return_t](./hv_vcpu_apic_lsc_invalidate%28_%29.md)
+- [func hv_vcpu_apic_put_state(hv_vcpuid_t, UnsafePointer<hv_apic_state_ext_t>) -> hv_return_t](./hv_vcpu_apic_put_state%28_,_%29.md)
+- [func hv_vcpu_apic_read(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt32>) -> hv_return_t](./hv_vcpu_apic_read%28_,_,_%29.md)
+- [func hv_vcpu_apic_trigger_lvt(hv_vcpuid_t, hv_apic_lvt_flavor_t) -> hv_return_t](./hv_vcpu_apic_trigger_lvt%28_,_%29.md)
+- [func hv_vcpu_apic_write(hv_vcpuid_t, UInt32, UInt32, UnsafeMutablePointer<Bool>) -> hv_return_t](./hv_vcpu_apic_write%28_,_,_,_%29.md)
+- [func hv_vcpu_exit_apic_access_read(hv_vcpuid_t, UnsafeMutablePointer<UInt32>) -> hv_return_t](./hv_vcpu_exit_apic_access_read%28_,_%29.md)
+- [func hv_vcpu_exit_info(hv_vcpuid_t, UnsafeMutablePointer<hv_vm_exitinfo_t>) -> hv_return_t](./hv_vcpu_exit_info%28_,_%29.md)
+- [func hv_vcpu_exit_init_ap(hv_vcpuid_t, UnsafeMutablePointer<Bool>, UInt32) -> hv_return_t](./hv_vcpu_exit_init_ap%28_,_,_%29.md)
+- [func hv_vcpu_exit_inject_excp(hv_vcpuid_t, UnsafeMutablePointer<UInt8>, UnsafeMutablePointer<Bool>, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<Bool>) -> hv_return_t](./hv_vcpu_exit_inject_excp%28_,_,_,_,_%29.md)
+- [func hv_vcpu_exit_ioapic_eoi(hv_vcpuid_t, UnsafeMutablePointer<UInt8>) -> hv_return_t](./hv_vcpu_exit_ioapic_eoi%28_,_%29.md)
 
 
 ---

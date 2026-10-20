@@ -1,7 +1,8 @@
 # bodyMass
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the user’s weight.
 
@@ -19,31 +20,37 @@ A quantity sample type that measures the user’s weight.
 static let bodyMass: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBodyMass;
+```
+
 ## Mentions
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
 #### Discussion
 
-These samples use mass units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+### Related Documentation
+- [struct HKQuantityTypeIdentifier](../hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](../hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](../hkquantity.md)
   An object that stores a value for a given unit.
-- [static let height: HKQuantityTypeIdentifier](hkquantitytypeidentifier/height.md)
+### Body measurements
+- [static let height: HKQuantityTypeIdentifier](./height.md)
   A quantity sample type that measures the user’s height.
-- [static let bodyMassIndex: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bodymassindex.md)
+- [static let bodyMassIndex: HKQuantityTypeIdentifier](./bodymassindex.md)
   A quantity sample type that measures the user’s body mass index.
-- [static let leanBodyMass: HKQuantityTypeIdentifier](hkquantitytypeidentifier/leanbodymass.md)
+- [static let leanBodyMass: HKQuantityTypeIdentifier](./leanbodymass.md)
   A quantity sample type that measures the user’s lean body mass.
-- [static let bodyFatPercentage: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bodyfatpercentage.md)
+- [static let bodyFatPercentage: HKQuantityTypeIdentifier](./bodyfatpercentage.md)
   A quantity sample type that measures the user’s body fat percentage.
-- [static let waistCircumference: HKQuantityTypeIdentifier](hkquantitytypeidentifier/waistcircumference.md)
+- [static let waistCircumference: HKQuantityTypeIdentifier](./waistcircumference.md)
   A quantity sample type that measures the user’s waist circumference.
 
 

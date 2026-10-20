@@ -1,7 +1,8 @@
 # endpoint
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Wi-Fi Aware endpoint that’s connected.
 

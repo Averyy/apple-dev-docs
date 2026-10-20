@@ -1,7 +1,8 @@
 # AVCaptureEventPhase.ended
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A phase that indicates the end of a capture event.
 
@@ -16,15 +17,20 @@ A phase that indicates the end of a capture event.
 case ended
 ```
 
+```c
+AVCaptureEventPhaseEnded
+```
+
 #### Discussion
 
 This phase corresponds to a user pressing up on a hardware button.
 
 ## See Also
 
-- [AVCaptureEventPhase.began](avcaptureeventphase/began.md)
+### Event phases
+- [AVCaptureEventPhase.began](./began.md)
   A phase that indicates the beginning of a capture event.
-- [AVCaptureEventPhase.cancelled](avcaptureeventphase/cancelled.md)
+- [AVCaptureEventPhase.cancelled](./cancelled.md)
   A phase that indicates the cancellation of a capture event.
 
 

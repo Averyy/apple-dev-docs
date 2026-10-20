@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.range(argumentName:minimum:maximum:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated range argument matcher.
 

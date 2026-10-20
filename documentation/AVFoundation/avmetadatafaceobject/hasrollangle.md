@@ -1,7 +1,8 @@
 # hasRollAngle
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether there is a valid roll angle associated with the face.
 
@@ -18,17 +19,22 @@ A Boolean value indicating whether there is a valid roll angle associated with t
 var hasRollAngle: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasRollAngle;
+```
+
 #### Discussion
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the value in the [`rollAngle`](avmetadatafaceobject/rollangle.md) property is invalid and must not be accessed.
+If the value of this property is [`false`](../../Swift/false.md), the value in the [`rollAngle`](./rollangle.md) property is invalid and must not be accessed.
 
 ## See Also
 
-- [var rollAngle: CGFloat](avmetadatafaceobject/rollangle.md)
+### Accessing the face detection data
+- [var rollAngle: CGFloat](./rollangle.md)
   The roll angle of the face specified in degrees.
-- [var hasYawAngle: Bool](avmetadatafaceobject/hasyawangle.md)
+- [var hasYawAngle: Bool](./hasyawangle.md)
   A Boolean value indicating whether there is a valid yaw angle associated with the face.
-- [var yawAngle: CGFloat](avmetadatafaceobject/yawangle.md)
+- [var yawAngle: CGFloat](./yawangle.md)
   The yaw angle of the face specified in degrees.
 
 

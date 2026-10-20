@@ -1,7 +1,8 @@
 # HMAC.Key
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the symmetric key type used to compute or verify a message authentication code.
 
@@ -22,7 +23,8 @@ typealias Key = SymmetricKey
 
 ## See Also
 
-- [struct SymmetricKey](symmetrickey.md)
+### Getting a key
+- [struct SymmetricKey](../symmetrickey.md)
   A symmetric cryptographic key.
 
 

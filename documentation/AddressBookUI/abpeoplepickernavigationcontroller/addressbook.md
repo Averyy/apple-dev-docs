@@ -1,19 +1,26 @@
 # addressBook
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional; the address book from which to obtain the list of contacts.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`CNContactPickerViewController`](../../ContactsUI/cncontactpickerviewcontroller.md) instead.
 
 ## Declaration
 
 ```swift
 var addressBook: ABAddressBook? { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, nullable) ABAddressBookRef addressBook;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # getIndexes(_:maxCount:inIndexRange:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The index set fills an index buffer with the indexes contained both in the index set and in an index range, returning the number of indexes copied.
 
@@ -18,6 +19,10 @@ The index set fills an index buffer with the indexes contained both in the index
 
 ```swift
 func getIndexes(_ indexBuffer: UnsafeMutablePointer<Int>, maxCount bufferSize: Int, inIndexRange range: NSRangePointer?) -> Int
+```
+
+```objc
+- (NSUInteger) getIndexes:(NSUInteger *) indexBuffer maxCount:(NSUInteger) bufferSize inIndexRange:(NSRangePointer) range;
 ```
 
 #### Return Value
@@ -40,17 +45,18 @@ Use this method to retrieve entries quickly and efficiently from an index set. Y
 
 ## See Also
 
-- [var firstIndex: Int](nsindexset/firstindex.md)
+### Getting Indexes
+- [var firstIndex: Int](./firstindex.md)
   The first index in the index set.
-- [var lastIndex: Int](nsindexset/lastindex.md)
+- [var lastIndex: Int](./lastindex.md)
   The last index in the index set.
-- [func indexLessThanIndex(Int) -> Int](nsindexset/indexlessthanindex(_:).md)
+- [func indexLessThanIndex(Int) -> Int](./indexlessthanindex%28_%29.md)
   Returns either the closest index in the index set that is less than a specific index or the not-found indicator.
-- [func indexLessThanOrEqual(to: Int) -> Int](nsindexset/indexlessthanorequal(to:).md)
+- [func indexLessThanOrEqual(to: Int) -> Int](./indexlessthanorequal%28to%29.md)
   Returns either the closest index in the index set that is less than or equal to a specific index or the not-found indicator.
-- [func indexGreaterThanOrEqual(to: Int) -> Int](nsindexset/indexgreaterthanorequal(to:).md)
+- [func indexGreaterThanOrEqual(to: Int) -> Int](./indexgreaterthanorequal%28to%29.md)
   Returns either the closest index in the index set that is greater than or equal to a specific index or the not-found indicator.
-- [func indexGreaterThanIndex(Int) -> Int](nsindexset/indexgreaterthanindex(_:).md)
+- [func indexGreaterThanIndex(Int) -> Int](./indexgreaterthanindex%28_%29.md)
   Returns either the closest index in the index set that is greater than a specific index or the not-found indicator.
 
 

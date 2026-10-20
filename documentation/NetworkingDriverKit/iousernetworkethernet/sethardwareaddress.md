@@ -1,14 +1,15 @@
 # setHardwareAddress
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setHardwareAddress(ether_addr_t *addr);
 ```
 

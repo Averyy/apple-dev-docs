@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encode this frame interpolator’s work into a command buffer.
@@ -17,6 +18,10 @@ Encode this frame interpolator’s work into a command buffer.
 
 ```swift
 func encode(commandBuffer: any MTL4CommandBuffer)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTL4CommandBuffer>) commandBuffer;
 ```
 
 ## Parameters

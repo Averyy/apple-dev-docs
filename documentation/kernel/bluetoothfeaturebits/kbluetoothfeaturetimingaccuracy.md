@@ -1,14 +1,15 @@
 # kBluetoothFeatureTimingAccuracy
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothFeatureTimingAccuracy = (1 << 4L)
 ```
 

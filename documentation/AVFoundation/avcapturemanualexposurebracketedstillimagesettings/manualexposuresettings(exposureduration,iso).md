@@ -1,7 +1,8 @@
 # manualExposureSettings(exposureDuration:iso:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration of still image settings using the specified exposure duration and ISO.
 
@@ -15,6 +16,10 @@ Creates a configuration of still image settings using the specified exposure dur
 
 ```swift
 class func manualExposureSettings(exposureDuration duration: CMTime, iso ISO: Float) -> Self
+```
+
+```objc
++ (instancetype) manualExposureSettingsWithExposureDuration:(CMTime) duration ISO:(float) ISO;
 ```
 
 #### Return Value

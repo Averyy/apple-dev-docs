@@ -1,7 +1,8 @@
 # BNNSRandomGeneratorMethodAES_CTR
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifes an implementation that’s based on the Advanced Encryption Standard (AES) hash of a counter.
 
@@ -20,17 +21,22 @@ A constant that specifes an implementation that’s based on the Advanced Encryp
 var BNNSRandomGeneratorMethodAES_CTR: BNNSRandomGeneratorMethod { get }
 ```
 
+```c
+BNNSRandomGeneratorMethodAES_CTR
+```
+
 #### Discussion
 
 > ❗ **Important**:  Don’t use this method for cryptographic applications.
 
 ## See Also
 
-- [init(UInt32)](bnnsrandomgeneratormethod/init(_:).md)
+### Random Number Generation Methods
+- [init(UInt32)](./bnnsrandomgeneratormethod/init%28_%29.md)
   Creates a new instance with the specified raw value.
-- [init(rawValue: UInt32)](bnnsrandomgeneratormethod/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./bnnsrandomgeneratormethod/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var rawValue: UInt32](bnnsrandomgeneratormethod/rawvalue.md)
+- [var rawValue: UInt32](./bnnsrandomgeneratormethod/rawvalue.md)
   The corresponding value of the raw type.
 
 

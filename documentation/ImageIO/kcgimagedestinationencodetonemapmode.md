@@ -1,7 +1,8 @@
 # kCGImageDestinationEncodeTonemapMode
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImageDestinationEncodeTonemapMode: CFString
+```
+
+```c
+extern CFStringRef const kCGImageDestinationEncodeTonemapMode;
 ```
 
 

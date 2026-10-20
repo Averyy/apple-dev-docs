@@ -1,7 +1,8 @@
 # circle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The circle overlay object that contains the information for drawing the overlay.
 
@@ -17,6 +18,10 @@ The circle overlay object that contains the information for drawing the overlay.
 
 ```swift
 var circle: MKCircle { get }
+```
+
+```objc
+@property (nonatomic, readonly) MKCircle * circle;
 ```
 
 

@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreeAudioGatewayFeatures.none
 
 **Framework**: IOBluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,18 +13,23 @@
 case none
 ```
 
+```c
+IOBluetoothHandsFreeAudioGatewayFeatureNone
+```
+
 ## See Also
 
-- [IOBluetoothHandsFreeAudioGatewayFeatures.attachedNumberToVoiceTag](iobluetoothhandsfreeaudiogatewayfeatures/attachednumbertovoicetag.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.codecNegotiation](iobluetoothhandsfreeaudiogatewayfeatures/codecnegotiation.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.ecAndOrNRFunction](iobluetoothhandsfreeaudiogatewayfeatures/ecandornrfunction.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallControl](iobluetoothhandsfreeaudiogatewayfeatures/enhancedcallcontrol.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallStatus](iobluetoothhandsfreeaudiogatewayfeatures/enhancedcallstatus.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.extendedErrorResultCodes](iobluetoothhandsfreeaudiogatewayfeatures/extendederrorresultcodes.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.inBandRingTone](iobluetoothhandsfreeaudiogatewayfeatures/inbandringtone.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.rejectCallCapability](iobluetoothhandsfreeaudiogatewayfeatures/rejectcallcapability.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.threeWayCalling](iobluetoothhandsfreeaudiogatewayfeatures/threewaycalling.md)
-- [IOBluetoothHandsFreeAudioGatewayFeatures.voiceRecognition](iobluetoothhandsfreeaudiogatewayfeatures/voicerecognition.md)
+### Enumeration Cases
+- [IOBluetoothHandsFreeAudioGatewayFeatures.attachedNumberToVoiceTag](./attachednumbertovoicetag.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.codecNegotiation](./codecnegotiation.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.ecAndOrNRFunction](./ecandornrfunction.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallControl](./enhancedcallcontrol.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.enhancedCallStatus](./enhancedcallstatus.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.extendedErrorResultCodes](./extendederrorresultcodes.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.inBandRingTone](./inbandringtone.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.rejectCallCapability](./rejectcallcapability.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.threeWayCalling](./threewaycalling.md)
+- [IOBluetoothHandsFreeAudioGatewayFeatures.voiceRecognition](./voicerecognition.md)
 
 
 ---

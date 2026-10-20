@@ -1,7 +1,8 @@
 # supportsMultipleScenes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the app may display multiple scenes simultaneously.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the app may display multiple scenes simul
 var supportsMultipleScenes: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsMultipleScenes;
+```
+
 #### Discussion
 
-UIKit sets this property to [`true`](https://developer.apple.com/documentation/swift/true) when the system allows the app to display multiple scenes and the app’s `Info.plist` file includes the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) key with a value of [`true`](https://developer.apple.com/documentation/swift/true). If either of those conditions isn’t true, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+UIKit sets this property to [`true`](../../Swift/true.md) when the system allows the app to display multiple scenes and the app’s `Info.plist` file includes the [`UIApplicationSupportsMultipleScenes`](../../BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md) key with a value of [`true`](../../Swift/true.md). If either of those conditions isn’t true, the value of this property is [`false`](../../Swift/false.md).
 
-Use the [`connectedScenes`](uiapplication/connectedscenes.md) property to determine whether multiple scenes are present.
+Use the [`connectedScenes`](./connectedscenes.md) property to determine whether multiple scenes are present.
 
 ## See Also
 
-- [var connectedScenes: Set<UIScene>](uiapplication/connectedscenes.md)
+### Getting scene information
+- [var connectedScenes: Set<UIScene>](./connectedscenes.md)
   The app’s currently connected scenes.
-- [var openSessions: Set<UISceneSession>](uiapplication/opensessions.md)
+- [var openSessions: Set<UISceneSession>](./opensessions.md)
   The sessions whose scenes are either currently active or archived by the system.
 
 

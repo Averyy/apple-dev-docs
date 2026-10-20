@@ -1,17 +1,22 @@
 # defaultString
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute’s default value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var defaultString: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef defaultString;
 ```
 
 

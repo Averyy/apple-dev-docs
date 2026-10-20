@@ -1,7 +1,8 @@
 # NSPickerTouchBarItem.ControlRepresentation.automatic
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system dynamically changes the display mode based on the available space.
 
@@ -17,11 +18,16 @@ The system dynamically changes the display mode based on the available space.
 case automatic
 ```
 
+```c
+NSPickerTouchBarItemControlRepresentationAutomatic
+```
+
 ## See Also
 
-- [NSPickerTouchBarItem.ControlRepresentation.expanded](nspickertouchbaritem/controlrepresentation-swift.enum/expanded.md)
+### Display styles
+- [NSPickerTouchBarItem.ControlRepresentation.expanded](./expanded.md)
   The system displays the control and all of its options directly.
-- [NSPickerTouchBarItem.ControlRepresentation.collapsed](nspickertouchbaritem/controlrepresentation-swift.enum/collapsed.md)
+- [NSPickerTouchBarItem.ControlRepresentation.collapsed](./collapsed.md)
   The system displays the control’s options through a popover.
 
 

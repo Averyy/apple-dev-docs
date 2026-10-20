@@ -1,7 +1,8 @@
 # SidebarRowSize.small
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard “small” row size
 
@@ -22,9 +23,10 @@ case small
 
 ## See Also
 
-- [SidebarRowSize.medium](sidebarrowsize/medium.md)
+### Getting row sizes
+- [SidebarRowSize.medium](./medium.md)
   The standard “medium” row size
-- [SidebarRowSize.large](sidebarrowsize/large.md)
+- [SidebarRowSize.large](./large.md)
   The standard “large” row size
 
 

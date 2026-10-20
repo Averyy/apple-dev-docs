@@ -1,7 +1,8 @@
 # IOUSBDeviceDescriptor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure for storing a USB device descriptor.
 
@@ -10,7 +11,7 @@ The structure for storing a USB device descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBDeviceDescriptor IOUSBDeviceDescriptor;
 ```
 
@@ -21,43 +22,45 @@ For information about this descriptor type, see USB 3.2, 9.6.1.
 ## Topics
 
 ### Getting the Device Properties
-- [bLength](iousbdevicedescriptor/1546302-blength.md)
+- [bLength](./iousbdevicedescriptor/api-1546302-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdevicedescriptor/1545902-bdescriptortype.md)
+- [bDescriptorType](./iousbdevicedescriptor/api-1545902-bdescriptortype.md)
   The type of the descriptor.
-- [bcdUSB](iousbdevicedescriptor/1546010-bcdusb.md)
+- [bcdUSB](./iousbdevicedescriptor/api-1546010-bcdusb.md)
   The USB specification version number that the device is compliant with.
-- [bDeviceClass](iousbdevicedescriptor/1546557-bdeviceclass.md)
+- [bDeviceClass](./iousbdevicedescriptor/api-1546557-bdeviceclass.md)
   The class code indicating the behavior of this device.
-- [bDeviceSubClass](iousbdevicedescriptor/1546530-bdevicesubclass.md)
+- [bDeviceSubClass](./iousbdevicedescriptor/api-1546530-bdevicesubclass.md)
   The subclass code that further defines the behavior of this device.
-- [bDeviceProtocol](iousbdevicedescriptor/1546376-bdeviceprotocol.md)
+- [bDeviceProtocol](./iousbdevicedescriptor/api-1546376-bdeviceprotocol.md)
   The protocol that the device supports.
-- [bMaxPacketSize0](iousbdevicedescriptor/1546126-bmaxpacketsize0.md)
+- [bMaxPacketSize0](./iousbdevicedescriptor/api-1546126-bmaxpacketsize0.md)
   An exponent value that specifies the maximum packet size for endpoint `0`.
-- [idVendor](iousbdevicedescriptor/1546331-idvendor.md)
+- [idVendor](./iousbdevicedescriptor/api-1546331-idvendor.md)
   The ID of the device’s manufacturer.
-- [idProduct](iousbdevicedescriptor/1546261-idproduct.md)
+- [idProduct](./iousbdevicedescriptor/api-1546261-idproduct.md)
   The product ID that the manufacturer assigns.
-- [bcdDevice](iousbdevicedescriptor/1546251-bcddevice.md)
+- [bcdDevice](./iousbdevicedescriptor/api-1546251-bcddevice.md)
   The device release number as a binary-coded decimal.
-- [iManufacturer](iousbdevicedescriptor/1546249-imanufacturer.md)
+- [iManufacturer](./iousbdevicedescriptor/api-1546249-imanufacturer.md)
   The index of the string descriptor that describes the manufacturer.
-- [iProduct](iousbdevicedescriptor/1546566-iproduct.md)
+- [iProduct](./iousbdevicedescriptor/api-1546566-iproduct.md)
   The index of the string descriptor that describes the product.
-- [iSerialNumber](iousbdevicedescriptor/1545940-iserialnumber.md)
+- [iSerialNumber](./iousbdevicedescriptor/api-1545940-iserialnumber.md)
   The index of the string descriptor that describes the device’s serial number.
-- [bNumConfigurations](iousbdevicedescriptor/1546184-bnumconfigurations.md)
+- [bNumConfigurations](./iousbdevicedescriptor/api-1546184-bnumconfigurations.md)
   The number of configurations that the device supports.
 
 ## See Also
 
-- [IOUSBDeviceDescriptorPtr](iousbdevicedescriptorptr.md)
+### Device Descriptors
+- [IOUSBDeviceDescriptorPtr](./iousbdevicedescriptorptr.md)
   A pointer to a USB device descriptor.
-- [IOUSBDeviceQualifierDescriptor](iousbdevicequalifierdescriptor.md)
+- [IOUSBDeviceQualifierDescriptor](./iousbdevicequalifierdescriptor.md)
   The structure for describing a high-speed capable USB device.
-- [IOUSBDeviceQualifierDescriptorPtr](iousbdevicequalifierdescriptorptr.md)
+- [IOUSBDeviceQualifierDescriptorPtr](./iousbdevicequalifierdescriptorptr.md)
   A pointer to a qualifier descriptor.
+### Related Documentation
 - [IOUSBDeviceDescriptor](../iokit/usb_h_user-space/iousbdevicedescriptor.md)
 
 

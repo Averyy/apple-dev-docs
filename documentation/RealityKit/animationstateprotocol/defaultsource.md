@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The previous blend stage value.
@@ -22,7 +23,7 @@ var defaultSource: Self.ValueType? { get }
 
 #### Discussion
 
-The default source is the value output from the previous blend stage, and initialized with [`defaultTarget`](animationstateprotocol/defaulttarget.md) for the first stage.
+The default source is the value output from the previous blend stage, and initialized with [`defaultTarget`](./defaulttarget.md) for the first stage.
 
 
 ---

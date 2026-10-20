@@ -1,7 +1,8 @@
 # errSecInvalidAttributeKeyType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key type attribute is not valid.
 
@@ -18,6 +19,10 @@ A key type attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeKeyType: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeKeyType
 ```
 
 

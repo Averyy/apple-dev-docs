@@ -1,7 +1,8 @@
 # set(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the specified key to a 64-bit integer value.
 
@@ -20,9 +21,13 @@ Sets the value of the specified key to a 64-bit integer value.
 func set(_ value: Int64, forKey aKey: String)
 ```
 
+```objc
+- (void) setLongLong:(long long) value forKey:(NSString *) aKey;
+```
+
 #### Discussion
 
-This method places the integer value in an [`NSNumber`](nsnumber.md) type before writing the key and value to the store.
+This method places the integer value in an [`NSNumber`](../nsnumber.md) type before writing the key and value to the store.
 
 ## Parameters
 
@@ -31,19 +36,20 @@ This method places the integer value in an [`NSNumber`](nsnumber.md) type before
 
 ## See Also
 
-- [func set(Bool, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-8o8mq.md)
+### Setting values
+- [func set(Bool, forKey: String)](./set%28_,forkey%29-8o8mq.md)
   Sets the value of the specified key to a Boolean value.
-- [func set(Double, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-1xml0.md)
+- [func set(Double, forKey: String)](./set%28_,forkey%29-1xml0.md)
   Sets the value of the specified key to a double value.
-- [func set(String?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-2rlp.md)
+- [func set(String?, forKey: String)](./set%28_,forkey%29-2rlp.md)
   Sets the value of the specified key to a string value.
-- [func set(Data?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-3ga7z.md)
+- [func set(Data?, forKey: String)](./set%28_,forkey%29-3ga7z.md)
   Sets the value of the specified key to a data object.
-- [func set(Any?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9e3de.md)
+- [func set(Any?, forKey: String)](./set%28_,forkey%29-9e3de.md)
   Sets the value of the specified key to a property list object.
-- [func set([Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-40a8f.md)
+- [func set([Any]?, forKey: String)](./set%28_,forkey%29-40a8f.md)
   Sets the value of the specified key to an array of property list objects.
-- [func set([String : Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9vmlm.md)
+- [func set([String : Any]?, forKey: String)](./set%28_,forkey%29-9vmlm.md)
   Sets the value of the specified key to a dictionary of property list objects.
 
 

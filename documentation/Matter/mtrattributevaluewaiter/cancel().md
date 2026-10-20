@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancel the wait for the set of attribute path/value pairs represented by this MTRAttributeValueWaiter.  If the completion has not been called yet, it will becalled with MTRErrorCodeCancelled.
 
@@ -18,6 +19,10 @@ Cancel the wait for the set of attribute path/value pairs represented by this MT
 
 ```swift
 func cancel()
+```
+
+```objc
+- (void) cancel;
 ```
 
 

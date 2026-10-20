@@ -1,7 +1,8 @@
 # sectionHeaders
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode where section headers in the table view tightly hug their content.
 
@@ -16,6 +17,10 @@ A mode where section headers in the table view tightly hug their content.
 
 ```swift
 static var sectionHeaders: UITableViewContentHuggingElements { get }
+```
+
+```c
+UITableViewContentHuggingElementsSectionHeaders
 ```
 
 

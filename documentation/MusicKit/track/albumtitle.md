@@ -1,7 +1,8 @@
 # albumTitle
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the album the track appears on.
 

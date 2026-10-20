@@ -1,17 +1,22 @@
 # setAccessibilityIdentifier(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the unique identifier string for the interface object.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
 ```swift
 func setAccessibilityIdentifier(_ accessibilityIdentifier: String?)
+```
+
+```objc
+- (void) setAccessibilityIdentifier:(NSString *) accessibilityIdentifier;
 ```
 
 #### Discussion
@@ -24,17 +29,18 @@ Use the identifier in this property to distinguish between different objects in 
 
 ## See Also
 
-- [func setAccessibilityLabel(String?)](wkinterfaceobject/setaccessibilitylabel(_:).md)
+### Configuring the Accessibility Attributes
+- [func setAccessibilityLabel(String?)](./setaccessibilitylabel%28_%29.md)
   Sets a succinct label on the object that identifies the accessibility element.
-- [func setAccessibilityHint(String?)](wkinterfaceobject/setaccessibilityhint(_:).md)
+- [func setAccessibilityHint(String?)](./setaccessibilityhint%28_%29.md)
   Sets the description of what happens when performing an action on the accessibility element.
-- [func setAccessibilityValue(String?)](wkinterfaceobject/setaccessibilityvalue(_:).md)
+- [func setAccessibilityValue(String?)](./setaccessibilityvalue%28_%29.md)
   Sets the value of the accessibility element.
-- [func setIsAccessibilityElement(Bool)](wkinterfaceobject/setisaccessibilityelement(_:).md)
+- [func setIsAccessibilityElement(Bool)](./setisaccessibilityelement%28_%29.md)
   Sets whether the object is an accessibility element that an assistive app can access.
-- [func setAccessibilityTraits(UIAccessibilityTraits)](wkinterfaceobject/setaccessibilitytraits(_:).md)
+- [func setAccessibilityTraits(UIAccessibilityTraits)](./setaccessibilitytraits%28_%29.md)
   Sets the combination of accessibility traits that best characterize the accessibility element.
-- [func setAccessibilityImageRegions([WKAccessibilityImageRegion])](wkinterfaceobject/setaccessibilityimageregions(_:).md)
+- [func setAccessibilityImageRegions([WKAccessibilityImageRegion])](./setaccessibilityimageregions%28_%29.md)
   Marks portions of an image as separate accessible elements.
 
 

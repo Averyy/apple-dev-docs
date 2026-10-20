@@ -1,7 +1,8 @@
 # InvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The outcome of handling an intent.
 
@@ -10,13 +11,13 @@ The outcome of handling an intent.
 
 ## Declaration
 
-```swift
+```
 object InvocationResponse.Result
 ```
 
 #### Discussion
 
-Allowed types: [`IntentResolutionResult`](intentresolutionresult.md), [`IntentResponse`](intentresponse.md).
+Allowed types: [`IntentResolutionResult`](../intentresolutionresult.md), [`IntentResponse`](../intentresponse.md).
 
 
 ---

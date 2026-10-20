@@ -1,7 +1,8 @@
 # logState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains information related to shader logging.
 
@@ -19,9 +20,13 @@ Contains information related to shader logging.
 var logState: (any MTLLogState)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MTLLogState> logState;
+```
+
 #### Discussion
 
-To enable shader logging, call [`beginCommandBuffer(allocator:options:)`](mtl4commandbuffer/begincommandbuffer(allocator:options:).md) with an instance of [`MTL4CommandBufferOptions`](mtl4commandbufferoptions.md) that contains a non-`nil` [`MTLLogState`](mtllogstate.md) instance in this property.
+To enable shader logging, call [`beginCommandBuffer(allocator:options:)`](../mtl4commandbuffer/begincommandbuffer%28allocator,options%29.md) with an instance of [`MTL4CommandBufferOptions`](../mtl4commandbufferoptions.md) that contains a non-`nil` [`MTLLogState`](../mtllogstate.md) instance in this property.
 
 Shader functions log messages until the command buffer ends.
 

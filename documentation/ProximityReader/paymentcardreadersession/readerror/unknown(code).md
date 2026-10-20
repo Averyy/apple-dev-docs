@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.ReadError.unknown(code:)
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unexpected error happened, try again.
 

@@ -1,7 +1,8 @@
 # CMTimeValue
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An integer time value.
 
@@ -20,15 +21,20 @@ An integer time value.
 typealias CMTimeValue = Int64
 ```
 
+```c
+typedef int64_t CMTimeValue;
+```
+
 ## See Also
 
-- [struct CMTime](cmtime.md)
+### Data Types
+- [struct CMTime](./cmtime.md)
   A structure that represents time.
-- [typealias CMTimeScale](cmtimescale.md)
+- [typealias CMTimeScale](./cmtimescale.md)
   An integer timescale.
-- [typealias CMTimeEpoch](cmtimeepoch.md)
+- [typealias CMTimeEpoch](./cmtimeepoch.md)
   An epoch for a time.
-- [struct CMTimeFlags](cmtimeflags.md)
+- [struct CMTimeFlags](./cmtimeflags.md)
   A structure that defines the flags for a time value.
 
 

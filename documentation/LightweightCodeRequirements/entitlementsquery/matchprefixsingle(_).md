@@ -1,7 +1,8 @@
 # matchPrefixSingle(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Match the specified string prefix value against a string value (not an array).
 

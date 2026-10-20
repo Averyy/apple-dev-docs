@@ -1,7 +1,8 @@
 # scene
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene this renderer will draw into the Metal command buffer.
 
@@ -19,9 +20,14 @@ The scene this renderer will draw into the Metal command buffer.
 var scene: SKScene? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) SKScene * scene;
+```
+
 ## See Also
 
-- [init(device: any MTLDevice)](skrenderer/init(device:).md)
+### First Steps
+- [init(device: any MTLDevice)](./init%28device%29.md)
   Initializes with a specific GPU to render into.
 
 

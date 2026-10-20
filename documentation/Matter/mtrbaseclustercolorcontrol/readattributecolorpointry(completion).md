@@ -1,7 +1,8 @@
 # readAttributeColorPointRY(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeColorPointRY(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeColorPointRY() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeColorPointRYWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

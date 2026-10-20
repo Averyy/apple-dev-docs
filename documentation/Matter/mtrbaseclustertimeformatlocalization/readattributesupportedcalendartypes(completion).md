@@ -1,7 +1,8 @@
 # readAttributeSupportedCalendarTypes(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSupportedCalendarTypes(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSupportedCalendarTypes() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeSupportedCalendarTypesWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # BitMap
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,15 +13,21 @@
 struct BitMap
 ```
 
+```c
+typedef struct BitMap {
+    ...
+} BitMap;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](bitmap/1459270-init.md)
-- [init(baseAddr: Ptr!, rowBytes: Int16, bounds: Rect)](bitmap/1464073-init.md)
+- [init()](./bitmap/api-1459270-init.md)
+- [init(baseAddr: Ptr!, rowBytes: Int16, bounds: Rect)](./bitmap/api-1464073-init.md)
 ### Instance Properties
-- [var baseAddr: Ptr!](bitmap/1459306-baseaddr.md)
-- [var bounds: Rect](bitmap/1460869-bounds.md)
-- [var rowBytes: Int16](bitmap/1464780-rowbytes.md)
+- [var baseAddr: Ptr!](./bitmap/api-1459306-baseaddr.md)
+- [var bounds: Rect](./bitmap/api-1460869-bounds.md)
+- [var rowBytes: Int16](./bitmap/api-1464780-rowbytes.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # StartDiveIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An App Intent that lets people start a dive session when they press the Action button on Apple Watch Ultra.
 
@@ -16,7 +17,7 @@ protocol StartDiveIntent : SystemIntent
 
 ## Mentions
 
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 
 #### Overview
 
@@ -36,22 +37,22 @@ struct MyStartDiveIntent: StartDiveIntent {
 }
 ```
 
-This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it triggers the intent.
+This intent needs a [`title`](./appintent/title.md) property that provides a localized description of the action, and a [`perform()`](./appintent/perform%28%29.md) method, which the system calls when it triggers the intent.
 
-To read live depth, water pressure, and water temperature data, see [`Accessing submersion data`](https://developer.apple.com/documentation/coremotion/accessing-submersion-data).
+To read live depth, water pressure, and water temperature data, see [Accessing submersion data](../CoreMotion/accessing-submersion-data.md).
 
-> ❗ **Important**: Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
+> ❗ **Important**: Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [Express interest in the Submerged Depth and Pressure API](https://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
-For more information, see [`Responding to the Action button on Apple Watch Ultra`](actionbuttonarticle.md).
+For more information, see [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md).
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SystemIntent](systemintent.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SystemIntent](./systemintent.md)
 
 
 ---

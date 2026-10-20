@@ -1,7 +1,8 @@
 # credentialWithoutUV
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Credential to use when user verification is not performed.
 

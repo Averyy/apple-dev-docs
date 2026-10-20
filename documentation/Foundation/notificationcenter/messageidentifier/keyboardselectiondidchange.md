@@ -1,7 +1,8 @@
 # keyboardSelectionDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var keyboardSelectionDidChange: NotificationCenter.BaseMessageIdentifier<NSTextInputContext.KeyboardSelectionDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSTextInputContext.KeyboardSelectionDidChangeMessage>`.
 
 
 ---

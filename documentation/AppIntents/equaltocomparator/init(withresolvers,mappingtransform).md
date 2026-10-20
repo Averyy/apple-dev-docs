@@ -1,7 +1,8 @@
 # init(withResolvers:mappingTransform:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Declares support for `Equatable` `==` comparisons between a property and user-supplied values.
 
@@ -11,7 +12,7 @@ Declares support for `Equatable` `==` comparisons between a property and user-su
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,9 +28,10 @@ init<Spec>(@ResolverSpecificationBuilder<PropertyType.UnwrappedType> withResolve
 
 ## See Also
 
-- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](equaltocomparator/init(mappingtransform:).md)
+### Creating a comparator
+- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](./init%28mappingtransform%29.md)
   Declares support for `Equatable` `==` comparisons between a property and user-supplied values.
-- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](equaltocomparator/init(mappingtransform:).md)
+- [init(mappingTransform: (PropertyType) -> ComparatorMappingType)](./init%28mappingtransform%29.md)
   Declares support for `Equatable` `==` comparisons between a property and user-supplied values.
 
 

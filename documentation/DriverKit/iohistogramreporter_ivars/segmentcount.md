@@ -1,25 +1,27 @@
 # segmentCount
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 int segmentCount;
 ```
 
 ## See Also
 
-- [bucketBounds](iohistogramreporter_ivars/bucketbounds.md)
-- [bucketCount](iohistogramreporter_ivars/bucketcount.md)
-- [histogramSegmentsConfig](iohistogramreporter_ivars/histogramsegmentsconfig.md)
+### Instance Properties
+- [bucketBounds](./bucketbounds.md)
+- [bucketCount](./bucketcount.md)
+- [histogramSegmentsConfig](./histogramsegmentsconfig.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # formIndex(_:offsetBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Offsets the given index by the specified distance.
 
@@ -24,7 +25,7 @@ func formIndex(_ i: inout Self.Index, offsetBy distance: Int)
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
 
 ## Parameters
 
@@ -33,25 +34,26 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 
 ## See Also
 
-- [var startIndex: Int](array/startindex.md)
+### Manipulating Indices
+- [var startIndex: Int](./startindex.md)
   The position of the first element in a nonempty array.
-- [var endIndex: Int](array/endindex.md)
+- [var endIndex: Int](./endindex.md)
   The array’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [func index(after: Int) -> Int](array/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func formIndex(after: inout Int)](array/formindex(after:).md)
+- [func formIndex(after: inout Int)](./formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(before: Int) -> Int](array/index(before:).md)
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the position immediately before the given index.
-- [func formIndex(before: inout Int)](array/formindex(before:).md)
+- [func formIndex(before: inout Int)](./formindex%28before%29.md)
   Replaces the given index with its predecessor.
-- [func index(Int, offsetBy: Int) -> Int](array/index(_:offsetby:).md)
+- [func index(Int, offsetBy: Int) -> Int](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(Int, offsetBy: Int, limitedBy: Int) -> Int?](array/index(_:offsetby:limitedby:).md)
+- [func index(Int, offsetBy: Int, limitedBy: Int) -> Int?](./index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](array/formindex(_:offsetby:limitedby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
-- [func distance(from: Int, to: Int) -> Int](array/distance(from:to:).md)
+- [func distance(from: Int, to: Int) -> Int](./distance%28from,to%29.md)
   Returns the distance between two indices.
 
 

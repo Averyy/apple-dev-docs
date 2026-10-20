@@ -1,7 +1,8 @@
 # applicationCache
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The application cache associated with the current document.
 
@@ -11,7 +12,7 @@ The application cache associated with the current document.
 
 ## Declaration
 
-```swift
+```
 readonly attribute DOMApplicationCache applicationCache;
 ```
 

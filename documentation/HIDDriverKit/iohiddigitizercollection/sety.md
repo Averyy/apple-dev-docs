@@ -1,25 +1,27 @@
 # setY
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void setY(IOFixed y);
 ```
 
 ## See Also
 
-- [getX](iohiddigitizercollection/getx.md)
-- [getY](iohiddigitizercollection/gety.md)
-- [getZ](iohiddigitizercollection/getz.md)
-- [setX](iohiddigitizercollection/setx.md)
-- [setZ](iohiddigitizercollection/setz.md)
+### Accessing the Coordinates
+- [getX](./getx.md)
+- [getY](./gety.md)
+- [getZ](./getz.md)
+- [setX](./setx.md)
+- [setZ](./setz.md)
 
 
 ---

@@ -2,24 +2,33 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the file system that the kernel is no longer making immediate use of the given item.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func deactivateItem(_ item: FSItem, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func deactivateItem(_ item: FSItem) async throws
+```
+
+```objc
+- (void) deactivateItem:(FSItem *) item replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 #### Discussion
 
 This method gives a file system a chance to release resources associated with an item. However, this method prescribes no specific action; it’s acceptable to defer all reclamation until `FSVolume/Operations/reclaimItem(_:)`. This method is the equivalent of VFS’s `VNOP_INACTIVE`.
 
-FSKit restricts calls to this method based on the current value of [`itemDeactivationPolicy`](fsvolume/itemdeactivation/itemdeactivationpolicy.md).
+FSKit restricts calls to this method based on the current value of [`itemDeactivationPolicy`](./itemdeactivationpolicy.md).
 
 ## Parameters
 

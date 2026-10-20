@@ -1,7 +1,8 @@
 # NSCollectionLayoutSpacing
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the space between or around items in a collection view.
 
@@ -13,6 +14,10 @@ An object that defines the space between or around items in a collection view.
 ```swift
 @MainActor
 class NSCollectionLayoutSpacing
+```
+
+```objc
+@interface NSCollectionLayoutSpacing : NSObject
 ```
 
 #### Overview
@@ -52,42 +57,43 @@ group.interItemSpacing = .flexible(200.0)
 ## Topics
 
 ### Creating spacing
-- [class func fixed(CGFloat) -> Self](nscollectionlayoutspacing/fixed(_:).md)
+- [class func fixed(CGFloat) -> Self](./nscollectionlayoutspacing/fixed%28_%29.md)
   Creates a space equivalent to the specified number of points.
-- [class func flexible(CGFloat) -> Self](nscollectionlayoutspacing/flexible(_:).md)
+- [class func flexible(CGFloat) -> Self](./nscollectionlayoutspacing/flexible%28_%29.md)
   Creates a space equivalent to or greater than the specified number of points, depending on the available space.
 ### Getting the spacing value
-- [var spacing: CGFloat](nscollectionlayoutspacing/spacing.md)
+- [var spacing: CGFloat](./nscollectionlayoutspacing/spacing.md)
   The floating-point value of the space.
 ### Getting the spacing type
-- [var isFixed: Bool](nscollectionlayoutspacing/isfixed.md)
+- [var isFixed: Bool](./nscollectionlayoutspacing/isfixed.md)
   A Boolean value that indicates whether the space is fixed to a specific number of points.
-- [var isFlexible: Bool](nscollectionlayoutspacing/isflexible.md)
+- [var isFlexible: Bool](./nscollectionlayoutspacing/isflexible.md)
   A Boolean value that indicates whether the space is flexible.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSCollectionLayoutDimension](nscollectionlayoutdimension.md)
+### Size and spacing
+- [class NSCollectionLayoutDimension](./nscollectionlayoutdimension.md)
   An individual dimension representing an item’s width or height in a collection view.
-- [class NSCollectionLayoutSize](nscollectionlayoutsize.md)
+- [class NSCollectionLayoutSize](./nscollectionlayoutsize.md)
   The width and the height of an item in a collection view.
-- [class NSCollectionLayoutEdgeSpacing](nscollectionlayoutedgespacing.md)
+- [class NSCollectionLayoutEdgeSpacing](./nscollectionlayoutedgespacing.md)
   An object that defines the space around the edges of items in a collection view.
-- [protocol NSCollectionLayoutContainer](nscollectionlayoutcontainer.md)
+- [protocol NSCollectionLayoutContainer](./nscollectionlayoutcontainer.md)
   A protocol used to provide information about the size and content insets of a layout’s container.
 
 

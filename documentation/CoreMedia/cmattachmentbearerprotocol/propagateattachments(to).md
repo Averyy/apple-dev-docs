@@ -2,6 +2,7 @@
 
 **Framework**: Core Media  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Copies all propagable attachments from one attachment bearer object to another.
@@ -27,9 +28,10 @@ func propagateAttachments<T>(to destination: T) where T : CMAttachmentBearerProt
 
 ## See Also
 
-- [var attachments: CMAttachmentBearerAttachments](cmattachmentbearerprotocol/attachments.md)
+### Processing Attachments
+- [var attachments: CMAttachmentBearerAttachments](./attachments.md)
   All attachments for this object.
-- [struct CMAttachmentBearerAttachments](cmattachmentbearerattachments.md)
+- [struct CMAttachmentBearerAttachments](../cmattachmentbearerattachments.md)
   A structure that contains attachments.
 
 

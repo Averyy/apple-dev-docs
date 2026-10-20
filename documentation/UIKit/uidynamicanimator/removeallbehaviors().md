@@ -1,7 +1,8 @@
 # removeAllBehaviors()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all of the dynamic behaviors from a dynamic animator.
 
@@ -9,7 +10,7 @@ Removes all of the dynamic behaviors from a dynamic animator.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Removes all of the dynamic behaviors from a dynamic animator.
 func removeAllBehaviors()
 ```
 
+```objc
+- (void) removeAllBehaviors;
+```
+
 ## See Also
 
-- [init(referenceView: UIView)](uidynamicanimator/init(referenceview:).md)
+### Initializing and managing a dynamic animator
+- [init(referenceView: UIView)](./init%28referenceview%29.md)
   Initializes a dynamic animator with a specified view as its reference view.
-- [convenience init(collectionViewLayout: UICollectionViewLayout)](uidynamicanimator/init(collectionviewlayout:).md)
+- [convenience init(collectionViewLayout: UICollectionViewLayout)](./init%28collectionviewlayout%29.md)
   Initializes a dynamic animator with a specified collection view layout.
-- [func items(in: CGRect) -> [any UIDynamicItem]](uidynamicanimator/items(in:).md)
+- [func items(in: CGRect) -> [any UIDynamicItem]](./items%28in%29.md)
   Returns the dynamic items, from the animator’s behaviors, that intersect a specified rectangle.
-- [func addBehavior(UIDynamicBehavior)](uidynamicanimator/addbehavior(_:).md)
+- [func addBehavior(UIDynamicBehavior)](./addbehavior%28_%29.md)
   Adds a dynamic behavior to a dynamic animator.
-- [func removeBehavior(UIDynamicBehavior)](uidynamicanimator/removebehavior(_:).md)
+- [func removeBehavior(UIDynamicBehavior)](./removebehavior%28_%29.md)
   Removes a specified dynamic behavior from a dynamic animator.
 
 

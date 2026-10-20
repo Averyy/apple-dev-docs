@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Combine
+**Framework**: Combine  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Publishers.Zip<A, B>, Publishers.Zip<A, B>) -> Bool](publishers/zip/==(_:_:).md)
+- [static func == (Publishers.Zip<A, B>, Publishers.Zip<A, B>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 
 

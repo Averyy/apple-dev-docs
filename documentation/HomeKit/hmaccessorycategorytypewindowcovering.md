@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeWindowCovering
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A window covering accessory.
 
@@ -19,9 +20,14 @@ A window covering accessory.
 let HMAccessoryCategoryTypeWindowCovering: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeWindowCovering;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeWindow: String](hmaccessorycategorytypewindow.md)
+### Windows
+- [let HMAccessoryCategoryTypeWindow: String](./hmaccessorycategorytypewindow.md)
   A window accessory.
 
 

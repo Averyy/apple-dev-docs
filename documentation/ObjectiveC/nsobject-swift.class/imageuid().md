@@ -1,17 +1,22 @@
 # imageUID()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a unique string that identifies the data source item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func imageUID() -> String!
+```
+
+```objc
+- (NSString *) imageUID;
 ```
 
 #### Return Value

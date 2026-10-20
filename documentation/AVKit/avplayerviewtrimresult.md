@@ -1,7 +1,8 @@
 # AVPlayerViewTrimResult
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify an action a user takes when trimming media in a player view.
 
@@ -14,31 +15,36 @@ Constants that specify an action a user takes when trimming media in a player vi
 enum AVPlayerViewTrimResult
 ```
 
+```c
+enum AVPlayerViewTrimResult : NSInteger;
+```
+
 ## Topics
 
 ### Creating a trim result
-- [init?(rawValue: Int)](avplayerviewtrimresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avplayerviewtrimresult/init%28rawvalue%29.md)
 ### Trim results
-- [AVPlayerViewTrimResult.okButton](avplayerviewtrimresult/okbutton.md)
+- [AVPlayerViewTrimResult.okButton](./avplayerviewtrimresult/okbutton.md)
   The user clicked the Trim button.
-- [AVPlayerViewTrimResult.cancelButton](avplayerviewtrimresult/cancelbutton.md)
+- [AVPlayerViewTrimResult.cancelButton](./avplayerviewtrimresult/cancelbutton.md)
   The user clicked the Cancel button.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing trimming in a macOS player](implementing-trimming-in-a-macos-player.md)
+### Media trimming and export
+- [Implementing trimming in a macOS player](./implementing-trimming-in-a-macos-player.md)
   Provide a QuickTime media-trimming experience in your macOS app.
-- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
+- [Trimming and exporting media in visionOS](./trimming-and-exporting-media-in-visionos.md)
   Display standard controls in your app to edit the timeline of the currently playing media.
 
 

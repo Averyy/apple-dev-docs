@@ -1,12 +1,13 @@
 # composition
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Dictionary that describes the composition of the aggregate device. The keys for this CFDicitionary are defined in the AudioAggregateDevice Constants section of AudioHardware.h
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

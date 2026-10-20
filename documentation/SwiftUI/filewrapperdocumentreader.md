@@ -1,7 +1,8 @@
 # FileWrapperDocumentReader
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A document reader that deserializes a `FileWrapper` into a snapshot.
 
@@ -51,31 +52,32 @@ FileWrapperDocumentReader(configuration) { directory in
 
 > ❗ **Important**: `FileWrapper` loads file contents on demand. A child file may be gone by the time you call `regularFileContents`. Always handle errors when reading children of a package.
 
-The closure does not receive a `Subprogress`. To report progress during reads, use a custom [`DocumentReader`](documentreader.md) instead.
+The closure does not receive a `Subprogress`. To report progress during reads, use a custom [`DocumentReader`](./documentreader.md) instead.
 
 ## Topics
 
 ### Creating a reader
-- [init(sending FileWrapperDocumentReader<Snapshot>.ReadConfiguration, makeSnapshot: (FileWrapper) async throws -> sending Snapshot)](filewrapperdocumentreader/init(_:makesnapshot:).md)
+- [init(sending FileWrapperDocumentReader<Snapshot>.ReadConfiguration, makeSnapshot: (FileWrapper) async throws -> sending Snapshot)](./filewrapperdocumentreader/init%28_,makesnapshot%29.md)
   Creates a reader that converts a `FileWrapper` into a snapshot.
-- [FileWrapperDocumentReader.ReadConfiguration](filewrapperdocumentreader/readconfiguration.md)
+- [FileWrapperDocumentReader.ReadConfiguration](./filewrapperdocumentreader/readconfiguration.md)
 
 ## Relationships
 
 ### Conforms To
-- [DocumentReader](documentreader.md)
+- [DocumentReader](./documentreader.md)
 
 ## See Also
 
-- [struct DocumentReadConfiguration](documentreadconfiguration.md)
-  The context SwiftUI passes to [`reader(configuration:)`](readabledocument/reader(configuration:).md).
-- [struct DocumentWriteConfiguration](documentwriteconfiguration.md)
-  The context SwiftUI passes to [`writer(configuration:)`](writabledocument/writer(configuration:).md).
-- [protocol DocumentReader](documentreader.md)
+### Reading and writing documents
+- [struct DocumentReadConfiguration](./documentreadconfiguration.md)
+  The context SwiftUI passes to [`reader(configuration:)`](./readabledocument/reader%28configuration%29.md).
+- [struct DocumentWriteConfiguration](./documentwriteconfiguration.md)
+  The context SwiftUI passes to [`writer(configuration:)`](./writabledocument/writer%28configuration%29.md).
+- [protocol DocumentReader](./documentreader.md)
   A type that reads a document’s content from a file.
-- [protocol DocumentWriter](documentwriter.md)
+- [protocol DocumentWriter](./documentwriter.md)
   A type that writes a document’s content to a file.
-- [struct FileWrapperDocumentWriter](filewrapperdocumentwriter.md)
+- [struct FileWrapperDocumentWriter](./filewrapperdocumentwriter.md)
   A document writer that serializes a snapshot into a `FileWrapper`.
 
 

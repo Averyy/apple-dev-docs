@@ -1,7 +1,8 @@
 # HoverEffectComponent.OpacityFunction.full
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies an opaque hover effect and ignores the opacity of the entity’s base material.
 
@@ -21,6 +22,8 @@ case full
 #### Discussion
 
 In this example, a rounded black rectangle continuously transitions between transparent and fully opaque. Applying a green highlight hover effect with the full opacity function to the rectangle draws the effect with full opacity and ignores the opacity of the rectangle.
+
+[Video: A screen recording of a living room with a partially transparent green rectangle in the center of it. The green rectangle fades in to full opacity and becomes darker before fading out again and becoming partially transparent.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-opacityfunction-full.mp4)
 
 
 ---

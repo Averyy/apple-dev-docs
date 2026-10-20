@@ -1,7 +1,8 @@
 # UIScreen.ReferenceDisplayModeStatusDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,15 +19,15 @@ struct ReferenceDisplayModeStatusDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(screen: UIScreen)](uiscreen/referencedisplaymodestatusdidchangemessage/init(screen:).md)
+- [init(screen: UIScreen)](./referencedisplaymodestatusdidchangemessage/init%28screen%29.md)
 ### Instance Properties
-- [var screen: UIScreen](uiscreen/referencedisplaymodestatusdidchangemessage/screen.md)
+- [var screen: UIScreen](./referencedisplaymodestatusdidchangemessage/screen.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

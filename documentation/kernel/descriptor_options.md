@@ -1,14 +1,15 @@
 # descriptor_options
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t descriptor_options[1];
 ```
 

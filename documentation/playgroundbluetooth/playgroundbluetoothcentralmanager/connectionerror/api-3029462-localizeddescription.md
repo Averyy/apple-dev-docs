@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Playground Bluetooth  
-**Kind**: enump
+**Kind**: enump  
+**Role**: Instance Property
 
 A string containing the localized description of the error.
 

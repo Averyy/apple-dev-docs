@@ -1,7 +1,8 @@
 # NWPath.Status
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Status values indicating whether a path can be used by connections.
 
@@ -23,24 +24,25 @@ enum Status
 ## Topics
 
 ### Status Values
-- [NWPath.Status.unsatisfied](nwpath/status-swift.enum/unsatisfied.md)
+- [NWPath.Status.unsatisfied](./status-swift.enum/unsatisfied.md)
   The path is not available for use.
-- [NWPath.Status.satisfied](nwpath/status-swift.enum/satisfied.md)
+- [NWPath.Status.satisfied](./status-swift.enum/satisfied.md)
   The path is available to establish connections and send data.
-- [NWPath.Status.requiresConnection](nwpath/status-swift.enum/requiresconnection.md)
+- [NWPath.Status.requiresConnection](./status-swift.enum/requiresconnection.md)
   The path is not currently available, but establishing a new connection may activate the path.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let status: NWPath.Status](nwpath/status-swift.property.md)
+### Checking Path Availability
+- [let status: NWPath.Status](./status-swift.property.md)
   A status indicating whether a path can be used by connections.
 
 

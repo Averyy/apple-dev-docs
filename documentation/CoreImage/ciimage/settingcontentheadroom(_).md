@@ -1,7 +1,8 @@
 # settingContentHeadroom(_:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an image by changing the receiver’s contentHeadroom property.
 
@@ -19,9 +20,13 @@ Create an image by changing the receiver’s contentHeadroom property.
 func settingContentHeadroom(_ headroom: Float) -> CIImage
 ```
 
+```objc
+- (CIImage *) imageBySettingContentHeadroom:(float) headroom;
+```
+
 #### Return Value
 
- An autoreleased [`CIImage`](ciimage.md).
+ An autoreleased [`CIImage`](../ciimage.md).
 
 #### Discussion
 

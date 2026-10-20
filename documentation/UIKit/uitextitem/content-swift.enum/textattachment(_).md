@@ -1,7 +1,8 @@
 # UITextItem.Content.textAttachment(_:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A text attachment, such as an image or view.
 
@@ -9,7 +10,7 @@ A text attachment, such as an image or view.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ case textAttachment(NSTextAttachment)
 
 ## See Also
 
-- [UITextItem.Content.link(_:)](uitextitem/content-swift.enum/link(_:).md)
+### Getting the content type
+- [UITextItem.Content.link(_:)](./link%28_%29.md)
   A link to a resource, such as an item on a remote server or the path to a local file.
-- [UITextItem.Content.tag(_:)](uitextitem/content-swift.enum/tag(_:).md)
+- [UITextItem.Content.tag(_:)](./tag%28_%29.md)
   A string that represents a custom tag for a topic.
 
 

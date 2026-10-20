@@ -1,7 +1,8 @@
 # reloadContentBlocker(withIdentifier:completionHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells Safari to reload the specified extension’s content-blocking rules.
 
@@ -15,14 +16,26 @@ Tells Safari to reload the specified extension’s content-blocking rules.
 ## Declaration
 
 ```swift
+class func reloadContentBlocker(withIdentifier identifier: String, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func reloadContentBlocker(withIdentifier identifier: String) async throws
+```
+
+```objc
++ (void) reloadContentBlockerWithIdentifier:(NSString *) identifier completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-class func reloadContentBlocker(withIdentifier identifier: String) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> class func reloadContentBlocker(withIdentifier identifier: String) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 Call this method when your extension’s content-blocking rules change.
 

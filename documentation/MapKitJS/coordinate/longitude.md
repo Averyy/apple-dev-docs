@@ -1,7 +1,8 @@
 # longitude
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The longitude, in degrees.
 
@@ -10,7 +11,7 @@ The longitude, in degrees.
 
 ## Declaration
 
-```swift
+```
 longitude: number;
 ```
 
@@ -20,7 +21,8 @@ Measurements are relative to the zero meridian, with positive values extending e
 
 ## See Also
 
-- [latitude](coordinate/latitude.md)
+### Defining the coordinates
+- [latitude](./latitude.md)
   The latitude, in degrees.
 
 

@@ -1,7 +1,8 @@
 # allEntities()
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all available entities of this type.
 
@@ -26,11 +27,12 @@ An array containing all entities of this type.
 
 #### Discussion
 
-> **Note**: Any errors encountered during the query execution.
+> **Throws**: Any errors encountered during the query execution.
 
 ## See Also
 
-- [func allEntitiesQuery() -> AnyEntityQuery](appentitydefinition/allentitiesquery.md)
+### Retrieving all entities
+- [func allEntitiesQuery() -> AnyEntityQuery](./allentitiesquery%28%29.md)
   Creates an entity query that retrieves all available entities of this type.
 
 

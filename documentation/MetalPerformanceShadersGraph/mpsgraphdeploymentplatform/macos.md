@@ -1,7 +1,8 @@
 # MPSGraphDeploymentPlatform.macOS
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Deployment platofmr for macOS.
 
@@ -17,6 +18,10 @@ Deployment platofmr for macOS.
 
 ```swift
 case macOS
+```
+
+```c
+MPSGraphDeploymentPlatformMacOS
 ```
 
 

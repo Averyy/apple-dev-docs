@@ -1,7 +1,8 @@
 # UserInterfaceSizeClass.regular
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The regular size class.
 
@@ -22,7 +23,8 @@ case regular
 
 ## See Also
 
-- [UserInterfaceSizeClass.compact](userinterfacesizeclass/compact.md)
+### Getting size classes
+- [UserInterfaceSizeClass.compact](./compact.md)
   The compact size class.
 
 

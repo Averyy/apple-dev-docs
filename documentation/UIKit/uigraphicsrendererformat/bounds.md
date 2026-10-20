@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds of the graphics context.
 
@@ -16,6 +17,10 @@ The bounds of the graphics context.
 
 ```swift
 var bounds: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect bounds;
 ```
 
 #### Discussion

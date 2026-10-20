@@ -1,9 +1,10 @@
 # token
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-A token for the current container. (Token is definedin [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`AEDesc`](aedesc.md).
+A token for the current container. (Token is definedin [`AEDisposeToken(_:)`](../api-1446783-aedisposetoken.md). See [`AEDesc`](../aedesc.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ A token for the current container. (Token is definedin [`AEDisposeToken(_:)`](14
 
 ```swift
 var token: AEDesc
+```
+
+```c
+AEDesc token;
 ```
 
 

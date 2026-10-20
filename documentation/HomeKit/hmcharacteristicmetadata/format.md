@@ -1,7 +1,8 @@
 # format
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the values for the characteristic.
 
@@ -19,9 +20,13 @@ The format of the values for the characteristic.
 var format: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * format;
+```
+
 #### Discussion
 
-The [`format`](hmcharacteristicmetadata/format.md) property tells you what kind of data the characteristic’s [`value`](hmcharacteristic/value.md) contains. For example, you can extend the [`HMCharacteristic`](hmcharacteristic.md) class with a computed property that reports whether a given characteristic is a floating point number:
+The [`format`](./format.md) property tells you what kind of data the characteristic’s [`value`](../hmcharacteristic/value.md) contains. For example, you can extend the [`HMCharacteristic`](../hmcharacteristic.md) class with a computed property that reports whether a given characteristic is a floating point number:
 
 ```swift
 extension HMCharacteristic {
@@ -31,11 +36,12 @@ extension HMCharacteristic {
 }
 ```
 
-See [`Characteristic Data Formats`](characteristic-data-formats.md) for the list of possible formats.
+See [Characteristic Data Formats](../characteristic-data-formats.md) for the list of possible formats.
 
 ## See Also
 
-- [Characteristic Data Formats](characteristic-data-formats.md)
+### Formatting the value
+- [Characteristic Data Formats](../characteristic-data-formats.md)
   Constants for identifying the data format of characteristic values.
 
 

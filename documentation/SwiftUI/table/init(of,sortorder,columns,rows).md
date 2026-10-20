@@ -1,7 +1,8 @@
 # init(of:sortOrder:columns:rows:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sortable table with the given columns and rows.
 
@@ -19,6 +20,8 @@ Creates a sortable table with the given columns and rows.
 nonisolated init<Sort>(of valueType: Value.Type, sortOrder: Binding<[Sort]>, @TableColumnBuilder<Value, Sort> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows) where Sort : SortComparator, Columns.TableRowValue == Sort.Compared
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
 ## Parameters
 
 - `valueType`: The type of value used to derive the table’s contents.
@@ -28,11 +31,12 @@ nonisolated init<Sort>(of valueType: Value.Type, sortOrder: Binding<[Sort]>, @Ta
 
 ## See Also
 
-- [init(of:selection:sortOrder:columns:rows:)](table/init(of:selection:sortorder:columns:rows:).md)
+### Creating a sortable table from columns and rows
+- [init(of:selection:sortOrder:columns:rows:)](./init%28of,selection,sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows that supports selecting multiple rows.
-- [init<Sort>(sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](table/init(sortorder:columns:rows:).md)
+- [init<Sort>(sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](./init%28sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows.
-- [init(selection:sortOrder:columns:rows:)](table/init(selection:sortorder:columns:rows:).md)
+- [init(selection:sortOrder:columns:rows:)](./init%28selection,sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows that supports selecting multiple rows.
 
 

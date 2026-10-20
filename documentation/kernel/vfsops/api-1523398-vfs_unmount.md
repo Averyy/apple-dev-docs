@@ -1,14 +1,15 @@
 # vfs_unmount
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int (*vfs_unmount)(struct mount *mp, int mntflags, vfs_context_t context);
 ```
 

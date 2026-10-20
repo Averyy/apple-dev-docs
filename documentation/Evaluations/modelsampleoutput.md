@@ -1,7 +1,8 @@
 # ModelSampleOutput
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The expected output value and evaluation expectations for a sample.
 
@@ -23,25 +24,26 @@ struct ModelSampleOutput<Value, Expectation> where Value : Decodable, Value : En
 ## Topics
 
 ### Initializers
-- [init(value: Value?, expectations: Expectation?)](modelsampleoutput/init(value:expectations:).md)
+- [init(value: Value?, expectations: Expectation?)](./modelsampleoutput/init%28value,expectations%29.md)
   Creates a model sample output with an optional expected value and expectations.
 ### Instance Properties
-- [var expectations: Expectation?](modelsampleoutput/expectations.md)
+- [var expectations: Expectation?](./modelsampleoutput/expectations.md)
   The expected behavior, for example, tool-call trajectory.
-- [var value: Value?](modelsampleoutput/value.md)
+- [var value: Value?](./modelsampleoutput/value.md)
   The expected output value for comparison.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ModelSampleInput](modelsampleinput.md)
+### Bundled input and output
+- [struct ModelSampleInput](./modelsampleinput.md)
   The data a language model receives for evaluation.
 
 

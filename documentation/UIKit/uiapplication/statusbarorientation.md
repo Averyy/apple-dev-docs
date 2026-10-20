@@ -1,14 +1,17 @@
 # statusBarOrientation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current orientation of the app’s status bar.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use the [`interfaceOrientation`](../uiwindowscene/interfaceorientation.md) property of the window scene instead.
 
 ## Declaration
 
@@ -16,39 +19,45 @@ The current orientation of the app’s status bar.
 var statusBarOrientation: UIInterfaceOrientation { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) UIInterfaceOrientation statusBarOrientation;
+```
+
 #### Discussion
 
-The value of this property is a constant that indicates an orientation of the status bar. See [`UIInterfaceOrientation`](uiinterfaceorientation.md) for details. Setting this property rotates the status bar to the specified orientation without animating the transition. If your app has rotatable window content, however, you shouldn’t arbitrarily set status-bar orientation using this method. The status-bar orientation set by this method doesn’t change if the device changes orientation. For more on rotatable window views, see [`View Controller Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457).
+The value of this property is a constant that indicates an orientation of the status bar. See [`UIInterfaceOrientation`](../uiinterfaceorientation.md) for details. Setting this property rotates the status bar to the specified orientation without animating the transition. If your app has rotatable window content, however, you shouldn’t arbitrarily set status-bar orientation using this method. The status-bar orientation set by this method doesn’t change if the device changes orientation. For more on rotatable window views, see [View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457).
 
 ## See Also
 
-- [func setStatusBarOrientation(UIInterfaceOrientation, animated: Bool)](uiapplication/setstatusbarorientation(_:animated:).md)
+### Related Documentation
+- [func setStatusBarOrientation(UIInterfaceOrientation, animated: Bool)](./setstatusbarorientation%28_,animated%29.md)
   Sets the app’s status bar to the specified orientation, optionally animating the transition.
-- [var applicationIconBadgeNumber: Int](uiapplication/applicationiconbadgenumber.md)
+### Deprecated properties
+- [var applicationIconBadgeNumber: Int](./applicationiconbadgenumber.md)
   The number currently set as the badge of the app icon on the Home screen.
-- [class let statusBarFrameUserInfoKey: String](uiapplication/statusbarframeuserinfokey.md)
+- [class let statusBarFrameUserInfoKey: String](./statusbarframeuserinfokey.md)
   A key whose value indicates the new status bar frame.
-- [class let statusBarOrientationUserInfoKey: String](uiapplication/statusbarorientationuserinfokey.md)
+- [class let statusBarOrientationUserInfoKey: String](./statusbarorientationuserinfokey.md)
   A key whose value indicates the current interface orientation.
-- [var currentUserNotificationSettings: UIUserNotificationSettings?](uiapplication/currentusernotificationsettings.md)
+- [var currentUserNotificationSettings: UIUserNotificationSettings?](./currentusernotificationsettings.md)
   Returns the user notification settings for the app.
-- [var isIgnoringInteractionEvents: Bool](uiapplication/isignoringinteractionevents.md)
+- [var isIgnoringInteractionEvents: Bool](./isignoringinteractionevents.md)
   A Boolean value that indicates whether the receiver is ignoring events initiated by touches on the screen.
-- [var isNetworkActivityIndicatorVisible: Bool](uiapplication/isnetworkactivityindicatorvisible.md)
+- [var isNetworkActivityIndicatorVisible: Bool](./isnetworkactivityindicatorvisible.md)
   A Boolean value that turns an indicator of network activity on or off.
-- [var isStatusBarHidden: Bool](uiapplication/isstatusbarhidden.md)
+- [var isStatusBarHidden: Bool](./isstatusbarhidden.md)
   A Boolean value that determines whether the status bar is hidden.
-- [var keyWindow: UIWindow?](uiapplication/keywindow.md)
+- [var keyWindow: UIWindow?](./keywindow.md)
   The app’s key window.
-- [var scheduledLocalNotifications: [UILocalNotification]?](uiapplication/scheduledlocalnotifications.md)
+- [var scheduledLocalNotifications: [UILocalNotification]?](./scheduledlocalnotifications.md)
   All currently scheduled local notifications.
-- [var statusBarFrame: CGRect](uiapplication/statusbarframe.md)
+- [var statusBarFrame: CGRect](./statusbarframe.md)
   The frame rectangle defining the area of the status bar.
-- [var statusBarOrientationAnimationDuration: TimeInterval](uiapplication/statusbarorientationanimationduration.md)
+- [var statusBarOrientationAnimationDuration: TimeInterval](./statusbarorientationanimationduration.md)
   The animation duration in seconds for the status bar during a 90 degree orientation change.
-- [var statusBarStyle: UIStatusBarStyle](uiapplication/statusbarstyle.md)
+- [var statusBarStyle: UIStatusBarStyle](./statusbarstyle.md)
   The current style of the status bar.
-- [var windows: [UIWindow]](uiapplication/windows.md)
+- [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
 
 

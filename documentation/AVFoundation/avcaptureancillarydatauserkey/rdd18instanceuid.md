@@ -1,7 +1,8 @@
 # rdd18InstanceUID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An AVCaptureAncillaryDataEncoder key corresponding with the optional RDD18 user defined metadata Instance UID
 
@@ -16,6 +17,10 @@ An AVCaptureAncillaryDataEncoder key corresponding with the optional RDD18 user 
 
 ```swift
 static let rdd18InstanceUID: AVCaptureAncillaryDataUserKey
+```
+
+```c
+extern AVCaptureAncillaryDataUserKey const AVCaptureAncillaryDataUserKeyRDD18InstanceUID;
 ```
 
 #### Discussion

@@ -1,17 +1,22 @@
 # CFXMLNodeTypeCode
 
 **Framework**: Core Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The various XML data type identification codes that the parser uses to describe XML structures.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 enum CFXMLNodeTypeCode
+```
+
+```c
+enum CFXMLNodeTypeCode : CFIndex;
 ```
 
 #### Overview
@@ -21,54 +26,55 @@ When the parser encounters a new XML structure, its data type and contents are p
 ## Topics
 
 ### Constants
-- [CFXMLNodeTypeCode.document](cfxmlnodetypecode/document.md)
-  Indicates a document where the data string is `NULL` and the additional information is a pointer to a [`CFXMLDocumentInfo`](cfxmldocumentinfo.md) structure.
-- [CFXMLNodeTypeCode.element](cfxmlnodetypecode/element.md)
-  Indicates an element where the data string is the name of the tag and the additional information is a pointer to a [`CFXMLElementInfo`](cfxmlelementinfo.md) structure.
-- [CFXMLNodeTypeCode.attribute](cfxmlnodetypecode/attribute.md)
+- [CFXMLNodeTypeCode.document](./cfxmlnodetypecode/document.md)
+  Indicates a document where the data string is `NULL` and the additional information is a pointer to a [`CFXMLDocumentInfo`](./cfxmldocumentinfo.md) structure.
+- [CFXMLNodeTypeCode.element](./cfxmlnodetypecode/element.md)
+  Indicates an element where the data string is the name of the tag and the additional information is a pointer to a [`CFXMLElementInfo`](./cfxmlelementinfo.md) structure.
+- [CFXMLNodeTypeCode.attribute](./cfxmlnodetypecode/attribute.md)
   Currently not used.
-- [CFXMLNodeTypeCode.processingInstruction](cfxmlnodetypecode/processinginstruction.md)
-  Indicates a processing instruction where the data string is the name of the target and the additional information is a pointer to a [`CFXMLProcessingInstructionInfo`](cfxmlprocessinginstructioninfo.md) structure.
-- [CFXMLNodeTypeCode.comment](cfxmlnodetypecode/comment.md)
+- [CFXMLNodeTypeCode.processingInstruction](./cfxmlnodetypecode/processinginstruction.md)
+  Indicates a processing instruction where the data string is the name of the target and the additional information is a pointer to a [`CFXMLProcessingInstructionInfo`](./cfxmlprocessinginstructioninfo.md) structure.
+- [CFXMLNodeTypeCode.comment](./cfxmlnodetypecode/comment.md)
   Indicates a comment section where the data string is the text of the comment and the additional information is `NULL`.
-- [CFXMLNodeTypeCode.text](cfxmlnodetypecode/text.md)
+- [CFXMLNodeTypeCode.text](./cfxmlnodetypecode/text.md)
   Indicates a text section where the data string is the text’s contents and the additional information is `NULL`.
-- [CFXMLNodeTypeCode.cdataSection](cfxmlnodetypecode/cdatasection.md)
+- [CFXMLNodeTypeCode.cdataSection](./cfxmlnodetypecode/cdatasection.md)
   Indicates a CDATA section where the data string is the text of the CDATA and the additional information is `NULL`.
-- [CFXMLNodeTypeCode.documentFragment](cfxmlnodetypecode/documentfragment.md)
+- [CFXMLNodeTypeCode.documentFragment](./cfxmlnodetypecode/documentfragment.md)
   Currently not used.
-- [CFXMLNodeTypeCode.entity](cfxmlnodetypecode/entity.md)
-  Indicates an entity where the data string is the name of the entity and the additional information is a pointer to a [`CFXMLEntityInfo`](cfxmlentityinfo.md) structure.
-- [CFXMLNodeTypeCode.entityReference](cfxmlnodetypecode/entityreference.md)
-  Indicates an entity reference where the data string is the name of the referenced entity and the additional information is a pointer to a [`CFXMLEntityReferenceInfo`](cfxmlentityreferenceinfo.md) structure.
-- [CFXMLNodeTypeCode.documentType](cfxmlnodetypecode/documenttype.md)
-  Indicates a document type where the data string is the name given to the top-level element and the additional information is a pointer to a [`CFXMLDocumentTypeInfo`](cfxmldocumenttypeinfo.md) structure.
-- [CFXMLNodeTypeCode.whitespace](cfxmlnodetypecode/whitespace.md)
+- [CFXMLNodeTypeCode.entity](./cfxmlnodetypecode/entity.md)
+  Indicates an entity where the data string is the name of the entity and the additional information is a pointer to a [`CFXMLEntityInfo`](./cfxmlentityinfo.md) structure.
+- [CFXMLNodeTypeCode.entityReference](./cfxmlnodetypecode/entityreference.md)
+  Indicates an entity reference where the data string is the name of the referenced entity and the additional information is a pointer to a [`CFXMLEntityReferenceInfo`](./cfxmlentityreferenceinfo.md) structure.
+- [CFXMLNodeTypeCode.documentType](./cfxmlnodetypecode/documenttype.md)
+  Indicates a document type where the data string is the name given to the top-level element and the additional information is a pointer to a [`CFXMLDocumentTypeInfo`](./cfxmldocumenttypeinfo.md) structure.
+- [CFXMLNodeTypeCode.whitespace](./cfxmlnodetypecode/whitespace.md)
   Indicates white space where the data string is the text of the white space and the additional information is `NULL`.
-- [CFXMLNodeTypeCode.notation](cfxmlnodetypecode/notation.md)
-  Indicates a notation where the data string is the notation name and the additional information is a pointer to a [`CFXMLNotationInfo`](cfxmlnotationinfo.md) structure.
-- [CFXMLNodeTypeCode.elementTypeDeclaration](cfxmlnodetypecode/elementtypedeclaration.md)
-  Indicates an element type declaration where the data string is the tag name and the additional information is a pointer to a [`CFXMLElementTypeDeclarationInfo`](cfxmlelementtypedeclarationinfo.md) structure.
-- [CFXMLNodeTypeCode.attributeListDeclaration](cfxmlnodetypecode/attributelistdeclaration.md)
-  Indicates an attribute list declaration where the data string is the tag name and the additional information is a pointer to a [`CFXMLAttributeListDeclarationInfo`](cfxmlattributelistdeclarationinfo.md) structure.
+- [CFXMLNodeTypeCode.notation](./cfxmlnodetypecode/notation.md)
+  Indicates a notation where the data string is the notation name and the additional information is a pointer to a [`CFXMLNotationInfo`](./cfxmlnotationinfo.md) structure.
+- [CFXMLNodeTypeCode.elementTypeDeclaration](./cfxmlnodetypecode/elementtypedeclaration.md)
+  Indicates an element type declaration where the data string is the tag name and the additional information is a pointer to a [`CFXMLElementTypeDeclarationInfo`](./cfxmlelementtypedeclarationinfo.md) structure.
+- [CFXMLNodeTypeCode.attributeListDeclaration](./cfxmlnodetypecode/attributelistdeclaration.md)
+  Indicates an attribute list declaration where the data string is the tag name and the additional information is a pointer to a [`CFXMLAttributeListDeclarationInfo`](./cfxmlattributelistdeclarationinfo.md) structure.
 ### Initializers
-- [init?(rawValue: CFIndex)](cfxmlnodetypecode/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./cfxmlnodetypecode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CFXMLEntityTypeCode](cfxmlentitytypecode.md)
+### Constants
+- [enum CFXMLEntityTypeCode](./cfxmlentitytypecode.md)
   The entity type identification codes that the parser uses to describe XML entities.
-- [Node Current Version](1443311-node-current-version.md)
+- [Node Current Version](./api-1443311-node-current-version.md)
   The version of a CFXMLNode object.
 
 

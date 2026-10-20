@@ -1,7 +1,8 @@
 # ForceEffectComponent.SimulationState.pause
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The simulation will pause.
 

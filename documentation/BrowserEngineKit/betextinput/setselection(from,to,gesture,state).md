@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the text view that its selection needs to change to the text between the given points.
@@ -18,9 +19,13 @@ Notifies the text view that its selection needs to change to the text between th
 func setSelection(from: CGPoint, to: CGPoint, gesture: BEGestureType, state: UIGestureRecognizer.State)
 ```
 
+```objc
+- (void) setSelectionFromPoint:(CGPoint) from toPoint:(CGPoint) to gesture:(BEGestureType) gesture state:(UIGestureRecognizerState) state;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 ## Parameters
 

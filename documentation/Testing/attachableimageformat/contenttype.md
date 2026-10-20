@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type corresponding to this image format.
 
@@ -17,9 +18,9 @@ var contentType: UTType { get }
 
 #### Discussion
 
-For example, if this image format equals [`png`](attachableimageformat/png.md), the value of this property equals [`UTType.png`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/png).
+For example, if this image format equals [`png`](./png.md), the value of this property equals [UTType.png](../../UniformTypeIdentifiers/uttype-swift.struct/png.md).
 
-The value of this property always conforms to [`UTType.image`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/image).
+The value of this property always conforms to [UTType.image](../../UniformTypeIdentifiers/uttype-swift.struct/image.md).
 
 
 ---

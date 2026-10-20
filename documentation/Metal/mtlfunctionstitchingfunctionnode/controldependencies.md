@@ -1,7 +1,8 @@
 # controlDependencies
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of nodes that need to execute before executing the node.
 
@@ -19,15 +20,20 @@ The list of nodes that need to execute before executing the node.
 var controlDependencies: [MTLFunctionStitchingFunctionNode] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<MTLFunctionStitchingFunctionNode *> * controlDependencies;
+```
+
 #### Discussion
 
-When a stitched function calls functions that have side effects on their input data, you often need the GPU to execute functions in a specific order. In such cases, use the [`controlDependencies`](mtlfunctionstitchingfunctionnode/controldependencies.md) property to specify which nodes need to run before executing this node.
+When a stitched function calls functions that have side effects on their input data, you often need the GPU to execute functions in a specific order. In such cases, use the [`controlDependencies`](./controldependencies.md) property to specify which nodes need to run before executing this node.
 
 ## See Also
 
-- [var name: String](mtlfunctionstitchingfunctionnode/name.md)
+### Configuring a function node
+- [var name: String](./name.md)
   The name of the function to call.
-- [var arguments: [any MTLFunctionStitchingNode]](mtlfunctionstitchingfunctionnode/arguments.md)
+- [var arguments: [any MTLFunctionStitchingNode]](./arguments.md)
   An ordered list of the nodes that provide the function’s arguments.
 
 

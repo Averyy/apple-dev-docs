@@ -1,7 +1,8 @@
 # errSecMissingAttributeSymmetricKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A symmetric key format attribute is missing.
 
@@ -18,6 +19,10 @@ A symmetric key format attribute is missing.
 
 ```swift
 var errSecMissingAttributeSymmetricKeyFormat: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeSymmetricKeyFormat
 ```
 
 

@@ -1,15 +1,16 @@
 # kAudioUnitType_RemoteEffect
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var kAudioUnitType_RemoteEffect: UInt32 { get }
 ```
 
+```c
+kAudioUnitType_RemoteEffect
+```
+
 ## See Also
 
-- [var kAudioUnitType_RemoteGenerator: UInt32](kaudiounittype_remotegenerator.md)
-- [var kAudioUnitType_RemoteInstrument: UInt32](kaudiounittype_remoteinstrument.md)
-- [var kAudioUnitType_RemoteMusicEffect: UInt32](kaudiounittype_remotemusiceffect.md)
+### Constants
+- [var kAudioUnitType_RemoteGenerator: UInt32](./kaudiounittype_remotegenerator.md)
+- [var kAudioUnitType_RemoteInstrument: UInt32](./kaudiounittype_remoteinstrument.md)
+- [var kAudioUnitType_RemoteMusicEffect: UInt32](./kaudiounittype_remotemusiceffect.md)
 
 
 ---

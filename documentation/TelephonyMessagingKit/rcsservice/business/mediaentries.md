@@ -1,7 +1,8 @@
 # mediaEntries
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Media entries provided by business.
 
@@ -16,7 +17,8 @@ let mediaEntries: [RCSService.Business.MediaEntry]
 
 ## See Also
 
-- [RCSService.Business.MediaEntry](rcsservice/business/mediaentry.md)
+### Accessing media entries
+- [RCSService.Business.MediaEntry](./mediaentry.md)
   Structure containing media details provided by a business.
 
 

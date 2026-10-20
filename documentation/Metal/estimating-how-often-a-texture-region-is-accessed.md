@@ -1,12 +1,13 @@
 # Estimating how often a texture region is accessed
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Use texture access patterns to determine when you need to map a texture region.
 
 #### Overview
 
-When you use sparse textures, you need to decide when to map or unmap texture regions. For example, one option is to map entire mipmaps, using existing techniques for determining which mipmaps are accessed. (For more information, see [`Dynamically adjusting texture level of detail`](dynamically-adjusting-texture-level-of-detail.md)). You may also want to go further, and only map subregions within individual mipmaps. To help you do that, Metal provides a mechanism to estimate how often you access each region. When you detect a sufficient number of requests to a given region, you can map a sparse tile to it.
+When you use sparse textures, you need to decide when to map or unmap texture regions. For example, one option is to map entire mipmaps, using existing techniques for determining which mipmaps are accessed. (For more information, see [Dynamically adjusting texture level of detail](./dynamically-adjusting-texture-level-of-detail.md)). You may also want to go further, and only map subregions within individual mipmaps. To help you do that, Metal provides a mechanism to estimate how often you access each region. When you detect a sufficient number of requests to a given region, you can map a sparse tile to it.
 
 When the GPU attempts to sample a pixel in texture memory:
 
@@ -23,9 +24,9 @@ To normalize the access counts, Metal increments the count as if you accessed al
 
 Determine your own heuristics to decide how many pixel memory operations is sufficient to start mapping a sparse tile for that region.
 
-##### Request the Estimated Texture Access Counts
+##### Request the estimated texture access counts
 
-To get the current access counts for a sparse texture, create a blit command encoder and encode commands to copy the GPU’s internal counters to an [`MTLBuffer`](mtlbuffer.md) instance. The following example code takes a tile region in the texture’s top-level mipmap, creates an [`MTLBuffer`](mtlbuffer.md) instance large enough to accommodate all of the region’s tiles, and encodes a command to copy the counters.
+To get the current access counts for a sparse texture, create a blit command encoder and encode commands to copy the GPU’s internal counters to an [`MTLBuffer`](./mtlbuffer.md) instance. The following example code takes a tile region in the texture’s top-level mipmap, creates an [`MTLBuffer`](./mtlbuffer.md) instance large enough to accommodate all of the region’s tiles, and encodes a command to copy the counters.
 
 **Swift**:
 
@@ -58,31 +59,32 @@ blitEncoder.label = @"Copy Texture Miss Counts";
                  countersBufferOffset:0];
 ```
 
-The counters are organized as a 3D array of [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t) values, stored in row-major order. You tell the GPU whether to reset the access counters.
+The counters are organized as a 3D array of [`uint32_t`](../kernel/uint32_t.md) values, stored in row-major order. You tell the GPU whether to reset the access counters.
 
-If you want information about more than one mipmap in the same texture or information about multiple textures, encode a separate command for each mipmap/texture combination. Don’t allocate a buffer for each request; allocate larger [`MTLBuffer`](mtlbuffer.md) instances and specify offsets within those buffers for each request.
+If you want information about more than one mipmap in the same texture or information about multiple textures, encode a separate command for each mipmap/texture combination. Don’t allocate a buffer for each request; allocate larger [`MTLBuffer`](./mtlbuffer.md) instances and specify offsets within those buffers for each request.
 
 ## See Also
 
-- [Managing sparse texture memory](managing-sparse-texture-memory.md)
+### Sparse textures
+- [Managing sparse texture memory](./managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](./converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](./assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Reading and writing to sparse textures](reading-and-writing-to-sparse-textures.md)
+- [Reading and writing to sparse textures](./reading-and-writing-to-sparse-textures.md)
   Decide how to handle access to unmapped texture regions.
-- [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
+- [class MTLResourceStatePassDescriptor](./mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](mtlresourcestatepasssamplebufferattachmentdescriptor.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](./mtlresourcestatepasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a resource state pass.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
   An array of sample buffer attachments for a resource state pass.
-- [protocol MTLResourceStateCommandEncoder](mtlresourcestatecommandencoder.md)
+- [protocol MTLResourceStateCommandEncoder](./mtlresourcestatecommandencoder.md)
   An encoder that encodes commands that modify resource configurations.
-- [struct MTLMapIndirectArguments](mtlmapindirectarguments.md)
+- [struct MTLMapIndirectArguments](./mtlmapindirectarguments.md)
   The data layout for mapping sparse texture regions when using indirect commands.
 
 

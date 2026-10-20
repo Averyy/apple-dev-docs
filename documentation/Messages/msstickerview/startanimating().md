@@ -1,7 +1,8 @@
 # startAnimating()
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the sticker’s animation, beginning with the first frame.
 
@@ -16,13 +17,18 @@ Starts the sticker’s animation, beginning with the first frame.
 func startAnimating()
 ```
 
+```objc
+- (void) startAnimating;
+```
+
 ## See Also
 
-- [var animationDuration: TimeInterval](msstickerview/animationduration.md)
+### Controlling Sticker Animation
+- [var animationDuration: TimeInterval](./animationduration.md)
   The amount of time it takes to complete the sticker’s animation.
-- [func isAnimating() -> Bool](msstickerview/isanimating.md)
+- [func isAnimating() -> Bool](./isanimating%28%29.md)
   Returns a Boolean value that indicates whether the sticker is animating.
-- [func stopAnimating()](msstickerview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops the sticker’s animation.
 
 

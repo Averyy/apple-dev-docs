@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The x-coordinate.
 
@@ -19,11 +20,16 @@ The x-coordinate.
 var x: Double { get }
 ```
 
+```objc
+@property (readonly) double x;
+```
+
 ## See Also
 
-- [var y: Double](vnpoint/y.md)
+### Inspecting a Point
+- [var y: Double](./y.md)
   The y-coordinate.
-- [var location: CGPoint](vnpoint/location.md)
+- [var location: CGPoint](./location.md)
   The Core Graphics point for this point.
 
 

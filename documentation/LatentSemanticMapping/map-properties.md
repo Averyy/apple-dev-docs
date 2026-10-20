@@ -1,6 +1,7 @@
 # Map Properties
 
-**Framework**: Latent Semantic Mapping
+**Framework**: Latent Semantic Mapping  
+**Role**: API Collection
 
 Special properties that determine a map’s behavior.
 
@@ -11,32 +12,33 @@ Latent Semantic Mapping interprets the following keys. All other keys starting w
 ## Topics
 
 ### Properties
-- [var kLSMAlgorithmKey: String](klsmalgorithmkey.md)
+- [var kLSMAlgorithmKey: String](./klsmalgorithmkey.md)
   A key that specifies which algorithm to use.
-- [var kLSMAlgorithmDense: String](klsmalgorithmdense.md)
+- [var kLSMAlgorithmDense: String](./klsmalgorithmdense.md)
   A value that specifies to perform a singular value decomposition (SVD) on a dense matrix.
-- [var kLSMAlgorithmSparse: String](klsmalgorithmsparse.md)
+- [var kLSMAlgorithmSparse: String](./klsmalgorithmsparse.md)
   A value that specifies to perform a singular value decomposition (SVD) on a sparse matrix.
-- [var kLSMPrecisionKey: String](klsmprecisionkey.md)
+- [var kLSMPrecisionKey: String](./klsmprecisionkey.md)
   A key that specifies the precision to use.
-- [var kLSMPrecisionFloat: String](klsmprecisionfloat.md)
+- [var kLSMPrecisionFloat: String](./klsmprecisionfloat.md)
   A value that specifies to use float arithmetic.
-- [var kLSMPrecisionDouble: String](klsmprecisiondouble.md)
+- [var kLSMPrecisionDouble: String](./klsmprecisiondouble.md)
   A value that specifies to use double arithmetic.
-- [var kLSMDimensionKey: String](klsmdimensionkey.md)
+- [var kLSMDimensionKey: String](./klsmdimensionkey.md)
   A key that specifies the number of singular values to compute.
-- [var kLSMIterationsKey: String](klsmiterationskey.md)
+- [var kLSMIterationsKey: String](./klsmiterationskey.md)
   A key that specifies the number of iterations to compute.
-- [var kLSMSweepAgeKey: String](klsmsweepagekey.md)
+- [var kLSMSweepAgeKey: String](./klsmsweepagekey.md)
   A key that specifies the number of days between sweeping generations.
-- [var kLSMSweepCutoffKey: String](klsmsweepcutoffkey.md)
+- [var kLSMSweepCutoffKey: String](./klsmsweepcutoffkey.md)
   A key that specifies the minimum count to keep entry.
 
 ## See Also
 
-- [func LSMMapSetProperties(LSMMap, CFDictionary)](lsmmapsetproperties(_:_:).md)
+### Managing a Map’s Properties
+- [func LSMMapSetProperties(LSMMap, CFDictionary)](./lsmmapsetproperties%28_,_%29.md)
   Sets a dictionary of properties for the map.
-- [func LSMMapGetProperties(LSMMap) -> Unmanaged<CFDictionary>](lsmmapgetproperties(_:).md)
+- [func LSMMapGetProperties(LSMMap) -> Unmanaged<CFDictionary>](./lsmmapgetproperties%28_%29.md)
   Gets a dictionary of properties for the map.
 
 

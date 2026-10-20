@@ -1,7 +1,8 @@
 # TranslationUIProviderExtension
 
 **Framework**: TranslationUIProvider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that translation apps implement to provide a text-selection view.
 
@@ -19,22 +20,23 @@ protocol TranslationUIProviderExtension : AppExtension
 ## Topics
 
 ### Associated Types
-- [associatedtype Body : TranslationUIProviderExtensionScene](translationuiproviderextension/body-swift.associatedtype.md)
+- [associatedtype Body : TranslationUIProviderExtensionScene](./translationuiproviderextension/body-swift.associatedtype.md)
   The type for this UI providers extensions’s body
 ### Instance Properties
-- [var body: Self.Body](translationuiproviderextension/body-swift.property.md)
+- [var body: Self.Body](./translationuiproviderextension/body-swift.property.md)
   The content and behavior of the UI provider extensions’s interface.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 ## See Also
 
-- [protocol TranslationUIProviderContext](translationuiprovidercontext.md)
+### Creating translation app extensions
+- [protocol TranslationUIProviderContext](./translationuiprovidercontext.md)
   An object that encapsulates the XPC communication between the host process and the third-party extension implementation.
-- [protocol TranslationUIProviderExtensionScene](translationuiproviderextensionscene.md)
+- [protocol TranslationUIProviderExtensionScene](./translationuiproviderextensionscene.md)
   The protocol this extension’s scene need to implement.
 
 

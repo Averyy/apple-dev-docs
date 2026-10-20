@@ -1,7 +1,8 @@
 # StyleSheetList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface StyleSheetList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](stylesheetlist/1632913-length.md)
+- [length](./stylesheetlist/api-1632913-length.md)
 ### Instance Methods
-- [CSSStyleSheet](stylesheetlist/1630515-cssstylesheet.md)
-- [item](stylesheetlist/1632513-item.md)
+- [CSSStyleSheet](./stylesheetlist/api-1630515-cssstylesheet.md)
+- [item](./stylesheetlist/api-1632513-item.md)
 
 
 ---

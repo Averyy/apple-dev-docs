@@ -1,7 +1,8 @@
 # endObservingDirectory(at:)
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the extension that the user has stopped looking at a monitored directory or at one of its subdirectories.
 
@@ -14,9 +15,13 @@ Tells the extension that the user has stopped looking at a monitored directory o
 optional func endObservingDirectory(at url: URL)
 ```
 
+```objc
+- (void) endObservingDirectoryAtURL:(NSURL *) url;
+```
+
 #### Discussion
 
-Override this method to receive notifications when the user is no longer looking at the contents of the given URL. As with [`beginObservingDirectory(at:)`](fifindersyncprotocol/beginobservingdirectory(at:).md), the Open and Save dialogs are tracked separately from the Finder.
+Override this method to receive notifications when the user is no longer looking at the contents of the given URL. As with [`beginObservingDirectory(at:)`](./beginobservingdirectory%28at%29.md), the Open and Save dialogs are tracked separately from the Finder.
 
 ## Parameters
 
@@ -24,17 +29,18 @@ Override this method to receive notifications when the user is no longer looking
 
 ## See Also
 
-- [func beginObservingDirectory(at: URL)](fifindersyncprotocol/beginobservingdirectory(at:).md)
+### Managing Badges, Shortcut Menus, and Toolbar Buttons
+- [func beginObservingDirectory(at: URL)](./beginobservingdirectory%28at%29.md)
   Tells the extension that the user is looking at a monitored directory or at one of its subdirectories.
-- [func menu(for: FIMenuKind) -> NSMenu?](fifindersyncprotocol/menu(for:).md)
+- [func menu(for: FIMenuKind) -> NSMenu?](./menu%28for%29.md)
   Requests a custom menu from the extension.
-- [func requestBadgeIdentifier(for: URL)](fifindersyncprotocol/requestbadgeidentifier(for:).md)
+- [func requestBadgeIdentifier(for: URL)](./requestbadgeidentifier%28for%29.md)
   Requests a badge for the given file or directory.
-- [var toolbarItemImage: NSImage](fifindersyncprotocol/toolbaritemimage.md)
+- [var toolbarItemImage: NSImage](./toolbaritemimage.md)
   The image for the extension’s toolbar button.
-- [var toolbarItemName: String](fifindersyncprotocol/toolbaritemname.md)
+- [var toolbarItemName: String](./toolbaritemname.md)
   The name of the extension’s toolbar button.
-- [var toolbarItemToolTip: String](fifindersyncprotocol/toolbaritemtooltip.md)
+- [var toolbarItemToolTip: String](./toolbaritemtooltip.md)
   The tooltip text for the extension’s toolbar button.
 
 

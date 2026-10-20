@@ -1,6 +1,7 @@
 # Solving systems using direct methods
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Use direct methods to solve systems of equations where the coefficient matrix is sparse.
 
@@ -8,7 +9,7 @@ Use direct methods to solve systems of equations where the coefficient matrix is
 
 Direct methods offer high-precision solving with a simple API when compared to iterative methods. The code example below uses sparse Cholesky factorization to solve the following equation:
 
-![A mathematical equation that consists of a four-by-four sparse matrix multiplied by a four-element vector of unknown values equals a four-element vector of known values.](/images/com.apple.accelerate/media-2904628@2x.png)
+![A mathematical equation that consists of a four-by-four sparse matrix multiplied by a four-element vector of unknown values equals a four-element vector of known values.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2904628@2x.png)
 
 In the equation above, *A* refers to the four-by-four coefficient matrix and *b* to the right-hand-side vector. The code in this article solves the equation *Ax = b* by finding *x*.
 
@@ -16,9 +17,9 @@ Note that *A* is sparse. Some entries (those that are blank) are zero. For small
 
 The code in this article performs a sparse Cholesky factorization, equivalent to calling the LAPACK function `dpotrf_(_:_:_:_:_:)` on a dense matrix. The main requirement for sparse Cholesky factorization is that the matrix is symmetric positive-definite (that is, *A=Aᵀ),* and all eigenvalues are greater than zero. A sufficient, but not necessary, condition is that the matrix is diagonally dominant (that is, the sum of the absolute values of the off-diagonal entries in each row or column is less than the value of the diagonal). This is the case for the above matrix.
 
-##### Create the Matrix Structure
+##### Create the matrix structure
 
-Use the code below to define the matrix structure. As [`Creating sparse matrices`](creating-sparse-matrices.md) explains, because *A* is symmetric, it stores only half of the data.
+Use the code below to define the matrix structure. As [Creating sparse matrices](./creating-sparse-matrices.md) explains, because *A* is symmetric, it stores only half of the data.
 
 **Swift**:
 
@@ -69,9 +70,9 @@ SparseMatrixStructure structure = {
 };
 ```
 
-##### Create and Factorize the Matrix
+##### Create and factorize the matrix
 
-The [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md) function performs the actual Cholesky factorization, finding *L* such that *A = LLᵀ*.
+The [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-8gl6j.md) function performs the actual Cholesky factorization, finding *L* such that *A = LLᵀ*.
 
 **Swift**:
 
@@ -102,11 +103,11 @@ SparseMatrix_Double A = {
 __auto_type LLT = SparseFactor(SparseFactorizationCholesky, A);
 ```
 
-If the factorization function encounters an error, the code prints an error message and terminates. You may instead want to capture the error by using the optional [`SparseSymbolicFactorOptions`](sparsesymbolicfactoroptions.md) parameter and set the [`reportError`](sparsesymbolicfactoroptions/reporterror.md) parameter to a user-supplied error-handling routine. The returned [`SparseOpaqueFactorization_Double`](sparseopaquefactorization_double.md) structure reflects the error.
+If the factorization function encounters an error, the code prints an error message and terminates. You may instead want to capture the error by using the optional [`SparseSymbolicFactorOptions`](./sparsesymbolicfactoroptions.md) parameter and set the [`reportError`](./sparsesymbolicfactoroptions/reporterror.md) parameter to a user-supplied error-handling routine. The returned [`SparseOpaqueFactorization_Double`](./sparseopaquefactorization_double.md) structure reflects the error.
 
-##### Solve the Equation
+##### Solve the equation
 
-Use the factorization to solve the equation. The right-hand-side and solution vectors are arrays that you wrap in [`DenseVector_Double`](densevector_double.md) structures. The actual values of `x` don’t matter because the function overwrites them.
+Use the factorization to solve the equation. The right-hand-side and solution vectors are arrays that you wrap in [`DenseVector_Double`](./densevector_double.md) structures. The actual values of `x` don’t matter because the function overwrites them.
 
 **Swift**:
 
@@ -138,7 +139,7 @@ The solve call takes the factorization *A = LLᵀ* and solves the system *Ax = b
 
 However, you need only to supply the right-hand-side vector and the factorization.
 
-The [`SparseSolve(_:_:_:)`](sparsesolve(_:_:_:)-416bj.md) function solves the equation and populates `x` with the solution.
+The [`SparseSolve(_:_:_:)`](./sparsesolve%28_,_,_%29-416bj.md) function solves the equation and populates `x` with the solution.
 
 **Swift**:
 
@@ -166,7 +167,7 @@ bValues.withUnsafeMutableBufferPointer { bPtr in
 SparseSolve(LLT, b, x);
 ```
 
-If the [`SparseSolve(_:_:_:)`](sparsesolve(_:_:_:)-416bj.md) function encounters an error, the code prints an error message and terminates, unless you set [`reportError`](sparsesymbolicfactoroptions/reporterror.md) on the initial call to [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md).
+If the [`SparseSolve(_:_:_:)`](./sparsesolve%28_,_,_%29-416bj.md) function encounters an error, the code prints an error message and terminates, unless you set [`reportError`](./sparsesymbolicfactoroptions/reporterror.md) on the initial call to [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-8gl6j.md).
 
 The following code iterates over the solution vector, `x`, and prints the solution, `x = 0.10 0.20 0.30 0.40`:
 
@@ -184,13 +185,14 @@ printf("x = "); for(int i=0; i<x.count; i++) printf(" %.2f", x.data[i]); printf(
 
 ## See Also
 
-- [Creating sparse matrices](creating-sparse-matrices.md)
+### Sparse Matrices
+- [Creating sparse matrices](./creating-sparse-matrices.md)
   Create sparse matrices for factorization and solving systems.
-- [Solving systems using iterative methods](solving-systems-using-iterative-methods.md)
+- [Solving systems using iterative methods](./solving-systems-using-iterative-methods.md)
   Use iterative methods to solve systems of equations where the coefficient matrix is sparse.
-- [Creating a sparse matrix from coordinate format arrays](creating-a-sparse-matrix-from-coordinate-format-arrays.md)
+- [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
   Use separate coordinate format arrays to create sparse matrices.
-- [Sparse Solvers](sparse-solvers-library.md)
+- [Sparse Solvers](./sparse-solvers-library.md)
   Solve systems of equations where the coefficient matrix is sparse.
 
 

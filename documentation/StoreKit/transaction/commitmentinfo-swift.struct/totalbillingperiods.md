@@ -1,7 +1,8 @@
 # totalBillingPeriods
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,13 +21,14 @@ let totalBillingPeriods: UInt64
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## See Also
 
-- [let billingPeriodNumber: UInt64](transaction/commitmentinfo-swift.struct/billingperiodnumber.md)
-- [let expirationDate: Date](transaction/commitmentinfo-swift.struct/expirationdate.md)
-- [let price: Decimal](transaction/commitmentinfo-swift.struct/price.md)
+### Instance Properties - generated
+- [let billingPeriodNumber: UInt64](./billingperiodnumber.md)
+- [let expirationDate: Date](./expirationdate.md)
+- [let price: Decimal](./price.md)
 
 
 ---

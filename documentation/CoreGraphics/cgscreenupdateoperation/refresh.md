@@ -1,13 +1,14 @@
 # refresh
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A screen-refresh operation.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ A screen-refresh operation.
 static var refresh: CGScreenUpdateOperation { get }
 ```
 
+```c
+kCGScreenUpdateOperationRefresh
+```
+
 ## See Also
 
-- [static var move: CGScreenUpdateOperation](cgscreenupdateoperation/move.md)
+### Constants
+- [static var move: CGScreenUpdateOperation](./move.md)
   A screen-move operation.
-- [static var reducedDirtyRectangleCount: CGScreenUpdateOperation](cgscreenupdateoperation/reduceddirtyrectanglecount.md)
+- [static var reducedDirtyRectangleCount: CGScreenUpdateOperation](./reduceddirtyrectanglecount.md)
 
 
 ---

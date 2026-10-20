@@ -1,7 +1,8 @@
 # BuildUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,16 +11,16 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BuildUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object BuildUpdateRequest.Data.Attributes](buildupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BuildUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
-- [object BuildUpdateRequest.Data.Relationships](buildupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object BuildUpdateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -28,6 +29,8 @@ object BuildUpdateRequest.Data
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `relationships` (BuildUpdateRequest.Data.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `builds`
 
 
 ---

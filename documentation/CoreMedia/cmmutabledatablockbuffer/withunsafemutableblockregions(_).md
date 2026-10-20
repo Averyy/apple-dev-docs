@@ -1,7 +1,8 @@
 # withUnsafeMutableBlockRegions(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Access the potentially non-contiguous memory region referenced by this block buffer.
 

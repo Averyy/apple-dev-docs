@@ -1,7 +1,8 @@
 # shouldOptimizeForNetworkUse
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to write the output file to make it more suitable for playback over a network.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether to write the output file to make it more 
 var shouldOptimizeForNetworkUse: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldOptimizeForNetworkUse;
+```
+
 #### Discussion
 
-Setting this value to [`true`](https://developer.apple.com/documentation/swift/true) writes the output file in a form that enables a player to begin playing the media after downloading only a small portion of it.
+Setting this value to [`true`](../../Swift/true.md) writes the output file in a form that enables a player to begin playing the media after downloading only a small portion of it.
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]](avassetwriter/metadata.md)
+### Configuring output
+- [var metadata: [AVMetadataItem]](./metadata.md)
   An array of metadata items to write to the output file.
-- [var directoryForTemporaryFiles: URL?](avassetwriter/directoryfortemporaryfiles.md)
+- [var directoryForTemporaryFiles: URL?](./directoryfortemporaryfiles.md)
   A directory to contain temporary files that the export process generates.
 
 

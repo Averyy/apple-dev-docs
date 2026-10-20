@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kAEISWebStarSuite: OSType](kaeiswebstarsuite.md)
-- [var kAEInternetSuite: OSType](kaeinternetsuite.md)
+- [var kAEISWebStarSuite: OSType](../kaeiswebstarsuite.md)
+- [var kAEInternetSuite: OSType](../kaeinternetsuite.md)
 
 
 ---

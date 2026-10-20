@@ -1,7 +1,8 @@
 # kGSSICLKDCHostname
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value is a string indicating the LKDC hostname.
 
@@ -18,29 +19,34 @@ The value is a string indicating the LKDC hostname.
 var kGSSICLKDCHostname: String { get }
 ```
 
+```c
+#define kGSSICLKDCHostname
+```
+
 ## See Also
 
-- [var kGSSICPassword: String](kgssicpassword.md)
+### Initial Credential Keys
+- [var kGSSICPassword: String](./kgssicpassword.md)
   The value is a string that indicates a password.
-- [var kGSSICCertificate: String](kgssiccertificate.md)
+- [var kGSSICCertificate: String](./kgssiccertificate.md)
   The value that indicates a certificate to use with PKINIT/PKU2U.
-- [var kGSSCredentialUsage: String](kgsscredentialusage.md)
+- [var kGSSCredentialUsage: String](./kgsscredentialusage.md)
   The value indicates how to use the credential.
-- [var kGSSICVerifyCredential: String](kgssicverifycredential.md)
+- [var kGSSICVerifyCredential: String](./kgssicverifycredential.md)
   The value indicates whether to validate the credential with a trusted source to ensure there was no machine-in-the-middle attack.
-- [var kGSSICKerberosCacheName: String](kgssickerberoscachename.md)
+- [var kGSSICKerberosCacheName: String](./kgssickerberoscachename.md)
   The value is a string indicating the name of the cache created for use with the Kerberos mechanism.
-- [var kGSSICSiteName: String](kgssicsitename.md)
+- [var kGSSICSiteName: String](./kgssicsitename.md)
   The value is a string that is the name of site you are authenticating with, used for load balancing in DNS in Kerberos.
-- [var kGSSICAppIdentifierACL: String](kgssicappidentifieracl.md)
+- [var kGSSICAppIdentifierACL: String](./kgssicappidentifieracl.md)
   The value is an array of strings containing the list of bundle ID prefixes allowed to access this credential.
-- [var kGSSICCreateNewCredential: String](kgssiccreatenewcredential.md)
+- [var kGSSICCreateNewCredential: String](./kgssiccreatenewcredential.md)
   The value is a Boolean that indicates whether the caller wants to create a new credential and not overwrite a credential with the same name.
-- [var kGSSICAppleSourceApp: String](kgssicapplesourceapp.md)
+- [var kGSSICAppleSourceApp: String](./kgssicapplesourceapp.md)
   The value is a dictionary indicating attributes of the app that the credential is for (only applies to AppVPN).
-- [var kGSSICVerifyCredentialAcceptorName: String](kgssicverifycredentialacceptorname.md)
+- [var kGSSICVerifyCredentialAcceptorName: String](./kgssicverifycredentialacceptorname.md)
   The value is a string indicating the name of the acceptor.
-- [var kGSSICAuthenticationContext: String](kgssicauthenticationcontext.md)
+- [var kGSSICAuthenticationContext: String](./kgssicauthenticationcontext.md)
   The value indicates whether to allow the authentication UI or a context to pass a pre-evaluated authentication context.
 
 

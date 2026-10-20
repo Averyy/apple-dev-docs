@@ -1,7 +1,8 @@
 # DateIntervalFormatter.Style.long
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A long length date or time format.
 
@@ -20,6 +21,10 @@ A long length date or time format.
 case long
 ```
 
+```c
+NSDateIntervalFormatterLongStyle
+```
+
 #### Discussion
 
 For dates, this style displays the numerical day and year and a spelled out version of the month using a format appropriate for the current locale. For example, formatting the date January 15, 2015 with this style results in the value “January 15, 2015” for US English and the value “15. Januar 2015” for German.
@@ -28,13 +33,14 @@ For times, this style displays hours, minutes, seconds, and time zone informatio
 
 ## See Also
 
-- [DateIntervalFormatter.Style.none](dateintervalformatter/style/none.md)
+### Constants
+- [DateIntervalFormatter.Style.none](./none.md)
   No information for the date or time. Use this style when you do not want to include date or time information in the resulting string.
-- [DateIntervalFormatter.Style.short](dateintervalformatter/style/short.md)
+- [DateIntervalFormatter.Style.short](./short.md)
   An abbreviated date or time format.
-- [DateIntervalFormatter.Style.medium](dateintervalformatter/style/medium.md)
+- [DateIntervalFormatter.Style.medium](./medium.md)
   A medium length date or time format.
-- [DateIntervalFormatter.Style.full](dateintervalformatter/style/full.md)
+- [DateIntervalFormatter.Style.full](./full.md)
   A fully spelled out date or time format.
 
 

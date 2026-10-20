@@ -1,6 +1,7 @@
 # kDADiskOptionPrivate
 
-**Framework**: Disk Arbitration
+**Framework**: Disk Arbitration  
+**Role**: Article
 
 #### Overview
 
@@ -8,9 +9,10 @@ Deprecated. Use DADiskMountWithArguments() with “nobrowse” instead.
 
 ## See Also
 
-- [kDADiskOptionEjectUponLogout](kdadiskoptionejectuponlogout.md)
-- [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
-- [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
+### Constants
+- [kDADiskOptionEjectUponLogout](./kdadiskoptionejectuponlogout.md)
+- [kDADiskOptionMountAutomatic](./kdadiskoptionmountautomatic.md)
+- [kDADiskOptionMountAutomaticNoDefer](./kdadiskoptionmountautomaticnodefer.md)
 
 
 ---

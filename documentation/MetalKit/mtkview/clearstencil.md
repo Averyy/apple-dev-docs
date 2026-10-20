@@ -1,7 +1,8 @@
 # clearStencil
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stencil value to use to clear the stencil target when creating a render pass descriptor.
 
@@ -19,17 +20,22 @@ The stencil value to use to clear the stencil target when creating a render pass
 var clearStencil: UInt32 { get set }
 ```
 
+```objc
+@property (nonatomic) uint32_t clearStencil;
+```
+
 #### Discussion
 
-If you specified that you want a stencil texture, the view configures any render passes to use the stencil texture, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and the value of this property as the value to clear it to. The default value is `0`.
+If you specified that you want a stencil texture, the view configures any render passes to use the stencil texture, with a load action of [`MTLLoadAction.clear`](../../Metal/mtlloadaction/clear.md) and the value of this property as the value to clear it to. The default value is `0`.
 
 ## See Also
 
-- [var depthStencilPixelFormat: MTLPixelFormat](mtkview/depthstencilpixelformat.md)
-  The format used to generate the [`depthStencilTexture`](mtkview/depthstenciltexture.md) object.
-- [var depthStencilAttachmentTextureUsage: MTLTextureUsage](mtkview/depthstencilattachmenttextureusage.md)
+### Configuring the Render Target Properties
+- [var depthStencilPixelFormat: MTLPixelFormat](./depthstencilpixelformat.md)
+  The format used to generate the [`depthStencilTexture`](./depthstenciltexture.md) object.
+- [var depthStencilAttachmentTextureUsage: MTLTextureUsage](./depthstencilattachmenttextureusage.md)
   The texture usage characteristics that the view uses when creating the depth and stencil textures.
-- [var clearDepth: Double](mtkview/cleardepth.md)
+- [var clearDepth: Double](./cleardepth.md)
   The depth value to use to clear the depth target when creating a render pass descriptor.
 
 

@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var dataType: MPSDataType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSDataType dataType;
 ```
 
 

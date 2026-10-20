@@ -1,7 +1,8 @@
 # urlSession(_:task:willPerformHTTPRedirection:newRequest:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the remote server requested an HTTP redirect.
 
@@ -17,12 +18,20 @@ Tells the delegate that the remote server requested an HTTP redirect.
 ## Declaration
 
 ```swift
+optional func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping @Sendable (URLRequest?) -> Void)
+```
+
+```swift
 optional func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest) async -> URLRequest?
+```
+
+```objc
+- (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task willPerformHTTPRedirection:(NSHTTPURLResponse *) response newRequest:(NSURLRequest *) request completionHandler:(void (^)(NSURLRequest *)) completionHandler;
 ```
 
 ## Mentions
 
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files in the background](../downloading-files-in-the-background.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # SerialModelExecutor
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for performing serial storage-related tasks using an isolated model context.
 
@@ -24,19 +25,20 @@ protocol SerialModelExecutor : ModelExecutor, SerialExecutor
 ## Relationships
 
 ### Inherits From
-- [Executor](../swift/executor.md)
-- [ModelExecutor](modelexecutor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SerialExecutor](../swift/serialexecutor.md)
+- [Executor](../Swift/executor.md)
+- [ModelExecutor](./modelexecutor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SerialExecutor](../Swift/serialexecutor.md)
 ### Conforming Types
-- [DefaultSerialModelExecutor](defaultserialmodelexecutor.md)
+- [DefaultSerialModelExecutor](./defaultserialmodelexecutor.md)
 
 ## See Also
 
-- [class DefaultSerialModelExecutor](defaultserialmodelexecutor.md)
+### Model executors
+- [class DefaultSerialModelExecutor](./defaultserialmodelexecutor.md)
   An object that safely performs storage-related tasks using an isolated model context.
-- [protocol ModelExecutor](modelexecutor.md)
+- [protocol ModelExecutor](./modelexecutor.md)
   An interface for performing storage-related tasks using an isolated model context.
 
 

@@ -1,7 +1,8 @@
 # NSCollectionLayoutDecorationItem
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to add a background to a section of a collection view.
 
@@ -17,6 +18,10 @@ An object used to add a background to a section of a collection view.
 ```swift
 @MainActor
 class NSCollectionLayoutDecorationItem
+```
+
+```objc
+@interface NSCollectionLayoutDecorationItem : NSCollectionLayoutItem
 ```
 
 #### Overview
@@ -47,7 +52,7 @@ NSString* const ELEMENT_KIND_LAYOUT_HEADER = @"layout-header-element-kind";
 NSString* const ELEMENT_KIND_LAYOUT_FOOTER = @"layout-footer-element-kind";
 ```
 
-Add a background to a section by setting that section’s [`decorationItems`](nscollectionlayoutsection/decorationitems.md) property:
+Add a background to a section by setting that section’s [`decorationItems`](./nscollectionlayoutsection/decorationitems.md) property:
 
 **Swift**:
 
@@ -79,37 +84,38 @@ return layout;
 ## Topics
 
 ### Creating a background
-- [class func background(elementKind: String) -> Self](nscollectionlayoutdecorationitem/background(elementkind:).md)
+- [class func background(elementKind: String) -> Self](./nscollectionlayoutdecorationitem/background%28elementkind%29.md)
   Creates a section background with a string to identify the element kind.
 ### Getting the element kind
-- [var elementKind: String](nscollectionlayoutdecorationitem/elementkind.md)
+- [var elementKind: String](./nscollectionlayoutdecorationitem/elementkind.md)
   A string that identifies the type of decoration item.
 ### Specifying stacking order
-- [var zIndex: Int](nscollectionlayoutdecorationitem/zindex.md)
+- [var zIndex: Int](./nscollectionlayoutdecorationitem/zindex.md)
   The vertical stacking order of the decoration item in relation to other items in the section.
 
 ## Relationships
 
 ### Inherits From
-- [NSCollectionLayoutItem](nscollectionlayoutitem.md)
+- [NSCollectionLayoutItem](./nscollectionlayoutitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSCollectionLayoutAnchor](nscollectionlayoutanchor.md)
+### Appearance
+- [class NSCollectionLayoutAnchor](./nscollectionlayoutanchor.md)
   An object that defines how to attach a supplementary item to an item in a collection view.
-- [class NSCollectionLayoutSupplementaryItem](nscollectionlayoutsupplementaryitem.md)
+- [class NSCollectionLayoutSupplementaryItem](./nscollectionlayoutsupplementaryitem.md)
   An object used to add an extra visual decoration to an item in a collection view.
-- [class NSCollectionLayoutBoundarySupplementaryItem](nscollectionlayoutboundarysupplementaryitem.md)
+- [class NSCollectionLayoutBoundarySupplementaryItem](./nscollectionlayoutboundarysupplementaryitem.md)
   An object used to add headers or footers to a collection view.
 
 

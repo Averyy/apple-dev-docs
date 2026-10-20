@@ -1,18 +1,21 @@
 # SKProduct.PeriodUnit.day
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interval lasting one day.
 
 **Availability**:
-- iOS 11.2+
-- iPadOS 11.2+
-- Mac Catalyst 13.1+
-- macOS 10.13.2+
-- tvOS 11.2+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 11.2+ - Deprecated in 18.0
+- iPadOS 11.2+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.13.2+ - Deprecated in 15.0
+- tvOS 11.2+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use Product.SubscriptionPeriod.Unit.
 
 ## Declaration
 
@@ -20,13 +23,18 @@ An interval lasting one day.
 case day
 ```
 
+```c
+SKProductPeriodUnitDay
+```
+
 ## See Also
 
-- [SKProduct.PeriodUnit.month](skproduct/periodunit/month.md)
+### Period Units
+- [SKProduct.PeriodUnit.month](./month.md)
   An interval lasting one month.
-- [SKProduct.PeriodUnit.week](skproduct/periodunit/week.md)
+- [SKProduct.PeriodUnit.week](./week.md)
   An interval lasting one week.
-- [SKProduct.PeriodUnit.year](skproduct/periodunit/year.md)
+- [SKProduct.PeriodUnit.year](./year.md)
   An interval lasting one year.
 
 

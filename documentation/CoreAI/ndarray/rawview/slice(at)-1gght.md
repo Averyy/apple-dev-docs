@@ -1,7 +1,8 @@
 # slice(at:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
@@ -46,7 +47,8 @@ func sumOfRow(
 
 ## See Also
 
-- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.RawView](ndarray/rawview/slice(at:)-kd5b.md)
+### Slicing the view
+- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.RawView](./slice%28at%29-kd5b.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
 

@@ -1,7 +1,8 @@
 # CKToolBrowserModule
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The imported package that supports using the client library within a web browser.
 
@@ -10,7 +11,7 @@ The imported package that supports using the client library within a web browser
 
 ## Declaration
 
-```swift
+```
 interface CKToolBrowserModule
 ```
 
@@ -29,14 +30,15 @@ const configuration = CKToolBrowserModule.createConfiguration();
 ## Topics
 
 ### Instance Methods
-- [createConfiguration](cktoolbrowsermodule/createconfiguration.md)
+- [createConfiguration](./cktoolbrowsermodule/createconfiguration.md)
   This function creates an instance of `Configuration` with suitable values for use in web browsers.
 
 ## See Also
 
-- [Configuration](configuration.md)
+### Configuration
+- [Configuration](./configuration.md)
   An object you use to hold options for communicating with the API server.
-- [CKToolNodeJsModule](cktoolnodejsmodule.md)
+- [CKToolNodeJsModule](./cktoolnodejsmodule.md)
   The imported package that supports using the client library within a Node.js environment.
 
 

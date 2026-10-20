@@ -1,7 +1,8 @@
 # minimumBufferCount
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pool keeps at least this many buffers alive. These buffers do not participate in the age-out mechanism.
 

@@ -1,7 +1,8 @@
 # SpriteView.Options
 
 **Framework**: SpriteKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,27 +21,28 @@ struct Options
 ## Topics
 
 ### Type Properties
-- [static let allowsTransparency: SpriteView.Options](spriteview/options/allowstransparency.md)
-- [static let ignoresSiblingOrder: SpriteView.Options](spriteview/options/ignoressiblingorder.md)
-- [static let shouldCullNonVisibleNodes: SpriteView.Options](spriteview/options/shouldcullnonvisiblenodes.md)
+- [static let allowsTransparency: SpriteView.Options](./options/allowstransparency.md)
+- [static let ignoresSiblingOrder: SpriteView.Options](./options/ignoressiblingorder.md)
+- [static let shouldCullNonVisibleNodes: SpriteView.Options](./options/shouldcullnonvisiblenodes.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int)](spriteview/init(scene:transition:ispaused:preferredframespersecond:).md)
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, shouldRender: (TimeInterval) -> Bool)](spriteview/init(scene:transition:ispaused:preferredframespersecond:options:shouldrender:).md)
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, debugOptions: SpriteView.DebugOptions, shouldRender: (TimeInterval) -> Bool)](spriteview/init(scene:transition:ispaused:preferredframespersecond:options:debugoptions:shouldrender:).md)
-- [SpriteView.DebugOptions](spriteview/debugoptions.md)
+### Creating a Sprite View
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int)](./init%28scene,transition,ispaused,preferredframespersecond%29.md)
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, shouldRender: (TimeInterval) -> Bool)](./init%28scene,transition,ispaused,preferredframespersecond,options,shouldrender%29.md)
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, debugOptions: SpriteView.DebugOptions, shouldRender: (TimeInterval) -> Bool)](./init%28scene,transition,ispaused,preferredframespersecond,options,debugoptions,shouldrender%29.md)
+- [SpriteView.DebugOptions](./debugoptions.md)
 
 
 ---

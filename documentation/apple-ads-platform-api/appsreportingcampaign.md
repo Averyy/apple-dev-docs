@@ -1,7 +1,8 @@
 # AppsReportingCampaign
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Campaign metadata for apps report rows.
 
@@ -10,7 +11,7 @@ Campaign metadata for apps report rows.
 
 ## Declaration
 
-```swift
+```
 object AppsReportingCampaign
 ```
 
@@ -87,41 +88,47 @@ The `groupBy` dimensions specified in the report request determine the values of
 ## Topics
 
 ### Type Aliases
-- [type AppsReportingCampaign.AdChannelType](appsreportingcampaign/adchanneltype-data.typealias.md)
+- [type AppsReportingCampaign.AdChannelType](./appsreportingcampaign/adchanneltype-data.typealias.md)
   The advertising channel type of the campaign at report time.
-- [type AppsReportingCampaign.BillingEvent](appsreportingcampaign/billingevent-data.typealias.md)
+- [type AppsReportingCampaign.BillingEvent](./appsreportingcampaign/billingevent-data.typealias.md)
   The billing event of the campaign at report time.
-- [type AppsReportingCampaign.Status](appsreportingcampaign/status-data.typealias.md)
+- [type AppsReportingCampaign.Status](./appsreportingcampaign/status-data.typealias.md)
   Advertiser-configurable run state of the campaign at report time.
-- [type AppsReportingCampaign.SystemStatus](appsreportingcampaign/systemstatus-data.typealias.md)
+- [type AppsReportingCampaign.SystemStatus](./appsreportingcampaign/systemstatus-data.typealias.md)
   System-evaluated delivery state of the campaign at report time.
 
 ## Properties
 
 - `id` (int64): The campaign’s unique identifier.
-- `promotedObject` (PromotedObject): See [`PromotedObject`](promotedobject.md) for details.
+- `promotedObject` (PromotedObject): See [`PromotedObject`](./promotedobject.md) for details.
 - `promotedObjectType` (string): The type of the promoted object.
+
+  **Allowed Values**: `APPSTORE_APP`
 - `promotedObjectId` (string): The Adam ID of the promoted App Store app.
 - `name` (string): The campaign name as configured at report time.
 - `status` (AppsReportingCampaign.Status): Possible values: `ENABLED`, `PAUSED`.
 - `deleted` (boolean): Whether the campaign has been soft-deleted.
-- `displayStatus` (string): System-computed, rolled-up delivery state combining `status` and `systemStatus` into a single label. See [`CampaignDisplayStatus`](campaigndisplaystatus.md).
+- `displayStatus` (string): System-computed, rolled-up delivery state combining `status` and `systemStatus` into a single label. See [`CampaignDisplayStatus`](./campaigndisplaystatus.md).
+
+  **Allowed Values**: `DELETED`, `LIMITED`, `ON_HOLD`, `PAUSED`, `PROCESSING`, `RUNNING`
 - `modificationTime` (date-time): Timestamp of the campaign’s last modification (ISO 8601).
 - `creationTime` (date-time): Timestamp when the campaign was created (ISO 8601).
 - `adAccountId` (int64): The ad account this campaign belongs to.
 - `systemStatus` (AppsReportingCampaign.SystemStatus): Possible values: `RUNNING`, `NOT_RUNNING`.
-- `systemStatusReasons` ([CampaignSystemStatusReason]): System-applied reasons contributing to the current `systemStatus`. See [`CampaignSystemStatusReason`](campaignsystemstatusreason.md) for possible values.
+- `systemStatusReasons` ([CampaignSystemStatusReason]): System-applied reasons contributing to the current `systemStatus`. See [`CampaignSystemStatusReason`](./campaignsystemstatusreason.md) for possible values.
 - `billingEvent` (AppsReportingCampaign.BillingEvent): Possible values: `TAPS`, `IMPRESSIONS`.
-- `systemStatusLimitingReasons` ([string]): System-applied reasons limiting delivery below maximum potential. See [`CampaignSystemLimitedStatusReason`](campaignsystemlimitedstatusreason.md) for possible values.
-- `targeting` (AppsTargetingProjection): The `targeting` field contains an `AppsTargetingProjection` snapshot of the campaign’s supply placement and App Store countries or regions targeted at the time of the report. See [`AppsTargetingProjection`](appstargetingprojection.md) for details.
-- `dailyBudget` (ReportingMoney): See [`ReportingMoney`](reportingmoney.md) for details.
+- `systemStatusLimitingReasons` ([string]): System-applied reasons limiting delivery below maximum potential. See [`CampaignSystemLimitedStatusReason`](./campaignsystemlimitedstatusreason.md) for possible values.
+- `targeting` (AppsTargetingProjection): The `targeting` field contains an `AppsTargetingProjection` snapshot of the campaign’s supply placement and App Store countries or regions targeted at the time of the report. See [`AppsTargetingProjection`](./appstargetingprojection.md) for details.
+- `dailyBudget` (ReportingMoney): See [`ReportingMoney`](./reportingmoney.md) for details.
 - `startTime` (date-time): Campaign start time.
 - `endTime` (date-time): Campaign end time.
-- `lifetimeBudget` (ReportingMoney): Lifetime budget for the campaign. See [`ReportingMoney`](reportingmoney.md) for details.
-- `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](reportingbidstrategy.md) for details.
+- `lifetimeBudget` (ReportingMoney): Lifetime budget for the campaign. See [`ReportingMoney`](./reportingmoney.md) for details.
+- `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](./reportingbidstrategy.md) for details.
 - `adChannelType` (AppsReportingCampaign.AdChannelType): The advertising channel type for this campaign. Possible values: `SEARCH`, `DISPLAY`.
 - `countryOrRegion` (string): Country or region groupBy dimension value.
 - `deviceClass` (string): Device class groupBy dimension value.
+
+  **Allowed Values**: `IPHONE`, `IPAD`
 - `gender` (string): Gender groupBy dimension value.
 - `ageRange` (string): Age range groupBy dimension value.
 - `locality` (string): Locality groupBy dimension value.
@@ -130,35 +137,35 @@ The `groupBy` dimensions specified in the report request determine the values of
 
 ## See Also
 
-- [object AppsReportingRequest](appsreportingrequest.md)
+- [object AppsReportingRequest](./appsreportingrequest.md)
   Request body for apps reporting queries.
-- [object AppsReportingAdGroup](appsreportingadgroup.md)
+- [object AppsReportingAdGroup](./appsreportingadgroup.md)
   Ad group metadata for apps report rows.
-- [object AppsReportingAd](appsreportingad.md)
+- [object AppsReportingAd](./appsreportingad.md)
   Ad metadata for apps report rows.
-- [object AppsReportingCreative](appsreportingcreative.md)
+- [object AppsReportingCreative](./appsreportingcreative.md)
   Creative metadata for apps ads.
-- [object AppsCampaignReportResponse](appscampaignreportresponse.md)
+- [object AppsCampaignReportResponse](./appscampaignreportresponse.md)
   The top-level response envelope for apps campaign-level reports.
-- [object AppsCampaignReportRow](appscampaignreportrow.md)
+- [object AppsCampaignReportRow](./appscampaignreportrow.md)
   A single row in an apps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object AppsCampaignReportSummary](appscampaignreportsummary.md)
+- [object AppsCampaignReportSummary](./appscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps campaign report.
-- [object AppsCampaignResultContainer](appscampaignresultcontainer.md)
+- [object AppsCampaignResultContainer](./appscampaignresultcontainer.md)
   Wraps the array of Apps campaign report rows along with a grand-total summary.
-- [object AppsAdGroupReportResponse](appsadgroupreportresponse.md)
+- [object AppsAdGroupReportResponse](./appsadgroupreportresponse.md)
   The top-level response envelope for apps ad group reports.
-- [object AppsAdGroupReportRow](appsadgroupreportrow.md)
+- [object AppsAdGroupReportRow](./appsadgroupreportrow.md)
   A single row in an Apps ad group report, containing ad group metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdGroupReportSummary](appsadgroupreportsummary.md)
+- [object AppsAdGroupReportSummary](./appsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad group report.
-- [object AppsAdGroupResultContainer](appsadgroupresultcontainer.md)
+- [object AppsAdGroupResultContainer](./appsadgroupresultcontainer.md)
   Wraps the array of Apps ad group report rows along with a grand-total summary.
-- [object AppsAdReportResponse](appsadreportresponse.md)
+- [object AppsAdReportResponse](./appsadreportresponse.md)
   The top-level response envelope for apps ad-level reports.
-- [object AppsAdReportRow](appsadreportrow.md)
+- [object AppsAdReportRow](./appsadreportrow.md)
   A single row in an Apps ad-level report, containing ad metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdReportSummary](appsadreportsummary.md)
+- [object AppsAdReportSummary](./appsadreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad-level report.
 
 

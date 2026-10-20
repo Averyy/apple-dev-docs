@@ -1,7 +1,8 @@
 # NetworkListener.ServiceRegistrationChange.remove(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event when a Bonjour service has been unregistered, with the endpoint being removed
 

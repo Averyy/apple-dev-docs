@@ -1,7 +1,8 @@
 # enableAction(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func enableAction(with params: MTRActionsClusterEnableActionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enableAction(with params: MTRActionsClusterEnableActionParams) async throws
+```
+
+```objc
+- (void) enableActionWithParams:(MTRActionsClusterEnableActionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

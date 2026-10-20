@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kRangeSupportsCompositeSyncBit](1644567-anonymous/krangesupportscompositesyncbit.md)
-- [kRangeSupportsCompositeSyncMask](1644567-anonymous/krangesupportscompositesyncmask.md)
-- [kRangeSupportsSeperateSyncsBit](1644567-anonymous/krangesupportsseperatesyncsbit.md)
-- [kRangeSupportsSeperateSyncsMask](1644567-anonymous/krangesupportsseperatesyncsmask.md)
-- [kRangeSupportsSyncOnGreenBit](1644567-anonymous/krangesupportssyncongreenbit.md)
-- [kRangeSupportsSyncOnGreenMask](1644567-anonymous/krangesupportssyncongreenmask.md)
-- [kRangeSupportsVSyncSerrationBit](1644567-anonymous/krangesupportsvsyncserrationbit.md)
-- [kRangeSupportsVSyncSerrationMask](1644567-anonymous/krangesupportsvsyncserrationmask.md)
+- [kRangeSupportsCompositeSyncBit](./api-1644567-anonymous/krangesupportscompositesyncbit.md)
+- [kRangeSupportsCompositeSyncMask](./api-1644567-anonymous/krangesupportscompositesyncmask.md)
+- [kRangeSupportsSeperateSyncsBit](./api-1644567-anonymous/krangesupportsseperatesyncsbit.md)
+- [kRangeSupportsSeperateSyncsMask](./api-1644567-anonymous/krangesupportsseperatesyncsmask.md)
+- [kRangeSupportsSyncOnGreenBit](./api-1644567-anonymous/krangesupportssyncongreenbit.md)
+- [kRangeSupportsSyncOnGreenMask](./api-1644567-anonymous/krangesupportssyncongreenmask.md)
+- [kRangeSupportsVSyncSerrationBit](./api-1644567-anonymous/krangesupportsvsyncserrationbit.md)
+- [kRangeSupportsVSyncSerrationMask](./api-1644567-anonymous/krangesupportsvsyncserrationmask.md)
 
 
 ---

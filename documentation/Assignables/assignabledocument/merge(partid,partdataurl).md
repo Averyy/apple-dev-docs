@@ -1,7 +1,8 @@
 # merge(partID:partDataURL:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Merges an individual part’s data into the specified part of this object.
 
@@ -9,7 +10,9 @@ Merges an individual part’s data into the specified part of this object.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Use merge(partData:into:)
 
 ## Declaration
 
@@ -25,11 +28,12 @@ mutating func merge(partID: AssignableDocument.PartID, partDataURL: URL) throws 
 
 ## See Also
 
-- [func merge(AssignableDocument) async throws -> Bool](assignabledocument/merge(_:).md)
+### Merging the parts
+- [func merge(AssignableDocument) async throws -> Bool](./merge%28_%29.md)
   Merge another object of this type into this object.
-- [func merge(partData: MergeablePartData, into: AssignableDocument.PartID) async throws -> Bool](assignabledocument/merge(partdata:into:).md)
+- [func merge(partData: MergeablePartData, into: AssignableDocument.PartID) async throws -> Bool](./merge%28partdata,into%29.md)
   Merges an individual part into the specified part of this object.
-- [func merge(other: AssignableDocument) throws -> Bool](assignabledocument/merge(other:).md)
+- [func merge(other: AssignableDocument) throws -> Bool](./merge%28other%29.md)
   Merge another object of this type into this object.
 
 

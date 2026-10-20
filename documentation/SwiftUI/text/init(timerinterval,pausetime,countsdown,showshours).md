@@ -1,7 +1,8 @@
 # init(timerInterval:pauseTime:countsDown:showsHours:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that displays a timer counting within the provided interval.
 
@@ -30,7 +31,7 @@ Text(
 
 The example above shows a text that displays a timer counting down from “12:00” and will pause when reaching “10:00”.
 
-> **Note**: In a widget, this `Text` becomes horizontally flexible and expands to fill the available width, because its content keeps changing as the timer counts. Widgets can’t perform layout again after the system archives them, so the text can’t measure itself against its eventual content without risking clipping. If you want to constrain the width, apply a [`frame(width:height:alignment:)`](view/frame(width:height:alignment:).md) modifier, and use [`multilineTextAlignment(_:)`](view/multilinetextalignment(_:).md) to align the text within that frame.
+> **Note**: In a widget, this `Text` becomes horizontally flexible and expands to fill the available width, because its content keeps changing as the timer counts. Widgets can’t perform layout again after the system archives them, so the text can’t measure itself against its eventual content without risking clipping. If you want to constrain the width, apply a [`frame(width:height:alignment:)`](../view/frame%28width,height,alignment%29.md) modifier, and use [`multilineTextAlignment(_:)`](../view/multilinetextalignment%28_%29.md) to align the text within that frame.
 
 ## Parameters
 
@@ -41,17 +42,18 @@ The example above shows a text that displays a timer counting down from “12:00
 
 ## See Also
 
-- [init(LocalizedStringKey, tableName: String?, bundle: Bundle?, comment: StaticString?)](text/init(_:tablename:bundle:comment:).md)
+### Creating a text view
+- [init(LocalizedStringKey, tableName: String?, bundle: Bundle?, comment: StaticString?)](./init%28_,tablename,bundle,comment%29.md)
   Creates a text view that displays localized content identified by a key.
-- [init(_:)](text/init(_:).md)
+- [init(_:)](./init%28_%29.md)
   Creates a text view that displays styled attributed content.
-- [init(verbatim: String)](text/init(verbatim:).md)
+- [init(verbatim: String)](./init%28verbatim%29.md)
   Creates a text view that displays a string literal without localization.
-- [init(Date, style: Text.DateStyle)](text/init(_:style:).md)
+- [init(Date, style: Text.DateStyle)](./init%28_,style%29.md)
   Creates an instance that displays localized dates and times using a specific style.
-- [init(_:format:)](text/init(_:format:).md)
+- [init(_:format:)](./init%28_,format%29.md)
   Creates a text view that displays the formatted representation of a nonstring type supported by a corresponding format style.
-- [init(_:formatter:)](text/init(_:formatter:).md)
+- [init(_:formatter:)](./init%28_,formatter%29.md)
   Creates a text view that displays the formatted representation of a Foundation object.
 
 

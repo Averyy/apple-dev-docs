@@ -1,15 +1,16 @@
 # AUReverbRoomType.reverbRoomType_LargeRoom
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,20 +18,25 @@
 case reverbRoomType_LargeRoom
 ```
 
+```c
+kReverbRoomType_LargeRoom
+```
+
 ## See Also
 
-- [AUReverbRoomType.reverbRoomType_Cathedral](aureverbroomtype/reverbroomtype_cathedral.md)
-- [AUReverbRoomType.reverbRoomType_LargeChamber](aureverbroomtype/reverbroomtype_largechamber.md)
-- [AUReverbRoomType.reverbRoomType_LargeHall](aureverbroomtype/reverbroomtype_largehall.md)
-- [AUReverbRoomType.reverbRoomType_LargeHall2](aureverbroomtype/reverbroomtype_largehall2.md)
-- [AUReverbRoomType.reverbRoomType_LargeRoom2](aureverbroomtype/reverbroomtype_largeroom2.md)
-- [AUReverbRoomType.reverbRoomType_MediumChamber](aureverbroomtype/reverbroomtype_mediumchamber.md)
-- [AUReverbRoomType.reverbRoomType_MediumHall](aureverbroomtype/reverbroomtype_mediumhall.md)
-- [AUReverbRoomType.reverbRoomType_MediumHall2](aureverbroomtype/reverbroomtype_mediumhall2.md)
-- [AUReverbRoomType.reverbRoomType_MediumHall3](aureverbroomtype/reverbroomtype_mediumhall3.md)
-- [AUReverbRoomType.reverbRoomType_MediumRoom](aureverbroomtype/reverbroomtype_mediumroom.md)
-- [AUReverbRoomType.reverbRoomType_Plate](aureverbroomtype/reverbroomtype_plate.md)
-- [AUReverbRoomType.reverbRoomType_SmallRoom](aureverbroomtype/reverbroomtype_smallroom.md)
+### Constants
+- [AUReverbRoomType.reverbRoomType_Cathedral](./reverbroomtype_cathedral.md)
+- [AUReverbRoomType.reverbRoomType_LargeChamber](./reverbroomtype_largechamber.md)
+- [AUReverbRoomType.reverbRoomType_LargeHall](./reverbroomtype_largehall.md)
+- [AUReverbRoomType.reverbRoomType_LargeHall2](./reverbroomtype_largehall2.md)
+- [AUReverbRoomType.reverbRoomType_LargeRoom2](./reverbroomtype_largeroom2.md)
+- [AUReverbRoomType.reverbRoomType_MediumChamber](./reverbroomtype_mediumchamber.md)
+- [AUReverbRoomType.reverbRoomType_MediumHall](./reverbroomtype_mediumhall.md)
+- [AUReverbRoomType.reverbRoomType_MediumHall2](./reverbroomtype_mediumhall2.md)
+- [AUReverbRoomType.reverbRoomType_MediumHall3](./reverbroomtype_mediumhall3.md)
+- [AUReverbRoomType.reverbRoomType_MediumRoom](./reverbroomtype_mediumroom.md)
+- [AUReverbRoomType.reverbRoomType_Plate](./reverbroomtype_plate.md)
+- [AUReverbRoomType.reverbRoomType_SmallRoom](./reverbroomtype_smallroom.md)
 
 
 ---

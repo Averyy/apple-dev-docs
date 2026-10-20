@@ -1,7 +1,8 @@
 # WidgetFamily.systemSmall
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A small widget.
 
@@ -20,10 +21,10 @@ case systemSmall
 
 ## Mentions
 
-- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
-- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+- [Developing a WidgetKit strategy](../developing-a-widgetkit-strategy.md)
+- [Adding interactivity to widgets and Live Activities](../adding-interactivity-to-widgets-and-live-activities.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
 #### Discussion
 
@@ -31,13 +32,14 @@ The small system widget can appear on the Home Screen or in the Today View in iO
 
 ## See Also
 
-- [WidgetFamily.systemMedium](widgetfamily/systemmedium.md)
+### Accessing system families
+- [WidgetFamily.systemMedium](./systemmedium.md)
   A medium-sized widget.
-- [WidgetFamily.systemLarge](widgetfamily/systemlarge.md)
+- [WidgetFamily.systemLarge](./systemlarge.md)
   A large widget.
-- [WidgetFamily.systemExtraLarge](widgetfamily/systemextralarge.md)
+- [WidgetFamily.systemExtraLarge](./systemextralarge.md)
   An extra-large widget.
-- [WidgetFamily.systemExtraLargePortrait](widgetfamily/systemextralargeportrait.md)
+- [WidgetFamily.systemExtraLargePortrait](./systemextralargeportrait.md)
   An extra-large widget that uses a portrait orientation.
 
 

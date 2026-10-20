@@ -1,18 +1,21 @@
 # flags
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bit field for flags that specify additional behavior, such as scaling gradient by frequency.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 18.0
+- iPadOS 15.0+ - Deprecated in 18.0
+- Mac Catalyst 15.0+ - Deprecated in 18.0
+- macOS 12.0+ - Deprecated in 15.0
+- tvOS 15.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 8.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,21 +23,26 @@ A bit field for flags that specify additional behavior, such as scaling gradient
 var flags: BNNSEmbeddingFlags
 ```
 
+```c
+BNNSEmbeddingFlags flags;
+```
+
 ## See Also
 
-- [struct BNNSEmbeddingFlags](bnnsembeddingflags.md)
+### Instance Properties
+- [struct BNNSEmbeddingFlags](../bnnsembeddingflags.md)
   Flags that control behavior of embedding layers.
-- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparametersembedding/i_desc.md)
+- [var i_desc: BNNSNDArrayDescriptor](./i_desc.md)
   The signed or unsigned integer descriptor of the input.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersembedding/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./o_desc.md)
   The descriptor of the output.
-- [var dictionary: BNNSNDArrayDescriptor](bnnslayerparametersembedding/dictionary.md)
+- [var dictionary: BNNSNDArrayDescriptor](./dictionary.md)
   The descriptor of the dictionary.
-- [var padding_idx: Int](bnnslayerparametersembedding/padding_idx.md)
+- [var padding_idx: Int](./padding_idx.md)
   The padding index.
-- [var max_norm: Float](bnnslayerparametersembedding/max_norm.md)
+- [var max_norm: Float](./max_norm.md)
   The maximum norm.
-- [var norm_type: Float](bnnslayerparametersembedding/norm_type.md)
+- [var norm_type: Float](./norm_type.md)
   The norm type.
 
 

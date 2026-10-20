@@ -1,7 +1,8 @@
 # BorderedTextFieldStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text field style with a system-defined border.
 
@@ -22,25 +23,26 @@ struct BorderedTextFieldStyle
 
 #### Overview
 
-The shape of the border is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
+The shape of the border is determined by the [`textInputBorderShape(_:)`](./view/textinputbordershape%28_%29.md) modifier.
 
-You can also use [`bordered`](textfieldstyle/bordered.md) to construct this style.
+You can also use [`bordered`](./textfieldstyle/bordered.md) to construct this style.
 
 ## Topics
 
 ### Initializers
-- [init()](borderedtextfieldstyle/init.md)
+- [init()](./borderedtextfieldstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [TextFieldStyle](textfieldstyle.md)
+- [TextFieldStyle](./textfieldstyle.md)
 
 ## See Also
 
-- [struct DefaultTextFieldStyle](defaulttextfieldstyle.md)
+### Supporting types
+- [struct DefaultTextFieldStyle](./defaulttextfieldstyle.md)
   The default text field style, based on the text field’s context.
-- [struct PlainTextFieldStyle](plaintextfieldstyle.md)
+- [struct PlainTextFieldStyle](./plaintextfieldstyle.md)
   A text field style with no decoration.
 
 

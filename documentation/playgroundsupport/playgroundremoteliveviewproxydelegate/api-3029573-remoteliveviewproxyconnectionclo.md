@@ -2,6 +2,7 @@
 
 **Framework**: Playground Support  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that it has disconnected from the always-on live view.

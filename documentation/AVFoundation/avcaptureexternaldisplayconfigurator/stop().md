@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces the external display configurator to asynchronously stop configuring the external display.
 
@@ -18,9 +19,13 @@ Forces the external display configurator to asynchronously stop configuring the 
 func stop()
 ```
 
+```objc
+- (void) stop;
+```
+
 #### Discussion
 
-Call [`stop()`](avcaptureexternaldisplayconfigurator/stop().md) to force the [`AVCaptureExternalDisplayConfigurator`](avcaptureexternaldisplayconfigurator.md) to asynchronously stop configuring the external display. Once stopped, the [`isActive`](avcaptureexternaldisplayconfigurator/isactive.md) property changes to `false` and the [`activeExternalDisplayFrameRate`](avcaptureexternaldisplayconfigurator/activeexternaldisplayframerate.md) becomes 0.
+Call [`stop()`](./stop%28%29.md) to force the [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) to asynchronously stop configuring the external display. Once stopped, the [`isActive`](./isactive.md) property changes to `false` and the [`activeExternalDisplayFrameRate`](./activeexternaldisplayframerate.md) becomes 0.
 
 
 ---

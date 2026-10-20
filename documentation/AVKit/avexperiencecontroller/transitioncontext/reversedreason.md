@@ -1,7 +1,8 @@
 # AVExperienceController.TransitionContext.ReversedReason
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - visionOS 2.0+
@@ -16,30 +17,31 @@ enum ReversedReason
 ## Topics
 
 ### Reasons
-- [AVExperienceController.TransitionContext.ReversedReason.invalidConfiguration](avexperiencecontroller/transitioncontext/reversedreason/invalidconfiguration.md)
+- [AVExperienceController.TransitionContext.ReversedReason.invalidConfiguration](./reversedreason/invalidconfiguration.md)
   A transition could not be completed because some required configuration was unavailable.
-- [AVExperienceController.TransitionContext.ReversedReason.invalidExperience](avexperiencecontroller/transitioncontext/reversedreason/invalidexperience.md)
+- [AVExperienceController.TransitionContext.ReversedReason.invalidExperience](./reversedreason/invalidexperience.md)
   A transition was attempted with an experience that cannot be transitioned to.
-- [AVExperienceController.TransitionContext.ReversedReason.transitionCancelled](avexperiencecontroller/transitioncontext/reversedreason/transitioncancelled.md)
+- [AVExperienceController.TransitionContext.ReversedReason.transitionCancelled](./reversedreason/transitioncancelled.md)
   A transition in progress has been cancelled.
-- [AVExperienceController.TransitionContext.ReversedReason.transitionFailed](avexperiencecontroller/transitioncontext/reversedreason/transitionfailed.md)
+- [AVExperienceController.TransitionContext.ReversedReason.transitionFailed](./reversedreason/transitionfailed.md)
   A transition has failed.
-- [AVExperienceController.TransitionContext.ReversedReason.transitionInProgress](avexperiencecontroller/transitioncontext/reversedreason/transitioninprogress.md)
+- [AVExperienceController.TransitionContext.ReversedReason.transitionInProgress](./reversedreason/transitioninprogress.md)
   A transition was attempted while another transition was in progress.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.enum.md)
+### Understanding transition results
+- [AVExperienceController.TransitionContext.Status](./status-swift.enum.md)
   Describes the status of a transition.
-- [AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transitioncontext/transitionresult.md)
+- [AVExperienceController.TransitionContext.TransitionResult](./transitionresult.md)
   Describes the result of a transition.
 
 

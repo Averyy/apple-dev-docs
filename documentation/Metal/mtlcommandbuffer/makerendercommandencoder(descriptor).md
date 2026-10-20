@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a render command encoder from a descriptor.
@@ -11,7 +12,7 @@ Creates a render command encoder from a descriptor.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,17 @@ Creates a render command encoder from a descriptor.
 func makeRenderCommandEncoder(descriptor renderPassDescriptor: MTLRenderPassDescriptor) -> (any MTLRenderCommandEncoder)?
 ```
 
+```objc
+- (id<MTLRenderCommandEncoder>) renderCommandEncoderWithDescriptor:(MTLRenderPassDescriptor *) renderPassDescriptor;
+```
+
 #### Discussion
 
-Use an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance’s methods to set up a single graphics-rendering pass.
+Use an [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) instance’s methods to set up a single graphics-rendering pass.
 
 ## Parameters
 
-- `renderPassDescriptor`: An [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance that configures the [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) the method returns.
+- `renderPassDescriptor`: An [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) instance that configures the [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) the method returns.
 
 
 ---

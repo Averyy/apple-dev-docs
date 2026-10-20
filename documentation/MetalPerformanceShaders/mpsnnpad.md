@@ -1,7 +1,8 @@
 # MPSNNPad
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.1+
@@ -17,32 +18,36 @@
 class MPSNNPad
 ```
 
+```objc
+@interface MPSNNPad : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnpad/init(coder:device:).md)
-- [convenience init(device: any MTLDevice)](mpsnnpad/init(device:).md)
-- [convenience init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate)](mpsnnpad/init(device:paddingsizebefore:paddingsizeafter:).md)
-- [init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, fillValueArray: Data?)](mpsnnpad/init(device:paddingsizebefore:paddingsizeafter:fillvaluearray:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnnpad/init%28coder,device%29.md)
+- [convenience init(device: any MTLDevice)](./mpsnnpad/init%28device%29.md)
+- [convenience init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate)](./mpsnnpad/init%28device,paddingsizebefore,paddingsizeafter%29.md)
+- [init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, fillValueArray: Data?)](./mpsnnpad/init%28device,paddingsizebefore,paddingsizeafter,fillvaluearray%29.md)
 ### Instance Properties
-- [var fillValue: Float](mpsnnpad/fillvalue.md)
-- [var paddingSizeAfter: MPSImageCoordinate](mpsnnpad/paddingsizeafter.md)
-- [var paddingSizeBefore: MPSImageCoordinate](mpsnnpad/paddingsizebefore.md)
+- [var fillValue: Float](./mpsnnpad/fillvalue.md)
+- [var paddingSizeAfter: MPSImageCoordinate](./mpsnnpad/paddingsizeafter.md)
+- [var paddingSizeBefore: MPSImageCoordinate](./mpsnnpad/paddingsizebefore.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

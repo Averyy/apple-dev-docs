@@ -1,7 +1,8 @@
 # childIndex(forItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the child index of the specified item within its parent.
 
@@ -14,17 +15,22 @@ Returns the child index of the specified item within its parent.
 func childIndex(forItem item: Any) -> Int
 ```
 
+```objc
+- (NSInteger) childIndexForItem:(id) item;
+```
+
 #### Discussion
 
 The performance of this method is O(1) at best and O(n) at worst.
 
 ## See Also
 
-- [func parent(forItem: Any?) -> Any?](nsoutlineview/parent(foritem:).md)
+### Getting Related Items
+- [func parent(forItem: Any?) -> Any?](./parent%28foritem%29.md)
   Returns the parent for a given item.
-- [func child(Int, ofItem: Any?) -> Any?](nsoutlineview/child(_:ofitem:).md)
+- [func child(Int, ofItem: Any?) -> Any?](./child%28_,ofitem%29.md)
   Returns the specified child of an item.
-- [func numberOfChildren(ofItem: Any?) -> Int](nsoutlineview/numberofchildren(ofitem:).md)
+- [func numberOfChildren(ofItem: Any?) -> Int](./numberofchildren%28ofitem%29.md)
   Returns the number of children for the specified parent item.
 
 

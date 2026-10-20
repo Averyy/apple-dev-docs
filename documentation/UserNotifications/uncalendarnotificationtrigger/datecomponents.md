@@ -1,7 +1,8 @@
 # dateComponents
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date components to construct this object.
 
@@ -20,13 +21,26 @@ The date components to construct this object.
 var dateComponents: DateComponents { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSDateComponents * dateComponents;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSDateComponents * dateComponents;
+```
+
 #### Discussion
 
 Use this property to review the date components associated with this trigger.
 
 ## See Also
 
-- [func nextTriggerDate() -> Date?](uncalendarnotificationtrigger/nexttriggerdate.md)
+### Getting the Trigger Information
+- [func nextTriggerDate() -> Date?](./nexttriggerdate%28%29.md)
   The next date at which the trigger conditions are met.
 
 

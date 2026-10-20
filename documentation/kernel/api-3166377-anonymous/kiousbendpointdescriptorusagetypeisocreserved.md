@@ -1,14 +1,15 @@
 # kIOUSBEndpointDescriptorUsageTypeIsocReserved
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointDescriptorUsageTypeIsocReserved = (3 << IOUSBBitRangePhase(4, 5))
 ```
 

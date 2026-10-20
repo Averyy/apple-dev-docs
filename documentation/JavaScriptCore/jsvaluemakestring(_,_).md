@@ -1,7 +1,8 @@
 # JSValueMakeString(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript value of the string type.
 
@@ -19,26 +20,31 @@ Creates a JavaScript value of the string type.
 func JSValueMakeString(_ ctx: JSContextRef!, _ string: JSStringRef!) -> JSValueRef!
 ```
 
+```c
+JSValueRefJSValueMakeString(JSContextRef ctx, JSStringRef string);
+```
+
 #### Return Value
 
-A [`JSValueRef`](jsvalueref.md) of the string type that represents the value of `string`.
+A [`JSValueRef`](./jsvalueref.md) of the string type that represents the value of `string`.
 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `string`: The [`JSStringRef`](jsstringref.md) to assign to the newly created [`JSValueRef`](jsvalueref.md). The newly created [`JSValueRef`](jsvalueref.md) retains `string`, and releases it upon garbage collection.
+- `string`: The [`JSStringRef`](./jsstringref.md) to assign to the newly created [`JSValueRef`](./jsvalueref.md). The newly created [`JSValueRef`](./jsvalueref.md) retains `string`, and releases it upon garbage collection.
 
 ## See Also
 
-- [func JSValueMakeUndefined(JSContextRef!) -> JSValueRef!](jsvaluemakeundefined(_:).md)
+### Creating Values
+- [func JSValueMakeUndefined(JSContextRef!) -> JSValueRef!](./jsvaluemakeundefined%28_%29.md)
   Creates a JavaScript value of the undefined type.
-- [func JSValueMakeNull(JSContextRef!) -> JSValueRef!](jsvaluemakenull(_:).md)
+- [func JSValueMakeNull(JSContextRef!) -> JSValueRef!](./jsvaluemakenull%28_%29.md)
   Creates a JavaScript value of the null type.
-- [func JSValueMakeBoolean(JSContextRef!, Bool) -> JSValueRef!](jsvaluemakeboolean(_:_:).md)
+- [func JSValueMakeBoolean(JSContextRef!, Bool) -> JSValueRef!](./jsvaluemakeboolean%28_,_%29.md)
   Creates a JavaScript Boolean value.
-- [func JSValueMakeNumber(JSContextRef!, Double) -> JSValueRef!](jsvaluemakenumber(_:_:).md)
+- [func JSValueMakeNumber(JSContextRef!, Double) -> JSValueRef!](./jsvaluemakenumber%28_,_%29.md)
   Creates a JavaScript value of the number type.
-- [func JSValueMakeSymbol(JSContextRef!, JSStringRef!) -> JSValueRef!](jsvaluemakesymbol(_:_:).md)
+- [func JSValueMakeSymbol(JSContextRef!, JSStringRef!) -> JSValueRef!](./jsvaluemakesymbol%28_,_%29.md)
   Creates a JavaScript value of the symbol type.
 
 

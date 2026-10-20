@@ -1,7 +1,8 @@
 # cameraDevice
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current camera device.
 
@@ -12,6 +13,10 @@ The current camera device.
 
 ```swift
 unowned(unsafe) var cameraDevice: ICCameraDevice! { get set }
+```
+
+```objc
+@property (assign) ICCameraDevice * cameraDevice;
 ```
 
 

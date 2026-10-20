@@ -1,7 +1,8 @@
 # TipKitError
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A localized tip kit error.
 
@@ -23,27 +24,28 @@ struct TipKitError
 ## Topics
 
 ### Instance Properties
-- [var description: String](tipkiterror/description.md)
+- [var description: String](./tipkiterror/description.md)
 ### Type Properties
-- [static let invalidPredicateValueType: TipKitError](tipkiterror/invalidpredicatevaluetype.md)
-- [static let missingGroupContainerEntitlements: TipKitError](tipkiterror/missinggroupcontainerentitlements.md)
-- [static let tipsDatastoreAlreadyConfigured: TipKitError](tipkiterror/tipsdatastorealreadyconfigured.md)
+- [static let invalidPredicateValueType: TipKitError](./tipkiterror/invalidpredicatevaluetype.md)
+- [static let missingGroupContainerEntitlements: TipKitError](./tipkiterror/missinggroupcontainerentitlements.md)
+- [static let tipsDatastoreAlreadyConfigured: TipKitError](./tipkiterror/tipsdatastorealreadyconfigured.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnyTip](anytip.md)
+### Common types
+- [struct AnyTip](./anytip.md)
   A type-erased tip value.
-- [protocol TipOption](tipoption.md)
+- [protocol TipOption](./tipoption.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
 
 

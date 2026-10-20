@@ -1,7 +1,8 @@
 # totalCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total units of work.
 

@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var subtitle: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * subtitle;
 ```
 
 #### Discussion

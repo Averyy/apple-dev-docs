@@ -1,7 +1,8 @@
 # ConstraintError.duplicateKey
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Two constraints of the same type were found in the same logical group.
 

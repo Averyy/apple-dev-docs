@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The content types this document can save or export to.
@@ -21,17 +22,18 @@ static var writableContentTypes: [UTType] { get }
 
 #### Discussion
 
-The save panel uses this list to offer format options. When a document also conforms to [`ReadableDocument`](readabledocument.md), the default implementation returns [`readableContentTypes`](readabledocument/readablecontenttypes.md).
+The save panel uses this list to offer format options. When a document also conforms to [`ReadableDocument`](../readabledocument.md), the default implementation returns [`readableContentTypes`](../readabledocument/readablecontenttypes.md).
 
 ## See Also
 
-- [WritableDocument.WriteConfiguration](writabledocument/writeconfiguration.md)
+### Writing a document
+- [WritableDocument.WriteConfiguration](./writeconfiguration.md)
   The configuration for writing document contents.
-- [associatedtype Writer : DocumentWriter](writabledocument/writer.md)
+- [associatedtype Writer : DocumentWriter](./writer.md)
   A type that implements writing to disk.
-- [func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer](writabledocument/writer(configuration:).md)
+- [func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer](./writer%28configuration%29.md)
   Creates a writer to save this document to disk.
-- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](writabledocument/snapshot(contenttype:).md)
+- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](./snapshot%28contenttype%29.md)
   Captures the document’s current state for saving.
 
 

@@ -1,7 +1,8 @@
 # AVAnyAsyncProperty
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for asynchronous properties.
 
@@ -27,19 +28,20 @@ This class defines the base class for property identifiers.
 ## Relationships
 
 ### Inherited By
-- [AVPartialAsyncProperty](avpartialasyncproperty.md)
+- [AVPartialAsyncProperty](./avpartialasyncproperty.md)
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
+### Property loading
+- [protocol AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
   A protocol that defines the interface to load media data asynchronously.
-- [class AVAsyncProperty](avasyncproperty.md)
+- [class AVAsyncProperty](./avasyncproperty.md)
   An asynchronous property that constrains its type and value.
-- [class AVPartialAsyncProperty](avpartialasyncproperty.md)
+- [class AVPartialAsyncProperty](./avpartialasyncproperty.md)
   An asynchronous property that constrains its type.
 
 

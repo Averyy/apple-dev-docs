@@ -1,12 +1,13 @@
 # isPropertySettable(address:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries an AudioHardwareObject about whether or not the given property can be set using setPropertyValue.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

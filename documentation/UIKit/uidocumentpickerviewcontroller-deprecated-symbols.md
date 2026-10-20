@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,21 +12,21 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated initializers
-- [init(URL: URL, inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(url:inmode:).md)
-- [init(URLs: [URL], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:inmode:).md)
-- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(documenttypes:inmode:).md)
+- [init(URL: URL, inMode: UIDocumentPickerMode)](./uidocumentpickerviewcontroller/init%28url,inmode%29.md)
+- [init(URLs: [URL], inMode: UIDocumentPickerMode)](./uidocumentpickerviewcontroller/init%28urls,inmode%29.md)
+- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](./uidocumentpickerviewcontroller/init%28documenttypes,inmode%29.md)
 ### Deprecated methods
-- [init(documentTypes: [String], in: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(documenttypes:in:).md)
+- [init(documentTypes: [String], in: UIDocumentPickerMode)](./uidocumentpickerviewcontroller/init%28documenttypes,in%29.md)
   Creates and returns a document picker that can open or copy the specified file types.
-- [init(url: URL, in: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(url:in:).md)
+- [init(url: URL, in: UIDocumentPickerMode)](./uidocumentpickerviewcontroller/init%28url,in%29.md)
   Initializes and returns a document picker that can export or copy the specified document.
-- [init(urls: [URL], in: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:in:).md)
+- [init(urls: [URL], in: UIDocumentPickerMode)](./uidocumentpickerviewcontroller/init%28urls,in%29.md)
   Creates and returns a document picker that can export or move the specified documents.
 ### Deprecated properties
-- [var documentPickerMode: UIDocumentPickerMode](uidocumentpickerviewcontroller/documentpickermode.md)
+- [var documentPickerMode: UIDocumentPickerMode](./uidocumentpickerviewcontroller/documentpickermode.md)
   The type of file transfer operation that the document picker uses.
 ### Deprecated enumerations
-- [enum UIDocumentPickerMode](uidocumentpickermode.md)
+- [enum UIDocumentPickerMode](./uidocumentpickermode.md)
   Modes that define the type of file transfer operation that the document picker uses.
 
 

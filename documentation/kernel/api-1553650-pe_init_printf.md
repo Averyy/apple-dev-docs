@@ -1,30 +1,32 @@
 # PE_init_printf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void PE_init_printf(boolean_t vm_initialized);
 ```
 
 ## See Also
 
-- [PE_init_cpu](3081668-pe_init_cpu.md)
-- [PE_init_iokit](1553713-pe_init_iokit.md)
-- [PE_init_panicheader](2915275-pe_init_panicheader.md)
-- [PE_init_platform](1553616-pe_init_platform.md)
-- [PE_init_taproot](1553711-pe_init_taproot.md)
-- [PE_boot_args](1553674-pe_boot_args.md)
-- [PE_parse_boot_argn](1553680-pe_parse_boot_argn.md)
-- [PE_initialize_console](1553621-pe_initialize_console.md)
-- [PE_install_interrupt_handler](1553624-pe_install_interrupt_handler.md)
-- [PE_create_console](1553641-pe_create_console.md)
-- [PE_current_console](1553642-pe_current_console.md)
+### Setup and Initialization
+- [PE_init_cpu](./api-3081668-pe_init_cpu.md)
+- [PE_init_iokit](./api-1553713-pe_init_iokit.md)
+- [PE_init_panicheader](./api-2915275-pe_init_panicheader.md)
+- [PE_init_platform](./api-1553616-pe_init_platform.md)
+- [PE_init_taproot](./api-1553711-pe_init_taproot.md)
+- [PE_boot_args](./api-1553674-pe_boot_args.md)
+- [PE_parse_boot_argn](./api-1553680-pe_parse_boot_argn.md)
+- [PE_initialize_console](./api-1553621-pe_initialize_console.md)
+- [PE_install_interrupt_handler](./api-1553624-pe_install_interrupt_handler.md)
+- [PE_create_console](./api-1553641-pe_create_console.md)
+- [PE_current_console](./api-1553642-pe_current_console.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # hideApp(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func hideApp(with params: MTRApplicationLauncherClusterHideAppParams?, completion: @escaping @Sendable (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func hideApp(with params: MTRApplicationLauncherClusterHideAppParams?) async throws -> MTRApplicationLauncherClusterLauncherResponseParams
+```
+
+```objc
+- (void) hideAppWithParams:(MTRApplicationLauncherClusterHideAppParams *) params completion:(void (^)(MTRApplicationLauncherClusterLauncherResponseParams *data, NSError *error)) completion;
 ```
 
 

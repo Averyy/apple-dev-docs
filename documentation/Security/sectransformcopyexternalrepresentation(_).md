@@ -1,17 +1,24 @@
 # SecTransformCopyExternalRepresentation(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a dictionary that contains enough information to be able to recreate a transform.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 12.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 func SecTransformCopyExternalRepresentation(_ transformRef: SecTransform) -> CFDictionary
+```
+
+```c
+extern CFDictionaryRefSecTransformCopyExternalRepresentation(SecTransformRef transformRef);
 ```
 
 #### Discussion

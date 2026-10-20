@@ -1,7 +1,8 @@
 # init(device:beta1:beta2:epsilon:timeStep:optimizerDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, beta1: Double, beta2: Double, epsilon: Float, timeStep: Int, optimizerDescriptor: MPSNNOptimizerDescriptor)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device beta1:(double) beta1 beta2:(double) beta2 epsilon:(float) epsilon timeStep:(NSUInteger) timeStep optimizerDescriptor:(MPSNNOptimizerDescriptor *) optimizerDescriptor;
 ```
 
 

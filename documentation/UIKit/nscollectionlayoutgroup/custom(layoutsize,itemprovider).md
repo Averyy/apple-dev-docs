@@ -1,7 +1,8 @@
 # custom(layoutSize:itemProvider:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a group of the specified size, with an item provider that creates a custom arrangement for those items.
 
@@ -16,6 +17,10 @@ Creates a group of the specified size, with an item provider that creates a cust
 
 ```swift
 class func custom(layoutSize: NSCollectionLayoutSize, itemProvider: @escaping NSCollectionLayoutGroupCustomItemProvider) -> Self
+```
+
+```objc
++ (instancetype) customGroupWithLayoutSize:(NSCollectionLayoutSize *) layoutSize itemProvider:(NSCollectionLayoutGroupCustomItemProvider) itemProvider;
 ```
 
 

@@ -1,7 +1,8 @@
 # MKLookAroundSnapshotter.Snapshot
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains a snapshot image.
 
@@ -18,23 +19,27 @@ An object that contains a snapshot image.
 class Snapshot
 ```
 
+```objc
+@interface MKLookAroundSnapshot : NSObject
+```
+
 ## Topics
 
 ### Accessing the Snapshot Image
-- [var image: UIImage](mklookaroundsnapshotter/snapshot/image.md)
+- [var image: UIImage](./snapshot/image.md)
   The image returned by the snapshot request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

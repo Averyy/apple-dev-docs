@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user visible name for the identifier. For `app` types it will contain the localized name of the app. For `URL` types it will contain the host name of the URL if it contains a valid host. For `URL` type identifiers that do not contain a valid host and for `domain` type identifiers, this will be equal to `identifier`. This property is meant only as a best effort suggestion for display purposes. It is not used by the system to identify the service or suggest a credential for AutoFill.
 
@@ -16,6 +17,10 @@ A user visible name for the identifier. For `app` types it will contain the loca
 
 ```swift
 var displayName: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * displayName;
 ```
 
 

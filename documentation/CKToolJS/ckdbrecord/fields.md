@@ -1,7 +1,8 @@
 # fields
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionary of key-value pairs whose keys are the record field names and values are field-value dictionaries.
 
@@ -10,7 +11,7 @@ The dictionary of key-value pairs whose keys are the record field names and valu
 
 ## Declaration
 
-```swift
+```
 attribute dictionary fields;
 ```
 

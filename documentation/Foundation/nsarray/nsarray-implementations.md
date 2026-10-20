@@ -1,13 +1,14 @@
 # NSArray Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-4641t.md)
-- [init?(contentsOfURL: URL)](nsarray/init(contentsofurl:)-5ar39.md)
-- [convenience init(contentsOfURL: URL, error: ()) throws](nsarray/init(contentsofurl:error:).md)
+- [convenience init?(contentsOfURL: URL)](./init%28contentsofurl%29-4641t.md)
+- [init?(contentsOfURL: URL)](./init%28contentsofurl%29-5ar39.md)
+- [convenience init(contentsOfURL: URL, error: ()) throws](./init%28contentsofurl,error%29.md)
 
 
 ---

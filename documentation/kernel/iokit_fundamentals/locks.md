@@ -1,93 +1,95 @@
 # Locks
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 ## Topics
 
 ### Simple Locks
-- [IOSimpleLockAlloc](1553017-iosimplelockalloc.md)
+- [IOSimpleLockAlloc](../api-1553017-iosimplelockalloc.md)
   Allocates and initializes a spin lock.
-- [IOSimpleLockInit](1552990-iosimplelockinit.md)
+- [IOSimpleLockInit](../api-1552990-iosimplelockinit.md)
   Initialize a spin lock.
-- [IOSimpleLockDestroy](3380136-iosimplelockdestroy.md)
-- [IOSimpleLockFree](1553035-iosimplelockfree.md)
+- [IOSimpleLockDestroy](../api-3380136-iosimplelockdestroy.md)
+- [IOSimpleLockFree](../api-1553035-iosimplelockfree.md)
   Frees a spin lock.
-- [IOSimpleLockGetMachLock](1553019-iosimplelockgetmachlock.md)
+- [IOSimpleLockGetMachLock](../api-1553019-iosimplelockgetmachlock.md)
   Accessor to a Mach spin lock.
-- [IOSimpleLockLock](1552997-iosimplelocklock.md)
+- [IOSimpleLockLock](../api-1552997-iosimplelocklock.md)
   Lock a spin lock.
-- [IOSimpleLockLockDisableInterrupt](1553005-iosimplelocklockdisableinterrupt.md)
+- [IOSimpleLockLockDisableInterrupt](../api-1553005-iosimplelocklockdisableinterrupt.md)
   Lock a spin lock.
-- [IOSimpleLockTryLock](1553029-iosimplelocktrylock.md)
+- [IOSimpleLockTryLock](../api-1553029-iosimplelocktrylock.md)
   Attempt to lock a spin lock.
-- [IOSimpleLockUnlock](1553015-iosimplelockunlock.md)
+- [IOSimpleLockUnlock](../api-1553015-iosimplelockunlock.md)
   Unlock a spin lock.
-- [IOSimpleLockUnlockEnableInterrupt](1552998-iosimplelockunlockenableinterrup.md)
+- [IOSimpleLockUnlockEnableInterrupt](../api-1552998-iosimplelockunlockenableinterrup.md)
   Unlock a spin lock, and restore interrupt state.
 ### Mutexes
-- [IOLockAlloc](1553021-iolockalloc.md)
+- [IOLockAlloc](../api-1553021-iolockalloc.md)
   Allocates and initializes a mutex.
-- [IOLockInitWithState](1553028-iolockinitwithstate.md)
-- [IOLockFree](1553034-iolockfree.md)
+- [IOLockInitWithState](../api-1553028-iolockinitwithstate.md)
+- [IOLockFree](../api-1553034-iolockfree.md)
   Frees a mutex.
-- [IOTryLock](1553012-iotrylock.md)
-- [IOTakeLock](1553007-iotakelock.md)
-- [IOLockLock](1553000-iolocklock.md)
+- [IOTryLock](../api-1553012-iotrylock.md)
+- [IOTakeLock](../api-1553007-iotakelock.md)
+- [IOLockLock](../api-1553000-iolocklock.md)
   Lock a mutex.
-- [IOUnlock](1552994-iounlock.md)
-- [IOLockTryLock](1553018-iolocktrylock.md)
+- [IOUnlock](../api-1552994-iounlock.md)
+- [IOLockTryLock](../api-1553018-iolocktrylock.md)
   Attempt to lock a mutex.
-- [IOLockUnlock](1553006-iolockunlock.md)
+- [IOLockUnlock](../api-1553006-iolockunlock.md)
   Unlock a mutex.
-- [IOLockWakeup](1553016-iolockwakeup.md)
-- [IOLockSleep](1553026-iolocksleep.md)
+- [IOLockWakeup](../api-1553016-iolockwakeup.md)
+- [IOLockSleep](../api-1553026-iolocksleep.md)
   Sleep with mutex unlock and relock
-- [IOLockSleepDeadline](1553030-iolocksleepdeadline.md)
-- [IOLockGetMachLock](1553008-iolockgetmachlock.md)
+- [IOLockSleepDeadline](../api-1553030-iolocksleepdeadline.md)
+- [IOLockGetMachLock](../api-1553008-iolockgetmachlock.md)
   Accessor to a Mach mutex.
 ### Read/Write Locks
-- [IORWLockAlloc](1553010-iorwlockalloc.md)
+- [IORWLockAlloc](../api-1553010-iorwlockalloc.md)
   Allocates and initializes a read/write lock.
-- [IORWLockFree](1553003-iorwlockfree.md)
+- [IORWLockFree](../api-1553003-iorwlockfree.md)
   Frees a read/write lock.
-- [IORWLockGetMachLock](1553033-iorwlockgetmachlock.md)
+- [IORWLockGetMachLock](../api-1553033-iorwlockgetmachlock.md)
   Accessor to a Mach read/write lock.
-- [IORWLockRead](1553004-iorwlockread.md)
+- [IORWLockRead](../api-1553004-iorwlockread.md)
   Lock a read/write lock for read.
-- [IORWLockUnlock](1553011-iorwlockunlock.md)
+- [IORWLockUnlock](../api-1553011-iorwlockunlock.md)
   Unlock a read/write lock.
-- [IORWLockWrite](1552996-iorwlockwrite.md)
+- [IORWLockWrite](../api-1552996-iorwlockwrite.md)
   Lock a read/write lock for write.
-- [IORWUnlock](1553027-iorwunlock.md)
-- [IOWriteLock](1552985-iowritelock.md)
-- [IOReadLock](1553022-ioreadlock.md)
+- [IORWUnlock](../api-1553027-iorwunlock.md)
+- [IOWriteLock](../api-1552985-iowritelock.md)
+- [IOReadLock](../api-1553022-ioreadlock.md)
 ### Recursive Locks
-- [IORecursiveLockAlloc](1553013-iorecursivelockalloc.md)
+- [IORecursiveLockAlloc](../api-1553013-iorecursivelockalloc.md)
   Allocates and initializes an recursive lock.
-- [IORecursiveLockFree](1553031-iorecursivelockfree.md)
+- [IORecursiveLockFree](../api-1553031-iorecursivelockfree.md)
   Frees a recursive lock.
-- [IORecursiveLockGetMachLock](1552988-iorecursivelockgetmachlock.md)
+- [IORecursiveLockGetMachLock](../api-1552988-iorecursivelockgetmachlock.md)
   Accessor to a Mach mutex.
-- [IORecursiveLockHaveLock](1552995-iorecursivelockhavelock.md)
+- [IORecursiveLockHaveLock](../api-1552995-iorecursivelockhavelock.md)
   Check if a recursive lock is held by the calling thread.
-- [IORecursiveLockLock](1553020-iorecursivelocklock.md)
+- [IORecursiveLockLock](../api-1553020-iorecursivelocklock.md)
   Lock a recursive lock.
-- [IORecursiveLockSleep](1553001-iorecursivelocksleep.md)
-- [IORecursiveLockSleepDeadline](1552986-iorecursivelocksleepdeadline.md)
-- [IORecursiveLockTryLock](1552993-iorecursivelocktrylock.md)
+- [IORecursiveLockSleep](../api-1553001-iorecursivelocksleep.md)
+- [IORecursiveLockSleepDeadline](../api-1552986-iorecursivelocksleepdeadline.md)
+- [IORecursiveLockTryLock](../api-1552993-iorecursivelocktrylock.md)
   Attempt to lock a recursive lock.
-- [IORecursiveLockUnlock](1553032-iorecursivelockunlock.md)
+- [IORecursiveLockUnlock](../api-1553032-iorecursivelockunlock.md)
   Unlock a recursive lock.
-- [IORecursiveLockWakeup](1553014-iorecursivelockwakeup.md)
+- [IORecursiveLockWakeup](../api-1553014-iorecursivelockwakeup.md)
 ### Condition Lock
-- [IOConditionLock](ioconditionlock.md)
+- [IOConditionLock](../ioconditionlock.md)
 
 ## See Also
 
-- [Memory](iokit_fundamentals/memory.md)
+### Resources
+- [Memory](./memory.md)
   Allocate, map, free, and manage memory in the kernel. 
-- [Workflow and Control](iokit_fundamentals/workflow_and_control.md)
-- [Data Types](libkern/data_types.md)
+- [Workflow and Control](./workflow_and_control.md)
+- [Data Types](../libkern/data_types.md)
   Create strings, numbers, collections, data objects, and the other standard types employed by drivers and kernel extensions.
 
 

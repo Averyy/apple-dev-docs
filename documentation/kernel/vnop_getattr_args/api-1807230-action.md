@@ -7,9 +7,10 @@ kauth-style action to be checked for permissions, e.g. KAUTH_VNODE_DELETE.
 
 ## See Also
 
-- [vp](vnop_getattr_args/1807228-vp.md)
+### Fields
+- [vp](./api-1807228-vp.md)
   File to authorize action for.
-- [ctx](vnop_getattr_args/1807232-ctx.md)
+- [ctx](./api-1807232-ctx.md)
   Context against which to authenticate action.
 
 

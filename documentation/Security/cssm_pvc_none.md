@@ -1,7 +1,8 @@
 # CSSM_PVC_NONE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_PVC_NONE: Int { get }
+```
+
+```c
+CSSM_PVC_NONE
 ```
 
 

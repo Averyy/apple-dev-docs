@@ -1,6 +1,7 @@
 # Macros
 
-**Framework**: SMS and Call Reporting
+**Framework**: SMS and Call Reporting  
+**Role**: API Collection
 
 
 ---

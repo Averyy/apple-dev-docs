@@ -1,7 +1,8 @@
 # changeBasis(from:to:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new affine transform structure by applying a change-of-basis.
 

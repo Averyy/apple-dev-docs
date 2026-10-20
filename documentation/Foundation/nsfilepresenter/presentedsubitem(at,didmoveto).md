@@ -1,7 +1,8 @@
 # presentedSubitem(at:didMoveTo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that an item in the presented directory moved to a new location.
 
@@ -20,11 +21,15 @@ Tells the delegate that an item in the presented directory moved to a new locati
 optional func presentedSubitem(at oldURL: URL, didMoveTo newURL: URL)
 ```
 
+```objc
+- (void) presentedSubitemAtURL:(NSURL *) oldURL didMoveToURL:(NSURL *) newURL;
+```
+
 #### Discussion
 
 This method is relevant for applications that present directories. This might occur if the delegate manages the contents of a directory or manages a file that is implemented as a file package. Your implementation of this method should take whatever actions necessary to handle the change in location of the specified item. For example, you might update references to the item in your application’s data structures and refresh your user interface.
 
-If the presented directory is a file package, the system calls the [`presentedItemDidChange()`](nsfilepresenter/presenteditemdidchange().md) method if your delegate does not implement this method.
+If the presented directory is a file package, the system calls the [`presentedItemDidChange()`](./presenteditemdidchange%28%29.md) method if your delegate does not implement this method.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ If the presented directory is a file package, the system calls the [`presentedIt
 
 ## See Also
 
-- [func accommodatePresentedSubitemDeletion(at: URL, completionHandler: ((any Error)?) -> Void)](nsfilepresenter/accommodatepresentedsubitemdeletion(at:completionhandler:).md)
+### Handling Changes to a Presented Directory
+- [func accommodatePresentedSubitemDeletion(at: URL, completionHandler: ((any Error)?) -> Void)](./accommodatepresentedsubitemdeletion%28at,completionhandler%29.md)
   Tells the delegate that some entity wants to delete an item that is inside of a presented directory.
-- [func presentedSubitemDidAppear(at: URL)](nsfilepresenter/presentedsubitemdidappear(at:).md)
+- [func presentedSubitemDidAppear(at: URL)](./presentedsubitemdidappear%28at%29.md)
   Tells the delegate that an item was added to the presented directory.
-- [func presentedSubitemDidChange(at: URL)](nsfilepresenter/presentedsubitemdidchange(at:).md)
+- [func presentedSubitemDidChange(at: URL)](./presentedsubitemdidchange%28at%29.md)
   Tells the delegate that the contents or attributes of the specified item changed.
 
 

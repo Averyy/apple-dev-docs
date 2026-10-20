@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width, in pixels, of the output color texture for the scaler.
@@ -17,6 +18,10 @@ The width, in pixels, of the output color texture for the scaler.
 
 ```swift
 var outputWidth: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger outputWidth;
 ```
 
 

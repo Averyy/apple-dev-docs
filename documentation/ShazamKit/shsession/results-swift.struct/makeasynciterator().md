@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous iterator that produces results from an asynchronous sequence.
 
@@ -22,9 +23,10 @@ func makeAsyncIterator() -> SHSession.Results.Iterator
 
 ## See Also
 
-- [SHSession.Results.Iterator](shsession/results-swift.struct/iterator.md)
+### Creating an iterator
+- [SHSession.Results.Iterator](./iterator.md)
   An iterator for accessing session results.
-- [SHSession.Results.Element](shsession/results-swift.struct/element.md)
+- [SHSession.Results.Element](./element.md)
   A set of results that a session result object returns.
 
 

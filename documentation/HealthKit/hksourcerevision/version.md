@@ -1,7 +1,8 @@
 # version
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies a particular version of the source.
 
@@ -19,6 +20,10 @@ A string that identifies a particular version of the source.
 var version: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * version;
+```
+
 #### Discussion
 
 This property contains a string that identifies the version of the app or device used to save the sample. If the sample is saved by an app, the property contains the current version number of the app (for example, `1.4`). If it is saved by an iOS device or an Apple Watch, the property contains the current version number of the device’s OS (for example, `9.0` or `2.0` respectively). If it is saved directly by a Bluetooth device, this property contains the version string provided by that device.
@@ -28,16 +33,17 @@ This property contains a string that identifies the version of the app or device
 ## Topics
 
 ### Constants
-- [let HKSourceRevisionAnyVersion: String](hksourcerevisionanyversion.md)
+- [let HKSourceRevisionAnyVersion: String](../hksourcerevisionanyversion.md)
   A constant that matches any version.
 
 ## See Also
 
-- [var source: HKSource](hksourcerevision/source.md)
+### Accessing Source and Version Information
+- [var source: HKSource](./source.md)
   The source for a sample.
-- [var operatingSystemVersion: OperatingSystemVersion](hksourcerevision/operatingsystemversion.md)
+- [var operatingSystemVersion: OperatingSystemVersion](./operatingsystemversion.md)
   A string that identifies the operating system used to save a sample.
-- [var productType: String?](hksourcerevision/producttype.md)
+- [var productType: String?](./producttype.md)
   A string that identifies the device used to save a sample.
 
 

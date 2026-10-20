@@ -1,7 +1,8 @@
 # AutomaticSubscriptionOfferViewStyle
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,20 +19,21 @@ struct AutomaticSubscriptionOfferViewStyle
 ## Topics
 
 ### Initializers
-- [init()](automaticsubscriptionofferviewstyle/init.md)
+- [init()](./automaticsubscriptionofferviewstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SubscriptionOfferViewStyle](subscriptionofferviewstyle.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SubscriptionOfferViewStyle](./subscriptionofferviewstyle.md)
 
 ## See Also
 
-- [struct CompactSubscriptionOfferViewStyle](compactsubscriptionofferviewstyle.md)
-- [struct SubscriptionOfferViewStyleConfiguration](subscriptionofferviewstyleconfiguration.md)
-- [protocol SubscriptionOfferViewStyle](subscriptionofferviewstyle.md)
+### Styling subscription offer views
+- [struct CompactSubscriptionOfferViewStyle](./compactsubscriptionofferviewstyle.md)
+- [struct SubscriptionOfferViewStyleConfiguration](./subscriptionofferviewstyleconfiguration.md)
+- [protocol SubscriptionOfferViewStyle](./subscriptionofferviewstyle.md)
 
 
 ---

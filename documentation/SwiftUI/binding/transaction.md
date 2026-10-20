@@ -1,7 +1,8 @@
 # transaction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The binding’s transaction.
 
@@ -26,11 +27,12 @@ The transaction captures the information needed to update the view when the bind
 
 ## See Also
 
-- [var id: Value.ID](binding/id.md)
+### Managing changes
+- [var id: Value.ID](./id.md)
   The stable identity of the entity associated with this instance, corresponding to the `id` of the binding’s wrapped value.
-- [func animation(Animation?) -> Binding<Value>](binding/animation(_:).md)
+- [func animation(Animation?) -> Binding<Value>](./animation%28_%29.md)
   Specifies an animation to perform when the binding value changes.
-- [func transaction(Transaction) -> Binding<Value>](binding/transaction(_:).md)
+- [func transaction(Transaction) -> Binding<Value>](./transaction%28_%29.md)
   Specifies a transaction for the binding.
 
 

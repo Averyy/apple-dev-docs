@@ -11546,9 +11546,8 @@
       "hash": "431bd2e443cc841aa547ad4c5286f90be96ffe06796145a97c027d637b8888ba"
     },
     "https://developer.apple.com/documentation/hypervisor/hv_vcpu_create(_:_:)": {
-      "etag": "W/\"a1c466c3a8fd15f1c6001981c787f77e\"",
       "file_path": "documentation/Hypervisor/hv_vcpu_create(_,_).md",
-      "hash": "424d427f51a9700853ad092c045dad8c21262d80cc1df12856067feb9ca0d538"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/hypervisor/hv_vcpu_create(_:_:_:)": {
       "etag": "\"680c-65d55bf9ca444-df\"",
@@ -11761,9 +11760,8 @@
       "hash": "c445fc47dbdeba3390917392e5e7b6c026b4155e2203399a03d8da1e8785e4f2"
     },
     "https://developer.apple.com/documentation/hypervisor/hv_vcpu_invalidate_tlb(_:)": {
-      "etag": "W/\"20b181d100417774b8aadf79b87b7dda\"",
       "file_path": "documentation/Hypervisor/hv_vcpu_invalidate_tlb(_).md",
-      "hash": "04d6f8b2167c33c4dc61a23efce3120b8b35f233c2c9e28f02abe59e44a257fa"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/hypervisor/hv_vcpu_invalidate_tlb(_:_:_:)": {
       "etag": "\"322f-65d55bfafcde5-df\"",
@@ -25816,9 +25814,8 @@
       "hash": "431bd2e443cc841aa547ad4c5286f90be96ffe06796145a97c027d637b8888ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/hypervisor/hv_vcpu_create(_:_:).json": {
-      "etag": "W/\"a1c466c3a8fd15f1c6001981c787f77e\"",
       "file_path": "documentation/Hypervisor/hv_vcpu_create(_,_).md",
-      "hash": "424d427f51a9700853ad092c045dad8c21262d80cc1df12856067feb9ca0d538"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/hypervisor/hv_vcpu_create(_:_:_:).json": {
       "etag": "\"680c-65d55bf9ca444-df\"",
@@ -26031,9 +26028,8 @@
       "hash": "c445fc47dbdeba3390917392e5e7b6c026b4155e2203399a03d8da1e8785e4f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/hypervisor/hv_vcpu_invalidate_tlb(_:).json": {
-      "etag": "W/\"20b181d100417774b8aadf79b87b7dda\"",
       "file_path": "documentation/Hypervisor/hv_vcpu_invalidate_tlb(_).md",
-      "hash": "04d6f8b2167c33c4dc61a23efce3120b8b35f233c2c9e28f02abe59e44a257fa"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/hypervisor/hv_vcpu_invalidate_tlb(_:_:_:).json": {
       "etag": "\"322f-65d55bfafcde5-df\"",
@@ -28542,6 +28538,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 5708
   }
 }

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct timezone {
     ...
 };
@@ -17,8 +17,8 @@ struct timezone {
 ## Topics
 
 ### Instance Properties
-- [tz_dsttime](timezone/1391833-tz_dsttime.md)
-- [tz_minuteswest](timezone/1391819-tz_minuteswest.md)
+- [tz_dsttime](./timezone/api-1391833-tz_dsttime.md)
+- [tz_minuteswest](./timezone/api-1391819-tz_minuteswest.md)
 
 
 ---

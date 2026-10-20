@@ -1,7 +1,8 @@
 # needsValueError(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `restartPerform` error with context to request a value from the user for this parameter and re-perform the intent with the new value.
 
@@ -11,7 +12,7 @@ Returns a `restartPerform` error with context to request a value from the user f
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,11 @@ Returns a `restartPerform` error with context to request a value from the user f
 final func needsValueError(_ dialog: IntentDialog? = nil) -> AppIntentError
 ```
 
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
+
 ## Mentions
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Adding parameters to an app intent](../adding-parameters-to-an-app-intent.md)
 
 #### Return Value
 
@@ -34,7 +37,8 @@ An error that should be thrown within the intent `perform()` method.
 
 ## See Also
 
-- [func requestValue(IntentDialog?) async throws -> Value.ValueType](intentparameter/requestvalue(_:)-592nd.md)
+### Requesting a value
+- [func requestValue(IntentDialog?) async throws -> Value.ValueType](./requestvalue%28_%29-592nd.md)
   Request a value from the user for this parameter.
 
 

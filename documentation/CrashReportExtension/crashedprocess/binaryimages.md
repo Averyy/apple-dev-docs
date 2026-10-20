@@ -1,7 +1,8 @@
 # binaryImages
 
 **Framework**: CrashReportExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of binary images from the crashed process.
 
@@ -9,9 +10,9 @@ A list of binary images from the crashed process.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ final var binaryImages: [BinaryImageInfo] { get }
 
 ## See Also
 
-- [var reason: CrashReason](crashedprocess/reason.md)
+### Accessing process properties
+- [var reason: CrashReason](./reason.md)
   Contextual information about the reported crash.
-- [struct CrashReason](crashreason.md)
+- [struct CrashReason](../crashreason.md)
   Context information about the crash being reported
-- [struct BinaryImageInfo](binaryimageinfo.md)
+- [struct BinaryImageInfo](../binaryimageinfo.md)
   A type that represents a binary image loaded in the crashed process.
-- [var corpsePort: mach_port_t](crashedprocess/corpseport.md)
+- [var corpsePort: mach_port_t](./corpseport.md)
   A property that provides a Mach port to the crashed process.
 
 

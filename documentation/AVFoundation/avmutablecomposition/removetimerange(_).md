@@ -1,23 +1,28 @@
 # removeTimeRange(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specified time range from all tracks of the composition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func removeTimeRange(_ timeRange: CMTimeRange)
+```
+
+```objc
+- (void) removeTimeRange:(CMTimeRange) timeRange;
 ```
 
 #### Discussion
@@ -32,13 +37,14 @@ Removing a time range doesn’t remove any existing tracks from the composition,
 
 ## See Also
 
-- [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](avmutablecomposition/scaletimerange(_:toduration:).md)
+### Managing time ranges
+- [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](./scaletimerange%28_,toduration%29.md)
   Changes the duration of all tracks in a given time range.
-- [func insertEmptyTimeRange(CMTimeRange)](avmutablecomposition/insertemptytimerange(_:).md)
+- [func insertEmptyTimeRange(CMTimeRange)](./insertemptytimerange%28_%29.md)
   Adds or extends an empty time range within all tracks of the composition.
-- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, completionHandler: ((any Error)?) -> Void)](avmutablecomposition/inserttimerange(_:of:at:completionhandler:).md)
+- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, completionHandler: ((any Error)?) -> Void)](./inserttimerange%28_,of,at,completionhandler%29.md)
   Inserts all tracks of an asset for a time range into a composition.
-- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime) throws](avmutablecomposition/inserttimerange(_:of:at:).md)
+- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime) throws](./inserttimerange%28_,of,at%29.md)
   Inserts all the tracks within a given time range of a specified asset into the composition.
 
 

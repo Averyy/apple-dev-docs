@@ -1,7 +1,8 @@
 # commandBuffer
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command buffer of the render.
 

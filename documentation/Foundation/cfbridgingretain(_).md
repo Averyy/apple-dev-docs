@@ -1,7 +1,8 @@
 # CFBridgingRetain(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Casts an Objective-C pointer to a Core Foundation pointer and also transfers ownership to the caller.
 
@@ -18,6 +19,10 @@ Casts an Objective-C pointer to a Core Foundation pointer and also transfers own
 
 ```swift
 func CFBridgingRetain(_ X: Any?) -> CFTypeRef?
+```
+
+```c
+static CFTypeRefCFBridgingRetain(id X);
 ```
 
 #### Discussion

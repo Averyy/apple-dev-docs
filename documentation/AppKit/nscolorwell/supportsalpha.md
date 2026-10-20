@@ -1,7 +1,8 @@
 # supportsAlpha
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the color picker supports alpha values.
 
@@ -14,19 +15,24 @@ A Boolean value that determines whether the color picker supports alpha values.
 var supportsAlpha: Bool { get set }
 ```
 
+```objc
+@property BOOL supportsAlpha;
+```
+
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), people can select only fully opaque colors from the color picker. A value of [`false`](https://developer.apple.com/documentation/swift/false) also hides the alpha slider. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) enables partial color opacity, and also makes the alpha slider visible.
+If this property is [`false`](../../Swift/false.md), people can select only fully opaque colors from the color picker. A value of [`false`](../../Swift/false.md) also hides the alpha slider. Setting this property to [`true`](../../Swift/true.md) enables partial color opacity, and also makes the alpha slider visible.
 
-If [`ignoresAlpha`](nscolor/ignoresalpha.md) is [`true`](https://developer.apple.com/documentation/swift/true), this property always returns [`false`](https://developer.apple.com/documentation/swift/false), disabling alpha globally.
+If [`ignoresAlpha`](../nscolor/ignoresalpha.md) is [`true`](../../Swift/true.md), this property always returns [`false`](../../Swift/false.md), disabling alpha globally.
 
-By default this value is [`true`](https://developer.apple.com/documentation/swift/true).
+By default this value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var color: NSColor](nscolorwell/color.md)
+### Managing the selected color
+- [var color: NSColor](./color.md)
   The currently selected color for the color well.
-- [func takeColorFrom(Any?)](nscolorwell/takecolorfrom(_:).md)
+- [func takeColorFrom(Any?)](./takecolorfrom%28_%29.md)
   Changes the currently selected color to the color of the specified object.
 
 

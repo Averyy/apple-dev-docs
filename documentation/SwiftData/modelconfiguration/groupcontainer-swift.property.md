@@ -1,7 +1,8 @@
 # groupContainer
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The option to use when detecting the preferred app group container.
 
@@ -23,15 +24,16 @@ let groupContainer: ModelConfiguration.GroupContainer
 
 ## See Also
 
-- [let cloudKitContainerIdentifier: String?](modelconfiguration/cloudkitcontaineridentifier.md)
+### Sharing and syncing the model store
+- [let cloudKitContainerIdentifier: String?](./cloudkitcontaineridentifier.md)
   The identifier of the configuration’s CloudKit database container.
-- [let cloudKitDatabase: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.property.md)
+- [let cloudKitDatabase: ModelConfiguration.CloudKitDatabase](./cloudkitdatabase-swift.property.md)
   The option to use when detecting the container of the preferred CloudKit database.
-- [ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct.md)
+- [ModelConfiguration.CloudKitDatabase](./cloudkitdatabase-swift.struct.md)
   A type that describes the options for detecting a CloudKit database.
-- [let groupAppContainerIdentifier: String?](modelconfiguration/groupappcontaineridentifier.md)
+- [let groupAppContainerIdentifier: String?](./groupappcontaineridentifier.md)
   The identifier of the configuration’s app group container.
-- [ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct.md)
+- [ModelConfiguration.GroupContainer](./groupcontainer-swift.struct.md)
   A type that describes the options for detecting an app group container.
 
 

@@ -1,7 +1,8 @@
 # init(repeating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A vector with the specified scalar in all lanes.
 
@@ -19,6 +20,8 @@ A vector with the specified scalar in all lanes.
 ```swift
 init(repeating scalar: Float16)
 ```
+
+Available when `Scalar` is `Float16`.
 
 #### Discussion
 

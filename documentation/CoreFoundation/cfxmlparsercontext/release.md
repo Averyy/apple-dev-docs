@@ -1,17 +1,22 @@
 # release
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A release callback for your program-defined context data. Optional.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var release: CFXMLParserReleaseCallBack!
+```
+
+```c
+CFXMLParserReleaseCallBack release;
 ```
 
 

@@ -1,9 +1,12 @@
 # XCTestLog
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that logs test failures and errors.
+
+> **Deprecated**: Use [`XCTIssue`](./xctissue-swift.struct.md) instead.
 
 ## Declaration
 
@@ -11,31 +14,36 @@ An object that logs test failures and errors.
 class XCTestLog
 ```
 
+```objc
+@interface XCTestLog : XCTestObserver
+```
+
 ## Topics
 
 ### Logging Test Results
-- [var logFileHandle: FileHandle!](xctestlog/logfilehandle.md)
+- [var logFileHandle: FileHandle!](./xctestlog/logfilehandle.md)
   An object to interact with the test log file.
-- [func testLog(withFormat: String!, arguments: CVaListPointer)](xctestlog/testlog(withformat:arguments:).md)
+- [func testLog(withFormat: String!, arguments: CVaListPointer)](./xctestlog/testlog%28withformat,arguments%29.md)
   Logs test results to the test log.
 
 ## Relationships
 
 ### Inherits From
-- [XCTestObserver](xctestobserver.md)
+- [XCTestObserver](./xctestobserver.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class XCTestObserver](xctestobserver.md)
+### Deprecated Classes
+- [class XCTestObserver](./xctestobserver.md)
   An object that observes test activity and events.
-- [class XCTestProbe](xctestprobe.md)
+- [class XCTestProbe](./xctestprobe.md)
   An object that observes test activity status.
 
 

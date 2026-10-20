@@ -1,7 +1,8 @@
 # extent
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extent of the filter shape.
 
@@ -17,6 +18,10 @@ The extent of the filter shape.
 
 ```swift
 var extent: CGRect { get }
+```
+
+```objc
+@property (readonly) CGRect extent;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # pointerFunctions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The functions in use by the receiver.
 
@@ -21,13 +22,18 @@ The functions in use by the receiver.
 var pointerFunctions: NSPointerFunctions { get }
 ```
 
+```objc
+@property (copy, readonly) NSPointerFunctions * pointerFunctions;
+```
+
 #### Discussion
 
 The returned object is a new `NSPointerFunctions` object that you can modify and/or use directly to create other pointer collections.
 
 ## See Also
 
-- [class NSPointerFunctions](nspointerfunctions.md)
+### Getting the Pointer Functions
+- [class NSPointerFunctions](../nspointerfunctions.md)
   An instance of `NSPointerFunctions` defines callout functions appropriate for managing a pointer reference held somewhere else.
 
 

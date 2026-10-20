@@ -1,18 +1,19 @@
 # CFURLPathStyle.cfurlposixPathStyle
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a POSIX style path name. Components are slash delimited. A leading slash indicates an absolute path; a trailing slash is not significant.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Indicates a POSIX style path name. Components are slash delimited. A leading sla
 case cfurlposixPathStyle
 ```
 
+```c
+kCFURLPOSIXPathStyle
+```
+
 ## See Also
 
-- [CFURLPathStyle.cfurlhfsPathStyle](cfurlpathstyle/cfurlhfspathstyle.md)
+### Constants
+- [CFURLPathStyle.cfurlhfsPathStyle](./cfurlhfspathstyle.md)
   Indicates a HFS style path name. Components are colon delimited. A leading colon indicates a relative path, otherwise the first path component denotes the volume.
-- [CFURLPathStyle.cfurlWindowsPathStyle](cfurlpathstyle/cfurlwindowspathstyle.md)
+- [CFURLPathStyle.cfurlWindowsPathStyle](./cfurlwindowspathstyle.md)
   Indicates a Windows style path name.
 
 

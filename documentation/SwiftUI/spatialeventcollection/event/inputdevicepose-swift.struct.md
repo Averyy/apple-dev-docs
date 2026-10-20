@@ -1,7 +1,8 @@
 # SpatialEventCollection.Event.InputDevicePose
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A pose describing the input device like a hand controlling the event.
 
@@ -22,30 +23,31 @@ struct InputDevicePose
 ## Topics
 
 ### Getting the event type
-- [var altitude: Angle](spatialeventcollection/event/inputdevicepose-swift.struct/altitude.md)
+- [var altitude: Angle](./inputdevicepose-swift.struct/altitude.md)
   The altitude angle.
-- [var azimuth: Angle](spatialeventcollection/event/inputdevicepose-swift.struct/azimuth.md)
+- [var azimuth: Angle](./inputdevicepose-swift.struct/azimuth.md)
   The azimuth angle.
-- [var pose3D: Pose3D](spatialeventcollection/event/inputdevicepose-swift.struct/pose3d.md)
+- [var pose3D: Pose3D](./inputdevicepose-swift.struct/pose3d.md)
   The 3D pose of the input device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var location: CGPoint](spatialeventcollection/event/location.md)
+### Locating the event
+- [var location: CGPoint](./location.md)
   The 2D location of the event.
-- [var location3D: Point3D](spatialeventcollection/event/location3d.md)
+- [var location3D: Point3D](./location3d.md)
   The 3D location of the touch.
-- [var selectionRay: Ray3D?](spatialeventcollection/event/selectionray.md)
+- [var selectionRay: Ray3D?](./selectionray.md)
   The 3D ray used to target the touch.
-- [var inputDevicePose: SpatialEventCollection.Event.InputDevicePose?](spatialeventcollection/event/inputdevicepose-swift.property.md)
+- [var inputDevicePose: SpatialEventCollection.Event.InputDevicePose?](./inputdevicepose-swift.property.md)
   The 3D position and orientation of the device controlling the touch, if one exists.
-- [var targetedEntity: Entity?](spatialeventcollection/event/targetedentity.md)
+- [var targetedEntity: Entity?](./targetedentity.md)
   The entity target for this touch, if one exists.
 
 

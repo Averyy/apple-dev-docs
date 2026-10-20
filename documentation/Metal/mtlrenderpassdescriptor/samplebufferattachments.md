@@ -1,7 +1,8 @@
 # sampleBufferAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of sample buffers that the render pass can access.
 
@@ -19,9 +20,13 @@ The array of sample buffers that the render pass can access.
 var sampleBufferAttachments: MTLRenderPassSampleBufferAttachmentDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLRenderPassSampleBufferAttachmentDescriptorArray * sampleBufferAttachments;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 
 ---

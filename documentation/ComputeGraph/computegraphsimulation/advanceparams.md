@@ -1,7 +1,8 @@
 # ComputeGraphSimulation.AdvanceParams
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters for advancing a compute graph simulation by one time step.
 
@@ -12,7 +13,7 @@ Parameters for advancing a compute graph simulation by one time step.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,25 +24,25 @@ struct AdvanceParams
 ## Topics
 
 ### Initializers
-- [init(deltaTime: Float, commandBuffer: any MTLCommandBuffer, computeEncoder: any MTLComputeCommandEncoder)](computegraphsimulation/advanceparams/init(deltatime:commandbuffer:computeencoder:).md)
+- [init(deltaTime: Float, commandBuffer: any MTLCommandBuffer, computeEncoder: any MTLComputeCommandEncoder)](./advanceparams/init%28deltatime,commandbuffer,computeencoder%29.md)
   Creates advance parameters with the required Metal objects.
-- [init(deltaTime: Float, commandBuffer: any MTLCommandBuffer, computeEncoder: any MTLComputeCommandEncoder, localToWorld: simd_float4x4, worldToLocal: simd_float4x4, viewPosition: SIMD3<Float>?, viewDirection: SIMD3<Float>?)](computegraphsimulation/advanceparams/init(deltatime:commandbuffer:computeencoder:localtoworld:worldtolocal:viewposition:viewdirection:).md)
+- [init(deltaTime: Float, commandBuffer: any MTLCommandBuffer, computeEncoder: any MTLComputeCommandEncoder, localToWorld: simd_float4x4, worldToLocal: simd_float4x4, viewPosition: SIMD3<Float>?, viewDirection: SIMD3<Float>?)](./advanceparams/init%28deltatime,commandbuffer,computeencoder,localtoworld,worldtolocal,viewposition,viewdirection%29.md)
 ### Instance Properties
-- [var commandBuffer: any MTLCommandBuffer](computegraphsimulation/advanceparams/commandbuffer.md)
+- [var commandBuffer: any MTLCommandBuffer](./advanceparams/commandbuffer.md)
   The command buffer to encode simulation commands into.
-- [var computeEncoder: any MTLComputeCommandEncoder](computegraphsimulation/advanceparams/computeencoder.md)
+- [var computeEncoder: any MTLComputeCommandEncoder](./advanceparams/computeencoder.md)
   The compute command encoder to encode simulation dispatches with.
-- [var deltaTime: Float](computegraphsimulation/advanceparams/deltatime.md)
+- [var deltaTime: Float](./advanceparams/deltatime.md)
   The time interval, in seconds, to advance the simulation.
-- [var localToWorld: simd_float4x4](computegraphsimulation/advanceparams/localtoworld.md)
+- [var localToWorld: simd_float4x4](./advanceparams/localtoworld.md)
   The transform from the system’s local space to world space.
-- [var maxSteps: Int](computegraphsimulation/advanceparams/maxsteps.md)
+- [var maxSteps: Int](./advanceparams/maxsteps.md)
   The maximum number of fixed-size steps per advance.
-- [var viewDirection: SIMD3<Float>?](computegraphsimulation/advanceparams/viewdirection.md)
+- [var viewDirection: SIMD3<Float>?](./advanceparams/viewdirection.md)
   The forward direction of the viewer in world space.
-- [var viewPosition: SIMD3<Float>?](computegraphsimulation/advanceparams/viewposition.md)
+- [var viewPosition: SIMD3<Float>?](./advanceparams/viewposition.md)
   The position of the viewer in world space.
-- [var worldToLocal: simd_float4x4](computegraphsimulation/advanceparams/worldtolocal.md)
+- [var worldToLocal: simd_float4x4](./advanceparams/worldtolocal.md)
   The transform from world space to the system’s local space.
 
 

@@ -1,7 +1,8 @@
 # JSGlobalContextIsInspectable(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the JavaScript context is inspectable.
 
@@ -19,25 +20,30 @@ Returns a Boolean value that indicates whether the JavaScript context is inspect
 func JSGlobalContextIsInspectable(_ ctx: JSGlobalContextRef!) -> Bool
 ```
 
+```c
+bool JSGlobalContextIsInspectable(JSGlobalContextRef ctx);
+```
+
 #### Return Value
 
 A Boolean value that indicates whether the JavaScript context is inspectable.
 
 ## Parameters
 
-- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) to check whether it’s inspectable.
+- `ctx`: The [`JSGlobalContextRef`](./jsglobalcontextref.md) to check whether it’s inspectable.
 
 ## Topics
 
 ### Related Documentation
-- [func JSGlobalContextCopyName(JSGlobalContextRef!) -> JSStringRef!](jsglobalcontextcopyname(_:).md)
+- [func JSGlobalContextCopyName(JSGlobalContextRef!) -> JSStringRef!](./jsglobalcontextcopyname%28_%29.md)
   Gets a copy of the name of a context.
-- [func JSGlobalContextSetName(JSGlobalContextRef!, JSStringRef!)](jsglobalcontextsetname(_:_:).md)
+- [func JSGlobalContextSetName(JSGlobalContextRef!, JSStringRef!)](./jsglobalcontextsetname%28_,_%29.md)
   Sets the remote debugging name for a context.
 
 ## See Also
 
-- [func JSGlobalContextSetInspectable(JSGlobalContextRef!, Bool)](jsglobalcontextsetinspectable(_:_:).md)
+### Making a context inspectable
+- [func JSGlobalContextSetInspectable(JSGlobalContextRef!, Bool)](./jsglobalcontextsetinspectable%28_,_%29.md)
   Sets a JavaScript context to be either inspectable or not inspectable.
 
 

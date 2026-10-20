@@ -1,7 +1,8 @@
 # noHomeHub
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating no home hub found.
 
@@ -21,9 +22,10 @@ static var noHomeHub: HMError.Code { get }
 
 ## See Also
 
-- [static var noCompatibleHomeHub: HMError.Code](hmerror/nocompatiblehomehub.md)
+### Detecting hub errors
+- [static var noCompatibleHomeHub: HMError.Code](./nocompatiblehomehub.md)
   An error indicating no compatible home hub found.
-- [static var incompatibleHomeHub: HMError.Code](hmerror/code/incompatiblehomehub.md)
+- [static var incompatibleHomeHub: HMError.Code](./code/incompatiblehomehub.md)
   An error indicating an incompatible home hub.
 
 

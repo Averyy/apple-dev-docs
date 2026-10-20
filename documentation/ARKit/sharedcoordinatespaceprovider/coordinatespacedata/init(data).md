@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `CoordinateSpaceData` from a data blob.
 

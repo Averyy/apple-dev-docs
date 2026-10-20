@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a flag from a raw unsigned-integer value.
 

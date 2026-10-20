@@ -1,7 +1,8 @@
 # Campaign.InvoiceDetail
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Invoice details for the LOC payment model.
 
@@ -10,7 +11,7 @@ Invoice details for the LOC payment model.
 
 ## Declaration
 
-```swift
+```
 object Campaign.InvoiceDetail
 ```
 
@@ -18,7 +19,7 @@ object Campaign.InvoiceDetail
 
 Captures the billing contact and reference information required for Line of Credit (`LOC`) payment model accounts. The `primaryBuyerEmail` and `billingEmail` fields must each be a valid email address.
 
-See [`InvoiceDetailCreate`](invoicedetailcreate.md) for which fields are required when creating a new record, and [`InvoiceDetailUpdate`](invoicedetailupdate.md) for update behavior.
+See [`InvoiceDetailCreate`](../invoicedetailcreate.md) for which fields are required when creating a new record, and [`InvoiceDetailUpdate`](../invoicedetailupdate.md) for update behavior.
 
 ## Properties
 

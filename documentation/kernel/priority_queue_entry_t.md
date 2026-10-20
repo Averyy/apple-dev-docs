@@ -1,14 +1,15 @@
 # priority_queue_entry_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct priority_queue_entry {
     ...
 } priority_queue_entry_t;
@@ -17,9 +18,9 @@ typedef struct priority_queue_entry {
 ## Topics
 
 ### Instance Properties
-- [child](priority_queue_entry_t/3553518-child.md)
-- [next](priority_queue_entry_t/3553519-next.md)
-- [prev](priority_queue_entry_t/3553520-prev.md)
+- [child](./priority_queue_entry_t/api-3553518-child.md)
+- [next](./priority_queue_entry_t/api-3553519-next.md)
+- [prev](./priority_queue_entry_t/api-3553520-prev.md)
 
 
 ---

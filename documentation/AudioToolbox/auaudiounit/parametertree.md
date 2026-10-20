@@ -1,7 +1,8 @@
 # parameterTree
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An audio unit’s parameters, organized in a tree hierarchy.
 
@@ -19,9 +20,21 @@ An audio unit’s parameters, organized in a tree hierarchy.
 var parameterTree: AUParameterTree? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, retain, nullable) AUParameterTree * parameterTree;
+```
+
+*macOS*
+
+```objc
+@property (atomic, retain, nullable) AUParameterTree * parameterTree;
+```
+
 ## Mentions
 
-- [Migrating Your Audio Unit Host to the AUv3 API](migrating-your-audio-unit-host-to-the-auv3-api.md)
+- [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 
 #### Discussion
 
@@ -33,9 +46,10 @@ This version 3 property is similar to the version 2 `kAudioUnitProperty_Paramete
 
 ## See Also
 
-- [var allParameterValues: Bool](auaudiounit/allparametervalues.md)
+### Querying Parameters
+- [var allParameterValues: Bool](./allparametervalues.md)
   Special read-only property for KVO.
-- [func parametersForOverview(withCount: Int) -> [NSNumber]](auaudiounit/parametersforoverview(withcount:).md)
+- [func parametersForOverview(withCount: Int) -> [NSNumber]](./parametersforoverview%28withcount%29.md)
   Returns the audio unit’s most important parameters.
 
 

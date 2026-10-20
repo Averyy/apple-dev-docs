@@ -1,7 +1,8 @@
 # rpcTerminateOrphan
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Terminate an orphaned activation.
 

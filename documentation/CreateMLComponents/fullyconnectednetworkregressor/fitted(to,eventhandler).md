@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a fully connected network regressor model to a sequence of examples.
 
@@ -37,9 +38,10 @@ The training process partitions the input into random batches according to the b
 
 ## See Also
 
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkRegressorModel<Scalar>](fullyconnectednetworkregressor/fitted(to:validateon:eventhandler:).md)
+### Fitting a regressor
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkRegressorModel<Scalar>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a fully connected network regressor model to a sequence of examples.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

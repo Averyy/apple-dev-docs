@@ -1,7 +1,8 @@
 # sidecarFileName
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var sidecarFileName: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * sidecarFileName;
 ```
 
 #### Discussion

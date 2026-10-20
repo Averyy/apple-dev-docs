@@ -1,7 +1,8 @@
 # mean(keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the mean along all axes.
 
@@ -41,15 +42,16 @@ await y.shapedArray(of: Float.self) // is [4.5]
 
 ## See Also
 
-- [func min(alongAxes:keepRank:)](mltensor/min(alongaxes:keeprank:).md)
+### Accessing the minimum, maximum and mean
+- [func min(alongAxes:keepRank:)](./min%28alongaxes,keeprank%29.md)
   Returns the minimum values along the specified axes.
-- [func min(keepRank: Bool) -> MLTensor](mltensor/min(keeprank:).md)
+- [func min(keepRank: Bool) -> MLTensor](./min%28keeprank%29.md)
   Returns the minimum value in the array.
-- [func max(alongAxes:keepRank:)](mltensor/max(alongaxes:keeprank:).md)
+- [func max(alongAxes:keepRank:)](./max%28alongaxes,keeprank%29.md)
   Returns the maximum values along the specified axes.
-- [func max(keepRank: Bool) -> MLTensor](mltensor/max(keeprank:).md)
+- [func max(keepRank: Bool) -> MLTensor](./max%28keeprank%29.md)
   Returns the maximum value in the array.
-- [func mean(alongAxes:keepRank:)](mltensor/mean(alongaxes:keeprank:).md)
+- [func mean(alongAxes:keepRank:)](./mean%28alongaxes,keeprank%29.md)
   Returns the mean along the specified axes.
 
 

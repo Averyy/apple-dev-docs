@@ -1,7 +1,8 @@
 # kColorSyncCoefficientMinRGB
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Weight for the MIN(R,G,B) term in the free-style component mixing sum.
 
@@ -20,19 +21,24 @@ Weight for the MIN(R,G,B) term in the free-style component mixing sum.
 var kColorSyncCoefficientMinRGB: Unmanaged<CFString>
 ```
 
+```c
+extern CFStringRef kColorSyncCoefficientMinRGB;
+```
+
 ## See Also
 
-- [var kColorSyncCoefficientBlue: Unmanaged<CFString>](kcolorsynccoefficientblue.md)
+### Weighting component-mix coefficients
+- [var kColorSyncCoefficientBlue: Unmanaged<CFString>](./kcolorsynccoefficientblue.md)
   Weight for the blue channel in the free-style component mixing sum.
-- [var kColorSyncCoefficientComponent: Unmanaged<CFString>](kcolorsynccoefficientcomponent.md)
+- [var kColorSyncCoefficientComponent: Unmanaged<CFString>](./kcolorsynccoefficientcomponent.md)
   Weight for the ‘component’ term in the free-style component mixing sum.
-- [var kColorSyncCoefficientGreen: Unmanaged<CFString>](kcolorsynccoefficientgreen.md)
+- [var kColorSyncCoefficientGreen: Unmanaged<CFString>](./kcolorsynccoefficientgreen.md)
   Weight for the green channel in the free-style component mixing sum.
-- [var kColorSyncCoefficientMaxRGB: Unmanaged<CFString>](kcolorsynccoefficientmaxrgb.md)
+- [var kColorSyncCoefficientMaxRGB: Unmanaged<CFString>](./kcolorsynccoefficientmaxrgb.md)
   Weight for the MAX(R,G,B) term in the free-style component mixing sum.
-- [var kColorSyncCoefficientRed: Unmanaged<CFString>](kcolorsynccoefficientred.md)
+- [var kColorSyncCoefficientRed: Unmanaged<CFString>](./kcolorsynccoefficientred.md)
   Weight for the red channel in the free-style component mixing sum.
-- [var kColorSyncComponentCoefficients: Unmanaged<CFString>](kcolorsynccomponentcoefficients.md)
+- [var kColorSyncComponentCoefficients: Unmanaged<CFString>](./kcolorsynccomponentcoefficients.md)
   Sub-dictionary of custom linear-combination coefficients for free-style component mixing.
 
 

@@ -1,17 +1,24 @@
 # serializedValue(forKey:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method implemented to override serialization.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func serializedValue(forKey key: String!) -> Any!
+```
+
+```objc
+- (id) serializedValueForKey:(NSString *) key;
 ```
 
 #### Return Value
@@ -20,11 +27,11 @@ Either `nil` or a value that’s compliant with property lists:  `NSString`, `NS
 
 #### Discussion
 
-Provides custom serialization for patch internal settings that do not comply to the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol.
+Provides custom serialization for patch internal settings that do not comply to the [`NSCoding`](../../Foundation/nscoding.md) protocol.
 
 #### Discussion
 
-If your patch has internal settings that do not conform to the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol, you must implement this method.
+If your patch has internal settings that do not conform to the [`NSCoding`](../../Foundation/nscoding.md) protocol, you must implement this method.
 
 ## Parameters
 
@@ -32,8 +39,9 @@ If your patch has internal settings that do not conform to the [`NSCoding`](http
 
 ## See Also
 
-- [func setSerializedValue(Any!, forKey: String!)](qcplugin/setserializedvalue(_:forkey:).md)
-  Provides custom deserialization for patch internal settings that were previously serialized using the method [`serializedValue(forKey:)`](qcplugin/serializedvalue(forkey:).md).
+### Supporting Saving and Retrieving Internal Settings
+- [func setSerializedValue(Any!, forKey: String!)](./setserializedvalue%28_,forkey%29.md)
+  Provides custom deserialization for patch internal settings that were previously serialized using the method [`serializedValue(forKey:)`](./serializedvalue%28forkey%29.md).
 
 
 ---

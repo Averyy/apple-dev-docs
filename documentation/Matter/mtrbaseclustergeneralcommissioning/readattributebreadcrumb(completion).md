@@ -1,7 +1,8 @@
 # readAttributeBreadcrumb(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBreadcrumb(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBreadcrumb() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBreadcrumbWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

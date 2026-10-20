@@ -1,7 +1,8 @@
 # motionTransformType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the type of motion transforms, either as a matrix or individual components.
 
@@ -17,6 +18,10 @@ Sets the type of motion transforms, either as a matrix or individual components.
 
 ```swift
 var motionTransformType: MTLTransformType { get set }
+```
+
+```objc
+@property (nonatomic) MTLTransformType motionTransformType;
 ```
 
 #### Discussion

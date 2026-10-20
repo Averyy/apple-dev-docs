@@ -1,7 +1,8 @@
 # isFlexible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the space is flexible.
 
@@ -14,9 +15,14 @@ A Boolean value that indicates whether the space is flexible.
 var isFlexible: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isFlexibleSpacing;
+```
+
 ## See Also
 
-- [var isFixed: Bool](nscollectionlayoutspacing/isfixed.md)
+### Getting the spacing type
+- [var isFixed: Bool](./isfixed.md)
   A Boolean value that indicates whether the space is fixed to a specific number of points.
 
 

@@ -1,7 +1,8 @@
 # Media Accessibility
 
 **Framework**: Media Accessibility  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Make your app’s media more accessible by supporting people’s systemwide preferences for video and audio content.
 
@@ -20,11 +21,11 @@ People can specify a variety of preferences about media content such as videos, 
 ## Topics
 
 ### Features
-- [Captions](captions.md)
+- [Captions](./captions.md)
   Coordinate the presentation of closed-captioned data for your app’s media files.
-- [Flashing lights](flashing-lights.md)
+- [Flashing lights](./flashing-lights.md)
   Detect, mitigate, and inform people about flashing lights in media content.
-- [Music Haptics](music-haptics.md)
+- [Music Haptics](./music-haptics.md)
   Play haptic tracks along with known music tracks.
 
 

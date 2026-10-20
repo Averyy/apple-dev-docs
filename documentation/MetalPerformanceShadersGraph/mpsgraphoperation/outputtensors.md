@@ -1,7 +1,8 @@
 # outputTensors
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output tensors of the operation.
 
@@ -17,6 +18,10 @@ The output tensors of the operation.
 
 ```swift
 var outputTensors: [MPSGraphTensor] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<MPSGraphTensor *> * outputTensors;
 ```
 
 

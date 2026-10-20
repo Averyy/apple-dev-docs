@@ -1,7 +1,8 @@
 # requiredContentVersion
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of PencilKit necessary to use the stroke.
 

@@ -1,7 +1,8 @@
 # CKQuerySubscription.Options
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a query subscription.
 
@@ -20,38 +21,43 @@ Configuration options for a query subscription.
 struct Options
 ```
 
+```c
+enum CKQuerySubscriptionOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating Query Subscription Options
-- [init(rawValue: UInt)](ckquerysubscription/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
   Creates a query subscription option using the specified raw value.
 ### Accessing Subscription Options
-- [static var firesOnRecordCreation: CKQuerySubscription.Options](ckquerysubscription/options/firesonrecordcreation.md)
+- [static var firesOnRecordCreation: CKQuerySubscription.Options](./options/firesonrecordcreation.md)
   An option that instructs CloudKit to send a push notification when it creates a record that matches a subscription’s criteria.
-- [static var firesOnRecordDeletion: CKQuerySubscription.Options](ckquerysubscription/options/firesonrecorddeletion.md)
+- [static var firesOnRecordDeletion: CKQuerySubscription.Options](./options/firesonrecorddeletion.md)
   An option that instructs CloudKit to send a push notification when it deletes a record that matches a subscription’s criteria.
-- [static var firesOnRecordUpdate: CKQuerySubscription.Options](ckquerysubscription/options/firesonrecordupdate.md)
+- [static var firesOnRecordUpdate: CKQuerySubscription.Options](./options/firesonrecordupdate.md)
   An option that instructs CloudKit to send a push notification when it modifies a record that matches a subscription’s criteria.
-- [static var firesOnce: CKQuerySubscription.Options](ckquerysubscription/options/firesonce.md)
+- [static var firesOnce: CKQuerySubscription.Options](./options/firesonce.md)
   An option that instructs CloudKit to send a push notification only once.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var predicate: NSPredicate](ckquerysubscription/predicate.md)
+### Accessing the Subscription Search Parameters
+- [var predicate: NSPredicate](./predicate.md)
   The matching criteria to apply to records.
-- [var querySubscriptionOptions: CKQuerySubscription.Options](ckquerysubscription/querysubscriptionoptions.md)
+- [var querySubscriptionOptions: CKQuerySubscription.Options](./querysubscriptionoptions.md)
   Options that define the behavior of the subscription.
 
 

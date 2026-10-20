@@ -13,51 +13,51 @@ The runtime implements the concrete triggers and actions the schemas define. The
 ## Topics
 
 ### Essentials
-- [Preliminary_Behavior](preliminary-behavior.md)
+- [Preliminary_Behavior](./preliminary-behavior.md)
   A typed schema that combines one or more triggers with associated actions.
 ### Triggers
-- [Preliminary_Trigger](preliminary-trigger.md)
+- [Preliminary_Trigger](./preliminary-trigger.md)
   A condition that, when met, performs an action.
-- [CollideTrigger](collidetrigger.md)
+- [CollideTrigger](./collidetrigger.md)
   A trigger that activates when specified objects collide.
-- [ProximityToCameraTrigger](proximitytocameratrigger.md)
+- [ProximityToCameraTrigger](./proximitytocameratrigger.md)
   A trigger that fires when the camera crosses the distance threshold of an object.
-- [SceneTransitionTrigger](scenetransitiontrigger.md)
+- [SceneTransitionTrigger](./scenetransitiontrigger.md)
   A trigger that fires during scene transitions.
-- [TapGestureTrigger](tapgesturetrigger.md)
+- [TapGestureTrigger](./tapgesturetrigger.md)
   A trigger that fires when the user taps.
-- [NotificationTrigger](notificationtrigger.md)
+- [NotificationTrigger](./notificationtrigger.md)
   A trigger that fires when an app posts a notification.
 ### Actions
-- [Preliminary_Action](preliminary-action.md)
+- [Preliminary_Action](./preliminary-action.md)
   A specific task that a trigger performs.
-- [AudioAction](audioaction.md)
+- [AudioAction](./audioaction.md)
   An action that plays audio.
-- [ChangeSceneAction](changesceneaction.md)
+- [ChangeSceneAction](./changesceneaction.md)
   An action that transitions from one scene to another.
-- [EmphasizeAction](emphasizeaction.md)
+- [EmphasizeAction](./emphasizeaction.md)
   An action that performs an animation to call attention to an object.
-- [GroupAction](groupaction.md)
+- [GroupAction](./groupaction.md)
   An action that runs a list of other actions.
-- [ImpulseAction](impulseaction.md)
+- [ImpulseAction](./impulseaction.md)
   An action that adds velocity to an prim.
-- [LookAtCameraAction](lookatcameraaction.md)
+- [LookAtCameraAction](./lookatcameraaction.md)
   An action that reorients an object to face the user’s camera.
-- [OrbitAction](orbitaction.md)
+- [OrbitAction](./orbitaction.md)
   An action that orbits a set of prims around another.
-- [SpinAction](spinaction.md)
+- [SpinAction](./spinaction.md)
   An action that spins a prim.
-- [StartAnimationAction](startanimationaction.md)
+- [StartAnimationAction](./startanimationaction.md)
   An action that plays an asset’s animation.
-- [TransformAction](transformaction.md)
+- [TransformAction](./transformaction.md)
   An action that animates from one transform to another.
-- [TransformAnimationAction](transformanimationaction.md)
+- [TransformAnimationAction](./transformanimationaction.md)
   An action that plays a transform animation.
-- [VisibilityAction](visibilityaction.md)
+- [VisibilityAction](./visibilityaction.md)
   An action that displays or hides objects over a period of time.
-- [WaitAction](waitaction.md)
+- [WaitAction](./waitaction.md)
   An action that performs a delay.
-- [NotificationAction](notificationaction.md)
+- [NotificationAction](./notificationaction.md)
   An action that sends a custom notification to an app.
 
 

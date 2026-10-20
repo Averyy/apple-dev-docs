@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new checkpoint by decoding from the decoder.
 
@@ -25,7 +26,8 @@ init(from decoder: any Decoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](mlcheckpoint/encode(to:).md)
+### Encoding and decoding a checkpoint
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the checkpoint into the encoder.
 
 

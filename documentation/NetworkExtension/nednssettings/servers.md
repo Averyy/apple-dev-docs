@@ -1,7 +1,8 @@
 # servers
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The DNS server IP addresses.
 
@@ -19,19 +20,24 @@ The DNS server IP addresses.
 var servers: [String] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSString *> * servers;
+```
+
 ## See Also
 
-- [var searchDomains: [String]?](nednssettings/searchdomains.md)
+### Accessing DNS properties
+- [var searchDomains: [String]?](./searchdomains.md)
   A list of domain strings used to fully qualify single-label host names.
-- [var domainName: String?](nednssettings/domainname.md)
+- [var domainName: String?](./domainname.md)
   The primary domain of the tunnel.
-- [var matchDomains: [String]?](nednssettings/matchdomains.md)
+- [var matchDomains: [String]?](./matchdomains.md)
   A list of domain strings used to determine which DNS queries will use the DNS resolver settings contained in this object.
-- [var matchDomainsNoSearch: Bool](nednssettings/matchdomainsnosearch.md)
+- [var matchDomainsNoSearch: Bool](./matchdomainsnosearch.md)
   A Boolean that specifies if the domains in the `matchDomains` list should not be appended to the resolver’s list of search domains.
-- [var dnsProtocol: NEDNSProtocol](nednssettings/dnsprotocol.md)
+- [var dnsProtocol: NEDNSProtocol](./dnsprotocol.md)
   The DNS protocol used by the server, such as HTTPS or TLS.
-- [enum NEDNSProtocol](nednsprotocol.md)
+- [enum NEDNSProtocol](../nednsprotocol.md)
 
 
 ---

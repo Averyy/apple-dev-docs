@@ -1,7 +1,8 @@
 # URL.ParseStrategy.ComponentParseStrategy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The strategy used to parse one component of a URL.
 
@@ -22,32 +23,33 @@ enum ComponentParseStrategy<Component> where Component : Decodable, Component : 
 
 #### Overview
 
-Use this type with the [`URL.ParseStrategy`](url/parsestrategy.md) initializer and static accessors, or its modifier methods, to specify behavior for parsing components of a URL. This allows you to reject URL candidate strings that lack required components — such as a scheme, host, or path — or to fill in default values while parsing.
+Use this type with the [`URL.ParseStrategy`](../parsestrategy.md) initializer and static accessors, or its modifier methods, to specify behavior for parsing components of a URL. This allows you to reject URL candidate strings that lack required components — such as a scheme, host, or path — or to fill in default values while parsing.
 
 ## Topics
 
 ### Component parse strategies
-- [URL.ParseStrategy.ComponentParseStrategy.required](url/parsestrategy/componentparsestrategy/required.md)
+- [URL.ParseStrategy.ComponentParseStrategy.required](./componentparsestrategy/required.md)
   A strategy that requires the presence of the associated component for parsing to succeed.
-- [URL.ParseStrategy.ComponentParseStrategy.optional](url/parsestrategy/componentparsestrategy/optional.md)
+- [URL.ParseStrategy.ComponentParseStrategy.optional](./componentparsestrategy/optional.md)
   A strategy that treats the presence of the associated component as optional.
-- [URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)](url/parsestrategy/componentparsestrategy/defaultvalue(_:).md)
+- [URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)](./componentparsestrategy/defaultvalue%28_%29.md)
   A strategy that provides a default value for a component if it’s absent in the source string.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(scheme: URL.ParseStrategy.ComponentParseStrategy<String>, user: URL.ParseStrategy.ComponentParseStrategy<String>, password: URL.ParseStrategy.ComponentParseStrategy<String>, host: URL.ParseStrategy.ComponentParseStrategy<String>, port: URL.ParseStrategy.ComponentParseStrategy<Int>, path: URL.ParseStrategy.ComponentParseStrategy<String>, query: URL.ParseStrategy.ComponentParseStrategy<String>, fragment: URL.ParseStrategy.ComponentParseStrategy<String>)](url/parsestrategy/init(scheme:user:password:host:port:path:query:fragment:).md)
+### Creating a URL parse strategy
+- [init(scheme: URL.ParseStrategy.ComponentParseStrategy<String>, user: URL.ParseStrategy.ComponentParseStrategy<String>, password: URL.ParseStrategy.ComponentParseStrategy<String>, host: URL.ParseStrategy.ComponentParseStrategy<String>, port: URL.ParseStrategy.ComponentParseStrategy<Int>, path: URL.ParseStrategy.ComponentParseStrategy<String>, query: URL.ParseStrategy.ComponentParseStrategy<String>, fragment: URL.ParseStrategy.ComponentParseStrategy<String>)](./init%28scheme,user,password,host,port,path,query,fragment%29.md)
   Creates a URL parse strategy with the specified component-parsing behaviors.
 
 

@@ -1,11 +1,12 @@
 # init()
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,7 +16,8 @@ init()
 
 ## See Also
 
-- [init(red: Float, green: Float, blue: Float)](cgdevicecolor/init(red:green:blue:).md)
+### Initializers
+- [init(red: Float, green: Float, blue: Float)](./init%28red,green,blue%29.md)
 
 
 ---

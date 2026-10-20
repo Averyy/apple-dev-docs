@@ -1,7 +1,8 @@
 # image
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image of the map’s content.
 
@@ -16,8 +17,28 @@ The image of the map’s content.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+var image: UIImage { get }
+```
+
+*macOS*
+
 ```swift
 var image: NSImage { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) UIImage * image;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSImage * image;
 ```
 
 #### Discussion
@@ -26,7 +47,8 @@ The image object contains representations appropriate for display on both Retina
 
 ## See Also
 
-- [var appearance: NSAppearance](mkmapsnapshotter/snapshot/appearance.md)
+### Getting the snapshot image
+- [var appearance: NSAppearance](./appearance.md)
   The visual style that MapKit uses when rendering the snapshot.
 
 

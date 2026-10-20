@@ -1,7 +1,8 @@
 # AppMigrationTester
 
 **Framework**: AppMigrationKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A test-only type your app uses to test app migration extensions.
 
@@ -19,37 +20,37 @@ actor AppMigrationTester
 
 Use this type in unit tests that your containing app hosts. Calling the tester from your unit tests allows you to communicate with your app migration extension to valdiate your migration code.
 
-In your tests, create an instance of `AppMigrationTester`, then access its [`exportController`](appmigrationtester/exportcontroller.md) and [`importController`](appmigrationtester/importcontroller.md) properties to exercise export and import functionality, respectively.
+In your tests, create an instance of `AppMigrationTester`, then access its [`exportController`](./appmigrationtester/exportcontroller.md) and [`importController`](./appmigrationtester/importcontroller.md) properties to exercise export and import functionality, respectively.
 
 > ⚠️ **Warning**: Use `AppMigrationTester` only in unit tests, not in production code. The tester doesn’t operate in a production environment.
 
 ## Topics
 
 ### Creating a tester instance
-- [init(platform: MigrationPlatform) async throws](appmigrationtester/init(platform:).md)
+- [init(platform: MigrationPlatform) async throws](./appmigrationtester/init%28platform%29.md)
   Creates a tester instance for migrating to or from the specified platform.
 ### Testing export
-- [var exportController: AppMigrationTester.AppExportController](appmigrationtester/exportcontroller.md)
+- [var exportController: AppMigrationTester.AppExportController](./appmigrationtester/exportcontroller.md)
   An instance of the controller object you use to test your export code.
-- [AppMigrationTester.AppExportController](appmigrationtester/appexportcontroller.md)
+- [AppMigrationTester.AppExportController](./appmigrationtester/appexportcontroller.md)
   A class you use to test your extension’s export code.
 ### Testing import
-- [var importController: AppMigrationTester.AppImportController](appmigrationtester/importcontroller.md)
+- [var importController: AppMigrationTester.AppImportController](./appmigrationtester/importcontroller.md)
   An instance of the controller object you use to test your import code.
-- [AppMigrationTester.AppImportController](appmigrationtester/appimportcontroller.md)
+- [AppMigrationTester.AppImportController](./appmigrationtester/appimportcontroller.md)
   A class you use to test your extension’s import code.
 ### Supporting types
-- [AppMigrationTester.DeviceToDeviceExportProperties](appmigrationtester/devicetodeviceexportproperties.md)
+- [AppMigrationTester.DeviceToDeviceExportProperties](./appmigrationtester/devicetodeviceexportproperties.md)
   Properties that describe the result of a device-to-device export.
-- [AppMigrationTester.ResourcesExportResult](appmigrationtester/resourcesexportresult.md)
+- [AppMigrationTester.ResourcesExportResult](./appmigrationtester/resourcesexportresult.md)
   The result of exporting resources to another device.
 
 ## Relationships
 
 ### Conforms To
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

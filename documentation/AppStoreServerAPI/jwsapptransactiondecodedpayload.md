@@ -1,7 +1,8 @@
 # JWSAppTransactionDecodedPayload
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A decoded payload that contains app transaction information.
 
@@ -10,19 +11,19 @@ A decoded payload that contains app transaction information.
 
 ## Declaration
 
-```swift
+```
 object JWSAppTransactionDecodedPayload
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-The [`Get App Transaction Info`](get-app-transaction-info.md) endpoint returns a [`JWSAppTransaction`](jwsapptransaction.md), which you decode to get `JWSAppTransactionDecodedPayload`.
+The [`Get App Transaction Info`](./get-app-transaction-info.md) endpoint returns a [`JWSAppTransaction`](./jwsapptransaction.md), which you decode to get `JWSAppTransactionDecodedPayload`.
 
-You can also get app transaction information in your app from StoreKit, using [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction).
+You can also get app transaction information in your app from StoreKit, using [`AppTransaction`](../StoreKit/apptransaction.md).
 
 ## Properties
 
@@ -39,19 +40,20 @@ You can also get app transaction information in your app from StoreKit, using [`
 
 ## See Also
 
-- [object JWSDecodedHeader](jwsdecodedheader.md)
+### JWS headers and payloads
+- [object JWSDecodedHeader](./jwsdecodedheader.md)
   A decoded JSON Web Signature (JWS) header containing transaction or renewal information.
-- [type JWSAppTransaction](jwsapptransaction.md)
+- [type JWSAppTransaction](./jwsapptransaction.md)
   App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
-- [type JWSTransaction](jwstransaction.md)
+- [type JWSTransaction](./jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
-- [object JWSTransactionDecodedPayload](jwstransactiondecodedpayload.md)
+- [object JWSTransactionDecodedPayload](./jwstransactiondecodedpayload.md)
   A decoded payload that contains transaction information.
-- [type JWSRenewalInfo](jwsrenewalinfo.md)
+- [type JWSRenewalInfo](./jwsrenewalinfo.md)
   Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
-- [object JWSRenewalInfoDecodedPayload](jwsrenewalinfodecodedpayload.md)
+- [object JWSRenewalInfoDecodedPayload](./jwsrenewalinfodecodedpayload.md)
   A decoded payload containing subscription renewal information for an auto-renewable subscription.
-- [Data types](data-types.md)
+- [Data types](./data-types.md)
   Refer to these data types for decoded transaction and renewal information payloads.
 
 

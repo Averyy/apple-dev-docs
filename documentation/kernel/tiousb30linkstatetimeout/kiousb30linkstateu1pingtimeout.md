@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateU1PingTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The U1 ping timeout.
 
@@ -10,7 +11,7 @@ The U1 ping timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateU1PingTimeout = 300
 ```
 

@@ -1,7 +1,8 @@
 # targetEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity the bind target references.
 

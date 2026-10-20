@@ -1,12 +1,13 @@
 # contains(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries whether a point lies within the text container’s region or on the region’s edge—not simply within its bounding rectangle.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 
@@ -14,15 +15,19 @@ Queries whether a point lies within the text container’s region or on the regi
 func contains(_ point: NSPoint) -> Bool
 ```
 
+```objc
+- (BOOL) containsPoint:(NSPoint) point;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aPoint` lies within the receiver’s region or on the region’s edge—not simply within its bounding rectangle—[`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if `aPoint` lies within the receiver’s region or on the region’s edge—not simply within its bounding rectangle—[`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-For example, if the receiver defines a donut shape and `aPoint` lies in the hole, this method returns [`false`](https://developer.apple.com/documentation/swift/false). This method can be used for hit testing of mouse events.
+For example, if the receiver defines a donut shape and `aPoint` lies in the hole, this method returns [`false`](../../Swift/false.md). This method can be used for hit testing of mouse events.
 
-The default [`NSTextContainer`](nstextcontainer.md) implementation merely checks that `aPoint` lies within its bounding rectangle.
+The default [`NSTextContainer`](../nstextcontainer.md) implementation merely checks that `aPoint` lies within its bounding rectangle.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ The default [`NSTextContainer`](nstextcontainer.md) implementation merely checks
 
 ## See Also
 
-- [convenience init(containerSize: NSSize)](nstextcontainer/init(containersize:).md)
+### Deprecated
+- [convenience init(containerSize: NSSize)](./init%28containersize%29.md)
   Initializes a text container with a specified bounding rectangle.
-- [func lineFragmentRect(forProposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remaining: NSRectPointer?) -> NSRect](nstextcontainer/linefragmentrect(forproposedrect:sweepdirection:movementdirection:remaining:).md)
+- [func lineFragmentRect(forProposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remaining: NSRectPointer?) -> NSRect](./linefragmentrect%28forproposedrect,sweepdirection,movementdirection,remaining%29.md)
   Calculates and returns the longest rectangle available in the proposed rectangle for displaying text.
-- [var containerSize: NSSize](nstextcontainer/containersize.md)
+- [var containerSize: NSSize](./containersize.md)
   The size of the text container’s bounding rectangle.
 
 

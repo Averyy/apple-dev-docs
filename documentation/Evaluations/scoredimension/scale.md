@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scoring scale for this dimension.
 
@@ -22,9 +23,10 @@ let scale: ScoringScale
 
 ## See Also
 
-- [var metric: Metric](scoredimension/metric.md)
+### Inspecting a dimension
+- [var metric: Metric](./metric.md)
   A metric identifier that uses this dimension’s name.
-- [let description: String?](scoredimension/description.md)
+- [let description: String?](./description.md)
   An optional description providing additional context for the model judge about what this dimension measures.
 
 

@@ -1,12 +1,13 @@
 # allowsMixedState
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the cell supports three states instead of two.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A Boolean value indicating whether the cell supports three states instead of two
 var allowsMixedState: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsMixedState;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell supports three states: on, off, and mixed. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the cell supports only the on and off states.
+When the value of this property is [`true`](../../Swift/true.md), the cell supports three states: on, off, and mixed. When the value is [`false`](../../Swift/false.md), the cell supports only the on and off states.
 
 ## See Also
 
-- [var nextState: Int](nscell/nextstate.md)
+### Managing Cell State
+- [var nextState: Int](./nextstate.md)
   The cell’s next state.
-- [func setNextState()](nscell/setnextstate.md)
+- [func setNextState()](./setnextstate%28%29.md)
   Changes cell’s state to the next value in the sequence.
-- [var state: NSControl.StateValue](nscell/state.md)
+- [var state: NSControl.StateValue](./state.md)
   The cell’s current state.
-- [NSControl.StateValue](nscontrol/statevalue.md)
+- [NSControl.StateValue](../nscontrol/statevalue.md)
   A constant that indicates whether a control is on, off, or in a mixed state.
 
 

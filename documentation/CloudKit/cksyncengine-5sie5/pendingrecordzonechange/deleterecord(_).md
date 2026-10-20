@@ -1,7 +1,8 @@
 # CKSyncEngine.PendingRecordZoneChange.deleteRecord(_:)
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pending deletion of a record from the server.
 
@@ -11,7 +12,7 @@ A pending deletion of a record from the server.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

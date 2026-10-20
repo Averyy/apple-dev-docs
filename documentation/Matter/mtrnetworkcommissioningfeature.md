@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,26 +19,30 @@
 struct MTRNetworkCommissioningFeature
 ```
 
+```c
+enum MTRNetworkCommissioningFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrnetworkcommissioningfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrnetworkcommissioningfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var ethernetNetworkInterface: MTRNetworkCommissioningFeature](mtrnetworkcommissioningfeature/ethernetnetworkinterface.md)
-- [static var threadNetworkInterface: MTRNetworkCommissioningFeature](mtrnetworkcommissioningfeature/threadnetworkinterface.md)
-- [static var wiFiNetworkInterface: MTRNetworkCommissioningFeature](mtrnetworkcommissioningfeature/wifinetworkinterface.md)
+- [static var ethernetNetworkInterface: MTRNetworkCommissioningFeature](./mtrnetworkcommissioningfeature/ethernetnetworkinterface.md)
+- [static var threadNetworkInterface: MTRNetworkCommissioningFeature](./mtrnetworkcommissioningfeature/threadnetworkinterface.md)
+- [static var wiFiNetworkInterface: MTRNetworkCommissioningFeature](./mtrnetworkcommissioningfeature/wifinetworkinterface.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

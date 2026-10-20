@@ -1,7 +1,8 @@
 # errSecInvalidCRLEncoding
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list encoding is not valid.
 
@@ -18,6 +19,10 @@ The certificate revocation list encoding is not valid.
 
 ```swift
 var errSecInvalidCRLEncoding: OSStatus { get }
+```
+
+```c
+errSecInvalidCRLEncoding
 ```
 
 

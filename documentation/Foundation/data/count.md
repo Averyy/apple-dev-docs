@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes in the data.
 

@@ -1,7 +1,8 @@
 # flush(removingDisplayedImage:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the receiver to discard pending enqueued sample buffers and call the provided block when complete. This method suspends until the flush is complete.
 
@@ -30,7 +31,8 @@ A flush resets decoder state. The next frame passed to enqueueSampleBuffer: shou
 
 ## See Also
 
-- [func flush()](avsamplebuffervideorenderer/receiver/flush.md)
+### Flushing the receiver
+- [func flush()](./flush%28%29.md)
   Instructs the receiver to discard pending enqueued sample buffers.
 
 

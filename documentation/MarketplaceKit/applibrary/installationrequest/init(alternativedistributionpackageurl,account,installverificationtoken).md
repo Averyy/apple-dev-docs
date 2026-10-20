@@ -1,7 +1,8 @@
 # init(alternativeDistributionPackageURL:account:installVerificationToken:)
 
 **Framework**: MarketplaceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+

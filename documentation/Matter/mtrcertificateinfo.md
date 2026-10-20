@@ -1,7 +1,8 @@
 # MTRCertificateInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,33 +19,37 @@
 class MTRCertificateInfo
 ```
 
+```objc
+@interface MTRCertificateInfo : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(tlvBytes: Data)](mtrcertificateinfo/init(tlvbytes:)-56yg9.md)
-- [init?(TLVBytes: Data)](mtrcertificateinfo/init(tlvbytes:)-9fmvz.md)
+- [init?(tlvBytes: Data)](./mtrcertificateinfo/init%28tlvbytes%29-56yg9.md)
+- [init?(TLVBytes: Data)](./mtrcertificateinfo/init%28tlvbytes%29-9fmvz.md)
 ### Instance Properties
-- [var issuer: MTRDistinguishedNameInfo](mtrcertificateinfo/issuer.md)
-- [var notAfter: Date](mtrcertificateinfo/notafter.md)
-- [var notBefore: Date](mtrcertificateinfo/notbefore.md)
-- [var subject: MTRDistinguishedNameInfo](mtrcertificateinfo/subject.md)
-- [var publicKeyData: Data?](mtrcertificateinfo/publickeydata.md)
+- [var issuer: MTRDistinguishedNameInfo](./mtrcertificateinfo/issuer.md)
+- [var notAfter: Date](./mtrcertificateinfo/notafter.md)
+- [var notBefore: Date](./mtrcertificateinfo/notbefore.md)
+- [var subject: MTRDistinguishedNameInfo](./mtrcertificateinfo/subject.md)
+- [var publicKeyData: Data?](./mtrcertificateinfo/publickeydata.md)
   Public key data for this certificate
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

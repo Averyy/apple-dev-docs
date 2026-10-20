@@ -1,14 +1,15 @@
 # runnable_usec
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 uint64_t runnable_usec;
 ```
 

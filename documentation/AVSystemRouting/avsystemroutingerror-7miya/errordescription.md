@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized description of the error.
 

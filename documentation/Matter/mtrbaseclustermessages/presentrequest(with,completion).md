@@ -1,7 +1,8 @@
 # presentRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command PresentMessagesRequest
 
@@ -17,7 +18,15 @@ Command PresentMessagesRequest
 ## Declaration
 
 ```swift
+func presentRequest(with params: MTRMessagesClusterPresentMessagesRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func presentRequest(with params: MTRMessagesClusterPresentMessagesRequestParams) async throws
+```
+
+```objc
+- (void) presentMessagesRequestWithParams:(MTRMessagesClusterPresentMessagesRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

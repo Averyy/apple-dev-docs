@@ -1,7 +1,8 @@
 # BooleanResolutionResult
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A Boolean value that matches an intent parameter, or information about why your service can’t determine the value.
 
@@ -10,7 +11,7 @@ A Boolean value that matches an intent parameter, or information about why your 
 
 ## Declaration
 
-```swift
+```
 object BooleanResolutionResult
 ```
 
@@ -21,31 +22,34 @@ Only provide one of the optional properties. If a client receives a result with 
 ## Topics
 
 ### Providing a Result
-- [object BooleanResolutionResult.ConfirmationRequired](booleanresolutionresult/confirmationrequired-data.dictionary.md)
+- [object BooleanResolutionResult.ConfirmationRequired](./booleanresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the Boolean value before proceeding.
-- [object BooleanResolutionResult.Success](booleanresolutionresult/success-data.dictionary.md)
+- [object BooleanResolutionResult.Success](./booleanresolutionresult/success-data.dictionary.md)
   A Boolean value that successfully matches the intent.
 
 ## Properties
 
 - `class` (string): The specific type of result.
+
+  **Allowed Values**: `BooleanResolutionResult`
 - `success` (BooleanResolutionResult.Success): A Boolean value that matches the intent.
 - `confirmationRequired` (BooleanResolutionResult.ConfirmationRequired): A Boolean value for the user to confirm or reject before proceeding.
 
 ## Relationships
 
 ### Inherits From
-- [IntentResolutionResult](intentresolutionresult.md)
+- [IntentResolutionResult](./intentresolutionresult.md)
 
 ## See Also
 
-- [object Intent](intent.md)
+### Intents
+- [object Intent](./intent.md)
   A user request for your service to fulfill.
-- [object IntentResponse](intentresponse.md)
+- [object IntentResponse](./intentresponse.md)
   Your service’s response to an intent.
-- [object UserActivity](useractivity.md)
+- [object UserActivity](./useractivity.md)
   The context for playing a media queue.
-- [object IntentResolutionResult](intentresolutionresult.md)
+- [object IntentResolutionResult](./intentresolutionresult.md)
   An object that matches a parameter of an intent, or information about why your service can’t determine a value for the parameter.
 
 

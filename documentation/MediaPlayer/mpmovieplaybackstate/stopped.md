@@ -1,17 +1,24 @@
 # MPMoviePlaybackState.stopped
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case stopped
+```
+
+```c
+MPMoviePlaybackStateStopped
 ```
 
 #### Discussion
@@ -20,11 +27,12 @@ Playback is currently stopped. Playback will commence from the beginning of the 
 
 ## See Also
 
-- [MPMoviePlaybackState.playing](mpmovieplaybackstate/playing.md)
-- [MPMoviePlaybackState.paused](mpmovieplaybackstate/paused.md)
-- [MPMoviePlaybackState.interrupted](mpmovieplaybackstate/interrupted.md)
-- [MPMoviePlaybackState.seekingForward](mpmovieplaybackstate/seekingforward.md)
-- [MPMoviePlaybackState.seekingBackward](mpmovieplaybackstate/seekingbackward.md)
+### Constants
+- [MPMoviePlaybackState.playing](./playing.md)
+- [MPMoviePlaybackState.paused](./paused.md)
+- [MPMoviePlaybackState.interrupted](./interrupted.md)
+- [MPMoviePlaybackState.seekingForward](./seekingforward.md)
+- [MPMoviePlaybackState.seekingBackward](./seekingbackward.md)
 
 
 ---

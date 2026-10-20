@@ -1,7 +1,8 @@
 # write(toFile:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the action classifier as a Core ML model file to the file path.
 
@@ -21,7 +22,8 @@ func write(toFile path: String, metadata: MLModelMetadata? = nil) throws
 
 ## See Also
 
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlactionclassifier/write(to:metadata:).md)
+### Saving an action classifier
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./write%28to,metadata%29.md)
   Exports the action classifier as a Core ML model file to a location in the file system.
 
 

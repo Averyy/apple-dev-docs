@@ -1,7 +1,8 @@
 # kSGCCmd_COPY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSGCCmd_COPY = 0x18
 ```
 

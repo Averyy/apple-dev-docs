@@ -1,6 +1,7 @@
 # Augmenting images to expand your training data
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: Article
 
 Improve your model by using transformed versions of your training images.
 
@@ -10,13 +11,13 @@ Training a good image model requires a variety of training images with different
 
 To maximize the potential impact of your data you can use image augmentations. Augmenting images is the process of applying transformations such as flipping, cropping, resizing, adjusting brightness, adding noise, and so on. Image augmentations are not a replacement for a good image data set, but they help maximize the data set’s effectiveness. Each augmentation has the potential to multiply the size of your training data which is helpful when your training sample size is small.
 
-![Diagram that shows an image with arrows pointing to variations of it. Variations include a cropped image, a resized image, a faded image, and an image with added noise.](/images/com.apple.createmlcomponents/image_augmentation@2x.png)
+![Diagram that shows an image with arrows pointing to variations of it. Variations include a cropped image, a resized image, a faded image, and an image with added noise.](https://developer.apple.com/tutorials/images/com.apple.createmlcomponents/image_augmentation@2x.png)
 
 Keep in mind that performing augmentations has some drawbacks. You can’t reuse extracted features across training iterations because each iteration produces a new set of augmented images. This increase in training time can be significant. Augmentations have the most impact when your dataset is small relative to the number of parameters in your model.
 
-##### Write an Augmentation
+##### Write an augmentation
 
-You can use [`Augmenter`](augmenter.md) to create a custom augmentation. The augmenter applies each transformer to each image in sequence. For example, this augmenter randomly flips (with 50% probability) and then randomly crops images:
+You can use [`Augmenter`](./augmenter.md) to create a custom augmentation. The augmenter applies each transformer to each image in sequence. For example, this augmenter randomly flips (with 50% probability) and then randomly crops images:
 
 ```swift
 let augmenter = Augmenter {
@@ -27,7 +28,7 @@ let augmenter = Augmenter {
 }
 ```
 
-To generate a random number each time, use [`UniformRandomFloatingPointParameter`](uniformrandomfloatingpointparameter.md). You can use the random number with any transformer. For instance, to perform a slight rotation using [`ImageRotator`](imagerotator.md):
+To generate a random number each time, use [`UniformRandomFloatingPointParameter`](./uniformrandomfloatingpointparameter.md). You can use the random number with any transformer. For instance, to perform a slight rotation using [`ImageRotator`](./imagerotator.md):
 
 ```swift
 let augmenter = Augmenter {
@@ -41,15 +42,15 @@ let augmenter = Augmenter {
 }
 ```
 
-##### Apply Augmentations to Your Training Data
+##### Apply augmentations to your training data
 
-After you create an augmenter, you can use it to augment your training data. You do this with the [`applied(to:)`](augmenter/applied(to:).md) method:
+After you create an augmenter, you can use it to augment your training data. You do this with the [`applied(to:)`](./augmenter/applied%28to%29.md) method:
 
 ```swift
 let augmentedTrainingData = augmenter.applied(to: trainingData)
 ```
 
-Because augmentations are usually random, it makes sense to do more than one pass over your training data. Each pass results in a different set of images, for instance with different scale factors. You can control the number of passes by using the [`applied(to:upsampledBy:)`](augmenter/applied(to:upsampledby:).md) method. For instance, to get 10 times the number of images:
+Because augmentations are usually random, it makes sense to do more than one pass over your training data. Each pass results in a different set of images, for instance with different scale factors. You can control the number of passes by using the [`applied(to:upsampledBy:)`](./augmenter/applied%28to,upsampledby%29.md) method. For instance, to get 10 times the number of images:
 
 ```swift
 let augmentedTrainingData = augmenter.applied(
@@ -60,7 +61,7 @@ let augmentedTrainingData = augmenter.applied(
 
 > **Note**: The result of the augmentations is an asynchronous sequence. The augmenter doesn’t perform augmentations until you request them to avoid the memory overhead.
 
-##### Train an Image Classifier
+##### Train an image classifier
 
 You can now use your augmented data set to train an image classifier. Because augmentations take images, not URLs, you may need to read your files first.
 
@@ -92,7 +93,7 @@ let augmenter = Augmenter {
 }
 ```
 
-Finally, create a model, apply the augmenter to the training data, and progressively train the model using [`update(_:with:eventHandler:)`](updatablesupervisedestimator/update(_:with:eventhandler:).md). The following example applies the `augmenter` to the `trainingImages` and updates the `model` up to 100 times:
+Finally, create a model, apply the augmenter to the training data, and progressively train the model using [`update(_:with:eventHandler:)`](./updatablesupervisedestimator/update%28_,with,eventhandler%29.md). The following example applies the `augmenter` to the `trainingImages` and updates the `model` up to 100 times:
 
 ```swift
 var model = task.makeTransformer()
@@ -112,9 +113,9 @@ The example above applies the `augmenter` to shuffled images. Shuffling images c
 
 > 💡 **Tip**: A batch size of 32 is often a good starting point.
 
-##### Stop Training
+##### Stop training
 
-Training your model progressively using the [`update(_:with:eventHandler:)`](updatablesupervisedestimator/update(_:with:eventhandler:).md) method lets you control when to stop training. Stop training when the validation accuracy stops improving, for example:
+Training your model progressively using the [`update(_:with:eventHandler:)`](./updatablesupervisedestimator/update%28_,with,eventhandler%29.md) method lets you control when to stop training. Stop training when the validation accuracy stops improving, for example:
 
 ```swift
 var accuracies = [Double](repeating: 0, count 5)
@@ -142,49 +143,51 @@ for iteration in 0 ..< 100 {
 
 ## See Also
 
-- [struct Augmenter](augmenter.md)
+### Related Documentation
+- [struct Augmenter](./augmenter.md)
   An augmenter.
-- [struct ApplyEachRandomly](applyeachrandomly.md)
+- [struct ApplyEachRandomly](./applyeachrandomly.md)
   Applies each transformer randomly given a probability.
-- [struct ApplyRandomly](applyrandomly.md)
+- [struct ApplyRandomly](./applyrandomly.md)
   Randomly applies the transformer with the given probability.
-- [struct ChooseRandomly](chooserandomly.md)
+- [struct ChooseRandomly](./chooserandomly.md)
   Apply single transformation randomly chosen from a list of transformers.
-- [struct RandomImageCropper](randomimagecropper.md)
+- [struct RandomImageCropper](./randomimagecropper.md)
   Crops an image at a random location.
-- [protocol RandomTransformer](randomtransformer.md)
+- [protocol RandomTransformer](./randomtransformer.md)
   A transformer that takes an input and a random number generator and produces a randomized output.
-- [struct ShuffleRandomly](shufflerandomly.md)
+- [struct ShuffleRandomly](./shufflerandomly.md)
   Apply transformations in a random order.
-- [struct UniformRandomFloatingPointParameter](uniformrandomfloatingpointparameter.md)
+- [struct UniformRandomFloatingPointParameter](./uniformrandomfloatingpointparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [class UniformRandomIntegerParameter](uniformrandomintegerparameter.md)
+- [class UniformRandomIntegerParameter](./uniformrandomintegerparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [Creating a multi-label image classifier](creating-a-multi-label-image-classifier.md)
+### Image components
+- [Creating a multi-label image classifier](./creating-a-multi-label-image-classifier.md)
   Train a machine learning model to assign multiple labels to an image.
-- [struct ImageReader](imagereader.md)
+- [struct ImageReader](./imagereader.md)
   An image file reader.
-- [protocol ImageFeatureExtractor](imagefeatureextractor.md)
+- [protocol ImageFeatureExtractor](./imagefeatureextractor.md)
   A transformer that takes an image and outputs image features.
-- [struct ImageCropper](imagecropper.md)
+- [struct ImageCropper](./imagecropper.md)
   An image crop transformer.
-- [struct ImageScaler](imagescaler.md)
+- [struct ImageScaler](./imagescaler.md)
   An image scaling transformer.
-- [struct ImageFeaturePrint](imagefeatureprint.md)
+- [struct ImageFeaturePrint](./imagefeatureprint.md)
   ImageFeaturePrint image feature extractor.
-- [struct ImageBlur](imageblur.md)
+- [struct ImageBlur](./imageblur.md)
   An image blurring transformer.
-- [struct ImageColorTransformer](imagecolortransformer.md)
+- [struct ImageColorTransformer](./imagecolortransformer.md)
   An image color transformer.
-- [struct ImageExposureAdjuster](imageexposureadjuster.md)
+- [struct ImageExposureAdjuster](./imageexposureadjuster.md)
   An image exposure adjusting transformer.
-- [struct ImageFlipper](imageflipper.md)
+- [struct ImageFlipper](./imageflipper.md)
   An image flipper transformer.
-- [struct ImageRotator](imagerotator.md)
+- [struct ImageRotator](./imagerotator.md)
   An image rotating transformer.
-- [struct RandomImageNoiseGenerator](randomimagenoisegenerator.md)
+- [struct RandomImageNoiseGenerator](./randomimagenoisegenerator.md)
   A transformer that adds random noise to an image.
-- [struct MLModelImageFeatureExtractor](mlmodelimagefeatureextractor.md)
+- [struct MLModelImageFeatureExtractor](./mlmodelimagefeatureextractor.md)
   An image feature extractor provided by an MLModel.
 
 

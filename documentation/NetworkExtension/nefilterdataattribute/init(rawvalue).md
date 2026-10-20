@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.15.5+

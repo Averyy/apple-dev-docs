@@ -1,14 +1,15 @@
 # kSENSE_FILEMARK_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSENSE_FILEMARK_Mask = 0x80
 ```
 

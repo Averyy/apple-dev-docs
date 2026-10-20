@@ -1,7 +1,8 @@
 # kAXDrawerRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A drawer.
 
@@ -12,6 +13,10 @@ A drawer.
 
 ```swift
 var kAXDrawerRole: String { get }
+```
+
+```c
+#define kAXDrawerRole
 ```
 
 

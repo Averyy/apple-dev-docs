@@ -1,7 +1,8 @@
 # invokeDefaultMethod(withArguments:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes when a script attempts to invoke a method on an exposed object directly.
 
@@ -14,6 +15,10 @@ Executes when a script attempts to invoke a method on an exposed object directly
 func invokeDefaultMethod(withArguments arguments: [Any]!) -> Any!
 ```
 
+```objc
+- (id) invokeDefaultMethodWithArguments:(NSArray *) arguments;
+```
+
 #### Return Value
 
 The result of invoking the default method.
@@ -24,7 +29,8 @@ The result of invoking the default method.
 
 ## See Also
 
-- [func invokeUndefinedMethod(fromWebScript: String!, withArguments: [Any]!) -> Any!](nsobject-swift.class/invokeundefinedmethod(fromwebscript:witharguments:).md)
+### Invoking methods
+- [func invokeUndefinedMethod(fromWebScript: String!, withArguments: [Any]!) -> Any!](./invokeundefinedmethod%28fromwebscript,witharguments%29.md)
   Handles undefined method invocation from the scripting environment.
 
 

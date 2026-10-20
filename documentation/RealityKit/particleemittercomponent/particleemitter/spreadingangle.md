@@ -1,7 +1,8 @@
 # spreadingAngle
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range, in radians, of randomized initial particle directions as radians describing the size of the spreading cone. Defaults to 0.
 

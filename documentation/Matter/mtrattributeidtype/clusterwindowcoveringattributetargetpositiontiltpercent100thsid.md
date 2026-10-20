@@ -1,7 +1,8 @@
 # clusterWindowCoveringAttributeTargetPositionTiltPercent100thsID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterWindowCoveringAttributeTargetPositionTiltPercent100thsID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterWindowCoveringAttributeTargetPositionTiltPercent100thsID
 ```
 
 

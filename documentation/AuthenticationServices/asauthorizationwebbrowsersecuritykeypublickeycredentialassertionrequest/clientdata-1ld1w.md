@@ -1,7 +1,8 @@
 # clientData
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The client data to supply to the relying party.
 

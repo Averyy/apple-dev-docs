@@ -1,22 +1,24 @@
 # free
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](iouservideodriver/init.md)
-- [Start](iouservideodriver/start.md)
-- [Stop](iouservideodriver/stop.md)
+### Running the driver service
+- [init](./init.md)
+- [Start](./start.md)
+- [Stop](./stop.md)
 
 
 ---

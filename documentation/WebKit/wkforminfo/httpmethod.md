@@ -1,7 +1,8 @@
 # httpMethod
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var httpMethod: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * httpMethod;
 ```
 
 #### Discussion

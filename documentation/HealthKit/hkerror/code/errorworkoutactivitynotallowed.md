@@ -1,7 +1,8 @@
 # HKError.Code.errorWorkoutActivityNotAllowed
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case errorWorkoutActivityNotAllowed
+```
+
+```c
+HKErrorWorkoutActivityNotAllowed
 ```
 
 

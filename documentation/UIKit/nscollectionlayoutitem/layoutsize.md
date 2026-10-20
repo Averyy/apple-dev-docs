@@ -1,7 +1,8 @@
 # layoutSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s size expressed in width and height dimensions.
 
@@ -16,6 +17,10 @@ The item’s size expressed in width and height dimensions.
 
 ```swift
 var layoutSize: NSCollectionLayoutSize { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSCollectionLayoutSize * layoutSize;
 ```
 
 

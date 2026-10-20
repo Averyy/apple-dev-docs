@@ -1,7 +1,8 @@
 # Publishers.CollectByTime.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s failure type.
 
 ## See Also
 
-- [Publishers.CollectByTime.Output](publishers/collectbytime/output.md)
+### Declaring supporting types
+- [Publishers.CollectByTime.Output](./output.md)
   The kind of values published by this publisher.
 
 

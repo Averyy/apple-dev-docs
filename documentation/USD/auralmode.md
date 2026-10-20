@@ -1,12 +1,13 @@
 # auralMode
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An option that controls the audio signal’s spacial dynamics.
 
 #### Overview
 
-The default value is blank. Each instance of `AudioAction` must specify an [`auralMode`](auralmode.md).
+The default value is blank. Each instance of `AudioAction` must specify an [auralMode](./auralmode.md).
 
 ##### Aural Modes
 
@@ -22,15 +23,16 @@ uniform token auralMode
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [audio](audio.md)
+- [audio](./audio.md)
   The location of an audio file.
-- [type](type.md)
+- [type](./type.md)
   An option that controls the order in which the actions execute.
-- [gain](gain.md)
+- [gain](./gain.md)
   A value that controls the audio volume.
 
 

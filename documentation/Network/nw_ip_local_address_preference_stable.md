@@ -1,7 +1,8 @@
 # nw_ip_local_address_preference_stable
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Prefer using stable local addresses.
 
@@ -20,11 +21,16 @@ Prefer using stable local addresses.
 var nw_ip_local_address_preference_stable: nw_ip_local_address_preference_t { get }
 ```
 
+```c
+nw_ip_local_address_preference_stable
+```
+
 ## See Also
 
-- [var nw_ip_local_address_preference_default: nw_ip_local_address_preference_t](nw_ip_local_address_preference_default.md)
+### Address Preferences
+- [var nw_ip_local_address_preference_default: nw_ip_local_address_preference_t](./nw_ip_local_address_preference_default.md)
   Allow the system to decide which kind of local address to prefer for a connection or listener.
-- [var nw_ip_local_address_preference_temporary: nw_ip_local_address_preference_t](nw_ip_local_address_preference_temporary.md)
+- [var nw_ip_local_address_preference_temporary: nw_ip_local_address_preference_t](./nw_ip_local_address_preference_temporary.md)
   Prefer using temporary local addresses.
 
 

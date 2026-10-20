@@ -1,26 +1,28 @@
 # FormatFlagsNativeFloatPacked
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 FormatFlagsNativeFloatPacked
 ```
 
 ## See Also
 
-- [FormatFlagIsAlignedHigh](videodriverkit/iouservideoformatflags/formatflagisalignedhigh.md)
+### Bitwise layout flags
+- [FormatFlagIsAlignedHigh](./formatflagisalignedhigh.md)
   Set if the sample bits are placed into the high bits of the channel, clear for low bit placement.
-- [LinearPCMFormatFlagIsAlignedHigh](videodriverkit/iouservideoformatflags/linearpcmformatflagisalignedhigh.md)
+- [LinearPCMFormatFlagIsAlignedHigh](./linearpcmformatflagisalignedhigh.md)
   Synonym for `FormatFlagIsAlignedHigh`.
-- [FormatFlagIsPacked](videodriverkit/iouservideoformatflags/formatflagispacked.md)
+- [FormatFlagIsPacked](./formatflagispacked.md)
   Set if the sample bits occupy the entire available bits for the channel, clear if they are high or low aligned within the channel.
-- [LinearPCMFormatFlagIsPacked](videodriverkit/iouservideoformatflags/linearpcmformatflagispacked.md)
+- [LinearPCMFormatFlagIsPacked](./linearpcmformatflagispacked.md)
   Synonym for `FormatFlagIsPacked`.
 
 

@@ -1,7 +1,8 @@
 # NSSharingServicePickerToolbarItem
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A toolbar item that displays the macOS share sheet.
 
@@ -17,52 +18,57 @@ A toolbar item that displays the macOS share sheet.
 class NSSharingServicePickerToolbarItem
 ```
 
+```objc
+@interface NSSharingServicePickerToolbarItem : NSToolbarItem
+```
+
 #### Overview
 
-An [`NSSharingServicePickerToolbarItem`](nssharingservicepickertoolbaritem.md) object is a standard item you add to your window’s toolbar. When someone clicks it, the item displays the macOS share sheet. Use this item to share the selected or focal content from the current window. For example, you might share the photo someone is viewing, the currently selected text, or the window’s associated document.
+An [`NSSharingServicePickerToolbarItem`](./nssharingservicepickertoolbaritem.md) object is a standard item you add to your window’s toolbar. When someone clicks it, the item displays the macOS share sheet. Use this item to share the selected or focal content from the current window. For example, you might share the photo someone is viewing, the currently selected text, or the window’s associated document.
 
-Provide the items to share using the associated [`delegate`](nssharingservicepickertoolbaritem/delegate.md) object. For an app built using Mac Catalyst, provide the items from the object in the [`activityItemsConfiguration`](nssharingservicepickertoolbaritem/activityitemsconfiguration.md) property.
+Provide the items to share using the associated [`delegate`](./nssharingservicepickertoolbaritem/delegate.md) object. For an app built using Mac Catalyst, provide the items from the object in the [`activityItemsConfiguration`](./nssharingservicepickertoolbaritem/activityitemsconfiguration.md) property.
 
 ## Topics
 
 ### Getting the Toolbar Items
-- [var delegate: (any NSSharingServicePickerToolbarItemDelegate)?](nssharingservicepickertoolbaritem/delegate.md)
+- [var delegate: (any NSSharingServicePickerToolbarItemDelegate)?](./nssharingservicepickertoolbaritem/delegate.md)
   The custom object from your app that provides the items to share.
-- [protocol NSSharingServicePickerToolbarItemDelegate](nssharingservicepickertoolbaritemdelegate.md)
+- [protocol NSSharingServicePickerToolbarItemDelegate](./nssharingservicepickertoolbaritemdelegate.md)
   An interface that provides the content to share from the macOS share sheet.
-- [var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)?](nssharingservicepickertoolbaritem/activityitemsconfiguration.md)
+- [var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)?](./nssharingservicepickertoolbaritem/activityitemsconfiguration.md)
   The custom object from an app built with Mac Catalyst that provides the items to share.
 
 ## Relationships
 
 ### Inherits From
-- [NSToolbarItem](nstoolbaritem.md)
+- [NSToolbarItem](./nstoolbaritem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMenuItemValidation](./nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSValidatedUserInterfaceItem](./nsvalidateduserinterfaceitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSSharingService](nssharingservice.md)
+### App Services
+- [class NSSharingService](./nssharingservice.md)
   An object that facilitates the sharing of content with social media services, or with apps like Mail or Safari.
-- [class NSSharingServicePicker](nssharingservicepicker.md)
+- [class NSSharingServicePicker](./nssharingservicepicker.md)
   A list of sharing services that the user can choose from.
-- [protocol NSPreviewRepresentableActivityItem](nspreviewrepresentableactivityitem.md)
+- [protocol NSPreviewRepresentableActivityItem](./nspreviewrepresentableactivityitem.md)
   An interface you adopt in custom objects that you want to share using the macOS share sheet.
-- [protocol NSServicesMenuRequestor](nsservicesmenurequestor.md)
+- [protocol NSServicesMenuRequestor](./nsservicesmenurequestor.md)
   A set of methods that support interaction with items users can share through a sharing service.
-- [protocol NSCloudSharingServiceDelegate](nscloudsharingservicedelegate.md)
+- [protocol NSCloudSharingServiceDelegate](./nscloudsharingservicedelegate.md)
   A set of methods for responding to the life cycle events of the cloud-sharing service.
-- [Services Functions](services-functions.md)
+- [Services Functions](./services-functions.md)
   Configure the contents of your app’s Services menu.
 
 

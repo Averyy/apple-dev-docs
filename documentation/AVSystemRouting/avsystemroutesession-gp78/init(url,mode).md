@@ -1,7 +1,8 @@
 # init(url:mode:)
 
 **Framework**: AVSystemRouting  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a session for initiating playback on a remote device.
 
@@ -18,14 +19,14 @@ init(url: URL, mode: AVSystemRoute.LaunchMode)
 
 #### Discussion
 
-Initialize a session with the media URL and launch mode before adding it to an [`AVSystemRoute`](avsystemroute-5s2um.md). The URL and mode determine how the remote device handles playback — either by launching your app’s counterpart or using the system’s built-in media player.
+Initialize a session with the media URL and launch mode before adding it to an [`AVSystemRoute`](../avsystemroute-5s2um.md). The URL and mode determine how the remote device handles playback — either by launching your app’s counterpart or using the system’s built-in media player.
 
-> **Note**: After creating a session, you must add it to an [`AVSystemRoute`](avsystemroute-5s2um.md) using [`addSession(_:)`](avsystemroute-5s2um/addsession(_:).md) before calling [`start()`](avsystemroutesession-gp78/start().md).
+> **Note**: After creating a session, you must add it to an [`AVSystemRoute`](../avsystemroute-5s2um.md) using [`addSession(_:)`](../avsystemroute-5s2um/addsession%28_%29.md) before calling [`start()`](./start%28%29.md).
 
 ## Parameters
 
 - `url`: The URL identifying the media content to play. This URL is passed to the remote application or player. For application mode, your remote application receives this URL to handle appropriately (for example, to navigate to specific content). For player mode, the system uses this URL to load media directly.
-- `mode`: The launch mode determining whether to start your app’s counterpart ([`AVSystemRoute.LaunchMode.application`](avsystemroute-5s2um/launchmode/application.md)) or the system media player ([`AVSystemRoute.LaunchMode.player`](avsystemroute-5s2um/launchmode/player.md)) on the remote device.
+- `mode`: The launch mode determining whether to start your app’s counterpart ([`AVSystemRoute.LaunchMode.application`](../avsystemroute-5s2um/launchmode/application.md)) or the system media player ([`AVSystemRoute.LaunchMode.player`](../avsystemroute-5s2um/launchmode/player.md)) on the remote device.
 
 
 ---

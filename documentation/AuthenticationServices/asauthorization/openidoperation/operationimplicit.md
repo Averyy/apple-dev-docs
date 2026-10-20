@@ -1,7 +1,8 @@
 # operationImplicit
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An operation that depends on the particular kind of credential provider.
 
@@ -20,13 +21,18 @@ An operation that depends on the particular kind of credential provider.
 static let operationImplicit: ASAuthorization.OpenIDOperation
 ```
 
+```c
+extern ASAuthorizationOpenIDOperation const ASAuthorizationOperationImplicit;
+```
+
 ## See Also
 
-- [static let operationLogin: ASAuthorization.OpenIDOperation](asauthorization/openidoperation/operationlogin.md)
+### Operation Types
+- [static let operationLogin: ASAuthorization.OpenIDOperation](./operationlogin.md)
   An operation used to authenticate a user.
-- [static let operationRefresh: ASAuthorization.OpenIDOperation](asauthorization/openidoperation/operationrefresh.md)
+- [static let operationRefresh: ASAuthorization.OpenIDOperation](./operationrefresh.md)
   An operation that refreshes the logged-in user’s credentials.
-- [static let operationLogout: ASAuthorization.OpenIDOperation](asauthorization/openidoperation/operationlogout.md)
+- [static let operationLogout: ASAuthorization.OpenIDOperation](./operationlogout.md)
   An operation that ends an authenticated session.
 
 

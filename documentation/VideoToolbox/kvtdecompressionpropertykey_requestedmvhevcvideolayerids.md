@@ -1,7 +1,8 @@
 # kVTDecompressionPropertyKey_RequestedMVHEVCVideoLayerIDs
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Requests multi-image decoding of specific MV-HEVC video layers.
 
@@ -18,9 +19,13 @@ Requests multi-image decoding of specific MV-HEVC video layers.
 let kVTDecompressionPropertyKey_RequestedMVHEVCVideoLayerIDs: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionPropertyKey_RequestedMVHEVCVideoLayerIDs;
+```
+
 #### Discussion
 
-This property is specific to MV-HEVC. The use of it requires you to use the [`VTDecompressionSessionSetMultiImageCallback`](vtdecompressionsessionsetmultiimagecallback.md) function to install a callback capable of receiving [`CMTaggedBufferGroupRef`](https://developer.apple.com/documentation/coremedia/cmtaggedbuffergroupref) objects in response to multi-image frame decode requests.
+This property is specific to MV-HEVC. The use of it requires you to use the [`VTDecompressionSessionSetMultiImageCallback`](./vtdecompressionsessionsetmultiimagecallback.md) function to install a callback capable of receiving [`CMTaggedBufferGroupRef`](../CoreMedia/cmtaggedbuffergroupref.md) objects in response to multi-image frame decode requests.
 
 MV-HEVC video layer IDs not in this list don’t need to be output, and the decoder may skip decoding them if not otherwise necessary.
 

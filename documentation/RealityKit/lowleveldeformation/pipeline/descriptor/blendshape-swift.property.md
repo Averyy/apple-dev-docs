@@ -1,7 +1,8 @@
 # blendShape
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Blend-shape parameters, or `nil` to omit blend-shape deformation.
 

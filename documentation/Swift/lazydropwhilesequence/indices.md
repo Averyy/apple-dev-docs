@@ -1,7 +1,8 @@
 # LazyDropWhileSequence.Indices
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the indices that are valid for subscripting the collection, in ascending order.
 
@@ -19,6 +20,8 @@ A type that represents the indices that are valid for subscripting the collectio
 ```swift
 typealias Indices = DefaultIndices<LazyDropWhileSequence<Base>>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 
 ---

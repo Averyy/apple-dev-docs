@@ -1,7 +1,8 @@
 # currentWhiteBalanceGains
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A special constant representing the current white balance setting.
 
@@ -17,9 +18,13 @@ A special constant representing the current white balance setting.
 class let currentWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains
 ```
 
+```c
+extern const AVCaptureWhiteBalanceGains AVCaptureWhiteBalanceGainsCurrent;
+```
+
 #### Discussion
 
-Pass this value to [`setWhiteBalanceModeLocked(with:completionHandler:)`](avcapturedevice/setwhitebalancemodelocked(with:completionhandler:).md) to lock white balance gains to their current value (that is, disable automatic white balancing).
+Pass this value to [`setWhiteBalanceModeLocked(with:completionHandler:)`](./setwhitebalancemodelocked%28with,completionhandler%29.md) to lock white balance gains to their current value (that is, disable automatic white balancing).
 
 
 ---

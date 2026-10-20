@@ -1,7 +1,8 @@
 # webView(_:authenticationChallenge:shouldAllowDeprecatedTLS:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to continue with a connection that uses a deprecated version of TLS.
 
@@ -15,7 +16,15 @@ Asks the delegate whether to continue with a connection that uses a deprecated v
 ## Declaration
 
 ```swift
+optional func webView(_ webView: WKWebView, authenticationChallenge challenge: URLAuthenticationChallenge, shouldAllowDeprecatedTLS decisionHandler: @escaping @MainActor @Sendable (Bool) -> Void)
+```
+
+```swift
 optional func webView(_ webView: WKWebView, shouldAllowDeprecatedTLSFor challenge: URLAuthenticationChallenge) async -> Bool
+```
+
+```objc
+- (void) webView:(WKWebView *) webView authenticationChallenge:(NSURLAuthenticationChallenge *) challenge shouldAllowDeprecatedTLS:(void (^)(_Bool)) decisionHandler;
 ```
 
 #### Discussion
@@ -26,11 +35,14 @@ If you don’t implement this method, the web view uses system settings to deter
 
 - `webView`: The web view that receives the authentication challenge.
 - `challenge`: The authentication challenge.
-- `decisionHandler`: The completion handler block to execute with the decision. This handler has no return value and takes the following parameter: - **decision**: A Boolean value that indicates whether to continue to use a deprecated version of TLS. Specify [`true`](https://developer.apple.com/documentation/swift/true) to continue, or [`false`](https://developer.apple.com/documentation/swift/false) to reject the connection.
+- `decisionHandler`: The completion handler block to execute with the decision. This handler has no return value and takes the following parameter:
+
+  - **decision**: A Boolean value that indicates whether to continue to use a deprecated version of TLS. Specify [`true`](../../Swift/true.md) to continue, or [`false`](../../Swift/false.md) to reject the connection.
 
 ## See Also
 
-- [func webView(WKWebView, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](wknavigationdelegate/webview(_:didreceive:completionhandler:).md)
+### Responding to authentication challenges
+- [func webView(WKWebView, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](./webview%28_,didreceive,completionhandler%29.md)
   Asks the delegate to respond to an authentication challenge.
 
 

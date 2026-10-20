@@ -1,7 +1,8 @@
 # PTChannelError
 
 **Framework**: Push to Talk  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a channel error.
 
@@ -19,34 +20,35 @@ struct PTChannelError
 ## Topics
 
 ### Inspecting a channel error
-- [PTChannelError.Code](ptchannelerror-swift.struct/code.md)
+- [PTChannelError.Code](./ptchannelerror-swift.struct/code.md)
   Error codes for channel operations.
-- [Error constants](ptchannelerror-error-constants.md)
+- [Error constants](./ptchannelerror-error-constants.md)
   Error codes for channel operations.
 ### Type Properties
-- [static var errorDomain: String](ptchannelerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./ptchannelerror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PTChannelError.Code](ptchannelerror-swift.struct/code.md)
+### Push to Talk errors
+- [PTChannelError.Code](./ptchannelerror-swift.struct/code.md)
   Error codes for channel operations.
-- [struct PTInstantiationError](ptinstantiationerror-swift.struct.md)
+- [struct PTInstantiationError](./ptinstantiationerror-swift.struct.md)
   A structure that represents an instantiation error.
-- [PTInstantiationError.Code](ptinstantiationerror-swift.struct/code.md)
+- [PTInstantiationError.Code](./ptinstantiationerror-swift.struct/code.md)
   Error codes for instantiation operations.
-- [let PTChannelErrorDomain: String](ptchannelerrordomain.md)
+- [let PTChannelErrorDomain: String](./ptchannelerrordomain.md)
   A string representation of the channel error domain.
-- [let PTInstantiationErrorDomain: String](ptinstantiationerrordomain.md)
+- [let PTInstantiationErrorDomain: String](./ptinstantiationerrordomain.md)
   A string representation of the instantiation error domain.
 
 

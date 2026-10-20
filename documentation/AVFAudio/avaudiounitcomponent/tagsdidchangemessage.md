@@ -1,7 +1,8 @@
 # AVAudioUnitComponent.TagsDidChangeMessage
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type-safe notification message for audio unit component tag changes.
 
@@ -23,21 +24,22 @@ This notification is posted when the user tags of an audio unit component are mo
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var iconURL: URL?](avaudiounitcomponent/iconurl.md)
+### Getting Audio Unit component tags
+- [var iconURL: URL?](./iconurl.md)
   The URL of an icon that represents the audio unit component.
-- [var icon: UIImage?](avaudiounitcomponent/icon.md)
+- [var icon: UIImage?](./icon.md)
   An icon that represents the component.
-- [var localizedTypeName: String](avaudiounitcomponent/localizedtypename.md)
+- [var localizedTypeName: String](./localizedtypename.md)
   The localized type name of the component.
-- [var allTagNames: [String]](avaudiounitcomponent/alltagnames.md)
+- [var allTagNames: [String]](./alltagnames.md)
   An array of tag names for the audio unit component.
-- [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
+- [var userTagNames: [String]](./usertagnames.md)
   An array of tags the user creates.
 
 

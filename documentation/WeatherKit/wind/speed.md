@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sustained wind speed.
 
@@ -22,13 +23,14 @@ var speed: Measurement<UnitSpeed>
 
 ## See Also
 
-- [Wind.CompassDirection](wind/compassdirection-swift.enum.md)
+### Getting the properties
+- [Wind.CompassDirection](./compassdirection-swift.enum.md)
   A compass composed of cardinal and intercardinal directions.
-- [var compassDirection: Wind.CompassDirection](wind/compassdirection-swift.property.md)
+- [var compassDirection: Wind.CompassDirection](./compassdirection-swift.property.md)
   The general indicator of wind direction.
-- [var direction: Measurement<UnitAngle>](wind/direction.md)
+- [var direction: Measurement<UnitAngle>](./direction.md)
   The direction the wind is coming from in degrees.
-- [var gust: Measurement<UnitSpeed>?](wind/gust.md)
+- [var gust: Measurement<UnitSpeed>?](./gust.md)
   A sudden increase in wind speed due to friction, wind shear, or by heating.
 
 

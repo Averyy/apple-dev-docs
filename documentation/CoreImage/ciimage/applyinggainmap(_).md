@@ -1,7 +1,8 @@
 # applyingGainMap(_:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an image that applies a gain map Core Image image to the received Core Image image.
 
@@ -19,19 +20,24 @@ Create an image that applies a gain map Core Image image to the received Core Im
 func applyingGainMap(_ gainmap: CIImage) -> CIImage
 ```
 
+```objc
+- (CIImage *) imageByApplyingGainMap:(CIImage *) gainmap;
+```
+
 #### Return Value
 
- An autoreleased [`CIImage`](ciimage.md) instance or the received image.
+ An autoreleased [`CIImage`](../ciimage.md) instance or the received image.
 
 #### Discussion
 
-The gain map image can be obtained by creating a [`CIImage`](ciimage.md) instance from `NSURL`/`NSData` and setting the [`auxiliaryHDRGainMap`](ciimageoption/auxiliaryhdrgainmap.md) option set to `@YES`.
+The gain map image can be obtained by creating a [`CIImage`](../ciimage.md) instance from `NSURL`/`NSData` and setting the [`auxiliaryHDRGainMap`](../ciimageoption/auxiliaryhdrgainmap.md) option set to `@YES`.
 
-If the gain map [`CIImage`](ciimage.md) instance doesn’t have the needed [`properties`](ciimage/properties.md) metadata, the received image will be returned as-is.
+If the gain map [`CIImage`](../ciimage.md) instance doesn’t have the needed [`properties`](./properties.md) metadata, the received image will be returned as-is.
 
 ## See Also
 
-- [func applyingGainMap(CIImage, headroom: Float) -> CIImage](ciimage/applyinggainmap(_:headroom:).md)
+### Instance Methods
+- [func applyingGainMap(CIImage, headroom: Float) -> CIImage](./applyinggainmap%28_,headroom%29.md)
   Create an image that applies a gain map Core Image image with a specified headroom to the received Core Image image.
 
 

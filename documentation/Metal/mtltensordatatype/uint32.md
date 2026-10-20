@@ -1,7 +1,8 @@
 # MTLTensorDataType.uint32
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 32-bit unsigned integer data type.
 
@@ -17,6 +18,10 @@ A 32-bit unsigned integer data type.
 
 ```swift
 case uint32
+```
+
+```c
+MTLTensorDataTypeUInt32
 ```
 
 

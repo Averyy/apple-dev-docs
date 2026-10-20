@@ -1,7 +1,8 @@
 # strokeRect
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Draws a rectangle using the current stroke color, pattern, or gradient.
 
@@ -11,7 +12,7 @@ Draws a rectangle using the current stroke color, pattern, or gradient.
 
 ## Declaration
 
-```swift
+```
 void strokeRect(
     unrestricted float x, 
     unrestricted float y, 
@@ -33,9 +34,10 @@ All parameter values are in the canvas’s current coordinate system, subject to
 
 ## See Also
 
-- [clearRect](canvasrenderingcontext2d/1632646-clearrect.md)
+### Drawing Rectangles
+- [clearRect](./api-1632646-clearrect.md)
   Clears the specified rectangle to transparent black—RGBa(0,0,0,0).
-- [fillRect](canvasrenderingcontext2d/1633676-fillrect.md)
+- [fillRect](./api-1633676-fillrect.md)
   Fills a specified rectangle in the current fill color, gradient, or pattern.
 
 

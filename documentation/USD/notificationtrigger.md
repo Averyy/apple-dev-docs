@@ -17,22 +17,23 @@ class Preliminary_Trigger "NotificationTrigger"
 ## Topics
 
 ### Properties
-- [info:id](info-id.md)
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [identifier](identifier.md)
+- [identifier](./identifier.md)
   A string value that identifies the app-specific notification.
 
 ## See Also
 
-- [Preliminary_Trigger](preliminary-trigger.md)
+### Triggers
+- [Preliminary_Trigger](./preliminary-trigger.md)
   A condition that, when met, performs an action.
-- [CollideTrigger](collidetrigger.md)
+- [CollideTrigger](./collidetrigger.md)
   A trigger that activates when specified objects collide.
-- [ProximityToCameraTrigger](proximitytocameratrigger.md)
+- [ProximityToCameraTrigger](./proximitytocameratrigger.md)
   A trigger that fires when the camera crosses the distance threshold of an object.
-- [SceneTransitionTrigger](scenetransitiontrigger.md)
+- [SceneTransitionTrigger](./scenetransitiontrigger.md)
   A trigger that fires during scene transitions.
-- [TapGestureTrigger](tapgesturetrigger.md)
+- [TapGestureTrigger](./tapgesturetrigger.md)
   A trigger that fires when the user taps.
 
 

@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](ordinalencoder/transformer/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates an ordinal encoding transformer from a decoder.
 
 

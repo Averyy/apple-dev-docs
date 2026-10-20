@@ -1,7 +1,8 @@
 # seedRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +21,8 @@ var seedRepresentation: Data { get }
 
 ## See Also
 
-- [var integrityCheckedRepresentation: Data](xwingmlkem768x25519/privatekey/integritycheckedrepresentation.md)
+### Inspecting a private key’s properties
+- [var integrityCheckedRepresentation: Data](./integritycheckedrepresentation.md)
 
 
 ---

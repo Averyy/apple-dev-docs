@@ -1,7 +1,8 @@
 # k16LE5551PixelFormat
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+

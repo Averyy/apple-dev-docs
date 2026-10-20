@@ -1,7 +1,8 @@
 # fullContactInformation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reports full contact information for collision events.
 

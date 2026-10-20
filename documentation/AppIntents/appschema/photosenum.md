@@ -1,7 +1,8 @@
 # AppSchema.PhotosEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the photos domain.
 
@@ -21,31 +22,32 @@ protocol PhotosEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var albumType: some AppSchemaEnum](appschema/photosenum/albumtype.md)
+- [var albumType: some AppSchemaEnum](./photosenum/albumtype.md)
   An enum schema for an album type parameter.
-- [var assetType: some AppSchemaEnum](appschema/photosenum/assettype.md)
+- [var assetType: some AppSchemaEnum](./photosenum/assettype.md)
   An enum schema for an asset type parameter.
-- [var filterType: some AppSchemaEnum](appschema/photosenum/filtertype.md)
+- [var filterType: some AppSchemaEnum](./photosenum/filtertype.md)
   An enum schema for a filter type parameter.
-- [var rotationDirection: some AppSchemaEnum](appschema/photosenum/rotationdirection.md)
+- [var rotationDirection: some AppSchemaEnum](./photosenum/rotationdirection.md)
   An enum schema for a rotation direction parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var albumType: some AppSchemaEnum](appschema/photosenum/albumtype.md)
+### Types for static parameters
+- [var albumType: some AppSchemaEnum](./photosenum/albumtype.md)
   An enum schema for an album type parameter.
-- [var assetType: some AppSchemaEnum](appschema/photosenum/assettype.md)
+- [var assetType: some AppSchemaEnum](./photosenum/assettype.md)
   An enum schema for an asset type parameter.
-- [var filterType: some AppSchemaEnum](appschema/photosenum/filtertype.md)
+- [var filterType: some AppSchemaEnum](./photosenum/filtertype.md)
   An enum schema for a filter type parameter.
-- [var rotationDirection: some AppSchemaEnum](appschema/photosenum/rotationdirection.md)
+- [var rotationDirection: some AppSchemaEnum](./photosenum/rotationdirection.md)
   An enum schema for a rotation direction parameter.
 
 

@@ -1,7 +1,8 @@
 # readAttributeCurrentPositionLift(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCurrentPositionLift(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCurrentPositionLift() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCurrentPositionLiftWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

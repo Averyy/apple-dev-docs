@@ -1,7 +1,8 @@
 # clusterThermostatAttributeOccupiedCoolingSetpointID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterThermostatAttributeOccupiedCoolingSetpointID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterThermostatAttributeOccupiedCoolingSetpointID
 ```
 
 

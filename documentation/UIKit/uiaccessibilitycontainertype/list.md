@@ -1,7 +1,8 @@
 # UIAccessibilityContainerType.list
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A list of data.
 
@@ -19,15 +20,20 @@ A list of data.
 case list
 ```
 
+```c
+UIAccessibilityContainerTypeList
+```
+
 ## See Also
 
-- [UIAccessibilityContainerType.none](uiaccessibilitycontainertype/none.md)
+### Constants
+- [UIAccessibilityContainerType.none](./none.md)
   No additional data.
-- [UIAccessibilityContainerType.dataTable](uiaccessibilitycontainertype/datatable.md)
+- [UIAccessibilityContainerType.dataTable](./datatable.md)
   A table that contains structured data.
-- [UIAccessibilityContainerType.landmark](uiaccessibilitycontainertype/landmark.md)
+- [UIAccessibilityContainerType.landmark](./landmark.md)
   Landmark data.
-- [UIAccessibilityContainerType.semanticGroup](uiaccessibilitycontainertype/semanticgroup.md)
+- [UIAccessibilityContainerType.semanticGroup](./semanticgroup.md)
   A semantic group of data.
 
 

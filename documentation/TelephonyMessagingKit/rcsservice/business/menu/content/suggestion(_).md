@@ -1,7 +1,8 @@
 # RCSService.Business.Menu.Content.suggestion(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Suggestion (action or reply).
 
@@ -16,9 +17,10 @@ case suggestion(RCSService.Business.Suggestion)
 
 ## See Also
 
-- [RCSService.Business.Menu.Content.submenu(_:)](rcsservice/business/menu/content/submenu(_:).md)
+### Determining content type
+- [RCSService.Business.Menu.Content.submenu(_:)](./submenu%28_%29.md)
   A sub menu.
-- [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
+- [RCSService.Business.Suggestion](../../suggestion.md)
   Enumeration representing a suggestion from a business.
 
 

@@ -1,7 +1,8 @@
 # BNNS.ArithmeticTernaryFunction.multiplyAdd
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that calculates the element-wise fused multiply-add of its three inputs.
 
@@ -11,8 +12,10 @@ An operation that calculates the element-wise fused multiply-add of its three in
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

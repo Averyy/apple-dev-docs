@@ -1,7 +1,8 @@
 # localizedProviderName
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name of the provider of this table for user display.
 
@@ -18,6 +19,10 @@ The localized name of the provider of this table for user display.
 
 ```swift
 var localizedProviderName: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * localizedProviderName;
 ```
 
 

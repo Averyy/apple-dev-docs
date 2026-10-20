@@ -1,7 +1,8 @@
 # emissionLongitude
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The longitudinal orientation of the emission angle. Animatable.
 
@@ -19,6 +20,10 @@ The longitudinal orientation of the emission angle. Animatable.
 var emissionLongitude: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat emissionLongitude;
+```
+
 #### Discussion
 
 The emission longitude is the orientation of the emission angle in the xy-plane. it is also often referred to as the azimuth.
@@ -27,13 +32,14 @@ The default value of this property is `0.0`.
 
 ## See Also
 
-- [var spin: CGFloat](caemittercell/spin.md)
+### Setting Emitter Cell Motion Attributes
+- [var spin: CGFloat](./spin.md)
   The rotational velocity, measured in radians per second, to apply to the cell. Animatable.
-- [var spinRange: CGFloat](caemittercell/spinrange.md)
+- [var spinRange: CGFloat](./spinrange.md)
   The amount by which the spin of the cell can vary over its lifetime. Animatable.
-- [var emissionLatitude: CGFloat](caemittercell/emissionlatitude.md)
+- [var emissionLatitude: CGFloat](./emissionlatitude.md)
   The latitudinal orientation of the emission angle. Animatable.
-- [var emissionRange: CGFloat](caemittercell/emissionrange.md)
+- [var emissionRange: CGFloat](./emissionrange.md)
   The angle, in radians, defining a cone around the emission angle. Animatable.
 
 

@@ -1,7 +1,8 @@
 # reshape(withSourceArray:shape:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func reshape(withSourceArray sourceArray: MPSNDArray, shape: [NSNumber]) -> MPSNDArray?
+```
+
+```objc
+- (MPSNDArray *) reshapeWithSourceArray:(MPSNDArray *) sourceArray shape:(MPSShape *) shape;
 ```
 
 #### Return Value

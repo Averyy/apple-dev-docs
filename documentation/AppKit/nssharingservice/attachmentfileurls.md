@@ -1,7 +1,8 @@
 # attachmentFileURLs
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of NSURL objects representing the files that were shared.
 
@@ -14,11 +15,16 @@ An array of NSURL objects representing the files that were shared.
 var attachmentFileURLs: [URL]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSURL *> * attachmentFileURLs;
+```
+
 ## See Also
 
-- [var messageBody: String?](nssharingservice/messagebody.md)
+### Getting the Shared Items
+- [var messageBody: String?](./messagebody.md)
   The message body as a string.
-- [var permanentLink: URL?](nssharingservice/permanentlink.md)
+- [var permanentLink: URL?](./permanentlink.md)
   A permanent URL (permalink) that your app can use to access the post.
 
 

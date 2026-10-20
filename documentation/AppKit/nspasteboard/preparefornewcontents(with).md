@@ -1,7 +1,8 @@
 # prepareForNewContents(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the pasteboard to receive new contents, removing the existing pasteboard contents.
 
@@ -14,9 +15,14 @@ Prepares the pasteboard to receive new contents, removing the existing pasteboar
 func prepareForNewContents(with options: NSPasteboard.ContentsOptions = []) -> Int
 ```
 
+```objc
+- (NSInteger) prepareForNewContentsWithOptions:(NSPasteboardContentsOptions) options;
+```
+
 ## See Also
 
-- [NSPasteboard.ContentsOptions](nspasteboard/contentsoptions.md)
+### Preparing the pasteboard for content
+- [NSPasteboard.ContentsOptions](./contentsoptions.md)
   Options for preparing the pasteboard.
 
 

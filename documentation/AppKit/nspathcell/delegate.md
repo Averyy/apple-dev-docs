@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the receiver’s delegate.
 
@@ -12,6 +13,10 @@ Sets the receiver’s delegate.
 
 ```swift
 weak var delegate: (any NSPathCellDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSPathCellDelegate> delegate;
 ```
 
 ## Parameters

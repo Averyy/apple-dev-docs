@@ -1,7 +1,8 @@
 # init(platformString:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string by interpreting the null-terminated platform string as UTF-8 on Unix and UTF-16 on Windows.
 

@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that indicates whether to drop the element.
 
@@ -22,7 +23,8 @@ let predicate: (Publishers.DropWhile<Upstream>.Output) -> Bool
 
 ## See Also
 
-- [let upstream: Upstream](publishers/dropwhile/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

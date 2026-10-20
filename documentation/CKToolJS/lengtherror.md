@@ -1,7 +1,8 @@
 # LengthError
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class of length-related validation errors.
 
@@ -10,7 +11,7 @@ The base class of length-related validation errors.
 
 ## Declaration
 
-```swift
+```
 interface LengthError
 ```
 
@@ -21,24 +22,25 @@ Extends `ValidationError`.
 ## Topics
 
 ### Instance Properties
-- [value](lengtherror/value.md)
+- [value](./lengtherror/value.md)
   The length value that failed validation.
 
 ## Relationships
 
 ### Inherits From
-- [LengthGreaterThanMaxError](lengthgreaterthanmaxerror.md)
-- [LengthLessThanMinError](lengthlessthanminerror.md)
+- [LengthGreaterThanMaxError](./lengthgreaterthanmaxerror.md)
+- [LengthLessThanMinError](./lengthlessthanminerror.md)
 ### Inherited By
-- [ValidationError](validationerror.md)
+- [ValidationError](./validationerror.md)
 
 ## See Also
 
-- [LengthGreaterThanMaxError](lengthgreaterthanmaxerror.md)
+### Length Errors
+- [LengthGreaterThanMaxError](./lengthgreaterthanmaxerror.md)
   An error a validator emits when the length property of the value given is greater than the allowed maximum.
-- [LengthLessThanMinError](lengthlessthanminerror.md)
+- [LengthLessThanMinError](./lengthlessthanminerror.md)
   An error a validator emits when the length property of the value given is less than the allowed minimum.
-- [LengthNotNumericError](lengthnotnumericerror.md)
+- [LengthNotNumericError](./lengthnotnumericerror.md)
   An error a validator emits when the length property of a value isn’t numeric.
 
 

@@ -1,7 +1,8 @@
 # precomposedStringWithCompatibilityMapping
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string created by normalizing the string’s contents using Form KC.
 

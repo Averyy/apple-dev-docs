@@ -1,7 +1,8 @@
 # headphoneAccommodations
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var headphoneAccommodations: SRAcousticSettings.Accessibility.HeadphoneAccommodations { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) SRAcousticSettingsAccessibilityHeadphoneAccommodations * headphoneAccommodations;
 ```
 
 #### Discussion

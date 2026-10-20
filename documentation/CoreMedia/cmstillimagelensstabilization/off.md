@@ -1,7 +1,8 @@
 # CMStillImageLensStabilization.off
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lens stabilization module was not used during this capture.
 

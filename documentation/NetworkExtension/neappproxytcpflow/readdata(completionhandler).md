@@ -1,7 +1,8 @@
 # readData(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Read data from the flow.
 
@@ -18,17 +19,24 @@ Read data from the flow.
 func readData(completionHandler: @escaping (Data?, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) readDataWithCompletionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
+```
+
 ## Mentions
 
-- [Handling Flow Copying](handling-flow-copying.md)
+- [Handling Flow Copying](../handling-flow-copying.md)
 
 ## Parameters
 
-- `completionHandler`: A block that will be executed by the system on an internal system thread when some data is read from the flow. The block is passed either the data that was read or a non-nil error if an error occurred. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](neappproxyflow.md) for a list of possible errors. If the data parameter has a length of 0 then no data can be subsequently read from the flow. > **Note**:  The completion handler is only called for the single read operation that was initiated by calling this method. If the caller wants to read more data then it should call this method again to schedule another read operation and another execution of the completion handler block.
+- `completionHandler`: A block that will be executed by the system on an internal system thread when some data is read from the flow. The block is passed either the data that was read or a non-nil error if an error occurred. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](../neappproxyflow.md) for a list of possible errors. If the data parameter has a length of 0 then no data can be subsequently read from the flow.
+
+  > **Note**:  The completion handler is only called for the single read operation that was initiated by calling this method. If the caller wants to read more data then it should call this method again to schedule another read operation and another execution of the completion handler block.
 
 ## See Also
 
-- [func write(Data, withCompletionHandler: ((any Error)?) -> Void)](neappproxytcpflow/write(_:withcompletionhandler:).md)
+### Handling flow data
+- [func write(Data, withCompletionHandler: ((any Error)?) -> Void)](./write%28_,withcompletionhandler%29.md)
   Write data to the flow.
 
 

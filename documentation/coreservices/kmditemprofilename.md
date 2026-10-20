@@ -1,7 +1,8 @@
 # kMDItemProfileName
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The name of the color profile used by the document contents. A CFString.
 
@@ -12,6 +13,10 @@ The name of the color profile used by the document contents. A CFString.
 
 ```swift
 let kMDItemProfileName: CFString!
+```
+
+```c
+const CFStringRef kMDItemProfileName;
 ```
 
 

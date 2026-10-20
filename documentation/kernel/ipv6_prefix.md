@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ipv6_prefix {
     ...
 };
@@ -17,8 +17,8 @@ struct ipv6_prefix {
 ## Topics
 
 ### Instance Properties
-- [ipv6_prefix](ipv6_prefix/3943804-ipv6_prefix.md)
-- [prefix_len](ipv6_prefix/3943805-prefix_len.md)
+- [ipv6_prefix](./ipv6_prefix/api-3943804-ipv6_prefix.md)
+- [prefix_len](./ipv6_prefix/api-3943805-prefix_len.md)
 
 
 ---

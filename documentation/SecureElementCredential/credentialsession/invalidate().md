@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: SecureElementCredential  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inmediately invalidates a session.
 
@@ -25,7 +26,8 @@ You can invalidate a session while in any session state.
 
 ## See Also
 
-- [static func startSession() async throws -> CredentialSession](credentialsession/startsession.md)
+### Managing the credential session life cycle
+- [static func startSession() async throws -> CredentialSession](./startsession%28%29.md)
   Requests a session to view, manage, or use credentials in the Secure Element.
 
 

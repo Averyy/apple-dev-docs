@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates classification metrics for a sequence of predicted and ground truth label pairs.
 
@@ -20,19 +21,26 @@ Creates classification metrics for a sequence of predicted and ground truth labe
 init(_ pairs: some Sequence<(predicted: Label, label: Label)>)
 ```
 
+**Other overloads**:
+
+```swift
+init<S, Inner>(_ predicted: S) async throws where S : Sequence, Inner : TemporalSequence, S.Element == AnnotatedFeature<Inner, Label>, Inner.Feature == ClassificationDistribution<Label>
+```
+
 ## Parameters
 
 - `pairs`: A sequence of predicted and true label pairs.
 
 ## See Also
 
-- [init<Predicted, Correct>(Predicted, Correct)](classificationmetrics/init(_:_:).md)
+### Creating the distribution
+- [init<Predicted, Correct>(Predicted, Correct)](./init%28_,_%29.md)
   Creates classification metrics for predicted and ground truth labels.
-- [init()](classificationmetrics/init.md)
+- [init()](./init%28%29.md)
   Creates empty classification metrics.
-- [init(some Sequence<(predicted: Label, label: Label)>, labels: Set<Label>)](classificationmetrics/init(_:labels:).md)
+- [init(some Sequence<(predicted: Label, label: Label)>, labels: Set<Label>)](./init%28_,labels%29.md)
   Creates classification metrics for a sequence of predicted and ground truth label pairs.
-- [init<Predicted, Correct>(predicted: Predicted, groundTruth: Correct, labels: Set<Label>)](classificationmetrics/init(predicted:groundtruth:labels:).md)
+- [init<Predicted, Correct>(predicted: Predicted, groundTruth: Correct, labels: Set<Label>)](./init%28predicted,groundtruth,labels%29.md)
   Creates classification metrics for predicted and ground truth labels.
 
 

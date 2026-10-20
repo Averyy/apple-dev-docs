@@ -1,15 +1,18 @@
 # users
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All users associated with the home.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 9.0
+- iPadOS 8.0+ - Deprecated in 9.0
+- Mac Catalyst 8.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -17,11 +20,16 @@ All users associated with the home.
 var users: [HMUser] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMUser *> * users;
+```
+
 ## See Also
 
-- [func addUser(completionHandler: (HMUser?, (any Error)?) -> Void)](hmhome/adduser(completionhandler:).md)
+### Deprecated symbols
+- [func addUser(completionHandler: (HMUser?, (any Error)?) -> Void)](./adduser%28completionhandler%29.md)
   Adds a user to the home.
-- [func removeUser(HMUser, completionHandler: ((any Error)?) -> Void)](hmhome/removeuser(_:completionhandler:).md)
+- [func removeUser(HMUser, completionHandler: ((any Error)?) -> Void)](./removeuser%28_,completionhandler%29.md)
   Removes a user from the home.
 
 

@@ -1,7 +1,8 @@
 # LocalTestingInvocationDecoder
 
 **Framework**: Distributed  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,16 +22,17 @@ final class LocalTestingInvocationDecoder
 ## Relationships
 
 ### Conforms To
-- [DistributedTargetInvocationDecoder](distributedtargetinvocationdecoder.md)
+- [DistributedTargetInvocationDecoder](./distributedtargetinvocationdecoder.md)
 
 ## See Also
 
-- [class LocalTestingDistributedActorSystem](localtestingdistributedactorsystem.md)
+### Local Testing
+- [class LocalTestingDistributedActorSystem](./localtestingdistributedactorsystem.md)
   A `DistributedActorSystem` designed for local only testing.
-- [struct LocalTestingActorID](localtestingactorid.md)
-- [typealias LocalTestingActorAddress](localtestingactoraddress.md)
-- [struct LocalTestingInvocationEncoder](localtestinginvocationencoder.md)
-- [struct LocalTestingInvocationResultHandler](localtestinginvocationresulthandler.md)
+- [struct LocalTestingActorID](./localtestingactorid.md)
+- [typealias LocalTestingActorAddress](./localtestingactoraddress.md)
+- [struct LocalTestingInvocationEncoder](./localtestinginvocationencoder.md)
+- [struct LocalTestingInvocationResultHandler](./localtestinginvocationresulthandler.md)
 
 
 ---

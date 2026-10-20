@@ -1,7 +1,8 @@
 # attributedStringForCandidate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block that converts a candidate object into an attributed string for display in the candidate list item.
 
@@ -14,19 +15,24 @@ A block that converts a candidate object into an attributed string for display i
 var attributedStringForCandidate: ((CandidateType, Int) -> NSAttributedString)? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSAttributedString *(^)(id, long) attributedStringForCandidate;
+```
+
 #### Discussion
 
-This property is not required if the object type of your candidates is [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), or [`NSTextCheckingResult`](https://developer.apple.com/documentation/foundation/nstextcheckingresult). The default value of this property is `nil`.
+This property is not required if the object type of your candidates is [`NSString`](../../Foundation/nsstring.md), [`NSAttributedString`](../../Foundation/nsattributedstring.md), or [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md). The default value of this property is `nil`.
 
-If the attributed string you return does not specify [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/font) or [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/foregroundcolor) then the candidate is displayed with the standard appearance font and color.
+If the attributed string you return does not specify [`font`](../../Foundation/nsattributedstring/key/font.md) or [`foregroundColor`](../../Foundation/nsattributedstring/key/foregroundcolor.md) then the candidate is displayed with the standard appearance font and color.
 
 ## See Also
 
-- [func setCandidates([CandidateType], forSelectedRange: NSRange, in: String?)](nscandidatelisttouchbaritem/setcandidates(_:forselectedrange:in:).md)
+### Populating the candidate list
+- [func setCandidates([CandidateType], forSelectedRange: NSRange, in: String?)](./setcandidates%28_,forselectedrange,in%29.md)
   Sets an array of candidate objects to be displayed in the candidate list bar item.
-- [var candidates: [CandidateType]](nscandidatelisttouchbaritem/candidates.md)
-  The array of candidate objects previously set by [`setCandidates(_:forSelectedRange:in:)`](nscandidatelisttouchbaritem/setcandidates(_:forselectedrange:in:).md).
-- [var allowsTextInputContextCandidates: Bool](nscandidatelisttouchbaritem/allowstextinputcontextcandidates.md)
+- [var candidates: [CandidateType]](./candidates.md)
+  The array of candidate objects previously set by [`setCandidates(_:forSelectedRange:in:)`](./setcandidates%28_,forselectedrange,in%29.md).
+- [var allowsTextInputContextCandidates: Bool](./allowstextinputcontextcandidates.md)
   A Boolean value that specifies whether a candidate list item displays candidates from text input providers.
 
 

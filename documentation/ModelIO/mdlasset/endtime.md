@@ -1,7 +1,8 @@
 # endTime
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp for the last timed data sample in the asset.
 
@@ -19,6 +20,10 @@ The timestamp for the last timed data sample in the asset.
 var endTime: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSTimeInterval endTime;
+```
+
 #### Discussion
 
 Timed data in an asset is clamped to the start and end times—requesting sample data for a time sample after the start time returns the sample data at the end time.
@@ -27,9 +32,10 @@ If the asset does not contain timed information, this property’s value is zero
 
 ## See Also
 
-- [var frameInterval: TimeInterval](mdlasset/frameinterval.md)
+### Working with Timed Information
+- [var frameInterval: TimeInterval](./frameinterval.md)
   The time interval between data samples in the asset.
-- [var startTime: TimeInterval](mdlasset/starttime.md)
+- [var startTime: TimeInterval](./starttime.md)
   The timestamp for the first timed data sample in the asset.
 
 

@@ -1,7 +1,8 @@
 # onChange(of:initial:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the given value changes.
 
@@ -21,13 +22,20 @@ nonisolated
 func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping () -> Void) -> some Scene where V : Equatable
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping (V, V) -> Void) -> some Scene where V : Equatable
+```
+
 #### Return Value
 
 A scene that triggers an action in response to a change.
 
 #### Discussion
 
-Use this modifier to trigger a side effect when a value changes, like the value associated with an [`Environment`](environment.md) key or a [`Binding`](binding.md). For example, you can clear a cache when you notice that a scene moves to the background:
+Use this modifier to trigger a side effect when a value changes, like the value associated with an [`Environment`](../environment.md) key or a [`Binding`](../binding.md). For example, you can clear a cache when you notice that a scene moves to the background:
 
 ```swift
 struct MyScene: Scene {
@@ -59,15 +67,16 @@ When the value changes, the new version of the closure will be called, so any ca
 
 ## Parameters
 
-- `value`: The value to check when determining whether to run the closure. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
+- `value`: The value to check when determining whether to run the closure. The value must conform to the [`Equatable`](../../Swift/equatable.md) protocol.
 - `initial`: Whether the action should be run when this scene initially appears.
 - `action`: A closure to run when the value changes.
 
 ## See Also
 
-- [func handlesExternalEvents(matching: Set<String>) -> some Scene](scene/handlesexternalevents(matching:).md)
+### Watching for changes
+- [func handlesExternalEvents(matching: Set<String>) -> some Scene](./handlesexternalevents%28matching%29.md)
   Specifies the external events for which SwiftUI opens a new instance of the modified scene.
-- [func onChange<V>(of: V, perform: (V) -> Void) -> some Scene](scene/onchange(of:perform:).md)
+- [func onChange<V>(of: V, perform: (V) -> Void) -> some Scene](./onchange%28of,perform%29.md)
   Adds an action to perform when the given value changes.
 
 

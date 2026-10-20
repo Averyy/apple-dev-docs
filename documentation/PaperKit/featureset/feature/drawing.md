@@ -1,7 +1,8 @@
 # FeatureSet.Feature.drawing
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Supports drawing.
 

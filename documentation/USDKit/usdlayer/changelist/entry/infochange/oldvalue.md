@@ -1,7 +1,8 @@
 # oldValue
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value before the change, or `nil` if the field was added.
 

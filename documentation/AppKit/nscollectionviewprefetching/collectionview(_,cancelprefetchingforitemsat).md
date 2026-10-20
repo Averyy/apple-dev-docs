@@ -1,7 +1,8 @@
 # collectionView(_:cancelPrefetchingForItemsAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -13,9 +14,14 @@
 optional func collectionView(_ collectionView: NSCollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath])
 ```
 
+```objc
+- (void) collectionView:(NSCollectionView *) collectionView cancelPrefetchingForItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
+```
+
 ## See Also
 
-- [func collectionView(NSCollectionView, prefetchItemsAt: [IndexPath])](nscollectionviewprefetching/collectionview(_:prefetchitemsat:).md)
+### Instance Methods
+- [func collectionView(NSCollectionView, prefetchItemsAt: [IndexPath])](./collectionview%28_,prefetchitemsat%29.md)
 
 
 ---

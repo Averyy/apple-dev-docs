@@ -1,14 +1,15 @@
 # UUID_NULL
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 const uuid_t UUID_NULL;
 ```
 

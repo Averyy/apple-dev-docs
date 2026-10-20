@@ -1,19 +1,26 @@
 # extendedLogDataStringEncoding
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The string encoding for the [`extendedLogData`](mpmovieaccesslog/extendedlogdata.md) property.
+The string encoding for the [`extendedLogData`](./extendedlogdata.md) property.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 var extendedLogDataStringEncoding: UInt { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSStringEncoding extendedLogDataStringEncoding;
 ```
 
 #### Discussion
@@ -22,9 +29,10 @@ For possible string encodings, see String_Encodings.
 
 ## See Also
 
-- [var extendedLogData: Data!](mpmovieaccesslog/extendedlogdata.md)
+### Movie access log properties
+- [var extendedLogData: Data!](./extendedlogdata.md)
   A textual version of the web server access log for the associated movie player.
-- [var events: [Any]!](mpmovieaccesslog/events.md)
+- [var events: [Any]!](./events.md)
   The events in the movie access log.
 
 

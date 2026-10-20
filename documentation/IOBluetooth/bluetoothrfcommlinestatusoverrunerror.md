@@ -1,10 +1,11 @@
 # BluetoothRFCOMMLineStatusOverrunError
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var BluetoothRFCOMMLineStatusOverrunError: BluetoothRFCOMMLineStatus { get }
 ```
 
+```c
+BluetoothRFCOMMLineStatusOverrunError
+```
+
 ## See Also
 
-- [var BluetoothRFCOMMLineStatusFramingError: BluetoothRFCOMMLineStatus](bluetoothrfcommlinestatusframingerror.md)
-- [var BluetoothRFCOMMLineStatusNoError: BluetoothRFCOMMLineStatus](bluetoothrfcommlinestatusnoerror.md)
-- [var BluetoothRFCOMMLineStatusParityError: BluetoothRFCOMMLineStatus](bluetoothrfcommlinestatusparityerror.md)
+### Constants
+- [var BluetoothRFCOMMLineStatusFramingError: BluetoothRFCOMMLineStatus](./bluetoothrfcommlinestatusframingerror.md)
+- [var BluetoothRFCOMMLineStatusNoError: BluetoothRFCOMMLineStatus](./bluetoothrfcommlinestatusnoerror.md)
+- [var BluetoothRFCOMMLineStatusParityError: BluetoothRFCOMMLineStatus](./bluetoothrfcommlinestatusparityerror.md)
 
 
 ---

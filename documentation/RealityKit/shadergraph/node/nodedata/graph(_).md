@@ -1,9 +1,10 @@
 # ShaderGraph.Node.NodeData.graph(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-A subgraph node, embedding another [`ShaderGraph`](shadergraph.md) as a node.
+A subgraph node, embedding another [`ShaderGraph`](../../../shadergraph.md) as a node.
 
 **Availability**:
 - iOS 27.0+

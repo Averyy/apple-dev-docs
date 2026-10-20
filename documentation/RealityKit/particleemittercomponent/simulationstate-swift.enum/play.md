@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SimulationState.play
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Simulation will play.
 

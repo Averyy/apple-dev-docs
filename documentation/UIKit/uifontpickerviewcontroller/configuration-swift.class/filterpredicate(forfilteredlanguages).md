@@ -1,15 +1,18 @@
 # filterPredicate(forFilteredLanguages:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a font picker filter based on language support.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`languageFilter`](./languagefilter.md) instead.
 
 ## Declaration
 
@@ -17,13 +20,17 @@ Creates a font picker filter based on language support.
 class func filterPredicate(forFilteredLanguages filteredLanguages: [String]) -> NSPredicate?
 ```
 
+```objc
++ (NSPredicate *) filterPredicateForFilteredLanguages:(NSArray<NSString *> *) filteredLanguages;
+```
+
 #### Return Value
 
-A predicate that is [`true`](https://developer.apple.com/documentation/swift/true) when at least one of the provided strings is present.
+A predicate that is [`true`](../../../Swift/true.md) when at least one of the provided strings is present.
 
 #### Discussion
 
-Use this method to construct a predicate for [`filteredLanguagesPredicate`](uifontpickerviewcontroller/configuration-swift.class/filteredlanguagespredicate.md) that restricts the font picker’s list to only include fonts that support the filtered languages. Provide language identifiers in the same format [`CFLocale`](https://developer.apple.com/documentation/corefoundation/cflocale) uses.
+Use this method to construct a predicate for [`filteredLanguagesPredicate`](./filteredlanguagespredicate.md) that restricts the font picker’s list to only include fonts that support the filtered languages. Provide language identifiers in the same format [`CFLocale`](../../../CoreFoundation/cflocale.md) uses.
 
 ## Parameters
 
@@ -31,11 +38,12 @@ Use this method to construct a predicate for [`filteredLanguagesPredicate`](uifo
 
 ## See Also
 
-- [var includeFaces: Bool](uifontpickerviewcontroller/configuration-swift.class/includefaces.md)
+### Filtering available fonts
+- [var includeFaces: Bool](./includefaces.md)
   A Boolean value that determines whether the font picker should allow the user to select from font faces, or just font families.
-- [var filteredTraits: UIFontDescriptor.SymbolicTraits](uifontpickerviewcontroller/configuration-swift.class/filteredtraits.md)
+- [var filteredTraits: UIFontDescriptor.SymbolicTraits](./filteredtraits.md)
   A predicate to filter fonts based on their traits, like bold, italic, or monospace.
-- [var filteredLanguagesPredicate: NSPredicate?](uifontpickerviewcontroller/configuration-swift.class/filteredlanguagespredicate.md)
+- [var filteredLanguagesPredicate: NSPredicate?](./filteredlanguagespredicate.md)
   A predicate to filter fonts based on the languages they support.
 
 

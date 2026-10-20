@@ -1,7 +1,8 @@
 # SecKeychainItem
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that represents a keychain item.
 
@@ -14,15 +15,19 @@ An opaque type that represents a keychain item.
 class SecKeychainItem
 ```
 
+```c
+typedef struct __SecKeychainItem * SecKeychainItemRef;
+```
+
 #### Overview
 
-A [`SecKeychainItem`](seckeychainitem.md) object for a certificate that is stored in a keychain can be safely cast to a [`SecCertificate`](seccertificate.md) for use with [`Certificate, Key, and Trust Services`](certificate-key-and-trust-services.md).
+A [`SecKeychainItem`](./seckeychainitem.md) object for a certificate that is stored in a keychain can be safely cast to a [`SecCertificate`](./seccertificate.md) for use with [Certificate, Key, and Trust Services](./certificate-key-and-trust-services.md).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

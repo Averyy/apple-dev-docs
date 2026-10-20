@@ -1,7 +1,8 @@
 # AttributedEntityIdentifier
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for an app entity instance within an application.
 
@@ -32,36 +33,37 @@ This structure enables the AppIntents framework to reference and retrieve specif
 ## Topics
 
 ### Initializers
-- [init(entityType: AttributedTypeIdentifier, instanceIdentifier: String)](attributedentityidentifier/init(entitytype:instanceidentifier:).md)
+- [init(entityType: AttributedTypeIdentifier, instanceIdentifier: String)](./attributedentityidentifier/init%28entitytype,instanceidentifier%29.md)
   Creates an attributed entity identifier with the specified type and instance identifiers.
 ### Instance Properties
-- [let entityType: AttributedTypeIdentifier](attributedentityidentifier/entitytype.md)
+- [let entityType: AttributedTypeIdentifier](./attributedentityidentifier/entitytype.md)
   The type identifier that defines what kind of entity this is.
-- [let instanceIdentifier: String](attributedentityidentifier/instanceidentifier.md)
+- [let instanceIdentifier: String](./attributedentityidentifier/instanceidentifier.md)
   The string that uniquely identifies this specific entity instance.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EntityIdentifier](entityidentifier.md)
+### Entity identity
+- [struct EntityIdentifier](./entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.
-- [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
+- [protocol EntityIdentifierConvertible](./entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
-- [struct FileEntityIdentifier](fileentityidentifier.md)
+- [struct FileEntityIdentifier](./fileentityidentifier.md)
   An identifier for an app entity that refers to a document or other file.
-- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+- [protocol PersistentlyIdentifiable](./persistentlyidentifiable.md)
   Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
-- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+- [struct SyncableEntityIdentifier](./syncableentityidentifier.md)
   A type-safe wrapper you use to specify different local and stable identifiers for an entity.
-- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+- [struct AttributedTypeIdentifier](./attributedtypeidentifier.md)
   A unique identifier for an app entity or transient app entity type within an application bundle.
-- [protocol AppEntityAnnotatable](appentityannotatable.md)
+- [protocol AppEntityAnnotatable](./appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
 
 

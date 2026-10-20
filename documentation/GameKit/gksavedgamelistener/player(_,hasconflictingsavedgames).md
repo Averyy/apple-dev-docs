@@ -1,7 +1,8 @@
 # player(_:hasConflictingSavedGames:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Chooses the correct game data from the saved games that contain conflicts.
 
@@ -18,13 +19,17 @@ Chooses the correct game data from the saved games that contain conflicts.
 optional func player(_ player: GKPlayer, hasConflictingSavedGames savedGames: [GKSavedGame])
 ```
 
+```objc
+- (void) player:(GKPlayer *) player hasConflictingSavedGames:(NSArray<GKSavedGame *> *) savedGames;
+```
+
 ## Mentions
 
-- [Saving the player’s game data to an iCloud account](saving-the-player-s-game-data-to-an-icloud-account.md)
+- [Saving the player’s game data to an iCloud account](../saving-the-player-s-game-data-to-an-icloud-account.md)
 
 #### Discussion
 
-Saved game files conflict when multiple devices write to the same file while one or more of the devices are offline. Implement this method to choose the game data that’s correct and try saving it again using the [`resolveConflictingSavedGames(_:with:completionHandler:)`](gklocalplayer/resolveconflictingsavedgames(_:with:completionhandler:).md) method.
+Saved game files conflict when multiple devices write to the same file while one or more of the devices are offline. Implement this method to choose the game data that’s correct and try saving it again using the [`resolveConflictingSavedGames(_:with:completionHandler:)`](../gklocalplayer/resolveconflictingsavedgames%28_,with,completionhandler%29.md) method.
 
 ## Parameters
 

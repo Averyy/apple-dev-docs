@@ -1,7 +1,8 @@
 # day()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the date interval format style to include the day.
 
@@ -48,17 +49,18 @@ if let today = Calendar.current.date(byAdding: .day, value: -140, to: Date()),
 
 ## See Also
 
-- [func hour(Date.IntervalFormatStyle.Symbol.Hour) -> Date.IntervalFormatStyle](date/intervalformatstyle/hour(_:).md)
+### Modifying Date Interval Format Styles
+- [func hour(Date.IntervalFormatStyle.Symbol.Hour) -> Date.IntervalFormatStyle](./hour%28_%29.md)
   Modifies the date interval format style to use the specified hour format style.
-- [func minute() -> Date.IntervalFormatStyle](date/intervalformatstyle/minute.md)
+- [func minute() -> Date.IntervalFormatStyle](./minute%28%29.md)
   Modifies the date interval format style to include the minutes.
-- [func month(Date.IntervalFormatStyle.Symbol.Month) -> Date.IntervalFormatStyle](date/intervalformatstyle/month(_:).md)
+- [func month(Date.IntervalFormatStyle.Symbol.Month) -> Date.IntervalFormatStyle](./month%28_%29.md)
   Modifies the date interval format style to include the month.
-- [func second() -> Date.IntervalFormatStyle](date/intervalformatstyle/second.md)
+- [func second() -> Date.IntervalFormatStyle](./second%28%29.md)
   Modifies the date interval format style to include the seconds.
-- [func weekday(Date.IntervalFormatStyle.Symbol.Weekday) -> Date.IntervalFormatStyle](date/intervalformatstyle/weekday(_:).md)
+- [func weekday(Date.IntervalFormatStyle.Symbol.Weekday) -> Date.IntervalFormatStyle](./weekday%28_%29.md)
   Modifies the date interval format style to include the specified weekday style.
-- [func year() -> Date.IntervalFormatStyle](date/intervalformatstyle/year.md)
+- [func year() -> Date.IntervalFormatStyle](./year%28%29.md)
   Modifies the date interval format style to include the year.
 
 

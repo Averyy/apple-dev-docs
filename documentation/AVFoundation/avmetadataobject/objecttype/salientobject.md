@@ -1,7 +1,8 @@
 # salientObject
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that identifies saliency metadata.
 
@@ -16,6 +17,10 @@ A constant that identifies saliency metadata.
 
 ```swift
 static let salientObject: AVMetadataObject.ObjectType
+```
+
+```c
+extern AVMetadataObjectType const AVMetadataObjectTypeSalientObject;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: AppMigrationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a migration platform instance from the given raw value string.
 

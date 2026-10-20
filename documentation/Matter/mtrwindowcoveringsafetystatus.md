@@ -1,7 +1,8 @@
 # MTRWindowCoveringSafetyStatus
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,35 +19,39 @@
 struct MTRWindowCoveringSafetyStatus
 ```
 
+```c
+enum MTRWindowCoveringSafetyStatus : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrwindowcoveringsafetystatus/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrwindowcoveringsafetystatus/init%28rawvalue%29.md)
 ### Type Properties
-- [static var failedCommunication: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/failedcommunication.md)
-- [static var hardwareFailure: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/hardwarefailure.md)
-- [static var manualOperation: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/manualoperation.md)
-- [static var motorJammed: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/motorjammed.md)
-- [static var obstacleDetected: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/obstacledetected.md)
-- [static var positionFailure: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/positionfailure.md)
-- [static var power: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/power.md)
-- [static var protection: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/protection.md)
-- [static var remoteLockout: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/remotelockout.md)
-- [static var stopInput: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/stopinput.md)
-- [static var tamperDetection: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/tamperdetection.md)
-- [static var thermalProtection: MTRWindowCoveringSafetyStatus](mtrwindowcoveringsafetystatus/thermalprotection.md)
+- [static var failedCommunication: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/failedcommunication.md)
+- [static var hardwareFailure: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/hardwarefailure.md)
+- [static var manualOperation: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/manualoperation.md)
+- [static var motorJammed: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/motorjammed.md)
+- [static var obstacleDetected: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/obstacledetected.md)
+- [static var positionFailure: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/positionfailure.md)
+- [static var power: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/power.md)
+- [static var protection: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/protection.md)
+- [static var remoteLockout: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/remotelockout.md)
+- [static var stopInput: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/stopinput.md)
+- [static var tamperDetection: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/tamperdetection.md)
+- [static var thermalProtection: MTRWindowCoveringSafetyStatus](./mtrwindowcoveringsafetystatus/thermalprotection.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

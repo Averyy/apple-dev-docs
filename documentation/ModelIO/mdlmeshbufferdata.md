@@ -1,7 +1,8 @@
 # MDLMeshBufferData
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A memory buffer that stores vertex or index data for a Model I/O mesh.
 
@@ -19,56 +20,61 @@ A memory buffer that stores vertex or index data for a Model I/O mesh.
 class MDLMeshBufferData
 ```
 
+```objc
+@interface MDLMeshBufferData : NSObject
+```
+
 #### Overview
 
-This class is the simplest concrete implementation of the [`MDLMeshBuffer`](mdlmeshbuffer.md) protocol—use this class when you need only a single data store for loading or processing mesh data. To share mesh data for other uses, use another concrete implementation of the [`MDLMeshBuffer`](mdlmeshbuffer.md) protocol—for example, the [`MTKMeshBuffer`](https://developer.apple.com/documentation/metalkit/mtkmeshbuffer) class shares mesh data with Metal buffers, ensuring that data is copied a minimal number of times between loading, processing, and rendering.If you do not specify a [`MDLMeshBufferAllocator`](mdlmeshbufferallocator.md) object for loading meshes from a file with the [`MDLAsset`](mdlasset.md) class or generating meshes with the [`MDLMesh`](mdlmesh.md) class, Model I/O uses [`MDLMeshBufferData`](mdlmeshbufferdata.md) objects to store mesh data.
+This class is the simplest concrete implementation of the [`MDLMeshBuffer`](./mdlmeshbuffer.md) protocol—use this class when you need only a single data store for loading or processing mesh data. To share mesh data for other uses, use another concrete implementation of the [`MDLMeshBuffer`](./mdlmeshbuffer.md) protocol—for example, the [`MTKMeshBuffer`](../MetalKit/mtkmeshbuffer.md) class shares mesh data with Metal buffers, ensuring that data is copied a minimal number of times between loading, processing, and rendering.If you do not specify a [`MDLMeshBufferAllocator`](./mdlmeshbufferallocator.md) object for loading meshes from a file with the [`MDLAsset`](./mdlasset.md) class or generating meshes with the [`MDLMesh`](./mdlmesh.md) class, Model I/O uses [`MDLMeshBufferData`](./mdlmeshbufferdata.md) objects to store mesh data.
 
 ## Topics
 
 ### Creating a Buffer
-- [init(type: MDLMeshBufferType, data: Data?)](mdlmeshbufferdata/init(type:data:).md)
+- [init(type: MDLMeshBufferType, data: Data?)](./mdlmeshbufferdata/init%28type,data%29.md)
   Initializes a buffer containing the specified data.
-- [init(type: MDLMeshBufferType, length: Int)](mdlmeshbufferdata/init(type:length:).md)
+- [init(type: MDLMeshBufferType, length: Int)](./mdlmeshbufferdata/init%28type,length%29.md)
   Initializes a buffer of the specified length.
 ### Accessing a Buffer’s Data
-- [var data: Data](mdlmeshbufferdata/data.md)
+- [var data: Data](./mdlmeshbufferdata/data.md)
   The underlying data storage for the mesh buffer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLMeshBuffer](mdlmeshbuffer.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLMeshBuffer](./mdlmeshbuffer.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MDLMeshBuffer](mdlmeshbuffer.md)
+### Managing Mesh Data
+- [protocol MDLMeshBuffer](./mdlmeshbuffer.md)
   The general interface for managing storage of vertex and index data used in loading, processing, and rendering meshes.
-- [protocol MDLMeshBufferAllocator](mdlmeshbufferallocator.md)
+- [protocol MDLMeshBufferAllocator](./mdlmeshbufferallocator.md)
   The general interface for managing allocation of data buffers to be used in loading, processing, and rendering meshes.
-- [class MDLMeshBufferDataAllocator](mdlmeshbufferdataallocator.md)
+- [class MDLMeshBufferDataAllocator](./mdlmeshbufferdataallocator.md)
   A basic allocator implementation that allocates from main memory using data objects.
-- [class MDLMeshBufferMap](mdlmeshbuffermap.md)
+- [class MDLMeshBufferMap](./mdlmeshbuffermap.md)
   An object that manages access to a memory buffer used for the data storage of a Model I/O mesh.
-- [protocol MDLMeshBufferZone](mdlmeshbufferzone.md)
+- [protocol MDLMeshBufferZone](./mdlmeshbufferzone.md)
   The general interface for logical pools of memory used in allocation of related mesh data buffers.
-- [class MDLMeshBufferZoneDefault](mdlmeshbufferzonedefault.md)
-  A standard implementation of the [`MDLMeshBufferZone`](mdlmeshbufferzone.md) protocol.
-- [class MDLVertexAttribute](mdlvertexattribute.md)
+- [class MDLMeshBufferZoneDefault](./mdlmeshbufferzonedefault.md)
+  A standard implementation of the [`MDLMeshBufferZone`](./mdlmeshbufferzone.md) protocol.
+- [class MDLVertexAttribute](./mdlvertexattribute.md)
   A description of the format of per-vertex data for a single vertex attribute in a mesh object.
-- [class MDLVertexAttributeData](mdlvertexattributedata.md)
+- [class MDLVertexAttributeData](./mdlvertexattributedata.md)
   An object that provides convenience access to vertex data for a specific vertex attribute of a mesh.
-- [class MDLVertexBufferLayout](mdlvertexbufferlayout.md)
-  A [`MDLVertexBufferLayout`](mdlvertexbufferlayout.md) object describes layout information for a vertex buffer in a [`MDLMesh`](mdlmesh.md) object. A collection of vertex layer objects, vertex attribute objects, and additional information forms a [`MDLVertexDescriptor`](mdlvertexdescriptor.md) object, which completely describes the layout of vertex buffers for a mesh.
-- [class MDLVertexDescriptor](mdlvertexdescriptor.md)
+- [class MDLVertexBufferLayout](./mdlvertexbufferlayout.md)
+  A [`MDLVertexBufferLayout`](./mdlvertexbufferlayout.md) object describes layout information for a vertex buffer in a [`MDLMesh`](./mdlmesh.md) object. A collection of vertex layer objects, vertex attribute objects, and additional information forms a [`MDLVertexDescriptor`](./mdlvertexdescriptor.md) object, which completely describes the layout of vertex buffers for a mesh.
+- [class MDLVertexDescriptor](./mdlvertexdescriptor.md)
   A description of the structure, format, and layout for vertex data buffers associated with a mesh.
 
 

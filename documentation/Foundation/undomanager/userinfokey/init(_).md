@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a user info key from the given string.
 
@@ -22,7 +23,7 @@ init(_ rawValue: String)
 
 #### Discussion
 
-Don’t use this initializer. Instead, extend the [`UndoManager.UserInfoKey`](undomanager/userinfokey.md) namespace as follows:
+Don’t use this initializer. Instead, extend the [`UndoManager.UserInfoKey`](../userinfokey.md) namespace as follows:
 
 ```swift
 extension UndoManager.UserInfoKey {
@@ -36,7 +37,8 @@ extension UndoManager.UserInfoKey {
 
 ## See Also
 
-- [init(rawValue: String)](undomanager/userinfokey/init(rawvalue:).md)
+### Creating a user info key from a raw value
+- [init(rawValue: String)](./init%28rawvalue%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # windowWillReturnUndoManager(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window’s undo manager has been requested. Returns the appropriate undo manager for the window.
 
@@ -15,13 +16,17 @@ Tells the delegate that the window’s undo manager has been requested. Returns 
 optional func windowWillReturnUndoManager(_ window: NSWindow) -> UndoManager?
 ```
 
+```objc
+- (NSUndoManager *) windowWillReturnUndoManager:(NSWindow *) window;
+```
+
 #### Return Value
 
 The appropriate undo manager for the specified window.
 
 #### Discussion
 
-If this method is not implemented by the delegate, the window creates an[`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) for `window`. Further, after a window creates its own undo manager, this method is never again called on the delegate.
+If this method is not implemented by the delegate, the window creates an[`UndoManager`](../../Foundation/undomanager.md) for `window`. Further, after a window creates its own undo manager, this method is never again called on the delegate.
 
 ## Parameters
 

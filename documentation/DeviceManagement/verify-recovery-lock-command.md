@@ -1,7 +1,8 @@
 # Verify Recovery Lock
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Verify the device’s Recovery Lock password.
 
@@ -12,7 +13,7 @@ Verify the device’s Recovery Lock password.
 
 This command is only available on a Mac with Apple silicon.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -22,7 +23,7 @@ This command is only available on a Mac with Apple silicon.
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -64,9 +65,9 @@ This command is only available on a Mac with Apple silicon.
 ## Topics
 
 ### Commands and responses
-- [object VerifyRecoveryLockCommand](verifyrecoverylockcommand.md)
+- [object VerifyRecoveryLockCommand](./verifyrecoverylockcommand.md)
   The command to verify the device’s Recovery Lock password.
-- [object VerifyRecoveryLockResponse](verifyrecoverylockresponse.md)
+- [object VerifyRecoveryLockResponse](./verifyrecoverylockresponse.md)
   A response from the device after it processes the command to verify the device’s Recovery Lock password.
 
 ## Endpoint
@@ -75,11 +76,19 @@ This command is only available on a Mac with Apple silicon.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `VerifyRecoveryLockCommand`
+
 The request object the server returns for the Verify Recovery Lock Command.
+
+## Responses
+
+- `200` OK (`VerifyRecoveryLockResponse`, `application/xml`): The response object the system returns for the Verify Recovery Lock Command.
 
 ## See Also
 
-- [Set Recovery Lock](set-recovery-lock-command.md)
+### Recovery Lock
+- [Set Recovery Lock](./set-recovery-lock-command.md)
   Set or clear the Recovery Lock password.
 
 

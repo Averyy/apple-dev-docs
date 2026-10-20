@@ -2,6 +2,7 @@
 
 **Framework**: Foveated Streaming  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The SwiftUI view that renders the streamed content.

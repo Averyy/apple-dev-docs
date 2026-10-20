@@ -1,7 +1,8 @@
 # QLThumbnailError.Code.savingToURLFailed
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The thumbnail couldn’t be saved at the given URL.
 
@@ -18,17 +19,22 @@ The thumbnail couldn’t be saved at the given URL.
 case savingToURLFailed
 ```
 
+```c
+QLThumbnailErrorSavingToURLFailed
+```
+
 ## See Also
 
-- [QLThumbnailError.Code.generationFailed](qlthumbnailerror-swift.struct/code/generationfailed.md)
+### Error Codes
+- [QLThumbnailError.Code.generationFailed](./generationfailed.md)
   The thumbnail couldn’t be created for the given file.
-- [QLThumbnailError.Code.noCachedThumbnail](qlthumbnailerror-swift.struct/code/nocachedthumbnail.md)
+- [QLThumbnailError.Code.noCachedThumbnail](./nocachedthumbnail.md)
   A low-quality thumbnail couldn’t be created.
-- [QLThumbnailError.Code.noCloudThumbnail](qlthumbnailerror-swift.struct/code/nocloudthumbnail.md)
+- [QLThumbnailError.Code.noCloudThumbnail](./nocloudthumbnail.md)
   The thumbnail for a remote file couldn’t be created.
-- [QLThumbnailError.Code.requestCancelled](qlthumbnailerror-swift.struct/code/requestcancelled.md)
+- [QLThumbnailError.Code.requestCancelled](./requestcancelled.md)
   The request to create a thumbnail was canceled.
-- [QLThumbnailError.Code.requestInvalid](qlthumbnailerror-swift.struct/code/requestinvalid.md)
+- [QLThumbnailError.Code.requestInvalid](./requestinvalid.md)
   The request to create a thumbnail was invalid, for example, there’s no file at a provided URL.
 
 

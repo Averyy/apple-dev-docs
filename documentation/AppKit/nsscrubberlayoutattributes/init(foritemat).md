@@ -1,7 +1,8 @@
 # init(forItemAt:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new layout attributes object for the specified scrubber item index.
 
@@ -12,6 +13,10 @@ Creates a new layout attributes object for the specified scrubber item index.
 
 ```swift
 convenience init(forItemAt index: Int)
+```
+
+```objc
++ (instancetype) layoutAttributesForItemAtIndex:(NSInteger) index;
 ```
 
 #### Return Value

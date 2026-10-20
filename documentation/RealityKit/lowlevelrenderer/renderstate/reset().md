@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the render encoder state to renderer defaults.
 
@@ -23,9 +24,10 @@ Call this after any custom Metal commands that modify the depth stencil state, c
 
 ## See Also
 
-- [func render(meshInstancesArrayIndex: Int, meshInstanceIndex: Int)](lowlevelrenderer/renderstate/render(meshinstancesarrayindex:meshinstanceindex:).md)
+### Rendering mesh instances
+- [func render(meshInstancesArrayIndex: Int, meshInstanceIndex: Int)](./render%28meshinstancesarrayindex,meshinstanceindex%29.md)
   Encodes a draw call for a single mesh instance.
-- [func render(meshInstancesArrayIndex: Int, range: Range<Int>)](lowlevelrenderer/renderstate/render(meshinstancesarrayindex:range:).md)
+- [func render(meshInstancesArrayIndex: Int, range: Range<Int>)](./render%28meshinstancesarrayindex,range%29.md)
   Encodes draw calls for a contiguous range of mesh instances.
 
 

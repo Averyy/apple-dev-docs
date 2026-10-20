@@ -1,18 +1,23 @@
 # init(for:title:target:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
 ```swift
 convenience init(for url: URL, title: String?, target: UIDragPreviewTarget)
+```
+
+```objc
++ (instancetype) previewForURL:(NSURL *) url title:(NSString *) title target:(UIDragPreviewTarget *) target;
 ```
 
 

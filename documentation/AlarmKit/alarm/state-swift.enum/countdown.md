@@ -1,7 +1,8 @@
 # Alarm.State.countdown
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alarm is counting down to its alert time.
 
@@ -22,11 +23,12 @@ Alarms are in this state when they are requested with a countdown duration, or w
 
 ## See Also
 
-- [Alarm.State.alerting](alarm/state-swift.enum/alerting.md)
+### Setting alarm states
+- [Alarm.State.alerting](./alerting.md)
   The alarm is currently firing.
-- [Alarm.State.paused](alarm/state-swift.enum/paused.md)
+- [Alarm.State.paused](./paused.md)
   A person paused the countdown.
-- [Alarm.State.scheduled](alarm/state-swift.enum/scheduled.md)
+- [Alarm.State.scheduled](./scheduled.md)
   The alarm is scheduled and ready to alert at the appropriate time.
 
 

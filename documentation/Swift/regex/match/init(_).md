@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regular expression match with a dynamic capture list from the given match.
 
@@ -19,6 +20,8 @@ Creates a regular expression match with a dynamic capture list from the given ma
 ```swift
 init<OtherOutput>(_ match: Regex<OtherOutput>.Match)
 ```
+
+Available when `Output` is `AnyRegexOutput`.
 
 #### Discussion
 

@@ -1,17 +1,22 @@
 # toolTip
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text for the view’s tooltip.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var toolTip: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * toolTip;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ The value of this property is `nil` if the view does not currently display toolt
 
 ## See Also
 
-- [func addToolTip(NSRect, owner: Any, userData: UnsafeMutableRawPointer?) -> NSView.ToolTipTag](nsview/addtooltip(_:owner:userdata:).md)
+### Providing a Tool Tip
+- [func addToolTip(NSRect, owner: Any, userData: UnsafeMutableRawPointer?) -> NSView.ToolTipTag](./addtooltip%28_,owner,userdata%29.md)
   Creates a tooltip for a defined area in the view and returns a tag that identifies the tooltip rectangle.
-- [func removeAllToolTips()](nsview/removealltooltips.md)
+- [func removeAllToolTips()](./removealltooltips%28%29.md)
   Removes all tooltips assigned to the view.
-- [func removeToolTip(NSView.ToolTipTag)](nsview/removetooltip(_:).md)
+- [func removeToolTip(NSView.ToolTipTag)](./removetooltip%28_%29.md)
   Removes the tooltip identified by specified tag.
-- [typealias ToolTipTag](nsview/tooltiptag.md)
+- [typealias ToolTipTag](./tooltiptag.md)
   This type describes the rectangle used to identify a tooltip rectangle.
 
 

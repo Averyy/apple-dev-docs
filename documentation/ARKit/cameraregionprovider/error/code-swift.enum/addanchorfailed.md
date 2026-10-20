@@ -1,7 +1,8 @@
 # CameraRegionProvider.Error.Code.addAnchorFailed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Adding a camera region anchor failed.
 

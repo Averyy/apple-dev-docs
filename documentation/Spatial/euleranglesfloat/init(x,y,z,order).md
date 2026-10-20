@@ -1,7 +1,8 @@
 # init(x:y:z:order:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new Euler angles structure from three angle structures.
 

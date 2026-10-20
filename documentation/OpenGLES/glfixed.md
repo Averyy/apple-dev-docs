@@ -1,7 +1,8 @@
 # GLfixed
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLfixed = Int32
+```
+
+```c
+typedef int32_t GLfixed;
 ```
 
 

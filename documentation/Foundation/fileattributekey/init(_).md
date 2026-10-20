@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a file attribute key from a string.
 
@@ -26,7 +27,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](fileattributekey/init(rawvalue:).md)
+### Creating a File Attribute Key
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a file attribute key from a raw value string.
 
 

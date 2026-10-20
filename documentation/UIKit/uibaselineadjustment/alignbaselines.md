@@ -1,16 +1,17 @@
 # UIBaselineAdjustment.alignBaselines
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Adjust text relative to the position of its baseline.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ Adjust text relative to the position of its baseline.
 case alignBaselines
 ```
 
+```c
+UIBaselineAdjustmentAlignBaselines
+```
+
 ## See Also
 
-- [UIBaselineAdjustment.alignCenters](uibaselineadjustment/aligncenters.md)
+### Constants
+- [UIBaselineAdjustment.alignCenters](./aligncenters.md)
   Adjust text relative to the center of its bounding box.
-- [UIBaselineAdjustment.none](uibaselineadjustment/none.md)
+- [UIBaselineAdjustment.none](./none.md)
   Adjust text relative to the top-left corner of the bounding box.
 
 

@@ -1,16 +1,18 @@
 # TICapsLockLanguageSwitchCapable
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that enables the Caps Lock key to switch between Latin and non-Latin input sources.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `TICapsLockLanguageSwitchCapable` (Caps Lock Language Switch Capable)
+- **Type**: boolean
 
 #### Discussion
 
@@ -20,11 +22,12 @@ After implementing the key, users can enable or disable this functionality by mo
 
 ## See Also
 
-- [CFBundleDevelopmentRegion](information-property-list/cfbundledevelopmentregion.md)
+### Localization
+- [CFBundleDevelopmentRegion](./cfbundledevelopmentregion.md)
   The default language and region for the bundle, as a language ID.
-- [CFBundleLocalizations](information-property-list/cfbundlelocalizations.md)
+- [CFBundleLocalizations](./cfbundlelocalizations.md)
   The localizations handled manually by your app.
-- [CFBundleAllowMixedLocalizations](information-property-list/cfbundleallowmixedlocalizations.md)
+- [CFBundleAllowMixedLocalizations](./cfbundleallowmixedlocalizations.md)
   A Boolean value that indicates whether the bundle supports the retrieval of localized strings from frameworks.
 
 

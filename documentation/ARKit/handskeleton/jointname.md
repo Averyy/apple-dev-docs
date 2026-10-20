@@ -1,7 +1,8 @@
 # HandSkeleton.JointName
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The names of different hand joints.
 
@@ -17,57 +18,58 @@ enum JointName
 ## Topics
 
 ### Forearm joints
-- [HandSkeleton.JointName.forearmArm](handskeleton/jointname/forearmarm.md)
-- [HandSkeleton.JointName.forearmWrist](handskeleton/jointname/forearmwrist.md)
-- [HandSkeleton.JointName.wrist](handskeleton/jointname/wrist.md)
+- [HandSkeleton.JointName.forearmArm](./jointname/forearmarm.md)
+- [HandSkeleton.JointName.forearmWrist](./jointname/forearmwrist.md)
+- [HandSkeleton.JointName.wrist](./jointname/wrist.md)
 ### Thumb joints
-- [HandSkeleton.JointName.thumbIntermediateBase](handskeleton/jointname/thumbintermediatebase.md)
-- [HandSkeleton.JointName.thumbIntermediateTip](handskeleton/jointname/thumbintermediatetip.md)
-- [HandSkeleton.JointName.thumbKnuckle](handskeleton/jointname/thumbknuckle.md)
-- [HandSkeleton.JointName.thumbTip](handskeleton/jointname/thumbtip.md)
+- [HandSkeleton.JointName.thumbIntermediateBase](./jointname/thumbintermediatebase.md)
+- [HandSkeleton.JointName.thumbIntermediateTip](./jointname/thumbintermediatetip.md)
+- [HandSkeleton.JointName.thumbKnuckle](./jointname/thumbknuckle.md)
+- [HandSkeleton.JointName.thumbTip](./jointname/thumbtip.md)
 ### Index finger joints
-- [HandSkeleton.JointName.indexFingerIntermediateBase](handskeleton/jointname/indexfingerintermediatebase.md)
-- [HandSkeleton.JointName.indexFingerIntermediateTip](handskeleton/jointname/indexfingerintermediatetip.md)
-- [HandSkeleton.JointName.indexFingerKnuckle](handskeleton/jointname/indexfingerknuckle.md)
-- [HandSkeleton.JointName.indexFingerMetacarpal](handskeleton/jointname/indexfingermetacarpal.md)
-- [HandSkeleton.JointName.indexFingerTip](handskeleton/jointname/indexfingertip.md)
+- [HandSkeleton.JointName.indexFingerIntermediateBase](./jointname/indexfingerintermediatebase.md)
+- [HandSkeleton.JointName.indexFingerIntermediateTip](./jointname/indexfingerintermediatetip.md)
+- [HandSkeleton.JointName.indexFingerKnuckle](./jointname/indexfingerknuckle.md)
+- [HandSkeleton.JointName.indexFingerMetacarpal](./jointname/indexfingermetacarpal.md)
+- [HandSkeleton.JointName.indexFingerTip](./jointname/indexfingertip.md)
 ### Middle finger joints
-- [HandSkeleton.JointName.middleFingerIntermediateBase](handskeleton/jointname/middlefingerintermediatebase.md)
-- [HandSkeleton.JointName.middleFingerIntermediateTip](handskeleton/jointname/middlefingerintermediatetip.md)
-- [HandSkeleton.JointName.middleFingerKnuckle](handskeleton/jointname/middlefingerknuckle.md)
-- [HandSkeleton.JointName.middleFingerMetacarpal](handskeleton/jointname/middlefingermetacarpal.md)
-- [HandSkeleton.JointName.middleFingerTip](handskeleton/jointname/middlefingertip.md)
+- [HandSkeleton.JointName.middleFingerIntermediateBase](./jointname/middlefingerintermediatebase.md)
+- [HandSkeleton.JointName.middleFingerIntermediateTip](./jointname/middlefingerintermediatetip.md)
+- [HandSkeleton.JointName.middleFingerKnuckle](./jointname/middlefingerknuckle.md)
+- [HandSkeleton.JointName.middleFingerMetacarpal](./jointname/middlefingermetacarpal.md)
+- [HandSkeleton.JointName.middleFingerTip](./jointname/middlefingertip.md)
 ### Ring finger joints
-- [HandSkeleton.JointName.ringFingerIntermediateBase](handskeleton/jointname/ringfingerintermediatebase.md)
-- [HandSkeleton.JointName.ringFingerIntermediateTip](handskeleton/jointname/ringfingerintermediatetip.md)
-- [HandSkeleton.JointName.ringFingerKnuckle](handskeleton/jointname/ringfingerknuckle.md)
-- [HandSkeleton.JointName.ringFingerMetacarpal](handskeleton/jointname/ringfingermetacarpal.md)
-- [HandSkeleton.JointName.ringFingerTip](handskeleton/jointname/ringfingertip.md)
+- [HandSkeleton.JointName.ringFingerIntermediateBase](./jointname/ringfingerintermediatebase.md)
+- [HandSkeleton.JointName.ringFingerIntermediateTip](./jointname/ringfingerintermediatetip.md)
+- [HandSkeleton.JointName.ringFingerKnuckle](./jointname/ringfingerknuckle.md)
+- [HandSkeleton.JointName.ringFingerMetacarpal](./jointname/ringfingermetacarpal.md)
+- [HandSkeleton.JointName.ringFingerTip](./jointname/ringfingertip.md)
 ### Little finger joints
-- [HandSkeleton.JointName.littleFingerIntermediateBase](handskeleton/jointname/littlefingerintermediatebase.md)
-- [HandSkeleton.JointName.littleFingerIntermediateTip](handskeleton/jointname/littlefingerintermediatetip.md)
-- [HandSkeleton.JointName.littleFingerKnuckle](handskeleton/jointname/littlefingerknuckle.md)
-- [HandSkeleton.JointName.littleFingerMetacarpal](handskeleton/jointname/littlefingermetacarpal.md)
-- [HandSkeleton.JointName.littleFingerTip](handskeleton/jointname/littlefingertip.md)
+- [HandSkeleton.JointName.littleFingerIntermediateBase](./jointname/littlefingerintermediatebase.md)
+- [HandSkeleton.JointName.littleFingerIntermediateTip](./jointname/littlefingerintermediatetip.md)
+- [HandSkeleton.JointName.littleFingerKnuckle](./jointname/littlefingerknuckle.md)
+- [HandSkeleton.JointName.littleFingerMetacarpal](./jointname/littlefingermetacarpal.md)
+- [HandSkeleton.JointName.littleFingerTip](./jointname/littlefingertip.md)
 ### Instance Properties
-- [var description: String](handskeleton/jointname/description.md)
+- [var description: String](./jointname/description.md)
   A textual representation of this joint name.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func joint(HandSkeleton.JointName) -> HandSkeleton.Joint](handskeleton/joint(_:).md)
+### Retrieving specific hand joints
+- [func joint(HandSkeleton.JointName) -> HandSkeleton.Joint](./joint%28_%29.md)
   Retrieves a hand joint based on the joint name you specify.
-- [HandSkeleton.Joint](handskeleton/joint.md)
+- [HandSkeleton.Joint](./joint.md)
   The name and position of an individual hand joint.
 
 

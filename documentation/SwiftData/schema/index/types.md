@@ -1,7 +1,8 @@
 # Schema.Index.Types
 
 **Framework**: SwiftData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -22,8 +23,8 @@ enum Types<P> where P : PersistentModel
 ## Topics
 
 ### Enumeration Cases
-- [case binary([PartialKeyPath<P>])](schema/index/types/binary(_:).md)
-- [case rtree([PartialKeyPath<P>])](schema/index/types/rtree(_:).md)
+- [case binary([PartialKeyPath<P>])](./types/binary%28_%29.md)
+- [case rtree([PartialKeyPath<P>])](./types/rtree%28_%29.md)
 
 
 ---

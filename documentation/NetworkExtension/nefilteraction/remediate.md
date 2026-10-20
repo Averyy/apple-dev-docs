@@ -1,7 +1,8 @@
 # NEFilterAction.remediate
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Remediate the flow.
 
@@ -18,19 +19,24 @@ Remediate the flow.
 case remediate
 ```
 
+```c
+NEFilterActionRemediate
+```
+
 #### Discussion
 
 This action results in a “content blocked” page being displayed to the user.
 
 ## See Also
 
-- [NEFilterAction.invalid](nefilteraction/invalid.md)
+### Enumeration Cases
+- [NEFilterAction.invalid](./invalid.md)
   Invalid action used to represent an error.
-- [NEFilterAction.allow](nefilteraction/allow.md)
+- [NEFilterAction.allow](./allow.md)
   Allow the flow.
-- [NEFilterAction.drop](nefilteraction/drop.md)
+- [NEFilterAction.drop](./drop.md)
   Drop the flow.
-- [NEFilterAction.filterData](nefilteraction/filterdata.md)
+- [NEFilterAction.filterData](./filterdata.md)
   Filter data on the flow.
 
 

@@ -1,12 +1,15 @@
 # init(label:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu button with the specified label and content.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`Menu`](../menu.md) instead.
 
 ## Declaration
 
@@ -17,7 +20,8 @@ init(label: Label, @ContentBuilder content: () -> Content)
 
 ## See Also
 
-- [init(_:content:)](menubutton/init(_:content:).md)
+### Creating a menu button
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a menu button with the specified localized title and content.
 
 

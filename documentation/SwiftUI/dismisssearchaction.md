@@ -1,7 +1,8 @@
 # DismissSearchAction
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that can end a search interaction.
 
@@ -23,17 +24,17 @@ An action that can end a search interaction.
 
 #### Overview
 
-Use the [`dismissSearch`](environmentvalues/dismisssearch.md) environment value to get the instance of this structure for a given [`Environment`](environment.md). Then call the instance to dismiss the current search interaction. You call the instance directly because it defines a [`callAsFunction()`](dismisssearchaction/callasfunction().md) method that Swift calls when you call the instance.
+Use the [`dismissSearch`](./environmentvalues/dismisssearch.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to dismiss the current search interaction. You call the instance directly because it defines a [`callAsFunction()`](./dismisssearchaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 
 When you dismiss search, SwiftUI:
 
-- Sets [`isSearching`](environmentvalues/issearching.md) to `false`.
+- Sets [`isSearching`](./environmentvalues/issearching.md) to `false`.
 - Clears any text from the search field.
 - Removes focus from the search field.
 
 > **Note**: Calling this instance has no effect if the user isn’t interacting with a search field.
 
-Use this action to dismiss a search operation based on another user interaction. For example, consider a searchable view with a [`Button`](button.md) that presents more information about the first matching item from a collection:
+Use this action to dismiss a search operation based on another user interaction. For example, consider a searchable view with a [`Button`](./button.md) that presents more information about the first matching item from a collection:
 
 ```swift
 struct ContentView: View {
@@ -94,37 +95,38 @@ private struct DetailView: View {
 }
 ```
 
-People can dismiss the sheet by dragging it down, effectively canceling the operation, leaving the in-progress search interaction intact. Alternatively, people can tap the Add button to store the item. Because the person using your app is likely to be done with both the detail view and the search interaction at this point, the button’s closure also uses the [`dismiss`](environmentvalues/dismiss.md) property to dismiss the sheet, and the [`dismissSearch`](environmentvalues/dismisssearch.md) property to reset the search field.
+People can dismiss the sheet by dragging it down, effectively canceling the operation, leaving the in-progress search interaction intact. Alternatively, people can tap the Add button to store the item. Because the person using your app is likely to be done with both the detail view and the search interaction at this point, the button’s closure also uses the [`dismiss`](./environmentvalues/dismiss.md) property to dismiss the sheet, and the [`dismissSearch`](./environmentvalues/dismisssearch.md) property to reset the search field.
 
 > ❗ **Important**: Access the action from inside the searched view, as the example above demonstrates, rather than from the searched view’s parent, or another hierarchy, like that of a sheet. SwiftUI sets the value in the environment of the view that you apply the searchable modifier to, and doesn’t propagate the value up the view hierarchy.
 
 ## Topics
 
 ### Calling the action
-- [func callAsFunction()](dismisssearchaction/callasfunction.md)
+- [func callAsFunction()](./dismisssearchaction/callasfunction%28%29.md)
   Dismisses the current search operation, if any.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Managing search interface activation](managing-search-interface-activation.md)
+### Detecting, activating, and dismissing search
+- [Managing search interface activation](./managing-search-interface-activation.md)
   Programmatically detect and dismiss a search field.
-- [var isSearching: Bool](environmentvalues/issearching.md)
+- [var isSearching: Bool](./environmentvalues/issearching.md)
   A Boolean value that indicates when the user is searching.
-- [var dismissSearch: DismissSearchAction](environmentvalues/dismisssearch.md)
+- [var dismissSearch: DismissSearchAction](./environmentvalues/dismisssearch.md)
   An action that ends the current search interaction.
-- [func searchable(text:isPresented:placement:prompt:)](view/searchable(text:ispresented:placement:prompt:).md)
+- [func searchable(text:isPresented:placement:prompt:)](./view/searchable%28text,ispresented,placement,prompt%29.md)
   Marks this view as searchable with programmatic presentation of the search field.
-- [func searchable(text:tokens:isPresented:placement:prompt:token:)](view/searchable(text:tokens:ispresented:placement:prompt:token:).md)
+- [func searchable(text:tokens:isPresented:placement:prompt:token:)](./view/searchable%28text,tokens,ispresented,placement,prompt,token%29.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
-- [func searchable(text:editableTokens:isPresented:placement:prompt:token:)](view/searchable(text:editabletokens:ispresented:placement:prompt:token:).md)
+- [func searchable(text:editableTokens:isPresented:placement:prompt:token:)](./view/searchable%28text,editabletokens,ispresented,placement,prompt,token%29.md)
   Marks this view as searchable, which configures the display of a search field.
-- [func searchable(text:tokens:suggestedTokens:isPresented:placement:prompt:token:)](view/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:).md)
+- [func searchable(text:tokens:suggestedTokens:isPresented:placement:prompt:token:)](./view/searchable%28text,tokens,suggestedtokens,ispresented,placement,prompt,token%29.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 
 

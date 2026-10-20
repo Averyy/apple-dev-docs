@@ -1,7 +1,8 @@
 # indexType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of indices in the index buffer.
 
@@ -19,15 +20,20 @@ The data type of indices in the index buffer.
 var indexType: MTLIndexType { get set }
 ```
 
+```objc
+@property (nonatomic) MTLIndexType indexType;
+```
+
 #### Discussion
 
-The index type needs to be [`MTLIndexType.uint16`](mtlindextype/uint16.md) or [`MTLIndexType.uint32`](mtlindextype/uint32.md). The default is [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+The index type needs to be [`MTLIndexType.uint16`](../mtlindextype/uint16.md) or [`MTLIndexType.uint32`](../mtlindextype/uint32.md). The default is [`MTLIndexType.uint32`](../mtlindextype/uint32.md).
 
 ## See Also
 
-- [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbuffer.md)
+### Specifying index data
+- [var indexBuffer: (any MTLBuffer)?](./indexbuffer.md)
   A buffer that contains indices for the vertices that compose the triangle list.
-- [var indexBufferOffset: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbufferoffset.md)
+- [var indexBufferOffset: Int](./indexbufferoffset.md)
   The offset, in bytes, to the first index in the buffer.
 
 

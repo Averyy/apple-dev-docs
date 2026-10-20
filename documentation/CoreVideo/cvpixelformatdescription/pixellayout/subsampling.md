@@ -1,7 +1,8 @@
 # subsampling
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixel subsampling for this plane.
 

@@ -1,7 +1,8 @@
 # iconOnly
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A label style that only displays the icon of the label.
 
@@ -21,17 +22,20 @@ A label style that only displays the icon of the label.
 nonisolated static var iconOnly: IconOnlyLabelStyle { get }
 ```
 
+Available when `Self` is `IconOnlyLabelStyle`.
+
 #### Discussion
 
 The title of the label is still used for non-visual descriptions, such as VoiceOver.
 
 ## See Also
 
-- [static var automatic: DefaultLabelStyle](labelstyle/automatic.md)
+### Getting built-in label styles
+- [static var automatic: DefaultLabelStyle](./automatic.md)
   A label style that resolves its appearance automatically based on the current context.
-- [static var titleAndIcon: TitleAndIconLabelStyle](labelstyle/titleandicon.md)
+- [static var titleAndIcon: TitleAndIconLabelStyle](./titleandicon.md)
   A label style that shows both the title and icon of the label using a system-standard layout.
-- [static var titleOnly: TitleOnlyLabelStyle](labelstyle/titleonly.md)
+- [static var titleOnly: TitleOnlyLabelStyle](./titleonly.md)
   A label style that only displays the title of the label.
 
 

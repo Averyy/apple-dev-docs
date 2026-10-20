@@ -1,7 +1,8 @@
 # init(title:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bar button that displays a text label.
 
@@ -16,6 +17,10 @@ Creates a bar button that displays a text label.
 init(title: String, handler: CPBarButtonHandler? = nil)
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title handler:(CPBarButtonHandler) handler;
+```
+
 #### Return Value
 
 A bar button that displays the provided text.
@@ -27,15 +32,16 @@ A bar button that displays the provided text.
 
 ## See Also
 
-- [init?(coder: NSCoder)](cpbarbutton/init(coder:).md)
+### Creating a CarPlay Bar Button
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a button initialized  from data in the specified coder object.
-- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](cpbarbutton/init(type:handler:).md)
+- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./init%28type,handler%29.md)
   Creates a bar button with a type and handler.
-- [init(image: UIImage, handler: CPBarButtonHandler?)](cpbarbutton/init(image:handler:).md)
+- [init(image: UIImage, handler: CPBarButtonHandler?)](./init%28image,handler%29.md)
   Creates a bar button that displays an image.
-- [CPBarButton.Type](cpbarbutton/type.md)
+- [CPBarButton.Type](./type.md)
   Types of bar buttons.
-- [typealias CPBarButtonHandler](cpbarbuttonhandler.md)
+- [typealias CPBarButtonHandler](../cpbarbuttonhandler.md)
   A block that CarPlay calls when the user taps a bar button.
 
 

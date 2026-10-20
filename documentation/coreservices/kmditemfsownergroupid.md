@@ -1,7 +1,8 @@
 # kMDItemFSOwnerGroupID
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The group ID of the owner of the file. A CFNumber.
 
@@ -12,6 +13,10 @@ The group ID of the owner of the file. A CFNumber.
 
 ```swift
 let kMDItemFSOwnerGroupID: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSOwnerGroupID;
 ```
 
 

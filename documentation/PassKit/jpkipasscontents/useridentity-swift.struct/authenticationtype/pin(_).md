@@ -1,7 +1,8 @@
 # JPKIPassContents.UserIdentity.AuthenticationType.pin(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The PIN associated with the user identity.
 
@@ -17,7 +18,8 @@ case pin(String)
 
 ## See Also
 
-- [JPKIPassContents.UserIdentity.AuthenticationType.systemBiometric](jpkipasscontents/useridentity-swift.struct/authenticationtype/systembiometric.md)
+### Types of authentication
+- [JPKIPassContents.UserIdentity.AuthenticationType.systemBiometric](./systembiometric.md)
   Authentication using biometric information.
 
 

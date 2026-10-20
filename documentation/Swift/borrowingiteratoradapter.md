@@ -1,7 +1,8 @@
 # BorrowingIteratorAdapter
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -22,26 +23,27 @@ struct BorrowingIteratorAdapter<Iterator> where Iterator : IteratorProtocol
 ## Topics
 
 ### Initializers
-- [init(iterator: Iterator)](borrowingiteratoradapter/init(iterator:).md)
+- [init(iterator: Iterator)](./borrowingiteratoradapter/init%28iterator%29.md)
 ### Instance Methods
-- [func nextSpan(maxCount: Int) -> Span<Iterator.Element>](borrowingiteratoradapter/nextspan(maxcount:).md)
+- [func nextSpan(maxCount: Int) -> Span<Iterator.Element>](./borrowingiteratoradapter/nextspan%28maxcount%29.md)
   Returns a span over the next group of elements that are ready to by visited, up to the specifed maximum.
 ### Type Aliases
-- [BorrowingIteratorAdapter.Element](borrowingiteratoradapter/element.md)
-- [BorrowingIteratorAdapter.Failure](borrowingiteratoradapter/failure.md)
+- [BorrowingIteratorAdapter.Element](./borrowingiteratoradapter/element.md)
+- [BorrowingIteratorAdapter.Failure](./borrowingiteratoradapter/failure.md)
 ### Default Implementations
-- [BorrowingIteratorProtocol Implementations](borrowingiteratoradapter/borrowingiteratorprotocol-implementations.md)
+- [BorrowingIteratorProtocol Implementations](./borrowingiteratoradapter/borrowingiteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
+- [BorrowingIteratorProtocol](./borrowingiteratorprotocol.md)
 
 ## See Also
 
-- [protocol Iterable](iterable.md)
+### Borrowing Iteration
+- [protocol Iterable](./iterable.md)
   A type that provides sequential, borrowing access to its elements.
-- [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
+- [protocol BorrowingIteratorProtocol](./borrowingiteratorprotocol.md)
   A type that provides borrowed access to the values of a borrowing sequence.
 
 

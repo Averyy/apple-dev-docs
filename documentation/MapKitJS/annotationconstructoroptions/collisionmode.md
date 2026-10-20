@@ -1,7 +1,8 @@
 # collisionMode
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A mode that determines the shape of the collision frame.
 
@@ -10,24 +11,25 @@ A mode that determines the shape of the collision frame.
 
 ## Declaration
 
-```swift
+```
 collisionMode?: AnnotationCollisionMode;
 ```
 
 #### Discussion
 
-Use one of the modes available in [`AnnotationCollisionMode`](annotationcollisionmode.md):
+Use one of the modes available in [`AnnotationCollisionMode`](../annotationcollisionmode.md):
 
-- [`Rectangle`](annotationcollisionmode/rectangle.md) — Indicates the bounding box of the annotation.
-- [`Circle`](annotationcollisionmode/circle.md) — Indicates a circle within the bounding box.
+- [`Rectangle`](../annotationcollisionmode/rectangle.md) — Indicates the bounding box of the annotation.
+- [`Circle`](../annotationcollisionmode/circle.md) — Indicates a circle within the bounding box.
 
-The default value is [`Rectangle`](annotationcollisionmode/rectangle.md).
+The default value is [`Rectangle`](../annotationcollisionmode/rectangle.md).
 
 ## See Also
 
-- [clusteringIdentifier](annotationconstructoroptions/clusteringidentifier.md)
+### Grouping annotations
+- [clusteringIdentifier](./clusteringidentifier.md)
   An identifier for grouping annotations into the same cluster.
-- [id](annotationconstructoroptions/id.md)
+- [id](./id.md)
   A Place ID that uniquely identifies a feature.
 
 

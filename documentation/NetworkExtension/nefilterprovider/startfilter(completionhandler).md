@@ -1,7 +1,8 @@
 # startFilter(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Start the filter.
 
@@ -15,7 +16,15 @@ Start the filter.
 ## Declaration
 
 ```swift
+func startFilter(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startFilter() async throws
+```
+
+```objc
+- (void) startFilterWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -32,7 +41,8 @@ When this method is called, the Filter Provider should perform any steps necessa
 
 ## See Also
 
-- [func stopFilter(with: NEProviderStopReason, completionHandler: () -> Void)](nefilterprovider/stopfilter(with:completionhandler:).md)
+### Managing the filter life cycle
+- [func stopFilter(with: NEProviderStopReason, completionHandler: () -> Void)](./stopfilter%28with,completionhandler%29.md)
   Stop the filter.
 
 

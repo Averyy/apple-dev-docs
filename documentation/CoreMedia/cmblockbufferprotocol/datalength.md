@@ -1,7 +1,8 @@
 # dataLength
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ var dataLength: Int { get }
 
 ## See Also
 
-- [var startIndex: Int](cmblockbufferprotocol/startindex.md)
-- [var endIndex: Int](cmblockbufferprotocol/endindex.md)
-- [var owner: CMBlockBuffer](cmblockbufferprotocol/owner.md)
+### Inspecting a Block Buffer
+- [var startIndex: Int](./startindex.md)
+- [var endIndex: Int](./endindex.md)
+- [var owner: CMBlockBuffer](./owner.md)
 
 
 ---

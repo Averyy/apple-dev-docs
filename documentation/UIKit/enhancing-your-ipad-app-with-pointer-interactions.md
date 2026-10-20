@@ -1,6 +1,8 @@
 # Enhancing your iPad app with pointer interactions
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [EnhancingYourIPadAppWithPointerInteractions.zip](https://docs-assets.developer.apple.com/published/2a604abb1735/EnhancingYourIPadAppWithPointerInteractions.zip)
 
 Provide a great user experience with pointing devices, by incorporating pointer content effects and shape customizations.
 
@@ -12,19 +14,20 @@ Provide a great user experience with pointing devices, by incorporating pointer 
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC20 session [`10093: Build for the iPadOS Pointer`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10093/).
+> **Note**: This sample code project is associated with WWDC20 session [10093: Build for the iPadOS Pointer](https://developer.apple.com/wwdc20/10093/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run the sample in Xcode, you need an iPad with iPadOS 14.0 or later and a trackpad or mouse connected, or set the simulator to any model of iPad.
 
 ## See Also
 
-- [class UIPointerInteraction](uipointerinteraction.md)
+### Essentials
+- [class UIPointerInteraction](./uipointerinteraction.md)
   An interaction that enables support for effects on a view or customizes the pointer’s appearance within a region of an app.
-- [protocol UIPointerInteractionDelegate](uipointerinteractiondelegate.md)
+- [protocol UIPointerInteractionDelegate](./uipointerinteractiondelegate.md)
   An interface for handling pointer movements within the interaction’s view.
-- [Integrating pointer interactions into your iPad app](integrating-pointer-interactions-into-your-ipad-app.md)
+- [Integrating pointer interactions into your iPad app](./integrating-pointer-interactions-into-your-ipad-app.md)
   Support touch interactions in your iPad app by adding pointer interactions to your views.
 
 

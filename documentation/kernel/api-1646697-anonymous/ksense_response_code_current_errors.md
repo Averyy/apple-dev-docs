@@ -1,14 +1,15 @@
 # kSENSE_RESPONSE_CODE_Current_Errors
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSENSE_RESPONSE_CODE_Current_Errors = 0x70
 ```
 

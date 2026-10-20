@@ -1,7 +1,8 @@
 # CGDisplayGetDisplayIDFromUUID(_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 func CGDisplayGetDisplayIDFromUUID(_ uuid: CFUUID!) -> UInt32
 ```
 
+```c
+extern uint32_t CGDisplayGetDisplayIDFromUUID(CFUUIDRef uuid);
+```
+
 ## See Also
 
-- [func CGDisplayCreateUUIDFromDisplayID(UInt32) -> Unmanaged<CFUUID>!](cgdisplaycreateuuidfromdisplayid(_:).md)
+### Converting display identifiers
+- [func CGDisplayCreateUUIDFromDisplayID(UInt32) -> Unmanaged<CFUUID>!](./cgdisplaycreateuuidfromdisplayid%28_%29.md)
 
 
 ---

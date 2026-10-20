@@ -1,7 +1,8 @@
 # LayoutDirectionBehavior.fixed
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A behavior that doesn’t mirror when the layout direction changes.
 
@@ -22,9 +23,10 @@ case fixed
 
 ## See Also
 
-- [static var mirrors: LayoutDirectionBehavior](layoutdirectionbehavior/mirrors.md)
+### Getting behaviors
+- [static var mirrors: LayoutDirectionBehavior](./mirrors.md)
   A behavior that mirrors when the layout direction is right-to-left.
-- [LayoutDirectionBehavior.mirrors(in:)](layoutdirectionbehavior/mirrors(in:).md)
+- [LayoutDirectionBehavior.mirrors(in:)](./mirrors%28in%29.md)
   A behavior that mirrors when the layout direction has the specified value.
 
 

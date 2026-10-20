@@ -1,18 +1,19 @@
 # DSPDoubleSplitComplex
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a double-precision complex vector with the real and imaginary parts stored in separate arrays.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,44 +21,49 @@ A structure that represents a double-precision complex vector with the real and 
 struct DSPDoubleSplitComplex
 ```
 
+```c
+typedef struct DSPDoubleSplitComplex { ... } DSPDoubleSplitComplex;
+```
+
 ## Topics
 
 ### Creating a Split Complex Structure
-- [init(realp: UnsafeMutablePointer<Double>, imagp: UnsafeMutablePointer<Double>)](dspdoublesplitcomplex/init(realp:imagp:).md)
+- [init(realp: UnsafeMutablePointer<Double>, imagp: UnsafeMutablePointer<Double>)](./dspdoublesplitcomplex/init%28realp,imagp%29.md)
   Creates a new split complex structure.
 ### Inspecting a Split Complex Structure’s Data
-- [var imagp: UnsafeMutablePointer<Double>](dspdoublesplitcomplex/imagp.md)
+- [var imagp: UnsafeMutablePointer<Double>](./dspdoublesplitcomplex/imagp.md)
   An array of imaginary parts of the complex numbers.
-- [var realp: UnsafeMutablePointer<Double>](dspdoublesplitcomplex/realp.md)
+- [var realp: UnsafeMutablePointer<Double>](./dspdoublesplitcomplex/realp.md)
   An array of real parts of the complex numbers.
 ### Initializers
-- [init(fromInputArray: [Double], realParts: inout [Double], imaginaryParts: inout [Double])](dspdoublesplitcomplex/init(frominputarray:realparts:imaginaryparts:).md)
+- [init(fromInputArray: [Double], realParts: inout [Double], imaginaryParts: inout [Double])](./dspdoublesplitcomplex/init%28frominputarray,realparts,imaginaryparts%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [vDSP_FourierTransformable](vdsp_fouriertransformable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [vDSP_FourierTransformable](./vdsp_fouriertransformable.md)
 
 ## See Also
 
-- [typealias vDSP_Length](vdsp_length.md)
+### Data types
+- [typealias vDSP_Length](./vdsp_length.md)
   An unsigned-integer value that represents the size of vectors and the indices of elements in vectors.
-- [typealias vDSP_Stride](vdsp_stride.md)
+- [typealias vDSP_Stride](./vdsp_stride.md)
   An integer value that represents the differences between indices of elements, including the lengths of strides.
-- [struct DSPComplex](dspcomplex.md)
+- [struct DSPComplex](./dspcomplex.md)
   A structure that represents a single-precision complex value.
-- [typealias COMPLEX_SPLIT](complex_split.md)
-- [struct DSPDoubleComplex](dspdoublecomplex.md)
+- [typealias COMPLEX_SPLIT](./complex_split.md)
+- [struct DSPDoubleComplex](./dspdoublecomplex.md)
   A structure that represents a double-precision complex value.
-- [typealias DOUBLE_COMPLEX_SPLIT](double_complex_split.md)
-- [struct DSPSplitComplex](dspsplitcomplex.md)
+- [typealias DOUBLE_COMPLEX_SPLIT](./double_complex_split.md)
+- [struct DSPSplitComplex](./dspsplitcomplex.md)
   A structure that represents a single-precision complex vector with the real and imaginary parts stored in separate arrays.
-- [struct VectorizableDouble](vdsp/vectorizabledouble.md)
+- [struct VectorizableDouble](./vdsp/vectorizabledouble.md)
   A structure that represents a double-precision real value for biquadratic filtering and discrete Fourier transforms.
-- [struct VectorizableFloat](vdsp/vectorizablefloat.md)
+- [struct VectorizableFloat](./vdsp/vectorizablefloat.md)
   A structure that represents a single-precision real value for biquadratic filtering and discrete Fourier transforms.
 
 

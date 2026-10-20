@@ -1,7 +1,8 @@
 # AttributeScopes.SwiftUIAttributes.TrackingAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A key for the space added between every character of a run of attributed text.
 
@@ -25,25 +26,25 @@ enum TrackingAttribute
 
 Tracking spreads a run out evenly, which suits a short label set in capitals. Give a positive value to open the run up and a negative value to tighten it:
 
-```None
+```
 var label = AttributedString("SOLD OUT")
 label.tracking = 3
 
 Text(label)
 ```
 
-To adjust only the gap between particular pairs of letters, use [`AttributeScopes.SwiftUIAttributes.KerningAttribute`](attributescopes/swiftuiattributes/kerningattribute.md).
+To adjust only the gap between particular pairs of letters, use [`AttributeScopes.SwiftUIAttributes.KerningAttribute`](./kerningattribute.md).
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MTLStructType
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a structure.
 
@@ -10,7 +11,7 @@ A description of a structure.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,43 +20,48 @@ A description of a structure.
 class MTLStructType
 ```
 
+```objc
+@interface MTLStructType : MTLType
+```
+
 #### Overview
 
-[`MTLStructType`](mtlstructtype.md) is part of the reflection API that allows Metal framework code to query details of a struct that is passed as an argument of a Metal shading language function. Don’t create [`MTLStructType`](mtlstructtype.md) instances directly; instead query the [`bufferStructType`](mtlargument/bufferstructtype.md) property of an [`MTLArgument`](mtlargument.md) instance, or call the [`structType()`](mtlstructmember/structtype().md) method for an [`MTLStructMember`](mtlstructmember.md) instance. To examine the details of the struct, you can recursively drill down the [`members`](mtlstructtype/members.md) property of the [`MTLStructType`](mtlstructtype.md) instance, which contains details about struct members, each of which is represented by an [`MTLStructMember`](mtlstructmember.md) instance.
+[`MTLStructType`](./mtlstructtype.md) is part of the reflection API that allows Metal framework code to query details of a struct that is passed as an argument of a Metal shading language function. Don’t create [`MTLStructType`](./mtlstructtype.md) instances directly; instead query the [`bufferStructType`](./mtlargument/bufferstructtype.md) property of an [`MTLArgument`](./mtlargument.md) instance, or call the [`structType()`](./mtlstructmember/structtype%28%29.md) method for an [`MTLStructMember`](./mtlstructmember.md) instance. To examine the details of the struct, you can recursively drill down the [`members`](./mtlstructtype/members.md) property of the [`MTLStructType`](./mtlstructtype.md) instance, which contains details about struct members, each of which is represented by an [`MTLStructMember`](./mtlstructmember.md) instance.
 
 ## Topics
 
 ### Obtaining information about struct members
-- [var members: [MTLStructMember]](mtlstructtype/members.md)
+- [var members: [MTLStructMember]](./mtlstructtype/members.md)
   An array of instances that describe the fields in the struct.
-- [func memberByName(String) -> MTLStructMember?](mtlstructtype/memberbyname(_:).md)
+- [func memberByName(String) -> MTLStructMember?](./mtlstructtype/memberbyname%28_%29.md)
   Provides a representation of a struct member.
 
 ## Relationships
 
 ### Inherits From
-- [MTLType](mtltype.md)
+- [MTLType](./mtltype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLType](mtltype.md)
+### Shader types
+- [class MTLType](./mtltype.md)
   A description of a data type.
-- [enum MTLDataType](mtldatatype.md)
+- [enum MTLDataType](./mtldatatype.md)
   The parameter type options for GPU functions, such as shaders and compute kernels.
-- [class MTLArrayType](mtlarraytype.md)
+- [class MTLArrayType](./mtlarraytype.md)
   A description of an array.
-- [class MTLStructMember](mtlstructmember.md)
+- [class MTLStructMember](./mtlstructmember.md)
   An instance that provides information about a field in a structure.
-- [class MTLPointerType](mtlpointertype.md)
+- [class MTLPointerType](./mtlpointertype.md)
   A description of a pointer.
-- [class MTLTextureReferenceType](mtltexturereferencetype.md)
+- [class MTLTextureReferenceType](./mtltexturereferencetype.md)
   A description of a texture.
 
 

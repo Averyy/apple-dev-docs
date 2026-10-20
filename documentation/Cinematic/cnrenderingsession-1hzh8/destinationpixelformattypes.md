@@ -1,14 +1,15 @@
 # destinationPixelFormatTypes
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A static number representing the video compositor’s required pixel buffer attributes context dictionary when implementing video compositing.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

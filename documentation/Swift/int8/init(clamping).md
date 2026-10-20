@@ -1,7 +1,8 @@
 # init(clamping:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the representable value that’s closest to the given integer.
 

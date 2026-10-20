@@ -1,10 +1,13 @@
 # init(UUIDString:authority:)
 
 **Framework**: Collaboration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.11
+
+> **Deprecated**: Use +identityWithUniqueIdentifier:authority: instead.
 
 ## Declaration
 

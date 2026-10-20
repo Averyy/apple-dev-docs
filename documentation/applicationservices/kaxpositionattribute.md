@@ -1,7 +1,8 @@
 # kAXPositionAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXPositionAttribute: String { get }
+```
+
+```c
+#define kAXPositionAttribute
 ```
 
 #### Discussion

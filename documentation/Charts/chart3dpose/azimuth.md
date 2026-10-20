@@ -1,7 +1,8 @@
 # azimuth
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The azimuthal angle of the chart pose.
 

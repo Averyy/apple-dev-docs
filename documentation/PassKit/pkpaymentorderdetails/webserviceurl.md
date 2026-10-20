@@ -1,7 +1,8 @@
 # webServiceURL
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for your web service.
 
@@ -18,13 +19,18 @@ The URL for your web service.
 var webServiceURL: URL { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSURL * webServiceURL;
+```
+
 ## See Also
 
-- [var authenticationToken: String](pkpaymentorderdetails/authenticationtoken.md)
+### Identifying and authenticating the order
+- [var authenticationToken: String](./authenticationtoken.md)
   The authentification token supplied to your web service.
-- [var orderIdentifier: String](pkpaymentorderdetails/orderidentifier.md)
+- [var orderIdentifier: String](./orderidentifier.md)
   A unique order identifier scoped to your order type identifier.
-- [var orderTypeIdentifier: String](pkpaymentorderdetails/ordertypeidentifier.md)
+- [var orderTypeIdentifier: String](./ordertypeidentifier.md)
   An identifier for the order type associated with the order.
 
 

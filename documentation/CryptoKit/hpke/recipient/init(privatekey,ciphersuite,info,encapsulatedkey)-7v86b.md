@@ -1,7 +1,8 @@
 # init(privateKey:ciphersuite:info:encapsulatedKey:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a recipient in base mode.
 
@@ -24,7 +25,7 @@ init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulated
 
 The `Receiver` decrypts messages in base mode using the encapsulated key with the key schedule information (`info` data).
 
-> **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
+> **Note**: The system throws errors from [`HPKE.Errors`](../errors.md) when it encounters them.
 
 ## Parameters
 

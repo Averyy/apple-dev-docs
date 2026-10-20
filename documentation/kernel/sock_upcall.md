@@ -1,14 +1,15 @@
 # sock_upcall
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*sock_upcall)(socket_t so, void *cookie, int waitf);
 ```
 

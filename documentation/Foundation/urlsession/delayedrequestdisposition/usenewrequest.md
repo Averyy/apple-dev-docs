@@ -1,7 +1,8 @@
 # URLSession.DelayedRequestDisposition.useNewRequest
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A disposition indicating that the task should use a new request to perform the network load.
 
@@ -20,11 +21,16 @@ A disposition indicating that the task should use a new request to perform the n
 case useNewRequest
 ```
 
+```c
+NSURLSessionDelayedRequestUseNewRequest
+```
+
 ## See Also
 
-- [URLSession.DelayedRequestDisposition.cancel](urlsession/delayedrequestdisposition/cancel.md)
+### Dispositions
+- [URLSession.DelayedRequestDisposition.cancel](./cancel.md)
   A disposition indicating that the task should be canceled.
-- [URLSession.DelayedRequestDisposition.continueLoading](urlsession/delayedrequestdisposition/continueloading.md)
+- [URLSession.DelayedRequestDisposition.continueLoading](./continueloading.md)
   A disposition indicating that the task should proceed with the original request.
 
 

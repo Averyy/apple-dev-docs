@@ -1,7 +1,8 @@
 # abbreviated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The abbreviated representation of a standalone month.
 
@@ -26,13 +27,14 @@ This custom format style conveys an abbreviated representation of a standalone m
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth/defaultdigits.md)
+### Modifying a Standalone Month
+- [static var defaultDigits: Date.FormatStyle.Symbol.StandaloneMonth](./defaultdigits.md)
   The custom month format style that shows the minimum number of digits to represent a standalone month.
-- [static var narrow: Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.StandaloneMonth](./narrow.md)
   The shortest representation of a standalone month.
-- [static var twoDigits: Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.StandaloneMonth](./twodigits.md)
   The two-digit representation of a standalone month.
-- [static var wide: Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.StandaloneMonth](./wide.md)
   The full representation of a standalone month.
 
 

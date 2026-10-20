@@ -1,7 +1,8 @@
 # AppSchema.ReaderEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the reader domain.
 
@@ -21,23 +22,24 @@ protocol ReaderEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var document: some AppSchemaEntity](appschema/readerentity/document.md)
+- [var document: some AppSchemaEntity](./readerentity/document.md)
   An entity schema for a document.
-- [var page: some AppSchemaEntity](appschema/readerentity/page.md)
+- [var page: some AppSchemaEntity](./readerentity/page.md)
   An entity schema for a page.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var document: some AppSchemaEntity](appschema/readerentity/document.md)
+### Content and parameter types
+- [var document: some AppSchemaEntity](./readerentity/document.md)
   An entity schema for a document.
-- [var page: some AppSchemaEntity](appschema/readerentity/page.md)
+- [var page: some AppSchemaEntity](./readerentity/page.md)
   An entity schema for a page.
 
 

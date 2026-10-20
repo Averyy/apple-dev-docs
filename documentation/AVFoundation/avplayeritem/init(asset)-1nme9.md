@@ -1,7 +1,8 @@
 # init(asset:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -21,14 +22,15 @@ convenience init(asset: any AVAsset & Sendable)
 
 ## See Also
 
-- [convenience init(url: URL)](avplayeritem/init(url:)-1xrtk.md)
+### Creating a player item
+- [convenience init(url: URL)](./init%28url%29-1xrtk.md)
   Creates a player item with a specified URL.
-- [convenience init(asset: AVAsset)](avplayeritem/init(asset:)-87rjl.md)
+- [convenience init(asset: AVAsset)](./init%28asset%29-87rjl.md)
   Creates a player item for a specified asset.
-- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md)
+- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-5czjh.md)
   Creates a player item for the asset, and automatically loads values for the specified properties.
-- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-85hal.md)
-- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](avplayeritem/init(asset:automaticallyloadedassetkeys:)-8x4.md)
+- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-85hal.md)
+- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](./init%28asset,automaticallyloadedassetkeys%29-8x4.md)
   Creates a player item with the specified asset and the asset keys to automatically load.
 
 

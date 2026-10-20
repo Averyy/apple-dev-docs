@@ -1,7 +1,8 @@
 # kSecPublicKeyHashItemAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Public key hash.
 
@@ -12,6 +13,10 @@ Public key hash.
 
 ```swift
 var kSecPublicKeyHashItemAttr: Int { get }
+```
+
+```c
+kSecPublicKeyHashItemAttr
 ```
 
 

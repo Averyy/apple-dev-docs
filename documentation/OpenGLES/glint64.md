@@ -1,7 +1,8 @@
 # GLint64
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLint64 = Int64
+```
+
+```c
+typedef int64_t GLint64;
 ```
 
 

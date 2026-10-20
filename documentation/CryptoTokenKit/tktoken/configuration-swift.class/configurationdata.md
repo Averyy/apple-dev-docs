@@ -1,7 +1,8 @@
 # configurationData
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional configuration information for the token instance.
 
@@ -20,15 +21,20 @@ Additional configuration information for the token instance.
 var configurationData: Data? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSData * configurationData;
+```
+
 #### Discussion
 
-[`configurationData`](tktoken/configuration-swift.class/configurationdata.md) can provide token-implementation-specific additional data, which the app that hosts the token driver extension and configures the token provides. The system doesn’t interpret this data in any way.
+[`configurationData`](./configurationdata.md) can provide token-implementation-specific additional data, which the app that hosts the token driver extension and configures the token provides. The system doesn’t interpret this data in any way.
 
 For example, the network-based hardware security module (HSM) can store encoded target network addresses, access credentials, or the list of identities the HSM contains.
 
 ## See Also
 
-- [var instanceID: TKToken.InstanceID](tktoken/configuration-swift.class/instanceid.md)
+### Reporting Configuration Information
+- [var instanceID: TKToken.InstanceID](./instanceid.md)
   The unique, persistent identifier of this token that the token implementation creates.
 
 

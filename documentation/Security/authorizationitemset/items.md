@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to an array of authorization items.
 
@@ -13,6 +14,10 @@ A pointer to an array of authorization items.
 
 ```swift
 var items: UnsafeMutablePointer<AuthorizationItem>?
+```
+
+```c
+AuthorizationItem * items;
 ```
 
 #### Discussion

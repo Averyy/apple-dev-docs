@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the container that generated this notification.
 
@@ -10,17 +11,18 @@ The identifier of the container that generated this notification.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String containerIdentifier;
 ```
 
 ## See Also
 
-- [notificationID](cloudkit.notification/notificationid.md)
+### Getting Identifiers
+- [notificationID](./notificationid.md)
   A unique identifier for this notification.
-- [subscriptionID](cloudkit.notification/subscriptionid.md)
+- [subscriptionID](./subscriptionid.md)
   The identifier for the associated subscription.
-- [zoneID](cloudkit.notification/zoneid.md)
+- [zoneID](./zoneid.md)
   The identifier of the zone that this notification belongs to.
 
 

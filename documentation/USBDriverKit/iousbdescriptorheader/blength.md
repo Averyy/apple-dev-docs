@@ -1,7 +1,8 @@
 # bLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes in the descriptor.
 
@@ -10,13 +11,14 @@ The number of bytes in the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbdescriptorheader/bdescriptortype.md)
+### Getting the Descriptor Properties
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
 
 

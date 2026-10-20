@@ -1,7 +1,8 @@
 # CPNavigationAlertMinimumDuration
 
 **Framework**: CarPlay  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that defines the minimum amount of time that an alert is visible.
 
@@ -16,13 +17,18 @@ A constant that defines the minimum amount of time that an alert is visible.
 var CPNavigationAlertMinimumDuration: TimeInterval { get }
 ```
 
+```c
+static const NSTimeInterval CPNavigationAlertMinimumDuration;
+```
+
 #### Discussion
 
-The minimum duration is in effect when [`duration`](cpnavigationalert/duration.md) is not zero.
+The minimum duration is in effect when [`duration`](./cpnavigationalert/duration.md) is not zero.
 
 ## See Also
 
-- [var duration: TimeInterval](cpnavigationalert/duration.md)
+### Getting the Alert Duration
+- [var duration: TimeInterval](./cpnavigationalert/duration.md)
   The amount of time, in seconds, that the alert is visible.
 
 

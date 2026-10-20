@@ -1,12 +1,13 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the support vector classifier.
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -16,11 +17,12 @@ var description: String { get }
 
 ## See Also
 
-- [var model: MLModel](mlsupportvectorclassifier/model.md)
+### Describing a support vector classifier
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [var debugDescription: String](mlsupportvectorclassifier/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the support vector classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlsupportvectorclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the support vector classifier shown in a playground.
 
 

@@ -1,7 +1,8 @@
 # errSecUnsupportedIndexInfo
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The index information is not supported.
 
@@ -18,6 +19,10 @@ The index information is not supported.
 
 ```swift
 var errSecUnsupportedIndexInfo: OSStatus { get }
+```
+
+```c
+errSecUnsupportedIndexInfo
 ```
 
 

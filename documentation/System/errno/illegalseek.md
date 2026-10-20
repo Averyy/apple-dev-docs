@@ -1,7 +1,8 @@
 # illegalSeek
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Illegal seek.
 
@@ -22,7 +23,7 @@ static var illegalSeek: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,7 +33,8 @@ The corresponding C error is `ESPIPE`.
 
 ## See Also
 
-- [static var brokenPipe: Errno](errno/brokenpipe.md)
+### Pipe Errors
+- [static var brokenPipe: Errno](./brokenpipe.md)
   Broken pipe.
 
 

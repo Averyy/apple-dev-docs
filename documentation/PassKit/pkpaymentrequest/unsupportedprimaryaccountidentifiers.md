@@ -1,7 +1,8 @@
 # unsupportedPrimaryAccountIdentifiers
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of Apple Pay cards to exclude from payment.
 
@@ -19,9 +20,13 @@ An array of Apple Pay cards to exclude from payment.
 var unsupportedPrimaryAccountIdentifiers: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * unsupportedPrimaryAccountIdentifiers;
+```
+
 #### Discussion
 
-Use this property to exclude Apple Pay cards you’ve issued from being used as a payment option by adding the [`primaryAccountIdentifier`](pksecureelementpass/primaryaccountidentifier.md) of the cards you want disallowed. For example, if a person is topping up a stored value card, you can exclude the Apple Pay card being topped up from the payment options.
+Use this property to exclude Apple Pay cards you’ve issued from being used as a payment option by adding the [`primaryAccountIdentifier`](../pksecureelementpass/primaryaccountidentifier.md) of the cards you want disallowed. For example, if a person is topping up a stored value card, you can exclude the Apple Pay card being topped up from the payment options.
 
 
 ---

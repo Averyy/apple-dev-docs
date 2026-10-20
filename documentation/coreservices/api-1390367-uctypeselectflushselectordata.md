@@ -1,7 +1,8 @@
 # UCTypeSelectFlushSelectorData(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func UCTypeSelectFlushSelectorData(_ ref: UCTypeSelectRef!) -> OSStatus
+```
+
+```c
+OSStatus UCTypeSelectFlushSelectorData(UCTypeSelectRef ref);
 ```
 
 

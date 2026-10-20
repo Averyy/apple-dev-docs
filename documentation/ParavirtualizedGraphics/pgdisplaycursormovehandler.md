@@ -1,7 +1,8 @@
 # PGDisplayCursorMoveHandler
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias PGDisplayCursorMoveHandler = () -> Void
+```
+
+```c
+typedef void (^)(void) PGDisplayCursorMoveHandler;
 ```
 
 

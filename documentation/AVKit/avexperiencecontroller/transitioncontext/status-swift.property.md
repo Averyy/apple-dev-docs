@@ -1,7 +1,8 @@
 # status
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the transition.
 
@@ -20,9 +21,10 @@ Use this to update your application state based on the current state of the tran
 
 ## See Also
 
-- [let fromExperience: AVExperienceController.Experience](avexperiencecontroller/transitioncontext/fromexperience.md)
+### Inspecting the transition
+- [let fromExperience: AVExperienceController.Experience](./fromexperience.md)
   The experience of the `AVExperienceController` before the transition was initiated.
-- [let toExperience: AVExperienceController.Experience](avexperiencecontroller/transitioncontext/toexperience.md)
+- [let toExperience: AVExperienceController.Experience](./toexperience.md)
   The experience to which the `AVExperienceController` has been requested to transition to.
 
 

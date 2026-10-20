@@ -1,7 +1,8 @@
 # isRegistered
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the postback is registered in the testing environment.
 
@@ -16,19 +17,24 @@ A Boolean value that indicates whether the postback is registered in the testing
 var isRegistered: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL isRegistered;
+```
+
 #### Discussion
 
-To register a postback, call [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:completionhandler:)), or [`registerAppForAdNetworkAttribution()`](https://developer.apple.com/documentation/storekit/skadnetwork/registerappforadnetworkattribution()).
+To register a postback, call [`updatePostbackConversionValue(_:completionHandler:)`](../../StoreKit/skadnetwork/updatepostbackconversionvalue%28_,completionhandler%29.md), or [`registerAppForAdNetworkAttribution()`](../../StoreKit/skadnetwork/registerappforadnetworkattribution%28%29.md).
 
 ## See Also
 
-- [var version: SKAdTestPostbackVersion](skadtestpostback/version.md)
+### Getting general information
+- [var version: SKAdTestPostbackVersion](./version.md)
   The SKAdNetwork version that the postback uses.
-- [var transactionIdentifier: String](skadtestpostback/transactionidentifier.md)
+- [var transactionIdentifier: String](./transactionidentifier.md)
   A unique transaction identifier that the system generates.
-- [var postbackSequenceIndex: Int](skadtestpostback/postbacksequenceindex.md)
+- [var postbackSequenceIndex: Int](./postbacksequenceindex.md)
   The position of this postback among all postbacks for an ad impression.
-- [var isRedownload: Bool](skadtestpostback/isredownload.md)
+- [var isRedownload: Bool](./isredownload.md)
   A Boolean value that indicates whether the user redownloaded and reinstalled the app.
 
 

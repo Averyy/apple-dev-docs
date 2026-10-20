@@ -1,7 +1,8 @@
 # hearingDevicePairedEarDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when there’s a change to the currently paired hearing devices.
 
@@ -18,13 +19,18 @@ nonisolated
 static let hearingDevicePairedEarDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityHearingDevicePairedEarDidChangeNotification;
+```
+
 ## See Also
 
-- [static let monoAudioStatusDidChangeNotification: NSNotification.Name](uiaccessibility/monoaudiostatusdidchangenotification.md)
+### Audio and speech
+- [static let monoAudioStatusDidChangeNotification: NSNotification.Name](./monoaudiostatusdidchangenotification.md)
   A notification that UIKit posts when system audio changes from stereo to mono.
-- [static let speakScreenStatusDidChangeNotification: NSNotification.Name](uiaccessibility/speakscreenstatusdidchangenotification.md)
+- [static let speakScreenStatusDidChangeNotification: NSNotification.Name](./speakscreenstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Speak Screen setting changes.
-- [static let speakSelectionStatusDidChangeNotification: NSNotification.Name](uiaccessibility/speakselectionstatusdidchangenotification.md)
+- [static let speakSelectionStatusDidChangeNotification: NSNotification.Name](./speakselectionstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Speak Selection setting changes.
 
 

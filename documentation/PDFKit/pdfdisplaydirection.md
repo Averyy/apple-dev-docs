@@ -1,7 +1,8 @@
 # PDFDisplayDirection
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 11.0+
@@ -17,27 +18,32 @@
 enum PDFDisplayDirection
 ```
 
+```c
+enum PDFDisplayDirection : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [PDFDisplayDirection.horizontal](pdfdisplaydirection/horizontal.md)
-- [PDFDisplayDirection.vertical](pdfdisplaydirection/vertical.md)
+- [PDFDisplayDirection.horizontal](./pdfdisplaydirection/horizontal.md)
+- [PDFDisplayDirection.vertical](./pdfdisplaydirection/vertical.md)
 ### Initializers
-- [init?(rawValue: Int)](pdfdisplaydirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfdisplaydirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PDFDisplayBox](pdfdisplaybox.md)
+### Supporting Types
+- [enum PDFDisplayBox](./pdfdisplaybox.md)
   The following box types may be used with `PDFPage` drawing and bounds-setting methods. See the Adobe PDF Specification for more information on box types, units, and coordinate systems.
 
 

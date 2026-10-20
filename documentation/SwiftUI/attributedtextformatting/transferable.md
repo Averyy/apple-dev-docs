@@ -1,7 +1,8 @@
 # AttributedTextFormatting.Transferable
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transferable representation of an attributed string interpreted in a SwiftUI environment.
 
@@ -22,7 +23,7 @@ struct Transferable
 
 #### Overview
 
-Use this type e.g. with drag and drop APIs or to create a [`fileExporter(isPresented:item:contentTypes:defaultFilename:onCompletion:onCancellation:)`](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md).
+Use this type e.g. with drag and drop APIs or to create a [`fileExporter(isPresented:item:contentTypes:defaultFilename:onCompletion:onCancellation:)`](../view/fileexporter%28ispresented,item,contenttypes,defaultfilename,oncompletion,oncancellation%29.md).
 
 ```swift
 struct RichTextEditorView: View {
@@ -61,21 +62,21 @@ To extract text the text after importing, use attributed string’s `Foundation/
 
 Supported content types include:
 
-- [`rtfd`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/rtfd)
-- [`rtf`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/rtf)
+- [`rtfd`](../../UniformTypeIdentifiers/uttype-swift.struct/rtfd.md)
+- [`rtf`](../../UniformTypeIdentifiers/uttype-swift.struct/rtf.md)
 
 ## Topics
 
 ### Initializers
-- [init(text: AttributedString, in: EnvironmentValues)](attributedtextformatting/transferable/init(text:in:).md)
+- [init(text: AttributedString, in: EnvironmentValues)](./transferable/init%28text,in%29.md)
   Create a transferable representation of an attributed string as interpreted in a SwiftUI environment.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transferable](../coretransferable/transferable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transferable](../../CoreTransferable/transferable.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # AU3DMixerAttenuationCurve.k3DMixerAttenuationCurve_Inverse
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An inverse attenuation curve.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ An inverse attenuation curve.
 case k3DMixerAttenuationCurve_Inverse
 ```
 
+```c
+k3DMixerAttenuationCurve_Inverse
+```
+
 ## See Also
 
-- [AU3DMixerAttenuationCurve.k3DMixerAttenuationCurve_Exponential](au3dmixerattenuationcurve/k3dmixerattenuationcurve_exponential.md)
+### Constants
+- [AU3DMixerAttenuationCurve.k3DMixerAttenuationCurve_Exponential](./k3dmixerattenuationcurve_exponential.md)
   An exponential attenuation curve.
-- [AU3DMixerAttenuationCurve.k3DMixerAttenuationCurve_Linear](au3dmixerattenuationcurve/k3dmixerattenuationcurve_linear.md)
+- [AU3DMixerAttenuationCurve.k3DMixerAttenuationCurve_Linear](./k3dmixerattenuationcurve_linear.md)
   A linear attenuation curve.
-- [AU3DMixerAttenuationCurve.k3DMixerAttenuationCurve_Power](au3dmixerattenuationcurve/k3dmixerattenuationcurve_power.md)
+- [AU3DMixerAttenuationCurve.k3DMixerAttenuationCurve_Power](./k3dmixerattenuationcurve_power.md)
   An equal-power-based attenuation curve.
 
 

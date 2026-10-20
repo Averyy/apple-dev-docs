@@ -1,7 +1,8 @@
 # UITextSmartQuotesType.yes
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enable smart quotes.
 
@@ -18,11 +19,16 @@ Enable smart quotes.
 case yes
 ```
 
+```c
+UITextSmartQuotesTypeYes
+```
+
 ## See Also
 
-- [UITextSmartQuotesType.default](uitextsmartquotestype/default.md)
+### Constants
+- [UITextSmartQuotesType.default](./default.md)
   Use the default smart quote behavior.
-- [UITextSmartQuotesType.no](uitextsmartquotestype/no.md)
+- [UITextSmartQuotesType.no](./no.md)
   Disable smart quotes.
 
 

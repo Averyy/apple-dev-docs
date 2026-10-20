@@ -1,7 +1,8 @@
 # kUSBInformationRootHubIsBuiltInBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The bit indicating that the root hub is built-in.
 
@@ -10,7 +11,7 @@ The bit indicating that the root hub is built-in.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationRootHubIsBuiltInBit = 10
 ```
 

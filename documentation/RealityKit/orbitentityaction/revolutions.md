@@ -1,7 +1,8 @@
 # revolutions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rotations to complete before stopping.
 

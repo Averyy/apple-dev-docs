@@ -1,7 +1,8 @@
 # MPSGraphCompilationCompletionHandler
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A notification that appears when compilation finishes.
 
@@ -17,6 +18,10 @@ A notification that appears when compilation finishes.
 
 ```swift
 typealias MPSGraphCompilationCompletionHandler = (MPSGraphExecutable, (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(MPSGraphExecutable *, NSError *) MPSGraphCompilationCompletionHandler;
 ```
 
 ## Parameters

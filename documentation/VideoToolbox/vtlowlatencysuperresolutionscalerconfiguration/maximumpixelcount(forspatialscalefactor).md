@@ -1,7 +1,8 @@
 # maximumPixelCount(forSpatialScaleFactor:)
 
 **Framework**: Video Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The maximum total number of pixels in the source frame for a given spatial scale factor.
 
@@ -21,7 +22,7 @@ class func maximumPixelCount(forSpatialScaleFactor spatialScaleFactor: Float) ->
 
 #### Discussion
 
-The product of `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumDimensionForSpatialScaleFactor:`](vtlowlatencysuperresolutionscalerconfiguration/maximumdimensionforspatialscalefactor:.md) to determine valid frame dimensions. Optional return value.  Returns nil for unsupported spatialScaleFactor or if processor is unsupported.
+The product of `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumDimensionForSpatialScaleFactor:`](./maximumdimensionforspatialscalefactor_.md) to determine valid frame dimensions. Optional return value.  Returns nil for unsupported spatialScaleFactor or if processor is unsupported.
 
 
 ---

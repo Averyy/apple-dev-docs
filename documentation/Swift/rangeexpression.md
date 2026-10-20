@@ -1,7 +1,8 @@
 # RangeExpression
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be used to slice a collection.
 
@@ -27,35 +28,36 @@ A type that conforms to `RangeExpression` can convert itself to a `Range<Bound>`
 ## Topics
 
 ### Operators
-- [static func ~= (Self, Self.Bound) -> Bool](rangeexpression/~=(_:_:).md)
+- [static func ~= (Self, Self.Bound) -> Bool](./rangeexpression/tildeeq%28_,_%29.md)
   Returns a Boolean value indicating whether a value is included in a range.
 ### Associated Types
-- [associatedtype Bound : Comparable](rangeexpression/bound.md)
+- [associatedtype Bound : Comparable](./rangeexpression/bound.md)
   The type for which the expression describes a range.
 ### Instance Methods
-- [func contains(Self.Bound) -> Bool](rangeexpression/contains(_:).md)
+- [func contains(Self.Bound) -> Bool](./rangeexpression/contains%28_%29.md)
   Returns a Boolean value indicating whether the given element is contained within the range expression.
-- [func relative<C>(to: C) -> Range<Self.Bound>](rangeexpression/relative(to:).md)
+- [func relative<C>(to: C) -> Range<Self.Bound>](./rangeexpression/relative%28to%29.md)
   Returns the range of indices described by this range expression within the given collection.
 
 ## Relationships
 
 ### Conforming Types
-- [ClosedRange](closedrange.md)
-- [PartialRangeFrom](partialrangefrom.md)
-- [PartialRangeThrough](partialrangethrough.md)
-- [PartialRangeUpTo](partialrangeupto.md)
-- [Range](range.md)
+- [ClosedRange](./closedrange.md)
+- [PartialRangeFrom](./partialrangefrom.md)
+- [PartialRangeThrough](./partialrangethrough.md)
+- [PartialRangeUpTo](./partialrangeupto.md)
+- [Range](./range.md)
 
 ## See Also
 
-- [struct PartialRangeUpTo](partialrangeupto.md)
+### Range Expressions
+- [struct PartialRangeUpTo](./partialrangeupto.md)
   A partial half-open interval up to, but not including, an upper bound.
-- [struct PartialRangeThrough](partialrangethrough.md)
+- [struct PartialRangeThrough](./partialrangethrough.md)
   A partial interval up to, and including, an upper bound.
-- [struct PartialRangeFrom](partialrangefrom.md)
+- [struct PartialRangeFrom](./partialrangefrom.md)
   A partial interval extending upward from a lower bound.
-- [enum UnboundedRange_](unboundedrange_.md)
+- [enum UnboundedRange_](./unboundedrange_.md)
   A range expression that represents the entire range of a collection.
 
 

@@ -1,7 +1,8 @@
 # userEngaged(_:visibleItems:interaction:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system that someone engaged with a specific search result in your app’s interface.
 
@@ -30,9 +31,10 @@ When someone selects or interacts with a specific search result in your app’s 
 
 ## See Also
 
-- [func userEngaged(CSUserQuery.Suggestion, visibleSuggestions: [CSUserQuery.Suggestion], interaction: CSUserQuery.UserInteractionKind)](csuserquery/userengaged(_:visiblesuggestions:interaction:).md)
+### Improving the quality of ranked results
+- [func userEngaged(CSUserQuery.Suggestion, visibleSuggestions: [CSUserQuery.Suggestion], interaction: CSUserQuery.UserInteractionKind)](./userengaged%28_,visiblesuggestions,interaction%29.md)
   Notifies the system that someone engaged with a specific text completion in your app’s interface.
-- [CSUserQuery.UserInteractionKind](csuserquery/userinteractionkind.md)
+- [CSUserQuery.UserInteractionKind](./userinteractionkind.md)
   Constants that indicate how someone engaged with search-related content.
 
 

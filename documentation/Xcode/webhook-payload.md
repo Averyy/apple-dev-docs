@@ -1,6 +1,7 @@
 # Xcode Cloud webhook payload reference
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Review details of the webhook payload that Xcode Cloud sends, including the product, workflow, build, actions, results, and SCM metadata associated with it.
 
@@ -10,7 +11,7 @@ Review details of the webhook payload that Xcode Cloud sends, including the prod
 - **`name`**: The name of the webhook, such as `Team Dashboard`.
 - **`url`**: The URL of the app or service that receives and handles the webhook.
 
-##### Webhookmetadata
+##### WebhookMetadata
 
 - **`type`**: A constant value of `metadata`, indicating that this section of the payload contains metadata about the webhook.
 - **`createdDate`**: The creation date of the webhook event.
@@ -21,7 +22,7 @@ Review details of the webhook payload that Xcode Cloud sends, including the prod
 - **`id`**: A string that uniquely identifies the app associated with the webhook, such as `12345678-abcd-1234-5678-a12345bc4567`.
 - **`type`**: A constant value of `apps`, indicating that this section of the payload contains app information for the event.
 
-##### Ciworkflow
+##### CIWorkflow
 
 - **`id`**: A string that uniquely identifies the workflow associated with the webhook, such as `12345678-abcd-1234-5678-a12345bc4567`.
 - **`type`**: A constant value of `ciWorkflows`, indicating that this data structure represents a workflow.
@@ -31,7 +32,7 @@ Review details of the webhook payload that Xcode Cloud sends, including the prod
 - **`isEnabled`**: A Boolean value that indicates whether the workflow is currently in an enabled state.
 - **`isLockedForEditing`**: A Boolean value that indicates whether the workflow is locked for editing, preventing any modifications.
 
-##### Ciproduct
+##### CIProduct
 
 - **`id`**: A string that uniquely identifies the product associated with the webhook, such as `12345678-abcd-1234-5678-a12345bc4567`.
 - **`type`**: A constant value of `ciProducts`, indicating that this data structure represents a product.
@@ -39,7 +40,7 @@ Review details of the webhook payload that Xcode Cloud sends, including the prod
 - **`createdDate`**: The creation date of the product.
 - **`productType`**: The type of product associated with the webhook, such as `APP` or `FRAMEWORK`.
 
-##### Cibuilds
+##### CIBuilds
 
 - **`id`**: A string that uniquely identifies the build associated with the webhook, such as `12345678-abcd-1234-5678-a12345bc4567`.
 - **`type`**: A constant value of `ciBuildRuns`, indicating that this data structure represents a build.
@@ -65,7 +66,7 @@ Review details of the webhook payload that Xcode Cloud sends, including the prod
 - **`executionProgress`**: The current progress of the build, which can be `PENDING`, `RUNNING`, or `COMPLETE`.
 - **`completionStatus`**: The completion status of the build, which can be `SUCCEEDED`, `FAILED`, `ERRORED`, `CANCELED`, or `SKIPPED`.
 
-##### Cibuildactions
+##### CIBuildActions
 
 Information and metadata for each build action that runs as part of the build.
 
@@ -90,7 +91,7 @@ Information and metadata for each build action that runs as part of the build.
 - **`type`**: A constant value of `builds`, indicating that this data structure represents a build.
 - **`platform`**: The platform type associated with the build, such as `IOS`, `MAC_OS`, or `TV_OS`.
 
-##### Scmprovider
+##### ScmProvider
 
 - **`type`**: A constant value of `scmProviders`, indicating that this data structure represents an SCM provider.
 
@@ -101,7 +102,7 @@ Information and metadata for each build action that runs as part of the build.
 - **`isOnPremise`**: A Boolean value that indicates whether the SCM provider is self-hosted.
 - **`endpoint`**: The URL of the repository on the SCM provider’s website.
 
-##### Scmrepository
+##### ScmRepository
 
 - **`id`**: A string that uniquely identifies the SCM repository.
 - **`type`**: A constant value of `scmRepositories`, indicating that this data structure represents an SCM repository.
@@ -110,7 +111,7 @@ Information and metadata for each build action that runs as part of the build.
 - **`ownerName`**: The name of the person or organization that owns the repository.
 - **`repositoryName`**: The name of the repository associated with the build.
 
-##### Scmpullrequest
+##### ScmPullRequest
 
 - **`id`**: A string that uniquely identifies the pull request.
 - **`type`**: A constant value of `scmPullRequests`, indicating that this data structure represents an SCM pull request.
@@ -126,7 +127,7 @@ Information and metadata for each build action that runs as part of the build.
 - **`isClosed`**: A Boolean value that indicates whether the pull request is closed.
 - **`isCrossRepository`**: A Boolean value that indicates whether the pull request is between repositories that different users or organizations own.
 
-##### Scmgitreference
+##### ScmGitReference
 
 - **`id`**: A string that uniquely identifies the Git reference.
 - **`type`**: A constant value of `scmGitReferences`, indicating that this data structure represents an SCM Git reference.
@@ -137,9 +138,10 @@ Information and metadata for each build action that runs as part of the build.
 
 ## See Also
 
-- [Configuring webhooks in Xcode Cloud](configuring-webhooks-in-xcode-cloud.md)
+### Notifications
+- [Configuring webhooks in Xcode Cloud](./configuring-webhooks-in-xcode-cloud.md)
   Send build events to external services and tools using webhooks.
-- [Connecting Xcode Cloud to Slack](connecting-xcode-cloud-to-slack.md)
+- [Connecting Xcode Cloud to Slack](./connecting-xcode-cloud-to-slack.md)
   Connect Xcode Cloud to Slack to keep your team informed about the latest Xcode Cloud builds.
 
 

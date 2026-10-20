@@ -1,17 +1,22 @@
 # viewDidMoveToSuperview()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the view that its superview has changed (possibly to `nil`).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func viewDidMoveToSuperview()
+```
+
+```objc
+- (void) viewDidMoveToSuperview;
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ The default implementation does nothing; subclasses can override this method to 
 
 ## See Also
 
-- [func didAddSubview(NSView)](nsview/didaddsubview(_:).md)
+### Responding to View-Related Notifications
+- [func didAddSubview(NSView)](./didaddsubview%28_%29.md)
   Overridden by subclasses to perform additional actions when subviews are added to the view.
-- [func viewDidMoveToWindow()](nsview/viewdidmovetowindow.md)
+- [func viewDidMoveToWindow()](./viewdidmovetowindow%28%29.md)
   Informs the view that it has been added to a new view hierarchy.
-- [func viewWillMove(toSuperview: NSView?)](nsview/viewwillmove(tosuperview:).md)
+- [func viewWillMove(toSuperview: NSView?)](./viewwillmove%28tosuperview%29.md)
   Informs the view that its superview is about to change to the specified superview (which may be `nil`).
-- [func viewWillMove(toWindow: NSWindow?)](nsview/viewwillmove(towindow:).md)
+- [func viewWillMove(toWindow: NSWindow?)](./viewwillmove%28towindow%29.md)
   Informs the view that it’s being added to the view hierarchy of the specified window object (which may be `nil`).
-- [func willRemoveSubview(NSView)](nsview/willremovesubview(_:).md)
+- [func willRemoveSubview(NSView)](./willremovesubview%28_%29.md)
   Overridden by subclasses to perform additional actions before subviews are removed from the view.
 
 

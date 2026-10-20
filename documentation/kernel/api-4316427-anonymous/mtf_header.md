@@ -1,14 +1,15 @@
 # MTF_HEADER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 MTF_HEADER = (1 << MT_HEADER)
 ```
 

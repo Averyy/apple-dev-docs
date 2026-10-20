@@ -1,7 +1,8 @@
 # cgColorSpace
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Graphics color-space object that represents a color space equivalent to the color space’s.
 
@@ -14,23 +15,28 @@ The Core Graphics color-space object that represents a color space equivalent to
 var cgColorSpace: CGColorSpace? { get }
 ```
 
+```objc
+@property (readonly, nullable) CGColorSpaceRef CGColorSpace;
+```
+
 #### Discussion
 
-The value of this property is a reference to an Core Graphics color-space object ([`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace)) or `NULL` if the type of color space represented by the receiver cannot be represented by a `CGColorSpace` object.
+The value of this property is a reference to an Core Graphics color-space object ([`CGColorSpace`](../../CoreGraphics/cgcolorspace.md)) or `NULL` if the type of color space represented by the receiver cannot be represented by a `CGColorSpace` object.
 
 ## See Also
 
-- [var colorSpaceModel: NSColorSpace.Model](nscolorspace/colorspacemodel.md)
+### Accessing Color Space Data and Attributes
+- [var colorSpaceModel: NSColorSpace.Model](./colorspacemodel.md)
   The model on which the color space is based.
-- [NSColorSpace.Model](nscolorspace/model.md)
+- [NSColorSpace.Model](./model.md)
   Constants that describe the abstract model on which color space objects are based.
-- [var colorSyncProfile: UnsafeMutableRawPointer?](nscolorspace/colorsyncprofile.md)
+- [var colorSyncProfile: UnsafeMutableRawPointer?](./colorsyncprofile.md)
   The ColorSync profile from which the color space was created.
-- [var iccProfileData: Data?](nscolorspace/iccprofiledata.md)
+- [var iccProfileData: Data?](./iccprofiledata.md)
   The ICC profile data from which the color space was created.
-- [var localizedName: String?](nscolorspace/localizedname.md)
+- [var localizedName: String?](./localizedname.md)
   The localized name of the color space.
-- [var numberOfColorComponents: Int](nscolorspace/numberofcolorcomponents.md)
+- [var numberOfColorComponents: Int](./numberofcolorcomponents.md)
   The number of components, excluding alpha, the color space supports.
 
 

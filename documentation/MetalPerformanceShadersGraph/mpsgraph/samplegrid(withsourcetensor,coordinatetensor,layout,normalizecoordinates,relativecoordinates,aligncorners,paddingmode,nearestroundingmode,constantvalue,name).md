@@ -1,7 +1,8 @@
 # sampleGrid(withSourceTensor:coordinateTensor:layout:normalizeCoordinates:relativeCoordinates:alignCorners:paddingMode:nearestRoundingMode:constantValue:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Samples a tensor using the coordinates provided, using nearest neighbor sampling with specified rounding mode.
 
@@ -17,6 +18,10 @@ Samples a tensor using the coordinates provided, using nearest neighbor sampling
 
 ```swift
 func sampleGrid(withSourceTensor source: MPSGraphTensor, coordinateTensor coordinates: MPSGraphTensor, layout: MPSGraphTensorNamedDataLayout, normalizeCoordinates: Bool, relativeCoordinates: Bool, alignCorners: Bool, paddingMode: MPSGraphPaddingMode, nearestRoundingMode: MPSGraphResizeNearestRoundingMode, constantValue: Double, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) sampleGridWithSourceTensor:(MPSGraphTensor *) source coordinateTensor:(MPSGraphTensor *) coordinates layout:(MPSGraphTensorNamedDataLayout) layout normalizeCoordinates:(BOOL) normalizeCoordinates relativeCoordinates:(BOOL) relativeCoordinates alignCorners:(BOOL) alignCorners paddingMode:(MPSGraphPaddingMode) paddingMode nearestRoundingMode:(MPSGraphResizeNearestRoundingMode) nearestRoundingMode constantValue:(double) constantValue name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The new submersion state.
 
@@ -18,11 +19,16 @@ The new submersion state.
 var state: CMWaterSubmersionEvent.State { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMWaterSubmersionState state;
+```
+
 ## See Also
 
-- [var date: Date](cmwatersubmersionevent/date.md)
+### Accessing event data
+- [var date: Date](./date.md)
   The time and date of the event.
-- [CMWaterSubmersionEvent.State](cmwatersubmersionevent/state-swift.enum.md)
+- [CMWaterSubmersionEvent.State](./state-swift.enum.md)
   The device’s submersion state.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a visibility priority structure with the specified raw value.
 
@@ -9,7 +10,7 @@ Creates a visibility priority structure with the specified raw value.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [init(Int)](nstoolbaritem/visibilitypriority-swift.struct/init(_:).md)
+### Initializers
+- [init(Int)](./init%28_%29.md)
   Creates a visibility priority structure.
 
 

@@ -1,7 +1,8 @@
 # SearchSupplySourceType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The supply source context (App Store or Apple Maps) used to scope a geo location search.
 
@@ -10,13 +11,18 @@ The supply source context (App Store or Apple Maps) used to scope a geo location
 
 ## Declaration
 
-```swift
+```
 string SearchSupplySourceType
 ```
 
+## Possible Values
+
+- `APPSTORE`: Scopes the geo search to the App Store supply source.
+- `MAPS`: Scopes the geo search to the Apple Maps supply source.
+
 ## See Also
 
-- [type GeoEntityType](geoentitytype.md)
+- [type GeoEntityType](./geoentitytype.md)
   The geographic granularity (dimension) of a geo entity, from country down to postal code.
 
 

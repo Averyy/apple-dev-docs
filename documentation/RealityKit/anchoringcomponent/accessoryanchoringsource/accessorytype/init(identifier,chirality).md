@@ -1,7 +1,8 @@
 # init(identifier:chirality:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom accessory type with a uniform type identifier and chirality.
 

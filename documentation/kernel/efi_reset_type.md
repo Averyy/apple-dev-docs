@@ -1,14 +1,15 @@
 # EFI_RESET_TYPE
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum EFI_RESET_TYPE : unsigned int {
     ...
 } EFI_RESET_TYPE;
@@ -17,9 +18,9 @@ typedef enum EFI_RESET_TYPE : unsigned int {
 ## Topics
 
 ### Constants
-- [EfiResetCold](efi_reset_type/efiresetcold.md)
-- [EfiResetShutdown](efi_reset_type/efiresetshutdown.md)
-- [EfiResetWarm](efi_reset_type/efiresetwarm.md)
+- [EfiResetCold](./efi_reset_type/efiresetcold.md)
+- [EfiResetShutdown](./efi_reset_type/efiresetshutdown.md)
+- [EfiResetWarm](./efi_reset_type/efiresetwarm.md)
 
 
 ---

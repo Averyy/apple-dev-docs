@@ -1,14 +1,15 @@
 # createPlayer
 
 **Framework**: LivePhotosKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - LivePhotosKit JS 1.5+
 
 ## Declaration
 
-```swift
+```
 createPlayer(
 	optional Object options
 );

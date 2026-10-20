@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current authorization state for a right.
 
@@ -18,11 +19,16 @@ The current authorization state for a right.
 var state: LARight.State { get }
 ```
 
+```objc
+@property (nonatomic, readonly) LARightState state;
+```
+
 ## See Also
 
-- [func checkCanAuthorize(completion: ((any Error)?) -> Void)](laright/checkcanauthorize(completion:).md)
+### Monitoring authorization status
+- [func checkCanAuthorize(completion: ((any Error)?) -> Void)](./checkcanauthorize%28completion%29.md)
   Checks whether the right has permission to perform authorization.
-- [LARight.State](laright/state-swift.enum.md)
+- [LARight.State](./state-swift.enum.md)
   The possible states for a right during authorization.
 
 

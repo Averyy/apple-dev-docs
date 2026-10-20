@@ -1,16 +1,19 @@
 # MTRContentLauncherSupportedStreamingProtocol
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 17.4
+- iPadOS 16.1+ - Deprecated in 17.4
+- Mac Catalyst 16.1+ - Deprecated in 17.4
+- macOS 13.0+ - Deprecated in 14.4
+- tvOS 16.1+ - Deprecated in 17.4
+- visionOS 1.0+ - Deprecated in 1.1
+- watchOS 9.1+ - Deprecated in 10.4
+
+> **Deprecated**: Please use MTRContentLauncherSupportedProtocolsBitmap
 
 ## Declaration
 
@@ -18,25 +21,29 @@
 struct MTRContentLauncherSupportedStreamingProtocol
 ```
 
+```c
+enum MTRContentLauncherSupportedStreamingProtocol : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrcontentlaunchersupportedstreamingprotocol/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrcontentlaunchersupportedstreamingprotocol/init%28rawvalue%29.md)
 ### Type Properties
-- [static var DASH: MTRContentLauncherSupportedStreamingProtocol](mtrcontentlaunchersupportedstreamingprotocol/dash.md)
-- [static var HLS: MTRContentLauncherSupportedStreamingProtocol](mtrcontentlaunchersupportedstreamingprotocol/hls.md)
+- [static var DASH: MTRContentLauncherSupportedStreamingProtocol](./mtrcontentlaunchersupportedstreamingprotocol/dash.md)
+- [static var HLS: MTRContentLauncherSupportedStreamingProtocol](./mtrcontentlaunchersupportedstreamingprotocol/hls.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

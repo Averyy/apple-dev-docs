@@ -1,7 +1,8 @@
 # password
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The password a person uses to login.
 
@@ -22,7 +23,8 @@ The password can be between 1-64 characters in length. This value is `nil` if th
 
 ## See Also
 
-- [let username: String](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/userlogin-swift.struct/username.md)
+### Login credentials
+- [let username: String](./username.md)
   Username used to login.
 
 

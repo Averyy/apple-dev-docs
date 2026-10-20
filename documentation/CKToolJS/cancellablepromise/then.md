@@ -1,7 +1,8 @@
 # then
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells `CancellablePromise` what callbacks to call on success or failure of the inner promise.
 
@@ -10,7 +11,7 @@ Tells `CancellablePromise` what callbacks to call on success or failure of the i
 
 ## Declaration
 
-```swift
+```
 CancellablePromise then(
 	Function? onrejected,
 	Function? onfullfilled

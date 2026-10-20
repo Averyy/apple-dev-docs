@@ -1,7 +1,8 @@
 # wifiAware
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current status and performance information for Wi-Fi Aware, or `nil` if this path is not over Wi-Fi Aware.
 
@@ -17,7 +18,7 @@ var wifiAware: WAPath? { get async throws }
 
 #### Discussion
 
-> **Note**: An error if the path could not be retrieved, or if the App does not have access to Wi-Fi Aware.
+> **Throws**: An error if the path could not be retrieved, or if the App does not have access to Wi-Fi Aware.
 
 
 ---

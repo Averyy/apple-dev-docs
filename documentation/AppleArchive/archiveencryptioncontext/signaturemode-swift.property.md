@@ -1,7 +1,8 @@
 # signatureMode
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signature mode, such as an ECDSA Nist P-256 signature.
 
@@ -11,7 +12,7 @@ The signature mode, such as an ECDSA Nist P-256 signature.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var signatureMode: ArchiveEncryptionContext.SignatureMode { get }
 
 ## See Also
 
-- [static func sign(encryptedStream: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext) throws](archiveencryptioncontext/sign(encryptedstream:encryptioncontext:).md)
+### Signing an encryption context
+- [static func sign(encryptedStream: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext) throws](./sign%28encryptedstream,encryptioncontext%29.md)
   Signs an encrypted archive using the credentials stored in the specified encryption context.
-- [ArchiveEncryptionContext.SignatureMode](archiveencryptioncontext/signaturemode-swift.struct.md)
+- [ArchiveEncryptionContext.SignatureMode](./signaturemode-swift.struct.md)
   Constants that describe the signature modes of an encryption context.
 
 

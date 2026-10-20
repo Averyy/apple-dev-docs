@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error description for a failed key request.
 
@@ -20,21 +21,26 @@ The error description for a failed key request.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSError * error;
+```
+
 ## See Also
 
-- [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
+### Getting content key request properties
+- [var identifier: (any Sendable)?](./identifier.md)
   The identifier for the content key.
-- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
+- [var originatingRecipient: (any AVContentKeyRecipient)?](./originatingrecipient.md)
   The AVContentKeyRecipient which initiated this request, if any.
-- [var canProvidePersistableContentKey: Bool](avcontentkeyrequest/canprovidepersistablecontentkey.md)
+- [var canProvidePersistableContentKey: Bool](./canprovidepersistablecontentkey.md)
   The content key request used to create a persistable content key or respond to a previous request with a persistable content key.
-- [var initializationData: Data?](avcontentkeyrequest/initializationdata.md)
+- [var initializationData: Data?](./initializationdata.md)
   The data used to obtain a key response.
-- [var renewsExpiringResponseData: Bool](avcontentkeyrequest/renewsexpiringresponsedata.md)
+- [var renewsExpiringResponseData: Bool](./renewsexpiringresponsedata.md)
   A Boolean value that indicates whether the content key request renews previously provided response data.
-- [var status: AVContentKeyRequest.Status](avcontentkeyrequest/status-swift.property.md)
+- [var status: AVContentKeyRequest.Status](./status-swift.property.md)
   The current state of the content key request.
-- [AVContentKeyRequest.Status](avcontentkeyrequest/status-swift.enum.md)
+- [AVContentKeyRequest.Status](./status-swift.enum.md)
   The status for a content key request.
 
 

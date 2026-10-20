@@ -1,7 +1,8 @@
 # renderSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size at which the video composition should render.
 
@@ -21,31 +22,32 @@ var renderSize: CGSize { get set }
 
 ## See Also
 
-- [var renderScale: Float](avvideocomposition/configuration/renderscale.md)
+### Inspecting the configuration
+- [var renderScale: Float](./renderscale.md)
   The scale at which the video composition should render.
-- [var frameDuration: CMTime](avvideocomposition/configuration/frameduration.md)
+- [var frameDuration: CMTime](./frameduration.md)
   A time interval for which the video composition should render composed video frames.
-- [var animationTool: AVVideoCompositionCoreAnimationTool?](avvideocomposition/configuration/animationtool.md)
+- [var animationTool: AVVideoCompositionCoreAnimationTool?](./animationtool.md)
   A video composition tool to use with Core Animation in offline rendering.
-- [var colorPrimaries: String?](avvideocomposition/configuration/colorprimaries.md)
+- [var colorPrimaries: String?](./colorprimaries.md)
   The color primaries used for video composition.
-- [var colorTransferFunction: String?](avvideocomposition/configuration/colortransferfunction.md)
+- [var colorTransferFunction: String?](./colortransferfunction.md)
   The transfer function used for video composition.
-- [var colorYCbCrMatrix: String?](avvideocomposition/configuration/colorycbcrmatrix.md)
+- [var colorYCbCrMatrix: String?](./colorycbcrmatrix.md)
   The YCbCr matrix used for video composition.
-- [var customVideoCompositorClass: (any AVVideoCompositing.Type)?](avvideocomposition/configuration/customvideocompositorclass.md)
+- [var customVideoCompositorClass: (any AVVideoCompositing.Type)?](./customvideocompositorclass.md)
   A custom compositor class to use.
-- [var outputBufferDescription: [[CMTag]]?](avvideocomposition/configuration/outputbufferdescription.md)
+- [var outputBufferDescription: [[CMTag]]?](./outputbufferdescription.md)
   The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of an array of CMTag objects that describes the output buffers.
-- [var instructions: [any AVVideoCompositionInstructionProtocol]](avvideocomposition/configuration/instructions.md)
+- [var instructions: [any AVVideoCompositionInstructionProtocol]](./instructions.md)
   The video composition instructions.
-- [var spatialVideoConfigurations: [AVSpatialVideoConfiguration]](avvideocomposition/configuration/spatialvideoconfigurations.md)
+- [var spatialVideoConfigurations: [AVSpatialVideoConfiguration]](./spatialvideoconfigurations.md)
   Indicates the spatial configurations that are available to associate with the output of the video composition.
-- [var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/configuration/perframehdrdisplaymetadatapolicy.md)
+- [var perFrameHDRDisplayMetadataPolicy: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](./perframehdrdisplaymetadatapolicy.md)
   The policy for display of HDR display metadata on the rendered frame.
-- [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](avvideocomposition/configuration/sourcesampledatatrackids.md)
+- [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](./sourcesampledatatrackids.md)
   The identifiers of source sample data tracks in the composition that the object requires to compose frames.
-- [var sourceTrackIDForFrameTiming: CMPersistentTrackID](avvideocomposition/configuration/sourcetrackidforframetiming.md)
+- [var sourceTrackIDForFrameTiming: CMPersistentTrackID](./sourcetrackidforframetiming.md)
   An identifier of the source track from which the video composition derives frame timing.
 
 

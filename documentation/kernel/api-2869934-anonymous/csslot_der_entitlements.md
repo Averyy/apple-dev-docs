@@ -1,14 +1,15 @@
 # CSSLOT_DER_ENTITLEMENTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 CSSLOT_DER_ENTITLEMENTS = 7
 ```
 

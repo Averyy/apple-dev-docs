@@ -1,7 +1,8 @@
 # inverted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A character set containing only characters that don’t exist in the receiver.
 
@@ -20,13 +21,18 @@ A character set containing only characters that don’t exist in the receiver.
 var inverted: CharacterSet { get }
 ```
 
+```objc
+@property (copy, readonly) NSCharacterSet * invertedSet;
+```
+
 #### Discussion
 
 Using the inverse of an immutable character set is much more efficient than inverting a mutable character set.
 
 ## See Also
 
-- [func invert()](nsmutablecharacterset/invert.md)
+### Related Documentation
+- [func invert()](../nsmutablecharacterset/invert%28%29.md)
   Replaces all the characters in the receiver with all the characters it didn’t previously contain.
 
 

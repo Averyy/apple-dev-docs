@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the gradient clipping type, suitable for debugging.
 
@@ -18,13 +19,18 @@ A textual description of the gradient clipping type, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCGradientClippingTypeDebugDescription(MLCGradientClippingType gradientClippingType);
+```
+
 ## See Also
 
-- [MLCGradientClippingType.byValue](mlcgradientclippingtype/byvalue.md)
+### Gradient Clipping Types
+- [MLCGradientClippingType.byValue](./byvalue.md)
   An option that clips by value.
-- [MLCGradientClippingType.byNorm](mlcgradientclippingtype/bynorm.md)
+- [MLCGradientClippingType.byNorm](./bynorm.md)
   An option that clips by norm.
-- [MLCGradientClippingType.byGlobalNorm](mlcgradientclippingtype/byglobalnorm.md)
+- [MLCGradientClippingType.byGlobalNorm](./byglobalnorm.md)
   An option that clips by global norm.
 
 

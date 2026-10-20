@@ -1,7 +1,8 @@
 # IOFixed
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOFixed = Int32
+```
+
+```c
+typedef SInt32 IOFixed;
 ```
 
 

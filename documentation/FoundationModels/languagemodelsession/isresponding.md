@@ -1,7 +1,8 @@
 # isResponding
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a response is being generated.
 
@@ -21,7 +22,7 @@ final var isResponding: Bool { get }
 
 ## Mentions
 
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
+- [Generating content and performing tasks with Foundation Models](../generating-content-and-performing-tasks-with-foundation-models.md)
 
 #### Discussion
 
@@ -49,19 +50,20 @@ struct ShopView: View {
 
 ## See Also
 
-- [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
+### Generating a response
+- [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](./respond%28options,prompt%29.md)
   Produces a response to a prompt.
-- [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)
+- [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](./respond%28generating,includeschemainprompt,options,prompt%29.md)
   Produces a generable object as a response to a prompt.
-- [func respond(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](languagemodelsession/respond(schema:includeschemainprompt:options:prompt:).md)
+- [func respond(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](./respond%28schema,includeschemainprompt,options,prompt%29.md)
   Produces a generated content type as a response to a prompt and schema.
-- [func respond(to:options:)](languagemodelsession/respond(to:options:).md)
+- [func respond(to:options:)](./respond%28to,options%29.md)
   Produces a response to a prompt.
-- [func respond(to:generating:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:generating:includeschemainprompt:options:).md)
+- [func respond(to:generating:includeSchemaInPrompt:options:)](./respond%28to,generating,includeschemainprompt,options%29.md)
   Produces a generable object as a response to a prompt.
-- [func respond(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:schema:includeschemainprompt:options:).md)
+- [func respond(to:schema:includeSchemaInPrompt:options:)](./respond%28to,schema,includeschemainprompt,options%29.md)
   Produces a generated content type as a response to a prompt and schema.
-- [LanguageModelSession.Response](languagemodelsession/response.md)
+- [LanguageModelSession.Response](./response.md)
   A structure that stores the output of a response call.
 
 

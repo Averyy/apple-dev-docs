@@ -1,7 +1,8 @@
 # unprojectPoint(_:ontoPlane:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the projection of a point from 2D view onto a plane in the 3D world space detected by ARKit.
 
@@ -27,9 +28,10 @@ The 3D point in world space where a ray projected from the specified 2D point in
 
 ## See Also
 
-- [func anchor(for: SCNNode) -> ARAnchor?](arscnview/anchor(for:).md)
+### Mapping Content to Real-World Positions
+- [func anchor(for: SCNNode) -> ARAnchor?](./anchor%28for%29.md)
   Returns the AR anchor associated with the specified SceneKit node, if any.
-- [func node(for: ARAnchor) -> SCNNode?](arscnview/node(for:).md)
+- [func node(for: ARAnchor) -> SCNNode?](./node%28for%29.md)
   Returns the SceneKit node associated with the specified AR anchor, if any.
 
 

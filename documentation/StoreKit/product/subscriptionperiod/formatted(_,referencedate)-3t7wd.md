@@ -1,7 +1,8 @@
 # formatted(_:referenceDate:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the subscription period using a format style that takes a date range as an input.
 
@@ -23,7 +24,7 @@ func formatted<S>(_ format: S, referenceDate: Date = .now) -> S.FormatOutput whe
 
 #### Discussion
 
-Use the [`formatted(_:referenceDate:)`](product/subscriptionperiod/formatted(_:referencedate:)-3t7wd.md) method with [`subscriptionPeriodFormatStyle`](product/subscriptionperiodformatstyle.md) to format the subscription period for the App Store locale, as the following example shows.
+Use the [`formatted(_:referenceDate:)`](./formatted%28_,referencedate%29-3t7wd.md) method with [`subscriptionPeriodFormatStyle`](../subscriptionperiodformatstyle.md) to format the subscription period for the App Store locale, as the following example shows.
 
 ```swift
 // Get a human-readable representation of a subscription period.
@@ -33,12 +34,13 @@ subscriptionPeriod.formatted(product.subscriptionPeriodFormatStyle, referenceDat
 
 ## Parameters
 
-- `format`: A format style that has a date range input. The format style for a product is [`subscriptionPeriodFormatStyle`](product/subscriptionperiodformatstyle.md).
-- `referenceDate`: The lower bound date for a date range representing the subscription period. The default value is [`now`](https://developer.apple.com/documentation/foundation/date/now).
+- `format`: A format style that has a date range input. The format style for a product is [`subscriptionPeriodFormatStyle`](../subscriptionperiodformatstyle.md).
+- `referenceDate`: The lower bound date for a date range representing the subscription period. The default value is [`now`](../../../Foundation/date/now.md).
 
 ## See Also
 
-- [func formatted<S>(S, referenceDate: Date) -> S.FormatOutput](product/subscriptionperiod/formatted(_:referencedate:)-8s3ar.md)
+### Formatting the subscription period
+- [func formatted<S>(S, referenceDate: Date) -> S.FormatOutput](./formatted%28_,referencedate%29-8s3ar.md)
   Formats the subscription period using a format style that takes a duration as an input.
 
 

@@ -1,7 +1,8 @@
 # bufferTypeInfo
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option instance that provides detailed buffer type information for buffer arguments.
 
@@ -10,7 +11,7 @@ An option instance that provides detailed buffer type information for buffer arg
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ An option instance that provides detailed buffer type information for buffer arg
 static var bufferTypeInfo: MTLPipelineOption { get }
 ```
 
+```c
+MTLPipelineOptionBufferTypeInfo
+```
+
 #### Discussion
 
-This option provides the [`bufferStructType`](mtlargument/bufferstructtype.md) and [`bufferPointerType`](mtlargument/bufferpointertype.md) properties for the [`MTLPipelineOption`](mtlpipelineoption.md) stored in [`argumentInfo`](mtlpipelineoption/argumentinfo.md).
+This option provides the [`bufferStructType`](../mtlargument/bufferstructtype.md) and [`bufferPointerType`](../mtlargument/bufferpointertype.md) properties for the [`MTLPipelineOption`](../mtlpipelineoption.md) stored in [`argumentInfo`](./argumentinfo.md).
 
 ## See Also
 
-- [static var failOnBinaryArchiveMiss: MTLPipelineOption](mtlpipelineoption/failonbinaryarchivemiss.md)
+### Retrieving argument information
+- [static var failOnBinaryArchiveMiss: MTLPipelineOption](./failonbinaryarchivemiss.md)
   An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
-- [static var argumentInfo: MTLPipelineOption](mtlpipelineoption/argumentinfo.md)
+- [static var argumentInfo: MTLPipelineOption](./argumentinfo.md)
   An option instance that provides argument information for textures and threadgroup memory.
 
 

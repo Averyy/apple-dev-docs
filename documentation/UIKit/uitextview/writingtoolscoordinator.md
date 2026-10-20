@@ -1,7 +1,8 @@
 # writingToolsCoordinator
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that coordinates interactions between Writing Tools and the text view.
 
@@ -17,19 +18,24 @@ The object that coordinates interactions between Writing Tools and the text view
 var writingToolsCoordinator: UIWritingToolsCoordinator { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIWritingToolsCoordinator * writingToolsCoordinator;
+```
+
 #### Discussion
 
 When you get the value of this property, the system creates a Writing Tools coordinator object if one doesn’t already exist for this view.
 
 ## See Also
 
-- [var writingToolsBehavior: UIWritingToolsBehavior](uitextview/writingtoolsbehavior.md)
+### Getting the Writing Tools configuration
+- [var writingToolsBehavior: UIWritingToolsBehavior](./writingtoolsbehavior.md)
   The level of Writing Tools support to use in the text view.
-- [var allowedWritingToolsResultOptions: UIWritingToolsResultOptions](uitextview/allowedwritingtoolsresultoptions.md)
+- [var allowedWritingToolsResultOptions: UIWritingToolsResultOptions](./allowedwritingtoolsresultoptions.md)
   The type of content Writing Tools generates for your text view.
-- [var isWritingToolsActive: Bool](uitextview/iswritingtoolsactive.md)
+- [var isWritingToolsActive: Bool](./iswritingtoolsactive.md)
   A Boolean value that indicates whether the writing tools are currently interacting with the text view’s content.
-- [var subclassForWritingToolsCoordinator: AnyClass](uitextview/subclassforwritingtoolscoordinator.md)
+- [var subclassForWritingToolsCoordinator: AnyClass](./subclassforwritingtoolscoordinator.md)
 
 
 ---

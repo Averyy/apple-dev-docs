@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stack_snapshot_frame32 {
     ...
 };
@@ -17,8 +17,8 @@ struct stack_snapshot_frame32 {
 ## Topics
 
 ### Instance Properties
-- [lr](stack_snapshot_frame32/1551713-lr.md)
-- [sp](stack_snapshot_frame32/1551654-sp.md)
+- [lr](./stack_snapshot_frame32/api-1551713-lr.md)
+- [sp](./stack_snapshot_frame32/api-1551654-sp.md)
 
 
 ---

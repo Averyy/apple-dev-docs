@@ -1,7 +1,8 @@
 # customVirtioConfiguration(_:didCreateDevice:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method the framework calls when it creates a custom Virtio device from a custom Virtio device configuration.
 
@@ -14,14 +15,18 @@ A method the framework calls when it creates a custom Virtio device from a custo
 optional func customVirtioConfiguration(_ deviceConfiguration: VZCustomVirtioDeviceConfiguration, didCreateDevice device: VZCustomVirtioDevice)
 ```
 
+```objc
+- (void) customVirtioConfiguration:(VZCustomVirtioDeviceConfiguration *) deviceConfiguration didCreateDevice:(VZCustomVirtioDevice *) device;
+```
+
 #### Discussion
 
-The Virtualization framework creates a [`VZCustomVirtioDevice`](vzcustomvirtiodevice.md) when you call [`init(configuration:)`](vzvirtualmachine/init(configuration:).md) and calls this method on the serial queue of the guest’s [`VZVirtualMachine`](vzvirtualmachine.md) instance.
+The Virtualization framework creates a [`VZCustomVirtioDevice`](../vzcustomvirtiodevice.md) when you call [`init(configuration:)`](../vzvirtualmachine/init%28configuration%29.md) and calls this method on the serial queue of the guest’s [`VZVirtualMachine`](../vzvirtualmachine.md) instance.
 
 ## Parameters
 
 - `deviceConfiguration`: The configuration calling the delegate method.
-- `device`: The [`VZCustomVirtioDevice`](vzcustomvirtiodevice.md) that the framework created.
+- `device`: The [`VZCustomVirtioDevice`](../vzcustomvirtiodevice.md) that the framework created.
 
 
 ---

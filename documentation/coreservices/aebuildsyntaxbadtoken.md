@@ -1,7 +1,8 @@
 # aeBuildSyntaxBadToken
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An illegal character was specified.
 

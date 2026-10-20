@@ -1,7 +1,8 @@
 # TVMediaItemContentView
 
 **Framework**: TVUIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that represents media content, such as movies and TV shows.
 
@@ -12,6 +13,10 @@ A view that represents media content, such as movies and TV shows.
 
 ```swift
 class TVMediaItemContentView
+```
+
+```objc
+@interface TVMediaItemContentView : UIView
 ```
 
 #### Overview
@@ -36,51 +41,52 @@ override func updateConfiguration(using state: UICellConfigurationState) {
 ## Topics
 
 ### Creating a Media Item Content View
-- [convenience init(configuration: TVMediaItemContentConfiguration)](tvmediaitemcontentview/init(configuration:).md)
+- [convenience init(configuration: TVMediaItemContentConfiguration)](./tvmediaitemcontentview/init%28configuration%29.md)
   Creates a media item content view with the configuration you specify.
-- [struct TVMediaItemContentConfiguration](tvmediaitemcontentconfiguration-swift.struct.md)
+- [struct TVMediaItemContentConfiguration](./tvmediaitemcontentconfiguration-swift.struct.md)
   A content configuration for a media item view.
 ### Managing the Content Layout
-- [var focusedFrameGuide: UILayoutGuide](tvmediaitemcontentview/focusedframeguide.md)
+- [var focusedFrameGuide: UILayoutGuide](./tvmediaitemcontentview/focusedframeguide.md)
   A guide for positioning other elements with the content view image’s focused frame.
 
 ## Relationships
 
 ### Inherits From
-- [UIView](../uikit/uiview.md)
+- [UIView](../UIKit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentView](../uikit/uicontentview-5fh3z.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentView](../UIKit/uicontentview-5fh3z.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class TVMonogramContentView](tvmonogramcontentview.md)
+### Content views
+- [class TVMonogramContentView](./tvmonogramcontentview.md)
   A view that contains a circular image of a person or the person’s initials.
 
 

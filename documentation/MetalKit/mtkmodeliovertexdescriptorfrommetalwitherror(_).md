@@ -1,7 +1,8 @@
 # MTKModelIOVertexDescriptorFromMetalWithError(_:)
 
 **Framework**: MetalKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 10.0+
@@ -20,7 +21,8 @@ func MTKModelIOVertexDescriptorFromMetalWithError(_ metalDescriptor: MTLVertexDe
 
 ## See Also
 
-- [func MTKMetalVertexDescriptorFromModelIOWithError(MDLVertexDescriptor) throws -> MTLVertexDescriptor?](mtkmetalvertexdescriptorfrommodeliowitherror(_:).md)
+### Functions
+- [func MTKMetalVertexDescriptorFromModelIOWithError(MDLVertexDescriptor) throws -> MTLVertexDescriptor?](./mtkmetalvertexdescriptorfrommodeliowitherror%28_%29.md)
 
 
 ---

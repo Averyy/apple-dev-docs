@@ -1,7 +1,8 @@
 # partIndex
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the part this subpart renders
 

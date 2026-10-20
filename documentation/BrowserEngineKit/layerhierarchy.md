@@ -1,7 +1,8 @@
 # LayerHierarchy
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that holds a reference to layers rendered in another process’s view.
 
@@ -16,57 +17,62 @@ An object that holds a reference to layers rendered in another process’s view.
 class LayerHierarchy
 ```
 
+```objc
+@interface BELayerHierarchy : NSObject
+```
+
 ## Mentions
 
-- [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
-- [Propagating view visibility information to extension processes](propagating-view-visibility-information-to-browser-extensions.md)
+- [Hosting browser view layers in the rendering extension](./hosting-browser-view-layers-in-the-rendering-extension.md)
+- [Propagating view visibility information to extension processes](./propagating-view-visibility-information-to-browser-extensions.md)
 
 #### Overview
 
 This class holds another process’s view to synchronize UI updates across multiple processes in your browser app.
 
-To use this class, create an instance in your browser app’s rendering extension and set its [`layer`](layerhierarchy/layer.md) to a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) that renders content. You render the content in your rendering extension then access it in the browser app’s process for display.
+To use this class, create an instance in your browser app’s rendering extension and set its [`layer`](./layerhierarchy/layer.md) to a [`CALayer`](../QuartzCore/calayer.md) that renders content. You render the content in your rendering extension then access it in the browser app’s process for display.
 
-Access the layer hierarchy’s [`handle`](layerhierarchy/handle.md), send it to the browser app, and add the handle to a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md). Then, use the [`LayerHierarchyHostingTransactionCoordinator`](layerhierarchyhostingtransactioncoordinator.md) class to synchronize updates in the view and the layer.
+Access the layer hierarchy’s [`handle`](./layerhierarchy/handle.md), send it to the browser app, and add the handle to a [`LayerHierarchyHostingView`](./layerhierarchyhostingview.md). Then, use the [`LayerHierarchyHostingTransactionCoordinator`](./layerhierarchyhostingtransactioncoordinator.md) class to synchronize updates in the view and the layer.
 
-For more information, see [`Hosting browser view layers in the rendering extension`](hosting-browser-view-layers-in-the-rendering-extension.md).
+For more information, see [Hosting browser view layers in the rendering extension](./hosting-browser-view-layers-in-the-rendering-extension.md).
 
 ## Topics
 
 ### Creating and invalidating a layer hierarchy
-- [init() throws](layerhierarchy/init.md)
+- [init() throws](./layerhierarchy/init%28%29.md)
   Initializes a layer hierarchy.
-- [func invalidate()](layerhierarchy/invalidate.md)
+- [func invalidate()](./layerhierarchy/invalidate%28%29.md)
   Invalidates a layer hierarchy.
 ### Setting the layer
-- [var layer: CALayer?](layerhierarchy/layer.md)
+- [var layer: CALayer?](./layerhierarchy/layer.md)
   The layer represented by this layer hierarchy.
 ### Getting a handle
-- [var handle: LayerHierarchyHandle](layerhierarchy/handle.md)
+- [var handle: LayerHierarchyHandle](./layerhierarchy/handle.md)
   A reference to the layer hierarchy that you add to the hosting view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
+### Layer hosting
+- [Hosting browser view layers in the rendering extension](./hosting-browser-view-layers-in-the-rendering-extension.md)
   Coordinate view-hierarchy and layer-hierarchy changes between processes.
-- [class LayerHierarchyHostingView](layerhierarchyhostingview.md)
+- [class LayerHierarchyHostingView](./layerhierarchyhostingview.md)
   A view that hosts a layer hierarchy you manage in another process.
-- [class LayerHierarchyHostingTransactionCoordinator](layerhierarchyhostingtransactioncoordinator.md)
+- [class LayerHierarchyHostingTransactionCoordinator](./layerhierarchyhostingtransactioncoordinator.md)
   A class that synchronizes updates to views and layers in different processes.
-- [class LayerHierarchyHandle](layerhierarchyhandle.md)
+- [class LayerHierarchyHandle](./layerhierarchyhandle.md)
   A reference to a layer hierarchy that your app shares between processes.
 
 

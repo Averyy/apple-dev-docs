@@ -1,18 +1,19 @@
 # DispatchWorkItemFlags
 
 **Framework**: Dispatch  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of behaviors for a work item, such as its quality-of-service class and whether to create a barrier or spawn a new detached thread.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -23,33 +24,34 @@ struct DispatchWorkItemFlags
 ## Topics
 
 ### Work Item Flags
-- [static let assignCurrentContext: DispatchWorkItemFlags](dispatchworkitemflags/assigncurrentcontext.md)
+- [static let assignCurrentContext: DispatchWorkItemFlags](./dispatchworkitemflags/assigncurrentcontext.md)
   Set the attributes of the work item to match the attributes of the current execution context.
-- [static let barrier: DispatchWorkItemFlags](dispatchworkitemflags/barrier.md)
+- [static let barrier: DispatchWorkItemFlags](./dispatchworkitemflags/barrier.md)
   Cause the work item to act as a barrier block when submitted to a concurrent queue.
-- [static let detached: DispatchWorkItemFlags](dispatchworkitemflags/detached.md)
+- [static let detached: DispatchWorkItemFlags](./dispatchworkitemflags/detached.md)
   Disassociate the work item’s attributes from the current execution context.
-- [static let enforceQoS: DispatchWorkItemFlags](dispatchworkitemflags/enforceqos.md)
+- [static let enforceQoS: DispatchWorkItemFlags](./dispatchworkitemflags/enforceqos.md)
   Prefer the quality-of-service class associated with the block.
-- [static let inheritQoS: DispatchWorkItemFlags](dispatchworkitemflags/inheritqos.md)
+- [static let inheritQoS: DispatchWorkItemFlags](./dispatchworkitemflags/inheritqos.md)
   Prefer the quality-of-service class associated with the current execution context.
-- [static let noQoS: DispatchWorkItemFlags](dispatchworkitemflags/noqos.md)
+- [static let noQoS: DispatchWorkItemFlags](./dispatchworkitemflags/noqos.md)
   Execute the work item without assigning a quality-of-service class.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(qos: DispatchQoS, flags: DispatchWorkItemFlags, block: () -> Void)](dispatchworkitem/init(qos:flags:block:).md)
+### Creating a Work Item
+- [init(qos: DispatchQoS, flags: DispatchWorkItemFlags, block: () -> Void)](./dispatchworkitem/init%28qos,flags,block%29.md)
   Creates a new dispatch work item from an existing block and assigns it the specified quality-of-service class.
 
 

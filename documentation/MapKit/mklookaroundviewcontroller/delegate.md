@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object you provide to receive events related to the user’s interaction with the LookAround view controller.
 
@@ -19,9 +20,14 @@ An object you provide to receive events related to the user’s interaction with
 weak var delegate: (any MKLookAroundViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MKLookAroundViewControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol MKLookAroundViewControllerDelegate](mklookaroundviewcontrollerdelegate.md)
+### Interacting with the controller
+- [protocol MKLookAroundViewControllerDelegate](../mklookaroundviewcontrollerdelegate.md)
   Methods you implement to respond to changes in the LookAround view controller.
 
 

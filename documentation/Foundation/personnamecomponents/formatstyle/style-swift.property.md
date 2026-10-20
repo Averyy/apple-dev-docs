@@ -1,7 +1,8 @@
 # style
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the style of the formatted result.
 
@@ -66,15 +67,15 @@ The following table demonstrates the style for various names and locales.
 
 | Locale | Name prefix | Given name | Middle name | Family name | Name suffix | Nickname |
 | --- | --- | --- | --- | --- | --- | --- |
-| Arabic ![None](/images/com.apple.foundation/spacer.png) `(ar-SA)` | .د | أحمد |  | محمدالمصري |  |  |
-| Chinese ![None](/images/com.apple.foundation/spacer.png) `(zh-Hans)` | 物理学博士 | 振宁 |  | 杨 | 先生 |  |
-| English ![None](/images/com.apple.foundation/spacer.png) `(en-US)` | Dr. | Thomas | Louis | Clark | Esq. | Tom |
-| French ![None](/images/com.apple.foundation/spacer.png) `(fr-FR)` | Père | Jean-Philippe |  | de Zélicourt |  | JP |
-| German ![None](/images/com.apple.foundation/spacer.png) `(de-DE)` | Dr. med. | Max |  | Mustermann | junior, M.A. |  |
-| Hindi ![None](/images/com.apple.foundation/spacer.png) `(hi-IN)` | डॉ. | रिय |  | साहिल |  |  |
-| Japanese ![None](/images/com.apple.foundation/spacer.png) `(ja-JP)` |  | 泰夫 |  | 木田 | 先生 |  |
-| Spanish ![None](/images/com.apple.foundation/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
-| Thai ![None](/images/com.apple.foundation/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
+| Arabic ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(ar-SA)` | .د | أحمد |  | محمدالمصري |  |  |
+| Chinese ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(zh-Hans)` | 物理学博士 | 振宁 |  | 杨 | 先生 |  |
+| English ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(en-US)` | Dr. | Thomas | Louis | Clark | Esq. | Tom |
+| French ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(fr-FR)` | Père | Jean-Philippe |  | de Zélicourt |  | JP |
+| German ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(de-DE)` | Dr. med. | Max |  | Mustermann | junior, M.A. |  |
+| Hindi ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(hi-IN)` | डॉ. | रिय |  | साहिल |  |  |
+| Japanese ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(ja-JP)` |  | 泰夫 |  | 木田 | 先生 |  |
+| Spanish ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
+| Thai ![](https://developer.apple.com/tutorials/images/com.apple.foundation/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
 
 ###### Long
 
@@ -158,13 +159,14 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 
 ## See Also
 
-- [PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.enum.md)
+### Modifying a Format Style
+- [PersonNameComponents.FormatStyle.Style](./style-swift.enum.md)
   The type that represents the style of the formatted result.
-- [var locale: Locale](personnamecomponents/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting the person name components.
-- [var attributed: PersonNameComponents.AttributedStyle](personnamecomponents/formatstyle/attributed.md)
+- [var attributed: PersonNameComponents.AttributedStyle](./attributed.md)
   The style used to create a locale-aware attributed string representation of an instance of person name components.
-- [func locale(Locale) -> PersonNameComponents.FormatStyle](personnamecomponents/formatstyle/locale(_:).md)
+- [func locale(Locale) -> PersonNameComponents.FormatStyle](./locale%28_%29.md)
   Modifies the person name components format style to use the specified locale.
 
 

@@ -1,18 +1,21 @@
 # control
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An 8-bit bit mask that indicates the dimension of the grouping of the dropout decision.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,15 +23,20 @@ An 8-bit bit mask that indicates the dimension of the grouping of the dropout de
 var control: UInt8
 ```
 
+```c
+uint8_t control;
+```
+
 ## See Also
 
-- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparametersdropout/i_desc.md)
+### Instance Properties
+- [var i_desc: BNNSNDArrayDescriptor](./i_desc.md)
   The descriptor of the input.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersdropout/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./o_desc.md)
   The descriptor of the output.
-- [var rate: Float](bnnslayerparametersdropout/rate.md)
+- [var rate: Float](./rate.md)
   The probability that the layer drops out an element or a group of elements.
-- [var seed: UInt32](bnnslayerparametersdropout/seed.md)
+- [var seed: UInt32](./seed.md)
   The seed for the random number generator which is ignored if zero.
 
 

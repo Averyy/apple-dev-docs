@@ -1,7 +1,8 @@
 # gpu
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates a long-running task requires the GPU.
 
@@ -16,15 +17,19 @@ An option that indicates a long-running task requires the GPU.
 static var gpu: BGContinuedProcessingTaskRequest.Resources { get }
 ```
 
+```c
+BGContinuedProcessingTaskRequestResourcesGPU
+```
+
 ## Mentions
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+- [Performing long-running tasks on iOS and iPadOS](../../performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Discussion
 
-The system requires your app to have the [`Background GPU Access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu) entitlement with a value of `true` to use the GPU in the background. To do that, enable the Background GPU Access capability on your app’s target. For more information about capabilities in Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+The system requires your app to have the [`Background GPU Access`](../../../BundleResources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md) entitlement with a value of `true` to use the GPU in the background. To do that, enable the Background GPU Access capability on your app’s target. For more information about capabilities in Xcode, see [Adding capabilities to your app](../../../Xcode/adding-capabilities-to-your-app.md).
 
-Not all devices support background GPU use. For more information, see [`Performing long-running tasks on iOS and iPadOS`](performing-long-running-tasks-on-ios-and-ipados.md).
+Not all devices support background GPU use. For more information, see [Performing long-running tasks on iOS and iPadOS](../../performing-long-running-tasks-on-ios-and-ipados.md).
 
 
 ---

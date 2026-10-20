@@ -1,18 +1,21 @@
 # rainfallAmount
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of liquid precipitation for the day.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
+- iOS 16.0+ - Deprecated in 16.4
+- iPadOS 16.0+ - Deprecated in 16.4
+- Mac Catalyst 16.0+ - Deprecated in 16.4
+- macOS 13.0+ - Deprecated in 13.3
+- tvOS 16.0+ - Deprecated in 16.4
 - visionOS 1.0+
-- watchOS 9.0+
+- watchOS 9.0+ - Deprecated in 9.4
+
+> **Deprecated**: Use precipitationAmountByType
 
 ## Declaration
 
@@ -22,11 +25,12 @@ var rainfallAmount: Measurement<UnitLength>
 
 ## See Also
 
-- [var precipitation: Precipitation](dayweather/precipitation.md)
+### Getting precipitation
+- [var precipitation: Precipitation](./precipitation.md)
   The description of precipitation for this day.
-- [var precipitationChance: Double](dayweather/precipitationchance.md)
+- [var precipitationChance: Double](./precipitationchance.md)
   The probability of precipitation during the day.
-- [var snowfallAmount: Measurement<UnitLength>](dayweather/snowfallamount.md)
+- [var snowfallAmount: Measurement<UnitLength>](./snowfallamount.md)
   The amount of snowfall for the day.
 
 

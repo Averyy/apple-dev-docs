@@ -1,7 +1,8 @@
 # KEM
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A key encapsulation mechanism.
 
@@ -27,25 +28,26 @@ Use a key encapsulation mechanism (KEM) to protect a symmetric cryptographic key
 ## Topics
 
 ### Defining encapsulation outputs
-- [struct EncapsulationResult](kem/encapsulationresult.md)
+- [struct EncapsulationResult](./kem/encapsulationresult.md)
   The result of a key encapsulation operation.
 ### Handling errors
-- [enum Errors](kem/errors.md)
+- [enum Errors](./kem/errors.md)
   Errors that CryptoKit throws when it encounters problems in key encapsulation mechanism (KEM) operations.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MLKEM768](mlkem768.md)
+### Key encapsulation mechanisms (KEM)
+- [enum MLKEM768](./mlkem768.md)
   The Module-Lattice key encapsulation mechanism (KEM).
-- [enum MLKEM1024](mlkem1024.md)
+- [enum MLKEM1024](./mlkem1024.md)
   The Module-Lattice key encapsulation mechanism (KEM).
-- [enum XWingMLKEM768X25519](xwingmlkem768x25519.md)
+- [enum XWingMLKEM768X25519](./xwingmlkem768x25519.md)
   The X-Wing (ML-KEM768 with X25519) Key Encapsulation Mechanism, defined in https://datatracker.ietf.org/doc/html/draft-connolly-cfrg-xwing-kem-06
 
 

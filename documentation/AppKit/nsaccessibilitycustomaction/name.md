@@ -1,7 +1,8 @@
 # name
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized name that describes the action.
 
@@ -12,6 +13,10 @@ A localized name that describes the action.
 
 ```swift
 var name: String { get set }
+```
+
+```objc
+@property (copy) NSString * name;
 ```
 
 

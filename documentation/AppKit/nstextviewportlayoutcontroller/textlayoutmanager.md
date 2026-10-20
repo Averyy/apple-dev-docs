@@ -1,7 +1,8 @@
 # textLayoutManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the text layout manager for this viewport layout controller.
 
@@ -12,6 +13,10 @@ Returns the text layout manager for this viewport layout controller.
 
 ```swift
 weak var textLayoutManager: NSTextLayoutManager? { get }
+```
+
+```objc
+@property (weak, readonly) NSTextLayoutManager * textLayoutManager;
 ```
 
 

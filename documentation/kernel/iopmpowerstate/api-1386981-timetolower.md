@@ -1,7 +1,8 @@
 # timeToLower
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes time required to enter next lower state from this one (microseconds). Unused; drivers may specify 0.
 
@@ -10,7 +11,7 @@ Describes time required to enter next lower state from this one (microseconds). 
 
 ## Declaration
 
-```swift
+```c
 unsigned long timeToLower;
 ```
 

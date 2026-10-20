@@ -1,7 +1,8 @@
 # documentExpirationDate
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document’s expiration date.
 

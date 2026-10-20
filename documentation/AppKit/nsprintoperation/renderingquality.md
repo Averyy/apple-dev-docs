@@ -1,7 +1,8 @@
 # NSPrintOperation.RenderingQuality
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the print quality in use.
 
@@ -14,29 +15,34 @@ Constants that specify the print quality in use.
 enum RenderingQuality
 ```
 
+```c
+enum NSPrintRenderingQuality : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSPrintOperation.RenderingQuality.best](nsprintoperation/renderingquality/best.md)
+- [NSPrintOperation.RenderingQuality.best](./renderingquality/best.md)
   Renders the printing at the best possible quality, regardless of speed.
-- [NSPrintOperation.RenderingQuality.responsive](nsprintoperation/renderingquality/responsive.md)
+- [NSPrintOperation.RenderingQuality.responsive](./renderingquality/responsive.md)
   Sacrifices the least possible amount of rendering quality for speed to maintain a responsive user interface. This option should be used only after establishing that best quality rendering does indeed make the user interface unresponsive.
 ### Initializers
-- [init?(rawValue: Int)](nsprintoperation/renderingquality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./renderingquality/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredRenderingQuality: NSPrintOperation.RenderingQuality](nsprintoperation/preferredrenderingquality.md)
+### Getting the Printing Quality
+- [var preferredRenderingQuality: NSPrintOperation.RenderingQuality](./preferredrenderingquality.md)
   The printing quality.
 
 

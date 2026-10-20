@@ -1,7 +1,8 @@
 # isConnected
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the vehicle is currently connected over Bluetooth.
 
@@ -24,7 +25,8 @@ The value of this property is `true` when the vehicle is connected over Bluetoot
 
 ## See Also
 
-- [let identifier: String](vehiclereport/identifier.md)
+### Getting the Vehicle Details
+- [let identifier: String](./identifier.md)
   The string you use to identify the vehicle when making requests.
 
 

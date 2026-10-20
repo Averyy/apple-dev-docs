@@ -1,7 +1,8 @@
 # Measurement.ValueType
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 typealias ValueType = Measurement<UnitType>
 ```
+
+Available when `UnitType` inherits `Unit`.
 
 
 ---

@@ -1,7 +1,8 @@
 # blendMode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the blend mode to use when compositing the tile map over other nodes.
 
@@ -18,6 +19,10 @@ Defines the blend mode to use when compositing the tile map over other nodes.
 
 ```swift
 var blendMode: SKBlendMode { get set }
+```
+
+```objc
+@property (nonatomic) SKBlendMode blendMode;
 ```
 
 

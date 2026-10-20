@@ -1,14 +1,17 @@
 # attenuationDurationThresholds
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configurable signal-loss thresholds for calculating exposure risk.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,13 +19,17 @@ The configurable signal-loss thresholds for calculating exposure risk.
 var attenuationDurationThresholds: [NSNumber] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSNumber *> * attenuationDurationThresholds;
+```
+
 #### Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 
-Signal attenuation and duration are measurable aspects of exposure risk. Set threshold values to configure the degree to which the signal loss between two devices for a specific duration signifies a potential exposure. Four categories are described in [`ENExposureConfiguration`](enexposureconfiguration.md): *immediate*, *near*, *medium*, and *other*.
+Signal attenuation and duration are measurable aspects of exposure risk. Set threshold values to configure the degree to which the signal loss between two devices for a specific duration signifies a potential exposure. Four categories are described in [`ENExposureConfiguration`](../enexposureconfiguration.md): *immediate*, *near*, *medium*, and *other*.
 
-![Illustration showing the immediate attenuation threshold atop the immediate and near categories, the near attenuation threshold atop the near and medium categories, and the medium attenuation threshold atop the medium and other categories.](/images/com.apple.exposurenotification/media-3699755@2x.png)
+![Illustration showing the immediate attenuation threshold atop the immediate and near categories, the near attenuation threshold atop the near and medium categories, and the medium attenuation threshold atop the medium and other categories.](https://developer.apple.com/tutorials/images/com.apple.exposurenotification/media-3699755@2x.png)
 
 The following entries in the `attenuationDurationThresholds` array correspond to three thresholds for the four categories:
 
@@ -34,15 +41,16 @@ Attenuation values greater than `attenuationDurationThresholds[2]` accumulate in
 
 ## See Also
 
-- [var immediateDurationWeight: Double](enexposureconfiguration/immediatedurationweight.md)
+### Configuring Duration
+- [var immediateDurationWeight: Double](./immediatedurationweight.md)
   The weight assigned to a risk level indicating the duration of the user’s exposure at immediate distance.
-- [var mediumDurationWeight: Double](enexposureconfiguration/mediumdurationweight.md)
+- [var mediumDurationWeight: Double](./mediumdurationweight.md)
   The weight assigned to a risk level indicating the duration of the user’s exposure at medium distance.
-- [var nearDurationWeight: Double](enexposureconfiguration/neardurationweight.md)
+- [var nearDurationWeight: Double](./neardurationweight.md)
   The weight assigned to a risk level indicating the duration of the user’s exposure at close distance.
-- [var otherDurationWeight: Double](enexposureconfiguration/otherdurationweight.md)
+- [var otherDurationWeight: Double](./otherdurationweight.md)
   The weight assigned to a risk level indicating the duration of the user’s exposure at a large distance.
-- [var daysSinceLastExposureThreshold: Int](enexposureconfiguration/dayssincelastexposurethreshold.md)
+- [var daysSinceLastExposureThreshold: Int](./dayssincelastexposurethreshold.md)
   The number of days to consider when calculating the risk level.
 
 

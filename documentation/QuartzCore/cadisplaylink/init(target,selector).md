@@ -1,7 +1,8 @@
 # init(target:selector:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a display link for a target that calls its selector.
 
@@ -18,9 +19,13 @@ Creates a display link for a target that calls its selector.
 init(target: Any, selector sel: Selector)
 ```
 
+```objc
++ (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) sel;
+```
+
 #### Return Value
 
-A new [`CADisplayLink`](cadisplaylink.md) object.
+A new [`CADisplayLink`](../cadisplaylink.md) object.
 
 #### Discussion
 

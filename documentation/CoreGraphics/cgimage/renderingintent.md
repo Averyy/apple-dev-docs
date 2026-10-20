@@ -1,7 +1,8 @@
 # renderingIntent
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the rendering intent setting for a bitmap image.
 
@@ -10,7 +11,7 @@ Returns the rendering intent setting for a bitmap image.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,41 +21,46 @@ Returns the rendering intent setting for a bitmap image.
 var renderingIntent: CGColorRenderingIntent { get }
 ```
 
+```c
+extern CGColorRenderingIntent CGImageGetRenderingIntent(CGImageRef image);
+```
+
 #### Discussion
 
-Provides the `CGColorRenderingIntent` constant that specifies how to handle colors that are not located within the gamut of the destination color space of a graphics context in which the image is drawn. If the image is an image mask, this function returns [`CGColorRenderingIntent.defaultIntent`](cgcolorrenderingintent/defaultintent.md).
+Provides the `CGColorRenderingIntent` constant that specifies how to handle colors that are not located within the gamut of the destination color space of a graphics context in which the image is drawn. If the image is an image mask, this function returns [`CGColorRenderingIntent.defaultIntent`](../cgcolorrenderingintent/defaultintent.md).
 
 ## See Also
 
-- [var isMask: Bool](cgimage/ismask.md)
+### Examining an image
+- [var isMask: Bool](./ismask.md)
   Returns whether a bitmap image is an image mask.
-- [var width: Int](cgimage/width.md)
+- [var width: Int](./width.md)
   Returns the width of a bitmap image, in pixels.
-- [var height: Int](cgimage/height.md)
+- [var height: Int](./height.md)
   Returns the height of a bitmap image.
-- [var bitsPerComponent: Int](cgimage/bitspercomponent.md)
+- [var bitsPerComponent: Int](./bitspercomponent.md)
   Returns the number of bits allocated for a single color component of a bitmap image.
-- [var bitsPerPixel: Int](cgimage/bitsperpixel.md)
+- [var bitsPerPixel: Int](./bitsperpixel.md)
   Returns the number of bits allocated for a single pixel in a bitmap image.
-- [var bytesPerRow: Int](cgimage/bytesperrow.md)
+- [var bytesPerRow: Int](./bytesperrow.md)
   Returns the number of bytes allocated for a single row of a bitmap image.
-- [var colorSpace: CGColorSpace?](cgimage/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   Return the color space for a bitmap image.
-- [var alphaInfo: CGImageAlphaInfo](cgimage/alphainfo.md)
+- [var alphaInfo: CGImageAlphaInfo](./alphainfo.md)
   Returns the alpha channel information for a bitmap image.
-- [enum CGImageAlphaInfo](cgimagealphainfo.md)
+- [enum CGImageAlphaInfo](../cgimagealphainfo.md)
   Storage options for alpha component data.
-- [var dataProvider: CGDataProvider?](cgimage/dataprovider.md)
+- [var dataProvider: CGDataProvider?](./dataprovider.md)
   Returns the data provider for a bitmap image or image mask.
-- [var decode: UnsafePointer<CGFloat>?](cgimage/decode.md)
+- [var decode: UnsafePointer<CGFloat>?](./decode.md)
   Returns the decode array for a bitmap image.
-- [var shouldInterpolate: Bool](cgimage/shouldinterpolate.md)
+- [var shouldInterpolate: Bool](./shouldinterpolate.md)
   Returns the interpolation setting for a bitmap image.
-- [var bitmapInfo: CGBitmapInfo](cgimage/bitmapinfo.md)
+- [var bitmapInfo: CGBitmapInfo](./bitmapinfo.md)
   Returns the bitmap information for a bitmap image.
-- [struct CGBitmapInfo](cgbitmapinfo.md)
+- [struct CGBitmapInfo](../cgbitmapinfo.md)
   Component information for a bitmap image.
-- [var utType: CFString?](cgimage/uttype.md)
+- [var utType: CFString?](./uttype.md)
   The Universal Type Identifier for the image.
 
 

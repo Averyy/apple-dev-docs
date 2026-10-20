@@ -1,7 +1,8 @@
 # automatic(desiredCount:roundLowerBound:roundUpperBound:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Automatically determines the values for the markers, approximating the target number of values.
 
@@ -22,7 +23,7 @@ static func automatic(desiredCount: Int? = nil, roundLowerBound: Bool? = nil, ro
 
 ## Mentions
 
-- [Customizing axes in Swift Charts](customizing-axes-in-swift-charts.md)
+- [Customizing axes in Swift Charts](../customizing-axes-in-swift-charts.md)
 
 
 ---

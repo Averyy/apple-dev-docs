@@ -1,7 +1,8 @@
 # SwiftUI
 
 **Framework**: SwiftUI  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Declare the user interface and behavior for your app on every platform.
 
@@ -18,139 +19,148 @@ Declare the user interface and behavior for your app on every platform.
 
 SwiftUI provides views, controls, and layout structures for declaring your app’s user interface. The framework provides event handlers for delivering taps, gestures, and other types of input to your app, and tools to manage the flow of data from your app’s models down to the views and controls that users see and interact with.
 
-Define your app structure using the [`App`](app.md) protocol, and populate it with scenes that contain the views that make up your app’s user interface. Create your own custom views that conform to the [`View`](view.md) protocol, and compose them with SwiftUI views for displaying text, images, and custom shapes using stacks, lists, and more. Apply powerful modifiers to built-in views and your own views to customize their rendering and interactivity. Share code between apps on multiple platforms with views and controls that adapt to their context and presentation.
+Define your app structure using the [`App`](./app.md) protocol, and populate it with scenes that contain the views that make up your app’s user interface. Create your own custom views that conform to the [`View`](./view.md) protocol, and compose them with SwiftUI views for displaying text, images, and custom shapes using stacks, lists, and more. Apply powerful modifiers to built-in views and your own views to customize their rendering and interactivity. Share code between apps on multiple platforms with views and controls that adapt to their context and presentation.
 
-![An image of the Landmarks sample app on Mac, iPad, and iPhone showing the Mount Fuji landmark.](/images/com.apple.SwiftUI/landmarks-app-article-hero@2x.png)
+![An image of the Landmarks sample app on Mac, iPad, and iPhone showing the Mount Fuji landmark.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/landmarks-app-article-hero@2x.png)
 
-You can integrate SwiftUI views with objects from the [`UIKit`](https://developer.apple.com/documentation/uikit), [`AppKit`](https://developer.apple.com/documentation/appkit), and [`WatchKit`](https://developer.apple.com/documentation/watchkit) frameworks to take further advantage of platform-specific functionality. You can also customize accessibility support in SwiftUI, and localize your app’s interface for different languages, countries, or cultural regions.
+You can integrate SwiftUI views with objects from the [UIKit](../UIKit/UIKit.md), [AppKit](../AppKit/AppKit.md), and [WatchKit](../WatchKit/WatchKit.md) frameworks to take further advantage of platform-specific functionality. You can also customize accessibility support in SwiftUI, and localize your app’s interface for different languages, countries, or cultural regions.
 
-> 💡 **Tip**: If you’re new to SwiftUI, visit the [`SwiftUI Pathway`](https://developer.apple.comhttps://developer.apple.com/swiftui/get-started/). It’s a collection of tutorials, articles, and sample projects that help you get started with SwiftUI.
+> 💡 **Tip**: If you’re new to SwiftUI, visit the [SwiftUI Pathway](https://developer.apple.com/swiftui/get-started/). It’s a collection of tutorials, articles, and sample projects that help you get started with SwiftUI.
 
-##### Featured Samples
+##### Featured samples
+
+- [Landmarks: Building an app with Liquid Glass](./landmarks-building-an-app-with-liquid-glass.md)
+  Enhance your app experience with system-provided and custom Liquid Glass.
+- [Wishlist: Planning travel in a SwiftUI app](./wishlist-planning-travel-in-a-swiftui-app.md)
+  Build a travel planning app that organizes trips into collections and tracks activity completion.
+- [Destination Video](../visionOS/destination-video.md)
+  Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Building a document-based app with SwiftUI](./building-a-document-based-app-with-swiftui.md)
+  Create, save, and open documents in a multiplatform app.
 
 ## Topics
 
 ### Essentials
-- [Adopting Liquid Glass](../technologyoverviews/adopting-liquid-glass.md)
+- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
 - [Develop in Swift](https://developer.apple.com/tutorials/develop-in-swift)
   Develop in Swift Tutorials introduce app development with Swift and Xcode to anyone learning to build apps for Apple platforms.
-- [SwiftUI updates](../updates/swiftui.md)
+- [SwiftUI updates](../Updates/swiftui.md)
   Learn about important changes to SwiftUI.
-- [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)
+- [Landmarks: Building an app with Liquid Glass](./landmarks-building-an-app-with-liquid-glass.md)
   Enhance your app experience with system-provided and custom Liquid Glass.
 ### App structure
-- [App organization](app-organization.md)
+- [App organization](./app-organization.md)
   Define the entry point and top-level structure of your app.
-- [Scenes](scenes.md)
+- [Scenes](./scenes.md)
   Declare the user interface groupings that make up the parts of your app.
-- [Windows](windows.md)
+- [Windows](./windows.md)
   Display user interface content in a window or a collection of windows.
-- [Immersive spaces](immersive-spaces.md)
+- [Immersive spaces](./immersive-spaces.md)
   Display unbounded content in a person’s surroundings.
-- [Documents](documents.md)
+- [Documents](./documents.md)
   Enable people to open and manage documents.
-- [Navigation](navigation.md)
+- [Navigation](./navigation.md)
   Enable people to move between different parts of your app’s view hierarchy within a scene.
-- [Modal presentations](modal-presentations.md)
+- [Modal presentations](./modal-presentations.md)
   Present content in a separate view that offers focused interaction.
-- [Toolbars](toolbars.md)
+- [Toolbars](./toolbars.md)
   Provide immediate access to frequently used commands and controls.
-- [Search](search.md)
+- [Search](./search.md)
   Enable people to search for text or other content within your app.
-- [App extensions](app-extensions.md)
+- [App extensions](./app-extensions.md)
   Extend your app’s basic functionality to other parts of the system, like by adding a Widget.
 ### Data and storage
-- [Model data](model-data.md)
+- [Model data](./model-data.md)
   Manage the data that your app uses to drive its interface.
-- [Environment values](environment-values.md)
+- [Environment values](./environment-values.md)
   Share data throughout a view hierarchy using the environment.
-- [Preferences](preferences.md)
+- [Preferences](./preferences.md)
   Indicate configuration preferences from views to their container views.
-- [Persistent storage](persistent-storage.md)
+- [Persistent storage](./persistent-storage.md)
   Store data for use across sessions of your app.
 ### Views
-- [View fundamentals](view-fundamentals.md)
+- [View fundamentals](./view-fundamentals.md)
   Define the visual elements of your app using a hierarchy of views.
-- [View configuration](view-configuration.md)
+- [View configuration](./view-configuration.md)
   Adjust the characteristics of views in a hierarchy.
-- [View styles](view-styles.md)
+- [View styles](./view-styles.md)
   Apply built-in and custom appearances and behaviors to different types of views.
-- [Animations](animations.md)
+- [Animations](./animations.md)
   Create smooth visual updates in response to state changes.
-- [Text input and output](text-input-and-output.md)
+- [Text input and output](./text-input-and-output.md)
   Display formatted text and get text input from the user.
-- [Images](images.md)
+- [Images](./images.md)
   Add images and symbols to your app’s user interface.
-- [Controls and indicators](controls-and-indicators.md)
+- [Controls and indicators](./controls-and-indicators.md)
   Display values and get user selections.
-- [Menus and commands](menus-and-commands.md)
+- [Menus and commands](./menus-and-commands.md)
   Provide space-efficient, context-dependent access to commands and controls.
-- [Shapes](shapes.md)
+- [Shapes](./shapes.md)
   Trace and fill built-in and custom shapes with a color, gradient, or other pattern.
-- [Drawing and graphics](drawing-and-graphics.md)
+- [Drawing and graphics](./drawing-and-graphics.md)
   Enhance your views with graphical effects and customized drawings.
 ### View layout
-- [Layout fundamentals](layout-fundamentals.md)
+- [Layout fundamentals](./layout-fundamentals.md)
   Arrange views inside built-in layout containers like stacks and grids.
-- [Layout adjustments](layout-adjustments.md)
+- [Layout adjustments](./layout-adjustments.md)
   Make fine adjustments to alignment, spacing, padding, and other layout parameters.
-- [Custom layout](custom-layout.md)
+- [Custom layout](./custom-layout.md)
   Place views in custom arrangements and create animated transitions between layout types.
-- [Lists](lists.md)
+- [Lists](./lists.md)
   Display a structured, scrollable column of information.
-- [Tables](tables.md)
+- [Tables](./tables.md)
   Display selectable, sortable data arranged in rows and columns.
-- [View groupings](view-groupings.md)
+- [View groupings](./view-groupings.md)
   Present views in different kinds of purpose-driven containers, like forms or control groups.
-- [Scroll views](scroll-views.md)
+- [Scroll views](./scroll-views.md)
   Enable people to scroll to content that doesn’t fit in the current display.
 ### Event handling
-- [Gestures](gestures.md)
+- [Gestures](./gestures.md)
   Define interactions from taps, clicks, and swipes to fine-grained gestures.
-- [Input events](input-events.md)
+- [Input events](./input-events.md)
   Respond to input from a hardware device, like a keyboard or a Touch Bar.
-- [Clipboard](clipboard.md)
+- [Clipboard](./clipboard.md)
   Enable people to move or duplicate items by issuing Copy and Paste commands.
-- [Drag and drop](drag-and-drop.md)
+- [Drag and drop](./drag-and-drop.md)
   Enable people to move or duplicate items by dragging them from one location to another.
-- [Focus](focus.md)
+- [Focus](./focus.md)
   Identify and control which visible object responds to user interaction.
-- [System events](system-events.md)
+- [System events](./system-events.md)
   React to system events, like opening a URL.
 ### Accessibility
-- [Accessibility fundamentals](accessibility-fundamentals.md)
+- [Accessibility fundamentals](./accessibility-fundamentals.md)
   Make your SwiftUI apps accessible to everyone, including people with disabilities.
-- [Accessible appearance](accessible-appearance.md)
+- [Accessible appearance](./accessible-appearance.md)
   Enhance the legibility of content in your app’s interface.
-- [Accessible controls](accessible-controls.md)
+- [Accessible controls](./accessible-controls.md)
   Improve access to actions that your app can undertake.
-- [Accessible descriptions](accessible-descriptions.md)
+- [Accessible descriptions](./accessible-descriptions.md)
   Describe interface elements to help people understand what they represent.
-- [Accessible navigation](accessible-navigation.md)
+- [Accessible navigation](./accessible-navigation.md)
   Enable users to navigate to specific user interface elements using rotors.
 ### Framework integration
-- [AppKit integration](appkit-integration.md)
+- [AppKit integration](./appkit-integration.md)
   Add AppKit views to your SwiftUI app, or use SwiftUI views in your AppKit app.
-- [UIKit integration](uikit-integration.md)
+- [UIKit integration](./uikit-integration.md)
   Add UIKit views to your SwiftUI app, or use SwiftUI views in your UIKit app.
-- [WatchKit integration](watchkit-integration.md)
+- [WatchKit integration](./watchkit-integration.md)
   Add WatchKit views to your SwiftUI app, or use SwiftUI views in your WatchKit app.
-- [Technology-specific views](technology-specific-views.md)
+- [Technology-specific views](./technology-specific-views.md)
   Use SwiftUI views that other Apple frameworks provide.
 ### Tool support
-- [Previews in Xcode](previews-in-xcode.md)
+- [Previews in Xcode](./previews-in-xcode.md)
   Generate dynamic, interactive previews of your custom views.
-- [Xcode library customization](xcode-library-customization.md)
+- [Xcode library customization](./xcode-library-customization.md)
   Expose custom views and modifiers in the Xcode library.
-- [Performance analysis](performance-analysis.md)
+- [Performance analysis](./performance-analysis.md)
   Measure and improve your app’s responsiveness.
 ### Structures
-- [struct ContentMarginGuide](contentmarginguide.md)
+- [struct ContentMarginGuide](./contentmarginguide.md)
   A guide for resolving the content margins for a view.
-- [struct PresentationMode](presentationmode.md)
+- [struct PresentationMode](./presentationmode.md)
   An indication whether a view is currently presented by another view.
-- [struct ToolbarTitleAlignment](toolbartitlealignment.md)
+- [struct ToolbarTitleAlignment](./toolbartitlealignment.md)
   A preferred alignment for a navigation bar’s title.
 
 

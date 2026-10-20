@@ -1,21 +1,22 @@
 # SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships.Subscription
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships.Subscription
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships.Subscription.Data](subscriptionappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships.Subscription.Data](./subscription-data.dictionary/data-data.dictionary.md)
   The request body you use to create a subscription App Store review screenshot.
 
 ## Properties

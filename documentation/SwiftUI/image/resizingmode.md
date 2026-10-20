@@ -1,7 +1,8 @@
 # Image.ResizingMode
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The modes that SwiftUI uses to resize an image to fit within its containing view.
 
@@ -23,30 +24,31 @@ enum ResizingMode
 ## Topics
 
 ### Getting resizing modes
-- [Image.ResizingMode.stretch](image/resizingmode/stretch.md)
+- [Image.ResizingMode.stretch](./resizingmode/stretch.md)
   A mode to enlarge or reduce the size of an image so that it fills the available space.
-- [Image.ResizingMode.tile](image/resizingmode/tile.md)
+- [Image.ResizingMode.tile](./resizingmode/tile.md)
   A mode to repeat the image at its original size, as many times as necessary to fill the available space.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Fitting images into available space](fitting-images-into-available-space.md)
+### Configuring an image
+- [Fitting images into available space](../fitting-images-into-available-space.md)
   Adjust the size and shape of images in your app’s user interface by applying view modifiers.
-- [func imageScale(Image.Scale) -> some View](view/imagescale(_:).md)
+- [func imageScale(Image.Scale) -> some View](../view/imagescale%28_%29.md)
   Scales images within the view according to one of the relative sizes available including small, medium, and large images sizes.
-- [var imageScale: Image.Scale](environmentvalues/imagescale.md)
+- [var imageScale: Image.Scale](../environmentvalues/imagescale.md)
   The image scale for this environment.
-- [Image.Scale](image/scale.md)
+- [Image.Scale](./scale.md)
   A scale to apply to vector images relative to text.
-- [Image.Orientation](image/orientation.md)
+- [Image.Orientation](./orientation.md)
   The orientation of an image.
 
 

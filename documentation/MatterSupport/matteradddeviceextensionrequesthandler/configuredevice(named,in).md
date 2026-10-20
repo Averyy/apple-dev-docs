@@ -1,7 +1,8 @@
 # configureDevice(named:in:)
 
 **Framework**: MatterSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the device with selected attributes.
 
@@ -10,7 +11,7 @@ Configures the device with selected attributes.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,11 +26,12 @@ func configureDevice(named name: String, in room: MatterAddDeviceRequest.Room?) 
 
 ## See Also
 
-- [func validateDeviceCredential(MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws](matteradddeviceextensionrequesthandler/validatedevicecredential(_:).md)
+### Configuring and validating the device
+- [func validateDeviceCredential(MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws](./validatedevicecredential%28_%29.md)
   Performs verification and attestation checks.
-- [MatterAddDeviceExtensionRequestHandler.DeviceCredential](matteradddeviceextensionrequesthandler/devicecredential.md)
+- [MatterAddDeviceExtensionRequestHandler.DeviceCredential](./devicecredential.md)
   A collection of device credentials the device presents during commissioning.
-- [func rooms(in: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room]](matteradddeviceextensionrequesthandler/rooms(in:).md)
+- [func rooms(in: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room]](./rooms%28in%29.md)
   Provides rooms that correspond to a home in the device setup.
 
 

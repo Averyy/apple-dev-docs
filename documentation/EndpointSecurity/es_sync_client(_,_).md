@@ -1,7 +1,8 @@
 # es_sync_client(_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 func es_sync_client(_ client: OpaquePointer, _ block: @escaping () -> Void) -> es_return_t
 ```
 
+```c
+extern es_return_t es_sync_client(es_client_t *client, void (^block)());
+```
+
 #### Discussion
 
 Place a sync marker at the back of the message queue for `client`, run `block` when it reaches the front of the queue.
@@ -23,7 +28,7 @@ To best take advantage of this function it’s important the caller understand t
 
 When a program issues a syscall (or similar), it is guaranteed that before control is returned to the caller, the associated ES message has been created and enqueued with all ES clients. Message delivery is asynchronous (even for auth evnts), but enqueing is fully synchronous. With that in mind, it makes it possible to write such code as:
 
-```None
+```
 dispatch_semaphore_t sema = dispatch_semaphore_create(0);
 (void)open("/tmp/foo");
 es_sync_client(client, ^(){ dispatch_semaphore_signal(sema); });

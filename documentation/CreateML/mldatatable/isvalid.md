@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the data table is valid.
 
@@ -21,7 +22,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-Check [`isValid`](mldatatable/isvalid.md) after you create or mutate a data table to ensure the data table is still valid. If it’s [`false`](https://developer.apple.com/documentation/swift/false), the data table encountered an error and you can’t use it for training or subsequent operations. The following are some of the actions that can invalidate a data table:
+Check [`isValid`](./isvalid.md) after you create or mutate a data table to ensure the data table is still valid. If it’s [`false`](../../Swift/false.md), the data table encountered an error and you can’t use it for training or subsequent operations. The following are some of the actions that can invalidate a data table:
 
 - Adding a column with the name of a column that already exists in the data table
 - Adding an invalid column
@@ -30,7 +31,8 @@ Check [`isValid`](mldatatable/isvalid.md) after you create or mutate a data tabl
 
 ## See Also
 
-- [var error: (any Error)?](mldatatable/error.md)
+### Handling data table errors
+- [var error: (any Error)?](./error.md)
   The underlying error present when the data table is invalid.
 
 

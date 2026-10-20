@@ -1,7 +1,8 @@
 # kMDAttributeReadOnlyValues
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of strings containing the read-onlymetadata attribute keys, or `NULL` ifthe type is not known by the system.
 
@@ -12,6 +13,10 @@ An array of strings containing the read-onlymetadata attribute keys, or `NULL` i
 
 ```swift
 let kMDAttributeReadOnlyValues: CFString!
+```
+
+```c
+const CFStringRef kMDAttributeReadOnlyValues;
 ```
 
 

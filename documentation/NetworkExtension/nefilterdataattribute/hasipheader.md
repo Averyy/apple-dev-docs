@@ -1,7 +1,8 @@
 # NEFilterDataAttribute.hasIPHeader
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attribute that indicates the data includes an IP header.
 
@@ -12,6 +13,10 @@ An attribute that indicates the data includes an IP header.
 
 ```swift
 case hasIPHeader
+```
+
+```c
+NEFilterDataAttributeHasIPHeader
 ```
 
 

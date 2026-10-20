@@ -1,7 +1,8 @@
 # removeTrackAssociation(to:type:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specific type of track association between two tracks.
 
@@ -19,6 +20,10 @@ Removes a specific type of track association between two tracks.
 func removeTrackAssociation(to movieTrack: AVMovieTrack, type trackAssociationType: AVAssetTrack.AssociationType)
 ```
 
+```objc
+- (void) removeTrackAssociationToTrack:(AVMovieTrack *) movieTrack type:(AVTrackAssociationType) trackAssociationType;
+```
+
 ## Parameters
 
 - `movieTrack`: The AVMovieTrack object that is associated with the receiver.
@@ -26,11 +31,12 @@ func removeTrackAssociation(to movieTrack: AVMovieTrack, type trackAssociationTy
 
 ## See Also
 
-- [var availableTrackAssociationTypes: [AVAssetTrack.AssociationType]](avmutablemovietrack/availabletrackassociationtypes.md)
+### Managing track associations
+- [var availableTrackAssociationTypes: [AVAssetTrack.AssociationType]](./availabletrackassociationtypes.md)
   An array of association types that the track uses to associate with other tracks.
-- [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](avmutablemovietrack/associatedtracks(oftype:).md)
+- [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](./associatedtracks%28oftype%29.md)
   Returns an array of associated tracks that have the specified association type.
-- [func addTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](avmutablemovietrack/addtrackassociation(to:type:).md)
+- [func addTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](./addtrackassociation%28to,type%29.md)
   Creates a specific type of track association between two tracks.
 
 

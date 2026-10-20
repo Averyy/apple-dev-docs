@@ -1,7 +1,8 @@
 # rootLayer
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root layer of this stage.
 
@@ -21,11 +22,12 @@ var rootLayer: USDLayer { get }
 
 ## See Also
 
-- [func muteLayer(String)](usdstage/mutelayer(_:).md)
+### Managing layers
+- [func muteLayer(String)](./mutelayer%28_%29.md)
   Mutes the layer with the given identifier, excluding its opinions from composition.
-- [func unmuteLayer(String)](usdstage/unmutelayer(_:).md)
+- [func unmuteLayer(String)](./unmutelayer%28_%29.md)
   Unmutes the layer with the given identifier, restoring its opinions to composition.
-- [func isLayerMuted(String) -> Bool](usdstage/islayermuted(_:).md)
+- [func isLayerMuted(String) -> Bool](./islayermuted%28_%29.md)
   Returns a Boolean value that indicates whether the layer with the given identifier is muted.
 
 

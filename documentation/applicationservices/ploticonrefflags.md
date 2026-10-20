@@ -1,7 +1,8 @@
 # PlotIconRefFlags
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.1+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias PlotIconRefFlags = UInt32
+```
+
+```c
+typedef UInt32 PlotIconRefFlags;
 ```
 
 

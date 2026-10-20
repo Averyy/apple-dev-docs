@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -19,6 +20,8 @@ Hashes the essential components of this value by feeding them into the given has
 ```swift
 func hash(into hasher: inout Hasher)
 ```
+
+Available when `Success` conforms to `Hashable`, `Failure` conforms to `Error`, and `Failure` conforms to `Hashable`.
 
 #### Discussion
 

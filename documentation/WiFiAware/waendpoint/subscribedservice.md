@@ -1,7 +1,8 @@
 # subscribedService
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscribable service that is, or can be, connected.
 
@@ -22,7 +23,8 @@ Use `nil` if a subscribable service isn’t in use.
 
 ## See Also
 
-- [var publishedService: WAPublishableService?](waendpoint/publishedservice.md)
+### Getting the service
+- [var publishedService: WAPublishableService?](./publishedservice.md)
   The publishable service that is, or can be, connected.
 
 

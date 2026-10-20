@@ -1,16 +1,17 @@
 # newScene
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The New Scene menu.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 26.0 (renamed: UIMenu.Identifier.newItem)
+- iPadOS 13.0+ - Deprecated in 26.0 (renamed: UIMenu.Identifier.newItem)
+- Mac Catalyst 13.1+ - Deprecated in 26.0 (renamed: UIMenu.Identifier.newItem)
+- tvOS 13.0+ - Deprecated in 26.0 (renamed: UIMenu.Identifier.newItem)
+- visionOS 1.0+ - Deprecated in 26.0 (renamed: UIMenu.Identifier.newItem)
 
 ## Declaration
 
@@ -18,19 +19,24 @@ The New Scene menu.
 static let newScene: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuNewScene;
+```
+
 ## See Also
 
-- [static let newItem: UIMenu.Identifier](uimenu/identifier-swift.struct/newitem.md)
+### File menus
+- [static let newItem: UIMenu.Identifier](./newitem.md)
   New item menu
-- [static let openRecent: UIMenu.Identifier](uimenu/identifier-swift.struct/openrecent.md)
+- [static let openRecent: UIMenu.Identifier](./openrecent.md)
   The Open Recent menu.
-- [static let open: UIMenu.Identifier](uimenu/identifier-swift.struct/open.md)
+- [static let open: UIMenu.Identifier](./open.md)
   The Open menu.
-- [static let close: UIMenu.Identifier](uimenu/identifier-swift.struct/close.md)
+- [static let close: UIMenu.Identifier](./close.md)
   The Close menu.
-- [static let print: UIMenu.Identifier](uimenu/identifier-swift.struct/print.md)
+- [static let print: UIMenu.Identifier](./print.md)
   The Print menu.
-- [static let document: UIMenu.Identifier](uimenu/identifier-swift.struct/document.md)
+- [static let document: UIMenu.Identifier](./document.md)
   The Document menu.
 
 

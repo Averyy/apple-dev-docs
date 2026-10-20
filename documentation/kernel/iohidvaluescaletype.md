@@ -1,7 +1,8 @@
 # IOHIDValueScaleType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Describes different types of scaling that can be performed on element values.
 
@@ -10,27 +11,29 @@ Describes different types of scaling that can be performed on element values.
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOHIDValueScaleType;
 ```
 
 ## Topics
 
 ### Constants
-- [kIOHIDValueScaleTypeCalibrated](1644492-anonymous/kiohidvaluescaletypecalibrated.md)
-- [kIOHIDValueScaleTypePhysical](1644492-anonymous/kiohidvaluescaletypephysical.md)
+- [kIOHIDValueScaleTypeCalibrated](./api-1644492-anonymous/kiohidvaluescaletypecalibrated.md)
+- [kIOHIDValueScaleTypePhysical](./api-1644492-anonymous/kiohidvaluescaletypephysical.md)
 
 ## See Also
 
-- [IOHIDBiometricEventType](iohidbiometriceventtype.md)
-- [IOHIDPointerEventOptions](iohidpointereventoptions.md)
-- [IOHIDOptionsType](iohidoptionstype.md)
+### Event Types
+- [IOHIDBiometricEventType](./iohidbiometriceventtype.md)
+- [IOHIDPointerEventOptions](./iohidpointereventoptions.md)
+- [IOHIDOptionsType](./iohidoptionstype.md)
   Options for opening a device via IOHIDLib.
-- [IOHIDStandardType](iohidstandardtype.md)
+- [IOHIDStandardType](./iohidstandardtype.md)
   Type to define what industrial standard the device is referencing.
-- [IOHIDKeyboardEventOptions](iohidkeyboardeventoptions.md)
-- [IOHIDScrollEventOptions](iohidscrolleventoptions.md)
-- [IOHIDEventType](iohideventtype.md)
+- [IOHIDKeyboardEventOptions](./iohidkeyboardeventoptions.md)
+- [IOHIDScrollEventOptions](./iohidscrolleventoptions.md)
+- [IOHIDEventType](./iohideventtype.md)
+### Related Documentation
 - [IOHIDValueScaleType](../iokit/iohidvaluescaletype.md)
   Describes different types of scaling that can be performed on element values.
 

@@ -1,7 +1,8 @@
 # MultiplePlanePixelFormat
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A pixel format that contains multiple homogeneous planes represented by multiple underlying vImage buffers.
 
@@ -11,7 +12,7 @@ A pixel format that contains multiple homogeneous planes represented by multiple
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ protocol MultiplePlanePixelFormat : PixelFormat
 
 Use multiple-plane pixel buffers to store image data as discrete planar buffers that represent individual channels.
 
-For example, the following code deinterleaves an interleaved buffer and applies different gamma adjustments to different color channels. The code calls `PixelBuffer.convert(to:)` to reinterleave the image data and generates a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance of the final output.
+For example, the following code deinterleaves an interleaved buffer and applies different gamma adjustments to different color channels. The code calls `PixelBuffer.convert(to:)` to reinterleave the image data and generates a [`CGImage`](../CoreGraphics/cgimage.md) instance of the final output.
 
 ```swift
 let srcImage =  imageLiteral(resourceName: "...").cgImage(
@@ -63,32 +64,33 @@ let outputImage = interleaved
 ## Topics
 
 ### Associated Types
-- [associatedtype PlanarPixelFormat : StaticPixelFormat](multipleplanepixelformat/planarpixelformat.md)
+- [associatedtype PlanarPixelFormat : StaticPixelFormat](./multipleplanepixelformat/planarpixelformat.md)
 ### Type Properties
-- [static var bitCountPerPlanarPixel: Int](multipleplanepixelformat/bitcountperplanarpixel.md)
-- [static var planeCount: Int](multipleplanepixelformat/planecount.md)
+- [static var bitCountPerPlanarPixel: Int](./multipleplanepixelformat/bitcountperplanarpixel.md)
+- [static var planeCount: Int](./multipleplanepixelformat/planecount.md)
 
 ## Relationships
 
 ### Inherits From
-- [PixelFormat](pixelformat.md)
+- [PixelFormat](./pixelformat.md)
 ### Conforming Types
-- [vImage.Planar8x2](vimage/planar8x2.md)
-- [vImage.Planar8x3](vimage/planar8x3.md)
-- [vImage.Planar8x4](vimage/planar8x4.md)
-- [vImage.PlanarFx2](vimage/planarfx2.md)
-- [vImage.PlanarFx3](vimage/planarfx3.md)
-- [vImage.PlanarFx4](vimage/planarfx4.md)
+- [vImage.Planar8x2](./vimage/planar8x2.md)
+- [vImage.Planar8x3](./vimage/planar8x3.md)
+- [vImage.Planar8x4](./vimage/planar8x4.md)
+- [vImage.PlanarFx2](./vimage/planarfx2.md)
+- [vImage.PlanarFx3](./vimage/planarfx3.md)
+- [vImage.PlanarFx4](./vimage/planarfx4.md)
 
 ## See Also
 
-- [protocol InitializableFromCGImage](initializablefromcgimage.md)
+### Protocols
+- [protocol InitializableFromCGImage](./initializablefromcgimage.md)
   A pixel format that supports initialization from a Core Graphics image.
-- [protocol PixelFormat](pixelformat.md)
+- [protocol PixelFormat](./pixelformat.md)
   A pixel buffer pixel format.
-- [protocol SinglePlanePixelFormat](singleplanepixelformat.md)
+- [protocol SinglePlanePixelFormat](./singleplanepixelformat.md)
   A pixel format that contains a single underlying vImage buffer.
-- [protocol StaticPixelFormat](staticpixelformat.md)
+- [protocol StaticPixelFormat](./staticpixelformat.md)
   A pixel format that’s known at compile time.
 
 

@@ -1,7 +1,8 @@
 # errSecSMIMENoEmailAddress
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No email address is found in the certificate.
 
@@ -18,6 +19,10 @@ No email address is found in the certificate.
 
 ```swift
 var errSecSMIMENoEmailAddress: OSStatus { get }
+```
+
+```c
+errSecSMIMENoEmailAddress
 ```
 
 

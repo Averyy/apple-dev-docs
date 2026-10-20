@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: Media Setup  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates the service configuration process and sends the account details of the streaming media service to the user’s HomePod speakers.
 
@@ -17,11 +18,16 @@ Initiates the service configuration process and sends the account details of the
 func start() throws
 ```
 
+```objc
+- (BOOL) startWithError:(NSError **) error;
+```
+
 ## See Also
 
-- [var presentationContext: (any MSAuthenticationPresentationContext)?](mssetupsession/presentationcontext.md)
+### Presenting the Configuration View
+- [var presentationContext: (any MSAuthenticationPresentationContext)?](./presentationcontext.md)
   A delegate that provides media setup display information to the system.
-- [protocol MSAuthenticationPresentationContext](msauthenticationpresentationcontext.md)
+- [protocol MSAuthenticationPresentationContext](../msauthenticationpresentationcontext.md)
   A protocol that provides media setup display information to the system.
 
 

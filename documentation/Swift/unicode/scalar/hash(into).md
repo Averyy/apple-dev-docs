@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -26,13 +27,14 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [var value: UInt32](unicode/scalar/value.md)
+### Inspecting a Scalar
+- [var value: UInt32](./value.md)
   A numeric representation of the Unicode scalar.
-- [var properties: Unicode.Scalar.Properties](unicode/scalar/properties-swift.property.md)
+- [var properties: Unicode.Scalar.Properties](./properties-swift.property.md)
   Properties of this scalar defined by the Unicode standard.
-- [Unicode.Scalar.Properties](unicode/scalar/properties-swift.struct.md)
+- [Unicode.Scalar.Properties](./properties-swift.struct.md)
   A value that provides access to properties of a Unicode scalar that are defined by the Unicode standard.
-- [var isASCII: Bool](unicode/scalar/isascii.md)
+- [var isASCII: Bool](./isascii.md)
   A Boolean value indicating whether the Unicode scalar is an ASCII character.
 
 

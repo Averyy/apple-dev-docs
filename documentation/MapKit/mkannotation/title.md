@@ -1,18 +1,19 @@
 # title
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string containing the annotation’s title.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The string containing the annotation’s title.
 optional var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
+```
+
 #### Discussion
 
-Use this optional property to supply a string that the annotation displays in the callout for the associated annotation view. If you specify a [`detailCalloutAccessoryView`](mkannotationview/detailcalloutaccessoryview.md) object, setting the title isn’t required.
+Use this optional property to supply a string that the annotation displays in the callout for the associated annotation view. If you specify a [`detailCalloutAccessoryView`](../mkannotationview/detailcalloutaccessoryview.md) object, setting the title isn’t required.
 
 ## See Also
 
-- [var subtitle: String?](mkannotation/subtitle.md)
+### Title attributes
+- [var subtitle: String?](./subtitle.md)
   The string containing the annotation’s subtitle.
 
 

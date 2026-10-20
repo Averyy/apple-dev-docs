@@ -1,7 +1,8 @@
 # cmRGBData
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The RGB data color space.
 

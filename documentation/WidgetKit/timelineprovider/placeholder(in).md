@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a timeline entry representing a placeholder version of the widget.
@@ -22,7 +23,7 @@ func placeholder(in context: Self.Context) -> Self.Entry
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
 
 #### Return Value
 
@@ -40,7 +41,7 @@ struct GameStatusProvider: TimelineProvider {
 }
 ```
 
-In addition, WidgetKit may render your widget as a placeholder if users choose to hide sensitive information on Apple Watch or the iPhone Lock Screen. To learn more about redacting sensitive data, see [`Creating a widget extension`](creating-a-widget-extension.md).
+In addition, WidgetKit may render your widget as a placeholder if users choose to hide sensitive information on Apple Watch or the iPhone Lock Screen. To learn more about redacting sensitive data, see [Creating a widget extension](../creating-a-widget-extension.md).
 
 > ❗ **Important**: `placeholder(in:)` is synchronous and returns a `TimelineEntry` immediately. Return from `placeholder(in:)` as quickly as possible.
 
@@ -50,13 +51,14 @@ In addition, WidgetKit may render your widget as a placeholder if users choose t
 
 ## See Also
 
-- [func getSnapshot(in: Self.Context, completion: (Self.Entry) -> Void)](timelineprovider/getsnapshot(in:completion:).md)
+### Generating Timelines
+- [func getSnapshot(in: Self.Context, completion: (Self.Entry) -> Void)](./getsnapshot%28in,completion%29.md)
   Provides a timeline entry that represents the current time and state of a widget.
-- [func getTimeline(in: Self.Context, completion: (Timeline<Self.Entry>) -> Void)](timelineprovider/gettimeline(in:completion:).md)
+- [func getTimeline(in: Self.Context, completion: (Timeline<Self.Entry>) -> Void)](./gettimeline%28in,completion%29.md)
   Provides an array of timeline entries for the current time and, optionally, any future times to update a widget.
-- [associatedtype Entry : TimelineEntry](timelineprovider/entry.md)
+- [associatedtype Entry : TimelineEntry](./entry.md)
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
-- [TimelineProvider.Context](timelineprovider/context.md)
+- [TimelineProvider.Context](./context.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
 
 

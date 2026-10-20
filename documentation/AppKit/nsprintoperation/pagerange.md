@@ -1,7 +1,8 @@
 # pageRange
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of pages associated with the print operation.
 
@@ -14,19 +15,25 @@ The range of pages associated with the print operation.
 var pageRange: NSRange { get }
 ```
 
+```objc
+@property (readonly) NSRange pageRange;
+```
+
 #### Return Value
 
 The range of page numbers. Page numbers are one-based values where the index of page one is 1, the index of page two is 2, and so on. Depending on the information returned by the printing view, the starting page number may not be 1.  Also, if the number of pages being printed is not known, the page count may be set to `NSIntegerMax`.
 
 ## See Also
 
-- [func knowsPageRange(NSRangePointer) -> Bool](nsview/knowspagerange(_:).md)
+### Related Documentation
+- [func knowsPageRange(NSRangePointer) -> Bool](../nsview/knowspagerange%28_%29.md)
   Returns a Boolean value that indicates whether the view handles page boundaries.
-- [var currentPage: Int](nsprintoperation/currentpage.md)
+### Managing Page Information
+- [var currentPage: Int](./currentpage.md)
   The current page number being printed.
-- [var pageOrder: NSPrintOperation.PageOrder](nsprintoperation/pageorder-swift.property.md)
+- [var pageOrder: NSPrintOperation.PageOrder](./pageorder-swift.property.md)
   The print order for the pages of the operation.
-- [NSPrintOperation.PageOrder](nsprintoperation/pageorder-swift.enum.md)
+- [NSPrintOperation.PageOrder](./pageorder-swift.enum.md)
   Constants that specify the page order.
 
 

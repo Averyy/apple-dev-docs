@@ -1,24 +1,26 @@
 # modfl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double modfl(long double, long double *);
 ```
 
 ## See Also
 
-- [modf](1557173-modf.md)
-- [modff](1557317-modff.md)
-- [fmod](1557253-fmod.md)
-- [fmodf](1557354-fmodf.md)
-- [fmodl](1557237-fmodl.md)
+### Modulo
+- [modf](./api-1557173-modf.md)
+- [modff](./api-1557317-modff.md)
+- [fmod](./api-1557253-fmod.md)
+- [fmodf](./api-1557354-fmodf.md)
+- [fmodl](./api-1557237-fmodl.md)
 
 
 ---

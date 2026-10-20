@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The server environment that signs the renewal information for an auto-renewable subscription.
 

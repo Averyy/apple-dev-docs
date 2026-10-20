@@ -76,7 +76,7 @@ Stream.withNewDefaultStream(device: .cpu) {
 ```
 
 This does not affect correctness: MLX inserts dependencies between streams
-automatically, as described in <doc:unified-memory>.
+automatically, as described in [Unified Memory](unified-memory.md).
 
 Both calls nest arbitrarily, and both have `async` variants.
 
@@ -124,7 +124,7 @@ the scoped calls above where they fit.
 
 ## See Also
 
-- <doc:unified-memory>
+- [Unified Memory](unified-memory.md)
 - ``Stream``
 - ``Device``
 - ``StreamOrDevice``

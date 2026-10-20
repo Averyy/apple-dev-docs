@@ -1,14 +1,15 @@
 # tcp_connection_client_accurate_ecn_invalid
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 tcp_connection_client_accurate_ecn_invalid = 0
 ```
 

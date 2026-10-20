@@ -1,7 +1,8 @@
 # trackingAreas
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the view’s tracking areas.
 
@@ -14,19 +15,24 @@ An array of the view’s tracking areas.
 var trackingAreas: [NSTrackingArea] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSTrackingArea *> * trackingAreas;
+```
+
 #### Discussion
 
-This property contains an array of [`NSTrackingArea`](nstrackingarea.md) objects. If the view has no tracking areas, the array is empty.
+This property contains an array of [`NSTrackingArea`](../nstrackingarea.md) objects. If the view has no tracking areas, the array is empty.
 
 ## See Also
 
-- [func addTrackingArea(NSTrackingArea)](nsview/addtrackingarea(_:).md)
+### Managing Tracking Areas
+- [func addTrackingArea(NSTrackingArea)](./addtrackingarea%28_%29.md)
   Adds a given tracking area to the view.
-- [func removeTrackingArea(NSTrackingArea)](nsview/removetrackingarea(_:).md)
+- [func removeTrackingArea(NSTrackingArea)](./removetrackingarea%28_%29.md)
   Removes a given tracking area from the view.
-- [func updateTrackingAreas()](nsview/updatetrackingareas.md)
+- [func updateTrackingAreas()](./updatetrackingareas%28%29.md)
   Invoked automatically when the view’s geometry changes such that its tracking areas need to be recalculated.
-- [class let didUpdateTrackingAreasNotification: NSNotification.Name](nsview/didupdatetrackingareasnotification.md)
+- [class let didUpdateTrackingAreasNotification: NSNotification.Name](./didupdatetrackingareasnotification.md)
   Posted whenever a view recalculates its tracking areas.
 
 

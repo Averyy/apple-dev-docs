@@ -1,7 +1,8 @@
 # default
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default typeface for an app’s user interface.
 
@@ -19,17 +20,22 @@ The default typeface for an app’s user interface.
 static let `default`: UIFontDescriptor.SystemDesign
 ```
 
+```c
+extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignDefault;
+```
+
 #### Discussion
 
-The returned typeface depends on the system. In iOS, using this constant with [`withDesign(_:)`](uifontdescriptor/withdesign(_:).md) returns SF Pro, while in watchOS that returns SF Compact.
+The returned typeface depends on the system. In iOS, using this constant with [`withDesign(_:)`](../withdesign%28_%29.md) returns SF Pro, while in watchOS that returns SF Compact.
 
 ## See Also
 
-- [static let rounded: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/rounded.md)
+### Typeface designs
+- [static let rounded: UIFontDescriptor.SystemDesign](./rounded.md)
   The rounded variant of the default typeface.
-- [static let monospaced: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/monospaced.md)
+- [static let monospaced: UIFontDescriptor.SystemDesign](./monospaced.md)
   The monospace variant of the default typeface.
-- [static let serif: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/serif.md)
+- [static let serif: UIFontDescriptor.SystemDesign](./serif.md)
   The serif variant of the default typeface.
 
 

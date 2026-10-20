@@ -1,18 +1,21 @@
 # init(tint:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circular progress view style with a tint color.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
+- tvOS 14.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use the [`tint(_:)`](../view/tint%28_%29-93mfq.md) view modifier instead.
 
 ## Declaration
 
@@ -23,7 +26,8 @@ init(tint: Color)
 
 ## See Also
 
-- [init()](circularprogressviewstyle/init.md)
+### Creating the progress view style
+- [init()](./init%28%29.md)
   Creates a circular progress view style.
 
 

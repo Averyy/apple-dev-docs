@@ -1,7 +1,8 @@
 # logFeedbackAttachment(sentiment:issues:desiredResponseContent:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Logs and serializes a feedback attachment that includes the content you expected.
 
@@ -22,7 +23,7 @@ Logs and serializes a feedback attachment that includes the content you expected
 
 ## Mentions
 
-- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+- [Inspecting session transcripts and reporting model feedback](../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
 #### Return Value
 
@@ -36,11 +37,12 @@ A `Data` object containing the JSON-encoded feedback attachment that can be subm
 
 ## See Also
 
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
+### Generating feedback
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](./logfeedbackattachment%28sentiment,issues,desiredoutput%29.md)
   Logs and serializes a feedback attachment that can be submitted to Apple.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsetext:).md)
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](./logfeedbackattachment%28sentiment,issues,desiredresponsetext%29.md)
   Logs and serializes a feedback attachment that includes the response text you expected.
-- [struct LanguageModelFeedback](languagemodelfeedback.md)
+- [struct LanguageModelFeedback](../languagemodelfeedback.md)
   Feedback appropriate for logging or attaching to Feedback Assistant.
 
 

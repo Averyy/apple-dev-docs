@@ -1,7 +1,8 @@
 # structuredTranscript
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A structured representation of this transcript, with tool calls, outputs, and responses collected into typed arrays.
 

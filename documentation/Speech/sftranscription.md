@@ -1,7 +1,8 @@
 # SFTranscription
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A textual representation of the specified speech in its entirety, as recognized by the speech recognizer.
 
@@ -18,56 +19,61 @@ A textual representation of the specified speech in its entirety, as recognized 
 class SFTranscription
 ```
 
+```objc
+@interface SFTranscription : NSObject
+```
+
 #### Overview
 
-Use `SFTranscription` to obtain all the recognized utterances from your audio content. An *utterance* is a vocalized word or group of words that represent a single meaning to the speech recognizer ([`SFSpeechRecognizer`](sfspeechrecognizer.md)).
+Use `SFTranscription` to obtain all the recognized utterances from your audio content. An *utterance* is a vocalized word or group of words that represent a single meaning to the speech recognizer ([`SFSpeechRecognizer`](./sfspeechrecognizer.md)).
 
-Use the [`formattedString`](sftranscription/formattedstring.md) property to retrieve the entire transcription of utterances, or use the [`segments`](sftranscription/segments.md) property to retrieve an individual utterance ([`SFTranscriptionSegment`](sftranscriptionsegment.md)).
+Use the [`formattedString`](./sftranscription/formattedstring.md) property to retrieve the entire transcription of utterances, or use the [`segments`](./sftranscription/segments.md) property to retrieve an individual utterance ([`SFTranscriptionSegment`](./sftranscriptionsegment.md)).
 
-You don’t create an `SFTranscription` directly. Instead, you retrieve it from an [`SFSpeechRecognitionResult`](sfspeechrecognitionresult.md) instance. The speech recognizer sends a speech recognition result to your app in one of two ways, depending on how your app started a speech recognition task.
+You don’t create an `SFTranscription` directly. Instead, you retrieve it from an [`SFSpeechRecognitionResult`](./sfspeechrecognitionresult.md) instance. The speech recognizer sends a speech recognition result to your app in one of two ways, depending on how your app started a speech recognition task.
 
-You can start a speech recognition task by using the speech recognizer’s [`recognitionTask(with:resultHandler:)`](sfspeechrecognizer/recognitiontask(with:resulthandler:).md) method. When the task is complete, the speech recognizer sends an [`SFSpeechRecognitionResult`](sfspeechrecognitionresult.md) instance to your `resultHandler` closure. Alternatively, you can use the speech recognizer’s [`recognitionTask(with:delegate:)`](sfspeechrecognizer/recognitiontask(with:delegate:).md) method to start a speech recognition task. When the task is complete, the speech recognizer uses your [`SFSpeechRecognitionTaskDelegate`](sfspeechrecognitiontaskdelegate.md) to send an [`SFSpeechRecognitionResult`](sfspeechrecognitionresult.md) by using the delegate’s [`speechRecognitionTask(_:didFinishRecognition:)`](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishrecognition:).md) method.
+You can start a speech recognition task by using the speech recognizer’s [`recognitionTask(with:resultHandler:)`](./sfspeechrecognizer/recognitiontask%28with,resulthandler%29.md) method. When the task is complete, the speech recognizer sends an [`SFSpeechRecognitionResult`](./sfspeechrecognitionresult.md) instance to your `resultHandler` closure. Alternatively, you can use the speech recognizer’s [`recognitionTask(with:delegate:)`](./sfspeechrecognizer/recognitiontask%28with,delegate%29.md) method to start a speech recognition task. When the task is complete, the speech recognizer uses your [`SFSpeechRecognitionTaskDelegate`](./sfspeechrecognitiontaskdelegate.md) to send an [`SFSpeechRecognitionResult`](./sfspeechrecognitionresult.md) by using the delegate’s [`speechRecognitionTask(_:didFinishRecognition:)`](./sfspeechrecognitiontaskdelegate/speechrecognitiontask%28_,didfinishrecognition%29.md) method.
 
 An `SFTranscription` represents only a potential version of the speech. It might not be an accurate representation of the utterances.
 
 ## Topics
 
 ### Transcribing utterances
-- [var formattedString: String](sftranscription/formattedstring.md)
+- [var formattedString: String](./sftranscription/formattedstring.md)
   The entire transcription of utterances, formatted into a single, user-displayable string.
 ### Getting individual utterances
-- [var segments: [SFTranscriptionSegment]](sftranscription/segments.md)
+- [var segments: [SFTranscriptionSegment]](./sftranscription/segments.md)
   An array of transcription segments that represent the parts of the transcription, as identified by the speech recognizer.
 ### Deprecated
-- [var averagePauseDuration: TimeInterval](sftranscription/averagepauseduration.md)
+- [var averagePauseDuration: TimeInterval](./sftranscription/averagepauseduration.md)
   The average pause duration between words, measured in seconds.
-- [var speakingRate: Double](sftranscription/speakingrate.md)
+- [var speakingRate: Double](./sftranscription/speakingrate.md)
   The number of words spoken per minute.
 ### Initializers
-- [init?(coder: NSCoder)](sftranscription/init(coder:).md)
+- [init?(coder: NSCoder)](./sftranscription/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SFSpeechRecognitionResult](sfspeechrecognitionresult.md)
+### Transcription results
+- [class SFSpeechRecognitionResult](./sfspeechrecognitionresult.md)
   An object that contains the partial or final results of a speech recognition request.
-- [class SFSpeechRecognitionMetadata](sfspeechrecognitionmetadata.md)
+- [class SFSpeechRecognitionMetadata](./sfspeechrecognitionmetadata.md)
   The metadata of speech in the audio of a speech recognition request.
-- [class SFTranscriptionSegment](sftranscriptionsegment.md)
+- [class SFTranscriptionSegment](./sftranscriptionsegment.md)
   A discrete part of an entire transcription, as identified by the speech recognizer.
 
 

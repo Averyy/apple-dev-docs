@@ -13,30 +13,30 @@ AppleScript defines constants for a wide variety of common object classes, thoug
 ## Topics
 
 ### Constants
-- [var cParagraph: OSType](cparagraph.md)
+- [var cParagraph: OSType](../cparagraph.md)
   A paragraph of text.
-- [var cPICT: OSType](cpict.md)
+- [var cPICT: OSType](../cpict.md)
   A PICT format figure.
-- [var cProperty: OSType](cproperty.md)
+- [var cProperty: OSType](../cproperty.md)
   A property of any object class.
-- [var cRGBColor: OSType](crgbcolor.md)
+- [var cRGBColor: OSType](../crgbcolor.md)
   An RGB color value.
-- [var cPixel: OSType](cpixel.md)
-- [var cPixelMap: OSType](cpixelmap.md)
-- [var cPolygon: OSType](cpolygon.md)
-- [var cQDPoint: OSType](cqdpoint.md)
-- [var cQDRectangle: OSType](cqdrectangle.md)
-- [var cRectangle: OSType](crectangle.md)
-- [var cRotation: OSType](crotation.md)
-- [var cRoundedRectangle: OSType](croundedrectangle.md)
-- [var cRow: OSType](crow.md)
-- [var cSelection: OSType](cselection.md)
-- [var cShortInteger: OSType](cshortinteger.md)
-- [var cTable: OSType](ctable.md)
-- [var cText: OSType](ctext.md)
-- [var cTextFlow: OSType](ctextflow.md)
-- [var cTextStyles: OSType](ctextstyles.md)
-- [var cType: OSType](ctype.md)
+- [var cPixel: OSType](../cpixel.md)
+- [var cPixelMap: OSType](../cpixelmap.md)
+- [var cPolygon: OSType](../cpolygon.md)
+- [var cQDPoint: OSType](../cqdpoint.md)
+- [var cQDRectangle: OSType](../cqdrectangle.md)
+- [var cRectangle: OSType](../crectangle.md)
+- [var cRotation: OSType](../crotation.md)
+- [var cRoundedRectangle: OSType](../croundedrectangle.md)
+- [var cRow: OSType](../crow.md)
+- [var cSelection: OSType](../cselection.md)
+- [var cShortInteger: OSType](../cshortinteger.md)
+- [var cTable: OSType](../ctable.md)
+- [var cText: OSType](../ctext.md)
+- [var cTextFlow: OSType](../ctextflow.md)
+- [var cTextStyles: OSType](../ctextstyles.md)
+- [var cType: OSType](../ctype.md)
 
 
 ---

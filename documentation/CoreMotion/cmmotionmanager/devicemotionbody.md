@@ -1,7 +1,8 @@
 # deviceMotionBody
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A physical body or view that defines the coordinate system for device-motion data.
 
@@ -18,9 +19,13 @@ A physical body or view that defines the coordinate system for device-motion dat
 var deviceMotionBody: (any CMBodyIdentifiable)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<CMBodyIdentifiable> deviceMotionBody;
+```
+
 #### Discussion
 
-Set this property to associate device-motion calculations with a specific body or view, such as a [`UIKit`](https://developer.apple.com/documentation/uikit) [`UIView`](https://developer.apple.com/documentation/uikit/uiview) that conforms to [`CMBodyIdentifiable`](cmbodyidentifiable.md).
+Set this property to associate device-motion calculations with a specific body or view, such as a [UIKit](../../UIKit/UIKit.md) [`UIView`](../../UIKit/uiview.md) that conforms to [`CMBodyIdentifiable`](../cmbodyidentifiable.md).
 
 When this property is `nil`, Core Motion calculates motion updates using the device’s hardware coordinate frame. When you set this property to an identifiable body, Core Motion transforms motion data, including 3D orientation, rotation rate, gravity, and user acceleration to match the current orientation of that view. The system updates this transformation automatically whenever the view rotates or changes position.
 
@@ -49,28 +54,29 @@ override func viewDidLoad() {
 ## Topics
 
 ### Motion configuration
-- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+- [protocol CMBodyIdentifiable](../cmbodyidentifiable.md)
   A type that identifies a physical body or view for device-motion calculations.
 
 ## See Also
 
-- [var showsDeviceMovementDisplay: Bool](cmmotionmanager/showsdevicemovementdisplay.md)
+### Managing device motion updates
+- [var showsDeviceMovementDisplay: Bool](./showsdevicemovementdisplay.md)
   Controls whether the device-movement display is shown.
-- [var deviceMotionUpdateInterval: TimeInterval](cmmotionmanager/devicemotionupdateinterval.md)
+- [var deviceMotionUpdateInterval: TimeInterval](./devicemotionupdateinterval.md)
   The interval, in seconds, for providing device-motion updates to the block handler.
-- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame, to: OperationQueue, withHandler: CMDeviceMotionHandler)](cmmotionmanager/startdevicemotionupdates(using:to:withhandler:).md)
+- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame, to: OperationQueue, withHandler: CMDeviceMotionHandler)](./startdevicemotionupdates%28using,to,withhandler%29.md)
   Starts device-motion updates on an operation queue and using a specified reference frame and block handler.
-- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMDeviceMotionHandler)](cmmotionmanager/startdevicemotionupdates(to:withhandler:).md)
+- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMDeviceMotionHandler)](./startdevicemotionupdates%28to,withhandler%29.md)
   Starts device-motion updates on an operation queue and using a specified block handler.
-- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame)](cmmotionmanager/startdevicemotionupdates(using:).md)
+- [func startDeviceMotionUpdates(using: CMAttitudeReferenceFrame)](./startdevicemotionupdates%28using%29.md)
   Starts device-motion updates using a reference frame but without a block handler.
-- [func startDeviceMotionUpdates()](cmmotionmanager/startdevicemotionupdates.md)
+- [func startDeviceMotionUpdates()](./startdevicemotionupdates%28%29.md)
   Starts device-motion updates without a block handler.
-- [func stopDeviceMotionUpdates()](cmmotionmanager/stopdevicemotionupdates.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
   Stops device-motion updates.
-- [var deviceMotion: CMDeviceMotion?](cmmotionmanager/devicemotion.md)
+- [var deviceMotion: CMDeviceMotion?](./devicemotion.md)
   The latest sample of device-motion data.
-- [typealias CMDeviceMotionHandler](cmdevicemotionhandler.md)
+- [typealias CMDeviceMotionHandler](../cmdevicemotionhandler.md)
   The type of block callback for handling device-motion data.
 
 

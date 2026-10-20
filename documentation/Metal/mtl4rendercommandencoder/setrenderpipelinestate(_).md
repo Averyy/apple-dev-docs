@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures this encoder with a render pipeline state that applies to your subsequent draw commands.
@@ -20,9 +21,13 @@ Configures this encoder with a render pipeline state that applies to your subseq
 func setRenderPipelineState(_ pipelineState: any MTLRenderPipelineState)
 ```
 
+```objc
+- (void) setRenderPipelineState:(id<MTLRenderPipelineState>) pipelineState;
+```
+
 ## Parameters
 
-- `pipelineState`: A non-`nil` [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance.
+- `pipelineState`: A non-`nil` [`MTLRenderPipelineState`](../mtlrenderpipelinestate.md) instance.
 
 
 ---

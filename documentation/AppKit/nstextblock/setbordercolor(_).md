@@ -1,7 +1,8 @@
 # setBorderColor(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color of all borders of the text block.
 
@@ -14,6 +15,10 @@ Sets the color of all borders of the text block.
 func setBorderColor(_ color: NSColor?)
 ```
 
+```objc
+- (void) setBorderColor:(NSColor *) color;
+```
+
 #### Discussion
 
 This setting has no visible effect unless the border width is larger than the default, which is 0.
@@ -24,11 +29,13 @@ This setting has no visible effect unless the border width is larger than the de
 
 ## See Also
 
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](nstextblock/setwidth(_:type:for:).md)
+### Related Documentation
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](./setwidth%28_,type,for%29.md)
   Sets the width of all edges of a specified layer of the text block.
-- [var backgroundColor: NSColor?](nstextblock/backgroundcolor.md)
+### Working with color
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The background color of the text block.
-- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
+- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)
 
 
 ---

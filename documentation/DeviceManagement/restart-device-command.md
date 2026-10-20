@@ -1,7 +1,8 @@
 # Restart Device
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remotely and immediately restart a device.
 
@@ -18,7 +19,7 @@ A passcode-locked iOS device doesn’t rejoin a Wi-Fi network after restarting, 
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowPasscodeRemovalAndLock |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -68,9 +69,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object RestartDeviceCommand](restartdevicecommand.md)
+- [object RestartDeviceCommand](./restartdevicecommand.md)
   The command to remotely and immediately restart a device.
-- [object RestartDeviceResponse](restartdeviceresponse.md)
+- [object RestartDeviceResponse](./restartdeviceresponse.md)
   A response from the device after it processes the command to remotely and immediately restart a device.
 
 ## Endpoint
@@ -79,15 +80,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `RestartDeviceCommand`
+
 The request object the server returns for the Restart Device Command.
+
+## Responses
+
+- `200` OK (`RestartDeviceResponse`, `application/xml`): The response object the system returns for the Restart Device Command.
 
 ## See Also
 
-- [Erase Device](erase-device-command.md)
+### Device state
+- [Erase Device](./erase-device-command.md)
   Remotely and immediately erase a device.
-- [Device Lock](device-lock-command.md)
+- [Device Lock](./device-lock-command.md)
   Remotely and immediately lock a device.
-- [Shut Down Device](shut-down-device-command.md)
+- [Shut Down Device](./shut-down-device-command.md)
   Remotely and immediately shut down a device.
 
 

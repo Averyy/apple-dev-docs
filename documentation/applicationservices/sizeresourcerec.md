@@ -1,7 +1,8 @@
 # SizeResourceRec
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,15 +13,21 @@
 struct SizeResourceRec
 ```
 
+```c
+typedef struct SizeResourceRec {
+    ...
+} SizeResourceRec;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](sizeresourcerec/1460792-init.md)
-- [init(flags: UInt16, preferredHeapSize: UInt32, minimumHeapSize: UInt32)](sizeresourcerec/1458780-init.md)
+- [init()](./sizeresourcerec/api-1460792-init.md)
+- [init(flags: UInt16, preferredHeapSize: UInt32, minimumHeapSize: UInt32)](./sizeresourcerec/api-1458780-init.md)
 ### Instance Properties
-- [var flags: UInt16](sizeresourcerec/1463163-flags.md)
-- [var minimumHeapSize: UInt32](sizeresourcerec/1462207-minimumheapsize.md)
-- [var preferredHeapSize: UInt32](sizeresourcerec/1460058-preferredheapsize.md)
+- [var flags: UInt16](./sizeresourcerec/api-1463163-flags.md)
+- [var minimumHeapSize: UInt32](./sizeresourcerec/api-1462207-minimumheapsize.md)
+- [var preferredHeapSize: UInt32](./sizeresourcerec/api-1460058-preferredheapsize.md)
 
 
 ---

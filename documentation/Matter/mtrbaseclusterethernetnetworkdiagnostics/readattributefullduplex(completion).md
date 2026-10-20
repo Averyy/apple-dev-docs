@@ -1,7 +1,8 @@
 # readAttributeFullDuplex(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeFullDuplex(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeFullDuplex() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeFullDuplexWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

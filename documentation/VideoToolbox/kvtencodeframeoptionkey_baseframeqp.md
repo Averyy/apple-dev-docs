@@ -1,7 +1,8 @@
 # kVTEncodeFrameOptionKey_BaseFrameQP
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 15.0+
@@ -17,9 +18,14 @@
 let kVTEncodeFrameOptionKey_BaseFrameQP: CFString
 ```
 
+```c
+extern CFStringRef const kVTEncodeFrameOptionKey_BaseFrameQP;
+```
+
 ## See Also
 
-- [let kVTEncodeFrameOptionKey_ForceKeyFrame: CFString](kvtencodeframeoptionkey_forcekeyframe.md)
+### Per-Frame Configuration
+- [let kVTEncodeFrameOptionKey_ForceKeyFrame: CFString](./kvtencodeframeoptionkey_forcekeyframe.md)
   Boolean value indicating whether the current frame is forced to be a key frame.
 
 

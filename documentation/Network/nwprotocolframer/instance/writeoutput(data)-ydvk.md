@@ -1,7 +1,8 @@
 # writeOutput(data:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends arbitrary output data from your protocol to the next protocol.
 
@@ -22,11 +23,12 @@ final func writeOutput(data: Data)
 
 ## See Also
 
-- [func parseOutput(minimumIncompleteLength: Int, maximumLength: Int, parse: (UnsafeMutableRawBufferPointer?, Bool) -> Int) -> Bool](nwprotocolframer/instance/parseoutput(minimumincompletelength:maximumlength:parse:).md)
+### Writing Output
+- [func parseOutput(minimumIncompleteLength: Int, maximumLength: Int, parse: (UnsafeMutableRawBufferPointer?, Bool) -> Int) -> Bool](./parseoutput%28minimumincompletelength,maximumlength,parse%29.md)
   Examines the content of output data while inside your output handler.
-- [func writeOutputNoCopy(length: Int) throws](nwprotocolframer/instance/writeoutputnocopy(length:).md)
+- [func writeOutputNoCopy(length: Int) throws](./writeoutputnocopy%28length%29.md)
   Sends a specific number of bytes from a message while inside your output handler.
-- [func passThroughOutput()](nwprotocolframer/instance/passthroughoutput.md)
+- [func passThroughOutput()](./passthroughoutput%28%29.md)
   Indicates that your protocol no longer needs to handle output data.
 
 

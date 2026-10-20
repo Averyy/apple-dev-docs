@@ -1,7 +1,8 @@
 # CBPeripheralManagerDelegate
 
 **Framework**: Core Bluetooth  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides updates for local peripheral state and interactions with remote central devices.
 
@@ -20,63 +21,68 @@ A protocol that provides updates for local peripheral state and interactions wit
 protocol CBPeripheralManagerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CBPeripheralManagerDelegate <NSObject>
+```
+
 #### Overview
 
-The delegate of a [`CBPeripheralManager`](cbperipheralmanager.md) object must adopt the [`CBPeripheralManagerDelegate`](cbperipheralmanagerdelegate.md) protocol, which consists of numerous optional methods and one required method. The delegate uses the protocol’s optional methods to verify publishing and advertising, and to monitor read, write, and subscription requests from remote central devices.
+The delegate of a [`CBPeripheralManager`](./cbperipheralmanager.md) object must adopt the [`CBPeripheralManagerDelegate`](./cbperipheralmanagerdelegate.md) protocol, which consists of numerous optional methods and one required method. The delegate uses the protocol’s optional methods to verify publishing and advertising, and to monitor read, write, and subscription requests from remote central devices.
 
-The protocol’s required one method, [`peripheralManagerDidUpdateState(_:)`](cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_:).md), which Core Bluetooth calls whenever the peripheral manager’s state updates to indicate whether the peripheral manager is available.
+The protocol’s required one method, [`peripheralManagerDidUpdateState(_:)`](./cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate%28_%29.md), which Core Bluetooth calls whenever the peripheral manager’s state updates to indicate whether the peripheral manager is available.
 
 ## Topics
 
 ### Monitoring Changes to the Peripheral Manager’s State
-- [func peripheralManagerDidUpdateState(CBPeripheralManager)](cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_:).md)
+- [func peripheralManagerDidUpdateState(CBPeripheralManager)](./cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate%28_%29.md)
   Tells the delegate the peripheral manager’s state updated.
-- [func peripheralManager(CBPeripheralManager, willRestoreState: [String : Any])](cbperipheralmanagerdelegate/peripheralmanager(_:willrestorestate:).md)
+- [func peripheralManager(CBPeripheralManager, willRestoreState: [String : Any])](./cbperipheralmanagerdelegate/peripheralmanager%28_,willrestorestate%29.md)
   Tells the delegate the system is about to restore the peripheral manager.
-- [Peripheral Manager State Restoration Options](peripheral-manager-state-restoration-options.md)
+- [Peripheral Manager State Restoration Options](./peripheral-manager-state-restoration-options.md)
   Keys used to specify options when restoring the state of a peripheral manager.
 ### Adding Services
-- [func peripheralManager(CBPeripheralManager, didAdd: CBService, error: (any Error)?)](cbperipheralmanagerdelegate/peripheralmanager(_:didadd:error:).md)
+- [func peripheralManager(CBPeripheralManager, didAdd: CBService, error: (any Error)?)](./cbperipheralmanagerdelegate/peripheralmanager%28_,didadd,error%29.md)
   Tells the delegate the peripheral manager published a service to the local GATT database.
 ### Advertising Peripheral Data
-- [func peripheralManagerDidStartAdvertising(CBPeripheralManager, error: (any Error)?)](cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising(_:error:).md)
+- [func peripheralManagerDidStartAdvertising(CBPeripheralManager, error: (any Error)?)](./cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising%28_,error%29.md)
   Tells the delegate the peripheral manager started advertising the local peripheral device’s data.
 ### Monitoring Subscriptions to Characteristic Values
-- [func peripheralManager(CBPeripheralManager, central: CBCentral, didSubscribeTo: CBCharacteristic)](cbperipheralmanagerdelegate/peripheralmanager(_:central:didsubscribeto:).md)
+- [func peripheralManager(CBPeripheralManager, central: CBCentral, didSubscribeTo: CBCharacteristic)](./cbperipheralmanagerdelegate/peripheralmanager%28_,central,didsubscribeto%29.md)
   Tells the delegate that a remote central device subscribed to a characteristic’s value.
-- [func peripheralManager(CBPeripheralManager, central: CBCentral, didUnsubscribeFrom: CBCharacteristic)](cbperipheralmanagerdelegate/peripheralmanager(_:central:didunsubscribefrom:).md)
+- [func peripheralManager(CBPeripheralManager, central: CBCentral, didUnsubscribeFrom: CBCharacteristic)](./cbperipheralmanagerdelegate/peripheralmanager%28_,central,didunsubscribefrom%29.md)
   Tells the delegate that a remote central device unsubscribed from a characteristic’s value.
-- [func peripheralManagerIsReady(toUpdateSubscribers: CBPeripheralManager)](cbperipheralmanagerdelegate/peripheralmanagerisready(toupdatesubscribers:).md)
+- [func peripheralManagerIsReady(toUpdateSubscribers: CBPeripheralManager)](./cbperipheralmanagerdelegate/peripheralmanagerisready%28toupdatesubscribers%29.md)
   Tells the delegate that a local peripheral device is ready to send characteristic value updates.
 ### Receiving Read and Write Requests
-- [func peripheralManager(CBPeripheralManager, didReceiveRead: CBATTRequest)](cbperipheralmanagerdelegate/peripheralmanager(_:didreceiveread:).md)
+- [func peripheralManager(CBPeripheralManager, didReceiveRead: CBATTRequest)](./cbperipheralmanagerdelegate/peripheralmanager%28_,didreceiveread%29.md)
   Tells the delegate that a local peripheral received an Attribute Protocol (ATT) read request for a characteristic with a dynamic value.
-- [func peripheralManager(CBPeripheralManager, didReceiveWrite: [CBATTRequest])](cbperipheralmanagerdelegate/peripheralmanager(_:didreceivewrite:).md)
+- [func peripheralManager(CBPeripheralManager, didReceiveWrite: [CBATTRequest])](./cbperipheralmanagerdelegate/peripheralmanager%28_,didreceivewrite%29.md)
   Tells the delegate that a local peripheral device received an Attribute Protocol (ATT) write request for a characteristic with a dynamic value.
 ### Using L2CAP Channels
-- [func peripheralManager(CBPeripheralManager, didPublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](cbperipheralmanagerdelegate/peripheralmanager(_:didpublishl2capchannel:error:).md)
+- [func peripheralManager(CBPeripheralManager, didPublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](./cbperipheralmanagerdelegate/peripheralmanager%28_,didpublishl2capchannel,error%29.md)
   Tells the delegate that the peripheral manager created a listener for incoming L2CAP channel connections.
-- [func peripheralManager(CBPeripheralManager, didUnpublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](cbperipheralmanagerdelegate/peripheralmanager(_:didunpublishl2capchannel:error:).md)
+- [func peripheralManager(CBPeripheralManager, didUnpublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](./cbperipheralmanagerdelegate/peripheralmanager%28_,didunpublishl2capchannel,error%29.md)
   Tells the delegate that the peripheral manager removed a published service from the local system.
-- [func peripheralManager(CBPeripheralManager, didOpen: CBL2CAPChannel?, error: (any Error)?)](cbperipheralmanagerdelegate/peripheralmanager(_:didopen:error:).md)
+- [func peripheralManager(CBPeripheralManager, didOpen: CBL2CAPChannel?, error: (any Error)?)](./cbperipheralmanagerdelegate/peripheralmanager%28_,didopen,error%29.md)
   Tells the delegate that the peripheral manager opened an L2CAP channel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBPeripheral](cbperipheral.md)
+### Peripherals
+- [class CBPeripheral](./cbperipheral.md)
   A remote peripheral device.
-- [protocol CBPeripheralDelegate](cbperipheraldelegate.md)
+- [protocol CBPeripheralDelegate](./cbperipheraldelegate.md)
   A protocol that provides updates on the use of a peripheral’s services.
-- [class CBPeripheralManager](cbperipheralmanager.md)
+- [class CBPeripheralManager](./cbperipheralmanager.md)
   An object that manages and advertises peripheral services exposed by this app.
-- [class CBAttribute](cbattribute.md)
+- [class CBAttribute](./cbattribute.md)
   A representation of common aspects of services offered by a peripheral.
-- [struct CBAttributePermissions](cbattributepermissions.md)
+- [struct CBAttributePermissions](./cbattributepermissions.md)
   Values that represent the read, write, and encryption permissions for a characteristic’s value.
 
 

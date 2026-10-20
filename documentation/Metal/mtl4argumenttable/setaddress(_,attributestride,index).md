@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Binds a GPU address to a buffer binding slot, providing a dynamic vertex stride.
@@ -20,15 +21,19 @@ Binds a GPU address to a buffer binding slot, providing a dynamic vertex stride.
 func setAddress(_ gpuAddress: MTLGPUAddress, attributeStride stride: Int, index bindingIndex: Int)
 ```
 
+```objc
+- (void) setAddress:(MTLGPUAddress) gpuAddress attributeStride:(NSUInteger) stride atIndex:(NSUInteger) bindingIndex;
+```
+
 #### Discussion
 
-This method requires that the value of property [`supportAttributeStrides`](mtl4argumenttabledescriptor/supportattributestrides.md) on the descriptor from which you created this argument table is true.
+This method requires that the value of property [`supportAttributeStrides`](../mtl4argumenttabledescriptor/supportattributestrides.md) on the descriptor from which you created this argument table is true.
 
 ## Parameters
 
-- `gpuAddress`: The GPU address of a [`MTLBuffer`](mtlbuffer.md) to set.
+- `gpuAddress`: The GPU address of a [`MTLBuffer`](../mtlbuffer.md) to set.
 - `stride`: The stride between attributes in the buffer.
-- `bindingIndex`: A valid binding index in the buffer binding range. It is an error for this value to match or exceed the value of property [`maxBufferBindCount`](mtl4argumenttabledescriptor/maxbufferbindcount.md) on the descriptor from which you created this argument table.
+- `bindingIndex`: A valid binding index in the buffer binding range. It is an error for this value to match or exceed the value of property [`maxBufferBindCount`](../mtl4argumenttabledescriptor/maxbufferbindcount.md) on the descriptor from which you created this argument table.
 
 
 ---

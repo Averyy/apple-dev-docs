@@ -1,15 +1,20 @@
 # accessKey
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var accessKey: String! { get set }
+```
+
+```objc
+@property (copy) NSString * accessKey;
 ```
 
 

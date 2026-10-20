@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enable hiding the search field in response to scrolling.
 
@@ -19,7 +20,8 @@ static let automatic: SearchFieldPlacement.NavigationBarDrawerDisplayMode
 
 ## See Also
 
-- [static let always: SearchFieldPlacement.NavigationBarDrawerDisplayMode](searchfieldplacement/navigationbardrawerdisplaymode/always.md)
+### Getting display modes
+- [static let always: SearchFieldPlacement.NavigationBarDrawerDisplayMode](./always.md)
   Always display the search field regardless of the scroll activity.
 
 

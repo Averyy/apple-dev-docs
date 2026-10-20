@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates the connection.
 
@@ -20,29 +21,34 @@ Activates the connection.
 func activate()
 ```
 
+```objc
+- (void) activate;
+```
+
 #### Discussion
 
-Connections start in an inactive state. You must call [`activate()`](nsxpcconnection/activate().md) on a connection before it can send or receive any messages.
+Connections start in an inactive state. You must call [`activate()`](./activate%28%29.md) on a connection before it can send or receive any messages.
 
-Calling [`activate()`](nsxpcconnection/activate().md) on an active connection has no effect.
+Calling [`activate()`](./activate%28%29.md) on an active connection has no effect.
 
-For backward compatibility reasons, calling [`resume()`](nsxpcconnection/resume().md) on an inactive and otherwise not suspended [`NSXPCConnection`](nsxpcconnection.md) has the same effect as calling [`activate()`](nsxpcconnection/activate().md). For new code, prefer [`activate()`](nsxpcconnection/activate().md).
+For backward compatibility reasons, calling [`resume()`](./resume%28%29.md) on an inactive and otherwise not suspended [`NSXPCConnection`](../nsxpcconnection.md) has the same effect as calling [`activate()`](./activate%28%29.md). For new code, prefer [`activate()`](./activate%28%29.md).
 
 ## See Also
 
-- [func resume()](nsxpcconnection/resume.md)
+### Managing connection state
+- [func resume()](./resume%28%29.md)
   Starts or resumes handling of messages on a connection.
-- [func invalidate()](nsxpcconnection/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates the connection.
-- [func suspend()](nsxpcconnection/suspend.md)
+- [func suspend()](./suspend%28%29.md)
   Suspends the connection.
-- [var interruptionHandler: (() -> Void)?](nsxpcconnection/interruptionhandler.md)
+- [var interruptionHandler: (() -> Void)?](./interruptionhandler.md)
   An interruption handler that is called if the remote process exits or crashes.
-- [var invalidationHandler: (() -> Void)?](nsxpcconnection/invalidationhandler.md)
+- [var invalidationHandler: (() -> Void)?](./invalidationhandler.md)
   An invalidation handler that is called if the connection can not be formed or the connection has terminated and may not be re-established.
-- [class func current() -> NSXPCConnection?](nsxpcconnection/current.md)
+- [class func current() -> NSXPCConnection?](./current%28%29.md)
   Returns the current connection, in the context of a call to a method on your exported object.
-- [func scheduleSendBarrierBlock(() -> Void)](nsxpcconnection/schedulesendbarrierblock(_:).md)
+- [func scheduleSendBarrierBlock(() -> Void)](./schedulesendbarrierblock%28_%29.md)
   Add a barrier block to execute on the connection.
 
 

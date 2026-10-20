@@ -1,7 +1,8 @@
 # controlPointBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 References a buffer containing curve control points.
 
@@ -19,11 +20,15 @@ References a buffer containing curve control points.
 var controlPointBuffer: MTL4BufferRange { get set }
 ```
 
+```objc
+@property (nonatomic) MTL4BufferRange controlPointBuffer;
+```
+
 #### Discussion
 
-Control points are interpolated according to the basis function you specify in [`curveBasis`](mtl4accelerationstructurecurvegeometrydescriptor/curvebasis.md).
+Control points are interpolated according to the basis function you specify in [`curveBasis`](./curvebasis.md).
 
-You are responsible for ensuring each control is in a format matching the control point format [`controlPointFormat`](mtl4accelerationstructurecurvegeometrydescriptor/controlpointformat.md) specifies, as well as ensuring that the buffer address of the range is not zero.
+You are responsible for ensuring each control is in a format matching the control point format [`controlPointFormat`](./controlpointformat.md) specifies, as well as ensuring that the buffer address of the range is not zero.
 
 
 ---

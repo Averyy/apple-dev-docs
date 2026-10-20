@@ -1,7 +1,8 @@
 # pendingCallActions(of:withCall:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all call actions in any pending transactions of the specified class for the specified call identifier that are incomplete.
 
@@ -18,18 +19,23 @@ Returns all call actions in any pending transactions of the specified class for 
 func pendingCallActions(of callActionClass: AnyClass, withCall callUUID: UUID) -> [CXCallAction]
 ```
 
+```objc
+- (NSArray<__kindof CXCallAction *> *) pendingCallActionsOfClass:(Class) callActionClass withCallUUID:(NSUUID *) callUUID;
+```
+
 #### Return Value
 
 An array of call actions of the specified class for the specified call identifier.
 
 ## Parameters
 
-- `callActionClass`: The desired [`CXCallAction`](cxcallaction.md) subclass of returned actions.
+- `callActionClass`: The desired [`CXCallAction`](../cxcallaction.md) subclass of returned actions.
 - `callUUID`: The desired call identifier for returned actions.
 
 ## See Also
 
-- [var pendingTransactions: [CXTransaction]](cxprovider/pendingtransactions.md)
+### Accessing Pending Transaction and Call Actions
+- [var pendingTransactions: [CXTransaction]](./pendingtransactions.md)
   Incomplete transactions.
 
 

@@ -1,7 +1,8 @@
 # AppStoreReviewDetailCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,23 +11,23 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewDetailCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreReviewDetailCreateRequest.Data.Attributes](appstorereviewdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppStoreReviewDetailCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
-- [object AppStoreReviewDetailCreateRequest.Data.Relationships](appstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppStoreReviewDetailCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `attributes` (AppStoreReviewDetailCreateRequest.Data.Attributes)
 - `relationships` (AppStoreReviewDetailCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreReviewDetails`
 
 
 ---

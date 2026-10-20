@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance initialized to the given value.
@@ -24,6 +25,11 @@ init(unicodeScalarLiteral value: Self.UnicodeScalarLiteralType)
 ## Parameters
 
 - `value`: The value of the new instance.
+
+## Default Implementations
+
+### ExpressibleByUnicodeScalarLiteral Implementations
+- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](./init%28unicodescalarliteral%29-9khmq.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # result
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of the history request determined by the persistent history result type.
 
@@ -20,11 +21,16 @@ The result of the history request determined by the persistent history result ty
 var result: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id result;
+```
+
 ## See Also
 
-- [var resultType: NSPersistentHistoryResultType](nspersistenthistoryresult/resulttype.md)
+### Inspecting History Results
+- [var resultType: NSPersistentHistoryResultType](./resulttype.md)
   The type of result that the persistent history change request returns.
-- [enum NSPersistentHistoryResultType](nspersistenthistoryresulttype.md)
+- [enum NSPersistentHistoryResultType](../nspersistenthistoryresulttype.md)
   The types of results from a persistent history change request.
 
 

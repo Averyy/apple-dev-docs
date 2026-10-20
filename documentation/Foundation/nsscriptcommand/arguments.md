@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the arguments of the command to `args`.
 
@@ -15,13 +16,18 @@ Sets the arguments of the command to `args`.
 var arguments: [String : Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDictionary<NSString *,id> * arguments;
+```
+
 #### Discussion
 
 Each argument in the dictionary is identified by the same name key used for the argument in the command’s class declaration in the script suite file.
 
 ## See Also
 
-- [var evaluatedArguments: [String : Any]?](nsscriptcommand/evaluatedarguments.md)
+### Accessing arguments
+- [var evaluatedArguments: [String : Any]?](./evaluatedarguments.md)
   Returns a dictionary containing the arguments of the command, evaluated from object specifiers to objects if necessary. The keys in the dictionary are the argument names.
 
 

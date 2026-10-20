@@ -1,7 +1,8 @@
 # init(paymentSummaryItems:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a payment request update with the specified payment summary items.
 
@@ -17,6 +18,10 @@ Creates a payment request update with the specified payment summary items.
 
 ```swift
 init(paymentSummaryItems: [PKPaymentSummaryItem])
+```
+
+```objc
+- (instancetype) initWithPaymentSummaryItems:(NSArray<PKPaymentSummaryItem *> *) paymentSummaryItems;
 ```
 
 ## Parameters

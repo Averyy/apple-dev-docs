@@ -1,7 +1,8 @@
 # GameCenterChallengeImageCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center challenge image.
 
@@ -10,23 +11,23 @@ The request body you use to create a Game Center challenge image.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeImageCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeImageCreateRequest.Data.Attributes](gamecenterchallengeimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterChallengeImageCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a challenge image resource.
-- [object GameCenterChallengeImageCreateRequest.Data.Relationships](gamecenterchallengeimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterChallengeImageCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (GameCenterChallengeImageCreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterChallengeImageCreateRequest.Data.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallengeImages`
 
 
 ---

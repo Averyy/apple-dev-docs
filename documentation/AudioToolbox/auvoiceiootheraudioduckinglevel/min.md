@@ -1,17 +1,18 @@
 # AUVoiceIOOtherAudioDuckingLevel.min
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The minimum ducking level of other non-voice audio.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The minimum ducking level of other non-voice audio.
 case min
 ```
 
+```c
+kAUVoiceIOOtherAudioDuckingLevelMin
+```
+
 ## See Also
 
-- [AUVoiceIOOtherAudioDuckingLevel.default](auvoiceiootheraudioduckinglevel/default.md)
+### Identifying the audio ducking levels
+- [AUVoiceIOOtherAudioDuckingLevel.default](./default.md)
   The default ducking level of other non-voice audio in a typical voice chat.
-- [AUVoiceIOOtherAudioDuckingLevel.mid](auvoiceiootheraudioduckinglevel/mid.md)
+- [AUVoiceIOOtherAudioDuckingLevel.mid](./mid.md)
   A medium ducking level of other non-voice audio.
-- [AUVoiceIOOtherAudioDuckingLevel.max](auvoiceiootheraudioduckinglevel/max.md)
+- [AUVoiceIOOtherAudioDuckingLevel.max](./max.md)
   The maximum ducking level of other non-voice audio.
 
 

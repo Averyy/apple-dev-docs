@@ -1,7 +1,8 @@
 # stringRepresentation
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representation of the version.
 
@@ -18,17 +19,22 @@ A string representation of the version.
 var stringRepresentation: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * stringRepresentation;
+```
+
 #### Discussion
 
 The string representation uses the following format: `<major>.<minor>.<patch>`.
 
 ## See Also
 
-- [var majorVersion: Int](hkfhirversion/majorversion.md)
+### Accessing Version Data
+- [var majorVersion: Int](./majorversion.md)
   The standard’s major version number.
-- [var minorVersion: Int](hkfhirversion/minorversion.md)
+- [var minorVersion: Int](./minorversion.md)
   The standard’s minor version number.
-- [var patchVersion: Int](hkfhirversion/patchversion.md)
+- [var patchVersion: Int](./patchversion.md)
   The standard’s patch version number.
 
 

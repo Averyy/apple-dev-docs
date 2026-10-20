@@ -1,23 +1,25 @@
 # OSBacktrace
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 unsigned int OSBacktrace(void **bt, unsigned int maxAddrs);
 ```
 
 ## See Also
 
-- [backtrace](1644760-backtrace.md)
-- [backtrace_user](2202280-backtrace_user.md)
-- [OSReportWithBacktrace](1593374-osreportwithbacktrace.md)
-- [OSPrintBacktrace](1593373-osprintbacktrace.md)
+### Backtrace
+- [backtrace](./api-1644760-backtrace.md)
+- [backtrace_user](./api-2202280-backtrace_user.md)
+- [OSReportWithBacktrace](./api-1593374-osreportwithbacktrace.md)
+- [OSPrintBacktrace](./api-1593373-osprintbacktrace.md)
 
 
 ---

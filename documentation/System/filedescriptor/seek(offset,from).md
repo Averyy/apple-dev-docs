@@ -1,7 +1,8 @@
 # seek(offset:from:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Repositions the offset for the given file descriptor.
 
@@ -36,7 +37,8 @@ The corresponding C function is `lseek`.
 
 ## See Also
 
-- [FileDescriptor.SeekOrigin](filedescriptor/seekorigin.md)
+### Changing a File’s Offset
+- [FileDescriptor.SeekOrigin](./seekorigin.md)
   Options for specifying what a file descriptor’s offset is relative to.
 
 

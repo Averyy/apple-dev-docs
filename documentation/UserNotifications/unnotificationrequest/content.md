@@ -1,7 +1,8 @@
 # content
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content associated with the notification.
 
@@ -21,15 +22,28 @@ The content associated with the notification.
 var content: UNNotificationContent { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) UNNotificationContent * content;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) UNNotificationContent * content;
+```
+
 #### Discussion
 
 Use this property to access the contents of the notification.
 
 ## See Also
 
-- [var identifier: String](unnotificationrequest/identifier.md)
+### Getting the Request Details
+- [var identifier: String](./identifier.md)
   The unique identifier for this notification request.
-- [var trigger: UNNotificationTrigger?](unnotificationrequest/trigger.md)
+- [var trigger: UNNotificationTrigger?](./trigger.md)
   The conditions that trigger the delivery of the notification.
 
 

@@ -1,7 +1,8 @@
 # CFLocaleCopyCommonISOCurrencyCodes()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of strings that represents ISO currency codes for currencies in common use.
 
@@ -20,17 +21,22 @@ Returns an array of strings that represents ISO currency codes for currencies in
 func CFLocaleCopyCommonISOCurrencyCodes() -> CFArray!
 ```
 
+```c
+extern CFArrayRefCFLocaleCopyCommonISOCurrencyCodes();
+```
+
 #### Return Value
 
-An array of CFString objects that represents ISO currency codes for currencies in common use. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+An array of CFString objects that represents ISO currency codes for currencies in common use. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 
-- [func CFLocaleCopyISOCountryCodes() -> CFArray!](cflocalecopyisocountrycodes().md)
+### Getting ISO Information
+- [func CFLocaleCopyISOCountryCodes() -> CFArray!](./cflocalecopyisocountrycodes%28%29.md)
   Returns an array of CFString objects that represents all known legal ISO country codes.
-- [func CFLocaleCopyISOLanguageCodes() -> CFArray!](cflocalecopyisolanguagecodes().md)
+- [func CFLocaleCopyISOLanguageCodes() -> CFArray!](./cflocalecopyisolanguagecodes%28%29.md)
   Returns an array of CFString objects that represents all known legal ISO language codes.
-- [func CFLocaleCopyISOCurrencyCodes() -> CFArray!](cflocalecopyisocurrencycodes().md)
+- [func CFLocaleCopyISOCurrencyCodes() -> CFArray!](./cflocalecopyisocurrencycodes%28%29.md)
   Returns an array of CFString objects that represents all known legal ISO currency codes.
 
 

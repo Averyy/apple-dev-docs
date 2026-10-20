@@ -1,7 +1,8 @@
 # AssistantSchemas.WhiteboardEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe data for whiteboard functionality.
 
@@ -23,18 +24,18 @@ protocol WhiteboardEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var board: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/board.md)
+- [var board: some AssistantSchemas.Entity](./whiteboardentity/board.md)
   The app entity describes a whiteboard canvas.
-- [var item: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/item.md)
+- [var item: some AssistantSchemas.Entity](./whiteboardentity/item.md)
   The app entity describes an item on a whiteboard canvas.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

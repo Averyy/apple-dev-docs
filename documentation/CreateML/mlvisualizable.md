@@ -1,7 +1,8 @@
 # MLVisualizable
 
 **Framework**: Create ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An image visualization of machine learning types.
 
@@ -17,19 +18,20 @@ protocol MLVisualizable : CustomPlaygroundDisplayConvertible
 ## Topics
 
 ### Seeing the visualization
-- [var cgImage: CGImage?](mlvisualizable/cgimage.md)
+- [var cgImage: CGImage?](./mlvisualizable/cgimage.md)
   The visualization for a machine learning type as an image.
 
 ## Relationships
 
 ### Inherits From
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
 ### Inherited By
-- [MLStreamingVisualizable](mlstreamingvisualizable.md)
+- [MLStreamingVisualizable](./mlstreamingvisualizable.md)
 
 ## See Also
 
-- [protocol MLStreamingVisualizable](mlstreamingvisualizable.md)
+### Visualization protocols
+- [protocol MLStreamingVisualizable](./mlstreamingvisualizable.md)
   A sequence of image visualizations for machine learning types.
 
 

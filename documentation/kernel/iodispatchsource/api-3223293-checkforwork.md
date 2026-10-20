@@ -1,14 +1,15 @@
 # CheckForWork
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CheckForWork(bool synchronous, OSDispatchMethod supermethod);
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
@@ -28,6 +29,12 @@ If you are adding a known number of elements to a collection, use this method to
 ## Parameters
 
 - `n`: The requested number of elements to store.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [func reserveCapacity(Int)](./reservecapacity%28_%29-1ewcj.md)
+  Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
 
 
 ---

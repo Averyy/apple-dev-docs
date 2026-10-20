@@ -1,7 +1,8 @@
 # AVCaptureDevice.WhiteBalanceChromaticityValues
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines CIE 1931 xy chromaticity values.
 
@@ -17,38 +18,43 @@ A structure that defines CIE 1931 xy chromaticity values.
 struct WhiteBalanceChromaticityValues
 ```
 
+```c
+typedef struct { ... } AVCaptureWhiteBalanceChromaticityValues;
+```
+
 ## Topics
 
 ### Creating chromaticity values
-- [init()](avcapturedevice/whitebalancechromaticityvalues/init.md)
+- [init()](./whitebalancechromaticityvalues/init%28%29.md)
   Creates a structure for white balance chromaticity values.
-- [init(x: Float, y: Float)](avcapturedevice/whitebalancechromaticityvalues/init(x:y:).md)
+- [init(x: Float, y: Float)](./whitebalancechromaticityvalues/init%28x,y%29.md)
   Creates a structure for white balance chromaticity values from its x and y coordinates.
 ### Inspecting the values
-- [var x: Float](avcapturedevice/whitebalancechromaticityvalues/x.md)
+- [var x: Float](./whitebalancechromaticityvalues/x.md)
   The x component of the CIE 1931 chromaticity value.
-- [var y: Float](avcapturedevice/whitebalancechromaticityvalues/y.md)
+- [var y: Float](./whitebalancechromaticityvalues/y.md)
   The y component of the CIE 1931 chromaticity value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [func chromaticityValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceChromaticityValues](avcapturedevice/chromaticityvalues(for:).md)
+### Performing conversions
+- [func chromaticityValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceChromaticityValues](./chromaticityvalues%28for%29.md)
   Converts device-specific white balance RGB gain values to device-independent chromaticity values.
-- [func temperatureAndTintValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/temperatureandtintvalues(for:).md)
+- [func temperatureAndTintValues(for: AVCaptureDevice.WhiteBalanceGains) -> AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./temperatureandtintvalues%28for%29.md)
   Converts device-specific white balance RGB gain values to device-independent temperature and tint values.
-- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceChromaticityValues) -> AVCaptureDevice.WhiteBalanceGains](avcapturedevice/devicewhitebalancegains(for:)-9gdtw.md)
+- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceChromaticityValues) -> AVCaptureDevice.WhiteBalanceGains](./devicewhitebalancegains%28for%29-9gdtw.md)
   Converts device-independent chromaticity values to device-specific white balance RGB gain values.
-- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues) -> AVCaptureDevice.WhiteBalanceGains](avcapturedevice/devicewhitebalancegains(for:)-3wtsa.md)
+- [func deviceWhiteBalanceGains(for: AVCaptureDevice.WhiteBalanceTemperatureAndTintValues) -> AVCaptureDevice.WhiteBalanceGains](./devicewhitebalancegains%28for%29-3wtsa.md)
   Converts device-independent temperature and tint values to device-specific white balance RGB gain values.
-- [AVCaptureDevice.WhiteBalanceGains](avcapturedevice/whitebalancegains.md)
+- [AVCaptureDevice.WhiteBalanceGains](./whitebalancegains.md)
   A structure that defines RGB white balance gain values.
-- [AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](avcapturedevice/whitebalancetemperatureandtintvalues.md)
+- [AVCaptureDevice.WhiteBalanceTemperatureAndTintValues](./whitebalancetemperatureandtintvalues.md)
   A structure that defines temperature and tint values correlated to a white-balance color.
 
 

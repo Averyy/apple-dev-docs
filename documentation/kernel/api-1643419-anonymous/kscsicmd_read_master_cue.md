@@ -1,7 +1,8 @@
 # kSCSICmd_READ_MASTER_CUE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_READ_MASTER_CUE = 0x59
 ```
 

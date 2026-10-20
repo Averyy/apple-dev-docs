@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var aspectRatio: Float](cibicubicscaletransform/aspectratio.md)
+### Instance Properties
+- [var aspectRatio: Float](./aspectratio.md)
   The additional horizontal scaling factor to use on the image.
-- [var parameterB: Float](cibicubicscaletransform/parameterb.md)
+- [var parameterB: Float](./parameterb.md)
   The value of B to use for the cubic resampling function.
-- [var parameterC: Float](cibicubicscaletransform/parameterc.md)
+- [var parameterC: Float](./parameterc.md)
   The value of C to use for the cubic resampling function.
-- [var scale: Float](cibicubicscaletransform/scale.md)
+- [var scale: Float](./scale.md)
   The scaling factor to use on the image.
 
 

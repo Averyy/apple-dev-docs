@@ -1,7 +1,8 @@
 # metricReports
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence that delivers daily metric reports.
 
@@ -19,11 +20,11 @@ final var metricReports: some AsyncSequence<MetricReport, Never> { get }
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-Iterate `metricReports` in a long-lived `Task` to receive [`MetricReport`](metricreport.md) values as they become available. The sequence never throws.
+Iterate `metricReports` in a long-lived `Task` to receive [`MetricReport`](../metricreport.md) values as they become available. The sequence never throws.
 
 ```swift
 Task {
@@ -35,7 +36,8 @@ Task {
 
 ## See Also
 
-- [var diagnosticReports: some AsyncSequence<DiagnosticReport, Never>](metricmanager/diagnosticreports.md)
+### Reports
+- [var diagnosticReports: some AsyncSequence<DiagnosticReport, Never>](./diagnosticreports.md)
   An asynchronous sequence that delivers diagnostic reports as individual events.
 
 

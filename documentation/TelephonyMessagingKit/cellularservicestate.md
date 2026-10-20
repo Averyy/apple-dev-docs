@@ -1,7 +1,8 @@
 # CellularServiceState
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about a cellular service.
 
@@ -16,34 +17,35 @@ struct CellularServiceState
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
 ## Topics
 
 ### Accessing state properties
-- [let id: CellularServiceID](cellularservicestate/id.md)
+- [let id: CellularServiceID](./cellularservicestate/id.md)
   The cellular service identifier associated with this instance.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](./cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [let label: String](cellularservicestate/label.md)
+- [let label: String](./cellularservicestate/label.md)
   The label for a service, as set by the person using the device.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cellularServices: [CellularServiceState]](telephonymessagingsession/cellularservices.md)
+### Determining service availability
+- [var cellularServices: [CellularServiceState]](./telephonymessagingsession/cellularservices.md)
   An array of cellular services available on the system.
-- [var cellularServiceStateUpdates: some AsyncSequence<CellularServiceState, Never>](telephonymessagingsession/cellularservicestateupdates.md)
+- [var cellularServiceStateUpdates: some AsyncSequence<CellularServiceState, Never>](./telephonymessagingsession/cellularservicestateupdates.md)
   An asynchronous sequence of cellular service state updates produced by this session.
 
 

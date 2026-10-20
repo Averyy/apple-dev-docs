@@ -1,14 +1,15 @@
 # kHIDUsage_Sprt_7Iron
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Sprt_7Iron = 0x57
 ```
 

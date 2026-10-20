@@ -1,19 +1,20 @@
 # GetAddress
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the address of the memory block.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint64_t GetAddress();
 ```
 
@@ -23,9 +24,10 @@ The address of the first byte of the memory block in the current process.
 
 ## See Also
 
-- [GetLength](iomemorymap/getlength.md)
+### Getting the Map Attributes
+- [GetLength](./getlength.md)
   Returns the length of the memory block in bytes.
-- [GetOffset](iomemorymap/getoffset.md)
+- [GetOffset](./getoffset.md)
   Returns the offset from the original start of the memory block.
 
 

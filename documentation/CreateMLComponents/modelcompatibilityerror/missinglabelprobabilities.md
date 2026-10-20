@@ -1,7 +1,8 @@
 # ModelCompatibilityError.missingLabelProbabilities
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the label probabilities output is missing from the model.
 
@@ -22,27 +23,28 @@ case missingLabelProbabilities
 
 ## See Also
 
-- [ModelCompatibilityError.incompatibleInputCount(expected:actual:)](modelcompatibilityerror/incompatibleinputcount(expected:actual:).md)
+### Analyzing the error
+- [ModelCompatibilityError.incompatibleInputCount(expected:actual:)](./incompatibleinputcount%28expected,actual%29.md)
   An error that indicates that the number of model inputs is wrong.
-- [case incompatibleInputDataFormat(expected: MLFeatureType, actual: MLFeatureType)](modelcompatibilityerror/incompatibleinputdataformat(expected:actual:).md)
+- [case incompatibleInputDataFormat(expected: MLFeatureType, actual: MLFeatureType)](./incompatibleinputdataformat%28expected,actual%29.md)
   An error that indicates that the input data has the wrong format.
-- [ModelCompatibilityError.incompatibleInputMultiArrayDataType(_:)](modelcompatibilityerror/incompatibleinputmultiarraydatatype(_:).md)
+- [ModelCompatibilityError.incompatibleInputMultiArrayDataType(_:)](./incompatibleinputmultiarraydatatype%28_%29.md)
   An error that indicates that the input multi array has the wrong value type.
-- [ModelCompatibilityError.incompatibleLabelType](modelcompatibilityerror/incompatiblelabeltype.md)
+- [ModelCompatibilityError.incompatibleLabelType](./incompatiblelabeltype.md)
   An error that indicates that the label has the wrong type.
-- [ModelCompatibilityError.incompatibleMetadataKey(name:)](modelcompatibilityerror/incompatiblemetadatakey(name:).md)
+- [ModelCompatibilityError.incompatibleMetadataKey(name:)](./incompatiblemetadatakey%28name%29.md)
   An error that indicates that the metadata key has the wrong type.
-- [ModelCompatibilityError.incompatibleOutputCount(expected:actual:)](modelcompatibilityerror/incompatibleoutputcount(expected:actual:).md)
+- [ModelCompatibilityError.incompatibleOutputCount(expected:actual:)](./incompatibleoutputcount%28expected,actual%29.md)
   An error that indicates that the number of model outputs is wrong.
-- [case incompatibleOutputDataFormat(expected: MLFeatureType, actual: MLFeatureType)](modelcompatibilityerror/incompatibleoutputdataformat(expected:actual:).md)
+- [case incompatibleOutputDataFormat(expected: MLFeatureType, actual: MLFeatureType)](./incompatibleoutputdataformat%28expected,actual%29.md)
   An error that indicates that the output data has the wrong format.
-- [ModelCompatibilityError.missingInput(name:)](modelcompatibilityerror/missinginput(name:).md)
+- [ModelCompatibilityError.missingInput(name:)](./missinginput%28name%29.md)
   An error that indicates that the input is missing from the model.
-- [ModelCompatibilityError.missingLabel](modelcompatibilityerror/missinglabel.md)
+- [ModelCompatibilityError.missingLabel](./missinglabel.md)
   An error that indicates that the label output is missing from the model.
-- [ModelCompatibilityError.missingOutput(name:)](modelcompatibilityerror/missingoutput(name:).md)
+- [ModelCompatibilityError.missingOutput(name:)](./missingoutput%28name%29.md)
   An error that indicates that the output is missing from the model.
-- [ModelCompatibilityError.missingPredictedFeature](modelcompatibilityerror/missingpredictedfeature.md)
+- [ModelCompatibilityError.missingPredictedFeature](./missingpredictedfeature.md)
   An error that indicates that the regressor model output is missing.
 
 

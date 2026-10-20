@@ -1,7 +1,8 @@
 # SportingEvent.Competitor.Name
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of locale to localized names for the competitor.
 
@@ -10,7 +11,7 @@ A mapping of locale to localized names for the competitor.
 
 ## Declaration
 
-```swift
+```
 object SportingEvent.Competitor.Name
 ```
 

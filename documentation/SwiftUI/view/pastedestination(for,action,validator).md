@@ -1,7 +1,8 @@
 # pasteDestination(for:action:validator:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies an action that adds validated items to a view in response to the system’s Paste command.
 
@@ -53,19 +54,20 @@ The paste destination handles only pasted content with a type that matches the `
 
 Use the `validator` closure to restrict the pasted content to items that make sense in the context of the view. The above example allows people to paste only strings that match one of a known list of bird names because the list is meant to contain only birds. You can omit the final closure if you don’t need to perform any validation.
 
-> **Note**: To enable people to paste using a custom action — like from a context menu item — rather than using the system Paste command, access the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/appkit/nspasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/uikit/uipasteboard) instance.
+> **Note**: To enable people to paste using a custom action — like from a context menu item — rather than using the system Paste command, access the Clipboard directly using an [`NSPasteboard`](../../AppKit/nspasteboard.md) or a [`UIPasteboard`](../../UIKit/uipasteboard.md) instance.
 
 ## Parameters
 
-- `payloadType`: The type of data that the paste destination accepts. The type must conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol.
+- `payloadType`: The type of data that the paste destination accepts. The type must conform to the [`Transferable`](../../CoreTransferable/transferable.md) protocol.
 - `action`: The action to perform when someone uses the system’s Paste command to paste one or more items of the payload type. The closure takes one parameter, which is the array of items to paste.
 - `validator`: A closure that you implement to validate the data to paste. SwiftUI calls this before it calls the `action` closure, and passes in an array of items to validate. Inspect the items, and return an array that includes only those from the input array that you consider valid. The array that you return from this closure becomes the input to the `action` closure. If you return an empty array, SwiftUI doesn’t call the `action` closure.
 
 ## See Also
 
-- [func copyable<T>(@autoclosure () -> [T]) -> some View](view/copyable(_:).md)
+### Copying transferable items
+- [func copyable<T>(@autoclosure () -> [T]) -> some View](./copyable%28_%29.md)
   Specifies a list of items to copy in response to the system’s Copy command.
-- [func cuttable<T>(for: T.Type, action: () -> [T]) -> some View](view/cuttable(for:action:).md)
+- [func cuttable<T>(for: T.Type, action: () -> [T]) -> some View](./cuttable%28for,action%29.md)
   Specifies an action that moves items to the Clipboard in response to the system’s Cut command.
 
 

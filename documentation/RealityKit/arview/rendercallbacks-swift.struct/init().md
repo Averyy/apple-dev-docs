@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new object.
 
@@ -20,7 +21,7 @@ init()
 
 #### Discussion
 
-When you create a new [`ARView`](arview.md), it automatically creates an [`ARView.RenderCallbacks`](arview/rendercallbacks-swift.struct.md) object and assigns it to the [`renderCallbacks`](arview/rendercallbacks-swift.property.md) property. Your code won’t usually need to create [`ARView.RenderCallbacks`](arview/rendercallbacks-swift.struct.md) objects.
+When you create a new [`ARView`](../../arview.md), it automatically creates an [`ARView.RenderCallbacks`](../rendercallbacks-swift.struct.md) object and assigns it to the [`renderCallbacks`](../rendercallbacks-swift.property.md) property. Your code won’t usually need to create [`ARView.RenderCallbacks`](../rendercallbacks-swift.struct.md) objects.
 
 
 ---

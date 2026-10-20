@@ -1,7 +1,8 @@
 # init(uuidString:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a UUID from a string representation.
 
@@ -30,9 +31,10 @@ Returns `nil` if the string isn’t a valid UUID representation.
 
 ## See Also
 
-- [init()](uuid/init.md)
+### Creating UUIDs
+- [init()](./init%28%29.md)
   Creates a UUID with RFC 4122 version 4 random bytes.
-- [init(uuid: uuid_t)](uuid/init(uuid:).md)
+- [init(uuid: uuid_t)](./init%28uuid%29.md)
   Creates a UUID from the uuid C-language structure.
 
 

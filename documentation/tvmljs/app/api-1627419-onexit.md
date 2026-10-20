@@ -1,7 +1,8 @@
 # onExit
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A callback function that is automatically called when the app has been exited.
 
@@ -10,7 +11,7 @@ A callback function that is automatically called when the app has been exited.
 
 ## Declaration
 
-```swift
+```
 attribute function onExit;
 ```
 
@@ -22,13 +23,14 @@ Use the `onExit` attribute to complete any actions that need to be cleaned up (f
 
 ## See Also
 
-- [onError](app/1627353-onerror.md)
+### Responding to App Life Cycle Events
+- [onError](./api-1627353-onerror.md)
   A callback function that is automatically called when an error is sent from the Apple TV.
-- [onLaunch](app/1627407-onlaunch.md)
+- [onLaunch](./api-1627407-onlaunch.md)
   A callback function that is automatically called when the app has been launched.
-- [onResume](app/1627415-onresume.md)
+- [onResume](./api-1627415-onresume.md)
   A callback function that is automatically called when the app moves to the foreground.
-- [onSuspend](app/1627431-onsuspend.md)
+- [onSuspend](./api-1627431-onsuspend.md)
   A callback function that is automatically called when the app is sent to the background.
 
 

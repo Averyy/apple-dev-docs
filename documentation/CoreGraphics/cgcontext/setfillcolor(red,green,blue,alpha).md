@@ -1,7 +1,8 @@
 # setFillColor(red:green:blue:alpha:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current fill color to a value in the DeviceRGB color space.
 
@@ -10,7 +11,7 @@ Sets the current fill color to a value in the DeviceRGB color space.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sets the current fill color to a value in the DeviceRGB color space.
 
 ```swift
 func setFillColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+```
+
+```c
+extern void CGContextSetRGBFillColor(CGContextRef c, CGFloat red, CGFloat green, CGFloat blue, CGFloat alpha);
 ```
 
 #### Discussion
@@ -36,35 +41,36 @@ When you call this function, two things happen:
 
 ## See Also
 
-- [func setFillColor(CGColor)](cgcontext/setfillcolor(_:)-8lhn8.md)
+### Setting Fill, Stroke, and Shadow Colors
+- [func setFillColor(CGColor)](./setfillcolor%28_%29-8lhn8.md)
   Sets the current fill color in a graphics context, using a CGColor.
-- [func setFillColor(UnsafePointer<CGFloat>)](cgcontext/setfillcolor(_:)-756dy.md)
+- [func setFillColor(UnsafePointer<CGFloat>)](./setfillcolor%28_%29-756dy.md)
   Sets the current fill color.
-- [func setFillColor(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat)](cgcontext/setfillcolor(cyan:magenta:yellow:black:alpha:).md)
+- [func setFillColor(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat)](./setfillcolor%28cyan,magenta,yellow,black,alpha%29.md)
   Sets the current fill color to a value in the DeviceCMYK color space.
-- [func setFillColor(gray: CGFloat, alpha: CGFloat)](cgcontext/setfillcolor(gray:alpha:).md)
+- [func setFillColor(gray: CGFloat, alpha: CGFloat)](./setfillcolor%28gray,alpha%29.md)
   Sets the current fill color to a value in the DeviceGray color space.
-- [func setFillColorSpace(CGColorSpace)](cgcontext/setfillcolorspace(_:).md)
+- [func setFillColorSpace(CGColorSpace)](./setfillcolorspace%28_%29.md)
   Sets the fill color space in a graphics context.
-- [func setShadow(offset: CGSize, blur: CGFloat)](cgcontext/setshadow(offset:blur:).md)
+- [func setShadow(offset: CGSize, blur: CGFloat)](./setshadow%28offset,blur%29.md)
   Enables shadowing in a graphics context.
-- [func setShadow(offset: CGSize, blur: CGFloat, color: CGColor?)](cgcontext/setshadow(offset:blur:color:).md)
+- [func setShadow(offset: CGSize, blur: CGFloat, color: CGColor?)](./setshadow%28offset,blur,color%29.md)
   Enables shadowing with color a graphics context.
-- [func setStrokeColor(CGColor)](cgcontext/setstrokecolor(_:)-1sskg.md)
+- [func setStrokeColor(CGColor)](./setstrokecolor%28_%29-1sskg.md)
   Sets the current stroke color in a context, using a CGColor.
-- [func setStrokeColor(UnsafePointer<CGFloat>)](cgcontext/setstrokecolor(_:)-4pd8p.md)
+- [func setStrokeColor(UnsafePointer<CGFloat>)](./setstrokecolor%28_%29-4pd8p.md)
   Sets the current stroke color.
-- [func setStrokeColor(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat)](cgcontext/setstrokecolor(cyan:magenta:yellow:black:alpha:).md)
+- [func setStrokeColor(cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat)](./setstrokecolor%28cyan,magenta,yellow,black,alpha%29.md)
   Sets the current stroke color to a value in the DeviceCMYK color space.
-- [func setStrokeColor(gray: CGFloat, alpha: CGFloat)](cgcontext/setstrokecolor(gray:alpha:).md)
+- [func setStrokeColor(gray: CGFloat, alpha: CGFloat)](./setstrokecolor%28gray,alpha%29.md)
   Sets the current stroke color to a value in the DeviceGray color space.
-- [func setStrokeColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cgcontext/setstrokecolor(red:green:blue:alpha:).md)
+- [func setStrokeColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./setstrokecolor%28red,green,blue,alpha%29.md)
   Sets the current stroke color to a value in the DeviceRGB color space.
-- [func setStrokeColorSpace(CGColorSpace)](cgcontext/setstrokecolorspace(_:).md)
+- [func setStrokeColorSpace(CGColorSpace)](./setstrokecolorspace%28_%29.md)
   Sets the stroke color space in a graphics context.
-- [func setStrokePattern(CGPattern, colorComponents: UnsafePointer<CGFloat>)](cgcontext/setstrokepattern(_:colorcomponents:).md)
+- [func setStrokePattern(CGPattern, colorComponents: UnsafePointer<CGFloat>)](./setstrokepattern%28_,colorcomponents%29.md)
   Sets the stroke pattern in the specified graphics context.
-- [func setAlpha(CGFloat)](cgcontext/setalpha(_:).md)
+- [func setAlpha(CGFloat)](./setalpha%28_%29.md)
   Sets the opacity level for objects drawn in a graphics context.
 
 

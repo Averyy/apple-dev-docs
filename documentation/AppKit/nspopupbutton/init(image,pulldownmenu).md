@@ -1,7 +1,8 @@
 # init(image:pullDownMenu:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a standard pull-down button with a title, optional image, and menu.
 

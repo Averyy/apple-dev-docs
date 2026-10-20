@@ -1,7 +1,8 @@
 # channelIdentifier
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel identifier for the request.
 
@@ -9,7 +10,7 @@ The channel identifier for the request.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -17,6 +18,10 @@ The channel identifier for the request.
 
 ```swift
 var channelIdentifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * channelIdentifier;
 ```
 
 #### Discussion
@@ -27,13 +32,14 @@ This property identifies the app that is making the request. If you distribute m
 
 ## See Also
 
-- [var attributeNames: [String]](vsaccountmetadatarequest/attributenames.md)
+### Requesting App-Level Authentication
+- [var attributeNames: [String]](./attributenames.md)
   The SAML attributes that your app sends to the account provider.
-- [var supportedAccountProviderIdentifiers: [String]](vsaccountmetadatarequest/supportedaccountprovideridentifiers.md)
+- [var supportedAccountProviderIdentifiers: [String]](./supportedaccountprovideridentifiers.md)
   A list of identifiers for TV providers that your app supports.
-- [var supportedAuthenticationSchemes: [VSAccountProviderAuthenticationScheme]](vsaccountmetadatarequest/supportedauthenticationschemes.md)
+- [var supportedAuthenticationSchemes: [VSAccountProviderAuthenticationScheme]](./supportedauthenticationschemes.md)
   A collection of authentication schemes your app supports for this request.
-- [var verificationToken: String?](vsaccountmetadatarequest/verificationtoken.md)
+- [var verificationToken: String?](./verificationtoken.md)
   A token that your app sends to an account provider to identify itself.
 
 

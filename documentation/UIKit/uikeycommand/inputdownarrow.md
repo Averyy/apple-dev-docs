@@ -1,7 +1,8 @@
 # inputDownArrow
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string representing the Down Arrow key.
 
@@ -9,7 +10,7 @@ A string representing the Down Arrow key.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ nonisolated
 class let inputDownArrow: String
 ```
 
+```c
+extern NSString * const UIKeyInputDownArrow;
+```
+
 ## See Also
 
-- [class let inputUpArrow: String](uikeycommand/inputuparrow.md)
+### Navigation keys
+- [class let inputUpArrow: String](./inputuparrow.md)
   A string representing the Up Arrow key.
-- [class let inputLeftArrow: String](uikeycommand/inputleftarrow.md)
+- [class let inputLeftArrow: String](./inputleftarrow.md)
   A string representing the Left Arrow key.
-- [class let inputRightArrow: String](uikeycommand/inputrightarrow.md)
+- [class let inputRightArrow: String](./inputrightarrow.md)
   A string representing the Right Arrow key.
-- [class let inputHome: String](uikeycommand/inputhome.md)
+- [class let inputHome: String](./inputhome.md)
   A string representing the Home key.
-- [class let inputEnd: String](uikeycommand/inputend.md)
+- [class let inputEnd: String](./inputend.md)
   A string representing the End key.
-- [class let inputPageUp: String](uikeycommand/inputpageup.md)
+- [class let inputPageUp: String](./inputpageup.md)
   A string representing the Page Up key.
-- [class let inputPageDown: String](uikeycommand/inputpagedown.md)
+- [class let inputPageDown: String](./inputpagedown.md)
   A string representing the Page Down key.
 
 

@@ -1,7 +1,8 @@
 # consuming(_:startingAt:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 

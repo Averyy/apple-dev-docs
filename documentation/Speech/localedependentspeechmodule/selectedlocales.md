@@ -2,6 +2,7 @@
 
 **Framework**: Speech  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The set of asset locales specified by the module’s configuration.

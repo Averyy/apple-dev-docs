@@ -1,7 +1,8 @@
 # baseUnitValue(fromValue:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For a given unit, returns the specified value of that unit in terms of the base unit of its dimension.
 
@@ -20,6 +21,10 @@ For a given unit, returns the specified value of that unit in terms of the base 
 func baseUnitValue(fromValue value: Double) -> Double
 ```
 
+```objc
+- (double) baseUnitValueFromValue:(double) value;
+```
+
 #### Return Value
 
 The value in terms of the base unit.
@@ -34,7 +39,8 @@ This method takes a value in a particular unit and returns the result of convert
 
 ## See Also
 
-- [func value(fromBaseUnitValue: Double) -> Double](unitconverter/value(frombaseunitvalue:).md)
+### Converting Between Units
+- [func value(fromBaseUnitValue: Double) -> Double](./value%28frombaseunitvalue%29.md)
   For a given unit, returns the specified value of the base unit in terms of that unit.
 
 

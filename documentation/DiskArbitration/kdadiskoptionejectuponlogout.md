@@ -1,6 +1,7 @@
 # kDADiskOptionEjectUponLogout
 
-**Framework**: Disk Arbitration
+**Framework**: Disk Arbitration  
+**Role**: Article
 
 #### Overview
 
@@ -8,9 +9,10 @@ Deprecated. Use DADiskEject() at logout instead.
 
 ## See Also
 
-- [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
-- [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
-- [kDADiskOptionPrivate](kdadiskoptionprivate.md)
+### Constants
+- [kDADiskOptionMountAutomatic](./kdadiskoptionmountautomatic.md)
+- [kDADiskOptionMountAutomaticNoDefer](./kdadiskoptionmountautomaticnodefer.md)
+- [kDADiskOptionPrivate](./kdadiskoptionprivate.md)
 
 
 ---

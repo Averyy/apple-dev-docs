@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array that describes the vertex input attributes to a vertex function.
@@ -11,7 +12,7 @@ An array that describes the vertex input attributes to a vertex function.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,14 @@ An array that describes the vertex input attributes to a vertex function.
 var vertexAttributes: [MTLVertexAttribute]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray<MTLVertexAttribute *> * vertexAttributes;
+```
+
 ## See Also
 
-- [var stageInputAttributes: [MTLAttribute]?](mtlfunction/stageinputattributes.md)
+### Retrieving function attributes
+- [var stageInputAttributes: [MTLAttribute]?](./stageinputattributes.md)
   An array that describes the input attributes to the function.
 
 

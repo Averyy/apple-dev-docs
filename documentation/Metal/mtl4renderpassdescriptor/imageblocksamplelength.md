@@ -1,7 +1,8 @@
 # imageblockSampleLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the per-sample size, in bytes, of the largest explicit imageblock layout in the render pass.
 
@@ -17,6 +18,10 @@ Assigns the per-sample size, in bytes, of the largest explicit imageblock layout
 
 ```swift
 var imageblockSampleLength: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger imageblockSampleLength;
 ```
 
 

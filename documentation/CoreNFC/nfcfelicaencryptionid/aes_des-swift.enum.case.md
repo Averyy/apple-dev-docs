@@ -1,7 +1,8 @@
 # NFCFeliCaEncryptionId.AES_DES
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case AES_DES
+```
+
+```c
+NFCFeliCaEncryptionIdAES_DES
 ```
 
 

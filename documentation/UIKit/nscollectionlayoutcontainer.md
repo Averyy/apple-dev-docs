@@ -1,7 +1,8 @@
 # NSCollectionLayoutContainer
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol used to provide information about the size and content insets of a layout’s container.
 
@@ -19,37 +20,42 @@ A protocol used to provide information about the size and content insets of a la
 protocol NSCollectionLayoutContainer : NSObjectProtocol
 ```
 
+```objc
+@protocol NSCollectionLayoutContainer <NSObject>
+```
+
 #### Overview
 
-In a section provider, you use the [`container`](nscollectionlayoutenvironment/container.md) property of the layout environment ([`NSCollectionLayoutEnvironment`](nscollectionlayoutenvironment.md)) to get information about the container of the layout, such as its size and content insets. Knowing about the container’s size while rendering the layout’s sections helps you make decisions about how to display the layout.
+In a section provider, you use the [`container`](./nscollectionlayoutenvironment/container.md) property of the layout environment ([`NSCollectionLayoutEnvironment`](./nscollectionlayoutenvironment.md)) to get information about the container of the layout, such as its size and content insets. Knowing about the container’s size while rendering the layout’s sections helps you make decisions about how to display the layout.
 
 ## Topics
 
 ### Getting content size
-- [var contentSize: CGSize](nscollectionlayoutcontainer/contentsize.md)
+- [var contentSize: CGSize](./nscollectionlayoutcontainer/contentsize.md)
   The size of the container before content insets are applied.
-- [var effectiveContentSize: CGSize](nscollectionlayoutcontainer/effectivecontentsize.md)
+- [var effectiveContentSize: CGSize](./nscollectionlayoutcontainer/effectivecontentsize.md)
   The size of the container after content insets are applied.
 ### Getting content insets
-- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutcontainer/contentinsets.md)
+- [var contentInsets: NSDirectionalEdgeInsets](./nscollectionlayoutcontainer/contentinsets.md)
   The amount of space added around the content of the container to adjust its final size.
-- [var effectiveContentInsets: NSDirectionalEdgeInsets](nscollectionlayoutcontainer/effectivecontentinsets.md)
+- [var effectiveContentInsets: NSDirectionalEdgeInsets](./nscollectionlayoutcontainer/effectivecontentinsets.md)
   The amount of space added around the content of the container to adjust its final size after item content insets are applied.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSCollectionLayoutDimension](nscollectionlayoutdimension.md)
+### Size and spacing
+- [class NSCollectionLayoutDimension](./nscollectionlayoutdimension.md)
   An individual dimension representing an item’s width or height in a collection view.
-- [class NSCollectionLayoutSize](nscollectionlayoutsize.md)
+- [class NSCollectionLayoutSize](./nscollectionlayoutsize.md)
   The width and the height of an item in a collection view.
-- [class NSCollectionLayoutSpacing](nscollectionlayoutspacing.md)
+- [class NSCollectionLayoutSpacing](./nscollectionlayoutspacing.md)
   An object that defines the space between or around items in a collection view.
-- [class NSCollectionLayoutEdgeSpacing](nscollectionlayoutedgespacing.md)
+- [class NSCollectionLayoutEdgeSpacing](./nscollectionlayoutedgespacing.md)
   An object that defines the space around the edges of items in a collection view.
 
 

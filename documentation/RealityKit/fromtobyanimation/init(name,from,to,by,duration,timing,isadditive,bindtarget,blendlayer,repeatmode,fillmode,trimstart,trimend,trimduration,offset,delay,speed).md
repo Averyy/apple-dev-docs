@@ -1,7 +1,8 @@
 # init(name:from:to:by:duration:timing:isAdditive:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation that interpolates between two values for a property of the target entity.
 
@@ -11,7 +12,7 @@ Creates an animation that interpolates between two values for a property of the 
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -41,7 +42,8 @@ init(name: String = "", from: Value? = nil, to: Value? = nil, by: Value? = nil, 
 
 ## See Also
 
-- [init(jointNames: [String], name: String, isScaleAnimated: Bool, isRotationAnimated: Bool, isTranslationAnimated: Bool, from: Value?, to: Value?, by: Value?, duration: TimeInterval, timing: AnimationTimingFunction, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](fromtobyanimation/init(jointnames:name:isscaleanimated:isrotationanimated:istranslationanimated:from:to:by:duration:timing:isadditive:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
+### Creating an animation
+- [init(jointNames: [String], name: String, isScaleAnimated: Bool, isRotationAnimated: Bool, isTranslationAnimated: Bool, from: Value?, to: Value?, by: Value?, duration: TimeInterval, timing: AnimationTimingFunction, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](./init%28jointnames,name,isscaleanimated,isrotationanimated,istranslationanimated,from,to,by,duration,timing,isadditive,bindtarget,blendlayer,repeatmode,fillmode,trimstart,trimend,trimduration,offset,delay,speed%29.md)
   Creates an animation that interpolates between two configurations of the given joints.
 
 

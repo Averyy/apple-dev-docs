@@ -1,7 +1,8 @@
 # AVPlayerItemRenderedLegibleOutputPushDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate that handles the rendered pixel buffers produced by a rendered legible output object.
 
@@ -17,27 +18,32 @@ A delegate that handles the rendered pixel buffers produced by a rendered legibl
 protocol AVPlayerItemRenderedLegibleOutputPushDelegate : AVPlayerItemOutputPushDelegate
 ```
 
+```objc
+@protocol AVPlayerItemRenderedLegibleOutputPushDelegate <AVPlayerItemOutputPushDelegate>
+```
+
 ## Topics
 
 ### Handling rendered pixel buffers
-- [func renderedLegibleOutput(AVPlayerItemRenderedLegibleOutput, didOutputRenderedCaptionImages: [AVRenderedCaptionImage], forItemTime: CMTime)](avplayeritemrenderedlegibleoutputpushdelegate/renderedlegibleoutput(_:didoutputrenderedcaptionimages:foritemtime:).md)
+- [func renderedLegibleOutput(AVPlayerItemRenderedLegibleOutput, didOutputRenderedCaptionImages: [AVRenderedCaptionImage], forItemTime: CMTime)](./avplayeritemrenderedlegibleoutputpushdelegate/renderedlegibleoutput%28_,didoutputrenderedcaptionimages,foritemtime%29.md)
   Tells the delegate that new rendered caption images are available.
 
 ## Relationships
 
 ### Inherits From
-- [AVPlayerItemOutputPushDelegate](avplayeritemoutputpushdelegate.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AVPlayerItemOutputPushDelegate](./avplayeritemoutputpushdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var delegate: (any AVPlayerItemRenderedLegibleOutputPushDelegate)?](avplayeritemrenderedlegibleoutput/delegate.md)
+### Setting a delegate
+- [var delegate: (any AVPlayerItemRenderedLegibleOutputPushDelegate)?](./avplayeritemrenderedlegibleoutput/delegate.md)
   A delegate object for this output.
-- [func setDelegate((any AVPlayerItemRenderedLegibleOutputPushDelegate)?, queue: dispatch_queue_t?)](avplayeritemrenderedlegibleoutput/setdelegate(_:queue:).md)
+- [func setDelegate((any AVPlayerItemRenderedLegibleOutputPushDelegate)?, queue: dispatch_queue_t?)](./avplayeritemrenderedlegibleoutput/setdelegate%28_,queue%29.md)
   Sets the delegate object and the queue on which it’s invoked.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemrenderedlegibleoutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./avplayeritemrenderedlegibleoutput/delegatequeue.md)
   The dispatch queue on which the output calls the delegate object.
 
 

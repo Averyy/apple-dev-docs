@@ -1,7 +1,8 @@
 # GKError.Code.gameSessionRequestInvalid
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The properties of the game session request are impossible to fulfill.
 
@@ -20,27 +21,32 @@ The properties of the game session request are impossible to fulfill.
 case gameSessionRequestInvalid
 ```
 
+```c
+GKErrorGameSessionRequestInvalid
+```
+
 #### Discussion
 
 For example, the maximum number of requested players is greater than the maximum number of allowed players.
 
 ## See Also
 
-- [GKError.Code.unknown](gkerror/code/unknown.md)
+### Communication Errors
+- [GKError.Code.unknown](./unknown.md)
   The system can’t complete the requested operation due to an unknown error.
-- [GKError.Code.cancelled](gkerror/code/cancelled.md)
+- [GKError.Code.cancelled](./cancelled.md)
   The system canceled the requested operation or the user disabled it.
-- [GKError.Code.communicationsFailure](gkerror/code/communicationsfailure.md)
+- [GKError.Code.communicationsFailure](./communicationsfailure.md)
   The system can’t complete the requested operation due to an error communicating with the server.
-- [GKError.Code.invalidPlayer](gkerror/code/invalidplayer.md)
+- [GKError.Code.invalidPlayer](./invalidplayer.md)
   The system can’t complete the requested operation because the player is invalid.
-- [GKError.Code.invalidParameter](gkerror/code/invalidparameter.md)
+- [GKError.Code.invalidParameter](./invalidparameter.md)
   The system can’t complete the requested operation because one or more parameters are invalid.
-- [GKError.Code.apiNotAvailable](gkerror/code/apinotavailable.md)
+- [GKError.Code.apiNotAvailable](./apinotavailable.md)
   The system can’t complete the requested operation because the API isn’t available.
-- [GKError.Code.connectionTimeout](gkerror/code/connectiontimeout.md)
+- [GKError.Code.connectionTimeout](./connectiontimeout.md)
   The system can’t complete the requested operation because the connection timed out.
-- [GKError.Code.apiObsolete](gkerror/code/apiobsolete.md)
+- [GKError.Code.apiObsolete](./apiobsolete.md)
   The system can’t complete the requested operation because Apple deprecated the API.
 
 

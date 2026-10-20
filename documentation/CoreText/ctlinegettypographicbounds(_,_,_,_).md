@@ -1,7 +1,8 @@
 # CTLineGetTypographicBounds(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the typographic bounds of a line.
 
@@ -20,6 +21,10 @@ Calculates the typographic bounds of a line.
 func CTLineGetTypographicBounds(_ line: CTLine, _ ascent: UnsafeMutablePointer<CGFloat>?, _ descent: UnsafeMutablePointer<CGFloat>?, _ leading: UnsafeMutablePointer<CGFloat>?) -> Double
 ```
 
+```c
+extern double CTLineGetTypographicBounds(CTLineRef line, CGFloat *ascent, CGFloat *descent, CGFloat *leading);
+```
+
 #### Return Value
 
 The typographic width of the line. If the line is invalid, this function returns `0`.
@@ -33,9 +38,10 @@ The typographic width of the line. If the line is invalid, this function returns
 
 ## See Also
 
-- [func CTLineGetImageBounds(CTLine, CGContext?) -> CGRect](ctlinegetimagebounds(_:_:).md)
+### Measuring Lines
+- [func CTLineGetImageBounds(CTLine, CGContext?) -> CGRect](./ctlinegetimagebounds%28_,_%29.md)
   Calculates the image bounds for a line.
-- [func CTLineGetTrailingWhitespaceWidth(CTLine) -> Double](ctlinegettrailingwhitespacewidth(_:).md)
+- [func CTLineGetTrailingWhitespaceWidth(CTLine) -> Double](./ctlinegettrailingwhitespacewidth%28_%29.md)
   Returns the trailing whitespace width for a line.
 
 

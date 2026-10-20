@@ -1,7 +1,8 @@
 # encodeStream(writingTo:selectUsing:flags:threadCount:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens an encode output archive stream.
 
@@ -11,7 +12,7 @@ Opens an encode output archive stream.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -33,7 +34,8 @@ A new archive stream.
 
 ## See Also
 
-- [static func withEncodeStream<E>(writingTo: ArchiveByteStream, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int, (ArchiveStream) throws -> E) throws -> E](archivestream/withencodestream(writingto:selectusing:flags:threadcount:_:).md)
+### Encoding Data
+- [static func withEncodeStream<E>(writingTo: ArchiveByteStream, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int, (ArchiveStream) throws -> E) throws -> E](./withencodestream%28writingto,selectusing,flags,threadcount,_%29.md)
   Calls the given closure with an encode output archive stream.
 
 

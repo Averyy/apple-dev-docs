@@ -1,7 +1,8 @@
 # init(image:hotSpot:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a cursor with the given image and hot spot.
 
@@ -13,8 +14,28 @@ Initializes a cursor with the given image and hot spot.
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+init(image newImage: UIImage, hotSpot point: NSPoint)
+```
+
+*macOS*
+
 ```swift
 init(image newImage: NSImage, hotSpot point: NSPoint)
+```
+
+*Mac Catalyst*
+
+```objc
+- (instancetype) initWithImage:(UIImage *) newImage hotSpot:(NSPoint) point;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithImage:(NSImage *) newImage hotSpot:(NSPoint) point;
 ```
 
 #### Return Value
@@ -32,12 +53,14 @@ This method is the designated initializer for the class.
 
 ## See Also
 
-- [var image: UIImage](nscursor/image.md)
+### Related Documentation
+- [var image: UIImage](./image.md)
   The cursor’s image.
-- [Cursor Management](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CursorMgmt/CursorMgmt.html#//apple_ref/doc/uid/10000066i)
-- [var hotSpot: NSPoint](nscursor/hotspot.md)
+- [Cursor Management](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CursorMgmt/CursorMgmt.html#//apple_ref/doc/uid/10000066i)
+- [var hotSpot: NSPoint](./hotspot.md)
   The position of the click location within the cursor.
-- [init(coder: NSCoder)](nscursor/init(coder:).md)
+### Initializing a new cursor
+- [init(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

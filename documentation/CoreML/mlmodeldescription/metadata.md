@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of the model’s creation information, such as its description, author, version, and license.
 
@@ -20,15 +21,20 @@ A dictionary of the model’s creation information, such as its description, aut
 var metadata: [MLModelMetadataKey : Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * metadata;
+```
+
 #### Discussion
 
-Use the keys defined by [`MLModelMetadataKey`](mlmodelmetadatakey.md) to retrieve the dictionary’s entries.
+Use the keys defined by [`MLModelMetadataKey`](../mlmodelmetadatakey.md) to retrieve the dictionary’s entries.
 
 ## See Also
 
-- [var classLabels: [Any]?](mlmodeldescription/classlabels.md)
+### Accessing metadata
+- [var classLabels: [Any]?](./classlabels.md)
   An array of labels, which can be either strings or a numbers, for classifier models.
-- [struct MLModelMetadataKey](mlmodelmetadatakey.md)
+- [struct MLModelMetadataKey](../mlmodelmetadatakey.md)
   The set of keys the model uses to store values in its metadata dictionary.
 
 

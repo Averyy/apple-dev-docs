@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that owns this component.
 
@@ -19,15 +20,20 @@ The entity that owns this component.
 weak var entity: GKEntity? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) GKEntity * entity;
+```
+
 #### Discussion
 
-Use this property in a component subclass to refer back to the owning entity and its attributes. An entity may be an instance either of the [`GKEntity`](gkentity.md) class or of a custom subclass. In the latter case, a custom entity class can provide storage for state or resources accessed by multiple components.
+Use this property in a component subclass to refer back to the owning entity and its attributes. An entity may be an instance either of the [`GKEntity`](../gkentity.md) class or of a custom subclass. In the latter case, a custom entity class can provide storage for state or resources accessed by multiple components.
 
 ## See Also
 
-- [func didAddToEntity()](gkcomponent/didaddtoentity.md)
+### Working with Entities
+- [func didAddToEntity()](./didaddtoentity%28%29.md)
   Notifies the component that it has been assigned to an entity.
-- [func willRemoveFromEntity()](gkcomponent/willremovefromentity.md)
+- [func willRemoveFromEntity()](./willremovefromentity%28%29.md)
   Notifies the component that it has been removed from an entity.
 
 

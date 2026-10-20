@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token delegate.
 
@@ -20,9 +21,14 @@ The token delegate.
 weak var delegate: (any TKTokenDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<TKTokenDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol TKTokenDelegate](tktokendelegate.md)
+### Responding to Session Creation
+- [protocol TKTokenDelegate](../tktokendelegate.md)
   The interface that a token delegate implements to respond to session creation events.
 
 

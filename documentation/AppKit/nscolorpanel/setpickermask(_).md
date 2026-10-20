@@ -1,17 +1,22 @@
 # setPickerMask(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines which color selection modes are available in an application’s `NSColorPanel`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func setPickerMask(_ mask: NSColorPanel.Options)
+```
+
+```objc
++ (void) setPickerMask:(NSColorPanelOptions) mask;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ If you create a class that implements the color-picking protocols (`NSColorPicki
 
 ## See Also
 
-- [class func setPickerMode(NSColorPanel.Mode)](nscolorpanel/setpickermode(_:).md)
+### Setting color picker modes
+- [class func setPickerMode(NSColorPanel.Mode)](./setpickermode%28_%29.md)
   Specifies the color panel’s initial picker.
-- [var mode: NSColorPanel.Mode](nscolorpanel/mode-swift.property.md)
+- [var mode: NSColorPanel.Mode](./mode-swift.property.md)
   The mode of the receiver the mode is one of the modes allowed by the color mask.
-- [NSColorPanel.Mode](nscolorpanel/mode-swift.enum.md)
+- [NSColorPanel.Mode](./mode-swift.enum.md)
   A type defined for the `enum` constants specifying color panel modes.
-- [NSColorPanel.Options](nscolorpanel/options.md)
+- [NSColorPanel.Options](./options.md)
   The color modes that are enabled for a color panel.
 
 

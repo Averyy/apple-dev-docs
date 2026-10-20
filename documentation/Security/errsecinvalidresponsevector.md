@@ -1,7 +1,8 @@
 # errSecInvalidResponseVector
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The response vector is not valid.
 
@@ -18,6 +19,10 @@ The response vector is not valid.
 
 ```swift
 var errSecInvalidResponseVector: OSStatus { get }
+```
+
+```c
+errSecInvalidResponseVector
 ```
 
 

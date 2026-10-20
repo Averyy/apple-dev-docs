@@ -1,7 +1,8 @@
 # WorldTrackingProvider.WorldAnchorSharingAvailability
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration indicating the availability of world anchor sharing.
 
@@ -17,22 +18,22 @@ enum WorldAnchorSharingAvailability
 ## Topics
 
 ### Enumeration Cases
-- [WorldTrackingProvider.WorldAnchorSharingAvailability.available](worldtrackingprovider/worldanchorsharingavailability-swift.enum/available.md)
+- [WorldTrackingProvider.WorldAnchorSharingAvailability.available](./worldanchorsharingavailability-swift.enum/available.md)
   World anchors can be shared with nearby participants. This indicates that the device is in a SharePlay session with nearby participants.
-- [WorldTrackingProvider.WorldAnchorSharingAvailability.unavailable](worldtrackingprovider/worldanchorsharingavailability-swift.enum/unavailable.md)
+- [WorldTrackingProvider.WorldAnchorSharingAvailability.unavailable](./worldanchorsharingavailability-swift.enum/unavailable.md)
   World anchors cannot be shared with nearby participants. This indicates that either there’s no SharePlay session or the session has ended.
 ### Instance Properties
-- [var description: String](worldtrackingprovider/worldanchorsharingavailability-swift.enum/description.md)
+- [var description: String](./worldanchorsharingavailability-swift.enum/description.md)
   A textual representation of this world anchor sharing availability.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

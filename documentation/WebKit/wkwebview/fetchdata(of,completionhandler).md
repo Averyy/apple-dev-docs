@@ -1,7 +1,8 @@
 # fetchData(of:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -13,13 +14,22 @@
 ## Declaration
 
 ```swift
+func fetchData(of dataTypes: WKWebViewDataType, completionHandler: @escaping @MainActor @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func fetchData(of dataTypes: WKWebViewDataType) async throws -> Data
+```
+
+```objc
+- (void) fetchDataOfTypes:(WKWebViewDataType) dataTypes completionHandler:(void (^)(NSData *, NSError *)) completionHandler;
 ```
 
 ## See Also
 
-- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
-- [struct WKWebViewDataType](wkwebviewdatatype.md)
+### Saving and restoring data
+- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](./restoredata%28_,completionhandler%29.md)
+- [struct WKWebViewDataType](../wkwebviewdatatype.md)
 
 
 ---

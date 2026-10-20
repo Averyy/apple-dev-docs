@@ -1,7 +1,8 @@
 # wiFiCredentialGenerationFailed
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 WiFi credential generation failed.
 
@@ -21,13 +22,14 @@ static var wiFiCredentialGenerationFailed: HMError.Code { get }
 
 ## See Also
 
-- [static var enterpriseNetworkNotSupported: HMError.Code](hmerror/enterprisenetworknotsupported.md)
+### Detecting network errors
+- [static var enterpriseNetworkNotSupported: HMError.Code](./enterprisenetworknotsupported.md)
   An enterprise network doesn’t support this accessory.
-- [static var failedToJoinNetwork: HMError.Code](hmerror/failedtojoinnetwork.md)
+- [static var failedToJoinNetwork: HMError.Code](./failedtojoinnetwork.md)
   The accessory failed to join the network.
-- [static var incompatibleNetwork: HMError.Code](hmerror/incompatiblenetwork.md)
+- [static var incompatibleNetwork: HMError.Code](./incompatiblenetwork.md)
   An error indicating an incompatible network.
-- [static var networkUnavailable: HMError.Code](hmerror/networkunavailable.md)
+- [static var networkUnavailable: HMError.Code](./networkunavailable.md)
   An error indicating the network is unavailable.
 
 
