@@ -39,7 +39,7 @@ Query all ad groups for a specific campaign, sorted by creation time descending.
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups/query
 
 {
@@ -121,7 +121,7 @@ Return only enabled ad groups for a specific campaign.
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups/query
 
 {
@@ -234,7 +234,7 @@ Retrieve soft-deleted ad groups for a campaign to confirm deletion or audit hist
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups/query
 
 {
@@ -292,7 +292,7 @@ POST /v1/adgroups/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

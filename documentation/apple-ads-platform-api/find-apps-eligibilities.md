@@ -69,7 +69,7 @@ Keep the following constraints in mind when checking eligibility:
 
 ##### Request
 
-```json
+```http
 POST /v1/eligibilities/apps/query
 
 {
@@ -127,7 +127,7 @@ POST /v1/eligibilities/apps/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

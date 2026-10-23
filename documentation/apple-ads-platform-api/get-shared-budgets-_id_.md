@@ -22,7 +22,7 @@ Users with organization-level permissions don’t need the `X-AP-Context` header
 Retrieves the full details of a specific budget order by its ID.
 
 ```
-GET https://api.ads.apple.com/v1/shared-budgets/777888999
+GET /v1/shared-budgets/777888999
 ```
 
 ##### Response
@@ -68,7 +68,7 @@ GET https://api.ads.apple.com/v1/shared-budgets/777888999
 
 ### Header Parameters
 
-- `X-Ap-Context` (string)
+- `X-AP-Context` (string)
 
 ## Responses
 

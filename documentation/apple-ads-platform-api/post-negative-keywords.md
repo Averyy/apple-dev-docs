@@ -45,7 +45,7 @@ Create a campaign-level negative keyword by omitting `adGroupId`. The exclusion 
 
 ##### Request
 
-```json
+```http
 POST /v1/negative-keywords
 
 {
@@ -80,7 +80,7 @@ Create an ad-group-level negative keyword by providing `adGroupId`. The exclusio
 
 ##### Request
 
-```json
+```http
 POST /v1/negative-keywords
 
 {
@@ -116,7 +116,7 @@ Create a phrase-match negative keyword for an Apple Maps ad group. Blocks querie
 
 ##### Request
 
-```json
+```http
 POST /v1/negative-keywords
 
 {
@@ -154,7 +154,7 @@ POST /v1/negative-keywords
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

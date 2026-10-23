@@ -25,7 +25,7 @@ Pause a campaign by setting `status` to `PAUSED`. Send only the fields you want 
 
 Pauses a campaign by setting `status` to `PAUSED`. The request body needs only the changed field.
 
-```json
+```http
 PUT /v1/campaigns/{id}
 
 {
@@ -84,7 +84,7 @@ Increase the daily budget by sending only the `dailyBudget` field. All other cam
 
 Updates only the `dailyBudget` field to raise the campaign’s daily spend limit to $1,200. All other campaign fields remain unchanged.
 
-```json
+```http
 PUT /v1/campaigns/{id}
 
 {
@@ -148,7 +148,7 @@ Rename a campaign by sending only the `name` field.
 
 Renames a campaign by sending only the `name` field. No other fields change.
 
-```json
+```http
 PUT /v1/campaigns/{id}
 
 {
@@ -205,7 +205,7 @@ The API returns this error when the campaign ID doesn’t exist or the campaign 
 
 ##### Request
 
-```json
+```http
 PUT /v1/campaigns/999999999
 
 {
@@ -240,7 +240,7 @@ PUT /v1/campaigns/999999999
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

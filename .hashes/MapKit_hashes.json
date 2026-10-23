@@ -146,9 +146,9 @@
       "hash": "afc33d8537d3a72ce791d4af3a8e475cc39dbd8e40e223ac2f8b7e718dc7a317"
     },
     "https://developer.apple.com/documentation/mapkit/interacting-with-nearby-points-of-interest": {
-      "etag": "\"b769-65d55e202d9b2-df\"",
+      "etag": "\"b76a-65e0266d1514a-df\"",
       "file_path": "documentation/MapKit/interacting-with-nearby-points-of-interest.md",
-      "hash": "71564490ab5c74969e0f360895835475a8a157bd5f0f05ec77eb00be239063f1"
+      "hash": "816bddae28a46d0738b752efb56ad15d65b5398110128e4be3b8fe5e171ab4a7"
     },
     "https://developer.apple.com/documentation/mapkit/launch-options-dictionary-keys": {
       "etag": "\"3fa3-6590268069777-df\"",
@@ -171,9 +171,9 @@
       "hash": "4c27e43b3274a233ad5313a4cd5dd28195f7540ec17e9e67d90bd67e4bf7b5e5"
     },
     "https://developer.apple.com/documentation/mapkit/map": {
-      "etag": "\"14537-65d55e1fe96a2-df\"",
+      "etag": "\"14540-65e70455fb5c7-df\"",
       "file_path": "documentation/MapKit/map.md",
-      "hash": "09030bea318b31113d98997b0fc246be02e1b70ae83f8d91a591a4ca5b396d4f"
+      "hash": "ba811c791e7dfbbdc5f7015b60dff092ab9796c79842dea34dd46a761b68b4e5"
     },
     "https://developer.apple.com/documentation/mapkit/map/init(bounds:interactionmodes:scope:)": {
       "etag": "\"bef2-65d55e1f3bd34-df\"",
@@ -496,9 +496,9 @@
       "hash": "546713d86e690802c9217bfac788c1e17d2b4f94b9e08a3c01599a0f72c91db3"
     },
     "https://developer.apple.com/documentation/mapkit/mapcompass": {
-      "etag": "\"43df-65d55e1f99aa2-df\"",
+      "etag": "\"43e2-65e70455acfcc-df\"",
       "file_path": "documentation/MapKit/mapcompass.md",
-      "hash": "8d87bfdee194e58951415e61b9fc95b0490573fc5b4d9430137b4fca836fdecb"
+      "hash": "81fb045f57a6f94d185e64bcb36850c675b8a2aa5ff36fd18d15d9a500230a0a"
     },
     "https://developer.apple.com/documentation/mapkit/mapcompass/init(scope:)": {
       "etag": "\"1bd1-65d55e200437b-df\"",
@@ -536,9 +536,9 @@
       "hash": "5cc614be40ed5a68ccb4c56338bd92faddf6e7a7f635e6b1ed73c44fba729838"
     },
     "https://developer.apple.com/documentation/mapkit/mapcontent/mapitemdetailselectionaccessory(_:)": {
-      "etag": "\"4efe-65d55e1e55403-df\"",
+      "etag": "\"4eff-65e0266c96f46-df\"",
       "file_path": "documentation/MapKit/mapcontent/mapitemdetailselectionaccessory(_).md",
-      "hash": "11fb17132402c09c06922d713186c78515820bcebd97bc1e938865bdd9f2b88f"
+      "hash": "66cdbe95a35f6bda4bf82130022d179ecee85733ecdb1aa9d35ec6d4d677bc7f"
     },
     "https://developer.apple.com/documentation/mapkit/mapcontent/mapoverlaylevel(level:)": {
       "etag": "\"1e27-65d55e1e55403-df\"",
@@ -621,9 +621,9 @@
       "hash": "5514a41f6016927962cb2516d7525fc4919f58214c3f60640bf7de9264d30e1b"
     },
     "https://developer.apple.com/documentation/mapkit/mapcontentview": {
-      "etag": "\"6d63-65d55e1da3530-df\"",
+      "etag": "\"6d6b-65e70452bc8e6-df\"",
       "file_path": "documentation/MapKit/mapcontentview.md",
-      "hash": "957883325977dde7e1094696c5ebc0f171316049070543c7c92edce8b222edfd"
+      "hash": "b086ef94d3138747bfa6fc82c2705d5d5b0712c120eb229f1c0554e1fcd95225"
     },
     "https://developer.apple.com/documentation/mapkit/mapfeature": {
       "etag": "\"2a8e-65d55e1f3bd34-df\"",
@@ -711,9 +711,9 @@
       "hash": "dfb9ee5e06ecdcce95b4d06c8c0451e42f392abb5780a4664936682332ce9841"
     },
     "https://developer.apple.com/documentation/mapkit/mapitemdetailselectionaccessorystyle": {
-      "etag": "\"6344-65d55e1f3bd34-df\"",
+      "etag": "\"6345-65e0266ccde1a-df\"",
       "file_path": "documentation/MapKit/mapitemdetailselectionaccessorystyle.md",
-      "hash": "9b0fc5f2eb84fbc7a2e0c8ef65a8915b2e6c36f042763dcbf0d4ea2ce90f02e2"
+      "hash": "01711ef25b3b3eff09ecf2696843fdbf2d3d14a95cd149f1ebe5df5fc485d854"
     },
     "https://developer.apple.com/documentation/mapkit/mapitemdetailselectionaccessorystyle/automatic": {
       "etag": "\"1d48-65d55e1d34986-df\"",
@@ -726,9 +726,9 @@
       "hash": "c2f80d761a06a9ce9b0ca4673a2f84cb2e7cbc2e1d102d5c85ee5531e74808c1"
     },
     "https://developer.apple.com/documentation/mapkit/mapitemdetailselectionaccessorystyle/callout(_:)": {
-      "etag": "\"4df4-65d55e1d54bdb-df\"",
+      "etag": "\"4df5-65e0266c50a4a-df\"",
       "file_path": "documentation/MapKit/mapitemdetailselectionaccessorystyle/callout(_).md",
-      "hash": "b1cbd08bbf9e841c85febb02414726890d3e60ac3ac9604e130656b90611ea3a"
+      "hash": "5aebafc8836a711676287acdb56cffcfa18498103a01197ecb859e9a1cac57a1"
     },
     "https://developer.apple.com/documentation/mapkit/mapitemdetailselectionaccessorystyle/calloutstyle": {
       "etag": "\"2093-65d55e1d34986-df\"",
@@ -771,9 +771,9 @@
       "hash": "57c7a13cb52be82af8ecbf5967c3bdf807e0c82fe17153c9ee3e5b2df11790e8"
     },
     "https://developer.apple.com/documentation/mapkit/mapkit-for-swiftui": {
-      "etag": "\"c648-65902680bd3fe-df\"",
+      "etag": "\"c649-65e0266ce92e6-df\"",
       "file_path": "documentation/MapKit/mapkit-for-swiftui.md",
-      "hash": "d24244a8d24e30f51ff0c93cd74fb7f2a3e83eec435a4650da1a6b8928b13838"
+      "hash": "3b007bb85d4fcc1550766541a3e2a96e54a58d7d203cfe3ebd75f04035303a8a"
     },
     "https://developer.apple.com/documentation/mapkit/mapkit-functions": {
       "etag": "\"2abe-6590268093d0d-df\"",
@@ -791,14 +791,14 @@
       "hash": "c85629aecba966a22c90ca8dfaae82f4dcc58d883cf68773829d5fb25520caaa"
     },
     "https://developer.apple.com/documentation/mapkit/maplocationcompass": {
-      "etag": "\"4128-65d55e1dfb953-df\"",
+      "etag": "\"412b-65e704539d97c-df\"",
       "file_path": "documentation/MapKit/maplocationcompass.md",
-      "hash": "ac75f809f894a0fad656557273995b288de545bd20e6ff5763fe74f5743b52c2"
+      "hash": "ef59e1a3797571b189c2d19a0707920d17da37dc3a3fdbaa1af2d55b35d89fb5"
     },
     "https://developer.apple.com/documentation/mapkit/maplocationcompass/init(scope:)": {
-      "etag": "\"25d9-65d55e1dfb953-df\"",
+      "etag": "\"25db-65e380d4c357f-df\"",
       "file_path": "documentation/MapKit/maplocationcompass/init(scope).md",
-      "hash": "b39f402a33862bf3befc44dc6e782fb63db94017a24b09811080737a0ef335f8"
+      "hash": "c8d461ca27c423ee57dbfb7ec21675fe83794ea0a01b62d3d32b148a19d2114c"
     },
     "https://developer.apple.com/documentation/mapkit/mapmarker": {
       "etag": "\"42d2-65d55e2021a89-df\"",
@@ -821,9 +821,9 @@
       "hash": "c04ec254a7b2d170c7db0eabb7d00099ca59b2f06ebc0887bb57d169f0f42142"
     },
     "https://developer.apple.com/documentation/mapkit/mappitchslider": {
-      "etag": "\"3ae5-65d55e1f72493-df\"",
+      "etag": "\"3ae8-65e7045594170-df\"",
       "file_path": "documentation/MapKit/mappitchslider.md",
-      "hash": "14d7c4fa0192023102dfa7f310ae5d4977d9cedd4d3de13b7eef86b617d04765"
+      "hash": "6f83798dea604883c5b612a9151ae1c94496ddbd2017ca37277fa1be7b2ad4e7"
     },
     "https://developer.apple.com/documentation/mapkit/mappitchslider/init(scope:)": {
       "etag": "\"1b3a-65d55e200437b-df\"",
@@ -831,14 +831,14 @@
       "hash": "1718e1ee8db524b448ab312f5e0c1c9a3ca19ca56f572eeba1552bb11e3af57a"
     },
     "https://developer.apple.com/documentation/mapkit/mappitchtoggle": {
-      "etag": "\"43a0-65d55e1d72db9-df\"",
+      "etag": "\"43a3-65e70452a49a5-df\"",
       "file_path": "documentation/MapKit/mappitchtoggle.md",
-      "hash": "53ab53a9cca3e5c4529b800b052fcdbd27952203af18f9957d04bd0f52c9e631"
+      "hash": "ad4241b5278a97fcef6e818e5e02078a0de2cca25282c92300c2232c49fa74f3"
     },
     "https://developer.apple.com/documentation/mapkit/mappitchtoggle/init(scope:)": {
-      "etag": "\"21c1-65d55e1d72db9-df\"",
+      "etag": "\"21c2-65d82fe11dc41-df\"",
       "file_path": "documentation/MapKit/mappitchtoggle/init(scope).md",
-      "hash": "e74af77e896d6ae09dcf5e735de083d261177fc5d0c58e4128bd46fedbae5a84"
+      "hash": "affb1956bdba7a4e7fde9927100eaf735c703cc4d1619072096376bdb8a2aa7b"
     },
     "https://developer.apple.com/documentation/mapkit/mappolygon": {
       "etag": "\"4b84-65d55e1ec67c7-df\"",
@@ -931,9 +931,9 @@
       "hash": "92753ce98ff6c37c259589112de225b7e423a22c328ea91f6f5dc6a30e3f64e4"
     },
     "https://developer.apple.com/documentation/mapkit/mapreader": {
-      "etag": "\"7758-65d55e1eaa8ac-df\"",
+      "etag": "\"7760-65e70454634ab-df\"",
       "file_path": "documentation/MapKit/mapreader.md",
-      "hash": "145491dae363a08fe2a0e897c6453e5336fc64d3cc6170657b0670d3ba62aec6"
+      "hash": "bd33fe382b680e9252120389e54d6c6ab17b2dccfbf550f2bc7c96f36261394d"
     },
     "https://developer.apple.com/documentation/mapkit/mapreader/init(content:)": {
       "etag": "\"1ca2-65d55e1f5a3e2-df\"",
@@ -941,9 +941,9 @@
       "hash": "381e3411e0ac7f5ac9ba8d05a6ae57ed87d7fd1a30a42f6b633c9c94d198046a"
     },
     "https://developer.apple.com/documentation/mapkit/mapscaleview": {
-      "etag": "\"4a7a-65d55e1e377f8-df\"",
+      "etag": "\"4a7d-65e70453ed01e-df\"",
       "file_path": "documentation/MapKit/mapscaleview.md",
-      "hash": "1edcba11443cc8c2229436b6448c2bbca3151e57631045f32325a58c01cadb4d"
+      "hash": "b3779ab5e19301c75b1fdbe9e1b6bf7e02555afd8b1924fd091f5b752fc45e2d"
     },
     "https://developer.apple.com/documentation/mapkit/mapscaleview/init(alignment:scope:)": {
       "etag": "\"2afc-65d55e1f99aa2-df\"",
@@ -951,9 +951,9 @@
       "hash": "3739de9d7993f0b1c04112569295933b00854b937aa9f486f59331e4a4385626"
     },
     "https://developer.apple.com/documentation/mapkit/mapscaleview/init(anchoredge:scope:)": {
-      "etag": "\"2af4-65d55e1f99aa2-df\"",
+      "etag": "\"2af5-65e2ab9f70a6d-df\"",
       "file_path": "documentation/MapKit/mapscaleview/init(anchoredge,scope).md",
-      "hash": "b4adcc91cfe7cf5fd458fe9476578bdba0f469c561440dbbd59356b2b55623b2"
+      "hash": "872ee95185e98611557ffbb095c7b96e30b25a0e72479416b03c61ef4f7e878e"
     },
     "https://developer.apple.com/documentation/mapkit/mapselectable": {
       "etag": "\"1c3f-65d55e1ddd74c-df\"",
@@ -1061,9 +1061,9 @@
       "hash": "a4055c252b943138a1075cc31378e67e41cb7b11503a2149bd6f4b2f6d821a5c"
     },
     "https://developer.apple.com/documentation/mapkit/mapuserlocationbutton": {
-      "etag": "\"4b27-65d55e1e74eaf-df\"",
+      "etag": "\"4b2b-65e704541d3fa-df\"",
       "file_path": "documentation/MapKit/mapuserlocationbutton.md",
-      "hash": "7a96c57065a4d15eda41dfb654c0dc7d43287351c856a116046f53bd4006f67b"
+      "hash": "35b0025a84c4d54f8f75a43ac695ff9c437e90a5c875137f46af26bb226d6e54"
     },
     "https://developer.apple.com/documentation/mapkit/mapuserlocationbutton/init(scope:)": {
       "etag": "\"1c8c-65d55e1efc47c-df\"",
@@ -1091,9 +1091,9 @@
       "hash": "78f508395015d4e5da97f7ba4baa0da9d5157f500731a027fd11c7bd80cd60ef"
     },
     "https://developer.apple.com/documentation/mapkit/mapzoomstepper": {
-      "etag": "\"4249-65d55e1ddd74c-df\"",
+      "etag": "\"424c-65e7045330247-df\"",
       "file_path": "documentation/MapKit/mapzoomstepper.md",
-      "hash": "10e2acc9e2a2ddde8ed8ff3dec879ca633d4cfd83b8f659168063230e969b13c"
+      "hash": "db2fb029f452ce3a12db1ddb6645c8273008fd6a50d80fb908be8c0d1dbb2556"
     },
     "https://developer.apple.com/documentation/mapkit/mapzoomstepper/init(scope:)": {
       "etag": "\"1ae8-65d55e1efc47c-df\"",
@@ -6325,9 +6325,9 @@
       "hash": "afc33d8537d3a72ce791d4af3a8e475cc39dbd8e40e223ac2f8b7e718dc7a317"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/interacting-with-nearby-points-of-interest.json": {
-      "etag": "\"b769-65d55e202d9b2-df\"",
+      "etag": "\"b76a-65e0266d1514a-df\"",
       "file_path": "documentation/MapKit/interacting-with-nearby-points-of-interest.md",
-      "hash": "71564490ab5c74969e0f360895835475a8a157bd5f0f05ec77eb00be239063f1"
+      "hash": "816bddae28a46d0738b752efb56ad15d65b5398110128e4be3b8fe5e171ab4a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/launch-options-dictionary-keys.json": {
       "etag": "\"3fa3-6590268069777-df\"",
@@ -6350,9 +6350,9 @@
       "hash": "4c27e43b3274a233ad5313a4cd5dd28195f7540ec17e9e67d90bd67e4bf7b5e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/map.json": {
-      "etag": "\"14537-65d55e1fe96a2-df\"",
+      "etag": "\"14540-65e70455fb5c7-df\"",
       "file_path": "documentation/MapKit/map.md",
-      "hash": "09030bea318b31113d98997b0fc246be02e1b70ae83f8d91a591a4ca5b396d4f"
+      "hash": "ba811c791e7dfbbdc5f7015b60dff092ab9796c79842dea34dd46a761b68b4e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/map/init(bounds:interactionmodes:scope:).json": {
       "etag": "\"bef2-65d55e1f3bd34-df\"",
@@ -6675,9 +6675,9 @@
       "hash": "546713d86e690802c9217bfac788c1e17d2b4f94b9e08a3c01599a0f72c91db3"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapcompass.json": {
-      "etag": "\"43df-65d55e1f99aa2-df\"",
+      "etag": "\"43e2-65e70455acfcc-df\"",
       "file_path": "documentation/MapKit/mapcompass.md",
-      "hash": "8d87bfdee194e58951415e61b9fc95b0490573fc5b4d9430137b4fca836fdecb"
+      "hash": "81fb045f57a6f94d185e64bcb36850c675b8a2aa5ff36fd18d15d9a500230a0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapcompass/init(scope:).json": {
       "etag": "\"1bd1-65d55e200437b-df\"",
@@ -6715,9 +6715,9 @@
       "hash": "5cc614be40ed5a68ccb4c56338bd92faddf6e7a7f635e6b1ed73c44fba729838"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapcontent/mapitemdetailselectionaccessory(_:).json": {
-      "etag": "\"4efe-65d55e1e55403-df\"",
+      "etag": "\"4eff-65e0266c96f46-df\"",
       "file_path": "documentation/MapKit/mapcontent/mapitemdetailselectionaccessory(_).md",
-      "hash": "11fb17132402c09c06922d713186c78515820bcebd97bc1e938865bdd9f2b88f"
+      "hash": "66cdbe95a35f6bda4bf82130022d179ecee85733ecdb1aa9d35ec6d4d677bc7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapcontent/mapoverlaylevel(level:).json": {
       "etag": "\"1e27-65d55e1e55403-df\"",
@@ -6800,9 +6800,9 @@
       "hash": "5514a41f6016927962cb2516d7525fc4919f58214c3f60640bf7de9264d30e1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapcontentview.json": {
-      "etag": "\"6d63-65d55e1da3530-df\"",
+      "etag": "\"6d6b-65e70452bc8e6-df\"",
       "file_path": "documentation/MapKit/mapcontentview.md",
-      "hash": "957883325977dde7e1094696c5ebc0f171316049070543c7c92edce8b222edfd"
+      "hash": "b086ef94d3138747bfa6fc82c2705d5d5b0712c120eb229f1c0554e1fcd95225"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapfeature.json": {
       "etag": "\"2a8e-65d55e1f3bd34-df\"",
@@ -6890,9 +6890,9 @@
       "hash": "dfb9ee5e06ecdcce95b4d06c8c0451e42f392abb5780a4664936682332ce9841"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapitemdetailselectionaccessorystyle.json": {
-      "etag": "\"6344-65d55e1f3bd34-df\"",
+      "etag": "\"6345-65e0266ccde1a-df\"",
       "file_path": "documentation/MapKit/mapitemdetailselectionaccessorystyle.md",
-      "hash": "9b0fc5f2eb84fbc7a2e0c8ef65a8915b2e6c36f042763dcbf0d4ea2ce90f02e2"
+      "hash": "01711ef25b3b3eff09ecf2696843fdbf2d3d14a95cd149f1ebe5df5fc485d854"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapitemdetailselectionaccessorystyle/automatic.json": {
       "etag": "\"1d48-65d55e1d34986-df\"",
@@ -6900,9 +6900,9 @@
       "hash": "56a032f75ec16584afb70d69101ce5ae39ebad248501e243a6f4aeca8208f429"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapitemdetailselectionaccessorystyle/callout(_:).json": {
-      "etag": "\"4df4-65d55e1d54bdb-df\"",
+      "etag": "\"4df5-65e0266c50a4a-df\"",
       "file_path": "documentation/MapKit/mapitemdetailselectionaccessorystyle/callout(_).md",
-      "hash": "b1cbd08bbf9e841c85febb02414726890d3e60ac3ac9604e130656b90611ea3a"
+      "hash": "5aebafc8836a711676287acdb56cffcfa18498103a01197ecb859e9a1cac57a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapitemdetailselectionaccessorystyle/callout.json": {
       "etag": "\"22b6-65d55e1d54bdb-df\"",
@@ -6950,9 +6950,9 @@
       "hash": "57c7a13cb52be82af8ecbf5967c3bdf807e0c82fe17153c9ee3e5b2df11790e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapkit-for-swiftui.json": {
-      "etag": "\"c648-65902680bd3fe-df\"",
+      "etag": "\"c649-65e0266ce92e6-df\"",
       "file_path": "documentation/MapKit/mapkit-for-swiftui.md",
-      "hash": "d24244a8d24e30f51ff0c93cd74fb7f2a3e83eec435a4650da1a6b8928b13838"
+      "hash": "3b007bb85d4fcc1550766541a3e2a96e54a58d7d203cfe3ebd75f04035303a8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapkit-functions.json": {
       "etag": "\"2abe-6590268093d0d-df\"",
@@ -6970,14 +6970,14 @@
       "hash": "c85629aecba966a22c90ca8dfaae82f4dcc58d883cf68773829d5fb25520caaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/maplocationcompass.json": {
-      "etag": "\"4128-65d55e1dfb953-df\"",
+      "etag": "\"412b-65e704539d97c-df\"",
       "file_path": "documentation/MapKit/maplocationcompass.md",
-      "hash": "ac75f809f894a0fad656557273995b288de545bd20e6ff5763fe74f5743b52c2"
+      "hash": "ef59e1a3797571b189c2d19a0707920d17da37dc3a3fdbaa1af2d55b35d89fb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/maplocationcompass/init(scope:).json": {
-      "etag": "\"25d9-65d55e1dfb953-df\"",
+      "etag": "\"25db-65e380d4c357f-df\"",
       "file_path": "documentation/MapKit/maplocationcompass/init(scope).md",
-      "hash": "b39f402a33862bf3befc44dc6e782fb63db94017a24b09811080737a0ef335f8"
+      "hash": "c8d461ca27c423ee57dbfb7ec21675fe83794ea0a01b62d3d32b148a19d2114c"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapmarker.json": {
       "etag": "\"42d2-65d55e2021a89-df\"",
@@ -7000,9 +7000,9 @@
       "hash": "c04ec254a7b2d170c7db0eabb7d00099ca59b2f06ebc0887bb57d169f0f42142"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mappitchslider.json": {
-      "etag": "\"3ae5-65d55e1f72493-df\"",
+      "etag": "\"3ae8-65e7045594170-df\"",
       "file_path": "documentation/MapKit/mappitchslider.md",
-      "hash": "14d7c4fa0192023102dfa7f310ae5d4977d9cedd4d3de13b7eef86b617d04765"
+      "hash": "6f83798dea604883c5b612a9151ae1c94496ddbd2017ca37277fa1be7b2ad4e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mappitchslider/init(scope:).json": {
       "etag": "\"1b3a-65d55e200437b-df\"",
@@ -7010,14 +7010,14 @@
       "hash": "1718e1ee8db524b448ab312f5e0c1c9a3ca19ca56f572eeba1552bb11e3af57a"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mappitchtoggle.json": {
-      "etag": "\"43a0-65d55e1d72db9-df\"",
+      "etag": "\"43a3-65e70452a49a5-df\"",
       "file_path": "documentation/MapKit/mappitchtoggle.md",
-      "hash": "53ab53a9cca3e5c4529b800b052fcdbd27952203af18f9957d04bd0f52c9e631"
+      "hash": "ad4241b5278a97fcef6e818e5e02078a0de2cca25282c92300c2232c49fa74f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mappitchtoggle/init(scope:).json": {
-      "etag": "\"21c1-65d55e1d72db9-df\"",
+      "etag": "\"21c2-65d82fe11dc41-df\"",
       "file_path": "documentation/MapKit/mappitchtoggle/init(scope).md",
-      "hash": "e74af77e896d6ae09dcf5e735de083d261177fc5d0c58e4128bd46fedbae5a84"
+      "hash": "affb1956bdba7a4e7fde9927100eaf735c703cc4d1619072096376bdb8a2aa7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mappolygon.json": {
       "etag": "\"4b84-65d55e1ec67c7-df\"",
@@ -7110,9 +7110,9 @@
       "hash": "92753ce98ff6c37c259589112de225b7e423a22c328ea91f6f5dc6a30e3f64e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapreader.json": {
-      "etag": "\"7758-65d55e1eaa8ac-df\"",
+      "etag": "\"7760-65e70454634ab-df\"",
       "file_path": "documentation/MapKit/mapreader.md",
-      "hash": "145491dae363a08fe2a0e897c6453e5336fc64d3cc6170657b0670d3ba62aec6"
+      "hash": "bd33fe382b680e9252120389e54d6c6ab17b2dccfbf550f2bc7c96f36261394d"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapreader/init(content:).json": {
       "etag": "\"1ca2-65d55e1f5a3e2-df\"",
@@ -7120,9 +7120,9 @@
       "hash": "381e3411e0ac7f5ac9ba8d05a6ae57ed87d7fd1a30a42f6b633c9c94d198046a"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapscaleview.json": {
-      "etag": "\"4a7a-65d55e1e377f8-df\"",
+      "etag": "\"4a7d-65e70453ed01e-df\"",
       "file_path": "documentation/MapKit/mapscaleview.md",
-      "hash": "1edcba11443cc8c2229436b6448c2bbca3151e57631045f32325a58c01cadb4d"
+      "hash": "b3779ab5e19301c75b1fdbe9e1b6bf7e02555afd8b1924fd091f5b752fc45e2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapscaleview/init(alignment:scope:).json": {
       "etag": "\"2afc-65d55e1f99aa2-df\"",
@@ -7130,9 +7130,9 @@
       "hash": "3739de9d7993f0b1c04112569295933b00854b937aa9f486f59331e4a4385626"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapscaleview/init(anchoredge:scope:).json": {
-      "etag": "\"2af4-65d55e1f99aa2-df\"",
+      "etag": "\"2af5-65e2ab9f70a6d-df\"",
       "file_path": "documentation/MapKit/mapscaleview/init(anchoredge,scope).md",
-      "hash": "b4adcc91cfe7cf5fd458fe9476578bdba0f469c561440dbbd59356b2b55623b2"
+      "hash": "872ee95185e98611557ffbb095c7b96e30b25a0e72479416b03c61ef4f7e878e"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapselectable.json": {
       "etag": "\"1c3f-65d55e1ddd74c-df\"",
@@ -7240,9 +7240,9 @@
       "hash": "a4055c252b943138a1075cc31378e67e41cb7b11503a2149bd6f4b2f6d821a5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapuserlocationbutton.json": {
-      "etag": "\"4b27-65d55e1e74eaf-df\"",
+      "etag": "\"4b2b-65e704541d3fa-df\"",
       "file_path": "documentation/MapKit/mapuserlocationbutton.md",
-      "hash": "7a96c57065a4d15eda41dfb654c0dc7d43287351c856a116046f53bd4006f67b"
+      "hash": "35b0025a84c4d54f8f75a43ac695ff9c437e90a5c875137f46af26bb226d6e54"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapuserlocationbutton/init(scope:).json": {
       "etag": "\"1c8c-65d55e1efc47c-df\"",
@@ -7270,9 +7270,9 @@
       "hash": "78f508395015d4e5da97f7ba4baa0da9d5157f500731a027fd11c7bd80cd60ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapzoomstepper.json": {
-      "etag": "\"4249-65d55e1ddd74c-df\"",
+      "etag": "\"424c-65e7045330247-df\"",
       "file_path": "documentation/MapKit/mapzoomstepper.md",
-      "hash": "10e2acc9e2a2ddde8ed8ff3dec879ca633d4cfd83b8f659168063230e969b13c"
+      "hash": "db2fb029f452ce3a12db1ddb6645c8273008fd6a50d80fb908be8c0d1dbb2556"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkit/mapzoomstepper/init(scope:).json": {
       "etag": "\"1ae8-65d55e1efc47c-df\"",

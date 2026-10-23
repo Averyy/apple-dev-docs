@@ -1851,9 +1851,9 @@
       "hash": "da6e221e8e6829db5b709af87ccede31395ba9b1b1a69e67c5709b60dee29cfa"
     },
     "https://developer.apple.com/documentation/carplay/cplisttemplate": {
-      "etag": "\"119dd-65d55edb2f737-df\"",
+      "etag": "\"1142b-65d89cd98e5ef-df\"",
       "file_path": "documentation/CarPlay/cplisttemplate.md",
-      "hash": "d44f806565fcac14f9179eb97c3715069520a30a3798d9268e7a722fbb5e3743"
+      "hash": "c5f92fe54d08e2fd044e7c5acbe11a7aff94d24f682b14218137e93efb2f8071"
     },
     "https://developer.apple.com/documentation/carplay/cplisttemplate/assistantcellconfiguration": {
       "etag": "\"2dab-65d55edd02919-df\"",
@@ -5406,9 +5406,9 @@
       "hash": "8a4695c129fa1d1750aa1f756a6c886f1f6b6807a395583a8a0e24bb94f3d1f5"
     },
     "https://developer.apple.com/documentation/carplay/cpwindow": {
-      "etag": "\"a4f9-65d55edbd3087-df\"",
+      "etag": "\"9f47-65dc65651cca0-df\"",
       "file_path": "documentation/CarPlay/cpwindow.md",
-      "hash": "3e06ce6c71c130773e40c53b0af45dc2e7cc230d59c46254ee52a1c78070b13b"
+      "hash": "f44d31824edd7c1b0f757c7823011e6ea8151a11c0a0602751383d726bc11906"
     },
     "https://developer.apple.com/documentation/carplay/cpwindow/mapbuttonsafearealayoutguide": {
       "etag": "\"1e10-65d55edb6fcf4-df\"",
@@ -7340,9 +7340,9 @@
       "hash": "da6e221e8e6829db5b709af87ccede31395ba9b1b1a69e67c5709b60dee29cfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cplisttemplate.json": {
-      "etag": "\"119dd-65d55edb2f737-df\"",
+      "etag": "\"1142b-65d89cd98e5ef-df\"",
       "file_path": "documentation/CarPlay/cplisttemplate.md",
-      "hash": "d44f806565fcac14f9179eb97c3715069520a30a3798d9268e7a722fbb5e3743"
+      "hash": "c5f92fe54d08e2fd044e7c5acbe11a7aff94d24f682b14218137e93efb2f8071"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cplisttemplate/assistantcellconfiguration.json": {
       "etag": "\"2dab-65d55edd02919-df\"",
@@ -10895,9 +10895,9 @@
       "hash": "8a4695c129fa1d1750aa1f756a6c886f1f6b6807a395583a8a0e24bb94f3d1f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpwindow.json": {
-      "etag": "\"a4f9-65d55edbd3087-df\"",
+      "etag": "\"9f47-65dc65651cca0-df\"",
       "file_path": "documentation/CarPlay/cpwindow.md",
-      "hash": "3e06ce6c71c130773e40c53b0af45dc2e7cc230d59c46254ee52a1c78070b13b"
+      "hash": "f44d31824edd7c1b0f757c7823011e6ea8151a11c0a0602751383d726bc11906"
     },
     "https://developer.apple.com/tutorials/data/documentation/carplay/cpwindow/mapbuttonsafearealayoutguide.json": {
       "etag": "\"1e10-65d55edb6fcf4-df\"",

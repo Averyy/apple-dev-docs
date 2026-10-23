@@ -41,7 +41,9 @@ The `value` and `invoiceDetail` fields aren’t filterable. The request body is 
 
 Query all active budget orders for an ad account, sorted by name.
 
-```json
+```http
+POST /v1/shared-budgets/query
+
 {
  "filters": [
    {
@@ -136,7 +138,7 @@ Query all active budget orders for an ad account, sorted by name.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string)
+- `X-AP-Context` (string)
 
 ## Request Body
 

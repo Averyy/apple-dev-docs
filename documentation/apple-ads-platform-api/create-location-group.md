@@ -25,7 +25,9 @@ See [`LocationGroupCreate`](./locationgroupcreate.md).
 
 Creates a static group with an explicit list of location IDs.
 
-```json
+```http
+POST /v1/location-groups
+
 {
  "name": "AwayFinder Downtown Stores",
  "brandId": "9151314442816847872",
@@ -70,7 +72,9 @@ Creates a static group with an explicit list of location IDs.
 
 Creates a dynamic group that automatically includes all locations in the specified states.
 
-```json
+```http
+POST /v1/location-groups
+
 {
  "name": "AwayFinder West Coast Stores",
  "brandId": "9151314442816847872",
@@ -113,7 +117,7 @@ Creates a dynamic group that automatically includes all locations in the specifi
        ]
      }
    ],
-   "groupTotal": 0,
+   "groupTotal": null,
    "isAllLocationsGroup": false,
    "description": "All AwayFinder locations on the West Coast",
    "creationTime": "2026-02-01T09:00:00Z",
@@ -133,7 +137,7 @@ Creates a dynamic group that automatically includes all locations in the specifi
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

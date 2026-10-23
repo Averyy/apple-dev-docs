@@ -36,7 +36,9 @@ The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFil
 
 ##### Request
 
-```json
+```http
+POST /v1/creatives/query
+
 {
  "filters": [
    {
@@ -75,7 +77,9 @@ The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFil
 
 ##### Request
 
-```json
+```http
+POST /v1/creatives/query
+
 {
  "filters": [
    {
@@ -117,7 +121,7 @@ The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFil
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

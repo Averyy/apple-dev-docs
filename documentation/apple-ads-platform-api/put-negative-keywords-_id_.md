@@ -19,7 +19,7 @@ Pause a negative keyword to temporarily suspend its search term exclusion. The t
 
 ##### Request
 
-```json
+```http
 PUT /v1/negative-keywords/{id}
 
 {
@@ -57,7 +57,7 @@ PUT /v1/negative-keywords/{id}
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

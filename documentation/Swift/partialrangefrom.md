@@ -115,6 +115,7 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 - [Decodable](./decodable.md)
 - [Encodable](./encodable.md)
 - [Escapable](./escapable.md)
+- [HomeAccessoryRangeSettingDescriptor](../homeextensions/homeaccessoryrangesettingdescriptor.md)
 - [MLShapedArrayRangeExpression](../CoreML/mlshapedarrayrangeexpression.md)
 - [MLTensorRangeExpression](../CoreML/mltensorrangeexpression.md)
 - [NDArray.RangeExpression](../CoreAI/ndarray/rangeexpression.md)

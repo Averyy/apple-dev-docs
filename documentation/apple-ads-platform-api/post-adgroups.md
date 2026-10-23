@@ -23,7 +23,7 @@ An ad group for an App Store campaign targeting iPhone users aged 18–34 who ha
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups
 
 {
@@ -126,7 +126,7 @@ An App Store ad group using the `MAX_CONVERSIONS` automated bid strategy, which 
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups
 
 {
@@ -219,7 +219,7 @@ An automated ad group for an Apple Maps campaign. The `automatedKeywordsOptIn` f
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups
 
 {
@@ -258,7 +258,7 @@ An Apple Maps ad group using radius targeting.
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups
 
 {
@@ -340,7 +340,7 @@ An Apple Maps ad group using geo location targeting (locality + daypart). Up to 
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups
 
 {
@@ -430,7 +430,7 @@ An Apple Maps ad group using daypart targeting to restrict delivery to specific 
 
 ##### Request
 
-```json
+```http
 POST /v1/adgroups
 
 {
@@ -532,7 +532,7 @@ POST /v1/adgroups
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

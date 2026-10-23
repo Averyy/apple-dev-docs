@@ -27,7 +27,7 @@ The [`Get Product Page by ID`](./get-product-page-by-id.md) endpoint returns `Pr
     "id": "133fc807-d4d5-4c77-92ae-1d6ffdf0c7dc",
     "adamId": 123456789,
     "name": "AwayFinder - Holiday Season CPP",
-    "state": "PUBLISHED",
+    "state": "VISIBLE",
     "deepLink": "https://apps.apple.com/us/app/awayfinder/id123456789?ppid=133fc807-d4d5-4c77-92ae-1d6ffdf0c7dc",
     "creationTime": "2025-04-10T08:00:00.000",
     "modificationTime": "2025-05-01T14:30:00.000"
@@ -43,7 +43,7 @@ The [`Get Product Page by ID`](./get-product-page-by-id.md) endpoint returns `Pr
 ## See Also
 
 - [object ProductPageDetails](./productpagedetails.md)
-  Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
+  Product page metadata for a Custom Product Page (CPP).
 - [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)
   Paginated response object for the product page details query.
 - [object ProductPageLocaleDetails](./productpagelocaledetails.md)

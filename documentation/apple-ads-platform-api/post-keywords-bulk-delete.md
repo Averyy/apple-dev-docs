@@ -12,9 +12,11 @@ Soft-deletes multiple keywords in a single request.
 
 #### Discussion
 
-This endpoint soft-deletes multiple keywords in a single request. Each item in the `items` array specifies the `id` of a keyword to delete. The system marks deleted keywords `deleted: true`, and they stop serving. The response doesn’t include the deleted keyword, just each item’s success status.
+Each item in `items` requires a `correlationId`, unique within the batch, and a `data` object with the `id` of the keyword to delete. The API processes each deletion independently.
 
-To stop a keyword from serving temporarily, set `status: PAUSED` with the bulk update endpoint instead.
+When `allowPartialSuccess: true` is set in the request, this endpoint uses partial success semantics: if some items fail (for example, an already-deleted ID fails with `ENTITY_NOT_FOUND`), the API still processes the successful deletions. When omitted or `false`, any single item failure rejects the entire batch. The response includes a per-item result with each item’s `correlationId` and success status, with failed items reporting `success: false`. It doesn’t include the deleted keyword.
+
+Deleted keywords are marked `deleted: true` and stop serving. To stop a keyword from serving temporarily, set `status: PAUSED` with the bulk update endpoint instead.
 
 #### Payload Examples
 
@@ -22,7 +24,9 @@ To stop a keyword from serving temporarily, set `status: PAUSED` with the bulk u
 
 Soft-delete two keywords.
 
-```json
+```http
+POST /v1/keywords/bulk-delete
+
 {
  "items": [
    {
@@ -68,7 +72,7 @@ Soft-delete two keywords.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

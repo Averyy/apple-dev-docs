@@ -38,7 +38,7 @@ Keep the following constraints in mind when reading a GET response:
 Retrieves an App Store ad group by its unique identifier. This example shows a standard targeting ad group with device and age targeting.
 
 ```
-GET https://api.ads.apple.com/v1/adgroups/555666777
+GET /v1/adgroups/555666777
 ```
 
 ##### Response
@@ -93,7 +93,7 @@ GET https://api.ads.apple.com/v1/adgroups/555666777
 Retrieves an Apple Maps ad group by its unique identifier. This example shows an ad group targeting Apple Maps.
 
 ```
-GET https://api.ads.apple.com/v1/adgroups/555666779
+GET /v1/adgroups/555666779
 ```
 
 ##### Response
@@ -146,7 +146,7 @@ GET https://api.ads.apple.com/v1/adgroups/555666779
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

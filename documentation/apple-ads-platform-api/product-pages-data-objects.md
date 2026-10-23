@@ -11,7 +11,7 @@ Reference the response objects returned by product page endpoints.
 ## Topics
 
 - [object ProductPageDetails](./productpagedetails.md)
-  Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
+  Product page metadata for a Custom Product Page (CPP).
 - [object ProductPageDetailsResponse](./productpagedetailsresponse.md)
   Response object for a single product page retrieval.
 - [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)

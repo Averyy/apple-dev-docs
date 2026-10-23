@@ -181,6 +181,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [Equatable](./equatable.md)
 - [Escapable](./escapable.md)
 - [Hashable](./hashable.md)
+- [HomeAccessoryRangeSettingDescriptor](../homeextensions/homeaccessoryrangesettingdescriptor.md)
 - [MLShapedArrayRangeExpression](../CoreML/mlshapedarrayrangeexpression.md)
 - [MLTensorRangeExpression](../CoreML/mltensorrangeexpression.md)
 - [NDArray.RangeExpression](../CoreAI/ndarray/rangeexpression.md)

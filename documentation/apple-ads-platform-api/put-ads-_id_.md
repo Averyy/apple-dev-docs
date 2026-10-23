@@ -23,7 +23,7 @@ Pause an ad by setting `status` to `PAUSED`. Send only the field you want to cha
 
 ##### Request
 
-```json
+```http
 PUT /v1/ads/777888999
 
 {
@@ -62,7 +62,7 @@ Rename an ad by sending only the `name` field. Status and all other fields remai
 
 ##### Request
 
-```json
+```http
 PUT /v1/ads/777888999
 
 {
@@ -105,7 +105,7 @@ PUT /v1/ads/777888999
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

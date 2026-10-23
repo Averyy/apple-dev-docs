@@ -20,9 +20,9 @@ Use these endpoints to discover, retrieve, and inspect product pages:
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/product-pages/query` | [`Query Product Pages`](./query-product-pages.md) retrieves product pages (DPP, CPPs, PPOs) available to the authenticated ad account. |
-| `GET` | `/v1/product-pages/{productPageId}` | [`Get Product Page by ID`](./get-product-page-by-id.md) retrieves a single product page (DPP, CPP, or PPO) by its ID. |
-| `POST` | `/v1/product-pages/locale-details/query` | [`Query Product Page Locale Details`](./query-product-page-locale-details.md) retrieves localized metadata for product pages. |
+| `POST` | `/v1/product-pages/query` | [`Query Product Pages`](./query-product-pages.md) retrieves custom product pages (CPPs) available to the authenticated ad account. |
+| `GET` | `/v1/product-pages/{productPageId}` | [`Get Product Page by ID`](./get-product-page-by-id.md) retrieves a single custom product page (CPP) by its ID. |
+| `POST` | `/v1/product-pages/locale-details/query` | [`Query Product Page Locale Details`](./query-product-page-locale-details.md) retrieves localized metadata for custom product pages. |
 | `POST` | `/v1/apps/{adamId}/locale-details/query` | [`Query App Locale Details`](./query-default-product-page-locale-details-by-adam-id.md) retrieves the Default Product Page’s localized metadata for an app by its Adam ID. |
 
 ##### Compare the Default with Custom Product Pages
@@ -46,7 +46,7 @@ Custom Product Pages (CPPs) are alternate product pages you configure in App Sto
 
 A custom product page has its own `productPageId`, which you use in the creative’s `destination` field alongside the app’s `adamId`. Set `creativeType` to `CUSTOM_PRODUCT_PAGE` when creating a creative for a CPP.
 
-To retrieve product pages available to the authenticated ad account, use [`Query Product Pages`](./query-product-pages.md). This endpoint returns all three product page types (DPP, CPP, and PPO). To fetch a specific page by its `productPageId`, use [`Get Product Page by ID`](./get-product-page-by-id.md).
+To retrieve product pages available to the authenticated ad account, use [`Query Product Pages`](./query-product-pages.md). This endpoint returns custom product pages only. For the default product page, use [`Query App Locale Details`](./query-default-product-page-locale-details-by-adam-id.md). To fetch a specific page by its `productPageId`, use [`Get Product Page by ID`](./get-product-page-by-id.md).
 
 ##### Reference a Product Page in a Creative
 
@@ -69,11 +69,11 @@ To retrieve locale details for any combination of product pages, App Store count
 - [Query Product Pages](./query-product-pages.md)
   Queries App Store product pages available to your account.
 - [Get Product Page by ID](./get-product-page-by-id.md)
-  Retrieves a specific Product Page (DPP, CPP, or PPO) by its unique UUID.
+  Retrieves a specific Custom Product Page (CPP) by its unique UUID.
 - [Query Product Page Locale Details](./query-product-page-locale-details.md)
-  Queries the localized content associated with a custom product page.
+  Queries the localized content of custom product pages (CPPs).
 - [Query App Locale Details](./query-default-product-page-locale-details-by-adam-id.md)
-  Return the default product page locale details for an app identified by its adamId.
+  Returns the default product page locale details for an app identified by its adamId.
 
 ## See Also
 

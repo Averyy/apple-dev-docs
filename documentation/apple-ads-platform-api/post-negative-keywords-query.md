@@ -43,7 +43,7 @@ Retrieve negative keywords for one or more specific ad groups using `adGroupId E
 
 ##### Request
 
-```json
+```http
 POST /v1/negative-keywords/query
 
 {
@@ -94,7 +94,7 @@ Retrieve campaign-level negative keywords for a campaign by combining a `campaig
 
 ##### Request
 
-```json
+```http
 POST /v1/negative-keywords/query
 
 {
@@ -165,7 +165,7 @@ Retrieve all ad group-level negative keywords across every ad group under a camp
 
 ##### Request
 
-```json
+```http
 POST /v1/negative-keywords/query
 
 {
@@ -226,7 +226,7 @@ Retrieve ad-group-level negative keywords for a campaign while excluding one spe
 
 ##### Request
 
-```json
+```http
 POST /v1/negative-keywords/query
 
 {
@@ -284,7 +284,7 @@ POST /v1/negative-keywords/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -214,8 +214,6 @@ This is a UUID in Microsoft’s GUID form. That is, three little-endian numbers 
 ## See Also
 
 ### Specifications and other documents
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
-  Learn the requirements for live and on-demand audio and video content delivery using HLS.
 - [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
 - [About the Common Media Application Format with HTTP Live Streaming (HLS)](./about-the-common-media-application-format-with-http-live-streaming-hls.md)

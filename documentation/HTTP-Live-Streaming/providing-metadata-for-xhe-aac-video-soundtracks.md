@@ -95,8 +95,6 @@ User preferences can override DRC settings. The following table provides example
 ## See Also
 
 ### Specifications and other documents
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
-  Learn the requirements for live and on-demand audio and video content delivery using HLS.
 - [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
 - [Using content protection systems with HLS](./using-content-protection-systems-with-hls.md)

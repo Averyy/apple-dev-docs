@@ -42,7 +42,7 @@ See [`QueryRequest`](./queryrequest.md).
 
 ##### Request
 
-```json
+```http
 POST /v1/business-brands/query
 
 {
@@ -92,7 +92,7 @@ POST /v1/business-brands/query
 
 Returns only brands you can use in a campaign. Confirm a brand’s eligibility with this filter before creating a Brands campaign, as described in [Ads on Apple Maps Endpoints](./brands-endpoints.md).
 
-```json
+```http
 POST /v1/business-brands/query
 
 {
@@ -139,7 +139,7 @@ POST /v1/business-brands/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

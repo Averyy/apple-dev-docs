@@ -10856,7 +10856,7 @@
       "hash": "252e601489e3dc43e019f359bf7d82f10a597db6d203106ce267ca8fbde71430"
     },
     "https://developer.apple.com/documentation/corefoundation/kcfcorefoundationversionnumber10_4_11": {
-      "etag": "\"6d68-65d56078cac3f\"",
+      "etag": "\"6d68-65d56078cac3f-df\"",
       "file_path": "documentation/CoreFoundation/kcfcorefoundationversionnumber10_4_11.md",
       "hash": "8037f0fd27ed3faf8f6c0c39037132876812e615c8aaf99be9d10b1f365bd25d"
     },
@@ -23575,7 +23575,7 @@
       "hash": "252e601489e3dc43e019f359bf7d82f10a597db6d203106ce267ca8fbde71430"
     },
     "https://developer.apple.com/tutorials/data/documentation/corefoundation/kcfcorefoundationversionnumber10_4_11.json": {
-      "etag": "\"6d68-65d56078cac3f\"",
+      "etag": "\"6d68-65d56078cac3f-df\"",
       "file_path": "documentation/CoreFoundation/kcfcorefoundationversionnumber10_4_11.md",
       "hash": "8037f0fd27ed3faf8f6c0c39037132876812e615c8aaf99be9d10b1f365bd25d"
     },

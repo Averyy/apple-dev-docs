@@ -21,7 +21,7 @@ You only ever send `DelegationUpdate` entries as part of the `delegations` array
 
 **Adding a new delegation**: include every existing delegation plus the new entry. All delegations on an ad account must share the same `resourceType`. You can’t mix `CONTENT_PROVIDER` and `BUSINESS_BRAND` delegations on the same account. For example, an ad account with an existing `CONTENT_PROVIDER` delegation that wants to add a second `CONTENT_PROVIDER` delegation sends both entries:
 
-```json
+```http
 PUT /v1/ad-accounts/{id}
 
 {
@@ -40,7 +40,7 @@ PUT /v1/ad-accounts/{id}
 
 **Removing a delegation**: send the array with the unwanted entry omitted. To remove the second `CONTENT_PROVIDER` delegation added above and keep only the first, send:
 
-```json
+```http
 PUT /v1/ad-accounts/{id}
 
 {

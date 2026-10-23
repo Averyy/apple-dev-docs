@@ -37,7 +37,7 @@ Deleted negative keywords remain retrievable by ID and never expose a `bid` fiel
 A campaign-level negative keyword. The `adGroupId` field is absent. This exclusion applies across all ad groups in the campaign.
 
 ```
-GET https://api.ads.apple.com/v1/negative-keywords/777888999
+GET /v1/negative-keywords/777888999
 ```
 
 ##### Response
@@ -65,7 +65,7 @@ GET https://api.ads.apple.com/v1/negative-keywords/777888999
 An ad-group-level negative keyword. The `adGroupId` field is present. This exclusion is scoped to that ad group only.
 
 ```
-GET https://api.ads.apple.com/v1/negative-keywords/777888998
+GET /v1/negative-keywords/777888998
 ```
 
 ##### Response
@@ -99,7 +99,7 @@ GET https://api.ads.apple.com/v1/negative-keywords/777888998
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

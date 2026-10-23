@@ -32,7 +32,7 @@ Deletion carries a few important caveats:
 Deletes a location group by its unique identifier.
 
 ```
-DELETE https://api.ads.apple.com/v1/location-groups/5764607523034238976
+DELETE /v1/location-groups/5764607523034238976
 ```
 
 ##### Response
@@ -65,7 +65,7 @@ DELETE https://api.ads.apple.com/v1/location-groups/5764607523034238976
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

@@ -31,7 +31,7 @@ The `QueryPagination` controls the page size and starting offset for query resul
 
 ## Properties
 
-- `pageSize` (int32): The number of items per page.
+- `pageSize` (int32): The number of items per page. The maximum is 1000, and larger values return a `VALIDATION_ERROR`.
 - `offset` (int32): The starting position for pagination, zero-based.
 - `fetchTotalCount` (boolean): Whether to include the total count in the pagination response. Set to `true` to include the total result count in the `QueryPaginationResult` response.
 

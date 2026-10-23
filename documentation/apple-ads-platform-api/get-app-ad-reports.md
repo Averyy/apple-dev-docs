@@ -55,7 +55,7 @@ Retrieve daily ad metrics for a specific ad group, grouped by country or region.
 
 Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, and groups results by `countryOrRegion`, returning daily ad-level metrics for a 31-day window in the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/apps/ads/query
 
 {
@@ -166,7 +166,7 @@ Retrieve daily ad metrics without dimensional grouping. The `granularMetrics` ar
 
 Filters by `campaignId` with no `groupBy` dimension, returning daily ad metrics aggregated across all devices and countries for a 7-day window.
 
-```json
+```http
 POST /v1/reports/apps/ads/query
 
 {
@@ -273,7 +273,7 @@ POST /v1/reports/apps/ads/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

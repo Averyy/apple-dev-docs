@@ -38,7 +38,7 @@ Deleting an ad has the following effects:
 Deletes an ad by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
 ```
-DELETE https://api.ads.apple.com/v1/ads/777888999
+DELETE /v1/ads/777888999
 ```
 
 ##### Response
@@ -53,7 +53,7 @@ DELETE https://api.ads.apple.com/v1/ads/777888999
 
 After deletion, confirm the ad is marked deleted by querying with `deleted EQUALS true`.
 
-```json
+```http
 POST /v1/ads/query
 
 {
@@ -113,7 +113,7 @@ POST /v1/ads/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

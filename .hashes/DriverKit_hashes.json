@@ -2401,7 +2401,7 @@
       "hash": "295a1ac0a10663d992c355a9d27608d9eaee97aa2bef473673497e4f394cfe11"
     },
     "https://developer.apple.com/documentation/driverkit/iorwlockassertstate/kiorwlockassertwrite": {
-      "etag": "\"124c-65d560b316ebc\"",
+      "etag": "\"124c-65d560b316ebc-df\"",
       "file_path": "documentation/DriverKit/iorwlockassertstate/kiorwlockassertwrite.md",
       "hash": "2a5c2c67c117958e638d03f6e971aa0c88bacc5cbdc568d09055b1aee5931fe4"
     },
@@ -17211,7 +17211,7 @@
       "hash": "295a1ac0a10663d992c355a9d27608d9eaee97aa2bef473673497e4f394cfe11"
     },
     "https://developer.apple.com/tutorials/data/documentation/driverkit/iorwlockassertstate/kiorwlockassertwrite.json": {
-      "etag": "\"124c-65d560b316ebc\"",
+      "etag": "\"124c-65d560b316ebc-df\"",
       "file_path": "documentation/DriverKit/iorwlockassertstate/kiorwlockassertwrite.md",
       "hash": "2a5c2c67c117958e638d03f6e971aa0c88bacc5cbdc568d09055b1aee5931fe4"
     },

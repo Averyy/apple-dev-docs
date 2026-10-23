@@ -25,7 +25,7 @@ Unlike paginated query responses, `AppDetailsResponse` returns exactly one app r
 
 On a 404, the response contains an `ENTITY_NOT_FOUND` error in the `error` field and `result` is absent. Always check the HTTP status code first, then inspect `error` for machine-readable detail.
 
-The returned `AppDetails` object includes App Store metadata such as app name, developer, supported device classes, and available App Store countries or regions. The `GET /v1/apps/{adamId}` ([`Get App Details by Adam ID`](./get-app-details-by-adam-id.md)) endpoint accepts only the `adamId` path parameter and the `X-Ap-Context` header.
+The returned `AppDetails` object includes App Store metadata such as app name, developer, supported device classes, and available App Store countries or regions. The `GET /v1/apps/{adamId}` ([`Get App Details by Adam ID`](./get-app-details-by-adam-id.md)) endpoint accepts only the `adamId` path parameter and the `X-AP-Context` header.
 
 ##### Understand the error field
 

@@ -32,7 +32,7 @@ The soft delete is reflected consistently across subsequent GET and PUT requests
 Deletes a negative keyword by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
 ```
-DELETE https://api.ads.apple.com/v1/negative-keywords/777888999
+DELETE /v1/negative-keywords/777888999
 ```
 
 ##### Response
@@ -53,7 +53,7 @@ DELETE https://api.ads.apple.com/v1/negative-keywords/777888999
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

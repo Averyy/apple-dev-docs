@@ -29,7 +29,7 @@ Create an ad creative linked to a custom product page variant from App Store Con
 
 Creates a `CUSTOM_PRODUCT_PAGE` ad creative that sends users to a specific product page variant, identified by `productPageId`, on the app’s App Store listing.
 
-```json
+```http
 POST /v1/creatives
 
 {
@@ -80,7 +80,7 @@ Create an ad creative linked to the app’s default App Store listing. You don�
 
 Creates a `DEFAULT_PRODUCT_PAGE` ad creative that links to the app’s standard App Store listing using only the `adamId`, with no custom product page specified.
 
-```json
+```http
 POST /v1/creatives
 
 {
@@ -130,7 +130,7 @@ Create an Apple Maps ad creative with localized promo text. The `creativeSpec` c
 
 Creates a `LOCAL_ADS_SEARCH_CREATIVE` with localized promo text and brand metadata in `creativeSpec`, routing taps to the brand’s Maps place card via `LOCAL_ADS_PLACECARD` destination.
 
-```json
+```http
 POST /v1/creatives
 
 {
@@ -201,7 +201,7 @@ POST /v1/creatives
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

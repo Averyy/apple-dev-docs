@@ -19,7 +19,7 @@ This example dismisses a daily budget recommendation. The campaign’s daily bud
 
 ##### Request
 
-```json
+```http
 POST /v1/recommendations/daily-budgets/dismiss
 
 [
@@ -62,7 +62,7 @@ POST /v1/recommendations/daily-budgets/dismiss
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

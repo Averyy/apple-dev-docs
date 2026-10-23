@@ -32,7 +32,7 @@ This example discovers category suggestions for a brand using the SUGGESTION rou
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/categories/query
 
 {
@@ -92,7 +92,7 @@ POST /v1/suggestions/categories/query
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/categories/query
 
 {
@@ -144,7 +144,7 @@ This example uses `LIKE` to perform a partial string match search across all ava
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/categories/query
 
 {
@@ -197,7 +197,7 @@ POST /v1/suggestions/categories/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

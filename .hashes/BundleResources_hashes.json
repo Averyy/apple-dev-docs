@@ -146,9 +146,9 @@
       "hash": "1ec4d38298d0c8883358b624dc4980a4f5157887ac13b6a866c7b897d59bcd25"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements": {
-      "etag": "\"33f05-65da29d1223f7-df\"",
+      "etag": "\"341eb-65e5a1559ff64-df\"",
       "file_path": "documentation/BundleResources/entitlements.md",
-      "hash": "2fa664f646c5018ac7b60527890a7999b2536d95507379fa17b1e7cae085f14e"
+      "hash": "2b59c39c0025e8a6c698510acd512c43f44072ee30f9eac51276a6437402750f"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/aps-environment": {
       "etag": "\"2ec2-65d55a414770e-df\"",
@@ -705,10 +705,15 @@
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.hid.virtual.device.md",
       "hash": "9dad0691d43e2cfaec1221df69ff6b7414a49c727d30306dc3051e67bbf9f0ed"
     },
+    "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.home": {
+      "etag": "\"201b-65e5a156e0fc6-df\"",
+      "file_path": "documentation/BundleResources/entitlements/com.apple.developer.home.md",
+      "hash": "4982f9edfd3e5335798b5c7a94825c1daf3b802047b44ab0231caa9f031bab00"
+    },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.homekit": {
-      "etag": "\"1ddc-65d55a41bfd07-df\"",
+      "etag": "\"20c2-65e5a157223b9-df\"",
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.homekit.md",
-      "hash": "4fc0ae6ba82d8966150bb332ad95e87a5231bf840b58587b0849b86fd388f800"
+      "hash": "d5cc5f895b94eefffff5a83559374d3616aab5ae7a32e63d8216e0a6cd8b59b1"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.icloud-container-development-container-identifiers": {
       "etag": "\"2721-65d55a41bfd07-df\"",
@@ -811,9 +816,9 @@
       "hash": "5f88481ab14ef0cca40632eaa9f3ff758279816612cbaceb25cd1d9af97846f7"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.matter.allow-setup-payload": {
-      "etag": "\"1e99-65d55a41a494a-df\"",
+      "etag": "\"217f-65e5a15714f97-df\"",
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.matter.allow-setup-payload.md",
-      "hash": "f5c9f8dde525c68170657260fd9bf106c6775fa53c3895af7e012548d280ac8a"
+      "hash": "00533482c1ac9f15f35144845a3841a621a45023f84f687bef49778abc8703fe"
     },
     "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.media-device-discovery-extension": {
       "etag": "\"2dda-65d55a414770e-df\"",
@@ -1481,9 +1486,9 @@
       "hash": "3a7a452c20a2ee59dbd469c8c03770bad767f1446ca2a9258e6920289c9ce0b2"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list": {
-      "etag": "\"10131-65d55a41bfd07-df\"",
+      "etag": "\"10b25-65e5a157223b9-df\"",
       "file_path": "documentation/BundleResources/information-property-list.md",
-      "hash": "89a64927be88370ddfe83943b1a14a033dc1c0a44d5c78f021af3a549d3bfd91"
+      "hash": "30d4fa2175fd71e1de5e9923e2e736eb9fe6f6994abd503887d7e28a5735dab3"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/adnetworkidentifiers": {
       "etag": "\"278a-65d55a40acbfe-df\"",
@@ -1944,6 +1949,16 @@
       "etag": "\"1e66-65d55a40acbfe-df\"",
       "file_path": "documentation/BundleResources/information-property-list/endeveloperregion.md",
       "hash": "513c8361d3e9a49665ef1485a7d00815e7f3f0db173a4545bb82a7818083f488"
+    },
+    "https://developer.apple.com/documentation/bundleresources/information-property-list/exappextensionattributes": {
+      "etag": "\"1e15-65e5a156ad3da-df\"",
+      "file_path": "documentation/BundleResources/information-property-list/exappextensionattributes.md",
+      "hash": "3ee4801f573fc4233a98b22723c0b7ca7562d195c765bbc8a9801373ed4809b3"
+    },
+    "https://developer.apple.com/documentation/bundleresources/information-property-list/exappextensionattributes/exextensionpointidentifier": {
+      "etag": "\"1ca5-65e5a156978a4-df\"",
+      "file_path": "documentation/BundleResources/information-property-list/exappextensionattributes/exextensionpointidentifier.md",
+      "hash": "1be7dc17ecb3fa7d0598ec667453f2ecb0547ec758d7f7eac70acbe7a02eeb48"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/gcdisableinferringgamemetadata": {
       "etag": "\"4d0c-65d55a3fb9891-df\"",
@@ -3024,6 +3039,11 @@
       "etag": "\"33ac-65d55a3f1369c-df\"",
       "file_path": "documentation/BundleResources/information-property-list/nshighresolutioncapable.md",
       "hash": "4e28adeb4cd7343b4eaf78f898e1cc88232360ef40110cb0b734d38ca666012d"
+    },
+    "https://developer.apple.com/documentation/bundleresources/information-property-list/nshomeextensionmanufacturer": {
+      "etag": "\"16c1-65e5a155b5217-df\"",
+      "file_path": "documentation/BundleResources/information-property-list/nshomeextensionmanufacturer.md",
+      "hash": "8e0be542f10e6dcd81a97926dc648fd7862dc0627797d38e32faef60b3414975"
     },
     "https://developer.apple.com/documentation/bundleresources/information-property-list/nshomekitusagedescription": {
       "etag": "\"1d6c-65d55a3f1369c-df\"",
@@ -4766,9 +4786,9 @@
       "hash": "1ec4d38298d0c8883358b624dc4980a4f5157887ac13b6a866c7b897d59bcd25"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements.json": {
-      "etag": "\"33f05-65da29d1223f7-df\"",
+      "etag": "\"341eb-65e5a1559ff64-df\"",
       "file_path": "documentation/BundleResources/entitlements.md",
-      "hash": "2fa664f646c5018ac7b60527890a7999b2536d95507379fa17b1e7cae085f14e"
+      "hash": "2b59c39c0025e8a6c698510acd512c43f44072ee30f9eac51276a6437402750f"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/aps-environment.json": {
       "etag": "\"2ec2-65d55a414770e-df\"",
@@ -5325,10 +5345,15 @@
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.hid.virtual.device.md",
       "hash": "9dad0691d43e2cfaec1221df69ff6b7414a49c727d30306dc3051e67bbf9f0ed"
     },
+    "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.home.json": {
+      "etag": "\"201b-65e5a156e0fc6-df\"",
+      "file_path": "documentation/BundleResources/entitlements/com.apple.developer.home.md",
+      "hash": "4982f9edfd3e5335798b5c7a94825c1daf3b802047b44ab0231caa9f031bab00"
+    },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.homekit.json": {
-      "etag": "\"1ddc-65d55a41bfd07-df\"",
+      "etag": "\"20c2-65e5a157223b9-df\"",
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.homekit.md",
-      "hash": "4fc0ae6ba82d8966150bb332ad95e87a5231bf840b58587b0849b86fd388f800"
+      "hash": "d5cc5f895b94eefffff5a83559374d3616aab5ae7a32e63d8216e0a6cd8b59b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.icloud-container-development-container-identifiers.json": {
       "etag": "\"2721-65d55a41bfd07-df\"",
@@ -5431,9 +5456,9 @@
       "hash": "5f88481ab14ef0cca40632eaa9f3ff758279816612cbaceb25cd1d9af97846f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.matter.allow-setup-payload.json": {
-      "etag": "\"1e99-65d55a41a494a-df\"",
+      "etag": "\"217f-65e5a15714f97-df\"",
       "file_path": "documentation/BundleResources/entitlements/com.apple.developer.matter.allow-setup-payload.md",
-      "hash": "f5c9f8dde525c68170657260fd9bf106c6775fa53c3895af7e012548d280ac8a"
+      "hash": "00533482c1ac9f15f35144845a3841a621a45023f84f687bef49778abc8703fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/entitlements/com.apple.developer.media-device-discovery-extension.json": {
       "etag": "\"2dda-65d55a414770e-df\"",
@@ -6101,9 +6126,9 @@
       "hash": "3a7a452c20a2ee59dbd469c8c03770bad767f1446ca2a9258e6920289c9ce0b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list.json": {
-      "etag": "\"10131-65d55a41bfd07-df\"",
+      "etag": "\"10b25-65e5a157223b9-df\"",
       "file_path": "documentation/BundleResources/information-property-list.md",
-      "hash": "89a64927be88370ddfe83943b1a14a033dc1c0a44d5c78f021af3a549d3bfd91"
+      "hash": "30d4fa2175fd71e1de5e9923e2e736eb9fe6f6994abd503887d7e28a5735dab3"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/adnetworkidentifiers.json": {
       "etag": "\"278a-65d55a40acbfe-df\"",
@@ -6564,6 +6589,16 @@
       "etag": "\"1e66-65d55a40acbfe-df\"",
       "file_path": "documentation/BundleResources/information-property-list/endeveloperregion.md",
       "hash": "513c8361d3e9a49665ef1485a7d00815e7f3f0db173a4545bb82a7818083f488"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/exappextensionattributes.json": {
+      "etag": "\"1e15-65e5a156ad3da-df\"",
+      "file_path": "documentation/BundleResources/information-property-list/exappextensionattributes.md",
+      "hash": "3ee4801f573fc4233a98b22723c0b7ca7562d195c765bbc8a9801373ed4809b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/exappextensionattributes/exextensionpointidentifier.json": {
+      "etag": "\"1ca5-65e5a156978a4-df\"",
+      "file_path": "documentation/BundleResources/information-property-list/exappextensionattributes/exextensionpointidentifier.md",
+      "hash": "1be7dc17ecb3fa7d0598ec667453f2ecb0547ec758d7f7eac70acbe7a02eeb48"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/gcdisableinferringgamemetadata.json": {
       "etag": "\"4d0c-65d55a3fb9891-df\"",
@@ -7644,6 +7679,11 @@
       "etag": "\"33ac-65d55a3f1369c-df\"",
       "file_path": "documentation/BundleResources/information-property-list/nshighresolutioncapable.md",
       "hash": "4e28adeb4cd7343b4eaf78f898e1cc88232360ef40110cb0b734d38ca666012d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nshomeextensionmanufacturer.json": {
+      "etag": "\"16c1-65e5a155b5217-df\"",
+      "file_path": "documentation/BundleResources/information-property-list/nshomeextensionmanufacturer.md",
+      "hash": "8e0be542f10e6dcd81a97926dc648fd7862dc0627797d38e32faef60b3414975"
     },
     "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nshomekitusagedescription.json": {
       "etag": "\"1d6c-65d55a3f1369c-df\"",
@@ -9245,6 +9285,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1848
+    "total_pages": 1856
   }
 }

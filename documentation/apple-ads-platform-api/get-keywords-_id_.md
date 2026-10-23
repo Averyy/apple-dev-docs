@@ -29,7 +29,7 @@ Deleted keywords remain retrievable and only the query endpoint supports listing
 Retrieves a single keyword by its unique identifier.
 
 ```
-GET https://api.ads.apple.com/v1/keywords/888999000
+GET /v1/keywords/888999000
 ```
 
 ##### Response
@@ -68,7 +68,7 @@ GET https://api.ads.apple.com/v1/keywords/888999000
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

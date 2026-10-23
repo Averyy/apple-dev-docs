@@ -22,7 +22,7 @@ This endpoint still returns deleted assets, with `deleted: true`. Responses alwa
 Retrieves a single asset by its UUID.
 
 ```
-GET https://api.ads.apple.com/v1/assets/770e8400-e29b-41d4-a716-446655440002
+GET /v1/assets/770e8400-e29b-41d4-a716-446655440002
 ```
 
 ##### Response
@@ -69,7 +69,7 @@ GET https://api.ads.apple.com/v1/assets/770e8400-e29b-41d4-a716-446655440002
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

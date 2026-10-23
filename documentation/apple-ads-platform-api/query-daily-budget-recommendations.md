@@ -58,7 +58,7 @@ This example queries available daily budget recommendations for an app, sorted b
 
 ##### Request
 
-```json
+```http
 POST /v1/recommendations/daily-budgets/query
 
 {
@@ -169,7 +169,7 @@ This example queries available daily budget recommendations for a Brands campaig
 
 ##### Request
 
-```json
+```http
 POST /v1/recommendations/daily-budgets/query
 
 {
@@ -286,7 +286,7 @@ POST /v1/recommendations/daily-budgets/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

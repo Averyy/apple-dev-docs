@@ -19,10 +19,10 @@ Returns limited-status reasons per country or region for legacy app campaigns in
 
 ##### Request
 
-No request body is required. Include the `X-Ap-Context` header with your `adAccountId`.
+No request body is required. Include the `X-AP-Context` header with your `adAccountId`.
 
 ```
-GET https://api.ads.apple.com/v1/campaigns/{id}/legacy-app-limited-status-reason-details
+GET /v1/campaigns/{id}/legacy-app-limited-status-reason-details
 ```
 
 ##### Response
@@ -56,7 +56,7 @@ GET https://api.ads.apple.com/v1/campaigns/{id}/legacy-app-limited-status-reason
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

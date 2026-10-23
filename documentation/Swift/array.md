@@ -634,6 +634,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [ExpressibleByArrayLiteral](./expressiblebyarrayliteral.md)
 - [Generable](../FoundationModels/generable.md)
 - [Hashable](./hashable.md)
+- [HomeContent](../homeextensions/homecontent.md)
 - [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
 - [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
 - [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)

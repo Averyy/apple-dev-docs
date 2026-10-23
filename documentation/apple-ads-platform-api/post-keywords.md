@@ -25,7 +25,7 @@ Create an exact match keyword with an explicit bid. The ad shows only when users
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords
 
 {
@@ -70,7 +70,7 @@ Create a broad match keyword without specifying a bid. The keyword inherits the 
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords
 
 {
@@ -111,7 +111,7 @@ Create a phrase match keyword for an Apple Maps ad group. The ad shows for the k
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords
 
 {
@@ -156,7 +156,7 @@ Create a category match keyword for an Apple Maps ad group. The `text` must be a
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords
 
 {
@@ -203,7 +203,7 @@ POST /v1/keywords
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

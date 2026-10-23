@@ -98,6 +98,15 @@ See [Wired Memory Management](Articles/wired-memory.md) for configuration, best 
 
 - ``MLXArray``
 
+### Concurrency
+
+`MLXArray` is not `Sendable`.  To share an array or model across task and actor
+boundaries, take an evaluated, immutable snapshot.
+
+- ``MaterializedArray``
+- ``materialize(_:)->MaterializedArray``
+- ``materialize(_:)->[MaterializedArray]``
+
 ### Free Functions
 
 - [Free Functions](free-functions.md)
@@ -140,3 +149,7 @@ See [Wired Memory Management](Articles/wired-memory.md) for configuration, best 
 ### Distributed
 
 - ``MLXDistributed``
+
+### Load Progress
+
+- ``LoadProgress``

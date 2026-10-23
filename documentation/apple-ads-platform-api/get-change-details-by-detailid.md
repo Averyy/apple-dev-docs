@@ -30,7 +30,7 @@ What populates `oldValues` and `newValues` depends on the event type that produc
 Retrieve field-level details for a campaign update that changed two fields in the same transaction: it re-enables `status` and increases `dailyBudget`.
 
 ```
-GET https://api.ads.apple.com/v1/change-history/Campaign.444555666.txn_abc123def456
+GET /v1/change-history/Campaign.444555666.txn_abc123def456
 ```
 
 ##### Response
@@ -93,7 +93,7 @@ GET https://api.ads.apple.com/v1/change-history/Campaign.444555666.txn_abc123def
 Retrieve field-level details for a new ad group creation. The `oldValues` field is empty for all fields on `CREATE` events.
 
 ```
-GET https://api.ads.apple.com/v1/change-history/AdGroup.888999333.txn_def789ghi012
+GET /v1/change-history/AdGroup.888999333.txn_def789ghi012
 ```
 
 ##### Response
@@ -167,7 +167,7 @@ GET https://api.ads.apple.com/v1/change-history/AdGroup.888999333.txn_def789ghi0
 Retrieve field-level details for a deleted keyword. The `newValues` field is empty for all fields on `DELETE` events.
 
 ```
-GET https://api.ads.apple.com/v1/change-history/Keyword.777888999.txn_jkl345mno678
+GET /v1/change-history/Keyword.777888999.txn_jkl345mno678
 ```
 
 ##### Response
@@ -248,7 +248,7 @@ GET https://api.ads.apple.com/v1/change-history/Keyword.777888999.txn_jkl345mno6
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

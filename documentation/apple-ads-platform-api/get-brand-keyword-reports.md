@@ -59,7 +59,7 @@ Retrieve daily keyword metrics for all keywords in an Apple Maps ad group.
 
 Filters by `adGroupId` for an Apple Maps ad group with no `groupBy` dimension, returning daily keyword metrics aggregated across all devices and locations for March 2025.
 
-```json
+```http
 POST /v1/reports/business-brands/keywords/query
 
 {
@@ -252,7 +252,7 @@ POST /v1/reports/business-brands/keywords/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

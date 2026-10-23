@@ -34,7 +34,7 @@ These examples discover relevant search phrases for an app or brand using the SU
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/phrases/query
 
 {
@@ -94,7 +94,7 @@ POST /v1/suggestions/phrases/query
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/phrases/query
 
 {
@@ -156,7 +156,7 @@ This example uses `IN` to fetch popularity for specific known phrases, using the
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/phrases/query
 
 {
@@ -208,7 +208,7 @@ This example uses `LIKE` to perform a partial string match search across all ava
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/phrases/query
 
 {
@@ -261,7 +261,7 @@ POST /v1/suggestions/phrases/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

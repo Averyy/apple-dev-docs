@@ -319,7 +319,8 @@ For testing, you can delete locally downloaded models in macOS by choosing Syste
 ## See Also
 
 ### Essentials
-- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View\n](../SwiftUI/view/translationpresentation%28ispresented,text,attachmentanchor,arrowedge,replacementaction%29.md)
+- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View
+](../SwiftUI/view/translationpresentation%28ispresented,text,attachmentanchor,arrowedge,replacementaction%29.md)
   Presents a translation popover when a given condition is true.
 - [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View
 ](../SwiftUI/view/translationtask%28_,action%29.md)

@@ -23,7 +23,7 @@ Increase the maximum cost-per-tap for a keyword. Send only the `bid` field.
 
 ##### Request
 
-```json
+```http
 PUT /v1/keywords/888999000
 
 {
@@ -64,7 +64,7 @@ Pause a keyword to temporarily stop it from bidding. The keyword retains its bid
 
 ##### Request
 
-```json
+```http
 PUT /v1/keywords/888999000
 
 {
@@ -108,7 +108,7 @@ PUT /v1/keywords/888999000
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

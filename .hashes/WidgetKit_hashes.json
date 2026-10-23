@@ -201,9 +201,9 @@
       "hash": "ed5d12c0c6601311cd977c6209aaaa31306611c228bf4167ae78b2342b70af11"
     },
     "https://developer.apple.com/documentation/widgetkit/appintentconfiguration": {
-      "etag": "\"859a-65d7590602155-df\"",
+      "etag": "\"8599-65d55d3c881a4-df\"",
       "file_path": "documentation/WidgetKit/appintentconfiguration.md",
-      "hash": "a2dc507bc6f2a5c2092d82043be8a4fe3b6ca817716074e67c7196c03081640e"
+      "hash": "902351e7c3dd16b7ca18f1de1e118a8cf7a12c46043b899fb5773bbef5dff1fa"
     },
     "https://developer.apple.com/documentation/widgetkit/appintentconfiguration/init(kind:intent:provider:content:)": {
       "etag": "\"3996-65d55d3c05d77-df\"",
@@ -691,9 +691,9 @@
       "hash": "7ac2e9550fec6599328156d83c5620faa144c532e687ff97d1f48c3e4e2fdccb"
     },
     "https://developer.apple.com/documentation/widgetkit/intentconfiguration": {
-      "etag": "\"9a5f-65d75905e4f90-df\"",
+      "etag": "\"9a5e-65d55d3c21857-df\"",
       "file_path": "documentation/WidgetKit/intentconfiguration.md",
-      "hash": "cdeddd63f0970a33edf7384933bde0b58032c945a3e5451bd8c646ce095f5363"
+      "hash": "21df4a7edaf9891be3d0aca647ac7f41ea097f757be3928499cc06b2f6429b0f"
     },
     "https://developer.apple.com/documentation/widgetkit/intentconfiguration/init(kind:intent:provider:content:)": {
       "etag": "\"38fb-65d55d3ca2765-df\"",
@@ -1021,9 +1021,9 @@
       "hash": "6900ac037326e8dc7221a8018ed5add0103f7982118293058adbaec4aa055612"
     },
     "https://developer.apple.com/documentation/widgetkit/staticconfiguration": {
-      "etag": "\"9317-65d75905f0395-df\"",
+      "etag": "\"9316-65d55d3c44480-df\"",
       "file_path": "documentation/WidgetKit/staticconfiguration.md",
-      "hash": "6e6c90f8d28144db839a4a96435fda509c3fb2c3a73e352393e63f6c6e0712c8"
+      "hash": "7fa882ca95d27356326172357a379079135940dde97145e509014863e73804b2"
     },
     "https://developer.apple.com/documentation/widgetkit/staticconfiguration/init(kind:provider:content:)": {
       "etag": "\"2ff1-65d55d3c44480-df\"",
@@ -1801,9 +1801,9 @@
       "hash": "ed5d12c0c6601311cd977c6209aaaa31306611c228bf4167ae78b2342b70af11"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/appintentconfiguration.json": {
-      "etag": "\"859a-65d7590602155-df\"",
+      "etag": "\"8599-65d55d3c881a4-df\"",
       "file_path": "documentation/WidgetKit/appintentconfiguration.md",
-      "hash": "a2dc507bc6f2a5c2092d82043be8a4fe3b6ca817716074e67c7196c03081640e"
+      "hash": "902351e7c3dd16b7ca18f1de1e118a8cf7a12c46043b899fb5773bbef5dff1fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/appintentconfiguration/init(kind:intent:provider:content:).json": {
       "etag": "\"3996-65d55d3c05d77-df\"",
@@ -2291,9 +2291,9 @@
       "hash": "7ac2e9550fec6599328156d83c5620faa144c532e687ff97d1f48c3e4e2fdccb"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/intentconfiguration.json": {
-      "etag": "\"9a5f-65d75905e4f90-df\"",
+      "etag": "\"9a5e-65d55d3c21857-df\"",
       "file_path": "documentation/WidgetKit/intentconfiguration.md",
-      "hash": "cdeddd63f0970a33edf7384933bde0b58032c945a3e5451bd8c646ce095f5363"
+      "hash": "21df4a7edaf9891be3d0aca647ac7f41ea097f757be3928499cc06b2f6429b0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/intentconfiguration/init(kind:intent:provider:content:).json": {
       "etag": "\"38fb-65d55d3ca2765-df\"",
@@ -2621,9 +2621,9 @@
       "hash": "6900ac037326e8dc7221a8018ed5add0103f7982118293058adbaec4aa055612"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/staticconfiguration.json": {
-      "etag": "\"9317-65d75905f0395-df\"",
+      "etag": "\"9316-65d55d3c44480-df\"",
       "file_path": "documentation/WidgetKit/staticconfiguration.md",
-      "hash": "6e6c90f8d28144db839a4a96435fda509c3fb2c3a73e352393e63f6c6e0712c8"
+      "hash": "7fa882ca95d27356326172357a379079135940dde97145e509014863e73804b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/widgetkit/staticconfiguration/init(kind:provider:content:).json": {
       "etag": "\"2ff1-65d55d3c44480-df\"",

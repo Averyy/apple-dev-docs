@@ -54,7 +54,7 @@ This example queries available target CPA recommendations for an app, sorted by 
 
 ##### Request
 
-```json
+```http
 POST /v1/recommendations/target-cpas/query
 
 {
@@ -153,7 +153,7 @@ POST /v1/recommendations/target-cpas/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

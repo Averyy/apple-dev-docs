@@ -18,7 +18,7 @@ The response’s `systemStatus` field can take any of the following values:
 | Status | Meaning |
 | --- | --- |
 | `VALID` | The group is fully evaluated and eligible for use in targeting. `groupTotal` reflects the current matched-location count. |
-| `PENDING` | The system is evaluating the group’s dynamic rules. `groupTotal` may be `0`. Check again after a short interval. |
+| `PENDING` | The system is evaluating the group’s dynamic rules. `groupTotal` is `null`. Check again after a short interval. |
 | `INVALID` | One or more issues prevent the group from serving. Inspect `eligibility` for details. |
 | `DELETED` | The group has been soft-deleted and is no longer available for targeting. |
 
@@ -38,7 +38,7 @@ Fetching a group by ID differs from a bulk query in a couple of ways:
 Retrieves a single location group by its unique identifier.
 
 ```
-GET https://api.ads.apple.com/v1/location-groups/5764607523034238976
+GET /v1/location-groups/5764607523034238976
 ```
 
 ##### Response
@@ -87,7 +87,7 @@ GET https://api.ads.apple.com/v1/location-groups/5764607523034238976
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

@@ -55,7 +55,9 @@ Retrieve all business categories with default pagination.
 
 ##### Request
 
-```json
+```http
+POST /v1/business-categories/query
+
 {}
 ```
 
@@ -91,7 +93,9 @@ Find categories with a specific name prefix.
 
 ##### Request
 
-```json
+```http
+POST /v1/business-categories/query
+
 {
  "filters": [
    {
@@ -146,7 +150,7 @@ Find categories with a specific name prefix.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

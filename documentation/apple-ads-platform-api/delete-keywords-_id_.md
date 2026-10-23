@@ -32,7 +32,7 @@ The soft delete is reflected consistently across subsequent GET and PUT requests
 Deletes a keyword by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
 ```
-DELETE https://api.ads.apple.com/v1/keywords/888999000
+DELETE /v1/keywords/888999000
 ```
 
 ##### Response
@@ -53,7 +53,7 @@ DELETE https://api.ads.apple.com/v1/keywords/888999000
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

@@ -43,7 +43,7 @@ Deletion has different implications depending on what you’re trying to do next
 Deletes a budget order by its unique identifier. Remove all campaign assignments before issuing this request. A successful delete returns HTTP 200 with an empty response body.
 
 ```
-DELETE https://api.ads.apple.com/v1/shared-budgets/777890001
+DELETE /v1/shared-budgets/777890001
 ```
 
 ##### Response

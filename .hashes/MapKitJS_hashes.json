@@ -3411,7 +3411,7 @@
       "hash": "df4c632d845dd78c88f631a6b2dd8c8e1ba3efce968f100407acb350a9b23e24"
     },
     "https://developer.apple.com/documentation/mapkitjs/place/name": {
-      "etag": "\"1490-65d55a28e2351-df\"",
+      "etag": "\"1490-65d55a28e2351\"",
       "file_path": "documentation/MapKitJS/place/name.md",
       "hash": "c5e2278a589fa31b263f504839fc8baeba98cd1da294aa4f32a15903dda8f946"
     },
@@ -8413,7 +8413,7 @@
       "hash": "df4c632d845dd78c88f631a6b2dd8c8e1ba3efce968f100407acb350a9b23e24"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/place/name.json": {
-      "etag": "\"1490-65d55a28e2351-df\"",
+      "etag": "\"1490-65d55a28e2351\"",
       "file_path": "documentation/MapKitJS/place/name.md",
       "hash": "c5e2278a589fa31b263f504839fc8baeba98cd1da294aa4f32a15903dda8f946"
     },

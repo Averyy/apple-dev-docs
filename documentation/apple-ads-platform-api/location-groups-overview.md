@@ -52,7 +52,7 @@ A location group object exposes the following fields:
 | `locationIds` | array of strings | Location IDs included in the group (`STATIC` groups). |
 | `isAllLocationsGroup` | boolean | `true` for the system-created “All Locations” group for a brand. **Read-only.** |
 | `description` | string | Optional description of the group. |
-| `groupTotal` | integer (int64) | Total number of locations in the group. **Read-only.** |
+| `groupTotal` | integer (int64), nullable | Total number of locations in the group. `null` while `systemStatus` is `PENDING`, populated once it becomes `VALID`. **Read-only.** |
 | `eligibility` | object | Ad serving eligibility for this group. **Read-only.** |
 | `creationTime` | string (ISO 8601) | When the group was created. |
 | `modificationTime` | string (ISO 8601) | When the group was last modified. |

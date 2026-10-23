@@ -20,7 +20,7 @@ This endpoint retrieves a single brand by its ID. The brand `id` in the response
 Retrieves the brand with the given ID and returns its country or region, categories, and current eligibility status.
 
 ```
-GET https://api.ads.apple.com/v1/business-brands/9151314442816847872
+GET /v1/business-brands/9151314442816847872
 ```
 
 ##### Response
@@ -53,7 +53,7 @@ GET https://api.ads.apple.com/v1/business-brands/9151314442816847872
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

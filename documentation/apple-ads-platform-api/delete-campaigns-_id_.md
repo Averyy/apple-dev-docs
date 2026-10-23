@@ -32,7 +32,7 @@ Keep the following in mind when relying on this endpoint’s soft-delete behavio
 Deletes a campaign by its unique identifier. A successful delete returns HTTP 200 with an empty result.
 
 ```
-DELETE https://api.ads.apple.com/v1/campaigns/111222333
+DELETE /v1/campaigns/111222333
 ```
 
 ##### Response
@@ -48,7 +48,7 @@ DELETE https://api.ads.apple.com/v1/campaigns/111222333
 After deletion, confirm the campaign is marked deleted by retrieving it directly by ID.
 
 ```
-GET https://api.ads.apple.com/v1/campaigns/111222333
+GET /v1/campaigns/111222333
 ```
 
 ##### Response
@@ -79,7 +79,7 @@ GET https://api.ads.apple.com/v1/campaigns/111222333
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

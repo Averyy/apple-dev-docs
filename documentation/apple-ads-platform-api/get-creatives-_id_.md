@@ -37,7 +37,7 @@ A couple of edge cases are worth calling out when fetching an ad creative by ID.
 Retrieves a custom product page ad creative. The response includes the full ad creative object with its current review state and eligibility details.
 
 ```
-GET https://api.ads.apple.com/v1/creatives/666777888
+GET /v1/creatives/666777888
 ```
 
 ##### Response
@@ -84,7 +84,7 @@ GET https://api.ads.apple.com/v1/creatives/666777888
 Retrieves an Apple Maps ad creative. The response includes the ad creative spec with localized text and brand configuration.
 
 ```
-GET https://api.ads.apple.com/v1/creatives/666777889
+GET /v1/creatives/666777889
 ```
 
 ##### Response
@@ -143,7 +143,7 @@ GET https://api.ads.apple.com/v1/creatives/666777889
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

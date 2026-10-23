@@ -40,7 +40,7 @@ Keep these constraints in mind before issuing the delete request.
 Deletes an ad creative by its unique identifier. The system soft-deletes the ad creative and automatically sets existing ads that reference it to `systemStatus: NOT_RUNNING`.
 
 ```
-DELETE https://api.ads.apple.com/v1/creatives/666777888
+DELETE /v1/creatives/666777888
 ```
 
 ##### Response
@@ -61,7 +61,7 @@ DELETE https://api.ads.apple.com/v1/creatives/666777888
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

@@ -67,6 +67,7 @@ To access values in an information property list programmatically, you use an in
 - [ApprovedStreamingEndpoints](./information-property-list/approvedstreamingendpoints.md)
   A dictionary of streaming endpoints in visionOS to which Foveated Streaming clients may connect.
 ### Dictionaries
+- [EXAppExtensionAttributes](./information-property-list/exappextensionattributes.md)
 - [IOParentMatch](./information-property-list/ioparentmatch.md)
 - [IOPropertyMatch](./information-property-list/iopropertymatch.md)
   The device-specific keys the system must match in order to use your driver.
@@ -101,6 +102,7 @@ To access values in an information property list programmatically, you use an in
   A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 - [NSGestureRecognizerSuppressesMainMenuActions](./information-property-list/nsgesturerecognizersuppressesmainmenuactions.md)
   A Boolean value that indicates whether keyboard shortcuts for menu items are ignored while any gesture recognizer is active.
+- [NSHomeExtensionManufacturer](./information-property-list/nshomeextensionmanufacturer.md)
 - [NSIncludesSubdomains](./information-property-list/nsincludessubdomains.md)
   A Boolean value that indicates whether to extend the configuration to subdomains of the given domain.
 - [NSIsTouchNative](./information-property-list/nsistouchnative.md)

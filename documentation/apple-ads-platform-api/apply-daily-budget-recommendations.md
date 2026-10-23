@@ -19,7 +19,7 @@ This example applies a daily budget recommendation, raising the campaign’s dai
 
 ##### Request
 
-```json
+```http
 POST /v1/recommendations/daily-budgets/apply
 
 [
@@ -70,7 +70,7 @@ POST /v1/recommendations/daily-budgets/apply
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

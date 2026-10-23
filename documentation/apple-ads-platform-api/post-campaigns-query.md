@@ -47,7 +47,7 @@ Query campaigns for a specific brand by pairing `promotedObjectType` and `promot
 
 Filters campaigns to a single brand by combining an `EQUALS` match on `promotedObjectType` and `promotedObjectId`, returning results sorted by creation date descending.
 
-```json
+```http
 POST /v1/campaigns/query
 
 {
@@ -140,7 +140,7 @@ Query campaigns for a specific App Store app using its `adamId` as the `promoted
 
 Filters campaigns to a specific App Store app using its `adamId` as the `promotedObjectId`, returning results sorted by most recently modified.
 
-```json
+```http
 POST /v1/campaigns/query
 
 {
@@ -233,7 +233,7 @@ Combine `promotedObjectType`, `promotedObjectId`, and `status` to return only en
 
 Adds a `status` filter alongside `promotedObjectType` and `promotedObjectId` to return only `ENABLED` campaigns for a specific brand, narrowing results without a sort order.
 
-```json
+```http
 POST /v1/campaigns/query
 
 {
@@ -325,7 +325,7 @@ To query campaigns across multiple brands in a single request, use the `IN` oper
 
 Uses the `IN` operator on `promotedObjectId` to retrieve campaigns across three distinct brand IDs in a single request, avoiding separate per-brand queries.
 
-```json
+```http
 POST /v1/campaigns/query
 
 {
@@ -493,7 +493,7 @@ POST /v1/campaigns/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -63,7 +63,7 @@ Retrieve daily search term metrics for all keywords in a specific ad group. Resu
 
 Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, with no `groupBy` dimension, returning daily search term metrics for all matched queries in January 2025 using the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/apps/searchterms/query
 
 {
@@ -244,7 +244,7 @@ Retrieve weekly search term metrics for a campaign. Weekly granularity requires 
 
 Filters by `campaignId` with no `groupBy` dimension and uses weekly granularity over a 2-month window, well over the 14-day minimum required for weekly reporting.
 
-```json
+```http
 POST /v1/reports/apps/searchterms/query
 
 {
@@ -358,7 +358,7 @@ POST /v1/reports/apps/searchterms/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

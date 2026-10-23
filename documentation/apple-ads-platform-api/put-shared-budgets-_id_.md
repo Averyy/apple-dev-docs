@@ -23,7 +23,7 @@ Omit the `X-AP-Context` header. This endpoint requires organization-level permis
 
 Increase the total budget order amount on an active budget order.
 
-```json
+```http
 PUT /v1/shared-budgets/{id}
 
 {
@@ -65,7 +65,7 @@ PUT /v1/shared-budgets/{id}
 
 Rename the budget order and update the invoice order number.
 
-```json
+```http
 PUT /v1/shared-budgets/{id}
 
 {

@@ -3296,7 +3296,7 @@
       "hash": "510ad0cb44061b9aa6148d57806d535aa0d2c0721f86075aeb8c45d085d380ed"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_ptr_record_s/name": {
-      "etag": "\"d73-65d55ea1d3327\"",
+      "etag": "\"d73-65d55ea1d3327-df\"",
       "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s/name.md",
       "hash": "a90195664fea1d598e68f68cf421fe79b13049ef58348ad4a69a7336a36c78af"
     },
@@ -6761,7 +6761,7 @@
       "hash": "510ad0cb44061b9aa6148d57806d535aa0d2c0721f86075aeb8c45d085d380ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_ptr_record_s/name.json": {
-      "etag": "\"d73-65d55ea1d3327\"",
+      "etag": "\"d73-65d55ea1d3327-df\"",
       "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s/name.md",
       "hash": "a90195664fea1d598e68f68cf421fe79b13049ef58348ad4a69a7336a36c78af"
     },

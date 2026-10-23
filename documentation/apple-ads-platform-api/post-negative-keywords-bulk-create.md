@@ -21,7 +21,7 @@ When `allowPartialSuccess: true` is set in the request, this endpoint uses parti
 
 Create two negative keywords in one request: one campaign-level and one ad-group-level. Each item in `items` maps to a result in the response by `correlationId`.
 
-```json
+```http
 POST /v1/negative-keywords/bulk-create
 
 {
@@ -99,7 +99,7 @@ POST /v1/negative-keywords/bulk-create
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 
@@ -122,7 +122,7 @@ POST /v1/negative-keywords/bulk-create
 - [Bulk Update Negative Keywords](./post-negative-keywords-bulk-update.md)
   Update multiple negative keywords in a single request.
 - [Bulk Delete Negative Keywords](./post-negative-keywords-bulk-delete.md)
-  Delete multiple negative keywords in a single request.
+  Soft-deletes multiple negative keywords in a single request.
 
 
 ---

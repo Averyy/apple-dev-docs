@@ -13,7 +13,7 @@ AAC audio processing requires a small amount of leading “throw-away” audio t
 
 ![Illustration of audio priming samples in the audio track located ahead of the video samples in the video track.](https://developer.apple.com/tutorials/images/com.apple.HTTP-Live-Streaming/preparing-audio-for-http-live-streaming-1@2x.png)
 
-The audio sample rates are normally 44.1 kHz or 48 kHz. For more information, see the [HTTP Live Streaming Specification](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis) and the [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md).
+The audio sample rates are normally 44.1 kHz or 48 kHz. For more information, see the [HTTP Live Streaming Specification](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis) and the [HTTP Live Streaming (HLS) authoring specification for Apple devices](https://developer.apple.com/streaming/hls-authoring-specification-for-apple-devices.html).
 
 ##### Encode MPEG-2 transport stream segments
 

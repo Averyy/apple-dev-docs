@@ -21,7 +21,9 @@ This endpoint is well-suited for batch bid adjustments. For example, raise bids 
 
 Raise bids on two keywords and pause a third.
 
-```json
+```http
+POST /v1/keywords/bulk-update
+
 {
  "items": [
    {
@@ -136,7 +138,7 @@ Raise bids on two keywords and pause a third.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

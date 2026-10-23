@@ -46,9 +46,9 @@
       "hash": "3f2a48f5216dbfa33fb71d15f7804c9160755088da2be0acd837634961f09d2e"
     },
     "https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox": {
-      "etag": "\"f293-65d55d40d1de0-df\"",
+      "etag": "\"f295-65d89c7814792-df\"",
       "file_path": "documentation/Security/accessing-files-from-the-macos-app-sandbox.md",
-      "hash": "b6f950fda196f215e5e087ad6a9a1c9a6fe94b29b1d3d3b2a72474403720a778"
+      "hash": "71c367c3ebfd2ee4040d42c18db6cdd9feee34b07788f0140317fa70a11b3055"
     },
     "https://developer.apple.com/documentation/security/acl-authorization-keys": {
       "etag": "\"811a-659025e5a800d-df\"",
@@ -11581,9 +11581,9 @@
       "hash": "3b2233a0a1f456fca64bb4fdfd1128db6916bee0060dd5cbb2149554025a7436"
     },
     "https://developer.apple.com/documentation/security/enabling-autofill-for-domain-bound-sms-codes": {
-      "etag": "\"33eb-65d55d4bdff00-df\"",
+      "etag": "\"33ec-65d89c7beb7ed-df\"",
       "file_path": "documentation/Security/enabling-autofill-for-domain-bound-sms-codes.md",
-      "hash": "286c04d98097a7ef2c79d267a8513041f9bf1e68738b81110d898aa9e93d9b2b"
+      "hash": "acd3240a5c474ded32522db293ef878a91742616cced37bb8c72e6c8707f6149"
     },
     "https://developer.apple.com/documentation/security/enabling-password-autofill-on-a-text-input-view": {
       "etag": "\"54b1-65d55d4197b06-df\"",
@@ -25984,9 +25984,9 @@
       "hash": "3f2a48f5216dbfa33fb71d15f7804c9160755088da2be0acd837634961f09d2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/accessing-files-from-the-macos-app-sandbox.json": {
-      "etag": "\"f293-65d55d40d1de0-df\"",
+      "etag": "\"f295-65d89c7814792-df\"",
       "file_path": "documentation/Security/accessing-files-from-the-macos-app-sandbox.md",
-      "hash": "b6f950fda196f215e5e087ad6a9a1c9a6fe94b29b1d3d3b2a72474403720a778"
+      "hash": "71c367c3ebfd2ee4040d42c18db6cdd9feee34b07788f0140317fa70a11b3055"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/acl-authorization-keys.json": {
       "etag": "\"811a-659025e5a800d-df\"",
@@ -37643,9 +37643,9 @@
       "hash": "3b2233a0a1f456fca64bb4fdfd1128db6916bee0060dd5cbb2149554025a7436"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/enabling-autofill-for-domain-bound-sms-codes.json": {
-      "etag": "\"33eb-65d55d4bdff00-df\"",
+      "etag": "\"33ec-65d89c7beb7ed-df\"",
       "file_path": "documentation/Security/enabling-autofill-for-domain-bound-sms-codes.md",
-      "hash": "286c04d98097a7ef2c79d267a8513041f9bf1e68738b81110d898aa9e93d9b2b"
+      "hash": "acd3240a5c474ded32522db293ef878a91742616cced37bb8c72e6c8707f6149"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/enabling-password-autofill-on-a-text-input-view.json": {
       "etag": "\"54b1-65d55d4197b06-df\"",

@@ -20,7 +20,7 @@ This endpoint retrieves the details of a specific ad creative rejection reason b
 Retrieves the details of a specific ad creative rejection reason by its identifier, including the reason code and description.
 
 ```
-GET https://api.ads.apple.com/v1/rejection-reasons/apps/112233445
+GET /v1/rejection-reasons/apps/112233445
 ```
 
 ##### Response
@@ -59,7 +59,7 @@ GET https://api.ads.apple.com/v1/rejection-reasons/apps/112233445
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

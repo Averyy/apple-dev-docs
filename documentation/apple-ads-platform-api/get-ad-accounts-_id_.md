@@ -18,7 +18,7 @@ This endpoint retrieves the full details of a specific ad account by its ID, inc
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/ad-accounts/123456789
+GET /v1/ad-accounts/123456789
 ```
 
 ##### Response
@@ -62,7 +62,7 @@ GET https://api.ads.apple.com/v1/ad-accounts/123456789
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

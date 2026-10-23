@@ -54,7 +54,7 @@ Retrieve daily keyword metrics for all keywords in a specific ad group.
 
 Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, with no `groupBy` dimension, returning daily keyword metrics aggregated across all devices and countries for January 2025.
 
-```json
+```http
 POST /v1/reports/apps/keywords/query
 
 {
@@ -157,7 +157,7 @@ Retrieve keyword metrics grouped by country to see which App Store countries or 
 
 Filters by `campaignId`, narrowed to a specific ad group with `adGroupId`, and groups results by `countryOrRegion`, returning daily keyword metrics split by App Store country or region for January 2025.
 
-```json
+```http
 POST /v1/reports/apps/keywords/query
 
 {
@@ -259,7 +259,7 @@ POST /v1/reports/apps/keywords/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

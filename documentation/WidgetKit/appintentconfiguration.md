@@ -68,7 +68,8 @@ Modifiers let you specify the families your widget supports, and the details sho
 - [func configurationDisplayName(Text) -> some WidgetConfiguration
 ](../SwiftUI/widgetconfiguration/configurationdisplayname%28_%29-3sbn4.md)
   Sets the name shown for a widget when a user adds or edits it using the contents of a text view.
-- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration\n](../SwiftUI/widgetconfiguration/configurationdisplayname%28_%29-4v9q.md)
+- [func configurationDisplayName(LocalizedStringKey) -> some WidgetConfiguration
+](../SwiftUI/widgetconfiguration/configurationdisplayname%28_%29-4v9q.md)
   Sets the localized name shown for a widget when a user adds or edits the widget.
 ### Setting the description
 - [func description(Text) -> some WidgetConfiguration

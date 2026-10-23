@@ -27,7 +27,7 @@ All fields in the request body are optional. The `delegations` field is also nul
 
 ##### Request
 
-```json
+```http
 PUT /v1/ad-accounts/123456789
 
 {
@@ -71,7 +71,7 @@ Renames the account and replaces the full set of delegations. All array fields u
 
 ##### Request
 
-```json
+```http
 PUT /v1/ad-accounts/123456789
 
 {
@@ -122,7 +122,7 @@ PUT /v1/ad-accounts/123456789
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

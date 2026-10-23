@@ -55,7 +55,7 @@ Retrieve the top search terms in the US Productivity genre for a specific week.
 
 Fetches weekly search term popularity for the US Productivity genre over a single week, sorted by `rankInGenre` ascending to surface the highest-volume terms first.
 
-```json
+```http
 POST /v1/insights/apps/search-term-popularity/query
 
 {
@@ -142,7 +142,7 @@ Retrieve monthly search term popularity across multiple countries to identify gl
 
 Fetches monthly search term popularity for the Travel genre across three countries (US, GB, DE) over a two-month period, sorted by `searchPopularity1to100` descending to surface globally high-volume terms.
 
-```json
+```http
 POST /v1/insights/apps/search-term-popularity/query
 
 {
@@ -223,7 +223,7 @@ POST /v1/insights/apps/search-term-popularity/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

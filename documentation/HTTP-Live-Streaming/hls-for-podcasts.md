@@ -42,8 +42,6 @@ See the [HTTP Live Streaming](https://developer.apple.com/streaming/) technology
 ## See Also
 
 ### Specifications and other documents
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
-  Learn the requirements for live and on-demand audio and video content delivery using HLS.
 - [Using content protection systems with HLS](./using-content-protection-systems-with-hls.md)
   Adding encryption keys to media playlists
 - [About the Common Media Application Format with HTTP Live Streaming (HLS)](./about-the-common-media-application-format-with-http-live-streaming-hls.md)

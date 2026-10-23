@@ -222,6 +222,7 @@ You typically let Xcode manage the entitlements file for you. For information on
 - [com.apple.developer.healthkit.research](./entitlements/com.apple.developer.healthkit.research.md)
   A Boolean value that indicates whether an approved health research app offers only Full Access when it requests HealthKit read access.
 ### Home automation
+- [com.apple.developer.home](./entitlements/com.apple.developer.home.md)
 - [HomeKit Entitlement](./entitlements/com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
 - [Matter Allow Setup Payload](./entitlements/com.apple.developer.matter.allow-setup-payload.md)

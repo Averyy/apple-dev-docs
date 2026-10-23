@@ -56,7 +56,9 @@ Query campaign changes within a two-week window, sorted by most recent first.
 
 ##### Request
 
-```json
+```http
+POST /v1/change-history/query
+
 {
  "filters": [
    {
@@ -142,7 +144,9 @@ Query all entity updates (no creations or deletions) over a 30-day window.
 
 ##### Request
 
-```json
+```http
+POST /v1/change-history/query
+
 {
  "filters": [
    {
@@ -212,7 +216,9 @@ Audit all changes made via the API (`CUSTOMER_API`) across all entity types for 
 
 ##### Request
 
-```json
+```http
+POST /v1/change-history/query
+
 {
  "filters": [
    {
@@ -303,7 +309,9 @@ Query keyword changes with `options.metadata` set to `latest`, returning per-ent
 
 ##### Request
 
-```json
+```http
+POST /v1/change-history/query
+
 {
  "filters": [
    {
@@ -399,7 +407,7 @@ Query keyword changes with `options.metadata` set to `latest`, returning per-ent
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

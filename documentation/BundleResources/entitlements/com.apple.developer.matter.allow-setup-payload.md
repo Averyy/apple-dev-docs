@@ -37,6 +37,7 @@ If the caller provides the setup payload, the framework doesn’t show the user 
 ## See Also
 
 ### Home automation
+- [com.apple.developer.home](./com.apple.developer.home.md)
 - [HomeKit Entitlement](./com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
 

@@ -43,7 +43,9 @@ The request body is a [`QueryRequest`](./queryrequest.md)-shaped object composed
 
 Query rejection reasons for a specific brand, sorted by ID descending.
 
-```json
+```http
+POST /v1/rejection-reasons/business-brands/query
+
 {
  "filters": [
    {
@@ -103,7 +105,7 @@ Query rejection reasons for a specific brand, sorted by ID descending.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

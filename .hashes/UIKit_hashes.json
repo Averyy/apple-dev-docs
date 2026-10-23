@@ -1681,7 +1681,7 @@
       "hash": "bbb5651d247ef56b28968b978c51941a49bd58d672b5025bcf0b59a19d61f938"
     },
     "https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription()": {
-      "etag": "\"14a5-65d55daf72495\"",
+      "etag": "\"14a5-65d55daf72495-df\"",
       "file_path": "documentation/UIKit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription().md",
       "hash": "d19a1a18f594282aa17798d5f600e2a33b5a1d7365abb52c34ff4b10fd3da93e"
     },
@@ -55051,7 +55051,7 @@
       "hash": "282e21c3162b03a2b23e699fec826e391d178e934fa4ceaf7eef9273cf7dc07c"
     },
     "https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/isanimated": {
-      "etag": "\"38fe-65d55dc39b5a4-df\"",
+      "etag": "\"38fe-65d55dc39b5a4\"",
       "file_path": "documentation/UIKit/uiviewcontrollercontexttransitioning/isanimated.md",
       "hash": "1a8488fbd42ddf10090fb6daecf08d7e186ef12e0c81c40fd5300e2804ececb1"
     },
@@ -58780,7 +58780,7 @@
       "hash": "bbb5651d247ef56b28968b978c51941a49bd58d672b5025bcf0b59a19d61f938"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription().json": {
-      "etag": "\"14a5-65d55daf72495\"",
+      "etag": "\"14a5-65d55daf72495-df\"",
       "file_path": "documentation/UIKit/nsdiffabledatasourcesectionsnapshot-swift.struct/visualdescription().md",
       "hash": "d19a1a18f594282aa17798d5f600e2a33b5a1d7365abb52c34ff4b10fd3da93e"
     },
@@ -112150,7 +112150,7 @@
       "hash": "282e21c3162b03a2b23e699fec826e391d178e934fa4ceaf7eef9273cf7dc07c"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiviewcontrollercontexttransitioning/isanimated.json": {
-      "etag": "\"38fe-65d55dc39b5a4-df\"",
+      "etag": "\"38fe-65d55dc39b5a4\"",
       "file_path": "documentation/UIKit/uiviewcontrollercontexttransitioning/isanimated.md",
       "hash": "1a8488fbd42ddf10090fb6daecf08d7e186ef12e0c81c40fd5300e2804ececb1"
     },

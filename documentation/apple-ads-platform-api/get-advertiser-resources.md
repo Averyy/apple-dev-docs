@@ -20,7 +20,7 @@ Each resource in the response identifies itself by its `resourceId`, `resourceTy
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/advertiser-resources?resourceType=CONTENT_PROVIDER
+GET /v1/advertiser-resources?resourceType=CONTENT_PROVIDER
 ```
 
 ##### Response

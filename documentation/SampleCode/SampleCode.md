@@ -1276,6 +1276,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Enhance your visionOS app by adding an immersive space using RealityKit.
 - [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
+- [Creating a navigation mesh with Reality Composer Pro](../visionOS/creating-a-navigation-mesh-with-reality-composer-pro.md)
+  Move a character around a game level by defining its walkable surface and driving motion with a behavior tree.
 - [Creating SwiftUI windows in visionOS](../visionOS/creating-a-new-swiftui-window-in-visionos.md)
   Display and manage multiple SwiftUI windows in your visionOS app.
 - [Designing no-code games with Reality Composer Pro 3](../visionOS/designing-no-code-games-in-reality-composer-pro-3.md)
@@ -1344,6 +1346,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Change the appearance of a rendered onscreen element when a player gazes at it.
 - [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
+- [Synchronizing custom video playback with SharePlay](../visionOS/synchronizing-custom-video-playback-with-shareplay.md)
+  Keep a custom video pipeline in sync across devices by coordinating playback in SharePlay.
 - [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
 - [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)

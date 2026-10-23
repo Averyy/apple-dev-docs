@@ -19,7 +19,9 @@ This endpoint updates an existing ad creative. Only two fields are mutable after
 
 ##### Request
 
-```json
+```http
+PUT /v1/creatives/666777888
+
 {
  "name": "AwayFinder - Summer Campaign Creative - Revised"
 }
@@ -56,7 +58,9 @@ This endpoint updates an existing ad creative. Only two fields are mutable after
 
 ##### Request
 
-```json
+```http
+PUT /v1/creatives/666777888
+
 {
  "creativeSpec": {
    "localizedText": {
@@ -128,7 +132,7 @@ This endpoint updates an existing ad creative. Only two fields are mutable after
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

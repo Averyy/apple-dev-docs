@@ -51,7 +51,7 @@ Retrieve daily campaign metrics for a specific app campaign, grouped by country.
 
 Filters by a single `campaignId` and groups results by `countryOrRegion`, using daily granularity over a 31-day window in the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/apps/campaigns/query
 
 {
@@ -161,7 +161,7 @@ POST /v1/reports/apps/campaigns/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -18,7 +18,7 @@ This endpoint returns the `userId` and `orgId` associated with the access token 
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/me
+GET /v1/me
 ```
 
 ##### Response

@@ -4,18 +4,20 @@
 **Kind**: httpRequest  
 **Role**: Web Service Endpoint
 
-Queries the localized content associated with a custom product page.
+Queries the localized content of custom product pages (CPPs).
 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
 #### Discussion
 
-This endpoint queries the localized content associated with a specific product page. For each language version, the response returns the metadata that Apple Ads will show (including the localized `appName`, `subTitle`, `promotionalText`, and `shortDescription`) along with asset references organized by device class in the `assetsByDevice` field.
+This endpoint returns locale details for custom product pages. For each language version, the response returns the metadata that Apple Ads will show (including the localized `appName`, `subTitle`, `promotionalText`, and `shortDescription`) along with asset references organized by device class in the `assetsByDevice` field.
 
 To preview how a product page creative will appear across different locales before using it in a campaign, use this endpoint. This is especially useful when managing multi-locale campaigns to verify that all required language variants are present and correctly populated.
 
-The endpoint requires a filter on `productPageId`. Omitting the `languageCode` filter returns locale details for all supported languages of the product page. Add a `languageCode` filter to retrieve a specific locale.
+To retrieve locale details for an app’s default product page, see [`Query App Locale Details`](./query-default-product-page-locale-details-by-adam-id.md).
+
+Filter on `productPageId` to retrieve the locale details for one custom product page. Omitting the `languageCode` filter returns all of that page’s locales. Add a `languageCode` filter to retrieve a specific locale.
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
@@ -35,7 +37,8 @@ Keep the following constraints in mind when querying locale details:
 
 | Constraint | Detail |
 | --- | --- |
-| productPageId required | A filter on `productPageId` is required. The query will return an error without it. |
+| X-AP-Context header | Required. Send `X-AP-Context: adAccountId=<id>`. Without it, the API returns `403 Forbidden`. |
+| productPageId filter | Include a `productPageId` filter. A `productPageId` that doesn’t match any page returns `200` with an empty `result`. |
 | All locales by default | Omitting `languageCode` returns all locales configured for the product page. |
 | assetsByDevice structure | The `assetsByDevice` field maps each specific device type (for example, `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
 
@@ -45,7 +48,9 @@ Keep the following constraints in mind when querying locale details:
 
 ##### Request
 
-```json
+```http
+POST /v1/product-pages/locale-details/query
+
 {
  "filters": [
    {
@@ -125,7 +130,9 @@ Keep the following constraints in mind when querying locale details:
 
 ##### Request
 
-```json
+```http
+POST /v1/product-pages/locale-details/query
+
 {
  "filters": [
    {
@@ -201,7 +208,7 @@ Keep the following constraints in mind when querying locale details:
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 
@@ -225,9 +232,9 @@ See [`QueryRequest`](./queryrequest.md).
 - [Query Product Pages](./query-product-pages.md)
   Queries App Store product pages available to your account.
 - [Get Product Page by ID](./get-product-page-by-id.md)
-  Retrieves a specific Product Page (DPP, CPP, or PPO) by its unique UUID.
+  Retrieves a specific Custom Product Page (CPP) by its unique UUID.
 - [Query App Locale Details](./query-default-product-page-locale-details-by-adam-id.md)
-  Return the default product page locale details for an app identified by its adamId.
+  Returns the default product page locale details for an app identified by its adamId.
 
 
 ---

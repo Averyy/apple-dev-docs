@@ -82,7 +82,7 @@ Retrieve daily campaign metrics grouped by location ID. Each entry in `granularM
 
 Filters by `campaignId` for an Apple Maps campaign, groups by `locationId`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/business-brands/campaigns/query
 
 {
@@ -215,7 +215,7 @@ Retrieve monthly campaign metrics grouped by supply placement to compare perform
 
 Filters by `campaignId` for an Apple Maps campaign, groups by `supplyPlacement`, and uses monthly granularity over a 3-month date range in UTC.
 
-```json
+```http
 POST /v1/reports/business-brands/campaigns/query
 
 {
@@ -420,7 +420,7 @@ POST /v1/reports/business-brands/campaigns/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

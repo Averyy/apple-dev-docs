@@ -4,24 +4,23 @@
 **Kind**: httpRequest  
 **Role**: Web Service Endpoint
 
-Return the default product page locale details for an app identified by its adamId.
+Returns the default product page locale details for an app identified by its adamId.
 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
 #### Discussion
 
-This endpoint returns the default product page locale details for an app identified by its `adamId`. The default product page represents the app’s main App Store listing: the page that all users see unless directed to a custom product page.
+The default product page is the app’s main App Store listing, the page all users see unless directed to a custom product page. This endpoint returns its localized content for an app identified by `adamId`, using the same structure as [`Query Product Page Locale Details`](./query-product-page-locale-details.md), so you don’t need a `productPageId`.
 
-In App Store Connect, there is no explicit “default product page” entity. The app’s main listing is the default. This endpoint surfaces that listing through the same `AppLocaleDetails` structure, so the response format is consistent across both endpoints.
+To retrieve locale details for a custom product page, see [`Query Product Page Locale Details`](./query-product-page-locale-details.md).
 
-To quickly fetch the default page content for an app without needing to first look up the product page ID, use this endpoint. Each object in the result corresponds to one supported language for the default product page.
+Each object in the result corresponds to one supported language for the default product page.
 
 Keep the following constraints in mind when querying default locale details:
 
 | Constraint | Detail |
 | --- | --- |
-| Default page only | This endpoint returns only the default product page. Custom product pages require the Query Product Page Locale Details endpoint. |
 | All locales returned | This endpoint returns all locales configured for the default product page. Filter by `languageCode` in the request body `filters` array if you need a specific locale. |
 | assetsByDevice structure | The `assetsByDevice` field maps each specific device type (for example, `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
 
@@ -42,7 +41,7 @@ The `adamId` field identifies the app via the URL path (`/v1/apps/{adamId}/local
 Returns the default product page locale details for an app identified by its `adamId`. The default product page represents the app’s main App Store listing: the page that all users see unless directed to a custom product page.
 
 ```
-POST https://api.ads.apple.com/v1/apps/123456789/locale-details/query
+POST /v1/apps/123456789/locale-details/query
 ```
 
 ##### Response
@@ -131,7 +130,7 @@ POST https://api.ads.apple.com/v1/apps/123456789/locale-details/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 
@@ -153,9 +152,9 @@ POST https://api.ads.apple.com/v1/apps/123456789/locale-details/query
 - [Query Product Pages](./query-product-pages.md)
   Queries App Store product pages available to your account.
 - [Get Product Page by ID](./get-product-page-by-id.md)
-  Retrieves a specific Product Page (DPP, CPP, or PPO) by its unique UUID.
+  Retrieves a specific Custom Product Page (CPP) by its unique UUID.
 - [Query Product Page Locale Details](./query-product-page-locale-details.md)
-  Queries the localized content associated with a custom product page.
+  Queries the localized content of custom product pages (CPPs).
 
 
 ---

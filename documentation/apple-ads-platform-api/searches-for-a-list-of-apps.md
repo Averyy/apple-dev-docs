@@ -28,7 +28,7 @@ Search for apps by name, filtered to a specific App Store country or region.
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/search/apps?query=AwayFinder&storeFronts=US&limit=20&offset=0
+GET /v1/search/apps?query=AwayFinder&storeFronts=US&limit=20&offset=0
 ```
 
 ##### Response
@@ -71,7 +71,7 @@ Return all apps owned by the caller’s organization, optionally filtered to a s
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/search/apps?returnOwnedApps=true&storeFronts=US&limit=50
+GET /v1/search/apps?returnOwnedApps=true&storeFronts=US&limit=50
 ```
 
 ##### Response
@@ -106,7 +106,7 @@ Retrieve all apps for a specific content provider by CPID.
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/search/apps?cpids=987654&limit=20
+GET /v1/search/apps?cpids=987654&limit=20
 ```
 
 ##### Response
@@ -141,7 +141,7 @@ Search across multiple App Store countries or regions. Repeat the `storeFronts` 
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/search/apps?query=AwayFinder&storeFronts=US&storeFronts=GB&storeFronts=CA&limit=20
+GET /v1/search/apps?query=AwayFinder&storeFronts=US&storeFronts=GB&storeFronts=CA&limit=20
 ```
 
 ##### Response
@@ -192,7 +192,7 @@ GET https://api.ads.apple.com/v1/search/apps?query=AwayFinder&storeFronts=US&sto
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

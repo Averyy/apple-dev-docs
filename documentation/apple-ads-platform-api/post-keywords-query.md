@@ -41,7 +41,7 @@ Query all keywords in a specific ad group, sorted by creation time descending. T
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords/query
 
 {
@@ -118,7 +118,7 @@ Query keywords across several ad groups at once using `adGroupId IN`. The listed
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords/query
 
 {
@@ -189,7 +189,7 @@ Return only exact match keywords across an entire campaign.
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords/query
 
 {
@@ -249,7 +249,7 @@ Retrieve all paused keywords within an ad group to review which terms are suspen
 
 ##### Request
 
-```json
+```http
 POST /v1/keywords/query
 
 {
@@ -311,7 +311,7 @@ POST /v1/keywords/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

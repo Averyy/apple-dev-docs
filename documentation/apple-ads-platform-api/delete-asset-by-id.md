@@ -20,7 +20,7 @@ This endpoint soft-deletes an asset. You can delete only assets that have been u
 Soft-deletes an asset. Query results exclude the asset by default, but Get Asset by ID can still retrieve it.
 
 ```
-DELETE https://api.ads.apple.com/v1/assets/770e8400-e29b-41d4-a716-446655440002
+DELETE /v1/assets/770e8400-e29b-41d4-a716-446655440002
 ```
 
 ##### Response
@@ -43,7 +43,7 @@ DELETE https://api.ads.apple.com/v1/assets/770e8400-e29b-41d4-a716-446655440002
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

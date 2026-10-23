@@ -27,7 +27,7 @@ Only `adamId` is confirmed filterable; other [`CreativeRejectionReason`](./creat
 
 ##### Request
 
-```json
+```http
 POST /v1/rejection-reasons/apps/query
 
 {
@@ -90,7 +90,7 @@ POST /v1/rejection-reasons/apps/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

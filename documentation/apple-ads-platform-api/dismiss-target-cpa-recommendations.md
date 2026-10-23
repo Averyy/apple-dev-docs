@@ -19,7 +19,7 @@ This example dismisses a target CPA recommendation. The campaign’s target CPA 
 
 ##### Request
 
-```json
+```http
 POST /v1/recommendations/target-cpas/dismiss
 
 [
@@ -62,7 +62,7 @@ POST /v1/recommendations/target-cpas/dismiss
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

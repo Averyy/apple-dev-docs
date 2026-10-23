@@ -136,9 +136,9 @@
       "hash": "61eaadfb77034c7949bb60adabeb967e56a1d49a1655456574d1235d9690bd07"
     },
     "https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller": {
-      "etag": "\"7c4d-65db2192fca2f-df\"",
+      "etag": "\"81ff-65d5609c7d2ed-df\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewcontroller.md",
-      "hash": "5b4e4a75ddabeeecaf85d304fac41f94d614f6f763e98b94db8297e1e836d4aa"
+      "hash": "c158d00f150cd5cd8edb287db933c8a2cbeb51582aaf570f098241e82e9c32d8"
     },
     "https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller/cancelediting()": {
       "etag": "\"22eb-65d5609c74ff5-df\"",
@@ -395,9 +395,9 @@
       "hash": "61eaadfb77034c7949bb60adabeb967e56a1d49a1655456574d1235d9690bd07"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewcontroller.json": {
-      "etag": "\"7c4d-65db2192fca2f-df\"",
+      "etag": "\"81ff-65d5609c7d2ed-df\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewcontroller.md",
-      "hash": "5b4e4a75ddabeeecaf85d304fac41f94d614f6f763e98b94db8297e1e836d4aa"
+      "hash": "c158d00f150cd5cd8edb287db933c8a2cbeb51582aaf570f098241e82e9c32d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewcontroller/cancelediting().json": {
       "etag": "\"22eb-65d5609c74ff5-df\"",

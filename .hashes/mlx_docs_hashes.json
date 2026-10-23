@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T17:50:58.884135",
+    "last_updated": "2026-10-23T08:37:51.767955",
     "total_files": 831,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -727,13 +727,13 @@
     "github:ml-explore/mlx-c:README.md": "ef124b17ec085308c792f932c349c1473ff514eb8cb5e86643e48086f4dfd93b",
     "github:ml-explore/mlx-onnx:README.md": "2e04b452e163479ec382d7a2654a14301f2499ba879ac7cb5f71c235fb906871",
     "github:ml-explore/mlx-swift:README.md": "b59e8ecfdeceaf7fb525a182cc6e6d9990cd3d501a678224db093de9d763fd98",
-    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/MLX.md": "d8a2358bd836a2ff14f0fe03f49a412764e2da9b7b56ba2c703bdaa3a639ff44",
-    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/MLXArray.md": "6919d01a31e7250c722bd5c7ac5229c61d57643dd727ed2c39de175069df2ee3",
-    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/free-functions.md": "1afec7f36d6e7b2d14a11b1f759eaddadba3e85ba35a40094b323247b7d588e6",
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/MLX.md": "36d34c049b54bae7671abd700e33f9ba18574a2fb2d0bf3c9c02755855290f8e",
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/MLXArray.md": "07cd8e9dca7ce38b82a0768ae9832c2faa19dfc505722ba25a153a8502fea895",
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/free-functions.md": "39738a29ba5146766b966b899d7e17e8535f55f3d597e8faeed2749d5ff0a478",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/install.md": "1c6481b0defea2bdef29d4428840d177ffd822369f675ff622b99f5819868aa3",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/troubleshooting.md": "e5f0cd07def9f35c7332c65558454ee599c9c7cdcbb3dd41823bb0395411389c",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/broadcasting.md": "e42feb882bc365c3450eef66efc58932168be4d5eaa6ad552137696f72652f6c",
-    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/compilation.md": "7d627e06d1547cf0ae05133ce9a68e623d709979f0d0cba06ead02851a7dbfe0",
+    "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/compilation.md": "faff638d02c7a701a94ab98ab600136f23b47295d42c652c246bbd77b5e8c849",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/converting-python.md": "8fefeb902d7c2268bc9918dd9de43e230ed87a965dc0e2f35a695e391414b4b7",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/lazy-evaluation.md": "7efbdbde70515e4e8abb1f5eeb6971622efd4587f3cbdc7040167559d493dc36",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/running-on-ios.md": "47529892030ce74cbac3668b90a684db173c48c2884e2bdc6773c92dc34cfc04",

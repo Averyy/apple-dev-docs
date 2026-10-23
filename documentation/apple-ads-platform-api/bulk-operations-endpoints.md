@@ -60,7 +60,7 @@ Use the single-item endpoints for one-off changes, such as adjusting a single ke
 - [Bulk Update Negative Keywords](./post-negative-keywords-bulk-update.md)
   Update multiple negative keywords in a single request.
 - [Bulk Delete Negative Keywords](./post-negative-keywords-bulk-delete.md)
-  Delete multiple negative keywords in a single request.
+  Soft-deletes multiple negative keywords in a single request.
 
 ## See Also
 

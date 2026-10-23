@@ -17,7 +17,7 @@ The `brandId` and `adAccountId` fields can’t change after creation, and the up
 
 The `locationIds` and `rules` fields use full-replacement semantics: the value you send becomes the entire list, not a diff against the existing one, since the API doesn’t support partial updates within an array. To add a single location to a `STATIC` group, retrieve the current `locationIds` array, append the new ID, and send the complete list.
 
-When you add or update rules on a `DYNAMIC` group, `systemStatus` transitions to `PENDING` while the system evaluates membership, and `groupTotal` keeps its last known value until evaluation completes. Updating only `name` or `description` leaves `systemStatus`, `groupTotal`, and membership unchanged. Because an ad group displays the place card for each location in its assigned location group, changing a group’s membership changes which place cards appear once evaluation (if triggered) completes.
+When you add or update rules on a `DYNAMIC` group, `systemStatus` transitions to `PENDING` while the system evaluates membership, and `groupTotal` is `null` until evaluation completes. Updating only `name` or `description` leaves `systemStatus`, `groupTotal`, and membership unchanged. Because an ad group displays the place card for each location in its assigned location group, changing a group’s membership changes which place cards appear once evaluation (if triggered) completes.
 
 #### Payload Examples
 
@@ -27,7 +27,7 @@ When you add or update rules on a `DYNAMIC` group, `systemStatus` transitions to
 
 Replaces the rules on a dynamic group, triggering membership re-evaluation.
 
-```json
+```http
 PUT /v1/location-groups/{id}
 
 {
@@ -66,7 +66,7 @@ PUT /v1/location-groups/{id}
        ]
      }
    ],
-   "groupTotal": 42,
+   "groupTotal": null,
    "modificationTime": "2026-04-10T11:00:00Z",
    "eligibility": {
      "status": "PENDING"
@@ -81,7 +81,7 @@ PUT /v1/location-groups/{id}
 
 Updates only the display name without affecting membership.
 
-```json
+```http
 PUT /v1/location-groups/{id}
 
 {
@@ -120,7 +120,7 @@ PUT /v1/location-groups/{id}
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

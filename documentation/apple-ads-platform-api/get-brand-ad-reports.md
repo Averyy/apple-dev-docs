@@ -58,7 +58,7 @@ Retrieve daily ad metrics for a specific ad group, grouped by supply placement.
 
 Filters by `adGroupId` for an Apple Maps ad group, groups by `supplyPlacement`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/business-brands/ads/query
 
 {
@@ -190,7 +190,7 @@ Retrieve daily ad metrics without dimensional grouping. The `granularMetrics` ar
 
 Filters by `campaignId` with no `groupBy` dimension, returning daily Apple Maps ad metrics aggregated across all locations and placements for a 7-day window.
 
-```json
+```http
 POST /v1/reports/business-brands/ads/query
 
 {
@@ -336,7 +336,7 @@ POST /v1/reports/business-brands/ads/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

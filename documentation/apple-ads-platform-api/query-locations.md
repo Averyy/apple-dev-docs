@@ -65,7 +65,9 @@ A few limitations apply to querying locations and using the results for targetin
 
 Retrieve all open locations for a specific brand.
 
-```json
+```http
+POST /v1/locations/query
+
 {
  "filters": [
    {
@@ -156,7 +158,9 @@ Retrieve all open locations for a specific brand.
 
 Retrieve all locations in a specific country to build a country-scoped targeting set.
 
-```json
+```http
+POST /v1/locations/query
+
 {
  "filters": [
    {
@@ -222,7 +226,9 @@ Retrieve all locations in a specific country to build a country-scoped targeting
 
 Search for locations by name prefix, sorted alphabetically.
 
-```json
+```http
+POST /v1/locations/query
+
 {
  "filters": [
    {
@@ -321,7 +327,7 @@ Search for locations by name prefix, sorted alphabetically.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

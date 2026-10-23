@@ -43,7 +43,7 @@ Creating a group also requires satisfying the following constraints:
 | --- | --- |
 | `locationIds` required for `STATIC` | At least one location ID must be provided when `groupType` is `STATIC`. |
 | `rules` required for `DYNAMIC` | At least one rule must be provided when `groupType` is `DYNAMIC`. |
-| `groupTotal` on creation | For `STATIC` groups, `groupTotal` equals the number of IDs supplied. For `DYNAMIC` groups, `groupTotal` is `0` until evaluation completes. |
+| `groupTotal` on creation | For `STATIC` groups, `groupTotal` equals the number of IDs supplied. For `DYNAMIC` groups, `groupTotal` is `null` while `systemStatus` is `PENDING` and populated once it becomes `VALID`. |
 | `locality` value format | A `rules` entry with `field: locality` must use the pipe-delimited format `countryOrRegion|adminArea|locality`, for example `"US|New York|Brooklyn"`, not a bare city name. |
 
 ##### Dynamic Rule Field Values

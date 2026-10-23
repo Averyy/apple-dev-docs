@@ -33,7 +33,7 @@ Deleting an ad group has the following effects:
 Deletes an ad group by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
 ```
-DELETE https://api.ads.apple.com/v1/adgroups/555666777
+DELETE /v1/adgroups/555666777
 ```
 
 ##### Response
@@ -48,7 +48,7 @@ DELETE https://api.ads.apple.com/v1/adgroups/555666777
 
 Query with `deleted EQUALS true` to confirm the ad group shows as deleted.
 
-```json
+```http
 POST /v1/adgroups/query
 
 {
@@ -105,7 +105,7 @@ POST /v1/adgroups/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

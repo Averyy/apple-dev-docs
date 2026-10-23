@@ -54,7 +54,7 @@ Keep the following constraints in mind when reading a GET response:
 Response for an ad that is actively serving. The `systemStatus` field is `RUNNING` and the `displayStatus` field is `RUNNING`.
 
 ```
-GET https://api.ads.apple.com/v1/ads/777888999
+GET /v1/ads/777888999
 ```
 
 ##### Response
@@ -87,7 +87,7 @@ GET https://api.ads.apple.com/v1/ads/777888999
 Response for an ad whose ad creative is pending review. The `systemStatus` field is `NOT_RUNNING` with a reason of `AD_APPROVAL_PENDING`, and the `displayStatus` field is `PROCESSING`.
 
 ```
-GET https://api.ads.apple.com/v1/ads/777888998
+GET /v1/ads/777888998
 ```
 
 ##### Response
@@ -127,7 +127,7 @@ GET https://api.ads.apple.com/v1/ads/777888998
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

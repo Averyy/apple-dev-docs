@@ -9307,7 +9307,7 @@
       "hash": "39edb692accd381507bf1865dc6ff2be27bbb5bdb8ed292ad0a7c1c7a7b94b77"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/medicalinstrumentusage/volume": {
-      "etag": "\"ec7-65d55ea1261e0-df\"",
+      "etag": "\"ec7-65d55ea1261e0\"",
       "file_path": "documentation/CoreHID/hidusage/medicalinstrumentusage/volume.md",
       "hash": "24618dd80b699edb1819f0cc9a54a2a06db5509ebd68fce9930887e1d01a9ef6"
     },
@@ -24708,7 +24708,7 @@
       "hash": "39edb692accd381507bf1865dc6ff2be27bbb5bdb8ed292ad0a7c1c7a7b94b77"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/medicalinstrumentusage/volume.json": {
-      "etag": "\"ec7-65d55ea1261e0-df\"",
+      "etag": "\"ec7-65d55ea1261e0\"",
       "file_path": "documentation/CoreHID/hidusage/medicalinstrumentusage/volume.md",
       "hash": "24618dd80b699edb1819f0cc9a54a2a06db5509ebd68fce9930887e1d01a9ef6"
     },

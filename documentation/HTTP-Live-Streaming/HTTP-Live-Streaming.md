@@ -35,7 +35,7 @@ The distribution system is a web server or a web-caching system that delivers th
 
 ##### Access media through client software
 
-Client software is responsible for determining the appropriate media to request, downloading those resources, and then reassembling them so that the media can be presented to the user in a continuous stream. For the rules governing the interaction between an HLS player and its server, see [HTTP Live Streaming 2nd Edition](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
+Client software is responsible for determining the appropriate media to request, downloading those resources, and then reassembling them so that the media can be presented to the user in a continuous stream. For the rules governing the interaction between an HLS player and its server, see [HTTP Live Streaming 2nd Edition](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis). For the Apple device specification, see [HTTP Live Streaming (HLS) authoring specification for Apple devices](https://developer.apple.com/streaming/hls-authoring-specification-for-apple-devices.html).
 
 Apple provides several frameworks that support HTTP Live Streaming, including [AVKit](../AVKit/AVKit.md), [AVFoundation](../AVFoundation/AVFoundation.md), and [WebKit](../WebKit/WebKit.md). Support has been available since iOS 3.0 and Safari 4.0, so there’s no need to develop your own client software.
 
@@ -61,8 +61,6 @@ Continue this process until your client encounters the `EXT-X-ENDLIST` tag in th
 - [Using Apple’s HTTP Live Streaming (HLS) Tools](./using-apple-s-http-live-streaming-hls-tools.md)
   Segment your video stream and create media playlists for successful transmission with Apple’s provided tools.
 ### Specifications and other documents
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
-  Learn the requirements for live and on-demand audio and video content delivery using HLS.
 - [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
 - [Using content protection systems with HLS](./using-content-protection-systems-with-hls.md)

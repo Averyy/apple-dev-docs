@@ -206,9 +206,9 @@
       "hash": "a04ef27c1a709492c20c2e50b6feda7bc9419b52540a3088e65bb7192fd35d5e"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview": {
-      "etag": "\"82c6-65d55ee3287e7-df\"",
+      "etag": "\"7d14-65d61924330e2-df\"",
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
+      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview/controlsstyle": {
       "etag": "\"23d4-65d55ee2f3b37-df\"",
@@ -346,9 +346,9 @@
       "hash": "a14c6fd9f8d941ef07bcbd996d5891dfc692ab6fb38789977000ac0bbdf6d596"
     },
     "https://developer.apple.com/documentation/avkit/avcontentproposalviewcontroller": {
-      "etag": "\"9065-65d61924330e2-df\"",
+      "etag": "\"9617-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avcontentproposalviewcontroller.md",
-      "hash": "e13164d5fc657ccfcf83c76d2ef2967afeb395b46ba95e577dd909d32b47cd78"
+      "hash": "dac7893cb4324b546d88767dd3d4213316f19edb91f0a64d0ecceec6b36295f3"
     },
     "https://developer.apple.com/documentation/avkit/avcontentproposalviewcontroller/contentproposal": {
       "etag": "\"327c-65d55ee2c18f1-df\"",
@@ -3006,9 +3006,9 @@
       "hash": "a04ef27c1a709492c20c2e50b6feda7bc9419b52540a3088e65bb7192fd35d5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview.json": {
-      "etag": "\"82c6-65d55ee3287e7-df\"",
+      "etag": "\"7d14-65d61924330e2-df\"",
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
+      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview/controlsstyle.json": {
       "etag": "\"23d4-65d55ee2f3b37-df\"",
@@ -3146,9 +3146,9 @@
       "hash": "a14c6fd9f8d941ef07bcbd996d5891dfc692ab6fb38789977000ac0bbdf6d596"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcontentproposalviewcontroller.json": {
-      "etag": "\"9065-65d61924330e2-df\"",
+      "etag": "\"9617-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avcontentproposalviewcontroller.md",
-      "hash": "e13164d5fc657ccfcf83c76d2ef2967afeb395b46ba95e577dd909d32b47cd78"
+      "hash": "dac7893cb4324b546d88767dd3d4213316f19edb91f0a64d0ecceec6b36295f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcontentproposalviewcontroller/contentproposal.json": {
       "etag": "\"327c-65d55ee2c18f1-df\"",

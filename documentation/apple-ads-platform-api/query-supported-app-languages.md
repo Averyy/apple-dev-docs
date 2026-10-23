@@ -51,7 +51,7 @@ Return all supported countries and regions sorted alphabetically by name. Useful
 
 ##### Request
 
-```json
+```http
 POST /v1/metadata/apps/supported-languages/query
 
 {
@@ -142,7 +142,7 @@ Fetch language details for a single country by its ISO code. To confirm availabl
 
 ##### Request
 
-```json
+```http
 POST /v1/metadata/apps/supported-languages/query
 
 {
@@ -200,7 +200,7 @@ Fetch language details for several countries at once. Useful when validating loc
 
 ##### Request
 
-```json
+```http
 POST /v1/metadata/apps/supported-languages/query
 
 {
@@ -315,7 +315,7 @@ POST /v1/metadata/apps/supported-languages/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

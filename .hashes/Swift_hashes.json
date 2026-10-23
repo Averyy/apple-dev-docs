@@ -2956,9 +2956,9 @@
       "hash": "4d8a7338324b5301142a27e95f5961d458ca777046c1e7af3c2e46fdccd8fdaf"
     },
     "https://developer.apple.com/documentation/swift/array": {
-      "etag": "\"3e39e-65d560f187f58-df\"",
+      "etag": "\"3e636-65e564baf117d-df\"",
       "file_path": "documentation/Swift/array.md",
-      "hash": "7445165caabb72b38e0bb115ef8c352e7c289ad3c6a3128ee7ddfd5c4199de29"
+      "hash": "f87cfd3246604ba720c95b7b3e8506ad142f2a97af9aaf5edd2e7e94d795f9bc"
     },
     "https://developer.apple.com/documentation/swift/array/!=(_:_:)": {
       "etag": "\"45e1-65d560eeed514-df\"",
@@ -9990,9 +9990,9 @@
       "hash": "79c71a5ccace2858209ce935742d4b868635d85e3dd8989dc199ea3fe30c9a13"
     },
     "https://developer.apple.com/documentation/swift/closedrange": {
-      "etag": "\"ffbf-65d560e373e8d-df\"",
+      "etag": "\"102e7-65e564b295f99-df\"",
       "file_path": "documentation/Swift/closedrange.md",
-      "hash": "c4f59af5b7ca60f055da5eeb4445a0fb88e610e38b9c82bb7e73e27ca10f879b"
+      "hash": "8451ffe250e93fbc77ffb3b17962b4756b1a2a50f6a820f5f3eef04aa9a27685"
     },
     "https://developer.apple.com/documentation/swift/closedrange/!=(_:_:)": {
       "etag": "\"2b9f-65d560f329f29-df\"",
@@ -11030,7 +11030,7 @@
       "hash": "6cc5b7f5ecc1f4db63d5697f2cc4a3013af0812840158ccfe1762a29b3db7f30"
     },
     "https://developer.apple.com/documentation/swift/collectiondifference/index/'.._(_:_:)": {
-      "etag": "\"203a-65d560fe9f38d\"",
+      "etag": "\"203a-65d560fe9f38d-df\"",
       "file_path": "documentation/Swift/collectiondifference/index/dotdotop(_,_).md",
       "hash": "10ce623bc1e81fd7ea764ccd4e6b8840ce5051db638f705f27f783c35f4ca321"
     },
@@ -40447,9 +40447,9 @@
       "hash": "85d72234caac2457c029c8cb7b94530032830468caa3e50ecfae0ffc6f1e3b5f"
     },
     "https://developer.apple.com/documentation/swift/optional": {
-      "etag": "\"13ae6-65d56104287ad-df\"",
+      "etag": "\"13d7e-65e564c4c41d8-df\"",
       "file_path": "documentation/Swift/optional.md",
-      "hash": "4b14b8b682a0505b9b154ef1f49c4f1e97c4176ceeac6248e84d8e782ba83b32"
+      "hash": "93a430e2c2dd411931af065755c7091e952a13f7cf172a3d0ee82b5eaee158c5"
     },
     "https://developer.apple.com/documentation/swift/optional/!=(_:_:)-1bazb": {
       "file_path": "documentation/Swift/optional/noteq(_,_)-1bazb.md",
@@ -41236,9 +41236,9 @@
       "hash": "0447e65aa6287aff4da6a1e6ea66e0b235a5ac56beedd2c6df77e19a47321253"
     },
     "https://developer.apple.com/documentation/swift/partialrangefrom": {
-      "etag": "\"76d8-65d560ef8134d-df\"",
+      "etag": "\"7a00-65e564b95e35c-df\"",
       "file_path": "documentation/Swift/partialrangefrom.md",
-      "hash": "996a97d618beb2a31a07e7faef7c4292e7b07db005d266842524e7a346a10d1e"
+      "hash": "00f8f1a471a47e1dac629a6782978df266f406ceedb2f434585046f5bec8bf83"
     },
     "https://developer.apple.com/documentation/swift/partialrangefrom/contains(_:)": {
       "etag": "\"19d2-65d560f59a3e5-df\"",
@@ -41321,9 +41321,9 @@
       "hash": "b48a255bf7632b39a8810f98828137caa8ca8f30db68d46780f7946478fe9927"
     },
     "https://developer.apple.com/documentation/swift/partialrangethrough": {
-      "etag": "\"60e8-65d560e3c0762-df\"",
+      "etag": "\"6410-65e564b2d7445-df\"",
       "file_path": "documentation/Swift/partialrangethrough.md",
-      "hash": "85e536b566c02c70330b70f0b76a6b2b6725883aca8c0507c637fc58693afe6b"
+      "hash": "05d0528c85cab2aa1929d2a730867341027722b81aa217dc64087fc5b926ad07"
     },
     "https://developer.apple.com/documentation/swift/partialrangethrough/contains(_:)": {
       "etag": "\"19fa-65d560f805b13-df\"",
@@ -41376,9 +41376,9 @@
       "hash": "a3f94f8c74785529f942394fdaf0ebb32b0d7ccdb309a67041acae0c0d3546eb"
     },
     "https://developer.apple.com/documentation/swift/partialrangeupto": {
-      "etag": "\"60a0-65d560e68a5d3-df\"",
+      "etag": "\"63c8-65e564b47ebea-df\"",
       "file_path": "documentation/Swift/partialrangeupto.md",
-      "hash": "de9411a2a6e52c5f23eb73ba7860e6e32f3a4ffe47abfaee13029462017c5d85"
+      "hash": "4dfeafeee1eb28749173c40cb9b9b08805b1b995816754ead0b2c91f1ec29d92"
     },
     "https://developer.apple.com/documentation/swift/partialrangeupto/contains(_:)": {
       "etag": "\"19e1-65d56101582db-df\"",
@@ -41851,9 +41851,9 @@
       "hash": "40a27d154eeee11a8f83cbbb92bcaa73d989442cdf2aa717c5ddded873dde7c6"
     },
     "https://developer.apple.com/documentation/swift/range": {
-      "etag": "\"13b1d-65d560f0ef409-df\"",
+      "etag": "\"13e45-65e564ba94c50-df\"",
       "file_path": "documentation/Swift/range.md",
-      "hash": "839d627ba38c39c7c7d33a0b096c5f618b9f13842b59fda0046487e40dfc9f5d"
+      "hash": "311805163212825e672ea4655d8b80da35cc82a9d711b522f0268e511bec845e"
     },
     "https://developer.apple.com/documentation/swift/range/!=(_:_:)": {
       "etag": "\"2b44-65d56105527d9-df\"",
@@ -93454,9 +93454,9 @@
       "hash": "4d8a7338324b5301142a27e95f5961d458ca777046c1e7af3c2e46fdccd8fdaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/array.json": {
-      "etag": "\"3e39e-65d560f187f58-df\"",
+      "etag": "\"3e636-65e564baf117d-df\"",
       "file_path": "documentation/Swift/array.md",
-      "hash": "7445165caabb72b38e0bb115ef8c352e7c289ad3c6a3128ee7ddfd5c4199de29"
+      "hash": "f87cfd3246604ba720c95b7b3e8506ad142f2a97af9aaf5edd2e7e94d795f9bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/array/!=(_:_:).json": {
       "etag": "\"45e1-65d560eeed514-df\"",
@@ -100536,9 +100536,9 @@
       "hash": "79c71a5ccace2858209ce935742d4b868635d85e3dd8989dc199ea3fe30c9a13"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/closedrange.json": {
-      "etag": "\"ffbf-65d560e373e8d-df\"",
+      "etag": "\"102e7-65e564b295f99-df\"",
       "file_path": "documentation/Swift/closedrange.md",
-      "hash": "c4f59af5b7ca60f055da5eeb4445a0fb88e610e38b9c82bb7e73e27ca10f879b"
+      "hash": "8451ffe250e93fbc77ffb3b17962b4756b1a2a50f6a820f5f3eef04aa9a27685"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/closedrange/!=(_:_:).json": {
       "etag": "\"2b9f-65d560f329f29-df\"",
@@ -101600,7 +101600,7 @@
       "hash": "6cc5b7f5ecc1f4db63d5697f2cc4a3013af0812840158ccfe1762a29b3db7f30"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/collectiondifference/index/'.._(_:_:).json": {
-      "etag": "\"203a-65d560fe9f38d\"",
+      "etag": "\"203a-65d560fe9f38d-df\"",
       "file_path": "documentation/Swift/collectiondifference/index/dotdotop(_,_).md",
       "hash": "10ce623bc1e81fd7ea764ccd4e6b8840ce5051db638f705f27f783c35f4ca321"
     },
@@ -131661,9 +131661,9 @@
       "hash": "85d72234caac2457c029c8cb7b94530032830468caa3e50ecfae0ffc6f1e3b5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/optional.json": {
-      "etag": "\"13ae6-65d56104287ad-df\"",
+      "etag": "\"13d7e-65e564c4c41d8-df\"",
       "file_path": "documentation/Swift/optional.md",
-      "hash": "4b14b8b682a0505b9b154ef1f49c4f1e97c4176ceeac6248e84d8e782ba83b32"
+      "hash": "93a430e2c2dd411931af065755c7091e952a13f7cf172a3d0ee82b5eaee158c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/optional/!=(_:_:)-1bazb.json": {
       "file_path": "documentation/Swift/optional/noteq(_,_)-1bazb.md",
@@ -132450,9 +132450,9 @@
       "hash": "0447e65aa6287aff4da6a1e6ea66e0b235a5ac56beedd2c6df77e19a47321253"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/partialrangefrom.json": {
-      "etag": "\"76d8-65d560ef8134d-df\"",
+      "etag": "\"7a00-65e564b95e35c-df\"",
       "file_path": "documentation/Swift/partialrangefrom.md",
-      "hash": "996a97d618beb2a31a07e7faef7c4292e7b07db005d266842524e7a346a10d1e"
+      "hash": "00f8f1a471a47e1dac629a6782978df266f406ceedb2f434585046f5bec8bf83"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/partialrangefrom/contains(_:).json": {
       "etag": "\"19d2-65d560f59a3e5-df\"",
@@ -132535,9 +132535,9 @@
       "hash": "b48a255bf7632b39a8810f98828137caa8ca8f30db68d46780f7946478fe9927"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/partialrangethrough.json": {
-      "etag": "\"60e8-65d560e3c0762-df\"",
+      "etag": "\"6410-65e564b2d7445-df\"",
       "file_path": "documentation/Swift/partialrangethrough.md",
-      "hash": "85e536b566c02c70330b70f0b76a6b2b6725883aca8c0507c637fc58693afe6b"
+      "hash": "05d0528c85cab2aa1929d2a730867341027722b81aa217dc64087fc5b926ad07"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/partialrangethrough/contains(_:).json": {
       "etag": "\"19fa-65d560f805b13-df\"",
@@ -132590,9 +132590,9 @@
       "hash": "a3f94f8c74785529f942394fdaf0ebb32b0d7ccdb309a67041acae0c0d3546eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/partialrangeupto.json": {
-      "etag": "\"60a0-65d560e68a5d3-df\"",
+      "etag": "\"63c8-65e564b47ebea-df\"",
       "file_path": "documentation/Swift/partialrangeupto.md",
-      "hash": "de9411a2a6e52c5f23eb73ba7860e6e32f3a4ffe47abfaee13029462017c5d85"
+      "hash": "4dfeafeee1eb28749173c40cb9b9b08805b1b995816754ead0b2c91f1ec29d92"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/partialrangeupto/contains(_:).json": {
       "etag": "\"19e1-65d56101582db-df\"",
@@ -133069,9 +133069,9 @@
       "hash": "40a27d154eeee11a8f83cbbb92bcaa73d989442cdf2aa717c5ddded873dde7c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/range.json": {
-      "etag": "\"13b1d-65d560f0ef409-df\"",
+      "etag": "\"13e45-65e564ba94c50-df\"",
       "file_path": "documentation/Swift/range.md",
-      "hash": "839d627ba38c39c7c7d33a0b096c5f618b9f13842b59fda0046487e40dfc9f5d"
+      "hash": "311805163212825e672ea4655d8b80da35cc82a9d711b522f0268e511bec845e"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift/range/!=(_:_:).json": {
       "etag": "\"2b44-65d56105527d9-df\"",

@@ -23,17 +23,14 @@ A slider control that allows a person to change the pitch of the map.
 - [init(scope: Namespace.ID?)](./mappitchslider/init%28scope%29.md)
   Creates a new map pitch slider with the scope you specify.
 ### Managing map control sizing and visibility
-- [func mapControlVisibility(Visibility) -> some View
-](../SwiftUI/view/mapcontrolvisibility%28_%29.md)
+- [func mapControlVisibility(Visibility) -> some View\n](../SwiftUI/view/mapcontrolvisibility%28_%29.md)
   Configures all Map controls in the environment to have the specified visibility
-- [func mapControls(() -> some View) -> some View
-](../SwiftUI/view/mapcontrols%28_%29.md)
+- [func mapControls(() -> some View) -> some View\n](../SwiftUI/view/mapcontrols%28_%29.md)
   Configures all `Map` views in the associated environment to have standard size and position controls
 - [func controlSize(_:)](../SwiftUI/view/controlsize%28_%29.md)
   Sets the size for controls within this view.
 ### Setting the namespace Identifier
-- [func mapScope(Namespace.ID) -> some View
-](../SwiftUI/view/mapscope%28_%29.md)
+- [func mapScope(Namespace.ID) -> some View\n](../SwiftUI/view/mapscope%28_%29.md)
   Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 
 ## Relationships

@@ -52,7 +52,7 @@ Retrieve daily ad group metrics for all ad groups in a campaign, grouped by devi
 
 Filters by `campaignId` to retrieve all ad groups in a campaign, groups results by `deviceClass`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/apps/adgroups/query
 
 {
@@ -153,7 +153,7 @@ POST /v1/reports/apps/adgroups/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

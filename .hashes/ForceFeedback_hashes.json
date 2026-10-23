@@ -1221,7 +1221,7 @@
       "hash": "e9bf9505581e57833febe36db4bc2cd04ecc2390094f4c6d79e7dc91a07ecd0c"
     },
     "https://developer.apple.com/documentation/forcefeedback/pffperiodic": {
-      "etag": "\"612f-65d55e6e918cd\"",
+      "etag": "\"612f-65d55e6e918cd-df\"",
       "file_path": "documentation/ForceFeedback/pffperiodic.md",
       "hash": "86b14be91470ab670815294c9ff9ef2c52836444bacd012097a581c083dcda7e"
     },
@@ -2451,7 +2451,7 @@
       "hash": "e9bf9505581e57833febe36db4bc2cd04ecc2390094f4c6d79e7dc91a07ecd0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/forcefeedback/pffperiodic.json": {
-      "etag": "\"612f-65d55e6e918cd\"",
+      "etag": "\"612f-65d55e6e918cd-df\"",
       "file_path": "documentation/ForceFeedback/pffperiodic.md",
       "hash": "86b14be91470ab670815294c9ff9ef2c52836444bacd012097a581c083dcda7e"
     },

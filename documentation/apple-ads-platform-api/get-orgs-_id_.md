@@ -18,7 +18,7 @@ This endpoint retrieves the details of a specific organization by its ID. To ret
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/orgs/987654321
+GET /v1/orgs/987654321
 ```
 
 ##### Response

@@ -556,7 +556,7 @@
       "hash": "50cdf40657ff974f2af2de694a1c8384f8578a5797f2b7018776fb68b2b00456"
     },
     "https://developer.apple.com/documentation/storekit/compactproductviewstyle/init()": {
-      "etag": "\"d54-65d55d1fedddb\"",
+      "etag": "\"d54-65d55d1fedddb-df\"",
       "file_path": "documentation/StoreKit/compactproductviewstyle/init().md",
       "hash": "edcf8cf47f5eb19da80ae0d34380c25744f353b15c3fee4a088bd57f2cc2c856"
     },
@@ -4756,9 +4756,9 @@
       "hash": "a7b5f9db3778b3f2735543d1a72ddd76f069823e92229c592d82d736ebd6cf5f"
     },
     "https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller": {
-      "etag": "\"cb14-65d55d1e81ef9-df\"",
+      "etag": "\"c562-65dad2a80132a-df\"",
       "file_path": "documentation/StoreKit/skstoreproductviewcontroller.md",
-      "hash": "d781c26a661fd399005818195d4544c25795023cb41befd500de8085ab4fce4d"
+      "hash": "ffe9be669841deb4f61288d6521c258b2907d17ee0ff45779a6e8391603a0790"
     },
     "https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller/delegate": {
       "etag": "\"2926-65d55d1e1f57b-df\"",
@@ -7680,7 +7680,7 @@
       "hash": "50cdf40657ff974f2af2de694a1c8384f8578a5797f2b7018776fb68b2b00456"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/compactproductviewstyle/init().json": {
-      "etag": "\"d54-65d55d1fedddb\"",
+      "etag": "\"d54-65d55d1fedddb-df\"",
       "file_path": "documentation/StoreKit/compactproductviewstyle/init().md",
       "hash": "edcf8cf47f5eb19da80ae0d34380c25744f353b15c3fee4a088bd57f2cc2c856"
     },
@@ -11880,9 +11880,9 @@
       "hash": "a7b5f9db3778b3f2735543d1a72ddd76f069823e92229c592d82d736ebd6cf5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skstoreproductviewcontroller.json": {
-      "etag": "\"cb14-65d55d1e81ef9-df\"",
+      "etag": "\"c562-65dad2a80132a-df\"",
       "file_path": "documentation/StoreKit/skstoreproductviewcontroller.md",
-      "hash": "d781c26a661fd399005818195d4544c25795023cb41befd500de8085ab4fce4d"
+      "hash": "ffe9be669841deb4f61288d6521c258b2907d17ee0ff45779a6e8391603a0790"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skstoreproductviewcontroller/delegate.json": {
       "etag": "\"2926-65d55d1e1f57b-df\"",

@@ -59,7 +59,9 @@ You can sort results by any filterable field using the `sorting` array; see [`Qu
 
 Returns all location groups belonging to a specific brand.
 
-```json
+```http
+POST /v1/location-groups/query
+
 {
  "filters": [
    {
@@ -109,7 +111,9 @@ Returns all location groups belonging to a specific brand.
 
 Returns only `DYNAMIC` location groups.
 
-```json
+```http
+POST /v1/location-groups/query
+
 {
  "filters": [
    {
@@ -157,7 +161,7 @@ Returns only `DYNAMIC` location groups.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

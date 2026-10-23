@@ -99,7 +99,7 @@ Retrieve daily first-slot impression share for an app, filtered to a specific co
 
 Queries daily first-slot impression share for a specific app in the US over a seven-day window, scoping results to the first ad position only.
 
-```json
+```http
 POST /v1/insights/apps/impression-share/query
 
 {
@@ -176,7 +176,7 @@ Retrieve weekly all-slots impression share to understand overall reach across al
 
 Queries weekly all-slots impression share for an app over a four-week window (the maximum for `WEEKLY_SUN_SAT` granularity), sorted by `highImpressionShare` descending to highlight the search terms with the strongest reach.
 
-```json
+```http
 POST /v1/insights/apps/impression-share/query
 
 {
@@ -243,7 +243,7 @@ Retrieve first-slot impression share for a branded search term. When `lowImpress
 
 Queries daily first-slot impression share for a branded term where the app already dominates the auction.
 
-```json
+```http
 POST /v1/insights/apps/impression-share/query
 
 {
@@ -309,7 +309,7 @@ POST /v1/insights/apps/impression-share/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -18,7 +18,7 @@ This endpoint returns the full `BusinessCategory` object for the specified categ
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/business-categories/cat-din-001
+GET /v1/business-categories/cat-din-001
 ```
 
 ##### Response
@@ -52,7 +52,7 @@ GET https://api.ads.apple.com/v1/business-categories/cat-din-001
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

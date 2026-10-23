@@ -586,9 +586,9 @@
       "hash": "ccbb19f96bf35aef1c7d2b81fdfcf9f02121de24b88939cf83ebf23cdd63a378"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/appdetailsresponse": {
-      "etag": "\"3ab8-65d55abe7af45-df\"",
+      "etag": "\"3ab8-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/appdetailsresponse.md",
-      "hash": "9d7dc1dcd5eed19199c9bc29121db2e6d0a2e96a41cf9e4fc6e603dcee60a57a"
+      "hash": "b4ad6f6dd7d64e13da5d2635ec7c076346dfb5429323c3d543e7592d3b0d0fd1"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/appinfo": {
       "etag": "\"2141-65d55abfc4787-df\"",
@@ -606,19 +606,19 @@
       "hash": "b72a96b82136057b22fe6c76aa1eac93aa53ee4e5f198ed23f8f4a7943452631"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/applocaledetailsqueryresponse": {
-      "etag": "\"3302-65d55abf264ba-df\"",
+      "etag": "\"3303-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/applocaledetailsqueryresponse.md",
-      "hash": "847542d5ad5e4e01185ba8227c7d5023ade9ab7af86e7c1697e2a79ce6c91a08"
+      "hash": "e14d57ce2634be53091cc6d784ffeae2276bdb1eb4355a53ce932a1799c45d1b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/apply-daily-budget-recommendations": {
-      "etag": "\"3cc3-65d55abeee8f9-df\"",
+      "etag": "\"3cc3-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/apply-daily-budget-recommendations.md",
-      "hash": "3a1065c3b6a934bdcad9e48d1c10781138a523e0e94f577af11130c2ad1b3e22"
+      "hash": "788ef76160ea6258cea2ee895a0dbe175fad143d9cf508fa14d018a4399d9561"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/apply-target-cpa-recommendations": {
-      "etag": "\"3bd7-65d55abe3c34d-df\"",
+      "etag": "\"3bd7-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/apply-target-cpa-recommendations.md",
-      "hash": "e09cf29fa5ff594883e60d27a21c261ebf2d81d9d60b8041e0d23dbf420e2443"
+      "hash": "3b8b5cf9a36681e3ed685db489fa4098fe8b2a0e1d22a8b5bf639437bbc11643"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/applydailycaprecommendation": {
       "etag": "\"4819-65d55abe58b6d-df\"",
@@ -1346,9 +1346,9 @@
       "hash": "b7739e0bc51fa6361b77515122d33c3b0f17b63b9af6a77187c5f8530c3a5e77"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/bulk-operations-endpoints": {
-      "etag": "\"3ad7-65d754ea7aa6e-df\"",
+      "etag": "\"3add-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/bulk-operations-endpoints.md",
-      "hash": "853a9152b485013f4f983e0ddf61205146fc96927c5db8472faef62ab87927f6"
+      "hash": "a37ab88f89aabbdac0ef2b42f8fbd52a051f1a9c3793557243331ab22a7f4e78"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/bulkentitydeleteidlong": {
       "etag": "\"3b64-65d55abfc4787-df\"",
@@ -1786,9 +1786,9 @@
       "hash": "e07927111615698d6eb955e3603ec64267ef7849c20ab975a5cd47b6c1cfb803"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/create-location-group": {
-      "etag": "\"3ab4-65d55abff10ea-df\"",
+      "etag": "\"3af7-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/create-location-group.md",
-      "hash": "8fcc3c151904b24e115524b5fdd6f9dca467b41ea242098d071f190d14f48dcc"
+      "hash": "57460b1e546b9c1b31bc122a07bf42cf1e10c10ecd96cf6ab9f91e0dfc149cd0"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/creative": {
       "etag": "\"7568-65d55abf65343-df\"",
@@ -1976,9 +1976,9 @@
       "hash": "511956020570b39e8e28db24dd6055fccf53837e526dfa32f39337a620078338"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delegationupdate": {
-      "etag": "\"47b3-65d55abf84e8c-df\"",
+      "etag": "\"47b3-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/delegationupdate.md",
-      "hash": "d8b809c684684eb349da87c340199ee9477b1cd50a83c3c74cf1d859c2502257"
+      "hash": "bf59937adda64d422a1ec0038c2fa4af13c7bf33e71ff5753b1b8f2607fce03a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delegationupdate/resourcetype-data.typealias": {
       "etag": "\"13f6-65d55abf84e8c-df\"",
@@ -1986,49 +1986,49 @@
       "hash": "da7a1866e63690df3391a89dee4d95ec16952bdf70eedda3cf14d9cdab74abc5"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-adgroups-_id_": {
-      "etag": "\"361e-65d55abf65343-df\"",
+      "etag": "\"3603-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-adgroups-_id_.md",
-      "hash": "0c5b327739a01d3baae48891d0872ffc72ab3647a9106b2922dc5068991ce6b2"
+      "hash": "23e5016d65a1f6fff8b543f6d1800364b776b48d5fa5deb5d40ae398f4daae1c"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-ads-_id_": {
-      "etag": "\"3a89-65d55abe98c9c-df\"",
+      "etag": "\"3a6e-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-ads-_id_.md",
-      "hash": "3fd29cd53389305c1afa8013202a50daf3b198c41dcbbd004cd83e4e5cb03124"
+      "hash": "d21f093db07478725fea1dab8d1afd1761638a34939fae42e7fbb0f70b338a01"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-asset-by-id": {
-      "etag": "\"268a-65d55abff10ea-df\"",
+      "etag": "\"266f-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-asset-by-id.md",
-      "hash": "b6b78438eb547ac064b63d30b99da82d9071b58cb3e1d2368133240bb7c423b7"
+      "hash": "217b5afd0e78aae37c725b9c2df08771a87417a5eda56d980d7912cc6a3d7501"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-campaigns-_id_": {
-      "etag": "\"3965-65d55abf0cf06-df\"",
+      "etag": "\"392f-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-campaigns-_id_.md",
-      "hash": "70de10cd56c261a628aaeec97d1f8bf0ebbb1bd792958b0b0de9cf048c0ad56b"
+      "hash": "5fb5ce2d3a1151f34bb8b3c8147e66927d7743b36dc4edf00ffa0f6ee863d97b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-creatives-_id_": {
-      "etag": "\"3358-65d55abe58b6d-df\"",
+      "etag": "\"333d-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-creatives-_id_.md",
-      "hash": "fbc6a0f78c74df39728a8751f851a970788820ee4635252714d95a84f0f7ca9d"
+      "hash": "22590d6e05d4ac74741f75034a9e666f32385fc26dcdf5f636f679dfd059a54a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-keywords-_id_": {
-      "etag": "\"3262-65d55abeee8f9-df\"",
+      "etag": "\"3247-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-keywords-_id_.md",
-      "hash": "ce55eb2e3aa81ec50e338f9a2518b98c1b8714db60700aa53dd5d8acd21203f6"
+      "hash": "41161694f8c86365bfd802b60a1a32129b256e0e8ac193bb8b967b2e8a6f0296"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-location-group": {
-      "etag": "\"334b-65d55abfa2fc7-df\"",
+      "etag": "\"3330-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-location-group.md",
-      "hash": "400b646851d48bc614b92c17f78030fdaa3dabd9afa5c921d59bef86072625a5"
+      "hash": "f916ffef0b670a7a919cb38a32e141086c5d730dacc761556b73eabc6ee050fa"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-negative-keywords-_id_": {
-      "etag": "\"3527-65d55abf47dc3-df\"",
+      "etag": "\"350c-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-negative-keywords-_id_.md",
-      "hash": "3c241840464db4303f965f5376e1c884ed3dfea1e2115e8a0c95a07574b4eece"
+      "hash": "b146147bb1ac4b9bc7a41aabe1c2bdcc1a57ab3cb4ff0c2b1329ba94e5c23d29"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-shared-budgets-_id_": {
-      "etag": "\"3817-65d754e9ea1e2-df\"",
+      "etag": "\"37fc-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-shared-budgets-_id_.md",
-      "hash": "ae0c772cbfa64972f949e7aa8c588e0e3e6e6c2364382306a24124308ab30ca0"
+      "hash": "11b9e02dfab8f5cb995867a7b7bc6e09606e23253397ea50903e84964a3b3cf4"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/destination": {
       "etag": "\"490e-65d55abf264ba-df\"",
@@ -2071,19 +2071,19 @@
       "hash": "dba298488fa545db5993875cfdbf2ef7e0c0a2880afe55ad96d2c8a0117cc64f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/deviceassetgroup": {
-      "etag": "\"275e-65d55abf0cf06-df\"",
+      "etag": "\"2722-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/deviceassetgroup.md",
-      "hash": "3a9c1c47d57fdb9854eb6d11963478d322624b79db95a2570d7e3483de534ab2"
+      "hash": "9d29676600e71648841e4e398450152e2f45c28695803b025dbfa981333b3e64"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/dismiss-daily-budget-recommendations": {
-      "etag": "\"3a63-65d55abe58b6d-df\"",
+      "etag": "\"3a63-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/dismiss-daily-budget-recommendations.md",
-      "hash": "c779192ee7dfbf25cded2d9fb4c0128b375c802e6054fc256df5f251ca83b145"
+      "hash": "eb357abbcbc256c995ce65c7bb8d8bc1cbcd11d7647740c8f81d09a9a47e7b28"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/dismiss-target-cpa-recommendations": {
-      "etag": "\"3a63-65d55abf65343-df\"",
+      "etag": "\"3a63-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/dismiss-target-cpa-recommendations.md",
-      "hash": "d8944e258a1f6b76abaf543ac5cff4f6d866d4b5a04405c0a72541903311d902"
+      "hash": "ca3281bdff6828efb7cfe46d448841c6e364068e30f865d8166b9a55eb488526"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/eligibility": {
       "etag": "\"4afe-65d55abf84e8c-df\"",
@@ -2151,14 +2151,14 @@
       "hash": "a652a37edcbb4f82fe3f7fee1d249b6ae1b786263fd63b3d3c788d1c3340fb54"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/find-apps-eligibilities": {
-      "etag": "\"6198-65d55abf264ba-df\"",
+      "etag": "\"6198-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/find-apps-eligibilities.md",
-      "hash": "651dc4dd7e6d057aaba3df6bfa72c2b39fbee01044d5624803304e0d9d312aac"
+      "hash": "3bebc3190f2b5b0260433af850e3385b54c2be1ea4dc01ae272c6e8a061feec6"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/find-rejection-reasons": {
-      "etag": "\"4b4a-65d55abffbbe5-df\"",
+      "etag": "\"4b4a-65e6a71079983-df\"",
       "file_path": "documentation/apple-ads-platform-api/find-rejection-reasons.md",
-      "hash": "4f541f3b0613beae7d307a8b54b97ff8660bce793f0621decaa424790daca6e0"
+      "hash": "f1d81f050c1954938865733373df58ecfa015407a32af94a72eea07f5aebc0ba"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/geo-targeting-data-objects": {
       "etag": "\"20bb-65d55abf264ba-df\"",
@@ -2216,169 +2216,169 @@
       "hash": "71b3dff6e029d5eb81b9df72ad83cd5d3c1d7db29ad7052074455943d5814e5b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-ad-accounts-_id_": {
-      "etag": "\"3340-65d55abf0cf06-df\"",
+      "etag": "\"3325-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-ad-accounts-_id_.md",
-      "hash": "ffe207bd284313f555a01f1b86506b38e34f4162932938b29860461761d1a1fb"
+      "hash": "3b0626b41a998290b34ea4bb7f03152036acb4d9b818915c1208524365ff47a8"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-adgroups-_id_": {
-      "etag": "\"41fd-65d55abeb4a33-df\"",
+      "etag": "\"41c7-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-adgroups-_id_.md",
-      "hash": "467c3de39558596abe9c71084441c94fdba351b7b5bfc8834350d5c0510b0413"
+      "hash": "6917976d0c303c5dfca7d2c5de7a25f85230d60ce54c8f31d9cde96f5879264e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-ads-_id_": {
-      "etag": "\"4b49-65d55abf264ba-df\"",
+      "etag": "\"4b13-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-ads-_id_.md",
-      "hash": "643a89af48bfb994f2c0687521a51d356f8b5a914b2b2511e16f37d0e9e0d709"
+      "hash": "5b90848575bf0e4388354e4e6db13d6be8616bfd522f31ef9034ff9ff87418be"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-advertiser-resources": {
-      "etag": "\"3b22-65d55abfa2fc7-df\"",
+      "etag": "\"3b07-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-advertiser-resources.md",
-      "hash": "b24c5a63aaf6e8d558853bd78f04937a866b2e5af8b5ab44997c790303eca432"
+      "hash": "0a76e59dfe55dd45c2c34f969e1a2cbaf1b3d5d903535a77c4e49ba2b32ef155"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-app-ad-group-reports": {
-      "etag": "\"5725-65d55abf65343-df\"",
+      "etag": "\"5725-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-ad-group-reports.md",
-      "hash": "ecb3cbb0ef6febc51ac0f288094f05ab1ba6180681dbebc439ac3002cb40d401"
+      "hash": "cf6b42521f0fb49bf46149c56a85b2f538f959839fcc433c4cff4e05ab0129be"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-app-ad-reports": {
-      "etag": "\"6345-65d55abff10ea-df\"",
+      "etag": "\"6345-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-ad-reports.md",
-      "hash": "8fd4add7030b74b0e2574a841b69b94a7ab81942ce5f6cecaaae885e6430ca1b"
+      "hash": "e41d648dc1359ec227b337c61aae0e62ab4be10515968bacc8f04dd31f3cd9c1"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-app-campaign-reports": {
-      "etag": "\"5797-65d754e9b1aac-df\"",
+      "etag": "\"5797-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-campaign-reports.md",
-      "hash": "51e917571acb752c1f054f63c913a54e87130abbf8fe0d55e458cef979c50995"
+      "hash": "f7e1f9b0c2c12ef2f2f5c6f6996d9175d3c03d17680dcbd05532dd421f4bf4a9"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-app-details-by-adam-id": {
-      "etag": "\"29cf-65d55abf0cf06-df\"",
+      "etag": "\"29b4-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-details-by-adam-id.md",
-      "hash": "c0bb90a9fcc8214640d7df1878fde7347896a429d40700b89078c2a3b7c88341"
+      "hash": "a9a5ebbc0b0a2bf2b81064d2c97bfd408a77d92a9df2e20c4773edf70ce19239"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-app-keyword-reports": {
-      "etag": "\"6352-65d55abf47dc3-df\"",
+      "etag": "\"6352-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-keyword-reports.md",
-      "hash": "9646e8054ca3ca5c0349647a9a7a9b31e5df546a0bc4b5350a57376c6d8c938d"
+      "hash": "48ac900c893078e6878695d5f70e7cf3cddbe44e0a6bb64f5c670298131de793"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-app-search-term-reports": {
-      "etag": "\"75d2-65d55abe58b6d-df\"",
+      "etag": "\"75d2-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-search-term-reports.md",
-      "hash": "6d2d4830d528ed209f0f13328f6c4333e8952d78f70401d426a74b71c0ec573a"
+      "hash": "6bfe48006e8f2a9bdb1b3baa4970339b835512740289de882e10007456cbf830"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-asset-by-id": {
-      "etag": "\"294b-65d55abe98c9c-df\"",
+      "etag": "\"2930-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-asset-by-id.md",
-      "hash": "d313e48476bd5b94c7bb8cc6c121fc1d94ba96b2ee816c99d708e636ac7b662a"
+      "hash": "2245482c77287481e38a1efb2008e373ccd9a561a8ed94c13a61e5617047aa7e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-brand-ad-group-reports": {
-      "etag": "\"710d-65d55abfa2fc7-df\"",
+      "etag": "\"710d-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-ad-group-reports.md",
-      "hash": "87497c946e201bc581a9d40fa59715a1cfe6f607e7e7bb61ca882d3afe98affe"
+      "hash": "e76bcd52f89d05be5a0f9a4d949ab96164600fc43721b44ed9467f12a84b6015"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-brand-ad-reports": {
-      "etag": "\"71aa-65d55abe58b6d-df\"",
+      "etag": "\"71aa-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-ad-reports.md",
-      "hash": "8d027c1a7e018243bf70212abcf76dfa9f1adf0a30ddecd6839f9f063debd5c2"
+      "hash": "008cfa14f0fcd20b9f8f25a09e75a59cda034f6ed181bc497abd6a213df19038"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-brand-by-id": {
-      "etag": "\"2a5a-65d55abfa2fc7-df\"",
+      "etag": "\"2a3f-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-by-id.md",
-      "hash": "bcbcad9bf497ddf34ce6b79f5f8e8dcdec091f1c434fb02cf9a94fbfe07a5579"
+      "hash": "9dde2bebe5544ef70668c3f615af1999e5c368fecfb1a63b588fe7696cad2391"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-brand-campaign-reports": {
-      "etag": "\"8246-65d55abeb4a33-df\"",
+      "etag": "\"8246-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-campaign-reports.md",
-      "hash": "bcf59544865622996717f45a3b6af5d001b9af21c69560f07b5cd773bfa5661f"
+      "hash": "adfc75189346606cd58c0cdb38f4d1f2127114799b9b43529473263b57489c1f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-brand-keyword-reports": {
-      "etag": "\"6610-65d55abf47dc3-df\"",
+      "etag": "\"6610-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-keyword-reports.md",
-      "hash": "9fdb3b3f3e5621df7e55c4de453bc685b67defeac544e585759ebf9695521573"
+      "hash": "802d5f3e1763fdae3b0cd673fe3bb77201debad986fa693432bc23fa0cff31f5"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-brand-search-term-reports": {
-      "etag": "\"8a64-65d55abf65343-df\"",
+      "etag": "\"8a64-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-search-term-reports.md",
-      "hash": "ce3e675193afa19e1910d214cb3d328e7de226e5b676c2a2a229d7b840efaac0"
+      "hash": "b910baf6d3a6f2206caf87f08988cb6beab8e1f076ae03cd7e1388485421213e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-campaigns-_id_": {
-      "etag": "\"3f0f-65d55abe98c9c-df\"",
+      "etag": "\"3ed9-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-campaigns-_id_.md",
-      "hash": "1cc1d8a50b601c2d526a92e7da3d00ed085b8160bc9f250e28c16b454a942726"
+      "hash": "63522a640af7323f4c0837e9db3e8aa7281e4970dff41b50580dd54ad884fa0d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-campaigns-_id_-legacy-app-limited-status-reason-details": {
-      "etag": "\"311d-65d55abf264ba-df\"",
+      "etag": "\"3102-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-campaigns-_id_-legacy-app-limited-status-reason-details.md",
-      "hash": "66fe150fbee932a3a23964ea8d3ace54b4297a9f160c22fbbd578ddba6963b00"
+      "hash": "070d07d52cff14fb6a9393800826870bbc4e98dd827ba3ce469d8960bf9a49d5"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-category-by-id": {
-      "etag": "\"2da3-65d55abfa2fc7-df\"",
+      "etag": "\"2d88-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-category-by-id.md",
-      "hash": "6c3067d9dd6ebaf26ad5a2a8805bc5f77f2309ad93e20e5160368ba617c282e3"
+      "hash": "b1ea2745be747c7782986f4eac07532d3884dfdedecbc176b781873d69b96a2d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-change-details-by-detailid": {
-      "etag": "\"5486-65d55abff10ea-df\"",
+      "etag": "\"5435-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-change-details-by-detailid.md",
-      "hash": "72e88bd206be7f180e029b9c517460f03ce499f4b8fc0a20fe691fc697fde5e3"
+      "hash": "fad8e549a5ca7f4b3adbecc57ac0e2890a75d47c05fb461d47affe11d96131cf"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-creatives-_id_": {
-      "etag": "\"3f87-65d55abed51e9-df\"",
+      "etag": "\"3f51-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-creatives-_id_.md",
-      "hash": "59b243c21eda486977a88ecb9b03b6c46f1ca7579ce7b17a3ccc6fa2b0307820"
+      "hash": "bb74e4f45f85f97d5b04d0f79fdf5763abb4247feb9c7664fa0bca4ef5905133"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-current-user-details": {
-      "etag": "\"2e81-65d55abe3c34d-df\"",
+      "etag": "\"2e66-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-current-user-details.md",
-      "hash": "7917f04f9dfdecba91d61cd32296484570ab235caf9963c5157ef73b0a80d063"
+      "hash": "5baf98af329604c7735e9f53a59ad5c5b0415e20412ef456d0cf1a284a3961e6"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-keywords-_id_": {
-      "etag": "\"31d3-65d55abf0cf06-df\"",
+      "etag": "\"31b8-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-keywords-_id_.md",
-      "hash": "942a0b2b280bb5f6a828eff4713cee24873962d72045a131eae463a11f13f60b"
+      "hash": "50c5104f94728636870e1113a8737a9a4418131b52083fee892eba785e78c820"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-location-by-id": {
-      "etag": "\"3107-65d55abe3c34d-df\"",
+      "etag": "\"30ec-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-location-by-id.md",
-      "hash": "90c59de6a0731a36c63d9830bc311b248c4323829ebfc21576d77193d04c358e"
+      "hash": "19407a7ecc2f974885232cf4b3b0ff3cfb8315967667fbfe81414739a9015704"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-location-group-by-id": {
-      "etag": "\"3c02-65d55abe58b6d-df\"",
+      "etag": "\"3be6-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-location-group-by-id.md",
-      "hash": "b35b22988a363f3f3b42d070fbdcec27d06833adeb885212e47f59c1a50231f8"
+      "hash": "b5dbc03cd56535aee45274c4068d79de456f0ca16a2b98fc6a1b108a08abbda0"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-negative-keywords-_id_": {
-      "etag": "\"3a74-65d55abe3c34d-df\"",
+      "etag": "\"3a3e-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-negative-keywords-_id_.md",
-      "hash": "7e875246f201ee69adf44c2e0d813daac77f8cfcd7806f04079f00ad7921df29"
+      "hash": "187803106a3349647994b1db630893eb85666948209d95f50578b5a3f33ebbdd"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-orgs-_id_": {
-      "etag": "\"2e96-65d55abfc4787-df\"",
+      "etag": "\"2e7b-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-orgs-_id_.md",
-      "hash": "214a4999b602ecc1e53e449b74c215f448a0f7df457fa683d3e105c2619cc36d"
+      "hash": "6037271f6758fd00c85cbc4c669dfdd95be5f0a8e71e4863993f546e8aaf5972"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-product-page-by-id": {
-      "etag": "\"3790-65d55abfc4787-df\"",
+      "etag": "\"37b6-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-product-page-by-id.md",
-      "hash": "7644a8ea57fd9ac89a65e4947ae63e8b3c9e3c6a3fa0e3919013ab2b25000550"
+      "hash": "1b47207341e1bdb323e777c61fa361571868414c885ef098dd06fb69c40114ab"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-shared-budgets-_id_": {
-      "etag": "\"3bde-65d754eaf19aa-df\"",
+      "etag": "\"3bc3-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-shared-budgets-_id_.md",
-      "hash": "a3f5d65a839c7aa37a029ae22cd283dfb73ac157acb76ab165314ae5223bd018"
+      "hash": "c09c83a265afa6e9f09ceee12a6613ba84bbbef50539ab43c82771dfb68becf5"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-user-acls": {
-      "etag": "\"32bb-65d55abeb4a33-df\"",
+      "etag": "\"32a0-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-user-acls.md",
-      "hash": "4f3dbeff40773d0bdd303a7c0c190abe6affd9290d0f849e4467d70af87787c3"
+      "hash": "80cd924fa35ba0d7021e44bb4ca82dfba6f78ff6cf9ebd36ad0e5bd2fa257035"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/gets-a-list-of-geo-locations": {
-      "etag": "\"3e55-65d55abff10ea-df\"",
+      "etag": "\"3ea9-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/gets-a-list-of-geo-locations.md",
-      "hash": "ba2638fcbb86d5c96751bf0e683c3187a15dbcb6823ba12237f9eae89899d318"
+      "hash": "1ff9876f34afd6bd65b520044894f021b6976d9087c5c9ea0ca7c6431357d03b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/gets-rejection-reasons-by-id": {
-      "etag": "\"2d82-65d55abeee8f9-df\"",
+      "etag": "\"2d67-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/gets-rejection-reasons-by-id.md",
-      "hash": "fe0224d14e7eb933beb47ef9b7922c197d691d293b8e1205909f230474debd0e"
+      "hash": "276f53ef5ed947251eae09de10c7ebe3ad56f8816da324ca505aff0c4f786cb3"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/imagetype": {
       "etag": "\"1efb-65d55abe98c9c-df\"",
@@ -2456,9 +2456,9 @@
       "hash": "ccbff620b26c95ab7603c7408d25c9318e1713f5082424b92a278b81952b1eaa"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/journey-app-store-ads": {
-      "etag": "\"d3a9-65d754e97fd10-df\"",
+      "etag": "\"d3af-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/journey-app-store-ads.md",
-      "hash": "0eeb4ed0b6251abd0f32d7f10ed1950888bf5b04edb140aba2584e7b823442c9"
+      "hash": "93e499ba44e1ed47e13f90c85c64ef2506f5b3ab2a8f1ac3eb8a607385ee4cec"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/journey-apple-maps-brand-ads": {
       "etag": "\"b895-65d55abf84e8c-df\"",
@@ -2636,9 +2636,9 @@
       "hash": "abfbbef6e3486a48aad9dc80e7db21ec757b9a600edf0d4615669623e9194b3c"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/location-groups-overview": {
-      "etag": "\"5470-65d55abe58b6d-df\"",
+      "etag": "\"55a3-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/location-groups-overview.md",
-      "hash": "78b0d753945bce1bc5b86f378c03bc667e2613f035a1d7f39aec8daaa7d9a991"
+      "hash": "5f2e88ac7cc6db52d70295f8cc48a163bd3cae392312b92ace58ba901d17127b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/location/address-data.dictionary": {
       "etag": "\"1e7d-65d55abeb4a33-df\"",
@@ -2651,14 +2651,14 @@
       "hash": "308999fea49ac2eabdab923d4d1cb80fdcbba19668e42df06359e910487fa811"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/locationgroup": {
-      "etag": "\"5633-65d55abed51e9-df\"",
+      "etag": "\"5756-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/locationgroup.md",
-      "hash": "6c860de58a2c3a54889621baf56c3e62866eacf8fcdf462009f86b963099802f"
+      "hash": "84e1ad4b503722d72e1f4a7c21dd64f89e4106752cd0a6b7baa813ab1139d854"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/locationgroupcreate": {
-      "etag": "\"6d6c-65d55abfc4787-df\"",
+      "etag": "\"6e41-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/locationgroupcreate.md",
-      "hash": "f4b03ff4f7dec81a8a3eaf2b8bea2fe47247f4f4378ad48ba837c6b8d8d6717f"
+      "hash": "1f5c495c8b5b4d13e4a2a764d338a6f65aa171708e2cf0a1fe3936147e2a9376"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/locationgroupqueryresponse": {
       "etag": "\"4cb6-65d55abf47dc3-df\"",
@@ -2896,109 +2896,109 @@
       "hash": "27e0ec98ce7e4fbe79255b339b6dfcf96178f13a3486813a62dd9048d29958db"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-ad-accounts": {
-      "etag": "\"493b-65d55abf47dc3-df\"",
+      "etag": "\"493b-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-ad-accounts.md",
-      "hash": "f27848c8c4b9b9a2ebdc5bff87a7c7a9bbf38865d94b0ad052ae0ca39b3aa5d1"
+      "hash": "b4d0bbed14c7c9d8596cad9b49366c781a911d38e75ceaa6674d05b016e1b9d0"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-adgroups": {
-      "etag": "\"644f-65d55abf47dc3-df\"",
+      "etag": "\"644f-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-adgroups.md",
-      "hash": "4c4d0bb6fe9c1b5ddc106173a761871422c6bdf83656db270f7ac8d321ac42cd"
+      "hash": "c3824b3c7e04260351f0722cea6351fbf427d0b58819084e853957ee78f6719d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-adgroups-query": {
-      "etag": "\"6877-65d55abeee8f9-df\"",
+      "etag": "\"6877-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-adgroups-query.md",
-      "hash": "419707e4a1f3b5a29a1ff44b7defb3d029b280e71537cfeed773f25fc342dc65"
+      "hash": "1af3d8c4746c732e65cee9c4d8653b7a24e7946446967643630be28f8f039e15"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-ads": {
-      "etag": "\"38e1-65d55abf264ba-df\"",
+      "etag": "\"38e1-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-ads.md",
-      "hash": "05951c14a0131d2e06b731ffb2016745985a9f317de840516d7a1292d621ba64"
+      "hash": "515e42310b76f657a8f4b267ab9030281ddd11d1bd0e4df13284e30a3f627582"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-ads-query": {
-      "etag": "\"59f7-65d55abf47dc3-df\"",
+      "etag": "\"59f7-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-ads-query.md",
-      "hash": "f586ddc96d0e6b8df15b95d611ab69920e328a8853814724df055a8348733372"
+      "hash": "74dfd5fd77442d0d193a0d33b8d931283c8e64d3c16da80efbab4aa2cff02335"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-campaigns": {
-      "etag": "\"c2eb-65d55abfa2fc7-df\"",
+      "etag": "\"c2eb-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-campaigns.md",
-      "hash": "175b43aad7d584bef33e6638aa2b6d735865131c02146c30cd76acf22f8c4f9f"
+      "hash": "63dfe19a196852b1a31021cd9b8c5d9269b69a96839812aa9d120489f52a948b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-campaigns-query": {
-      "etag": "\"b3d5-65d55abf47dc3-df\"",
+      "etag": "\"b3d5-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-campaigns-query.md",
-      "hash": "3856884e2477dcc18fb977e64a6d87a7b83613df5a4499a799db94bac086da4e"
+      "hash": "53eca2f40bd4a9e0d9f1e853b1c2f86d72526d472716a62d53a60c4f87310b4f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-creatives": {
-      "etag": "\"4c89-65d55abe58b6d-df\"",
+      "etag": "\"4c89-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-creatives.md",
-      "hash": "6850ec16988682299b095f7befb4cc3fad924431552a665457281163ebb560df"
+      "hash": "053547d02574df020d54f6fff59eaff0a87331a46a3ae4f23445c8b14d982bcd"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-creatives-query": {
-      "etag": "\"57cc-65d55abf264ba-df\"",
+      "etag": "\"580e-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-creatives-query.md",
-      "hash": "086dabb010657e387344b3a674fec656c1c7afc249e780499e21ae3f47f8b2b6"
+      "hash": "5fd846ae17e6c2101db2122b5a9873b13b8903f77edd9c441ca2d24a5978775c"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-keywords": {
-      "etag": "\"4aee-65d55abf84e8c-df\"",
+      "etag": "\"4aee-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords.md",
-      "hash": "764e79fa8467d0195da773c5dfbee68220722a2d8d54a140ec5ff0a2ef026c2e"
+      "hash": "a8c97970bbc09ee4119a06ca033a654d9ae8a64ca1eae8d18d15a41ea6be7d79"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-keywords-bulk-create": {
-      "etag": "\"3554-65d55abe3c34d-df\"",
+      "etag": "\"357a-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-bulk-create.md",
-      "hash": "0744578bb2f79a5bfaca53723c477db2cd8d2612545bbc8dd8e1fdbbcb5e4940"
+      "hash": "eb07e3d6adf8b58d35dee2ce61d9e7980fd8d79ffc1d7498324866d5b2a4eb29"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-keywords-bulk-delete": {
-      "etag": "\"2b8e-65d55abf0cf06-df\"",
+      "etag": "\"2f2c-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-bulk-delete.md",
-      "hash": "3c8cddda8e5786d3c2b5c06e18e860f0a4b36f92493d7948fc38cdccbfad2b86"
+      "hash": "27949abc2cc8689c3c2b8b174a803e1df02c059dea4d9ca855cfa01d3861d3ec"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-keywords-bulk-update": {
-      "etag": "\"33e2-65d55abeb4a33-df\"",
+      "etag": "\"3408-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-bulk-update.md",
-      "hash": "0920bbb0cbff963417fa625f5a4d9cbcf4a531250cc03efe277b3f4fc5c69c76"
+      "hash": "e09726715c6738a874c8e959ad22aa139efa0a4b1625c474a19ff905b53d122d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-keywords-query": {
-      "etag": "\"737c-65d55abf264ba-df\"",
+      "etag": "\"737c-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-query.md",
-      "hash": "96706ae40136e0951d79fe760cf69ed88c0651ddb9a8b5bfa37ceead24008cdb"
+      "hash": "3a58bdcb0e079baf732411f85ef50c2f478842b2bb0d6ff9f12cb784ebc1da9f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords": {
-      "etag": "\"46b2-65d55abe98c9c-df\"",
+      "etag": "\"46b2-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords.md",
-      "hash": "c111f05f1924fa5683bb620784909d3c825418fa2c390f29c41ff387bf9a53b9"
+      "hash": "8488a6cfa1642dbd965c480f670d4c33f52b5198ea8e98cdc248aa6081ab398c"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords-bulk-create": {
-      "etag": "\"3434-65d55abf0cf06-df\"",
+      "etag": "\"343a-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-create.md",
-      "hash": "d5d26cb57f7d9c7067b76e65f9439bd35105b3138d3ac660ea361a645bedd22f"
+      "hash": "2ce8d835ed0c390eae955306b71c9f0e11885ea4a99bf77b61afd5445279cd96"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete": {
-      "etag": "\"30cc-65d55abff10ea-df\"",
+      "etag": "\"3172-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete.md",
-      "hash": "e303a7c5362952741873c366ad543d9e494e71707cf7d6e64b3cd9a9eec09f59"
+      "hash": "445391a4dee19bf51b3b746d8d80b3067821c605de576fd0e155bb2a644bd207"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords-bulk-update": {
-      "etag": "\"32d6-65d55abe98c9c-df\"",
+      "etag": "\"32dc-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-update.md",
-      "hash": "ad8342a66a07f4ffde5daabf876aaa9820a69d136b30b50072900f1c05f2ba4f"
+      "hash": "f76c96e4534ec89d4590a1e8a90af14fff4f4efb2566c0704ca35b385e8b5654"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords-query": {
-      "etag": "\"7538-65d55abeb4a33-df\"",
+      "etag": "\"7538-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-query.md",
-      "hash": "0f3117fca443f8fe68b8a1518b7c9cbcf5078757903d9da6840ac654da606cf5"
+      "hash": "9fa4e4225701286ce975e39098170d998091d926c678718d3b11801fac68369e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-shared-budgets": {
-      "etag": "\"40d2-65d754ead77da-df\"",
+      "etag": "\"40f1-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-shared-budgets.md",
-      "hash": "b9e1d38322020e482c868b720905bf7e1bcda94f04c9c257324c37e4dfd8807c"
+      "hash": "cb7a9447c06e076ee7fa260df82186b468da1be611c768be8491f589807564d0"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-shared-budgets-query": {
-      "etag": "\"7992-65d754ea7aa6e-df\"",
+      "etag": "\"79b8-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-shared-budgets-query.md",
-      "hash": "c69629476df2c8b140111ceb74e71c6e8136c62ad094ec09a5a64dddfd28a1ea"
+      "hash": "efa72af78b2c1b2dfa0eb4d1d6f20b1be2d198b2c6a32ad1f0e4074e28ce4999"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/pricingmodel": {
       "etag": "\"2998-65d55abf84e8c-df\"",
@@ -3006,14 +3006,14 @@
       "hash": "eca9a0b25003f2b3967e1e0e0657d814b820ac68b1728032d602991e71512b23"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/product-pages-data-objects": {
-      "etag": "\"1d27-65d55abf264ba-df\"",
+      "etag": "\"1ceb-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/product-pages-data-objects.md",
-      "hash": "405e67f54777236f85347ef744bf010b23640ad76986a4388fe20c795bf126c9"
+      "hash": "90443c2b79dfd4f08dd2e6fdc5db481dda8ef5c914dc8b1d38d760fac9706453"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/product-pages-endpoints": {
-      "etag": "\"4a9d-65d55abeb4a33-df\"",
+      "etag": "\"4b6f-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/product-pages-endpoints.md",
-      "hash": "30f9830a6289c304616ab653e72b9e1d169790f125e7f20d01bc0b7d1ab0339d"
+      "hash": "fb34a979c2dd14097c187ee39b9a095eda02d7506d7cd9401c7940a0e5d377f8"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/productfeatures": {
       "etag": "\"4bba-65d55abf47dc3-df\"",
@@ -3021,24 +3021,24 @@
       "hash": "2c895aee6ae654143758354fc06a80c0e06865a024115800af53b75798164c34"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/productpagedetails": {
-      "etag": "\"2851-65d55abf264ba-df\"",
+      "etag": "\"28ca-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagedetails.md",
-      "hash": "7ed76b72186f4f56683149523e89032d784f2f5ba37752ca8eca8a99f3ddbda2"
+      "hash": "e8515d840452502b0cbec4f5e58746606d33124beb7f7266c3e33a7cb936b25d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/productpagedetailsqueryresponse": {
-      "etag": "\"307f-65d55abf264ba-df\"",
+      "etag": "\"3043-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagedetailsqueryresponse.md",
-      "hash": "2caa422bff925f0a679c649f324f056d0191760766d3a8e903a0b8e9da43ec95"
+      "hash": "89e3a49f1526c62b49d2780e487342b3026beff585b7cd35d9c8660a2fd5ba9b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/productpagedetailsresponse": {
-      "etag": "\"2981-65d55abeee8f9-df\"",
+      "etag": "\"293d-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagedetailsresponse.md",
-      "hash": "78619fc1da13ad5895b9188596e814f1bb6ed0afef5a48657bae1f6363cb897a"
+      "hash": "5f14fa4c97879287ea93592db7830796b9f2cae2dd54d9bd78ae39472259a633"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/productpagelocaledetails": {
-      "etag": "\"3510-65d754e9b1aac-df\"",
+      "etag": "\"34d4-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagelocaledetails.md",
-      "hash": "00486fd35210926ba9f7050f76a5b054a9947a1f18f09c05671042283625add4"
+      "hash": "3121a6960f547fe884189a65199010586e6baed471505a06a95249a9a8875704"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/productpagelocaledetails/assetsbydevice-data.dictionary": {
       "etag": "\"1bb6-65d55abeee8f9-df\"",
@@ -3046,9 +3046,9 @@
       "hash": "764a48036cd2bd2ff3dc0d56597c4d0a7967924b8f4d684eee041512b303d2a0"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/productpagelocaledetailsqueryresponse": {
-      "etag": "\"3362-65d55abf0cf06-df\"",
+      "etag": "\"331f-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagelocaledetailsqueryresponse.md",
-      "hash": "a81c63d12a9e7f9c5e8b1b33e87855efb229c3ef532aa883a4189145cc3bf696"
+      "hash": "d3aa7ca0773bbaddcfb37654736b0da7c918313cc5c91a6a4488a0a005965c55"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/promotedobject": {
       "etag": "\"3b6f-65d55abff10ea-df\"",
@@ -3061,139 +3061,139 @@
       "hash": "def8f94a4561c56c09a5c3488104b688b55a59eec8e9bc2810a6aceeafe828ed"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-ad-accounts-_id_": {
-      "etag": "\"4ae9-65d55abe58b6d-df\"",
+      "etag": "\"4ae9-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-ad-accounts-_id_.md",
-      "hash": "09f6ccd4e49d3208f0a430f34c3a17d44aea59088bd5b01fd7c9d87297c30b9e"
+      "hash": "24296d3607dcfc93a4b279c810fe6ce3ebec7f7d46650551e8cc668d50080665"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-adgroups-_id_": {
-      "etag": "\"71cd-65d55abf264ba-df\"",
+      "etag": "\"71cd-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-adgroups-_id_.md",
-      "hash": "50c23bb50637ceadd4b30dbf6270764dbe1e2670e591f93128207d970665079e"
+      "hash": "509e4b1f4b677b368e931c01712e2dd49519ff1ab9bfcc4a1bd01e61555098f5"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-ads-_id_": {
-      "etag": "\"35a0-65d55abff10ea-df\"",
+      "etag": "\"35a0-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-ads-_id_.md",
-      "hash": "8918b423503d5eefd409b9f3a2f439a124097cdbdd8f003aae0e666570143316"
+      "hash": "f122bb6e2bb5075bfae0934c122c41df17c7ed2d5bcc074f7aaa5aa743fa069b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-campaigns-_id_": {
-      "etag": "\"508e-65d55abe98c9c-df\"",
+      "etag": "\"508e-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-campaigns-_id_.md",
-      "hash": "a6d73acf34535042a2945c72e8c6db4283602581a63dd703c9f04fd8e1d7c72d"
+      "hash": "8971017afd457583362677567ac134e7731774cb2eb3dc34018e8211b9f653d3"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-creatives-_id_": {
-      "etag": "\"3806-65d55abed51e9-df\"",
+      "etag": "\"384e-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-creatives-_id_.md",
-      "hash": "6dc32742367a59470ad0d72071ba44c644e2500d9771df9056faf12b743b5059"
+      "hash": "9d697731fdc9ad0c9cc3b3cb17dec061e7bc4ce542d7e48b1b3819491923ec0d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-keywords-_id_": {
-      "etag": "\"3bbd-65d55abed51e9-df\"",
+      "etag": "\"3bbd-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-keywords-_id_.md",
-      "hash": "5f1e82cd48e7c6f3f4ab92a5ff0bbc7c74bf072e1e4ca8d0f00ae596b7babe5c"
+      "hash": "a90bef18bf8ade53b5cab5de843834006f7aea0380f96ba305607a49df9d519a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-negative-keywords-_id_": {
-      "etag": "\"318d-65d55abe7af45-df\"",
+      "etag": "\"318d-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-negative-keywords-_id_.md",
-      "hash": "90626042649dd6bd211e64afc9c8fa734fc6023808cf5dc92b52ba5c4e72af2f"
+      "hash": "79f7625e498a3cf5b1f4b0e4dcb4495f74c4d5f313abaa2d879bd4e92455ccf5"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/put-shared-budgets-_id_": {
-      "etag": "\"454d-65d754e9ea1e2-df\"",
+      "etag": "\"454d-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-shared-budgets-_id_.md",
-      "hash": "01c757614629c7cf76ccf5d87f0e565dd55e682dda8e213b8b4f9628e008c905"
+      "hash": "24b86b1ca6ca455d19cb163fd1f9548ab144014c205ac94f61f51445578ceb2e"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-app-impression-share-data": {
-      "etag": "\"889c-65d55abe58b6d-df\"",
+      "etag": "\"889c-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-app-impression-share-data.md",
-      "hash": "a68767e165bf7d205d6e4247ca3efd83690a93b6dba5cdefac53d4462f572866"
+      "hash": "80b112598dfce5f1020ab99b49ca875b9465095a66e4aa395b071060df5e8de1"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-app-search-term-popularity-data": {
-      "etag": "\"68e9-65d55abff10ea-df\"",
+      "etag": "\"68e9-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-app-search-term-popularity-data.md",
-      "hash": "0b9fd45dc69b2b39eb4521df6e2a13b9ba0facb8fda5d37571a6b9f6ffa2a8bd"
+      "hash": "0852ed8b768fed300296c4190ef914c857ba7b7ab7292e82eb8f0f45cc145471"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-assets": {
-      "etag": "\"6f6e-65d55abe3c34d-df\"",
+      "etag": "\"6faa-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-assets.md",
-      "hash": "1c3b05cda1f61a23a98c3ab7fc2e50500faa34c21f0a4c3066e0a943036fa60b"
+      "hash": "2ee7f4c20544d87b81a348bfeecdc26314c9938ffc3f7421709725bc5de2c706"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction": {
-      "etag": "\"8535-65d55abf84e8c-df\"",
+      "etag": "\"85cd-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction.md",
-      "hash": "63cbde1319898f5afcb4eb4cee734b5dad795bc8453a562a4bdb9932a75a9f18"
+      "hash": "dec1c2468c5855b67a26f8bfe03f2182766553a01a0c66d08fdbd89474f8fab9"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-brands": {
-      "etag": "\"5627-65d55abe58b6d-df\"",
+      "etag": "\"5627-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-brands.md",
-      "hash": "2833ca3cff55819292deaca5118fe11cf61a5c46a7c71990218c6b585baecf23"
+      "hash": "e6168b9e1986969cdb347872ec8af00cbc7ddeb4bc3d0f266f2a16049809f4b8"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-categories": {
-      "etag": "\"606d-65d55abfa2fc7-df\"",
+      "etag": "\"60c3-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-categories.md",
-      "hash": "db293c855ea14669e4095ddaaa462621570a7ab0adbd364b1c17c06a3ce8d39c"
+      "hash": "a6e0b7a49a97be230274696ddab0a62046c58972451bb93d1c19069225a24618"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-category-suggestions": {
-      "etag": "\"5062-65d55abf84e8c-df\"",
+      "etag": "\"5062-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-category-suggestions.md",
-      "hash": "b7f9f2183a116845d729193c81ad1ee6a825b35f55512b79508a2350e27639ee"
+      "hash": "45b08523bf6c92b2c01724eb26fd1dcb74237eaf268ee82cf145422e40f60d37"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-daily-budget-recommendations": {
-      "etag": "\"8dbc-65d754e996802-df\"",
+      "etag": "\"8dbc-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-daily-budget-recommendations.md",
-      "hash": "702e8aebf34ee0771a207dec4aef29c08c455492bf0e021e6061943d6fca9bb8"
+      "hash": "e27951677c35aa8f3cb758031a56e19cfee0fab2b27caddd4582da8d97793e59"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-default-product-page-locale-details-by-adam-id": {
-      "etag": "\"5703-65d55abe3c34d-df\"",
+      "etag": "\"561f-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-default-product-page-locale-details-by-adam-id.md",
-      "hash": "c74a8da7277371e397cc0815630aca1867c0a0d391de39b8957e8768bbcf3610"
+      "hash": "9d969b6a51450d770611da90f930df709ce2a09bedfe98568a1bb54e49cd5c92"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-keyword-suggestions": {
-      "etag": "\"41fd-65d55abf47dc3-df\"",
+      "etag": "\"41fd-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-keyword-suggestions.md",
-      "hash": "fada7a27053d5bde99e76e230f87a5e9ca7514acc9838abbb4e1e72f59d0e274"
+      "hash": "d4c873888b21baf6c1e3c166eba824859821e35b54cb7faffe77512d22b95037"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-location-groups": {
-      "etag": "\"6691-65d55abf0cf06-df\"",
+      "etag": "\"66df-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-location-groups.md",
-      "hash": "854ed0ac6e1316a4d0fc82cc5441e71626553f8022aad709d330c201402f4c9e"
+      "hash": "c7441421a6cdda80f222706a515f34238a93303d791409fe3572d74bd27bddde"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-locations": {
-      "etag": "\"73b2-65d55abe3c34d-df\"",
+      "etag": "\"7415-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-locations.md",
-      "hash": "4aaeaf4cdd97f58687700bfe9e5b23b5e4909739f522ce087603085b61783425"
+      "hash": "41f050c8b5128a718a22991e944f3297a109412091e25d28132c62877dd30fa4"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-phrase-suggestions": {
-      "etag": "\"582a-65d55abfc4787-df\"",
+      "etag": "\"582a-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-phrase-suggestions.md",
-      "hash": "fb6b27d4e60c549cecdde79fe4e87773b0d46d3b8efe25bbe5e611eb1956df50"
+      "hash": "8daf12c1b87a7a913e0280b3850c61056b089c3e52358af776addccf56306fb5"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-policy-assignments-(rejection-reasons)-for-external-consumers": {
-      "etag": "\"552d-65d55abff10ea-df\"",
+      "etag": "\"5567-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-policy-assignments-(rejection-reasons)-for-external-consumers.md",
-      "hash": "03c24674cc09b9662d96b9e3cd94cb16b225afba0afb2e4a4140e7ad5e30f458"
+      "hash": "cf8555bced60b59c9c1a7f4688fa7c7bd2ddc3dfd5386291dc205967e8847e5a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-product-page-locale-details": {
-      "etag": "\"5f45-65d754ea7aa6e-df\"",
+      "etag": "\"630e-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-product-page-locale-details.md",
-      "hash": "316ad5d3e43fe81cc56af1fad51d659daa41f0f06efd26fed13d6a510ebdbb15"
+      "hash": "d1e5aec0bbdf343d9a9cef25a1635c7a0390a00f8dee373f44a80bc4b31e43ed"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-product-pages": {
-      "etag": "\"4c4d-65d55abe58b6d-df\"",
+      "etag": "\"4ca0-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-product-pages.md",
-      "hash": "06e67c9678599a800a5d4cb6d44d60d7aa9ed26ae5cc290809cf2b0659d912ce"
+      "hash": "fe9711761738e9c7e38ba973b6f6ddf0e138a814351d64bb3a046a081552ad5a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-supported-app-languages": {
-      "etag": "\"6818-65d754ea20d8e-df\"",
+      "etag": "\"6818-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-supported-app-languages.md",
-      "hash": "761310e35b49f7dc910a6e22b30bffc5351c12f7b4a3f425b3457270bf706a86"
+      "hash": "9b7067a9bd4c9b7ae722360c83ae992af3c20c88b0ca0813dc2b88c6a79e242f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-target-cpa-recommendations": {
-      "etag": "\"75f3-65d754ea39750-df\"",
+      "etag": "\"75f3-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-target-cpa-recommendations.md",
-      "hash": "64bf5a961fd248e3055e7989a82ac7d3966406de1948561a935d23210a762f6a"
+      "hash": "7c2b1a5c9e1c8093e609d37aef8928441459879bd8cf776e5c6df9a923ff2819"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-target-cpa-suggestion": {
-      "etag": "\"48f6-65d55abf264ba-df\"",
+      "etag": "\"48f6-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-target-cpa-suggestion.md",
-      "hash": "658bb8ff65380784a3a72bfb5625b598c494529eb77590375534690c88080a1e"
+      "hash": "7f7caf80242677996a8ee92df96857ed61b524f50351bb4299ebc5b3875c7c09"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/queryfilter": {
       "etag": "\"336b-65d55abf65343-df\"",
@@ -3206,14 +3206,14 @@
       "hash": "36248ff1d10996074f3fb903ad3a9a176e86297871ebae08910f11c91f9e8b7a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/queryfilteroperator": {
-      "etag": "\"570f-65d55abf0cf06-df\"",
+      "etag": "\"5709-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/queryfilteroperator.md",
-      "hash": "8706114ef887f5582f996a166da28c3c6f72c5d86789d26b9d1ab1ff69721a9e"
+      "hash": "fd785b04d0bf6af428cd42358db8886e58f15b162ed6c979df932e39c9b4a525"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/querypagination": {
-      "etag": "\"2050-65d55abeee8f9-df\"",
+      "etag": "\"20cb-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/querypagination.md",
-      "hash": "f6410d3da52d93fd7278f5abfbe79fd8015d5740e7690bd32af2e50c61102ad9"
+      "hash": "d3d7a516c3fcd04670eb163f059c1f2449cfc1507b4ebd3e2cc2775f55861b62"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/querypaginationresult": {
       "etag": "\"25cd-65d55abe98c9c-df\"",
@@ -3581,9 +3581,9 @@
       "hash": "1c2a9e1b22bcdbfb02771deb938ae35196594bdbca8a3959192d2037f6e7e03a"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/search-apps-endpoints": {
-      "etag": "\"419e-65d55abff10ea-df\"",
+      "etag": "\"419f-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/search-apps-endpoints.md",
-      "hash": "d8ae2e16b867d06b42f834b913bcc421488ba82396ee63b4a2d7fb8b10253a51"
+      "hash": "80da62fa8f872872f8e47b048f6ced8227331cba0155e384a8c3b4b42b2345bf"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/searchentity": {
       "etag": "\"3d84-65d55abf47dc3-df\"",
@@ -3596,14 +3596,14 @@
       "hash": "7ee272b75508595f397bc6fc5f03948c4301f70837b3d00632bd76d754ec73db"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/searches-for-a-list-of-apps": {
-      "etag": "\"3ebb-65d55abeee8f9-df\"",
+      "etag": "\"3e4f-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/searches-for-a-list-of-apps.md",
-      "hash": "1383086e3bf06c7bbc0b6f5f7bf3476e0034585b90b52dc69a7dc0d9e9d34b95"
+      "hash": "47edaa3a68c3c490625a47f4014a5e04737367c92ac129017208b9453c219837"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/searches-for-a-list-of-geo-locations": {
-      "etag": "\"4b34-65d55abe58b6d-df\"",
+      "etag": "\"4ae3-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/searches-for-a-list-of-geo-locations.md",
-      "hash": "71c59a88bc539c42c19f6c112ae1dbe0908713fa19ef8bc017fe3093aed0ada8"
+      "hash": "f18b21929fe7a2fb5999412440917c93b0dc2ef7ec4f624d1e2d9fd626664967"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/searchsupplysourcetype": {
       "etag": "\"10ca-65d55abed51e9-df\"",
@@ -3711,9 +3711,9 @@
       "hash": "7ae81b9a9bfb2f50824e61736b1a019b3e89ac4d5327ef546682cbb40c0cdd1b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/suggestions-endpoints": {
-      "etag": "\"4c2c-65d754ea639d4-df\"",
+      "etag": "\"4c59-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/suggestions-endpoints.md",
-      "hash": "08abb3de00c37b3525f0841ac9cf1a1bb728735a6526c8455f7085ce4bca8532"
+      "hash": "d0d17de01e0318ba5068732d8110aeb4dccebbe71a21ed5c2997457bf00970bf"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/targetcparecommendation": {
       "etag": "\"6e43-65d754ea20d8e-df\"",
@@ -3751,14 +3751,14 @@
       "hash": "e2db877f235bcea58746d676b8652b63f3a1d6c74e15ce364296c674c2bb2e98"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/update-location-group": {
-      "etag": "\"3cd1-65d55abf65343-df\"",
+      "etag": "\"3cf9-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/update-location-group.md",
-      "hash": "f71fbed8eca408a6820ccb0438a7b7c5e2353da2334b7cfb77f70deab7747664"
+      "hash": "3816f4402dcf8e5bd2ea49779f48b09cb866fef588496565a9baac2ecaf687ff"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/upload-asset": {
-      "etag": "\"3bdd-65d55abe58b6d-df\"",
+      "etag": "\"3bdd-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/upload-asset.md",
-      "hash": "8ff2bebcdce72e9072c7dcce7905efc645aa96c7861b9d4bd4e80b212509fe7f"
+      "hash": "5fcd200284c73245412a02d4577d71109d4e4bedcdda2f338d98ce49904ad73b"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/useraccessresult": {
       "etag": "\"34e2-65d55abfa2fc7-df\"",
@@ -4361,9 +4361,9 @@
       "hash": "ccbb19f96bf35aef1c7d2b81fdfcf9f02121de24b88939cf83ebf23cdd63a378"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appdetailsresponse.json": {
-      "etag": "\"3ab8-65d55abe7af45-df\"",
+      "etag": "\"3ab8-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/appdetailsresponse.md",
-      "hash": "9d7dc1dcd5eed19199c9bc29121db2e6d0a2e96a41cf9e4fc6e603dcee60a57a"
+      "hash": "b4ad6f6dd7d64e13da5d2635ec7c076346dfb5429323c3d543e7592d3b0d0fd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/appinfo.json": {
       "etag": "\"2141-65d55abfc4787-df\"",
@@ -4381,19 +4381,19 @@
       "hash": "b72a96b82136057b22fe6c76aa1eac93aa53ee4e5f198ed23f8f4a7943452631"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/applocaledetailsqueryresponse.json": {
-      "etag": "\"3302-65d55abf264ba-df\"",
+      "etag": "\"3303-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/applocaledetailsqueryresponse.md",
-      "hash": "847542d5ad5e4e01185ba8227c7d5023ade9ab7af86e7c1697e2a79ce6c91a08"
+      "hash": "e14d57ce2634be53091cc6d784ffeae2276bdb1eb4355a53ce932a1799c45d1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/apply-daily-budget-recommendations.json": {
-      "etag": "\"3cc3-65d55abeee8f9-df\"",
+      "etag": "\"3cc3-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/apply-daily-budget-recommendations.md",
-      "hash": "3a1065c3b6a934bdcad9e48d1c10781138a523e0e94f577af11130c2ad1b3e22"
+      "hash": "788ef76160ea6258cea2ee895a0dbe175fad143d9cf508fa14d018a4399d9561"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/apply-target-cpa-recommendations.json": {
-      "etag": "\"3bd7-65d55abe3c34d-df\"",
+      "etag": "\"3bd7-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/apply-target-cpa-recommendations.md",
-      "hash": "e09cf29fa5ff594883e60d27a21c261ebf2d81d9d60b8041e0d23dbf420e2443"
+      "hash": "3b8b5cf9a36681e3ed685db489fa4098fe8b2a0e1d22a8b5bf639437bbc11643"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/applydailycaprecommendation.json": {
       "etag": "\"4819-65d55abe58b6d-df\"",
@@ -5121,9 +5121,9 @@
       "hash": "b7739e0bc51fa6361b77515122d33c3b0f17b63b9af6a77187c5f8530c3a5e77"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/bulk-operations-endpoints.json": {
-      "etag": "\"3ad7-65d754ea7aa6e-df\"",
+      "etag": "\"3add-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/bulk-operations-endpoints.md",
-      "hash": "853a9152b485013f4f983e0ddf61205146fc96927c5db8472faef62ab87927f6"
+      "hash": "a37ab88f89aabbdac0ef2b42f8fbd52a051f1a9c3793557243331ab22a7f4e78"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/bulkentitydeleteidlong.json": {
       "etag": "\"3b64-65d55abfc4787-df\"",
@@ -5561,9 +5561,9 @@
       "hash": "e07927111615698d6eb955e3603ec64267ef7849c20ab975a5cd47b6c1cfb803"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/create-location-group.json": {
-      "etag": "\"3ab4-65d55abff10ea-df\"",
+      "etag": "\"3af7-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/create-location-group.md",
-      "hash": "8fcc3c151904b24e115524b5fdd6f9dca467b41ea242098d071f190d14f48dcc"
+      "hash": "57460b1e546b9c1b31bc122a07bf42cf1e10c10ecd96cf6ab9f91e0dfc149cd0"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/creative-data-types.json": {
       "etag": "\"1870-65d55abfc4787-df\"",
@@ -5751,9 +5751,9 @@
       "hash": "511956020570b39e8e28db24dd6055fccf53837e526dfa32f39337a620078338"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delegationupdate.json": {
-      "etag": "\"47b3-65d55abf84e8c-df\"",
+      "etag": "\"47b3-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/delegationupdate.md",
-      "hash": "d8b809c684684eb349da87c340199ee9477b1cd50a83c3c74cf1d859c2502257"
+      "hash": "bf59937adda64d422a1ec0038c2fa4af13c7bf33e71ff5753b1b8f2607fce03a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delegationupdate/resourcetype-data.typealias.json": {
       "etag": "\"13f6-65d55abf84e8c-df\"",
@@ -5761,49 +5761,49 @@
       "hash": "da7a1866e63690df3391a89dee4d95ec16952bdf70eedda3cf14d9cdab74abc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-adgroups-_id_.json": {
-      "etag": "\"361e-65d55abf65343-df\"",
+      "etag": "\"3603-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-adgroups-_id_.md",
-      "hash": "0c5b327739a01d3baae48891d0872ffc72ab3647a9106b2922dc5068991ce6b2"
+      "hash": "23e5016d65a1f6fff8b543f6d1800364b776b48d5fa5deb5d40ae398f4daae1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-ads-_id_.json": {
-      "etag": "\"3a89-65d55abe98c9c-df\"",
+      "etag": "\"3a6e-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-ads-_id_.md",
-      "hash": "3fd29cd53389305c1afa8013202a50daf3b198c41dcbbd004cd83e4e5cb03124"
+      "hash": "d21f093db07478725fea1dab8d1afd1761638a34939fae42e7fbb0f70b338a01"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-asset-by-id.json": {
-      "etag": "\"268a-65d55abff10ea-df\"",
+      "etag": "\"266f-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-asset-by-id.md",
-      "hash": "b6b78438eb547ac064b63d30b99da82d9071b58cb3e1d2368133240bb7c423b7"
+      "hash": "217b5afd0e78aae37c725b9c2df08771a87417a5eda56d980d7912cc6a3d7501"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-campaigns-_id_.json": {
-      "etag": "\"3965-65d55abf0cf06-df\"",
+      "etag": "\"392f-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-campaigns-_id_.md",
-      "hash": "70de10cd56c261a628aaeec97d1f8bf0ebbb1bd792958b0b0de9cf048c0ad56b"
+      "hash": "5fb5ce2d3a1151f34bb8b3c8147e66927d7743b36dc4edf00ffa0f6ee863d97b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-creatives-_id_.json": {
-      "etag": "\"3358-65d55abe58b6d-df\"",
+      "etag": "\"333d-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-creatives-_id_.md",
-      "hash": "fbc6a0f78c74df39728a8751f851a970788820ee4635252714d95a84f0f7ca9d"
+      "hash": "22590d6e05d4ac74741f75034a9e666f32385fc26dcdf5f636f679dfd059a54a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-keywords-_id_.json": {
-      "etag": "\"3262-65d55abeee8f9-df\"",
+      "etag": "\"3247-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-keywords-_id_.md",
-      "hash": "ce55eb2e3aa81ec50e338f9a2518b98c1b8714db60700aa53dd5d8acd21203f6"
+      "hash": "41161694f8c86365bfd802b60a1a32129b256e0e8ac193bb8b967b2e8a6f0296"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-location-group.json": {
-      "etag": "\"334b-65d55abfa2fc7-df\"",
+      "etag": "\"3330-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-location-group.md",
-      "hash": "400b646851d48bc614b92c17f78030fdaa3dabd9afa5c921d59bef86072625a5"
+      "hash": "f916ffef0b670a7a919cb38a32e141086c5d730dacc761556b73eabc6ee050fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-negative-keywords-_id_.json": {
-      "etag": "\"3527-65d55abf47dc3-df\"",
+      "etag": "\"350c-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-negative-keywords-_id_.md",
-      "hash": "3c241840464db4303f965f5376e1c884ed3dfea1e2115e8a0c95a07574b4eece"
+      "hash": "b146147bb1ac4b9bc7a41aabe1c2bdcc1a57ab3cb4ff0c2b1329ba94e5c23d29"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-shared-budgets-_id_.json": {
-      "etag": "\"3817-65d754e9ea1e2-df\"",
+      "etag": "\"37fc-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/delete-shared-budgets-_id_.md",
-      "hash": "ae0c772cbfa64972f949e7aa8c588e0e3e6e6c2364382306a24124308ab30ca0"
+      "hash": "11b9e02dfab8f5cb995867a7b7bc6e09606e23253397ea50903e84964a3b3cf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/destination.json": {
       "etag": "\"490e-65d55abf264ba-df\"",
@@ -5846,19 +5846,19 @@
       "hash": "dba298488fa545db5993875cfdbf2ef7e0c0a2880afe55ad96d2c8a0117cc64f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/deviceassetgroup.json": {
-      "etag": "\"275e-65d55abf0cf06-df\"",
+      "etag": "\"2722-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/deviceassetgroup.md",
-      "hash": "3a9c1c47d57fdb9854eb6d11963478d322624b79db95a2570d7e3483de534ab2"
+      "hash": "9d29676600e71648841e4e398450152e2f45c28695803b025dbfa981333b3e64"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/dismiss-daily-budget-recommendations.json": {
-      "etag": "\"3a63-65d55abe58b6d-df\"",
+      "etag": "\"3a63-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/dismiss-daily-budget-recommendations.md",
-      "hash": "c779192ee7dfbf25cded2d9fb4c0128b375c802e6054fc256df5f251ca83b145"
+      "hash": "eb357abbcbc256c995ce65c7bb8d8bc1cbcd11d7647740c8f81d09a9a47e7b28"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/dismiss-target-cpa-recommendations.json": {
-      "etag": "\"3a63-65d55abf65343-df\"",
+      "etag": "\"3a63-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/dismiss-target-cpa-recommendations.md",
-      "hash": "d8944e258a1f6b76abaf543ac5cff4f6d866d4b5a04405c0a72541903311d902"
+      "hash": "ca3281bdff6828efb7cfe46d448841c6e364068e30f865d8166b9a55eb488526"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/eligibility.json": {
       "etag": "\"4afe-65d55abf84e8c-df\"",
@@ -5926,14 +5926,14 @@
       "hash": "a652a37edcbb4f82fe3f7fee1d249b6ae1b786263fd63b3d3c788d1c3340fb54"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/find-apps-eligibilities.json": {
-      "etag": "\"6198-65d55abf264ba-df\"",
+      "etag": "\"6198-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/find-apps-eligibilities.md",
-      "hash": "651dc4dd7e6d057aaba3df6bfa72c2b39fbee01044d5624803304e0d9d312aac"
+      "hash": "3bebc3190f2b5b0260433af850e3385b54c2be1ea4dc01ae272c6e8a061feec6"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/find-rejection-reasons.json": {
-      "etag": "\"4b4a-65d55abffbbe5-df\"",
+      "etag": "\"4b4a-65e6a71079983-df\"",
       "file_path": "documentation/apple-ads-platform-api/find-rejection-reasons.md",
-      "hash": "4f541f3b0613beae7d307a8b54b97ff8660bce793f0621decaa424790daca6e0"
+      "hash": "f1d81f050c1954938865733373df58ecfa015407a32af94a72eea07f5aebc0ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/geo-targeting-data-objects.json": {
       "etag": "\"20bb-65d55abf264ba-df\"",
@@ -5991,169 +5991,169 @@
       "hash": "71b3dff6e029d5eb81b9df72ad83cd5d3c1d7db29ad7052074455943d5814e5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-ad-accounts-_id_.json": {
-      "etag": "\"3340-65d55abf0cf06-df\"",
+      "etag": "\"3325-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-ad-accounts-_id_.md",
-      "hash": "ffe207bd284313f555a01f1b86506b38e34f4162932938b29860461761d1a1fb"
+      "hash": "3b0626b41a998290b34ea4bb7f03152036acb4d9b818915c1208524365ff47a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-adgroups-_id_.json": {
-      "etag": "\"41fd-65d55abeb4a33-df\"",
+      "etag": "\"41c7-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-adgroups-_id_.md",
-      "hash": "467c3de39558596abe9c71084441c94fdba351b7b5bfc8834350d5c0510b0413"
+      "hash": "6917976d0c303c5dfca7d2c5de7a25f85230d60ce54c8f31d9cde96f5879264e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-ads-_id_.json": {
-      "etag": "\"4b49-65d55abf264ba-df\"",
+      "etag": "\"4b13-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-ads-_id_.md",
-      "hash": "643a89af48bfb994f2c0687521a51d356f8b5a914b2b2511e16f37d0e9e0d709"
+      "hash": "5b90848575bf0e4388354e4e6db13d6be8616bfd522f31ef9034ff9ff87418be"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-advertiser-resources.json": {
-      "etag": "\"3b22-65d55abfa2fc7-df\"",
+      "etag": "\"3b07-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-advertiser-resources.md",
-      "hash": "b24c5a63aaf6e8d558853bd78f04937a866b2e5af8b5ab44997c790303eca432"
+      "hash": "0a76e59dfe55dd45c2c34f969e1a2cbaf1b3d5d903535a77c4e49ba2b32ef155"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-app-ad-group-reports.json": {
-      "etag": "\"5725-65d55abf65343-df\"",
+      "etag": "\"5725-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-ad-group-reports.md",
-      "hash": "ecb3cbb0ef6febc51ac0f288094f05ab1ba6180681dbebc439ac3002cb40d401"
+      "hash": "cf6b42521f0fb49bf46149c56a85b2f538f959839fcc433c4cff4e05ab0129be"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-app-ad-reports.json": {
-      "etag": "\"6345-65d55abff10ea-df\"",
+      "etag": "\"6345-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-ad-reports.md",
-      "hash": "8fd4add7030b74b0e2574a841b69b94a7ab81942ce5f6cecaaae885e6430ca1b"
+      "hash": "e41d648dc1359ec227b337c61aae0e62ab4be10515968bacc8f04dd31f3cd9c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-app-campaign-reports.json": {
-      "etag": "\"5797-65d754e9b1aac-df\"",
+      "etag": "\"5797-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-campaign-reports.md",
-      "hash": "51e917571acb752c1f054f63c913a54e87130abbf8fe0d55e458cef979c50995"
+      "hash": "f7e1f9b0c2c12ef2f2f5c6f6996d9175d3c03d17680dcbd05532dd421f4bf4a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-app-details-by-adam-id.json": {
-      "etag": "\"29cf-65d55abf0cf06-df\"",
+      "etag": "\"29b4-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-details-by-adam-id.md",
-      "hash": "c0bb90a9fcc8214640d7df1878fde7347896a429d40700b89078c2a3b7c88341"
+      "hash": "a9a5ebbc0b0a2bf2b81064d2c97bfd408a77d92a9df2e20c4773edf70ce19239"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-app-keyword-reports.json": {
-      "etag": "\"6352-65d55abf47dc3-df\"",
+      "etag": "\"6352-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-keyword-reports.md",
-      "hash": "9646e8054ca3ca5c0349647a9a7a9b31e5df546a0bc4b5350a57376c6d8c938d"
+      "hash": "48ac900c893078e6878695d5f70e7cf3cddbe44e0a6bb64f5c670298131de793"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-app-search-term-reports.json": {
-      "etag": "\"75d2-65d55abe58b6d-df\"",
+      "etag": "\"75d2-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-app-search-term-reports.md",
-      "hash": "6d2d4830d528ed209f0f13328f6c4333e8952d78f70401d426a74b71c0ec573a"
+      "hash": "6bfe48006e8f2a9bdb1b3baa4970339b835512740289de882e10007456cbf830"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-asset-by-id.json": {
-      "etag": "\"294b-65d55abe98c9c-df\"",
+      "etag": "\"2930-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-asset-by-id.md",
-      "hash": "d313e48476bd5b94c7bb8cc6c121fc1d94ba96b2ee816c99d708e636ac7b662a"
+      "hash": "2245482c77287481e38a1efb2008e373ccd9a561a8ed94c13a61e5617047aa7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-brand-ad-group-reports.json": {
-      "etag": "\"710d-65d55abfa2fc7-df\"",
+      "etag": "\"710d-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-ad-group-reports.md",
-      "hash": "87497c946e201bc581a9d40fa59715a1cfe6f607e7e7bb61ca882d3afe98affe"
+      "hash": "e76bcd52f89d05be5a0f9a4d949ab96164600fc43721b44ed9467f12a84b6015"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-brand-ad-reports.json": {
-      "etag": "\"71aa-65d55abe58b6d-df\"",
+      "etag": "\"71aa-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-ad-reports.md",
-      "hash": "8d027c1a7e018243bf70212abcf76dfa9f1adf0a30ddecd6839f9f063debd5c2"
+      "hash": "008cfa14f0fcd20b9f8f25a09e75a59cda034f6ed181bc497abd6a213df19038"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-brand-by-id.json": {
-      "etag": "\"2a5a-65d55abfa2fc7-df\"",
+      "etag": "\"2a3f-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-by-id.md",
-      "hash": "bcbcad9bf497ddf34ce6b79f5f8e8dcdec091f1c434fb02cf9a94fbfe07a5579"
+      "hash": "9dde2bebe5544ef70668c3f615af1999e5c368fecfb1a63b588fe7696cad2391"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-brand-campaign-reports.json": {
-      "etag": "\"8246-65d55abeb4a33-df\"",
+      "etag": "\"8246-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-campaign-reports.md",
-      "hash": "bcf59544865622996717f45a3b6af5d001b9af21c69560f07b5cd773bfa5661f"
+      "hash": "adfc75189346606cd58c0cdb38f4d1f2127114799b9b43529473263b57489c1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-brand-keyword-reports.json": {
-      "etag": "\"6610-65d55abf47dc3-df\"",
+      "etag": "\"6610-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-keyword-reports.md",
-      "hash": "9fdb3b3f3e5621df7e55c4de453bc685b67defeac544e585759ebf9695521573"
+      "hash": "802d5f3e1763fdae3b0cd673fe3bb77201debad986fa693432bc23fa0cff31f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-brand-search-term-reports.json": {
-      "etag": "\"8a64-65d55abf65343-df\"",
+      "etag": "\"8a64-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-brand-search-term-reports.md",
-      "hash": "ce3e675193afa19e1910d214cb3d328e7de226e5b676c2a2a229d7b840efaac0"
+      "hash": "b910baf6d3a6f2206caf87f08988cb6beab8e1f076ae03cd7e1388485421213e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-campaigns-_id_-legacy-app-limited-status-reason-details.json": {
-      "etag": "\"311d-65d55abf264ba-df\"",
+      "etag": "\"3102-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-campaigns-_id_-legacy-app-limited-status-reason-details.md",
-      "hash": "66fe150fbee932a3a23964ea8d3ace54b4297a9f160c22fbbd578ddba6963b00"
+      "hash": "070d07d52cff14fb6a9393800826870bbc4e98dd827ba3ce469d8960bf9a49d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-campaigns-_id_.json": {
-      "etag": "\"3f0f-65d55abe98c9c-df\"",
+      "etag": "\"3ed9-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-campaigns-_id_.md",
-      "hash": "1cc1d8a50b601c2d526a92e7da3d00ed085b8160bc9f250e28c16b454a942726"
+      "hash": "63522a640af7323f4c0837e9db3e8aa7281e4970dff41b50580dd54ad884fa0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-category-by-id.json": {
-      "etag": "\"2da3-65d55abfa2fc7-df\"",
+      "etag": "\"2d88-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-category-by-id.md",
-      "hash": "6c3067d9dd6ebaf26ad5a2a8805bc5f77f2309ad93e20e5160368ba617c282e3"
+      "hash": "b1ea2745be747c7782986f4eac07532d3884dfdedecbc176b781873d69b96a2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-change-details-by-detailid.json": {
-      "etag": "\"5486-65d55abff10ea-df\"",
+      "etag": "\"5435-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-change-details-by-detailid.md",
-      "hash": "72e88bd206be7f180e029b9c517460f03ce499f4b8fc0a20fe691fc697fde5e3"
+      "hash": "fad8e549a5ca7f4b3adbecc57ac0e2890a75d47c05fb461d47affe11d96131cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-creatives-_id_.json": {
-      "etag": "\"3f87-65d55abed51e9-df\"",
+      "etag": "\"3f51-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-creatives-_id_.md",
-      "hash": "59b243c21eda486977a88ecb9b03b6c46f1ca7579ce7b17a3ccc6fa2b0307820"
+      "hash": "bb74e4f45f85f97d5b04d0f79fdf5763abb4247feb9c7664fa0bca4ef5905133"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-current-user-details.json": {
-      "etag": "\"2e81-65d55abe3c34d-df\"",
+      "etag": "\"2e66-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-current-user-details.md",
-      "hash": "7917f04f9dfdecba91d61cd32296484570ab235caf9963c5157ef73b0a80d063"
+      "hash": "5baf98af329604c7735e9f53a59ad5c5b0415e20412ef456d0cf1a284a3961e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-keywords-_id_.json": {
-      "etag": "\"31d3-65d55abf0cf06-df\"",
+      "etag": "\"31b8-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-keywords-_id_.md",
-      "hash": "942a0b2b280bb5f6a828eff4713cee24873962d72045a131eae463a11f13f60b"
+      "hash": "50c5104f94728636870e1113a8737a9a4418131b52083fee892eba785e78c820"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-location-by-id.json": {
-      "etag": "\"3107-65d55abe3c34d-df\"",
+      "etag": "\"30ec-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-location-by-id.md",
-      "hash": "90c59de6a0731a36c63d9830bc311b248c4323829ebfc21576d77193d04c358e"
+      "hash": "19407a7ecc2f974885232cf4b3b0ff3cfb8315967667fbfe81414739a9015704"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-location-group-by-id.json": {
-      "etag": "\"3c02-65d55abe58b6d-df\"",
+      "etag": "\"3be6-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-location-group-by-id.md",
-      "hash": "b35b22988a363f3f3b42d070fbdcec27d06833adeb885212e47f59c1a50231f8"
+      "hash": "b5dbc03cd56535aee45274c4068d79de456f0ca16a2b98fc6a1b108a08abbda0"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-negative-keywords-_id_.json": {
-      "etag": "\"3a74-65d55abe3c34d-df\"",
+      "etag": "\"3a3e-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-negative-keywords-_id_.md",
-      "hash": "7e875246f201ee69adf44c2e0d813daac77f8cfcd7806f04079f00ad7921df29"
+      "hash": "187803106a3349647994b1db630893eb85666948209d95f50578b5a3f33ebbdd"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-orgs-_id_.json": {
-      "etag": "\"2e96-65d55abfc4787-df\"",
+      "etag": "\"2e7b-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-orgs-_id_.md",
-      "hash": "214a4999b602ecc1e53e449b74c215f448a0f7df457fa683d3e105c2619cc36d"
+      "hash": "6037271f6758fd00c85cbc4c669dfdd95be5f0a8e71e4863993f546e8aaf5972"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-product-page-by-id.json": {
-      "etag": "\"3790-65d55abfc4787-df\"",
+      "etag": "\"37b6-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-product-page-by-id.md",
-      "hash": "7644a8ea57fd9ac89a65e4947ae63e8b3c9e3c6a3fa0e3919013ab2b25000550"
+      "hash": "1b47207341e1bdb323e777c61fa361571868414c885ef098dd06fb69c40114ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-shared-budgets-_id_.json": {
-      "etag": "\"3bde-65d754eaf19aa-df\"",
+      "etag": "\"3bc3-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-shared-budgets-_id_.md",
-      "hash": "a3f5d65a839c7aa37a029ae22cd283dfb73ac157acb76ab165314ae5223bd018"
+      "hash": "c09c83a265afa6e9f09ceee12a6613ba84bbbef50539ab43c82771dfb68becf5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-user-acls.json": {
-      "etag": "\"32bb-65d55abeb4a33-df\"",
+      "etag": "\"32a0-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/get-user-acls.md",
-      "hash": "4f3dbeff40773d0bdd303a7c0c190abe6affd9290d0f849e4467d70af87787c3"
+      "hash": "80cd924fa35ba0d7021e44bb4ca82dfba6f78ff6cf9ebd36ad0e5bd2fa257035"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/gets-a-list-of-geo-locations.json": {
-      "etag": "\"3e55-65d55abff10ea-df\"",
+      "etag": "\"3ea9-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/gets-a-list-of-geo-locations.md",
-      "hash": "ba2638fcbb86d5c96751bf0e683c3187a15dbcb6823ba12237f9eae89899d318"
+      "hash": "1ff9876f34afd6bd65b520044894f021b6976d9087c5c9ea0ca7c6431357d03b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/gets-rejection-reasons-by-id.json": {
-      "etag": "\"2d82-65d55abeee8f9-df\"",
+      "etag": "\"2d67-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/gets-rejection-reasons-by-id.md",
-      "hash": "fe0224d14e7eb933beb47ef9b7922c197d691d293b8e1205909f230474debd0e"
+      "hash": "276f53ef5ed947251eae09de10c7ebe3ad56f8816da324ca505aff0c4f786cb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/imagetype.json": {
       "etag": "\"1efb-65d55abe98c9c-df\"",
@@ -6231,9 +6231,9 @@
       "hash": "ccbff620b26c95ab7603c7408d25c9318e1713f5082424b92a278b81952b1eaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/journey-app-store-ads.json": {
-      "etag": "\"d3a9-65d754e97fd10-df\"",
+      "etag": "\"d3af-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/journey-app-store-ads.md",
-      "hash": "0eeb4ed0b6251abd0f32d7f10ed1950888bf5b04edb140aba2584e7b823442c9"
+      "hash": "93e499ba44e1ed47e13f90c85c64ef2506f5b3ab2a8f1ac3eb8a607385ee4cec"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/journey-apple-maps-brand-ads.json": {
       "etag": "\"b895-65d55abf84e8c-df\"",
@@ -6406,9 +6406,9 @@
       "hash": "d6df02531811ee56381a72bbce1d1356e5fb8c5dbacbbd0649934440c101eae3"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/location-groups-overview.json": {
-      "etag": "\"5470-65d55abe58b6d-df\"",
+      "etag": "\"55a3-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/location-groups-overview.md",
-      "hash": "78b0d753945bce1bc5b86f378c03bc667e2613f035a1d7f39aec8daaa7d9a991"
+      "hash": "5f2e88ac7cc6db52d70295f8cc48a163bd3cae392312b92ace58ba901d17127b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/location.json": {
       "etag": "\"5780-65d55abeb4a33-df\"",
@@ -6426,14 +6426,14 @@
       "hash": "308999fea49ac2eabdab923d4d1cb80fdcbba19668e42df06359e910487fa811"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/locationgroup.json": {
-      "etag": "\"5633-65d55abed51e9-df\"",
+      "etag": "\"5756-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/locationgroup.md",
-      "hash": "6c860de58a2c3a54889621baf56c3e62866eacf8fcdf462009f86b963099802f"
+      "hash": "84e1ad4b503722d72e1f4a7c21dd64f89e4106752cd0a6b7baa813ab1139d854"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/locationgroupcreate.json": {
-      "etag": "\"6d6c-65d55abfc4787-df\"",
+      "etag": "\"6e41-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/locationgroupcreate.md",
-      "hash": "f4b03ff4f7dec81a8a3eaf2b8bea2fe47247f4f4378ad48ba837c6b8d8d6717f"
+      "hash": "1f5c495c8b5b4d13e4a2a764d338a6f65aa171708e2cf0a1fe3936147e2a9376"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/locationgroupqueryresponse.json": {
       "etag": "\"4cb6-65d55abf47dc3-df\"",
@@ -6671,109 +6671,109 @@
       "hash": "27e0ec98ce7e4fbe79255b339b6dfcf96178f13a3486813a62dd9048d29958db"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-ad-accounts.json": {
-      "etag": "\"493b-65d55abf47dc3-df\"",
+      "etag": "\"493b-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-ad-accounts.md",
-      "hash": "f27848c8c4b9b9a2ebdc5bff87a7c7a9bbf38865d94b0ad052ae0ca39b3aa5d1"
+      "hash": "b4d0bbed14c7c9d8596cad9b49366c781a911d38e75ceaa6674d05b016e1b9d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-adgroups-query.json": {
-      "etag": "\"6877-65d55abeee8f9-df\"",
+      "etag": "\"6877-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-adgroups-query.md",
-      "hash": "419707e4a1f3b5a29a1ff44b7defb3d029b280e71537cfeed773f25fc342dc65"
+      "hash": "1af3d8c4746c732e65cee9c4d8653b7a24e7946446967643630be28f8f039e15"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-adgroups.json": {
-      "etag": "\"644f-65d55abf47dc3-df\"",
+      "etag": "\"644f-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-adgroups.md",
-      "hash": "4c4d0bb6fe9c1b5ddc106173a761871422c6bdf83656db270f7ac8d321ac42cd"
+      "hash": "c3824b3c7e04260351f0722cea6351fbf427d0b58819084e853957ee78f6719d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-ads-query.json": {
-      "etag": "\"59f7-65d55abf47dc3-df\"",
+      "etag": "\"59f7-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-ads-query.md",
-      "hash": "f586ddc96d0e6b8df15b95d611ab69920e328a8853814724df055a8348733372"
+      "hash": "74dfd5fd77442d0d193a0d33b8d931283c8e64d3c16da80efbab4aa2cff02335"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-ads.json": {
-      "etag": "\"38e1-65d55abf264ba-df\"",
+      "etag": "\"38e1-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-ads.md",
-      "hash": "05951c14a0131d2e06b731ffb2016745985a9f317de840516d7a1292d621ba64"
+      "hash": "515e42310b76f657a8f4b267ab9030281ddd11d1bd0e4df13284e30a3f627582"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-campaigns-query.json": {
-      "etag": "\"b3d5-65d55abf47dc3-df\"",
+      "etag": "\"b3d5-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-campaigns-query.md",
-      "hash": "3856884e2477dcc18fb977e64a6d87a7b83613df5a4499a799db94bac086da4e"
+      "hash": "53eca2f40bd4a9e0d9f1e853b1c2f86d72526d472716a62d53a60c4f87310b4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-campaigns.json": {
-      "etag": "\"c2eb-65d55abfa2fc7-df\"",
+      "etag": "\"c2eb-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-campaigns.md",
-      "hash": "175b43aad7d584bef33e6638aa2b6d735865131c02146c30cd76acf22f8c4f9f"
+      "hash": "63dfe19a196852b1a31021cd9b8c5d9269b69a96839812aa9d120489f52a948b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-creatives-query.json": {
-      "etag": "\"57cc-65d55abf264ba-df\"",
+      "etag": "\"580e-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-creatives-query.md",
-      "hash": "086dabb010657e387344b3a674fec656c1c7afc249e780499e21ae3f47f8b2b6"
+      "hash": "5fd846ae17e6c2101db2122b5a9873b13b8903f77edd9c441ca2d24a5978775c"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-creatives.json": {
-      "etag": "\"4c89-65d55abe58b6d-df\"",
+      "etag": "\"4c89-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-creatives.md",
-      "hash": "6850ec16988682299b095f7befb4cc3fad924431552a665457281163ebb560df"
+      "hash": "053547d02574df020d54f6fff59eaff0a87331a46a3ae4f23445c8b14d982bcd"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-keywords-bulk-create.json": {
-      "etag": "\"3554-65d55abe3c34d-df\"",
+      "etag": "\"357a-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-bulk-create.md",
-      "hash": "0744578bb2f79a5bfaca53723c477db2cd8d2612545bbc8dd8e1fdbbcb5e4940"
+      "hash": "eb07e3d6adf8b58d35dee2ce61d9e7980fd8d79ffc1d7498324866d5b2a4eb29"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-keywords-bulk-delete.json": {
-      "etag": "\"2b8e-65d55abf0cf06-df\"",
+      "etag": "\"2f2c-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-bulk-delete.md",
-      "hash": "3c8cddda8e5786d3c2b5c06e18e860f0a4b36f92493d7948fc38cdccbfad2b86"
+      "hash": "27949abc2cc8689c3c2b8b174a803e1df02c059dea4d9ca855cfa01d3861d3ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-keywords-bulk-update.json": {
-      "etag": "\"33e2-65d55abeb4a33-df\"",
+      "etag": "\"3408-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-bulk-update.md",
-      "hash": "0920bbb0cbff963417fa625f5a4d9cbcf4a531250cc03efe277b3f4fc5c69c76"
+      "hash": "e09726715c6738a874c8e959ad22aa139efa0a4b1625c474a19ff905b53d122d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-keywords-query.json": {
-      "etag": "\"737c-65d55abf264ba-df\"",
+      "etag": "\"737c-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords-query.md",
-      "hash": "96706ae40136e0951d79fe760cf69ed88c0651ddb9a8b5bfa37ceead24008cdb"
+      "hash": "3a58bdcb0e079baf732411f85ef50c2f478842b2bb0d6ff9f12cb784ebc1da9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-keywords.json": {
-      "etag": "\"4aee-65d55abf84e8c-df\"",
+      "etag": "\"4aee-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-keywords.md",
-      "hash": "764e79fa8467d0195da773c5dfbee68220722a2d8d54a140ec5ff0a2ef026c2e"
+      "hash": "a8c97970bbc09ee4119a06ca033a654d9ae8a64ca1eae8d18d15a41ea6be7d79"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords-bulk-create.json": {
-      "etag": "\"3434-65d55abf0cf06-df\"",
+      "etag": "\"343a-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-create.md",
-      "hash": "d5d26cb57f7d9c7067b76e65f9439bd35105b3138d3ac660ea361a645bedd22f"
+      "hash": "2ce8d835ed0c390eae955306b71c9f0e11885ea4a99bf77b61afd5445279cd96"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete.json": {
-      "etag": "\"30cc-65d55abff10ea-df\"",
+      "etag": "\"3172-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete.md",
-      "hash": "e303a7c5362952741873c366ad543d9e494e71707cf7d6e64b3cd9a9eec09f59"
+      "hash": "445391a4dee19bf51b3b746d8d80b3067821c605de576fd0e155bb2a644bd207"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords-bulk-update.json": {
-      "etag": "\"32d6-65d55abe98c9c-df\"",
+      "etag": "\"32dc-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-update.md",
-      "hash": "ad8342a66a07f4ffde5daabf876aaa9820a69d136b30b50072900f1c05f2ba4f"
+      "hash": "f76c96e4534ec89d4590a1e8a90af14fff4f4efb2566c0704ca35b385e8b5654"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords-query.json": {
-      "etag": "\"7538-65d55abeb4a33-df\"",
+      "etag": "\"7538-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-query.md",
-      "hash": "0f3117fca443f8fe68b8a1518b7c9cbcf5078757903d9da6840ac654da606cf5"
+      "hash": "9fa4e4225701286ce975e39098170d998091d926c678718d3b11801fac68369e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords.json": {
-      "etag": "\"46b2-65d55abe98c9c-df\"",
+      "etag": "\"46b2-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords.md",
-      "hash": "c111f05f1924fa5683bb620784909d3c825418fa2c390f29c41ff387bf9a53b9"
+      "hash": "8488a6cfa1642dbd965c480f670d4c33f52b5198ea8e98cdc248aa6081ab398c"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-shared-budgets-query.json": {
-      "etag": "\"7992-65d754ea7aa6e-df\"",
+      "etag": "\"79b8-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-shared-budgets-query.md",
-      "hash": "c69629476df2c8b140111ceb74e71c6e8136c62ad094ec09a5a64dddfd28a1ea"
+      "hash": "efa72af78b2c1b2dfa0eb4d1d6f20b1be2d198b2c6a32ad1f0e4074e28ce4999"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-shared-budgets.json": {
-      "etag": "\"40d2-65d754ead77da-df\"",
+      "etag": "\"40f1-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/post-shared-budgets.md",
-      "hash": "b9e1d38322020e482c868b720905bf7e1bcda94f04c9c257324c37e4dfd8807c"
+      "hash": "cb7a9447c06e076ee7fa260df82186b468da1be611c768be8491f589807564d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/pricingmodel.json": {
       "etag": "\"2998-65d55abf84e8c-df\"",
@@ -6781,14 +6781,14 @@
       "hash": "eca9a0b25003f2b3967e1e0e0657d814b820ac68b1728032d602991e71512b23"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/product-pages-data-objects.json": {
-      "etag": "\"1d27-65d55abf264ba-df\"",
+      "etag": "\"1ceb-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/product-pages-data-objects.md",
-      "hash": "405e67f54777236f85347ef744bf010b23640ad76986a4388fe20c795bf126c9"
+      "hash": "90443c2b79dfd4f08dd2e6fdc5db481dda8ef5c914dc8b1d38d760fac9706453"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/product-pages-endpoints.json": {
-      "etag": "\"4a9d-65d55abeb4a33-df\"",
+      "etag": "\"4b6f-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/product-pages-endpoints.md",
-      "hash": "30f9830a6289c304616ab653e72b9e1d169790f125e7f20d01bc0b7d1ab0339d"
+      "hash": "fb34a979c2dd14097c187ee39b9a095eda02d7506d7cd9401c7940a0e5d377f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/productfeatures.json": {
       "etag": "\"4bba-65d55abf47dc3-df\"",
@@ -6796,24 +6796,24 @@
       "hash": "2c895aee6ae654143758354fc06a80c0e06865a024115800af53b75798164c34"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/productpagedetails.json": {
-      "etag": "\"2851-65d55abf264ba-df\"",
+      "etag": "\"28ca-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagedetails.md",
-      "hash": "7ed76b72186f4f56683149523e89032d784f2f5ba37752ca8eca8a99f3ddbda2"
+      "hash": "e8515d840452502b0cbec4f5e58746606d33124beb7f7266c3e33a7cb936b25d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/productpagedetailsqueryresponse.json": {
-      "etag": "\"307f-65d55abf264ba-df\"",
+      "etag": "\"3043-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagedetailsqueryresponse.md",
-      "hash": "2caa422bff925f0a679c649f324f056d0191760766d3a8e903a0b8e9da43ec95"
+      "hash": "89e3a49f1526c62b49d2780e487342b3026beff585b7cd35d9c8660a2fd5ba9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/productpagedetailsresponse.json": {
-      "etag": "\"2981-65d55abeee8f9-df\"",
+      "etag": "\"293d-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagedetailsresponse.md",
-      "hash": "78619fc1da13ad5895b9188596e814f1bb6ed0afef5a48657bae1f6363cb897a"
+      "hash": "5f14fa4c97879287ea93592db7830796b9f2cae2dd54d9bd78ae39472259a633"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/productpagelocaledetails.json": {
-      "etag": "\"3510-65d754e9b1aac-df\"",
+      "etag": "\"34d4-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagelocaledetails.md",
-      "hash": "00486fd35210926ba9f7050f76a5b054a9947a1f18f09c05671042283625add4"
+      "hash": "3121a6960f547fe884189a65199010586e6baed471505a06a95249a9a8875704"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/productpagelocaledetails/assetsbydevice-data.dictionary.json": {
       "etag": "\"1bb6-65d55abeee8f9-df\"",
@@ -6821,9 +6821,9 @@
       "hash": "764a48036cd2bd2ff3dc0d56597c4d0a7967924b8f4d684eee041512b303d2a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/productpagelocaledetailsqueryresponse.json": {
-      "etag": "\"3362-65d55abf0cf06-df\"",
+      "etag": "\"331f-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/productpagelocaledetailsqueryresponse.md",
-      "hash": "a81c63d12a9e7f9c5e8b1b33e87855efb229c3ef532aa883a4189145cc3bf696"
+      "hash": "d3aa7ca0773bbaddcfb37654736b0da7c918313cc5c91a6a4488a0a005965c55"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/promotedobject.json": {
       "etag": "\"3b6f-65d55abff10ea-df\"",
@@ -6836,139 +6836,139 @@
       "hash": "def8f94a4561c56c09a5c3488104b688b55a59eec8e9bc2810a6aceeafe828ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-ad-accounts-_id_.json": {
-      "etag": "\"4ae9-65d55abe58b6d-df\"",
+      "etag": "\"4ae9-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-ad-accounts-_id_.md",
-      "hash": "09f6ccd4e49d3208f0a430f34c3a17d44aea59088bd5b01fd7c9d87297c30b9e"
+      "hash": "24296d3607dcfc93a4b279c810fe6ce3ebec7f7d46650551e8cc668d50080665"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-adgroups-_id_.json": {
-      "etag": "\"71cd-65d55abf264ba-df\"",
+      "etag": "\"71cd-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-adgroups-_id_.md",
-      "hash": "50c23bb50637ceadd4b30dbf6270764dbe1e2670e591f93128207d970665079e"
+      "hash": "509e4b1f4b677b368e931c01712e2dd49519ff1ab9bfcc4a1bd01e61555098f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-ads-_id_.json": {
-      "etag": "\"35a0-65d55abff10ea-df\"",
+      "etag": "\"35a0-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-ads-_id_.md",
-      "hash": "8918b423503d5eefd409b9f3a2f439a124097cdbdd8f003aae0e666570143316"
+      "hash": "f122bb6e2bb5075bfae0934c122c41df17c7ed2d5bcc074f7aaa5aa743fa069b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-campaigns-_id_.json": {
-      "etag": "\"508e-65d55abe98c9c-df\"",
+      "etag": "\"508e-65e6a70fb5eb8-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-campaigns-_id_.md",
-      "hash": "a6d73acf34535042a2945c72e8c6db4283602581a63dd703c9f04fd8e1d7c72d"
+      "hash": "8971017afd457583362677567ac134e7731774cb2eb3dc34018e8211b9f653d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-creatives-_id_.json": {
-      "etag": "\"3806-65d55abed51e9-df\"",
+      "etag": "\"384e-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-creatives-_id_.md",
-      "hash": "6dc32742367a59470ad0d72071ba44c644e2500d9771df9056faf12b743b5059"
+      "hash": "9d697731fdc9ad0c9cc3b3cb17dec061e7bc4ce542d7e48b1b3819491923ec0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-keywords-_id_.json": {
-      "etag": "\"3bbd-65d55abed51e9-df\"",
+      "etag": "\"3bbd-65e6a70fd90e1-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-keywords-_id_.md",
-      "hash": "5f1e82cd48e7c6f3f4ab92a5ff0bbc7c74bf072e1e4ca8d0f00ae596b7babe5c"
+      "hash": "a90bef18bf8ade53b5cab5de843834006f7aea0380f96ba305607a49df9d519a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-negative-keywords-_id_.json": {
-      "etag": "\"318d-65d55abe7af45-df\"",
+      "etag": "\"318d-65e6a70fa3bfb-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-negative-keywords-_id_.md",
-      "hash": "90626042649dd6bd211e64afc9c8fa734fc6023808cf5dc92b52ba5c4e72af2f"
+      "hash": "79f7625e498a3cf5b1f4b0e4dcb4495f74c4d5f313abaa2d879bd4e92455ccf5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/put-shared-budgets-_id_.json": {
-      "etag": "\"454d-65d754e9ea1e2-df\"",
+      "etag": "\"454d-65e6a70fc677a-df\"",
       "file_path": "documentation/apple-ads-platform-api/put-shared-budgets-_id_.md",
-      "hash": "01c757614629c7cf76ccf5d87f0e565dd55e682dda8e213b8b4f9628e008c905"
+      "hash": "24b86b1ca6ca455d19cb163fd1f9548ab144014c205ac94f61f51445578ceb2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-app-impression-share-data.json": {
-      "etag": "\"889c-65d55abe58b6d-df\"",
+      "etag": "\"889c-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-app-impression-share-data.md",
-      "hash": "a68767e165bf7d205d6e4247ca3efd83690a93b6dba5cdefac53d4462f572866"
+      "hash": "80b112598dfce5f1020ab99b49ca875b9465095a66e4aa395b071060df5e8de1"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-app-search-term-popularity-data.json": {
-      "etag": "\"68e9-65d55abff10ea-df\"",
+      "etag": "\"68e9-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-app-search-term-popularity-data.md",
-      "hash": "0b9fd45dc69b2b39eb4521df6e2a13b9ba0facb8fda5d37571a6b9f6ffa2a8bd"
+      "hash": "0852ed8b768fed300296c4190ef914c857ba7b7ab7292e82eb8f0f45cc145471"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-assets.json": {
-      "etag": "\"6f6e-65d55abe3c34d-df\"",
+      "etag": "\"6faa-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-assets.md",
-      "hash": "1c3b05cda1f61a23a98c3ab7fc2e50500faa34c21f0a4c3066e0a943036fa60b"
+      "hash": "2ee7f4c20544d87b81a348bfeecdc26314c9938ffc3f7421709725bc5de2c706"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction.json": {
-      "etag": "\"8535-65d55abf84e8c-df\"",
+      "etag": "\"85cd-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-audit-summary-_-grouped-by-transaction.md",
-      "hash": "63cbde1319898f5afcb4eb4cee734b5dad795bc8453a562a4bdb9932a75a9f18"
+      "hash": "dec1c2468c5855b67a26f8bfe03f2182766553a01a0c66d08fdbd89474f8fab9"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-brands.json": {
-      "etag": "\"5627-65d55abe58b6d-df\"",
+      "etag": "\"5627-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-brands.md",
-      "hash": "2833ca3cff55819292deaca5118fe11cf61a5c46a7c71990218c6b585baecf23"
+      "hash": "e6168b9e1986969cdb347872ec8af00cbc7ddeb4bc3d0f266f2a16049809f4b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-categories.json": {
-      "etag": "\"606d-65d55abfa2fc7-df\"",
+      "etag": "\"60c3-65e6a71052fc1-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-categories.md",
-      "hash": "db293c855ea14669e4095ddaaa462621570a7ab0adbd364b1c17c06a3ce8d39c"
+      "hash": "a6e0b7a49a97be230274696ddab0a62046c58972451bb93d1c19069225a24618"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-category-suggestions.json": {
-      "etag": "\"5062-65d55abf84e8c-df\"",
+      "etag": "\"5062-65e6a7104045c-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-category-suggestions.md",
-      "hash": "b7f9f2183a116845d729193c81ad1ee6a825b35f55512b79508a2350e27639ee"
+      "hash": "45b08523bf6c92b2c01724eb26fd1dcb74237eaf268ee82cf145422e40f60d37"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-daily-budget-recommendations.json": {
-      "etag": "\"8dbc-65d754e996802-df\"",
+      "etag": "\"8dbc-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-daily-budget-recommendations.md",
-      "hash": "702e8aebf34ee0771a207dec4aef29c08c455492bf0e021e6061943d6fca9bb8"
+      "hash": "e27951677c35aa8f3cb758031a56e19cfee0fab2b27caddd4582da8d97793e59"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-default-product-page-locale-details-by-adam-id.json": {
-      "etag": "\"5703-65d55abe3c34d-df\"",
+      "etag": "\"561f-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-default-product-page-locale-details-by-adam-id.md",
-      "hash": "c74a8da7277371e397cc0815630aca1867c0a0d391de39b8957e8768bbcf3610"
+      "hash": "9d969b6a51450d770611da90f930df709ce2a09bedfe98568a1bb54e49cd5c92"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-keyword-suggestions.json": {
-      "etag": "\"41fd-65d55abf47dc3-df\"",
+      "etag": "\"41fd-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-keyword-suggestions.md",
-      "hash": "fada7a27053d5bde99e76e230f87a5e9ca7514acc9838abbb4e1e72f59d0e274"
+      "hash": "d4c873888b21baf6c1e3c166eba824859821e35b54cb7faffe77512d22b95037"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-location-groups.json": {
-      "etag": "\"6691-65d55abf0cf06-df\"",
+      "etag": "\"66df-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-location-groups.md",
-      "hash": "854ed0ac6e1316a4d0fc82cc5441e71626553f8022aad709d330c201402f4c9e"
+      "hash": "c7441421a6cdda80f222706a515f34238a93303d791409fe3572d74bd27bddde"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-locations.json": {
-      "etag": "\"73b2-65d55abe3c34d-df\"",
+      "etag": "\"7415-65e6a70f781de-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-locations.md",
-      "hash": "4aaeaf4cdd97f58687700bfe9e5b23b5e4909739f522ce087603085b61783425"
+      "hash": "41f050c8b5128a718a22991e944f3297a109412091e25d28132c62877dd30fa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-phrase-suggestions.json": {
-      "etag": "\"582a-65d55abfc4787-df\"",
+      "etag": "\"582a-65e6a71067136-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-phrase-suggestions.md",
-      "hash": "fb6b27d4e60c549cecdde79fe4e87773b0d46d3b8efe25bbe5e611eb1956df50"
+      "hash": "8daf12c1b87a7a913e0280b3850c61056b089c3e52358af776addccf56306fb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-policy-assignments-(rejection-reasons)-for-external-consumers.json": {
-      "etag": "\"552d-65d55abff10ea-df\"",
+      "etag": "\"5567-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-policy-assignments-(rejection-reasons)-for-external-consumers.md",
-      "hash": "03c24674cc09b9662d96b9e3cd94cb16b225afba0afb2e4a4140e7ad5e30f458"
+      "hash": "cf8555bced60b59c9c1a7f4688fa7c7bd2ddc3dfd5386291dc205967e8847e5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-product-page-locale-details.json": {
-      "etag": "\"5f45-65d754ea7aa6e-df\"",
+      "etag": "\"630e-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-product-page-locale-details.md",
-      "hash": "316ad5d3e43fe81cc56af1fad51d659daa41f0f06efd26fed13d6a510ebdbb15"
+      "hash": "d1e5aec0bbdf343d9a9cef25a1635c7a0390a00f8dee373f44a80bc4b31e43ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-product-pages.json": {
-      "etag": "\"4c4d-65d55abe58b6d-df\"",
+      "etag": "\"4ca0-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-product-pages.md",
-      "hash": "06e67c9678599a800a5d4cb6d44d60d7aa9ed26ae5cc290809cf2b0659d912ce"
+      "hash": "fe9711761738e9c7e38ba973b6f6ddf0e138a814351d64bb3a046a081552ad5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-supported-app-languages.json": {
-      "etag": "\"6818-65d754ea20d8e-df\"",
+      "etag": "\"6818-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-supported-app-languages.md",
-      "hash": "761310e35b49f7dc910a6e22b30bffc5351c12f7b4a3f425b3457270bf706a86"
+      "hash": "9b7067a9bd4c9b7ae722360c83ae992af3c20c88b0ca0813dc2b88c6a79e242f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-target-cpa-recommendations.json": {
-      "etag": "\"75f3-65d754ea39750-df\"",
+      "etag": "\"75f3-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-target-cpa-recommendations.md",
-      "hash": "64bf5a961fd248e3055e7989a82ac7d3966406de1948561a935d23210a762f6a"
+      "hash": "7c2b1a5c9e1c8093e609d37aef8928441459879bd8cf776e5c6df9a923ff2819"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-target-cpa-suggestion.json": {
-      "etag": "\"48f6-65d55abf264ba-df\"",
+      "etag": "\"48f6-65e6a7100ec71-df\"",
       "file_path": "documentation/apple-ads-platform-api/query-target-cpa-suggestion.md",
-      "hash": "658bb8ff65380784a3a72bfb5625b598c494529eb77590375534690c88080a1e"
+      "hash": "7f7caf80242677996a8ee92df96857ed61b524f50351bb4299ebc5b3875c7c09"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/queryfilter.json": {
       "etag": "\"336b-65d55abf65343-df\"",
@@ -6981,14 +6981,14 @@
       "hash": "36248ff1d10996074f3fb903ad3a9a176e86297871ebae08910f11c91f9e8b7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/queryfilteroperator.json": {
-      "etag": "\"570f-65d55abf0cf06-df\"",
+      "etag": "\"5709-65e6a70ffbea0-df\"",
       "file_path": "documentation/apple-ads-platform-api/queryfilteroperator.md",
-      "hash": "8706114ef887f5582f996a166da28c3c6f72c5d86789d26b9d1ab1ff69721a9e"
+      "hash": "fd785b04d0bf6af428cd42358db8886e58f15b162ed6c979df932e39c9b4a525"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/querypagination.json": {
-      "etag": "\"2050-65d55abeee8f9-df\"",
+      "etag": "\"20cb-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/querypagination.md",
-      "hash": "f6410d3da52d93fd7278f5abfbe79fd8015d5740e7690bd32af2e50c61102ad9"
+      "hash": "d3d7a516c3fcd04670eb163f059c1f2449cfc1507b4ebd3e2cc2775f55861b62"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/querypaginationresult.json": {
       "etag": "\"25cd-65d55abe98c9c-df\"",
@@ -7356,9 +7356,9 @@
       "hash": "1c2a9e1b22bcdbfb02771deb938ae35196594bdbca8a3959192d2037f6e7e03a"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/search-apps-endpoints.json": {
-      "etag": "\"419e-65d55abff10ea-df\"",
+      "etag": "\"419f-65e6a710751dd-df\"",
       "file_path": "documentation/apple-ads-platform-api/search-apps-endpoints.md",
-      "hash": "d8ae2e16b867d06b42f834b913bcc421488ba82396ee63b4a2d7fb8b10253a51"
+      "hash": "80da62fa8f872872f8e47b048f6ced8227331cba0155e384a8c3b4b42b2345bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/searchentity.json": {
       "etag": "\"3d84-65d55abf47dc3-df\"",
@@ -7371,14 +7371,14 @@
       "hash": "7ee272b75508595f397bc6fc5f03948c4301f70837b3d00632bd76d754ec73db"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/searches-for-a-list-of-apps.json": {
-      "etag": "\"3ebb-65d55abeee8f9-df\"",
+      "etag": "\"3e4f-65e6a70fe8a8b-df\"",
       "file_path": "documentation/apple-ads-platform-api/searches-for-a-list-of-apps.md",
-      "hash": "1383086e3bf06c7bbc0b6f5f7bf3476e0034585b90b52dc69a7dc0d9e9d34b95"
+      "hash": "47edaa3a68c3c490625a47f4014a5e04737367c92ac129017208b9453c219837"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/searches-for-a-list-of-geo-locations.json": {
-      "etag": "\"4b34-65d55abe58b6d-df\"",
+      "etag": "\"4ae3-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/searches-for-a-list-of-geo-locations.md",
-      "hash": "71c59a88bc539c42c19f6c112ae1dbe0908713fa19ef8bc017fe3093aed0ada8"
+      "hash": "f18b21929fe7a2fb5999412440917c93b0dc2ef7ec4f624d1e2d9fd626664967"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/searchsupplysourcetype.json": {
       "etag": "\"10ca-65d55abed51e9-df\"",
@@ -7486,9 +7486,9 @@
       "hash": "7ae81b9a9bfb2f50824e61736b1a019b3e89ac4d5327ef546682cbb40c0cdd1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/suggestions-endpoints.json": {
-      "etag": "\"4c2c-65d754ea639d4-df\"",
+      "etag": "\"4c59-65e6a7102317e-df\"",
       "file_path": "documentation/apple-ads-platform-api/suggestions-endpoints.md",
-      "hash": "08abb3de00c37b3525f0841ac9cf1a1bb728735a6526c8455f7085ce4bca8532"
+      "hash": "d0d17de01e0318ba5068732d8110aeb4dccebbe71a21ed5c2997457bf00970bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/targetcparecommendation.json": {
       "etag": "\"6e43-65d754ea20d8e-df\"",
@@ -7526,14 +7526,14 @@
       "hash": "e2db877f235bcea58746d676b8652b63f3a1d6c74e15ce364296c674c2bb2e98"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/update-location-group.json": {
-      "etag": "\"3cd1-65d55abf65343-df\"",
+      "etag": "\"3cf9-65e6a7103104a-df\"",
       "file_path": "documentation/apple-ads-platform-api/update-location-group.md",
-      "hash": "f71fbed8eca408a6820ccb0438a7b7c5e2353da2334b7cfb77f70deab7747664"
+      "hash": "3816f4402dcf8e5bd2ea49779f48b09cb866fef588496565a9baac2ecaf687ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/upload-asset.json": {
-      "etag": "\"3bdd-65d55abe58b6d-df\"",
+      "etag": "\"3bdd-65e6a70f9235f-df\"",
       "file_path": "documentation/apple-ads-platform-api/upload-asset.md",
-      "hash": "8ff2bebcdce72e9072c7dcce7905efc645aa96c7861b9d4bd4e80b212509fe7f"
+      "hash": "5fcd200284c73245412a02d4577d71109d4e4bedcdda2f338d98ce49904ad73b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/useraccessresult.json": {
       "etag": "\"34e2-65d55abfa2fc7-df\"",

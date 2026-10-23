@@ -126,9 +126,13 @@ operations as methods for convenience.
 
 - ``loadArray(url:stream:)``
 - ``loadArrays(url:stream:)``
+- ``loadArrays(url:stream:progressHandler:)``
 - ``loadArraysAndMetadata(url:stream:)``
+- ``loadArraysAndMetadata(url:stream:progressHandler:)``
 - ``save(array:url:stream:)``
 - ``save(arrays:metadata:url:stream:)``
+- ``withLoadProgressHandler(_:_:)-3ghip``
+- ``withLoadProgressHandler(_:_:)-8cm31``
 
 ### Logical
 
@@ -224,6 +228,11 @@ operations as methods for convenience.
 - ``stopGradient(_:stream:)``
 - ``jvp(_:primals:tangents:)``
 - ``vjp(_:primals:cotangents:)``
+
+### Concurrency
+
+- ``materialize(_:)->MaterializedArray``
+- ``materialize(_:)->[MaterializedArray]``
 
 ### Device
 

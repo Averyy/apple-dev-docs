@@ -19,7 +19,7 @@ This example applies a target CPA recommendation, overriding the suggested CPA w
 
 ##### Request
 
-```json
+```http
 POST /v1/recommendations/target-cpas/apply
 
 [
@@ -70,7 +70,7 @@ POST /v1/recommendations/target-cpas/apply
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -21,7 +21,9 @@ A single request can create keywords across different ad groups. This makes the 
 
 Create three keywords with different match types.
 
-```json
+```http
+POST /v1/keywords/bulk-create
+
 {
  "items": [
    {
@@ -144,7 +146,7 @@ Create three keywords with different match types.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

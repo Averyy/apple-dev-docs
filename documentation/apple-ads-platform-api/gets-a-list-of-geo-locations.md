@@ -25,7 +25,9 @@ Look up a specific locality by its numeric ID for use in an App Store ad group.
 
 ##### Request
 
-```json
+```http
+POST /v1/search/geo
+
 {
  "geoRequest": [
    {
@@ -70,7 +72,9 @@ Look up an admin area (state) for use in an Apple Maps ad group.
 
 ##### Request
 
-```json
+```http
+POST /v1/search/geo
+
 {
  "geoRequest": [
    {
@@ -114,7 +118,9 @@ Batch-resolve multiple geo locations (a state and a postal code) in a single req
 
 ##### Request
 
-```json
+```http
+POST /v1/search/geo
+
 {
  "geoRequest": [
    {
@@ -173,7 +179,7 @@ Batch-resolve multiple geo locations (a state and a postal code) in a single req
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

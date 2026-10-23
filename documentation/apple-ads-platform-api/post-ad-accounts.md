@@ -28,7 +28,7 @@ Links the ad account to an App Store Connect account via a Content Provider ID (
 
 ##### Request
 
-```json
+```http
 POST /v1/ad-accounts
 
 {
@@ -80,7 +80,7 @@ Links the ad account to a validated brand for Apple Maps advertising via a Brand
 
 ##### Request
 
-```json
+```http
 POST /v1/ad-accounts
 
 {
@@ -134,7 +134,7 @@ POST /v1/ad-accounts
 
 ### Header Parameters
 
-- `X-Ap-Context` (string)
+- `X-AP-Context` (string)
 
 ## Request Body
 

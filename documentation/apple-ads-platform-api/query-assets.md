@@ -55,7 +55,9 @@ Retrieve all assets for a specific brand.
 
 ##### Request
 
-```json
+```http
+POST /v1/assets/query
+
 {
  "filters": [
    {
@@ -122,7 +124,9 @@ Retrieve assets for a specific App Store app by its Adam ID.
 
 ##### Request
 
-```json
+```http
+POST /v1/assets/query
+
 {
  "filters": [
    {
@@ -194,7 +198,7 @@ Retrieve assets for a specific App Store app by its Adam ID.
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

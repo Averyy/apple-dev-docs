@@ -3456,9 +3456,9 @@
       "hash": "a3fb2b6832c47b390964f1a43bbf3344a24af7a66d3564d6347322e233ac1826"
     },
     "https://developer.apple.com/documentation/authenticationservices/ascredentialimportmanager/importcredentials(token:)": {
-      "etag": "\"2ce6-65d560ad4a33f-df\"",
+      "etag": "\"2ce7-65d75ccf9691e-df\"",
       "file_path": "documentation/AuthenticationServices/ascredentialimportmanager/importcredentials(token).md",
-      "hash": "e9eee599bb86bd12fe918049ae942fcd6ad45c382d1632cf3c59a5e229fb1786"
+      "hash": "abba75b7c848c4fcb0c2e9100716c293c06919711ee7433bdec0347367a420e6"
     },
     "https://developer.apple.com/documentation/authenticationservices/ascredentialimportmanager/init()": {
       "etag": "\"1964-65d560ad4a33f-df\"",
@@ -6336,14 +6336,14 @@
       "hash": "ff1245ae1746d0876ef34e339d17a2ea228caf81ec324640a8bccc4acd58b014"
     },
     "https://developer.apple.com/documentation/authenticationservices/authorizationcontroller/performautofillassistedrequest(_:)": {
-      "etag": "\"427f-65d560aadb5e0-df\"",
+      "etag": "\"4282-65dab572b1fa3-df\"",
       "file_path": "documentation/AuthenticationServices/authorizationcontroller/performautofillassistedrequest(_).md",
-      "hash": "41157deadbf237b8b73da1e6b88ededa03dc4c539efd9b9b3f58ed7150c42041"
+      "hash": "44e60581865da4937840ca2779374294327c3c8f66bdf8e4ec762ed805167bbe"
     },
     "https://developer.apple.com/documentation/authenticationservices/authorizationcontroller/performautofillassistedrequests(_:)": {
-      "etag": "\"42ba-65d560aadb5e0-df\"",
+      "etag": "\"42bd-65dab572b1fa3-df\"",
       "file_path": "documentation/AuthenticationServices/authorizationcontroller/performautofillassistedrequests(_).md",
-      "hash": "7b4c44b5478eb3e58019d5a10ac3109242a2e89f0aae2889055fa5ab45eb997b"
+      "hash": "458117d5c67237ce9f1728f5feae6aff5f2d0cc5012c9871ae6b6b26fab765ac"
     },
     "https://developer.apple.com/documentation/authenticationservices/authorizationcontroller/performrequest(_:)": {
       "etag": "\"4236-65d560aaf082f-df\"",
@@ -6551,9 +6551,9 @@
       "hash": "3ffc712e0d7eecef02ebba12fcde20ea42147bb9b834455589fbd403dc4a9827"
     },
     "https://developer.apple.com/documentation/authenticationservices/securing-logins-with-icloud-keychain-verification-codes": {
-      "etag": "\"5b51-659028ed90871-df\"",
+      "etag": "\"5b52-65d75ccfaac39-df\"",
       "file_path": "documentation/AuthenticationServices/securing-logins-with-icloud-keychain-verification-codes.md",
-      "hash": "affa45b3a055233f63bf429d3937f2b7e219dce628925898d982b70c803d01c8"
+      "hash": "90be693b6fcc76cab53f162acc627f42ea7432de597cda30a8734039e00ecda8"
     },
     "https://developer.apple.com/documentation/authenticationservices/signinwithapplebutton": {
       "etag": "\"410d-65d560ab08233-df\"",
@@ -10126,9 +10126,9 @@
       "hash": "a3fb2b6832c47b390964f1a43bbf3344a24af7a66d3564d6347322e233ac1826"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/ascredentialimportmanager/importcredentials(token:).json": {
-      "etag": "\"2ce6-65d560ad4a33f-df\"",
+      "etag": "\"2ce7-65d75ccf9691e-df\"",
       "file_path": "documentation/AuthenticationServices/ascredentialimportmanager/importcredentials(token).md",
-      "hash": "e9eee599bb86bd12fe918049ae942fcd6ad45c382d1632cf3c59a5e229fb1786"
+      "hash": "abba75b7c848c4fcb0c2e9100716c293c06919711ee7433bdec0347367a420e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/ascredentialimportmanager/init().json": {
       "etag": "\"1964-65d560ad4a33f-df\"",
@@ -13006,14 +13006,14 @@
       "hash": "ff1245ae1746d0876ef34e339d17a2ea228caf81ec324640a8bccc4acd58b014"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/authorizationcontroller/performautofillassistedrequest(_:).json": {
-      "etag": "\"427f-65d560aadb5e0-df\"",
+      "etag": "\"4282-65dab572b1fa3-df\"",
       "file_path": "documentation/AuthenticationServices/authorizationcontroller/performautofillassistedrequest(_).md",
-      "hash": "41157deadbf237b8b73da1e6b88ededa03dc4c539efd9b9b3f58ed7150c42041"
+      "hash": "44e60581865da4937840ca2779374294327c3c8f66bdf8e4ec762ed805167bbe"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/authorizationcontroller/performautofillassistedrequests(_:).json": {
-      "etag": "\"42ba-65d560aadb5e0-df\"",
+      "etag": "\"42bd-65dab572b1fa3-df\"",
       "file_path": "documentation/AuthenticationServices/authorizationcontroller/performautofillassistedrequests(_).md",
-      "hash": "7b4c44b5478eb3e58019d5a10ac3109242a2e89f0aae2889055fa5ab45eb997b"
+      "hash": "458117d5c67237ce9f1728f5feae6aff5f2d0cc5012c9871ae6b6b26fab765ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/authorizationcontroller/performrequest(_:).json": {
       "etag": "\"4236-65d560aaf082f-df\"",
@@ -13225,9 +13225,9 @@
       "hash": "3ffc712e0d7eecef02ebba12fcde20ea42147bb9b834455589fbd403dc4a9827"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/securing-logins-with-icloud-keychain-verification-codes.json": {
-      "etag": "\"5b51-659028ed90871-df\"",
+      "etag": "\"5b52-65d75ccfaac39-df\"",
       "file_path": "documentation/AuthenticationServices/securing-logins-with-icloud-keychain-verification-codes.md",
-      "hash": "affa45b3a055233f63bf429d3937f2b7e219dce628925898d982b70c803d01c8"
+      "hash": "90be693b6fcc76cab53f162acc627f42ea7432de597cda30a8734039e00ecda8"
     },
     "https://developer.apple.com/tutorials/data/documentation/authenticationservices/signinwithapplebutton.json": {
       "etag": "\"410d-65d560ab08233-df\"",

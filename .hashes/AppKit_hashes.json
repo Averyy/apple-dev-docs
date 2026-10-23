@@ -4921,9 +4921,9 @@
       "hash": "1ac8e992e6279836468bc6026ff4cfcde3aae5bcfd4e5f7948633625b1f83396"
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell": {
-      "etag": "\"b86e-65d617f65671e-df\"",
+      "etag": "\"be20-65d55e61fa1ad-df\"",
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
+      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell/action": {
       "etag": "\"2089-65d55e516a1e8-df\"",
@@ -16666,9 +16666,9 @@
       "hash": "b9fefb4e7185a0e3ced39de7c53f360380e6f7b15033e3aabe2a6c21f086867e"
     },
     "https://developer.apple.com/documentation/appkit/nscontrol": {
-      "etag": "\"20d7a-65dfba28978eb-df\"",
+      "etag": "\"2132c-65dda2538c964-df\"",
       "file_path": "documentation/AppKit/nscontrol.md",
-      "hash": "8ca873f9c115e0f392198722890779ab37e208c7137e9428a064f7770a100e94"
+      "hash": "a87b36c0706abfe6794c61f18ccbc08757b06be5ee43ece553785b758d53a9d1"
     },
     "https://developer.apple.com/documentation/appkit/nscontrol-deprecated-symbols": {
       "etag": "\"5240-65dda25264316-df\"",
@@ -20576,7 +20576,7 @@
       "hash": "62032b8571f8fe5caaec8ad527fa2dba5127d24cc9609fc26e74616630c95b26"
     },
     "https://developer.apple.com/documentation/appkit/nsevent/associatedeventsmask": {
-      "etag": "\"47d5-65d55e5747da6\"",
+      "etag": "\"47d5-65d55e5747da6-df\"",
       "file_path": "documentation/AppKit/nsevent/associatedeventsmask.md",
       "hash": "93722aeac88c3bd7261cb8ef4e1f7891ea41aa2880585d27c2553a6a67859e6f"
     },
@@ -33361,7 +33361,7 @@
       "hash": "60f55783a6e690101f6871194bfe5b5b1581cfd25f68b8f3009dec8e8e1244a8"
     },
     "https://developer.apple.com/documentation/appkit/nsparagraphstyle/hyphenationfactor": {
-      "etag": "\"4906-65d55e58d1938\"",
+      "etag": "\"4906-65d55e58d1938-df\"",
       "file_path": "documentation/AppKit/nsparagraphstyle/hyphenationfactor.md",
       "hash": "8bb36d116607766c06118e6daf7eaf0cbaa1997cc33436ec769f7d1ef1f25b9c"
     },
@@ -35876,9 +35876,9 @@
       "hash": "00cdfb3face77304ebcc71b41e602fd3bc0bacba5361ea7ca8c029fb2dd2fe0f"
     },
     "https://developer.apple.com/documentation/appkit/nspressgesturerecognizer": {
-      "etag": "\"67ac-65da4ef0e86c7-df\"",
+      "etag": "\"6d5e-65d55e49e22d7-df\"",
       "file_path": "documentation/AppKit/nspressgesturerecognizer.md",
-      "hash": "58f5a7e7f4e3a95e1cf50084b8eda477357f9120560fb6d27c4b4720cc4baae6"
+      "hash": "c9637060507ab361e336a0f91b27fb091c346d7a41b52744529b7d3c7f018cf7"
     },
     "https://developer.apple.com/documentation/appkit/nspressgesturerecognizer/allowablemovement": {
       "etag": "\"3105-65d55e51357a4-df\"",
@@ -55591,9 +55591,9 @@
       "hash": "7b7f3ce1532959ff125df5605246072bfcbe1b73f46969b9216311276c55867d"
     },
     "https://developer.apple.com/documentation/appkit/nsview": {
-      "etag": "\"20e09-65dee54adbcde-df\"",
+      "etag": "\"213bb-65dda25c16faf-df\"",
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/documentation/appkit/nsview-appearance": {
       "etag": "\"6438-659026e4a9097-df\"",
@@ -58586,9 +58586,9 @@
       "hash": "fa819be7dde951fad8f71e344395f7e300d20ef29bad372ead67e3ccc2e7a85b"
     },
     "https://developer.apple.com/documentation/appkit/nswindow/beginsheet(content:completionhandler:)": {
-      "etag": "\"5389-65db20f3d1eeb-df\"",
+      "etag": "\"5385-65d55e677c205-df\"",
       "file_path": "documentation/AppKit/nswindow/beginsheet(content,completionhandler).md",
-      "hash": "1d7df624d7a2cbea63881669eaf58a17cb17347d36cffe0f94fbaf633ecf746e"
+      "hash": "f2a424070a7714e5980bcaca7001b637052d1fdc50f911ad82785136e5d96313"
     },
     "https://developer.apple.com/documentation/appkit/nswindow/buttontype": {
       "etag": "\"94a0-65d55e682e93e-df\"",
@@ -68390,9 +68390,9 @@
       "hash": "1ac8e992e6279836468bc6026ff4cfcde3aae5bcfd4e5f7948633625b1f83396"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell.json": {
-      "etag": "\"b86e-65d617f65671e-df\"",
+      "etag": "\"be20-65d55e61fa1ad-df\"",
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
+      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell/action.json": {
       "etag": "\"2089-65d55e516a1e8-df\"",
@@ -80140,9 +80140,9 @@
       "hash": "a4277df577bcbde56799014f21709083ef9a78be3c0ed95cd52e442f26871bd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscontrol.json": {
-      "etag": "\"20d7a-65dfba28978eb-df\"",
+      "etag": "\"2132c-65dda2538c964-df\"",
       "file_path": "documentation/AppKit/nscontrol.md",
-      "hash": "8ca873f9c115e0f392198722890779ab37e208c7137e9428a064f7770a100e94"
+      "hash": "a87b36c0706abfe6794c61f18ccbc08757b06be5ee43ece553785b758d53a9d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nscontrol/abortediting().json": {
       "etag": "\"4c4b-65d55e4dce4ec-df\"",
@@ -84045,7 +84045,7 @@
       "hash": "62032b8571f8fe5caaec8ad527fa2dba5127d24cc9609fc26e74616630c95b26"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsevent/associatedeventsmask.json": {
-      "etag": "\"47d5-65d55e5747da6\"",
+      "etag": "\"47d5-65d55e5747da6-df\"",
       "file_path": "documentation/AppKit/nsevent/associatedeventsmask.md",
       "hash": "93722aeac88c3bd7261cb8ef4e1f7891ea41aa2880585d27c2553a6a67859e6f"
     },
@@ -96830,7 +96830,7 @@
       "hash": "60f55783a6e690101f6871194bfe5b5b1581cfd25f68b8f3009dec8e8e1244a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsparagraphstyle/hyphenationfactor.json": {
-      "etag": "\"4906-65d55e58d1938\"",
+      "etag": "\"4906-65d55e58d1938-df\"",
       "file_path": "documentation/AppKit/nsparagraphstyle/hyphenationfactor.md",
       "hash": "8bb36d116607766c06118e6daf7eaf0cbaa1997cc33436ec769f7d1ef1f25b9c"
     },
@@ -99345,9 +99345,9 @@
       "hash": "00cdfb3face77304ebcc71b41e602fd3bc0bacba5361ea7ca8c029fb2dd2fe0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspressgesturerecognizer.json": {
-      "etag": "\"67ac-65da4ef0e86c7-df\"",
+      "etag": "\"6d5e-65d55e49e22d7-df\"",
       "file_path": "documentation/AppKit/nspressgesturerecognizer.md",
-      "hash": "58f5a7e7f4e3a95e1cf50084b8eda477357f9120560fb6d27c4b4720cc4baae6"
+      "hash": "c9637060507ab361e336a0f91b27fb091c346d7a41b52744529b7d3c7f018cf7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspressgesturerecognizer/allowablemovement.json": {
       "etag": "\"3105-65d55e51357a4-df\"",
@@ -119080,9 +119080,9 @@
       "hash": "7e3b71e3f45af28ec0a1ea53f8ef7eba151bb1e5c61944592a4ff308b2e1451c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview.json": {
-      "etag": "\"20e09-65dee54adbcde-df\"",
+      "etag": "\"213bb-65dda25c16faf-df\"",
       "file_path": "documentation/AppKit/nsview.md",
-      "hash": "3c3cb9496201f8be3263ee00f27d157435edb33947028bcec752d3efda3afbd4"
+      "hash": "5883d4b30ed89ba5b0d357fa0f43909ece28209876999ae341021a8d8e4a92bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsview/acceptsfirstmouse(for:).json": {
       "etag": "\"5fdc-65d55e4aa923d-df\"",
@@ -122055,9 +122055,9 @@
       "hash": "fa819be7dde951fad8f71e344395f7e300d20ef29bad372ead67e3ccc2e7a85b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nswindow/beginsheet(content:completionhandler:).json": {
-      "etag": "\"5389-65db20f3d1eeb-df\"",
+      "etag": "\"5385-65d55e677c205-df\"",
       "file_path": "documentation/AppKit/nswindow/beginsheet(content,completionhandler).md",
-      "hash": "1d7df624d7a2cbea63881669eaf58a17cb17347d36cffe0f94fbaf633ecf746e"
+      "hash": "f2a424070a7714e5980bcaca7001b637052d1fdc50f911ad82785136e5d96313"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nswindow/buttontype.json": {
       "etag": "\"94a0-65d55e682e93e-df\"",

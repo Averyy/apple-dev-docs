@@ -39,7 +39,7 @@ Retrieving a location’s details is subject to brand ownership and status limit
 Retrieves a single location by its unique identifier. The response includes the full location object with address, coordinates, and eligibility status.
 
 ```
-GET https://api.ads.apple.com/v1/locations/7205759403792794
+GET /v1/locations/7205759403792794
 ```
 
 ##### Response
@@ -91,7 +91,7 @@ GET https://api.ads.apple.com/v1/locations/7205759403792794
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

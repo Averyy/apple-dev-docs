@@ -33,7 +33,9 @@ Keyword and phrase suggestions serve different targeting needs. [`Query Keyword 
 
 The `promotedObjectId` and `promotedObjectType` fields are both required. Optionally scope results to specific App Store countries or regions with `countriesOrRegions`, or seed with specific `terms` to get related suggestions. Results are [`KeywordSuggestion`](./keywordsuggestion.md) objects. To activate a suggestion, create a keyword entity via [`Create a Keyword`](./post-keywords.md). Here’s a sample request that scopes suggestions to a single app and two countries:
 
-```json
+```http
+POST /v1/suggestions/keywords/query
+
 {
   "filters": [
     {

@@ -16231,7 +16231,7 @@
       "hash": "84129b4ff9deed90e9f6bca0a8ad7e0956f4c9e4aa19294d058445af4c37cfe6"
     },
     "https://developer.apple.com/documentation/iobluetooth/kbluetoothsdpuuid16serviceclassudi_mt": {
-      "etag": "\"708b-65d55cd08007b\"",
+      "etag": "\"708b-65d55cd08007b-df\"",
       "file_path": "documentation/IOBluetooth/kbluetoothsdpuuid16serviceclassudi_mt.md",
       "hash": "c9d79b685c50f390918f4cdc7dd30886305ab47be1b851a0a364e24160e665f3"
     },
@@ -35698,7 +35698,7 @@
       "hash": "84129b4ff9deed90e9f6bca0a8ad7e0956f4c9e4aa19294d058445af4c37cfe6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetooth/kbluetoothsdpuuid16serviceclassudi_mt.json": {
-      "etag": "\"708b-65d55cd08007b\"",
+      "etag": "\"708b-65d55cd08007b-df\"",
       "file_path": "documentation/IOBluetooth/kbluetoothsdpuuid16serviceclassudi_mt.md",
       "hash": "c9d79b685c50f390918f4cdc7dd30886305ab47be1b851a0a364e24160e665f3"
     },

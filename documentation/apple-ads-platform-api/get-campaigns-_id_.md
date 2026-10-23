@@ -22,7 +22,7 @@ This endpoint retrieves a single campaign by its ID and returns the latest persi
 Response for a campaign promoting an App Store app. The `promotedObjectType` field is `APPSTORE_APP` and `promotedObjectId` is the app’s `adamId`.
 
 ```
-GET https://api.ads.apple.com/v1/campaigns/444555681
+GET /v1/campaigns/444555681
 ```
 
 ##### Response
@@ -86,7 +86,7 @@ GET https://api.ads.apple.com/v1/campaigns/444555681
 Response for a campaign promoting a brand on Apple Maps. The `promotedObjectType` field is `BUSINESS_BRAND` and `promotedObjectId` is the brand’s unique ID.
 
 ```
-GET https://api.ads.apple.com/v1/campaigns/111222333
+GET /v1/campaigns/111222333
 ```
 
 ##### Response
@@ -149,7 +149,7 @@ GET https://api.ads.apple.com/v1/campaigns/111222333
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

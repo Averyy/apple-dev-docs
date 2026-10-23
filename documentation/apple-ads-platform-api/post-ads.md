@@ -30,7 +30,7 @@ An ad linking an App Store ad creative to an ad group in an App Store campaign.
 
 ##### Request
 
-```json
+```http
 POST /v1/ads
 
 {
@@ -70,7 +70,7 @@ An ad linking an Apple Maps ad creative to an ad group in an Apple Maps campaign
 
 ##### Request
 
-```json
+```http
 POST /v1/ads
 
 {
@@ -114,7 +114,7 @@ POST /v1/ads
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

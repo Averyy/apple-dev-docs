@@ -88,7 +88,7 @@ curl -X POST https://api.ads.apple.com/v1/assets/upload \
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -35,7 +35,7 @@ Retrieve the suggested target CPA across all markets. Omitting `countryOrRegion`
 
 Identifies the app by `promotedObjectId` and `promotedObjectType`. Since you don’t supply a country filter, the endpoint evaluates all eligible markets.
 
-```json
+```http
 POST /v1/suggestions/target-cpas/query
 
 {
@@ -84,7 +84,7 @@ Restrict evaluation to specific markets by adding a `countryOrRegion` filter. Th
 
 Adds a `countryOrRegion` filter restricting evaluation to the US, GB, and CA markets.
 
-```json
+```http
 POST /v1/suggestions/target-cpas/query
 
 {
@@ -142,7 +142,7 @@ POST /v1/suggestions/target-cpas/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

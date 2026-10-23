@@ -27,6 +27,7 @@ To add this entitlement to your app, enable the HomeKit capability in Xcode. For
 ## See Also
 
 ### Home automation
+- [com.apple.developer.home](./com.apple.developer.home.md)
 - [Matter Allow Setup Payload](./com.apple.developer.matter.allow-setup-payload.md)
   A Boolean value that allows an app to provide an optional Matter Setup payload while setting up a Matter device in an ecosystem.
 

@@ -21,7 +21,9 @@ Omit the `X-AP-Context` header. This endpoint requires organization-level permis
 
 Creates a $20,000 budget order for Q3 2026, active from July through September.
 
-```json
+```http
+POST /v1/shared-budgets
+
 {
  "name": "AwayFinder - Q3 2026 Budget",
  "startTime": "2026-07-01T00:00:00.000",

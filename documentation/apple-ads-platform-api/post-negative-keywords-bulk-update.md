@@ -21,7 +21,7 @@ When `allowPartialSuccess: true` is set in the request, this endpoint uses parti
 
 Update the status of two negative keywords in a single request.
 
-```json
+```http
 POST /v1/negative-keywords/bulk-update
 
 {
@@ -94,7 +94,7 @@ POST /v1/negative-keywords/bulk-update
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 
@@ -117,7 +117,7 @@ POST /v1/negative-keywords/bulk-update
 - [Bulk Create Negative Keywords](./post-negative-keywords-bulk-create.md)
   Create multiple negative keywords in a single request.
 - [Bulk Delete Negative Keywords](./post-negative-keywords-bulk-delete.md)
-  Delete multiple negative keywords in a single request.
+  Soft-deletes multiple negative keywords in a single request.
 
 
 ---

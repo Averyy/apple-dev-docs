@@ -39,7 +39,7 @@ An app campaign targeting App Store Search Results. The `promotedObjectType` fie
 
 Creates an App Store Search campaign for an app identified by its `adamId`, targeting the `APPSTORE_SEARCH_RESULTS` placement in the US with a $100 daily budget and tap-based billing.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -135,7 +135,7 @@ An app campaign targeting the App Store Today tab placement. Set `supplyPlacemen
 
 Creates a Today tab campaign for an app identified by its `adamId`, targeting the `APPSTORE_TODAY_TAB` placement in the US with a $200 daily budget and tap-based billing.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -231,7 +231,7 @@ An app campaign using the automated `MAX_CONVERSIONS` bid strategy, which optimi
 
 Creates an App Store Search campaign for an app identified by its `adamId`, using `bidStrategyType: MAX_CONVERSIONS` with the required `INSTALL` goal. The `billingEvent` field remains `TAPS`, so Apple Ads still charges per tap, but it automates bidding toward installs.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -327,7 +327,7 @@ An advanced Apple Maps campaign targeting the Maps Search results placement. Sup
 
 Creates an advanced Apple Maps campaign explicitly targeting the `MAPS_SEARCH_RESULTS` placement, which enables radius targeting at the ad group level.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -423,7 +423,7 @@ An advanced Apple Maps campaign targeting the Maps Search home placement. This p
 
 Creates an advanced Apple Maps campaign targeting the `MAPS_SEARCH_HOME` placement. This placement doesn’t support radius targeting, so don’t configure it at the ad group level.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -519,7 +519,7 @@ An Apple Maps campaign targeting both the Maps Search results and Maps Search ho
 
 Creates an Apple Maps campaign that targets both placements by omitting `supplyPlacement` from `targeting`.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -605,7 +605,7 @@ An Apple Maps campaign using manual cost-per-tap bidding. Requires an explicit s
 
 Creates an Apple Maps campaign with manual cost-per-tap bidding, explicitly setting `bidStrategyType` to `MANUAL_CPT` and targeting `MAPS_SEARCH_RESULTS`. You configure the tap bid amount at the ad group level.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -701,7 +701,7 @@ An Apple Maps campaign using manual cost-per-thousand-impressions bidding. The `
 
 Creates an Apple Maps campaign with manual cost-per-thousand-impressions bidding, setting `billingEvent` to `IMPRESSIONS` and `bidStrategyGoal` to `IMPRESSION` as required by `MANUAL_CPM`.
 
-```json
+```http
 POST /v1/campaigns
 
 {
@@ -795,7 +795,7 @@ POST /v1/campaigns
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

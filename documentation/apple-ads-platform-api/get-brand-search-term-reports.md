@@ -72,7 +72,7 @@ Retrieve daily search term metrics for all keywords in a specific Apple Maps ad 
 
 Filters by `adGroupId` with no `groupBy` dimension, returning daily search term metrics for all matched queries in March 2025 using the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/business-brands/searchterms/query
 
 {
@@ -270,7 +270,7 @@ Retrieve search term metrics grouped by device class to understand whether your 
 
 Filters by `campaignId`, groups by `deviceClass`, and uses daily granularity to show search term performance broken down by device type over March 2025.
 
-```json
+```http
 POST /v1/reports/business-brands/searchterms/query
 
 {
@@ -418,7 +418,7 @@ Retrieve weekly search term metrics for a campaign. Weekly granularity requires 
 
 Filters by `campaignId` with no `groupBy` dimension and uses weekly granularity over a 2-month window, well over the 14-day minimum required for weekly reporting.
 
-```json
+```http
 POST /v1/reports/business-brands/searchterms/query
 
 {
@@ -546,7 +546,7 @@ POST /v1/reports/business-brands/searchterms/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -7726,9 +7726,9 @@
       "hash": "1ac354b0bc52f80a86e1b51a6b7512c2a0a8941923c110d4a2263a87a3e79503"
     },
     "https://developer.apple.com/documentation/webkit/webframeview": {
-      "etag": "\"a37e-65d55c85f83ba-df\"",
+      "etag": "\"9dcc-65d6161a23aae-df\"",
       "file_path": "documentation/WebKit/webframeview.md",
-      "hash": "69eaf36b146d703ffecd335cd653db9e27b7388cb8a66bd1442c014d306f85b5"
+      "hash": "6b63941ad3c36c1bcf013244f25240bfadd6708c16a6be819ae99413528dc3d0"
     },
     "https://developer.apple.com/documentation/webkit/webframeview/allowsscrolling": {
       "etag": "\"2d4f-65d55c8068c5c-df\"",
@@ -22929,9 +22929,9 @@
       "hash": "1ac354b0bc52f80a86e1b51a6b7512c2a0a8941923c110d4a2263a87a3e79503"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webframeview.json": {
-      "etag": "\"a37e-65d55c85f83ba-df\"",
+      "etag": "\"9dcc-65d6161a23aae-df\"",
       "file_path": "documentation/WebKit/webframeview.md",
-      "hash": "69eaf36b146d703ffecd335cd653db9e27b7388cb8a66bd1442c014d306f85b5"
+      "hash": "6b63941ad3c36c1bcf013244f25240bfadd6708c16a6be819ae99413528dc3d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkit/webframeview/allowsscrolling.json": {
       "etag": "\"2d4f-65d55c8068c5c-df\"",

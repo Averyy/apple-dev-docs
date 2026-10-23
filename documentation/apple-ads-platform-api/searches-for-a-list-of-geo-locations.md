@@ -26,7 +26,7 @@ Every request requires `supplySource`, which determines which `entity` types are
 Search for localities matching “San Francisco” in the US for App Store campaigns.
 
 ```
-GET https://api.ads.apple.com/v1/search/geo?query=San%20Francisco&entity=Locality&countrycode=US&supplySource=APPSTORE
+GET /v1/search/geo?query=San%20Francisco&entity=Locality&countrycode=US&supplySource=APPSTORE
 ```
 
 ##### Response
@@ -68,7 +68,7 @@ GET https://api.ads.apple.com/v1/search/geo?query=San%20Francisco&entity=Localit
 Return all admin areas (states) in the US for Maps campaigns. Omit `query` to return every match.
 
 ```
-GET https://api.ads.apple.com/v1/search/geo?entity=AdminArea&countrycode=US&supplySource=MAPS
+GET /v1/search/geo?entity=AdminArea&countrycode=US&supplySource=MAPS
 ```
 
 ##### Response
@@ -108,7 +108,7 @@ GET https://api.ads.apple.com/v1/search/geo?entity=AdminArea&countrycode=US&supp
 Search for localities in New York, excluding soft-blocked geos.
 
 ```
-GET https://api.ads.apple.com/v1/search/geo?query=New%20York&entity=Locality&countrycode=US&supplySource=APPSTORE&eligible=true
+GET /v1/search/geo?query=New%20York&entity=Locality&countrycode=US&supplySource=APPSTORE&eligible=true
 ```
 
 ##### Response
@@ -171,7 +171,7 @@ GET https://api.ads.apple.com/v1/search/geo?query=New%20York&entity=Locality&cou
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Responses
 

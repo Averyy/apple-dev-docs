@@ -30,7 +30,7 @@ This example queries keyword suggestions for an app scoped to the US and GB App 
 
 ##### Request
 
-```json
+```http
 POST /v1/suggestions/keywords/query
 
 {
@@ -103,7 +103,7 @@ POST /v1/suggestions/keywords/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

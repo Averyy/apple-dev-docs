@@ -11,9 +11,9 @@
       "hash": "4ad35200a3fbc8951a36880b531d7a7f6c28540c468743019843999dcd697106"
     },
     "https://developer.apple.com/documentation/contacts/accessing-the-contact-store": {
-      "etag": "\"84b6-65d55ce898f2b-df\"",
+      "etag": "\"84b7-65e168089a784-df\"",
       "file_path": "documentation/Contacts/accessing-the-contact-store.md",
-      "hash": "436722caddc37b3ef970b5878cfe68ebc2caa13ca863f8cc1e7057414984145f"
+      "hash": "1f34513dfcca85e61827530583a4fd89b5143a17145976d01d9be17b18058aff"
     },
     "https://developer.apple.com/documentation/contacts/cnauthorizationstatus": {
       "etag": "\"5549-65d55ce8d4114-df\"",
@@ -36,9 +36,9 @@
       "hash": "209049e23c3f68c3001863baa4b5474d6a608fa1aa70ec4b1808fe11588906e6"
     },
     "https://developer.apple.com/documentation/contacts/cnauthorizationstatus/limited": {
-      "etag": "\"3d8b-65d55ce8b4653-df\"",
+      "etag": "\"3d8c-65e16808b56c6-df\"",
       "file_path": "documentation/Contacts/cnauthorizationstatus/limited.md",
-      "hash": "5cb27a0da4b1773ff9ec49c21dea4367593753d16c5b05344c4aa439187678ef"
+      "hash": "28adb2466e0c016f0401189380e006512a6abc04a8fa61e05a941e5ed741a14c"
     },
     "https://developer.apple.com/documentation/contacts/cnauthorizationstatus/notdetermined": {
       "etag": "\"2fbb-65d55ce8d4114-df\"",
@@ -3431,9 +3431,9 @@
       "hash": "4ad35200a3fbc8951a36880b531d7a7f6c28540c468743019843999dcd697106"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/accessing-the-contact-store.json": {
-      "etag": "\"84b6-65d55ce898f2b-df\"",
+      "etag": "\"84b7-65e168089a784-df\"",
       "file_path": "documentation/Contacts/accessing-the-contact-store.md",
-      "hash": "436722caddc37b3ef970b5878cfe68ebc2caa13ca863f8cc1e7057414984145f"
+      "hash": "1f34513dfcca85e61827530583a4fd89b5143a17145976d01d9be17b18058aff"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnauthorizationstatus.json": {
       "etag": "\"5549-65d55ce8d4114-df\"",
@@ -3456,9 +3456,9 @@
       "hash": "209049e23c3f68c3001863baa4b5474d6a608fa1aa70ec4b1808fe11588906e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnauthorizationstatus/limited.json": {
-      "etag": "\"3d8b-65d55ce8b4653-df\"",
+      "etag": "\"3d8c-65e16808b56c6-df\"",
       "file_path": "documentation/Contacts/cnauthorizationstatus/limited.md",
-      "hash": "5cb27a0da4b1773ff9ec49c21dea4367593753d16c5b05344c4aa439187678ef"
+      "hash": "28adb2466e0c016f0401189380e006512a6abc04a8fa61e05a941e5ed741a14c"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnauthorizationstatus/notdetermined.json": {
       "etag": "\"2fbb-65d55ce8d4114-df\"",

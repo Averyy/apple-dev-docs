@@ -66,9 +66,7 @@ The `LocationGroup` object is a targeting unit that bundles one or more brand lo
 - `locationIds` ([string]): Array of location IDs in the group. For `STATIC` groups, this is the list you supply. For `DYNAMIC` groups, this is the system-resolved membership from evaluating `rules`. Read-only for `DYNAMIC` groups.
 - `isAllLocationsGroup` (boolean): `true` for the system-created “All Locations” group for a brand. Read-only.
 - `description` (string): Optional description of the location group.
-- `groupTotal` (int64) *(required)*: Total number of locations in the group. Read-only.
-
-  **Default**: `0`
+- `groupTotal` (int64): Total number of locations in the group. `null` while `systemStatus` is `PENDING`, populated once it becomes `VALID`. Optional and nullable. Read-only.
 - `eligibility` (Eligibility): Eligibility status for this location group. See [`Eligibility`](./eligibility.md). Read-only.
 - `creationTime` (date-time): Timestamp when the group was created. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification. Read-only.

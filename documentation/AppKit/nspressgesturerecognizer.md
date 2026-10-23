@@ -49,6 +49,8 @@ Upon creation, the gesture recognizer recognizes press gestures involving only t
 - [Hashable](../Swift/hashable.md)
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

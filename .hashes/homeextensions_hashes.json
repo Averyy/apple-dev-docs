@@ -1,0 +1,1190 @@
+{
+  "hashes": {
+    "https://developer.apple.com/documentation/homeextensions": {
+      "etag": "\"5679-65e5a6eb14b72-df\"",
+      "file_path": "documentation/homeextensions/homeextensions.md",
+      "hash": "1c08ecc07beeb8a5018ec28bf3731b686a9c558af53f4fc978466b17df3e7859"
+    },
+    "https://developer.apple.com/documentation/homeextensions/anyhomeaccessorysettingscontainer": {
+      "etag": "\"2865-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/anyhomeaccessorysettingscontainer.md",
+      "hash": "8b47ddc448ac17cf3a76d297b05501dd958c3e806e54e4d1fb0c479f90c4ed86"
+    },
+    "https://developer.apple.com/documentation/homeextensions/anyhomeaccessorysettingscontainer/init(erasing:)": {
+      "etag": "\"16e6-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/anyhomeaccessorysettingscontainer/init(erasing).md",
+      "hash": "278a9df2561a1b1bcc988563de13b8de543ac322e36e11b11597ffcb6b62fdce"
+    },
+    "https://developer.apple.com/documentation/homeextensions/guidestephostviewcontroller": {
+      "etag": "\"6c2d-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller.md",
+      "hash": "97e536e4c26a69df9213b1f309c2a79cc0daa548e0d990214b6c40f95d43fc2d"
+    },
+    "https://developer.apple.com/documentation/homeextensions/guidestephostviewcontroller/init(coder:)": {
+      "etag": "\"158e-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/init(coder).md",
+      "hash": "d5dc6ef703195e2f9155072d2339789ab4dfe25ec7309d5c2d5f9d8b94675bab"
+    },
+    "https://developer.apple.com/documentation/homeextensions/guidestephostviewcontroller/viewdidappear(_:)": {
+      "etag": "\"1531-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewdidappear(_).md",
+      "hash": "8e0da9789005382f6705a7e51d30158db376484995d835f605a46ab80db5e645"
+    },
+    "https://developer.apple.com/documentation/homeextensions/guidestephostviewcontroller/viewdidload()": {
+      "etag": "\"10c5-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewdidload().md",
+      "hash": "2d66d93912206a633bf9fdf22ab9d591b6c8303985282f261077e9f1700dafcf"
+    },
+    "https://developer.apple.com/documentation/homeextensions/guidestephostviewcontroller/viewwillappear(_:)": {
+      "etag": "\"153c-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewwillappear(_).md",
+      "hash": "8f198dc57264bc20ea56e0323d72a6db296ce229add69f696954b82c1888bebc"
+    },
+    "https://developer.apple.com/documentation/homeextensions/guidestephostviewcontroller/viewwilldisappear(_:)": {
+      "etag": "\"155d-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewwilldisappear(_).md",
+      "hash": "9d7b53cd32c71146477df974d5d9d6f0cac73eda0c1f5d63455bef12758e2485"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryconfiguration": {
+      "etag": "\"3659-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration.md",
+      "hash": "d8ba2b0744139a39f1b3fd419fbe502687a9cfdff871e8c32410d82171113bd0"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryconfiguration/hidesnavigationtitleinlandscape(_:)": {
+      "etag": "\"1bab-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration/hidesnavigationtitleinlandscape(_).md",
+      "hash": "0cb22c9568209344ab35d7597aba36ec23744ad9f20ae2fe54a9ba8190e7b260"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryconfiguration/init(id:content:filter:)": {
+      "etag": "\"2b3d-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration/init(id,content,filter).md",
+      "hash": "abf172551a456e21d92e4d9bd11fa9f93a79365fcbee31a35789978c7977761f"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryconfiguration/supportsaccessory": {
+      "etag": "\"1ce8-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration/supportsaccessory.md",
+      "hash": "8ef5db74740c556be741d6f042ea042704acdbc749de1bf578b53a555dfe6894"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting": {
+      "etag": "\"4c28-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting.md",
+      "hash": "30122c2bdc4281102e650f464b8d5744fa3fdce72f8fb344152e0f1cba692589"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/init(id:label:isenabled:defaultvalue:currentvalue:style:)": {
+      "etag": "\"3153-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/init(id,label,isenabled,defaultvalue,currentvalue,style).md",
+      "hash": "0e9c71edb265e1f87cf2178cb4b365264642b260bf50e386fa073c5b0ba5b56e"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/isenabled": {
+      "etag": "\"197f-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/isenabled.md",
+      "hash": "627d400f03bcf288bc881adafbc40eb51bbdfcd57d7b0440fd40bc16984f1247"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/ishidden": {
+      "etag": "\"185a-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/ishidden.md",
+      "hash": "24d5f1dafd72369927374d5873ee1914e71b9ff5dae615f1b773af4621db2020"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/label": {
+      "etag": "\"190a-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/label.md",
+      "hash": "dd2ee4471fd43da0106adb7241afd7fac76aad7334f983ff90eaa8d92045c383"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/projectedvalue": {
+      "etag": "\"1dd4-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/projectedvalue.md",
+      "hash": "1299806490682face469056d73a07b6fbfcef76bdb7ce60a8354886d9abc9150"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/selectedvalues": {
+      "etag": "\"1a05-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectedvalues.md",
+      "hash": "73b77f1214752c5e02af7980cfcb185866d67fbbac616e8abc1f81e9ef7b9a4d"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle": {
+      "etag": "\"34c6-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle.md",
+      "hash": "b8bf25bfc3b81db3ecb9dabfb1d76efb13e0eb8d61dbc15a371219aabf8ca8c2"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/expanded": {
+      "etag": "\"17f0-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/expanded.md",
+      "hash": "4b1c7aeb407d40f7bc1a5442040531c11ce1f2758ab14660c0551561ac4dad9a"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/inline": {
+      "etag": "\"17e3-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/inline.md",
+      "hash": "185f31d78b80532ea48566748ba81b66c40be4bbde20e1ac4443bec74cec78c0"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/navigation": {
+      "etag": "\"1811-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/navigation.md",
+      "hash": "ecaa50349e5d78d5837cbfac0ed68727aee58304f15ece485eccfdfedd8a04f3"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsetting/wrappedvalue": {
+      "etag": "\"178c-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/wrappedvalue.md",
+      "hash": "b5ac6f44937f02ac561cf9174fd305e45c3ead50f6683da14d5b91491074bfda"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsettingconstant": {
+      "etag": "\"3ecb-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsettingconstant.md",
+      "hash": "e46fc831b2b7955298c0e07a781f047d00a78b8eb02a1e76e64d86398cd97ac8"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryenumsettingconstant/value": {
+      "etag": "\"1334-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsettingconstant/value.md",
+      "hash": "7d7265d60721a6a2f7c749816c0ee1dc759e8b83fe316f104cbbd5a8dec8159e"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryhelpguide": {
+      "etag": "\"2df9-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide.md",
+      "hash": "31391437910725f5fffe3ed8dc0ac9b8bde30de86bfafcb2ab7aedd26874e507"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryhelpguide/contactaccessorymanufacturerlink()": {
+      "etag": "\"15d8-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide/contactaccessorymanufacturerlink().md",
+      "hash": "3236db3bb340cd6ce490417718d5180ba9ebfffca1011b0b609912d8bce76919"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryhelpguide/init(id:content:filter:)": {
+      "etag": "\"2aa3-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide/init(id,content,filter).md",
+      "hash": "56a10b1ed4a3e454274733b74770bd77bcc70ed93bf91a6252d467ea413275e2"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryhelpguide/supportsaccessory": {
+      "etag": "\"1c7e-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide/supportsaccessory.md",
+      "hash": "7af8fbbfcc5851d9b6819bd65d7bc82bd94f3ae7b07b28f5e8774373da73b492"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryinformationsetting": {
+      "etag": "\"3c26-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting.md",
+      "hash": "b5cb1efdb54b6605d839c8e6bc9b95927112b5743d59530073f30208a319a9da"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryinformationsetting/init(id:label:value:)": {
+      "etag": "\"1b73-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/init(id,label,value).md",
+      "hash": "fdc5808a19a63b058a2d68760d05ffb505fa027c8808e57d076583dfab8308e4"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryinformationsetting/ishidden": {
+      "etag": "\"15c7-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/ishidden.md",
+      "hash": "693bb8823922e165c9a1f2a016fcff33acfce4259ddf5c74a6a7da6584ec2898"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryinformationsetting/label": {
+      "etag": "\"1677-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/label.md",
+      "hash": "b8e1b6b1379abc679e224730e359f284bbc3fbe6730b02b2b94e26a1202cc4d3"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryinformationsetting/projectedvalue": {
+      "etag": "\"19d7-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/projectedvalue.md",
+      "hash": "1e73e7deac21e6060b6330691e4e02cff948944ebeda82dbc52656c970e129d9"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryinformationsetting/wrappedvalue": {
+      "etag": "\"166a-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/wrappedvalue.md",
+      "hash": "b153d935180ed408cb3cf646ed193265e68f38d9182d83ea66cc91b3344f44c5"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting": {
+      "etag": "\"9a2c-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting.md",
+      "hash": "db8bf44d16a4d27f23b521ba6a6a32c4940376422725abe40816db5fa9a5201b"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:isenabled:defaultvalue:currentvalue:lowerbound:upperbound:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:valuesuffix:decimalprecision:sliderstyle:)": {
+      "etag": "\"8f8c-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,isenabled,defaultvalue,currentvalue,lowerbound,upperbound,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,valuesuffix,decimalprecision,sliderstyle).md",
+      "hash": "565e7c91ab6c27fca31754219e54538e84caba53897f35173c3ec4af8a36ff50"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:range:isenabled:defaultvalue:currentvalue:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:minimumvaluesystemimage:maximumvaluesystemimage:valuesuffix:decimalprecision:sliderstyle:)": {
+      "etag": "\"9c57-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,range,isenabled,defaultvalue,currentvalue,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,minimumvaluesystemimage,maximumvaluesystemimage,valuesuffix,decimalprecision,sliderstyle).md",
+      "hash": "e01c8670f51328f1b32bce47700739996cae116a000e521fd52e3a63a37ca84a"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:range:isenabled:defaultvalue:currentvalue:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:minimumvaluesystemimage:maximumvaluesystemimage:valuesuffix:decimalprecision:sliderstyle:ticklabelstyle:)": {
+      "etag": "\"a10c-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,range,isenabled,defaultvalue,currentvalue,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,minimumvaluesystemimage,maximumvaluesystemimage,valuesuffix,decimalprecision,sliderstyle,ticklabelstyle).md",
+      "hash": "554630d3eb6f7187671070b4dcf7ba4aa6eec8e7033d81f1ec83d4044a2e3d9e"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:range:isenabled:defaultvalue:currentvalue:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:valuesuffix:decimalprecision:sliderstyle:)": {
+      "etag": "\"983f-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,range,isenabled,defaultvalue,currentvalue,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,valuesuffix,decimalprecision,sliderstyle).md",
+      "hash": "d4b30524dd993bdce8ac909bdcf35c96700dd4704c10b5a1b7fe36a3b81196ae"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/isenabled": {
+      "etag": "\"1998-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/isenabled.md",
+      "hash": "19d9f18c8d7593d2892286d09488ba4f01e0f152b68bfde8194a693fdd215fa2"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/ishidden": {
+      "etag": "\"1873-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ishidden.md",
+      "hash": "77abb85b9f28c02614b81808248a7573a67c523c30edc3e0dba89af0f257db1f"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/label": {
+      "etag": "\"1923-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/label.md",
+      "hash": "d808443b14794c6b96fabf0d95c2867b46840d30a86118953c8198546e9ed5fd"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/projectedvalue": {
+      "etag": "\"1a61-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/projectedvalue.md",
+      "hash": "ee191ea4e78fb239997e5499f987105067736ab29f565fab9495baf7a8665aeb"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/sliderstyle": {
+      "etag": "\"7e8e-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/sliderstyle.md",
+      "hash": "5fd2f0de14e5be64e3bd0b7a93d3809641b1d6bd908a6b7fcb684efaf95a3156"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/continuous": {
+      "etag": "\"14d3-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/continuous.md",
+      "hash": "2a48cdcc78261f23311d6659752e460559b21d6d3ee709294954720ce8128b05"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/stepped": {
+      "etag": "\"1675-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/stepped.md",
+      "hash": "7ae26a5aea0eec5ab36e7766e122e8d75e08bcd7b5139b0b9dff8bfa769ac99c"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle": {
+      "etag": "\"71fc-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle.md",
+      "hash": "e4ca4023fddccc1ebdfc814ea6cf06dbe48c9eb82bfc3886be2d897c94627767"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/automatic": {
+      "etag": "\"18bf-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/automatic.md",
+      "hash": "196165fd01e06a9267038b12f94cbb26f6bd7f08929e89edeb318c9965805a8d"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/custom(_:)": {
+      "etag": "\"1e46-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/custom(_).md",
+      "hash": "4c237a47e0c29e0b8e4943b672e14cc8f494222bfed90dc934ae7e7e37b9a9b0"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/hidden": {
+      "etag": "\"1869-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/hidden.md",
+      "hash": "9b5e2a8875997c7fffa90b04abff12cfd51d9c188705149d1ed31bee415d1639"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/valueformat": {
+      "etag": "\"8133-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat.md",
+      "hash": "a5d1d23a8ec3e3ee5ec1babe43ae4920a6a3136169f10d276a9d5e517633cbff"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/valueformat/numeric": {
+      "etag": "\"174e-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat/numeric.md",
+      "hash": "388125ec57b86a809dc91bd02bed952c28283b51aaea98480b7bd82f77b78de1"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/valueformat/percentage": {
+      "etag": "\"1753-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat/percentage.md",
+      "hash": "3bc840f25db02dda553005d9114bf5e9b0ec7044925416a38269d0de96e08c47"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/valueformat/temperature": {
+      "etag": "\"1759-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat/temperature.md",
+      "hash": "7b38257732f0e8d9c9705225f31f67aec7a0da2f72160ab17ec7e1b67c78ad64"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesetting/wrappedvalue": {
+      "etag": "\"1415-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/wrappedvalue.md",
+      "hash": "f3e1086ed569c7f945ad3203d7dfddca6ec2304298aad23b64d75fc644ad1008"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesettingdescriptor": {
+      "etag": "\"329e-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor.md",
+      "hash": "2f98379803173130dffca78eab7d63d28b231e6066c217d9f0e97a3fbc046150"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesettingdescriptor/bound": {
+      "etag": "\"1eab-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor/bound.md",
+      "hash": "8e4b0049c4b9a02515bb4d6add62030553b2b4cfc990df79c02c9624f6376c7f"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangelowerbound": {
+      "etag": "\"1a13-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangelowerbound.md",
+      "hash": "ee6a6cbb9ce990d408e3a8f41775d092790beb222e77689f44d37711d655d438"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangeupperbound": {
+      "etag": "\"1a13-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangeupperbound.md",
+      "hash": "a4924b1c2f24ff5b9ce4fabe48b415969a9e6bdece0a666296a9d2dafab99ff3"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysetting": {
+      "etag": "\"3645-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysetting.md",
+      "hash": "324431299c5274d5b861d187748a30eb308bc0a8e88f7a9c5348f28bc19fa897"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysetting/id": {
+      "etag": "\"113a-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysetting/id.md",
+      "hash": "a2ab9457dde91c2029c9e60b1a8bc1c2b94302920ecc2399ee5f59a6a827db93"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettinglabel": {
+      "etag": "\"4ba5-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel.md",
+      "hash": "c242303e21fc2ba783df0d7847108c1424d54f65a50335a24f89681fa68daf5b"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettinglabel/detailedlabel": {
+      "etag": "\"168c-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel/detailedlabel.md",
+      "hash": "6dc9adcd45ed7ce5ed820806f3dce15a440efd97ea92aeb9c5aef8d53e891a1e"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettinglabel/init(_:detailedlabel:systemimage:)": {
+      "etag": "\"1d27-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel/init(_,detailedlabel,systemimage).md",
+      "hash": "b259a61f47e3df4ba1613050d7143c6e91382a6cde9a0f23c3f31d74cedff846"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettinglabel/label": {
+      "etag": "\"1607-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel/label.md",
+      "hash": "065d82f9096676483cfa54aa2bf3ed3c4b16119a97a6f631525819c6dddd9f15"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettings": {
+      "etag": "\"3007-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettings.md",
+      "hash": "f8e14568d65a54e9e2d92cd05929082d3573dd8f73e67ac2d9f9ead0ef0a3c22"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettings/init(context:provider:filter:)": {
+      "etag": "\"2cfe-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettings/init(context,provider,filter).md",
+      "hash": "c062ba900e8e61a9d46783e2501376cda332fc277b5c46b8f10e91ff374af04d"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingscontainer": {
+      "etag": "\"4003-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontainer.md",
+      "hash": "6d0fee6ec0db91d2473140bf78762e4d92d27e02acb161c42a8639699ffecf29"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingscontainer/availablesettings": {
+      "etag": "\"1ad8-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontainer/availablesettings.md",
+      "hash": "4b6577275acc60ad2606ef2d7b39a44a6030ef11e2106fa4a62905e1a5039416"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingscontext": {
+      "etag": "\"1eac-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontext.md",
+      "hash": "76c40948f1edd4ed45faca3f0cad1d97a30317ac36c7657eacd76c3ff7f10ba0"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingsprovider": {
+      "etag": "\"4bee-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider.md",
+      "hash": "92ba94f58bb34cf3f6cb0c1e7a2f48cada483bfc4d1247c3955cd67c2e79f403"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingsprovider/container": {
+      "etag": "\"2430-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/container.md",
+      "hash": "2118c7e18cecbf1fb993c3dbbc5175e56f19f5941f3309b611c2e0dba1bafb34"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingsprovider/context": {
+      "etag": "\"2433-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/context.md",
+      "hash": "763b564200df787e5e0f253654d5e45385e3cc353869e0cd533088e30f986d18"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingsprovider/settings(context:for:)": {
+      "etag": "\"3346-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/settings(context,for).md",
+      "hash": "9f2f4bebc6eb884a4930be9569284bd4fe754abd31f83c1873d0302949a21447"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorysettingsprovider/settingsdidchange(changes:context:for:)": {
+      "etag": "\"3517-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/settingsdidchange(changes,context,for).md",
+      "hash": "42833a7ffae6cecb5139a68e7089cd75075117716b57cbb35ddedc8e0789f7cd"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytextfieldsetting": {
+      "etag": "\"4259-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting.md",
+      "hash": "739b8797205040c25d32e691aa897c7b7d71470e186e4b6c14a27828f901c9de"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytextfieldsetting/init(id:label:isenabled:defaultvalue:currentvalue:placeholder:)": {
+      "etag": "\"2b98-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/init(id,label,isenabled,defaultvalue,currentvalue,placeholder).md",
+      "hash": "7b5958fba2ae25e9671ecc875f3d451d01cf25c1e85dc4c19e4860aab4818be1"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytextfieldsetting/isenabled": {
+      "etag": "\"19ea-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/isenabled.md",
+      "hash": "7e918846a0608f68cc21bef202c1023c0c19d2df2e43108dec9d0d6fc9d35fe5"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytextfieldsetting/ishidden": {
+      "etag": "\"18c5-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/ishidden.md",
+      "hash": "fd19f85fad6920b86dd342d610040b201b15b28f9d6ef53d862b6ddcfc1b4e88"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytextfieldsetting/label": {
+      "etag": "\"1975-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/label.md",
+      "hash": "963919e3b8d204c978366065d3be6de5d5d2a1bcdde0c2758ab647827a1ec6b3"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytextfieldsetting/projectedvalue": {
+      "etag": "\"19d3-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/projectedvalue.md",
+      "hash": "d7cb604333ec1f6b85fbfb24482e7e7ccde8111d0833b2ae0ae0d61473df7788"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytextfieldsetting/wrappedvalue": {
+      "etag": "\"169b-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/wrappedvalue.md",
+      "hash": "668cec6c1ca8e7cb65ffe0fa005e0c7d91c85065d62d28931ca190629571321d"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytogglesetting": {
+      "etag": "\"471e-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting.md",
+      "hash": "a6978067982c8508efb8a151302c872b3c12e2867d19b3018e7c8db69492a1f5"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytogglesetting/init(id:label:isenabled:defaultvalue:currentvalue:onlabel:offlabel:)": {
+      "etag": "\"2c90-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/init(id,label,isenabled,defaultvalue,currentvalue,onlabel,offlabel).md",
+      "hash": "432728ceb9ceab73a1a3d36a5f9d9a59c4488e793b59e39735ea3dbbab1125fb"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytogglesetting/isenabled": {
+      "etag": "\"19ab-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/isenabled.md",
+      "hash": "8dca1d95ef773283d8f67f763d5907c5dba316c5325a95d3d9f3d08f648dd0bd"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytogglesetting/ishidden": {
+      "etag": "\"1888-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/ishidden.md",
+      "hash": "4060a9217b7ed5944e0adb2bce61010ef7712e3cab5864d7d3880c79a68cb993"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytogglesetting/label": {
+      "etag": "\"1938-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/label.md",
+      "hash": "2bbbb0167600d2fb17b1a1b1b56e4ced528cff0261ad2dbbe72715f9c6e43fd3"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytogglesetting/projectedvalue": {
+      "etag": "\"198d-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/projectedvalue.md",
+      "hash": "68667c228f6e87fa19b409e12bae831fd2ec5f17f35c8cd7aa15122f05cee647"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytogglesetting/wrappedvalue": {
+      "etag": "\"16c2-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/wrappedvalue.md",
+      "hash": "fc6c597f544648872c270c3a2e7ddb55dddaadb2b302e511f70b3bfd3f9db77a"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytroubleshooting": {
+      "etag": "\"2de7-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting.md",
+      "hash": "20410aea76d4ece98ee68efa10f7154b88a2fec46ab6ee2b18f044e93dc2acb8"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytroubleshooting/contactaccessorymanufacturerlink()": {
+      "etag": "\"1668-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting/contactaccessorymanufacturerlink().md",
+      "hash": "25be2bd7ccc4bf6f6e6f8d22c938945b8b3ec39e812f1e905029eb295a4bdceb"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytroubleshooting/init(content:filter:)": {
+      "etag": "\"25d6-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting/init(content,filter).md",
+      "hash": "ad68529cde94353e32e9614164f566148a297a44e66315b24b80059e7a75f269"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeaccessorytroubleshooting/supportsaccessory": {
+      "etag": "\"1c5c-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting/supportsaccessory.md",
+      "hash": "8e2df49f8a735617757cb1a1af07517ff990d98d894a068da13edc4a6371dc98"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontent": {
+      "etag": "\"24bb-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontent.md",
+      "hash": "a3dc49178aa75d4372f0aaa42f8d0680181ad6eb3c4b09a129c4ff573432848f"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontentid": {
+      "etag": "\"365d-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homecontentid.md",
+      "hash": "275ae91263823f99fcc41828ee39ec0fac0ceee9bc3c4edbe7470d93c0b13722"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontentid/init(_:)": {
+      "etag": "\"1120-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homecontentid/init(_).md",
+      "hash": "7eec863c80a1e67880c8bcbe83cc5ddd391807adfb4aead81fb6d19859607820"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext": {
+      "etag": "\"3e75-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext.md",
+      "hash": "1bda880f433d79a078d37dc2d5ad56ea844525595466df4b119584b3537b6fa3"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/accessory": {
+      "etag": "\"1a9f-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/accessory.md",
+      "hash": "cf7782f199fe960238bb0c75c86889640593e503a1c2a0fd146e139bfa217df9"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/description": {
+      "etag": "\"1476-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/description.md",
+      "hash": "b953da0a84ac8dafc885ebc6c27547c40a3b1458b6e0a24c4b623eeff106015e"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/dismiss()": {
+      "etag": "\"14e3-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/dismiss().md",
+      "hash": "60ece1216d9c645acfaa96bfc0fa54a0d9bcce27a81383f5b522693e20f38577"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/home": {
+      "etag": "\"1a41-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/home.md",
+      "hash": "9680a5cfd9bbf9735ad930aa0d5e896afe4a4ddb7c614482a5ba3c32da057327"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/metadata": {
+      "etag": "\"1b08-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadata.md",
+      "hash": "4d150cbe74c6f39fa28e0c95338d1959330876da9b63e707a6c6bae1733df69a"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/metadatakey": {
+      "etag": "\"1c7b-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey.md",
+      "hash": "e9ee99b0665f7cbdab308c78f8456ef3e823e621f0edab8b00502fb5b9ad999b"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/metadatakey/accessoryerrorcode": {
+      "etag": "\"1d3d-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey/accessoryerrorcode.md",
+      "hash": "bf21a2d9c0af42e7e21c1ad376a40bc2347779326ecc8c737487122bd3336488"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/metadatakey/accessoryerrordetails": {
+      "etag": "\"1dfb-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey/accessoryerrordetails.md",
+      "hash": "ef8bda3dc7bf7518b8391876ac265378acbc17a34d15bd3cfea2bdf072a8d302"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/metadatakey/helpguidecontentid": {
+      "etag": "\"2138-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey/helpguidecontentid.md",
+      "hash": "11f71085fd1aca38f150580fb97b54f1a5fe61c0915e4b3534f1c157f65b555f"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/navigator": {
+      "etag": "\"1846-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/navigator.md",
+      "hash": "0557112384a21a086e2022473882a07650e268811e2a15b05f653c441886fc00"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homecontext/reportconfigurationcomplete()": {
+      "etag": "\"167a-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/reportconfigurationcomplete().md",
+      "hash": "6f1ad97a9f827878128dc9fd9f32581ec2995ce9ca05eaa9a8d734aad8db7e55"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeextension": {
+      "etag": "\"21dd-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeextension.md",
+      "hash": "acdd2e13a282f5cd928c9e2963e65a17b608185b91181f155a355beeab8af607"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeextension/body": {
+      "etag": "\"1c24-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/body.md",
+      "hash": "17e1cf90400c99a66ceb7f3c359eed55cd09e85ddce5b205a94067dc9df821d7"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeextension/content": {
+      "etag": "\"151b-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/content.md",
+      "hash": "7c3bf6ae33b14b8b69ad8c5be2b977e9516476bd0f256e51bde39132c9855b92"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeextension/init()": {
+      "etag": "\"fba-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/init().md",
+      "hash": "f1ccb079bad3a9eec14782b598c7ecaba8f3c24c9f4768ab7af2ae762d7b35ac"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homeextension/main()": {
+      "etag": "\"12ba-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/main().md",
+      "hash": "f66823d64abd95a060a9b14eb51a1d4420983a5989c6e021cc073e9104fac6a2"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homenavigator": {
+      "etag": "\"29f9-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homenavigator.md",
+      "hash": "bc9f8c7438e9b1acbe866d213070a0af9f633ff479d5adc56b68a5976269ce93"
+    },
+    "https://developer.apple.com/documentation/homeextensions/homenavigator/push(_:title:)": {
+      "etag": "\"1e74-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homenavigator/push(_,title).md",
+      "hash": "8c501851387c60ca643fdc1ad52623cc142aafd8e31c2f10f673cbc623326c4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions.json": {
+      "etag": "\"5679-65e5a6eb14b72-df\"",
+      "file_path": "documentation/homeextensions/homeextensions.md",
+      "hash": "1c08ecc07beeb8a5018ec28bf3731b686a9c558af53f4fc978466b17df3e7859"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/anyhomeaccessorysettingscontainer.json": {
+      "etag": "\"2865-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/anyhomeaccessorysettingscontainer.md",
+      "hash": "8b47ddc448ac17cf3a76d297b05501dd958c3e806e54e4d1fb0c479f90c4ed86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/anyhomeaccessorysettingscontainer/init(erasing:).json": {
+      "etag": "\"16e6-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/anyhomeaccessorysettingscontainer/init(erasing).md",
+      "hash": "278a9df2561a1b1bcc988563de13b8de543ac322e36e11b11597ffcb6b62fdce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/guidestephostviewcontroller.json": {
+      "etag": "\"6c2d-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller.md",
+      "hash": "97e536e4c26a69df9213b1f309c2a79cc0daa548e0d990214b6c40f95d43fc2d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/guidestephostviewcontroller/init(coder:).json": {
+      "etag": "\"158e-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/init(coder).md",
+      "hash": "d5dc6ef703195e2f9155072d2339789ab4dfe25ec7309d5c2d5f9d8b94675bab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/guidestephostviewcontroller/viewdidappear(_:).json": {
+      "etag": "\"1531-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewdidappear(_).md",
+      "hash": "8e0da9789005382f6705a7e51d30158db376484995d835f605a46ab80db5e645"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/guidestephostviewcontroller/viewdidload().json": {
+      "etag": "\"10c5-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewdidload().md",
+      "hash": "2d66d93912206a633bf9fdf22ab9d591b6c8303985282f261077e9f1700dafcf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/guidestephostviewcontroller/viewwillappear(_:).json": {
+      "etag": "\"153c-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewwillappear(_).md",
+      "hash": "8f198dc57264bc20ea56e0323d72a6db296ce229add69f696954b82c1888bebc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/guidestephostviewcontroller/viewwilldisappear(_:).json": {
+      "etag": "\"155d-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/guidestephostviewcontroller/viewwilldisappear(_).md",
+      "hash": "9d7b53cd32c71146477df974d5d9d6f0cac73eda0c1f5d63455bef12758e2485"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryconfiguration.json": {
+      "etag": "\"3659-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration.md",
+      "hash": "d8ba2b0744139a39f1b3fd419fbe502687a9cfdff871e8c32410d82171113bd0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryconfiguration/hidesnavigationtitleinlandscape(_:).json": {
+      "etag": "\"1bab-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration/hidesnavigationtitleinlandscape(_).md",
+      "hash": "0cb22c9568209344ab35d7597aba36ec23744ad9f20ae2fe54a9ba8190e7b260"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryconfiguration/init(id:content:filter:).json": {
+      "etag": "\"2b3d-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration/init(id,content,filter).md",
+      "hash": "abf172551a456e21d92e4d9bd11fa9f93a79365fcbee31a35789978c7977761f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryconfiguration/supportsaccessory.json": {
+      "etag": "\"1ce8-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryconfiguration/supportsaccessory.md",
+      "hash": "8ef5db74740c556be741d6f042ea042704acdbc749de1bf578b53a555dfe6894"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting.json": {
+      "etag": "\"4c28-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting.md",
+      "hash": "30122c2bdc4281102e650f464b8d5744fa3fdce72f8fb344152e0f1cba692589"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/init(id:label:isenabled:defaultvalue:currentvalue:style:).json": {
+      "etag": "\"3153-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/init(id,label,isenabled,defaultvalue,currentvalue,style).md",
+      "hash": "0e9c71edb265e1f87cf2178cb4b365264642b260bf50e386fa073c5b0ba5b56e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/isenabled.json": {
+      "etag": "\"197f-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/isenabled.md",
+      "hash": "627d400f03bcf288bc881adafbc40eb51bbdfcd57d7b0440fd40bc16984f1247"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/ishidden.json": {
+      "etag": "\"185a-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/ishidden.md",
+      "hash": "24d5f1dafd72369927374d5873ee1914e71b9ff5dae615f1b773af4621db2020"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/label.json": {
+      "etag": "\"190a-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/label.md",
+      "hash": "dd2ee4471fd43da0106adb7241afd7fac76aad7334f983ff90eaa8d92045c383"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/projectedvalue.json": {
+      "etag": "\"1dd4-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/projectedvalue.md",
+      "hash": "1299806490682face469056d73a07b6fbfcef76bdb7ce60a8354886d9abc9150"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/selectedvalues.json": {
+      "etag": "\"1a05-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectedvalues.md",
+      "hash": "73b77f1214752c5e02af7980cfcb185866d67fbbac616e8abc1f81e9ef7b9a4d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle.json": {
+      "etag": "\"34c6-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle.md",
+      "hash": "b8bf25bfc3b81db3ecb9dabfb1d76efb13e0eb8d61dbc15a371219aabf8ca8c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/expanded.json": {
+      "etag": "\"17f0-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/expanded.md",
+      "hash": "4b1c7aeb407d40f7bc1a5442040531c11ce1f2758ab14660c0551561ac4dad9a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/inline.json": {
+      "etag": "\"17e3-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/inline.md",
+      "hash": "185f31d78b80532ea48566748ba81b66c40be4bbde20e1ac4443bec74cec78c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/navigation.json": {
+      "etag": "\"1811-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/selectionstyle/navigation.md",
+      "hash": "ecaa50349e5d78d5837cbfac0ed68727aee58304f15ece485eccfdfedd8a04f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsetting/wrappedvalue.json": {
+      "etag": "\"178c-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsetting/wrappedvalue.md",
+      "hash": "b5ac6f44937f02ac561cf9174fd305e45c3ead50f6683da14d5b91491074bfda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsettingconstant.json": {
+      "etag": "\"3ecb-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsettingconstant.md",
+      "hash": "e46fc831b2b7955298c0e07a781f047d00a78b8eb02a1e76e64d86398cd97ac8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryenumsettingconstant/value.json": {
+      "etag": "\"1334-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryenumsettingconstant/value.md",
+      "hash": "7d7265d60721a6a2f7c749816c0ee1dc759e8b83fe316f104cbbd5a8dec8159e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryhelpguide.json": {
+      "etag": "\"2df9-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide.md",
+      "hash": "31391437910725f5fffe3ed8dc0ac9b8bde30de86bfafcb2ab7aedd26874e507"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryhelpguide/contactaccessorymanufacturerlink().json": {
+      "etag": "\"15d8-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide/contactaccessorymanufacturerlink().md",
+      "hash": "3236db3bb340cd6ce490417718d5180ba9ebfffca1011b0b609912d8bce76919"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryhelpguide/init(id:content:filter:).json": {
+      "etag": "\"2aa3-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide/init(id,content,filter).md",
+      "hash": "56a10b1ed4a3e454274733b74770bd77bcc70ed93bf91a6252d467ea413275e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryhelpguide/supportsaccessory.json": {
+      "etag": "\"1c7e-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryhelpguide/supportsaccessory.md",
+      "hash": "7af8fbbfcc5851d9b6819bd65d7bc82bd94f3ae7b07b28f5e8774373da73b492"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryinformationsetting.json": {
+      "etag": "\"3c26-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting.md",
+      "hash": "b5cb1efdb54b6605d839c8e6bc9b95927112b5743d59530073f30208a319a9da"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryinformationsetting/init(id:label:value:).json": {
+      "etag": "\"1b73-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/init(id,label,value).md",
+      "hash": "fdc5808a19a63b058a2d68760d05ffb505fa027c8808e57d076583dfab8308e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryinformationsetting/ishidden.json": {
+      "etag": "\"15c7-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/ishidden.md",
+      "hash": "693bb8823922e165c9a1f2a016fcff33acfce4259ddf5c74a6a7da6584ec2898"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryinformationsetting/label.json": {
+      "etag": "\"1677-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/label.md",
+      "hash": "b8e1b6b1379abc679e224730e359f284bbc3fbe6730b02b2b94e26a1202cc4d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryinformationsetting/projectedvalue.json": {
+      "etag": "\"19d7-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/projectedvalue.md",
+      "hash": "1e73e7deac21e6060b6330691e4e02cff948944ebeda82dbc52656c970e129d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryinformationsetting/wrappedvalue.json": {
+      "etag": "\"166a-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryinformationsetting/wrappedvalue.md",
+      "hash": "b153d935180ed408cb3cf646ed193265e68f38d9182d83ea66cc91b3344f44c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting.json": {
+      "etag": "\"9a2c-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting.md",
+      "hash": "db8bf44d16a4d27f23b521ba6a6a32c4940376422725abe40816db5fa9a5201b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:isenabled:defaultvalue:currentvalue:lowerbound:upperbound:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:valuesuffix:decimalprecision:sliderstyle:).json": {
+      "etag": "\"8f8c-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,isenabled,defaultvalue,currentvalue,lowerbound,upperbound,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,valuesuffix,decimalprecision,sliderstyle).md",
+      "hash": "565e7c91ab6c27fca31754219e54538e84caba53897f35173c3ec4af8a36ff50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:range:isenabled:defaultvalue:currentvalue:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:minimumvaluesystemimage:maximumvaluesystemimage:valuesuffix:decimalprecision:sliderstyle:).json": {
+      "etag": "\"9c57-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,range,isenabled,defaultvalue,currentvalue,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,minimumvaluesystemimage,maximumvaluesystemimage,valuesuffix,decimalprecision,sliderstyle).md",
+      "hash": "e01c8670f51328f1b32bce47700739996cae116a000e521fd52e3a63a37ca84a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:range:isenabled:defaultvalue:currentvalue:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:minimumvaluesystemimage:maximumvaluesystemimage:valuesuffix:decimalprecision:sliderstyle:ticklabelstyle:).json": {
+      "etag": "\"a10c-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,range,isenabled,defaultvalue,currentvalue,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,minimumvaluesystemimage,maximumvaluesystemimage,valuesuffix,decimalprecision,sliderstyle,ticklabelstyle).md",
+      "hash": "554630d3eb6f7187671070b4dcf7ba4aa6eec8e7033d81f1ec83d4044a2e3d9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/init(id:label:range:isenabled:defaultvalue:currentvalue:step:unit:valueformat:minimumvaluelabel:maximumvaluelabel:valuesuffix:decimalprecision:sliderstyle:).json": {
+      "etag": "\"983f-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/init(id,label,range,isenabled,defaultvalue,currentvalue,step,unit,valueformat,minimumvaluelabel,maximumvaluelabel,valuesuffix,decimalprecision,sliderstyle).md",
+      "hash": "d4b30524dd993bdce8ac909bdcf35c96700dd4704c10b5a1b7fe36a3b81196ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/isenabled.json": {
+      "etag": "\"1998-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/isenabled.md",
+      "hash": "19d9f18c8d7593d2892286d09488ba4f01e0f152b68bfde8194a693fdd215fa2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/ishidden.json": {
+      "etag": "\"1873-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ishidden.md",
+      "hash": "77abb85b9f28c02614b81808248a7573a67c523c30edc3e0dba89af0f257db1f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/label.json": {
+      "etag": "\"1923-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/label.md",
+      "hash": "d808443b14794c6b96fabf0d95c2867b46840d30a86118953c8198546e9ed5fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/projectedvalue.json": {
+      "etag": "\"1a61-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/projectedvalue.md",
+      "hash": "ee191ea4e78fb239997e5499f987105067736ab29f565fab9495baf7a8665aeb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/sliderstyle.json": {
+      "etag": "\"7e8e-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/sliderstyle.md",
+      "hash": "5fd2f0de14e5be64e3bd0b7a93d3809641b1d6bd908a6b7fcb684efaf95a3156"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/continuous.json": {
+      "etag": "\"14d3-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/continuous.md",
+      "hash": "2a48cdcc78261f23311d6659752e460559b21d6d3ee709294954720ce8128b05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/stepped.json": {
+      "etag": "\"1675-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/sliderstyle/stepped.md",
+      "hash": "7ae26a5aea0eec5ab36e7766e122e8d75e08bcd7b5139b0b9dff8bfa769ac99c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle.json": {
+      "etag": "\"71fc-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle.md",
+      "hash": "e4ca4023fddccc1ebdfc814ea6cf06dbe48c9eb82bfc3886be2d897c94627767"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/automatic.json": {
+      "etag": "\"18bf-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/automatic.md",
+      "hash": "196165fd01e06a9267038b12f94cbb26f6bd7f08929e89edeb318c9965805a8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/custom(_:).json": {
+      "etag": "\"1e46-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/custom(_).md",
+      "hash": "4c237a47e0c29e0b8e4943b672e14cc8f494222bfed90dc934ae7e7e37b9a9b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/hidden.json": {
+      "etag": "\"1869-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/ticklabelstyle/hidden.md",
+      "hash": "9b5e2a8875997c7fffa90b04abff12cfd51d9c188705149d1ed31bee415d1639"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/valueformat.json": {
+      "etag": "\"8133-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat.md",
+      "hash": "a5d1d23a8ec3e3ee5ec1babe43ae4920a6a3136169f10d276a9d5e517633cbff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/valueformat/numeric.json": {
+      "etag": "\"174e-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat/numeric.md",
+      "hash": "388125ec57b86a809dc91bd02bed952c28283b51aaea98480b7bd82f77b78de1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/valueformat/percentage.json": {
+      "etag": "\"1753-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat/percentage.md",
+      "hash": "3bc840f25db02dda553005d9114bf5e9b0ec7044925416a38269d0de96e08c47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/valueformat/temperature.json": {
+      "etag": "\"1759-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/valueformat/temperature.md",
+      "hash": "7b38257732f0e8d9c9705225f31f67aec7a0da2f72160ab17ec7e1b67c78ad64"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesetting/wrappedvalue.json": {
+      "etag": "\"1415-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesetting/wrappedvalue.md",
+      "hash": "f3e1086ed569c7f945ad3203d7dfddca6ec2304298aad23b64d75fc644ad1008"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesettingdescriptor.json": {
+      "etag": "\"329e-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor.md",
+      "hash": "2f98379803173130dffca78eab7d63d28b231e6066c217d9f0e97a3fbc046150"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesettingdescriptor/bound.json": {
+      "etag": "\"1eab-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor/bound.md",
+      "hash": "8e4b0049c4b9a02515bb4d6add62030553b2b4cfc990df79c02c9624f6376c7f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangelowerbound.json": {
+      "etag": "\"1a13-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangelowerbound.md",
+      "hash": "ee6a6cbb9ce990d408e3a8f41775d092790beb222e77689f44d37711d655d438"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangeupperbound.json": {
+      "etag": "\"1a13-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessoryrangesettingdescriptor/rangeupperbound.md",
+      "hash": "a4924b1c2f24ff5b9ce4fabe48b415969a9e6bdece0a666296a9d2dafab99ff3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysetting.json": {
+      "etag": "\"3645-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysetting.md",
+      "hash": "324431299c5274d5b861d187748a30eb308bc0a8e88f7a9c5348f28bc19fa897"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysetting/id.json": {
+      "etag": "\"113a-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysetting/id.md",
+      "hash": "a2ab9457dde91c2029c9e60b1a8bc1c2b94302920ecc2399ee5f59a6a827db93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettinglabel.json": {
+      "etag": "\"4ba5-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel.md",
+      "hash": "c242303e21fc2ba783df0d7847108c1424d54f65a50335a24f89681fa68daf5b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettinglabel/detailedlabel.json": {
+      "etag": "\"168c-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel/detailedlabel.md",
+      "hash": "6dc9adcd45ed7ce5ed820806f3dce15a440efd97ea92aeb9c5aef8d53e891a1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettinglabel/init(_:detailedlabel:systemimage:).json": {
+      "etag": "\"1d27-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel/init(_,detailedlabel,systemimage).md",
+      "hash": "b259a61f47e3df4ba1613050d7143c6e91382a6cde9a0f23c3f31d74cedff846"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettinglabel/label.json": {
+      "etag": "\"1607-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettinglabel/label.md",
+      "hash": "065d82f9096676483cfa54aa2bf3ed3c4b16119a97a6f631525819c6dddd9f15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettings.json": {
+      "etag": "\"3007-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettings.md",
+      "hash": "f8e14568d65a54e9e2d92cd05929082d3573dd8f73e67ac2d9f9ead0ef0a3c22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettings/init(context:provider:filter:).json": {
+      "etag": "\"2cfe-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettings/init(context,provider,filter).md",
+      "hash": "c062ba900e8e61a9d46783e2501376cda332fc277b5c46b8f10e91ff374af04d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingscontainer.json": {
+      "etag": "\"4003-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontainer.md",
+      "hash": "6d0fee6ec0db91d2473140bf78762e4d92d27e02acb161c42a8639699ffecf29"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingscontainer/availablesettings.json": {
+      "etag": "\"1ad8-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontainer/availablesettings.md",
+      "hash": "4b6577275acc60ad2606ef2d7b39a44a6030ef11e2106fa4a62905e1a5039416"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingscontext.json": {
+      "etag": "\"1eac-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingscontext.md",
+      "hash": "76c40948f1edd4ed45faca3f0cad1d97a30317ac36c7657eacd76c3ff7f10ba0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingsprovider.json": {
+      "etag": "\"4bee-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider.md",
+      "hash": "92ba94f58bb34cf3f6cb0c1e7a2f48cada483bfc4d1247c3955cd67c2e79f403"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingsprovider/container.json": {
+      "etag": "\"2430-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/container.md",
+      "hash": "2118c7e18cecbf1fb993c3dbbc5175e56f19f5941f3309b611c2e0dba1bafb34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingsprovider/context.json": {
+      "etag": "\"2433-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/context.md",
+      "hash": "763b564200df787e5e0f253654d5e45385e3cc353869e0cd533088e30f986d18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingsprovider/settings(context:for:).json": {
+      "etag": "\"3346-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/settings(context,for).md",
+      "hash": "9f2f4bebc6eb884a4930be9569284bd4fe754abd31f83c1873d0302949a21447"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorysettingsprovider/settingsdidchange(changes:context:for:).json": {
+      "etag": "\"3517-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorysettingsprovider/settingsdidchange(changes,context,for).md",
+      "hash": "42833a7ffae6cecb5139a68e7089cd75075117716b57cbb35ddedc8e0789f7cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytextfieldsetting.json": {
+      "etag": "\"4259-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting.md",
+      "hash": "739b8797205040c25d32e691aa897c7b7d71470e186e4b6c14a27828f901c9de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytextfieldsetting/init(id:label:isenabled:defaultvalue:currentvalue:placeholder:).json": {
+      "etag": "\"2b98-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/init(id,label,isenabled,defaultvalue,currentvalue,placeholder).md",
+      "hash": "7b5958fba2ae25e9671ecc875f3d451d01cf25c1e85dc4c19e4860aab4818be1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytextfieldsetting/isenabled.json": {
+      "etag": "\"19ea-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/isenabled.md",
+      "hash": "7e918846a0608f68cc21bef202c1023c0c19d2df2e43108dec9d0d6fc9d35fe5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytextfieldsetting/ishidden.json": {
+      "etag": "\"18c5-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/ishidden.md",
+      "hash": "fd19f85fad6920b86dd342d610040b201b15b28f9d6ef53d862b6ddcfc1b4e88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytextfieldsetting/label.json": {
+      "etag": "\"1975-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/label.md",
+      "hash": "963919e3b8d204c978366065d3be6de5d5d2a1bcdde0c2758ab647827a1ec6b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytextfieldsetting/projectedvalue.json": {
+      "etag": "\"19d3-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/projectedvalue.md",
+      "hash": "d7cb604333ec1f6b85fbfb24482e7e7ccde8111d0833b2ae0ae0d61473df7788"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytextfieldsetting/wrappedvalue.json": {
+      "etag": "\"169b-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytextfieldsetting/wrappedvalue.md",
+      "hash": "668cec6c1ca8e7cb65ffe0fa005e0c7d91c85065d62d28931ca190629571321d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytogglesetting.json": {
+      "etag": "\"471e-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting.md",
+      "hash": "a6978067982c8508efb8a151302c872b3c12e2867d19b3018e7c8db69492a1f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytogglesetting/init(id:label:isenabled:defaultvalue:currentvalue:onlabel:offlabel:).json": {
+      "etag": "\"2c90-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/init(id,label,isenabled,defaultvalue,currentvalue,onlabel,offlabel).md",
+      "hash": "432728ceb9ceab73a1a3d36a5f9d9a59c4488e793b59e39735ea3dbbab1125fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytogglesetting/isenabled.json": {
+      "etag": "\"19ab-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/isenabled.md",
+      "hash": "8dca1d95ef773283d8f67f763d5907c5dba316c5325a95d3d9f3d08f648dd0bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytogglesetting/ishidden.json": {
+      "etag": "\"1888-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/ishidden.md",
+      "hash": "4060a9217b7ed5944e0adb2bce61010ef7712e3cab5864d7d3880c79a68cb993"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytogglesetting/label.json": {
+      "etag": "\"1938-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/label.md",
+      "hash": "2bbbb0167600d2fb17b1a1b1b56e4ced528cff0261ad2dbbe72715f9c6e43fd3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytogglesetting/projectedvalue.json": {
+      "etag": "\"198d-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/projectedvalue.md",
+      "hash": "68667c228f6e87fa19b409e12bae831fd2ec5f17f35c8cd7aa15122f05cee647"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytogglesetting/wrappedvalue.json": {
+      "etag": "\"16c2-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytogglesetting/wrappedvalue.md",
+      "hash": "fc6c597f544648872c270c3a2e7ddb55dddaadb2b302e511f70b3bfd3f9db77a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytroubleshooting.json": {
+      "etag": "\"2de7-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting.md",
+      "hash": "20410aea76d4ece98ee68efa10f7154b88a2fec46ab6ee2b18f044e93dc2acb8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytroubleshooting/contactaccessorymanufacturerlink().json": {
+      "etag": "\"1668-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting/contactaccessorymanufacturerlink().md",
+      "hash": "25be2bd7ccc4bf6f6e6f8d22c938945b8b3ec39e812f1e905029eb295a4bdceb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytroubleshooting/init(content:filter:).json": {
+      "etag": "\"25d6-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting/init(content,filter).md",
+      "hash": "ad68529cde94353e32e9614164f566148a297a44e66315b24b80059e7a75f269"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeaccessorytroubleshooting/supportsaccessory.json": {
+      "etag": "\"1c5c-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeaccessorytroubleshooting/supportsaccessory.md",
+      "hash": "8e2df49f8a735617757cb1a1af07517ff990d98d894a068da13edc4a6371dc98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontent.json": {
+      "etag": "\"24bb-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontent.md",
+      "hash": "a3dc49178aa75d4372f0aaa42f8d0680181ad6eb3c4b09a129c4ff573432848f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontentid.json": {
+      "etag": "\"365d-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homecontentid.md",
+      "hash": "275ae91263823f99fcc41828ee39ec0fac0ceee9bc3c4edbe7470d93c0b13722"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontentid/init(_:).json": {
+      "etag": "\"1120-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homecontentid/init(_).md",
+      "hash": "7eec863c80a1e67880c8bcbe83cc5ddd391807adfb4aead81fb6d19859607820"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext.json": {
+      "etag": "\"3e75-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext.md",
+      "hash": "1bda880f433d79a078d37dc2d5ad56ea844525595466df4b119584b3537b6fa3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/accessory.json": {
+      "etag": "\"1a9f-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/accessory.md",
+      "hash": "cf7782f199fe960238bb0c75c86889640593e503a1c2a0fd146e139bfa217df9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/description.json": {
+      "etag": "\"1476-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/description.md",
+      "hash": "b953da0a84ac8dafc885ebc6c27547c40a3b1458b6e0a24c4b623eeff106015e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/dismiss().json": {
+      "etag": "\"14e3-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/dismiss().md",
+      "hash": "60ece1216d9c645acfaa96bfc0fa54a0d9bcce27a81383f5b522693e20f38577"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/home.json": {
+      "etag": "\"1a41-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/home.md",
+      "hash": "9680a5cfd9bbf9735ad930aa0d5e896afe4a4ddb7c614482a5ba3c32da057327"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/metadata.json": {
+      "etag": "\"1b08-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadata.md",
+      "hash": "4d150cbe74c6f39fa28e0c95338d1959330876da9b63e707a6c6bae1733df69a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/metadatakey.json": {
+      "etag": "\"1c7b-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey.md",
+      "hash": "e9ee99b0665f7cbdab308c78f8456ef3e823e621f0edab8b00502fb5b9ad999b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/metadatakey/accessoryerrorcode.json": {
+      "etag": "\"1d3d-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey/accessoryerrorcode.md",
+      "hash": "bf21a2d9c0af42e7e21c1ad376a40bc2347779326ecc8c737487122bd3336488"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/metadatakey/accessoryerrordetails.json": {
+      "etag": "\"1dfb-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey/accessoryerrordetails.md",
+      "hash": "ef8bda3dc7bf7518b8391876ac265378acbc17a34d15bd3cfea2bdf072a8d302"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/metadatakey/helpguidecontentid.json": {
+      "etag": "\"2138-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/metadatakey/helpguidecontentid.md",
+      "hash": "11f71085fd1aca38f150580fb97b54f1a5fe61c0915e4b3534f1c157f65b555f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/navigator.json": {
+      "etag": "\"1846-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/navigator.md",
+      "hash": "0557112384a21a086e2022473882a07650e268811e2a15b05f653c441886fc00"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homecontext/reportconfigurationcomplete().json": {
+      "etag": "\"167a-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homecontext/reportconfigurationcomplete().md",
+      "hash": "6f1ad97a9f827878128dc9fd9f32581ec2995ce9ca05eaa9a8d734aad8db7e55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeextension.json": {
+      "etag": "\"21dd-65e5642c8713d-df\"",
+      "file_path": "documentation/homeextensions/homeextension.md",
+      "hash": "acdd2e13a282f5cd928c9e2963e65a17b608185b91181f155a355beeab8af607"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeextension/body.json": {
+      "etag": "\"1c24-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/body.md",
+      "hash": "17e1cf90400c99a66ceb7f3c359eed55cd09e85ddce5b205a94067dc9df821d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeextension/content.json": {
+      "etag": "\"151b-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/content.md",
+      "hash": "7c3bf6ae33b14b8b69ad8c5be2b977e9516476bd0f256e51bde39132c9855b92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeextension/init().json": {
+      "etag": "\"fba-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/init().md",
+      "hash": "f1ccb079bad3a9eec14782b598c7ecaba8f3c24c9f4768ab7af2ae762d7b35ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homeextension/main().json": {
+      "etag": "\"12ba-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homeextension/main().md",
+      "hash": "f66823d64abd95a060a9b14eb51a1d4420983a5989c6e021cc073e9104fac6a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homenavigator.json": {
+      "etag": "\"29f9-65e5642c392cf-df\"",
+      "file_path": "documentation/homeextensions/homenavigator.md",
+      "hash": "bc9f8c7438e9b1acbe866d213070a0af9f633ff479d5adc56b68a5976269ce93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/homeextensions/homenavigator/push(_:title:).json": {
+      "etag": "\"1e74-65e5642c026da-df\"",
+      "file_path": "documentation/homeextensions/homenavigator/push(_,title).md",
+      "hash": "8c501851387c60ca643fdc1ad52623cc142aafd8e31c2f10f673cbc623326c4a"
+    }
+  },
+  "metadata": {
+    "render": {
+      "version": 1
+    },
+    "total_pages": 236
+  }
+}

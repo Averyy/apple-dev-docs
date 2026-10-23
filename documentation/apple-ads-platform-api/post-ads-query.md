@@ -38,7 +38,7 @@ Retrieve all active ads in a specific ad group, sorted by creation time descendi
 
 ##### Request
 
-```json
+```http
 POST /v1/ads/query
 
 {
@@ -113,7 +113,7 @@ Retrieve only paused ads within a campaign to identify ads that may need to be r
 
 ##### Request
 
-```json
+```http
 POST /v1/ads/query
 
 {
@@ -176,7 +176,7 @@ POST /v1/ads/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -46,6 +46,7 @@ This type should be conformed to builder DSL protocols to represent tuple conten
 - [Copyable](../Swift/copyable.md)
 - [CustomizableToolbarContent](./customizabletoolbarcontent.md)
 - [Escapable](../Swift/escapable.md)
+- [HomeContent](../homeextensions/homecontent.md)
 - [SceneAccessoryContent](./sceneaccessorycontent.md)
 - [Sendable](../Swift/sendable.md)
 - [SendableMetatype](../Swift/sendablemetatype.md)

@@ -30,8 +30,7 @@ static func callout(_ style: MapItemDetailSelectionAccessoryStyle.CalloutStyle =
   The map item detail selection accessory style.
 - [func mapItemDetailSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some MapContent](../mapcontent/mapitemdetailselectionaccessory%28_%29.md)
   Specifies the selection accessory to display for the selected map item content.
-- [func mapFeatureSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some View
-](../../SwiftUI/view/mapfeatureselectionaccessory%28_%29.md)
+- [func mapFeatureSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some View\n](../../SwiftUI/view/mapfeatureselectionaccessory%28_%29.md)
   Specifies the selection accessory to display for a `MapFeature`
 - [func mapItemDetailPopover(isPresented: Binding<Bool>, item: MKMapItem?, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor) -> some View
 ](../../SwiftUI/view/mapitemdetailpopover%28ispresented,item,displaysmap,attachmentanchor%29.md)

@@ -50,7 +50,7 @@ Pause an ad group by setting `status` to `PAUSED`. Send only the fields you want
 
 ##### Request
 
-```json
+```http
 PUT /v1/adgroups/555666777
 
 {
@@ -109,7 +109,7 @@ Increase the tap bid for an Apple Maps ad group. Send only the `bidStrategy` fie
 
 ##### Request
 
-```json
+```http
 PUT /v1/adgroups/555666779
 
 {
@@ -166,7 +166,7 @@ For an ad group under an auto-bidding campaign (`MAX_CONVERSIONS` or `MAX_ENGAGE
 
 ##### Request
 
-```json
+```http
 PUT /v1/adgroups/555666781
 
 {
@@ -217,7 +217,7 @@ Update specific targeting dimensions. The request modifies only the dimensions i
 
 ##### Request
 
-```json
+```http
 PUT /v1/adgroups/555666780
 
 {
@@ -291,7 +291,7 @@ PUT /v1/adgroups/555666780
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

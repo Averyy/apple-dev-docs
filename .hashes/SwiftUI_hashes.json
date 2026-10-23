@@ -7876,9 +7876,9 @@
       "hash": "eae1b65c1eb8e2602d4ed992747702da25ef4bf99892c486055d106c3e6b6441"
     },
     "https://developer.apple.com/documentation/swiftui/emptyview": {
-      "etag": "\"4210-65d55de0eef55-df\"",
+      "etag": "\"44a8-65e561f8041ab-df\"",
       "file_path": "documentation/SwiftUI/emptyview.md",
-      "hash": "48f5deb44267eabddf9b8f263ea91b724abf2119a6e5ce90765bda05431248d2"
+      "hash": "5de60b8ea8f1370849a356935eaf4f2bf449a929f74b92e37c861137efb3ac65"
     },
     "https://developer.apple.com/documentation/swiftui/emptyview/init()": {
       "etag": "\"e84-65d55df07b374-df\"",
@@ -8316,9 +8316,9 @@
       "hash": "45fa3ee04f025021fa511a32d27181c6d91eb496e0e4f7acbb408067079afb09"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/homecontext": {
-      "etag": "\"1090-65d55de3aa7fa-df\"",
+      "etag": "\"134b-65e561f98512f-df\"",
       "file_path": "documentation/SwiftUI/environmentvalues/homecontext.md",
-      "hash": "b0076374191a27858edafb8777078a9a4beb91d7cdddea4fc84efdd9e1b24caa"
+      "hash": "838854a29e7c4f3ecd16214e75cd08d8f3d3371557aa3233c5bd426b94769f3d"
     },
     "https://developer.apple.com/documentation/swiftui/environmentvalues/horizontalscrollbouncebehavior": {
       "etag": "\"239d-65d55de39638b-df\"",
@@ -27813,9 +27813,9 @@
       "hash": "d5b199a7d7d626176a3c303253e3222871d41a4476581090edbf7d13283abe06"
     },
     "https://developer.apple.com/documentation/swiftui/tuplecontent": {
-      "etag": "\"408a-65d55df037ac3-df\"",
+      "etag": "\"4322-65e561fee6981-df\"",
       "file_path": "documentation/SwiftUI/tuplecontent.md",
-      "hash": "45f660758a50ce2836603c01009f91a04ee76a3cc8b61e8f5597eb9ccc0bda7d"
+      "hash": "d2831052b712493ebf43b015fde54946418c4bcd100328f7c5d47463b0aba46c"
     },
     "https://developer.apple.com/documentation/swiftui/tuplecontent/content": {
       "etag": "\"fe5-65d55defd9e42-df\"",
@@ -31642,7 +31642,7 @@
       "hash": "eb4149a326a3b2ef54314a248c007a6909a3c5864b9cd490db47fd2533e8f2ab"
     },
     "https://developer.apple.com/documentation/swiftui/view/listitemtint(_:)": {
-      "etag": "\"2b81-65d55df2b5c2d-df\"",
+      "etag": "\"2b81-65d55df2b5c2d\"",
       "file_path": "documentation/SwiftUI/view/listitemtint(_).md",
       "hash": "0cbf5859aee634375c5db5627297aac3a5d54041a795e971e036d002f26d3229"
     },
@@ -43596,9 +43596,9 @@
       "hash": "eae1b65c1eb8e2602d4ed992747702da25ef4bf99892c486055d106c3e6b6441"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/emptyview.json": {
-      "etag": "\"4210-65d55de0eef55-df\"",
+      "etag": "\"44a8-65e561f8041ab-df\"",
       "file_path": "documentation/SwiftUI/emptyview.md",
-      "hash": "48f5deb44267eabddf9b8f263ea91b724abf2119a6e5ce90765bda05431248d2"
+      "hash": "5de60b8ea8f1370849a356935eaf4f2bf449a929f74b92e37c861137efb3ac65"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/emptyview/init().json": {
       "etag": "\"e84-65d55df07b374-df\"",
@@ -44036,9 +44036,9 @@
       "hash": "45fa3ee04f025021fa511a32d27181c6d91eb496e0e4f7acbb408067079afb09"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/homecontext.json": {
-      "etag": "\"1090-65d55de3aa7fa-df\"",
+      "etag": "\"134b-65e561f98512f-df\"",
       "file_path": "documentation/SwiftUI/environmentvalues/homecontext.md",
-      "hash": "b0076374191a27858edafb8777078a9a4beb91d7cdddea4fc84efdd9e1b24caa"
+      "hash": "838854a29e7c4f3ecd16214e75cd08d8f3d3371557aa3233c5bd426b94769f3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/environmentvalues/horizontalscrollbouncebehavior.json": {
       "etag": "\"239d-65d55de39638b-df\"",
@@ -63537,9 +63537,9 @@
       "hash": "d5b199a7d7d626176a3c303253e3222871d41a4476581090edbf7d13283abe06"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/tuplecontent.json": {
-      "etag": "\"408a-65d55df037ac3-df\"",
+      "etag": "\"4322-65e561fee6981-df\"",
       "file_path": "documentation/SwiftUI/tuplecontent.md",
-      "hash": "45f660758a50ce2836603c01009f91a04ee76a3cc8b61e8f5597eb9ccc0bda7d"
+      "hash": "d2831052b712493ebf43b015fde54946418c4bcd100328f7c5d47463b0aba46c"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/tuplecontent/content.json": {
       "etag": "\"fe5-65d55defd9e42-df\"",
@@ -67366,7 +67366,7 @@
       "hash": "eb4149a326a3b2ef54314a248c007a6909a3c5864b9cd490db47fd2533e8f2ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/listitemtint(_:).json": {
-      "etag": "\"2b81-65d55df2b5c2d-df\"",
+      "etag": "\"2b81-65d55df2b5c2d\"",
       "file_path": "documentation/SwiftUI/view/listitemtint(_).md",
       "hash": "0cbf5859aee634375c5db5627297aac3a5d54041a795e971e036d002f26d3229"
     },

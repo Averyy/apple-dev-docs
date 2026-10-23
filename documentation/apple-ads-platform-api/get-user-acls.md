@@ -20,7 +20,7 @@ To discover which ad accounts an API token can access and what permission level 
 ##### Request
 
 ```
-GET https://api.ads.apple.com/v1/acls
+GET /v1/acls
 ```
 
 ##### Response

@@ -58,7 +58,7 @@ Retrieve daily ad group metrics for all ad groups in a campaign, grouped by loca
 
 Filters by `campaignId` to retrieve all brand ad groups in a campaign, groups by `locationId`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
-```json
+```http
 POST /v1/reports/business-brands/adgroups/query
 
 {
@@ -184,7 +184,7 @@ Retrieve monthly ad group metrics grouped by device class to understand performa
 
 Filters by `adGroupId` for a specific brand ad group, groups by `deviceClass`, and uses monthly granularity over a 3-month date range in UTC.
 
-```json
+```http
 POST /v1/reports/business-brands/adgroups/query
 
 {
@@ -375,7 +375,7 @@ POST /v1/reports/business-brands/adgroups/query
 
 ### Header Parameters
 
-- `X-Ap-Context` (string) *(required)*
+- `X-AP-Context` (string) *(required)*
 
 ## Request Body
 

@@ -15706,7 +15706,7 @@
       "hash": "de4ab9a92f945cd065a51b839074f2342d2f1e515785fa90e3efcf4373e58b65"
     },
     "https://developer.apple.com/documentation/appstoreconnectapi/gamecentergroupgamecenterachievementslinkagesresponse/data-data.dictionary": {
-      "etag": "\"13ce-65d55a79a14a7\"",
+      "etag": "\"13ce-65d55a79a14a7-df\"",
       "file_path": "documentation/AppStoreConnectAPI/gamecentergroupgamecenterachievementslinkagesresponse/data-data.dictionary.md",
       "hash": "18528899acf642e5680d0b3f48490046b68b97d5975804ea77eed28aee6b74a8"
     },
@@ -47556,7 +47556,7 @@
       "hash": "de4ab9a92f945cd065a51b839074f2342d2f1e515785fa90e3efcf4373e58b65"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreconnectapi/gamecentergroupgamecenterachievementslinkagesresponse/data-data.dictionary.json": {
-      "etag": "\"13ce-65d55a79a14a7\"",
+      "etag": "\"13ce-65d55a79a14a7-df\"",
       "file_path": "documentation/AppStoreConnectAPI/gamecentergroupgamecenterachievementslinkagesresponse/data-data.dictionary.md",
       "hash": "18528899acf642e5680d0b3f48490046b68b97d5975804ea77eed28aee6b74a8"
     },
