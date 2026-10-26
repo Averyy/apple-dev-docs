@@ -76,9 +76,12 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 ## Features
 
 - **390+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
+- **Nested modules** - Intents, Photos, simd, Apple News Format and the other modules Apple nests under an umbrella framework, each in its own folder
 - **Human Interface Guidelines** - Apple's design documentation for all platforms
 - **Swift Language Guide** - The Swift Programming Language book, API Design Guidelines, C++ Interop
-- **MLX & CoreML Tools** - Apple's ML framework documentation
+- **MLX & CoreML Tools** - Apple's ML framework documentation, plus the Foundation Models Python SDK
+- **Apple open-source tooling docs** - container, SourceKit-LSP, swift-format, Game Porting Toolkit (Metal shader converter)
+- **App Store Review Guidelines** - and Apple's app privacy pages
 - **Fast search** - Powered by Meilisearch (~16 ms median per search, one result per page)
 - **Platform filtering** - iOS, macOS, tvOS, watchOS, visionOS
 - **Wildcard search** - `UIView*`, `UI*Controller`, `Button?` (matched against the top matches for the pattern's text and, when it starts with two or more literal characters, every API name starting with them, up to 10,000; names in the pattern's case come first, unless it is all lowercase)
@@ -181,7 +184,7 @@ python3 scrape.py --all --yes
 # Scrape Swift language documentation (from GitHub)
 python3 scripts/scrape_swift_docs.py
 
-# Scrape MLX & CoreML Tools documentation (Python 3.12, with requirements-scrape.txt installed too)
+# Scrape MLX, CoreML Tools, the other Sphinx/GitHub docs and the App Store pages (Python 3.12, with requirements-scrape.txt installed too)
 python3 scripts/scrape_mlx_docs.py
 
 # Re-index to Meilisearch

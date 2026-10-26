@@ -154,6 +154,7 @@ uv pip install -r requirements.txt -r requirements-scrape.txt
 ## Architecture
 
 - **Scraper**: Uses Apple's JSON API (not HTML)
+- **Nested modules** (D6): a module Apple nests under an umbrella (Intents under SiriKit, simd under Accelerate) gets its own `documentation/<Module>/` dir and hash file (`metadata.module` records its parents); it's removed automatically when no parent links it any more. `scraper/site.py` (`DocCSite`) and `scraper/sink.py` (`Sink`/`SinkRegistry`) route each page to its dir
 - **Search**: Meilisearch (~16 ms median search on the full index; engine version pinned in `mcp-server/Dockerfile`, Python client pinned in both requirements files — keep them matched)
 - **MCP Server**: FastMCP with Streamable HTTP transport
 - **Indexing**: ~15-20 minutes for 322K+ documents on Meilisearch v1.49 (measured in production 2026-07-07; was ~2 hours on v1.33)
@@ -170,7 +171,7 @@ python scripts/scrape_swift_docs.py
 # Scrape Human Interface Guidelines (HIG)
 python scripts/scrape_hig_docs.py
 
-# Scrape MLX & CoreML Tools docs
+# Scrape MLX, CoreML Tools, the other Sphinx/GitHub docs and the App Store pages
 python scripts/scrape_mlx_docs.py
 
 # Index to Meilisearch
@@ -279,12 +280,14 @@ apple-dev-docs/
 ├── documentation/                 # Scraped markdown files
 │   ├── HIG/                      # Human Interface Guidelines (design docs)
 │   ├── Swift-Book/               # Swift language docs (from GitHub)
-│   └── mlx-docs/                 # MLX & CoreML Tools docs
+│   ├── MLX/, MLX-Swift/, coremltools/  # MLX & CoreML Tools docs
+│   ├── apple-fm-sdk/, container/, sourcekit-lsp/, swift-format/, game-porting-toolkit/  # other Apple Sphinx/GitHub docs
+│   └── App-Store/                # App Store Review Guidelines and privacy pages
 ├── scripts/
 │   ├── index_to_meilisearch.py   # Indexer
 │   ├── scrape_swift_docs.py      # Swift language docs scraper
 │   ├── scrape_hig_docs.py        # Human Interface Guidelines scraper
-│   └── scrape_mlx_docs.py        # MLX & CoreML Tools scraper
+│   └── scrape_mlx_docs.py        # MLX, CoreML Tools, other Sphinx/GitHub docs and App Store pages scraper
 ├── mcp-server/
 │   ├── apple_docs_mcp.py         # Native HTTP MCP server
 │   ├── docker-compose.yml        # Docker deployment
